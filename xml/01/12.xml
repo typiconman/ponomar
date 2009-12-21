@@ -11,7 +11,7 @@
 <SAINT Name="Venerable Eupraxia of Tabenna, in Egypt (+ 393)" Id="203" Type="0" />
 <SAINT Name="Venerable Martinian and Galaktion of Belozersk (+ 1483)" Id="200" Type="1" />
 <SAINT Name="Martyr Eubthasia" Id="" Type="0" />
-<SAINT Name="The 'Milkgiver' Icons of the Mother of God" Id="205" Type="0" />
+<SAINT Name="The 'Milkgiver' Icon of the Mother of God" Id="205" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Ste Tatienne de Rome" Id="2688" Type="1" />
@@ -34,5 +34,22 @@
 <SAINT Name="Мч. Петра Авессаломита (309-310)" Id="202" Type="0"/>
 <SAINT Name="Прп. Евпраксии Тавенисской (393)" Id="203" Type="0"/>
 <SAINT Name="Икон Божией Матери, именуемых &quot;Акафистная&quot; и &quot;Млекопитательница&quot;" Id="205" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="主显节庆期" Id="" Type="0" />
+<SAINT Name="殉道女塔提亚纳（罗马人，226-235年间）" Id="2688" Type="1" />
+<SAINT Name="圣萨瓦（塞尔维亚的光照者和首位总主教，1235年）" Id="1901" Type="3" />
+<SAINT Name="殉道者裴特若（巴勒斯坦的艾莱夫特若玻里城人，309年）" Id="202" Type="0" />
+<SAINT Name="圣女艾弗普拉克西亚（埃及的塔贝那地方人，393年）" Id="203" Type="0" />
+<SAINT Name="圣玛尔提尼安（白湖修道院院长，1483年）及其弟子圣伽拉克特翁（1506年）" Id="200" Type="1" />
+<SAINT Name="殉道的童女欧塔西亚" Id="" Type="0" />
+<SAINT Name="“哺乳者”显灵迹圣母像纪念日" Id="205" Type="0" />
+<SAINT Name="圣女德奥多拉（亚历山大里亚人，修女导师，5世纪）" Id="" Type="0" />
+<SAINT Name="殉道者麦尔提（毛里塔尼亚人，284-305年间）" Id="" Type="0" />
+<SAINT Name="殉道者斐洛德奥（安提约希亚人，305年）" Id="" Type="0" />
+<SAINT Name="尼西亚的八位殉道者" Id="" Type="0" />
+<SAINT Name="圣伊利亚（乐园之显行灵迹者）" Id="" Type="0" />
+<SAINT Name="圣文奈迪克特（威尔茅斯地方修道院院长，689-690年间）" Id="" Type="0" />
+<SAINT Name="圣赛奥尔弗利斯（修道院院长、威尔茅斯和雅罗的宣信者，642年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>

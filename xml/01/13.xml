@@ -9,12 +9,11 @@
 <SAINT Name="Saint James, Bishop of Nisibus (+ 350)" Id="212" Type="0" />
 <SAINT Name="Martyr Peter of Anium, at Hieropolis (309-310)" Id="202" Type="0" />
 <SAINT Name="Venerable Maximus of Capsokalibitus, Mt Athos" Id="" Type="0" />
-<SAINT Name="Marthyr Athanasius" Id="" Type="0" />
+<SAINT Name="Martyr Athanasius" Id="" Type="0" />
 <SAINT Name="Martyrs Pachomius and Papirinus" Id="" Type="0" />
 <SAINT Name="Holy Hierarch Leontius, Bishop of Caesarea in Cappadocia" Id="" Type="0" />
 <SAINT Name="Venerable Eleazar of Anzersk Island in Solovki (+ 1656)" Id="211" Type="1" />
 <SAINT Name="Venerable Monk Irenarchus, Hermit of Rostov (+ 1616)" Id="210" Type="1" />
-<SAINT Name="Holy Hierarch Hillary, Bishop of Poitiers" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Sts Hermyle et Stratonique" Id="799" Type="1" />
@@ -32,5 +31,18 @@
 <SAINT Name="Прп. Елеазара Анзерского (1656)" Id="211" Type="1"/>
 <SAINT Name="Мч. Петра Анийского (309-310)" Id="202" Type="0"/>
 <SAINT Name="Прп. Иакова, еп. Низибийского (350)" Id="212" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="主显节庆期" Id="" Type="0" />
+<SAINT Name="殉道者埃尔弥罗及斯特拉托尼科（贝尔格莱德，315年）" Id="799" Type="1" />
+<SAINT Name="圣雅科弗（尼西比斯主教，350年）" Id="212" Type="0" />
+<SAINT Name="殉道者裴特若（阿尼翁地方人，就义于艾莱夫特若玻里城，1世纪）" Id="202" Type="0" />
+<SAINT Name="圣玛克西默（阿索斯圣山的卡普索卡利维精舍修士，1364年）" Id="" Type="0" />
+<SAINT Name="殉道者阿塔纳修斯" Id="" Type="0" />
+<SAINT Name="殉道者帕霍弥及帕彼里诺（就义于希腊）" Id="" Type="0" />
+<SAINT Name="圣埃勒阿匝尔（索洛夫基地方的安则尔斯克岛人，1656年）" Id="211" Type="1" />
+<SAINT Name="圣伊里纳尔赫（罗斯托夫人，1616年）" Id="210" Type="1" />
+<SAINT Name="圣伊拉里（颇伊提埃尔城主教，369年）" Id="" Type="0" />
+<SAINT Name="圣厄尔宾（480年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>

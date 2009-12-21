@@ -20,7 +20,7 @@
 <SAINT Name="Forefeast of the Theophany" Id="" Type="0" />
 <SAINT Name="Holy Prophet Malachi (400 BC)" Id="143" Type="1" />
 <SAINT Name="Martyr Gordius at Caesarea in Cappadocia (4th C)" Id="144" Type="1" />
-<SAINT Name="St Genevieve of Paris (502)" Id="" Type="0" />
+<SAINT Name="Saint Genovefa the Virgin" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Préfête de Théophanie" Id="" Type="0" />
@@ -34,5 +34,20 @@
 <SAINT Name="Предпразднство Богоявления" Id="" Type="0"/>
 <SAINT Name="Прор. Малахии (ок. 400 г. до Р.Х.)" Id="143" Type="1"/>
 <SAINT Name="Мч. Гордия (IV)" Id="144" Type="1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="主显节前期" Id="" Type="0" />
+<SAINT Name="先知玛拉希亚（主前400年）" Id="143" Type="1" />
+<SAINT Name="圣高尔迪（卡帕多西亚之恺撒里亚的殉道者，314年）" Id="144" Type="1" />
+<SAINT Name="圣革奈维艾弗（巴黎人，502年）" Id="" Type="0" />
+<SAINT Name="圣提托（罗马尼亚的托密斯地方的主教，4世纪）" Id="" Type="0" />
+<SAINT Name="圣芬德路甘（苏格兰伊斯雷岛人，7世纪）" Id="" Type="0" />
+<SAINT Name="圣芬坦（圣芬德路甘德兄弟，7世纪）" Id="" Type="0" />
+<SAINT Name="圣裴特若（阿特罗阿地方人，837年）" Id="" Type="0" />
+<SAINT Name="圣女托玛伊斯（莱斯佛斯人，10世纪）" Id="" Type="0" />
+<SAINT Name="成德者艾弗提弥（义人，属上帝者，第比利斯人，1953年）" Id="" Type="0" />
+<SAINT Name="寻获新殉道者艾弗冷修士圣髑（于希腊的新玛克里，1950年）" Id="" Type="0" />
+<SAINT Name="圣阿贝拉（修道院院长）" Id="" Type="0" />
+<SAINT Name="义人阿卡基奥斯（显形灵迹者）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>

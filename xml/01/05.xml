@@ -76,4 +76,22 @@
 <SAINT Name=" Прп.  Мины (VI)" Id="160" Type="0"/>
 <SAINT Name="Прп. Григория Акритского (ок. 820)" Id="161" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="主显节前夕" Id="" Type="1" />
+<SAINT Name="殉道者德奥般普特（尼科麦迪亚地方主教）及德奥纳（303年）" Id="155" Type="1" />
+<SAINT Name="童贞女阿颇利纳里斯（埃及人，470年）" Id="" Type="0" />
+<SAINT Name="先知弥亥亚（主降生前9世纪）" Id="1564" Type="0" />
+<SAINT Name="圣格里高利（克里特修士，820年）" Id="161" Type="0" />
+<SAINT Name="圣佛斯特里（隐士，6世纪）" Id="159" Type="0" />
+<SAINT Name="圣弥纳（西奈山人，6世纪）" Id="160" Type="0" />
+<SAINT Name="殉道者特奥伊杜" Id="" Type="0" />
+<SAINT Name="殉道者塞斯" Id="" Type="0" />
+<SAINT Name="圣塔迪安娜" Id="" Type="0" />
+<SAINT Name="圣女辛克利提卡（亚历山大里亚人，350年） " Id="" Type="0" />
+<SAINT Name="新修士殉道者罗玛诺（卡尔佩尼西翁地方人，1694年就义于君士坦丁堡）" Id="" Type="0" />
+<SAINT Name="新殉道司祭约瑟夫协同他就义的37人（1921年）" Id="" Type="0" />
+<SAINT Name="殉道童女犹金尼娅（1933年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭塞尔吉（1934年）" Id="" Type="0" />
+<SAINT Name="敬迁英格兰德文郡塔维斯托克的圣鲁曼（6世纪）之圣髑纪念日（981年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
