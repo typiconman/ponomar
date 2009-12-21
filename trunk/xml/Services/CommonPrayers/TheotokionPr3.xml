@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Make Thy face to shine upon Thy servant, and teach me Thy statutes."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Illumine ton serviteur à la clarté de ton visage et apprends-moi tes volontés."/>
+</LANGUAGE>
+</COMMONPRAYER>

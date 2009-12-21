@@ -1,0 +1,26 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Greatmartyr Irene of Thessalonica (1st-2nd C)" Id="2523" Type="1" />
+<SAINT Name="Martyrs Neophyte, Gaius, and Gaianus" Id="" Type="0" />
+<SAINT Name="Venerable Micah, disciple of St Sergius of Radonezh" Id="" Type="0" />
+<SAINT Name="Venerable Hadrian of Monzensk" Id="" Type="0" />
+<SAINT Name="Venerable James the Abbot of Zhelezny Bor" Id="871" Type="0" />
+<SAINT Name="Icon of the Mother of God 'the Inexhaustible Cup' (1878)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste et Grande Martyre Irène de Thessalonique" Id="2523" Type="1" />
+<SAINT Name="St Euthyme le Thaumaturge, Evêque de Madytos" Id="" Type="0" />
+<SAINT Name="Sts Néophyte, Gaïus et Gaïen" Id="" Type="0" />
+<SAINT Name="St Michée de Radonège" Id="" Type="0" />
+<SAINT Name="St Adrien de Monza" Id="" Type="0" />
+<SAINT Name="St Jacques, Higoumène de Jeliezby-Borok" Id="871" Type="0" />
+<SAINT Name="St Britton, Evêque de Trèves" Id="" Type="0" />
+<SAINT Name="St Martyr Ephrem le nouvel apparu" Id="" Type="0" />
+<SAINT Name="St Hilaire, Evêque d'Arles" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Вмц. Ирины (I-II)" Id="2523" Type="1"/>
+<SAINT Name="Обретение мощей прп. Иакова Железноборовского (1422)" Id="871" Type="0"/>
+<SAINT Name="Иконы Божией Матери &quot;Неупиваемая Чаша&quot; (1878)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

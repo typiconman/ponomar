@@ -1,0 +1,26 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyrs Terence, Pompius, and with them Africanus, Macarius, Xeno, Alexander and the other 33 beheaded at Carthage (+ c.249-251)" Id="822" Type="1" />
+<SAINT Name="Martyrs James the Presbyter and the deacons Azadanes and Abdikius of Persia (+ c.380)" Id="823" Type="0" />
+<SAINT Name="Prophetess Olda" Id="" Type="0" />
+<SAINT Name="Venerable Martyr Arsenius and the other venerable fathers slain in the hermitage of David-Gareji (Georgia)" Id="" Type="0" />
+<SAINT Name="Hieromartyr Gregory V, Patriarch of Constantinople (+1821)" Id="826" Type="0" />
+<SAINT Name="New Martyr Dimus" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Martyrs Térence, Maxime, Pompée, Africain et leurs 36 compagnons" Id="822" Type="1" />
+<SAINT Name="Ste Hulda la Prophètesse" Id="" Type="0" />
+<SAINT Name="Sts Jacques, Aza (ou Azadane) et Abdiese en Perse" Id="823" Type="0" />
+<SAINT Name="St Demos à Smyrne" Id="" Type="0" />
+<SAINT Name="St Grégoire V, Patriarche de Constantinople" Id="826" Type="0" />
+<SAINT Name="Ste Anastasie, Higoumène et ses 34 moniales à Ouglitch" Id="" Type="0" />
+<SAINT Name="Les six mille Martyrs de Géorgie" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Терентия, Помпия, Африкана, Максима, Зинона, Александра, Феодора и иных 33-х (ок. 249-251)" Id="822" Type="1"/>
+<SAINT Name="Сщмч.  Флегонта пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Мч. Димитрия (1942)" Id="" Type="0"/>
+<SAINT Name="Мчч. Иакова пресвитера, Азадана и Авдикия диаконов, Персидских (ок. 380)" Id="823" Type="0"/>
+<SAINT Name="Сщмч. Григория V, патриарха Константинопольского (1821)" Id="826" Type="0"/>
+</LANGUAGE>
+</DAY>

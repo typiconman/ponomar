@@ -1,0 +1,11 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Psalm 100" />
+<TEXT Value="Of mercy and judgment will I sing to Thee, O Lord; I will chant and have understanding in a blameless path. When wilt Thou come unto me?  I have walked in the innocence of my heart in the midst of my house.  I have no unlawful thing before mine eyes; the workers of transgressions I have hated.  A crooked heart hath not cleaved unto me; as for the wicked man who turned from me, I knew him not.  Him that privily talked against his neighbor did I drive away from me.  With him whose eye was proud and his heart insatiate, I did not eat.  Mine eyes were upon the faithful of the land, that they might sit with me; the man that walked in the blameless path, he ministered unto me.  The proud doer dwelt not in the midst of my house; the speaker of unjust things prospered not before mine eyes.  In the morning I slew all the sinners of the land, utterly to destroy out of the city of the Lord all them that work iniquity."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Psaume 100" />
+<TEXT Value="Je chanterai ta miséricorde et ta justice, Seigneur, je jouerai un psaume, et j’en aurai l’intelligence, sur la voie parfaite ; quand viendras-tu vers moi ? J’ai marché dans l’innocence de mon cœur au milieu de ma maison. Je n’ai rien placé devant mes yeux de contraire à ta Loi : j’ai haï ceux qui la transgressent. Le cœur corrompu ne s’est pas joint à moi ; le méchant me fuyait, je ne l’ai pas connu. 
+Celui qui dénigre en secret son prochain, je le chassais de ma présence ; l’homme au regard orgueilleux et au cœur insatiable, je n’ai pas mangé avec lui. Mes yeux se tournaient vers les hommes fidèles du pays pour les faire siéger avec moi. Celui qui marche dans une voie sans tache était mon servant. Il n’a pas habité au-dedans de ma maison celui qui agit avec orgueil ; celui qui profère l’iniquité ne subsiste pas devant mes yeux. Dès le matin je mettais à mort tous les pécheurs de la terre, afin d’exterminer de la cité du Seigneur tous ceux qui commettent l’iniquité."/>
+</LANGUAGE>
+</COMMONPRAYER>

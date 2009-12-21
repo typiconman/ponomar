@@ -1,0 +1,17 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="matins" Reading="Jn_20:11-18" Pericope="64"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_1:10-18" Pericope="124"/>
+<SCRIPTURE Type="gospel" Reading="Mt_14:14-22" Pericope="58"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="8th Sunday after Pentecost" Id="" Type="0" Tone="7" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Le 8-me dimanche après le Pentecôte" Id="" Type="0" Tone="7"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Неделя 8-я по Пятидесятнице" Id="" Type="0" Tone="7"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Apostles of the 70: Stachias, Amplias, Urban, Narcissos, Apellias and Aristoboulos (1st C)" Id="4619" Type="1" />
+<SAINT Name="Martyr Epimachus of Alexandria (+c.250)" Id="4620" Type="0" />
+<SAINT Name="Venerable Spiridon and Nicodimus, the Prosphora-bakers of the Caves of Kiev (12th C)" Id="4621" Type="0" />
+<SAINT Name="Venerable Anatoly, Hermit of the Caves of Kiev" Id="" Type="0" />
+<SAINT Name="Saint Maura of Constantinople (5th C)" Id="4622" Type="0" />
+<SAINT Name="Martyr Nicholas of Chios" Id="" Type="0" />
+<SAINT Name="New Hieromaryr Priest John of Tsarskoye Selo and Petrograd (+1917)" Id="1025" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Stachys, Apelle, Amplias, Urbain, Narcisse et Aristobule Apôtres" Id="4619" Type="1" />
+<SAINT Name="St Epimaque d'Egypte" Id="4620" Type="0" />
+<SAINT Name="Sts Etienne, Barnabé, Trophime, Dorimède, Cosme, Damien, Sabas, Abraham et leurs compagnons" Id="" Type="0" />
+<SAINT Name="St Pais" Id="" Type="0" />
+<SAINT Name="Sts Séleucius et sa femme Statonique" Id="" Type="0" />
+<SAINT Name="St Epimaque le Romain et Gordien son compagnon" Id="" Type="0" />
+<SAINT Name="3 sts martyrs de Mélitène" Id="" Type="0" />
+<SAINT Name="St jeune garÃÂ§on, confesseur anonyme d'Antioche" Id="" Type="0" />
+<SAINT Name="St Nicolas de Chios" Id="" Type="0" />
+<SAINT Name="Sts Spiridon et Nicodème des Grottes de Kiev" Id="4621" Type="0" />
+<SAINT Name="St Anatole le Reclus des Grottes de Kiev" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Апп. от 70-ти Стахия, Амплия, Урвана, Наркисса, Апеллия и Аристовула (I)" Id="4619" Type="1"/>
+<SAINT Name="Мч. Епимаха (ок. 250)" Id="4620" Type="0"/>
+<SAINT Name="Сщмч. протоиерея Иоанна Царскосельского, Петроградского (1917)" Id="1025" Type="0"/>
+<SAINT Name="Прмч. Леонида (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Всеволода, Александра, Сергия и Алексия и Василия, Петра, Василия пресвитеров, прмч. Анатолия, Евфросина  и мч. Иакова (1937)" Id="4741" Type="0"/>
+<SAINT Name="Прмч. Иннокентия (1938)" Id="" Type="0"/>
+<SAINT Name="Прп. Мавры Константинопольской (V)" Id="4622" Type="0"/>
+<SAINT Name="Прпп. Спиридона и Никодима, просфорников Печерских (XII)" Id="4621" Type="0"/>
+</LANGUAGE>
+</DAY>

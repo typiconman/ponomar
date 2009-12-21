@@ -1,0 +1,47 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="vespers" Reading="Gen_28:10-17" />
+<SCRIPTURE Type="vespers" Reading="Ezek_43:27, 44:1-4" />
+<SCRIPTURE Type="vespers" Reading="Prov_9:1-11" />
+<SCRIPTURE Type="matins" Reading="Lk_1:39-49, 56" Pericope="4"/>
+<SCRIPTURE Type="apostol" Reading="Heb_9:1-7" Pericope="320" Note="for the Theotokos"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Protection of Our Most Holy Lady Theotokos and Ever-Virgin Mary" Id="1638" Type="6" />
+<SAINT Name="Apostle of the 70: Ananias (1st C)" Id="1639" Type="1" />
+<SAINT Name="Venerable Romanos the Melodist - 'Sweet Singer' (5th C)" Id="1878" Type="1" />
+<SAINT Name="Venerable Sabbas, Abbot of Vishersk (+ 1461)" Id="1893" Type="3" />
+<SAINT Name="Venerable Martyr Michael and 36 Venerable Martyrs with him" Id="" Type="0" />
+<SAINT Name="Venerable Domnus of Thessaloniki" Id="" Type="0" />
+<SAINT Name="Venerable John Kukuzel" Id="" Type="0" />
+<SAINT Name="Commemoration of the Apparition of the Pillar with the Robe of the Lord under it at the Cathedral in Mishkheta, Georgia" Id="1645" Type="0" />
+<SAINT Name="Venerable Gregory of Mt Athos (4th C)" Id="" Type="0" />
+<SAINT Name="Icons of the Mother of God: 'Protection of Pskov', 'Kukuzelissa', and 'Kasperovskaya'" Id="1646" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Protection de Notre Souveraine la Mère de Dieu" Id="1638" Type="6" />
+<SAINT Name="St Ananie, Apôtre" Id="1639" Type="1" />
+<SAINT Name="St Romanos le Mélode" Id="1878" Type="1" />
+<SAINT Name="Sts Michel, Higoumène du Monastère de Zobée et ses compagnons" Id="" Type="0" />
+<SAINT Name="St Domnin" Id="" Type="0" />
+<SAINT Name="St Jean Coucouzèle le Chantre (Grande Lavra, Athos)" Id="" Type="0" />
+<SAINT Name="St Grégoire le Domestikos (Grande Lavra, Athos)" Id="" Type="0" />
+<SAINT Name="St Sabas, higoumène du Monastère de l'Ascension à Vichera (Novgorod)" Id="1893" Type="3" />
+<SAINT Name="St Rémi, Evêque de Reims" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Покров Пресвятой Владычицы нашей Богородицы и Приснодевы Марии" Id="1638" Type="6"/>
+<SAINT Name="Ап. от 70-ти Анании (I)" Id="1639" Type="1"/>
+<SAINT Name="Прп. Романа Сладкопевца (VI)" Id="1878" Type="1"/>
+<SAINT Name="Прп. Саввы Вишерского, Новгородского (1461)" Id="1893" Type="3"/>
+<SAINT Name="Сщмч. Алексия пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Михаила пресвитера (1920)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Александра, Георгия, Николая пресвитеров, мч. Иоанна (1937)" Id="" Type="0"/>
+<SAINT Name="Прмч. Феодора (1940)" Id="" Type="0"/>
+<SAINT Name="Мч. Домнина Солунского (ок. 284-305)" Id="" Type="0"/>
+<SAINT Name="Прмч. Михаила, игумена Зовийского, и с ним 36-ти преподобномучеников (780-790)" Id="" Type="0"/>
+<SAINT Name="Празднование в честь Хитона Господня и Столпа Животворящего" Id="1645" Type="0"/>
+<SAINT Name="Люблинской (IX), Псково-Покровской (1581), Браиловской (1635), Касперовской (1840), Гербовецкой (1859), и Барской икон Божией Матери" Id="1646" Type="0"/>
+</LANGUAGE>
+</DAY>

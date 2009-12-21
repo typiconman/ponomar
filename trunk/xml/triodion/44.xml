@@ -1,0 +1,18 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="6th hour" Reading="Isa_3:1-14" />
+<SCRIPTURE Type="vespers" Reading="Gen_2:20-3:20" />
+<SCRIPTURE Type="vespers" Reading="Prov_3:19-34" />
+<PRIMES Type="Lenten" />
+<LITURGY Type="3" Comment="Presanctified ALWAYS"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Clean Friday" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Vendredi Propre" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Чистый пяток" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+</DAY>

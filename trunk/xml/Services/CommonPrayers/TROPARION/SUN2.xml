@@ -1,0 +1,12 @@
+﻿<TROPARION>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Troparion in the Second Tone"/>
+<TEXT Value="
+When Thou didst descend to death, O Life Immortal, Thou didst slay hell with the splendor of Thy Godhead! And when from the depths Thou didst raise the dead, all the powers of heaven cried out: O Giver of Life! Christ our God! Glory to Thee!"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Tropaire dans le deuxième ton"/>
+<TEXT Value="
+Lorsque tu es descendu vers la mort, immortelle Vie, l’Enfer fut renversé par la splendeur de ta divinité et, lorsque tu ressuscitas les morts qui gisaient au fond du tombeau, tous les Anges dans les cieux se mirent à chanter : Gloire à toi, Source de vie, ô Christ notre Dieu."/>
+</LANGUAGE>
+</TROPARION>

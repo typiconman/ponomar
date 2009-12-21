@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="I Cor_1:1-9" Pericope="122"/>
+<SCRIPTURE Type="gospel" Reading="Mt_13:24-30" Pericope="52"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Tuesday of the 6th week after Pentecost" Id="" Type="0" Tone="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Mardi de la 6-me semaine après le Pentecôte" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Вторник 6-й седмицы по Пятидесятнице" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+</DAY>

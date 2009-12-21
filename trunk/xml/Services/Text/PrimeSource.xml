@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Source: http://www.saintjonah.org/services/formatedhorologion.htm"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Source : http://www.pagesorthodoxes.net/liturgie/heures.htm"/>
+</LANGUAGE>
+</COMMONPRAYER>

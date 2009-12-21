@@ -1,0 +1,21 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Artemon the Presbyter of Laodicea in Syria (+303)" Id="849" Type="1" />
+<SAINT Name="Martyr Crescens of Myra in Lycia" Id="850" Type="0" />
+<SAINT Name="Womanmartyr Thomais of Alexandria (5th C)" Id="851" Type="0" />
+<SAINT Name="New Martyr Dimitry of the Peloponeses" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Martin 1er, Evêque de Rome" Id="" Type="0" />
+<SAINT Name="Sts maxime, Quintilien et Dadas" Id="" Type="0" />
+<SAINT Name="Sts Eleuthère le Perse, Théodose et Zoïle le Romain" Id="" Type="0" />
+<SAINT Name="St Romain, Evêque de Metz" Id="" Type="0" />
+<SAINT Name="St Mars, Evêque de Clermont" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Артемона, пресвитера Лаодикийского (303)" Id="849" Type="1"/>
+<SAINT Name="Прмц. Марфы (1941)" Id="" Type="0"/>
+<SAINT Name="Мч. Крискента, из Мир Ликийских" Id="850" Type="0"/>
+<SAINT Name="Мц. Фомаиды Египетской (476)" Id="851" Type="0"/>
+</LANGUAGE>
+</DAY>

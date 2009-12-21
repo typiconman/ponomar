@@ -1,0 +1,50 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Entry of the Theotokos" Id="" Type="3" />
+<SAINT Name="Apostles of the 70: Philemon and Archippos, Martyr Apphia, wife of Philemon and Equal-to the-Apostles, and Onesimus, disciple of St Paul (1st C)" Id="2288" Type="1" />
+<SAINT Name="Holy Right-believing Prince Michael of Tver (+ 1318)" Id="1562" Type="2" />
+<SAINT Name="Martyr Cecelia and the Martyrs Valerian, Tiburtius and Maximus at Rome (+c.230)" Id="2581" Type="0" />
+<SAINT Name="Martyrs Procopius the Reader" Id="2582" Type="0"/>
+<SAINT Name="Martyr Meningus" Id="2583" Type="0" />
+<SAINT Name="Venerable Agabbas of Syria (5th C)" Id="2584" Type="0" />
+<SAINT Name="Righteous Michael the Soldier, of Bulgaria (+ 866)" Id="2585" Type="0" />
+<SAINT Name="Martyr Agapionus" Id="" Type="0" />
+<SAINT Name="Martyrs Stephen and Mark" Id="" Type="0" />
+<SAINT Name="Venerable Callistos, Patriarch of Constantinople" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Clement, Bishop of Ochrid (Bulgaria)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Philémon, Apphia, Archippe et Onésime" Id="2288" Type="1" />
+<SAINT Name="Sts Cécile, Valérien et Tiburce" Id="2581" Type="0" />
+<SAINT Name="St Maxime" Id="" Type="0" />
+<SAINT Name="Sts Marc, Etienne et Marc" Id="" Type="0" />
+<SAINT Name="St Procope de Palestine" Id="2582" Type="0" />
+<SAINT Name="St Ménigne le Foulon" Id="2583" Type="0" />
+<SAINT Name="St Abba (ou Agabbas)" Id="2584" Type="0" />
+<SAINT Name="St Callixte II Xanthopoulos, Patriarche de Constantinople" Id="" Type="0" />
+<SAINT Name="Sts Christophe et Euphémie" Id="" Type="0" />
+<SAINT Name="Sts Thadée" Id="" Type="0" />
+<SAINT Name="St Agapion" Id="" Type="0" />
+<SAINT Name="St Agapios" Id="" Type="0" />
+<SAINT Name="St Sisinius" Id="" Type="0" />
+<SAINT Name="St Germain en Macédoine" Id="" Type="0" />
+<SAINT Name="St Pierre-Iaropolk de Volynie" Id="2364" Type="0" />
+<SAINT Name="St Michel de Tver" Id="1562" Type="2" />
+<SAINT Name="St Clément D'Ochrid, illuminateur des Bulgares" Id="" Type="0" />
+<SAINT Name="St Michel le Sodat en Bulgarie" Id="2585" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Введения во храм Пресвятой Богородицы" Id="" Type="1"/>
+<SAINT Name="Апп. от 70-ти Филимона и Архиппа и мц. равноап. Апфии (I)" Id="2288" Type="1"/>
+<SAINT Name="Блгв. кн. Михаила Тверского (1318)" Id="1562" Type="2"/>
+<SAINT Name="Сщмч. Владимира пресвитера (1932)" Id="4787" Type="0"/>
+<SAINT Name="Сщмч. Иоасафа, еп. Могилевского, сщмчч. Иоанна, Василия, Павла, Иакова, Феодора, Иоанна, Илии, Алексия, Афанасия пресвитера и прмчч. Герасима, Евтихия, Авенира, Саввы, Марка и мч. Бориса (1937)" Id="4815" Type="0"/>
+<SAINT Name="Прп. Параскевы исп (1952)" Id="" Type="0"/>
+<SAINT Name="Мц. Кикилии (Цецилии) и мчч. Валериана, Тивуртия и Максима (ок. 230)" Id="2581" Type="0"/>
+<SAINT Name="Мч. Менигна (250)" Id="2583" Type="0"/>
+<SAINT Name="Мч. Прокопия чтеца (303)" Id="2582" Type="0"/>
+<SAINT Name="Прп. Агаввы исмаильтянина (V)" Id="2584" Type="0"/>
+<SAINT Name="Прав. Михаила воина, болгарина (866)" Id="2585" Type="0"/>
+<SAINT Name="Блгв. Ярополка, во св. Крещении Петра, кн. Владимиро-Волынского (1086)" Id="2364" Type="0"/>
+</LANGUAGE>
+</DAY>

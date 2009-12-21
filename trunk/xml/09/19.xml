@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="4" Cmd="dow == 0" />
+<SAINT Name="11" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Exaltation of the Cross" Id="" Type="0" />
+<SAINT Name="Holy Martyrs Trophimus, Sabbatius and Dorymedon (+276)" Id="1564" Type="1" />
+<SAINT Name="Holy Prince Theodore of Smolensk (+1299) his sons David and Constantine, Wonderworkers of Yaroslavl" Id="2197" Type="3" />
+<SAINT Name="Martyr Zosimas the Hermit of Cilicia (4th C)" Id="850" Type="0" />
+<SAINT Name="Hieromartyr Jannuarius, Bishop of Benebent and those with him" Id="" Type="0" />
+<SAINT Name="Holy Prince Igor of Chernigov and Kiev (+1147)" Id="907" Type="0" />
+<SAINT Name="Holy Schema-Hieromonk Alexis of Zosimovskaya Hermitage (+1928)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Apresfete de l'Exaltation" Id="" Type="0"/>
+<SAINT Name="Sts Trophime, Sabbatios et Dorymède" Id="1564" Type="1" />
+<SAINT Name="St Janvier, Evêque de Bénévent et ses compagnons" Id="" Type="0" />
+<SAINT Name="St Théodore, Prince de Smolensk, Yaroslav et ses enfants David et Constantin" Id="2197" Type="3" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Воздвижения Креста Господня" Id="" Type="0"/>
+<SAINT Name="Мчч. Трофима, Савватия и Доримедонта (276)" Id="1564" Type="1"/>
+<SAINT Name="Блгвв. князей Феодора Смоленского (1299) и чад его Давида (1321) и Константина, Ярославских чудотворцев" Id="2197" Type="3"/>
+<SAINT Name="Прп. Алексия Зосимовсого (1928)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Константина и с ним двух мучеников (1918)" Id="4841" Type="0"/>
+<SAINT Name="Сщмч. Николая пресвитера (1919)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Нила пресвитера, прмц. Марии (1938)" Id="" Type="0"/>
+<SAINT Name="Мч. Зосимы пустынника (IV)" Id="850" Type="0"/>
+<SAINT Name="Блгв. вел. кн. Игоря Черниговского и Киевского (1147)" Id="907" Type="0"/>
+</LANGUAGE>
+</DAY>

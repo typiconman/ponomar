@@ -1,0 +1,12 @@
+﻿<TROPARION>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="
+<center><b>Troparion in the Eighth Tone</b></center>
+<p>Thou didst descend from on high, O Merciful One! Thou didst accept the three-day burial to free us from our sufferings! O Lord, our Life and Resurrection: glory to Thee!</p>"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="
+<center><b>Tropaire dans le huitième ton</b></center>
+<p>Du ciel Tu descendis, ô Dieu de miséricorde, trois jours dans le tombeau Tu souffris de demeurer pour nous délivrer de nos péchés ; notre Vie et notre Résurrection, Seigneur, gloire à Toi.</p>"/>
+</LANGUAGE>
+</TROPARION>

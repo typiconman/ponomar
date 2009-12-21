@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Sabinus of Egypt (+ 285)" Id="653" Type="1" />
+<SAINT Name="Martyr Papas of Lyconia (+ 305-311)" Id="654" Type="1" />
+<SAINT Name="Martyr Julian of Anazarbus (4th C)" Id="656" Type="0" />
+<SAINT Name="Hieromartyrs Trophimus and Thallus, Priests of Laodicea (+ c.300)" Id="657" Type="0" />
+<SAINT Name="Apostle Aristobulus of the Seventy, Bishop of Britain (1st C)" Id="255" Type="0" />
+<SAINT Name="Hieromartyr Alexander, Pope of Rome (+ 119)" Id="655" Type="0" />
+<SAINT Name="St. Serapion the Archbishop of Novgorod (+ 1516)" Id="6825" Type="0" />
+<SAINT Name="Venerable Christodoulus the Wonderworker" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Sabin d'Egypte" Id="653" Type="1" />
+<SAINT Name="St Papas" Id="654" Type="1" />
+<SAINT Name="St Jean du Monastère des Roufinianes" Id="" Type="0" />
+<SAINT Name="St Romain de Parion" Id="" Type="0" />
+<SAINT Name="St Alexandre 1er, Pape de Rome" Id="655" Type="0" />
+<SAINT Name="St Aninas le Thaumaturge" Id="" Type="0" />
+<SAINT Name="St Christodule le Thaumaturge, fondateur du Monastère de St Jean le Théologien à Patmos" Id="" Type="0" />
+<SAINT Name="St Sérapion, Archevêque de Novgorod" Id="6825" Type="0" />
+<SAINT Name="St Malachie" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мч. Савина (287)" Id="653" Type="1"/>
+<SAINT Name="Мч. Папы (305-311)" Id="654" Type="1"/>
+<SAINT Name="Ап. Аристовула, еп. Вританийского (Британского) (I)" Id="255" Type="0"/>
+<SAINT Name="Сщмч. Александра, папы Римского (119)" Id="655" Type="0"/>
+<SAINT Name="Мч. Иулиана Аназарвского (IV)" Id="656" Type="0"/>
+<SAINT Name="Свт. Серапиона, архиеп. Новгородского (1516)" Id="6825" Type="0"/>
+<SAINT Name="Сщмчч. Трофима и Фала, пресвитеров Лаодикийских (ок. 300)" Id="657" Type="0"/>
+</LANGUAGE>
+</DAY>

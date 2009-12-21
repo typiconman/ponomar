@@ -1,0 +1,38 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="16" Cmd="dow == 0" />
+<SCRIPTURE Type="apostol" Reading="Eph_6:10-17" Pericope="233" Note="for the Martyrs"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:12-19" Pericope="106" Note="for the Martyrs"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyrs Eustratios, Auxentios, Eugene, Mardarius and Orestes at Sebaste (+c.284-305)" Id="3111" Type="4" />
+<SAINT Name="Virginmartyr Lucy of Syracuse (+304)" Id="" Type="1" />
+<SAINT Name="Venerable Arsenios of Latros (8th-10th C)" Id="3114" Type="0" />
+<SAINT Name="Venerable Arisus of Egypt" Id="" Type="0" />
+<SAINT Name="Hieromartyr Gabriel, Archbishop of Serbia" Id="" Type="0" />
+<SAINT Name="Venerable Mardarius, Abbot of the Caves of Kiev (13th C)" Id="3113" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Eustrate, Auxence, Eugène, Mardaire et Oreste de Sébaste" Id="3111" Type="4" />
+<SAINT Name="Ste Lucie de Syracuse" Id="" Type="1" />
+<SAINT Name="St Arsène du Mont Latros" Id="3114" Type="0" />
+<SAINT Name="St Arès en Egypte" Id="" Type="0" />
+<SAINT Name="St Mardaire le Pauvre des Grottes de Kiev" Id="3113" Type="0" />
+<SAINT Name="St Gabriel, Archevêque de Serbie" Id="" Type="0" />
+<SAINT Name="St Germain d'Alaska, St Juvénal et St Pierre l'Aléout" Id="" Type="0" />
+<SAINT Name="Sts Anatole d'Irkoutsk et Séraphim d'Uglich" Id="" Type="0" />
+<SAINT Name="St Ursicin, Evêque de Cahors" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Евстратия, Авксентия, Евгения, Мардария и Ореста (284-305)" Id="3111" Type="4"/>
+<SAINT Name="Мц. Лукии (304)" Id="" Type="1"/>
+<SAINT Name="Сщмч. Александра пресвитера и мч. Иоанна (1920)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Владимира, Александра, Иакова, Алексия, Григория  пресвитеров (1937)" Id="4790" Type="0"/>
+<SAINT Name="Сщмч. Николая пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Емилиана, Василия пресвитеров (1941)" Id="" Type="0"/>
+<SAINT Name="Прп. Арсения Латрийского (VIII-X)" Id="3114" Type="0"/>
+<SAINT Name="Прп. Аркадия Новоторжского (XI)" Id="257" Type="0"/>
+<SAINT Name="Прп. Мардария, затворника Печерского (XIII)" Id="3113" Type="0"/>
+<SAINT Name="Свт. Досифея, митр. Молдавского (1693)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

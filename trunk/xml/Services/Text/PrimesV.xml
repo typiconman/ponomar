@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="The First Hour (Prime)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="La Première Heure (Prime)"/>
+</LANGUAGE>
+</COMMONPRAYER>

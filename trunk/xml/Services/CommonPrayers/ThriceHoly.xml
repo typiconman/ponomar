@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Holy God, Holy Mighty, Holy Immortal, have mercy on us."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Saint Dieu, Saint Fort, Saint Immortel, aie pitié de nous."/>
+</LANGUAGE>
+</COMMONPRAYER>

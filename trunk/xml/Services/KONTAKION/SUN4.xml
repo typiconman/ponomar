@@ -1,0 +1,10 @@
+﻿<KONTAKION>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="<center><b>Kontakion in the Fourth Tone</b></center>
+<p>My Savior and Redeemer as God rose from the tomb and delivered the earthborn from their chains. He has shattered the gates of hell, and as Master, He has risen on the third day!</p>"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="<center><b>Kondakion dans le quatrième ton</b></center>
+<p>Mon Sauveur et mon libérateur a ressuscité tous les mortels, les arrachant par sa force divine aux chaînes du tombeau ; il a brisé les portes de l'enfer et en Maître souverain il est ressuscité le troisième jour.</p>"/>
+</LANGUAGE>
+</KONTAKION>

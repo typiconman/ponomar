@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Easter" />
+<SCRIPTURE Type="apostol" Reading="Acts_4:1-10" Pericope="10"/>
+<SCRIPTURE Type="gospel" Reading="Jn_3:16-21" Pericope="10"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Tuesday of the 2nd week after Pascha. Radonitsa (Day of Rejoycing)" Id="" Type="0" Tone="1" />
+<SAINT Name="Commemoration of the Departed" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Mardi de la 2-me semaine après le Pâques. Radonista (Jour de la Rejoissement)" Id="" Type="0" Tone="1"/>
+</LANGUAGE>
+<SAINT Name="Вторник второй седмицы по Пасхе" Id="" Type="0" Tone="1"/>
+<SAINT Name="Радоница (поминовение усопших)" Id="" Type="0"/>
+</DAY>

@@ -1,0 +1,17 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Easter" />
+<SCRIPTURE Type="matins" Reading="Mt_28:16-20" Pericope="116"/>
+<SCRIPTURE Type="apostol" Reading="Acts_5:12-20" Pericope="14"/>
+<SCRIPTURE Type="gospel" Reading="Jn_20:19-31" Pericope="75"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="2nd Sunday after Pascha. Thomas Sunday, or Antipascha" Id="2323" Type="0" Tone="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Le 2-me dimanche après le Pâques. Le dimanche de Thomas ou l'Antipâques" Id="2323" Type="0" Tone="1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Неделя 2-я по Пасхе, Фомина. Антипасха. Воспоминание уверения ап. Фомы" Id="2323" Type="0" Tone="1"/>
+</LANGUAGE>
+</DAY>

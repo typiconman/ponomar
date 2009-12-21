@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="In the morning, hearken unto my voice, // O my king and God."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+</COMMONPRAYER>

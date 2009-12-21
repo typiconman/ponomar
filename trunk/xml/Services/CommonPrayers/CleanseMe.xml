@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="O God, cleanse me a sinner."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Ô Dieu, purifie-moi, pécheur"/>
+</LANGUAGE>
+</COMMONPRAYER>

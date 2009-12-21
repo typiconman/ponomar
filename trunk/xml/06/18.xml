@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="15" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Martyrs Leontius, Hypatius, and Theodulus in Syria (70-79)" Id="1335" Type="1" />
+<SAINT Name="Martyr Etherius" Id="" Type="0" />
+<SAINT Name="Saint Leontius the Clairvoyant of Mt. Athos (+1605)" Id="" Type="0" />
+<SAINT Name="Venerable Leontius, Canonarch of the Kiev Caves (14th C)" Id="1337" Type="0" />
+<SAINT Name="'Bogolubskaya' Icon of the Mother of God (1155)" Id="1339" Type="0" />
+<SAINT Name="New Hieromartyrs Priests Basil, Alexander, Basil, and Serge (+1938);" Id="4904" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Martyrs Léonce, Hypatos et Théodule" Id="1335" Type="1" />
+<SAINT Name="St Ethère" Id="" Type="0" />
+<SAINT Name="St Erasme" Id="" Type="0" />
+<SAINT Name="Sts 2 Martyrs de Chypre" Id="" Type="0" />
+<SAINT Name="St Léonce le Pasteur" Id="" Type="0" />
+<SAINT Name="St Léonce de Dionysiou le Myroblyte" Id="" Type="0" />
+<SAINT Name="St Léonce le Canonarque des grottes de Kiev" Id="1337" Type="0" />
+<SAINT Name="St Amand, Evêque de Bordeaux" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Леонтия, Ипатия и Феодула (70-79)" Id="1335" Type="1"/>
+<SAINT Name="Прмч. Никанора (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Василия, Александра, Василия и Сергия пресвитеров (1938)" Id="4904" Type="0"/>
+<SAINT Name="Прп. Леонтия, канонарха Печерского (XIV)" Id="1337" Type="0"/>
+<SAINT Name="Боголюбской иконы Божией Матери, в Боголюбове, Владимирской обл (1155)" Id="1339" Type="0"/>
+<SAINT Name="Чтимые списки с Боголюбской иконы Божией Матери: Московская (1157), Зимаровская (XII)" Id="1340" Type="0"/>
+<SAINT Name="Сретение Пюхтицкой иконы Божией Матери, именуемой &quot;У источника&quot; (1946)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

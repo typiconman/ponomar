@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Rom_1:7-12" Pericope="79 (mid)"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:42-48" Pericope="15"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Pentecost Saturday. Apodosis of Pentecost" Id="" Type="3" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Samedi du Pentecôte. Apodose du Pentecôte" Id="" Type="3" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Суббота Пятидесятницы. Отдание Пятидесятницы" Id="" Type="3" Tone="-1"/>
+</LANGUAGE>
+</DAY>

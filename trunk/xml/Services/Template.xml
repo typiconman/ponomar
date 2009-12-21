@@ -1,0 +1,69 @@
+﻿<SERVICES>
+<LANGUAGE>
+<!-- In the section <CREATE> -->
+<!-- PS denotes the type of service that is being created: PS == 0 implies no priest present, that is a reader service is being done, == 1 implies a priest is present, == 2 implies two or more priests are present, == 3 implies a bishop is present -->
+<!-- The Who tag refers to who says the given thing. If it equals P, then the priest says it, if R the reader says it, D the deacon says it, if C the choir/people say it. If it equals "", then no person will be assigned to the given piece of text. -->
+<!-- The RedFirst tag causes the first letter of the given section to be displayed in red. -->
+<!-- The What tag refers to the file location to be read that contains the given text to be read. The appropriate language will be determined at this point. -->
+<!-- The NewLine tag refers to whether the given set of text is to be displayed on a new line. -->
+<!-- The Times tag refers to the number of times the given line is to be repeated. -->
+<!-- The Header tag refers is 1 if a header that can be used to divide a service into parts is desired. This tag causes the header to be centred in bold red. -->
+<!-- The Command tag is refers to the command file that contains a translations for the type of command to be performed at the end of the given What. The command will be placed in red italics. -->
+<!-- The CommandB tag is refers to the command file that contains a translations for the type of command that states commands, rules, etc that are placed before the given section, but after the Who tag. The command will be placed in red italics. -->
+<!-- </CREATE> -->
+<!-- In the section <TITLE> -->
+<!-- The Value tag refers to the title of the service that is to be displayed as the first line in the compiled version. -->
+<!-- The Header tag refers to the what header would be displayed in the menu bar if the file is saved. It is enclosed in <title></title> in the html code -->
+<!-- The Source tag gives the original source for the document. This is important especially for the translated versions, where there may be many compeating versions. -->
+<!-- The Comment tag refers to any additional comments that may be desired to be placed at the beginning of the service. -->  
+<!-- All the Text in the title section will appear in red. -->
+<!-- </TITLE> -->
+<!-- In the section <GET> -->
+<!-- Allows the user to call another "service" file, allows for variable components and common sections (Usual Beginning)... -->
+<!-- The Value tag refers to the file name -->
+<!-- </GET> -->
+<!-- In the section <BIBLE>, which allows the default Bible for the given language to be referenced and information extracted from it -->
+<!-- The Verses tag refers to a passage from the Bible that will be obtained using the Bible.java module. The syntax for the Bible tag is Bible="Book_Chapter:VerseStart-VerseEnd,Verse2,Chapter:Verse3Start-Verse3End" The programme will accept the case where the book title has an underscore. Thus, this is the correct way to reference the Fourth Book of Kings: IV_King_2:3-4:3 -->
+<!-- The getReading tag refers to the Bible verse that is desired to obtained the appropriate introduction for, that is, "A reading from the Book of ...", properly formatted for the given situation. -->
+<!-- The Who tag refers to who says the given thing. If it equals P, then the priest says it, if R the reader says it, D the deacon says it, if C the choir/people say it. If it equals "", then no person will be assigned to the given piece of text. -->
+<!-- The RedFirst tag causes the first letter of the given section to be displayed in red. -->
+<!-- The NewLine tag refers to whether the given set of text is to be displayed on a new line. -->
+<!-- The Times tag refers to the number of times the given line is to be repeated. -->
+<!-- The Header tag is 1 if a header that displays the verses that are being read. This tag causes the header to be centred in bold red. -->
+<!-- The Command tag refers to the command file that contains a translations for the type of command to be performed at the end of the given What. The command will be placed in red italics. -->
+<!-- The CommandB tag refers to the command file that contains a translations for the type of command that states commands, rules, etc that are placed before the given section, but after the Who tag. The command will be placed in red italics. -->
+<!-- The 2Stars tag refers to how any ** star comments in the Bible text should be treated. The following choices are possible: 1 makes everything a header, 2 replaces the text before the "**" in the first verse of the reading with the text in italics in the the ** instruction section.
+		For example, if following reading is obtained "some initial text ** some more text, followed by some more text" and the ** refers to the following text "For the second Sunday, "Brethren, take care that,..."", then the resulting text that will be displayed is
+			"Brethren, take care that, some more text, followed by some more text".-->
+<!-- </BIBLE> -->
+<!-- In the section <TEXT>, which allows the user to programmatically enter static, fixed text into the service. This tag must not be used in the language invariant section, since it will not change. -->
+<!-- The Who tag refers to who says the given thing. If it equals P, then the priest says it, if R the reader says it, D the deacon says it, if C the choir/people say it. If it equals "", then no person will be assigned to the given piece of text. -->
+<!-- The RedFirst tag causes the first letter of the given section to be displayed in red. -->
+<!-- The What tag gives the appropriate text that will be inserted verbatim into the service -->
+<!-- The NewLine tag refers to whether the given set of text is to be displayed on a new line. -->
+<!-- The Times tag refers to the number of times the given line is to be repeated. -->
+<!-- The Header tag gives the appropriate text that will be inserted as a header at this point in the service. This tag causes the header to be centred in bold red. -->
+<!-- The Command tag refers to the command file that contains a translations for the type of command to be performed at the end of the given What. The command will be placed in red italics. -->
+<!-- The CommandB tag refers to the command file that contains a translations for the type of command that states commands, rules, etc that are placed before the given section, but after the Who tag. The command will be placed in red italics. -->
+<!-- </TEXT> -->
+<!-- All sections can take a Cmd to determine when a given action is performed -->
+
+<TITLE Value="PaschalHoursV" Header="PaschalHoursH" Source="PaschalHoursS" Comment="PaschalHoursComment" />
+<CREATE What="BlessedIsOurGod" Who="P" RedFirst="1" Cmd="PS != 0" />
+<CREATE What="ThroughPrayers" Who="R" RedFirst="1" Cmd="PS == 0"/>
+<CREATE What="Amen" Who="R" RedFirst="1" NewLine="1" />
+<CREATE What="GloryToThee" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="ChristIsRisenR" Who="R" RedFirst="1" Times="3" NewLine="1" Cmd="(nday &gt;= 0 &amp;&amp; nday &lt; 40)"/>
+<CREATE What="HeavenlyKing" Who="R" RedFirst="1" NewLine="1" Cmd="(nday &lt; 0 || nday &gt;= 50)"/>
+<CREATE What="ThriceHoly" Who="R" RedFirst="1" NewLine="1" Command="Bow" Times="3" />
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AllHolyTrinity" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="LordHaveMercyThrice" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="OurFather" Who="R" NewLine="1" RedFirst="1"/>
+<CREATE What="OurFatherDoxology" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="Amen" Who="R" NewLine="1" RedFirst="1"/>
+<CREATE What="LordHaveMercyThrice" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+</LANGUAGE>
+</SERVICES>

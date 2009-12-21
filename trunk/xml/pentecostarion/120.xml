@@ -1,0 +1,17 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="matins" Reading="Jn_21:1-14" Pericope="66"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131"/>
+<SCRIPTURE Type="gospel" Reading="Mt_17:14-23" Pericope="72"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="10th Sunday after Pentecost" Id="" Type="0" Tone="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Le 10-me dimanche après le Pentecôte" Id="" Type="0" Tone="1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Неделя 10-я по Пятидесятнице" Id="" Type="0" Tone="1"/>
+</LANGUAGE>
+</DAY>

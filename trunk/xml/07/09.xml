@@ -1,0 +1,26 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Pancratios, Bishop of Taoromina in Sicily (1st C)" Id="1725" Type="1" />
+<SAINT Name="Hieromartyr Cyril, Bishop of Gortyna in Crete (3rd-4th C)" Id="1225" Type="0" />
+<SAINT Name="Martyr Alexander (4th C)" Id="" Type="0" />
+<SAINT Name="Venerable Patermuphios and Coprius, Ascetics in Egypt (4th C)" Id="4201" Type="0" />
+<SAINT Name="Saint Theodore, Bishop of Edessa, and those with him (9th C)" Id="4202" Type="0" />
+<SAINT Name="Venerable Anthony of Leokhnovo" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Pancrace, Evêque de Taormina" Id="1725" Type="1" />
+<SAINT Name="St André et Probus" Id="" Type="0" />
+<SAINT Name="St Photios de Thessalie, fondateur du Monastère d'Akapniou à Thessalonique" Id="" Type="0" />
+<SAINT Name="Sts Denys le Rhéteur et Métrophane de la Petite Ste Anne" Id="" Type="0" />
+<SAINT Name="St Méthode de Crète" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Панкратия, еп. Тавроменийского (I)" Id="1725" Type="1"/>
+<SAINT Name="Сщмч. Константина пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Кирилла, еп. Гортинского (III-IV)" Id="1225" Type="0"/>
+<SAINT Name="Прмчч. Патермуфия, Коприя и мч. Александра (361-363)" Id="4200" Type="0"/>
+<SAINT Name="Прпп. Патермуфия и Коприя Египетских (V)" Id="4201" Type="0"/>
+<SAINT Name="Свт. Феодора, еп. Едесского (IX)" Id="4202" Type="0"/>
+<SAINT Name="Колочской (1413) и Кипрской в с. Стромыни (Московская обл.) икон Божией Матери" Id="4204" Type="0"/>
+</LANGUAGE>
+</DAY>

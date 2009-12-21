@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="II Cor_12:10-19" Pericope="195"/>
+<SCRIPTURE Type="gospel" Reading="Mk_4:10-23" Pericope="16"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Monday of the 14th week after Pentecost" Id="" Type="0" Tone="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Lundi de la 14-me semaine après le Pentecôte" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Понедельник 14-й седмицы по Пятидесятнице" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+</DAY>

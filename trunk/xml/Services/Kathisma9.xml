@@ -1,0 +1,20 @@
+<SERVICES>
+<LANGUAGE>
+<!-- This is the Eighth Kathisma -->
+<!-- The First Stasis -->
+<BIBLE Verses="Psalm_64" Who="" RedFirst="1" NewLine="1" Header="1" 2Stars="1"/>
+<BIBLE Verses="Psalm_65" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_66" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+<!-- The Second Stasis -->
+<BIBLE Verses="Psalm_67" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+<!-- The Third Stasis -->
+<BIBLE Verses="Psalm_68" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_69" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+</LANGUAGE>
+</SERVICES>

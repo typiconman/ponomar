@@ -1,0 +1,44 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="4" Cmd="dow == 0" />
+<SAINT Name="11" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Exaltation of the Cross" Id="" Type="0" />
+<SAINT Name="Greatmartyr Euphemia the All-Praised (+304)" Id="2479" Type="2" />
+<SAINT Name="Martyrs Victor and Sosthenes at Chalcedon (+c.304)" Id="1543" Type="0" />
+<SAINT Name="Holy Martyrs Sebastiana (1st C) and Melitina of Marcianopolis (2nd C)" Id="1545" Type="0" />
+<SAINT Name="Martyr Liudmila, Princess of the Czechs (+927)" Id="1548" Type="0" />
+<SAINT Name="Venerable Dorotheus the Hermit of Egypt (4th C)" Id="1547" Type="0" />
+<SAINT Name="Venerable Procopius, Abbot of Sazavsk, in Bohemia" Id="" Type="0" />
+<SAINT Name="Repose of St Cyprian, Metropolitan of Kiev and All Russia (+1406)" Id="1209" Type="0" />
+<SAINT Name="Martyrs Isaac and Joseph of Georgia (+808)" Id="1549" Type="0" />
+<SAINT Name="New Hieromartyr Priest Gregory (+1937)" Id="4795" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Apresfete de l'Exaltation" Id="" Type="0"/>
+<SAINT Name="Ste Euphémie, Grande Martyre de Chalcédoine" Id="2479" Type="2" />
+<SAINT Name="Ste Martyre Mélitène" Id="" Type="0" />
+<SAINT Name="Ste Martyre Ludmilla, Reine des Tchèques" Id="" Type="0" />
+<SAINT Name="St Cyprien, Métrpolite de Moscou et de toute la Russie" Id="1209" Type="0" />
+<SAINT Name="St Procope le Tchèque" Id="" Type="0" />
+<SAINT Name="Sts Joseph et Isaac de Géorgie" Id="1549" Type="0" />
+<SAINT Name="St Cyprien de Carthage" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Воздвижения Креста Господня" Id="" Type="0"/>
+<SAINT Name="Вмц. Евфимии всехвальной (304)" Id="2479" Type="2"/>
+<SAINT Name="Сщмч. Григория пресвитера (1937)" Id="4795" Type="0"/>
+<SAINT Name="Сщмч. Сергия пресвитера (1942)" Id="" Type="0"/>
+<SAINT Name="Перенесение мощей прав. Алексия Московского (2001)" Id="4746" Type="0"/>
+<SAINT Name="Мц. Севастианы (ок. 86-96)" Id="1545" Type="0"/>
+<SAINT Name="Мц. Мелитины (ок. 138-161)" Id="1546" Type="0"/>
+<SAINT Name="Мчч. Виктора и Сосфена (ок. 304)" Id="1543" Type="0"/>
+<SAINT Name="Прп. Дорофея, пустынника Египетского (IV)" Id="1547" Type="0"/>
+<SAINT Name="Мчч. братьев Иосифа и Исаака Грузинских (808)" Id="1549" Type="0"/>
+<SAINT Name="Мц. Людмилы, кн. Чешской (927)" Id="1548" Type="0"/>
+<SAINT Name="Свт. Киприана, митр. Московского, всея России чудотворца (1406)" Id="1209" Type="0"/>
+<SAINT Name="Прп. Кукши Одесского, исп. (1964)" Id="" Type="0"/>
+<SAINT Name="Иконы Божией Матери, именуемой &quot;Призри на смирение&quot; (1420)" Id="1551" Type="0"/>
+</LANGUAGE>
+</DAY>

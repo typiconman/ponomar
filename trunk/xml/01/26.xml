@@ -1,0 +1,40 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="12" Cmd="dow == 0" />
+<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="nday == -55" />
+<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday == -55" Note="for St Xenia"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday == -55" Note="for St Xenia"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Blessed Xenia of Saint Petersburg (19th C) [from Saturday]" Id="2568" Type="1" Cmd="nday == -55"/>
+<SAINT Name="Venerable Xenophontes with his wife Maria, and their sons Arkadius and John of Constantinople (5th-6th C)" Id="312" Type="1" />
+<SAINT Name="Saint Simeon the Old of Mt Sinai (+c.390)" Id="390" Type="0" />
+<SAINT Name="Martyrs Ananias the Presbyter, Peter the Prison Guard and 7 prison guards (+295)" Id="314" Type="0" />
+<SAINT Name="Translation of the relics of Venerable Theodore, Abbot of the Studion Monastery (845)" Id="2202" Type="0" />
+<SAINT Name="Saint Joseph, Archbishop of Thessalonica, brother of St. Theodore of Studion (+830)" Id="317" Type="0" />
+<SAINT Name="Venerable Gabriel, Abbot of Jerusalem" Id="" Type="0" />
+<SAINT Name="Blessed David III the Restorer, King of Iberia (Georgia) (+1125)" Id="318" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Xénie, Folle en Christ de St Petersbourg" Id="2568" Type="1" Cmd="nday == -55"/>
+<SAINT Name="Sts Xénophon, Marie, Arcade et Jean" Id="312" Type="1" />
+<SAINT Name="St Syméon l'Ancien" Id="390" Type="0" />
+<SAINT Name="Sts Ananie, Pierre et leurs 7 compagnons en Phénicie" Id="314" Type="0" />
+<SAINT Name="St Ammonas en Egypte" Id="" Type="0" />
+<SAINT Name="St Gabriel, Higoumène à Jérusalem" Id="" Type="0" />
+<SAINT Name="St Clément du Mont Sagmation" Id="" Type="0" />
+<SAINT Name="St David III le BÃÂ¢tisseur, roi de Géorgie" Id="318" Type="0" />
+<SAINT Name="Ste Paule de Rome" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Блж. Ксении Петербургской (XIX) [с субботы]" Id="2568" Type="1" Cmd="nday == -55"/>
+<SAINT Name="Прпп. Ксенофонта, супруги его Марии и сыновей их Аркадия и Иоанна (V-VI)" Id="312" Type="1"/>
+<SAINT Name="Мч. Иоанна (1938)" Id="" Type="0"/>
+<SAINT Name="Мчч. Анании пресвитера, Петра, темничного стража, и с ними семи воинов (295)" Id="314" Type="0"/>
+<SAINT Name="Прп. Симеона Ветхого (390)" Id="315" Type="0"/>
+<SAINT Name="Свт. Иосифа Студита, архиеп. Солунского, брата прп. Феодора Студита (830)" Id="317" Type="0"/>
+<SAINT Name="Перенесение мощей прп. Феодора, игумена Студийского (845)" Id="2202" Type="0"/>
+<SAINT Name="Блгв. Давида III Возобновителя, царя Иверии и Абхазии (1125)" Id="318" Type="0"/>
+<SAINT Name="Прп. Ксенофонта Робейского (1262)" Id="1410" Type="0"/>
+</LANGUAGE>
+</DAY>

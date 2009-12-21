@@ -1,0 +1,37 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Eudokia of Heliopolis (+160-170)" Id="2466" Type="1" />
+<SAINT Name="Martyrs Nestor and Tribiminus (3rd C)" Id="539" Type="0" />
+<SAINT Name="Martyr Antonina of Nicea, in Bithynia (3rd-4th C)" Id="2401" Type="0" />
+<SAINT Name="Martyrs Marcellus and Anthony" Id="" Type="0" />
+<SAINT Name="Martyr Antonina" Id="" Type="0" />
+<SAINT Name="Virginmartyr Domnina of Syria (+ c.450-460)" Id="541" Type="0" />
+<SAINT Name="Venerable Agapius of Vatopedi" Id="" Type="0" />
+<SAINT Name="Venerable Martyrius of Zelenetsk, Pskov (+1603)" Id="1494" Type="0" />
+<SAINT Name="New Hieromartyrs Priests Basil, Peter, John, Benjamin, and Michael, martyrs Anthony and Anna and others with them (+1938)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Eudocie la Samaritaine" Id="2466" Type="1" />
+<SAINT Name="Ste Domnine de Syrie" Id="541" Type="0" />
+<SAINT Name="Ste Antonine" Id="2401" Type="0" />
+<SAINT Name="Sts Marcel et Antoine" Id="" Type="0" />
+<SAINT Name="Sts Sylvestre et Sophrone" Id="" Type="0" />
+<SAINT Name="St Nestorien" Id="" Type="0" />
+<SAINT Name="Sts Charise, Nicéphore et Agapios" Id="" Type="0" />
+<SAINT Name="St Agapios de Vatopédi" Id="" Type="0" />
+<SAINT Name="St Martyrius de Zelenetsk" Id="1494" Type="0" />
+<SAINT Name="St David, Evêque du pays de Galles" Id="" Type="0" />
+<SAINT Name="St Aubin, Evêque d'Angers" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прмц. Евдокии (160-170)" Id="2466" Type="1"/>
+<SAINT Name="Прмц. Ольги (1937)" Id="" Type="0"/>
+<SAINT Name="Cщмчч. Василия, Петра, Иоанна, Вениамина, Михаила пресвитеров, прмч. Антония, прмцц. Анны, Дарии, Евдокии, Александры, Матроны,  мч. Василия, мц. Надежды (1938)" Id="4757" Type="0"/>
+<SAINT Name="Cщмч. Александра пресвитера (1942)" Id="" Type="0"/>
+<SAINT Name="Мчч. Нестора и Тривимия (III)" Id="539" Type="0"/>
+<SAINT Name="Мц. Антонины (III-IV)" Id="2401" Type="0"/>
+<SAINT Name="Прп. Домнины Сирийской (ок. 450-460)" Id="541" Type="0"/>
+<SAINT Name="Прп. Мартирия Зеленецкого (1603)" Id="1494" Type="0"/>
+<SAINT Name="Мчч. Маркелла и Антония" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,37 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="9" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Euthymios the New, of Thessalonica and Monk of Mt Athos (+ 889)" Id="1743" Type="1" />
+<SAINT Name="Monkmartyr Lucian, Presbyter of Antioch (+ 312)" Id="1745" Type="1" />
+<SAINT Name="Venerable Sabina, Bishop of Katana" Id="1749" Type="0" />
+<SAINT Name="Martyrs Sarbilos and Bebea of Edessa (2nd C)" Id="1748" Type="0" />
+<SAINT Name="Venerable John, Bishop of Suzdal (+ 1373)" Id="1746" Type="0" />
+<SAINT Name="Venerable Dionysius, Archbishop of Suzdal" Id="" Type="0" />
+<SAINT Name="Venerable Martyr Lucian of the Caves of Kiev" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God 'Sporitelnitsa Khlebov'" Id="1750" Type="0" />
+<SAINT Name="Holy Hierarch and Confessor Athanasius, bishop of Kovrov (+1962)" Id="4746" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Lucien d'Antioche" Id="1745" Type="1" />
+<SAINT Name="St Sabin, Evêque en Chypre" Id="1749" Type="0" />
+<SAINT Name="St Barsès le Confesseur, Evêque d' Edesse" Id="" Type="0" />
+<SAINT Name="St Euthyme le Jeune" Id="1743" Type="1" />
+<SAINT Name="St Lucien des Grottes de Kiev" Id="" Type="0" />
+<SAINT Name="St Denys, Archvêque de Souzdal" Id="" Type="0" />
+<SAINT Name="St Jean, Evêque de Souzdal" Id="1746" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Евфимия Нового, Солунского (889)" Id="1743" Type="1"/>
+<SAINT Name="Прмч. Лукиана, пресвитера Антиохийского (312)" Id="1745" Type="1"/>
+<SAINT Name="Сщмч. Симеона пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Димитрия пресвитера (1942)" Id="" Type="0"/>
+<SAINT Name="Свт. Афанасия исп., еп. Ковровского (1962)" Id="4764" Type="0"/>
+<SAINT Name="Мчч. Сарвила и Вевеи Едесских (ок. 98-117)" Id="1748" Type="0"/>
+<SAINT Name="Свт. Савина, еп. Катанского (760)" Id="1749" Type="0"/>
+<SAINT Name="Сщмч. Лукиана Печерского (1243)" Id="" Type="0"/>
+<SAINT Name="Свт. Иоанна, еп. Суздальского (1373)" Id="1746" Type="0"/>
+<SAINT Name="Иконы Божией Матери &quot;Спорительница хлебов&quot; (XIX)" Id="1750" Type="0"/>
+</LANGUAGE>
+</DAY>

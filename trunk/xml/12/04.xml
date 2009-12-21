@@ -1,0 +1,26 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Greatmartyr Barbara and Martyr Juliana, at Heliopolis in Syria (+c.306)" Id="3061" Type="2" />
+<SAINT Name="Venerable John of Damascus (+ 776)" Id="3062" Type="1" />
+<SAINT Name="Venerable John, Bishop of Polybotum (8th C)" Id="" Type="0" />
+<SAINT Name="Hieromartyr Seraphim, Bishop of Phanarium" Id="" Type="0" />
+<SAINT Name="Saint Heracles, Patriarch of Alexandria" Id="" Type="0" />
+<SAINT Name="Saint Genadiy, Archbishop of Novgorod (+ 1505)" Id="471" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Grande Martyre Barbara et ste martyre Julienne" Id="3061" Type="2" />
+<SAINT Name="St Jean Damascène" Id="3062" Type="1" />
+<SAINT Name="St Jean, Evêque de Polybote" Id="" Type="0" />
+<SAINT Name="Sts Christodule et Christodulie" Id="" Type="0" />
+<SAINT Name="St Séraphim, Evêque de Phanarion" Id="" Type="0" />
+<SAINT Name="St Gennade, Archevêque de Novgorod" Id="471" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Вмц. Варвары и мц. Иулиании (ок. 306)" Id="3061" Type="2"/>
+<SAINT Name="Прп. Иоанна Дамаскина (776)" Id="3062" Type="1"/>
+<SAINT Name="Сщмчч. Алексия, Иоанна, Александра и Николая пресвитеров, Василия диакона и с ним 10-ти мучеников (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Димитрия пресвитера, прмц. Анастасии, мцц. Екатерины и Киры" Id="" Type="0"/>
+<SAINT Name="Прп. Иоанна, еп. Поливотского (VIII)" Id="" Type="0"/>
+<SAINT Name="Свт. Геннадия, архиеп. Новгородского (1504)" Id="471" Type="0"/>
+</LANGUAGE>
+</DAY>

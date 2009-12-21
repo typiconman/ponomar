@@ -1,0 +1,18 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="vespers" Reading="Isa_43:9-14" Note="for the New Martyrs"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" Note="for the New Martyrs"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" Note="for the New Martyrs"/>
+<SCRIPTURE Type="apostol" Reading="Rom_8:28-39" Pericope="99" Note="for the New Martyrs"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:12-19" Pericope="106" Note="for the New Martyrs"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy New Martyrs and Confessors of Russia" Id="6613" Type="5" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Nouveaux Martyrs et Confesseurs de la terre Russe" Id="6613" Type="5" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Святых новомучеников и исповедников Российских" Id="6613" Type="5" />
+</LANGUAGE>
+</DAY>

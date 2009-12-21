@@ -1,0 +1,42 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="19" Cmd="nday == -50 || nday == -52 || nday == -54 || nday == -58" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Meeting of the Lord" Id="" Type="3" Cmd="nday == -55 || nday == -56 || nday &lt;= -59" />
+<SAINT Name="Saint Bukolos, Bishop of Smyrna (+c.100)" Id="398" Type="1" />
+<SAINT Name="Venerable Barsanuphios the Great and Saint John the Prophet (6th C)" Id="399" Type="0" />
+<SAINT Name="Martyr Julian of Emesa (+312)" Id="402" Type="0" />
+<SAINT Name="Virginmartyr Fausta and with her, Evilasius and Maximus, at Cyzicus (+c.305-311)" Id="403" Type="0" />
+<SAINT Name="Virginmartyrs Dorothy, two sisters - Christina, Callista and the Martyr Theophilos at Caesarea in Cappadocia (+c.288-300)" Id="401" Type="0" />
+<SAINT Name="Martyrs Martha, Mary, and their brother Lycarion" Id="404" Type="0" />
+<SAINT Name="Saint Photius, Patriarch of Constantinople (9th C)" Id="405" Type="0" />
+<SAINT Name="New Hieromartyr Priest Vasiliy (+1930)" Id="4776" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Boucole, Evêque de Smyrne" Id="398" Type="1" />
+<SAINT Name="St Julien d'Emèse" Id="402" Type="0" />
+<SAINT Name="Ste Fausta et ses compagnons Evilassios et Maxime" Id="403" Type="0" />
+<SAINT Name="Sts Dorothée et Théophile" Id="401" Type="0" />
+<SAINT Name="St Faust et Basile de Darion à Constantinople" Id="" Type="0" />
+<SAINT Name="St Photios le Confesseur, Patriarche de Constantinople" Id="405" Type="0" />
+<SAINT Name="St Jacques l'Ascète de Syrie" Id="" Type="0" />
+<SAINT Name="St Barsanuphe le Grand et Jean le Prophète de Gaza" Id="399" Type="0" />
+<SAINT Name="Ste Dorothée de Kachin" Id="" Type="0" />
+<SAINT Name="St Vaast, Evêque d'Arras" Id="" Type="0" />
+<SAINT Name="St Amand, Evêque de Maastricht" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Сретения Господня." Id="" Type="0" Cmd="nday == -55 || nday == -56 || nday &lt;= -59"/>
+<SAINT Name="Прп. Вукола, еп. Смирнского (ок. 100)" Id="398" Type="1"/>
+<SAINT Name="Сщмч. Димитрия пресвитера и мч. Анатолия (1921)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Василия пресвитера (1930)" Id="4776" Type="0"/>
+<SAINT Name="Сщмч. Александра пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Мцц. Дорофеи девы, жен Христины, Каллисты и мч. Феофила (288-300)" Id="401" Type="0"/>
+<SAINT Name="Мц. Фавсты девы и мчч. Евиласия и Максима (305-311)" Id="403" Type="0"/>
+<SAINT Name="Мч. Иулиана Емисского (312)" Id="402" Type="0"/>
+<SAINT Name="Прпп. Варсонофия Великого и Иоанна Пророка (VI)" Id="399" Type="0"/>
+<SAINT Name="Свт. Фотия, Патриарха Константинопольского (891)" Id="405" Type="0"/>
+<SAINT Name="Мцц. дев  Марфы, Марии и брата их, прмч. Ликариона отрока" Id="404" Type="0"/>
+</LANGUAGE>
+</DAY>

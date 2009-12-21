@@ -1,0 +1,29 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Jas_2:14-26" Pericope="53" Cmd="nday == -83" />
+<SCRIPTURE Type="apostol" Reading="Heb_11:17-23, 27-31" Pericope="329" Cmd="nday == -90" />
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &gt;= 19 &amp;&amp; doy &lt;= 25 &amp;&amp; nday == -83) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 5 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_9:42-10:1" Pericope="42" Cmd="(doy &gt;= 19 &amp;&amp; doy &lt;= 25 &amp;&amp; nday == -90) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &gt;= 12 &amp;&amp; doy &lt;= 18 &amp;&amp; nday == -83) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_9:42-10:1" Pericope="42" Cmd="(doy &gt;= 12 &amp;&amp; doy &lt;= 18 &amp;&amp; nday == -90) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_9:42-10:1" Pericope="42" Cmd="(doy &gt;= 5 &amp;&amp; doy &lt;= 11 &amp;&amp; nday == -90) &amp;&amp; GS == 1"/>
+<!-- Readings for the Jordanville implementation -->
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(nday == -83) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="(nday == -90) &amp;&amp; GS == 0" /> 
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Monday of the 36th Week after Pentecost" Id="" Type="0" Tone="2" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Lundi de la 36-me semaine après le Pentecôte" Id="" Type="0" Tone="2"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Понедельник 36-й седмицы по Пятедисятнице" Id="" Type="0" Tone="2"/>
+</LANGUAGE>
+</DAY>

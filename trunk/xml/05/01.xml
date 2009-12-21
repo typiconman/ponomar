@@ -1,0 +1,48 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Prophet Jeremiah (6th C BC)" Id="963" Type="1" />
+<SAINT Name="Hieromartyr Macarius, Metropolitan of Kiev (+1497)" Id="1406" Type="0" />
+<SAINT Name="Venerable Paphnutius the Abbot of Borovsk (+1478)" Id="964" Type="3" />
+<SAINT Name="Venerable Gerasim of Boldinsk" Id="501" Type="0" />
+<SAINT Name="Martyr Bata the Persian (4th C)" Id="967" Type="0" />
+<SAINT Name="Right-believing Tamara, Queen of Georgia (13th C)" Id="2687" Type="0" />
+<SAINT Name="New Martyrs Euthymius, Ignatius, and Acacius of Mt. Athos (+ 1814-1816)" Id="6922" Type="0" />
+<SAINT Name="Icons of the Theotokos: 'Byzantine', 'the Unexpected Joy', 'Myrrh-bearing', and 'Andronikite'" Id="969" Type="0" />
+<SAINT Name="New Martyr Nina (+1938)" Id="4876" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Prophète Jérémie" Id="963" Type="1" />
+<SAINT Name="St Bata le Perse" Id="967" Type="0" />
+<SAINT Name="St Philosophe" Id="" Type="0" />
+<SAINT Name="St Michel de Chalcédoine" Id="" Type="0" />
+<SAINT Name="St Panarétos, Evêque de Paphos en Chypre" Id="" Type="0" />
+<SAINT Name="Ste Isidora, Folle en Christ" Id="" Type="0" />
+<SAINT Name="St Sabas" Id="" Type="0" />
+<SAINT Name="St Romain de Raqqa" Id="" Type="0" />
+<SAINT Name="Sts Euthyme, Ignace et Acace de la Skite du Précurseur au Mont Athos" Id="6922" Type="0" />
+<SAINT Name="St Nicéphore de Chio" Id="" Type="0" />
+<SAINT Name="Ste Maria de Mérambélos" Id="" Type="0" />
+<SAINT Name="St Paphnuce de Borovsk" Id="964" Type="3" />
+<SAINT Name="St Gérasime de Boldina" Id="501" Type="0" />
+<SAINT Name="Ste Thamar, Reine de Géorgie" Id="2687" Type="0" />
+<SAINT Name="St Macaire, Métropolite de Kiev" Id="1406" Type="0" />
+<SAINT Name="St Orens, Métropolite d'Auch" Id="" Type="0" />
+<SAINT Name="Sts Justin, Phocius et Isicius en Bigorre" Id="" Type="0" />
+<SAINT Name="St Magnus, Fondateur du Monastère de Lavedan" Id="" Type="0" />
+<SAINT Name="St Urbice" Id="" Type="0" />
+<SAINT Name="St Macaire de Langon" Id="" Type="0" />
+<SAINT Name="St Brieuc de Bretagne" Id="" Type="0" />
+<SAINT Name="St. Sigismond" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прор. Иеремии (VI до Р.Х.)" Id="963" Type="1"/>
+<SAINT Name="Прп. Пафнутия Боровского (1477)" Id="964" Type="3"/>
+<SAINT Name="Мц. Нины (1938)" Id="4876" Type="0"/>
+<SAINT Name="Прмч. Ваты Персянина (IV)" Id="967" Type="0"/>
+<SAINT Name="Блгв. Тамары, царицы Грузинской (1213)" Id="2687" Type="0"/>
+<SAINT Name="Сщмч. Макария, митр. Киевского (1497)" Id="1406" Type="0"/>
+<SAINT Name="Прп. Герасима Болдинского (1554)" Id="501" Type="0"/>
+<SAINT Name="Прмчч. Афонских Евфимия (1814), Игнатия (1814) и Акакия (1816)" Id="6922" Type="0"/>
+<SAINT Name="Царевококшайской или Мироносицкой (1647), Андрониковской (XIV), и именуемой &quot;Нечаянная Радость&quot; икон Божией Матери" Id="969" Type="0"/>
+</LANGUAGE>
+</DAY>

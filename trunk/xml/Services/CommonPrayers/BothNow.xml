@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Both now and ever, and unto the ages of ages. Amen."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Maintenant et toujours et aux siècles des siècles. Amen."/>
+</LANGUAGE>
+</COMMONPRAYER>

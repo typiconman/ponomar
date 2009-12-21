@@ -1,0 +1,38 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Onuphrius the Great (4th C)" Id="1287" Type="2" />
+<SAINT Name="Venerable Peter of Mt. Athos (+734)" Id="1288" Type="1" />
+<SAINT Name="Venerable Timothy" Id="" Type="0" />
+<SAINT Name="Venerable Arsenius the Abbot of Konevits (+1447)" Id="265" Type="0" />
+<SAINT Name="Righteous Princess Anna of Kashin" Id="2393" Type="0" />
+<SAINT Name="Venerable Desert Fathers: John, Andrew, Hiraclemon, and Theophilus of Egypt" Id="" Type="0" />
+<SAINT Name="Venerable Bassian and Jonah of Solovki (+1561)" Id="1236" Type="0" />
+<SAINT Name="Venerable Onuphrius and Auxentius of Vologda (15th-16th C)" Id="" Type="0" />
+<SAINT Name="Venerable Onuphrius the Abbot of Malsk, Pskov (+1492)" Id="1290" Type="0" />
+<SAINT Name="Venerable Stephen of Komel the Abbot of Ozersk Monastery, Vologda (+1542)" Id="1291" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Onuphre l'Egyptien" Id="1287" Type="2" />
+<SAINT Name="St Pierre l'Athonite" Id="1288" Type="1" />
+<SAINT Name="St Triphyllios, Evêque de Leucosie" Id="" Type="0" />
+<SAINT Name="St Julien, commémoré en l'Eglise de Dagouta à Constantinople" Id="" Type="0" />
+<SAINT Name="St Zénon" Id="" Type="0" />
+<SAINT Name="St Jean le Soldat d'Egypte" Id="" Type="0" />
+<SAINT Name="St Arsène de Konevets" Id="265" Type="0" />
+<SAINT Name="Sts Onuphre et Auxence de Vologda" Id="" Type="0" />
+<SAINT Name="St Onuphre de Malsk" Id="1290" Type="0" />
+<SAINT Name="St Etienne de Komel" Id="1291" Type="0" />
+<SAINT Name="Sts Bassien et Jonas de Solovski" Id="1236" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Онуфрия Великого (IV)" Id="1287" Type="2"/>
+<SAINT Name="Прп. Петра Афонского (734)" Id="1288" Type="1"/>
+<SAINT Name="Прпп. Иоанна, Андрея, Ираклемона и Феофила Фиваидских (IV)" Id="" Type="0"/>
+<SAINT Name="Прп. Арсения Коневского (1447)" Id="265" Type="0"/>
+<SAINT Name="Прп. Онуфрия Мальского, Псковского (1492)" Id="1290" Type="0"/>
+<SAINT Name="Прпп. Онуфрия и Авксентия Вологодских (XV-XVI)" Id="" Type="0"/>
+<SAINT Name="Прп. Стефана Озерского, Комельского (1542)" Id="1291" Type="0"/>
+<SAINT Name="Прпп. Вассиана и Ионы Пертоминских, Соловецких (1561)" Id="1236" Type="0"/>
+<SAINT Name="Обретение мощей (1650) и второе прославление (1909) блгв. вел. кн. Анны Кашинской" Id="2393" Type="0"/>
+</LANGUAGE>
+</DAY>

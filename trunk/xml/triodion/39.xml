@@ -1,0 +1,18 @@
+﻿<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="6th hour" Reading="Isa_5:16-25" />
+<SCRIPTURE Type="vespers" Reading="Gen_4:16-26" />
+<SCRIPTURE Type="vespers" Reading="Prov_5:15-6:3" />
+<LITURGY Type="3" Comment="Pre-sanctified except for Annunciation" Cmd="dRank != 6"/>
+<PRIMES Type="Lenten" LENTENK="2"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Wednesday of the Second Week of Lent" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Mercredi de la 2-me semaine du Carême" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Среда 2-й седмицы Великого поста" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+</DAY>

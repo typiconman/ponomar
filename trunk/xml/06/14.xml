@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Prophet Elisha (9th C BC)" Id="764" Type="1" />
+<SAINT Name="Saint Methodius, Patriarch of Constantinople (+846)" Id="1301" Type="1" />
+<SAINT Name="St. Mstislav the Brave (in baptism George), Prince of Novgorod (+1180)" Id="" Type="0" />
+<SAINT Name="Venerable Elisha of Sumsk (15th-16th C)" Id="765" Type="0" />
+<SAINT Name="Saint Methodius, Igumen of Peshnosha (+1392)" Id="1303" Type="0" />
+<SAINT Name="Saints Julitta and Julia of Taven" Id="" Type="0" />
+<SAINT Name="Venerable Niphont of Mt Athos (14th C)" Id="" Type="0" />
+<SAINT Name="St John, Metropolitan of Euchaitus" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Priest Joseph (+1918);" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Prophète Elisée" Id="764" Type="1" />
+<SAINT Name="St Méthode le Confesseur, Patriarche de Constantinople" Id="1301" Type="1" />
+<SAINT Name="St Cyrille, Evêque de Gortyne" Id="" Type="0" />
+<SAINT Name="St Niphon l'Athonite" Id="" Type="0" />
+<SAINT Name="Ste Julitte" Id="" Type="0" />
+<SAINT Name="St Mstislav-Georges, Prince de Smolensk et de Novgorod" Id="" Type="0" />
+<SAINT Name="St Elisée de Souma" Id="" Type="0" />
+<SAINT Name="Sts Martyrs Rufin et Valère de Soissons" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прор. Елисея (IX до  Р.Х.)" Id="764" Type="1"/>
+<SAINT Name="Свт. Мефодия, патриарха Константинопольского (846)" Id="1301" Type="1"/>
+<SAINT Name="Сщмч. Иосифа пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Николая, Александра, Павла  пресвитеров и Николая диакона (1938)" Id="" Type="0"/>
+<SAINT Name="Блгв. кн. Мстислава  Храброго, во св. Крещении Георгия, Новгородского (1180)" Id="" Type="0"/>
+<SAINT Name="Прп. Мефодия, игумена Пешношского (1392)" Id="1303" Type="0"/>
+<SAINT Name="Прп. Елисея Сумского (XV-XVI)" Id="765" Type="0"/>
+</LANGUAGE>
+</DAY>

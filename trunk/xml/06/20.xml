@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="15" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Methodius the Bishop of Patara (+312)" Id="1353" Type="1" />
+<SAINT Name="Holy Martyrs Aristocles the Presbyter, Demetrian, and Athanasius the Reader (+ c.306)" Id="1352" Type="0" />
+<SAINT Name="Holy Martyrs Inna, Pinna, and Rimma (1st-2nd C), the Scythians" Id="949" Type="0" />
+<SAINT Name="St. Leucius the Bishop of Brindisi (5th C)" Id="1355" Type="0" />
+<SAINT Name="Holy Prince Gleb of Vladimir, named George in holy Baptism (+1175)" Id="1358" Type="0" />
+<SAINT Name="Transfer of the Relics of Saint Gurias, Archbishop of Kazan (1630)" Id="553" Type="0" />
+<SAINT Name="Venerable Naum, disciple of Sts Cyrill and Methodius" Id="" Type="0" />
+<SAINT Name="Venerable Callistos and 2 other desert-dwellers" Id="" Type="0" />
+<SAINT Name="Venerable Callistos, Patriarch of Constantinople;" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Méthode, Evêque de Patare" Id="1353" Type="1" />
+<SAINT Name="St Calliste 1er, Patriarche de Constantinople" Id="" Type="0" />
+<SAINT Name="St Père Nicolas Cabasilas" Id="" Type="0" />
+<SAINT Name="Tranfert des Reliques des Sts Apôtres Luc, André et Thomas, du St Prophète Elisée et du St Martyr Lazare dans l'église des Sts Apôtres à Constantinople" Id="" Type="0" />
+<SAINT Name="St Gleb, Prince de Vladimir" Id="1358" Type="0" />
+<SAINT Name="St Gouri, Archevêque de Kazan (transfert des Reliques)" Id="553" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Мефодия, еп. Патарского (312)" Id="1353" Type="1"/>
+<SAINT Name="Мч. Инны, Пинны и Риммы (I-II)" Id="949" Type="0"/>
+<SAINT Name="Мчч. Аристоклия пресвитера, Димитриана диакона и Афанасия чтеца (ок. 306)" Id="1352" Type="0"/>
+<SAINT Name="Свт. Левкия исп., еп. Врунтисиопольского (V)" Id="1355" Type="0"/>
+<SAINT Name="Свт. Мины, еп. Полоцкого (1116)" Id="1362" Type="0"/>
+<SAINT Name="Блгв. кн. Глеба Владимирского (сына св. Андрея Боголюбского) (1175)" Id="1358" Type="0"/>
+<SAINT Name="Перенесение мощей свт. Гурия, архиеп. Казанского (1630)" Id="553" Type="0"/>
+<SAINT Name="Моденской (Косинской) иконы Божией Матери" Id="1364" Type="0"/>
+</LANGUAGE>
+</DAY>

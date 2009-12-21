@@ -1,0 +1,21 @@
+﻿<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="vespers" Reading="Gen_49:1-2, 8-12" />
+<SCRIPTURE Type="vespers" Reading="Zeph_3:14-19" />
+<SCRIPTURE Type="vespers" Reading="Zech_9:9-15" />
+<SCRIPTURE Type="matins" Reading="Mt_21:1-11, 15-17" Pericope="73"/>
+<SCRIPTURE Type="apostol" Reading="Philip_4:4-9" Pericope="247"/>
+<SCRIPTURE Type="gospel" Reading="Jn_12:1-18" Pericope="41"/>
+<PRIMES Type="Lenten" />
+<LITURGY Type="1" Comment="Always St John's" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Palm Sunday. Entrance of our Lord into Jerusalem" Id="6943" Type="6" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Le Dimanche des Rameaux. L'Éntrée de nôtre Seigneur a Jérusalem" Id="6943" Type="6" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Неделя ваий (цветоносная, Вербное воскресенье). Вход Господень в Иерусалим." Id="6943" Type="6" Tone="-1"/>
+</LANGUAGE>
+</DAY>

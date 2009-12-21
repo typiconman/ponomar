@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Ponomar: The First Hour (Prime)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Ponomar : La Première Heure (Prime)"/>
+</LANGUAGE>
+</COMMONPRAYER>

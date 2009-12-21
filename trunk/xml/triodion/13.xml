@@ -1,0 +1,18 @@
+﻿<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="6th hour" Reading="Isa_48:17-49:4" />
+<SCRIPTURE Type="vespers" Reading="Gen_27:1-41" />
+<SCRIPTURE Type="vespers" Reading="Prov_19:16-25" />
+<PRIMES Type="Lenten" />
+<LITURGY Type="-1" Comment="No Liturgy except feasts" Cmd="dRank &lt; 4"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Monday of the Sixth Week of Lent" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Lundi de la 6-me semaine du Carême" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Понедельник 6-й седмицы Великого поста" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+</DAY>

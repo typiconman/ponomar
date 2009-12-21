@@ -1,0 +1,29 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable George the Confessor, Bishop of Mitylene (9th C)" Id="805" Type="1" />
+<SAINT Name="Martyr Calliopius at Pompeiopolis in Cilicia (+304)" Id="807" Type="0" />
+<SAINT Name="Martyr Rufinus the Deacon, the Martyr Aquilina and 200 Soldiers with them (+ c.310)" Id="808" Type="0" />
+<SAINT Name="Venerable Egesippus" Id="" Type="0" />
+<SAINT Name="Venerable Daniel the Abbot of Pereyaslavl-Zalesski (+1540)" Id="582" Type="0" />
+<SAINT Name="Venerable Nilus of Sorsk (+1508)" Id="" Type="0" />
+<SAINT Name="Venerable Serapion of Novgorod" Id="1064" Type="0" />
+<SAINT Name="Venerable Leucius of Volokolamsk" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Martyr Calliope" Id="807" Type="0" />
+<SAINT Name="St Georges, Evêque de Mytilène" Id="805" Type="1" />
+<SAINT Name="Sts Rufin, Aquilina et 200 soldats à Sinope" Id="808" Type="0" />
+<SAINT Name="St Sabas de Kalymnos" Id="" Type="0" />
+<SAINT Name="St Gérasime de Byzance" Id="" Type="0" />
+<SAINT Name="St Daniel de Pereyaslavl" Id="582" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп.Георгия, исп., митр. Митиленского (после 820)" Id="805" Type="1"/>
+<SAINT Name="Сщмч. Аркадия пресвитера (1933)" Id="" Type="0"/>
+<SAINT Name="Прмц. Евдокии (1939)" Id="" Type="0"/>
+<SAINT Name="Мч. Каллиопия (304)" Id="807" Type="0"/>
+<SAINT Name="Мчч. Руфина диакона, Акилины и с ними 200 воинов (ок. 310)" Id="808" Type="0"/>
+<SAINT Name="Прп. Даниила Переяславского (1540)" Id="582" Type="0"/>
+<SAINT Name="Прп. Серапиона монаха" Id="1064" Type="0"/>
+</LANGUAGE>
+</DAY>

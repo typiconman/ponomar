@@ -1,0 +1,19 @@
+<!-- service file for SID 4645 (Saint Ambrose of Optina) (NOTE: According to MP practice) -->
+<LANGUAGE Cmd="LS == -1">
+	<TROPARION Tone="5" Author="MP">
+	Яко к целебному источнику, притекаем к тебе, Амвросие, отче наш, ты бо на путь спасения нас верно наставляеши, молитвами от бед и напастей охраняеши, в телесных и душевных скорбех утешаеши, паче же смирению, терпению и любви нучаеши; моли Человеколюбца Христа и Заступницу усердную спастися душам нашим.
+	</TROPARION>
+	<KONTAKION Tone="2" Author="MP">
+	Завет Пастыреначальника исполнив, старчество благодать наследовал еси, болезнуя сердцем о всех, с верою притекающих к тебе. Темже и мы, чада твоя, с любовию вопием ти: отче святый Амвросие, моли Христа Бога спастися душам нашим.
+	</KONTAKION>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+	<TROPARION Tone="5" Author="Aleksandr Andreev">
+	As to a spring of healing we come to thee, O Ambrose, our father, for thou dost guide us faitfhuly to the way of salvation, and through thy prayers dost protect us from every affliction and evil, from every sorrow of body and soul, and teachest us humility, patience, and love. Pray then unto the Man-loving Christ and our zealous Intercessort that our souls be saved.
+	</TROPARION>
+	<KONTAKION Tone="2" Author="Aleksandr Andreev">
+	Having fulfilled the covenant of the Chief Shepherd, thou didst inherit the grace of eldership and in thy heart didst suffer with all who in faith came unto thee. We, thy children, then with love cry unto thee: O holy father Ambrose, pray unto Christ God that our souls be saved.
+	</KONTAKION>
+</LANGUAGE>
+	
+

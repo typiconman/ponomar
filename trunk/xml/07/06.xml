@@ -1,0 +1,37 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Sisoes the Great (+429)" Id="4163" Type="1" />
+<SAINT Name="Finding of the relics of the Holy Princess Juliana of Olshansk (16th C)" Id="2531" Type="0" />
+<SAINT Name="Martyrs Marinus, Martha, Audifax, Habbakuk, Valentine, Asterius, Isaurus, Innocent, Felix, Hermius, Basil, Peregrinus, and Ruthinus, at Rome (+269)" Id="4166" Type="0" />
+<SAINT Name="Martyr Quintus of Phrygia (+c.283)" Id="4168" Type="0" />
+<SAINT Name="Martyr Lucia the Virgin and with her: Rixus, Anthony, Lucian, Isidor, Diodorus, Cutonius, Aronosus, Capicus, and Saturus" Id="4169" Type="0" />
+<SAINT Name="Venerable Sisoes, Schemamonk of the Kievan Caves (13th C)" Id="2029" Type="0" />
+<SAINT Name="New Hieromartyr Simon, Bishop of Ufa (+1921)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Sisoès de Scété" Id="4163" Type="1" />
+<SAINT Name="Ste Lucie la Vierge, St Rixos et 24 Martyrs de Campanie" Id="" Type="0" />
+<SAINT Name="St Astérios, Evêque de Dyrrachium" Id="" Type="0" />
+<SAINT Name="St Apollonios" Id="" Type="0" />
+<SAINT Name="St Alexandrion" Id="" Type="0" />
+<SAINT Name="St Epimaque" Id="" Type="0" />
+<SAINT Name="St Cyrille de Thessalonique" Id="" Type="0" />
+<SAINT Name="Ste Julienne la Vierge qui reposait dans les Grottes de de Kiev (invention des Reliques)" Id="" Type="0" />
+<SAINT Name="St Sisoès des Grottes de Kiev" Id="2029" Type="0" />
+<SAINT Name="St Gervais du Mans" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Сисоя Великого (429)" Id="4163" Type="1"/>
+<SAINT Name="Прмч. Евфимия (1931)" Id="" Type="0"/>
+<SAINT Name="Прмч. Феодора (1943)" Id="4922" Type="0"/>
+<SAINT Name="Мчч. Марина, Марфы, Авдифакса, Аввакума, Кирина, Валентина пресвитера, Астерия и иных многих в Риме (269)" Id="4166" Type="0"/>
+<SAINT Name="Мч. Коинта Фригийского (ок. 283)" Id="4168" Type="0"/>
+<SAINT Name="Мчч. Исавра диакона, Иннокентия, Филикса, Ермия, Василия, Перегрина, Руфа и Руфина Македонских (III-IV)" Id="4167" Type="0"/>
+<SAINT Name="Мц. Лукии девы и с нею мчч. Рикса, Антония, Лукиана, Исидора, Диона, Диодора, Кутония, Ароноса(Ориона), Капика и Сатура (301)" Id="4169" Type="0"/>
+<SAINT Name="Прп. Сисоя, схимника Печерского (XIII)" Id="2029" Type="0"/>
+<SAINT Name="Обретение мощей прав. девы Иулиании, кн. Ольшанской (XVI)" Id="2531" Type="0"/>
+<SAINT Name="Прпп. Тихона, Василия и Никона Соколовских (XVI)" Id="6499" Type="0"/>
+<SAINT Name="Свт. Арсения, еп Тверского (1409)" Id="270" Type="0"/>
+<SAINT Name="Богородско-Уфимской иконы Божией Матери (1621)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

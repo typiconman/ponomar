@@ -1,0 +1,16 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="apostol" Reading="II Jn_1:1-13" Pericope="75"/>
+<SCRIPTURE Type="gospel" Reading="Mk_15:22, 25, 33-41" Pericope="68"/>
+<PRIMES Type="Normal" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Meatfare Friday" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Vendredi de carnivale" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Пятница мясопустная" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+</DAY>

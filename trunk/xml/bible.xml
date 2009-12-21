@@ -1,0 +1,355 @@
+﻿<!--
+bible.xml - A SCRIPTURE IDENTIFICATION FILE FOR THE PONOMAR PROJECT;
+THIS IDENTIFICATION FILE CONTAINS INFORMATION ABOUT SCRIPTURAL TEXTS.
+
+THIS FILE USES BML - "Bible Markup Language". ITS FULL DEFINITION IS IN DOCTYPE.
+
+Bible Markup Language is part of the Ponomar Project.
+Copyright 2007, 2008 Aleksandr Andreev.
+aleksandr.andreev@gmail.com
+
+Ponomar is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 3
+of the License, or (at your option) any later version.
+
+While Ponomar is distributed in the hope that it will be useful,
+it comes with ABSOLUTELY NO WARRANTY, without even the implied warranties of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for details.
+-->
+<BMLFILE Name="bible.xml">
+<LANGUAGE Cmd="LS == 0">
+<BIBLE Id="kjv" Name="English (Orthodoxized KJV)">
+	<INFO ChapterN="Chapter" VerseNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " />
+	<BOOK Id="Gen" Name="Genesis" Chapters="50" Short="Gen" Intro="A reading from Genesis"/>
+	<BOOK Id="Ex" Name="Exodus" Chapters="40" Short="Ex" Intro="A reading from Exodus"/>
+	<BOOK Id="Lev" Name="Leviticus" Chapters="27" Short="Lev" Intro="A reading from Levites"/>
+	<BOOK Id="Num" Name="Numbers" Chapters="36" Short="Num" Intro="A reading from Numbers"/>
+	<BOOK Id="Deut" Name="Deuteronomy" Chapters="34" Short="Deut" Intro="A reading Deuteronomy"/>
+	<BOOK Id="Josh" Name="Joshua" Chapters="24" Short="Josh" Intro="A reading from Joshua, the son of Nun"/>
+	<BOOK Id="Judg" Name="Judges" Chapters="21" Short="Judg" Intro="A reading from Judges"/>
+	<BOOK Id="Ruth" Name="Ruth" Chapters="4" Short="Ruth" Intro="A reading from Ruth"/>
+	<BOOK Id="I_Kings" Name="I Kingdoms" Chapters="31" Short="I Kings" Intro="A reading from the first Book of Kingdoms"/>
+	<BOOK Id="II_Kings" Name="II Kingdoms" Chapters="24" Short="II Kings" Intro="A reading from the second Book of Kingdoms"/>
+	<BOOK Id="III_Kings" Name="III Kingdoms" Chapters="22" Short="III Kings" Intro="A reading from the third Book of Kingdoms"/>
+	<BOOK Id="IV_Kings" Name="IV Kingdoms" Chapters="25" Short="IV Kings" Intro="A reading from the fourth Book of Kingdoms"/>
+	<BOOK Id="I_Paral" Name="I Paralipomenon" Chapters="29" Short="I Paral" Intro="A reading from the first Book of Paralipomenon"/>
+	<BOOK Id="II_Paral" Name="II Paralipomenon" Chapters="36" Short="II Paral" Intro="A reading from the second Book of Paraliponmenon"/>
+	<BOOK Id="I_Esdra" Name="I Esdra" Chapters="10" Short="I Esdra" Intro="A reading from the first Book of Esdras"/>
+	<BOOK Id="Nehem" Name="Nehemiah" Chapters="13" Short="Nehem" Intro="A reading from the Prophecy of Nehemiah"/>
+	<BOOK Id="II_Esdra" Name="II Esdra" Chapters="9" Short="II Esdra" Intro="A reading from the second Book of Esdras"/>
+	<BOOK Id="Tobit" Name="Tobit" Chapters="14" Short="Tobit" Intro="A reading from Tobit"/>
+	<BOOK Id="Judith" Name="Judith" Chapters="16" Short="Judith" Intro="A reading from Judith"/>
+	<BOOK Id="Esther" Name="Esther" Chapters="10" Short="Esther" Intro="A reading from Esther"/>
+	<BOOK Id="Job" Name="Job" Chapters="42" Short="Job" Intro="A reading from the Job"/>
+	<BOOK Id="Psalm" Name="Psalm" Chapters="151" Short="Ps" Intro="Psalm"/>
+	<BOOK Id="Prov" Name="Proverbs" Chapters="31" Short="Prov" Intro="A reading from Proverbs"/>
+	<BOOK Id="Eccles" Name="Ecclesiastes" Chapters="12" Short="Eccles" Intro="A reading from Ecclesiastes"/>
+	<BOOK Id="Song" Name="Song of Songs" Chapters="8" Short="Song" Intro="A reading from the Song of Songs"/>
+	<BOOK Id="Wisd" Name="Wisdom of Solomon" Chapters="19" Short="Wisd" Intro="A reading from the Wisdom of Solomon"/>
+	<BOOK Id="Sirach" Name="Sirach" Chapters="51" Short="Sirach" Intro="A reading from the Prophecy of Sirach, son of Jesus"/>
+	<BOOK Id="Isa" Name="Isaiah" Chapters="66" Short="Isa" Intro="A reading from the Prophecy of Isaiah"/>
+	<BOOK Id="Jerem" Name="Jeremiah" Chapters="52" Short="Jerem" Intro="A reading from the Prophecy of Jeremiah"/>
+	<BOOK Id="Lamen" Name="Lamentations" Chapters="5" Short="Lamen" Intro="A reading from the Lamentations of Jeremiah"/>
+	<BOOK Id="Epistle" Name="Epistle of Jeremiah" Chapters="1" Short="Epistle" Intro="A reading from the Epistle of Jeremiah"/>
+	<BOOK Id="Baruch" Name="Baruch" Chapters="5" Short="Baruch" Intro="A reading from the Prophecy of Jeremiah"/>
+	<BOOK Id="Ezek" Name="Ezekiel" Chapters="48" Short="Ezek" Intro="A reading from the Prophecy of Ezekiel"/>
+	<BOOK Id="Dan" Name="Daniel" Chapters="14" Short="Dan" Intro="A reading from the Prophecy of Daniel"/>
+	<BOOK Id="Hos" Name="Hosea" Chapters="14" Short="Hos" Intro="A reading from the Prophecy of Hosea"/>
+	<BOOK Id="Joel" Name="Joel" Chapters="3" Short="Joel" Intro="A reading from the Prophecy of Joel"/>
+	<BOOK Id="Amos" Name="Amos" Chapters="9" Short="Amos" Intro="A reading from the Prophecy of Amos"/>
+	<BOOK Id="Obad" Name="Obadiah" Chapters="1" Short="Obad" Intro="A reading from the Prophecy of Obadiah"/>
+	<BOOK Id="Jona" Name="Jonah" Chapters="4" Short="Jona" Intro="A reading from the Prophecy of Jonah"/>
+	<BOOK Id="Mica" Name="Micah" Chapters="7" Short="Mica" Intro="A reading from the Prophecy of Micah"/>
+	<BOOK Id="Nahum" Name="Nahum" Chapters="3" Short="Nahum" Intro="A reading from the Prophecy of Nahum"/>
+	<BOOK Id="Habak" Name="Habakuk" Chapters="3" Short="Habak" Intro="A reading from the Prophecy of Habakuk"/>
+	<BOOK Id="Zeph" Name="Zephaniah" Chapters="3" Short="Zeph" Intro="A reading from the Prophecy of Zephaniah"/>
+	<BOOK Id="Hagg" Name="Haggai" Chapters="2" Short="Hagg" Intro="A reading from the Prophecy of Haggai"/>
+	<BOOK Id="Zech" Name="Zechariah" Chapters="14" Short="Zech" Intro="A reading from the Prophecy of Zechariah"/>
+	<BOOK Id="Mal" Name="Malachi" Chapters="4" Short="Mal" Intro="A reading from the Prophecy of Malachi"/>
+	<BOOK Id="I_Macc" Name="I Maccabees" Chapters="16" Short="I Macc" Intro="A reading from the first Book of Maccabees"/>
+	<BOOK Id="II_Macc" Name="II Maccabees" Chapters="15" Short="II Macc" Intro="A reading from the second Book of Maccabees"/>
+	<BOOK Id="III_Macc" Name="III Maccabees" Chapters="7"  Short="III Macc" Intro="A reading from the third Book of Maccabees"/>
+	<BOOK Id="III_Esdra" Name="III Esdra" Chapters="16" Short="III Esdra" Intro="A reading from the third Book of Esdras"/>
+	<BOOK Id="Mt" Name="Matthew" Chapters="28" Short="Mt" Intro="A reading from the Holy Gospel according to Matthew"/>
+	<BOOK Id="Mk" Name="Mark" Chapters="16" Short="Mk" Intro="A reading from the Holy Gospel according to Mark"/>
+	<BOOK Id="Lk" Name="Luke" Chapters="24" Short="Lk" Intro="A reading from the Holy Gospel according to Luke"/>
+	<BOOK Id="Jn" Name="John" Chapters="21" Short="Jn" Intro="A reading from the Holy Gospel accoridng to John"/>
+	<BOOK Id="Acts" Name="Acts" Chapters="28" Short="Acts" Intro="A reading from the Acts of the Apostles"/>
+	<BOOK Id="Jas" Name="James" Chapters="5" Short="Jas" Intro="A reading from the Epistle of James"/>
+	<BOOK Id="I_Pet" Name="I Peter" Chapters="5" Short="I Pet" Intro="A reading from the the first Epistle of Peter"/>
+	<BOOK Id="II_Pet" Name="II Peter" Chapters="3" Short="II Pet" Intro="A reading from the second Epistle of Peter"/>
+	<BOOK Id="I_Jn" Name="I John" Chapters="5" Short="I Jn" Intro="A reading from the first Epistle of John"/>
+	<BOOK Id="II_Jn" Name="II John" Chapters="1" Short="II Jn" Intro="A reading from the second Epistle of John"/>
+	<BOOK Id="III_Jn" Name="III John" Chapters="1" Short="III Jn" Intro="A reading from the third Epistle of John"/>
+	<BOOK Id="Jude" Name="Jude" Chapters="1" Short="Jude" Intro="A reading from the Epistle of Jude"/>
+	<BOOK Id="Rom" Name="Romans" Chapters="16" Short="Rom" Intro="A reading from the Epistle of Paul to the Romans"/>
+	<BOOK Id="I_Cor" Name="I Corinthians" Chapters="16" Short="I Cor" Intro="A reading from the first Epistle of Paul to the Corinthians"/>
+	<BOOK Id="II_Cor" Name="II Corinthians" Chapters="13" Short="II Cor" Intro="A reading from the second Epistle of Paul to the Corinthians"/>
+	<BOOK Id="Gal" Name="Galatians" Chapters="6" Short="Gal" Intro="A reading from the Epistle of Paul to the Galatians"/>
+	<BOOK Id="Eph" Name="Ephesians" Chapters="6" Short="Eph" Intro="A reading from the Epistle of Paul to the Ephesians"/>
+	<BOOK Id="Philip" Name="Philippians" Chapters="4" Short="Phil" Intro="A reading from the Epistle to the Philippians"/>
+	<BOOK Id="Col" Name="Colossians" Chapters="4" Short="Col" Intro="A reading from the Epistle to the Colossians"/>
+	<BOOK Id="I_Thess" Name="I Thessalonians" Chapters="5" Short="I Thess" Intro="A reading from the first Epistle to the Thessalonians"/>
+	<BOOK Id="II_Thess" Name="II Thessalonians" Chapters="3" Short="II Thess" Intro="A reading from the second Epistle to the Thessalonians"/>
+	<BOOK Id="I_Tim" Name="I Timothy" Chapters="6" Short="I Tim" Intro="A reading from the first Epistle to Timothy"/>
+	<BOOK Id="II_Tim" Name="II Timothy" Chapters="4" Short="II Tim" Intro="A reading from the second Epistle to Timothy" />
+	<BOOK Id="Tit" Name="Titus" Chapters="3" Short="Tit" Intro="A reading from the Epistle to Titus"/>
+	<BOOK Id="Philemon" Name="Philemon" Chapters="1" Short="Philemon" Intro="A reading from the Epistle to Philemon"/>
+	<BOOK Id="Heb" Name="Hebrews" Chapters="13" Short="Heb" Intro="A reading from the Epistle to the Hebrews"/>
+	<BOOK Id="Apoc" Name="Apocalypse" Chapters="22" Short="Apoc" Intro="A reading from the Book of Revelations"/>
+	<BOOK Id="Composite" Name="Composite" Chapters="8" Short="Composite" Intro=""/>
+</BIBLE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<BIBLE Id="fra" Name="français (Louis Segond orthodoxisé)">
+	<INFO ChapterN="Chapitre" VerseNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " />
+	<BOOK Id="Gen" Name="Genèsis" Chapters="50" Short="Gen" Intro="Une lection de Genèsis"/>
+	<BOOK Id="Ex" Name="L'Exode" Chapters="40" Short="Ex" Intro="Une lection de L'Exode"/>
+	<BOOK Id="Lev" Name="Lévitique" Chapters="27" Short="Lév" Intro="Une lection de Lévitique"/>
+	<BOOK Id="Num" Name="Nombres" Chapters="36" Short="Nom" Intro="Une lection de Nombres"/>
+	<BOOK Id="Deut" Name="Deutéronome" Chapters="34" Short="Deut" Intro="Une lection de Deutéronome"/>
+	<BOOK Id="Josh" Name="Josué" Chapters="24" Short="Jos" Intro="Une lection de Josué, fils de Nun"/>
+	<BOOK Id="Judg" Name="Juges" Chapters="21" Short="Jg" Intro="Une lection de Juges"/>
+	<BOOK Id="Ruth" Name="Ruth" Chapters="4" Short="Rt" Intro="Une lection de Ruth"/>
+	<BOOK Id="I_Kings" Name="1 Règnes" Chapters="31" Short="1 R" Intro="Une lection du premier livre des Règnes"/>
+	<BOOK Id="II_Kings" Name="2 Règnes" Chapters="24" Short="2 R" Intro="Une lection du deuxième livre des Règnes"/>
+	<BOOK Id="III_Kings" Name="3 Règnes" Chapters="22" Short="3 R" Intro="Une lection du troisième livre des Règnes"/>
+	<BOOK Id="IV_Kings" Name="4 Règnes" Chapters="25" Short="4 R" Intro="Une lection du quatrième livre des Règnes"/>
+	<BOOK Id="I_Paral" Name="1 Chroniques" Chapters="29" Short="1 Ch" Intro="Une lection du premier livre des Chroniques"/>
+	<BOOK Id="II_Paral" Name="2 Chroniques" Chapters="36" Short="2 Ch" Intro="Une lection du deuxième livre des Chroniques"/>
+	<BOOK Id="I_Esdra" Name="1 Esdras" Chapters="10" Short="1 Esd" Intro="Une lection du premier livre d'Esdras"/>
+	<BOOK Id="Nehem" Name="Néhémie" Chapters="13" Short="Ne" Intro="Une lection de Néhémie"/>
+	<BOOK Id="II_Esdra" Name="2 Esdras" Chapters="9" Short="2 Esd" Intro="Une lection du deuxième livre d'Esdras"/>
+	<BOOK Id="Tobit" Name="Tobie" Chapters="14" Short="Tb" Intro="Une lection de Tobit"/>
+	<BOOK Id="Judith" Name="Judith" Chapters="16" Short="Jdt" Intro="Une lection de Judith"/>
+	<BOOK Id="Esther" Name="Esther" Chapters="10" Short="Est" Intro="Une lection d'Esther"/>
+	<BOOK Id="Job" Name="Job" Chapters="42" Short="Jb" Intro="Une lection de Job"/>
+	<BOOK Id="Psalm" Name="Psaumes" Chapters="151" Short="Ps" Intro="Psaume"/>
+	<BOOK Id="Prov" Name="Proverbes" Chapters="31" Short="Pr" Intro="Une lection de Proverbes "/>
+	<BOOK Id="Eccles" Name="Ecclésiaste" Chapters="12" Short="Qo" Intro="Une lection d'Ecclésiaste"/>
+	<BOOK Id="Song" Name="Cantique des cantiques" Chapters="8" Short="Ct" Intro="Une lection de la Cantique des cantiques"/>
+	<BOOK Id="Wisd" Name="Sagesse de Salomon" Chapters="19" Short="Sag" Intro="Une lection de la Sagesse de Salomon"/>
+	<BOOK Id="Sirach" Name="Siracide" Chapters="52" Short="Sr" Intro="Une lection de Siracide, fils de Jésus"/>
+	<BOOK Id="Isa" Name="Isaïe / Ésaïe" Chapters="66" Short="Is" Intro="Une lection d'Ésaïe"/>
+	<BOOK Id="Jerem" Name="Jérémie" Chapters="52" Short="Jr" Intro="Une lection de la prophétie de Jérémie"/>
+	<BOOK Id="Lamen" Name="Lamentations" Chapters="5" Short="La" Intro="Une lection des Lamentations de Jérémie"/>
+	<BOOK Id="Epistle" Name="Lettre de Jérémie" Chapters="1" Short="Lettre" Intro="Une lection de Lettre de Jérémie"/>
+	<BOOK Id="Baruch" Name="Baruch" Chapters="5" Short="Baruch" Intro="Une lection de la prophétie de Jérémie"/>
+	<BOOK Id="Ezek" Name="Ézéchiel" Chapters="48" Short="Éz" Intro="Une lection de la prophétie d'Ézéchiel"/>
+	<BOOK Id="Dan" Name="Daniel" Chapters="14" Short="Da" Intro="Une lection de la prophétie de Daniel"/>
+	<BOOK Id="Hos" Name="Osée" Chapters="14" Short="Os" Intro="Une lection de la prophétie d'Osée"/>
+	<BOOK Id="Joel" Name="Joël" Chapters="3" Short="Jl" Intro="Une lection de la prophétie de Joël"/>
+	<BOOK Id="Amos" Name="Amos" Chapters="9" Short="Am" Intro="Une lection de la prophétie d'Amos"/>
+	<BOOK Id="Obad" Name="Abdias" Chapters="1" Short="Ab" Intro="Une lection de la prophétie d'Abdias"/>
+	<BOOK Id="Jona" Name="Jonas" Chapters="4" Short="Jon" Intro="Une lection de la prophétie de Jonas"/>
+	<BOOK Id="Mica" Name="Michée" Chapters="7" Short="Mi" Intro="Une lection de la prophétie de Michée"/>
+	<BOOK Id="Nahum" Name="Nahum" Chapters="3" Short="Na" Intro="Une lection de la prophétie de Nahum"/>
+	<BOOK Id="Habak" Name="Habacuc" Chapters="3" Short="Ha" Intro="Une lection de la prophétie de Habacuc"/>
+	<BOOK Id="Zeph" Name="Sophonie" Chapters="3" Short="So" Intro="Une lection de la prophétie de Sophonie"/>
+	<BOOK Id="Hagg" Name="Aggée" Chapters="2" Short="Ag" Intro="Une lection de la prophétie d'Aggée"/>
+	<BOOK Id="Zech" Name="Zacharie" Chapters="14" Short="Za" Intro="Une lection de la prophétie de Zacharie"/>
+	<BOOK Id="Mal" Name="Malachie" Chapters="4" Short="Ml" Intro="Une lection de la prophétie de Malachie"/>
+	<BOOK Id="I_Macc" Name="1 Maccabées" Chapters="16" Short="1 M" Intro="Une lection du premier livre des Maccabées"/>
+	<BOOK Id="II_Macc" Name="2 Maccabées" Chapters="15" Short="2 M" Intro="Une lection du deuxième livre des Maccabées"/>
+	<BOOK Id="III_Macc" Name="3 Maccabées" Chapters="7"  Short="3 M" Intro="Une lection du troisième livre des Maccabées"/>
+	<BOOK Id="III_Esdra" Name="3 Esdras" Chapters="16" Short="3 Esd" Intro="Une lection du troisième livre d'Esdras"/>
+	<BOOK Id="Mt" Name="Matthieu" Chapters="28" Short="Mt" Intro="Une lection du Saint Évangile selon Saint Matthieu"/>
+	<BOOK Id="Mk" Name="Marc" Chapters="16" Short="Marc" Intro="Une lection du Saint Évangile selon Saint Marc"/>
+	<BOOK Id="Lk" Name="Luc" Chapters="24" Short="Lc" Intro="Une lection du Saint Évangile selon Saint Luc"/>
+	<BOOK Id="Jn" Name="Jean" Chapters="21" Short="Jn" Intro="Une lection du Saint Évangile selon Saint Jean"/>
+	<BOOK Id="Acts" Name="Actes des Apôtres" Chapters="28" Short="Actes" Intro="Une lection des Actes des Apôtres"/>
+	<BOOK Id="Jas" Name="Jacques" Chapters="5" Short="Jac" Intro="Une lection d'Epitre d'Apôtre Jacques"/>
+	<BOOK Id="I_Pet" Name="1 Pierre" Chapters="5" Short="1 Per" Intro="Une lection de première Épître d'Apôtre Pierre"/>
+	<BOOK Id="II_Pet" Name="2 Pierre" Chapters="3" Short="2 Per" Intro="Une lection de deuxième Épître d'Apôtre Pierre"/>
+	<BOOK Id="I_Jn" Name="1 Jean" Chapters="5" Short="1 Jn" Intro="Une lection de première Épître d'Apôtre Jean"/>
+	<BOOK Id="II_Jn" Name="2 Jean" Chapters="1" Short="2 Jn" Intro="Une lection de deuxième Epitre d'Apôtre Jean"/>
+	<BOOK Id="III_Jn" Name="3 Jean" Chapters="1" Short="3 Jn" Intro="Une lection de troisième Épître d'Apôtre Jean"/>
+	<BOOK Id="Jude" Name="Jude" Chapters="1" Short="Jude" Intro="Une lection d'Épître d'Apôtre Jude"/>
+	<BOOK Id="Rom" Name="Romains" Chapters="16" Short="Rom" Intro="Une lection de l'Épître de Paul aux Romains"/>
+	<BOOK Id="I_Cor" Name="1 Corinthiens" Chapters="16" Short="1 Cor" Intro="Une lection de la première Épître de Paul aux Corinthiens"/>
+	<BOOK Id="II_Cor" Name="2 Corinthiens" Chapters="13" Short="2 Cor" Intro="Une lection de la deuxième Épître de Paul aux Corinthiens"/>
+	<BOOK Id="Gal" Name="Galates" Chapters="6" Short="Gal" Intro="Une lection de l'Épître de Paul aux Galates"/>
+	<BOOK Id="Eph" Name="Éphésiens" Chapters="6" Short="Éph" Intro="Une lection de l'Épître de Paul aux Éphésiens"/>
+	<BOOK Id="Philip" Name="Philippiens" Chapters="4" Short="Phil" Intro="Une lection de l'Épître de Paul aux Philippiens"/>
+	<BOOK Id="Col" Name="Colossiens" Chapters="4" Short="Col" Intro="Une lection de l'Épître de Paul aux Colossiens"/>
+	<BOOK Id="I_Thess" Name="1 Thessaloniciens" Chapters="5" Short="1 Thess" Intro="Une lection de la première Épître de Paul aux Thessaloniciens"/>
+	<BOOK Id="II_Thess" Name="2 Thessaloniciens" Chapters="3" Short="2 Thess" Intro="Une lection de la deuxième Épître de Paul aux Thessaloniciens"/>
+	<BOOK Id="I_Tim" Name="1 Timothée" Chapters="6" Short="1 Tim" Intro="Une lection de la première Épître de Paul au Timothée"/>
+	<BOOK Id="II_Tim" Name="2 Timothée" Chapters="4" Short="2 Tim" Intro="Une lection de la deuxième Épître de Paul au Timothée"/>
+	<BOOK Id="Tit" Name="Tite" Chapters="3" Short="Tit" Intro="Une lection de l'Épître de Paul au Tite"/>
+	<BOOK Id="Philemon" Name="Philémon" Chapters="1" Short="Philemon" Intro="Une lection de l'Épître de Paul au Philémon"/>
+	<BOOK Id="Heb" Name="Hébreux" Chapters="13" Short="Héb" Intro="Une lection de l'Épître de Paul aux Hébreux"/>
+	<BOOK Id="Apoc" Name="Apocalypse" Chapters="22" Short="Apoc" Intro="Une lection de livre de la Révélation"/>
+	<BOOK Id="Composite" Name="Composé" Chapters="8" Short="Composé" Intro=""/>
+</BIBLE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<BIBLE Id="slv" Name="церковнославянская (Елисаветинская) Бі́блїѧ">
+	<INFO ChapterN="Глава̀" VerseNo="Пролог,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Пролог,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep="," Duration="-" SelectionSeparator="; " BCSep=" " FontFace="Hirmos Ponomar" FontSize="16"/>
+	<BOOK Id="Gen" Name="Бытие/Бытїе́" Chapters="50" Short="Быт." Intro=""/>
+	<BOOK Id="Ex" Name="Исход/И҆схо́дъ" Chapters="40" Short="Исх." Intro="" Note="Some formatting issues with chapters 36,37,38"/>
+	<BOOK Id="Lev" Name="Леѵї́тъ" Chapters="27" Short="Лев." Intro="" Note="Some correction against the pdf is required."/>
+	<BOOK Id="Num" Name="Чи́сла" Chapters="36" Short="Чис." Intro=""/>
+	<BOOK Id="Deut" Name="Второзако́нїе" Chapters="34" Short="Втор." Intro=""/>
+	<BOOK Id="Josh" Name="Ї҆исꙋ́са наѵи́на" Chapters="24" Short="Нав." Intro="" Notes="Last Chapter has extra 3 verses"/>
+	<BOOK Id="Judg" Name="Сꙋдї́й ї҆сра́илевыхъ" Chapters="21" Short="Суд." Intro="" Notes=""/>
+	<BOOK Id="Ruth" Name="Рꙋ́ѳь" Chapters="4" Short="Руфь" Intro=""/>
+	<BOOK Id="I_Kings" Name="а҃ ца́рствъ" Chapters="31" Short="1 Цар." Intro=""/>
+	<BOOK Id="II_Kings" Name="в҃ ца́рствъ" Chapters="24" Short="2 Цар." Intro=""/>
+	<BOOK Id="III_Kings" Name="г҃ ца́рствъ" Chapters="22" Short="3 Цар." Intro=""/>
+	<BOOK Id="IV_Kings" Name="д҃ ца́рствъ" Chapters="25" Short="4 Цар." Intro=""/>
+	<BOOK Id="I_Paral" Name="а҃ паралипоме́нѡнъ" Chapters="29" Short="1 Парал." Intro=""/>
+	<BOOK Id="II_Paral" Name="в҃ паралипоме́нѡнъ" Chapters="36" Short="2 Парал." Intro=""/>
+	<BOOK Id="I_Esdra" Name="а҃ є҆́здры " Chapters="10" Short="" Intro="1 Езд."/>
+	<BOOK Id="Nehem" Name="Неемї́и" Chapters="13" Short="" Intro="Неем."/>
+	<BOOK Id="II_Esdra" Name="в҃ є҆́здры" Chapters="9" Short="2 Езд." Intro=""/>
+	<BOOK Id="Tobit" Name="Тѡвї́т" Chapters="14" Short="Тоб." Intro=""/>
+	<BOOK Id="Judith" Name="Ї҆ꙋдї́ѳ" Chapters="16" Short="Иуд." Intro=""/>
+	<BOOK Id="Esther" Name="Є҆сѳи́рь" Chapters="10" Short="Эсф." Intro=""/>
+	<BOOK Id="Job" Name="Ї҆́ѡвъ" Chapters="42" Short="" Intro="Иов" Note="The last verse of Chapter 42 is much longer than in all the other translations!"/>
+	<BOOK Id="Psalm" Name="Ѱсалти́рь" Chapters="151" Short="Пс." Intro="Ѱсало́мъ"/>
+	<BOOK Id="Prov" Name="При́тчей соломѡ́нихъ" Chapters="31" Short="Прт." Intro=""/>
+	<BOOK Id="Eccles" Name="Є҆кклесїа́ст" Chapters="12" Short="Еккл." Intro=""/>
+	<BOOK Id="Song" Name="Пѣ́снь пѣ́сней" Chapters="8" Short="Пс. псн." Intro=""/>
+	<BOOK Id="Wisd" Name="Премꙋ́дрости соломѡ́ни" Chapters="19" Short="Прем." Intro=""/>
+	<BOOK Id="Sirach" Name="Сїрахъ" Chapters="51" Short="Сир." Intro="" Note="The French Version has an extra chapter 52!"/>
+	<BOOK Id="Isa" Name="И҆са́їи" Chapters="66" Short="Ис." Intro=""/>
+	<BOOK Id="Jerem" Name="Ї҆еремї́и" Chapters="52" Short="Иерем." Intro=""/>
+	<BOOK Id="Lamen" Name="Пла́чь ї҆еремї́евъ" Chapters="5" Short="Плач." Intro=""/>
+	<BOOK Id="Epistle" Name="Посла́нїе їеремї́ино" Chapters="1" Short="Пос. Иерем." Intro=""/>
+	<BOOK Id="Baruch" Name="Варꙋ́хъ " Chapters="5" Short="" Intro="Вар."/>
+	<BOOK Id="Ezek" Name="Ї҆езекї́илѧ" Chapters="48" Short="Иезек." Intro=""/>
+	<BOOK Id="Dan" Name="Данїи́ла" Chapters="14" Short="Дан." Intro=""/>
+	<BOOK Id="Hos" Name="Ѡ҆сї́а" Chapters="14" Short="Ос." Intro=""/>
+	<BOOK Id="Joel" Name="Ї҆ѡи́ль" Chapters="3" Short="Иоиль" Intro=""/>
+	<BOOK Id="Amos" Name="А҆мѡ́с" Chapters="9" Short="Ам." Intro=""/>
+	<BOOK Id="Obad" Name="А҆вдї́й " Chapters="1" Short="Авд." Intro=""/>
+	<BOOK Id="Jona" Name="Ї҆ѡ́ны" Chapters="4" Short="Ион." Intro=""/>
+	<BOOK Id="Mica" Name="Мїхе́й" Chapters="7" Short="Мих." Intro="" Note="There may be some issue with Chapter 7 and the initial word of Verses 1 and 2. The .pdf and .hip files do not agree on what is to be displayed!"/>
+	<BOOK Id="Nahum" Name="Наꙋ́мъ" Chapters="3" Short="Наум" Intro=""/>
+	<BOOK Id="Habak" Name="А҆ввакꙋ́мъ" Chapters="3" Short="Авв." Intro=""/>
+	<BOOK Id="Zeph" Name="Софо́нїа" Chapters="3" Short="Соф." Intro=""/>
+	<BOOK Id="Hagg" Name="А҆гге́й" Chapters="2" Short="Агг." Intro=""/>
+	<BOOK Id="Zech" Name="Заха́рїа" Chapters="14" Short="Зах." Intro=""/>
+	<BOOK Id="Mal" Name="Малахї́а" Chapters="4" Short="Мал." Intro=""/>
+	<BOOK Id="I_Macc" Name="а҃ маккавей́скаѧ" Chapters="16" Short="1 Мак." Intro=""/>
+	<BOOK Id="II_Macc" Name="в҃ маккавей́скаѧ" Chapters="15" Short="2 Мак." Intro=""/>
+	<BOOK Id="III_Macc" Name="г҃ маккавей́скаѧ" Chapters="7"  Short="3 Мак." Intro=""/>
+	<BOOK Id="III_Esdra" Name="г҃ є҆́здры" Chapters="16" Short="" Intro="3 Езд." Note="Missing. A pdf copy of this Book from the Ostrog Bible is available."/>
+	<BOOK Id="Mt" Name="Ѿ Матѳе́а" Chapters="28" Short="Мт." Intro=""/>
+	<BOOK Id="Mk" Name="Ѿ Ма́рка" Chapters="16" Short="Мк." Intro=""/>
+	<BOOK Id="Lk" Name="Ѿ лꙋкѝ" Chapters="24" Short="Лк." Intro=""/>
+	<BOOK Id="Jn" Name="Ѿ ї҆ѡа́нна" Chapters="21" Short="Ин." Intro=""/>
+	<BOOK Id="Acts" Name="Дѣѧ҄нїѧ ст҃ы́хъ а҆пⷭ﻿лъ" Chapters="28" Short="Деян." Intro=""/>
+	<BOOK Id="Jas" Name="Ї҆а́кѡвле" Chapters="5" Short="Иак." Intro=""/>
+	<BOOK Id="I_Pet" Name="Пе́рвое петра̀" Chapters="5" Short="1 Пет." Intro=""/>
+	<BOOK Id="II_Pet" Name="Второ́е петра̀" Chapters="3" Short="2 Пет." Intro=""/>
+	<BOOK Id="I_Jn" Name="Пе́рвое ї҆ѡа́нна" Chapters="5" Short="1 Ин." Intro=""/>
+	<BOOK Id="II_Jn" Name="Второ́е ї҆ѡа́нна" Chapters="1" Short="2 Ин." Intro=""/>
+	<BOOK Id="III_Jn" Name="Тре́тїе ї҆ѡа́нна" Chapters="1" Short="3 Ин." Intro=""/>
+	<BOOK Id="Jude" Name="Ї҆ꙋ́дино" Chapters="1" Short="Иуд." Intro=""/>
+	<BOOK Id="Rom" Name="Къ ри́млѧнѡмъ" Chapters="16" Short="Рим." Intro=""/>
+	<BOOK Id="I_Cor" Name="Пе́рвое къ корї́нѳѧнѡмъ" Chapters="16" Short="1 Кор." Intro=""/>
+	<BOOK Id="II_Cor" Name="Второ́е къ корї́нѳѧнѡмъ" Chapters="13" Short="2 Кор." Intro=""/>
+	<BOOK Id="Gal" Name="Къ гала́тѡмъ" Chapters="6" Short="Гал." Intro=""/>
+	<BOOK Id="Eph" Name="Ко є҆фесе́ємъ" Chapters="6" Short="Еф." Intro=""/>
+	<BOOK Id="Philip" Name="Къ фїлїпписї́ємъ" Chapters="4" Short="Филип." Intro=""/>
+	<BOOK Id="Col" Name="Къ колосса́ємъ  " Chapters="4" Short="Кол." Intro=""/>
+	<BOOK Id="I_Thess" Name="Пе́рвое къ солꙋ́нѧнѡмъ" Chapters="5" Short="1 Сол." Intro=""/>
+	<BOOK Id="II_Thess" Name="Второ́е къ солꙋ́нѧнѡмъ" Chapters="3" Short="2 Сол." Intro=""/>
+	<BOOK Id="I_Tim" Name="Пе́рвое къ тїмоѳе́ю " Chapters="6" Short="1 Тим." Intro=""/>
+	<BOOK Id="II_Tim" Name="Второ́е къ тїмоѳе́ю" Chapters="4" Short="2 Тим." Intro=""/>
+	<BOOK Id="Tit" Name="Къ тї́тꙋ" Chapters="3" Short="Тит" Intro=""/>
+	<BOOK Id="Philemon" Name="Къ фїлимо́нꙋ" Chapters="1" Short="Филим." Intro=""/>
+	<BOOK Id="Heb" Name="Ко є҆вре́ємъ" Chapters="13" Short="Евр." Intro=""/>
+	<BOOK Id="Apoc" Name="А҆пока́лѷѱсїсъ" Chapters="22" Short="Отк." Intro=""/>
+	<BOOK Id="Composite" Name="Composite" Chapters="8" Short="Composite" Intro=""/>
+
+</BIBLE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -1">
+<BIBLE Id="latin" Name="latina (vulgata clementina)">
+	<INFO ChapterN="Capitulo" VerseNo="Prologus,I,II,III,IV,V,VI,VII,VIII,IX,X,XI,XII,XIII,XIV,XV,XVI,XVII,XVIII,XIX,XX,XXI,XXII,XXIII,XXIV,XXV,XXVI,XXVII,XXVIII,XXIX,XXX,XXXI,XXXII,XXXIII,XXXIV,XXXV,XXXVI,XXXVII,XXXVIII,XXXIX,XL,XLI,XLII,XLIII,XLIV,XLV,XLVI,XLVII,XLVIII,XLIX,L,LI,LII,LIII,LIV,LV,LVI,LVII,LVIII,LIX,LX,LXI,LXII,LXIII,LXIV,LXV,LXVI,LXVII,LXVIII,LXIX,LXX,LXXI,LXXII,LXXIII,LXXIV,LXXV,LXXVI,LXXVII,LXXVIII,LXXIX,LXXX,LXXXI,LXXXII,LXXXIII,LXXXIV,LXXXV,LXXXVI,LXXXVII,LXXXVIII,LXXXIX,XC,XCI,XCII,XCIII,XCIV,XCV,XCVI,XCVII,XCVIII,XCIX,C,CI,CII,CIII,CIV,CV,CVI,CVII,CVIII,CIX,CX,CXI,CXII,CXIII,CXIV,CXV,CXVI,CXVII,CXVIII,CXIX,CXX,CXXI,CXXII,CXXIII,CXXIV,CXXV,CXXVI,CXXVII,CXXVIII,CXXIX,CXXX,CXXXI,CXXXII,CXXXIII,CXXXIV,CXXXV,CXXXVI,CXXXVII,CXXXVIII,CXXXIX,CXL,CXLI,CXLII,CXLIII,CXLIV,CXLV,CXLVI,CXLVII,CXLVIII,CXLIX,CL,CLI,CLII,CLIII,CLIV,CLV,CLVI,CLVII,CLVIII,CLIX,CLX,CLXI,CLXII,CLXIII,CLXIV,CLXV,CLXVI,CLXVII,CLXVIII,CLXIX,CLXX,CLXXI,CLXXII,CLXXIII,CLXXIV,CLXXV,CLXXVI,CLXXVII,CLXXVIII,CLXXIX,CLXXX" ChapterNo="Prologus,I,II,III,IV,V,VI,VII,VIII,IX,X,XI,XII,XIII,XIV,XV,XVI,XVII,XVIII,XIX,XX,XXI,XXII,XXIII,XXIV,XXV,XXVI,XXVII,XXVIII,XXIX,XXX,XXXI,XXXII,XXXIII,XXXIV,XXXV,XXXVI,XXXVII,XXXVIII,XXXIX,XL,XLI,XLII,XLIII,XLIV,XLV,XLVI,XLVII,XLVIII,XLIX,L,LI,LII,LIII,LIV,LV,LVI,LVII,LVIII,LIX,LX,LXI,LXII,LXIII,LXIV,LXV,LXVI,LXVII,LXVIII,LXIX,LXX,LXXI,LXXII,LXXIII,LXXIV,LXXV,LXXVI,LXXVII,LXXVIII,LXXIX,LXXX,LXXXI,LXXXII,LXXXIII,LXXXIV,LXXXV,LXXXVI,LXXXVII,LXXXVIII,LXXXIX,XC,XCI,XCII,XCIII,XCIV,XCV,XCVI,XCVII,XCVIII,XCIX,C,CI,CII,CIII,CIV,CV,CVI,CVII,CVIII,CIX,CX,CXI,CXII,CXIII,CXIV,CXV,CXVI,CXVII,CXVIII,CXIX,CXX,CXXI,CXXII,CXXIII,CXXIV,CXXV,CXXVI,CXXVII,CXXVIII,CXXIX,CXXX,CXXXI,CXXXII,CXXXIII,CXXXIV,CXXXV,CXXXVI,CXXXVII,CXXXVIII,CXXXIX,CXL,CXLI,CXLII,CXLIII,CXLIV,CXLV,CXLVI,CXLVII,CXLVIII,CXLIX,CL,CLI,CLII,CLIII,CLIV,CLV,CLVI,CLVII,CLVIII,CLIX,CLX,CLXI,CLXII,CLXIII,CLXIV,CLXV,CLXVI,CLXVII,CLXVIII,CLXIX,CLXX,CLXXI,CLXXII,CLXXIII,CLXXIV,CLXXV,CLXXVI,CLXXVII,CLXXVIII,CLXXIX,CLXXX"  CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " />
+	<BOOK Id="Gen" Name="Genesis" Chapters="50" Short="Gen" Intro=""/>
+	<BOOK Id="Ex" Name="Exodus" Chapters="40" Short="Ex" Intro=""/>
+	<BOOK Id="Lev" Name="Leviticus" Chapters="27" Short="Lev" Intro=""/>
+	<BOOK Id="Num" Name="Numeri" Chapters="36" Short="Num" Intro=""/>
+	<BOOK Id="Deut" Name="Deuteronomium" Chapters="34" Short="Deut" Intro=""/>
+	<BOOK Id="Josh" Name="Josue" Chapters="24" Short="Josh" Intro=""/>
+	<BOOK Id="Judg" Name="Judicum" Chapters="21" Short="Judg" Intro=""/>
+	<BOOK Id="Ruth" Name="Ruth" Chapters="4" Short="Ruth" Intro=""/>
+	<BOOK Id="I_Kings" Name="I Regnum" Chapters="31" Short="I R" Intro=""/>
+	<BOOK Id="II_Kings" Name="II Regnum" Chapters="24" Short="II R" Intro=""/>
+	<BOOK Id="III_Kings" Name="III Regnum" Chapters="22" Short="III R" Intro=""/>
+	<BOOK Id="IV_Kings" Name="IV Regnum" Chapters="25" Short="IV R" Intro=""/>
+	<BOOK Id="I_Paral" Name="I Paralipomenon" Chapters="29" Short="I Paral" Intro=""/>
+	<BOOK Id="II_Paral" Name="II Paralipomenon" Chapters="36" Short="II Paral" Intro=""/>
+	<BOOK Id="I_Esdra" Name="I Esdræ" Chapters="10" Short="Esdræ I" Intro=""/>
+	<BOOK Id="Nehem" Name="Nehemiæ" Chapters="13" Short="Nehem" Intro=""/>
+	<BOOK Id="II_Esdra" Name="II Esdræ" Chapters="9" Short="Esdræ II" Intro=""/>
+	<BOOK Id="Tobit" Name="Tobiæ" Chapters="14" Short="Tobiæ" Intro=""/>
+	<BOOK Id="Judith" Name="Judith" Chapters="16" Short="Judith" Intro=""/>
+	<BOOK Id="Esther" Name="Esther" Chapters="10" Short="Esther" Intro=""/>
+	<BOOK Id="Job" Name="Job" Chapters="42" Short="Job" Intro=""/>
+	<BOOK Id="Psalm" Name="Psalmorum" Chapters="151" Short="Ps" Intro=""/>
+	<BOOK Id="Prov" Name="Proverbiorum" Chapters="31" Short="Prov" Intro=""/>
+	<BOOK Id="Eccles" Name="Ecclesiastes" Chapters="12" Short="Eccles" Intro=""/>
+	<BOOK Id="Song" Name="Canticum Canticorum" Chapters="8" Short="Ct" Intro=""/>
+	<BOOK Id="Wisd" Name="Sapientiæ" Chapters="19" Short="Sap" Intro=""/>
+	<BOOK Id="Sirach" Name="Sirach" Chapters="51" Short="Sirach" Intro=""/>
+	<BOOK Id="Isa" Name="Isaiæ" Chapters="66" Short="Isa" Intro=""/>
+	<BOOK Id="Jerem" Name="Jeremiæ" Chapters="52" Short="Jerem" Intro=""/>
+	<BOOK Id="Lamen" Name="Lamentationes" Chapters="5" Short="Lamen" Intro=""/>
+	<BOOK Id="Epistle" Name="Epistle Jeremiæ" Chapters="1" Short="Epistle" Intro=""/>
+	<BOOK Id="Baruch" Name="Baruch" Chapters="5" Short="Baruch" Intro=""/>
+	<BOOK Id="Ezek" Name="Ezechielis" Chapters="48" Short="Ezek" Intro=""/>
+	<BOOK Id="Dan" Name="Danielis" Chapters="14" Short="Dan" Intro=""/>
+	<BOOK Id="Hos" Name="Osee" Chapters="14" Short="Os" Intro=""/>
+	<BOOK Id="Joel" Name="Joël" Chapters="3" Short="Joël" Intro=""/>
+	<BOOK Id="Amos" Name="Amos" Chapters="9" Short="Amos" Intro=""/>
+	<BOOK Id="Obad" Name="Abdiæ" Chapters="1" Short="Abd" Intro=""/>
+	<BOOK Id="Jona" Name="Jonæ" Chapters="4" Short="Jonæ" Intro=""/>
+	<BOOK Id="Mica" Name="Michææ" Chapters="7" Short="Michææ" Intro=""/>
+	<BOOK Id="Nahum" Name="Nahum" Chapters="3" Short="Nahum" Intro=""/>
+	<BOOK Id="Habak" Name="Habacuc" Chapters="3" Short="Habac" Intro=""/>
+	<BOOK Id="Zeph" Name="Sophoniæ" Chapters="3" Short="Soph" Intro=""/>
+	<BOOK Id="Hagg" Name="Aggæi" Chapters="2" Short="Aggæi" Intro=""/>
+	<BOOK Id="Zech" Name="Zachariæ" Chapters="14" Short="Zach" Intro=""/>
+	<BOOK Id="Mal" Name="Malachiæ" Chapters="4" Short="Mal" Intro=""/>
+	<BOOK Id="I_Macc" Name="I Machabæorum" Chapters="16" Short="I Mach" Intro=""/>
+	<BOOK Id="II_Macc" Name="II Machabæorum" Chapters="15" Short="II Mach" Intro=""/>
+	<BOOK Id="III_Macc" Name="III Machabæorum" Chapters="7"  Short="III Mach" Intro=""/>
+	<BOOK Id="III_Esdra" Name="III Esdræ" Chapters="16" Short="III Esdræ" Intro=""/>
+	<BOOK Id="Mt" Name="Matthæes" Chapters="28" Short="Mt" Intro=""/>
+	<BOOK Id="Mk" Name="Marcus" Chapters="16" Short="Mk" Intro=""/>
+	<BOOK Id="Lk" Name="Lucas" Chapters="24" Short="Lk" Intro=""/>
+	<BOOK Id="Jn" Name="Joannes" Chapters="21" Short="Jn" Intro=""/>
+	<BOOK Id="Acts" Name="Actus Apostolorum" Chapters="28" Short="Act" Intro=""/>
+	<BOOK Id="Jas" Name="Jacobi" Chapters="5" Short="Jac" Intro=""/>
+	<BOOK Id="I_Pet" Name="I Petri" Chapters="5" Short="I Pet" Intro=""/>
+	<BOOK Id="II_Pet" Name="II Petri" Chapters="3" Short="II Pet" Intro=""/>
+	<BOOK Id="I_Jn" Name="I Joannis" Chapters="5" Short="I Jn" Intro=""/>
+	<BOOK Id="II_Jn" Name="II Joannis" Chapters="1" Short="II Jn" Intro=""/>
+	<BOOK Id="III_Jn" Name="III Joannis" Chapters="1" Short="III Jn" Intro=""/>
+	<BOOK Id="Jude" Name="Judæ" Chapters="1" Short="Judæ" Intro=""/>
+	<BOOK Id="Rom" Name="ad Romanos" Chapters="16" Short="Rom" Intro=""/>
+	<BOOK Id="I_Cor" Name="I ad Corinthios" Chapters="16" Short="I Cor" Intro=""/>
+	<BOOK Id="II_Cor" Name="II ad Corinthios" Chapters="13" Short="II Cor" Intro=""/>
+	<BOOK Id="Gal" Name="ad Galatas" Chapters="6" Short="Gal" Intro=""/>
+	<BOOK Id="Eph" Name="ad Ephesios" Chapters="6" Short="Eph" Intro=""/>
+	<BOOK Id="Philip" Name="ad Philippenses" Chapters="4" Short="Phil" Intro=""/>
+	<BOOK Id="Col" Name="ad Collessenses" Chapters="4" Short="Col" Intro=""/>
+	<BOOK Id="I_Thess" Name="I ad Thessalonicenses" Chapters="5" Short="I Thess" Intro=""/>
+	<BOOK Id="II_Thess" Name="II ad Thessalonicenses" Chapters="3" Short="II Thess" Intro=""/>
+	<BOOK Id="I_Tim" Name="I ad Timotheum" Chapters="6" Short="I Tim" Intro=""/>
+	<BOOK Id="II_Tim" Name="II ad Timotheum" Chapters="4" Short="II Tim" Intro=""/>
+	<BOOK Id="Tit" Name="ad Titum" Chapters="3" Short="Tit" Intro=""/>
+	<BOOK Id="Philemon" Name="ad Philemonem" Chapters="1" Short="Philemon" Intro=""/>
+	<BOOK Id="Heb" Name="ad Hebræos" Chapters="13" Short="Heb" Intro=""/>
+	<BOOK Id="Apoc" Name="Apocalypsis" Chapters="22" Short="Apoc" Intro=""/>
+	<BOOK Id="Composite" Name="Composite" Chapters="8" Short="Composite" Intro=""/>
+</BIBLE>
+</LANGUAGE>
+</BMLFILE>

@@ -1,0 +1,37 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="matins" Reading="Lk_21:12-19" Pericope="106" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="II Tim_2:1-10" Pericope="292" Note="for the Martyr"/>
+<SCRIPTURE Type="gospel" Reading="Jn_15:17-16:2" Pericope="52" Note="for the Martyr"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Greatmartyr and Healer Panteleimon (+ 305)" Id="1727" Type="2" />
+<SAINT Name="Venerable Anthusa, Abbess of Mantinea in Asia Minor, and her 90 Monastics (8th C)" Id="4316" Type="0" />
+<SAINT Name="Venerable Sisinius the Wonderworker" Id="" Type="0" />
+<SAINT Name="Blessed Nicholas Konchanov the Fool-for-Christ of Novgorod (+ 1392)" Id="1634" Type="0" />
+<SAINT Name="Holy Hierarch Joasaph, Metropolitan of Moscow" Id="" Type="0" />
+<SAINT Name="New Martyr Chrystodulus" Id="" Type="0" />
+<SAINT Name="Holy Equal-to-the-Apostles Clement of Ochrid (+ 916), Bishop of Greater Macedonia, with Saints Naum, Sabbas, Gorazd and Angelar, desciples of Sts Cyrill and Methodius" Id="4317" Type="0" />
+<SAINT Name="Glorification of Saint Herman of Alaska" Id="506" Type="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Pantéléimon, Grand-Martyr et Anargyre" Id="1727" Type="2" />
+<SAINT Name="Ste Anthouse du monastère de Mantinéon" Id="4316" Type="0" />
+<SAINT Name="St Manuel" Id="" Type="0" />
+<SAINT Name="Sts 153 Martyrs de Thrace" Id="" Type="0" />
+<SAINT Name="St Syméon Stylite Le Nouveau" Id="" Type="0" />
+<SAINT Name="St Clément d'Ochrid, 1er Evêque de Bulgarie et les disciples des Sts Cyrille et Méthode : Gorazd, Nahum, Angélaire, Sabas" Id="4317" Type="0" />
+<SAINT Name="St Nicolas Kochanov, Fol en Christ à Novgorod" Id="1634" Type="0" />
+<SAINT Name="St Joasaph, Métropolite de Moscou" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Вмч. и целителя Пантелеимона (305)" Id="1727" Type="2"/>
+<SAINT Name="Прославление преп. Германа Аляскинского" Id="506" Type="1"/>
+<SAINT Name="Сщмч. Амвросия, еп. Сарапульского (1918)" Id="4748" Type="0"/>
+<SAINT Name="Сщмч. Платона и Пантелеимона пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1941)" Id="" Type="0"/>
+<SAINT Name="Прп. Анфисы исп.,  игумении и 90 сестер ее (VIII)" Id="4316" Type="0"/>
+<SAINT Name="Равноапп. Климента, еп. Охридского (916), Наума, Саввы, Горазда и Ангеляра (IX-X)" Id="4317" Type="0"/>
+<SAINT Name="Блж. Николая Кочанова, Христа ради юродивого, Новгородского (1392)" Id="1634" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,18 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="6th hour" Reading="Zech_8:7-17" />
+<SCRIPTURE Type="vespers" Reading="Zech_8:19-23" />
+<PRIMES Type="Normal" />
+<LITURGY Type="-1" Comment="No Divine Liturgy UNLESS It is Meeting of the LORD" Cmd="dRank != 6"/>
+<LITURGY Type="1" Comment="Divine Liturgy of St John for Meeting of the LORD" Cmd="dRank == 6"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Cheesefare Friday" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Vendredi de Cheesefare" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Пятница сыропустная" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+</DAY>

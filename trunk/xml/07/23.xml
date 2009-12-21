@@ -1,0 +1,33 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240" Note="for the Theotokos"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyrs Trophymos, Theophilos and 13 others in Lycia (4th C)" Id="4292" Type="1" />
+<SAINT Name="Hieromartyr Apollonarius, Bishop of Ravenna (+c.75)" Id="4293" Type="0" />
+<SAINT Name="Commemoration of the Miraculous Appearance of the Pochaev Icon of the Mother of God, which saved the Monastery from the assault of the Tatars and Turks (1675)" Id="2947" Type="4" />
+<SAINT Name="Icon of the Mother of God 'Joy of All Who Sorrow' at the glass factory in Saint Petersburg" Id="4294" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Prophète Ezéchiel" Id="" Type="0" />
+<SAINT Name="St Phocas de Sinope" Id="" Type="0" />
+<SAINT Name="St Apollinaire, 1er Evêque de Ravenne, St Vital et Ste Valérie" Id="4293" Type="0" />
+<SAINT Name="St 7 Martyrs de Chaldia" Id="" Type="0" />
+<SAINT Name="St Martyr Apollonius de Rome" Id="" Type="0" />
+<SAINT Name="Sts Martyrs par les Bulgares sous Nicéphore 1er" Id="" Type="0" />
+<SAINT Name="Ste Anne ou Suzanne de Leucade" Id="" Type="0" />
+<SAINT Name="Ste Pélagie de Tinos" Id="" Type="0" />
+<SAINT Name="St Thyrsos (ou Thérissos), Evêque de Carpasia à Chypre" Id="" Type="0" />
+<SAINT Name="Apparition miraculeuse de la Mère de Dieu au Monastère de Potchaev" Id="2947" Type="4" />
+<SAINT Name="St Vital de Ravenne" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Трофима, Феофила и с ними 13-ти мучеников (284-305)" Id="4292" Type="1"/>
+<SAINT Name="Почаевской иконы Божией Матери (1675)" Id="2947" Type="4"/>
+<SAINT Name="Прав. воина Феодора Санаксарского (прославление 2001)" Id="" Type="0"/>
+<SAINT Name="Мч. Андрея (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Аполлинария, еп. Равеннийского (ок. 75)" Id="4293" Type="0"/>
+<SAINT Name="Иконы Божией матери, именуемой &quot;Всех скорбящих Радость&quot; (с грошиками) (1888)" Id="4294" Type="0"/>
+</LANGUAGE>
+</DAY>

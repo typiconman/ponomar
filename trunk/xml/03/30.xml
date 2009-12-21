@@ -1,0 +1,30 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable John Climacus of Sinai, Author of 'the Ladder' (+649)" Id="986" Type="1" />
+<SAINT Name="Venerable John the Silent of St Sabbas Monastery (6th C)" Id="960" Type="0" />
+<SAINT Name="St. Zosimus the Bishop of Syracuse (+ c.662)" Id="741" Type="0" />
+<SAINT Name="Holy Apostles Sosthenes, Apollos, Cephas, Caesar and Epaphroditus of the Seventy (1st C)" Id="2-38" Type="0" />
+<SAINT Name="Prophet Johad" Id="954" Type="0" />
+<SAINT Name="Holy Hierarch John, Patriarch of Jerusalem" Id="" Type="0" />
+<SAINT Name="Hieromartyr Zachariah, Bishop of Corinth" Id="" Type="0" />
+<SAINT Name="St. Sophronius, Archbishop of Irkutsk (+1771)" Id="2043" Type="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Jean Climaque" Id="986" Type="1" />
+<SAINT Name="St Jean qui pratiqua l'ascèse dans un puits" Id="" Type="0" />
+<SAINT Name="St Jean, Patriarche de Jérusalem" Id="" Type="0" />
+<SAINT Name="Ste Eubula, Mère de St Pantéléimon" Id="739" Type="0" />
+<SAINT Name="St Zacharie, Evêque de Corinthe" Id="" Type="0" />
+<SAINT Name="St. Sophrone d'Irkoutsk" Id="2043" Type="10" />
+<SAINT Name="St. Rieul d'Arles" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Иоанна Лествичника (649)" Id="986" Type="1"/>
+<SAINT Name="Свт. Софрония, еп. Иркутского (1771)" Id="2043" Type="1"/>
+<SAINT Name="Прор. Иоада (X до Р.Х.)" Id="954" Type="0"/>
+<SAINT Name="Апп. Сосфена, Аполлоса, Кифы, Кесаря и Епафродита (I)" Id="2038" Type="0"/>
+<SAINT Name="Св. Еввулы, матери вмч. Пантелеимона (ок. 305)" Id="739" Type="0"/>
+<SAINT Name="Прп. Иоанна безмолвника (VI)" Id="960" Type="0"/>
+<SAINT Name="Прп. Зосимы, еп. Сиракузского (ок. 662)" Id="741" Type="0"/>
+</LANGUAGE>
+</DAY>

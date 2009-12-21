@@ -1,0 +1,45 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="vespers" Reading="Isa_61:1-9" />
+<SCRIPTURE Type="vespers" Reading="Lev_26:3-12, 14-17, 19-20, 22, 33, 40-41" />
+<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" />
+<SCRIPTURE Type="apostol" Reading="I Tim_2:1-7" Pericope="282" Note="for the New Year"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:16-22" Pericope="13" Note="for the New Year"/>
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" Note="for St Simeon" Cmd="dow != 0"/>
+<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Simeon" Cmd="dow != 0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Church New Year" Id="" Type="4" />
+<SAINT Name="St. Simeon Stylites, the Elder (+459) and his mother, Venerable Martha (+428)" Id="1426" Type="1" />
+<SAINT Name="Martyr Aithalus the Deacon" Id="85" Type="0" />
+<SAINT Name="40 Holy Virgins and Saint Ammoun the Deacon (4th C)" Id="1428" Type="0" />
+<SAINT Name="Righteous Joshua the son of Nun (Navi) (16th C BC)" Id="924" Type="0" />
+<SAINT Name="Holy Martyrs Callista and her brothers Evodus and Hermogenes, Christians of Nicomedia (+309)" Id="1429" Type="0" />
+<SAINT Name="Venerable Meletius the New" Id="" Type="0" />
+<SAINT Name="New Martyr Angelisus" Id="" Type="0" />
+<SAINT Name="Synaxis of the Most Holy Theotokos at the Miasenga Monastery (864)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Nouvel An écclésiastique" Id="" Type="4" />
+<SAINT Name="St Syméon Stylite l'Ancien et sa mère, Ste Marthe" Id="1426" Type="1" />
+<SAINT Name="St Josué, fils de Navé" Id="924" Type="0" />
+<SAINT Name="40 Vierges Martyres et leur père spirituel: Ammoun, Diacre" Id="1428" Type="0" />
+<SAINT Name="Sts Martyrs Evodus, Calliste et Hermogène" Id="1429" Type="0" />
+<SAINT Name="Ste Evanthia" Id="" Type="0" />
+<SAINT Name="St Mélétios le Jeune" Id="" Type="0" />
+<SAINT Name="St Nicolas de Courtaliotis en Crète" Id="" Type="0" />
+<SAINT Name="Synaxe de l'Icone de la Mère de Dieu de Miasènes" Id="" Type="0" />
+<SAINT Name="St Néo-Martyr Angélis" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Начало индикта - церковное новолетие" Id="" Type="4"/>
+<SAINT Name="Прп. Симеона Столпника (459) и матери его Марфы (ок. 428)" Id="1426" Type="1"/>
+<SAINT Name="Прмц. Татианы, мц. Наталии (1937)" Id="" Type="0"/>
+<SAINT Name="Прав. Иисуса Навина (XVI до Р.Х.)" Id="924" Type="0"/>
+<SAINT Name="Мч. Аифала диакона, Персидского (380)" Id="85" Type="0"/>
+<SAINT Name="Мцц. 40 дев постниц и мч. Аммуна диакона, учителя их (IV)" Id="1428" Type="0"/>
+<SAINT Name="Мц. Каллисты и братий её, мчч. Евода и Ермогена (309)" Id="1429" Type="0"/>
+<SAINT Name="Собор Пресвятой Богородицы в Миасинской обители (в память обретения её иконы) (864)" Id="" Type="0"/>
+<SAINT Name="Черниговской-Гефсиманской (1869), Александрийской, Августовской (1914) и именуемой &quot;Всеблаженная&quot; (в Казани) икон Божией Матери. )" Id="1431" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="My steps do Thou direct according to thy saying, and let no iniquity have dominion over me."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Selon ta parole dirige mes pas, et que le mal n’ait pas d’emprise sur moi."/>
+</LANGUAGE>
+</COMMONPRAYER>

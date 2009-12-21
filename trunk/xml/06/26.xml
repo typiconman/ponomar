@@ -1,0 +1,27 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Appearance of the Tikhvin Icon of the Mother of God (1383)" Id="1395" Type="4" />
+<SAINT Name="Venerable David of Thessalonica (6th C)" Id="1396" Type="1" />
+<SAINT Name="St. John the Bishop of the Goths (7th C)" Id="1106" Type="0" />
+<SAINT Name="St. Dionysius the Archbishop of Suzdal (+1385)" Id="631" Type="0" />
+<SAINT Name="Icons of the Mother of God of Lidda (1st C), Niamets (1399), and the Seven Lakes (17th C)" Id="1399" Type="0" />
+<SAINT Name="New Hieromartyr Priest George (+1918)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St David de Thessalonique" Id="1396" Type="1" />
+<SAINT Name="St Jean, Evêque de Gothie" Id="1106" Type="0" />
+<SAINT Name="St Anthion" Id="" Type="0" />
+<SAINT Name="St David de Ste Anne" Id="" Type="0" />
+<SAINT Name="Apparition de l'Icône de la Mère de Dieu de Tichvin" Id="" Type="0" />
+<SAINT Name="St Denys, Archevêque de Souzdal" Id="631" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Давида Солунского (VI)" Id="1396" Type="1"/>
+<SAINT Name="Тихвинской иконы Божией Матери (1383)" Id="1395" Type="4"/>
+<SAINT Name="Сщмч. Георгия пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Прп. Иоанна, еп. Готфского (VII)" Id="1106" Type="0"/>
+<SAINT Name="Свт. Дионисия, архиеп. Суздальского (1385)" Id="631" Type="0"/>
+<SAINT Name="Обретение мощей прп. Тихона Луховского, Костромского (1569)" Id="2117" Type="0"/>
+<SAINT Name="Лиддской (Римской) (I), Нямецкой (1399), Седмиезерной (XVII) икон Божией Матери" Id="1399" Type="0"/>
+</LANGUAGE>
+</DAY>

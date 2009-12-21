@@ -1,0 +1,9 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Easter Troparion 2 (Tone 8)"/>
+<TEXT Value="How life-giving, how much more beautiful than Paradise, and truly more resplendent than any royal palace was Thy tomb shown to be, O Christ, the source of our resurrection."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+</COMMONPRAYER>

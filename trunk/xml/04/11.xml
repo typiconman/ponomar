@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Antipas, Bishop of Pergamum and Disciple of St John the Theologian (+69)" Id="829" Type="1" />
+<SAINT Name="Venerable John the Disciple of the Venerable Gregory of Decapolis (9th C)" Id="880" Type="0" />
+<SAINT Name="Venerable Pharmuthius the Anchorite of Egypt (4th C)" Id="834" Type="0" />
+<SAINT Name="Martyrs Processus and Martinian (1st C)" Id="833" Type="0" />
+<SAINT Name="Hieromartyr Damian, Bishop of Thessalonica" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Philip, Bishop of Gortina" Id="" Type="0" />
+<SAINT Name="Venerable James the Abbot of Zheleznoborov and James, his disciple (+1442)" Id="831" Type="0" />
+<SAINT Name="Venerable Euthemius and Chariton of Sianzhemsk" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Barsanuphius, Bishop of Tver (+1576)" Id="362" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Antipas, Evêque de Pergame" Id="829" Type="1" />
+<SAINT Name="St Pharmouthios d'Egypte" Id="834" Type="0" />
+<SAINT Name="St Jacques, Higoumène de Jeliezny-Borok" Id="831" Type="0" />
+<SAINT Name="Sts Euthyme et Chariton, fondateurs du Monastère de l'Ascension (Vologda)" Id="" Type="0" />
+<SAINT Name="St Barsanuphe, Evêque de Tver" Id="362" Type="0" />
+<SAINT Name="Sts Callinique de Tchernica, Evêque de Rimnicu-Vilcea" Id="" Type="0" />
+<SAINT Name="Sts Procès et Martinien de Rome" Id="833" Type="0" />
+<SAINT Name="St Chariton, Higoumène de Sianjemsk" Id="" Type="0" />
+<SAINT Name="St Algéric de Tours" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Антипы, еп. Пергама Асийского (ок. 68)" Id="829" Type="1"/>
+<SAINT Name="Мчч. Петра и Прохора (1918)" Id="4884" Type="0"/>
+<SAINT Name="Сщмч. Николая пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Мчч. Прокесса и Мартиниана (I)" Id="833" Type="0"/>
+<SAINT Name="Прп. Фармуфия (IV)" Id="834" Type="0"/>
+<SAINT Name="Прп. Иоанна, ученика прп. Григория Декаполита (IX)" Id="880" Type="0"/>
+<SAINT Name="Прпп. Иакова Железноборовского (1442) и Иакова Брылевского, сподвижника его (XV)" Id="831" Type="0"/>
+<SAINT Name="Свт. Варсонофия, еп. Тверского (1576)" Id="362" Type="0"/>
+</LANGUAGE>
+</DAY>

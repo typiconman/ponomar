@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Priest: "/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="PRÊTRE : "/>
+</LANGUAGE>
+</COMMONPRAYER>

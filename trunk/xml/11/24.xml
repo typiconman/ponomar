@@ -1,0 +1,33 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Entry of the Theotokos" Id="" Type="0" />
+<SAINT Name="Greatmartyr Catherine of Alexandria (+305-313)" Id="2491" Type="2" />
+<SAINT Name="Greatmartyr Mercurius [Mercury] of Caesarea in Cappadocia (3rd C)" Id="3217" Type="1" />
+<SAINT Name="Martyr Mercurius of Smolensk (+1239)" Id="1521" Type="2" />
+<SAINT Name="Martyrs Augusta the Empress of Alexandria and Porphyrius the General and 200 Soldiers, martyred with the Greatmartyr Catherine (+ 305-313)" Id="3218" Type="0" />
+<SAINT Name="Venerable Mastridia the Virgin" Id="3221" Type="0" />
+<SAINT Name="Venerable Simon of Solvychegodsk" Id="2017" Type="0" />
+<SAINT Name="Martyr Alexander" Id="" Type="0" />
+<SAINT Name="Venerable Gregory of Khrisipetreia" Id="" Type="0" />
+<SAINT Name="Venerable Mercurius, the Faster of the Caves of Kiev, Bishop of Smolensk (14th C)" Id="1520" Type="0" />
+<SAINT Name="Venerable Luke, Economist of the Caves of Kiev" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Catherine, Mégalomartyre" Id="2491" Type="2" />
+<SAINT Name="St Mercure" Id="3217" Type="1" />
+<SAINT Name="St Pierre l'Hésychaste" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Введения во храм Пресвятой Богородицы" Id="" Type="0"/>
+<SAINT Name="Вмц. Екатерины (305-313)" Id="2491" Type="2"/>
+<SAINT Name="Вмч. Меркурия (III)" Id="3217" Type="1"/>
+<SAINT Name="Мч. Меркурия Смоленского (1238)" Id="1521" Type="2"/>
+<SAINT Name="Сщмч. Евграфа пресвитера (1919)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Евгения и  Михаила пресвитеров (1937)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Александра, Алексия, Иоанна, Корнилия и Митрофана пресвитеров (1937)" Id="" Type="0"/>
+<SAINT Name="Мц. Августы, мчч. Порфирия Стратилата и 200 воинов (305-313)" Id="3218" Type="0"/>
+<SAINT Name="Прп. Меркурия, постника Печерского (XIV)" Id="1520" Type="0"/>
+<SAINT Name="Прп. Симона Сойгинского (1562)" Id="2017" Type="0"/>
+<SAINT Name="Прп. Мастридии девицы" Id="3221" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,37 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240" Note="for the Theotokos"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Commemoration of the deliverance of Moscow from the Poles by the Kazan Icon (1612)" Id="2865" Type="4" />
+<SAINT Name="Holy Equal-to-the-Apostles Abercius, Bishop and Wonderworker of Hieropolis (+c.167)" Id="4571" Type="1" />
+<SAINT Name="7 Holy Youths ('7 Sleepers') of Ephesus: Maximilian, Jamblichus, Martinian, Dionysius, Antoninus, Constantine (Hexakustodianos), and John (+c.250)" Id="4375" Type="1" />
+<SAINT Name="Hieromartyr Bishop Alexander" Id="4574" Type="0" />
+<SAINT Name="Martyrs Heraclius the Soldier, Anna, Elisabeth, Theodotia, and Gliceria" Id="" Type="0" />
+<SAINT Name="Venerable Lot of Egypt" Id="" Type="0" />
+<SAINT Name="Venerable Ruthus" Id="" Type="0" />
+<SAINT Name="Hieromartyr Mark, Bishop of Jerusalem" Id="" Type="0" />
+<SAINT Name="Venerable Theodore and Paul of Rostov (15th C)" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Seraphim, archbishop of Uglich and those with him (+1937)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Abercius, Evêrque d'Hiérapolis" Id="4571" Type="1" />
+<SAINT Name="Mémoire des 7 enfants d'Ephèse (voir le 4 aout)" Id="4375" Type="1" />
+<SAINT Name="Sts Alexandre, Héraklès, Anne, Elisabeth, Théodote et Glycérie" Id="4574" Type="0" />
+<SAINT Name="St Rufus" Id="" Type="0" />
+<SAINT Name="St Lot" Id="" Type="0" />
+<SAINT Name="Sts Théophile et Jacques d'Omonts)" Id="" Type="0" />
+<SAINT Name="St Théodore et Paul à Rostov" Id="" Type="0" />
+<SAINT Name="Commémoration du miracle de la Mère de Dieu de Kazan et de la libération de la région de Moscou de l'occupation polonaise (1612)" Id="2865" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Равноап. Аверкия, еп. Иерапольского, чудотворца (ок. 167)" Id="4571" Type="1"/>
+<SAINT Name="Семи отроков, иже во Ефесе: Максимилиана, Иамвлиха, Мартиниана, Дионисия, Антонина, Константина (Ексакустодиана) и Иоанна (ок. 250; 408-450)" Id="4375" Type="1"/>
+<SAINT Name="Празднование в честь Казанской иконы Божией Матери (1612)" Id="2865" Type="4"/>
+<SAINT Name="Сщмчч. Серафима, архиеп. Угличского, и с ним Владимира, Александра, Василия, Александра пресвитеров и прмчч.  Германа и  Мины (1937)" Id="4899" Type="0"/>
+<SAINT Name="Сщмчч. Николая, Николая пресвитера и прмч. Григория (1937)" Id="" Type="0"/>
+<SAINT Name="Мчч. Александра еп., Ираклия воина и жен Анны, Елисаветы, Феодотии и Гликерии (II-III)" Id="4574" Type="0"/>
+<SAINT Name="Андрониковской иконы Божией Матери (1281-1332)" Id="4575" Type="0"/>
+</LANGUAGE>
+</DAY>

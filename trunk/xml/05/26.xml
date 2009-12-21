@@ -1,0 +1,28 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Apostles of the Seventy Carpus and Alphaeus (1st C)" Id="1141" Type="1" />
+<SAINT Name="Holy Martyrs Abercius and Helen (1st C)" Id="1143" Type="0" />
+<SAINT Name="Greatmartyr George the New at Sofia, Bulgaria (+1515)" Id="1142" Type="2" />
+<SAINT Name="St. John Psichaita the Confessor, of Constantinople (9th C)" Id="1144" Type="0" />
+<SAINT Name="New Martyr Alexander of Thessaloniki" Id="" Type="0" />
+<SAINT Name="Finding of the relics of the Venerable Macarius the Abbot of Kalyazin (+1521)" Id="1404" Type="0" />
+<SAINT Name="St. Augustine of Canterbury, Evangelizer of England" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Apôtre Carpos des 70" Id="1141" Type="1" />
+<SAINT Name="St Apôtre Alphée des 70 et ses enfants Abercius et Hélène" Id="1143" Type="0" />
+<SAINT Name="St néo-Martyr Alexandre de Thessalonique" Id="" Type="0" />
+<SAINT Name="St Georges de Sophia" Id="1142" Type="2" />
+<SAINT Name="St Macaire de Koliazino (translation des reliques)" Id="1404" Type="0" />
+<SAINT Name="Ste Bénédicte" Id="" Type="0" />
+<SAINT Name="St Augustin, Evêque de Canterbury" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Апп. от 70-ти Карпа и Алфея (I)" Id="1141" Type="1"/>
+<SAINT Name="Мч. Георгия Нового (1515)" Id="1142" Type="2"/>
+<SAINT Name="Мчч. Аверкия и Елены (I)" Id="1143" Type="0"/>
+<SAINT Name="Прп. Иоанна Психаита исп (IX)" Id="1144" Type="0"/>
+<SAINT Name="Обретение мощей прп. Макария Калязинского (1521)" Id="1404" Type="0"/>
+<SAINT Name="Тупичевской и Кипрской икон Божией Матери" Id="906" Type="0"/>
+</LANGUAGE>
+</DAY>

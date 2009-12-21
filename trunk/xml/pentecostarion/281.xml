@@ -1,0 +1,32 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<!-- matins gospel #11 -->
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dRank != 6"/>
+<!-- In the Lucan Jump Implementation, the Epistle reading will be suprressed most of the time -->
+<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)" Cmd="nday == -77" />
+<!-- Adding the Lucan Jump Reading for the 30 Week Reading (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="((doy &gt;= 362 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 3)) &amp;&amp; GS == 1"/>
+<!-- Adding the Lucan Jump Reading for the 29 Week Reading (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &gt;= 355 &amp;&amp; doy &lt;= 361) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy &gt;= 25 &amp;&amp; doy &lt;= 31 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy &gt;= 18 &amp;&amp; doy &lt;= 24 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 2 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy &gt;= 11 &amp;&amp; doy &lt;= 17 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: To Deal With a Lucan Jump in the Case 33 Sundays after Pentecost exist and 33rd (actual Week for Theophany): This is Zacchaeus's Sunday -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy &gt;= 4 &amp;&amp; doy &lt;= 10 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
+<!-- Readings for the Jordanville implementation -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0" /> 
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="33rd Sunday after Pentecost" Id="" Type="0" Tone="8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Le 33-me dimanche après le Pentecôte" Id="" Type="0" Tone="8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Неделя 33 по Пятидесятнице" Id="" Type="0" Tone="8"/>
+</LANGUAGE>
+</DAY>

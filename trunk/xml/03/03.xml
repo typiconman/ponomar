@@ -1,0 +1,24 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyrs Eutropius, Cleonicus and Basiliscus of Amasea (+ c.308)" Id="555" Type="1" />
+<SAINT Name="Martyrs Zeno and Zoilus" Id="" Type="0" />
+<SAINT Name="Virginmartyr Piama (+ 337)" Id="556" Type="0" />
+<SAINT Name="Icon of the Mother of God of Volokolamsk (1572)" Id="557" Type="0" />
+<SAINT Name="New Martyr Michael (+ 1938)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Eutrope, Cléonique et Basilisque" Id="555" Type="1" />
+<SAINT Name="St Théodoret d'Antioche" Id="" Type="0" />
+<SAINT Name="St Zénon et Zoile" Id="" Type="0" />
+<SAINT Name="Ste Piamoun" Id="556" Type="0" />
+<SAINT Name="St Guénolé, fondateur de l'abbaye de Landevennec" Id="" Type="0" />
+<SAINT Name="St Caluppan d'Auvergne" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Евтропия, Клеоника и Василиска (ок. 308)" Id="555" Type="1"/>
+<SAINT Name="Прмц. Марфы и мч. Михаила (1938)" Id="" Type="0"/>
+<SAINT Name="Прп. Пиамы девы (337)" Id="556" Type="0"/>
+<SAINT Name="Св. Зинона и Зоила" Id="" Type="0"/>
+<SAINT Name="Волоколамской иконы Божией Матери (1572)" Id="557" Type="0"/>
+</LANGUAGE>
+</DAY>

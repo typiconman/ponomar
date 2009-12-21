@@ -1,0 +1,27 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="9" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0"><SAINT Name="Greatmartyr Artemius of Antioch (+362)" Id="1777" Type="2" />
+<SAINT Name="Righteous Child Artemius of Verkolsk (+1545)" Id="274" Type="0" />
+<SAINT Name="Martyrs Ebous and Ebnous" Id="" Type="0" />
+<SAINT Name="Venerable Matrona of Chios (+1462)" Id="" Type="0" />
+<SAINT Name="Martyr Zebina of Palestine" Id="" Type="0" />
+<SAINT Name="Venerable Gerasimos the New, Ascetic of Cephalonia (+1579)" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Herman, Bishop of Alatyr and those with him (+1937)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Artémios, Mégalomartyr d'Antioche" Id="1777" Type="2" />
+<SAINT Name="Stes Eborée et Eunorée de Perse" Id="" Type="0" />
+<SAINT Name="Ste Matrone de Chios" Id="" Type="0" />
+<SAINT Name="St Gérasime le Nouveau" Id="" Type="0" />
+<SAINT Name="St Andronique de Crète" Id="" Type="0" />
+<SAINT Name="St Caprais d'Agen" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Вмч. Артемия (362)" Id="1777" Type="2"/>
+<SAINT Name="Сщмч. Николая пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Германа, еп. Алатырского, Зосимы, Иоанна, Иоанна, Иоанна, Николая, Леонида, Иоанна и Александра пресвитеров, Михаила и Петра диаконов и мч. Павла (1937)" Id="" Type="0"/>
+<SAINT Name="Прав. отрока Артемия Веркольского (1545)" Id="274" Type="0"/>
+</LANGUAGE>
+</DAY>

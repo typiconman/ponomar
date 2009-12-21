@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Martyrs Lucillian, the Youths Claudius, Hypatius, and Dionysius, and Paula the Virgin (+c.275)" Id="1219" Type="1" />
+<SAINT Name="Hieromartyr Lucian the Bishop at Beauvais in France and with him Maximian the Presbyter, Julian the Deacon, Marcellinus, and Saturninus (+ c.96)" Id="1220" Type="0" />
+<SAINT Name="Venerable Athanasius the Wonderworker" Id="" Type="0" />
+<SAINT Name="Venerable Hieria of Syria" Id="" Type="0" />
+<SAINT Name="St Achilla, Patriarch of Alexandria" Id="" Type="0" />
+<SAINT Name="Righteous Clotilda, Queen of France" Id="" Type="0" />
+<SAINT Name="Translation of the relics of slain Crown Prince Demetrius of Moscow from Uglich (1606)" Id="605" Type="0" />
+<SAINT Name="St. David of the Gareji Monastery (6th-7th C)" Id="" Type="0" />
+<SAINT Name="Venerable New Martyr Cyprian (+1934)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Martyrs Lucillien, ses enfants et Ste Paule" Id="1219" Type="1" />
+<SAINT Name="St Athanase de Traïannos le Thaumaturge" Id="" Type="0" />
+<SAINT Name="St Achillas, Patriarche d'Alexandrie" Id="" Type="0" />
+<SAINT Name="Ste Hiéra" Id="" Type="0" />
+<SAINT Name="St Pappos" Id="" Type="0" />
+<SAINT Name="St Joseph, Métropolite de Thessalonique" Id="" Type="0" />
+<SAINT Name="Ste Clotilde, Reine des Francs" Id="" Type="0" />
+<SAINT Name="St Kevin (Coemgen) d'Irlande" Id="" Type="0" />
+<SAINT Name="Sts Lucien et ses compagnons à Beauvais" Id="1220" Type="0" />
+<SAINT Name="St Valère, Evêque de Carcassonne" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Лукиллиана, Клавдия, Ипатия, Павла, Дионисия и мц. Павлы девы (ок. 270-275)" Id="1219" Type="1"/>
+<SAINT Name="Прмч. Киприана (1934)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Михаила пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Лукиана еп., Максиана  пресвитера, Иулиана диакона, Маркеллина и Сатурнина в Бельгии (ок. 81-96)" Id="1220" Type="0"/>
+<SAINT Name="Перенесение мощей блгв. царевича Димитрия из Углича в Москву (1606)" Id="605" Type="0"/>
+</LANGUAGE>
+</DAY>

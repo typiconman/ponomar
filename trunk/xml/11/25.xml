@@ -1,0 +1,38 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Apodosis of the Entry of the Theotokos" Id="" Type="3" />
+<SAINT Name="Hieromartyr Clement, Pope of Rome (+ 101)" Id="6969" Type="1" />
+<SAINT Name="Hieromartyr Peter, Archbishop of Alexandria (+ 311)" Id="" Type="0" />
+<SAINT Name="Venerable Peter the Silent, of Galata, Syria (+ c. 429)" Id="369" Type="0" />
+<SAINT Name="Venerable Paphnutius" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Seraphim, Archbishop of Smolensk and those with him (+1937)" Id="4823" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Apodose de l'Entree au Temple" Id="3"/>
+<SAINT Name="St Clément, Evêque de Rome" Id="6969" Type="1" />
+<SAINT Name="St Pierre d'Alexandrie" Id="369" Type="0" />
+<SAINT Name="St Malc" Id="" Type="0" />
+<SAINT Name="St Carion" Id="" Type="0" />
+<SAINT Name="St Hermogène, Evêque d'Agrigente" Id="" Type="0" />
+<SAINT Name="Sts Philoumène et Christophe" Id="" Type="0" />
+<SAINT Name="St Eugène" Id="" Type="0" />
+<SAINT Name="Sts Procope et Christophe" Id="" Type="0" />
+<SAINT Name="St Alexandre de Corinthe" Id="" Type="0" />
+<SAINT Name="St Grégoire de la Pierre d'or" Id="" Type="0" />
+<SAINT Name="St Chrysogone" Id="" Type="0" />
+<SAINT Name="St Marc, en Bithynie" Id="" Type="0" />
+<SAINT Name="St Théodore d'Antioche" Id="" Type="0" />
+<SAINT Name="St Mercure de Smolensk" Id="" Type="0" />
+<SAINT Name="St Simon de SoÃÂ¯ga" Id="" Type="0" />
+<SAINT Name="St Luc des grottes de Kiev" Id="" Type="0" />
+<SAINT Name="St Portien" Id="" Type="0" />
+<SAINT Name="St Nicomède le nouveau" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Отдание праздника Введения во храм Пресвятой Богородицы" Id="" Type="3"/>
+<SAINT Name="Сщмчч. Климента, папы Римского (101), и Петра, архиеп. Александрийского (311)" Id="6969" Type="1"/>
+<SAINT Name="Сщмчч. Серафима, архиеп. Смоленского, Григория, Иоанна, Василия, Космы, Иоанна, Симеона, Илариона, Ярослава, Александра, Иоанна, Виктора, Андрея, Варлаама  пресвитеров и мч. Павла (1937)" Id="4823" Type="0"/>
+<SAINT Name="Мч.  Николая (1938)" Id="" Type="0"/>
+<SAINT Name="Прп. Петра молчальника Галатийского (ок. 429)" Id="369" Type="0"/>
+</LANGUAGE>
+</DAY>

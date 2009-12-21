@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Rom_1:28-2:9" Pericope="81"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:27-32" Pericope="13"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Pentecost Thursday" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Jeudi du Pentecôte" Id="" Type="0" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Четверг Пятидесятницы" Id="" Type="0" Tone="-1"/>
+</LANGUAGE>
+</DAY>

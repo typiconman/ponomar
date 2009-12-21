@@ -1,0 +1,38 @@
+<DAY>
+<LANGUAGE>
+<FAST Num="0" />
+<SAINT Name="0" Cmd="dow == 0" />
+<SAINT Name="6" Cmd="dow == 6" />
+<SCRIPTURE Type="1st hour" Reading="Isa_35:1-10" Cmd="dow == 5" />
+<SCRIPTURE Type="1st hour" Reading="Acts_13:25-32" Cmd="dow == 5" />
+<SCRIPTURE Type="1st hour" Reading="Mt_3:1-12" Cmd="dow == 5" />
+<SCRIPTURE Type="3rd hour" Reading="Isa_1:16-20" Cmd="dow == 5" />
+<SCRIPTURE Type="3rd hour" Reading="Acts_19:1-8" Cmd="dow == 5" />
+<SCRIPTURE Type="3rd hour" Reading="Mk_1:1-8" Cmd="dow == 5" />
+<SCRIPTURE Type="6th hour" Reading="Isa_12:3-6" Cmd="dow == 5" />
+<SCRIPTURE Type="6th hour" Reading="Rom_6:6-23" Cmd="dow == 5" />
+<SCRIPTURE Type="6th hour" Reading="Mk_1:9-15" Cmd="dow == 5" />
+<SCRIPTURE Type="9th hour" Reading="Isa_49:8-15" Cmd="dow == 5" />
+<SCRIPTURE Type="9th hour" Reading="Tit_2:11-3:7" Cmd="dow == 5" />
+<SCRIPTURE Type="9th hour" Reading="Mt_3:13-17" Cmd="dow == 5" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Forefeast of the Theophany" Id="" Type="0" />
+<SAINT Name="Holy Prophet Malachi (400 BC)" Id="143" Type="1" />
+<SAINT Name="Martyr Gordius at Caesarea in Cappadocia (4th C)" Id="144" Type="1" />
+<SAINT Name="St Genevieve of Paris (502)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Préfête de Théophanie" Id="" Type="0" />
+<SAINT Name="St Prophète Malachie" Id="143" Type="1" />
+<SAINT Name="St Gordius de Césarée" Id="144" Type="1" />
+<SAINT Name="St Pierre d'Atroa le Sémiophore (porteur de miracles)" Id="" Type="0" />
+<SAINT Name="St ThomaÃÂ¯de de Lesbos" Id="" Type="0" />
+<SAINT Name="Ste Geneviève de Paris" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Предпразднство Богоявления" Id="" Type="0"/>
+<SAINT Name="Прор. Малахии (ок. 400 г. до Р.Х.)" Id="143" Type="1"/>
+<SAINT Name="Мч. Гордия (IV)" Id="144" Type="1"/>
+</LANGUAGE>
+</DAY>

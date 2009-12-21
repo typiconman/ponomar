@@ -1,0 +1,40 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240" Note="for the Theotokos"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Meeting of the Vladimir Icon of the Mother of God" Id="2812" Type="4" />
+<SAINT Name="Martyr Agrippina of Rome (+ c.255)" Id="1380" Type="1" />
+<SAINT Name="Holy Martyrs Eustochius, Gaius, Probius, Lollius and Urban of Ancyra (4th C)" Id="1381" Type="0" />
+<SAINT Name="Holy Righteous Artemius of Verkola (+1545)" Id="274" Type="0" />
+<SAINT Name="Venerable Joseph, Anthony, and Joanicius of Vologda" Id="" Type="0" />
+<SAINT Name="Second translation of the relics of Saint Herman, Archbishop of Kazan (1714)" Id="509" Type="0" />
+<SAINT Name="New Hieromartyrs Mitrophan, Archbishop of Astrakhan, Leonty, Bishop of Yenotayevsk, and those with them (+1919)" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God 'Zaonikievskaya'" Id="1384" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Eustochios, Gaïos, Lollia (Loulo), Probe et Urbain" Id="1381" Type="0" />
+<SAINT Name="Ste Martyre Agrippinne, Paule, Bassa et Agathonique" Id="1380" Type="1" />
+<SAINT Name="Sts Aristoklès, Dimitrien et Athanase" Id="" Type="0" />
+<SAINT Name="St Athanase, Evêque de Chytrie à Chypre" Id="" Type="0" />
+<SAINT Name="Sts Nicétas de Thèbes et ses 3 disciples Théodore, Grégoire et Daniel" Id="" Type="0" />
+<SAINT Name="St Artémios de Verkola" Id="274" Type="0" />
+<SAINT Name="Sts Joseph, Antoine et joannice, Higoumène du Monastère de l'Icône de Vladimir à Vologda" Id="" Type="0" />
+<SAINT Name="St Maxime, Evêque de Serpoukhov" Id="" Type="0" />
+<SAINT Name="Translation des Reliques de St Germain, Archevêque de Kazan" Id="509" Type="0" />
+<SAINT Name="Translation des Reliques de St Michel de Klops" Id="" Type="0" />
+<SAINT Name="Délivrance de Moscou par l'Icône de la Mère de Dieu de Vladimir" Id="2812" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мц. Агриппины (253-259)" Id="1380" Type="1"/>
+<SAINT Name="Владимирской иконы Божией Матери (1480)" Id="2812" Type="4"/>
+<SAINT Name="Собор Владимирских святых" Id="" Type="1"/>
+<SAINT Name="Сщмчч. Александра, Алексия, Петра пресвитеров (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Митрофана, архиеп. Астраханского (1919)" Id="" Type="0"/>
+<SAINT Name="Мчч. Евстохия, Гаия, Провия, Лоллия, Урвана и иных (IV)" Id="1381" Type="0"/>
+<SAINT Name="Прав. Артемия Веркольского (1545)" Id="274" Type="0"/>
+<SAINT Name="Второе перенесение мощей свт. Германа, архиеп. Казанского (1714)" Id="509" Type="0"/>
+<SAINT Name="Псково-Печерской, именуемой &quot;Умиление&quot; (1524), Заоникиевской (1588), и именуемой &quot;Вратарница&quot;, или &quot;Неугасимая Свеча&quot; (1894), икон Божией Матери" Id="1384" Type="0"/>
+</LANGUAGE>
+</DAY>

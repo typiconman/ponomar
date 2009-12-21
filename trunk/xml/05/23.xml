@@ -1,0 +1,29 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="St. Michael the Confessor and Bishop of Synnada (+821)" Id="1130" Type="1" />
+<SAINT Name="Finding of the relics of St Leontius the Bishop and Wonderworker of Rostov (1164)" Id="" Type="3" />
+<SAINT Name="Venerable Euphrosyne the Abbess of Polotsk (+1173)" Id="2488" Type="0" />
+<SAINT Name="Martyr Michael 'the Black-Robed' of St Sava's Monastery (9th C)" Id="1558" Type="0" />
+<SAINT Name="Venerable Paisius the Abbot of Galich (+1460)" Id="6783" Type="0" />
+<SAINT Name="Holy Myrrh-Bearer Mary of Cleopas" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Michel le Confesseur, Métropolite de Synnades" Id="1130" Type="1" />
+<SAINT Name="St Synésios, Evêque de Carpasia" Id="" Type="0" />
+<SAINT Name="Ste Myrophore Marie de Clopas (femme de Clopas)" Id="" Type="0" />
+<SAINT Name="St Salonas le Romain" Id="" Type="0" />
+<SAINT Name="St Seleuchos" Id="" Type="0" />
+<SAINT Name="St Léonce de Rostov (Invention des reliques)" Id="" Type="3" />
+<SAINT Name="St Païssy de Galitch" Id="6783" Type="0" />
+<SAINT Name="St. Didier de Langres" Id="" Type="0" />
+<SAINT Name="Ste Euphrosyne, Higoumène de Polotsk" Id="2488" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Михаила исп., еп. Синадского (821)" Id="1130" Type="1"/>
+<SAINT Name="Обретение мощей свт. Леонтия, еп. Ростовского (1164)" Id="" Type="3"/>
+<SAINT Name="Собор Ростово-Ярославских святых" Id="" Type="1"/>
+<SAINT Name="Прмч. Михаила черноризца (IX)" Id="1558" Type="0"/>
+<SAINT Name="Прп. Евфросинии, игумении Полоцкой (1173)" Id="2488" Type="0"/>
+<SAINT Name="Прп. Паисия Галичского (1460)" Id="6783" Type="0"/>
+</LANGUAGE>
+</DAY>

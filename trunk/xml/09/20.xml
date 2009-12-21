@@ -1,0 +1,37 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="4" Cmd="dow == 0" />
+<SAINT Name="11" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Exaltation of the Cross" Id="" Type="0" />
+<SAINT Name="Greatmartyr Eustathius (Eustace) Pacidas with his wife Theopistia and children Agapius and Theopist of Rome (2nd C)" Id="1569" Type="2" />
+<SAINT Name="Holy Martyr and Confessor Prince Michael and his counsellor Theodore, Wonderworkers of Chernigov (+1245)" Id="1550" Type="3" />
+<SAINT Name="St. Oleg, Prince of Briansk (+c.1285)" Id="1659" Type="0" />
+<SAINT Name="Martyr John of Egypt" Id="" Type="0" />
+<SAINT Name="Venerable Anastasius, another Anastasius, Theodore and Euprepius the Confessors, disciples of St Maximus the Confessor" Id="" Type="0" />
+<SAINT Name="New venerable martyr Hilarion of St Anne Skete on Mt Athos" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Apresfete de l'Exaltation" Id="" Type="0"/>
+<SAINT Name="Sts Eustate, Théoctiste son épouse, Agapios et Théopistos leurs enfants" Id="1569" Type="2" />
+<SAINT Name="Sts Hypatios, Evêque et André, Prêtre" Id="" Type="0" />
+<SAINT Name="Sts Martin, Eveque de Rome et Maxime le Sage" Id="" Type="0" />
+<SAINT Name="Sts Anastase, Théodore et Euprépios, disciples de St Maxime" Id="" Type="0" />
+<SAINT Name="Sts Artémidore et Thalelaios" Id="" Type="0" />
+<SAINT Name="St Jean d'Egypte et ses 4 compagnons" Id="" Type="0" />
+<SAINT Name="St Mélèce (Mélétios), Evêque de Chypre" Id="" Type="0" />
+<SAINT Name="St Jean de Crète" Id="" Type="0" />
+<SAINT Name="St Néomartyr, Hilarion le Crétois" Id="" Type="0" />
+<SAINT Name="St Michel, Prince de Techernigov, Novgorod et Kiev, et St Théodore" Id="1550" Type="3" />
+<SAINT Name="St Oleg, Prince de Briansk" Id="1659" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Воздвижения Креста Господня" Id="" Type="0"/>
+<SAINT Name="Вмч. Евстафия Плакиды, жены его Феопистии и чад их Агапия и Феописта (ок. 118)" Id="1569" Type="2"/>
+<SAINT Name="Мчч. и испп. Михаила, кн. Черниговского, и болярина его Феодора, чудотворцев (1245)" Id="1550" Type="3"/>
+<SAINT Name="Сщмчч. Феоктиста и Александра пресвитеров (1937)" Id="" Type="0"/>
+<SAINT Name="Прп. и блгв. кн. Олега Брянского (ок. 1285)" Id="1659" Type="0"/>
+<SAINT Name="Собор Брянских святых" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

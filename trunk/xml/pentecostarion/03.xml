@@ -1,0 +1,16 @@
+<DAY>
+<LANGUAGE>
+<PRIMES Type="Paschal" />
+<SCRIPTURE Type="apostol" Reading="Acts_2:14-21" Pericope="4"/>
+<SCRIPTURE Type="gospel" Reading="Lk_24:12-35" Pericope="113"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Bright Tuesday" Id="" Type="6" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Mardi Lumineuse" Id="" Type="6" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Светлый Вторник" Id="" Type="6" Tone="-1"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,38 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="3" Cmd="dow == 0" />
+<SAINT Name="10" Cmd="dow == 6" />
+<SCRIPTURE Type="apostol" Reading="II Cor_4:6-15" Pericope="176" Note="for St Theodosius"/>
+<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Theodosius"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Theophany" Id="" Type="0" />
+<SAINT Name="Venerable Theodosius the Great, Founder of Coenobitic Monasticism (+ 529)" Id="2210" Type="4" />
+<SAINT Name="Venerable Michael the Fool-for Christ, of the Klops Monastery in Novgorod (+ c. 1453-1456)" Id="1554" Type="2" />
+<SAINT Name="Saint Theodosius of Antioch (+ c. 412)" Id="195" Type="0" />
+<SAINT Name="Holy Hierarch Stephen" Id="" Type="0" />
+<SAINT Name="Saints Theodore and Agapius, Archimandrites" Id="" Type="0" />
+<SAINT Name="Martyr Mairus" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Theodosius, Metropolitan of Trapezunt" Id="" Type="0" />
+<SAINT Name="Venerable Romilus of Biddia" Id="" Type="0" />
+<SAINT Name="New Hieromartyrs Priests Nicholas, Theodore, and Vladimir (+ 1919)" Id="" Type="0" />
+<SAINT Name="Elets Icon of the Mother of God (1060)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Théodose le Cénobiarque" Id="2210" Type="4" />
+<SAINT Name="Sts Théodore et Agapios l'Archimandrite" Id="" Type="0" />
+<SAINT Name="St Mairos" Id="" Type="0" />
+<SAINT Name="St Vital" Id="" Type="0" />
+<SAINT Name="St Théodose, Higoumène du Monastère de Philothéou, Evêque de Trébizonde" Id="" Type="0" />
+<SAINT Name="St Michel de Klops, Fol en Christ" Id="1554" Type="2" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Феодосия Великого, общих житий начальника (529)." Id="2210" Type="4"/>
+<SAINT Name="Прп. Михаила Клопского, Новгородского (ок. 1453-1456)" Id="1554" Type="2"/>
+<SAINT Name="Сщмчч. Николая, Феодора и Владимира пресвитеров (1919)" Id="" Type="0"/>
+<SAINT Name="Св. Владимира исп., пресвитера (1932)" Id="4766" Type="0"/>
+<SAINT Name="Прп. Феодосия Антиохийского (ок. 412)" Id="195" Type="0"/>
+<SAINT Name="Прп. Пахомия Кенского (XVI)" Id="" Type="1"/>
+<SAINT Name="Елецкой иконы Божией Матери (1060)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

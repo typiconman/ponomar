@@ -1,0 +1,43 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240" Note="for the Theotokos"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Appearance of the Smolensk Icon of the Mother of God, named 'Hodigitria' (1046)" Id="4319" Type="4" />
+<SAINT Name="Apostles of the 70 and Deacons: Prochorus, Nicanor, Timon and Parmenas (1st C)" Id="4320" Type="1" />
+<SAINT Name="Martyr Eustathius the Soldier" Id="" Type="0" />
+<SAINT Name="Martyr Akakius" Id="4325" Type="0" />
+<SAINT Name="Martyr Julian of Dalmatia" Id="4323" Type="0" />
+<SAINT Name="Martyr Drosida" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Pitirim, Bishop of Tambov (+ 1698)" Id="1801" Type="1" />
+<SAINT Name="Venerable Irene of Cappadocia" Id="" Type="0" />
+<SAINT Name="Venerable Paul of Xeropotami, Mount Athos" Id="" Type="0" />
+<SAINT Name="Venerable Moses the Wonderworker of the Kievan Caves, far caves (13th-14th C)" Id="1571" Type="0" />
+<SAINT Name="Icon of the Mother of God 'Umilenie' of Diveevo" Id="4327" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Procore,Nicanor, Timon et Parménas" Id="4320" Type="1" />
+<SAINT Name="St Eusthate d'Ancyre" Id="" Type="0" />
+<SAINT Name="St Acace le Jeune" Id="4325" Type="0" />
+<SAINT Name="Ste Drosis" Id="" Type="0" />
+<SAINT Name="Ste Irène de Cappadoce, du Monastère de Chrysobalanton" Id="" Type="0" />
+<SAINT Name="St Paul de Xiropotamou, au Mont Athos" Id="" Type="0" />
+<SAINT Name="St Christodule, Néo-Martyr de Cassandra" Id="" Type="0" />
+<SAINT Name="St Moïse, Thaumaturge des Grottes de Kiev" Id="1571" Type="0" />
+<SAINT Name="St Pitirim, Evêque de Tambov" Id="1801" Type="1" />
+<SAINT Name="St Samson, Evêque de Dol en Bretagne" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Апп. от 70-ти Прохора, Никанора, Тимона и Пармена диаконов (I)" Id="4320" Type="1"/>
+<SAINT Name="Смоленской иконы Божией Матери, именуемой &quot;Одигитрия&quot; (Путеводительница) (1046)" Id="4319" Type="4"/>
+<SAINT Name="Свт. Питирима, еп. Тамбовского (1698)" Id="1801" Type="1"/>
+<SAINT Name="Сщмч. Николая диакона (1918)" Id="" Type="0"/>
+<SAINT Name="Прмч. Василия, прмцц. Анастасии и Елены, мчч. Арефы, Иоанна, Иоанна, Иоанна и мц. Мавры (1937)" Id="" Type="0"/>
+<SAINT Name="Мч. Иулиана (ок. 138-161)" Id="4323" Type="0"/>
+<SAINT Name="Мч. Евстафия Анкирского (ок. 316)" Id="4324" Type="0"/>
+<SAINT Name="Мч. Акакия, иже в Милете Карийском (ок. 321)" Id="4325" Type="0"/>
+<SAINT Name="Прп. Моисея, чудотворца Печерского (XIII-XIV)" Id="1571" Type="0"/>
+<SAINT Name="Гребневской (1380), Костромской (1672) и &quot;Умиление&quot;  Серафимо-Дивеевской (1885) икон Божией Матери. Чтимые списки со Смоленской иконы Божией Матери: Устюженская (1290), Выдропусская (XV), Воронинская (1624), Христофоровская (XVI), Супрасльская (XVI), Югская (1615), Игрицкая (1624), Шуйская (1654-1655), Седмиезерная (XVII), Сергиевская (в Троице-Сергиевой Лавре) (1730)" Id="4327" Type="0"/>
+</LANGUAGE>
+</DAY>

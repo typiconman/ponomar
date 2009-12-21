@@ -1,0 +1,38 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="3" Cmd="dow == 0" />
+<SAINT Name="10" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Theophany" Id="" Type="0" />
+<SAINT Name="Martyr Tatiana of Rome and those who suffered with her (+ 226-235)" Id="2688" Type="1" />
+<SAINT Name="Saint Sava I, Archbishop of Serbia (+ 1237)" Id="1901" Type="3" />
+<SAINT Name="Martyr Peter Apselamus of Palestine (+ 309-310)" Id="202" Type="0" />
+<SAINT Name="Venerable Eupraxia of Tabenna, in Egypt (+ 393)" Id="203" Type="0" />
+<SAINT Name="Venerable Martinian and Galaktion of Belozersk (+ 1483)" Id="200" Type="1" />
+<SAINT Name="Martyr Eubthasia" Id="" Type="0" />
+<SAINT Name="The 'Milkgiver' Icons of the Mother of God" Id="205" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Tatienne de Rome" Id="2688" Type="1" />
+<SAINT Name="St Pierre d'Abessala" Id="202" Type="0" />
+<SAINT Name="St Merce" Id="201" Type="0" />
+<SAINT Name="Sts 8 Martyrs de Nicée" Id="" Type="0" />
+<SAINT Name="Ste Euthasia" Id="" Type="0" />
+<SAINT Name="St Elie le Thaumaturge" Id="" Type="0" />
+<SAINT Name="St Philothée d'Antioche" Id="" Type="0" />
+<SAINT Name="St Martinien du Lac Blanc" Id="" Type="0" />
+<SAINT Name="St Galaction" Id="" Type="0" />
+<SAINT Name="St Ferréol, Evêque de Grenoble" Id="" Type="0" />
+<SAINT Name="St Sabas, 1er Archevêque de Serbie" Id="1901" Type="3" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мц. Татианы и с нею в Риме пострадавших (226)" Id="2688" Type="1"/>
+<SAINT Name="Свт. Саввы, архиеп. Сербского (1237)." Id="1901" Type="3"/>
+<SAINT Name="Прп. Мартиниана Белозерского (1483)" Id="200" Type="1"/>
+<SAINT Name="Мч. Мертия (284-305)" Id="201" Type="0"/>
+<SAINT Name="Мч. Петра Авессаломита (309-310)" Id="202" Type="0"/>
+<SAINT Name="Прп. Евпраксии Тавенисской (393)" Id="203" Type="0"/>
+<SAINT Name="Икон Божией Матери, именуемых &quot;Акафистная&quot; и &quot;Млекопитательница&quot;" Id="205" Type="0"/>
+</LANGUAGE>
+</DAY>

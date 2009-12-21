@@ -1,0 +1,24 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Blaise, Bishop of Sebaste (+ c 316)" Id="435" Type="1" />
+<SAINT Name="Hieromartyr Lucius, Bishop of Adrianople" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Eutropius, Bishop of Adrianople" Id="" Type="0" />
+<SAINT Name="Venerable Dimitri, Wonderworker of Priluk and Vologda (+ 1392)" Id="600" Type="3" />
+<SAINT Name="Holy Right-believing Prince Vsevolod (in Baptism Gabriel), Wonderworker of Pskov (+ 1138)" Id="438" Type="2" />
+<SAINT Name="Righteous Empress Theodora, Restorer of the Veneration of Holy Icons (+ ca 867)" Id="431" Type="0" />
+<SAINT Name="New Martyr George of Serbia" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Blaise, Evêque de Sébaste et ses compagnons" Id="435" Type="1" />
+<SAINT Name="Ste Théodora, Impératrice" Id="431" Type="0" />
+<SAINT Name="St Georges le Serbe" Id="" Type="0" />
+<SAINT Name="St Vsevolod, Prince de Pskov" Id="438" Type="2" />
+<SAINT Name="St Dimitris de Prilouki" Id="600" Type="3" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Власия, еп. Севастийского, и с ним двух отроков и 7 жен (ок. 316)" Id="435" Type="1"/>
+<SAINT Name="Блгв. Кн. Всеволода, во св. Крещении Гавриила, Псковского (1138)" Id="438" Type="2"/>
+<SAINT Name="Прп. Димитрия Прилуцкого, Вологодского (1392)." Id="600" Type="3"/>
+<SAINT Name="Прав. Феодоры, царицы Греческой, восстановившей почитание святых икон (ок. 867)" Id="431" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,39 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="4" Cmd="dow == 0" />
+<SAINT Name="11" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Exaltation of the Cross" Id="" Type="0" />
+<SAINT Name="Holy Martyrs Saint Sophia and her Daughters Faith, Hope and Love (+c.137)" Id="2434" Type="1" />
+<SAINT Name="Martyrs Agathoclia and Theodota at Nicea (+c.230)" Id="1554" Type="0" />
+<SAINT Name="Holy Martyrs Peleus and Nilus, Bishops of Egypt, Presbyter Zeno, Patermuthius, Elias and another 156 Martyrs (+c.310)" Id="1556" Type="0" />
+<SAINT Name="Martyr Lucia and her son Geminian" Id="" Type="0" />
+<SAINT Name="Hieromartyr Heraclidus and Miron, bishops of Tomas in Cyprus" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God of Constantinople" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Apresfete de l'Exaltation" Id="" Type="0"/>
+<SAINT Name="Stes Foi, Espérance, Charité et leur mère Sophie" Id="2434" Type="1" />
+<SAINT Name="Ste Agathoclée" Id="" Type="0" />
+<SAINT Name="Stes Lucie et Géminien son fils spirituel" Id="" Type="0" />
+<SAINT Name="Ste Théodote" Id="1554" Type="0" />
+<SAINT Name="Sts Péléas et Nil, Sts Elie et Patermouthios, 100 Martyrs d'Egypte, 50 Martyrs de Palestine" Id="1556" Type="0" />
+<SAINT Name="Sts Charalampos, Pantoléon et leurs compagnons" Id="" Type="0" />
+<SAINT Name="Sts Héraclide et Myron, Evêques de Tamassos à Chypre" Id="" Type="0" />
+<SAINT Name="St Anastase de Chypre" Id="" Type="0" />
+<SAINT Name="Sts Mesclin de Tarbes" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Воздвижения Креста Господня" Id="" Type="0"/>
+<SAINT Name="Мцц. Веры, Надежды, Любови и матери их Софии (ок. 137)" Id="2434" Type="1"/>
+<SAINT Name="Прмчч. Павла, Феодосия, Никодима и Серафима (1918)" Id="" Type="0"/>
+<SAINT Name="Прмц. Ирины (1931)" Id="" Type="0"/>
+<SAINT Name="Мч. Иоанна (1941)" Id="" Type="0"/>
+<SAINT Name="Прмц. Александры (1943)" Id="" Type="0"/>
+<SAINT Name="Мцц. Феодотии (ок. 230) и Агафоклии" Id="1554" Type="0"/>
+<SAINT Name="Мучеников  Пелия и Нила, епископов Египетских, Зинона пресвитера, Патермуфия, Илии и иных 151 (ок. 310)" Id="1556" Type="0"/>
+<SAINT Name="Свт. Иоакима, патриарха Александрийского" Id="" Type="0"/>
+<SAINT Name="Цареградской (1071) и Макарьевской (1442) икон Божией Матери" Id="934" Type="0"/>
+</LANGUAGE>
+</DAY>

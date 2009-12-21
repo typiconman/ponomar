@@ -1,0 +1,6 @@
+<TONE>
+<LANGUAGE>
+<PRIMES TROPARION1="FRI6" Type="Normal" KONTAKION1="FRI6" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
+<PRIMES Type="Lenten" KONTAKION1="WFL" Cmd="(nday > -50 &amp;&amp; nday < 0)" />
+</LANGUAGE>
+</TONE>

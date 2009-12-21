@@ -1,0 +1,38 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="12" Cmd="dow == 0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Ephrem the Syrian (+ c 373-379)" Id="817" Type="2" />
+<SAINT Name="Venerable Palladius the Hermit of Antioch (4th C)" Id="326" Type="0" />
+<SAINT Name="Venerable Isaac the Syrian, Bishop of Nineveh (7th C)" Id="1097" Type="0" />
+<SAINT Name="Venerable Ephrem of the Caves of Kiev, Bishop of Pereyaslavl (+ c 1098)" Id="815" Type="0" />
+<SAINT Name="Venerable Ephrem, Abbot and Wonderworker of Novy Torg (+ 1053)" Id="813" Type="0" />
+<SAINT Name="Venerable Theodosius, Abbot of Totma (+1568)" Id="2213" Type="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Ephrem le Syrien" Id="817" Type="2" />
+<SAINT Name="St Pallade l'Anachorète d'Antioche" Id="326" Type="0" />
+<SAINT Name="St Jacques, l'Ascète de Porphyrianos" Id="" Type="0" />
+<SAINT Name="Ste Charis" Id="" Type="0" />
+<SAINT Name="St Isaac le Syrien, Evêque de Ninive" Id="1097" Type="0" />
+<SAINT Name="St Ephrem l'Eunuque des Grottes de Kiev, Evêque de Pereslav" Id="815" Type="0" />
+<SAINT Name="St Ephrem de Novotorjk" Id="813" Type="0" />
+<SAINT Name="Ste Théodose de Totma" Id="2213" Type="1" />
+<SAINT Name="St Jean de Réomé" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Ефрема Сирина (373-379)" Id="817" Type="2"/>
+<SAINT Name="Прп. Феодосия Тотемского (1568)" Id="2213" Type="1"/>
+<SAINT Name="Св. Феодора исп., пресвитера (1933)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Игнатия, еп. Скопинского (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Владимира пресвитера и прмч. Варфоломея (1938)" Id="" Type="0"/>
+<SAINT Name="Мц. Ольги (1938)" Id="" Type="0"/>
+<SAINT Name="Прп. Леонтия исповедника (1972)" Id="4844" Type="0"/>
+<SAINT Name="Прп. Палладия пустынника (IV)" Id="326" Type="0"/>
+<SAINT Name="Прп. Исаака Сирина, еп. Ниневийского (VI-VII)" Id="1097" Type="0"/>
+<SAINT Name="Прп. Ефрема Новоторжского (1053)" Id="813" Type="0"/>
+<SAINT Name="Прп. Ефрема Печерского, еп. Переяславского (ок. 1098)" Id="815" Type="0"/>
+<SAINT Name="Суморинской-Тотемской иконы Божией Матери (XVI)" Id="328" Type="0"/>
+</LANGUAGE>
+</DAY>

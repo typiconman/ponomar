@@ -1,0 +1,35 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Col_4:5-9, 14, 18" Pericope="260 (mid)" Note="for the Apostle"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:16-21" Pericope="51" Note="for the Apostle"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Apostle and Evangelist Luke (1st C)" Id="1764" Type="4" />
+<SAINT Name="Martyr Marinus the Elder at Anazarbus (4th C)" Id="1767" Type="0" />
+<SAINT Name="Venerable Julian the Hermit, of Mesopotamia (4th C)" Id="1768" Type="0" />
+<SAINT Name="Venerable David of Serpukhov (+1520)" Id="" Type="0" />
+<SAINT Name="St Mnason, Bishop of Cyprus" Id="" Type="0" />
+<SAINT Name="Hieromartyr Asklipiades, Archbishop of Antioch" Id="" Type="0" />
+<SAINT Name="St Peter, Metropolitan of Chernigov" Id="" Type="0" />
+<SAINT Name="New Hieromartyrs Gabriel and Cormidolus of Egypt" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Apôtre et Evangéliste Luc" Id="1764" Type="4" />
+<SAINT Name="St Marinos l'Ancien" Id="1767" Type="0" />
+<SAINT Name="St Julien Sabas" Id="1768" Type="0" />
+<SAINT Name="Mémoire de 40 enfants Martyrs" Id="" Type="0" />
+<SAINT Name="St Minason, Evêque de Chypre" Id="" Type="0" />
+<SAINT Name="Sts Syméon et Théodore, Ste Euphrosynie, Fondateur du Monastère de la Grande Grotte dans le Péloponèse" Id="" Type="0" />
+<SAINT Name="Sts Néomartyrs Gabriel et Kermidolis en Egypte" Id="" Type="0" />
+<SAINT Name="St David, Fondateur du Monastère de Serpoukhov" Id="" Type="0" />
+<SAINT Name="St Pierrede Tsétinié, Métropolite du Monténégro" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Апостола и евангелиста Луки (I)" Id="1764" Type="4"/>
+<SAINT Name="Обретение мощей прп. Иосифа, игумена Волоцкого, чудотворца (1515)" Id="1055" Type="0"/>
+<SAINT Name="Сщмчч. Андрея, Сергия, Сергия, Николая пресвитеров, мц. Елисаветы (1937)" Id="4754" Type="0"/>
+<SAINT Name="Мч. Марина Тарсийского (IV)" Id="1767" Type="0"/>
+<SAINT Name="Прп. Иулиана Пустынника (IV)" Id="1768" Type="0"/>
+</LANGUAGE>
+</DAY>

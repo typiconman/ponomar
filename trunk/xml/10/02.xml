@@ -1,0 +1,30 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Cyprian and Virginmartyr Justina of Nicomedia (+ 304)" Id="1651" Type="2" />
+<SAINT Name="Blessed Andrew, Fool-for-Christ, at Constantinople (+ c. 936)" Id="1652" Type="1" />
+<SAINT Name="Repose of Blessed Princess Anna of Kashin (+ 1338)" Id="2393" Type="0" />
+<SAINT Name="Venerable Cyprian, the Fool-for-Christ of Suzdal" Id="" Type="0" />
+<SAINT Name="New Martyr George" Id="" Type="0" />
+<SAINT Name="Venerable Cassian the Greek of Uglich (+ 1504)" Id="1654" Type="0" />
+<SAINT Name="Martyrs David and Constantine, Princes of Aragvet, Georgia (+ 740)" Id="1655" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Cyprien et Ste Justine" Id="1651" Type="2" />
+<SAINT Name="St Théodore Gavra" Id="" Type="0" />
+<SAINT Name="St Georges de Philadelphie" Id="" Type="0" />
+<SAINT Name="Ste Damaris d'Athènes(Actes 18:34)" Id="" Type="0" />
+<SAINT Name="Ste Anne, Reine de Kashin en Russie" Id="2393" Type="0" />
+<SAINT Name="St Cassien d'Ouglish" Id="1654" Type="0" />
+<SAINT Name="St Cyprien de Souzdal, Fol en Christ" Id="" Type="0" />
+<SAINT Name="Sts David et Constantin, Rois de Géorgie" Id="1655" Type="0" />
+<SAINT Name="St Léger, Evêque d'Autun" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Киприана, мц. Иустины и мч. Феоктиста (304)" Id="1651" Type="2"/>
+<SAINT Name="Блж. Андрея, Христа ради юродивого (936)" Id="1652" Type="1"/>
+<SAINT Name="Прав. воина Феодора Санаксарского (1817)" Id="" Type="0"/>
+<SAINT Name="Мчч. Давида и Константина, князей Арагветских (740)" Id="1655" Type="0"/>
+<SAINT Name="Блгв. кн. Анны Кашинской (1338)" Id="2393" Type="0"/>
+<SAINT Name="Прп. Кассиана Угличского (1504)" Id="1654" Type="0"/>
+</LANGUAGE>
+</DAY>

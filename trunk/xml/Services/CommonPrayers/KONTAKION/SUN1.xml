@@ -1,0 +1,10 @@
+﻿<KONTAKION>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Kontakion in the First Tone"/>
+<TEXT Value="As God, Thou didst rise from the tomb in glory, raising the world with Thyself, Human nature praises Thee as God, for death has vanished! Adam exults, O Master! Eve rejoices, for she is freed from bondage, and cries to Thee: Thou art the Giver of Resurrection to all, O Christ!"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Kondakion dans le premier ton"/>
+<TEXT Value="Ressuscité du tombeau dans la gloire divine, tu as ressuscité le monde avec toi ; la nature humaine te chante comme Dieu, la mort s'évanouit, Adam jubile, Seigneur, et Ève, désormais libérée de ses liens, proclame dans l'allégresse : Ô Christ, c'est toi qui accordes à tous la résurrection."/>
+</LANGUAGE>
+</KONTAKION>

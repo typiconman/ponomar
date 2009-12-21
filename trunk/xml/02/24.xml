@@ -1,0 +1,37 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="vespers" Reading="Isa_40:1-3, 41:17-18, 45:8, 48:20-21, 54:1" Note="for the Forerunner"/>
+<SCRIPTURE Type="vespers" Reading="Mal_3:1-3, 5-7, 12, 17-18, 4:4-6" Note="for the Forerunner"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_4:7, 16-17, 19-20, 5:1-7" Note="for the Forerunner"/>
+<SCRIPTURE Type="matins" Reading="Lk_7:17-30" Pericope="31" Note="for the Forerunner" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_4:6-15" Pericope="176" Note="for the Forerunner"/>
+<SCRIPTURE Type="gospel" Reading="Mt_11:2-15" Pericope="40" Note="for the Forerunner"/>
+<LITURGY Type="3" Comment="Presanctified if this is observed today" Cmd="nday &lt; 44 &amp;&amp; dow != 0 &amp;&amp; dow != 6"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="The First (4th C) and second (452) finding of the Honorable Head of the Holy Glorious Prophet, Forerunner, and Baptist of the Lord, John" Id="1007" Type="4" />
+<SAINT Name="(Observed on Meatfare Friday)" Id="" Type="0" Cmd="nday == 57" />
+<SAINT Name="(Observed on Cheesefare Tuesday)" Id="" Type="0" Cmd="nday == 53" />
+<SAINT Name="(Observed on Cheesefare Thursday)" Id="" Type="0" Cmd="nday == 51" />
+<SAINT Name="(Observed on Cheesefare Sunday)" Id="" Type="0" Cmd="nday == 48" />
+<SAINT Name="(Observed on St Theodore Saturday)" Id="" Type="0" Cmd="nday == 47 || nday == 46 || nday == 45 || nday == 44" />
+<SAINT Name="Venerable Erasmus of the Caves of Kiev (+c. 1160)" Id="506" Type="0" />
+<SAINT Name="Finding of the Relics of the Holy Right-believing Prince Roman of Uglich" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="1ère et seconde invention du chef de St Jean le Baptiste" Id="1007" Type="4" />
+<SAINT Name="St Erasme des grottes de Kiev" Id="506" Type="0" />
+<SAINT Name="St Romain, Prince d'Ouglitch (invention des Reliques)" Id="" Type="0" />
+<SAINT Name="Sts Montan, Lucius, Julien, Victoric et Flavien à Carthage" Id="" Type="0" />
+<SAINT Name="St Ethelbert, 1er Roi Chrétien de Kent" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Первое (IV) и второе (452) обретение главы Иоанна Предтечи." Id="1007" Type="4"/>
+<SAINT Name="(Переносится на пятницу мясопустную)" Id="" Type="0" Cmd="nday == 57" />
+<SAINT Name="(Переносится на вторник сыропустный)" Id="" Type="0" Cmd="nday == 53" />
+<SAINT Name="(Переносится на четверг сыропустный)" Id="" Type="0" Cmd="nday == 51" />
+<SAINT Name="(Переносится на неделю сыропустную)" Id="" Type="0" Cmd="nday == 48" />
+<SAINT Name="(Переносится на Феодорвскую субботу)" Id="" Type="3" Cmd="nday == 47 || nday == 46 || nday == 45 || nday == 44" />
+<SAINT Name="Прп. Еразма Печерского (ок. 1160)" Id="506" Type="0"/>
+</LANGUAGE>
+</DAY>

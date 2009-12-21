@@ -1,0 +1,20 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="matins" Reading="Lk_24:36-52" Pericope="114" Cmd="dRank != 6"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid)"/>
+<SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" Cmd="(doy &lt; 264 &amp;&amp; GS == 1) || GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:11-16" Pericope="30" Cmd="(doy &gt;= 278 &amp;&amp; doy &lt;= 284) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:31-36" Pericope="26" Cmd="(doy &gt;= 271 &amp;&amp; doy &lt;= 277) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Pericope="17" Cmd="(doy &gt;= 264 &amp;&amp; doy &lt;= 270) &amp;&amp; GS == 1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="17th Sunday after Pentecost" Id="" Type="0" Tone="8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Le 17-me dimanche après le Pentecôte" Id="" Type="0" Tone="8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Неделя 17-я по Пятидесятнице" Id="" Type="0" Tone="8"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,29 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="19" Cmd="nday == -49 || nday == -50 || nday == -52 || nday == -54 || nday == -58" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Meeting of the Lord" Id="" Type="0" Cmd="nday == -51 || nday == -53 || nday == -55 || nday == -56 || nday == -57 || nday &lt;= -59" />
+<SAINT Name="Martyr Agatha of Palermo in Sicily (+ 251)" Id="2369" Type="1" />
+<SAINT Name="Repose of Saint Theodosius, Archbishop of Chernigov (+ 1696)" Id="2214" Type="3" />
+<SAINT Name="Martyr Theodoula of Anazarbus in Cilicia, and with her Martyrs Helladius, Macarius, Boethos, and Evagrius (+ c 304)" Id="393" Type="0" />
+<SAINT Name="New Martyr Anthony of Athens" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Polyeuchus, Patriarch of Constantinople" Id="" Type="0" />
+<SAINT Name="Eletsk-Chernigov (1060) and 'In Search of the Perishing' Icons of the Mother of God" Id="394" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Agathe de Sicile" Id="2369" Type="1" />
+<SAINT Name="St Théodose de Skopelos" Id="" Type="0" />
+<SAINT Name="St Polyeucte, Patriarche de Contantinople" Id="" Type="0" />
+<SAINT Name="St Néomartyr Antoine d'Athènes" Id="" Type="0" />
+<SAINT Name="St Théodose, Archevêque de Tchernigov" Id="2214" Type="3" />
+<SAINT Name="St Avit, Evêque de Vienne" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Сретения Господня." Id="" Type="0" Cmd="nday == -51 || nday == -53 || nday == -55 || nday == -56 || nday == -57 || nday &lt;= -59"/>
+<SAINT Name="Мц. Агафии (251)" Id="2369" Type="1"/>
+<SAINT Name="Свт. Феодосия, архиеп. Черниговского (1696). Мч. Михаила, прмц. Александры (1942)" Id="2214" Type="3"/>
+<SAINT Name="Мц. Феодулии и мчч. Елладия Комментарисия, Макария, Воифа помощника и Евагрия (ок. 304)" Id="393" Type="0"/>
+<SAINT Name="Елецкой-Черниговской (1060), Сицилийской, или Дивногорской (1092), и именуемой  &quot;Взыскание погибших&quot; (XVII) икон Божией Матери. )" Id="394" Type="0"/>
+</LANGUAGE>
+</DAY>

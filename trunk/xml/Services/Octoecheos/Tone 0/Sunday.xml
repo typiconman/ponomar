@@ -1,0 +1,6 @@
+<TONE>
+<LANGUAGE>
+<PRIMES TROPARION1="SUN8" Type="Normal" KONTAKION1="SUN8" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
+<PRIMES Type="Lenten" KONTAKION1="SUN8" Cmd="(nday > -50 &amp;&amp; nday < 0)" />
+</LANGUAGE>
+</TONE>

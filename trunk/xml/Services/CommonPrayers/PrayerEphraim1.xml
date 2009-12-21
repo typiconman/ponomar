@@ -1,0 +1,10 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Prayer of Saint Ephraim" />
+<TEXT Value="O Lord and Master of my life, a spirit of idleness, despondency, ambition, and idle talking give me not."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Prière de Saint Ephraim" />
+<TEXT Value="Seigneur et Maître de ma vie, l’esprit d’oisiveté, de domination, de découragement et de parole facile, éloigne de moi."/>
+</LANGUAGE>
+</COMMONPRAYER>

@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Easter" />
+<SCRIPTURE Type="apostol" Reading="Acts_13:13-24" Pericope="32"/>
+<SCRIPTURE Type="gospel" Reading="Jn_6:5-14" Pericope="18"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Wednesday of the 5th week after Pascha. Apodosis of Mid-Pentecost" Id="" Type="3" Tone="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Mercredi de la 5-me semaine après le Pâques. Apodose de Mi-Pentecôte" Id="" Type="3" Tone="4"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Среда 5-й седмицы по Пасхе. Отдание Преполовения" Id="" Type="3" Tone="4"/>
+</LANGUAGE>
+</DAY>

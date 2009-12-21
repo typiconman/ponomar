@@ -1,0 +1,23 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Basil of Ancyra (+363)" Id="689" Type="1" />
+<SAINT Name="Venerable Isaac the Founder of the Dalmatian Monastery at Constantinople (4th C)" Id="1101" Type="0" />
+<SAINT Name="Martyr Drosis the Daughter of the Emperor Trajan (104-117)" Id="690" Type="0" />
+<SAINT Name="Martyrs Callinica and Basilissa of Rome;Venerable Martyr Euthymius of Constantinople" Id="" Type="0" />
+<SAINT Name="Monkmartyr Euthymius of Prodromou on Mt Athos (+1814)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St. Basile d'Ancyre" Id="689" Type="1" />
+<SAINT Name="Ste Drosis d'Antioche" Id="" Type="0" />
+<SAINT Name="Stes Drosis, fille de l'empereur Trajan et ses 5 compagnes" Id="690" Type="0" />
+<SAINT Name="Stes Callinique et Basilisse" Id="" Type="0" />
+<SAINT Name="St Euthyme l'Athonite" Id="" Type="0" />
+<SAINT Name="St Ruf, Fondateur de l'Eglise d'Avignon" Id="" Type="0" />
+<SAINT Name="St. Paul de Narbonne" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Василия, пресвитера Анкирского (363)" Id="689" Type="1"/>
+<SAINT Name="Мц. Дросиды, дщери царя Траяна, и с нею дев Аглаиды, Аполлинарии, Дарии, Мамфусы, Таисии (ок. 104-117)" Id="690" Type="0"/>
+<SAINT Name="Прп. Исаакия Далматского (IV)" Id="1101" Type="0"/>
+</LANGUAGE>
+</DAY>

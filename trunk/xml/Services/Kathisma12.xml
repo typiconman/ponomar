@@ -1,0 +1,20 @@
+<SERVICES>
+<LANGUAGE>
+<!-- This is the Twelveth Kathisma -->
+<!-- The First Stasis -->
+<BIBLE Verses="Psalm_85" Who="" RedFirst="1" NewLine="1" Header="1" 2Stars="1"/>
+<BIBLE Verses="Psalm_86" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_87" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+<!-- The Second Stasis -->
+<BIBLE Verses="Psalm_88" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+<!-- The Third Stasis -->
+<BIBLE Verses="Psalm_89" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_90" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+</LANGUAGE>
+</SERVICES>

@@ -1,0 +1,44 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="1" Cmd="dow == 0" />
+<SAINT Name="7" Cmd="dow == 6 || dow == 4" />
+<SCRIPTURE Type="apostol" Reading="Heb_3:1-4" Pericope="307" Note="for the Sepulchre"/>
+<SCRIPTURE Type="gospel" Reading="Mt_16:13-19" Pericope="67" Note="for the Sepulchre"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Forefeast of the Exaltation of the Cross" Id="" Type="1" />
+<SAINT Name="Commemoration of the Founding of the Church of the Resurrection (Holy Sepulchre) at Jerusalem (335)" Id="1521" Type="3" />
+<SAINT Name="Hieromartyr Cornelius the Centurion (1st C)" Id="1289" Type="0" />
+<SAINT Name="Hieromartyr Presbyter Julian" Id="1515" Type="0" />
+<SAINT Name="St. Peter of Atroe (9th C)" Id="1525" Type="0" />
+<SAINT Name="Martyrs Gordian, Macrobius, Elias, Zoticus, Lucian and Valerian (4th C)" Id="" Type="0" />
+<SAINT Name="Holy Martyrs Seleucus, Stratonicus, Chronides, Leontius and Serapion (+c.237)" Id="1523" Type="0" />
+<SAINT Name="Greatmartyr Ketevan, Queen of Georgia (+1624)" Id="1526" Type="0" />
+<SAINT Name="Venerable Hierotheus of Iberia (Georgia)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Prefete de l'Exaltation" Id="" Type="1"/>
+<SAINT Name="Dédicace de l'Eglise de la Résurrection (St Sépulcre) à Jérusalem" Id="1521" Type="3" />
+<SAINT Name="Sts Corneille le Centurion, Dimitris, Evanthia son épouse et Dimitrien" Id="1289" Type="0" />
+<SAINT Name="Sts Cronide, Léonce et Sérapion d'Alexandrie" Id="1523" Type="0" />
+<SAINT Name="Sts Macrobe, Gordien, Elie, Seleucus, Valérien, Lucien et Zotique" Id="" Type="0" />
+<SAINT Name="St Straton" Id="" Type="0" />
+<SAINT Name="St Hiérothée le Jeune, du Monastère d'Iviron (Mont Athos)" Id="" Type="0" />
+<SAINT Name="Ste Kétévan, Reine de Géorgie" Id="1526" Type="0" />
+<SAINT Name="Sts Corneille de Padan-Olonets, Denys et Michel" Id="" Type="0" />
+<SAINT Name="St Amé, Fondateur de l'Abbaye de Remiremont" Id="" Type="0" />
+<SAINT Name="St Antonin de Carpentras" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Память  обновления (освящения) храма Воскресения Христова в Иерусалиме (Воскресение словущее) (335)" Id="1521" Type="3"/>
+<SAINT Name="Предпразднство Воздвижения Честного и Животворящего Креста Господня" Id="" Type="1"/>
+<SAINT Name="Сщмч. Корнилия сотника (I)" Id="1289" Type="0"/>
+<SAINT Name="Сщмчч. Стефана, Александра пресвитеров и Николая диакона (1937)" Id="4766" Type="0"/>
+<SAINT Name="Мчч. Кронида, Леонтия и Серапиона (ок. 237)" Id="1523" Type="0"/>
+<SAINT Name="Мчч. Селевка и Стратоника (III)" Id="1523" Type="0"/>
+<SAINT Name="Мчч. Макровия,  Гордиана, Илии, Зотика, Лукиана и Валериана (320)" Id="1524" Type="0"/>
+<SAINT Name="Сщмч. Иулиана пресвитера (IV)" Id="1515" Type="0"/>
+<SAINT Name="Прп. Петра в Атрои (IX)" Id="1525" Type="0"/>
+<SAINT Name="Вмц. Кетеваны, царицы Кахетинской (1624)" Id="1526" Type="0"/>
+</LANGUAGE>
+</DAY>

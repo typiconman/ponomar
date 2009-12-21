@@ -1,0 +1,21 @@
+<SERVICES>
+<LANGUAGE>
+<!-- This is the Third Kathisma -->
+<!-- The First Stasis -->
+<BIBLE Verses="Psalm_17" Who="" RedFirst="1" NewLine="1" Header="1" 2Stars="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+<!-- The Second Stasis -->
+<BIBLE Verses="Psalm_18" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_19" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_20" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+<!-- The Third Stasis -->
+<BIBLE Verses="Psalm_21" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_22" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_23" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+</LANGUAGE>
+</SERVICES>

@@ -1,0 +1,39 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="On this day, we sing the service for the Finding of the Head of the Forerunner" Id="1007" Type="4" Cmd="nday == 58 || nday == 54 || nday == 52 || nday == 49" />
+<SAINT Name="Hieromartyr Polycarp, Bishop of Smyrna (+167)" Id="496" Type="1" />
+<SAINT Name="Venerable John, Antiochus, Antoninus, Moses, Zebinas, Polychronius, another Moses, and Damian, Ascetics of the Syrian Deserts (5th C)" Id="498" Type="0" />
+<SAINT Name="Venerable Alexander the founder of the Monastery of the 'Unsleeping Ones' (c. 430)" Id="112" Type="0" />
+<SAINT Name="Venerable Gorgonia, sister of St Gregory the Thologian" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Polychronius, Bishop of Alameia" Id="" Type="0" />
+<SAINT Name="Venerable Polycarp of Briansk (+1620-1621)" Id="1811" Type="0" />
+<SAINT Name="Venerable Moses of White Lake" Id="" Type="0" />
+<SAINT Name="Venerable Damian of Esphigmenou on Mt Athos" Id="" Type="0" />
+<SAINT Name="New Martyr Damian, a monk on Mt Athos" Id="" Type="0" />
+<SAINT Name="New Hieromartyrs Priests Alexis and Nicholas and Martyr Sergey (+1938)" Id="4874" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Polycarpe, Evêque de Smyrne" Id="496" Type="1" />
+<SAINT Name="Ste Gorgonie" Id="" Type="0" />
+<SAINT Name="St Alexandre l'Acémète" Id="112" Type="0" />
+<SAINT Name="Sts Jean, Moîse, Antiochus et Antonin" Id="498" Type="0" />
+<SAINT Name="St Zebinas et ses disciples" Id="" Type="0" />
+<SAINT Name="St Clément" Id="" Type="0" />
+<SAINT Name="Ste Théa" Id="" Type="0" />
+<SAINT Name="St Damien d'Esphigménou" Id="" Type="0" />
+<SAINT Name="St Jean le Moissonneur (Theristis)" Id="" Type="0" />
+<SAINT Name="St Moîse du Lac Blanc" Id="" Type="0" />
+<SAINT Name="St Polycarpe de Bryansk" Id="1811" Type="0" />
+<SAINT Name="St Lazare du Péloponèse" Id="" Type="0" />
+<SAINT Name="St Polychronios Evêque de Babylone et ses compagnons" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Совершаем службу Обретения Главы Иоанна Крестителя" Id="1007" Type="4" Cmd="nday == 58 || nday == 54 || nday == 52 || nday == 49" />
+<SAINT Name="Сщмч. Поликарпа, еп. Смирнского (167)" Id="496" Type="1"/>
+<SAINT Name="Сщмчч. Алексия , Николая, Михаила  пресвитеров и мч. Сергия (1938)" Id="4874" Type="0"/>
+<SAINT Name="Прп. Александра монаха, начальника обители &quot;Неусыпающих&quot; (ок. 430)" Id="112" Type="0"/>
+<SAINT Name="Прпп. Иоанна, Антиоха, Антонина, Моисея, Зевина, Полихрония, Моисея другого и Дамиана, пустынников Сирийских (V)" Id="498" Type="0"/>
+<SAINT Name="Прп. Поликарпа Брянского (1620-1621)" Id="1811" Type="0"/>
+<SAINT Name="Кипрской иконы Божией Матери в с. Стромыни Московской области" Id="4203" Type="0"/>
+</LANGUAGE>
+</DAY>

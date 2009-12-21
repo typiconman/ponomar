@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Return of the relics of the Apostle Bartholomew from Anastasiopolis to Lipari (6th C)" Id="365" Type="2" />
+<SAINT Name="Holy Apostle Titus of the 70, Bishop of Crete (1st C)" Id="2110" Type="2" />
+<SAINT Name="St Michael, Patriarch of Constantinople" Id="" Type="0" />
+<SAINT Name="Saint John the Cappadocian, Patriarch of Constantinople (6th C)" Id="" Type="0" />
+<SAINT Name="St Epiphanius, Patriarch of Constantinople" Id="" Type="0" />
+<SAINT Name="Saints Barsis (+ 378) and Eulogios, Bishops of Edessa, and Saint Protogenos, Bishop of Carhae, Confessors (4th C)" Id="4517" Type="0" />
+<SAINT Name="New Hieromartyr Priest Vladimir (+1938)" Id="4791" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Apôtre Barthélemy (translation de ses Reliques)" Id="365" Type="2" />
+<SAINT Name="St Apôtre Tite, Evêque de Gortyne en Crète" Id="2110" Type="2" />
+<SAINT Name="Sts Jean II et Epiphane, Patriarches de Constantinople" Id="" Type="0" />
+<SAINT Name="St Ménas, Patriarche de Constantinople" Id="4519" Type="0" />
+<SAINT Name="St Jean de Carpathos" Id="" Type="0" />
+<SAINT Name="Sts Euloge Evêque d'Edesse et Protogène Evêque de Carrhée" Id="" Type="0" />
+<SAINT Name="St Martyr Sabbas de Bénéthalon" Id="" Type="0" />
+<SAINT Name="Synaxe des Hiérarques de Crète André, Cyrille et Eumène" Id="" Type="0" />
+<SAINT Name="Ste Alvère à Agen" Id="" Type="0" />
+<SAINT Name="St Arédius de Limoges" Id="" Type="0" />
+<SAINT Name="St Genès d'Arles" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Перенесение мощей ап. Варфоломея (VI)" Id="365" Type="2"/>
+<SAINT Name="Ап. от 70-ти Тита, еп. Критского (I)" Id="2110" Type="2"/>
+<SAINT Name="Прмч. Моисея (1931)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Владимира пресвитера (1938)" Id="4791" Type="0"/>
+<SAINT Name="Свтт. Варсиса и Евлогия, епископов Едесских, и Протогена, еп. Каррийского, исп (IV)" Id="4517" Type="0"/>
+<SAINT Name="Свт. Мины, Патриарха Константинопольского (552)" Id="4519" Type="0"/>
+</LANGUAGE>
+</DAY>

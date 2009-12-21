@@ -1,0 +1,10 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="To Thee, the Champion Leader, we Thy servants dedicate a feast of victory and of thanksgiving as ones rescued out of sufferings, O Theotokos: but as Thou art one with might which is invincible, from all dangers that can be do Thou deliver us, that we may cry to Thee: Rejoice, Thou Bride Unwedded!"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Que retentissent nos accents de victoire en ton honneur, invincible Reine, toi qui nous sauves des périls du combat, Mère de Dieu, Vierge souveraine. 
+Vers toi montent nos louanges, nos chants d’action de grâce. De ton bras puissant dresse autour de nous le plus solide des remparts, sauve-nous de tout danger,
+hâte-toi de secourir les fidèles qui te chantent : Réjouis-toi, Épouse inépousée !"/>
+</LANGUAGE>
+</COMMONPRAYER>

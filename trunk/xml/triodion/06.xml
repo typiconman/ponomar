@@ -1,0 +1,20 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="matins" Reading="Mt_21:18-43" Pericope="74"/>
+<SCRIPTURE Type="6th hour" Reading="Ezek_1:1-20" />
+<SCRIPTURE Type="vespers" Reading="Ex_1:1-20" />
+<SCRIPTURE Type="vespers" Reading="Job_1:1-12" />
+<SCRIPTURE Type="gospel" Reading="Mt_24:3-35" Pericope="98"/>
+<PRIMES Type="Lenten" />
+<LITURGY Type="3" Comment="Pre-sanctified, except Annuncation" Cmd="dRank != 6"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Great Monday" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Lundi Saint" Id="" Type="0" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Великий понедельник" Id="" Type="0" Tone="-1"/>
+</LANGUAGE>
+</DAY>

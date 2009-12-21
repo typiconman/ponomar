@@ -1,0 +1,11 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="In Judea is God known, His name is great in Israel."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3"/>
+<TEXT Value="Ведом во Иудеи Бог, во Израили велие имя Его."/>
+</LANGUAGE>
+</COMMONPRAYER>

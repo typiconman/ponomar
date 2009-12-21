@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Prophet Sophonius (+635-605 BC)" Id="3057" Type="1" />
+<SAINT Name="Venerable Sava, Abbot of Zvenigorod (+ 1406)" Id="1904" Type="3" />
+<SAINT Name="Hieromartyr Theodore, Archbishop of Alexandria (+606)" Id="" Type="0" />
+<SAINT Name="Venerable John the Silent of St Sabbas Monastery, Bishop of Colonia (+558)" Id="960" Type="0" />
+<SAINT Name="Venerable Theodulus of Constantinople" Id="" Type="0" />
+<SAINT Name="Hieromartyr Gabriel, Bishop of Ganeia (+1659)" Id="" Type="0" />
+<SAINT Name="New Martyr Angelos of Chios (+1813)" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God 'Pakhromskaya'" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Prophète Sophonie" Id="3057" Type="1" />
+<SAINT Name="St Théodule de Chypre, Fol en Christ" Id="" Type="0" />
+<SAINT Name="St Théodule, préfet de Constantinople" Id="" Type="0" />
+<SAINT Name="St Jean l'Hésichaste, Evêque de Colonia" Id="960" Type="0" />
+<SAINT Name="Sts Agapios, Séleuchos et Mamas" Id="" Type="0" />
+<SAINT Name="St Gabriel, Evêque de Prousse" Id="" Type="0" />
+<SAINT Name="St Angélis de Chios" Id="" Type="0" />
+<SAINT Name="St Sabas de Svenigorod" Id="1904" Type="3" />
+<SAINT Name="St Georges de Tchernica" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прор. Софонии (635-605 до Р.Х.)" Id="3057" Type="1"/>
+<SAINT Name="Прп. Саввы Сторожевского (Звенигородского) (1406)" Id="1904" Type="3"/>
+<SAINT Name="Сщмч. Андрея пресвитера (1920)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Николая пресвитера (1937)" Id="" Type="0"/>
+<SAINT Name="Св. Георгия исп (1960)" Id="" Type="0"/>
+<SAINT Name="Прп. Феодула Константинопольского (ок. 440)" Id="" Type="0"/>
+<SAINT Name="Прп. Иоанна молчальника, бывшего еп. Колонийского (558)" Id="960" Type="0"/>
+<SAINT Name="Сщмч. Феодора, архиеп. Александрийского (606)" Id="" Type="0"/>
+<SAINT Name="Прп. Георгия Черникского" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

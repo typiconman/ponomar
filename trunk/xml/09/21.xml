@@ -1,0 +1,47 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="4" Cmd="dow == 0" />
+<SAINT Name="11" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Apodosis of the Exaltation of the Cross" Id="" Type="3" />
+<SAINT Name="Apostle Quadratus of the Seventy (+c.130)" Id="1256" Type="1" />
+<SAINT Name="Finding of the relics of St Demetrius, Metropolitan of Rostov (1752)" Id="601" Type="4" />
+<SAINT Name="Hieromartyrs Hypatius, Bishop of Ephesus, and Priest Andrew (+c.735)" Id="1557" Type="0" />
+<SAINT Name="Martyr Eusebius of Phoenicia" Id="" Type="0" />
+<SAINT Name="Martyr Priscus of Phrygia" Id="" Type="0" />
+<SAINT Name="Sts Isaak and Meletius of Cyprus" Id="" Type="0" />
+<SAINT Name="Venerable Joseph of Zaonikiev Monastery (+1612)" Id="1576" Type="0" />
+<SAINT Name="Venerable Daniel the Abbot of Shuzhgorsk (16th C)" Id="586" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Apodose de l'Exaltation de la Sainte et Vivifiante Croix" Id="" Type="3" />
+<SAINT Name="St Codrat, Apôtre à Magnésie" Id="1256" Type="1" />
+<SAINT Name="St Prophète Jonas" Id="" Type="0" />
+<SAINT Name="St Jonas le sabbaïte, Sts Théodore et Théophane, les Marqués" Id="" Type="0" />
+<SAINT Name="St Eusèbe" Id="" Type="0" />
+<SAINT Name="Sts Eusèbe, Nestabe, Zénon, nestor et Boussiris" Id="" Type="0" />
+<SAINT Name="St Isaac, Evêque de Sitie enb Chypre" Id="" Type="0" />
+<SAINT Name="St Pricus" Id="" Type="0" />
+<SAINT Name="Sts 6 Martyrs écuyers de l'Empereur Maximien" Id="" Type="0" />
+<SAINT Name="St Dimitris, Evêque de Rostov (invention des Reliques)" Id="601" Type="4" />
+<SAINT Name="St Joseph du Monastère de Zaonikiev (Vologda)" Id="1576" Type="0" />
+<SAINT Name="St Daniel, Higoumène de Choujgorsk (Novgorod)" Id="586" Type="0" />
+<SAINT Name="St Castor de Nшmes, Evêque d'Apt" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Отдание праздника Воздвижения Животворящего Креста Господня" Id="" Type="3"/>
+<SAINT Name="Ап. от 70-ти Кодрата (ок. 130)" Id="1256" Type="1"/>
+<SAINT Name="Обретение мощей свт. Димитрия, митр. Ростовского (1752)" Id="601" Type="4"/>
+<SAINT Name="Сщмчч. Александра, Алексия, Константина, Иоанна пресвитеров (1918)" Id="" Type="0"/>
+<SAINT Name="Прмч. Маврикия и с ним мчч. Василия и Владимира (1937)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Валентина, Александра, Иоанна, Андрея, Петра, Иоанна пресвитеров (1937)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Василия пресвитера (1942)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Ипатия епископа и Андрея пресвитера (ок. 730-735)" Id="1577" Type="0"/>
+<SAINT Name="Прп. Даниила Шужгорского (XVI)" Id="586" Type="0"/>
+<SAINT Name="Прп. Иосифа Заоникиевского (1612)" Id="1576" Type="0"/>
+<SAINT Name="Свтт. Исаакия и Мелетия, епископов Кипрских" Id="" Type="0"/>
+<SAINT Name="Мчч. Евсевия и Приска" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

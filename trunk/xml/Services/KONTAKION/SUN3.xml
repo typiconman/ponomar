@@ -1,0 +1,10 @@
+﻿<KONTAKION>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="<center><b>Kontakion in the Third Tone</b></center>
+<p>On this day Thou didst rise from the tomb, O Merciful One, leading us from the gates of death. On this day Adam exults as Eve rejoices; with the prophets and patriarchs they unceasingly praise the divine majesty of Thy power!</p>"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="<center><b>Kondakion dans le troisième ton</b></center>
+<p>Du tombeau tu es ressuscité en ce jour, ô Dieu de miséricorde, nous arrachant aux portes de la mort ; en ce jour Adam tressaille d'allégresse et Ève danse de joie, et tous ensemble les Patriarches et les Prophètes chantent inlassablement la force et la puissance de ta divinité.</p>"/>
+</LANGUAGE>
+</KONTAKION>

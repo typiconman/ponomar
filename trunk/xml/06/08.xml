@@ -1,0 +1,36 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Translation of the relics of the Greatmartyr Theodore Stratelates (+319)" Id="2201" Type="2" />
+<SAINT Name="Saint Ephraim, Patriarch of Antioch (+545)" Id="1261" Type="0" />
+<SAINT Name="Venerable Zosimus of Phoenicia, Syria (6th C)" Id="1262" Type="0" />
+<SAINT Name="Venerable Melania" Id="" Type="0" />
+<SAINT Name="Venerable Athra" Id="" Type="0" />
+<SAINT Name="Venerable Naucratius" Id="" Type="0" />
+<SAINT Name="New Martyr Theophanes" Id="" Type="0" />
+<SAINT Name="St Theodore the Bishop of Rostov and Suzdal (+ c.1023)" Id="6492" Type="0" />
+<SAINT Name="Icon of the Mother of God of Yaroslavl (13th C)" Id="1265" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Translation des Reliques de St Thédore le Stratilate" Id="2201" Type="2" />
+<SAINT Name="Sts Nicandre et Marcien" Id="" Type="0" />
+<SAINT Name="Ste Calliope" Id="" Type="0" />
+<SAINT Name="St Naucrace" Id="" Type="0" />
+<SAINT Name="St Paul du monastère de Kaioumas" Id="" Type="0" />
+<SAINT Name="St Athre de Nitrie" Id="" Type="0" />
+<SAINT Name="Ste Mélania" Id="" Type="0" />
+<SAINT Name="St Nicandre" Id="" Type="0" />
+<SAINT Name="St Marc" Id="" Type="0" />
+<SAINT Name="St Théophane, Néomartyr" Id="" Type="0" />
+<SAINT Name="St Théodore, Evêque de Rostov" Id="" Type="0" />
+<SAINT Name="St Médard, Evêque de Noyons" Id="" Type="0" />
+<SAINT Name="St Martyr Maxime d'Aix en Provence" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Вмч. Феодора Стратилата (319)" Id="2201" Type="2"/>
+<SAINT Name="Прп. Ефрема, Патриарха Антиохийского (545)" Id="1261" Type="0"/>
+<SAINT Name="Прп. Зосимы Финикийского (VI)" Id="1262" Type="0"/>
+<SAINT Name="Свт. Феодора, еп. Суздальского (ок. 1023)" Id="" Type="0"/>
+<SAINT Name="Обретение мощей страстотерпцев благоверных князей Василия и Константина Ярославских (1501)" Id="6492" Type="0"/>
+<SAINT Name="Ярославской (XIII) и Урюпинской (1821) икон Божией Матери" Id="1265" Type="0"/>
+</LANGUAGE>
+</DAY>

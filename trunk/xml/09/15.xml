@@ -1,0 +1,51 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="4" Cmd="dow == 0" />
+<SAINT Name="11" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Exaltation of the Cross" Id="" Type="1" />
+<SAINT Name="Greatmartyr Nicetas the Goth (+c.372)" Id="1533" Type="2" />
+<SAINT Name="Martyr Porphyrius the Actor (+361)" Id="1536" Type="0" />
+<SAINT Name="Holy Martyrs Maximus, Asklepiodote, and Theodotus (+c.310)" Id="1537" Type="0" />
+<SAINT Name="St. Philotheus the Presbyter in Asia Minor (10th C)" Id="1534" Type="0" />
+<SAINT Name="Saint Bissarion, Archbishop of Larissa" Id="" Type="0" />
+<SAINT Name="Venerable Gerasim" Id="" Type="0" />
+<SAINT Name="Venerable Joseph the Abbot of Alaverdi in Georgia (+570)" Id="1535" Type="0" />
+<SAINT Name="Finding of the relics of the Holy Protomartyr and Archdeacon Stephen (415)" Id="2051" Type="0" />
+<SAINT Name="St Acacius, Bishop of Melitene (3rd C)" Id="" Type="0" />
+<SAINT Name="New Martyr John of Crete" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Apresfete de l'Exaltation" Id="" Type="1"/>
+<SAINT Name="Sts Nicétas le Goth et les martyrs qui souffrirent en même temps" Id="1533" Type="2" />
+<SAINT Name="St Philothée" Id="1534" Type="0" />
+<SAINT Name="St Porphyre le comédien" Id="1536" Type="0" />
+<SAINT Name="Sts Maxime, Théodote et Asclepiodote" Id="1537" Type="0" />
+<SAINT Name="St Acace (Akakios) de Mélitène" Id="" Type="0" />
+<SAINT Name="St Syméon, Archevêque de thessalonique" Id="" Type="0" />
+<SAINT Name="St Protomartyr et Archidiacre Etienne (invention des Reliques)" Id="2051" Type="0" />
+<SAINT Name="Sts Bessarion 1er et Bessarion II, Archevêque de Larissa" Id="" Type="0" />
+<SAINT Name="St Gérasime, fondateur du Monastère de la Ste Trinité dit de Sourvia" Id="" Type="0" />
+<SAINT Name="St Néomartyr Jean de Crète" Id="" Type="0" />
+<SAINT Name="St Joseph le Jeune, Métropolite de Témisvar" Id="" Type="0" />
+<SAINT Name="St Joseph, Higoumène d' Alaverdsk" Id="1535" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Воздвижения Креста Господня" Id="" Type="1"/>
+<SAINT Name="Вмч. Никиты (ок. 372)" Id="1533" Type="2"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Прмц. Евдокии (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Андрея, Григория, Григория, Иоанна пресвитеров (1921)" Id="" Type="0"/>
+<SAINT Name="Прп. Игнатия исп (1932)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Димитрия пресвитера (1935)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Иоанна и Иакова, Петра, Николая пресвитеров и Николая диакона, прмц. Марии и мц. Людмилы (1937)" Id="4820" Type="0"/>
+<SAINT Name="Обретение мощей свт. Акакия исповедника, еп. Мелитинского (III)" Id="" Type="0"/>
+<SAINT Name="Мчч. Максима, Феодота, Асклиады (Асклипиодоты) (305-311)" Id="1537" Type="0"/>
+<SAINT Name="Мч. Порфирия (361)" Id="1536" Type="0"/>
+<SAINT Name="Обретение мощей первомч. архидиакона Стефана (415)" Id="2051" Type="0"/>
+<SAINT Name="Свт. Иосифа, еп. Алавердского (570)" Id="1535" Type="0"/>
+<SAINT Name="Прп. Филофея пресвитера, в Малой Азии (X)" Id="1534" Type="0"/>
+<SAINT Name="Новоникитской иконы Божией Матери (372)" Id="1541" Type="0"/>
+</LANGUAGE>
+</DAY>

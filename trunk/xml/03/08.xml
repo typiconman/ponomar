@@ -1,0 +1,30 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="On this day we sing the service for the Forty Martyrs" Id="1238" Type="4" Cmd="nday == 26" />
+<SAINT Name="St. Theophylactus the Bishop of Nicomedia (+842-845)" Id="594" Type="1" />
+<SAINT Name="Venerable Dometius (+363)" Id="" Type="0" />
+<SAINT Name="Hieromartyr Theodoritus of Antioch (4th C)" Id="597" Type="0" />
+<SAINT Name="Apostle Hermas of the Seventy (1st C)" Id="792" Type="0" />
+<SAINT Name="Venerable Lazarus (+1391) and Athanasius (14th C) of Murom" Id="1326" Type="0" />
+<SAINT Name="St. Felix of Burgundy, Bishop of Dunwich and Enlightener of East Anglia" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Théophylacte, Evêque de Nicomédie" Id="594" Type="1" />
+<SAINT Name="St Paul le Confesseur, Evêque de Plousias" Id="" Type="0" />
+<SAINT Name="St Hermès, Apôtre, disciple de St Paul" Id="792" Type="0" />
+<SAINT Name="St Dion" Id="" Type="0" />
+<SAINT Name="St Dométios" Id="" Type="0" />
+<SAINT Name="St Lazare, Higoumène du Monastère de Mourmansk et St Athanase son successeur" Id="1326" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Совершаем службу святым 40 мученикам Севастийским" Id="1238" Type="4" Cmd="nday == 26"/>
+<SAINT Name="Прп. Феофилакта исп., еп. Никомидийского (842-845)" Id="594" Type="1"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1923)" Id="" Type="0"/>
+<SAINT Name="Мч. Владимира (1942)" Id="" Type="0"/>
+<SAINT Name="Ап. Ерма (I)" Id="792" Type="0"/>
+<SAINT Name="Сщмч. Феодорита, пресвитера Антиохийского (361-363)" Id="597" Type="0"/>
+<SAINT Name="Прмч. Дометия перса (363)" Id="" Type="0"/>
+<SAINT Name="Прпп. Лазаря (1391) и Афанасия (XV) Мурманских (Муромских), Олонецких." Id="1326" Type="0"/>
+<SAINT Name="Иконы Божией Матери &quot;Знамение&quot; Курской-Коренной (1898)" Id="1487" Type="0"/>
+</LANGUAGE>
+</DAY>
