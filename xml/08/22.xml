@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Dormition" Id="" Type="0" />
+<SAINT Name="Martyrs Agathonicus of Nicomedia and his companions: Zotikos, Theoprepios, Acyndinos, Severian, Zeno and others who suffered under Maximian (+c.305-311)" Id="4493" Type="1" />
+<SAINT Name="Venerable Eulapia the Virgin of Barselona" Id="4496" Type="0" />
+<SAINT Name="Venerable Anthusa and Hieromartyr Bishop Athanasius, who baptised her two servants: Charasim and Neophite" Id="4494" Type="0" />
+<SAINT Name="New Hieromartyr Ephraim, Bishop of Selenginsk and Presbyter John Vostrogov (+1918)" Id="" Type="0" />
+<SAINT Name="Venerable Isaac (the First) of Optina (+1894)" Id="4638" Type="0" />
+<SAINT Name="Icon of the Mother of God 'Georgian'" Id="4498" Type="0" />
+<SAINT Name="New Martyr Macarius, bishop of Orel (+1918)" Id="4845" Type="0" />
+<SAINT Name="New Martyr Theodore, bishop of Penza (+1937)" Id="" Type="0" />
+<SAINT Name="New Martyrs John, bishop of Velikaya Russa and Alexey, archbishop of Omsk (+1937)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Martyr Agathonique, Zotique, Zénon, Théoprépios, Akindynos et Sévérien" Id="4493" Type="1" />
+<SAINT Name="Ste Martyre Anthouse de Séleucie, ses serviteurs Charissime et Néophyte, ainsi que St Athanase de Tarse Evêque" Id="4494" Type="0" />
+<SAINT Name="Ste Martyre Eulalie de Barcelone" Id="4496" Type="0" />
+<SAINT Name="St Martyr Symporien d'Autun" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Успения Пресвятой Богородицы" Id="" Type="0"/>
+<SAINT Name="Мчч. Агафоника, Зотика, Феопрепия (Боголепа), Акиндина, Севериана и прочих (305-311)" Id="4493" Type="1"/>
+<SAINT Name="Прп. Исаакия I Оптинского (1894)" Id="4638" Type="0"/>
+<SAINT Name="Сщмч. Горазда, еп. Богемского и Мораво-Силезского (1942)" Id="" Type="1"/>
+<SAINT Name="Сщмчч. Макария, еп. Орловского, Иоанна и Алексия пресвитеров (1918)" Id="4845" Type="0"/>
+<SAINT Name="Сщмчч. Феодора, еп. Пензенского и с ним Василия и Гавриила пресвитеров (1937)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Иоанна, еп. Великолукского, Алексия, архиеп. Омского, Александра, Михаила и Феодора пресвитеров, прмчч. Илариона, Иоанна и Иерофея (1937)" Id="4829" Type="0"/>
+<SAINT Name="Сщмч. Афанасия еп. Тарса Киликийского (270-275), прп. Анфусы (ок. 298) и слуг ее, мчч. Харисима и Неофита (270-275)" Id="4494" Type="0"/>
+<SAINT Name="Мц. Евлалии девы (ок. 303)" Id="4496" Type="0"/>
+<SAINT Name="Грузинской иконы Божией Матери (1650)" Id="4498" Type="0"/>
+</LANGUAGE>
+</DAY>

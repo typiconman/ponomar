@@ -1,0 +1,44 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="vespers" Reading="Composite_6" Cmd="nday == -49" Note="for the feast"/>
+<SCRIPTURE Type="vespers" Reading="Isa_6:1-12" Cmd="nday == -49" Note="for the feast"/>
+<SCRIPTURE Type="vespers" Reading="Isa_19:1-5, 12, 16, 19-21" Cmd="nday == -49" Note="for the feast"/>
+<SCRIPTURE Type="matins" Reading="Lk_2:25-32" Pericope="8" Cmd="nday == -49" Note="for the feast"/>
+<SCRIPTURE Type="apostol" Reading="Heb_7:7-17" Pericope="316" Cmd="nday == -49" Note="for the feast"/>
+<SCRIPTURE Type="gospel" Reading="Lk_2:22-40" Pericope="7" Cmd="nday == -49" Note="for the feast"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Forefeast of the Meeting of the Lord" Id="2124" Type="2" Cmd="nday != -49" />
+<SAINT Name="On this day we observe the Meeting of our Lord, God, and Saviour Jesus Christ" Id="373" Type="6" Cmd="nday == -49" />
+<SAINT Name="Martyr Tryphon of Campsada near Apamea in Syria (+250)" Id="369" Type="1" Cmd="nday != -49"/>
+<SAINT Name="Venerable Peter of Galatia, the Hermit, near Antioch in Syria (+429)" Id="" Type="0" />
+<SAINT Name="Venerable Vendimianus, the Hermit of Bithynia (+c.512)" Id="370" Type="0" />
+<SAINT Name="Martyrs Perpetua, a woman of Carthage, and the Catechumens: Saturus, Revocatus, Saturninus, Secundulus, Felicita (+c.202-203)" Id="368" Type="0" />
+<SAINT Name="Saint Bridget of Ireland (523)" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Basil, Archbishop of Thessalonica" Id="" Type="0" />
+<SAINT Name="Martyr Anastasius" Id="" Type="0" />
+<SAINT Name="New Martyr Peter Skipetrov (+1918)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Tryphon, Protecteur des jardins" Id="" Type="0" />
+<SAINT Name="Sts Saturus, Saturnin, Secondus, Revocat, Perpetue et Felicite" Id="368" Type="0" />
+<SAINT Name="St Pierre de Galatie" Id="369" Type="0" />
+<SAINT Name="St Bendenianos (ou Bendimien) du Mont St Auxence" Id="370" Type="0" />
+<SAINT Name="Sts David, Syméon et Georges de Mytilène" Id="" Type="0" />
+<SAINT Name="St Basile le Confesseur, Evêque de Thessalonique" Id="" Type="0" />
+<SAINT Name="St Nil le Nouveau à Damas" Id="" Type="0" />
+<SAINT Name="St Timothée le Confesseur" Id="" Type="0" />
+<SAINT Name="St Theion" Id="" Type="0" />
+<SAINT Name="St Carion" Id="" Type="0" />
+<SAINT Name="St Néomartyr Anastase à Nauplie" Id="" Type="0" />
+<SAINT Name="St Tryphon de Pechenga et Kola" Id="" Type="0" />
+<SAINT Name="Ste Brigitte de Kildare" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Предпразднство Сретения Господня. Мч. Трифона (250)" Id="2124" Type="2"/>
+<SAINT Name="Сщмч. Николая  пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Мц. Перпетуи, мчч. Сатира, Ревоката, Саторнила, Секунда и мц. Филицитаты (202-203)" Id="368" Type="0"/>
+<SAINT Name="Прп. Петра Галатийского (429)" Id="369" Type="0"/>
+<SAINT Name="Прп. Вендимиана, пустынника Вифинийского (ок. 512)" Id="370" Type="0"/>
+</LANGUAGE>
+</DAY>

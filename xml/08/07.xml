@@ -1,0 +1,51 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Transfiguration of the Lord" Id="" Type="" />
+<SAINT Name="Martyr Dometios of Persia and his two Disciples (+ 363)" Id="4387" Type="1" />
+<SAINT Name="Venerable Pimen the much-suffering, of the Kiev Caves" Id="1792" Type="0" />
+<SAINT Name="Martyrs Marius the Soldier and Asterius the Senator" Id="663" Type="0" />
+<SAINT Name="Venerable Orus, hermit of Thibaida" Id="4393" Type="0" />
+<SAINT Name="Venerable Pimen the Faster of the Kiev  Caves, far caves (13th-14th C)" Id="4390" Type="0" />
+<SAINT Name="Venerable Mercurius of the Kiev Caves, bishop of Smolensk" Id="6740" Type="0" />
+<SAINT Name="Hieromartyr Narcissus, Patriarch of Jerusalem" Id="" Type="0" />
+<SAINT Name="Venerable Dometius of Philotheeba" Id="" Type="0" />
+<SAINT Name="Finding of Relics of Saint Mitrophan, Bishop of Voronezh (1832)" Id="1545" Type="1" />
+<SAINT Name="Venerable Anthony of Optina (+ 1865)" Id="4632" Type="0" />
+<SAINT Name="New Martyrs Priests Alexander, Peter, Michael, John, Dimitriy, and Alexey (+ 1937)" Id="4766" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Apresfete de la Transfiguration" Id="" Type="" />
+<SAINT Name="Sts Dométios de Perse et ses 2 disciples" Id="4387" Type="1" />
+<SAINT Name="St Or" Id="4393" Type="0" />
+<SAINT Name="Sts 10 000 ascètes de Thébaïdes" Id="" Type="0" />
+<SAINT Name="Ste Potamia" Id="4394" Type="0" />
+<SAINT Name="St Narcisse, Patriarche de Constantinople" Id="" Type="0" />
+<SAINT Name="St Astérios le Sénateur" Id="" Type="0" />
+<SAINT Name="St Sozon de Nicomédie" Id="" Type="0" />
+<SAINT Name="Stes Irène et Pulchérie, impératrices" Id="" Type="0" />
+<SAINT Name="St Hyperéchios" Id="" Type="0" />
+<SAINT Name="St Dométios du Monastère de Philothéou (Athos)" Id="" Type="0" />
+<SAINT Name="St Nicanor le Thaumaturge sur le Mont Callistrate" Id="" Type="0" />
+<SAINT Name="St Joseph de Crète, dit le Vieux Jean" Id="" Type="0" />
+<SAINT Name="St Pimène le Malade des Grottes de Kiev" Id="1792" Type="0" />
+<SAINT Name="St Pimène le Jeuneur des Grottes de Kiev" Id="4390" Type="0" />
+<SAINT Name="St Métrophane, 1er Evêque de Voronège" Id="1545" Type="1" />
+<SAINT Name="St Job d'Ouchelsk" Id="" Type="0" />
+<SAINT Name="Ste Théodora de Sihla" Id="" Type="0" />
+<SAINT Name="St Victrice, Evèque de Rouen" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Преображения Господня" Id="" Type="0"/>
+<SAINT Name="Прмч. Дометия Персиянина и двух учеников его (363)" Id="4387" Type="1"/>
+<SAINT Name="Обретение мощей свт. Митрофана, еп. Воронежского (1832)" Id="1545" Type="1"/>
+<SAINT Name="Прп. Антония Оптинского (1865)" Id="4632" Type="0"/>
+<SAINT Name="Сщмчч. Александра, Петра, Михаила, Иоанна, Димитрия и Алексия пресвитеров, Елисея диакона и прмч. Афанасия (1937)" Id="4766" Type="0"/>
+<SAINT Name="Сщмч. Василия пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Мчч. Марина и Астерия (260)" Id="663" Type="0"/>
+<SAINT Name="Прп. Ора Фиваидского (ок. 390)" Id="4393" Type="0"/>
+<SAINT Name="Прп. Пимена Многоболезненного, Печерского (1110)" Id="1792" Type="0"/>
+<SAINT Name="Прп. Меркурия Печерского, еп. Смоленского (1239)" Id="6740" Type="0"/>
+<SAINT Name="Прп. Пимена, постника Печерского (XIII-XIV)" Id="4390" Type="0"/>
+<SAINT Name="Прмц. Потамии чудотворицы" Id="4394" Type="0"/>
+</LANGUAGE>
+</DAY>

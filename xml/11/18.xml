@@ -1,0 +1,22 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Platon of Ancyra (+ 302 or 306)" Id="2555" Type="1" />
+<SAINT Name="Martyr Romanos the Deacon, of Caesarea and the youth Barulas (+ 303)" Id="2556" Type="1" />
+<SAINT Name="Martyrs Zaccheaus the Deacon and Alphaeus the Reader, of Caesarea (+ 303)" Id="2557" Type="0" />
+<SAINT Name="Blessed Magna of Ancyra" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Platon" Id="2555" Type="1" />
+<SAINT Name="St Romain" Id="2556" Type="1" />
+<SAINT Name="Sts Zachée et Alphée" Id="2557" Type="0" />
+<SAINT Name="St Anastase et Daniel le musulman converti" Id="" Type="0" />
+<SAINT Name="Ste Aude, disciple de ste Geneviève" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мч. Платона (302 или 306)" Id="2555" Type="1"/>
+<SAINT Name="Мчч. Романа диакона и отрока Варула (303)" Id="2556" Type="1"/>
+<SAINT Name="Св. Николая исп., пресвитера (1948)" Id="" Type="0"/>
+<SAINT Name="Мчч. Закхея, диакона Гадаринской Церкви, и Алфея, чтеца в Кесарии Палестинской (303)" Id="2557" Type="0"/>
+<SAINT Name="Собор святых Эстонской земли" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

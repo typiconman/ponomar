@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Alleluia, alleluia, alleluia.  Glory to Thee, O God."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Alléluia, alléluia, alléluia, gloire à toi, ô Dieu."/>
+</LANGUAGE>
+</COMMONPRAYER>

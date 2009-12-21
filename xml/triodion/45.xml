@@ -1,0 +1,18 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="6th hour" Reading="Isa_2:11-21" />
+<SCRIPTURE Type="vespers" Reading="Gen_2:4-19" />
+<SCRIPTURE Type="vespers" Reading="Prov_3:1-18" />
+<PRIMES Type="Lenten" LENTENK="9"/>
+<LITURGY Type="-1" Comment="No Divine Liturgy EVER"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Clean Thursday" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Jeudi Propre" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Чистый четверг" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+</DAY>

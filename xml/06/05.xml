@@ -1,0 +1,45 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Dorotheus the Bishop of Tyre (+362)" Id="1233" Type="1" />
+<SAINT Name="St Michael, Metropolitan of Kiev" Id="" Type="0" />
+<SAINT Name="Repose of Right-believing Prince Theodore Yaroslavich of Novgorod (1233)" Id="2206" Type="0" />
+<SAINT Name="Holy Martyrs Marcian, Nicander, Hyperechius, Apollos, Leonidus, Arius, Gorgius, Selenius, Eireneus, and Pambon in Egypt (+ c.311)" Id="1237" Type="0" />
+<SAINT Name="Venerable Theodore the Wonderworker and Hermit of the Jordan (6th C)" Id="1239" Type="0" />
+<SAINT Name="Venerable Anubius the Confessor and Anchorite of Egypt (4th C)" Id="1238" Type="0" />
+<SAINT Name="Venerable Abba Dorotheus of Palestine (+ c.620)" Id="1240" Type="0" />
+<SAINT Name="St Constantine, Metropolitan of Kiev (+1159)" Id="" Type="0" />
+<SAINT Name="Translation of the relics of the Right-believing Prince Igor of Chernigov and Kiev (1150)" Id="907" Type="0" />
+<SAINT Name="Finding of the relics of the Venerable Bassian and Jonah of Solovki (1599)" Id="1236" Type="0" />
+<SAINT Name="Venerable Peter the Serb" Id="" Type="0" />
+<SAINT Name="New Martyr Mark of Smyrna" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Dorothée, Evêque de Tyr" Id="1233" Type="1" />
+<SAINT Name="Sts Marcien, Nicandre (Nicanor), Appollonios, Arrios, Gorgios, Hypéréchios, Sélinias, Irène et Pammon (Pambo) en Egypte" Id="1237" Type="0" />
+<SAINT Name="St Abba Dorothée" Id="1240" Type="0" />
+<SAINT Name="St Christophe de Rome" Id="" Type="0" />
+<SAINT Name="St Conon de Rome" Id="" Type="0" />
+<SAINT Name="St Marc de Smyne" Id="" Type="0" />
+<SAINT Name="St Igor, Prince de Tchernigov et de Kiev" Id="907" Type="0" />
+<SAINT Name="St Constantin, Métropolite de Kiev" Id="" Type="0" />
+<SAINT Name="St Théodore, Prince de Novgorod" Id="2206" Type="0" />
+<SAINT Name="St Pierre de Koricha" Id="" Type="0" />
+<SAINT Name="St Eutrope, Evêque d'Orange" Id="" Type="0" />
+<SAINT Name="Sts Amand, Alexandre, Lucius et Audalde de Caunes en Minervois" Id="" Type="0" />
+<SAINT Name="St Boniface, Apôtre de la Germanie" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Дорофея, еп. Тирского (ок. 362)" Id="1233" Type="1"/>
+<SAINT Name="Сщмч. Михаила пресвитера (1931)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Николая пресвитера (1943)" Id="" Type="0"/>
+<SAINT Name="Мчч. Маркиана, Никандра, Иперехия, Аполлона, Леонида, Ария, Горгия, Селиния, Ириния и Памвона (ок. 305-311)" Id="1237" Type="0"/>
+<SAINT Name="Прп. Анувия, пустынника Египетского (IV)" Id="1238" Type="0"/>
+<SAINT Name="Прп. Феодора чудотворца (VI)" Id="1239" Type="0"/>
+<SAINT Name="Прп. аввы Дорофея, из обители аввы Серида (ок. 620)" Id="1240" Type="0"/>
+<SAINT Name="Перенесение мощей блж. Игоря, вел. кн. Черниговского и Киевского (1150)" Id="907" Type="0"/>
+<SAINT Name="Свт. Константина, митр. Киевского и всея России (1159)" Id="" Type="0"/>
+<SAINT Name="Блгв. кн. Феодора Ярославича (брата св. Александра Невского), Новгородского (1233)" Id="2206" Type="0"/>
+<SAINT Name="Обретение мощей прпп. Вассиана и Ионы Пертоминских, Соловецких чудотворцев (1599)" Id="1236" Type="0"/>
+<SAINT Name="Игоревской иконы Божией Матери" Id="1244" Type="0"/>
+</LANGUAGE>
+</DAY>

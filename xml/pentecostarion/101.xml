@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="I Cor_10:5-12" Pericope="144"/>
+<SCRIPTURE Type="gospel" Reading="Mt_16:6-12" Pericope="66"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Tuesday of the 8th week after Pentecost" Id="" Type="0" Tone="6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Mardi de la 8-me semaine après le Pentecôte" Id="" Type="0" Tone="6"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Вторник 8-й седмицы по Пятидесятнице" Id="" Type="0" Tone="6"/>
+</LANGUAGE>
+</DAY>

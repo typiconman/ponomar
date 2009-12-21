@@ -1,0 +1,49 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for St Macarius"/>
+<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Macarius"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Macarius the Great, of Egypt (+c.390-391)" Id="1401" Type="2" />
+<SAINT Name="Venerable Macarius of Alexandria (+ 394-395)" Id="1398" Type="0" />
+<SAINT Name="Virgin-martyr Euphrasia of Nicomedia (+303)" Id="253" Type="0" />
+<SAINT Name="Saint Arsenius, Archbishop of Kerkyra (8th C)" Id="255" Type="0" />
+<SAINT Name="Translation of the Relics of St Gregory the Theologian" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Mark, Archbishop of Ephesus (+ c.1444)" Id="256" Type="1" />
+<SAINT Name="Venerable Macarius the Deacon of the Caves of Kiev (13th-14th C)" Id="1411" Type="0" />
+<SAINT Name="Righteous Theodore, Fool-for-Christ, of Novgorod (+1392)" Id="2191" Type="0" />
+<SAINT Name="Finding of the Relics of Monk Sabbas of Storozhev and Zvenigorod (1652)" Id="1904" Type="0" />
+<SAINT Name="Venerable Macarius the Faster of the Caves of Kiev (12th C)" Id="1411" Type="0" />
+<SAINT Name="Saint Anthony the Stylite (Pillar-Dweller), of Martkobsa, Georgia (6th C)" Id="215" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Macaire le Grand" Id="1401" Type="2" />
+<SAINT Name="St Macaire d'Alexandrie" Id="1398" Type="0" />
+<SAINT Name="Ste Euphrasie de Nicomédie" Id="253" Type="0" />
+<SAINT Name="St Arsène, Archevêque de Corfou" Id="255" Type="0" />
+<SAINT Name="St Mélèce le Confesseur" Id="" Type="0" />
+<SAINT Name="St Marc (Eugénikos) d'Ephèse" Id="256" Type="1" />
+<SAINT Name="St Macaire des Grottes de Kiev" Id="1411" Type="0" />
+<SAINT Name="St Antoine de Géorgie" Id="215" Type="0" />
+<SAINT Name="St Théodore de Novgorod, Fol en Christ" Id="2191" Type="0" />
+<SAINT Name="St Macaire le Romain" Id="" Type="0" />
+<SAINT Name="St Volusien, Evêque de Tours" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Макария Великого, Египетского (390-391)." Id="1401" Type="2"/>
+<SAINT Name="Свт. Марка Евгеника, архиеп. Ефесского (1444)" Id="256" Type="1"/>
+<SAINT Name="Блж. Феодора, Христа ради юродивого, Новгородского (1392)" Id="2191" Type="0"/>
+<SAINT Name="Прп. Макария Римлянина, Новгородского (XVI-XVII)" Id="6715" Type="0"/>
+<SAINT Name="Сщмч. Петра пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмч.  Николая пресвитера (1930)" Id="" Type="0"/>
+<SAINT Name="Мч. Феодора (1940)" Id="" Type="0"/>
+<SAINT Name="Мц. Евфрасии девы (303)" Id="253" Type="0"/>
+<SAINT Name="Прп. Макария Александрийского (394-395)" Id="1398" Type="0"/>
+<SAINT Name="Прп. Антония, столпника Марткопского (VI)" Id="215" Type="0"/>
+<SAINT Name="Свт. Арсения, архиеп. Керкирского (VIII)" Id="255" Type="0"/>
+<SAINT Name="Прп. Макария, постника Печерского (XII)" Id="1411" Type="0"/>
+<SAINT Name="Прп. Макария, диакона Печерского (XIII-XIV)" Id="1410" Type="0"/>
+<SAINT Name="Обретение мощей прп. Саввы Сторожевского, Звенигородского (1652)" Id="1904" Type="0"/>
+<SAINT Name="Прп. Евфимия исп (XX)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

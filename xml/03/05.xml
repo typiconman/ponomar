@@ -1,0 +1,47 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Conon of Isauria (1st C)" Id="567" Type="1" />
+<SAINT Name="Martyr Conon the Gardener of Pamphylia (3rd C)" Id="570" Type="0" />
+<SAINT Name="Martyr Onesimus of Isauria (1st C)" Id="569" Type="0" />
+<SAINT Name="Martyr Eulampius" Id="572" Type="0" />
+<SAINT Name="Virginmartyr Irais (Rhais) of Antinoe in Egypt and with her Archelaus and 152 Martyrs" Id="" Type="0" />
+<SAINT Name="St. Hesychius the Faster of Bithynia (+ c.790)" Id="575" Type="0" />
+<SAINT Name="St. Mark the Ascetic of Egypt (5th C)" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Theophilus, Bishop of Caesarea in Palestine" Id="" Type="0" />
+<SAINT Name="Translation of the relics of St Theodore, Prince of Smolensk and His Children, Prices David and Constantine, Wonderworkers of Yaroslavl (1463)" Id="2197" Type="1" />
+<SAINT Name="New Martyr John of Bulgaria" Id="" Type="0" />
+<SAINT Name="Venerable Adrian of Poshekhonye, Yaroslavl (+1550)" Id="76" Type="0" />
+<SAINT Name="Repose of St Nicholas (Velemirovich) of Zhicha (+1956)" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God 'Vospitanie'" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Conon d'Isaurie le Thumaturge" Id="567" Type="1" />
+<SAINT Name="St Conon le Jardinier" Id="570" Type="0" />
+<SAINT Name="St Marc l'Ascète" Id="573" Type="0" />
+<SAINT Name="St Euloge en Palestine" Id="571" Type="0" />
+<SAINT Name="St Eulampios en Palestine" Id="572" Type="0" />
+<SAINT Name="St Archélaos et ses 152 compagnons" Id="" Type="0" />
+<SAINT Name="St Marc d'Athènes" Id="" Type="0" />
+<SAINT Name="St Jean le Bulgare" Id="" Type="0" />
+<SAINT Name="St Georges de Rapsanée" Id="" Type="0" />
+<SAINT Name="Sts Adrien de Pochekhonie et Léonide" Id="" Type="0" />
+<SAINT Name="St Virgile, Archevêque d'Arles" Id="" Type="0" />
+<SAINT Name="St Parthénios de Didymoteichon" Id="" Type="0" />
+<SAINT Name="St Nicolas Velimirovitch, le 'Chrysostome serbe'" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мч. Конона Исаврийского (I)" Id="567" Type="1"/>
+<SAINT Name="Сщмч. Николая пресвитера (1919)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Иоанна пресвитера и прмчч. Мардария и Феофана (1938)" Id="" Type="0"/>
+<SAINT Name="Мч. Онисия (I)" Id="569" Type="0"/>
+<SAINT Name="Мч. Конона градаря (III)" Id="570" Type="0"/>
+<SAINT Name="Прп. Марка Постника (V)" Id="573" Type="0"/>
+<SAINT Name="Прп. Исихия Постника (ок. 790)" Id="575" Type="0"/>
+<SAINT Name="Обретение мощей блгв. князей Феодора Смоленского и чад его Давида и Константина, Ярославских чудотворцев (1463)." Id="2197" Type="1"/>
+<SAINT Name="Прмч. Адриана Пошехонского, Ярославского (1550)" Id="76" Type="0"/>
+<SAINT Name="Мц. Ираиды." Id="" Type="0"/>
+<SAINT Name="Мч. Евлогия, иже в Палестине." Id="571" Type="0"/>
+<SAINT Name="Мч. Евлампия" Id="572" Type="0"/>
+<SAINT Name=" Иконы Божией Матери, именуемой &quot;Воспитание&quot;" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

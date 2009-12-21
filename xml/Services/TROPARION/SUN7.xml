@@ -1,0 +1,12 @@
+﻿<TROPARION>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="
+<center><b>Troparion in the Seventh Tone</b></center>
+<p>By Thy Cross, Thou didst destroy death! To the thief, Thou didst open Paradise! For the myrrh bearers, Thou didst change weeping into joy! And Thou didst command Thy disciples, O Christ God, to proclaim that Thou art risen, granting the world great mercy!</p>"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="
+<center><b>Tropaire dans le septième ton</b></center>
+<p> Par ta Croix, Seigneur, tu as détruit la mort, tu as ouvert au larron le Paradis, tu as changé en joie le deuil des saintes Femmes et tu as donné à tes Apôtres de proclamer que tu es ressuscité, pour donner au monde la grâce du salut.</p>"/>
+</LANGUAGE>
+</TROPARION>

@@ -1,0 +1,12 @@
+﻿<TROPARION>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Troparion in the Third Tone"/>
+<TEXT Value="
+Let the heavens rejoice! Let the earth be glad! For the Lord has shown strength with His arm! He has trampled down death by death! He has become the first-born of the dead! He has delivered us from the depths of hell, and has granted the world great mercy!"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Tropaire dans le troisème ton"/>
+<TEXT Value="
+Que les cieux se réjouissent, que la terre exulte d’allégresse, car le Seigneur a fait merveille par la force de son bras, terrassant la mort par sa propre mort et devenant d’entre les morts le premier-né : du sein de l’Enfer il nous a tous sauvé, accordant au monde la grâce du salut."/>
+</LANGUAGE>
+</TROPARION>

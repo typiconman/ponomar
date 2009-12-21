@@ -1,0 +1,41 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="apostol" Reading="Jude_1:1-25" Pericope="77" Note="for the Apostle"/>
+<SCRIPTURE Type="gospel" Reading="Jn_14:21-24" Pericope="48" Note="for the Apostle"/>
+<SAINT Name="15" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Apostle Jude, the Brother of the Lord (+ c.80)" Id="1346" Type="4" />
+<SAINT Name="Martyr Zosimus the Soldier at Antioch, in Pisidia (+ c.100)" Id="1347" Type="0" />
+<SAINT Name="Venerable Paisius the Great (5th C)" Id="1707" Type="0" />
+<SAINT Name="St. John the Solitary of Jerusalem (6th C)" Id="1349" Type="0" />
+<SAINT Name="Vnerable Xeno of Egypt" Id="" Type="0" />
+<SAINT Name="Venerable Barlaam of Shenkursk (+1462)" Id="6479" Type="0" />
+<SAINT Name="Holy Myrrh-bearer Mary of James" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Job, Patriarch of Moscow" Id="6632" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Apôtre Jude" Id="1346" Type="4" />
+<SAINT Name="St Sozime le Soldat à Antioche de Pisidie" Id="1347" Type="0" />
+<SAINT Name="St Zénon, Ermite en Egypte" Id="" Type="0" />
+<SAINT Name="St Jean le solitaire de Jérusalem" Id="1349" Type="0" />
+<SAINT Name="Ste Myrophore Marie, mère de l'Apôtre Jacques" Id="" Type="0" />
+<SAINT Name="St Asyncritos" Id="" Type="0" />
+<SAINT Name="St Païssios le Grand" Id="1707" Type="0" />
+<SAINT Name="St Père Job, 1er Patriarche de Moscou" Id="6632" Type="4" />
+<SAINT Name="St Païssios de Chilandar" Id="1350" Type="0" />
+<SAINT Name="St Hildegrain, Evêque de Chalons en Champagne" Id="" Type="0" />
+<SAINT Name="Ste Martyre Valérie de Milan" Id="" Type="0" />
+<SAINT Name="Dormition de St Jean Maximovitch" Id="6630" Type="5" Cmd="dow != 6"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Апостола Иуды, брата Господня (ок. 80)" Id="1346" Type="4"/>
+<SAINT Name="Свт. Иова, патриарха Московского и всея Руси (1607)" Id="6632" Type="4"/>
+<SAINT Name="Святителя Иоанна (Максимовича) архиепископа Шанхайского и Сан-Францисского, Чудотворца (1966)" Id="6630" Type="5" Cmd="dow != 6"/>
+<SAINT Name="Мч. Зосимы (ок. 89-117)" Id="1347" Type="0"/>
+<SAINT Name="Прп. Паисия Великого (V)" Id="1707" Type="0"/>
+<SAINT Name="Прп. Иоанна отшельника (VI)" Id="1349" Type="0"/>
+<SAINT Name="Прп. Варлаама Пинежского, Важского, Шенкурского (1462)" Id="6479" Type="0"/>
+<SAINT Name="Прп. Паисия Хилендарского, Болгарского (XVIII)" Id="1350" Type="0"/>
+</LANGUAGE>
+</DAY>

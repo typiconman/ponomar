@@ -1,0 +1,36 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="vespers" Reading="III Kings_17:1-23" />
+<SCRIPTURE Type="vespers" Reading="III Kings_18:1, 17-40, 44, 42, 45-56, 19:1-16" />
+<SCRIPTURE Type="vespers" Reading="Composite_5" />
+<SCRIPTURE Type="matins" Reading="Lk_4:22-30" Pericope="14" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Jas_5:10-20" Pericope="57" Note="for the Prophet"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:22-30" Pericope="14" Note="for the Prophet"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Glorious Prophet Elijah (9th C BC)" Id="946" Type="5" />
+<SAINT Name="Righteous Aaron the First-Priest (16th C BC)" Id="" Type="0" />
+<SAINT Name="St Elijah, Patriarch of Jerusalem" Id="" Type="0" />
+<SAINT Name="St Flavian, Patriarch of Antioch" Id="" Type="0" />
+<SAINT Name="St Timothy, Patriarch of Alexandria" Id="" Type="0" />
+<SAINT Name="Repose of Venerable Abraham of Galich, disciple of Venerable Sergius of Radonezh (+ 1375)" Id="4274" Type="0" />
+<SAINT Name="Finding of the Relics of Venerable Athanasius, Abbot of Brest" Id="294" Type="0" />
+<SAINT Name="Icon of the Mother of God 'Abalatskaya'" Id="4278" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Prophète Elie le Thesbite" Id="946" Type="5" />
+<SAINT Name="St Elie Chavchavadze (le Juste), en Géorgie" Id="" Type="0" />
+<SAINT Name="St Elie 1er, Patriarche de Jérusalem" Id="" Type="0" />
+<SAINT Name="St Flavien II, Patriarche d'Antioche" Id="" Type="0" />
+<SAINT Name="St Abraham de Galitch" Id="4274" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Пророка Илии (IX до Р.Х.)" Id="946" Type="5"/>
+<SAINT Name="Сщмчч. Константина и Николая пресвитеров (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Александра, Георгия, Иоанна, Сергия и Феодора пресвитеров, прмчч. Тихона, Георгия, Космы и мчч. Евфимия и Петра (1930)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Алексия пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Прп. Аврамия Галичского, Чухломского (1375)" Id="4274" Type="0"/>
+<SAINT Name="Обретение мощей прмч. Афанасия Брестского (1649)" Id="294" Type="0"/>
+<SAINT Name="Чухломской, или Галичской (1350), и Абалацкой (&quot;Знамение&quot;) (1637) икон Божией Матери" Id="4278" Type="0"/>
+</LANGUAGE>
+</DAY>

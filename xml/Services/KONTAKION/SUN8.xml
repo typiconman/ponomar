@@ -1,0 +1,10 @@
+﻿<KONTAKION>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="<center><b>Kontakion in the Eighth Tone</b></center>
+<p>By rising from the tomb, Thou didst raise the dead and resurrect Adam. Eve exults in Thy Resurrection, and the world celebrates Thy Rising from the dead, O greatly Merciful One!</p>"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="<center><b>Kondakion dans le huitième ton</b></center>
+<p>Ressuscité du tombeau, tu as éveillé les morts et ressuscité Adam, Ève danse de joie en ta Résurrection, les confins de la terre célèbrent ton éveil d'entre les morts, ô Dieu de miséricorde.</p>"/>
+</LANGUAGE>
+</KONTAKION>

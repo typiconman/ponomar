@@ -1,0 +1,19 @@
+<!-- service file for SID 2641 (Venerable Pelagia the Penitent) (5th C) -->
+<LANGUAGE Cmd="LS == -1">
+	<TROPARION Tone="8" Author="Traditional">
+	В тебе, мати, известно спасеся еже по образу: приимши бо крест последовала еси Христу и деющи учила еси презирати убо плоть, преходит бо, прилежати же о души, вещи безсмертной. Темже и со Ангелы срадуется, преподобная Пелагие, дух твой.
+	</TROPARION>
+	<KONTAKION Tone="2" Author="Traditional">
+	Тело твое постами изнуривши, бденными молитвами Творца умолила еси о деяниих твоих, яко да пиимеши совершенное оставление, еже и обрела еси, мати, яве, путь покаяния показавши.
+	</KONTAKON>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+	<TROPARION Tone="8" Author="A. Andreev">
+	In thee, O Mother, was the image of God preserved in truth, for thou didst take up the Cross and didst follow Christ. And by so doing, thou didst teach all to disregard the flesh for it passeth away but to care instead for the soul, since it is immortal. Therefore with the angels, O venerable Pelagia, doth thy spirit rejoice.
+	</TROPARION>
+	<KONTAKION Tone="2" Author="A. Andreev">
+	Having worn thy body out with fasting, thou didst beseech the Creator with vigils of prayer that thou mayest obtain complete forgiveness. And having received it, then, O mother, thou dost show the way of repentance unto all.
+	</KONTAKION>
+</LANGUAGE>
+	
+

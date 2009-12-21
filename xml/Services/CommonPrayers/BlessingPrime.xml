@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="God be gracious unto us and bless us, and cause Thy face to shine upon us and have mercy on us."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value=" <Font Color=&quot;Red&quot;><I>(Le Prêtre donne sa bénédiction.)</I></Font>"/>
+</LANGUAGE>
+</COMMONPRAYER>

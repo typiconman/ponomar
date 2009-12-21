@@ -1,0 +1,40 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="2" Cmd="dow == 0" />
+<SAINT Name="8" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Sebastian at Rome with his companions: Martyrs Nicostratus, his wife Zoe, Castorius, Tranquillinus the Presbyter and his sons the Deacons Marcellinus and Mark, Claudius, his son Symphorian and brother Victorinus, Tiburtius and Castulus (+c.287)" Id="3139" Type="1" />
+<SAINT Name="Venerable Florus, Bishop of Amis" Id="3142" Type="0" />
+<SAINT Name="Venerable Michael Singelos, the Confessor" Id="3143" Type="0" />
+<SAINT Name="Venerable Sebastian of Poshekhonsk" Id="3140" Type="0" />
+<SAINT Name="Holy Hierarch Modestus, Archbishop of Jerusalem (+c.633-634)" Id="3141" Type="0" />
+<SAINT Name="Righteous Simeon, Wonderworker of Verkhotursk (1694)" Id="1999" Type="0" />
+<SAINT Name="Martyr Ebbiot" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Thaddeus, Archbishop of Tver (+1937)" Id="6609" Type="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Sébastien et ses compagnons" Id="3139" Type="1" />
+<SAINT Name="St Eubiote" Id="" Type="0" />
+<SAINT Name="ST Florus, Evêque d'Amisos" Id="3142" Type="0" />
+<SAINT Name="Sts Phocas et Hermyle" Id="" Type="0" />
+<SAINT Name="Ste Sophie la Thaumaturge" Id="" Type="0" />
+<SAINT Name="St Michel le Syncelle, Confesseur" Id="3143" Type="0" />
+<SAINT Name="St Modeste 1er, Archevêque de Jérusalem" Id="3141" Type="0" />
+<SAINT Name="St Sébastien de Poshekon" Id="3140" Type="0" />
+<SAINT Name="St Syméon de Verkhoturye" Id="1999" Type="0" />
+<SAINT Name="St Gatien, 1er Evêque de Tours" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Севастиана и дружины его: Никострата (казнохранителя), жены его Зои, Кастория, Транквиллина пресвитера и сынов его Маркеллина и Марка, диаконов, Клавдия, начальника над тюрьмами, сына его Симфориана, брата Викторина, Тивуртия и Кастула (ок. 287 или 304)" Id="3139" Type="1"/>
+<SAINT Name="Мч. Виктора (1936)" Id="4747" Type="0"/>
+<SAINT Name="Сщмч. Фаддея, архиепископа Тверского (1937)" Id="6609" Type="1"/>
+<SAINT Name="Сщмчч. Николая, архиеп. Великоустюжского, Илии,  Иоанна, Владимира и Николая пресвитеров (1937)" Id="4813" Type="0"/>
+<SAINT Name="Сщмч. Сергия диакона и мц. Веры (1942)" Id="" Type="0"/>
+<SAINT Name="Свт. Модеста, архиеп. Иерусалимского (633-634)" Id="3141" Type="0"/>
+<SAINT Name="Прп. Флора, еп. Амийского (VII)" Id="3142" Type="0"/>
+<SAINT Name="Прп. Михаила исп (ок. 845)" Id="3143" Type="0"/>
+<SAINT Name="Прп. Севастиана Сохотского, Пошехонского (ок. 1500)" Id="3140" Type="0"/>
+<SAINT Name="Прославление прав. Симеона Верхотурского (1694)" Id="1999" Type="0"/>
+</LANGUAGE>
+</DAY>

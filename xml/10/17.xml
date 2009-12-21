@@ -1,0 +1,31 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Prophet Hosea (+820 BC)" Id="1756" Type="1" />
+<SAINT Name="Venerable Martyr Andrew of Crete (+767)" Id="182" Type="1" />
+<SAINT Name="Transfer of the relics of the Righteous Lazarus of the Four-Days to Constantinople (898)" Id="1760" Type="0" />
+<SAINT Name="Martyrs and Unmercenaries Cosmas and Damian in Cilicia (Arabia), with their brothers the Martyrs Leontius, Anthymus and Eutropius (+287 or 303)" Id="1295" Type="0" />
+<SAINT Name="Hieromartyr Hero, Bishop of Antioch" Id="" Type="0" />
+<SAINT Name="Venerable Anatoly of Leokhnovo" Id="214" Type="0" />
+<SAINT Name="New Hieromartyr Alexander, Archbishop of Semipalatinsk (+1937)" Id="4734" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Prophète Osée" Id="1756" Type="1" />
+<SAINT Name="St André de Crisis" Id="182" Type="1" />
+<SAINT Name="Sts Anargyres Cosme et Damien et leurs 3 frères Léone, Anthime et Euprépios" Id="1295" Type="0" />
+<SAINT Name="St Lazare (translation des Reliques)" Id="1760" Type="0" />
+<SAINT Name="Sts Antigone, Lucien, Térence, nicomédie et Théophanie" Id="" Type="0" />
+<SAINT Name="St Antoine, Higoumène de Leokhnov (Novgorod)" Id="214" Type="0" />
+<SAINT Name="St Cosmas de Géorgie" Id="" Type="0" />
+<SAINT Name="Stes Isidora et Néophytie" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прор. Осии (820 до Р.Х.)" Id="1756" Type="1"/>
+<SAINT Name="Прмч. Андрея Критского (767)" Id="182" Type="1"/>
+<SAINT Name="Сщмч. Неофита пресвитера, прмчч. Иакинфа и Каллиста (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Александра, архиеп. Семипалатинского (1937)" Id="4734" Type="0"/>
+<SAINT Name="Мчч. бессребреников Космы и Дамиана, Аравийских, и братий их мчч. Леонтия, Анфима и Евтропия (287 или 303)" Id="1295" Type="0"/>
+<SAINT Name="Перенесение мощей прав. Лазаря Четверодневного, еп. Китийского (898)" Id="1760" Type="0"/>
+<SAINT Name="Прп. Антония Леохновского, Новгородского (1611)" Id="214" Type="0"/>
+<SAINT Name="Икон Божией Матери, именуемых  &quot;Прежде Рождества и по Рождестве Дева&quot; (1827) и &quot;Избавительница&quot; (ок. 1889)" Id="1761" Type="0"/>
+</LANGUAGE>
+</DAY>

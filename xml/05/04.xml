@@ -1,0 +1,36 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Virginmartyr Pelagia of Tarsus, in Asia Minor (+ c.290)" Id="2643" Type="1" />
+<SAINT Name="Hieromartyr Silvanus the Bishop of Gaza, and with him 40 Martyrs (+311)" Id="1990" Type="0" />
+<SAINT Name="Hieromartyr Erasmus the Bishop of Formia in Campania (+303)" Id="991" Type="0" />
+<SAINT Name="Hieromartyr Albian the Bishop of Anaea in Asia Minor (+304)" Id="992" Type="0" />
+<SAINT Name="Transfer of the Relics of the Righteous Lazarus and the Holy Equal-to-the-Apostles Mary Magdalene" Id="" Type="0" />
+<SAINT Name="Venerable Martyrs of Palestine: Afrodisus, Leontius, Anthony, Valerianus, Macrobius, and others" Id="" Type="0" />
+<SAINT Name="St Athanasius, Bishop of Corinth" Id="" Type="0" />
+<SAINT Name="Venerable brothers Alfanov: Nikita, Cyril, Nicephorus, Clement, and Isaac, of Novgorod (14th-15th C)" Id="990" Type="0" />
+<SAINT Name="Venerable Nicephorus of Midicea" Id="" Type="0" />
+<SAINT Name="Another Venerable Nicephorus" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God of Staraya Rusa" Id="995" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Martyre Pélagie de Tarse" Id="2643" Type="1" />
+<SAINT Name="St Hilaire le Thaumaturge" Id="" Type="0" />
+<SAINT Name="St Nicéphore, fondateur du Monastère du Médikion" Id="" Type="0" />
+<SAINT Name="St Athanase, Evêque de Corinthe" Id="" Type="0" />
+<SAINT Name="Sts Aphrodisios, Léonce, Antonin, Melda (ou Meles), Valérien, Macrobe et leurs compagnons à Scythopolis en Palestine" Id="" Type="0" />
+<SAINT Name="Translation des Reliques du St et Juste Lazare ainsi que celle de Ste Marie Madeleine dans le Monastère de St Lazare à Constantinople" Id="" Type="0" />
+<SAINT Name="Sts frères Alfanov : Clément, Cyrille, Nicéphore, Nicétas et Isaac" Id="990" Type="0" />
+<SAINT Name="St Nicéphore, l'Hésichaste" Id="" Type="0" />
+<SAINT Name="Ste Monique, mère de St Augustin" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мц. Пелагии, девы Тарсийской (ок. 290)" Id="2643" Type="1"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1942)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Николая диакона (1943)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Еразма, еп. Формийского (303)" Id="991" Type="0"/>
+<SAINT Name="Сщмч. Альвиана, еп. Анейского, и учеников его (304)" Id="992" Type="0"/>
+<SAINT Name="Сщмч. Сильвана, еп. Газского, и с ним 40 мучеников (311)" Id="1990" Type="0"/>
+<SAINT Name="Прпп. Никиты, Кирилла, Никифора, Климента и Исаакия, братьев Алфановых (Сокольницких) в Новгороде (XIV-XV)" Id="990" Type="0"/>
+<SAINT Name="Старорусской иконы Божией Матери (1570)" Id="995" Type="0"/>
+</LANGUAGE>
+</DAY>

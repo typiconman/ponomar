@@ -1,0 +1,35 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="14" Cmd="dow == 0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Pelagia the Penitent (+ 457)" Id="2641" Type="1" />
+<SAINT Name="Venerable Pelagia of Antioch" Id="" Type="0" />
+<SAINT Name="Venerable Taisia of Egypt (4th C)" Id="2686" Type="0" />
+<SAINT Name="St James, Patriarch of Antioch" Id="" Type="0" />
+<SAINT Name="Venerable Tryphon, Archimandrite of Vyatka (+ 1612)" Id="2125" Type="0" />
+<SAINT Name="Venerable Dositheus, Abbot of Verkhneostrovsk and Pskov (+ 1482)" Id="1692" Type="0" />
+<SAINT Name="Venerable Ignatius the Bulgarian" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Dmitry, archbishop of Mozhaisk and those with him (+1937)" Id="4798" Type="0" />
+<SAINT Name="New Hieromartyr Jonah, bishop of Velizh, and those with him (+1937)" Id="4836" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Pélagie, la prostituée repentante" Id="2641" Type="1" />
+<SAINT Name="Ste Pélafie, Vierge" Id="" Type="0" />
+<SAINT Name="Ste Thaïs, la prostituée repentante" Id="2686" Type="0" />
+<SAINT Name="St Ignace le Jeune" Id="" Type="0" />
+<SAINT Name="St Dosithée, Higoumène de Verkneostrov (Pskov)" Id="1692" Type="0" />
+<SAINT Name="St Tryphon, Higoumène de Vyatka en Russie" Id="2125" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Пелагии (457)" Id="2641" Type="1"/>
+<SAINT Name="Сщмчч. Димитрия, архиеп. Можайского, и с ним Иоанна диакона, прмчч. Амвросия и Пахомия, прмц. Татианы, мч. Николая, мцц. Марии и Надежды (1937)" Id="4798" Type="0"/>
+<SAINT Name="Сщмчч. Ионы, еп. Велижского, Петра, Василия, Павла, Петра, Владимира пресвитеров, прмч.  Серафима, мчч. Виктора, Иоанна, Николая и мц. Елисаветы (1937)" Id="4836" Type="0"/>
+<SAINT Name="Прмч. Варлаама (конец 1930-х)" Id="" Type="0"/>
+<SAINT Name="Св. Пелагии девы (303)" Id="" Type="0"/>
+<SAINT Name="Прп. Таисии (IV)" Id="2686" Type="0"/>
+<SAINT Name="Прп. Досифея Верхнеостровского, Псковского (1482)" Id="1692" Type="0"/>
+<SAINT Name="Прп. Трифона, архим. Вятского, чудотворца (1612)" Id="2125" Type="0"/>
+<SAINT Name="Собор Вятских святых" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

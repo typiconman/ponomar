@@ -1,0 +1,46 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="12" Cmd="dow == 0" />
+<SCRIPTURE Type="apostol" Reading="I Cor_12:7-11" Pericope="151" Note="for St Gregory"/>
+<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St Gregory"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Saint Gregory the Theologian, Archbishop of Constantinople (+ 389)" Id="535" Type="4" />
+<SAINT Name="Venerable Publius of Syria (+ c. 380)" Id="308" Type="0" />
+<SAINT Name="Venerable Mares the Singer, of Syria (+ c. 430)" Id="309" Type="0" />
+<SAINT Name="Martyrs Felicitas and her seven sons: Januarius, Felix, Philip, Sylvanus, Alexander, Vitalius and Marcial (+ c. 164)" Id="307" Type="0" />
+<SAINT Name="Saint Moses, Archbishop of Novgorod (+ 1362)" Id="1570" Type="0" />
+<SAINT Name="New Martyr Auxentius" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Castinus, Bishop of Byzantium" Id="" Type="0" />
+<SAINT Name="Venerable Dimetrius" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Vladimir, Metropolitan of Kiev and Galicia (+ 1918)" Id="430" Type="1" />
+<SAINT Name="Venerable Anatoly of Optina, the elder (+ 1894)" Id="4631" Type="0" />
+<SAINT Name="New Hieromartyr Peter, Bishop of Voronezh (+ 1929)" Id="4888" Type="0" />
+<SAINT Name="Icons of the Mother of God 'Calm my Sorrows', and 'Comfort in Distress and Sorrow'" Id="310" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Grégoire le Théologien, Archevêque de Constantinople" Id="535" Type="4" />
+<SAINT Name="St Anatoly de Optina (le aîné)" Id="4631" Type="0"/>
+<SAINT Name="St Vladimir le nouveux martyre, Metropolite de Kiev" Id="430" Type="1" />
+<SAINT Name="Ste Médula et ses compagnons" Id="" Type="0" />
+<SAINT Name="St Castin, Evêque de Byzance" Id="" Type="0" />
+<SAINT Name="St Dimitrios le Skevophylaxe" Id="" Type="0" />
+<SAINT Name="St Publius" Id="308" Type="0" />
+<SAINT Name="St Maris" Id="309" Type="0" />
+<SAINT Name="St Apollos" Id="" Type="0" />
+<SAINT Name="St Auxence" Id="" Type="0" />
+<SAINT Name="St MoÃÂ¯se, Archevêque de Novgorod" Id="1570" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Свт. Григория Богослова, архиеп. Константинопольского (389)." Id="535" Type="4"/>
+<SAINT Name="Прп. Анатолия Оптинского, Старшего (1894)" Id="4631" Type="0"/>
+<SAINT Name="Сщмч. Владимира, митр. Киевского и Галицкого (1918)." Id="430" Type="1"/>
+<SAINT Name="Сщмч. Петра, архиеп. Воронежского (1929)" Id="4888" Type="0"/>
+<SAINT Name="Сщмч. Василия, еп. Прилукского. Сщмч. Стефана пресвитера. Мч. Бориса (1938)" Id="4774" Type="0"/>
+<SAINT Name="Мц. Филицаты и сыновей ее: Ианнуария, Феликса, Филиппа, Сильвана, Александра, Виталия и Марциала (ок. 164)" Id="307" Type="0"/>
+<SAINT Name="Прп. Поплия Сирийского (ок. 380)" Id="308" Type="0"/>
+<SAINT Name="Прп. Мара певца (ок. 430)" Id="309" Type="0"/>
+<SAINT Name="Свт. Моисея, архиеп. Новгородского (1362)" Id="1570" Type="0"/>
+<SAINT Name="Иконы Божией Матери, именуемой &quot;Утоли моя печали&quot; (принесена в Москву в 1640 г.)" Id="310" Type="0"/>
+</LANGUAGE>
+</DAY>

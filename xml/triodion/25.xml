@@ -1,0 +1,18 @@
+﻿<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="6th hour" Reading="Isa_26:21-27:9" />
+<SCRIPTURE Type="vespers" Reading="Gen_9:18-10:1" />
+<SCRIPTURE Type="vespers" Reading="Prov_12:23-13:9" />
+<PRIMES Type="Lenten" LENTENK="2"/>
+<LITURGY Type="3" Comment="Presanctified except Annuncation" Cmd="dRank != 6"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Wednesday of the Fourth Week of Lent" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Mercredi de la 4-me semaine du Carême" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Среда 4-й седмицы Великого поста" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+</DAY>

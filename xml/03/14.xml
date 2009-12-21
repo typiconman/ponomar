@@ -1,0 +1,25 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Benedict of Nursia (+ 543)" Id="638" Type="1" />
+<SAINT Name="St. Euschemon the Confessor and Bishop of Lampsacus (9th C)" Id="642" Type="0" />
+<SAINT Name="Holy Hierarch Theognostus, Metropolitan of Kiev and All Russia (+ 1353)" Id="" Type="0" />
+<SAINT Name="Right-believing Great Prince Rostislav-Michael of Kiev (+ 1167)" Id="640" Type="0" />
+<SAINT Name="Theodore - Kostroma Icon of the Mother of God (1613)" Id="643" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Benoit de Nursie" Id="638" Type="1" />
+<SAINT Name="St Alexandre de Pydna en Macédoine" Id="634" Type="0" />
+<SAINT Name="St Euschemon le Confesseur, Evêque de Lampsaque" Id="642" Type="0" />
+<SAINT Name="St Rotislav-Michel, Prince de Kiev" Id="640" Type="0" />
+<SAINT Name="St Théognoste, Métropolite de Kiev, Vladimir et toute la Russie" Id="" Type="0" />
+<SAINT Name="St Lubin de Chartres" Id="" Type="0" />
+<SAINT Name="St Euperge de Fréjus" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Венедикта Нурсийского (543)" Id="638" Type="1"/>
+<SAINT Name="Свт. Евсхимона исп., еп. Лампсакийского (IX)" Id="642" Type="0"/>
+<SAINT Name="Блгв. вел. кн. Ростислава-Михаила (1167)" Id="640" Type="0"/>
+<SAINT Name="Свт. Феогноста, митр. Киевского и всея России (1353)" Id="" Type="0"/>
+<SAINT Name="Феодоровской иконы Божией Матери (1613)" Id="643" Type="0"/>
+</LANGUAGE>
+</DAY>

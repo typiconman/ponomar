@@ -1,0 +1,38 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Forefeast of the Transfiguration of the Lord" Id="" Type="2" />
+<SAINT Name="Martyr Eusignios of Antioch (+ 362)" Id="4380" Type="1" />
+<SAINT Name="Hieromartyr Antherus (+ 236) and Fabian (+ 250), the Popes of Rome" Id="" Type="0" />
+<SAINT Name="Martyrs Cantidius, Cantidianus, and Sibella in Egypt" Id="" Type="0" />
+<SAINT Name="Martyrs Pontius the Roman at Cimella in France (+c 257)" Id="4382" Type="0" />
+<SAINT Name="Righteous Nonna, mother of St Gregory the Theologion" Id="4383" Type="0" />
+<SAINT Name="St Euthimius, Patriarch of Constantinople" Id="" Type="0" />
+<SAINT Name="New Martyrs Eudoxia, Daria, Daria, and Maria (+1919)" Id="" Type="0" />
+<SAINT Name="New Martyr Simeon, bishop of Ufa (+1921)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Prefete de la Transfiguration" Id="" Type="2"/>
+<SAINT Name="St Eusigne d'Antioche" Id="4380" Type="1" />
+<SAINT Name="Sts Candide et Candidien" Id="" Type="0" />
+<SAINT Name="Ste Nonne, Mère de St Grédoire le Théologien" Id="4383" Type="0" />
+<SAINT Name="St Soleb l'Egyptien" Id="" Type="0" />
+<SAINT Name="St Fabien, Pape de Rome" Id="" Type="0" />
+<SAINT Name="St Euthyme, Patriarche de Constantinople" Id="" Type="0" />
+<SAINT Name="St Eugène d'Aitolie" Id="" Type="0" />
+<SAINT Name="St Christos de Prévéza, Néomartyr" Id="" Type="0" />
+<SAINT Name="St Jean de Chozéba" Id="1038" Type="0" />
+<SAINT Name="St Oswald, Roi de Northumbrie et Martyr" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Предпразднство Преображения Господня" Id="" Type="2"/>
+<SAINT Name="Мч. Евсигния (362)" Id="4380" Type="1"/>
+<SAINT Name="Мцц. Евдокии, Дарии, Дарии и Марии (1919)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Симона, еп. Уфимского (1921)" Id="4914" Type="0"/>
+<SAINT Name="Сщмч. Иоанна диакона (1939)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Анфира (236) и Фавия (250), пап Римских" Id="" Type="0"/>
+<SAINT Name="Мч. Понтия Римлянина (ок. 257)" Id="4382" Type="0"/>
+<SAINT Name="Прав. Нонны, матери св. Григория Богослова (374)" Id="4383" Type="0"/>
+<SAINT Name="Прп. Иова Ущельского (1628)" Id="1038" Type="0"/>
+<SAINT Name="Мчч. Кантидия, Кантидиана и Сивела, в Египте" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,17 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Easter" />
+<SCRIPTURE Type="matins" Reading="Jn_20:1-10" Pericope="63"/>
+<SCRIPTURE Type="apostol" Reading="Acts_11:19-26, 29-30" Pericope="28"/>
+<SCRIPTURE Type="gospel" Reading="Jn_4:5-42" Pericope="12"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="5th Sunday after Pascha. Sunday of the Samaritan Woman" Id="" Type="0" Tone="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Le 5-me dimanche après Pâques, de la Samaritaine" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Неделя 5-я по Пасхе, о самаряныне" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+</DAY>

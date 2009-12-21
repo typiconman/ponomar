@@ -1,0 +1,17 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="matins" Reading="Jn_20:19-31" Pericope="65"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_3:9-17" Pericope="128"/>
+<SCRIPTURE Type="gospel" Reading="Mt_14:22-34" Pericope="59"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="9th Sunday after Pentecost" Id="" Type="0" Tone="8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Le 9-me dimanche après le Pentecôte" Id="" Type="0" Tone="8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Неделя 9-я по Пятидесятнице" Id="" Type="0" Tone="8"/>
+</LANGUAGE>
+</DAY>

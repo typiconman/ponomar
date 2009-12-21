@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Rom_9:6-19" Pericope="101"/>
+<SCRIPTURE Type="gospel" Reading="Mt_10:32-36, 11:1" Pericope="38"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Friday of the 3rd week after Pentecost" Id="" Type="0" Tone="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Vendredi de la 3-me semaine après le Pentecôte" Id="" Type="0" Tone="1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Пятница 3-й седмицы по Пятидесятнице" Id="" Type="0" Tone="1"/>
+</LANGUAGE>
+</DAY>

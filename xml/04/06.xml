@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Hierarch Eutychius, Patriarch of Constantinople (+582)" Id="795" Type="1" />
+<SAINT Name="Holy Equal-to-the-Apostles Methodius, Archbishop of Moravia, Enlightener of the Slavs (+885)" Id="1525" Type="4" />
+<SAINT Name="Martyrs Jeremiah and the Priest Archilius (3rd C)" Id="799" Type="0" />
+<SAINT Name="Holy 120 Martyrs of Persia (+ 344-347)" Id="" Type="0" />
+<SAINT Name="Venerable Platonida (Platonis) of Nisibis, Syria (+308)" Id="" Type="0" />
+<SAINT Name="Venerable Gregory of Mt Athos" Id="" Type="0" />
+<SAINT Name="Venerable Paul of the Studion Monastery" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Priest John (+1934)" Id="4819" Type="0" />
+<SAINT Name="New Hieromartyr Priest James (+1943)" Id="4807" Type="0" />
+<SAINT Name="Venerable Sebastian the Confessor, of Karaganda (+1966)" Id="4896" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Eutyche, Patriarche de Constantinople" Id="795" Type="1" />
+<SAINT Name="Sts 120 Martyrs en Perse" Id="" Type="0" />
+<SAINT Name="Ste Platonide" Id="" Type="0" />
+<SAINT Name="Sts 2 Martyrs d'Ascalon" Id="" Type="0" />
+<SAINT Name="St Grégoire le Sinaïte" Id="" Type="0" />
+<SAINT Name="St Grégoire de la Grande Lavra" Id="" Type="0" />
+<SAINT Name="Sts Manuel, Théodore, Georges et Michel de Samothrace" Id="" Type="0" />
+<SAINT Name="St. Méthode, Apôtre des Slaves" Id="1525" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Свт. Евтихия, архиеп. Константинопольского (582)" Id="795" Type="1"/>
+<SAINT Name="Свт. Мефодия, архиеп. Моравского (885)." Id="1525" Type="4"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1934)" Id="4819" Type="0"/>
+<SAINT Name="Cщмч. Иакова пресвитера (1943)" Id="4807" Type="0"/>
+<SAINT Name="Прп. Севастиана Карагандинского, исп. (1966)" Id="4896" Type="0"/>
+<SAINT Name="Мчч. Иеремия и Архилия иерея (III)" Id="799" Type="0"/>
+<SAINT Name="Прп. Платониды Сирской (308)" Id="798" Type="0"/>
+<SAINT Name="Мчч. 120-ти Персидских (344-347)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

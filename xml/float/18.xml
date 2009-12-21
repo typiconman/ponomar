@@ -1,0 +1,15 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="apostol" Reading="I Tim_3:14-4:5" Pericope="284" Note="for Saturday before Theophany"/>
+<SCRIPTURE Type="gospel" Reading="Mt_3:1-11" Pericope="5" Note="for Saturday before Theophany"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Saturday before Theophany" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Samedi avant la Theophanie" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Суббота пред Богоявлением" Id="" Type="0" />
+</LANGUAGE>
+</DAY>

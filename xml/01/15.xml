@@ -1,0 +1,28 @@
+<DAY>
+<LANGUAGE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Paul of Thebes (+341)" Id="221" Type="2" />
+<SAINT Name="Venerable John Calabytes the Hut-Dweller (5th C)" Id="985" Type="2" />
+<SAINT Name="Venerable Prochorus, Abbot in the Vranski desert on the river Pshina in Bulgaria (10th C)" Id="225" Type="0" />
+<SAINT Name="Venerable Gabriel, founder of Lesnov Monastery in Bulgaria (11th C)" Id="226" Type="0" />
+<SAINT Name="Venerable Pansophius the Martyr of Alexandria(+c. 249-251)" Id="224" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Paul de Thèbes" Id="221" Type="2" />
+<SAINT Name="St Jean le Calybite" Id="985" Type="2" />
+<SAINT Name="St Pansophios d'Alexandrie" Id="" Type="0" />
+<SAINT Name="St Gabriel, Fondateur du Monastère de Lesnov en Bulgarie" Id="226" Type="0" />
+<SAINT Name="St Prochore, fonadateur du Monastère de Vranski en Bulgarie" Id="225" Type="0" />
+<SAINT Name="St Maur, disciple de St BenoÃÂ®t" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Павла Фивейского (341)" Id="221" Type="2"/>
+<SAINT Name="Прп. Иоанна Кущника (V)" Id="985" Type="2"/>
+<SAINT Name="Сщмч. Михаила пресвитера (1942)" Id="" Type="0"/>
+<SAINT Name="Прмч. Пансофия (249-251)" Id="224" Type="0"/>
+<SAINT Name="Прп. Прохора Пшинского (X)" Id="225" Type="0"/>
+<SAINT Name="Прп. Гавриила Лесновского (XI)" Id="226" Type="0"/>
+<SAINT Name="Свт. Герасима, Патриарха Александрийского (1714)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

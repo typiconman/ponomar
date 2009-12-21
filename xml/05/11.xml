@@ -1,0 +1,38 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Equal-to-the-Apostles Methodius (+885) and Cyrill (+869), teachers of the Slavs" Id="1525" Type="5" Cmd="nday != 50"/>
+<SAINT Name="Hieromartyr Mocius the Presbyter of Amphipolis in Macedonia (+ c.295)" Id="1037" Type="1" />
+<SAINT Name="Commemoration of the Founding of Constantinople (324)" Id="" Type="0" />
+<SAINT Name="Saint Nicodemus, Archbishop of Serbia (+1325)" Id="1041" Type="0" />
+<SAINT Name="Venerable Sophronius the Recluse of the Kiev Far Caves (13th)" Id="2045" Type="0" />
+<SAINT Name="New Martyrs Dioscorus and Argirus" Id="" Type="0" />
+<SAINT Name="Hieromartyr Joseph, First Metropolitan of Astrakhan (+1672)" Id="1054" Type="0" />
+<SAINT Name="Icon of the Mother of God of Constantinople" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Alexander, Archbishop of Khar'kov (+1940)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Martyr Mocius" Id="1037" Type="1" />
+<SAINT Name="St Dioscoride" Id="" Type="0" />
+<SAINT Name="St Argyros de Thessalonique" Id="" Type="0" />
+<SAINT Name="Sts Cyrille et Méthode, Illuminateurs des Slaves" Id="1525" Type="5" Cmd="nday != 50" />
+<SAINT Name="Mémoire de la Dedicace ou Inauguration de la Ville de Constantinople" Id="" Type="0" />
+<SAINT Name="St Joseph, Archevêque d'Astrakhane" Id="1054" Type="0" />
+<SAINT Name="St Sophrone, reclus des Grottes de Kiev" Id="2045" Type="0" />
+<SAINT Name="St Nicodème, Archevêque de Petch" Id="1041" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Мокия (ок. 295)" Id="1037" Type="1"/>
+<SAINT Name="Равноапп. Мефодия (885) и Кирилла (869), учителей Словенских" Id="1525" Type="5" Cmd="nday != 50"/>
+<SAINT Name="Равноапостольного Ростислава, князя Великоморавского (870)" Id="6812" Type="1"/>
+<SAINT Name="Сщмч. Михаила пресвитера (1920)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Александра, архиеп. Харьковского (1940)" Id="" Type="0"/>
+<SAINT Name="Прп. Софрония, затворника Печерского (XIII)" Id="2045" Type="0"/>
+<SAINT Name="Свт. Никодима, архиеп. Сербского (1325)" Id="1041" Type="0"/>
+<SAINT Name="Сщмч. Иосифа, митр. Астраханского (1672)" Id="1054" Type="0"/>
+</LANGUAGE>
+</DAY>

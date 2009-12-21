@@ -1,0 +1,37 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Prophet Obadiah (9th C BC)" Id="2559" Type="1" />
+<SAINT Name="Martyr Varlaam of Caesarea in Cappadocia (+c.304)" Id="2560" Type="1" />
+<SAINT Name="Venerable Varlaam and Joasaph, Prince of India, and King Abennar, his father (4th C)" Id="2561" Type="3" />
+<SAINT Name="Venerable Varlaam, the first Abbot of the Caves of Kiev (+ 1065)" Id="355" Type="0" />
+<SAINT Name="Martyr Aza of Isauria and with him 150 Soldiers and others (+284-305)" Id="2564" Type="0" />
+<SAINT Name="Martyr Iliodorus of Pomphilia" Id="2565" Type="0" />
+<SAINT Name="Venerable Hilarion of Georgia, the Wonderworker" Id="2566" Type="0" />
+<SAINT Name="Holy Hierarch Philaret, Metropolitan of Moscow and Kolomna (+ 1867)" Id="2284" Type="4" />
+<SAINT Name="New Hieromartyr Porfiri, bishop of Simferopol and those with him (+1937)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Prophète Abdias" Id="2559" Type="1" />
+<SAINT Name="St Barlaam d'Antioche" Id="2560" Type="1" />
+<SAINT Name="St Azès le Thaumaturge" Id="2564" Type="0" />
+<SAINT Name="St Agapios" Id="" Type="0" />
+<SAINT Name="St Héliodore" Id="" Type="0" />
+<SAINT Name="St Pancharios" Id="" Type="0" />
+<SAINT Name="St Hilarion d'Ibérie" Id="2566" Type="0" />
+<SAINT Name="St Barlaam des Grottes de Kiev" Id="355" Type="0" />
+<SAINT Name="St Philarète, Métropolite de Moscou" Id="2284" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прор. Авдия (из 12-ти) (IX до Р.Х.)" Id="2559" Type="1"/>
+<SAINT Name="Мч. Варлаама (ок. 304)" Id="2560" Type="1"/>
+<SAINT Name="Прпп. Варлаама и Иоасафа, царевича Индийского, и отца его Авенира царя (IV)" Id="2561" Type="3"/>
+<SAINT Name="Свт. Филарета, митр. Московского (1867)" Id="2284" Type="4"/>
+<SAINT Name="Сщмчч. Порфирия, еп. Симферопольского, Сергия, Михаила, Александра, Иоанна, Константина, Александра, Игнатия, Симеона, Иоанна, Иоанна, Димитрия, Иакова, Иакова пресвитеров, прмчч. Иоасафа, Геннадия, Петра, Григория, Вениамина, Герасима, Михаила, мчч. Валентина, Петра, Леонида, Тимофея (1937)" Id="" Type="0"/>
+<SAINT Name="Мч. Илиодора (ок. 273)" Id="2565" Type="0"/>
+<SAINT Name="Мч. Азы  и с ним 150-ти воинов (284-305)" Id="2564" Type="0"/>
+<SAINT Name="Прп. Илариона чудотворца, Грузинского (875)" Id="2566" Type="0"/>
+<SAINT Name="Прп. Варлаама, игумена Печерского (1065)" Id="355" Type="0"/>
+<SAINT Name="Обретение мощей прмч. Адриана Пошехонского, Ярославского (1625)" Id="76" Type="0"/>
+<SAINT Name="Иконы Божией матери, именуемой &quot;В скорбех и печалех Утешение&quot; (1863)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

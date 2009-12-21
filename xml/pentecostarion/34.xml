@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Easter" />
+<SCRIPTURE Type="apostol" Reading="Acts_15:5-34" Pericope="36"/>
+<SCRIPTURE Type="gospel" Reading="Jn_10:17-28" Pericope="37"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Friday of the 5th week after Pascha" Id="" Type="0" Tone="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Vendredi de la 5-me semaine après Pâques" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Пятница 5-й седмицы по Пасхе" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+</DAY>

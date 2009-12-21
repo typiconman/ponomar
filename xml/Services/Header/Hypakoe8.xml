@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Hypakoe (Tone 8)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Hypakoë (Tone 8)"/>
+</LANGUAGE>
+</COMMONPRAYER>

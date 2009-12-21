@@ -1,0 +1,35 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="2" Cmd="dow == 0" />
+<SAINT Name="8" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Boniface at Tarsus in Cilicia and the Righteous Aglae (Aglaida) of Rome (+ 290)" Id="437" Type="1" />
+<SAINT Name="Martyrs Elias, Probos and Ares in Cilicia (+ 308)" Id="3147" Type="0" />
+<SAINT Name="Martyr Polyeuctus of Caesarea in Cappadocia and Timothy" Id="" Type="0" />
+<SAINT Name="Saint Boniface the Merciful, Bishop of Florence (6th C)" Id="436" Type="0" />
+<SAINT Name="Saint Gregory, Bishop of Omiritia (+ c. 552)" Id="3149" Type="0" />
+<SAINT Name="Martyr Tryphon the Presbyter" Id="" Type="0" />
+<SAINT Name="Martyr Nemesius" Id="" Type="0" />
+<SAINT Name="Righteous Susanna the Chaste" Id="" Type="0" />
+<SAINT Name="Venerable Ilya of Murom, Wonderworker of the Caves of Kiev (+ c. 1188)" Id="942" Type="0" />
+<SAINT Name="Hieromartyr Capiton, Bishop of Cherson" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Boniface et Aglaïs la Romaine" Id="437" Type="1" />
+<SAINT Name="Sts Elie, Probos et Arès" Id="3147" Type="0" />
+<SAINT Name="Sts Timothée et Polyeucte" Id="" Type="0" />
+<SAINT Name="Sts Eutychès, Thessalonique et leurs 270 compagnons" Id="" Type="0" />
+<SAINT Name="St Tryphon" Id="" Type="0" />
+<SAINT Name="St Grégentios, Evêque de Safar" Id="" Type="0" />
+<SAINT Name="St Elie de Mourom" Id="942" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мч. Вонифатия  (290)" Id="437" Type="1"/>
+<SAINT Name="Мчч. Илии, Прова и Ариса, египтян (308)" Id="3147" Type="0"/>
+<SAINT Name="Мчч. Полиевкта и Тимофея диакона (IV)" Id="" Type="0"/>
+<SAINT Name="Свт. Григория, еп. Омиритского (ок. 552)" Id="3149" Type="0"/>
+<SAINT Name="Свт. Вонифатия Милостивого, еп. Ферентийского (VI)" Id="436" Type="0"/>
+<SAINT Name="Прп. Илии Муромца, Печерского (1188)" Id="942" Type="0"/>
+</LANGUAGE>
+</DAY>

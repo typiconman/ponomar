@@ -1,0 +1,36 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="vespers" Reading="Ex_3:1-8" Cmd="nday &gt; -7 &amp;&amp; (dow == 5 || dow == 6)" />
+<SCRIPTURE Type="vespers" Reading="Prov_8:22-30" Cmd="nday &gt; -7 &amp;&amp; (dow == 5 || dow == 6)" />
+<SCRIPTURE Type="vespers" Reading="Gen_28:10-17" Cmd="nday &lt; 0" />
+<SCRIPTURE Type="vespers" Reading="Ezek_43:27-44:4" Cmd="nday &lt; 0" />
+<SCRIPTURE Type="vespers" Reading="Prov_9:1-11" Cmd="nday &lt; 0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Forefeast of the Annunciation" Id="" Type="0" />
+<SAINT Name="Venerable Zachariah the Recluse of Egypt" Id="700" Type="1" />
+<SAINT Name="St. Artemon (Menignus) the Bishop of Seleucia (1st-2nd C)" Id="6673" Type="1" />
+<SAINT Name="St. James the Confessor the Bishop of Catania (8th-9th C)" Id="685" Type="0" />
+<SAINT Name="Venerable Zachariah the Ascetic of the Caves of Kiev (13th-14th C)" Id="822" Type="0" />
+<SAINT Name="Holy Martyrs Stephen and Peter of Kazan (+1552)" Id="703" Type="0" />
+<SAINT Name="Hieromartyr Parthenius, Patriarch of Constantinople" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Artémon, Evêque de Seleucie" Id="6673" Type="1" />
+<SAINT Name="St Zacharie de Scété" Id="700" Type="1" />
+<SAINT Name="St Martin de Thèbes" Id="" Type="0" />
+<SAINT Name="St Parthénios, Patriarche de Contantinople" Id="" Type="0" />
+<SAINT Name="St Etienne et Pierre de Kazan" Id="703" Type="0" />
+<SAINT Name="St. Zacharie le JeÃÂ»neur des Grottes de Kiev" Id="822" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Предпразднство Благовещения" Id="" Type="0" />
+<SAINT Name="Прп. Захарии монаха." Id="700" Type="1"/>
+<SAINT Name="Свт. Артемия (Артемона) еп. Солунского (Селевкийского) (I-II)" Id="6673" Type="1" />
+<SAINT Name="Сщмч. Владимира пресвитера (1920)" Id="" Type="0"/>
+<SAINT Name="Прп. Иакова исп., еп (VIII-IX)" Id="685" Type="0"/>
+<SAINT Name="Прп. Захарии, постника Печерского (XIII-XIV)" Id="822" Type="0"/>
+<SAINT Name="Мчч. Стефана и Петра Казанских (1552)" Id="703" Type="0"/>
+<SAINT Name="Иконы Божией Матери, именуемой &quot;Тучная Гора&quot; (XVII)" Id="706" Type="0"/>
+</LANGUAGE>
+</DAY>

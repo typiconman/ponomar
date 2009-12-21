@@ -1,0 +1,11 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="More honourable than the cherubim and beyond compare more glorious than the seraphim; who without corruption gavest birth to God the Word, the very Theotokos, thee do we magnify."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Toi plus vénérable que les Chérubins,
+et incomparablement plus glorieuse que les Séraphins,
+qui sans tache enfantas Dieu le Verbe,
+toi véritablement la Mère de Dieu, nous t'exaltons."/>
+</LANGUAGE>
+</COMMONPRAYER>

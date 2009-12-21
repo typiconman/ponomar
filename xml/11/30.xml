@@ -1,0 +1,21 @@
+<DAY>
+<LANGUAGE>
+<SCIRPTURE Type="matins" Reading="Mt_4:18-23" Pericope="9" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostle"/>
+<SCRIPTURE Type="gospel" Reading="Jn_1:35-51" Pericope="4" Note="for the Apostle"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy and All-priased Apostle Andrew the First-Called (+62)" Id="186" Type="4" />
+<SAINT Name="Saint Frumentios, Archbishop of Abyssinia (+c.380)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St André, Apôtre, le 1er appelé" Id="186" Type="4" />
+<SAINT Name="St Frumence, 1er Evêque d'Abyssinie" Id="" Type="0" />
+<SAINT Name="St Tugdual, Evêque de Tréguier" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Апостола Андрея Первозванного (62)" Id="186" Type="4"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1937)" Id="" Type="0"/>
+<SAINT Name="Свт. Фрументия, архиеп. Индийского (Ефиопского) (ок. 380)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

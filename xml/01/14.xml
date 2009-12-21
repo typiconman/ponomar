@@ -1,0 +1,31 @@
+<DAY>
+<LANGUAGE>
+<FAST Num="-2" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Apodosis of the Theophany" Id="" Type="1" />
+<SAINT Name="Holy Monastic Fathers slain in Sinai and Raithu (4th-5th C): Isaiah, Savva, Moses and his disciple Moses, Jeremiah, Paul, Adam, Sergius, Domnus, Proclus, Hipatius, Isaac, Macarius, Mark, Eusibius, Benjamin, Elijah, and others" Id="215" Type="1" />
+<SAINT Name="Saint Nina, Equal-to-the-Apostles and Enlightener of Georgia (+ 335)" Id="2630" Type="4" />
+<SAINT Name="Venerable Theodoulos, son of the Venerable Nilus of Sinai (5th C)" Id="215" Type="0" />
+<SAINT Name="Venerable Stephen, Abbot of Chenolaklos Monastery near Chalcedon (8th C)" Id="219" Type="0" />
+<SAINT Name="Venerable Joseph the Analytic of Raithu (4th C)" Id="217" Type="0" />
+<SAINT Name="Martyr Agnia" Id="" Type="0" />
+<SAINT Name="Holy Hieromartyr Barbasceminus, Bishop of Seleucia" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Clôture de la Fête de la Théophanie" Id="" Type="1" />
+<SAINT Name="Sts Pères massacrés au mont SinaÃÂ¯" Id="215" Type="1" />
+<SAINT Name="St Théodule, fils de St nil le SinaÃÂ¯te" Id="218" Type="0" />
+<SAINT Name="Ste Agnès" Id="" Type="0" />
+<SAINT Name="St Etienne, fondateur du Monastère de Chénolakkos" Id="" Type="0" />
+<SAINT Name="St Nina, égale aux Apôtres, Illuminatrice de la Géorgie" Id="2630" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Отдание праздника Богоявления." Id="" Type="1"/>
+<SAINT Name="Прпп. Отец, в Синае и Раифе избиенных: Исаии, Саввы, Моисея и ученика его Моисея, Иеремии, Павла, Адама, Сергия, Домна, Прокла, Ипатия, Исаака, Макария, Марка, Вениамина, Евсевия, Илии и иных с ними (IV-V)" Id="215" Type="1"/>
+<SAINT Name="Равноап. Нины, просветительницы Грузии (335). Прп. Иоанна исп (1961)" Id="2630" Type="4"/>
+<SAINT Name="Прп. Иосифа Аналитина Раифского (IV)" Id="217" Type="0"/>
+<SAINT Name="Прп. Феодула Синайского (V)" Id="218" Type="0"/>
+<SAINT Name="Прп. Стефана, основателя обители Хиннолакковой (VIII)" Id="219" Type="0"/>
+</LANGUAGE>
+</DAY>

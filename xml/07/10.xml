@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Anthony of the Kievan Caves, Founder of Monasticism in Russia (+ 1073)" Id="218" Type="4" />
+<SAINT Name="Holy 45 Martyrs at Nicopolis in Armenia (+ ca 319): Leontius, Mauricius, Daniel, Anthony, Alexander, Meneus, Janicita, Sisinius, Biriladus, and others" Id="4207" Type="1" />
+<SAINT Name="Martyrs Bianor and Silvanus of Pisidia (4th C)" Id="" Type="0" />
+<SAINT Name="Martyr Apollonias of Sardis (3rd C)" Id="4210" Type="0" />
+<SAINT Name="Venerable Siluan, Schemamonk of the Caves of Kiev (13th-14th C)" Id="1988" Type="0" />
+<SAINT Name="Saint Basil, Bishop of Ryazan" Id="" Type="0" />
+<SAINT Name="Placing of the Venerable Robe of Our Lord Jesus Christ at Moscow (1625)" Id="4206" Type="4" />
+<SAINT Name="Icon of the Mother of God of Konevets" Id="4212" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts 45 Martyrs de Nicopolis, en Arménie" Id="4207" Type="1" />
+<SAINT Name="Sts Bianor et Silvain" Id="" Type="0" />
+<SAINT Name="St Apollonios de Sardes" Id="4210" Type="0" />
+<SAINT Name="Sts Pères Martyrs du Désert de Nitrie" Id="" Type="0" />
+<SAINT Name="Sts Parthénios et Euménios, rénovateur du Monastère de Koudouma en Crète" Id="" Type="0" />
+<SAINT Name="St Joseph de Damas" Id="" Type="0" />
+<SAINT Name="St Antoine, fondateur des Grottes de Kiev" Id="218" Type="4" />
+<SAINT Name="St Sylvain des Grottes de Kiev" Id="1988" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. 45-ти в Никополе Армянском: Леонтия, Маврикия, Даниила, Антония, Александра, Ианикита, Сисиния, Менеи, Вирилада и прочих (ок. 319)" Id="4207" Type="1"/>
+<SAINT Name="Положение честной ризы Господа нашего Иисуса Христа в Москве (1625)" Id="4206" Type="4"/>
+<SAINT Name="Прп. Антония Печерского, Киевского, начальника всех русских монахов (1073)" Id="218" Type="4"/>
+<SAINT Name="Сщмчч. Петра и Стефана пресвитеров, Георгия и Нестора диаконов (1918)" Id="" Type="0"/>
+<SAINT Name="Мч. Аполлония (III)" Id="4210" Type="0"/>
+<SAINT Name="Мчч. Вианора и Силуана (IV)" Id="4211" Type="0"/>
+<SAINT Name="Прпп. пустынников египетских, огнем и дымом уморенных (ок. 398)" Id="" Type="0"/>
+<SAINT Name="Прп. Силуана, схимника Печерского (XIII-XIV)" Id="1988" Type="0"/>
+<SAINT Name="Прпп. Евмения (1920) и Парфения (1905) Гортинских" Id="" Type="0"/>
+<SAINT Name="Коневской иконы Божией Матери" Id="4212" Type="0"/>
+</LANGUAGE>
+</DAY>

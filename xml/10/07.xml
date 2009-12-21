@@ -1,0 +1,37 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyrs Sergius and Baccus in Syria (290-303)" Id="1685" Type="2" />
+<SAINT Name="Martyrs Julian the Presbyter and Caesarius the Deacon, at Terracina (1st C)" Id="1688" Type="0" />
+<SAINT Name="Martyr Polychronios the Presbyter (4th C)" Id="1687" Type="0" />
+<SAINT Name="Martyr Pelagia" Id="2643" Type="0" />
+<SAINT Name="St Mark, Pope of Rome" Id="" Type="0" />
+<SAINT Name="St Eumenius, Bishop of Alexandria" Id="" Type="0" />
+<SAINT Name="Venerable Mark of Egypt" Id="" Type="0" />
+<SAINT Name="Venerable Sergius of Nurom" Id="1971" Type="0" />
+<SAINT Name="Venerable Sergius the Obedient of the Caves of Kiev (13th C)" Id="6832" Type="0" />
+<SAINT Name="Finding of the relics of Venerable Martinian, Abbot of Belozersk (1514)" Id="200" Type="0" />
+<SAINT Name="Saint Jonah, Wonderworker of Hankow and Manchuria (+1925)" Id="6946" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Serge et Baccus de Syrie" Id="1685" Type="2" />
+<SAINT Name="Sts Julien et Césaire et leurs compagnons Eusèbe et Félix" Id="1688" Type="0" />
+<SAINT Name="St Léonce le Consulaire" Id="" Type="0" />
+<SAINT Name="St Polychronios" Id="1687" Type="0" />
+<SAINT Name="St Jean l'Ermite et 98 Pères en Crète" Id="" Type="0" />
+<SAINT Name="St Serge de Nourma" Id="1971" Type="0" />
+<SAINT Name="St Serge l'Obéissant des Grottes de Kiev" Id="6832" Type="0" />
+<SAINT Name="St Martinien, Higoumène de Byelozersk (Le Lac Blanc) (invention des Reliques)" Id="200" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Сергия и Вакха (290-303)" Id="1685" Type="2"/>
+<SAINT Name="Сщмч. Николая персвитера (1942)" Id="" Type="0"/>
+<SAINT Name="Мчч. Иулиана пресвитера и Кесария диакона (I)" Id="1688" Type="0"/>
+<SAINT Name="Мц. Пелагии Тарсийской (290)" Id="2643" Type="0"/>
+<SAINT Name="Мч. Полихрония пресвитера (IV)" Id="1687" Type="0"/>
+<SAINT Name="Прп. Сергия Послушливого, Печерского (ок. XIII)" Id="6832" Type="0"/>
+<SAINT Name="Прп. Сергия Нуромского (Вологодского) (1412)" Id="1971" Type="0"/>
+<SAINT Name="Обретение мощей прп. Мартиниана Белоезерского (1514)" Id="200" Type="0"/>
+<SAINT Name="Святителя Ионы, Ханькоуского Чудотворца (РПЦЗ)" Id="6946" Type="4"/>
+<SAINT Name="Иконы Божией Матери Псково-Печерской, именуемой &quot;Умиление&quot; (1524, 1812)" Id="2997" Type="0"/>
+</LANGUAGE>
+</DAY>

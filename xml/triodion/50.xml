@@ -1,0 +1,18 @@
+<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Pericope="115" Reading="Rom_14:19-26" />
+<SCRIPTURE Type="gospel" Pericope="16" Reading="Mt_6:1-13" />
+<SCRIPTURE Type="apostol" Pericope="213" Reading="Gal_5:28-6:2" Note="Venerable Fathers"/>
+<SCRIPTURE Type="gospel" Pericope="43" Reading="Mt_11:27-30" Note="Venerable Fathers"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Cheesefare Saturday; Commemoration of all the saints, who showed forth in asceticism" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Samedi de la commemoration de tous les saints" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Суббота сыропустная. Поминовение всех свв. отцев в монашестве подвизавшихся" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+</DAY>

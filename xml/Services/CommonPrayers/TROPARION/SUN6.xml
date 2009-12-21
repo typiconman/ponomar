@@ -1,0 +1,12 @@
+﻿<TROPARION>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Troparion in the Sixth Tone"/>
+<TEXT Value="
+The angelic powers were at Thy tomb; the guards became as dead men. Mary stood by Thy grave, seeking Thy most pure Body. Thou didst capture hell, not being tempted by it. Thou didst come to the Virgin, granting life. O Lord who didst rise from the dead: glory to Thee!"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Tropaire dans le siesième ton"/>
+<TEXT Value="
+Devant ton sépulcre les puissances des cieux, autant que les soldats, furent frappées d’effroi ; et Marie Madeleine se tenait près du tombeau, cherchant ton corps immaculé ; mais tu brisas l’Enfer sans te laisser vaincre par lui, tu rencontras la Vierge et nous donnas la vie : Ressuscité d’entre les morts, Seigneur, gloire à toi."/>
+</LANGUAGE>
+</TROPARION>

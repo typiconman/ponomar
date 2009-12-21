@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Gal_2:6-10" Pericope="201"/>
+<SCRIPTURE Type="gospel" Reading="Mk_5:22-24, 35-6:1" Pericope="20"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Friday of the 14th week after Pentecost" Id="" Type="0" Tone="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Vendredi de la 14-me semaine après le Pentecôte" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Пятница 14-й седмицы по Пятидесятнице" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+</DAY>

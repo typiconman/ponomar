@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Greatmartyr Menas of Egypt (+ 304)" Id="2520" Type="1" />
+<SAINT Name="Martyr Victor at Damascus (2nd C) along with the Martyr Stephanida of Spain" Id="2521" Type="1" />
+<SAINT Name="Martyr Vincent of Spain (+ 304)" Id="2522" Type="1" />
+<SAINT Name="Venerable Theodore the Confessor, Abbot of the Studion (+ 826)" Id="2202" Type="1" />
+<SAINT Name="Repose of Blessed Maxim of Moscow, the Fool-for-Christ (+ 1434)" Id="1430" Type="2" />
+<SAINT Name="Repose of Saint Stefan Dechani of Serbia (+ c. 1336)" Id="6934" Type="0" />
+<SAINT Name="Venerable Martyrius, Abbot of Zelenetsk (+ 1603)" Id="1494" Type="0" />
+<SAINT Name="The Montreal Iveron Icon of the Mother of God" Id="6947" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Ménas de Kotyée" Id="2520" Type="1" />
+<SAINT Name="St Victor, Mégalomartyr" Id="2521" Type="1" />
+<SAINT Name="Sts Vincent et Valérien" Id="2522" Type="1" />
+<SAINT Name="Ste Stéphanide" Id="" Type="0" />
+<SAINT Name="St Théodore Studite" Id="2202" Type="1" />
+<SAINT Name="St Maxime de Moscou, Fol en Christ" Id="1430" Type="1" />
+<SAINT Name="St Etienne, fondateur du Monastère de Détchani en Serbie" Id="6934" Type="0" />
+<SAINT Name="St Martyrius de Zélénetsk (Pskov)" Id="1494" Type="0" />
+<SAINT Name="St Martin le Miséricordieux, Evêque de Tours" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Вмч. Мины (304)" Id="2520" Type="1"/>
+<SAINT Name="Мч. Виктора и мц. Стефаниды (II)" Id="2521" Type="1"/>
+<SAINT Name="Мч. Викентия (304)" Id="2522" Type="1"/>
+<SAINT Name="Прп. Феодора Студита, исп (826)" Id="2202" Type="1"/>
+<SAINT Name="Блж. Максима, Христа ради юродивого, Московского чудотворца (1434)" Id="1430" Type="2"/>
+<SAINT Name="Сщмч. Евгения пресвитера (1937)" Id="" Type="0"/>
+<SAINT Name="Мч. Стефана Дечанского (ок. 1336)" Id="6934" Type="0"/>
+<SAINT Name="Прп. Мартирия Зеленецкого (1603)" Id="1494" Type="0"/>
+<SAINT Name="Праздник Монреальской Иверской Мироточивой иконы (РПЦЗ)" Id="6947" Type="0"/>
+</LANGUAGE>
+</DAY>

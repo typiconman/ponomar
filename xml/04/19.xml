@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable John of the Ancient Caves in Palestine (8th C)" Id="887" Type="1" />
+<SAINT Name="Holy Hierarch George the Confessor, Bishop of Antioch in Pisidia (9th C)" Id="892" Type="0" />
+<SAINT Name="Holy Hierarch Tryphon, Patriarch of Constantinople (+933)" Id="893" Type="0" />
+<SAINT Name="Holy Martyrs Christopher, Theonas, and Anthony (+303)" Id="888" Type="0" />
+<SAINT Name="Venerable Nicephorus the Abbot of Catabad" Id="889" Type="0" />
+<SAINT Name="Hieromartyr Paphnutius, Bishop of Jerusalem (3rd C)" Id="891" Type="0" />
+<SAINT Name="Venerable Simeon the Barefooted" Id="" Type="0" />
+<SAINT Name="Venerable Martyr Agathangelus of Esphigmenou on Mt Athos (+1818)" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God of Mozdok" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Phaphnuce de Jérusalem" Id="891" Type="0" />
+<SAINT Name="Sts Théodore, Philippa, Socrate et Denys de Perge, en Pamphylie" Id="" Type="0" />
+<SAINT Name="St Georges le Confesseur, Evêque d'Antioche en Pisidie" Id="892" Type="0" />
+<SAINT Name="St Tryphon, Patriarche de Constantionople" Id="893" Type="0" />
+<SAINT Name="St Syméon, higoumène de Philothéou et fondateur du Monastère du Mont Flamourion" Id="" Type="0" />
+<SAINT Name="St Agathange d'Esphigménou" Id="" Type="0" />
+<SAINT Name="St Martyr Vincent de Collioure" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Иоанна Ветхопещерника (VIII)" Id="887" Type="1"/>
+<SAINT Name="Блж. Матроны Московской (1952)." Id="4629" Type="4"/>
+<SAINT Name="Свт. Виктора исп., еп. Глазовского (1934)" Id="4781" Type="0"/>
+<SAINT Name="Мчч. Феоны, Христофора и Антонина (303)" Id="888" Type="0"/>
+<SAINT Name="Свт. Георгия исп., еп. Антиохии Писидийской (IX)" Id="892" Type="0"/>
+<SAINT Name="Свт. Трифона, патриарха Константинопольского (933)" Id="893" Type="0"/>
+<SAINT Name="Сщмч. Пафнутия, еп. Иерусалимского" Id="891" Type="0"/>
+<SAINT Name="Прп. Никифора игумена" Id="889" Type="0"/>
+</LANGUAGE>
+</DAY>

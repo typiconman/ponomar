@@ -1,0 +1,10 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Lenten Troparion"/>
+<TEXT Value="In the morning, hearken unto my voice, O my king and God."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Le troparion du Carême"/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+</COMMONPRAYER>

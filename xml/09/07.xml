@@ -1,0 +1,51 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="1" Cmd="dow == 0" />
+<SAINT Name="7" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Forefeast of the Nativity of the Theotokos" Id="" Type="2" />
+<SAINT Name="Martyr Sozon of Cilicia (+304)" Id="1470" Type="1" />
+<SAINT Name="St. John, Archbishop and Wonderworker of Novgorod (+1186)" Id="990" Type="3" />
+<SAINT Name="Martyr Eupsychius" Id="1476" Type="0" />
+<SAINT Name="Apostles of the 70: Euodius and Onisiphorus (+66)" Id="1474" Type="0" />
+<SAINT Name="Venerable Luke" Id="1477" Type="0" />
+<SAINT Name="Righteous Judith" Id="" Type="0" />
+<SAINT Name="Venerable Clodius the Confessor" Id="" Type="0" />
+<SAINT Name="Martyr Macarius, Archimandrite of Kanev and Pereyaslavl (+1678)" Id="1405" Type="1" />
+<SAINT Name="New Hieromartyr John Maslovsky (+1921)" Id="" Type="0" />
+<SAINT Name="Venerable Macarius of Optina (+1860)" Id="4640" Type="0" />
+<SAINT Name="New Hieromartyr Eugene, Metropolitan of Nizhniy Novgorod (+1937)" Id="4802" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Prefete de la Nativite de la Genetrice de Dieu" Id="" Type="2"/>
+<SAINT Name="St Sozon" Id="1470" Type="1" />
+<SAINT Name="Sts Evodus et Onésiophore, Apôtres" Id="1474" Type="0" />
+<SAINT Name="St Eupsychios" Id="1476" Type="0" />
+<SAINT Name="St Pierre le Pieux, Higoumène" Id="" Type="0" />
+<SAINT Name="St Luc de Lycaonie" Id="1477" Type="0" />
+<SAINT Name="St Jean, Archevêque de Novgorod" Id="990" Type="3" />
+<SAINT Name="St Macaire, Archimandrite de Kanev" Id="1405" Type="1" />
+<SAINT Name="Ste Reine" Id="" Type="0" />
+<SAINT Name="Ste Grimonie de Soissons" Id="" Type="0" />
+<SAINT Name="St Euvert, Evêque d'Orléans" Id="" Type="0" />
+<SAINT Name="St Augustal, Evêque d'Arles" Id="" Type="0" />
+<SAINT Name="St Cloud, Fondateur et Higoumène du Monastère de Nogent-sur-Seine" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Предпразднство Рождества Пресвятой Богородицы" Id="" Type="2"/>
+<SAINT Name="Мч. Созонта (ок. 304)" Id="1470" Type="1"/>
+<SAINT Name="Свт. Иоанна, архиеп. Новгородского (1186)" Id="990" Type="3"/>
+<SAINT Name="Прмч. Макария Каневского, архим. Овручского, Переяславского (1678)" Id="1405" Type="1"/>
+<SAINT Name="Прп. Макария Оптинского (1860)" Id="4640" Type="0"/>
+<SAINT Name="Сщмчч. Петра и Михаила пресвитеров, Александра диакона (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Евгения, митр. Нижегородского, и с ним Стефана пресвитера и прмчч. Евгения, Николая и Пахомия (1937)" Id="4802" Type="0"/>
+<SAINT Name="Сщмч. Григория, Василия пресвитеров, прмч. Льва (1937)" Id="4796" Type="0"/>
+<SAINT Name="Апп. от 70-ти Евода (66) и Онисифора (после 67)" Id="1474" Type="0"/>
+<SAINT Name="Мч. Евпсихия (II)" Id="1476" Type="0"/>
+<SAINT Name="Прп. Луки (после 975)" Id="1477" Type="0"/>
+<SAINT Name="Прпп. Александра Пересвета и Андрея Осляби (1380)" Id="" Type="0"/>
+<SAINT Name="Прп. Серапиона Спасоелезаровского,  Псковского (1480)" Id="1965" Type="0"/>
+<SAINT Name="Собор новомучеников и исповедников Казахстанских" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

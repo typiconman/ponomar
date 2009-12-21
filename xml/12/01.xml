@@ -1,0 +1,21 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Prophet Naum (7th C BC)" Id="3047" Type="1" />
+<SAINT Name="Martyr Ananias the Persian" Id="" Type="0" />
+<SAINT Name="Righteous Philaret the Merciful of Amnia in Asia Minor (+792)" Id="3048" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Prophète Nahum" Id="3047" Type="1" />
+<SAINT Name="St Antoine le Jeune" Id="" Type="0" />
+<SAINT Name="St Philarète le Miséricordieux" Id="3048" Type="0" />
+<SAINT Name="St Ananie (ou Ménas) le Persan" Id="" Type="0" />
+<SAINT Name="St Onésime, Ananie et Solochon, Evêque d'Ephèse" Id="" Type="0" />
+<SAINT Name="St Théoclite, Evêque de Lacédémone (Sparte)" Id="" Type="0" />
+<SAINT Name="St Eloi, Eveque de Noyon" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прор. Наума (VII до Р.Х.)" Id="3047" Type="1"/>
+<SAINT Name="Прав. Филарета Милостивого (792)" Id="3048" Type="0"/>
+<SAINT Name="Мч. Анании Персянина" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

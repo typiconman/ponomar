@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Pachomius the Great, Founder of Coenobitic Monasticism (+ c.348)" Id="1070" Type="2" />
+<SAINT Name="St. Isaiah the Bishop and Wonderworker of Rostov (+1090)" Id="" Type="3" />
+<SAINT Name="Blessed Crown Prince Demetrius of Uglich and Moscow (+1591)" Id="605" Type="3" />
+<SAINT Name="Venerable Euphrosynus the Abbot and Wonderworker of Pskov (+1481) and his disciple Serapion (+1480)" Id="747" Type="0" />
+<SAINT Name="Venerable Pachomius the Abbot and Siluan of Nerekhta (+1384)" Id="1072" Type="0" />
+<SAINT Name="St. Achilles the Bishop of Larissa (+ c.330)" Id="1074" Type="0" />
+<SAINT Name="Venerable Isaiah the Wonderworker of the Kiev Near Caves (+1115)" Id="1108" Type="0" />
+<SAINT Name="Icon of the Mother of God 'Tupicheskaya'" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Pacôme le Grand" Id="1070" Type="2" />
+<SAINT Name="St Achille, Evêque de Larissa" Id="1074" Type="0" />
+<SAINT Name="St Barbaros" Id="" Type="0" />
+<SAINT Name="St André l'Ermite" Id="" Type="0" />
+<SAINT Name="St Panigyrios le Thaumaturge à Chypre" Id="" Type="0" />
+<SAINT Name="St Isaie des Grottes de Kiev" Id="1108" Type="0" />
+<SAINT Name="St Euphrosynus de Pskov" Id="747" Type="0" />
+<SAINT Name="St Dimitri de Moscou" Id="605" Type="3" />
+<SAINT Name="St Isaie, Evêque de Rostov" Id="" Type="3" />
+<SAINT Name="Sts Martyrs cassius, Victorin, Maxime en Auvergne" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Пахомия Великого (ок. 348)" Id="1070" Type="2"/>
+<SAINT Name="Свт. Исаии, еп. Ростовского, чудотворца (1090)" Id="" Type="3"/>
+<SAINT Name="Блгв. царевича Димитрия, Угличского и Московского (1591)" Id="605" Type="3"/>
+<SAINT Name="Прп. Ахиллия, еп. Ларисийского (ок. 330)" Id="1074" Type="0"/>
+<SAINT Name="Прп. Исаии Печерского (1115)" Id="1108" Type="0"/>
+<SAINT Name="Прп. Пахомия Нерехтского (1384)" Id="1072" Type="0"/>
+<SAINT Name="Прпп. Евфросина (1481) и ученика его Серапиона (1480), Псковских" Id="747" Type="0"/>
+<SAINT Name="Мучеников, в долине Ферейдан (Иран) от персов пострадавших (XVII)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

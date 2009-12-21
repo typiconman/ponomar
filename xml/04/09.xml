@@ -1,0 +1,22 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Eupsychius of Caesarea in Cappadocia (+362)" Id="818" Type="1" />
+<SAINT Name="Holy Martyrs Bishop Desan, Presbyter Mariabus, Abdiesus, and 270 Others (+362-364)" Id="819" Type="0" />
+<SAINT Name="Monk Martyr Archimandrite Bademus (Vadim) of Persia (+376)" Id="820" Type="0" />
+<SAINT Name="Holy Hierarch Akakios, Bishop of Amida" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Maximus, Patriarch of Alexandria" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Eupsyque de Césarée" Id="818" Type="1" />
+<SAINT Name="Sts Badème l'Archimandrite et ses 7 disciples" Id="820" Type="0" />
+<SAINT Name="Sts Heliodore Evêque, Dausan, Marjab et leurs 270 compagnons à Bet-Zabde en Perse" Id="819" Type="0" />
+<SAINT Name="Sts Raphaél, Nicolas et Irène de Mytilène" Id="" Type="0" />
+<SAINT Name="St Marcel, Evêque de Die" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мч. Евпсихия (362)" Id="818" Type="1"/>
+<SAINT Name="Мч. Гавриила (1942)" Id="" Type="0"/>
+<SAINT Name="Мчч. Дисана еп., Мариава пресвитера, Авдиеса и прочих 270-ти (362-364)" Id="819" Type="0"/>
+<SAINT Name="Прмч. Вадима архимандрита и 7 учеников его (376)" Id="820" Type="0"/>
+</LANGUAGE>
+</DAY>

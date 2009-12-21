@@ -1,0 +1,49 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" />
+<SCRIPTURE Type="vespers" Reading="III Kings_8:22-23, 27-30" />
+<SCRIPTURE Type="vespers" Reading="Isa_61:10-11, 62:1-5" />
+<SCRIPTURE Type="matins" Reading="Mt_10:16-22" Pericope="36" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Rom_8:28-39" Pericope="99" Note="for the Royal Martyrs" />
+<SCRIPTURE Type="gospel" Reading="Jn_15:17-27, 16:1-2" Pericope="52" Note="for the Royal Martyrs" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Royal Passion-bearers Tsar Nicholas, Tsaritsa Alexandra, Crown Prince Aleksy, Grand Duchesses Olga, Tatiana, Maria, and Anastasia and those killed with them (+ 1918)" Id="4872" Type="4" />
+<SAINT Name="Saint Andrew, Archbishop of Crete (+c.712-726)" Id="181" Type="1" />
+<SAINT Name="Venerable Martha, Mother of Venerable Simeon of the Wonderous Mountian" Id="4154" Type="1" />
+<SAINT Name="Hieromartyr Theodore, Bishop of Cyrene in Libya (+310)" Id="4157" Type="0" />
+<SAINT Name="Martyrs Theodotus and Theodotia" Id="" Type="0" />
+<SAINT Name="Finding of the Relics of Venerable Euthymius of Suzdal" Id="743" Type="0" />
+<SAINT Name="Venerable Prince Andrew of Bogoliubovo (+1174)" Id="177" Type="0" />
+<SAINT Name="Venerable Tikhon, Basil, and Nikon of Solovki" Id="" Type="0" />
+<SAINT Name="Venerable Andrew Rublev, the Iconographer" Id="6422" Type="1" />
+<SAINT Name="New Venerable Martyr Nilus of Poltava (+1918)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St André l'Hymnographe, Archevêque de Crète" Id="181" Type="1" />
+<SAINT Name="St Tsar-Martyre Nicholas, Empresse Alexandra, Tsarevitch Alexei, Princesses Olga, Tatiana, Marie, et Anastasia et leurs compagnons (1918)" Id="4872" Type="4"/>
+<SAINT Name="St Théodore, Evêque de Cyrène et ses compagnons" Id="4157" Type="0" />
+<SAINT Name="Sts Cyprille, Aroa et Lucie" Id="" Type="0" />
+<SAINT Name="St Donat, Evêque de Libye" Id="" Type="0" />
+<SAINT Name="Ste Marthe, mère de St syméon Stylite du mont Admirable" Id="4154" Type="1" />
+<SAINT Name="St Michel Choniates, Métropolite d'Athènes" Id="" Type="0" />
+<SAINT Name="Ste Asclépias la Thaumaturge" Id="" Type="0" />
+<SAINT Name="St Théophile" Id="" Type="0" />
+<SAINT Name="St Mégine" Id="" Type="0" />
+<SAINT Name="St Théodote" Id="" Type="0" />
+<SAINT Name="St André le russe, Prince de Bogolioubov" Id="177" Type="0" />
+<SAINT Name="St André Roublev" Id="6422" Type="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Свт. Андрея, архиеп. Критского (740)" Id="181" Type="1"/>
+<SAINT Name="Прп. Марфы, матери прп. Симеона Дивногорца (551)" Id="4154" Type="1"/>
+<SAINT Name="Прп. Андрея Рублева, иконописца (XV)" Id="6422" Type="1"/>
+<SAINT Name="Страстотерпцев Императора Николая II, Императрицы Александры, царевича Алексия, великих княжен Ольги, Татианы, Марии, Анастасии и их слуг (1918)" Id="4872" Type="4"/>
+<SAINT Name="Сщмч. Димитрия пресвитера (после 1937)" Id="" Type="0"/>
+<SAINT Name="Мчч. Феодота и Феодотии (108)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Феодора, еп. Киринейского (310)" Id="4157" Type="0"/>
+<SAINT Name="Блгв. вел. кн. Андрея Боголюбского (1174)" Id="177" Type="0"/>
+<SAINT Name="Обретение мощей прп. Евфимия, Суздальского чудотворца (1507)" Id="743" Type="0"/>
+<SAINT Name="Галатской иконы Божией Матери" Id="4158" Type="0"/>
+</LANGUAGE>
+</DAY>

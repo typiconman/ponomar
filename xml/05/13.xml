@@ -1,0 +1,39 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Virginmartyr Glyceria at Heraclea with her Laodicius the prison guard (+ c.177)" Id="2445" Type="1" />
+<SAINT Name="Martyr Alexander of Rome (+ c.300)" Id="1058" Type="0" />
+<SAINT Name="Saint Pausicacus, Bishop of Synada (+ c.606)" Id="1059" Type="0" />
+<SAINT Name="Hieromartyr Alexander, Bishop of Tiberiada" Id="" Type="0" />
+<SAINT Name="St. Euthymius the New, Founder of the Iveron Monastery (+1028)" Id="6564" Type="0" />
+<SAINT Name="Venerable John, father of St. Euthymius" Id="" Type="0" />
+<SAINT Name="St. George the Confessor, with his wife Irene and children of Constantinople (9th C)" Id="1060" Type="0" />
+<SAINT Name="Venerable Gabriel the Iberian (Georgian)" Id="" Type="0" />
+<SAINT Name="Virginmartyr Glyceria of Novgorod (+1522)" Id="2446" Type="0" />
+<SAINT Name="Translation of the Relics of Hieromartyr Macarius, Archimandrite of Kanev (1688)" Id="1405" Type="0" />
+<SAINT Name="New Hieromartyrs Priests Basil, Alexander, and Christopher, Martyrs Macarius and Sergius (+1922)" Id="4778" Type="0" />
+<SAINT Name="103 New Martyrs of Cherkassy (20th C)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Martyre Glycérie et son geôlier Laodicios" Id="2445" Type="1" />
+<SAINT Name="St Serge le Confesseur" Id="" Type="0" />
+<SAINT Name="St Pausicace, Evêque de Synnades" Id="1059" Type="0" />
+<SAINT Name="St Nicéphore du Monastère d'Alphapsis" Id="" Type="0" />
+<SAINT Name="Sts Jean et Euthyme, fondateurs du Monastère d'Iviron et de Georges 1er" Id="" Type="0" />
+<SAINT Name="St Eupheme d'Iviron" Id="6564" Type="0" />
+<SAINT Name="Ste Glycérie de Novgorod" Id="2446" Type="0" />
+<SAINT Name="Stes Martyres Agnès et Disciole de Poitiers" Id="" Type="0" />
+<SAINT Name="St Sertvatius, Evêque de Tongres (Belgique)" Id="" Type="0" />
+<SAINT Name="St Gabriel l'Ibère, qui recueillit l'Icône de la Portaïtissa" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мц. Гликерии девы и с нею мч. Лаодикия, стража темничного (ок. 177)" Id="2445" Type="1"/>
+<SAINT Name="Сщмчч. Василия, Александра и Христофора пресвитеров, прмч. Макария и мч. Сергия (1922)" Id="4778" Type="0"/>
+<SAINT Name="Мчч. 103 Черкасских (XX)" Id="" Type="0"/>
+<SAINT Name="Мч. Александра Римского (ок. 284-305)" Id="1058" Type="0"/>
+<SAINT Name="Свт. Павсикакия, еп. Синадского (ок. 606)" Id="1059" Type="0"/>
+<SAINT Name="Свв. Георгия исп. с супругою Ириною и чадами (IX)" Id="1060" Type="0"/>
+<SAINT Name="Прп. Евфимия Иверского (1028)" Id="6564" Type="0"/>
+<SAINT Name="Прав. Гликерии девы, Новгородской (1522)" Id="2446" Type="0"/>
+<SAINT Name="Перенесение мощей прмч. Макария  Каневского, игумена Пинского, Переяславского чудотворца (1688)" Id="1405" Type="0"/>
+</LANGUAGE>
+</DAY>

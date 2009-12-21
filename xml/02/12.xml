@@ -1,0 +1,33 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Saint Meletios, Archbishop of Antioch (+ 381)" Id="4627" Type="1" />
+<SAINT Name="Saint Alexis, Metropolitan of Moscow and Wonderworker of All Russia (+ 1387);" Id="131" Type="4"/>
+<SAINT Name="Saint Anthony, Patriarch of Constantinople (+ 895)" Id="436" Type="0" />
+<SAINT Name="Venerable Mary (known as the Monk Marinus), and her father, the Venerable Eugene at Alexandria (6th C)" Id="435" Type="0" />
+<SAINT Name="Hieromartyr Urbanus, Bishop of Rome" Id="" Type="0" />
+<SAINT Name="Venerable Callia of Constantinople" Id="" Type="0" />
+<SAINT Name="St Meletius the Archbishop of Kharkov (+ 1840)" Id="1510" Type="0" />
+<SAINT Name="New Martyr Christus" Id="" Type="0" />
+<SAINT Name="Iveron Icon of the Mother of God (9th C)" Id="2858" Type="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Mélèce, Archevêque d'Antioche" Id="4627" Type="1" />
+<SAINT Name="Ste Marie qui changea son nom en Marin" Id="435" Type="0" />
+<SAINT Name="St Antoine II, Cauleas, Patriarche de Constantinople" Id="436" Type="0" />
+<SAINT Name="Sts Plotin et Saturnin" Id="" Type="0" />
+<SAINT Name="St Néomartyr Christos le Jardinier" Id="" Type="0" />
+<SAINT Name="St Alexis, Métropolite de Moscou" Id="131" Type="4" />
+<SAINT Name="St Bassien, Higoumène du Monastère de la forêt de Ryabovsky" Id="" Type="0" />
+<SAINT Name="St Benoît d'Aniane" Id="" Type="0" />
+<SAINT Name="St Rioc de Landevenec" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Иверской иконы Божией Матери (IX)." Id="2858" Type="1"/>
+<SAINT Name="Свт. Мелетия, архиеп. Антиохийского (381)" Id="4627" Type="1"/>
+<SAINT Name="Свт. Алексия, митр. Московского и всея России, чудотворца (1378)." Id="131" Type="4"/>
+<SAINT Name="Свт. Мелетия, архиеп. Харьковского (1840)" Id="1510" Type="0"/>
+<SAINT Name="Прп. Марии, именовавшейся Марином, и отца ее Евгения (VI)" Id="435" Type="0"/>
+<SAINT Name="Свт. Антония, Патриарха Константинопольского (895)" Id="436" Type="0"/>
+<SAINT Name="День тезоименитства Святейшего Патриарха Московского и всея Руси Алексия II. (+2008)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

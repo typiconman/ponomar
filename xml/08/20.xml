@@ -1,0 +1,24 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Dormition" Id="" Type="0" />
+<SAINT Name="Prophet Samuel (11th C BC)" Id="1921" Type="1" />
+<SAINT Name="Hieromartyr Philip, Bishop of Heraclius and with him the Martyrs Sevirus, Memnon, and the 37 Martyrs burned at Thrace (+304)" Id="4484" Type="0" />
+<SAINT Name="Martyr Lucius the Senator (+310)" Id="" Type="0" />
+<SAINT Name="Martyrs Iliodoros, and Dosos (+380)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Prophète Samuel" Id="1921" Type="1" />
+<SAINT Name="Sts Philippe Evêque d'Héraclée, Sévère et Hermès" Id="4484" Type="0" />
+<SAINT Name="St Lucius le Conseiller" Id="" Type="0" />
+<SAINT Name="Sts Réginos et Oreste de Chypre" Id="" Type="0" />
+<SAINT Name="St Théocharis de Néapolis en Asie Mineure" Id="" Type="0" />
+<SAINT Name="St Philibert de Jumièges et de Noirmoutier" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Успения Пресвятой Богородицы" Id="" Type="0"/>
+<SAINT Name="Прор. Самуила (XI до Р.Х.)" Id="1921" Type="1"/>
+<SAINT Name="Сщмч. Владимира пресвитера (1917)" Id="" Type="0"/>
+<SAINT Name="Мчч. Севира и Мемнона и с ними 37-ми мучеников (304)" Id="4484" Type="0"/>
+<SAINT Name="Свт. Иерофея Венгерского (X) и св. Стефана I, короля Венгрии (1038)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

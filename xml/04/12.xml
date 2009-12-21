@@ -1,0 +1,36 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Basil the Confessor, Bishop of Parium (+ after 754)" Id="837" Type="0" />
+<SAINT Name="Venerable Anthusa the Virginmartyr of Constantinople (+801)" Id="842" Type="0" />
+<SAINT Name="Venerable Isaac the Syrian, Abbot of Spoleto (+550)" Id="1098" Type="0" />
+<SAINT Name="Venerable Athanasia the Abbess of Aegina (+860)" Id="838" Type="0" />
+<SAINT Name="Hieromartyr Xeno, Bishop of Verona (+ c.260)" Id="839" Type="0" />
+<SAINT Name="Venerable Martyrs Menas, David and John of Palestine (+ after 636)" Id="841" Type="0" />
+<SAINT Name="Holy Hierarch Sergius II, Patriarch of Constantinople" Id="" Type="0" />
+<SAINT Name="Venerable Acacius the Younger of Mt Athos (+1730)" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Basil, Bishop of Ryazan" Id="" Type="0" />
+<SAINT Name="Translation of the Precious Belt of the Mother of God to Constantinople" Id="" Type="0" />
+<SAINT Name="Icons of the Mother of God of Murom (12th C) and Belinich (13th C)" Id="845" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Basile le Confesseur, Evêque de Parion" Id="837" Type="0" />
+<SAINT Name="St Artemon de Laodicée" Id="" Type="0" />
+<SAINT Name="Ste Anthouse, fille de l'empereur Constantin Copronyme" Id="842" Type="0" />
+<SAINT Name="Sts Démas et Protion" Id="" Type="0" />
+<SAINT Name="Sts Ménas, David et Jean" Id="841" Type="0" />
+<SAINT Name="St Acace de Kavsokalyvia" Id="" Type="0" />
+<SAINT Name="St Basile, Evêque de Riazan" Id="" Type="0" />
+<SAINT Name="St Zénon, Evêque ce Vérone" Id="839" Type="0" />
+<SAINT Name="St. Florentin d'Arles" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Василия исп., еп. Парийского (после 754)" Id="837" Type="0"/>
+<SAINT Name="Прмч. Сергия (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Зинона, еп. Веронийского (ок. 260)" Id="839" Type="0"/>
+<SAINT Name="Прп. Исаака Сирина в Сполете Италийском (550)" Id="1098" Type="0"/>
+<SAINT Name="Прмчч. Мины, Давида и Иоанна (после 636)" Id="841" Type="0"/>
+<SAINT Name="Прп. Анфусы девы (801)" Id="842" Type="0"/>
+<SAINT Name="Прп. Афанасии игумении (860)" Id="838" Type="0"/>
+<SAINT Name="Муромской (XII) и Белыничской (XIII) икон Божией Матери" Id="845" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,11 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Make your vows and pay them to the Lord our God."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<TEXT Value="Помолитеся и воздадите Господеви Богу нашему."/>
+</LANGUAGE>
+</COMMONPRAYER>

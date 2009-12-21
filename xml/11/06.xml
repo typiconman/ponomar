@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Saint Paul the Confessor, Bishop of Constantinople (+ 350)" Id="2491" Type="2" />
+<SAINT Name="Venerable Varlaam, Abbot of Khutinsk (+ 1192)" Id="357" Type="3" />
+<SAINT Name="Venerable Luke of Sicily (+ c. 800-820)" Id="2492" Type="0" />
+<SAINT Name="Martyrs Tecusa, Alexandra, Polactia, Claudia, Euphrosene, Athanasia, and Matrona" Id="1093" Type="0" />
+<SAINT Name="Venerable Luke, Economos of the Caves of Kiev (13th C)" Id="6702" Type="0" />
+<SAINT Name="Repose of Saint Herman, Archbishop of Kazan (+ 1567)" Id="509" Type="0" />
+<SAINT Name="New Hieromartyr Nikita, bishop of Orekhovo-Zuevo, and those with him (+1937)" Id="4857" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Paul le Confesseur, Archevêque de Constantinople" Id="2491" Type="2" />
+<SAINT Name="St Père Luc" Id="" Type="0" />
+<SAINT Name="St Nicandre" Id="" Type="0" />
+<SAINT Name="St Paul de Corinthe, Fol en Christ" Id="" Type="0" />
+<SAINT Name="St Dimitrien, Ecêque de Chypre" Id="" Type="0" />
+<SAINT Name="St Barlaam de Choutinsk" Id="357" Type="3" />
+<SAINT Name="St Luc des Grottes de Kiev" Id="6702" Type="0" />
+<SAINT Name="St Barlaam du lac Kéretsk" Id="6477" Type="0" />
+<SAINT Name="St Germain, Archevêque de Kazan" Id="509" Type="0" />
+<SAINT Name="Synaxe des Néomartyrs de Sarov" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Свт. Павла исп., патриарха Константинопольского (350)" Id="2491" Type="2"/>
+<SAINT Name="Прп. Варлаама Хутынского (1192)" Id="357" Type="3"/>
+<SAINT Name="Сщмч. Никиты, еп. Орехово-Зуевского, Анатолия, Арсения,  Николая, Николая, Константина  пресвитеров., прмчч. Варлаама и Гавриила, Гавриила, прмцц. Нины и Серафимы (1937)" Id="4857" Type="0"/>
+<SAINT Name="Сщмч. Василия пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Мцц. Текусы, Александры, Полактии, Клавдии, Евфросинии, Афанасии и Матроны (III)" Id="1093" Type="0"/>
+<SAINT Name="Прп. Луки Тавроменийского (800-820)" Id="2494" Type="0"/>
+<SAINT Name="Прп. Луки, эконома Печерского (XIII)" Id="6702" Type="0"/>
+<SAINT Name="Свт. Германа, архиеп. Казанского (1567)" Id="509" Type="0"/>
+<SAINT Name="Прп. Варлаама Керетского (XVI)" Id="6477" Type="0"/>
+</LANGUAGE>
+</DAY>

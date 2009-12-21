@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Glory to the Father, and to the Son, and to the Holy Spirit, Both now and ever and unto ages of ages. Amen."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Gloire au Père et au Fils et au Saint-Esprit, maintenant et toujours et aux siècles des siècles. Amen."/>
+</LANGUAGE>
+</COMMONPRAYER>

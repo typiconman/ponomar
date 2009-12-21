@@ -1,0 +1,29 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Apostle of the 70 Onysimus (+c.109)" Id="450" Type="1" />
+<SAINT Name="Venerable Eusebius, Hermit of Syria (5th C)" Id="451" Type="0" />
+<SAINT Name="Venerable Paphnutius and his Daughter Euphrosynia (5th C)" Id="1606" Type="0" />
+<SAINT Name="Martyr Major" Id="" Type="0" />
+<SAINT Name="Venerable Paphnutius, Hermit of the Caves of Kiev (13th C)" Id="" Type="0" />
+<SAINT Name="Dalmatian (1646) Icon of the Mother of God" Id="857" Type="0" />
+<SAINT Name="New Hieromartyrs Priests Michael and John (+1930)" Id="4856" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Onésime, Apôtre des 70" Id="450" Type="1" />
+<SAINT Name="St Eusèbe" Id="451" Type="0" />
+<SAINT Name="St Major de Gaza" Id="" Type="0" />
+<SAINT Name="St Théognios, Evêque de Bethelie" Id="" Type="0" />
+<SAINT Name="St Néomartyr Jean de Thessalonique" Id="" Type="0" />
+<SAINT Name="St Dalmate de Sibérie" Id="" Type="0" />
+<SAINT Name="St Anthime de Chios" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Ап. от 70-ти Онисима (ок. 109)" Id="450" Type="1"/>
+<SAINT Name="Сщмчч.  Михаила и Иоанна пресвитеров (1930)" Id="4856" Type="0"/>
+<SAINT Name="Сщмч. Николая, Алексия, Алексия пресвитеров, Симеона диакона, прмч. Петра и прмц. Софии (1938)" Id="4886" Type="0"/>
+<SAINT Name="Прп. Пафнутия и дщери его Евфросинии (V)" Id="1606" Type="0"/>
+<SAINT Name="Прп. Евсевия, пустынника Сирийского (V)" Id="451" Type="0"/>
+<SAINT Name="Прп. Пафнутия, затворника Печерского (XIII)" Id="" Type="0"/>
+<SAINT Name="Виленской (перенесение в Вильно в 1495 г.) и Далматской икон Божией Матери (1646)" Id="857" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,33 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Hilarion the New the Abbot of Pelecete (+ c.754)" Id="722" Type="1" />
+<SAINT Name="Venerable Stephen the Wonderworker the Abbot of Tryglia (9th C)" Id="723" Type="1" />
+<SAINT Name="Monkmartyr Eustratius of the Caves of Kiev (+1097)" Id="724" Type="0" />
+<SAINT Name="Martyrs Jonah and Barachisius and those with them: Xanithanus, Lazarus, Maruthanus, Narsinus, Elias, Marinus, Abibus, Siusithinus, and Sabbas (4th C)" Id="726" Type="0" />
+<SAINT Name="Martyrs Prischus, Malchus, and Alexander" Id="" Type="0" />
+<SAINT Name="Saint Hesychius the Theologian, Presbyter of Jerusalem" Id="" Type="0" />
+<SAINT Name="Venerable Hilarion of Pskov Lake and Gdov (+1467)" Id="933" Type="0" />
+<SAINT Name="Martyr Boyan, Prince of Bulgaria (+ c.830)" Id="727" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Hilarion le Nouveau, Higoumène du Monastère de Pélécète" Id="722" Type="1" />
+<SAINT Name="St Hésichius de Jérusalem" Id="" Type="0" />
+<SAINT Name="St Hérodion , Apôtre (commémoré le 8 avril avec ses compagnons)" Id="" Type="0" />
+<SAINT Name="St Denys le Miséricordieux, Evêque de Larissa et fondateur du Monastère de Saint Nicolas dit l'Anapavsas aux Météores" Id="" Type="0" />
+<SAINT Name="St Hilarion de Gdov" Id="933" Type="0" />
+<SAINT Name="St Boian, prince de Bulgarie" Id="727" Type="0" />
+<SAINT Name="St. Eustrate le Jeûneur des Grottes de Kiev" Id="724" Type="0" />
+<SAINT Name="Ste Mère Gwendoline de Niedermunster" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Илариона Нового, игумена Пеликитского (ок. 754)" Id="722" Type="1"/>
+<SAINT Name="Прп. Стефана чудотворца, исп., игумена Триглийского (IX)" Id="723" Type="1"/>
+<SAINT Name="Св. Николая, исп.,  пресвитера (1931)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Василия пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Мч. Иоанна (1939)" Id="" Type="0"/>
+<SAINT Name="Мчч. Ионы и Варахисия и с ними Занифы (Занифана), Лазаря, Маруфа (Маруфана), Нарсы (Нарсина), Илии, Мара (Марина), Авива, Сивеифа (Сивефина) и Саввы Персидских (ок. 330)" Id="726" Type="0"/>
+<SAINT Name="Мч.  Енравота-Бояна, кн. Болгарского (ок. 830)" Id="727" Type="0"/>
+<SAINT Name="Прмч. Евстратия Печерского (1097)" Id="724" Type="0"/>
+<SAINT Name="Прп. Илариона Псковоезерского, Гдовского (1476)" Id="933" Type="0"/>
+</LANGUAGE>
+</DAY>

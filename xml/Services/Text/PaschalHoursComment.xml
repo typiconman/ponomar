@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Comment: This service replaces the First, Third, Sixth, and Ninth Hours, the Compline, and the Midnight Office during Bright Week."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Comment : Il manque une version integrale des heures de Pâques en français."/>
+</LANGUAGE>
+</COMMONPRAYER>

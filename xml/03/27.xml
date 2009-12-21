@@ -1,0 +1,26 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Matrona of Thessalonica (3rd-4th C)" Id="716" Type="1" />
+<SAINT Name="Martyrs Manuel and Theodosius (+304)" Id="717" Type="0" />
+<SAINT Name="Venerable John the Clairvoyant, Anchorite, of Egypt (+ 394-395)" Id="718" Type="0" />
+<SAINT Name="Venerable Ciricus of Thrace" Id="" Type="0" />
+<SAINT Name="Holy Prophet Ananaiah" Id="" Type="0" />
+<SAINT Name="Venerable Paul, Bishop of Corinth" Id="" Type="0" />
+<SAINT Name="Venerable Paphnutius of Heraclea" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Martyre Matrone de Thessalonique" Id="716" Type="1" />
+<SAINT Name="St Hanani, Prophète" Id="" Type="0" />
+<SAINT Name="St Philet le sénateur, Lydie sa femme et ses compagnons" Id="" Type="0" />
+<SAINT Name="St Eutyche, Evêque" Id="" Type="0" />
+<SAINT Name="St Cyrique d'Apros" Id="" Type="0" />
+<SAINT Name="St Paul, Evêque de Corinthe" Id="" Type="0" />
+<SAINT Name="St Jean de Lycopolis" Id="" Type="0" />
+<SAINT Name="St. Matthieu de Beauvais" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мц. Матроны Солунской (III-IV)" Id="716" Type="1"/>
+<SAINT Name="Мчч. Мануила и Феодосия (304)" Id="717" Type="0"/>
+<SAINT Name="Прп. Иоанна прозорливого, Египетского (394-395)" Id="718" Type="0"/>
+</LANGUAGE>
+</DAY>

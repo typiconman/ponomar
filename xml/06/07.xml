@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Theodotus the Bishop of Ancyra (+303)" Id="2216" Type="1" />
+<SAINT Name="Holy Women Martyrs Caleria (Valeria), Kyriaki and Maria in Caesarea of Palestine (4th C)" Id="1254" Type="0" />
+<SAINT Name="Hieromartyr Marcellus, Pope of Rome, and those with him: Martyrs Sisinius and Cyriacus the deacons, Smaragdus, Largius, Apronian, Saturnian, Papius, Maurus, and Cryscentian, and Martyred women Priscilla, Lucina, and Artemia the Princess (+ c.310)" Id="1253" Type="0" />
+<SAINT Name="Venerable Daniel of Skete" Id="" Type="0" />
+<SAINT Name="Hieromartyr Marcellinus, Pope of Rome (+304)" Id="1252" Type="0" />
+<SAINT Name="Martyr Potamiena" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Martyr Théodote d'Ancyre" Id="2216" Type="1" />
+<SAINT Name="Ste Potamienne et ses compagnons" Id="" Type="0" />
+<SAINT Name="St Lycarion" Id="" Type="0" />
+<SAINT Name="Ste Zénaide la Thaumaturge" Id="" Type="0" />
+<SAINT Name="Ste Aissia et Suzanne, disciples de St Pancrace, Evêque de Taormina" Id="" Type="0" />
+<SAINT Name="Sts Taraise et Jean" Id="" Type="0" />
+<SAINT Name="Sts Etienne et Anthime les Prêtres zélés (Spoudaioi)" Id="" Type="0" />
+<SAINT Name="Ste Sébastienne la Thaumaturge" Id="" Type="0" />
+<SAINT Name="St Panaghis (Païssios) Bassia" Id="" Type="0" />
+<SAINT Name="St Daniel de Scété" Id="" Type="0" />
+<SAINT Name="St Vulphy d'Amiens" Id="" Type="0" />
+<SAINT Name="Sts Sérenic et Sérené" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Феодота Анкирского (303)" Id="2216" Type="1"/>
+<SAINT Name="Сщмч. Андроника, архиеп. Пермского (1918)" Id="4756" Type="0"/>
+<SAINT Name="Сщмч. Александра, Алексия, Александра, Валентина, Вениамина, Виктора, Александра, Павла, Владимира,  Игнатия, Льва, Михаила, Николая, Павла, Александра, Николая пресвитеров, Григория диакона и мчч. Афанасия и Александра (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Николая и Петра пресвитеров (1919)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Маркеллина, папы Римского, и мчч. Клавдия, Кирина и Антонина (304)" Id="1252" Type="0"/>
+<SAINT Name="Сщмч. Маркелла, папы Римского, мчч. Сисиния и Кириака диаконов, Смарагда, Ларгия, Апрониана, Сатурнина, Папия и Мавра воинов и Крискентиана, мцц. Прискиллы, Лукины и Артемии царевны (304-310)" Id="1253" Type="0"/>
+<SAINT Name="Мцц. Калерии (Валерии), Кириакии и Марии в Кесарии Палестинской (IV)" Id="1254" Type="0"/>
+<SAINT Name="Собор Ивановских святых" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,45 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="14" Cmd="dow == 0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyrs Probos, Tarachos and Andronicus, at Tarsus in Cilicia (+304)" Id="1715" Type="1" />
+<SAINT Name="Venerable Cosmas the Hymnographer, Bishop of Majuma (+c.787)" Id="1716" Type="1" />
+<SAINT Name="Translation from Malta to Gatchina of a part of the Life-Creating Cross of the Lord, together with the Philermia Icon of the Mother of God, and the right hand of Saint John the Baptist (1799)" Id="1722" Type="0" />
+<SAINT Name="Martyr Domnica" Id="1720" Type="0" />
+<SAINT Name="St Martin the Merciful, Bishop of Tours" Id="1721" Type="0" />
+<SAINT Name="Venerable Amphilochius, Macarius, Tarasius, and Theosius of Glushitsa" Id="152" Type="0" />
+<SAINT Name="Hieromartyr Maximillian, Bishop of Norich" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God 'of Jerusalem'" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Probus, Tarachus et Andronique" Id="1715" Type="1" />
+<SAINT Name="Ste Domnine" Id="1720" Type="0" />
+<SAINT Name="Ste Anastasie" Id="" Type="0" />
+<SAINT Name="Sts 70 Martyrs" Id="" Type="0" />
+<SAINT Name="st Théodote, Evêque d'Ephèse" Id="" Type="0" />
+<SAINT Name="Ste Malpheta" Id="" Type="0" />
+<SAINT Name="Ste Anthia" Id="" Type="0" />
+<SAINT Name="Sts Juventin et Maxime" Id="" Type="0" />
+<SAINT Name="St Jason, Evêque de Damas" Id="" Type="0" />
+<SAINT Name="Sts Andromaque et Diodore" Id="" Type="0" />
+<SAINT Name="St Théosébios d'Arsinoé en Chypre" Id="" Type="0" />
+<SAINT Name="St Syméon le Nouveau Théologien" Id="" Type="0" />
+<SAINT Name="Mémoire du Bon Larron" Id="" Type="0" />
+<SAINT Name="Sts Amphiloque, Macaire, Taraise et Théodose de Gluchetsk (Vologda)" Id="152" Type="0" />
+<SAINT Name="St Néomartir Juvénal de Riazan" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Прова, Тараха и Андроника (304)" Id="1715" Type="1"/>
+<SAINT Name="Прп. Космы, еп. Маиумского, творца канонов (ок. 787)" Id="1716" Type="1"/>
+<SAINT Name="Св. Иоанна исп. (1930)" Id="" Type="0"/>
+<SAINT Name="Прмч. Лаврентия (1937)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Александра пресвитера (1940)" Id="" Type="0"/>
+<SAINT Name="Свт. Николая исп. митр. Алма-Атинского (1955)" Id="" Type="0"/>
+<SAINT Name="Мц. Домники (286)" Id="1720" Type="0"/>
+<SAINT Name="Свт. Мартина Милостивого, еп. Турского (ок. 400)" Id="1721" Type="0"/>
+<SAINT Name="Прп. Амфилохия, игумена Глушицкого (1452)" Id="152" Type="0"/>
+<SAINT Name="Перенесение из Мальты в Гатчину части древа Животворящего Креста Господня, Филермской иконы Божией Матери и десной руки св. Иоанна Крестителя (1799)" Id="1722" Type="4"/>
+<SAINT Name="Иерусалимской (48), Ярославской-Смоленской (1642), Рудненской (1687), и Калужской (1748) икон Божией Матери. )" Id="1723" Type="0"/>
+</LANGUAGE>
+</DAY>

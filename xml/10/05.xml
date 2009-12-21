@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Hierarchs Peter, Alexis, Jonah, Macarius, Philip, Job, Hermogenes, Tikhon, Peter, Philaret, Innocent and Macarius, Wonderworkers of Moscow" Id="1779" Type="4" />
+<SAINT Name="Martyr Charitina of Amisus (+304)" Id="1673" Type="1" />
+<SAINT Name="Venerable Damian the Presbyter and Healer (+1071), Jeremiah (+c.1070) and Matthew (+c.1083) the Clairvoyants of the Caves of Kiev" Id="1674" Type="0" />
+<SAINT Name="Martyr Mamelta of Persia (+c.344)" Id="1678" Type="0" />
+<SAINT Name="Hieromartyr Dionysios, Bishop of Alexandria (264-265)" Id="1676" Type="0" />
+<SAINT Name="Venerable Cosmas the Abbot" Id="" Type="0" />
+<SAINT Name="Venerable Eudocimus the Vatopedi" Id="" Type="0" />
+<SAINT Name="Venerable Charitina, Princess of Lithuania (+1281)" Id="2748" Type="0" />
+<SAINT Name="Venerable Gregory of Chandzoe in Georgia (+861)" Id="1679" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Ste Charitine" Id="1673" Type="1" />
+<SAINT Name="Ste Mamelcta" Id="1678" Type="0" />
+<SAINT Name="St Jean Mauropus, Métropolite d' Euchaïta" Id="" Type="0" />
+<SAINT Name="St Evdokimos du Monastère de Vatopédi (Athos)" Id="" Type="0" />
+<SAINT Name="St Sabas de Vatopédi (Athos)" Id="" Type="0" />
+<SAINT Name="Ste Méthodie de Kimolos" Id="" Type="0" />
+<SAINT Name="Sts Pierre, Alexis, Jonas, Philippe et Hermogène, Métropolites de Moscou et de toute la Russie" Id="1779" Type="4" />
+<SAINT Name="Sts Damien le guérisseur, Jérémie et Matthieu des Grottes de Kiev" Id="1674" Type="0" />
+<SAINT Name="Ste Charitine, Princesse de Lituanie" Id="2748" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мц. Харитины (304)" Id="1673" Type="1"/>
+<SAINT Name="Свтт. Петра, Алексия, Ионы, Макария, Филиппа, Иова, Ермогена, Тихона, Петра, Филарета, Иннокентия и Макария, Московских и всея России чудотворцев" Id="1779" Type="4"/>
+<SAINT Name="Прп. Гавриила исп (1959)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Дионисия, еп. Александрийского (264-265)" Id="1676" Type="0"/>
+<SAINT Name="Мц. Мамелхвы Персидской (ок. 344)" Id="1678" Type="0"/>
+<SAINT Name="Прп. Григория Хандзойского (861)" Id="1679" Type="0"/>
+<SAINT Name="Прпп. Дамиана, пресвитера, целебника (1071), Иеремии (ок. 1070) и Матфея (ок. 1085) прозорливых, Печерских" Id="1674" Type="0"/>
+<SAINT Name="Прп. Харитины, кн. Литовской, в Новгороде подвизавшейся (1281)" Id="2748" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,79 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="0" Cmd="dow == 0" />
+<SAINT Name="6" Cmd="dow == 6" />
+<SCRIPTURE Type="1st hour" Reading="Isa_35:1-10" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="1st hour" Reading="Acts_13:25-32" Pericope="33" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="1st hour" Reading="Mt_3:1-12" Pericope="5" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="3rd hour" Reading="Isa_1:16-20" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="3rd hour" Reading="Acts_19:1-8" Pericope="42" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="3rd hour" Reading="Mk_1:1-8" Pericope="1" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="6th hour" Reading="Isa_12:3-6" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="6th hour" Reading="Rom_6:6-23" Pericope="91" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="6th hour" Reading="Mk_1:9-15" Pericope="2" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="9th hour" Reading="Isa_49:8-15" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="9th hour" Reading="Tit_2:11-3:7" Pericope="302" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="9th hour" Reading="Mt_3:13-17" Pericope="6" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="vespers" Reading="Gen_1:1-13" />
+<SCRIPTURE Type="vespers" Reading="Ex_14:15-18, 21-23, 27-29" />
+<SCRIPTURE Type="vespers" Reading="Ex_15:22-27, 16:1" />
+<SCRIPTURE Type="vespers" Reading="Josh_3:7-8, 15-17" />
+<SCRIPTURE Type="vespers" Reading="IV Kings_2:6-14" />
+<SCRIPTURE Type="vespers" Reading="IV Kings_5:9-14" />
+<SCRIPTURE Type="vespers" Reading="Isa_1:16-20" />
+<SCRIPTURE Type="vespers" Reading="Gen_32:1-10" />
+<SCRIPTURE Type="vespers" Reading="Ex_2:5-10" />
+<SCRIPTURE Type="vespers" Reading="Judg_6:36-40" />
+<SCRIPTURE Type="vespers" Reading="III Kings_18:30-39" />
+<SCRIPTURE Type="vespers" Reading="IV Kings_2:12-22" />
+<SCRIPTURE Type="vespers" Reading="Isa_49:8-15" />
+<SCRIPTURE Type="vespers" Reading="I Cor_10:1-4" Pericope="143 (mid)" Cmd="dow == 6 || dow == 0" />
+<SCRIPTURE Type="vespers" Reading="Lk_3:1-18" Pericope="9" Cmd="dow == 6 || dow == 0" />
+<SCRIPTURE Type="apostol" Reading="I Cor_9:19-10:4" Pericope="143" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="gospel" Reading="Lk_3:1-18" Pericope="9" Cmd="!(dow == 6 || dow == 0)" />
+<LITURGY Type="2" Cmd="dow != 6 &amp;&amp; dow != 0" Comments="St Basil's EXCEPT Saturday or Sunday"/>
+<LITURGY Type="1" Cmd="dow == 6 || dow == 0" Comments="St John's Saturday or Sunday"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Eve of the Theophany" Id="" Type="1" />
+<SAINT Name="Hieromartyr Theopemptus, Bishop of Nicomedia, and Martyr Theonas the Sorcerer (+303)" Id="155" Type="1" />
+<SAINT Name="Venerable Apollinaria the Virgin (+ c. 470)" Id="" Type="0" />
+<SAINT Name="Prophet Micah (9th C BC)" Id="1564" Type="0" />
+<SAINT Name="Venerable Gregory of Akryta (+ c. 820)" Id="161" Type="0" />
+<SAINT Name="Venerable Phosterius the Hermit (6th C)" Id="159" Type="0" />
+<SAINT Name="Venerable Mennas of Sinai (6th C)" Id="160" Type="0" />
+<SAINT Name="Martyr Theoidus" Id="" Type="0" />
+<SAINT Name="Martyr Saisus" Id="" Type="0" />
+<SAINT Name="Venerable Tatiana" Id="" Type="0" />
+<SAINT Name="Venerable women Talida and Taora" Id="" Type="0" />
+<SAINT Name="Venerable Martyr Roman" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Paramonie de la Théophanie" Id="" Type="1" />
+<SAINT Name="Sts Théopempte et Théonas" Id="155" Type="1" />
+<SAINT Name="Ste Synclétique" Id="156" Type="1" />
+<SAINT Name="St Grégoire d'Akritas" Id="161" Type="0" />
+<SAINT Name="St Phostère" Id="159" Type="0" />
+<SAINT Name="St Ménas le SinaÃÂ¯te" Id="160" Type="0" />
+<SAINT Name="St SaÃÂ¯s" Id="" Type="0" />
+<SAINT Name="St Théoeidos" Id="" Type="0" />
+<SAINT Name="Ste Domnine" Id="" Type="0" />
+<SAINT Name="Ste Tatienne" Id="" Type="0" />
+<SAINT Name="St Romanos de Carpennision" Id="" Type="0" />
+<SAINT Name="St Galactoire, 1er Evêque de Lescar" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Навечерие Богоявления (Крещенский сочельник)." Id="" Type="1"/>
+<SAINT Name="Сщмч. Феопемпта, еп. Никомидийского и мч. Феоны волхва (303)" Id="155" Type="1"/>
+<SAINT Name="Прп. Синклитикии Александрийской (ок. 350)" Id="156" Type="1"/>
+<SAINT Name="Мч. Иосифа  и с ним 37-ми мучеников (1921)" Id="" Type="0"/>
+<SAINT Name="Мц. Евгении (1933)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Сергия пресвитера (1934)" Id="" Type="0"/>
+<SAINT Name="Мч. Матфея (1938)" Id="" Type="0"/>
+<SAINT Name="Прор. Михея (IX до Р.Х.)" Id="1564" Type="0"/>
+<SAINT Name="Прп. Аполлинарии (ок. 470)" Id="158" Type="0"/>
+<SAINT Name="Прп. Фостирия" Id="159" Type="0"/>
+<SAINT Name=" Прп.  Мины (VI)" Id="160" Type="0"/>
+<SAINT Name="Прп. Григория Акритского (ок. 820)" Id="161" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Athanasius, Founder of the Great Lavra on Mt Athos, and his 6 disciples (+ 1000)" Id="293" Type="4" />
+<SAINT Name="Uncovering of the relics of the Venerable Sergius of Radonezh (1422)" Id="1974" Type="3" />
+<SAINT Name="Martyrs Anna of Rome and Cyrilla, of Cyrene in Libya (+304)" Id="2372" Type="0" />
+<SAINT Name="Venerable Lampados the Wonderworker" Id="" Type="0" />
+<SAINT Name="Venerable Cyprian of Mt. Athos" Id="" Type="0" />
+<SAINT Name="Venerable Athanasius the Hermit" Id="" Type="0" />
+<SAINT Name="Venerable Martyrs Grand Duchess Elizabeth, Nun Barbara, and with them the Princes: John, Igor, Constantine, Sergius, and Vladimir, at Alapayevsk (+ 1918)" Id="2500" Type="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Athanase l'Athonite, fondateur de la Grande Lavra" Id="293" Type="4" />
+<SAINT Name="St Lampade le Thaumaturge" Id="" Type="0" />
+<SAINT Name="Sts Basile et ses 70 compagnons à Scythopolis" Id="" Type="0" />
+<SAINT Name="Ste Cyrilla de Cyrène" Id="" Type="0" />
+<SAINT Name="St Cyprien le Jeune" Id="" Type="0" />
+<SAINT Name="Synaxe des Sts de Lesbos" Id="" Type="0" />
+<SAINT Name="Sts Athanase et Théodose de Cherepovetsk (Novgorod)" Id="" Type="0" />
+<SAINT Name="St Serge de Radonège (Invention des Reliques)" Id="1974" Type="3" />
+<SAINT Name="St Valier, Evêque de Couserans" Id="" Type="0" />
+<SAINT Name="Ste Martyre Princesse Elizabeth et moine Barbare, et Princes Martyres Jean, Igor, Constantine, Serge et Vladimir, tues a Alapaievsk" Id="2500" Type="1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Афанасия Афонского (1000)" Id="293" Type="4"/>
+<SAINT Name="Обретение честных мощей прп. Сергия, игумена Радонежского (1422)" Id="1974" Type="3"/>
+<SAINT Name="Прмцц. вел. кн. Елисаветы и инокини Варвары, князей Иоанна, Игоря, Константина, Сергия и Владимира, в Алапаевске убиенных  (1918)" Id="2500" Type="1"/>
+<SAINT Name="Прп. Агапита исп (1936)" Id="" Type="0"/>
+<SAINT Name="Мцц. Анны и Кириллы (304)" Id="2372" Type="0"/>
+<SAINT Name="Прп. Лампада Иринопольского (X)" Id="" Type="0"/>
+<SAINT Name="Иконы Божией Матери, именуемой &quot;Экономисса&quot;" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

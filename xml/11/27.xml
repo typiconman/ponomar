@@ -1,0 +1,37 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Greatmartyr James the Persian (+ 421)" Id="3234" Type="2" />
+<SAINT Name="Venerable Palladios (6th-7th C)" Id="" Type="1" />
+<SAINT Name="Saint James, Bishop and Wonderworker of Rostov (+ 1392)" Id="3235" Type="2" />
+<SAINT Name="Finding of the relics of Saint Vsevolod, in baptism Gabriel, Prince of Pskov (1192)" Id="438" Type="1" />
+<SAINT Name="Venerable Roman of Seleucia, the Wonderworker" Id="3236" Type="0" />
+<SAINT Name="Venerable Pinuphrious of Egypt" Id="" Type="0" />
+<SAINT Name="Venerable Nathaniel of Nytria" Id="" Type="0" />
+<SAINT Name="Venerable Palladius, Bishop Elenopolis" Id="" Type="0" />
+<SAINT Name="Venerable Diodore of Yuriegorsk" Id="" Type="0" />
+<SAINT Name="Icons of the Mother of God: 'Znamenie' of Novgorod and 'Znamenie', the Kursk-Root" Id="3233" Type="4" />
+<SAINT Name="New Hieromartyr Nicholas, Archbishop of Vladimir, and those with him (+1937)" Id="4842" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Jacques le Perse" Id="3234" Type="2" />
+<SAINT Name="St Pinufe" Id="" Type="0" />
+<SAINT Name="St Nathanael de Nitrie" Id="" Type="0" />
+<SAINT Name="St Moise de Palestine" Id="" Type="0" />
+<SAINT Name="St Théodose de Tirnovo" Id="" Type="0" />
+<SAINT Name="St Jacques, Archevêque de Rostov" Id="3235" Type="2" />
+<SAINT Name="St Diodore (Damien) de la Montagne St Georges" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Иконы Божией Матери, именуемой  &quot;Знамение&quot;" Id="3233" Type="4"/>
+<SAINT Name="Вмч. Иакова Персянина (421)" Id="3234" Type="2"/>
+<SAINT Name="Прп. Палладия Александрийского (VI-VII)" Id="" Type="1"/>
+<SAINT Name="Знамение Пресвятой Богородицы, бывшее в Новгороде Великом (1170)" Id="" Type="1"/>
+<SAINT Name="Обретение мощей блгв. кн. Новгородского Всеволода, во св. Крещении Гавриила, Псковского чудотворца (1192)" Id="438" Type="1"/>
+<SAINT Name="Свт. Иакова, еп. Ростовского (1392)" Id="3235" Type="2"/>
+<SAINT Name="Блж. Андрея Симбирского (1841)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Николая, архиеп. Владимирского, Василия, Бориса, Феодора, Николая, Алексия, Иоанна, Сергия, Иоанна, Сергия, Николая, Димитрия, Владимира, Иоанна  пресвитеров, прмчч. Иоасафа, Кронида,  Николая, Ксенофонта, Алексия, Аполлоса, Серафима, Никона и мч. Иоанна (1937)" Id="4842" Type="0"/>
+<SAINT Name="Прмчч. 17-ти монахов в Индии (IV)" Id="" Type="0"/>
+<SAINT Name="Прп. Романа чудотворца (V)" Id="3236" Type="0"/>
+<SAINT Name="Икон Божией Матери &quot;Знамение&quot;: Курской-Коренной (1295), Абалацкой (1637), Царскосельской, Верхнетагильской (1753), именуемой &quot;Корчемная&quot; (XVIII), Серафимо-Понетаевской (1879), . )" Id="1487" Type="0"/>
+</LANGUAGE>
+</DAY>

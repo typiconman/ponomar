@@ -1,0 +1,22 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="I Tim_3:1-13" Pericope="283"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:28-33" Pericope="107" Cmd="(doy &gt;= 338 &amp;&amp; doy &lt;= 344) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_20:9-18" Pericope="100" Cmd="(doy &gt;= 331 &amp;&amp; doy &lt;= 337) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:31-34" Pericope="92" Cmd="(doy &gt;= 324 &amp;&amp; doy &lt;= 330) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:1-9" Pericope="80" Cmd="(doy &gt;= 317 &amp;&amp; doy &lt;= 323) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:1-9" Pericope="70" Cmd="(doy &gt;= 310 &amp;&amp; doy &lt;= 316) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_11:47-12:1" Pericope="62" Cmd="(doy &gt;= 303 &amp;&amp; doy &lt;= 309) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:1-9" Pericope="80" Cmd="GS == 0" /> 
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Thursday of the 26th Week after Pentecost" Id="" Type="0" Tone="8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Jeudi de la 26-me semaine après le Pentecôte" Id="" Type="0" Tone="8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Четверг 26-й седмицы по Пятидесятнице" Id="" Type="0" Tone="8" />
+</LANGUAGE>
+</DAY>

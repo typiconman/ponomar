@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Easter" />
+<SCRIPTURE Type="apostol" Reading="Acts_18:22-28" Pericope="41"/>
+<SCRIPTURE Type="gospel" Reading="Jn_12:36-47" Pericope="43"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Wednesday of the 6th week after Pascha. Apodosis of Pascha" Id="" Type="3" Tone="5" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Mercredi de la 6-me semaine après Pâques. Apodose des Pâques" Id="" Type="3" Tone="5"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Среда 6-й седмицы по Пасхе. Отдание Пасхи" Id="" Type="3" Tone="5"/>
+</LANGUAGE>
+</DAY>

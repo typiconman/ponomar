@@ -1,0 +1,25 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Transfiguration of the Lord" Id="" Type="0" />
+<SAINT Name="Martyrs Photios and Anicletas of Nicomedia and many with them (+ 305-306)" Id="4425" Type="1" />
+<SAINT Name="Martyrs Pamphilius and Captonus" Id="4427" Type="0" />
+<SAINT Name="Hieromartyr Alexander, Bishop of Comana (3rd C)" Id="4426" Type="0" />
+<SAINT Name="Venerable Palamon of Egypt" Id="" Type="0" />
+<SAINT Name="Venerable Castor, Bishop of Apta" Id="" Type="0" />
+<SAINT Name="New Martyrs of Belgorod: Barlaam, Sergius, Elija, Vyacheslav, Ioasaph, John, Anthony, Micah, Vissarion, Matthew, Euthemius, Barnabus, Dimitry, Savva, Hermogenes, Arcadius, Euthemius, Marcellus, John, James, Peter, James, Alexander, Theodore, Peter, Sergius, and Alexey (+1918)" Id="4470" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Photios et Anicet, Martyrs" Id="4425" Type="1" />
+<SAINT Name="St Palamon" Id="" Type="0" />
+<SAINT Name="St Alexandre, Evêque de Comane" Id="4426" Type="0" />
+<SAINT Name="Sts 12 soldats de Crète" Id="" Type="0" />
+<SAINT Name="St Castor" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Фотия и Аникиты и многих с ними (305-306)" Id="4425" Type="1"/>
+<SAINT Name="Прмчч. Белогорских: Варлаама, Сергия, Илии, Вячеслава, Иоасафа, Иоанна, Антония, Михея, Виссариона, Матфея, Евфимия, Варнавы, Димитрия, Саввы, Гермогена, Аркадия, Евфимия, Маркелла, Иоанна, Иакова, Петра, Иакова, Александра, Феодора, Петра, Сергия и Алексия (1918)" Id="4770" Type="0"/>
+<SAINT Name="Сщмч. Василия пресвитера. Сщмчч. Леонида,  Иоанна и Николая пресвитеров (1937)" Id="4766" Type="0"/>
+<SAINT Name="Сщмч. Александра, еп. Команского (III)" Id="4426" Type="0"/>
+<SAINT Name="Мчч. Памфила и Капитона" Id="4427" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="O come, let us worship and fall down before our King and God."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Venez, adorons, prosternons-nous devant Dieu, notre Roi."/>
+</LANGUAGE>
+</COMMONPRAYER>

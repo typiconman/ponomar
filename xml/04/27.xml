@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Apostle and Hieromartyr Simeon, Bishop of Jerusalem, a Kinsman of the Lord (+107)" Id="1997" Type="2" />
+<SAINT Name="Venerable Stephen, Abbot of the Caves of Kiev and Bishop of Vladimir in Volynia (+1094)" Id="2065" Type="0" />
+<SAINT Name="Venerable John, Abbot of Cathares Monastery at Constantinople" Id="" Type="0" />
+<SAINT Name="Kazan Icon of the Mother of God in Aleksandrovka village, near St Petersburg" Id="" Type="0" />
+<SAINT Name="New Hieromartyrs Priest Paul and John and Martyrs Peter, Nicholas, Auxentious, Sergius, and Anastasia (+1922)" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Priest John (+1941)" Id="" Type="0" />
+<SAINT Name="Glorification of St Hilarion, Archbishop of Vereya (1999)" Id="9113" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Syméon, Evêque de Jérusalem" Id="1997" Type="2" />
+<SAINT Name="Brâlure des Reliques de St Sabbas, Archevêque de Serbie" Id="" Type="0" />
+<SAINT Name="St Jean le Confesseur, Higoumène du Monastère des Cathares" Id="" Type="0" />
+<SAINT Name="St Pollion" Id="" Type="0" />
+<SAINT Name="St Lollion le Nouveau" Id="" Type="0" />
+<SAINT Name="St Euloge l'Hospitalier" Id="942" Type="0" />
+<SAINT Name="St Nicon, Higoumène de la Laure de Dt Gérasime du Jourdain" Id="" Type="0" />
+<SAINT Name="St Etienne des Grottes de Kiev, Evêque de Vladimir" Id="" Type="0" />
+<SAINT Name="Sts Alpinien et Austriclien, de Limoges" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Ап. и сщмч. Симеона, сродника Господня (107)" Id="1997" Type="2"/>
+<SAINT Name="Сщмчч.  Павла  и Иоанна пресвитеров, мчч. Петра, Николая, Авксентия, Сергия и мц. Анастасии (1922)" Id="" Type="0"/>
+<SAINT Name="Прмц. Марии (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1941)" Id="" Type="0"/>
+<SAINT Name="Прославление сщмч. Илариона, архиепископа Верейского (1999)" Id="9113" Type="0"/>
+<SAINT Name="Прав. Евлогия странноприимца (IV)" Id="942" Type="0"/>
+<SAINT Name="Прп. Стефана, игумена Печерского, еп. Владимиро-Волынского (1094)" Id="2065" Type="0"/>
+<SAINT Name="Перенесение мощей мч. Авраамия Болгарского (1230)" Id="32" Type="1"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,31 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Longinus the Centurion, who stood at the Cross of the Lord and with him 2 other Martyrs (1st C)" Id="1368" Type="1" />
+<SAINT Name="Venerable Gallus the hermit, Englightener of Switzerland" Id="" Type="0" />
+<SAINT Name="Blessed Eupraxia, Princess of Pskov (+ 1243)" Id="" Type="0" />
+<SAINT Name="Venerable Longin of Yarensk (+ 1544-1545)" Id="4145" Type="0" />
+<SAINT Name="Venerable Longin, the Gate-Keeper of the Caves of Kiev (13th-14th C)" Id="1366" Type="0" />
+<SAINT Name="Venerable Mallus" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Michael Lektorsky (+1920)" Id="" Type="0" />
+<SAINT Name="New Hieromartyrs Priest Eugene (+1937) and John (+1942)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Longin Le Centurion et les 2 soldats martyrisés avec lui" Id="1368" Type="1" />
+<SAINT Name="Sts Léonce, Dométios, Térence et Domnin" Id="" Type="0" />
+<SAINT Name="St Malos" Id="" Type="0" />
+<SAINT Name="Ste Eupraxie (Euphrosynie), Princesse de Kiev" Id="" Type="0" />
+<SAINT Name="St Longin, Portier des Grottes de Kiev" Id="1366" Type="0" />
+<SAINT Name="St Longin de Iarensk" Id="4145" Type="0" />
+<SAINT Name="St Gall, Illuminateur de la Suisse" Id="" Type="0" />
+<SAINT Name="St Dulcide, Evêque d'Agen" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мч. Лонгина сотника, иже при Кресте Господни (I)" Id="1368" Type="1"/>
+<SAINT Name="Св. Георгия исп., пресвитера (1931)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Евгения пресвитера (1937)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Алексия пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1942)" Id="" Type="0"/>
+<SAINT Name="Прп. Лонгина, вратаря Печерского (XIII-XIV)" Id="1366" Type="0"/>
+<SAINT Name="Прп. Лонгина Яренгского (1544-1545)" Id="4145" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,19 @@
+<!-- service file for SID 2256 (Venerable Theophanes, Bishop of Nicea) -->
+<LANGUAGE Cmd="LS == -1">
+	<TROPARION Tone="8" Author="Traditional">
+	Правослaвіz настaвниче, бlгочeстіz ўчи1телю и3 чистоты2, вселeнныz свэти1льниче, ґрхіерeєвъ бGодухновeнное ўдобрeніе. fеофaне премyдре, ўчeньми твои1ми вс‰ просвэти1лъ є3си2, цэвни1це д¦0внаz, моли2 хrтA бGа, сп7сти1сz душaмъ нaшымъ.
+	</TROPARION>
+	<KONTAKION Tone="2" Author="Traditional">
+	Возгремёвъ хrт0во б9eственное воплощeніе, безплHтныz враги2 до концA њбличи1лъ є3си2, чyдне fеофaне: сегw2 рaди вси2 вёрнw, и3 бlгочeстнw вопіeмъ ти2: моли2 непрестaннw њ всёхъ нaсъ. 
+	</KONTAKON>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+	<TROPARION Tone="8" Author="A. Andreev">
+	Instructor of Orthodoxy, teacher of piety and purity, a light for the universe, divinly inspired example of bishops, O most wise Theophanes, thou, O spiritual flute, didst enlighten all with thy teachings. Pray unto Christ God that our souls be saved.
+	</TROPARION>
+	<KONTAKION Tone="4" Author="A. Andreev">
+	Having proclaimed the divine incarnation of Christ, thou didst completely put to shame the bodiless enemies, O wondrous Theophanes, whereby we all with faith and piety cry out unto thee: pray without ceasing for us all.
+	</KONTAKION>
+</LANGUAGE>
+	
+

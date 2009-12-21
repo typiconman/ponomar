@@ -1,0 +1,9 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Easter Troparion 3 (Tone 8)"/>
+<TEXT Value="O sanctified and divine tabernacle of the Most High, rejoice! For through thee, O Theotokos, joy is given to them that cry: Blessed art thou among women, O all-spotless Lady."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+</COMMONPRAYER>

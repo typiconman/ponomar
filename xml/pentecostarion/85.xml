@@ -1,0 +1,17 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="matins" Reading="Lk_24:12-35" Pericope="113"/>
+<SCRIPTURE Type="apostol" Reading="Rom_10:1-10" Pericope="103"/>
+<SCRIPTURE Type="gospel" Reading="Mt_8:28-9:1" Pericope="28"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="5th Sunday after Pentecost" Id="" Type="0" Tone="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Le 5-me dimanche après le Pentecôte" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Неделя 5-я по Пятидесятнице" Id="" Type="0" Tone="4"/>
+</LANGUAGE>
+</DAY>

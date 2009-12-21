@@ -1,0 +1,22 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Pericope="244" Reading="Philip_3:1-8" />
+<SCRIPTURE Type="gospel" Pericope="57" Reading="Lk_11:14-23" Cmd="(doy &gt;= 296 &amp;&amp; doy &lt;= 302) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="48" Reading="Lk_9:49-56" Cmd="(doy &gt;= 289 &amp;&amp; doy &lt;= 295) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="41" Reading="Lk_9:7-11" Cmd="(doy &gt;= 282 &amp;&amp; doy &lt;= 288) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="31" Reading="Lk_7:17-30" Cmd="(doy &gt;= 275 &amp;&amp; doy &lt;= 281) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:12-19" Cmd="(doy &gt;= 268 &amp;&amp; doy &lt;= 274) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="13" Reading="Lk_4:16-22" Cmd="(doy &gt;= 261 &amp;&amp; doy &lt;= 267) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="31" Reading="Lk_7:17-30"  Cmd="GS == 0" /> 
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Thursday of the 20th week after Pentecost" Id="" Type="0" Tone="2" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Jeudi de la 20-me semaine après le Pentecôte" Id="" Type="0" Tone="2"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Четверг 20-й седмицы по Пятидесятнице" Id="" Type="0" Tone="2"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Repose of Saint Cyril, Equal-to-the-Apostles and Teacher of the Slavs (+869)" Id="1233" Type="4" />
+<SAINT Name="Venerable Auxentius of Bithynia (+470)" Id="444" Type="1" />
+<SAINT Name="Venerable Isaac, Hermit of the Caves of Kiev (+c.1090)" Id="1105" Type="0" />
+<SAINT Name="12 Greek Master-Builders of the Dormition Cathedral in the Lavra of the Caves of Kiev (11th C)" Id="" Type="0" />
+<SAINT Name="Venerable Maron, Wilderness-Dweller of Syria (4th C)" Id="1485" Type="0" />
+<SAINT Name="Saint Abraham, Bishop of Caria, Mesopotamia (5th C)" Id="448" Type="0" />
+<SAINT Name="Transfer of the relics of the Martyred Prince Michael of Chernigov and his councilor Theodore (1578)" Id="1550" Type="0" />
+<SAINT Name="New Martyr George of Mytelene" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Auxence de la Montagne" Id="444" Type="1" />
+<SAINT Name="St Maron de Syrie" Id="1485" Type="0" />
+<SAINT Name="St Abraham de Mésopotamie" Id="448" Type="0" />
+<SAINT Name="St Phimémon, Evêque de Gaza" Id="" Type="0" />
+<SAINT Name="St Néomartyr Nicolas de Corinthe" Id="" Type="0" />
+<SAINT Name="St Néomartyr Damien le Nouveau, fondateur du Monastère du Précurseur à Kissavos" Id="" Type="0" />
+<SAINT Name="St Néomartyr Georges le Tailleur de Mytilène" Id="" Type="0" />
+<SAINT Name="St Isaac le Reclus des Grottes de Kiev" Id="1105" Type="0" />
+<SAINT Name="St Cyrille le Philosophe, Apôtre et Illuminateur des Slaves" Id="1233" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Авксентия (ок. 470)" Id="444" Type="1"/>
+<SAINT Name="Равноап. Кирилла, учителя Словенского (869)." Id="1233" Type="4"/>
+<SAINT Name="Сщмч. Онисима, еп. Тульского (1937)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Трифона диакона (1938)" Id="" Type="0"/>
+<SAINT Name="Прп. Марона, пустынника Сирийского (ок. 433)" Id="1485" Type="0"/>
+<SAINT Name="Свт. Авраамия, еп. Каррийского (V)" Id="448" Type="0"/>
+<SAINT Name="12-ти греков, строителей соборной Успенской церкви Киево-Печерской Лавры (XI)" Id="" Type="0"/>
+<SAINT Name="Прп. Исаакия, затворника Печерского (ок. 1090)" Id="1105" Type="0"/>
+<SAINT Name="Перенесение мощей блгв. кн. Михаила Черниговского и болярина Феодора (1578)" Id="1550" Type="0"/>
+</LANGUAGE>
+</DAY>

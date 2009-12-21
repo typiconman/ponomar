@@ -1,0 +1,36 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="9" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyrs Marcian and Martyrios, Notaries of Constantinople (+c.355)" Id="4589" Type="1" />
+<SAINT Name="Martyr Anastasius the Fuller, at Salona in Dalmatia (3rd C)" Id="4591" Type="0" />
+<SAINT Name="Saint Tabitha, the widow raised from the dead by the Apostle Peter (1st C)" Id="4592" Type="0" />
+<SAINT Name="Venerable Kallia" Id="" Type="0" />
+<SAINT Name="Venerable Martyrius the Deacon and Martyrius the Hermit, of the Caves of Kiev (13th-15th C)" Id="6732" Type="0" />
+<SAINT Name="Venerable Matrona the Confessor (+1963)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Marcien et Martyrios" Id="4589" Type="1" />
+<SAINT Name="St Anastase" Id="4591" Type="0" />
+<SAINT Name="St Valérin" Id="" Type="0" />
+<SAINT Name="St Sabin" Id="" Type="0" />
+<SAINT Name="Sts Valérius et Chrysaphios" Id="" Type="0" />
+<SAINT Name="St Varus" Id="" Type="0" />
+<SAINT Name="St Georges d'Amastride" Id="" Type="0" />
+<SAINT Name="Sts Papias, Diodore, Conon et Claudien" Id="" Type="0" />
+<SAINT Name="St Faustus, Basile et Lucien" Id="" Type="0" />
+<SAINT Name="Sts Nicéphore et Etienne" Id="" Type="0" />
+<SAINT Name="Sts Philadelphe et Polycarpe" Id="" Type="0" />
+<SAINT Name="2 Sts Martyrs de Thrace" Id="" Type="0" />
+<SAINT Name="Ste Tabitha, rescussitée par St Paul (Actes 9:39-40)" Id="4592" Type="0" />
+<SAINT Name="Sts Martyrius et Martyrius le Reclus des Grottes de Kiev" Id="6732" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Маркиана и Мартирия (ок. 355)" Id="4589" Type="1"/>
+<SAINT Name="Прп. Матроны исп (1963)" Id="" Type="0"/>
+<SAINT Name="Прав. Тавифы (I)" Id="4592" Type="0"/>
+<SAINT Name="Мч. Анастасия (III)" Id="4591" Type="0"/>
+<SAINT Name="Прпп. Мартирия диакона и Мартирия затворника, Печерских (XIII-XIV)" Id="6732" Type="0"/>
+</LANGUAGE>
+</DAY>

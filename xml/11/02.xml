@@ -1,0 +1,23 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyrs Acyndinos, Pegasias, Aphthonios, Elpidiphoros, Anempodistus and 7,000 suffering with them in Persia (c.341-345)" Id="2474" Type="1" />
+<SAINT Name="Venerable Marcian of Cyprus (+388)" Id="148-" Type="0" />
+<SAINT Name="Hieromartyr Victorinus, Bishop of Pataba" Id="" Type="0" />
+<SAINT Name="Martyr Eustochiuma the virgin" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Theodotus, Bishop of Laodicea" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Felix, Pope of Rome" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Akyndinos, Pégase, Aphtonios, Elpidéphore et Anempodiste" Id="2474" Type="1" />
+<SAINT Name="Sts Attique, Eudoxe, Agapios, Marin, Océanos, Eustrate, Captérios, Styrakios, Tobie et leurs compagnons" Id="" Type="0" />
+<SAINT Name="Stes Cyriaque, Domnine et Domna" Id="" Type="0" />
+<SAINT Name="St Marcien de Cyr" Id="1480" Type="0" />
+<SAINT Name="St Cyprien de Storoziev (Olonetsk)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Акиндина, Пигасия, Аффония, Елпидифора, Анемподиста и иже с ними (ок. 341-345)" Id="2474" Type="1"/>
+<SAINT Name="Сщмчч. Константина и Анании пресвитеров (1918)" Id="" Type="0"/>
+<SAINT Name="Прп. Маркиана Киринейского (388)" Id="1480" Type="0"/>
+<SAINT Name="Шуйской-Смоленской иконы Божией Матери (1654-1655)" Id="2935" Type="0"/>
+</LANGUAGE>
+</DAY>

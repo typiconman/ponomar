@@ -1,0 +1,24 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyrs Pamphilus the Presbyter, Valentus the Deacon, Paul, Porphyrios, Seleucios, Theodoulos, Julian, Samuel, Elias, Daniel, Jeremiah, Isaiah at Caesarea in Palestine (+c307-309)" Id="453" Type="1" />
+<SAINT Name="Venerable Maruthas, Bishop of Martyropolis in Mesopotamia (+422)" Id="454" Type="0" />
+<SAINT Name="Martyrs of Persia at Martyropolis (4th C)" Id="" Type="0" />
+<SAINT Name="Venerable Martyr Roman of Mt Athos" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Macarius (Nevsky), Metropolitan of Moscow and Kolomna (+1926)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Martyrs Phamphyle et ses compagnons" Id="453" Type="1" />
+<SAINT Name="St Maruthas, Evêque de Sophène" Id="454" Type="0" />
+<SAINT Name="St Flavien, Patriarche de Contantinople" Id="" Type="0" />
+<SAINT Name="St Flavien l'Ermite" Id="" Type="0" />
+<SAINT Name="Ste Marie la Nouvelle de Byrie en Thrace" Id="" Type="0" />
+<SAINT Name="St Honeste, disciple de St Saturnin" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мчч. Памфила пресвитера, Валента диакона, Павла, Порфирия, Селевкия, Феодула, Иулиана, Самуила, Илии, Даниила, Иеремии, Исаии (308-309)" Id="453" Type="1"/>
+<SAINT Name="Свт. Макария митр. Московского и Коломенского (1926)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Павла пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Мчч. Персидских в Мартирополе (IV)" Id="" Type="0"/>
+<SAINT Name="Прп. Маруфа, еп. Месопотамского (422)" Id="454" Type="0"/>
+</LANGUAGE>
+</DAY>

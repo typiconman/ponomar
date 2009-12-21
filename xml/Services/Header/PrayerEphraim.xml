@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Prayer of Saint Ephraim"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Prière de Saint Ephraim"/>
+</LANGUAGE>
+</COMMONPRAYER>

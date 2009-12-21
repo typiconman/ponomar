@@ -1,0 +1,16 @@
+<DAY>
+<LANGUAGE>
+<PRIMES Type="Paschal" />
+<SCRIPTURE Type="apostol" Reading="Acts_3:11-16" Pericope="8"/>
+<SCRIPTURE Type="gospel" Reading="Jn_3:22-33" Pericope="11"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Bright Saturday" Id="" Type="6" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Samedi Lumineuse" Id="" Type="6" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Светлая Суббота" Id="" Type="6" Tone="-1"/>
+</LANGUAGE>
+</DAY>

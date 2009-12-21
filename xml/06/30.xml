@@ -1,0 +1,27 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Synaxis of the Twelve Glorious and All-Praised Apostles: Peter and Andrew, James and John, Phillip, Bartholomew, Thomas, Matthew, James the son of Alpheus, Jude [Thaddeus], Simon Zealotes, and Matthias" Id="1419" Type="3" />
+<SAINT Name="New Martyr Michael of Athens" Id="" Type="0" />
+<SAINT Name="Venerable Peter, Crown Prince of the Horde" Id="1784" Type="0" />
+<SAINT Name="Murder of the Right-believing Prince Andrew of Bogoliubovo" Id="" Type="0" />
+<SAINT Name="Glorification of Saint Sophronius, Bishop of Irkutsk and All Siberia (1918)" Id="2043" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Synaxe des douze Apôtres" Id="1419" Type="3" />
+<SAINT Name="St Méliton" Id="" Type="0" />
+<SAINT Name="St Pierre de Sinope" Id="" Type="0" />
+<SAINT Name="St Michel le Jardinier à Athènes" Id="" Type="0" />
+<SAINT Name="St Georges III l'Hagiorite, Higoumène d'Iviron" Id="" Type="0" />
+<SAINT Name="St Gélase de Rimets, Evêque de Transylvanie" Id="" Type="0" />
+<SAINT Name="St Martial, Evêque de Limoges" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Собор славных и всехвальных 12-ти апостолов: Петра, Андрея, брата его, Иакова Зеведеева, Иоанна, брата его, Филиппа, Варфоломея, Фомы, Матфея, Иакова Алфеева, Иуды Иаковля, или Фаддея, Симона Зилота и Матфия" Id="1419" Type="3"/>
+<SAINT Name="Сщмч. Тимофея пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Прмч. Феогена (1939)" Id="" Type="0"/>
+<SAINT Name="Мч. Иоанна (1944)" Id="" Type="0"/>
+<SAINT Name="Прп. Петра, царевича Ордынского (Ростовского) (1290)" Id="1784" Type="0"/>
+<SAINT Name="Прославление свт. Софрония, еп. Иркутского (1918)" Id="2043" Type="0"/>
+<SAINT Name="Балыкинской (1711) и Горбаневской (XVIII) икон Божией Матери" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

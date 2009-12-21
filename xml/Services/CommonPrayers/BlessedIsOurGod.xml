@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Blessed is our God, always, now and ever, and unto the ages of ages."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Béni soit notre Dieu en tous temps,maintenant et toujours et aux siècles des siècles."/>
+</LANGUAGE>
+</COMMONPRAYER>

@@ -1,0 +1,34 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Saint John the Merciful, Patriarch of Alexandria (+612)" Id="2526" Type="2" />
+<SAINT Name="Venerable Nilus the Faster, of Sinai (5th C)" Id="2527" Type="1" />
+<SAINT Name="Prophet Ahijah (c +960 BC)" Id="2528" Type="0" />
+<SAINT Name="St Leo Stipiotes, Patriarch of Constantinople" Id="" Type="0" />
+<SAINT Name="Venerable Nilus the Myrrhstreaming of Mt Athos (17th C)" Id="2529" Type="0" />
+<SAINT Name="Venerable Martin, Bishop of Frangia" Id="" Type="0" />
+<SAINT Name="Blessed John 'the Hairy', at Rostov (+1580)" Id="967" Type="0" />
+<SAINT Name="New Martyrs Sabbas and Nicholas of Constantinople" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Jean le Miséricordieux, Archevêque d'Alexandrie" Id="2526" Type="2" />
+<SAINT Name="St Nil l'Ascète" Id="2527" Type="1" />
+<SAINT Name="St Prophète Ahiia" Id="2528" Type="0" />
+<SAINT Name="St Arsakios de Tarracine" Id="" Type="0" />
+<SAINT Name="Sts Antonin, Zébinas, Germain, et Ennathas" Id="" Type="0" />
+<SAINT Name="St Léon, Patriarche de Constantinople" Id="" Type="0" />
+<SAINT Name="St Nil le Jeune ou le Myroblyte (Athos)" Id="2529" Type="0" />
+<SAINT Name="St Sabas de Nigdélie et St Samolade" Id="" Type="0" />
+<SAINT Name="St Nicolas de Marmaras" Id="" Type="0" />
+<SAINT Name="St Jean le Chevelu, Fol en Christ à Rostov" Id="967" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Свт. Иоанна Милостивого, патриарха Александрийского (616-620)" Id="2526" Type="2"/>
+<SAINT Name="Прп. Нила постника (V)" Id="2527" Type="1"/>
+<SAINT Name="Сщмчч. Константина, Владимира, Александра, Матфея, Димитрия пресвитеров (1937)" Id="" Type="0"/>
+<SAINT Name="Мч.  Бориса (1942)" Id="" Type="0"/>
+<SAINT Name="Прор. Ахии (960 до Р.Х.)" Id="2528" Type="0"/>
+<SAINT Name="Блж. Иоанна Власатого, Ростовского (1580)" Id="967" Type="0"/>
+<SAINT Name="Прп. Нила Мироточивого, Афонского (1651)" Id="2529" Type="0"/>
+<SAINT Name="Иконы Божией Матери &quot;Милостивая&quot;" Id="2530" Type="0"/>
+</LANGUAGE>
+</DAY>

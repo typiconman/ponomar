@@ -1,0 +1,30 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Therapon the Bishop of Sardis (3rd C)" Id="1148" Type="1" />
+<SAINT Name="Translation of the relics of the Venerable Nilus of Stolbensk (1667)" Id="1635" Type="3" />
+<SAINT Name="Holy Martyrs Theodora the Virgin and Didymus the Soldier (+304)" Id="1149" Type="0" />
+<SAINT Name="Translation of the relics of Saints Cyprian, Photius, and Jonah, Hierarchs of Moscow (1472)" Id="1209" Type="0" />
+<SAINT Name="Venerable Therapontes the Abbot of White Lake (+1426)" Id="2275" Type="0" />
+<SAINT Name="Venerable Therapon the Abbot of Monza (+1597)" Id="2277" Type="0" />
+<SAINT Name="St. John the Russian, the Confessor, whose relics are on the island of Euboia (+1730)" Id="1010" Type="4" />
+<SAINT Name="Venerable David Gareji of Georgia" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Jean le Russe" Id="1010" Type="4" />
+<SAINT Name="St Hellade, Hiéromartyr" Id="" Type="0" />
+<SAINT Name="St Théraponte de Sardes" Id="1148" Type="1" />
+<SAINT Name="Sts Alypios, Eubiote, Paul et Julienne" Id="" Type="0" />
+<SAINT Name="Sts Cyprien, Photius et Jonas, Métropolite de Kiev (translation des reliques)" Id="1209" Type="0" />
+<SAINT Name="St Théraponte du Lac Blanc" Id="2275" Type="0" />
+<SAINT Name="St Nil de Stolbensk (translation des reliques)" Id="1635" Type="3" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Ферапонта, еп. Сардийского (III)" Id="1148" Type="1"/>
+<SAINT Name="Обретение мощей прп. Нила Столобенского (1667)" Id="1653" Type="3"/>
+<SAINT Name="Прав. Иоанна Русского, исп (1730)" Id="1010" Type="4"/>
+<SAINT Name="Мчч. Феодоры девы и Дидима воина (304)" Id="1149" Type="0"/>
+<SAINT Name="Прп. Ферапонта Белоезерского, Можайского (1426)" Id="2275" Type="0"/>
+<SAINT Name="Перенесение мощей свтт. Московских Киприана, Фотия и Ионы (1472)" Id="1209" Type="0"/>
+<SAINT Name="Прп. Ферапонта Монзенского (1597)" Id="2277" Type="0"/>
+</LANGUAGE>
+</DAY>

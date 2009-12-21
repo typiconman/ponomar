@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Source: http://www.orthodox.net/pascha/paschalhours.html"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Source : ??"/>
+</LANGUAGE>
+</COMMONPRAYER>

@@ -1,0 +1,6 @@
+<TONE>
+<LANGUAGE>
+<PRIMES TROPARION1="TUES4" Type="Normal" KONTAKION1="TUES4" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
+<PRIMES Type="Lenten" KONTAKION1="MTTL" Cmd="(nday > -50 &amp;&amp; nday < 0)" />
+</LANGUAGE>
+</TONE>

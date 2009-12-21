@@ -1,0 +1,45 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="19" Cmd="nday == -49" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Afterfeast of the Meeting of the Lord" Id="" Type="3" Cmd="nday &lt; -49" />
+<SAINT Name="Holy and Righteous Simeon the God-Receiver and Anna the Prophetess (1st C)" Id="1998" Type="2" />
+<SAINT Name="Prophet Azariah (10th C. BC)" Id="6385" Type="0" />
+<SAINT Name="Martyrs Adrian and Ebbulus" Id="" Type="0" />
+<SAINT Name="Martyr Blaise of Caesarea (3rd C)" Id="380" Type="0" />
+<SAINT Name="Martyrs Papius, Diodorus, and Claudian" Id="" Type="0" />
+<SAINT Name="Blessed Prince Roman of Uglich (+1285)" Id="1880" Type="0" />
+<SAINT Name="Saint Simeon, Bishop of Tver (+1289)" Id="2009" Type="0" />
+<SAINT Name="Right-believing Great Prince Sviatoslav, in baptism Gabriel" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Ansgar, Archbishop of Bremen and Hamburg, Enlightener of Denmark and the North (+865)" Id="" Type="0" />
+<SAINT Name="Holy Equal-to-the-Apostles Nicholas, Archbishop and Enlightener of Japan (+1912)" Id="1640" Type="1" />
+<SAINT Name="Holy Equal-to-the-Apostles Innocent, Metropolitan of Moscow, Enlightener of Alaska" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Syméon le Théodoque ('celui qui a reçu Dieu') et Ste Anne la Prophétesse" Id="1998" Type="2" />
+<SAINT Name="Sts Adrien et Eubule" Id="" Type="0" />
+<SAINT Name="St Blaise le Bouvier" Id="380" Type="0" />
+<SAINT Name="St Azarias" Id="6385" Type="0" />
+<SAINT Name="Sts Paul et Simon" Id="" Type="0" />
+<SAINT Name="St Claude" Id="" Type="0" />
+<SAINT Name="Sts Néomartyrs Stamatios, Jean et Nicolas à Chios" Id="" Type="0" />
+<SAINT Name="St Nicolas, Archevêque du Japon" Id="1640" Type="1" />
+<SAINT Name="St Syméon, 1er Evêque de Tver" Id="2009" Type="0" />
+<SAINT Name="St Romain, Prince d'Ouglitch" Id="1880" Type="0" />
+<SAINT Name="St Anschaire, Evêque de Hambourg et Apôtre de la Scandinavie" Id="" Type="0" />
+<SAINT Name="St Sabas de Ioannina" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Попразднство Сретения Господня." Id="" Type="1" Cmd="nday &lt; -49"/>
+<SAINT Name="Правв. Симеона Богоприимца и Анны пророчицы (I)" Id="1998" Type="2"/>
+<SAINT Name="Равноап. Николая, архиеп. Японского (1912)." Id="1640" Type="1"/>
+<SAINT Name="Сщмчч. Иоанна, Тимофея, Адриана, Василия пресвитеров, прмч. Владимира, мч. Михаила (1938)" Id="" Type="0"/>
+<SAINT Name="Прор. Азарии (X в до Р.X.)" Id="6385" Type="0"/>
+<SAINT Name="Мчч. Папия, Диодора, Клавдиана (250)" Id="" Type="0"/>
+<SAINT Name="Мч. Власия Кесарийского, пастуха (III)" Id="380" Type="0"/>
+<SAINT Name="Мчч. Адриана и Еввула (ок. 308-309)" Id="" Type="0"/>
+<SAINT Name="Блгв. кн. Романа Угличского (1285)" Id="1880" Type="0"/>
+<SAINT Name="Свт. Симеона, еп. Полоцкого, еп. Тверского (1289)" Id="2009" Type="0"/>
+</LANGUAGE>
+</DAY>

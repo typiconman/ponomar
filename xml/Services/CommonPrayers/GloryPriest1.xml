@@ -1,0 +1,8 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Glory to Thee, O Christ our God and our hope, glory to Thee."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Gloire à toi, Christ Dieu, notre espérance, gloire à toi."/>
+</LANGUAGE>
+</COMMONPRAYER>

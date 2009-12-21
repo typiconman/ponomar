@@ -1,0 +1,55 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Greatmartyr Paraskeva (Piatnitsa) of Iconium (3rd C)" Id="14172" Type="3" />
+<SAINT Name="Martyrs Terence and Neonilla and their children: Sarbilus, Photus, Theodulus, Hierax, Nitus, Vilus and Eunicia (3rd C)" Id="" Type="1" />
+<SAINT Name="Venerable Stephen the Hymnographer of St Sabbas Monastery (4th C)" Id="4606" Type="1" />
+<SAINT Name="Holy Hierarch Arsenius, Archbishop of Serbia" Id="269" Type="3" />
+<SAINT Name="Martyrs Africanus, Terentius, Maximus, and Pompius" Id="" Type="0" />
+<SAINT Name="Hieromartyr Kyriacus, Patriarch of Jerusalem" Id="" Type="0" />
+<SAINT Name="Hieromartyr Neophite, Bishop of Urbnia" Id="4607" Type="0" />
+<SAINT Name="Venerable John Chozebite, Bishop of Caesarea" Id="1660" Type="0" />
+<SAINT Name="Martyr Anna" Id="" Type="0" />
+<SAINT Name="Venerable Firmilian, Archbishop of Caesarea in Cappadocia" Id="" Type="0" />
+<SAINT Name="Venerable Melchion, Presbyter of Antioch" Id="" Type="0" />
+<SAINT Name="Righteous Queen Febronia" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Dmitri, Metropolitan of Rostov (+ 1709)" Id="601" Type="4" />
+<SAINT Name="Venerable Job, Abbot and Wonderworker of Pochaev (+ 1651)" Id="1037" Type="4" />
+<SAINT Name="Blessed Theophilus of Kiev, the Fool-for-Christ" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Mikhail Lektorsky (+1920)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Térence, sa femme Néonile et leyrs enfants" Id="" Type="1" />
+<SAINT Name="St Etienne le Sabaïte" Id="4606" Type="1" />
+<SAINT Name="St Etienne le Sabaïte, neveu de St Jean Damacène" Id="" Type="0" />
+<SAINT Name="Sts Térence, Africanus, Maxime, Pompéeet leurs 36 compagnons" Id="" Type="0" />
+<SAINT Name="Sts Firmilien et Melchion" Id="" Type="0" />
+<SAINT Name="Ste Fébronia" Id="" Type="0" />
+<SAINT Name="St Cyriaque, Evêque de Jérusalem et sa mère Anne" Id="" Type="0" />
+<SAINT Name="St Athanase, Patriarche de Contantinople" Id="" Type="0" />
+<SAINT Name="Sts Angélis, Manuel, Georges et Nicolas de Crète" Id="" Type="0" />
+<SAINT Name="St Dimitris, Métropolite de Rostov" Id="601" Type="4" />
+<SAINT Name="St Job de Potchaev" Id="1037" Type="4" />
+<SAINT Name="St Arsène, Evêque de Petch" Id="269" Type="3" />
+<SAINT Name="St Néophyte, Evêque d'Urbinsk en Géorgie" Id="4607" Type="0" />
+<SAINT Name="St Nestor des Grottes de Kiev" Id="" Type="0" />
+<SAINT Name="Ste Parascève de Pirmin (Archangelsk)" Id="" Type="0" />
+<SAINT Name="St Diomède de Chypre" Id="" Type="0" />
+<SAINT Name="St Ratislav de Moravie" Id="" Type="0" />
+<SAINT Name="St Théophile, Fol en Christ des Grottes de Kiev" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Вмц. Параскевы, нареченной Пятница (III)" Id="14172" Type="3"/>
+<SAINT Name="Мчч. Терентия и Неониллы и чад их: Сарвила, Фота, Феодула, Иеракса, Нита, Вила, Евникии (ок. 249-250)" Id="" Type="1"/>
+<SAINT Name="Прп. Стефана Савваита, творца канонов (IX)" Id="4606" Type="1"/>
+<SAINT Name="Свт. Арсения I, архиеп. Сербского (1266)" Id="269" Type="3"/>
+<SAINT Name="Прп. Иова, игумена Почаевского (1651)" Id="1037" Type="4"/>
+<SAINT Name="Свт. Димитрия, митр. Ростовского (1709)" Id="601" Type="4"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Мчч. Африкана, Терентия, Максима, Помпия и иных 36-ти (III)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Кириака, Патриарха  Иерусалимского (363)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Неофита, еп. Урбнисского (587)" Id="4607" Type="0"/>
+<SAINT Name="Прп. Иоанна Хозевита, еп. Кесарийского (VI)" Id="1660" Type="0"/>
+<SAINT Name="Нестора Некнижного, Печерского (XIV)" Id="" Type="0"/>
+<SAINT Name="Прп. Феофила Киевского, Христа ради юродивого (1853)" Id="" Type="0"/>
+</LANGUAGE>
+</DAY>

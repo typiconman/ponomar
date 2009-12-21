@@ -1,0 +1,10 @@
+﻿<KONTAKION>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="<center><b>Kontakion in the Seventh Tone</b></center>
+<p>The dominion of death can no longer hold men captive, for Christ descended, shattering and destroying its powers! Hell is bound, while the prophets rejoice and cry: The Savior has come to those in faith! Enter, you faithful, into the Resurrection!</p>"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="<center><b>Kondakion dans le septième ton</b></center>
+<p>Désormais la force de la mort est impuissante à retenir les mortels, car le Christ est descendu, brisant et détruisant les puissances de la mort ; l'enfer est enchaîné, les Prophètes tous ensemble se réjouissent. Le Sauveur, disent-ils, est apparu à ceux qui demeurent dans la foi ; venez, fidèles, prendre part à la Résurrection.</p>"/>
+</LANGUAGE>
+</KONTAKION>

@@ -1,0 +1,36 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="16" Cmd="dow == 0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Daniel the 'Stylite' [Pillar-Dweller] of Constantinople (+489-490)" Id="585" Type="1" />
+<SAINT Name="Venerable Nikon the Lean of the Caves of Kiev (12th C)" Id="3101" Type="0" />
+<SAINT Name="Venerable Luke the 'New Stylite' of Chalcedon [Pillar-Dweller] (+c.970-980)" Id="3104" Type="0" />
+<SAINT Name="Martyrs Acepsius and Aiphalus" Id="3103" Type="0" />
+<SAINT Name="Martyr Mirax of Egypt (7th C)" Id="3102" Type="0" />
+<SAINT Name="Venerable Leontius" Id="" Type="0" />
+<SAINT Name="Holy New Martyr Theophan, Bishop of Solikamsk (+1918)" Id="4926" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Daniel le Stylite" Id="585" Type="1" />
+<SAINT Name="St Luc le Nouveau Stylite" Id="3104" Type="0" />
+<SAINT Name="Sts Aeithalas et Apsées" Id="3103" Type="0" />
+<SAINT Name="St Mirax" Id="3102" Type="0" />
+<SAINT Name="St Barsabas et ses compagnons en Perse" Id="" Type="0" />
+<SAINT Name="Sts Térence, Vincent, Emilien et Bébaia" Id="" Type="0" />
+<SAINT Name="Sts Véchianos et Nomon à Chypre" Id="" Type="0" />
+<SAINT Name="St Léonce d'Achaïe" Id="" Type="0" />
+<SAINT Name="St Nicon le Sec des Grottes de Kiev" Id="3101" Type="0" />
+<SAINT Name="Sts Gentien Victoric et Fuscien d'Amiens" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Даниила Столпника (489-490)" Id="585" Type="1"/>
+<SAINT Name="Сщмч. Феофана, еп. Соликамского, и с ним двух священномучеников и пяти мучеников (1918)" Id="4926" Type="0"/>
+<SAINT Name="Сщмч. Николая пресвитера (1937)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1941)" Id="4818" Type="0"/>
+<SAINT Name="Мч. Миракса (VII)" Id="3102" Type="0"/>
+<SAINT Name="Прп. Луки Столпника (970-980)" Id="3104" Type="0"/>
+<SAINT Name="Прп. Никона Сухого, Печерского (XII)" Id="3101" Type="0"/>
+<SAINT Name="Мчч. Акепсия и Аифала" Id="3103" Type="0"/>
+</LANGUAGE>
+</DAY>

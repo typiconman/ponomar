@@ -1,0 +1,33 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="vespers" Reading="Isa_43:9-14" Note="for the 40 Martyrs"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" Note="for the 40 Martyrs"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_5:15-6:3" Note="for the 40 Martyrs"/>
+<SCRIPTURE Type="matins" Reading="Lk_21:12-19" Pericope="106" Note="for the 40 Martyrs" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Heb_12:1-10" Pericope="331" Note="for the 40 Martyrs"/>
+<SCRIPTURE Type="gospel" Reading="Mt_20:1-16" Pericope="80" Note="for the 40 Martyrs"/>
+<LITURGY Type="3" Comment="Pre-Sanctified Liturgy sometimes" Cmd="dow != 6 &amp;&amp; dow != 0 &amp; nday != 17 &amp; nday != 15"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="The Holy Forty Martyrs of Sebaste (+ c.320): Cyrion, Candidus, Domnus, Hesychius, Iraclius, Smaragdus, Eunoicus, Valentus, Vivian, Claudius, Priskus, Theodulus, Eutichius, John, Xanthus, Ilian, Sisinius, Angius, Aetius, Flavius, Dometian, Gaius, Leontius, Athanasius, Cyrill, Sakerdonus, Nicholas, Valerius, Philoctimon, Seberian, Chudionus, Aglaius, and Meliton" Id="1238" Type="4" />
+<SAINT Name="(The Service for the Martyrs is sung on the previous Tuesday)" Id="" Type="0" Cmd="nday == 17" />
+<SAINT Name="(The Service for the Martyrs is sung on the Fifth Sunday of Lent)" Id="" Type="0" Cmd="nday == 15" />
+<SAINT Name="(The Service for the Martyrs is sung on the previous Tuesday)" Id="" Type="0" Cmd="nday == 25" />
+<SAINT Name="Martyr Urpasianus of Nicomedia (+ c.295)" Id="600" Type="0" />
+<SAINT Name="Venerable Caesarius, brother of St Gregory the Theologian (+ c.369)" Id="601" Type="0" />
+<SAINT Name="Martyr Philoromus" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts quarante Martyrs de Sébaste" Id="1238" Type="4" />
+<SAINT Name="St Urpasien" Id="600" Type="0" />
+<SAINT Name="St Césaire de Naziance, frère de St Grégoire le Théologien" Id="601" Type="0" />
+<SAINT Name="St Pacien, Evêque de Barcelone" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="40 мучеников, в Севастийском озере мучившихся: Кириона, Кандида, Домна, Исихия, Ираклия, Смарагда, Евноика, Уалента (Валента), Вивиана, Клавдия, Приска, Феодула, Евтихия, Иоанна, Ксанфия, Илиана, Сисиния, Ангия, Аетия, Флавия, Акакия, Екдикия (Екдикта), Лисимаха, Александра, Илия, Горгония, Феофила, Дометиана, Гаия, Леонтия, Афанасия, Кирилла, Сакердона, Николая, Уалерия (Валерия), Филоктимона, Севериана, Худиона, Мелитона и Аглаия (ок. 320). Сщмчч. Михаила, Алексия, Димитрия, Сергия, Сергия пресвитеров и Николая диакона, прмч. Иоасафа и прмцц. Наталии и Александры (1938)" Id="1238" Type="4"/>
+<SAINT Name="Мч. Урпасиана (ок. 295)" Id="600" Type="0"/>
+<SAINT Name="Св. Кесария, брата свт. Григория Богослова (ок. 369)" Id="601" Type="0"/>
+<SAINT Name="Прав. Тарасия." Id="" Type="0"/>
+<SAINT Name="Албазинской иконы Божией Матери, именуемой &quot;Слово плоть бысть&quot; (1666)" Id="602" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,31 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Fathers slain at the Monastery of Saint Sabbas: John, Sergius, Patrick and others (+796)" Id="678" Type="1" />
+<SAINT Name="Martyr Photina (Svetlana), the Samaritan Woman, her sons, and those with her (+ c.66)" Id="680" Type="0" />
+<SAINT Name="Holy Virgin Martyrs Alexandra, Claudia, Euphrasia, Matrona, Juliania, Euthymia and Theodosia (+310)" Id="681" Type="0" />
+<SAINT Name="St. Nicetas the Confessor the Archbishop of Apollonias in Bithynia (9th C)" Id="682" Type="0" />
+<SAINT Name="Monkmartyr Euphrosynus of Blue Jay Lake, Novgorod (+1612)" Id="748" Type="0" />
+<SAINT Name="New Martyr Miron of Crete" Id="" Type="0" />
+<SAINT Name="St. Cuthbert, Wonderworker of Britain (+687)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts. Pères du Monastère de St. Sabbas" Id="678" Type="1" />
+<SAINT Name="Stes Alexandra, Claudia, Euphrasie, Matrone, Julienne, Euphémie et Théodosie" Id="681" Type="0" />
+<SAINT Name="St Nicétas le Confesseur, Evêque d'Apollonias" Id="682" Type="0" />
+<SAINT Name="St Rodien" Id="" Type="0" />
+<SAINT Name="St Akylas le Prefet" Id="" Type="0" />
+<SAINT Name="St Lollion" Id="" Type="0" />
+<SAINT Name="St Emmanuel" Id="" Type="0" />
+<SAINT Name="St Myron le Crétois" Id="" Type="0" />
+<SAINT Name="St Cuthbert, Evêque de Lindisfarne" Id="" Type="0" />
+<SAINT Name="St. Euphrosinus du Lac Bleu" Id="748" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прпп. Иоанна, Сергия, Патрикия и прочих, во обители св. Саввы убиенных (796)" Id="678" Type="1"/>
+<SAINT Name="Сщмч. Василия диакона (1938)" Id="" Type="0"/>
+<SAINT Name="Мц. Фотины (Светланы) самаряныни, ее сыновей мчч. Виктора, нареченного Фотином, и Иосии; мцц. Анатолии, Фото, Фотиды, Параскевы, Кириакии, Домнины и мч. Севастиана (ок. 66)" Id="680" Type="0"/>
+<SAINT Name="Мцц. Александры, Клавдии, Евфрасии, Матроны, Иулиании, Евфимии и Феодосии (310)" Id="681" Type="0"/>
+<SAINT Name="Свт. Никиты, исп., архиеп. Аполлониадского (IX)" Id="682" Type="0"/>
+<SAINT Name="Прп. Евфросина Синозерского, Новгородского (1612)" Id="748" Type="0"/>
+</LANGUAGE>
+</DAY>

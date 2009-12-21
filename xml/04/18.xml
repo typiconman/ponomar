@@ -1,0 +1,32 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable John the Disciple of Venerable Gregory of Decapolis (+ c.820-850)" Id="880" Type="1" />
+<SAINT Name="Saint Cosmas, Bishop of Chalcedon, and his companion St. Auxentius (+815-820)" Id="882" Type="0" />
+<SAINT Name="Martyrs Victor, Zoticus, Acindynus, Xeno, Severian and Caesarius (+303)" Id="881" Type="0" />
+<SAINT Name="New Martyr John the New of Epirus (+1526)" Id="883" Type="0" />
+<SAINT Name="New Martyr John Culicus" Id="" Type="0" />
+<SAINT Name="Martyr Mappalycus" Id="" Type="0" />
+<SAINT Name="Venerable Anthony, Euthymius, and Felix, Enlighteners of Karelia and Finland (15th C)" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God of Maximov (1299)" Id="885" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Père Jean l'Isaurien" Id="" Type="0" />
+<SAINT Name="St Sabas le Goth" Id="" Type="0" />
+<SAINT Name="St Cosmas le Confesseur, Evêque de Chalcédoine" Id="882" Type="0" />
+<SAINT Name="St Euthyme le Taumaturge" Id="" Type="0" />
+<SAINT Name="St Naucrace le Studite" Id="" Type="0" />
+<SAINT Name="Ste Anastasie la Thaumaturge" Id="" Type="0" />
+<SAINT Name="St Jean de Joannina" Id="883" Type="0" />
+<SAINT Name="St Jean Koulikas" Id="" Type="0" />
+<SAINT Name="St Père Euthyme, Illuminateur de la Carélie" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Иоанна, ученика св. Григория Декаполита (ок. 820-850)" Id="880" Type="1"/>
+<SAINT Name="Сщмч. Виссариона пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Прмц. Тамары (1942)" Id="" Type="0"/>
+<SAINT Name="Мчч. Виктора, Зотика, Зинона, Акиндина и Севериана (303)" Id="881" Type="0"/>
+<SAINT Name="Свт. Космы исп., еп. Халкидонского, и прп. Авксентия (815-820)" Id="882" Type="0"/>
+<SAINT Name="Мч. Иоанна Нового из Янины (1526)" Id="883" Type="0"/>
+<SAINT Name="Максимовской иконы Божией Матери (1299)" Id="885" Type="0"/>
+</LANGUAGE>
+</DAY>

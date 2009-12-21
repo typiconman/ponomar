@@ -1,0 +1,31 @@
+<SERVICES>
+<!-- The Paschal Hours are invariant and the same for all of the Bright Week. They replace the First, Third, Sixth, and Ninth Hours, the Compline, and the Midnight Office -->
+<LANGUAGE>
+<TITLE Value="PaschalHoursV" Header="PaschalHoursH" Source="PaschalHoursSource" Comment="PaschalHoursComment"/>
+<CREATE What="BlessedIsOurGod" Who="P" RedFirst="1" Cmd="PS != 0" />
+<CREATE What="ThroughPrayers" Who="R" RedFirst="1" Cmd="PS == 0"/>
+<CREATE What="Amen" Who="R" RedFirst="1" NewLine="1" />
+<CREATE What="ChristIsRisenR" Who="C" RedFirst="1" Times="3" NewLine="1"/>
+<CREATE What="HavingBeheld" Who="C" RedFirst="1" Times="3" NewLine="1"/>
+<CREATE What="EasterHypakoe8" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="EasterKontakion8" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="EasterTropar81" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather2" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="EasterTropar82" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="BothNow" Who="c" RedFirst="1" NewLine="1" />
+<CREATE What="EasterTropar83" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="LordHaveMercyOnce" Who="R" RedFirst="1" NewLine="1" Command="Fourty"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="MoreHonorable" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="InvocationFather2" Who="R" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="InvocationMaster2" Who="R" RedFirst="1" NewLine="1" Cmd="PS == 0"/>
+<CREATE What="BlessingPHours" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="Amen" Who="C" NewLine="1" RedFirst="1"/>
+<CREATE What="ChristIsRisenR" Who="C" RedFirst="1" Times="3" NewLine="1"/>
+<CREATE What="GloryToTheFather1" Who="C" RedFirst="1" NewLine="1"/>
+<CREATE What="InvocationFather" Who="R" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="EasterEnding" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="Ending" Who="R" RedFirst="1" NewLine="1" Cmd="PS == 0"/>
+<CREATE What="Amen" Who="C" RedFirst="1" NewLine="1" />
+</LANGUAGE>
+</SERVICES>

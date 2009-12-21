@@ -1,0 +1,10 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Easter Kontakion (Tone 8)"/>
+<TEXT Value="Though Thou didst descend into the grave, O Immortal One, yet didst Thou destroy the power of hades. And didst arise as victor, O Christ God, calling to the myrrh-bearing women: Rejoice! And giving peace unto Thine apostles: Thou Who dost grant resurrection to the fallen."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Kontakion (Tone 8)"/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+</COMMONPRAYER>

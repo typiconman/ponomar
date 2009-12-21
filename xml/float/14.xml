@@ -1,0 +1,16 @@
+<DAY>
+<!-- Sunday closest to the 11th of October -->
+<LANGUAGE>
+<SCRIPTURE Type="apostol" Reading="Heb_13:7-16" Pericope="334" Note="for the Fathers"/>
+<SCRIPTURE Type="gospel" Reading="Jn_17:1-13" Pericope="56" Note="for the Fathers"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Fathers of the Seventh Ecumenical Council" Id="" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Dimanche des saints Pères du 7-me concile oecuménique" Id="" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Память свв. отцев седьмого вселенского собора" Id="" Type="4" />
+</LANGUAGE>
+</DAY>

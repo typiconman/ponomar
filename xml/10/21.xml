@@ -1,0 +1,49 @@
+<DAY>
+<LANGUAGE>
+<SAINT Name="9" Cmd="dow == 6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Hilarion the Great (+ 371-372)" Id="4561" Type="2" />
+<SAINT Name="Transfer of the relics of Saint Hilarion, Bishop of Meglina in Bulgaria (1206)" Id="928" Type="2" />
+<SAINT Name="Martyrs Dasius, Gaius, and Zoticus" Id="4567" Type="0" />
+<SAINT Name="Venerable Hilarion, Abbot of Pskovoezersk" Id="933" Type="0" />
+<SAINT Name="Venerable Theophilus and James, Abbots of Omucha in Pskov (c. 1412)" Id="4566" Type="0" />
+<SAINT Name="Saint Hilarion the Schema-Monk of the Caves of Kiev (16th C)" Id="932" Type="0" />
+<SAINT Name="Venerable Theophilus of Mt Athos" Id="" Type="0" />
+<SAINT Name="New Martyr John of the Peloponesis" Id="" Type="0" />
+<SAINT Name="New Hieromartyrs Pavlin, Bishop of Mogilev, Artemiy, Archbishop of Ekaterinburg, and those with them (+1937)" Id="4882" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Hilarion le Grand" Id="4561" Type="2" />
+<SAINT Name="St Philothée de l'Athos" Id="" Type="0" />
+<SAINT Name="Sts Gaïus, Dasius et Zotique" Id="4567" Type="0" />
+<SAINT Name="St Zacharie, moine" Id="" Type="0" />
+<SAINT Name="Ste Théodote et St Socrate" Id="" Type="0" />
+<SAINT Name="St Eucratos" Id="" Type="0" />
+<SAINT Name="St Baruch" Id="" Type="0" />
+<SAINT Name="St Azis" Id="" Type="0" />
+<SAINT Name="St Jean de Monembasia" Id="" Type="0" />
+<SAINT Name="St Jacques du Monastère du Christ Sauveur" Id="" Type="0" />
+<SAINT Name="St Plantin et Ste Irène" Id="" Type="0" />
+<SAINT Name="St Hilarion des Grottes de Kiev" Id="932" Type="0" />
+<SAINT Name="Sts Théophile et Jacques de Omoutsk (Pskov)" Id="4566" Type="0" />
+<SAINT Name="St Hilarion du lac Pskov" Id="933" Type="0" />
+<SAINT Name="St Hilarion, Evêque de Meglin en Bulgarie" Id="928" Type="2" />
+<SAINT Name="Sts Vessarion, sophrone et Opréa de Roumanie" Id="" Type="0" />
+<SAINT Name="Sts Moïse Matsinic de Sibiu et Jean de Galesh" Id="" Type="0" />
+<SAINT Name="St Vulfolaïc, stylite de CarignanSte Ursule et ses compagnes à Cologne" Id="" Type="0" />
+<SAINT Name="St Fintan de Taghmon" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Илариона Великого (371-372)" Id="4561" Type="2"/>
+<SAINT Name="Перенесение мощей свт. Илариона, еп. Меглинского (1206)" Id="928" Type="2"/>
+<SAINT Name="Сщмчч. Павлина, архиеп. Могилевского, Аркадия, еп. Екатеринбургского, и с ними Анатолия и Никандра пресвитеров и мч. Киприана (1937)" Id="4882" Type="0"/>
+<SAINT Name="Сщмч. Дамиана, архиеп. Курского (1937)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Константина, Сергия, Василия, Феодора, Владимира, Николая, Иоанна, Василия, Александра, Димитрия и Алексия пресвитеров, Сергия и Иоанна диаконов и прмч. Софрония (1937)" Id="4906" Type="0"/>
+<SAINT Name="Прмц. Пелагии (1944)" Id="" Type="0"/>
+<SAINT Name="Мчч. Дасия, Гаия и Зотика (303)" Id="4567" Type="0"/>
+<SAINT Name="Прп. Илариона, схимника Печерского (XI)" Id="932" Type="0"/>
+<SAINT Name="Прпп. Феофила и Иакова Омучских (ок. 1412)" Id="4566" Type="0"/>
+<SAINT Name="Прп. Илариона Псковоезерского, Гдовского (1476)" Id="933" Type="0"/>
+</LANGUAGE>
+</DAY>

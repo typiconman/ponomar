@@ -1,0 +1,20 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="matins" Reading="Jn_12:17-50" Pericope="41"/>
+<SCRIPTURE Type="6th hour" Reading="Ezek_2:3-3:3" />
+<SCRIPTURE Type="vespers" Reading="Ex_2:11-22" />
+<SCRIPTURE Type="vespers" Reading="Job_2:1-10" />
+<SCRIPTURE Type="gospel" Reading="Mt_26:6-16" Pericope="108"/>
+<PRIMES Type="Lenten" />
+<LITURGY Type="3" Comment="Pre-sanctified always" Cmd="dRank != 6"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Great Wednesday" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Mercredi Saint" Id="" Type="0" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Великая среда" Id="" Type="0" Tone="-1"/>
+</LANGUAGE>
+</DAY>

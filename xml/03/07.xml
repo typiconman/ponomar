@@ -1,0 +1,27 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="On this day we sing the service for the Forty Martyrs" Id="1238" Type="4" Cmd="nday == 19" />
+<SAINT Name="Hieromartyrs Basil, Ephraim, Eugene, Elpidius, Agathodorus, Aetherius, and Kapiton of Cherson (4th C)" Id="588" Type="1" />
+<SAINT Name="Venerable Paul the Simple (4th C)" Id="1668" Type="0" />
+<SAINT Name="Venerable Nestor and Arcadius, Bishops of Tremethus in Cyprus" Id="" Type="0" />
+<SAINT Name="Venerable Emilian, in the world Victorinus, of Italy" Id="590" Type="0" />
+<SAINT Name="St. Paul the Confessor the Bishop of Plusias (9th C)" Id="589" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Ephrem, Basile, Eugène, Agathodore, Capiton, Etherius et Elpidius, Evêques de Cherson" Id="588" Type="1" />
+<SAINT Name="Sts Arcade et Nestor, Evêques de Trimithonte" Id="" Type="0" />
+<SAINT Name="St Paul le Simple, disciple de St Antoine le Grand" Id="1668" Type="0" />
+<SAINT Name="St Ephrem, Patriarche d'Antioche" Id="" Type="0" />
+<SAINT Name="St Laurent, fondateur du monastère de la Mère de Dieu 'Phanéroménie' à Salamine" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Совершаем службу святым 40 мученикам Севастийским" Id="1238" Type="4" Cmd="nday == 19"/>
+<SAINT Name="Священномучеников, в Херсонесе епископствовавших: Василия, Ефрема, Капитона, Евгения, Еферия, Елпидия и Агафодора (IV)" Id="588" Type="1"/>
+<SAINT Name="Сщмч. Николая пресвитера (1930)" Id="" Type="0"/>
+<SAINT Name="Прмч. Нила, прмцц. Матроны, Марии, Евдокии, Екатерины, Антонины, Надежды, Ксении и Анны (1938)" Id="" Type="0"/>
+<SAINT Name="Прп. Павла Препростого (IV)" Id="1668" Type="0"/>
+<SAINT Name="Свт. Павла исп., еп. Прусиадского (IX)" Id="589" Type="0"/>
+<SAINT Name="Прп. Емилиана Италийского." Id="590" Type="0"/>
+<SAINT Name="Иконы Божией Матери &quot;Споручница грешных&quot;, в Корце (Ровенск. обл.) (1622) в Одрине (Орловск. обл.) (1843) и в Москве (1848)" Id="592" Type="0"/>
+</LANGUAGE>
+</DAY>

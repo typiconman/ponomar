@@ -1,0 +1,16 @@
+﻿<DAY>
+<LANGUAGE>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Eph_5:9-19" Pericope="229"/>
+<SCRIPTURE Type="gospel" Reading="Mt_18:10-20" Pericope="75"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Day of the Holy Spirit" Id="" Type="6" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Jour de la Sainte Ésprit" Id="" Type="6" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Понедельник Святого Духа" Id="" Type="6" Tone="-1"/>
+</LANGUAGE>
+</DAY>

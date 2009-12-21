@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Troparion of the Prophecy"/>
+<TEXT Value="Thou wast struck on the face for the sake of mankind, yet wast not moved to anger; deliver our life from corruption, O Lord, and save us."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Troparion de la prophétie"/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<HEADER Value="тропарь пророчества"/>
+<TEXT Value="Заушенный за род человеческий, и не прогневавыйся свободи от истления живот наш Господи, и спаси нас"/>
+</LANGUAGE>
+</COMMONPRAYER>

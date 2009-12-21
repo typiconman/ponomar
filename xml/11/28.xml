@@ -1,0 +1,28 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Monkmartyr and Confessor Stephen the New of the Mount of St Auxentius (+ 767)" Id="3241" Type="2" />
+<SAINT Name="Martyr Irenarchus and with him 7 Womenmartyrs at Sebaste (+ 303)" Id="3242" Type="1" />
+<SAINT Name="Martyrs: Stephen, Basil, Gregory, another Gregory, John, Andrew, Peter, Anna and many others (+ 767)" Id="3244" Type="0" />
+<SAINT Name="Martyrs Andrew and Peter" Id="" Type="0" />
+<SAINT Name="Martyr Anna" Id="" Type="0" />
+<SAINT Name="Martyrs Timothy and Theodore, bishops, Peter, John, Sergius, Theodore, and Niciphorus, presbyters, Basil and Thomas, deacons, Hierotheus, Daniel, Chariton, Socrates, Comasius, and Eusebius, monks, and Etimasius the layman" Id="" Type="0" />
+<SAINT Name="Blessed Theodore, Archbishop of Rostov (1394)" Id="2198" Type="0" />
+<SAINT Name="New Hieromartyr Metropolitan Seraphim (+1937)" Id="6608" Type="3" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Etienne le Jeune et ses compagnons" Id="3241" Type="2" />
+<SAINT Name="Sts Irénarque et ses compagnons à Sébaste" Id="3242" Type="1" />
+<SAINT Name="Sts Timothée, Théodore, Evêques et leurs compagnons" Id="" Type="0" />
+<SAINT Name="St Thédore, Archevêque de Rostov" Id="2198" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прмч. и исп. Стефана Нового (767)" Id="3241" Type="2"/>
+<SAINT Name="Мч. Иринарха и святых семи жен (303)" Id="3242" Type="1"/>
+<SAINT Name="Сщмч. митрополита Серафима (1937)" Id="6608" Type="3"/>
+<SAINT Name="Сщмчч. Петра, Алексия, Алексия, Василия пресвитеров, прмч. Рафаила, Викентия и  мц. Анисии (1937)" Id="" Type="0"/>
+<SAINT Name="Мц. Параскевы (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Николая пресвитера (1941)" Id="" Type="0"/>
+<SAINT Name="Мчч. Стефана, Василия, Григория, другого Григория, Иоанна и иных многих (VIII)" Id="3244" Type="0"/>
+<SAINT Name="Свт. Феодора, архиеп. Ростовского (1394)" Id="2198" Type="0"/>
+</LANGUAGE>
+</DAY>

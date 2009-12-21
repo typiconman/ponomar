@@ -1,0 +1,16 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="apostol" Reading="I Jn_2:7-17" Pericope="70"/>
+<SCRIPTURE Type="gospel" Reading="Mk_14:3-9" Pericope="63"/>
+<PRIMES Type="Normal" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Friday of the Fast-free Week" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Vendredi de la Semaine sans jeune" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сплошная седмица. Пятница" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+</DAY>

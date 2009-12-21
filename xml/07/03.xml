@@ -1,0 +1,51 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Hyacinth of Caesarea in Cappadocia (+ 108)" Id="4142" Type="1" />
+<SAINT Name="Translation of the relics of Hieromartyr Philip, Metropolitan of Moscow (1652)" Id="2294" Type="4" />
+<SAINT Name="Martyrs Mocius and Mark" Id="4148" Type="0" />
+<SAINT Name="Martyrs Diomedes, Eulampius, Asclipiodotus, and Martyr Golindukha" Id="" Type="0" />
+<SAINT Name="Saint Anatolius, Patriarch of Constantinople (+ 458)" Id="4150" Type="0" />
+<SAINT Name="Blessed Princes Basil and Constantine of Yaroslav (13th C)" Id="6492" Type="0" />
+<SAINT Name="Venerable Alexander, Founder of the 'Unsleeping Ones' Monastery (+ c 430)" Id="112" Type="0" />
+<SAINT Name="Venerable Isaiah the Hermit" Id="" Type="0" />
+<SAINT Name="Holy Hierarchs Anatolius and Eusebius, Bishops of Laodicea" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Claudian, Patriarch of Alexandria" Id="" Type="0" />
+<SAINT Name="Venerable Anatoly, Hermit of the Caves of Kiev" Id="" Type="0" />
+<SAINT Name="Venerable Anatoly (another) of the Caves of Kiev" Id="6416" Type="0" />
+<SAINT Name="Venerable Nicodim, Abbot of Kozheyezersk (+ 1640)" Id="1627" Type="0" />
+<SAINT Name="Venerable John and Longin of Yarena" Id="4145" Type="0" />
+<SAINT Name="Blessed John of Moscow, Fool-for-Christ (+ 1589)" Id="989" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Gérasime de Carpénision" Id="" Type="0" />
+<SAINT Name="St Hyacinthe de le Cubiculaire" Id="4142" Type="1" />
+<SAINT Name="Sts Théodote, Théodotie, Golindouch, Diomède, Eulampios et Asclépias" Id="" Type="0" />
+<SAINT Name="St Anatole, Archevêque de Contantinople" Id="4150" Type="0" />
+<SAINT Name="Sts Marc et Mocios" Id="4148" Type="0" />
+<SAINT Name="St Isaïe l'Anachorète" Id="" Type="0" />
+<SAINT Name="St Joachim du Monastère de Noténa en Achaïe" Id="" Type="0" />
+<SAINT Name="Sts Basile et Constantin de Iaroslav" Id="6492" Type="0" />
+<SAINT Name="St Anatole le Reclus des Grottes de Kiev" Id="" Type="0" />
+<SAINT Name="(un autre) St Anatole des Grottes de Kiev" Id="6416" Type="0" />
+<SAINT Name="Jean de Moscou, Fol en Christ" Id="989" Type="0" />
+<SAINT Name="St Nicodème du lac Koja" Id="1627" Type="0" />
+<SAINT Name="Sts Jean et Longin, Thaumaturges de Yarensk (Solovski)" Id="4145" Type="0" />
+<SAINT Name="St Philippe, Métropolite de Moscou (translation des Reliques)" Id="2294" Type="4" />
+<SAINT Name="St Amable, Prêtre à Riom" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мч. Иакинфа (108)" Id="4142" Type="1"/>
+<SAINT Name="Перенесение мощей свт. Филиппа, митр. Московского, всея России чудотворца (1652)" Id="2294" Type="4" />
+<SAINT Name="Сщмч. Антония, архиепископа Архангельского (1931)" Id="" Type="0"/>
+<SAINT Name="Мчч. Диомида, Евлампия, Асклипиодота и мц. Голиндухи (II)" Id="" Type="0"/>
+<SAINT Name="Мчч. Мокия и Марка (IV)" Id="4148" Type="0"/>
+<SAINT Name="Прп. Александра, обители &quot;Неусыпающих&quot; первоначальника (ок. 430)" Id="112" Type="0"/>
+<SAINT Name="Свт. Анатолия, Патриарха Константинопольского (458)" Id="4150" Type="0"/>
+<SAINT Name="Прпп. Анатолия (XII) и другого Анатолия затворника (XIII), Печерских" Id="6416" Type="0"/>
+<SAINT Name="Свт. Василия, еп. Рязанского (1295)" Id="387" Type="0"/>
+<SAINT Name="Блгвв. кн. Василия и Константина Ярославских (XIII)" Id="6492" Type="0"/>
+<SAINT Name="Прп. Иоанна и Лонгина Яренгских (1544-1545)" Id="4145" Type="0"/>
+<SAINT Name="Блж. Иоанна, Христа ради юродивого, Московского (1589)" Id="989" Type="0"/>
+<SAINT Name="Прп. Никодима Кожеезерского (1640)" Id="1627" Type="0"/>
+</LANGUAGE>
+</DAY>

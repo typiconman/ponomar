@@ -1,0 +1,28 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Holy Unmercenaries Cosmas and Damian, Martyrs at Rome (+ 284)" Id="1298" Type="2" />
+<SAINT Name="Martyr Potitus at Naples (2nd C)" Id="4133" Type="0" />
+<SAINT Name="Venerable Peter of Constantinople (+ 854)" Id="4134" Type="0" />
+<SAINT Name="Venerable Nicodemus the Hagiorite" Id="" Type="0" />
+<SAINT Name="Venerable Basil (9th C)" Id="" Type="0" />
+<SAINT Name="Blessed Angelina, Princess of Serbia (16th C)" Id="2386" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="Sts Côme et Damien les Romains, Thaumaturges et Anargyres" Id="1298" Type="2" />
+<SAINT Name="St Pierre d'Evandros" Id="4134" Type="0" />
+<SAINT Name="St Léon l'Ermite" Id="" Type="0" />
+<SAINT Name="St Basile, fondateur du Monastère du Torrent-Profond (Bathys Ryax)" Id="" Type="0" />
+<SAINT Name="St Constantin l'Alaman et ses compagnons" Id="" Type="0" />
+<SAINT Name="St Léonce de Radauts" Id="" Type="0" />
+<SAINT Name="St Galle, Evêque de Clermont" Id="" Type="0" />
+<SAINT Name="St Eparque le Reclus, près d'Angoulème" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Бессребреников Космы и Дамиана, в Риме пострадавших (284)" Id="1298" Type="2"/>
+<SAINT Name="Сщмч. Аркадия пресвитера (1918)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Алексия диакона (1942)" Id="" Type="0"/>
+<SAINT Name="Мч. Потита (II)" Id="4133" Type="0"/>
+<SAINT Name="Прп. Петра патрикия (854)" Id="4134" Type="0"/>
+<SAINT Name="Прав. Ангелины, деспотиссы Сербской (XVI)" Id="2386" Type="0"/>
+</LANGUAGE>
+</DAY>

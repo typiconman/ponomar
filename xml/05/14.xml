@@ -1,0 +1,33 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Isidore of Chios" Id="1062" Type="1" />
+<SAINT Name="Venerable Isidore the Fool-For-Christ and Wonderworker of Rostov (+1474)" Id="" Type="2" />
+<SAINT Name="St. Nikita the Bishop of Novgorod and the Recluse of the Kiev Far Caves (+1109)" Id="347" Type="0" />
+<SAINT Name="Martyr Maximus (+ c.250)" Id="1063" Type="0" />
+<SAINT Name="Venerable Serapion of Egypt (5th C)" Id="1064" Type="0" />
+<SAINT Name="Saint Leontius, Patriarch of Jerusalem (13th C)" Id="1065" Type="0" />
+<SAINT Name="New Martyr Mark of Smyrna" Id="" Type="0" />
+<SAINT Name="New martyr Raiko (John) of Bulgaria" Id="" Type="0" />
+<SAINT Name="Icons of the Mother of God 'Yaroslavksaya', 'Terebinskaya', and 'Serafimo-Ponetaevskaya'" Id="1068" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Isidore de Chio" Id="1062" Type="1" />
+<SAINT Name="Sts Alexandre, Barbaros et Acolouthos" Id="" Type="0" />
+<SAINT Name="St Théraponte" Id="" Type="0" />
+<SAINT Name="St Léonce, Patriarche de Jérusalem" Id="1065" Type="0" />
+<SAINT Name="St Marc le Crétois" Id="" Type="0" />
+<SAINT Name="St Jean le Bulgare" Id="" Type="0" />
+<SAINT Name="St Isidore de Rostov, Fol en Christ" Id="" Type="2" />
+<SAINT Name="St Rhétice, Evêque d'Autun" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мч. Исидора (251)" Id="1062" Type="1"/>
+<SAINT Name="Блж. Исидора Твердислова, Христа ради юродивого, Ростовского чудотворца (1474)" Id="" Type="2"/>
+<SAINT Name="Сщмч. Петра пресвитера (1939)" Id="" Type="0"/>
+<SAINT Name="Мч. Максима (ок. 250)" Id="1063" Type="0"/>
+<SAINT Name="Прп. Серапиона Синдонита (V)" Id="1064" Type="0"/>
+<SAINT Name="Прп. Никиты, затворника Печерского, еп. Новгородского (1108)" Id="347" Type="0"/>
+<SAINT Name="Свт. Леонтия, патриарха Иерусалимского (1175)" Id="1065" Type="0"/>
+<SAINT Name="Ярославской (Печерской) иконы Божией Матери (1823)" Id="1068" Type="0"/>
+</LANGUAGE>
+</DAY>

@@ -1,0 +1,2888 @@
+-1%Circumcision of the Lord%F0%-1
+-1%Civil New Year%F0%-1
+-1%Saint Basil the Great, Archbishop of Caesarea in Cappadocia (+379)%F0%-1
+-1%Martyr Basil of Ancyra (+c.362)%F0%-1
+-1%Saint Gregory, Bishop of Nazianzus (+374), father of St Gregory the Theologian%F0%-1
+-1%Holy Hierarch Phulgentius, Bishop of Ruspia%F0%-1
+-1%Martyr Peter of Peloponessus (+1776)%F0%-1
+-1%Martyr Theodotus%F0%-1
+-1%Venerable Theodosius, Abbot of Triglia%F0%-1
+-1%New Hieromartyr Platon, Bishop of Revel and those with him: Priests Michael and Nicholas (+1919)%F0%-1
+-1%MP: New Hieromartyr Alexander, Archbishop of Samara, and those with him (+1938)%F0%-1
+-1%Forefeast of the Theophany%F1%-1
+-1%Saint Sylvester, Pope of Rome (+ 335)%F1%-1
+-1%Repose (1833), and Second Finding of the Relics (1991), of Venerable Seraphim, Wonderworker of Sarov%F1%-1
+-1%Hieromartyr Theogenes, Bishop of Parium on the Hellespont (+ c. 320)%F1%-1
+-1%Venerable Ammon of Tabennisioti%F1%-1
+-1%Venerable Theopemtus%F1%-1
+-1%Righteous Theodota%F1%-1
+-1%Venerable Mark the Deaf%F1%-1
+-1%Martyr Sergius%F1%-1
+-1%Martyrs Theopistos, Modestos, Zacheios, Zorzis (+ 1770)%F1%-1
+-1%Holy Hierarch Cosmas, Archbishop of Constantinople%F1%-1
+-1%Holy Hierarch Domnus, Bishop of Antioch%F1%-1
+-1%Venerable Sylvester of the Caves of Kiev (12th C)%F1%-1
+-1%Holy Righteous Juliana of Lazarevsk and Murom (+ 1604)%F1%-1
+-1%Forefeast of the Theophany%F2%-1
+-1%Holy Prophet Malachi (400 BC)%F2%-1
+-1%Martyr Gordius at Caesarea in Cappadocia (4th C)%F2%-1
+-1%Saint Genovefa the Virgin%F2%-1
+-1%Forefeast of the Theophany%F3%-1
+-1%Synaxis of the 70 Apostles: James, the Brother of the Lord, Cleopas, Crispus, Fortunatus, Achaicus, Simeon the Black, and others%F3%-1
+-1%Venerable Theoctistus, Abbot at Cucomo in Sicily (+ 800)%F3%-1
+-1%Martyrs Zosima the Hermit and Athanasius the Superintendent of Prisoners, Anchorites in Cilicia (3rd-4th C)%F3%-1
+-1%Venerable Euthymius the New%F3%-1
+-1%Martyrs Chrysanthus and Euthymius%F3%-1
+-1%Venerable Euthymius the Abbot and 12 other Monks, martyred at Vatopedi Monastery on Mt Athos (1275-1281)%F3%-1
+-1%Repose of St Eustathius I, Archbishop of Serbia (+ c. 1285)%F3%-1
+-1%Venerable Martyr Onuphrius of Chilander on Mt Athos (+ 1818)%F3%-1
+-1%St Aquila, Deacon of the Kievan Caves, far caves (14th C)%F3%-1
+-1%Eve of the Theophany%F4%-1
+-1%Hieromartyr Theopemptus, Bishop of Nicomedia, and Martyr Theonas the Sorcerer (+303)%F4%-1
+-1%Venerable Apollinaria the Virgin (+ c. 470)%F4%-1
+-1%Prophet Micah (9th C BC)%F4%-1
+-1%Venerable Gregory of Crete (+ c. 820)%F4%-1
+-1%Venerable Phosterius the Hermit (6th C)%F4%-1
+-1%Venerable Mennas of Sinai (6th C)%F4%-1
+-1%Martyr Theoidus%F4%-1
+-1%Martyr Saisus%F4%-1
+-1%Venerable Tatiana%F4%-1
+-1%Venerable women Talida and Taora%F4%-1
+-1%Venerable Martyr Roman%F4%-1
+-1%Holy Theophany: the Baptism of Our Lord, God, and Saviour Jesus Christ%F5%-1
+-1%Hieromartyr Roman%F5%-1
+-1%Holy Hierarch Melanus the Confessor, Bishop of Redon%F5%-1
+-1%New Hieromartyr Andrew the Presbyter and those with him: Martyrs Lidia, Domnica, Maria and two of his daughters (+1919)%F5%-1
+-1%Synaxis of the Holy Glorious Prophet, Forerunner and Baptiser of the Lord, John%F6%-1
+-1%Martyr Athanasius%F6%-1
+-1%MP: New Hieromartyr Priest Basil (+1939)%F6%-1
+-1%Afterfeast of the Theophany%F7%-1
+-1%Monk George Chozebite, Abbot (7th C)%F7%-1
+-1%Saint Emilian the Confessor, Bishop of Cyzicus (9th C)%F7%-1
+-1%Venerable Domnica of Constantinople (+ c 474)%F7%-1
+-1%Venerable Gregory of the Caves of Kiev, the Wonderworker%F7%-1
+-1%Martyrs Julian and his wife, Basilissa, and with them Marcionilla, her son Celsus, Anthony, Anastasius, and 7 children and 20 Soldiers at Antinoe in Egypt (+313)%F7%-1
+-1%Hieromartyr Karterias of Caesarea in Cappadocia (+304)%F7%-1
+-1%Martyr Theophilus the Deacond and Helladius%F7%-1
+-1%Venerable Elias the Hermit of Egypt (5th C)%F7%-1
+-1%Venerable Cyrus and Atticus, Patriarchs of Constantinople%F7%-1
+-1%Venerable Paisius of Uglich%F7%-1
+-1%Hieromartyr Isidore the Presbyter and 72 others at Yuriev in Estonia (+1472)%F7%-1
+-1%Venerable Gregory, Hermit of the Caves of Kiev%F7%-1
+-1%Venerable Agathon of Egypt%F7%-1
+-1%Martyr Abo the Perfumer, of Baghdad and Tbilisi, Georgia (+790)%F7%-1
+-1%Holy Hierarch Gregory, Bishop of Misia%F7%-1
+-1%Afterfeast of the Theophany%F8%-1
+-1%Martyr Polyeuctus of Melitene in Armenia (+ 259)%F8%-1
+-1%Hieromartyr Philip, Metropolitan of Moscow and All Russia (+1570)%F8%-1
+-1%Venerable Eustratius the Wonderworker (9th C)%F8%-1
+-1%Prophet Shemaiah (10th C BC)%F8%-1
+-1%Saint Peter, Bishop of Sebaste in Armenia (4th C)%F8%-1
+-1%Afterfeast of the Theophany%F9%-1
+-1%Saint Gregory, Bishop of Nyssa (+ 395)%F9%-1
+-1%Saint Dometian, Bishop of Melitene (+ 601)%F9%-1
+-1%Saint Marcian the Presbyter of Constantinople (5th C)%F9%-1
+-1%Venerable Paul of Obnora, Vologda (+1429)%F9%-1
+-1%Venerable Macarius the Abbot of Pisma (14th C)%F9%-1
+-1%Venerable Marcian of the Caves of Kiev%F9%-1
+-1%Blessed Theosebia the Deaconess, Sister of Saint Gregory of Nyssa (+385)%F9%-1
+-1%Venerable Ammonius%F9%-1
+-1%Saint Theophan the Recluse, Bishop of Tambov (+ 1894)%F9%-1
+-1%Afterfeast of the Theophany%F10%-1
+-1%Saint Gregory, Bishop of Nyssa (+ 395)%F10%-1
+-1%Saint Dometian, Bishop of Melitene (+ 601)%F10%-1
+-1%Saint Marcian the Presbyter of Constantinople (5th C)%F10%-1
+-1%Venerable Paul of Obnora, Vologda (+1429)%F10%-1
+-1%Venerable Macarius the Abbot of Pisma (14th C)%F10%-1
+-1%Venerable Marcian of the Caves of Kiev%F10%-1
+-1%Blessed Theosebia the Deaconess, Sister of Saint Gregory of Nyssa (+385)%F10%-1
+-1%Venerable Ammonius%F10%-1
+-1%Saint Theophan the Recluse, Bishop of Tambov (+ 1894)%F10%-1
+-1%Afterfeast of the Theophany%F11%-1
+-1%Venerable Theodosius the Great, Founder of Coenobitic Monasticism (+ 529)%F11%-1
+-1%Venerable Michael the Fool-for Christ, of the Klops Monastery in Novgorod (+ c. 1453-1456)%F11%-1
+-1%Saint Theodosius of Antioch (+ c. 412)%F11%-1
+-1%Holy Hierarch Stephen%F11%-1
+-1%Saints Theodore and Agapius, Archimandrites%F11%-1
+-1%Martyr Mairus%F11%-1
+-1%Holy Hierarch Theodosius, Metropolitan of Trapezunt%F11%-1
+-1%Venerable Romilus of Biddia%F11%-1
+-1%MP: New Hieromartyrs Priests Nicholas, Theodore, and Vladimir (+ 1919)%F11%-1
+-1%Elets Icon of the Mother of God (+ 1060)%F11%-1
+-1%Afterfeast of the Theophany%F12%-1
+-1%Martyr Tatiana of Rome and those who suffered with her (+ 226-235)%F12%-1
+-1%Saint Sava I, Archbishop of Serbia (+ 1237)%F12%-1
+-1%Martyr Peter Apselamus of Palestine (+ 309-310)%F12%-1
+-1%Venerable Eupraxia of Tabenna, in Egypt (+ 393)%F12%-1
+-1%Venerable Martinian and Galaktion of Belozersk (+ 1483)%F12%-1
+-1%Martyr Eubthasia%F12%-1
+-1%The 'Milkgiver' Icons of the Moter of God%F12%-1
+-1%Afterfeast of the Theophany%F13%-1
+-1%Martyrs Hermylus and Stratonicus of Belgrade (+ c. 315)%F13%-1
+-1%Saint James, Bishop of Nisibus (+ 350)%F13%-1
+-1%Martyr Peter of Anium, at Hieropolis (309-320)%F13%-1
+-1%Venerable Maximus of Capsokalibitus, Mt Athos%F13%-1
+-1%Marthyr Athanasius%F13%-1
+-1%Martyrs Pachomius and Papirinus%F13%-1
+-1%Holy Hierarch Leontius, Bishop of Caesarea in Cappadocia%F13%-1
+-1%Venerable Eleazar of Anzersk Island in Solovki (+ 1656)%F13%-1
+-1%Venerable Monk Irenarchus, Hermit of Rostov (+ 1616)%F13%-1
+-1%Apodosis of the Theophany%F14%-1
+-1%Holy Monastic Fathers slain in Sinai and Raithu (4th-5th C): Isaiah, Savva, Moses and his disciple Moses, Jeremiah, Paul, Adam, Sergius, Domnus, Proclus, Hipatius, Isaac, Macarius, Mark, Eusibius, Benjamin, Elijah, and others%F14%-1
+-1%Saint Nina, Equal-to-the-Apostles and Enlightener of Georgia (+ 335)%F14%-1
+-1%Venerable Theodoulos, son of the Venerable Nilus of Sinai (5th C)%F14%-1
+-1%Venerable Stephen, Abbot of Chenolaklos Monastery near Chalcedon (8th C)%F14%-1
+-1%Venerable Joseph the Analytic of Raithu (4th C)%F14%-1
+-1%Martyr Agnia%F14%-1
+-1%Holy Hierarch Hillary, Bishop of Poitiers%F14%-1
+-1%Holy Hieromartyr Barbasceminus, Bishop of Seleucia%F14%-1
+-1%Venerable Paul of Thebes (+341)%F15%-1
+-1%Venerable John Calabytes the Hut-Dweller (5th C)%F15%-1
+-1%Venerable Prochorus, Abbot in the Vranski desert on the river Pshina in Bulgaria (10th C)%F15%-1
+-1%Venerable Gabriel, founder of Lesnov Monastery in Bulgaria (11th C)%F15%-1
+-1%Venerable Pansophius the Martyr of Alexandria(+c. 249-251)%F15%-1
+-1%Veneration of the precious Chains of the Holy and All-Glorious Apostle Peter%F16%-1
+-1%Martyrs Speusippus, Eleusippus, Meleusippus and their Grandmother Leonilla, together with Neon, Turbo, and the woman Jonilla (Vovilla) in Cappadocia (161-180)%F16%-1
+-1%Martyr Danax the Reader in Macedonia (2nd C)%F16%-1
+-1%Venerable Romilus%F16%-1
+-1%Holy Hierarch Honoratus, Bishop of Arliev%F16%-1
+-1%Blessed Maxim of Totma, the Fool-for-Christ (+ 1650)%F16%-1
+-1%New Hieromartyr Damascene of Chilandar%F16%-1
+-1%Venerable and Godbearing Father Anthony the Great (+356)%F17%-1
+-1%Venerable Anthony the New%F17%-1
+-1%Holy Emperor Theodosius the Great (4th C)%F17%-1
+-1%Venerable Anthony of Dymsk, Novgorod (+1224)%F17%-1
+-1%Venerable Anthony the Roman%F17%-1
+-1%Venerable Anthony of Chernoezersk (16th C)%F17%-1
+-1%Venerable Anthony of Krasnokhomsk (+1481)%F17%-1
+-1%Monk Achilles the Confessor (5th C)%F17%-1
+-1%Saints Athanasius the Great (+373) and Cyril (+444), Archbishops of Alexandria%F18%-1
+-1%Venerable Marcian of Cyrrhus in Syria (+c.388)%F18%-1
+-1%Holy Hierarch Maximus, Archbishop of Serbia%F18%-1
+-1%Monk Athanasius of Syademsk and Vologda (+c.1550)%F18%-1
+-1%Venerable Silbanus of Palestine%F18%-1
+-1%Righteous Athanasius of Novoltsk (16th-17th C)%F18%-1
+-1%Martyr Xenia%F18%-1
+-1%Venerable Schema-monk Cyrill and Schema-nun Mary, parents of St Sergius of Radonezh (+ c 1337)%F18%-1
+-1%Venerable Macarius the Great, of Egypt (+c.390-391)%F19%-1
+-1%Venerable Macarius of Alexandria (+ 394-395)%F19%-1
+-1%Virgin-martyr Euphrasia of Nicomedia (+303)%F19%-1
+-1%Saint Arsenius, Archbishop of Kerkyra (8th C)%F19%-1
+-1%Translation of the Relics of St Gregory the Theologian%F19%-1
+-1%Venerable Meletius Ballisiotus%F19%-1
+-1%Holy Hierarch Mark, Archbishop of Ephesus (+ c.1444)%F19%-1
+-1%Venerable Macarius the Deacon of the Caves of Kiev (13th-14th C)%F19%-1
+-1%Righteous Theodore, Fool-for-Christ, of Novgorod (+1392)%F19%-1
+-1%Finding of the Relics of Monk Sabbas of Storozhev and Zvenigorod (1652)%F19%-1
+-1%Venerable Macarius the Faster of the Caves of Kiev (12th C)%F19%-1
+-1%Saint Macarius the Stylite (Pillar-Dweller), of Martkobsa, Georgia (6th C)%F19%-1
+-1%Venerable Euthymius the Great (+ 473)%F20%-1
+-1%Martyrs Bassus, Eusebius, Eutychius and Basilides at Nicomedia (+ 303)%F20%-1
+-1%Martyrs Inna, Pinna and Rimma the Scythians (1st-2nd C)%F20%-1
+-1%Martyr Anna%F20%-1
+-1%Martyrs Phirsus and Agna%F20%-1
+-1%Venerable Lawrence the Hermit and Euthimius the Silent of the Caves of Kiev (13th-14th C)%F20%-1
+-1%Martyr Zacharius%F20%-1
+-1%Righteous King Leo Macellus%F20%-1
+-1%Venerable Euthymius of Syanzhemsk and Vologda (+ c. 1465)%F20%-1
+-1%Venerable Maximus the Confessor (+ 662)%F21%-1
+-1%Martyr Neophytes of Nicea (+303-305)%F21%-1
+-1%Martyrs Eugene, Candidus, Valerian and Aquila (3rd C)%F21%-1
+-1%Virginmartyr Agnes of Rome (+ c. 304)%F21%-1
+-1%Martyr Anastasius, disciple of Venerable Maximus the Confessor (+662)%F21%-1
+-1%Venerable Neophytes of Vatopedi%F21%-1
+-1%Venerable Maximus the Greek (+1556)%F21%-1
+-1%Icon of the Mother of God 'Otrada'%F21%-1
+-1%Apostle Timothy of the Seventy (+80)%F22%-1
+-1%Monkmartyr Anastasius the Persian (628)%F22%-1
+-1%Monkmartyr Anastasius the Deacon of the Kievan Caves, near caves (12th C)%F22%-1
+-1%Martyred Bishops Manuel, George, Peter, Leontius and Martyred Priests Sionius, Gabriel, John, Leontius, Parodus and 377 others in Bulgaria (+ c. 817)%F22%-1
+-1%Venerable Macarius of Zhabyn and Belevsk, the Wonderworker (+1623)%F22%-1
+-1%Hieromartyr Clement, Bishop of Ancyra, and Martyr Agathangel (+ c 312)%F23%-1
+-1%Saint Paulinus the Merciful, Bishop of Nola (+ 431)%F23%-1
+-1%Venerable Mausima the Syrian (4th C)%F23%-1
+-1%Venerable Salamanes the Silent of the Euphrates (+ c. 400)%F23%-1
+-1%Venerable Gennadius of Kostroma (+ 1565)%F23%-1
+-1%Venerable Eusebius%F23%-1
+-1%Commemoration of Sixth Ecumenical Council (680-681)%F23%-1
+-1%Venerable Xenia of Rome and her two female slaves (5th C)%F24%-1
+-1%Martyrs Babylas (Vavila) of Sicily and his two disciples: Timothy and Agapius (3rd C)%F24%-1
+-1%Saint Macedonius, the Hermit, of Syria (+c.420)%F24%-1
+-1%Hieromartyr Felician, Bishop of Pholina%F24%-1
+-1%Venerable Philon, Bishop of Calpacia%F24%-1
+-1%Transfer of the relics of venerable martyr Anastasius the Persian%F24%-1
+-1%Martyrs Paul, Pausirius, and Theodotian%F24%-1
+-1%Venerable Philippicus%F24%-1
+-1%Martyr Barsima and his two brothers%F24%-1
+-1%Venerable Zosimus of Mt Sinai%F24%-1
+-1%Venerable Dionisius of Olympus%F24%-1
+-1%Saint Gerasim, Bishop of Perm (+1441)%F24%-1
+-1%Martyr John of Kazan (+1529)%F24%-1
+-1%Blessed Xenia of Saint Petersburg (19th C)%F24%-1
+-1%Saint Gregory the Theologian, Archbishop of Constantinople (+ 389)%F25%-1
+-1%Venerable Publius of Syria (+ c. 380)%F25%-1
+-1%Venerable Mares the Singer, of Syria (+ c. 430)%F25%-1
+-1%Martyrs Felicitas and her seven sons: Januarius, Felix, Philip, Sylvanus, Alexander, Vitalius and Marcial (+ c. 164)%F25%-1
+-1%Saint Moses, Archbishop of Novgorod (+ 1362)%F25%-1
+-1%New Martyr Auxentius%F25%-1
+-1%Holy Hierarch Castinus, Bishop of Byzantium%F25%-1
+-1%Venerable Dimetrius%F25%-1
+-1%New Hieromartyr Vladimir, Metropolitan of Kiev and Galicia (+ 1918)%F25%-1
+-1%Venerable Anatoly of Optina, the elder (+ 1894)%F25%-1
+-1%MP: New Hieromartyr Peter, Bishop of Voronezh (+ 1929)%F25%-1
+-1%Icons of the Mother of God 'Calm my Sorrows', and 'Comfort in Distress and Sorrow'%F25%-1
+-1%Venerable Xenophontes with his wife Maria, and their sons Arkadius and John of Constantinople (5th-6th C)%F26%-1
+-1%Saint Simeon the Old of Mt Sinai (+c.390)%F26%-1
+-1%Martyrs Ananias the Presbyter, Peter the Prison Guard and 7 prison guards (+295)%F26%-1
+-1%Translation of the relics of Venerable Theodore, Abbot of the Studion Monastery (845)%F26%-1
+-1%Saint Joseph, Archbishop of Thessalonica, brother of St. Theodore of Studion (+830)%F26%-1
+-1%Venerable Gabriel, Abbot of Jerusalem%F26%-1
+-1%Venerable Paul of Paletine%F26%-1
+-1%Blessed David III the Restorer, King of Iberia (Georgia) (+1125)%F26%-1
+-1%Transfer of Relics of Saint John Chrysostomos (438), Archbishop of Constantinople%F27%-1
+-1%New Martyr Dimetrius%F27%-1
+-1%Venerable Peter of Egypt%F27%-1
+-1%Venerable Titus the Soldier, of the Caves of Kiev%F27%-1
+-1%Venerable Ephrem the Syrian (+ c 373-379)%F28%-1
+-1%Venerable Palladius the Hermit of Antioch (4th C)%F28%-1
+-1%Venerable Isaac the Syrian, Bishop of Nineveh (7th C)%F28%-1
+-1%Venerable Ephrem of the Caves of Kiev, Bishop of Pereyaslavl (+ c 1098)%F28%-1
+-1%Venerable Ephrem, Abbot and Wonderworker of Novy Torg (+ 1053)%F28%-1
+-1%Venerable Theodosius, Abbot of Totma (+1568)%F28%-1
+-1%Translation of the relics of the Hieromartyr Ignatius the Godbearer, Bishop of Antioch (+ 107)%F29%-1
+-1%Venerable Lawrence, recluse of the Caves of Kiev%F29%-1
+-1%Martyrs Romanus, James, Philotheus, Hyperichius, Abibus, Julian and Parigonius, at Samosata (+ 297)%F29%-1
+-1%Martyrs Silvanus the Bishop, Luke the Deacon and Mocius the Reader (+ 312)%F29%-1
+-1%Venerable Lawrence of the Caves of Kiev, Bishop of Turov (+1194)%F29%-1
+-1%Saint Barsimeaus, Bishop of Edessa%F29%-1
+-1%New Martyr Dimetrius of Chios%F29%-1
+-1%Venerable Aphraat%F29%-1
+-1%Holy Hierarchs of Perm: Gerasim (+ c. 1441), Pitirim (+ 1455), and Jonah (+ 1470)%F29%-1
+-1%Venerable Andrew Rublev, the Iconographer%F29%-1
+-1%Synaxis of the 'Three Hierarchs' - Basil the Great, Gregory the Theologian and John Chrysostom%F30%-1
+-1%Hieromartyr Hipolytus, Pope of Rome, along with the Martyrs Censorinus and Sabinus, the Virginmartyr Chryse and 20 other Martyrs at Ostia (3rd C)%F30%-1
+-1%Martyr Theophilus the New in Cyprus (+ 784)%F30%-1
+-1%New Martyr Theodore of Mytelene%F30%-1
+-1%Venerable Zeno, the Faster of the Caves of Kiev (14th C)%F30%-1
+-1%Venerable Zeno (Xeno) the Hermit of Antioch, a diciple of Saint Basil the Great (5th C)%F30%-1
+-1%Holy Hierarch Macarius, Patriarch of Jerusalem%F30%-1
+-1%Holy Hierarch Agrippinus, Patriarch of Alexandria%F30%-1
+-1%Blessed Peter, King of Bulgaria (+ 967)%F30%-1
+-1%Holy Wonderworkers and Unmercenary Martyrs Cyrus and John, and together with them the Martyr Athanasia and her daughters: Theodotia, Theoctista and Eudoxia at Canopus in Egypt (+311)%F31%-1
+-1%Martyrs Victorinus, Victor, Nicephorus, Claudius, Diodorus, Serapion and Papias of Egypt (+251)%F31%-1
+-1%Martyr Triphena%F31%-1
+-1%Venerable Nikita, of the Caves of Kiev, Hermit and Bishop of Novgorod (+1109)%F31%-1
+-1%Venerable Martyr Elias of Ardounes (+1686)%F31%-1
+-1%Forefeast of the Meeting of the Lord%F32%-1
+-1%Martyr Tryphon of Campsada near Apamea in Syria (+250)%F32%-1
+-1%Venerable Peter of Galatia, the Hermit, near Antioch in Syria (+429)%F32%-1
+-1%Venerable Vendimianus, the Hermit of Bithynia (+c.512)%F32%-1
+-1%Martyrs Perpetua, a woman of Carthage, and the Catechumens: Saturus, Revocatus, Saturninus, Secundulus, Felicita (+c.202-203)%F32%-1
+-1%Saint Bridget of Ireland (523)%F32%-1
+-1%Holy Hierarch Basil, Archbishop of Thessalonica%F32%-1
+-1%Martyr Anastasius%F32%-1
+-1%New Martyr Peter Skipetrov (+1918)%F32%-1
+-1%The Meeting of our Lord, God, and Saviour Jesus Christ in the Temple%F33%-1
+-1%New Martyr Jordan of Trapesunt%F33%-1
+-1%Venerable Martyr Gabriel%F33%-1
+-1%Icon of the Mother of God 'Softening of evil hearts'%F33%-1
+-1%Holy and Righteous Simeon the God-Receiver and Anna the Prophetess (1st C)%F34%-1
+-1%Prophet Azariah (10th C. BC)%F34%-1
+-1%Martyrs Adrian and Ebbulus%F34%-1
+-1%Martyr Blaise of Caesarea (3rd C)%F34%-1
+-1%Martyrs Papius, Diodorus, and Claudian%F34%-1
+-1%Blessed Prince Roman of Uglich (+1285)%F34%-1
+-1%Saint Simeon, Bishop of Tver (+1289)%F34%-1
+-1%Right-believing Great Prince Sviatoslav, in baptism Gabriel%F34%-1
+-1%Holy Hierarch Ansgar, Archbishop of Bremen and Hamburg, Enlightener of Denmark and the North (+865)%F34%-1
+-1%Holy Equal-to-the-Apostles Nicholas, Archbishop and Enlightener of Japan (+1912)%F34%-1
+-1%Holy Equal-to-the-Apostles Innocent, Metropolitan of Moscow, Enlightener of Alaska%F34%-1
+-1%Venerable Isidore of Pelusium (+ 436-440)%F35%-1
+-1%Holy Right-Believing Prince George of Vladimir (+ 1238)%F35%-1
+-1%Venerable Cyril, Abbot and Wonderworker of Novoezersk (+ 1532)%F35%-1
+-1%Venerable Nicholas the Confessor, Abbot of the Studion Monastery (+ 868)%F35%-1
+-1%Holy Hierarch John, Bishop of Eirinopolis%F35%-1
+-1%Hieromartyr Abraham Bishop of Arbela in Assyria (+ ca 344-347)%F35%-1
+-1%Martyr Jadorus%F35%-1
+-1%Venerable Abraham and Coprius of Pechenga (15th C)%F35%-1
+-1%Holy Hierarch Phileus, Bishop of Tmuina%F35%-1
+-1%New Martyr Joseph of Aleppo%F35%-1
+-1%MP: New Hieromartyr Methodius, bishop of Petropavlovsk (+1921)%F35%-1
+-1%Martyr Agatha of Palermo in Sicily (+ 251)%F36%-1
+-1%Repose of Saint Theodosius, Archbishop of Chernigov (+ 1696)%F36%-1
+-1%Martyr Theodoula of Anazarbus in Cilicia, and with her Martyrs Helladius, Macarius, Boethos, and Evagrius (+ c 304)%F36%-1
+-1%New Martyr Anthony of Athens%F36%-1
+-1%Holy Hierarch Polyeuchus, Patriarch of Constantinople%F36%-1
+-1%Eletsk-Chernigov (1060) and 'In Search of the Perishing' Icons of the Mother of God%F36%-1
+-1%Saint Bukolos, Bishop of Smyrna (+c.100)%F37%-1
+-1%Venerable Barsanuphios the Great and Saint John the Prophet (6th C)%F37%-1
+-1%Martyr Julian of Emesa (+312)%F37%-1
+-1%Virginmartyr Fausta and with her, Evilasius and Maximus, at Cyzicus (+c.305-311)%F37%-1
+-1%Virginmartyrs Dorothy, two sisters - Christina, Callista and the Martyr Theophilos at Caesarea in Cappadocia (+c.288-300)%F37%-1
+-1%Martyrs Martha, Mary, and their brother Lycarion%F37%-1
+-1%Saint Photius, Patriarch of Constantinople (9th C)%F37%-1
+-1%MP: New Hieromartyr Priest Vasiliy (+1930)%F37%-1
+-1%Saint Parthenios, Bishop of Lampsacus on the Hellespont (4th C)%F38%-1
+-1%Venerable Luke of Hellas (+c.946)%F38%-1
+-1%1,003 Martyrs of Nicomedia (+303)%F38%-1
+-1%Venerable Aprion, Bishop of Cyprus%F38%-1
+-1%Venerable Peter of Moneumatia%F38%-1
+-1%Venerable Mastridia of Palestine%F38%-1
+-1%MP: New Hieromartyr Priest Alexander (+1938)%F38%-1
+-1%Greatmartyr Theodore Stratelates 'the General' (+ 319)%F39%-1
+-1%Prophet Zechariah, from among the 12 Minor Prophets (+c. 520 BC)%F39%-1
+-1%Saint Sava II, Archbishop of Serbia (+1271)%F39%-1
+-1%MP: New Hieromartyrs Priests Simeon, Andrew, and Sergeus (+1938)%F39%-1
+-1%MP: New Hieromartyr Priest Alexander (+1942)%F39%-1
+-1%Martyr Nicephoros of Antioch in Syria (+c.257)%F40%-1
+-1%Hieromartyrs Marcellus, Bishop of Sicily, Philagrios Bishop of Cyprus, and Pancratius Bishop of Tauromina (1st C)%F40%-1
+-1%Venerable Peter of Damascus%F40%-1
+-1%Venerable Gennadius (+c.1516) of Vazhe Lake%F40%-1
+-1%Saint Nicephoros (+1557) of Vazhe Lake%F40%-1
+-1%Venerable Pancratius of the Kievan Caves, far caves (13th C)%F40%-1
+-1%Finding of the relics of Saint Innocent, Bishop of Irkutsk (1805)%F40%-1
+-1%MP: New Hieromartyr Priest Vasili (+1930)%F40%-1
+-1%Hieromartyr Haralambos, Bishop of Magnesia in Thessaly, and the Martyrs Porphyrius, Baptos and 3 Women Martyrs (+ 202)%F41%-1
+-1%Virginmartyrs: Ennatha, Valentina and Paula of Palestine (+ 308)%F41%-1
+-1%Venerable Prochorus of the Caves of Kiev (+ 1107)%F41%-1
+-1%Holy Hierarchs of Novgorod: Joachim, Luke, Herman, Arcadius, Gregory, Martirius, Anthony, Basil, and Simeon%F41%-1
+-1%Venerable Longin of Koryazhemsk (+ 1540)%F41%-1
+-1%Holy Right-Believing Great Princess Anna of Novgorod (+ 1056)%F41%-1
+-1%'Fiery Appearance' Icon of the Mother of God%F41%-1
+-1%Hieromartyr Haralambos, Bishop of Magnesia in Thessaly, and the Martyrs Porphyrius, Baptos and 3 Women Martyrs (+ 202)%F42%-1
+-1%Virginmartyrs: Ennatha, Valentina and Paula of Palestine (+ 308)%F42%-1
+-1%Venerable Prochorus of the Caves of Kiev (+ 1107)%F42%-1
+-1%Holy Hierarchs of Novgorod: Joachim, Luke, Herman, Arcadius, Gregory, Martirius, Anthony, Basil, and Simeon%F42%-1
+-1%Venerable Longin of Koryazhemsk (+ 1540)%F42%-1
+-1%Holy Right-Believing Great Princess Anna of Novgorod (+ 1056)%F42%-1
+-1%'Fiery Appearance' Icon of the Mother of God%F42%-1
+-1%Hieromartyr Blaise, Bishop of Sebaste (+ c 316)%F43%-1
+-1%Hieromartyr Lucius, Bishop of Adrianople%F43%-1
+-1%Holy Hierarch Eutropius, Bishop of Adrianople%F43%-1
+-1%Venerable Dimitri, Wonderworker of Priluk and Vologda (+ 1392)%F43%-1
+-1%Holy Right-believing Prince Vsevolod (in Baptism Gabriel), Wonderworker of Pskov (+ 1138)%F43%-1
+-1%Righteous Empress Theodora, Restorer of the Veneration of Holy Icons (+ ca 867)%F43%-1
+-1%New Martyr George of Serbia%F43%-1
+-1%Saint Meletios, Archbishop of Antioch (+ 381)%F44%-1
+-1%Saint Alexis, Metropolitan of Moscow and Wonderworker of All Russia (+ 1387); Saint Anthony, Patriarch of Constantinople (+ 895)%F44%-1
+-1%Venerable Mary (known as the Monk Marinus), and her father, the Venerable Eugene at Alexandria (6th C)%F44%-1
+-1%Hieromartyr Urbanus, Bishop of Rome%F44%-1
+-1%Venerable Callia of Constantinople%F44%-1
+-1%St Meletius the Archbishop of Kharkov (+ 1840)%F44%-1
+-1%New Martyr Christus%F44%-1
+-1%Iveron Icon of the Mother of God (9th C)%F44%-1
+-1%Venerable Martinian of Caesarea in Palestine (c.422)%F45%-1
+-1%Saint Stephen (in monasticism Simeon) Prince of Serbia, the Myrrh-Gusher (+1200)%F45%-1
+-1%Holy Apostle Akila and his wife Priskilla (1st C)%F45%-1
+-1%Saint Eulogius, Archbishop of Alexandria (+607-608)%F45%-1
+-1%Venerable Zoe and Photina (5th C)%F45%-1
+-1%MP: New Hieromartyr Silvestr, Archbishop of Omsk (+ 1920)%F45%-1
+-1%MP: New Hieromartyr Priest Zosima and those with him (+ 1938)%F45%-1
+-1%Repose of Saint Cyril, Equal-to-the-Apostles and Teacher of the Slavs (+869)%F46%-1
+-1%Venerable Auxentius of Bithynia (+470)%F46%-1
+-1%Venerable Isaac, Hermit of the Caves of Kiev (+c.1090)%F46%-1
+-1%12 Greek Master-Builders of the Dormition Cathedral in the Lavra of the Caves of Kiev (11th C)%F46%-1
+-1%Venerable Maron, Wilderness-Dweller of Syria (4th C)%F46%-1
+-1%Saint Abraham, Bishop of Caria, Mesopotamia (5th C)%F46%-1
+-1% Transfer of the relics of the Martyred Prince Michael of Chernigov and his councilor Theodore (1578)%F46%-1
+-1%New Martyr George of Mytelene%F46%-1
+-1%Apostle of the 70 Onysimus (+c.109)%F47%-1
+-1%Venerable Eusebius, Hermit of Syria (5th C)%F47%-1
+-1%Venerable Paphnutius and his Daughter Euphrosynia (5th C)%F47%-1
+-1%Martyr Major%F47%-1
+-1%Venerable Paphnutius, Hermit of the Caves of Kiev (13th C)%F47%-1
+-1%Dalmatian (1646) Icon of the Mother of God%F47%-1
+-1%MP: New Hieromartyrs Priests Michael and John (+1930)%F47%-1
+-1%Martyrs Pamphilus the Presbyter, Valentus the Deacon, Paul, Porphyrios, Seleucios, Theodoulos, Julian, Samuel, Elias, Daniel, Jeremiah, Isaiah at Caesarea in Palestine (+c307-309)%F48%-1
+-1%Venerable Maruthas, Bishop of Martyropolis in Mesopotamia (+422)%F48%-1
+-1%Martyrs of Persia at Martyropolis (4th C)%F48%-1
+-1%Venerable Martyr Roman of Mt Athos%F48%-1
+-1%Holy Hierarch Macarius (Nevsky), Metropolitan of Moscow and Kolomna (+1926)%F48%-1
+-1%Greatmartyr Theodore of Tyro (+c.306)%F49%-1
+-1%Finding of the relics of Martyr Mennas Callicelados of Alexandria (+ 867-889)%F49%-1
+-1%Saint Mariam, sister of the Apostle Philip (1st C)%F49%-1
+-1%Holy Hierarch Auxebius I, Bishop of Cyprus%F49%-1
+-1%Holy Hierarch Hermogenes, Patriarch of Moscow and Wonderworker of All Russia (+1612)%F49%-1
+-1% Venerable Theodore the Silent of the Caves of Kiev (13th C)%F49%-1
+-1%Venerable Theodosius and Roman of Bulgaria%F49%-1
+-1%New Martyr Theodore%F49%-1
+-1%Saint Leo the Great, Pope of Rome (+ 461)%F50%-1
+-1%Saint Flavian the Confessor, Patriarch of Constantinople (+ 449-450)%F50%-1
+-1%Saint Agapitus the Confessor, Bishop of Synnada in Phrygia with the Martyrs Victor, Dorotheos, Theodoulos and Agrippa (4th C)%F50%-1
+-1%Venerable Blaise the Monk%F50%-1
+-1%Holy Hieromartyr Abidus the Bishop%F50%-1
+-1%Venerable Cosmas of Yakhrom (+ 1492)%F50%-1
+-1%Apostles of the Seventy: Archippus and Philemon, and martyred Equal-to-the-Apostles Apphia (1st C)%F51%-1
+-1%Venerable Dositheus of Palestine, a Disciple of Venerable Abba Dorotheus (7th C)%F51%-1
+-1%Venerable Rabulas of Samosata (+c. 530)%F51%-1
+-1%Holy Confessors Eugene and Macarius, Presbyters at Antioch (+363)%F51%-1
+-1%Martyrs Maximus, Theodotus, Hesychius and Asclepiodota of Adrianopolis (+305-311)%F51%-1
+-1%Venerable Conon of Palestine%F51%-1
+-1%Venerable Philotheia of Athens%F51%-1
+-1%Holy Hierarch Auxibius II, Bishop of Cyprus%F51%-1
+-1%Venerable Leo, Bishop of Catania in Sicily (+c.780)%F52%-1
+-1%Hieromartyr Sadoc, Bishop of Persia, and 128 Martyrs with him (+342-344)%F52%-1
+-1%Venerable Agathon, Pope of Rome (+682)%F52%-1
+-1%Venerable Martyr Cornelius, Abbot of the Caves of Pskov and his disciple, Venerable Bassian of Muron (+1570)%F52%-1
+-1%Venerable Agathon the Wonderworker of the Kiev Caves (13th-14th C)%F52%-1
+-1%Venerable Martyrs of Valaam, who suffered at the hands of the Swedes (+1578): Titus, Tikhon, Gelasius, Sergius, Barlaam, Savva, Conon, Silvester, Cyprian, Pimen, John, Samon, Jonah, David, Cornelius, Niphont, Athanasius, Serapion, Barlaam, Athanasius, Anthony, Luke, Leontius, Thomas, Dionysius, Philip, Ignatius, Basil, Pakhomius, Basil, Theophilus, John, Theodore, and John%F52%-1
+-1%Venerable Timothy of Symbola in Bithynia (+795)%F53%-1
+-1%Holy Hierarch Eustathius, Archbishop of Antioch (+337)%F53%-1
+-1%Holy Hierarch George, Bishop of Amastris on the Black Sea (+802-811)%F53%-1
+-1%Holy Hierarch John the Scholastic, Patriarch of Constantinople%F53%-1
+-1%Holy Hierarch Zachariah, Patriarch of Jerusalem%F53%-1
+-1%Holy Hieromartyr Seberianus, Bishop of Scythopolis%F53%-1
+-1%'Kozelshchansk' Icon of the Mother of God%F53%-1
+-1%MP: Holy New Hieromartyrs Priests Alexander, Daniel, and Gregory (+1930)%F53%-1
+-1%MP: New Hieromartyr Priest Constantine (+1938)%F53%-1
+-1%Finding of the relics of the Holy Martyrs at the Gate of Eugenius at Constantinople (395-423)%F54%-1
+-1%Martyr Maurice and the 70 warriors, including Photinus, Theodore, Philip, and others at Apamea in Syria (+c.305)%F54%-1
+-1%Venerable Thalassius, Limnaeus, and Baradates, Hermits of Syria (5th C)%F54%-1
+-1%Venerable Athanasius the Confessor of Constantinople (+821)%F54%-1
+-1%Holy Hierarch Telesphorus, Bishop of Rome%F54%-1
+-1%Holy Hierarch Titus, Bishop of Bostra%F54%-1
+-1%Holy Hierarch Abilius, Patriarch of Alexandria%F54%-1
+-1%Venerable Babilus the gester%F54%-1
+-1%New Hieromartyr Michael Lisitsin (+1918)%F54%-1
+-1%Hieromartyr Polycarp, Bishop of Smyrna (+167)%F55%-1
+-1%Venerable John, Antiochus, Antoninus, Moses, Zebinas, Polychronius, another Moses, and Damian, Ascetics of the Syrian Deserts (5th C)%F55%-1
+-1%Venerable Alexander the founder of the Monastery of the 'Unsleeping Ones' (c. 430)%F55%-1
+-1%Venerable Gorgonia, sister of St Gregory the Thologian%F55%-1
+-1%Holy Hierarch Polychronius, Bishop of Alameia%F55%-1
+-1%Venerable Polycarp of Briansk (+1620-1621)%F55%-1
+-1%Venerable Moses of White Lake%F55%-1
+-1%Venerable Damian of Esphigmenou on Mt Athos%F55%-1
+-1%New Martyr Damian, a monk on Mt Athos%F55%-1
+-1%MP: New Hieromartyrs Priests Alexis and Nicholas and Martyr Sergey (+1938)%F55%-1
+-1%The First (4th C) and second (452) finding of the Honorable Head of the Holy Glorious Prophet, Forerunner, and Baptist of the Lord, John%F56%-1
+-1%Venerable Erasmus of the Caves of Kiev (+c. 1160)%F56%-1
+-1%Finding of the Relics of the Holy Right-believing Prince Roman of Uglich%F56%-1
+-1%Holy Hierarch Tarasius, Archbishop of Constantinople (+806)%F57%-1
+-1%Hieromartyr Reginus, Bishop of Skopel%F57%-1
+-1%Venerable Paphnutius Caphalas;%F57%-1
+-1%Holy Hierarch Porphyrius, Bishop of Gaza (+420)%F58%-1
+-1%Martyr Sebastian (+c 66)%F58%-1
+-1%Martyr Christodulus%F58%-1
+-1%New Martyr John Calphus%F58%-1
+-1%Venerable Sebastian of Poshekhonye (+c 1500)%F58%-1
+-1%MP: New Hieromartyr Priest Peter (+1930)%F58%-1
+-1%New Hieromartyr Priest Sergey (+1933)%F58%-1
+-1%New Martyr Anna (+1937)%F58%-1
+-1%Venerable Procopius, Confessor of Decapolis (+ c. 750)%F59%-1
+-1%Venerable Titus the Presbyter of the Caves of Kiev (+ after 1196)%F59%-1
+-1%Venerable Thalelaeus the Hermit of Syria (+460)%F59%-1
+-1%Martyr Gelasius%F59%-1
+-1%Holy Hierarch Macarius, Bishop of Jerusalem%F59%-1
+-1%Venerable Titus the Soldier, of the Kiev Caves (14th C)%F59%-1
+-1%Venerable Stephen%F59%-1
+-1%Venerable Basil the Confessor, companion of the Venerable Procopius at Decapolis (+ c. 750)%F60%-1
+-1%Hieromartyr Proterius the Patriarch of Alexandria (+ 457)%F60%-1
+-1%Hieromartyr Nestor, Bishop of Magydos in Pamphylia (+250)%F60%-1
+-1%Venerable women: Marina, Kyra, and Dominica of Syria (+ c. 450)%F60%-1
+-1%Apostles of the 70: Nymphus and Ebbulus%F60%-1
+-1%New Martyr Kyr-Anna%F60%-1
+-1%Blessed Nicholas Salos of Pskov the Fool-For-Christ (+1576)%F60%-1
+-1%Holy Right-believing Great Prince Yaroslav%F60%-1
+-1%Hieromartyr Arsenius, Metropolitan of Rostov (+1772)%F60%-1
+-1%Venerable Cassian of Rome (+ 435)%F366%-1
+-1%Venerable John, called Barsonophius, Bishop of Damascus (5th C)%F366%-1
+-1%Martyr Theoctristus (8th C)%F366%-1
+-1%Martyr Eudokia of Heliopolis (+160-170)%F60%-1
+-1%Martyrs Nestor and Tribiminus (3rd C)%F60%-1
+-1%Martyr Antonina of Nicea, in Bithynia (3rd-4th C)%F60%-1
+-1%Martyrs Marcellus and Anthony%F60%-1
+-1%Martyr Antonina%F60%-1
+-1%Virginmartyr Domnina of Syria (+ c.450-460)%F60%-1
+-1%Venerable Agapius of Vatopedi%F60%-1
+-1%Venerable Martyrius of Zelenetsk, Pskov (+1603)%F60%-1
+-1%MP: New Hieromartyrs Priests Basil, Peter, John, Benjamin, and Michael, martyrs Anthony and Anna and others with them (+1938)%F60%-1
+-1%Hieromartyr Theodotus, Bishop of Cyrenia (+ c.320-326)%F61%-1
+-1%St. Arsenius the Bishop of Tver (+1409)%F61%-1
+-1%Venerable Agathon of Egypt (5th C)%F61%-1
+-1%Martyr Troadius of Neocaesarea (3rd C)%F61%-1
+-1%Virginmartyr Euthalia of Sicily (+257)%F61%-1
+-1%440 Martyrs slain by the Lombards in Sicily (+ c. 579)%F61%-1
+-1%Venerable Sabbas, Barsonuphius, Sabbatius, and Euphrosinus of Tver%F61%-1
+-1%Icon of the Mother of God 'She who Reigns' (1917)%F61%-1
+-1%Martyrs Eutropius, Cleonicus and Basiliscus of Amasea (+ c.308)%F62%-1
+-1%Martyrs Zeno and Zoilus%F62%-1
+-1%Virginmartyr Piama (+ 337)%F62%-1
+-1%Icon of the Mother of God of Volokolamsk (1572)%F62%-1
+-1%MP New Martyr Michael (+ 1938)%F62%-1
+-1%Venerable Gerasimus of the Jordan (+ 451)%F63%-1
+-1%Martyr Paul and his sister Juliana (+ c.273) and with them: Quadratus, Akakius and Stratonicus%F63%-1
+-1%Holy Hierarch Gregory, Bishop of Constantia%F63%-1
+-1%Venerable James the Faster of Phoenicia (6th C)%F63%-1
+-1%Translation of the relics of Blessed Prince Wenceslaus of the Czech Lands (929-935)%F63%-1
+-1%Right-believing Prince Daniel of Moscow (+ 1303)%F63%-1
+-1%Right-believing Prince Basil (Vasilko) of Rostov (+ 1238)%F63%-1
+-1%Holy Hierarch Gregory, Bishop of Assus%F63%-1
+-1%Venerable Gerasimus of Vologda (+ 1178)%F63%-1
+-1%Venerable Joasaph of Snetogorsk, Pskov (+ 1299)%F63%-1
+-1%Venerable Basil of Mirozh%F63%-1
+-1%Martyr Conon of Isauria (1st C)%F64%-1
+-1%Martyr Conon the Gardener of Pamphylia (3rd C)%F64%-1
+-1%Martyr Onesimus of Isauria (1st C)%F64%-1
+-1%Martyr Eulampius%F64%-1
+-1%Virginmartyr Irais (Rhais) of Antinoe in Egypt and with her Archelaus and 152 Martyrs%F64%-1
+-1%St. Hesychius the Faster of Bithynia (+ c.790)%F64%-1
+-1%St. Mark the Ascetic of Egypt (5th C)%F64%-1
+-1%Holy Hierarch Theophilus, Bishop of Caesarea in Palestine%F64%-1
+-1%Translation of the relics of St Theodore, Prince of Smolensk and His Children, Prices David and Constantine, Wonderworkers of Yaroslavl (1463)%F64%-1
+-1%New Martyr John of Bulgaria%F64%-1
+-1%Venerable Adrian of Poshekhonye, Yaroslavl (+1550)%F64%-1
+-1%Repose of St Nicholas (Velemirovich) of Zhicha (+1956)%F64%-1
+-1%Icon of the Mother of God 'Vospitanie'%F64%-1
+-1%42 Martyrs of Ammoria in Phrygia (+ c.845): Theodore, Constantine, Aetius, Theophilus, Basoes, Callistus, and others%F65%-1
+-1%Monkmartyr Conon and his son Conon of Iconium (+ 270-275)%F65%-1
+-1%Venerable Arcadius of Cyprus (4th C)%F65%-1
+-1%Venerable Abraham of Bulgaria%F65%-1
+-1%Holy Hierarchs Evagrius the Confessor, Patriarch of Constantinople%F65%-1
+-1%Holy Hierarch Taranius, Bishop of Antioch%F65%-1
+-1%Venerable Fridolinus, Abbot of Sakingena%F65%-1
+-1%Martyr Gregorisus%F65%-1
+-1%Venerable Job, in Schema Joshua, of Anzer (+ 1720)%F65%-1
+-1%Finding of the Precious Cross and the Precious Nails by the Holy Empress Helen in Jerusalem (326)%F65%-1
+-1%Icon of the Mother of God 'Chenstokhov' (1st C)%F65%-1
+-1%Hieromartyrs Basil, Ephraim, Eugene, Elpidius, Agathodorus, Aetherius, and Kapiton of Cherson (4th C)%F66%-1
+-1%Venerable Paul the Simple (4th C)%F66%-1
+-1%Venerable Nestor and Arcadius, Bishops of Tremethus in Cyprus%F66%-1
+-1%Venerable Emilian, in the world Victorinus, of Italy%F66%-1
+-1%St. Paul the Confessor the Bishop of Plusias (9th C)%F66%-1
+-1%St. Theophylactus the Bishop of Nicomedia (+842-845)%F67%-1
+-1%Venerable Dometius (+363)%F67%-1
+-1%Hieromartyr Theodoritus of Antioch (4th C)%F67%-1
+-1%Apostle Hermas of the Seventy (1st C)%F67%-1
+-1%Venerable Lazarus (+1391) and Athanasius (14th C) of Murom%F67%-1
+-1%St. Felix of Burgundy, Bishop of Dunwich and Enlightener of East Anglia%F67%-1
+-1%The Holy Forty Martyrs of Sebaste (+ c.320): Cyrion, Candidus, Domnus, Hesychius, Iraclius, Smaragdus, Eunoicus, Valentus, Vivian, Claudius, Priskus, Theodulus, Eutichius, John, Xanthus, Ilian, Sisinius, Angius, Aetius, Flavius, Dometian, Gaius, Leontius, Athanasius, Cyrill, Sakerdonus, Nicholas, Valerius, Philoctimon, Seberian, Chudionus, Aglaius, and Meliton%F68%-1
+-1%Martyr Urpasianus of Nicomedia (+ c.295)%F68%-1
+-1%Venerable Caesarius, brother of St Gregory the Theologian (+ c.369)%F68%-1
+-1%Martyr Philoromus%F68%-1
+-1%Martyr Quadratus and those with him at Corinth (+ 250-258): Cyprian, Dionysius, Anectus, Paul, Criscentus, another Dionysius, Victorinus, Victor, Niciphorus, Claudius, Diodorus, Serapion, Papius, Leonidus, and the holy women Chariessa, Nunechia, Basilissa, Nica, Calisa, Gala, Galina, Theodora, and many others%F69%-1
+-1%Holy Martyrs Quadratus of Nicomedia, Satorinus, Rufinus and others (3rd C)%F69%-1
+-1%Martyr Athanasia the Patrician, of Alexandria (+ 567-568)%F69%-1
+-1%Venerable George Arselaitus, Brother of Venerable John Climacus%F69%-1
+-1%New Martyr Michael of Thessalonica%F69%-1
+-1%Martyr Quadratus and those with him at Corinth (+ 250-258): Cyprian, Dionysius, Anectus, Paul, Criscentus, another Dionysius, Victorinus, Victor, Niciphorus, Claudius, Diodorus, Serapion, Papius, Leonidus, and the holy women Chariessa, Nunechia, Basilissa, Nica, Calisa, Gala, Galina, Theodora, and many others%F70%-1
+-1%Holy Martyrs Quadratus of Nicomedia, Satorinus, Rufinus and others (3rd C)%F70%-1
+-1%Martyr Athanasia the Patrician, of Alexandria (+ 567-568)%F70%-1
+-1%Venerable George Arselaitus, Brother of Venerable John Climacus%F70%-1
+-1%New Martyr Michael of Thessalonica%F70%-1
+-1%Holy Hierarch Sophronius the Patriarch of Jerusalem (638-644)%F71%-1
+-1%Holy Hierarch Euthymius, Archbishop of Novgorod (+ 1458)%F71%-1
+-1%Translation of the relics of the Martyr Epimachus of Pelusium%F71%-1
+-1%Hieromartyr Pionius of Smyrna and those with him: Asclepiades, Macedonia, Linus, and Sabina (+250)%F71%-1
+-1%Venerable George of Mt Sinai%F71%-1
+-1%Venerable Sophronius, Recluse of the Kiev Caves (13th C)%F71%-1
+-1%St. Sophronius the Bishop of Vratcha, Bulgaria (+ 1813)%F71%-1
+-1%Venerable Theophanes the Confessor of Sigriane (+ 818)%F72%-1
+-1%Holy Hierarch Gregory Dialogus, the Pope of Rome (+ 604)%F72%-1
+-1%Venerable Simeon the New Theologian (+ 1022)%F72%-1
+-1%Venerable Abacyrus and Cyrus%F72%-1
+-1%Righteous Phineas the grandson of Aaron (C 1500 BC)%F72%-1
+-1%Icon 'Not Made by Hands' from Lydda (1st C)and 'of Rome'%F72%-1
+-1%Translation of the relics of St Nicephorus the Patriarch of Constantinople (+ 846)%F73%-1
+-1%Martyr Alexander of Macedonia (305-311)%F73%-1
+-1%Martyr Sabinus (Abibus) of Egypt (+ 287)%F73%-1
+-1%Martyrs Africanus, Publius and Terence at Carthage (3rd C)%F73%-1
+-1%Martyr Christina of Persia (4th C)%F73%-1
+-1%Venerable Aninas of the Euphrates%F73%-1
+-1%Hieromartyr Puplius, Bishop of Athens%F73%-1
+-1%Venerable Benedict of Nursia (+ 543)%F74%-1
+-1%St. Euschemon the Confessor and Bishop of Lampsacus (9th C)%F74%-1
+-1%Holy Hierarch Theognostus, Metropolitan of Kiev and All Russia (+ 1353)%F74%-1
+-1%Right-believing Great Prince Rostislav-Michael of Kiev (+ 1167)%F74%-1
+-1%Theodore - Kostroma Icon of the Mother of God (1613)%F74%-1
+-1%Holy Martyrs Agapius, Publius, Timolaus, Romulus, Alexander, Alexander, Dionysius and Dionysius of Palestine (+ 303)%F75%-1
+-1%Hieromartyr Alexander of Side, in Pamphylia (+ c. 279)%F75%-1
+-1%Martyr Nicander of Egypt (+ c. 302)%F75%-1
+-1%New Martyr Manuel of Crete%F75%-1
+-1%Venerable Nicander of Gorodnoezersk%F75%-1
+-1%Martyr Sabinus of Egypt (+ 285)%F76%-1
+-1%Martyr Papas of Lyconia (+ 305-311)%F76%-1
+-1%Martyr Julian of Anazarbus (4th C)%F76%-1
+-1%Hieromartyrs Trophimus and Thallus, Priests of Laodicea (+ c.300)%F76%-1
+-1%Apostle Aristobulus of the Seventy, Bishop of Britain (1st C)%F76%-1
+-1%Hieromartyr Alexander, Pope of Rome (+ 119)%F76%-1
+-1%St. Serapion the Archbishop of Novgorod (+ 1516)%F76%-1
+-1%Venerable Christodoulus the Wonderworker%F76%-1
+-1%Venerable Alexis the Man of God (+ 411)%F77%-1
+-1%Venerable Macarius of Kaliazin%F77%-1
+-1%Venerable Paul of Cyprus%F77%-1
+-1%Martyr Marinus%F77%-1
+-1%St. Patrick, Bishop of Armagh and Enlightener of Ireland (+ 461)%F77%-1
+-1%Venerable Parthenius of Kiev%F77%-1
+-1%Holy Hierarch Cyrill, Archbishop of Jerusalem (+ 386)%F78%-1
+-1%Venerable Aninas of the Euphrates%F78%-1
+-1%Holy Martyrs Trophimus and Eucarpion of Nicomedia (+ c.300)%F78%-1
+-1%Venerable Daniel of Egypt%F78%-1
+-1%Martyred King Edward%F78%-1
+-1%Holy Martyrs Chrysanthus and Daria and with them  Martyrs Claudius the Tribune with his wife Hilaria and their sons Jason and Maurus, and Diodorus the Priest and Marianus the Deacon at Rome (+283)%F79%-1
+-1%Martyr Pancharius at Nicomedia (+ c.302)%F79%-1
+-1%New Martyr Dimitrius%F79%-1
+-1%St. Innocent of Komel and Vologda (1511-1522)%F79%-1
+-1%Venerable Vassa of the Pskov Caves (+ c.1473)%F79%-1
+-1%Venerable Sophia, Princess of Slutsk (+1612)%F79%-1
+-1%Venerable Fathers slain at the Monastery of Saint Sabbas: John, Sergius, Patrick and others (+796)%F80%-1
+-1%Martyr Photina (Svetlana), the Samaritan Woman, her sons, and those with her (+ c.66)%F80%-1
+-1%Holy Virgin Martyrs Alexandra, Claudia, Euphrasia, Matrona, Juliania, Euthymia and Theodosia (+310)%F80%-1
+-1%St. Nicetas the Confessor the Archbishop of Apollonias in Bithynia (9th C)%F80%-1
+-1%Monkmartyr Euphrosynus of Blue Jay Lake, Novgorod (+1612)%F80%-1
+-1%New Martyr Miron of Crete%F80%-1
+-1%St. Cuthbert, Wonderworker of Britain (+687)%F80%-1
+-1%Venerable James the Confessor and Bishop of Catania (8th-9th C)%F81%-1
+-1%Holy Hierarch Cyrill, Bishop of Catania (1st-2nd C)%F81%-1
+-1%Holy Hierarch Thomas, Patriarch of Constantinople (+610)%F81%-1
+-1%Venerable Serapion, Bishop of Tmuissa%F81%-1
+-1%Venerable Serapion of Neitria%F81%-1
+-1%Hieromartyr Basil of Ancyra (+363)%F82%-1
+-1%Venerable Isaac the Founder of the Dalmatian Monastery at Constantinople (4th C)%F82%-1
+-1%Martyr Drosis the Daughter of the Emperor Trajan (104-117)%F82%-1
+-1%Martyrs Callinica and Basilissa of Rome;Venerable Martyr Euthymius of Constantinople%F82%-1
+-1%Monkmartyr Euthymius of Prodromou on Mt Athos (+1814)%F82%-1
+-1%Martyr Nikon in Sicily and his 199 Disciples (+251)%F83%-1
+-1%Holy Martyrs Philetus, Lydia, Macedonus, Theoprepius, Cronidus, and Amphilochius (117-138)%F83%-1
+-1%Martyr Dometius%F83%-1
+-1%New Hieromartyr Luke of Mytelene%F83%-1
+-1%Venerable Nikon the Abbot of the Caves of Kiev (+1088)%F83%-1
+-1%Venerable Pachomius of Nerekhta%F83%-1
+-1%Righteous Basil of Mangazea (+1602)%F83%-1
+-1%Forefeast of the Annunciation%F84%-1
+-1%Venerable Zachariah the Recluse of Egypt%F84%-1
+-1%St. Artemon (Menignus) the Bishop of Seleucia (1st-2nd C)%F84%-1
+-1%Holy Hierarch Artemius, Bishop of Thessalonica%F84%-1
+-1%St. James the Confessor the Bishop of Catania (8th-9th C)%F84%-1
+-1%Venerable Zachariah the Ascetic of the Caves of Kiev (13th-14th C)%F84%-1
+-1%Holy Martyrs Stephen and Peter of Kazan (+1552)%F84%-1
+-1%Hieromartyr Parthenius, Patriarch of Constantinople%F84%-1
+-1%The Annunciation of our Most Holy Lady, Theotokos and Ever-Virgin Mary%F85%-1
+-1%St Tikhon the Confessor, Patriarch of Moscow and all Russia and Enlightener of North America (+1925)%F85%-1
+-1%Venerable Justin (Popovic) Archimandrite of Chelije (+1979)%F85%-1
+-1%Apodosis of the Annunciation%F86%-1
+-1%Synaxis of the Archangel Gabriel%F86%-1
+-1%Hieromartyr Irenaeus the Bishop of Sirmium in Hungary (+304)%F86%-1
+-1%St. Malchus of Chalcis in Syria (4th C)%F86%-1
+-1%Venerable Basil the New, Anchorite, Near Constantinople (10th C)%F86%-1
+-1%Holy Martyrs Presbyters Bathusius and Vercus with two sons and two daughters, the Monk Arpilus, and the Laymen: Abibus, Agnus, Reas, Igathrax, Iscous, Silus, Sigizus, Sonirilus, Suimblus, Thermus, Phillus and the women Anna, Alla, Larisa, Moico, Mamica, Uirco, Animaisa, Gaatha, and Ducleda (+ c.375)%F86%-1
+-1%Martyr Matrona of Thessalonica (3rd-4th C)%F87%-1
+-1%Martyrs Manuel and Theodosius (+304)%F87%-1
+-1%Venerable John the Clairvoyant, Anchorite, of Egypt (+ 394-395)%F87%-1
+-1%Venerable Ciricus of Thrace%F87%-1
+-1%Holy Prophet Ananaiah%F87%-1
+-1%Venerable Paul, Bishop of Corinth%F87%-1
+-1%Venerable Paphnutius of Heraclea%F87%-1
+-1%Venerable Hilarion the New the Abbot of Pelecete (+ c.754)%F88%-1
+-1%Venerable Stephen the Wonderworker the Abbot of Tryglia (9th C)%F88%-1
+-1%Monkmartyr Eustratius of the Caves of Kiev (+1097)%F88%-1
+-1%Martyrs Jonah and Barachisius and those with them: Xanithanus, Lazarus, Maruthanus, Narsinus, Elias, Marinus, Abibus, Siusithinus, and Sabbas (4th C)%F88%-1
+-1%Martyrs Prischus, Malchus, and Alexander%F88%-1
+-1%Saint Hesychius the Theologian, Presbyter of Jerusalem%F88%-1
+-1%Venerable Hilarion of Pskov Lake and Gdov (+1467)%F88%-1
+-1%Martyr Boyan, Prince of Bulgaria (+ c.830)%F88%-1
+-1%Hieromartyr Mark the Bishop of Arethusa, Martyr Cyril the Deacon of Heliopolis, and others who suffered under Julian the Apostate (+ c.363)%F89%-1
+-1%Venerable John the Anchorite of Egypt (4th C)%F89%-1
+-1%St. Eustathius (Eustace) the Confessor the Bishop of Bithynia (9th C)%F89%-1
+-1%Venerable Mark and Jonah of the Pskov Caves (15th C)%F89%-1
+-1%New Hieromartyr Paul Voinarsky and with him Paul and Alexis (+1919)%F89%-1
+-1%Venerable John Climacus of Sinai, Author of 'the Ladder' (+649)%F90%-1
+-1%Venerable John the Silent of St Sabbas Monastery (6th C)%F90%-1
+-1%St. Zosimus the Bishop of Syracuse (+ c.662)%F90%-1
+-1%Holy Apostles Sosthenes, Apollos, Cephas, Caesar and Epaphroditus of the Seventy (1st C)%F90%-1
+-1%Prophet Johad%F90%-1
+-1%Holy Hierarch John, Patriarch of Jerusalem%F90%-1
+-1%Hieromartyr Zachariah, Bishop of Corinth%F90%-1
+-1%St. Sophronius, Archbishop of Irkutsk (+1771)%F90%-1
+-1%St. Hypatius the Wonderworker and Bishop of Gangra (+ c.326)%F91%-1
+-1%Venerable Hypatius the Abbot of Rufinus in Chalcedon (+ c.446)%F91%-1
+-1%Venerable Apollonius, Ascetic, of Egypt (4th C)%F91%-1
+-1%Hieromartyrs Auda, Bishop of Persia and the Deacon Benjamin (418-424)%F91%-1
+-1%Saint Jonah, Metropolitan of Moscow and Wonderworker of All Russia (+1461)%F91%-1
+-1%Venerable Hypatius the Healer of the Kiev Caves (14th C)%F91%-1
+-1%Holy Righteous Joseph the Beautiful%F91%-1
+-1%Venerable Acacius the Confessor, Bishop of Melytene%F91%-1
+-1%Holy Equal-to-the-Apostles Innocent, Metropolitan of Moscow, the Enlightener of the Aleuts (+1879)%F91%-1
+-1%Venerable Mary of Egypt (+522)%F92%-1
+-1%Venerable Euthymius Archimandrite of Suzdal, the Wonderworker (+1404)%F92%-1
+-1%Venerable Macarius the Abbot of Pelecete (+ c.830)%F92%-1
+-1%Martyrs Gerontius and Basilides (3rd C)%F92%-1
+-1%Holy Martyr Abraham the Bulgar, Wonderworker of Vladimir (+1229)%F92%-1
+-1%Prophet Akhaz%F92%-1
+-1%Venerable Procopius of Sasaba%F92%-1
+-1%Venerable Gerontius the Canonarch of the Kiev Far Caves (14th C)%F92%-1
+-1%Holy Schema-bishop Macarius, the Confessor (+1944)%F92%-1
+-1%Venerable Barsonophius of Optina (+1913)%F92%-1
+-1%MP: New Hieromartyr Priest Sergey (+1938);%F92%-1
+-1%Venerable Titus the Wonderworker (9th C)%F93%-1
+-1%Martyrs Amphianus and Edesius of Lycia (+306)%F93%-1
+-1%Martyr Polycarp of Alexandria (4th C)%F93%-1
+-1%Venerable Gregory of Nicomedia%F93%-1
+-1%Venerable Nicetas the Confessor, Abbot of Medikion (+824)%F94%-1
+-1%Venerable Illyricus the Monk of Mt. Myrsinon in the Peloponnesus%F94%-1
+-1%Martyrs Elpidephorus, Dius, Bithonius, and Galycus%F94%-1
+-1% Virginmartyr Theodosia of Tyre (+ 307-308) and Martyr Irene%F94%-1
+-1%Martyrs Euagrius, Benign, Christos, Arestus, Kinnudius, Ruthus, Patric, and Zosimas%F94%-1
+-1%New Martyr Paul%F94%-1
+-1%Venerable Necratius of Bezhetsk%F94%-1
+-1%Icon of the Mother of God 'the Unfading Bloom'%F94%-1
+-1%Venerable Joseph the Hymnographer (+883)%F95%-1
+-1%Venerable George of Mt. Maleon in the Peloponnesus (9th C)%F95%-1
+-1%Venerable Zosimas of Palestine, who found Venerable Mary of Egypt (6th C)%F95%-1
+-1%Virginmartyr Pherbutha (Phermoutha) of Persia, with her sister and servant (+341-343)%F95%-1
+-1%Hieromartyr Nikita of Albania%F95%-1
+-1%Venerable Joseph the Much-Ailing, of the Caves of Kiev (14th C)%F95%-1
+-1%Venerable Zosimas the Abbot of Vorbozomsk (+ c.1550)%F95%-1
+-1%Venerable Theonas, Metropolitan of Thessaloniki%F95%-1
+-1%Hieromartyr George (Serbian)%F95%-1
+-1%Icon of the Mother of God 'Gerondissa'%F95%-1
+-1%MP: Venerable Martyrs Benjamin and Niciphorus (+1928)%F95%-1
+-1%New Hieromartyr Nicholas, Bishop of Velsk (+1932)%F95%-1
+-1%Martyrs Agathopous the Deacon and Theodulus the Reader and those with them (+ c.303)%F96%-1
+-1%Venerable Publius of Egypt (4th C)%F96%-1
+-1%Venerable Theonas, Simeon, and  Phorbinus of Egypt (4th C)%F96%-1
+-1%Venerable Theodora of Thessalonica (+892)%F96%-1
+-1%Venerable Mark the Anchorite of Athens (+400)%F96%-1
+-1%Venerable Plato the Confessor, Abbot of the Studion Monastery (+814)%F96%-1
+-1%New Martyr Gregory%F96%-1
+-1%Translation of the relics of the Holy Hierarch Job, Patriarch of Moscow and All Russia (1652)%F96%-1
+-1%MP: New Hieromartyr Priest Nicholas (+1931)%F96%-1
+-1%Holy Hierarch Eutychius, Patriarch of Constantinople (+582)%F97%-1
+-1%Holy Equal-to-the-Apostles Methodius, Archbishop of Moravia, Enlightener of the Slavs (+885)%F97%-1
+-1%Martyrs Jeremiah and the Priest Archilius (3rd C)%F97%-1
+-1%Holy 120 Martyrs of Persia (+ 344-347)%F97%-1
+-1%Venerable Platonida (Platonis) of Nisibis, Syria (+308)%F97%-1
+-1%Venerable Gregory of Mt Athos%F97%-1
+-1%Venerable Paul of the Studion Monastery%F97%-1
+-1%MP: New Hieromartyr Priest John (+1934)%F97%-1
+-1%New Hieromartyr Priest James (+1943)%F97%-1
+-1%Venerable Sebastian the Confessor, of Karaganda (+1966)%F97%-1
+-1%Venerable George the Confessor, Bishop of Mitylene (9th C)%F98%-1
+-1%Martyr Calliopius at Pompeiopolis in Cilicia (+304)%F98%-1
+-1%Martyr Rufinus the Deacon, the Martyr Aquilina and 200 Soldiers with them (+ c.310)%F98%-1
+-1%Venerable Egesippus%F98%-1
+-1%Venerable Daniel the Abbot of Pereyaslavl-Zalesski (+1540)%F98%-1
+-1%Venerable Nilus of Sorsk (+1508)%F98%-1
+-1%Venerable Serapion of Novgorod%F98%-1
+-1%Venerable Leucius of Volokolamsk%F98%-1
+-1%Apostles of the Seventy Herodion (Rodion), Agabus, Asyncritus, Rufus, Phlegon and Hermes (1st C)%F99%-1
+-1%Holy Hierarch Niphon, Bishop of Novgorod (+1156)%F99%-1
+-1%Holy Hierarch Celestine, Pope of Rome (+432)%F99%-1
+-1%Martyr Pausilippus of Heraclea in Thrace (+ c.117-138)%F99%-1
+-1%New Martyr John%F99%-1
+-1%Venerable Rufus the Obedient of the Caves of Kiev (14th C)%F99%-1
+-1%Martyr Eupsychius of Caesarea in Cappadocia (+362)%F100%-1
+-1%Holy Martyrs Bishop Desan, Presbyter Mariabus, Abdiesus, and 270 Others (+362-364)%F100%-1
+-1%Monk Martyr Archimandrite Bademus (Vadim) of Persia (+376)%F100%-1
+-1%Holy Hierarch Akakios, Bishop of Amida%F100%-1
+-1%Holy Hierarch Maximus, Patriarch of Alexandria%F100%-1
+-1%Martyrs Terence, Pompius, and with them Africanus, Macarius, Xeno, Alexander and the other 33 beheaded at Carthage (+ c.249-251)%F101%-1
+-1%Martyrs James the Presbyter and the deacons Azadanes and Abdikius of Persia (+ c.380)%F101%-1
+-1%Prophetess Olda%F101%-1
+-1%Venerable Martyr Arsenius and the other venerable fathers slain in the hermitage of David-Gareji (Georgia)%F101%-1
+-1%Hieromartyr Gregory V, Patriarch of Constantinople (+1821)%F101%-1
+-1%New Martyr Dimus%F101%-1
+-1%Martyrs Terence, Pompius, and with them Africanus, Macarius, Xeno, Alexander and the other 33 beheaded at Carthage (+ c.249-251)%F102%-1
+-1%Martyrs James the Presbyter and the deacons Azadanes and Abdikius of Persia (+ c.380)%F102%-1
+-1%Prophetess Olda%F102%-1
+-1%Venerable Martyr Arsenius and the other venerable fathers slain in the hermitage of David-Gareji (Georgia)%F102%-1
+-1%Hieromartyr Gregory V, Patriarch of Constantinople (+1821)%F102%-1
+-1%New Martyr Dimus%F102%-1
+-1%Hieromartyr Antipas, Bishop of Pergamum and Disciple of St John the Theologian (+69)%F103%-1
+-1%Venerable John the Disciple of the Venerable Gregory of Decapolis (9th C)%F103%-1
+-1%Venerable Pharmuthius the Anchorite of Egypt (4th C)%F103%-1
+-1%Martyrs Processus and Martinian (1st C)%F103%-1
+-1%Hieromartyr Damian, Bishop of Thessalonica%F103%-1
+-1%Holy Hierarch Philip, Bishop of Gortina%F103%-1
+-1%Venerable James the Abbot of Zheleznoborov and James, his disciple (+1442)%F103%-1
+-1%Venerable Euthemius and Chariton of Sianzhemsk%F103%-1
+-1%Holy Hierarch Barsanuphius, Bishop of Tver (+1576)%F103%-1
+-1%Venerable Basil the Confessor, Bishop of Parium (+ after 754)%F104%-1
+-1%Venerable Anthusa the Virginmartyr of Constantinople (+801)%F104%-1
+-1%Venerable Isaac the Syrian, Abbot of Spoleto (+550)%F104%-1
+-1%Venerable Athanasia the Abbess of Aegina (+860)%F104%-1
+-1%Hieromartyr Xeno, Bishop of Verona (+ c.260)%F104%-1
+-1%Venerable Martyrs Menas, David and John of Palestine (+ after 636)%F104%-1
+-1%Holy Hierarch Sergius II, Patriarch of Constantinople%F104%-1
+-1%Venerable Acacius the Younger of Mt Athos (+1730)%F104%-1
+-1%Holy Hierarch Basil, Bishop of Ryazan%F104%-1
+-1%Translation of the Precious Belt of the Mother of God to Constantinople%F104%-1
+-1%Icons of the Mother of God of Murom (12th C) and Belinich (13th C)%F104%-1
+-1%Hieromartyr Artemon the Presbyter of Laodicea in Syria (+303)%F105%-1
+-1%Martyr Crescens of Myra in Lycia%F105%-1
+-1%Womanmartyr Thomais of Alexandria (5th C)%F105%-1
+-1%New Martyr Dimitry of the Peloponeses%F105%-1
+-1%Holy Hierarch Martin the Confessor, Pope of Rome (+655)%F106%-1
+-1%Martyrs Anthony, John, and Eustathius of Lithuania (+1347)%F106%-1
+-1%Martyr Ardalion the Actor (+ 305-311)%F106%-1
+-1%Martyr Azades (Azat) the Eunuch and the 1000 Martyrs of Persia%F106%-1
+-1%Venerable Christopher the Sabbaite%F106%-1
+-1%Venerable Frontonus%F106%-1
+-1%Icons of the Mother of God 'Hodigitria of Vilna' and 'Vilenskaya-Ostrobramskaya'%F106%-1
+-1%Apostles Aristarchus, Pudens and Trophimus of the Seventy (+68)%F107%-1
+-1%Martyr Sava the Goth of Wallachia (+372)%F107%-1
+-1%Holy Women Martyrs Basilissa and Anastasia in Rome (+68)%F107%-1
+-1%Holy Hierarch Leonidus, Bishop of Athens%F107%-1
+-1%Blessed Great Prince Mstislav-Theodore of Kiev%F107%-1
+-1%Holy Martyr Suchias and his 16 Georgian Companions: Andrew, Anastasius, Talale, Theodoret, Euchirion, Jordan, Quadratus, Lucian, Mimnenosus, Nerangiosus, Polyeuctus, James, Phocas, Domentian, Victor, and Zosimus (+123)%F107%-1
+-1%Holy Martyrs Agape, Irene, and Chione (+304)%F108%-1
+-1%Martyr Leonidas and the Holy Martyrs Charissa, Nike, Galina, Kalisa (Kalida), Nunekhia, Basilissa, and Theodora, and others at Corinth (+258)%F108%-1
+-1%Another Martyr Irene%F108%-1
+-1%New Martyr Michael%F108%-1
+-1%Vnerable Princess Theodora-Bassa of Nizhny Novgorod%F108%-1
+-1%Icons of the Mother of God of Tambov (1692), of Chernigov, and 'Shuiskaya'%F108%-1
+-1%Hieromartyr Simeon, Bishop in Persia, Priests Abdechalas and Ananias, and Martyrs Usthazanes, Phusicus, Askitrea, Azades, and others (+344)%F109%-1
+-1%St. Acacius the Bishop of Melitene (+ c.435)%F109%-1
+-1%Venerable Zosimas the Abbot of Solovki (+1478)%F109%-1
+-1%Martyr Adrian of Corinth (+251)%F109%-1
+-1%Holy Hierarch Agapitus, Pope of Rome (+536)%F109%-1
+-1%Finding of the relics of Venerable Alexander, Abbot of Svir (1641)%F109%-1
+-1%Venerable Paisius of Kiev, the Fool-for-Christ%F109%-1
+-1%Venerable John the Disciple of Venerable Gregory of Decapolis (+ c.820-850)%F110%-1
+-1%Saint Cosmas, Bishop of Chalcedon, and his companion St. Auxentius (+815-820)%F110%-1
+-1%Martyrs Victor, Zoticus, Acindynus, Xeno, Severian and Caesarius (+303)%F110%-1
+-1%New Martyr John the New of Epirus (+1526)%F110%-1
+-1%New Martyr John Culicus%F110%-1
+-1%Martyr Mappalycus%F110%-1
+-1%Venerable Anthony, Euthymius, and Felix, Enlighteners of Karelia and Finland (15th C)%F110%-1
+-1%Icon of the Mother of God of Maximov (1299)%F110%-1
+-1%Venerable John of the Ancient Caves in Palestine (8th C)%F111%-1
+-1%Holy Hierarch George the Confessor, Bishop of Antioch in Pisidia (9th C)%F111%-1
+-1%Holy Hierarch Tryphon, Patriarch of Constantinople (+933)%F111%-1
+-1%Holy Martyrs Christopher, Theonas, and Anthony (+303)%F111%-1
+-1%Venerable Nicephorus the Abbot of Catabad%F111%-1
+-1%Hieromartyr Paphnutius, Bishop of Jerusalem (3rd C)%F111%-1
+-1%Venerable Simeon the Barefooted%F111%-1
+-1%Venerable Martyr Agathangelus of Esphigmenou on Mt Athos (+1818)%F111%-1
+-1%Icon of the Mother of God of Mozdok%F111%-1
+-1%Venerable Theodore Trichinas 'the Hair-Shirt Wearer', hermit near Constantinople%F112%-1
+-1%Venerable Anastasius, Abbot of Sinai (+695)%F112%-1
+-1%Blessed Gregory, Patriarch of Antioch (+593)%F112%-1
+-1%Blessed Anastasius, Patriarch of Antioch (+609)%F112%-1
+-1%Holy Hierarch Anastasius II, Patriarch of Antioch%F112%-1
+-1%Childmartyr Gabriel of Bialystok (+1690)%F112%-1
+-1%Venerable Alexander the Abbot of Oshevensk (+1579)%F112%-1
+-1%Holy Hierarch Betranus, Bishop of Lesser Scythia%F112%-1
+-1%Transfer of the Relics of St Nicholas (Velemirovich) of Zhicha%F112%-1
+-1%Icons of the Mother of God 'Kipiazhskaya' and 'Cypriot'%F112%-1
+-1%Hieromartyr Januarius Bishop of Beneventum, and the deacons Proculus, Sossius and Faustus, Desiderius the Reader, Eutychius and Acution, laymen (+ c.305)%F113%-1
+-1%Holy Martyrs Theodore, his mother Philippa, Dioscorus, Socrates and Dionysius of Perge in Pamphylia (2nd C)%F113%-1
+-1%Martyrs Isaac, Apollos and Quadratus (+303)%F113%-1
+-1%Martyr Alexandra%F113%-1
+-1%Holy Hierarch Maximian, Patriarch of Constantinople (+434)%F113%-1
+-1%Venerable Theodore of Sanaxara%F113%-1
+-1%Venerable Alexis of Bortsurman (+1848)%F113%-1
+-1%MP: New Confessor Priest Nicholas (+1933)%F113%-1
+-1%Holy Hierarch Theodore the Sykeote, Bishop of Anastasiopolis (+613)%F114%-1
+-1%Venerable Vitalius the Monk of Gaza (7th C)%F114%-1
+-1%Apostles Nathaniel, Luke and Clement of the Seventy (1st C)%F114%-1
+-1%Martyr Epipodus of Lyon%F114%-1
+-1%Martyrs Leonidus, Aratores, Kyriakus, and Basil%F114%-1
+-1%Translation of the relics of the Blessed Vsevolod, in Holy Baptism Gabriel, Prince of Pskov (1834)%F114%-1
+-1%Hieromartyr Platon, Bishop of Banja Luka%F114%-1
+-1%Holy Greatmartyr, Trophy-bearer and Wonderworker George (+303)%F115%-1
+-1%Martyr Alexandra the Empress, wife of Diocletian (+314)%F115%-1
+-1%Martyr Anatolius the Soldier and Martyr Protoleon (+303)%F115%-1
+-1%Martyr Glicerie the farmer, Athanasius the magus, Valerius, Donatus, and Therinus%F115%-1
+-1%New Martyr George of Ptolemaida%F115%-1
+-1%New Martyr Lazarus of Bulgaria%F115%-1
+-1%Venerable George of Shenkura%F115%-1
+-1%Martyr Sabbas Stratelates 'the General' of Rome and 70 soldiers with him (+272)%F116%-1
+-1%Martyrs Eusebius, Neon, Leontius, Longinus, and 40 Others (+303)%F116%-1
+-1%Martyrs Pasikrates and Valention in Moesia, Bulgaria (+228)%F116%-1
+-1%Venerable Thomas the Fool-for-Christ of Syria (+ c.546-560)%F116%-1
+-1%Venerable Elizabeth the Wonderworker of Constantinople (6th-8th C)%F116%-1
+-1%Martyr Alexander of Lyon%F116%-1
+-1%Venerable Sava the Recluse of the Caves of Kiev (13th C)%F116%-1
+-1%Martyr Luke%F116%-1
+-1%New Martyr Nicholas%F116%-1
+-1%New Martyr George%F116%-1
+-1%New Martyr Ducas%F116%-1
+-1%Venerable Innocent the Presbyter%F116%-1
+-1%Hieromartyr Branko of Serbia%F116%-1
+-1%Icon of the Mother of God of Molchen (1405)%F116%-1
+-1%Holy Apostle and Evangelist Mark (1st C)%F117%-1
+-1%Holy Hierarch Macedonius, Patriarch of Constantinople%F117%-1
+-1%Holy Hieararch Anianus, Bishop of Alexandria%F117%-1
+-1%Holy Hieromartyr Stephen, Bishop of Antioch%F117%-1
+-1%Venerable Sylvester, Abbot of Obnora (+1379)%F117%-1
+-1%MP: New Hieromartyr Priest Sergey (+1938)%F117%-1
+-1%Icon of the Mother of God of Constantinople (1071)%F117%-1
+-1%Hieromartyr Basil, Bishop of Amaseia (+ c.323)%F118%-1
+-1%Holy Hierarch Stephen, Bishop of Great Perm (+1396)%F118%-1
+-1%Righteous Virginmartyr Glaphyra (+322)%F118%-1
+-1%Venerable Joannicius of Devich in Serbia (+1440)%F118%-1
+-1%Venerable Justa%F118%-1
+-1%MP: New Hieromartyr Priest John and his children Nicholas and Peter (+1918)%F118%-1
+-1%Apostle and Hieromartyr Simeon, Bishop of Jerusalem, a Kinsman of the Lord (+107)%F119%-1
+-1%Venerable Stephen, Abbot of the Caves of Kiev and Bishop of Vladimir in Volynia (+1094)%F119%-1
+-1%Venerable John, Abbot of the Cathari%F119%-1
+-1%Kazan Icon of the Mother of God in Aleksandrovka village, near St Petersburg%F119%-1
+-1%MP: New Hieromartyrs Priest Paul and John and Martyrs Peter, Nicholas, Auxentious, Sergius, and Anastasia (+1922)%F119%-1
+-1%New Hieromartyr Priest John (+1941)%F119%-1
+-1%Apostles Jason and Sosipater of the Seventy, Virginmartyr Kerkyra and those with them (1st C)%F120%-1
+-1%Martyrs Dada, Maximus and Quinctilian (+286)%F120%-1
+-1%Martyrs Saturninus, Iakischolus, Faustianus, Januarius, Marsalius, Euphrasius, Mammius, Zeno, Eusebius, Neon, and Vitalis (+ c.63)%F120%-1
+-1%Holy Hieararch Cyril, Bishop of Turov (+ c.1183)%F120%-1
+-1%Venerable Auxisibius%F120%-1
+-1%Venerable Kyriakus of Kargo Pole%F120%-1
+-1%Nine Holy Martyrs of Cyzicus: Rufus, Antipater, Theostichus, Artemas, Magnus, Theodotus, Thaumasius, Theognidus, and Philemon (+ 286-299)%F121%-1
+-1%Venerable Memnon the Wonderworker%F121%-1
+-1%Holy Martyrs Diodorus and Rhodopianos the Deacon (+ c.300)%F121%-1
+-1%Venerable Nikita, Abbot of Synada%F121%-1
+-1%Holy Hierarch Basil, Bishop of Zakholmsk and Ostrog in Montenegro (+1671)%F121%-1
+-1%Venerable Nektari of Optina (+1928)%F121%-1
+-1%Holy Apostle James Zebedee, brother of John the Theologian (+44)%F122%-1
+-1%Holy Hierarch Donatus the Bishop of Euroea in Epirus (+ c.387)%F122%-1
+-1%Finding of the relics of St Basil, Bishop of Amasea (4th C)%F122%-1
+-1%Finding of the relics of St Nikita, Bishop of Novgorod (1558)%F122%-1
+-1%Venerable Clement, the Composer of Hymns%F122%-1
+-1%Martyr Maximus of Ephesus%F122%-1
+-1%New Martyr Argyra%F122%-1
+-1%Holy Hierarch Ignatius (Brianchaninov), Bishop of the Caucasus and the Black Sea (+1867)%F122%-1
+-1%Icon of the Mother of God 'Strastnaya'%F122%-1
+-1%Prophet Jeremiah (6th C BC)%F123%-1
+-1%Hieromartyr Macarius, Metropolitan of Kiev (+1497)%F123%-1
+-1%Venerable Paphnutius the Abbot of Borovsk (+1478)%F123%-1
+-1%Venerable Gerasim of Boldinsk%F123%-1
+-1%Martyr Bata the Persian (4th C)%F123%-1
+-1%Right-believing Tamara, Queen of Georgia (13th C)%F123%-1
+-1%New Martyrs Euthymius, Ignatius, and Acacius of Mt. Athos (+ 1814-1816)%F123%-1
+-1%Icons of the Theotokos: 'Byzantine', 'the Unexpected Joy', 'Myrrh-bearing', and 'Andronikite'%F123%-1
+-1%MP: New Martyr Nina (+1938)%F123%-1
+-1%St. Athanasius the Great, Patriarch of Alexandria (+373)%F124%-1
+-1%St. Athanasius, Wonderworker of Lubensk and Patriarch of Constantinople (+1654)%F124%-1
+-1%Holy Martyrs Hesperus, his Wife Zoe, and their Children Cyriacus and Theodulus (2nd C)%F124%-1
+-1%Transfer of the Relics of the Holy Passion-Bearers Boris (1072) and Gleb (1115), in Holy Baptism Roman and David%F124%-1
+-1%St. Boris (in Holy Baptism Michael), Equal to the Apostles, Prince and Baptizer of Bulgaria (+ c.908)%F124%-1
+-1%Icons of the Mother of God of 'Putivilsk' and 'Butivalsl' (1635)%F124%-1
+-1%Martyrs Timothy and Maura of Antinoe in Egypt (+ c.286)%F125%-1
+-1%Venerable Theodosius the Abbot of the Kiev Far Caves (+1074)%F125%-1
+-1%St. Peter the Wonderworker and Bishop of Argolis (10th C)%F125%-1
+-1%Icons of the Mother of God: The Dormition of the Kiev Caves, transferred from Constantinople (1073), of the Kiev Caves (1085), and of Sven (1388)%F125%-1
+-1%MP: New Hieromartyr Priest Nicholas (+1941)%F125%-1
+-1%Virginmartyr Pelagia of Tarsus, in Asia Minor (+ c.290)%F126%-1
+-1%Hieromartyr Silvanus the Bishop of Gaza, and with him 40 Martyrs (+311)%F126%-1
+-1%Hieromartyr Erasmus the Bishop of Formia in Campania (+303)%F126%-1
+-1%Hieromartyr Albian the Bishop of Anaea in Asia Minor (+304)%F126%-1
+-1%Transfer of the Relics of the Righteous Lazarus and the Holy Equal-to-the-Apostles Mary Magdalene%F126%-1
+-1%Venerable Martyrs of Palestine: Afrodisus, Leontius, Anthony, Valerianus, Macrobius, and others%F126%-1
+-1%St Athanasius, Bishop of Corinth%F126%-1
+-1%Venerable brothers Alfanov: Nikita, Cyril, Nicephorus, Clement, and Isaac, of Novgorod (14th-15th C)%F126%-1
+-1%Venerable Nicephorus of Midicea%F126%-1
+-1%Another Venerable Nicephorus%F126%-1
+-1%Icon of the Mother of God of Staraya Rusa;%F126%-1
+-1%Greatmartyr Irene of Thessalonica (1st-2nd C)%F127%-1
+-1%Martyrs Neophyte, Gaius, and Gaianus%F127%-1
+-1%Venerable Micah, disciple of St Sergius of Radonezh%F127%-1
+-1%Venerable Hadrian of Monzensk%F127%-1
+-1%Venerable James the Abbot of Zhelezny Bor%F127%-1
+-1%Icon of the Mother of God 'the Inexhaustible Cup' (1878)%F127%-1
+-1%Righteous Job the Long-Suffering (c.2000-1500 BC)%F128%-1
+-1%Venerable Job, Abbot and Wonderworker of Pochaev%F128%-1
+-1%Martyrs Barbarus the Soldier, and together with him Bacchus, Callimachus and Dionysius in Morea (+ c.362)%F128%-1
+-1% Martyr Barbarus in Thessaly, who was a robber%F128%-1
+-1%Birthday of the Holy Tsar-Martyr Nicholas II%F128%-1
+-1%Commemoration of the Apparition of the Sign of the Precious Cross Over Jerusalem in 351 AD%F129%-1
+-1%Martyr Acacius the Centurion at Byzantium (+303)%F129%-1
+-1%Martyr Domitilla%F129%-1
+-1% Venerable Nilus the Abbot of Sora (+1508)%F129%-1
+-1%Saint John Zedazeni and his Twelve Disciples: Abibus, Bishop of Nekressi, Anthony of Martkob, David of Gareji, Zeno of Ikalto, Thaddeus of Stepantsmind, Jesse of Tsilkani, Joseph, bishop of Alaverdi, Isidore of Samtavno, Michael of Ulompo, Pyrrhus of Breta, Stephen of Khirsa, and Shio Mgvime, in Georgia (6th C)%F129%-1
+-1%New Martyr Pachomius%F129%-1
+-1%Icons of the Mother of God: 'Zhirovitskaya' and 'Liubechskaya'%F129%-1
+-1%Holy Apostle and Evangelist John the Theologian (+98-117)%F130%-1
+-1%Venerable Arsenius the Great (+449-450)%F130%-1
+-1%Righteous Emily%F130%-1
+-1%Venerable Arsenius of Novgorod%F130%-1
+-1%Venerable Arsenius the Lover-of-Labor of the Kiev Far Caves (14th C)%F130%-1
+-1%Venerable Herax of Egypt%F130%-1
+-1%Transfer of the relics of St Nicholas the Wonderworker from Myra to Bari (1087)%F131%-1
+-1%Prophet Isaiah (8th C BC)%F131%-1
+-1%Martyr Christopher of Lycia (+ c.250)%F131%-1
+-1%Transfer of the relics of the Martyr child Gabriel%F131%-1
+-1%Venerable Shio of Mgvimo, Georgia (6th C)%F131%-1
+-1%Martyr Epimachus the New%F131%-1
+-1%Martyr Gordian%F131%-1
+-1%Venerable Nicholas Buneni%F131%-1
+-1%Venerable Joseph of Optina (+1911)%F131%-1
+-1%Icon of the Mother of God of Perekop%F131%-1
+-1%MP: New Hieromartyr Priest Vasily (+1939)%F131%-1
+-1%Apostle Simon Zealotes (1st C)%F132%-1
+-1%St. Simon the Bishop of Vladimir and Suzdal (+1226), Wonderworker of the Caves%F132%-1
+-1%Blessed Isidora the Fool of Tabenna in Egypt (6th C)%F132%-1
+-1%Blessed Thais of Egypt (5th C)%F132%-1
+-1%Martyr Hesychius of Antioch (4th C)%F132%-1
+-1%Holy Martyrs Alphaeus, Philadelphus, Cyprian, Onesimus, Erasmus and 14 others in Sicily (3rd C)%F132%-1
+-1%Venerable Simon of Yuriev%F132%-1
+-1%Venerable Lawrence, the Monk of Egypt%F132%-1
+-1%Icon of the Mother of God of Kiev-Bratsk (1654)%F132%-1
+-1%Apostle Simon Zealotes (1st C)%F133%-1
+-1%St. Simon the Bishop of Vladimir and Suzdal (+1226), Wonderworker of the Caves%F133%-1
+-1%Blessed Isidora the Fool of Tabenna in Egypt (6th C)%F133%-1
+-1%Blessed Thais of Egypt (5th C)%F133%-1
+-1%Martyr Hesychius of Antioch (4th C)%F133%-1
+-1%Holy Martyrs Alphaeus, Philadelphus, Cyprian, Onesimus, Erasmus and 14 others in Sicily (3rd C)%F133%-1
+-1%Venerable Simon of Yuriev%F133%-1
+-1%Venerable Lawrence, the Monk of Egypt%F133%-1
+-1%Icon of the Mother of God of Kiev-Bratsk (1654)%F133%-1
+-1%Holy Equal-to-the-Apostles Methodius (+885) and Cyrill (+869), teachers of the Slavs%F134%-1
+-1%Hieromartyr Mocius the Presbyter of Amphipolis in Macedonia (+ c.295)%F134%-1
+-1%Commemoration of the Founding of Constantinople (324)%F134%-1
+-1%Saint Nicodemus, Archbishop of Serbia (+1325)%F134%-1
+-1%Venerable Sophronius the Recluse of the Kiev Far Caves (13th)%F134%-1
+-1%New Martyrs Dioscorus and Argirus%F134%-1
+-1%Hieromartyr Joseph, First Metropolitan of Astrakhan (+1672)%F134%-1
+-1%Icon of the Mother of God of Constantinople%F134%-1
+-1%MP: New Hieromartyr Alexander, Archbishop of Khar'kov (+1940)%F134%-1
+-1%St. Epiphanius the Bishop of Cyprus (+403)%F135%-1
+-1%Saint Germanus, Patriarch of Constantinople (+740)%F135%-1
+-1%Glorification of Hieromartyr Hermogenes, Patriarch of Moscow and All Russia (1913)%F135%-1
+-1%St. Sabinus, Archbishop of Cyprus (5th C)%F135%-1
+-1%St. Polybius, Bishop of Rhynokyra (5th C)%F135%-1
+-1%Venerable Pancratius the Youth%F135%-1
+-1%Venerable Dionysius the Archimandrite of St Sergius Monastery (+1633)%F135%-1
+-1%New Martyr John Vlachos%F135%-1
+-1%'Cypriot' Icon of the Mother of God in Nizhniy Novgorod%F135%-1
+-1%MP: New Hieromartyr Priest Peter (+1937)%F135%-1
+-1%Virginmartyr Glyceria at Heraclea with her Laodicius the prison guard (+ c.177)%F136%-1
+-1%Martyr Alexander of Rome (+ c.300)%F136%-1
+-1%Saint Pausicacus, Bishop of Synada (+ c.606)%F136%-1
+-1%Hieromartyr Alexander, Bishop of Tiberiada%F136%-1
+-1%St. Euthymius the New, Founder of the Iveron Monastery (+1028)%F136%-1
+-1%Venerable John, father of St. Euthymius%F136%-1
+-1%St. George the Confessor, with his wife Irene and children of Constantinople (9th C)%F136%-1
+-1%Venerable Gabriel the Iberian (Georgian)%F136%-1
+-1%Virginmartyr Glyceria of Novgorod (+1522)%F136%-1
+-1%Translation of the Relics of Hieromartyr Macarius, Archimandrite of Kanev (1688)%F136%-1
+-1%MP: New Hieromartyrs Priests Basil, Alexander, and Christopher, Martyrs Macarius and Sergius (+1922)%F136%-1
+-1%103 New Martyrs of Cherkassy (20th C)%F136%-1
+-1%Martyr Isidore of Chios%F137%-1
+-1%Venerable Isidore the Fool-For-Christ and Wonderworker of Rostov (+1474)%F137%-1
+-1%St. Nikita the Bishop of Novgorod and the Recluse of the Kiev Far Caves (+1109)%F137%-1
+-1%Martyr Maximus (+ c.250)%F137%-1
+-1%Venerable Serapion of Egypt (5th C)%F137%-1
+-1%Saint Leontius, Patriarch of Jerusalem (13th C)%F137%-1
+-1% New Martyr Mark of Smyrna%F137%-1
+-1%New martyr Raiko (John) of Bulgaria%F137%-1
+-1%Icons of the Mother of God 'Yaroslavksaya', 'Terebinskaya', and 'Serafimo-Ponetaevskaya'%F137%-1
+-1%Venerable Pachomius the Great, Founder of Coenobitic Monasticism (+ c.348)%F138%-1
+-1%St. Isaiah the Bishop and Wonderworker of Rostov (+1090)%F138%-1
+-1%Blessed Crown Prince Demetrius of Uglich and Moscow (+1591)%F138%-1
+-1%Venerable Euphrosynus the Abbot and Wonderworker of Pskov (+1481) and his disciple Serapion (+1480)%F138%-1
+-1%Venerable Pachomius the Abbot and Siluan of Nerekhta (+1384)%F138%-1
+-1%St. Achilles the Bishop of Larissa (+ c.330)%F138%-1
+-1%Venerable Isaiah the Wonderworker of the Kiev Near Caves (+1115)%F138%-1
+-1%Icon of the Mother of God 'Tupicheskaya'%F138%-1
+-1%Venerable Theodore the Sanctified (+368)%F139%-1
+-1%Translation of the relics of the Venerable Ephraim, Abbot of Perekop, Novgorod (1545)%F139%-1
+-1%St. George the Bishop of Mitylene (9th C)%F139%-1
+-1%St. Nicholas the Mystic, Patriarch of Constantinople%F139%-1
+-1%Hieromartyr Abdiesus the Bishop and with him 16 priests, 9 deacons, 7 virgins, and 6 monks%F139%-1
+-1%Blessed Child Musa of Rome (5th C)%F139%-1
+-1%Martyrs Vitus, Modestus and Crescentia at Lucania%F139%-1
+-1%New Martyr Nicholas%F139%-1
+-1%Venerable Cassian (+1537) and Laurence (+1548), Abbots of Komel (Vologda)%F139%-1
+-1%New martyr Vukasin of Klepci, Serbia%F139%-1
+-1%Saint Andronicus, Apostle of the Seventy, and Saint Junia (1st C)%F140%-1
+-1%Saint Stephen, Patriarch of Constantinople (+893)%F140%-1
+-1%Martyrs Solochon, Pamphamirus and Pamphalon at Chalcedon (+ 184-305)%F140%-1
+-1%Venerable Nektarios and Theophanes%F140%-1
+-1%Saint Euphrosyne, in the world Eudokia, Great Princess of Moscow (+1407)%F140%-1
+-1%Finding of the Relics of Venerable Hadrian of Ondrussovsk%F140%-1
+-1%Icons of the Mother of God: 'Surety of Sinners' and 'Shuiskaya'%F140%-1
+-1%Holy Martyr Theodotus and the Holy Seven Virgins Tecusa, Phaine, Claudia, Matrona, Julia, Alexandra and Euphrasia (+303)%F141%-1
+-1% Holy Martyrs Peter, Dionysius, Andrew, Paul, and Christina, who suffered under emperor Decius (+249-251)%F141%-1
+-1%Holy Martyrs Simeon, Isaac and Bachtisius in Persia (4th C)%F141%-1
+-1%Hieromartyr Patamon, Bishop of Heraclea%F141%-1
+-1%Martyr Euphratios%F141%-1
+-1%Holy Martyrs David and Tarichan in Georgia (+683)%F141%-1
+-1%Venerable Macarius of Altai (+1847)%F141%-1
+-1%Icon of the Mother of God of the 'Pskov Caves'%F141%-1
+-1%MP: New Hieromartyr Priest Basil%F141%-1
+-1%Hieromartyr Patrick the Bishop of Prussa and the Priests Acacius, Menander, and Polyenus (+ c.100)%F142%-1
+-1%Saint John, Bishop of the Goths (+790)%F142%-1
+-1%Blessed John the Prince of Uglich, Tonsured As Ignatius (+1523)%F142%-1
+-1%Martyr Caluf of Egypt (+ c.300)%F142%-1
+-1%Martyr Theotima%F142%-1
+-1%Holy Right-believing Great Prince Demetrius Donskoy of Moscow (+1389)%F142%-1
+-1%Venerable Serge of Shukhtov%F142%-1
+-1%Venerable Cornelius the Abbot of Komel, Vologda (+1537)%F142%-1
+-1%MP: New Hieromartyr Viktor (+1937)%F142%-1
+-1%New Hieromartyr Anthony, bishop of Belgorod and those with him (+1938)%F142%-1
+-1%New Hieromartyr Onuphry, Archbishop of Kursk (+1938)%F142%-1
+-1%Martyrs Thallelaeus, Alexander and Asterius (+284)%F143%-1
+-1%Finding of the relics of St Alexis the Metropolitan of Moscow and Wonderworker of All Russia (1431)%F143%-1
+-1%Martyr Asclas of Egypt (+ c.287)%F143%-1
+-1%Venerable Thalassius%F143%-1
+-1%Venerable Nikita, John, and Joseph of Chios%F143%-1
+-1%Blessed St Dovmont, baptized Timothy, the Prince of Pskov (+1299)%F143%-1
+-1%Holy Equal-to-the-Apostles Emperor Constantine the Great (+337) with his Mother Helen (+327)%F144%-1
+-1%Venerable Prince Yaroslav, (in baptism Constantine) (+1129), with his children Michael and Theodore, Wonderworkers of Murom (12th C)%F144%-1
+-1%Venerable Cassian the Greek of Uglich (+1504)%F144%-1
+-1%Venereable Agapit of Markushev%F144%-1
+-1%New Martyr Pachomius%F144%-1
+-1%Meeting of the Vladimir Icon of the Mother of God%F144%-1
+-1%Icon of the Mother of God 'Oranskaya'%F144%-1
+-1%Martyr Basiliscus the Bishop of Comana (+308)%F145%-1
+-1%Righteous Melchisedek, King of Salem%F145%-1
+-1%Martyrs Marcellus, Quadrus, and Sophia the healer%F145%-1
+-1%Holy Passion-Bearer King John-Vladimir of Serbia (+1015)%F145%-1
+-1%New Hieromartyr Zechariah%F145%-1
+-1%Blessed James of Borovichi%F145%-1
+-1%Commemoration of the Holy Fathers of the Second Ecumenical Council (381)%F145%-1
+-1%Icon of the Mother of God 'Tenderness'%F145%-1
+-1%MP:New Hieromartyr Priest Michael (+1942)%F145%-1
+-1%St. Michael the Confessor and Bishop of Synnada (+821)%F146%-1
+-1%Finding of the relics of St Leontius the Bishop and Wonderworker of Rostov (1164)%F146%-1
+-1%Venerable Euphrosyne the Abbess of Polotsk (+1173)%F146%-1
+-1% Martyr Michael 'the Black-Robed' of St Sava's Monastery (9th C)%F146%-1
+-1%Venerable Paisius the Abbot of Galich (+1460)%F146%-1
+-1%Holy Myrrh-Bearer Mary of Cleopas%F146%-1
+-1%Venerable Simeon Stylites the Younger of Wonderful Mountain (+596)%F147%-1
+-1%Venerable Nikita the Stylite, Wonderworker of Pereyaslavl' Zalesskiy (+1186)%F147%-1
+-1%Holy Martyrs Meletius the General, Stephen, John, Serapion the Egyptian, Callinicus the Sorcerer, Theodore and Faustus and with them 1218 Soldiers (+ c.218)%F147%-1
+-1%Venerable Vincent, Bishop of Lerins%F147%-1
+-1%Venerable Martha, Abbess of Monemvasia and three nuns with her%F147%-1
+-1%Third Finding of the Honorable Head of the Holy Glorious Prophet, Forerunner and Baptist John (c.850)%F148%-1
+-1%Hieromartyr Therapon the Bishop of Cyprus (4th C)%F148%-1
+-1%Venerable Olbian%F148%-1
+-1%Martyr Celestine%F148%-1
+-1%Synaxis of the Saints of Volyn: Yaropolk, Stephen, Macarius, Igor, and Juliana%F148%-1
+-1%St Dodo, King of Georgia%F148%-1
+-1%Commemoration of the return of 3,000,000 uniates to the Orthodox Church in Vilnya (1831)%F148%-1
+-1%MP: Venerable New Martyr Tavrio (+1939)%F148%-1
+-1%Apostles of the Seventy Carpus and Alphaeus (1st C)%F149%-1
+-1%Holy Martyrs Abercius and Helen (1st C)%F149%-1
+-1% Greatmartyr George the New at Sofia, Bulgaria (+1515)%F149%-1
+-1%St. John Psichaita the Confessor, of Constantinople (9th C)%F149%-1
+-1%New Martyr Alexander of Thessaloniki%F149%-1
+-1%Finding of the relics of the Venerable Macarius the Abbot of Kalyazin (+1521)%F149%-1
+-1%St. Augustine of Canterbury, Evangelizer of England%F149%-1
+-1%Hieromartyr Therapon the Bishop of Sardis (3rd C)%F150%-1
+-1%Translation of the relics of the Venerable Nilus of Stolbensk (1667)%F150%-1
+-1%Holy Martyrs Theodora the Virgin and Didymus the Soldier (+304)%F150%-1
+-1% Translation of the relics of Saints Cyprian, Photius, and Jonah, Hierarchs of Kiev (1472)%F150%-1
+-1% Venerable Therapontes the Abbot of White Lake (+1426)%F150%-1
+-1% Venerable Therapon the Abbot of Monza (+1597)%F150%-1
+-1%St. John the Russian, the Confessor, whose relics are on the island of Euboia (+1730)%F150%-1
+-1%Venerable David Gareji of Georgia%F150%-1
+-1%St. Nicetas the Bishop of Chalcedon (9th C)%F151%-1
+-1%St. Ignatius the Bishop and Wonderworker of Rostov (+1288)%F151%-1
+-1% Hieromartyr Eutychius, Bishop of Melitene (1st C)%F151%-1
+-1%St. Germanus the Bishop of Paris (6th C)%F151%-1
+-1%Martyr Heliconis of Thessalonica (+244)%F151%-1
+-1%Hieromartyr Helladius the Bishop in the East (6th-7th C)%F151%-1
+-1%Martyr Heliconida%F151%-1
+-1%New Martyr Dimitrius%F151%-1
+-1%New Martyr Zachariah of Prussa%F151%-1
+-1%Venerable Sophronius of Bulgaria%F151%-1
+-1%Icons of the Mother of God: of Nicea, of Antioch, of Orel, 'Tenderness', of Galich%F151%-1
+-1%MP: Venerable New Martyr Macarius (+1931)%F151%-1
+-1%St Heraclius the New Confessor (+1936)%F151%-1
+-1%Virginmartyr Theodosia of Tyre (+ c.307)%F152%-1
+-1%Repose of the Blessed John of Ustiug the Fool-for-Christ (+1494)%F152%-1
+-1%Saint Alexander, Pope of Alexandria%F152%-1
+-1%New Martyr Andrew%F152%-1
+-1%New Martyr John%F152%-1
+-1%Commemoration of the First Ecumenical Council (325)%F152%-1
+-1%Icons of the Mother of God: 'the Unsleeping Eye', 'Matelikiskaya', and 'Surety of Sinners'%F152%-1
+-1%MP: Finding of the Relics of the Venerable Job, in schema Joshua, of Anzer (2000)%F152%-1
+-1%Holy New Confessor Luke, Archbishop of Simferopol' (+1961)%F152%-1
+-1%New Hieromartyr Deacon John (+1938); %F152%-1
+-1%Venerable Isaac the Founder of the Dalmatian Monastery at Constantinople (+383)%F153%-1
+-1%Martyr Natalius%F153%-1
+-1%Martyrs Roman and Teletius%F153%-1
+-1%Righetous Basil, Grandfather of St Basil the Great and his spouse Macrina%F153%-1
+-1%Tsar-Martyr Constantine of Georgia%F153%-1
+-1%Apostle Hermas of the Seventy (1st C)%F154%-1
+-1%Martyr Philosoph (3rd C) of Alexandria%F154%-1
+-1%Martyr Hermias at Comana (2nd C)%F154%-1
+-1%Martyr Magus the Magician%F154%-1
+-1%St Eustathius, Patriarch of Constantinople%F154%-1
+-1%New Hieromartyr Hierotheos, Bishop of Nikolsk (+1928)%F154%-1
+-1%MP: New Hieromartyr Priest Philosoph and his children Boris and Nicholas (+1918)%F154%-1
+-1%Martyr Justin the Philosopher, another Justin, and those with them at Rome: Chariton, his wife Charita, Euelpistus, Hierax, Peonus, and Valerian (+166)%F155%-1
+-1%Venerable Dionysius the Abbot of Glushetsk, Vologda (+1437)%F155%-1
+-1%Venerable Agapitus the Unmercenary Physician of the Kiev Near Caves (+ c.1095)%F155%-1
+-1%St Metrius, the worker of land%F155%-1
+-1%Holy Fathers martyred by the Dagestanians%F155%-1
+-1%Martyr Shio of Akhakalakhi in Georgia%F155%-1
+-1%Martyrs David, Gabriel, and Paul of the St David Gareji Monastery, Georgia%F155%-1
+-1%MP: New Hieromartyr Priest Basil (+1940)%F155%-1
+-1%St. Nicephorus the Confessor, Patriarch of Constantinople (+828)%F156%-1
+-1%Great Martyr John the New of Sochi, who suffered at Belgrade (+ c.1330)%F156%-1
+-1%Hieromartyr Pothinus, bishop of Lyon and with him martyr Blandin and others%F156%-1
+-1%New Martyr Demetrius%F156%-1
+-1%New Martyr Constantine the Hagarian%F156%-1
+-1%St. Dodo of the St David Gareji Monastery, Georgia (+596)%F156%-1
+-1%Holy Martyrs Lucillian, the Youths Claudius, Hypatius, and Dionysius, and Paula the Virgin (+c.275)%F157%-1
+-1%Hieromartyr Lucian the Bishop at Beauvais in France and with him Maximian the Presbyter, Julian the Deacon, Marcellinus, and Saturninus (+ c.96)%F157%-1
+-1%Venerable Athanasius the Wonderworker%F157%-1
+-1%Venerable Hieria of Syria%F157%-1
+-1%St Achilla, Patriarch of Alexandria%F157%-1
+-1%Righteous Clotilda, Queen of France%F157%-1
+-1%Translation of the relics of slain Crown Prince Demetrius of Moscow from Uglich (1606)%F157%-1
+-1%St. David of the Gareji Monastery (6th-7th C)%F157%-1
+-1%MP: Venerable New Martyr Cyprian (+1934)%F157%-1
+-1%St. Metrophanes the first Patriarch of Constantinople (+ c.326)%F158%-1
+-1%Hieromartyr Astius the Bishop of Dyrrachium in Macedonia (2nd C)%F158%-1
+-1%Holy Martyrs Frontasius, Severinus, Severianus, Silanus and Concordius in Gaul (1st C)%F158%-1
+-1%St. Zosimus of Cilicia the Bishop of Babylon in Egypt (6th C)%F158%-1
+-1%Sts Martha and Mary, the sisters of Lazarus (1st C)%F158%-1
+-1%Venerable Sophia%F158%-1
+-1%Venerable Alonius of Egypt%F158%-1
+-1%Venerable Optatus, bishop of Meleutine%F158%-1
+-1%Hieromartyr Cyrinus, bishop of Sysa%F158%-1
+-1%Venerable Methodius the Abbot of Pashnoshsk (+1392)%F158%-1
+-1%Venerable Eleazar and Nazarius, Wonderworkers of Olonets%F158%-1
+-1%New Hieromartyrs Andronicus, Archbishop of Perm, Basil, Archbishop of Chernigov, and those with them (+1918)%F158%-1
+-1%Hieromartyr Joannicius, Metropolitan of Montenegro%F158%-1
+-1%Hieromartyr Savva, Bishop of Gorni Karlovtsi%F158%-1
+-1%MP: New Hieromartyr Priest Peter (+1918);%F158%-1
+-1%Hieromartyr Dorotheus the Bishop of Tyre (+362)%F159%-1
+-1%St Michael, Metropolitan of Kiev%F159%-1
+-1%Repose of Right-believing Prince Theodore Yaroslavich of Novgorod (1233)%F159%-1
+-1%Holy Martyrs Marcian, Nicander, Hyperechius, Apollos, Leonidus, Arius, Gorgius, Selenius, Eireneus, and Pambon in Egypt (+ c.311)%F159%-1
+-1%Venerable Theodore the Wonderworker and Hermit of the Jordan (6th C)%F159%-1
+-1%Venerable Anubius the Confessor and Anchorite of Egypt (4th C)%F159%-1
+-1%Venerable Abba Dorotheus of Palestine (+ c.620)%F159%-1
+-1%St Constantine, Metropolitan of Kiev (+1159)%F159%-1
+-1%Translation of the relics of the Right-believing Prince Igor of Chernigov and Kiev (1150)%F159%-1
+-1% Finding of the relics of the Venerable Bassian and Jonah of Solovki (1599)%F159%-1
+-1%Venerable Peter the Serb%F159%-1
+-1%New Martyr Mark of Smyrna%F159%-1
+-1%Venerable Bessarion the Wonderworker of Egypt (4th-5th C)%F160%-1
+-1%Venerable Hilarion the New, Abbot of the Dalmatian Monastery (+845)%F160%-1
+-1%Holy Virgin Martyrs Archelais, Thekla and Susanna (+293)%F160%-1
+-1%Saint Justus, Patriarch of Alexandria%F160%-1
+-1%Venerable Paisius the Abbot of Uglich (+1504)%F160%-1
+-1%Venerable Jonah of Perm and Ust-Vymsk%F160%-1
+-1%Icon of the Mother of God of Pimen (1387)%F160%-1
+-1%Hieromartyr Theodotus the Bishop of Ancyra (+303)%F161%-1
+-1%Holy Women Martyrs Caleria (Valeria), Kyriaki and Maria in Caesarea of Palestine (4th C)%F161%-1
+-1%Hieromartyr Marcellus, Pope of Rome, and those with him: Martyrs Sisinius and Cyriacus the deacons, Smaragdus, Largius, Apronian, Saturnian, Papius, Maurus, and Cryscentian, and Martyred women Priscilla, Lucina, and Artemia the Princess (+ c.310)%F161%-1
+-1%Venerable Daniel of Skete%F161%-1
+-1%Hieromartyr Marcellinus, Pope of Rome (+304)%F161%-1
+-1%Martyr Potamiena;%F161%-1
+-1%Translation of the relics of the Greatmartyr Theodore Stratelates (+319)%F162%-1
+-1%Saint Ephraim, Patriarch of Antioch (+545)%F162%-1
+-1%Venerable Zosimus of Phoenicia, Syria (6th C)%F162%-1
+-1%Venerable Melania%F162%-1
+-1%Venerable Athra%F162%-1
+-1%Venerable Naucratius%F162%-1
+-1%New Martyr Theophanes%F162%-1
+-1%St Theodore the Bishop of Rostov and Suzdal (+ c.1023)%F162%-1
+-1%Icon of the Mother of God of Yaroslavl (13th C);%F162%-1
+-1%Saint Cyril, Archbishop of Alexandria (+444)%F163%-1
+-1%Venerable Cyril the Abbot of White Lake (+1427)%F163%-1
+-1%Venerable Alexander the Abbot of Kushta, Vologda (+1439)%F163%-1
+-1%Holy Women Martyrs Thekla, Martha and Mary in Persia (+346)%F163%-1
+-1%St Columba of Iona, the Enlightener of Scotland%F163%-1
+-1%Icon of the Mother of God of Kolomna;%F163%-1
+-1%Hieromartyr Timothy, Bishop of Prussa (+ c.363)%F164%-1
+-1%Holy Martyrs Alexander and Antonina the Virgin, in Constantinople (+ c.313)%F164%-1
+-1%Saint Bassian, Bishop of Lodi (+409)%F164%-1
+-1%Venerable Theophanes of Antioch (+369)%F164%-1
+-1%Venerable Pansemia of Syria%F164%-1
+-1%Holy Schemamonk Siluan of the Kiev Caves (13th-14th C)%F164%-1
+-1%St. John (Maximovitch), Metropolitan of Tobolsk (+1715);%F164%-1
+-1%Hieromartyr Timothy, Bishop of Prussa (+ c.363)%F165%-1
+-1%Holy Martyrs Alexander and Antonina the Virgin, in Constantinople (+ c.313)%F165%-1
+-1%Saint Bassian, Bishop of Lodi (+409)%F165%-1
+-1%Venerable Theophanes of Antioch (+369)%F165%-1
+-1%Venerable Pansemia of Syria%F165%-1
+-1%Holy Schemamonk Siluan of the Kiev Caves (13th-14th C)%F165%-1
+-1%St. John (Maximovitch), Metropolitan of Tobolsk (+1715);%F165%-1
+-1%Holy Apostles Bartholomew and Barnabas (1st C)%F166%-1
+-1%Venerable Barnabas the Abbot of Vetluga (15th C)%F166%-1
+-1%Translation of the relics of Venerable Arkady of Vyaz'ma%F166%-1
+-1%222 Holy New Martyrs of China, slain during the Boxer Rebellion in 1900%F166%-1
+-1%Icon of the Mother of God 'Axion Estin' ('It Is Truly Meet') (10th C);%F166%-1
+-1%Synaxis of the Holy Fathers who have struggled on Mt Athos%F167%-1
+-1%Venerable Onuphrius the Great (4th C)%F167%-1
+-1%Venerable Peter of Mt. Athos (+734)%F167%-1
+-1%Venerable Timothy%F167%-1
+-1%Venerable Arsenius the Abbot of Konevits (+1447)%F167%-1
+-1%Righteous Princess Anna of Kashin%F167%-1
+-1%Venerable Desert Fathers: John, Andrew, Hiraclemon, and Theophilus of Egypt%F167%-1
+-1%Venerable Bassian and Jonah of Solovki (+1561)%F167%-1
+-1%Venerable Onuphrius and Auxentius of Vologda (15th-16th C)%F167%-1
+-1%Venerable Onuphrius the Abbot of Malsk, Pskov (+1492)%F167%-1
+-1%Venerable Stephen of Komel the Abbot of Ozersk Monastery, Vologda (+1542)%F167%-1
+-1%Martyr Aquilina of Byblos in Syria (+293)%F168%-1
+-1%St. Triphyllius, Bishop of Leucosia (Nicosia) in Cyprus (+ c.370)%F168%-1
+-1%Martyr Antonina of Nicea (+ c.300)%F168%-1
+-1%Saint Anna and her son Saint John in Constantinople (9th C)%F168%-1
+-1%Venerable Antipater, bishop of Bostra in Arabia%F168%-1
+-1%Venerable Andronicus (+1395) and Sava (15th C) of Moscow%F168%-1
+-1%MP: New Hieromartyr Priest Alexander (+1918)%F168%-1
+-1%New Hieromartyr Priest Dmitriy (+1940)%F168%-1
+-1%Holy Prophet Elisha (9th C BC)%F169%-1
+-1%Saint Methodius, Patriarch of Constantinople (+846)%F169%-1
+-1%St. Mstislav the Brave (in baptism George), Prince of Novgorod (+1180)%F169%-1
+-1%Venerable Elisha of Sumsk (15th-16th C)%F169%-1
+-1%Saint Methodius, Igumen of Peshnosha (+1392)%F169%-1
+-1%Saints Julitta and Julia of Taven%F169%-1
+-1%Venerable Niphont of Mt Athos (14th C)%F169%-1
+-1%St John, Metropolitan of Euchaitus%F169%-1
+-1%MP: New Hieromartyr Priest Joseph (+1918);%F169%-1
+-1%Holy Prophet Amos (8th C BC)%F170%-1
+-1%Saint Jonah, Metropolitan of Moscow and Wonderworker of All Russia (+1461)%F170%-1
+-1%Martyr Doulas of Cilicia (+ c.313)%F170%-1
+-1%Right-believing Prince Lazar, the Great Martyr of Serbia (+1389)%F170%-1
+-1%Venerable Jerome (Hieronymus) of Stridonium (+ c.420)%F170%-1
+-1%Venerable Doulas the Passion-bearer%F170%-1
+-1%Blessed Augustine, Bishop of Hippo (+430)%F170%-1
+-1%Translation of the relics of St Theodore the Sykeote (9th C)%F170%-1
+-1% St. Ephraim the Bulgarian, Patriarch of Serbia (after 1399)%F170%-1
+-1%Venerable Orsisius of Taunesiot, disciple of Venerable Pachomius the Great%F170%-1
+-1%Venerable Gregory and Cassian of Avnezh%F170%-1
+-1%Martyr Leonida%F170%-1
+-1%Holy Martyrs Vitus, Modestus, and Crescentia (+ c.303)%F170%-1
+-1%Apostles Stephen and Fotunatus of the 70 (1st C)%F170%-1
+-1%Martyr Hesychius the soldier%F170%-1
+-1%St Cerdon, Patriarch of Alexandria%F170%-1
+-1%St Glycerius, Metropolitan of Slatioara;%F170%-1
+-1%Saint Tikhon, Bishop of Amathus (+425)%F171%-1
+-1%Venerable Tikhon of Lukh and Kostroma (+1503)%F171%-1
+-1%Venerable Tikhon of Medin and Kaluga (+1492)%F171%-1
+-1%Hieromartyr Tigrius the Presbyter and Martyr Eutropius the Reader (+404)%F171%-1
+-1%New Hieromartyrs Hermogenes, bishop of Tobolsk, Priests Ephraim, Michael, and Peter, and Martyr Constantine (+1918)%F171%-1
+-1%Venerable Moses of Optina (+1862)%F171%-1
+-1%Translation of the Relics of St Theophan the Recluse of Vyshna (2002)%F171%-1
+-1%St. Qiakhosro of Georgia;%F171%-1
+-1%Holy Martyrs Manuel, Sabel and Ismael of Persia (+362)%F172%-1
+-1%Righteous Solomon, the King of Israel%F172%-1
+-1%Hieromartyr Philonidus, bishop of Curea%F172%-1
+-1%Venerable Joseph and Pior, disciples of Venerable Anthony the Great%F172%-1
+-1%Righteous brothers Alfanov: Nikita, Cyrill, Nikiphor, Clement, and Isaac%F172%-1
+-1%Venerable Anania of Novgorod%F172%-1
+-1%St. Shalva of Akhaltsikhe in Georgia%F172%-1
+-1%Martyr Nectan of Hartland in England%F172%-1
+-1%MP: New Hieromartyr Priest Averky and Martyr Nikandr (+1918)%F172%-1
+-1%New Martyr Pelagia (+1943);%F172%-1
+-1%Holy Martyrs Leontius, Hypatius, and Theodulus in Syria (70-79)%F173%-1
+-1%Martyr Etherius%F173%-1
+-1%Saint Leontius the Clairvoyant of Mt. Athos (+1605)%F173%-1
+-1%Venerable Leontius, Canonarch of the Kiev Caves (14th C)%F173%-1
+-1%'Bogolubskaya' Icon of the Mother of God (1155)%F173%-1
+-1%MP: New Hieromartyrs Priests Basil, Alexander, Basil, and Serge (+1938);%F173%-1
+-1%Holy Apostle Jude, the Brother of the Lord (+ c.80)%F174%-1
+-1%Martyr Zosimus the Soldier at Antioch, in Pisidia (+ c.100)%F174%-1
+-1%Venerable Paisius the Great (5th C)%F174%-1
+-1%St. John the Solitary of Jerusalem (6th C)%F174%-1
+-1%Vnerable Xeno of Egypt%F174%-1
+-1%Venerable Barlaam of Shenkursk (+1462)%F174%-1
+-1%Holy Myrrh-bearer Mary of James%F174%-1
+-1%Holy Hierarch Job, Patriarch of Moscow%F174%-1
+-1%Saint John (Maximovitch), Archbishop of Shanghai and San Francisco, the Wonderworker (+1966)%F174%-1
+-1%Hieromartyr Methodius the Bishop of Patara (+312)%F175%-1
+-1% Holy Martyrs Aristocles the Presbyter, Demetrian, and Athanasius the Reader (+ c.306)%F175%-1
+-1%Holy Martyrs Inna, Pinna, and Rimma (1st-2nd C), the Scythians%F175%-1
+-1%St. Leucius the Bishop of Brindisi (5th C)%F175%-1
+-1%Holy Prince Gleb of Vladimir, named George in holy Baptism (+1175)%F175%-1
+-1%Transfer of the Relics of Saint Gurias, Archbishop of Kazan (1630)%F175%-1
+-1%Venerable Naum, disciple of Sts Cyrill and Methodius%F175%-1
+-1%Venerable Callistos and 2 other desert-dwellers%F175%-1
+-1%Venerable Callistos, Patriarch of Constantinople;%F175%-1
+-1%Martyr Julian of Tarsus, in Cilicia (+ c.300)%F176%-1
+-1%Hieromartyr Terence the Bishop of Iconium (1st C)%F176%-1
+-1%Monks Julius the presbyter and Julian the Deacon (5th C)%F176%-1
+-1%New Martyr Nikita%F176%-1
+-1%Holy Martyr Archil II, King of Georgia (+744)%F176%-1
+-1%Holy Martyr Luarsab II, King of Georgia (+1622)%F176%-1
+-1%Venerable Anastasia of Serbia%F176%-1
+-1%Finding of the relics of the Venerable Maximus the Greek (1996)%F176%-1
+-1%MP: Venerable New Confessor George (+1932)%F176%-1
+-1%New Hieromartyr Priest John  (+1918)%F176%-1
+-1%New Hieromartyrs Priests Paul and Nicholas (+1938);%F176%-1
+-1%Hieromartyr Eusebius, Bishop of Samosata (+380)%F177%-1
+-1%Holy Martyrs Galacteon and Juliania%F177%-1
+-1% Holy Martyrs Zeno and Zenas of Philadelphia (+304)%F177%-1
+-1%Venerable Basil, Abbot of Patelaria%F177%-1
+-1%St. Alban the Protomartyr of Britain%F177%-1
+-1%MP: New Hieromartyr Priest Gennadiy (+1918);%F177%-1
+-1%Meeting of the Vladimir Icon of the Mother of God%F178%-1
+-1%Martyr Agrippina of Rome (+ c.255)%F178%-1
+-1%Holy Martyrs Eustochius, Gaius, Probius, Lollius and Urban of Ancyra (4th C)%F178%-1
+-1%Holy Righteous Artemius of Verkola (+1545)%F178%-1
+-1%Venerable Joseph, Anthony, and Joanicius of Vologda%F178%-1
+-1%Second translation of the relics of Saint Herman, Archbishop of Kazan (1714)%F178%-1
+-1%New Hieromartyrs Mitrophan, Archbishop of Astrakhan, Leonty, Bishop of Yenotayevsk, and those with them (+1919)%F178%-1
+-1%Icon of the Mother of God 'Zaonikievskaya'%F178%-1
+-1%Nativity of the Holy Glorious Prophet, Forerunner, and Baptist of the Lord, John%F179%-1
+-1%Martyrs Pharnacius, Orentius, Eros, Firmus, Firminus, Cyriacus, and Longinus (3rd-4th C)%F179%-1
+-1%Venerable Anthony the Abbot of Dymsk, Novgorod (+1224)%F179%-1
+-1%Holy Hierarch Nikita, Bishop of Remesiana%F179%-1
+-1%Venerable John of Yarenga, Solovki%F179%-1
+-1%Righteous Youths James and John of Meniugi (17th C)%F179%-1
+-1%Holy Great Prince Michael of Tver%F179%-1
+-1%New Martyr Panagiotos of Caesarea;%F179%-1
+-1%Virginmartyr Febronia of Nisibis (+ c.304)%F180%-1
+-1%Right-Believing Prince Peter, Tonsured David, and Princess Febronia, tonsured Evfrosinia, the Wonderworkers of Murom (+1228)%F180%-1
+-1%Venerable Martyrs Leonida, Libya, and Eutropia%F180%-1
+-1%Venerable Simeon of Mt Sinai%F180%-1
+-1%Venerable Dionysius and Dometius of Athens%F180%-1
+-1%New Venerable Martyr Procopius of Smyrna%F180%-1
+-1%Venerable Nikon, the Confessor of Optina (+1931)%F180%-1
+-1%MP: New Martyrs Priests Nicholas and Basil (+1918);%F180%-1
+-1%Appearance of the Tikhvin Icon of the Mother of God (1383)%F181%-1
+-1%Venerable David of Thessalonica (6th C)%F181%-1
+-1%St. John the Bishop of the Goths (7th C)%F181%-1
+-1%St. Dionysius the Archbishop of Suzdal (+1385)%F181%-1
+-1%Icons of the Mother of God of Lidda (1st C), Niamets (1399), and the Seven Lakes (17th C)%F181%-1
+-1%MP: New Hieromartyr Priest George (+1918);%F181%-1
+-1%St. Sampson the Hospitable of Constantinople (+ c.530)%F182%-1
+-1%St. Severus the Presbyter of Interocrea in Italy (6th C)%F182%-1
+-1%St. Joanna the Myrrhbearer (1st C)%F182%-1
+-1%Blessed Martin of Turov (+ after 1146)%F182%-1
+-1%Venerable Serapion of Kozhe Lake (+1611)%F182%-1
+-1%Venerable George of Georgia, on Mt. Athos (+1065)%F182%-1
+-1%New Hieromartyr George of Nikol'sk (+1918)%F182%-1
+-1%Finding of the Relics of Venerable Amvrossy of Optina (1998)%F182%-1
+-1%Commemoration of the Victory at Poltava (1709);%F182%-1
+-1%Translation of the Relics of the Holy Martyrs, Unmercenaries and Wonderworkers, Cyrus and John (412)%F183%-1
+-1%Saints Sergius and Herman, the Wonderworkers of Valaam (14th C)%F183%-1
+-1%Venerable Paul the Physician of Corinth%F183%-1
+-1%Venerable Xenophon the Abbot of Robeika (+1262)%F183%-1
+-1%Venerable Sergius of Crete%F183%-1
+-1%Venerable Moses of Syria%F183%-1
+-1%Icon of the Mother of God of 'the Three Handed' (8th C)%F183%-1
+-1%MP: New Hieromartyr Deacon Vasily (+1918);%F183%-1
+-1%The Holy Glorious and All-Praised Leaders of the Apostles, Peter and Paul%F184%-1
+-1%Venerable Peter, Crown Prince of the Horde%F184%-1
+-1%Venerable Nikander of Pskov;%F184%-1
+-1%Synaxis of the Twelve Glorious and All-Praised Apostles: Peter and Andrew, James and John, Phillip, Bartholomew, Thomas, Matthew, James the son of Alpheus, Jude [Thaddeus], Simon Zealotes, and Matthias%F185%-1
+-1%New Martyr Michael of Athens%F185%-1
+-1%Murder of the Right-believing Prince Andrew of Bogoliubovo%F185%-1
+-1%Glorification of Saint Sophronius, Bishop of Irkutsk and All Siberia (1918);%F185%-1
+-1%Holy Unmercenaries Cosmas and Damian, Martyrs at Rome (+ 284)%F186%-1
+-1%Martyr Potitus at Naples (2nd C)%F186%-1
+-1%Venerable Peter of Constantinople (+ 854)%F186%-1
+-1%Venerable Nicodemus the Hagiorite%F186%-1
+-1%Venerable Basil (9th C)%F186%-1
+-1%Blessed Angelina, Princess of Serbia (16th C)%F186%-1
+-1%Placing of the Honorable Robe of the Most Holy Mother of God at Blachernae (5th C)%F187%-1
+-1%Saint Juvenal, Patriarch of Jerusalem (+ ca 458)%F187%-1
+-1%Saint Photius, Metropolitan of Kiev and All Russia (+1431)%F187%-1
+-1%Icons of the Mother of God: 'Akhtyrskaya' and 'Theodotievskaya'%F187%-1
+-1%Martyr Hyacinth of Caesarea in Cappadocia (+ 108)%F188%-1
+-1%Translation of the relics of Hieromartyr Philip, Metropolitan of Moscow (1652)%F188%-1
+-1%Martyrs Mocius and Mark%F188%-1
+-1%Martyrs Diomedes, Eulampius, Asclipiodotus, and Martyr Golindukha%F188%-1
+-1%Saint Anatolius, Patriarch of Constantinople (+ 458)%F188%-1
+-1%Blessed Princes Basil and Constantine of Yaroslav (13th C)%F188%-1
+-1%Venerable Alexander, Founder of the 'Unsleeping Ones' Monastery (+ c 430)%F188%-1
+-1%Venerable Isaiah the Hermit%F188%-1
+-1%Holy Hierarchs Anatolius and Eusebius, Bishops of Laodicea%F188%-1
+-1%Holy Hierarch Claudian, Patriarch of Alexandria%F188%-1
+-1%Venerable Anatoly, Hermit of the Caves of Kiev%F188%-1
+-1%Venerable Anatoly (another) of the Caves of Kiev%F188%-1
+-1%Venerable Nicodim, Abbot of Kozheyezersk (+ 1640)%F188%-1
+-1%Venerable John and Longin of Yarena%F188%-1
+-1%Blessed John of Moscow, Fool-for-Christ (+ 1589)%F188%-1
+-1%Holy Royal Passion-bearers Tsar Nicholas, Tsaritsa Alexandra, Crown Prince Aleksy, Grand Duchesses Olga, Tatiana, Maria, and Anastasia and those killed with them (+ 1918)%F189%-1
+-1%Saint Andrew, Archbishop of Crete (+c.712-726)%F189%-1
+-1%Venerable Martha, Mother of Venerable Simeon of the Wonderous Mountian%F189%-1
+-1%Hieromartyr Theodore, Bishop of Cyrene in Libya (+310)%F189%-1
+-1%Martyrs Theodotus and Theodotia%F189%-1
+-1%Finding of the Relics of Venerable Euthymius of Suzdal%F189%-1
+-1%Venerable Prince Andrew of Bogoliubovo (+1174)%F189%-1
+-1%Venerable Tikhon, Basil, and Nikon of Solovki%F189%-1
+-1%Venerable Andrew Rublev, the Iconographer%F189%-1
+-1%New Venerable Martyr Nilus of Poltava (+1918)%F189%-1
+-1%Venerable Athanasius, Founder of the Great Lavra on Mt Athos, and his 6 disciples (+ 1000)%F190%-1
+-1%Uncovering of the relics of the Venerable Sergius of Radonezh (1422)%F190%-1
+-1%Martyrs Anna of Rome and Cyrilla, of Cyrene in Libya (+304)%F190%-1
+-1%Venerable Lampados the Wonderworker%F190%-1
+-1%Venerable Cyprian of Mt. Athos%F190%-1
+-1%Venerable Athanasius the Hermit%F190%-1
+-1%Venerable Martyrs Grand Duchess Elizabeth, Nun Barbara, and with them the Princes: John, Igor, Constantine, Sergius, and Vladimir, at Alapayevsk (+ 1918)%F190%-1
+-1%Venerable Sisoes the Great (+429)%F191%-1
+-1%Finding of the relics of the Holy Princess Juliana of Olshansk (16th C)%F191%-1
+-1%Martyrs Marinus, Martha, Audifax, Habbakuk, Valentine, Asterius, Isaurus, Innocent, Felix, Hermius, Basil, Peregrinus, and Ruthinus, at Rome (+269)%F191%-1
+-1%Martyr Quintus of Phrygia (+c.283)%F191%-1
+-1%Martyr Lucia the Virgin and with her: Rixus, Anthony, Lucian, Isidor, Diodorus, Cutonius, Aronosus, Capicus, and Saturus%F191%-1
+-1%Venerable Sisoes, Schemamonk of the Kievan Caves (13th C)%F191%-1
+-1%New Hieromartyr Simon, Bishop of Ufa (+1921)%F191%-1
+-1%Venerable Thomas of Mt Maleon (10th C)%F192%-1
+-1%Venarable Akakios of Sinai (6th C)%F192%-1
+-1% Martyrs Epictetus the Presbyter and Astion the Monastic in Scythia (+ 290)%F192%-1
+-1% Martyrs Kyriaki, Bassa and others with them in Nicomedia (4th C)%F192%-1
+-1%Venerable Eudoxia, in monasticism Evphrosynia, Grand Duchess of Moscow (+ 1407)%F192%-1
+-1%Martyrs Peregrinus, Lucian, Ompeius, Hesychius, Papius, Satorninus and Germanus of Dyrrachium in Macedonia (2nd C)%F192%-1
+-1%Hieromartyr Evangelus, Bishop of Romania%F192%-1
+-1%Righteous Panthene the Confessor, a teacher at Alexandria%F192%-1
+-1%Icon of the Mother of God of Vlakherna%F192%-1
+-1%Appearance of the Kazan Icon of the Mother of God (1579)%F193%-1
+-1%Holy Greatmartyr Procopius of Caesarea in Palestine and those with him (+ 303)%F193%-1
+-1%Righteous Prokopius, Fool-for-Christ, Wonderworker of Ustiug (+ 1303)%F193%-1
+-1%Righteous Prokopius of Usya (17th C)%F193%-1
+-1%Venerable Theophilus the Myrrh-Gusher of Mt Athos (+ 1548)%F193%-1
+-1%Venerable Martyr Anastasius%F193%-1
+-1%Icon of the Mother of God 'Peschanskaya';%F193%-1
+-1%Hieromartyr Pancratios, Bishop of Taoromina in Sicily (1st C)%F194%-1
+-1%Hieromartyr Cyril, Bishop of Gortyna in Crete (3rd-4th C)%F194%-1
+-1%Martyr Alexander (4th C)%F194%-1
+-1%Venerable Patermuphios and Coprius, Ascetics in Egypt (4th C)%F194%-1
+-1%Saint Theodore, Bishop of Edessa, and those with him (9th C)%F194%-1
+-1%Venerable Anthony of Leokhnovo%F194%-1
+-1%Venerable Anthony of the Kievan Caves, Founder of Monasticism in Russia (+ 1073)%F195%-1
+-1%Holy 45 Martyrs at Nicopolis in Armenia (+ ca 319): Leontius, Mauricius, Daniel, Anthony, Alexander, Meneus, Janicita, Sisinius, Biriladus, and others%F195%-1
+-1%Martyrs Bianor and Silvanus of Pisidia (4th C)%F195%-1
+-1% Martyr Apollonias of Sardis (3rd C)%F195%-1
+-1%Venerable Siluan, Schemamonk of the Caves of Kiev (13th-14th C)%F195%-1
+-1%Saint Basil, Bishop of Ryazan%F195%-1
+-1%Placing of the Venerable Robe of Our Lord Jesus Christ at Moscow (1625)%F195%-1
+-1%Icon of the Mother of God 'Konevskaya';%F195%-1
+-1%Venerable Anthony of the Kievan Caves, Founder of Monasticism in Russia (+ 1073)%F196%-1
+-1%Holy 45 Martyrs at Nicopolis in Armenia (+ ca 319): Leontius, Mauricius, Daniel, Anthony, Alexander, Meneus, Janicita, Sisinius, Biriladus, and others%F196%-1
+-1%Martyrs Bianor and Silvanus of Pisidia (4th C)%F196%-1
+-1% Martyr Apollonias of Sardis (3rd C)%F196%-1
+-1%Venerable Siluan, Schemamonk of the Caves of Kiev (13th-14th C)%F196%-1
+-1%Saint Basil, Bishop of Ryazan%F196%-1
+-1%Placing of the Venerable Robe of Our Lord Jesus Christ at Moscow (1625)%F196%-1
+-1%Icon of the Mother of God 'Konevskaya';%F196%-1
+-1%Greatmartyr Euphemia the All-Praised (+ 451)%F197%-1
+-1%Blessed Olga, Princess of Russia and Equal-to-the-Apostles, in Baptism Helen (+ 969)%F197%-1
+-1%Hieromartyr Cindeios the Presbyter of Pamphylia (3rd-4th C)%F197%-1
+-1%Venerable Nicodemus of Vatopedi%F197%-1
+-1%Venerable Martyr Nicodemus%F197%-1
+-1%Venerable Martyr Nectarius%F197%-1
+-1%Icon of the Mother of God 'Shuiskaya-Smolenskaya'%F197%-1
+-1%Martyrs Proclus and Hilarion (2nd C)%F198%-1
+-1%Venerable Michael of Maleinus (+ 962)%F198%-1
+-1%Martyr Golinducha, in baptism Mary, of Persia (+ 591)%F198%-1
+-1%Martyrs Theodore the Varangian, and his son John, of Kiev (+ 983)%F198%-1
+-1% Righteous Veronica (1st C)%F198%-1
+-1%Venerable Arsenius of Novgorod%F198%-1
+-1%Venerable Simon, Abbot of Volomsk (+ 1641)%F198%-1
+-1%Venerable John and Gabriel the Hageorites (Georgian Church)%F198%-1
+-1%Blessed Serapion of Vladimmir%F198%-1
+-1%Synaxis of the Archangel Gabriel%F199%-1
+-1%Venerable Stephen of St Sabbas Monastery (+794)%F199%-1
+-1%Martyr Serapion (2nd-3rd C)%F199%-1
+-1%Martyr Marcian of Iconium (+258)%F199%-1
+-1%Saint Julian, Bishop of Cenomanis (Le Mans) in Gaul (1st C)%F199%-1
+-1%Venerable Sarrus, the Ascetic of Egypt%F199%-1
+-1%Apostle of the 70: Aquila (1st C)%F200%-1
+-1%Martyrs Justus at Rome (1st C)%F200%-1
+-1%Venerable Hellios, of Egypt (4th C)%F200%-1
+-1%Saint Heraclius, Patriarch of Alexandria%F200%-1
+-1%Vnerable Onesimus, Wonderworker of Magnesia%F200%-1
+-1%Venerable Stephen, Abbot of Makhrisch (+ 1406)%F200%-1
+-1%Holy Equal-to-the-Apostles, Great Prince Vladimir (in Baptism Basil), Enlightener of Russia (+ 1015)%F201%-1
+-1%Martyrs Kyrikos and his mother Julitta, of Tarsus (+ ca 305)%F201%-1
+-1%Martyr Abudimus%F201%-1
+-1%Hieromartyr Athenogoras, Bishop of Heracleopolis, and his 10 Disciples (+c.311)%F202%-1
+-1%Martyrs Paul and two sisters Alevtina (Valentina) and Chionea (Thea), at Caesarea in Palestine (+308)%F202%-1
+-1%Martyrs Antiochos the Physician and Faustus (4th C)%F202%-1
+-1%Virginmartyr Julia of Carthage (+ c.440 or 613)%F202%-1
+-1%Greatmartyr Marina (Margaret) of Antioch in Pisidia (4th C)%F203%-1
+-1%Translation of the Relics of Venerable Lazarus, who fasted at Mt Galasia%F203%-1
+-1%Venerable Ienarchus, Abbot of Solovki (+ 1628)%F203%-1
+-1%Venerable Leonid of Ust-nedumsk (+ 1654)%F203%-1
+-1%Icon of the Mother of God of the Holy Mountain%F203%-1
+-1%Martyrs Emilian and Hyacinth of Amastris%F204%-1
+-1%Venerable John the Long-suffering of the Kievan Caves (+ 1160)%F204%-1
+-1%Venerable Pambos the Hermit of Egypt (4th C)%F204%-1
+-1%St John II, the Confessor, Bishop of Chalcedon%F204%-1
+-1%Holy Hierarch Stephen, Archbishop of Constantinople%F204%-1
+-1%Venerable Pambos, Recluse of the Kievan Caves (13th C)%F204%-1
+-1%Blessed Leonty, Abbot of Novgorod%F204%-1
+-1%Venerable Macrina, sister of Saint Basil the Great (+ 380)%F205%-1
+-1%Venerable Dios, Abbot of Antioch (+ c430)%F205%-1
+-1%Uncovering of the relics of Venerable Seraphim the Wonderworker of Sarov (1903)%F205%-1
+-1%Blessed Roman (Olegovich), Prince of Ryazan (+ 1270)%F205%-1
+-1%Blessed Stephen, King of Serbia (+ 1427) and his mother Saint Militsa (+ 1405)%F205%-1
+-1%Venerable Paisius of the Kievan Caves (14th C)%F205%-1
+-1%Holy Glorious Prophet Elijah (9th C BC)%F206%-1
+-1%Righteous Aaron the First-Priest (16th C BC)%F206%-1
+-1%St Elijah, Patriarch of Jerusalem%F206%-1
+-1%St Flavian, Patriarch of Antioch%F206%-1
+-1%St Timothy, Patriarch of Alexandria%F206%-1
+-1%Repose of Venerable Abraham of Galich, disciple of Venerable Sergius of Radonezh (+ 1375)%F206%-1
+-1%Finding of the Relics of Venerable Athanasius, Abbot of Brest%F206%-1
+-1%New Hieromartyr Priest Philosoph of Ornata and those with him (+1918)%F206%-1
+-1%New Martyr Deacon Juvenaly (+1919)%F206%-1
+-1%Icon of the Mother of God 'Abalatskaya'%F206%-1
+-1%Venerable Simeon of Emessa, Fool-for-Christ, and his fellow-ascetic, Venerable John (+ c590)%F207%-1
+-1% Prophet Ezekiel (6th C BC)%F207%-1
+-1%Venerable Victor of Marseille%F207%-1
+-1%Venerable Onuphry the Silent of the Kievan Caves, near caves (12th-13th C)%F207%-1
+-1%Venerable Onysim the Hermit, of the Kievan Caves, far caves (12th-13th C)%F207%-1
+-1%Venerable Anna of Kashin%F207%-1
+-1%Holy Myrrhbearer and Equal-to-the-Apostles Mary Magdalene (1st C)%F208%-1
+-1%Transfer of the relics of Hieromartyr Phocas, Bishop of Sinope (403-404)%F208%-1
+-1%Venerable Marcella%F208%-1
+-1%Holy Hierarch Cyrill I, Patriarch of Antioch%F208%-1
+-1%Repose of Venerable Cornilius of Pereyaslavl (+ 1693)%F208%-1
+-1%Martyrs Trophymos, Theophilos and 13 others in Lycia (4th C)%F209%-1
+-1%Hieromartyr Apollonarius, Bishop of Ravenna (+c.75)%F209%-1
+-1%Commemoration of the Miraculous Appearance of the Pochaev Icon of the Mother of God, which saved the Monastery from the assault of the Tatars and Turks (1675)%F209%-1
+-1%Icon of the Mother of God 'Joy of All Who Sorrow' at the glass factory in Saint Petersburg%F209%-1
+-1%Martyr Christina of Tyre (+ c300)%F210%-1
+-1%Holy Passion-bearers Princes Boris (in baptism Roman) and Gleb (in baptism David) of Russia (+ 1015)%F210%-1
+-1%Venerable Polycarp, the Archimandrite of the Kievan Caves (+ 1182)%F210%-1
+-1%New Martyr Athanasius of Icium%F210%-1
+-1%New Martyr Theophilus%F210%-1
+-1%Dormition of the Righteous Anna, Mother of the Most Holy Theotokos%F211%-1
+-1%Holy Women Olympias the Deaconess (+ 408-410) of Constantinople and Eupraxia, the Virgin of Tabenna (+ 413)%F211%-1
+-1%Holy Martyrs of Lyon: Saktus, Matturus, Attalus, and Blondina%F211%-1
+-1%Venerable Macarius, Abbot Zheltovodsk and Unzha (+ 1444)%F211%-1
+-1%Saint Christopher of Solvychegodsk (16th C)%F211%-1
+-1%Hieromartyrs Hermolaus, Hermippos, Hermocrates of Nicomedia (+ c 305)%F212%-1
+-1%Martyr Paraskeva of Rome (+ c 138-161)%F212%-1
+-1%Martyr Oreozilla%F212%-1
+-1%Venerable Moses the Hungarian, of the Kievan Caves, near caves (+ c 1043)%F212%-1
+-1%Holy Greatmartyr and Healer Panteleimon (+ 305)%F213%-1
+-1%Venerable Anthusa, Abbess of Mantinea in Asia Minor, and her 90 Monastics (8th C)%F213%-1
+-1%Venerable Sisinius the Wonderworker%F213%-1
+-1%Blessed Nicholas Konchanov the Fool-for-Christ of Novgorod (+ 1392)%F213%-1
+-1%Holy Hierarch Joasaph, Metropolitan of Moscow%F213%-1
+-1%New Martyr Chrystodulus%F213%-1
+-1%Holy Equal-to-the-Apostles Clement of Ochrid (+ 916), Bishop of Greater Macedonia, with Saints Naum, Sabbas, Gorazd and Angelar, desciples of Sts Cyrill and Methodius%F213%-1
+-1%Glorification of Saint Herman of Alaska%F213%-1
+-1%Appearance of the Smolensk Icon of the Mother of God, named 'Hodigitria' (1046)%F214%-1
+-1%Apostles of the 70 and Deacons: Prochorus, Nicanor, Timon and Parmenas (1st C)%F214%-1
+-1%Martyr Eustathius the Soldier%F214%-1
+-1%Martyr Akakius%F214%-1
+-1%Martyr Julian of Dalmatia%F214%-1
+-1%Martyr Drosida%F214%-1
+-1%Holy Hierarch Pitirim, Bishop of Tambov (+ 1698)%F214%-1
+-1%Venerable Irene of Cappadocia%F214%-1
+-1%Venerable Paul of Xeropotami, Mount Athos%F214%-1
+-1%Venerable Moses the Wonderworker of the Kievan Caves, far caves (13th-14th C)%F214%-1
+-1%Icon of the Mother of God 'Umilenie' of Diveevo%F214%-1
+-1%Martyr Callinicus of Gangra in Asia Minor (3rd-4th C);Martyr Seraphima the Virgin (2nd C)%F215%-1
+-1%Martyr Theodotia and her 3 children%F215%-1
+-1%Holy Hierarch Luppus, Bishop of Troy%F215%-1
+-1%Venerable Martyr Michael%F215%-1
+-1%Venerable Constantine and Cosmas, Abbots of Kosinsk and Staraya Russa (13th C)%F215%-1
+-1%Martyr Eustathios of Mtskheta, Georgia (+ 589)%F215%-1
+-1%Holy Hierarch Constantine, Patriarch of Constantinople%F215%-1
+-1%Venerable Roman of Kirzha%F215%-1
+-1%MP: New Martyrs Seraphim and Theognostus (1921)%F215%-1
+-1%Holy Apostles of the 70: Silas and Sylvanus, and those with them: Criscentus, Epenetus and Andronicus (1st C)%F216%-1
+-1%Hieromartyr Valentine, Bishop of Interamna (terni) in Italy (+ c.273) and those with him: Proculus, Eutheus, Appolonius, and Aundius%F216%-1
+-1%Martyr John, the soldier at Constantinople (4th C)%F216%-1
+-1%Hieromartyrs Polychronios, Bishop of Babylon, and those with him: Parmenius, Elminus, and Christotelus the Presbyters, Luke and Muko the Deacons, Audon, Senes, Olympius, and Maxim (+c 251)%F216%-1
+-1%Holy Hierarch Timothy II, the Confessor, Patriarch of Alexandria%F216%-1
+-1%Venerable Angelina of Serbia%F216%-1
+-1%Finding of the Relics of Venerable Prince Vladislav of Serbia%F216%-1
+-1%Finding of the Relics of Venerable Herman of Solovki (1484)%F216%-1
+-1%Venerable Anatolius of Optina, the Younger (+1922)%F216%-1
+-1%Icon of the Mother of God 'Okonskaya'%F216%-1
+-1%Forefeast of the Procession of the Venerable and Life-Creating Cross of the Lord%F217%-1
+-1% Righteous Eudocimus of Cappadocia (9th C)%F217%-1
+-1%Righteous Joseph of Arimathea (1st C)%F217%-1
+-1%Righteous Ehud, a Judge of Israel (Judg 3:15)%F217%-1
+-1%Holy Hierarch Herman, Bishop of Okser%F217%-1
+-1%Martyr Judith of Caesarea%F217%-1
+-1%New Hieromartyr Benjamin, Metropolitan of Petrograd and Gdovsk (+ 1922) and those with him: Archimandrite Sergius and the laymen: Yuri and John%F217%-1
+-1%Preparation for the Dormition Fast%F217%-1
+-1%MP: New Hieromartyr Nicholas (1941)%F217%-1
+-1%Saint Vasily the Confessor, bishop of Kineshemsk (1945)%F217%-1
+-1%Procession of the Honorable Wood of the Life-giving Cross of the Lord%F218%-1
+-1%Holy 7 Maccabean Martyrs: Habim, Antonios, Gurias, Eleazar, Eusebonus, Hadim and Marcellus, their mother Solomonia and their teacher Eleazar (+ 166 BC)%F218%-1
+-1%Martyrs Leontius, Attius, Alexander, Cyndeus, Minsitheus, Cyriakus, Mineonus, Catunus, and Eucleus%F218%-1
+-1%Holy Hierarch Timothy the Wonderworker, Bishop of Proconeses%F218%-1
+-1%Blessed Basil of Kubna%F218%-1
+-1%Feast of the All-Merciful Saviour and the Holy Theotokos%F218%-1
+-1%Beginning of the Dormition Fast%F218%-1
+-1%MP: New Martyr Priest Dimitry (1937)%F218%-1
+-1%Transfer from Jerusalem to Constantinople of the relics of the Protomartyr and Archdeacon Stephen (c. 428)%F219%-1
+-1%Blessed Basil of Moscow, the Fool-for-Christ (+ 1557)%F219%-1
+-1%Finding of the Relics of the Righteous Nicodemus, Gamalieilus, and Abibus%F219%-1
+-1%Hieromartyr Fructuosus, Bishop of Tarragon and with him the deacons Eulogius and Augrius%F219%-1
+-1%Hieromartyr Stephen, Pope of Rome and those with him (257)%F219%-1
+-1%Venerable Isaac, Dalmatius and Faustus, Ascetics of the Dalmatian Monastery in Constantinople (4th-5th C)%F220%-1
+-1%Venerable Anthony the Roman, Abbot and Wonderworker of Novgorod (+ 1147)%F220%-1
+-1%Venerable Cosmas, the Eunuch and Hermit of Palestine (6th C)%F220%-1
+-1%Holy Myrrh-bearing Woman Salome%F220%-1
+-1%Venerable John the Confessor, Abbot of Patalareia%F220%-1
+-1%Martyr Razhden the Persian of Georgia (+457)%F220%-1
+-1%Holy Seven Youths of Ephesus: Maximilian, Jamblichus, Martinian, John, Dionysius, Exacustodianus (Constantine) and Antoninus (+c 250 and 408-450)%F221%-1
+-1%Martyr Eudokia of Persia (+ c362-364)%F221%-1
+-1%Martyr Eleutherios of Constantinople (+ 305-311)%F221%-1
+-1%Hieromartyr Cosmas, Equal-to-the-Apostles%F221%-1
+-1%New Hieromartyr Nicholas Prozorov (+1930)%F221%-1
+-1%MP: New Martyrs Michael, Simieon, and Dimitrius (+1937)%F221%-1
+-1%Forefeast of the Transfiguration of the Lord%F222%-1
+-1%Martyr Eusignios of Antioch (+ 362)%F222%-1
+-1%Hieromartyr Antherus (+ 236) and Fabian (+ 250), the Popes of Rome%F222%-1
+-1%Martyrs Cantidius, Cantidianus, and Sibella in Egypt%F222%-1
+-1%Martyrs Pontius the Roman at Cimella in France (+c 257)%F222%-1
+-1%Righteous Nonna, mother of St Gregory the Theologion%F222%-1
+-1%St Euthimius, Patriarch of Constantinople%F222%-1
+-1%MP: New Martyrs Eudoxia, Daria, Daria, and Maria (+1919)%F222%-1
+-1%New Martyr Simeon, bishop of Ufa (+1921)%F222%-1
+-1%The Holy Transfiguration of Our Lord God and Saviour Jesus Christ%F223%-1
+-1%Venerable Job of Uschelie%F223%-1
+-1%St Theoctist, Bishop of Chernigov%F223%-1
+-1%New Hieromartyr Sergius (Tikhomirov) (+1930)%F223%-1
+-1%Afterfeast of the Transfiguration of the Lord%F224%-1
+-1%Martyr Dometios of Persia and his two Disciples (+ 363)%F224%-1
+-1%Venerable Pimen the much-suffering, of the Kiev Caves%F224%-1
+-1%Martyrs Marius the Soldier and Asterius the Senator%F224%-1
+-1%Venerable Orus, hermit of Thibaida%F224%-1
+-1%Venerable Pimen the Faster of the Kiev  Caves, far caves (13th-14th C)%F224%-1
+-1%Venerable Mercurius of the Kiev Caves, bishop of Smolensk%F224%-1
+-1%Hieromartyr Narcissus, Patriarch of Jerusalem%F224%-1
+-1%Venerable Dometius of Philotheeba%F224%-1
+-1%Finding of Relics of Saint Mitrophan, Bishop of Voronezh (1832)%F224%-1
+-1%Venerable Anthony of Optina (+ 1865)%F224%-1
+-1%MP:New Martyrs Priests Alexander, Peter, Michael, John, Dimitriy, and Alexey (+ 1937)%F224%-1
+-1%Afterfeast of the Transfiguration of the Lord%F225%-1
+-1%Saint Emelian the Confessor, Bishop of Cyzicus (+ c815-820)%F225%-1
+-1%Saint Myron the Wonderworker, Bishop of Crete (+ c350)%F225%-1
+-1%Venerable Gregory of Mt Sinai%F225%-1
+-1%Venerable Gregory, the Iconographer of the Kievan Caves, near caves (12th C)%F225%-1
+-1%Martyrs Eleutherius and Leonidus%F225%-1
+-1%First (1566) and Second (1992) Translation of the relics of the Venerable Zosima and Sabbatius of Solovki%F225%-1
+-1%Icon of the Mother of God 'Tolgskaya'%F225%-1
+-1%MP:: New Martyr Nicodimus, archbishop of Kostroma (+ 1938)%F225%-1
+-1%Afterfeast of the Transfiguration of the Lord%F226%-1
+-1%Apostle Matthias (+c.63)%F226%-1
+-1%Martyrs Anthony, Julian, John, James, Alexis, Demetreus, Photius, Peter, Leontius, and Mary%F226%-1
+-1%Venerable Psoe of Egypt (4th C)%F226%-1
+-1%Blessed Samuel, Presbyter of Edessa%F226%-1
+-1%Venerable Macarius of Oredezhsk (+1532)%F226%-1
+-1%Afterfeast of the Transfiguration of the Lord%F227%-1
+-1%Holy Martyr and Archdeacon Lawrence of Rome along with the Hieromartyr Sixtus, Pope of Rome and the Martyred Deacons Felicissimus, Agapitus, and Romanus (+258)%F227%-1
+-1%Blessed Lawrence, the Fool-for-Christ, at Kaluga (+1515)%F227%-1
+-1%MP:  New Martyr Priest Vyacheslav (+1918)%F227%-1
+-1%Afterfeast of the Transfiguration of the Lord%F228%-1
+-1%Holy Martyr and Archdeacon Lawrence of Rome along with the Hieromartyr Sixtus, Pope of Rome and the Martyred Deacons Felicissimus, Agapitus, and Romanus (+258)%F228%-1
+-1%Blessed Lawrence, the Fool-for-Christ, at Kaluga (+1515)%F228%-1
+-1%MP:  New Martyr Priest Vyacheslav (+1918)%F228%-1
+-1%Afterfeast of the Transfiguration of the Lord%F229%-1
+-1%Holy Martyr Archdeacon Euplus of Catania (+304)%F229%-1
+-1%Venerable Martyrs Theodore and Basil of the Kiev Caves%F229%-1
+-1%Virginmartyr Susanna and those with her: Gaius the Pope of Rome, Gavinius the Presbyter, his brother and the father of Susanna, Maximus, Claudius, and his wife Prepedigna, and their sons Alexander and Cythius (+295-296)%F229%-1
+-1%Venerable Passarion%F229%-1
+-1%Saint Theodore, Prince of Ostrog (+ c.1483)%F229%-1
+-1%Venerable Niphont, Patriarch of Constantinople%F229%-1
+-1%Afterfeast of the Transfiguration of the Lord%F230%-1
+-1%Martyrs Photios and Anicletas of Nicomedia and many with them (+ 305-306)%F230%-1
+-1%Martyrs Pamphilius and Captonus%F230%-1
+-1%Hieromartyr Alexander, Bishop of Comana (3rd C)%F230%-1
+-1%Venerable Palamon of Egypt%F230%-1
+-1%Venerable Castor, Bishop of Apta%F230%-1
+-1%MP: New Martyrs of Belgorod: Barlaam, Sergius, Elija, Vyacheslav, Ioasaph, John, Anthony, Micah, Vissarion, Matthew, Euthemius, Barnabus, Dimitry, Savva, Hermogenes, Arcadius, Euthemius, Marcellus, John, James, Peter, James, Alexander, Theodore, Peter, Sergius, and Alexey (+1918)%F230%-1
+-1%Apodosis of the Transfiguration of the Lord%F231%-1
+-1%Translation of the relics of St Maximos the Confessor (662)%F231%-1
+-1%Repose (1783) and Second Finding of the Relics (1991) of Saint Tikhon, bishop of Voronezh, Wonderworder of Zadonsk%F231%-1
+-1%Finding of the relics of the Venerable Maxim of Moscow, Fool-for-Christ (c.1547)%F231%-1
+-1%Martyrs Hyppolytus, Concordius, Irenaeus, and Abundius of Rome (+258)%F231%-1
+-1%Venerable Seridus the Abbot%F231%-1
+-1%Venerable Empress Irene, in monasticism Xenia%F231%-1
+-1%Blessed Empress Eudoxia%F231%-1
+-1%Icons of the Mother of God: 'Seven Arrows' and 'Strastnaya'%F231%-1
+-1%MP: New Martyr Seraphim, bishop of Dmitrov (+1918)%F231%-1
+-1%Forefeast of the Dormition of the Mother of God%F232%-1
+-1%Prophet Micah (8th C BC)%F232%-1
+-1%Translation of the relics of the Venerable Theodosius of the Kiev Caves (1091)%F232%-1
+-1%Hieromartyr Marcellus, Bishop of Apameia (+ c389)%F232%-1
+-1%Venerable Arkady of Noviy Torg%F232%-1
+-1%New Martyr Simeon of Trapezund%F232%-1
+-1%MP: Holy New Martyr Basil, bishop of Chernigov (+1918)%F232%-1
+-1%The Dormition (Repose) of our Most Holy Lady Theotokos and Ever-Virgin Mary%F233%-1
+-1%Venerable Macarius the Roman and Chariton%F233%-1
+-1%Icons of the Mother of God: 'Atskurskaya', 'Of the Pskov Caves', 'The Giver of Reason', and 'Of the Crimea'%F233%-1
+-1%Afterfeast of the Dormition%F234%-1
+-1%Translation of the Holy Icon of Christ 'Not-Made-By-Hands' from Edessa to Constantinople (944)%F234%-1
+-1%Martyr Diomedes the Physician of Tarsus in Cilicia (+298)%F234%-1
+-1%Venerable Cherimon of Egypt%F234%-1
+-1%Martyr Alcuidus%F234%-1
+-1%Venerable Joachim of Osogovsk (+c.1115)%F234%-1
+-1%New Venerable Martyr Nicodemus%F234%-1
+-1%New Martyr Stamatius%F234%-1
+-1%Afterfeast of the Dormition%F235%-1
+-1%Martyr Myron the Presbyter of Cyzicus (+250)%F235%-1
+-1%Venerable Alypy, the Iconographer of the Kievan Caves, near caves (+ c.1114)%F235%-1
+-1%Martyrs Straton, Philip, Eutychian and Cyprian, of Nicomedia (+c.303)%F235%-1
+-1%Martyrs Thyrsus, Leucius, Coronatus and their companions at Caesarea in Bithynia (+c.249-251)%F235%-1
+-1%Martyrs Paul, his sister Juliana and others in Syria (+c.273)%F235%-1
+-1%Martyr Patrocles of Troyes (+c.270-275)%F235%-1
+-1%St Thomas, Bishop of Germanicia%F235%-1
+-1%Venerable Elijah of Calabria%F235%-1
+-1%Venerable Pimen of Ugresh%F235%-1
+-1%Venerable Philipp of Yankov%F235%-1
+-1%MP: New Martyr Priest Alexey (+1918)%F235%-1
+-1%Afterfeast of the Dormition%F236%-1
+-1%Martyrs Florus and Laurus of Illyria (2nd C)%F236%-1
+-1%Martyrs Hermes, Serapion, and Polienus of Rome (2nd c.)%F236%-1
+-1%Hieromartyr Emilian the Bishop and with him Hilarion, Dionysius, and Hermippus (+c.300)%F236%-1
+-1%Venerable Barnabas and Sophronios (+412)%F236%-1
+-1%Venerable Christopher (+c.668)%F236%-1
+-1%Saints John (+674) and George (+683), Patriarchs of Constantinople%F236%-1
+-1%Venerable Barnabus, Sophronius, and Christopher%F236%-1
+-1%Venerable John of Rila%F236%-1
+-1%MP: New Martyr Gregory the Presbyter and Martyrs Eugene and Michael (+1937)%F236%-1
+-1%Afterfeast of the Dormition%F237%-1
+-1%Martyr Andrew Stratelates and the 2593 Martyrs with him in Cilicia (+ c284-305)%F237%-1
+-1%Martyrs Timothy, Agapios and Thekla (+ c304)%F237%-1
+-1%Venerable Theophanes the New, of Dochiariou, Mt Athos (15th C)%F237%-1
+-1%Finding of the Relics of Venerable Gennadius of Kostroma%F237%-1
+-1%Saint Pitirim, Bishop of Perm (+ 1456)%F237%-1
+-1%Icon of the Mother of God 'of the Don'%F237%-1
+-1%MP: New Martyr Nicholas the Presbyter (+1937)%F237%-1
+-1%Afterfeast of the Dormition%F238%-1
+-1%Prophet Samuel (11th C BC)%F238%-1
+-1%Hieromartyr Philip, Bishop of Heraclius and with him the Martyrs Sevirus, Memnon, and the 37 Martyrs burned at Thrace (+304)%F238%-1
+-1%Martyr Lucius the Senator (+310)%F238%-1
+-1%Martyrs Iliodoros, and Dosos (+380)%F238%-1
+-1%Afterfeast of the Dormition%F239%-1
+-1%Apostle of the Seventy Thaddeus (+ c 44)%F239%-1
+-1%Martyr Bassa of Edessa and her sons: Theognios, Agapios and Pistos (+ c 305-311)%F239%-1
+-1%Venerable Abraham, Archimandrite and Wonderworker of Smolensk (13th C)%F239%-1
+-1%Venerable Abraham, the Lover-of-Labour of the Kiev Caves%F239%-1
+-1%Venerable Conrnilius and his disciple Abraham, of Old Island%F239%-1
+-1% Venerable Theoclita (829-842)%F239%-1
+-1%Venerable Ephraim of Smolensk (13th C)%F239%-1
+-1%Hieromartyr Raphael of Shishatova%F239%-1
+-1%Afterfeast of the Dormition%F240%-1
+-1%Martyrs Agathonicus of Nicomedia and his companions: Zotikos, Theoprepios, Acyndinos, Severian, Zeno and others who suffered under Maximian (+c.305-311)%F240%-1
+-1%Venerable Eulapia the Virgin of Barselona%F240%-1
+-1%Venerable Anthusa and Hieromartyr Bishop Athanasius, who baptised her two servants: Charasim and Neophite%F240%-1
+-1%New Hieromartyr Ephraim, Bishop of Selenginsk and Presbyter John Vostrogov (+1918)%F240%-1
+-1%Venerable Isaac (the First) of Optina (+1894)%F240%-1
+-1%Icon of the Mother of God 'Georgian'%F240%-1
+-1%MP: New Martyr Macarius, bishop of Orel (+1918)%F240%-1
+-1%New Martyr Theodore, bishop of Penza (+1937)%F240%-1
+-1%New Martyrs John, bishop of Velikaya Russa and Alexey, archbishop of Omsk (+1937)%F240%-1
+-1%Apodosis of the Dormition%F241%-1
+-1%Martyr Lupus, the slave of St Demetrius of Thessalonica (+c.306)%F241%-1
+-1%Venerable Eutychius (+c.540) and Florentius (+547) of Nursia%F241%-1
+-1%Hieromartyr Ireneaus, Bishop of Lyon (+202)%F241%-1
+-1%Hieromartyr Pothinus, Bishop of Lyon%F241%-1
+-1%St Theon, Bishop of Alexandria%F241%-1
+-1%Saint Callinicus, Patriarch of Constantinople (+705)%F241%-1
+-1%Hieromartyr Eutychius, disciple of the Apostle John the Theologian (1st C)%F242%-1
+-1%Translation of the relics of Saint Peter, Metropolitan of Moscow and All Russia (1479)%F242%-1
+-1%Venerable Arsenius of Komel%F242%-1
+-1%Venerable George Limniotes the Confessor of Mt Olympus (3rd C)%F242%-1
+-1%Martyr Tation of Claudiopolis (+305)%F242%-1
+-1%Virginmartyr Sira of Persia (+588)%F242%-1
+-1%Icon of the Mother of God 'Petrovskaya'%F242%-1
+-1%Return of the relics of the Apostle Bartholomew from Anastasiopolis to Lipari (6th C)%F243%-1
+-1%Holy Apostle Titus of the 70, Bishop of Crete (1st C)%F243%-1
+-1%St Michael, Patriarch of Constantinople%F243%-1
+-1%Saint John the Cappadocian, Patriarch of Constantinople (6th C)%F243%-1
+-1%St Epiphanius, Patriarch of Constantinople%F243%-1
+-1%Saints Barsis (+ 378) and Eulogios, Bishops of Edessa, and Saint Protogenos, Bishop of Carhae, Confessors (4th C)%F243%-1
+-1%MP: New Hieromartyr Priest Vladimir (+1938)%F243%-1
+-1%Martyrs Adrian and Natalia and 23 Martyrs suffering with them in Nicomedia (+ c 305-311)%F244%-1
+-1%Venerable Adrian, Abbot of Ondrusovsk (+ 1549)%F244%-1
+-1%Blessed Cyprian of Storozhevsk%F244%-1
+-1%Venerable Adrian, Abbot of Uglich (16th C)%F244%-1
+-1%Meeting of the Vladimir Icon of the Most Holy Mother of God (1395)%F244%-1
+-1%Venerable Pimen the Great (+c.450)%F245%-1
+-1%Hieromartyr Kuksha and Pimen the Faster, of the Kievan Caves, near caves (+ c. 1114)%F245%-1
+-1%Venerable Pimen of Palestine (+c.602)%F245%-1
+-1%Venerable Savva in Benephaleh%F245%-1
+-1%Saint Liberius the Confessor and Pope of Rome (+366)%F245%-1
+-1% Saint Hosia the Confessor, Bishop of Cordova (+359)%F245%-1
+-1%Martyr Anthusa%F245%-1
+-1%Martyr Phanurius%F245%-1
+-1%Venerable Moses the Black of Scete (+ c 400)%F246%-1
+-1%Finding of the relics of the Venerable Job, Abbot and Wonderworker of Pochaev (1659)%F246%-1
+-1%Venerable Savva of Pskov (+ 1495)%F246%-1
+-1%Righteous Anna the Prophetess, daughter of Phanuel, at the Temple in Jerusalem (1st C)%F246%-1
+-1%Righteous Hezekiah, King of Judea (721-691 BC)%F246%-1
+-1%Synaxis of all the saints who have shown forth in the Kiev Far Caves%F246%-1
+-1%St Amphilochius, Bishop of Vladimir Volynskiy%F246%-1
+-1%Martyr Susanna, Princess of Rana, Georgia (5th C)%F246%-1
+-1%New Hieromartyr Archimandrite Sergius and 11 monks of Zilantiev Monastery (+1918)%F246%-1
+-1%The Beheading of the Holy Glorious Prophet, Forerunner and Baptist of the Lord, John%F247%-1
+-1%Martyr Anastasius of Bulgaria (+1794)%F247%-1
+-1%Venerable Candida and Gelasia of Constantinople%F247%-1
+-1%Venerable Alexander, Abbot of Voch%F247%-1
+-1%Remembrance of All Orthodox Warriors, Killed in Battle for Faith, Czar, and Fatherland (1769)%F247%-1
+-1%Saints Alexander (+340), John (+ 595), and Paul the New (+784), Patriarchs of Constantinople%F248%-1
+-1%Translation of the relics of the Right-Believing Prince Alexander Nevsky from Vladimir to St Petersburg (1724)%F248%-1
+-1%Finding of the relics of the Right-Believing Prince Daniel of Moscow (1652)%F248%-1
+-1%Repose of the Venerable Alexander, Abbot of Svir (+ 1533)%F248%-1
+-1%Venerable Christopher the Roman of Palestine (6th C)%F248%-1
+-1%Venerable Wonderworker Phantine%F248%-1
+-1%Synaxis of the Serbian Hierarchs: Savva I, Savva II, Nicodemus, Joannicius, Arsenius, Eustathius, James, Daniel, Ephraim, Spiridon, Macarius, Gabriel, and Gregory%F248%-1
+-1%Venerable Brienna of Nizibia%F248%-1
+-1%St Eulalius, Bishop of Caesarea%F248%-1
+-1%Placing of the Venerable Belt of the Most Holy Mother of God in Constantinople (c 395-408)%F249%-1
+-1%Saint Gennadius, Patriarch of Constantinople (+471)%F249%-1
+-1%Hieromartyr Cyprian, Bishop of Carthage (+ 258)%F249%-1
+-1%St John, Metropolitan of Kiev%F249%-1
+-1%MP: New Hieromartyr Priest Michael (+ 1937)%F249%-1
+-1%Church New Year%F250%-1
+-1%St. Simeon Stylites, the Elder (+459) and his mother, Venerable Martha (+428)%F250%-1
+-1%Martyr Aithalus the Deacon%F250%-1
+-1%40 Holy Virgins and Saint Ammoun the Deacon (4th C)%F250%-1
+-1%Righteous Joshua the son of Nun (Navi) (16th C BC)%F250%-1
+-1%Holy Martyrs Callista and her brothers Evodus and Hermogenes, Christians of Nicomedia (+309)%F250%-1
+-1%Venerable Meletius the New%F250%-1
+-1%New Martyr Angelisus%F250%-1
+-1%Synaxis of the Most Holy Theotokos at the Miasenga Monastery (864)%F250%-1
+-1%Martyr Mamas of Caesarea in Cappadocia (3rd C) and his parents Theodotus and Rufina%F251%-1
+-1%St. John the Faster, Patriarch of Constantinople (+595)%F251%-1
+-1%3,618 Martyrs who suffered at Nicomedia (3rd-4th C)%F251%-1
+-1%Righteous Eleazar, son of Aaron%F251%-1
+-1%Venerable Elpidius the Abbot%F251%-1
+-1%Icon of the Mother of God of Kaluga%F251%-1
+-1%MP: New Hieromartyr Barsonuphius, bishop of Kirillovo and those with him (+1918)%F251%-1
+-1%New Hieromartyr Damascene, bishop of Starodub and those with him (+1937)%F251%-1
+-1%Hieromartyr Anthimus, Bishop of Nicomedia, and those with him: Theophilus the Deacon, Dorotheus, Mardonius, Migdonius, Peter, Indis, Gorgonius, Xeno, Domna the Virgin and Euthimius (+302)%F252%-1
+-1%Venerable Theoctistus (+467)%F252%-1
+-1%Hieromartyr Aristonus, Bishop of Alexandria%F252%-1
+-1%Martyr Basilissa of Nicomedia (+309)%F252%-1
+-1%St. Phoebe the Deaconess at Cenchreae (1st C)%F252%-1
+-1%St Anastasius I, Patriarch of Jerusalem%F252%-1
+-1%Blessed John 'the Hairy' and Fool-For-Christ at Rostov (+1580)%F252%-1
+-1%Saint Joannicius, Archbishop of Serbia (+1349)%F252%-1
+-1%MP: New Hieromartyr Pimen, bishop of Vernyi (+1918)%F252%-1
+-1%Hieromartyr Babylas, Bishop of Antioch and those with him: the youths Urban, Prilidianus, and Eppolonius, and their mother Christodula (+251)%F253%-1
+-1%Holy Prophet and God-seer Moses (+1531 BC)%F253%-1
+-1%Finding of the relics of Saint Joasaph, Bishop of Belgorod (1911)%F253%-1
+-1%Martyr Babylas of Nicomedia and 84 youths with him%F253%-1
+-1%Martyrs Theodore, Mianus, Julian, and Chion%F253%-1
+-1%Martyr Hermione the Daughter of St Philip the Deacon (+c.117)%F253%-1
+-1%Venerable Petronius, desciple of Venerable Pachomius%F253%-1
+-1%Hieromartyr Peter, Metropolitan of Dabro and Bosnia%F253%-1
+-1%MP: Second finding of the relics of Saint Metrophan, Bishop of Vorenzh (1989)%F253%-1
+-1%Holy Prophet Zechariah and Righteous Elizabeth, parents of St John the Baptist (1st C)%F254%-1
+-1%Martyrs Urban, Theodore, Medimnus and with them 77 Men at Nicomedia (+370)%F254%-1
+-1%Martyr Abdias of Persia (5th C)%F254%-1
+-1%Martyrs Thiphael and his sister Thebaia (1st-2nd C)%F254%-1
+-1%Martyr Serbilus%F254%-1
+-1%Virginmartyr Rhais of Alexandria (+c.308)%F254%-1
+-1%Hieromartyr Athanasius of Brest (+1648)%F254%-1
+-1%Martyred Soldiers Juventinus and Maximus (+c.362)%F254%-1
+-1%Killing of the Holy Right-Believing Prince Gleb, in Baptism David (+1015)%F254%-1
+-1%Appearance of the Apostle Peter to Emperor Justinian in Athyra%F254%-1
+-1%Commemoration of the Miracle of the Archangel Michael at Chonah (4th C)%F255%-1
+-1%St. Archippus of Herapolis (4th C)%F255%-1
+-1%Martyrs Eudoxius, Zeno, Romulus, Macarius and 11,000 others in Armenia (+c.311)%F255%-1
+-1%Martyr Cyriacus, Faustus the Presbyter, Abibas the Deacon, and 11 others at Alexandria (+c.250)%F255%-1
+-1%Holy Hierarch Cyril, Bishop of Gortyna (3rd-4th C)%F255%-1
+-1%St. David of Hermopolis in Egypt (6th C)%F255%-1
+-1%New Hieromartyr Presbyter Maxim (Sandovich)%F255%-1
+-1%Forefeast of the Nativity of the Theotokos%F256%-1
+-1%Martyr Sozon of Cilicia (+304)%F256%-1
+-1%St. John, Archbishop and Wonderworker of Novgorod (+1186)%F256%-1
+-1%Martyr Eupsychius%F256%-1
+-1%Apostles of the 70: Euodius and Onisiphorus (+66)%F256%-1
+-1%Venerable Luke%F256%-1
+-1%Righteous Judith%F256%-1
+-1%Venerable Clodius the Confessor%F256%-1
+-1%Martyr Macarius, Archimandrite of Kanev and Pereyaslavl (+1678)%F256%-1
+-1%New Hieromartyr John Maslovsky (+1921)%F256%-1
+-1%Venerable Macarius of Optina (+1860)%F256%-1
+-1%MP: New Hieromartyr Eugene, Metropolitan of Nizhniy Novgorod (+1937)%F256%-1
+-1%Nativity of Our Most Holy Lady Theotokos and Ever-Virgin Mary%F257%-1
+-1%Venerable Serapion of the Spaso-Eleazar Monastery%F257%-1
+-1%Venerable Lukian%F257%-1
+-1%Venerable Arsenius of Konevets%F257%-1
+-1%New Martyr Athanasius of Thessaloniki%F257%-1
+-1%Icons of the Mother of God: 'Kursk-Root', 'Pochaev', 'Kholm', and 'Sophia - the Wisdom of God'%F257%-1
+-1%Afterfeast of the Nativity of the Theotokos%F258%-1
+-1%Holy Righteous Ancestors of God, Saints Joachim and Anna (1st C)%F258%-1
+-1%Martyr Severian of Sebaste (+320)%F258%-1
+-1%Venerable Joseph the Abbot of Volokolamsk, Volotsk (+1515)%F258%-1
+-1%Finding of the relics of St Theodosius, Archbishop of Chernigov (1896)%F258%-1
+-1%Martyrs Chariton and Stratorus%F258%-1
+-1%Blessed Nicetas the Hidden of Constantinople (12th C)%F258%-1
+-1%Venerable Theophanes the Confessor and Faster of Mt. Diabenos (+c.300)%F258%-1
+-1%Venerable Joachim of Opochesk%F258%-1
+-1%Commemoration of the 3rd OEcumenical Council (431)%F258%-1
+-1%Afterfeast of the Nativity of the Theotokos%F259%-1
+-1%Holy Virgins Menodora, Metrodora and Nymphodora at Nicomedia (+c.310)%F259%-1
+-1%Martyr Barispsabus%F259%-1
+-1%Holy Greek Empress Pulcheria (+453)%F259%-1
+-1%Holy Apostles of the Seventy: Apelles, Lucius, and Clement (1st C)%F259%-1
+-1%Saints Peter and Paul, bishops at Nicea (9th C)%F259%-1
+-1%Venerable Joasaph of Kubensk, Vologda (+1453)%F259%-1
+-1%Venerable Paul the Obedient of the Kiev Caves (13th-14th C)%F259%-1
+-1%Afterfeast of the Nativity of the Theotokos%F260%-1
+-1%Holy Virgins Menodora, Metrodora and Nymphodora at Nicomedia (+c.310)%F260%-1
+-1%Martyr Barispsabus%F260%-1
+-1%Holy Greek Empress Pulcheria (+453)%F260%-1
+-1%Holy Apostles of the Seventy: Apelles, Lucius, and Clement (1st C)%F260%-1
+-1%Saints Peter and Paul, bishops at Nicea (9th C)%F260%-1
+-1%Venerable Joasaph of Kubensk, Vologda (+1453)%F260%-1
+-1%Venerable Paul the Obedient of the Kiev Caves (13th-14th C)%F260%-1
+-1%Afterfeast of the Nativity of the Theotokos%F261%-1
+-1%Venerable Theodora of Alexandria (+c.480)%F261%-1
+-1%Translation of the relics of the Venerable Sergius and Herman, Wonderworkers of Valaam%F261%-1
+-1%St. Euphrosynus the Cook of Alexandria (9th C)%F261%-1
+-1%Martyr Ia of Persia and 9000 others (+c.363)%F261%-1
+-1%Martyrs Diodorus and Didimus of Syria%F261%-1
+-1%Holy Martyrs Demetrius, his wife Euanthea, and their son Demetrian (1st C)%F261%-1
+-1%Martyrs Serapion, Crondidus, and Leontius of Alexandria%F261%-1
+-1%Venerable Paphnuty the Confessor, Bishop of Taissi%F261%-1
+-1%Glorification of Blessed Xenia of St Petersburg (1978)%F261%-1
+-1%Venerable Silouan of Mt Athos (+1938)%F261%-1
+-1%MP: New Hieromartyrs Priests Nicholas and Victor (+1918)%F261%-1
+-1%Apodosis of the Nativity of the Theotokos%F262%-1
+-1%Hieromartyr Autonomus the Bishop in Italy (+313)%F262%-1
+-1%Hieromartyr Coronatus, Bishop of Nicomedia (3rd C)%F262%-1
+-1%Martyr Julian of Galatia and 40 others (4th C)%F262%-1
+-1%Martyr Theodore of Alexandria%F262%-1
+-1%Venerable Bassian of Tikhsnen, Vologda (+1624)%F262%-1
+-1%Venerable Athansius of Serpukhov and his disciple Athanasius%F262%-1
+-1%Translation of the relics of Righteous Simeon of Verkhoturye (1704)%F262%-1
+-1%Forefeast of the Exaltation of the Cross%F263%-1
+-1%Commemoration of the Founding of the Church of the Resurrection (Holy Sepulchre) at Jerusalem (335)%F263%-1
+-1%Hieromartyr Cornelius the Centurion (1st C)%F263%-1
+-1%Hieromartyr Presbyter Julian%F263%-1
+-1%St. Peter of Atroe (9th C)%F263%-1
+-1%Martyrs Gordian, Macrobius, Elias, Zoticus, Lucian and Valerian (4th C)%F263%-1
+-1%Holy Martyrs Seleucus, Stratonicus, Chronides, Leontius and Serapion (+c.237)%F263%-1
+-1%Greatmartyr Ketevan, Queen of Georgia (+1624)%F263%-1
+-1%Venerable Hierotheus of Iberia (Georgia)%F263%-1
+-1%The Universal Exaltation of the Precious and Life-Giving Cross%F264%-1
+-1%Repose of St John Chrysostom, Archbishop of Constantinople%F264%-1
+-1%Martyr Papas of Licaonia%F264%-1
+-1%Venerable Queen Placylla%F264%-1
+-1%Venerable Mary of Egissa%F264%-1
+-1%New Venerable Martyr Macarius of Thessaloniki%F264%-1
+-1%Icon of the Mother of God of Lesna (1683)%F264%-1
+-1%Afterfeast of the Exaltation of the Cross%F265%-1
+-1%Greatmartyr Nicetas the Goth (+c.372)%F265%-1
+-1%Martyr Porphyrius the Actor (+361)%F265%-1
+-1%Holy Martyrs Maximus, Asklepiodote, and Theodotus (+c.310)%F265%-1
+-1%St. Philotheus the Presbyter in Asia Minor (10th C)%F265%-1
+-1%Saint Bissarion, Archbishop of Larissa%F265%-1
+-1%Venerable Gerasim%F265%-1
+-1%Venerable Joseph the Abbot of Alaverdi in Georgia (+570)%F265%-1
+-1%Finding of the relics of the Holy Protomartyr and Archdeacon Stephen (415)%F265%-1
+-1%St Acacius, Bishop of Melitene (3rd C)%F265%-1
+-1%New Martyr John of Crete%F265%-1
+-1%Afterfeast of the Exaltation of the Cross%F266%-1
+-1%Greatmartyr Euphemia the All-Praised (+304)%F266%-1
+-1%Martyrs Victor and Sosthenes at Chalcedon (+c.304)%F266%-1
+-1%Holy Martyrs Sebastiana (1st C) and Melitina of Marcianopolis (2nd C)%F266%-1
+-1%Martyr Liudmila, Princess of the Czechs (+927)%F266%-1
+-1%Venerable Dorotheus the Hermit of Egypt (4th C)%F266%-1
+-1%Venerable Procopius, Abbot of Sazavsk, in Bohemia%F266%-1
+-1%Repose of St Cyprian, Metropolitan of Kiev and All Russia (+1406)%F266%-1
+-1%Martyrs Isaac and Joseph of Georgia (+808)%F266%-1
+-1%MP: New Hieromartyr Priest Gregory (+1937)%F266%-1
+-1%Afterfeast of the Exaltation of the Cross%F267%-1
+-1%Holy Martyrs Saint Sophia and her Daughters Faith, Hope and Love (+c.137)%F267%-1
+-1%Martyrs Agathoclia and Theodota at Nicea (+c.230)%F267%-1
+-1%Holy Martyrs Peleus and Nilus, Bishops of Egypt, Presbyter Zeno, Patermuthius, Elias and another 156 Martyrs (+c.310)%F267%-1
+-1%Martyr Lucia and her son Geminian%F267%-1
+-1%Hieromartyr Heraclidus and Miron, bishops of Tomas in Cyprus%F267%-1
+-1%Icon of the Mother of God of Constantinople%F267%-1
+-1%Afterfeast of the Exaltation of the Cross%F268%-1
+-1%St. Eumenius, Bishop of Gortyna (7th C)%F268%-1
+-1%Martyr Ariadne of Phrygia (2nd C)%F268%-1
+-1%Martyrs Sophia and Irene of Egypt (3rd C)%F268%-1
+-1%Martyr Castor of Alexandria%F268%-1
+-1%Saint Arkady, Bishop of Novgorod%F268%-1
+-1%Greatmartyr Prince Bidzini (Cholokashvili), and the martyred princes Shalva, and Elizbar of Xana, Georgia (+1660)%F268%-1
+-1%Venerable Hillarion of Optina%F268%-1
+-1%MP: New Hieromartyr Amphilochiy, Bishop of Krasnoyarsk and those with him (+1937)%F268%-1
+-1%Afterfeast of the Exaltation of the Cross%F269%-1
+-1%Holy Martyrs Trophimus, Sabbatius and Dorymedon (+276)%F269%-1
+-1%Holy Prince Theodore of Smolensk (+1299) his sons David and Constantine, Wonderworkers of Yaroslavl%F269%-1
+-1%Martyr Zosimas the Hermit of Cilicia (4th C)%F269%-1
+-1%Hieromartyr Jannuarius, Bishop of Benebent and those with him%F269%-1
+-1%Holy Prince Igor of Chernigov and Kiev (+1147)%F269%-1
+-1%MP: Holy Schema-Hieromonk Alexis of Zosimovskaya Hermitage (+1928)%F269%-1
+-1%Afterfeast of the Exaltation of the Cross%F270%-1
+-1%Greatmartyr Eustathius (Eustace) Pacidas with his wife Theopistia and children Agapius and Theopist of Rome (2nd C)%F270%-1
+-1%Holy Martyr and Confessor Prince Michael and his counsellor Theodore, Wonderworkers of Chernigov (+1245)%F270%-1
+-1%St. Oleg, Prince of Briansk (+c.1285)%F270%-1
+-1%Martyr John of Egypt%F270%-1
+-1%Venerable Anastasius, another Anastasius, Theodore and Euprepius the Confessors, disciples of St Maximus the Confessor%F270%-1
+-1%New venerable martyr Hilarion of St Anne Skete on Mt Athos%F270%-1
+-1%Apodosis of the Exaltation of the Cross%F271%-1
+-1%Apostle Quadratus of the Seventy (+c.130)%F271%-1
+-1%Finding of the relics of St Demetrius, Metropolitan of Rostov (1752)%F271%-1
+-1%Hieromartyrs Hypatius, Bishop of Ephesus, and Priest Andrew (+c.735)%F271%-1
+-1%Martyr Eusebius of Phoenicia%F271%-1
+-1%Martyr Priscus of Phrygia%F271%-1
+-1%Sts Isaak and Meletius of Cyprus%F271%-1
+-1% Venerable Joseph of Zaonikiev Monastery (+1612)%F271%-1
+-1%Venerable Daniel the Abbot of Shuzhgorsk (16th C)%F271%-1
+-1%Hieromartyr Phocas, Bishop of Sinope (+117)%F272%-1
+-1%Prophet Jonah (8th C BC)%F272%-1
+-1%Saint Jonah the Presbyter (9th C), father of St Theophan the Canonarch and Theodore%F272%-1
+-1%Martyr Phocas the Gardener of Sinope (+320)%F272%-1
+-1%Righteous Peter the Tax-Collector (6th C)%F272%-1
+-1%Venerable Jonah the Abbot of Yash Lake (+c.1590)%F272%-1
+-1%Venerable Cosmas of the Zographou Monastery on Mt. Athos%F272%-1
+-1%26 Venerable Martyrs of Zographou Monastery%F272%-1
+-1%Conception by St Elizabeth of the Honorable Glorious Prophet, Forerunner and Baptizer of the Lord John%F273%-1
+-1%Holy Martyrs Andrew, John, Peter and Antoninus (9th C)%F273%-1
+-1%Virginmartyr Irais (Rhais) of Alexandria (+c.308)%F273%-1
+-1%Monastic Women Xanthippe and Polyxene (+109)%F273%-1
+-1%New Martyrs Nicholas of Pentapolis and John of Aepyra%F273%-1
+-1%Icon of the Mother of God 'Slovenkaya' (1635)%F273%-1
+-1%MP: New Hieromartyr Priest John (+1937)%F273%-1
+-1%Protomartyr and Equal-to-the-Apostles Thekla (1st C)%F274%-1
+-1%Venerable Nicander, Hermit of Pskov (+1581)%F274%-1
+-1%Venerable Coprios of Palestine (+ 530)%F274%-1
+-1%Venerable Abraham, Abbot of Mirozh (+1158)%F274%-1
+-1%Venerable Galaction of Vologda (+1612)%F274%-1
+-1%Saint Stephen, in monasticism Simon%F274%-1
+-1%David%F274%-1
+-1%and Vladislav of Serbia (13th C)%F274%-1
+-1%Icon of the Mother of God 'Mirozhskaya'%F274%-1
+-1%Repose of Venerable Sergius, Abbot of Radonezh and Wonderworker of All Russia (+1392)%F275%-1
+-1%Venerable Euphrosene of Alexandria (5th C)%F275%-1
+-1%Venerable Martyr Paphnutius and his 546 Martyred Companions in Egypt (3rd C)%F275%-1
+-1%Venerable Euphrosene of Suzdal (in the world Theodulia, +1250)%F275%-1
+-1%Translation of the relics of Saint Herman, Archbishop of Kazan (1595)%F275%-1
+-1%Remembrance of the Earthquake in Constantinople%F275%-1
+-1%Repose of the Holy Apostle and Evangelist John the Theologian (2nd C)%F276%-1
+-1%Righteous Gedeon, the Judge of Israel%F276%-1
+-1%Venerable Ephraim of Perekop, Wonderworker of Novgorod (+1492)%F276%-1
+-1%Venerable Nilus of Calabria and his disciple Bartholomew%F276%-1
+-1%Martyr Callistratus and 49 Martyrs in his company (+304)%F277%-1
+-1%Venerable Sabbatius of Solovki (+1435)%F277%-1
+-1%Apostles of the 70: Mark, Aristarchus, and Zeno (1st C)%F277%-1
+-1%Martyr Epicharis of Rome (3rd C)%F277%-1
+-1%New Martyr Achilina%F277%-1
+-1%Venerable Ignatius, Abbot in Asia Minor (+963-975)%F277%-1
+-1%Saint Flavian, Patriarch of Antioch (381-404), and with him Theodotus and Pelagia%F277%-1
+-1%New Hieromartyr Peter (Polyansky), Metropolitan of Krutitsa (+ 1937)%F277%-1
+-1%Venerable Chariton the Confessor, Abbot of Palestine (+c.350)%F278%-1
+-1%Prophet Baruch (6th C BC)%F278%-1
+-1%Martyrs Alexander, Altheos, Zosimas, Mark the Shepherd, Nikon, Neonos, Helioldoros, Stephen, another Mark and 24 others in Pisidia and Phrygia (4th C)%F278%-1
+-1%Venerable women Eustochia and Paula%F278%-1
+-1%Martyrdom of Saint Wenceslaus (Vyacheslav), Prince of the Czech Lands (+935)%F278%-1
+-1%Venerable Herodius of Ilozersk%F278%-1
+-1%Venerable Chareton of Sianzhemsk%F278%-1
+-1%Venerable Schema-Monk Cyril and the Schema-Nun Maria the parents of the Venerable Sergius of Radonezh%F278%-1
+-1%Venerable Kyriakos the Hermit of Palestine (+556)%F279%-1
+-1%Venerable Theophanes the Merciful of Gaza%F279%-1
+-1%Martyrs Dadas, Habeddai, Casdoe or (Kazdoia) of Persia (4th C)%F279%-1
+-1%Venerable Gudelia of Persia%F279%-1
+-1%Holy 80 Martyrs at Byzantium%F279%-1
+-1%Venerable Mary of Palestine%F279%-1
+-1%New Hieromartyr John, Archbishop of Riga (+1934)%F279%-1
+-1%Finding of the Relics of St John, Archbishop and Wonderworker of Shanghai, Western Europe, and San Francisco (1993)%F279%-1
+-1%Hieromartyr Gregory, Bishop and Enlightener of Great Armenia (+ c 335)%F280%-1
+-1%Saint Michael, First Metropolitan of Kiev (+ 992)%F280%-1
+-1%Venerable Gregory, Wonderworker of Vologda (+ 1442)%F280%-1
+-1% Martyrs Ripsimia and Gaiania and 35 Holy Virgins and 70 men martyred with them in Armenia (4th C)%F280%-1
+-1%Protection of Our Most Holy Lady Theotokos and Ever-Virgin Mary%F281%-1
+-1%Apostle of the 70: Ananias (1st C)%F281%-1
+-1%Venerable Romanos the Melodist - 'Sweet Singer' (5th C)%F281%-1
+-1%Venerable Sabbas, Abbot of Vishersk (+ 1461)%F281%-1
+-1%Venerable Martyr Michael and 36 Venerable Martyrs with him%F281%-1
+-1%Venerable Domnus of Thessaloniki%F281%-1
+-1%Venerable John Kukuzel%F281%-1
+-1%Commemoration of the Apparition of the Pillar with the Robe of the Lord under it at the Cathedral in Mishkheta, Georgia%F281%-1
+-1%Venerable Gregory of Mt Athos (4th C)%F281%-1
+-1%Icons of the Mother of God: 'Protection of Pskov', 'Kukuzelissa', and 'Kasperovskaya'%F281%-1
+-1%Hieromartyr Cyprian and Virginmartyr Justina of Nicomedia (+ 304)%F282%-1
+-1%Blessed Andrew, Fool-for-Christ, at Constantinople (+ c. 936)%F282%-1
+-1%Repose of Blessed Princess Anna of Kashin (+ 1338)%F282%-1
+-1%Venerable Cyprian, the Fool-for-Christ of Suzdal%F282%-1
+-1%New Martyr George%F282%-1
+-1%Venerable Cassian the Greek of Uglich (+ 1504)%F282%-1
+-1%Martyrs David and Constantine, Princes of Aragvet, Georgia (+ 740)%F282%-1
+-1%Hieromartyr Dionysius the Areopagite, Bishop of Athens (+ 96)%F283%-1
+-1%Hieromartyr Dionysius (Denis), Bishop of Paris and with him Martyrs Rusticus the Presbyter and Eleutherius the Deacon%F283%-1
+-1%Venerable Dinoysius, Hermit of the Kiev Caves, far caves (15th C)%F283%-1
+-1%Venerable John the Chozebite, Bishop of Caesarea in Palestine (6th C)%F283%-1
+-1%Blessed Hesychius Chorebite, of Mt. Athos%F283%-1
+-1%Holy Hieromartyr and Confessor Agathangel, Metropolitan of Yaroslavl (+1928)%F283%-1
+-1%Hieromartyr Hierotheos, Bishop of Athens (1st C)%F284%-1
+-1%Finding of the relics of St Gurias, 1st Archbishop of Kazan (+1563), and Saint Barsonophius, Bishop of Tver (+1576) in 1595%F284%-1
+-1%Hieromartyr Peter, Bishop of Capitolium%F284%-1
+-1%Venerable Ammon and Venerable Paul the Simple, of Egypt%F284%-1
+-1%Martyr Domnina and her daughters Birinea (Veronica) and Proskudia (Prosdoki)%F284%-1
+-1%Martyr Dabictus and his daughter Kallisthenia%F284%-1
+-1%Martyrs Gauius, Faustus, Eusebius, and Cherimon%F284%-1
+-1%Blessed Prince Vladimir Yaroslavich of Novgorod, the Wonderworker (+1052), and his mother Princess Anna%F284%-1
+-1%Venerable Elladius, Onisimus, and Ammon, hermits of the Caves of Kiev%F284%-1
+-1%Saint Stephen Stiljianovich of Serbia (+1515)%F284%-1
+-1%Holy Hierarchs Peter, Alexis, Jonah, Philip, Hermogenes, and Tikhon, Wonderworkers of Moscow%F285%-1
+-1%Martyr Charitina of Amisus (+304)%F285%-1
+-1%Venerable Damian the Presbyter and Healer (+1071), Jeremiah (+c.1070) and Matthew (+c.1083) the Clairvoyants of the Caves of Kiev%F285%-1
+-1%Martyr Mamelta of Persia (+c.344)%F285%-1
+-1%Hieromartyr Dionysios, Bishop of Alexandria (264-265)%F285%-1
+-1%Venerable Cosmas the Abbot%F285%-1
+-1%Venerable Eudocimus the Vatopedi%F285%-1
+-1%Venerable Charitina, Princess of Lithuania (+1281)%F285%-1
+-1%Venerable Gregory of Chandzoe in Georgia (+861);%F285%-1
+-1%Holy and Glorious Apostle Thomas (1st C)%F286%-1
+-1%Martyrs Tertiana and Migdonia%F286%-1
+-1%Martyr Erotieida%F286%-1
+-1%Monkmartyr Macarios of St Annes Skete on Mt Athos (+1590)%F286%-1
+-1%Icon of the Mother of God 'O All-Hymned Mother'%F286%-1
+-1%Martyrs Sergius and Baccus in Syria (290-303)%F287%-1
+-1%Martyrs Julian the Presbyter and Caesarius the Deacon, at Terracina (1st C)%F287%-1
+-1%Martyr Polychronios the Presbyter (4th C)%F287%-1
+-1%Martyr Pelagia%F287%-1
+-1%St Mark, Pope of Rome%F287%-1
+-1%St Eumenius, Bishop of Alexandria%F287%-1
+-1%Venerable Mark of Egypt%F287%-1
+-1%Venerable Sergius of Nurom%F287%-1
+-1%Venerable Sergius the Obedient of the Caves of Kiev (13th C)%F287%-1
+-1%Finding of the relics of Venerable Martinian, Abbot of Belozersk (1514)%F287%-1
+-1%Saint Jonah, Wonderworker of Hankow and Manchuria (+1925)%F287%-1
+-1%Venerable Pelagia the Penitent (+ 457)%F288%-1
+-1%Venerable Pelagia of Antioch%F288%-1
+-1%Venerable Taisia of Egypt (4th C)%F288%-1
+-1%St James, Patriarch of Antioch%F288%-1
+-1%Venerable Tryphon, Archimandrite of Vyatka (+ 1612)%F288%-1
+-1%Venerable Dositheus, Abbot of Verkhneostrovsk and Pskov (+ 1482)%F288%-1
+-1%Venerable Ignatius the Bulgarian%F288%-1
+-1%MP: New Hieromartyr Dmitry, archbishop of Mozhaisk and those with him (+1937)%F288%-1
+-1%New Hieromartyr Jonah, bishop of Velizh, and those with him (+1937)%F288%-1
+-1%Holy Apostle James the son of Alphaeus (1st C)%F289%-1
+-1%Venerable Andronicus and his wife Athanasia, of Egypt (5th C)%F289%-1
+-1%Righteous Forefather Abraham and his nephew Lot (2000 B.C.)%F289%-1
+-1%Martyrs Juventinus and Maximos at Antioch (361-363)%F289%-1
+-1%Martyr Publia the Confessor, Deaconess of Antioch (4th C)%F289%-1
+-1%Saint Stephen of Serbia%F289%-1
+-1%Saint Dimitrius, Patriarch of Alexandria%F289%-1
+-1%Icon of the Mother of God 'of Korsun'%F289%-1
+-1%Synaxis of the Optina Elders: Leo, Macarius, Ambrose, Moses, Anthony, Hillarion, Isaac (the first), Anatoly (the elder), Joseph, Barsonophius, Anatoly (the younger), Nectarius, Isaac (the second), and Nikon%F290%-1
+-1%Martyrs Eulampius and Eulampia, at Nicomedia, and 200 martyrs with them (+303-311)%F290%-1
+-1%Martyr Theotecnus%F290%-1
+-1%Venerable Theophilus%F290%-1
+-1%Blessed Andrew of Totemsk, the Fool-for-Christ (+1673)%F290%-1
+-1%26 Monkmartyrs of the Zographou Monastery on Mt Athos (+1284): Abbot Thomas and the monks: Barsonuphius, Cyrill, Micah, Simon, Hillarion, James, Job, Cyprian, Sabbas, another James, Martinian, Cosmas, Sergius, Minus, Joasaph, Joannicius, Paul, Anthony, Euthemius, Dometian, Parthenius, and four laymen%F290%-1
+-1%Venerable Bassian of Constantinople%F290%-1
+-1%Synaxis of the 7 saints of Volyn in rememberance of the return of the Pochaev Lavra to the Orthodox in 1831: Venerable Job of Pochaev%F290%-1
+-1%Saints Stephen and Amphilochius, Bishops of Vladimir Volynsky%F290%-1
+-1%Venerable Martyr Macarius, Archimandrite of Obruch%F290%-1
+-1%Blessed Theodore, Prince of Ostrog%F290%-1
+-1%Yaropolk, Prince of Vladimir Volynsky%F290%-1
+-1%and Juliana, Princess of Olshansk%F290%-1
+-1%Saint Ambrose, Elder of Optina, the Wonderworker (+1891)%F290%-1
+-1%New Hieromartyr Theodore, Archbishop of Volokolamsk (+1937) %F290%-1
+-1%Synaxis of the Optina Elders: Leo, Macarius, Ambrose, Moses, Anthony, Hillarion, Isaac (the first), Anatoly (the elder), Joseph, Barsonophius, Anatoly (the younger), Nectarius, Isaac (the second), and Nikon%F291%-1
+-1%Martyrs Eulampius and Eulampia, at Nicomedia, and 200 martyrs with them (+303-311)%F291%-1
+-1%Martyr Theotecnus%F291%-1
+-1%Venerable Theophilus%F291%-1
+-1%Blessed Andrew of Totemsk, the Fool-for-Christ (+1673)%F291%-1
+-1%26 Monkmartyrs of the Zographou Monastery on Mt Athos (+1284): Abbot Thomas and the monks: Barsonuphius, Cyrill, Micah, Simon, Hillarion, James, Job, Cyprian, Sabbas, another James, Martinian, Cosmas, Sergius, Minus, Joasaph, Joannicius, Paul, Anthony, Euthemius, Dometian, Parthenius, and four laymen%F291%-1
+-1%Venerable Bassian of Constantinople%F291%-1
+-1%Synaxis of the 7 saints of Volyn in rememberance of the return of the Pochaev Lavra to the Orthodox in 1831: Venerable Job of Pochaev%F291%-1
+-1%Saints Stephen and Amphilochius, Bishops of Vladimir Volynsky%F291%-1
+-1%Venerable Martyr Macarius, Archimandrite of Obruch%F291%-1
+-1%Blessed Theodore, Prince of Ostrog%F291%-1
+-1%Yaropolk, Prince of Vladimir Volynsky%F291%-1
+-1%and Juliana, Princess of Olshansk%F291%-1
+-1%Saint Ambrose, Elder of Optina, the Wonderworker (+1891)%F291%-1
+-1%New Hieromartyr Theodore, Archbishop of Volokolamsk (+1937) %F291%-1
+-1%Apostle Philip, of the 70, one of the 7 Deacons (1st C)%F292%-1
+-1%Venerable Theophanes, the Confessor and Hymnographer, Bishop of Nicea (+c.850)%F292%-1
+-1%Hierarchs Nectarius, Arsacius, and Sisinius, Patriarchs of Constantinople%F292%-1
+-1%Venerable Theophan of the Caves of Kiev%F292%-1
+-1%Venerable Leo of Optina%F292%-1
+-1%Martyrs Probos, Tarachos and Andronicus, at Tarsus in Cilicia (+304)%F293%-1
+-1%Venerable Cosmas the Hymnographer, Bishop of Majuma (+c.787)%F293%-1
+-1%Translation from Malta to Gatchina of a part of the Life-Creating Cross of the Lord, together with the Philermia Icon of the Mother of God, and the right hand of Saint John the Baptist (1799)%F293%-1
+-1%Martyr Domnica%F293%-1
+-1%St Martin the Merciful, Bishop of Tours%F293%-1
+-1%Venerable Amphilochius, Macarius, Tarasius, and Theosius of Glushitsa%F293%-1
+-1%Hieromartyr Maximillian, Bishop of Norich%F293%-1
+-1%Icon of the Mother of God 'of Jerusalem'%F293%-1
+-1%Martyrs Carpos, Papilus, Agathodoros and Agathonica, at Pergamun (+251)%F294%-1
+-1%Martyr Florentius of Thessaloniki%F294%-1
+-1%Martyr Benjamin the Deacon of Persia (+421-424)%F294%-1
+-1%Venerable Nikita the Confessor of Paphlagonia (+c.838)%F294%-1
+-1%Venerable Agathon, Patriarch of Alexandria%F294%-1
+-1%Venerable Benjamin of the Caves of Kiev (14th C)%F294%-1
+-1%New Martyr Chrisa (Zlata) of Bulgaria%F294%-1
+-1%Return of the Relics of Venerable Sabbas the Sanctified from Italy to the Holy City (1965)%F294%-1
+-1%Iveron Icon of the Mother of God%F294%-1
+-1%Martyrs Nazarius, Gervasius, Protasius and Celsius of Milan (1st C)%F295%-1
+-1%Venerable Paraskeva of Serbia (11th C)%F295%-1
+-1%Venerable Nicholas 'Sviatosha', Prince of Chernigov (+ 1143)%F295%-1
+-1% Hieromartyr Siluan, Presbyter of Gaza (4th C)%F295%-1
+-1%Venerable Euthymios the New, of Thessalonica and Monk of Mt Athos (+ 889)%F296%-1
+-1%Monkmartyr Lucian, Presbyter of Antioch (+ 312)%F296%-1
+-1%Venerable Sabina, Bishop of Katana%F296%-1
+-1%Martyrs Sarbilos and Bebea of Edessa (2nd C)%F296%-1
+-1%Venerable John, Bishop of Suzdal (+ 1373)%F296%-1
+-1%Venerable Dionysius, Archbishop of Suzdal%F296%-1
+-1%Venerable Martyr Lucian of the Caves of Kiev%F296%-1
+-1%Icon of the Mother of God 'Sporitelnitsa Khlebov'%F296%-1
+-1%MP: Holy Hierarch and Confessor Athanasius, bishop of Kovrov (+1962)%F296%-1
+-1%Martyr Longinus the Centurion, who stood at the Cross of the Lord and with him 2 other Martyrs (1st C)%F297%-1
+-1%Venerable Gallus the hermit, Englightener of Switzerland%F297%-1
+-1%Blessed Eupraxia, Princess of Pskov (+ 1243)%F297%-1
+-1%Venerable Longin of Yarensk (+ 1544-1545)%F297%-1
+-1%Venerable Longin, the Gate-Keeper of the Caves of Kiev (13th-14th C)%F297%-1
+-1%Venerable Mallus%F297%-1
+-1%New Hieromartyr Michael Lektorsky (+1920)%F297%-1
+-1%MP: New Hieromartyrs Priest Eugene (+1937) and John (+1942)%F297%-1
+-1%Holy Prophet Hosea (+820 BC)%F298%-1
+-1%Venerable Martyr Andrew of Crete (+767)%F298%-1
+-1%Transfer of the relics of the Righteous Lazarus of the Four-Days to Constantinople (898)%F298%-1
+-1%Martyrs and Unmercenaries Cosmas and Damian in Cilicia (Arabia), with their brothers the Martyrs Leontius, Anthymus and Eutropius (+287 or 303)%F298%-1
+-1%Hieromartyr Hero, Bishop of Antioch%F298%-1
+-1%Venerable Anatoly of Leokhnovo%F298%-1
+-1%MP: New Hieromartyr Alexander, Archbishop of Semipalatinsk (+1937)%F298%-1
+-1%Holy Apostle and Evangelist Luke (1st C)%F299%-1
+-1%Martyr Marinus the Elder at Anazarbus (4th C)%F299%-1
+-1%Venerable Julian the Hermit, of Mesopotamia (4th C)%F299%-1
+-1%Venerable David of Serpukhov (+1520)%F299%-1
+-1%St Mnason, Bishop of Cyprus%F299%-1
+-1%Hieromartyr Asklipiades, Archbishop of Antioch%F299%-1
+-1%St Peter, Metropolitan of Chernigov%F299%-1
+-1%New Hieromartyrs Gabriel and Cormidolus of Egypt%F299%-1
+-1%Holy Righteous John, Wonderworker of Kronstadt%F300%-1
+-1%Prophet Joel (800 BC)%F300%-1
+-1%Martyr Uaros and with him 7 Monkmartyr Teachers (+c.307)%F300%-1
+-1%Transfer of the relics of the Venerable John, Abbot of Rila in Bulgaria (1238)%F300%-1
+-1%Blessed Cleopatra and her son John (+327)%F300%-1
+-1%Hieromartyr Sadok, Bishop of Persia, and with him 128 Martyrs (+342)%F300%-1
+-1%Venerable Leontius the Philosopher%F300%-1
+-1%New Hieromartyr Aleksei Stavrovsky (+1918)%F300%-1
+-1%Glorification of the New Hieromartyrs and Confessors of Russia (1981);%F300%-1
+-1%Greatmartyr Artemius of Antioch (+362)%F301%-1
+-1%Righteous Child Artemius of Verkolsk (+1545)%F301%-1
+-1%Martyrs Ebous and Ebnous%F301%-1
+-1%Venerable Matrona of Chios (+1462)%F301%-1
+-1%Martyr Zebina of Palestine%F301%-1
+-1%Venerable Gerasimos the New, Ascetic of Cephalonia (+1579)%F301%-1
+-1%MP: New Hieromartyr Herman, Bishop of Alatyr and those with him (+1937)%F301%-1
+-1%Venerable Hilarion the Great (+ 371-372)%F302%-1
+-1%Transfer of the relics of Saint Hilarion, Bishop of Meglina in Bulgaria (1206)%F302%-1
+-1%Martyrs Dasius, Gaius, and Zoticus%F302%-1
+-1%Venerable Hilarion, Abbot of Pskovoezersk%F302%-1
+-1%Venerable Theophilus and James, Abbots of Omucha in Pskov (c. 1412)%F302%-1
+-1%Saint Hilarion the Schema-Monk, Metropolitan of Kiev (16th C)%F302%-1
+-1%Venerable Theophilus of Mt Athos%F302%-1
+-1%New Martyr John of the Peloponesis%F302%-1
+-1%MP: New Hieromartyrs Pavlin, Bishop of Mogilev, Artemiy, Archbishop of Ekaterinburg, and those with them (+1937)%F302%-1
+-1%Commemoration of the deliverance of Moscow from the Poles by the Kazan Icon (1612)%F303%-1
+-1%Holy Equal-to-the-Apostles Abercius, Bishop and Wonderworker of Hieropolis (+c.167)%F303%-1
+-1%7 Holy Youths ('7 Sleepers') of Ephesus: Maximilian, Jamblichus, Martinian, Dionysius, Antoninus, Constantine (Hexakustodianos), and John (+c.250)%F303%-1
+-1%Hieromartyr Bishop Alexander%F303%-1
+-1%Martyrs Heraclius the Soldier, Anna, Elisabeth, Theodotia, and Gliceria%F303%-1
+-1%Venerable Lot of Egypt%F303%-1
+-1%Venerable Ruthus%F303%-1
+-1%Hieromartyr Mark, Bishop of Jerusalem%F303%-1
+-1%Venerable Theodore and Paul of Rostov (15th C)%F303%-1
+-1%MP: New Hieromartyr Seraphim, archbishop of Uglich and those with him (+1937)%F303%-1
+-1%Holy Apostle James, the Brother of the Lord (+ca.63)%F304%-1
+-1%Translation of the relics of Blessed James of Borovich, Wonderworker of Novgorod (+ c. 1540)%F304%-1
+-1%Saint Ignatius, Patriarch of Constantinople (+ 877-878)%F304%-1
+-1%Venerable Petronius%F304%-1
+-1%Venerable Nicephorus of Constantinople%F304%-1
+-1%Martyr Arethas and with him 4299 Martyrs (+523)%F305%-1
+-1%Venerable Arethas (12th C), Sisoes (13th C) and Theophilus (12th-13th C), Hermits of the Caves of Kiev%F305%-1
+-1%Martyr Syncletia and her 2 daughters (6th C)%F305%-1
+-1%Venerable Athanasius, Patriarch of Constantinople%F305%-1
+-1%Blessed Elezboi, King of Ethiopia (+c.553-555)%F305%-1
+-1%Hieromartyr Akakios the Presbyter%F305%-1
+-1%Venerable John, Hermit of the Pskov Caves (+1616)%F305%-1
+-1%New Hieromartyr Laurentius, Bishop of Balakhninsk (+1918)%F305%-1
+-1%Icon of the Mother of God 'Joy of All Who Sorrow' (1688)%F305%-1
+-1%Martyrs Marcian and Martyrios, Notaries of Constantinople (+c.355)%F306%-1
+-1%Martyr Anastasius the Fuller, at Salona in Dalmatia (3rd C)%F306%-1
+-1%Saint Tabitha, the widow raised from the dead by the Apostle Peter (1st C)%F306%-1
+-1%Venerable Kallia%F306%-1
+-1%Venerable Martyrius the Deacon and Martyrius the Hermit, of the Caves of Kiev (13th-15th C)%F306%-1
+-1%MP: Venerable Matrona the Confessor (+1963)%F306%-1
+-1%Greatmartyr Demetrius of Thessalonica (+c.306)%F307%-1
+-1%Venerable Athanasius of Medicia%F307%-1
+-1%Commemoration of the Great Earthquake at Constantinople in 740 AD%F307%-1
+-1%Venerable Theophilus of the Caves of Kiev, Archbishop of Novgorod (+1482)%F307%-1
+-1%Venerable Martyr Joasaph%F307%-1
+-1%Saint Dimitri of Basarbov of Bulgaria (+1685)%F307%-1
+-1%Martyr Nestor of Thessalonica (+c.306)%F308%-1
+-1%Venerable Nestor the Chronicler, of the Caves of Kiev (+c.1114)%F308%-1
+-1%Martyrs Capitolina and Eroteida%F308%-1
+-1%Martyr Mark and those with him%F308%-1
+-1%Righteous Procla, wife of Pontius Pilate%F308%-1
+-1%Venerable Nestor, not the Chronicler, of the Caves of Kiev, the Wonderworker (14th C)%F308%-1
+-1%Finding of the relics of Saint Andrew, Prince of Smolensk at Pereslavl (1539)%F308%-1
+-1%Hierarch Kyriacus, Patriarch of Constantinople%F308%-1
+-1%Greatmartyr Paraskeva (Piatnitsa) of Iconium (3rd C)%F309%-1
+-1%Martyrs Terence and Neonilla and their children: Sarbilus, Photus, Theodulus, Hierax, Nitus, Vilus and Eunicia (3rd C)%F309%-1
+-1%Venerable Stephen the Hymnographer of St Sabbas Monastery (4th C)%F309%-1
+-1%Holy Hierarch Arsenius, Archbishop of Serbia%F309%-1
+-1%Martyrs Africanus, Terentius, Maximus, and Pompius%F309%-1
+-1%Hieromartyr Kyriacus, Patriarch of Jerusalem%F309%-1
+-1%Hieromartyr Neophite, Bishop of Urbnia%F309%-1
+-1%Venerable John Chozebite, Bishop of Caesarea%F309%-1
+-1%Martyr Anna%F309%-1
+-1%Venerable Firmilian, Archbishop of Caesarea in Cappadocia%F309%-1
+-1%Venerable Melchion, Presbyter of Antioch%F309%-1
+-1%Righteous Queen Febronia%F309%-1
+-1%Holy Hierarch Dmitri, Metropolitan of Rostov (+ 1709)%F309%-1
+-1%Venerable Job, Abbot and Wonderworker of Pochaev (+ 1651)%F309%-1
+-1%Blessed Theophilus of Kiev, the Fool-for-Christ%F309%-1
+-1%New Hieromartyr Mikhail Lektorsky (+1920)%F309%-1
+-1%Martyr Anastasia the Roman (3rd C)%F310%-1
+-1%Venerable Abraham the Recluse and his niece, Blessed Maria of Mesopotamia (+c.360)%F310%-1
+-1%Venerable Abramios, Wonderworker of Rostov (1073-1077)%F310%-1
+-1%Righteous Anna of Constantinople (+826)%F310%-1
+-1%Martyrs Cladius, Asterius, Neonus, and Theonilla%F310%-1
+-1%Venerable Abraham, Hermit of the Caves of Kiev (12th-13th C)%F310%-1
+-1%Venerable Martyr Athanasius%F310%-1
+-1%Venerable Martyr Timothy of Esphigmenou%F310%-1
+-1%MP: New Hieromartyr Priest Nicholas and those with him (+1918)%F310%-1
+-1% New Hieromartyr Priest John (+1930)%F310%-1
+-1%Hieromartyr Zenobios, Bishop of Aegea, and his sister Zenobia in Cilicia (+ 285)%F311%-1
+-1%Martyr Anastasia of Thessalonika%F311%-1
+-1%Martyr Eutropia of Alexandria (+ c. 250)%F311%-1
+-1%Apostles of the 70: Tertius, Mark, Justus and Artemis (1st C)%F311%-1
+-1%Hieromartyr Marcian, Bishop of Syracuse (2nd C)%F311%-1
+-1%Saint Serapion, Archbishop of Antioch%F311%-1
+-1%Holy Hierarch Kyriacus, Bishop of Corinth%F311%-1
+-1%Holy Hierarch Asterius, Metropolitan of Amassia%F311%-1
+-1%Saint Stephen Miliutin the King of Serbia, his brother Dragutin and their mother Helen%F311%-1
+-1%MP:New Hieromartyr Priest Leonid (+1941)%F311%-1
+-1%Apostles of the 70: Stachias, Amplias, Urban, Narcissos, Apellias and Aristoboulos (1st C)%F312%-1
+-1%Martyr Epimachus of Alexandria (+c.250)%F312%-1
+-1%Venerable Spiridon and Nicodimus, the Prosphora-bakers of the Caves of Kiev (12th C)%F312%-1
+-1% Venerable Anatoly, Hermit of the Caves of Kiev%F312%-1
+-1%Saint Maura of Constantinople (5th C)%F312%-1
+-1%Martyr Nicholas of Chios%F312%-1
+-1%MP: New Hieromaryr Priest John of Tsarskoye Selo and Petrograd (+1917)%F312%-1
+-1%Holy Wonderworkers and Unmercenaries Cosmas and Damian of Mesopotamia, and their mother, Saint Theodotia (3rd C)%F313%-1
+-1%Martyr Hermenegild, Prince of the Goths in Spain (+586)%F313%-1
+-1%Martyrs Caesarius, Dasius, Sabbas, Sabinianus, Agrippas, Hadrian, and Thomas%F313%-1
+-1%Martyrs Cyrenia and Juliana of Clicia (4th C)%F313%-1
+-1%Hieromartyrs John the Bishop and James the Presbyter, of Persia (+c 345)%F313%-1
+-1%Monkmartyrs James and his disciples, the Deacon James and Dionysios, of Podromou on Mt Athos (+c.1520)%F313%-1
+-1%Holy Hierarch Primus (Ephrem), Bishop of Alexandria%F313%-1
+-1%MP: New Hieromartyr Sergey, archbishop of Eletsk (+1937)%F313%-1
+-1%Martyrs Acyndinos, Pegasias, Aphthonios, Elpidiphoros, Anempodistus and 7,000 suffering with them in Persia (c.341-345)%F314%-1
+-1%Venerable Marcian of Cyprus (+388)%F314%-1
+-1%Hieromartyr Victorinus, Bishop of Pataba%F314%-1
+-1%Martyr Eustochiuma the virgin%F314%-1
+-1%Holy Hierarch Theodotus, Bishop of Laodicea%F314%-1
+-1%Holy Hierarch Felix, Pope of Rome%F314%-1
+-1%New Hieromartyr Vasily Luzgin (+1918)%F314%-1
+-1%Martyrs Akepsimos the Bishop, Joseph the Presbyter and Haiphal the Deacon of Persia (4th C)%F315%-1
+-1%Dedication of the Church of the Greatmartyr George in Lydda (4th C)%F315%-1
+-1%Martyrs Atticus, Agapius, Eudoxius, Caterius, Istucarius, Pactobius, and Nictopolionus%F315%-1
+-1%Venerable Snandulia (Yazdundokta) of Persia%F315%-1
+-1%Venerable Akepsimos, Hermit of Cyrrhus in Syria (4th C)%F315%-1
+-1%Venerable Anna Vsevolodovna, Princess of Russia (+1112)%F315%-1
+-1%Venerable Elias of Egypt%F315%-1
+-1%Righteous Achemanidus the Confessor%F315%-1
+-1%Icon of the Mother of God 'Znamenie' of Tsarskoye Syelo%F315%-1
+-1%Venerable Joannicius the Great (+ 846)%F316%-1
+-1%Hieromartyrs Nicander, Bishop of Myra, and Hermes the Presbyter (1st C)%F316%-1
+-1%Blessed Simon of Yurevetsk (+ 1584)%F316%-1
+-1%Venerable Nicander, Abbot of Gorodensk (16th C)%F316%-1
+-1%Venerable Mercurius, the Faster of the Kievan Caves, far caves (14th C)%F316%-1
+-1%Martyrs Galaction and his wife Epistimia, at Emesa (3rd C)%F317%-1
+-1%Repose of Saint Jonah, Archbishop of Novgorod (+1470)%F317%-1
+-1%Apostles of the 70: Patrobus, Hermas, Linus, Gaius, Philologos (1st C)%F317%-1
+-1%Saint Gregory, Archbishop of Alexandria (9th C)%F317%-1
+-1%Martyrs Domninos, Timothy, Theophilos, Theotimos, Dorotheos the Presbyter, Eupsykhios, Carterias, Nearchos and Pamphylos, suffering in Palestine (+307)%F317%-1
+-1%Saint Paul the Confessor, Bishop of Constantinople (+ 350)%F318%-1
+-1%Venerable Varlaam, Abbot of Khutinsk (+ 1192)%F318%-1
+-1%Venerable Luke of Sicily (+ c. 800-820)%F318%-1
+-1%Martyrs Tecusa, Alexandra, Polactia, Claudia, Euphrosene, Athanasia, and Matrona%F318%-1
+-1%Venerable Luke, Steward of the Caves of Kiev (13th C)%F318%-1
+-1%Repose of Saint Herman, Archbishop of Kazan (+ 1567)%F318%-1
+-1%MP: New Hieromartyr Nikita, bishop of Orekhovo-Zuevo, and those with him (+1937)%F318%-1
+-1%Venerable Lazarus the Wonderworker of Mt Galiseia near Ephesus (+ 1053)%F319%-1
+-1%Martyr Hieron and the other 32 Martyrs of Melitene: Hieron, Hysichius, Nicander, Athanasius, Mamantus, Barachius, Callinicus, Theogenes, Nikon, Longinus, Theodore, Valerius, Xantheius, Theodulus, Callimachus, Eugene, Theodochus, Ostrichius, Epiphanius, Maximian, Duceitius, Claudian, Theophilus, Gigantius, Dorotheus, Theodotus, Castrichius, Anikita, Themelius, Eutichius, Hilarion, Diodotus, and Amonitus (3rd C)%F319%-1
+-1%Martyrs Melasippos and Karina and their son Antoninus, and 40 children converted by their martyrdom at Ancyra (+ 363)%F319%-1
+-1%Martyrs Auctus, Tabrion, and Thessalonicia%F319%-1
+-1%Martyr Theodotus of Ancyra%F319%-1
+-1%Venerable Zosima of Vorobozomsk%F319%-1
+-1%Finding of the Relics of Venerable Cyril of New Lake (1649)%F319%-1
+-1%New Hieromartyr Cyril, Metropolitan of Kazan (+1937)%F319%-1
+-1%Synaxis of the Chief of the Heavenly Hosts, Archangel Michael and the Other Heavenly Bodiless Powers: Archangels Gabriel, Raphael, Uriel, Selaphiel, Jehudiel, Barachiel, and Jeremiel%F320%-1
+-1%Venerable Martha, Princess of Pskov (+ 1300)%F320%-1
+-1%Martyrs Onisiphorus and Porphyrius of Ephesus (3rd-4th C)%F321%-1
+-1%Venerable Matrona, Abbess of Constantinople (+c.492)%F321%-1
+-1%Venerable Theoctista of the Isle of Lesbos (+881)%F321%-1
+-1%Martyr Alexander of Thessalonica (4th C)%F321%-1
+-1%Martyr Anthony%F321%-1
+-1%Venerable Eustolia and Sosipatra the Queen%F321%-1
+-1%Venerable John Kolov%F321%-1
+-1%Venerable Simeon Metaphrastes%F321%-1
+-1%Venerable Onisiphor the Confessor, of the Caves of Kiev (+1148)%F321%-1
+-1%Venerable Euphymios and Neophytes, Founders of the Dochiariou Monastery on Mt Athos (10th C)%F321%-1
+-1%Venerable Helladia%F321%-1
+-1%Holy Hierarch Nectarius, Metropolitan of Pentapolis%F321%-1
+-1%Icon of the Mother of God 'Skoroposlushnitsa'%F321%-1
+-1%Apostles of the 70: Herastos, Olympos, Rodion, Sosipater, Quartus and Tercias (1st C)%F322%-1
+-1%Martyr Orestes the Physician of Cappadocia (+304)%F322%-1
+-1%Hieromartyr Milios, Bishop of Persia, and two of his disciples, Euores the Presbyter and Seboes the Deacon (+341)%F322%-1
+-1%Venerable Theostricuts in Symboli%F322%-1
+-1%Martyr Constantine, Prince of Georgia (+842)%F322%-1
+-1%Holy Hierarch Nonnus, Bishop of Illiopolis%F322%-1
+-1%Holy Hierarch Dimitrius, Patriarch of Antioch%F322%-1
+-1%Holy Hierarch Marcian the Confessor, Bishop of Thrace%F322%-1
+-1%Hieromartyr Gennadius%F322%-1
+-1%MP: New Hieromartyr Prokopi, Archbishop of Odessa and those with him (+1937)%F322%-1
+-1%New Hieromartyr Augustine, Archbishop of Kaluga and those with him (+1937)%F322%-1
+-1%Apostles of the 70: Herastos, Olympos, Rodion, Sosipater, Quartus and Tercias (1st C)%F323%-1
+-1%Martyr Orestes the Physician of Cappadocia (+304)%F323%-1
+-1%Hieromartyr Milios, Bishop of Persia, and two of his disciples, Euores the Presbyter and Seboes the Deacon (+341)%F323%-1
+-1%Venerable Theostricuts in Symboli%F323%-1
+-1%Martyr Constantine, Prince of Georgia (+842)%F323%-1
+-1%Holy Hierarch Nonnus, Bishop of Illiopolis%F323%-1
+-1%Holy Hierarch Dimitrius, Patriarch of Antioch%F323%-1
+-1%Holy Hierarch Marcian the Confessor, Bishop of Thrace%F323%-1
+-1%Hieromartyr Gennadius%F323%-1
+-1%MP: New Hieromartyr Prokopi, Archbishop of Odessa and those with him (+1937)%F323%-1
+-1%New Hieromartyr Augustine, Archbishop of Kaluga and those with him (+1937)%F323%-1
+-1%Greatmartyr Menas of Egypt (+ 304)%F324%-1
+-1%Martyr Victor at Damascus (2nd C) along with the Martyr Stephanida of Spain%F324%-1
+-1%Martyr Vincent of Spain (+ 304)%F324%-1
+-1%Venerable Theodore the Confessor, Abbot of the Studion (+ 826)%F324%-1
+-1%Repose of Blessed Maxim of Moscow, the Fool-for-Christ (+ 1434)%F324%-1
+-1%Repose of Saint Stefan Dechani of Serbia (+ c. 1336)%F324%-1
+-1%Venerable Martyrius, Abbot of Zelenetsk (+ 1603)%F324%-1
+-1%The Montreal Iveron Icon of the Mother of God%F324%-1
+-1%Saint John the Merciful, Patriarch of Alexandria (+612)%F325%-1
+-1%Venerable Nilus the Faster, of Sinai (5th C)%F325%-1
+-1%Prophet Ahijah (c +960 BC)%F325%-1
+-1%St Leo Stipiotes, Patriarch of Constantinople%F325%-1
+-1%Venerable Nilus the Myrrhstreaming of Mt Athos (17th C)%F325%-1
+-1%Venerable Martin, Bishop of Frangia%F325%-1
+-1%Blessed John 'the Hairy', at Rostov (+1580)%F325%-1
+-1%New Martyrs Sabbas and Nicholas of Constantinople%F325%-1
+-1%Saint John Chrysostom, Archbishop of Constantinople (+ 407)%F326%-1
+-1%Martyrs Antoninus, Nicephorus, Germanus and Zevina of Caesarea in Palestine (+ 308)%F326%-1
+-1%Martyr Manetha of Caesarea in Palestine (+ c. 307-308)%F326%-1
+-1%Monkmartyr Damascinos of the Lavra on Mt Athos (+ 1681)%F326%-1
+-1%Holy and All-praised Apostle Philip (1st C)%F327%-1
+-1% Saint Gregory Palamas, Archbishop of Thessalonica (+ c. 1360)%F327%-1
+-1%Saint Justinian the Emperor (+ 565) and his wife Saint Theodora (+ 548)%F327%-1
+-1%Saint Philip, Abbot of Irap near Novgorod (+ 1527)%F327%-1
+-1%Martyr Serapion the Elder%F327%-1
+-1%Preparation for the Nativity Fast%F327%-1
+-1%Martyrs and Confessors Gurias, Samonas (+299-306) and Habib (+322) of Edessa%F328%-1
+-1%Martyrs Elpidias, Marcellus and Eustochius, who suffered under Julian the Apostate (4th C)%F328%-1
+-1%Venerable Philip of Rabangsk (+1457)%F328%-1
+-1%Venerable Cention, Bishop of Seleucia%F328%-1
+-1%Icons of the Mother of God: 'Kupyatitskaya', 'Ipatmenskaya', and 'Blagoukhannyi Tsvet'%F328%-1
+-1%Beginning of the Nativity Fast%F328%-1
+-1%Holy Apostle and Evangelist Matthew (+ 60)%F329%-1
+-1%Saint Fulvianus, Prince of Ethiopia, in Holy Baptism Matthew (1st C)%F329%-1
+-1%Holy Hierarch Anianus, Patriarch of Alexandria%F329%-1
+-1%Venerable Sergius of Malopinezh (+1585)%F329%-1
+-1%Saint Gregory the Wonderworker, Bishop of Neo-Caesarea (+c.266-270)%F330%-1
+-1%Venerable Nikon, Abbot of Radonezh, and disciple of Venerable Sergius (+1426)%F330%-1
+-1%Venerable Lazarus the Iconographer, of Constantinople (+c.857)%F330%-1
+-1%Venerable Longinus of Egypt%F330%-1
+-1%St Maximus, Patriarch of Constantinople%F330%-1
+-1%Martyr Gobrones, in Holy Baptism Michael, and 133 Soldiers in Georgia (+914)%F330%-1
+-1%Venerable Gennadius of Vatopedi%F330%-1
+-1%Venerable Paisius (Velichkovsky)%F330%-1
+-1%Martyr Platon of Ancyra (+ 302 or 306)%F331%-1
+-1%Martyr Romanos the Deacon, of Caesarea and the youth Barulas (+ 303)%F331%-1
+-1%Martyrs Zaccheaus the Deacon and Alphaeus the Reader, of Caesarea (+ 303)%F331%-1
+-1%Blessed Magna of Ancyra%F331%-1
+-1%Prophet Obadiah (9th C BC)%F332%-1
+-1%Martyr Varlaam of Caesarea in Cappadocia (+c.304)%F332%-1
+-1%Venerable Varlaam and Joasaph, Prince of India, and King Abennar, his father (4th C)%F332%-1
+-1%Venerable Varlaam, the first Abbot of the Caves of Kiev (+ 1065)%F332%-1
+-1%Martyr Aza of Isauria and with him 150 Soldiers and others (+284-305)%F332%-1
+-1%Martyr Iliodorus of Pomphilia%F332%-1
+-1%Venerable Hilarion of Thessaloniki, the Wonderworker%F332%-1
+-1%Holy Hierarch Philaret, Metropolitan of Moscow and Kolomna (+ 1867)%F332%-1
+-1%MP: New Hieromartyr Porfiri, bishop of Simferopol and those with him (+1937)%F332%-1
+-1%Forefeast of the Entry of the Theotokos%F333%-1
+-1%Venerable Gregory Decapolites (+ 816)%F333%-1
+-1%Saint Proclos, Archbishop of Constantinople (+ 446-447)%F333%-1
+-1%Martyrs Eustathius, Thespisius, and Anatolius%F333%-1
+-1%Martyr Dasius of Dorostorum (+ 284-305)%F333%-1
+-1%Hieromartyr Nerses and Joseph his Disciple, with John, Saverios, Isaac and Hypatios, Bishops of Persia%F333%-1
+-1%Holy Hierarch Isaac, Bishop of Armenia%F333%-1
+-1%St Theoctistus the Confessor%F333%-1
+-1%Icon of the Mother of God 'Olonetskaya'%F333%-1
+-1%MP: New Hieromartyr Makariy, bishop of Ekaterinoslav and those with him (+ 1937)%F333%-1
+-1%Entry into the Temple of our Most Holy Lady Theotokos and Ever-Virgin Mary%F334%-1
+-1%Venerable Columbanus, Abbot of Lacselville%F334%-1
+-1%Right-believing Prince Yaropolk (Peter) of Vladimir-Volynski%F334%-1
+-1%Afterfeast of the Entry of the Theotokos%F335%-1
+-1%Apostles of the 70: Philemon and Archippos, Martyr Apphia, wife of Philemon and Equal-to the-Apostles, and Onesimus, disciple of St Paul (1st C)%F335%-1
+-1%Holy Right-believing Prince Michael of Tver (+ 1318)%F335%-1
+-1%Martyr Cecelia and the Martyrs Valerian, Tiburtius and Maximus at Rome (+c.230)%F335%-1
+-1%Martyrs Procopius and Meningus%F335%-1
+-1%Venerable Agabbas of Syria (5th C)%F335%-1
+-1%Righteous Michael the Soldier, of Bulgaria (+ 866)%F335%-1
+-1%Martyr Agapionus%F335%-1
+-1%Martyrs Stephen and Mark%F335%-1
+-1%Venerable Callistos, Patriarch of Constantinople%F335%-1
+-1%Holy Hierarch Clement, Bishop of Ochrid (Bulgaria)%F335%-1
+-1%Afterfeast of the Entry of the Theotokos%F336%-1
+-1%Saint Amphylochios, Bishop of Iconiun (+394)%F336%-1
+-1%Saint Gregory, Bishop of Agrigentum (6th-7th C)%F336%-1
+-1%Repose of the Great Prince Alexander Nevsky, tonsured Alexei, Wonderworker of All Russia (+1263)%F336%-1
+-1%Holy Hieararch Mitrophan, in monastic-schema Macarius, Bishop of Voronezh (+1703)%F336%-1
+-1%Martyr Sisinias, Bishop of Cyzicus (3rd C)%F336%-1
+-1%Martyr Theodore of Antioch (4th C)%F336%-1
+-1%Venerable Ischirion, Bishop of Egypt%F336%-1
+-1%New Hieormartyr Philip (Raspopov) (+1919)%F336%-1
+-1%MP: New Hieromartyr Boris, Bishop of Ivanovo (+1937)%F336%-1
+-1%Afterfeast of the Entry of the Theotokos%F337%-1
+-1%Greatmartyr Catherine of Alexandria (+305-313)%F337%-1
+-1%Greatmartyr Mercurius [Mercury] of Caesarea in Cappadocia (3rd C)%F337%-1
+-1%Martyr Mercurius of Smolensk (+1239)%F337%-1
+-1%Martyrs Augusta the Empress of Alexandria and Porphyrius the General and 200 Soldiers, martyred with the Greatmartyr Catherine (+ 305-313)%F337%-1
+-1%Venerable Mastridia the Virgin%F337%-1
+-1%Venerable Simon of Solvychegodsk%F337%-1
+-1%Martyr Alexander%F337%-1
+-1%Venerable Gregory of Khrisipetreia%F337%-1
+-1%Venerable Mercurius, the Faster of the Caves of Kiev, Bishop of Smolensk (14th C)%F337%-1
+-1%Venerable Luke, Economist of the Caves of Kiev%F337%-1
+-1%Apodosis of the Entry of the Theotokos%F338%-1
+-1%Hieromartyr Clement, Pope of Rome (+ 101)%F338%-1
+-1%Hieromartyr Peter, Archbishop of Alexandria (+ 311)%F338%-1
+-1%Venerable Peter the Silent, of Galata, Syria (+ c. 429)%F338%-1
+-1%Venerable Paphnutius%F338%-1
+-1%MP: New Hieromartyr Seraphim, Archbishop of Smolensk and those with him (+1937)%F338%-1
+-1%Venerable Alypios the Stylite of Adrianopolis (+640)%F339%-1
+-1%Repose of Saint Innocent, 1st Bishop of Irkutsk (+1731)%F339%-1
+-1%Consecration of the Church of the Greatmartyr George at Kiev (1051-1054)%F339%-1
+-1%Venerable James the Hermit of Syria (+457)%F339%-1
+-1%Holy Hieararch Akakios, Patriarch of Constantinople%F339%-1
+-1%Venerable Nikon the Metanoite%F339%-1
+-1%New Martyr Gregory of Chios%F339%-1
+-1%Greatmartyr James the Persian (+ 421)%F340%-1
+-1%Venerable Palladios (6th-7th C)%F340%-1
+-1%Saint James, Bishop and Wonderworker of Rostov (+ 1392)%F340%-1
+-1%Finding of the relics of Saint Vsevolod, in baptism Gabriel, Prince of Pskov (1192)%F340%-1
+-1%Venerable Roman of Seleucia, the Wonderworker%F340%-1
+-1%Venerable Pinuphrious of Egypt%F340%-1
+-1%Venerable Nathaniel of Nytria%F340%-1
+-1%Venerable Palladius, Bishop Elenopolis%F340%-1
+-1%Venerable Diodore of Yuriegorsk%F340%-1
+-1%Icons of the Mother of God: 'Znamenie' of Novgorod and 'Znamenie', the Kursk-Root%F340%-1
+-1%MP: New Hieromartyr Nicholas, Archbishop of Vladimir, and those with him (+1937)%F340%-1
+-1%Monkmartyr and Confessor Stephen the New of the Mount of St Auxentius (+ 767)%F341%-1
+-1%Martyr Irenarchus and with him 7 Womenmartyrs at Sebaste (+ 303)%F341%-1
+-1%Martyrs: Stephen, Basil, Gregory, another Gregory, John, Andrew, Peter, Anna and many others (+ 767)%F341%-1
+-1%Martyrs Andrew and Peter%F341%-1
+-1%Martyr Anna%F341%-1
+-1%Martyrs Timothy and Theodore, bishops, Peter, John, Sergius, Theodore, and Niciphorus, presbyters, Basil and Thomas, deacons, Hierotheus, Daniel, Chariton, Socrates, Comasius, and Eusebius, monks, and Etimasius the layman%F341%-1
+-1%Blessed Theodore, Archbishop of Rostov (1394)%F341%-1
+-1%MP: New Hieromartyr Metropolitan Seraphim (+1937)%F341%-1
+-1%Martyr Paramon and 370 Martyrs in Bithynia (+250)%F342%-1
+-1%Martyr Philumenos of Ancyra and with him Martyrs Valerian and Phaedrus (+c.274)%F342%-1
+-1%Venerable Akakios of Sinai, mentioned in The Ladder (6th C)%F342%-1
+-1%Hieromartyr Habib, Bishop of Nekressi in Georgia (5th C)%F342%-1
+-1%Venerable Pitirunus of Egypt%F342%-1
+-1%Hieromartyr Dionisius, Bishop of Corinth%F342%-1
+-1%Righteous Taridates the King%F342%-1
+-1%Venerable Nectarius the Obedient, of the Caves of Kiev (12th C)%F342%-1
+-1%Holy and All-priased Apostle Andrew the First-Called (+62)%F343%-1
+-1%Saint Frumentios, Archbishop of Abyssinia (+c.380)%F343%-1
+-1%Prophet Naum (7th C BC)%F344%-1
+-1%Martyr Ananias the Persian%F344%-1
+-1%Righteous Philaret the Merciful of Amnia in Asia Minor (+792)%F344%-1
+-1%Prophet Habakuk (7th C BC)%F345%-1
+-1%Venerable Athanasius, the Hermit of the Caves of Kiev (+ c 1176)%F345%-1
+-1%Venerable Athanasius the other, the Hermit of the Caves of Kiev (13th C)%F345%-1
+-1%Venerable John, Heraclemon, Andrew, and Theophilus of Egypt%F345%-1
+-1%Saint Stephen-Urosh, the King of Serbia (+ 1367)%F345%-1
+-1%Martyr Myropia%F345%-1
+-1%Saint Jesse the Bishop of Tsilkansk in Georgia (6th C)%F345%-1
+-1%Venerable Solomon, Archbishop of Ephesus%F345%-1
+-1%Venerable Cyrill Phileot%F345%-1
+-1%Finding of the Relics of Venerable Joannichius of Black River%F345%-1
+-1%Prophet Zephaniah (+635-605 BC)%F346%-1
+-1%Venerable Sava, Abbot of Zvenigorod (+ 1406)%F346%-1
+-1%Hieromartyr Theodore, Archbishop of Alexandria (+606)%F346%-1
+-1%Venerable John the Silent of St Sabbas Monastery, Bishop of Colonia (+558)%F346%-1
+-1%Venerable Theodulus of Constantinople%F346%-1
+-1%Hieromartyr Gabriel, Bishop of Ganeia (+1659)%F346%-1
+-1%New Martyr Angelos of Chios (+1813)%F346%-1
+-1%Icon of the Mother of God 'Pakhromskaya'%F346%-1
+-1%Greatmartyr Barbara and Martyr Juliana, at Heliopolis in Syria (+c.306)%F347%-1
+-1%Venerable John of Damascus (+ 776)%F347%-1
+-1%Venerable John, Bishop of Polybotum (8th C)%F347%-1
+-1%Hieromartyr Seraphim, Bishop of Phanarium%F347%-1
+-1%Saint Heracles, Patriarch of Alexandria%F347%-1
+-1%Saint Genadiy, Archbishop of Novgorod (+ 1505)%F347%-1
+-1%Venerable Sabbas the Sanctified (+ 532)%F348%-1
+-1%Venerable Carion and Zachariah of Egypt (4th C)%F348%-1
+-1%Martyr Anastasius%F348%-1
+-1%Saint Gurias, Archbishop of Kazan (+ 1563)%F348%-1
+-1%Venerable Nectarius of Bulgaria and his teacher, Philotheus of Mt Athos (14th C)%F348%-1
+-1%Venerable Martyrs of Mt Athos, who suffered at the hands of the latinizers%F348%-1
+-1%Saint Nicholas the Wonderworker, Archbishop of Myra in Lycia (+c.345)%F349%-1
+-1%Saint Maxim, Metropolitan of Kiev (+1305)%F349%-1
+-1%Martyr Nicholas Karamanes (+1657)%F349%-1
+-1%Holy Hierarch Theophilus the Confessor, Bishop of Antioch%F349%-1
+-1%Holy Hierarch Nicholas, Bishop of Patara%F349%-1
+-1%Saint Ambrose, Bishop of Milan (+397)%F350%-1
+-1%Venerable Anthony, Abbot of Siisk (+1556)%F350%-1
+-1%Venerable Nilus of Stolobensk (+1554)%F350%-1
+-1%Venerable Paul the Obedient%F350%-1
+-1%Venerable John, the Faster of Palestine%F350%-1
+-1%Martyr Athenodoros of Mesopotamia (+c.304)%F350%-1
+-1%Venerable John, the Faster of the Caves of Kiev%F350%-1
+-1%Venerable Gregory the Silent of Serbia%F350%-1
+-1%Icon of the Mother of God 'Seligerskaya-Vladimirskaya'%F350%-1
+-1%MP: Saint Ambrose the Confessor, bishop of Kamenets-Podolskiy (+ 1932)%F350%-1
+-1%Venerable Patapios of Thebes (7th C)%F351%-1
+-1%Holy Apostles of the 70: Sosthenes, Apollos, Cephas, Tychicos, Epaphrodites, Caesarius and Onysiphoros (1st C)%F351%-1
+-1%Holy 362 Martyrs: 62 Clergy and 300 Laymen, who suffered in Africa under the Arian Heretics (+477)%F351%-1
+-1%Martyr Anthusa at Rome (5th C)%F351%-1
+-1%Venerable Cyrill, Abbot of Chelmogorsk (+1378)%F351%-1
+-1%Conception by Righteous Anna, of the Most Holy Mother of God%F352%-1
+-1%Holy Prophetess Anna, mother of the Prophet Samuel (1100 BC)%F352%-1
+-1%Venerable Stephen the New-Light of Constantinople (+ 912)%F352%-1
+-1%Saint Sophronios, Archbishop of Cyprus (6th C)%F352%-1
+-1%Icon of the Mother of God, named 'Unexpected Joy'%F352%-1
+-1%Martyrs Minos, Hermogenes, and Eugraphos of Alexandria (+c.313)%F353%-1
+-1%Saint Joasaph, Bishop of Belgorod (+1754)%F353%-1
+-1%Martyr Gemellos of Paphlagonia (+c.361)%F353%-1
+-1%Venerable Thomas of Bithynia (10th C)%F353%-1
+-1%Blessed John, the King of Serbia (+1503) and his parents: Blessed Stephen and Blessed Angelina Brankovich%F353%-1
+-1%Martyrs Minos, Hermogenes, and Eugraphos of Alexandria (+c.313)%F354%-1
+-1%Saint Joasaph, Bishop of Belgorod (+1754)%F354%-1
+-1%Martyr Gemellos of Paphlagonia (+c.361)%F354%-1
+-1%Venerable Thomas of Bithynia (10th C)%F354%-1
+-1%Blessed John, the King of Serbia (+1503) and his parents: Blessed Stephen and Blessed Angelina Brankovich%F354%-1
+-1%Venerable Daniel the 'Stylite' [Pillar-Dweller] of Constantinople (+489-490)%F355%-1
+-1%Venerable Nikon the Lean of the Caves of Kiev (12th C)%F355%-1
+-1%Venerable Luke the 'New Stylite' of Chalcedon [Pillar-Dweller] (+c.970-980)%F355%-1
+-1%Martyrs Acepsius and Aiphalus%F355%-1
+-1%Martyr Mirax of Egypt (7th C)%F355%-1
+-1%Venerable Leontius%F355%-1
+-1%Holy New Martyr Theophan, Bishop of Solikamsk (+1918)%F355%-1
+-1%Saint Spyridon the Wonderworker, Bishop of Tremithus (+ c 348)%F356%-1
+-1%Hieromartyr Alexander, Bishop of Jerusalem (+ 251)%F356%-1
+-1%Martyr Razumnik (Cynecius) of Rome (+ 270-275)%F356%-1
+-1%Venerable Therapont, Abbot of Monza (+ 1597)%F356%-1
+-1%Venerable Herman, Wonderworker of Alaska (+ 1837)%F356%-1
+-1%Hieromartyr Juvenaliy%F356%-1
+-1%Martyr Peter the Aleut%F356%-1
+-1%Martyrs Eustratios, Auxentios, Eugene, Mardarius and Orestes at Sebaste (+c.284-305)%F357%-1
+-1%Virginmartyr Lucy of Syracuse (+304)%F357%-1
+-1%Venerable Arsenios of Latros (8th-10th C)%F357%-1
+-1%Venerable Arisus of Egypt%F357%-1
+-1%Hieromartyr Gabriel, Archbishop of Serbia%F357%-1
+-1%Venerable Mardarius, Abbot of the Caves of Kiev (13th C)%F357%-1
+-1%Martyrs Thyrsos, Leukios, Callinicos of Apollonia (+ 249-251)%F358%-1
+-1%Martyrs Philemon, Apollonios, Arian and Theotychos (+ 286-287)%F358%-1
+-1%MP: New Martyr Priest Nicholas (+1937)%F358%-1
+-1%Hieromartyr Eleutherius, Bishop of Illyria, and his mother Martyr Anthea and Martyr Corivus the Eparch (2nd C)%F359%-1
+-1%Venerable Paul of Latros (+955)%F359%-1
+-1%Saint Stephen the Confessor, Archbishop of Surozh (8th C)%F359%-1
+-1%Martyr Eleuthereius of Constantinople%F359%-1
+-1%Venerable Pardus, the Hermit of Palestine%F359%-1
+-1%Venerable Tryphon of Pechenga and Kolsk (+1583)%F359%-1
+-1%Martyr Bacchus the New%F359%-1
+-1%Venerable Martyr Susanna the Deaconess%F359%-1
+-1%MP: New Hieromartyr Hillarion, Archbishop of Verei (+1929)%F359%-1
+-1%Prophet Haggai (500 BC)%F360%-1
+-1%Martyr Marinus of Rome (3rd C)%F360%-1
+-1%Blessed Empress Theophania (+ c. 893-894)%F360%-1
+-1%Holy Hierarch Memnon, Archbishop of Ephesus%F360%-1
+-1%Holy Hierarch Nicholas Chrisoberges, Patriarch of Constantinople%F360%-1
+-1%Venerable Sophia, in the world Princess Solomonia (+ 1542)%F360%-1
+-1%Holy Hierarch Herenion, Bishop of Gaza%F360%-1
+-1%Holy Hierarch Simeon, Archbishop of Antioch%F360%-1
+-1%MP: New Hieromartyr Arkadiy, Bishop of Bezhetsk (+1937)%F360%-1
+-1%Prophet Daniel and the Three Holy Youths, Ananias, Azarias, and Misael (c 600 BC)%F361%-1
+-1%Venerable Daniel the Confessor, in Schema Stephen, of Spain and Egypt (10th C)%F361%-1
+-1%Holy Hierarch Dionysius, Archbishop of Aegina (+1624)%F361%-1
+-1%Holy Hierarch Tobias, Bishop of Jerusalem%F361%-1
+-1%Martyr Sebastian at Rome with his companions: Martyrs Nicostratus, his wife Zoe, Castorius, Tranquillinus the Presbyter and his sons the Deacons Marcellinus and Mark, Claudius, his son Symphorian and brother Victorinus, Tiburtius and Castulus (+c.287)%F362%-1
+-1%Venerable Florus, Bishop of Amis%F362%-1
+-1%Venerable Michael Singelos, the Confessor%F362%-1
+-1%Venerable Sebastian of Poshekhonsk%F362%-1
+-1%Holy Hierarch Modestus, Archbishop of Jerusalem (+c.633-634)%F362%-1
+-1%Righteous Simeon, Wonderworker of Verkhotursk (1694)%F362%-1
+-1%Martyr Ebbiot%F362%-1
+-1%MP: New Hieromartyr Thaddeus, Archbishop of Tver (+1937)%F362%-1
+-1%Martyr Boniface at Tarsus in Cilicia and the Righteous Aglae (Aglaida) of Rome (+ 290)%F363%-1
+-1%Martyrs Elias, Probos and Ares in Cilicia (+ 308)%F363%-1
+-1%Martyr Polyeuctus of Caesarea in Cappadocia and Timothy%F363%-1
+-1%Saint Boniface the Merciful, Bishop of Florence (6th C)%F363%-1
+-1%Saint Gregory, Bishop of Omiritia (+ c. 552)%F363%-1
+-1%Martyr Tryphon the Presbyter%F363%-1
+-1%Martyr Nemesius%F363%-1
+-1%Righteous Susanna the Chaste%F363%-1
+-1%Venerable Ilya of Murom, Wonderworker of the Caves of Kiev (+ c. 1188)%F363%-1
+-1%Hieromartyr Capiton, Bishop of Cherson%F363%-1
+-1%Forefeast of the Nativity%F364%-1
+-1%Hieromartyr Ignatius the God-Bearer, Bishop of Antioch (+107)%F364%-1
+-1%Saint Philogonius, Bishop of Antioch (+323)%F364%-1
+-1%New Martyr John the Youth (+1654)%F364%-1
+-1%Righteous Esther%F364%-1
+-1%Saint Daniel, Archbishop of Serbia (+1338)%F364%-1
+-1%Venerable Ignatius, Archimandrite of the Caves of Kiev (+1435)%F364%-1
+-1%Righteous John of Kronstadt, Wonderworker of All Russia%F364%-1
+-1%Forefeast of the Nativity%F365%-1
+-1%Virginmartyr Juliana of Nicomedia, and with her 500 Men and 150 Women (+304)%F365%-1
+-1%Repose of Saint Peter, Metropolitan of Moscow and Wonderworker of All Russia (+1326)%F365%-1
+-1%Martyr Themistocles of Myra in Lycia (+251)%F365%-1
+-1%Saint Juliana, Princess of Viazma (+1406)%F365%-1
+-1%Blessed Procopius of Viatka, Fool-for-Christ (+1627)%F365%-1
+-1%MP: New Hieromartyr Nikita, Bishop of Belevsk (+1938)%F365%-1
+-1%Forefeast of the Nativity%F366%-1
+-1%Greatmartyr Anastasia, 'Deliverer from Bonds' and her teacher, Martyr Chyrsogonus, and with them Martyrs Theodota, Evodias, Eutychianus, and others, who suffered under Diocletian (+c.304)%F366%-1
+-1%MP: New Hieromartyrs Priests Dimitry and Theodore (+1938)%F366%-1
+-1%Forefeast of the Nativity%F60%-1
+-1%10 Holy Martyrs of Crete: Theodulus, Satorninus, Euporus, Gelasius, Eunician, Zoticus, Pompius, Agathopus, Basilides and Evarestus (3rd C)%F60%-1
+-1%Holy Hierarch Paul, Bishop of Neo-Caesarea (4th C)%F60%-1
+-1%Venerable Niphon, Bishop of Cyprus (4th C)%F60%-1
+-1%Venerable Niphon%F60%-1
+-1%Saint Naum, Enlightener of the Bulgarians (9th C)%F60%-1
+-1%Saint David of Echmiadzine (Georgia)%F60%-1
+-1%Holy Hierarch Theoctist, Archbishop of Novgorod (+ 1310)%F60%-1
+-1%New Martyrs John and Nicholas, Presbyters (+1918)%F60%-1
+-1%Eve of the Nativity of Christ%F61%-1
+-1%Nun-Martyr Eugenia of Rome, and with her the Martyrs Philip, her father, Protus, Hyacinth, Basilla, and Claudia (+c.262)%F61%-1
+-1%Venerable Nicholas the Monk, of Bulgaria (9th C)%F61%-1
+-1%Venerable Antiochus of Palestine (+c.635)%F61%-1
+-1%Venerable Aphrodisius of Palestine%F61%-1
+-1%New Martyr Akhmed of Constantinople (+1682)%F61%-1
+-1%The Nativity of our Lord God and Savior Jesus Christ%F62%-1
+-1%The Adoration of the Magi: Melchior, Caspar, and Balthasar%F62%-1
+-1%Commemoration of the Deliverance of the Church and Land of Russia from the invasion of the French and 12 other nations (1812);%F62%-1
+-1%Second Day of the Feast of the Nativity of Our Lord%F63%-1
+-1%Synaxis of the Most-Holy Thetokos%F63%-1
+-1%Hieromartyr Euthymius, Bishop of Sardis (+ c. 840)%F63%-1
+-1%Venerable Evaristus of the Studion Monastery (9th C)%F63%-1
+-1%Venerable Constantine of Synada (8th C)%F63%-1
+-1%Holy Hierarch Archelaus, Bishop of Kaskhara%F63%-1
+-1%New Hieromartyr Constantine the Russian, of the Lavra on Mt Athos (+ 1743)%F63%-1
+-1%Venerable Martyr Isaaki II of Optina (+1938)%F63%-1
+-1%Icons of the Mother of God 'Kikkskaya' and 'Helper in labor'%F63%-1
+-1%Third Day of the Feast of the Nativity of Our Lord%F64%-1
+-1%Holy Protomartyr and Archdeacon Stephen (+c.34)%F64%-1
+-1%Venerable Theodore Graptus 'the Branded', Confessor and brother of St Theophanes the Hymnographer (+c.840)%F64%-1
+-1%Saint Theodore, Archbishop of Constantinople (+686)%F64%-1
+-1%Venerable Luke of Triglia%F64%-1
+-1%New Hieromartyr Tikhon, Archbishop of Voronezh and 160 priests killed with him (+1919)%F64%-1
+-1%Afterfeast of the Nativity of Our Lord%F65%-1
+-1%20,000 Martyrs burned at Nicomedia including Glycerios the Presbyter, Zeno, Theophilus the Deacon, Dorotheus, Mardonius, Migdonius the Deacon, Indysos, Gorgonios, Peter, Euthymios, Secundos, Nicostrates, the Women martyrs Agatha, Domna, Theophila, Antonia Antonia and others (+302)%F65%-1
+-1%Apostle of the 70 Nicanor the Deacon (+ 38)%F65%-1
+-1%Venerable Ignatius of Lomsk and Yaroslavl (+1591)%F65%-1
+-1%Venerable Simon the Myrrh-Gusher of Mt Athos and Bulgaria (+1287)%F65%-1
+-1%Venerable Babilas%F65%-1
+-1%New Hieromartyr Nicodemus, Bishop of Belgorod (+1918)%F65%-1
+-1%Afterfeast of the Nativity of Our Lord%F66%-1
+-1%Martyred 14,000 Holy Infants, slain by Herod in Bethlehem%F66%-1
+-1%Venerable Marcellus, Abbot of the Monastery called the 'Unsleeping Ones' (+485)%F66%-1
+-1%Venerable Mark the Grave-Digger, Theophilus and John of the Caves of Kiev (11th-12th C)%F66%-1
+-1%Venerable Thaddeus the Confessor of the Studion Monastery (+818)%F66%-1
+-1%Venerable Benjamin of Nitria%F66%-1
+-1%Venerable Athinadorus, a disciple of Pakhomius the Great%F66%-1
+-1%Holy Hierarch Gregory, Bishop of Nicomedia%F66%-1
+-1%Venerable Libanius%F66%-1
+-1%Prophet Nathan%F66%-1
+-1%Afterfeast of the Nativity of Our Lord%F67%-1
+-1%Virginmartyr Anysia at Thessalonica (+ c. 285-305)%F67%-1
+-1%Martyr Zoticus the Presbyter, Nourisher of Orphans (4th C)%F67%-1
+-1%Martyr Philaret of Nicomedia and those with him (+ 311)%F67%-1
+-1%Venerable Theodora of Caesarea in Cappadocia (8th C)%F67%-1
+-1%Venerable Theodora of Constantinople (10th C)%F67%-1
+-1%Apostle of the 70, Timon the Deacon (1st C)%F67%-1
+-1% Martyrs Paulinus, Birus, Ombrius, Sebirus, Callistratus, Florence, Arian, Anthimius, Ubricius, Isidore, Euculus, Sampson, Studius, and Thespesius%F67%-1
+-1%Holy Hierarch Macarius, Metropolitan of Moscow and All Russia (+ 1563)%F67%-1
+-1%Apodosis of the Nativity of Our Lord%F68%-1
+-1%Venerable Melania the Younger of Rome (+439)%F68%-1
+-1%Venerable Gelasius of Palestine (5th C)%F68%-1
+-1%Venerable Gauis%F68%-1
+-1%Righteous Augarus, King of Edessa%F68%-1
+-1%Holy Hierarch Dositheus the Confessor, Metropolitan of Zagreb%F68%-1

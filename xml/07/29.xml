@@ -1,0 +1,38 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Martyr Callinicus of Gangra in Asia Minor (3rd-4th C);Martyr Seraphima the Virgin (2nd C)" Id="4341" Type="1" />
+<SAINT Name="Martyr Theodotia and her 3 children" Id="2718" Type="0" />
+<SAINT Name="Holy Hierarch Luppus, Bishop of Troy" Id="" Type="0" />
+<SAINT Name="Venerable Martyr Michael" Id="1558" Type="0" />
+<SAINT Name="Venerable Constantine and Cosmas, Abbots of Kosinsk and Staraya Russa (13th C)" Id="4342" Type="0" />
+<SAINT Name="Martyr Eustathios of Mtskheta, Georgia (+ 589)" Id="4346" Type="0" />
+<SAINT Name="Holy Hierarch Constantine, Patriarch of Constantinople" Id="" Type="0" />
+<SAINT Name="Venerable Roman of Kirzha" Id="" Type="0" />
+<SAINT Name="New Martyrs Seraphim and Theognostus (1921)" Id="4747" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Callinique de Gangres" Id="4341" Type="1" />
+<SAINT Name="St Jean le Soldat" Id="" Type="0" />
+<SAINT Name="Ste Théodote et ses 3 enfants" Id="2718" Type="0" />
+<SAINT Name="St Constantin, Patriarche de Constantinople" Id="" Type="0" />
+<SAINT Name="St Théodose le Jeune, Empereur" Id="" Type="0" />
+<SAINT Name="Sts Mamas et Basilisque le Vieillard" Id="" Type="0" />
+<SAINT Name="Sts Benjamin et Bérios" Id="" Type="0" />
+<SAINT Name="St Romain, Higoumène du Monastère de Kirjatch" Id="" Type="0" />
+<SAINT Name="Sts Constantin et Cosmas de Kosin" Id="4342" Type="0" />
+<SAINT Name="St Bogolep de Cherny-Yar, enfant-moine du Grand-Habit" Id="" Type="0" />
+<SAINT Name="St Eusthate de Mtskheta en Géorgie" Id="4346" Type="0" />
+<SAINT Name="St Loup, Evêque de Troyes" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Мч. Каллиника (III-IV)" Id="4341" Type="1"/>
+<SAINT Name="Прмчч. Серафима и Феогноста (1921)" Id="4747" Type="0"/>
+<SAINT Name="Прмч. Анатолия (1930-1935)" Id="" Type="0"/>
+<SAINT Name="Сщмч. Алексия пресвитера, прмч. Пахомия (1938)" Id="4747" Type="0"/>
+<SAINT Name="Мц. Серафимы девы (117-138)" Id="2666" Type="0"/>
+<SAINT Name="Мц. Феодотии и трех чад её (ок. 304)" Id="2718" Type="0"/>
+<SAINT Name="Мч. Евстафия Мцхетского (589)" Id="4346" Type="0"/>
+<SAINT Name="Прмч. Михаила (IX)" Id="1558" Type="0"/>
+<SAINT Name="Прпп. Константина и Космы Косинских, Старорусских (XIII)" Id="4342" Type="0"/>
+</LANGUAGE>
+</DAY>

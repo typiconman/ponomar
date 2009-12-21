@@ -1,0 +1,11 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Theotakion" />
+<TEXT Value="What shall we call thee, O thou who art full of grace? Heaven, for from thee hast dawned forth the Sun of Righteousness. Paradise, for from thee bath blossomed forth the flower of immortality. Virgin, for thou hast remained incorrupt. Pure Mother, for thou hast held in thy holy embrace the Son, the God of all. Do thou entreat Him to save our souls."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Theotakion" />
+<TEXT Value="Comment t’appellerons-nous, ô Pleine de grâce ? Ciel : car tu as fait briller le Soleil de Justice. Paradis : car tu as fait fleurir la Vie immortelle.
+Vierge : car tu l’es demeurée sans faille. Mère : car tu as porté dans tes bras comme enfant le Seigneur de l’univers. Intercède auprès de lui pour le salut de nos âmes."/>
+</LANGUAGE>
+</COMMONPRAYER>

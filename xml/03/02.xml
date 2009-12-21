@@ -1,0 +1,33 @@
+<DAY>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Hieromartyr Theodotus, Bishop of Cyrenia (+ c.320-326)" Id="544" Type="1" />
+<SAINT Name="St. Arsenius the Bishop of Tver (+1409)" Id="546" Type="3" />
+<SAINT Name="Venerable Agathon of Egypt (5th C)" Id="547" Type="0" />
+<SAINT Name="Martyr Troadius of Neocaesarea (3rd C)" Id="" Type="0" />
+<SAINT Name="Virginmartyr Euthalia of Sicily (+257)" Id="545" Type="0" />
+<SAINT Name="440 Martyrs slain by the Lombards in Sicily (+ c. 579)" Id="548" Type="0" />
+<SAINT Name="Venerable Sabbas, Barsonuphius, Sabbatius, and Euphrosinus of Tver" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God 'She who Reigns' (1917)" Id="553" Type="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Hesichius le Palatin" Id="" Type="0" />
+<SAINT Name="St Théodote, Evêque de Kyrenia en Chypre" Id="544" Type="1" />
+<SAINT Name="St Quintus le Thaumaturge" Id="" Type="0" />
+<SAINT Name="Sts Nestor et Tribimios" Id="" Type="0" />
+<SAINT Name="Sts Troadios et ses compagnons" Id="" Type="0" />
+<SAINT Name="Ste Euthalie" Id="545" Type="0" />
+<SAINT Name="St Arsène, Evêque de Tver" Id="546" Type="3" />
+<SAINT Name="Sts Sabas et Barsanuphe de Tver" Id="" Type="0" />
+<SAINT Name="Sts Sabbatius et Euphrosynus de Tver" Id="" Type="0" />
+<SAINT Name="St Chad, Evêque de Lichfield" Id="" Type="0" />
+<SAINT Name="St Nicolas Planas (Papa Planas)" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Сщмч. Феодота, еп. Киринейского (ок 320-326)" Id="544" Type="1"/>
+<SAINT Name="Свт. Арсения, еп. Тверского (1409). Мч. Троадия (ок. 249-251)" Id="546" Type="3"/>
+<SAINT Name="Мц. Евфалии (257)" Id="545" Type="0"/>
+<SAINT Name="Прп. Агафона Египетского (V)" Id="547" Type="0"/>
+<SAINT Name="Мчч. 440 Италийских (ок. 579)" Id="548" Type="0"/>
+<SAINT Name="Иконы Божией матери, именуемой &quot;Державная&quot; (1917)" Id="553" Type="4"/>
+</LANGUAGE>
+</DAY>

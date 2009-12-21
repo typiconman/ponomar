@@ -1,0 +1,36 @@
+<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="matins" Reading="Lk_6:17-23" Pericope="24" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for St Sabbas"/>
+<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Sabbas"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SAINT Name="Venerable Sabbas the Sanctified (+ 532)" Id="1898" Type="5" />
+<SAINT Name="Venerable Carion and Zachariah of Egypt (4th C)" Id="3207" Type="0" />
+<SAINT Name="Martyr Anastasius" Id="4591" Type="0" />
+<SAINT Name="Saint Gurias, Archbishop of Kazan (+ 1563)" Id="553" Type="0" />
+<SAINT Name="Venerable Nectarius of Bulgaria and his teacher, Philotheus of Mt Athos (14th C)" Id="" Type="0" />
+<SAINT Name="Venerable Martyrs of Mt Athos, who suffered at the hands of the latinizers" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SAINT Name="St Sabas le Sanctifié" Id="1898" Type="5" />
+<SAINT Name="St Anastase" Id="4591" Type="0" />
+<SAINT Name="St Gratos" Id="" Type="0" />
+<SAINT Name="St Diogène" Id="" Type="0" />
+<SAINT Name="St Abercius" Id="" Type="0" />
+<SAINT Name="St Nonnos" Id="" Type="0" />
+<SAINT Name="St Cosmas le Protos et ses compagnons" Id="" Type="0" />
+<SAINT Name="St Nectaire de Karyes" Id="" Type="0" />
+<SAINT Name="St Philothée de Karyes" Id="" Type="0" />
+<SAINT Name="St Nizier, Evêque de Trèves" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Прп. Саввы Освященного (532)" Id="1898" Type="5"/>
+<SAINT Name="Сщмч. Илии пресвитера (1932)" Id="" Type="0"/>
+<SAINT Name="Прмч. Геннадия (1941)" Id="" Type="0"/>
+<SAINT Name="Св.  Сергия исп., пресвитера (1950)" Id="" Type="0"/>
+<SAINT Name="Прпп. Кариона монаха и сына его Захарии, египтян (IV)" Id="3207" Type="0"/>
+<SAINT Name="Свт. Гурия, архиеп. Казанского (1563)" Id="553" Type="0"/>
+<SAINT Name="Мч. Анастасия" Id="4591" Type="0"/>
+</LANGUAGE>
+</DAY>
