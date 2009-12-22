@@ -1,0 +1,17 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Blessed is the Lord God. Blessed is the Lord day by day. May God order our salvation.
+Our God is a God of salvation."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Гдⷭь бг҃ъ бл҃гослове́нъ: бл҃гослове́нъ гдⷭь 
+де́нь днѐ, поспѣши́тъ на́мъ бг҃ъ сп҃се́нїй на́шихъ: 
+бг҃ъ на́шъ, бг҃ъ сп҃са́ти."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Κύριος ὁ Θεὸς εὐλογητός, εὐλογητὸς Κύριος ἡμέραν καθ' ἡμέραν· κατευοδώσαι ἡμῖν ὁ Θεὸς τῶν σωτηρίων ἡμῶν, ὁ Θεὸς ἡμῶν, ὁ Θεὸς τοῦ σῴζειν."/>
+</LANGUAGE>
+</COMMONPRAYER>

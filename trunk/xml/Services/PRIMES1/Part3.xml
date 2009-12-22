@@ -1,9 +1,0 @@
-﻿<SERVICES>
-<LANGUAGE Cmd="LS == 0">
-<TEXT Value="Glory to the Father, Son and Holy Spirit. Both now and for ages and ages. Amen." />
-</LANGUAGE>
-<LANGUAGE Cmd="LS == 1">
-<TEXT Value="Gloire au Père et au Fils et au Saint-Esprit,
-maintenant et toujours et aux siècles des siècles. Amen." />
-</LANGUAGE>
-</SERVICES>

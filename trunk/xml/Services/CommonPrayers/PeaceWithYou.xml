@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Peace be to you!"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Ми́ръ ва́мъ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Ειρήνη σοι."/>
+</LANGUAGE>
+</COMMONPRAYER>

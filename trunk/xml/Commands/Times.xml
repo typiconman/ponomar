@@ -1,0 +1,21 @@
+﻿<DATA>
+<!-- ^# refers to the actual number that will be placed by the programme in the appropriate place -->
+	<LANGUAGE Cmd="LS == 0">
+		<TIMES Value="&lt;i&gt;Twice&lt;/i&gt;" Cmd="Times == 2"/>
+		<TIMES Value="&lt;i&gt;Thrice&lt;/i&gt;" Cmd="Times == 3"/>
+		<TIMES Value="&lt;i&gt;^# times&lt;/i&gt;" Cmd="Times &gt;= 4"/>
+	</LANGUAGE>
+	<LANGUAGE Cmd="LS == 1">
+		<TIMES Value="&lt;i&gt;^# fois&lt;/i&gt;"/>
+	</LANGUAGE>
+	<LANGUAGE Cmd="LS == 3">
+		<!-- This is an example for a more complicated language such as Russian -->
+		<TIMES Value="&lt;i&gt;дважды&lt;/i&gt;" Cmd="Times == 2"/>
+		<TIMES Value="&lt;i&gt;трижды&lt;/i&gt;" Cmd="Times == 3"/> 
+		<TIMES Value="&lt;i&gt;четырежды&lt;/i&gt;" Cmd="Times == 4"/>
+		<TIMES Value="&lt;i&gt;^# раза&lt;/i&gt;" Cmd="(((Times - 10*(Times % 10) == 2) || (Times - 10*(Times % 10) == 3) || (Times - 10*(Times % 10) == 4)) || ((Times - 100*(Times % 100) == 2) || (Times - 100*(Times % 100) == 3) || (Times - 100*(Times % 100) == 4)) || ((Times - 1000*(Times % 1000) == 2) || (Times - 1000*(Times % 1000) == 3) || (Times - 1000*(Times % 1000) == 4))) &amp;&amp; Times &gt; 4"/>
+			<!-- If the last digit of a number ends in 2, 3, or 4 then a special dual-like form must be used in Russian. This will work for numbers up to 9,999. -->
+		<TIMES Value="&lt;i&gt;^# раз&lt;/i&gt;" Cmd="!(((Times - 10*(Times % 10) == 2) || (Times - 10*(Times % 10) == 3) || (Times - 10*(Times % 10) == 4)) || ((Times - 100*(Times % 100) == 2) || (Times - 100*(Times % 100) == 3) || (Times - 100*(Times % 100) == 4)) || ((Times - 1000*(Times % 1000) == 2) || (Times - 1000*(Times % 1000) == 3) || (Times - 1000*(Times % 1000) == 4)))"/>
+			<!-- Otherwise the normal plural forms are used -->
+	</LANGUAGE>		
+</DATA>

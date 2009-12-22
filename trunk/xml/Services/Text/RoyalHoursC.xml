@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="These are special hours that are served on the eve (Paramony) of the Nativity and Theophany and on Great Friday."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Ce ci sont des heures spéciaux qui sont servies le jour de la parmonie (vielle) de la Nativité et la Théophanie et la Sainte Vendredi."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value=" "/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value=" "/>
+</LANGUAGE>
+</COMMONPRAYER>

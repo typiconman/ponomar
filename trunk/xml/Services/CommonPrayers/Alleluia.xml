@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Alleluia."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Alléluia."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="А҆ллилꙋ́їѧ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Ἀλληλούϊα."/>
+</LANGUAGE>
+</COMMONPRAYER>

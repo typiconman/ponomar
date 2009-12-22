@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="The Ninth Hour (None)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="La neuvième heure (None)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Ча́съ девѧ́тый"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="ΩΡΑ  ΕΝΑΤΗ"/>
+</LANGUAGE>
+</COMMONPRAYER>

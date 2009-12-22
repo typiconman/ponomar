@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Wisdom. Let us be attentive and listen to the Holy Gospel"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Премꙋ́дрость, простѝ, ѹ҆слы́шимъ ст҃агѡ єѵⷢлїа."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Σοφία. Ὀρθοί, ἀκούσωμεν τοῦ ἁγίου Εὐαγγελίου."/>
+</LANGUAGE>
+</COMMONPRAYER>

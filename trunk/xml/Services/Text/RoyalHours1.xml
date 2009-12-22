@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Ponomar: Royal Hours"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Ponomar : Les Heures Royales"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Пономарь: Часѡ́въ ца́рскихъ"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="ΠΟΝΟΜΑΡΙΟΣ: ΑΚΟΛΟΥΘΙΑ ΤΩΝ ΜΕΓΑΛΩΝ ΩΡΩΝ"/>
+</LANGUAGE>
+</COMMONPRAYER>

@@ -1,0 +1,19 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Beatitudes"/>
+<TEXT Value="In Thy kingdom, remember us, O Lord, when thou comest into Thy kingdom."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Béatitudes"/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="бл҃же́нни"/>
+<TEXT Value="Во црⷭтвїи твое́мъ помѧнѝ на́съ, гдⷭи, є҆гда̀ 
+прїи́деши во црⷭтвїи твое́мъ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value="Μακάριοι"/>
+<TEXT Value="Ἐν τῇ Βασιλείᾳ σου μνήσθητι ἡμῶν, Κύριε, ὅταν ἔλθῃς ἐν τῇ Βασιλείᾳ σου."/>
+</LANGUAGE>
+</COMMONPRAYER>

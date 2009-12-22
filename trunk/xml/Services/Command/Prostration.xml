@@ -1,0 +1,11 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Prostration"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Prostration"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS ==3">
+<TEXT Value="вели́кїй покло́нъ"/>
+</LANGUAGE>
+</COMMONPRAYER>

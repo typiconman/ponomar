@@ -1,0 +1,19 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value=""/>
+<TEXT Value="Blessed be the Name of the Lord, henceforth and for evermore."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value=""/>
+<TEXT Value="Бꙋ́ди и҆́мѧ гдⷭне бл҃гослове́но ѿ ны́нѣ и҆ до 
+вѣ́ка."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Εἴη τὸ ὄνομα Κυρίου εὐλογημένον από του νῦν και έως του αιώνος. "/>
+</LANGUAGE>
+</COMMONPRAYER>

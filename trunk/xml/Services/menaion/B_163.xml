@@ -1,0 +1,47 @@
+﻿<!-- service file for SID B_163 (The Forefeast of Theophany) (The days before Theophany) -->
+<?xml-stylesheet type="text/xsl" href="Commemeration.xsl" ?>
+
+<COMMEMORATION>
+<LANGUAGE Cmd="LS == 0">
+<NAME>Forefeast of the Theophany</NAME>
+<SERVICE>
+<TROPARION Type="1" Tone="4" Author="Unknown" Header="Tropar of the Forefeast, Tone 4">
+The River Jordan receded of old by the mantle of Elisha when Elijah ascended into heaven; and
+the water was separated to this side and that, the wet element turning into a dry path for Him,
+being truly a symbol of Baptism, by which we cross the path of transient age. Christ appeared in
+the Jordan to sanctify its waters.
+</TROPARION>
+<KONTAKION Type="1" Tone="3" Author="Unknown" Header="Kondak of the Forefeast, Tone 4">
+Today hath the Lord appeared in the courses of the Jordan, crying to John and saying, Be not
+dismayed at My Baptism; for I have verily come to save Adam, the first to be created.
+</KONTAKION>
+</SERVICE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<NAME>Предпра́зднство</NAME>
+<SERVICE>
+	<TROPARION Type="1" Tone="4" Author="Traditional" Header="Тропа́рь предпра́зднства, гла́съ д҃ ">
+Возвраща́шесѧ и҆ногда̀ ї҆ѻрда́нъ рѣка̀ ми́лѡтїю є҆лїссе́евою возне́сшꙋсѧ и҆лїѝ, и҆ раздѣлѧ́хꙋсѧ во́ды сю́дꙋ и҆ сю́дꙋ, и҆ бы́сть є҆мꙋ̀ сꙋ́хъ пꙋ́ть и҆̀же мо́крый, во ѡ҆́бразъ вои́стиннꙋ кр҃ще́нїѧ, и҆́мже мы̀ текꙋ́щее житїѧ̀ прехо́димъ ше́ствїе: хрⷭто́съ ꙗ҆ви́сѧ во ї҆ѻрда́нѣ, ѡ҆ст҃и́ти во́ды.
+	</TROPARION>
+	<KONTAKION Type="1" Tone="4" Header="Конда́къ предпра́зднства, гла́съ д҃ ">
+Во стрꙋѧ́хъ дне́сь ї҆ѻрда́нскихъ бы́въ гдⷭь, ї҆ѡа́ннꙋ вопїе́тъ: не ѹ҆бо́йсѧ кр҃сти́ти мѧ̀, сп҃сти́ бо прїидо́хъ а҆да́ма первозда́ннаго.
+	</KONTAKION>
+</SERVICE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2"><!-- Greek -->
+<SERVICE>
+	<TROPARION Type="1" Tone="4" Author="Traditional" Header="Ἦχος πλ. δ'">
+Ἀπεστρέφετο ποτέ, ὁ Ἰορδάνης ποταμός, τῇ μηλωτῇ Ἐλισαιέ, ἀναληφθέντος Ἠλιού, καὶ διῃρεῖτο τὰ ὕδατα ἔνθεν καὶ ἔνθεν· καὶ γέγονεν αὐτῷ ξηρὰ ὁδὸς ἡ ὑγρά, εἰς τύπον ἀληθῶς τοῦ Βαπτίσματος, δι᾽ οὗ ἡμεῖς τὴν ῥέουσαν, τοῦ βίου διαπερῶμεν διάβασιν, Χριστὸς ἐφάνη, ἐν Ἰορδάνῃ, ἁγιάσαι τὰ ὕδατα.
+	</TROPARION>
+	<KONTAKION Type="1" Tone="3" Header="">
+Ἐν τοῖς ῥείθροις σήμερον τοῦ Ἰορδάνου, γεγονὼς ὁ Κύριος, τῷ Ἰωάννῃ ἐκβοᾷ· Μὴ δειλιάσῃς βαπτίσαι με·σῶσαι γὰρ ἥκω, Ἀδὰμ τὸν πρωτόπλαστον. 
+	</KONTAKION>
+</SERVICE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SERVICE>
+<ROYALHOURS>
+</ROYALHOURS>
+</SERVICE>
+</LANGUAGE>
+</COMMEMORATION>
