@@ -9,4 +9,10 @@ Let the heavens rejoice! Let the earth be glad! For the Lord has shown strength 
 <TEXT Value="
 Que les cieux se réjouissent, que la terre exulte d’allégresse, car le Seigneur a fait merveille par la force de son bras, terrassant la mort par sa propre mort et devenant d’entre les morts le premier-né : du sein de l’Enfer il nous a tous sauvé, accordant au monde la grâce du salut."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Тропа́рь, гла́съ г҃"/>
+<TEXT Value="Да веселѧ́тсѧ нбⷭнаѧ, да ра́дꙋютсѧ земна҄ѧ, ꙗ҆́кѡ сотворѝ держа́вꙋ
+мы́шцею свое́ю гдⷭь, попра̀ сме́ртїю сме́рть, пе́рвенецъ ме́ртвыхъ
+бы́сть, и҆з꙽ чре́ва а҆́дова и҆зба́ви на́съ, и҆ подадѐ мї́рови ве́лїю млⷭть."/>
+</LANGUAGE>
 </TROPARION>

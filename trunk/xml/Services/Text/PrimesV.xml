@@ -5,4 +5,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="La Première Heure (Prime)"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Ча́съ пе́рвый"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="ΩΡΑ ΠΡΩΤΗ"/>
+</LANGUAGE>
 </COMMONPRAYER>

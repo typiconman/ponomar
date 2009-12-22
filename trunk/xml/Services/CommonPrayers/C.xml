@@ -5,4 +5,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Choeur : "/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Хо́ръ: "/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Χορός: "/>
+</LANGUAGE>
 </COMMONPRAYER>

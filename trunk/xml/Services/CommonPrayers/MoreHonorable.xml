@@ -8,4 +8,10 @@ et incomparablement plus glorieuse que les Séraphins,
 qui sans tache enfantas Dieu le Verbe,
 toi véritablement la Mère de Dieu, nous t'exaltons."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Чⷭтнѣ́йшꙋю херꙋвї҄мъ, и҆ сла́внѣйшꙋю без꙽ сравне́нїѧ серафї҄мъ, без꙽ и҆стлѣ́нїѧ бг҃а сло́ва ро́ждшꙋю, сꙋ́щꙋю бцⷣꙋ тѧ̀ велича́емъ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Τὴν Τιμιωτέραν τῶν Χερουβείμ, καὶ ἐνδοξοτέραν ἀσυγκρίτως τῶν Σεραφείμ, τὴν ἀδιαφθόρως Θεὸν Λόγον τεκοῦσαν, τὴν ὄντως Θεοτόκον, σὲ μεγαλύνομεν."/>
+</LANGUAGE>
 </COMMONPRAYER>

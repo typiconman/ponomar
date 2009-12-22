@@ -177,7 +177,7 @@ public JMenu createServicesMenu(ActionListener al)
 	menu11Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, ActionEvent.CTRL_MASK));
 	menu11Item.getAccessibleContext().setAccessibleDescription(ServiceNames[22]);
 	menu11Item.addActionListener(al);
-	menu11Item.setEnabled(false);		//Currently unavailable colour!
+	menu11Item.setEnabled(true);		//Currently unavailable colour!
 	menu2.add(menu11Item);
 	
 	menu12Item = new JMenuItem(ServiceNames[10], KeyEvent.VK_L);

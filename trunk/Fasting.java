@@ -44,7 +44,7 @@ public class Fasting implements DocHandler
 		Information=new OrderedHashtable();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
-		StringOp.dayInfo.put("dRank",5);	//ANY RANK LOWER THAN 4 WILL DO
+		StringOp.dayInfo.put("dRank",1);	//ANY RANK LESS THAN 4 WILL DO
 		try
 		{
 			FileReader frf = new FileReader("Ponomar/xml/Commands/DivineLiturgy.xml");
@@ -54,12 +54,12 @@ public class Fasting implements DocHandler
 			if(doy == 256 || doy == 358 || doy == 5 ||  nday == 40 || nday == 50 || doy == 217)
 			{
 				//THESE ARE CLASS 1 HOLIDAYS
-				StringOp.dayInfo.put("dRank",1);
+				StringOp.dayInfo.put("dRank",6);
 			}
 			if ((doy == 32 && nday != -48) || doy == 250 || doy == 226 || doy == 324 || doy == 83)
 			{
 				//THESE ARE CLASS 2 HOLIDAYS
-				StringOp.dayInfo.put("dRank",2);
+				StringOp.dayInfo.put("dRank",6);
 			}
 			//THIS WILL NOT CATCH ALL THE RANK  3 OR 4 HOLIDAYS, BUT MOST OF THEM WILL BE SO CAUGHT
 			Vector vect = (Vector) Information.get("Class3Transfers");
@@ -70,7 +70,7 @@ public class Fasting implements DocHandler
 					String Command = (String)e2.nextElement();
 					if (StringOp.evalbool(Command))
 					{
-						StringOp.dayInfo.put("dRank",3);	//IT DOES NOT MATTER FOR THE FASTING RULES WHETHER IT IS 3 OR 4 AS THE RANK.
+						StringOp.dayInfo.put("dRank",5);	//IT DOES NOT MATTER FOR THE FASTING RULES WHETHER IT IS 3 OR 4 AS THE RANK.
 					}
 				}
 			}
@@ -81,7 +81,7 @@ public class Fasting implements DocHandler
 			}
 			if(doy == 127 || doy == 128 || doy == 161 || doy == 169 || doy == 185 || doy == 190 || doy == 199 || doy == 200 || doy == 220 || doy == 227 || doy == 239 || doy == 241 || doy == 242 || doy == 267 || doy == 281 || doy == 282 || doy == 290 || doy == 291 || doy == 295 || doy == 300 || doy == 328 || doy == 342 || doy == 345 || doy == 346 || doy == 350 || doy == 23 || doy == 26 || doy == 16 || doy == 19 || doy == 8 || doy == 10 || doy == 11 || doy == 13 || doy == 24)
 			{
-				StringOp.dayInfo.put("dRank",4);
+				StringOp.dayInfo.put("dRank",5);
 			}
 						
 		}

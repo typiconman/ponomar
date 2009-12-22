@@ -228,6 +228,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
         if (name.equals(ServiceNames[9]))
         {
         	//ROYAL HOURS
+            new RoyalHours(today);
         }
         if (name.equals(ServiceNames[10]))
         {

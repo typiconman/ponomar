@@ -1,6 +1,12 @@
-<KONTAKION>
+﻿<KONTAKION>
 <LANGUAGE Cmd="LS == 0">
 <HEADER Value="Lenten Kontakion for Saturday"/>
 <TEXT Value="To Thee, O Lord, the Planter of creation, the world doth offer the God-bearing martyrs as the first-fruits of nature. By their intercessions preserve Thy Church, Thy commonwealth, in profound peace, through the Theotokos, O Greatly-merciful One."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Бг҃оро́диченъ по́ста"/>
+<TEXT Value="Ꙗ҆́кѡ нача́тки є҆стества̀, насади́телю тва́ри, вселе́ннаѧ прино́ситъ тѝ гⷭи, бг҃онѡ́сныѧ мꙋ́ченики: тѣ́хъ моли́твами въ ми́рѣ
+глꙋбо́цѣ цр҃ковь твою̀, жи́тельство твоѐ бцⷣею соблюдѝ,
+многомлⷭтиве."/>
 </LANGUAGE>
 </KONTAKION>

@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="(Tone 7)"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="(гла́съ з҃)"/>
+</LANGUAGE>
 </COMMONPRAYER>

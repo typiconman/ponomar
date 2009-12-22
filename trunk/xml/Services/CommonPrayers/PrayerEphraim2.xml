@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="L’esprit de pureté, d’humilité, de patience et de charité, donne à ton serviteur."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Дꙋ́хъ же цѣломꙋ́дрїѧ, смиренномꙋ́дрїѧ, терпѣ́нїѧ и҆ любвѐ да́рꙋй мѝ, рабꙋ̀ твоемꙋ̀."/>
+</LANGUAGE>
 </COMMONPRAYER>

@@ -9,4 +9,10 @@ When the women disciples of the Lord learned from the angel the joyous message o
 <TEXT Value="
 Recevant de l’Ange la joyeuse nouvelle de la Résurrection de leur Seigneur et détournant l’ancestrale condamnation, les saintes Femmes se firent gloire d’annoncer aux Apôtres : Le Christ a triomphé de la mort, il est ressuscité, notre Dieu, pour donner au monde la grâce du salut."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Тропа́рь, гла́съ д҃"/>
+<TEXT Value="Свѣ́тлꙋю воскрⷭнїѧ про́повѣдь ѿ а҆́гг҃ла ѹ҆вѣ́дѣвшѧ гдⷭни ѹ҆ч҃нцы, и҆
+пра́дѣднее ѡ҆сꙋжде́нїе ѿве́ргшѧ, а҆пⷭлѡмъ хва́лѧщѧсѧ глаго́лахꙋ,
+и҆спрове́ржесѧ сме́рть, воскр҃се хрⷭто́съ бг҃ъ, да́рꙋѧй мї́рови ве́лїю млⷭть."/>
+</LANGUAGE>
 </TROPARION>

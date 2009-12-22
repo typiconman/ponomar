@@ -5,4 +5,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Notre Père qui es aux cieux, que ton nom soit sanctifié, que ton règne arrive, que ta volonté soit faite sur la terre comme au ciel. Donne-nous aujourd'hui notre pain substantiel, remets-nous nos dettes comme nous remettons aussi à nos débiteurs, et ne nous soumets pas à l'épreuve, mais délivre-nous du malin."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Ѻ҆́ч҃е на́шъ, и҆́же є҆сѝ на нб҃сѣ́хъ, да ст҃и́тсѧ и҆́мѧ твое, да прїи́детъ ца́рствїе твоѐ: да бꙋ́детъ во́лѧ твоѧ̀ ꙗ҆́кѡ на нб҃сѝ, и҆ на землѝ. Хлѣ́бъ на́шъ насꙋ́щный да́ждь на́мъ дне́сь, и҆ ѡ҆ста́ви на́мъ до́лги на҄шѧ, ꙗ҆́коже н҆ мы̀ ѡ҆ставлѧ́емъ должникѡ́мъ на́шымъ и҆ не введѝ на́съ во и҆скꙋше́нїе, но и҆скꙋше́нїе, но и҆збавѝ на́съ ѿ лꙋка́вого."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Πάτερ ἡμῶν ὁ ἐν τοῖς οὐρανοῖς, ἁγιασθήτω τὸ ὄνομά σου, ἐλθέτω ἡ βασιλεία σου, γενηθήτω τὸ θέλημά σου, ὡς ἐν οὐρανῷ, καὶ ἐπὶ τῆς γῆς. Τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον δὸς ἡμῖν σήμερον, καὶ ἄφες ἡμῖν τὰ ὀφειλήματα ἡμῶν, ὡς καὶ ἡμεῖς ἀφίεμεν τοῖς ὀφειλέταις ἡμῶν, καὶ μὴ εἰσενέγκῃς ἡμᾶς εἰς πειρασμόν, ἀλλὰ ῥῦσαι ἡμᾶς ἀπὸ τοῦ πονηροῦ."/>
+</LANGUAGE>
 </COMMONPRAYER>

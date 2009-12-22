@@ -1,6 +1,11 @@
-<KONTAKION>
+﻿<KONTAKION>
 <LANGUAGE Cmd="LS == 0">
 <HEADER Value="Lenten Kontakion for Wednesday and Friday"/>
 <TEXT Value="Hasten to our aide, ere we be enslaved to the enemies that blaspheme Thee and threaten us, O Christ our God.  By Thy Cross, destroy them that war against us.  Let them learn the might of the Orthodox Faith; through the intercessions of the Theotokos, O only Lover of mankind."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Бг҃оро́диченъ по́ста"/>
+<TEXT Value="Ско́рѡ предварѝ, пре́жде да́же не порабо́тимсѧ врагѡ́мъ хꙋ́лѧщымъ
+тѧ̀ и҆ претѧ́щымъ на́мъ, хрⷭтѐ бж҃е на́шъ: погꙋбѝ крⷭто́мъ твои́мъ борю́щыѧ на́съ, да ѹ҆разꙋмѣ́ютъ, ка́кѡ мо́жетъ правосла́вныхъ вѣ́ра мл҃твами бцⷣы, є҆ди́не чл҃вѣколю́бче."/>
 </LANGUAGE>
 </KONTAKION>

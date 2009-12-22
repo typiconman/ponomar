@@ -5,7 +5,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Inserer le texte desiré en francais"/>
 </LANGUAGE>
-<LANGUAGE Cmd="LS == 3">
+<LANGUAGE Cmd="LS == -3">
 <TEXT Value="Да разумеют языцы, яко имя Тебе Господь."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 3 || LS == 2">
+<TEXT Value="Да разꙋмѣ́ютъ ꙗ҆зы́цы, ꙗ҆́кѡ и҆́мѧ тебѣ̀ гдⷭь."/>
 </LANGUAGE>
 </COMMONPRAYER>

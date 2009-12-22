@@ -1,6 +1,11 @@
-<KONTAKION>
+﻿<KONTAKION>
 <LANGUAGE Cmd="LS == 0">
 <HEADER Value="Kontakion for Saturday (Tone 2)"/>
 <TEXT Value="Give rest, O Christ, to the souls of Your servants who are with the saints, where there is no suffering nor sorrow, and no sighs, but eternal life."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Конда́къ, гла́съ и҃"/>
+<TEXT Value="Со ст҃ы́ми ѹ҆поко́й хрⷭтѐ дꙋ́шы ра҄бъ твои́хъ, и҆дѣ́же нѣ́сть
+болѣ́знь, ни печа́ль, ни воздыха́нїе, но жи́знь безконе́чнаѧ."/>
 </LANGUAGE>
 </KONTAKION>

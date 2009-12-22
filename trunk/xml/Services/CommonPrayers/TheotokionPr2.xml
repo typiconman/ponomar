@@ -5,4 +5,11 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="De l’oppression des hommes délivre-moi, pour que j’observe ta loi."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="И҆зба́ви мѧ̀ ѿ клеветы̀ человѣ́ческїѧ, и҆ сохраню̀
+за́пѡвѣди твоѧ҄."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Λύτρωσαί με ἀπὸ συκοφαντίας ἀνθρώπων, καὶ φυλάξω τὰς ἐντολάς σου."/>
+</LANGUAGE>
 </COMMONPRAYER>

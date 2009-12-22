@@ -5,4 +5,9 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Comment : Il manque une version integrale des heures de Pâques en français."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Ѡ҆ часѣ́хъ свѧты́ѧ па́схи и҆ всеѧ̀ свѣ́тлыѧ седми́цы.
+Подоба́етъ вѣ́дати, ꙗ҆́кѡ ѿ сегѡ̀ днѐ ст҃ы́ѧ и҆ вели́кіѧ недѣ́ли
+па́схи, да́же до суббѡ́ты, часы̀ и҆ повече́рїе си́це пою́тсѧ."/>
+</LANGUAGE>
 </COMMONPRAYER>

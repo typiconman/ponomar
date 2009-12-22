@@ -1,6 +1,12 @@
-<KONTAKION>
+﻿<KONTAKION>
 <LANGUAGE Cmd="LS == 0">
 <HEADER Value="Kontakion for Tuesday (Tone 2)"/>
 <TEXT Value="O Prophet of God and forerunner of grace, we have found your head in the earth as an all-pure rose. Therefore we seek from it healing at all times; for as of old you do not cease to preach repentance to the world."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Конда́къ, гла́съ в҃"/>
+<TEXT Value="Прⷪро́че бж҃їй, и҆ прⷣте́че бл҃года́ти, главꙋ̀ твою̀ ꙗ҆́кѡ ши́покъ
+сщ҃е́ннѣйшїй ѿ землѝ ѡ҆брѣ́тше, и҆сцѣлє́нїѧ всегда̀ прїе́млемъ: и҆́бо
+па́ки ꙗ҆́коже пре́жде въ мї́рѣ проповѣ́дꙋеши покаѧ́нїе."/>
 </LANGUAGE>
 </KONTAKION>

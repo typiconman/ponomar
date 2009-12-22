@@ -5,4 +5,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Gloire à toi, notre Dieu, gloire à toi."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Сла́ва тебѣ̀ бж҃е на́шъ сла́ва тебѣ̀."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Δόξα σοι ὁ Θεός, δόξα σοι."/>
+</LANGUAGE>
 </COMMONPRAYER>

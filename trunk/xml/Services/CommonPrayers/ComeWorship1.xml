@@ -5,4 +5,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Venez, adorons, prosternons-nous devant Dieu, notre Roi."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Прїиди́те поклони́мсѧ цр҃еви на́шемꙋ бг҃ꙋ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Δεῦτε, προσκυνήσωμεν καὶ προσπέσωμεν τῷ βασιλεῖ ἡμῶν Θεῷ."/>
+</LANGUAGE>
 </COMMONPRAYER>

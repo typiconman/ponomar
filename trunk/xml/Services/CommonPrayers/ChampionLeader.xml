@@ -1,4 +1,5 @@
 ﻿<COMMONPRAYER>
+<!-- This is the Kontakion for the Feast of the Annunciation in Tone 8. -->
 <LANGUAGE Cmd="LS == 0">
 <TEXT Value="To Thee, the Champion Leader, we Thy servants dedicate a feast of victory and of thanksgiving as ones rescued out of sufferings, O Theotokos: but as Thou art one with might which is invincible, from all dangers that can be do Thou deliver us, that we may cry to Thee: Rejoice, Thou Bride Unwedded!"/>
 </LANGUAGE>
@@ -6,5 +7,11 @@
 <TEXT Value="Que retentissent nos accents de victoire en ton honneur, invincible Reine, toi qui nous sauves des périls du combat, Mère de Dieu, Vierge souveraine. 
 Vers toi montent nos louanges, nos chants d’action de grâce. De ton bras puissant dresse autour de nous le plus solide des remparts, sauve-nous de tout danger,
 hâte-toi de secourir les fidèles qui te chantent : Réjouis-toi, Épouse inépousée !"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Взбра́нной воево́дѣ побѣди́тєльнаѧ, ꙗ҆́кѡ и҆зба́вльшесѧ ѿ
+ѕлы́хъ, бл҃года́рствєннаѧ восписꙋ́емъ тѝ рабѝ твоѝ бцⷣе: но ꙗ҆́кѡ
+и҆мꙋ́щаѧ держа́вꙋ непобѣди́мꙋю, ѿ всѧ́кихъ на́съ бѣ́дъ свободѝ, да
+зове́мъ тѝ: ра́дꙋйсѧ невѣ́сто неневѣ́стнаѧ."/>
 </LANGUAGE>
 </COMMONPRAYER>

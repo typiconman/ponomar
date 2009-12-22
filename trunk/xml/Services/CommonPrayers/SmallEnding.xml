@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Que le Christ notre vrai Dieu, par les prières de sa Mère toute-pure et immaculée, des saints et glorieux Apôtres, dignes de toute louange, et de tous les Saints, ait pitié de nous et nous sauve, car il est bon et ami des hommes."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Хрⷭто́съ и҆́стинный бг҃ъ на́шъ, моли́твами пречи́тыѧ своеѧ̀ мт҃ре, и҆ всѣ́хъ ст҃ы́хъ, поми́лꙋетъ и҆ спасе́тъ на́съ, ꙗ҆́кѡ бл҃гъ и҆ человѣколю́бецъ."/>
+</LANGUAGE>
 </COMMONPRAYER>

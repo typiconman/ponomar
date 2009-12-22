@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Inserer le texte desiré en francais"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Мл҃твами ст҃ы́хъ ѻ҆ц҃ъ на́шихъ:"/>
+</LANGUAGE>
 </COMMONPRAYER>

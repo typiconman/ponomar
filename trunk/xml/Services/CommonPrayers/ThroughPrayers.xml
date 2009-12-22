@@ -1,5 +1,14 @@
-<COMMONPRAYER>
+﻿<COMMONPRAYER>
 <LANGUAGE Cmd="LS == 0">
 <TEXT Value="Through the prayers of our holy Fathers, Lord Jesus Christ our God, have mercy on us."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Il manque le texte."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Моли́твами ст҃ы́хъ ѻ҆ц҃ъ на́шихъ гдⷭи їи҃се хрⷭте, бж҃е на́шъ, поми́лꙋй на́съ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value=""/>
 </LANGUAGE>
 </COMMONPRAYER>

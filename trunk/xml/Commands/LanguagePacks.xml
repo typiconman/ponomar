@@ -27,7 +27,7 @@ Traducteur : Yuri Shardt
 L’état de completation : 1 (sauf le Bible et la première heure).
 -->   
 
-<LANGUAGE NameLocal="English" NameEnglish="English" Cmd="LS == 0">
+<LANGUAGE NameLocal="English" NameEnglish="English" Cmd="LS == 0 || LS == 2">
 <PHRASE Key="0" Value="Ponomar" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="Sunday/,Monday/,Tuesday/,Wednesday/,Thursday/,Friday/,Saturday" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
