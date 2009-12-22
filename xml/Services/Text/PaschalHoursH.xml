@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Ponomar : Les heures de Pâques"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Часи҄ па́схи"/>
+</LANGUAGE>
 </COMMONPRAYER>

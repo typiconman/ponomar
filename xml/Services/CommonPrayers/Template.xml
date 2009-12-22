@@ -1,8 +1,18 @@
 ﻿<COMMONPRAYER>
 <LANGUAGE Cmd="LS == 0">
+<HEADER Value=""/>
 <TEXT Value="Insert the desired text in English"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
 <TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value=""/>
+<TEXT Value="Church Slavonic Text is placed here."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
 </LANGUAGE>
 </COMMONPRAYER>

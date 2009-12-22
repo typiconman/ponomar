@@ -7,4 +7,10 @@
 <HEADER Value="Kondakion dans le troisième ton"/>
 <TEXT Value="Du tombeau tu es ressuscité en ce jour, ô Dieu de miséricorde, nous arrachant aux portes de la mort ; en ce jour Adam tressaille d'allégresse et Ève danse de joie, et tous ensemble les Patriarches et les Prophètes chantent inlassablement la force et la puissance de ta divinité."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Конда́къ, гла́съ г҃"/>
+<TEXT Value="Воскр҃слъ є҆сѝ дне́сь и҆з꙽ гро́ба ще́дре, и҆ на́съ возве́лъ є҆сѝ ѿ вра́тъ сме́ртныхъ. дне́сь а҆да́мъ ликꙋ́етъ, и҆ ра́дꙋетсѧ є҆́ѵа: вкꙋ́пѣ же и҆
+прbро́цы съ патрїа́рхи воспѣва́ютъ непреста́ннѡ бж҃е́ственнꙋю
+держа́вꙋ вла́сти твоеѧ̀."/>
+</LANGUAGE>
 </KONTAKION>

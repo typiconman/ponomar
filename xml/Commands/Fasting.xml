@@ -20,14 +20,11 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 
 <PERIOD Cmd="nday >= 0 &amp;&amp; nday &lt;= 56">
 	<!-- Fasting Rules between Easter and the First Sunday after Pentecost-->
-	<!-- the Typicon says: Въ средaхъ же и3 пzтцёхъ, всеS пzтьдесsтницы, є3лeй и3 віно2, кромЁ среды2
-преполовeніz, и3 среды2 tдaніz пaсхи: Въ т†  бо    двA дни6 разрэшaемъ на рhбу и3 віно2. Нёцыи же разрэшaютъ и3 въ
-пр0чыz. -->
 	<LANGUAGE>
 		<RULE Case="1111111" Cmd="nday &lt;= 9 || !(dow == 3 || dow == 5)"/>
 		<RULE Case="0000111" Cmd="nday &gt;= 10 &amp;&amp; (dow == 3 || dow == 5)"/>
 		<RULE Case="0011111" Cmd="nday &gt;= 10 &amp;&amp; (dow == 3 || dow == 5) &amp;&amp; dRank &gt;= 4"/>
-		<RULE Case="0011111" Cmd="nday == 25 || nday == 39"/>
+		<RULE Case="0011111" Cmd="nday == 45 || nday == 38"/>
 		<RULE Case="1111111" Cmd="nday >= 49 &amp;&amp; nday &lt;= 56"/>
 	</LANGUAGE>
 	<LANGUAGE Cmd="LS == 1">
@@ -35,21 +32,13 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="nday >= 57 &amp;&amp; doy &lt;= 178">
-	<!-- Apostles' Fast Period. The Typicon says:
-	въ п0стъ сTMhхъ ґпcлъ, и3 хrт0ва ржcтвA, во вт0рникъ, и3 четверт0къ, рhбы не kди1мъ, но є3лeй и3
-віно2 т0чію. Въ понедёльникъ, въ срeду и3 пzт0къ ни є3лeа вкушaемъ, ни вінA, но пости1мсz до f7-гw часA, и3 kди1мъ въ
-ты6z дни6 сухоzдeніе. Въ суббw6ты же и3 недBли, kди1мъ ры6бы.
-Ѓще случи1тсz сTMhй во вт0рникъ, и3ли2 въ четверт0къ и3мёzй славосл0віе, kди1мъ рhбу: Ѓще въ понедёльникъ, под0бнэ. Ѓще
-средA и3 пzт0къ, разрэшaемъ на є3лeй и3 віно2 т0чію: kди1мъ же є3ди1ною днeмъ. Ѓще ли сTMhй и3мёzй бдёніе, въ срeду, и3ли2
-пzт0къ, разрэшaемъ на є3лeй и3 віно2 и3 рhбу.
-	 -->
+	<!-- Apostles' Fast Period. I hope this works -->
 	<LANGUAGE>
 		<RULE Case="0000001" Cmd="(dow == 1 || dow == 3 || dow == 5)"/>
 		<RULE Case="0000111" Cmd="(dow == 2 || dow == 4)"/>
 		<RULE Case="0011111" Cmd="(dow == 6 || dow == 0)"/>
-		<RULE Case="0011111" Cmd="(dow == 1 || dow == 2 || dow == 4) &amp;&amp; dRank &gt;= 4"/>
-		<RULE Case="0000111" Cmd="(dow == 3 || dow == 5) &amp;&amp; dRank == 4"/>
-		<RULE Case="0011111" Cmd="(dow == 3 || dow == 5) &amp;&amp; dRank &gt;= 5"/>
+		<RULE Case="0011111" Cmd="(dow == 2 || dow == 4) &amp;&amp; dRank &gt;= 4"/>
+		<RULE Case="0011111" Cmd="(dow == 1 || dow == 3 || dow == 5) &amp;&amp; dRank &gt;= 4"/>
 	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="(doy >= 179 &amp;&amp; doy &lt;= 211) || (doy >= 226 &amp;&amp; doy &lt;= 317)">
@@ -64,37 +53,28 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 <PERIOD Cmd="doy > 211 &amp;&amp; doy &lt;= 225">
 	<!-- This is for the Dormition Fast -->
 	<LANGUAGE>	
-		<RULE Case="0000001" Cmd="dow == 1 || dow == 3 || dow == 5"/>
-		<RULE Case="0000011" Cmd="dow == 2 || dow == 4"/>
-		<RULE Case="0000111" Cmd="dow == 6 || dow == 0 || dRank &gt;= 4"/>
+		<RULE Case="0000001" Cmd="!(dow == 6 || dow == 0)"/>
+		<RULE Case="0000111" Cmd="(dow == 6 || dow == 0)"/>
+		<RULE Case="0000111" Cmd="!(dow == 6 || dow == 0) &amp;&amp; dRank &gt;= 4"/>
 		<RULE Case="0011111" Cmd="dRank == 6"/>
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="doy >= 318 &amp;&amp; doy &lt;= 350">
-	<!-- This is for the Nativity Fast UNTIL THE LAST WEEK - edited by A.A. on 2009/11/9 N.S. -->
+<PERIOD Cmd="doy >= 318 &amp;&amp; doy &lt;= 357">
+	<!-- This is for the Nativity Fast -->
 	<LANGUAGE>
 		<RULE Case="0000001" Cmd="(dow == 1 || dow == 3 || dow == 5)"/>
 		<RULE Case="0000111" Cmd="(dow == 2 || dow == 4)"/>
 		<RULE Case="0011111" Cmd="(dow == 6 || dow == 0)"/>
-		<RULE Case="0011111" Cmd="(dow == 1 || dow == 2 || dow == 4) &amp;&amp; dRank &gt;= 4"/>
-		<RULE Case="0000111" Cmd="(dow == 3 || dow == 5) &amp;&amp; dRank == 4"/>
-		<RULE Case="0011111" Cmd="(dow == 3 || dow == 5) &amp;&amp; dRank &gt;= 5"/>
+		<RULE Case="0011111" Cmd="(dow == 2 || dow == 4) &amp;&amp; dRank &gt;= 4"/>
+		<RULE Case="0011111" Cmd="(dow == 1 || dow == 3 || dow == 5) &amp;&amp; dRank &gt;= 4"/>
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="doy &gt;= 351 &amp;&amp; doy &lt;= 357">
-	<LANGUAGE>
-		<RULE Case="0000001" Cmd="dow == 1 || dow == 3 || dow == 5"/>
-		<RULE Case="0000011" Cmd="dow == 2 || dow == 4"/>
-		<RULE Case="0000111" Cmd="dow == 6 || dow == 0 || dRank &gt;= 4"/>
-		<RULE Case="0000111" Cmd="doy == 357"/>		
-	</LANGUAGE>
-</PERIOD>
-<PERIOD Cmd="(doy >= 358 &amp;&amp; doy &lt;= 364) || ((doy &lt;= 100 || doy == 366) &amp;&amp; nday &lt;= -56)">
+<PERIOD Cmd="(doy >= 358 &amp;&amp; doy &lt;= 364) || ((doy >= 0 || doy == 366) &amp;&amp; nday &lt;= -56)">
 	<!-- This takes care of the second Meat Period from Christmas to Meatfare Sunday (Second Sunday before the start of Lent) -->
 	<LANGUAGE>
 		<RULE Case="1111111" Cmd="!(dow == 3 || dow == 5)"/>
 		<RULE Case="0000111" Cmd="(dow == 3 || dow == 5)"/>
-		<RULE Case="0011111" Cmd="(dow == 3 || dow == 5) &amp;&amp; dRank &gt;= 4"/>
+		<RULE Case="0011111" Cmd="(dow == 3 || dow == 5) &amp;&amp; dRank &gt;= 4"/>		
 	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="nday >= -48 &amp;&amp; nday &lt;= -9">
@@ -126,7 +106,7 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 		<RULE Case="0000000" Cmd="dow == 5"/>
 		<RULE Case="0000010" Cmd="dow == 5 &amp;&amp; dRank == 6"/>
 		<!-- Holy and Great Saturday -->
-		<RULE Case="0000011" Cmd="nday == -1"/>
+		<RULE Case="0000111" Cmd="nday == -1"/>
 		<RULE Case="0000111" Cmd="nday == -1 &amp;&amp; dRank == 6"/>
 	</LANGUAGE>
 </PERIOD>

@@ -9,4 +9,10 @@ Thou didst descend from on high, O Merciful One! Thou didst accept the three-day
 <TEXT Value="
 Du ciel Tu descendis, ô Dieu de miséricorde, trois jours dans le tombeau Tu souffris de demeurer pour nous délivrer de nos péchés ; notre Vie et notre Résurrection, Seigneur, gloire à Toi."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Тропа́рь, гла́съ и҃"/>
+<TEXT Value="Съ высоты̀ снизше́лъ є҆сѝ бл҃гоꙋтро́бне, погребе́нїе прїѧ́лъ є҆сѝ
+тридне́вное, да на́съ свободи́ши страсте́й, животѐ и҆ воскрⷭнїе на́ше,
+гдⷭи, сла́ва тебѣ̀."/>
+</LANGUAGE>
 </TROPARION>

@@ -1,8 +1,14 @@
 ﻿<COMMONPRAYER>
 <LANGUAGE Cmd="LS == 0">
-<TEXT Value="O come, let us worship and fall down before Christ, our and God."/>
+<TEXT Value="O come, let us worship and fall down before Christ, our King and God."/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Venez, adorons, prosternons-nous devant le Christ, notre Roi et notre Dieu."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Прїиди́те поклони́мсѧ хрⷭтꙋ цр҃еви на́шемꙋ бг҃ꙋ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Δεῦτε, προσκυνήσωμεν καὶ προσπέσωμεν Χριστῷ, τῷ βασιλεῖ ἡμῶν Θεῷ."/>
 </LANGUAGE>
 </COMMONPRAYER>

@@ -7,4 +7,11 @@
 <HEADER Value="Kondakion dans le siesième ton"/>
 <TEXT Value="De sa main vivifiante le Seigneur Source-de-vie, le Christ notre Dieu, a fait surgir tous les morts des ténèbres de l'enfer, accordant la résurrection à tout le genre humain ; il est vraiment notre Sauveur, notre vie, notre résurrection et le Dieu de l'univers."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Конда́къ, гла́съ ѕ҃"/>
+<TEXT Value="Живонача́льною дла́нїю, ѹ҆ме́ршыѧ ѿ мра́чныхъ ѹ҆до́лїй,
+жизнода́вецъ воскр҃си́въ всѣ́хъ хрⷭто́съ бг҃ъ, воскрⷭнїе подадѐ
+человѣ́ческомꙋ ро́дꙋ: є҆́сть бо всѣ́хъ сп҃си́тель, воскрⷭнїе, и҆ живо́тъ
+и҆ бг҃ъ всѣ́хъ."/>
+</LANGUAGE>
 </KONTAKION>

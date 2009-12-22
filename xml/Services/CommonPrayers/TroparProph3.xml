@@ -7,8 +7,13 @@
 <HEADER Value="Troparion de la prophétie"/>
 <TEXT Value="Inserer le texte desiré en francais"/>
 </LANGUAGE>
-<LANGUAGE Cmd="LS == 3">
+<LANGUAGE Cmd="LS == -3">
 <HEADER Value="тропарь пророчества"/>
 <TEXT Value="Заушенный за род человеческий, и не прогневавыйся свободи от истления живот наш Господи, и спаси нас"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Тропа́рь прⷪро́чества"/>
+<TEXT Value="Заꙋше́нный за ро́дъ человѣ́ческїй, и҆ не прогнѣ́вавыйсѧ свободѝ
+ѿ и҆стлѣ́нїѧ живо́тъ на́шъ гдⷭи, и҆ сп҃сѝ на́съ."/>
 </LANGUAGE>
 </COMMONPRAYER>

@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Gloire au Père et au Fils et au Saint-Esprit."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Сла́ва ѻ҆ц҃ꙋ̀ и҆ сн҃ꙋ̀ и҆ ст҃о́мꙋ дх҃ꙋ."/>
+</LANGUAGE>
 </COMMONPRAYER>

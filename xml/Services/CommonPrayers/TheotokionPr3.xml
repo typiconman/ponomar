@@ -5,4 +5,11 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Illumine ton serviteur à la clarté de ton visage et apprends-moi tes volontés."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Лицѐ твоѐ просвѣтѝ на раба̀ твоего̀, и҆ наꙋчи́ мѧ
+ѡ҆правда́нїємъ твои҄мъ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Τὸ πρόσωπόν σου ἐπίφανον ἐπὶ τὸν δοῦλόν σου, καὶ δίδαξόν με τὰ δικαιώματά σου."/>
+</LANGUAGE>
 </COMMONPRAYER>

@@ -5,4 +5,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Saint Dieu, Saint Fort, Saint Immortel, aie pitié de nous."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Ст҃ы́й бж҃е, ст҃ы́й крѣ́пкїй, ст҃ы́й безсме́ртный поми́лꙋй на́съ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Ἅγιος ὁ Θεός, Ἅγιος Ἰσχυρός, Ἅγιος Ἀθάνατος, ἐλέησον ἡμᾶς"/>
+</LANGUAGE>
 </COMMONPRAYER>

@@ -7,4 +7,11 @@
 <HEADER Value="Kondakion dans le premier ton"/>
 <TEXT Value="Ressuscité du tombeau dans la gloire divine, tu as ressuscité le monde avec toi ; la nature humaine te chante comme Dieu, la mort s'évanouit, Adam jubile, Seigneur, et Ève, désormais libérée de ses liens, proclame dans l'allégresse : Ô Christ, c'est toi qui accordes à tous la résurrection."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Конда́къ, гла́съ а҃"/>
+<TEXT Value="Воскрⷭлъ є҆сѝ ꙗ҆́кѡ бг҃ъ и҆з꙽ гро́ба во сла́вѣ, и҆ мї́ръ совоскр҃си́лъ є҆сѝ,
+и҆ є҆стество̀ человѣ́ческое ꙗ҆́кѡ бг҃а воспѣва́етъ тѧ̀, и҆ сме́рть
+и҆счезѐ. а҆да́мъ же ликꙋ́етъ, вл҃ко: є҆́ѵа ны́нѣ ѿ ќзъ и҆збавлѧ́ема,
+ра́дꙋетсѧ зовꙋ́щи: ты̀ є҆сѝ и҆́же всBмъ подаѧ̀ хрⷭтѐ воскрⷭнїе."/>
+</LANGUAGE>
 </KONTAKION>

@@ -9,4 +9,11 @@ By Thy Cross, Thou didst destroy death! To the thief, Thou didst open Paradise! 
 <TEXT Value="
 Par ta Croix, Seigneur, tu as détruit la mort, tu as ouvert au larron le Paradis, tu as changé en joie le deuil des saintes Femmes et tu as donné à tes Apôtres de proclamer que tu es ressuscité, pour donner au monde la grâce du salut."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Тропа́рь, гла́съ з҃"/>
+<TEXT Value="Разрꙋши́лъ є҆сѝ крⷭто́мъ твои́мъ сме́рть, ѿве́рзлъ є҆сѝ разбо́йникꙋ
+ра́й, мѷроно́сицамъ пла́чь преложи́лъ є҆сѝ, и҆ а҆пⷭлѡмъ проповѣ́дати
+повелѣ́лъ є҆сѝ, ꙗ҆́кѡ воскре́слъ є҆сѝ хрⷭтѐ бж҃е, да́рꙋѧй мї́рови ве́лїю
+млⷭть."/>
+</LANGUAGE>
 </TROPARION>

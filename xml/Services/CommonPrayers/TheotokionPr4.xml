@@ -5,4 +5,11 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Que ma bouche s’emplisse de ta louange, Seigneur, pour que je chante ta gloire, tout le jour ta suprême majesté."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Да и҆спо́лнѧтсѧ ѹ҆ста̀ моѧ҄ хвале́нїѧ твоегѡ̀ гⷭи, ꙗ҆́кѡ да воспою̀
+сла́вꙋ твою̀, ве́сь де́нь великолѣ́пїе твоѐ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Πληρωθήτω τὸ στόμα μου αἰνέσεώς σου, Κύριε, ὅπως ὑμνήσω τὴν δόξαν σου, ὅλην τὴν ἡμέραν τὴν μεγαλοπρέπειάν σου."/>
+</LANGUAGE>
 </COMMONPRAYER>

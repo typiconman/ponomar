@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Ô Dieu, purifie-moi, pécheur"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Боже, ѡчисти мѧ грѣшнаго"/>
+</LANGUAGE>
 </COMMONPRAYER>

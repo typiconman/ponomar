@@ -8,4 +8,13 @@
 <TEXT Value="Comment t’appellerons-nous, ô Pleine de grâce ? Ciel : car tu as fait briller le Soleil de Justice. Paradis : car tu as fait fleurir la Vie immortelle.
 Vierge : car tu l’es demeurée sans faille. Mère : car tu as porté dans tes bras comme enfant le Seigneur de l’univers. Intercède auprès de lui pour le salut de nos âmes."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="бг҃оро́диченъ"/>
+<TEXT Value="Что́ тѧ нарече́мъ, ѽ бл҃года́тнаѧ; нб҃о, ꙗ҆́кѡ возсїѧ́ла є҆сѝ сл҃нце
+пра́вды: ра́й, ꙗ҆́кѡ прозѧбла̀ є҆сѝ цвѣ́тъ нетлѣ́нїѧ: дв҃ꙋ, ꙗ҆́кѡ пребыла̀ є҆сѝ нетлѣ́нна: чи́стꙋю м.рь, ꙗ҆́кѡ и҆мѣ́ла є҆сѝ на ст҃ы́хъ твои́хъ ѡ҆б꙽ѧ́тїѧхъ сн҃а, всѣ́хъ бг҃а. того̀ молѝ сп҃сти́сѧ дꙋша́мъ на́шымъ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value="Θεοτοκίον"/>
+<TEXT Value="Τὶ σε καλέσωμεν, ὦ Κεχαριτωμένη; Οὐρανόν, ὅτι ἀνέτειλας τὸν Ἥλιον τῆς δικαιοσύνης· Παράδεισον, ὅτι ἐβλάστησας τὸ ἄνθος τῆς ἀφθαρσίας· Παρθένον, ὅτι ἔμεινας ἄφθορος· ἁγνὴν Μητέρα, ὅτι ἔσχες σαῖς ἁγίαις ἀγκάλαις υἱόν, τὸν πάντων Θεόν. Αὐτὸv ἱκέτευε, σωθῆναι τὰς ψυχὰς ἡμῶν."/>
+</LANGUAGE>
 </COMMONPRAYER>

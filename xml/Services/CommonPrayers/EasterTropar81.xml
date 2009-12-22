@@ -7,4 +7,10 @@
 <HEADER Value="Troparion (Tone 8)"/>
 <TEXT Value="Inserer le texte desiré en francais"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="тропа́рь"/>
+<TEXT Value="Во гро́бѣ пло́тски, во а҆́дѣ же съ дꙋше́ю ꙗ҆́кѡ бг҃ъ, въ раи́ же съ
+разбо́йникомъ и҆ на прⷭто́лѣ бы́лъ є҆сѝ, хрⷭтѐ, со ѻ҆ц҃е́мъ и҆ дх҃омъ,
+всѧ҄ и҆сполнѧ́ѧй неѡпи́санный."/>
+</LANGUAGE>
 </COMMONPRAYER>

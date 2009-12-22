@@ -5,4 +5,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Trinité toute-sainte, aie pitié de nous. Seigneur, agrée l'expiation de nos péchés. Maître, pardonne-nous nos iniquités. Saint, visite-nous et guéris nos infirmités à cause de ton nom."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Прест҃а́ѧ трⷪце поми́лꙋй насъ: гдⷭи, ѻ҆чи́сти грѣхѝ на҄шаѧ: владико простѝ беззакѡ́нїѧ на́ша: ст҃ы́й, посѣтѝ и҆ и҆сцѣлѝ не́мощи на҄ша, и҆́мени твоегѡ̀ ра́ди."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Παναγία Τριάς, ἐλέησον ἡμᾶς. Κύριε, ἱλάσθητι ταῖς  ἁμαρτίαις ἡμῶν, Δέσποτα, συγχώρησον τὰς ἀνομίας ἡμῖν. Ἅγιε, ἐπίσκεψαι καὶ ἴασαι τὰς ἀσθενείας ἡμῶν, ἕνεκεν τοῦ ὀνόματός σου."/>
+</LANGUAGE>
 </COMMONPRAYER>

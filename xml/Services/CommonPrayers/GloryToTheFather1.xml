@@ -5,4 +5,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Gloire au Père et au Fils et au Saint-Esprit, maintenant et toujours et aux siècles des siècles. Amen."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Сла́ва ѻ҆ц҃ꙋ̀ и҆ сн҃ꙋ̀ и҆ ст҃о́мꙋ дх҃ꙋ и҆ нн҃ѣ и҆ при҆снѡ и҆ во вѣ́ки вѣкѡ́въ, а҆ми́нь."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Δόξα Πατρὶ... Καὶ νῦν..."/>
+</LANGUAGE>
 </COMMONPRAYER>

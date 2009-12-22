@@ -17,8 +17,18 @@ Note : The tone should always come last (if appropriate) so that if there are no
 NB: To do finish the regular season and the layout of the First Hour; all the special cases!
 -->
 
-<PERIOD Cmd="nday >= 0 &amp;&amp; nday < 39">
-	<!-- FIRST HOUR Rules between Easter and the Leave-taking of Easter (39th Day after Easter)!-->
+
+<PERIOD Cmd="nday &gt;= 0 &amp;&amp; nday &lt; 7">
+	<!-- FIRST HOUR Rules for Bright Week-->
+	<LANGUAGE>
+		<PRIME Type="Paschal"/>		
+	</LANGUAGE>
+	<LANGUAGE Cmd="LS == 1">
+		<!-- Rules specific to the English implementation can be placed here and similarly for other languages. -->
+	</LANGUAGE>
+</PERIOD>
+<PERIOD Cmd="nday &gt;= 8 &amp;&amp; nday &lt; 39">
+	<!-- FIRST HOUR Rules between Antipascha and the Leave-taking of Easter (39th Day after Easter)!-->
 	<LANGUAGE>
 		<PRIME Type="Easter" Troparion="{P,T}" PickT="1" Kontakion="{P,T}" PickK="1"/>		
 	</LANGUAGE>
@@ -26,8 +36,8 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<!-- Rules specific to the English implementation can be placed here and similarly for other languages. -->
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="nday >= 39 &amp;&amp; nday < 57">
-	<!-- Fasting Rules between Ascension and the First Sunday after Pentecost -->
+<PERIOD Cmd="nday >= 39 &amp;&amp; nday &lt; 57">
+	<!-- FIRST HOUR Rules between Ascension and the First Sunday after Pentecost -->
 	<LANGUAGE>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="nday == 40 || nday == 50"/>
 		<PRIME Type="Normal" Troparion="{M_A,T}" PickT="1" Kontakion="{M_A,T}" PickK="1" Cmd="nday >= 40 &amp;&amp; nday == 49"/>
@@ -38,7 +48,7 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<!-- Rules specific to the English implementation can be placed here and similarly for other languages. -->
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="nday >= 57 &amp;&amp; doy <= 178">
+<PERIOD Cmd="nday &gt;= 57 &amp;&amp; doy &lt;= 178">
 	<!-- Apostles' Fast Period. -->
 	<LANGUAGE>
 		<!-- According to the Typikon, during the Fasting periods, a scaled-back version of the Lenten Services should be served. Almost
@@ -47,24 +57,26 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Lenten" Kontakion="WFL" PickK="-1" Cmd="dow == 3 || dow == 5"/>
 		<PRIME Type="Lenten" Kontakion="SatL" PickK="-1" Cmd="dow == 6"/>
 		<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" Cmd="dow == 0"/>
-		<PRIME Type="Normal" Troparion="{M_1,M_2,T}" PickT="2" Kontakion="{M_1,M_2,T}" PickK="2" Cmd="dow != 0 &amp;&amp; dRank == 7"/>
-		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank <= 6 &amp;&amp; dRank >= 4)"/>
-		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank <= 6 &amp;&amp; dRank >= 4)"/>
-		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 1"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank &lt;= 6 &amp;&amp; dRank &gt;= 4)"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank &lt;= 6 &amp;&amp; dRank &gt;= 4)"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 8"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; dRank == 8"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>		
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="(doy >= 179 &amp;&amp; doy <= 211) || (doy >= 226 &amp;&amp; doy <= 317) || (doy >= 358 &amp;&amp; doy <= 364) || ((doy >= 0 || doy == 366) &amp;&amp; nday <= -56)">
-	<!-- The Regular Meat period from June 29th to July 31st; August 15th to November 14th; and December 25th to Meatfare Sunday. -->
+<PERIOD Cmd="(doy &gt;= 179 &amp;&amp; doy &lt;= 211) || (doy &gt;= 226 &amp;&amp; doy &lt;= 317) || (doy &gt;= 358 &amp;&amp; doy &lt;= 364) || ((doy &gt;= 0 || doy == 366) &amp;&amp; nday &lt;= -71)">
+	<!-- The Regular Meat period from June 29th to July 31st; August 15th to November 14th; and December 25th to Saturday before the Sunday of the Publican and the Pharisee (71 days before Easter) -->
 	<LANGUAGE>
-		<RULE Case="1111111" Cmd="!(dow == 3 || dow == 5)"/>
-		<RULE Case="0000001" Cmd="(dow == 3 || dow == 5)"/>
-		<RULE Case="0011111" Cmd="(dow == 3 || dow == 5) &amp;&amp; dRank <= 3"/>
-		<RULE Case="0000111" Cmd="(dow == 3 || dow == 5) &amp;&amp; dRank == 4"/>
+		<!-- The base case rules are presented here, any pre- and postfeast rules would need to be subsequently implemented. -->
+		<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1"/>
+		<PRIME Type="Normal" Troparion="{T,M}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 2"/>
+		<PRIME Type="Normal" Troparion="{T,M}" PickT="2" Kontakion="{M}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank &gt;= 3"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow !=0 &amp;&amp; dRank &gt;= 2"/>
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="doy > 211 &amp;&amp; doy <= 225">
+
+<PERIOD Cmd="doy &gt; 211 &amp;&amp; doy &lt;= 225">
 	<!-- This is for the Dormition Fast -->
 	<LANGUAGE>
 		<!-- According to the Typikon, during the Fasting periods, a scaled-back version of the Lenten Services should be served. Almost
@@ -73,15 +85,15 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Lenten" Kontakion="WFL" PickK="-1" Cmd="dow == 3 || dow == 5"/>
 		<PRIME Type="Lenten" Kontakion="SatL" PickK="-1" Cmd="dow == 6"/>
 		<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" Cmd="dow == 0"/>
-		<PRIME Type="Normal" Troparion="{M_1,M_2,T}" PickT="2" Kontakion="{M_1,M_2,T}" PickK="2" Cmd="dow != 0 &amp;&amp; dRank == 7"/>
-		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank <= 6 &amp;&amp; dRank >= 4)"/>
-		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank <= 6 &amp;&amp; dRank >= 4)"/>
-		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 1"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank &lt;= 6 &amp;&amp; dRank &gt;= 4)"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank &lt;= 6 &amp;&amp; dRank &gt;= 4)"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 8"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; dRank == 8"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>		
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="doy >= 318 &amp;&amp; doy <= 357">
+<PERIOD Cmd="doy &gt;= 318 &amp;&amp; doy &lt;= 357">
 	<!-- This is for the Nativity Fast -->
 	<LANGUAGE>
 		<!-- According to the Typikon, during the Fasting periods, a scaled-back version of the Lenten Services should be served. Almost
@@ -90,15 +102,19 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Lenten" Kontakion="WFL" PickK="-1" Cmd="dow == 3 || dow == 5"/>
 		<PRIME Type="Lenten" Kontakion="SatL" PickK="-1" Cmd="dow == 6"/>
 		<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" Cmd="dow == 0"/>
-		<PRIME Type="Normal" Troparion="{M_1,M_2,T}" PickT="2" Kontakion="{M_1,M_2,T}" PickK="2" Cmd="dow != 0 &amp;&amp; dRank == 7"/>
-		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank <= 6 &amp;&amp; dRank >= 4)"/>
-		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank <= 6 &amp;&amp; dRank >= 4)"/>
-		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 1"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank &lt;= 6 &amp;&amp; dRank &gt;= 4)"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank &lt;= 6 &amp;&amp; dRank &gt;= 4)"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 8"/>
+		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; dRank == 8"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>		
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="nday >= -48 &amp;&amp; nday <= -9">
+<PERIOD Cmd="nday &gt;= -70 &amp;&amp; nday &lt; 56">
+	<!-- The preleneten period has different rules for the creation of services especially on Sunday. -->
+	<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" />
+</PERIOD>
+<PERIOD Cmd="nday &gt;= -48 &amp;&amp; nday &lt;= -9">
 	<!-- This is for Lent from Clean Monday to Friday of the Sixth Week of Lent. -->
 	<LANGUAGE>
 		<!-- The Lenten version of Primes is to be followed including appropriate Kathismata -->
@@ -111,7 +127,7 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{P}" PickK="1" Cmd="dow == 0"/>				
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="nday >= -8 &amp;&amp; nday <= -1">
+<PERIOD Cmd="nday &gt;= -8 &amp;&amp; nday &lt;= -1">
 	<!-- This is from Lazarus Sunday to Holy and Great Saturday. -->
 	<LANGUAGE>
 		<PRIME Type="Lenten" Kontakion="{P,T}" PickK="1" Cmd="dow != 0"/>
@@ -122,36 +138,7 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 <PERIOD>
 	<!-- This is for special cases that occur throughout the year that will coded separately. -->
 	<LANGUAGE>
-		 <!-- Exaltation of the Holy and Life-Giving Cross September 14th -->
-		<RULE Case="0000111" Cmd="doy == 256 &amp;&amp; (dow == 6 || dow == 0)"/>
-		<RULE Case="0000111" Cmd="doy == 256 &amp;&amp; !(dow == 6 || dow == 0)"/>
-
-		<!-- Christmas Eve December 24th -->
-		<RULE Case="0011111" Cmd="doy == 357" />
-
-		<!-- Priviledge after Christmas December 25th to January 4th -->
-		<RULE Case="1111111" Cmd="(doy >= 358 &amp;&amp; doy <= 364) || (doy >=0 &amp;&amp; doy < 4)"/>
-
-		<!-- Eve of Theophany Fast January 5th -->
-		<RULE Case="0000111" Cmd="doy == 4 &amp;&amp; !(dow == 6 || dow == 0)"/>
-		<RULE Case="0011111" Cmd="doy == 4 &amp;&amp; (dow == 6 || dow == 0)"/>
-		
-		<!-- Theophany January 6th -->
-		<RULE Case="1111111" Cmd="doy == 5"/>
-
-		<!-- Priviledge of the Publican and Pharisee -->
-		<RULE Case="1111111" Cmd="nday >= -69 &amp;&amp; nday <= -63" />
-
-		<!-- Cheesefare Week -->
-		<RULE Case="0111111" Cmd="nday >= -55 &amp;&amp; nday <= -49" />
-		
-		<!-- Wednesday before and Thursday when the canon of St. Andrew is read nday == -18, -17 Neither of these days are noted on days.pravoslavie.ru -->
-		<RULE Case="0000111" Cmd="(nday == -17 &amp;&amp; doy != 83) || (nday == -18 &amp;&amp; doy != 82)"/>
-		<RULE Case="0000111" Cmd="(nday == -19 &amp;&amp; doy == 81) || (nday == -20 &amp;&amp; doy == 80)"/>
-		
-		<!-- Beheading of St. John the Baptist August 29th-->
-		<RULE Case="0000111" Cmd="doy == 240"/>
-								
+										
 	</LANGUAGE>
 </PERIOD>
-</FASTING>
+</DATA>

@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Maître, bénis."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Бл҃гословѝ, влⷣко."/>
+</LANGUAGE>
 </COMMONPRAYER>

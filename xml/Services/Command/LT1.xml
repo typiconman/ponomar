@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="()"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="(Подо́бенъ: гла́съ ѕ҃)"/>
+</LANGUAGE>
 </COMMONPRAYER>

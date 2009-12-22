@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Oui, Seigneur, mon Roi, accorde-moi de voir mes fautes et de ne pas juger mon frère, car tu es béni dans les siècles des siècles. Amen."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Є҆́й, гдⷭи цр҃ю, да́рꙋй мѝ зрѣ́ти моѧ҄ прегрѣшє́нїѧ и҆ не ѡ҆сꙋжда́ти бра́та моегѡ̀."/>
+</LANGUAGE>
 </COMMONPRAYER>

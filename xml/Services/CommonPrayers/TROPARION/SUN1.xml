@@ -8,4 +8,12 @@
 <TEXT Value="
 Malgré les scellés posés sur le tombeau et les soldats gardant ton corps immaculé, tu es ressuscité le troisième jour, donnant la vie au monde, Dieu sauveur, et du haut des cieux les Anges te chantèrent comme à la Source de la vie : Gloire à ta Résurrection, ô Christ, gloire à ta royauté, gloire à ton oeuvre de salut, Seigneur ami des hommes."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Тропа́рь, гла́съ а҃"/>
+<TEXT Value="Ка́мени запеча́танꙋ ѿ ї҆ꙋдє́й, и҆ во́инѡмъ стрегꙋ́щымъ пречⷭтое
+тѣ́ло твоѐ, воскре́слъ є҆сѝ тридне́вный сп҃се, да́рꙋѧй мї́рови жи́знь.
+сегѡ̀ ра́ди си҄лы нбⷭныѧ вопїѧ́хꙋ тѝ, жизнода́вче: сла́ва воскрⷭнїю
+твоемꙋ̀ хрⷭтѐ, сла́ва црⷭтвїю твоемꙋ̀, сла́ва смотре́нїю твоемꙋ̀, є҆ди́не
+чл҃вѣколю́бче."/>
+</LANGUAGE>
 </TROPARION>

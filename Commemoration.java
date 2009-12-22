@@ -29,7 +29,7 @@ OF THE PROGRAMME.
 
 public class Commemoration implements DocHandler
 {
-	private final static String Location  = "Ponomar/xml/Services/";   // THE LOCATION OF THE BASIC SERVICE RULES
+	private final static String Location  = "Ponomar/xml/Services/menaion/";   // THE LOCATION OF THE BASIC SERVICE RULES
 	private static boolean read=false;
 	private String filename;
 	private int lineNumber;
@@ -41,12 +41,20 @@ public class Commemoration implements DocHandler
 	private OrderedHashtable grammar;
 	private OrderedHashtable variable;
 	private String textR;
+        private boolean readRH=false;
+        private OrderedHashtable RoyalHours;
+        private String elemRH;
+        private OrderedHashtable value;
+        private OrderedHashtable ServiceInfo;
+        private String Location1;
+        private boolean readService=false;
 	
 	protected Commemoration(String FileName)
 	{
 		Information=new OrderedHashtable();
 		readings=new OrderedHashtable();
-		readCommemoration(FileName);				
+                RoyalHours=new OrderedHashtable();
+		readCommemoration(FileName);                
 	}
 	protected Commemoration()
 	{
@@ -103,14 +111,47 @@ public class Commemoration implements DocHandler
 			
 			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
 			{
-				return;
+
+                            return;
 			}
 		}
 		if(elem.equals("LANGUAGE"))
 		{
 			read=true;
+                        //System.out.println(table.get("Cmd").toString());
+                        return;
 		}
-		if (elem.equals("SCRIPTURE") && read)
+                if(elem.equals("SERVICE") && read){
+                    readService=true;
+                    ServiceInfo=new OrderedHashtable();
+                    Location1=new String();
+                    return;
+                }
+                if(readService && read){
+                    Location1+="/"+elem;
+                    //elemRH=elem;
+                    value=new OrderedHashtable();
+                    for(Enumeration e = table.keys(); e.hasMoreElements();)
+			{
+				String type = (String)e.nextElement();
+				value.put(type,table.get(type));
+			}
+                    return;
+                }
+		//if(elem.equals("ROYALHOURS") && read){
+                  //  readRH=true;
+                    //RoyalHours=new OrderedHashtable();
+                //}
+                if(readRH && read){
+                    elemRH=elem;
+                    value=new OrderedHashtable();
+                    for(Enumeration e = table.keys(); e.hasMoreElements();)
+			{
+				String type = (String)e.nextElement();
+				value.put(type,table.get(type));				
+			}                    
+                }
+                if (elem.equals("SCRIPTURE") && read)
 		{
 			String type = (String)table.get("Type");
 			String reading = (String)table.get("Reading");
@@ -175,7 +216,63 @@ public class Commemoration implements DocHandler
 		{
 			read=false;
 		}
-		if(elem.equals("TROPARION") && read)
+                if(elem.equals("ROYALHOURS")){
+                    readRH=false;
+                }
+                if(elem.equals("SERVICE") && read){
+                    readService=false;
+                    //System.out.println(ServiceInfo);
+                    //if(ServiceInfo.containsKey("ROYALHOURS/VERSE")){
+                        //System.out.println(ServiceInfo.get("ROYALHOURS/VERSE"));
+                    //}
+                }
+                if(readService && read){
+                    /*if(elem.equals("VERSE")){
+                        System.out.println(textR);
+                    }*/
+                    //System.out.println("In endElement, I saw the following elements: "+elem);
+                    if (textR!=null){
+                        value.put("text",textR);
+                    }
+                    if(ServiceInfo.containsKey(Location1)){
+                        OrderedHashtable stuff=(OrderedHashtable)ServiceInfo.get(Location1);
+                        stuff.put(value.get("Type"),value);
+                        ServiceInfo.put(Location1,stuff);
+                        /*if(elem.equals("VERSE")){
+                            System.out.println(value.get("Type"));
+                            System.out.println(stuff.get(value.get("Type")));
+                            System.out.println(ServiceInfo.get(Location1));
+                        }*/
+                        //Location1=Location1.substring(0,Location1.lastIndexOf("/"));
+                    }
+                    else{
+                        // CREATE A NEW ORDEREDHASHTABLE TO STORE THE DATA
+                                OrderedHashtable stuff=new OrderedHashtable();
+
+                                if(!(value.get("Type") == null)){
+                                    //There are instances of this info
+                                    stuff.put(value.get("Type"),value);
+
+                                }
+                                else{
+                                    //There are no other instances of this info
+                                    if (elemRH==null || value==null){
+                                        //System.out.println("A null set of values was encountered. Why? At point elemRH = "+elemRH+" and value = "+value+" and location = "+Location1);
+                                        Location1=Location1.substring(0,Location1.lastIndexOf("/"));
+                                        return;
+                                    }
+                                    stuff.put(elemRH,value);
+                                    ServiceInfo.put(Location1,value);
+                                }
+                                ServiceInfo.put(Location1,stuff);
+                    }
+                    value=new OrderedHashtable();
+                    Location1=Location1.substring(0,Location1.lastIndexOf("/"));
+                    
+                     //return;
+                }
+                
+		/*if(elem.equals("TROPARION") && read)
 		{
 			variable.put("Troparion",textR);
 			Information.put("Troparion",variable);
@@ -184,7 +281,7 @@ public class Commemoration implements DocHandler
 		{
 			variable.put("Kontakion",textR);
 			Information.put("Kontakion",variable);
-		}
+		}*/
 		if(elem.equals("NAME") && read)
 		{
 			Information.put("Name",textR);
@@ -237,13 +334,65 @@ public class Commemoration implements DocHandler
 	{
 		return Information.get("Cycle").toString();
 	}
+        public OrderedHashtable getService(String Node, String Type){
+            //System.out.println(ServiceInfo);
+            //System.out.println("\n\n");
+            //System.out.println(Node+"/"+Type);
+            if (ServiceInfo.containsKey(Node)){
+                OrderedHashtable stuff=(OrderedHashtable)ServiceInfo.get(Node);
+                
+                if (stuff.containsKey(Type)){
+                    OrderedHashtable stuff1=(OrderedHashtable)stuff.get(Type);
+                    
+                    return stuff1;
+                }
+                else{
+                    System.out.println("Error reading the Hashtable!\nMissing element: " + Node + " with Tag: "+Type);
+                    return new OrderedHashtable();
+                }
+            }
+            else{
+                System.out.println("Error reading the Hashtable!\nMissing Node: "+Node);
+                return new OrderedHashtable();
+            }
+        }
+        public OrderedHashtable getRH(String Node, String Type){
+            
+            if (RoyalHours.containsKey(Node)){
+
+
+            OrderedHashtable stuff = (OrderedHashtable)RoyalHours.get(Node);
+            //System.out.println(stuff);
+            if (stuff.containsKey(Type)){
+                OrderedHashtable stuff1=(OrderedHashtable)stuff.get(Type);
+                return stuff1;
+            }
+            else{
+                System.out.println("Error reading the Hashtable!!!");
+                return new OrderedHashtable();
+            }
+            }
+            else{
+                System.out.println("Error reading the Hash table!!!");
+                return new OrderedHashtable();
+            }
+
+            
+        }
+
 	public static void main(String[] argz)
 	{
 		StringOp.dayInfo=new OrderedHashtable();
-		StringOp.dayInfo.put("LS","0");
-		new Commemoration("867");
-		System.out.println("THIS IS RUNNING ON DEBUG MODE, USING THE FILE FOR ST. JAMES, THE SON OF ALPHEUS");
-				
+		StringOp.dayInfo.put("LS","2");
+		//Commemoration Paramony = new Commemoration("P_3174");    //Paramony of Christmas
+		System.out.println("THIS IS RUNNING ON DEBUG MODE, USING THE FILE FOR the Paramony of Christmas");
+                //OrderedHashtable stuff=Paramony.getRH("Idiomel","11");
+                //System.out.println(Paramony.getService("/ROYALHOURS/IDIOMEL","13"));
+                //System.out.println(Paramony .ServiceInfo());
+                //System.out.println(Paramony.getRH("IDIOMEL","11"));
+		//System.out.println(Paramony);
+                Commemoration Paramony=new Commemoration("B_3174"); //Forefeast of Christmas
+                System.out.println(Paramony.getService("/KONTAKION","1"));
 	}
 	
 }

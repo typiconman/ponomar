@@ -64,6 +64,10 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	private Helpers helper;
 	private PrimeSelector SelectorP=new PrimeSelector();
 	private PrintableTextPane output;
+        private String DisplayFont =new String(); //ALLOWS A CUSTOM FONT AND SIZE TO BE SPECIFIED FOR A GIVEN BIBLE READING: REQUIRED FOR OLD CHURCH SLAVONIC AT PRESENT
+	private String DisplaySize="12";  //UNTIL A COMPLETE UNICODE FONT IS AVAILIBLE.
+	private Font DefaultFont=new Font("",Font.BOLD,12);		//CREATE THE DEFAULT FONT
+	private Font CurrentFont=DefaultFont;
 	
 	
 	public Primes(int Weekday)
@@ -101,7 +105,8 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
         		{
             			strOut += str;
         		}
-        		PrimesWindow(strOut);
+
+                        PrimesWindow(strOut);
 		}
 		catch (IOException j)
 		{
@@ -141,8 +146,14 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 			}
 			else
 			{
-				strOut="<p><Font Color='red'>Disclaimer: This is a preliminary attempt at creating the Primes service.</Font></p>"+ strOut;
-				PrimesWindow(strOut);
+				//strOut=strOut+"<p><Font Color='red'>Disclaimer: This is a preliminary attempt at creating the Primes service.</Font></p>";
+				int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
+                                if (LangCode==2 || LangCode==3 ){
+                                    //strOut="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"><p><font face=\"Hirmos Ponomar\" size=\"5\">"+strOut+"</font></p>";
+                                    //System.out.println("Added Font");
+                                   }
+
+                                PrimesWindow(strOut);
 			}
 		}
 		catch (IOException j)
@@ -165,10 +176,10 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		output=new PrintableTextPane();
 		output.setEditable(false);
 		output.setSize(800,700);
-		output.setContentType("text/html");
+		output.setContentType("text/html; charset=UTF-8");
 		output.setText(textOut);
 		output.setCaretPosition(0);
-		JScrollPane scrollPane = new JScrollPane(output);
+                JScrollPane scrollPane = new JScrollPane(output);
 		JMenuBar MenuBar=new JMenuBar();
 		MenuFiles demo=new MenuFiles();
 		PrimeSelector trial=new PrimeSelector();
@@ -183,6 +194,9 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		frames.pack();
 		frames.setSize(800,700);
 		frames.setVisible(true);
+                
+                
+
 		//scrollPane.top();
 	}
 	private String createPrimes() throws IOException
@@ -284,6 +298,13 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		}
 		
 		//CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
+		//POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
+		ServiceInfo ServicePrimes=new ServiceInfo("PRIME");
+		OrderedHashtable PrimesTrial = ServicePrimes.ServiceRules();
+		
+		Type=PrimesTrial.get("Type").toString();
+		LentenK=(String) PrimesTrial.get("LENTENK");
+				
 		String PrimesAdd1=new String();
 				
 		if (Type.equals("None"))
@@ -293,7 +314,8 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		}
 		else if(Type.equals("Paschal"))
 		{
-			return ReadPrime.readService(ServicesFileName+"PaschalHours.xml");
+                    
+                    return ReadPrime.startService(ServicesFileName+"PaschalHours.xml");
 		}
 		
 		//I WOULD THEN NEED TO READ THE MENOLOGION, BUT I WILL NOT DO SO RIGHT NOW.
@@ -306,6 +328,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		if(Type.equals("Lenten"))
 	       {
 	       		StringOp.dayInfo.put("PFlag2",1);
+	       		
 	       		if(LentenK != null)
 	       		{
 	       			StringOp.dayInfo.put("PFlag2",2);
@@ -355,7 +378,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		}
 	    	 		
 		
-		strOut=ReadPrime.startService(ServicesFileName + "Prime.xml");
+		strOut=ReadPrime.startService(ServicesFileName + "Prime.xml")+"</p>";
 	
 	   
 	     return strOut;	     	     

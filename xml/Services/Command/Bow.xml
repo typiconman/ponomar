@@ -1,8 +1,11 @@
 ﻿<COMMONPRAYER>
 <LANGUAGE Cmd="LS == 0">
-<TEXT Value="(Bow)"/>
+<TEXT Value="Bow"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<TEXT Value="(Prosternation)"/>
+<TEXT Value="Révérence"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="покло́нъ"/>
 </LANGUAGE>
 </COMMONPRAYER>

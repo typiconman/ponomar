@@ -6,4 +6,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Inserer le texte desiré en francais"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="бг҃оро́диченъ"/>
+<TEXT Value="Вы́шнѧгѡ ѡ҆сщ҃е́нное бж҃е́ственное селе́нїе, ра́дꙋйсѧ. тобо́ю бо
+даде́сѧ ра́дость, бцⷣе, зовꙋ́щымъ: бл҃гослове́на ты̀ въ жена́хъ є҆сѝ,
+всенепоро́чнаѧ влⷣчце."/>
+</LANGUAGE>
 </COMMONPRAYER>

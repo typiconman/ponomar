@@ -9,4 +9,11 @@ When Thou didst descend to death, O Life Immortal, Thou didst slay hell with the
 <TEXT Value="
 Lorsque tu es descendu vers la mort, immortelle Vie, l’Enfer fut renversé par la splendeur de ta divinité et, lorsque tu ressuscitas les morts qui gisaient au fond du tombeau, tous les Anges dans les cieux se mirent à chanter : Gloire à toi, Source de vie, ô Christ notre Dieu."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Тропа́рь, гла́съ в҃"/>
+<TEXT Value="Е҆гда̀ снизше́лъ є҆сѝ къ сме́рти, животѐ безсме́ртный, тогда̀ ѓдъ
+ѹ҆мертви́лъ є҆сѝ блиста́нїемъ бж҃ества̀: є҆гда́ же и҆ ѹ҆ме́ршыѧ ѿ
+преиспо́днихъ воскр҃си́лъ є҆сѝ, всѧ҄ си҄лы нбⷭныѧ взыва́хꙋ: жизнода́вче,
+хрⷭтѐ бж҃е на́шъ, сла́ва тебѣ̀."/>
+</LANGUAGE>
 </TROPARION>

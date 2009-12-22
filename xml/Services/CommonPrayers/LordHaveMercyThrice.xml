@@ -1,8 +1,11 @@
-<COMMONPRAYER>
+﻿<COMMONPRAYER>
 <LANGUAGE Cmd="LS == 0">
 <TEXT Value="Lord, have mercy. Lord, have mercy. Lord, have mercy."/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Kyrie eleison. Kyrie eleison. Kyrie eleison."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Гдⷭи поми́лꙋй, три́жды. "/>
 </LANGUAGE>
 </COMMONPRAYER>
