@@ -1,0 +1,26 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Theotakion in the Eighth Tone" />
+<TEXT Value="Thou who for our sake wast born of a Virgin, and didst suffer crucifixion, O good One, and didst
+despoil death through Death, and as God didst reveal Resurrection; despise not those whom Thou
+hast created with Thine own hand; show forth Thy love for mankind, O merciful one; accept the
+intercession of Thy Mother, the Theotokos, for us; and save Thy despairing people, O our Savior."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Theotakion" />
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="бг҃оро́диченъ"/>
+<TEXT Value="И҆́же на́съ ра́ди рожде́йсѧ ѿ дв҃ы, и҆ распѧ́тїе 
+претерпѣ́въ, бл҃гї́й, и҆спрове́ргїй сме́ртїю сме́рть, и҆ 
+воскр҃се́нїе ꙗ҆вле́й ꙗ҆́кѡ бг҃ъ, не пре́зри ꙗ҆̀же 
+созда́лъ є҆сѝ рꙋко́ю твое́ю, ꙗ҆вѝ чл҃вѣколю́бїе 
+твоѐ, млⷭтиве, прїимѝ ро́ждшꙋю тѧ̀ бцⷣꙋ молѧ́щꙋюсѧ за 
+ны̀, и҆ сп҃сѝ, сп҃се на́шъ, лю́ди ѿча҄ѧнныѧ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value="Θεοτοκίον" />
+<TEXT Value="Ὁ δι' ἡμᾶς γεννηθεὶς ἐκ Παρθένου, καὶ σταύρωσιν ὑπομείνας Ἀγαθέ, ὁ θανάτῳ τὸν θάνατον σκυλεύσας, καὶ ἔγερσιν δείξας ὡς Θεός, μὴ παρίδῃς οὓς ἔπλασας τῇ χειρὶ σου· δεῖξον τὴν φιλανθρωπίαν σου ἐλεῆμον· δέξαι τὴν τεκοῦσάν σε Θεοτόκον, πρεσβεύουσαν ὑπὲρ ἡμῶν, καὶ σῶσον, Σωτὴρ ἡμῶν, λαὸν ἀπεγνωσμένον."/>
+</LANGUAGE>
+</COMMONPRAYER>

@@ -1,0 +1,352 @@
+﻿<!-- service file for SID P_3174 (The Paramony of Christmas) (The 3 days before Christmas) -->
+<!--<?xml-stylesheet type="text/xsl" href="Commemeration.xsl" ?>-->
+
+<COMMEMORATION>
+<LANGUAGE Cmd="LS == 0">
+<NAME>The Eve (Paramony) of the Nativity</NAME>
+<SERVICE>
+	<ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
+	<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
+Prepare, O Bethlehem, and let the manger make ready and the cave receive; for truth hath come,
+and shadow hath passed. And God hath appeared to mankind from the Virgin, taking our likeness
+and deifying our nature. Wherefore, Adam and Eve are made new, crying, Goodwill hath appeared
+on earth to save our race.
+	</IDIOMEL><!-- Note the difference in assigned Tones here -->
+<VERSE Type="1" >
+ God will come from Theman, and the Holy One from a mountain overshadowed by forest. 
+</VERSE>
+<IDIOMEL Type="12" Tone="3" Header="Tropar, Tone 3">
+Now, hath come the time for the aforesaid prophecy mystically uttered to be fulfilled; namely, And
+thou Bethlehem in the land of Judah art not the least among princes, having gone before and
+prepared the cave; for out of thee shall come a Governor of nations, from the Virgin Maiden
+incarnate, by Whom I mean Christ God Who shall govern His people, the new Israel. Let us
+therefore, ascribe unto Him magnification.
+</IDIOMEL>
+<VERSE Type="2">
+Lord, I heard your report and was afraid. Lord, I understood Your deeds and was scared.
+</VERSE><!-- The English version that I had access to missed the second part of the verse, which I translated from the Church Slavonic (only an approximate version) Y.S. -->
+<IDIOMEL Type="13" Tone="8" Header="Tropar, Tone 8" Author="">
+Thus saith Joseph to the Virgin, What is this thing, O Mary, which I behold in thee? Verily, I am
+surprised and perplexed, and my mind is dazzled. Wherefore, henceforth from this moment be thou
+secluded in secret. What is this matter, O Mary, that I behold in thee? For thou hast given me
+instead of honor, disgrace; and instead of gladness, sorrow; and instead of being extolled, thou hast
+brought me blame. Therefore, I cannot bear the reproach of men, from the Temple of the Lord I
+took thee; from the priests I received thee as innocent of all blame. What then is this thing I
+behold?
+</IDIOMEL>
+<PROKIMENON Type="1P" Tone="4" Header="Prokeimenon of the Prophecy, Tone 4">
+The Lord said to me, "You are my Son, today I have begotten you."
+</PROKIMENON>
+<VERSE Type="1P" >
+Ask of me, and I shall give you the Nations as your inheritance.
+</VERSE>
+
+<IDIOMEL Type="31" Tone="6" Header="Тropar, Tone 6" Author="">
+This is our God, beside Whom none other may be considered. He it was Who was born of the
+Virgin and went about among men, the only Son, beheld as a man placed in a mean manger, the
+Lord of the house wrapped in swaddling clothes. And the star pointeth for the Magi to worship
+Him; and we sing shouting, O Trinity, save our souls.
+</IDIOMEL><!-- Note the difference in assigned Tones here -->
+<IDIOMEL Type="32" Tone="8" Header="Troparion, Tone 8">
+When the heavenly hosts beheld the mystery before Thy Birth, O Lord, they were struck with
+surprise; for Thou Who didst adorn the heavens with stars was pleased to become like a babe, and
+lie in a manger for beasts, O Thou Almighty One in Whose grasp are all the regions of the earth;
+for by Thy dispensation, Thy compassion was made known, O Christ, and Thy Great Mercy.
+Wherefore, glory to Thee.
+</IDIOMEL>
+<IDIOMEL Type="33" Tone="3" Header="Tropar, Tone 3" Author="">
+Tell us, O Joseph, how it is that thou dost bring the Virgin whom thou didst receive from the holy
+places to Bethlehem great with child? And he replieth, saying, I have searched the Prophets, and it
+was revealed to me by the angel. Therefore, I am convinced that Mary shall give birth in an
+inexplicable manner to God, whom Magi from the east shall come to worship and to serve with
+precious gifts. Wherefore, O Thou who wast incarnate for our sakes, glory to Thee.
+</IDIOMEL>
+<PROKIMENON Type="3P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+For a Child has been born for us, and a Son has been given to us.
+</PROKIMENON>
+<VERSE Type="3P" >
+And the government is upon His shoulders.
+</VERSE>
+	
+<IDIOMEL Type="61" Tone="1" Header="Tropar, Tone 1" Author="">
+Come, ye believers, let us ascend in a divine manner and behold a divine condescension, revealed
+to us from on high, openly in Bethlehem. And having purified our minds by good conduct, let us
+offer virtues instead of frankincense. Let us go before and prepare with faith entrances for the
+Nativity among the spiritual treasures, crying, Glory in the highest to God, the One in Trinity,
+through Whom good-will appeared among men to deliver Adam from the ancient curse; for He is
+the Lover of mankind.
+</IDIOMEL>
+<IDIOMEL Type="62" Tone="4" Header="Tropar, Tone 4">
+Listen, O heaven, and give ear, O earth. Let the foundations shake, and let trembling fall on all
+below the earth; for God hath dwelt in a creation of flesh; and He Who made creation with a
+precious hand is seen in the womb of a created one. O the depth of the riches and wisdom and
+knowledge of God! How unsearchable are His judgments, and His ways past finding out.
+</IDIOMEL>
+<IDIOMEL Type="63" Tone="5" Header="Tropar, Tone 5" Author="">
+Come, ye nations that have put on Christ, let us behold a wonder that overtaketh all minds with
+astonishment; and as we kneel down in true worship, let us give praise in faith; for the Maiden,
+having conceived, cometh today to Bethlehem, to give birth to the Lord. The ranks of angels
+hasten, and Joseph, seeing these things, shouted, crying, What is this strange mystery that hath
+befallen thee, O Virgin? And how shalt thou give birth, O ewe that hath not known wedlock?
+</IDIOMEL>
+<PROKIMENON Type="6P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+From the womb before the Morning Star I have begotten you.
+</PROKIMENON><!-- The Church Slavonic is slightly different here И҆з чре́ва пре́жде денни́цы роди́хъ тѧ̀, клѧ́тсѧ гдⷭь и҆ не раска́етсѧ. -->
+<VERSE Type="6P" >
+The Lord said to my Lord: Sit at my right hand, until I make your enemies a footstool for your feet.
+</VERSE><!-- The Church Slavonic and the Greek are the laconic: Речѐ гдⷭь гдⷭви моемꙋ̀, сѣдѝ ѡ҆деснꙋ́ю менѐ. The fuller version makes more sense.-->
+
+<IDIOMEL Type="91" Tone="7" Header="Tropar, Tone 7" Author="">
+Verily, Herod was overtaken by astonishment when he saw the piety of the Magi. And having been
+overridden with wrath, he began to inquire of them about the time. He robbed the mothers of their
+children and ruthlessly reaped the tender bodies of the babes. And the breasts dried up, and the
+springs of milk failed. Great then was the calamity. Wherefore, being gathered, O believers, in true
+worship, let us adore the Nativity of Christ.
+</IDIOMEL>
+<IDIOMEL Type="92" Tone="2" Header="Tropar, Tone 2">
+As Joseph was going his way to Bethlehem pierced with sadness, thou didst cry unto him, O
+Virgin, saying, Why frownest thou and art troubled when thou seest me great with child,
+completely ignorant of the terrible mystery that is in me? Drive away from thee all dismay,
+comprehending the strange matter; for God, for His mercy’s sake, hath descended to earth and hath
+now taken flesh in my womb, and thou shalt see Him born, as it pleased Him; for He is thy
+Creator, Whom the angels praise ceaselessly and glorify, with the Father and the Holy Spirit.
+</IDIOMEL>
+<IDIOMEL Type="93.1" Tone="6" Header="Tropar, Tone 6" Author="">
+Today is born of the Virgin Him Who holdest all creation in the hollow of His hand.
+</IDIOMEL>
+<IDIOMEL Type="93.2" Tone="6" Header="Tropar, Tone 6" Author="">
+He Whose essence is untouchable is wrapped in swaddling clothes as a babe.
+</IDIOMEL>
+<IDIOMEL Type="93.3" Tone="6" Header="Tropar, Tone 6" Author="">
+The God Who from of old established the heavens lieth in a manger.
+</IDIOMEL>
+<IDIOMEL Type="93.4" Tone="6" Header="Tropar, Tone 6" Author="">
+He Who showered the people with manna in the wilderness feedeth on milk from the breasts.
+</IDIOMEL>
+<IDIOMEL Type="93.5" Tone="6" Header="Tropar, Tone 6" Author="">
+And the bridegroom of the Church calleth the Magi.
+</IDIOMEL>
+<IDIOMEL Type="93.6" Tone="6" Header="Tropar, Tone 6" Author="">
+And the Son of the Virgin accepteth gifts from them.
+</IDIOMEL>
+<IDIOMEL Type="93.7" Tone="6" Header="Tropar, Tone 6" Author="">
+We worship Thy Nativity, O Christ.
+</IDIOMEL>
+<IDIOMEL Type="93.8" Tone="6" Header="Tropar, Tone 6" Author="">
+Show us also Thy divine Theophany!
+</IDIOMEL>
+<PROKIMENON Type="9P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+Sion is our mother, a man will say; and a man has been born in her.
+</PROKIMENON>
+<VERSE Type="9P">
+Her foundations are in the holy mountains.
+</VERSE>
+
+	</ROYALHOURS>
+</SERVICE>
+</LANGUAGE>
+
+<!-- The Greek Texts -->
+<LANGUAGE Cmd="LS == -2"> 
+<SERVICE>
+	<ROYALHOURS>
+<IDIOMEL Type="11" Tone="5" Header="Ἦχος πλ. δ'&lt;BR&gt;Ποίημα Σωφρονίου Πατριάρχου Ἱεροσολύμων" Author="Σωφρονίου Πατριάρχου Ἱεροσολύμων">
+Βηθλεὲμ ἑτοιμάζου· εὐτρεπιζέσθω ἡ φάτνη· τὸ Σπήλαιον δεχέσθω, ἡ ἀλήθεια ἦλθεν· ἡ σκιὰ παρέδραμε· καὶ Θεὸς ἀνθρώποις, ἐκ Παρθένου πεφανέρωται, μορφωθείς τὸ καθ' ἡμᾶς, καὶ θεώσας τὸ πρόσλημμα. Διὸ Ἀδὰμ ἀνανεοῦται σὺν τῇ Εὔᾳ, κράζοντες· Ἐπὶ γῆς εὐδοκία ἐπεφάνη, σῶσαι τὸ γένος ἡμῶν.
+</IDIOMEL>
+<VERSE Type="1" >
+Ὁ Θεὸς ἀπὸ Θαιμὰν ἥξει καὶ ὁ ἅγιος ἐξ ὄρους κατασκίου δασέος.
+</VERSE>
+<IDIOMEL Type="12" Tone="3" Header="Ἦχος πλ. γ'">
+Νῦν προφητικὴ πρόρρησις, πληρωθῆναι ἐπείγεται, μυστικῶς ἡ φάσκουσα· Καὶ σὺ Βηθλεὲμ γῆ Ἰούδα, οὐδαμῶς ὑπάρχεις ἐλαχίστη ἐν τοῖς Ἡγεμόσι, προευτρεπίζουσα τὸ σπήλαιον· ἐκ σοῦ γὰρ μοι ἐξελεύσεται, ἡγούμενος τῶv Ἐθvῶν διὰ σαρκός, ἐκ Παρθένου Κόρης Χριστὸς ὁ Θεός, ὃς ποιμανεῖ τὸν λαὸν αὐτοῦ, τὸv νέοv Ἰσραήλ. Δῶμεν αὐτῷ ἅπαντες μεγαλωσύνην.
+</IDIOMEL>
+<VERSE Type="2">
+Κύριε εἰσακήκοα τὴν ἀκοήν σου καὶ ἐφοβήθην· κατενόησα τὰ ἔργα σου.
+</VERSE>
+<IDIOMEL Type="13" Tone="8" Header="Ἦχος πλ. δ'" Author="">
+Τάδε λέγει Ἰωσὴφ πρὸς τὴν Παρθέvον· Μαρία, τὶ τὸ δρᾶμα τοῦτο, ὃ ἐν σοὶ τεθέαμαι; ἀπορῶ καὶ ἐξίσταμαι, καὶ τὸν νοῦν καταπλήττομαι! Λάθρα τοίνυν ἀπ' ἐμοῦ, γενοῦ ἐν τάχει. Μαρία, τὶ τὸ δρᾶμα τοῦτο, ὃ ἐν σοὶ τεθέαμαι; ἀντὶ τιμῆς αἰσχύνηv, ἀντ' εὐφροσύνης, τὴν λύπην, ἀντὶ τοῦ ἐπαινεῖσθαι, τὸν ψόγον μοι προσήγαγες. Οὐκ ἔτι φέρω λοιπόν, τὸ ὄνειδος ἀνθρώπων· ὑπὸ γὰρ Ἱερέων ἐκ τοῦ ναοῦ, ὡς ἄμεμπτον Κυρίου σὲ παρέλαβον· καὶ τὶ τὸ ὁρώμενον;
+</IDIOMEL>
+<PROKIMENON Type="1P" Tone="4" Header="Προκείμενον τῆς Προφητείας. Ἦχος δ'">
+Κύριος εἶπε πρὸς με· Υἱός μου εἶ σύ, ἐγὼ σήμερον γεγέννηκά σε.
+</PROKIMENON>
+<VERSE Type="1P" >
+Αἴτησαι παρ' ἐμοῦ καὶ δώσω σοι Ἔθνη τὴν κληρονομίαν σου.
+</VERSE>
+
+<IDIOMEL Type="31" Tone="2" Header="Ἦχος πλ. β'" Author="">
+Οὗτος ὁ Θεὸς ἡμῶν, οὐ λογισθήσεται ἕτερος πρὸς αὐτόν, ὁ τεχθεὶς ἐκ Παρθένου, καὶ τοῖς  ἀνθρώποις συναναστραφείς. Φάτνῃ πενιχρᾷ Υἱὸς μονογενής, κείμενος ὁρᾶται βροτός· καὶ σπαργάνοις πλέκεται, ὁ τῆς δόξης Κύριος, καὶ Μάγους ἀστὴρ μηνύει, εἰς αὐτοῦ προσκύνησιν, καὶ ἡμεῖς μελῳδοῦμεν·Τριὰς Ἁγία, σῶσον τὰς ψυχὰς ἠμών.
+</IDIOMEL>
+<IDIOMEL Type="32" Tone="3" Header="Ἦχος πλ. γ'">
+Πρὸ τῆς Γεννήσεως τῆς σῆς, τρόμῳ ὁρῶσαι τὸ μυστήριον Κύριε, αἱ νοεραὶ στρατιαὶ κατεπλήττοντο· ὡς γὰρ βρέφος νηπιάσαι ηὐδόκησας, ὁ τὸν πόλον κοσμήσας τοῖς ἀστράσι· καὶ φάτνῃ τὼν ἀλόγων ἀνακέκλισαι, ὁ δρακὶ συνέχων πάντα γῆς τὰ πέρατα· τοιαύτῃ γὰρ οἰκονομίᾳ, ἐγνώσθη σου ἡ εὐσπλαγχνία. Χριστέ, τὸ μέγα ἔλεος, δόξα σοι.
+</IDIOMEL>
+<IDIOMEL Type="33" Tone="3" Header="Ἦχος γ'" Author="">
+Ἰωσήφ, εἰπὲ ἡμῖν, πῶς ἐκ τὼν ἁγίων ἣν παρέλαβες Κόρην, ἔγκυον φέρεις ἐν Βηθλεέμ; Ἐγὼ φησι, τοὺς Προφήτας ἐρευνήσας, καὶ χρηματισθεὶς ὑπὸ Ἀγγέλου, πέπεισμαι, ὅτι Θεὸν γεννήσει ἡ Μαρία ἀνερμηνεύτως· οὗ εἰς προσκύνησιν, Μάγοι ἐξ Ἀνατολῶν ἥξουσι, σὺν δώροις τιμίοις λατρεύοντες. Ὁ σαρκωθεὶς δι' ἡμᾶς, Κύριε, δόξα σοι.
+</IDIOMEL>
+<PROKIMENON Type="3P" Tone="4" Header="Προκείμενον τῆς Προφητείας. Ἦχος δ'">
+Ὅτι παιδίον ἐγεννήθη ἡμῖν, Υἱὸς καὶ ἐδόθη ἡμῖν.
+</PROKIMENON>
+<VERSE Type="3P" >
+Οὗ ἡ ἀρχὴ ἐγενήθη ἐπὶ τοῦ ὤμου αὐτοῦ.
+</VERSE>
+
+<IDIOMEL Type="61" Tone="2" Header="Ἦχος α'" Author="">
+Δεῦτε πιστοὶ ἐπαρθῶμεν ἐνθέως, καὶ κατίδωμεν συγκατάβασιν θεϊκὴν ἄνωθεν, ἐν Βηθλεὲμ πρὸς ἡμᾶς ἐμφανῶς· καὶ νοῦν καθαρθέντες, τῷ βίῳ προσενέγκωμεν, ἀρετάς ἀντὶ μύρου, προευτρεπίζοντες πιστῶς, τῶν Γενεθλίων τὰς εἰσόδους, ἐπὶ τῶν ψυχικῶν θησαυρισμάτων, κράζοντες· Ἐν ὑψίστοις δόξα, Θεῷ τῷ ἐν Τριάδι, δι' οὗ ἐν ἀνθρώποις εὐδοκία ἐπεφάνη, τὸν Ἀδὰμ ἐκλυτρώσασθαι, τῆς ἀρχεγόνου ἀρᾶς ὡς Φιλάνθρωπος.
+</IDIOMEL>
+<IDIOMEL Type="62" Tone="4" Header="Ἦχος δ'">
+Ἄκουε οὐρανέ, καὶ ἐνωτίζου ἡ γῆ· σαλευθήτω τὰ θεμέλια, ἐπιλαβέτω τρόμος τὰ καταχθόνια· ὅτι ὁ Θεός τε καὶ Κτίστης, σαρκὸς εἰσέδυ πλάσιν· καὶ ὁ κραταιᾷ κτίσας χειρὶ τὴν κτίσιν, σπλάγχνον ὁρᾶται πλάσματος. Ὢ βάθος πλούτου, καὶ σοφίας καὶ γνώσεως Θεοῦ! ὡς ἀνεξερεύνητα τὰ κρίματα αὐτοῦ, καὶ ἀνεξιχνίαστοι αἱ ὁδοὶ αὐτοῦ.
+</IDIOMEL>
+<IDIOMEL Type="63" Tone="1" Header="Ἦχος πλ. α'" Author="">
+Δεῦτε χριστοφόροι λαοὶ κατίδωμεν, θαῦμα πᾶσαν ἔννοιαν, ἐκπλῆττον καὶ συνέχον καὶ εὐσεβῶς προσκυνοῦντες, πίστει ἀνυμνήσωμεν. Σήμερον πρὸς Βηθλεέμ, ἐγκυμονοῦσα Κόρη παραγίνεται, τοῦ γεννῆσαι τὸν Κύριον· χοροὶ δέ, Ἀγγέλων προτρέχουσι. Καὶ ταῦτα βλέπων ἐβόα, Ἰωσὴφ ὁ Μνήστωρ· Τὶ τὸ ἐν σοὶ ξένον μυστήριον Παρθένε; καὶ πῶς μέλλεις λοχεῦσαι, ἡ ἀπειρόζυγος Δάμαλις;
+</IDIOMEL>
+<PROKIMENON Type="6P" Tone="4" Header="Προκείμενον τῆς Προφητείας. Ἦχος πλ. δ'">
+Ἐκ γαστρὸς πρὸ Ἑωσφόρου ἐγέννησά σε.
+</PROKIMENON>
+<VERSE Type="6P" >
+Εἶπεν ὁ Κύριος τῷ Κυρίῳ μου. Κάθου ἐκ δεξιῶν μου.
+</VERSE>
+
+<IDIOMEL Type="91" Tone="" Header="Ἦχος βαρὺς" Author="">
+Ἐξεπλήττετο ὁ Ἡρῴδης, ὁρῶν τῶν Μάγων τὴν εὐσέβειαν, καὶ τῷ θυμῷ νικώμενος, τοῦ ἔτους ἠκριβολόγει τὸ διάστημα. Μητέρες ἠτεκνοῦντο, καὶ ἡ ἄωρος ἡλικία τών βρεφῶν, πικρῶς κατεθερίζετο· μαζοὶ ἐξηραίνοντο, καὶ πόροι γάλακτος συνεστέλλοντο. Μέγα ἦν τὸ δεινόν! διὸ εὐσεβῶς πιστοὶ συνελθόντες, προσκυνήσωμεν τοῦ Χριστοῦ τὴν γέννησιν.
+</IDIOMEL>
+<IDIOMEL Type="92" Tone="2" Header="Ἦχος β'">
+Ὅτε Ἰωσήφ, Παρθένε, λύπῃ ἐτιτρώσκετο, πρὸς Βηθλεὲμ ἀπαίρων, ἐβόας πρὸς αὐτόν· Τί ὁρῶν με ἔγκυον, στυγνάζεις καὶ ταράσσεσαι, ἀγνoῶν ὅλως, τὸ ἐν ἐμοὶ φρικτόν μυστήριον; Λοιπὸν ἀπόθου φόβον ἅπαντα, τὸ παράδοξον ἐννοῶν· Θεὸς κάτεισι γὰρ ἐπὶ γῆς δι' ἔλεον, ἐν τῇ ἐμῇ μήτρᾳ νῦν, καὶ σάρκα προσελάβετο· ὅνπερ τικτόμενoν, ὄψει ὡς ηὐδόκησε· καὶ τῆς χαρᾶς πλησθείς, προσκυνήσεις ὡς Κτίστην σου, ὃν Ἄγγελοι ὑμνοῦσιν ἀπαύστως, καὶ δοξάζουσι, σὺν Πατρὶ καὶ Ἁγίῳ Πνεύματι.
+</IDIOMEL>
+<IDIOMEL Type="93.1" Tone="1" Header="Ἦχος πλ. α'" Author="">
+Σήμερον γεννᾶται ἐκ Παρθένου, ὁ δρακὶ τὴν πᾶσαν ἔχων κτίσιν.
+</IDIOMEL>
+<IDIOMEL Type="93.2" Tone="1" Header="Ἦχος πλ. α'" Author="">
+Ῥάκει καθάπερ βροτὸς σπαργανοῦται, ὁ τῇ οὐσίᾳ ἀναφής.
+</IDIOMEL>
+<IDIOMEL Type="93.3" Tone="1" Header="Ἦχος πλ. α'" Author="">
+Θεὸς ἐν φάτνῃ ἀνακλίνεται, ὁ στερεώσας τοὺς οὐρανούς πάλαι κατ' ἀρχάς.
+</IDIOMEL>
+<IDIOMEL Type="93.4" Tone="1" Header="Ἦχος πλ. α'" Author="">
+Ἐκ μαζῶν γάλα τρέφεται, ὁ ἐν τῇ ἐρήμῳ Μάννα ὀμβρίσας τῷ Λαῷ.
+</IDIOMEL>
+<IDIOMEL Type="93.5" Tone="1" Header="Ἦχος πλ. α'" Author="">
+Μάγους προσκαλεῖται, ὁ Νυμφίος τῆς Ἐκκλησίας.
+</IDIOMEL>
+<IDIOMEL Type="93.6" Tone="1" Header="Ἦχος πλ. α'" Author="">
+Δῶρα τούτων αἴρει, ὁ Υἱὸς τῆς Παρθένου.
+</IDIOMEL>
+<IDIOMEL Type="93.7" Tone="1" Header="Ἦχος πλ. α'" Author="">
+Προσκυνοῦμέν σου τὴν Γένναν Χριστέ.
+</IDIOMEL>
+<IDIOMEL Type="93.8" Tone="1" Header="Ἦχος πλ. α'" Author="">
+Δεῖξον ἡμῖν καὶ τὰ θεῖά σου Θεοφάνεια.
+</IDIOMEL>
+<PROKIMENON Type="9P" Tone="4" Header="Προκείμενον τῆς Προφητείας. Ἦχος δ'">
+Μήτηρ Σιὼν ἐρεῖ ἄνθρωπος, καὶ ἄνθρωπος, ἐγεννήθη ἐν αὐτῇ.
+</PROKIMENON>
+<VERSE Type="9P" >
+Οἱ θεμέλιοι αὐτοῦ ἐν τοῖς  ὄρεσι τοῖς  ἁγίοις.
+</VERSE>
+</ROYALHOURS>
+</SERVICE>
+	
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<NAME></NAME>
+<SERVICE>
+<!-- The verses for the Idiomels are the same in all the hours -->	
+<ROYALHOURS>
+<IDIOMEL Type="11" Tone="7" Header="Тропарь Гла́съ и҃ &lt;BR&gt;Творе́нїе сѡфро́нїа патрїа́рха ї҆ерꙋсали́мскагѡ" Author="сѡфро́нїа патрїа́рха ї҆ерꙋсали́мскагѡ">
+Виѳлее́ме, ѹ҆гото́висѧ, бл҃гоꙋкраси́тесѧ, ꙗ҆́сли, верте́пе, прїимѝ, и҆́стина прїи́де, сѣ́нь мимотечѐ, и҆ бг҃ъ человѣ́кѡмъ ѿ дв҃ы ꙗ҆ви́сѧ, воѡбрази́всѧ ꙗ҆́коже мы̀, и҆ ѡ҆божи́въ пло́ть. тѣ́мъ а҆да́мъ ѡ҆бновлѧ́етсѧ со є҆́ѵою зовꙋ́ще: на землѝ бл҃говоле́нїе ꙗ҆ви́сѧ сп҃стѝ ро́дъ на́шъ.
+</IDIOMEL><!-- Note the difference in assigned Tones here -->
+<VERSE Type="1" >
+Бг҃ъ ѿ ю҆́га прїи́детъ, и҆ ст҃ы́й и҆з горы̀ прїѡсѣне́нныѧ ча́щи. 
+</VERSE>
+<IDIOMEL Type="12" Tone="3" Header="Тропарь Гла́съ г҃">
+Ны́нѣ прⷪро́ческое прорица́нїе и҆спо́лнитисѧ грѧде́тъ, та́йнѡ глаго́лющее: и҆ ты̀ виѳлее́ме землѐ ї҆ꙋ́дова, ника́коже нарече́шисѧ ме́ньши во влⷣкахъ предꙋготовлѧ́ющи верте́пъ. и҆з тебе́ бо мѝ и҆зы́детъ и҆гꙋ́менъ ꙗ҆зы́кѡвъ во пло́ти, ѿ дв҃ы ѻ҆трокови́цы хрⷭто́съ бг҃ъ, и҆́же ѹ҆пасе́тъ лю́ди своѧ҄ но́ваго ї҆и҃лѧ: дади́мъ є҆мꙋ̀ всѝ вели́чїе.
+</IDIOMEL>
+<VERSE Type="2">
+Гдⷭи, ѹ҆слы́шахъ слꙋ́хъ тво́й, и҆ ѹ҆боѧ́хсѧ: гдⷭи, разꙋмѣ́хъ дѣла̀ твоѧ҄, и҆ ѹ҆жасо́хсѧ.
+</VERSE>
+<IDIOMEL Type="13" Tone="8" Header="Тропарь Гла́съ и҃ " Author="">
+Сїѧ҄ глаго́летъ ї҆ѡ́сифъ къ дв҃ѣ: мр҃ї́е, что̀ дѣ́ло сїѐ, є҆́же въ тебѣ̀ зрю̀, недоꙋмѣ́ю и҆ ѹ҆дивлѧю́сѧ, и҆ ѹ҆мо́мъ ѹ҆жаса́юсѧ: ѻ҆́тай ѹ҆́бѡ ѿ менѐ бꙋ́ди вско́рѣ. мр҃ї́е, что̀ дѣ́ло сїѐ, є҆́же въ тебѣ̀ ви́жꙋ; за че́сть, срамотꙋ̀: за весе́лїе, ско́рбь: вмѣ́стѡ є҆́же хвали́тисѧ, ѹ҆кори́знꙋ мѝ принесла̀ є҆сѝ. ктомꙋ̀ не терплю̀ ѹ҆жѐ поноше́нїй человѣ́ческихъ: и҆́бо ѿ ї҆ерє́й и҆з цр҃кве гдⷭни ꙗ҆́кѡ непоро́чнꙋ тѧ̀ прїѧ́хъ, и҆ что̀ ви́димое;
+</IDIOMEL>
+<PROKIMENON Type="1P" Tone="4" Header="прокї́менъ, гла́съ д҃ ">
+Гдⷭь речѐ ко мнѣ̀: сн҃ъ мо́й є҆сѝ ты̀, а҆́зъ дне́сь роди́хъ тѧ̀.
+</PROKIMENON>
+<VERSE Type="1P" >
+Просѝ ѿ менѐ, и҆ да́мъ тѝ ꙗ҆зы́ки достоѧ́нїе твоѐ, и҆ ѡ҆держа́нїе твоѐ концы̀ землѝ.
+</VERSE>
+
+<IDIOMEL Type="31" Tone="8" Header="Тропарь Гла́съ ѕ҃" Author="">
+Се́й бг҃ъ на́шъ, не вмѣни́тсѧ и҆́нъ къ немꙋ̀, роди́выйсѧ ѿ дв҃ы, и҆ съ человѣ́ки поживѐ: во ꙗ҆́слехъ ѹ҆бо́гихъ, сн҃ъ є҆диноро́дный, лежа́щь ви́дитсѧ чл҃вѣ́къ: и҆ пелена́ми повива́етсѧ, и҆́же сла́вы гдⷭь: и҆ волхвѡ́мъ ѕвѣзда̀ возвѣща́етъ въ є҆гѡ̀ поклоне́нїе. и҆ мы̀ пои́мъ: трⷪце ст҃а́ѧ, сп҃сѝ дꙋ́шы на́шѧ.
+</IDIOMEL><!-- Note the difference in assigned Tones here -->
+<IDIOMEL Type="32" Tone="3" Header="Тропарь Гла́съ г҃">
+Пре́жде ржⷭтва̀ твоегѡ̀, тре́петнѡ зрѧ́ще та́инство твоѐ, гдⷭи, разꙋ҄мнаѧ вѡ́инства дивлѧ́хꙋсѧ: ꙗ҆́коже бо млⷣнцъ роди́тисѧ бл҃гоизво́лилъ є҆сѝ, нб҃о ѹ҆краси́вый ѕвѣзда́ми, и҆ во ꙗ҆́слехъ безслове́сныхъ возлежи́ши, дла́нїю содержа́й всеѧ̀ землѝ концы̀: таковы́мъ бо смотре́нїемъ ѹ҆вѣ́дѣно бы́сть милосе́рдїе твоѐ, хрⷭтѐ, ве́лїѧ млⷭть твоѧ̀, сла́ва тебѣ̀.
+</IDIOMEL>
+<IDIOMEL Type="33" Tone="3" Header="Тропарь Гла́съ г҃ " Author="">
+Ї҆ѡ́сифе, рцы̀ на́мъ, ка́кѡ ю҆́же ѿ ст҃ы́хъ прїѧ́лъ є҆сѝ дв҃ꙋ, непра́зднꙋ приво́диши въ виѳлее́мъ; а҆́зъ, речѐ, прⷪро́ки и҆спыта́хъ, и҆ вѣ́сть прїе́мъ ѿ а҆́гг҃ла, ѹ҆вѣ́рихсѧ, ꙗ҆́кѡ бг҃а роди́тъ мр҃ї́а несказа́ннѡ, є҆мꙋ́же на поклоне́нїе волсвѝ ѿ восто́кѡвъ прїи́дꙋтъ, съ да́ры чтⷭны́ми слꙋжа́ще. воплоти́выйсѧ на́съ ра́ди, гдⷭи, сла́ва тебѣ̀.
+</IDIOMEL>
+<PROKIMENON Type="3P" Tone="4" Header="прокї́менъ, гла́съ д҃ ">
+Ѻ҆троча̀ роди́сѧ на́мъ, сн҃ъ, и҆ даде́сѧ на́мъ.
+</PROKIMENON>
+<VERSE Type="3P" >
+Є҆гѡ́же нача́льство бы́сть на ра́мѣ є҆гѡ̀.
+</VERSE>
+	
+<IDIOMEL Type="61" Tone="8" Header="Тропарь Гла́съ а҃ " Author="">
+Прїиди́те вѣ́рнїи возведе́мсѧ бж҃е́ственнѣ, и҆ ви́димъ схожде́нїе бж҃е́ственное свы́ше, въ виѳлее́мѣ къ на́мъ ꙗ҆́вленнѣ: и҆ ѹ҆мо́мъ ѡ҆чи́стившесѧ житїѐ принесе́мъ добродѣ́тели, вмѣ́стѡ мѵ́ра предꙋготовлѧ́юще вѣ́рнѡ рожде́ствєнныѧ вхо́ды, ѿ дꙋше́вныхъ сокро́вищъ зовꙋ́ще: въ вы́шнихъ сла́ва бг҃ꙋ сꙋ́щемꙋ въ трⷪцѣ: є҆гѡ́же ра́ди въ человѣ́цѣхъ бл҃говоле́нїе ꙗ҆ви́сѧ, а҆да́ма и҆збавлѧ́ѧ перворо́дныѧ клѧ́твы, ꙗ҆́кѡ чл҃вѣколю́бецъ.
+</IDIOMEL>
+<IDIOMEL Type="62" Tone="4" Header="Тропарь гла́съ д҃ ">
+Слы́ши нб҃о, и҆ внꙋшѝ землѐ, да подви́жатсѧ ѡ҆снова҄нїѧ, да прїи́мꙋтъ тре́петъ преиспѡ́днѧѧ: ꙗ҆́кѡ бг҃ъ же и҆ творе́цъ въ плотско́е ѡ҆дѣ́ѧсѧ зда́нїе, и҆ и҆́же держа́вною рꙋко́ю созда́вый тва́рь, ѹ҆тро́бы зри́тсѧ зда́нїе. ѽ глꙋбина̀ бога́тства и҆ премꙋ́дрости, и҆ ра́зꙋма бж҃їѧ! ꙗ҆́кѡ неиспы́таны сꙋдьбы҄ є҆гѡ̀, и҆ неизслѣ́довани пꙋтїѐ є҆гѡ̀.
+</IDIOMEL>
+<IDIOMEL Type="63" Tone="5" Header="Тропарь гла́съ є҃ " Author="">
+Прїиди́те хрⷭтоно́снїи лю́дїе, да ви́димъ чꙋ́до, всѧ́кїй ра́зꙋмъ ѹ҆жаса́ющее и҆ ѡ҆бдержа́щее: и҆ бл҃гоче́стнѡ воспѣва́юще вѣ́рнїи, поклони́мсѧ. дне́сь къ виѳлее́мꙋ непра́здна сꙋ́щи дв҃а прихо́дитъ роди́ти гдⷭа: ли́цы же а҆́гг҃льстїи предтекꙋ́тъ. и҆ сїѧ҄ ви́дѣвъ вопїѧ́ше ї҆ѡ́сифъ ѡ҆брꙋ́чникъ: что̀ є҆́же въ тебѣ̀ стра́нное та́инство дв҃о, и҆ ка́кѡ хо́щеши роди́ти, неискꙋсобра́чнаѧ ю҆́нице; 
+</IDIOMEL>
+<PROKIMENON Type="6P" Tone="4" Header="прокї́менъ, гла́съ д҃ ">
+И҆з чре́ва пре́жде денни́цы роди́хъ тѧ̀, клѧ́тсѧ гдⷭь и҆ не раска́етсѧ.
+</PROKIMENON>
+<VERSE Type="6P" >
+Речѐ гдⷭь гдⷭви моемꙋ̀, сѣдѝ ѡ҆деснꙋ́ю менѐ.
+</VERSE>
+
+<IDIOMEL Type="91" Tone="6" Header="Тропарь Гла́съ з҃ " Author="">
+Ѹ҆дивлѧ́шесѧ и҆́рѡдъ, зрѧ̀ волхвѡ́въ бл҃гоче́стїе, и҆ гнѣ́вомъ побѣжда́емь, лѣ҄та и҆спыта́ше разстоѧ́нїѧ. ма́тєри безча́дствꙋемы быва́хꙋ, и҆ безвре́менный во́зрастъ младе́нцєвъ го́рцѣ пожина́шесѧ. сосцы̀ ссыха́хꙋсѧ, и҆ и҆сто́чницы мле́чнїи ѹ҆держава́хꙋсѧ, ве́лїе бѧ́ше лю́тое: тѣ́мже бл҃гоче́стнѡ вѣ́рнїи соше́дшесѧ поклони́мсѧ хрⷭто́вꙋ ржⷭтвꙋ̀.
+</IDIOMEL>
+<IDIOMEL Type="92" Tone="2" Header="Тропарь гла́съ в҃ ">
+Є҆гда̀ ї҆ѡ́сифъ, дв҃о, печа́лїю ѹ҆ѧзвлѧ́шесѧ, къ виѳлее́мꙋ и҆дѧ̀, вопїѧ́ла є҆сѝ къ немꙋ̀: что́ мѧ зрѧ̀ непра́зднꙋ дрѧ́хлꙋеши, и҆ смꙋща́ешисѧ, не вѣ́дый всѧ́кѡ є҆́же во мнѣ̀ стра́шнагѡ та́инства; про́чее ѿложѝ стра́хъ всѧ́къ, пресла́вное познава́ѧ. бг҃ъ бо низхо́дитъ на зе́млю млⷭти ра́ди, во чре́вѣ мое́мъ ны́нѣ, а҆́ще и҆ пло́ть прїѧ́тъ: є҆го́же ражда́ема ѹ҆́зриши, ꙗ҆́коже бл҃гоизво́ли, и҆ ра́дости и҆спо́лнивсѧ поклони́шисѧ ꙗ҆́кѡ зижди́телю твоемꙋ̀. є҆го́же а҆́гг҃ли пою́тъ непреста́ннѡ, и҆ славосло́вѧтъ со ѻ҆ц҃е́мъ и҆ дх҃омъ ст҃ы́мъ.
+</IDIOMEL>
+<IDIOMEL Type="93.1" Tone="5" Header="Тропарь гла́съ ѕ҃ " Author="">
+Дне́сь ражда́етсѧ ѿ дв҃ы, рꙋко́ю всю̀ содержа́й тва́рь:
+</IDIOMEL>
+<IDIOMEL Type="93.2" Tone="5" Header="Тропарь гла́съ ѕ҃ " Author="">
+пелена́ми ꙗ҆́коже зе́менъ повива́етсѧ, и҆́же сꙋщество́мъ неприкоснове́ненъ бг҃ъ:
+</IDIOMEL>
+<IDIOMEL Type="93.3" Tone="5" Header="Тропарь гла́съ ѕ҃ " Author="">
+къ ꙗ҆́слехъ возлежи́тъ ѹ҆тверди́вый нб҃са̀ сло́вомъ въ нача́лѣхъ:
+</IDIOMEL>
+<IDIOMEL Type="93.4" Tone="5" Header="Тропарь гла́съ ѕ҃ " Author="">
+ѿ сосцє́въ млеко́мъ пита́етсѧ, и҆́же въ пꙋсты́ни ма́ннꙋ ѡ҆дожди́вый лю́демъ:
+</IDIOMEL>
+<IDIOMEL Type="93.5" Tone="5" Header="Тропарь гла́съ ѕ҃ " Author="">
+волхвы̀ призыва́етъ жени́хъ цр҃ко́вный,
+</IDIOMEL>
+<IDIOMEL Type="93.6" Tone="5" Header="Тропарь гла́съ ѕ҃ " Author="">
+да́ры си́хъ прїе́млетъ сн҃ъ дв҃ы.
+</IDIOMEL>
+<IDIOMEL Type="93.7" Tone="5" Header="Тропарь гла́съ ѕ҃ " Author="">
+покланѧ́емсѧ ржⷭтвꙋ̀ твоемꙋ̀, хрⷭтѐ:
+</IDIOMEL>
+<IDIOMEL Type="93.8" Tone="5" Header="Тропарь гла́съ ѕ҃ " Author="">
+покажѝ на́мъ и҆ бж҃е́ствєннаѧ твоѧ҄ бг҃оѧвлє́нїѧ.
+</IDIOMEL>
+<PROKIMENON Type="9P" Tone="4" Header="прокї́менъ, гла́съ д҃ ">
+Ма́ти сїѡ́нъ рече́тъ: человѣ́къ и҆ человѣ́къ роди́сѧ въ не́мъ.
+</PROKIMENON>
+<VERSE Type="9P">
+Ѡ҆снова҄нїѧ є҆гѡ̀ на гора́хъ ст҃ы́хъ.
+</VERSE>
+
+</ROYALHOURS>
+</SERVICE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SERVICE>
+<ROYALHOURS>
+</ROYALHOURS>
+</SERVICE>
+</LANGUAGE>
+</COMMEMORATION>

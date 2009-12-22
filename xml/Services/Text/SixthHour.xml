@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="The Sixth Hour (Sexte)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="La sixième heure (Sexte)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Ча́съ шесты́й"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="ΩΡΑ  ΕΚΤΗ"/>
+</LANGUAGE>
+</COMMONPRAYER>

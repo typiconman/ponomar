@@ -1,0 +1,25 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value=""/>
+<TEXT Value="Pardon, remit and forgive, O God, our intentional and unintentional falls, by word or deed,
+wittingly or unwittingly, those by night and those by day, those of the mind or those of the senses,
+and forgive us all; for Thou art good and the Lover of mankind."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value=""/>
+<TEXT Value="Ѡ҆сла́би, ѡ҆ста́ви, простѝ, бж҃е, прегрѣшє́нїѧ 
+на҄ша, вѡ́льнаѧ и҆ невѡ́льнаѧ, ꙗ҆̀же въ сло́вѣ и҆ въ 
+дѣ́лѣ, ꙗ҆̀же въ вѣ́дѣнїи и҆ не въ вѣ́дѣнїи, ꙗ҆̀же 
+во днѝ и҆ въ нощѝ, ꙗ҆̀же во ѹ҆мѣ̀ и҆ въ 
+помышле́нїи, всѧ҄ на́мъ простѝ, ꙗ҆́кѡ бл҃гъ и҆ 
+чл҃вѣколю́бецъ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Ἄνες, ἄφες, συγχώρησον, ὁ Θεός, τὰ παραπτώματα ἡμῶν, τὰ ἑκούσια καὶ τὰ ἀκούσια, τα ἐν ἔργῳ καὶ λόγῳ, τὰ ἐν γνώσει καὶ ἀγνοίᾳ, τα ἐν νυκτὶ καὶ ἐν ἡμέρᾳ, τὰ κατὰ νοῦν καὶ διάνοιαν· τὰ πάντα ἡμῖν συγχώρησον, ὡς ἀγαθὸς καὶ φιλάνθρωπος."/>
+</LANGUAGE>
+</COMMONPRAYER>

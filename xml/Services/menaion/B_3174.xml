@@ -1,0 +1,49 @@
+﻿<!-- service file for SID B_3174 (The Forefeast of Christmas) (The days before Christmas) -->
+<?xml-stylesheet type="text/xsl" href="Commemeration.xsl" ?>
+
+<COMMEMORATION>
+<LANGUAGE Cmd="LS == 0">
+<NAME>Forefeast of the Nativity</NAME>
+<SERVICE>
+<TROPARION Type="1" Tone="4" Author="Unknown" Header="Tropar of the Forefeast, Tone 4">
+And it came to pass that Mary was enrolled with Joseph the old man, in Bethlehem, since she was
+of the seed of David, and was great with the Lamb, without seed. And when the time for delivery
+drew near, and they had no place in the village, the cave did appear to the Queen as a delightful
+palace. Verily, Christ shall be born, raising the likeness that fell of old.
+</TROPARION>
+<KONTAKION Type="1" Tone="3" Author="Unknown" Header="Kondak of the Forefeast, Tone 3">
+Today the Virgin cometh to the cave where she will give birth in an ineffable manner to the Word
+Who is before all the ages. Rejoice, therefore, O universe, when thou hearest it heralded: Glorify
+Him, with the angels and the shepherds, Who chose to be seen as a new-born babe, the God Who
+is before all the ages.
+</KONTAKION>
+</SERVICE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<NAME>Предпра́зднство</NAME>
+<SERVICE>
+	<TROPARION Type="1" Tone="4" Author="Traditional" Header="Тропа́рь предпра́зднства, гла́съ д҃ ">
+Написова́шесѧ и҆ногда̀ со ста́рцемъ ї҆ѡ́сифомъ, ꙗ҆́кѡ ѿ сѣ́мене дв҃дова, въ виѳлее́мѣ мр҃їа́мъ, чревоносѧ́щи безсѣ́менное рожде́нїе: наста́ же вре́мѧ ржⷭтва̀, и҆ мѣ́сто ни є҆ди́но же бѣ̀ ѻ҆бита́лищꙋ: но ꙗ҆́коже кра́снаѧ пала́та, верте́пъ цр҃и́цѣ показа́шесѧ. хрⷭто́съ ражда́етсѧ, пре́жде па́дшїй воскр҃си́ти ѡ҆́бразъ. 
+	</TROPARION>
+	<KONTAKION Type="1" Tone="3" Header="Конда́къ предпра́зднства, гла́съ г҃ ">
+Дв҃а дне́сь превѣ́чное сло́во въ верте́пѣ грѧде́тъ роди́ти неизрече́ннѡ: ликꙋ́й вселе́ннаѧ ѹ҆слы́шавши, просла́ви со а҆́гг҃лы и҆ па́стырьми хотѧ́щаго ꙗ҆ви́тисѧ, ѻ҆троча̀ мла́до превѣ́чнаго бг҃а.
+	</KONTAKION>
+</SERVICE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2"><!-- Greek -->
+<SERVICE>
+	<TROPARION Type="1" Tone="4" Author="Traditional" Header="Ἦχος πλ. δ'">
+Ἀπεγράφετο ποτέ, σὺν τῷ πρεσβύτῃ Ἰωσήφ, ὡς ἐκ σπέρματος Δαυΐδ, ἐν Βηθλεὲμ ἡ Μαριάμ, κυοφοροῦσα τὴν ἄσπορον κυοφορίαν. Ἐπέστη δὲ καιρὸς ὁ τῆς γεννήσεως, καὶ τόπος ἦν οὐδεὶς τῷ καταλύματι· ἀλλ' ὡς τερπνὸv παλάτιοv, τὸ Σπήλαιοv τῇ Βασιλίδι ἐδείκνυτο. Χριστὸς γεννᾶται, τὴν πρὶv πεσοῦσαν, ἀναστήσων εἰκόνα.
+	</TROPARION>
+	<KONTAKION Type="1" Tone="3" Header="">
+H παρθένος σήμερον, τὸν προαιώνιον Λόγον, ἐν σπηλαίῳ ἔρχεται, ἀποτεκεῖν ἀπορρήτως. Χόρευε ἡ οἰκουμένη ἀκουτισθεῖσα· δόξασον μετὰ Ἀγγέλων καὶ τῶν Ποιμένων, βουληθέντα ἐποφθῆναι, παιδίον νέον, τὸν πρὸ αἰώνων Θεόν.
+	</KONTAKION>
+</SERVICE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SERVICE>
+<ROYALHOURS>
+</ROYALHOURS>
+</SERVICE>
+</LANGUAGE>
+</COMMEMORATION>

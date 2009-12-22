@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Typica"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value=""/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Тѷпїка̀"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Τυπικά"/>
+</LANGUAGE>
+</COMMONPRAYER>

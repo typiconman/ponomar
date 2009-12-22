@@ -1,0 +1,26 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Only-begotten Son"/>
+<TEXT Value="O Only-begotten Son and Word of God, Who art immortal and Who didst deign for our salvation
+to be incarnate of the holy Theotokos and ever-virgin Mary, and without change became man, and
+was crucified, O Christ our God, and didst trample death by Death, being yet one of the holy
+Trinity, glorified together with the Father and the Holy Spirit, save us."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=" "/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Є҆диноро́дный сн҃ъ"/>
+<TEXT Value="Є҆диноро́дный сн҃е и҆ сло́ве бж҃їй, безсме́ртенъ 
+сы́й, и҆ и҆зво́ливый сп҃се́нїѧ на́шегѡ ра́ди воплоти́тисѧ 
+ѿ ст҃ы́ѧ бцⷣы и҆ приснодв҃ы мр҃ї́и, непрело́жнѡ 
+вочеловѣ́чивыйсѧ, распны́йсѧ же хрⷭтѐ бж҃е, сме́ртїю 
+сме́рть попра́вый, є҆ди́нъ сы́й ст҃ы́ѧ трⷪцы, 
+спрославлѧ́емый ѻ҆ц҃ꙋ̀ и҆ ст҃о́мꙋ дх҃ꙋ, сп҃сѝ на́съ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value="μονογενὴς Υἱὸς"/>
+<TEXT Value="Ὁ μονογενὴς Υἱὸς καὶ Λόγος τοῦ Θεοῦ, ἀθάνατος ὑπάρχων, καὶ καταδεξάμενος, διὰ τὴν ἡμετέραν σωτηρίαν, σαρκωθῆναι ἐκ τῆς ἁγίας Θεοτόκου καὶ ἀειπαρθένου Μαρίας, ἀτρέπτως ἐνανθρωπήσας, σταυρωθείς τε, Χριστὲ ὁ Θεός, θανάτῳ θάνατον πατήσας. Εἷς ὢν τῆς ἁγίας Τριάδος, συνδοξαζόμενος τῷ Πατρὶ καὶ τῷ ἁγίῳ Πνεύματι, σῶσον ἡμᾶς."/>
+</LANGUAGE>
+</COMMONPRAYER>

@@ -1,0 +1,24 @@
+﻿<SERVICES>
+<LANGUAGE>
+<!-- This takes the Biblical entries for the Beatitudes from Matthew, except for the first and last, which require the
+lines to be slightly shortened -->
+<CREATE What="Beat1" Who="
+<TITLE Value="PaschalHoursV" Header="PaschalHoursH" Source="PaschalHoursS" Comment="PaschalHoursComment" />
+<CREATE What="BlessedIsOurGod" Who="P" RedFirst="1" Cmd="PS != 0" />
+<CREATE What="ThroughPrayers" Who="R" RedFirst="1" Cmd="PS == 0"/>
+<CREATE What="Amen" Who="R" RedFirst="1" NewLine="1" />
+<CREATE What="GloryToThee" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="ChristIsRisenR" Who="R" RedFirst="1" Times="3" NewLine="1" Cmd="(nday &gt;= 0 &amp;&amp; nday &lt; 40)"/>
+<CREATE What="HeavenlyKing" Who="R" RedFirst="1" NewLine="1" Cmd="(nday &lt; 0 || nday &gt;= 50)"/>
+<CREATE What="ThriceHoly" Who="R" RedFirst="1" NewLine="1" Command="Bow" Times="3" />
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AllHolyTrinity" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="LordHaveMercyThrice" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="OurFather" Who="R" NewLine="1" RedFirst="1"/>
+<CREATE What="OurFatherDoxology" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="Amen" Who="R" NewLine="1" RedFirst="1"/>
+<CREATE What="LordHaveMercyThrice" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+</LANGUAGE>
+</SERVICES>

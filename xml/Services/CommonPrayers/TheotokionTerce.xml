@@ -1,0 +1,21 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Theotakion" />
+<TEXT Value="Thou art the true vine, O Theotokos, bearing the Fruit of life. Thee do we implore. Wherefore, O
+Lady, intercede thou together with the Apostles and the saints, for the salvation of our souls."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value="Theotakion" />
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="бг҃оро́диченъ"/>
+<TEXT Value="Бцⷣе, ты̀ є҆сѝ лоза̀ и҆́стиннаѧ, возрасти́вшаѧ 
+на́мъ пло́дъ живота̀, тебѣ̀ мо́лимсѧ: моли́сѧ, влⷣчце, 
+со ст҃ы́ми а҆пⷭлы, поми́ловати дꙋ́шы на́шѧ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value="Θεοτοκίον" />
+<TEXT Value="Θεοτόκε, σὺ εἶ ἡ ἄμπελος ἡ ἀληθινή, ἡ βλαστήσασα τὸν καρπὸν τῆς ζωῆς. Σὲ ἱκετεύομεν, πρέσβευε, Δέσποινα, μετὰ τῶν Ἀποστόλων, καὶ πάντων τῶν Ἁγίων, ἐλεηθῆναι τὰς ψυχὰς ἡμῶν."/>
+</LANGUAGE>
+</COMMONPRAYER>

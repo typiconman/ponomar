@@ -1,0 +1,51 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Nicene Creed"/>
+<TEXT Value="I believe in one God, the Father Almighty, Maker of heaven and earth, and of all things
+visible and invisible. And in one Lord, Jesus Christ, the Son of God, the only-begotten, begotten
+before all worlds: Light of Light, very God of very God, begotten not made, of one essence with
+the Father by Whom all things were made. Who for us men, and for our salvation, came down
+from heaven, and was incarnate of the Holy Spirit and the Virgin Mary, and became man. And was
+crucified also for us under Pontius Pilate, and suffered and was buried. And on the third day rose
+again according to the Scriptures. And ascended into heaven, and sitteth at the right hand of the
+Father. And He shall come again, with glory, to judge the living and the dead, Whose kingdom
+shall have no end. And I believe in the Holy Spirit, the Lord, the Giver of life, Who procedeth
+from the Father, Who with the Father and the Son together is worshipped and glorified; Who spake
+by the Prophets. And I believe in One, Holy, Catholic and Apostolic Church. I acknowledge one
+Baptism for the remission of sins. I look for the resurrection of the dead, and the life of the world
+to come. Amen."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="И҆сповѣ́данїе правосла́вныѧ вѣ́ры"/>
+<TEXT Value="Вѣ́рꙋю во є҆ди́наго бг҃а ѻ҆ц҃а̀ вседержи́телѧ, 
+творца̀ нб҃ꙋ и҆ землѝ, ви҄димымъ же всѣ҄мъ и҆ 
+неви҄димымъ. И҆ во є҆ди́наго гдⷭа ї҆и҃са хрⷭта̀, сн҃а 
+бж҃їѧ, є҆диноро́днаго, и҆́же ѿ ѻ҆ц҃а̀ рожде́ннаго 
+пре́жде всѣ́хъ вѣ҄къ: Свѣ́та ѿ свѣ́та, бг҃а 
+и҆́стинна ѿ бг҃а и҆́стинна, рожде́нна, не сотворе́нна, 
+є҆диносꙋ́щна ѻ҆ц҃ꙋ̀, и҆́мже всѧ҄ бы́ша. На́съ ра́ди 
+человѣ҄къ, и҆ на́шегѡ ра́ди сп҃се́нїѧ, сше́дшаго съ 
+нб҃съ, и҆ воплоти́вшагосѧ ѿ дх҃а ст҃а и҆ мр҃ї́и дв҃ы, 
+и҆ вочл҃вѣ́чшасѧ. Распѧ́таго же за ны̀ при понтї́йстѣмъ 
+пїла́тѣ и҆ страда́вша, и҆ погребе́на, и҆ воскр҃сшаго въ 
+тре́тїй де́нь по писа́нїємъ. И҆ возше́дшаго на нб҃са̀, 
+и҆ сѣдѧ́ща ѡ҆деснꙋ́ю ѻ҆ц҃а̀. И҆ па́ки грѧдꙋ́щаго со 
+сла́вою, сꙋди́ти живы҄мъ и҆ мє́ртвымъ, є҆гѡ́же црⷭтвїю 
+не бꙋ́детъ конца̀.
+И҆ въ дх҃а ст҃а́го, гдⷭа, животворѧ́щаго, и҆́же ѿ 
+ѻ҆ц҃а̀ и҆сходѧ́щаго, и҆́же со ѻ҆ц҃е́мъ и҆ сн҃омъ 
+спокланѧ́ема и҆ ссла́вима, глаго́лавшаго прⷪро́ки. Во 
+є҆ди́нꙋ ст҃ꙋ́ю собо́рнꙋю, и҆ а҆пⷭльскꙋю цр҃ковь. 
+И҆сповѣ́дꙋю є҆ди́но креще́нїе во ѡ҆ставле́нїе 
+грѣхѡ́въ. Ча́ю воскрⷭнїѧ ме́ртвыхъ. И҆ жи́зни бꙋ́дꙋщагѡ 
+вѣ́ка, а҆ми́нь."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Πιστεύω εἰς ἕνα Θεόν, Πατέρα, Παντοκράτορα, ποιητὴν οὐρανοῦ καὶ γῆς, ὁρατῶν τε πάντων καὶ ἀοράτων. Καὶ εἰς ἕνα Κύριον Ἰησοῦν Χριστόν, τὸν Υἱὸν τοῦ Θεοῦ τὸν μονογενῆ, τὸν ἐκ τοῦ Πατρὸς γεννηθέντα πρὸ πάντων τῶν αἰώνων· φῶς ἐκ φωτός, Θεὸν ἀληθινὸν ἐκ Θεοῦ ἀληθινοῦ, γεννηθέντα οὐ ποιηθέντα, ὁμοούσιον τῷ Πατρί, δι' οὗ τὰ πάντα ἐγένετο. Τὸν δι' ἡμᾶς τοὺς ἀνθρώπους καὶ διὰ τὴν ἡμετέραν σωτηρίαν κατελθόντα ἐκ τῶν οὐρανῶν καὶ σαρκωθέντα ἐκ Πνεύματος Ἁγίου καὶ Μαρίας τῆς Παρθένου καὶ ἐνανθρωπήσαντα. Σταυρωθέντα τε ὑπὲρ ἡμῶν ἐπὶ Ποντίου Πιλάτου, καὶ παθόντα καὶ ταφέντα. Καὶ ἀναστάντα τῇ τρίτῃ ἡμέρα κατὰ τὰς Γραφάς. Καὶ ἀνελθόντα εἰς τοὺς οὐρανοὺς καὶ καθεζόμενον ἐκ δεξιῶν τοῦ Πατρός. Καὶ πάλιν ἐρχόμενον μετὰ δόξης κρῖναι ζῶντας καὶ νεκρούς, οὗ τῆς βασιλείας οὐκ ἔσται τέλος. Καὶ εἰς τὸ Πνεῦμα τὸ Ἅγιον, τὸ κύριον, τὸ ζωοποιόν, τὸ ἐκ τοῦ Πατρὸς ἐκπορευόμενον, τὸ σὺν Πατρὶ καὶ Υἱῷ συμπροσκυνούμενον καὶ συνδοξαζόμενον, τὸ λαλῆσαν διὰ τῶν προφητῶν. Εἰς μίαν, Ἁγίαν, Καθολικὴν καὶ Ἀποστολικὴν Ἐκκλησίαν. Ὁμολογῶ ἓν βάπτισμα εἰς ἄφεσιν ἁμαρτιῶν. Προσδοκῶ ἀνάστασιν νεκρῶν. Καὶ ζωὴν τοῦ μέλλοντος αἰῶνος. Ἀμήν."/>
+</LANGUAGE>
+</COMMONPRAYER>

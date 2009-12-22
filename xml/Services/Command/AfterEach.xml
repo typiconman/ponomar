@@ -1,0 +1,11 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value=", after each"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value=", après chacun"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value=", по ка́ждымъ"/>
+</LANGUAGE>
+</COMMONPRAYER>

@@ -1,0 +1,27 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value=""/>
+<TEXT Value="O most holy Trinity, consubstantial Power, undivided Kingship, the Cause of all good, be
+gracious even to me, a sinner. Confirm and instruct my heart and take away from me every
+defilement. Enlighten my mind that I may ever glorify, praise and worship Thee, saying: One is
+holy; one is Lord, Jesus Christ, to the glory of God the Father. Amen."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value=""/>
+<TEXT Value="Всест҃а́ѧ трⷪце, є҆диносꙋ́щнаѧ держа́во, 
+нераздѣ́льное црⷭтво, всѣ́хъ бл҃ги́хъ вина̀, 
+бл҃говоли́ же и҆ ѡ҆ мнѣ̀ грѣ́шнѣмъ: ѹ҆твердѝ, 
+вразꙋмѝ се́рдце моѐ, и҆ всю̀ мою̀ ѿимѝ скве́рнꙋ. 
+просвѣтѝ мою̀ мы́сль, да вы́нꙋ сла́влю, пою̀ и҆ 
+покланѧ́юсѧ, и҆ глаго́лю: є҆ди́нъ ст҃ъ, є҆ди́нъ гдⷭь, 
+ї҆и҃съ хрⷭто́съ, во сла́вꙋ бг҃а ѻ҆ц҃а̀, а҆ми́нь."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
+</LANGUAGE>
+</COMMONPRAYER>

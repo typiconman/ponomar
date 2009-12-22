@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Glory to Thee, O Lord, glory to Thee."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Сла́ва тебѣ̀ гдⷭи, сла́ва тебѣ̀."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="Δόξα σοι, Κύριε, δόξα σοι."/>
+</LANGUAGE>
+</COMMONPRAYER>
