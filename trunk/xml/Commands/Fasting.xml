@@ -27,12 +27,9 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 		<RULE Case="0011111" Cmd="nday == 45 || nday == 38"/>
 		<RULE Case="1111111" Cmd="nday >= 49 &amp;&amp; nday &lt;= 56"/>
 	</LANGUAGE>
-	<LANGUAGE Cmd="LS == 1">
-		<!-- Rules specific to the English implementation can be placed here and similarly for other languages. -->
-	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="nday >= 57 &amp;&amp; doy &lt;= 178">
-	<!-- Apostles' Fast Period. I hope this works -->
+	<!-- Apostle's Fast -->
 	<LANGUAGE>
 		<RULE Case="0000001" Cmd="(dow == 1 || dow == 3 || dow == 5)"/>
 		<RULE Case="0000111" Cmd="(dow == 2 || dow == 4)"/>
@@ -65,6 +62,9 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 		<RULE Case="0000001" Cmd="(dow == 1 || dow == 3 || dow == 5)"/>
 		<RULE Case="0000111" Cmd="(dow == 2 || dow == 4)"/>
 		<RULE Case="0011111" Cmd="(dow == 6 || dow == 0)"/>
+		<RULE Case="0011111" Cmd="(dow == 2 || dow == 4) &amp;&amp; dRank == 4"/>
+		<RULE Case="0000111" Cmd="(dow == 1 || dow == 3 || dow == 5) &amp;&amp; dRank == 4"/>
+		<RULE Case="0011111" Cmd="(dow == 3 || dow == 5) &amp;&amp; dRank &gt;= 5"/>
 		<RULE Case="0011111" Cmd="(dow == 2 || dow == 4) &amp;&amp; dRank &gt;= 4"/>
 		<RULE Case="0011111" Cmd="(dow == 1 || dow == 3 || dow == 5) &amp;&amp; dRank &gt;= 4"/>
 	</LANGUAGE>
@@ -82,8 +82,11 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 	<LANGUAGE>
 		<RULE Case="0000001" Cmd="!(dow == 6 || dow == 0)"/>
 		<RULE Case="0000111" Cmd="(dow == 6 || dow == 0)"/>
+		<RULE Case="0000111" Cmd="nday == -18 || doy == 82"/>
 		<RULE Case="0011111" Cmd="dRank == 6"/>
 		<RULE Case="0000000" Cmd="nday == -48"/>
+		<RULE Case="0000000" Cmd="nday == -47"/>
+		
 	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="nday >= -8 &amp;&amp; nday &lt;= -1">
@@ -98,10 +101,9 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 		<RULE Case="0000001" Cmd="(dow == 1 || dow == 2 || dow == 3)"/>
 		<!-- rule below modified to 0000111 by A.A. - Anunciation during Holy Week is an oil day -->
 		<RULE Case="0000111" Cmd="(dow == 1 || dow == 2 || dow == 3) &amp;&amp; dRank == 6"/>
-		<!-- Holy and Great Thursday -->
-		<RULE Case="0000011" Cmd="dow == 4"/>
-		<!-- rule below modified to 0000111 by A.A. - Anunciation during Holy Week is an oil day -->
-		<RULE Case="0000111" Cmd="dow == 4 &amp;&amp; dRank == 6"/>
+		<!-- Holy and Great Thursday. Oil day according to Chapter 32 of Typikon -->
+		<RULE Case="0000111" Cmd="dow == 4"/>
+		<!-- obsolete rule removed -->
 		<!-- Holy and Great Friday -->
 		<RULE Case="0000000" Cmd="dow == 5"/>
 		<RULE Case="0000010" Cmd="dow == 5 &amp;&amp; dRank == 6"/>
@@ -116,9 +118,7 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 		 <!-- Exaltation of the Holy and Life-Giving Cross September 14th -->
 		<RULE Case="0000111" Cmd="doy == 256"/>
 		
-		<!-- Christmas Eve December 24th. Modified by A.A. - Christmas eve is an oil day -->
-		<RULE Case="0000111" Cmd="doy == 357" />
-
+		<!-- Remove obsolete rule -->
 		<!-- Priviledge after Christmas December 25th to January 4th -->
 		<RULE Case="1111111" Cmd="(doy >= 358 &amp;&amp; doy &lt;= 364) || (doy >=0 &amp;&amp; doy &lt; 4)"/>
 
@@ -134,10 +134,7 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 		<!-- Cheesefare Week -->
 		<RULE Case="0111111" Cmd="nday >= -55 &amp;&amp; nday &lt;= -49" />
 		
-		<!-- Wednesday before and Thursday when the canon of St. Andrew is read nday == -18, -17 Neither of these days are noted on days.pravoslavie.ru -->
-		<RULE Case="0000111" Cmd="(nday == -17 &amp;&amp; doy != 83) || (nday == -18 &amp;&amp; doy != 82)"/>
-		<RULE Case="0000111" Cmd="(nday == -19 &amp;&amp; doy == 81) || (nday == -20 &amp;&amp; doy == 80)"/>
-		
+		<!-- Obsolete rules removed -->
 		<!-- Beheading of St. John the Baptist August 29th-->
 		<RULE Case="0000111" Cmd="doy == 240"/>
 								
