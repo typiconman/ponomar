@@ -4,10 +4,10 @@
 <SAINT Name="8" Cmd="dow == 6" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Forefeast of the Nativity" Id="" Type="1" />
+<SAINT Name="Forefeast of the Nativity" Id="9001" Type="1" />
 <SAINT Name="Hieromartyr Ignatius the God-Bearer, Bishop of Antioch (+107)" Id="897" Type="1" />
 <SAINT Name="Saint Philogonius, Bishop of Antioch (+323)" Id="" Type="0" />
-<SAINT Name="New Martyr John the Youth (+1654)" Id="" Type="0" />
+<SAINT Name="New Martyr John the Youth (+1654)" Id="9002" Type="0" />
 <SAINT Name="Righteous Esther" Id="" Type="0" />
 <SAINT Name="Saint Daniel, Archbishop of Serbia (+1338)" Id="584" Type="0" />
 <SAINT Name="Venerable Ignatius, Archimandrite of the Caves of Kiev (+1435)" Id="3153" Type="0" />
@@ -23,7 +23,7 @@
 <SAINT Name="St Ignace de Kiev" Id="3153" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Предпразднство Рождества Христова" Id="" Type="1"/>
+<SAINT Name="Предпразднство Рождества Христова" Id="9001" Type="1"/>
 <SAINT Name="Сщмч. Игнатия Богоносца (107)" Id="897" Type="1"/>
 <SAINT Name="Прав. Иоанна Кронштадского, чудотворца (1908)" Id="6616" Type="4"/>
 <SAINT Name="Свт. Антония, архиеп. Воронежского (1846)" Id="" Type="0"/>

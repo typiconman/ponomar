@@ -5,7 +5,7 @@
 <SAINT Name="17" Cmd="dow == 6" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Afterfeast of the Nativity of Our Lord" Id="" Type="0" />
+<SAINT Name="Afterfeast of the Nativity of Our Lord" Id="9011" Type="0" />
 <SAINT Name="Virginmartyr Anysia at Thessalonica (+ c. 285-305)" Id="2389" Type="1" />
 <SAINT Name="Martyr Zoticus the Presbyter, Nourisher of Orphans (4th C)" Id="3199" Type="1" />
 <SAINT Name="Martyr Philaret of Nicomedia and those with him (+ 311)" Id="3201" Type="0" />
@@ -27,7 +27,7 @@
 <SAINT Name="St Macaire, Métropolite de Moscou et de toute la Russie" Id="6711" Type="1" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Попразднство Рождества Христова" Id="" Type="0"/>
+<SAINT Name="Попразднство Рождества Христова" Id="9011" Type="0"/>
 <SAINT Name="Мц. Анисии (285-305)" Id="2389" Type="1"/>
 <SAINT Name="Сщмч. Зотика пресвитера, сиропитателя (IV)" Id="3199" Type="1"/>
 <SAINT Name="Свт. Макария, митр. Московского (1563)" Id="6711" Type="1"/>

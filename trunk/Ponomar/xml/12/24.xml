@@ -30,7 +30,7 @@
 <LITURGY Type="1" Cmd="dow == 6 || dow == 0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Eve of the Nativity of Christ" Id="" Type="1" />
+<SAINT Name="Eve of the Nativity of Christ" Id="9006" Type="1" />
 <SAINT Name="Nun-Martyr Eugenia of Rome, and with her the Martyrs Philip, her father, Protus, Hyacinth, Basilla, and Claudia (+c.262)" Id="3172" Type="1" />
 <SAINT Name="Venerable Nicholas the Monk, of Bulgaria (9th C)" Id="3173" Type="0" />
 <SAINT Name="Venerable Antiochus of Palestine (+c.635)" Id="" Type="0" />
@@ -38,7 +38,7 @@
 <SAINT Name="New Martyr Akhmed of Constantinople (+1682)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Veille de la Nativité du Seigneur" Id="" Type="1" />
+<SAINT Name="Veille de la Nativité du Seigneur" Id="9006" Type="1" />
 <SAINT Name="Ste Eugénie et ses compagnons" Id="3172" Type="1" />
 <SAINT Name="St Nicolas le Militaire" Id="3173" Type="0" />
 <SAINT Name="St Achaïque" Id="" Type="0" />
@@ -48,7 +48,7 @@
 <SAINT Name="St Delphin, Archevêque de Bordeaux" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Навечерие Рождества Христова (Рождественский сочельник)" Id="" Type="1"/>
+<SAINT Name="Навечерие Рождества Христова (Рождественский сочельник)" Id="9006" Type="1"/>
 <SAINT Name="Прмц. Евгении и с нею мчч. Прота, Иакинфа и Клавдии (ок. 262)" Id="3172" Type="1"/>
 <SAINT Name="Прмч. Иннокентия (1928)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Сергия пресвитера (1942)" Id="4909" Type="0"/>
