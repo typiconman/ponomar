@@ -4,7 +4,7 @@
 <SAINT Name="17" Cmd="dow == 6" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Afterfeast of the Nativity of Our Lord" Id="" Type="0" />
+<SAINT Name="Afterfeast of the Nativity of Our Lord" Id="9011" Type="0" />
 <SAINT Name="20,000 Martyrs burned at Nicomedia including Glycerios the Presbyter, Zeno, Theophilus the Deacon, Dorotheus, Mardonius, Migdonius the Deacon, Indysos, Gorgonios, Peter, Euthymios, Secundos, Nicostrates, the Women martyrs Agatha, Domna, Theophila, Antonia Antonia and others (+302)" Id="3189" Type="1" />
 <SAINT Name="Apostle of the 70 Nicanor the Deacon (+ 38)" Id="4320" Type="0" />
 <SAINT Name="Venerable Ignatius of Lomsk and Yaroslavl (+1591)" Id="902" Type="0" />
@@ -21,7 +21,7 @@
 <SAINT Name="St Ignace de Lomsk" Id="902" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Попразднство Рождества Христова" Id="" Type="0"/>
+<SAINT Name="Попразднство Рождества Христова" Id="9011" Type="0"/>
 <SAINT Name="Мучеников 20000, в Никомидии в церкви сожженных, и прочих, тамо же вне церкви пострадавших: Гликерия пресвитера, Зинона, Феофила диакона, Дорофея, Мардония, Мигдония диакона, Индиса, Горгония, Петра, Евфимия, мцц. Агафии, Домны, Феофилы и иных (302)" Id="3189" Type="1"/>
 <SAINT Name="Сщмчч. Никодима, еп. Белгородского и Аркадия диакона (1918)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Александра пресвитера (1920)" Id="" Type="0"/>
