@@ -17,7 +17,7 @@
 <LITURGY Type="-1" Cmd="dow == 5" Comment="No Liturgy if this day falls on a Friday"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Forefeast of the Theophany" Id="" Type="0" />
+<SAINT Name="Forefeast of the Theophany" Id="9014" Type="0" />
 <SAINT Name="Synaxis of the 70 Apostles: James, the Brother of the Lord, Cleopas, Crispus, Fortunatus, Achaicus, Simeon the Black, and others" Id="146" Type="1" />
 <SAINT Name="Venerable Theoctistus, Abbot at Cucomo in Sicily (+ 800)" Id="148" Type="1" />
 <SAINT Name="Martyrs Zosima the Hermit and Athanasius the Superintendent of Prisoners, Anchorites in Cilicia (3rd-4th C)" Id="150" Type="0" />
@@ -29,7 +29,7 @@
 <SAINT Name="St Aquila, Deacon of the Kievan Caves, far caves (14th C)" Id="317" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Préfête de Théophanie" Id="" Type="0" />
+<SAINT Name="Préfête de Théophanie" Id="9014" Type="0" />
 <SAINT Name="Synaxe des 70 Sts et Glorieux Apôtres" Id="146" Type="1" />
 <SAINT Name="Sts Zosime et Athanase le Greffier" Id="150" Type="0" />
 <SAINT Name="Sts Crysanthe et Euphémie" Id="" Type="0" />
@@ -44,7 +44,7 @@
 <SAINT Name="St Ferréol d'Uzès" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Предпразднство Богоявления" Id="" Type="0"/>
+<SAINT Name="Предпразднство Богоявления" Id="9014" Type="0"/>
 <SAINT Name="Собор 70-ти апостолов: Иакова, брата Господня, Марка и Луки евангелистов, Клеопы, Симеона, Варнавы(Иосифа), Варсавы(Иуста, Иосифа, Иосии), Фаддея, Анании, первомч. архидиакона Стефана, Филиппа, Прохора, Никанора, Тимона, Пармена, Тимофея, Тита, Филимона, Онисима, Епафраса, Архиппа, Силы, Силуана, Крискента, Криспа, Епенета, Андроника, Стахия, Амплия, Урвана, Наркисса, Апеллия, Аристовула, Родиона (Иродиона), Агава, Руфа, Асинкрита, Флегонта, Ерма, Патрова, Ермия, Лина, Гаия, Филолога, Лукия, Иасона, Сосипатра, Олимпа (Олимпана), Тертия, Ераста, Куарта, Евода, Онисифора, Климента, Сосфена, Аполлоса, Тихика, Епафродита, Карпа, Кодрата, Марка, Зины, Аристарха, Пуда, Трофима, Марка, Артемы, Акилы, Фортуната и Ахаика, Дионисия Ареопагита и Симеона Нигера,(Кифы, Кесаря и Алфея)" Id="146" Type="1"/>
 <SAINT Name="Прп.Феоктиста, игумена Кукума Сикелийского (800)" Id="148" Type="1"/>
 <SAINT Name="Свт. Евстафия I, архиеп. Сербского (ок. 1285)" Id="714" Type="1"/>
@@ -55,7 +55,7 @@
 <SAINT Name="Прп. Ахилы, диакона Печерского (XIV)" Id="317" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="主显节前期" Id="" Type="0" />
+<SAINT Name="主显节前期" Id="9014" Type="0" />
 <SAINT Name="七十使徒纪念日：主的弟兄雅科弗、著福音者玛尔克、著福音者路喀、圣母净配约熙福之弟克莱奥帕、克莱奥帕之子西麦翁、瓦尔纳瓦、犹思图、塔德、阿纳尼亚、总辅祭及第一殉道者斯特梵、七辅祭之：辅祭斐利普、辅祭普若霍尔、辅祭尼喀诺尔、辅祭提孟、辅祭帕尔麦那；提摩泰、提托、斐利蒙、奥尼息默、艾帕弗拉、阿尔赫普、息拉、息庐安、克瑞森、克里斯普、艾派奈特、安德若尼科、斯塔赫斯、安普利亚、邬尔班、纳尔基稣、阿佩勒、阿里斯托弗洛、伊若狄翁、阿伽博、路弗、阿辛克里特、弗莱艮、埃尔弥斯、帕特若瓦、埃尔玛斯、理诺、盖奥、斐洛罗格、路基、雅颂、索悉帕提、奥林帕斯、特尔提、埃拉斯特、夸尔特、埃佛迪亚、奥尼息佛尔、克利密斯、索斯特尼、阿颇罗、提赫科、埃帕弗若迪特、卡尔普、科德拉特、被称为约安的玛尔克、齐纳斯、阿里斯塔尔霍、普邓司、特若斐默、玛尔克、阿尔特玛斯、阿桂拉、佛尔图纳特、阿亥科。" Id="146" Type="1" />
 <SAINT Name="圣德奥克提斯特（西西里的库科默地方修道院院长，800年）" Id="148" Type="1" />
 <SAINT Name="隐士佐息玛、典狱阿塔纳西（西里西亚的隐居者，于3-4世纪间为主殉道）" Id="150" Type="0" />
