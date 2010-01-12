@@ -1,0 +1,19 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value=""/>
+<TEXT Value="Come ye before Him and be lighted, and let not your faces be ashamed."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value=""/>
+<TEXT Value="Пристꙋпи́те къ немꙋ̀, и҆ просвѣти́тесѧ, и҆ ли́ца 
+ва҄ша не постыдѧ́тсѧ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Προσέλθετε πρὸς αὐτόν, καὶ φωτίσθητε·"/>
+</LANGUAGE>
+</COMMONPRAYER>
