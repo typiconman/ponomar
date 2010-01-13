@@ -353,8 +353,8 @@ GNU General Public License for details.
 </BIBLE>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<BIBLE Id="zho" Name="和合本上帝版">
-	<INFO ChapterN="Chapter" VerseNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " />
+<BIBLE Id="zho" Name="简体圣经">
+	<INFO ChapterN="Chapter" VerseNo="序,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " />
 	<BOOK Id="Gen" Name="起源之书" Chapters="50" Short="创" Intro="恭读起源之书"/>
 	<BOOK Id="Ex" Name="出离之书" Chapters="40" Short="出" Intro="恭读出离之书"/>
 	<BOOK Id="Lev" Name="勒维人之书" Chapters="27" Short="利／肋" Intro="恭读勒维人之书"/>
@@ -377,23 +377,23 @@ GNU General Public License for details.
 	<BOOK Id="Esther" Name="艾斯提尔传" Chapters="10" Short="帖／艾" Intro="恭读艾斯提尔传"/>
 	<BOOK Id="Job" Name="约弗传" Chapters="42" Short="伯／约" Intro="恭读约弗传"/>
 	<BOOK Id="Psalm" Name="圣咏集" Chapters="151" Short="篇／咏" Intro="恭读圣咏集"/>
-	<BOOK Id="Prov" Name="索洛蒙箴言" Chapters="31" Short="Prov" Intro="恭读索洛蒙箴言"/>
+	<BOOK Id="Prov" Name="索洛蒙箴言" Chapters="31" Short="箴言" Intro="恭读索洛蒙箴言"/>
 	<BOOK Id="Eccles" Name="训道篇" Chapters="12" Short="传" Intro="恭读训道篇"/>
 	<BOOK Id="Song" Name="歌中之歌" Chapters="8" Short="歌" Intro="恭读歌中之歌"/>
-	<BOOK Id="Wisd" Name="索洛蒙的智慧书" Chapters="19" Short="Wisd" Intro="恭读索洛蒙的智慧书"/>
+	<BOOK Id="Wisd" Name="索洛蒙的智慧书" Chapters="19" Short="智慧" Intro="恭读索洛蒙的智慧书"/>
 	<BOOK Id="Sirach" Name="希拉赫的智慧书" Chapters="51" Short="德" Intro="恭读希拉赫的智慧书"/>
 	<BOOK Id="Isa" Name="伊撒依亚书" Chapters="66" Short="赛／依" Intro="恭读伊撒依亚书"/>
 	<BOOK Id="Jerem" Name="耶热弥亚书" Chapters="52" Short="耶" Intro="恭读耶热弥亚书"/>
 	<BOOK Id="Lamen" Name="耶热弥亚之哀歌" Chapters="5" Short="哀" Intro="恭读耶热弥亚之哀歌"/>
 	<BOOK Id="Epistle" Name="耶热弥亚之书信" Chapters="1" Short="巴6" Intro="恭读耶热弥亚之书信"/>
 	<BOOK Id="Baruch" Name="瓦如赫书" Chapters="5" Short="巴" Intro="恭读耶则基伊尔书"/>
-	<BOOK Id="Ezek" Name="耶则基伊尔书" Chapters="48" Short="Ezek" Intro="恭读耶则基伊尔书"/>
-	<BOOK Id="Dan" Name="达尼伊尔书" Chapters="14" Short="Dan" Intro="恭读达尼伊尔书"/>
+	<BOOK Id="Ezek" Name="耶则基伊尔书" Chapters="48" Short="结／则" Intro="恭读耶则基伊尔书"/>
+	<BOOK Id="Dan" Name="达尼伊尔书" Chapters="14" Short="但／达" Intro="恭读达尼伊尔书"/>
 	<BOOK Id="Hos" Name="奥西艾书" Chapters="14" Short="何／欧" Intro="恭读奥西艾书"/>
 	<BOOK Id="Joel" Name="约伊尔书" Chapters="3" Short="珥／岳" Intro="恭读约伊尔书"/>
 	<BOOK Id="Amos" Name="阿摩斯书" Chapters="9" Short="摩／亚" Intro="恭读阿摩斯书"/>
 	<BOOK Id="Obad" Name="奥弗狄亚书" Chapters="1" Short="俄／北" Intro="恭读奥弗狄亚书"/>
-	<BOOK Id="Jona" Name="Jonah" Chapters="4" Short="Jona" Intro="恭读Prophecy of Jonah"/>
+	<BOOK Id="Jona" Name="Jonah" Chapters="4" Short="拿／纳" Intro="恭读约纳书"/>
 	<BOOK Id="Mica" Name="弥亥亚书" Chapters="7" Short="弥／米" Intro="恭读弥亥亚书"/>
 	<BOOK Id="Nahum" Name="纳翁书" Chapters="3" Short="鸿" Intro="恭读纳翁书"/>
 	<BOOK Id="Habak" Name="盎瓦库穆书" Chapters="3" Short="哈" Intro="恭读盎瓦库穆书"/>
@@ -433,6 +433,89 @@ GNU General Public License for details.
 	<BOOK Id="Heb" Name="致希伯来人书" Chapters="13" Short="来／希" Intro="恭读圣帕弗罗致希伯来人书"/>
 	<BOOK Id="Apoc" Name="约安之启示录" Chapters="22" Short="启／默" Intro="恭读约安之启示录"/>
 	<BOOK Id="Composite" Name="合成的经文" Chapters="8" Short="合成" Intro=""/>
+</BIBLE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<BIBLE Id="zho" Name="正體聖經">
+	<INFO ChapterN="Chapter" VerseNo="序,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " />
+	<BOOK Id="Gen" Name="起源之書" Chapters="50" Short="創" Intro="恭讀起源之書"/>
+	<BOOK Id="Ex" Name="出離之書" Chapters="40" Short="出" Intro="恭讀出離之書"/>
+	<BOOK Id="Lev" Name="勒維人之書" Chapters="27" Short="利／肋" Intro="恭讀勒維人之書"/>
+	<BOOK Id="Num" Name="民數之書" Chapters="36" Short="民／戶" Intro="恭讀民數之書"/>
+	<BOOK Id="Deut" Name="第二法典之書" Chapters="34" Short="申" Intro="恭讀第二法典之書"/>
+	<BOOK Id="Josh" Name="納維之子伊穌斯傳" Chapters="24" Short="書／蘇" Intro="恭讀納維之子伊穌斯傳"/>
+	<BOOK Id="Judg" Name="眾審判者傳" Chapters="21" Short="士／民" Intro="恭讀眾審判者傳"/>
+	<BOOK Id="Ruth" Name="如特傳" Chapters="4" Short="得／盧" Intro="恭讀如特傳"/>
+	<BOOK Id="I_Kings" Name="眾王傳一" Chapters="31" Short="撒上" Intro="恭讀眾王傳一"/>
+	<BOOK Id="II_Kings" Name="眾王傳二" Chapters="24" Short="撒下" Intro="恭讀眾王傳二"/>
+	<BOOK Id="III_Kings" Name="眾王傳三" Chapters="22" Short="列上" Intro="恭讀眾王傳三"/>
+	<BOOK Id="IV_Kings" Name="眾王傳四" Chapters="25" Short="列下" Intro="恭讀眾王傳四"/>
+	<BOOK Id="I_Paral" Name="史書補遺一" Chapters="29" Short="歷上／編上" Intro="恭讀史書補遺一（紀年書一）"/>
+	<BOOK Id="II_Paral" Name="史書補遺二" Chapters="36" Short="歷下／編下" Intro="恭讀史書補遺二（紀年書二）"/>
+	<BOOK Id="I_Esdra" Name="艾斯德拉紀一" Chapters="10" Short="拉／厄上" Intro="恭讀艾斯德拉紀一"/>
+	<BOOK Id="Nehem" Name="奈俄彌亞紀" Chapters="13" Short="尼／厄下" Intro="恭讀奈俄彌亞紀"/>
+	<BOOK Id="II_Esdra" Name="艾斯德拉紀二" Chapters="9" Short="艾斯德拉紀二" Intro="恭讀艾斯德拉紀二"/>
+	<BOOK Id="Tobit" Name="托維特傳" Chapters="14" Short="多" Intro="恭讀托維特傳"/>
+	<BOOK Id="Judith" Name="虞狄特傳" Chapters="16" Short="友" Intro="恭讀虞狄特傳"/>
+	<BOOK Id="Esther" Name="艾斯提爾傳" Chapters="10" Short="帖／艾" Intro="恭讀艾斯提爾傳"/>
+	<BOOK Id="Job" Name="約弗傳" Chapters="42" Short="伯／約" Intro="恭讀約弗傳"/>
+	<BOOK Id="Psalm" Name="聖詠集" Chapters="151" Short="篇／詠" Intro="恭讀聖詠集"/>
+	<BOOK Id="Prov" Name="索洛蒙箴言" Chapters="31" Short="箴言" Intro="恭讀索洛蒙箴言"/>
+	<BOOK Id="Eccles" Name="訓道篇" Chapters="12" Short="傳" Intro="恭讀訓道篇"/>
+	<BOOK Id="Song" Name="歌中之歌" Chapters="8" Short="歌" Intro="恭讀歌中之歌"/>
+	<BOOK Id="Wisd" Name="索洛蒙的智慧書" Chapters="19" Short="智慧" Intro="恭讀索洛蒙的智慧書"/>
+	<BOOK Id="Sirach" Name="希拉赫的智慧書" Chapters="51" Short="德" Intro="恭讀希拉赫的智慧書"/>
+	<BOOK Id="Isa" Name="伊撒依亞書" Chapters="66" Short="賽／依" Intro="恭讀伊撒依亞書"/>
+	<BOOK Id="Jerem" Name="耶熱彌亞書" Chapters="52" Short="耶" Intro="恭讀耶熱彌亞書"/>
+	<BOOK Id="Lamen" Name="耶熱彌亞之哀歌" Chapters="5" Short="哀" Intro="恭讀耶熱彌亞之哀歌"/>
+	<BOOK Id="Epistle" Name="耶熱彌亞之書信" Chapters="1" Short="巴6" Intro="恭讀耶熱彌亞之書信"/>
+	<BOOK Id="Baruch" Name="瓦如赫書" Chapters="5" Short="巴" Intro="恭讀耶則基伊爾書"/>
+	<BOOK Id="Ezek" Name="耶則基伊爾書" Chapters="48" Short="結／則" Intro="恭讀耶則基伊爾書"/>
+	<BOOK Id="Dan" Name="達尼伊爾書" Chapters="14" Short="但／達" Intro="恭讀達尼伊爾書"/>
+	<BOOK Id="Hos" Name="奧西艾書" Chapters="14" Short="何／歐" Intro="恭讀奧西艾書"/>
+	<BOOK Id="Joel" Name="約伊爾書" Chapters="3" Short="珥／岳" Intro="恭讀約伊爾書"/>
+	<BOOK Id="Amos" Name="阿摩斯書" Chapters="9" Short="摩／亞" Intro="恭讀阿摩斯書"/>
+	<BOOK Id="Obad" Name="奧弗狄亞書" Chapters="1" Short="俄／北" Intro="恭讀奧弗狄亞書"/>
+	<BOOK Id="Jona" Name="Jonah" Chapters="4" Short="拿／納" Intro="恭讀約納書"/>
+	<BOOK Id="Mica" Name="彌亥亞書" Chapters="7" Short="彌／米" Intro="恭讀彌亥亞書"/>
+	<BOOK Id="Nahum" Name="納翁書" Chapters="3" Short="鴻" Intro="恭讀納翁書"/>
+	<BOOK Id="Habak" Name="盎瓦庫穆書" Chapters="3" Short="哈" Intro="恭讀盎瓦庫穆書"/>
+	<BOOK Id="Zeph" Name="索佛尼亞書" Chapters="3" Short="番／索" Intro="恭讀索佛尼亞書"/>
+	<BOOK Id="Hagg" Name="盎蓋書" Chapters="2" Short="該／蓋" Intro="恭讀盎蓋書"/>
+	<BOOK Id="Zech" Name="匝哈里亞書" Chapters="14" Short="亞／匝" Intro="恭讀匝哈里亞書"/>
+	<BOOK Id="Mal" Name="瑪拉希亞書" Chapters="4" Short="瑪／拉" Intro="恭讀瑪拉希亞書"/>
+	<BOOK Id="I_Macc" Name="瑪喀維傳一" Chapters="16" Short="加上" Intro="恭讀瑪喀維傳一"/>
+	<BOOK Id="II_Macc" Name="瑪喀維傳二" Chapters="15" Short="加下" Intro="恭讀瑪喀維傳三"/>
+	<BOOK Id="III_Macc" Name="瑪喀維傳三" Chapters="7"  Short="瑪喀維傳三" Intro="恭讀瑪喀維傳三"/>
+	<BOOK Id="III_Esdra" Name="艾斯德拉紀三" Chapters="16" Short="艾斯德拉紀三" Intro="恭讀艾斯德拉紀三"/>
+	<BOOK Id="Mt" Name="瑪特泰福音" Chapters="28" Short="太／瑪" Intro="恭讀聖福音依瑪特泰所傳者"/>
+	<BOOK Id="Mk" Name="瑪爾克福音" Chapters="16" Short="可／谷" Intro="恭讀聖福音依瑪爾克所傳者"/>
+	<BOOK Id="Lk" Name="路喀福音" Chapters="24" Short="路加" Intro="恭讀聖福音依路喀所傳者"/>
+	<BOOK Id="Jn" Name="約安福音" Chapters="21" Short="約／若" Intro="恭讀聖福音依約安所傳者"/>
+	<BOOK Id="Acts" Name="使徒行實" Chapters="28" Short="徒／宗" Intro="恭讀使徒行實"/>
+	<BOOK Id="Jas" Name="雅科弗書信" Chapters="5" Short="雅" Intro="恭讀雅科弗書信"/>
+	<BOOK Id="I_Pet" Name="裴特若書信一" Chapters="5" Short="彼前／伯前" Intro="恭讀裴特若書信一"/>
+	<BOOK Id="II_Pet" Name="裴特若書信二" Chapters="3" Short="彼後／伯後" Intro="恭讀裴特若書信二"/>
+	<BOOK Id="I_Jn" Name="約安書信一" Chapters="5" Short="約壹／若一" Intro="恭讀約安書信一"/>
+	<BOOK Id="II_Jn" Name="約安書信二" Chapters="1" Short="約貳／若二" Intro="恭讀約安書信二"/>
+	<BOOK Id="III_Jn" Name="I約安書信三" Chapters="1" Short="約叄／若三" Intro="恭讀約安書信三"/>
+	<BOOK Id="Jude" Name="猶達書信" Chapters="1" Short="猶" Intro="恭讀猶達書信"/>
+	<BOOK Id="Rom" Name="致羅馬人書" Chapters="16" Short="羅" Intro="恭讀聖帕弗羅致羅馬人書"/>
+	<BOOK Id="I_Cor" Name="致科林托人書一" Chapters="16" Short="林前／格前" Intro="恭讀聖帕弗羅致科林托人書一"/>
+	<BOOK Id="II_Cor" Name="致科林托人書二" Chapters="13" Short="林後／格後" Intro="恭讀聖帕弗羅致科林托人書二"/>
+	<BOOK Id="Gal" Name="致噶拉塔人書" Chapters="6" Short="加／迦" Intro="恭讀聖帕弗羅致噶拉塔人書"/>
+	<BOOK Id="Eph" Name="致艾弗所人書" Chapters="6" Short="弗" Intro="恭讀聖帕弗羅致艾弗所人書"/>
+	<BOOK Id="Philip" Name="致斐利彼人書" Chapters="4" Short="腓／斐" Intro="恭讀聖帕弗羅致斐利彼人書"/>
+	<BOOK Id="Col" Name="致科羅西人書" Chapters="4" Short="西／哥" Intro="恭讀聖帕弗羅致科羅西人書"/>
+	<BOOK Id="I_Thess" Name="致特撒洛尼基人書一" Chapters="5" Short="帖前／得前" Intro="恭讀聖帕弗羅致特撒洛尼基人書一"/>
+	<BOOK Id="II_Thess" Name="致特撒洛尼基人書二" Chapters="3" Short="帖後／得後" Intro="恭讀聖帕弗羅致特撒洛尼基人書二"/>
+	<BOOK Id="I_Tim" Name="致提摩特書一" Chapters="6" Short="提前／弟前" Intro="恭讀聖帕弗羅致提摩特書一"/>
+	<BOOK Id="II_Tim" Name="致提摩特書二" Chapters="4" Short="提後／弟後" Intro="恭讀聖帕弗羅致提摩特書二" />
+	<BOOK Id="Tit" Name="致提托書" Chapters="3" Short="多／鐸" Intro="恭讀聖帕弗羅致提托書"/>
+	<BOOK Id="Philemon" Name="致斐利蒙書" Chapters="1" Short="門／費" Intro="恭讀聖帕弗羅致斐利蒙書"/>
+	<BOOK Id="Heb" Name="致希伯來人書" Chapters="13" Short="來／希" Intro="恭讀聖帕弗羅致希伯來人書"/>
+	<BOOK Id="Apoc" Name="約安之啟示錄" Chapters="22" Short="啟／默" Intro="恭讀約安之啟示錄"/>
+	<BOOK Id="Composite" Name="合成的經文" Chapters="8" Short="合成" Intro=""/>
 </BIBLE>
 </LANGUAGE>
 </BMLFILE>
