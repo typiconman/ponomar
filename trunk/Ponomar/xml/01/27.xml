@@ -32,4 +32,15 @@
 <SAINT Name="敬迁圣马尔前娜之圣髑纪念日" Id="" Type="0" />
 <SAINT Name="圣纳塔利斯" Id="" Type="0" />
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="敬遷君士坦丁堡總主教聖金口約安之聖髑紀念日（437年）" Id="978" Type="4" />
+<SAINT Name="新殉道者迪彌特里（君士坦丁堡，1784年）" Id="" Type="0" />
+<SAINT Name="聖裴特若（埃及人，5世紀）" Id="" Type="0" />
+<SAINT Name="聖蒂圖斯（士兵，基輻洞窟修道院的修士）" Id="" Type="0" />
+<SAINT Name="聖迪彌特里（本姓克勒彼尼奈，巴黎城司祭，1944年）" Id="" Type="0" />
+<SAINT Name="聖萊翁提（本姓斯塔塞維奇，伊凡諾沃地方人，1972年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭萊翁提（密修者，波蘭的塔爾諾頗爾及嘉布樂切那地方人，1972年）" Id="" Type="0" />
+<SAINT Name="敬遷聖馬爾前娜之聖髑紀念日" Id="" Type="0" />
+<SAINT Name="聖納塔利斯" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

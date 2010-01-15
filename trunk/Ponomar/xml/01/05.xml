@@ -94,4 +94,22 @@
 <SAINT Name="新殉道司祭塞尔吉（1934年）" Id="" Type="0" />
 <SAINT Name="敬迁英格兰德文郡塔维斯托克的圣鲁曼（6世纪）之圣髑纪念日（981年）" Id="" Type="0" />
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="主顯節前夕" Id="9013" Type="1" />
+<SAINT Name="殉道者德奧般普特（尼科麥迪亞地方主教）及德奧納（303年）" Id="155" Type="1" />
+<SAINT Name="童貞女阿頗利納里斯（埃及人，470年）" Id="" Type="0" />
+<SAINT Name="先知彌亥亞（主降生前9世紀）" Id="1564" Type="0" />
+<SAINT Name="聖格里高利（克里特修士，820年）" Id="161" Type="0" />
+<SAINT Name="聖佛斯特里（隱士，6世紀）" Id="159" Type="0" />
+<SAINT Name="聖彌納（西奈山人，6世紀）" Id="160" Type="0" />
+<SAINT Name="殉道者特奧伊杜" Id="" Type="0" />
+<SAINT Name="殉道者塞斯" Id="" Type="0" />
+<SAINT Name="聖塔迪安娜" Id="" Type="0" />
+<SAINT Name="聖女辛克利提卡（亞歷山大里亞人，350年） " Id="" Type="0" />
+<SAINT Name="新修士殉道者羅瑪諾（卡爾佩尼西翁地方人，1694年就義於君士坦丁堡）" Id="" Type="0" />
+<SAINT Name="新殉道司祭約瑟夫協同他就義的37人（1921年）" Id="" Type="0" />
+<SAINT Name="殉道童女猶金尼婭（1933年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭塞爾吉（1934年）" Id="" Type="0" />
+<SAINT Name="敬遷英格蘭德文郡塔維斯托克的聖魯曼（6世紀）之聖髑紀念日（981年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
