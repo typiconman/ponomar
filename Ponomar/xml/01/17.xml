@@ -47,4 +47,18 @@
 <SAINT Name="新殉道司祭维克多（1931年）" Id="" Type="0" />
 <SAINT Name="新殉道司祭帕弗罗（1938年）" Id="" Type="0" />
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大聖安托尼（356年）" Id="209" Type="5" />
+<SAINT Name="新聖安托尼（馬其頓的貝爾希亞地方人，11世紀）" Id="" Type="0" />
+<SAINT Name="聖德奧多西偉大者（拜占庭帝國皇帝，395年）" Id="" Type="0" />
+<SAINT Name="聖安托尼（諾夫哥羅德的迪穆斯克修道院院長，1224年）" Id="" Type="0" />
+<SAINT Name="聖安托尼（羅馬人，諾夫哥羅德的成德者，1147年）" Id="" Type="0" />
+<SAINT Name="聖安托尼（切爾諾埃澤爾斯克地方修士，16世紀）" Id="222" Type="0" />
+<SAINT Name="聖安托尼（克霍爾默的克拉斯尼地方修士，1481年）" Id="" Type="0" />
+<SAINT Name="聖阿希利斯（宣信者，埃及的隱士，5世紀）" Id="" Type="0" />
+<SAINT Name="聖瑪喀里（帕特摩斯島的修士輔祭，1737年）" Id="" Type="0" />
+<SAINT Name="新殉道者格奧爾吉（約阿尼納人，1838年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭維克多（1931年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭帕弗羅（1938年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

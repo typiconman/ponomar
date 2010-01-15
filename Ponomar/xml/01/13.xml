@@ -45,4 +45,17 @@
 <SAINT Name="圣伊拉里（颇伊提埃尔城主教，369年）" Id="" Type="0" />
 <SAINT Name="圣厄尔宾（480年）" Id="" Type="0" />
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="主顯節慶期" Id="" Type="0" />
+<SAINT Name="殉道者埃爾彌羅及斯特拉托尼科（貝爾格萊德，315年）" Id="799" Type="1" />
+<SAINT Name="聖雅科弗（尼西比斯主教，350年）" Id="212" Type="0" />
+<SAINT Name="殉道者裴特若（阿尼翁地方人，就義於艾萊夫特若玻里城，1世紀）" Id="202" Type="0" />
+<SAINT Name="聖瑪克西默（阿索斯聖山的卡普索卡利維精舍修士，1364年）" Id="" Type="0" />
+<SAINT Name="殉道者阿塔納修斯" Id="" Type="0" />
+<SAINT Name="殉道者帕霍彌及帕彼里諾（就義於希臘）" Id="" Type="0" />
+<SAINT Name="聖埃勒阿匝爾（索洛夫基地方的安則爾斯克島人，1656年）" Id="211" Type="1" />
+<SAINT Name="聖伊里納爾赫（羅斯托夫人，1616年）" Id="210" Type="1" />
+<SAINT Name="聖伊拉里（頗伊提埃爾城主教，369年）" Id="" Type="0" />
+<SAINT Name="聖厄爾賓（480年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

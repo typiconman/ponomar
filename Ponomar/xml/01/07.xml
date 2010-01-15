@@ -22,7 +22,7 @@
 <SAINT Name="Сщмч. Василия пресвитера (1939)" Id="" Type="0"/>
 <SAINT Name="Мч. Иоанна (1940)" Id="" Type="0"/>
 </LANGUAGE>
-<LANGUAGE Cmd="LS == 0">
+<LANGUAGE Cmd="LS == 5">
 <SAINT Name="神圣而荣耀者，先知，前驱，施浸者约安纪念日" Id="1007" Type="3" />
 <SAINT Name="新殉道者阿塔纳西（斯米尔那地方人，1700年）" Id="" Type="0" />
 <SAINT Name="圣先驱约安的右手从安提约希亚转移到沙戈拉德〔956年〕，以及圣先驱约安在希俄斯击败哈加里特人〔伊斯兰人〕的奇迹" Id="" Type="0" />
@@ -30,5 +30,12 @@
 <SAINT Name="圣布蓝诺克（布蓝恩顿地方人，6世纪）" Id="" Type="0" />
 <SAINT Name="圣凯德（拉斯廷格汉地方主教，664年）" Id="" Type="0" />
 </LANGUAGE>
-
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="神聖而榮耀者，先知，前驅，施浸者約安紀念日" Id="1007" Type="3" />
+<SAINT Name="新殉道者阿塔納西（斯米爾那地方人，1700年）" Id="" Type="0" />
+<SAINT Name="聖先驅約安的右手從安提約希亞轉移到沙戈拉德〔956年〕，以及聖先驅約安在希俄斯擊敗哈加里特人〔伊斯蘭人〕的奇跡" Id="" Type="0" />
+<SAINT Name="聖帕霍彌（凱諾湖修道院院長，1525年）" Id="" Type="0" />
+<SAINT Name="聖布藍諾克（布藍恩頓地方人，6世紀）" Id="" Type="0" />
+<SAINT Name="聖凱德（拉斯廷格漢地方主教，664年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

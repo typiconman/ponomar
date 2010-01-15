@@ -37,7 +37,20 @@
 <SAINT Name="圣玛克西默（希腊人，安息于俄罗斯，1556年）" Id="" Type="0" />
 <SAINT Name="“示道”圣母像纪念日" Id="275" Type="0" />
 <SAINT Name="圣佐息玛（锡拉库扎城主教，662年）" Id="" Type="0"/>
-<SAINT Name="阿托斯圣山瓦托佩迪修道院的显灵迹“帕拉弥提亚（安慰者）&quot;圣母像纪念日" Id="" Type="0"/>
+<SAINT Name="阿托斯圣山瓦托佩迪修道院的显灵迹“帕拉弥提亚（安慰者）”圣母像纪念日" Id="" Type="0"/>
 <SAINT Name="君士坦丁堡海岸的圣平安教堂纪念日" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖瑪克西默（宣信者，662年）" Id="267" Type="1" />
+<SAINT Name="殉道者奈奧斐特（尼西亞，305年）" Id="269" Type="1" />
+<SAINT Name="殉道者：艾弗吉尼、坎迪德、瓦萊里安、阿桂拉（均就義於特里維宗德，303年）" Id="270" Type="1" />
+<SAINT Name="童貞殉道女阿格尼斯（羅馬城人，304年）" Id="2372" Type="0" />
+<SAINT Name="殉道者阿納斯塔西（聖瑪克西默宣信者的弟子，662年）" Id="167" Type="0" />
+<SAINT Name="聖瑪克西默（希臘人，安息於俄羅斯，1556年）" Id="" Type="0" />
+<SAINT Name="「示道」聖母像紀念日" Id="275" Type="0" />
+<SAINT Name="聖佐息瑪（錫拉庫扎城主教，662年）" Id="" Type="0"/>
+<SAINT Name="阿托斯聖山瓦托佩迪修道院的顯靈跡「帕拉彌提亞（安慰者）」聖母像紀念日" Id="" Type="0"/>
+<SAINT Name="君士坦丁堡海岸的聖平安教堂紀念日" Id="" Type="0"/>
+</LANGUAGE>
+
 </DAY>
