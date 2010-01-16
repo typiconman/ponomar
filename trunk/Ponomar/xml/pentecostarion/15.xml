@@ -14,4 +14,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Среда 2-й седмицы по Пасхе. Свв. жен мироносиц, Иосифа Аримафейского и Никодима" Id="2598" Type="1" Tone="2"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="葩斯哈庆期第三主日（携香液女主日）" Id="2598" Type="1" Tone="2" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="葩斯哈慶期第三主日（攜香液女主日）" Id="2598" Type="1" Tone="2" />
+</LANGUAGE>
 </DAY>

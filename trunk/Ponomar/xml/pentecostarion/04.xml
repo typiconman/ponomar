@@ -13,4 +13,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Светлая Среда" Id="" Type="6" Tone="-1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="光明周（更新周）瞻礼四" Id="" Type="6" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="光明週（更新週）瞻禮四" Id="" Type="6" Tone="-1"/>
+</LANGUAGE>
 </DAY>

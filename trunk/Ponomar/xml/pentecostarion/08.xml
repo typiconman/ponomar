@@ -14,4 +14,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Неделя 2-я по Пасхе, Фомина. Антипасха. Воспоминание уверения ап. Фомы" Id="2323" Type="0" Tone="1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="葩斯哈庆期第二主日（圣托玛斯主释疑主日，主复活后主日）" Id="2323" Type="0" Tone="1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="葩斯哈慶期第二主日（聖托瑪斯主釋疑主日，主復活後主日）" Id="2323" Type="0" Tone="1"/>
+</LANGUAGE>
 </DAY>

@@ -15,4 +15,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Светлая Пятница. Празднование в честь иконы Божией Матери &quot;Живоносный Источник&quot;" Id="2849" Type="6" Tone="-1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="光明周（更新周）预备日" Id="" Type="6" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="光明週（更新週）預備日" Id="" Type="6" Tone="-1"/>
+</LANGUAGE>
 </DAY>
