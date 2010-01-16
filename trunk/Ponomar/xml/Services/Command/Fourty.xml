@@ -5,4 +5,7 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="(Quarante fois)"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5 || LS == 6">
+<TEXT Value="（四十遍）"/>
+</LANGUAGE>
 </COMMONPRAYER>
