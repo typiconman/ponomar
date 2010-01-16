@@ -5,7 +5,10 @@
 <LANGUAGE Cmd="LS == 1">
 <TEXT Value="Prostration"/>
 </LANGUAGE>
-<LANGUAGE Cmd="LS == 2 || LS ==3">
+<LANGUAGE Cmd="LS == 2 || LS == 3">
 <TEXT Value="вели́кїй покло́нъ"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5|| LS == 6">
+<TEXT Value="叩拜"/>
 </LANGUAGE>
 </COMMONPRAYER>
