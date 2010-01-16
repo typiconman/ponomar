@@ -14,4 +14,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Неделя 4-я по Пасхе, о расслабленом. Прав. Тавифы (I)" Id="" Type="0" Tone="3"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="葩斯哈庆期第四主日（起瘫主日）" Id="" Type="0" Tone="3" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="葩斯哈慶期第四主日（起癱主日）" Id="" Type="0" Tone="3" />
+</LANGUAGE>
 </DAY>

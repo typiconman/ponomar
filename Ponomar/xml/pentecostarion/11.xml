@@ -13,4 +13,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Среда 2-й седмицы по Пасхе" Id="" Type="0" Tone="1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="葩斯哈庆期第二周瞻礼四" Id="" Type="0" Tone="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="葩斯哈慶期第二週瞻禮四" Id="" Type="0" Tone="1" />
+</LANGUAGE>
 </DAY>

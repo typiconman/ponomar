@@ -15,6 +15,9 @@
 <SAINT Name="Светлое Христово Воскресение. Пасха." Id="" Type="6" Tone="-1"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="[Chinese Text goes here]" Id="" Type="6" Tone="-1"/>
+<SAINT Name="圣葩斯哈主日——纪念我们的主，救主，上帝，耶稣基督逾越了阴府，自死者中荣耀地复活" Id="" Type="6" Tone="-1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖葩斯哈主日——紀念我們的主，救主，上帝，耶穌基督逾越了陰府，自死者中榮耀地復活" Id="" Type="6" Tone="-1"/>
 </LANGUAGE>
 </DAY>
