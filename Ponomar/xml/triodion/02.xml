@@ -45,4 +45,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Великая пятница. Воспоминание Святых спасительных Страстей Господа нашего Иисуса Христа" Id="" Type="0" Tone="-1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大预备日（主受难日）" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大預備日（主受難日）" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
 </DAY>

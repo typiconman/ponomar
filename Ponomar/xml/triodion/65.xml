@@ -13,4 +13,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Сплошная седмица. Пятница" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="预备日（本周免斋）" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="預備日（本週免齋）" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
 </DAY>

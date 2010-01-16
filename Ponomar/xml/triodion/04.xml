@@ -17,4 +17,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Великая среда" Id="" Type="0" Tone="-1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大瞻礼四（悔罪女以香膏傅抹主圣足）" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大瞻禮四（悔罪女以香膏傅抹主聖足）" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
 </DAY>

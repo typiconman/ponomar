@@ -23,4 +23,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Великий четверг. Воспоминание Тайной Вечери" Id="" Type="0" Tone="-1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大瞻礼五（纪念主的奥秘晚餐）" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大瞻禮五（紀念主的奧秘晚餐）" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
 </DAY>
