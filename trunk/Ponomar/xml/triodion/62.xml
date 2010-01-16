@@ -13,4 +13,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Понедельник мясопустный" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="离肉瞻礼二" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="離肉瞻禮二" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
 </DAY>

@@ -24,4 +24,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Неделя о мытаре и фарисее" Id="" Type="0" Tone="(ndayP / 7) % 8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="税吏及法利塞人主日" Id="" Type="0" Tone="(ndayP / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="稅吏及法利塞人主日" Id="" Type="0" Tone="(ndayP / 7) % 8" />
+</LANGUAGE>
 </DAY>

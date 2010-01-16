@@ -17,4 +17,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Великий вторник" Id="" Type="0" Tone="-1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大瞻礼三（纪念明智的童贞女）" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大瞻禮三（紀念明智的童貞女）" Id="" Type="0" Tone="-1" />
+</LANGUAGE>
 </DAY>
