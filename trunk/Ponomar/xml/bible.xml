@@ -209,7 +209,7 @@ GNU General Public License for details.
 	<BOOK Id="Judith" Name="Ї҆ꙋдї́ѳ" Chapters="16" Short="Иудифь." Intro=""/>
 	<BOOK Id="Esther" Name="Є҆сѳи́рь" Chapters="10" Short="Есф." Intro=""/>
 	<BOOK Id="Job" Name="Ї҆́ѡвъ" Chapters="42" Short="Иов" Intro="Ї҆́ѡва чте́нїе" Note="The last verse of Chapter 42 is much longer than in all the other translations!"/>
-	<BOOK Id="Psalm" Name="Ѱсалти́рь" Chapters="151" Short="Пс." Intro="Ѱало́мъ"/>
+	<BOOK Id="Psalm" Name="Ѱалти́рь" Chapters="151" Short="Пс." Intro="Ѱало́мъ"/>
 	<BOOK Id="Prov" Name="При́тчей соломѡ́нихъ" Chapters="31" Short="Притч." Intro="При́тчей чте́нїе"/>
 	<BOOK Id="Eccles" Name="Є҆кклесїа́ст" Chapters="12" Short="Еккл." Intro=""/>
 	<BOOK Id="Song" Name="Пѣ́снь пѣ́сней" Chapters="8" Short="Песн." Intro=""/>
@@ -264,7 +264,7 @@ GNU General Public License for details.
 	<BOOK Id="Tit" Name="Къ тї́тꙋ" Chapters="3" Short="Тит." Intro="Къ тї́тꙋ посла́нїѧ ст҃гѡ а҆пⷭла пaѵла чте́нїе"/>
 	<BOOK Id="Philemon" Name="Къ фїлимо́нꙋ" Chapters="1" Short="Флм." Intro="Къ фїлимо́нꙋ посла́нїѧ ст҃гѡ а҆пⷭла пaѵла чте́нїе"/>
 	<BOOK Id="Heb" Name="Ко є҆вре́ємъ" Chapters="13" Short="Евр." Intro="Ко є҆вре́ємъ посла́нїѧ ст҃гѡ а҆пⷭла пaѵла чте́нїе"/>
-	<BOOK Id="Apoc" Name="А҆пока́лѷѱсїсъ" Chapters="22" Short="Апок." Intro=""/>
+	<BOOK Id="Apoc" Name="А҆пока́лѷѱїсъ" Chapters="22" Short="Апок." Intro=""/>
 	<BOOK Id="Composite" Name="Composite" Chapters="8" Short="Composite" Intro=""/>
 
 </BIBLE>
@@ -572,33 +572,33 @@ GNU General Public License for details.
 	<BOOK Id="II_Macc" Name="Μακκαβαίων Β'" Chapters="15" Short="Μακ Β'" Intro="A reading from the second Book of Maccabees"/>
 	<BOOK Id="III_Macc" Name="Μακκαβαίων Γ'" Chapters="7"  Short="Μακ Γ'" Intro="A reading from the third Book of Maccabees" Note="Some issues with versification."/>
 	<BOOK Id="III_Esdra" Name="Ἔσδρας Γ'" Chapters="16" Short="Ἔσδρας Γ'" Intro="A reading from the third Book of Esdras" Note="This book is not found in the Greek versions of the Bible."/>
-	<BOOK Id="Mt" Name="Matthew" Chapters="28" Short="Mt" Intro="A reading from the Holy Gospel according to Matthew"/>
-	<BOOK Id="Mk" Name="Mark" Chapters="16" Short="Mk" Intro="A reading from the Holy Gospel according to Mark"/>
-	<BOOK Id="Lk" Name="Luke" Chapters="24" Short="Lk" Intro="A reading from the Holy Gospel according to Luke"/>
-	<BOOK Id="Jn" Name="John" Chapters="21" Short="Jn" Intro="A reading from the Holy Gospel accoridng to John"/>
-	<BOOK Id="Acts" Name="Acts" Chapters="28" Short="Acts" Intro="A reading from the Acts of the Apostles"/>
-	<BOOK Id="Jas" Name="James" Chapters="5" Short="Jas" Intro="A reading from the Epistle of James"/>
-	<BOOK Id="I_Pet" Name="I Peter" Chapters="5" Short="I Pet" Intro="A reading from the the first Epistle of Peter"/>
-	<BOOK Id="II_Pet" Name="II Peter" Chapters="3" Short="II Pet" Intro="A reading from the second Epistle of Peter"/>
-	<BOOK Id="I_Jn" Name="I John" Chapters="5" Short="I Jn" Intro="A reading from the first Epistle of John"/>
-	<BOOK Id="II_Jn" Name="II John" Chapters="1" Short="II Jn" Intro="A reading from the second Epistle of John"/>
-	<BOOK Id="III_Jn" Name="III John" Chapters="1" Short="III Jn" Intro="A reading from the third Epistle of John"/>
-	<BOOK Id="Jude" Name="Jude" Chapters="1" Short="Jude" Intro="A reading from the Epistle of Jude"/>
-	<BOOK Id="Rom" Name="Romans" Chapters="16" Short="Rom" Intro="A reading from the Epistle of Paul to the Romans"/>
-	<BOOK Id="I_Cor" Name="I Corinthians" Chapters="16" Short="I Cor" Intro="A reading from the first Epistle of Paul to the Corinthians"/>
-	<BOOK Id="II_Cor" Name="II Corinthians" Chapters="13" Short="II Cor" Intro="A reading from the second Epistle of Paul to the Corinthians"/>
-	<BOOK Id="Gal" Name="Galatians" Chapters="6" Short="Gal" Intro="A reading from the Epistle of Paul to the Galatians"/>
-	<BOOK Id="Eph" Name="Ephesians" Chapters="6" Short="Eph" Intro="A reading from the Epistle of Paul to the Ephesians"/>
-	<BOOK Id="Philip" Name="Philippians" Chapters="4" Short="Phil" Intro="A reading from the Epistle to the Philippians"/>
-	<BOOK Id="Col" Name="Colossians" Chapters="4" Short="Col" Intro="A reading from the Epistle to the Colossians"/>
-	<BOOK Id="I_Thess" Name="I Thessalonians" Chapters="5" Short="I Thess" Intro="A reading from the first Epistle to the Thessalonians"/>
-	<BOOK Id="II_Thess" Name="II Thessalonians" Chapters="3" Short="II Thess" Intro="A reading from the second Epistle to the Thessalonians"/>
-	<BOOK Id="I_Tim" Name="I Timothy" Chapters="6" Short="I Tim" Intro="A reading from the first Epistle to Timothy"/>
-	<BOOK Id="II_Tim" Name="II Timothy" Chapters="4" Short="II Tim" Intro="A reading from the second Epistle to Timothy"/>
-	<BOOK Id="Tit" Name="Titus" Chapters="3" Short="Tit" Intro="A reading from the Epistle to Titus"/>
-	<BOOK Id="Philemon" Name="Philemon" Chapters="1" Short="Philemon" Intro="A reading from the Epistle to Philemon"/>
-	<BOOK Id="Heb" Name="Hebrews" Chapters="13" Short="Heb" Intro="A reading from the Epistle to the Hebrews"/>
-	<BOOK Id="Apoc" Name="Apocalypse" Chapters="22" Short="Apoc" Intro="A reading from the Book of Revelations"/>
+	<BOOK Id="Mt" Name="Κατά Ματθαίον Ευαγγέλιο" Chapters="28" Short="Ματ" Intro="A reading from the Holy Gospel according to Matthew"/>
+	<BOOK Id="Mk" Name="Κατα Μαρκον Ευαγγέλιο" Chapters="16" Short="Μαρ" Intro="A reading from the Holy Gospel according to Mark"/>
+	<BOOK Id="Lk" Name="Κατά Λουκάν Ευαγγέλιο" Chapters="24" Short="Λου" Intro="A reading from the Holy Gospel according to Luke"/>
+	<BOOK Id="Jn" Name="Κατά Ιωάννην Ευαγγέλιο" Chapters="21" Short="Ιωάν" Intro="A reading from the Holy Gospel accoridng to John"/>
+	<BOOK Id="Acts" Name="Πράξεις των Αποστόλων" Chapters="28" Short="Πράξ" Intro="A reading from the Acts of the Apostles"/>
+	<BOOK Id="Jas" Name="Καθολική Επιστολή Ιακώβου" Chapters="5" Short="Ιακώβου" Intro="A reading from the Epistle of James"/>
+	<BOOK Id="I_Pet" Name="Καθολική Επιστολή Πέτρου Α'" Chapters="5" Short="Πέτρου Α'" Intro="A reading from the the first Epistle of Peter"/>
+	<BOOK Id="II_Pet" Name="Καθολική Επιστολή Πέτρου Β'" Chapters="3" Short="Πέτρου Β'" Intro="A reading from the second Epistle of Peter"/>
+	<BOOK Id="I_Jn" Name="Καθολική Επιστολή Ἰωάννου Α'" Chapters="5" Short="Ἰωάν Α'" Intro="A reading from the first Epistle of John"/>
+	<BOOK Id="II_Jn" Name="Καθολική Επιστολή Ἰωάννου Β'" Chapters="1" Short="Ἰωάν Β'" Intro="A reading from the second Epistle of John"/>
+	<BOOK Id="III_Jn" Name="Καθολική Επιστολή Ἰωάννου Γ'" Chapters="1" Short="Ἰωάν Γ'" Intro="A reading from the third Epistle of John"/>
+	<BOOK Id="Jude" Name="Καθολική Επιστολή Ἰούδα" Chapters="1" Short="Ἰούδα" Intro="A reading from the Epistle of Jude"/>
+	<BOOK Id="Rom" Name="Προς Ρωμαίους" Chapters="16" Short="Ρωμ" Intro="A reading from the Epistle of Paul to the Romans"/>
+	<BOOK Id="I_Cor" Name="Προς Κορινθίους Α'" Chapters="16" Short="Κορ Α'" Intro="A reading from the first Epistle of Paul to the Corinthians"/>
+	<BOOK Id="II_Cor" Name="Προς Κορινθίους Β'" Chapters="13" Short="Κορ Β'" Intro="A reading from the second Epistle of Paul to the Corinthians"/>
+	<BOOK Id="Gal" Name="Προς Γαλάτας" Chapters="6" Short="Γαλ" Intro="A reading from the Epistle of Paul to the Galatians"/>
+	<BOOK Id="Eph" Name="Προς Εφεσίους" Chapters="6" Short="Εφ" Intro="A reading from the Epistle of Paul to the Ephesians"/>
+	<BOOK Id="Philip" Name="Προς Φιλιππησίους" Chapters="4" Short="Φιλ" Intro="A reading from the Epistle to the Philippians"/>
+	<BOOK Id="Col" Name="Προς Κολοσσαείς" Chapters="4" Short="Κολ" Intro="A reading from the Epistle to the Colossians"/>
+	<BOOK Id="I_Thess" Name="Προς Θεσσαλονικείς Α'" Chapters="5" Short="Θεσ Α'" Intro="A reading from the first Epistle to the Thessalonians"/>
+	<BOOK Id="II_Thess" Name="Προς Θεσσαλονικείς Β'" Chapters="3" Short="Θεσ Β'" Intro="A reading from the second Epistle to the Thessalonians"/>
+	<BOOK Id="I_Tim" Name="Προς Τιμόθεον Α'" Chapters="6" Short="Τιμ Α'" Intro="A reading from the first Epistle to Timothy"/>
+	<BOOK Id="II_Tim" Name="Προς Τιμόθεον Β'" Chapters="4" Short="Τιμ Β'" Intro="A reading from the second Epistle to Timothy"/>
+	<BOOK Id="Tit" Name="Προς Τίτον" Chapters="3" Short="Τίτον" Intro="A reading from the Epistle to Titus"/>
+	<BOOK Id="Philemon" Name="Προς Φιλήμονα" Chapters="1" Short="Φιλήμονα" Intro="A reading from the Epistle to Philemon"/>
+	<BOOK Id="Heb" Name="Προς Εβραίους" Chapters="13" Short="Εβρ" Intro="A reading from the Epistle to the Hebrews"/>
+	<BOOK Id="Apoc" Name="Αποκάλυψις" Chapters="22" Short="Αποκ" Intro="A reading from the Book of Revelations"/>
 	<BOOK Id="Composite" Name="Composite" Chapters="8" Short="Composite" Intro=""/>
 </BIBLE>
 </LANGUAGE>
