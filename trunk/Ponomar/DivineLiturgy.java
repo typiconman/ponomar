@@ -64,7 +64,8 @@ public class DivineLiturgy implements DocHandler
 		if (table.get("Cmd") != null)
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
+			
+                        if (StringOp.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -132,7 +133,7 @@ public class DivineLiturgy implements DocHandler
 			vect.add(value);
 			Information.put(name,vect);
 		}
-
+		
 		}
 		//ALL WE CARE ABOUT ARE THE SCRIPTURE READINGS
 		 if (elem.equals("SCRIPTURE"))
@@ -175,7 +176,7 @@ public static String Readings(Vector q1, Vector q2, Vector q3, String ReadingTyp
 	{
 		FileReader frf = new FileReader("Ponomar/xml/Commands/DivineLiturgy.xml");
 		DivineLiturgy a1 =new DivineLiturgy();
-		QDParser.parse(a1, frf);
+                QDParser.parse(a1, frf);
 	}
 	catch (Exception e)
 	{
@@ -350,6 +351,7 @@ public static String Readings(Vector q1, Vector q2, Vector q3, String ReadingTyp
 	if (dow == 0)
 	{
 		//ON SUNDAYS, THE READINGS FROM THE PENTECOSTARION SHOULD TAKE PRECEDENCE
+            
 		return Display(Pentecostarion,Floaters,Menalogion);
 	}
 	return Display(Floaters,Pentecostarion,Menalogion);
@@ -391,6 +393,7 @@ private static void getReadings(OrderedHashtable SortedReadings, String ReadingT
 	{
 		FileReader frf = new FileReader(filename);
 		DivineLiturgy a =new DivineLiturgy();
+                
 		QDParser.parse(a, frf);
 	}
 	catch (Exception e)
@@ -642,7 +645,6 @@ protected static void LeapReadings(OrderedHashtable CurrentReadings)
 			for(Enumeration e2=vect.elements();e2.hasMoreElements();)
 			{	
 				String Command = (String)e2.nextElement();
-				System.out.println("Suppress: " + Command);
 				if (StringOp.evalbool(Command))
 				{
 					//THE CURRENT COMMAND WAS TRUE AND THE SEQUENTITIAL READING IS TO BE SUPPRESSED
@@ -767,7 +769,6 @@ private static void Suppress(OrderedHashtable CurrentReadings, OrderedHashtable 
 			for(Enumeration e2=vect.elements();e2.hasMoreElements();)
 			{	
 				String Command = (String)e2.nextElement();
-				System.out.println(Command);
 				if (StringOp.evalbool(Command))
 				{
 					//THE CURRENT COMMAND WAS TRUE AND THE SEQUENTITIAL READING IS TO BE SUPPRESSED/TRANSFERRED
