@@ -394,7 +394,7 @@ GNU General Public License for details.
 	<BOOK Id="Joel" Name="约伊尔书" Chapters="3" Short="珥／岳" Intro="恭读约伊尔书"/>
 	<BOOK Id="Amos" Name="阿摩斯书" Chapters="9" Short="摩／亚" Intro="恭读阿摩斯书"/>
 	<BOOK Id="Obad" Name="奥弗狄亚书" Chapters="1" Short="俄／北" Intro="恭读奥弗狄亚书"/>
-	<BOOK Id="Jona" Name="Jonah" Chapters="4" Short="拿／纳" Intro="恭读约纳书"/>
+	<BOOK Id="Jona" Name="约纳书" Chapters="4" Short="拿／纳" Intro="恭读约纳书"/>
 	<BOOK Id="Mica" Name="弥亥亚书" Chapters="7" Short="弥／米" Intro="恭读弥亥亚书"/>
 	<BOOK Id="Nahum" Name="纳翁书" Chapters="3" Short="鸿" Intro="恭读纳翁书"/>
 	<BOOK Id="Habak" Name="盎瓦库穆书" Chapters="3" Short="哈" Intro="恭读盎瓦库穆书"/>
@@ -477,7 +477,7 @@ GNU General Public License for details.
 	<BOOK Id="Joel" Name="約伊爾書" Chapters="3" Short="珥／岳" Intro="恭讀約伊爾書"/>
 	<BOOK Id="Amos" Name="阿摩斯書" Chapters="9" Short="摩／亞" Intro="恭讀阿摩斯書"/>
 	<BOOK Id="Obad" Name="奧弗狄亞書" Chapters="1" Short="俄／北" Intro="恭讀奧弗狄亞書"/>
-	<BOOK Id="Jona" Name="Jonah" Chapters="4" Short="拿／納" Intro="恭讀約納書"/>
+	<BOOK Id="Jona" Name="約納書" Chapters="4" Short="拿／納" Intro="恭讀約納書"/>
 	<BOOK Id="Mica" Name="彌亥亞書" Chapters="7" Short="彌／米" Intro="恭讀彌亥亞書"/>
 	<BOOK Id="Nahum" Name="納翁書" Chapters="3" Short="鴻" Intro="恭讀納翁書"/>
 	<BOOK Id="Habak" Name="盎瓦庫穆書" Chapters="3" Short="哈" Intro="恭讀盎瓦庫穆書"/>
