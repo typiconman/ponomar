@@ -110,9 +110,11 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>		
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="nday &gt;= -70 &amp;&amp; nday &lt; 56">
+<PERIOD Cmd="nday &gt;= -70 &amp;&amp; nday &lt;= -49"> <!-- Correction to include up to Forgiveness Sunday (49 days before Easter!), although the service may be different over Cheesefare Week. Y.S. 20100201 -->
 	<!-- The preleneten period has different rules for the creation of services especially on Sunday. -->
-	<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" />
+	<LANGUAGE>
+		<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" />
+	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="nday &gt;= -48 &amp;&amp; nday &lt;= -9">
 	<!-- This is for Lent from Clean Monday to Friday of the Sixth Week of Lent. -->
