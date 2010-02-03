@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 import java.io.*;
+import java.lang.Math;
 
 /***********************************************************************
  Main.java :: MAIN MODULE FOR THE PONOMAR PROGRAM.
@@ -339,20 +340,37 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 			{
 				output += "<A Href='goDoSaint?id=" + table.get("Id") + "'>";
 			}
+                        //Adding a programme to automatically determine the rank of a given feast.
+                        //It is assumed that the highest Type == Rank found in all the files that are being parsed is equal 
+                        //to the Rank for the day.
+                        //Y.S. 2010/02/01 n.s.
+                        int Rank = Integer.parseInt((String)table.get("Type"));
+                        StringOp.dayInfo.put("dRank",Math.max(Integer.parseInt(StringOp.dayInfo.get("dRank").toString()),Rank));
+                        //System.out.println(StringOp.dayInfo.get("dRank")+"\nFound Rank: "+Rank );
 
-			switch (Integer.parseInt((String)table.get("Type")))
+			switch (Rank)
 			{
+				case 8:
+                            case 7:
+                            case 6:
+					output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\u26D0</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";
+					break;
+				case 5:
+                                    output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\u26D1</Font>\u00A0" + table.get("Name") + "</FONT>";
+					break;
+                            case 4:
+				output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\u26D2</Font><B>\u00A0" + table.get("Name") + "</B>";
+					break;
+
 				case 3:
-					output += "<I>" + table.get("Name") + "</I>";
+					output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\u26D3</Font><I>\u00A0" + table.get("Name") + "</I>";
 					break;
-				case 2: 
-					output += "<B><FONT Color='red'>" + table.get("Name") + "</FONT></B>";
-					break;
-				case 1:
-					output += "<B>" + table.get("Name") + "</B>";
+                            case 2:
+                                output += "<Font face='Hirmos Ponomar' size='+1'>\u26D3</Font><I>\u00A0" + table.get("Name") + "</I>";
 					break;
 				default:
 					output += table.get("Name");
+                                        //Note: \u00A0 is a nonbreaking space.
 			}
 
 			output += id.length() != 0 ? "</A>; " : "; ";
@@ -463,6 +481,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		//INTERFACE LANGUAGE
 		StringOp.dayInfo.put("LS",LanguageLocation.getLValue());
 		StringOp.dayInfo.put("Year",today.getYear());
+                StringOp.dayInfo.put("dRank",0); //The default rank for a day is 0. Y.S. 2010/02/01 n.s.
 			
 		readings = new OrderedHashtable();
 		fastInfo = new Stack();

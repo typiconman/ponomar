@@ -44,8 +44,9 @@ public class Fasting implements DocHandler
 		Information=new OrderedHashtable();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
-		StringOp.dayInfo.put("dRank",1);	//ANY RANK LESS THAN 4 WILL DO
-		try
+                //I have removed the klutz, as dRank has been properly implemented! Y.S 2010/02/02 n.s.
+		//StringOp.dayInfo.put("dRank",1);	//ANY RANK LESS THAN 4 WILL DO
+		/*try
 		{
 			FileReader frf = new FileReader("Ponomar/xml/Commands/DivineLiturgy.xml");
 			QDParser.parse(this, frf);
@@ -90,6 +91,7 @@ public class Fasting implements DocHandler
 			e1.printStackTrace();
 		}
 		//FINISHED THE KLUTZ
+                */
 		//ACTUAL PROGRAMME
 		//System.out.print("Today's rank is "+StringOp.dayInfo.get("dRank")+"\n");
 		try
@@ -273,7 +275,7 @@ public class Fasting implements DocHandler
 			Fast=table.get("Case").toString();
 		}
 		//THE FOLLOWING SECTION SHOULD BE REMOVED ONCE THERE IS A PROPER RANKING OF DAYS
-		if (elem.equals("COMMAND"))
+		/*if (elem.equals("COMMAND"))
 		{
 		//THIS WILL STORE ALL THE POSSIBLE COMMANDS FOR A GIVEN SITUATION AND ALLOW THE RESULTS TO BE DETEMINED.
 		String name = table.get("Name").toString();
@@ -294,6 +296,7 @@ public class Fasting implements DocHandler
 		
 		}
 		//TO HERE REMOVE
+                */
 
 	}
 

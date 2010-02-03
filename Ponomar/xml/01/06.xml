@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE>
 <SCRIPTURE Type="matins" Reading="Mk_1:9-11" Pericope="2"/>
 <SCRIPTURE Type="apostol" Reading="Tit_2:11-14, 3:4-7" Pericope="302"/>
@@ -7,25 +7,25 @@
 <LITURGY Type="2" Cmd="dow == 0 || dow == 1" Comment="St Basils IF Sunday or Monday"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Holy Theophany: the Baptism of Our Lord, God, and Saviour Jesus Christ" Id="163" Type="6" />
+<SAINT Name="Holy Theophany: the Baptism of Our Lord, God, and Saviour Jesus Christ" Id="163" Type="8" />
 <SAINT Name="Hieromartyr Roman" Id="" Type="0" />
 <SAINT Name="Holy Hierarch Melanus the Confessor, Bishop of Redon" Id="" Type="0" />
 <SAINT Name="New Hieromartyr Andrew the Presbyter and those with him: Martyrs Lidia, Domnica, Maria and two of his daughters (+1919)" Id="" Type="0" />
 <HOMILY Id="163" Name="Discourse On the Day of the Baptism of Christ, Saint John Chrysostom, Archbishop of Constantinople"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Sainte Théophanie de notre Seigneur" Id="163" Type="6" />
+<SAINT Name="Sainte Théophanie de notre Seigneur" Id="163" Type="8" />
 <SAINT Name="St Romanos de Lacédémone (Sparte)" Id="" Type="0" />
 <SAINT Name="St Théophane le reclus, Evêque de Tambov et Vladimir" Id="" Type="0" />
 <SAINT Name="St Melaine, Illuminateur de Rennes" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Святое Богоявление. Крещение Господа Бога и Спаса нашего Иисуса Христа." Id="163" Type="6"/>
+<SAINT Name="Святое Богоявление. Крещение Господа Бога и Спаса нашего Иисуса Христа." Id="163" Type="8"/>
 <SAINT Name="Мч. Иоанна (1942)" Id="" Type="0"/>
 <HOMILY Id="163" Name="Беседа на день Крещения Христова Святителя Иоанна Златоустого, архиепископа Константинопольского"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="主显节——我们的主，上帝，救主，耶稣基督神性的显现，也即基督受浸礼节" Id="163" Type="6" />
+<SAINT Name="主显节——我们的主，上帝，救主，耶稣基督神性的显现，也即基督受浸礼节" Id="163" Type="8" />
 <SAINT Name="新殉道司祭罗玛诺（拉切戴莫尼亚地方人，于1695年被土耳其人斩首）" Id="" Type="0" />
 <SAINT Name="新殉道司祭，首席司祭安德列、他的妻子利迪亚、他的岳母多弥尼卡、他的两个女儿，以及他的女仆玛利亚（他们于1919年时候在乌苏里斯克就义）" Id="" Type="0" />
 <SAINT Name="圣劳伦提（切尔尼格夫地方人，1950年）" Id="" Type="0" />
@@ -33,7 +33,7 @@
 <SAINT Name="圣斯科汀（基尔肯尼的隐士，6世纪）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="主顯節——我們的主，上帝，救主，耶穌基督神性的顯現，也即基督受浸禮節" Id="163" Type="6" />
+<SAINT Name="主顯節——我們的主，上帝，救主，耶穌基督神性的顯現，也即基督受浸禮節" Id="163" Type="8" />
 <SAINT Name="新殉道司祭羅瑪諾（拉切戴莫尼亞地方人，於1695年被土耳其人斬首）" Id="" Type="0" />
 <SAINT Name="新殉道司祭，首席司祭安德列、他的妻子利迪亞、他的岳母多彌尼卡、他的兩個女兒，以及他的女僕瑪利亞（他們於1919年時候在烏蘇里斯克就義）" Id="" Type="0" />
 <SAINT Name="聖勞倫提（切爾尼格夫地方人，1950年）" Id="" Type="0" />

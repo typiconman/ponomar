@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE>
 <SCRIPTURE Type="vespers" Reading="Composite_6" Cmd="nday == -49" Note="for the feast"/>
 <SCRIPTURE Type="vespers" Reading="Isa_6:1-12" Cmd="nday == -49" Note="for the feast"/>
@@ -9,7 +9,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Forefeast of the Meeting of the Lord" Id="2124" Type="2" Cmd="nday != -49" />
-<SAINT Name="On this day we observe the Meeting of our Lord, God, and Saviour Jesus Christ" Id="373" Type="6" Cmd="nday == -49" />
+<SAINT Name="On this day we observe the Meeting of our Lord, God, and Saviour Jesus Christ" Id="373" Type="7" Cmd="nday == -49" />
 <SAINT Name="Martyr Tryphon of Campsada near Apamea in Syria (+250)" Id="369" Type="1" Cmd="nday != -49"/>
 <SAINT Name="Venerable Peter of Galatia, the Hermit, near Antioch in Syria (+429)" Id="" Type="0" />
 <SAINT Name="Venerable Vendimianus, the Hermit of Bithynia (+c.512)" Id="370" Type="0" />

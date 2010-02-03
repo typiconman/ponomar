@@ -10,19 +10,19 @@
 <LITURGY Type="1" Comment="Always St John's" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Palm Sunday. Entrance of our Lord into Jerusalem" Id="6943" Type="6" Tone="-1" />
+<SAINT Name="Palm Sunday. Entrance of our Lord into Jerusalem" Id="6943" Type="8" Tone="-1" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Le Dimanche des Rameaux. L'Éntrée de nôtre Seigneur a Jérusalem" Id="6943" Type="6" Tone="-1"/>
+<SAINT Name="Le Dimanche des Rameaux. L'Éntrée de nôtre Seigneur a Jérusalem" Id="6943" Type="8" Tone="-1"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Неделя ваий (цветоносная, Вербное воскресенье). Вход Господень в Иерусалим." Id="6943" Type="6" Tone="-1"/>
+<SAINT Name="Неделя ваий (цветоносная, Вербное воскресенье). Вход Господень в Иерусалим." Id="6943" Type="8" Tone="-1"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="主进圣城耶路撒冷节（圣枝主日）" Id="6943" Type="6" Tone="-1" />
+<SAINT Name="主进圣城耶路撒冷节（圣枝主日）" Id="6943" Type="8" Tone="-1" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="主進聖城耶路撒冷節（聖枝主日）" Id="6943" Type="6" Tone="-1" />
+<SAINT Name="主進聖城耶路撒冷節（聖枝主日）" Id="6943" Type="8" Tone="-1" />
 </LANGUAGE>
 
 </DAY>
