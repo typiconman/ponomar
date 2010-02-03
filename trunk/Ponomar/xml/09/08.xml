@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE>
 <SCRIPTURE Type="vespers" Reading="Gen_28:10-17" />
 <SCRIPTURE Type="vespers" Reading="Ezek_43:27, 44:1-4" />
@@ -10,7 +10,7 @@
 <SAINT Name="7" Cmd="dow == 6" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Nativity of Our Most Holy Lady Theotokos and Ever-Virgin Mary" Id="1479" Type="6" />
+<SAINT Name="Nativity of Our Most Holy Lady Theotokos and Ever-Virgin Mary" Id="1479" Type="7" />
 <SAINT Name="Venerable Serapion of the Spaso-Eleazar Monastery" Id="" Type="0" />
 <SAINT Name="Venerable Lukian" Id="" Type="0" />
 <SAINT Name="Venerable Arsenius of Konevets" Id="" Type="0" />
@@ -18,7 +18,7 @@
 <SAINT Name="Icons of the Mother of God: 'Kursk-Root', 'Pochaev', 'Kholm', and 'Sophia - the Wisdom of God'" Id="1481" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Nativité de Notre Souveraine, la Très Sainte Mère de Dieu" Id="1479" Type="6" />
+<SAINT Name="Nativité de Notre Souveraine, la Très Sainte Mère de Dieu" Id="1479" Type="7" />
 <SAINT Name="Sts Rufus et Ruffien" Id="" Type="0" />
 <SAINT Name="St Sévère" Id="" Type="0" />
 <SAINT Name="St Artémiodore" Id="" Type="0" />
@@ -29,7 +29,7 @@
 <SAINT Name="St Arsène, higoumène de Konevits" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Рождество Пресвятой Владычицы нашей Богородицы и Приснодевы Марии" Id="1479" Type="6"/>
+<SAINT Name="Рождество Пресвятой Владычицы нашей Богородицы и Приснодевы Марии" Id="1479" Type="7"/>
 <SAINT Name="Прпп. Иоанна (1957) и Георгия (1962), исповедников" Id="" Type="0"/>
 <SAINT Name="Иконы Софии, Премудрости Божией (Киевской)" Id="1481" Type="0"/>
 <SAINT Name="Чтимых икон Рождества Богородицы: Сямской (1524), Глинской (XVI), Лукиановской (XVI), Исааковской (1659)" Id="1482" Type="0"/>

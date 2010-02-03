@@ -1,6 +1,6 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Afterfeast of the Transfiguration of the Lord" Id="" Type="" />
+<SAINT Name="Afterfeast of the Transfiguration of the Lord" Id="" Type="0" />
 <SAINT Name="Martyr Dometios of Persia and his two Disciples (+ 363)" Id="4387" Type="1" />
 <SAINT Name="Venerable Pimen the much-suffering, of the Kiev Caves" Id="1792" Type="0" />
 <SAINT Name="Martyrs Marius the Soldier and Asterius the Senator" Id="663" Type="0" />
@@ -14,7 +14,7 @@
 <SAINT Name="New Martyrs Priests Alexander, Peter, Michael, John, Dimitriy, and Alexey (+ 1937)" Id="4766" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Apresfete de la Transfiguration" Id="" Type="" />
+<SAINT Name="Apresfete de la Transfiguration" Id="" Type="0" />
 <SAINT Name="Sts Dométios de Perse et ses 2 disciples" Id="4387" Type="1" />
 <SAINT Name="St Or" Id="4393" Type="0" />
 <SAINT Name="Sts 10 000 ascètes de Thébaïdes" Id="" Type="0" />

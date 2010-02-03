@@ -9,12 +9,12 @@
 <SCRIPTURE Type="gospel" Reading="Jn_7:37-52, 8:12" Pericope="27"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Pentecost. Sunday of the Holy Trinity. Descent of the Holy Spirit on the Apostles" Id="6952" Type="6" Tone="-1" />
+<SAINT Name="Pentecost. Sunday of the Holy Trinity. Descent of the Holy Spirit on the Apostles" Id="6952" Type="8" Tone="-1" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Pentecôte. Dimanche de la Sainte Trinité" Id="6952" Type="6" Tone="-1"/>
+<SAINT Name="Pentecôte. Dimanche de la Sainte Trinité" Id="6952" Type="8" Tone="-1"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Пятидесятница. День Святой Троицы" Id="6952" Type="6" Tone="-1"/>
+<SAINT Name="Пятидесятница. День Святой Троицы" Id="6952" Type="8" Tone="-1"/>
 </LANGUAGE>
 </DAY>

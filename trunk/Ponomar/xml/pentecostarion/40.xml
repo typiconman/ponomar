@@ -9,12 +9,12 @@
 <SCRIPTURE Type="gospel" Reading="Lk_24:36-53" Pericope="114"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Ascension of our Lord, God, and Saviour Jesus Christ" Id="6951" Type="6" Tone="-1" />
+<SAINT Name="Ascension of our Lord, God, and Saviour Jesus Christ" Id="6951" Type="8" Tone="-1" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="L'Ascension de notre Seigneur, Dieu, et Saveur Jésus Christ" Id="6951" Type="6" Tone="-1"/>
+<SAINT Name="L'Ascension de notre Seigneur, Dieu, et Saveur Jésus Christ" Id="6951" Type="8" Tone="-1"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Вознесение Господне" Id="6951" Type="6" Tone="-1"/>
+<SAINT Name="Вознесение Господне" Id="6951" Type="8" Tone="-1"/>
 </LANGUAGE>
 </DAY>

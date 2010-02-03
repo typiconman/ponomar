@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE>
 <SCRIPTURE Type="vespers" Reading="Isa_43:9-14" Note="for the 40 Martyrs"/>
 <SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" Note="for the 40 Martyrs"/>
@@ -6,7 +6,7 @@
 <SCRIPTURE Type="matins" Reading="Lk_21:12-19" Pericope="106" Note="for the 40 Martyrs" Cmd="dow != 0"/>
 <SCRIPTURE Type="apostol" Reading="Heb_12:1-10" Pericope="331" Note="for the 40 Martyrs"/>
 <SCRIPTURE Type="gospel" Reading="Mt_20:1-16" Pericope="80" Note="for the 40 Martyrs"/>
-<LITURGY Type="3" Comment="Pre-Sanctified Liturgy sometimes" Cmd="dow != 6 &amp;&amp; dow != 0 &amp; nday != 17 &amp; nday != 15"/>
+<LITURGY Type="3" Comment="Pre-Sanctified Liturgy sometimes" Cmd="dow != 6 &amp;&amp; dow != 0 &amp;&amp; nday != 17 &amp;&amp; nday != 15"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="The Holy Forty Martyrs of Sebaste (+ c.320): Cyrion, Candidus, Domnus, Hesychius, Iraclius, Smaragdus, Eunoicus, Valentus, Vivian, Claudius, Priskus, Theodulus, Eutichius, John, Xanthus, Ilian, Sisinius, Angius, Aetius, Flavius, Dometian, Gaius, Leontius, Athanasius, Cyrill, Sakerdonus, Nicholas, Valerius, Philoctimon, Seberian, Chudionus, Aglaius, and Meliton" Id="1238" Type="4" />

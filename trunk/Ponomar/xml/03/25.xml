@@ -10,19 +10,19 @@
 <SCRIPTURE Type="gospel" Reading="Lk_1:24-38" Pericope="3" Note="for the Feast"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="The Annunciation of our Most Holy Lady, Theotokos and Ever-Virgin Mary" Id="707" Type="6" />
+<SAINT Name="The Annunciation of our Most Holy Lady, Theotokos and Ever-Virgin Mary" Id="707" Type="7" />
 <SAINT Name="St Tikhon the Confessor, Patriarch of Moscow and all Russia and Enlightener of North America (+1925)" Id="4644" Type="1" />
 <SAINT Name="Venerable Justin (Popovic) Archimandrite of Chelije (+1979)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Annonciation à la Très Sainte Mère de Dieu" Id="707" Type="6" />
+<SAINT Name="Annonciation à la Très Sainte Mère de Dieu" Id="707" Type="7" />
 <SAINT Name="Stes Pélagie et Théodosie" Id="" Type="0" />
 <SAINT Name="St Senouphios le Sémiophore" Id="" Type="0" />
 <SAINT Name="St Parthène de Kiev" Id="" Type="0" />
 <SAINT Name="St. Tikhon, Patriarche de Moscou" Id="4644" Type="1" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Благовещение Пресвятой Богородицы" Id="707" Type="6"/>
+<SAINT Name="Благовещение Пресвятой Богородицы" Id="707" Type="7"/>
 <SAINT Name="Преставление свт. Тихона, патриарха Московского и всея Руси (1925)." Id="4644" Type="1"/>
 <SAINT Name="Прп. Саввы Нового (1948)" Id="" Type="0"/>
 <SAINT Name="Иконы Благовещения Божией Матери." Id="" Type="0"/>

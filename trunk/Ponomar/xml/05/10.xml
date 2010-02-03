@@ -1,8 +1,8 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE>
 <SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Note="for the Apostle" Cmd="dow != 0"/>
 <SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostle" Cmd="dRank &lt; 5"/>
-<SCRIPTURE Type="gospel" Reading="Mt_13:53-58" Pericope="56" Note="for the Apostle" Cmd="Drank &lt; 5"/>
+<SCRIPTURE Type="gospel" Reading="Mt_13:53-58" Pericope="56" Note="for the Apostle" Cmd="dRank &lt; 5"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Apostle Simon Zealotes (1st C)" Id="1029" Type="4" />
