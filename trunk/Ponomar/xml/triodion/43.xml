@@ -16,4 +16,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Феодоровская суббота" Id="2203" Type="1" Tone="((ndayP - dow) / 7) % 8"/> 
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大斋期第一安息日：纪念殉道者新兵德奥多若" Id="2203" Type="1" Tone="((ndayP - dow) / 7) % 8"/> 
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大齋期第一安息日：紀念殉道者新兵德奧多若" Id="2203" Type="1" Tone="((ndayP - dow) / 7) % 8"/> 
+</LANGUAGE>
 </DAY>

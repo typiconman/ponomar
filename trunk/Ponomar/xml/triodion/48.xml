@@ -15,4 +15,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Чистый понедельник. Начало Великого поста" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="洁净瞻礼二：大斋期开始" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="潔淨瞻禮二：大齋期開始" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+</LANGUAGE>
 </DAY>

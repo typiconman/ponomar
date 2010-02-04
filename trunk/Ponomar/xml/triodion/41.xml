@@ -15,4 +15,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Понедельник 2-й седмицы Великого поста" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大斋期第二周瞻礼二" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大齋期第二週瞻禮二" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
 </DAY>
