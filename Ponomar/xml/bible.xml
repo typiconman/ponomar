@@ -416,7 +416,7 @@ GNU General Public License for details.
 	<BOOK Id="II_Pet" Name="裴特若书信二" Chapters="3" Short="彼后／伯后" Intro="恭读裴特若书信二"/>
 	<BOOK Id="I_Jn" Name="约安书信一" Chapters="5" Short="约壹／若一" Intro="恭读约安书信一"/>
 	<BOOK Id="II_Jn" Name="约安书信二" Chapters="1" Short="约贰／若二" Intro="恭读约安书信二"/>
-	<BOOK Id="III_Jn" Name="I约安书信三" Chapters="1" Short="约叁／若三" Intro="恭读约安书信三"/>
+	<BOOK Id="III_Jn" Name="约安书信三" Chapters="1" Short="约叁／若三" Intro="恭读约安书信三"/>
 	<BOOK Id="Jude" Name="犹达书信" Chapters="1" Short="犹" Intro="恭读犹达书信"/>
 	<BOOK Id="Rom" Name="致罗马人书" Chapters="16" Short="罗" Intro="恭读圣帕弗罗致罗马人书"/>
 	<BOOK Id="I_Cor" Name="致科林托人书一" Chapters="16" Short="林前／格前" Intro="恭读圣帕弗罗致科林托人书一"/>
@@ -499,7 +499,7 @@ GNU General Public License for details.
 	<BOOK Id="II_Pet" Name="裴特若書信二" Chapters="3" Short="彼後／伯後" Intro="恭讀裴特若書信二"/>
 	<BOOK Id="I_Jn" Name="約安書信一" Chapters="5" Short="約壹／若一" Intro="恭讀約安書信一"/>
 	<BOOK Id="II_Jn" Name="約安書信二" Chapters="1" Short="約貳／若二" Intro="恭讀約安書信二"/>
-	<BOOK Id="III_Jn" Name="I約安書信三" Chapters="1" Short="約叄／若三" Intro="恭讀約安書信三"/>
+	<BOOK Id="III_Jn" Name="約安書信三" Chapters="1" Short="約叄／若三" Intro="恭讀約安書信三"/>
 	<BOOK Id="Jude" Name="猶達書信" Chapters="1" Short="猶" Intro="恭讀猶達書信"/>
 	<BOOK Id="Rom" Name="致羅馬人書" Chapters="16" Short="羅" Intro="恭讀聖帕弗羅致羅馬人書"/>
 	<BOOK Id="I_Cor" Name="致科林托人書一" Chapters="16" Short="林前／格前" Intro="恭讀聖帕弗羅致科林托人書一"/>
