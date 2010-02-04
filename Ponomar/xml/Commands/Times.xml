@@ -18,4 +18,13 @@
 		<TIMES Value="&lt;i&gt;^# раз&lt;/i&gt;" Cmd="!(((Times - 10*(Times % 10) == 2) || (Times - 10*(Times % 10) == 3) || (Times - 10*(Times % 10) == 4)) || ((Times - 100*(Times % 100) == 2) || (Times - 100*(Times % 100) == 3) || (Times - 100*(Times % 100) == 4)) || ((Times - 1000*(Times % 1000) == 2) || (Times - 1000*(Times % 1000) == 3) || (Times - 1000*(Times % 1000) == 4)))"/>
 			<!-- Otherwise the normal plural forms are used -->
 	</LANGUAGE>		
-</DATA>
+	<LANGUAGE Cmd="LS == 5">
+		<TIMES Value="&lt;i&gt;两遍&lt;/i&gt;" Cmd="Times == 2"/>
+		<TIMES Value="&lt;i&gt;三遍&lt;/i&gt;" Cmd="Times == 3"/>
+		<TIMES Value="&lt;i&gt;^#遍&lt;/i&gt;" Cmd="Times &gt;= 4"/>
+	</LANGUAGE>	
+	<LANGUAGE Cmd="LS == 6">
+		<TIMES Value="&lt;i&gt;兩遍&lt;/i&gt;" Cmd="Times == 2"/>
+		<TIMES Value="&lt;i&gt;三遍&lt;/i&gt;" Cmd="Times == 3"/>
+		<TIMES Value="&lt;i&gt;^#遍&lt;/i&gt;" Cmd="Times &gt;= 4"/>
+	</LANGUAGE></DATA>
