@@ -16,9 +16,9 @@
 <SAINT Name="Суббота мясопустная. Поминовение усопших" Id="" Type="1" Tone="((ndayP - dow) / 7) % 8" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="离肉安息日" Id="" Type="1" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT Name="离肉安息日：纪念亡者之安息日" Id="" Type="1" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="離肉安息日" Id="" Type="1" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT Name="離肉安息日：紀念亡者之安息日" Id="" Type="1" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
 </DAY>

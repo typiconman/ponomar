@@ -15,4 +15,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Суббота сыропустная. Поминовение всех свв. отцев в монашестве подвизавшихся" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="乳酪周安息日：纪念所有神圣而心怀上帝，以克修生活光照了世界的圣教父" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="乳酪週安息日：紀念所有神聖而心懷上帝，以克修生活光照了世界的聖教父" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
 </DAY>

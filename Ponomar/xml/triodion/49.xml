@@ -23,4 +23,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Неделя сыропустная. Воспоминание Адамова изгнания. Прощеное воскресенье" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="离酪主日（宽恕主日）记念首先受造之人阿达穆因为乐园的禁果而堕落" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="離酪主日（寬恕主日）記念首先受造之人阿達穆因為樂園的禁果而墮落" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
 </DAY>
