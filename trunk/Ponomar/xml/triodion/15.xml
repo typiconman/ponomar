@@ -16,4 +16,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Суббота 5-й седмицы Великого Поста. Похвала Пресвятой Богородицы (Суббота Акафиста)" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大斋期第五安息日（赞颂上帝之母至圣诞神女：于晨时课中恭咏全分圣母弗坐词礼仪）" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大齋期第五安息日（讚頌上帝之母至聖誕神女：於晨時課中恭詠全分聖母弗坐詞禮儀）" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
 </DAY>

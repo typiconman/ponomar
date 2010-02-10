@@ -16,4 +16,12 @@
 <SAINT Name="Суббота ваий (Лазарева)" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 <SAINT Name="Воскрешение праведного Лазаря Четвероднегного" Id="1760" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣枝安息日（拉匝若复生之安息日）" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT Name="纪念拉匝若复生" Id="1760" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖枝安息日（拉匝若復生之安息日）" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT Name="紀念拉匝若復生" Id="1760" Type="0"/>
+</LANGUAGE>
 </DAY>
