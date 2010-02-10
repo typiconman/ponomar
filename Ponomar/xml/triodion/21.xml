@@ -23,4 +23,12 @@
 <SAINT Name="Неделя 4-я Великого поста" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 <SAINT Name="Преп. Иоанна Лествичника" Id="986" Type="1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大斋期第四主日" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT Name="天梯圣约安" Id="986" Type="1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大齋期第四主日" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT Name="天梯聖約安" Id="986" Type="1"/>
+</LANGUAGE>
 </DAY>

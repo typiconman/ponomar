@@ -18,4 +18,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Неделя 3-я Великого поста, Крестопоклонная" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大斋期第三主日（叩拜十字圣架）" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大齋期第三主日（叩拜十字聖架）" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
 </DAY>

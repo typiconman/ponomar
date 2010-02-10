@@ -23,4 +23,12 @@
 <SAINT Name="Неделя вторая Великого поста" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 <SAINT Name="Св. Григория Паламы, архиепископа Солунского" Id="543" Type="1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大斋期第二主日" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT Name="圣格里高利•帕拉玛斯" Id="543" Type="1"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大齋期第二主日" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT Name="聖格里高利•帕拉瑪斯" Id="543" Type="1"/>
+</LANGUAGE>
 </DAY>
