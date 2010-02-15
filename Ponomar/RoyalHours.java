@@ -52,7 +52,7 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 	private String filename;
 	private int lineNumber;
 	private LanguagePack Text=new LanguagePack();
-	private String[] PrimesNames=Text.obtainValues((String)Text.Phrases.get("Primes"));
+	private String[] PrimesNames=Text.obtainValues((String)Text.Phrases.get("RoyalHours"));
 	private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 	//private String LentenK;				//ANY REQUIRED KATHISMA REFERENCED USING "LENTENK = "17"" WOULD BE THE 17th KATHISMA.
 	private JFrame frames;

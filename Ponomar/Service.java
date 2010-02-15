@@ -354,7 +354,7 @@ public class Service implements DocHandler
                     }
                     //System.out.println(RoyalHours);
                     if (RoyalHours.get("text") == null){
-                        Service1+="<BR><Font color=\"red\"> Error Finding the desired information "+Info+"</Font><BR>";
+                        Service1+="<BR><Font color=\"red\"> "+ServiceNames[4] + Info+"</Font><BR>";
                         
                     }
                     else{

@@ -25,6 +25,9 @@ Note : Le format général est :
 Suggestion finale :
 Traducteur : Yuri Shardt
 L’état de completation : 1 (sauf le Bible et la première heure).
+-->
+<!--
+The Russian part has been partially completed by Aleksander Andreev, while the Church Slavonic Bible has (except for III Esdras) been added. The Russian version of the Menologion and Pentecostarion/Triodion (as per the Moscow Patriarchiate regulations) has been added by Aleks.
 -->   
 
 <LANGUAGE NameLocal="English" NameEnglish="English" Cmd="LS == 0 || LS == 2">
@@ -55,13 +58,16 @@ L’état de completation : 1 (sauf le Bible et la première heure).
 <PHRASE Key="Week1" Value="Sun/,Mon/,Tue/,Wed/,Thu/,Fri/,Sat" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="No Service Today/,Prime (First Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Royal Hours"/>
 <PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
 <PHRASE Key="DateFormat" Value="WW, DD MM YY" Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
 <PHRASE Key="Feasts" Value="Circumcision of the Lord/,Theophany/,Nativity of St. John the Baptist/,Sts. Peter and Paul/,Transfiguration/,Dormition of the Theotokos/,Beheading of St. John the Baptist/,Nativity of the Theotokos/,Exaltation of the Holy Cross/,Protection of the Theotokos/,Entry of the Theotokos into the Temple/,Nativity of our Lord/,Kyriopascha: Pascha and Annunciation/,Pascha/,Annunciation/,Pentecost/,Ascension/,Palm Sunday/,Meeting of the Lord" />
 <PHRASE Key="Helpers" Value="Save to a html file." />
-<PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing." />
+<PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
 <PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
+<PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
+<PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
 </LANGUAGE>
 <LANGUAGE NameLocal="Français" NameEnglish="French" Cmd="LS == 1">
  <PHRASE Key="0" Value="Ponomar" Comment="Ceci est la seule valeur pour cette clé."/>
@@ -95,8 +101,11 @@ L’état de completation : 1 (sauf le Bible et la première heure).
 <PHRASE Key="Feasts" Value="La Circoncision de Seigneur/,La Théophanie/,La Nativité de St. Jean le Baptiste/,Sts. Pierre et Paul/,La Transfiguration/,La Dormition de la Mère de Dieu/,La Décollation de St. Jean le Baptiste/,La Nativité de la Mère de Dieu/,L'Exaltation de la Sainte Croix/,La Protection de la Mère de Dieu/,L'Entrée de la Mère de Dieu dans le Temple/,La Nativité de nôtre Seigneur/,Kyriopâques: Pâques et l'Annonciation/,Pâques/,L'Annonciation/,Le Pentecôte/,L'Ascension de Seigneur/,Le Dimanche des Rameaux/,Le Rencontre de nôtre Seigneur" />
 <PHRASE Key="Helpers" Value="Sauvegarder un file html." />
 <PHRASE Key="PrimeSelection" Value="Lecteur/,Prêtre/,Éveque/,Indépendente/,Sans le début/,Sans le fin/,Sans le début et le fin/,Type" />
-<PHRASE Key="ServiceRead" Value="Il manque le tître désiré./,Une erreur serieuse se produit pendant la lecture de file :  /,Il manque le ordre désiré./,Il manque le surtître désiré." />
+<PHRASE Key="ServiceRead" Value="Il manque le tître désiré./,Une erreur serieuse se produit pendant la lecture de file :  /,Il manque le ordre désiré./,Il manque le surtître désiré./,Une erreur se produit en trouvant l'information désirée : " />
 <PHRASE Key="Errors" Value="Il manque/,Il nous manque le floater avec   numéro/,Erreur à jour/,Expression malformée: Il manque des   parenthèses/,Expression malformée:/,n'etait pas trouve/,Les valeurs ne   sont pas proprement lis./,Non-existant mois/,Non-existant   jour:/,dans/,Un jour julienne doit être plus grand que 0" />
+<PHRASE Key="RoyalHours" Value="Les heures royales ne sont pas servies aujourd'hui./,Les heures royales"/>
+<PHRASE Key="Commemoration" Value="Une erreur se produit pendant la lecture du Hashtable !\nIl manque l'élément : /, avec le tag : /,Une erreur se produit pendant la lecture du Hashtable !\nIl manque le Nœud : /,Une erreur se produit pendant la lecture du Hashtable ! ! !" Comments="The spaces must be maintained, as well as the new lines \n"/>
+<PHRASE Key="BibleW" Value="Chapitre précédent/,Tout le chapitre/,Chapitre suivant/,Favorir un passage/,Copier le passage/,Sauvegarder le passage/,Imprimer le passage/,Ponomar : Lecture de la Bible/,Une erreur se produit pendant la lecture du bmlfile : /,Il manque le ressource : "/>
 </LANGUAGE> 
 <LANGUAGE NameLocal="русский" NameEnglish="Russian" Cmd="LS == 3">
 <PHRASE Key="0" Value="Пономарь" Comment="This is the only entry for this key."/>
@@ -130,10 +139,13 @@ L’état de completation : 1 (sauf le Bible et la première heure).
 <PHRASE Key="DateFormat" Value="WW, DD MM YY" Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
 <PHRASE Key="Feasts" Value="Circumcision of the Lord/,Theophany/,Nativity of St. John the Baptist/,Sts. Peter and Paul/,Transfiguration/,Dormition of the Theotokos/,Beheading of St. John the Baptist/,Nativity of the Theotokos/,Exaltation of the Holy Cross/,Protection of the Theotokos/,Entry of the Theotokos into the Temple/,Nativity of our Lord/,Kyriopascha: Pascha and Annunciation/,Pascha/,Annunciation/,Pentecost/,Ascension/,Palm Sunday/,Meeting of the Lord" />
 <PHRASE Key="Helpers" Value="Save to a html file." />
-<PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing." />
+<PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
 <PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
+<PHRASE Key="RoyalHours" Value="The Royal Hours are not served today/,Royal Hours"/>
+<PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
+<PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
 </LANGUAGE>
-<DONE Value="MenuFiles, LanguagePack, LanguageSelector, About, ConfigurationFiles, Main, GospelSelector, OrderedHashtable, DocHanlder,QDParser, Sunrise, JCalendar, JDaySelector, Paschalion, Primes, DivineLiturgy, StringOp (I could not successfully translate this section),JDate,"/>
-<TODO Value=" Bible, Reporter, " />
+<DONE Value="MenuFiles, LanguagePack, LanguageSelector, About, ConfigurationFiles, Main, GospelSelector, OrderedHashtable, DocHanlder,QDParser, Sunrise, JCalendar, JDaySelector, Paschalion, Primes, DivineLiturgy, StringOp (I could not successfully translate this section),JDate,Bible,"/>
+<TODO Value="  Reporter, " />
 </LANGUAGEPACKS>

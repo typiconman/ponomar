@@ -48,6 +48,8 @@ public class Commemoration implements DocHandler
         private OrderedHashtable ServiceInfo;
         private String Location1;
         private boolean readService=false;
+        private LanguagePack Text=new LanguagePack();
+	private String[] CommNames=Text.obtainValues((String)Text.Phrases.get("Commemoration"));
 	
 	protected Commemoration(String FileName)
 	{
@@ -347,12 +349,12 @@ public class Commemoration implements DocHandler
                     return stuff1;
                 }
                 else{
-                    System.out.println("Error reading the Hashtable!\nMissing element: " + Node + " with Tag: "+Type);
+                    System.out.println(CommNames[0] + Node + CommNames[1] +Type);
                     return new OrderedHashtable();
                 }
             }
             else{
-                System.out.println("Error reading the Hashtable!\nMissing Node: "+Node);
+                System.out.println(CommNames[2] +Node);
                 return new OrderedHashtable();
             }
         }
@@ -368,12 +370,12 @@ public class Commemoration implements DocHandler
                 return stuff1;
             }
             else{
-                System.out.println("Error reading the Hashtable!!!");
+                System.out.println(CommNames[3]);
                 return new OrderedHashtable();
             }
             }
             else{
-                System.out.println("Error reading the Hash table!!!");
+                System.out.println(CommNames[3]);
                 return new OrderedHashtable();
             }
 

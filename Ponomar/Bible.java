@@ -72,8 +72,10 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 	
 	
 	private static final int NUM_BUTTONS = 7;
-	private static final String[] captions = new String[]
-	{"Previous Chapter", "Entire Chapter", "Next Chapter", "Bookmark Passage", "Copy Passage", "Save Passage", "Print Passage"};
+        private LanguagePack Text = new LanguagePack();
+	private final String[] captions=Text.obtainValues((String)Text.Phrases.get("BibleW"));
+                //new String[]
+	//{"Previous Chapter", "Entire Chapter", "Next Chapter", "Bookmark Passage", "Copy Passage", "Save Passage", "Print Passage"};
 	
 	// CONSTRUCTOR
 	protected Bible(String passage)
@@ -84,8 +86,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 	protected Bible(String curbook, String curpassage)
 	{
 		//GET THE DEFAULT BIBLE FOR THE GIVEN LANGUAGE!
-		super("Ponomar Scripture Reader");
-		
+		//super("Ponomar Scripture Reader");
+		setTitle(captions[7]);
 		//ADDED Y.S. TO ALLOW FOR MULTILINGUAL AND ALL BIBLE READING
 		String a=(String)ConfigurationFiles.Defaults.get("BibleDefaults");
 		String[] Default=a.split(",");
@@ -100,7 +102,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 		}
 		catch (Exception e)
 		{
-			System.out.println("Error reading bmlfile: " + e.toString());
+			System.out.println(captions[8] + e.toString());
 		}		
 
 		// NOW PUT THE XML INFORMATION INTO THE USER INTERFACE
@@ -171,7 +173,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 			else
 			{
 				button.setText(Integer.toString(bnum));
-				System.err.println("Resource not found: " + imgLocation);
+				System.err.println(captions[9] + imgLocation);
 			}
 			toolbar.add(button);
 		}
@@ -555,7 +557,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 		}
 		catch (Exception e)
 		{
-			System.out.println("Error reading bmlfile: " + e.toString());
+			System.out.println(captions[8] + e.toString());
 		}
 			
 		//CALL THE PARSE READER AND OBTAIN THE RETURNED RESULTS: [0] contains the readings with or without extra markings, [1] contains any special instructions, and [2] contains the header, that is, a properly formated version of the reading.
@@ -668,7 +670,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 		}
 		catch (Exception e)
 		{
-			System.out.println("Error reading bmlfile: " + e.toString());
+			System.out.println(captions[9] + e.toString());
 		}
 		
 		return (String) abbrev.get(Id);
@@ -761,7 +763,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 		}
 		catch (Exception e)
 		{
-			System.out.println("Error reading bmlfile: " + e.toString());
+			System.out.println(captions[8] + e.toString());
 		}
 		
 		String[] parts = reading.split("_");
@@ -948,7 +950,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 		}
 		catch (Exception e)
 		{
-			System.out.println("Error reading bmlfile: " + e.toString());
+			System.out.println(captions[8] + e.toString());
 		}
 		int k=Id.lastIndexOf("_");
 		if(k != -1)
