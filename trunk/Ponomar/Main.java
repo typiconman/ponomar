@@ -353,20 +353,20 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				case 8:
                             case 7:
                             case 6:
-					output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\u26D0</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";
+					output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";
 					break;
 				case 5:
-                                    output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\u26D1</Font>\u00A0" + table.get("Name") + "</FONT>";
+                                    output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA699</Font>\u00A0" + table.get("Name") + "</FONT>";
 					break;
                             case 4:
-				output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\u26D2</Font><B>\u00A0" + table.get("Name") + "</B>";
+				output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\uA69A</Font><B>\u00A0" + table.get("Name") + "</B>";
 					break;
 
 				case 3:
-					output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\u26D3</Font><I>\u00A0" + table.get("Name") + "</I>";
+					output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\uA69B</Font><I>\u00A0" + table.get("Name") + "</I>";
 					break;
                             case 2:
-                                output += "<Font face='Hirmos Ponomar' size='+1'>\u26D3</Font><I>\u00A0" + table.get("Name") + "</I>";
+                                output += "<Font face='Hirmos Ponomar' size='+1'>\uA69B</Font><I>\u00A0" + table.get("Name") + "</I>";
 					break;
 				default:
 					output += table.get("Name");

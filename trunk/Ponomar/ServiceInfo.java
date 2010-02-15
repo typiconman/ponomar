@@ -51,7 +51,7 @@ public class ServiceInfo implements DocHandler
 		Information=new OrderedHashtable();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
-		StringOp.dayInfo.put("dRank",1);	//ANY RANK LESS THAN 4 WILL DO
+		/*StringOp.dayInfo.put("dRank",1);	//ANY RANK LESS THAN 4 WILL DO
 		try
 		{
 			FileReader frf = new FileReader("Ponomar/xml/Commands/DivineLiturgy.xml");
@@ -98,6 +98,8 @@ public class ServiceInfo implements DocHandler
 		}
 		//FINISHED THE KLUTZ
 		//ACTUAL PROGRAMME
+                 */
+                //The above is unnecessary since the days can now be ranked properly.
 		//System.out.print("Today's rank is "+StringOp.dayInfo.get("dRank")+"\n");
 		try
 		{
