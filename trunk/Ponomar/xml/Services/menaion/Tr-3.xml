@@ -1,0 +1,373 @@
+﻿<!-- service file for SID Tr-3 (Holy and Good Friday) -->
+<!--<?xml-stylesheet type="text/xsl" href="Commemeration.xsl" ?>-->
+
+<COMMEMORATION>
+<LANGUAGE Cmd="LS == 0">
+<NAME>Holy and Good Friday</NAME>
+<SERVICE>
+	<TROPARION Header="Tropar, Tone 1" Tone="1" Type="1">
+	When you were crucified, O Christ, the tyranny of the enemy was destroyed, his power trampled underfoot; for it was not an Angel, not a human, but you, the Lord himself, who saved us. Glory to you!
+	</TROPARION>
+	<TROPARION Header="Tropar, Tone 6" Tone="6" Type="2">
+Lord, the Jews condemned you, the life of all, to death; those who by a staff crossed the Red Sea on foot nailed you to a cross, and those who sucked honey from a rock offered you gall. But you endured willingly, that you might free us from the slavery of the foe. Christ God, glory to you!
+</TROPARION>
+	<TROPARION Header="Tropar, Tone 2" Tone="2" Type="3">
+You have worked salvation in the midst of the earth, Christ our God. You stretched out your most pure hands on the Cross, gathering together all the nations, as they cry: Lord, glory to you!
+</TROPARION>
+	<TROPARION Header="Tropar, Tone 8" Tone="8" Type="4">
+The Thief, seeing the Prince of life hanging on the Cross, said: If he who is crucified with us was not God incarnate, the sun would not have hidden its rays, nor would the shaken earth be quaking. But you who bear all things, remember me, Lord, in your kingdom.
+</TROPARION>
+	<KONTAKION Header="Kontak, Tone 1" Tone="1" Type="1">
+Come, let us all sing the praise of him who was crucified for us; for Mary looked upon him on the Tree and said: ‘Though you endure the Cross, yet you are my Son and my God’.
+	</KONTAKION>
+<ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
+	<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
+Today the veil of the Temple is rent, as a reproof against the transgressors; and the sun hides its own rays, as it sees the Master crucified.
+	</IDIOMEL><!-- Note the difference in assigned Tones here -->
+<VERSE Type="1" >
+Why were the nations insolent and why did the peoples meditate vain things?
+</VERSE>
+<IDIOMEL Type="12" Tone="3" Header="Tropar, Tone 3">
+You were led like a sheep to the slaughter, Christ King, and as an innocent lamb you were nailed to the Cross by lawless men for our sins, O Lover of mankind.
+</IDIOMEL>
+<VERSE Type="2">
+The kings of the earth stood up, and the rulers were assembled together against the Lord and against his Christ.
+</VERSE>
+<IDIOMEL Type="13" Tone="8" Header="Tropar, Tone 8" Author="">
+Allowing the lawless to arrest you, Lord, you cried out, ‘Though you strike the shepherd and scatter the twelve sheep, my disciples, I could call to my side more than twelve legions of Angels; but I forbear, that the hidden and secret things, which I revealed to you through my Prophets, may be fulfilled.’ Lord, glory to you! 
+</IDIOMEL>
+
+<PROKIMENON Type="1P" Tone="4" Header="Prokeimenon of the Prophecy, Tone 4">
+He gathered iniquity to himself; he went out and spoke in the same manner.
+</PROKIMENON>
+<VERSE Type="1P" >
+Blessed is one who considers the poor and needy; the Lord will deliver in an evil day.
+</VERSE>
+
+<IDIOMEL Type="31" Tone="8" Header="Тropar, Tone 8" Author="">
+Through fear of the Jews Peter, your friend and neighbour, denied you, Lord; and in bitter grief he cried out: Do not pass by my tears in silence, compassionate Master; for I said I would keep faith, but have not kept it. Accept our repentance too, and have mercy on us. 
+</IDIOMEL>
+<VERSE Type="31">
+Give ear to my words, O Lord; understand my cry.
+</VERSE>
+<!-- On Good Friday, the verses are varied for each idiomel and hour. -->
+<IDIOMEL Type="32" Tone="8" Header="Troparion, Tone 8">
+Before your precious Cross as the soldiers mocked you, Lord, the spiritual hosts were struck with amazement. For you were wreathed with a crown of outrage, you who painted the earth with flowers; and you wore a cloak of mockery, you who wrap the firmament in clouds; by such a dispensation was your compassion made known, O Christ, and your great mercy. Glory to you!
+</IDIOMEL>
+<VERSE Type="32">
+Attend to the voice of my prayer, my King and my God.
+</VERSE>
+<IDIOMEL Type="33" Tone="3" Header="Tropar, Tone 3" Author="">
+As you were dragged to the Cross, Lord, you cried out thus: For what work do you wish to crucify me, O Jews? Because I braced the paralytic? Because I raised the dead from sleep? I healed the woman with an issue of blood, I took pity on the woman of Canaan. For what work do you wish to slay me, O Jews? But, transgressors, you will see Christ whom now you pierce.
+</IDIOMEL>
+<PROKIMENON Type="3P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+For I am ready for scourges; * and my pain is with me continually.
+</PROKIMENON>
+<VERSE Type="3P">
+ O Lord, do not rebuke me in your anger; nor chasten me in your wrath.
+</VERSE>
+	
+<IDIOMEL Type="61" Tone="8" Header="Tropar, Tone 8" Author="">
+Thus says the Lord to the Jews, ‘My people, what have I done to you? Or in what have I wearied you? I gave light to your blind, I cleansed your lepers, I set upright a man lying on a bed. My people, what have I done to you, and how have you repaid me? Instead of the manna gall; instead of the water vinegar; instead of loving me, you have nailed me to a cross. I can endure no longer; I will call my nations, and they will glorify me, with the Father and the Spirit; and I shall grant them eternal life
+</IDIOMEL>
+<VERSE Type="61">
+They gave me gall for food, and for my thirst they gave me vinegar to drink.
+</VERSE>
+<IDIOMEL Type="62" Tone="6" Header="Tropar, Tone 6">
+Lawgivers of Israel, Jews and Pharisees, the choir of the Apostles cries out to you, ‘See a Temple, which you have destroyed! See a Lamb, whom you have crucified! You handed him over to a tomb, but by his own authority he has risen. Do not be deceived, O Jews, for it is he who saved you in the sea, and fed you in the desert; he is the life and the light and the peace of the world.
+</IDIOMEL>
+<VERSE Type="62">
+Save me, O God; for the waters have come in, even as far as my soul.
+</VERSE>
+<IDIOMEL Type="63" Tone="5" Header="Tropar, Tone 5" Author="">
+Come, Christ-bearing peoples, let us see what Judas the betrayer has plotted with the lawless priests against our Saviour. Today they have found the immortal Word guilty of death, and having betrayed him to Pilate, crucified him on the place of the Skull. And as he suffered all this our Saviour cried out and said, "Forgive them this sin, Father, that the nations may know my Resurrection from the dead."
+</IDIOMEL>
+<PROKIMENON Type="6P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+Lord, our Lord, how wonderful is your name in all the earth!
+</PROKIMENON>
+<VERSE Type="6P" >
+For your majesty is raised high above the heavens.
+</VERSE>
+
+<IDIOMEL Type="91" Tone="7" Header="Tropar, Tone 7" Author="">
+A strange wonder it was to see the Maker of heaven and earth hanging on a cross; the sun darkened, the day changed again into night and the earth giving back the bodies of the dead from their tombs; with them we worship you. Save us.
+</IDIOMEL>
+<VERSE Type="91">
+They parted my garments among them, and cast lots for my clothing.
+</VERSE>
+<IDIOMEL Type="92" Tone="2" Header="Tropar, Tone 2">
+When the transgressors saw you, the Lord of glory, nailed to the Cross, you cried out to them, "How have I grieved you? In what have I angered you? Before me, who delivered you from affliction? And now how do your repay me? With evils for blessings: instead of a pillar of fire, you have nailed me to a cross; instead of a cloud, you have dug me a tomb; instead of the manna, you have offered me gall; instead of water, you have given me vinegar to drink. From now on I shall call the nations, and they will glorify me with the Father and the holy Spirit."
+</IDIOMEL>
+<IDIOMEL Type="93.1" Tone="5" Header="Tropar, Tone 5" Author="">
+To-day he is hung upon a tree, he who hung the earth upon the waters 
+</IDIOMEL>
+<IDIOMEL Type="93.2" Tone="6" Header="Tropar, Tone 6" Author="">
+He is arrayed in a crown of thorns, he who is the King of the Angels. He is wrapped in mocking purple, he who wraps the heaven in clouds. He receives a blow on the face, he who freed Adam in Jordan. He is transfixed with nails, the Bridegroom of the Church. He is pierced by a lance, the Son of the Virgin. 
+</IDIOMEL>
+<IDIOMEL Type="93.3" Tone="6" Header="Tropar, Tone 6" Author="">
+We worship your Sufferings, O Christ
+</IDIOMEL>
+<IDIOMEL Type="93.4" Tone="6" Header="Tropar, Tone 6" Author="">
+Show us also your glorious Resurrection.
+</IDIOMEL>
+
+<PROKIMENON Type="9P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+The fool has said in his heart: "There is no God."
+</PROKIMENON>
+<VERSE Type="9P">
+There is none who does good; no, not one.
+</VERSE>
+
+	</ROYALHOURS>
+</SERVICE>
+</LANGUAGE>
+
+<!-- The Greek Texts -->
+<LANGUAGE Cmd="LS == 4"> 
+<SERVICE>
+	<TROPARION Header="Τροπάριον Ἦχος α'" Tone="1" Type="1">
+	Σταυρωθέντος σου Χριστέ, ἀνῃρέθη ἡ τυραννίς, ἐπατήθη ἡ δύναμις τοῦ ἐχθροῦ· οὔτε γὰρ Ἄγγελος, οὐκ ἄνθρωπος, ἀλλ' αὐτὸς ὁ Κύριος, ἔσωσας ἡμᾶς, δόξα σοι.
+	</TROPARION>
+	<TROPARION Header="Τροπάριον Ἦχος πλ. β'" Tone="6" Type="2">
+Κύριε, κατέκρινάν σε οἱ Ἰουδαῖοι θανάτῳ, τὴν ζωὴν τῶν ἁπάντων, οἱ τὴν ἐρυθρὰν ῥάβδῳ πεζεύσαντες, σταυρῷ σε προσήλωσαν, καὶ οἱ ἐκ πέτρας μέλι θηλάσαντες, χολήν σοι προσήνεγκαν, ἀλλ' ἑκὼν ὑπέμεινας, ἵνα ἡμᾶς ἐλευθερώσῃς τῆς δουλείας τοῦ ἐχθροῦ. Χριστὲ ὁ Θεὸς δόξα σοι.
+</TROPARION>
+	<TROPARION Header="Τροπάριον Ἦχος β'" Tone="2" Type="3">
+Σωτηρίαν εἰργάσω ἐν μέσῳ τῆς γῆς, Χριστε ὁ Θεός, ἐπὶ Σταυροῦ τὰς ἀχράντους σου χεῖρας ἐξέτεινας, ἐπισυνάγων πάντα, τὰ ἔθνη, κράζοντα· Κύριε δόξα σοι.
+</TROPARION>
+	<TROPARION Header="Τροπάριον Ἦχος πλ. δ'" Tone="8" Type="4">
+Βλέπων ὁ Ληστὴς τὸν ἀρχηγὸν τῆς ζωῆς, ἐπὶ Σταυροῦ κρεμάμενον, ἔλεγεν· Εἰ μὴ Θεὸς ὑπῆρχε σαρκωθείς, ὁ σὺν ἡμῖν σταυρωθείς, οὐκ ἂν ὁ ἥλιος τὰς ἀκτῖνας ἐναπέκρυψεν, οὐδὲ ἡ γῆ σειομένη ἐκυμαὶνετο. Ἀλλ' ὁ πάντων ἀνεχόμενος· Μνήσθητί μου Κύριε, ἐν τῇ Βασιλείᾳ σου.
+</TROPARION>
+	<KONTAKION Header="Κοντάκιον Ἦχος πλ. δ'" Tone="8" Type="1">
+Τὸν δι' ἡμᾶς σταυρωθέντα, δεῦτε πάντες ὑμνήσωμεν· αὐτὸν γὰρ κατεῖδε Μαρία ἐπὶ τοῦ ξύλου, καὶ ἔλεγεν· Εἰ καὶ σταυρὸν ὑπομένεις, σὺ ὑπάρχεις ὁ Υἱὸς καὶ Θεός μου.
+	</KONTAKION>
+<ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
+	<IDIOMEL Type="11" Tone="8" Header="Στιχηρὰ Ἰδιόμελα\nἮχος πλ. δ'" Author="Sophronios, the Patriarch of Jerusalem">
+Σήμερον τοῦ Ναοῦ τὸ καταπέτασμα, εἰς ἔλεγχον ῥήγνυται τῶν παρανόμων, καὶ τὰς ἰδίας ἀκτῖνας, ὁ ἥλιος κρύπτει, Δεσπότην ὁρῶν σταυρούμενον.
+	</IDIOMEL><!-- Note the difference in assigned Tones here -->
+<VERSE Type="1" >
+Ἵνα τί ἐφρύαξαν ἔθνη, καὶ λαοὶ ἐμελέτησαν κενὰ;
+</VERSE>
+<IDIOMEL Type="12" Tone="3" Header="Ἰδιόμελα">
+Ὡς πρόβατον ἐπὶ σφαγήν, ἤχθης Χριστὲ Βασιλεῦ, καὶ ὡς ἀμνὸς ἄκακος, προσηλώθης τῷ σταυρῷ, ὑπὸ τῶν παρανόμων ἀνδρῶν, διὰ τὰς ἁμαρτίας ἡμῶν φιλάνθρωπε.
+</IDIOMEL>
+<VERSE Type="2">
+Παρέστησαν οἱ βασιλεῖς τῆς γῆς, καὶ οἱ ἄρχοντες συνήχθησαν ἐπὶ τὸ αὐτό.
+</VERSE>
+<IDIOMEL Type="13" Tone="8" Header="Ἰδιόμελα" Author="">
+Τοῖς συλλαβοῦσί σε παρανόμοις, ἀνεχόμενος οὕτως ἐβόας Κύριε· Εἰ καὶ ἐπατάξατε τὸν ποιμένα, καὶ διεσκορπίσατε τὰ δώδεκα πρόβατα τοὺς Μαθητάς μου, ἠδυνάμην πλείους, ἢ δώδεκα λεγεῶνας, παραστῆσαι Ἀγγέλων· ἀλλὰ μακροθυμῶ, ἵνα πληρωθῇ, ἃ ἐδήλωσα ὑμῖν διὰ τῶν Προφητῶν μου, ἄδηλα καὶ κρύφια. Κύριε δόξα σοι.
+</IDIOMEL>
+
+<PROKIMENON Type="1P" Tone="4" Header="Προκείμενον Ἦχος δ'">
+Ἐξεπορεύετο ἔξω, καὶ ἐλάλει ἐπὶ τὸ αὐτό.
+</PROKIMENON>
+<VERSE Type="1P" >
+Μακάριος ὁ συνιὼν ἐπὶ πτωχὸν καὶ πένητα.
+</VERSE>
+
+<IDIOMEL Type="31" Tone="8" Header="Ἦχος πλ. δ'" Author="">
+Διὰ τὸν φόβον τῶν Ἰουδαίων, ὁ φίλος σου καὶ ὁ πλησίον Πέτρος, ἠρνήσατό σε Κύριε, καὶ ὀδυρόμενος οὕτως ἐβόα· Τῶν δακρύων μου μὴ παρασιωπήσῃς· εἶπα γὰρ φυλάξαι τὴν πίστιν οἰκτίρμον, καὶ οὐκ ἐφύλαξα, καὶ ἡμῶν τὴν μετάνοιαν, οὕτω δέξαι, καὶ ἐλέησον ἡμᾶς. 
+</IDIOMEL>
+<VERSE Type="31">
+Τὰ ῥήματά μου ἐνώτισαι, Κύριε, σύνες τῆς κραυγῆς μου.
+</VERSE>
+<!-- On Good Friday, the verses are varied for each idiomel and hour. -->
+<IDIOMEL Type="32" Tone="8" Header="">
+Πρὸ τοῦ τιμίου σου Σταυροῦ, στρατιωτῶν ἐμπαιζόντων σε Κύριε, αἱ νοεραὶ στρατιαὶ κατεπλήττοντο· ἀνεδήσω γὰρ στέφανον ὕβρεως, ὁ τὴν γῆν ζωγραφήσας τοῖς ἄνθεσι, καὶ τὴν χλαῖναν χλευαζόμενος ἐφόρεσας, ὁ νεφέλαις περιβάλλων τὸ στερέωμα· τοιαύτη γὰρ οἰκονομία, ἐγνώσθη σου ἡ εὐσπλαγχνία, Χριστέ, τὸ μέγα ἔλεος, δόξα σοι.
+</IDIOMEL>
+<VERSE Type="32">
+Πρόσχες τῇ φωνῇ τῆς δεήσεώς μου, ὁ Βασιλεύς μου καὶ ὁ Θεός μου.
+</VERSE>
+<IDIOMEL Type="33" Tone="1" Header="Ἦχος πλ. α'" Author="">
+Ἑλκόμενος ἐπὶ σταυροῦ, οὕτως ἐβόας Κύριε· Διὰ ποῖον ἔργον, θέλετέ με σταυρῶσαι Ἰουδαῖοι; ὅτι τοὺς παραλύτους ὑμῶν συνέσφιγξα; ὅτι τοὺς νεκρούς, ὡς ἐξ ὕπνου ἀνέστησα; Αἱμόρρουν ἰασάμην, Χαναναίαν ἠλέησα, διὰ ποῖον ἔργον θέλετέ με φονεῦσαι Ἰουδαῖοι; ἀλλ' ὄψεσθε εἰς ὃν νῦν ἐκκεντᾶτε, Χριστὸν παράνομοι.
+</IDIOMEL>
+<PROKIMENON Type="3P" Tone="4" Header="Προκείμενον Ἦχος δ'">
+Ὅτι ἐγὼ εἰς μάστιγας ἕτοιμος.
+</PROKIMENON><!-- This is shorter than the English -->
+<VERSE Type="3P">
+Κύριε, μὴ τῷ θυμῷ σου ἐλέγξῃς με.
+</VERSE> <!-- This is shorter than the English -->
+	
+<IDIOMEL Type="61" Tone="8" Header="Ἦχος πλ. δ'" Author="">
+Τάδε λέγει Κύριος τοῖς Ἰουδαίοις· Λαός μου, τί ἐποίησά σοι, ἢ τί σοι παρηνώχλησα; τοὺς τυφλούς σου ἐφώτισα, τοὺς λεπρούς σου ἐκαθάρισα, ἄνδρα ὄντα ἐπὶ κλίνης ἠνωρθωσάμην. Λαός μου, τί ἐποίησά σοι; καὶ τί μοι ἀνταπέδωκας; ἀντὶ τοῦ μάννα, χολήν, ἀντὶ τοῦ ὕδατος, ὄξος, ἀντὶ τοῦ ἀγαπᾶν με, σταυρῷ με προσηλώσατε· οὐκέτι στέγω λοιπόν, καλέσω μου τὰ ἔθνη, κᾀκεῖνά με δοξάσουσι σὺν τῷ Πατρὶ καὶ Πνεύματι, κᾀγὼ αὐτοῖς δωρήσομαι, ζωὴν τὴν αἰώνιον.
+</IDIOMEL>
+<VERSE Type="61">
+Ἔδωκαν εἰς τὸ βρῶμά μου χολήν, καὶ εἰς τὴν δίψαν μου ἐπότισάν με ὄξος.
+</VERSE>
+<IDIOMEL Type="62" Tone="6" Header="">
+Οἱ νομοθέται τοῦ Ἰσραήλ, Ἰουδαῖοι καὶ Φαρισαῖοι, ὁ χορὸς τῶν Ἀποστόλων, βοᾷ πρὸς ὑμᾶς· Ἴδε ναός, ὃν ὑμεῖς ἐλύσατε. Ἴδε ἀμνός, ὃν ὑμεῖς ἐσταυρώσατε, τάφῳ παρεδώκατε, ἀλλ' ἐξουσίᾳ ἑαυτοῦ ἀνέστη. Μὴ πλανᾶσθε Ἰουδαῖοι· αὐτὸς γάρ ἐστιν ὁ ἐν θαλάσσῃ σώσας, καὶ ἐν ἐρήμῳ θρέψας, αὐτός ἐστιν ἡ ζωὴ καὶ τὸ φῶς, καὶ ἡ εἰρήνη τοῦ Κόσμου. 
+</IDIOMEL>
+<VERSE Type="62">
+Σῶσόν με ὁ Θεός, ὅτι εἰσήλθοσαν ὕδατα ἕως ψυχῆς μου.
+</VERSE>
+<IDIOMEL Type="63" Tone="5" Header="Ἦχος πλ. α'" Author="">
+Δεῦτε χριστοφόροι λαοὶ κατίδωμεν, τί συνεβουλεύσατο Ἰούδας ὁ προδότης, σὺν ἱερεῦσιν ἀνόμοις, κατὰ τοῦ Σωτῆρος ἡμῶν, σήμερον ἔνοχον θανάτου, τὸν ἀθάνατον Λόγον πεποίηκαν, καὶ Πιλάτῳ προδώσαντες, ἐν τόπῳ Κρανίου ἐσταύρωσαν, καὶ ταῦτα πάσχων, ἐβόα ὁ Σωτὴρ ἡμῶν λέγων· Ἄφες αὐτοῖς Πάτερ τὴν ἁμαρτίαν ταύτην, ὅπως γνῶσι τὰ ἔθνη, τὴν ἐκ νεκρῶν μου Ἀνάστασιν.
+</IDIOMEL>
+<PROKIMENON Type="6P" Tone="4" Header="Προκείμενον Ἦχος δ'">
+Κύριε ὁ Κύριος ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ!
+</PROKIMENON>
+<VERSE Type="6P" >
+Ὅτι ἐπήρθη ἡ μεγαλοπρέπειά σου ὑπεράνω τῶν οὐρανῶν.
+</VERSE>
+
+<IDIOMEL Type="91" Tone="7" Header="Ἦχος βαρὺς" Author="">
+Θάμβος ἦν κατιδεῖν, τὸν οὐρανοῦ καὶ γῆς Ποιητήν, ἐπὶ Σταυροῦ κρεμάμενον, ἥλιον σκοτισθέντα, τὴν ἡμέραν δὲ πάλιν εἰς νύκτα μετελθοῦσαν, καὶ τὴν γῆν ἐκ τάφων ἀναπέμπουσαν, σώματα νεκρῶν, μεθ' ὧν προσκυνοῦμέν σε, σῶσον ἡμᾶς.
+</IDIOMEL>
+<VERSE Type="91">
+Διεμερίσαντο τὰ ἱμάτιά μου ἑαυτοῖς, καὶ ἐπὶ τὸν ἱματισμόν μου ἔβαλον κλῆρον.
+</VERSE>
+<IDIOMEL Type="92" Tone="2" Header="Ἦχος β'">
+Ὅτε σὲ Σταυρῷ προσήλωσαν παράνομοι, τὸν Κύριον τῆς δόξης, ἐβόας πρὸς αὐτούς· τί ὑμᾶς ἐλύπησα; ἢ ἐν τίνι παρώργισα; πρὸ ἐμοῦ, τίς ὑμᾶς ἐρρύσατο ἐκ θλίψεως; καὶ νῦν, τί μοι ἀνταποδίδοτε; πονηρὰ ἀντὶ ἀγαθῶν, ἀντὶ στύλου πυρὸς Σταυρῷ με προσηλώσατε, ἀντὶ νεφέλης, τάφον μοι ὠρύξατε, ἀντὶ τοῦ μάννα, χολὴν μοι προσηνέγκατε, ἀντὶ τοῦ ὕδατος, ὄξος με ἐποτίσατε. Λοιπὸν καλῶ τὰ ἔθνη, κᾀκεῖνά με δοξάσουσι, σὺν Πατρὶ καὶ ἁγίῳ Πνεύματι.
+</IDIOMEL>
+<IDIOMEL Type="93.1" Tone="5" Header="Ἦχος πλ. β'" Author="">
+Σήμερον κρεμᾶται ἐπὶ ξύλου, ὁ ἐν ὕδασι τὴν γῆν κρεμάσας. 
+</IDIOMEL>
+<IDIOMEL Type="93.2" Tone="6" Header="Tropar, Tone 6" Author="">
+Στέφανον ἐξ ἀκανθῶν περιτίθεται, ὁ τῶν Ἀγγέλων Βασιλεύς. Ψευδὴ πορφύραν περιβάλλεται, ὁ περιβάλλων τὸν οὐρανὸν ἐν νεφέλαις. Ῥάπισμα κατεδέξατο, ὁ ἐν Ἰορδάνῃ ἐλευθερώσας τὸν Ἀδάμ. Ἥλοις προσηλώθη ὁ Νυμφίος τῆς Ἐκκλησίας. Λόγχῃ ἐκεντήθη, ὁ Υἱὸς τῆς Παρθένου.
+</IDIOMEL>
+<IDIOMEL Type="93.3" Tone="6" Header="Tropar, Tone 6" Author="">
+Προσκυνοῦμέν σου τὰ Πάθη Χριστέ.
+</IDIOMEL>
+<IDIOMEL Type="93.4" Tone="6" Header="Tropar, Tone 6" Author="">
+Δεῖξον ἡμῖν καὶ τὴν ἔνδοξόν σου Ἀνάστασιν.
+</IDIOMEL>
+
+<PROKIMENON Type="9P" Tone="4" Header="Προκείμενον Ἦχος δ'">
+Εἶπεν ἄφρων ἐν καρδίᾳ αὐτοῦ, οὐκ ἔστι Θεός.
+</PROKIMENON>
+<VERSE Type="9P">
+Οὐκ ἔστι ποιῶν χρηστότητα, οὐκ ἔστιν ἕως ἑνός.
+</VERSE>
+</ROYALHOURS>
+</SERVICE>
+	
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<NAME></NAME>
+<SERVICE>
+	<TROPARION Header="тропа́рь, гла́съ а҃" Tone="1" Type="1">
+	Распе́ншꙋсѧ тебѣ̀ хрⷭтѐ, поги́бе мꙋчи́тельство, попра́на бы́сть си́ла вра́жїѧ: ниже́ бо а҆́гг҃лъ, нижѐ человѣ́къ, но са́мъ гдⷭи сп҃слъ є҆сѝ на́съ, сла́ва тебѣ̀.
+	</TROPARION>
+	<TROPARION Header="тропа́рь, гла́съ ѕ҃" Tone="6" Type="2">
+Гдⷭи, ѡ҆суди́ша тѧ̀ ї҆уде́є на сме́рть, жи́знь всѣ́хъ, и҆̀же чермно́е мо́ре жезло́мъ проше́дшїи, на крⷭтѣ́ тѧ (л. _ꙋн҃г) пригвозди́ша: и҆ и҆̀же ѿ ка́мене ме́дъ сса́вшїи, же́лчь тебѣ̀ принесо́ша. но во́лею претерпѣ́лъ є҆сѝ, да на́съ свободи́ши ѿ рабо́ты вра́жїѧ, хрⷭтѐ бж҃е, сла́ва тебѣ̀.
+</TROPARION>
+	<TROPARION Header="тропа́рь, гла́съ в҃:" Tone="2" Type="3">
+Сп҃се́нїе содѣ́лалъ є҆сѝ посредѣ̀ землѝ хрⷭтѐ бж҃е, на крⷭтѣ̀ пречⷭтѣи рꙋ́цѣ твоѝ просте́рлъ є҆сѝ, собира́ѧ всѧ҄ ꙗ҆зы́ки, зовꙋ́щыѧ: гдⷭи, сла́ва тебѣ̀.
+</TROPARION>
+	<TROPARION Header="тропа́рь, гла́съ и҃" Tone="8" Type="4">
+Ви́дѧ разбо́йникъ нача́льника жи́зни на крⷭтѣ̀ ви́сѧща, глаго́лаше: а҆́ще не бы̀ бг҃ъ бы́лъ вопло́щьсѧ, и҆́же съ на́ми распны́йсѧ, не бы̀ со́лнце лꙋчы̀ [своѧ҄] потаи́ло, нижѐ бы землѧ̀ трепе́щꙋщи трѧсла́сѧ. но всѧ҄ терпѧ́й, помѧни́ мѧ гдⷭи во црⷭтвїи твое́мъ.
+</TROPARION>
+	<KONTAKION Header="Конда́къ, гла́съ и҃:" Tone="1" Type="1">
+На́съ ра́ди распѧ́таго прїиди́те всѝ воспои́мъ, того́ бо ви́дѣ мр҃ї́а на дре́вѣ, и҆ глаго́лаше: а҆́ще и҆ распѧ́тїе терпи́ши, ты̀ є҆сѝ сн҃ъ и҆ бг҃ъ мо́й.
+	</KONTAKION>
+<ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
+	<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
+Дне́сь цр҃ко́внаѧ завѣ́са, на ѡ҆бличе́ніе беззако́нныхъ раздира́етсѧ, и҆ со́лнце лꙋчы̀ своѧ҄ скрыва́етъ, влⷣкꙋ зрѧ̀ распина́ема.
+	</IDIOMEL><!-- Note the difference in assigned Tones here -->
+<VERSE Type="1" >
+Вшата́шасѧ ꙗ҆зы́цы и҆ лю́дїе поꙋчи́шасѧ тщє́тнымъ;
+</VERSE>
+<IDIOMEL Type="12" Tone="3" Header="тропа́рь">
+Ꙗ҆́кѡ ѻ҆вча̀ на заколе́нїе веде́нъ бы́лъ є҆сѝ хрⷭтѐ цр҃ю̀, и҆ ꙗ҆́кѡ а҆́гнецъ неѕло́бивый пригвозди́лсѧ є҆сѝ крⷭтꙋ̀, ѿ беззако́нныхъ мꙋже́й, грѣ҄хъ ра́ди на́шихъ чл҃вѣколю́бче.
+</IDIOMEL>
+<VERSE Type="2">
+Предста́ша ца́рїе зе́мстїи, и҆ кнѧ́зи собра́шасѧ вкꙋ́пѣ на гдⷭа и҆ на хрⷭта̀ є҆гѡ̀.
+</VERSE>
+<IDIOMEL Type="13" Tone="8" Header="тропа́рь" Author="">
+Є҆́мшымъ тѧ̀ беззакѡ́ннымъ, претерпѣва́ѧ, си́це вопїѧ́лъ є҆сѝ гдⷭи: а҆́ще и҆ порази́сте па́стырѧ, и҆ расточи́сте двана́десѧть ѻ҆ве́цъ ѹ҆ч҃нкѝ моѧ҄, можа́хъ вѧ́щши, не́жели двана́десѧте легео́нѡвъ предста́вити а҆́гг҃лѡвъ. но долготерплю̀, да и҆спо́лнѧтсѧ, ꙗ҆̀же ꙗ҆ви́хъ ва́мъ прⷪро́ки мои́ми, безвѣ҄стнаѧ и҆ та҄йнаѧ: гдⷭи сла́ва тебѣ̀.
+</IDIOMEL>
+
+<PROKIMENON Type="1P" Tone="4" Header="Прокї́менъ прⷪро́чества, гла́съ д҃:">
+Се́рдце є҆гѡ̀ собра̀ беззако́нїе себѣ̀.
+</PROKIMENON> <!-- This prokimenon differs in substance in each of the languages -->
+<VERSE Type="1P" >
+Бл҃же́нъ разꙋмѣва́ѧй на ни́ща и҆ ѹ҆бо́га.
+</VERSE> <!-- This verse differs from the English. -->
+
+<IDIOMEL Type="31" Tone="8" Header="Гла́съ и҃." Author="">
+Стра́ха ра́ди ї҆уде́йскагѡ, дрꙋ́гъ тво́й и҆ бли́жнїй пе́тръ ѿве́ржесѧ тебѐ гдⷭи, и҆ рыда́ѧ си́це вопїѧ́ше: сле́зъ мои́хъ не премолчѝ, рѣ́хъ бо 
+сохрани́ти вѣ́рꙋ ще́дре, и҆ не сохрани́хъ: и҆ на́ше покаѧ́нїе та́кожде прїимѝ, и҆ поми́лꙋй на́съ. 
+</IDIOMEL><!-- The English is not quite the same as the Church Slavonic -->
+<VERSE Type="31">
+Глаго́лы моѧ̀ внꙋшѝ гдⷭи:
+</VERSE>
+<!-- On Good Friday, the verses are varied for each idiomel and hour. -->
+<IDIOMEL Type="32" Tone="8" Header="">
+Пре́жде чⷭтна́гѡ твоегѡ̀ крⷭта̀, во́инѡмъ рꙋга́ющымсѧ тебѣ̀ гдⷭи, ѹ҆́мнаѧ вѡ́инства дивлѧ́хꙋсѧ: ѡ҆бложи́лсѧ бо є҆сѝ вѣнце́мъ порꙋга́нїѧ, зе́млю 
+живописа́вый цвѣ́ты, багрѧни́цею порꙋга́нїѧ ѡ҆дѣ́ѧлсѧ є҆сѝ, ѻ҆́блаки ѡ҆дѣва́ѧй тве́рдь. таковы́мъ бо смотре́нїемъ разꙋмѣ́сѧ твоѐ бл҃гоꙋтро́бїе хрⷭтѐ, ве́лїѧ твоѧ̀ млⷭть, сла́ва тебѣ̀.
+</IDIOMEL>
+<VERSE Type="32">
+Вонмѝ гла́сꙋ моле́нїѧ моегѡ̀.
+</VERSE> <!-- Last clause missing: My King and Lord -->
+<IDIOMEL Type="33" Tone="3" Header="гла́съ є҃" Author="">
+Влеко́мь на крⷭтъ си́це вопїѧ́лъ є҆сѝ гдⷭи: за ко́е дѣ́ло хо́щете мѧ̀ 
+распѧ́ти ї҆ꙋде́є; ꙗ҆́кѡ разсла́блєнныѧ ва́шѧ стѧгнꙋ́хъ, занѐ мертвецы̀ а҆́ки ѿ сна̀ возста́вихъ, кровоточи́вꙋю и҆сцѣли́хъ, ханане́ю поми́ловахъ. за ко́е дѣ́ло хо́щете мѧ̀ ѹ҆би́ти ї҆ꙋде́є; но ѹ҆́зрите, въ него́же ны́нѣ пробода́ете хрⷭта̀, беззако́ннїи.
+</IDIOMEL>
+<PROKIMENON Type="3P" Tone="4" Header="Прокї́менъ, гла́съ д҃">
+Ꙗ҆́кѡ а҆́зъ на ра҄ны гото́въ, и҆ болѣ́знь моѧ̀ предо мно́ю є҆́сть вы́нꙋ.
+</PROKIMENON>
+<VERSE Type="3P">
+Гдⷭи, да не ꙗ҆́ростїю твое́ю ѡ҆бличи́ши менѐ, нижѐ гнѣ́вомъ твои́мъ нака́жеши менѐ.
+</VERSE>
+	
+<IDIOMEL Type="61" Tone="8" Header="гла́съ и҃" Author="">
+Сїѧ҄ глаго́летъ гдⷭь ї҆ꙋде́ѡмъ: лю́дїе моѝ, что̀ сотвори́хъ ва́мъ; и҆лѝ чи́мъ ва́мъ стꙋжи́хъ; слѣпцы̀ ва́шѧ просвѣти́хъ, прокажє́нныѧ ѡ҆чи́стихъ: мꙋ́жа сꙋ́ща на ѻ҆дрѣ̀ и҆спра́вихъ. лю́дїе моѝ, что̀ сотвори́хъ ва́мъ; и҆лѝ что̀ мнѣ̀ возда́сте; за ма́ннꙋ же́лчь, за во́дꙋ ѻ҆́цетъ: за є҆́же люби́ти мѧ̀, ко крⷭтꙋ́ мѧ пригвозди́сте. ктомꙋ̀ не терплю̀ про́чее, призовꙋ̀ моѧ҄ ꙗ҆зы́ки, и҆ тї́и мѧ̀ просла́вѧтъ со ѻ҆ц҃е́мъ и҆ дх҃омъ, и҆ а҆́зъ и҆̀мъ да́рꙋю живо́тъ вѣ́чный.
+</IDIOMEL>
+<VERSE Type="61">
+Да́ша въ снѣ́дь мою̀ же́лчь, и҆ въ жа́ждꙋ мою̀ напои́ша мѧ̀ ѻ҆́цта.
+</VERSE>
+<IDIOMEL Type="62" Tone="6" Header="Tropar, Tone 6">
+Законополо́жницы ї҆и҃лєвы, ї҆ꙋде́є и҆ фарїсе́є, ли́къ а҆пⷭльскїй вопїе́тъ къ ва́мъ: сѐ хра́мъ, є҆го́же вы̀ разори́сте: сѐ а҆́гнецъ, є҆го́же вы̀ распѧ́сте, гро́бꙋ преда́сте: но вла́стїю свое́ю воскр҃се. не льсти́тесѧ ї҆ꙋде́є: то́й бо є҆́сть, и҆́же въ мо́ри сп҃сы́й, и҆ въ пꙋсты́ни пита́вый, то́й є҆́сть живо́тъ, и҆ свѣ́тъ, и҆ ми́ръ мї́рови.
+</IDIOMEL>
+<VERSE Type="62">
+Сп҃сѝ мѧ бж҃е, ꙗ҆́кѡ внидо́ша во́ды до дꙋшѝ моеѧ̀.
+</VERSE>
+<IDIOMEL Type="63" Tone="5" Header="гла́съ є҃" Author="">
+Прїиди́те хрⷭтоно́снїи лю́дїе, ви́димъ, что̀ совѣща̀ ї҆ꙋ́да преда́тель, со сщ҃е́нники беззако́нными, на сп҃са на́шего: дне́сь пови́нна сме́рти, безсме́ртнаго сло́ва сотвори́ша, и҆ пїла́тꙋ преда́вше, на мѣ́стѣ ло́бнѣмъ распѧ́ша. и҆ сїѧ҄ стражда̀ вопїѧ́ше сп҃съ на́шъ, глаго́лѧ: ѡ҆ста́ви и҆̀мъ ѻ҆́ч҃е грѣ́хъ се́й, да разꙋмѣ́ютъ ꙗ҆зы́цы и҆з ме́ртвыхъ моѐ воскрⷭнїе.
+</IDIOMEL>
+<PROKIMENON Type="6P" Tone="4" Header="Прокї́менъ, гла́съ д҃">
+Гдⷭи гдⷭь на́шъ, ꙗ҆́кѡ чꙋ́дно и҆́мѧ твоѐ по все́й землѝ.
+</PROKIMENON>
+<VERSE Type="6P" >
+Ꙗ҆́҆́кѡ взѧ́тсѧ великолѣ́пїе твоѐ превы́ше нб҃съ.
+</VERSE>
+
+<IDIOMEL Type="91" Tone="7" Header="гла́съ ѕ҃" Author="">
+Ѹ҆́жасъ бѣ̀ ви́дѣти, нб҃сѐ и҆ землѝ творца̀ на крⷭтѣ̀ ви́сѧща, со́лнце поме́ркшее, де́нь же па́ки въ но́щь прело́жшїйсѧ, и҆ зе́млю и҆з гробѡ́въ возсыла́ющꙋ тѣлеса̀ ме́ртвыхъ: съ ни́миже покланѧ́емсѧ тебѣ̀, сп҃сѝ на́съ.
+</IDIOMEL>
+<VERSE Type="91">
+Раздѣли́ша ри҄зы моѧ҄ себѣ̀, и҆ ѡ҆ ѻ҆де́жди мое́й мета́ша жре́бїй.
+</VERSE>
+<IDIOMEL Type="92" Tone="2" Header="Гла́съ в҃">
+Е҄гда̀ на крⷭтѣ̀ пригвозди́ша беззако́ннїи гдⷭа сла́вы, вопїѧ́ше къ ни҄мъ: чи́мъ ва́съ ѡ҆скорби́хъ; и҆лѝ ѡ҆ че́мъ прогнѣ́вахъ; пре́жде менѐ кто̀ ва́съ и҆зба́ви ѿ ско́рби; и҆ ны́нѣ что̀ мнѣ̀ воздаетѐ, ѕла҄ѧ за бл҃га҄ѧ; за то́лпъ ѻ҆́гненный, на крⷭтѣ́ мѧ пригвозди́сте: за ѻ҆́блакъ, гро́бъ мнѣ̀ 
+и҆скопа́сте: за ма́ннꙋ, же́лчь мнѣ̀ принесо́сте: за во́дꙋ, ѻ҆́цтомъ мѧ̀ напои́сте. про́чее призовꙋ̀ ꙗ҆зы́ки, и҆ тї́и мѧ̀ просла́вѧтъ со ѻ҆ц҃е́мъ и҆ со ст҃ы́мъ дх҃омъ.
+</IDIOMEL>
+<IDIOMEL Type="93.1" Tone="5" Header="гла́съ ѕ҃:" Author="">
+Дне́сь ви́ситъ на дре́вѣ, и҆́же на вода́хъ зе́млю повѣ́сивый:
+</IDIOMEL>
+<IDIOMEL Type="93.2" Tone="6" Header="Tropar, Tone 6" Author="">
+те́рнїѧ ѡ҆блага́етсѧ, и҆́же а҆́гг҃лѡвъ цр҃ь: въ ло́жнꙋю багрѧни́цꙋ ѡ҆блачи́тсѧ, ѡ҆дѣва́ѧй нб҃о ѻ҆́блаки: заꙋше́нїе прїѧ́тъ, и҆́же во ї҆ѻрда́нѣ свободи́вый а҆да́ма: гвоздьмѝ пригвозди́сѧ жени́хъ цр҃ко́вный: копїе́мъ прободе́сѧ сн҃ъ дв҃ыѧ. 
+</IDIOMEL>
+<IDIOMEL Type="93.3" Tone="6" Header="Tropar, Tone 6" Author="">
+покланѧ́емсѧ стрⷭте́мъ твои҄мъ хрⷭтѐ:
+</IDIOMEL>
+<IDIOMEL Type="93.4" Tone="6" Header="Tropar, Tone 6" Author="">
+покажѝ на́мъ и҆ сла́вное твоѐ воскрⷭнїе.
+</IDIOMEL>
+
+<PROKIMENON Type="9P" Tone="6" Header="Прокї́менъ, гла́съ ѕ҃">
+Речѐ безꙋ́менъ въ се́рдцѣ свое́мъ: нѣ́сть бг҃ъ.
+</PROKIMENON>
+<VERSE Type="9P">
+Нѣ́сть творѧ́й бл҃госты́ню:
+</VERSE>
+
+	</ROYALHOURS>
+</SERVICE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SERVICE>
+<ROYALHOURS>
+</ROYALHOURS>
+</SERVICE>
+</LANGUAGE>
+</COMMEMORATION>
