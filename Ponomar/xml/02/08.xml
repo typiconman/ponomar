@@ -29,4 +29,30 @@
 <SAINT Name="Сщмч. Александра пресвитера (1942)" Id="" Type="0"/>
 <SAINT Name="Свт. Саввы II, архиеп. Сербского (1271)" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="主進殿節慶期" Id="" Type="3" Cmd="nday &lt;= -59" />
+<SAINT Name="大殉道者德奥多若将军（赫拉克利亚城，319年）" Id="2201" Type="2" />
+<SAINT Name="先知匝哈利亚（12位小先知之一，主降生前520年）" Id="414" Type="2" />
+<SAINT Name="圣萨瓦二世（塞尔维亚总主教，1271年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭西麦翁、安德列和塞尔吉（1938年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭亚历山大（1942年）" Id="" Type="0" />
+<SAINT Name="殉道者科尼特（亚历山大里亚城，249年）" Id="" Type="0" />
+<SAINT Name="圣阿伽昙颉罗（大马士革主教，约325年）" Id="" Type="0" />
+<SAINT Name="圣约安和圣瓦西里（基辅洞窟修道院修士）" Id="" Type="0" />
+<SAINT Name="圣女琉博芙（梁赞地方人，圣愚，1921年）" Id="" Type="0" />
+<SAINT Name="圣玛喀里（塞浦路斯帕佛斯教区主教）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="主進殿節慶期" Id="" Type="3" Cmd="nday &lt;= -59" />
+<SAINT Name="大殉道者德奧多若將軍（赫拉克利亞城，319年）" Id="2201" Type="2" />
+<SAINT Name="先知匝哈利亞（十二位小先知之一，主降生前520年）" Id="414" Type="2" />
+<SAINT Name="聖薩瓦二世（塞爾維亞總主教，1271年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭西麥翁、安德列和塞爾吉（1938年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭亞歷山大（1942年）" Id="" Type="0" />
+<SAINT Name="殉道者科尼特（亞歷山大里亞城，249年）" Id="" Type="0" />
+<SAINT Name="聖阿伽曇頡羅（大馬士革主教，約325年）" Id="" Type="0" />
+<SAINT Name="聖約安和聖瓦西里（基輔洞窟修道院修士）" Id="" Type="0" />
+<SAINT Name="聖女琉博芙（梁贊地方人，聖愚，1921年）" Id="" Type="0" />
+<SAINT Name="聖瑪喀里（塞浦路斯帕佛斯教區主教）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
