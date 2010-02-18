@@ -11,6 +11,7 @@
 <SAINT Name="Venerable Peter of Moneumatia" Id="" Type="0" />
 <SAINT Name="Venerable Mastridia of Palestine" Id="" Type="0" />
 <SAINT Name="New Hieromartyr Priest Alexander (+1938)" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Priest Alexy (+1942)" Id="" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Parthénios, Evêque de Lampsaque" Id="409" Type="1" />
@@ -29,5 +30,33 @@
 <SAINT Name="Сщмч. Александра пресвитера (1938)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Алексия пресвитера (1942)" Id="" Type="0"/>
 <SAINT Name="Мчч. 1003 Никомидийских (303)" Id="411" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="主进殿节庆期" Id="" Type="3" Cmd="nday == -55 || nday &lt;= -59" />
+<SAINT Name="圣帕尔特尼（达达尼尔海峡附近的朗普萨科城主教，4世纪）" Id="409" Type="1" />
+<SAINT Name="圣路喀（斯提里翁山的成德者，953年）" Id="410" Type="1" />
+<SAINT Name="尼科美底亚的一千零三位殉道者（303年）" Id="411" Type="0" />
+<SAINT Name="圣阿普里奥诺（塞浦路斯主教）" Id="" Type="0" />
+<SAINT Name="圣女玛斯特里迪亚（耶路撒冷人，旷野克修者，580年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭亚历山大（1938年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭阿莱克西（1942年）" Id="" Type="0"/>
+<SAINT Name="圣阿弗古尔（布列塔尼主教，当戴克里先在位时遭受了折磨，305年）" Id="" Type="0"/>
+<SAINT Name="新殉道司教瓦尔拉穆（彼尔姆城总主教，1937年）" Id="" Type="0"/>
+<SAINT Name="弗里吉亚的六位殉道者（305年）" Id="" Type="0"/>
+<SAINT Name="新殉道者格奥尔吉（克里特，1861年）" Id="" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="主進殿節慶期" Id="" Type="3" Cmd="nday == -55 || nday &lt;= -59" />
+<SAINT Name="聖帕爾特尼（達達尼爾海峽附近的朗普薩科城主教，四世紀）" Id="409" Type="1" />
+<SAINT Name="聖路喀（斯提里翁山的成德者，953年）" Id="410" Type="1" />
+<SAINT Name="尼科美底亞的一千零三位殉道者（303年）" Id="411" Type="0" />
+<SAINT Name="聖阿普里奧諾（塞浦路斯主教）" Id="" Type="0" />
+<SAINT Name="聖女瑪斯特里迪亞（耶路撒冷人，曠野克修者，580年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭亞歷山大（1938年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭阿萊克西（1942年）" Id="" Type="0"/>
+<SAINT Name="聖阿弗古爾（布列塔尼主教，當戴克里先在位時遭受了折磨，305年）" Id="" Type="0"/>
+<SAINT Name="新殉道司教瓦爾拉穆（彼爾姆城總主教，1937年）" Id="" Type="0"/>
+<SAINT Name="弗里吉亞的六位殉道者（305年）" Id="" Type="0"/>
+<SAINT Name="新殉道者格奧爾吉（克里特，1861年）" Id="" Type="0"/>
 </LANGUAGE>
 </DAY>
