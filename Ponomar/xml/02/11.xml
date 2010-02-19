@@ -2,11 +2,10 @@
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Hieromartyr Blaise, Bishop of Sebaste (+ c 316)" Id="435" Type="1" />
 <SAINT Name="Hieromartyr Lucius, Bishop of Adrianople" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Eutropius, Bishop of Adrianople" Id="" Type="0" />
 <SAINT Name="Venerable Dimitri, Wonderworker of Priluk and Vologda (+ 1392)" Id="600" Type="3" />
 <SAINT Name="Holy Right-believing Prince Vsevolod (in Baptism Gabriel), Wonderworker of Pskov (+ 1138)" Id="438" Type="2" />
 <SAINT Name="Righteous Empress Theodora, Restorer of the Veneration of Holy Icons (+ ca 867)" Id="431" Type="0" />
-<SAINT Name="New Martyr George of Serbia" Id="" Type="0" />
+<SAINT Name="New Martyr George, the Serbian of Kratovo (+1515)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Sts Blaise, Evêque de Sébaste et ses compagnons" Id="435" Type="1" />
@@ -20,5 +19,27 @@
 <SAINT Name="Блгв. Кн. Всеволода, во св. Крещении Гавриила, Псковского (1138)" Id="438" Type="2"/>
 <SAINT Name="Прп. Димитрия Прилуцкого, Вологодского (1392)." Id="600" Type="3"/>
 <SAINT Name="Прав. Феодоры, царицы Греческой, восстановившей почитание святых икон (ок. 867)" Id="431" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道司教瓦莱西（塞瓦斯特主教，316年）" Id="435" Type="1" />
+<SAINT Name="殉道司祭路基（色雷斯的阿德里亚诺颇利城人，348年）" Id="" Type="0" />
+<SAINT Name="圣迪弥特里（沃洛格达的普里路基地方修士，1392年）" Id="600" Type="3" />
+<SAINT Name="圣维塞佛洛德（受浸礼时的名字为伽弗里伊尔，普斯科夫王子，显行灵迹者，1138年）" Id="438" Type="2" />
+<SAINT Name="圣妇德奥多拉（毁像者德奥斐洛皇帝之妻子，867年）" Id="431" Type="0" />
+<SAINT Name="新殉道者格奥尔吉（克拉托佛地方达到索非亚，1515年）" Id="" Type="0" />
+<SAINT Name="圣文奈迪克特（高卢的阿尼亚奈地方人，821年）" Id="" Type="0" />
+<SAINT Name="圣凯德蒙（惠特白地方修士，680年）" Id="" Type="0" />
+<SAINT Name="圣女格博奈特（爱尔兰科克的巴利福尼地方修女院院长，7世纪）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道司教瓦萊西（塞瓦斯特主教，316年）" Id="435" Type="1" />
+<SAINT Name="殉道司祭路基（色雷斯的阿德里亞諾頗利城人，348年）" Id="" Type="0" />
+<SAINT Name="聖迪彌特里（沃洛格達的普里路基地方修士，1392年）" Id="600" Type="3" />
+<SAINT Name="聖維塞佛洛德（受浸禮時的名字為伽弗里伊爾，普斯科夫王子，顯行靈跡者，1138年）" Id="438" Type="2" />
+<SAINT Name="聖婦德奧多拉（毀像者德奧斐洛皇帝之妻子，867年）" Id="431" Type="0" />
+<SAINT Name="新殉道者格奧爾吉（克拉托佛地方達到索非亞，1515年）" Id="" Type="0" />
+<SAINT Name="聖文奈迪克特（高盧的阿尼亞奈地方人，821年）" Id="" Type="0" />
+<SAINT Name="聖凱德蒙（惠特白地方修士，680年）" Id="" Type="0" />
+<SAINT Name="聖女格博奈特（愛爾蘭科克的巴利福尼地方修女院院長，七世紀）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>

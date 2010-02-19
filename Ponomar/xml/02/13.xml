@@ -5,7 +5,7 @@
 <SAINT Name="Holy Apostle Akila and his wife Priskilla (1st C)" Id="" Type="0" />
 <SAINT Name="Saint Eulogius, Archbishop of Alexandria (+607-608)" Id="440" Type="0" />
 <SAINT Name="Venerable Zoe and Photina (5th C)" Id="439" Type="0" />
-<SAINT Name="New Hieromartyr Silvestr, Archbishop of Omsk (+ 1920)" Id="4911" Type="0" />
+<SAINT Name="New Hieromartyr Sylvester, Archbishop of Omsk (+ 1920)" Id="4911" Type="0" />
 <SAINT Name="New Hieromartyr Priest Zosima and those with him (+ 1938)" Id="4805" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
@@ -23,5 +23,29 @@
 <SAINT Name="Прп. Евлогия, архиеп. Александрийского (607-608)" Id="440" Type="0"/>
 <SAINT Name="Прп. Шио Мгвимского (VI)" Id="2359" Type="0"/>
 <SAINT Name="Прп. Стефана, в иночестве Симеона, царя Сербского, Мироточивого (1200)" Id="2003" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣玛尔提尼安（巴勒斯坦的恺撒里亚地方修士，422年）" Id="439" Type="1" />
+<SAINT Name="圣西麦翁（塞尔维亚王子，施香液者，1200年）" Id="2003" Type="0" />
+<SAINT Name="使徒及殉道者阿桂拉，及殉道女普里斯基拉" Id="" Type="0" />
+<SAINT Name="圣艾弗罗吉（亚历山大里亚总主教，607-608年间）" Id="440" Type="0" />
+<SAINT Name="圣妇佐伊（伯利恒人）及童贞女佛提纳（5世纪）" Id="439" Type="0" />
+<SAINT Name="新殉道司教斯尔维斯特（本姓奥尔申维斯基，鄂木斯克和巴甫洛达尔的主教，1920年）" Id="4911" Type="0" />
+<SAINT Name="新殉道司祭：佐息玛、尼科拉、瓦西里、约安、利安迪、弗拉迪弥尔、帕尔特尼、约安、约安、弥哈伊尔；殉道辅祭艾弗格尼；殉道童女亚纳、维拉、伊利纳、及殉道者帕弗罗（1938年）" Id="4805" Type="0" />
+<SAINT Name="圣提摩泰（亚历山大里亚牧首，385年）" Id="" Type="0" />
+<SAINT Name="圣约熙福（佛洛科拉穆斯克地方，1515年）" Id="" Type="0" />
+<SAINT Name="圣摩多穆诺克（奥索瑞主教，6世纪）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖瑪爾提尼安（巴勒斯坦的愷撒里亞地方修士，422年）" Id="439" Type="1" />
+<SAINT Name="聖西麥翁（塞爾維亞王子，施香液者，1200年）" Id="2003" Type="0" />
+<SAINT Name="使徒及殉道者阿桂拉、及殉道女普里斯基拉" Id="" Type="0" />
+<SAINT Name="聖艾弗羅吉（亞歷山大里亞總主教，607-608年間）" Id="440" Type="0" />
+<SAINT Name="聖婦佐伊（伯利恆人）及童貞女佛提納（五世紀）" Id="439" Type="0" />
+<SAINT Name="新殉道司教斯爾維斯特（本姓奧爾申維斯基，鄂木斯克和巴甫洛達爾的主教，1920年）" Id="4911" Type="0" />
+<SAINT Name="新殉道司祭：佐息瑪、尼科拉、瓦西里、約安、利安迪、弗拉迪彌爾、帕爾特尼、約安、約安、彌哈伊爾；殉道輔祭艾弗格尼；殉道童女亞納、維拉、伊利納、及殉道者帕弗羅（1938年）" Id="4805" Type="0" />
+<SAINT Name="聖提摩泰（亞歷山大里亞牧首，385年）" Id="" Type="0" />
+<SAINT Name="聖約熙福（佛洛科拉穆斯克地方，1515年）" Id="" Type="0" />
+<SAINT Name="聖摩多穆諾克（奧索瑞主教，六世紀）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
