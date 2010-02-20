@@ -1,10 +1,11 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Martyrs Pamphilus the Presbyter, Valentus the Deacon, Paul, Porphyrios, Seleucios, Theodoulos, Julian, Samuel, Elias, Daniel, Jeremiah, Isaiah at Caesarea in Palestine (+c307-309)" Id="453" Type="1" />
+<SAINT Name="Holy Hierarch Macarius (Nevsky), Metropolitan of Moscow and Kolomna (+1926)" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Priest Paul (1938)" Id="" Type="0"/>
 <SAINT Name="Venerable Maruthas, Bishop of Martyropolis in Mesopotamia (+422)" Id="454" Type="0" />
 <SAINT Name="Martyrs of Persia at Martyropolis (4th C)" Id="" Type="0" />
 <SAINT Name="Venerable Martyr Roman of Mt Athos" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Macarius (Nevsky), Metropolitan of Moscow and Kolomna (+1926)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Sts Martyrs Phamphyle et ses compagnons" Id="453" Type="1" />
@@ -21,4 +22,25 @@
 <SAINT Name="Мчч. Персидских в Мартирополе (IV)" Id="" Type="0"/>
 <SAINT Name="Прп. Маруфа, еп. Месопотамского (422)" Id="454" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道者：庞斐洛司祭、瓦棱斯辅祭、帕弗罗、塞勒邬科、颇尔斐里、犹利安、德奥杜洛、伊利亚、耶热弥亚、伊撒依亚、撒穆伊尔、达尼伊尔（巴勒斯坦的恺撒里亚城，307-309年间）" Id="453" Type="1" />
+<SAINT Name="圣玛路塔（美索不达米亚的索斐尼及玛尔提若颇利城主教，422年）" Id="454" Type="0" />
+<SAINT Name="圣玛喀里（莫斯科都主教，阿尔泰地方之使徒，1926年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭帕弗罗（1938年）" Id="" Type="0"/>
+<SAINT Name="新殉道修士罗玛诺（卡尔佩尼西翁地方人，就义于君士坦丁堡，1694年）" Id="" Type="0" />
+<SAINT Name="圣瓦西里（本姓格里雅兹诺夫，帕弗罗沃•颇撒德斯基地方人，1869年）" Id="" Type="0" />
+<SAINT Name="新圣玛利亚（色雷斯的维兹亚地方，9世纪）" Id="" Type="0" />
+<SAINT Name="新殉道司祭：伊利亚司祭（本姓切特维儒金，莫斯科人，1934年）及裴特若司祭（本姓拉格夫，1931年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道者：龐斐洛司祭、瓦稜斯輔祭、帕弗羅、塞勒鄔科、頗爾斐裡、猶利安、德奧杜洛、伊利亞、耶熱彌亞、伊撒依亞、撒穆伊爾、達尼伊爾（巴勒斯坦的愷撒裡亞城，307-309年間）" Id="453" Type="1" />
+<SAINT Name="聖瑪路塔（美索不達米亞的索斐尼及瑪爾提若頗利城主教，422年）" Id="454" Type="0" />
+<SAINT Name="聖瑪喀裡（莫斯科都主教，阿爾泰地方之使徒，1926年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭帕弗羅（1938年）" Id="" Type="0"/>
+<SAINT Name="新殉道修士羅瑪諾（卡爾佩尼西翁地方人，就義於君士坦丁堡，1694年）" Id="" Type="0" />
+<SAINT Name="聖瓦西裡（本姓格裡雅茲諾夫，帕弗羅沃‧頗撒德斯基地方人，1869年）" Id="" Type="0" />
+<SAINT Name="新聖瑪利亞（色雷斯的維茲亞地方，九世紀）" Id="" Type="0" />
+<SAINT Name="新殉道司祭：伊利亞司祭（本姓切特維儒金，莫斯科人，1934年）及裴特若司祭（本姓拉格夫，1931年）" Id="" Type="0" />
+</LANGUAGE>
+
 </DAY>
