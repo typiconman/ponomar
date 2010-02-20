@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE>
 <SAINT Name="19" Cmd="nday == -49" />
 <!-- The Apodosis of the Meeting of the Lord falls on February 4 if it's Cheesefare Sunday -->
@@ -49,7 +49,7 @@
 <SAINT Name="圣尼科拉（宣信者，斯督迪修道院院长，868年）" Id="389" Type="0" />
 <SAINT Name="圣约安（伊里诺颇利城，325年）" Id="" Type="0" />
 <SAINT Name="殉道司教阿弗拉弥（亚述的埃尔比勒城主教，344-347年间）" Id="" Type="0" />
-<SAINT Name="殉道者雅多若及伊息多若（就义于罗马皇帝德西乌斯在位期间，249-251年间） Id="" Type="0" />
+<SAINT Name="殉道者雅多若及伊息多若（就义于罗马皇帝德西乌斯在位期间，249-251年间）" Id="" Type="0" />
 <SAINT Name="圣阿弗拉穆及圣科普里（沃洛格达的佩辰噶地方修士，15世纪）" Id="387" Type="0" />
 <SAINT Name="殉道司教斐莱雅（特穆伊斯城主教）及殉道者执政官斐洛若默（303年）" Id="" Type="0" />
 <SAINT Name="新殉道者约熙福（阿勒颇城，1686年）" Id="" Type="0" />
@@ -66,7 +66,7 @@
 <SAINT Name="聖尼科拉（宣信者，斯督迪修道院院長，868年）" Id="389" Type="0" />
 <SAINT Name="聖約安（伊里諾頗利城，325年）" Id="" Type="0" />
 <SAINT Name="殉道司教阿弗拉彌（亞述的埃爾比勒城主教，344-347年間）" Id="" Type="0" />
-<SAINT Name="殉道者雅多若及伊息多若（就義於羅馬皇帝德西烏斯在位期間，249-251年間） Id="" Type="0" />
+<SAINT Name="殉道者雅多若及伊息多若（就義於羅馬皇帝德西烏斯在位期間，249-251年間）" Id="" Type="0" />
 <SAINT Name="聖阿弗拉穆及聖科普里（沃洛格達的佩辰噶地方修士，十五世紀）" Id="387" Type="0" />
 <SAINT Name="殉道司教斐萊雅（特穆伊斯城主教）及殉道者執政官斐洛若默（303年）" Id="" Type="0" />
 <SAINT Name="新殉道者約熙福（阿勒頗城，1686年）" Id="" Type="0" />

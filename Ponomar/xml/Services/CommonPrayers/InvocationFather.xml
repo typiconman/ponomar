@@ -6,7 +6,7 @@
 <TEXT Value="Au nom du Seigneur, Père, bénis."/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 2 || LS == 3">
-<TEXT Value="И҆́менемъ гⷭнимъ бл҃гословѝ, ѻ҆́тче."/>
+<TEXT Value="И҆́менемъ гдⷭнимъ бл҃гословѝ, ѻ҆́тче."/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Ἐν ὀνόματι Κυρίου, εὐλόγησον Πάτερ."/>

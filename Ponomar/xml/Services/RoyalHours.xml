@@ -530,6 +530,11 @@ This interpolation interputs the repetition of the Third Idiomel. -->
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/93.3" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 1" Times="3"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/93.4" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 1" />
 
+<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.1" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" Times="3"/>
+<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.2" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
+<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.3" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 1" Times="3"/>
+<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.4" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
+
 <!-- Prokimenon of the Prophecy -->
 <GETID Id="P_3174" What="/ROYALHOURS/PROKIMENON/9P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="P_3174" What="/ROYALHOURS/VERSE/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
