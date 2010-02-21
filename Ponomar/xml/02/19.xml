@@ -1,13 +1,14 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Apostles of the Seventy: Archippus and Philemon, and martyred Equal-to-the-Apostles Apphia (1st C)" Id="279" Type="1" />
+<SAINT Name="St. Theodore of Sanaxar (+ 1791)" Id="" Type="0"/>
+<SAINT Name="New Martyr Dimitry (1942)" Id="" Type="0"/>
 <SAINT Name="Venerable Dositheus of Palestine, a Disciple of Venerable Abba Dorotheus (7th C)" Id="473" Type="0" />
 <SAINT Name="Venerable Rabulas of Samosata (+c. 530)" Id="474" Type="0" />
 <SAINT Name="Holy Confessors Eugene and Macarius, Presbyters at Antioch (+363)" Id="472" Type="0" />
 <SAINT Name="Martyrs Maximus, Theodotus, Hesychius and Asclepiodota of Adrianopolis (+305-311)" Id="471" Type="0" />
-<SAINT Name="Venerable Conon of Palestine" Id="" Type="0" />
-<SAINT Name="Venerable Philotheia of Athens" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Auxibius II, Bishop of Cyprus" Id="" Type="0" />
+<SAINT Name="Venerable Conon of Palestine (+ 555)" Id="" Type="0" />
+<SAINT Name="Venerable Philotheia of Athens (+ 1589)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Archippe, Apôtre" Id="279" Type="1" />
@@ -27,5 +28,31 @@
 <SAINT Name="Прпп. Евгения и Макария исповедников, пресвитеров Антиохийских (363)" Id="472" Type="0"/>
 <SAINT Name="Прп. Равулы (ок. 530)" Id="474" Type="0"/>
 <SAINT Name="Прп. Досифея (VII), ученика прп. аввы Дорофея" Id="473" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="七十使徒之阿尔希普、斐利孟及殉道者阿斐雅（1世纪）" Id="279" Type="1" />
+<SAINT Name="圣德奥多若（萨纳克撒尔修道院修士，1791年）" Id="" Type="0" />
+<SAINT Name="新殉道者迪弥特里（1942年）" Id="" Type="0"/>
+<SAINT Name="圣多西德奥（圣多若德奥尊者之弟子，巴勒斯坦人，7世纪）" Id="473" Type="0" />
+<SAINT Name="圣拉弗拉斯（萨摩撒塔地方，530年）" Id="474" Type="0" />
+<SAINT Name="圣艾弗革尼及圣玛喀里（均为安提约希亚城司祭，宣信者，363年）" Id="472" Type="0" />
+<SAINT Name="殉道者：玛克息默、德奥多特、伊息赫、阿斯克利彼奥多特（就义于阿德里亚诺颇利，305-311年间）" Id="471" Type="0" />
+<SAINT Name="圣科农（巴勒斯坦地方修道院院长，555年）" Id="" Type="0" />
+<SAINT Name="殉道修女圣斐洛德雅（雅典城，1589年）" Id="" Type="0" />
+<SAINT Name="圣麦斯若普译师（亚美尼亚人，439年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭尼基塔（伊庇鲁斯地方，1809年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="七十使徒之阿爾希普、斐利孟及殉道者阿斐雅（一世紀）" Id="279" Type="1" />
+<SAINT Name="聖德奧多若（薩納克撒爾修道院修士，1791年）" Id="" Type="0" />
+<SAINT Name="新殉道者迪彌特里（1942年）" Id="" Type="0"/>
+<SAINT Name="聖多西德奧（聖多若德奧尊者之弟子，巴勒斯坦人，七世紀）" Id="473" Type="0" />
+<SAINT Name="聖拉弗拉斯（薩摩撒塔地方，530年）" Id="474" Type="0" />
+<SAINT Name="聖艾弗革尼及聖瑪喀里（均為安提約希亞城司祭，宣信者，363年）" Id="472" Type="0" />
+<SAINT Name="殉道者：瑪克息默、德奧多特、伊息赫、阿斯克利彼奧多特（就義於阿德里亞諾頗利，305-311年間）" Id="471" Type="0" />
+<SAINT Name="聖科農（巴勒斯坦地方修道院院長，555年）" Id="" Type="0" />
+<SAINT Name="殉道修女聖斐洛德雅（雅典城，1589年）" Id="" Type="0" />
+<SAINT Name="聖麥斯若普譯師（亞美尼亞人，439年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭尼基塔（伊庇魯斯地方，1809年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
