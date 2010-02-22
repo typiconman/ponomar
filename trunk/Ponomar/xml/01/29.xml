@@ -8,9 +8,10 @@
 <SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Note="for the Hierarchs" Cmd="nday == -54 || nday == -52"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Synaxis of the 'Three Hierarchs' - Basil the Great, Gregory the Theologian and John Chrysostom (Transferred from Wednesday)" Id="373" Type="5" Cmd="nday == -54" />
-<SAINT Name="Synaxis of the 'Three Hierarchs' - Basil the Great, Gregory the Theologian and John Chrysostom (Transferred from Friday)" Id="373" Type="5" Cmd="nday == -52" />
-<SAINT Name="Translation of the relics of the Hieromartyr Ignatius the Godbearer, Bishop of Antioch (+ 107)" Id="897" Type="2" />
+<SAINT Name="Synaxis of the 'Three Hierarchs' - Basil the Great, Gregory the Theologian and John Chrysostom (Transferred from Wednesday)" Id="9030" Type="5" Cmd="nday == -54" />
+<SAINT Name="Synaxis of the 'Three Hierarchs' - Basil the Great, Gregory the Theologian and John Chrysostom (Transferred from Friday)" Id="9030" Type="5" Cmd="nday == -52" />
+<SAINT Name="Translation of the relics of the Hieromartyr Ignatius the Godbearer, Bishop of Antioch (+ 107)" Id="9031" Type="2" />
+<SAINT Name="[The feast of St Ignatius may be transferred to Friday]" Type="0" Cmd="nday == -52"/>
 <SAINT Name="Martyrs Romanus, James, Philotheus, Hyperichius, Abibus, Julian and Parigonius, at Samosata (+ 297)" Id="333" Type="0" />
 <SAINT Name="Martyrs Silvanus the Bishop, Luke the Deacon and Mocius the Reader (+ 312)" Id="334" Type="0" />
 <SAINT Name="Venerable Lawrence of the Caves of Kiev, Bishop of Turov (+1194)" Id="1321" Type="0" />
@@ -21,7 +22,7 @@
 <SAINT Name="Venerable Andrew Rublev, the Iconographer" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Tranfert des Reliques de St Ignace le Théophore, Evêque d'Antioche" Id="897" Type="2" />
+<SAINT Name="Tranfert des Reliques de St Ignace le Théophore, Evêque d'Antioche" Id="9031" Type="2" />
 <SAINT Name="Sts Hyperéchios, Philothée, Jacques, Abib, Julien, Romain et Parégorios, de Samosate" Id="" Type="0" />
 <SAINT Name="Sts Sylvain, Evêque d'Emese, Luc et Mocios" Id="334" Type="0" />
 <SAINT Name="St Sarbel et Ste BébaÃÂ¯a à Edesse" Id="" Type="0" />
@@ -34,7 +35,7 @@
 <SAINT Name="St Gildas le Sage, Higoumène de Rhuys" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Перенесение мощей сщмч. Игнатия Богоносца (107)." Id="897" Type="2"/>
+<SAINT Name="Перенесение мощей сщмч. Игнатия Богоносца (107)." Id="9031" Type="2"/>
 <SAINT Name="Сщмчч. Иоанна и Леонтия пресвитеров, Константина диакона и с ними 5 мучеников (1920)" Id="" Type="0"/>
 <SAINT Name="Мчч. Романа, Иакова, Филофея, Иперихия, Авива, Иулиана и Паригория (297)" Id="333" Type="0"/>
 <SAINT Name="Мчч. Сильвана епископа, Луки диакона и Мокия чтеца (312)" Id="334" Type="0"/>
@@ -42,9 +43,9 @@
 <SAINT Name="Свтт. Герасима (ок. 1441-1467), Питирима (1456) и  Ионы (1470), епископов Великопермских, Устьвымских." Id="502" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="三圣司教（大圣瓦西里、神学家圣格里高利、圣金口约安）纪念日 （转自瞻礼四／周三）" Id="373" Type="5" Cmd="nday == -54" />
-<SAINT Name="三圣司教（大圣瓦西里、神学家圣格里高利、圣金口约安）纪念日 （转自预备日／周五）" Id="373" Type="5" Cmd="nday == -52" />
-<SAINT Name="敬迁殉道司教伊格纳提（被称为‘心怀上帝者’安提约希亚城主教）之圣髑纪念日（参考12月20日）（540年或637年）" Id="897" Type="2" />
+<SAINT Name="三圣司教（大圣瓦西里、神学家圣格里高利、圣金口约安）纪念日 （转自瞻礼四／周三）" Id="9030" Type="5" Cmd="nday == -54" />
+<SAINT Name="三圣司教（大圣瓦西里、神学家圣格里高利、圣金口约安）纪念日 （转自预备日／周五）" Id="9030" Type="5" Cmd="nday == -52" />
+<SAINT Name="敬迁殉道司教伊格纳提（被称为‘心怀上帝者’安提约希亚城主教）之圣髑纪念日（参考12月20日）（540年或637年）" Id="9031" Type="2" />
 <SAINT Name="圣劳伦提（基辅洞窟修道院的闭关者，后为图若夫城主教，1194年）" Id="1321" Type="0" />
 <SAINT Name="殉道者：罗玛诺、雅科弗、斐洛德奥、伊佩瑞熙、阿维弗、犹利安、帕里格利（就义于萨摩撒塔，297年）" Id="333" Type="0" />
 <SAINT Name="殉道者：西尔瓦诺（埃麦撒城主教）、辅祭路喀、诵经士默基（312年）" Id="334" Type="0" />
@@ -60,9 +61,9 @@
 <SAINT Name="圣吉尔达斯（被称为智者，布列塔尼的瑞埃斯地方修道院院长，570年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="三聖司教（大聖瓦西里、神學家聖格里高利、聖金口約安）紀念日 （轉自瞻禮四／週三）" Id="373" Type="5" Cmd="nday == -54" />
-<SAINT Name="三聖司教（大聖瓦西里、神學家聖格里高利、聖金口約安）紀念日 （轉自預備日／週五）" Id="373" Type="5" Cmd="nday == -52" />
-<SAINT Name="敬遷殉道司教伊格納提（被稱為『心懷上帝者』安提約希亞城主教）之聖髑紀念日（參考12月20日）（540年或637年）" Id="897" Type="2" />
+<SAINT Name="三聖司教（大聖瓦西里、神學家聖格里高利、聖金口約安）紀念日 （轉自瞻禮四／週三）" Id="9030" Type="5" Cmd="nday == -54" />
+<SAINT Name="三聖司教（大聖瓦西里、神學家聖格里高利、聖金口約安）紀念日 （轉自預備日／週五）" Id="9030" Type="5" Cmd="nday == -52" />
+<SAINT Name="敬遷殉道司教伊格納提（被稱為『心懷上帝者』安提約希亞城主教）之聖髑紀念日（參考12月20日）（540年或637年）" Id="9031" Type="2" />
 <SAINT Name="聖勞倫提（基輔洞窟修道院的閉關者，後為圖若夫城主教，1194年）" Id="1321" Type="0" />
 <SAINT Name="殉道者：羅瑪諾、雅科弗、斐洛德奧、伊佩瑞熙、阿維弗、猶利安、帕里格利（就義於薩摩撒塔，297年）" Id="333" Type="0" />
 <SAINT Name="殉道者：西爾瓦諾（埃麥撒城主教）、輔祭路喀、誦經士默基（312年）" Id="334" Type="0" />
