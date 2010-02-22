@@ -1,0 +1,26 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Second Lenten Kontakion"/>
+<TEXT Value="Grant speedy and steadfast consolation unto Thy servants, O Jesus, when our spirits are become despondent. Depart not from our souls when they be in afflictions, nor be Thou afar from our minds when they be in tribulations, but do Thou ever go before us. Draw nigh unto us, draw nigh, O Thou Who art everywhere present: even as Thou wast ever with Thine apostles, so also do Thou unite Thyself to them that long for Thee, O Compassionate One, that, being one with Thee, we may praise and glorify Thine All-Holy Spirit."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value=""/>
+<TEXT Value="Ско́рое и҆ и҆звѣ́стное да́ждь ѹ҆тѣше́нїе 
+рабѡ́мъ твои҄мъ ї҆и҃се, внегда̀ ѹ҆ныва́ти дꙋхѡ́мъ 
+на́шымъ, не разлꙋча́йсѧ ѿ дꙋ́шъ на́шихъ въ ско́рбехъ, 
+не ѹ҆далѧ́йсѧ ѿ мы́слей на́шихъ во ѡ҆бстоѧ́нїихъ: но 
+при́снѡ на́съ предварѝ. прибли́жисѧ на́мъ, прибли́жисѧ 
+вездѣ̀ сы́й, ꙗ҆́коже со а҆пⷭлы твои́ми всегда̀ є҆сѝ: 
+си́це и҆ тебѐ жела́ющымъ соединѝ себѐ ще́дре, да 
+совокꙋ́плени тебѐ пое́мъ и҆ славосло́вимъ всест҃а́го 
+дх҃а твоего̀."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
+</LANGUAGE>
+</COMMONPRAYER>

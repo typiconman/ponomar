@@ -1,0 +1,19 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Stichos 2"/>
+<TEXT Value="Cast me not away from Thy presence, and take not Thy Holy Spirit from me."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Стї́хъ в҃"/>
+<TEXT Value="Не ѿве́ржи менѐ ѿ лица̀ твоегѡ̀, 
+и҆ дх҃а твоегѡ̀ ст҃а́гѡ не ѿимѝ ѿ менѐ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
+</LANGUAGE>
+</COMMONPRAYER>

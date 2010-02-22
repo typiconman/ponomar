@@ -1,0 +1,17 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="(Stichos 2)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="(Stichere 2)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="(Стї́хъ в҃)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="（二）"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="（二）"/>
+</LANGUAGE>
+</COMMONPRAYER>

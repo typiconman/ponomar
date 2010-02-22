@@ -38,6 +38,9 @@ CLASSES = \
 	Ponomar/Service.java \
 	Ponomar/ServiceInfo.java \
 	Ponomar/UsualBeginning.java \
+	Ponomar/ThirdHour.java \
+	Ponomar/SixthHour.java \
+	Ponomar/NinthHour.java \
 	Ponomar/Main.java 
 
 default: classes

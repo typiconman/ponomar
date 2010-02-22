@@ -68,6 +68,9 @@ The Russian part has been partially completed by Aleksander Andreev, while the C
 <PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
 <PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
 <PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
+<PHRASE Key="Terce" Value="No Service Today/,Terce (Third Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Sexte" Value="No Service Today/,Sexte (Sixth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="None" Value="No Service Today/,None (Ninth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 </LANGUAGE>
 <LANGUAGE NameLocal="Français" NameEnglish="French" Cmd="LS == 1">
  <PHRASE Key="0" Value="Ponomar" Comment="Ceci est la seule valeur pour cette clé."/>
@@ -106,6 +109,9 @@ The Russian part has been partially completed by Aleksander Andreev, while the C
 <PHRASE Key="RoyalHours" Value="Les heures royales ne sont pas servies aujourd'hui./,Les heures royales"/>
 <PHRASE Key="Commemoration" Value="Une erreur se produit pendant la lecture du Hashtable !\nIl manque l'élément : /, avec le tag : /,Une erreur se produit pendant la lecture du Hashtable !\nIl manque le Nœud : /,Une erreur se produit pendant la lecture du Hashtable ! ! !" Comments="The spaces must be maintained, as well as the new lines \n"/>
 <PHRASE Key="BibleW" Value="Chapitre précédent/,Tout le chapitre/,Chapitre suivant/,Favorir un passage/,Copier le passage/,Sauvegarder le passage/,Imprimer le passage/,Ponomar : Lecture de la Bible/,Une erreur se produit pendant la lecture du bmlfile : /,Il manque le ressource : "/>
+<PHRASE Key="Terce" Value="Aucun office de Terce n’est pas célébré aujourd'hui/,Terce (Troisième Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
+<PHRASE Key="Sexte" Value="Aucun office de Sexte n’est pas célébré aujourd'hui/,Sexte (Sixième Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
+<PHRASE Key="None" Value="Aucun office de None n’est pas célébré aujourd'hui/,None (Neuvième Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
 </LANGUAGE> 
 <LANGUAGE NameLocal="русский" NameEnglish="Russian" Cmd="LS == 3">
 <PHRASE Key="0" Value="Пономарь" Comment="This is the only entry for this key."/>
@@ -145,6 +151,9 @@ The Russian part has been partially completed by Aleksander Andreev, while the C
 <PHRASE Key="RoyalHours" Value="The Royal Hours are not served today/,Royal Hours"/>
 <PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
 <PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
+<PHRASE Key="Terce" Value="No Service Today/,Terce (Third Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Sexte" Value="No Service Today/,Sexte (Sixth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="None" Value="No Service Today/,None (Ninth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 </LANGUAGE>
 <DONE Value="MenuFiles, LanguagePack, LanguageSelector, About, ConfigurationFiles, Main, GospelSelector, OrderedHashtable, DocHanlder,QDParser, Sunrise, JCalendar, JDaySelector, Paschalion, Primes, DivineLiturgy, StringOp (I could not successfully translate this section),JDate,Bible,"/>
 <TODO Value="  Reporter, " />
