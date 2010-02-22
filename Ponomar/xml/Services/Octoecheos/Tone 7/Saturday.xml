@@ -1,6 +1,9 @@
-<LANGUAGE>
 <TONE>
+<LANGUAGE>
 <PRIMES TROPARION1="SAT7" Type="Normal" KONTAKION1="SAT7" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
 <PRIMES Type="Lenten" KONTAKION1="SatL" Cmd="(nday > -50 &amp;&amp; nday < 0)" />
+<TERCE TROPARION1="SAT7" Type="Normal" KONTAKION1="SAT7" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
+<SEXTE TROPARION1="SAT7" Type="Normal" KONTAKION1="SAT7" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
+<NONE TROPARION1="SAT7" Type="Normal" KONTAKION1="SAT7" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
 </LANGUAGE>
 </TONE>

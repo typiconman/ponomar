@@ -49,6 +49,7 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="TheotokionPr2" Who="R" RedFirst="1" Times="2" NewLine="1" Cmd="PFlag2 != 0"/>
 <CREATE What="TheotokionPr3" Who="R" RedFirst="1" Times="2" NewLine="1" Cmd="PFlag2 != 0"/>
 <CREATE What="TheotokionPr4" Who="R" RedFirst="1" Times="3" NewLine="1" Cmd="PFlag2 != 0"/>
+
 <!-- Adding the one time outside of the Royal Hours, where there is a reading at the First Hour, that is on Holy and Great Thursday -->
 <CREATE What="TroparProph3" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="nday == -3" CommandB="Tone3"/>
 <CREATE What="BothNow" Who="C" RedFirst="1" NewLine="1" Cmd="nday == -3"/>
@@ -63,6 +64,7 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="ProkimenHT2" Who="R" RedFirst="1" NewLine="1" Cmd="nday == -3" CommandB="Tone8"/>
 <CREATE What="StychHT2" Who="C" RedFirst="1" NewLine="1" Cmd="nday == -3"/>
 <!-- End of unique addition for Holy Thursday -->
+
 <CREATE What="ThriceHoly" Who="R" RedFirst="1" NewLine="1" Times="3" />
 <CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="AllHolyTrinity" Who="R" RedFirst="1" NewLine="1"/>
@@ -72,7 +74,9 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="OurFatherDoxology" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
 <CREATE What="JesusPrayer" Who="SR" RedFirst="1" NewLine="1" Cmd="PS == 0" />
 <CREATE What="Amen" Who="R" NewLine="1" RedFirst="1"/>
+
 <GET File="Var/PKont1" />
+
 <CREATE What="LordHaveMercy" Who="R" RedFirst="1" NewLine="1" Times="40"/>
 <CREATE What="PrayerOfHours" Who="R" RedFirst="1" NewLine="1" Header="1"/>
 <CREATE What="LordHaveMercy" Who="R" RedFirst="1" NewLine="1" Times="3"/>

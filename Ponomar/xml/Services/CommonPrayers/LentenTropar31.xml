@@ -1,0 +1,21 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Lenten Troparion in Tone 6"/>
+<TEXT Value="O Lord, who didst send down Thy Most-holy Spirit at the third hour upon Thine apostles: Take Him not from us, O Good One, but renew Him in us who pray unto Thee."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="тропа́рь, гла́съ ѕ҃"/>
+<TEXT Value="Гдⷭи, и҆́же прест҃а́го твоего̀ дх҃а, въ тре́тїй 
+ча́съ а҆пⷭлѡмъ твои҄мъ низпосла́вый: тогѡ̀ бл҃гї́й, не 
+ѿимѝ ѿ на́съ, но ѡ҆бновѝ на́съ молѧ́щихъ ти 
+сѧ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
+</LANGUAGE>
+</COMMONPRAYER>

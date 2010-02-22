@@ -89,7 +89,7 @@ public class Service implements DocHandler
 		catch (Exception e)
 		{
 			e.printStackTrace();
-			return null;			//THERE WAS AN ERROR IN PROCESSING THE FILES
+			//return "";			//THERE WAS AN ERROR IN PROCESSING THE FILES
 		}
                 
                 return "<html>\n"+Header1+Style+"</style>\n</head>\n<body>"+Service1+"</body></html>";

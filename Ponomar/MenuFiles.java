@@ -156,28 +156,28 @@ public JMenu createServicesMenu(ActionListener al)
 	menu8Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_T, ActionEvent.CTRL_MASK));
 	menu8Item.getAccessibleContext().setAccessibleDescription(ServiceNames[19]);
 	menu8Item.addActionListener(al);
-	menu8Item.setEnabled(false);		//Currently unavailable colour!
+	menu8Item.setEnabled(true);		//Currently available colour!
 	menu2.add(menu8Item);
 	
 	menu9Item = new JMenuItem(ServiceNames[7], KeyEvent.VK_S);
 	menu9Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.CTRL_MASK));
 	menu9Item.getAccessibleContext().setAccessibleDescription(ServiceNames[20]);
 	menu9Item.addActionListener(al);
-	menu9Item.setEnabled(false);		//Currently unavailable colour!
+	menu9Item.setEnabled(true);		//Currently available colour!
 	menu2.add(menu9Item);
 	
 	menu10Item = new JMenuItem(ServiceNames[8], KeyEvent.VK_N);
 	menu10Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, ActionEvent.CTRL_MASK));
 	menu10Item.getAccessibleContext().setAccessibleDescription(ServiceNames[21]);
 	menu10Item.addActionListener(al);
-	menu10Item.setEnabled(false);		//Currently unavailable colour!
+	menu10Item.setEnabled(true);		//Currently available colour!
 	menu2.add(menu10Item);
 	
 	menu11Item = new JMenuItem(ServiceNames[9], KeyEvent.VK_R);
 	menu11Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, ActionEvent.CTRL_MASK));
 	menu11Item.getAccessibleContext().setAccessibleDescription(ServiceNames[22]);
 	menu11Item.addActionListener(al);
-	menu11Item.setEnabled(true);		//Currently unavailable colour!
+	menu11Item.setEnabled(true);		//Currently available colour!
 	menu2.add(menu11Item);
 	
 	menu12Item = new JMenuItem(ServiceNames[10], KeyEvent.VK_L);

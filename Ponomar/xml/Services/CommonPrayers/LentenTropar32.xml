@@ -1,0 +1,19 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Stichos 1"/>
+<TEXT Value="Create in me a clean heart, O God, and renew and right spirit within me."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Стї́хъ а҃"/>
+<TEXT Value="Се́рдце чи́сто сози́жди во мнѣ̀ бж҃е, 
+и҆ дх҃ъ пра́въ ѡ҆бновѝ во ѹ҆тро́бѣ мое́й."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
+</LANGUAGE>
+</COMMONPRAYER>

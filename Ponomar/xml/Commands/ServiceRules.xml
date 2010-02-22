@@ -21,16 +21,22 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 <PERIOD Cmd="nday &gt;= 0 &amp;&amp; nday &lt; 7">
 	<!-- FIRST HOUR Rules for Bright Week-->
 	<LANGUAGE>
-		<PRIME Type="Paschal"/>		
+		<PRIME Type="Paschal"/>
+		<TERCE Type="Paschal"/>
+		<SEXTE Type="Paschal"/>	
+		<NONE Type="Paschal"/>	
 	</LANGUAGE>
 	<LANGUAGE Cmd="LS == 1">
 		<!-- Rules specific to the English implementation can be placed here and similarly for other languages. -->
 	</LANGUAGE>
 </PERIOD>
-<PERIOD Cmd="nday &gt;= 8 &amp;&amp; nday &lt; 39">
+<PERIOD Cmd="nday &gt;= 7 &amp;&amp; nday &lt; 39">
 	<!-- FIRST HOUR Rules between Antipascha and the Leave-taking of Easter (39th Day after Easter)!-->
 	<LANGUAGE>
-		<PRIME Type="Easter" Troparion="{P,T}" PickT="1" Kontakion="{P,T}" PickK="1"/>		
+		<PRIME Type="Easter" Troparion="{P,T}" PickT="1" Kontakion="{P,T}" PickK="1"/>
+		<TERCE Type="Easter" Troparion="{P,T}" PickT="1" Kontakion="{P,T}" PickK="1"/>
+		<SEXTE Type="Easter" Troparion="{P,T}" PickT="1" Kontakion="{P,T}" PickK="1"/>	
+		<NONE Type="Easter" Troparion="{P,T}" PickT="1" Kontakion="{P,T}" PickK="1"/>		
 	</LANGUAGE>
 	<LANGUAGE Cmd="LS == 1">
 		<!-- Rules specific to the English implementation can be placed here and similarly for other languages. -->
@@ -40,9 +46,26 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 	<!-- FIRST HOUR Rules between Ascension and the First Sunday after Pentecost -->
 	<LANGUAGE>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="nday == 40 || nday == 50"/>
-		<PRIME Type="Normal" Troparion="{M_A,T}" PickT="1" Kontakion="{M_A,T}" PickK="1" Cmd="nday >= 40 &amp;&amp; nday == 49"/>
-		<PRIME Type="Normal" Troparion="{M,M_A}" PickT="2" Kontakion="{M,M_A,T}" PickK="1" Cmd="nday >= 40 &amp;&amp; dRank == 3 &amp;&amp; nday == 49"/>
-		<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" Cmd="nday == 49"/>		
+		<PRIME Type="Normal" Troparion="{M_A,T}" PickT="1" Kontakion="{M_A,T}" PickK="1" Cmd="nday > 40 &amp;&amp; nday < 49"/>
+		<PRIME Type="Normal" Troparion="{M,M_A}" PickT="2" Kontakion="{M,M_A,T}" PickK="1" Cmd="nday > 40 &amp;&amp; dRank == 3 &amp;&amp; nday != 49"/>
+		<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" Cmd="nday == 49"/>
+
+		<TERCE Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="nday == 40 || nday == 49"/>
+		<SEXTE Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="nday == 40 || nday == 49"/>	
+		<NONE Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="nday == 40 || nday == 49"/>
+
+		<TERCE Type="Normal" Troparion="{M_A,T}" PickT="1" Kontakion="{M_A,T}" PickK="1" Cmd="nday >= 40 &amp;&amp; nday != 49"/>
+		<SEXTE Type="Normal" Troparion="{M_A,T}" PickT="1" Kontakion="{M_A,T}" PickK="1" Cmd="nday >= 40 &amp;&amp; nday != 49"/>	
+		<NONE Type="Normal" Troparion="{M_A,T}" PickT="1" Kontakion="{M_A,T}" PickK="1" Cmd="nday >= 40 &amp;&amp; nday != 49"/>		
+		
+		<TERCE Type="Normal" Troparion="{M,M_A}" PickT="2" Kontakion="{M,M_A,T}" PickK="1" Cmd="nday > 40 &amp;&amp; dRank == 3 &amp;&amp; nday != 49"/>
+		<SEXTE Type="Normal" Troparion="{M,M_A}" PickT="2" Kontakion="{M,M_A,T}" PickK="1" Cmd="nday > 40 &amp;&amp; dRank == 3 &amp;&amp; nday != 49"/>	
+		<NONE Type="Normal" Troparion="{M,M_A}" PickT="2" Kontakion="{M,M_A,T}" PickK="1" Cmd="nday > 40 &amp;&amp; dRank == 3 &amp;&amp; nday != 49"/>		
+
+		<TERCE Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" Cmd="nday == 49"/>
+		<SEXTE Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" Cmd="nday == 49"/>	
+		<NONE Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" Cmd="nday == 49"/>
+
 	</LANGUAGE>
 	<LANGUAGE Cmd="LS == 1">
 		<!-- Rules specific to the English implementation can be placed here and similarly for other languages. -->
@@ -63,6 +86,20 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; dRank == 8"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>		
+
+		<TERCE Type="Lenten" Cmd="dow != 0"/>
+		<SEXTE Type="Lenten" Cmd="dow != 0"/>	
+		<NONE Type="Lenten" Cmd="dow != 0"/>
+
+		<TERCE Type="Normal" Cmd="dow == 0"/>
+		<SEXTE Type="Normal" Cmd="dow == 0"/>	
+		<NONE Type="Normal" Cmd="dow == 0"/>
+
+		<!-- Need to Still work on the correct rules for the other hours -->
+		<TERCE Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dRank >= 2"/>
+		<SEXTE Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dRank >= 2"/>	
+		<NONE Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dRank >= 2"/>
+
 	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="(doy &gt;= 179 &amp;&amp; doy &lt;= 211) || (doy &gt;= 226 &amp;&amp; doy &lt;= 317) || (doy &gt;= 358 &amp;&amp; doy &lt;= 364) || ((doy &gt;= 0 || doy == 366) &amp;&amp; nday &lt;= -71)">
@@ -73,6 +110,23 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Normal" Troparion="{T,M}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 2"/>
 		<PRIME Type="Normal" Troparion="{T,M}" PickT="2" Kontakion="{M}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank &gt;= 3"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow !=0 &amp;&amp; dRank &gt;= 2"/>
+		
+		<!-- Proper Ordering still needs to be worked out -->
+		<TERCE Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1"/>
+		<SEXTE Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1"/>	
+		<NONE Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1"/>
+
+		<TERCE Type="Normal" Troparion="{T,M}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 2"/>
+		<SEXTE Type="Normal" Troparion="{T,M}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 2"/>	
+		<NONE Type="Normal" Troparion="{T,M}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank == 2"/>
+
+		<TERCE Type="Normal" Troparion="{T,M}" PickT="2" Kontakion="{M}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank &gt;= 3"/>
+		<SEXTE Type="Normal" Troparion="{T,M}" PickT="2" Kontakion="{M}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank &gt;= 3"/>	
+		<NONE Type="Normal" Troparion="{T,M}" PickT="2" Kontakion="{M}" PickK="1" Cmd="dow == 0 &amp;&amp; dRank &gt;= 3"/>
+
+		<TERCE Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow !=0 &amp;&amp; dRank &gt;= 2"/>
+		<SEXTE Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow !=0 &amp;&amp; dRank &gt;= 2"/>	
+		<NONE Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow !=0 &amp;&amp; dRank &gt;= 2"/>
 	</LANGUAGE>
 </PERIOD>
 
@@ -91,6 +145,19 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; dRank == 8"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>		
+
+		<TERCE Type="Lenten" Cmd="dow != 0"/>
+		<SEXTE Type="Lenten" Cmd="dow != 0"/>	
+		<NONE Type="Lenten" Cmd="dow != 0"/>
+
+		<TERCE Type="Normal" Cmd="dow == 0"/>
+		<SEXTE Type="Normal" Cmd="dow == 0"/>	
+		<NONE Type="Normal" Cmd="dow == 0"/>
+
+		<!-- Need to Still work on the correct rules for the other hours -->
+		<TERCE Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dRank >= 2"/>
+		<SEXTE Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dRank >= 2"/>	
+		<NONE Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dRank >= 2"/>
 	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="doy &gt;= 318 &amp;&amp; doy &lt;= 357">
@@ -108,12 +175,28 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; dRank == 8"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="1" Kontakion="{M,T}" PickK="1" Cmd="dow != 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>
 		<PRIME Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dow == 0 &amp;&amp; (dRank == 3 || dRank == 2)"/>		
+
+		<TERCE Type="Lenten" Cmd="dow != 0"/>
+		<SEXTE Type="Lenten" Cmd="dow != 0"/>	
+		<NONE Type="Lenten" Cmd="dow != 0"/>
+
+		<TERCE Type="Normal" Cmd="dow == 0"/>
+		<SEXTE Type="Normal" Cmd="dow == 0"/>	
+		<NONE Type="Normal" Cmd="dow == 0"/>
+
+		<!-- Need to Still work on the correct rules for the other hours -->
+		<TERCE Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dRank >= 2"/>
+		<SEXTE Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dRank >= 2"/>	
+		<NONE Type="Normal" Troparion="{M,T}" PickT="2" Kontakion="{T}" PickK="1" Cmd="dRank >= 2"/>
 	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="nday &gt;= -70 &amp;&amp; nday &lt;= -49"> <!-- Correction to include up to Forgiveness Sunday (49 days before Easter!), although the service may be different over Cheesefare Week. Y.S. 20100201 -->
 	<!-- The preleneten period has different rules for the creation of services especially on Sunday. -->
 	<LANGUAGE>
 		<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" />
+		<TERCE Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" />
+		<SEXTE Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" />	
+		<NONE Type="Normal" Troparion="{T}" PickT="1" Kontakion="{T}" PickK="1" />
 	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="nday &gt;= -48 &amp;&amp; nday &lt;= -9">
@@ -126,7 +209,40 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Lenten" Kontakion="MTTL" PickK="-1" LENTENK="9" Cmd="dow == 4"/>
 		<PRIME Type="Lenten" Kontakion="WFL" PickK="-1" Cmd="dow == 5"/>
 		<PRIME Type="Lenten" Kontakion="SatL" PickK="-1" Cmd="dow == 6"/>
-		<PRIME Type="Normal" Troparion="{T}" PickT="1" Kontakion="{P}" PickK="1" Cmd="dow == 0"/>				
+		<PRIME Type="Lenten" Kontakion="{P}" PickK="1" Cmd="dow == 0"/>
+
+		<TERCE Type="Lenten" Troparion="{T}" PickT="1" Kontakion="{P}" PickK="1" Cmd="dow == 0"/>
+		<SEXTE Type="Lenten" Troparion="{T}" PickT="1" Kontakion="{P}" PickK="1" Cmd="dow == 0"/>	
+		<NONE Type="Lenten" Troparion="{T}" PickT="1" Kontakion="{P}" PickK="1" Cmd="dow == 0"/>
+
+		<TERCE Type="Lenten" LENTENK="7" Cmd="dow == 1"/>
+		<SEXTE Type="Lenten" LENTENK="8" Cmd="dow == 1"/>	
+		<NONE Type="Lenten" LENTENK="9" Cmd="dow == 1"/>				
+
+		<TERCE Type="Lenten" LENTENK="14" Cmd="dow == 2"/>
+		<SEXTE Type="Lenten" LENTENK="15" Cmd="dow == 2"/>	
+		<NONE Type="Lenten" LENTENK="16" Cmd="dow == 2"/>
+
+		<TERCE Type="Lenten" LENTENK="3" Cmd="dow == 3"/>
+		<SEXTE Type="Lenten" LENTENK="4" Cmd="dow == 3"/>	
+		<NONE Type="Lenten" LENTENK="5" Cmd="dow == 3"/>
+
+		<TERCE Type="Lenten" LENTENK="10" Cmd="dow == 4"/>
+		<SEXTE Type="Lenten" LENTENK="11" Cmd="dow == 4"/>	
+		<NONE Type="Lenten" LENTENK="12" Cmd="dow == 4"/>
+
+		<TERCE Type="Lenten" LENTENK="19" Cmd="dow == 5"/>
+		<SEXTE Type="Lenten" LENTENK="20" Cmd="dow == 5"/>	
+		<NONE Type="Lenten" Cmd="dow == 5"/>
+
+		<TERCE Type="Lenten" Cmd="dow == 6"/>
+		<SEXTE Type="Lenten" Cmd="dow == 6"/>	
+		<NONE Type="Lenten" Cmd="dow == 6"/>
+
+
+
+
+
 	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="nday &gt;= -8 &amp;&amp; nday &lt;= -1">
@@ -135,6 +251,18 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 		<PRIME Type="Lenten" Kontakion="{P,T}" PickK="1" Cmd="dow != 0"/>
 		<PRIME Type="Normal" Troparion="{P,T}" PickT="1" Kontakion="{P}" PickK="1" Cmd="dow == 0"/>
 		<PRIME Type="None" Cmd="dow == 5"/> <!-- The Royal Hours are served on Good Friday, which is the only Friday in this scheme -->
+
+		<TERCE Type="Lenten" Kontakion="{P,T}" PickK="1" Cmd="dow != 0"/>
+		<SEXTE Type="Lenten" Kontakion="{P,T}" PickK="1" Cmd="dow != 0"/>	
+		<NONE Type="Lenten" Kontakion="{P,T}" PickK="1" Cmd="dow != 0"/>
+
+		<TERCE Type="Normal" Troparion="{P,T}" PickT="1" Kontakion="{P}" PickK="1" Cmd="dow == 0"/>
+		<SEXTE Type="Normal" Troparion="{P,T}" PickT="1" Kontakion="{P}" PickK="1" Cmd="dow == 0"/>	
+		<NONE Type="Normal" Troparion="{P,T}" PickT="1" Kontakion="{P}" PickK="1" Cmd="dow == 0"/>
+
+		<TERCE Type="None" Cmd="dow == 5"/>
+		<SEXTE Type="None" Cmd="dow == 5"/>	
+		<NONE Type="None" Cmd="dow == 5"/>
 	</LANGUAGE>
 </PERIOD>
 <PERIOD>
