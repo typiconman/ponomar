@@ -1,12 +1,8 @@
 <DAY>
 <LANGUAGE>
 <SAINT Name="12" Cmd="dow == 0" />
-<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="nday == -55" />
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday == -55" Note="for St Xenia"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday == -55" Note="for St Xenia"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Blessed Xenia of Saint Petersburg (19th C) [from Saturday]" Id="2568" Type="1" Cmd="nday == -55"/>
 <SAINT Name="Venerable Xenophontes with his wife Maria, and their sons Arkadius and John of Constantinople (5th-6th C)" Id="312" Type="1" />
 <SAINT Name="Saint Simeon the Old of Mt Sinai (+c.390)" Id="390" Type="0" />
 <SAINT Name="Martyrs Ananias the Presbyter, Peter the Prison Guard and 7 prison guards (+295)" Id="314" Type="0" />
@@ -16,7 +12,6 @@
 <SAINT Name="Blessed David III the Restorer, King of Iberia (Georgia) (+1125)" Id="318" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Ste Xénie, Folle en Christ de St Petersbourg" Id="2568" Type="1" Cmd="nday == -55"/>
 <SAINT Name="Sts Xénophon, Marie, Arcade et Jean" Id="312" Type="1" />
 <SAINT Name="St Syméon l'Ancien" Id="390" Type="0" />
 <SAINT Name="Sts Ananie, Pierre et leurs 7 compagnons en Phénicie" Id="314" Type="0" />
@@ -27,7 +22,6 @@
 <SAINT Name="Ste Paule de Rome" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Блж. Ксении Петербургской (XIX) [с субботы]" Id="2568" Type="1" Cmd="nday == -55"/>
 <SAINT Name="Прпп. Ксенофонта, супруги его Марии и сыновей их Аркадия и Иоанна (V-VI)" Id="312" Type="1"/>
 <SAINT Name="Мч. Иоанна (1938)" Id="" Type="0"/>
 <SAINT Name="Мчч. Анании пресвитера, Петра, темничного стража, и с ними семи воинов (295)" Id="314" Type="0"/>
@@ -38,7 +32,6 @@
 <SAINT Name="Прп. Ксенофонта Робейского (1262)" Id="1410" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="圣女克塞尼亚（彼得堡的成德者，圣愚，19世纪）［转自安息日／周六］" Id="2568" Type="1" Cmd="nday == -55"/>
 <SAINT Name="圣克塞诺芬和他的妻子圣玛利亚，及他们的两个儿子：圣阿尔卡迪，圣约安（君士坦丁堡人，6世纪）" Id="312" Type="1" />
 <SAINT Name="圣西麦翁（被称为‘老者’西奈山之成德者，390年）" Id="390" Type="0" />
 <SAINT Name="殉道者：阿纳尼雅司祭，裴特若，以及协同他们就义者七位士兵（腓尼基，295年）" Id="314" Type="0" />
@@ -56,7 +49,6 @@
 <SAINT Name="新殉道女玛利亚（司祭之妻，噶特奇那地方人，1930年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="聖女克塞尼亞（彼得堡的成德者，聖愚，19世紀）〔轉自安息日／週六〕" Id="2568" Type="1" Cmd="nday == -55"/>
 <SAINT Name="聖克塞諾芬和他的妻子聖瑪利亞，及他們的兩個兒子：聖阿爾卡迪，聖約安（君士坦丁堡人，6世紀）" Id="312" Type="1" />
 <SAINT Name="聖西麥翁（被稱為『老者』西奈山之成德者，390年）" Id="390" Type="0" />
 <SAINT Name="殉道者：阿納尼雅司祭，裴特若，以及協同他們就義者七位士兵（腓尼基，295年）" Id="314" Type="0" />

@@ -4,7 +4,8 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Afterfeast of the Meeting of the Lord" Id="" Type="3" Cmd="nday &lt; -49" />
-<SAINT Name="Holy and Righteous Simeon the God-Receiver and Anna the Prophetess (1st C)" Id="1998" Type="2" />
+<SAINT Name="Holy and Righteous Simeon the God-Receiver and Anna the Prophetess (1st C)" Id="1998" Type="2" Cmd="nday != -47"/>
+<SAINT Name="[The service to Sts Simeon and Anna is transfered to Monday. The service to St Nicholas of Japan is chanted today.]" Id="" Type="0" Cmd="nday == -47"/>
 <SAINT Name="Prophet Azariah (10th C. BC)" Id="6385" Type="0" />
 <SAINT Name="Martyrs Adrian and Ebbulus" Id="" Type="0" />
 <SAINT Name="Martyr Blaise of Caesarea (3rd C)" Id="380" Type="0" />

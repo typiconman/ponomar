@@ -11,6 +11,7 @@
 <SAINT Name="Synaxis of the 'Three Hierarchs' - Basil the Great, Gregory the Theologian and John Chrysostom" Id="373" Type="5" Cmd="nday != -51 &amp;&amp; nday != -53" />
 <SAINT Name="The feast of the Three Hierarchs is transferred to Tuesday" Id="" Type="0" Cmd="nday == -53"/>
 <SAINT Name="The feast of the Three Hierarchs is transferred to Thursday" Id="" Type="0" Cmd="nday == -51"/>
+<SAINT Name="Translation of the relics of the Hieromartyr Ignatius the Godbearer, Bishop of Antioch [from Thursday] (+ 107)" Id="9031" Type="2" Cmd="nday == -51"/>
 <SAINT Name="Hieromartyr Hipolytus, Pope of Rome, along with the Martyrs Censorinus and Sabinus, the Virginmartyr Chryse and 20 other Martyrs at Ostia (3rd C)" Id="339" Type="1" />
 <SAINT Name="Martyr Theophilus the New in Cyprus (+ 784)" Id="342" Type="0" />
 <SAINT Name="New Martyr Theodore of Mytelene" Id="" Type="0" />

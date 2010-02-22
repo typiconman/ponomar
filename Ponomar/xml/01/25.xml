@@ -6,7 +6,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Saint Gregory the Theologian, Archbishop of Constantinople (+ 389)" Id="535" Type="4" />
-<SAINT Name="Venerable Publius of Syria (+ c. 380)" Id="308" Type="0" />
+<SAINT Name="Venerable Publius of Syria (+ c. 380)" Id="9020" Type="0" />
 <SAINT Name="Venerable Mares the Singer, of Syria (+ c. 430)" Id="309" Type="0" />
 <SAINT Name="Martyrs Felicitas and her seven sons: Januarius, Felix, Philip, Sylvanus, Alexander, Vitalius and Marcial (+ c. 164)" Id="307" Type="0" />
 <SAINT Name="Saint Moses, Archbishop of Novgorod (+ 1362)" Id="1570" Type="0" />
@@ -25,7 +25,7 @@
 <SAINT Name="Ste Médula et ses compagnons" Id="" Type="0" />
 <SAINT Name="St Castin, Evêque de Byzance" Id="" Type="0" />
 <SAINT Name="St Dimitrios le Skevophylaxe" Id="" Type="0" />
-<SAINT Name="St Publius" Id="308" Type="0" />
+<SAINT Name="St Publius" Id="9020" Type="0" />
 <SAINT Name="St Maris" Id="309" Type="0" />
 <SAINT Name="St Apollos" Id="" Type="0" />
 <SAINT Name="St Auxence" Id="" Type="0" />
@@ -38,14 +38,14 @@
 <SAINT Name="Сщмч. Петра, архиеп. Воронежского (1929)" Id="4888" Type="0"/>
 <SAINT Name="Сщмч. Василия, еп. Прилукского. Сщмч. Стефана пресвитера. Мч. Бориса (1938)" Id="4774" Type="0"/>
 <SAINT Name="Мц. Филицаты и сыновей ее: Ианнуария, Феликса, Филиппа, Сильвана, Александра, Виталия и Марциала (ок. 164)" Id="307" Type="0"/>
-<SAINT Name="Прп. Поплия Сирийского (ок. 380)" Id="308" Type="0"/>
+<SAINT Name="Прп. Поплия Сирийского (ок. 380)" Id="9020" Type="0"/>
 <SAINT Name="Прп. Мара певца (ок. 430)" Id="309" Type="0"/>
 <SAINT Name="Свт. Моисея, архиеп. Новгородского (1362)" Id="1570" Type="0"/>
 <SAINT Name="Иконы Божией Матери, именуемой &quot;Утоли моя печали&quot; (принесена в Москву в 1640 г.)" Id="310" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="圣格里高利（神学家，君士坦丁堡总主教，389年）" Id="535" Type="4" />
-<SAINT Name="圣普博利（叙利亚之克修者，380年）" Id="308" Type="0" />
+<SAINT Name="圣普博利（叙利亚之克修者，380年）" Id="9020" Type="0" />
 <SAINT Name="圣玛瑞斯（歌手，叙利亚人，430年）" Id="309" Type="0" />
 <SAINT Name="殉道女斐利基塔及与她一同就义之七子：雅努阿利、斐利克斯、斐利普、西尔瓦诺、亚历山大、维塔利、玛尔提亚尔（罗马城，164年）" Id="307" Type="0" />
 <SAINT Name="圣摩伊息斯（诺夫哥罗德总主教，1362年）" Id="1570" Type="0" />
@@ -66,7 +66,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="聖格里高利（神學家，君士坦丁堡總主教，389年）" Id="535" Type="4" />
-<SAINT Name="聖普博利（敘利亞之克修者，380年）" Id="308" Type="0" />
+<SAINT Name="聖普博利（敘利亞之克修者，380年）" Id="9020" Type="0" />
 <SAINT Name="聖瑪瑞斯（歌手，敘利亞人，430年）" Id="309" Type="0" />
 <SAINT Name="殉道女斐利基塔及與她一同就義之七子：雅努阿利、斐利克斯、斐利普、西爾瓦諾、亞歷山大、維塔利、瑪爾提亞爾（羅馬城，164年）" Id="307" Type="0" />
 <SAINT Name="聖摩伊息斯（諾夫哥羅德總主教，1362年）" Id="1570" Type="0" />
