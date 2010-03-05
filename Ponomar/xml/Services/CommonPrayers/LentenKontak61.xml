@@ -1,0 +1,21 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="First Lenten Kontakion, Tone 2"/>
+<TEXT Value="Thou hast wrought salvation in the midst of the earth, O Christ God; Thou didst stretch out Thine immaculate hands upon the Cross, thereby gathering all the nations that cry to Thee: O Lord, glory be to Thee."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="тропарѝ, гла́съ в҃"/>
+<TEXT Value="Сп҃се́нїе содѣ́лалъ є҆сѝ посредѣ̀ землѝ 
+хрⷭтѐ бж҃е, на крⷭтѣ̀ пречи́стѣи рꙋ́цѣ 
+твоѝ просте́рлъ є҆сѝ, собира́ѧ всѧ҄ ꙗ҆зы́ки зовꙋ́щыѧ: 
+гдⷭи, сла́ва тебѣ̀."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
+</LANGUAGE>
+</COMMONPRAYER>

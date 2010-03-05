@@ -418,9 +418,9 @@ public class ThirdHour implements DocHandler, ActionListener, ItemListener, Prop
 			text+=(String)table.get("Value");
 			
 		}
-		if (elem.equals("PRIMES") && read)
+		if (elem.equals("TERCE") && read)
 		{
-			//WE ARE DEALING WITH THE INFORMATION FOR PRIMES (THERE COULD BE INFORMATION FOR OTHER SERVICES)
+			//WE ARE DEALING WITH THE INFORMATION FOR TERCE (THERE COULD BE INFORMATION FOR OTHER SERVICES)
 			//THE VARIABLE COMPONETS IN THIS SERVICE ARE GIVEN BELOW
 			String value=(String)table.get("Type");
 			if(value != null)
