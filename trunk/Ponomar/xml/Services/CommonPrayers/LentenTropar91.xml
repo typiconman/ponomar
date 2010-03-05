@@ -1,0 +1,20 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Lenten Troparion, Tone 8"/>
+<TEXT Value="O Thou Who at the ninth hour for our sake didst taste of death in the flesh, mortify our carnal mind, O Christ God, and save us."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="тропа́рь, гла́съ и҃"/>
+<TEXT Value="И҆́же въ девѧ́тый ча́съ на́съ ра́ди пло́тїю 
+сме́рть вкꙋси́вый, ѹ҆мертвѝ пло́ти на́шеѧ 
+мꙋдрова́нїе хрⷭтѐ бж҃е, и҆ сп҃сѝ на́съ."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
+</LANGUAGE>
+</COMMONPRAYER>

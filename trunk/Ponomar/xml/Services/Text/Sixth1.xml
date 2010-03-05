@@ -1,0 +1,14 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<TEXT Value="Ponomar: The Sixth Hour (Sexte)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<TEXT Value="Ponomar : La Sixième Heure (Sexte)"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<TEXT Value="Пономарь: Ча́съ шесты́й"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<TEXT Value="ΠΟΝΟΜΑΡΙΟΣ: ΩΡΑ ΕΚΤΗ"/>
+</LANGUAGE>
+</COMMONPRAYER>

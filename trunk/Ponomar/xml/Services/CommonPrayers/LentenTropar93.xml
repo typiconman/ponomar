@@ -1,0 +1,19 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Stichos 2"/>
+<TEXT Value="Let my petition come before Thee, O Lord; according to Thine oracle deliver me."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="Стї́хъ в҃"/>
+<TEXT Value="Да вни́детъ проше́нїе моѐ пред тѧ̀ 
+гдⷭи, по словесѝ твоемꙋ̀ и҆зба́ви мѧ̀."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
+</LANGUAGE>
+</COMMONPRAYER>
