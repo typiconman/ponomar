@@ -2,6 +2,7 @@
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="On this day, we sing the service for the Finding of the Head of the Forerunner" Id="1007" Type="4" Cmd="nday == 43" />
 <SAINT Name="Holy Hierarch Tarasius, Archbishop of Constantinople (+806)" Id="508" Type="1" />
+<SAINT Name="New Hieromartyr Priest Alexander, Nun-Martyr Mstislav (+1938)" Id="" Type="0"/>
 <SAINT Name="Hieromartyr Reginus, Bishop of Skopel" Id="" Type="0" />
 <SAINT Name="Venerable Paphnutius Caphalas;" Id="" Type="0" />
 </LANGUAGE>
@@ -17,6 +18,31 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Совершаем службу Обретения Главы Иоанна Крестителя" Id="1007" Type="4" Cmd="nday == 43" />
 <SAINT Name="Свт. Тарасия, Патриарха Константинопольского (806)" Id="508" Type="1"/>
-<SAINT Name="Сщмч. Александра пресвитера, прмц. Мстиславы" Id="" Type="0"/>
+<SAINT Name="Сщмч. Александра пресвитера, прмц. Мстиславы (1938)" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣塔拉息（君士坦丁堡总主教，806年）" Id="508" Type="1" />
+<SAINT Name="殉道司教瑞吉诺（斯科佩罗斯岛主教，355年）" Id="" Type="0" />
+<SAINT Name="圣埃拉斯默和圣帕弗努提（凯法拉地方修士，大圣安托尼同时代人，4世纪）" Id="" Type="0" />
+<SAINT Name="新殉道司祭亚历山大、殉道修女穆斯提斯拉夫（1938年）" Id="" Type="0" />
+<SAINT Name="圣颇利卡尔普、殉道者安托尼" Id="" Type="0" />
+<SAINT Name="圣埃特尔博特（肯特国王，616年）" Id="" Type="0" />
+<SAINT Name="圣女瓦尔博伽（海登赫姆地方修女院院长，779年）" Id="" Type="0" />
+<SAINT Name="圣玛切鲁斯（叙利亚阿帕美亚的主教）" Id="" Type="0" />
+<SAINT Name="新殉道司祭莱翁（本姓克罗博楚克，波兰拉斯科夫，1944年）" Id="" Type="0" />
+<SAINT Name="圣女瓦尔博伽（海登赫姆地方修女院院长，779年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 56">
+<SAINT Name="聖塔拉息（君士坦丁堡總主教，806年）" Id="508" Type="1" />
+<SAINT Name="殉道司教瑞吉諾（斯科佩羅斯島主教，355年）" Id="" Type="0" />
+<SAINT Name="聖埃拉斯默和聖帕弗努提（凱法拉地方修士，大聖安托尼同時代人，四世紀）" Id="" Type="0" />
+<SAINT Name="新殉道司祭亞歷山大、殉道修女穆斯提斯拉夫（1938年）" Id="" Type="0" />
+<SAINT Name="聖頗利卡爾普、殉道者安托尼" Id="" Type="0" />
+<SAINT Name="聖埃特爾博特（肯特國王、616年）" Id="" Type="0" />
+<SAINT Name="聖女瓦爾博伽（海登赫姆地方修女院院長，779年）" Id="" Type="0" />
+<SAINT Name="聖瑪切魯斯敘利亞阿帕美亞的主教）" Id="" Type="0" />
+<SAINT Name="新殉道司祭萊翁（本姓克羅博楚克，波蘭拉斯科夫，1944年）" Id="" Type="0" />
+<SAINT Name="聖女瓦爾博伽（海登赫姆地方修女院院長，779年）" Id="" Type="0" />
+</LANGUAGE>
+
 </DAY>
