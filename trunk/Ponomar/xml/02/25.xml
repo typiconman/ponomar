@@ -32,7 +32,7 @@
 <SAINT Name="新殉道司祭莱翁（本姓克罗博楚克，波兰拉斯科夫，1944年）" Id="" Type="0" />
 <SAINT Name="圣女瓦尔博伽（海登赫姆地方修女院院长，779年）" Id="" Type="0" />
 </LANGUAGE>
-<LANGUAGE Cmd="LS == 56">
+<LANGUAGE Cmd="LS == 6">
 <SAINT Name="聖塔拉息（君士坦丁堡總主教，806年）" Id="508" Type="1" />
 <SAINT Name="殉道司教瑞吉諾（斯科佩羅斯島主教，355年）" Id="" Type="0" />
 <SAINT Name="聖埃拉斯默和聖帕弗努提（凱法拉地方修士，大聖安托尼同時代人，四世紀）" Id="" Type="0" />
