@@ -331,7 +331,12 @@ public class Service implements DocHandler
 			read=true;
 		}
                 if (elem.equals("GETID") && read){
-                    Commemoration data=new Commemoration(table.get("Id").toString());
+                    String Type = "M";
+                           //System.out.println(table.get("Type"));
+                    if (table.get("Type")!= null){
+                        Type=table.get("Type").toString();
+                    }
+                    Commemoration data=new Commemoration(table.get("Id").toString(),Type);
                     String Info = table.get("What").toString();
                     int parsedInfo1=Info.lastIndexOf("/");
                    //System.out.println(parsedInfo[0]);
