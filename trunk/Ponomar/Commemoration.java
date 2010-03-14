@@ -30,7 +30,9 @@ OF THE PROGRAMME.
 public class Commemoration implements DocHandler
 {
 	private final static String Location  = "Ponomar/xml/Services/menaion/";   // THE LOCATION OF THE BASIC SERVICE RULES
-	private static boolean read=false;
+	private final static String LocationT  = "Ponomar/xml/triodion/";
+        private final static String LocationP  = "Ponomar/xml/pentecostarion/";
+        private static boolean read=false;
 	private String filename;
 	private int lineNumber;
 	//private LanguagePack Text=new LanguagePack();
@@ -56,7 +58,31 @@ public class Commemoration implements DocHandler
 		Information=new OrderedHashtable();
 		readings=new OrderedHashtable();
                 RoyalHours=new OrderedHashtable();
-		readCommemoration(FileName);                
+                Information.put("ID",FileName);
+                readCommemoration(Location+FileName);
+	}
+        protected Commemoration(String FileName,String Type)
+	{
+            //This allows a more generalised approach to reading, those file that are found
+            //not only in the menaion, but also in the triodion, pentecostarion, etc...
+            //Codes: M: menaion
+            //       T: triodion
+            //       P: pentecostarion
+            Information=new OrderedHashtable();
+		readings=new OrderedHashtable();
+                RoyalHours=new OrderedHashtable();
+                Information.put("ID",FileName);
+                String FilePath = new String();
+                if (Type.equals("M")){
+                    FilePath=Location+FileName;
+                }
+                if (Type.equals("T")){
+                    FilePath=LocationT+FileName;
+                }
+                if (Type.equals("P")){
+                    FilePath=LocationP+FileName;
+                }
+		readCommemoration(FilePath);
 	}
 	protected Commemoration()
 	{
@@ -78,10 +104,10 @@ public class Commemoration implements DocHandler
 	
 	public void readCommemoration(String FileName) //throws IOException
 	{
-		Information.put("ID",FileName);
+		
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Location+FileName+".xml"), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(FileName+".xml"), "UTF8"));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)

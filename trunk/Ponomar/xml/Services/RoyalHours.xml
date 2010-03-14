@@ -24,7 +24,7 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="GloryToTheFather2" Who="R" RedFirst="1" NewLine="1"/>
 <GETID Id="B_3174" What="/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="B_163" What="/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 <CREATE What="BothNow" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="TheotokionPrimes" Who="R" RedFirst="1" NewLine="1" Header="1" />
 <!-- Special Idiomels -->
@@ -40,23 +40,23 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <GETID Id="P_163" What="/ROYALHOURS/VERSE/2" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/12" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/11" Who="" Times="2" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/1" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/12" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/2" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/12" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/11" Who="" Times="2" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/1" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/12" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/2" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/12" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="GloryToTheFather2" Who="C" RedFirst="1" NewLine="1" />
 
 <GETID Id="P_3174" What="/ROYALHOURS/IDIOMEL/13" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/13" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/13" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/13" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="BothNow" Who="C" RedFirst="1" NewLine="1"/>
 
 <GETID Id="P_3174" What="/ROYALHOURS/IDIOMEL/13" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/13" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/13" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/13" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <!-- Prokimenon of the Prophecy -->
 <GETID Id="P_3174" What="/ROYALHOURS/PROKIMENON/1P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
@@ -67,9 +67,9 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <GETID Id="P_163" What="/ROYALHOURS/VERSE/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Id="P_163" What="/ROYALHOURS/PROKIMENON/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Id="Tr-3" What="/ROYALHOURS/PROKIMENON/1P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/PROKIMENON/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/PROKIMENON/1P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/PROKIMENON/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="Wisdom" Who="D" RedFirst="1" NewLine="1" />
 
@@ -126,7 +126,7 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 
 <GETID Id="B_3174" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="B_163" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="LordHaveMercy" Who="R" RedFirst="1" NewLine="1" Times="40"/>
 <CREATE What="PrayerOfHours" Who="R" RedFirst="1" NewLine="1" Header="1"/>
@@ -184,7 +184,7 @@ include the following prayer -->
 
 <GETID Id="B_3174" What="/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="B_163" What="/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/TROPARION/2" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/TROPARION/2" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="BothNow" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="TheotokionTerce" Who="R" RedFirst="1" NewLine="1" Header="1" />
@@ -201,23 +201,23 @@ include the following prayer -->
 <GETID Id="P_163" What="/ROYALHOURS/VERSE/2" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/32" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/31" Who="" Times="2" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/31" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/32" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/32" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/32" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/31" Who="" Times="2" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/31" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/32" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/32" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/32" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="GloryToTheFather2" Who="C" RedFirst="1" NewLine="1" />
 
 <GETID Id="P_3174" What="/ROYALHOURS/IDIOMEL/33" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/33" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/33" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/33" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="BothNow" Who="C" RedFirst="1" NewLine="1"/>
 
 <GETID Id="P_3174" What="/ROYALHOURS/IDIOMEL/33" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/33" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/33" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/33" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <!-- Prokimenon of the Prophecy -->
 <GETID Id="P_3174" What="/ROYALHOURS/PROKIMENON/3P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
@@ -228,9 +228,9 @@ include the following prayer -->
 <GETID Id="P_163" What="/ROYALHOURS/VERSE/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Id="P_163" What="/ROYALHOURS/PROKIMENON/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Id="Tr-3" What="/ROYALHOURS/PROKIMENON/3P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/PROKIMENON/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/PROKIMENON/3P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/PROKIMENON/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="Wisdom" Who="D" RedFirst="1" NewLine="1" />
 <BIBLE getReading="Baruch" Who="SR" NewLine="1" Cmd="PFlag == 0"/>
@@ -283,7 +283,7 @@ include the following prayer -->
 
 <GETID Id="B_3174" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="B_163" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="LordHaveMercy" Who="R" RedFirst="1" NewLine="1" Times="40"/>
 <CREATE What="PrayerOfHours" Who="R" RedFirst="1" NewLine="1" Header="1"/>
@@ -321,7 +321,7 @@ include the following prayer -->
 <CREATE What="GloryToTheFather2" Who="R" RedFirst="1" NewLine="1"/>
 <GETID Id="B_3174" What="/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="B_163" What="/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/TROPARION/3" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/TROPARION/3" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="BothNow" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="TheotokionSext" Who="R" RedFirst="1" NewLine="1" Header="1" />
@@ -340,22 +340,22 @@ include the following prayer -->
 <GETID Id="P_163" What="/ROYALHOURS/VERSE/2" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/62" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/61" Who="" Times="2" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/61" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/62" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/62" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/62" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/61" Who="" Times="2" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/61" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/62" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/62" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/62" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="GloryToTheFather2" Who="C" RedFirst="1" NewLine="1" />
 
 <GETID Id="P_3174" What="/ROYALHOURS/IDIOMEL/63" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/63" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/63" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/63" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="BothNow" Who="C" RedFirst="1" NewLine="1"/>
 <GETID Id="P_3174" What="/ROYALHOURS/IDIOMEL/63" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/63" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/63" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/63" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <!-- Prokimenon of the Prophecy -->
 <GETID Id="P_3174" What="/ROYALHOURS/PROKIMENON/6P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
@@ -366,9 +366,9 @@ include the following prayer -->
 <GETID Id="P_163" What="/ROYALHOURS/VERSE/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Id="P_163" What="/ROYALHOURS/PROKIMENON/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Id="Tr-3" What="/ROYALHOURS/PROKIMENON/6P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/PROKIMENON/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/PROKIMENON/6P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/PROKIMENON/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="Wisdom" Who="D" RedFirst="1" NewLine="1" />
 <BIBLE getReading="Isa" Who="SR" NewLine="1"/>
@@ -421,7 +421,7 @@ include the following prayer -->
 
 <GETID Id="B_3174" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="B_163" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="LordHaveMercy" Who="R" RedFirst="1" NewLine="1" Times="40"/>
 <CREATE What="PrayerOfHours" Who="R" RedFirst="1" NewLine="1" Header="1"/>
@@ -465,7 +465,7 @@ include the following prayer -->
 
 <GETID Id="B_3174" What="/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="B_163" What="/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/TROPARION/4" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/TROPARION/4" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="BothNow" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="TheotokionNone" Who="R" RedFirst="1" NewLine="1" Header="1" />
@@ -482,11 +482,11 @@ include the following prayer -->
 <GETID Id="P_163" What="/ROYALHOURS/VERSE/2" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/92" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
 
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/91" Who="" Times="2" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/91" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/92" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/62" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/92" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/91" Who="" Times="2" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/91" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/92" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/62" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/92" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="GloryToTheFather2" Who="C" RedFirst="1" NewLine="1" />
 
@@ -509,10 +509,10 @@ This interpolation interputs the repetition of the Third Idiomel. -->
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/93.4" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 1" />
 <!-- A Smaller set of blessings seem to be prescribed in the Slavic Tradition for the Royal Family, Patriarchs, etc... during the Theophany service -->
 
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.1" Who="SR" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2" Times="3"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.2" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.3" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" Times="3"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.4" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/93.1" Who="SR" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2" Times="3"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/93.2" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/93.3" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" Times="3"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/93.4" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
 
 <CREATE What="BothNow" Who="C" RedFirst="1" NewLine="1"/>
 
@@ -530,10 +530,10 @@ This interpolation interputs the repetition of the Third Idiomel. -->
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/93.3" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 1" Times="3"/>
 <GETID Id="P_163" What="/ROYALHOURS/IDIOMEL/93.4" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 1" />
 
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.1" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" Times="3"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.2" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.3" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 1" Times="3"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/IDIOMEL/93.4" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/93.1" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" Times="3"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/93.2" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/93.3" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 1" Times="3"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/IDIOMEL/93.4" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
 
 <!-- Prokimenon of the Prophecy -->
 <GETID Id="P_3174" What="/ROYALHOURS/PROKIMENON/9P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
@@ -544,9 +544,9 @@ This interpolation interputs the repetition of the Third Idiomel. -->
 <GETID Id="P_163" What="/ROYALHOURS/VERSE/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Id="P_163" What="/ROYALHOURS/PROKIMENON/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Id="Tr-3" What="/ROYALHOURS/PROKIMENON/9P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/VERSE/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Id="Tr-3" What="/ROYALHOURS/PROKIMENON/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/PROKIMENON/9P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/VERSE/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/ROYALHOURS/PROKIMENON/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="Wisdom" Who="D" RedFirst="1" NewLine="1" />
 <BIBLE getReading="Isa" Who="R" NewLine="1" Cmd="PFlag != 2"/>
@@ -594,7 +594,7 @@ This interpolation interputs the repetition of the Third Idiomel. -->
 <CREATE What="Amen" Who="R" NewLine="1" RedFirst="1"/>
 <GETID Id="B_3174" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="B_163" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="LordHaveMercy" Who="R" RedFirst="1" NewLine="1" Times="40"/>
 <CREATE What="PrayerOfHours" Who="R" RedFirst="1" NewLine="1" Header="1"/>
@@ -650,7 +650,7 @@ This interpolation interputs the repetition of the Third Idiomel. -->
 
 <GETID Id="B_3174" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Id="B_163" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
-<GETID Id="Tr-3" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="T" Id="02" What="/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 
 <CREATE What="LordHaveMercy" Who="C" RedFirst="1" NewLine="1" Times="40"/>
 </LANGUAGE>
