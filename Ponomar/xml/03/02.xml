@@ -1,13 +1,13 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Hieromartyr Theodotus, Bishop of Cyrenia (+ c.320-326)" Id="544" Type="1" />
-<SAINT Name="St. Arsenius the Bishop of Tver (+1409)" Id="546" Type="3" />
-<SAINT Name="Venerable Agathon of Egypt (5th C)" Id="547" Type="0" />
-<SAINT Name="Martyr Troadius of Neocaesarea (3rd C)" Id="" Type="0" />
-<SAINT Name="Virginmartyr Euthalia of Sicily (+257)" Id="545" Type="0" />
-<SAINT Name="440 Martyrs slain by the Lombards in Sicily (+ c. 579)" Id="548" Type="0" />
-<SAINT Name="Venerable Sabbas, Barsonuphius, Sabbatius, and Euphrosinus of Tver" Id="" Type="0" />
 <SAINT Name="Icon of the Mother of God 'She who Reigns' (1917)" Id="553" Type="4" />
+<SAINT Name="Hieromartyr Theodotus, Bishop of Cyrenia (+ c.326)" Id="544" Type="1" />
+<SAINT Name="St. Arsenius the Bishop of Tver (+1409)" Id="546" Type="3" />
+<SAINT Name="Martyr Euthalia of Sicily (+257)" Id="545" Type="0" />
+<SAINT Name="Martyr Troadius of Neocaesarea (3rd C)" Id="" Type="0" />
+<SAINT Name="Venerable Agathon of Egypt (5th C)" Id="547" Type="0" />
+<SAINT Name="440 Martyrs slain by the Lombards in Sicily (+579)" Id="548" Type="0" />
+<SAINT Name="Venerable Sabbas, Barsonuphius, Sabbatius, and Euphrosinus of Tver" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Hesichius le Palatin" Id="" Type="0" />
@@ -23,11 +23,46 @@
 <SAINT Name="St Nicolas Planas (Papa Planas)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Сщмч. Феодота, еп. Киринейского (ок 320-326)" Id="544" Type="1"/>
-<SAINT Name="Свт. Арсения, еп. Тверского (1409). Мч. Троадия (ок. 249-251)" Id="546" Type="3"/>
-<SAINT Name="Мц. Евфалии (257)" Id="545" Type="0"/>
-<SAINT Name="Прп. Агафона Египетского (V)" Id="547" Type="0"/>
-<SAINT Name="Мчч. 440 Италийских (ок. 579)" Id="548" Type="0"/>
 <SAINT Name="Иконы Божией матери, именуемой &quot;Державная&quot; (1917)" Id="553" Type="4"/>
+<SAINT Name="Сщмч. Феодота, еп. Киринейского (ок. 326)" Id="544" Type="1"/>
+<SAINT Name="Свт. Арсения, еп. Тверского (1409)" Id="546" Type="3"/>
+<SAINT Name="Мц. Евфалии (257)" Id="545" Type="0"/>
+<SAINT Name="Мч. Троадия (III)" Id="" Type="0"/>
+<SAINT Name="Прп. Агафона Египетского (V)" Id="547" Type="0"/>
+<SAINT Name="Мчч. 440 Италийских (579)" Id="548" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="科洛门斯科耶圣母像垂迹纪念日（1917年）" Id="553" Type="4" />
+<SAINT Name="殉道司教德奥多特（基瑞尼亚城主教，315年）" Id="544" Type="1" />
+<SAINT Name="圣阿尔塞尼（特维尔主教，1409年）" Id="546" Type="3" />
+<SAINT Name="童贞殉道者女艾弗塔利亚（西西里，257年）" Id="545" Type="0" />
+<SAINT Name="殉道者特若亚迪（新恺撒里亚，三世纪）" Id="" Type="0" />
+<SAINT Name="圣阿伽佗（埃及修士，五世纪）" Id="547" Type="0" />
+<SAINT Name="四百四十殉道者（为伦巴底人所屠戮者，579年）" Id="548" Type="0" />
+<SAINT Name="圣萨瓦提（特维尔修士，1434年）及其弟子圣艾弗福若西诺（1460年）" Id="" Type="0" />
+<SAINT Name="圣瓦尔萨努斐（1459年）及圣萨瓦（1467年）（均为特维尔地方修道院院长）" Id="" Type="0" />
+<SAINT Name="圣库因特（弗里吉亚的宣信者和显行灵迹者，283年）" Id="" Type="0" />
+<SAINT Name="殉道者：奈斯托尔主教及特里维弥辅祭（庞非里亚的佩尔吉，250年）" Id="" Type="0" />
+<SAINT Name="殉道者伊息赫（安提约希亚之禁军侍卫，304年）" Id="" Type="0" />
+<SAINT Name="新殉道者德奥多若（本姓斯拉迪奇，科默格维那地方人，1788年）" Id="" Type="0" />
+<SAINT Name="圣约雅敬（阿托斯圣山瓦托佩迪修道院及伊萨卡岛之成德者，1868年）" Id="" Type="0" />
+<SAINT Name="圣察德（英格兰的李奇特菲尔德地方主教，672年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="科洛門斯科耶聖母像垂跡紀念日（1917年）" Id="553" Type="4" />
+<SAINT Name="殉道司教德奧多特（基瑞尼亞城主教，315年）" Id="544" Type="1" />
+<SAINT Name="聖阿爾塞尼（特維爾主教，1409年）" Id="546" Type="3" />
+<SAINT Name="童貞殉道者女艾弗塔利亞（西西里，257年）" Id="545" Type="0" />
+<SAINT Name="殉道者特若亞迪（新愷撒里亞，三世紀）" Id="" Type="0" />
+<SAINT Name="聖阿伽佗（埃及修士，五世紀）" Id="547" Type="0" />
+<SAINT Name="四百四十殉道者（為倫巴底人所屠戮者，579年）" Id="548" Type="0" />
+<SAINT Name="聖薩瓦提（特維爾修士，1434年）及其弟子聖艾弗福若西諾（1460年）" Id="" Type="0" />
+<SAINT Name="聖瓦爾薩努斐（1459年）及聖薩瓦（1467年）（均為特維爾地方修道院院長）" Id="" Type="0" />
+<SAINT Name="聖庫因特（弗里吉亞的宣信者和顯行靈跡者，283年）" Id="" Type="0" />
+<SAINT Name="殉道者：奈斯托爾主教及特里維彌輔祭（龐非里亞的佩爾吉，250年）" Id="" Type="0" />
+<SAINT Name="殉道者伊息赫（安提約希亞之禁軍侍衛，304年）" Id="" Type="0" />
+<SAINT Name="新殉道者德奧多若（本姓斯拉迪奇，科默格維那地方人，1788年）" Id="" Type="0" />
+<SAINT Name="聖約雅敬（阿托斯聖山瓦托佩迪修道院及伊薩卡島之成德者，1868年）" Id="" Type="0" />
+<SAINT Name="聖察德（英格蘭的李奇特菲爾德地方主教，672年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
