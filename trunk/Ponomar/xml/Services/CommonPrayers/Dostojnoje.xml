@@ -1,0 +1,18 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value=""/>
+<TEXT Value="It is truly right to call you blessed, who gave birth to God, ever-blessed and most pure, and the Mother of our God. Greater in honour than the Cherubim, and beyond compare more glorious than the Seraphim, without corruption you gave birth to God the Word, truly the Mother of God we magnify you. In the name of the Lord bless, Father."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value=""/>
+<TEXT Value="Church Slavonic Text is placed here."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
+</LANGUAGE>
+</COMMONPRAYER>

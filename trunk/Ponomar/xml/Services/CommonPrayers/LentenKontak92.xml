@@ -1,0 +1,22 @@
+﻿<COMMONPRAYER>
+<LANGUAGE Cmd="LS == 0">
+<HEADER Value="Second Lenten Kontakion, Tone 8"/>
+<TEXT Value="In the midst of two thieves, Thy Cross was found to be a balance of justice; for the one was borne down to hades by the weight of his blasphemy; the other was raised up from his sins by the knowledge of theology. O Christ God, glory be to Thee."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<HEADER Value=""/>
+<TEXT Value="Inserer le texte desiré en francais"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<HEADER Value="конда́къ"/>
+<TEXT Value="Посредѣ̀ двою̀ разбѡ́йникꙋ, мѣ́рило пра́ведное 
+ѡ҆брѣ́тесѧ крⷭтъ тво́й: ѻ҆́вомꙋ ѹ҆́бѡ низводи́мꙋ во 
+а҆́дъ тѧгото́ю хꙋле́нїѧ: дрꙋго́мꙋ же легча́щꙋсѧ ѿ 
+прегрѣше́нїй, къ позна́нїю бг҃осло́вїѧ: хрⷭтѐ бж҃е, 
+сла́ва тебѣ̀."/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == -2">
+<HEADER Value=""/>
+<TEXT Value="Greek Polytonic Text is placed here."/>
+</LANGUAGE>
+</COMMONPRAYER>
