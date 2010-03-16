@@ -1,10 +1,10 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Martyrs Eutropius, Cleonicus and Basiliscus of Amasea (+ c.308)" Id="555" Type="1" />
-<SAINT Name="Martyrs Zeno and Zoilus" Id="" Type="0" />
-<SAINT Name="Virginmartyr Piama (+ 337)" Id="556" Type="0" />
+<SAINT Name="New Venerable Martyr Martha and Martyr Michael (+ 1938)" Id="" Type="0" />
+<SAINT Name="Venerable Virgin Piama (+ 337)" Id="556" Type="0" />
+<SAINT Name="Sts. Zeno and Zoilus" Id="" Type="0" />
 <SAINT Name="Icon of the Mother of God of Volokolamsk (1572)" Id="557" Type="0" />
-<SAINT Name="New Martyr Michael (+ 1938)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Eutrope, Cléonique et Basilisque" Id="555" Type="1" />
@@ -18,7 +18,29 @@
 <SAINT Name="Мчч. Евтропия, Клеоника и Василиска (ок. 308)" Id="555" Type="1"/>
 <SAINT Name="Прмц. Марфы и мч. Михаила (1938)" Id="" Type="0"/>
 <SAINT Name="Прп. Пиамы девы (337)" Id="556" Type="0"/>
-<SAINT Name="Св. Зинона и Зоила" Id="" Type="0"/>
+<SAINT Name="Свв. Зинона и Зоила" Id="" Type="0"/>
 <SAINT Name="Волоколамской иконы Божией Матери (1572)" Id="557" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道者：艾弗特若彼、克莱奥尼科、瓦西利斯科（阿玛塞亚地方，308年）" Id="555" Type="1" />
+<SAINT Name="新殉道修女玛尔塔及殉道者弥哈伊尔（1938年）" Id="" Type="0" />
+<SAINT Name="圣童贞女彼雅玛（337年）及圣女亚力山德拉（亚历山大里亚城人）" Id="556" Type="0" />
+<SAINT Name="圣兹诺及佐伊洛" Id="" Type="0" />
+<SAINT Name="佛洛科拉穆斯克圣母圣像纪念日（1572年）" Id="557" Type="0" />
+<SAINT Name="圣文瓦洛埃（布列塔尼地方，530年）" Id="" Type="0" />
+<SAINT Name="圣喀路般（高卢的奥弗涅地方人，576年）" Id="" Type="0" />
+<SAINT Name="殉道司祭德奥多里特（安提约希亚城司祭，361-363年间）" Id="" Type="0" />
+<SAINT Name="圣妇农（威尔士的圣达维德之母，6世纪）圣约安（一名奥克若彼里，格鲁吉亚之卡托利科斯〖首席主教〗，1049年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道者：艾弗特若彼、克萊奧尼科、瓦西利斯科（阿瑪塞亞地方，308年）" Id="555" Type="1" />
+<SAINT Name="新殉道修女瑪爾塔及殉道者彌哈伊爾（1938年）" Id="" Type="0" />
+<SAINT Name="聖童貞女彼雅瑪（337年）及聖女亞力山德拉（亞歷山大里亞城人）" Id="556" Type="0" />
+<SAINT Name="聖茲諾及佐伊洛" Id="" Type="0" />
+<SAINT Name="佛洛科拉穆斯克聖母聖像紀念日（1572年）" Id="557" Type="0" />
+<SAINT Name="聖文瓦洛埃（布列塔尼地方，530年）" Id="" Type="0" />
+<SAINT Name="聖喀路般（高盧的奧弗涅地方人，576年）" Id="" Type="0" />
+<SAINT Name="殉道司祭德奧多里特（安提約希亞城司祭，361-363年間）" Id="" Type="0" />
+<SAINT Name="聖婦農（威爾士的聖達維德之母，六世紀）聖約安（一名奧克若彼里，格魯吉亞之卡托利科斯【首席主教】，1049年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
