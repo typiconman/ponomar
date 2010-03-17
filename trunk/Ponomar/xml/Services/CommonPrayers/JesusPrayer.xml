@@ -8,4 +8,10 @@
 <LANGUAGE Cmd="LS == 2 || LS == 3">
 <TEXT Value="Господи їи҃се хрсте сн҃е бж҃їй поми́лꙋй мѧ грѣ́шнагѡ"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="主耶稣基督，上帝之子，怜悯我们。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="主耶穌基督，上帝之子，憐憫我們。"/>
+</LANGUAGE>
 </COMMONPRAYER>
