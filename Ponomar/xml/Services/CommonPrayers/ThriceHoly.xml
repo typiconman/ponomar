@@ -8,6 +8,12 @@
 <LANGUAGE Cmd="LS == 2 || LS == 3">
 <TEXT Value="Ст҃ы́й бж҃е, ст҃ы́й крѣ́пкїй, ст҃ы́й безсме́ртный поми́лꙋй на́съ."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="圣哉上帝，圣哉大能者，圣哉永生者，怜悯我们。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="聖哉上帝，聖哉大能者，聖哉永生者，憐憫我們。"/>
+</LANGUAGE>
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Ἅγιος ὁ Θεός, Ἅγιος Ἰσχυρός, Ἅγιος Ἀθάνατος, ἐλέησον ἡμᾶς"/>
 </LANGUAGE>
