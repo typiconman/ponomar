@@ -10,7 +10,7 @@
 <SAINT Name="Martyr Gregorisus" Id="" Type="0" />
 <SAINT Name="Venerable Job, in Schema Joshua, of Anzer (+ 1720)" Id="6649" Type="0" />
 <SAINT Name="Finding of the Precious Cross and the Precious Nails by the Holy Empress Helen in Jerusalem (326)" Id="2494" Type="0" />
-<SAINT Name="Icon of the Mother of God 'Chenstokhov' (1st C)" Id="584" Type="0" />
+<SAINT Name="Icons of the Mother of God: 'Chenstokhov' (1st C), 'Blessed Heaven' (14th C) and 'Shestokovskoy' (18th C)" Id="584" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Sts 42 Martyrs d'Amorium et leurs compagnons" Id="579" Type="1" />
@@ -30,6 +30,26 @@
 <SAINT Name="Прмчч. Конона и сына его Конона (270-275)" Id="582" Type="0"/>
 <SAINT Name="Воспоминание обретения Честного креста и гвоздей св. равноапостольной царицею Еленою во Иерусалиме (326)" Id="2494" Type="0"/>
 <SAINT Name="Прп. Аркадия Кипрского (IV)" Id="583" Type="0"/>
-<SAINT Name="Икон Божией Матери: Ченстоховской (I) &quot;Благодатное Небо&quot; (XIV) и Шестоковской (XVIII)" Id="584" Type="0"/>
+<SAINT Name="Икон Божией Матери: Ченстоховской (I) «Благодатное Небо» (XIV) и Шестоковской (XVIII)" Id="584" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="弗里吉亚的盎默里亚城四十二名殉道者，知其名者有：君士坦丁、埃提、德奥斐洛、德奥多若、麦利塞诺、卡利斯托、瓦索伊斯（约845年）" Id="579" Type="1" />
+<SAINT Name="殉道修士科农及其子科农（伊科尼雍地方，270-275年）" Id="582" Type="0" />
+<SAINT Name="圣阿尔卡迪及他的弟子圣犹利安及圣福利（塞浦路斯地方修士，361年）" Id="583" Type="0" />
+<SAINT Name="敬迁保加利亚的殉道者阿弗拉穆（1229年就义）之圣髑纪念日（1230年）" Id="" Type="0" />
+<SAINT Name="圣弗利多林院长，上莱茵河流域的光照者（538年）" Id="" Type="0" />
+<SAINT Name="圣约弗（受大圣衣后更名为伊酥斯）（索洛福基地方，1720年）" Id="6649" Type="0" />
+<SAINT Name="圣君后艾莱尼寻获十字圣架及圣钉纪念日（326年）" Id="2494" Type="0" />
+<SAINT Name="琴斯托霍瓦圣母像纪念日（1世纪）莫斯科的“蒙福的天堂”圣母像纪念日（14世纪）" Id="584" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="弗里吉亞的盎默里亞城四十二名殉道者，知其名者有：君士坦丁、埃提、德奧斐洛、德奧多若、麥利塞諾、卡利斯托、瓦索伊斯（約845年）" Id="579" Type="1" />
+<SAINT Name="殉道修士科農及其子科農（伊科尼雍地方，270-275年）" Id="582" Type="0" />
+<SAINT Name="聖阿爾卡迪及他的弟子聖猶利安及聖福利（塞浦路斯地方修士，361年）" Id="583" Type="0" />
+<SAINT Name="敬遷保加利亞的殉道者阿弗拉穆（1229年就義）之聖髑紀念日（1230年）" Id="" Type="0" />
+<SAINT Name="聖弗利多林院長，上萊茵河流域的光照者（538年）" Id="" Type="0" />
+<SAINT Name="聖約弗（受大聖衣後更名為伊酥斯）（索洛福基地方，1720年）" Id="6649" Type="0" />
+<SAINT Name="聖君後艾萊尼尋獲十字聖架及聖釘紀念日（326年）" Id="2494" Type="0" />
+<SAINT Name="琴斯托霍瓦聖母像紀念日（一世紀）莫斯科的「蒙福的天堂」聖母像紀念日（十四世紀）" Id="584" Type="0" />
 </LANGUAGE>
 </DAY>
