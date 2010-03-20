@@ -2,8 +2,10 @@
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="On this day we sing the service for the Forty Martyrs" Id="1238" Type="4" Cmd="nday == 26" />
 <SAINT Name="St. Theophylactus the Bishop of Nicomedia (+842-845)" Id="594" Type="1" />
+<SAINT Name="New Hieromartyr Priest John (+1923)" Id="" Type="0"/>
+<SAINT Name="Martyr Vladimir (1942)" Id="" Type="0"/>
 <SAINT Name="Venerable Dometius (+363)" Id="" Type="0" />
-<SAINT Name="Hieromartyr Theodoritus of Antioch (4th C)" Id="597" Type="0" />
+<SAINT Name="Hieromartyr Priest Theodoritus of Antioch (4th C)" Id="597" Type="0" />
 <SAINT Name="Apostle Hermas of the Seventy (1st C)" Id="792" Type="0" />
 <SAINT Name="Venerable Lazarus (+1391) and Athanasius (14th C) of Murom" Id="1326" Type="0" />
 <SAINT Name="St. Felix of Burgundy, Bishop of Dunwich and Enlightener of East Anglia" Id="" Type="0" />
@@ -26,5 +28,29 @@
 <SAINT Name="Прмч. Дометия перса (363)" Id="" Type="0"/>
 <SAINT Name="Прпп. Лазаря (1391) и Афанасия (XV) Мурманских (Муромских), Олонецких." Id="1326" Type="0"/>
 <SAINT Name="Иконы Божией Матери &quot;Знамение&quot; Курской-Коренной (1898)" Id="1487" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣德奥斐拉克特（尼科美底亚主教，845年）" Id="594" Type="1" />
+<SAINT Name="新殉道司祭约安（1923年）" Id="" Type="0"/>
+<SAINT Name="新殉道者弗拉迪弥尔 (1942年）" Id="" Type="0"/>
+<SAINT Name="圣多麦提（修士，363年）" Id="" Type="0" />
+<SAINT Name="殉道司祭德奥多里特（安提约希亚，361年）" Id="597" Type="0" />
+<SAINT Name="使徒艾尔玛斯（七十使徒之一，1世纪）" Id="792" Type="0" />
+<SAINT Name="圣拉匝若及圣阿塔纳西（奥内伽湖上穆尔曼岛的修士，1391年）" Id="1326" Type="0" />
+<SAINT Name="圣斐利克斯（勃艮地人，顿维奇城主教，东英格兰的光照者）" Id="" Type="0" />
+<SAINT Name="殉道者库因提利安及卡帕托利诺（尼科美底亚）" Id="" Type="0" />
+<SAINT Name="圣帕弗罗（普卢西亚的宣信者，840年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖德奧斐拉克特（尼科美底亞主教，845年）" Id="594" Type="1" />
+<SAINT Name="新殉道司祭約安（1923年）" Id="" Type="0"/>
+<SAINT Name="新殉道者弗拉迪彌爾 (1942年）" Id="" Type="0"/>
+<SAINT Name="聖多麥提（修士，363年）" Id="" Type="0" />
+<SAINT Name="殉道司祭德奧多里特（安提約希亞，361年）" Id="597" Type="0" />
+<SAINT Name="使徒艾爾瑪斯（七十使徒之一，一世紀）" Id="792" Type="0" />
+<SAINT Name="聖拉匝若及聖阿塔納西（奧內伽湖上穆爾曼島的修士，1391年）" Id="1326" Type="0" />
+<SAINT Name="聖斐利克斯（勃艮地人，頓維奇城主教，東英格蘭的光照者）" Id="" Type="0" />
+<SAINT Name="殉道者庫因提利安及卡帕托利諾（尼科美底亞）" Id="" Type="0" />
+<SAINT Name="聖帕弗羅（普盧西亞的宣信者，840年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
