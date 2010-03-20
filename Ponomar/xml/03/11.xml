@@ -3,7 +3,7 @@
 <SAINT Name="Holy Hierarch Sophronius the Patriarch of Jerusalem (638-644)" Id="614" Type="1" />
 <SAINT Name="Holy Hierarch Euthymius, Archbishop of Novgorod (+ 1458)" Id="737" Type="3" />
 <SAINT Name="Venerable Patrick the Confessor (+1933)" Id="" Type="0"/>
-<SAINT Name="St Basil the Confessor, presbyter (+1937)" Id="" Type="0"/>
+<SAINT Name="St Basil the new hiero-confessor (+1937)" Id="" Type="0"/>
 <SAINT Name="Hieromartyr Pionius of Smyrna and those with him: Asclepiades, Macedonia, Linus, and Sabina (+250)" Id="619" Type="0" />
 <SAINT Name="Venerable Sophronius, Recluse of the Kiev Caves (13th C)" Id="2045" Type="0" />
 <SAINT Name="Holy Hierarch Sophronius the Bishop of Vratcha, Bulgaria (+ 1813)" Id="" Type="0" />
@@ -35,8 +35,8 @@
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="圣索弗若尼（耶路撒冷牧首，638年）" Id="614" Type="1" />
 <SAINT Name="圣艾弗提弥（诺夫哥罗德城主教，1458年）" Id="737" Type="3" />
-<SAINT Name="圣帕特里克（宣信者，1933年）" Id="" Type="0"/>
-<SAINT Name="圣瓦西里（宣信者，司祭，1937年）" Id="" Type="0"/>
+<SAINT Name="圣帕特里克（新宣信者，1933年）" Id="" Type="0"/>
+<SAINT Name="圣瓦西里（新司祭宣信者，1937年）" Id="" Type="0"/>
 <SAINT Name="殉道司祭彼奥尼及偕同就义者：阿斯克利彼亚迪、利诺；殉道女：玛凯多尼亚、萨维纳（斯密尔纳〖士麦那〗，250年）" Id="619" Type="0" />
 <SAINT Name="圣索弗若尼（基辅洞窟之闭关者，13世纪）" Id="2045" Type="0" />
 <SAINT Name="圣索弗若尼（弗拉察地方人，1815年）" Id="" Type="0" />
