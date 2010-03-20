@@ -21,4 +21,53 @@
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="大齋期第四週瞻禮三" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 1">
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Tropar de la prophétie dans la 1-re Tone&lt;br&gt;(Tropar de la Croix)" Tone="1">
+Sauve ton peuple, Seigneur, et bénis ton héritage, accorde à tes fidèles victoire sur les ennemis et sauvegarde par ta Croix les nations qui t'appartiennent.
+</TROPARION>
+</SEXTE>
+</SERVICE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 2 || LS == 3">
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="тропа́рь прⷪро́чества, гла́съ а҃&lt;br&gt;(Тропа́рь крⷭта)" Tone="1">
+Сп҃сѝ гдⷭи лю́ди твоѧ҄, и҆ бл҃гословѝ достоѧ́нїе твоѐ, побѣ҄ды
+бл҃говѣ́рномꙋ їмпера́торꙋ на́шемꙋ, и҆́мⷬкъ, на сопроти҄вныѧ
+да́рꙋѧ, и҆ твоѐ сохранѧ́ѧ крⷭто́мъ твои́мъ жи́тельство.
+</TROPARION>
+<!-- This is a slightly archaic version of the Troparion as it commemorates the Emperor. -->
+</SEXTE>
+</SERVICE>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone&lt;br&gt;(Troparion of the Cross)" Tone="1">
+O Lord, save Your people and bless Your inheritance; grant victory to the faithful over their adversary, and by the power of your Cross guard your habitation.
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+Blessed is God Who hath not turned away my prayer, nor His mercy from me.
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+Blessed is God Who hath not turned away my prayer, nor His mercy from me.
+</PROKEIMENON>
+<STICHOS Type="1">
+Bless our God, you nations!
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+Let God, our God bless us;
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+let God bless us.
+</PROKEIMENON>
+<STICHOS Type="2">
+God be gracious unto us and bless us, and cause His face to shine upon us and have mercy on us.
+</STICHOS>
+</SEXTE>
+</SERVICE>
+</LANGUAGE>
+
 </DAY>

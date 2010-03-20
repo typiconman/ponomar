@@ -380,26 +380,31 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
                             if (Reading6th.length()>0){
                             //System.out.println(Reading6th);
                             StringOp.dayInfo.put("PFlag3",1);
-                            Data=Data+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" Header=\"1\" What=\"/SEXTE/TROPARION/1\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\" />";
-                            Data1a=Data1a+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/TROPARION/1\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
-                            Data1=Data1+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" Header=\"1\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
-                            Data1=Data1+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"R\"/>";
-                            Data2=Data2+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
-                            Data2=Data2+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"C\"/>";
-                            Data3=Data3+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/STICHOS/1\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
-                            Data4=Data4+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/STICHOS/1\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
-                            Data5=Data5+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
-                            Data6=Data6+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"C\" NewLine=\"1\"/>";
+                            String nday1 = String.valueOf(-nday);
+                            if (-nday<10){
+                                nday1="0"+nday1;
+                            }
+
+                            Data=Data+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" Header=\"1\" What=\"/SEXTE/TROPARION/1\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\" />";
+                            Data1a=Data1a+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/TROPARION/1\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
+                            Data1=Data1+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" Header=\"1\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
+                            Data1=Data1+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"R\"/>";
+                            Data2=Data2+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
+                            Data2=Data2+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"C\"/>";
+                            Data3=Data3+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/STICHOS/1\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
+                            Data4=Data4+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/STICHOS/1\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
+                            Data5=Data5+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
+                            Data6=Data6+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"C\" NewLine=\"1\"/>";
                             Data7=Data7+"\r\n<BIBLE getReading=\""+Reading6th+"\" Who=\"SR\" NewLine=\"1\"/>";
                             Data8=Data8+"\r\n<BIBLE Verses=\""+Reading6th+"\" Who=\"SR\" RedFirst=\"1\" Header=\"1\" NewLine=\"1\" />";
-                            Data9=Data9+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\" Header=\"1\"/>";
-                            Data9=Data9+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"R\" />";
-                            Data10=Data10+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
-                            Data10=Data10+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"C\" />";
-                            Data11=Data11+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/STICHOS/2\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
-                            Data12=Data12+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/STICHOS/2\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
-                            Data13=Data13+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
-                            Data14=Data14+"\r\n<GETID Type=\"T\" Id=\""+-nday+"\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"C\" NewLine=\"1\"/>";
+                            Data9=Data9+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\" Header=\"1\"/>";
+                            Data9=Data9+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"R\" />";
+                            Data10=Data10+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
+                            Data10=Data10+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"C\" />";
+                            Data11=Data11+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/STICHOS/2\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
+                            Data12=Data12+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/STICHOS/2\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
+                            Data13=Data13+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
+                            Data14=Data14+"\r\n<GETID Type=\"T\" Id=\""+nday1+"\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"C\" NewLine=\"1\"/>";
                             
                             }
                         }

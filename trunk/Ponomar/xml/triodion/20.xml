@@ -22,4 +22,33 @@
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="大齋期第五週瞻禮二" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+
+<LANGUAGE Cmd="LS == 0">
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 3rd Tone" Tone="3">
+For our iniquities are risen against us, arise, O Lord, help us: for Thou art our Father, for we know none other beside Thee.
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+Even Thine altars, O Lord of hosts
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+ my King and my God.
+</PROKEIMENON>
+<STICHOS Type="1">
+How beloved are Thy dwellings, O Lord of hosts.
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 8th Tone" Tone="8">
+Show us, O Lord, Thy mercy
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+ and Thy salvation do Thou give unto us.
+</PROKEIMENON>
+<STICHOS Type="2">
+Thou hast been gracious, O Lord, unto Thy land; Thou hast turned back the captivity of Jacob.
+</STICHOS>
+</SEXTE>
+</SERVICE>
+</LANGUAGE>
+
 </DAY>

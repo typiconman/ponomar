@@ -21,4 +21,33 @@
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="大齋期第二週瞻禮三" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+
+<LANGUAGE Cmd="LS == 0">
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 6th Tone" Tone="6">
+We cannot hymn Thee as is meet, but we ask as we pray: destroy us not with our iniquities, O Lord Who art ready to do good things.
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+O Lord, I have loved the beauty of Thy house
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+ and the place where Thy glory dwelleth.
+</PROKEIMENON>
+<STICHOS Type="1">
+Judge me, O Lord, for in mine innocence have I walked.
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 3rd Tone" Tone="3">
+The Lord is my light and my savior;
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+whom then shall I fear?
+</PROKEIMENON>
+<STICHOS Type="2">
+The Lord is the defender of my life; of whom then shall I be afraid?
+</STICHOS>
+</SEXTE>
+</SERVICE>
+</LANGUAGE>
+
 </DAY>

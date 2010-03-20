@@ -268,7 +268,10 @@ NB: To do finish the regular season and the layout of the First Hour; all the sp
 <PERIOD>
 	<!-- This is for special cases that occur throughout the year that will coded separately. -->
 	<LANGUAGE>
-										
+		<SEXTE Type="Lenten" Cmd="nday == -51 || nday == -53"/>
+		<PRIME Type="Lenten" Kontakion="WFL" PickK="-1" Cmd="nday == -51 || nday == -53"/>
+		<TERCE Type="Lenten" Cmd="nday == -51 || nday == -53"/>
+		<NONE Type="Lenten" Cmd="nday == -51 || nday == -53"/>										
 	</LANGUAGE>
 </PERIOD>
 </DATA>

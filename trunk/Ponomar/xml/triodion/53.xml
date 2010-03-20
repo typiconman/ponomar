@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE>
 <PRIMES Type="Normal" />
 <SCRIPTURE Type="6th hour" Reading="Joel_2:12-26" />
@@ -20,5 +20,32 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="乳酪週瞻禮四" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 3rd Tone" Tone="3">
+King, Holy, and Almighty, Before you all creation stands in fear and trembling. Save us and forgive our sins, in Your great mercy
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+O Lord, save your people
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+and bless Your inheritance
+</PROKEIMENON>
+<STICHOS Type="1">
+To You, Lord will I call; my God, be not silent to me
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 7th Tone" Tone="7">
+The Lord will give strength to his people! *
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+The Lord will bless his people with peace.
+</PROKEIMENON>
+<STICHOS Type="2">
+Gve ot the Lord, sons of God, give ot he Lord glory and praise!
+</STICHOS>
+</SEXTE>
+</SERVICE>
 </LANGUAGE>
 </DAY>

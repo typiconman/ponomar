@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Venerable Martyr Eudokia of Heliopolis (+160-170)" Id="2466" Type="1" />
 <SAINT Name="Venerable Martyr Olga (+1937)" Id="" Type="0"/>
@@ -47,7 +47,7 @@
 <SAINT Name="圣阿尔维诺（安格尔斯城主教，550年）" Id="" Type="0" />
 <SAINT Name="圣阿伽彼及他的四位同修（阿托斯圣山瓦托佩迪修道院的科利楚精舍修士）" Id="" Type="0" />
 <SAINT Name="圣玛尔提里（则勒涅兹的提赫文修道院院长，1603年）" Id="1494" Type="0"/>
-<SAINT Name="新殉道女安托尼纳（基兹利亚尔修女院院长，1924年）
+<SAINT Name="新殉道女安托尼纳（基兹利亚尔修女院院长，1924年）" Id="" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="殉道女艾弗多基雅（伊利奧頗利城，152年）" Id="2466" Type="1"/>
@@ -61,6 +61,6 @@
 <SAINT Name="聖阿爾維諾（安格爾斯城主教，550年）" Id="" Type="0" />
 <SAINT Name="聖阿伽彼及他的四位同修（阿托斯聖山瓦托佩迪修道院的科利楚精舍修士）" Id="" Type="0" />
 <SAINT Name="聖瑪爾提里（則勒涅茲的提赫文修道院院長，1603年）" Id="1494" Type="0"/>
-<SAINT Name="新殉道女安托尼納（基茲利亞爾修女院院長，1924年）
+<SAINT Name="新殉道女安托尼納（基茲利亞爾修女院院長，1924年）" Id="" Type="0"/>
 </LANGUAGE>
 </DAY>
