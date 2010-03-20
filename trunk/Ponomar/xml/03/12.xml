@@ -1,11 +1,14 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Venerable Theophanes the Confessor of Sigriane (+ 818)" Id="621" Type="1" />
-<SAINT Name="Holy Hierarch Gregory Dialogus, the Pope of Rome (+ 604)" Id="536" Type="0" />
-<SAINT Name="Venerable Simeon the New Theologian (+ 1022)" Id="626" Type="0" />
-<SAINT Name="Venerable Abacyrus and Cyrus" Id="" Type="0" />
+<SAINT Name="St Alexander the new hiero-confessor (+1933)" Id="" Type="0"/>
+<SAINT Name="New Hieromartyrs Priests John, Constantine, Venerable Martyr Vladimir (+1938)" Id="" Type="0"/>
+<SAINT Name="New Hieromartyr Priest Sergius (+1943)" Id="" Type="0"/>
 <SAINT Name="Righteous Phineas the grandson of Aaron (C 1500 BC)" Id="623" Type="0" />
-<SAINT Name="Icon 'Not Made by Hands' from Lydda (1st C) and 'of Rome'" Id="629" Type="0" />
+<SAINT Name="Holy Hierarch Gregory Dialogus, the Pope of Rome (+ 604)" Id="536" Type="0" />
+<SAINT Name="Venerable Simeon the New Theologian (+ 1021)" Id="626" Type="0" />
+<SAINT Name="Icon 'Not Made by Hands' of the Mother of God from Lydda (1st C) and 'of Rome'" Id="629" Type="0" />
+<SAINT Name="Venerable Abacyrus and Cyrus" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Théophane le Confesseur, Higoumène du Monastère du Grand-Champ au Mont Sigriane" Id="621" Type="1" />
@@ -24,5 +27,37 @@
 <SAINT Name="Свт. Григория Двоеслова, папы Римского (604)" Id="536" Type="0"/>
 <SAINT Name="Прп. Симеона Нового Богослова (1021)" Id="626" Type="0"/>
 <SAINT Name="Лиддской-нерукотворной (на столпе), иконы Божией Матери (I)" Id="629" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣德奥梵 （西格里阿尼地方的宣信者，818年）" Id="621" Type="1" />
+<SAINT Name="圣亚历山大（新司祭宣信者，1933年）" Id="" Type="0"/>
+<SAINT Name="新殉道司祭：约安、君士坦丁、殉道修士弗拉迪弥尔（1938年）" Id="" Type="0"/>
+<SAINT Name="新殉道司祭塞尔吉（1943年）" Id="" Type="0"/>
+<SAINT Name="义人阿阿隆（大司祭，先知及见神者摩伊息斯的弟兄，主降生前1500年）" Id="623" Type="0" />
+<SAINT Name="圣格里高利（《对话录》作者，罗马教宗，604年）" Id="536" Type="0" />
+<SAINT Name="圣西麦翁新神学家（1022年）及其长老，圣西麦翁，斯督迪修道院的可敬者（987年）" Id="626" Type="0" />
+<SAINT Name="利达地方的天成圣母像纪念日（一世纪）" Id="629" Type="0" />
+<SAINT Name="圣基若（亚历山大里亚的修士，六世纪）" Id="" Type="0" />
+<SAINT Name="圣帕弗罗（布列塔尼的雷翁地方主教，572年）" Id="" Type="0" />
+<SAINT Name="圣尼科德默（卡拉布里亚的曼莫拉地方，990年）" Id="" Type="0" />
+<SAINT Name="殉道者迪弥特里（被称为勇者，格鲁吉亚国王，1289年）" Id="" Type="0" />
+<SAINT Name="圣德奥克提斯特（本姓德拉古庭，塞尔维亚人，1361年）" Id="" Type="0" />
+<SAINT Name="圣阿尔斐吉（温彻斯特主教，英格兰人，951年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖德奧梵 （西格里阿尼地方的宣信者，818年）" Id="621" Type="1" />
+<SAINT Name="聖亞歷山大（新司祭宣信者，1933年）" Id="" Type="0"/>
+<SAINT Name="新殉道司祭：約安、君士坦丁、殉道修士弗拉迪彌爾（1938年）" Id="" Type="0"/>
+<SAINT Name="新殉道司祭塞爾吉（1943年）" Id="" Type="0"/>
+<SAINT Name="義人阿阿隆（大司祭，先知及見神者摩伊息斯的弟兄，主降生前1500年）" Id="623" Type="0" />
+<SAINT Name="聖格里高利（《對話錄》作者，羅馬教宗，604年）" Id="536" Type="0" />
+<SAINT Name="聖西麥翁新神學家（1022年）及其長老，聖西麥翁，斯督迪修道院的可敬者（987年）" Id="626" Type="0" />
+<SAINT Name="利達地方的天成聖母像紀念日（一世紀）" Id="629" Type="0" />
+<SAINT Name="聖基若（亞歷山大里亞的修士，六世紀）" Id="" Type="0" />
+<SAINT Name="聖帕弗羅（布列塔尼的雷翁地方主教，572年）" Id="" Type="0" />
+<SAINT Name="聖尼科德默（卡拉布里亞的曼莫拉地方，990年）" Id="" Type="0" />
+<SAINT Name="殉道者迪彌特里（被稱為勇者，格魯吉亞國王，1289年）" Id="" Type="0" />
+<SAINT Name="聖德奧克提斯特（本姓德拉古庭，塞爾維亞人，1361年）" Id="" Type="0" />
+<SAINT Name="聖阿爾斐吉（溫徹斯特主教，英格蘭人，951年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
