@@ -21,4 +21,33 @@
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="大齋期第二週預備日" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
 </LANGUAGE>
+
+<LANGUAGE Cmd="LS == 0">
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
+By night and by day we fall down before Thee, O Lord, imploring Thee to grant unto our souls remission of sins, that in peace we may worship and glorify Thee, O Lover of mankind.
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+O Lord, rebuke me not in Thine anger
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+ nor chasten me in Thy wrath.
+</PROKEIMENON>
+<STICHOS Type="1">
+For Thine arrows are fastened in me.
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+Hearken unto my prayer, O Lord
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+ and unto my supplication give ear.
+</PROKEIMENON>
+<STICHOS Type="2">
+I said: I will take heed to my ways lest I sin with my tongue.
+</STICHOS>
+</SEXTE>
+</SERVICE>
+</LANGUAGE>
+
 </DAY>

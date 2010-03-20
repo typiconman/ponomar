@@ -53,8 +53,8 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 
 <!-- Sixth Hour with a Reading from the Old Testament -->
 <GET File="Var/TP6R" Cmd="PFlag3 == 1"/>
-<GET File="Var/TP6C" Cmd="PFlag3 == 1"/> 
 <CREATE What="GloryToTheFather1" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag3 == 1"/>
+<GET File="Var/TP6C" Cmd="PFlag3 == 1"/> 
 <GET File="Var/PROK61R" Cmd="PFlag3 == 1"/>
 <GET File="Var/PROK61C" Cmd="PFlag3 == 1"/>
 <GET File="Var/STYX61R" Cmd="PFlag3 == 1"/>
@@ -86,10 +86,10 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="Amen" Who="R" NewLine="1" RedFirst="1"/>
 
 <!-- During Lent, there are 2 fixed kontaks and 1 variable -->
-<CREATE What="LentenKontak61" Who="SR" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag2 != 0 || PFlag2 != 3"/>
-<CREATE What="GloryToTheFather2" Who="R" RedFirst="1" NewLine="1" Cmd="PFlag2 != 0 || PFlag2 != 3"/>
-<CREATE What="LentenKontak62" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag2 != 0 || PFlag2 != 3"/>
-<CREATE What="BothNow" Who="R" RedFirst="1" NewLine="1" Cmd="PFlag2 != 0 || PFlag2 != 3"/>
+<CREATE What="LentenKontak61" Who="SR" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag2 != 0 &amp;&amp; PFlag2 != 3"/>
+<CREATE What="GloryToTheFather2" Who="R" RedFirst="1" NewLine="1" Cmd="PFlag2 != 0 &amp;&amp; PFlag2 != 3"/>
+<CREATE What="LentenKontak62" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag2 != 0 &amp;&amp; PFlag2 != 3"/>
+<CREATE What="BothNow" Who="R" RedFirst="1" NewLine="1" Cmd="PFlag2 != 0 &amp;&amp; PFlag2 != 3"/>
 <GET File="Var/PKont6"/>
 
 <CREATE What="LordHaveMercy" Who="R" RedFirst="1" NewLine="1" Times="40"/>
