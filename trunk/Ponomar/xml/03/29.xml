@@ -1,6 +1,7 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Hieromartyr Mark the Bishop of Arethusa, Martyr Cyril the Deacon of Heliopolis, and others who suffered under Julian the Apostate (+ c.363)" Id="729" Type="1" />
+<SAINT Name="St. Michael the new hiero-confessor (+1933)" Id="" Type="0"/>
 <SAINT Name="Venerable John the Anchorite of Egypt (4th C)" Id="730" Type="0" />
 <SAINT Name="St. Eustathius (Eustace) the Confessor the Bishop of Bithynia (9th C)" Id="731" Type="0" />
 <SAINT Name="Venerable Mark and Jonah of the Pskov Caves (15th C)" Id="732" Type="0" />
@@ -20,5 +21,27 @@
 <SAINT Name="Прп. Иоанна пустынника (IV)" Id="730" Type="0"/>
 <SAINT Name="Свт. Евстафия исп., еп. Вифинийского (IX)" Id="731" Type="0"/>
 <SAINT Name="Прпп. Марка (XV), Ионы (1480), Псково-Печерских" Id="732" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道者玛尔克（阿瑞图萨主教，364年）、殉道者基里尔（伊利奥颇利城辅祭、及其他一同就义者，于叛教者犹利安在位时）" Id="729" Type="1" />
+<SAINT Name="圣弥哈伊尔（新司祭宣信者，1933年）" Id="" Type="0"/>
+<SAINT Name="圣约安（埃及之退隐者，四世纪）" Id="730" Type="0" />
+<SAINT Name="圣艾弗斯塔提（宣信者，维提尼亚的基奥斯主教，9世纪）" Id="731" Type="0" />
+<SAINT Name="圣约纳及圣玛尔克（普斯科夫洞窟修士，1480年）" Id="732" Type="0" />
+<SAINT Name="新殉道者帕弗罗司祭（姓佛伊纳尔斯基）、及帕弗罗和阿莱克西两兄弟（姓基尔杨，均就义于克里米亚，1919年）" Id="" Type="0" />
+<SAINT Name="圣约安（埃及之退隐者，四世纪）" Id="" Type="0" />
+<SAINT Name="圣艾弗斯塔西（鲁克塞维尔地方修道院院长，7世纪）" Id="" Type="0" />
+<SAINT Name="圣迪亚多霍（伊庇鲁斯的佛提基地方主教，486年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道者瑪爾克（阿瑞圖薩主教，364年）、殉道者基里爾（伊利奧頗利城輔祭、及其他一同就義者，於叛教者猶利安在位時）" Id="729" Type="1" />
+<SAINT Name="聖彌哈伊爾（新司祭宣信者，1933年）" Id="" Type="0"/>
+<SAINT Name="聖約安（埃及之退隱者，四世紀）" Id="730" Type="0" />
+<SAINT Name="聖艾弗斯塔提（宣信者，維提尼亞的基奧斯主教，九世紀）" Id="731" Type="0" />
+<SAINT Name="聖約納及聖瑪爾克（普斯科夫洞窟修士，1480年）" Id="732" Type="0" />
+<SAINT Name="新殉道者帕弗羅司祭（姓佛伊納爾斯基）、及帕弗羅和阿萊克西兩兄弟（姓基爾楊，均就義於克里米亞，1919年）" Id="" Type="0" />
+<SAINT Name="聖約安（埃及之退隱者，四世紀）" Id="" Type="0" />
+<SAINT Name="聖艾弗斯塔西（魯克塞維爾地方修道院院長，七世紀）" Id="" Type="0" />
+<SAINT Name="聖迪亞多霍（伊庇魯斯的佛提基地方主教，486年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
