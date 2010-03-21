@@ -1,11 +1,12 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Venerable Alexis the Man of God (+ 411)" Id="134" Type="1" />
-<SAINT Name="Venerable Macarius of Kaliazin" Id="1404" Type="3" />
-<SAINT Name="Venerable Paul of Cyprus" Id="" Type="0" />
+<SAINT Name="Venerable Macarius, Abbot of Kaliazin, wonderworker (+ 1483)" Id="1404" Type="3" />
+<SAINT Name="New Hieromartyr Priest Alexander (+ 1919)" Id="" Type="0"/>
+<SAINT Name="New Hieromartyr Priest Victor  (+ 1942)" Id="" Type="0"/>
 <SAINT Name="Martyr Marinus" Id="663" Type="0" />
+<SAINT Name="Venerable Paul of Cyprus" Id="" Type="0" />
 <SAINT Name="St. Patrick, Bishop of Armagh and Enlightener of Ireland (+ 461)" Id="" Type="0" />
-<SAINT Name="Venerable Parthenius of Kiev" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Alexis l'Homme de Dieu" Id="134" Type="1" />
@@ -21,5 +22,35 @@
 <SAINT Name="Сщмч. Александра пресвитера (1919)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Виктора пресвитера (1942)" Id="" Type="0"/>
 <SAINT Name="Мч. Марина" Id="663" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣阿莱克西属上帝之人（罗马，411年）" Id="134" Type="1" />
+<SAINT Name="圣玛喀里（卡利雅金地方修道院院长，1483年）" Id="1404" Type="3" />
+<SAINT Name="新殉道司祭亚历山大（1919年）" Id="" Type="0"/>
+<SAINT Name="新殉道司祭维克托（1942年）" Id="" Type="0"/>
+<SAINT Name="殉道者玛利诺（士兵，巴勒斯坦的凯撒利亚，260年）" Id="663" Type="0" />
+<SAINT Name="殉道修士帕弗罗（克里特，767年）" Id="" Type="0" />
+<SAINT Name="圣帕特里克（爱尔兰的光照者，451年）" Id="" Type="0" />
+<SAINT Name="圣安弗若西（辅祭，亚历山大里亚的盲者圣狄迪默的弟子，400年）" Id="" Type="0" />
+<SAINT Name="圣贝坎（鲁翁地方，677年）" Id="" Type="0" />
+<SAINT Name="圣女格尔特鲁德（荷兰的尼杰维尔地方修女院院长，659年）" Id="" Type="0" />
+<SAINT Name="圣女维特布尔伽（霍尔克汉及东德瑞汉的独修者，743年）" Id="" Type="0" />
+<SAINT Name="圣德奥斯提里克特（宣信者，普鲁萨附近的佩雷克特修道院院长，826年）" Id="" Type="0" />
+<SAINT Name="殉道司祭伽弗里伊尔（被称为“幼者”，格鲁吉亚的伽热斯贾地方，1802年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖阿萊克西屬上帝之人（羅馬，411年）" Id="134" Type="1" />
+<SAINT Name="聖瑪喀里（卡利雅金地方修道院院長，1483年）" Id="1404" Type="3" />
+<SAINT Name="新殉道司祭亞歷山大（1919年）" Id="" Type="0"/>
+<SAINT Name="新殉道司祭維克托（1942年）" Id="" Type="0"/>
+<SAINT Name="殉道者瑪利諾（士兵，巴勒斯坦的凱撒利亞，260年）" Id="663" Type="0" />
+<SAINT Name="殉道修士帕弗羅（克里特，767年）" Id="" Type="0" />
+<SAINT Name="聖帕特里克（愛爾蘭的光照者，451年）" Id="" Type="0" />
+<SAINT Name="聖安弗若西（輔祭，亞歷山大里亞的盲者聖狄迪默的弟子，400年）" Id="" Type="0" />
+<SAINT Name="聖貝坎（魯翁地方，677年）" Id="" Type="0" />
+<SAINT Name="聖女格爾特魯德（荷蘭的尼傑維爾地方修女院院長，659年）" Id="" Type="0" />
+<SAINT Name="聖女維特布爾伽（霍爾克漢及東德瑞漢的獨修者，743年）" Id="" Type="0" />
+<SAINT Name="聖德奧斯提里克特（宣信者，普魯薩附近的佩雷克特修道院院長，826年）" Id="" Type="0" />
+<SAINT Name="殉道司祭伽弗里伊爾（被稱為「幼者」，格魯吉亞的伽熱斯賈地方，1802年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>

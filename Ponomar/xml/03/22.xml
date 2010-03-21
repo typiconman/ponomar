@@ -1,9 +1,10 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Hieromartyr Basil of Ancyra (+363)" Id="689" Type="1" />
-<SAINT Name="Venerable Isaac the Founder of the Dalmatian Monastery at Constantinople (4th C)" Id="1101" Type="0" />
 <SAINT Name="Martyr Drosis the Daughter of the Emperor Trajan (104-117)" Id="690" Type="0" />
-<SAINT Name="Martyrs Callinica and Basilissa of Rome;Venerable Martyr Euthymius of Constantinople" Id="" Type="0" />
+<SAINT Name="Venerable Isaac the Founder of the Dalmatian Monastery at Constantinople (4th C)" Id="1101" Type="0" />
+<SAINT Name="Martyrs Callinica and Basilissa of Rome" Id="" Type="0" />
+<SAINT Name="Venerable Martyr Euthymius of Constantinople" Id="" Type="0" />
 <SAINT Name="Monkmartyr Euthymius of Prodromou on Mt Athos (+1814)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
@@ -19,5 +20,25 @@
 <SAINT Name="Сщмч. Василия, пресвитера Анкирского (363)" Id="689" Type="1"/>
 <SAINT Name="Мц. Дросиды, дщери царя Траяна, и с нею дев Аглаиды, Аполлинарии, Дарии, Мамфусы, Таисии (ок. 104-117)" Id="690" Type="0"/>
 <SAINT Name="Прп. Исаакия Далматского (IV)" Id="1101" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道司祭瓦西里（安基拉城，362年）" Id="689" Type="1" />
+<SAINT Name="殉道女德若息斯及偕同就义者五位童贞女（安提约希亚城，104年）" Id="690" Type="0" />
+<SAINT Name="圣伊萨克（君士坦丁堡的达尔马提亚修道院创建者，383年）" Id="1101" Type="0" />
+<SAINT Name="殉道女卡利尼喀及瓦西利萨（罗马，2世纪）" Id="" Type="0" />
+<SAINT Name="殉道者艾弗提弥（君士坦丁的可敬者）" Id="" Type="0" />
+<SAINT Name="新殉道者艾弗提弥（阿托斯圣山，1814年）" Id="" Type="0" />
+<SAINT Name="新殉道修女索斐亚（大圣衣修女院院长，基辅，1941年）" Id="" Type="0" />
+<SAINT Name="圣帕弗罗（布列塔尼德的纳巴达城主教，3世纪）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道司祭瓦西里（安基拉城，362年）" Id="689" Type="1" />
+<SAINT Name="殉道女德若息斯及偕同就義者五位童貞女（安提約希亞城，104年）" Id="690" Type="0" />
+<SAINT Name="聖伊薩克（君士坦丁堡的達爾馬提亞修道院創建者，383年）" Id="1101" Type="0" />
+<SAINT Name="殉道女卡利尼喀及瓦西利薩（羅馬，二世紀）" Id="" Type="0" />
+<SAINT Name="殉道者艾弗提彌（君士坦丁的可敬者）" Id="" Type="0" />
+<SAINT Name="新殉道者艾弗提彌（阿托斯聖山，1814年）" Id="" Type="0" />
+<SAINT Name="新殉道修女索斐亞（大聖衣修女院院長，基輔，1941年）" Id="" Type="0" />
+<SAINT Name="聖帕弗羅（布列塔尼德的納巴達城主教，三世紀）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
