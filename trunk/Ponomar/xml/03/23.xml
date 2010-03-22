@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Martyr Nikon in Sicily and his 199 Disciples (+251)" Id="694" Type="1" />
 <SAINT Name="New Hieromartyr Priest Macarius (+1931)" Id="" Type="0"/>
@@ -41,7 +41,7 @@
 <SAINT Name="圣帕霍弥（奈瑞赫塔地方修道院院长，1384年）" Id="" Type="0" />
 <SAINT Name="圣瓦西安（罗斯托夫总主教，1481年）" Id="" Type="0" />
 </LANGUAGE>
-<LANGUAGE Cmd="LS == 5">
+<LANGUAGE Cmd="LS == 6">
 <SAINT Name="殉道修士尼康及協同就義者其199位弟子（西西里，251年）" Id="694" Type="1" />
 <SAINT Name="新殉道司祭瑪喀里（1931年）" Id="" Type="0"/>
 <SAINT Name="新殉道司祭瓦西里、斯特梵、殉道修士伊利亞、殉道修女阿納斯塔西亞、瓦爾瓦拉、殉道者阿萊克西 （1938年）" Id="" Type="0"/>
