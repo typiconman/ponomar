@@ -2,15 +2,15 @@
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Venerable Mary of Egypt (+522)" Id="2539" Type="1" />
 <SAINT Name="Venerable Euthymius Archimandrite of Suzdal, the Wonderworker (+1404)" Id="743" Type="3" />
-<SAINT Name="Venerable Macarius the Abbot of Pelecete (+ c.830)" Id="759" Type="0" />
-<SAINT Name="Martyrs Gerontius and Basilides (3rd C)" Id="758" Type="0" />
-<SAINT Name="Holy Martyr Abraham the Bulgar, Wonderworker of Vladimir (+1229)" Id="32" Type="0" />
-<SAINT Name="Prophet Akhaz" Id="" Type="0" />
-<SAINT Name="Venerable Procopius of Sasaba" Id="" Type="0" />
-<SAINT Name="Venerable Gerontius the Canonarch of the Kiev Far Caves (14th C)" Id="757" Type="0" />
-<SAINT Name="Holy Schema-bishop Macarius, the Confessor (+1944)" Id="" Type="0" />
 <SAINT Name="Venerable Barsonophius of Optina (+1913)" Id="4634" Type="0" />
 <SAINT Name="New Hieromartyr Priest Sergey (+1938);" Id="" Type="0" />
+<SAINT Name="Martyrs Gerontius and Basilides (3rd C)" Id="758" Type="0" />
+<SAINT Name="Venerable Macarius the Abbot of Pelecete (+ c.830)" Id="759" Type="0" />
+<SAINT Name="Holy Martyr Abraham the Bulgar, Wonderworker of Vladimir (+1229)" Id="32" Type="0" />
+<SAINT Name="Venerable Gerontius the Canonarch of the Kiev Far Caves (14th C)" Id="757" Type="0" />
+<SAINT Name="Prophet Akhaz" Id="" Type="0" />
+<SAINT Name="Venerable Procopius of Sasaba" Id="" Type="0" />
+<SAINT Name="Holy Schema-bishop Macarius, the Confessor (+1944)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Ste Marie l'Egyptienne" Id="2539" Type="1" />
@@ -34,4 +34,35 @@
 <SAINT Name="Прп. Геронтия, канонарха Печерского (XIV)" Id="757" Type="0"/>
 <SAINT Name="Прав. Ахаза" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="埃及的圣女玛利亚（530年）" Id="2539" Type="1" />
+<SAINT Name="圣艾弗提弥（苏兹达尔地方修士，1404年）" Id="743" Type="3" />
+<SAINT Name="圣瓦尔萨努斐（奥普提那修道院，1913年）" Id="4634" Type="0" />
+<SAINT Name="新殉道司祭塞尔吉（1938年）" Id="" Type="0" />
+<SAINT Name="殉道者格隆提及瓦西利迪（3世纪）" Id="758" Type="0" />
+<SAINT Name="圣玛喀里（佩雷克特修道院院长，840年）" Id="759" Type="0" />
+<SAINT Name="殉道者阿弗拉穆（保加利亚，1229年）" Id="32" Type="0" />
+<SAINT Name="圣格隆提（幼者，基辅洞窟修道院之领唱师，14世纪）" Id="757" Type="0" />
+<SAINT Name="义人阿哈次" Id="" Type="0" />
+<SAINT Name="圣普若科彼（萨匝瓦修道院院长，1053年）" Id="" Type="0" />
+<SAINT Name="新殉道司教玛喀里（大圣衣修士及主教，罗马尼亚雷兹纳附近的圣玛喀里修道院，1944年）" Id="" Type="0" />
+<SAINT Name="圣麦利顿（萨尔迪斯主教，177年）" Id="" Type="0" />
+<SAINT Name="圣约安（莎弗塔和瓦尔德兹亚地方）和先知及圣愚艾弗罗吉（均为格鲁吉亚人，12-13世纪）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="埃及的聖女瑪利亞（530年）" Id="2539" Type="1" />
+<SAINT Name="聖艾弗提彌（蘇茲達爾地方修士，1404年）" Id="743" Type="3" />
+<SAINT Name="聖瓦爾薩努斐（奧普提那修道院，1913年）" Id="4634" Type="0" />
+<SAINT Name="新殉道司祭塞爾吉（1938年）" Id="" Type="0" />
+<SAINT Name="殉道者格隆提及瓦西利迪（三世紀）" Id="758" Type="0" />
+<SAINT Name="聖瑪喀里（佩雷克特修道院院長，840年）" Id="759" Type="0" />
+<SAINT Name="殉道者阿弗拉穆（保加利亞，1229年）" Id="32" Type="0" />
+<SAINT Name="聖格隆提（幼者，基輔洞窟修道院之領唱師，十四世紀）" Id="757" Type="0" />
+<SAINT Name="義人阿哈次" Id="" Type="0" />
+<SAINT Name="聖普若科彼（薩匝瓦修道院院長，1053年）" Id="" Type="0" />
+<SAINT Name="新殉道司教瑪喀里（大聖衣修士及主教，羅馬尼亞雷茲納附近的聖瑪喀里修道院，1944年）" Id="" Type="0" />
+<SAINT Name="聖麥利頓（薩爾迪斯主教，177年）" Id="" Type="0" />
+<SAINT Name="聖約安（莎弗塔和瓦爾德茲亞地方）和先知及聖愚艾弗羅吉（均為格魯吉亞人，十二至十三世紀）" Id="" Type="0" />
+</LANGUAGE>
+
 </DAY>
