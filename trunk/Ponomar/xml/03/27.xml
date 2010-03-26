@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Martyr Matrona of Thessalonica (3rd-4th C)" Id="716" Type="1" />
 <SAINT Name="Martyrs Manuel and Theodosius (+304)" Id="717" Type="0" />
@@ -36,7 +36,7 @@
 <SAINT Name="圣安托尼（托博尔斯科都主教，1740年）" Id="" Type="0" />
 <SAINT Name="阿托斯圣山“甘饴之吻”圣母像及“弗坐词”圣母像纪念日。" Id="" Type="0" />
 </LANGUAGE>
-<LANGUAGE Cmd="LS == 5">
+<LANGUAGE Cmd="LS == 6">
 <SAINT Name="殉道女瑪特若納（德撒洛尼基，四世紀）" Id="716" Type="1" />
 <SAINT Name="殉道者埃瑪努伊爾及德奧多西（304年）" Id="717" Type="0" />
 <SAINT Name="聖約安（具天眼通者，利科頗利城人，埃及之退隱者，394年）" Id="718" Type="0" />

@@ -5,7 +5,7 @@
 <SCRIPTURE Type="vespers" Reading="Gen_28:10-17" Cmd="nday &gt; 0" Note="for the Feast"/>
 <SCRIPTURE Type="vespers" Reading="Ezek_43:27-44:4" Cmd="nday &gt; 0" Note="for the Feast"/>
 <SCRIPTURE Type="vespers" Reading="Prov_9:1-11" Cmd="nday &gt; 0" Note="for the Feast"/>
-<SCRIPTURE Type="matins" Reading="Lk_1:39:49, 56" Pericope="4" Note="for the Feast"/>
+<SCRIPTURE Type="matins" Reading="Lk_1:39-49, 56" Pericope="4" Note="for the Feast"/>
 <SCRIPTURE Type="apostol" Reading="Heb_2:11-18" Pericope="306" Note="for the Feast"/>
 <SCRIPTURE Type="gospel" Reading="Lk_1:24-38" Pericope="3" Note="for the Feast"/>
 </LANGUAGE>
