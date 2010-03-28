@@ -1,11 +1,14 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Apostles of the Seventy Herodion (Rodion), Agabus, Asyncritus, Rufus, Phlegon and Hermes (1st C)" Id="811" Type="1" />
-<SAINT Name="Holy Hierarch Niphon, Bishop of Novgorod (+1156)" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Celestine, Pope of Rome (+432)" Id="812" Type="0" />
+<SAINT Name="New Hieromartyr Priest Sergius (+1933)" Id="4766" Type="0"/>
 <SAINT Name="Martyr Pausilippus of Heraclea in Thrace (+ c.117-138)" Id="815" Type="0" />
-<SAINT Name="New Martyr John" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Celestine, Pope of Rome (+432)" Id="812" Type="0" />
+<SAINT Name="Holy Hierarch Niphon, Bishop of Novgorod (+1156)" Id="" Type="0" />
 <SAINT Name="Venerable Rufus the Obedient of the Caves of Kiev (14th C)" Id="1888" Type="0" />
+<SAINT Name="600 Venerable Fathers martyred in the hermitage of David-Gareji, Georgia (17th C)" Id="772" Type="0"/>
+<SAINT Name="Shuyskoy icon of the Mother of God &quot;Odigitriya&quot;" Id="2935" Type="0"/>
+<SAINT Name="New Martyr John" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Sts Apôtres des 70 Herodion, Agabos, Rufus, Phlegon et Asyncrite" Id="811" Type="1" />
@@ -23,5 +26,29 @@
 <SAINT Name="Прп. Руфа, затворника Печерского (XIV)" Id="1888" Type="0"/>
 <SAINT Name="Преподобномучеников 600  отцев Давидо-Гареджийских (XVII)" Id="772" Type="0"/>
 <SAINT Name="Шуйской  иконы Божией Матери &quot;Одигитрия&quot;" Id="2935" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="七十使徒之：艾若狄翁、阿伽博、阿辛克里特、路弗、弗莱艮、艾尔弥斯、及他们之同道" Id="811" Type="1" />
+<SAINT Name="新殉道司祭塞尔吉（1933年）" Id="4766" Type="0"/>
+<SAINT Name="殉道者帕弗西利普（色雷斯的伊拉克利亚，117-138年间）" Id="815" Type="0" />
+<SAINT Name="圣凯乐斯廷（罗马教宗，432年）" Id="812" Type="0" />
+<SAINT Name="圣尼丰特（诺夫哥罗德主教，1156年）" Id="" Type="0" />
+<SAINT Name="圣路弗（听命者，基辅洞窟修道院，14世纪）" Id="1888" Type="0" />
+<SAINT Name="舒亚 之“示道”圣母像纪念日" Id="2935" Type="0"/>
+<SAINT Name="殉道修士约西亚及约熙福（波斯，卡拉萨穆山，341年）" Id="" Type="0" />
+<SAINT Name="新殉道者约安（库利卡，1564年）" Id="" Type="0" />
+<SAINT Name="新殉道者约安·纳弗克利若（塞萨利的海员，1699年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="七十使徒之：艾若狄翁、阿伽博、阿辛克里特、路弗、弗萊艮、艾爾彌斯、及他們之同道" Id="811" Type="1" />
+<SAINT Name="新殉道司祭塞爾吉（1933年）" Id="4766" Type="0"/>
+<SAINT Name="殉道者帕弗西利普（色雷斯的伊拉克利亞，117-138年間）" Id="815" Type="0" />
+<SAINT Name="聖凱樂斯廷（羅馬教宗，432年）" Id="812" Type="0" />
+<SAINT Name="聖尼豐特（諾夫哥羅德主教，1156年）" Id="" Type="0" />
+<SAINT Name="聖路弗（聽命者，基輔洞窟修道院，十四世紀）" Id="1888" Type="0" />
+<SAINT Name="舒亞 之「示道」聖母像紀念日" Id="2935" Type="0"/>
+<SAINT Name="殉道修士約西亞及約熙福（波斯，卡拉薩穆山，341年）" Id="" Type="0" />
+<SAINT Name="新殉道者約安（庫利卡，1564年）" Id="" Type="0" />
+<SAINT Name="新殉道者約安·納弗克利若（塞薩利的海員，1699年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
