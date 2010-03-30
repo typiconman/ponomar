@@ -1,14 +1,16 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Hieromartyr Antipas, Bishop of Pergamum and Disciple of St John the Theologian (+69)" Id="829" Type="1" />
-<SAINT Name="Venerable John the Disciple of the Venerable Gregory of Decapolis (9th C)" Id="880" Type="0" />
-<SAINT Name="Venerable Pharmuthius the Anchorite of Egypt (4th C)" Id="834" Type="0" />
+<SAINT Name="Hieromartyr Antipas, Bishop of Pergamum and Disciple of St John the Theologian (+ c.68)" Id="829" Type="1" />
+<SAINT Name="New Martyrs Peter and Prochorus (+1918)" Id="4884" Type="0"/>
+<SAINT Name="New Hieromartyr Priest Nicholas (+1938)" Id="" Type="0"/>
 <SAINT Name="Martyrs Processus and Martinian (1st C)" Id="833" Type="0" />
+<SAINT Name="Venerable Pharmuthius the Anchorite of Egypt (4th C)" Id="834" Type="0" />
+<SAINT Name="Venerable John the Disciple of the Venerable Gregory of Decapolis (9th C)" Id="880" Type="0" />
+<SAINT Name="Venerable James the Abbot of Zheleznoborov and James, his disciple (+1442)" Id="831" Type="0" />
+<SAINT Name="Holy Hierarch Barsanuphius, Bishop of Tver (+1576)" Id="362" Type="0" />
 <SAINT Name="Hieromartyr Damian, Bishop of Thessalonica" Id="" Type="0" />
 <SAINT Name="Holy Hierarch Philip, Bishop of Gortina" Id="" Type="0" />
-<SAINT Name="Venerable James the Abbot of Zheleznoborov and James, his disciple (+1442)" Id="831" Type="0" />
 <SAINT Name="Venerable Euthemius and Chariton of Sianzhemsk" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Barsanuphius, Bishop of Tver (+1576)" Id="362" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Antipas, Evêque de Pergame" Id="829" Type="1" />
@@ -30,5 +32,37 @@
 <SAINT Name="Прп. Иоанна, ученика прп. Григория Декаполита (IX)" Id="880" Type="0"/>
 <SAINT Name="Прпп. Иакова Железноборовского (1442) и Иакова Брылевского, сподвижника его (XV)" Id="831" Type="0"/>
 <SAINT Name="Свт. Варсонофия, еп. Тверского (1576)" Id="362" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道司教安提帕（圣约安使徒之弟子，佩尔伽蒙主教，92年）" Id="829" Type="1" />
+<SAINT Name="新殉道者裴特若及普若霍尔（1918年）" Id="4884" Type="0"/>
+<SAINT Name="新殉道司祭尼科拉（1938年）" Id="" Type="0"/>
+<SAINT Name="殉道者普若凯索及玛尔提尼安（罗马，67年）" Id="833" Type="0" />
+<SAINT Name="圣法尔穆提（埃及之退隐者，四世纪）" Id="834" Type="0" />
+<SAINT Name="圣约安（德卡颇利的圣格里高利之弟子，820年）" Id="880" Type="0" />
+<SAINT Name="圣雅科弗（哲勒兹尼•博尔地方修道院院长，1442年）及其同修，另一同名者圣雅科弗" Id="831" Type="0" />
+<SAINT Name="圣瓦尔桑努斐（特维尔主教，1576年）" Id="362" Type="0" />
+<SAINT Name="圣斐利普（克里特的格尔提那主教，180年）" Id="" Type="0" />
+<SAINT Name="圣艾弗提弥（1456年）及圣哈里同（1509年）（均为沃洛格达的斯扬哲玛地方修道院院长）" Id="" Type="0" />
+<SAINT Name="殉道司教多穆尼诺（达尔玛提亚的萨罗那主教），及偕同其就义之八名士兵（100年）" Id="" Type="0" />
+<SAINT Name="圣古特拉克（克罗兰地方之隐士，714年）" Id="" Type="0" />
+<SAINT Name="圣卡利尼科（切尔尼亚地方人，罗马尼亚林尼克主教，1868年）" Id="" Type="0" />
+<SAINT Name="至圣诞神女于波恰耶夫垂迹（印显足迹）纪念日" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道司教安提帕（聖約安使徒之弟子，佩爾伽蒙主教，92年）" Id="829" Type="1" />
+<SAINT Name="新殉道者裴特若及普若霍爾（1918年）" Id="4884" Type="0"/>
+<SAINT Name="新殉道司祭尼科拉（1938年）" Id="" Type="0"/>
+<SAINT Name="殉道者普若凱索及瑪爾提尼安（羅馬，67年）" Id="833" Type="0" />
+<SAINT Name="聖法爾穆提（埃及之退隱者，四世紀）" Id="834" Type="0" />
+<SAINT Name="聖約安（德卡頗利的聖格里高利之弟子，820年）" Id="880" Type="0" />
+<SAINT Name="聖雅科弗（哲勒茲尼‧博爾地方修道院院長，1442年）及其同修，另一同名者聖雅科弗" Id="831" Type="0" />
+<SAINT Name="聖瓦爾桑努斐（特維爾主教，1576年）" Id="362" Type="0" />
+<SAINT Name="聖斐利普（克里特的格爾提那主教，180年）" Id="" Type="0" />
+<SAINT Name="聖艾弗提彌（1456年）及聖哈里同（1509年）（均為沃洛格達的斯揚哲瑪地方修道院院長）" Id="" Type="0" />
+<SAINT Name="殉道司教多穆尼諾（達爾瑪提亞的薩羅那主教），及偕同其就義之八名士兵（100年）" Id="" Type="0" />
+<SAINT Name="聖古特拉克（克羅蘭地方之隱士，714年）" Id="" Type="0" />
+<SAINT Name="聖卡利尼科（切爾尼亞地方人，羅馬尼亞林尼克主教，1868年）" Id="" Type="0" />
+<SAINT Name="至聖誕神女於波恰耶夫垂蹟（印顯足蹟）紀念日" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
