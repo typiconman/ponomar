@@ -13,4 +13,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Понедельник Святого Духа" Id="" Type="6" Tone="-1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="上帝圣灵日（五旬节后第一周瞻礼二）" Id="" Type="6" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="上帝聖靈日（五旬節後第一週瞻禮二）" Id="" Type="6" Tone="-1" />
+</LANGUAGE>
 </DAY>

@@ -17,4 +17,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Пятидесятница. День Святой Троицы" Id="6952" Type="8" Tone="-1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="五旬节（上帝圣三主日——纪念至圣圣灵降临于众使徒）" Id="6952" Type="8" Tone="-1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="五旬節（上帝聖三主日——紀念至聖聖靈降臨於眾使徒）" Id="6952" Type="8" Tone="-1" />
+</LANGUAGE>
 </DAY>
