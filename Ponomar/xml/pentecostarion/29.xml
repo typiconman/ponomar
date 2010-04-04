@@ -14,4 +14,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Неделя 5-я по Пасхе, о самаряныне" Id="" Type="0" Tone="4"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="葩斯哈庆期第五主日（撒玛利亚汲水妇主日）" Id="" Type="0" Tone="4" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="葩斯哈慶期第五主日（撒瑪利亞汲水婦主日）" Id="" Type="0" Tone="4" />
+</LANGUAGE>
 </DAY>

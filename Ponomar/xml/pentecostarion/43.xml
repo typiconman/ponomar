@@ -17,4 +17,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Неделя 7-я по Пасхе. Воспоминание свв. отцев Первого Вселенского Собора" Id="" Type="1" Tone="6"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="葩斯哈庆期第七主日（纪念第一届神圣普世大公会议诸圣教父）" Id="" Type="1" Tone="6" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="葩斯哈慶期第七主日（紀念第一屆神聖普世大公會議諸聖教父）" Id="" Type="1" Tone="6" />
+</LANGUAGE>
 </DAY>
