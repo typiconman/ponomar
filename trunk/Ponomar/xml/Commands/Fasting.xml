@@ -53,7 +53,7 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 		<RULE Case="0000001" Cmd="!(dow == 6 || dow == 0)"/>
 		<RULE Case="0000111" Cmd="(dow == 6 || dow == 0)"/>
 		<RULE Case="0000111" Cmd="!(dow == 6 || dow == 0) &amp;&amp; dRank &gt;= 4"/>
-		<RULE Case="0011111" Cmd="dRank == 6"/>
+		<RULE Case="0011111" Cmd="dRank >= 6"/>
 	</LANGUAGE>
 </PERIOD>
 <PERIOD Cmd="doy >= 318 &amp;&amp; doy &lt;= 357">
@@ -83,7 +83,7 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 		<RULE Case="0000001" Cmd="!(dow == 6 || dow == 0)"/>
 		<RULE Case="0000111" Cmd="(dow == 6 || dow == 0)"/>
 		<RULE Case="0000111" Cmd="nday == -18 || doy == 82"/>
-		<RULE Case="0011111" Cmd="dRank == 6"/>
+		<RULE Case="0011111" Cmd="dRank >= 6"/>
 		<RULE Case="0000000" Cmd="nday == -48"/>
 		<RULE Case="0000000" Cmd="nday == -47"/>
 		
@@ -94,22 +94,22 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 	<LANGUAGE>
 		<!-- Lazarus Saturday -->
 		<RULE Case="0001111" Cmd="nday == -8"/>
-		<RULE Case="0011111" Cmd="nday == -8 &amp;&amp; dRank == 6"/>
+		<RULE Case="0011111" Cmd="nday == -8 &amp;&amp; dRank >= 6"/>
 		<!-- Palm Sunday -->
 		<RULE Case="0011111" Cmd="dow == 0"/>
 		<!-- Holy Monday to Holy Wednesday -->
 		<RULE Case="0000001" Cmd="(dow == 1 || dow == 2 || dow == 3)"/>
 		<!-- rule below modified to 0000111 by A.A. - Anunciation during Holy Week is an oil day -->
-		<RULE Case="0000111" Cmd="(dow == 1 || dow == 2 || dow == 3) &amp;&amp; dRank == 6"/>
+		<RULE Case="0000111" Cmd="(dow == 1 || dow == 2 || dow == 3) &amp;&amp; dRank >= 6"/>
 		<!-- Holy and Great Thursday. Oil day according to Chapter 32 of Typikon -->
 		<RULE Case="0000111" Cmd="dow == 4"/>
 		<!-- obsolete rule removed -->
 		<!-- Holy and Great Friday -->
 		<RULE Case="0000000" Cmd="dow == 5"/>
-		<RULE Case="0000010" Cmd="dow == 5 &amp;&amp; dRank == 6"/>
+		<RULE Case="0000010" Cmd="dow == 5 &amp;&amp; dRank >= 6"/>
 		<!-- Holy and Great Saturday -->
 		<RULE Case="0000111" Cmd="nday == -1"/>
-		<RULE Case="0000111" Cmd="nday == -1 &amp;&amp; dRank == 6"/>
+		<RULE Case="0000111" Cmd="nday == -1 &amp;&amp; dRank >= 6"/>
 	</LANGUAGE>
 </PERIOD>
 <PERIOD>

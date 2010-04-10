@@ -39,7 +39,8 @@
 <SAINT Name="圣阿伽佗（基辅洞窟修道院之显行灵迹者，13-14世纪）" Id="60" Type="0" />
 <SAINT Name="殉道司教埃莱弗特里（拜占庭城主教，2世纪）" Id="" Type="0"/>
 <SAINT Name="圣埃莱弗特里（图尔奈城主教，531年）" Id="" Type="0"/>
-<SAINT Name="圣艾弗赫里（奥尔良主教，740年）" Id="" Type="0"/><SAINT Name="大圣维萨里雍（埃及的显行灵迹者，466年）" Id="" Type="0"/>
+<SAINT Name="圣艾弗赫里（奥尔良主教，740年）" Id="" Type="0"/>
+<SAINT Name="大圣维萨里雍（埃及的显行灵迹者，466年）" Id="" Type="0"/>
 <SAINT Name="圣勤德（彼西迪亚主教）" Id="" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
@@ -52,7 +53,12 @@
 <SAINT Name="聖阿伽佗（基輔洞窟修道院之顯行靈蹟者，十三至十四世紀）" Id="60" Type="0" />
 <SAINT Name="殉道司教埃萊弗特裡（拜占庭城主教，二世紀）" Id="" Type="0"/>
 <SAINT Name="聖埃萊弗特裡（圖爾奈城主教，531年）" Id="" Type="0"/>
+<<<<<<< .mine
+<SAINT Name="聖艾弗赫裡（奧爾良主教，740年）" Id="" Type="0"/>
+<SAINT Name="大聖維薩裡雍（埃及的顯行靈跡者，466年）" Id="" Type="0"/>
+=======
 <SAINT Name="聖艾弗赫裡（奧爾良主教，740年）" Id="" Type="0"/><SAINT Name="大聖維薩裡雍（埃及的顯行靈蹟者，466年）" Id="" Type="0"/>
+>>>>>>> .r99
 <SAINT Name="聖勤德（彼西迪亞主教）" Id="" Type="0"/>
 </LANGUAGE>
 </DAY>
