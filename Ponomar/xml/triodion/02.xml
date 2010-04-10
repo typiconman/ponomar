@@ -34,7 +34,7 @@
 <SCRIPTURE Type="vespers" Reading="Jn_19:31-37"/>
 <SCRIPTURE Type="vespers" Reading="Mt_27:55-61"/>
 <PRIMES Type="Royal" /> <!-- Changed by AA-->
-<LITURGY Type="-1" Comment="The only time we have Liturgy is on Annuncation" Cmd="dRank != 6"/>
+<LITURGY Type="-1" Comment="The only time we have Liturgy is on Annuncation" Cmd="dRank != 7"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Great Friday. Remembrance of the Holy and Salvific Passion of our Lord Jesus Christ" Id="" Type="0" Tone="-1" />

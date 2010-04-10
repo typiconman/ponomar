@@ -40,7 +40,8 @@
 <SAINT Name="圣德奥格尼（加沙附近的维特里亚城主教，523年）" Id="" Type="0" />
 <SAINT Name="圣达尔玛特（西伯利亚圣母安息修道院的建立者和院长，1697年）" Id="" Type="0" />
 <SAINT Name="圣奥斯维（诺森伯利亚国王，670年）" Id="" Type="0" />
-<SAINT Name="圣安提姆斯，希俄斯地方人（1960年）" Id="" Type="0" /></LANGUAGE>
+<SAINT Name="圣安提姆斯，希俄斯地方人（1960年）" Id="" Type="0" />
+</LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="七十使徒之奧尼息默（109年）" Id="450" Type="1" />
 <SAINT Name="新殉道司祭彌哈伊爾（皮亞塔耶夫）和約安（庫民）（1930年）" Id="4856" Type="0" />
@@ -54,6 +55,6 @@
 <SAINT Name="聖德奧格尼（加沙附近的維特里亞城主教，523年）" Id="" Type="0" />
 <SAINT Name="聖達爾瑪特（西伯利亞聖母安息修道院的建立者和院長，1697年）" Id="" Type="0" />
 <SAINT Name="聖奧斯維（諾森伯利亞國王，670年）" Id="" Type="0" />
-<SAINT Name="聖安提姆斯，希俄斯地方人（1960年）" Id="" Type="0" /></LANGUAGE>
-
+<SAINT Name="聖安提姆斯，希俄斯地方人（1960年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
