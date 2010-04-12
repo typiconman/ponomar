@@ -6,18 +6,26 @@
 <SCRIPTURE Type="gospel" Reading="Jn_5:1-15" Pericope="14"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="4th Sunday after Pascha. Sunday of the Paralytic. Righteous Tabitha of Joppa (1st C)" Id="" Type="0" Tone="3" />
+<SAINT Name="4th Sunday after Pascha. Sunday of the Paralytic" Id="" Type="0" Tone="3" />
+<SAINT Name="Holy Martyr Abraham the Bulgar, Wonderworker of Vladimir (+1229) (movable feast on the 4th Sunday of Pascha)" Id="32" Type="0" />
+<SAINT Name="Righteous Tabitha of Joppa (1st C) (movable feast on the 4th Sunday of Pascha)" Id="4592" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Le 4-me dimanche après Pâques, du Paralytique" Id="" Type="0" Tone="3"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Неделя 4-я по Пасхе, о расслабленом. Прав. Тавифы (I)" Id="" Type="0" Tone="3"/>
+<SAINT Name="Неделя 4-я по Пасхе, о расслабленом" Id="" Type="0" Tone="3"/>
+<SAINT Name="Перенесение мощей мч. Авраамия Болгарского (1230) (переходящее празднование в Неделю 4-ю по Пасхе)" Id="32" Type="0"/>
+<SAINT Name="Прав. Тавифы (I) (переходящее празднование в Неделю 4-ю по Пасхе)" Id="4592" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="葩斯哈庆期第四主日（起瘫主日）" Id="" Type="0" Tone="3" />
+<SAINT Name="殉道者阿弗拉穆（保加利亚，1229年）" Id="32" Type="0" />
+<SAINT Name="圣妇塔维塔（圣使徒裴特若所复活之寡妇，1世纪）" Id="4592" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="葩斯哈慶期第四主日（起癱主日）" Id="" Type="0" Tone="3" />
+<SAINT Name="殉道者阿弗拉穆（保加利亞，1229年）" Id="32" Type="0" />
+<SAINT Name="聖婦塔維塔（聖使徒裴特若所復活之寡婦，一世紀）" Id="4592" Type="0" />
 </LANGUAGE>
 </DAY>
