@@ -5,7 +5,6 @@
 <SAINT Name="Holy Women Martyrs Basilissa and Anastasia in Rome (+ c.68)" Id="2431" Type="0" />
 <SAINT Name="Holy Martyr Suchias and his 16 Georgian Companions: Andrew, Anastasius, Talale, Theodoret, Euchirion, Jordan, Quadratus, Lucian, Mimnenosus, Nerangiosus, Polyeuctus, James, Phocas, Domentian, Victor, and Zosimus (+100-130)" Id="861" Type="0" />
 <SAINT Name="Martyr Sava the Goth of Wallachia (+372)" Id="862" Type="0" />
-<SAINT Name="Mozdok and Dubensky-Krasnohorská (17th C.) Icons of the Mother of God (movable feast at Mid-Pentecost)" Id="" Type="0"/>
 <SAINT Name="Holy Hierarch Leonidus, Bishop of Athens" Id="" Type="0" />
 <SAINT Name="Blessed Great Prince Mstislav-Theodore of Kiev" Id="" Type="0" />
 </LANGUAGE>
@@ -23,7 +22,6 @@
 <SAINT Name="Мцц. Василиссы и Анастасии (ок. 68)" Id="2431" Type="0"/>
 <SAINT Name="Мчч. Месукевийских - Сухия и дружины его: Андрея, Анастасия, Талале, Феодорита, Ивхириона, Иордана, Кондрата, Лукиана, Мимненоса, Нерангиоса, Полиевкта, Иакова, Фоки, Доментиана, Виктора, Зосимы (100-130)(Груз.)" Id="861" Type="0"/>
 <SAINT Name="Мч. Саввы Готфского (372)" Id="862" Type="0"/>
-<SAINT Name="Моздокской и Дубенской-Красногорской (XVII) икон Божией Матери (переходящие празднования в Преполовение Пятидесятницы)" Id="" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="七十使徒之阿里斯塔尔霍、普邓司、特若斐默（约67年）" Id="253" Type="1" />
@@ -31,7 +29,6 @@
 <SAINT Name="殉道女瓦西利萨及阿纳斯塔西亚（均为使徒裴特若及帕弗罗之女弟子，罗马，1世纪）" Id="2431" Type="0" />
 <SAINT Name="殉道者苏希亚及偕同其就义者：安德列、阿纳斯塔西、塔拉雷、德奥多里特、伊弗希里翁、约尔达尼、卦德拉特、路基安、弥穆奈诺、奈朗基、颇利艾弗克特、雅科弗、佛喀、多蒙提安、维克托尔、佐西玛（亚美尼亚，123年）" Id="861" Type="0" />
 <SAINT Name="殉道者萨瓦（哥特人，在罗马尼亚的瓦拉西亚就义，372年）" Id="862" Type="0" />
-<SAINT Name="“莫兹多克”和“杜本斯基•克拉斯诺霍”圣母像纪念日（17世纪）" Id="" Type="0"/>
 <SAINT Name="圣莱奥尼达（雅典主教）" Id="" Type="0" />
 <SAINT Name="圣穆斯提斯拉夫•德奥多若（基辅王子，1132年）" Id="" Type="0" />
 <SAINT Name="圣瓦西里（马路鲁伊的博雅那地方，1767年）" Id="" Type="0" />
@@ -46,7 +43,6 @@
 <SAINT Name="殉道女瓦西利薩及阿納斯塔西亞（均為使徒裴特若及帕弗羅之女弟子，羅馬，一世紀）" Id="2431" Type="0" />
 <SAINT Name="殉道者蘇希亞及偕同其就義者：安德列、阿納斯塔西、塔拉雷、德奧多里特、伊弗希里翁、約爾達尼、卦德拉特、路基安、彌穆奈諾、奈朗基、頗利艾弗克特、雅科弗、佛喀、多蒙提安、維克托爾、佐西瑪（亞美尼亞，123年）" Id="861" Type="0" />
 <SAINT Name="殉道者薩瓦（哥特人，在羅馬尼亞的瓦拉西亞就義，372年）" Id="862" Type="0" />
-<SAINT Name="「莫茲多克」和「杜本斯基•克拉斯諾霍」聖母像紀念日（十七世紀）" Id="" Type="0"/>
 <SAINT Name="聖萊奧尼達（雅典主教）" Id="" Type="0" />
 <SAINT Name="聖穆斯提斯拉夫•德奧多若（基輔王子，1132年）" Id="" Type="0" />
 <SAINT Name="聖瓦西里（馬路魯伊的博雅那地方，1767年）" Id="" Type="0" />
