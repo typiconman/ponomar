@@ -6,12 +6,14 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Saturday of the 4th week after Pascha" Id="" Type="0" Tone="3" />
+<SAINT Name="Synaxis of New Martyrs of Butovo (movable feast on the 4th Saturday of Pascha)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Samedi de la 4-me semaine après Pâques" Id="" Type="0" Tone="3"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Суббота 4-й седмицы по Пасхе" Id="" Type="0" Tone="3"/>
+<SAINT Name="Собор новомучеников, в Бутове пострадавших (переходящее празднование в 4-ю субботу по Пасхе)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="葩斯哈庆期第四周安息日" Id="" Type="0" Tone="3" />
