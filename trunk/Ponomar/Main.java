@@ -8,6 +8,10 @@ import java.awt.event.*;
 import java.util.*;
 import java.io.*;
 import java.lang.Math;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
+import javax.swing.text.MutableAttributeSet;
+
 
 /***********************************************************************
  Main.java :: MAIN MODULE FOR THE PONOMAR PROGRAM.
@@ -73,7 +77,14 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 	private String[] ServiceNames;
 	private String[] BibleName;
 	private String[] HelpNames;
-	
+        //Get the Correct Fonts
+	private String DisplayFont =new String(); //ALLOWS A CUSTOM FONT AND SIZE TO BE SPECIFIED FOR A GIVEN BIBLE READING: REQUIRED FOR OLD CHURCH SLAVONIC AT PRESENT
+	private String DisplaySize="12";  //UNTIL A COMPLETE UNICODE FONT IS AVAILIBLE.
+	private Font DefaultFont=new Font("",Font.BOLD,12);		//CREATE THE DEFAULT FONT
+	private Font CurrentFont=DefaultFont;
+        private String RSep=new String();
+        private String CSep=new String();
+        private String Colon=new String();
 	//private GospelSelector Selector;
 
 	// CONSTRUCTOR
@@ -101,6 +112,22 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		setTitle((String)Phrases.Phrases.get("0"));
 		Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
 		MainNames=Phrases.obtainValues((String)Phrases.Phrases.get("Main"));
+                DisplayFont=(String)Phrases.Phrases.get("FontFaceM");
+                DisplaySize=(String)Phrases.Phrases.get("FontSizeM");
+                
+                if (DisplaySize == null || DisplaySize.equals(""))
+                {
+                    DisplaySize="14";
+                }
+                
+                CurrentFont=new Font(DisplayFont,Font.PLAIN,Integer.parseInt(DisplaySize));
+                RSep=(String)Phrases.Phrases.get("ReadSep");
+                CSep=(String)Phrases.Phrases.get("CommSep");
+                Colon=(String)Phrases.Phrases.get("Colon");
+                StringOp.dayInfo.put("FontFaceM",DisplayFont);
+                StringOp.dayInfo.put("FontSizeM",DisplaySize);
+                StringOp.dayInfo.put("ReadSep",RSep);
+                StringOp.dayInfo.put("Colon",Colon);
 		GospelLocation = new GospelSelector();
 		
 		//ADD A MENU BAR Y.S. 2008/08/11 n.s.
@@ -112,7 +139,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		MenuBar.add(demo.createServicesMenu(this));
 		MenuBar.add(demo.createBibleMenu(this));
 		MenuBar.add(demo.createHelpMenu(this));
-		
+		MenuBar.setFont(CurrentFont);
 		setJMenuBar(MenuBar);
 			   
 	        JPanel left = new JPanel(new GridLayout(3,0));
@@ -184,7 +211,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
         if(name.equals(FileNames[1]))
         {
         	//SAVE THE CURRENT WINDOW
-       		helper.SaveHTMLFile(MainNames[5]+ " "+today+".html", "<title>"+(String)Phrases.Phrases.get("0")+" : " + today+"</title>"+output);
+       		helper.SaveHTMLFile(MainNames[5]+ " "+today+".html", "<html><title>"+(String)Phrases.Phrases.get("0")+Colon+" " + today+"</title>"+output);
        	}
         if(name.equals(FileNames[4]))
         {
@@ -355,7 +382,10 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				case 8:
                             case 7:
                             case 6:
-					output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";
+					//output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";
+                                	output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";
+                                //output += "</body><body style=\"font-family:Hirmos Ponomar;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt;color:red;font-style:bold\">\u00A0" + table.get("Name") + "</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt\">";
+                               //output+="<B><rank style=\"font-face:Hirmos Ponomar;size=18;color:red\">\uA698</rank><B>\u00A0"+table.get("Name");
 					break;
 				case 5:
                                     output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA699</Font>\u00A0" + table.get("Name") + "</FONT>";
@@ -375,7 +405,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                                         //Note: \u00A0 is a nonbreaking space.
 			}
 
-			output += id.length() != 0 ? "</A>; " : "; ";
+			output += id.length() != 0 ? "</A>"+CSep+" " : CSep+" ";
 
 
 			if (table.get("Tone") != null) {
@@ -384,7 +414,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				{
 					tone=8;
 				}
-				output += tone != -1 ? MainNames[4] +": " + toneNumbers[tone] + "; " : "";
+				output += tone != -1 ? MainNames[4] +": " + toneNumbers[tone] + CSep+" " : "";
 				StringOp.dayInfo.put("Tone",tone);
 			}
 		}
@@ -458,8 +488,20 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 
 	private void write()
 	{
-		output = "<B>" + today.toString() + "</B><BR>";
-		output +=MainNames[0] +": " + (String)today.getGregorianDateS() + "<BR>";
+		//if(!DisplayFont.equals(""))
+		{
+			//output="<FONT face=\""+DisplayFont+"\" size=\"5\">";//+DisplaySize+"pt\">";
+			//text.setText("<B>" + (String)books.get(curbook) + " " + formatPassage(curpassage) + "</B><BR>" +Stuff[0]);
+			//text.setFont(CurrentFont);
+                    output="<body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt\">";
+		}
+                //else
+                //{
+                  //  output="";
+                //}
+                
+                output += "<B>" + today.toString() + "</B><BR>";
+		output +=MainNames[0] +Colon+" " + (String)today.getGregorianDateS() + "<BR>";
 		String filename = "";
 		int lineNumber = 0;
 		int dow = today.getDayOfWeek();
@@ -473,7 +515,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		// PUT THE RELEVANT DATA IN THE HASH
 		StringOp.dayInfo.put("dow", dow);	// THE DAY'S DAY OF WEEK
 		StringOp.dayInfo.put("doy", doy);	// THE DAY'S DOY (see JDate.java for specification)
-		System.out.println(doy);
+		//System.out.println(doy);
 		StringOp.dayInfo.put("nday", nday);	// THE NUMBER OF DAYS BEFORE (-) OR AFTER (+) THIS YEAR'S PASCHA
 		StringOp.dayInfo.put("ndayP", ndayP);	// THE NUMBER OF DAYS AFTER LAST YEAR'S PASCHA
 		//REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
@@ -496,13 +538,15 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		//TESTING THE LANGUAGE PACKS
 		String rough=(String)Phrases.Phrases.get("1");
 		String[] final1=rough.split(",");
+		//System.out.println(output);
 		
-		
+
+
 		// GET THE DAY'S ASTRONOMICAL DATA
 		String[] sunriseSunset = Sunrise.getSunriseSunsetString(today, (String)ConfigurationFiles.Defaults.get("Longitude"), (String)ConfigurationFiles.Defaults.get("Latitude"), (String)ConfigurationFiles.Defaults.get("TimeZone"));
-		output += "<BR><B>"+MainNames[1]+"</B>: " + sunriseSunset[0];
-		output += "<BR><B>"+MainNames[2]+"</B>: " + sunriseSunset[1];
-		output += "<BR><BR>"; //<B>"+MainNames[3]+"</B>: " + Paschalion.getLunarPhaseString(today) +"<BR><BR>";
+		output += "<BR><B>"+MainNames[1]+"</B>"+Colon+" " + sunriseSunset[0];
+		output += "<BR><B>"+MainNames[2]+"</B>"+Colon+" " + sunriseSunset[1];
+		output += "<BR><BR>"; //<B>"+MainNames[3]+"</B>"+Colon+" " + Paschalion.getLunarPhaseString(today) +"<BR><BR>";
 		// getting rid of the lunar phase until we program a paschalion ...
 		if (nday >= -70 && nday < 0)
 		{
@@ -568,7 +612,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		}
 		catch (Exception e)
 		{
-			System.out.println(Errors[2] + " " + today.toString() + ": " + e.toString());
+			System.out.println(Errors[2] + " " + today.toString() + Colon+" " + e.toString());
 		}
 		//ADDED 2008/05/19 n.s. Y.S.
 		for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements(); )
@@ -621,7 +665,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		{
 			String type=(String)readingType.get(i);
 			String type1 =(String) Phrases.Phrases.get(type);			//(String)e.nextElement();
-			output += "<b>" + type1 + ":</b> ";
+			output += "<b>" + type1 + Colon+"</b> ";
 			Bible ShortForm=new Bible();
 			if(type.equals("gospel") || type.equals("apostol"))
 			{
@@ -629,7 +673,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				output += DivineLiturgy.Readings((Vector)  ReadScriptures[0].get(type),(Vector)  ReadScriptures[1].get(type), (Vector)  ReadScriptures[2].get(type),type,today);
 				if (i<readingType.size()-1)
 				{
-					output += ";";
+					output += RSep;
 				}
 			}
 			else
@@ -649,7 +693,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 						output+=ShortForm.getHyperlink(reading);
 						if (e2.hasMoreElements())
 						{
-							output += "; ";
+							output += RSep+" ";
 						}						
 					}
 					
@@ -658,7 +702,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				{
 					if(Type1Flag)
 					{
-						output += "; ";
+						output += RSep+" ";
 					}
 					Vector vect = (Vector) ReadScriptures[2].get(type);
 					Type1Flag=true;					;
@@ -668,7 +712,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 						output+=ShortForm.getHyperlink(reading);
 						if (e2.hasMoreElements())
 						{
-							output += "; ";
+							output += RSep+" ";
 						}
 					}
 					
@@ -677,7 +721,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				{
 					if(Type1Flag || Type2Flag)
 					{
-						output += "; ";
+						output += RSep+" ";
 					}
 					Vector vect = (Vector) ReadScriptures[1].get(type);
 					for (Enumeration e2=vect.elements();e2.hasMoreElements();)
@@ -686,7 +730,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 						output+=ShortForm.getHyperlink(reading);
 						if (e2.hasMoreElements())
 						{
-							output += "; ";
+							output += RSep+" ";
 						}
 					}
 					
@@ -713,8 +757,11 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		String[] FastNames= Phrases.obtainValues((String)Phrases.Phrases.get("Fasts"));
 		Fasting getfast=new Fasting();
 		output+="<BR><BR>"+ getfast.FastRules() +"<BR><BR>";
-
+                //output+="</FONT>";
+                output+="</body>";
+                
 		text.setContentType("text/html; charset=UTF-8");
+                text.setFont(CurrentFont);
 		text.setText(output);
 		text.setCaretPosition(0);
 		
