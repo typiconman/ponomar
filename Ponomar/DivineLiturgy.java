@@ -431,7 +431,7 @@ private static void getReadings(OrderedHashtable SortedReadings, String ReadingT
 	}
 	catch (Exception e)
 	{
-		System.out.println(Error[2] + "  " + today.toString() + ": " + e.toString());
+		System.out.println(Error[2] + "  " + today.toString() + StringOp.dayInfo.get("Colon")+" " + e.toString());
 	}
 	//ADDED 2008/05/19 n.s. Y.S.
 	
@@ -529,7 +529,7 @@ protected static String Display(String a,String b,String c)
 	{
 		if (output.length()>0)
 		{
-			output +="; ";
+			output +=StringOp.dayInfo.get("ReadSep")+" ";
 		}
 		output +=b;
 	}
@@ -537,7 +537,7 @@ protected static String Display(String a,String b,String c)
 	{
 		if (output.length()>0)
 		{
-			output +="; ";
+			output +=StringOp.dayInfo.get("ReadSep")+" ";
 		}
 		output +=c;
 		
@@ -601,7 +601,7 @@ public static String format(Vector vect,Vector Type)
 			
 			if(e2.hasMoreElements())
 			{
-				output +="; ";		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
+				output +=StringOp.dayInfo.get("ReadSep")+" ";		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
 			}
 		}
 	}
