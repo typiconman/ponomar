@@ -180,14 +180,14 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="ReadSep" Value="; " Comment="This is the mark to separate the readings."/>
 <PHRASE Key="Colon" Value=": " Comment="This is for everytime that a colon is required."/>
 </LANGUAGE>
-<LANGUAGE NameLocal="中文" NameEnglish="Simplified Chinese" Cmd="LS == 5">
+<LANGUAGE NameLocal="中文（简） " NameEnglish="Simplified Chinese" Cmd="LS == 5">
 <PHRASE Key="0" Value="波诺马里" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="主显月/,献主月/,福音月/,凯旋月/,圣君月/,使徒月/,先知月/,安息月/,圣架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="主日/,瞻礼二/,瞻礼三/,瞻礼四/,瞻礼五/,预备日/,安息日" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
 <PHRASE Key="3" Value="主显月/,献主月/,福音月/,凯旋月/,圣君月/,使徒月/,先知月/,安息月/,圣架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
-<PHRASE Key="SMenu" Value="Saints/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
+<PHRASE Key="SMenu" Value="圣人/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
 <PHRASE Key="Services" Value="Services/,Divine Liturgy/,暮时课/,晚堂课/,晨时课/,一时课/,三时课/,六时课/,九时课/,Royal Hours/,All-Night Vigil/,中夜课/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
 <PHRASE Key="Bible" Value="圣经/,This allows the user to access the Bible" />
 <PHRASE Key="Help" Value="Help/,This accesses the Help files./,About/,Access the About file/,Go to Help"/>
@@ -206,7 +206,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="9th hour" Value="九时课"/>
 <PHRASE Key="Fasts" Value="Fast free/,Strict fast/,Fast: Wine and oil allowed/,Fast: Fish, wine, and oil allowed/,Fasting regulations:/,Error calculating fast information/,：按照修行规矩：/,No Food/,Dry Food only/,Hot Food without oil/,Fast: Caviar, wine, and oil permitted/,Fast: Meat is excluded/,Fast: Wine is permitted/,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast:" />
 <PHRASE Key="Week1" Value="主日/,瞻礼二/,瞻礼三/,瞻礼四/,瞻礼五/,预备日/,安息日" Comment="This the abbreviation of the days of the week." />
-<PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
+<PHRASE Key="Phases" Value="新月（朔）/,眉月（盈眉月）/,上弦月/,盈凸月/,满月/,亏凸月/,下弦月/,残月（亏眉月）" Comment="月相" />
 <PHRASE Key="Primes" Value="No Service Today/,一时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Royal Hours"/>
 <PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
@@ -215,9 +215,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Helpers" Value="Save to a html file." />
 <PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
-<PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
+<PHRASE Key="PrimeSelection" Value="诵经士/,司祭/,主教/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
 <PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
-<PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
+<PHRASE Key="BibleW" Value="前一章/,全章/,下一章/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
 <PHRASE Key="Terce" Value="No Service Today/,三时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="No Service Today/,六时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="None" Value="No Service Today/,九时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
@@ -229,14 +229,14 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="ReadSep" Value="；" Comment="This is the mark to separate the readings."/>
 <PHRASE Key="Colon" Value="：" Comment="This is for everytime that a colon is required."/>
 </LANGUAGE>
-<LANGUAGE NameLocal="中文" NameEnglish="Traditional Chinese" Cmd="LS == 6">
+<LANGUAGE NameLocal="中文（繁）" NameEnglish="Traditional Chinese" Cmd="LS == 6">
 <PHRASE Key="0" Value="波諾馬裡" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
 <PHRASE Key="3" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
-<PHRASE Key="SMenu" Value="Saints/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
+<PHRASE Key="SMenu" Value="聖人/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
 <PHRASE Key="Services" Value="Services/,Divine Liturgy/,暮時課/,晚堂課/,晨時課/,一時課/,三時課/,六時課/,九時課/,Royal Hours/,All-Night Vigil/,中夜課/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
 <PHRASE Key="Bible" Value="聖經/,This allows the user to access the Bible" />
 <PHRASE Key="Help" Value="Help/,This accesses the Help files./,About/,Access the About file/,Go to Help"/>
@@ -255,7 +255,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="9th hour" Value="九時課"/>
 <PHRASE Key="Fasts" Value="Fast free/,Strict fast/,Fast: Wine and oil allowed/,Fast: Fish, wine, and oil allowed/,Fasting regulations:/,Error calculating fast information/,：按照修行規矩：/,No Food/,Dry Food only/,Hot Food without oil/,Fast: Caviar, wine, and oil permitted/,Fast: Meat is excluded/,Fast: Wine is permitted/,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast:" />
 <PHRASE Key="Week1" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="This the abbreviation of the days of the week." />
-<PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
+<PHRASE Key="Phases" Value="新月（朔）/,眉月（盈眉月）/,上弦月/,盈凸月/,滿月/,虧凸月/,下弦月/,殘月（虧眉月）" Comment="月相" />
 <PHRASE Key="Primes" Value="No Service Today/,一時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Royal Hours"/>
 <PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
@@ -264,9 +264,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Helpers" Value="Save to a html file." />
 <PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
-<PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
+<PHRASE Key="PrimeSelection" Value="誦經士/,司祭/,主教/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
 <PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
-<PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
+<PHRASE Key="BibleW" Value="前一章/,全章/,下一章/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
 <PHRASE Key="Terce" Value="No Service Today/,三時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="No Service Today/,六時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="None" Value="No Service Today/,九時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
