@@ -49,7 +49,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
 <PHRASE Key="Tones" Value=" /,I/,II/,III/,IV/,V/,VI/,VII/,VIII" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="Gregorian Calendar/,Sunrise/,Sunset/,Ecclesiastic Lunar Phase/,Tone/,Information for /,Are you sure you wish to quit?" />
+<PHRASE Key="Main" Value="Gregorian Calendar/,Sunrise/,Sunset/,Ecclesiastic Lunar Phase/,Tone TT; /,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
 <PHRASE Key="gospel" Value="Gospel"/>
 <PHRASE Key="apostol" Value="Apostol"/>
 <PHRASE Key="matins" Value="Matins"/>
@@ -79,9 +79,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="FontSizeM" Value="" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 14."/>
 <PHRASE Key="FontFaceL" Value="Times New Roman" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
 <PHRASE Key="FontSizeL" Value="14" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 14."/>
-<PHRASE Key="CommSep" Value=";" Comment="This is the mark to separate the different commemorations that are dispalyed."/>
-<PHRASE Key="ReadSep" Value=";" Comment="This is the mark to separate the readings."/>
-<PHRASE Key="Colon" Value=":" Comment="This is for everytime that a colon is required."/>
+<PHRASE Key="CommSep" Value="; " Comment="This is the mark to separate the different commemorations that are dispalyed. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
+<PHRASE Key="ReadSep" Value="; " Comment="This is the mark to separate the readings. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
+<PHRASE Key="Colon" Value=": " Comment="This is for everytime that a colon is required. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="Français" NameEnglish="French" Cmd="LS == 1">
  <PHRASE Key="0" Value="Ponomar" Comment="Ceci est la seule valeur pour cette clé."/>
@@ -98,7 +98,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="About" Value="Version/,Ponomar est désigné enfin que l'utilisateur peut comprendre et connaître la richesse et la beauté de la tradition Orthodoxe. Le programme est dans sa phase développementale./,Chez Ponomar, nous croyons que les textes Orthodoxes doivent être libre pour les utiliser et les distribuer. Dieu n'avait pas réclamé ses droits d’auteur sur le Bible. St. Jean Damascène n'avait pas réclamé ses droits d’auteur sur l'Octoèques. Donc, Ponomar et tous les textes, qui sont incorporés dans Ponomar, sont distribués sur les termes de GPL./,Droits d’Auteur réservés/,par/,Reconnaissances : (Aucuns)" />
  <PHRASE Key="GospelSelection" Value="Jordanville/,Saute Lucienne/,Le lectionnaire d'Évangile/,Sélectionner le lectionnaire d'Évangile désirée." />
  <PHRASE Key="Tones" Value="/,I/,II/,III/,IV/,V/,VI/,VII/,VIII" Comments="Permettre d'utiliser des formats différentes dans les autres langues comme la grecque (avec des lettres) and le vieux slave (avec des lettres cyrilliques)" />
- <PHRASE Key="Main" Value="Le calendrier grégorien/,Le lever de soleil/,Le coucher de soleil/,La phase de la lune ecclésiastique/,Ton/,L'Information pour /,Est-ce que vous êtes sûre que vous veuillez quitter le programme ?" />
+ <PHRASE Key="Main" Value="Le calendrier grégorien/,Le lever de soleil/,Le coucher de soleil/,La phase de la lune ecclésiastique/,Ton TT ; /,L'Information pour /,Est-ce que vous êtes sûre que vous veuillez quitter le programme ?" />
  <PHRASE Key="gospel" Value="Évangile"/> <PHRASE Key="apostol" Value="Épître"/>
 <PHRASE Key="matins" Value="Matines"/>
 <PHRASE Key="vespers" Value="Vêpres"/>
@@ -123,13 +123,13 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Terce" Value="Aucun office de Terce n’est pas célébré aujourd'hui/,Terce (Troisième Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
 <PHRASE Key="Sexte" Value="Aucun office de Sexte n’est pas célébré aujourd'hui/,Sexte (Sixième Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
 <PHRASE Key="None" Value="Aucun office de None n’est pas célébré aujourd'hui/,None (Neuvième Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
-<PHRASE Key="FontFaceM" Value="Times New Roman" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
-<PHRASE Key="FontSizeM" Value="14" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontFaceM" Value="" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontSizeM" Value="" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="FontFaceL" Value="Times New Roman" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
 <PHRASE Key="FontSizeL" Value="14" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
-<PHRASE Key="CommSep" Value=" ;" Comment="This is the mark to separate the different commemorations that are dispalyed."/>
-<PHRASE Key="ReadSep" Value=" ;" Comment="This is the mark to separate the readings."/>
-<PHRASE Key="Colon" Value=" :" Comment="This is for everytime that a colon is required."/>
+<PHRASE Key="CommSep" Value=" ; " Comment="This is the mark to separate the different commemorations that are dispalyed."/>
+<PHRASE Key="ReadSep" Value=" ; " Comment="This is the mark to separate the readings."/>
+<PHRASE Key="Colon" Value=" : " Comment="This is for everytime that a colon is required."/>
 </LANGUAGE> 
 <LANGUAGE NameLocal="русский" NameEnglish="Russian" Cmd="LS == 3">
 <PHRASE Key="0" Value="Пономарь" Comment="This is the only entry for this key."/>
@@ -146,7 +146,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="About" Value="Версия/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="НЕ использовать Воздвиженскую отступку/,Использовать Воздвиженскую отступку/,Лекционарий/,Выбор лекционария." />
 <PHRASE Key="Tones" Value=" /,1-й/,2-й/,3-й/,4-й/,5-й/,6-й/,7-й/,8-й" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="по гражданскому стилю/,Восход солнца/,Заход солнца/,Фаза луны/,Глас/,Информация о /,Вы действительно хотите закрыть программу?" />
+<PHRASE Key="Main" Value="по гражданскому стилю/,Восход солнца/,Заход солнца/,Фаза луны/,Глас TT; /,Информация о /,Вы действительно хотите закрыть программу?" />
 <PHRASE Key="gospel" Value="Евангелие"/>
 <PHRASE Key="apostol" Value="Апостол"/>
 <PHRASE Key="matins" Value="Утреня"/>
@@ -176,41 +176,41 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="FontSizeM" Value="" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="FontFaceL" Value="Hirmos Ponomar" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
 <PHRASE Key="FontSizeL" Value="18" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
-<PHRASE Key="CommSep" Value=";" Comment="This is the mark to separate the different commemorations that are dispalyed."/>
-<PHRASE Key="ReadSep" Value=";" Comment="This is the mark to separate the readings."/>
-<PHRASE Key="Colon" Value=":" Comment="This is for everytime that a colon is required."/>
+<PHRASE Key="CommSep" Value="; " Comment="This is the mark to separate the different commemorations that are dispalyed."/>
+<PHRASE Key="ReadSep" Value="; " Comment="This is the mark to separate the readings."/>
+<PHRASE Key="Colon" Value=": " Comment="This is for everytime that a colon is required."/>
 </LANGUAGE>
-<LANGUAGE NameLocal="中文" NameEnglish="Chinese" Cmd="LS == 5 || LS == 6">
-<PHRASE Key="0" Value="Ponomar" Comment="This is the only entry for this key."/>
-<PHRASE Key="1" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
-<PHRASE Key="2" Value="Sunday/,Monday/,Tuesday/,Wednesday/,Thursday/,Friday/,Saturday" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
-<PHRASE Key="3" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<LANGUAGE NameLocal="中文" NameEnglish="Simplified Chinese" Cmd="LS == 5">
+<PHRASE Key="0" Value="波诺马里" Comment="This is the only entry for this key."/>
+<PHRASE Key="1" Value="主显月/,献主月/,福音月/,凯旋月/,圣君月/,使徒月/,先知月/,安息月/,圣架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
+<PHRASE Key="2" Value="主日/,瞻礼二/,瞻礼三/,瞻礼四/,瞻礼五/,预备日/,安息日" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
+<PHRASE Key="3" Value="主显月/,献主月/,福音月/,凯旋月/,圣君月/,使徒月/,先知月/,安息月/,圣架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
 <PHRASE Key="SMenu" Value="Saints/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
-<PHRASE Key="Services" Value="Services/,Divine Liturgy/,Vespers/,Compline/,Matins/,Prime (First Hour)/, Terce (Third Hour)/,Sext (Sixth Hour)/,None (Ninth Hour)/,Royal Hours/,All-Night Vigil/,Midnight Office/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
-<PHRASE Key="Bible" Value="Bible/,This allows the user to access the Bible" />
+<PHRASE Key="Services" Value="Services/,Divine Liturgy/,暮时课/,晚堂课/,晨时课/,一时课/,三时课/,六时课/,九时课/,Royal Hours/,All-Night Vigil/,中夜课/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
+<PHRASE Key="Bible" Value="圣经/,This allows the user to access the Bible" />
 <PHRASE Key="Help" Value="Help/,This accesses the Help files./,About/,Access the About file/,Go to Help"/>
 <PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
-<PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
+<PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: The Chinese texts used by Ponomar were provided by Mitrophan Chin." />
 <PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
-<PHRASE Key="Tones" Value=" /,I/,II/,III/,IV/,V/,VI/,VII/,VIII" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="Gregorian Calendar/,Sunrise/,Sunset/,Ecclesiastic Lunar Phase/,Tone/,Information for /,Are you sure you wish to quit?" />
-<PHRASE Key="gospel" Value="Gospel"/>
-<PHRASE Key="apostol" Value="Apostol"/>
-<PHRASE Key="matins" Value="Matins"/>
-<PHRASE Key="vespers" Value="Vespers"/>
-<PHRASE Key="1st hour" Value="1&lt;sup&gt;st&lt;/sup&gt; hour"/>
-<PHRASE Key="3rd hour" Value="3&lt;sup&gt;rd&lt;/sup&gt; hour"/>
-<PHRASE Key="6th hour"	Value="6&lt;sup&gt;th&lt;/sup&gt; hour"/>
-<PHRASE Key="9th hour" Value="9&lt;sup&gt;th&lt;/sup&gt; hour"/>
-<PHRASE Key="Fasts" Value="Fast free/,Strict fast/,Fast: Wine and oil allowed/,Fast: Fish, wine, and oil allowed/,Fasting regulations:/,Error calculating fast information/,: Monastic Rule:/,No Food/,Dry Food only/,Hot Food without oil/,Fast: Caviar, wine, and oil permitted/,Fast: Meat is excluded/,Fast: Wine is permitted/,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast:" />
-<PHRASE Key="Week1" Value="Sun/,Mon/,Tue/,Wed/,Thu/,Fri/,Sat" Comment="This the abbreviation of the days of the week." />
+<PHRASE Key="Tones" Value=" /,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Main" Value="格里高利历/,日出/,日落/,Ecclesiastic Lunar Phase/,第TT调式；/,Information for /,Are you sure you wish to quit?" />
+<PHRASE Key="gospel" Value="圣福音经"/>
+<PHRASE Key="apostol" Value="使徒经书"/>
+<PHRASE Key="matins" Value="晨时课"/>
+<PHRASE Key="vespers" Value="暮时课"/>
+<PHRASE Key="1st hour" Value="一时课"/>
+<PHRASE Key="3rd hour" Value="三时课"/>
+<PHRASE Key="6th hour"	Value="六时课"/>
+<PHRASE Key="9th hour" Value="九时课"/>
+<PHRASE Key="Fasts" Value="Fast free/,Strict fast/,Fast: Wine and oil allowed/,Fast: Fish, wine, and oil allowed/,Fasting regulations:/,Error calculating fast information/,：按照修行规矩：/,No Food/,Dry Food only/,Hot Food without oil/,Fast: Caviar, wine, and oil permitted/,Fast: Meat is excluded/,Fast: Wine is permitted/,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast:" />
+<PHRASE Key="Week1" Value="主日/,瞻礼二/,瞻礼三/,瞻礼四/,瞻礼五/,预备日/,安息日" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
-<PHRASE Key="Primes" Value="No Service Today/,Prime (First Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Primes" Value="No Service Today/,一时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Royal Hours"/>
 <PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
-<PHRASE Key="DateFormat" Value="WW, DD MM YY" Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
+<PHRASE Key="DateFormat" Value="YY年MMDD日WW" Comment="This will display a type similar to 1999年十月4日星期一. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
 <PHRASE Key="Feasts" Value="Circumcision of the Lord/,Theophany/,Nativity of St. John the Baptist/,Sts. Peter and Paul/,Transfiguration/,Dormition of the Theotokos/,Beheading of St. John the Baptist/,Nativity of the Theotokos/,Exaltation of the Holy Cross/,Protection of the Theotokos/,Entry of the Theotokos into the Temple/,Nativity of our Lord/,Kyriopascha: Pascha and Annunciation/,Pascha/,Annunciation/,Pentecost/,Ascension/,Palm Sunday/,Meeting of the Lord" />
 <PHRASE Key="Helpers" Value="Save to a html file." />
 <PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
@@ -218,9 +218,58 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
 <PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
 <PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
-<PHRASE Key="Terce" Value="No Service Today/,Terce (Third Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="Sexte" Value="No Service Today/,Sexte (Sixth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="None" Value="No Service Today/,None (Ninth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Terce" Value="No Service Today/,三时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Sexte" Value="No Service Today/,六时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="None" Value="No Service Today/,九时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="FontFaceM" Value="Times New Roman" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontSizeM" Value="20" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontFaceL" Value="Times New Roman" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
+<PHRASE Key="FontSizeL" Value="22" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="CommSep" Value="；" Comment="This is the mark to separate the different commemorations that are dispalyed."/>
+<PHRASE Key="ReadSep" Value="；" Comment="This is the mark to separate the readings."/>
+<PHRASE Key="Colon" Value="：" Comment="This is for everytime that a colon is required."/>
+</LANGUAGE>
+<LANGUAGE NameLocal="中文" NameEnglish="Traditional Chinese" Cmd="LS == 6">
+<PHRASE Key="0" Value="波諾馬裡" Comment="This is the only entry for this key."/>
+<PHRASE Key="1" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
+<PHRASE Key="2" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
+<PHRASE Key="3" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="Options" Value="Options" />
+<PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
+<PHRASE Key="SMenu" Value="Saints/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
+<PHRASE Key="Services" Value="Services/,Divine Liturgy/,暮時課/,晚堂課/,晨時課/,一時課/,三時課/,六時課/,九時課/,Royal Hours/,All-Night Vigil/,中夜課/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
+<PHRASE Key="Bible" Value="聖經/,This allows the user to access the Bible" />
+<PHRASE Key="Help" Value="Help/,This accesses the Help files./,About/,Access the About file/,Go to Help"/>
+<PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
+<PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: The Chinese texts used by Ponomar were provided by Mitrophan Chin." />
+<PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
+<PHRASE Key="Tones" Value=" /,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Main" Value="格裡高利歷/,日出/,日落/,Ecclesiastic Lunar Phase/,第TT調式；/,Information for /,Are you sure you wish to quit?" />
+<PHRASE Key="gospel" Value="聖福音經"/>
+<PHRASE Key="apostol" Value="使徒經書"/>
+<PHRASE Key="matins" Value="晨時課"/>
+<PHRASE Key="vespers" Value="暮時課"/>
+<PHRASE Key="1st hour" Value="一時課"/>
+<PHRASE Key="3rd hour" Value="三時課"/>
+<PHRASE Key="6th hour"	Value="六時課"/>
+<PHRASE Key="9th hour" Value="九時課"/>
+<PHRASE Key="Fasts" Value="Fast free/,Strict fast/,Fast: Wine and oil allowed/,Fast: Fish, wine, and oil allowed/,Fasting regulations:/,Error calculating fast information/,：按照修行規矩：/,No Food/,Dry Food only/,Hot Food without oil/,Fast: Caviar, wine, and oil permitted/,Fast: Meat is excluded/,Fast: Wine is permitted/,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast:" />
+<PHRASE Key="Week1" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="This the abbreviation of the days of the week." />
+<PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
+<PHRASE Key="Primes" Value="No Service Today/,一時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Royal Hours"/>
+<PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
+<PHRASE Key="DateFormat" Value="YY年MMDD日WW" Comment="This will display a type similar to 1999年十月4日星期一. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
+<PHRASE Key="Feasts" Value="Circumcision of the Lord/,Theophany/,Nativity of St. John the Baptist/,Sts. Peter and Paul/,Transfiguration/,Dormition of the Theotokos/,Beheading of St. John the Baptist/,Nativity of the Theotokos/,Exaltation of the Holy Cross/,Protection of the Theotokos/,Entry of the Theotokos into the Temple/,Nativity of our Lord/,Kyriopascha: Pascha and Annunciation/,Pascha/,Annunciation/,Pentecost/,Ascension/,Palm Sunday/,Meeting of the Lord" />
+<PHRASE Key="Helpers" Value="Save to a html file." />
+<PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
+<PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
+<PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
+<PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
+<PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
+<PHRASE Key="Terce" Value="No Service Today/,三時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Sexte" Value="No Service Today/,六時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="None" Value="No Service Today/,九時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="FontFaceM" Value="Times New Roman" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
 <PHRASE Key="FontSizeM" Value="20" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="FontFaceL" Value="Times New Roman" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
