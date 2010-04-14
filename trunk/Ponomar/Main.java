@@ -109,8 +109,8 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		ServiceNames=Phrases.obtainValues((String)Phrases.Phrases.get("Services"));
 		BibleName=Phrases.obtainValues((String)Phrases.Phrases.get("Bible"));
 		HelpNames=Phrases.obtainValues((String)Phrases.Phrases.get("Help"));
-		setTitle((String)Phrases.Phrases.get("0"));
-		Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
+		
+                Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
 		MainNames=Phrases.obtainValues((String)Phrases.Phrases.get("Main"));
                 DisplayFont=(String)Phrases.Phrases.get("FontFaceM");
                 DisplaySize=(String)Phrases.Phrases.get("FontSizeM");
@@ -121,6 +121,8 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                 }
                 
                 CurrentFont=new Font(DisplayFont,Font.PLAIN,Integer.parseInt(DisplaySize));
+                setFont(CurrentFont);
+                setTitle((String)Phrases.Phrases.get("0"));
                 RSep=(String)Phrases.Phrases.get("ReadSep");
                 CSep=(String)Phrases.Phrases.get("CommSep");
                 Colon=(String)Phrases.Phrases.get("Colon");
@@ -211,7 +213,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
         if(name.equals(FileNames[1]))
         {
         	//SAVE THE CURRENT WINDOW
-       		helper.SaveHTMLFile(MainNames[5]+ " "+today+".html", "<html><title>"+(String)Phrases.Phrases.get("0")+Colon+" " + today+"</title>"+output);
+       		helper.SaveHTMLFile(MainNames[5]+ " "+today+".html", "<html><title>"+(String)Phrases.Phrases.get("0")+Colon + today+"</title>"+output);
        	}
         if(name.equals(FileNames[4]))
         {
@@ -405,7 +407,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                                         //Note: \u00A0 is a nonbreaking space.
 			}
 
-			output += id.length() != 0 ? "</A>"+CSep+" " : CSep+" ";
+			output += id.length() != 0 ? "</A>"+CSep:CSep;
 
 
 			if (table.get("Tone") != null) {
@@ -414,7 +416,14 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				{
 					tone=8;
 				}
-				output += tone != -1 ? MainNames[4] +": " + toneNumbers[tone] + CSep+" " : "";
+				//output += tone != -1 ? MainNames[4] +": " + toneNumbers[tone] + CSep+" " : "";
+                                if (tone!=-1)
+                                {
+                                String ToneFormat = new String();
+                                ToneFormat=MainNames[4];
+                                ToneFormat=ToneFormat.replace("TT",toneNumbers[tone]);
+                                output+=ToneFormat;
+                                }
 				StringOp.dayInfo.put("Tone",tone);
 			}
 		}
@@ -501,7 +510,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                 //}
                 
                 output += "<B>" + today.toString() + "</B><BR>";
-		output +=MainNames[0] +Colon+" " + (String)today.getGregorianDateS() + "<BR>";
+		output +=MainNames[0] +Colon + (String)today.getGregorianDateS() + "<BR>";
 		String filename = "";
 		int lineNumber = 0;
 		int dow = today.getDayOfWeek();
@@ -544,9 +553,9 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 
 		// GET THE DAY'S ASTRONOMICAL DATA
 		String[] sunriseSunset = Sunrise.getSunriseSunsetString(today, (String)ConfigurationFiles.Defaults.get("Longitude"), (String)ConfigurationFiles.Defaults.get("Latitude"), (String)ConfigurationFiles.Defaults.get("TimeZone"));
-		output += "<BR><B>"+MainNames[1]+"</B>"+Colon+" " + sunriseSunset[0];
-		output += "<BR><B>"+MainNames[2]+"</B>"+Colon+" " + sunriseSunset[1];
-		output += "<BR><BR>"; //<B>"+MainNames[3]+"</B>"+Colon+" " + Paschalion.getLunarPhaseString(today) +"<BR><BR>";
+		output += "<BR><B>"+MainNames[1]+"</B>"+Colon + sunriseSunset[0];
+		output += "<BR><B>"+MainNames[2]+"</B>"+Colon + sunriseSunset[1];
+		output += "<BR><BR>"; //<B>"+MainNames[3]+"</B>"+Colon+ Paschalion.getLunarPhaseString(today) +"<BR><BR>";
 		// getting rid of the lunar phase until we program a paschalion ...
 		if (nday >= -70 && nday < 0)
 		{
@@ -612,7 +621,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		}
 		catch (Exception e)
 		{
-			System.out.println(Errors[2] + " " + today.toString() + Colon+" " + e.toString());
+			System.out.println(Errors[2] + " " + today.toString() + Colon + e.toString());
 		}
 		//ADDED 2008/05/19 n.s. Y.S.
 		for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements(); )
@@ -665,7 +674,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		{
 			String type=(String)readingType.get(i);
 			String type1 =(String) Phrases.Phrases.get(type);			//(String)e.nextElement();
-			output += "<b>" + type1 + Colon+"</b> ";
+			output += "<b>"+ type1 + Colon+"</b>";
 			Bible ShortForm=new Bible();
 			if(type.equals("gospel") || type.equals("apostol"))
 			{
@@ -693,7 +702,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 						output+=ShortForm.getHyperlink(reading);
 						if (e2.hasMoreElements())
 						{
-							output += RSep+" ";
+							output += RSep;
 						}						
 					}
 					
@@ -702,7 +711,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				{
 					if(Type1Flag)
 					{
-						output += RSep+" ";
+						output += RSep;
 					}
 					Vector vect = (Vector) ReadScriptures[2].get(type);
 					Type1Flag=true;					;
@@ -712,7 +721,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 						output+=ShortForm.getHyperlink(reading);
 						if (e2.hasMoreElements())
 						{
-							output += RSep+" ";
+							output += RSep;
 						}
 					}
 					
@@ -721,7 +730,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				{
 					if(Type1Flag || Type2Flag)
 					{
-						output += RSep+" ";
+						output += RSep;
 					}
 					Vector vect = (Vector) ReadScriptures[1].get(type);
 					for (Enumeration e2=vect.elements();e2.hasMoreElements();)
@@ -730,13 +739,14 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 						output+=ShortForm.getHyperlink(reading);
 						if (e2.hasMoreElements())
 						{
-							output += RSep+" ";
+							output += RSep;
 						}
 					}
 					
-				}							
+				}
+                                output += RSep;
 			}
-			output += " ";
+			
 			
 		}
 		
