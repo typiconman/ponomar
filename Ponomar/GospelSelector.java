@@ -51,17 +51,18 @@ class GospelSelector extends JPanel implements ActionListener, PropertyChangeLis
 	public JPanel createGospelSelector()
 	{
 			
-		//DETERMINE THE DEFAULTS
+                Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
+            //DETERMINE THE DEFAULTS
 		String Default = (String) ConfigurationFiles.Defaults.get("GospelSelector");
 		//Create the radio buttons.
 		JordanvilleButton = new JRadioButton(SelectorNames[0]);
 	        JordanvilleButton.setMnemonic(KeyEvent.VK_J);
         	JordanvilleButton.setActionCommand("Jordanville");
-        	
+        	JordanvilleButton.setFont(CurrentFont);
         	LucanButton = new JRadioButton(SelectorNames[1]);
 		 LucanButton.setMnemonic(KeyEvent.VK_L);
         	 LucanButton.setActionCommand("LucanJump");
-        	 
+        	 LucanButton.setFont(CurrentFont);
         	if(Default.equals("Jordanville"))
         	{
         		JordanvilleButton.setSelected(true);
@@ -112,11 +113,12 @@ class GospelSelector extends JPanel implements ActionListener, PropertyChangeLis
 		
 		//GospelSelector sample=new GospelSelector();
 		//CREATE THE DEFAULT MENU
+             Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
 		submenu=new JMenu(SelectorNames[2]);
 		submenu.setToolTipText(SelectorNames[3]);
 		submenu.setMnemonic(KeyEvent.VK_G);
 		submenu.getAccessibleContext().setAccessibleDescription(SelectorNames[3]);
-		
+		submenu.setFont(CurrentFont);
 		//DETERMINE THE DEFAULTS
 		String Default = (String) ConfigurationFiles.Defaults.get("GospelSelector");
 		
@@ -125,12 +127,12 @@ class GospelSelector extends JPanel implements ActionListener, PropertyChangeLis
 		rbMenu1Item.addActionListener(this);
 		rbMenu1Item.setMnemonic(KeyEvent.VK_J);
 		rbMenu1Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_J, ActionEvent.CTRL_MASK));
-		
+		rbMenu1Item.setFont(CurrentFont);
 
 		rbMenu2Item = new JRadioButtonMenuItem(SelectorNames[1]);
 		rbMenu2Item.setMnemonic(KeyEvent.VK_L);
 		rbMenu2Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, ActionEvent.CTRL_MASK));
-		
+		rbMenu2Item.setFont(CurrentFont);
 		
 		if(Default.equals("Jordanville"))
         	{

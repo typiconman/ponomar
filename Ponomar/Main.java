@@ -121,7 +121,24 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                 }
                 
                 CurrentFont=new Font(DisplayFont,Font.PLAIN,Integer.parseInt(DisplaySize));
-                setFont(CurrentFont);
+                System.out.println(this.getFont());
+                System.out.println("Pause");
+                //setDefaultLookAndFeelDecorated( true );
+                //UIManager.put("Frame.font",CurrentFont);
+                //this.setFont(CurrentFont);
+                //This is a nifty way to set the default font for displaying everything in a programme. I (Y.S.) will
+                //later work to implement it properly. At present, there seem to be some technical issues with obtaining
+                //everything properly.
+    /*           java.util.Enumeration keys = UIManager.getDefaults().keys();
+    while (keys.hasMoreElements())
+    {
+      Object key = keys.nextElement();
+      Object value = UIManager.get (key);
+      if (value instanceof javax.swing.plaf.FontUIResource){
+        UIManager.put (key, CurrentFont);
+      }
+        }*/
+                System.out.println(this.getFont());
                 setTitle((String)Phrases.Phrases.get("0"));
                 RSep=(String)Phrases.Phrases.get("ReadSep");
                 CSep=(String)Phrases.Phrases.get("CommSep");
@@ -142,6 +159,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		MenuBar.add(demo.createBibleMenu(this));
 		MenuBar.add(demo.createHelpMenu(this));
 		MenuBar.setFont(CurrentFont);
+                //MenuBar.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
 		setJMenuBar(MenuBar);
 			   
 	        JPanel left = new JPanel(new GridLayout(3,0));
