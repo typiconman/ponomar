@@ -43,6 +43,12 @@ class JDate implements Comparable, Cloneable
 	//{"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
 	private static String[] dayNames = Phrases.obtainValues((String)Phrases.Phrases.get("2"));
+        private static String[] civilMonthNames=Phrases.obtainValues((String)Phrases.Phrases.get("4"));
+
+	//private final static String monthNames[] = new String[]
+	//{"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+
+	private static String[] civilDayNames = Phrases.obtainValues((String)Phrases.Phrases.get("5"));
 	//new String[]
 	//{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 	private static String[] Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
@@ -316,9 +322,9 @@ class JDate implements Comparable, Cloneable
 		int year = y;
 		int month = m;
 		int day = d;
-		Format=Format.replace("WW",dayNames[dow]);
+		Format=Format.replace("WW",civilDayNames[dow]);
 		Format=Format.replace("DD",String.valueOf(day));
-		Format=Format.replace("MM",monthNames[month-1]);
+		Format=Format.replace("MM",civilMonthNames[month-1]);
 		Format=Format.replace("YY",String.valueOf(year));
 		Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
 

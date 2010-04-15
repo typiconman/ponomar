@@ -39,6 +39,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="1" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="Sunday/,Monday/,Tuesday/,Wednesday/,Thursday/,Friday/,Saturday" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
 <PHRASE Key="3" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="4" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'. These are the civil months that are to be used for the Greogorian calendar (An issue for the Chinese version)."/>
+<PHRASE Key="5" Value="Sunday/,Monday/,Tuesday/,Wednesday/,Thursday/,Friday/,Saturday" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
 <PHRASE Key="SMenu" Value="Saints/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
@@ -88,6 +90,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="1" Value="janvier/,février/,mars/,avril/,mai/,juin/,juillet/,août/,septembre/,octobre/,novembre/,décembre" Comment="Les noms des mois dans le cas nominatif, utilisés dans la forme 'mois année'."/>
 <PHRASE Key="2" Value="dimanche/,lundi/,mardi/,mercredi/,jeudi/,vendredi/,samedi" Comment="Les noms de la semaine dans le cas nominatif, utilisés dans la forme 'semaine, mois numéro, année'."/> 
 <PHRASE Key="3" Value="janvier/,février/,mars/,avril/,mai/,juin/,juillet/,août/,septembre/,octobre/,novembre/,décembre" Comment="Les noms des mois dans le cas génitif, utilisés dans la forme 'jour, le numéro mois année'."/>
+<PHRASE Key="5" Value="dimanche/,lundi/,mardi/,mercredi/,jeudi/,vendredi/,samedi" Comment="Les noms de la semaine dans le cas nominatif, utilisés dans la forme 'semaine, mois numéro, année'."/> 
+<PHRASE Key="4" Value="janvier/,février/,mars/,avril/,mai/,juin/,juillet/,août/,septembre/,octobre/,novembre/,décembre" Comment="Les noms des mois dans le cas génitif, utilisés dans la forme 'jour, le numéro mois année'."/>
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Sauvegarder/,Les options de file usuel/,Sauvegarder l'écran/,Quitter/,Cette commande quitte le programme/,Imprimer/,Cette commande imprime l'information dans le boîte de text." />
  <PHRASE Key="SMenu" Value="Saints/,Des actions pour chercher pour d'information sur les saints/,Chercher/,Chercher pour d'information sur les saints" />
@@ -136,6 +140,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="1" Value="январь/,февраль/,март/,апрель/,май/,июнь/,июль/,август/,сентябрь/,октябрь/,ноябрь/,декабрь" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="воскресенье/,понедельник/,вторник/,среда/,четверг/,пятница/,суббота" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
 <PHRASE Key="3" Value="января/,февраля/,марта/,апреля/,мая/,июня/,июля/,августа/,сентября/,октября/,ноября/,декабря" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="5" Value="воскресенье/,понедельник/,вторник/,среда/,четверг/,пятница/,суббота" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
+<PHRASE Key="4" Value="января/,февраля/,марта/,апреля/,мая/,июня/,июля/,августа/,сентября/,октября/,ноября/,декабря" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="Options" Value="Настройки" />
 <PHRASE Key="File" Value="Файл/,Сохранить/,Обыкновенное меню файл/,Сохраняет текущую информацию/,Выход/,Оканчивает работу программы/,Печать/,Печатет текущую информацию." />
 <PHRASE Key="SMenu" Value="Святцы/,Поиск и сортировка по святцам/,Поиск/,Поиск информации о святом" />
@@ -185,6 +191,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="1" Value="主显月/,献主月/,福音月/,凯旋月/,圣君月/,使徒月/,先知月/,安息月/,圣架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="主日/,瞻礼二/,瞻礼三/,瞻礼四/,瞻礼五/,预备日/,安息日" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
 <PHRASE Key="3" Value="主显月/,献主月/,福音月/,凯旋月/,圣君月/,使徒月/,先知月/,安息月/,圣架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="5" Value="星期天/,星期一/,星期二/,星期三/,星期四/,星期五/,星期六" Comment="The names of the civil week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
+<PHRASE Key="4" Value="1月/,2月/,3月/,4月/,5月/,6月/,7月/,8月/,9月/,10月/,11月/,12月" Comment="The names of the civil months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
 <PHRASE Key="SMenu" Value="圣人/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
@@ -221,10 +229,10 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Terce" Value="No Service Today/,三时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="No Service Today/,六时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="None" Value="No Service Today/,九时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="FontFaceM" Value="Times New Roman" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontFaceM" Value="Arial Unicode MS" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
 <PHRASE Key="FontSizeM" Value="20" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
-<PHRASE Key="FontFaceL" Value="Times New Roman" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
-<PHRASE Key="FontSizeL" Value="22" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontFaceL" Value="Arial Unicode MS" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
+<PHRASE Key="FontSizeL" Value="20" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="CommSep" Value="；" Comment="This is the mark to separate the different commemorations that are dispalyed."/>
 <PHRASE Key="ReadSep" Value="；" Comment="This is the mark to separate the readings."/>
 <PHRASE Key="Colon" Value="：" Comment="This is for everytime that a colon is required."/>
@@ -234,6 +242,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="1" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
 <PHRASE Key="3" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="5" Value="星期天/,星期一/,星期二/,星期三/,星期四/,星期五/,星期六" Comment="The names of the civil week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
+<PHRASE Key="4" Value="一月/,二月/,三月/,四月/,五月/,六月/,七月/,八月/,九月/,十月/,十一月/,十二月" Comment="The names of the civil months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
 <PHRASE Key="SMenu" Value="聖人/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
@@ -270,10 +280,10 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Terce" Value="No Service Today/,三時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="No Service Today/,六時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="None" Value="No Service Today/,九時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="FontFaceM" Value="Times New Roman" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontFaceM" Value="Arial Unicode MS" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
 <PHRASE Key="FontSizeM" Value="20" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
-<PHRASE Key="FontFaceL" Value="Times New Roman" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
-<PHRASE Key="FontSizeL" Value="22" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontFaceL" Value="Arial Unicode MS" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
+<PHRASE Key="FontSizeL" Value="20" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="CommSep" Value="；" Comment="This is the mark to separate the different commemorations that are dispalyed."/>
 <PHRASE Key="ReadSep" Value="；" Comment="This is the mark to separate the readings."/>
 <PHRASE Key="Colon" Value="：" Comment="This is for everytime that a colon is required."/>

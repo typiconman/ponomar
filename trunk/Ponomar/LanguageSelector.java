@@ -35,10 +35,12 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
 	private String[] AvailableLanguages;
 	private int DefaultLocation;
 	
+
 	
 	public LanguageSelector()
 	{
-		String Default = (String) ConfigurationFiles.Defaults.get("Language");
+	
+            String Default = (String) ConfigurationFiles.Defaults.get("Language");
 		String rough = (String) ConfigurationFiles.Defaults.get("AvailableLanguages");
 		AvailableLanguages=rough.split(",");
 		LanguageLocation=Default;
@@ -58,7 +60,8 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
 	}
 	public JMenu createLanguageMenu()
 	{
-		LanguagePack Text=new LanguagePack();
+            Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
+            LanguagePack Text=new LanguagePack();
 		String [] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 		//DETERMINE THE DEFAULTS
 		String Default = (String) ConfigurationFiles.Defaults.get("Language");
@@ -72,7 +75,7 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
 		menuPanel.setToolTipText(LanguageNames[1]);
 		menuPanel.setMnemonic(KeyEvent.VK_L);
 		menuPanel.getAccessibleContext().setAccessibleDescription(LanguageNames[2]);
-		
+		menuPanel.setFont(CurrentFont);
 		ButtonGroup group = new ButtonGroup();
 		
 		for(int i=0;i<AvailableLanguages.length;i++)
@@ -83,7 +86,25 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
 			{
 				LanguageBox.setSelected(true);
 			}
-			group.add(LanguageBox);
+
+                        if (AvailableLanguages[i].substring(AvailableLanguages[i].length()-2).equals("\u4E2D\u6587"))
+                        {
+                            //We are going to treat Chinese specially
+                            Font ChineseFont=new Font("Arial Unicode MS",Font.PLAIN,20);
+                            LanguageBox.setFont(ChineseFont);
+
+                        }
+                        if (AvailableLanguages[i].equals("\u0446\u0435\u0440\u043A\u043E\u0432\u043D\u043E\u0441\u043B\u0430\u0432\u0467\u043D\u0441\u043A\u0438\u0439"))
+                        {
+                        
+                            //We are going to treat Church Slavonic specially
+                            Font ChineseFont=new Font("Hirmos Ponomar",Font.PLAIN,18);
+                            LanguageBox.setFont(ChineseFont);
+                            //LanguageBox.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+                            //LanguageBox.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+                        
+                        }
+                        group.add(LanguageBox);
 			menuPanel.add(LanguageBox);
 		}
 		
