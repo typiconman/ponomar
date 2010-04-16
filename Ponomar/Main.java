@@ -94,7 +94,8 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		//WE NEED THIS HANDY STORER OF VALUES NOW.
+
+                //WE NEED THIS HANDY STORER OF VALUES NOW.
 		StringOp.dayInfo = new Hashtable();
 		//DETERMINE THE DEFAULTS
 		ConfigurationFiles.Defaults = new OrderedHashtable();
@@ -115,11 +116,16 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                 DisplayFont=(String)Phrases.Phrases.get("FontFaceM");
                 DisplaySize=(String)Phrases.Phrases.get("FontSizeM");
                 
+                Font value1 = (Font)UIManager.get ("Menu.font");
                 if (DisplaySize == null || DisplaySize.equals(""))
                 {
-                    DisplaySize="14";
+                    DisplaySize=Integer.toString(value1.getSize());
                 }
-                
+                if (DisplayFont == null || DisplayFont.equals(""))
+                {
+                    DisplayFont=value1.getFontName();
+                }
+                                
                 CurrentFont=new Font(DisplayFont,Font.PLAIN,Integer.parseInt(DisplaySize));
                 System.out.println(this.getFont());
                 System.out.println("Pause");
@@ -129,15 +135,36 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                 //This is a nifty way to set the default font for displaying everything in a programme. I (Y.S.) will
                 //later work to implement it properly. At present, there seem to be some technical issues with obtaining
                 //everything properly.
-    /*           java.util.Enumeration keys = UIManager.getDefaults().keys();
+               java.util.Enumeration keys = UIManager.getDefaults().keys();
     while (keys.hasMoreElements())
     {
       Object key = keys.nextElement();
       Object value = UIManager.get (key);
-      if (value instanceof javax.swing.plaf.FontUIResource){
-        UIManager.put (key, CurrentFont);
+      if (value instanceof javax.swing.plaf.FontUIResource)
+      {
+          Font keyF=(Font)value;
+          String[] splitkey=key.toString().replace(".",":").split(":");
+          //This prevents the font from being changed for those things that are to remain in the Latin alphabet!
+          if (splitkey.length>1)
+          {
+            if (splitkey[splitkey.length-1].equals("acceleratorFont"))
+            {
+                continue;
+            }
+            if (splitkey[0].equals("Button"))
+            {
+                continue;
+            }
+          }
+          if(key.toString().equals("MenuItem.acceleratorFont"))
+          {
+            continue;
+          }
+          Font NewFont=new Font(CurrentFont.getFontName(), keyF.getStyle(),CurrentFont.getSize());
+        UIManager.put (key, NewFont);
+        //System.out.println(key);
       }
-        }*/
+        }
                 System.out.println(this.getFont());
                 setTitle((String)Phrases.Phrases.get("0"));
                 RSep=(String)Phrases.Phrases.get("ReadSep");
@@ -195,6 +222,18 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		
 		
 		inited = true;
+                Dimension screen=this.getSize();
+                //Default screen size issues for East Asian languages!
+                if (value1.getSize()<Integer.parseInt(DisplaySize))
+                {
+                    //System.out.println(screen);
+                    int newSize=Integer.parseInt(DisplaySize);
+                    screen.width=java.lang.Math.min(screen.width*newSize/value1.getSize(),1250);
+                    screen.height=java.lang.Math.min(screen.height*newSize/value1.getSize(),950);
+                    this.setSize(screen);
+                    //System.out.println(screen);
+                }
+                
 		write();
 	}
 
@@ -406,6 +445,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                                 	output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";
                                 //output += "</body><body style=\"font-family:Hirmos Ponomar;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt;color:red;font-style:bold\">\u00A0" + table.get("Name") + "</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt\">";
                                //output+="<B><rank style=\"font-face:Hirmos Ponomar;size=18;color:red\">\uA698</rank><B>\u00A0"+table.get("Name");
+                                //output += "<div style=\"font-face:Hirmos Ponomar; font-size:18pt; color:red\">\uA698\u00A0</div><Font color='red'><B>" + table.get("Name") + "</B></Font>";
 					break;
 				case 5:
                                     output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA699</Font>\u00A0" + table.get("Name") + "</FONT>";
@@ -430,10 +470,12 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 
 			if (table.get("Tone") != null) {
 				int tone = (int)Math.floor(StringOp.eval((String)table.get("Tone")));
+
 				if(tone==0)
 				{
 					tone=8;
 				}
+                                StringOp.dayInfo.put("Tone",tone);
 				//output += tone != -1 ? MainNames[4] +": " + toneNumbers[tone] + CSep+" " : "";
                                 if (tone!=-1)
                                 {
@@ -442,7 +484,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                                 ToneFormat=ToneFormat.replace("TT",toneNumbers[tone]);
                                 output+=ToneFormat;
                                 }
-				StringOp.dayInfo.put("Tone",tone);
+				
 			}
 		}
 		else if (elem.equals("SCRIPTURE") && read == true)

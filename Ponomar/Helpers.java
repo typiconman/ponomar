@@ -89,7 +89,7 @@ class Helpers
         			try
         			{
         				BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(FileName),"UTF8"));	
-	    				out.write(strOut + "<BR><BR><i>"+AboutNames[3]+" " +(String) ConfigurationFiles.Defaults.get("Year") +" " +AboutNames[4] + " " +(String) ConfigurationFiles.Defaults.get("Authors")+"</i>");
+	    				out.write(strOut + "<body><BR><BR><i>"+AboutNames[3]+" " +(String) ConfigurationFiles.Defaults.get("Year") +" " +AboutNames[4] + " " +(String) ConfigurationFiles.Defaults.get("Authors")+"</i></body></html>");
                                         if (strOut.substring(0, 4).equals("<html>"))
                                         {
                                             out.write("</html>");
