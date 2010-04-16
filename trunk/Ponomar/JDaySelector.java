@@ -66,6 +66,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 	private Hashtable feasts;
 	private int[] fasts;
 	private LanguagePack Text=new LanguagePack();
+        private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.BOLD,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
 
 	protected JDaySelector()
 	{
@@ -185,6 +186,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		for (int i = 0; i < 7; i++)
 		{
 			days[i].setText(dayNames[day]);
+                        days[i].setFont(CurrentFont);
 			if (day == 0) {
 				days[i].setForeground(sundayForeground);
 			} else {
@@ -230,6 +232,8 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		while (JDate.difference(firstDayOfNextMonth, tmpCalendar) > 0)
 		{
 			days[i + n + 7].setText(Integer.toString(n + 1));
+                        //Potentially there might be a need to change the font of the numbers here;
+                        //for those cases where non-numbers are used to mark a calendar!
 			days[i + n + 7].setVisible(true);
 
 			// SEE IF THIS DAY IS TODAY
@@ -352,6 +356,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 			}
 
 			tones[i].setText(numerals[tone]);
+                        tones[i].setFont(CurrentFont);
 
 			if ((i == 5) || (i == 6)) {
 				tones[i].setVisible(days[i * 7].isVisible());

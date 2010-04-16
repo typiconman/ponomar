@@ -75,7 +75,7 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
 		menuPanel.setToolTipText(LanguageNames[1]);
 		menuPanel.setMnemonic(KeyEvent.VK_L);
 		menuPanel.getAccessibleContext().setAccessibleDescription(LanguageNames[2]);
-		menuPanel.setFont(CurrentFont);
+		//menuPanel.setFont(CurrentFont);
 		ButtonGroup group = new ButtonGroup();
 		
 		for(int i=0;i<AvailableLanguages.length;i++)
@@ -94,7 +94,7 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
                             LanguageBox.setFont(ChineseFont);
 
                         }
-                        if (AvailableLanguages[i].equals("\u0446\u0435\u0440\u043A\u043E\u0432\u043D\u043E\u0441\u043B\u0430\u0432\u0467\u043D\u0441\u043A\u0438\u0439"))
+                        else if (AvailableLanguages[i].equals("\u0446\u0435\u0440\u043A\u043E\u0432\u043D\u043E\u0441\u043B\u0430\u0432\u0467\u043D\u0441\u043A\u0438\u0439"))
                         {
                         
                             //We are going to treat Church Slavonic specially
@@ -103,6 +103,16 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
                             //LanguageBox.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
                             //LanguageBox.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
                         
+                        }
+                        else
+                        {
+                            //We do not want the default font necessarily being used here.
+                            if (CurrentFont.getFontName().toString().equals("Hirmos Ponomar"))
+                                //This is only an issue for fonts that lack a complete character set.
+                            {
+                            Font DefaultFont=new Font("Times New Roman",Font.BOLD,14);
+                            LanguageBox.setFont(DefaultFont);
+                            }
                         }
                         group.add(LanguageBox);
 			menuPanel.add(LanguageBox);
