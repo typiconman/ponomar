@@ -142,7 +142,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 			if(strOut.equals("No Service Today"))
 			{
 				Object[] options = {LanguageNames[3]};
-				JOptionPane.showOptionDialog(null, PrimesNames[0],(String)Text.Phrases.get("0") + ": "+ PrimesNames[1], JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+				JOptionPane.showOptionDialog(null, PrimesNames[0],(String)Text.Phrases.get("0") + (String)Text.Phrases.get("Colon")+ PrimesNames[1], JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 			}
 			else
 			{
@@ -164,7 +164,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 	}
 	private void PrimesWindow(String textOut)
 	{
-		frames=new JFrame((String)Text.Phrases.get("0") + ": "+ PrimesNames[1]);
+		frames=new JFrame((String)Text.Phrases.get("0") + (String)Text.Phrases.get("Colon")+ PrimesNames[1]);
 		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		textOut=textOut.replaceAll("</br>", "<BR>");

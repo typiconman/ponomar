@@ -125,10 +125,11 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                 {
                     DisplayFont=value1.getFontName();
                 }
-                                
+                DisplaySize=Integer.toString(Math.max(Integer.parseInt(DisplaySize), value1.getSize())); //If the default user's font size is larger than the required there is not need to change it.
+                //The specified fonts sizes are the mininum required.
                 CurrentFont=new Font(DisplayFont,Font.PLAIN,Integer.parseInt(DisplaySize));
-                System.out.println(this.getFont());
-                System.out.println("Pause");
+                //System.out.println(this.getFont());
+                //System.out.println("Pause");
                 //setDefaultLookAndFeelDecorated( true );
                 //UIManager.put("Frame.font",CurrentFont);
                 //this.setFont(CurrentFont);
@@ -226,10 +227,14 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                 //Default screen size issues for East Asian languages!
                 if (value1.getSize()<Integer.parseInt(DisplaySize))
                 {
+                    Dimension defaultScreen= java . awt . Toolkit . getDefaultToolkit ().getScreenSize();
+
                     //System.out.println(screen);
                     int newSize=Integer.parseInt(DisplaySize);
-                    screen.width=java.lang.Math.min(screen.width*newSize/value1.getSize(),1250);
-                    screen.height=java.lang.Math.min(screen.height*newSize/value1.getSize(),950);
+                    int MaxW=95*defaultScreen.width/100;
+                    int MaxH=95*defaultScreen.height/100;
+                    screen.width=java.lang.Math.min(screen.width*newSize/value1.getSize(),MaxW);
+                    screen.height=java.lang.Math.min(screen.height*newSize/value1.getSize(),MaxH);
                     this.setSize(screen);
                     //System.out.println(screen);
                 }
@@ -444,6 +449,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 					//output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";
                                 	output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";
                                 //output += "</body><body style=\"font-family:Hirmos Ponomar;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt;color:red;font-style:bold\">\u00A0" + table.get("Name") + "</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt\">";
+                               //output += "<style style=\"font-family:Hirmos Ponomar;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</style>\u00A0<style style=\"color:red\">" + table.get("Name") + "</style>";
                                //output+="<B><rank style=\"font-face:Hirmos Ponomar;size=18;color:red\">\uA698</rank><B>\u00A0"+table.get("Name");
                                 //output += "<div style=\"font-face:Hirmos Ponomar; font-size:18pt; color:red\">\uA698\u00A0</div><Font color='red'><B>" + table.get("Name") + "</B></Font>";
 					break;
@@ -832,8 +838,14 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                 
 		text.setContentType("text/html; charset=UTF-8");
                 text.setFont(CurrentFont);
+                //text.applyComponentOrientation(ComponentOrientation.getOrientation(new Locale("zh","HK")));
+                //System.out.println("Hello Tests");
+                //System.out.println(ComponentOrientation.getOrientation(new Locale("ar","CN")).isHorizontal());
+                //System.out.println(ComponentOrientation.getOrientation(new Locale("ar","CN")).isLeftToRight());
+                //System.out.println(ComponentOrientation.getOrientation(new Locale("zh","CN")).isHorizontal());
+                //System.out.println(ComponentOrientation.getOrientation(new Locale("zh_Hant","")).isHorizontal());
 		text.setText(output);
-		text.setCaretPosition(0);
+		text.setCaretPosition(0);       
 		
 		
 	}
