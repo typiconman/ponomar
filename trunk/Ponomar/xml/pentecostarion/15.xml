@@ -7,17 +7,22 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="3rd Sunday after Pascha. Sunday of the Myrrhbearing Women, St Joseph of Arimathea, and Nicodemus" Id="2598" Type="1" Tone="2" />
+<SAINT Name="Right-believing Tamara, Queen of Georgia (+1213) (On Sunday of Myrrhbearing Women)" Id="2687" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Le 3-me dimanche après le Pâques. Saintes Femmes Myrophores, Joseph d'Arimathée et Nicodème" Id="2598" Type="1" Tone="2"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Среда 2-й седмицы по Пасхе. Свв. жен мироносиц, Иосифа Аримафейского и Никодима" Id="2598" Type="1" Tone="2"/>
+<SAINT Name="Блгв. Тамары, царицы Грузинской (1213) (Среда 2-й седмицы по Пасхе)" Id="2687" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="葩斯哈庆期第三主日（携香液女主日）" Id="2598" Type="1" Tone="2" />
+<SAINT Name="圣妇塔玛拉（格鲁吉亚之王后，1213年）（携香液女主日）" Id="2687" Type="0"/>
+
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="葩斯哈慶期第三主日（攜香液女主日）" Id="2598" Type="1" Tone="2" />
+<SAINT Name="聖婦塔瑪拉（格魯吉亞之王后，1213年）（攜香液女主日）" Id="2687" Type="0"/>
 </LANGUAGE>
 </DAY>
