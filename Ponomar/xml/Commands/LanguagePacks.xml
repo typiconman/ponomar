@@ -247,14 +247,14 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
 <PHRASE Key="SMenu" Value="圣人/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
-<PHRASE Key="Services" Value="Services/,Divine Liturgy/,暮时课/,晚堂课/,晨时课/,一时课/,三时课/,六时课/,九时课/,Royal Hours/,All-Night Vigil/,中夜课/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
+<PHRASE Key="Services" Value="Services/,事奉圣礼/,暮时课/,晚堂课/,晨时课/,一时课/,三时课/,六时课/,九时课/,皇时课/,All-Night Vigil/,中夜课/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
 <PHRASE Key="Bible" Value="圣经/,This allows the user to access the Bible" />
 <PHRASE Key="Help" Value="Help/,This accesses the Help files./,About/,Access the About file/,Go to Help"/>
 <PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
 <PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: The Chinese texts used by Ponomar were provided by Mitrophan Chin." />
 <PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
 <PHRASE Key="Tones" Value=" /,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="格里高利历/,日出/,日落/,Ecclesiastic Lunar Phase/,第TT调式；/,Information for /,Are you sure you wish to quit?" />
+<PHRASE Key="Main" Value="格里高利历/,日出/,日落/,Ecclesiastic 月相/,第TT调式；/,Information for /,Are you sure you wish to quit?" />
 <PHRASE Key="gospel" Value="圣福音经"/>
 <PHRASE Key="apostol" Value="使徒经书"/>
 <PHRASE Key="matins" Value="晨时课"/>
@@ -263,14 +263,14 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="3rd hour" Value="三时课"/>
 <PHRASE Key="6th hour"	Value="六时课"/>
 <PHRASE Key="9th hour" Value="九时课"/>
-<PHRASE Key="Fasts" Value="Fast free/,Strict fast/,Fast: Wine and oil allowed/,Fast: Fish, wine, and oil allowed/,Fasting regulations:/,Error calculating fast information/,：按照修行规矩：/,No Food/,Dry Food only/,Hot Food without oil/,Fast: Caviar, wine, and oil permitted/,Fast: Meat is excluded/,Fast: Wine is permitted/,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast:" />
+<PHRASE Key="Fasts" Value="免斋期/,严格规定斋日/,斋日（酒、油可食）/,斋日（鱼、酒及油可食）/,斋戒规则：/,Error calculating fast information/,：按照修行规矩：/,禁食/,干食/,免油热食/,斋日（鱼子、酒及油可食）/,斋日（Meat is excluded）/,斋日（酒可饮）/,肉类和动物制品/,乳制品/,鱼/,鱼子/,油/,酒/,干食/,都/,都/,都/,可食用/,不可食用/,及/,, while/,斋日：" />
 <PHRASE Key="Week1" Value="主日/,瞻礼二/,瞻礼三/,瞻礼四/,瞻礼五/,预备日/,安息日" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="新月（朔）/,眉月（盈眉月）/,上弦月/,盈凸月/,满月/,亏凸月/,下弦月/,残月（亏眉月）" Comment="月相" />
 <PHRASE Key="Primes" Value="No Service Today/,一时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Royal Hours"/>
+<PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,皇时课"/>
 <PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
 <PHRASE Key="DateFormat" Value="YY年MMDD日WW" Comment="This will display a type similar to 1999年十月4日星期一. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
-<PHRASE Key="Feasts" Value="Circumcision of the Lord/,Theophany/,Nativity of St. John the Baptist/,Sts. Peter and Paul/,Transfiguration/,Dormition of the Theotokos/,Beheading of St. John the Baptist/,Nativity of the Theotokos/,Exaltation of the Holy Cross/,Protection of the Theotokos/,Entry of the Theotokos into the Temple/,Nativity of our Lord/,Kyriopascha: Pascha and Annunciation/,Pascha/,Annunciation/,Pentecost/,Ascension/,Palm Sunday/,Meeting of the Lord" />
+<PHRASE Key="Feasts" Value="主耶稣基督受割礼日/,主显节/,施浸礼者圣约安诞辰/,圣裴特若及圣帕弗罗/,主易圣容节/,圣母安息节/,施浸礼者圣约安授首纪念日/,圣母诞辰节/,举扬圣架节/,圣母护守节/,诞神女进殿节/,主降生节/,主葩斯哈：圣葩斯哈主日及诞神女福音节/,圣葩斯哈主日/,诞神女福音节/,五旬节/,主升天节/,圣枝主日/,主进殿节" />
 <PHRASE Key="Helpers" Value="Save to a html file." />
 <PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
@@ -289,7 +289,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Colon" Value="：" Comment="This is for everytime that a colon is required."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="中文（繁）" NameEnglish="Traditional Chinese" Cmd="LS == 6">
-<PHRASE Key="0" Value="波諾馬裡" Comment="This is the only entry for this key."/>
+<PHRASE Key="0" Value="波諾馬里" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
 <PHRASE Key="3" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
@@ -298,14 +298,14 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
 <PHRASE Key="SMenu" Value="聖人/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
-<PHRASE Key="Services" Value="Services/,Divine Liturgy/,暮時課/,晚堂課/,晨時課/,一時課/,三時課/,六時課/,九時課/,Royal Hours/,All-Night Vigil/,中夜課/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
+<PHRASE Key="Services" Value="Services/,事奉聖禮/,暮時課/,晚堂課/,晨時課/,一時課/,三時課/,六時課/,九時課/,皇時課/,All-Night Vigil/,中夜課/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
 <PHRASE Key="Bible" Value="聖經/,This allows the user to access the Bible" />
 <PHRASE Key="Help" Value="Help/,This accesses the Help files./,About/,Access the About file/,Go to Help"/>
 <PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
 <PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: The Chinese texts used by Ponomar were provided by Mitrophan Chin." />
 <PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
 <PHRASE Key="Tones" Value=" /,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="格裡高利歷/,日出/,日落/,Ecclesiastic Lunar Phase/,第TT調式；/,Information for /,Are you sure you wish to quit?" />
+<PHRASE Key="Main" Value="格里高利歷/,日出/,日落/,Ecclesiastic月相/,第TT調式；/,Information for /,Are you sure you wish to quit?" />
 <PHRASE Key="gospel" Value="聖福音經"/>
 <PHRASE Key="apostol" Value="使徒經書"/>
 <PHRASE Key="matins" Value="晨時課"/>
@@ -314,14 +314,14 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="3rd hour" Value="三時課"/>
 <PHRASE Key="6th hour"	Value="六時課"/>
 <PHRASE Key="9th hour" Value="九時課"/>
-<PHRASE Key="Fasts" Value="Fast free/,Strict fast/,Fast: Wine and oil allowed/,Fast: Fish, wine, and oil allowed/,Fasting regulations:/,Error calculating fast information/,：按照修行規矩：/,No Food/,Dry Food only/,Hot Food without oil/,Fast: Caviar, wine, and oil permitted/,Fast: Meat is excluded/,Fast: Wine is permitted/,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast:" />
+<PHRASE Key="Fasts" Value="免齋期/,嚴格規定齋日/,齋日（酒、油可食）/,齋日（魚、酒及油可食）/,齋戒規則：/,Error calculating fast information/,：按照修行規矩：/,禁食/,幹食/,免油熱食/,齋日（魚子、酒及油可食）/,齋日（Meat is excluded）/,齋日（酒可飲）/,肉類和動物製品/,乳製品/,魚/,魚子/,油/,酒/,幹食/,都/,都/,都/,可食用/,不可食用/,及/,, while/,齋日：" />
 <PHRASE Key="Week1" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="新月（朔）/,眉月（盈眉月）/,上弦月/,盈凸月/,滿月/,虧凸月/,下弦月/,殘月（虧眉月）" Comment="月相" />
 <PHRASE Key="Primes" Value="No Service Today/,一時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Royal Hours"/>
+<PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,皇時課"/>
 <PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
 <PHRASE Key="DateFormat" Value="YY年MMDD日WW" Comment="This will display a type similar to 1999年十月4日星期一. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
-<PHRASE Key="Feasts" Value="Circumcision of the Lord/,Theophany/,Nativity of St. John the Baptist/,Sts. Peter and Paul/,Transfiguration/,Dormition of the Theotokos/,Beheading of St. John the Baptist/,Nativity of the Theotokos/,Exaltation of the Holy Cross/,Protection of the Theotokos/,Entry of the Theotokos into the Temple/,Nativity of our Lord/,Kyriopascha: Pascha and Annunciation/,Pascha/,Annunciation/,Pentecost/,Ascension/,Palm Sunday/,Meeting of the Lord" />
+<PHRASE Key="Feasts" Value="主耶穌基督受割禮日/,主顯節/,施浸禮者聖約安誕辰/,聖裴特若及聖帕弗羅/,主易聖容節/,聖母安息節/,施浸禮者聖約安授首紀念日/,聖母誕辰節/,舉揚聖架節/,聖母護守節/,誕神女進殿節/,主降生節/,主葩斯哈：聖葩斯哈主日及誕神女福音節/,聖葩斯哈主日/,誕神女福音節/,五旬節/,主升天節/,聖枝主日/,主進殿節" />
 <PHRASE Key="Helpers" Value="Save to a html file." />
 <PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
