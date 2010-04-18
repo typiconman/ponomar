@@ -56,8 +56,9 @@ public class Service implements DocHandler
 	private String textTimes;
         private String Style;
         private String Header1;
-		
-	public String startService(String FileName)
+	//private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
+
+        public String startService(String FileName)
 	{
 		WhoLast="";
 		count=-1;
@@ -65,14 +66,29 @@ public class Service implements DocHandler
                 Header1="<head>\n";//<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
                 Style="<style type=\"text/css\">\nrubric {color:red;font-weight:bold}\np {margin-left:.5in;text-indent:-.5in}\nh1 {color:red;font-weight:bold;text-align:center}\ncomment {color:red;font-size:50%;font-style:italic}\ncommand {color:red;font-style:italic}\nh2 {color:red;font-size:110%;text-align:center}\n";
 
-                int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
+                /*int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
                                 if (LangCode==2 || LangCode==3 ){
                                     Style=Style+"body {font-family:\"Hirmos Ponomar\";font-size:18pt}\n";
                                     //System.out.println("Added Font");
                                    }
                                 else{
                                     Style=Style+"body {font-size:12pt}\n";
-                                }
+                                }*/
+                String DisplayFont=(String)Text.Phrases.get("FontFaceL");
+                String DisplaySize=(String)Text.Phrases.get("FontSizeL");
+                
+                Font value1 = (Font)UIManager.get ("Menu.font");
+                if (DisplaySize == null || DisplaySize.equals(""))
+                {
+                    DisplaySize=Integer.toString(value1.getSize());
+                }
+                if (DisplayFont == null || DisplayFont.equals(""))
+                {
+                    DisplayFont=value1.getFontName();
+                }
+                DisplaySize=Integer.toString(Math.max(Integer.parseInt(DisplaySize), value1.getSize())); //If the default user's font size is larger than the required there is not need to change it.
+                //The specified fonts sizes are the mininum required.
+                Style+="body {font-family:"+DisplayFont+";font-size:"+DisplaySize+"}\n";
 		return readService(FileName);
 	}
 	public String readService(String FileName) //throws IOException

@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="On this day, we sing the service for the Finding of the Head of the Forerunner" Id="1007" Type="4" Cmd="nday == 43" />
 <SAINT Name="Venerable Basil the Confessor, companion of the Venerable Procopius at Decapolis (+ c. 750)" Id="523" Type="1" />
@@ -50,7 +50,7 @@
 <SAINT Name="蒙福者尼科拉（普斯科夫地方的圣愚，1576年）" Id="1636" Type="0"/>
 <SAINT Name="圣阿尔塞尼（本姓马奇耶维奇，罗斯托夫都主教，宣信者，1772年）" Id="4762" Type="0"/>
 </LANGUAGE>
-<LANGUAGE Cmd="LS == 5">
+<LANGUAGE Cmd="LS == 6">
 <SAINT Name="聖瓦西里（宣信者，德卡頗利城的聖普若科彼的同伴，747年）" Id="523" Type="1"/>
 <SAINT Name="使徒聖寧法及聖艾弗佛洛" Id="" Type="0"/>
 <SAINT Name="殉道司教奈斯托爾（龐非里亞的瑪吉多城主教，250年）" Id="527" Type="0"/>
