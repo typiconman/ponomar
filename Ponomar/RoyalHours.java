@@ -135,6 +135,9 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 		frames.setSize(800,700);
 		frames.setVisible(true);
 
+                Helpers orient=new Helpers();
+                orient.applyOrientation(frames,(ComponentOrientation)StringOp.dayInfo.get("Orient"));
+
 
 
 		//scrollPane.top();
@@ -269,7 +272,8 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
         String name = source.getText();
        if (name.equals(HelpNames[2]))
         {
-        	 new About();
+        	 Helpers orient=new Helpers();
+                orient.applyOrientation(new About(),(ComponentOrientation)StringOp.dayInfo.get("Orient"));
         }
          if (name.equals(HelpNames[0]))
         {

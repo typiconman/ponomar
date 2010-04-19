@@ -84,6 +84,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="CommSep" Value="; " Comment="This is the mark to separate the different commemorations that are dispalyed. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
 <PHRASE Key="ReadSep" Value="; " Comment="This is the mark to separate the readings. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
 <PHRASE Key="Colon" Value=": " Comment="This is for everytime that a colon is required. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
+<PHRASE Key="Language" Value="en" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<PHRASE Key="Country" Value="GB" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
+<PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0. The true 'Arabic' numerals have a zero point at '٠' (\u0660)."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="Français" NameEnglish="French" Cmd="LS == 1">
  <PHRASE Key="0" Value="Ponomar" Comment="Ceci est la seule valeur pour cette clé."/>
@@ -134,6 +137,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="CommSep" Value=" ; " Comment="This is the mark to separate the different commemorations that are dispalyed."/>
 <PHRASE Key="ReadSep" Value=" ; " Comment="This is the mark to separate the readings."/>
 <PHRASE Key="Colon" Value=" : " Comment="This is for everytime that a colon is required."/>
+<PHRASE Key="Language" Value="fr" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<PHRASE Key="Country" Value="FR" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
+<PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
 </LANGUAGE> 
 <LANGUAGE NameLocal="русский" NameEnglish="Russian" Cmd="LS == 3">
 <PHRASE Key="0" Value="Пономарь" Comment="This is the only entry for this key."/>
@@ -185,6 +191,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="CommSep" Value="; " Comment="This is the mark to separate the different commemorations that are dispalyed."/>
 <PHRASE Key="ReadSep" Value="; " Comment="This is the mark to separate the readings."/>
 <PHRASE Key="Colon" Value=": " Comment="This is for everytime that a colon is required."/>
+<PHRASE Key="Language" Value="ru" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<PHRASE Key="Country" Value="RU" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
+<PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
 </LANGUAGE>
 <LANGUAGE NameLocal="церковнославѧнский" NameEnglish="Church Slavonic" Cmd="LS == 2">
 <PHRASE Key="0" Value="Пономарь" Comment="This is the only entry for this key."/>
@@ -236,6 +245,11 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="CommSep" Value="; " Comment="This is the mark to separate the different commemorations that are dispalyed."/>
 <PHRASE Key="ReadSep" Value="; " Comment="This is the mark to separate the readings."/>
 <PHRASE Key="Colon" Value=": " Comment="This is for everytime that a colon is required."/>
+<PHRASE Key="Language" Value="ru" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<!-- Unfortunately, Church Slavonic is not a recognised language by the ISO -->
+<PHRASE Key="Country" Value="RU" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
+<PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
+<!-- Traditionally, Church Slavonic uses a glyph-based approach to writing numbers, which at present cannot be truly implemented! -->
 </LANGUAGE>
 <LANGUAGE NameLocal="中文（简） " NameEnglish="Simplified Chinese" Cmd="LS == 5">
 <PHRASE Key="0" Value="波诺马里" Comment="This is the only entry for this key."/>
@@ -280,13 +294,16 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Terce" Value="No Service Today/,三时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="No Service Today/,六时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="None" Value="No Service Today/,九时课/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="FontFaceM" Value="Arial Unicode MS" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontFaceM" Value="SimSun" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
 <PHRASE Key="FontSizeM" Value="20" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
-<PHRASE Key="FontFaceL" Value="Arial Unicode MS" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
+<PHRASE Key="FontFaceL" Value="SimSun" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
 <PHRASE Key="FontSizeL" Value="20" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="CommSep" Value="；" Comment="This is the mark to separate the different commemorations that are dispalyed."/>
 <PHRASE Key="ReadSep" Value="；" Comment="This is the mark to separate the readings."/>
 <PHRASE Key="Colon" Value="：" Comment="This is for everytime that a colon is required."/>
+<PHRASE Key="Language" Value="zh" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<PHRASE Key="Country" Value="CN" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
+<PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
 </LANGUAGE>
 <LANGUAGE NameLocal="中文（繁）" NameEnglish="Traditional Chinese" Cmd="LS == 6">
 <PHRASE Key="0" Value="波諾馬里" Comment="This is the only entry for this key."/>
@@ -331,13 +348,17 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Terce" Value="No Service Today/,三時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="No Service Today/,六時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="None" Value="No Service Today/,九時課/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="FontFaceM" Value="Arial Unicode MS" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontFaceM" Value="MingLiU" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
 <PHRASE Key="FontSizeM" Value="24" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
-<PHRASE Key="FontFaceL" Value="Arial Unicode MS" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
-<PHRASE Key="FontSizeL" Value="28" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontFaceL" Value="MingLiU" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
+<PHRASE Key="FontSizeL" Value="24" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="CommSep" Value="；" Comment="This is the mark to separate the different commemorations that are dispalyed."/>
 <PHRASE Key="ReadSep" Value="；" Comment="This is the mark to separate the readings."/>
 <PHRASE Key="Colon" Value="：" Comment="This is for everytime that a colon is required."/>
+<PHRASE Key="Language" Value="zh_Hant" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<!-- This is seems to be a permissible approach for the traditional Chinese characters. -->
+<PHRASE Key="Country" Value="HK" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
+<PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
 </LANGUAGE>
 <DONE Value="MenuFiles, LanguagePack, LanguageSelector, About, ConfigurationFiles, Main, GospelSelector, OrderedHashtable, DocHanlder,QDParser, Sunrise, JCalendar, JDaySelector, Paschalion, Primes, DivineLiturgy, StringOp (I could not successfully translate this section),JDate,Bible,"/>
 <TODO Value="  Reporter, " />

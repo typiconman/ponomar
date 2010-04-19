@@ -90,7 +90,12 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
                         if (AvailableLanguages[i].substring(AvailableLanguages[i].length()-2).equals("\u4E2D\u6587"))
                         {
                             //We are going to treat Chinese specially
-                            Font ChineseFont=new Font("Arial Unicode MS",Font.PLAIN,20);
+                            String FontName="SimSun";
+                            if (AvailableLanguages[i].equals("\u7E41\u9AD4\u4E2D\u6587"))
+                            {
+                                FontName="MingLiU";
+                            }
+                            Font ChineseFont=new Font(FontName,Font.PLAIN,20);
                             LanguageBox.setFont(ChineseFont);
 
                         }
@@ -107,7 +112,7 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
                         else
                         {
                             //We do not want the default font necessarily being used here.
-                            if (CurrentFont.getFontName().toString().equals("Hirmos Ponomar"))
+                            //if (CurrentFont.getFontName().toString().equals("Hirmos Ponomar"))
                                 //This is only an issue for fonts that lack a complete character set.
                             {
                             Font DefaultFont=new Font("Times New Roman",Font.BOLD,14);

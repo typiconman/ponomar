@@ -52,6 +52,6 @@ class About extends JFrame
 		setLocationRelativeTo(null);
 		//ALLOWS US TO ADD OUR OWN IMAGES IN THE TOP OF THE WINDOW
 		//setIconImage(new ImageIcon(imgURL).getImage());
-		setVisible(true);
+		setVisible(true);                
 	}
 }

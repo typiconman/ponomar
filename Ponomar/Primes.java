@@ -195,7 +195,8 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		frames.setSize(800,700);
 		frames.setVisible(true);
                 
-                
+                Helpers orient=new Helpers();
+                orient.applyOrientation(frames,(ComponentOrientation)StringOp.dayInfo.get("Orient"));
 
 		//scrollPane.top();
 	}
@@ -515,7 +516,8 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
         String name = source.getText();
        if (name.equals(HelpNames[2]))
         {
-        	 new About();
+        	 Helpers orient=new Helpers();
+                orient.applyOrientation(new About(),(ComponentOrientation)StringOp.dayInfo.get("Orient"));
         }
          if (name.equals(HelpNames[0]))
         {

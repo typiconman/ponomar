@@ -166,7 +166,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
         //System.out.println(key);
       }
         }
-                System.out.println(this.getFont());
+                //System.out.println(this.getFont());
                 setTitle((String)Phrases.Phrases.get("0"));
                 RSep=(String)Phrases.Phrases.get("ReadSep");
                 CSep=(String)Phrases.Phrases.get("CommSep");
@@ -238,7 +238,11 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                     this.setSize(screen);
                     //System.out.println(screen);
                 }
-                
+                Helpers orient=new Helpers();
+                Locale place=new Locale(Phrases.Phrases.get("Language").toString(),Phrases.Phrases.get("Country").toString());
+                StringOp.dayInfo.put("Locale",place);
+                StringOp.dayInfo.put("Orient",ComponentOrientation.getOrientation(place));
+                orient.applyOrientation(this,ComponentOrientation.getOrientation(place));
 		write();
 	}
 
@@ -266,7 +270,9 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
         String name = source.getText();
        if (name.equals(HelpNames[2]))
         {
-        	 new About();
+        	 //new About();
+                 Helpers orient=new Helpers();
+                orient.applyOrientation(new About(),(ComponentOrientation)StringOp.dayInfo.get("Orient"));
         }
         if (name.equals(HelpNames[0]))
         {
@@ -339,7 +345,8 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
           if (name.equals(BibleName[0]))
         {
         	//Launch the Bible Reader
-        	new Bible("Gen","1:1-31");
+               Helpers orient=new Helpers();
+        orient.applyOrientation(new Bible("Gen","1:1-31"),(ComponentOrientation)StringOp.dayInfo.get("Orient"));
         }
         if(name.equals(FileNames[6]))
         {
@@ -544,6 +551,8 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 					bible.show();
 				} catch (NullPointerException npe) {
 					bible = new Bible(parts[1], parts[2]);
+                                        Helpers orient=new Helpers();
+                orient.applyOrientation(bible,(ComponentOrientation)StringOp.dayInfo.get("Orient"));
 				}
 			}
 		}
