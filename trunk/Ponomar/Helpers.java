@@ -139,6 +139,28 @@ class Helpers
 			}
 		}
 	}
+        public void applyOrientation(Component c, ComponentOrientation o)
+        {
+            //Based on the programme written in the book Java Internationalisation.
+            c.setComponentOrientation(o);
+            if (c instanceof JMenu)
+            {
+                JMenu menu = (JMenu)c;
+                int ncomponents = menu.getMenuComponentCount();
+                for (int i=0; i<ncomponents;i++)
+                {
+                    applyOrientation(menu.getMenuComponent(i),o);
+                }
+            }else if (c instanceof Container)
+            {
+                Container container=(Container)c;
+                int ncomponents=container.getComponentCount();
+                for (int i=0; i<ncomponents; i++)
+                {
+                    applyOrientation(container.getComponent(i),o);
+                }
+            }            
+        }
 	
 }
 

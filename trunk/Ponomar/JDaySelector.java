@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+import java.text.*;
+import java.io.UnsupportedEncodingException;
 
 /**************************************************************
 JDaySelector: A class for the object that does the heavy duty work in JCalendar
@@ -67,10 +69,21 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 	private int[] fasts;
 	private LanguagePack Text=new LanguagePack();
         private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.BOLD,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
+        private NumberFormat numFormat = NumberFormat.getInstance(new Locale(Text.Phrases.get("Language").toString(),Text.Phrases.get("Country").toString()));
+        //(String)Text.Phrases.get("LanguageMenu")
+        private DecimalFormat df=(DecimalFormat)numFormat;
 
 	protected JDaySelector()
 	{
-		setName("JDaySelector");
+            //Initialise the required locales
+            DecimalFormatSymbols dfs=df.getDecimalFormatSymbols();
+            //dfs.setZeroDigit('\u0660');
+            
+            dfs.setZeroDigit(Text.Phrases.get("ZeroPoint").toString().charAt(0));
+            //System.out.println(Text.Phrases.get("ZeroPoint").toString().charAt(0));
+            df.setDecimalFormatSymbols(dfs);
+
+            setName("JDaySelector");
 		setBackground(Color.blue);
 		//locale = Locale.getDefault();
 
@@ -231,7 +244,10 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 
 		while (JDate.difference(firstDayOfNextMonth, tmpCalendar) > 0)
 		{
-			days[i + n + 7].setText(Integer.toString(n + 1));
+                    
+                    days[i + n + 7].setText(numFormat.format(n + 1)); //Integer.toString(n + 1))
+                     //days[i + n + 7].setText(Integer.toString(n + 1));
+                    
                         //Potentially there might be a need to change the font of the numbers here;
                         //for those cases where non-numbers are used to mark a calendar!
 			days[i + n + 7].setVisible(true);
@@ -396,7 +412,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 
 		for (int i = 7; i < 49; i++)
 		{
-			if (days[i].getText().equals(Integer.toString(d)))
+			if (days[i].getText().equals(numFormat.format(d)))
 			{
 				selectedDay = days[i];
 				oldColor = selectedDay.getBackground();

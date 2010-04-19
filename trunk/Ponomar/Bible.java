@@ -117,9 +117,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         int indexV = 0;
         Vector vers1 = new Vector(versions.values());
         for (indexV = 0; indexV < vers1.size(); indexV++) {
-            System.out.println("Line 116 issues");
-            System.out.println(vers1.get(indexV));
-            System.out.println(findId.get(vers1.get(indexV)).toString().equals(curversion));
+            
             if (findId.get(vers1.get(indexV)).toString().equals(curversion)) {
                 break;
             }
@@ -213,7 +211,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 
         pack();
         setSize(700, 600);
-        setVisible(true);
+        setVisible(true);       
         update(curbook, curpassage);
     }
 
