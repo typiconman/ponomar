@@ -2,12 +2,14 @@
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Hieromartyr Januarius Bishop of Beneventum, and the deacons Proculus, Sossius and Faustus, Desiderius the Reader, Eutychius and Acution, laymen (+ c.305)" Id="908" Type="1" />
 <SAINT Name="Holy Martyrs Theodore, his mother Philippa, Dioscorus, Socrates and Dionysius of Perge in Pamphylia (2nd C)" Id="909" Type="1" />
+<SAINT Name="Finding of the relics of Venerable Theodore of Sanaxara (+1999)" Id="" Type="0" />
+<SAINT Name="Righteous Alexis of Bortsurman (+1848)" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Priest John (+1918)" Id="" Type="0"/>
+<SAINT Name="New Hieroconfessor Priest Nicholas (+1933)" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Priest Alexis (+1938)" Id="" Type="0"/>
 <SAINT Name="Martyrs Isaac, Apollos and Quadratus (+303)" Id="910" Type="0" />
-<SAINT Name="Martyr Alexandra" Id="" Type="0" />
 <SAINT Name="Holy Hierarch Maximian, Patriarch of Constantinople (+434)" Id="911" Type="0" />
-<SAINT Name="Venerable Theodore of Sanaxara" Id="" Type="0" />
-<SAINT Name="Venerable Alexis of Bortsurman (+1848)" Id="" Type="0" />
-<SAINT Name="New Confessor Priest Nicholas (+1933)" Id="" Type="0" />
+<SAINT Name="Martyr Alexandra" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Sts Janvier, Evêque de Benevent et ses compagnons" Id="908" Type="1" />
@@ -16,7 +18,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Сщмч. Ианнуария еп. и с ним мчч. Прокула, Соссия и Фавста диаконов, Дисидерия чтеца, Евтихия и Акутиона (ок. 305)" Id="908" Type="1"/>
-<SAINT Name="Мч. Феодора, иже в Пергии, матери его Филиппии, Диоскора, Сократа и Дионисия (ок. 138-161)" Id="909" Type="1"/>
+<SAINT Name="Мч. Феодора, иже в Пергии, матери его Филиппии, Диоскора, Сократа и Дионисия (II)" Id="909" Type="1"/>
 <SAINT Name="Обретение мощей прп. Феодора Санаксарского (1999)" Id="" Type="0"/>
 <SAINT Name="Прав. Алексия Бортсурманского (1848)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Иоанна пресвитера (1918)" Id="" Type="0"/>
@@ -24,5 +26,35 @@
 <SAINT Name="Сщмч. Алексия пресвитера (1938)" Id="" Type="0"/>
 <SAINT Name="Мчч. Исакия, Аполлоса и Кодрата (303)" Id="910" Type="0"/>
 <SAINT Name="Свт Максимиана, патриарха Константинопольского (434)" Id="911" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道司教雅努阿里（本奈文托主教）及偕同其就义者：斐斯托、普若克洛、索西托三位辅祭；诵经士迪西德里；艾弗提希及阿库提两位信士（颇佐利地方，305年）" Id="908" Type="1" />
+<SAINT Name="殉道司祭德奥多若、其母斐利帕、及偕同他们就义者：迪奥斯科若、索克拉提、迪奥尼西（庞斐利亚的佩尔吉，2世纪）" Id="909" Type="1" />
+<SAINT Name="寻或萨那克撒尔的圣德奥多若（1791年）之圣髑纪念日（1999年）" Id="" Type="0" />
+<SAINT Name="圣阿莱克西（尼支尼•诺夫哥罗德的博尔楚玛尼地方之司祭，1848年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭约安（1918年）" Id="" Type="0"/>
+<SAINT Name="新司祭宣信者尼科拉（1933年）" Id="" Type="0" />
+<SAINT Name="新H殉道司祭阿莱克西（1938年）" Id="" Type="0"/>
+<SAINT Name="殉道者伊萨基、阿颇罗、科德拉特（尼科美底亚，303年）" Id="910" Type="0" />
+<SAINT Name="圣玛克西默（一名玛克西弥安，君士坦丁堡牧首，434年）" Id="911" Type="0" />
+<SAINT Name="殉道妇亚历山德拉皇后（303年，于本月23日所纪念者为同一人）" Id="" Type="0" />
+<SAINT Name="圣贝邬诺（英格兰的克林挪格地方修道院院长， 640年）" Id="" Type="0"/>
+<SAINT Name="圣麦尔路巴（克罗桑的阿普尔地方，722年）" Id="" Type="0"/>
+<SAINT Name="圣阿纳斯塔西（西奈山，8世纪初）" Id="" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道司教雅努阿里（本奈文托主教）及偕同其就義者：斐斯托、普若克洛、索西托三位輔祭；誦經士迪西德里；艾弗提希及阿庫提兩位信士（頗佐利地方，305年）" Id="908" Type="1" />
+<SAINT Name="殉道司祭德奧多若、其母斐利帕、及偕同他們就義者：迪奧斯科若、索克拉提、迪奧尼西（龐斐利亞的佩爾吉，二世紀）" Id="909" Type="1" />
+<SAINT Name="尋或薩那克撒爾的聖德奧多若（1791年）之聖髑紀念日（1999年）" Id="" Type="0" />
+<SAINT Name="聖阿萊克西（尼支尼•諾夫哥羅德的博爾楚瑪尼地方之司祭，1848年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭約安（1918年）" Id="" Type="0"/>
+<SAINT Name="新司祭宣信者尼科拉（1933年）" Id="" Type="0" />
+<SAINT Name="新H殉道司祭阿萊克西（1938年）" Id="" Type="0"/>
+<SAINT Name="殉道者伊薩基、阿頗羅、科德拉特（尼科美底亞，303年）" Id="910" Type="0" />
+<SAINT Name="聖瑪克西默（一名瑪克西彌安，君士坦丁堡牧首，434年）" Id="911" Type="0" />
+<SAINT Name="殉道婦亞歷山德拉皇后（303年，於本月二十三日所紀念者為同一人）" Id="" Type="0" />
+<SAINT Name="聖貝鄔諾（英格蘭的克林挪格地方修道院院長， 640年）" Id="" Type="0"/>
+<SAINT Name="聖麥爾路巴（克羅桑的阿普爾地方，722年）" Id="" Type="0"/>
+<SAINT Name="聖阿納斯塔西（西奈山，八世紀初）" Id="" Type="0"/>
 </LANGUAGE>
 </DAY>
