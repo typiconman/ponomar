@@ -8,4 +8,10 @@
 <LANGUAGE Cmd="LS == 2 || LS == 3">
 <TEXT Value="http://orthlib.ru"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="来源于诸圣会的《中国正教会》网站：http://orthodox.cn/liturgical"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="來源於諸聖會的《中國正教會》網站：http://orthodox.cn/liturgical"/>
+</LANGUAGE>
 </COMMONPRAYER>

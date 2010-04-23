@@ -11,4 +11,10 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="ΑΚΟΛΟΥΘΙΑ ΤΩΝ ΜΕΓΑΛΩΝ ΩΡΩΝ"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="皇时课"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="皇時課"/>
+</LANGUAGE>
 </COMMONPRAYER>

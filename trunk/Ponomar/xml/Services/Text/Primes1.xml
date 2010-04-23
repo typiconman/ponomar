@@ -11,4 +11,10 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="ΠΟΝΟΜΑΡΙΟΣ: ΩΡΑ ΠΡΩΤΗ"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="波诺马里：一时课"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="波諾馬里：一時課"/>
+</LANGUAGE>
 </COMMONPRAYER>
