@@ -8,4 +8,10 @@
 <LANGUAGE Cmd="LS == 2 || LS == 3">
 <TEXT Value="Чте́цъ ста́ръ: "/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="Senior诵经士："/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="Senior誦經士："/>
+</LANGUAGE>
 </COMMONPRAYER>

@@ -8,4 +8,10 @@
 <LANGUAGE Cmd="LS == 2 || LS == 3">
 <TEXT Value="Бл҃гословѝ."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="神圣之父，请祝福。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="神聖之父，請祝福。"/>
+</LANGUAGE>
 </COMMONPRAYER>

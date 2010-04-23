@@ -8,4 +8,10 @@
 <LANGUAGE Cmd="LS == 2 || LS == 3">
 <TEXT Value="Дꙋ́хъ же цѣломꙋ́дрїѧ, смиренномꙋ́дрїѧ, терпѣ́нїѧ и҆ любвѐ да́рꙋй мѝ, рабꙋ̀ твоемꙋ̀."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="但求赐节制，谦逊，忍耐及爱慕之德于你的仆役。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="但求賜節制，謙遜，忍耐及愛慕之德於你的僕役。"/>
+</LANGUAGE>
 </COMMONPRAYER>

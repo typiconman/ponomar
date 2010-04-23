@@ -16,4 +16,12 @@
 <HEADER Value=""/>
 <TEXT Value="Χαίρετε καὶ ἀγαλλιᾶσθε, ὅτι ὁ μισθὸς ὑμῶν πολὺς ἐν τοῖς  οὐρανοῖς."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<HEADER Value=""/>
+<TEXT Value="你们应当欢喜快乐，因为你们在天上的赏报是丰厚的！"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<HEADER Value=""/>
+<TEXT Value="你們應當歡喜快樂，因為你們在天上的賞報是豐厚的！"/>
+</LANGUAGE>
 </COMMONPRAYER>

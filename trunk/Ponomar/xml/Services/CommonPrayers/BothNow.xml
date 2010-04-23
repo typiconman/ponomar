@@ -11,4 +11,10 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Καὶ νῦν..."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="自今至永远，及于万世。阿民。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="自今至永遠，及於萬世。阿民。"/>
+</LANGUAGE>
 </COMMONPRAYER>

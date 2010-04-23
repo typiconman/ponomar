@@ -11,4 +11,7 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Σοφία."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5 || LS == 6">
+<TEXT Value="智慧。"/>
+</LANGUAGE>
 </COMMONPRAYER>
