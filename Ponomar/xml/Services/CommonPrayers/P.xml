@@ -11,4 +11,7 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Ἱερεὺς: "/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5 || LS == 6">
+<TEXT Value="司祭："/>
+</LANGUAGE>
 </COMMONPRAYER>

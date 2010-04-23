@@ -11,4 +11,10 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Σοφία. Πρόσχωμεν."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="智慧。让我们专心一意。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="智慧。讓我們專心一意。"/>
+</LANGUAGE>
 </COMMONPRAYER>

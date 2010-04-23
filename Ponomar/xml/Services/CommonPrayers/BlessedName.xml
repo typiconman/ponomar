@@ -16,4 +16,12 @@
 <HEADER Value=""/>
 <TEXT Value="Εἴη τὸ ὄνομα Κυρίου εὐλογημένον από του νῦν και έως του αιώνος. "/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<HEADER Value=""/>
+<TEXT Value="赞颂归于主的名，从现今直到永远。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<HEADER Value=""/>
+<TEXT Value="讚頌歸於主的名，從現今直到永遠。"/>
+</LANGUAGE>
 </COMMONPRAYER>

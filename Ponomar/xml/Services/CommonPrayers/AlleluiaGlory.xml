@@ -11,4 +11,10 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Ἀλληλούϊα, Ἀλληλούϊα, Ἀλληλούϊα. Δόξα σοι ὁ Θεός"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="阿肋路亚，阿肋路亚，阿肋路亚。荣耀归于你，我们的上帝。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="阿肋路亞，阿肋路亞，阿肋路亞。榮耀歸於你，我們的上帝。"/>
+</LANGUAGE>
 </COMMONPRAYER>

@@ -11,4 +11,10 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Ἀναγνώστης: "/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="诵经士："/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="誦經士："/>
+</LANGUAGE>
 </COMMONPRAYER>

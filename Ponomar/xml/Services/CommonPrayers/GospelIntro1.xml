@@ -11,4 +11,10 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Σοφία. Ὀρθοί, ἀκούσωμεν τοῦ ἁγίου Εὐαγγελίου."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="智慧，肃立！让我们聆听神圣的福音。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="智慧，肅立！讓我們聆聽神聖的福音。"/>
+</LANGUAGE>
 </COMMONPRAYER>

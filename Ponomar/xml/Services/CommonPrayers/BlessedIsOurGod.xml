@@ -11,4 +11,10 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Εὐλογητὸς ὁ Θεὸς ἡμῶν, πάντοτε, νῦν καὶ ἀεί, καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="赞颂归于我们的上帝，恒常如是，自今至永远，及于万世。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="讚頌歸於我們的上帝，恆常如是，自今至永遠，及於萬世。"/>
+</LANGUAGE>
 </COMMONPRAYER>

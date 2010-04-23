@@ -11,4 +11,12 @@
 <HEADER Value="Мл҃тва ст҃а́гѡ ефраїма"/>
 <TEXT Value="Гдⷭи и҆ влⷣко живота̀ моегѡ̀, дꙋ́хъ пра́здности, ѹ҆ны́нїѧ, любонача́лїѧ и҆ праздносло́вїѧ не да́ждь мѝ."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<HEADER Value="叙利亚的圣厄弗冷祝文" />
+<TEXT Value="主，我生命之君宰，勿许我陷于懈惰，好奇，图权及空谈之偏情。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<HEADER Value="敘利亞的聖厄弗冷祝文" />
+<TEXT Value="主，我生命之君宰，勿許我陷於懈惰，好奇，圖權及空談之偏情。"/>
+</LANGUAGE>
 </COMMONPRAYER>

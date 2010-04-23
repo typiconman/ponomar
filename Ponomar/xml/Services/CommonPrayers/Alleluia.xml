@@ -11,4 +11,10 @@
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Ἀλληλούϊα."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="阿肋路亚。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="阿肋路亞。"/>
+</LANGUAGE>
 </COMMONPRAYER>
