@@ -1,12 +1,13 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Holy Hierarch Theodore the Sykeote, Bishop of Anastasiopolis (+613)" Id="2200" Type="1" />
-<SAINT Name="Venerable Vitalius the Monk of Gaza (7th C)" Id="916" Type="0" />
-<SAINT Name="Apostles Nathaniel, Luke and Clement of the Seventy (1st C)" Id="1764" Type="0" />
-<SAINT Name="Martyr Epipodus of Lyon" Id="" Type="0" />
-<SAINT Name="Martyrs Leonidus, Aratores, Kyriakus, and Basil" Id="" Type="0" />
+<SAINT Name="HNew Hieromartyr Priest Eustathius (+1918)" Id="" Type="0" />
+<SAINT Name="Martyr Demetrius (+1942)" Id="" Type="0"/>
 <SAINT Name="Translation of the relics of the Blessed Vsevolod, in Holy Baptism Gabriel, Prince of Pskov (1834)" Id="438" Type="0" />
-<SAINT Name="Hieromartyr Platon, Bishop of Banja Luka" Id="" Type="0" />
+<SAINT Name="Apostles Nathaniel, Luke and Clement of the Seventy (1st C)" Id="1764" Type="0" />
+<SAINT Name="Venerable Vitalius the Monk of Gaza (+609-620)" Id="916" Type="0" />
+<SAINT Name="New Hieromartyr Platon, Bishop of Banja Luka (+1941)" Id="" Type="0" />
+<SAINT Name="Martyr Epipodus of Lyon" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Père Théodore de Sykeon, Evêque d'Anastasiopolis" Id="2200" Type="1" />
@@ -18,8 +19,31 @@
 <SAINT Name="Прп. Феодора Сикеота, еп. Анастасиупольского (613)" Id="2200" Type="1"/>
 <SAINT Name="Сщмч. Евстафия пресвитера (1918)" Id="" Type="0"/>
 <SAINT Name="Мч. Димитрия (1942)" Id="" Type="0"/>
+<SAINT Name="Перенесение мощей блгв. кн. Всеволода, во святом Крещении Гавриила, Псковского (1834)" Id="438" Type="0"/>
 <SAINT Name="Апп. Нафанаила, Луки и Климента (I)" Id="1764" Type="0"/>
 <SAINT Name="Прп. Виталия (609-620)" Id="916" Type="0"/>
-<SAINT Name="Перенесение мощей блгв. кн. Всеволода, во святом Крещении Гавриила, Псковского (1834)" Id="438" Type="0"/>
+<SAINT Name="Сщмч. Платона, еп. Банялукского (1941)" Id="" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣德奥多若（西凯翁地方人，阿纳斯塔西奥颇利主教，613年）" Id="2200" Type="1" />
+<SAINT Name="新殉道司祭艾弗斯塔提（1918年）" Id="" Type="0" />
+<SAINT Name="新殉道者迪弥特里（1942年）" Id="" Type="0"/>
+<SAINT Name="敬迁圣维塞佛洛德（受浸礼时候的名字是伽弗里伊尔，普斯科夫之王子及显行灵迹者，1834年）" Id="438" Type="0" />
+<SAINT Name="使徒纳塔那伊尔、路喀、克利弥斯（1世纪）" Id="1764" Type="0" />
+<SAINT Name="圣维塔利（加沙的尊者塞里德修道院，609-620年间）" Id="916" Type="0" />
+<SAINT Name="新殉道司教普拉同（般嘉路卡地方，1941年）" Id="" Type="0" />
+<SAINT Name="殉道者埃彼颇迪（里昂，177年）" Id="" Type="0" />
+<SAINT Name="殉道者莱奥尼达（亚历山大里亚，202年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖德奧多若（西凱翁地方人，阿納斯塔西奧頗利主教，613年）" Id="2200" Type="1" />
+<SAINT Name="新殉道司祭艾弗斯塔提（1918年）" Id="" Type="0" />
+<SAINT Name="新殉道者迪彌特里（1942年）" Id="" Type="0"/>
+<SAINT Name="敬遷聖維塞佛洛德（受浸禮時候的名字是伽弗里伊爾，普斯科夫之王子及顯行靈蹟者，1834年）" Id="438" Type="0" />
+<SAINT Name="使徒納塔那伊爾、路喀、克利彌斯（一世紀）" Id="1764" Type="0" />
+<SAINT Name="聖維塔利（加沙的尊者塞里德修道院，609-620年間）" Id="916" Type="0" />
+<SAINT Name="新殉道司教普拉同（般嘉路卡地方，1941年）" Id="" Type="0" />
+<SAINT Name="殉道者埃彼頗迪（里昂，177年）" Id="" Type="0" />
+<SAINT Name="殉道者萊奧尼達（亞歷山大里亞，202年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
