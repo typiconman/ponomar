@@ -39,6 +39,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     private String lastversion = "";
     private String instructions = "";
     private OrderedHashtable versions = new OrderedHashtable();
+    private OrderedHashtable versions2 = new OrderedHashtable();
     private OrderedHashtable books = new OrderedHashtable();
     private OrderedHashtable chapters = new OrderedHashtable();
     private OrderedHashtable abbrev = new OrderedHashtable();
@@ -115,7 +116,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         add(versionsBox, c);
         //GET THE DEFAULT LANGUAGE BIBLE INDEX LOCATION IN THE GIVEN LIST
         int indexV = 0;
-        Vector vers1 = new Vector(versions.values());
+        Vector vers1 = new Vector(versions2.values());
         for (indexV = 0; indexV < vers1.size(); indexV++) {
             
             if (findId.get(vers1.get(indexV)).toString().equals(curversion)) {
@@ -236,10 +237,11 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
             readFile = true;
         }
         if (elem.equals("BIBLE")) {
-            versions.put((String) table.get("Id"), (String) table.get("Name"));
+            versions2.put(table.get("Id").toString(),table.get("Name").toString() );
+            //versions.put("-1","<html><b><u>T</u>wo</b><br>lines</html>");
             lastversion = (String) table.get("Id");
             currentBible=(String) table.get("Name");
-             findId.put((String) table.get("Name"), (String) table.get("Id"));//ADDED Y.S.
+            findId.put((String) table.get("Name"), (String) table.get("Id"));//ADDED Y.S.
         }
         if (elem.equals("INFO")) {
             //ADDED Y.S. 2001211 n.s.
@@ -267,6 +269,9 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                     DisplaySizeA = (String) table.get("FontSize");
                 }
                 String Name=currentBible;//(String)versions.get(lastversion);
+                String entry="<html><p style=\"font-family:"+DisplayFontA+";font-size:"+DisplaySizeA+"pt\">"+Name+"</p></html>";
+                versions.put(lastversion, "<html><p style=\"font-family:"+DisplayFontA+";font-size:"+DisplaySizeA+"pt\">"+Name+"</p></html>");
+                findId.put(entry, lastversion);
                 //comboBoxList.put(lastversion,"<body style=\"font-family:"+DisplayFontA+";font-size:"+DisplaySizeA+"\">"+Name+"</body>");
                 //findIdL.put("<body style=\"font-family:"+DisplayFontA+";font-size:"+DisplaySizeA+"\">"+Name+"</body>", (String) table.get("Id"));
                 //System.out.println(versions.get(lastversion));
@@ -383,7 +388,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         String name = e.getActionCommand();
         //ALLOWS A MULTILINGUAL PROPER VERSION
         if (name.equals("comboBoxChanged")) {
-            curversion = (String) findId.get((String) versionsBox.getSelectedItem());
+           //curversion = versions2.get(findId.get(versionsBox.getSelectedIndex()).toString()).toString();
+            curversion=findId.get(versionsBox.getSelectedItem().toString()).toString();
             //REREAD THE BIBLE.XML FILE FOR THE NEW READINGS
             try {
                 
