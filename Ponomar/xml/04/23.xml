@@ -9,11 +9,12 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Holy Greatmartyr, Trophy-bearer and Wonderworker George (+303)" Id="497" Type="5" />
-<SAINT Name="Martyr Alexandra the Empress, wife of Diocletian (+314)" Id="2379" Type="0" />
+<SAINT Name="New Hieromartyr Priest John (+1940)" Id="" Type="0"/>
+<SAINT Name="Martyr Alexandra the Empress, wife of Diocletian (+303)" Id="2379" Type="0" />
 <SAINT Name="Martyr Anatolius the Soldier and Martyr Protoleon (+303)" Id="918" Type="0" />
 <SAINT Name="Martyr Glicerie the farmer, Athanasius the magus, Valerius, Donatus, and Therinus" Id="" Type="0" />
-<SAINT Name="New Martyr George of Ptolemaida" Id="" Type="0" />
-<SAINT Name="New Martyr Lazarus of Bulgaria" Id="" Type="0" />
+<SAINT Name="New Martyr George of Ptolemaida (+1752)" Id="" Type="0" />
+<SAINT Name="New Martyr Lazarus of Bulgaria (+1802)" Id="" Type="0" />
 <SAINT Name="Venerable George of Shenkura" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
@@ -26,7 +27,33 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Вмч. Георгия Победоносца (303)" Id="497" Type="5"/>
 <SAINT Name="Сщмч. Иоанна пресвитера (1940)" Id="" Type="0"/>
-<SAINT Name="Мц. царицы Александры (314)" Id="2379" Type="0"/>
+<SAINT Name="Мц. царицы Александры (303)" Id="2379" Type="0"/>
 <SAINT Name="Мчч. Анатолия и Протолеона (303)" Id="918" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="神圣荣耀之大殉道者，凯旋得胜者，显行灵迹者，格奥尔吉（303年）" Id="497" Type="5" />
+<SAINT Name="新殉道司祭约安（1940年）" Id="" Type="0"/>
+<SAINT Name="殉道妇亚历山德拉皇后（恶王戴克里先之妻，303年）" Id="2379" Type="0" />
+<SAINT Name="殉道者阿纳托利及普若托莱翁（两位因圣格奥尔吉之殉道而归化的士兵，303年）" Id="918" Type="0" />
+<SAINT Name="殉道者格利凯里、阿塔纳西、瓦莱里、多纳图（尼科美底亚）" Id="" Type="0" />
+<SAINT Name="新殉道者格奥尔吉（普托洛玛伊斯地方，1752年）" Id="" Type="0" />
+<SAINT Name="新殉道者拉匝若（保加利亚人，就义于佩尔伽默，1802年）" Id="" Type="0" />
+<SAINT Name="蒙福者格奥尔吉（申库尔斯克地方之圣愚，1462年）" Id="" Type="0" />
+<SAINT Name="殉道者特里诺（伊庇鲁斯的佛特若托地方，250年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭埃格尔（俄罗斯，斯帕司•切克里亚克村庄，1918年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭塞尔吉（本姓匝哈尔楚科，波兰的那布罗兹地方人，1943年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="神聖榮耀之大殉道者，凱旋得勝者，顯行靈蹟者，格奧爾吉（303年）" Id="497" Type="5" />
+<SAINT Name="新殉道司祭約安（1940年）" Id="" Type="0"/>
+<SAINT Name="殉道婦亞歷山德拉皇后（惡王戴克里先之妻，303年）" Id="2379" Type="0" />
+<SAINT Name="殉道者阿納托利及普若托萊翁（兩位因聖格奧爾吉之殉道而歸化的士兵，303年）" Id="918" Type="0" />
+<SAINT Name="殉道者格利凱里、阿塔納西、瓦萊里、多納圖（尼科美底亞）" Id="" Type="0" />
+<SAINT Name="新殉道者格奧爾吉（普托洛瑪伊斯地方，1752年）" Id="" Type="0" />
+<SAINT Name="新殉道者拉匝若（保加利亞人，就義於佩爾伽默，1802年）" Id="" Type="0" />
+<SAINT Name="蒙福者格奧爾吉（申庫爾斯克地方之聖愚，1462年）" Id="" Type="0" />
+<SAINT Name="殉道者特里諾（伊庇魯斯的佛特若托地方，250年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭埃格爾（俄羅斯，斯帕司•切克里亞克村莊，1918年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭塞爾吉（本姓匝哈爾楚科，波蘭的那布羅茲地方人，1943年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
