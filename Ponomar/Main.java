@@ -152,20 +152,21 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
             {
                 continue;
             }
-            if (splitkey[0].equals("Button"))
+            /*if (splitkey[0].equals("Button"))
             {
                 continue;
-            }
+            }*/
           }
           if(key.toString().equals("MenuItem.acceleratorFont"))
           {
             continue;
           }
           Font NewFont=new Font(CurrentFont.getFontName(), keyF.getStyle(),CurrentFont.getSize());
-        UIManager.put (key, NewFont);
+        UIManager.put (key, NewFont);    
         //System.out.println(key);
       }
         }
+        
                 //System.out.println(this.getFont());
                 setTitle((String)Phrases.Phrases.get("0"));
                 RSep=(String)Phrases.Phrases.get("ReadSep");
@@ -238,11 +239,12 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                     this.setSize(screen);
                     //System.out.println(screen);
                 }
-                Helpers orient=new Helpers();
-                Locale place=new Locale(Phrases.Phrases.get("Language").toString(),Phrases.Phrases.get("Country").toString());
-                StringOp.dayInfo.put("Locale",place);
+                       Locale place=new Locale(Phrases.Phrases.get("Language").toString(),Phrases.Phrases.get("Country").toString());
+        Helpers orient=new Helpers();
+        StringOp.dayInfo.put("Locale",place);
                 StringOp.dayInfo.put("Orient",ComponentOrientation.getOrientation(place));
                 orient.applyOrientation(this,ComponentOrientation.getOrientation(place));
+                this.validate();
 		write();
 	}
 
