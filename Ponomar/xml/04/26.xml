@@ -1,11 +1,10 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Hieromartyr Basil, Bishop of Amaseia (+ c.323)" Id="936" Type="1" />
+<SAINT Name="Hieromartyr Basil, Bishop of Amaseia (+ c.322)" Id="936" Type="1" />
 <SAINT Name="Holy Hierarch Stephen, Bishop of Great Perm (+1396)" Id="937" Type="3" />
-<SAINT Name="Righteous Virginmartyr Glaphyra (+322)" Id="936" Type="0" />
-<SAINT Name="Venerable Joannicius of Devich in Serbia (+1440)" Id="6920" Type="0" />
-<SAINT Name="Venerable Justa" Id="" Type="0" />
 <SAINT Name="New Hieromartyr Priest John and his children Nicholas and Peter (+1918)" Id="" Type="0" />
+<SAINT Name="Righteous Virgin Glaphyra (+322)" Id="936" Type="0" />
+<SAINT Name="Venerable Joannicius of Devich in Serbia (13th C)" Id="6920" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Basile d'Amasée et Ste Glaphyre" Id="936" Type="1" />
@@ -20,10 +19,32 @@
 <SAINT Name="St Père Riquier en Picardie" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Сщмч. Василия, еп. Амасийского (ок. 323)" Id="936" Type="1"/>
+<SAINT Name="Сщмч. Василия, еп. Амасийского (ок. 322)" Id="936" Type="1"/>
 <SAINT Name="Свт. Стефана, еп. Великопермского (1396)" Id="937" Type="3"/>
 <SAINT Name="Сщмч. Иоанна пресвитера и чад его мчч. Николая и Петра (1918)" Id="" Type="0"/>
 <SAINT Name="Прав. Глафиры девы (322)" Id="936" Type="0"/>
-<SAINT Name="Прп. Иоанникия Девиченского (1440)" Id="6920" Type="0"/>
+<SAINT Name="Прп. Иоанникия Девиченского (XIII) (Серб.)" Id="6920" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道司教瓦西里（阿玛塞亚主教，约322年）" Id="936" Type="1" />
+<SAINT Name="圣斯特梵（彼尔姆主教，1396年）" Id="937" Type="3" />
+<SAINT Name="新殉道司祭约安，他的两个儿子：尼科拉、裴特若（1918年）" Id="" Type="0" />
+<SAINT Name="义德童贞女格拉菲拉（322年）" Id="936" Type="0" />
+<SAINT Name="圣约安尼基（塞尔维亚的德维奇地方，1430年）" Id="6920" Type="0" />
+<SAINT Name="圣黎哈里（皮卡地方修道院院长，645年）" Id="" Type="0" />
+<SAINT Name="圣卡兰提（塞浦路斯的塔玛塞奥斯地方，八世纪）" Id="" Type="0" />
+<SAINT Name="圣安德列和圣阿纳托利（大圣艾弗提弥之弟子，五世纪）" Id="" Type="0" />
+<SAINT Name="圣格奥尔吉（塞浦路斯，1091年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道司教瓦西里（阿瑪塞亞主教，約322年）" Id="936" Type="1" />
+<SAINT Name="聖斯特梵（彼爾姆主教，1396年）" Id="937" Type="3" />
+<SAINT Name="新殉道司祭約安，他的兩個兒子：尼科拉、裴特若（1918年）" Id="" Type="0" />
+<SAINT Name="義德童貞女格拉菲拉（322年）" Id="936" Type="0" />
+<SAINT Name="聖約安尼基（塞爾維亞的德維奇地方，1430年）" Id="6920" Type="0" />
+<SAINT Name="聖黎哈里（皮卡地方修道院院長，645年）" Id="" Type="0" />
+<SAINT Name="聖卡蘭提（塞浦路斯的塔瑪塞奧斯地方，八世紀）" Id="" Type="0" />
+<SAINT Name="聖安德列和聖阿納托利（大聖艾弗提彌之弟子，五世紀）" Id="" Type="0" />
+<SAINT Name="聖格奧爾吉（塞浦路斯，1091年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
