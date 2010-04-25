@@ -17,6 +17,6 @@
 <SAINT Name="五旬节后第一周安息日（五旬节庆期圆满日）" Id="" Type="3" Tone="-1"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="五旬節後第一周安息日（五旬節慶期圓滿日）" Id="" Type="3" Tone="-1"/>
+<SAINT Name="五旬節後第一週安息日（五旬節慶期圓滿日）" Id="" Type="3" Tone="-1"/>
 </LANGUAGE>
 </DAY>
