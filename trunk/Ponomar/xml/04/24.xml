@@ -1,19 +1,20 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Martyr Sabbas Stratelates 'the General' of Rome and 70 soldiers with him (+272)" Id="922" Type="1" />
-<SAINT Name="Martyrs Eusebius, Neon, Leontius, Longinus, and 40 Others (+303)" Id="928" Type="0" />
+<SAINT Name="Martyr Sergius (+1938)" Id="" Type="0"/>
+<SAINT Name="Venerable Sava the Recluse of the Near Caves of Kiev (13th C)" Id="925" Type="0" />
+<SAINT Name="Venerable Alexius the Hermit of the Near Caves of Kiev (13th C)" Id="133" Type="0"/>
 <SAINT Name="Martyrs Pasikrates and Valention in Moesia, Bulgaria (+228)" Id="927" Type="0" />
+<SAINT Name="Martyrs Eusebius, Neon, Leontius, Longinus, and 40 Others (+303)" Id="928" Type="0" />
 <SAINT Name="Venerable Thomas the Fool-for-Christ of Syria (+ c.546-560)" Id="923" Type="0" />
 <SAINT Name="Venerable Elizabeth the Wonderworker of Constantinople (6th-8th C)" Id="924" Type="0" />
-<SAINT Name="Martyr Alexander of Lyon" Id="" Type="0" />
-<SAINT Name="Venerable Sava the Recluse of the Caves of Kiev (13th C)" Id="925" Type="0" />
-<SAINT Name="Martyr Luke" Id="" Type="0" />
-<SAINT Name="New Martyr Nicholas" Id="" Type="0" />
-<SAINT Name="New Martyr George" Id="" Type="0" />
-<SAINT Name="New Martyr Ducas" Id="" Type="0" />
-<SAINT Name="Venerable Innocent the Presbyter" Id="" Type="0" />
-<SAINT Name="Hieromartyr Branko of Serbia" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Priest Branko of Serbia (+1941)" Id="" Type="0" />
 <SAINT Name="Icon of the Mother of God of Molchen (1405)" Id="929" Type="0" />
+<SAINT Name="Martyr Alexander of Lyon (+177)" Id="" Type="0" />
+<SAINT Name="New Martyr Nicholas of Magnesia (+1795)" Id="" Type="0" />
+<SAINT Name="New Martyr George in Anatolia (+1796)" Id="" Type="0" />
+<SAINT Name="New Martyr Ducas of Mitylene (+1564)" Id="" Type="0" />
+<SAINT Name="Venerable Innocent the Presbyter on the Mount of Olives (4th C)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Ste Mère Elisabeth, la Thaumaturge" Id="924" Type="0" />
@@ -30,12 +31,59 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Мч. Саввы Стратилата и с ним 70-ти воинов (272)" Id="922" Type="1"/>
 <SAINT Name="Мч. Сергия (1938)" Id="" Type="0"/>
+<SAINT Name="Прп. Саввы Печерского, в Ближних пещерах (XIII)" Id="925" Type="0"/>
+<SAINT Name=" Прп. Алексия, затворника Печерского, в Ближних пещерах (XIII)" Id="133" Type="0"/>
 <SAINT Name="Мчч. Пасикрата и Валентина (228)" Id="927" Type="0"/>
 <SAINT Name="Мчч. Евсевия, Неона, Леонтия, Лонгина и иных (303)" Id="928" Type="0"/>
 <SAINT Name="Прп. Фомы юродивого (ок. 546-560)" Id="923" Type="0"/>
 <SAINT Name="Прп. Елисаветы чудотворицы (VI-VIII)" Id="924" Type="0"/>
-<SAINT Name="Прп. Саввы Печерского (XIII)" Id="925" Type="0"/>
-<SAINT Name="Прп. Алексия, затворника Печерского (XIII)" Id="133" Type="0"/>
+<SAINT Name="Сщмч. Бранко пресвитера (1941)" Id="" Type="0"/>
 <SAINT Name="Молченской  иконы Божией Матери (1405)" Id="929" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道者萨瓦将军及偕同其就义者七十名士兵（罗马，272年）" Id="922" Type="1" />
+<SAINT Name="新殉道者塞尔吉（1938年）" Id="" Type="0"/>
+<SAINT Name="圣萨瓦（基辅洞窟修道院之隐士，13世纪）" Id="925" Type="0" />
+<SAINT Name="圣阿莱克西（基辅洞窟修道院之隐士，13世纪）)" Id="133" Type="0"/>
+<SAINT Name="殉道者帕西克拉提、瓦伦提诺、犹利（保加利亚的默西亚地方，228年）" Id="927" Type="0" />
+<SAINT Name="殉道者艾弗塞维、奈翁、莱翁提、隆吉诺、及其他偕同他们就义者（尼科美底亚，303年）" Id="928" Type="0" />
+<SAINT Name="圣托玛斯（叙利亚之圣愚，550年）" Id="923" Type="0" />
+<SAINT Name="圣女埃利撒维特（君士坦丁堡之显行灵迹者，540年）" Id="924" Type="0" />
+<SAINT Name="新殉道司祭博兰科（塞尔维亚的维尔举萨地方，1941年）" Id="" Type="0" />
+<SAINT Name="默詹斯基圣母像纪念日（1405年）" Id="929" Type="0" />
+<SAINT Name="殉道者亚历山大（里昂，177年）" Id="" Type="0" />
+<SAINT Name="新殉道者尼科拉（马格内西亚，1795年）" Id="" Type="0" />
+<SAINT Name="新殉道者格奥尔吉（阿纳托利亚，1796年）" Id="" Type="0" />
+<SAINT Name="新殉道者杜喀（米提利尼，1564年）" Id="" Type="0" />
+<SAINT Name="圣英诺肯提（橄榄山地方之司祭，4世纪）" Id="" Type="0" />
+<SAINT Name="圣克塞诺丰（阿托斯圣山的圣格奥尔吉〖克塞诺丰托斯〗修道院之创建者，1018年）" Id="" Type="0" />
+<SAINT Name="圣伊利亚（1678年）及圣萨瓦（1683年）（均为特兰西瓦尼亚的阿尔德亚尔地方之都主教，驳斥加尔文派邪教徒之宣信者）" Id="" Type="0" />
+<SAINT Name="圣约熙福（宣信者，罗马尼亚的玛拉穆瑞地方主教，1711年）" Id="" Type="0" />
+<SAINT Name="圣阿莱克西（本姓托特，宾夕法尼亚州的威尔克斯•巴瑞地方之司祭，1909年）" Id="" Type="0" />
+<SAINT Name="圣维尔弗里德（约克总主教，709年）" Id="" Type="0" />
+<SAINT Name="圣埃格博尔特（爱奥那岛主教，729年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道者薩瓦將軍及偕同其就義者七十名士兵（羅馬，272年）" Id="922" Type="1" />
+<SAINT Name="新殉道者塞爾吉（1938年）" Id="" Type="0"/>
+<SAINT Name="聖薩瓦（基輔洞窟修道院之隱士，十三世紀）" Id="925" Type="0" />
+<SAINT Name="聖阿萊克西（基輔洞窟修道院之隱士，十三世紀）)" Id="133" Type="0"/>
+<SAINT Name="殉道者帕西克拉提、瓦倫提諾、猶利（保加利亞的默西亞地方，228年）" Id="927" Type="0" />
+<SAINT Name="殉道者艾弗塞維、奈翁、萊翁提、隆吉諾、及其他偕同他們就義者（尼科美底亞，303年）" Id="928" Type="0" />
+<SAINT Name="聖托瑪斯（敘利亞之聖愚，550年）" Id="923" Type="0" />
+<SAINT Name="聖女埃利撒維特（君士坦丁堡之顯行靈蹟者，540年）" Id="924" Type="0" />
+<SAINT Name="新殉道司祭博蘭科（塞爾維亞的維爾舉薩地方，1941年）" Id="" Type="0" />
+<SAINT Name="默詹斯基聖母像紀念日（1405年）" Id="929" Type="0" />
+<SAINT Name="殉道者亞歷山大（里昂，177年）" Id="" Type="0" />
+<SAINT Name="新殉道者尼科拉（馬格內西亞，1795年）" Id="" Type="0" />
+<SAINT Name="新殉道者格奧爾吉（阿納托利亞，1796年）" Id="" Type="0" />
+<SAINT Name="新殉道者杜喀（米提利尼，1564年）" Id="" Type="0" />
+<SAINT Name="聖英諾肯提（橄欖山地方之司祭，四世紀）" Id="" Type="0" />
+<SAINT Name="聖克塞諾豐（阿托斯聖山的聖格奧爾吉【克塞諾豐托斯】修道院之創建者，1018年）" Id="" Type="0" />
+<SAINT Name="聖伊利亞（1678年）及聖薩瓦（1683年）（均為特蘭西瓦尼亞的阿爾德亞爾地方之都主教，駁斥加爾文派邪教徒之宣信者）" Id="" Type="0" />
+<SAINT Name="聖約熙福（宣信者，羅馬尼亞的瑪拉穆瑞地方主教，1711年）" Id="" Type="0" />
+<SAINT Name="聖阿萊克西（本姓托特，賓夕法尼亞州的威爾克斯•巴瑞地方之司祭，1909年）" Id="" Type="0" />
+<SAINT Name="聖維爾弗里德（約克總主教，709年）" Id="" Type="0" />
+<SAINT Name="聖埃格博爾特（愛奧那島主教，729年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
