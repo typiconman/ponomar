@@ -1,12 +1,13 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Apostle and Hieromartyr Simeon, Bishop of Jerusalem, a Kinsman of the Lord (+107)" Id="1997" Type="2" />
-<SAINT Name="Venerable Stephen, Abbot of the Caves of Kiev and Bishop of Vladimir in Volynia (+1094)" Id="2065" Type="0" />
-<SAINT Name="Venerable John, Abbot of Cathares Monastery at Constantinople" Id="" Type="0" />
-<SAINT Name="Kazan Icon of the Mother of God in Aleksandrovka village, near St Petersburg" Id="" Type="0" />
-<SAINT Name="New Hieromartyrs Priest Paul and John and Martyrs Peter, Nicholas, Auxentious, Sergius, and Anastasia (+1922)" Id="" Type="0" />
+<SAINT Name="New Hieromartyrs Priests Paul and John, and Martyrs Peter, Nicholas, Auxentius, Sergius, and Anastasia (+1922)" Id="" Type="0" />
+<SAINT Name="Venerable Martyr Mary (1938)" Id="" Type="0"/>
 <SAINT Name="New Hieromartyr Priest John (+1941)" Id="" Type="0" />
+<SAINT Name="Venerable Stephen, Abbot of the Caves of Kiev and Bishop of Vladimir in Volynia (+1094)" Id="2065" Type="0" />
+<SAINT Name="Righteous Eulogius the Hospitable of Constantinople (6th C)" Id="942" Type="0"/>
 <SAINT Name="Glorification of St Hilarion, Archbishop of Vereya (1999)" Id="9113" Type="0"/>
+<SAINT Name="Venerable John, Abbot of Cathares Monastery at Constantinople" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Syméon, Evêque de Jérusalem" Id="1997" Type="2" />
@@ -24,9 +25,38 @@
 <SAINT Name="Сщмчч.  Павла  и Иоанна пресвитеров, мчч. Петра, Николая, Авксентия, Сергия и мц. Анастасии (1922)" Id="" Type="0"/>
 <SAINT Name="Прмц. Марии (1938)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Иоанна пресвитера (1941)" Id="" Type="0"/>
-<SAINT Name="Прославление сщмч. Илариона, архиепископа Верейского (1999)" Id="9113" Type="0"/>
-<SAINT Name="Прав. Евлогия странноприимца (IV)" Id="942" Type="0"/>
 <SAINT Name="Прп. Стефана, игумена Печерского, еп. Владимиро-Волынского (1094)" Id="2065" Type="0"/>
-<SAINT Name="Перенесение мощей мч. Авраамия Болгарского (1230)" Id="32" Type="1"/>
+<SAINT Name="Прав. Евлогия странноприимца (IV)" Id="942" Type="0"/>
+<SAINT Name="Прославление сщмч. Илариона, архиепископа Верейского (1999)" Id="9113" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道司教西麦翁（主基督之亲属，107年）" Id="1997" Type="2" />2
+<SAINT Name="新殉道司祭：帕弗罗、约安；殉道者：裴特若、尼科拉、阿弗克森提、塞尔吉、及殉道女阿纳斯塔西亚（1922年）" Id="" Type="0" />
+<SAINT Name="新殉道修女玛利亚（1938年）" Id="" Type="0"/>
+<SAINT Name="新殉道司祭约安（1941年）" Id="" Type="0" />
+<SAINT Name="圣斯特梵（基辅洞窟修道院修士，沃尔希尼亚的弗拉迪弥尔主教，1094年）" Id="2065" Type="0" />
+<SAINT Name="义人艾弗罗吉（好客者，君士坦丁堡，六世纪）" Id="942" Type="0"/>
+<SAINT Name="圣约安（君士坦丁堡的喀塔瑞修道院院长，832年）" Id="" Type="0" />
+<SAINT Name="圣颇利翁（潘诺尼亚的齐巴利斯地方之诵经士，306年）" Id="" Type="0" />
+<SAINT Name="圣尼康（圣革拉西默修道院院长，6世纪）" Id="" Type="0" />
+<SAINT Name="圣弗洛里贝尔特（荷兰的路伊克地方主教，746年）" Id="" Type="0" />
+<SAINT Name="塞尔维亚的光照者及总主教圣萨瓦一世之圣髑遭土耳其匪徒焚毁悼念日（1595年）" Id="" Type="0" />
+<SAINT Name="新殉道司教塞拉芬（法纳尔主教，1601年）" Id="" Type="0" />
+<SAINT Name="新殉道者伊利亚（阿托斯圣山，1686年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道司教西麥翁（主基督之親屬，107年）" Id="1997" Type="2" />2
+<SAINT Name="新殉道司祭：帕弗羅、約安；殉道者：裴特若、尼科拉、阿弗克森提、塞爾吉、及殉道女阿納斯塔西亞（1922年）" Id="" Type="0" />
+<SAINT Name="新殉道修女瑪利亞（1938年）" Id="" Type="0"/>
+<SAINT Name="新殉道司祭約安（1941年）" Id="" Type="0" />
+<SAINT Name="聖斯特梵（基輔洞窟修道院修士，沃爾希尼亞的弗拉迪彌爾主教，1094年）" Id="2065" Type="0" />
+<SAINT Name="義人艾弗羅吉（好客者，君士坦丁堡，六世紀）" Id="942" Type="0"/>
+<SAINT Name="聖約安（君士坦丁堡的喀塔瑞修道院院長，832年）" Id="" Type="0" />
+<SAINT Name="聖頗利翁（潘諾尼亞的齊巴利斯地方之誦經士，306年）" Id="" Type="0" />
+<SAINT Name="聖尼康（聖革拉西默修道院院長，六世紀）" Id="" Type="0" />
+<SAINT Name="聖弗洛里貝爾特（荷蘭的路伊克地方主教，746年）" Id="" Type="0" />
+<SAINT Name="塞爾維亞的光照者及總主教聖薩瓦一世之聖髑遭土耳其匪徒焚燬悼念日（1595年）" Id="" Type="0" />
+<SAINT Name="新殉道司教塞拉芬（法納爾主教，1601年）" Id="" Type="0" />
+<SAINT Name="新殉道者伊利亞（阿托斯聖山，1686年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
