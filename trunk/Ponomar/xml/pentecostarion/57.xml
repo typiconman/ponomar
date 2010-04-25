@@ -17,4 +17,11 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Неделя 1-я по Пятидесятнице. Всех святых" Id="" Type="0" Tone="8" />
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="五旬节后第一主日（诸圣主日）" Id="" Type="0" Tone="8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="五旬節後第一主日（諸聖主日）" Id="" Type="0" Tone="8" />
+</LANGUAGE>
+
 </DAY>
