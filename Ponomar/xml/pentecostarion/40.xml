@@ -10,17 +10,21 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Ascension of our Lord, God, and Saviour Jesus Christ" Id="6951" Type="8" Tone="-1" />
+<SAINT Name="New Martyrs in the valley of Fereydan (Iran) suffered under the Persians (17th C) (movable feast on the day of Ascension) (Georg.)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="L'Ascension de notre Seigneur, Dieu, et Saveur Jésus Christ" Id="6951" Type="8" Tone="-1"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Вознесение Господне" Id="6951" Type="8" Tone="-1"/>
+<SAINT Name="Мучеников, в долине Ферейдан (Иран) от персов пострадавших (XVII) (переходящее празднование в день Вознесения Господня) (Груз.)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="主升天节（纪念我们的主，上帝，救主耶稣基督神性的升天）" Id="6951" Type="8" Tone="-1" />
+<SAINT Name="所有在波斯蒙难的格鲁吉亚殉道者（17-18世纪）（本瞻礼五纪念）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="主升天節（紀念我們的主，上帝，救主耶穌基督神性的升天）" Id="6951" Type="8" Tone="-1" />
+<SAINT Name="所有在波斯蒙難的格魯吉亞殉道者（十七至十八世紀）（本瞻禮五紀念）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
