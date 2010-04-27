@@ -16,4 +16,16 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Неделя 2-я по Пятидесятнице, всех святых в земле Российской просиявших" Id="" Type="0" Tone="1"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="五旬节后第二主日。俄罗斯全体圣徒" Id="" Type="0" Tone="1" />
+<SAINT Name="阿托斯圣山全体圣徒" Id="" Type="0" Tone="1" />
+<SAINT Name="罗马尼亚全体圣徒" Id="" Type="0" Tone="1" />
+<SAINT Name="伊比里亚半岛全体圣徒" Id="" Type="0" Tone="1" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="五旬節後第二主日。俄羅斯全體聖徒" Id="" Type="0" Tone="1" />
+<SAINT Name="阿托斯聖山全體聖徒" Id="" Type="0" Tone="1" />
+<SAINT Name="羅馬尼亞全體聖徒" Id="" Type="0" Tone="1" />
+<SAINT Name="伊比裡亞半島全體聖徒" Id="" Type="0" Tone="1" />
+</LANGUAGE>
 </DAY>

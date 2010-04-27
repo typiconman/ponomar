@@ -13,4 +13,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Вторник 2-й седмицы по Пятидесятницы" Id="" Type="0" Tone="8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="五旬节后第二周瞻礼三" Id="" Type="0" Tone="8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="五旬節後第二週瞻禮三" Id="" Type="0" Tone="8" />
+</LANGUAGE>
 </DAY>

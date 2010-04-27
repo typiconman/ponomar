@@ -5,11 +5,17 @@
 <SCRIPTURE Type="gospel" Reading="Mt_6:31-34, 7:9-11" Pericope="19"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Monday of the 2nd week after Pentecost. Begining of the Apostles' Fast" Id="" Type="0" Tone="8" />
+<SAINT Name="Monday of the 2nd week after Pentecost. Beginning of the Apostles' Fast" Id="" Type="0" Tone="8" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1"><SAINT Name="Lundi de la 2-me semaine après le Pentecôte. Debut du Jeûne des Apôtres" Id="" Type="0" Tone="8"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Понедельник 2-й седмицы по Пятидесятницы. Начало Петрова Поста" Id="" Type="0" Tone="8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="五旬节后第二周瞻礼二（开始圣使徒斋期）" Id="" Type="0" Tone="8"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="五旬節後第二週瞻禮二（開始聖使徒齋期）" Id="" Type="0" Tone="8"/>
 </LANGUAGE>
 </DAY>
