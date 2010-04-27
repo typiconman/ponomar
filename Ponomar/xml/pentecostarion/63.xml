@@ -13,4 +13,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Суббота 2-й седмицы по Пятидесятницы. Преподобных и богоносных отцов, во Святой Горе Афоской просиявших (со 2-й недели)" Id="" Type="3" Tone="8"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="五旬节后第二周安息日" Id="" Type="0" Tone="8" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="五旬節後第二週安息日" Id="" Type="0" Tone="8" />
+</LANGUAGE>
 </DAY>
