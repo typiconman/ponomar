@@ -14,4 +14,10 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Неделя 4-я по Пятидесятнице" Id="" Type="0" Tone="3"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="五旬节后第四主日" Id="" Type="0" Tone="3" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="五旬節後第四主日" Id="" Type="0" Tone="3" />
+</LANGUAGE>
 </DAY>
