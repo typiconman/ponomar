@@ -1,7 +1,7 @@
 ﻿<DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Holy Martyrs Chrysanthus and Daria and with them  Martyrs Claudius the Tribune with his wife Hilaria and their sons Jason and Maurus, and Diodorus the Priest and Marianus the Deacon at Rome (+283)" Id="673" Type="1" />
-<SAINT Name="Venerable Sophia, Princess of Slutsk (+1612)" Id="" Type="1" />
+<SAINT Name="Venerable Sophia, Princess of Slutsk (+1612)" Id="" Type="0" />
 <SAINT Name="St John the New Confessor (+1932)" Id="" Type="0"/>
 <SAINT Name="Venerable Martyr Matrona (+1938)" Id="" Type="0"/>
 <SAINT Name="Martyr Pancharius at Nicomedia (+ c.302)" Id="675" Type="0" />
@@ -19,7 +19,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Мчч. Хрисанфа и Дарии и с ними мчч. Клавдия трибуна, Иларии, жены его, Иасона и Мавра, сынов их, Диодора пресвитера и Мариана диакона (283)" Id="673" Type="1"/>
-<SAINT Name="Прав. Софии, кн. Слуцкой (1612)" Id="" Type="1"/>
+<SAINT Name="Прав. Софии, кн. Слуцкой (1612)" Id="" Type="0"/>
 <SAINT Name="Св. Иоанна исп. (1932)" Id="" Type="0"/>
 <SAINT Name="Прмц. Матроны (1938)" Id="" Type="0"/>
 <SAINT Name="Мч. Панхария (ок. 302)" Id="675" Type="0"/>
@@ -29,7 +29,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="殉道者赫里桑托及殉道女达里亚、及偕同他们就义者：克劳迪、伊拉里亚、雅颂、玛弗若、司祭迪奥多若、辅祭玛利亚诺（罗马，283年）" Id="673" Type="1" />
-<SAINT Name="圣女索斐亚（斯路茨克和明斯克地方，1612年）" Id="" Type="1" />
+<SAINT Name="圣女索斐亚（斯路茨克和明斯克地方，1612年）" Id="" Type="0" />
 <SAINT Name="圣约安（新宣信者，1932年）" Id="" Type="0"/>
 <SAINT Name="新殉道修女玛特若纳（1938年）" Id="" Type="0"/>
 <SAINT Name="殉道者庞哈里（尼科美底亚，约302年）" Id="675" Type="0" />
@@ -42,7 +42,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="殉道者赫里桑托及殉道女達里亞、及偕同他們就義者：克勞迪、伊拉里亞、雅頌、瑪弗若、司祭迪奧多若、輔祭瑪利亞諾（羅馬，283年）" Id="673" Type="1" />
-<SAINT Name="聖女索斐亞（斯路茨克和明斯克地方，1612年）" Id="" Type="1" />
+<SAINT Name="聖女索斐亞（斯路茨克和明斯克地方，1612年）" Id="" Type="0" />
 <SAINT Name="聖約安（新宣信者，1932年）" Id="" Type="0"/>
 <SAINT Name="新殉道修女瑪特若納（1938年）" Id="" Type="0"/>
 <SAINT Name="殉道者龐哈里（尼科美底亞，約302年）" Id="675" Type="0" />

@@ -11,7 +11,7 @@
 <SAINT Name="Saints Alexander (+340), John (+ 595), and Paul the New (+784), Patriarchs of Constantinople" Id="4546" Type="1" />
 <SAINT Name="Translation of the relics of the Right-Believing Prince Alexander Nevsky from Vladimir to St Petersburg (1724)" Id="114" Type="4" />
 <SAINT Name="Finding of the relics of the Right-Believing Prince Daniel of Moscow (1652)" Id="579" Type="4" />
-<SAINT Name="Repose of the Venerable Alexander, Abbot of Svir (+ 1533)" Id="125" Type="1" />
+<SAINT Name="Repose of the Venerable Alexander, Abbot of Svir (+ 1533)" Id="125" Type="3" />
 <SAINT Name="Venerable Christopher the Roman of Palestine (6th C)" Id="4550" Type="0" />
 <SAINT Name="Venerable Wonderworker Phantine" Id="4551" Type="0" />
 <SAINT Name="Synaxis of the Serbian Hierarchs: Savva I, Savva II, Nicodemus, Joannicius, Arsenius, Eustathius, James, Daniel, Ephraim, Spiridon, Macarius, Gabriel, and Gregory" Id="4552" Type="0" />
@@ -27,13 +27,13 @@
 <SAINT Name="St Fantin le Thaumaturge" Id="4551" Type="0" />
 <SAINT Name="Ste Bryène de Nisibe" Id="" Type="0" />
 <SAINT Name="St Eulalios, Evêque de Lapithos à Chypre" Id="" Type="0" />
-<SAINT Name="St Alexandre de Svir" Id="125" Type="1" />
+<SAINT Name="St Alexandre de Svir" Id="125" Type="3" />
 <SAINT Name="St Alexandre Nevsky (translation des Reliques)" Id="114" Type="4" />
 <SAINT Name="Synaxe des Illuminateurs de l'Eglise Serbe" Id="4552" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Свтт. Александра (340), Иоанна (595) и Павла Нового (784), патриархов Константинопольских" Id="4546" Type="1"/>
-<SAINT Name="Прп. Александра Свирского (1533)" Id="125" Type="1"/>
+<SAINT Name="Прп. Александра Свирского (1533)" Id="125" Type="3"/>
 <SAINT Name="Перенесение мощей блгв. кн. Александра Невского (1724)" Id="114" Type="4"/>
 <SAINT Name="Обретение мощей блгв. кн. Даниила Московского (1652)" Id="579" Type="4"/>
 <SAINT Name="Сщмч. Петра пресвитера (1918)" Id="" Type="0"/>

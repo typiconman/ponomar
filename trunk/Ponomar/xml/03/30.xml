@@ -1,7 +1,7 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Venerable John Climacus of Sinai, Author of 'the Ladder' (+649)" Id="986" Type="1" />
-<SAINT Name="St. Sophronius, Archbishop of Irkutsk (+1771)" Id="2043" Type="1" />
+<SAINT Name="St. Sophronius, Archbishop of Irkutsk (+1771)" Id="2043" Type="0" />
 <SAINT Name="Prophet Johad (10th C, B.C.)" Id="954" Type="0" />
 <SAINT Name="Holy Apostles Sosthenes, Apollos, Cephas, Caesar and Epaphroditus of the Seventy (1st C)" Id="2038" Type="0" />
 <SAINT Name="St. Eubula, mother of Great Martyr Panteleimon (+ .305)" Id="739" Type="0"/>
@@ -16,12 +16,12 @@
 <SAINT Name="St Jean, Patriarche de Jérusalem" Id="" Type="0" />
 <SAINT Name="Ste Eubula, Mère de St Pantéléimon" Id="739" Type="0" />
 <SAINT Name="St Zacharie, Evêque de Corinthe" Id="" Type="0" />
-<SAINT Name="St. Sophrone d'Irkoutsk" Id="2043" Type="10" />
+<SAINT Name="St. Sophrone d'Irkoutsk" Id="2043" Type="0" />
 <SAINT Name="St. Rieul d'Arles" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Прп. Иоанна Лествичника (649)" Id="986" Type="1"/>
-<SAINT Name="Свт. Софрония, еп. Иркутского (1771)" Id="2043" Type="1"/>
+<SAINT Name="Свт. Софрония, еп. Иркутского (1771)" Id="2043" Type="0"/>
 <SAINT Name="Прор. Иоада (X до Р.Х.)" Id="954" Type="0"/>
 <SAINT Name="Апп. Сосфена, Аполлоса, Кифы, Кесаря и Епафродита (I)" Id="2038" Type="0"/>
 <SAINT Name="Св. Еввулы, матери вмч. Пантелеимона (ок. 305)" Id="739" Type="0"/>
@@ -30,7 +30,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="圣天梯约安（西奈山修道院修士，〈天梯〉作者，649年）" Id="986" Type="1" />
-<SAINT Name="圣索弗若尼（伊尔库茨克主教，1771年）" Id="2043" Type="1" />
+<SAINT Name="圣索弗若尼（伊尔库茨克主教，1771年）" Id="2043" Type="0" />
 <SAINT Name="先知约阿德（居于维特尔者）" Id="954" Type="0" />
 <SAINT Name="七十使徒之索斯特尼、阿颇罗、艾帕弗若迪特、凯法、凯撒尔（1世纪）" Id="2038" Type="0" />
 <SAINT Name="圣妇艾弗福利（圣庞德雷蒙之母，304年）" Id="739" Type="0"/>
@@ -43,7 +43,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="聖天梯約安（西奈山修道院修士，〈天梯〉作者，649年）" Id="986" Type="1" />
-<SAINT Name="聖索弗若尼（伊爾庫茨克主教，1771年）" Id="2043" Type="1" />
+<SAINT Name="聖索弗若尼（伊爾庫茨克主教，1771年）" Id="2043" Type="0" />
 <SAINT Name="先知約阿德（居於維特爾者）" Id="954" Type="0" />
 <SAINT Name="七十使徒之索斯特尼、阿頗羅、艾帕弗若迪特、凱法、凱撒爾（一世紀）" Id="2038" Type="0" />
 <SAINT Name="聖婦艾弗福利（聖龐德雷蒙之母，304年）" Id="739" Type="0"/>

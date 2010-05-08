@@ -13,7 +13,7 @@
 <SAINT Name="New Martyr Auxentius" Id="" Type="0" />
 <SAINT Name="Holy Hierarch Castinus, Bishop of Byzantium" Id="" Type="0" />
 <SAINT Name="Venerable Dimetrius" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Vladimir, Metropolitan of Kiev and Galicia (+ 1918)" Id="430" Type="1" />
+<SAINT Name="New Hieromartyr Vladimir, Metropolitan of Kiev and Galicia (+ 1918)" Id="430" Type="0" />
 <SAINT Name="Venerable Anatoly of Optina, the elder (+ 1894)" Id="4631" Type="0" />
 <SAINT Name="New Hieromartyr Peter, Bishop of Voronezh (+ 1929)" Id="4888" Type="0" />
 <SAINT Name="Icons of the Mother of God 'Calm my Sorrows', and 'Comfort in Distress and Sorrow'" Id="310" Type="0" />
@@ -21,7 +21,7 @@
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Grégoire le Théologien, Archevêque de Constantinople" Id="535" Type="4" />
 <SAINT Name="St Anatoly de Optina (le aîné)" Id="4631" Type="0"/>
-<SAINT Name="St Vladimir le nouveux martyre, Metropolite de Kiev" Id="430" Type="1" />
+<SAINT Name="St Vladimir le nouveux martyre, Metropolite de Kiev" Id="430" Type="0" />
 <SAINT Name="Ste Médula et ses compagnons" Id="" Type="0" />
 <SAINT Name="St Castin, Evêque de Byzance" Id="" Type="0" />
 <SAINT Name="St Dimitrios le Skevophylaxe" Id="" Type="0" />
@@ -34,7 +34,7 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Свт. Григория Богослова, архиеп. Константинопольского (389)." Id="535" Type="4"/>
 <SAINT Name="Прп. Анатолия Оптинского, Старшего (1894)" Id="4631" Type="0"/>
-<SAINT Name="Сщмч. Владимира, митр. Киевского и Галицкого (1918)." Id="430" Type="1"/>
+<SAINT Name="Сщмч. Владимира, митр. Киевского и Галицкого (1918)." Id="430" Type="0"/>
 <SAINT Name="Сщмч. Петра, архиеп. Воронежского (1929)" Id="4888" Type="0"/>
 <SAINT Name="Сщмч. Василия, еп. Прилукского. Сщмч. Стефана пресвитера. Мч. Бориса (1938)" Id="4774" Type="0"/>
 <SAINT Name="Мц. Филицаты и сыновей ее: Ианнуария, Феликса, Филиппа, Сильвана, Александра, Виталия и Марциала (ок. 164)" Id="307" Type="0"/>
@@ -52,7 +52,7 @@
 <SAINT Name="新殉道者阿弗克塞提（君士坦丁堡，1720年）" Id="" Type="0" />
 <SAINT Name="圣卡斯庭（拜占庭城主教，240年）" Id="" Type="0" />
 <SAINT Name="圣迪弥特里（被称为‘圣器保管员’君士坦丁堡人，8世纪）" Id="" Type="0" />
-<SAINT Name="新殉道司教弗拉迪弥尔（基辅都主教，俄国革命后首位殉道者，1918年）" Id="430" Type="1" />
+<SAINT Name="新殉道司教弗拉迪弥尔（基辅都主教，俄国革命后首位殉道者，1918年）" Id="430" Type="0" />
 <SAINT Name="圣阿纳托利（本姓泽尔查洛夫，奥普钦那修道院长老，1894年）" Id="4631" Type="0" />
 <SAINT Name="新殉道司祭裴特若（本姓兹维热夫，沃若奈哲主教，1929年）" Id="4888" Type="0" />
 <SAINT Name="“平息我的痛苦”圣母像纪念日" Id="310" Type="0" />
@@ -73,7 +73,7 @@
 <SAINT Name="新殉道者阿弗克塞提（君士坦丁堡，1720年）" Id="" Type="0" />
 <SAINT Name="聖卡斯庭（拜占庭城主教，240年）" Id="" Type="0" />
 <SAINT Name="聖迪彌特里（被稱為『聖器保管員』君士坦丁堡人，8世紀）" Id="" Type="0" />
-<SAINT Name="新殉道司教弗拉迪彌爾（基輔都主教，俄國革命後首位殉道者，1918年）" Id="430" Type="1" />
+<SAINT Name="新殉道司教弗拉迪彌爾（基輔都主教，俄國革命後首位殉道者，1918年）" Id="430" Type="0" />
 <SAINT Name="聖阿納托利（本姓澤爾查洛夫，奧普欽那修道院長老，1894年）" Id="4631" Type="0" />
 <SAINT Name="新殉道司祭裴特若（本姓茲維熱夫，沃若奈哲主教，1929年）" Id="4888" Type="0" />
 <SAINT Name="「平息我的痛苦」聖母像紀念日" Id="310" Type="0" />

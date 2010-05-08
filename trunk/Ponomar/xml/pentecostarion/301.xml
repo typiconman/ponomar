@@ -26,6 +26,6 @@
 <SAINT Name="Samedi de la 36-me semaine après le Pentecôte" Id="" Type="0" Tone="2"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Суббота 36-й седмицы по Пятидесятнице" Id="" Type="0" Tone="2">
+<SAINT Name="Суббота 36-й седмицы по Пятидесятнице" Id="" Type="0" Tone="2"/>
 </LANGUAGE>
 </DAY>

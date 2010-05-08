@@ -2,7 +2,7 @@
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Hieromartyr Simeon, Bishop in Persia, Priests Abdechalas and Ananias, and Martyrs Usthazanes, Phusicus, Askitrea, Azades, and others (+344)" Id="873" Type="1" />
 <SAINT Name="St. Acacius the Bishop of Melitene (+ c.435)" Id="874" Type="1" />
-<SAINT Name="Venerable Zosimas the Abbot of Solovki (+1478)" Id="854" Type="0" />
+<SAINT Name="Venerable Zosimas the Abbot of Solovki (+1478)" Id="854" Type="3" />
 <SAINT Name="St. Michael the New Hieroconfessor (+1935)" Id="4766" Type="0"/>
 <SAINT Name="New Hieromartyr Priest Theodore (+1942)" Id="" Type="0"/>
 <SAINT Name="Finding of the relics of Venerable Alexander, Abbot of Svir (1641)" Id="125" Type="0" />
@@ -17,12 +17,12 @@
 <SAINT Name="St Acace, Evêque de Mélitène" Id="874" Type="1" />
 <SAINT Name="St Macaire (Notaras), Evêque de Corinthe" Id="" Type="0" />
 <SAINT Name="St Païssios le Fol en Christ des Grottes de Kiev" Id="" Type="0" />
-<SAINT Name="St. Zosime de Solovki" Id="854" Type="0" />
+<SAINT Name="St. Zosime de Solovki" Id="854" Type="3" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Сщмч. Симеона, еп. Персидского, и с ним мчч. Авделая и Анании пресвитеров, Хусдазата евнуха, Фусика, Азата, мч. Аскитреи и иных многих (344)" Id="873" Type="1"/>
 <SAINT Name="Прп. Акакия, еп. Мелитинского (ок. 435)" Id="874" Type="1"/>
-<SAINT Name="Прп. Зосимы, игумена Соловецкого (1478)" Id="854" Type="0"/>
+<SAINT Name="Прп. Зосимы, игумена Соловецкого (1478)" Id="854" Type="3"/>
 <SAINT Name="Св. Михаила исп., пресвитера (1935)" Id="4766" Type="0"/>
 <SAINT Name="Сщмч. Феодора пресвитера (1942)" Id="" Type="0"/>
 <SAINT Name="Обретение мощей прп. Александра Свирского (1641)" Id="125" Type="0"/>
@@ -32,7 +32,7 @@
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="殉道司教西麦翁、及偕同其就义者：阿布德哈拉、阿纳尼亚两位司祭、邬斯塔匝尼、福西科、阿斯基特列、宦官阿匝特（波斯，341年）" Id="873" Type="1" />
 <SAINT Name="圣阿喀基（米提利尼主教，435年）" Id="874" Type="1" />
-<SAINT Name="圣佐西玛（索洛维基，1478年）" Id="854" Type="0" />
+<SAINT Name="圣佐西玛（索洛维基，1478年）" Id="854" Type="3" />
 <SAINT Name="圣弥哈伊尔（新司祭宣信者，1935年）" Id="4766" Type="0"/>
 <SAINT Name="新殉道司祭德奥多若（1942年）" Id="" Type="0"/>
 <SAINT Name="寻获斯维尔的圣亚历山大（1533年）之圣髑纪念日（1641年）" Id="125" Type="0" />
@@ -46,7 +46,7 @@
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="殉道司教西麥翁、及偕同其就義者：阿布德哈拉、阿納尼亞兩位司祭、鄔斯塔匝尼、福西科、阿斯基特列、宦官阿匝特（波斯，341年）" Id="873" Type="1" />
 <SAINT Name="聖阿喀基（米提利尼主教，435年）" Id="874" Type="1" />
-<SAINT Name="聖佐西瑪（索洛維基，1478年）" Id="854" Type="0" />
+<SAINT Name="聖佐西瑪（索洛維基，1478年）" Id="854" Type="3" />
 <SAINT Name="聖彌哈伊爾（新司祭宣信者，1935年）" Id="4766" Type="0"/>
 <SAINT Name="新殉道司祭德奧多若（1942年）" Id="" Type="0"/>
 <SAINT Name="尋獲斯維爾的聖亞歷山大（1533年）之聖髑紀念日（1641年）" Id="125" Type="0" />

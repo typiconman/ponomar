@@ -1,6 +1,6 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Forefeast of the Entry of the Theotokos" Id="" Type="1" />
+<SAINT Name="Forefeast of the Entry of the Theotokos" Id="" Type="0" />
 <SAINT Name="Venerable Gregory Decapolites (+ 816)" Id="539" Type="1" />
 <SAINT Name="Saint Proclos, Archbishop of Constantinople (+ 446-447)" Id="2569" Type="1" />
 <SAINT Name="Martyrs Eustathius, Thespisius, and Anatolius" Id="2573" Type="0" />
@@ -12,7 +12,7 @@
 <SAINT Name="New Hieromartyr Makariy, bishop of Ekaterinoslav and those with him (+ 1937)" Id="4785" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Prefete de l'Entree au Temple de la Mere de Dieu" Id="" Type="1"/>
+<SAINT Name="Prefete de l'Entree au Temple de la Mere de Dieu" Id="" Type="0"/>
 <SAINT Name="St Grégoire le Décapolite" Id="539" Type="1" />
 <SAINT Name="St Proclus, Archevêque de Constantinople" Id="2569" Type="1" />
 <SAINT Name="St Dasios" Id="2572" Type="0" />
@@ -28,7 +28,7 @@
 <SAINT Name="St Patocle le reclus de Bourges" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Предпразднство Введения во храм Пресвятой Богородицы" Id="" Type="1"/>
+<SAINT Name="Предпразднство Введения во храм Пресвятой Богородицы" Id="" Type="0"/>
 <SAINT Name="Прп. Григория Декаполита (816)" Id="539" Type="1"/>
 <SAINT Name="Свт. Прокла, архиеп. Константинопольского (446-447)" Id="2569" Type="1"/>
 <SAINT Name="Сщмчч. Макария, еп. Екатеринославского, Алексия, Александра, Владимира, Иоанна, Алексия, Василия, Николая, Иоанна, Емилиана, Николая пресвитеров, и прмчч. Арсения, Евтихия и Илариона, прмц. Иоанникии игумении (1937)" Id="4785" Type="0"/>

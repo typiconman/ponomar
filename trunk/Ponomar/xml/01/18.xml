@@ -9,7 +9,7 @@
 <SAINT Name="Venerable Silbanus of Palestine" Id="" Type="0" />
 <SAINT Name="Righteous Athanasius of Novoltsk (16th-17th C)" Id="301" Type="0" />
 <SAINT Name="Martyr Xenia" Id="" Type="0" />
-<SAINT Name="Venerable Schema-monk Cyrill and Schema-nun Mary, parents of St Sergius of Radonezh (+ c 1337)" Id="6670" Type="2" />
+<SAINT Name="Venerable Schema-monk Cyrill and Schema-nun Mary, parents of St Sergius of Radonezh (+ c 1337)" Id="6670" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Sts Athanase et Cyrille, Patriarche d'Alexandrie" Id="295" Type="2" />
@@ -20,7 +20,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Свтт. Афанасия (373) и Кирилла (444), архиепископов Александрийских." Id="295" Type="2"/>
-<SAINT Name="Прпп. схимонаха Кирилла и схимонахини Марии (ок. 1337), родителей прп. Сергия Радонежского" Id="6670" Type="2"/>
+<SAINT Name="Прпп. схимонаха Кирилла и схимонахини Марии (ок. 1337), родителей прп. Сергия Радонежского" Id="6670" Type="0"/>
 <SAINT Name=" Сщмч. Михаила пресвитера (1919)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Евгения пресвитера (1930)" Id="" Type="0"/>
 <SAINT Name="Сщмчч. Владимира, Николая,  Сергия, Александра пресвитеров (1938)" Id="4766" Type="0"/>

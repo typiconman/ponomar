@@ -1,6 +1,6 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Icon of the Mother of God 'She who Reigns' (1917)" Id="553" Type="4" />
+<SAINT Name="Icon of the Mother of God 'She who Reigns' (1917)" Id="553" Type="1" />
 <SAINT Name="Hieromartyr Theodotus, Bishop of Cyrenia (+ c.326)" Id="544" Type="1" />
 <SAINT Name="St. Arsenius the Bishop of Tver (+1409)" Id="546" Type="3" />
 <SAINT Name="Martyr Euthalia of Sicily (+257)" Id="545" Type="0" />
@@ -23,7 +23,7 @@
 <SAINT Name="St Nicolas Planas (Papa Planas)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Иконы Божией матери, именуемой &quot;Державная&quot; (1917)" Id="553" Type="4"/>
+<SAINT Name="Иконы Божией матери, именуемой &quot;Державная&quot; (1917)" Id="553" Type="1"/>
 <SAINT Name="Сщмч. Феодота, еп. Киринейского (ок. 326)" Id="544" Type="1"/>
 <SAINT Name="Свт. Арсения, еп. Тверского (1409)" Id="546" Type="3"/>
 <SAINT Name="Мц. Евфалии (257)" Id="545" Type="0"/>
@@ -32,7 +32,7 @@
 <SAINT Name="Мчч. 440 Италийских (579)" Id="548" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="科洛门斯科耶圣母像垂迹纪念日（1917年）" Id="553" Type="4" />
+<SAINT Name="科洛门斯科耶圣母像垂迹纪念日（1917年）" Id="553" Type="1" />
 <SAINT Name="殉道司教德奥多特（基瑞尼亚城主教，315年）" Id="544" Type="1" />
 <SAINT Name="圣阿尔塞尼（特维尔主教，1409年）" Id="546" Type="3" />
 <SAINT Name="童贞殉道者女艾弗塔利亚（西西里，257年）" Id="545" Type="0" />
@@ -49,7 +49,7 @@
 <SAINT Name="圣察德（英格兰的李奇特菲尔德地方主教，672年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="科洛門斯科耶聖母像垂蹟紀念日（1917年）" Id="553" Type="4" />
+<SAINT Name="科洛門斯科耶聖母像垂蹟紀念日（1917年）" Id="553" Type="1" />
 <SAINT Name="殉道司教德奧多特（基瑞尼亞城主教，315年）" Id="544" Type="1" />
 <SAINT Name="聖阿爾塞尼（特維爾主教，1409年）" Id="546" Type="3" />
 <SAINT Name="童貞殉道者女艾弗塔利亞（西西里，257年）" Id="545" Type="0" />

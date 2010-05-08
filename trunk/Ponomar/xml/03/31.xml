@@ -1,7 +1,7 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="St. Hypatius the Wonderworker and Bishop of Gangra (+ c.326)" Id="745" Type="1" />
-<SAINT Name="Saint Jonah, Metropolitan of Moscow and Wonderworker of All Russia (+1461)" Id="1042" Type="1" />
+<SAINT Name="Saint Jonah, Metropolitan of Moscow and Wonderworker of All Russia (+1461)" Id="1042" Type="0" />
 <SAINT Name="Holy Equal-to-the-Apostles Innocent, Metropolitan of Moscow, the Enlightener of the Aleuts (+1879)" Id="953" Type="0" />
 <SAINT Name="Hieromartyr Priest John (+1938)" Id="" Type="0"/>
 <SAINT Name="Venerable Apollonius, Ascetic, of Egypt (4th C)" Id="746" Type="0" />
@@ -23,7 +23,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Сщмч. Ипатия, еп. Гангрского (ок. 326)" Id="745" Type="1"/>
-<SAINT Name="Свт. Ионы, митр. Московского и всея России, чудотворца (1461)" Id="1042" Type="1"/>
+<SAINT Name="Свт. Ионы, митр. Московского и всея России, чудотворца (1461)" Id="1042" Type="0"/>
 <SAINT Name="Свт. Иннокентия, митр. Московского (1879)." Id="953" Type="0"/>
 <SAINT Name="Сщмч. Иоанна пресвитера (1938)" Id="" Type="0"/>
 <SAINT Name="Прп. Аполлония, пустынника Египетского (IV)" Id="746" Type="0"/>
@@ -33,7 +33,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="圣伊帕提（堪格拉主教，显行灵迹者，360年）" Id="745" Type="1" />
-<SAINT Name="圣约纳安息纪念（基辅，莫斯科及全俄罗斯的都主教，1461年）" Id="1042" Type="1" />
+<SAINT Name="圣约纳安息纪念（基辅，莫斯科及全俄罗斯的都主教，1461年）" Id="1042" Type="0" />
 <SAINT Name="圣英诺肯提（莫斯科都主教，阿拉斯加和西伯利亚之光照者，1879年）" Id="953" Type="0" />
 <SAINT Name="新殉道司祭约安（1938年）" Id="" Type="0"/>
 <SAINT Name="圣阿珀罗尼（特维德地方的克修者，395年）" Id="746" Type="0" />
@@ -47,7 +47,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="聖伊帕提（堪格拉主教，顯行靈蹟者，360年）" Id="745" Type="1" />
-<SAINT Name="聖約納安息紀念（基輔，莫斯科及全俄羅斯的都主教，1461年）" Id="1042" Type="1" />
+<SAINT Name="聖約納安息紀念（基輔，莫斯科及全俄羅斯的都主教，1461年）" Id="1042" Type="0" />
 <SAINT Name="聖英諾肯提（莫斯科都主教，阿拉斯加和西伯利亞之光照者，1879年）" Id="953" Type="0" />
 <SAINT Name="新殉道司祭約安（1938年）" Id="" Type="0"/>
 <SAINT Name="聖阿珀羅尼（特維德地方的克修者，395年）" Id="746" Type="0" />

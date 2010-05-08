@@ -1,7 +1,7 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Holy Myrrhbearer and Equal-to-the-Apostles Mary Magdalene (1st C)" Id="2598" Type="2" />
-<SAINT Name="Transfer of the relics of Hieromartyr Phocas, Bishop of Sinope (403-404)" Id="2321" Type="0" />
+<SAINT Name="Transfer of the relics of Hieromartyr Phocas, Bishop of Sinope (403-404)" Id="2321" Type="1" />
 <SAINT Name="Venerable Marcella" Id="" Type="0" />
 <SAINT Name="Holy Hierarch Cyrill I, Patriarch of Antioch" Id="" Type="0" />
 <SAINT Name="Repose of Venerable Cornilius of Pereyaslavl (+ 1693)" Id="4288" Type="0" />
@@ -14,7 +14,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Мироносицы равноап. Марии Магдалины (I)" Id="2598" Type="2"/>
-<SAINT Name="Перенесение мощей сщмч. Фоки (403-404)" Id="2321" Type="0"/>
+<SAINT Name="Перенесение мощей сщмч. Фоки (403-404)" Id="2321" Type="1"/>
 <SAINT Name="Сщмч. Михаила пресвитера (1918)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Алексия пресвитера (1931)" Id="" Type="0"/>
 <SAINT Name="Прп. Корнилия Переяславского (1693)" Id="4288" Type="0"/>

@@ -5,16 +5,16 @@
 <SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Herman"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Saint Spyridon the Wonderworker, Bishop of Tremithus (+ c 348)" Id="2049" Type="2" />
+<SAINT Name="Saint Spyridon the Wonderworker, Bishop of Tremithus (+ c 348)" Id="2049" Type="3" />
 <SAINT Name="Hieromartyr Alexander, Bishop of Jerusalem (+ 251)" Id="3108" Type="0" />
 <SAINT Name="Martyr Razumnik (Cynecius) of Rome (+ 270-275)" Id="3109" Type="0" />
 <SAINT Name="Venerable Therapont, Abbot of Monza (+ 1597)" Id="2277" Type="0" />
-<SAINT Name="Venerable Herman, Wonderworker of Alaska (+ 1837) [ROCOR]" Id="506" Type="5" />
+<SAINT Name="Venerable Herman, Wonderworker of Alaska (+ 1837) [ROCOR]" Id="506" Type="4" />
 <SAINT Name="Hieromartyr Juvenal [ROCOR]" Id="" Type="0" />
 <SAINT Name="Martyr Peter the Aleut [ROCOR]" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="St Spyridon, Evêque de Trimythonte" Id="2049" Type="2" />
+<SAINT Name="St Spyridon, Evêque de Trimythonte" Id="2049" Type="3" />
 <SAINT Name="St Synésius" Id="3109" Type="0" />
 <SAINT Name="St Alexandre, Evêque de Jérusalem" Id="3108" Type="0" />
 <SAINT Name="St Amonathas en Egypte" Id="" Type="0" />
@@ -22,14 +22,14 @@
 <SAINT Name="St Jean, Métropolite de Zichna" Id="" Type="0" />
 <SAINT Name="St Théraponte de Monza" Id="2277" Type="0" />
 <SAINT Name="St Corentin, 1er Evêque de Quimper" Id="" Type="0" />
-<SAINT Name="St Germain d'Alaska (EORHF)" Id="506" Type="5" />
+<SAINT Name="St Germain d'Alaska (EORHF)" Id="506" Type="4" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Свт. Спиридона, еп. Тримифунтского, чудотворца (ок. 348)" Id="2049" Type="2"/>
+<SAINT Name="Свт. Спиридона, еп. Тримифунтского, чудотворца (ок. 348)" Id="2049" Type="3"/>
 <SAINT Name="Сщмч. Александра, еп. Иерусалимского (251)" Id="3108" Type="0"/>
 <SAINT Name="Мч. Разумника (Синезия) (270-275)" Id="3109" Type="0"/>
 <SAINT Name="Прп. Ферапонта Монзенского (XVI)" Id="2277" Type="0"/>
-<SAINT Name="Прп. Германа, Аляскинского чудотворца (РПЦЗ)" Id="506" Type="5"/>
+<SAINT Name="Прп. Германа, Аляскинского чудотворца (РПЦЗ)" Id="506" Type="4"/>
 <SAINT Name="Сщмч. Ювеналия и мч. Петра Алеута (РПЦЗ)" Id="" Type="0"/>
 </LANGUAGE>
 </DAY>

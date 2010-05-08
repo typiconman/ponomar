@@ -2,7 +2,7 @@
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Apodosis of the Entry of the Theotokos" Id="" Type="3" />
 <SAINT Name="Hieromartyr Clement, Pope of Rome (+ 101)" Id="6969" Type="1" />
-<SAINT Name="Hieromartyr Peter, Archbishop of Alexandria (+ 311)" Id="" Type="0" />
+<SAINT Name="Hieromartyr Peter, Archbishop of Alexandria (+ 311)" Id="" Type="1" />
 <SAINT Name="Venerable Peter the Silent, of Galata, Syria (+ c. 429)" Id="369" Type="0" />
 <SAINT Name="Venerable Paphnutius" Id="" Type="0" />
 <SAINT Name="New Hieromartyr Seraphim, Archbishop of Smolensk and those with him (+1937)" Id="4823" Type="0" />
@@ -10,7 +10,7 @@
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Apodose de l'Entree au Temple" Id="3"/>
 <SAINT Name="St Clément, Evêque de Rome" Id="6969" Type="1" />
-<SAINT Name="St Pierre d'Alexandrie" Id="369" Type="0" />
+<SAINT Name="St Pierre d'Alexandrie" Id="369" Type="1" />
 <SAINT Name="St Malc" Id="" Type="0" />
 <SAINT Name="St Carion" Id="" Type="0" />
 <SAINT Name="St Hermogène, Evêque d'Agrigente" Id="" Type="0" />

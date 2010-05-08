@@ -1,6 +1,6 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Virginmartyr Febronia of Nisibis (+ c.304)" Id="1392" Type="0" />
+<SAINT Name="Virginmartyr Febronia of Nisibis (+ c.304)" Id="1392" Type="1" />
 <SAINT Name="Right-Believing Prince Peter, Tonsured David, and Princess Febronia, tonsured Evfrosinia, the Wonderworkers of Murom (+1228)" Id="6797" Type="3" />
 <SAINT Name="Venerable Martyrs Leonida, Libya, and Eutropia" Id="" Type="0" />
 <SAINT Name="Venerable Simeon of Mt Sinai" Id="" Type="0" />
@@ -10,7 +10,7 @@
 <SAINT Name="New Martyrs Priests Nicholas and Basil (+1918)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Ste Fébronie de Nisibe" Id="1392" Type="0" />
+<SAINT Name="Ste Fébronie de Nisibe" Id="1392" Type="1" />
 <SAINT Name="Stes Libye, Léonis et Eutrope" Id="" Type="0" />
 <SAINT Name="Sts Orence, Pharnace, Eros, Firme, Firmin, Cyriaque et Longin" Id="" Type="0" />
 <SAINT Name="Sts Denys l'Athonite, Fondateur de Dyonisiou et son successeur Dométios" Id="" Type="0" />

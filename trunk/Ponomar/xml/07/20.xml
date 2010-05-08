@@ -8,7 +8,7 @@
 <SCRIPTURE Type="gospel" Reading="Lk_4:22-30" Pericope="14" Note="for the Prophet"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Holy Glorious Prophet Elijah (9th C BC)" Id="946" Type="5" />
+<SAINT Name="Holy Glorious Prophet Elijah (9th C BC)" Id="946" Type="2" />
 <SAINT Name="Righteous Aaron the First-Priest (16th C BC)" Id="" Type="0" />
 <SAINT Name="St Elijah, Patriarch of Jerusalem" Id="" Type="0" />
 <SAINT Name="St Flavian, Patriarch of Antioch" Id="" Type="0" />
@@ -18,14 +18,14 @@
 <SAINT Name="Icon of the Mother of God 'Abalatskaya'" Id="4278" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="St Prophète Elie le Thesbite" Id="946" Type="5" />
+<SAINT Name="St Prophète Elie le Thesbite" Id="946" Type="2" />
 <SAINT Name="St Elie Chavchavadze (le Juste), en Géorgie" Id="" Type="0" />
 <SAINT Name="St Elie 1er, Patriarche de Jérusalem" Id="" Type="0" />
 <SAINT Name="St Flavien II, Patriarche d'Antioche" Id="" Type="0" />
 <SAINT Name="St Abraham de Galitch" Id="4274" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Пророка Илии (IX до Р.Х.)" Id="946" Type="5"/>
+<SAINT Name="Пророка Илии (IX до Р.Х.)" Id="946" Type="2"/>
 <SAINT Name="Сщмчч. Константина и Николая пресвитеров (1918)" Id="" Type="0"/>
 <SAINT Name="Сщмчч. Александра, Георгия, Иоанна, Сергия и Феодора пресвитеров, прмчч. Тихона, Георгия, Космы и мчч. Евфимия и Петра (1930)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Алексия пресвитера (1938)" Id="" Type="0"/>

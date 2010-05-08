@@ -8,9 +8,9 @@
 <SCRIPTURE Type="gospel" Reading="Lk_2:22-40" Pericope="7" Cmd="nday == -49" Note="for the feast"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Forefeast of the Meeting of the Lord" Id="2124" Type="2" Cmd="nday != -49" />
+<SAINT Name="Forefeast of the Meeting of the Lord" Id="2124" Type="0" Cmd="nday != -49" />
 <SAINT Name="On this day we observe the Meeting of our Lord, God, and Saviour Jesus Christ" Id="373" Type="7" Cmd="nday == -49" />
-<SAINT Name="Martyr Tryphon of Campsada near Apamea in Syria (+250)" Id="369" Type="1"/>
+<SAINT Name="Martyr Tryphon of Campsada near Apamea in Syria (+250)" Id="369" Type="2"/>
 <SAINT Name="[the service to St Tryphon is transferred to Compline Friday evening" Id="" Type="0" Cmd="nday == -49"/>
 <SAINT Name="New Hieromartyr Priest Nicholas (+1938)" Id="" Type="0"/>
 <SAINT Name="Venerable Peter of Galatia, the Hermit, near Antioch in Syria (+429)" Id="" Type="0" />
@@ -22,7 +22,7 @@
 <SAINT Name="New Martyr Peter Skipetrov (+1918)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="St Tryphon, Protecteur des jardins" Id="" Type="0" />
+<SAINT Name="St Tryphon, Protecteur des jardins" Id="2" Type="0" />
 <SAINT Name="Sts Saturus, Saturnin, Secondus, Revocat, Perpetue et Felicite" Id="368" Type="0" />
 <SAINT Name="St Pierre de Galatie" Id="369" Type="0" />
 <SAINT Name="St Bendenianos (ou Bendimien) du Mont St Auxence" Id="370" Type="0" />
@@ -44,9 +44,9 @@
 <SAINT Name="Прп. Вендимиана, пустынника Вифинийского (ок. 512)" Id="370" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="主进殿节前期" Id="2124" Type="2" Cmd="nday != -49" />
+<SAINT Name="主进殿节前期" Id="2124" Type="0" Cmd="nday != -49" />
 <SAINT Name="纪念我们的主，上帝，救主被奉献于圣殿，也纪念圣母取洁" Id="373" Type="7" Cmd="nday == -49" />
-<SAINT Name="殉道者特里丰（叙利亚的康普萨达地方，靠近阿帕美亚，250年）" Id="369" Type="1" Cmd="nday != -49"/>
+<SAINT Name="殉道者特里丰（叙利亚的康普萨达地方，靠近阿帕美亚，250年）" Id="369" Type="2" Cmd="nday != -49"/>
 <SAINT Name="新殉道司祭尼科拉（1938年）" Id="" Type="0" />
 <SAINT Name="圣裴特若（加拉提亚人，叙利亚的安提约希亚附近之隐士，429年）" Id="" Type="0" />
 <SAINT Name="圣文德弥安（比希尼亚的隐士，512年）" Id="370" Type="0" />
@@ -63,9 +63,9 @@
 <SAINT Name="殉道者泰昂偕同2个孩子在卡利奥纳就义" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="主進殿節前期" Id="2124" Type="2" Cmd="nday != -49" />
+<SAINT Name="主進殿節前期" Id="2124" Type="0" Cmd="nday != -49" />
 <SAINT Name="紀念我們的主，上帝，救主被奉獻於聖殿，也紀念聖母取潔" Id="373" Type="7" Cmd="nday == -49" />
-<SAINT Name="殉道者特里豐（敘利亞的康普薩達地方，靠近阿帕美亞，250年）" Id="369" Type="1" Cmd="nday != -49"/>
+<SAINT Name="殉道者特里豐（敘利亞的康普薩達地方，靠近阿帕美亞，250年）" Id="369" Type="2" Cmd="nday != -49"/>
 <SAINT Name="新殉道司祭尼科拉（1938年）" Id="" Type="0" />
 <SAINT Name="聖裴特若（加拉提亞人，敘利亞的安提約希亞附近之隱士，429年）" Id="" Type="0" />
 <SAINT Name="聖文德彌安（比希尼亞的隱士，512年）" Id="370" Type="0" />
