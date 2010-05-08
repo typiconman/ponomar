@@ -85,6 +85,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
         private String RSep=new String();
         private String CSep=new String();
         private String Colon=new String();
+        private String Ideographic=new String();
 	//private GospelSelector Selector;
 
 	// CONSTRUCTOR
@@ -176,6 +177,8 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                 StringOp.dayInfo.put("FontSizeM",DisplaySize);
                 StringOp.dayInfo.put("ReadSep",RSep);
                 StringOp.dayInfo.put("Colon",Colon);
+                Ideographic=(String)Phrases.Phrases.get("Ideographic");
+                StringOp.dayInfo.put("Ideographic",Ideographic);
 		GospelLocation = new GospelSelector();
 		
 		//ADD A MENU BAR Y.S. 2008/08/11 n.s.
@@ -259,7 +262,14 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 			{
 				pascha = Paschalion.getPascha(today.getYear());
 				pentecost = Paschalion.getPentecost(today.getYear());
-				StringOp.dayInfo.clear();
+				/*StringOp.dayInfo.clear();
+                                StringOp.dayInfo.put("FontFaceM",DisplayFont);
+                                StringOp.dayInfo.put("FontSizeM",DisplaySize);
+                                StringOp.dayInfo.put("ReadSep",RSep);
+                                StringOp.dayInfo.put("Colon",Colon);
+                                Ideographic=(String)Phrases.Phrases.get("Ideographic");
+                                StringOp.dayInfo.put("Ideographic",Ideographic);
+                                 */
 			}
 			
 			write();
@@ -612,6 +622,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		StringOp.dayInfo.put("LS",LanguageLocation.getLValue());
 		StringOp.dayInfo.put("Year",today.getYear());
                 StringOp.dayInfo.put("dRank",0); //The default rank for a day is 0. Y.S. 2010/02/01 n.s.
+                StringOp.dayInfo.put("Ideographic",Ideographic);
 			
 		readings = new OrderedHashtable();
 		fastInfo = new Stack();

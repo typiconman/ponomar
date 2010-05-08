@@ -125,39 +125,39 @@ public class Fasting implements DocHandler
 				
 		if(Fast.equals("0000000"))
 		{
-			return FastNames[4]+" " + FastNames[1]+FastNames[6]+" "+ FastNames[7];
+			return FastNames[4]+ FastNames[1]+FastNames[6]+ FastNames[7];
 		}
 		if(Fast.equals("0000001"))
 		{
-			return  FastNames[4]+" " +FastNames[1]+FastNames[6]+" "+ FastNames[8];
+			return  FastNames[4]+FastNames[1]+FastNames[6]+ FastNames[8];
 		}
 		if(Fast.equals("0000011"))
 		{
-			return  FastNames[4]+" " +FastNames[1]+FastNames[6]+" "+ FastNames[9];
+			return  FastNames[4]+FastNames[1]+FastNames[6]+ FastNames[9];
 		}
 		if(Fast.equals("0000111"))
 		{
-			return  FastNames[4]+" " +FastNames[2];
+			return  FastNames[4]+FastNames[2];
 		}
 		if(Fast.equals("0001111"))
 		{
-			return FastNames[4]+" " +FastNames[10];
+			return FastNames[4]+FastNames[10];
 		}
 		if(Fast.equals("0011111"))
 		{
-			return  FastNames[4]+" " +FastNames[3];
+			return  FastNames[4]+FastNames[3];
 		}
 		if(Fast.equals("0111111"))
 		{
-			return FastNames[4]+" " +FastNames[11];
+			return FastNames[4]+FastNames[11];
 		}
 		if(Fast.equals("1111111"))
 		{
-			return  FastNames[4]+" " +FastNames[0];
+			return  FastNames[4]+FastNames[0];
 		}
 		if(Fast.equals("0000010"))
 		{
-			return FastNames[4]+" " +FastNames[12];
+			return FastNames[4]+FastNames[12];
 		}
 		//NONE OF THE PREDEFINED SEQUENCES WERE ENCOUNTERED.
 		//PARSE IT ELEMENT BY ELEMENT!

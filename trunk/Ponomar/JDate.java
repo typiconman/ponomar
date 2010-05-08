@@ -322,12 +322,35 @@ class JDate implements Comparable, Cloneable
 		int year = y;
 		int month = m;
 		int day = d;
+                if(StringOp.dayInfo.get("Ideographic")==null)
+                {
+                    Format=Format.replace("WW",civilDayNames[dow]);
+		Format=Format.replace("DD",String.valueOf(day));
+		Format=Format.replace("MM",civilMonthNames[month-1]);
+		Format=Format.replace("YY",String.valueOf(year));
+		Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
+                }
+                else
+                {
+                if (StringOp.dayInfo.get("Ideographic").equals("1"))
+                {
+                    RuleBasedNumber convertN=new RuleBasedNumber();
+                    Format=Format.replace("WW",civilDayNames[dow]);
+                    Format=Format.replace("DD",convertN.getFormattedNumber(Long.parseLong(String.valueOf(day))));
+                    Format=Format.replace("MM",civilMonthNames[month-1]);
+                    Format=Format.replace("YY",convertN.getFormattedNumber(Long.parseLong(String.valueOf(year))));
+                    Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
+
+                }
+                else
+                {
 		Format=Format.replace("WW",civilDayNames[dow]);
 		Format=Format.replace("DD",String.valueOf(day));
 		Format=Format.replace("MM",civilMonthNames[month-1]);
 		Format=Format.replace("YY",String.valueOf(year));
 		Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
-
+                }
+                }
 		return Format;
 
 		//return new Date(y - 1900, m - 1, d); // return the date object
@@ -397,11 +420,37 @@ class JDate implements Comparable, Cloneable
 		int year = getYear();
 		int month = getMonth();
 		int day = getDay();
+
+                if(StringOp.dayInfo.get("Ideographic")==null)
+                {
+                    Format=Format.replace("WW",dayNames[dow]);
+		Format=Format.replace("DD",String.valueOf(day));
+		Format=Format.replace("MM",monthNames[month-1]);
+		Format=Format.replace("YY",String.valueOf(year));
+		Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
+                }
+                else
+                {
+                if (StringOp.dayInfo.get("Ideographic").equals("1"))
+                {
+                    RuleBasedNumber convertN=new RuleBasedNumber();
+                    Format=Format.replace("WW",dayNames[dow]);
+                    Format=Format.replace("DD",convertN.getFormattedNumber(Long.parseLong(String.valueOf(day))));
+                    Format=Format.replace("MM",monthNames[month-1]);
+                    Format=Format.replace("YY",convertN.getFormattedNumber(Long.parseLong(String.valueOf(year))));
+                    Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
+
+                }
+                else
+                {
 		Format=Format.replace("WW",dayNames[dow]);
 		Format=Format.replace("DD",String.valueOf(day));
 		Format=Format.replace("MM",monthNames[month-1]);
 		Format=Format.replace("YY",String.valueOf(year));
 		Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
+                }
+                }
+		
 
 		return Format;
 	}

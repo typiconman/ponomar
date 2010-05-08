@@ -55,6 +55,7 @@ final class Sunrise
 	protected final static double NAUTICAL     = -12.0;
 	protected final static double AMATEUR      = -15.0;
 	protected final static double ASTRONOMICAL = -18.0;
+        private static LanguagePack Phrases=new LanguagePack();
 
 	// MATHEMATICAL FUNCTIONS
 	// OVERRIDDEN TRIGONOMETRIC FUNCTIONS, used to work with degrees instead of radians
@@ -334,12 +335,15 @@ final class Sunrise
 	{
 		double[] raw = getSunriseSunset(date, lon, lat, tzone, false, -0.833);
 		String[] out = new String[2];
+                
 
 		// NOW, TAKE THE RAW INPUT AND PARSE IT TO HOURS / MINUTES
 		for (int i = 0; i < 2; i++)
 		{
-			int hour = (int)Math.floor(raw[i]);
+			String Format=(String)Phrases.Phrases.get("TimeF");
+                        int hour = (int)Math.floor(raw[i]);
 			int minute = (int)Math.floor((raw[i] - hour) * 60);
+                        /* original version
 			if (hour < 10)
 			{
 				out[i] = "0" + hour;
@@ -355,7 +359,21 @@ final class Sunrise
 			else
 			{
 				out[i] += ":" + minute;
-			}
+			}*/
+                        //Changed to this by Y.S. to interationalised it.
+                        if (StringOp.dayInfo.get("Ideographic").equals("1"))
+                        {
+                            RuleBasedNumber convertN=new RuleBasedNumber();
+                            Format=Format.replace("HH", convertN.getFormattedNumber(hour));
+                               Format=Format.replace("MM", convertN.getFormattedNumber(minute));
+
+                        }
+                        else
+                        {
+                        Format=Format.replace("HH", Integer.toString(hour));
+                        Format=Format.replace("MM", Integer.toString(minute));
+                        }
+                        out[i]=Format;
 		}
 
 		return out;
