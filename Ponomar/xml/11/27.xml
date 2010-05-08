@@ -3,7 +3,7 @@
 <SAINT Name="Greatmartyr James the Persian (+ 421)" Id="3234" Type="2" />
 <SAINT Name="Venerable Palladios (6th-7th C)" Id="" Type="1" />
 <SAINT Name="Saint James, Bishop and Wonderworker of Rostov (+ 1392)" Id="3235" Type="2" />
-<SAINT Name="Finding of the relics of Saint Vsevolod, in baptism Gabriel, Prince of Pskov (1192)" Id="438" Type="1" />
+<SAINT Name="Finding of the relics of Saint Vsevolod, in baptism Gabriel, Prince of Pskov (1192)" Id="438" Type="0" />
 <SAINT Name="Venerable Roman of Seleucia, the Wonderworker" Id="3236" Type="0" />
 <SAINT Name="Venerable Pinuphrious of Egypt" Id="" Type="0" />
 <SAINT Name="Venerable Nathaniel of Nytria" Id="" Type="0" />
@@ -26,7 +26,7 @@
 <SAINT Name="Вмч. Иакова Персянина (421)" Id="3234" Type="2"/>
 <SAINT Name="Прп. Палладия Александрийского (VI-VII)" Id="" Type="1"/>
 <SAINT Name="Знамение Пресвятой Богородицы, бывшее в Новгороде Великом (1170)" Id="" Type="1"/>
-<SAINT Name="Обретение мощей блгв. кн. Новгородского Всеволода, во св. Крещении Гавриила, Псковского чудотворца (1192)" Id="438" Type="1"/>
+<SAINT Name="Обретение мощей блгв. кн. Новгородского Всеволода, во св. Крещении Гавриила, Псковского чудотворца (1192)" Id="438" Type="0"/>
 <SAINT Name="Свт. Иакова, еп. Ростовского (1392)" Id="3235" Type="2"/>
 <SAINT Name="Блж. Андрея Симбирского (1841)" Id="" Type="0"/>
 <SAINT Name="Сщмчч. Николая, архиеп. Владимирского, Василия, Бориса, Феодора, Николая, Алексия, Иоанна, Сергия, Иоанна, Сергия, Николая, Димитрия, Владимира, Иоанна  пресвитеров, прмчч. Иоасафа, Кронида,  Николая, Ксенофонта, Алексия, Аполлоса, Серафима, Никона и мч. Иоанна (1937)" Id="4842" Type="0"/>

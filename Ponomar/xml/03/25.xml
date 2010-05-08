@@ -12,7 +12,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="The Annunciation of our Most Holy Lady, Theotokos and Ever-Virgin Mary" Id="707" Type="7" />
-<SAINT Name="St Tikhon the Confessor, Patriarch of Moscow and all Russia and Enlightener of North America (+1925)" Id="4644" Type="1" />
+<SAINT Name="St Tikhon the Confessor, Patriarch of Moscow and all Russia and Enlightener of North America (+1925)" Id="4644" Type="0" />
 <SAINT Name="Venerable Justin (Popović) Archimandrite of Ćelije (+1979)" Id="" Type="0" />
 <SAINT Name="Venerable Sabba the New (+1948)" Id="" Type="0"/>
 <SAINT Name="Icon of the Annunciation of the Mother of God" Id="" Type="0"/>
@@ -22,7 +22,7 @@
 <SAINT Name="Stes Pélagie et Théodosie" Id="" Type="0" />
 <SAINT Name="St Senouphios le Sémiophore" Id="" Type="0" />
 <SAINT Name="St Parthène de Kiev" Id="" Type="0" />
-<SAINT Name="St. Tikhon, Patriarche de Moscou" Id="4644" Type="1" />
+<SAINT Name="St. Tikhon, Patriarche de Moscou" Id="4644" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Благовещение Пресвятой Богородицы" Id="707" Type="7"/>
@@ -32,7 +32,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="诞神女福音节（我众至圣之君后，诞神女，永贞玛利亚领报节）" Id="707" Type="7" />
-<SAINT Name="新殉道司教提宏（莫斯科及全俄罗斯牧首，1925年）" Id="4644" Type="1" />
+<SAINT Name="新殉道司教提宏（莫斯科及全俄罗斯牧首，1925年）" Id="4644" Type="0" />
 <SAINT Name="圣犹斯廷（本姓颇颇维奇，塞尔维亚的彻利杰之成德者，1979年）" Id="" Type="0" />
 <SAINT Name="新圣萨瓦（1948年）" Id="" Type="0"/>
 <SAINT Name="诞神女福音节圣母像纪念日" Id="" Type="0"/>
@@ -43,7 +43,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="誕神女福音節（我眾至聖之君後，誕神女，永貞瑪利亞領報節）" Id="707" Type="7" />
-<SAINT Name="新殉道司教提宏（莫斯科及全俄羅斯牧首，1925年）" Id="4644" Type="1" />
+<SAINT Name="新殉道司教提宏（莫斯科及全俄羅斯牧首，1925年）" Id="4644" Type="0" />
 <SAINT Name="聖猶斯廷（本姓頗頗維奇，塞爾維亞的徹利傑之成德者，1979年）" Id="" Type="0" />
 <SAINT Name="新聖薩瓦（1948年）" Id="" Type="0"/>
 <SAINT Name="誕神女福音節聖母像紀念日" Id="" Type="0"/>

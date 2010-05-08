@@ -1,7 +1,7 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Apodosis of the Annunciation" Id="" Type="0" />
-<SAINT Name="Synaxis of the Archangel Gabriel" Id="446" Type="2" />
+<SAINT Name="Synaxis of the Archangel Gabriel" Id="446" Type="3" />
 <SAINT Name="Martyr Parasceva (+1939)" Id="" Type="0"/>
 <SAINT Name="Hieromartyr Irenaeus the Bishop of Sirmium in Hungary (+304)" Id="1091" Type="1" />
 <SAINT Name="Holy Martyrs Presbyters Bathusius and Vercus with two sons and two daughters, the Monk Arpilus, and the Laymen: Abibus, Agnus, Reas, Igathrax, Iscous, Silus, Sigizus, Sonirilus, Suimblus, Thermus, Phillus and the women Anna, Alla, Larisa, Moico, Mamica, Uirco, Animaisa, Gaatha, and Ducleda (+ c.375)" Id="712" Type="1" />
@@ -9,7 +9,7 @@
 <SAINT Name="Venerable Basil the New, Anchorite, Near Constantinople (10th C)" Id="714" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Synaxe de l'Archange Gabriel" Id="446" Type="2" />
+<SAINT Name="Synaxe de l'Archange Gabriel" Id="446" Type="3" />
 <SAINT Name="Sts Codrat, Théodose, Emmanuel et 40 autres Martyrs" Id="" Type="0" />
 <SAINT Name="Sts 26 Goths" Id="712" Type="1" />
 <SAINT Name="St Etienne de Triglia le Confesseur" Id="" Type="0" />
@@ -18,7 +18,7 @@
 <SAINT Name="St Nicéphore, Evêque de Milet" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Собор Архангела Гавриила" Id="446" Type="2"/>
+<SAINT Name="Собор Архангела Гавриила" Id="446" Type="3"/>
 <SAINT Name="Мц. Параскевы (1939)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Иринея, еп. Сирмийского (304)" Id="1091" Type="1"/>
 <SAINT Name="Мчч. Вафусия и Верка пресвитеров, Арпилы монаха; мирян: Авива, Агна, Реаса, Игафракса, Искоя, Силы, Сигица, Сонирила, Суимвла, Ферма, Филла и мцц. Анны, Аллы, Ларисы, Моико, Мамики, Уирко, Анимаисы (Анимаиды), Гаафы, царицы Готфской, и Дуклиды, царевны Готфской (ок. 375)" Id="712" Type="1"/>
@@ -27,7 +27,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="诞神女福音节庆期圆满日" Id="" Type="0" />
-<SAINT Name="纪念总领天使伽弗里伊尔" Id="446" Type="2" />
+<SAINT Name="纪念总领天使伽弗里伊尔" Id="446" Type="3" />
 <SAINT Name="殉道女帕拉斯凯维（1939年）" Id="" Type="0"/>
 <SAINT Name="殉道司教伊里奈（塞尔维亚的斯热穆地方主教，304年）" Id="1091" Type="1" />
 <SAINT Name="殉道司祭瓦图西及维尔科；殉道修士阿尔彼洛；殉道信众：阿维佛、阿格诺、瑞亚索、伊伽特拉克斯、伊斯科埃、息拉、息格尼科、索奈里拉、苏伊穆瓦洛、特尔默、斐洛；殉道女：安纳、阿拉、拉里萨、蒙科、玛弥喀、维尔科、阿尼玛伊斯、伽塔、杜克利达（均就义于克里米亚，约375年）" Id="712" Type="1" />
@@ -44,7 +44,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="誕神女福音節慶期圓滿日" Id="" Type="0" />
-<SAINT Name="紀念總領天使伽弗里伊爾" Id="446" Type="2" />
+<SAINT Name="紀念總領天使伽弗里伊爾" Id="446" Type="3" />
 <SAINT Name="殉道女帕拉斯凱維（1939年）" Id="" Type="0"/>
 <SAINT Name="殉道司教伊里奈（塞爾維亞的斯熱穆地方主教，304年）" Id="1091" Type="1" />
 <SAINT Name="殉道司祭瓦圖西及維爾科；殉道修士阿爾彼洛；殉道信眾：阿維佛、阿格諾、瑞亞索、伊伽特拉克斯、伊斯科埃、息拉、息格尼科、索奈里拉、蘇伊穆瓦洛、特爾默、斐洛；殉道女：安納、阿拉、拉里薩、蒙科、瑪彌喀、維爾科、阿尼瑪伊斯、伽塔、杜克利達（均就義於克里米亞，約375年）" Id="712" Type="1" />

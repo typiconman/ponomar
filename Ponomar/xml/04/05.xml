@@ -1,7 +1,7 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Translation of the relics of the Holy Hierarch Job, Patriarch of Moscow and All Russia (1652)" Id="6632" Type="1" />
 <SAINT Name="Martyrs Agathopous the Deacon and Theodulus the Reader and those with them (+ c.303)" Id="787" Type="1" />
+<SAINT Name="Translation of the relics of the Holy Hierarch Job, Patriarch of Moscow and All Russia (1652)" Id="6632" Type="0" />
 <SAINT Name="New Hieromartyr Priest Alexis (+1930)" Id="" Type="0"/>
 <SAINT Name="New Hieromartyr Priest Nicholas (+1931)" Id="" Type="0" />
 <SAINT Name="Venerable Publius of Egypt (4th C)" Id="789" Type="0" />
@@ -23,7 +23,7 @@
 <SAINT Name="St Panaghiotis à Jérusalem" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Перенесение мощей свт. Иова, патриарха Московского и всея России (1652)" Id="6632" Type="1"/>
+<SAINT Name="Перенесение мощей свт. Иова, патриарха Московского и всея России (1652)" Id="6632" Type="0"/>
 <SAINT Name="Мчч. Агафопода диакона, Феодула чтеца и иже с ними (ок. 303)" Id="787" Type="1"/>
 <SAINT Name="Сщмч. Алексия пресвитера (1930)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Николая пресвитера (1931)" Id="" Type="0"/>
@@ -34,7 +34,7 @@
 <SAINT Name="Прп. Феодоры Солунской (892)" Id="792" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="敬迁圣约弗（莫斯科牧首，1607年）之圣髑（1652年）" Id="6632" Type="1" />
+<SAINT Name="敬迁圣约弗（莫斯科牧首，1607年）之圣髑（1652年）" Id="6632" Type="0" />
 <SAINT Name="殉道者：诵经士德奥杜洛、辅祭阿伽托颇迪及其他偕同他们就义者（德撒洛尼基，约303年）" Id="787" Type="1" />
 <SAINT Name="新殉道司祭阿莱克西（1930年）" Id="" Type="0"/>
 <SAINT Name="新殉道司祭尼科拉（1931年）" Id="" Type="0" />
@@ -50,7 +50,7 @@
 <SAINT Name="五位殉道女童（莱斯博斯岛的奈亚尼多尔）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="敬遷聖約弗（莫斯科牧首，1607年）之聖髑（1652年）" Id="6632" Type="1" />
+<SAINT Name="敬遷聖約弗（莫斯科牧首，1607年）之聖髑（1652年）" Id="6632" Type="0" />
 <SAINT Name="殉道者：誦經士德奧杜洛、輔祭阿伽托頗迪及其他偕同他們就義者（德撒洛尼基，約303年）" Id="787" Type="1" />
 <SAINT Name="新殉道司祭阿萊克西（1930年）" Id="" Type="0"/>
 <SAINT Name="新殉道司祭尼科拉（1931年）" Id="" Type="0" />

@@ -4,7 +4,7 @@
 <SCRIPTURE Type="gospel" Reading="Lk_9:51-56, 10:22-24" Pericope="48 (mid)" Note="for the Icon"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Afterfeast of the Dormition" Id="" Type="1" />
+<SAINT Name="Afterfeast of the Dormition" Id="" Type="0" />
 <SAINT Name="Translation of the Holy Icon of Christ 'Not-Made-By-Hands' from Edessa to Constantinople (944)" Id="4447" Type="3" />
 <SAINT Name="Martyr Diomedes the Physician of Tarsus in Cilicia (+298)" Id="4448" Type="1" />
 <SAINT Name="Venerable Cherimon of Egypt" Id="4449" Type="0" />
@@ -14,7 +14,7 @@
 <SAINT Name="New Martyr Stamatius" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Apresfete de la Dormition" Id="" Type="1"/>
+<SAINT Name="Apresfete de la Dormition" Id="" Type="0"/>
 <SAINT Name="Transfert d'Edesse à Constantinople de l'Image non faite de main d'homme" Id="4447" Type="3" />
 <SAINT Name="St Diomède" Id="4448" Type="1" />
 <SAINT Name="St Chérémon de Scété" Id="4449" Type="0" />
@@ -32,10 +32,10 @@
 <SAINT Name="St Prince Constantin Brancoveanu, ses fils et son conseiller" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Попразднство Успения Пресвятой Богородицы" Id="" Type="1"/>
+<SAINT Name="Попразднство Успения Пресвятой Богородицы" Id="" Type="0"/>
 <SAINT Name="Перенесение  из Едессы в Константинополь Нерукотворного Образа (Убруса) Господа Иисуса Христа (944)" Id="4447" Type="3"/>
 <SAINT Name="Мч. Диомида врача (298)" Id="4448" Type="1"/>
-<SAINT Name="Мчч. 33-х Палестинских" Id="" Type="1"/>
+<SAINT Name="Мчч. 33-х Палестинских" Id="" Type="0"/>
 <SAINT Name="Сщмч.  Стефана пресвитера (1918)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Александра пресвитера, прмц. Анны и мч. Иакова (1937)" Id="4731" Type="0"/>
 <SAINT Name="Прп. Херимона Египетского (IV)" Id="4449" Type="0"/>

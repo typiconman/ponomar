@@ -1,7 +1,7 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Martyrs Thallelaeus, Alexander and Asterius (+284)" Id="1108" Type="1" />
-<SAINT Name="Finding of the relics of St Alexis the Metropolitan of Moscow and Wonderworker of All Russia (1431)" Id="131" Type="4" />
+<SAINT Name="Finding of the relics of St Alexis the Metropolitan of Moscow and Wonderworker of All Russia (1431)" Id="131" Type="3" />
 <SAINT Name="Martyr Asclas of Egypt (+ c.287)" Id="1109" Type="0" />
 <SAINT Name="Venerable Thalassius" Id="" Type="0" />
 <SAINT Name="Venerable Nikita, John, and Joseph of Chios" Id="" Type="0" />
@@ -16,13 +16,13 @@
 <SAINT Name="St Marc l'Ermite" Id="" Type="0" />
 <SAINT Name="St Dovmont-Timothée, Prince de Pskov" Id="1111" Type="0" />
 <SAINT Name="St Etienne de Piperi en Serbie" Id="" Type="0" />
-<SAINT Name="St Alexis, Métropolite de Kiev (invention des Reliques)" Id="131" Type="4" />
+<SAINT Name="St Alexis, Métropolite de Kiev (invention des Reliques)" Id="131" Type="3" />
 <SAINT Name="St Dido, disciple de St David de Géorgie" Id="" Type="0" />
 <SAINT Name="St Baudile, Evêque de Nîmes" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Мчч. Фалалея, Александра и Астерия (284)" Id="1108" Type="1"/>
-<SAINT Name="Обретение мощей свт. Алексия, митр. Московского, всея России чудотворца (1431)" Id="131" Type="4"/>
+<SAINT Name="Обретение мощей свт. Алексия, митр. Московского, всея России чудотворца (1431)" Id="131" Type="3"/>
 <SAINT Name="Мч. Аскалона (ок. 287)" Id="1109" Type="0"/>
 <SAINT Name="Прпп. Завулона и Сосанны, родителей равноапостольной Нины (III-IV)" Id="2630" Type="0"/>
 <SAINT Name="Блгв. кн. Довмонта, во св. Крещении Тимофея, Псковского (1299)" Id="1111" Type="0"/>

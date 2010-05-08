@@ -5,7 +5,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Holy Apostle James Zebedee, brother of John the Theologian (+44)" Id="872" Type="4" />
-<SAINT Name="Finding of the relics of St Nikita, Bishop of Novgorod (1558)" Id="347" Type="1" />
+<SAINT Name="Finding of the relics of St Nikita, Bishop of Novgorod (1558)" Id="347" Type="0" />
 <SAINT Name="Holy Hierarch Ignatius (Brianchaninov), Bishop of the Caucasus and the Black Sea (+1867)" Id="898" Type="4" />
 <SAINT Name="Holy Hierarch Donatus the Bishop of Euroea in Epirus (+ c.387)" Id="960" Type="0" />
 <SAINT Name="Finding of the relics of St Basil, Bishop of Amasea (4th C)" Id="936" Type="0" />
@@ -22,7 +22,7 @@
 <SAINT Name="St Donat, Evêque d'Euria" Id="960" Type="0" />
 <SAINT Name="Ste Argyrie de Prousse" Id="" Type="0" />
 <SAINT Name="St Ignace Briantchaninov, Evêque de Stavropol" Id="898" Type="4" />
-<SAINT Name="St Nicétas, Evêque de Novgorod (invention des Reliques)" Id="347" Type="1" />
+<SAINT Name="St Nicétas, Evêque de Novgorod (invention des Reliques)" Id="347" Type="0" />
 <SAINT Name="St Sabas de Zvenigorod (invention des Reliques)" Id="" Type="0" />
 <SAINT Name="St Eutrope, 1er Evêque de Saintes et Ste Estelle" Id="" Type="0" />
 </LANGUAGE>
@@ -36,7 +36,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="圣使徒雅科弗（著福音者，神学家约安之兄弟，44年）" Id="872" Type="4" />
-<SAINT Name="寻获圣尼基塔（诺夫哥罗德主教，1108年）之圣髑纪念（1558年）" Id="347" Type="1" />
+<SAINT Name="寻获圣尼基塔（诺夫哥罗德主教，1108年）之圣髑纪念（1558年）" Id="347" Type="0" />
 <SAINT Name="圣伊格纳提（本姓布里安恰尼诺夫，高加索及斯塔弗若波尔地方主教，1867年）" Id="898" Type="4" />
 <SAINT Name="圣多纳特（伊庇鲁斯的艾弗若爱雅地方主教，387年）" Id="960" Type="0" />
 <SAINT Name="寻获殉道司教，阿玛塞亚主教瓦西里之圣髑纪念（322年）" Id="936" Type="0" />
@@ -49,7 +49,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="聖使徒雅科弗（著福音者，神學家約安之兄弟，44年）" Id="872" Type="4" />
-<SAINT Name="尋獲聖尼基塔（諾夫哥羅德主教，1108年）之聖髑紀念（1558年）" Id="347" Type="1" />
+<SAINT Name="尋獲聖尼基塔（諾夫哥羅德主教，1108年）之聖髑紀念（1558年）" Id="347" Type="0" />
 <SAINT Name="聖伊格納提（本姓布裡安恰尼諾夫，高加索及斯塔弗若波爾地方主教，1867年）" Id="898" Type="4" />
 <SAINT Name="聖多納特（伊庇魯斯的艾弗若愛雅地方主教，387年）" Id="960" Type="0" />
 <SAINT Name="尋獲殉道司教，阿瑪塞亞主教瓦西裡之聖髑紀念（322年）" Id="936" Type="0" />

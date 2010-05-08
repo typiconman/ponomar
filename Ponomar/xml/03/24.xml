@@ -7,7 +7,7 @@
 <SCRIPTURE Type="vespers" Reading="Prov_9:1-11" Cmd="nday &lt; 0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Forefeast of the Annunciation" Id="" Type="0" />
+<SAINT Name="Forefeast of the Annunciation" Id="" Type="2" />
 <SAINT Name="Venerable Zachariah the Recluse of Egypt" Id="700" Type="1" />
 <SAINT Name="St. Artemon (Menignus) the Bishop of Seleucia (1st-2nd C)" Id="6673" Type="1" />
 <SAINT Name="New Hieromartyr Priest Vladimir (+1920)" Id="" Type="0"/>
@@ -26,7 +26,7 @@
 <SAINT Name="St. Zacharie le JeÃÂ»neur des Grottes de Kiev" Id="822" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Предпразднство Благовещения" Id="" Type="0" />
+<SAINT Name="Предпразднство Благовещения" Id="" Type="2" />
 <SAINT Name="Прп. Захарии монаха." Id="700" Type="1"/>
 <SAINT Name="Свт. Артемия (Артемона) еп. Солунского (Селевкийского) (I-II)" Id="6673" Type="1" />
 <SAINT Name="Сщмч. Владимира пресвитера (1920)" Id="" Type="0"/>
@@ -36,7 +36,7 @@
 <SAINT Name="Иконы Божией Матери, именуемой &quot;Тучная Гора&quot; (XVII)" Id="706" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="诞神女福音节前日" Id="" Type="0" />
+<SAINT Name="诞神女福音节前日" Id="" Type="2" />
 <SAINT Name="圣匝哈里亚（埃及的闭关者，4世纪）" Id="700" Type="1" />
 <SAINT Name="圣阿尔特蒙（塞琉西亚主教，1世纪）" Id="6673" Type="1" />
 <SAINT Name="新殉道司祭弗拉迪弥尔（1920年）" Id="" Type="0"/>
@@ -51,7 +51,7 @@
 <SAINT Name="圣玛尔提诺（底比斯修士）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="誕神女福音節前日" Id="" Type="0" />
+<SAINT Name="誕神女福音節前日" Id="" Type="2" />
 <SAINT Name="聖匝哈里亞（埃及的閉關者，四世紀）" Id="700" Type="1" />
 <SAINT Name="聖阿爾特蒙（塞琉西亞主教，一世紀）" Id="6673" Type="1" />
 <SAINT Name="新殉道司祭弗拉迪彌爾（1920年）" Id="" Type="0"/>

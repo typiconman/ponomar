@@ -8,7 +8,7 @@
 <SAINT Name="Martyr Hermione the Daughter of St Philip the Deacon (+c.117)" Id="1449" Type="0" />
 <SAINT Name="Venerable Petronius, desciple of Venerable Pachomius" Id="" Type="0" />
 <SAINT Name="Hieromartyr Peter, Metropolitan of Dabro and Bosnia" Id="" Type="0" />
-<SAINT Name="Second finding of the relics of Saint Metrophan, Bishop of Vorenzh (1989)" Id="1545" Type="1" />
+<SAINT Name="Second finding of the relics of Saint Metrophan, Bishop of Vorenzh (1989)" Id="1545" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Sts Babylas, Evêque d'Antioche et trois enfants, ses disciples" Id="1446" Type="1" />
@@ -26,7 +26,7 @@
 <SAINT Name="Сщмч. Вавилы, еп. Великой Антиохии, и с ним трех отроков: Урвана, Прилидиана, Епполония и матери их Христодулы (251)" Id="1446" Type="1"/>
 <SAINT Name="Прмч. Парфения, игумена Кизилташского (1867)" Id="7004" Type="0"/>
 <SAINT Name="Обретение мощей свт. Иоасафа, еп. Белгородского (1911)" Id="1031" Type="4"/>
-<SAINT Name="Второе обретение мощей святителя Митрофана, епископа Воронежского (1989)" Id="1545" Type="1"/>
+<SAINT Name="Второе обретение мощей святителя Митрофана, епископа Воронежского (1989)" Id="1545" Type="0"/>
 <SAINT Name="Сщмчч. Григория, еп. Шлиссельбургского. Павла, Иоанна, Николая, Николая, Иоанна, Николая, Александра, Петра и Михаила пресвитеров, прмч. Стефана, мчч. Василия, Петра, Стефана и Александра (1937)" Id="4881" Type="0"/>
 <SAINT Name="Мц. Елены (1943)" Id="" Type="0"/>
 <SAINT Name="Мц. Ермионии, дщери ап. Филиппа диакона (ок. 117)" Id="1449" Type="0"/>

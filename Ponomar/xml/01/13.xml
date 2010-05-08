@@ -12,8 +12,8 @@
 <SAINT Name="Martyr Athanasius" Id="" Type="0" />
 <SAINT Name="Martyrs Pachomius and Papirinus" Id="" Type="0" />
 <SAINT Name="Holy Hierarch Leontius, Bishop of Caesarea in Cappadocia" Id="" Type="0" />
-<SAINT Name="Venerable Eleazar of Anzersk Island in Solovki (+ 1656)" Id="211" Type="1" />
-<SAINT Name="Venerable Monk Irenarchus, Hermit of Rostov (+ 1616)" Id="210" Type="1" />
+<SAINT Name="Venerable Eleazar of Anzersk Island in Solovki (+ 1656)" Id="211" Type="0" />
+<SAINT Name="Venerable Monk Irenarchus, Hermit of Rostov (+ 1616)" Id="210" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Sts Hermyle et Stratonique" Id="799" Type="1" />
@@ -21,14 +21,14 @@
 <SAINT Name="St Athanase" Id="" Type="0" />
 <SAINT Name="Sts Pachôme et Papyrin" Id="" Type="0" />
 <SAINT Name="St Maxime le Kavsokalyvite" Id="" Type="0" />
-<SAINT Name="St Irénarque de Rostov" Id="210" Type="1" />
-<SAINT Name="St Eléazar d'Anzersk" Id="211" Type="1" />
+<SAINT Name="St Irénarque de Rostov" Id="210" Type="0" />
+<SAINT Name="St Eléazar d'Anzersk" Id="211" Type="0" />
 <SAINT Name="St Hilaire, Evêque de Poitiers" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Мчч. Ермила и Стратоника (ок. 315)" Id="799" Type="1"/>
-<SAINT Name="Прп. Иринарха, затворника Ростовского (1616)" Id="210" Type="1"/>
-<SAINT Name="Прп. Елеазара Анзерского (1656)" Id="211" Type="1"/>
+<SAINT Name="Прп. Иринарха, затворника Ростовского (1616)" Id="210" Type="0"/>
+<SAINT Name="Прп. Елеазара Анзерского (1656)" Id="211" Type="0"/>
 <SAINT Name="Мч. Петра Анийского (309-310)" Id="202" Type="0"/>
 <SAINT Name="Прп. Иакова, еп. Низибийского (350)" Id="212" Type="0"/>
 </LANGUAGE>

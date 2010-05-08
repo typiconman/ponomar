@@ -4,7 +4,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Martyrs Nazarius, Gervasius, Protasius and Celsius of Milan (1st C)" Id="1737" Type="1" />
-<SAINT Name="Venerable Paraskeva of Serbia (11th C)" Id="2637" Type="3" />
+<SAINT Name="Venerable Paraskeva of Serbia (11th C)" Id="2637" Type="2" />
 <SAINT Name="Venerable Nicholas 'Sviatosha', Prince of Chernigov (+ 1143)" Id="1739" Type="0" />
 <SAINT Name="Hieromartyr Siluan, Presbyter of Gaza (4th C)" Id="1740" Type="0" />
 </LANGUAGE>
@@ -13,13 +13,13 @@
 <SAINT Name="St Cosmas l'Hymnographe, Evêque de Maïouma" Id="" Type="0" />
 <SAINT Name="Sts Sylvain et 40 martyrs d'Egypte" Id="1740" Type="0" />
 <SAINT Name="St Pierre d'Auselamos" Id="" Type="0" />
-<SAINT Name="Ste Parascève la Jeune" Id="2637" Type="3" />
+<SAINT Name="Ste Parascève la Jeune" Id="2637" Type="2" />
 <SAINT Name="St Ignace Agallianos, Métropolite de Mithymne" Id="" Type="0" />
 <SAINT Name="St Nicolas le Pieux, Prince de Novgorod, des Grottes de Kiev" Id="1739" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Мчч. Назария, Гервасия, Протасия, Келсия (54-68)" Id="1737" Type="1"/>
-<SAINT Name="Прп. Параскевы Сербской (XI)" Id="2637" Type="3"/>
+<SAINT Name="Прп. Параскевы Сербской (XI)" Id="2637" Type="2"/>
 <SAINT Name="Сщмч. Михаила пресвитера (1921)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Петра пресвитера (1937)" Id="" Type="0"/>
 <SAINT Name="Прмч. Максимилиана (1938)" Id="" Type="0"/>

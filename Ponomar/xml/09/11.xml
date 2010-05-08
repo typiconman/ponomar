@@ -14,7 +14,7 @@
 <SAINT Name="Martyrs Serapion, Crondidus, and Leontius of Alexandria" Id="" Type="0" />
 <SAINT Name="Venerable Paphnuty the Confessor, Bishop of Taissi" Id="" Type="0" />
 <SAINT Name="Glorification of Blessed Xenia of St Petersburg (1978)" Id="" Type="0" />
-<SAINT Name="Venerable Silouan of Mt Athos (+1938)" Id="" Type="0" />
+<SAINT Name="Venerable Silouan of Mt Athos (+1938)" Id="" Type="4" />
 <SAINT Name="New Hieromartyrs Priests Nicholas and Victor (+1918)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
@@ -31,7 +31,7 @@
 <SAINT Name="Попразднство Рождества Пресвятой Богородицы" Id="" Type="0"/>
 <SAINT Name="Прп. Феодоры Александрийской (474-491)" Id="1506" Type="1"/>
 <SAINT Name="Перенесение мощей прпп. Сергия и Германа, Валаамских чудотворцев" Id="1411" Type="4"/>
-<SAINT Name="Прп. Силуана Афонского (1938)" Id="" Type="0"/>
+<SAINT Name="Прп. Силуана Афонского (1938)" Id="" Type="4"/>
 <SAINT Name="Сщмчч. Николая и Виктора пресвитеров (1918)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Карпа пресвитера (1937)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Николая диакона (1942)" Id="" Type="0"/>

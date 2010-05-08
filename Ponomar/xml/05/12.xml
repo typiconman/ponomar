@@ -8,7 +8,7 @@
 <SAINT Name="Holy Equal-to-the-Apostles Methodius (+885) and Cyrill (+869), teachers of the Slavs [from Monday]" Id="1525" Type="5" Cmd="nday == 51"/>
 <SAINT Name="St. Epiphanius the Bishop of Cyprus (+403)" Id="1043" Type="1" />
 <SAINT Name="Saint Germanus, Patriarch of Constantinople (+740)" Id="1047" Type="1" />
-<SAINT Name="Glorification of Hieromartyr Hermogenes, Patriarch of Moscow and All Russia (1913)" Id="804" Type="1" />
+<SAINT Name="Glorification of Hieromartyr Hermogenes, Patriarch of Moscow and All Russia (1913)" Id="804" Type="0" />
 <SAINT Name="St. Sabinus, Archbishop of Cyprus (5th C)" Id="1045" Type="0" />
 <SAINT Name="St. Polybius, Bishop of Rhynokyra (5th C)" Id="1046" Type="0" />
 <SAINT Name="Venerable Pancratius the Youth" Id="" Type="0" />
@@ -32,7 +32,7 @@
 <SAINT Name="Равноапп. Мефодия (885) и Кирилла (869), учителей Словенских [с понедельника]" Id="1525" Type="5" Cmd="nday == 51"/>
 <SAINT Name="Свт. Епифания, еп. Кипрского (403)" Id="1043" Type="1"/>
 <SAINT Name="Свт. Германа, патриарха Константинопольского (740)" Id="1047" Type="1"/>
-<SAINT Name="Прославление сщмч. Ермогена, патриарха Московского и всея России, чудотворца (1913)" Id="804" Type="1"/>
+<SAINT Name="Прославление сщмч. Ермогена, патриарха Московского и всея России, чудотворца (1913)" Id="804" Type="0"/>
 <SAINT Name="Сщмч. Петра, пресвитера (1937)" Id="" Type="0"/>
 <SAINT Name="Свтт. Савина, архиеп. Кипрского (V) и прочих свтт. Кипрских" Id="1045" Type="0"/>
 <SAINT Name="Свт. Полувия, еп. Ринокирского (V)" Id="1046" Type="0"/>

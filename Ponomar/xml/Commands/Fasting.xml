@@ -24,7 +24,9 @@ The last applicable fasting rule will be taken as the rule for the given day. Th
 		<RULE Case="1111111" Cmd="nday &lt;= 9 || !(dow == 3 || dow == 5)"/>
 		<RULE Case="0000111" Cmd="nday &gt;= 10 &amp;&amp; (dow == 3 || dow == 5)"/>
 		<RULE Case="0011111" Cmd="nday &gt;= 10 &amp;&amp; (dow == 3 || dow == 5) &amp;&amp; dRank &gt;= 4"/>
-		<RULE Case="0011111" Cmd="nday == 45 || nday == 38"/>
+		<!-- Dispensation for fish on Mid-Pentecost and Apodosis-->
+		<RULE Case="0011111" Cmd="nday == 24 || nday == 38"/>
+		<!-- No fasting for the week after Pentecost -->
 		<RULE Case="1111111" Cmd="nday >= 49 &amp;&amp; nday &lt;= 56"/>
 	</LANGUAGE>
 </PERIOD>

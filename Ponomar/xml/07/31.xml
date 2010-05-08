@@ -6,7 +6,7 @@
 <SAINT Name="Righteous Ehud, a Judge of Israel (Judg 3:15)" Id="" Type="0" />
 <SAINT Name="Holy Hierarch Herman, Bishop of Okser" Id="" Type="0" />
 <SAINT Name="Martyr Judith of Caesarea" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Benjamin, Metropolitan of Petrograd and Gdovsk (+ 1922) and those with him: Archimandrite Sergius and the laymen: Yuri and John" Id="407" Type="3" />
+<SAINT Name="New Hieromartyr Benjamin, Metropolitan of Petrograd and Gdovsk (+ 1922) and those with him: Archimandrite Sergius and the laymen: Yuri and John" Id="407" Type="0" />
 <SAINT Name="New Hieromartyr Nicholas (1941)" Id="" Type="0" />
 <SAINT Name="Saint Vasily the Confessor, bishop of Kineshemsk (1945)" Id="4777" Type="0" />
 </LANGUAGE>
@@ -20,7 +20,7 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Предпразднство происхождения честных древ Животворящего Креста Господня" Id="" Type="2"/>
 <SAINT Name="Прав. Евдокима Каппадокиянина (IX)" Id="4356" Type="2"/>
-<SAINT Name="Сщмч. Вениамина, митр. Петроградского и Гдовского, и иже с ним убиенных сщмч. архим. Сергия и мчч. Юрия и Иоанна (1922). Мч. Максима (1928)" Id="407" Type="3"/>
+<SAINT Name="Сщмч. Вениамина, митр. Петроградского и Гдовского, и иже с ним убиенных сщмч. архим. Сергия и мчч. Юрия и Иоанна (1922). Мч. Максима (1928)" Id="407" Type="0"/>
 <SAINT Name="Сщмч. Владимира пресвитера (1937)" Id="" Type="0"/>
 <SAINT Name="Cщмч. Иоанна пресвитера, св. Константина исп., пресвитера, мц. Анны и св. Елисаветы исп (после 1937)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Николая пресвитера (1941)" Id="" Type="0"/>
