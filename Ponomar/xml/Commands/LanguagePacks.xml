@@ -37,7 +37,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <LANGUAGE NameLocal="English" NameEnglish="English" Cmd="LS == 0 || !(LS == 1 || LS == 2 || LS == 3 || LS == 5 || LS == 6)">
 <PHRASE Key="0" Value="Ponomar" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
-<PHRASE Key="2" Value="Lord's-day (Sunday)/,Second-day (Monday)/,Third-day (Tuesday)/,Fourth-day (Wednesday)/,Fifth-day (Thursday)/,Preparation-day (Friday)/,Sabbath (Saturday)" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
+<PHRASE Key="2" Value="Sunday/,Monday/,Tuesday/,Wednesday/,Thursday/,Friday/,Saturday" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
 <PHRASE Key="3" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="4" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'. These are the civil months that are to be used for the Greogorian calendar (An issue for the Chinese version)."/>
 <PHRASE Key="5" Value="Sunday/,Monday/,Tuesday/,Wednesday/,Thursday/,Friday/,Saturday" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
@@ -60,7 +60,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="3rd hour" Value="3&lt;sup&gt;rd&lt;/sup&gt; hour"/>
 <PHRASE Key="6th hour"	Value="6&lt;sup&gt;th&lt;/sup&gt; hour"/>
 <PHRASE Key="9th hour" Value="9&lt;sup&gt;th&lt;/sup&gt; hour"/>
-<PHRASE Key="Fasts" Value="Fast free/,Strict fast/,Fast: Wine and oil allowed/,Fast: Fish, wine, and oil allowed/,Fasting regulations:/,Error calculating fast information/,: Monastic Rule:/,No Food/,Dry Food only/,Hot Food without oil/,Fast: Caviar, wine, and oil permitted/,Fast: Meat is excluded/,Fast: Wine is permitted/,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast:" />
+<PHRASE Key="Fasts" Value="Fast free /,Strict fast /,Fast: Wine and oil allowed /,Fast: Fish, wine, and oil allowed /,Fasting regulations: /,Error calculating fast information /,: Monastic Rule: /,No Food /,Dry Food only /,Hot Food without oil /,Fast: Caviar, wine, and oil permitted /,Fast: Meat is excluded /,Fast: Wine is permitted /,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast: " />
 <PHRASE Key="Week1" Value="Sun/,Mon/,Tue/,Wed/,Thu/,Fri/,Sat" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="No Service Today/,Prime (First Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
@@ -87,6 +87,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Language" Value="en" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
 <PHRASE Key="Country" Value="GB" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0. The true 'Arabic' numerals have a zero point at '٠' (\u0660)."/>
+<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
+<PHRASE Key="TimeF" Value="HH:MM" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="Français" NameEnglish="French" Cmd="LS == 1">
  <PHRASE Key="0" Value="Ponomar" Comment="Ceci est la seule valeur pour cette clé."/>
@@ -113,7 +115,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="3rd hour" Value="3&lt;sup&gt;me&lt;/sup&gt; heure"/>
 <PHRASE Key="6th hour"	Value="6&lt;sup&gt;me&lt;/sup&gt; heure"/>
 <PHRASE Key="9th hour" Value="9&lt;sup&gt;me&lt;/sup&gt; heure"/>
-<PHRASE Key="Fasts" Value="Aucun jeûne/,Jeûne sévère/,Jeûne : Le vin et l'huile sont permit./,Jeûne : Le poisson, le vin, et l'huile sont permit./,Les régulations du jeûne :/,Une erreur se produit en calculant l'information sur le jeûne/, : Règle monastique :/,Aucunne nourriture/,xénophagie/,Nourriture chaude sans huile/,Jeûne : Le caviar, le vin, et l'huile sont permit./,Jeûne : Le viande est exclus./,Jeûne : Le vin est permit./,le viande/,les produits lactières/,le poisson/,le caviar/,l'huile/,le vin/,des nourritures secs/,est/,sont/,sont/,permit/,exclus/,et/, ; et/,Jeûne :" />
+<PHRASE Key="Fasts" Value="Aucun jeûne /,Jeûne sévère /,Jeûne : Le vin et l'huile sont permit. /,Jeûne : Le poisson, le vin, et l'huile sont permit. /,Les régulations du jeûne : /,Une erreur se produit en calculant l'information sur le jeûne /, : Règle monastique : /,Aucunne nourriture /,xénophagie /,Nourriture chaude sans huile /,Jeûne : Le caviar, le vin, et l'huile sont permit. /,Jeûne : Le viande est exclus. /,Jeûne : Le vin est permit. /,le viande/,les produits lactières/,le poisson/,le caviar/,l'huile/,le vin/,des nourritures secs/,est/,sont/,sont/,permit/,exclus/,et/, ; et/,Jeûne : " />
 <PHRASE Key="Week1" Value="dim/,lun/,mar/,mer/,jeu/,ven/,sam" Comment="Ceci sont les abréviations pour les jours de la semaine." />
 <PHRASE Key="Phases" Value="Nouvelle Lune/,Premier croissant/,Premier quartier/,Lune gibbeuse ascendante/,Pleine Lune/,Lune gibbeuse descendante/,Dernier quartier/,Dernier croissant" Comment="Les phases de la lune" />
 <PHRASE Key="Primes" Value="Aucun office de Primes n’est pas célébré aujourd'hui/,Prime (Première Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
@@ -140,6 +142,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Language" Value="fr" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
 <PHRASE Key="Country" Value="FR" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
+<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
+<PHRASE Key="TimeF" Value="HH h MM min" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 </LANGUAGE> 
 <LANGUAGE NameLocal="русский" NameEnglish="Russian" Cmd="LS == 3">
 <PHRASE Key="0" Value="Пономарь" Comment="This is the only entry for this key."/>
@@ -167,7 +171,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="3rd hour" Value="Час 3-й"/>
 <PHRASE Key="6th hour"	Value="Час 6-й"/>
 <PHRASE Key="9th hour" Value="Час 9-й"/>
-<PHRASE Key="Fasts" Value="Поста нет/,Строгий пост/,Пост: разрешается вино и растительное масло/,Пост: разрешается рыба/,Указания пищи:/,Ошибка при вычеслении указаний/,: Монастырская кухня:/,Поста нет/,Сухоядение/,Пища без растительного масла/,Пост: Разрешается рыбная икра/,Масленца (пища без мяса)/,Пост: Разрешается вино/,мясо/,молочные продукты/,рыба/,рыбная икпа/,растительное масло/,вино/,сухофрукты/,/,/,/,разрешается/,запрещается/,и/,, пока/,Пост:" />
+<PHRASE Key="Fasts" Value="Поста нет /,Строгий пост /,Пост: разрешается вино и растительное масло /,Пост: разрешается рыба /,Указания пищи: /,Ошибка при вычеслении указаний /,: Монастырская кухня: /,Строгий пост /,Сухоядение /,Пища без растительного масла /,Пост: Разрешается рыбная икра /,Масленца (пища без мяса) /,Пост: Разрешается вино /,мясо/,молочные продукты/,рыба/,рыбная икпа/,растительное масло/,вино/,сухофрукты/,/,/,/,разрешается/,запрещается/,и/,, пока/,Пост: " />
 <PHRASE Key="Week1" Value="Вс/,Пон/,Вт/,Ср/,Чт/,Пт/,Сб" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="No Service Today/,Prime (First Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
@@ -194,6 +198,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Language" Value="ru" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
 <PHRASE Key="Country" Value="RU" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
+<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
+<PHRASE Key="TimeF" Value="HH:MM" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="церковнославѧнский" NameEnglish="Church Slavonic" Cmd="LS == 2">
 <PHRASE Key="0" Value="Пономарь" Comment="This is the only entry for this key."/>
@@ -221,7 +227,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="3rd hour" Value="Час 3-й"/>
 <PHRASE Key="6th hour"	Value="Час 6-й"/>
 <PHRASE Key="9th hour" Value="Час 9-й"/>
-<PHRASE Key="Fasts" Value="Поста нет/,Строгий пост/,Пост: разрешается вино и растительное масло/,Пост: разрешается рыба/,Указания пищи:/,Ошибка при вычеслении указаний/,: Монастырская кухня:/,Поста нет/,Сухоядение/,Пища без растительного масла/,Пост: Разрешается рыбная икра/,Масленца (пища без мяса)/,Пост: Разрешается вино/,мясо/,молочные продукты/,рыба/,рыбная икпа/,растительное масло/,вино/,сухофрукты/,/,/,/,разрешается/,запрещается/,и/,, пока/,Пост:" />
+<PHRASE Key="Fasts" Value="Поста нет /,Строгий пост /,Пост: разрешается вино и растительное масло /,Пост: разрешается рыба /,Указания пищи: /,Ошибка при вычеслении указаний /,: Монастырская кухня: /,Строгий пост /,Сухоядение /,Пища без растительного масла /,Пост: Разрешается рыбная икра /,Масленца (пища без мяса) /,Пост: Разрешается вино /,мясо/,молочные продукты/,рыба/,рыбная икпа/,растительное масло/,вино/,сухофрукты/,/,/,/,разрешается/,запрещается/,и/,, пока/,Пост: " />
 <PHRASE Key="Week1" Value="Вс/,Пон/,Вт/,Ср/,Чт/,Пт/,Сб" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="No Service Today/,Ча́съ пе́рвый/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
@@ -239,7 +245,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Sexte" Value="No Service Today/,Sexte (Sixth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="None" Value="No Service Today/,None (Ninth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="FontFaceM" Value="Hirmos Ponomar" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
-<PHRASE Key="FontSizeM" Value="16" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontSizeM" Value="18" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="FontFaceL" Value="Hirmos Ponomar" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
 <PHRASE Key="FontSizeL" Value="18" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="CommSep" Value="; " Comment="This is the mark to separate the different commemorations that are dispalyed."/>
@@ -249,6 +255,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <!-- Unfortunately, Church Slavonic is not a recognised language by the ISO -->
 <PHRASE Key="Country" Value="RU" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
+<PHRASE Key="Ideographic" Value="1" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV. 1 = yes!"/>
+<PHRASE Key="TimeF" Value="HH-й ча́съ MM-а минꙋта̀" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <!-- Traditionally, Church Slavonic uses a glyph-based approach to writing numbers, which at present cannot be truly implemented! -->
 </LANGUAGE>
 <LANGUAGE NameLocal="中文（简） " NameEnglish="Simplified Chinese" Cmd="LS == 5">
@@ -304,6 +312,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Language" Value="zh" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
 <PHRASE Key="Country" Value="CN" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
+<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV. 1 = yes!"/>
+<PHRASE Key="TimeF" Value="HH时MM分" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="中文（繁）" NameEnglish="Traditional Chinese" Cmd="LS == 6">
 <PHRASE Key="0" Value="波諾馬里" Comment="This is the only entry for this key."/>
@@ -359,6 +369,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <!-- This is seems to be a permissible approach for the traditional Chinese characters. -->
 <PHRASE Key="Country" Value="HK" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
+<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV. 1 = yes!"/>
+<PHRASE Key="TimeF" Value="HH時MM分" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 </LANGUAGE>
 <DONE Value="MenuFiles, LanguagePack, LanguageSelector, About, ConfigurationFiles, Main, GospelSelector, OrderedHashtable, DocHanlder,QDParser, Sunrise, JCalendar, JDaySelector, Paschalion, Primes, DivineLiturgy, StringOp (I could not successfully translate this section),JDate,Bible,"/>
 <TODO Value="  Reporter, " />
