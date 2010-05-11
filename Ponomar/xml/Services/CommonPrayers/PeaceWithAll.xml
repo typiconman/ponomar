@@ -8,6 +8,12 @@
 <LANGUAGE Cmd="LS == 2 || LS == 3">
 <TEXT Value="Ми́ръ всѣ҄мъ."/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<TEXT Value="愿平安与众人同在。"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<TEXT Value="願平安與眾人同在。"/>
+</LANGUAGE>
 <LANGUAGE Cmd="LS == -2">
 <TEXT Value="Εἰρήνη πᾶσι."/>
 </LANGUAGE>

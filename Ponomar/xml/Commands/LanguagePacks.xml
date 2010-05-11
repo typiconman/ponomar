@@ -318,8 +318,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <LANGUAGE NameLocal="中文（简） " NameEnglish="Simplified Chinese" Cmd="LS == 5">
 <PHRASE Key="0" Value="波诺马里" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="主显月/,献主月/,福音月/,凯旋月/,圣君月/,使徒月/,先知月/,安息月/,圣架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
-<PHRASE Key="2" Value="主日/,瞻礼二/,瞻礼三/,瞻礼四/,瞻礼五/,预备日/,安息日" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
-<PHRASE Key="3" Value="主显月/,献主月/,福音月/,凯旋月/,圣君月/,使徒月/,先知月/,安息月/,圣架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="2" Value="主日/,瞻礼二/,瞻礼三/,瞻礼四/,瞻礼五/,预备日/,安息日" Comment="The liturgical names of the week  for use in the format 'Year Month Date Week'."/>
+<PHRASE Key="3" Value="主显月/,献主月/,福音月/,凯旋月/,圣君月/,使徒月/,先知月/,安息月/,圣架月/,帡幪月/,入殿月/,降生月" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
 <PHRASE Key="5" Value="星期天/,星期一/,星期二/,星期三/,星期四/,星期五/,星期六" Comment="The names of the civil week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
 <PHRASE Key="4" Value="1月/,2月/,3月/,4月/,5月/,6月/,7月/,8月/,9月/,10月/,11月/,12月" Comment="The names of the civil months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="Options" Value="Options" />
@@ -374,7 +374,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <LANGUAGE NameLocal="中文（繁）" NameEnglish="Traditional Chinese" Cmd="LS == 6">
 <PHRASE Key="0" Value="波諾馬里" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
-<PHRASE Key="2" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
+<PHRASE Key="2" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
 <PHRASE Key="3" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="5" Value="星期天/,星期一/,星期二/,星期三/,星期四/,星期五/,星期六" Comment="The names of the civil week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
 <PHRASE Key="4" Value="一月/,二月/,三月/,四月/,五月/,六月/,七月/,八月/,九月/,十月/,十一月/,十二月" Comment="The names of the civil months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
