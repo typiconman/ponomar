@@ -1,7 +1,7 @@
 ﻿<DAY>
 <LANGUAGE>
 <PRIMES Type="Normal" />
-<SCRIPTURE Type="matins" Reading="Mt_28:1-20" Pericope="116"/>
+<SCRIPTURE Type="matins" Reading="Mt_28:16-20" Pericope="116"/>
 <SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" Cmd="nday == -91 &amp;&amp; doy &gt; 12" />
 <!-- reading for week 29 (assured that epistle is read twice this cycle (DUBIOUS)) -->
 <SCRIPTURE Type="apostol" Reading="Col_3:4-11" Pericope="257" Cmd="nday == -98 &amp;&amp; doy &gt; 12" />
