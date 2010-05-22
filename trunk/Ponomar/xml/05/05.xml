@@ -1,11 +1,11 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Greatmartyr Irene of Thessalonica (1st-2nd C)" Id="2523" Type="1" />
+<SAINT Name="Venerable James the Abbot of Zhelezny Bor (+1442)" Id="871" Type="0" />
+<SAINT Name="Icon of the Mother of God 'the Inexhaustible Cup' (1878)" Id="" Type="0" />
 <SAINT Name="Martyrs Neophyte, Gaius, and Gaianus" Id="" Type="0" />
 <SAINT Name="Venerable Micah, disciple of St Sergius of Radonezh" Id="" Type="0" />
 <SAINT Name="Venerable Hadrian of Monzensk" Id="" Type="0" />
-<SAINT Name="Venerable James the Abbot of Zhelezny Bor" Id="871" Type="0" />
-<SAINT Name="Icon of the Mother of God 'the Inexhaustible Cup' (1878)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Ste et Grande Martyre Irène de Thessalonique" Id="2523" Type="1" />
@@ -20,11 +20,13 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Вмц. Ирины (I-II)" Id="2523" Type="1"/>
-<SAINT Name="Обретение мощей прп. Иакова Железноборовского (1422)" Id="871" Type="0"/>
-<SAINT Name="Иконы Божией Матери &quot;Неупиваемая Чаша&quot; (1878)" Id="" Type="0"/>
+<SAINT Name="Обретение мощей прп. Иакова Железноборовского (1442)" Id="871" Type="0"/>
+<SAINT Name="Иконы Божией Матери «Неупиваемая Чаша» (1878)" Id="" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="大殉道者童贞女伊里尼（德撒洛尼基城，1-2世纪间）" Id="" Type="0" />
+<SAINT Name="大殉道者童贞女伊里尼（德撒洛尼基城，1-2世纪间）" Id="2523" Type="1" />
+<SAINT Name="圣雅科弗（哲勒兹尼•博尔地方修道院院长，1442年）" Id="871" Type="0"/>
+<SAINT Name="“不竭之杯”圣母像纪念日（1878年）" Id="" Type="0" />
 <SAINT Name="殉道者奈奥斐特、盖奥、盖雅诺" Id="" Type="0" />
 <SAINT Name="圣玛尔提诺及圣伊拉克利（伊利里亚地方，4世纪）" Id="" Type="0" />
 <SAINT Name="圣艾弗洛吉（宣信者，埃德萨主教，386年）" Id="" Type="0" />
@@ -34,19 +36,19 @@
 <SAINT Name="寻获哲乐兹尼•博尔修道院院长圣雅科弗长老之圣髑（1613年）" Id="" Type="0" />
 <SAINT Name="圣阿德里安（蒙匝修道院院长，1619年）" Id="" Type="0" />
 <SAINT Name="圣艾弗提弥（显行灵迹者，色雷斯的玛迪托地方主教，11世纪）" Id="" Type="0" />
-<SAINT Name="“不竭之杯”圣母像纪念日" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="大殉道者童貞女伊里尼（德撒洛尼基城，一至二世紀間）" Id="" Type="0" />
+<SAINT Name="大殉道者童貞女伊里尼（德撒洛尼基城，一至二世紀間）" Id="2523" Type="1" />
+<SAINT Name="聖雅科弗（哲勒茲尼‧博爾地方修道院院長，1442年）" Id="871" Type="0"/>
+<SAINT Name="「不竭之杯」聖母像紀念日（1878年）" Id="" Type="0" />
 <SAINT Name="殉道者奈奧斐特、蓋奧、蓋雅諾" Id="" Type="0" />
 <SAINT Name="聖瑪爾提諾及聖伊拉克利（伊利里亞地方，四世紀）" Id="" Type="0" />
 <SAINT Name="聖艾弗洛吉（宣信者，埃德薩主教，386年）" Id="" Type="0" />
 <SAINT Name="聖伊拉里（阿爾勒地方，449年）" Id="" Type="0" />
 <SAINT Name="聖瓦爾拉穆（塞爾普科霍夫地方，1377年）" Id="" Type="0" />
 <SAINT Name="新殉道修士艾弗冷（新瑪克里，1426年）" Id="" Type="0" />
-<SAINT Name="尋獲哲樂茲尼‧博爾修道院院長聖雅科弗長老之聖髑（1613年）" Id="" Type="0" />
+<SAINT Name="尋獲哲樂茲尼•博爾修道院院長聖雅科弗長老之聖髑（1613年）" Id="" Type="0" />
 <SAINT Name="聖阿德里安（蒙匝修道院院長，1619年）" Id="" Type="0" />
 <SAINT Name="聖艾弗提彌（顯行靈蹟者，色雷斯的瑪迪托地方主教，十一世紀）" Id="" Type="0" />
-<SAINT Name="「不竭之杯」聖母像紀念日" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
