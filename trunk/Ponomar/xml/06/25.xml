@@ -27,4 +27,32 @@
 <SAINT Name="Сщмч.  Николая и Василия пресвитеров (1918)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Василия пресвитера (1940)" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣前驱约安诞辰庆期" Id="" Type="0" />
+<SAINT Name="童贞殉道女斐弗若尼亚（304年）" Id="" Type="0" />
+<SAINT Name="殉道者伽利基亚诺（埃及贵族，362年）" Id="" Type="0" />
+<SAINT Name="圣西麦翁（西奈山，5世纪）" Id="" Type="0" />
+<SAINT Name="圣阿德尔博特（总辅祭，荷兰，740年）" Id="" Type="0" />
+<SAINT Name="王子圣裴特若和公主圣斐弗若尼亚（出家后分别名为达维德和艾弗福若西尼，穆罗姆地方之显行灵迹者）" Id="" Type="0" />
+<SAINT Name="圣迪奥尼西和圣多麦提（阿托斯圣山之迪奥尼西邬修道院，1380年）" Id="" Type="0" />
+<SAINT Name="圣德奥勒普托（费拉德尔菲亚都主教，1322年）" Id="" Type="0" />
+<SAINT Name="新殉道者普若科彼（瓦尔纳地方人氏，出家于阿托斯圣山，就义于斯密尔纳，1810年）" Id="" Type="0" />
+<SAINT Name="新殉道者格奥尔吉（阿塔利亚地方，1823年）" Id="" Type="0" />
+<SAINT Name="圣尼孔（奥普提纳之宣信者，1931年）" Id="" Type="0" />
+<SAINT Name="圣默路阿克（利斯摩尔地方，592年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖前驅約安誕辰慶期" Id="" Type="0" />
+<SAINT Name="童貞殉道女斐弗若尼亞（304年）" Id="" Type="0" />
+<SAINT Name="殉道者伽利基亞諾（埃及貴族，362年）" Id="" Type="0" />
+<SAINT Name="聖西麥翁（西奈山，5世紀）" Id="" Type="0" />
+<SAINT Name="聖阿德爾博特（總輔祭，荷蘭，740年）" Id="" Type="0" />
+<SAINT Name="王子聖裴特若和公主聖斐弗若尼亞（出家後分別名為達維德和艾弗福若西尼，穆羅姆地方之顯行靈蹟者）" Id="" Type="0" />
+<SAINT Name="聖迪奧尼西和聖多麥提（阿托斯聖山之迪奧尼西鄔修道院，1380年）" Id="" Type="0" />
+<SAINT Name="聖德奧勒普托（費拉德爾菲亞都主教，1322年）" Id="" Type="0" />
+<SAINT Name="新殉道者普若科彼（瓦爾納地方人氏，出家於阿托斯聖山，就義於斯密爾納，1810年）" Id="" Type="0" />
+<SAINT Name="新殉道者格奧爾吉（阿塔利亞地方，1823年）" Id="" Type="0" />
+<SAINT Name="聖尼孔（奧普提納之宣信者，1931年）" Id="" Type="0" />
+<SAINT Name="聖默路阿克（利斯摩爾地方，592年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
