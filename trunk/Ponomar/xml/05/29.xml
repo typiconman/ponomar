@@ -1,7 +1,7 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Virginmartyr Theodosia of Tyre (+ c.307)" Id="2714" Type="1" />
-<SAINT Name="Repose of the Blessed John of Ustiug the Fool-for-Christ (+1494)" Id="1022" Type="2" />
+<SAINT Name="Repose of the Blessed John of Ustiug the Fool-for-Christ (+1494)" Id="91022" Type="2" />
 <SAINT Name="Saint Alexander, Pope of Alexandria" Id="" Type="0" />
 <SAINT Name="New Martyr Andrew" Id="" Type="0" />
 <SAINT Name="New Martyr John" Id="" Type="0" />
@@ -16,13 +16,13 @@
 <SAINT Name="Ste Théodosie de Contantinople" Id="1169" Type="1" />
 <SAINT Name="St Alexandre, Archevêque d'Alexandrie" Id="" Type="0" />
 <SAINT Name="Sts Olbien, Evêque d'Anïa et et ses compagnons" Id="" Type="0" />
-<SAINT Name="St Jean d'Oustioug, Fol en Christ et Thaumaturge" Id="1022" Type="2" />
+<SAINT Name="St Jean d'Oustioug, Fol en Christ et Thaumaturge" Id="91022" Type="2" />
 <SAINT Name="St André Argyris, le Néo-Martyr de Chios" Id="" Type="0" />
 <SAINT Name="St Jean de Thessalonique dit 'Nannos', néomartyr" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Прмц. Феодосии девы, Константинопольской (730)" Id="1169" Type="1"/>
-<SAINT Name="Блж. Иоанна, Христа ради юродивого, Устюжского (1494)" Id="1022" Type="2"/>
+<SAINT Name="Блж. Иоанна, Христа ради юродивого, Устюжского (1494)" Id="91022" Type="2"/>
 <SAINT Name="Обретение мощей прп. Иова, в схиме Иисуса Анзерского (2000)" Id="6649" Type="0"/>
 <SAINT Name="Сщмч. Иоанна диакона (1938)" Id="" Type="0"/>
 <SAINT Name="Мч. Андрея (1938)" Id="" Type="0"/>
