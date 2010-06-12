@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE>
 <SCRIPTURE Type="vespers" Reading="Deut_1:8-11, 15-17" Note="for the Hierarchs" Cmd="nday == -54 || nday == -52"/>
 <SCRIPTURE Type="vespers" Reading="Deut_10:14-21" Note="for the Hierarchs" Cmd="nday == -54 || nday == -52"/>
@@ -11,7 +11,7 @@
 <SAINT Name="Synaxis of the 'Three Hierarchs' - Basil the Great, Gregory the Theologian and John Chrysostom (Transferred from Wednesday)" Id="9030" Type="5" Cmd="nday == -54" />
 <SAINT Name="Synaxis of the 'Three Hierarchs' - Basil the Great, Gregory the Theologian and John Chrysostom (Transferred from Friday)" Id="9030" Type="5" Cmd="nday == -52" />
 <SAINT Name="Translation of the relics of the Hieromartyr Ignatius the Godbearer, Bishop of Antioch (+ 107)" Id="9031" Type="2" />
-<SAINT Name="[The feast of St Ignatius may be transferred to Friday]" Type="0" Cmd="nday == -52"/>
+<SAINT Name="[The feast of St Ignatius may be transferred to Friday]" Type="0" Id="" Cmd="nday == -52"/>
 <SAINT Name="Martyrs Romanus, James, Philotheus, Hyperichius, Abibus, Julian and Parigonius, at Samosata (+ 297)" Id="333" Type="0" />
 <SAINT Name="Martyrs Silvanus the Bishop, Luke the Deacon and Mocius the Reader (+ 312)" Id="334" Type="0" />
 <SAINT Name="Venerable Lawrence of the Caves of Kiev, Bishop of Turov (+1194)" Id="1321" Type="0" />
