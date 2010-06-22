@@ -1,0 +1,29 @@
+<SAINT>
+<LANGUAGE Cmd="LS == 3">
+<NAME Nominative="Преподобный Акепсим"/> 
+<LIFE Id="bulgakov">
+Преподобный Акепсим (IV) шестьдесят лет провел в сирийской пустыне, недалеко от Каира, подвизаясь в посте, молчании и молитвах. По повелению патриарха, он вышел из затвора и был поставлен во епископа. Умер в глубокой старости.
+</LIFE>
+<TROPARION Tone="">
+
+</TROPARION>
+<KONTAKION Tone="">
+
+</KONTAKION>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<NAME Nominative="Ven. Acepsimas"/> 
+<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+     He practiced asceticism as a hermit near Cyrrhus, Syria during the reign of
+Theodosius the Great. Ven. Acepsimas spent 60 years in a rather narrow cave,
+committed to fasting and continual prayer, and not seeing anybody, and died in peace.
+
+</LIFE>
+<TROPARION Tone="" Translator="Aleksandr Andreev">
+
+</TROPARION>
+<KONTAKION Tone="" Translator="Aleksandr Andreev">
+
+</KONTAKION>
+</LANGUAGE>
+</SAINT>

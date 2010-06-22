@@ -1,0 +1,27 @@
+<SAINT>
+<LANGUAGE Cmd="LS == 3">
+<NAME Nominative="Праведный Афанасий Наволоцкий"/> 
+<LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
+   Праведный Афанасий Наволоцкий в конце XVI века пришел из Каргопольских пределов в Олонецкую землю, где основал мона- стырь в 78 верстах от возникшего позже города Петрозаводска. Скончался святой близ Верхоледской Слободки, неподалеку от Шенкурска. 
+</LIFE>
+<TROPARION Tone="1">
+
+</TROPARION>
+<KONTAKION Tone="1">
+
+</KONTAKION>
+
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<NAME Nominative="Righteous Athanasii (Afanasii) of Navolotsk"/> 
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+Righteous Athanasii (Afanasii) of Navolotsk went at the end of the XVI Century from the Kargopol&apos; region to the Olonets land, where he founded a monastery 78 versts from what later emerged as the city of Petrozavodsk. The saint died near the Verkholedsk suburb not far from Shenkursk. 
+</LIFE>
+<TROPARION Tone="1">
+
+</TROPARION>
+<KONTAKION Tone="1">
+
+</KONTAKION>
+</LANGUAGE>
+</SAINT>

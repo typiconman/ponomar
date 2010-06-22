@@ -1,0 +1,30 @@
+<SAINT>
+<LANGUAGE Cmd="LS == 3">
+<NAME Nominative="Мученики Авкт, Таврион и Фессалоникия"/> 
+<LIFE Id="bulgakov">
+Святая Фессалоникия была дочерью языческого жреца. Когда нечестивый отец узнал, что его дочь стала христианкой, он безжалостно избил ее и выгнал из дома, лишив всяких средств к пропитанию. Святые Авкт и Таврион пытались заступиться за христианку и вразумить ожесточившегося отца. Жрец донес на них, и они были схвачены. Исповедав перед мучителями свою веру во Христа и претерпев жестокие пытки, святые были обезглавлены. Вскоре после их мученической кончины умерла и святая Фессалоникия. Тело ее было с честью погребено в городе Амфиполе в Македонии вместе со святыми мучениками Авктом и Таврионом.
+</LIFE>
+<TROPARION Tone="">
+
+</TROPARION>
+<KONTAKION Tone="">
+
+</KONTAKION>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<NAME Nominative="Martyrs Auctus, Taurion and Thessalonica"/> 
+<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+      They suffered for Christ in Amphipolis, Macedonia. St. Thessalonica, the
+daughter of a pagan priest, was sent by her father to prison after many tortures and
+there died from torment. Sts. Auctus and Taurion, reproached her father for this,
+were beheaded after many tortures.
+
+</LIFE>
+<TROPARION Tone="" Translator="Aleksandr Andreev">
+
+</TROPARION>
+<KONTAKION Tone="" Translator="Aleksandr Andreev">
+
+</KONTAKION>
+</LANGUAGE>
+</SAINT>

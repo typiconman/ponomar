@@ -1,0 +1,28 @@
+<SAINT>
+<LANGUAGE Cmd="LS == 3">
+<NAME Nominative="Мученик Флорентий"/> 
+<LIFE Id="bulgakov">
+Святой мученик Флорентий был уроженцем города Солуни. Ревнуя о славе Божией, он безбоязненно обличал тьму идолослужения и многих приводил к свету истинного Боговедения, учил вере во Христа и исполнению воли Божией. За это язычники подвергли его жестоким мукам, а потом сожгли (+ II век).
+</LIFE>
+<TROPARION Tone="">
+
+</TROPARION>
+<KONTAKION Tone="">
+
+</KONTAKION>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<NAME Nominative="The Martyr Florentius."/> 
+<LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
+      Born in Thessalonica, he was a disciple of the apostles, and for
+preaching Christ he was subjected to awful tortures and was burned to death.
+
+</LIFE>
+<TROPARION Tone="" Translator="Aleksandr Andreev">
+
+</TROPARION>
+<KONTAKION Tone="" Translator="Aleksandr Andreev">
+
+</KONTAKION>
+</LANGUAGE>
+</SAINT>

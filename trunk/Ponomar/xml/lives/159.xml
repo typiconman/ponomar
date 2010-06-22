@@ -1,0 +1,27 @@
+<SAINT>
+<LANGUAGE Cmd="LS == 3">
+<NAME Nominative="Преподобный Фостирий"/> 
+<LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
+   Преподобный Фостирий, пустынник, подвизался на высокой го- ре. Силой чудотворений и святостью жизни многих отвратил от ересей. 
+</LIFE>
+<TROPARION Tone="1">
+
+</TROPARION>
+<KONTAKION Tone="1">
+
+</KONTAKION>
+
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<NAME Nominative="Monk Phosterios"/> 
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+The Monk Phosterios the Wanderer pursued asceticism on an high mountain. By his powerful working of miracles and saintly life, he restored many from heresy.
+</LIFE>
+<TROPARION Tone="1">
+
+</TROPARION>
+<KONTAKION Tone="1">
+
+</KONTAKION>
+</LANGUAGE>
+</SAINT>

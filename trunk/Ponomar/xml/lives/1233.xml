@@ -1,37 +1,27 @@
 <SAINT>
 <LANGUAGE Cmd="LS == 3">
-<NAME Nominative="священномученик Дорофей Тирский"/> 
-<!--do not need other cases: program will decline automatically!-->
-<LIFE Id="1">
-Священномученик Дорофей в период гонений на христиан при императоре Диоклитиане (284—305] был епископом города Тира Финикийского. По слову Евангелия (Мф. 10, 23), святитель удалился из Тира и скрылся от мучителей. В царствование святого Константина Великого (306—337, память 21 мая) он вернулся в Тир, вновь занял епископский престол и управлял паствой более 50 лет, обратив в христианство множество язычников. Когда Юлиан Отступник (361—363) начал открыто преследовать христиан, святителю Дорофею было уже более 100 лет. Он удалился из Тира в Мизийский город Уд (ныне Варна). Там его схватили придворные императора. За отказ принести жертву идолам святого старца стали жестоко истязать, и под пыткой он предал душу свою Господу (I около 362 года в возрасте 107 лет).
-Священномученику Дорофею некоторые приписывают составление «Синопсиса» — собрания сказаний, а также житий святых пророков и апостолов.
+<NAME Nominative="Священномученик Дорофей"/> 
+<LIFE Id="bulgakov" Copyright="Настольная книга свщеннослужителя. Москва. 1978.">
+   Священномученик Дорофей в период гонений на христиан при императоре Диоклитиане (284—305]^ был епископом города Тира Финикийского. По слову Евангелия (Мф. 10, 23), святитель уда- лился из Тира и скрылся от мучителей. В царствование святого Константина Великого (306—337, память 21 мая) он вернулся в Тир, вновь занял епископский престол и управлял паствой более 50 лет, обратив в христианство множество язычников. Когда Юли- ан Отступник (361—363) начал открыто преследовать христиан, святителю Дорофею было уже более 100 лет. Он удалился из Тира в Мизийский город Уд (ныне Варна). Там его схватили придвор- ные императора. За отказ принести жертву идолам святого старца стали жестоко истязать, и под пыткой он предал душу свою Гос- поду (I около 362 года в возрасте 107 лет).    Священномученику Дорофею некоторые приписывают составле- ние «Синопсиса» — собрания сказаний, а также житий святых про- роков и апостолов. 
 </LIFE>
-<LIFE Id="2">
-В царствование нечестивого римского императора Диоклитиана[1] епископом города Тира[2] был святой Дорофей. Когда нечестивый царь воздвиг на христиан жестокое гонение, Дорофей оставил свою кафедру и скрывался по неизвестным местам. Но с воцарением императора Константина Великого[3], когда в Церкви наступило успокоение, святой Дорофей снова возвратился в Тир на свою кафедру и благополучно пас стадо словесных овец, приводя к Богу многих от идолопоклоннического заблуждения. Жизнь Дорофея продолжалась до времени императора Юлиана Отступника[4]. Вступивши на престол, Юлиан первоначально преследовал христиан не открыто, повелевая единомышленным с ним областеначальникам всячески стеснять и мучить христиан. Тогда святой Дорофей, видя, что воздвигается на верующих новое гонение, снова оставил кафедру Тирской церкви, избегая, таким образом, рук мучителей: ибо Господь повелел не отдаваться явным напастям со стороны гонителей, но избегать их; Он сказал: «Когда же будут гнать вас в одном городе, бегите в другой» (Мф. 10:23).
+<TROPARION Tone="4">
 
-Итак, уйдя из Тира, Дорофей пришел в Малую Азию, но и здесь он не сокрылся от идолослужителей, так как Бог призывал его к венцу мученическому. Он был схвачен приспешниками беззаконного царя в городе Удском[5]. Претерпевши здесь разнообразные мучения, он среди страданий предал в руки Господа блаженную душу свою, имея сто семь лет от роду[6].
-
-В совершенстве изучив как светские, так и духовные науки, святой Дорофей оставил после себя различные, весьма важные для христиан, сочинения на греческом и латинском языках, так как он был весьма сведущ в том и другом. Между прочим он составил жития пророков и Апостолов, а также другие весьма полезные сочинения и повествования[7]. И теперь, будучи сам записан в книге Живота, он водворен в небесных селениях с теми святыми, повествования о жизни которых он составил во время земной жизни своей.
-</LIFE>
+</TROPARION>
 <KONTAKION Tone="5">
 Добродѣ́тельми сїѧ́ѧ, и҆ бж҃е́ственными ѹ҆че́нїи па́че со́лнца, и҆ страда́нїи бл҃же́нне ѡ҆блиста́лъ є҆сѝ: просвѣти́лъ є҆сѝ зе́млю дѡроѳе́е, ѿгна́въ мглꙋ̀ многобо́жїѧ, и҆ лю҄тыѧ є҆́рєси. сегѡ̀ ра́ди па́мѧть твою̀ свѣ́тлѡ пра́зднꙋемъ. 
 </KONTAKION>
+
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<NAME Nominative="Hieromartyr Dorotheus of Tyre"/> 
-<LIFE Id="1" Translator="Google">
-Священномученик Dorofey during the persecutions of Christians during the reign of Dioklitiane (284-305] was a bishop of the city Tire Phoenician. According to the Gospel (Mf. 10, 23), the prelate of the left Tire and disappeared from the tormentors. In the reign of St. Constantine the Great (306-337 Memory 21 May), he returned to the Shooting Range, again took the bishop's throne, and drove a flock of more than 50 years, with many pagans to Christianity. When the apostate Julian (361-363) began to openly persecute Christians, ST Dorofeyu were already more than 100 years. He left of Tire in Miziysky city Ud (now Varna). There he caught the courtiers of Emperor. for refusing to sacrifice to idols the holy old man became violently torture, and torture, he gave his life the Lord (I nearly 362 years of age 107 years).
-Священномученику Dorofeyu some attribute of «Synopsis» - collection of tales, as well as zhity the holy prophets and apostles.
+<NAME Nominative="PriestMartyr Dorotheos"/> 
+<LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+	The PriestMartyr Dorotheos was bishop of the Phoenician city of Tyre, during the time of the persecution against Christians under the emperor Diocletian (284-305). Heeding the words of the Gospel (Mt. 10: 23), the saint withdrew from Tyre and hid away from the persecutors. He returned to Tyre during the reign of Saint Constantine the Great (306-337, Comm. 21 May), again occupying the bishop&apos;s throne he guided his flock for more than 50 years, and converted many of the pagans to Christianity. When the emperor Julian the Apostate (361-363) began openly to persecute Christians, Saint Dorotheos was already over 100 years old. He withdrew from Tyre to the Myzean city of Udum (present day Bulgarian Varna). Delegates of the emperor arrested him there. For his refusal to offer sacrifice to idols they began cruelly to torture the holy elder, and under torture he gave up his soul to the Lord (+ c. year 362, at age 107). 	To Saint Dorotheos is ascribed by some the compiling of a work, &quot;The Synopsis&quot;, a collection of sayings, and including lives of the holy prophets and apostles.
 </LIFE>
-<LIFE Id="2" Translator="Google">
-In the reign of the wicked Roman Emperor Dioklitiana [1] Bishop city Tire [2] was a holy Dorofey. When the wicked king erected the brutal persecution of Christians, Dorofey left his chair and hid in an unknown location. But with the reign of Emperor Constantine the Great [3], where the church now is calming, sacred Dorofey again returned to the Shooting Range on its faculty, and successfully pass a herd of sheep verbal, giving to God many of idolatrous delusion. Life Dorofeyev lasted till the apostate Emperor Julian [4]. Came to the throne, Julian persecuted Christians did not initially open, povelevaya edinomyshlennym with him every oblastenachalnikam incommode and torment Christians. Then the holy Dorofey, saw that have been placed in the persecution of believers new, again left the department Tire church, avoiding therefore, arms tormentors: for the LORD has commanded not to give a clear plagues of the persecutors, but to avoid them, he said: «But when they persecute you are in the same city, run to another »(Mf. 10:23).
-
-So, from uydya Tire Dorofey came to Asia Minor, but here it is not hidden from idolaters, because God has called him to the crowns as martyrs. He was captured accomplices wicked king in the city UBAC [5]. Suffered a variety of pain here, he gave to the suffering in the hands of the Lord blessed his soul, with one hundred and seven years of age [6].
-
-In perfect examined both secular and sacred science, sacred Dorofey left a different, very important for Christians, works in Greek and Latin languages, as he was very versed in both. By the way, he was life of prophets and apostles, as well as other very useful pieces and narrative [7]. And now, as is written in the book of pain, he settle in heaven with the holy village, the story of the life which he has made during his earthly life.
-</LIFE>
-<KONTAKION Tone="5" Translator="A. Andreev">
-Thou wast resplendent, O blessed Dorotheus, with virtues brighter than the sun and with thy sufferings! For thou didst shine forth and enlighten the earth, dispelling the darkness of idolatry and pernicious heresy. Therefore, we brightly celebrate thy memory!
+<TROPARION Tone="4">
+As thou didst share in the ways of the apostles/ and didst occupy their throne,/ thou didst find thine activity to be a passage to divine vision,/ O divinely inspired one./ Wherefore, ordering the word of truth,/ thou didst suffer for the Faith even to the shedding of thy blood.// O hieromartyr Dorotheas, entreat Christ God, that our souls be saved.
+</TROPARION>
+<KONTAKION Tone="5">
+Resplendent with virtues brighter than the sun/ and with thy sufferings, O blessed Dorotheus,/ thou didst shine forth and illumine the land,/ dispelling the darkness of polytheism and vile heresy./ Wherefore, we celebrate thy memory with splendor.
 </KONTAKION>
 </LANGUAGE>
 </SAINT>
