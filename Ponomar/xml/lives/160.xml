@@ -1,0 +1,27 @@
+<SAINT>
+<LANGUAGE Cmd="LS == 3">
+<NAME Nominative="Преподобный Мина"/> 
+<LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
+   Преподобный Мина 50 лет подвизался в Синайском монастыре, скончался мирно во второй половине VI века. 
+</LIFE>
+<TROPARION Tone="1">
+
+</TROPARION>
+<KONTAKION Tone="1">
+
+</KONTAKION>
+
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<NAME Nominative="Monk Minos"/> 
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+The Monk Minos pursued asceticism for 50 years in a Sinai monastery, and died peacefully in the second half of the VI Century.
+</LIFE>
+<TROPARION Tone="1">
+
+</TROPARION>
+<KONTAKION Tone="1">
+
+</KONTAKION>
+</LANGUAGE>
+</SAINT>

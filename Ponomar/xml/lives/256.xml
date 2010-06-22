@@ -1,0 +1,27 @@
+<SAINT>
+<LANGUAGE Cmd="LS == 3">
+<NAME Nominative="Святой Марк Евгеник, архиепископ Ефесский"/> 
+<LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
+   Святой Марк Евгеник, архиепископ Ефесский, был знаменитым защитником Православия на Флорентийском Соборе. Ничто не могло склонить его к унии. Тайно удалившись из Флоренции, свя- той Марк ревностно убеждал жителей Константинополя отверг- нуть нечестивое соглашение. Скончался в 1457 году. 
+</LIFE>
+<TROPARION Tone="1">
+
+</TROPARION>
+<KONTAKION Tone="1">
+
+</KONTAKION>
+
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<NAME Nominative="Saint Mark Eugenikes, ArchBishop of Ephesus"/> 
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+Saint Mark Eugenikes, ArchBishop of Ephesus, was a reknown defender of Orthodoxy at the Council of Florence. Nothing was able to sway him towards Uniatism. Secretly slipping away from Florence, Saint Mark zealously urged the inhabitants of Constantinople to repudiate the dishonourable concordat. He died in the year 1457.
+</LIFE>
+<TROPARION Tone="1">
+
+</TROPARION>
+<KONTAKION Tone="1">
+
+</KONTAKION>
+</LANGUAGE>
+</SAINT>

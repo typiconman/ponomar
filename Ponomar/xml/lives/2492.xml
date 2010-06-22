@@ -1,0 +1,29 @@
+<SAINT>
+<LANGUAGE Cmd="LS == 3">
+<NAME Nominative="Преподобный Лука Тавроменийский"/> 
+<LIFE Id="bulgakov">
+Преподобный Лука Тавроменийский был родом из сицилийского города Тавромении. В юности он оставил родителей, невесту и ушел в пустыню, где провел многие годы в посте и молитве. Подвизался на горе Этна. В конце жизни преподобный Лука, по бывшем ему откровению, основал обитель. Чтобы ознакомиться с уставам и жизнью других монастырей, преподобный посетил много разны городов. Во время одного из путешествий он скончался в Коринфе в начале IX века.
+</LIFE>
+<TROPARION Tone="">
+
+</TROPARION>
+<KONTAKION Tone="">
+
+</KONTAKION>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<NAME Nominative="Ven. Luke"/> 
+<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+       He was born in Taormina, Sicily. At the age of 18 he accepted monasticism and
+practiced asceticism on Mount Etna. He died while on travel in a monastery near
+Corinth, about 820.
+
+</LIFE>
+<TROPARION Tone="" Translator="Aleksandr Andreev">
+
+</TROPARION>
+<KONTAKION Tone="" Translator="Aleksandr Andreev">
+
+</KONTAKION>
+</LANGUAGE>
+</SAINT>

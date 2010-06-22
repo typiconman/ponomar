@@ -1,0 +1,28 @@
+<SAINT>
+<LANGUAGE Cmd="LS == 3">
+<NAME Nominative="Преподобная Мавра"/> 
+<LIFE Id="bulgakov">
+Преподобная Мавра подвизалась в Царьграде, где основала обитель, в которой и скончалась в V веке.
+</LIFE>
+<TROPARION Tone="">
+
+</TROPARION>
+<KONTAKION Tone="">
+
+</KONTAKION>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<NAME Nominative="Ven. Maura"/> 
+<LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
+      She was an ascetic in Constantinople, where she founded a monastery in which
+she died in the 5th Century.
+
+</LIFE>
+<TROPARION Tone="" Translator="Aleksandr Andreev">
+
+</TROPARION>
+<KONTAKION Tone="" Translator="Aleksandr Andreev">
+
+</KONTAKION>
+</LANGUAGE>
+</SAINT>

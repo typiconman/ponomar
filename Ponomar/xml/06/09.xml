@@ -1,7 +1,7 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Saint Cyril, Archbishop of Alexandria (+444)" Id="1221" Type="2" />
-<SAINT Name="Venerable Cyril the Abbot of White Lake (+1427)" Id="1224" Type="3" />
+<SAINT Name="Venerable Cyril the Abbot of White Lake (+1427)" Id="9224" Type="3" />
 <SAINT Name="Venerable Alexander the Abbot of Kushta, Vologda (+1439)" Id="1270" Type="0" />
 <SAINT Name="Holy Women Martyrs Thekla, Martha and Mary in Persia (+346)" Id="1271" Type="0" />
 <SAINT Name="St Columba of Iona, the Enlightener of Scotland" Id="" Type="0" />
@@ -15,7 +15,7 @@
 <SAINT Name="St Anania" Id="" Type="0" />
 <SAINT Name="St Cyr" Id="" Type="0" />
 <SAINT Name="Stes 3 Vierges Martyres de Chio" Id="" Type="0" />
-<SAINT Name="St Cyrille du lac Blanc" Id="1224" Type="3" />
+<SAINT Name="St Cyrille du lac Blanc" Id="9224" Type="3" />
 <SAINT Name="St Alexandre de Kouchta" Id="1270" Type="0" />
 <SAINT Name="St Raphaèl d'Agapia" Id="" Type="0" />
 <SAINT Name="St Vincent de l'Agenais" Id="" Type="0" />
@@ -23,7 +23,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Свт. Кирилла, архиеп. Александрийского (444)" Id="1221" Type="2"/>
-<SAINT Name="Прп. Кирилла, игумена Белоезерского (1427)" Id="1224" Type="3"/>
+<SAINT Name="Прп. Кирилла, игумена Белоезерского (1427)" Id="9224" Type="3"/>
 <SAINT Name="Прав.  Алексия Московского (1923)" Id="4746" Type="0"/>
 <SAINT Name="Мцц. Феклы, Марфы и Марии Персидских (346)" Id="1271" Type="0"/>
 <SAINT Name="Прп. Александра, игумена Куштского (1439)" Id="1270" Type="0"/>

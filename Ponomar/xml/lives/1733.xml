@@ -1,0 +1,34 @@
+<SAINT>
+<LANGUAGE Cmd="LS == 3">
+<NAME Nominative="Преподобный Никита Исповедник"/> 
+<LIFE Id="bulgakov">
+Преподобный Никита Исповедник во время царствования императрицы Ирины (797 - 802) и ее сына Константина находился при их дворе.
+
+Отказавшись от всех званий и почестей, Никита решил постричься в иноки, но, по просьбе императора, не удалился в пустыню, а остался в столичном монастыре. Когда императорский престол занял иконоборец Феофил, преподобный Никита за обличение ереси был изгнан еретиками из монастыря. Долго странствовал преподобный по стране.
+
+Скончался он в возрасте 75 лет около 838 года. При жизни и после смерти преподобный совершил много чудес.
+</LIFE>
+<TROPARION Tone="">
+
+</TROPARION>
+<KONTAKION Tone="">
+
+</KONTAKION>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 0">
+<NAME Nominative="The Venerable Nicetas, the Confessor."/> 
+<LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
+      Born in Paphlagonia, during the reign of Emperor Nicephorus,
+governor of Sicily, he, seeing the vanity of the world, accepted monasticism
+and was tonsured in Constantinople. During the reign of Emperor Leo the Armenian and Theophilus the venerable Nicetas suffered for venerating the
+holy icons. He died around the year 838.
+
+</LIFE>
+<TROPARION Tone="" Translator="Aleksandr Andreev">
+
+</TROPARION>
+<KONTAKION Tone="" Translator="Aleksandr Andreev">
+
+</KONTAKION>
+</LANGUAGE>
+</SAINT>
