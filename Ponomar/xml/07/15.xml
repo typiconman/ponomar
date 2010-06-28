@@ -26,4 +26,18 @@
 <SAINT Name="Сщмч. Петра диакона (1938)" Id="" Type="0"/>
 <SAINT Name="Мч. Авудима (IV)" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="亚使徒，俄罗斯大地之光照者，兴教国王圣弗拉迪弥尔（在圣浸礼中取名瓦西里，1015年）" Id="" Type="0" />
+<SAINT Name="殉道者基里科及其母亲犹利塔（塔尔苏斯，305年）" Id="" Type="0" />
+<SAINT Name="殉道者阿弗迪默（特奈多斯岛，4世纪）" Id="" Type="0" />
+<SAINT Name="寻获希俄斯岛的圣女玛特若纳之圣首纪念日（1462年）" Id="" Type="0" />
+<SAINT Name="圣斯维顿（温彻斯特主教及显行灵迹者，862年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="亞使徒，俄羅斯大地之光照者，興教國王聖弗拉迪彌爾（在聖浸禮中取名瓦西里，1015年）" Id="" Type="0" />
+<SAINT Name="殉道者基里科及其母親猶利塔（塔爾蘇斯，305年）" Id="" Type="0" />
+<SAINT Name="殉道者阿弗迪默（特奈多斯島，四世紀）" Id="" Type="0" />
+<SAINT Name="尋獲希俄斯島的聖女瑪特若納之聖首紀念日（1462年）" Id="" Type="0" />
+<SAINT Name="聖斯維頓（溫徹斯特主教及顯行靈蹟者，862年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
