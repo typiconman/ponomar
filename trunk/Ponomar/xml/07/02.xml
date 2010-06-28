@@ -20,4 +20,28 @@
 <SAINT Name="Свт. Фотия, митр. Киевского (1431)" Id="2331" Type="0"/>
 <SAINT Name="Феодотьевской (1487), Пожайской (XVII), и Ахтырской (1739) икон Божией Матери" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="奉安圣母诞神女之圣袍于弗拉赫尔奈纪念日" Id="" Type="0" />
+<SAINT Name="圣犹文纳利（耶路撒冷牧首，458年）" Id="" Type="0" />
+<SAINT Name="圣默奈根德（高卢的沙特尔地方，530年）" Id="" Type="0" />
+<SAINT Name="圣佛提（基辅都主教，1431年）" Id="" Type="0" />
+<SAINT Name="大圣斯特梵（摩尔达维亚正信之国君，1504年）" Id="" Type="0" />
+<SAINT Name="圣犹文纳利（阿拉斯加及美洲大陆首位殉道者，1796年）" Id="" Type="0" />
+<SAINT Name="新殉道者朗普若（玛克里，1835年）" Id="" Type="0" />
+<SAINT Name="寻获新殉道司祭塞尔吉•佛罗林斯基（爱沙尼亚的拉克维瑞，1918年）之圣髑纪念日（2003年）" Id="" Type="0" />
+<SAINT Name="阿赫提尔圣母像纪念日" Id="" Type="0" />
+<SAINT Name="“耶瑟之根”圣母像纪念日" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="奉安聖母誕神女之聖袍於弗拉赫爾奈紀念日" Id="" Type="0" />
+<SAINT Name="聖猶文納利（耶路撒冷牧首，458年）" Id="" Type="0" />
+<SAINT Name="聖默奈根德（高盧的沙特爾地方，530年）" Id="" Type="0" />
+<SAINT Name="聖佛提（基輔都主教，1431年）" Id="" Type="0" />
+<SAINT Name="大聖斯特梵（摩爾達維亞正信之國君，1504年）" Id="" Type="0" />
+<SAINT Name="聖猶文納利（阿拉斯加及美洲大陸首位殉道者，1796年）" Id="" Type="0" />
+<SAINT Name="新殉道者朗普若（瑪克里，1835年）" Id="" Type="0" />
+<SAINT Name="尋獲新殉道司祭塞爾吉•佛羅林斯基（愛沙尼亞的拉克維瑞，1918年）之聖髑紀念日（2003年）" Id="" Type="0" />
+<SAINT Name="阿赫提爾聖母像紀念日" Id="" Type="0" />
+<SAINT Name="「耶瑟之根」聖母像紀念日" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

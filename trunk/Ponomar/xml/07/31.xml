@@ -28,4 +28,37 @@
 <SAINT Name="Мц. Иулитты (304-305)" Id="4357" Type="0"/>
 <SAINT Name="Прмч. Дионисия Ватопедского (1822)" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="救主基督施生命十字圣架之宝木巡游纪念前日" Id="" Type="0" />
+<SAINT Name="义人艾弗多基默（卡帕多西亚，9世纪）" Id="" Type="0" />
+<SAINT Name="义人约熙福（阿里玛特亚人，安葬吾主基督者，1世纪）" Id="" Type="0" />
+<SAINT Name="殉道女犹利塔（恺撒里亚，304年）" Id="" Type="0" />
+<SAINT Name="圣革尔曼（奥克塞瑞主教，448年）" Id="" Type="0" />
+<SAINT Name="圣约安（保加利亚之督察，900年）" Id="" Type="0" />
+<SAINT Name="圣奈奥特（英格兰的康沃尔之隐士，877年）" Id="" Type="0" />
+<SAINT Name="圣阿尔塞尼（格鲁吉亚的尼诺茨敏达主教，1082年）" Id="" Type="0" />
+<SAINT Name="殉道者迪奥尼西（阿托斯圣山的瓦托佩迪修道院，1822年）" Id="" Type="0" />
+<SAINT Name="新殉道者文雅敏（彼得格勒都主教）及偕同其就义者：塞尔吉修士大司祭、格奥尔吉、约安（彼得格勒，1922年）" Id="" Type="0" />
+<SAINT Name="新殉道司教瓦西里（基奈施玛主教，1945年）" Id="" Type="0" />
+<SAINT Name="弗拉赫尔奈地方的至圣诞神女教堂祝圣纪念日" Id="" Type="0" />
+<SAINT Name="纪念罗马城的12位殉道者" Id="" Type="0" />
+<SAINT Name="敬迁圣使徒斐利普之圣髑至塞浦路斯纪念日" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="救主基督施生命十字聖架之寶木巡遊紀念前日" Id="" Type="0" />
+<SAINT Name="義人艾弗多基默（卡帕多西亞，九世紀）" Id="" Type="0" />
+<SAINT Name="義人約熙福（阿里瑪特亞人，安葬吾主基督者，一世紀）" Id="" Type="0" />
+<SAINT Name="殉道女猶利塔（愷撒里亞，304年）" Id="" Type="0" />
+<SAINT Name="聖革爾曼（奧克塞瑞主教，448年）" Id="" Type="0" />
+<SAINT Name="聖約安（保加利亞之督察，900年）" Id="" Type="0" />
+<SAINT Name="聖奈奧特（英格蘭的康沃爾之隱士，877年）" Id="" Type="0" />
+<SAINT Name="聖阿爾塞尼（格魯吉亞的尼諾茨敏達主教，1082年）" Id="" Type="0" />
+<SAINT Name="殉道者迪奧尼西（阿托斯聖山的瓦托佩迪修道院，1822年）" Id="" Type="0" />
+<SAINT Name="新殉道者文雅敏（彼得格勒都主教）及偕同其就義者：塞爾吉修士大司祭，格奧爾吉，約安（彼得格勒，1922年）" Id="" Type="0" />
+<SAINT Name="新殉道司教瓦西里（基奈施瑪主教，1945年）" Id="" Type="0" />
+<SAINT Name="弗拉赫爾奈地方的至聖誕神女教堂祝聖紀念日" Id="" Type="0" />
+<SAINT Name="紀念羅馬城的十二位殉道者" Id="" Type="0" />
+<SAINT Name="敬遷聖使徒斐利普之聖髑至塞浦路斯紀念日" Id="" Type="0" />
+
+</LANGUAGE>
 </DAY>
