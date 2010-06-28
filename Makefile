@@ -14,6 +14,7 @@ CLASSES = \
 	Ponomar/LanguagePack.java \
 	Ponomar/JDate.java \
 	Ponomar/Paschalion.java \
+	Ponomar/DoSaint.java \
 	Ponomar/Sunrise.java \
 	Ponomar/PrintableTextPane.java \
 	Ponomar/ConfigurationFiles.java \
