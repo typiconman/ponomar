@@ -86,6 +86,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
         private String CSep=new String();
         private String Colon=new String();
         private String Ideographic=new String();
+        private DoSaint SaintLink;
 	//private GospelSelector Selector;
 
 	// CONSTRUCTOR
@@ -551,7 +552,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 	
 	public void hyperlinkUpdate(HyperlinkEvent e)
 	{
-		if (e.getEventType().toString() == "ACTIVATED")
+            if (e.getEventType().toString() == "ACTIVATED")
 		{
 			String cmd = e.getDescription();
 			String[] parts = cmd.split("#");
@@ -567,6 +568,22 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                 orient.applyOrientation(bible,(ComponentOrientation)StringOp.dayInfo.get("Orient"));
 				}
 			}
+                        else
+                        {
+                            parts = cmd.split("\\?");
+                            if (parts[0].indexOf("goDoSaint") != -1)
+                            {
+                                String[] parts2=parts[1].split("=");
+                                if (SaintLink == null){
+                                    SaintLink=new DoSaint(parts2[1]);
+                                }
+                                else
+                                {
+                                    SaintLink.refresh(parts2[1]);
+                                }
+                                
+                            }
+                        }
 		}
 	}
 

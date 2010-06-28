@@ -32,4 +32,7 @@
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Mercredi de la 34-me semaine après le Pentecôte" Id="" Type="0" Tone="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 3">
+<SAINT Name="Среда 34-й седмицы по Пятидесятнице" Id="" Type="0" Tone="0"/>
+</LANGUAGE>
 </DAY>
