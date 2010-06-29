@@ -6,17 +6,21 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Day of the Holy Spirit" Id="" Type="6" Tone="-1" />
+<SAINT Name="Icons of the Mother of God 'Tupichevsk' (1847) and 'Cypriot' (392) (movable feast on the Day Of the Holy Spirit)" Id="906" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Jour de la Sainte Ésprit" Id="" Type="6" Tone="-1" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Понедельник Святого Духа" Id="" Type="6" Tone="-1"/>
+<SAINT Name="Тупичевской  и Кипрской  икон Божией Матери (переходящие празднования в День Святого Духа)" Id="906" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="上帝圣灵日（五旬节后第一周瞻礼二）" Id="" Type="6" Tone="-1" />
+<SAINT Name="塞浦路斯圣母像纪念日（392年）（本上帝圣灵日纪念）" Id="906" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="上帝聖靈日（五旬節後第一週瞻禮二）" Id="" Type="6" Tone="-1" />
+<SAINT Name="塞浦路斯聖母像紀念日（392年）（本上帝聖靈日紀念）" Id="906" Type="0" />
 </LANGUAGE>
 </DAY>
