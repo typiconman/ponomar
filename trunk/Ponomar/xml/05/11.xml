@@ -5,15 +5,17 @@
 <SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Holy Equal-to-the-Apostles Methodius (+885) and Cyrill (+869), teachers of the Slavs" Id="1525" Type="5" Cmd="nday != 50"/>
 <SAINT Name="Hieromartyr Mocius the Presbyter of Amphipolis in Macedonia (+ c.295)" Id="1037" Type="1" />
-<SAINT Name="Commemoration of the Founding of Constantinople (324)" Id="" Type="0" />
-<SAINT Name="Saint Nicodemus, Archbishop of Serbia (+1325)" Id="1041" Type="0" />
-<SAINT Name="Venerable Sophronius the Recluse of the Kiev Far Caves (13th)" Id="2045" Type="0" />
-<SAINT Name="New Martyrs Dioscorus and Argirus" Id="" Type="0" />
-<SAINT Name="Hieromartyr Joseph, First Metropolitan of Astrakhan (+1672)" Id="1054" Type="0" />
-<SAINT Name="Icon of the Mother of God of Constantinople" Id="" Type="0" />
+<SAINT Name="Holy Equal-to-the-Apostles Methodius (+885) and Cyrill (+869), teachers of the Slavs" Id="1525" Type="5" Cmd="nday != 50"/>
+<SAINT Name="Holy Equal-to-the-Apostles Rostislav, prince of Greater Moravia (+870)" Id="6812" Type="1"/>
+<SAINT Name="New Hieromartyr Priest Michael (+1920)" Id="" Type="0"/>
 <SAINT Name="New Hieromartyr Alexander, Archbishop of Khar'kov (+1940)" Id="" Type="0" />
+<SAINT Name="Venerable Sophronius the Recluse of the Kiev Far Caves (13th)" Id="2045" Type="0" />
+<SAINT Name="Hieromartyr Joseph, First Metropolitan of Astrakhan (+1672)" Id="1054" Type="0" />
+<SAINT Name="Saint Nicodemus, Archbishop of Serbia (+1325)" Id="1041" Type="0" />
+<SAINT Name="Commemoration of the Founding of Constantinople (324)" Id="" Type="0" />
+<SAINT Name="New Martyrs Dioscorus and Argirus (1808)" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God of Constantinople" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="St Martyr Mocius" Id="1037" Type="1" />
@@ -28,27 +30,28 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Сщмч. Мокия (ок. 295)" Id="1037" Type="1"/>
 <SAINT Name="Равноапп. Мефодия (885) и Кирилла (869), учителей Словенских" Id="1525" Type="5" Cmd="nday != 50"/>
-<SAINT Name="Равноапостольного Ростислава, князя Великоморавского (870)" Id="6812" Type="1"/>
+<SAINT Name="Равноап. Ростислава, князя Великоморавского (870)" Id="6812" Type="1"/>
 <SAINT Name="Сщмч. Михаила пресвитера (1920)" Id="" Type="0"/>
 <SAINT Name="Сщмч. Александра, архиеп. Харьковского (1940)" Id="" Type="0"/>
-<SAINT Name="Прп. Софрония, затворника Печерского (XIII)" Id="2045" Type="0"/>
+<SAINT Name="Прп. Софрония, затворника Печерского, в Дальних пещерах (XIII)" Id="2045" Type="0"/>
+<SAINT Name="Сщмч. Иосифа, митр. Астраханского (1671)" Id="1054" Type="0"/>
 <SAINT Name="Свт. Никодима, архиеп. Сербского (1325)" Id="1041" Type="0"/>
-<SAINT Name="Сщмч. Иосифа, митр. Астраханского (1672)" Id="1054" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="圣基里尔（869年）及圣麦托迪（885年），亚使徒，斯拉夫民族之导师" Id="" Type="0"/>
-<SAINT Name="殉道司祭默基（马其顿的盎斐颇利城，295年）" Id="" Type="0"/>
+<SAINT Name="殉道司祭默基（马其顿的盎斐颇利城，约295年）" Id="" Type="0"/>
+<SAINT Name="圣麦托迪（885年）及圣基里尔（869年），亚使徒，斯拉夫民族之导师" Id="1525" Type="5" Cmd="nday != 50"/>
+<SAINT Name="圣罗斯提斯拉夫（亚使徒，大摩拉维亚王子，870年）" Id="6812" Type="1"/>
+<SAINT Name="新殉道司祭弥哈伊尔（1920年）" Id="" Type="0"/>
+<SAINT Name="新殉道司教亚历山大（哈尔科夫总主教，1940年）" Id="" Type="0"/>
+<SAINT Name="圣索福若尼（基辅洞窟之闭关者，13世纪）" Id="2045" Type="0"/>
+<SAINT Name="圣约熙福（阿斯特拉罕都主教，1671年）" Id="1054" Type="0"/>
+<SAINT Name="圣尼科迪默（阿托斯圣山修士，佩奇及全塞尔维亚总主教，1325年）" Id="1041" Type="0"/>
 <SAINT Name="帝都君士坦丁堡城奠基纪念日" Id="" Type="0"/>
-<SAINT Name="圣罗斯提斯拉夫（亚使徒，大摩拉维亚王子，870年）" Id="" Type="0"/>
-<SAINT Name="圣索福若尼（基辅洞窟之闭关者，13世纪）" Id="" Type="0"/>
 <SAINT Name="新殉道女奥林彼亚（米提利尼地方之修女院院长，1235年）" Id="" Type="0"/>
-<SAINT Name="圣约熙福（阿斯特拉罕都主教，1671年）" Id="" Type="0"/>
-<SAINT Name="圣尼科迪默（阿托斯圣山修士，佩奇及全塞尔维亚总主教，1325年）" Id="" Type="0"/>
 <SAINT Name="蒙福者赫里斯特西亚斯（被称为赫里斯托佛尔，格鲁吉亚的噶热斯嘉地方，1771年）" Id="" Type="0"/>
 <SAINT Name="殉道者阿喀基（下默西亚地方）" Id="" Type="0"/>
 <SAINT Name="新殉道者迪奥斯科若及阿尔吉若（德撒洛尼基城，1808年）" Id="" Type="0"/>
 <SAINT Name="圣德奥斐拉克特（斯塔夫罗波尔及埃卡特林诺达尔主教，1872年）" Id="" Type="0"/>
-<SAINT Name="新殉道司教亚历山大（哈尔科夫总主教，1940年）" Id="" Type="0"/>
 <SAINT Name="圣喀坦（苏格兰之比特岛，6世纪）" Id="" Type="0"/>
 <SAINT Name="圣阿撒弗（威尔士的拉尼尔维主教，6世纪）" Id="" Type="0"/>
 <SAINT Name="圣康伽尔（爱尔兰班戈修道院的建立者及院长，603年）" Id="" Type="0"/>
@@ -56,19 +59,20 @@
 <SAINT Name="圣维若（来自爱尔兰的主教，传教于荷兰的林博格地方，710年）" Id="" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="聖基里爾（869年）及聖麥托迪（885年），亞使徒，斯拉夫民族之導師" Id="" Type="0"/>
-<SAINT Name="殉道司祭默基（馬其頓的盎斐頗利城，295年）" Id="" Type="0"/>
+<SAINT Name="殉道司祭默基（馬其頓的盎斐頗利城，約295年）" Id="" Type="0"/>
+<SAINT Name="聖麥托迪（885年）及聖基里爾（869年），亞使徒，斯拉夫民族之導師" Id="1525" Type="5" Cmd="nday != 50"/>
+<SAINT Name="聖羅斯提斯拉夫（亞使徒，大摩拉維亞王子，870年）" Id="6812" Type="1"/>
+<SAINT Name="新殉道司祭彌哈伊爾（1920年）" Id="" Type="0"/>
+<SAINT Name="新殉道司教亞歷山大（哈爾科夫總主教，1940年）" Id="" Type="0"/>
+<SAINT Name="聖索福若尼（基輔洞窟之閉關者，十三世紀）" Id="2045" Type="0"/>
+<SAINT Name="聖約熙福（阿斯特拉罕都主教，1671年）" Id="1054" Type="0"/>
+<SAINT Name="聖尼科迪默（阿托斯聖山修士，佩奇及全塞爾維亞總主教，1325年）" Id="1041" Type="0"/>
 <SAINT Name="帝都君士坦丁堡城奠基紀念日" Id="" Type="0"/>
-<SAINT Name="聖羅斯提斯拉夫（亞使徒，大摩拉維亞王子，870年）" Id="" Type="0"/>
-<SAINT Name="聖索福若尼（基輔洞窟之閉關者，十三世紀）" Id="" Type="0"/>
 <SAINT Name="新殉道女奧林彼亞（米提利尼地方之修女院院長，1235年）" Id="" Type="0"/>
-<SAINT Name="聖約熙福（阿斯特拉罕都主教，1671年）" Id="" Type="0"/>
-<SAINT Name="聖尼科迪默（阿托斯聖山修士，佩奇及全塞爾維亞總主教，1325年）" Id="" Type="0"/>
 <SAINT Name="蒙福者赫里斯特西亞斯（被稱為赫里斯托佛爾，格魯吉亞的噶熱斯嘉地方，1771年）" Id="" Type="0"/>
 <SAINT Name="殉道者阿喀基（下默西亞地方）" Id="" Type="0"/>
 <SAINT Name="新殉道者迪奧斯科若及阿爾吉若（德撒洛尼基城，1808年）" Id="" Type="0"/>
 <SAINT Name="聖德奧斐拉克特（斯塔夫羅波爾及埃卡特林諾達爾主教，1872年）" Id="" Type="0"/>
-<SAINT Name="新殉道司教亞歷山大（哈爾科夫總主教，1940年）" Id="" Type="0"/>
 <SAINT Name="聖喀坦（蘇格蘭之比特島，六世紀）" Id="" Type="0"/>
 <SAINT Name="聖阿撒弗（威爾士的拉尼爾維主教，六世紀）" Id="" Type="0"/>
 <SAINT Name="聖康伽爾（愛爾蘭班戈修道院的建立者及院長，603年）" Id="" Type="0"/>
