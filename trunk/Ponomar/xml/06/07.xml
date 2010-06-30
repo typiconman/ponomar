@@ -1,6 +1,6 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Hieromartyr Theodotus the Bishop of Ancyra (+303)" Id="2216" Type="1" />
+<SAINT Name="Hieromartyr Theodotus the Bishop of Ancyra (+303)" Id="9216" Type="1" />
 <SAINT Name="Holy Women Martyrs Caleria (Valeria), Kyriaki and Maria in Caesarea of Palestine (4th C)" Id="1254" Type="0" />
 <SAINT Name="Hieromartyr Marcellus, Pope of Rome, and those with him: Martyrs Sisinius and Cyriacus the deacons, Smaragdus, Largius, Apronian, Saturnian, Papius, Maurus, and Cryscentian, and Martyred women Priscilla, Lucina, and Artemia the Princess (+ c.310)" Id="1253" Type="0" />
 <SAINT Name="Venerable Daniel of Skete" Id="" Type="0" />
@@ -8,7 +8,7 @@
 <SAINT Name="Martyr Potamiena" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="St Martyr Théodote d'Ancyre" Id="2216" Type="1" />
+<SAINT Name="St Martyr Théodote d'Ancyre" Id="9216" Type="1" />
 <SAINT Name="Ste Potamienne et ses compagnons" Id="" Type="0" />
 <SAINT Name="St Lycarion" Id="" Type="0" />
 <SAINT Name="Ste Zénaide la Thaumaturge" Id="" Type="0" />
@@ -22,7 +22,7 @@
 <SAINT Name="Sts Sérenic et Sérené" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Сщмч. Феодота Анкирского (303)" Id="2216" Type="1"/>
+<SAINT Name="Сщмч. Феодота Анкирского (303)" Id="9216" Type="1"/>
 <SAINT Name="Сщмч. Андроника, архиеп. Пермского (1918)" Id="4756" Type="0"/>
 <SAINT Name="Сщмч. Александра, Алексия, Александра, Валентина, Вениамина, Виктора, Александра, Павла, Владимира,  Игнатия, Льва, Михаила, Николая, Павла, Александра, Николая пресвитеров, Григория диакона и мчч. Афанасия и Александра (1918)" Id="" Type="0"/>
 <SAINT Name="Сщмчч. Николая и Петра пресвитеров (1919)" Id="" Type="0"/>
