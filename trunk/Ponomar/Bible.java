@@ -74,6 +74,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     private String currentBible="";
     private OrderedHashtable comboBoxList;
     private OrderedHashtable findIdL;
+    private ComponentOrientation OrientText=ComponentOrientation.LEFT_TO_RIGHT;
     //new String[]
     //{"Previous Chapter", "Entire Chapter", "Next Chapter", "Bookmark Passage", "Copy Passage", "Save Passage", "Print Passage"};
 
@@ -212,7 +213,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 
         pack();
         setSize(700, 600);
-        setVisible(true);       
+        setVisible(true);
         update(curbook, curpassage);
     }
 
@@ -269,8 +270,14 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                     DisplaySizeA = (String) table.get("FontSize");
                 }
                 String Name=currentBible;//(String)versions.get(lastversion);
-                String entry="<html><p style=\"font-family:"+DisplayFontA+";font-size:"+DisplaySizeA+"pt\">"+Name+"</p></html>";
-                versions.put(lastversion, "<html><p style=\"font-family:"+DisplayFontA+";font-size:"+DisplaySizeA+"pt\">"+Name+"</p></html>");
+                String alignText="left";
+                if (table.get("Orient") != null){
+                    if (table.get("Orient").equals("rtl")){
+                        alignText="right";
+                    }
+                }
+                String entry="<html><p style=\"font-family:"+DisplayFontA+";font-size:"+DisplaySizeA+"pt;text-align:"+alignText+"\">"+Name+"</p></html>";
+                versions.put(lastversion, "<html><p style=\"font-family:"+DisplayFontA+";font-size:"+DisplaySizeA+"pt;text-align:"+alignText+"\">"+Name+"</p></html>");
                 findId.put(entry, lastversion);
                 //comboBoxList.put(lastversion,"<body style=\"font-family:"+DisplayFontA+";font-size:"+DisplaySizeA+"\">"+Name+"</body>");
                 //findIdL.put("<body style=\"font-family:"+DisplayFontA+";font-size:"+DisplaySizeA+"\">"+Name+"</body>", (String) table.get("Id"));
@@ -278,6 +285,21 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                //versions.();
 
             if (curversion.equals(lastversion)) {
+                if (table.get("Orient") == null ){
+                    OrientText=ComponentOrientation.LEFT_TO_RIGHT;
+                    //System.out.println("Null Case");
+                }else {
+                    //System.out.println(table.get("Orient").toString());
+                    if(table.get("Orient").equals("rtl")){
+                    OrientText=ComponentOrientation.RIGHT_TO_LEFT;
+                    //System.out.println("Arabic Case");
+                    }
+                    else{
+                        OrientText=ComponentOrientation.LEFT_TO_RIGHT;
+                        //System.out.println("Default Case");
+                        //But there could be other future orientations, such as tlb,etc...
+                    }
+                }
                 ChapterName = (String) table.get("ChapterN");
                 String a = (String) table.get("VerseNo");
                 VerseNumber = a.split(",");
@@ -391,6 +413,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
            //curversion = versions2.get(findId.get(versionsBox.getSelectedIndex()).toString()).toString();
             curversion=findId.get(versionsBox.getSelectedItem().toString()).toString();
             //REREAD THE BIBLE.XML FILE FOR THE NEW READINGS
+            books= new OrderedHashtable();
+            chapters=new OrderedHashtable();
             try {
                 
                 BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));	//Unicodised it.
@@ -402,6 +426,14 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
             booksBox.removeAll();
             booksBox.setListData(new Vector(books.values()));
             changeItBooks = true;
+            //Adding local direction control, so that the direction of the Bible text
+            //reflects the correct internal language direction
+            //System.out.println(OrientText.toString());
+            instructionsText.setComponentOrientation(OrientText);
+            booksBox.setComponentOrientation(OrientText);
+            chaptersBox.setComponentOrientation(OrientText);
+            text.setComponentOrientation(OrientText);
+            //to here Y.S. 2010/07/01 n.s.
             update(curbook, curpassage);
         } else {
             int butnum = (int) Integer.parseInt(name);
