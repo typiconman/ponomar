@@ -8,8 +8,8 @@
 <SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="dow != 0" />
 <SCRIPTURE Type="apostol" Pericope="254" Reading="Col_2:8-12" Note="for the Circumcision"/>
 <SCRIPTURE Type="gospel" Pericope="6" Reading="Lk_2:20-21, 40-52" Note="for the Circumcision"/>
-<SCRIPTURE Type="apostol" Pericope="318" Reading="Heb_7:26-8:2" Cmd="dow != 0" Note="for the hierarch"/>
-<SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:17-23" Cmd="dow != 0" Note="for the hierarch"/>
+<SCRIPTURE Type="apostol" Pericope="318" Reading="Heb_7:26-8:2" Cmd="dow != 0 &amp;&amp; dow != 6" Note="for the hierarch"/>
+<SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:17-23" Cmd="dow != 0 &amp;&amp; dow != 6" Note="for the hierarch"/>
 <LITURGY Type="2" Comment="Always St Basil's Liturgy on this day!"/>
 <INSTRUCTIONS Cmd="dow != 0"> 
 ꙾комм.꙾ А҆́ще хра́мъ ст҃а́гѡ васї́лїа, твори́мъ бдѣ́нїе:
