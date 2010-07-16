@@ -1,17 +1,17 @@
 <DAY>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Virginmartyr Glyceria at Heraclea with her Laodicius the prison guard (+ c.177)" Id="2445" Type="1" />
-<SAINT Name="Martyr Alexander of Rome (+ c.300)" Id="1058" Type="0" />
-<SAINT Name="Saint Pausicacus, Bishop of Synada (+ c.606)" Id="1059" Type="0" />
-<SAINT Name="Hieromartyr Alexander, Bishop of Tiberiada" Id="" Type="0" />
-<SAINT Name="St. Euthymius the New, Founder of the Iveron Monastery (+1028)" Id="6564" Type="0" />
-<SAINT Name="Venerable John, father of St. Euthymius" Id="" Type="0" />
-<SAINT Name="St. George the Confessor, with his wife Irene and children of Constantinople (9th C)" Id="1060" Type="0" />
-<SAINT Name="Venerable Gabriel the Iberian (Georgian)" Id="" Type="0" />
-<SAINT Name="Virginmartyr Glyceria of Novgorod (+1522)" Id="2446" Type="0" />
-<SAINT Name="Translation of the Relics of Hieromartyr Macarius, Archimandrite of Kanev (1688)" Id="1405" Type="0" />
+<SAINT Name="Virginmartyr Glyceria at Heraclea with her Martyr Laodicius the prison guard (+ c.177)" Id="2445" Type="1" />
 <SAINT Name="New Hieromartyrs Priests Basil, Alexander, and Christopher, Martyrs Macarius and Sergius (+1922)" Id="4778" Type="0" />
 <SAINT Name="103 New Martyrs of Cherkassy (20th C)" Id="" Type="0" />
+<SAINT Name="Virginmartyr Glyceria of Novgorod (+1522)" Id="2446" Type="0" />
+<SAINT Name="Translation of the Relics (1688) of Hieromartyr Macarius, Archimandrite of Kanev, Abbot of Pinsk (+1678)" Id="1405" Type="0" />
+<SAINT Name="Martyr Alexander of Rome (+284-305)" Id="1058" Type="0" />
+<SAINT Name="Saint Pausicacus, Bishop of Synada (+ c.606)" Id="1059" Type="0" />
+<SAINT Name="St. George the Confessor, with his wife Irene and children of Constantinople (9th C)" Id="1060" Type="0" />
+<SAINT Name="St. Euthymius the New, Founder of the Iveron Monastery (+1028)" Id="6564" Type="0" />
+<SAINT Name="Hieromartyr Alexander, Bishop of Tiberiada" Id="" Type="0" />
+<SAINT Name="Venerable John, father of St. Euthymius" Id="" Type="0" />
+<SAINT Name="Venerable Gabriel the Iberian (Georgian)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Ste Martyre Glycérie et son geôlier Laodicios" Id="2445" Type="1" />
@@ -29,43 +29,47 @@
 <SAINT Name="Мц. Гликерии девы и с нею мч. Лаодикия, стража темничного (ок. 177)" Id="2445" Type="1"/>
 <SAINT Name="Сщмчч. Василия, Александра и Христофора пресвитеров, прмч. Макария и мч. Сергия (1922)" Id="4778" Type="0"/>
 <SAINT Name="Мчч. 103 Черкасских (XX)" Id="" Type="0"/>
-<SAINT Name="Мч. Александра Римского (ок. 284-305)" Id="1058" Type="0"/>
+<SAINT Name="Прав. Гликерии девы, Новгородской (1522)" Id="2446" Type="0"/>
+<SAINT Name="Перенесение мощей прмч. Макария, архим. Каневского, игумена Пинского, Переяславского чудотворца (1688)" Id="1405" Type="0"/>
+<SAINT Name="Мч. Александра Римского (284-305)" Id="1058" Type="0"/>
 <SAINT Name="Свт. Павсикакия, еп. Синадского (ок. 606)" Id="1059" Type="0"/>
 <SAINT Name="Свв. Георгия исп. с супругою Ириною и чадами (IX)" Id="1060" Type="0"/>
 <SAINT Name="Прп. Евфимия Иверского (1028)" Id="6564" Type="0"/>
-<SAINT Name="Прав. Гликерии девы, Новгородской (1522)" Id="2446" Type="0"/>
-<SAINT Name="Перенесение мощей прмч. Макария  Каневского, игумена Пинского, Переяславского чудотворца (1688)" Id="1405" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="童贞殉道女格利凯里亚（赫拉克利亚，141年）" Id="" Type="0" />
+<SAINT Name="童贞殉道女格利凯里亚（赫拉克利亚，141年）" Id="2445" Type="1" />
+<SAINT Name="新殉道司祭：瓦西里、亚历山大、及赫里斯托佛尔、新殉道者玛喀里、及塞尔吉（1922年）" Id="4778" Type="0" />
+<SAINT Name="切尔卡斯克城103名殉道者（20世纪）" Id="" Type="0"/>
+<SAINT Name="义人，童贞女格利凯里亚（诺夫哥罗德，1522年）" Id="2446" Type="0" />
+<SAINT Name="敬迁奥布路奇和卡乃夫地方的修士大司祭圣玛喀里（1678年）之圣髑纪念日（1688年）" Id="1405" Type="0" />
+<SAINT Name="殉道者亚历山大（罗马，298年）" Id="1058" Type="0" />
+<SAINT Name="圣帕弗西喀基（辛那达主教，约606年）" Id="1059" Type="0" />
+<SAINT Name="圣格奥尔吉及其妻子和孩子（君士坦丁堡之宣信者，842年）" Id="1060" Type="0" />
+<SAINT Name="新圣艾弗提弥（1028年，阿托斯圣山的伊维隆修道院之建立者）、及他在圣山的同修：其父约安（998年）、其表兄弟格奥尔吉（1066年）、伽弗里伊尔（10世纪）" Id="6564" Type="0" />
 <SAINT Name="殉道者劳迪基（看守圣女格利凯里亚之狱卒）" Id="" Type="0" />
 <SAINT Name="圣塞尔瓦提（驳斥阿里乌斯异端的护教者，荷兰，384年）" Id="" Type="0" />
-<SAINT Name="殉道者亚历山大（罗马，298年）" Id="" Type="0" />
-<SAINT Name="圣帕弗西喀基（辛那达主教，606年）" Id="" Type="0" />
-<SAINT Name="圣格奥尔吉及其妻子和孩子（君士坦丁堡之宣信者，842年）" Id="" Type="0" />
 <SAINT Name="圣塞尔吉（君士坦丁堡之宣信者，9世纪）" Id="" Type="0" />
-<SAINT Name="新圣艾弗提弥（1028年，阿托斯圣山的伊维隆修道院之建立者）、及他在圣山的同修：其父约安（998年）、其表兄弟格奥尔吉（1066年）、伽弗里伊尔（10世纪）" Id="" Type="0" />
-<SAINT Name="义人，童贞女格利凯里亚（诺夫哥罗德，1522年）" Id="" Type="0" />
 <SAINT Name="纪念阿托斯圣山的伊维隆修道院在13世纪被天主教徒所屠杀的诸位殉道修士" Id="" Type="0" />
 <SAINT Name="圣玛喀里（沃洛格达的格卢施察修道院院长，1478年）" Id="" Type="0" />
 <SAINT Name="圣尼基佛尔（埃法普西修道院之司祭）" Id="" Type="0" />
-<SAINT Name="敬迁奥布路奇和卡乃夫地方的修士大司祭圣玛喀里之圣髑纪念日（1678年）" Id="" Type="0" />
 <SAINT Name="殉道司祭亚历山大（提维里亚地方）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="童貞殉道女格利凱里亞（赫拉克利亞，141年）" Id="" Type="0" />
+<SAINT Name="童貞殉道女格利凱里亞（赫拉克利亞，141年）" Id="2445" Type="1" />
+<SAINT Name="新殉道司祭：瓦西里、亞歷山大、及赫里斯托佛爾、新殉道者瑪喀里、及塞爾吉（1922年）" Id="4778" Type="0" />
+<SAINT Name="切爾卡斯克城一百零三名殉道者（二十世紀）" Id="" Type="0"/>
+<SAINT Name="義人，童貞女格利凱里亞（諾夫哥羅德，1522年）" Id="2446" Type="0" />
+<SAINT Name="敬遷奧布路奇和卡乃夫地方的修士大司祭聖瑪喀里（1678年）之聖髑紀念日（1688年）" Id="1405" Type="0" />
+<SAINT Name="殉道者亞歷山大（羅馬，298年）" Id="1058" Type="0" />
+<SAINT Name="聖帕弗西喀基（辛那達主教，約606年）" Id="1059" Type="0" />
+<SAINT Name="聖格奧爾吉及其妻子和孩子（君士坦丁堡之宣信者，842年）" Id="1060" Type="0" />
+<SAINT Name="新聖艾弗提彌（1028年，阿托斯聖山的伊維隆修道院之建立者）、及他在聖山的同修：其父約安（998年）、其表兄弟格奧爾吉（1066年）、伽弗里伊爾（十世紀）" Id="6564" Type="0" />
 <SAINT Name="殉道者勞迪基（看守聖女格利凱里亞之獄卒）" Id="" Type="0" />
 <SAINT Name="聖塞爾瓦提（駁斥阿里烏斯異端的護教者，荷蘭，384年）" Id="" Type="0" />
-<SAINT Name="殉道者亞歷山大（羅馬，298年）" Id="" Type="0" />
-<SAINT Name="聖帕弗西喀基（辛那達主教，606年）" Id="" Type="0" />
-<SAINT Name="聖格奧爾吉及其妻子和孩子（君士坦丁堡之宣信者，842年）" Id="" Type="0" />
 <SAINT Name="聖塞爾吉（君士坦丁堡之宣信者，九世紀）" Id="" Type="0" />
-<SAINT Name="新聖艾弗提彌（1028年，阿托斯聖山的伊維隆修道院之建立者）、及他在聖山的同修：其父約安（998年）、其表兄弟格奧爾吉（1066年）、伽弗里伊爾（十世紀）" Id="" Type="0" />
-<SAINT Name="義人，童貞女格利凱里亞（諾夫哥羅德，1522年）" Id="" Type="0" />
-<SAINT Name="紀念阿托斯聖山的伊維隆修道院在十三世紀被天主教徒所屠殺的諸位殉道修士" Id="" Type="0" />
+<SAINT Name="紀念阿托斯聖山的伊維隆修道院在13世紀被天主教徒所屠殺的諸位殉道修士" Id="" Type="0" />
 <SAINT Name="聖瑪喀里（沃洛格達的格盧施察修道院院長，1478年）" Id="" Type="0" />
 <SAINT Name="聖尼基佛爾（埃法普西修道院之司祭）" Id="" Type="0" />
-<SAINT Name="敬遷奧布路奇和卡乃夫地方的修士大司祭聖瑪喀里之聖髑紀念日（1678年）" Id="" Type="0" />
 <SAINT Name="殉道司祭亞歷山大（提維里亞地方）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
