@@ -8,7 +8,7 @@
 <SAINT Name="Martyr Alexander of Rome (+284-305)" Id="1058" Type="0" />
 <SAINT Name="Saint Pausicacus, Bishop of Synada (+ c.606)" Id="1059" Type="0" />
 <SAINT Name="St. George the Confessor, with his wife Irene and children of Constantinople (9th C)" Id="1060" Type="0" />
-<SAINT Name="St. Euthymius the New, Founder of the Iveron Monastery (+1028)" Id="6564" Type="0" />
+<SAINT Name="Venerable Euthymius the New, Founder of the Iveron Monastery (+1028) (Georgian)" Id="6564" Type="0" />
 <SAINT Name="Hieromartyr Alexander, Bishop of Tiberiada" Id="" Type="0" />
 <SAINT Name="Venerable John, father of St. Euthymius" Id="" Type="0" />
 <SAINT Name="Venerable Gabriel the Iberian (Georgian)" Id="" Type="0" />
@@ -34,7 +34,7 @@
 <SAINT Name="Мч. Александра Римского (284-305)" Id="1058" Type="0"/>
 <SAINT Name="Свт. Павсикакия, еп. Синадского (ок. 606)" Id="1059" Type="0"/>
 <SAINT Name="Свв. Георгия исп. с супругою Ириною и чадами (IX)" Id="1060" Type="0"/>
-<SAINT Name="Прп. Евфимия Иверского (1028)" Id="6564" Type="0"/>
+<SAINT Name="Прп. Евфимия Иверского (1028)(Груз.)" Id="6564" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="童贞殉道女格利凯里亚（赫拉克利亚，141年）" Id="2445" Type="1" />
@@ -67,7 +67,7 @@
 <SAINT Name="殉道者勞迪基（看守聖女格利凱里亞之獄卒）" Id="" Type="0" />
 <SAINT Name="聖塞爾瓦提（駁斥阿里烏斯異端的護教者，荷蘭，384年）" Id="" Type="0" />
 <SAINT Name="聖塞爾吉（君士坦丁堡之宣信者，九世紀）" Id="" Type="0" />
-<SAINT Name="紀念阿托斯聖山的伊維隆修道院在13世紀被天主教徒所屠殺的諸位殉道修士" Id="" Type="0" />
+<SAINT Name="紀念阿托斯聖山的伊維隆修道院在十三世紀被天主教徒所屠殺的諸位殉道修士" Id="" Type="0" />
 <SAINT Name="聖瑪喀里（沃洛格達的格盧施察修道院院長，1478年）" Id="" Type="0" />
 <SAINT Name="聖尼基佛爾（埃法普西修道院之司祭）" Id="" Type="0" />
 <SAINT Name="殉道司祭亞歷山大（提維里亞地方）" Id="" Type="0" />
