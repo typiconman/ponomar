@@ -6,17 +6,21 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Pentecost Thursday" Id="" Type="0" Tone="-1" />
+<SAINT Name="Icon of the Mother of God &quot;Surety of Sinners&quot; in Korets (1622) (movable feast on Pentecost Thursday)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Jeudi du Pentecôte" Id="" Type="0" Tone="-1"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Четверг Пятидесятницы" Id="" Type="0" Tone="-1"/>
+<SAINT Name="Икона Божией Матери «Споручница грешных» Корецкая (переходящее празднование в четверг 1-й седмицы по Пятидесятнице)" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="五旬节后第一周瞻礼五" Id="" Type="0" Tone="-1" />
+<SAINT Name="至圣诞神女“罪人之保”圣像（柯列茨卡娅，1622年）（本五旬节后第一周瞻礼五纪念）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="五旬節後第一週瞻禮五" Id="" Type="0" Tone="-1" />
+<SAINT Name="至聖誕神女「罪人之保」聖像（柯列茨卡婭，1622年）（本五旬節後第一週瞻禮五紀念）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
