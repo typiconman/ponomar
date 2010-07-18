@@ -90,6 +90,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
 <PHRASE Key="TimeF" Value="HH:MM" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <PHRASE Key="LivesW" Value="Life/,Troparion/, Podoben: /,Kontakion/,Tone: TT/,; /,Information about this commemoration is missing." Comment="A space (if required) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="Previous Icon/,Next Icon/,No Icons were found."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="Français" NameEnglish="French" Cmd="LS == 1">
  <PHRASE Key="0" Value="Ponomar" Comment="Ceci est la seule valeur pour cette clé."/>
@@ -146,6 +147,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
 <PHRASE Key="TimeF" Value="HH h MM min" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <PHRASE Key="LivesW" Value="Vive/,Le tropaire/, Podoben : /,Le kondakion/,Tone : TT/, ; /,Il manque l'infomration sur cette commemoration." Comment="A space (if required) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="Icon précédent/,Icon suivant/,Aucun Icon n'avait pas trouvé."/>
 </LANGUAGE> 
 <LANGUAGE NameLocal="русский" NameEnglish="Russian" Cmd="LS == 3">
 <PHRASE Key="0" Value="Пономарь" Comment="This is the only entry for this key."/>
@@ -203,6 +205,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
 <PHRASE Key="TimeF" Value="HH:MM" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <PHRASE Key="LivesW" Value="Житие/,Тропар/, Подобен: /,Кондак/,Глас TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="Previous Icon/,Next Icon/,No Icons were found."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="церковнославѧнский" NameEnglish="Church Slavonic" Cmd="LS == 2">
 <PHRASE Key="0" Value="Пономарь" Comment="This is the only entry for this key."/>
@@ -262,6 +265,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="TimeF" Value="HH-й ча́съ MM-а минꙋта̀" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <!-- Traditionally, Church Slavonic uses a glyph-based approach to writing numbers, which at present cannot be truly implemented! -->
 <PHRASE Key="LivesW" Value="Life/,Troparion/, Podoben: /,Kontakion/,Глас TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="Previous Icon/,Next Icon/,No Icons were found."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="???" NameEnglish="Greek" Cmd="LS == 4">
 <PHRASE Key="0" Value="Ponomar" Comment="This is the only entry for this key."/>
@@ -319,6 +323,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Ideographic" Value="1" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
 <PHRASE Key="TimeF" Value="HH:MM" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <PHRASE Key="LivesW" Value="Life/,Troparion/, Podoben: /,Kontakion/,Tone: TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="Previous Icon/,Next Icon/,No Icons were found."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="中文（简） " NameEnglish="Simplified Chinese" Cmd="LS == 5">
 <PHRASE Key="0" Value="波诺马里" Comment="This is the only entry for this key."/>
@@ -376,6 +381,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV. 1 = yes!"/>
 <PHRASE Key="TimeF" Value="HH时MM分" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <PHRASE Key="LivesW" Value="Life/,Troparion/, Podoben: /,Kontakion/,第TT调式/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="Previous Icon/,Next Icon/,No Icons were found."/>
 </LANGUAGE>
 <LANGUAGE NameLocal="中文（繁）" NameEnglish="Traditional Chinese" Cmd="LS == 6">
 <PHRASE Key="0" Value="波諾馬里" Comment="This is the only entry for this key."/>
@@ -434,6 +440,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV. 1 = yes!"/>
 <PHRASE Key="TimeF" Value="HH時MM分" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <PHRASE Key="LivesW" Value="Life/,Troparion/, Podoben: /,Kontakion/,第TT調式/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="Previous Icon/,Next Icon/,No Icons were found."/>
 </LANGUAGE>
 <DONE Value="MenuFiles, LanguagePack, LanguageSelector, About, ConfigurationFiles, Main, GospelSelector, OrderedHashtable, DocHanlder,QDParser, Sunrise, JCalendar, JDaySelector, Paschalion, Primes, DivineLiturgy, StringOp (I could not successfully translate this section),JDate,Bible,"/>
 <TODO Value="  Reporter, " />
