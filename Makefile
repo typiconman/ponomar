@@ -41,6 +41,7 @@ CLASSES = \
 	Ponomar/UsualBeginning.java \
 	Ponomar/ThirdHour.java \
 	Ponomar/SixthHour.java \
+	Ponomar/IconDisplay.java \
 	Ponomar/NinthHour.java \
 	Ponomar/Main.java 
 
