@@ -20,7 +20,7 @@ import javax.swing.text.MutableAttributeSet;
  OUTPUTS RELEVANT INFORMATION FOR EACH DAY, WITH LINKS TO DETAILED INFO.
 
  Main.java is part of the Ponomar program.
- Copyright 2006, 2007, 2008 Aleksandr Andreev and Yuri Shardt.
+ Copyright 2006, 2007, 2008, 2009, 2010 Aleksandr Andreev and Yuri Shardt.
  Corresponding e-mail aleksandr.andreev@gmail.com
 
  Ponomar is free software; you can redistribute it and/or
@@ -87,6 +87,9 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
         private String Colon=new String();
         private String Ideographic=new String();
         private DoSaint SaintLink;
+        private IconDisplay displayIcon;
+        private Vector IconImages;
+        private Vector IconNames;
 	//private GospelSelector Selector;
 
 	// CONSTRUCTOR
@@ -200,6 +203,8 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		calendar.addPropertyChangeListener(this);
 		left.setLayout(new BorderLayout());
 		left.add(calendar, BorderLayout.NORTH);
+                displayIcon=new IconDisplay(new String[0],new String[0]);
+                left.add(displayIcon,BorderLayout.CENTER);
 			
 		
 									
@@ -219,6 +224,14 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 
 		today = new JDate(calendar.getMonth(), calendar.getDay(), calendar.getYear());
 		setContentPane(splitter);
+
+                               Locale place=new Locale(Phrases.Phrases.get("Language").toString(),Phrases.Phrases.get("Country").toString());
+        Helpers orient=new Helpers();
+        StringOp.dayInfo.put("Locale",place);
+                StringOp.dayInfo.put("Orient",ComponentOrientation.getOrientation(place));
+                orient.applyOrientation(this,ComponentOrientation.getOrientation(place));
+                this.validate();
+                
 		pack();
 		setSize(700, 500);
 		setVisible(true);
@@ -243,12 +256,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                     this.setSize(screen);
                     //System.out.println(screen);
                 }
-                       Locale place=new Locale(Phrases.Phrases.get("Language").toString(),Phrases.Phrases.get("Country").toString());
-        Helpers orient=new Helpers();
-        StringOp.dayInfo.put("Locale",place);
-                StringOp.dayInfo.put("Orient",ComponentOrientation.getOrientation(place));
-                orient.applyOrientation(this,ComponentOrientation.getOrientation(place));
-                this.validate();
+        
 		write();
 	}
 
@@ -452,6 +460,14 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 			if (id.length() != 0)
 			{
 				output += "<A Href='goDoSaint?id=" + table.get("Id") + "'>";
+                                //if there is an id, then check if an Icon exists
+                                //System.out.println("Ponomar/images/icons/"+id+".jpg");
+                               File file=new File("Ponomar/images/icons/"+id+".jpg");
+                               if (file.exists())
+                               {
+                                   IconImages.add(id);
+                                   IconNames.add(table.get("Name").toString());
+                               }
 			}
                         //Adding a programme to automatically determine the rank of a given feast.
                         //It is assumed that the highest Type == Rank found in all the files that are being parsed is equal 
@@ -623,7 +639,10 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		int ndayP = (int)JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
 		//REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
 		int ndayF = (int)JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
-		
+
+                //Clearing the holders for the icons and names
+                IconImages=new Vector();
+                IconNames= new Vector();
 
 		// PUT THE RELEVANT DATA IN THE HASH
 		StringOp.dayInfo.put("dow", dow);	// THE DAY'S DAY OF WEEK
@@ -854,7 +873,20 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 			
 			
 		}
-		
+                
+                String[] iconImages=new String[IconImages.size()];
+                String[] iconNames=new String[IconImages.size()];
+                iconImages=(String [])IconImages.toArray(new String[IconImages.size()]);
+                iconNames=(String [])IconNames.toArray(new String[IconImages.size()]);
+                //System.out.println(iconNames.length);
+                //System.out.println(iconImages);
+                //if (iconNames.length>0)
+                {
+                    //System.out.println(iconImages[0]+"   "+iconNames[0]+"   ");
+                    displayIcon.updateImages(iconImages,iconNames);
+                    
+                }
+                //this.pack();
 		// OUTPUT THE FASTING REGULATIONS FOR THIS Day
 		/*int f = Integer.parseInt(fastInfo.pop().toString());
 		for (Enumeration e = fastInfo.elements(); e.hasMoreElements(); )
