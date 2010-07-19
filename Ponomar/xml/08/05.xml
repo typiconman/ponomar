@@ -35,4 +35,26 @@
 <SAINT Name="Прп. Иова Ущельского (1628)" Id="1038" Type="0"/>
 <SAINT Name="Мчч. Кантидия, Кантидиана и Сивела, в Египте" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道者艾弗西格尼（安提约希亚，362年）" Id="" Type="0" />
+<SAINT Name="殉道司教法维安（250年）及安特若（257年）（均为罗马教宗）" Id="" Type="0" />
+<SAINT Name="殉道者堪提迪、堪提迪安、西维利（埃及）" Id="" Type="0" />
+<SAINT Name="殉道者庞提（法兰西的基玫拉地方，257年）" Id="" Type="0" />
+<SAINT Name="义人诺纳（神学家圣格里高利之母）" Id="" Type="0" />
+<SAINT Name="新殉道者赫里斯托（普瑞维匝，1668年）" Id="" Type="0" />
+<SAINT Name="圣约安（霍则瓦修道院，1960年）" Id="" Type="0" />
+<SAINT Name="新殉道女艾弗多基亚、及偕同就义之三位初学修女：达里亚、达里亚、玛利亚（迪维耶沃，1919年）" Id="" Type="0" />
+<SAINT Name="圣奥斯瓦尔德（殉道国君，642年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道者艾弗西格尼（安提約希亞，362年）" Id="" Type="0" />
+<SAINT Name="殉道司教法維安（250年）及安特若（257年）（均為羅馬教宗）" Id="" Type="0" />
+<SAINT Name="殉道者堪提迪、堪提迪安、西維利（埃及）" Id="" Type="0" />
+<SAINT Name="殉道者龐提（法蘭西的基玫拉地方，257年）" Id="" Type="0" />
+<SAINT Name="義人諾納（神學家聖格里高利之母）" Id="" Type="0" />
+<SAINT Name="新殉道者赫里斯托（普瑞維匝，1668年）" Id="" Type="0" />
+<SAINT Name="聖約安（霍則瓦修道院，1960年）" Id="" Type="0" />
+<SAINT Name="新殉道女艾弗多基亞、及偕同就義之三位初學修女：達里亞、達里亞、瑪利亞（迪維耶沃，1919年）" Id="" Type="0" />
+<SAINT Name="聖奧斯瓦爾德（殉道國君，642年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
