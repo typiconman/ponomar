@@ -42,4 +42,28 @@
 <SAINT Name="Блж. Никиты в Царьграде (XII)" Id="1494" Type="0"/>
 <SAINT Name="Прп. Онуфрия Воронского (1789)" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="吾主上帝神圣义德之外祖父母：约雅敬及安纳" Id="" Type="0" />
+<SAINT Name="殉道者塞维里安（塞巴斯特地方，320年）" Id="" Type="0" />
+<SAINT Name="纪念第三次神圣普世大公会议（431年）" Id="" Type="0" />
+<SAINT Name="圣德奥梵（迪亚维诺山之宣信者及持斋者，299年）" Id="" Type="0" />
+<SAINT Name="圣奥麦尔（特路安尼主教，670年）" Id="" Type="0" />
+<SAINT Name="蒙福者尼基塔（君士坦丁堡之隐居者，12世纪）" Id="" Type="0" />
+<SAINT Name="圣约熙福（沃洛科拉穆斯克修道院院长，1515年）" Id="" Type="0" />
+<SAINT Name="圣约雅敬（普斯克夫的奥颇赫卡修道院院长，1550年）" Id="" Type="0" />
+<SAINT Name="寻获赫尔尼格夫总主教圣德奥多西（1696年）之圣髑纪念日（1896年）" Id="" Type="0" />
+<SAINT Name="圣基埃兰（爱尔兰的克隆玛克诺伊斯地方，545年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="吾主上帝神聖義德之外祖父母：約雅敬及安納" Id="" Type="0" />
+<SAINT Name="殉道者塞維里安（塞巴斯特地方，320年）" Id="" Type="0" />
+<SAINT Name="紀念第三次神聖普世大公會議（431年）" Id="" Type="0" />
+<SAINT Name="聖德奧梵（迪亞維諾山之宣信者及持齋者，299年）" Id="" Type="0" />
+<SAINT Name="聖奧麥爾（特路安尼主教，670年）" Id="" Type="0" />
+<SAINT Name="蒙福者尼基塔（君士坦丁堡之隱居者，十二世紀）" Id="" Type="0" />
+<SAINT Name="聖約熙福（沃洛科拉穆斯克修道院院長，1515年）" Id="" Type="0" />
+<SAINT Name="聖約雅敬（普斯剋夫的奧頗赫卡修道院院長，1550年）" Id="" Type="0" />
+<SAINT Name="尋獲赫爾尼格夫總主教聖德奧多西（1696年）之聖髑紀念日（1896年）" Id="" Type="0" />
+<SAINT Name="聖基埃蘭（愛爾蘭的克隆瑪克諾伊斯地方，545年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

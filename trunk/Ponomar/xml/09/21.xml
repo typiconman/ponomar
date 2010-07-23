@@ -44,4 +44,32 @@
 <SAINT Name="Свтт. Исаакия и Мелетия, епископов Кипрских" Id="" Type="0"/>
 <SAINT Name="Мчч. Евсевия и Приска" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="七十使徒之科德拉特（130年）" Id="" Type="0" />
+<SAINT Name="殉道者艾弗塞维（腓尼基，2世纪）" Id="" Type="0" />
+<SAINT Name="殉道司教伊帕提（艾弗所主教）及一同就义者司祭安德列（730年）" Id="" Type="0" />
+<SAINT Name="殉道者普里斯科（弗里吉亚）" Id="" Type="0" />
+<SAINT Name="殉道者：艾弗塞维、奈斯塔弗、兹诺、宣信者奈斯托尔（加沙，4世纪）" Id="" Type="0" />
+<SAINT Name="圣伊撒基及圣麦勒提（均为塞浦路斯主教）" Id="" Type="0" />
+<SAINT Name="圣约熙福（沃洛格达的藻尼基辅修道院，1612年）" Id="" Type="0" />
+<SAINT Name="圣达尼伊尔（诺夫哥罗德的舒格山修道院院长，16世纪）" Id="" Type="0" />
+<SAINT Name="寻获罗斯托夫都主教圣迪弥特里（1709年）之圣髑纪念日（1752年）" Id="" Type="0" />
+<SAINT Name="纪念乌格利奇全体圣徒" Id="" Type="0" />
+<SAINT Name="新殉道司教德奥梵（利佩茨克及白俄罗斯都主教，1937年）" Id="" Type="0" />
+<SAINT Name="圣约纳（萨瓦修道院修士，9世纪）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="七十使徒之科德拉特（130年）" Id="" Type="0" />
+<SAINT Name="殉道者艾弗塞維（腓尼基，二世紀）" Id="" Type="0" />
+<SAINT Name="殉道司教伊帕提（艾弗所主教）及一同就義者司祭安德列（730年）" Id="" Type="0" />
+<SAINT Name="殉道者普里斯科（弗里吉亞）" Id="" Type="0" />
+<SAINT Name="殉道者：艾弗塞維、奈斯塔弗、茲諾、宣信者奈斯托爾（加沙，四世紀）" Id="" Type="0" />
+<SAINT Name="聖伊撒基及聖麥勒提（均為塞浦路斯主教）" Id="" Type="0" />
+<SAINT Name="聖約熙福（沃洛格達的藻尼基輔修道院，1612年）" Id="" Type="0" />
+<SAINT Name="聖達尼伊爾（諾夫哥羅德的舒格山修道院院長，十六世紀）" Id="" Type="0" />
+<SAINT Name="尋獲羅斯托夫都主教聖迪彌特里（1709年）之聖髑紀念日（1752年）" Id="" Type="0" />
+<SAINT Name="紀念烏格利奇全體聖徒" Id="" Type="0" />
+<SAINT Name="新殉道司教德奧梵（利佩茨克及白俄羅斯都主教，1937年）" Id="" Type="0" />
+<SAINT Name="聖約納（薩瓦修道院修士，九世紀）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
