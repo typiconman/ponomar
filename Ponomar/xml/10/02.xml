@@ -27,4 +27,30 @@
 <SAINT Name="Блгв. кн. Анны Кашинской (1338)" Id="2393" Type="0"/>
 <SAINT Name="Прп. Кассиана Угличского (1504)" Id="1654" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣达玛里斯（雅典，1世纪）" Id="" Type="0" />
+<SAINT Name="殉道司祭基普里安及童贞殉道女犹斯提纳（尼科美底亚，304年）" Id="" Type="0" />
+<SAINT Name="圣勒格尔（奥吞主教，677年）" Id="" Type="0" />
+<SAINT Name="殉道者：达维德、君士坦丁（格鲁吉亚的阿尔格维体王子，740年）" Id="" Type="0" />
+<SAINT Name="蒙福者安德列（君士坦丁堡之圣愚，911年）" Id="" Type="0" />
+<SAINT Name="大殉道者德奥多若（庞都的哈尔迪亚的阿特兰地方，1180年）" Id="" Type="0" />
+<SAINT Name="圣女安纳（喀施因地方，1338年）" Id="" Type="0" />
+<SAINT Name="圣卡西安（乌格利奇修士，1504年）" Id="" Type="0" />
+<SAINT Name="蒙福者基普里安（苏兹达尔之圣愚，1622年）" Id="" Type="0" />
+<SAINT Name="新殉道者格奥尔吉（小亚西亚的费拉德尔菲亚，1794年）" Id="" Type="0" />
+<SAINT Name="圣德奥多若（俄国海军上将，1817年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖達瑪里斯（雅典，一世紀）" Id="" Type="0" />
+<SAINT Name="殉道司祭基普里安及童貞殉道女猶斯提納（尼科美底亞，304年）" Id="" Type="0" />
+<SAINT Name="聖勒格爾（奧吞主教，677年）" Id="" Type="0" />
+<SAINT Name="殉道者：達維德、君士坦丁（格魯吉亞的阿爾格維體王子，740年）" Id="" Type="0" />
+<SAINT Name="蒙福者安德列（君士坦丁堡之聖愚，911年）" Id="" Type="0" />
+<SAINT Name="大殉道者德奧多若（龐都的哈爾迪亞的阿特蘭地方，1180年）" Id="" Type="0" />
+<SAINT Name="聖女安納（喀施因地方，1338年）" Id="" Type="0" />
+<SAINT Name="聖卡西安（烏格利奇修士，1504年）" Id="" Type="0" />
+<SAINT Name="蒙福者基普里安（蘇茲達爾之聖愚，1622年）" Id="" Type="0" />
+<SAINT Name="新殉道者格奧爾吉（小亞西亞的費拉德爾菲亞，1794年）" Id="" Type="0" />
+<SAINT Name="聖德奧多若（俄國海軍上將，1817年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
