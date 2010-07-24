@@ -32,4 +32,26 @@
 <SAINT Name="Мч. Марина Тарсийского (IV)" Id="1767" Type="0"/>
 <SAINT Name="Прп. Иулиана Пустынника (IV)" Id="1768" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣使徒及著福音者路喀" Id="" Type="0" />
+<SAINT Name="殉道者玛里诺长老（阿纳匝尔布地方，4世纪）" Id="" Type="0" />
+<SAINT Name="圣犹利安（美索不达米亚之隐士，4世纪）及圣狄迪默“瞽者”" Id="" Type="0" />
+<SAINT Name="殉道司教穆纳松（塞浦路斯主教，1世纪）" Id="" Type="0" />
+<SAINT Name="圣约熙福（沃洛科拉穆斯克，1515年）" Id="" Type="0" />
+<SAINT Name="圣达维德（塞尔普霍夫修道院院长，1520年）" Id="" Type="0" />
+<SAINT Name="新殉道者伽弗里伊尔及基尔弥多尔（埃及，1522年）" Id="" Type="0" />
+<SAINT Name="圣裴特若（克廷耶人氏，塞尔维亚的黑山都主教，1830年）" Id="" Type="0" />
+<SAINT Name="圣西麦翁、圣德奥多若修士、圣女艾弗福若西尼（于伯罗奔尼撒半岛的大窟寻获显灵迹之圣母像者，9世纪）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖使徒及著福音者路喀" Id="" Type="0" />
+<SAINT Name="殉道者瑪里諾長老（阿納匝爾布地方，四世紀）" Id="" Type="0" />
+<SAINT Name="聖猶利安（美索不達米亞之隱士，四世紀）及聖狄迪默「瞽者」" Id="" Type="0" />
+<SAINT Name="殉道司教穆納松（塞浦路斯主教，一世紀）" Id="" Type="0" />
+<SAINT Name="聖約熙福（沃洛科拉穆斯克，1515年）" Id="" Type="0" />
+<SAINT Name="聖達維德（塞爾普霍夫修道院院長，1520年）" Id="" Type="0" />
+<SAINT Name="新殉道者伽弗里伊爾及基爾彌多爾（埃及，1522年）" Id="" Type="0" />
+<SAINT Name="聖裴特若（克廷耶人氏，塞爾維亞的黑山都主教，1830年）" Id="" Type="0" />
+<SAINT Name="聖西麥翁、聖德奧多若修士、聖女艾弗福若西尼（於伯羅奔尼撒半島的大窟尋獲顯靈蹟之聖母像者，九世紀）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

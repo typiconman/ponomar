@@ -34,4 +34,34 @@
 <SAINT Name="Свт. Иоанна, еп. Суздальского (1373)" Id="1746" Type="0"/>
 <SAINT Name="Иконы Божией Матери &quot;Спорительница хлебов&quot; (XIX)" Id="1750" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="殉道者路基安（大安提约希亚司祭，312年）" Id="" Type="0" />
+<SAINT Name="圣瓦尔西（埃德萨主教，宣信者，378年）" Id="" Type="0" />
+<SAINT Name="圣女特克拉（德意志的奥赫森福特修女院院长，790年）" Id="" Type="0" />
+<SAINT Name="新圣艾弗提弥（德撒洛尼基人，阿托斯圣山修士，889年）" Id="" Type="0" />
+<SAINT Name="殉道者撒尔维洛及殉道女瓦尔维亚（埃德萨，2世纪）" Id="" Type="0" />
+<SAINT Name="圣撒维诺（卡塔尼亚主教，760年）" Id="" Type="0" />
+<SAINT Name="殉道司祭路基安（基辅洞窟，1243年）" Id="" Type="0" />
+<SAINT Name="圣迪奥尼西（苏兹达尔总主教，1373年）" Id="" Type="0" />
+<SAINT Name="圣约安（苏兹达尔主教，1385年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭瓦莱里安（特利亚多维奇，1930年）" Id="" Type="0" />
+<SAINT Name="圣阿塔纳西（科弗若夫主教，宣信者，1962年）" Id="" Type="0" />
+<SAINT Name="纪念白俄罗斯之二十三位新殉道者" Id="" Type="0" />
+<SAINT Name="“恩赐五谷丰登之母”圣母像纪念日" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="殉道者路基安（大安提約希亞司祭，312年）" Id="" Type="0" />
+<SAINT Name="聖瓦爾西（埃德薩主教，宣信者，378年）" Id="" Type="0" />
+<SAINT Name="聖女特克拉（德意志的奧赫森福特修女院院長，790年）" Id="" Type="0" />
+<SAINT Name="新聖艾弗提彌（德撒洛尼基人，阿托斯聖山修士，889年）" Id="" Type="0" />
+<SAINT Name="殉道者撒爾維洛及殉道女瓦爾維亞（埃德薩，二世紀）" Id="" Type="0" />
+<SAINT Name="聖撒維諾（卡塔尼亞主教，760年）" Id="" Type="0" />
+<SAINT Name="殉道司祭路基安（基輔洞窟，1243年）" Id="" Type="0" />
+<SAINT Name="聖迪奧尼西（蘇茲達爾總主教，1373年）" Id="" Type="0" />
+<SAINT Name="聖約安（蘇茲達爾主教，1385年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭瓦萊里安（特利亞多維奇，1930年）" Id="" Type="0" />
+<SAINT Name="聖阿塔納西（科弗若夫主教，宣信者，1962年）" Id="" Type="0" />
+<SAINT Name="紀念白俄羅斯之二十三位新殉道者" Id="" Type="0" />
+<SAINT Name="「恩賜五穀豐登之母」聖母像紀念日" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
