@@ -1,4 +1,4 @@
-<DAY>
+﻿<DAY>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Afterfeast of the Transfiguration of the Lord" Id="" Type="0" />
 <SAINT Name="Saint Emelian the Confessor, Bishop of Cyzicus (+ c815-820)" Id="4397" Type="1" />
@@ -53,7 +53,6 @@
 <SAINT Name="“托尔伽”圣母像纪念日（1314年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<LANGUAGE Cmd="LS == 5">
 <SAINT Name="聖埃彌利安（宣信者，基茲科主教，820年）" Id="" Type="0" />
 <SAINT Name="聖彌榮（克里特主教，350年）" Id="" Type="0" />
 <SAINT Name="殉道者埃萊弗特里及萊奧尼迪、及多位偕同他們被屠戮之聖嬰孩（君士坦丁堡）" Id="" Type="0" />
