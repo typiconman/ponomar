@@ -1,7 +1,7 @@
 <DAY>
 <LANGUAGE>
 <SCRIPTURE Type="matins" Reading="Lk_1:39-49, 56" Pericope="4" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Phil_2:5-11" Pericope="240" Note="for the Theotokos"/>
+<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240" Note="for the Theotokos"/>
 <SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
