@@ -7,12 +7,12 @@
 <SCRIPTURE Type="gospel" Reading="Jn_17:1-13" Pericope="56" Note="for the Holy Fathers"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Commemoration of the Holy Fathers of the Six Ecumenical Councils" Id="" Type="4" />
+<SAINT Name="Commemoration of the Holy Fathers of the Six Ecumenical Councils" Id="9969" Type="4" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
-<SAINT Name="Dimanche des saints Pères des six conciles oecuméniques" Id="" Type="4" />
+<SAINT Name="Dimanche des saints Pères des six conciles oecuméniques" Id="9969" Type="4" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Память св. отцев шести вселенских соборов" Id="" Type="4" />
+<SAINT Name="Память св. отцев шести вселенских соборов" Id="9969" Type="4" />
 </LANGUAGE>
 </DAY>
