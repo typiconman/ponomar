@@ -19,4 +19,18 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Введение во храм Пресвятой Владычицы нашей Богородицы и Приснодевы Марии" Id="2575" Type="7"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="至圣诞神女进殿节" Id="" Type="0" />
+<SAINT Name="圣雅若颇尔克•裴特若（沃尔希尼亚的弗拉迪弥尔王子，1086年）" Id="" Type="0" />
+<SAINT Name="新殉道者：亚历山大司祭（纽约，1937年）、及阿莱克西司祭（特维尔，1937年）" Id="" Type="0" />
+<SAINT Name="圣科伦巴诺（博彼奥人氏，高卢的路克塞邬伊尔修道院之建立者，615年）" Id="" Type="0" />
+<SAINT Name="“永恒之希望”圣母像纪念日" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="至聖誕神女進殿節" Id="" Type="0" />
+<SAINT Name="聖雅若頗爾克•裴特若（沃爾希尼亞的弗拉迪彌爾王子，1086年）" Id="" Type="0" />
+<SAINT Name="新殉道者：亞歷山大司祭（紐約，1937年）、及阿萊克西司祭（特維爾，1937年）" Id="" Type="0" />
+<SAINT Name="聖科倫巴諾（博彼奧人氏，高盧的路克塞鄔伊爾修道院之建立者，615年）" Id="" Type="0" />
+<SAINT Name="「永恆之希望」聖母像紀念日" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
