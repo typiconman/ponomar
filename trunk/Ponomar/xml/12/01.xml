@@ -18,4 +18,28 @@
 <SAINT Name="Прав. Филарета Милостивого (792)" Id="3048" Type="0"/>
 <SAINT Name="Мч. Анании Персянина" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="先知纳翁（主降生前7世纪）" Id="" Type="0" />
+<SAINT Name="义人斐拉瑞特“仁慈者”（小亚西亚的阿穆尼亚，792年）" Id="" Type="0" />
+<SAINT Name="圣奥斯特瑞默伊奈（克勒尔蒙特首位主教，奥弗涅地方之使徒，3世纪）" Id="" Type="0" />
+<SAINT Name="殉道者阿纳尼雅（波斯）" Id="" Type="0" />
+<SAINT Name="圣埃利吉（荷兰的诺雍主教，660年）" Id="" Type="0" />
+<SAINT Name="圣德奥克利提（斯巴达主教，870年）" Id="" Type="0" />
+<SAINT Name="圣奥尼息默（艾弗所总主教）" Id="" Type="0" />
+<SAINT Name="圣阿纳尼雅及圣索洛霍诺（艾弗所之两位总主教）" Id="" Type="0" />
+<SAINT Name="新安托尼（卑斯尼亚的基奥斯修士，865年）" Id="" Type="0" />
+<SAINT Name="圣博托尔弗（英格兰的波士顿地方之修道院院长及宣信者，680年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="先知納翁（主降生前七世紀）" Id="" Type="0" />
+<SAINT Name="義人斐拉瑞特「仁慈者」（小亞西亞的阿穆尼亞，792年）" Id="" Type="0" />
+<SAINT Name="聖奧斯特瑞默伊奈（克勒爾蒙特首位主教，奧弗涅地方之使徒，三世紀）" Id="" Type="0" />
+<SAINT Name="殉道者阿納尼雅（波斯）" Id="" Type="0" />
+<SAINT Name="聖埃利吉（荷蘭的諾雍主教，660年）" Id="" Type="0" />
+<SAINT Name="聖德奧克利提（斯巴達主教，870年）" Id="" Type="0" />
+<SAINT Name="聖奧尼息默（艾弗所總主教）" Id="" Type="0" />
+<SAINT Name="聖阿納尼雅及聖索洛霍諾（艾弗所之兩位總主教）" Id="" Type="0" />
+<SAINT Name="新安托尼（卑斯尼亞的基奧斯修士，865年）" Id="" Type="0" />
+<SAINT Name="聖博托爾弗（英格蘭的波士頓地方之修道院院長及宣信者，680年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

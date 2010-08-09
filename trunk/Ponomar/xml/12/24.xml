@@ -54,4 +54,20 @@
 <SAINT Name="Сщмч. Сергия пресвитера (1942)" Id="4909" Type="0"/>
 <SAINT Name="Прп. Николая монаха (IX)" Id="3173" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="主降生节前日" Id="9006" Type="1" />
+<SAINT Name="殉道修女艾弗格尼亚、及一同就义者：其父斐利普、普若托、雅金托；殉道女：瓦西拉、克劳迪亚（262年）" Id="" Type="0" />
+<SAINT Name="圣安提奥赫（巴勒斯坦修士，635年）及圣维提弥奥诺（埃及的斯凯特修士）" Id="" Type="0" />
+<SAINT Name="圣阿弗若迪西（巴勒斯坦修士，6世纪）" Id="" Type="0" />
+<SAINT Name="圣尼科拉（保加利亚修士，9世纪）" Id="" Type="0" />
+<SAINT Name="新殉道者阿赫麦德（君士坦丁堡之书法家及建筑师，1682年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="主降生節前日" Id="9006" Type="1" />
+<SAINT Name="殉道修女艾弗格尼亞、及一同就義者：其父斐利普、普若托、雅金托；殉道女：瓦西拉、克勞迪亞（262年）" Id="" Type="0" />
+<SAINT Name="聖安提奧赫（巴勒斯坦修士，635年）及聖維提彌奧諾（埃及的斯凱特修士）" Id="" Type="0" />
+<SAINT Name="聖阿弗若迪西（巴勒斯坦修士，六世紀）" Id="" Type="0" />
+<SAINT Name="聖尼科拉（保加利亞修士，九世紀）" Id="" Type="0" />
+<SAINT Name="新殉道者阿赫麥德（君士坦丁堡之書法家及建築師，1682年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

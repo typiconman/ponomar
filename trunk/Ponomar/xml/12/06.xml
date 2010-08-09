@@ -25,4 +25,20 @@
 <LANGUAGE Cmd="LS == 3">
 <SAINT Name="Святителя Николая, архиепископа Мир Ликийских чудотворца (ок. 345)" Id="1635" Type="5"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣尼科拉显行灵迹者（利基亚的弥拉城总主教，345年）" Id="" Type="0" />
+<SAINT Name="圣尼科拉（帕塔拉主教）" Id="" Type="0" />
+<SAINT Name="圣德奥斐洛（安提约希亚主教，181年）" Id="" Type="0" />
+<SAINT Name="圣阿弗拉弥（卑斯尼亚的克拉特亚主教，6世纪）" Id="" Type="0" />
+<SAINT Name="蒙福者玛克息默（基辅都主教，1305年）" Id="" Type="0" />
+<SAINT Name="新殉道者尼科拉（小亚西亚的卡拉玛诺地方，1657年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖尼科拉顯行靈蹟者（利基亞的彌拉城總主教，345年）" Id="" Type="0" />
+<SAINT Name="聖尼科拉（帕塔拉主教）" Id="" Type="0" />
+<SAINT Name="聖德奧斐洛（安提約希亞主教，181年）" Id="" Type="0" />
+<SAINT Name="聖阿弗拉彌（卑斯尼亞的克拉特亞主教，六世紀）" Id="" Type="0" />
+<SAINT Name="蒙福者瑪克息默（基輔都主教，1305年）" Id="" Type="0" />
+<SAINT Name="新殉道者尼科拉（小亞西亞的卡拉瑪諾地方，1657年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

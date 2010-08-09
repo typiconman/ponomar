@@ -6,7 +6,7 @@
 <SCRIPTURE Type="gospel" Reading="Mt_2:13-23" Pericope="4" Note="for the feast"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Second Day of the Feast of the Nativity of Our Lord. Synaxis of the Most-Holy Thetokos" Id="3177" Type="3" />
+<SAINT Name="Second Day of the Feast of the Nativity of Our Lord. Synaxis of the Most-Holy Theotokos" Id="3177" Type="3" />
 <SAINT Name="Hieromartyr Euthymius, Bishop of Sardis (+ c. 840)" Id="3181" Type="1" />
 <SAINT Name="Venerable Evaristus of the Studion Monastery (9th C)" Id="3183" Type="0" />
 <SAINT Name="Venerable Constantine of Synada (8th C)" Id="3182" Type="0" />
@@ -37,5 +37,29 @@
 <SAINT Name="Прп. Евареста (IX)" Id="3183" Type="0"/>
 <SAINT Name="Прп. Никодима Тисманского, Румынского (1406)" Id="" Type="0"/>
 <SAINT Name="Виленской-Остробрамской, именуемых &quot;Трех радостей&quot;, &quot;Киккская-Милостивая&quot;, и Барловской &quot;Блаженное Чрево&quot; (1392) икон Божией Матери" Id="2530" Type="0"/>
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="主降生节第二日" Id="" Type="1"/>
+<SAINT Name="纪念至圣诞神女" Id="3177" Type="3"/>
+<SAINT Name="圣阿尔赫拉（美索不达米亚的卡斯哈拉主教，3世纪）" Id="" Type="0" />
+<SAINT Name="圣兹农（巴勒斯坦的麦邬玛主教，4世纪）" Id="" Type="0" />
+<SAINT Name="圣君士坦丁（辛纳达地方之修士，9世纪）" Id="" Type="0" />
+<SAINT Name="圣埃瓦里斯特（斯督迪修道院，825年）" Id="" Type="0" />
+<SAINT Name="殉道司教艾弗提弥（撒尔迪斯主教，840年）" Id="" Type="0" />
+<SAINT Name="圣尼科迪默（罗马尼亚的提斯玛纳，1406年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭君士坦提（俄罗斯人，就义于君士坦丁堡，1743年）" Id="" Type="0" />
+<SAINT Name="新殉道者伊撒克“第二”（奥普提纳精舍之修士大司祭，1937年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="主降生節第二日" Id="" Type="1"/>
+<SAINT Name="紀念至聖誕神女" Id="3177" Type="3"/>
+<SAINT Name="聖阿爾赫拉（美索不達米亞的卡斯哈拉主教，三世紀）" Id="" Type="0" />
+<SAINT Name="聖茲農（巴勒斯坦的麥鄔瑪主教，四世紀）" Id="" Type="0" />
+<SAINT Name="聖君士坦丁（辛納達地方之修士，九世紀）" Id="" Type="0" />
+<SAINT Name="聖埃瓦里斯特（斯督迪修道院，825年）" Id="" Type="0" />
+<SAINT Name="殉道司教艾弗提彌（撒爾迪斯主教，840年）" Id="" Type="0" />
+<SAINT Name="聖尼科迪默（羅馬尼亞的提斯瑪納，1406年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭君士坦提（俄羅斯人，就義於君士坦丁堡，1743年）" Id="" Type="0" />
+<SAINT Name="新殉道者伊撒克「第二」（奧普提納精舍之修士大司祭，1937年）" Id="" Type="0" />
 </LANGUAGE>
 </DAY>
