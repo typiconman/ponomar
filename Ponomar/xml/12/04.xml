@@ -23,4 +23,18 @@
 <SAINT Name="Прп. Иоанна, еп. Поливотского (VIII)" Id="" Type="0"/>
 <SAINT Name="Свт. Геннадия, архиеп. Новгородского (1504)" Id="471" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="大殉道女瓦尔瓦拉及犹利亚纳（叙利亚的伊利亚颇利城，306年）" Id="" Type="0" />
+<SAINT Name="圣约安•达玛斯基诺（大马士革人，760年）" Id="" Type="0" />
+<SAINT Name="圣约安（颇利博顿主教，716年）" Id="" Type="0" />
+<SAINT Name="圣艮纳迪（诺夫哥罗德总主教，1504年）" Id="" Type="0" />
+<SAINT Name="新殉道司教塞拉芬（希腊的法纳尔主教，1601年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="大殉道女瓦爾瓦拉及猶利亞納（敘利亞的伊利亞頗利城，306年）" Id="" Type="0" />
+<SAINT Name="聖約安•達瑪斯基諾（大馬士革人，760年）" Id="" Type="0" />
+<SAINT Name="聖約安（頗利博頓主教，716年）" Id="" Type="0" />
+<SAINT Name="聖艮納迪（諾夫哥羅德總主教，1504年）" Id="" Type="0" />
+<SAINT Name="新殉道司教塞拉芬（希臘的法納爾主教，1601年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

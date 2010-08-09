@@ -20,4 +20,18 @@
 <SAINT Name="Прп. Кирилла Челмогорского (1368)" Id="1234" Type="0"/>
 <SAINT Name="Мц. Анфисы в Риме (V)" Id="2404" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="70使徒之：索斯特尼、阿颇罗、凯法、提希科、埃帕弗若迪特、凯萨尔、奥尼西佛若" Id="" Type="0" />
+<SAINT Name="纪念在非洲被阿里乌派异端者所杀害的362名殉道者、及罗马的殉道女安图萨（5世纪）" Id="" Type="0" />
+<SAINT Name="圣帕塔彼（底比斯，7世纪）" Id="" Type="0" />
+<SAINT Name="圣索弗若尼（塞浦路斯主教，8世纪）" Id="" Type="0" />
+<SAINT Name="圣基里尔（赫尔玛山修道院院长，1367年）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="七十使徒之：索斯特尼、阿頗羅、凱法、提希科、埃帕弗若迪特、凱薩爾、奧尼西佛若" Id="" Type="0" />
+<SAINT Name="紀念在非洲被阿里烏派異端者所殺害的三百六十二名殉道者、及羅馬的殉道女安圖薩（五世紀）" Id="" Type="0" />
+<SAINT Name="聖帕塔彼（底比斯，七世紀）" Id="" Type="0" />
+<SAINT Name="聖索弗若尼（塞浦路斯主教，八世紀）" Id="" Type="0" />
+<SAINT Name="聖基里爾（赫爾瑪山修道院院長，1367年）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

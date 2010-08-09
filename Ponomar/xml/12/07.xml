@@ -46,4 +46,30 @@
 <SAINT Name="Прп. Павла Послушливого" Id="3080" Type="0"/>
 <SAINT Name="Селигерской (Владимирской) иконы Божией Матери" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="圣安弗若西（米兰主教，397年）" Id="" Type="0" />
+<SAINT Name="殉道者阿提诺多若（美索不达米亚，304年）" Id="" Type="0" />
+<SAINT Name="圣约安（圣萨瓦修道院之持斋者）" Id="" Type="0" />
+<SAINT Name="圣女瓦萨（耶路撒冷之修女院院长，5世纪）" Id="" Type="0" />
+<SAINT Name="圣约安（基辅洞窟之持斋者，12世纪）" Id="" Type="0" />
+<SAINT Name="圣女斐罗德阿（图尔诺沃，1060年，其圣髑奉安于罗马尼亚的阿尔格斯）" Id="" Type="0" />
+<SAINT Name="圣帕弗罗“听命者”" Id="" Type="0" />
+<SAINT Name="圣格里高利“缄默者”（塞尔维亚人，阿托斯圣山的格里高利邬修道院之建立者，1405年）" Id="" Type="0" />
+<SAINT Name="圣尼尔（斯托尔本岛之修士，1554年）" Id="" Type="0" />
+<SAINT Name="圣安托尼（诺夫哥罗德的西雅修道院院长，1556年）" Id="" Type="0" />
+<SAINT Name="圣伊格纳提（弗拉赫尔奈附近之修士）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="聖安弗若西（米蘭主教，397年）" Id="" Type="0" />
+<SAINT Name="殉道者阿提諾多若（美索不達米亞，304年）" Id="" Type="0" />
+<SAINT Name="聖約安（聖薩瓦修道院之持齋者）" Id="" Type="0" />
+<SAINT Name="聖女瓦薩（耶路撒冷之修女院院長，五世紀）" Id="" Type="0" />
+<SAINT Name="聖約安（基輔洞窟之持齋者，十二世紀）" Id="" Type="0" />
+<SAINT Name="聖女斐羅德阿（圖爾諾沃，1060年，其聖髑奉安於羅馬尼亞的阿爾格斯）" Id="" Type="0" />
+<SAINT Name="聖帕弗羅「聽命者」" Id="" Type="0" />
+<SAINT Name="聖格里高利「緘默者」（塞爾維亞人，阿托斯聖山的格里高利鄔修道院之建立者，1405年）" Id="" Type="0" />
+<SAINT Name="聖尼爾（斯托爾本島之修士，1554年）" Id="" Type="0" />
+<SAINT Name="聖安托尼（諾夫哥羅德的西雅修道院院長，1556年）" Id="" Type="0" />
+<SAINT Name="聖伊格納提（弗拉赫爾奈附近之修士）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

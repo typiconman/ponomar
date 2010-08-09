@@ -38,4 +38,34 @@
 <SAINT Name="Прп. Феофила Омучского (XV)" Id="2267" Type="0"/>
 <SAINT Name="Прп. Лаврентия Черниговского (1950)" Id="6694" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="主降生庆期" Id="9011" Type="0"/>
+<SAINT Name="纪念在伯利恒被暴君伊若德所屠杀的一万四千名无辜圣婴孩" Id="3193" Type="1"/>
+<SAINT Name="圣玛尔凯洛（不眠者修道院院长，485年）" Id="3194" Type="1"/>
+<SAINT Name="圣特若斐默（阿尔勒城首位主教，3世纪）" Id="" Type="0" />
+<SAINT Name="圣文雅敏（埃及的尼特里亚修士，392年）" Id="" Type="0" />
+<SAINT Name="圣阿提诺多若（大圣帕霍弥之弟子，4世纪）" Id="" Type="0" />
+<SAINT Name="圣塔德（斯督迪修道院之宣信者，818年）" Id="" Type="0" />
+<SAINT Name="圣格奥尔吉（尼科美底亚主教，9世纪）" Id="" Type="0" />
+<SAINT Name="圣玛尔克（基辅洞窟之掘墓者，11世纪）" Id="" Type="0" />
+<SAINT Name="圣德奥斐洛及圣约安（基辅洞窟，11-12世纪）" Id="" Type="0" />
+<SAINT Name="圣德奥斐洛（路伽及奥穆奇地方，1412年）" Id="" Type="0" />
+<SAINT Name="圣瓦西利斯科（西伯利亚之静修者，1824年）" Id="" Type="0" />
+<SAINT Name="纪念所有因饥荒、干旱、刀兵、寒冷、及一切天灾人祸而丧生的正教信徒" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="主降生慶期" Id="9011" Type="0"/>
+<SAINT Name="紀念在伯利恆被暴君伊若德所屠殺的一萬四千名無辜聖嬰孩" Id="3193" Type="1"/>
+<SAINT Name="聖瑪爾凱洛（不眠者修道院院長，485年）" Id="3194" Type="1"/>
+<SAINT Name="聖特若斐默（阿爾勒城首位主教，三世紀）" Id="" Type="0" />
+<SAINT Name="聖文雅敏（埃及的尼特里亞修士，392年）" Id="" Type="0" />
+<SAINT Name="聖阿提諾多若（大聖帕霍彌之弟子，四世紀）" Id="" Type="0" />
+<SAINT Name="聖塔德（斯督迪修道院之宣信者，818年）" Id="" Type="0" />
+<SAINT Name="聖格奧爾吉（尼科美底亞主教，九世紀）" Id="" Type="0" />
+<SAINT Name="聖瑪爾克（基輔洞窟之掘墓者，十一世紀）" Id="" Type="0" />
+<SAINT Name="聖德奧斐洛及聖約安（基輔洞窟，十一至十二世紀）" Id="" Type="0" />
+<SAINT Name="聖德奧斐洛（路伽及奧穆奇地方，1412年）" Id="" Type="0" />
+<SAINT Name="聖瓦西利斯科（西伯利亞之靜修者，1824年）" Id="" Type="0" />
+<SAINT Name="紀念所有因饑荒、乾旱、刀兵、寒冷、及一切天災人禍而喪生的正教信徒" Id="" Type="0" />
+</LANGUAGE>
 </DAY>

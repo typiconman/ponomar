@@ -36,4 +36,30 @@
 <SAINT Name="Мч. Петра (1938)" Id="" Type="0"/>
 <SAINT Name="Свт. Петра Могилы, митрополита Киевского (1646)" Id="" Type="0"/>
 </LANGUAGE>
+<LANGUAGE Cmd="LS == 5">
+<SAINT Name="主降生庆期圆满日" Id="9012" Type="3"/>
+<SAINT Name="圣女麦拉尼亚“幼者”（罗马之修女，439年）" Id="3205" Type="1"/>
+<SAINT Name="圣阿尼西（德撒洛尼基主教，406年）" Id="" Type="0" />
+<SAINT Name="圣革拉西（巴勒斯坦修士）" Id="" Type="0" />
+<SAINT Name="圣女萨维亚纳（撒穆茨赫修女院院长，11世纪）" Id="" Type="0" />
+<SAINT Name="圣德奥斐拉克特（奥赫里德，1126年）" Id="" Type="0" />
+<SAINT Name="圣裴特若•默吉拉（基辅都主教，1646年）" Id="" Type="0" />
+<SAINT Name="殉道者埃尔弥斯（罗马尼亚）" Id="" Type="0" />
+<SAINT Name="圣宣信者多西德奥（萨格勒布都主教，1941年）" Id="" Type="0" />
+<SAINT Name="纪念尼科美底亚的十位童贞殉道女" Id="" Type="0" />
+<SAINT Name="殉道者佐提科（君士坦丁堡，抚育孤儿者，4世纪）（为规避主降生节庆期圆满日，提前于昨日纪念，但在希腊教会，则保留于今日纪念）" Id="" Type="0" />
+</LANGUAGE>
+<LANGUAGE Cmd="LS == 6">
+<SAINT Name="主降生慶期圓滿日" Id="9012" Type="3"/>
+<SAINT Name="聖女麥拉尼亞「幼者」（羅馬之修女，439年）" Id="3205" Type="1"/>
+<SAINT Name="聖阿尼西（德撒洛尼基主教，406年）" Id="" Type="0" />
+<SAINT Name="聖革拉西（巴勒斯坦修士）" Id="" Type="0" />
+<SAINT Name="聖女薩維亞納（撒穆茨赫修女院院長，十一世紀）" Id="" Type="0" />
+<SAINT Name="聖德奧斐拉克特（奧赫里德，1126年）" Id="" Type="0" />
+<SAINT Name="聖裴特若•默吉拉（基輔都主教，1646年）" Id="" Type="0" />
+<SAINT Name="殉道者埃爾彌斯（羅馬尼亞）" Id="" Type="0" />
+<SAINT Name="聖宣信者多西德奧（薩格勒布都主教，1941年）" Id="" Type="0" />
+<SAINT Name="紀念尼科美底亞的十位童貞殉道女" Id="" Type="0" />
+<SAINT Name="殉道者佐提科（君士坦丁堡，撫育孤兒者，四世紀）（為規避主降生節慶期圓滿日，提前於昨日紀念，但在希臘教會，則保留於今日紀念）" Id="" Type="0" />
+</LANGUAGE>
 </DAY>
