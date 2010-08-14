@@ -36,7 +36,8 @@
 <SAINT Name="Мчч. Кантидия, Кантидиана и Сивела, в Египте" Id="" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="殉道者艾弗西格尼（安提约希亚，362年）" Id="" Type="0" />
+<SAINT Name="主易圣容节前日" Id="" Type="2" />
+<SAINT Name="殉道者艾弗西格尼（安提约希亚，362年）" Id="4380" Type="1" />
 <SAINT Name="殉道司教法维安（250年）及安特若（257年）（均为罗马教宗）" Id="" Type="0" />
 <SAINT Name="殉道者堪提迪、堪提迪安、西维利（埃及）" Id="" Type="0" />
 <SAINT Name="殉道者庞提（法兰西的基玫拉地方，257年）" Id="" Type="0" />
@@ -47,7 +48,8 @@
 <SAINT Name="圣奥斯瓦尔德（殉道国君，642年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="殉道者艾弗西格尼（安提約希亞，362年）" Id="" Type="0" />
+<SAINT Name="主易聖容節前日" Id="" Type="2" />
+<SAINT Name="殉道者艾弗西格尼（安提約希亞，362年）" Id="4380" Type="1" />
 <SAINT Name="殉道司教法維安（250年）及安特若（257年）（均為羅馬教宗）" Id="" Type="0" />
 <SAINT Name="殉道者堪提迪、堪提迪安、西維利（埃及）" Id="" Type="0" />
 <SAINT Name="殉道者龐提（法蘭西的基玫拉地方，257年）" Id="" Type="0" />

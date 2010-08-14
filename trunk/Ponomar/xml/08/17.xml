@@ -37,7 +37,8 @@
 <SAINT Name="Свенской (Печерской) икон Божией Матери (1288)" Id="2960" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="殉道者弥荣（基兹科地方，250年）" Id="" Type="0" />
+<SAINT Name="圣母安息节庆期" Id="" Type="0" />
+<SAINT Name="殉道者弥荣（基兹科地方，250年）" Id="4455" Type="1" />
 <SAINT Name="殉道者帕特若克洛（高卢，特鲁瓦，3世纪）" Id="" Type="0" />
 <SAINT Name="殉道者：提尔索、莱弗基、科若纳特、及其余一同就义者（卑斯尼亚的恺撒里亚，250年）" Id="" Type="0" />
 <SAINT Name="殉道者帕弗罗及其姊妹犹利亚纳（叙利亚，273年）" Id="" Type="0" />
@@ -53,7 +54,8 @@
 <SAINT Name="“阿尔玛提亚”圣母像" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="殉道者彌榮（基茲科地方，250年）" Id="" Type="0" />
+<SAINT Name="聖母安息節慶期" Id="" Type="0" />
+<SAINT Name="殉道者彌榮（基茲科地方，250年）" Id="4455" Type="1" />
 <SAINT Name="殉道者帕特若克洛（高盧，特魯瓦，三世紀）" Id="" Type="0" />
 <SAINT Name="殉道者：提爾索、萊弗基、科若納特、及其餘一同就義者（卑斯尼亞的愷撒里亞，250年）" Id="" Type="0" />
 <SAINT Name="殉道者帕弗羅及其姊妹猶利亞納（敘利亞，273年）" Id="" Type="0" />

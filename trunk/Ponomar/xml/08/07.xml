@@ -49,7 +49,8 @@
 <SAINT Name="Прмц. Потамии чудотворицы" Id="4394" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="殉道者多麦提及其两位弟子（波斯，363年）" Id="" Type="0" />
+<SAINT Name="主易圣容节庆期" Id="" Type="0" />
+<SAINT Name="殉道者多麦提及其两位弟子（波斯，363年）" Id="4387" Type="1" />
 <SAINT Name="殉道者：士兵玛利诺和议员阿斯特里（巴勒斯坦的恺撒里亚，260年）" Id="" Type="0" />
 <SAINT Name="圣霍尔（特维德，390年）" Id="" Type="0" />
 <SAINT Name="童贞圣女颇塔弥亚（亚历山大里亚）" Id="" Type="0" />
@@ -68,7 +69,8 @@
 <SAINT Name="圣尼堪诺尔（卡利斯特拉托山之显行灵迹者，1519年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="殉道者多麥提及其兩位弟子（波斯，363年）" Id="" Type="0" />
+<SAINT Name="主易聖容節慶期" Id="" Type="0" />
+<SAINT Name="殉道者多麥提及其兩位弟子（波斯，363年）" Id="4387" Type="1" />
 <SAINT Name="殉道者：士兵瑪利諾和議員阿斯特里（巴勒斯坦的愷撒里亞，260年）" Id="" Type="0" />
 <SAINT Name="聖霍爾（特維德，390年）" Id="" Type="0" />
 <SAINT Name="童貞聖女頗塔彌亞（亞歷山大里亞）" Id="" Type="0" />
