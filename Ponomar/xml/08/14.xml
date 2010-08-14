@@ -31,7 +31,8 @@
 <SAINT Name="Икон Божией Матери: именуемой &quot;Беседная&quot; (1383) и Нарвской (1558)" Id="4441" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="弥亥亚先知（主降生前8世纪）" Id="" Type="0" />
+<SAINT Name="至圣诞神女安息节前日" Id="" Type="2" />
+<SAINT Name="弥亥亚先知（主降生前8世纪）" Id="4437" Type="2" />
 <SAINT Name="敬迁基辅洞窟之圣德奥多西之圣髑纪念日（1091年）" Id="" Type="0" />
 <SAINT Name="殉道司教玛尔凯洛（阿帕麦亚主教，389年）" Id="" Type="0" />
 <SAINT Name="殉道者邬尔西基（尼科美底亚）" Id="" Type="0" />
@@ -42,7 +43,8 @@
 <SAINT Name="圣法堪南（罗斯•卡尔伯里修道院院长，爱尔兰的科克城，600年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="彌亥亞先知（主降生前八世紀）" Id="" Type="0" />
+<SAINT Name="至聖誕神女安息節前日" Id="" Type="2" />
+<SAINT Name="彌亥亞先知（主降生前八世紀）" Id="4437" Type="2" />
 <SAINT Name="敬遷基輔洞窟之聖德奧多西之聖髑紀念日（1091年）" Id="" Type="0" />
 <SAINT Name="殉道司教瑪爾凱洛（阿帕麥亞主教，389年）" Id="" Type="0" />
 <SAINT Name="殉道者鄔爾西基（尼科美底亞）" Id="" Type="0" />
