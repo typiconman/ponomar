@@ -29,7 +29,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="圣前驱约安诞辰庆期" Id="" Type="0" />
-<SAINT Name="童贞殉道女斐弗若尼亚（304年）" Id="" Type="0" />
+<SAINT Name="童贞殉道女斐弗若尼亚（304年）" Id="9392" Type="1" />
 <SAINT Name="殉道者伽利基亚诺（埃及贵族，362年）" Id="" Type="0" />
 <SAINT Name="圣西麦翁（西奈山，5世纪）" Id="" Type="0" />
 <SAINT Name="圣阿德尔博特（总辅祭，荷兰，740年）" Id="" Type="0" />
@@ -43,7 +43,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="聖前驅約安誕辰慶期" Id="" Type="0" />
-<SAINT Name="童貞殉道女斐弗若尼亞（304年）" Id="" Type="0" />
+<SAINT Name="童貞殉道女斐弗若尼亞（304年）" Id="9392" Type="1" />
 <SAINT Name="殉道者伽利基亞諾（埃及貴族，362年）" Id="" Type="0" />
 <SAINT Name="聖西麥翁（西奈山，5世紀）" Id="" Type="0" />
 <SAINT Name="聖阿德爾博特（總輔祭，荷蘭，740年）" Id="" Type="0" />

@@ -29,7 +29,7 @@
 <SAINT Name="Прп. Александра, игумена Куштского (1439)" Id="1270" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="圣基里尔（亚历山大里亚总主教，444年）" Id="" Type="0" />
+<SAINT Name="圣基里尔（亚历山大里亚总主教，444年）" Id="1221" Type="2" />
 <SAINT Name="五位殉道修女：特克拉、玛利盎尼、玛尔塔、玛利亚、恩玛塔（被斩首于波斯，346年）" Id="" Type="0" />
 <SAINT Name="圣科伦巴（爱奥那岛，597年）" Id="" Type="0" />
 <SAINT Name="圣拜特尼（提瑞地方，600年）" Id="" Type="0" />
@@ -42,7 +42,7 @@
 <SAINT Name="纪念希俄斯岛三位童贞殉道女" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="聖基里爾（亞歷山大里亞總主教，444年）" Id="" Type="0" />
+<SAINT Name="聖基里爾（亞歷山大里亞總主教，444年）" Id="1221" Type="2" />
 <SAINT Name="五位殉道修女：特克拉、瑪利盎尼、瑪爾塔、瑪利亞、恩瑪塔（被斬首於波斯，346年）" Id="" Type="0" />
 <SAINT Name="聖科倫巴（愛奧那島，597年）" Id="" Type="0" />
 <SAINT Name="聖拜特尼（提瑞地方，600年）" Id="" Type="0" />
