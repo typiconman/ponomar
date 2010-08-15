@@ -33,7 +33,7 @@
 <SAINT Name="Прп. Серапиона Кожеезерского (1611)" Id="1961" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="圣桑普松（君士坦丁堡之好客者，530年）" Id="" Type="0" />
+<SAINT Name="圣桑普松（君士坦丁堡之好客者，530年）" Id="1919" Type="1" />
 <SAINT Name="圣女约安纳（携香液往诣主墓者，1世纪）" Id="" Type="0" />
 <SAINT Name="圣塞维若（意大利的因特若克瑞亚城之司祭，6世纪）" Id="" Type="0" />
 <SAINT Name="殉道者阿奈克特（卡帕多西亚的恺撒里亚，304年）" Id="" Type="0" />
@@ -46,7 +46,7 @@
 <SAINT Name="殉道司祭彼埃里（安提约希亚之司祭）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="聖桑普松（君士坦丁堡之好客者，530年）" Id="" Type="0" />
+<SAINT Name="聖桑普松（君士坦丁堡之好客者，530年）" Id="1919" Type="1" />
 <SAINT Name="聖女約安納（攜香液往詣主墓者，一世紀）" Id="" Type="0" />
 <SAINT Name="聖塞維若（意大利的因特若克瑞亞城之司祭，六世紀）" Id="" Type="0" />
 <SAINT Name="殉道者阿奈克特（卡帕多西亞的愷撒里亞，304年）" Id="" Type="0" />

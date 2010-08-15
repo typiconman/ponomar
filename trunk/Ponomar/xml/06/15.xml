@@ -58,7 +58,7 @@
 <SAINT Name="Прп. Дулы страстотерпца, Египетского" Id="1313" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="先知阿摩斯（主降生前8世纪）" Id="" Type="0" />
+<SAINT Name="先知阿摩斯（主降生前8世纪）" Id="149" Type="1" />
 <SAINT Name="圣凯德若诺（亚历山大里亚牧首，107年）" Id="" Type="0" />
 <SAINT Name="殉道者伊西赫及另外两位偕同其就义者（默西亚的多若斯托伦之士兵，302年）" Id="" Type="0" />
 <SAINT Name="殉道者维托、默德斯托、殉道女克瑞森提亚（路卡尼亚地方，303年）" Id="" Type="0" />
@@ -76,14 +76,14 @@
 <SAINT Name="圣格里高利及圣喀西安（均为沃洛格达的阿弗奈支修道院院长，1392年）" Id="" Type="0" />
 <SAINT Name="圣艾弗冷（塞尔维亚牧首，1400年）" Id="" Type="0" />
 <SAINT Name="圣西麦翁（诺夫哥罗德总主教，1421年）" Id="" Type="0" />
-<SAINT Name="圣约纳（莫斯科都主教，1461年）" Id="" Type="0" />
+<SAINT Name="圣约纳（莫斯科都主教，1461年）" Id="1042" Type="4" />
 <SAINT Name="纪念全体塞尔维亚殉道圣徒" Id="" Type="0" />
 <SAINT Name="圣使徒佛尔图纳特、阿亥科、斯特梵" Id="" Type="0" />
 <SAINT Name="圣约熙福（伯利恒之修士）" Id="" Type="0" />
 <SAINT Name="“玛利亚尼喀”圣母像纪念日" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="先知阿摩斯（主降生前八世紀）" Id="" Type="0" />
+<SAINT Name="先知阿摩斯（主降生前八世紀）" Id="149" Type="1" />
 <SAINT Name="聖凱德若諾（亞歷山大里亞牧首，107年）" Id="" Type="0" />
 <SAINT Name="殉道者伊西赫及另外兩位偕同其就義者（默西亞的多若斯托倫之士兵，302年）" Id="" Type="0" />
 <SAINT Name="殉道者維托、默德斯托、殉道女克瑞森提亞（路卡尼亞地方，303年）" Id="" Type="0" />
@@ -101,7 +101,7 @@
 <SAINT Name="聖格里高利及聖喀西安（均為沃洛格達的阿弗奈支修道院院長，1392年）" Id="" Type="0" />
 <SAINT Name="聖艾弗冷（塞爾維亞牧首，1400年）" Id="" Type="0" />
 <SAINT Name="聖西麥翁（諾夫哥羅德總主教，1421年）" Id="" Type="0" />
-<SAINT Name="聖約納（莫斯科都主教，1461年）" Id="" Type="0" />
+<SAINT Name="聖約納（莫斯科都主教，1461年）" Id="1042" Type="4" />
 <SAINT Name="紀念全體塞爾維亞殉道聖徒" Id="" Type="0" />
 <SAINT Name="聖使徒佛爾圖納特、阿亥科、斯特梵" Id="" Type="0" />
 <SAINT Name="聖約熙福（伯利恆之修士）" Id="" Type="0" />

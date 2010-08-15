@@ -34,7 +34,7 @@
 <SAINT Name="Ярославской (XIII) и Урюпинской (1821) икон Божией Матери" Id="1265" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="敬迁大殉道者德奥多若将军之圣髑纪念日（319年）" Id="" Type="0" />
+<SAINT Name="敬迁大殉道者德奥多若将军之圣髑纪念日（319年）" Id="2201" Type="2" />
 <SAINT Name="殉道者尼堪德尔及玛尔基安（默西亚的多若斯图伦，303年）" Id="" Type="0" />
 <SAINT Name="圣艾弗冷（安提约希亚牧首，546年）" Id="" Type="0" />
 <SAINT Name="圣佐西玛（叙利亚的腓尼基地方之修士，6世纪）" Id="" Type="0" />
@@ -51,7 +51,7 @@
 <SAINT Name="女长老圣麦拉尼亚" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="敬遷大殉道者德奧多若將軍之聖髑紀念日（319年）" Id="" Type="0" />
+<SAINT Name="敬遷大殉道者德奧多若將軍之聖髑紀念日（319年）" Id="2201" Type="2" />
 <SAINT Name="殉道者尼堪德爾及瑪爾基安（默西亞的多若斯圖倫，303年）" Id="" Type="0" />
 <SAINT Name="聖艾弗冷（安提約希亞牧首，546年）" Id="" Type="0" />
 <SAINT Name="聖佐西瑪（敘利亞的腓尼基地方之修士，六世紀）" Id="" Type="0" />
