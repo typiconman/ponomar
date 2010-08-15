@@ -33,8 +33,8 @@
 <SAINT Name="Прп. Памвы, затворника Печерского (XIII)" Id="4258" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="殉道者埃弥利安（保加利亚的西利斯特拉，363年）" Id="" Type="0" />
-<SAINT Name="殉道者雅金托（阿玛斯特里斯，4世纪）" Id="" Type="0" />
+<SAINT Name="殉道者埃弥利安（保加利亚的西利斯特拉，363年）" Id="4255" Type="1" />
+<SAINT Name="殉道者雅金托（阿玛斯特里斯，4世纪）" Id="4256" Type="1" />
 <SAINT Name="圣庞博（埃及隐士，386年）" Id="" Type="0" />
 <SAINT Name="大殉道者阿塔纳西（埃及的克利斯玛，4世纪）" Id="" Type="0" />
 <SAINT Name="圣弗瑞德里奇（荷兰的乌特勒支主教，9世纪）" Id="" Type="0" />
@@ -47,8 +47,8 @@
 <SAINT Name="“托尔伽”圣母像及“卡路伽”圣母像纪念日" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="殉道者埃彌利安（保加利亞的西利斯特拉，363年）" Id="" Type="0" />
-<SAINT Name="殉道者雅金托（阿瑪斯特里斯，四世紀）" Id="" Type="0" />
+<SAINT Name="殉道者埃彌利安（保加利亞的西利斯特拉，363年）" Id="4255" Type="1" />
+<SAINT Name="殉道者雅金托（阿瑪斯特里斯，四世紀）" Id="4256" Type="1" />
 <SAINT Name="聖龐博（埃及隱士，386年）" Id="" Type="0" />
 <SAINT Name="大殉道者阿塔納西（埃及的克利斯瑪，四世紀）" Id="" Type="0" />
 <SAINT Name="聖弗瑞德里奇（荷蘭的烏特勒支主教，九世紀）" Id="" Type="0" />
