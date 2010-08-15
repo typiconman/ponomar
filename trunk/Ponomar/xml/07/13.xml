@@ -26,8 +26,8 @@
 <SAINT Name="Мч. Маркиана (258)" Id="4232" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="纪念圣总领天使伽弗里伊尔" Id="" Type="0" />
-<SAINT Name="圣斯特梵（圣萨瓦修道院，794年）" Id="" Type="0" />
+<SAINT Name="纪念圣总领天使伽弗里伊尔" Id="446" Type="2" />
+<SAINT Name="圣斯特梵（圣萨瓦修道院，794年）" Id="4229" Type="1" />
 <SAINT Name="圣犹利安（高卢的切诺玛尼斯主教，1世纪）" Id="" Type="0" />
 <SAINT Name="殉道者塞拉彼雍（就义于罗马暴君塞佛留斯治下，193年）" Id="" Type="0" />
 <SAINT Name="殉道者玛尔基安（伊科尼雍，258年）" Id="" Type="0" />
@@ -38,8 +38,8 @@
 <SAINT Name="“诚应为洵（阿克西雍•埃斯廷）”圣母像纪念日" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="紀念聖總領天使伽弗里伊爾" Id="" Type="0" />
-<SAINT Name="聖斯特梵（聖薩瓦修道院，794年）" Id="" Type="0" />
+<SAINT Name="紀念聖總領天使伽弗里伊爾" Id="446" Type="2" />
+<SAINT Name="聖斯特梵（聖薩瓦修道院，794年）" Id="4229" Type="1" />
 <SAINT Name="聖猶利安（高盧的切諾瑪尼斯主教，一世紀）" Id="" Type="0" />
 <SAINT Name="殉道者塞拉彼雍（就義於羅馬暴君塞佛留斯治下，193年）" Id="" Type="0" />
 <SAINT Name="殉道者瑪爾基安（伊科尼雍，258年）" Id="" Type="0" />

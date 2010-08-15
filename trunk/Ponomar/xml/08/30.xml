@@ -46,7 +46,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
 <SAINT Name="圣约安授首纪念日翌日" Id="" Type="0" />
-<SAINT Name="君士坦丁堡牧首：圣亚历山大（340年）、圣约安（595年）、圣帕弗罗（幼者，784年）" Id="" Type="0" />
+<SAINT Name="君士坦丁堡牧首：圣亚历山大（340年）、圣约安（595年）、圣帕弗罗（幼者，784年）" Id="4546" Type="1" />
 <SAINT Name="圣女弗里埃尼（尼西比斯，318年）" Id="" Type="0" />
 <SAINT Name="圣艾弗拉利（恺撒里亚主教，4世纪）" Id="" Type="0" />
 <SAINT Name="圣赫里斯托佛尔（巴勒斯坦，6世纪）" Id="" Type="0" />
@@ -63,7 +63,7 @@
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
 <SAINT Name="聖約安授首紀念日翌日" Id="" Type="0" />
-<SAINT Name="君士坦丁堡牧首：聖亞歷山大（340年）、聖約安（595年）、聖帕弗羅（幼者，784年）" Id="" Type="0" />
+<SAINT Name="君士坦丁堡牧首：聖亞歷山大（340年）、聖約安（595年）、聖帕弗羅（幼者，784年）" Id="4546" Type="1" />
 <SAINT Name="聖女弗里埃尼（尼西比斯，318年）" Id="" Type="0" />
 <SAINT Name="聖艾弗拉利（愷撒里亞主教，四世紀）" Id="" Type="0" />
 <SAINT Name="聖赫里斯托佛爾（巴勒斯坦，六世紀）" Id="" Type="0" />
