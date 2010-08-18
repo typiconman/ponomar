@@ -26,7 +26,7 @@
 <SAINT Name="Тупичевской и Кипрской икон Божией Матери" Id="906" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="70使徒之卡尔普及阿尔斐" Id="" Type="0" />
+<SAINT Name="70使徒之卡尔普及阿尔斐" Id="1141" Type="1" />
 <SAINT Name="殉道者阿维尔基及殉道女艾莱尼（使徒阿尔斐之子女）" Id="" Type="0" />
 <SAINT Name="圣约安（普西亥塔地方人，君士坦丁堡之宣信者，8世纪）" Id="" Type="0" />
 <SAINT Name="寻获圣玛喀里（1483年）——科利雅金修道院院长之圣髑纪念日（1521年）" Id="" Type="0" />
@@ -36,7 +36,7 @@
 <SAINT Name="圣奥古斯丁（坎特伯雷总主教，英格兰之光照者，605年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="七十使徒之卡爾普及阿爾斐" Id="" Type="0" />
+<SAINT Name="七十使徒之卡爾普及阿爾斐" Id="1141" Type="1" />
 <SAINT Name="殉道者阿維爾基及殉道女艾萊尼（使徒阿爾斐之子女）" Id="" Type="0" />
 <SAINT Name="聖約安（普西亥塔地方人，君士坦丁堡之宣信者，八世紀）" Id="" Type="0" />
 <SAINT Name="尋獲聖瑪喀里（1483年）——科利雅金修道院院長之聖髑紀念日（1521年）" Id="" Type="0" />
