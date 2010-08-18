@@ -34,7 +34,7 @@
 <SAINT Name="Прп. Давида Гареджийского (VI-VII)" Id="1010" Type="1"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="殉道司教瓦西利斯科（康玛纳主教，308年）" Id="" Type="0" />
+<SAINT Name="殉道司教瓦西利斯科（康玛纳主教，308年）" Id="391" Type="1" />
 <SAINT Name="义人麦尔希塞德克（撒冷王）" Id="" Type="0" />
 <SAINT Name="纪念第二次神圣普世大公会议（381年）" Id="" Type="0" />
 <SAINT Name="殉道者圣约安•弗拉迪弥尔（塞尔维亚的统治者，1015年）" Id="" Type="0" />
@@ -44,10 +44,10 @@
 <SAINT Name="新殉道修士帕弗罗（卡拉弗里塔附近的特里颇利，1818年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="殉道司教瓦西利斯科（康瑪納主教，308年）" Id="" Type="0" />
+<SAINT Name="殉道司教瓦西利斯科（康瑪納主教，308年）" Id="391" Type="1" />
 <SAINT Name="義人麥爾希塞德克（撒冷王）" Id="" Type="0" />
 <SAINT Name="紀念第二次神聖普世大公會議（381年）" Id="" Type="0" />
-<SAINT Name="殉道者聖約安‧弗拉迪彌爾（塞爾維亞的統治者，1015年）" Id="" Type="0" />
+<SAINT Name="殉道者聖約安•弗拉迪彌爾（塞爾維亞的統治者，1015年）" Id="" Type="0" />
 <SAINT Name="殉道女瑪爾凱拉及殉道者科德拉特" Id="" Type="0" />
 <SAINT Name="蒙福者雅科弗（諾夫哥羅德的博若維奇地方之少年，1540年）" Id="" Type="0" />
 <SAINT Name="殉道女索斐亞（醫治者）" Id="" Type="0" />
