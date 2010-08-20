@@ -43,7 +43,8 @@
 <SAINT Name="Прп. Онуфрия Воронского (1789)" Id="" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="吾主上帝神圣义德之外祖父母：约雅敬及安纳" Id="" Type="0" />
+<SAINT Name="诞神女诞辰节庆期" Id="" Type="0" />
+<SAINT Name="吾主上帝神圣义德之外祖父母：约雅敬及安纳" Id="955" Type="2"  />
 <SAINT Name="殉道者塞维里安（塞巴斯特地方，320年）" Id="" Type="0" />
 <SAINT Name="纪念第三次神圣普世大公会议（431年）" Id="" Type="0" />
 <SAINT Name="圣德奥梵（迪亚维诺山之宣信者及持斋者，299年）" Id="" Type="0" />
@@ -55,7 +56,8 @@
 <SAINT Name="圣基埃兰（爱尔兰的克隆玛克诺伊斯地方，545年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="吾主上帝神聖義德之外祖父母：約雅敬及安納" Id="" Type="0" />
+<SAINT Name="誕神女誕辰節慶期" Id="" Type="0" />
+<SAINT Name="吾主上帝神聖義德之外祖父母：約雅敬及安納" Id="955" Type="2"  />
 <SAINT Name="殉道者塞維里安（塞巴斯特地方，320年）" Id="" Type="0" />
 <SAINT Name="紀念第三次神聖普世大公會議（431年）" Id="" Type="0" />
 <SAINT Name="聖德奧梵（迪亞維諾山之宣信者及持齋者，299年）" Id="" Type="0" />

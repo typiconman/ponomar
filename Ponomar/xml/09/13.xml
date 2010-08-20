@@ -42,7 +42,8 @@
 <SAINT Name="Вмц. Кетеваны, царицы Кахетинской (1624)" Id="1526" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="纪念耶路撒冷圣复活教堂（圣墓大教堂）之建立（335年）" Id="" Type="0" />
+<SAINT Name="举扬圣架节前日" Id="" Type="0" />
+<SAINT Name="纪念耶路撒冷圣复活教堂（圣墓大教堂）之建立（335年）" Id="1521" Type="3" />
 <SAINT Name="殉道者科尔奈利“百夫长”（1世纪）" Id="" Type="0" />
 <SAINT Name="殉道者：科若尼迪、莱翁提、塞拉彼雍（亚历山大里亚，237年）" Id="" Type="0" />
 <SAINT Name="殉道者斯特拉同（尼科美底亚，3世纪）" Id="" Type="0" />
@@ -54,7 +55,8 @@
 <SAINT Name="圣耶若德奥（卡拉玛塔人氏，阿托斯圣山的伊维隆修道院修士，1745年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="紀念耶路撒冷聖復活教堂（聖墓大教堂）之建立（335年）" Id="" Type="0" />
+<SAINT Name="舉揚聖架節前日" Id="" Type="0" />
+<SAINT Name="紀念耶路撒冷聖復活教堂（聖墓大教堂）之建立（335年）" Id="1521" Type="3" />
 <SAINT Name="殉道者科爾奈利「百夫長」（一世紀）" Id="" Type="0" />
 <SAINT Name="殉道者：科若尼迪、萊翁提、塞拉彼雍（亞歷山大里亞，237年）" Id="" Type="0" />
 <SAINT Name="殉道者斯特拉同（尼科美底亞，三世紀）" Id="" Type="0" />

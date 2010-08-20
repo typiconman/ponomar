@@ -25,7 +25,7 @@
 <SAINT Name="Прп. Феофана Милостивого" Id="1628" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="圣基里雅科（巴勒斯坦隐士，556年）" Id="" Type="0" />
+<SAINT Name="圣基里雅科（巴勒斯坦隐士，556年）" Id="1626" Type="2" />
 <SAINT Name="圣德奥梵“仁慈者”（加沙）" Id="" Type="0" />
 <SAINT Name="殉道者：答达、伽布德拉、喀斯多埃（波斯，4世纪）" Id="" Type="0" />
 <SAINT Name="殉道女谷德利亚（波斯，4世纪）" Id="" Type="0" />
@@ -34,11 +34,11 @@
 <SAINT Name="新殉道修士玛拉希亚（罗德岛，1500年）" Id="" Type="0" />
 <SAINT Name="圣奥努弗里（格鲁吉亚的伽瑞斯嘉之显行灵迹者，18世纪）" Id="" Type="0" />
 <SAINT Name="新司教殉道者约安（拉脱维亚的里加总主教，1934年）" Id="" Type="0" />
-<SAINT Name="殉道者：特里丰、特若斐默、多里麦顿、及一百五十位一同就义者（巴勒斯坦）" Id="" Type="0" />
+<SAINT Name="殉道者：特里丰、特若斐默、多里麦顿、及150位一同就义者（巴勒斯坦）" Id="" Type="0" />
 <SAINT Name="敬迁塞浦路斯之闭关者圣奈奥斐特之圣髑纪念日（1214年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="聖基里雅科（巴勒斯坦隱士，556年）" Id="" Type="0" />
+<SAINT Name="聖基里雅科（巴勒斯坦隱士，556年）" Id="1626" Type="2" />
 <SAINT Name="聖德奧梵「仁慈者」（加沙）" Id="" Type="0" />
 <SAINT Name="殉道者：答達、伽布德拉、喀斯多埃（波斯，四世紀）" Id="" Type="0" />
 <SAINT Name="殉道女谷德利亞（波斯，四世紀）" Id="" Type="0" />

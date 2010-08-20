@@ -49,7 +49,8 @@
 <SAINT Name="Новоникитской иконы Божией Матери (372)" Id="1541" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="大殉道者尼基塔（哥特人，372年）" Id="" Type="0" />
+<SAINT Name="举扬圣架节庆期" Id="" Type="0" />
+<SAINT Name="大殉道者尼基塔（哥特人，372年）" Id="1533" Type="2"  />
 <SAINT Name="寻获麦利特尼主教，宣信者，圣阿喀基之圣髑纪念日（257年）" Id="" Type="0" />
 <SAINT Name="殉道者：德奥多特、阿斯克利彼奥多特、玛克息默（阿德里亚诺颇利城，305-311年间）" Id="" Type="0" />
 <SAINT Name="殉道者颇尔斐里（恺撒里亚城的喜剧演员，361年）" Id="" Type="0" />
@@ -63,7 +64,8 @@
 <SAINT Name="新殉道者约安（克里特，1811年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="大殉道者尼基塔（哥特人，372年）" Id="" Type="0" />
+<SAINT Name="舉揚聖架節慶期" Id="" Type="0" />
+<SAINT Name="大殉道者尼基塔（哥特人，372年）" Id="1533" Type="2"  />
 <SAINT Name="尋獲麥利特尼主教，宣信者，聖阿喀基之聖髑紀念日（257年）" Id="" Type="0" />
 <SAINT Name="殉道者：德奧多特、阿斯克利彼奧多特、瑪克息默（阿德里亞諾頗利城，305-311年間）" Id="" Type="0" />
 <SAINT Name="殉道者頗爾斐里（愷撒里亞城的喜劇演員，361年）" Id="" Type="0" />
