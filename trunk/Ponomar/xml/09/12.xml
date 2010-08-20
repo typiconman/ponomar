@@ -40,10 +40,10 @@
 <SAINT Name="Сщмч. Феодора еп. Александрийского" Id="1516" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="诞神女诞辰节庆期圆满日" Id="" Type="0" />
-<SAINT Name="殉道司教阿弗托诺默（意大利地方主教，313年）" Id="" Type="0" />
+<SAINT Name="诞神女诞辰节庆期圆满日" Id="" Type="3" />
+<SAINT Name="殉道司教阿弗托诺默（意大利地方主教，313年）" Id="1512" Type="1"  />
 <SAINT Name="圣科若纳特（伊科尼雍主教，3世纪）" Id="" Type="0" />
-<SAINT Name="殉道者犹利安及偕同其就义者四十位殉道者（加拉提亚，4世纪）" Id="" Type="0" />
+<SAINT Name="殉道者犹利安及偕同其就义者40位殉道者（加拉提亚，4世纪）" Id="" Type="0" />
 <SAINT Name="殉道者玛凯多尼、塔提安、德奥杜洛（弗里吉亚，4世纪）" Id="" Type="0" />
 <SAINT Name="殉道司教德奥多若（亚历山大里亚总主教，606年）" Id="" Type="0" />
 <SAINT Name="圣安德若尼科（阿特若阿，9世纪）" Id="" Type="0" />
@@ -57,8 +57,8 @@
 <SAINT Name="圣埃尔布赫（埃穆利地方，527年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="誕神女誕辰節慶期圓滿日" Id="" Type="0" />
-<SAINT Name="殉道司教阿弗托諾默（意大利地方主教，313年）" Id="" Type="0" />
+<SAINT Name="誕神女誕辰節慶期圓滿日" Id="" Type="3" />
+<SAINT Name="殉道司教阿弗托諾默（意大利地方主教，313年）" Id="1512" Type="1"  />
 <SAINT Name="聖科若納特（伊科尼雍主教，三世紀）" Id="" Type="0" />
 <SAINT Name="殉道者猶利安及偕同其就義者四十位殉道者（加拉提亞，四世紀）" Id="" Type="0" />
 <SAINT Name="殉道者瑪凱多尼、塔提安、德奧杜洛（弗里吉亞，四世紀）" Id="" Type="0" />

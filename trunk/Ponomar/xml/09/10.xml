@@ -39,8 +39,9 @@
 <SAINT Name="Прп. кн. Андрея, в иночестве Иоасафа, Спасокубенского (1453)" Id="1033" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="殉道女弥诺多拉及宁佛多拉（尼科美底亚，305年）" Id="" Type="0" />
-<SAINT Name="七十使徒之：阿佩勒、路基、克利密斯" Id="" Type="0" />
+<SAINT Name="诞神女诞辰节庆期" Id="" Type="0" />
+<SAINT Name="殉道女弥诺多拉及宁佛多拉（尼科美底亚，305年）" Id="1497" Type="1" />
+<SAINT Name="70使徒之：阿佩勒、路基、克利密斯" Id="" Type="0" />
 <SAINT Name="圣妇普尔赫里亚皇后（453年）" Id="" Type="0" />
 <SAINT Name="殉道者瓦里普萨瓦斯（达尔马提亚，2世纪）" Id="" Type="0" />
 <SAINT Name="圣撒尔维（高卢的阿尔比主教，584年）" Id="" Type="0" />
@@ -52,7 +53,8 @@
 <SAINT Name="圣斐尼安（爱尔兰乌尔斯特地方之修道院院长，579年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="殉道女彌諾多拉及寧佛多拉（尼科美底亞，305年）" Id="" Type="0" />
+<SAINT Name="誕神女誕辰節慶期" Id="" Type="0" />
+<SAINT Name="殉道女彌諾多拉及寧佛多拉（尼科美底亞，305年）" Id="1497" Type="1" />
 <SAINT Name="七十使徒之：阿佩勒、路基、克利密斯" Id="" Type="0" />
 <SAINT Name="聖婦普爾赫里亞皇后（453年）" Id="" Type="0" />
 <SAINT Name="殉道者瓦里普薩瓦斯（達爾馬提亞，二世紀）" Id="" Type="0" />

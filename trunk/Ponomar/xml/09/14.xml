@@ -32,8 +32,8 @@
 <SAINT Name="Леснинской (1683) иконы Божией Матери" Id="1531" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="普世举扬尊贵施生命之十字圣架" Id="" Type="0" />
-<SAINT Name="圣金口约安安息纪念日（407年）" Id="" Type="0" />
+<SAINT Name="普世举扬尊贵施生命之十字圣架" Id="1529" Type="8" />
+<SAINT Name="圣金口约安安息纪念日（407年）" Id="978" Type="1" />
 <SAINT Name="殉道者帕帕斯（利考尼亚，305年）" Id="" Type="0" />
 <SAINT Name="圣妇普拉基拉皇后（德奥多西大帝之妻）" Id="" Type="0" />
 <SAINT Name="圣女玛利亚（塔尔索地方，607年）" Id="" Type="0" />
@@ -43,8 +43,8 @@
 <SAINT Name="“莱斯纳”圣母像纪念日（1696年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="普世舉揚尊貴施生命之十字聖架" Id="" Type="0" />
-<SAINT Name="聖金口約安安息紀念日（407年）" Id="" Type="0" />
+<SAINT Name="普世舉揚尊貴施生命之十字聖架" Id="1529" Type="8" />
+<SAINT Name="聖金口約安安息紀念日（407年）" Id="978" Type="1" />
 <SAINT Name="殉道者帕帕斯（利考尼亞，305年）" Id="" Type="0" />
 <SAINT Name="聖婦普拉基拉皇后（德奧多西大帝之妻）" Id="" Type="0" />
 <SAINT Name="聖女瑪利亞（塔爾索地方，607年）" Id="" Type="0" />

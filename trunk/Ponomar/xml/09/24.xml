@@ -28,7 +28,7 @@
 <SAINT Name="Мирожской иконы Божией Матери (1198)" Id="1600" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="首位殉道女，亚使徒，圣特克拉（伊克尼雍地方，1世纪）" Id="" Type="0" />
+<SAINT Name="首位殉道女，亚使徒，圣特克拉（伊克尼雍地方，1世纪）" Id="1594" Type="2" />
 <SAINT Name="圣科普里（巴勒斯坦，530年）" Id="" Type="0" />
 <SAINT Name="圣伊撒尔诺（马赛，1043年）" Id="" Type="0" />
 <SAINT Name="圣阿弗拉弥（普斯科夫的密若哲修道院院长，1158年）" Id="" Type="0" />
@@ -42,7 +42,7 @@
 <SAINT Name="“香桃木”圣母像纪念日" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="首位殉道女，亞使徒，聖特克拉（伊克尼雍地方，一世紀）" Id="" Type="0" />
+<SAINT Name="首位殉道女，亞使徒，聖特克拉（伊克尼雍地方，一世紀）" Id="1594" Type="2" />
 <SAINT Name="聖科普里（巴勒斯坦，530年）" Id="" Type="0" />
 <SAINT Name="聖伊撒爾諾（馬賽，1043年）" Id="" Type="0" />
 <SAINT Name="聖阿弗拉彌（普斯科夫的密若哲修道院院長，1158年）" Id="" Type="0" />

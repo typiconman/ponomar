@@ -37,7 +37,8 @@
 <SAINT Name="Мч. Кастора. Молченской (1405), именуемой &quot;Целительница&quot; (XVIII), и Старорусской (1888) икон Божией Матери. )" Id="929" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="圣艾弗麦尼（格尔提纳主教，7世纪）" Id="" Type="0" />
+<SAINT Name="举扬圣架节庆期" Id="" Type="0" />
+<SAINT Name="圣艾弗麦尼（格尔提纳主教，7世纪）" Id="1559" Type="1" />
 <SAINT Name="殉道女阿里亚德尼（弗里吉亚，2世纪）" Id="" Type="0" />
 <SAINT Name="殉道女：索斐亚、伊里尼（埃及，3世纪）" Id="" Type="0" />
 <SAINT Name="殉道者喀斯托尔（亚历山大里亚）" Id="" Type="0" />
@@ -46,7 +47,8 @@
 <SAINT Name="圣伊拉里雍（奥普提纳精舍，1873年）" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="聖艾弗麥尼（格爾提納主教，七世紀）" Id="" Type="0" />
+<SAINT Name="舉揚聖架節慶期" Id="" Type="0" />
+<SAINT Name="聖艾弗麥尼（格爾提納主教，七世紀）" Id="1559" Type="1" />
 <SAINT Name="殉道女阿里亞德尼（弗里吉亞，二世紀）" Id="" Type="0" />
 <SAINT Name="殉道女：索斐亞、伊里尼（埃及，三世紀）" Id="" Type="0" />
 <SAINT Name="殉道者喀斯托爾（亞歷山大里亞）" Id="" Type="0" />
