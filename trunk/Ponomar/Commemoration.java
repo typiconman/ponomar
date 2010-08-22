@@ -412,6 +412,7 @@ public class Commemoration implements DocHandler
 	{
 		StringOp.dayInfo=new OrderedHashtable();
 		StringOp.dayInfo.put("LS","2");
+                StringOp.dayInfo.put("dow","1");
 		//Commemoration Paramony = new Commemoration("P_3174");    //Paramony of Christmas
 		System.out.println("THIS IS RUNNING ON DEBUG MODE, USING THE FILE FOR the Paramony of Christmas");
                 //OrderedHashtable stuff=Paramony.getRH("Idiomel","11");
@@ -419,8 +420,8 @@ public class Commemoration implements DocHandler
                 //System.out.println(Paramony .ServiceInfo());
                 //System.out.println(Paramony.getRH("IDIOMEL","11"));
 		//System.out.println(Paramony);
-                Commemoration Paramony=new Commemoration("B_3174"); //Forefeast of Christmas
-                System.out.println(Paramony.getService("/KONTAKION","1"));
+                Commemoration Paramony=new Commemoration("01"); //Forefeast of Christmas
+                System.out.println(Paramony.getService("/MATINS/KONTAKION","1"));
 	}
 	
 }

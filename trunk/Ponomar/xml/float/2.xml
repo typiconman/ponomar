@@ -16,7 +16,7 @@
 	<KONTAKION Tone="2" Author="Traditional">Great are the achievements of faith! In the fountain of flame, as in refreshing water, the Three Holy Children rejoiced. And the Prophet Daniel proved a shepherd of lions as of sheep. By their prayers, O Christ our God, save our souls.</KONTAKION>
 	<TROPARION Tone="1" Author="Traditional">O Bethlehem, rejoice! Make ready, Ephratha! The ewe is hastening to give birth to the Great Shepherd Whom she carries in her womb. The Godbearing Fathers rejoice at seeing Him, and the Shepherds praise the Virgin who suckles Him.</TROPARION>
 </LANGUAGE>
-<LANGUAGE Cmd="LS == 2">
+<LANGUAGE Cmd="LS == 1">
 	<SAINT Name="Dimanche avant la Nativité de Christ, des Pères" Id="9003" Type="0"/>
 	<NAME>Dimanche avant la Nativité de Christ, des Pères</NAME>
 </LANGUAGE>
