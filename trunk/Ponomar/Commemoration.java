@@ -29,9 +29,9 @@ OF THE PROGRAMME.
 
 public class Commemoration implements DocHandler
 {
-	private final static String Location  = "Ponomar/xml/Services/menaion/";   // THE LOCATION OF THE BASIC SERVICE RULES
-	private final static String LocationT  = "Ponomar/xml/triodion/";
-        private final static String LocationP  = "Ponomar/xml/pentecostarion/";
+	private final static String Location  = "xml/Services/menaion/";   // THE LOCATION OF THE BASIC SERVICE RULES
+	private final static String LocationT  = "xml/triodion/";
+        private final static String LocationP  = "xml/pentecostarion/";
         private static boolean read=false;
 	private String filename;
 	private int lineNumber;
@@ -52,6 +52,7 @@ public class Commemoration implements DocHandler
         private boolean readService=false;
         private LanguagePack Text=new LanguagePack();
 	private String[] CommNames=Text.obtainValues((String)Text.Phrases.get("Commemoration"));
+        private Helpers helper;
 	
 	protected Commemoration(String FileName)
 	{
@@ -59,7 +60,9 @@ public class Commemoration implements DocHandler
 		readings=new OrderedHashtable();
                 RoyalHours=new OrderedHashtable();
                 Information.put("ID",FileName);
+                helper=new Helpers();
                 readCommemoration(Location+FileName);
+
 	}
         protected Commemoration(String FileName,String Type)
 	{
@@ -72,6 +75,7 @@ public class Commemoration implements DocHandler
 		readings=new OrderedHashtable();
                 RoyalHours=new OrderedHashtable();
                 Information.put("ID",FileName);
+                helper=new Helpers();
                 String FilePath = new String();
                 if (Type.equals("M")){
                     FilePath=Location+FileName;
@@ -87,7 +91,8 @@ public class Commemoration implements DocHandler
 	protected Commemoration()
 	{
 		Information=new OrderedHashtable();
-		readings=new OrderedHashtable();				
+		readings=new OrderedHashtable();
+                helper=new Helpers();
 	}
 	protected Commemoration(String Name, OrderedHashtable grammar, OrderedHashtable readings)
 	{
@@ -99,6 +104,7 @@ public class Commemoration implements DocHandler
 		Information.put("Grammar",grammar);
 		Information.put("Scripture",readings);
 		Information.put("ID","-1");
+                helper=new Helpers();
 	}
 	
 	
@@ -107,7 +113,7 @@ public class Commemoration implements DocHandler
 		
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(FileName+".xml"), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName+".xml")), "UTF8"));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -143,12 +149,12 @@ public class Commemoration implements DocHandler
                             return;
 			}
 		}
-		if(elem.equals("LANGUAGE"))
-		{
+		//if(elem.equals("LANGUAGE"))
+		//{
 			read=true;
                         //System.out.println(table.get("Cmd").toString());
-                        return;
-		}
+                  //      return;
+		//}
                 if(elem.equals("SERVICE") && read){
                     readService=true;
                     ServiceInfo=new OrderedHashtable();

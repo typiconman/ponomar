@@ -15,15 +15,16 @@ import java.awt.print.Printable;
 
 class Helpers
 {
-	private LanguagePack Text=new LanguagePack();
-	private String[] PrimesNames=Text.obtainValues((String)Text.Phrases.get("Primes"));
-	private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-	private String[] HelperNames=Text.obtainValues((String)Text.Phrases.get("Helpers"));
-	private String[] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
+	//private LanguagePack Text=new LanguagePack();
+	//private String[] PrimesNames=Text.obtainValues((String)Text.Phrases.get("Primes"));
+	
 	
 	public boolean closeFrame(String title)
 	{
-		Object[] options = {LanguageNames[3],LanguageNames[5]};
+            LanguagePack Text=new LanguagePack();
+            String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
+
+            Object[] options = {LanguageNames[3],LanguageNames[5]};
 		//JOptionPane pane=new JOptionPane();
 		Object selectedValue=JOptionPane.showOptionDialog(null, title ,(String)Text.Phrases.get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 		//Object selectedValue = pane.getValue();
@@ -48,7 +49,11 @@ class Helpers
 	}
 	public void SaveHTMLFile(String defaultname, String strOut)
 	{
-		JFileChooser fileSelector=new JFileChooser();
+            LanguagePack Text=new LanguagePack();
+            String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
+	 String[] HelperNames=Text.obtainValues((String)Text.Phrases.get("Helpers"));
+	 String[] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
+            JFileChooser fileSelector=new JFileChooser();
         	File fileSelected = new File(defaultname);
         	fileSelector.setDialogTitle(HelperNames[0]);
 		fileSelector.setSelectedFile(fileSelected);
@@ -160,6 +165,34 @@ class Helpers
                     applyOrientation(container.getComponent(i),o);
                 }
             }            
+        }
+        public String langFileFind(String LanguagePath, String BasePath)
+        {
+            
+            String addon="Ponomar/languages/";
+            String currentPath=LanguagePath;
+            File testFile=new File(addon+LanguagePath+BasePath);
+            //System.out.println(currentPath);
+            while (!testFile.exists())
+            {
+                if (currentPath.length()<=1)
+                {
+                    break;
+                }
+                String shorter=currentPath.substring(0,currentPath.length()-2);
+                int location=shorter.lastIndexOf("/");
+                if (location==-1)
+                {
+                    //File not found!
+                    break;
+                }
+                currentPath=currentPath.substring(0,location)+"/";
+                testFile=new File(addon+currentPath+BasePath);
+                //System.out.println(currentPath);
+            }
+
+
+            return addon+currentPath+BasePath;
         }
 	
 }

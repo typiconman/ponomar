@@ -1,0 +1,10 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_3:1-14" />
+<SCRIPTURE Type="vespers" Reading="Gen_2:20-3:20" />
+<SCRIPTURE Type="vespers" Reading="Prov_3:19-34" />
+<PRIMES Type="Lenten" />
+<LITURGY Type="3" Comment="Presanctified ALWAYS"/>
+
+<SAINT Name="Vendredi Propre" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

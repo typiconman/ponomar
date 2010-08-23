@@ -35,10 +35,10 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 	//TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
 	//DURING THE COURSE OF A SINGLE WEEK.
 	private final static String configFileName = "ponomar.config";   //CONFIGURATIONS FILE
-	//private final static String octoecheosFileName   = "Ponomar/xml/Services/Octoecheos/";   // THE LOCATION OF THE BASIC SERVICE RULES
-	private final static String ServicesFileName = "Ponomar/xml/Services/"; // THE LOCATION FOR ANY EXTRA INFORMATION
+	//private final static String octoecheosFileName   = "xml/Services/Octoecheos/";   // THE LOCATION OF THE BASIC SERVICE RULES
+	private final static String ServicesFileName = "xml/Services/"; // THE LOCATION FOR ANY EXTRA INFORMATION
 	//private static OrderedHashtable PrimesTK;
-	//private static String FileNameIn="Ponomar/xml/Services/PRIMES1/";
+	//private static String FileNameIn="xml/Services/PRIMES1/";
 	//private static String FileNameOut=FileNameIn+"Primes.html";
 	private static String text;
 	private static boolean read=false;
@@ -47,8 +47,8 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 	//private String Kontakion1;
 	//private String Kontakion2;
 	//private String Troparion2;
-	//private final static String triodionFileName   = "Ponomar/xml/triodion/";   // TRIODION FILE
-	//private final static String pentecostarionFileName = "Ponomar/xml/pentecostarion/"; // PENTECOSTARION FILE
+	//private final static String triodionFileName   = "xml/triodion/";   // TRIODION FILE
+	//private final static String pentecostarionFileName = "xml/pentecostarion/"; // PENTECOSTARION FILE
 	private String filename;
 	private int lineNumber;
 	private LanguagePack Text=new LanguagePack();
@@ -87,11 +87,11 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 			else
 			{
 				//strOut=strOut+"<p><Font Color='red'>Disclaimer: This is a preliminary attempt at creating the Primes service.</Font></p>";
-				int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
-                                if (LangCode==2 || LangCode==3 ){
+				//int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
+                                //if (LangCode==2 || LangCode==3 ){
                                     //strOut="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"><p><font face=\"Hirmos Ponomar\" size=\"5\">"+strOut+"</font></p>";
                                     //System.out.println("Added Font");
-                                   }
+                                  // }
 
                                RoyalHoursWindow(strOut);
 			}
@@ -205,10 +205,10 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 				return;
 			}
 		}
-		if(elem.equals("LANGUAGE") || elem.equals("TONE"))
-		{
+		//if(elem.equals("LANGUAGE") || elem.equals("TONE"))
+		//{
 			read=true;
-		}
+		//}
 		if(elem.equals("TEXT") && read)
 		{
 			text+=(String)table.get("Value");
@@ -247,7 +247,7 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 		try
 		{
        			 text= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
        			 QDParser.parse(this,fr);
        			 if(text.length()==0)
        			 {

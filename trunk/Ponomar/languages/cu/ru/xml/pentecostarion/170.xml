@@ -1,0 +1,16 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Pericope="227" Reading="Eph_4:25-32" />
+<SCRIPTURE Type="gospel" Pericope="33" Reading="Lk_7:36-50" Cmd="(doy &gt;= 279 &amp;&amp; doy &lt;= 285) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="25" Reading="Lk_6:24-30" Cmd="(doy &gt;= 272 &amp;&amp; doy &lt;= 278) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="16" Reading="Lk_4:37-44" Cmd="(doy &gt;= 265 &amp;&amp; doy &lt;= 271) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="10" Reading="Lk_3:19-22" Cmd="(doy &gt;= 258 &amp;&amp; doy &lt;= 264) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="48" Reading="Mk_10:46-52" Cmd="(doy &gt;= 251 &amp;&amp; doy &lt;= 257) &amp;&amp; GS == 1"/>
+<!-- corrected by A.A. on 12/20/2009 n.s. -->
+<SCRIPTURE Type="gospel" Reading="Mt_23:13-22" Pericope="94" Cmd="(doy &gt;= 244 &amp;&amp; doy &lt;= 250) &amp;&amp; GS == 1"/>
+<!-- Readings for the Jordanville implementation -->
+<SCRIPTURE Type="gospel" Pericope="10" Reading="Lk_3:19-22"  Cmd="GS == 0" />
+
+<SAINT Name="Понедельник 18-й седмицы по Пятидесятнице" Id="" Type="0" Tone="8"/>
+
+</DAY>

@@ -1,0 +1,21 @@
+<DAY>
+<SAINT Name="12" Cmd="dow == 0" />
+<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="dow != 0 &amp;&amp; nday != -57" />
+<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57" Note="for St Xenia"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57" Note="for St Xenia"/>
+
+<SAINT Name="Ste Xénie et ses 2 servantes" Id="294" Type="1" />
+<SAINT Name="Ste Xénie, Folle en Christ de St Petersbourg" Id="2568" Type="1" Cmd="nday != -57"/>
+<SAINT Name="Sts Paul, Pausirion et Théodotion" Id="" Type="0" />
+<SAINT Name="Sts Babylas d'Antioche, Agapios et Timothée" Id="297" Type="0" />
+<SAINT Name="St Macédonien" Id="" Type="0" />
+<SAINT Name="St Philon, Evêque de Carpasia en Chypre" Id="" Type="0" />
+<SAINT Name="St Zosime" Id="" Type="0" />
+<SAINT Name="Sts Hermogène et Mamas" Id="" Type="0" />
+<SAINT Name="St Philippice (ou Philippe)" Id="" Type="0" />
+<SAINT Name="St Barsimas" Id="" Type="0" />
+<SAINT Name="St Néophyte le reclus de Chypre" Id="" Type="0" />
+<SAINT Name="St Jean de Kazan" Id="979" Type="0" />
+<SAINT Name="St Gérasime, Evêque de Perm" Id="502" Type="0" />
+
+</DAY>

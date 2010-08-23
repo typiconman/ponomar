@@ -1,0 +1,8 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="II Pet_1:20-2:9" Pericope="66"/>
+<SCRIPTURE Type="gospel" Reading="Mk_13:9-13" Pericope="59"/>
+<PRIMES Type="Normal" />
+
+<SAINT Name="Monday of the Fast-free Week" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

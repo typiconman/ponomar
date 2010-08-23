@@ -1,0 +1,8 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="I Jn_3:10-20" Pericope="72"/>
+<SCRIPTURE Type="gospel" Reading="Mk_14:10-42" Pericope="64"/>
+<PRIMES Type="Normal" />
+
+<SAINT Name="离肉瞻礼三" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+
+</DAY>

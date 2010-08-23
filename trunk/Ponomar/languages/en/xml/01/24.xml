@@ -1,0 +1,22 @@
+<DAY>
+<SAINT Name="12" Cmd="dow == 0" />
+<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="dow != 0 &amp;&amp; nday != -57" />
+<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57" Note="for St Xenia"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57" Note="for St Xenia"/>
+
+<SAINT Name="Venerable Xenia of Rome and her two female slaves (5th C)" Id="294" Type="1" />
+<SAINT Name="Martyrs Babylas (Vavila) of Sicily and his two disciples: Timothy and Agapius (3rd C)" Id="297" Type="0" />
+<SAINT Name="Saint Macedonius, the Hermit, of Syria (+c.420)" Id="298" Type="0" />
+<SAINT Name="Hieromartyr Felician, Bishop of Pholina" Id="" Type="0" />
+<SAINT Name="Venerable Philon, Bishop of Calpacia" Id="" Type="0" />
+<SAINT Name="Transfer of the relics of venerable martyr Anastasius the Persian" Id="165" Type="0" />
+<SAINT Name="Martyrs Paul, Pausirius, and Theodotian" Id="" Type="0" />
+<SAINT Name="Venerable Philippicus" Id="" Type="0" />
+<SAINT Name="Martyr Barsima and his two brothers" Id="" Type="0" />
+<SAINT Name="Venerable Zosimus of Mt Sinai" Id="" Type="0" />
+<SAINT Name="Venerable Dionisius of Olympus" Id="" Type="0" />
+<SAINT Name="Saint Gerasim, Bishop of Perm (+1441)" Id="502" Type="0" />
+<SAINT Name="Martyr John of Kazan (+1529)" Id="979" Type="0" />
+<SAINT Name="Blessed Xenia of Saint Petersburg (19th C)" Id="2568" Type="1" Cmd="nday != -57"/>
+
+</DAY>

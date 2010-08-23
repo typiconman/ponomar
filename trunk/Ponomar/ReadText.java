@@ -37,12 +37,14 @@ public class ReadText implements DocHandler
 	private static String text;
 	private static boolean read=false;
 	private static String header;
+        private Helpers findLanguage;
+        //There is no assumption about the provenence of the text, it must still be determined
 		
 		
 	
 	public ReadText()
 	{
-	
+            findLanguage=new Helpers();
 	}
 	
 				
@@ -71,10 +73,10 @@ public class ReadText implements DocHandler
 				return;
 			}
 		}
-		if(elem.equals("LANGUAGE"))
-		{
+		//if(elem.equals("LANGUAGE"))
+		//{
 			read=true;
-		}
+		//}
 		if(elem.equals("HEADER") && read)
 		{
 			header=(String)table.get("Value");
@@ -113,7 +115,7 @@ public class ReadText implements DocHandler
 		try
 		{
        			 text= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
        			 QDParser.parse(this,fr);
        			 if(text.length()==0)
        			 {
@@ -136,7 +138,7 @@ public class ReadText implements DocHandler
 		try
 		{
        			 header= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
        			 QDParser.parse(this,fr);
        			 if(header.length()==0)
        			 {

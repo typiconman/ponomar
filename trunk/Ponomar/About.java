@@ -35,13 +35,28 @@ class About extends JFrame
 		setTitle(value);
 		LanguagePack Text=new LanguagePack();
 		String [] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
-		
+		String[] Authors=Text.obtainValues((String) Text.Phrases.get("Authors"));
+                String Year=Text.Phrases.get("Year").toString();
+                String Comma=Text.Phrases.get("Comma").toString();
+                String And=Text.Phrases.get("And").toString();
+                String AuthorList=Authors[0];
+                if (Authors.length>2)
+                {
+                for(int i=1;i < Authors.length-1;i++)
+                {
+                    AuthorList=AuthorList+Authors[i]+Comma;
+                }
+                }
+                if (Authors.length>1)
+                {
+                    AuthorList=AuthorList+And+Authors[Authors.length-1];
+                }
 		JPanel contentPane=new JPanel(new BorderLayout());
 		contentPane.setOpaque(true);
 		JTextPane output=new JTextPane();
 		output.setEditable(false);
 		output.setContentType("text/html");
-		output.setText("<B><center><Font Size='14'>"+(String)Ponomar.Phrases.get("0")+"</Font></center></B><p><center>"+AboutNames[0]+" "+(String) ConfigurationFiles.Defaults.get("Version")+"</center></p><p>"+AboutNames[1]+"</p><p>"+AboutNames[2]+"</p><p>"+AboutNames[3]+" " +(String) ConfigurationFiles.Defaults.get("Year") +" " +AboutNames[4] + " " +(String) ConfigurationFiles.Defaults.get("Authors") +"<BR>" + AboutNames[5] + "<BR>");
+		output.setText("<B><center><Font Size='14'>"+(String)Ponomar.Phrases.get("0")+"</Font></center></B><p><center>"+AboutNames[0]+" "+(String) ConfigurationFiles.Defaults.get("Version")+"</center></p><p>"+AboutNames[1]+"</p><p>"+AboutNames[2]+"</p><p>"+AboutNames[3]+" " +Year +" " +AboutNames[4] + " " +AuthorList +"<BR>" + AboutNames[5] + "<BR>");
 		output.setCaretPosition(0);
 		JScrollPane scrollPane = new JScrollPane(output);
 		contentPane.add(scrollPane,BorderLayout.CENTER);

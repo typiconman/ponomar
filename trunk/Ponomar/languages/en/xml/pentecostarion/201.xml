@@ -1,0 +1,14 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Col_4:2-9" Pericope="260"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:1-9" Pericope="70" Cmd="(doy &gt;= 310 &amp;&amp; doy &lt;= 316) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_11:47-12:1" Pericope="62" Cmd="(doy &gt;= 303 &amp;&amp; doy &lt;= 309) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_11:14-23" Pericope="57" Cmd="(doy &gt;= 296 &amp;&amp; doy &lt;= 302) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:49-56" Pericope="48" Cmd="(doy &gt;= 289 &amp;&amp; doy &lt;= 295) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:7-11" Pericope="41" Cmd="(doy &gt;= 282 &amp;&amp; doy &lt;= 288) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:17-30" Pericope="31" Cmd="(doy &gt;= 275 &amp;&amp; doy &lt;= 281) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:49-56" Pericope="48" Cmd="GS == 0" /> 
+
+<SAINT Name="Thursday of the 22nd week after Pentecost" Id="" Type="0" Tone="4" />
+
+</DAY>

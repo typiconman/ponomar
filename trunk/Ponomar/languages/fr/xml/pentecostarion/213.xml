@@ -1,0 +1,14 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="I Thess_3:9-13" Pericope="268"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:26-37" Pericope="87" Cmd="(doy &gt;= 322 &amp;&amp; doy &lt;= 328) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_14:25-35" Pericope="77" Cmd="(doy &gt;= 315 &amp;&amp; doy &lt;= 321) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:42-48" Pericope="68" Cmd="(doy &gt;= 308 &amp;&amp; doy &lt;= 314) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_11:34-41" Pericope="60" Cmd="(doy &gt;= 301 &amp;&amp; doy &lt;= 307) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_11:1-10" Pericope="55" Cmd="(doy &gt;= 294 &amp;&amp; doy &lt;= 300) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:23-27" Pericope="44" Cmd="(doy &gt;= 287 &amp;&amp; doy &lt;= 293) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_11:34-41" Pericope="60" Cmd="GS == 0" /> 
+
+<SAINT Name="Mardi de la 24-me semaine après le Pentecôte" Id="" Type="0" Tone="6"/>
+
+</DAY>

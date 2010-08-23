@@ -35,10 +35,10 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 	//TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
 	//DURING THE COURSE OF A SINGLE WEEK.
 	private final static String configFileName = "ponomar.config";   //CONFIGURATIONS FILE
-	private final static String octoecheosFileName   = "Ponomar/xml/Services/Octoecheos/";   // THE LOCATION OF THE BASIC SERVICE RULES
-	private final static String ServicesFileName = "Ponomar/xml/Services/"; // THE LOCATION FOR ANY EXTRA INFORMATION
+	private final static String octoecheosFileName   = "xml/Services/Octoecheos/";   // THE LOCATION OF THE BASIC SERVICE RULES
+	private final static String ServicesFileName = "xml/Services/"; // THE LOCATION FOR ANY EXTRA INFORMATION
 	private static OrderedHashtable PrimesTK;
-	private static String FileNameIn="Ponomar/xml/Services/PRIMES1/";
+	private static String FileNameIn="xml/Services/PRIMES1/";
 	private static String FileNameOut=FileNameIn+"Primes.html";
 	private static String text;
 	private static boolean read=false;
@@ -47,8 +47,8 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 	private String Kontakion1;
 	private String Kontakion2;
 	private String Troparion2;
-	private final static String triodionFileName   = "Ponomar/xml/triodion/";   // TRIODION FILE
-	private final static String pentecostarionFileName = "Ponomar/xml/pentecostarion/"; // PENTECOSTARION FILE
+	private final static String triodionFileName   = "xml/triodion/";   // TRIODION FILE
+	private final static String pentecostarionFileName = "/xml/pentecostarion/"; // PENTECOSTARION FILE
 	private String filename;
 	private int lineNumber;
 	private LanguagePack Text=new LanguagePack();
@@ -73,7 +73,7 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 	
 	public SixthHour(int Weekday)
 	{
-		helper=new Helpers();
+		/*helper=new Helpers();
 		StringOp.dayInfo = new Hashtable();
 		StringOp.dayInfo.put("dow", Weekday);		//DETERMINE THE DAY OF THE WEEK.
 		
@@ -111,7 +111,7 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 		}
 		catch (IOException j)
 		{
-		}
+		}*/
 	}	
 	public SixthHour(JDate date)
 	{
@@ -149,11 +149,11 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 			else
 			{
 				//strOut=strOut+"<p><Font Color='red'>Disclaimer: This is a preliminary attempt at creating the Primes service.</Font></p>";
-				int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
-                                if (LangCode==2 || LangCode==3 ){
+				//int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
+                                //if (LangCode==2 || LangCode==3 ){
                                     //strOut="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"><p><font face=\"Hirmos Ponomar\" size=\"5\">"+strOut+"</font></p>";
                                     //System.out.println("Added Font");
-                                   }
+                                 //  }
 
                                 PrimesWindow(strOut);
 			}
@@ -253,7 +253,7 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 
 				try
 				{
-					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(FileName), "UTF8"));
+					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 					QDParser.parse(this, frf);
 
 				}
@@ -292,7 +292,7 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 		
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -338,44 +338,44 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 	       		{
 	       			StringOp.dayInfo.put("PFlag2",2);
 	       			//CREATE THE KATHISMA PART
-	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PKath6.xml"),"UTF8"));
+	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKath6.xml"),"UTF8"));
 	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma"+LentenK+"\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
 	       		}
                         //System.out.println("Hello Lent b");
-                        BufferedWriter out= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/TP6R.xml"),"UTF8"));
+                        BufferedWriter out= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/TP6R.xml"),"UTF8"));
                         //System.out.println(Reading6th);
                         String Data="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out1a= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/TP6C.xml"),"UTF8"));
+                        BufferedWriter out1a= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/TP6C.xml"),"UTF8"));
                         String Data1a="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out1= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PROK61R.xml"),"UTF8"));
+                        BufferedWriter out1= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PROK61R.xml"),"UTF8"));
                         String Data1="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out2= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PROK61C.xml"),"UTF8"));
+                        BufferedWriter out2= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PROK61C.xml"),"UTF8"));
                         String Data2="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out3= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/STYX61R.xml"),"UTF8"));
+                        BufferedWriter out3= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/STYX61R.xml"),"UTF8"));
                         String Data3="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out4= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/STYX61C.xml"),"UTF8"));
+                        BufferedWriter out4= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/STYX61C.xml"),"UTF8"));
                         String Data4="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out5= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PROK61a.xml"),"UTF8"));
+                        BufferedWriter out5= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PROK61a.xml"),"UTF8"));
                         String Data5="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out6= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PROK61b.xml"),"UTF8"));
+                        BufferedWriter out6= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PROK61b.xml"),"UTF8"));
                         String Data6="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out7= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/Intro6.xml"),"UTF8"));
+                        BufferedWriter out7= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/Intro6.xml"),"UTF8"));
                         String Data7="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out8= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/Reading6.xml"),"UTF8"));
+                        BufferedWriter out8= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/Reading6.xml"),"UTF8"));
                         String Data8="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out9= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PROK62R.xml"),"UTF8"));
+                        BufferedWriter out9= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PROK62R.xml"),"UTF8"));
                         String Data9="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out10= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PROK62C.xml"),"UTF8"));
+                        BufferedWriter out10= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PROK62C.xml"),"UTF8"));
                         String Data10="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out11= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/STYX62R.xml"),"UTF8"));
+                        BufferedWriter out11= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/STYX62R.xml"),"UTF8"));
                         String Data11="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out12= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/STYX62C.xml"),"UTF8"));
+                        BufferedWriter out12= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/STYX62C.xml"),"UTF8"));
                         String Data12="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out13= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PROK62a.xml"),"UTF8"));
+                        BufferedWriter out13= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PROK62a.xml"),"UTF8"));
                         String Data13="<SERVICE>\r\n<LANGUAGE>\r\n";
-                        BufferedWriter out14= new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PROK62b.xml"),"UTF8"));
+                        BufferedWriter out14= new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PROK62b.xml"),"UTF8"));
                         String Data14="<SERVICE>\r\n<LANGUAGE>\r\n";
                         if (Reading6th!=null){
                             if (Reading6th.length()>0){
@@ -463,10 +463,10 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 	       		//CREATE THE FIRST TROPAR (BEFORE THE Glory...) PART, IF ANY
 			//CREATE THE SECOND TROPAR (NORMAL)
 			//APPROPRIATE TROPAR STILL NEEDS TO BE DETERMINED!!
-                    BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PTrop61.xml"),"UTF8"));
+                    BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop61.xml"),"UTF8"));
                     String Data="<SERVICE>\r\n<LANGUAGE>";
                     String Data2="<SERVICE>\r\n<LANGUAGE>";
-                    BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PTrop62.xml"),"UTF8"));
+                    BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop62.xml"),"UTF8"));
 			if(Troparion1 != null)
 	    		{
 	    		    System.out.println("The first Troparion is "+Troparion1+" Troparion2 is "+Troparion2);
@@ -503,7 +503,7 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
                 System.out.println(Kontakion1);
 	       	if (Kontakion1 != null)
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PKont6.xml"),"UTF8"));
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKont6.xml"),"UTF8"));
 	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"SR\" What=\"KONTAKION/"+Kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    		out.write(Data);
 	    		out.close();
@@ -541,10 +541,10 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 				return;
 			}
 		}
-		if(elem.equals("LANGUAGE") || elem.equals("TONE"))
-		{
+		//if(elem.equals("LANGUAGE") || elem.equals("TONE"))
+		//{
 			read=true;
-		}
+		//}
 		if(elem.equals("TEXT") && read)
 		{
 			text+=(String)table.get("Value");
@@ -631,7 +631,7 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 		try
 		{
        			 text= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
        			 QDParser.parse(this,fr);
        			 if(text.length()==0)
        			 {

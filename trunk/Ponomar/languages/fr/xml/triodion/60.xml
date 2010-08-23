@@ -1,0 +1,8 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="I Jn_3:21-4:6" Pericope="73"/>
+<SCRIPTURE Type="gospel" Reading="Mk_14:43-15:1" Pericope="65"/>
+
+<SAINT Name="Mercredi de carnivale" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

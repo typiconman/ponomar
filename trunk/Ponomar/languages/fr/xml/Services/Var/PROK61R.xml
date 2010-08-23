@@ -1,0 +1,6 @@
+<SERVICE>
+
+<GETID Type="T" Id="11" Header="1" What="/SEXTE/PROKEIMENON/1a" Who="R" RedFirst="1" NewLine="1"/>
+<GETID Type="T" Id="11" What="/SEXTE/PROKEIMENON/1b" Who="R"/>
+
+</SERVICE>

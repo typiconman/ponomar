@@ -1,0 +1,15 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="III Kings_17:1-23" />
+<SCRIPTURE Type="vespers" Reading="III Kings_18:1, 17-40, 44, 42, 45-56, 19:1-16" />
+<SCRIPTURE Type="vespers" Reading="Composite_5" />
+<SCRIPTURE Type="matins" Reading="Lk_4:22-30" Pericope="14" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Jas_5:10-20" Pericope="57" Note="for the Prophet"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:22-30" Pericope="14" Note="for the Prophet"/>
+
+<SAINT Name="St Prophète Elie le Thesbite" Id="9946" Type="2" />
+<SAINT Name="St Elie Chavchavadze (le Juste), en Géorgie" Id="" Type="0" />
+<SAINT Name="St Elie 1er, Patriarche de Jérusalem" Id="" Type="0" />
+<SAINT Name="St Flavien II, Patriarche d'Antioche" Id="" Type="0" />
+<SAINT Name="St Abraham de Galitch" Id="4274" Type="0" />
+
+</DAY>

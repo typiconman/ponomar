@@ -1,0 +1,14 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="II Cor_8:1-5" Pericope="185"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:57-62" Pericope="49" Cmd="(doy &gt;= 319 &amp;&amp; doy &lt;= 325) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:37-43" Pericope="46" Cmd="(doy &gt;= 312 &amp;&amp; doy &lt;= 318) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:1-6" Pericope="40" Cmd="(doy &gt;= 305 &amp;&amp; doy &lt;= 311) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_8:16-21" Pericope="36" Cmd="(doy &gt;= 298 &amp;&amp; doy &lt;= 304) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:2-10" Pericope="29" Cmd="(doy &gt;= 291 &amp;&amp; doy &lt;= 297) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:1-10" Pericope="22" Cmd="(doy &gt;= 284 &amp;&amp; doy &lt;= 290) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_8:16-21" Pericope="36" Cmd="GS == 0" /> 
+
+<SAINT Name="Samedi de la 23-me semaine après le Pentecôte" Id="" Type="0" Tone="5"/>
+
+</DAY>

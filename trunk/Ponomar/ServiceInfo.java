@@ -28,7 +28,7 @@ ORDER FOR PRIMES ON A GIVEN DAY
 
 public class ServiceInfo implements DocHandler
 {
-	private final static String FileName   = "Ponomar/xml/Commands/ServiceRules.xml";
+	private final static String FileName   = "xml/Commands/ServiceRules.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
 	private static OrderedHashtable Information;
@@ -39,10 +39,12 @@ public class ServiceInfo implements DocHandler
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 	private static OrderedHashtable Service;
 	private String Type;
+        private Helpers findLanguage;
 	
 	public ServiceInfo(String Info)
 	{
 		Type = Info;
+                findLanguage=new Helpers();
 	}
 	
 	public OrderedHashtable ServiceRules() //throws IOException
@@ -103,7 +105,7 @@ public class ServiceInfo implements DocHandler
 		//System.out.print("Today's rank is "+StringOp.dayInfo.get("dRank")+"\n");
 		try
 		{
-			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(FileName), "UTF8"));
+			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 			QDParser.parse(this, frf1);
 		}
 		catch (Exception e)
@@ -140,10 +142,10 @@ public class ServiceInfo implements DocHandler
 				return;
 			}
 		}
-		if(elem.equals("LANGUAGE"))
-		{
+		//if(elem.equals("LANGUAGE"))
+		//{
 			readLanguage=true;
-		}
+		//}
 		if(elem.equals("PERIOD"))
 		{
 			readPeriod=true;

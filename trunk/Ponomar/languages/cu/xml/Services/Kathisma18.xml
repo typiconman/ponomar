@@ -1,0 +1,29 @@
+<SERVICES>
+
+<!-- This is the Eighteenth Kathisma -->
+<!-- The First Stasis -->
+<BIBLE Verses="Psalm_119" Who="" RedFirst="1" NewLine="1" Header="1" 2Stars="1"/>
+<BIBLE Verses="Psalm_120" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_121" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_122" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_123" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+<!-- The Second Stasis -->
+<BIBLE Verses="Psalm_124" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_125" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_126" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_127" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_128" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+<!-- The Third Stasis -->
+<BIBLE Verses="Psalm_129" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_130" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_131" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_132" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_133" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+
+</SERVICES>

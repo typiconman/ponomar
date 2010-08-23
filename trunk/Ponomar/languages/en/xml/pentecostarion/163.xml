@@ -1,0 +1,11 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Eph_1:22-2:3" Pericope="219"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &lt; 258 &amp;&amp; GS == 1) || GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:24-30" Pericope="25" Cmd="(doy &gt;= 272 &amp;&amp; doy &lt;= 278) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:37-44" Pericope="16" Cmd="(doy &gt;= 265 &amp;&amp; doy &lt;= 271) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_3:19-22" Pericope="10" Cmd="(doy &gt;= 258 &amp;&amp; doy &lt;= 264) &amp;&amp; GS == 1"/>
+
+<SAINT Name="Monday of the 17th week after Pentecost" Id="" Type="0" Tone="7" />
+
+</DAY>

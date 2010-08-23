@@ -1,0 +1,23 @@
+<DAY>
+<SAINT Name="3" Cmd="dow == 0" />
+<SAINT Name="10" Cmd="dow == 6" />
+
+<SAINT Name="Aprèsfête de Théophanie" Id="9017" Type="1" />
+<SAINT Name="Ste Domnique" Id="170" Type="1" />
+<SAINT Name="St Georges de Choziba" Id="169" Type="1" />
+<SAINT Name="St Cartérios de Césarée" Id="" Type="0" />
+<SAINT Name="Sts Théophile et Hellade" Id="" Type="0" />
+<SAINT Name="St Agathon d'Egypte" Id="" Type="0" />
+<SAINT Name="St Prophète Shémaya l' ÃÂlamite" Id="" Type="0" />
+<SAINT Name="St Attique, Patriarche de Constantinople" Id="" Type="0" />
+<SAINT Name="St Cyr, Patriarche de Constantinople" Id="" Type="0" />
+<SAINT Name="St Théodore, fondateur du Monastère de Chora" Id="" Type="0" />
+<SAINT Name="St Macaire Makris, Higoumène du Monastère du Christ Pantocrator" Id="" Type="0" />
+<SAINT Name="St Abo de Tiflis en Géorgie" Id="176" Type="0" />
+<SAINT Name="St Grégoire des Grottes de Kiev" Id="171" Type="0" />
+<SAINT Name="autre St Grégoire des Grottes de Kiev" Id="545" Type="0" />
+<SAINT Name="St Grégoire d'Ochrid" Id="" Type="0" />
+<SAINT Name="Sts Isidore de Yuriev et ses 72 compagnons" Id="" Type="0" />
+<SAINT Name="St Séverin, Apôtre du Norique" Id="" Type="0" />
+
+</DAY>

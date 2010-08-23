@@ -1,0 +1,9 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="II Tim_4:5-8" Pericope="298" Note="for the Sunday before Theophany"/>
+<SCRIPTURE Type="gospel" Reading="Mk_1:1-8" Pericope="1" Note="for the Sunday before Theophany"/>
+
+<SAINT Name="Sunday before Theophany" Id="" Type="0" Cmd="dow == 0"/>
+<SAINT Name="Readings for the Sunday before Theophany are read today" Id="" Type="0" Cmd="dow == 1"/>
+<!-- This can only occur on January 1st, which is a Monday -->
+
+</DAY>

@@ -1,0 +1,9 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="Heb_12:28-13:8" Pericope="333 (mid)"/>
+<SCRIPTURE Type="gospel" Reading="Jn_11:1-45" Pericope="39"/>
+<PRIMES Type="Lenten" />
+<LITURGY Type="1" Comment="St John's Liturgy"/>
+
+<SAINT Name="Le Samedi de Lazarus" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

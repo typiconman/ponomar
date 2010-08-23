@@ -1,0 +1,12 @@
+<DAY>
+<SAINT Name="14" Cmd="dow == 0" />
+
+<SAINT Name="Sts Nazaire, Gervais, Prothais et Celse" Id="1737" Type="1" />
+<SAINT Name="St Cosmas l'Hymnographe, Evêque de Maïouma" Id="" Type="0" />
+<SAINT Name="Sts Sylvain et 40 martyrs d'Egypte" Id="1740" Type="0" />
+<SAINT Name="St Pierre d'Auselamos" Id="" Type="0" />
+<SAINT Name="Ste Parascève la Jeune" Id="2637" Type="2" />
+<SAINT Name="St Ignace Agallianos, Métropolite de Mithymne" Id="" Type="0" />
+<SAINT Name="St Nicolas le Pieux, Prince de Novgorod, des Grottes de Kiev" Id="1739" Type="0" />
+
+</DAY>

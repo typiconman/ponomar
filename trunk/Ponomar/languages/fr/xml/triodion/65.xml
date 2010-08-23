@@ -1,0 +1,8 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="I Jn_2:7-17" Pericope="70"/>
+<SCRIPTURE Type="gospel" Reading="Mk_14:3-9" Pericope="63"/>
+<PRIMES Type="Normal" />
+
+<SAINT Name="Vendredi de la Semaine sans jeune" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

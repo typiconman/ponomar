@@ -1,0 +1,14 @@
+<DAY>
+<SAINT Name="19" Cmd="nday == -54 || nday == -58" />
+
+<SAINT Name="Afterfeast of the Meeting of the Lord" Id="" Type="0" Cmd="nday == -55 || nday &lt;= -59" />
+<SAINT Name="Saint Parthenios, Bishop of Lampsacus on the Hellespont (4th C)" Id="409" Type="1" />
+<SAINT Name="Venerable Luke of Hellas (+c.946)" Id="410" Type="1" />
+<SAINT Name="1,003 Martyrs of Nicomedia (+303)" Id="411" Type="0" />
+<SAINT Name="Venerable Aprion, Bishop of Cyprus" Id="" Type="0" />
+<SAINT Name="Venerable Peter of Moneumatia" Id="" Type="0" />
+<SAINT Name="Venerable Mastridia of Palestine" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Priest Alexander (+1938)" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Priest Alexy (+1942)" Id="" Type="0"/>
+
+</DAY>

@@ -1,0 +1,16 @@
+<DAY>
+<SAINT Name="19" Cmd="nday == -49" />
+<!-- The Apodosis of the Meeting of the Lord falls on February 4 if it's Cheesefare Sunday -->
+
+<SAINT Name="St Isidore de Péluse" Id="382" Type="1" />
+<SAINT Name="St Nicolas le Studite, Confesseur, Higoumène du Studion" Id="389" Type="0" />
+<SAINT Name="St Abraham, Evêque d'Arbele en Perse" Id="388" Type="0" />
+<SAINT Name="St Philéas, Evêque de Thmuis et St Philorome" Id="" Type="0" />
+<SAINT Name="St Jean, Evêque d'Irénopolis, l'un des 318 Sts Pères du 1er Concile" Id="" Type="0" />
+<SAINT Name="St Jasime le Thaumaturge" Id="" Type="0" />
+<SAINT Name="St Néomartyr Théoctiste" Id="" Type="0" />
+<SAINT Name="St Néomartyr Joseph d'Alep" Id="" Type="0" />
+<SAINT Name="St Georges, Prince de Vladimir" Id="487" Type="1" />
+<SAINT Name="St Cyrille du Lac Neuf" Id="1229" Type="1" />
+
+</DAY>

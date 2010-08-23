@@ -1,0 +1,37 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_2:11-21" />
+<SCRIPTURE Type="vespers" Reading="Gen_2:4-19" />
+<SCRIPTURE Type="vespers" Reading="Prov_3:1-18" />
+<PRIMES Type="Lenten" LENTENK="9"/>
+<LITURGY Type="-1" Comment="No Divine Liturgy EVER"/>
+
+<SAINT Name="Clean Thursday" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+
+
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
+From enemies visible and invisible deliver us, O Lord, lest haply the heathen say: Where is their God? Let them understand, O Master, that Thou disregardest the sins of Thy people that repent.
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 1st Tone" Tone="1">
+When the Lord hath turned back the captivity of His people.
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+When the Lord hath turned back the captivity of His people.
+</PROKEIMENON>
+<STICHOS Type="1">
+The fool hath said in his heart: there is no God.
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+O Lord, who shall abide in Thy tabernacle?
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+upon uprightness hath His countenance looked.
+</PROKEIMENON>
+<STICHOS Type="2">
+O Lord, who shall abide in Thy tabernacle?
+</STICHOS>
+</SEXTE>
+</SERVICE>
+
+</DAY>
