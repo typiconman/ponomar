@@ -1,8 +1,0 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Gal_1:11-19" Pericope="200" Note="for the Sunday after Nativity"/>
-<SCRIPTURE Type="gospel" Reading="Mt_2:13-23" Pericope="4" Note="for the Sunday after Nativity"/>
-
-<SAINT Name="Неделя по Рождестве Христовом: Правв. Иосифа Обручника, Давида Царя, и Иакова брата Господня" Id="9010" Type="1" Cmd="dow == 0" />
-<SAINT Name="Правв. Иосифа Обручника, Давида Царя, и Иакова брата Господня" Id="9010" Type="1" Cmd="dow != 0" />
-
-</DAY>

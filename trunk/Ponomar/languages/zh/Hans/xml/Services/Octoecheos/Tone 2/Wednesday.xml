@@ -1,9 +1,0 @@
-<TONE>
-<PRIMES TROPARION1="WED2" Type="Normal" KONTAKION1="WED2" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
-<PRIMES Type="Lenten" KONTAKION1="WFL" Cmd="(nday > -50 &amp;&amp; nday < 0)" />
-<TERCE TROPARION1="WED2" Type="Normal" KONTAKION1="WED2" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
-<SEXTE TROPARION1="WED2" Type="Normal" KONTAKION1="WED2" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
-<SEXTE Type="Lenten" KONTAKION1="WFL6" Cmd="(nday > -50 &amp;&amp; nday < 0)"/>
-<NONE TROPARION1="WED2" Type="Normal" KONTAKION1="WED2" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
-
-</TONE>
