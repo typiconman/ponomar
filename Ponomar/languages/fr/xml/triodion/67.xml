@@ -1,8 +1,0 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="II Pet_3:1-18" Pericope="68"/>
-<SCRIPTURE Type="gospel" Reading="Mk_13:24-31" Pericope="61"/>
-<PRIMES Type="Normal" />
-
-<SAINT Name="Mercredi de la Semaine sans jeune" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
-
-</DAY>

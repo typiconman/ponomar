@@ -1,8 +1,0 @@
-<DAY>
-<PRIMES Type="Normal" />
-<SCRIPTURE Type="apostol" Pericope="77" Reading="Jude_1:1-10" />
-<SCRIPTURE Type="gospel" Pericope="109" Reading="Lk_22:39-42, 22:45-23:1" />
-
-<SAINT Name="Вторник сыропустный" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
-
-</DAY>

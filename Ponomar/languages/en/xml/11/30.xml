@@ -1,9 +1,0 @@
-<DAY>
-<SCIRPTURE Type="matins" Reading="Mt_4:18-23" Pericope="9" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostle"/>
-<SCRIPTURE Type="gospel" Reading="Jn_1:35-51" Pericope="4" Note="for the Apostle"/>
-
-<SAINT Name="Holy and All-priased Apostle Andrew the First-Called (+62)" Id="186" Type="4" />
-<SAINT Name="Saint Frumentios, Archbishop of Abyssinia (+c.380)" Id="" Type="0" />
-
-</DAY>
