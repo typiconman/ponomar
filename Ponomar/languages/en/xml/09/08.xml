@@ -1,0 +1,18 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Gen_28:10-17" />
+<SCRIPTURE Type="vespers" Reading="Ezek_43:27, 44:1-4" />
+<SCRIPTURE Type="vespers" Reading="Prov_9:1-11" />
+<SCRIPTURE Type="matins" Reading="Lk_1:39-49, 56" Pericope="4"/>
+<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54"/>
+<SAINT Name="1" Cmd="dow == 0" />
+<SAINT Name="7" Cmd="dow == 6" />
+
+<SAINT Name="Nativity of Our Most Holy Lady Theotokos and Ever-Virgin Mary" Id="1479" Type="7" />
+<SAINT Name="Venerable Serapion of the Spaso-Eleazar Monastery" Id="" Type="0" />
+<SAINT Name="Venerable Lukian" Id="" Type="0" />
+<SAINT Name="Venerable Arsenius of Konevets" Id="" Type="0" />
+<SAINT Name="New Martyr Athanasius of Thessaloniki" Id="" Type="0" />
+<SAINT Name="Icons of the Mother of God: 'Kursk-Root', 'Pochaev', 'Kholm', and 'Sophia - the Wisdom of God'" Id="1481" Type="0" />
+
+</DAY>

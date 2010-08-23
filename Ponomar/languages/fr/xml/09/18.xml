@@ -1,0 +1,14 @@
+<DAY>
+<SAINT Name="4" Cmd="dow == 0" />
+<SAINT Name="11" Cmd="dow == 6" />
+
+<SAINT Name="Apresfete de l'Exaltation" Id="" Type="0"/>
+<SAINT Name="St Eumène le Thaumaturge, Evêque de Gortyne en Crète" Id="1559" Type="1" />
+<SAINT Name="Ste Ariadne de Phrygie" Id="1560" Type="0" />
+<SAINT Name="Stes Sophie et Irène" Id="" Type="0" />
+<SAINT Name="St Castor d'Alexandrie" Id="" Type="0" />
+<SAINT Name="St Romylos" Id="" Type="0" />
+<SAINT Name="St Arcade de Novgorod" Id="" Type="0" />
+<SAINT Name="Sts Didzini, Elizabar et Chalvi, Princes de Géorgie" Id="1561" Type="0" />
+
+</DAY>

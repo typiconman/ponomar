@@ -1,0 +1,14 @@
+<DAY>
+<SAINT Name="9" Cmd="dow == 6" />
+<SCRIPTURE Type="apostol" Reading="I Jn_4:7-11" Pericope="73 (mid)" Note="for St John of Kronstadt"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:31-36" Pericope="26" Note="for St John of Kronstadt"/>
+
+<SAINT Name="Holy Righteous John, Wonderworker of Kronstadt (ROCOR)" Id="6616" Type="4" />
+<SAINT Name="Prophet Joel (800 BC)" Id="1039" Type="1" />
+<SAINT Name="Martyr Uaros and with him 7 Monkmartyr Teachers (+c.307)" Id="1773" Type="1" />
+<SAINT Name="Transfer of the relics of the Venerable John, Abbot of Rila in Bulgaria (1238)" Id="1011" Type="2" />
+<SAINT Name="Blessed Cleopatra and her son John (+327)" Id="1774" Type="0" />
+<SAINT Name="Hieromartyr Sadok, Bishop of Persia, and with him 128 Martyrs (+342)" Id="1914" Type="0" />
+<SAINT Name="Venerable Leontius the Philosopher" Id="" Type="0" />
+
+</DAY>

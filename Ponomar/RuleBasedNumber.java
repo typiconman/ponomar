@@ -75,7 +75,9 @@ class RuleBasedNumber implements DocHandler
     }
     private void initialise()
     {
-		String filename="Ponomar/xml/Commands/RuleBasedNumbers.xml";
+		String filename="xml/Commands/RuleBasedNumbers.xml";
+                Helpers findLanguage=new Helpers();
+                filename=findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename);
 		try
 		{
 			//ALLOWS MULTILINGUAL SUPPORT, WHICH IS A MUST IN OUR CASE.
@@ -113,10 +115,10 @@ class RuleBasedNumber implements DocHandler
 				return;
 			}
 		}
-		if(elem.equals("LANGUAGE"))
-		{
+		//if(elem.equals("LANGUAGE"))
+		//{
 			readRules=true;
-		}
+		//}
 		if (elem.equals("PHRASE") && readRules)
 		{
 			String Key=table.get("Key").toString();

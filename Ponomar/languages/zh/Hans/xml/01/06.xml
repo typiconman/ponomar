@@ -1,0 +1,15 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Mk_1:9-11" Pericope="2"/>
+<SCRIPTURE Type="apostol" Reading="Tit_2:11-14, 3:4-7" Pericope="302"/>
+<SCRIPTURE Type="gospel" Reading="Mt_3:13-17" Pericope="6"/>
+<LITURGY Type="1" Cmd="dow != 0 &amp;&amp; dow != 1" Comment="St John's EXCEPT Sunday or Monday"/>
+<LITURGY Type="2" Cmd="dow == 0 || dow == 1" Comment="St Basils IF Sunday or Monday"/>
+
+<SAINT Name="主显节——我们的主，上帝，救主，耶稣基督神性的显现，也即基督受浸礼节" Id="163" Type="8" />
+<SAINT Name="新殉道司祭罗玛诺（拉切戴莫尼亚地方人，于1695年被土耳其人斩首）" Id="" Type="0" />
+<SAINT Name="新殉道司祭，首席司祭安德列、他的妻子利迪亚、他的岳母多弥尼卡、他的两个女儿，以及他的女仆玛利亚（他们于1919年时候在乌苏里斯克就义）" Id="" Type="0" />
+<SAINT Name="圣劳伦提（切尔尼格夫地方人，1950年）" Id="" Type="0" />
+<SAINT Name="可敬的马卡里乌斯（圣山阿托斯，1431年）" Id="" Type="0" />
+<SAINT Name="圣斯科汀（基尔肯尼的隐士，6世纪）" Id="" Type="0" />
+
+</DAY>

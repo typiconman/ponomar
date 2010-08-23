@@ -36,8 +36,8 @@ public class DivineLiturgy implements DocHandler
 {
 	private final static String configFileName = "ponomar.config"; // CONFIGURATIONS FILE
 	//private final static String generalFileName="Ponomar/xml/";
-	private final static String triodionFileName   = "Ponomar/xml/triodion/";   // TRIODION FILE
-	private final static String pentecostarionFileName = "Ponomar/xml/pentecostarion/"; // PENTECOSTARION FILE
+	private final static String triodionFileName   = "xml/triodion/";   // TRIODION FILE
+	private final static String pentecostarionFileName = "xml/pentecostarion/"; // PENTECOSTARION FILE
 	private static OrderedHashtable readings;	// CONTAINS TODAY'S SCRIPTURE READING
 	private static OrderedHashtable PentecostarionS;		//CONTAINS THE PENTECOSTARION READINGS (SEQUENTIAL (rjadovoje) READINGS!)
 	private static OrderedHashtable MenalogionS;		//CONTAINS THE MENALOGION READINGS, EXCLUDING ANY FLOATERS
@@ -47,6 +47,7 @@ public class DivineLiturgy implements DocHandler
 	private static LanguagePack Phrases=new LanguagePack();
 	private static String[] TransferredDays=Phrases.obtainValues((String)Phrases.Phrases.get("DayReading"));
 	private static String[] Error=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
+        private static Helpers findLanguage=new Helpers();
 	
 
 	public DivineLiturgy() {}
@@ -79,7 +80,7 @@ public class DivineLiturgy implements DocHandler
 				try
 				{
 					
-					FileReader frf = new FileReader("Ponomar/xml/float/" + floatnum + ".xml");
+					FileReader frf = new FileReader(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),"xml/float/" + floatnum + ".xml"));
 					QDParser.parse(this, frf);
 				}
 				catch(Exception e)
@@ -174,7 +175,7 @@ public static String Readings(Vector q1, Vector q2, Vector q3, String ReadingTyp
 	//DETERMINE THE GOVERNING PARAMETERS FOR COMPILING THE READINGS
 	try
 	{
-		FileReader frf = new FileReader("Ponomar/xml/Commands/DivineLiturgy.xml");
+		FileReader frf = new FileReader(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),"xml/Commands/DivineLiturgy.xml"));
 		DivineLiturgy a1 =new DivineLiturgy();
                 QDParser.parse(a1, frf);
 	}
@@ -391,7 +392,7 @@ private static void getReadings(OrderedHashtable SortedReadings, String ReadingT
 	// READ THE PENTECOSTARION / TRIODION INFORMATION
 	try
 	{
-		FileReader frf = new FileReader(filename);
+		FileReader frf = new FileReader(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename));
 		DivineLiturgy a =new DivineLiturgy();
                 
 		QDParser.parse(a, frf);
@@ -419,13 +420,13 @@ private static void getReadings(OrderedHashtable SortedReadings, String ReadingT
 	int d = today.getDay();
 	
 	filename = "";
-	filename += m < 10 ? "Ponomar/xml/0" + m : "Ponomar/xml/" + m;  // CLEANED UP
+	filename += m < 10 ? "xml/0" + m : "xml/" + m;  // CLEANED UP
 	filename += d < 10 ? "/0" + d : "/" + d; // CLEANED UP
 	filename += ".xml";
 	// PARSE THE MENAION XML FILE
 	try
 	{
-		FileReader fr = new FileReader(filename);
+		FileReader fr = new FileReader(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename));
 		DivineLiturgy a =new DivineLiturgy();
 		QDParser.parse(a, fr);
 	}

@@ -1,0 +1,22 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Prov_10:7,6,3:13-16" Note="for St Nicholas" Cmd="nday != 48"/>
+<SCRIPTURE Type="vespers" Reading="Prov_10:31-32, 11:1-12" Note="for St Nicholas" Cmd="nday != 48"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" Note="for St Nicholas" Cmd="nday != 48"/>
+<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="dow != 0 &amp;&amp; nday != 48" Note="for St Nicholas"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Nicholas" Cmd="nday != 48"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Nicholas" Cmd="nday != 48"/>
+
+<SAINT Name="Prophet Isaiah (8th C BC)" Id="1109" Type="1" />
+<SAINT Name="Martyr Christopher of Lycia (+ c.250)" Id="1022" Type="1" />
+<SAINT Name="Transfer of the relics of St Nicholas the Wonderworker from Myra to Bari (1087)" Id="1635" Type="4" Cmd="nday != 48"/>
+<SAINT Name="Venerable Joseph of Optina (+1911)" Id="4636" Type="0" />
+<SAINT Name="New Hieromartyr Priest Demetrius (+1938)" Id="" Type="0"/>
+<SAINT Name="New Hieromartyr Priest Vasily (+1939)" Id="" Type="0" />
+<SAINT Name="Venerable Shio of Mgvimo, Georgia (6th C)" Id="2359" Type="0" />
+<SAINT Name="Transfer of the relics of the Martyr child Gabriel" Id="" Type="0" />
+<SAINT Name="Martyr Epimachus the New" Id="" Type="0" />
+<SAINT Name="Martyr Gordian" Id="" Type="0" />
+<SAINT Name="Venerable Nicholas Buneni" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God of Perekop" Id="" Type="0" />
+
+</DAY>

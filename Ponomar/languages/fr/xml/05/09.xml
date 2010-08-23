@@ -1,0 +1,14 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Prov_10:7,6,3:13-16" Note="for St Nicholas" Cmd="nday != 48"/>
+<SCRIPTURE Type="vespers" Reading="Prov_10:31-32, 11:1-12" Note="for St Nicholas" Cmd="nday != 48"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" Note="for St Nicholas" Cmd="nday != 48"/>
+<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="dow != 0 &amp;&amp; nday != 48" Note="for St Nicholas"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Nicholas" Cmd="nday != 48"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Nicholas" Cmd="nday != 48"/>
+
+<SAINT Name="St Prophète Isaïe" Id="1109" Type="1" />
+<SAINT Name="Sts Christophe et ses compagnons" Id="1022" Type="1" />
+<SAINT Name="Transfert des Reliques de St Nicolas de Myre à Bari" Id="1635" Type="4" Cmd="nday != 48"/>
+<SAINT Name="St Nicolas le Nouveau de Vounaine et ses compagnons" Id="" Type="0" />
+
+</DAY>

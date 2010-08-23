@@ -35,10 +35,10 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	//TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
 	//DURING THE COURSE OF A SINGLE WEEK.
 	private final static String configFileName = "ponomar.config";   //CONFIGURATIONS FILE
-	private final static String octoecheosFileName   = "Ponomar/xml/Services/Octoecheos/";   // THE LOCATION OF THE BASIC SERVICE RULES
-	private final static String ServicesFileName = "Ponomar/xml/Services/"; // THE LOCATION FOR ANY EXTRA INFORMATION
+	private final static String octoecheosFileName   = "xml/Services/Octoecheos/";   // THE LOCATION OF THE BASIC SERVICE RULES
+	private final static String ServicesFileName = "xml/Services/"; // THE LOCATION FOR ANY EXTRA INFORMATION
 	private static OrderedHashtable PrimesTK;
-	private static String FileNameIn="Ponomar/xml/Services/PRIMES1/";
+	private static String FileNameIn="xml/Services/PRIMES1/";
 	private static String FileNameOut=FileNameIn+"Primes.html";
 	private static String text;
 	private static boolean read=false;
@@ -47,8 +47,8 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	private String Kontakion1;
 	private String Kontakion2;
 	private String Troparion2;
-	private final static String triodionFileName   = "Ponomar/xml/triodion/";   // TRIODION FILE
-	private final static String pentecostarionFileName = "Ponomar/xml/pentecostarion/"; // PENTECOSTARION FILE
+	private final static String triodionFileName   = "xml/triodion/";   // TRIODION FILE
+	private final static String pentecostarionFileName = "xml/pentecostarion/"; // PENTECOSTARION FILE
 	private String filename;
 	private int lineNumber;
 	private LanguagePack Text=new LanguagePack();
@@ -72,7 +72,8 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	
 	public Primes(int Weekday)
 	{
-		helper=new Helpers();
+            //Completely depracated
+            /*helper=new Helpers();
 		StringOp.dayInfo = new Hashtable();
 		StringOp.dayInfo.put("dow", Weekday);		//DETERMINE THE DAY OF THE WEEK.
 		
@@ -110,7 +111,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		}
 		catch (IOException j)
 		{
-		}
+		}*/
 	}	
 	public Primes(JDate date)
 	{
@@ -147,11 +148,11 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 			else
 			{
 				//strOut=strOut+"<p><Font Color='red'>Disclaimer: This is a preliminary attempt at creating the Primes service.</Font></p>";
-				int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
-                                if (LangCode==2 || LangCode==3 ){
+				//int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
+                                //if (LangCode==2 || LangCode==3 ){
                                     //strOut="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"><p><font face=\"Hirmos Ponomar\" size=\"5\">"+strOut+"</font></p>";
                                     //System.out.println("Added Font");
-                                   }
+                                  // }
 
                                 PrimesWindow(strOut);
 			}
@@ -251,7 +252,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 
 				try
 				{
-					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(FileName), "UTF8"));
+					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 					QDParser.parse(this, frf);
 
 				}
@@ -290,7 +291,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -334,7 +335,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	       		{
 	       			StringOp.dayInfo.put("PFlag2",2);
 	       			//CREATE THE KATHISMA PART
-	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PKath.xml"),"UTF8"));	
+	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKath.xml"),"UTF8"));
 	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma"+LentenK+"\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
@@ -349,18 +350,18 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	    		{
 	    		    	if(Troparion2 != null)
 	    		    	{
-	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PTrop1.xml"),"UTF8"));	
+	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop1.xml"),"UTF8"));
 	    				String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    				out.write(Data);
 	    				out.close();
 	    				
-	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PTrop2.xml"),"UTF8"));	
+	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop2.xml"),"UTF8"));
 	    				Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion2+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    				out.write(Data);
 	    				out.close();
 					
 	    		    	}
-    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PTrop2.xml"),"UTF8"));	
+    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop2.xml"),"UTF8"));
 	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
@@ -372,13 +373,13 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	       	//APROPRIATE KONTAKION MUST STILL BE CREATED!
 	       	if (Kontakion1 != null)
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PKont1.xml"),"UTF8"));	
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKont1.xml"),"UTF8"));
 	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+Kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    		out.write(Data);
 	    		out.close();
 		}
 	    	 		
-		
+		//System.out.println("Primes Case A: ");
 		strOut=ReadPrime.startService(ServicesFileName + "Prime.xml")+"</p>";
 	
 	   
@@ -410,10 +411,10 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 				return;
 			}
 		}
-		if(elem.equals("LANGUAGE") || elem.equals("TONE"))
-		{
+		//if(elem.equals("LANGUAGE") || elem.equals("TONE"))
+		//{
 			read=true;
-		}
+		//}
 		if(elem.equals("TEXT") && read)
 		{
 			text+=(String)table.get("Value");
@@ -491,7 +492,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		try
 		{
        			 text= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
        			 QDParser.parse(this,fr);
        			 if(text.length()==0)
        			 {

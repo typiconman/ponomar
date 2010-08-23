@@ -88,10 +88,13 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         //super("Ponomar Scripture Reader");
         setTitle(captions[7]);
         //ADDED Y.S. TO ALLOW FOR MULTILINGUAL AND ALL BIBLE READING
-        String a = (String) ConfigurationFiles.Defaults.get("BibleDefaults");
+        /*String a = (String) ConfigurationFiles.Defaults.get("BibleDefaults");
         String[] Default = a.split(",");
         int LSa = Integer.parseInt(StringOp.dayInfo.get("LS").toString());
-        curversion = Default[LSa];
+        curversion = Default[LSa];*/
+        LanguagePack getLang=new LanguagePack();
+        curversion = getLang.Phrases.get("BibleV").toString();
+        //System.out.println(curversion);
 
         // FIRST, PARSE THE BIBLE.XML FILE TO OBTAIN ALL THE NECESSARY INFORMATION
         try {
@@ -234,9 +237,9 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                 return;
             }
         }
-        if (elem.equals("LANGUAGE")) {
+        //if (elem.equals("LANGUAGE")) {
             readFile = true;
-        }
+        //}
         if (elem.equals("BIBLE")) {
             versions2.put(table.get("Id").toString(),table.get("Name").toString() );
             //versions.put("-1","<html><b><u>T</u>wo</b><br>lines</html>");
@@ -358,8 +361,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                 books.put((String) table.get("Id"), (String) table.get("Name"));
                 chapters.put((String) table.get("Id"), (String) table.get("Chapters"));
                 Intro.put(table.get("Id").toString(), table.get("Intro").toString());  //ADDED Y.S.
-            }
-            if (readFile) {
+            //}
+            //if (readFile) {
                 abbrev.put((String) table.get("Id"), (String) table.get("Short"));
             }
         }
@@ -369,9 +372,9 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         if (elem.equals("BIBLE")) {
             lastversion = "";
         }
-        if (elem.equals("LANGUAGE")) {
-            readFile = false;
-        }
+        //if (elem.equals("LANGUAGE")) {
+          //  readFile = false;
+        //}
     }
 
     public void text(String text) {
@@ -583,10 +586,12 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 
     public String[] getText(String book, String passage, boolean RedStuff) {
         //SELECT THE CURRENT GENERAL BIBLE
-        String a = (String) ConfigurationFiles.Defaults.get("BibleDefaults");
+        /*String a = (String) ConfigurationFiles.Defaults.get("BibleDefaults");
         String[] Default = a.split(",");
         int LSa = Integer.parseInt(StringOp.dayInfo.get("LS").toString());
-        curversion = Default[LSa];
+        curversion = Default[LSa];*/
+        LanguagePack getLang=new LanguagePack();
+        curversion = getLang.Phrases.get("BibleV").toString();
         try {
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));
             QDParser.parse(this, frf);
@@ -673,10 +678,12 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 
         //INITIALISE TO THE DEFAULT BIBLE FOR THE GIVEN LANGUAGE
         //ADDED Y.S. TO ALLOW FOR MULTILINGUAL AND ALL BIBLE READING
-        String a = (String) ConfigurationFiles.Defaults.get("BibleDefaults");
-        String[] Default = a.split(",");
-        int LSa = Integer.parseInt(StringOp.dayInfo.get("LS").toString());
-        curversion = Default[LSa];
+        //String a = (String) ConfigurationFiles.Defaults.get("BibleDefaults");
+        //String[] Default = a.split(",");
+        //int LSa = Integer.parseInt(StringOp.dayInfo.get("LS").toString());
+         LanguagePack getLang=new LanguagePack();
+        curversion = getLang.Phrases.get("BibleV").toString();
+        //System.out.println("Bible: " + curversion);
 
         try {
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));
@@ -742,10 +749,12 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     public String getHyperlink(String reading) {
         //THIS FUNCTION CREATES THE HYPERLINK FOR BIBLE READINGS
         //CREATED Y.S. 2008/12/11 n.s.
-        String a = (String) ConfigurationFiles.Defaults.get("BibleDefaults");
+        /*String a = (String) ConfigurationFiles.Defaults.get("BibleDefaults");
         String[] Default = a.split(",");
         int LSa = Integer.parseInt(StringOp.dayInfo.get("LS").toString());
-        curversion = Default[LSa];
+        curversion = Default[LSa];*/
+        LanguagePack getLang=new LanguagePack();
+        curversion = getLang.Phrases.get("BibleV").toString();
 
         try {
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));
@@ -902,10 +911,12 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         //ONLY THE COMPLETE READING NEEDS TO BE SENT FOR THE COMPOSITE READING; OTHERWISE THE BOOK OF THE BIBLE WILL SUFFICE
         //INITIALISE TO THE DEFAULT BIBLE FOR THE GIVEN LANGUAGE
         //ADDED Y.S. TO ALLOW FOR MULTILINGUAL AND ALL BIBLE READING
-        String a = (String) ConfigurationFiles.Defaults.get("BibleDefaults");
+        /*String a = (String) ConfigurationFiles.Defaults.get("BibleDefaults");
         String[] Default = a.split(",");
         int LSa = Integer.parseInt(StringOp.dayInfo.get("LS").toString());
-        curversion = Default[LSa];
+        curversion = Default[LSa];*/
+        LanguagePack getLang=new LanguagePack();
+        curversion = getLang.Phrases.get("BibleV").toString();
 
         try {
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));

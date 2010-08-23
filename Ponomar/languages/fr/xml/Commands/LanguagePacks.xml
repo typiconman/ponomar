@@ -1,0 +1,101 @@
+﻿<LANGUAGEPACKS>
+<!-- This document contains all the required languages specific features for the Ponomar interface in all the languages that are supported by the programme. For trial purposes, at least all the information in this file should be translated, the Easter file in the Pentecostarion (xml/pentecostarion/1.xml), and the file for the Feast of the Annunciation (March 25th, xml/3/25.xml), the first 12 verses of the Gospel according to John, and the Prime service (xml/Services/Primes...) so as to test all the capabilities of the programme. The state of completion is defined as a value out of 10 that states what is available: 0 represents nothing, 1 represents the above requirements, 5 all that is currently required, 10 a complete language, including video and audio files.
+Note: /, is used to separate entries in a list.
+Note: The defaults must be loaded before this file can be read.
+Note: This section should be translated into all of the supported languages.
+<B>Note: All the sections must contain the same set of phrases, even if some are not translated!</B>
+Note: The general format for the files is:
+&lt;LANGUAGE NameLocal="Name of the language in the language itself" NameEnglish="Name of the language in English" Cmd="LS == ##"&gt;
+&lt;PHRASE Key="some value" Text="the translated text" Comment="Translator's comments or clarifications in the same language as the LanguageName"/&gt;
+&lt;PHRASE .../&gt;
+&lt;/LANGUAGE&gt;
+Final Comments:
+Translator: Aleksander Andreev (almost all)
+State of completion: 5 -->
+<!-- Ce document contient toute l’information spécifique à chaque langue pour l’interface de Ponomar. Pour des raisons préliminaire et pour éprouver le programme, au moins l’information dans les files suivants doivent être traduire : Le file de Pâques dans le « Pentecostarion » (xml/pentecostarion/1.xml); le file pour le Fête de l’Annonciation (25 mars, xml/3/25.xml); le 12 premier vers du Évangile selon Jean, et le service de la première heure (Prime) (xml/Services/Primes...). L’état de finissement est défini par un valeur sur 10, où 0 signifie que rien n’était complies; 1 signifie que les suggestions au-sous a été complies; 5 signifie que tous qui peut utiliser est complies; et 10 signfie que nous avons un langue absolument finie, y compris les file de vidéo et d’audio.
+Note: /, est utilisé pour separer les éléments d'une liste.
+Note : Les defaults doivent être « loaded » avant que cette file peut être lu.
+Note : Cette section de file doit être traduis dans tous les autres langues.
+<B>Note : Tous les sections pour chaque langue doit contenir les mêmes phrase. <B>
+Note : Le format général est :
+&lt;LANGUAGE NameLocal="le nom de la langue dans la lange-même" NameEnglish="le nom de la langue en anglais" Cmd="LS == ##"&gt;
+&lt;PHRASE Key="le même valeur" Text="le texte traduis" Comment="Des suggestions ou clarifications du traducteur dans le même langue que NameLocal"/&gt;
+&lt;PHRASE .../&gt;
+&lt;/LANGUAGE&gt;   
+Suggestion finale :
+Traducteur : Yuri Shardt
+L’état de completation : 1 (sauf le Bible et la première heure).
+-->
+<!--
+The Russian part has been partially completed by Aleksander Andreev, while the Church Slavonic Bible has (except for III Esdras) been added. The Russian version of the Menologion and Pentecostarion/Triodion (as per the Moscow Patriarchiate regulations) has been added by Aleks.
+-->
+<!--
+The Chinese version (both Traditional and Simplified characters) of the Menologion and Pentecostarion/Triodion has been added by Mitrophan Chin.
+Likewise, the Bible in both Traditional and Simplified Chinese characters has been added by Mitrophan Chin. Only the New Testament and most of the Old Testament are available.
+-->   
+
+
+<PHRASE Key="NameLocal" Value="Français"/>
+<PHRASE Key="NameEnglish" Value="French"/>
+<PHRASE Key="BibleV" Value="fra"/>
+<PHRASE Key="Authors" Value="Aleksandr Andreev/,Yuri Shardt"/>
+<PHRASE Key="Year" Value="2006-2010"/>
+<PHRASE Key="And" Value=" et "/>
+<PHRASE Key="Comma" Value=", "/>
+ <PHRASE Key="0" Value="Ponomar" Comment="Ceci est la seule valeur pour cette clé."/>
+<PHRASE Key="1" Value="janvier/,février/,mars/,avril/,mai/,juin/,juillet/,août/,septembre/,octobre/,novembre/,décembre" Comment="Les noms des mois dans le cas nominatif, utilisés dans la forme 'mois année'."/>
+<PHRASE Key="2" Value="dimanche/,lundi/,mardi/,mercredi/,jeudi/,vendredi/,samedi" Comment="Les noms de la semaine dans le cas nominatif, utilisés dans la forme 'semaine, mois numéro, année'."/> 
+<PHRASE Key="3" Value="janvier/,février/,mars/,avril/,mai/,juin/,juillet/,août/,septembre/,octobre/,novembre/,décembre" Comment="Les noms des mois dans le cas génitif, utilisés dans la forme 'jour, le numéro mois année'."/>
+<PHRASE Key="5" Value="dimanche/,lundi/,mardi/,mercredi/,jeudi/,vendredi/,samedi" Comment="Les noms de la semaine dans le cas nominatif, utilisés dans la forme 'semaine, mois numéro, année'."/> 
+<PHRASE Key="4" Value="janvier/,février/,mars/,avril/,mai/,juin/,juillet/,août/,septembre/,octobre/,novembre/,décembre" Comment="Les noms des mois dans le cas génitif, utilisés dans la forme 'jour, le numéro mois année'."/>
+<PHRASE Key="Options" Value="Options" />
+<PHRASE Key="File" Value="File/,Sauvegarder/,Les options de file usuel/,Sauvegarder l'écran/,Quitter/,Cette commande quitte le programme/,Imprimer/,Cette commande imprime l'information dans le boîte de text." />
+ <PHRASE Key="SMenu" Value="Saints/,Des actions pour chercher pour d'information sur les saints/,Chercher/,Chercher pour d'information sur les saints" />
+ <PHRASE Key="Services" Value="Offices/,La liturgie divine/,Vêpres/,Complies/,Matines/,Prime (la première heure)/, Tierce (la troisième heure)/,Sexte (la sixième heure)/,None (la neuvième heure)/,Les heures royales/,Les vigiles/,L'office de minuit/,Typica/,Cette commande permit la création des offices/,Créer la divine liturgie pour ce jour/,Créer les vêpres pour ce jour/,Créer les complies pour ce jour/,Créer les matines pour ce jour/,Créer le prime (la première heure) pour ce jour/,Créer le tierces (la troisième heure) pour ce jour/,Créer le sexte (la sixième heure) pour ce jour/,Créer le none (la neuvième heure) pour ce jour/,Créer les heures royales pour ce jour/,Créer les vigiles pour ce jour/,Créer l'office de minuit pour ce jour/,Créer le Typica pour ce jour" />
+<PHRASE Key="Bible" Value="Bible/,Cette commande permit l'utilisateur d'utiliser la lecture du Bible" />
+ <PHRASE Key="Help" Value="Aide/,Cette commande permit l'utilisateur d'utiliser l'aide./,À propos de/,Accéder au files qui expliquent le raison pour Ponomar/,Aller à l'aide"/>
+<PHRASE Key="LanguageMenu" Value="Langue/,Sélectionner la langue de l'interface/, Sélectionner la langue de l'interface/,Oui/,Pour changer la langue de l'interface, s’il vous plaît recommencer le programme./,Non/,Est-ce que vous veuillez surecrire ce file : /,Est-ce que vous êtes sûre que vous veuillez fermer ce fenêtre ?"/>
+<PHRASE Key="About" Value="Version/,Ponomar est désigné enfin que l'utilisateur peut comprendre et connaître la richesse et la beauté de la tradition Orthodoxe. Le programme est dans sa phase développementale./,Chez Ponomar, nous croyons que les textes Orthodoxes doivent être libre pour les utiliser et les distribuer. Dieu n'avait pas réclamé ses droits d’auteur sur le Bible. St. Jean Damascène n'avait pas réclamé ses droits d’auteur sur l'Octoèques. Donc, Ponomar et tous les textes, qui sont incorporés dans Ponomar, sont distribués sur les termes de GPL./,Droits d’Auteur réservés/,par/,Reconnaissances : (Aucuns)" />
+ <PHRASE Key="GospelSelection" Value="Jordanville/,Saute Lucienne/,Le lectionnaire d'Évangile/,Sélectionner le lectionnaire d'Évangile désirée." />
+ <PHRASE Key="Tones" Value="/,I/,II/,III/,IV/,V/,VI/,VII/,VIII" Comments="Permettre d'utiliser des formats différentes dans les autres langues comme la grecque (avec des lettres) and le vieux slave (avec des lettres cyrilliques)" />
+ <PHRASE Key="Main" Value="Le calendrier grégorien/,Le lever de soleil/,Le coucher de soleil/,La phase de la lune ecclésiastique/,Ton TT ; /,L'Information pour /,Est-ce que vous êtes sûre que vous veuillez quitter le programme ?" />
+ <PHRASE Key="gospel" Value="Évangile"/> <PHRASE Key="apostol" Value="Épître"/>
+<PHRASE Key="matins" Value="Matines"/>
+<PHRASE Key="vespers" Value="Vêpres"/>
+<PHRASE Key="1st hour" Value="1&lt;sup&gt;re&lt;/sup&gt; heure"/>
+<PHRASE Key="3rd hour" Value="3&lt;sup&gt;me&lt;/sup&gt; heure"/>
+<PHRASE Key="6th hour"	Value="6&lt;sup&gt;me&lt;/sup&gt; heure"/>
+<PHRASE Key="9th hour" Value="9&lt;sup&gt;me&lt;/sup&gt; heure"/>
+<PHRASE Key="Fasts" Value="Aucun jeûne /,Jeûne sévère /,Jeûne : Le vin et l'huile sont permit. /,Jeûne : Le poisson, le vin, et l'huile sont permit. /,Les régulations du jeûne : /,Une erreur se produit en calculant l'information sur le jeûne /, : Règle monastique : /,Aucunne nourriture /,xénophagie /,Nourriture chaude sans huile /,Jeûne : Le caviar, le vin, et l'huile sont permit. /,Jeûne : Le viande est exclus. /,Jeûne : Le vin est permit. /,le viande/,les produits lactières/,le poisson/,le caviar/,l'huile/,le vin/,des nourritures secs/,est/,sont/,sont/,permit/,exclus/,et/, ; et/,Jeûne : " />
+<PHRASE Key="Week1" Value="dim/,lun/,mar/,mer/,jeu/,ven/,sam" Comment="Ceci sont les abréviations pour les jours de la semaine." />
+<PHRASE Key="Phases" Value="Nouvelle Lune/,Premier croissant/,Premier quartier/,Lune gibbeuse ascendante/,Pleine Lune/,Lune gibbeuse descendante/,Dernier quartier/,Dernier croissant" Comment="Les phases de la lune" />
+<PHRASE Key="Primes" Value="Aucun office de Primes n’est pas célébré aujourd'hui/,Prime (Première Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
+<PHRASE Key="DayReading" Value="pour dimanche/,pour lundi/,pour   mardi/,pour mercredi/,pour jeudi/,pour vendredi/,pour samedi" Comment="Ceci sont les formes placée dans les parenthèses après les lectures transférées (l'Évangile et l'Épître)."/>
+<PHRASE Key="DateFormat" Value="WW, le DD MM YY" Comment="Ceci montrera quelque chose similaire à mercredi, le 28 août 2008. Les clés permis sont WW pour le jour, DD for numéro de jour, MM pour le mois, YY pour l'année. Des informations supplémentaires, comme une comma,   pourraient inclus."/>
+<PHRASE Key="Feasts" Value="La Circoncision de Seigneur/,La Théophanie/,La Nativité de St. Jean le Baptiste/,Sts. Pierre et Paul/,La Transfiguration/,La Dormition de la Mère de Dieu/,La Décollation de St. Jean le Baptiste/,La Nativité de la Mère de Dieu/,L'Exaltation de la Sainte Croix/,La Protection de la Mère de Dieu/,L'Entrée de la Mère de Dieu dans le Temple/,La Nativité de nôtre Seigneur/,Kyriopâques: Pâques et l'Annonciation/,Pâques/,L'Annonciation/,Le Pentecôte/,L'Ascension de Seigneur/,Le Dimanche des Rameaux/,Le Rencontre de nôtre Seigneur" />
+<PHRASE Key="Helpers" Value="Sauvegarder un file html." />
+<PHRASE Key="PrimeSelection" Value="Lecteur/,Prêtre/,Éveque/,Indépendente/,Sans le début/,Sans le fin/,Sans le début et le fin/,Type" />
+<PHRASE Key="ServiceRead" Value="Il manque le tître désiré./,Une erreur serieuse se produit pendant la lecture de file :  /,Il manque le ordre désiré./,Il manque le surtître désiré./,Une erreur se produit en trouvant l'information désirée : " />
+<PHRASE Key="Errors" Value="Il manque/,Il nous manque le floater avec   numéro/,Erreur à jour/,Expression malformée: Il manque des   parenthèses/,Expression malformée:/,n'etait pas trouve/,Les valeurs ne   sont pas proprement lis./,Non-existant mois/,Non-existant   jour:/,dans/,Un jour julienne doit être plus grand que 0" />
+<PHRASE Key="RoyalHours" Value="Les heures royales ne sont pas servies aujourd'hui./,Les heures royales"/>
+<PHRASE Key="Commemoration" Value="Une erreur se produit pendant la lecture du Hashtable !\nIl manque l'élément : /, avec le tag : /,Une erreur se produit pendant la lecture du Hashtable !\nIl manque le Nœud : /,Une erreur se produit pendant la lecture du Hashtable ! ! !" Comments="The spaces must be maintained, as well as the new lines \n"/>
+<PHRASE Key="BibleW" Value="Chapitre précédent/,Tout le chapitre/,Chapitre suivant/,Favorir un passage/,Copier le passage/,Sauvegarder le passage/,Imprimer le passage/,Ponomar : Lecture de la Bible/,Une erreur se produit pendant la lecture du bmlfile : /,Il manque le ressource : "/>
+<PHRASE Key="Terce" Value="Aucun office de Terce n’est pas célébré aujourd'hui/,Terce (Troisième Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
+<PHRASE Key="Sexte" Value="Aucun office de Sexte n’est pas célébré aujourd'hui/,Sexte (Sixième Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
+<PHRASE Key="None" Value="Aucun office de None n’est pas célébré aujourd'hui/,None (Neuvième Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
+<PHRASE Key="FontFaceM" Value="" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontSizeM" Value="" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontFaceL" Value="Times New Roman" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
+<PHRASE Key="FontSizeL" Value="14" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="CommSep" Value=" ; " Comment="This is the mark to separate the different commemorations that are dispalyed."/>
+<PHRASE Key="ReadSep" Value=" ; " Comment="This is the mark to separate the readings."/>
+<PHRASE Key="Colon" Value=" : " Comment="This is for everytime that a colon is required."/>
+<PHRASE Key="Language" Value="fr" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<PHRASE Key="Country" Value="FR" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
+<PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
+<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
+<PHRASE Key="TimeF" Value="HH h MM min" Comment="This gives the format for the time. The 24-hour clock will be used."/>
+<PHRASE Key="LivesW" Value="Vive/,Le tropaire/, Podoben : /,Le kondakion/,Tone : TT/, ; /,Il manque l'infomration sur cette commemoration." Comment="A space (if required) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="Icon précédent/,Icon suivant/,Aucun Icon n'avait pas trouvé."/>
+
+</LANGUAGEPACKS>

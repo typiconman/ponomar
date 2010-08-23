@@ -1,0 +1,8 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="II Jn_1:1-13" Pericope="75"/>
+<SCRIPTURE Type="gospel" Reading="Mk_15:22, 25, 33-41" Pericope="68"/>
+<PRIMES Type="Normal" />
+
+<SAINT Name="离肉预备日" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

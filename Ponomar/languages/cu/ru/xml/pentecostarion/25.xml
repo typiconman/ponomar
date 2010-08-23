@@ -1,0 +1,12 @@
+<DAY>
+<PRIMES Type="Easter" />
+<SCRIPTURE Type="vespers" Reading="Mica_4:2-3, 5, 6:1-5, 8" />
+<SCRIPTURE Type="vespers" Reading="Isa_25:1-13" />
+<SCRIPTURE Type="vespers" Reading="Prov_9:1-11" />
+<SCRIPTURE Type="apostol" Reading="Acts_14:6-18" Pericope="34"/>
+<SCRIPTURE Type="gospel" Reading="Jn_7:14-30" Pericope="26"/>
+
+<SAINT Name="Среда 4-й седмицы по Пасхе. Преполовение Пятидесятницы" Id="" Type="3" Tone="3"/>
+<SAINT Name="Моздокской и Дубенской-Красногорской (XVII) икон Божией Матери (переходящие празднования в Преполовение Пятидесятницы)" Id="913" Type="0"/>
+
+</DAY>

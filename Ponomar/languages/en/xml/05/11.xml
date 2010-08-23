@@ -1,0 +1,18 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
+
+<SAINT Name="Hieromartyr Mocius the Presbyter of Amphipolis in Macedonia (+ c.295)" Id="1037" Type="1" />
+<SAINT Name="Holy Equal-to-the-Apostles Methodius (+885) and Cyrill (+869), teachers of the Slavs" Id="1525" Type="5" Cmd="nday != 50"/>
+<SAINT Name="Holy Equal-to-the-Apostles Rostislav, prince of Greater Moravia (+870)" Id="6812" Type="1"/>
+<SAINT Name="New Hieromartyr Priest Michael (+1920)" Id="" Type="0"/>
+<SAINT Name="New Hieromartyr Alexander, Archbishop of Khar'kov (+1940)" Id="" Type="0" />
+<SAINT Name="Venerable Sophronius the Recluse of the Kiev Far Caves (13th)" Id="2045" Type="0" />
+<SAINT Name="Hieromartyr Joseph, First Metropolitan of Astrakhan (+1672)" Id="1054" Type="0" />
+<SAINT Name="Saint Nicodemus, Archbishop of Serbia (+1325)" Id="1041" Type="0" />
+<SAINT Name="Commemoration of the Founding of Constantinople (324)" Id="" Type="0" />
+<SAINT Name="New Martyrs Dioscorus and Argirus (1808)" Id="" Type="0" />
+<SAINT Name="Icon of the Mother of God of Constantinople" Id="" Type="0" />
+
+</DAY>

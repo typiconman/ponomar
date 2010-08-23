@@ -1,0 +1,14 @@
+<DAY>
+<SAINT Name="4" Cmd="dow == 0" />
+<SAINT Name="11" Cmd="dow == 6" />
+
+<SAINT Name="Apresfete de l'Exaltation" Id="" Type="0"/>
+<SAINT Name="Ste Euphémie, Grande Martyre de Chalcédoine" Id="2479" Type="2" />
+<SAINT Name="Ste Martyre Mélitène" Id="" Type="0" />
+<SAINT Name="Ste Martyre Ludmilla, Reine des Tchèques" Id="" Type="0" />
+<SAINT Name="St Cyprien, Métrpolite de Moscou et de toute la Russie" Id="1209" Type="0" />
+<SAINT Name="St Procope le Tchèque" Id="" Type="0" />
+<SAINT Name="Sts Joseph et Isaac de Géorgie" Id="1549" Type="0" />
+<SAINT Name="St Cyprien de Carthage" Id="" Type="0" />
+
+</DAY>

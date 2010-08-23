@@ -1,0 +1,14 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Pericope="236" Reading="Philip_1:8-14" />
+<SCRIPTURE Type="gospel" Pericope="44" Reading="Lk_9:23-27" Cmd="(doy &gt;= 287 &amp;&amp; doy &lt;= 293) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="34" Reading="Lk_8:1-3" Cmd="(doy &gt;= 280 &amp;&amp; doy &lt;= 286) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="27" Reading="Lk_6:37-45" Cmd="(doy &gt;= 273 &amp;&amp; doy &lt;= 279) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="18" Reading="Lk_5:12-16" Cmd="(doy &gt;= 266 &amp;&amp; doy &lt;= 272) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="11" Reading="Lk_3:23-4:1" Cmd="(doy &gt;= 259 &amp;&amp; doy &lt;= 265) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_1:16-22" Pericope="3" Cmd="(doy &gt;= 252 &amp;&amp; doy &lt;= 258) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="18" Reading="Lk_5:12-16"  Cmd="GS == 0" /> 
+
+<SAINT Name="Tuesday of the 19th week after Pentecost" Id="" Type="0" Tone="1" />
+
+</DAY>

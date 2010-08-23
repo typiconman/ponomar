@@ -1,0 +1,15 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="Jude_1:1-25" Pericope="77" Note="for the Apostle"/>
+<SCRIPTURE Type="gospel" Reading="Jn_14:21-24" Pericope="48" Note="for the Apostle"/>
+<SAINT Name="15" Cmd="dow == 6" />
+
+<SAINT Name="Апостола Иуды, брата Господня (ок. 80)" Id="1346" Type="4"/>
+<SAINT Name="Свт. Иова, патриарха Московского и всея Руси (1607)" Id="6632" Type="4"/>
+<SAINT Name="Святителя Иоанна (Максимовича) архиепископа Шанхайского и Сан-Францисского, Чудотворца (1966)" Id="6630" Type="5" Cmd="dow != 6"/>
+<SAINT Name="Мч. Зосимы (ок. 89-117)" Id="1347" Type="0"/>
+<SAINT Name="Прп. Паисия Великого (V)" Id="1707" Type="0"/>
+<SAINT Name="Прп. Иоанна отшельника (VI)" Id="1349" Type="0"/>
+<SAINT Name="Прп. Варлаама Пинежского, Важского, Шенкурского (1462)" Id="6479" Type="0"/>
+<SAINT Name="Прп. Паисия Хилендарского, Болгарского (XVIII)" Id="1350" Type="0"/>
+
+</DAY>

@@ -1,0 +1,21 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Isa_43:9-14" Note="for the 40 Martyrs"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" Note="for the 40 Martyrs"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_5:15-6:3" Note="for the 40 Martyrs"/>
+<SCRIPTURE Type="matins" Reading="Lk_21:12-19" Pericope="106" Note="for the 40 Martyrs" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Heb_12:1-10" Pericope="331" Note="for the 40 Martyrs"/>
+<SCRIPTURE Type="gospel" Reading="Mt_20:1-16" Pericope="80" Note="for the 40 Martyrs"/>
+<LITURGY Type="3" Comment="Pre-Sanctified Liturgy sometimes" Cmd="dow != 6 &amp;&amp; dow != 0 &amp;&amp; nday != 17 &amp;&amp; nday != 15"/>
+
+<SAINT Name="塞瓦斯提亞的四十位聖殉道者：基里翁、堪迪德、多穆諾、伊息赫、伊拉克利、斯瑪拉格德、艾弗諾伊科、瓦冷斯、維維阿諾、克勞迪、普里斯科、德奧杜洛、艾弗提希、約安、克桑提亞、伊利阿諾、息悉尼、安格斯、埃提、弗拉維、阿喀基、埃克迪基、利希瑪赫、亞歷山大、伊利亞、格爾哥尼、德奧斐洛、多麥提安、蓋奧、萊翁提、阿塔納西、基里爾、薩凱爾頓、尼科拉、瓦萊里、斐洛克提蒙、塞維利安、胡迪翁、阿格萊、麥利東（320年）" Id="1238" Type="4" />
+<SAINT Name="新殉道司祭：彌哈伊爾、阿萊克西、迪彌特里、塞爾吉、塞爾吉、及殉道輔祭尼科拉、殉道修士約阿撒弗、殉道修女納塔利亞、及亞歷山德拉（1938年）" Id="" Type="0" />
+<SAINT Name="殉道者鄔爾帕息安（尼科美底亞，295年）" Id="600" Type="0" />
+<SAINT Name="聖凱撒里（神學家聖格里高利的兄弟，369年）" Id="601" Type="0" />
+<SAINT Name="聖斐洛若默（加拉提亞的宣信者，四世紀）" Id="" Type="0" />
+<SAINT Name="義人塔拉西（利科尼翁地方）" Id="" Type="0" />
+<SAINT Name="阿爾巴津聖母像（道成肉身之母像）紀念日" Id="602" Type="0"/>
+<SAINT Name="聖帕基安（巴塞羅那城主教，390年）" Id="" Type="0" />
+<SAINT Name="聖約納（諾夫哥羅德城總主教，1470年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭首席司祭彌特羅梵（本姓布赫諾夫，沃羅涅什城人，1931年）" Id="" Type="0" />
+
+</DAY>

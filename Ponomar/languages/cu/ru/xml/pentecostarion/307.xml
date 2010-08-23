@@ -1,0 +1,21 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="I Pet_1:1-2, 10-12, 2:6-10" Pericope="58" Cmd="nday == -79" />
+<SCRIPTURE Type="apostol" Reading="II Pet_1:1-10" Pericope="64" Cmd="nday == -72" />
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 30 &amp;&amp; doy &lt;= 36 &amp;&amp; nday == -72) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 5 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(doy &gt;= 30 &amp;&amp; doy &lt;= 36 &amp;&amp; nday == -79) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 23 &amp;&amp; doy &lt;= 29 &amp;&amp; nday == -72) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(doy &gt;= 23 &amp;&amp; doy &lt;= 29 &amp;&amp; nday == -79) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(doy &gt;= 16 &amp;&amp; doy &lt;= 22 &amp;&amp; nday == -79) &amp;&amp; GS == 1"/>
+<!-- Readings for the Jordanville implementation -->
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(nday == -72) &amp;&amp; GS == 0" /> 
+
+<SAINT Name="Пятница 37-й седмицы по Пятидесятнице" Id="" Type="0" Tone="3"/>
+
+</DAY>

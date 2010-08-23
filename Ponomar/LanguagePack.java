@@ -38,20 +38,37 @@ class LanguagePack implements DocHandler
 		ReadPhrases();
 		
 	}
+        public LanguagePack(String path)
+	{
+		Phrases =new OrderedHashtable();
+		ReadPhrases(path);
+
+	}
 	private void ReadPhrases()
 	{
-		String filename="Ponomar/xml/Commands/LanguagePacks.xml";
+            Helpers getFile=new Helpers();
+            ReadPhrases(getFile.langFileFind(StringOp.dayInfo.get("LS").toString(),"xml/Commands/LanguagePacks.xml"));
+        }
+        private void ReadPhrases(String langPath)
+	{
+            String filename=langPath;
 		try
 		{
 			//ALLOWS MULTILINGUAL SUPPORT, WHICH IS A MUST IN OUR CASE.
 			BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
 			//FileReader fr = new FileReader(filename);
-			QDParser.parse(this, fr);
+                        QDParser.parse(this, fr);
 		}
 		catch (Exception e)
 		{
 			//THIS STATEMENT CANNOT BE MULTILINGUAL!
 			System.out.println("Unable to find " + filename);
+                        System.out.println(e.toString());
+                        for(int i=0;i<e.getStackTrace().length;i++)
+                        {
+                            System.out.println(e.getStackTrace()[i].toString());
+                        }
+                        System.out.println("------------------");
 		}
 	
 	}
@@ -82,13 +99,14 @@ class LanguagePack implements DocHandler
 				return;
 			}			
 		}
-		if(elem.equals("LANGUAGE"))
-		{
+		//if(elem.equals("LANGUAGE"))
+		//{
 			readPhrases=true;
-		}
+		//}
 		if (elem.equals("PHRASE") && readPhrases)
 		{
-			String Key=table.get("Key").toString();
+                    
+                    String Key=table.get("Key").toString();
 			String Value=table.get("Value").toString();
 			Phrases.put(Key,Value);
 			//System.out.println("The current language is " + Language + ". The phrases are " +Phrases);

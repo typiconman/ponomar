@@ -1,0 +1,14 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Note="for the Apostle" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostle" Cmd="dRank &lt; 5"/>
+<SCRIPTURE Type="gospel" Reading="Mt_13:53-58" Pericope="56" Note="for the Apostle" Cmd="dRank &lt; 5"/>
+
+<SAINT Name="St Apôtre Simon le Zélote" Id="1029" Type="4" />
+<SAINT Name="St Simon, Evêque de Vladimir et de Souzdal" Id="2016" Type="0" />
+<SAINT Name="Sts Alphius, Philadelphe, Cyprin (Cyrin), Onésime, Erasme et leurs 14 compagnons" Id="1031" Type="0" />
+<SAINT Name="St Hésichius le Confesseur" Id="1032" Type="0" />
+<SAINT Name="St Laurent de Volos" Id="" Type="0" />
+<SAINT Name="St Comgall, fondateur du Monastère de Bangor en Irlande" Id="" Type="0" />
+<SAINT Name="Ste Martyre Solange du Berry" Id="" Type="0" />
+
+</DAY>

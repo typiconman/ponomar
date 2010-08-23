@@ -1,0 +1,18 @@
+<DAY>
+<SAINT Name="1" Cmd="dow == 0" />
+<SAINT Name="7" Cmd="dow == 6" />
+
+<SAINT Name="Afterfeast of the Nativity of the Theotokos" Id="" Type="0" />
+<SAINT Name="Venerable Theodora of Alexandria (+c.480)" Id="1506" Type="1" />
+<SAINT Name="Translation of the relics of the Venerable Sergius and Herman, Wonderworkers of Valaam" Id="1411" Type="4" />
+<SAINT Name="St. Euphrosynus the Cook of Alexandria (9th C)" Id="1509" Type="0" />
+<SAINT Name="Martyr Ia of Persia and 9000 others (+c.363)" Id="2468" Type="0" />
+<SAINT Name="Martyrs Diodorus and Didimus of Syria" Id="" Type="0" />
+<SAINT Name="Holy Martyrs Demetrius, his wife Euanthea, and their son Demetrian (1st C)" Id="1507" Type="0" />
+<SAINT Name="Martyrs Serapion, Crondidus, and Leontius of Alexandria" Id="" Type="0" />
+<SAINT Name="Venerable Paphnuty the Confessor, Bishop of Taissi" Id="" Type="0" />
+<SAINT Name="Glorification of Blessed Xenia of St Petersburg (1978)" Id="" Type="0" />
+<SAINT Name="Venerable Silouan of Mt Athos (+1938)" Id="" Type="4" />
+<SAINT Name="New Hieromartyrs Priests Nicholas and Victor (+1918)" Id="" Type="0" />
+
+</DAY>

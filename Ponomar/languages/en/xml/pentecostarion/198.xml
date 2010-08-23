@@ -1,0 +1,14 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Col_2:13-20" Pericope="255"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:13-15, 22-31" Pericope="65" Cmd="(doy &gt;= 307 &amp;&amp; doy &lt;= 313) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_11:29-33" Pericope="59" Cmd="(doy &gt;= 300 &amp;&amp; doy &lt;= 306) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:22-24" Pericope="52" Cmd="(doy &gt;= 293 &amp;&amp; doy &lt;= 299) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:18-22" Pericope="43" Cmd="(doy &gt;= 286 &amp;&amp; doy &lt;= 292) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:36-50" Pericope="33" Cmd="(doy &gt;= 279 &amp;&amp; doy &lt;= 285) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:24-30" Pericope="25" Cmd="(doy &gt;= 272 &amp;&amp; doy &lt;= 278) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:18-22" Pericope="43" Cmd="GS == 0" /> 
+
+<SAINT Name="Monday of the 22nd week after Pentecost" Id="" Type="0" Tone="4" />
+
+</DAY>

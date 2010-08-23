@@ -1,0 +1,18 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="nday == 51" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318" Cmd="nday == 51" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Cmd="nday == 51" Note="for Sts Methodius and Cyrill"/>
+
+<SAINT Name="Holy Equal-to-the-Apostles Methodius (+885) and Cyrill (+869), teachers of the Slavs [from Monday]" Id="1525" Type="5" Cmd="nday == 51"/>
+<SAINT Name="St. Epiphanius the Bishop of Cyprus (+403)" Id="1043" Type="1" />
+<SAINT Name="Saint Germanus, Patriarch of Constantinople (+740)" Id="1047" Type="1" />
+<SAINT Name="Glorification (1913) of Hieromartyr Hermogenes, Patriarch of Moscow and All Russia" Id="804" Type="0" />
+<SAINT Name="New Hieromartyr Priest Peter (+1937)" Id="" Type="0" />
+<SAINT Name="Venerable Dionysius the Archimandrite of St Sergius Monastery (+1633)" Id="630" Type="0" />
+<SAINT Name="The second finding (1992) of relics of Righteous Simeon of Verkhoturye (+1642)" Id="1999" Type="0"/>
+<SAINT Name="St. Sabinus, Archbishop of Cyprus (5th C)" Id="1045" Type="0" />
+<SAINT Name="St. Polybius, Bishop of Rhynokyra (5th C)" Id="1046" Type="0" />
+<SAINT Name="New Martyr John Vlachos (+1662) (Romanian)" Id="" Type="0" />
+<SAINT Name="Venerable Pancratius the Youth" Id="" Type="0" />
+
+</DAY>

@@ -1,0 +1,19 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Isa_66:10-14" />
+<SCRIPTURE Type="vespers" Reading="Isa_61:1-14, 62:1-5" />
+<SCRIPTURE Type="vespers" Reading="Isa_60:1-16" />
+<SCRIPTURE Type="matins" Reading="Mt_11:27-30" Pericope="43" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for St Alexander Nevsky"/>
+<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Alexander Nevsky" />
+
+<SAINT Name="Saints Alexander (+340), John (+ 595), and Paul the New (+784), Patriarchs of Constantinople" Id="4546" Type="1" />
+<SAINT Name="Translation of the relics of the Right-Believing Prince Alexander Nevsky from Vladimir to St Petersburg (1724)" Id="114" Type="4" />
+<SAINT Name="Finding of the relics of the Right-Believing Prince Daniel of Moscow (1652)" Id="579" Type="4" />
+<SAINT Name="Repose of the Venerable Alexander, Abbot of Svir (+ 1533)" Id="125" Type="3" />
+<SAINT Name="Venerable Christopher the Roman of Palestine (6th C)" Id="4550" Type="0" />
+<SAINT Name="Venerable Wonderworker Phantine" Id="4551" Type="0" />
+<SAINT Name="Synaxis of the Serbian Hierarchs: Savva I, Savva II, Nicodemus, Joannicius, Arsenius, Eustathius, James, Daniel, Ephraim, Spiridon, Macarius, Gabriel, and Gregory" Id="4552" Type="0" />
+<SAINT Name="Venerable Brienna of Nizibia" Id="" Type="0" />
+<SAINT Name="St Eulalius, Bishop of Caesarea" Id="" Type="0" />
+
+</DAY>

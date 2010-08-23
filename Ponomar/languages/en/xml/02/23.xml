@@ -1,0 +1,15 @@
+<DAY>
+
+<SAINT Name="On this day, we sing the service for the Finding of the Head of the Forerunner" Id="1007" Type="4" Cmd="nday == 58 || nday == 54 || nday == 52 || nday == 49" />
+<SAINT Name="Hieromartyr Polycarp, Bishop of Smyrna (+167)" Id="496" Type="1" />
+<SAINT Name="New Hieromartyrs Priests Alexis, Nicholas, Michael and Martyr Sergey (+1938)" Id="4874" Type="0" />
+<SAINT Name="Venerable John, Antiochus, Antoninus, Moses, Zebinas, Polychronius, another Moses, and Damian, Ascetics of the Syrian Deserts (5th C)" Id="498" Type="0" />
+<SAINT Name="Venerable Alexander the founder of the Monastery of the 'Unsleeping Ones' (c. 430)" Id="112" Type="0" />
+<SAINT Name="Venerable Gorgonia, sister of St Gregory the Thologian" Id="" Type="0" />
+<SAINT Name="Holy Hierarch Polychronius, Bishop of Alameia" Id="" Type="0" />
+<SAINT Name="Venerable Polycarp of Briansk (+1620-1621)" Id="1811" Type="0" />
+<SAINT Name="Venerable Moses of White Lake" Id="" Type="0" />
+<SAINT Name="Venerable Damian of Esphigmenou on Mt Athos" Id="" Type="0" />
+<SAINT Name="New Venerable Martyr Damian the New of Philotheou, who suffered at Larissa (1568)" Id="" Type="0" />
+
+</DAY>

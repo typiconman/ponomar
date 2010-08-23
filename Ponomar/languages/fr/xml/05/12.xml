@@ -1,0 +1,17 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="nday == 51" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318" Cmd="nday == 51" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Cmd="nday == 51" Note="for Sts Methodius and Cyrill"/>
+
+<SAINT Name="Sts Cyrille et Méthode, Illuminateurs des Slaves" Id="1525" Type="5" Cmd="nday == 51" />
+<SAINT Name="St Epiphane, Evêque de Salamine à Chypre" Id="1043" Type="1" />
+<SAINT Name="St Germain, Archevêque de Constantinople" Id="1047" Type="1" />
+<SAINT Name="St Théodore de Cythère" Id="" Type="0" />
+<SAINT Name="St Euthyme II, Patriarche de Jérusalem" Id="" Type="0" />
+<SAINT Name="St Philippe d'Agira en Sicile" Id="" Type="0" />
+<SAINT Name="St Jean de Serres" Id="" Type="0" />
+<SAINT Name="St Jean le Valaque" Id="" Type="0" />
+<SAINT Name="Ste Rictrude, disciple de St Amand de Maastricht" Id="" Type="0" />
+<SAINT Name="St Père Denys, de la Laure de la Trinité Saint Serge" Id="630" Type="0" />
+
+</DAY>

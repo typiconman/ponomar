@@ -1,0 +1,26 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Deut_1:8-11, 15-17" Note="for the Hierarchs" Cmd="nday == -54 || nday == -52"/>
+<SCRIPTURE Type="vespers" Reading="Deut_10:14-21" Note="for the Hierarchs" Cmd="nday == -54 || nday == -52"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" Note="for the Hierarchs" Cmd="nday == -54 || nday == -52"/>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Note="for the Hierarchs" Cmd="nday == -54 || nday == -52"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:7-16" Pericope="334" Note="for the Hierarchs" Cmd="nday == -54 || nday == -52"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Note="for the Hierarchs" Cmd="nday == -54 || nday == -52"/>
+
+<SAINT Name="三圣司教（大圣瓦西里、神学家圣格里高利、圣金口约安）纪念日 （转自瞻礼四／周三）" Id="9030" Type="5" Cmd="nday == -54" />
+<SAINT Name="三圣司教（大圣瓦西里、神学家圣格里高利、圣金口约安）纪念日 （转自预备日／周五）" Id="9030" Type="5" Cmd="nday == -52" />
+<SAINT Name="敬迁殉道司教伊格纳提（被称为‘心怀上帝者’安提约希亚城主教）之圣髑纪念日（参考12月20日）（540年或637年）" Id="9031" Type="2" />
+<SAINT Name="圣劳伦提（基辅洞窟修道院的闭关者，后为图若夫城主教，1194年）" Id="1321" Type="0" />
+<SAINT Name="殉道者：罗玛诺、雅科弗、斐洛德奥、伊佩瑞熙、阿维弗、犹利安、帕里格利（就义于萨摩撒塔，297年）" Id="333" Type="0" />
+<SAINT Name="殉道者：西尔瓦诺（埃麦撒城主教）、辅祭路喀、诵经士默基（312年）" Id="334" Type="0" />
+<SAINT Name="圣瓦尔西迈（宣信者，埃德萨城主教，2世纪）" Id="" Type="0" />
+<SAINT Name="新殉道者迪弥特里（希俄斯岛，1802年）" Id="" Type="0" />
+<SAINT Name="圣阿弗拉哈提斯（波斯地方修士，370年）" Id="" Type="0" />
+<SAINT Name="圣革拉息默（1441-1447年）圣彼提林（1455年）及圣约纳（均为彼尔姆城主教，1470年）" Id="502" Type="0" />
+<SAINT Name="圣安德列（本姓儒博勒夫，圣像画家，1430年）" Id="" Type="0" />
+<SAINT Name="殉道者撒尔维洛及他的姊妹薇维雅（就义于埃德萨，115年）" Id="" Type="0" />
+<SAINT Name="圣阿朔特（称为库若帕拉提斯者，格鲁吉亚的陶克拉尔德颉提地方人，829年）" Id="" Type="0" />
+<SAINT Name="圣伊格纳提（斯摩棱斯克城主教，1210年）" Id="" Type="0" />
+<SAINT Name="圣苏尔彼基•塞维若（图尔斯的圣玛尔廷的弟子，406年）" Id="" Type="0" />
+<SAINT Name="圣吉尔达斯（被称为智者，布列塔尼的瑞埃斯地方修道院院长，570年）" Id="" Type="0" />
+
+</DAY>

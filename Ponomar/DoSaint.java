@@ -37,9 +37,9 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     //DURING THE COURSE OF A SINGLE WEEK.
 
     private final static String configFileName = "ponomar.config";   //CONFIGURATIONS FILE
-    private final static String lifeFileName = "Ponomar/xml/lives/";   // THE LOCATION OF THE Lives File
-    private final static String iconFileName = "Ponomar/images/icons/"; // THE LOCATION OF THE ICON
-    private final static String serviceFileName = "Ponomar/xml/Services/menaion/";
+    private final static String lifeFileName = "xml/lives/";   // THE LOCATION OF THE Lives File
+    private final static String iconFileName = "images/icons/"; // THE LOCATION OF THE ICON
+    private final static String serviceFileName = "xml/Services/menaion/";
     private String life = "";
     private String tropar = "";
     private String troparT = ""; //Tone
@@ -54,13 +54,13 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     private OrderedHashtable Podobni;
     
     private static OrderedHashtable PrimesTK;
-    private static String FileNameIn = "Ponomar/xml/Services/PRIMES1/";
+    private static String FileNameIn = "xml/Services/PRIMES1/";
     private static String FileNameOut = FileNameIn + "Primes.html";
     private static String text;
     private static boolean read = false;
     private static String Type;
-    private final static String triodionFileName = "Ponomar/xml/triodion/";   // TRIODION FILE
-    private final static String pentecostarionFileName = "Ponomar/xml/pentecostarion/"; // PENTECOSTARION FILE
+    private final static String triodionFileName = "xml/triodion/";   // TRIODION FILE
+    private final static String pentecostarionFileName = "Pxml/pentecostarion/"; // PENTECOSTARION FILE
     private String filename;
     private int lineNumber;
     private String[] PrimesNames = Text.obtainValues((String) Text.Phrases.get("Primes"));
@@ -85,7 +85,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         //Get the Podobni
         Podobni = new OrderedHashtable();
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream("Ponomar/xml/Commands/Podobni.xml"), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),"xml/Commands/Podobni.xml")), "UTF8"));
             QDParser.parse(this, frf);
         } catch (Exception Primes) {
             Primes.printStackTrace();
@@ -102,7 +102,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         }
         name="";
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(lifeFileName + SaintId + ".xml"), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),lifeFileName + SaintId + ".xml")), "UTF8"));
             QDParser.parse(this, frf);
         } catch (Exception Primes) {
             //Primes.printStackTrace();
@@ -255,11 +255,11 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
                 return;
             }
         }
-        if (elem.equals("LANGUAGE")) {
+        //if (elem.equals("LANGUAGE")) {
             read = true;
             //System.out.println(table.get("Cmd").toString());
-            return;
-        }
+          //  return;
+        //}
         if (elem.equals("LIFE") && read) {
             if (table.get("Copyright") != null) {
                 copyright = table.get("Copyright").toString();
@@ -453,7 +453,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     public String readText(String filename) {
         try {
             text = new String();
-            BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+            BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
             QDParser.parse(this, fr);
             if (text.length() == 0) {
                 text = null;

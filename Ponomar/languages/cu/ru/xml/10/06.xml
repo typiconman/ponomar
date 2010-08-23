@@ -1,0 +1,9 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostle"/>
+<SCRIPTURE Type="gospel" Reading="Jn_20:19-31" Pericope="65" Note="for the Apostle"/>
+
+<SAINT Name="Апостола Фомы (I)" Id="2323" Type="4"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1937)" Id="" Type="0"/>
+
+</DAY>

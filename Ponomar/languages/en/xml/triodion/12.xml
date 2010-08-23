@@ -1,0 +1,37 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_49:6-10" />
+<SCRIPTURE Type="vespers" Reading="Gen_31:3-16" />
+<SCRIPTURE Type="vespers" Reading="Prov_21:3-21" />
+<PRIMES Type="Lenten" LENTENK="13"/>
+<LITURGY Type="-1" Comment="No Liturgy except feasts" Cmd="dRank &lt; 4"/>
+
+<SAINT Name="Tuesday of the Sixth Week of Lent" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+
+
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 5th Tone" Tone="5">
+An invincible wall hast Thou given to our city, the Virgin who bore Thee; through her, O Savior, do Thou rescue our souls from the evils that surround us, we pray.
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+Help me, O Lord my God
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+ and save me according to Thy mercy.
+</PROKEIMENON>
+<STICHOS Type="1">
+O God, my praise do not pass over in silence.
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+Thou art a priest for ever,
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+after the order of Melchisedek.
+</PROKEIMENON>
+<STICHOS Type="2">
+The Lord said unto my Lord: Set Thou at my right hand.
+</STICHOS>
+</SEXTE>
+</SERVICE>
+
+</DAY>

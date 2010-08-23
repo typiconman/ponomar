@@ -1,0 +1,14 @@
+<DAY>
+<SAINT Name="3" Cmd="dow == 0" />
+<SAINT Name="10" Cmd="dow == 6" />
+<SCRIPTURE Type="apostol" Reading="II Cor_4:6-15" Pericope="176" Cmd="nday != -70" Note="for St Theodosius"/>
+<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Cmd="nday != -70" Note="for St Theodosius"/>
+
+<SAINT Name="St Théodose le Cénobiarque" Id="2210" Type="4" />
+<SAINT Name="Sts Théodore et Agapios l'Archimandrite" Id="" Type="0" />
+<SAINT Name="St Mairos" Id="" Type="0" />
+<SAINT Name="St Vital" Id="" Type="0" />
+<SAINT Name="St Théodose, Higoumène du Monastère de Philothéou, Evêque de Trébizonde" Id="" Type="0" />
+<SAINT Name="St Michel de Klops, Fol en Christ" Id="1554" Type="2" />
+
+</DAY>

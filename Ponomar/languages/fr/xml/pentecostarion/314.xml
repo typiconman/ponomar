@@ -1,0 +1,15 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="II Pet_1:1-10" Pericope="64"/>
+<!-- Adding the Supplementary Readings: 5 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 37 &amp;&amp; doy &lt;= 43 &amp;&amp; nday == -72) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 30 &amp;&amp; doy &lt;= 36 &amp;&amp; nday == -72) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 23 &amp;&amp; doy &lt;= 29 &amp;&amp; nday == -72) &amp;&amp; GS == 1"/>
+<!-- Readings for the Jordanville implementation -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 0" /> 
+
+<SAINT Name="Vendredi de la 38-me semaine après le Pentecôte" Id="" Type="0" Tone="4"/>
+
+</DAY>

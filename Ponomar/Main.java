@@ -39,8 +39,8 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 	// First, some relevant constants
 	private final static String configFileName = "ponomar.config"; // CONFIGURATIONS FILE
 	//private final static String generalFileName="Ponomar/xml/";
-	private final static String triodionFileName   = "Ponomar/xml/triodion/";   // TRIODION FILE
-	private final static String pentecostarionFileName = "Ponomar/xml/pentecostarion/"; // PENTECOSTARION FILE
+	private final static String triodionFileName   = "xml/triodion/";   // TRIODION FILE
+	private final static String pentecostarionFileName = "xml/pentecostarion/"; // PENTECOSTARION FILE
 	private static String newline="\n";
 
 	// Elements of the interface
@@ -91,6 +91,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
         private Vector IconImages;
         private Vector IconNames;
 	//private GospelSelector Selector;
+        Helpers findLanguage;
 
 	// CONSTRUCTOR
 	public Main()
@@ -106,9 +107,13 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		ConfigurationFiles.Defaults = new OrderedHashtable();
 		ConfigurationFiles.ReadFile();
 		LanguageLocation = new LanguageSelector();
-		StringOp.dayInfo.put("LS",LanguageLocation.getLValue());		
+                              
+                StringOp.dayInfo.put("LS",LanguageLocation.getLValue());
 		Phrases = new LanguagePack();
-		toneNumbers= Phrases.obtainValues((String)Phrases.Phrases.get("Tones"));
+               //Changing language storage format
+                findLanguage=new Helpers();
+
+                toneNumbers= Phrases.obtainValues((String)Phrases.Phrases.get("Tones"));
 		SaintNames=Phrases.obtainValues((String)Phrases.Phrases.get("SMenu"));
 		OptionsNames=(String)Phrases.Phrases.get("Options");
 		FileNames=Phrases.obtainValues((String)Phrases.Phrases.get("File")); 
@@ -403,10 +408,10 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				return;
 			}
 		}
-		if(elem.equals("LANGUAGE"))
-		{
+		//if(elem.equals("LANGUAGE"))
+		//{
 			read=true;
-		}
+		//}
 		if (elem.equals("SAINT") && read == true)
 		{
 			try
@@ -415,7 +420,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 				// Floater: READ FROM AN XML FILE FOR THE PARTICULAR FLOATER
 				try
 				{
-					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream("Ponomar/xml/float/" + floatnum + ".xml"), "UTF8"));
+					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),"xml/float/" + floatnum + ".xml")), "UTF8"));
 					read=false;
 					QDParser.parse(this, frf);
 					read=true;
@@ -704,7 +709,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		// READ THE PENTECOSTARION / TRIODION INFORMATION
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
 			//FileReader frf = new FileReader(filename);
 			QDParser.parse(this, frf);
 		}
@@ -732,14 +737,14 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
 		int d = today.getDay();
 
 		filename = "";
-		filename += m < 10 ? "Ponomar/xml/0" + m : "Ponomar/xml/" + m;  // CLEANED UP
+		filename += m < 10 ? "xml/0" + m : "xml/" + m;  // CLEANED UP
 		filename += d < 10 ? "/0" + d : "/" + d; // CLEANED UP
 		filename += ".xml";
 
 		// PARSE THE MENAION XML FILE
 		try
 		{
-			BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+			BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
 			//FileReader fr = new FileReader(filename);
 			QDParser.parse(this, fr);
 		}

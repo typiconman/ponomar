@@ -1,0 +1,18 @@
+<DAY>
+<!-- Matins gospel readings. See 70.xml for explanation -->
+<!-- matins gospel #3 If PubPhar falls after Sun #32 -->
+<SCRIPTURE Type="matins" Reading="Mk_16:9-20" Pericope="71" Cmd="((ndayP / 7 - 7) % 11 == 3) &amp;&amp; dRank != 6" />
+<!-- matins gospel #4 If PubPhar falls after Sun #33 -->
+<SCRIPTURE Type="matins" Reading="Lk_24:1-12" Pericope="112" Cmd="((ndayP / 7 - 7) % 11 == 4) &amp;&amp; dRank != 6" />
+<!-- matins gospel #7 If PubPhar falls after Sun #36 -->
+<SCRIPTURE Type="matins" Reading="Jn_20:1-10" Pericope="63" Cmd="((ndayP / 7 - 7) % 11 == 7) &amp;&amp; dRank != 6" />
+<!-- matins gospel #8 If PubPhar falls after Sun #37 -->
+<SCRIPTURE Type="matins" Reading="Jn_20:11-18" Pericope="64" Cmd="((ndayP / 7 - 7) % 11 == 8) &amp;&amp; dRank != 6" />
+<!-- End Matins gosples -->
+<SCRIPTURE Type="apostol" Reading="Rom_13:11-14:4" Pericope="112" />
+<SCRIPTURE Type="gospel" Reading="Mt_6:14-21" Pericope="17"/>
+<PRIMES Type="Normal" />
+
+<SAINT Name="Cheesefare Sunday (Forgiveness Sunday): Commemoration of the exile of Adam from Paradise" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+
+</DAY>

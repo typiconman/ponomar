@@ -31,8 +31,8 @@ TO END THE SERVICE READER CALL, closeService();
 
 public class Service implements DocHandler
 {
-	private final static String CommonPrayersFileName   = "Ponomar/xml/Services/CommonPrayers/";   // THE LOCATION OF THE BASIC SERVICE RULES
-	private final static String ServiceFileName="Ponomar/xml/Services/";
+	private final static String CommonPrayersFileName   = "xml/Services/CommonPrayers/";   // THE LOCATION OF THE BASIC SERVICE RULES
+	private final static String ServiceFileName="xml/Services/";
 	public static String Service1;
 	private static String text;
 	private static boolean read=false;
@@ -56,11 +56,13 @@ public class Service implements DocHandler
 	private String textTimes;
         private String Style;
         private String Header1;
+        private Helpers findLanguage;
 	//private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
 
         public String startService(String FileName)
 	{
-		WhoLast="";
+		findLanguage=new Helpers();
+                WhoLast="";
 		count=-1;
 		//Service1="";
                 Header1="<head>\n";//<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
@@ -99,7 +101,7 @@ public class Service implements DocHandler
 
             	try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(FileName), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -143,10 +145,10 @@ public class Service implements DocHandler
 				return;
 			}
 		}
-		if(elem.equals("LANGUAGE"))
-		{
+		//if(elem.equals("LANGUAGE"))
+		//{
 			read=true;
-		}
+		//}
 		if(elem.equals("GET") && read)
 		{
 			//WE NEED TO GET ANOTHER SERVICE OR PART THEREOF.
@@ -575,8 +577,8 @@ public class Service implements DocHandler
 			
 			try
 			{
-				String FileName="Ponomar/xml/Commands/Times.xml";
-				BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(FileName), "UTF8"));
+				String FileName="xml/Commands/Times.xml";
+				BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 				QDParser.parse(this, frf1);
 			}
 			catch (Exception e)
