@@ -1,4 +1,5 @@
 <DATA>
+<LANGUAGE>
 <!-- "The variable GS refers to the Gospel Selector radio buttons. By convention 0 refers to the Jordanville version, while 1 refers to the Lucan Jump version." -->
 <COMMAND Name="Suppress" Value="(doy == 358 || doy == 357 || doy == 4 || doy == 5)" Comment="Suppress sequential readings on eve and day of Nativity and Theophany" />
 <COMMAND Name="Suppress" Value="(doy >= 344 &amp;&amp; doy &lt;= 350) &amp;&amp; dow == 0" Comment="Suppress the sequential readings on the Second Sunday before Christmas. Universal Requirement" />
@@ -25,4 +26,5 @@
 <COMMAND Name="Suppress" Value="(nday - ndayF == 385) &amp;&amp; ((nday >= 239) &amp;&amp; ((doy >= 355 &amp;&amp; doy &lt;= 364) || ((doy >= 350 &amp;&amp; doy &lt;= 354) &amp;&amp; (dow == 6 || dow == 0))))" Cmd="GS == 0" Comment="This skips the readings over Christmas in the case that there are 4 repeats in the Jordanville version."/>
 <COMMAND Name="Suppress" Value="(ndayP - nday == 385) &amp;&amp; ((ndayP >= 239) &amp;&amp; ((doy >= 0 &amp;&amp; doy &lt;= 6) || ((doy >= 7 &amp;&amp; doy &lt;= 13) &amp;&amp; (dow == 6 || dow == 0))))" Cmd="GS == 0" Comment="This skips the readings in January Christmas in the case that there are 4 repeats in the Jordanville version."/>
 <COMMAND Name="Suppress" Value="(ndayP - nday == 364) &amp;&amp; ((ndayP &lt;= 280 &amp;&amp; ndayP >= 274) &amp;&amp; ((doy >= 0 &amp;&amp; doy &lt;= 6) || ((doy >= 7 &amp;&amp; doy &lt;= 13) &amp;&amp; (dow == 6 || dow == 0))))" Cmd="GS == 0" Comment="This skips the readings in January Christmas in the case that there is a single repeat (33rd Week) in the Jordanville version."/>
+</LANGUAGE>
 </DATA>

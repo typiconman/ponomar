@@ -1,6 +1,5 @@
 ﻿<!-- service file for F2 (Sunday before the Nativity) -->
 <?xml-stylesheet type="text/xsl" href="Commemeration.xsl" ?>
-
 <COMMEMORATION>
 <LANGUAGE>
 	<SCRIPTURE Type="vespers" Reading="Gen_14:14-20" />
@@ -21,6 +20,7 @@
 	<NAME>Dimanche avant la Nativité de Christ, des Pères</NAME>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
+
 	<SAINT Name="Неделя пред Рождеством Христовым, святых отцев" Id="9003" Type="0"/>
 	<NAME>Неделя пред Рождеством Христовым, святых отцев</NAME>
 	<TROPARION Tone="1" Author="Traditional">Веселися, Вифлееме, Евфрафо, готовися: се бо Агница, Пастыря великаго во утробе носящи, еже родити тщится, Егоже зряще, Богоноснии отцы веселятся, с пастырьми поюще Деву доящую.</TROPARION>

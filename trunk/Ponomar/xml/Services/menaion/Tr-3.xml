@@ -121,9 +121,8 @@ There is none who does good; no, not one.
 	</ROYALHOURS>
 </SERVICE>
 </LANGUAGE>
-
-<!-- The Greek Texts -->
 <LANGUAGE Cmd="LS == 4"> 
+<!-- The Greek Texts -->
 <SERVICE>
 	<TROPARION Header="Τροπάριον Ἦχος α'" Tone="1" Type="1">
 	Σταυρωθέντος σου Χριστέ, ἀνῃρέθη ἡ τυραννίς, ἐπατήθη ἡ δύναμις τοῦ ἐχθροῦ· οὔτε γὰρ Ἄγγελος, οὐκ ἄνθρωπος, ἀλλ' αὐτὸς ὁ Κύριος, ἔσωσας ἡμᾶς, δόξα σοι.

@@ -13,10 +13,12 @@
 	<KONTAKION Tone="2" Author="Traditional">An image made with hands you would not worship, O thrice blessed three; but protected by the ineffable Essence you were glorified in  your ordeal by fire./ From the midst of the devouring flames you called upon God, crying: Hasten, O compassionate One, in Thy mercy come to our aid, for if Thou willest Thou canst.</KONTAKION>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
+
 	<SAINT Name="Dimanche des Saints Ancêtres" Id="" Type="0"/>
 	<NAME>Dimanche des Saints Ancêtres</NAME>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
+
 	<SAINT Name="Неделя святых праотцев" Id="" Type="0"/>
 	<NAME>Неделя святых праотцев</NAME>
 	<TROPARION Tone="2" Author="Traditional">Верою праотцы оправдал еси, от язык теми предобручивый Церковь, хвалятся в славе святии, яко от семене их есть плод благославен, без семене Рождшая Тя. Тех молитвами, Христе Боже, помилуй нас.</TROPARION>

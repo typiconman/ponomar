@@ -1,6 +1,5 @@
 ﻿<!-- service file for F8 (Saturday before the Nativity) -->
 <?xml-stylesheet type="text/xsl" href="Commemeration.xsl" ?>
-
 <COMMEMORATION>
 <LANGUAGE>
 	<SCRIPTURE Type="apostol" Reading="Gal_3:8-12" Pericope="205" Note="for Saturday before Nativity"/>
