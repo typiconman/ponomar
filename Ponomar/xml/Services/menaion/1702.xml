@@ -1,4 +1,5 @@
-<!-- service file for SID 1702 (Martyrs Eulampius and Eulampia) -->
+﻿<!-- service file for SID 1702 (Martyrs Eulampius and Eulampia) -->
+<COMMEMORATION>
 <LANGUAGE Cmd="LS == -1">
 	<TROPARION Tone="4" Author="Traditional">
 	М§нцы твои2 гDи, во страдaніихъ свои1хъ вэнцы2 пріsша нетлBнныz t тебE бGа нaшегw: и3мyще бо крёпость твою2 мучи1телей низложи1ша, сокруши1ша и3 дeмwнwвъ немощны6z дeрзwсти. тёхъ моли1твами сп7си2 дyшы нaшz.
@@ -15,5 +16,6 @@
 	Let us honour the noble martyrs, brother and sister in the flesh, the wise Eulampius and Eulampia; for they put to shame the devices of the lawless through the power of Him, Who was Crucified. Therefore, they have been revealed as the glory and boast of martyrs.
 	</KONTAKION>
 </LANGUAGE>
+</COMMEMORATION>
 	
 

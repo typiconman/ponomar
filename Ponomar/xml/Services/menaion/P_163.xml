@@ -1,6 +1,5 @@
 ﻿<!-- service file for SID P_163 (The Paramony of Theophany) (The 3 days before Theophany) -->
-<!--<?xml-stylesheet type="text/xsl" href="Commemeration.xsl" ?>-->
-
+<?xml-stylesheet type="text/xsl" href="Commemeration.xsl" ?>
 <COMMEMORATION>
 <LANGUAGE Cmd="LS == 0">
 <NAME>The Eve (Paramony) of the Theophany</NAME>
@@ -129,9 +128,8 @@ The Lord is the defender of my life; of whom shall I be afraid?
 	</ROYALHOURS>
 </SERVICE>
 </LANGUAGE>
-
+<LANGUAGE Cmd="LS == -2">
 <!-- The Greek Texts -->
-<LANGUAGE Cmd="LS == -2"> 
 <SERVICE>
 	<ROYALHOURS>
 <IDIOMEL Type="11" Tone="5" Header="Ἦχος πλ. δ'&lt;BR&gt;Ποίημα Σωφρονίου Πατριάρχου Ἱεροσολύμων" Author="Σωφρονίου Πατριάρχου Ἱεροσολύμων">

@@ -1,4 +1,5 @@
-<!-- service file for SID 2256 (Venerable Theophanes, Bishop of Nicea) -->
+﻿<!-- service file for SID 2256 (Venerable Theophanes, Bishop of Nicea) -->
+<COMMEMORATION>
 <LANGUAGE Cmd="LS == -1">
 	<TROPARION Tone="8" Author="Traditional">
 	Правослaвіz настaвниче, бlгочeстіz ўчи1телю и3 чистоты2, вселeнныz свэти1льниче, ґрхіерeєвъ бGодухновeнное ўдобрeніе. fеофaне премyдре, ўчeньми твои1ми вс‰ просвэти1лъ є3си2, цэвни1це д¦0внаz, моли2 хrтA бGа, сп7сти1сz душaмъ нaшымъ.
@@ -15,5 +16,5 @@
 	Having proclaimed the divine incarnation of Christ, thou didst completely put to shame the bodiless enemies, O wondrous Theophanes, whereby we all with faith and piety cry out unto thee: pray without ceasing for us all.
 	</KONTAKION>
 </LANGUAGE>
-	
+</COMMEMORATION>
 

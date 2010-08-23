@@ -33,6 +33,8 @@
 <SAINT Name="Lundi de la 34-me semaine après le Pentecôte" Id="" Type="0" Tone="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 3">
-<SAINT Name="Понедельник 334-й седмицы по Пятидесятнице" Id="" Type="0" Tone="0"/></LANGUAGE>
+
+<SAINT Name="Понедельник 334-й седмицы по Пятидесятнице" Id="" Type="0" Tone="0"/>
+</LANGUAGE>
 
 </DAY>

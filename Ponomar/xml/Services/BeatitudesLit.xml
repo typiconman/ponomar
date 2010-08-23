@@ -2,7 +2,7 @@
 <LANGUAGE>
 <!-- This takes the Biblical entries for the Beatitudes from Matthew, except for the first and last, which require the
 lines to be slightly shortened -->
-<CREATE What="Beat1" Who="
+<CREATE What="Beat1" Who=""/>
 <TITLE Value="PaschalHoursV" Header="PaschalHoursH" Source="PaschalHoursS" Comment="PaschalHoursComment" />
 <CREATE What="BlessedIsOurGod" Who="P" RedFirst="1" Cmd="PS != 0" />
 <CREATE What="ThroughPrayers" Who="R" RedFirst="1" Cmd="PS == 0"/>
