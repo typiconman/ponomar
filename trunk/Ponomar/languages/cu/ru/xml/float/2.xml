@@ -1,0 +1,15 @@
+<COMMEMORATION>
+	<SCRIPTURE Type="vespers" Reading="Gen_14:14-20" />
+	<SCRIPTURE Type="vespers" Reading="Deut_1:8-11, 15-17" />
+	<SCRIPTURE Type="vespers" Reading="Deut_10:14-21" />
+	<SCRIPTURE Type="apostol" Reading="Heb_11:9-10, 17-23, 32-40" Pericope="328" Note="for Sunday before Nativity"/>
+	<SCRIPTURE Type="gospel" Reading="Mt_1:1-25" Pericope="1" Note="for Sunday before Nativity"/>
+	<CHURCH Rank="1_P" Cycle=""/>
+
+
+	<SAINT Name="Неделя пред Рождеством Христовым, святых отцев" Id="9003" Type="0"/>
+	<NAME>Неделя пред Рождеством Христовым, святых отцев</NAME>
+	<TROPARION Tone="1" Author="Traditional">Веселися, Вифлееме, Евфрафо, готовися: се бо Агница, Пастыря великаго во утробе носящи, еже родити тщится, Егоже зряще, Богоноснии отцы веселятся, с пастырьми поюще Деву доящую.</TROPARION>
+	<KONTAKION Tone="2" Author="Traditional">Велия веры исправления: во источнице пламене, яко на воде упокоения, святии трие отроцы радовахуся, и пророк Даниил львом пастырь, яко овцам, являшеся. Тех молитвами, Христе Боже, спаси души наша.</KONTAKION>
+
+</COMMEMORATION>
