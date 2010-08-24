@@ -1,0 +1,14 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Eph_1:16-23" Pericope="218"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="(doy &gt;= 354 &amp;&amp; doy &lt;= 360) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" Cmd="(doy &gt;= 347 &amp;&amp; doy &lt;= 353) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:18-29" Pericope="72" Cmd="(doy &gt;= 340 &amp;&amp; doy &lt;= 346) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:32-40" Pericope="67" Cmd="(doy &gt;= 333 &amp;&amp; doy &lt;= 339) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:19-21" Pericope="51 (mid)" Cmd="(doy &gt;= 326 &amp;&amp; doy &lt;= 332) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:57-62" Pericope="49" Cmd="(doy &gt;= 319 &amp;&amp; doy &lt;= 325) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:32-40" Pericope="67" Cmd="GS == 0" /> 
+
+<SAINT Name="Samedi de la 28-me semaine après le Pentecôte" Id="" Type="0" Tone="2"/>
+
+</DAY>
