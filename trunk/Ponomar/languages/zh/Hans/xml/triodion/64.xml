@@ -1,8 +1,0 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="II Tim_3:1-9" Pericope="295"/>
-<SCRIPTURE Type="gospel" Reading="Lk_20:45-21:4" Pericope="103"/>
-<PRIMES Type="Normal" />
-
-<SAINT Name="安息日（本周免斋）" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
-
-</DAY>
