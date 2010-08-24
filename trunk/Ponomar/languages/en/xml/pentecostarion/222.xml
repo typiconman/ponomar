@@ -1,0 +1,14 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="II Thess_2:13-3:5" Pericope="276"/>
+<SCRIPTURE Type="gospel" Reading="Lk_20:9-18" Pericope="100" Cmd="(doy &gt;= 331 &amp;&amp; doy &lt;= 337) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:31-34" Pericope="92" Cmd="(doy &gt;= 324 &amp;&amp; doy &lt;= 330) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:1-9" Pericope="80" Cmd="(doy &gt;= 317 &amp;&amp; doy &lt;= 323) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:1-9" Pericope="70" Cmd="(doy &gt;= 310 &amp;&amp; doy &lt;= 316) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_11:47-12:1" Pericope="62" Cmd="(doy &gt;= 303 &amp;&amp; doy &lt;= 309) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_11:14-23" Pericope="57" Cmd="(doy &gt;= 296 &amp;&amp; doy &lt;= 302) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:1-9" Pericope="70" Cmd="GS == 0" /> 
+
+<SAINT Name="Thursday of the 25th Week after Pentecost" Id="" Type="0" Tone="7" />
+
+</DAY>
