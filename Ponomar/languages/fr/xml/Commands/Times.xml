@@ -1,0 +1,6 @@
+﻿<DATA>
+<!-- ^# refers to the actual number that will be placed by the programme in the appropriate place -->
+	
+		<TIMES Value="&lt;i&gt;^# fois&lt;/i&gt;"/>
+	
+	</DATA>

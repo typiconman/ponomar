@@ -1,0 +1,12 @@
+<DAY>
+<!-- Observed in the Russian Church abroad on the Saturday closest to the 19th of June -->
+<SCRIPTURE Type="vespers" Reading="Composite_3" />
+<SCRIPTURE Type="vespers" Reading="Composite_4" />
+<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" />
+<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35" Note="for St John"/>
+<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="335" Note="for St John"/>
+<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St John"/>
+
+<SAINT Name="St Jean (Maximovitch), archeveque de Shanghai et San Francisco" Id="6630" Type="5" />
+
+</DAY>
