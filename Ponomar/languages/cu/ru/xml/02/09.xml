@@ -1,0 +1,15 @@
+<DAY>
+<SAINT Name="19" Cmd="nday &lt; -58" />
+<!-- The Apodosis of the Meeting of the Lord falls on the 9th of February in two cases:
+1. If we're before the Sunday of the Prodigal Son (hence, its apodosis doesn't "interfere" with Cheesefare)
+2. If we have not yet reached the Lenten triodion (in the case of a [very] late Pascha) -->
+
+<SAINT Name="Мч. Никифора, из Антиохии Сирской (ок. 257)" Id="1621" Type="1"/>
+<SAINT Name="Обретение мощей свт. Иннокентия, еп. Иркутского (1805)." Id="951" Type="0"/>
+<SAINT Name="Сщмч. Василия пресвитера (1930)" Id="4766" Type="0"/>
+<SAINT Name="Сщмч. Иоанна пресвитера (1938)" Id="" Type="0"/>
+<SAINT Name="Сщмчч. Маркелла, еп. Сикелийского, Филагрия, еп. Кипрского, и Панкратия, еп. Тавроменийского (I)" Id="419" Type="0"/>
+<SAINT Name="Прп. Панкратия Печерского, в Дальних пещерах (XIII)" Id="" Type="0"/>
+<SAINT Name="Прпп. Геннадия (ок. 1516) и Никифора (1557) Важеезерских." Id="468" Type="0"/>
+
+</DAY>
