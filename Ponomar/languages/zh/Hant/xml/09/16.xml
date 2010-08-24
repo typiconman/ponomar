@@ -1,0 +1,18 @@
+<DAY>
+<SAINT Name="4" Cmd="dow == 0" />
+<SAINT Name="11" Cmd="dow == 6" />
+
+<SAINT Name="舉揚聖架節慶期" Id="" Type="0" />
+<SAINT Name="大殉道女，滿被讚美者，聖艾弗斐彌亞（加爾西頓城，304年）" Id="2479" Type="2" />
+<SAINT Name="聖女塞瓦斯提亞納（聖使徒帕弗羅之女弟子，殉道於伊拉克利亞，86年）" Id="" Type="0" />
+<SAINT Name="殉道女麥利提尼（瑪爾基亞諾頗利城，二世紀）" Id="" Type="0" />
+<SAINT Name="殉道者：維克托爾及索斯特尼（加爾西頓城，304年）" Id="" Type="0" />
+<SAINT Name="聖尼尼安（維托恩主教，432年）" Id="" Type="0" />
+<SAINT Name="聖多若德奧（埃及隱士，四世紀）" Id="" Type="0" />
+<SAINT Name="新殉道者伊撒克及約熙福（格魯吉亞的卡爾努地方，808年）" Id="" Type="0" />
+<SAINT Name="殉道女路德彌拉（捷克王子聖文凱斯勞之祖母，927年）" Id="" Type="0" />
+<SAINT Name="基輔都主教聖基普里安安息紀念日（1406年）" Id="" Type="0" />
+<SAINT Name="聖普若科彼（波希米亞的撒匝瓦修道院院長，1053年）" Id="" Type="0" />
+<SAINT Name="聖女埃迪特（英格蘭威爾頓地方修女，984年）" Id="" Type="0" />
+
+</DAY>

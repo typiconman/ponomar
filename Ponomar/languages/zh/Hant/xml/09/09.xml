@@ -1,0 +1,17 @@
+<DAY>
+<SAINT Name="1" Cmd="dow == 0" />
+<SAINT Name="7" Cmd="dow == 6" />
+
+<SAINT Name="誕神女誕辰節慶期" Id="" Type="0" />
+<SAINT Name="吾主上帝神聖義德之外祖父母：約雅敬及安納" Id="955" Type="2"  />
+<SAINT Name="殉道者塞維里安（塞巴斯特地方，320年）" Id="" Type="0" />
+<SAINT Name="紀念第三次神聖普世大公會議（431年）" Id="" Type="0" />
+<SAINT Name="聖德奧梵（迪亞維諾山之宣信者及持齋者，299年）" Id="" Type="0" />
+<SAINT Name="聖奧麥爾（特路安尼主教，670年）" Id="" Type="0" />
+<SAINT Name="蒙福者尼基塔（君士坦丁堡之隱居者，十二世紀）" Id="" Type="0" />
+<SAINT Name="聖約熙福（沃洛科拉穆斯克修道院院長，1515年）" Id="" Type="0" />
+<SAINT Name="聖約雅敬（普斯剋夫的奧頗赫卡修道院院長，1550年）" Id="" Type="0" />
+<SAINT Name="尋獲赫爾尼格夫總主教聖德奧多西（1696年）之聖髑紀念日（1896年）" Id="" Type="0" />
+<SAINT Name="聖基埃蘭（愛爾蘭的克隆瑪克諾伊斯地方，545年）" Id="" Type="0" />
+
+</DAY>
