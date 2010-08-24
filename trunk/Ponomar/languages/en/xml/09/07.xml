@@ -1,0 +1,18 @@
+<DAY>
+<SAINT Name="1" Cmd="dow == 0" />
+<SAINT Name="7" Cmd="dow == 6" />
+
+<SAINT Name="Forefeast of the Nativity of the Theotokos" Id="" Type="2" />
+<SAINT Name="Martyr Sozon of Cilicia (+304)" Id="1470" Type="1" />
+<SAINT Name="St. John, Archbishop and Wonderworker of Novgorod (+1186)" Id="990" Type="3" />
+<SAINT Name="Martyr Eupsychius" Id="1476" Type="0" />
+<SAINT Name="Apostles of the 70: Euodius and Onisiphorus (+66)" Id="1474" Type="0" />
+<SAINT Name="Venerable Luke" Id="1477" Type="0" />
+<SAINT Name="Righteous Judith" Id="" Type="0" />
+<SAINT Name="Venerable Clodius the Confessor" Id="" Type="0" />
+<SAINT Name="Martyr Macarius, Archimandrite of Kanev and Pereyaslavl (+1678)" Id="1405" Type="1" />
+<SAINT Name="New Hieromartyr John Maslovsky (+1921)" Id="" Type="0" />
+<SAINT Name="Venerable Macarius of Optina (+1860)" Id="4640" Type="0" />
+<SAINT Name="New Hieromartyr Eugene, Metropolitan of Nizhniy Novgorod (+1937)" Id="4802" Type="0" />
+
+</DAY>
