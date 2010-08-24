@@ -1,0 +1,17 @@
+<DAY>
+<SAINT Name="3" Cmd="dow == 0" />
+<SAINT Name="10" Cmd="dow == 6" />
+
+<SAINT Name="Ste Tatienne de Rome" Id="2688" Type="1" />
+<SAINT Name="St Pierre d'Abessala" Id="202" Type="0" />
+<SAINT Name="St Merce" Id="201" Type="0" />
+<SAINT Name="Sts 8 Martyrs de Nicée" Id="" Type="0" />
+<SAINT Name="Ste Euthasia" Id="" Type="0" />
+<SAINT Name="St Elie le Thaumaturge" Id="" Type="0" />
+<SAINT Name="St Philothée d'Antioche" Id="" Type="0" />
+<SAINT Name="St Martinien du Lac Blanc" Id="" Type="0" />
+<SAINT Name="St Galaction" Id="" Type="0" />
+<SAINT Name="St Ferréol, Evêque de Grenoble" Id="" Type="0" />
+<SAINT Name="St Sabas, 1er Archevêque de Serbie" Id="1901" Type="3" />
+
+</DAY>

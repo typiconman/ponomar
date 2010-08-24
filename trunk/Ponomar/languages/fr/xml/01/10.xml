@@ -1,0 +1,14 @@
+<DAY>
+<SAINT Name="3" Cmd="dow == 0" />
+<SAINT Name="10" Cmd="dow == 6" />
+
+<SAINT Name="St Grégoire, Evêque de Nysse" Id="184" Type="1" />
+<SAINT Name="Ste Théosébie, soeur de St Grégoire de Nysse" Id="190" Type="0" />
+<SAINT Name="St Dométien, Evêque de Mélitène" Id="186" Type="1" />
+<SAINT Name="St Marcien l'Econome de la Grande Eglise" Id="187" Type="1" />
+<SAINT Name="St Ammonios, Ascète à Nitrie" Id="" Type="0" />
+<SAINT Name="St Paul, fondateur du Monastère d'Obnora" Id="1685" Type="2" />
+<SAINT Name="St Macaire, fondateur du Monastère de Pisma" Id="" Type="0" />
+<SAINT Name="St Antipas l'Hésychaste" Id="" Type="0" />
+
+</DAY>

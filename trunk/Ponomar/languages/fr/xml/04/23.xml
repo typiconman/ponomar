@@ -1,0 +1,15 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Isa_43:9-14" Note="for St George"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" Note="for St George"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" Note="for St George"/>
+<SCRIPTURE Type="matins" Reading="Lk_12:2-12" Pericope="63" Cmd="dow != 0" Note="for St George"/>
+<SCRIPTURE Type="apostol" Reading="Acts_12:1-11" Pericope="29" Note="for St George"/>
+<SCRIPTURE Type="gospel" Reading="Jn_15:17-16:2" Pericope="52" Note="for St George"/>
+
+<SAINT Name="St Grand Martyr Georges le Tropéophore et ses compagnons" Id="9497" Type="5" />
+<SAINT Name="Sts Martyrs Félix, Fortunat et Achillée de Valence" Id="" Type="0" />
+<SAINT Name="St Thérinos de Bothrote" Id="" Type="0" />
+<SAINT Name="St Georges de Ptolemais" Id="" Type="0" />
+<SAINT Name="St Lazare le Bulgare" Id="" Type="0" />
+
+</DAY>

@@ -1,0 +1,13 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="I Pet_1:3-9" />
+<SCRIPTURE Type="vespers" Reading="I Pet_1:13-19" />
+<SCRIPTURE Type="vespers" Reading="I Pet_2:11-24" />
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_11:21-12:9" Pericope="193" Note="for the Apostles"/>
+<SCRIPTURE Type="gospel" Reading="Mt_16:13-19" Pericope="67" Note="for the Apostles"/>
+
+<SAINT Name="Sts Apôtres Pierre et Paul" Id="9785" Type="6" />
+<SAINT Name="St Pierre le Prince de la Horde Tatare, Thaumaturge de Rostov" Id="" Type="0" />
+<SAINT Name="Sts Martyrs Marcel et Anastase d'Argenton" Id="" Type="0" />
+
+</DAY>
