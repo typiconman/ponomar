@@ -1,0 +1,8 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="I Jn_4:20-5:21" Pericope="74"/>
+<SCRIPTURE Type="gospel" Reading="Mk_15:1-15" Pericope="66"/>
+<PRIMES Type="Normal" />
+
+<SAINT Name="离肉瞻礼五" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+
+</DAY>
