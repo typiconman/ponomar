@@ -1,0 +1,14 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Pericope="241" Reading="Philip_2:12-16" />
+<SCRIPTURE Type="gospel" Pericope="52" Reading="Lk_10:22-24" Cmd="(doy &gt;= 293 &amp;&amp; doy &lt;= 299) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="43" Reading="Lk_9:18-22" Cmd="(doy &gt;= 286 &amp;&amp; doy &lt;= 292) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="33" Reading="Lk_7:36-50" Cmd="(doy &gt;= 279 &amp;&amp; doy &lt;= 285) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="25" Reading="Lk_6:24-30" Cmd="(doy &gt;= 272 &amp;&amp; doy &lt;= 278) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="16" Reading="Lk_4:37-44" Cmd="(doy &gt;= 265 &amp;&amp; doy &lt;= 271) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="10" Reading="Lk_3:19-22" Cmd="(doy &gt;= 258 &amp;&amp; doy &lt;= 264) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="25" Reading="Lk_6:24-30"  Cmd="GS == 0" /> 
+
+<SAINT Name="Lundi de la 20-me semaine après le Pentecôte" Id="" Type="0" Tone="2"/>
+
+</DAY>
