@@ -1,0 +1,12 @@
+<DAY>
+<!-- NB: Today's doy is 358 -->
+<SCRIPTURE Type="matins" Reading="Mt_1:18-25" Pericope="2"/>
+<SCRIPTURE Type="apostol" Reading="Gal_4:4-7" Pericope="209"/>
+<SCRIPTURE Type="gospel" Reading="Mt_2:1-12" Pericope="3"/>
+<LITURGY Type="1" Cmd="dow != 0 &amp;&amp; dow != 1"/>
+<LITURGY Type="2" Cmd="dow == 0 || dow == 1"/>
+
+<SAINT Name="Nativité selon la chair de notre Seigneur" Id="3174" Type="8" />
+<SAINT Name="Mémoire de la vénération des Mages" Id="" Type="0" />
+
+</DAY>

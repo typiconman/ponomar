@@ -1,0 +1,14 @@
+<DAY>
+<SAINT Name="16" Cmd="dow == 0" />
+<SCRIPTURE Type="apostol" Reading="Heb_11:33-40" Pericope="330" Note="for the Youths"/>
+<SCRIPTURE Type="gospel" Reading="Lk_11:47-12:1" Pericope="62" Note="for the Youths"/>
+
+<SAINT Name="Sts Prophète Daniel et Ananias, Azarias et Misael" Id="3136" Type="2" />
+<SAINT Name="Sts Patermouthios, Copris et Alexandre" Id="" Type="0" />
+<SAINT Name="St Etienne le Confesseur" Id="" Type="0" />
+<SAINT Name="St Iakchos" Id="" Type="0" />
+<SAINT Name="St Denys le Nouveau de Zakynthos, Evêque d'Egine" Id="" Type="0" />
+<SAINT Name="St Nicétas de Nysse" Id="" Type="0" />
+<SAINT Name="Sts Païssios et Habacuc en Serbie" Id="" Type="0" />
+
+</DAY>
