@@ -1,0 +1,16 @@
+<DAY>
+<SAINT Name="19" Cmd="nday == -50 || nday == -52 || nday == -54 || nday == -58" />
+
+<SAINT Name="Afterfeast of the Meeting of the Lord" Id="" Type="0" Cmd="nday == -55 || nday == -56 || nday &lt;= -59" />
+<SAINT Name="Saint Bukolos, Bishop of Smyrna (+c.100)" Id="398" Type="1" />
+<SAINT Name="New Hieromartyr Priest Demetrius and Martyr Anatolius (+1921)" Id="" Type="0"/>
+<SAINT Name="New Hieromartyr Priest Vasiliy (+1930)" Id="4776" Type="0" />
+<SAINT Name="New Hieromartyr Priest Alexander (+1938)" Id="" Type="0"/>
+<SAINT Name="Venerable Barsanuphios the Great and Saint John the Prophet (6th C)" Id="399" Type="0" />
+<SAINT Name="Martyr Julian of Emesa (+312)" Id="402" Type="0" />
+<SAINT Name="Virginmartyr Fausta and with her, Evilasius and Maximus, at Cyzicus (+c.305-311)" Id="403" Type="0" />
+<SAINT Name="Virginmartyrs Dorothy, two sisters - Christina, Callista and the Martyr Theophilos at Caesarea in Cappadocia (+c.288-300)" Id="401" Type="0" />
+<SAINT Name="Martyrs Martha, Mary, and their brother Lycarion" Id="404" Type="0" />
+<SAINT Name="Saint Photius, Patriarch of Constantinople (9th C)" Id="405" Type="0" />
+
+</DAY>
