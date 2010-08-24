@@ -1,0 +1,36 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_5:16-25" />
+<SCRIPTURE Type="vespers" Reading="Gen_4:16-26" />
+<SCRIPTURE Type="vespers" Reading="Prov_5:15-6:3" />
+<LITURGY Type="3" Comment="Pre-sanctified except for Annunciation" Cmd="dRank != 6"/>
+<PRIMES Type="Lenten" LENTENK="2"/>
+
+<SAINT Name="Wednesday of the Second Week of Lent" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 6th Tone" Tone="6">
+O Thou Most High Who dwellest in the heavens, Creator of every breath, save us, O God: for we have hoped in Thee, O our Savior.
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 5th Tone" Tone="5">
+Unto Thee, O Lord, will I cry
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+ and unto My God will I make supplication.
+</PROKEIMENON>
+<STICHOS Type="1">
+I will exalt Thee, O Lord, for Thou hast upheld me.
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+In Thee, O Lord, have I hoped
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+ let me not be put to shame in the age to come.
+</PROKEIMENON>
+<STICHOS Type="2">
+In Thy righteousness deliver me, and rescue me.
+</STICHOS>
+</SEXTE>
+</SERVICE>
+
+</DAY>
