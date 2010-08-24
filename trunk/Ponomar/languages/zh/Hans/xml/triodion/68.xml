@@ -1,0 +1,8 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="II Pet_2:9-22" Pericope="67"/>
+<SCRIPTURE Type="gospel" Reading="Mk_13:14-23" Pericope="60"/>
+<PRIMES Type="Normal" />
+
+<SAINT Name="瞻礼三（本周免斋）" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>
