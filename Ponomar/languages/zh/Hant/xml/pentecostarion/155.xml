@@ -1,0 +1,11 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="matins" Reading="Lk_24:1-12" Pericope="112"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_4:6-15" Pericope="176"/>
+<SCRIPTURE Type="gospel" Reading="Mt_22:35-46" Pericope="92" Cmd="doy &lt; 264 &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Pericope="17" Cmd="(doy &gt;= 264 &amp;&amp; doy &lt;= 270) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mt_22:35-46" Pericope="92" Cmd="GS == 0" /> 
+
+<SAINT Name="五旬節後第十五主日" Id="" Type="0" Tone="6" />
+
+</DAY>
