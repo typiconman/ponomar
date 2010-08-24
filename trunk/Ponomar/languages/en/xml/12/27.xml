@@ -1,0 +1,14 @@
+<DAY>
+<SAINT Name="5" Cmd="dow == 0" />
+<SAINT Name="17" Cmd="dow == 6" />
+<SCRIPTURE Type="apostol" Reading="Acts_6:8-15, 7:1-5, 7:47-60" Pericope="17" Note="for St Stephen"/>
+<SCRIPTURE Type="gospel" Reading="Mt_21:33-42" Pericope="87" Note="for St Stephen"/>
+
+<SAINT Name="Third Day of the Feast of the Nativity of Our Lord" Id="" Type="0" />
+<SAINT Name="Holy Protomartyr and Archdeacon Stephen (+c.34)" Id="2051" Type="2" />
+<SAINT Name="Venerable Theodore Graptus 'the Branded', Confessor and brother of St Theophanes the Hymnographer (+c.840)" Id="3186" Type="1" />
+<SAINT Name="Saint Theodore, Archbishop of Constantinople (+686)" Id="3187" Type="0" />
+<SAINT Name="Venerable Luke of Triglia" Id="" Type="0" />
+<SAINT Name="New Hieromartyr Tikhon, Archbishop of Voronezh and 160 priests killed with him (+1919)" Id="4918" Type="0" />
+
+</DAY>
