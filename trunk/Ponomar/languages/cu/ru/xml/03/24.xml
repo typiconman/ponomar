@@ -1,0 +1,17 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Ex_3:1-8" Cmd="nday &gt; -7 &amp;&amp; (dow == 5 || dow == 6)" />
+<SCRIPTURE Type="vespers" Reading="Prov_8:22-30" Cmd="nday &gt; -7 &amp;&amp; (dow == 5 || dow == 6)" />
+<SCRIPTURE Type="vespers" Reading="Gen_28:10-17" Cmd="nday &lt; 0" />
+<SCRIPTURE Type="vespers" Reading="Ezek_43:27-44:4" Cmd="nday &lt; 0" />
+<SCRIPTURE Type="vespers" Reading="Prov_9:1-11" Cmd="nday &lt; 0" />
+
+<SAINT Name="Предпразднство Благовещения" Id="" Type="2" />
+<SAINT Name="Прп. Захарии монаха." Id="700" Type="1"/>
+<SAINT Name="Свт. Артемия (Артемона) еп. Солунского (Селевкийского) (I-II)" Id="6673" Type="1" />
+<SAINT Name="Сщмч. Владимира пресвитера (1920)" Id="" Type="0"/>
+<SAINT Name="Прп. Иакова исп., еп (VIII-IX)" Id="685" Type="0"/>
+<SAINT Name="Прп. Захарии, постника Печерского (XIII-XIV)" Id="822" Type="0"/>
+<SAINT Name="Мчч. Стефана и Петра Казанских (1552)" Id="703" Type="0"/>
+<SAINT Name="Иконы Божией Матери, именуемой &quot;Тучная Гора&quot; (XVII)" Id="706" Type="0"/>
+
+</DAY>

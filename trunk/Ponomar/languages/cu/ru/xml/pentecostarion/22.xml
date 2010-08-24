@@ -1,0 +1,11 @@
+<DAY>
+<PRIMES Type="Easter" />
+<SCRIPTURE Type="matins" Reading="Lk_24:1-12" Pericope="112"/>
+<SCRIPTURE Type="apostol" Reading="Acts_9:32-42" Pericope="23"/>
+<SCRIPTURE Type="gospel" Reading="Jn_5:1-15" Pericope="14"/>
+
+<SAINT Name="Неделя 4-я по Пасхе, о расслабленом" Id="" Type="0" Tone="3"/>
+<SAINT Name="Перенесение мощей мч. Авраамия Болгарского (1230) (переходящее празднование в Неделю 4-ю по Пасхе)" Id="32" Type="0"/>
+<SAINT Name="Прав. Тавифы (I) (переходящее празднование в Неделю 4-ю по Пасхе)" Id="4592" Type="0"/>
+
+</DAY>

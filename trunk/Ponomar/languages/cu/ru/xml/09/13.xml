@@ -1,0 +1,18 @@
+<DAY>
+<SAINT Name="1" Cmd="dow == 0" />
+<SAINT Name="7" Cmd="dow == 6 || dow == 4" />
+<SCRIPTURE Type="apostol" Reading="Heb_3:1-4" Pericope="307" Note="for the Sepulchre"/>
+<SCRIPTURE Type="gospel" Reading="Mt_16:13-19" Pericope="67" Note="for the Sepulchre"/>
+
+<SAINT Name="Память  обновления (освящения) храма Воскресения Христова в Иерусалиме (Воскресение словущее) (335)" Id="1521" Type="3"/>
+<SAINT Name="Предпразднство Воздвижения Честного и Животворящего Креста Господня" Id="" Type="0"/>
+<SAINT Name="Сщмч. Корнилия сотника (I)" Id="1289" Type="0"/>
+<SAINT Name="Сщмчч. Стефана, Александра пресвитеров и Николая диакона (1937)" Id="4766" Type="0"/>
+<SAINT Name="Мчч. Кронида, Леонтия и Серапиона (ок. 237)" Id="1523" Type="0"/>
+<SAINT Name="Мчч. Селевка и Стратоника (III)" Id="1523" Type="0"/>
+<SAINT Name="Мчч. Макровия,  Гордиана, Илии, Зотика, Лукиана и Валериана (320)" Id="1524" Type="0"/>
+<SAINT Name="Сщмч. Иулиана пресвитера (IV)" Id="1515" Type="0"/>
+<SAINT Name="Прп. Петра в Атрои (IX)" Id="1525" Type="0"/>
+<SAINT Name="Вмц. Кетеваны, царицы Кахетинской (1624)" Id="1526" Type="0"/>
+
+</DAY>

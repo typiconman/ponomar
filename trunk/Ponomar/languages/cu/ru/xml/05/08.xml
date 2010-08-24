@@ -1,0 +1,14 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="I Jn_3:21-4:6" Note="for the Apostle"/>
+<SCRIPTURE Type="vespers" Reading="I Jn_4:11-16" Note="for the Apostle"/>
+<SCRIPTURE Type="vespers" Reading="I Jn_4:20-5:5" Note="for the Apostle"/>
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0" Note="for the Apostle"/>
+<SCRIPTURE Type="apostol" Reading="I Jn_1:1-7" Pericope="68" Note="for the Apostle"/>
+<SCRIPTURE Type="gospel" Reading="Jn_19:25-27, 21:24-25" Pericope="61" Note="for the Apostle"/>
+
+<SAINT Name="Апостола и евангелиста Иоанна Богослова (98-117)" Id="962" Type="5"/>
+<SAINT Name="Прп. Арсения Великого (449-450)" Id="9262" Type="1"/>
+<SAINT Name="Мч. Никифора (1942)" Id="" Type="0"/>
+<SAINT Name="Прпп. Арсения трудолюбивого (XIV) и Пимена постника (XII), Печерских, в Дальних пещерах." Id="4390" Type="0"/>
+
+</DAY>
