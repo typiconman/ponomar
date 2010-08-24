@@ -1,0 +1,13 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="vespers" Reading="Isa_43:9-14" />
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" />
+<SCRIPTURE Type="vespers" Reading="Wisd_5:15-6:3" />
+<SCRIPTURE Type="matins" Reading="Mt_28:16-20" Pericope="116"/>
+<SCRIPTURE Type="apostol" Reading="Heb_11:33-12:2" Pericope="330"/>
+<SCRIPTURE Type="gospel" Reading="Mt_10:32-33, 37-38, 19:27-30" Pericope="38"/>
+
+<SAINT Name="五旬節後第一主日（諸聖主日）" Id="" Type="0" Tone="8" />
+<SAINT Name="「軟化邪惡之心者」及 「不可摧毀之壁壘」聖母像紀念日（本諸聖主日紀念）" Id="" Type="0" Tone="8" />
+
+</DAY>
