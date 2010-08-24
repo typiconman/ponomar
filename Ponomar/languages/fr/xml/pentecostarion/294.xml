@@ -1,0 +1,23 @@
+<DAY>
+<PRIMES Type="Normal" />
+<!-- if it is the third to last, we read the readings for the 31st -->
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" Cmd="nday == -85" />
+<!-- if it is the fourth to last, we read the readings for the 30th -->
+<SCRIPTURE Type="apostol" Reading="Eph_5:1-8" Pericope="228" Cmd="nday == -92" />
+<!-- Adding the Lucan Jump Reading for the 31 Week Reading (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" Cmd="(doy &gt;= 3 &amp;&amp; doy &lt;= 9) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="(doy &gt;= 17 &amp;&amp; doy &lt;= 23 &amp;&amp; nday == -85) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 5 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" Cmd="(doy &gt;= 17 &amp;&amp; doy &lt;= 23 &amp;&amp; nday == -92) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="(doy &gt;= 10 &amp;&amp; doy &lt;= 16 &amp;&amp; nday == -85) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" Cmd="(doy &gt;= 10 &amp;&amp; doy &lt;= 16 &amp;&amp; nday == -92) &amp;&amp; GS == 1"/>
+<!-- Readings for the Jordanville implementation -->
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="(nday == -85) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" Cmd="(nday == -92) &amp;&amp; GS == 0" /> 
+
+<SAINT Name="Samedi de la 35-me semaine après le Pentecôte" Id="" Type="0" Tone="1"/>
+
+</DAY>
