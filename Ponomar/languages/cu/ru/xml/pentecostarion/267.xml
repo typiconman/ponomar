@@ -1,0 +1,15 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="matins" Reading="Jn_20:19-31" Pericope="65" Cmd="dRank != 6"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="((doy &gt;= 362 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 3)) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &gt;= 355 &amp;&amp; doy &lt;= 361) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &gt;= 348 &amp;&amp; doy &lt;= 354) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &gt;= 341 &amp;&amp; doy &lt;= 347) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &gt;= 11 &amp;&amp; doy &lt;= 17 &amp;&amp; nday == -84) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &gt;= 11 &amp;&amp; doy &lt;= 17 &amp;&amp; nday == -91) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &lt; 5 || (doy &gt; 12 &amp;&amp; doy &lt; 31)) &amp;&amp; GS == 0" /> 
+
+<SAINT Name="Неделя 31-я по Пятидесятнице" Id="" Type="0" Tone="6"/>
+
+</DAY>
