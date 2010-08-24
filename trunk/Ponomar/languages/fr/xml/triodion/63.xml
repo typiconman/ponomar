@@ -1,0 +1,18 @@
+<DAY>
+<!-- Matins gospel readings. See 70.xml for explanation -->
+<!-- matins gospel #1 If PubPhar falls after Sun #32 -->
+<SCRIPTURE Type="matins" Reading="Mt_28:16-20" Pericope="116" Cmd="(ndayP / 7 - 7) % 11 == 1" />
+<!-- matins gospel #2 If PubPhar falls after Sun #33 -->
+<SCRIPTURE Type="matins" Reading="Mk_16:1-8" Pericope="70" Cmd="(ndayP / 7 - 7) % 11 == 2" />
+<!-- matins gospel #5 If PubPhar falls after Sun #36 -->
+<SCRIPTURE Type="matins" Reading="Lk_24:12-35" Pericope="113" Cmd="(ndayP / 7 - 7) % 11 == 5" />
+<!-- matins gospel #6 If PubPhar falls after Sun #37 -->
+<SCRIPTURE Type="matins" Reading="Lk_24:36-53" Pericope="114" Cmd="(ndayP / 7 - 7) % 11 == 6" />
+<!-- End Matins gosples -->
+<SCRIPTURE Type="apostol" Reading="I Cor_6:12-20" Pericope="135"/>
+<SCRIPTURE Type="gospel" Reading="Lk_15:11-32" Pericope="79"/>
+<PRIMES Type="Normal" />
+
+<SAINT Name="Dimanche du Fils Prodige" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

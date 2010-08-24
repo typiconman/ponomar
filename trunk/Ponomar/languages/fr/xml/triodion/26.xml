@@ -1,0 +1,25 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_25:1-9" />
+<SCRIPTURE Type="vespers" Reading="Gen_9:8-17" />
+<SCRIPTURE Type="vespers" Reading="Prov_12:8-22" />
+<PRIMES Type="Lenten" LENTENK="13"/>
+<LITURGY Type="-1" Comment="No Liturgy except for 40 Martyrs, Finding or Annuncation" Cmd="dRank &lt; 4"/>
+
+<SAINT Name="Mardi de la 4-me semaine du Carême" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY><DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_25:1-9" />
+<SCRIPTURE Type="vespers" Reading="Gen_9:8-17" />
+<SCRIPTURE Type="vespers" Reading="Prov_12:8-22" />
+<PRIMES Type="Lenten" LENTENK="13"/>
+<LITURGY Type="-1" Comment="No Liturgy except for 40 Martyrs, Finding or Annuncation" Cmd="dRank &lt; 4"/>
+
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Tropar de la prophétie dans la 1-re Tone&lt;br&gt;(Tropar de la Croix)" Tone="1">
+Sauve ton peuple, Seigneur, et bénis ton héritage, accorde à tes fidèles victoire sur les ennemis et sauvegarde par ta Croix les nations qui t'appartiennent.
+</TROPARION>
+</SEXTE>
+</SERVICE>
+
+</DAY>

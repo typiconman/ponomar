@@ -1,0 +1,10 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_65:8-16" />
+<SCRIPTURE Type="vespers" Reading="Gen_46:1-7" />
+<SCRIPTURE Type="vespers" Reading="Prov_23:15-24:5" />
+<PRIMES Type="Lenten" LENTENK="9"/>
+<LITURGY Type="-1" Comment="No Liturgy except feasts" Cmd="dRank &lt; 4"/>
+
+<SAINT Name="Jeudi de la 6-me semaine du Carême" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>
