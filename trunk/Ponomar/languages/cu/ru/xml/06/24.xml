@@ -1,0 +1,14 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Composite_1" />
+<SCRIPTURE Type="vespers" Reading="Judg_13:2-8, 13-14, 17-18, 21" />
+<SCRIPTURE Type="vespers" Reading="Composite_2" />
+<SCRIPTURE Type="matins" Reading="Lk_1:24-25, 57-68, 76, 80" Pericope="3" Cmd="dow != 0" />
+<SCRIPTURE Type="apostol" Reading="Rom_13:12-14:4" Pericope="112"/>
+<SCRIPTURE Type="gospel" Reading="Lk_1:1-25, 57-68, 76, 80" Pericope="1"/>
+
+<SAINT Name="Рождество честного славного Пророка, Предтечи и Крестителя Господня Иоанна" Id="3050" Type="6"/>
+<SAINT Name="Мчч. семи братий: Орентия, Фарнакия, Ероса, Фирмоса, Фирмина, Кириака и Лонгина (III-IV)" Id="1387" Type="0"/>
+<SAINT Name="Прп. Антония Дымского, Новгородского (1224)" Id="211" Type="0"/>
+<SAINT Name="Правв. отроков Иакова и Иоанна Менюжских, Новгородских (XVII)" Id="1390" Type="0"/>
+
+</DAY>
