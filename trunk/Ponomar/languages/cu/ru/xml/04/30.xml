@@ -1,0 +1,12 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="Acts_12:1-11" Pericope="29" Note="for St James" Cmd="dRank &lt; 5"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Pericope="17" Note="for St James" Cmd="dRank &lt; 5"/>
+
+<SAINT Name="Ап. Иакова Зеведеева (44)" Id="872" Type="4"/>
+<SAINT Name="Обретение мощей свт. Никиты, еп. Новгородского (1558)" Id="347" Type="1"/>
+<SAINT Name="Свт. Игнатия Брянчанинова, еп. Кавказского и Черноморского (1867)" Id="898" Type="4"/>
+<SAINT Name="Свт. Доната, еп. Еврии (ок. 387)" Id="960" Type="0"/>
+<SAINT Name="Обретение мощей сщмч. Василия, еп. Амасийского (IV)" Id="936" Type="0"/>
+<SAINT Name="Мч. Максима" Id="959" Type="0"/>
+
+</DAY>
