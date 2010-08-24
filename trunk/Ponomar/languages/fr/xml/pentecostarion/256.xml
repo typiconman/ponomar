@@ -1,0 +1,14 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Heb_10:1-18" Pericope="323"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(doy &gt;= 0 &amp;&amp; doy &lt;= 6) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Pericope="51" Cmd="(doy &gt;= 358 &amp;&amp; doy &lt;= 364) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" Cmd="(doy &gt;= 351 &amp;&amp; doy &lt;= 357) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" Cmd="(doy &gt;= 344 &amp;&amp; doy &lt;= 350) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:5-7, 10-11, 20-24" Pericope="104" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 343) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_20:1-8" Pericope="99" Cmd="(doy &gt;= 330 &amp;&amp; doy &lt;= 336) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" Cmd="GS == 0" /> 
+
+<SAINT Name="Mercredi de la 30-me semaine après le Pentecôte" Id="" Type="0" Tone="4"/>
+
+</DAY>
