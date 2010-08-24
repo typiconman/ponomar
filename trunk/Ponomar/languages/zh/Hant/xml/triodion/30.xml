@@ -1,0 +1,10 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_13:2-13" />
+<SCRIPTURE Type="vespers" Reading="Gen_8:4-21" />
+<SCRIPTURE Type="vespers" Reading="Prov_10:31-11:12" />
+<PRIMES Type="Lenten" />
+<LITURGY Type="3" Comment="Presanctified" Cmd="dRank != 6"/>
+
+<SAINT Name="大齋期第三週預備日" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

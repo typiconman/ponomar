@@ -1,0 +1,10 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Pericope="115" Reading="Rom_14:19-26" />
+<SCRIPTURE Type="gospel" Pericope="16" Reading="Mt_6:1-13" />
+<SCRIPTURE Type="apostol" Pericope="213" Reading="Gal_5:22-6:2" Note="Venerable Fathers"/>
+<SCRIPTURE Type="gospel" Pericope="43" Reading="Mt_11:27-30" Note="Venerable Fathers"/>
+
+<SAINT Name="乳酪週安息日：紀念所有神聖而心懷上帝，以克修生活光照了世界的聖教父" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

@@ -1,0 +1,102 @@
+﻿<LANGUAGEPACKS>
+<!-- This document contains all the required languages specific features for the Ponomar interface in all the languages that are supported by the programme. For trial purposes, at least all the information in this file should be translated, the Easter file in the Pentecostarion (xml/pentecostarion/1.xml), and the file for the Feast of the Annunciation (March 25th, xml/3/25.xml), the first 12 verses of the Gospel according to John, and the Prime service (xml/Services/Primes...) so as to test all the capabilities of the programme. The state of completion is defined as a value out of 10 that states what is available: 0 represents nothing, 1 represents the above requirements, 5 all that is currently required, 10 a complete language, including video and audio files.
+Note: /, is used to separate entries in a list.
+Note: The defaults must be loaded before this file can be read.
+Note: This section should be translated into all of the supported languages.
+<B>Note: All the sections must contain the same set of phrases, even if some are not translated!</B>
+Note: The general format for the files is:
+&lt;LANGUAGE NameLocal="Name of the language in the language itself" NameEnglish="Name of the language in English" Cmd="LS == ##"&gt;
+&lt;PHRASE Key="some value" Text="the translated text" Comment="Translator's comments or clarifications in the same language as the LanguageName"/&gt;
+&lt;PHRASE .../&gt;
+&lt;/LANGUAGE&gt;
+Final Comments:
+Translator: Aleksander Andreev (almost all)
+State of completion: 5 -->
+<!-- Ce document contient toute l’information spécifique à chaque langue pour l’interface de Ponomar. Pour des raisons préliminaire et pour éprouver le programme, au moins l’information dans les files suivants doivent être traduire : Le file de Pâques dans le « Pentecostarion » (xml/pentecostarion/1.xml); le file pour le Fête de l’Annonciation (25 mars, xml/3/25.xml); le 12 premier vers du Évangile selon Jean, et le service de la première heure (Prime) (xml/Services/Primes...). L’état de finissement est défini par un valeur sur 10, où 0 signifie que rien n’était complies; 1 signifie que les suggestions au-sous a été complies; 5 signifie que tous qui peut utiliser est complies; et 10 signfie que nous avons un langue absolument finie, y compris les file de vidéo et d’audio.
+Note: /, est utilisé pour separer les éléments d'une liste.
+Note : Les defaults doivent être « loaded » avant que cette file peut être lu.
+Note : Cette section de file doit être traduis dans tous les autres langues.
+<B>Note : Tous les sections pour chaque langue doit contenir les mêmes phrase. <B>
+Note : Le format général est :
+&lt;LANGUAGE NameLocal="le nom de la langue dans la lange-même" NameEnglish="le nom de la langue en anglais" Cmd="LS == ##"&gt;
+&lt;PHRASE Key="le même valeur" Text="le texte traduis" Comment="Des suggestions ou clarifications du traducteur dans le même langue que NameLocal"/&gt;
+&lt;PHRASE .../&gt;
+&lt;/LANGUAGE&gt;   
+Suggestion finale :
+Traducteur : Yuri Shardt
+L’état de completation : 1 (sauf le Bible et la première heure).
+-->
+<!--
+The Russian part has been partially completed by Aleksander Andreev, while the Church Slavonic Bible has (except for III Esdras) been added. The Russian version of the Menologion and Pentecostarion/Triodion (as per the Moscow Patriarchiate regulations) has been added by Aleks.
+-->
+<!--
+The Chinese version (both Traditional and Simplified characters) of the Menologion and Pentecostarion/Triodion has been added by Mitrophan Chin.
+Likewise, the Bible in both Traditional and Simplified Chinese characters has been added by Mitrophan Chin. Only the New Testament and most of the Old Testament are available.
+-->   
+
+<PHRASE Key="NameLocal" Value="繁體中文"/>
+<PHRASE Key="NameEnglish" Value="Traditional Chinese"/>
+<PHRASE Key="BibleV" Value="zho_traditional"/>
+<PHRASE Key="Authors" Value="Aleksandr Andreev/,Yuri Shardt"/>
+<PHRASE Key="Year" Value="2006-2010"/>
+<PHRASE Key="And" Value=""/>
+<PHRASE Key="Comma" Value="、"/>
+<PHRASE Key="0" Value="波諾馬里" Comment="This is the only entry for this key."/>
+<PHRASE Key="1" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the liturgical months in the nominative case, that is, for use in the format 'Month 2008'."/>
+<PHRASE Key="2" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="The names of the liturgical week in the nominative case, that is, for use in the format 'Year Month Date Week'."/>
+<PHRASE Key="3" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the liturgical months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="4" Value="一月/,二月/,三月/,四月/,五月/,六月/,七月/,八月/,九月/,十月/,十一月/,十二月" Comment="The names of the civil months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="5" Value="星期天/,星期一/,星期二/,星期三/,星期四/,星期五/,星期六" Comment="The names of the civil week in the nominative case, that is, for use in the format 'Year Month Date Week'."/>
+<PHRASE Key="Options" Value="Options" />
+<PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
+<PHRASE Key="SMenu" Value="聖人/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
+<PHRASE Key="Services" Value="Services/,事奉聖禮/,暮時課/,晚堂課/,晨時課/,一時課/,三時課/,六時課/,九時課/,皇時課/,All-Night Vigil/,中夜課/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
+<PHRASE Key="Bible" Value="聖經/,This allows the user to access the Bible" />
+<PHRASE Key="Help" Value="求助/,This accesses the 求助 files./,About/,Access the About file/,Go to 求助"/>
+<PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
+<PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,在波諾馬里項目中，我們認為禮典信息應當免費——也就是說不收費也不受版權的制約。上帝並沒有保留聖經的版權，聖約安也沒有保留《八音集》的版權。您可以從本站獲得任何東西並用於任何用途，只要您信任我們。如果您要發佈您自己對本站信息的修改成果，您需要在許可的體系下進行。/,Copyright/,by/,Acknowledgements: 中文版由正教會中華諸聖會提供。" />
+<PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
+<PHRASE Key="Tones" Value=" /,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Main" Value="格里高利歷/,日出/,日落/,Ecclesiastic月相/,第TT調式；/,Information for /,Are you sure you wish to quit?" />
+<PHRASE Key="gospel" Value="聖福音經"/>
+<PHRASE Key="apostol" Value="使徒經書"/>
+<PHRASE Key="matins" Value="晨時課"/>
+<PHRASE Key="vespers" Value="暮時課"/>
+<PHRASE Key="1st hour" Value="一時課"/>
+<PHRASE Key="3rd hour" Value="三時課"/>
+<PHRASE Key="6th hour"	Value="六時課"/>
+<PHRASE Key="9th hour" Value="九時課"/>
+<PHRASE Key="Fasts" Value="免齋期/,嚴格規定齋日/,齋日（酒、油可食）/,齋日（魚、酒及油可食）/,齋戒規則：/,錯誤 calculating fast information/,：按照修行規矩：/,禁食/,幹食/,免油熱食/,齋日（魚子、酒及油可食）/,齋日（Meat is excluded）/,齋日（酒可飲）/,肉類和動物製品/,乳製品/,魚/,魚子/,油/,酒/,幹食/,都/,都/,都/,可食用/,不可食用/,及/,, while/,齋日：" />
+<PHRASE Key="Week1" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="This the abbreviation of the days of the week." />
+<PHRASE Key="Phases" Value="新月（朔）/,眉月（盈眉月）/,上弦月/,盈凸月/,滿月/,虧凸月/,下弦月/,殘月（虧眉月）" Comment="月相" />
+<PHRASE Key="Primes" Value="本日沒有聚會/,一時課/,差遣頌 for/,丟失/,集禱頌 for/,Kathisma"/>
+<PHRASE Key="RoyalHours" Value="本日沒有皇時課/,皇時課"/>
+<PHRASE Key="DayReading" Value="for 主日/,for 瞻禮二/,for 瞻禮三/,for 瞻禮四/,for 瞻禮五/,for 預備日/,for 安息日" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
+<PHRASE Key="DateFormat" Value="YY年MMDD日WW" Comment="This will display a type similar to 1999年十月4日星期一. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
+<PHRASE Key="Feasts" Value="主耶穌基督受割禮日/,主顯節/,施浸禮者聖約安誕辰/,聖裴特若及聖帕弗羅/,主易聖容節/,聖母安息節/,施浸禮者聖約安授首紀念日/,聖母誕辰節/,舉揚聖架節/,聖母護守節/,誕神女進殿節/,主降生節/,主葩斯哈：聖葩斯哈主日及誕神女福音節/,聖葩斯哈主日/,誕神女福音節/,五旬節/,主升天節/,聖枝主日/,主進殿節" />
+<PHRASE Key="Helpers" Value="Save to a html file." />
+<PHRASE Key="ServiceRead" Value="The desired title 丟失./,There was a serious 錯誤 reading the file: /,The desired command 丟失./,The desired header 丟失./,錯誤 finding the desired information: " />
+<PHRASE Key="Errors" Value="找不到 /,Unable to process floater # /,錯誤 at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was 找不到/,錯誤 Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
+<PHRASE Key="PrimeSelection" Value="誦經士/,司祭/,主教/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
+<PHRASE Key="Commemoration" Value="錯誤 reading the Hashtable!\nMissing element: /, with Tag: /,錯誤 reading the Hashtable!\nMissing Node: /,錯誤 reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
+<PHRASE Key="BibleW" Value="前一章/,全章/,下一章/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,錯誤 reading bmlfile: /,Resource 找不到: "/>
+<PHRASE Key="Terce" Value="本日沒有聚會/,三時課/,差遣頌 for/,丟失/,集禱頌 for/,Kathisma"/>
+<PHRASE Key="Sexte" Value="本日沒有聚會/,六時課/,差遣頌 for/,丟失/,集禱頌 for/,Kathisma"/>
+<PHRASE Key="None" Value="本日沒有聚會/,九時課/,差遣頌 for/,丟失/,集禱頌 for/,Kathisma"/>
+<PHRASE Key="FontFaceM" Value="MingLiU" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontSizeM" Value="24" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontFaceL" Value="MingLiU" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
+<PHRASE Key="FontSizeL" Value="24" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="CommSep" Value="；" Comment="This is the mark to separate the different commemorations that are dispalyed."/>
+<PHRASE Key="ReadSep" Value="；" Comment="This is the mark to separate the readings."/>
+<PHRASE Key="Colon" Value="：" Comment="This is for everytime that a colon is required."/>
+<PHRASE Key="Language" Value="zh_Hant" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<!-- This is seems to be a permissible approach for the traditional Chinese characters. -->
+<PHRASE Key="Country" Value="HK" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
+<PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
+<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV. 1 = yes!"/>
+<PHRASE Key="TimeF" Value="HH時MM分" Comment="This gives the format for the time. The 24-hour clock will be used."/>
+<PHRASE Key="LivesW" Value="生平/,差遣頌/, Podoben: /,集禱頌/,第TT調式/,; /,Information about this commemoration 丟失." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="上一頁聖像/,下一頁聖像/,聖像文件找不到。"/>
+
+</LANGUAGEPACKS>

@@ -1,0 +1,40 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Jn_13:31-18:1" Pericope="46"/>
+<SCRIPTURE Type="matins" Reading="Jn_18:1-28" Pericope="58"/>
+<SCRIPTURE Type="matins" Reading="Mt_26:57-75" Pericope="109"/>
+<SCRIPTURE Type="matins" Reading="Jn_18:28-19:16" Pericope="59"/>
+<SCRIPTURE Type="matins" Reading="Mt_27:3-32" Pericope="111"/>
+<SCRIPTURE Type="matins" Reading="Mk_15:16-32" Pericope="67"/>
+<SCRIPTURE Type="matins" Reading="Mt_27:33-54" Pericope="113"/>
+<SCRIPTURE Type="matins" Reading="Lk_23:32-49" Pericope="111"/>
+<SCRIPTURE Type="matins" Reading="Jn_19:25-37" Pericope="61"/>
+<SCRIPTURE Type="matins" Reading="Mk_15:43-47" Pericope="69"/>
+<SCRIPTURE Type="matins" Reading="Jn_19:38-42" Pericope="62"/>
+<SCRIPTURE Type="matins" Reading="Mt_27:62-66" Pericope="114"/>
+<SCRIPTURE Type="1st hour" Reading="Zech_11:10-13" />
+<SCRIPTURE Type="1st hour" Reading="Gal_6:14-18" Pericope="215 (mid)"/>
+<SCRIPTURE Type="1st hour" Reading="Mt_27:1-56" Pericope="110"/>
+<SCRIPTURE Type="3rd hour" Reading="Isa_8:4-11" />
+<SCRIPTURE Type="3rd hour" Reading="Rom_5:6-11" Pericope="78 (mid)"/>
+<SCRIPTURE Type="3rd hour" Reading="Mk_15:16-41" Pericope="67"/>
+<SCRIPTURE Type="6th hour" Reading="Isa_52:13-15, 53:1-12, 54:1" />
+<SCRIPTURE Type="6th hour" Reading="Heb_2:11-18" Pericope="306"/>
+<SCRIPTURE Type="6th hour" Reading="Lk_23:32-49" Pericope="111"/>
+<SCRIPTURE Type="9th hour" Reading="Jerem_11:18-23, 12:1-5, 9:15" />
+<SCRIPTURE Type="9th hour" Reading="Heb_10:19-31" Pericope="324"/>
+<SCRIPTURE Type="9th hour" Reading="Jn_18:28-19:37" Pericope="59"/>
+<SCRIPTURE Type="vespers" Reading="Ex_33:11-23" />
+<SCRIPTURE Type="vespers" Reading="Job_42:12-16" />
+<SCRIPTURE Type="vespers" Reading="Isa_52:12-15, 53:1-12, 54:1" />
+<SCRIPTURE Type="vespers" Reading="I Cor_1:18-2:2" Pericope="125"/>
+<SCRIPTURE Type="vespers" Reading="Mt_27:1-38" Pericope="110" />
+<SCRIPTURE Type="vespers" Reading="Lk_23:39-43" />
+<SCRIPTURE Type="vespers" Reading="Mt_27:39-54" />
+<SCRIPTURE Type="vespers" Reading="Jn_19:31-37"/>
+<SCRIPTURE Type="vespers" Reading="Mt_27:55-61"/>
+<PRIMES Type="Royal" /> <!-- Changed by AA-->
+<LITURGY Type="-1" Comment="The only time we have Liturgy is on Annuncation" Cmd="dRank != 7"/>
+
+<SAINT Name="大預備日（主受難日）" Id="" Type="0" Tone="-1" />
+
+</DAY>

@@ -1,0 +1,12 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Jn_12:17-50" Pericope="41"/>
+<SCRIPTURE Type="6th hour" Reading="Ezek_2:3-3:3" />
+<SCRIPTURE Type="vespers" Reading="Ex_2:11-22" />
+<SCRIPTURE Type="vespers" Reading="Job_2:1-10" />
+<SCRIPTURE Type="gospel" Reading="Mt_26:6-16" Pericope="108"/>
+<PRIMES Type="Lenten" />
+<LITURGY Type="3" Comment="Pre-sanctified always" Cmd="dRank != 7"/>
+
+<SAINT Name="大瞻禮四（悔罪女以香膏傅抹主聖足）" Id="" Type="0" Tone="-1" />
+
+</DAY>
