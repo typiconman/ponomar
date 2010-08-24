@@ -1,0 +1,10 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Pericope="214" Reading="Gal_6:2-10" />
+<SCRIPTURE Type="gospel" Pericope="29" Reading="Mk_7:14-24" Cmd="(doy &lt; 260 &amp;&amp; GS == 1) || GS == 0"/>
+<SCRIPTURE Type="gospel" Pericope="21" Reading="Lk_5:33-39" Cmd="(doy &gt;= 267 &amp;&amp; doy &lt;= 273) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Pericope="12" Reading="Lk_4:1-15" Cmd="(doy &gt;= 260 &amp;&amp; doy &lt;= 266) &amp;&amp; GS == 1"/>
+
+<SAINT Name="Wednesday of the 16th week after Pentecost" Id="" Type="0" Tone="6" />
+
+</DAY>
