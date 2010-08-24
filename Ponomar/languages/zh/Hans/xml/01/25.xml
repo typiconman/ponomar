@@ -1,0 +1,26 @@
+<DAY>
+<SAINT Name="12" Cmd="dow == 0" />
+<SCRIPTURE Type="apostol" Reading="I Cor_12:7-11" Pericope="151" Note="for St Gregory"/>
+<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St Gregory"/>
+
+<SAINT Name="圣格里高利（神学家，君士坦丁堡总主教，389年）" Id="535" Type="4" />
+<SAINT Name="圣普博利（叙利亚之克修者，380年）" Id="9020" Type="0" />
+<SAINT Name="圣玛瑞斯（歌手，叙利亚人，430年）" Id="309" Type="0" />
+<SAINT Name="殉道女斐利基塔及与她一同就义之七子：雅努阿利、斐利克斯、斐利普、西尔瓦诺、亚历山大、维塔利、玛尔提亚尔（罗马城，164年）" Id="307" Type="0" />
+<SAINT Name="圣摩伊息斯（诺夫哥罗德总主教，1362年）" Id="1570" Type="0" />
+<SAINT Name="新殉道者阿弗克塞提（君士坦丁堡，1720年）" Id="" Type="0" />
+<SAINT Name="圣卡斯庭（拜占庭城主教，240年）" Id="" Type="0" />
+<SAINT Name="圣迪弥特里（被称为‘圣器保管员’君士坦丁堡人，8世纪）" Id="" Type="0" />
+<SAINT Name="新殉道司教弗拉迪弥尔（基辅都主教，俄国革命后首位殉道者，1918年）" Id="430" Type="0" />
+<SAINT Name="圣阿纳托利（本姓泽尔查洛夫，奥普钦那修道院长老，1894年）" Id="4631" Type="0" />
+<SAINT Name="新殉道司祭裴特若（本姓兹维热夫，沃若奈哲主教，1929年）" Id="4888" Type="0" />
+<SAINT Name="“平息我的痛苦”圣母像纪念日" Id="310" Type="0" />
+<SAINT Name="圣博瑞塔尼翁（一名维特拉尼翁，罗马尼亚的托密斯城主教，380年）" Id="" Type="0" />
+<SAINT Name="圣阿颇罗（特崴德地方之修士，4世纪）" Id="" Type="0" />
+<SAINT Name="圣格里高利（格鲁特文地方人，15世纪）" Id="" Type="0" />
+<SAINT Name="新殉道女玛尔伽里塔（本姓古那若努罗，门泽利诺地方修女院院长，1918年）" Id="" Type="0" />
+<SAINT Name="新殉道女阿塔纳西亚（本姓勒佩史金，佐息玛隐修院院长，1931年）" Id="" Type="0" />
+<SAINT Name="“意外之喜乐”圣母像纪念日" Id="" Type="0" />
+<SAINT Name="圣埃奥克德" Id="" Type="0" />
+
+</DAY>

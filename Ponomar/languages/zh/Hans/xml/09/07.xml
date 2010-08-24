@@ -1,0 +1,18 @@
+<DAY>
+<SAINT Name="1" Cmd="dow == 0" />
+<SAINT Name="7" Cmd="dow == 6" />
+
+
+<SAINT Name="至圣诞神女诞辰前日" Id="" Type="2" />
+<SAINT Name="殉道者索宗（西里西亚，304年）" Id="1470" Type="1" />
+<SAINT Name="70使徒之埃佛铎（一名埃佛迪亚，66年）及奥尼息佛尔（67年）" Id="" Type="0" />
+<SAINT Name="殉道者艾弗普西赫（卡帕多西亚的恺撒里亚，2世纪）" Id="" Type="0" />
+<SAINT Name="圣女卡西亚（圣歌作者，9世纪）" Id="" Type="0" />
+<SAINT Name="圣克路德（巴黎附近的诺根特•苏尔•塞奈修道院之建立者及院长，560年）" Id="" Type="0" />
+<SAINT Name="圣路喀及圣裴特若（均为卡帕多西亚人氏，深川修道院院长，10世纪）" Id="" Type="0" />
+<SAINT Name="圣约安（诺夫哥罗德总主教及显行灵迹者，1186年）" Id="" Type="0" />
+<SAINT Name="殉道者修士大司祭玛喀里（卡奈夫地方，1678年）" Id="" Type="0" />
+<SAINT Name="圣玛喀里（奥普提纳精舍，1860年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭约安（阿穆尔地方，1921年）" Id="" Type="0" />
+
+</DAY>

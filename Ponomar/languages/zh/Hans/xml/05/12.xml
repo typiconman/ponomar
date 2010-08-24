@@ -1,0 +1,20 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="nday == 51" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318" Cmd="nday == 51" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Cmd="nday == 51" Note="for Sts Methodius and Cyrill"/>
+
+<SAINT Name="圣埃彼法尼（塞浦路斯主教，403年）" Id="1043" Type="1"/>
+<SAINT Name="圣革尔曼（君士坦丁堡牧首，740年）" Id="1047" Type="1"/>
+<SAINT Name="圣埃尔默艮（莫斯科牧首，1612年）隆重宣布（1913年）" Id="804" Type="0"/>
+<SAINT Name="新殉道司祭裴特若（1937年）" Id="" Type="0"/>
+<SAINT Name="圣萨维诺（塞浦路斯总主教，5世纪）" Id="1045" Type="0"/>
+<SAINT Name="圣颇利维（塞浦路斯人，埃及的林诺基尔主教，5世纪）" Id="1046" Type="0"/>
+<SAINT Name="圣迪奥尼西（圣塞尔吉大修道院之修士大司祭，1633年）" Id="630" Type="0"/>
+<SAINT Name="第二次敬迁维尔霍图里耶的义人西麦翁之圣髑纪念日（1992年）" Id="1999" Type="0"/>
+<SAINT Name="新殉道者约安（罗马尼亚的瓦拉几亚地方人，就义于君士坦丁堡，1662年）" Id="" Type="0"/>
+<SAINT Name="殉道者庞克拉提（罗马，304年）" Id="" Type="0"/>
+<SAINT Name="圣安托尼（本姓梅德维德夫，圣塞尔吉大修道院修士大司祭，1877年）" Id="" Type="0"/>
+<SAINT Name="新殉道女阿塔纳西亚（莫斯科附近的斯摩棱斯克示道圣母女修院院长，1931年）" Id="" Type="0"/>
+<SAINT Name="圣德奥多若（基特拉地方修士）" Id="" Type="0"/>
+
+</DAY>

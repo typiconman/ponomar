@@ -1,0 +1,15 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Composite_6" Cmd="nday != -48" />
+<SCRIPTURE Type="vespers" Reading="Isa_6:1-12" Cmd="nday != -48" />
+<SCRIPTURE Type="vespers" Reading="Isa_19:1-5, 12, 16, 19-21" Cmd="nday != -48" />
+<SCRIPTURE Type="matins" Reading="Lk_2:25-32" Cmd="nday != -48" />
+<SCRIPTURE Type="apostol" Reading="Heb_7:7-17" Cmd="nday != -48" />
+<SCRIPTURE Type="gospel" Reading="Lk_2:22-40" Cmd="nday != -48" />
+
+<SAINT Name="主进殿节——纪念我们的主，上帝，救主被奉献于圣殿，也纪念圣母取洁" Id="373" Type="7" Cmd="nday != -48" />
+<SAINT Name="新殉道者约尔达尼（特里维宗德，1650年）" Id="" Type="0" />
+<SAINT Name="新殉道者伽弗里伊尔（君士坦丁堡，1676年）" Id="" Type="0" />
+<SAINT Name="殉道者阿伽托多若（卡帕多西亚）" Id="" Type="0" />
+<SAINT Name="圣安提默（希俄斯岛，1960年）" Id="" Type="0" />
+
+</DAY>
