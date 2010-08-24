@@ -1,0 +1,17 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Lk_6:17-23" Pericope="24" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for St Sabbas"/>
+<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Sabbas"/>
+
+<SAINT Name="St Sabas le Sanctifié" Id="1898" Type="5" />
+<SAINT Name="St Anastase" Id="4591" Type="0" />
+<SAINT Name="St Gratos" Id="" Type="0" />
+<SAINT Name="St Diogène" Id="" Type="0" />
+<SAINT Name="St Abercius" Id="" Type="0" />
+<SAINT Name="St Nonnos" Id="" Type="0" />
+<SAINT Name="St Cosmas le Protos et ses compagnons" Id="" Type="0" />
+<SAINT Name="St Nectaire de Karyes" Id="" Type="0" />
+<SAINT Name="St Philothée de Karyes" Id="" Type="0" />
+<SAINT Name="St Nizier, Evêque de Trèves" Id="" Type="0" />
+
+</DAY>

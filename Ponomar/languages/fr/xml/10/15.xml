@@ -1,0 +1,12 @@
+<DAY>
+<SAINT Name="9" Cmd="dow == 6" />
+
+<SAINT Name="St Lucien d'Antioche" Id="1745" Type="1" />
+<SAINT Name="St Sabin, Evêque en Chypre" Id="1749" Type="0" />
+<SAINT Name="St Barsès le Confesseur, Evêque d' Edesse" Id="" Type="0" />
+<SAINT Name="St Euthyme le Jeune" Id="1743" Type="1" />
+<SAINT Name="St Lucien des Grottes de Kiev" Id="" Type="0" />
+<SAINT Name="St Denys, Archvêque de Souzdal" Id="" Type="0" />
+<SAINT Name="St Jean, Evêque de Souzdal" Id="1746" Type="0" />
+
+</DAY>
