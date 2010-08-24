@@ -1,0 +1,15 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
+
+<SAINT Name="St Martyr Mocius" Id="1037" Type="1" />
+<SAINT Name="St Dioscoride" Id="" Type="0" />
+<SAINT Name="St Argyros de Thessalonique" Id="" Type="0" />
+<SAINT Name="Sts Cyrille et Méthode, Illuminateurs des Slaves" Id="1525" Type="5" Cmd="nday != 50" />
+<SAINT Name="Mémoire de la Dedicace ou Inauguration de la Ville de Constantinople" Id="" Type="0" />
+<SAINT Name="St Joseph, Archevêque d'Astrakhane" Id="1054" Type="0" />
+<SAINT Name="St Sophrone, reclus des Grottes de Kiev" Id="2045" Type="0" />
+<SAINT Name="St Nicodème, Archevêque de Petch" Id="1041" Type="0" />
+
+</DAY>

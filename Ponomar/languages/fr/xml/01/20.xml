@@ -1,0 +1,20 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Mt_11:27-30" Pericope="43" Cmd="dow != 0" Note="for St Euthymius"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Euthymius"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Euthymius"/>
+
+<SAINT Name="St Euthyme le Grand" Id="260" Type="5" />
+<SAINT Name="Sts Bassos, Eusèbe, Eutychès et Basilide" Id="262" Type="0" />
+<SAINT Name="Sts Innas, Rhimas et Pinas, disciples de l'Apôtre André" Id="949" Type="0" />
+<SAINT Name="St Pierre, le Percepteur" Id="" Type="0" />
+<SAINT Name="Ste Anne de Rome" Id="" Type="0" />
+<SAINT Name="Sts Thyrse et Agnès" Id="" Type="0" />
+<SAINT Name="St Léon 1er, le Thrace" Id="" Type="0" />
+<SAINT Name="St Zacharie" Id="" Type="0" />
+<SAINT Name="St Laurent, reclus des Grottes de Kiev" Id="6692" Type="0" />
+<SAINT Name="St Euthyme des Grottes de Kiev" Id="741" Type="0" />
+<SAINT Name="St Euthyme, fondateur du Monastère de Zyanzhemsk" Id="744" Type="0" />
+<SAINT Name="St Euthyme de Tirnovo, Patriarche de Bulgarie" Id="" Type="0" />
+<SAINT Name="St Théodore (Kouzmitch) (ex-Tsar Alexandre 1er ?)" Id="" Type="0" />
+
+</DAY>
