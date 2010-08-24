@@ -1,0 +1,39 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Mt_22:15-23:39" Pericope="90"/>
+<SCRIPTURE Type="6th hour" Reading="Ezek_1:21-2:1" />
+<SCRIPTURE Type="vespers" Reading="Ex_2:5-10" />
+<SCRIPTURE Type="vespers" Reading="Job_1:13-22" />
+<SCRIPTURE Type="gospel" Reading="Mt_24:36-26:2" Pericope="102"/>
+<PRIMES Type="Lenten" />
+<LITURGY Type="3" Comment="Pre-sanctified" Cmd="dRank != 7"/>
+
+<SAINT Name="Great Tuesday" Id="" Type="0" Tone="-1" />
+
+
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
+Those that have sinned beyond measure, do Thou abundantly forgive, O Savior, and vouchsafe us without condemnation to worship Thy holy Resurrection, through the intercessions of Thy most pure Mother, O Thou Who alone art plenteous in mercy.
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+For with the Lord there is mercy,
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+and with Him is plenteous redemption.
+</PROKEIMENON>
+<STICHOS Type="1">
+Out of the depths have I cried unto Thee, O Lord; O Lord, hear my voice.
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+Let Israel hope in the Lord,
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+from henceforth and for evermore.
+</PROKEIMENON>
+<STICHOS Type="2">
+O Lord, my heart is not exalted, nor are mine eyes become lofty.
+</STICHOS>
+</SEXTE>
+</SERVICE>
+
+</DAY>

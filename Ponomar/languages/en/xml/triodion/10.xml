@@ -1,0 +1,37 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_65:8-16" />
+<SCRIPTURE Type="vespers" Reading="Gen_46:1-7" />
+<SCRIPTURE Type="vespers" Reading="Prov_23:15-24:5" />
+<PRIMES Type="Lenten" LENTENK="9"/>
+<LITURGY Type="-1" Comment="No Liturgy except feasts" Cmd="dRank &lt; 4"/>
+
+<SAINT Name="Thursday of the Sixth Week of Lent" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+
+
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
+Forget not the voice of Thy servants, O Lord; remember that at all times we have placed our hope in Thee, O Allpowerful One, and help us, we pray.
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+This is the gate of the Lord,
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+the righteous shall enter in thereat.
+</PROKEIMENON>
+<STICHOS Type="1">
+O give thanks unto the Lord, for He is good, for His mercy endureth for ever.
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+The way of Thy commandments have I run,
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+when Thou didst enlarge my heart.
+</PROKEIMENON>
+<STICHOS Type="2">
+Set before me for a law, O Lord, the way of Thy statutes.
+</STICHOS>
+</SEXTE>
+</SERVICE>
+
+</DAY>

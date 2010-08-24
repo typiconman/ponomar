@@ -1,0 +1,11 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="Heb_3:12-16" Pericope="309"/>
+<SCRIPTURE Type="gospel" Reading="Mk_1:35-44" Pericope="6"/>
+<SCRIPTURE Type="apostol" Reading="I Thess_4:13-17" Pericope="270" Note="for the departed"/>
+<SCRIPTURE Type="gospel" Reading="Jn_5:24-30" Pericope="16" Note="for the departed"/>
+<LITURGY Type="1" Comment="St John's always"/>
+<PRIMES Type="Lenten" />
+
+<SAINT Name="Second Saturday of Lent. Commemoration of the Departed" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+
+</DAY>

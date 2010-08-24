@@ -1,0 +1,38 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_40:18-31" />
+<SCRIPTURE Type="vespers" Reading="Gen_15:1-15" />
+<SCRIPTURE Type="vespers" Reading="Prov_15:7-19" />
+<PRIMES Type="Lenten" LENTENK="14" Cmd="doy != 81"/>
+<PRIMES Tyep="Lenten" Cmd="doy == 81"/>
+<LITURGY Type="-1" Comment="No Liturgy except for 40 Martyrs, Finding or Annuncation" Cmd="dRank &lt; 4"/>
+
+<SAINT Name="Tuesday of the Fifth Week of Lent" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+
+
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 3rd Tone" Tone="3">
+Our helper is the God of Jacob, and He is our defender in the day of affliction.
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+A poor man am I,
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+and in troubles from my youth.
+</PROKEIMENON>
+<STICHOS Type="1">
+O Lord God of my salvation, by day have I cried and by night before Thee.
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+Blessed is the people that knoweth jubilation.
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+ and Thy salvation do Thou give unto us.
+</PROKEIMENON>
+<STICHOS Type="2">
+O Lord, in the light of Thy face shall they walk.
+</STICHOS>
+</SEXTE>
+</SERVICE>
+
+</DAY>

@@ -1,0 +1,34 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_66:10-24" />
+<SCRIPTURE Type="vespers" Reading="Gen_49:33-50:26" />
+<SCRIPTURE Type="vespers" Reading="Prov_31:8-32" />
+<PRIMES Type="Lenten" />
+<LITURGY Type="3" Comment="Presanctified" Cmd="dRank &lt; 6"/>
+
+<SAINT Name="Friday of the Sixth Week of Lent" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+<SERVICE>
+<SEXTE>
+<TROPARION Type="1" Header="Troparion of the Prophecy in the ?th Tone" Tone="?">
+??
+</TROPARION>
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+Because of the house of the Lord our God,
+</PROKEIMENON>
+<PROKEIMENON Type="1b">
+I have sought good things for thee.
+</PROKEIMENON>
+<STICHOS Type="1">
+I was glad because of them that said unto me: Let us go into the house of the Lord.
+</STICHOS>
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+Have mercy on us, O Lord
+</PROKEIMENON>
+<PROKEIMENON Type="2b">
+ have mercy on us.
+</PROKEIMENON>
+<STICHOS Type="2">
+Unto Thee have I lifted up mine eyes, unto Thee that dwellest in heaven.
+</STICHOS>
+</SEXTE>
+</SERVICE>
+</DAY>
