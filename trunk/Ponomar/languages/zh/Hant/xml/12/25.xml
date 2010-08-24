@@ -1,0 +1,14 @@
+<DAY>
+<!-- NB: Today's doy is 358 -->
+<SCRIPTURE Type="matins" Reading="Mt_1:18-25" Pericope="2"/>
+<SCRIPTURE Type="apostol" Reading="Gal_4:4-7" Pericope="209"/>
+<SCRIPTURE Type="gospel" Reading="Mt_2:1-12" Pericope="3"/>
+<LITURGY Type="1" Cmd="dow != 0 &amp;&amp; dow != 1"/>
+<LITURGY Type="2" Cmd="dow == 0 || dow == 1"/>
+
+<SAINT Name="主降生節（紀念我們的主，上帝，救主耶穌基督取肉軀而降生於世）" Id="3174" Type="8" />
+<SAINT Name="紀念由東方而來朝拜基督聖嬰之賢士：麥爾希奧爾、喀斯帕爾、瓦爾塔撒爾" Id="" Type="0" />
+<SAINT Name="紀念首先朝主者——伯利恆曠野之牧羊人" Id="" Type="0" />
+<SAINT Name="紀念佩辰伽地方的聖特里豐修道院被瑞典人所屠戮之殉道修士聖約納、及偕同他就義的五十位修士和六十五位教友（1590年）" Id="" Type="0" />
+
+</DAY>

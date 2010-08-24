@@ -1,0 +1,22 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Ex_3:1-8" Cmd="nday &gt; -7 &amp;&amp; (dow == 5 || dow == 6)" />
+<SCRIPTURE Type="vespers" Reading="Prov_8:22-30" Cmd="nday &gt; -7 &amp;&amp; (dow == 5 || dow == 6)" />
+<SCRIPTURE Type="vespers" Reading="Gen_28:10-17" Cmd="nday &lt; 0" />
+<SCRIPTURE Type="vespers" Reading="Ezek_43:27-44:4" Cmd="nday &lt; 0" />
+<SCRIPTURE Type="vespers" Reading="Prov_9:1-11" Cmd="nday &lt; 0" />
+
+<SAINT Name="誕神女福音節前日" Id="" Type="2" />
+<SAINT Name="聖匝哈里亞（埃及的閉關者，四世紀）" Id="700" Type="1" />
+<SAINT Name="聖阿爾特蒙（塞琉西亞主教，一世紀）" Id="6673" Type="1" />
+<SAINT Name="新殉道司祭弗拉迪彌爾（1920年）" Id="" Type="0"/>
+<SAINT Name="聖雅科弗（卡塔尼亞主教，802-811年間）" Id="685" Type="0" />
+<SAINT Name="聖匝哈里亞（基輔洞窟修道院之成德父，十三世紀）" Id="822" Type="0" />
+<SAINT Name="殉道者斯特梵及裴特若（喀山地方，1552年）" Id="703" Type="0" />
+<SAINT Name="「發山」聖母像紀念日（十七世紀）" Id="706" Type="0"/>
+<SAINT Name="殉道司教帕爾特尼（君士坦丁堡牧首，1657年）" Id="" Type="0" />
+<SAINT Name="聖托瑪斯（聖艾弗提彌修道院院長，542年）" Id="" Type="0" />
+<SAINT Name="聖阿爾特彌（德撒洛尼基主教）" Id="" Type="0" />
+<SAINT Name="新聖薩瓦（卡林諾島的長老，1948年）" Id="" Type="0" />
+<SAINT Name="聖瑪爾提諾（底比斯修士）" Id="" Type="0" />
+
+</DAY>

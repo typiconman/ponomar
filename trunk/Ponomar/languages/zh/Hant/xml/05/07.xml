@@ -1,0 +1,21 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Prov_10:7,6,3:13-16" Note="for St Nicholas" Cmd="nday == 46"/>
+<SCRIPTURE Type="vespers" Reading="Prov_10:31-32, 11:1-12" Note="for St Nicholas" Cmd="nday == 46"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" Note="for St Nicholas" Cmd="nday == 46"/>
+<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="nday == 46" Note="for St Nicholas"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Nicholas" Cmd="nday == 46"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Nicholas" Cmd="nday == 46"/>
+
+<SAINT Name="至尊十字聖號顯現於耶路撒冷上空紀念日（351年）" Id="1005" Type="2" />
+<SAINT Name="殉道者阿喀基（拜占庭地方之百夫長，303年）" Id="1006" Type="1" />
+<SAINT Name="索拉修道院院長聖尼爾安息紀念日（1508年）" Id="1652" Type="0" />
+<SAINT Name="格魯吉亞的則達則尼地方的聖約安和他的12位弟子：示奧•穆格維麥、達維德、安托尼、塔德、斯特梵、伊西多爾、彌哈伊爾、彼若斯、則農、耶瑟、約熙福、阿維弗（6世紀）" Id="1010" Type="0" />
+<SAINT Name="尋獲阿托斯聖山的聖尼爾施香液之聖髑紀念日（1815年）" Id="2529" Type="0" />
+<SAINT Name="「柳別奇」（十一世紀）及「芝若維茨」（1470年）聖母像紀念日" Id="1011" Type="0" />
+<SAINT Name="聖女利迪亞（斐利彼城賣紫色布者，歐洲首位歸化之信女，一世紀）" Id="" Type="0" />
+<SAINT Name="尋獲大聖艾弗提彌之聖髑紀念日" Id="" Type="0" />
+<SAINT Name="聖多彌提安（荷蘭的馬斯特里希特城主教，560年）" Id="" Type="0" />
+<SAINT Name="新殉道者帕霍彌（帕特摩斯島，1730年）" Id="" Type="0" />
+<SAINT Name="聖約安（貝弗利地方人，約克主教，721年）" Id="" Type="0" />
+
+</DAY>

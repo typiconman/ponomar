@@ -1,0 +1,21 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Isa_43:9-14" Note="for St George"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" Note="for St George"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" Note="for St George"/>
+<SCRIPTURE Type="matins" Reading="Lk_12:2-12" Pericope="63" Cmd="dow != 0" Note="for St George"/>
+<SCRIPTURE Type="apostol" Reading="Acts_12:1-11" Pericope="29" Note="for St George"/>
+<SCRIPTURE Type="gospel" Reading="Jn_15:17-16:2" Pericope="52" Note="for St George"/>
+
+<SAINT Name="神聖榮耀之大殉道者，凱旋得勝者，顯行靈蹟者，格奧爾吉（303年）" Id="9497" Type="5" />
+<SAINT Name="新殉道司祭約安（1940年）" Id="" Type="0"/>
+<SAINT Name="殉道婦亞歷山德拉皇后（惡王戴克里先之妻，303年）" Id="2379" Type="0" />
+<SAINT Name="殉道者阿納托利及普若托萊翁（兩位因聖格奧爾吉之殉道而歸化的士兵，303年）" Id="918" Type="0" />
+<SAINT Name="殉道者格利凱里、阿塔納西、瓦萊里、多納圖（尼科美底亞）" Id="" Type="0" />
+<SAINT Name="新殉道者格奧爾吉（普托洛瑪伊斯地方，1752年）" Id="" Type="0" />
+<SAINT Name="新殉道者拉匝若（保加利亞人，就義於佩爾伽默，1802年）" Id="" Type="0" />
+<SAINT Name="蒙福者格奧爾吉（申庫爾斯克地方之聖愚，1462年）" Id="" Type="0" />
+<SAINT Name="殉道者特里諾（伊庇魯斯的佛特若托地方，250年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭埃格爾（俄羅斯，斯帕司•切克里亞克村莊，1918年）" Id="" Type="0" />
+<SAINT Name="新殉道司祭塞爾吉（本姓匝哈爾楚科，波蘭的那布羅茲地方人，1943年）" Id="" Type="0" />
+
+</DAY>

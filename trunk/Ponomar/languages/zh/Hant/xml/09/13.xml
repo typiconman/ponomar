@@ -1,0 +1,19 @@
+<DAY>
+<SAINT Name="1" Cmd="dow == 0" />
+<SAINT Name="7" Cmd="dow == 6 || dow == 4" />
+<SCRIPTURE Type="apostol" Reading="Heb_3:1-4" Pericope="307" Note="for the Sepulchre"/>
+<SCRIPTURE Type="gospel" Reading="Mt_16:13-19" Pericope="67" Note="for the Sepulchre"/>
+
+<SAINT Name="舉揚聖架節前日" Id="" Type="0" />
+<SAINT Name="紀念耶路撒冷聖復活教堂（聖墓大教堂）之建立（335年）" Id="1521" Type="3" />
+<SAINT Name="殉道者科爾奈利「百夫長」（一世紀）" Id="" Type="0" />
+<SAINT Name="殉道者：科若尼迪、萊翁提、塞拉彼雍（亞歷山大里亞，237年）" Id="" Type="0" />
+<SAINT Name="殉道者斯特拉同（尼科美底亞，三世紀）" Id="" Type="0" />
+<SAINT Name="大殉道女剴特梵（格魯吉亞的卡赫提亞王后，1624年）" Id="" Type="0" />
+<SAINT Name="殉道者塞萊弗科（錫西厄，320年）" Id="" Type="0" />
+<SAINT Name="殉道者：伊利亞、佐提科、路基安、瓦萊里安、瑪克若維、格爾迪安（羅馬尼亞的托密，320年）" Id="" Type="0" />
+<SAINT Name="聖約安（羅馬尼亞的普里斯洛普，十五至十六世紀）" Id="" Type="0" />
+<SAINT Name="聖科爾奈利（斯維爾的聖亞歷山大的弟子，帕丹•奧洛奈茨地方，十六世紀）及其同修：聖迪奧尼西和聖彌塞爾" Id="" Type="0" />
+<SAINT Name="聖耶若德奧（卡拉瑪塔人氏，阿托斯聖山的伊維隆修道院修士，1745年）" Id="" Type="0" />
+
+</DAY>
