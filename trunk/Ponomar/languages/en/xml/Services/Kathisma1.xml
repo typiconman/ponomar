@@ -1,0 +1,23 @@
+<SERVICES>
+
+<!-- This is the First Kathisma -->
+<!-- The First Stasis -->
+<BIBLE Verses="Psalm_1" Who="" RedFirst="1" NewLine="1" Header="1" 2Stars="1"/>
+<BIBLE Verses="Psalm_2" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_3" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+<!-- The Second Stasis -->
+<BIBLE Verses="Psalm_4" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_5" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_6" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+<!-- The Third Stasis -->
+<BIBLE Verses="Psalm_7" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_8" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_9" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
+<CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
+
+</SERVICES>
