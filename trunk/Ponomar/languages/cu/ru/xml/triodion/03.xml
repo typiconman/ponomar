@@ -1,0 +1,18 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Lk_22:1-39" Pericope="108 (mid)" />
+<SCRIPTURE Type="1st hour" Reading="Jerem_11:18-12:5, 9-11, 14-15" />
+<SCRIPTURE Type="vespers" Reading="Ex_19:10-19" />
+<SCRIPTURE Type="vespers" Reading="Job_38:1-23, 42:1-5" />
+<SCRIPTURE Type="vespers" Reading="Isa_50:4-11" />
+<SCRIPTURE Type="apostol" Reading="I Cor_11:23-32" Pericope="149" />
+<SCRIPTURE Type="gospel" Reading="Mt_26:1-20" Pericope="107"/>
+<SCRIPTURE Type="gospel" Reading="Jn_13:3-17" />
+<SCRIPTURE Type="gospel" Reading="Mt_26:21-39" />
+<SCRIPTURE Type="gospel" Reading="Lk_22:43-45" />
+<SCRIPTURE Type="gospel" Reading="Mt_26:40-27:2" />
+<PRIMES Type="Lenten" />
+<LITURGY Type="2" Comment="St Basil's always"/>
+
+<SAINT Name="Великий четверг. Воспоминание Тайной Вечери" Id="" Type="0" Tone="-1"/>
+
+</DAY>
