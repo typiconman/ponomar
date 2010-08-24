@@ -1,0 +1,18 @@
+<DAY>
+<SAINT Name="12" Cmd="dow == 0" />
+<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="nday == -58" />
+<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday == -58" Note="for St Xenia"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday == -58" Note="for St Xenia"/>
+
+<SAINT Name="圣女克塞尼亚（彼得堡的成德者，圣愚，19世纪）［转自安息日／周六］" Id="2568" Type="1" Cmd="nday == -58"/>
+<SAINT Name="殉道司教克利密斯（安基拉主教）及殉道者阿伽昙颉罗（296年）" Id="284" Type="1" />
+<SAINT Name="圣帕弗利诺（慈悲者，诺拉城主教，431年）" Id="289" Type="0" />
+<SAINT Name="圣玛弗息玛（叙利亚修士，4世纪）" Id="287" Type="0" />
+<SAINT Name="圣撒拉玛尼斯（缄默者，幼发拉底河流域修士，400年）" Id="288" Type="0" />
+<SAINT Name="圣艮纳迪（修士，1565年）及纪念科斯特罗马城全体圣者" Id="470" Type="0" />
+<SAINT Name="圣艾弗塞维（安提约希亚附近的科里斐山的闭关者，5世纪）" Id="" Type="0" />
+<SAINT Name="纪念第六次神圣普世大公会议（680-681年）及会上诸位圣教父" Id="291" Type="0" />
+<SAINT Name="敬迁圣德奥克提斯特（诺夫哥罗德城总主教，1310年）之圣髑纪念日（1786年）" Id="" Type="0" />
+<SAINT Name="圣迪奥尼西（奥林匹斯山及阿托斯圣山之成德者，1541年）" Id="" Type="0" />
+
+</DAY>

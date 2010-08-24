@@ -1,0 +1,15 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="I Pet_1:3-9" />
+<SCRIPTURE Type="vespers" Reading="I Pet_1:13-19" />
+<SCRIPTURE Type="vespers" Reading="I Pet_2:11-24" />
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_11:21-12:9" Pericope="193" Note="for the Apostles"/>
+<SCRIPTURE Type="gospel" Reading="Mt_16:13-19" Pericope="67" Note="for the Apostles"/>
+
+<SAINT Name="神圣，荣耀，满被赞扬者，使徒之长圣裴特若及圣帕弗罗" Id="9785" Type="6" />
+<SAINT Name="圣妇玛利亚（约安•尔克之母，耶路撒冷，1世纪）" Id="" Type="0" />
+<SAINT Name="圣裴特若（鞑靼部落王子，罗斯托夫之显行灵迹者，1290年）" Id="" Type="0" />
+<SAINT Name="寻获普斯科夫地方之修士，圣尼堪德尔之圣髑纪念日（1581年）" Id="" Type="0" />
+<SAINT Name="新殉道司教，大圣衣修士，主教裴特若（俄罗斯，1939年）" Id="" Type="0" />
+
+</DAY>

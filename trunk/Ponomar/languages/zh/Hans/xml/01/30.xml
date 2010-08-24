@@ -1,0 +1,25 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="Deut_1:8-11, 15-17" Cmd="nday != -51 &amp;&amp; nday != -53"/>
+<SCRIPTURE Type="vespers" Reading="Deut_10:14-21" Cmd="nday != -51 &amp;&amp; nday != -53"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" Cmd="nday != -51 &amp;&amp; nday != -53"/>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Cmd="(nday != -51 &amp;&amp; nday != -53) &amp;&amp; dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:7-16" Cmd="nday != -51 &amp;&amp; nday != -53"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Cmd="nday != -51 &amp;&amp; nday != -53"/>
+
+<SAINT Name="三圣司教（大圣瓦西里、神学家圣格里高利、圣金口约安）纪念日 " Id="373" Type="5" Cmd="nday != -51 &amp;&amp; nday != -53" />
+<SAINT Name="三圣司教纪念日转到瞻礼三／周二" Id="" Type="0" Cmd="nday == -53"/>
+<SAINT Name="三圣司教纪念日转到瞻礼五／周四" Id="" Type="0" Cmd="nday == -51"/>
+<SAINT Name="殉道司教伊颇利图（罗马教宗）以及偕同其就义者：肯索里诺、萨维诺、阿瑞斯、童贞女赫瑞熙、斐利克斯、玛克息默、艾尔库利安、维奈里、斯提拉基、弥纳、孔默德、艾尔弥斯、玛弗若、艾弗塞维、路斯提科、摩纳格里、 阿曼迪诺、奥林彼、基普若、护民官德奥多若、司祭玛克息默、辅祭阿尔希劳、主教基里雅科（均殉道于奥斯蒂亚，269年）" Id="339" Type="1" />
+<SAINT Name="殉道者德奥斐洛（塞浦路斯，784年）" Id="342" Type="0" />
+<SAINT Name="新殉道者德奥多若（米提利尼人，阿托斯圣山修士，1784年）" Id="" Type="0" />
+<SAINT Name="圣齐诺（基辅洞窟修道院神父，14世纪）" Id="341" Type="0" />
+<SAINT Name="圣齐诺（安提约希亚的隐士，大圣瓦西里的弟子，414年）" Id="341" Type="0" />
+<SAINT Name="圣裴特若（保加利亚国王，969年）" Id="342" Type="0" />
+<SAINT Name="主教基里雅科（均殉道于奥斯蒂亚，269年）" Id="" Type="0" />
+<SAINT Name="圣女阿德尔贡达（荷兰之茂彼伍基城的建立者，680年）" Id="" Type="0" />
+<SAINT Name="圣女巴提尔德（法国王后，680年）" Id="" Type="0" />
+<SAINT Name="新殉道者迪弥特里（斯利文人，1841年）" Id="" Type="0" />
+<SAINT Name="提诺斯岛圣母像纪念日" Id="" Type="0" />
+<SAINT Name="圣童贞女图迪" Id="" Type="0" />
+
+</DAY>

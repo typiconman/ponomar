@@ -1,0 +1,20 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="I Jn_3:21-4:6" Note="for the Apostle"/>
+<SCRIPTURE Type="vespers" Reading="I Jn_4:11-16" Note="for the Apostle"/>
+<SCRIPTURE Type="vespers" Reading="I Jn_4:20-5:5" Note="for the Apostle"/>
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0" Note="for the Apostle"/>
+<SCRIPTURE Type="apostol" Reading="I Jn_1:1-7" Pericope="68" Note="for the Apostle"/>
+<SCRIPTURE Type="gospel" Reading="Jn_19:25-27, 21:24-25" Pericope="61" Note="for the Apostle"/>
+
+<SAINT Name="圣使徒，著福音者，神学家约安（98-117年间）" Id="962" Type="5" />
+<SAINT Name="大圣阿尔塞尼（斯基提斯地方，448年）" Id="9262" Type="1" />
+<SAINT Name="新殉道者尼基佛若（1942年）" Id="" Type="0"/>
+<SAINT Name="圣阿尔塞尼（被称为“勤劳者”基辅洞窟修道院修士，14世纪）及圣彼敏（12世纪）" Id="4390" Type="0" />
+<SAINT Name="圣妇艾弥利亚（大圣瓦西里，尼撒主教圣格里高利及圣女玛克里纳之生母，375年）" Id="" Type="0" />
+<SAINT Name="圣女伊杜贝尔伽（荷兰的尼吉维尔城的建立者，652年）" Id="" Type="0" />
+<SAINT Name="圣耶拉克斯（埃及，5世纪）" Id="" Type="0" />
+<SAINT Name="圣玛喀里（格恒特总主教，1012年）" Id="" Type="0" />
+<SAINT Name="敬迁诺夫哥罗德的圣愚阿尔塞尼（1570年）之圣髑纪念日（1785年）" Id="" Type="0" />
+<SAINT Name="卡西奥彼亚圣母像治愈瞽目者斯特梵之奇迹纪念日" Id="" Type="0" />
+
+</DAY>

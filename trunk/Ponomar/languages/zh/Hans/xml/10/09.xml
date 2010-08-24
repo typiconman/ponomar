@@ -1,0 +1,20 @@
+<DAY>
+<SAINT Name="14" Cmd="dow == 0" />
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostle"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:16-21" Pericope="51" Note="for the Apostle"/>
+
+<SAINT Name="圣使徒雅科弗（阿尔斐之子）" Id="" Type="0" />
+<SAINT Name="义德圣祖阿弗拉穆、及其侄义人罗特（主降生前2000年）" Id="" Type="0" />
+<SAINT Name="圣迪弥特里（亚历山大里亚牧首，231年）" Id="" Type="0" />
+<SAINT Name="殉道者犹文提及玛克息默（安提约希亚，4世纪）" Id="" Type="0" />
+<SAINT Name="圣安德若尼科及其妻圣妇阿塔纳西亚（埃及，500年）" Id="" Type="0" />
+<SAINT Name="圣裴特若（噶拉提亚地方，9世纪）" Id="" Type="0" />
+<SAINT Name="圣女普弗利亚（安提约希亚之宣信者，360年）" Id="" Type="0" />
+<SAINT Name="新圣斯特梵（塞尔维亚，1427年，与先知月十九日所纪念者系同一人）" Id="" Type="0" />
+<SAINT Name="圣斯特梵“瞽者”（塞尔维亚国君，1468年）" Id="" Type="0" />
+<SAINT Name="殉道司教迪奥尼西（巴黎主教，258年）" Id="" Type="0" />
+<SAINT Name="赫尔松圣母像纪念日" Id="" Type="0" />
+<SAINT Name="“安慰我哀痛者”圣母像纪念日" Id="" Type="0" />
+
+</DAY>
