@@ -1,0 +1,9 @@
+<TONE>
+<PRIMES TROPARION1="THUR2" Type="Normal" KONTAKION1="THUR2" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
+<PRIMES Type="Lenten" KONTAKION1="MTTL" Cmd="(nday > -50 &amp;&amp; nday < 0)" />
+<TERCE TROPARION1="THUR2" Type="Normal" KONTAKION1="THUR2" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
+<SEXTE TROPARION1="THUR2" Type="Normal" KONTAKION1="THUR2" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
+<SEXTE Type="Lenten" KONTAKION1="MTTL6" Cmd="(nday > -50 &amp;&amp; nday < 0)"/>
+<NONE TROPARION1="THUR2" Type="Normal" KONTAKION1="THUR2" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
+
+</TONE>
