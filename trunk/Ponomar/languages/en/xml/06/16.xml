@@ -1,0 +1,13 @@
+<DAY>
+<SAINT Name="15" Cmd="dow == 6" />
+
+<SAINT Name="Saint Tikhon, Bishop of Amathus (+425)" Id="1322" Type="1" />
+<SAINT Name="Venerable Tikhon of Lukh and Kostroma (+1503)" Id="2117" Type="0" />
+<SAINT Name="Venerable Tikhon of Medin and Kaluga (+1492)" Id="2118" Type="0" />
+<SAINT Name="Hieromartyr Tigrius the Presbyter and Martyr Eutropius the Reader (+404)" Id="1324" Type="0" />
+<SAINT Name="New Hieromartyrs Hermogenes, bishop of Tobolsk, Priests Ephraim, Michael, and Peter, and Martyr Constantine (+1918)" Id="4794" Type="0" />
+<SAINT Name="Venerable Moses of Optina (+1862)" Id="4641" Type="0" />
+<SAINT Name="Translation of the Relics of St Theophan the Recluse of Vyshna (2002)" Id="6892" Type="0" />
+<SAINT Name="St. Qiakhosro of Georgia" Id="" Type="0" />
+
+</DAY>
