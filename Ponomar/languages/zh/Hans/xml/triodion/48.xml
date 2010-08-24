@@ -1,0 +1,10 @@
+<DAY>
+<PRIMES Type="Lenten" />
+<SCRIPTURE Type="6th hour" Reading="Isa_1:1-20" />
+<SCRIPTURE Type="vespers" Reading="Gen_1:1-13" />
+<SCRIPTURE Type="vespers" Reading="Prov_1:1-20" />
+<LITURGY Type="-1" Comment="No Divine Liturgy EVER"/>
+
+<SAINT Name="洁净瞻礼二：大斋期开始" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8" />
+
+</DAY>
