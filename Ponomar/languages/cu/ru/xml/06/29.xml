@@ -1,0 +1,14 @@
+<DAY>
+<SCRIPTURE Type="vespers" Reading="I Pet_1:3-9" />
+<SCRIPTURE Type="vespers" Reading="I Pet_1:13-19" />
+<SCRIPTURE Type="vespers" Reading="I Pet_2:11-24" />
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_11:21-12:9" Pericope="193" Note="for the Apostles"/>
+<SCRIPTURE Type="gospel" Reading="Mt_16:13-19" Pericope="67" Note="for the Apostles"/>
+
+<SAINT Name="Славных и всехвальных первоверховных апостолов Петра и Павла" Id="9785" Type="6"/>
+<SAINT Name="Прмчч. Неофита, Ионы, Неофита, Ионы и Парфения Липсийских" Id="" Type="0"/>
+<SAINT Name="Свт. Григория, митр. Ираклийского и Редестосского" Id="" Type="0"/>
+<SAINT Name="Касперовской (1853-1855) иконы Божией Матери" Id="1647" Type="0"/>
+
+</DAY>

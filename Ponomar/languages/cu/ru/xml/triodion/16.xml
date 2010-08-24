@@ -1,0 +1,10 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_45:11-17" />
+<SCRIPTURE Type="vespers" Reading="Gen_22:1-18" />
+<SCRIPTURE Type="vespers" Reading="Prov_17:17-18:5" />
+<PRIMES Type="Lenten" />
+<LITURGY Type="3" Comment="Pre-Sanctified except Annuncation" Cmd="dRank != 6"/>
+
+<SAINT Name="Пятница 5-й седмицы Великого поста" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

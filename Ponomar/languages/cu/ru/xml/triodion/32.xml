@@ -1,0 +1,10 @@
+<DAY>
+<SCRIPTURE Type="6th hour" Reading="Isa_10:12-20" />
+<SCRIPTURE Type="vespers" Reading="Gen_7:6-9" />
+<SCRIPTURE Type="vespers" Reading="Prov_9:12-18" />
+<PRIMES Type="Lenten" LENTENK="2"/>
+<LITURGY Type="3" Comment="Pre-sanctified" Cmd="dRank != 6"/>
+
+<SAINT Name="Среда 3-й седмицы Великого поста" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
+
+</DAY>

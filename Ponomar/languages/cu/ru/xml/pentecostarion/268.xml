@@ -1,0 +1,16 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Jas_2:14-26" Pericope="53"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="((doy &gt;= 363 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 4)) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &gt;= 356 &amp;&amp; doy &lt;= 362) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_9:42-10:1" Pericope="42" Cmd="(doy &gt;= 349 &amp;&amp; doy &lt;= 355) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:11-21" Pericope="33" Cmd="(doy &gt;= 342 &amp;&amp; doy &lt;= 348) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &gt;= 12 &amp;&amp; doy &lt;= 18 &amp;&amp; nday == -83) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_9:42-10:1" Pericope="42" Cmd="(doy &gt;= 12 &amp;&amp; doy &lt;= 18 &amp;&amp; nday == -90) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &gt;= 5 &amp;&amp; doy &lt;= 11 &amp;&amp; nday == -83) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_9:42-10:1" Pericope="42" Cmd="(doy &gt;= 5 &amp;&amp; doy &lt;= 11 &amp;&amp; nday == -90) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="GS == 0" /> 
+
+<SAINT Name="Понедельник 32-й седмицы по Пятидесятнице" Id="" Type="0" Tone="6"/>
+
+</DAY>

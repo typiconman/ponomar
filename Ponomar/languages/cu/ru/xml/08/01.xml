@@ -1,0 +1,14 @@
+<DAY>
+<SCRIPTURE Type="apostol" Reading="I Cor_1:18-24" Pericope="125" Note="for the Cross"/>
+<SCRIPTURE Type="gospel" Reading="Jn_19:6-11, 13-20, 25-35" Pericope="60" Note="for the Cross"/>
+<SCRIPTURE Type="apostol" Reading="Heb_11:33-12-2" Pericope="330" Note="for the Martyrs" Cmd="dow != 0"/>
+<SCRIPTURE Type="gospel" Reading="Mt_10:32-36, 11:1" Pericope="38" Note="for the Martyrs" Cmd="dow != 0"/>
+
+<SAINT Name="Происхождение (изнесение) честных древ Животворящего Креста Господня" Id="4360" Type="3"/>
+<SAINT Name="Семи мучеников Маккавеев: Авима, Антонина, Гурия, Елеазара, Евсевона, Алима и Маркелла, матери их Соломонии и учителя их Елеазара (166 до Р.Х.)" Id="24" Type="1"/>
+<SAINT Name="Празднество Всемилостивому Спасу и Пресвятой Богородице (1164)" Id="4361" Type="1"/>
+<SAINT Name="Сщмч. Димитрия пресвитера (1937)" Id="4766" Type="0"/>
+<SAINT Name="Мчч. в Пергии Памфилийской: Леонтия, Аттия, Александра, Киндея, Минсифея, Кириака, Минеона, Катуна и Евклея (III)" Id="4363" Type="0"/>
+<SAINT Name="Обретение мощей прп. Софии Суздальской (1995)" Id="3133" Type="0"/>
+
+</DAY>
