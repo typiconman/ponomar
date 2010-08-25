@@ -1,12 +1,13 @@
 <DAY>
 <LANGUAGE>
 <SAINT Name="12" Cmd="dow == 0" />
-<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="nday == -58" />
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday == -58" Note="for St Xenia"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday == -58" Note="for St Xenia"/>
+<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="nday == -58 || dow == 6" />
+<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday == -58 || dow == 6" Note="for St Xenia"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday == -58 || dow == 6" Note="for St Xenia"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Blessed Xenia of Saint Petersburg (19th C) [from Saturday]" Id="2568" Type="1" Cmd="nday == -58"/>
+<SAINT Name="Blessed Xenia of Saint Petersburg (19th C) [from Sunday]" Id="2568" Type="1" Cmd="dow == 6"/>
 <SAINT Name="Hieromartyr Clement, Bishop of Ancyra, and Martyr Agathangel (+ c 312)" Id="284" Type="1" />
 <SAINT Name="Saint Paulinus the Merciful, Bishop of Nola (+ 431)" Id="289" Type="0" />
 <SAINT Name="Venerable Mausima the Syrian (4th C)" Id="287" Type="0" />

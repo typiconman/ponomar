@@ -2,8 +2,8 @@
 <LANGUAGE>
 <SAINT Name="12" Cmd="dow == 0" />
 <SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="dow != 0 &amp;&amp; nday != -57" />
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57" Note="for St Xenia"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57" Note="for St Xenia"/>
+<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Venerable Xenia of Rome and her two female slaves (5th C)" Id="294" Type="1" />
@@ -19,7 +19,8 @@
 <SAINT Name="Venerable Dionisius of Olympus" Id="" Type="0" />
 <SAINT Name="Saint Gerasim, Bishop of Perm (+1441)" Id="502" Type="0" />
 <SAINT Name="Martyr John of Kazan (+1529)" Id="979" Type="0" />
-<SAINT Name="Blessed Xenia of Saint Petersburg (19th C)" Id="2568" Type="1" Cmd="nday != -57"/>
+<SAINT Name="Blessed Xenia of Saint Petersburg (19th C)" Id="2568" Type="1" Cmd="nday != -57 &amp;&amp; dow != 0"/>
+<SAINT Name="Blessed Xenia of Saint Petersburg (19th C) [transferred to Saturday]" Id="2568" Type="1" Cmd="dow == 0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 1">
 <SAINT Name="Ste Xénie et ses 2 servantes" Id="294" Type="1" />

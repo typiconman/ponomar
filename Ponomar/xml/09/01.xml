@@ -9,7 +9,7 @@
 <SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Simeon" Cmd="dow != 0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
-<SAINT Name="Church New Year" Id="" Type="4" />
+<SAINT Name="Church New Year" Id="9426" Type="4" />
 <SAINT Name="St. Simeon Stylites, the Elder (+459) and his mother, Venerable Martha (+428)" Id="1426" Type="1" />
 <SAINT Name="Martyr Aithalus the Deacon" Id="85" Type="0" />
 <SAINT Name="40 Holy Virgins and Saint Ammoun the Deacon (4th C)" Id="1428" Type="0" />
