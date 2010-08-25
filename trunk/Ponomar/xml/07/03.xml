@@ -1,4 +1,9 @@
 <DAY>
+<LANGUAGE>
+<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Philip"/>
+<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St Philip"/>
+</LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Martyr Hyacinth of Caesarea in Cappadocia (+ 108)" Id="4142" Type="1" />
 <SAINT Name="Translation of the relics of Hieromartyr Philip, Metropolitan of Moscow (1652)" Id="2294" Type="4" />
@@ -49,8 +54,7 @@
 <SAINT Name="Прп. Никодима Кожеезерского (1640)" Id="1627" Type="0"/>
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 5">
-<SAINT Name="殉道者：雅金托、迪奥弥迪、艾弗朗彼、阿斯克利彼奥多特、格林杜克（卡帕多西亚的恺撒里亚，108年）" Id="4142" Type="1" />
-<SAINT Name="敬迁殉道司教斐利普（莫斯科都主教，1569年）之圣髑纪念日（1652年）" Id="2294" Type="4" />
+<SAINT Name="殉道者：雅金托、迪奥弥迪、艾弗朗彼、阿斯克利彼奥多特、格林杜克（卡帕多西亚的恺撒里亚，108年）" Id="" Type="0" />
 <SAINT Name="圣克劳迪亚诺（亚历山大里亚牧首，167年）" Id="" Type="0" />
 <SAINT Name="圣阿纳托利（劳迪基亚主教）及其继位者圣艾弗塞维主教（3世纪）" Id="" Type="0" />
 <SAINT Name="殉道者默基及玛尔克（4世纪）" Id="" Type="0" />
@@ -65,6 +69,7 @@
 <SAINT Name="雅罗斯拉夫尔王子圣瓦西里（1249年）和圣君士坦丁（1257年）" Id="" Type="0" />
 <SAINT Name="圣瓦西里（诺夫哥罗德总主教，1352年）" Id="" Type="0" />
 <SAINT Name="圣约安及圣隆吉诺（索洛维基的雅任伽地方之显行灵迹者，1544-45年间）" Id="" Type="0" />
+<SAINT Name="敬迁殉道司教斐利普（莫斯科都主教，1569年）之圣髑纪念日（1652年）" Id="" Type="0" />
 <SAINT Name="蒙福者约安（莫斯科之圣愚，1589年）" Id="" Type="0" />
 <SAINT Name="圣尼科德默（科扎湖之修道院院长，1640年）" Id="" Type="0" />
 <SAINT Name="蒙福者：弥哈伊尔、伊若迪翁、瓦西里、托玛斯（均为索尔维赫格德斯克之圣愚，17世纪）" Id="" Type="0" />
@@ -73,8 +78,7 @@
 <SAINT Name="阿托斯圣山希兰达尔修道院之“施乳者”圣母像纪念日" Id="" Type="0" />
 </LANGUAGE>
 <LANGUAGE Cmd="LS == 6">
-<SAINT Name="殉道者：雅金托、迪奧彌迪、艾弗朗彼、阿斯克利彼奧多特、格林杜克（卡帕多西亞的愷撒里亞，108年）" Id="4142" Type="1" />
-<SAINT Name="敬遷殉道司教斐利普（莫斯科都主教，1569年）之聖髑紀念日（1652年）" Id="2294" Type="4" />
+<SAINT Name="殉道者：雅金托、迪奧彌迪、艾弗朗彼、阿斯克利彼奧多特、格林杜克（卡帕多西亞的愷撒里亞，108年）" Id="" Type="0" />
 <SAINT Name="聖克勞迪亞諾（亞歷山大里亞牧首，167年）" Id="" Type="0" />
 <SAINT Name="聖阿納托利（勞迪基亞主教）及其繼位者聖艾弗塞維主教（三世紀）" Id="" Type="0" />
 <SAINT Name="殉道者默基及瑪爾克（四世紀）" Id="" Type="0" />
@@ -89,6 +93,7 @@
 <SAINT Name="雅羅斯拉夫爾王子聖瓦西里（1249年）和聖君士坦丁（1257年）" Id="" Type="0" />
 <SAINT Name="聖瓦西里（諾夫哥羅德總主教，1352年）" Id="" Type="0" />
 <SAINT Name="聖約安及聖隆吉諾（索洛維基的雅任伽地方之顯行靈蹟者，1544-45年間）" Id="" Type="0" />
+<SAINT Name="敬遷殉道司教斐利普（莫斯科都主教，1569年）之聖髑紀念日（1652年）" Id="" Type="0" />
 <SAINT Name="蒙福者約安（莫斯科之聖愚，1589年）" Id="" Type="0" />
 <SAINT Name="聖尼科德默（科扎湖之修道院院長，1640年）" Id="" Type="0" />
 <SAINT Name="蒙福者：彌哈伊爾、伊若迪翁、瓦西里、托瑪斯（均為索爾維赫格德斯克之聖愚，十七世紀）" Id="" Type="0" />

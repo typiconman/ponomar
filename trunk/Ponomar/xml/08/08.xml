@@ -1,4 +1,9 @@
 ﻿<DAY>
+<LANGUAGE>
+<SCRIPTURE Type="matins" Reading="Mt_11:27-30" Pericope="43" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for Sts Zosima and Sabbatius"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for Sts Zosima and Sabbatius"/>
+</LANGUAGE>
 <LANGUAGE Cmd="LS == 0">
 <SAINT Name="Afterfeast of the Transfiguration of the Lord" Id="" Type="0" />
 <SAINT Name="Saint Emelian the Confessor, Bishop of Cyzicus (+ c815-820)" Id="4397" Type="1" />
