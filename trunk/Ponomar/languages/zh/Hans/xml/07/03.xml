@@ -1,4 +1,7 @@
 <DAY>
+<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Philip"/>
+<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St Philip"/>
 
 <SAINT Name="殉道者：雅金托、迪奥弥迪、艾弗朗彼、阿斯克利彼奥多特、格林杜克（卡帕多西亚的恺撒里亚，108年）" Id="4142" Type="1" />
 <SAINT Name="敬迁殉道司教斐利普（莫斯科都主教，1569年）之圣髑纪念日（1652年）" Id="2294" Type="4" />

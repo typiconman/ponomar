@@ -1,4 +1,7 @@
 <DAY>
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Acts_11:19-26, 29-30" Pericope="28" Note="for the Apostles"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:16-21" Pericope="51" Note="for the Apostles"/>
 
 <SAINT Name="圣使徒瓦尔托洛麦及瓦尔纳瓦" Id="365" Type="4" />
 <SAINT Name="大殉道者北京的圣弥特若梵——首位华人正教司祭、以及全体222位于庚子教难中就义之中华殉道者——知名者有：塔提亚纳（弥特若梵之妻）、伊撒依亚和约安（均为弥特若梵之子）、帕弗罗（教理讲授师）、伊雅（女教师）、玛特泰和维托两兄弟，克利密斯、安纳。（北京，1900年）" Id="" Type="0" />

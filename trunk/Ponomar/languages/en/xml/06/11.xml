@@ -1,4 +1,7 @@
 <DAY>
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Acts_11:19-26, 29-30" Pericope="28" Note="for the Apostles"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:16-21" Pericope="51" Note="for the Apostles"/>
 
 <SAINT Name="Holy Apostles Bartholomew and Barnabas (1st C)" Id="365" Type="4" />
 <SAINT Name="Venerable Barnabas the Abbot of Vetluga (15th C)" Id="6800" Type="0" />

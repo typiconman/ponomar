@@ -1,7 +1,7 @@
 ﻿<DAY>
 <LANGUAGE>
 <PRIMES Type="Normal" />
-<SCRIPTURE Type="matins" Reading="Lk_24:36-53" Pericope="114" Cmd="dRank != 6"/>
+<SCRIPTURE Type="matins" Reading="Lk_24:36-53" Pericope="114" Cmd="dRank &lt;= 6"/>
 <SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid)"/>
 <SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" Cmd="(doy &lt; 264 &amp;&amp; GS == 1) || GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Lk_7:11-16" Pericope="30" Cmd="(doy &gt;= 278 &amp;&amp; doy &lt;= 284) &amp;&amp; GS == 1"/>

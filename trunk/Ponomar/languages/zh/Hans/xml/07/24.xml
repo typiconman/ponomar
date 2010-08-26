@@ -1,4 +1,7 @@
 <DAY>
+<SCRIPTURE Type="matins" Reading="Lk_2112-19" Pericope="106" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Rom_8:28-39" Pericope="99" Note="for Sts Boris and Gleb"/>
+<SCRIPTURE Type="gospel" Reading="Jn_15:17-16:2" Pericope="52" Note="for Sts Boris and Gleb"/>
 
 <SAINT Name="殉道女赫里斯提纳（提尔，300年）" Id="4296" Type="2" />
 <SAINT Name="圣殉道者，俄罗斯蒙难之王子：博里斯及格勒布（在浸礼中取名为罗玛诺和达维德，1015年）" Id="324" Type="4" />
