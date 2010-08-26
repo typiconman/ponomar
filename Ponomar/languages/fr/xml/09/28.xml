@@ -2,8 +2,9 @@
 <SCRIPTURE Type="vespers" Reading="Wisd_5:15-6:3"/>
 <SCRIPTURE Type="vespers" Reading="Wisd_3:1-9"/>
 <SCRIPTURE Type="vespers" Reading="Wisd_4:7-15"/>
-<SCRIPTURE Type="apostol" Reading="II Cor_4:6-15" Pericope="176"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24"/>
+<SCRIPTURE Type="matins" Reading="Mt_4:25-5:12" Pericope="10" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_4:6-15" Pericope="176" Note="for St Chariton"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Chariton"/>
 
 <SAINT Name="St Chariton" Id="1619" Type="4" />
 <SAINT Name="St Prophète Baruch" Id="364" Type="0" />

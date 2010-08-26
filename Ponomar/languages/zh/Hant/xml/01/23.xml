@@ -1,10 +1,11 @@
 <DAY>
 <SAINT Name="12" Cmd="dow == 0" />
-<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="nday == -58" />
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday == -58" Note="for St Xenia"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday == -58" Note="for St Xenia"/>
+<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="nday == -58 || dow == 6" />
+<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday == -58 || dow == 6" Note="for St Xenia"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday == -58 || dow == 6" Note="for St Xenia"/>
 
 <SAINT Name="聖女克塞尼亞（彼得堡的成德者，聖愚，19世紀）〔轉自安息日／週六〕" Id="2568" Type="1" Cmd="nday == -58"/>
+<SAINT Name="聖女克塞尼亞（彼得堡的成德者，聖愚，19世紀）〔轉自安息日／週日〕" Id="2568" Type="1" Cmd="dow == 6"/>
 <SAINT Name="殉道司教克利密斯（安基拉主教）及殉道者阿伽曇頡羅（296年）" Id="284" Type="1" />
 <SAINT Name="聖帕弗利諾（慈悲者，諾拉城主教，431年）" Id="289" Type="0" />
 <SAINT Name="聖瑪弗息瑪（敘利亞修士，4世紀）" Id="287" Type="0" />

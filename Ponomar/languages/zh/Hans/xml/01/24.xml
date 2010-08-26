@@ -1,8 +1,8 @@
 <DAY>
 <SAINT Name="12" Cmd="dow == 0" />
 <SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="dow != 0 &amp;&amp; nday != -57" />
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57" Note="for St Xenia"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57" Note="for St Xenia"/>
+<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
 
 <SAINT Name="圣女克塞尼亚及她的两位使女（罗马人，5世纪）" Id="294" Type="1" />
 <SAINT Name="殉道者瓦维拉和他的两位弟子：提摩泰及阿伽彼（西西里岛，3世纪）" Id="297" Type="0" />

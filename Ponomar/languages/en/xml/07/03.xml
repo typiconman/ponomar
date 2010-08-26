@@ -1,4 +1,7 @@
 <DAY>
+<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Philip"/>
+<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St Philip"/>
 
 <SAINT Name="Martyr Hyacinth of Caesarea in Cappadocia (+ 108)" Id="4142" Type="1" />
 <SAINT Name="Translation of the relics of Hieromartyr Philip, Metropolitan of Moscow (1652)" Id="2294" Type="4" />

@@ -1,6 +1,9 @@
 <DAY>
 <SAINT Name="1" Cmd="dow == 0" />
 <SAINT Name="7" Cmd="dow == 6" />
+<SCRIPTURE Type="matins" Reading="Mt_11:27-30" Pericope="43" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for Sts Sergius and Herman"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for Sts Sergius and Herman"/>
 
 <SAINT Name="誕神女誕辰節慶期" Id="" Type="0" />
 <SAINT Name="敬遷瓦拉穆修道院的聖塞爾吉及聖革爾曼之聖髑紀念日（1353年）" Id="1411" Type="4" />

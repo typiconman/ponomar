@@ -1,11 +1,12 @@
 <DAY>
 <SAINT Name="12" Cmd="dow == 0" />
 <SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="dow != 0 &amp;&amp; nday != -57" />
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57" Note="for St Xenia"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57" Note="for St Xenia"/>
+<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
 
 <SAINT Name="Прп. Ксении (ок. 457)" Id="294" Type="1"/>
-<SAINT Name="Блж. Ксении Петербургской (XIX)" Id="2568" Type="1" Cmd="nday != -57"/>
+<SAINT Name="Блж. Ксении Петербургской (XIX)" Id="2568" Type="1" Cmd="nday != -57 &amp;&amp; dow != 0"/>
+<SAINT Name="Блж. Ксении Петербургской (XIX) [перенос. на субботу]" Id="2568" Type="1" Cmd="dow == 0"/>
 <SAINT Name="Мчч. Вавилы Сицилийского и учеников его Тимофея и Агапия (III)" Id="297" Type="0"/>
 <SAINT Name="Прп. Македония, сирийского пустынника (ок. 420)" Id="298" Type="0"/>
 <SAINT Name="Перенесение мощей прмч. Анастасия Персянина (VII)" Id="165" Type="0"/>
