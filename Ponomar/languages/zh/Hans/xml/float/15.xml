@@ -1,0 +1,12 @@
+﻿<DAY>
+<!-- Observed in the Russian Church abroad on the Saturday closest to the 19th of June -->
+<SCRIPTURE Type="vespers" Reading="Composite_3" />
+<SCRIPTURE Type="vespers" Reading="Composite_4" />
+<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" />
+<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35" Note="圣伊望"/>
+<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="335" Note="圣伊望"/>
+<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="圣伊望"/>
+
+<SAINT Name="显行灵迹者，上海及旧金山总主教圣伊望（1966年）" Id="6630" Type="5" />
+
+</DAY>
