@@ -1,0 +1,9 @@
+﻿<DAY>
+<SCRIPTURE Type="apostol" Reading="II Tim_4:5-8" Pericope="298" Note="主显节前主日"/>
+<SCRIPTURE Type="gospel" Reading="Mk_1:1-8" Pericope="1" Note="主显节前主日"/>
+
+<SAINT Name="主显节前主日" Id="" Type="0" Cmd="dow == 0"/>
+<SAINT Name="主显节前主日经课在本日恭读" Id="" Type="0" Cmd="dow == 1"/>
+<!-- This can only occur on January 1st, which is a Monday -->
+
+</DAY>
