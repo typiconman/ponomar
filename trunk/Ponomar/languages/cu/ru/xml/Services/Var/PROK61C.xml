@@ -1,5 +1,7 @@
 <SERVICE>
 <LANGUAGE>
 
+<GETID Type="T" Id="26" What="/SEXTE/PROKEIMENON/1a" Who="C" RedFirst="1" NewLine="1"/>
+<GETID Type="T" Id="26" What="/SEXTE/PROKEIMENON/1b" Who="C"/>
 </LANGUAGE>
 </SERVICE>
