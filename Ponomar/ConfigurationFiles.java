@@ -44,7 +44,7 @@ public class ConfigurationFiles implements DocHandler
 		try
 		{
 			//FileReader frf = new FileReader("Ponomar/xml/ponomar.config");
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream("Ponomar/xml/ponomar.config"), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream("Ponomar/languages/xml/ponomar.config"), "UTF8"));
 			//OutputStreamWriter out = new OutputStreamWriter(new ByteArrayOutputStream());
 			//System.out.println(out.getEncoding());
 
@@ -64,7 +64,7 @@ public class ConfigurationFiles implements DocHandler
 				
 		try
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/xml/ponomar.config"),"UTF8"));
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/xml/ponomar.config"),"UTF8"));
 			//BufferedWriter out = new BufferedWriter(new FileWriter("Ponomar/xml/ponomar.config"));//,"UT8");
 			out.write("<CONFIGURATION>");
 			out.newLine();

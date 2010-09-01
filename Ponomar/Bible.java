@@ -30,8 +30,8 @@ GNU General Public License for details.
  ****************************************************************************************/
 class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionListener {
 
-    private final static String bmlfile = "Ponomar/xml/bible.xml"; // SOURCE FILE
-    private final static String bibpath = "Ponomar/data/";
+    private final static String bmlfile = "Ponomar/languages/xml/bible.xml"; // SOURCE FILE
+    private final static String bibpath = "Ponomar/languages/";
     // Parsing and navigation information
     private String curversion = "kjv"; // DEFAULT VERSION
     private String curbook;

@@ -177,13 +177,15 @@ class Helpers
             {
                 if (currentPath.length()<=1)
                 {
+                    currentPath="";
                     break;
                 }
                 String shorter=currentPath.substring(0,currentPath.length()-2);
                 int location=shorter.lastIndexOf("/");
                 if (location==-1)
                 {
-                    //File not found!
+                    //No localised files found use top level domain file.
+                    currentPath="";
                     break;
                 }
                 currentPath=currentPath.substring(0,location)+"/";
