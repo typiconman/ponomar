@@ -1,8 +1,0 @@
-﻿<COMMONPRAYER>
-<LANGUAGE Cmd="LS == 0">
-<TEXT Value=""/>
-</LANGUAGE>
-<LANGUAGE Cmd="LS == 1">
-<TEXT Value="Il manque de parte de cet office."/>
-</LANGUAGE>
-</COMMONPRAYER>

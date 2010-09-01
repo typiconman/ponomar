@@ -1,8 +1,0 @@
-﻿<COMMONPRAYER>
-<LANGUAGE Cmd="LS == 0">
-<TEXT Value="Theotokion"/>
-</LANGUAGE>
-<LANGUAGE Cmd="LS == 1">
-<TEXT Value="Théotokion"/>
-</LANGUAGE>
-</COMMONPRAYER>

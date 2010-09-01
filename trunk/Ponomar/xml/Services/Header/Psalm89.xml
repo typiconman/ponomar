@@ -1,8 +1,0 @@
-﻿<COMMONPRAYER>
-<LANGUAGE Cmd="LS == 0">
-<TEXT Value="Psalm 89"/>
-</LANGUAGE>
-<LANGUAGE Cmd="LS == 1">
-<TEXT Value="Psaume 89"/>
-</LANGUAGE>
-</COMMONPRAYER>

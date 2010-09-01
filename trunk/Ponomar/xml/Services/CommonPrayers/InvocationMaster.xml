@@ -1,8 +1,0 @@
-﻿<COMMONPRAYER>
-<LANGUAGE Cmd="LS == 0">
-<TEXT Value="In the name of the Lord, Master bless."/>
-</LANGUAGE>
-<LANGUAGE Cmd="LS == 1">
-<TEXT Value="Au nom du Seigneur, Maître, bénis."/>
-</LANGUAGE>
-</COMMONPRAYER>
