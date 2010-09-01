@@ -27,7 +27,7 @@ THIS MODULE READS THE FASTING.XML FILE TO DETERMINE THE FAST ON A GIVEN DAY
 
 public class Fasting implements DocHandler
 {
-	private final static String FileName   = "Ponomar/xml/Commands/Fasting.xml";
+	private final static String FileName   = "xml/Commands/Fasting.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
 	private static OrderedHashtable Information;
@@ -37,10 +37,11 @@ public class Fasting implements DocHandler
 	//private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 	private static String Fast;
-	
+	private static Helpers helper;
 	public String FastRules() //throws IOException
 	{
 		Fast=new String();
+		helper=new Helpers();
 		Information=new OrderedHashtable();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
@@ -96,7 +97,7 @@ public class Fasting implements DocHandler
 		//System.out.print("Today's rank is "+StringOp.dayInfo.get("dRank")+"\n");
 		try
 		{
-			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(FileName), "UTF8"));
+			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 			QDParser.parse(this, frf1);
 		}
 		catch (Exception e)
@@ -261,10 +262,10 @@ public class Fasting implements DocHandler
 				return;
 			}
 		}
-		if(elem.equals("LANGUAGE"))
-		{
+		//if(elem.equals("LANGUAGE"))
+		//{
 			readLanguage=true;
-		}
+		//}
 		if(elem.equals("PERIOD"))
 		{
 			readPeriod=true;
@@ -302,10 +303,10 @@ public class Fasting implements DocHandler
 
 	public void endElement(String elem)
 	{
-		if(elem.equals("LANGUAGE"))
-		{
-			readLanguage=false;
-		}
+		//if(elem.equals("LANGUAGE"))
+		//{
+		//	readLanguage=false;
+		//}
 		if(elem.equals("PERIOD"))
 		{
 			readPeriod=false;
