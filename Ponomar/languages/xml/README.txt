@@ -1,0 +1,2 @@
+This is the top level xml folder that contains all the information that is common to all languages/traditions/jurisdictions. Ideally, this folder can serve as the template file for what needs to be translated in order to obtain a complete new language folder.
+As well, this folder contains mission critical configuration files that should not be changed unless the user knows what is going on and accepts the risks involved.
