@@ -1,0 +1,18 @@
+﻿<DAY>
+<PRIMES Type="Normal" />
+<!-- 4th matins gospel -->
+<SCRIPTURE Type="matins" Reading="Lk_24:1-12" Pericope="112"/>
+<!-- THEOPHANY JUMP IMPLEMENTATION: GOSPEL AND EPISTLE READINGS FOR SUNDAY #32 -->
+<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)" />
+<!-- Adding the Supplementary Readings: 5 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy >= 32 &amp;&amp; doy &lt;= 38 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy >= 25 &amp;&amp; doy &lt;= 31 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy >= 18 &amp;&amp; doy &lt;= 24 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
+<!-- Readings for the Jordanville implementation -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 0" /> 
+
+<SAINT Name="五旬节后第卅七主日（匝克亥主日）" Id="" Type="0" Tone="4" />
+
+</DAY>

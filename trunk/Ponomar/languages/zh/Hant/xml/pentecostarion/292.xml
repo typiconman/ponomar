@@ -1,0 +1,21 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="Jas_1:19-27" Pericope="51" Cmd="nday == -87" />
+<SCRIPTURE Type="apostol" Reading="Heb_10:35-11:7" Pericope="326" Cmd="nday == -94" />
+<!-- Adding the Lucan Jump Reading for the 31 Week Reading (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="(doy &gt;= 1 &amp;&amp; doy &lt;= 7) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_10:17-27" Pericope="45" Cmd="(doy &gt;= 15 &amp;&amp; doy &lt;= 21 &amp;&amp; nday == -87) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 5 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_9:10-16" Pericope="39" Cmd="(doy &gt;= 15 &amp;&amp; doy &lt;= 21 &amp;&amp; nday == -94) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_10:17-27" Pericope="45" Cmd="(doy &gt;= 8 &amp;&amp; doy &lt;= 14 &amp;&amp; nday == -87) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_9:10-16" Pericope="39" Cmd="(doy &gt;= 8 &amp;&amp; doy &lt;= 14 &amp;&amp; nday == -94) &amp;&amp; GS == 1"/>
+<!-- Readings for the Jordanville implementation -->
+<SCRIPTURE Type="gospel" Reading="Mk_10:17-27" Pericope="45" Cmd="(nday == -87) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Mk_9:10-16" Pericope="39" Cmd="(nday == -94) &amp;&amp; GS == 0" /> 
+
+<SAINT Name="五旬節後第卅五週瞻禮五" Id="" Type="0" Tone="1" />
+
+</DAY>

@@ -1,0 +1,14 @@
+﻿<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="apostol" Reading="I Tim_5:22-6:11" Pericope="287"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" Cmd="(doy &gt;= 344 &amp;&amp; doy &lt;= 350) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:5-7, 10-11,20-24" Pericope="104" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 343) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_20:1-8" Pericope="99" Cmd="(doy &gt;= 330 &amp;&amp; doy &lt;= 336) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:15-17, 26-30" Pericope="90" Cmd="(doy &gt;= 323 &amp;&amp; doy &lt;= 329) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_15:1-10" Pericope="78" Cmd="(doy &gt;= 316 &amp;&amp; doy &lt;= 322) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:48-59" Pericope="69" Cmd="(doy &gt;= 309 &amp;&amp; doy &lt;= 315) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:15-17, 26-30" Pericope="90" Cmd="GS == 0" /> 
+
+<SAINT Name="五旬节后第廿七周瞻礼四" Id="" Type="0" Tone="1" />
+
+</DAY>
