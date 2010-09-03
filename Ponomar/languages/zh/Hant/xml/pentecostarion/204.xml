@@ -1,0 +1,15 @@
+<DAY>
+<PRIMES Type="Normal" />
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dRank != 6" />
+<SCRIPTURE Type="apostol" Reading="Gal_6:11-18" Pericope="215"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:25-37" Pericope="53" Cmd="(doy &gt;= 313 &amp;&amp; doy &lt;= 319) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_8:41-56" Pericope="39" Cmd="(doy &gt;= 306 &amp;&amp; doy &lt;= 312) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_8:26-39" Pericope="38" Cmd="(doy &gt;= 299 &amp;&amp; doy &lt;= 305) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:19-31" Pericope="83" Cmd="(doy &gt;= 292 &amp;&amp; doy &lt;= 298) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_8:5-15" Pericope="35" Cmd="(doy &gt;= 285 &amp;&amp; doy &lt;= 291) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:11-16" Pericope="30" Cmd="(doy &gt;= 278 &amp;&amp; doy &lt;= 284) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:19-31" Pericope="83" Cmd="GS == 0" /> 
+
+<SAINT Name="五旬節後第廿二主日" Id="" Type="0" Tone="5" />
+
+</DAY>

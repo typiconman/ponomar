@@ -1,0 +1,33 @@
+<DAY>
+<PRIMES Type="Normal" />
+<!-- NB:
+Gospel readings for the 28th Sunday.
+
+The reading for the 28th Sunday is read on the Second Sunday before the Nativity.
+The reading of that Sunday is transferred to the 28th Sunday.
+This is computed based on doys. The SSBN can occur between the 11th and the 17th of Dec.
+The doys are 344 and 350, respectively. On the Lucan Jump, this only involves 2 possibilities, either the "correct" Sunday or the 29th Sunday needs to be interchanged!
+-->
+<SCRIPTURE Type="matins" Reading="Lk_24:36-53" Pericope="114" Cmd="dRank != 6" />
+<SCRIPTURE Type="apostol" Reading="Col_1:12-18" Pericope="250"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &gt;= 355 &amp;&amp; doy &lt;= 361) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &gt;= 348 &amp;&amp; doy &lt;= 354) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &gt;= 341 &amp;&amp; doy &lt;= 347) &amp;&amp; GS == 1"/>
+<!-- Adding the Lucan Jump Reading for the 28 Week Reading (Y.S. 2008)
+ and including the change due to the 2nd Sunday before the Nativity,
+ that is, either the 29th or 30th Sunday reading is being used  -->
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &gt;= 334 &amp;&amp; doy &lt;= 336) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 340) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" Cmd="(doy &gt;= 327 &amp;&amp; doy &lt;= 333) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" Cmd="(doy &gt;= 320 &amp;&amp; doy &lt;= 326) &amp;&amp; GS == 1"/>
+<!-- Readings for the Jordanville implementation -->
+<SCRIPTURE Type="gospel" Reading="Lk_14:16-24" Pericope="76" Cmd="(doy &lt;= 350 &amp;&amp; doy &gt;= 344) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &lt;= 343 &amp;&amp; doy &gt;= 337) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &lt;= 336 &amp;&amp; doy &gt;= 330) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &lt;= 329 &amp;&amp; doy &gt;= 32) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" Cmd="(doy &lt;= 357 &amp;&amp; doy &gt;= 351) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" Cmd="(doy &gt;= 358) &amp;&amp; GS == 0" /> 
+
+<SAINT Name="五旬節後第廿八主日" Id="" Type="0" Tone="3" />
+
+</DAY>
