@@ -7,7 +7,7 @@
 <!-- Adding the Lucan Jump Reading for the 31 Week Reading (Y.S. 2008) -->
 <SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="((doy &gt;= 364 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 5)) &amp;&amp; GS == 1"/>
 <!-- Adding the Lucan Jump Reading for the 30 Week Reading (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Cmd="(doy &gt;= 357 &amp;&amp; doy &lt;= 363) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="(doy &gt;= 357 &amp;&amp; doy &lt;= 363) &amp;&amp; GS == 1"/>
 <!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
 <SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(doy &gt;= 27 &amp;&amp; doy &lt;= 33 &amp;&amp; nday == -75) &amp;&amp; GS == 1"/>
 <!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->

@@ -2,9 +2,9 @@
 <SCRIPTURE Type="vespers" Reading="Deut_1:8-11, 15-17" Cmd="nday != -51 &amp;&amp; nday != -53"/>
 <SCRIPTURE Type="vespers" Reading="Deut_10:14-21" Cmd="nday != -51 &amp;&amp; nday != -53"/>
 <SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" Cmd="nday != -51 &amp;&amp; nday != -53"/>
-<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Cmd="(nday != -51 &amp;&amp; nday != -53) &amp;&amp; dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Heb_13:7-16" Cmd="nday != -51 &amp;&amp; nday != -53"/>
-<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Cmd="nday != -51 &amp;&amp; nday != -53"/>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="(nday != -51 &amp;&amp; nday != -53) &amp;&amp; dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:7-16" Pericope="334" Cmd="nday != -51 &amp;&amp; nday != -53"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Cmd="nday != -51 &amp;&amp; nday != -53"/>
 
 <SAINT Name="Собор Вселенских учителей и святителей Василия Великого, Григория Богослова и Иоанна Златоустого." Id="373" Type="5"/>
 <SAINT Name="Сщмч. Ипполита, папы Римского и с ним мчч. Кенсорина, Савина, Хрисии девы, Филакла, Максима, Геркулина, Венерия, Стиракина, Мины, Коммода, Ерма, Мавра, Евсевия, Рустика, Монагрея, Амандина, Олимпия, Кипра, Феодора Тривуна, Максима пресвитера, Архелая диакона и Кирина епископа (III)" Id="339" Type="1"/>

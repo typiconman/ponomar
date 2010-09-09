@@ -1,6 +1,6 @@
 <DAY>
 <PRIMES Type="Normal" />
-<SCRIPTURE Type="apostol" Reading="Heb_10:35-11:7" Pericope="226"/>
+<SCRIPTURE Type="apostol" Reading="Heb_10:35-11:7" Pericope="326"/>
 <SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="(doy &gt;= 1 &amp;&amp; doy &lt;= 7) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_11:27-33" Pericope="52" Cmd="((doy &gt;= 359 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 0)) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_10:17-27" Pericope="45" Cmd="(doy &gt;= 352 &amp;&amp; doy &lt;= 358) &amp;&amp; GS == 1"/>
