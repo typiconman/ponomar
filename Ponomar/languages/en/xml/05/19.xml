@@ -1,15 +1,17 @@
 <DAY>
 
-<SAINT Name="Hieromartyr Patrick the Bishop of Prussa and the Priests Acacius, Menander, and Polyenus (+ c.100)" Id="1100" Type="1" />
-<SAINT Name="Saint John, Bishop of the Goths (+790)" Id="1106" Type="0" />
-<SAINT Name="Blessed John the Prince of Uglich, Tonsured As Ignatius (+1523)" Id="6611" Type="0" />
-<SAINT Name="Martyr Caluf of Egypt (+ c.300)" Id="1105" Type="0" />
-<SAINT Name="Martyr Theotima" Id="" Type="0" />
+<SAINT Name="Hieromartyrs Patrick the Bishop of Prussa and the Priests Acacius, Menander, and Polyenus (+ c.100)" Id="1100" Type="1" />
+<SAINT Name="Venerable Cornelius the Miracle-worker and Abbot of Komel, Vologda (+1537)" Id="1101" Type="3" />
 <SAINT Name="Holy Right-believing Great Prince Demetrius Donskoy of Moscow (+1389)" Id="6552" Type="4" />
-<SAINT Name="Venerable Serge of Shukhtov" Id="1978" Type="0" />
-<SAINT Name="Venerable Cornelius the Abbot of Komel, Vologda (+1537)" Id="1101" Type="3" />
 <SAINT Name="New Hieromartyr Viktor (+1937)" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Anthony, bishop of Belgorod and those with him (+1938)" Id="" Type="0" />
+<SAINT Name="New Hieromartyrs Anthony, bishop of Belgorod and those with him: the Priests Mitrophan, Alexander, Michael, Matthew, Hippolytus, Nicholas, Basil, Nicholas, Maxim, Alexander, Paul, and Paul and the Martyrs Michael and Gregory (+1938)" Id="" Type="0" />
 <SAINT Name="New Hieromartyr Onuphry, Archbishop of Kursk (+1938)" Id="4879" Type="0" />
+<SAINT Name="New Venerable Martyr Valentine (+1940)" Id="" Type="0" />
+<SAINT Name="Venerable Cornelius, abbot of Paleostrov and Olonetsky (+ c.1420)" Id="1103" Type="0" />
+<SAINT Name="Blessed John the Prince of Uglich, Tonsured As Ignatius (+1523)" Id="6611" Type="0" />
+<SAINT Name="Venerable Serge of Shukhtov (+1609)" Id="1978" Type="0" />
+<SAINT Name="Martyr Caluf of Egypt (284-303)" Id="1105" Type="0" />
+<SAINT Name="Saint John, Bishop of the Goths (+790)" Id="1106" Type="0" />
+<SAINT Name="Virgin Martyrs Cyriaca and Theotima of Nicomedia (+311)" Id="" Type="0" />
 
 </DAY>
