@@ -3,15 +3,15 @@
 <SAINT Name="6" Cmd="dow == 6" />
 <SCRIPTURE Type="1st hour" Reading="Isa_35:1-10" Cmd="!(dow == 6 || dow == 0)" />
 <SCRIPTURE Type="1st hour" Reading="Acts_13:25-32" Pericope="33" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="1st hour" Reading="Mt_3:1-12" Pericope="5" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="1st hour" Reading="Mt_3:1-11" Pericope="5" Cmd="!(dow == 6 || dow == 0)" />
 <SCRIPTURE Type="3rd hour" Reading="Isa_1:16-20" Cmd="!(dow == 6 || dow == 0)" />
 <SCRIPTURE Type="3rd hour" Reading="Acts_19:1-8" Pericope="42" Cmd="!(dow == 6 || dow == 0)" />
 <SCRIPTURE Type="3rd hour" Reading="Mk_1:1-8" Pericope="1" Cmd="!(dow == 6 || dow == 0)" />
 <SCRIPTURE Type="6th hour" Reading="Isa_12:3-6" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="6th hour" Reading="Rom_6:6-23" Pericope="91" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="6th hour" Reading="Rom_6:3-11" Pericope="91" Cmd="!(dow == 6 || dow == 0)" />
 <SCRIPTURE Type="6th hour" Reading="Mk_1:9-15" Pericope="2" Cmd="!(dow == 6 || dow == 0)" />
 <SCRIPTURE Type="9th hour" Reading="Isa_49:8-15" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="9th hour" Reading="Tit_2:11-3:7" Pericope="302" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="9th hour" Reading="Tit_2:11-14, 3:4-7" Pericope="302" Cmd="!(dow == 6 || dow == 0)" />
 <SCRIPTURE Type="9th hour" Reading="Mt_3:13-17" Pericope="6" Cmd="!(dow == 6 || dow == 0)" />
 <SCRIPTURE Type="vespers" Reading="Gen_1:1-13" />
 <SCRIPTURE Type="vespers" Reading="Ex_14:15-18, 21-23, 27-29" />
@@ -24,11 +24,11 @@
 <SCRIPTURE Type="vespers" Reading="Ex_2:5-10" />
 <SCRIPTURE Type="vespers" Reading="Judg_6:36-40" />
 <SCRIPTURE Type="vespers" Reading="III Kings_18:30-39" />
-<SCRIPTURE Type="vespers" Reading="IV Kings_2:12-22" />
+<SCRIPTURE Type="vespers" Reading="IV Kings_2:19-22" />
 <SCRIPTURE Type="vespers" Reading="Isa_49:8-15" />
 <SCRIPTURE Type="vespers" Reading="I Cor_10:1-4" Pericope="143 (mid)" Cmd="dow == 6 || dow == 0" />
 <SCRIPTURE Type="vespers" Reading="Lk_3:1-18" Pericope="9" Cmd="dow == 6 || dow == 0" />
-<SCRIPTURE Type="apostol" Reading="I Cor_9:19-10:4" Pericope="143" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="apostol" Reading="I Cor_9:19-27" Pericope="143" Cmd="!(dow == 6 || dow == 0)" />
 <SCRIPTURE Type="gospel" Reading="Lk_3:1-18" Pericope="9" Cmd="!(dow == 6 || dow == 0)" />
 <LITURGY Type="2" Cmd="dow != 6 &amp;&amp; dow != 0" Comments="St Basil's EXCEPT Saturday or Sunday"/>
 <LITURGY Type="1" Cmd="dow == 6 || dow == 0" Comments="St John's Saturday or Sunday"/>
