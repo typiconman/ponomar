@@ -3,15 +3,15 @@
 <SAINT Name="6" Cmd="dow == 6" />
 <SCRIPTURE Type="1st hour" Reading="Isa_35:1-10" Cmd="dow == 5" />
 <SCRIPTURE Type="1st hour" Reading="Acts_13:25-32" Cmd="dow == 5" />
-<SCRIPTURE Type="1st hour" Reading="Mt_3:1-12" Cmd="dow == 5" />
+<SCRIPTURE Type="1st hour" Reading="Mt_3:1-11" Cmd="dow == 5" />
 <SCRIPTURE Type="3rd hour" Reading="Isa_1:16-20" Cmd="dow == 5" />
 <SCRIPTURE Type="3rd hour" Reading="Acts_19:1-8" Cmd="dow == 5" />
 <SCRIPTURE Type="3rd hour" Reading="Mk_1:1-8" Cmd="dow == 5" />
 <SCRIPTURE Type="6th hour" Reading="Isa_12:3-6" Cmd="dow == 5" />
-<SCRIPTURE Type="6th hour" Reading="Rom_6:6-23" Cmd="dow == 5" />
+<SCRIPTURE Type="6th hour" Reading="Rom_6:3-11" Cmd="dow == 5" />
 <SCRIPTURE Type="6th hour" Reading="Mk_1:9-15" Cmd="dow == 5" />
 <SCRIPTURE Type="9th hour" Reading="Isa_49:8-15" Cmd="dow == 5" />
-<SCRIPTURE Type="9th hour" Reading="Tit_2:11-3:7" Cmd="dow == 5" />
+<SCRIPTURE Type="9th hour" Reading="Tit_2:11-14,3:4-7" Cmd="dow == 5" />
 <SCRIPTURE Type="9th hour" Reading="Mt_3:13-17" Cmd="dow == 5" />
 <SCRIPTURE Type="apostol" Reading="Rom_8:8-14" Note="for the Apostles" Pericope="96 (mid)" Cmd="dow != 5"/>
 <SCRIPTURE Type="gospel" Reading="Lk_10:1-15" Pericope="50" Note="for the Apostles" Cmd="dow != 5"/>
