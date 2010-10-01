@@ -1,5 +1,4 @@
 <DAY>
-<PRIMES Type="Normal" />
 <SCRIPTURE Type="apostol" Pericope="236" Reading="Philip_1:8-14" />
 <SCRIPTURE Type="gospel" Pericope="44" Reading="Lk_9:23-27" Cmd="(doy &gt;= 287 &amp;&amp; doy &lt;= 293) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Pericope="34" Reading="Lk_8:1-3" Cmd="(doy &gt;= 280 &amp;&amp; doy &lt;= 286) &amp;&amp; GS == 1"/>
@@ -9,8 +8,4 @@
 <!--<SCRIPTURE Type="gospel" Reading="Mk_1:16-22" Pericope="3" Cmd="(doy &gt;= 252 &amp;&amp; doy &lt;= 258) &amp;&amp; GS == 1"/>-->
 <SCRIPTURE Type="gospel" Pericope="95" Reading="Mt_23:23-28" Cmd="(doy &gt;= 252 &amp;&amp; doy &lt;= 258) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Pericope="18" Reading="Lk_5:12-16"  Cmd="GS == 0" /> 
-
-<SAINT Name="Вторник 19-й седмицы по Пятидесятнице" Id="" Type="0" Tone="1"/>
-
 </DAY>
-	

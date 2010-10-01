@@ -8,9 +8,5 @@
 <!--<SCRIPTURE Type="gospel" Reading="Mk_1:23-28" Pericope="4" Cmd="(doy &gt;= 253 &amp;&amp; doy &lt;= 259) &amp;&amp; GS == 1"/>-->
 <SCRIPTURE Type="gospel" Reading="Mt_23:29-89" Pericope="96" Cmd="(doy &gt;= 253 &amp;&amp; doy &lt;= 259) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Pericope="21" Reading="Lk_5:33-39"  Cmd="GS == 0" /> 
-<PRIMES Type="Normal" />
-
-<SAINT Name="五旬節後第十九週瞻禮四" Id="" Type="0" Tone="1" />
-
 </DAY>
 	
