@@ -618,13 +618,13 @@ CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " FontSize="20" Orient="r
 	<BOOK Id="Josh" Name="يشوع" Chapters="24" Short="Josh" Intro="A reading from Joshua, the son of Nun"/>
 	<BOOK Id="Judg" Name="قضاة" Chapters="21" Short="Judg" Intro="A reading from Judges"/>
 	<BOOK Id="Ruth" Name="راعوث" Chapters="4" Short="Ruth" Intro="A reading from Ruth"/>
-	<BOOK Id="I_Kings" Name=" ١صموئيل" Chapters="31" Short="I Kings" Intro="A reading from the first Book of Kingdoms"/>
-	<BOOK Id="II_Kings" Name=" ٢صموئيل" Chapters="24" Short="II Kings" Intro="A reading from the second Book of Kingdoms"/>
-	<BOOK Id="III_Kings" Name=" ١ملوك " Chapters="22" Short="III Kings" Intro="A reading from the third Book of Kingdoms"/>
-	<BOOK Id="IV_Kings" Name=" ٢ملوك" Chapters="25" Short="IV Kings" Intro="A reading from the fourth Book of Kingdoms"/>
-	<BOOK Id="I_Paral" Name=" ١اخبار" Chapters="29" Short="I Paral" Intro="A reading from the first Book of Paralipomenon"/>
-	<BOOK Id="II_Paral" Name=" ٢اخبار" Chapters="36" Short="II Paral" Intro="A reading from the second Book of Paraliponmenon"/>
-	<BOOK Id="I_Esdra" Name=" ١عزرا" Chapters="10" Short="I Esdra" Intro="A reading from the first Book of Esdras"/>
+	<BOOK Id="I_Kings" Name="١ صموئيل" Chapters="31" Short="I Kings" Intro="A reading from the first Book of Kingdoms"/>
+	<BOOK Id="II_Kings" Name="٢ صموئيل" Chapters="24" Short="II Kings" Intro="A reading from the second Book of Kingdoms"/>
+	<BOOK Id="III_Kings" Name="١ ملوك" Chapters="22" Short="III Kings" Intro="A reading from the third Book of Kingdoms"/>
+	<BOOK Id="IV_Kings" Name="٢ ملوك" Chapters="25" Short="IV Kings" Intro="A reading from the fourth Book of Kingdoms"/>
+	<BOOK Id="I_Paral" Name="١ اخبار" Chapters="29" Short="I Paral" Intro="A reading from the first Book of Paralipomenon"/>
+	<BOOK Id="II_Paral" Name="٢ اخبار" Chapters="36" Short="II Paral" Intro="A reading from the second Book of Paraliponmenon"/>
+	<BOOK Id="I_Esdra" Name="١ عزرا" Chapters="10" Short="I Esdra" Intro="A reading from the first Book of Esdras"/>
 	<BOOK Id="Nehem" Name="نحميا" Chapters="13" Short="Nehem" Intro="A reading from the Prophecy of Nehemiah"/>
 	<BOOK Id="Esther" Name="استير" Chapters="10" Short="Esther" Intro="A reading from Esther"/>
 	<BOOK Id="Job" Name="ايوب" Chapters="42" Short="Job" Intro="A reading from the Job"/>
@@ -655,23 +655,23 @@ CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " FontSize="20" Orient="r
 	<BOOK Id="Jn" Name="يوحنا" Chapters="21" Short="Jn" Intro="A reading from the Holy Gospel accoridng to John"/>
 	<BOOK Id="Acts" Name="اعمال" Chapters="28" Short="Acts" Intro="A reading from the Acts of the Apostles"/>
 	<BOOK Id="Jas" Name="يعقوب" Chapters="5" Short="Jas" Intro="A reading from the Epistle of James"/>
-	<BOOK Id="I_Pet" Name=" ١بطرس" Chapters="5" Short="I Pet" Intro="A reading from the the first Epistle of Peter"/>
-	<BOOK Id="II_Pet" Name=" ٢بطرس" Chapters="3" Short="II Pet" Intro="A reading from the second  Epistle of Peter"/>
-	<BOOK Id="I_Jn" Name=" ١يوحنا" Chapters="5" Short="I Jn" Intro="A reading from the first Epistle of  John"/>
-	<BOOK Id="II_Jn" Name=" ٢يوحنا" Chapters="1" Short="II Jn" Intro="A reading from the second Epistle of John"/>
-	<BOOK Id="III_Jn" Name=" ٣يوحنا" Chapters="1" Short="III Jn" Intro="A reading from the third Epistle of John"/>
+	<BOOK Id="I_Pet" Name="١ بطرس" Chapters="5" Short="I Pet" Intro="A reading from the the first Epistle of Peter"/>
+	<BOOK Id="II_Pet" Name="٢ بطرس" Chapters="3" Short="II Pet" Intro="A reading from the second  Epistle of Peter"/>
+	<BOOK Id="I_Jn" Name="١ يوحنا" Chapters="5" Short="I Jn" Intro="A reading from the first Epistle of  John"/>
+	<BOOK Id="II_Jn" Name="٢ يوحنا" Chapters="1" Short="II Jn" Intro="A reading from the second Epistle of John"/>
+	<BOOK Id="III_Jn" Name="٣ يوحنا" Chapters="1" Short="III Jn" Intro="A reading from the third Epistle of John"/>
 	<BOOK Id="Jude" Name="يهوذا" Chapters="1" Short="Jude" Intro="A reading from the Epistle of Jude"/>
 	<BOOK Id="Rom" Name="رومية" Chapters="16" Short="Rom" Intro="A reading from the Epistle of Paul to the Romans"/>
-	<BOOK Id="I_Cor" Name=" ١كورنثوس" Chapters="16" Short="I Cor" Intro="A reading from the first Epistle of Paul to the Corinthians"/>
-	<BOOK Id="II_Cor" Name=" ٢كورنثوس" Chapters="13" Short="II Cor" Intro="A reading from the second Epistle of Paul to the Corinthians"/>
+	<BOOK Id="I_Cor" Name="١ كورنثوس" Chapters="16" Short="I Cor" Intro="A reading from the first Epistle of Paul to the Corinthians"/>
+	<BOOK Id="II_Cor" Name="٢ كورنثوس" Chapters="13" Short="II Cor" Intro="A reading from the second Epistle of Paul to the Corinthians"/>
 	<BOOK Id="Gal" Name="غلاطية" Chapters="6" Short="Gal" Intro="A reading from the Epistle of Paul to the Galatians"/>
 	<BOOK Id="Eph" Name="افسس" Chapters="6" Short="Eph" Intro="A reading from the Epistle of Paul to the Ephesians"/>
 	<BOOK Id="Philip" Name="فيلبي" Chapters="4" Short="Phil" Intro="A reading from the Epistle to the Philippians"/>
 	<BOOK Id="Col" Name="كولوسي" Chapters="4" Short="Col" Intro="A reading from the Epistle to the Colossians"/>
-	<BOOK Id="I_Thess" Name=" ١تسالونيكي" Chapters="5" Short="I Thess" Intro="A reading from the first Epistle to the Thessalonians"/>
-	<BOOK Id="II_Thess" Name=" ٢تسالونيكي" Chapters="3" Short="II Thess" Intro="A reading from the second Epistle to the Thessalonians"/>
-	<BOOK Id="I_Tim" Name=" ١تيموثاوس" Chapters="6" Short="I Tim" Intro="A reading from the first Epistle to Timothy"/>
-	<BOOK Id="II_Tim" Name=" ٢تيموثاوس" Chapters="4" Short="II Tim" Intro="A reading from the second Epistle to Timothy" />
+	<BOOK Id="I_Thess" Name="١ تسالونيكي" Chapters="5" Short="I Thess" Intro="A reading from the first Epistle to the Thessalonians"/>
+	<BOOK Id="II_Thess" Name="٢ تسالونيكي" Chapters="3" Short="II Thess" Intro="A reading from the second Epistle to the Thessalonians"/>
+	<BOOK Id="I_Tim" Name="١ تيموثاوس" Chapters="6" Short="I Tim" Intro="A reading from the first Epistle to Timothy"/>
+	<BOOK Id="II_Tim" Name="٢ تيموثاوس" Chapters="4" Short="II Tim" Intro="A reading from the second Epistle to Timothy" />
 	<BOOK Id="Tit" Name="تيطس" Chapters="3" Short="Tit" Intro="A reading from the Epistle to Titus"/>
 	<BOOK Id="Philemon" Name="فليمون" Chapters="1" Short="Philemon" Intro="A reading from the Epistle to Philemon"/>
 	<BOOK Id="Heb" Name="عبرانيين" Chapters="13" Short="Heb" Intro="A reading from the Epistle to the Hebrews"/>
