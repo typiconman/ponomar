@@ -1,0 +1,8 @@
+<COMMEMORATION>
+<SCRIPTURE Type="apostol" Reading="II Tim_4:5-8" Pericope="298" />
+<SCRIPTURE Type="gospel" Reading="Mk_1:1-8" Pericope="1" />
+<NAME Long="Sunday before Theophany" Cmd="dow == 0" Cmd="dow == 0"/>
+<NAME Long="Readings for the Sunday before Theophany are read today" Cmd="dow == 1"/>
+<NAME ShortN="Sunday before Theophany" ShortF="for the Sunday before Theophany"/>
+<CHURCH Rank="0" />
+</COMMEMORATION>
