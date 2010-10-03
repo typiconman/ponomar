@@ -1,0 +1,17 @@
+<DAY>
+<SAINT SId="0" CId="F0" Cmd="dow == 0 || dow == 1"/>
+<SAINT SId="0" CId="F6" Cmd="dow == 6"/>
+<SAINT SId="0" CId="134" />
+<SAINT SId="123" CId="373" />
+<SAINT SId="4810" CId="4810" />
+<SAINT SId="4891" CId="4891" />
+<SAINT SId="4732" CId="4732" />
+<SAINT SId="010106" CId="010106" />
+<SAINT SId="135" CId="135" />
+<SAINT SId="010108" CId="010108" />
+<SAINT SId="010109" CId="010109" />
+<SAINT SId="010110" CId="010110" />
+<SAINT SId="010111" CId="010111" />
+<SAINT SId="010112" CId="010112" />
+</DAY>
+
