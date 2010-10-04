@@ -1,0 +1,26 @@
+<DAY>
+<SCRIPTURE Type="matins" Reading="Ezek_37:1-14" />
+<SCRIPTURE Type="matins" Reading="I Cor_5:6-8" Pericope="133"/>
+<SCRIPTURE Type="matins" Reading="Gal_3:13-14" />
+<SCRIPTURE Type="matins" Reading="Mt_27:62-66" Pericope="114"/>
+<SCRIPTURE Type="vespers" Reading="Gen_1:1-13" />
+<SCRIPTURE Type="vespers" Reading="Isa_60:1-16" />
+<SCRIPTURE Type="vespers" Reading="Ex_12:1-11" />
+<SCRIPTURE Type="vespers" Reading="Jona_1:1-3:10" />
+<SCRIPTURE Type="vespers" Reading="Josh_5:10-15" />
+<SCRIPTURE Type="vespers" Reading="Ex_13:20-22, 14:1-32" />
+<SCRIPTURE Type="vespers" Reading="Zeph_3:8-15" />
+<SCRIPTURE Type="vespers" Reading="III Kings_17:8-23" />
+<SCRIPTURE Type="vespers" Reading="Isa_61:10-11, 62:1-5" />
+<SCRIPTURE Type="vespers" Reading="Gen_22:1-18" />
+<SCRIPTURE Type="vespers" Reading="Isa_61:1-9" />
+<SCRIPTURE Type="vespers" Reading="IV Kings_4:8-37" />
+<SCRIPTURE Type="vespers" Reading="Isa_63:11-19, 64:1-5" />
+<SCRIPTURE Type="vespers" Reading="Jerem_31:31-34" />
+<SCRIPTURE Type="vespers" Reading="Dan_3:1-88" />
+<SCRIPTURE Type="apostol" Reading="Rom_6:3-11" Pericope="91"/>
+<SCRIPTURE Type="gospel" Reading="Mt_28:1-20" Pericope="115"/>
+<PRIMES Type="Lenten" />
+<LITURGY Type="2" Comment="Always St Basil's"/>
+<SAINT Name="Μεγάλο Σάββατο - Η ταφή του Κυρίου" Id="381" Type=""/>
+</DAY>

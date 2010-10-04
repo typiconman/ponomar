@@ -1,0 +1,10 @@
+<DAY>
+<PRIMES Type="Ascension" />
+<SCRIPTURE Type="vespers" Reading="Gen_14:14-20" />
+<SCRIPTURE Type="vespers" Reading="Deut_1:8-10, 1:15-17" />
+<SCRIPTURE Type="vespers" Reading="Deut_10:14-21" />
+<SCRIPTURE Type="matins" Reading="Jn_21:1-14" Pericope="66"/>
+<SCRIPTURE Type="apostol" Reading="Acts_20:16-18, 20:28-36" Pericope="44"/>
+<SCRIPTURE Type="gospel" Reading="Jn_17:1-13" Pericope="56"/>
+<SAINT Name="Αγίων Τριακοσίων δέκα οκτώ (318) Πατέρων της Α' Οικουμενικής Συνόδου" Id="758" Type="1" Tone="6"/>
+</DAY>
