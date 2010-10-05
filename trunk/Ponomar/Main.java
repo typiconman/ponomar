@@ -602,7 +602,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                             {
                                 
                                 String[] parts2=parts[1].split("=");
-                                System.out.println(parts2[1]);
+                                //System.out.println(parts2[1]);
                                 if (SaintLink == null){
                                     SaintLink=new DoSaint(parts2[1]);
                                 }
