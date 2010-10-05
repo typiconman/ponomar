@@ -147,12 +147,23 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
             if (tropar != null && tropar != "") {
                 textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[1] + "</h2>";
-                int tone = Integer.parseInt(troparT);
                 String ToneFormat = new String();
+                try
+                {
+                 int tone = -1;
+                    tone = Integer.parseInt(troparT);
+
+
+                
 
                 if (tone != -1) {
                     ToneFormat = SaintInfo[4];
                     ToneFormat = ToneFormat.replace("TT", toneNumbers[tone]);
+                }
+                }
+                catch (Exception e)
+                {
+                    ToneFormat=troparT;
                 }
                 if (troparP != null && troparP != "") {
                     textOut += "<p style=\"text-align: center;\">" + ToneFormat + SaintInfo[5] + SaintInfo[2] + Podobni.get(troparT + troparP) + "</p>";
@@ -164,13 +175,22 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
             if (kondak != null && kondak != "") {
                 textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[3] + "</h2>";
-                int tone = Integer.parseInt(kondakT);
+                
                 String ToneFormat = new String();
 
+                try
+                {
+                    int tone = Integer.parseInt(kondakT);
                 if (tone != -1) {
                     ToneFormat = SaintInfo[4];
                     ToneFormat = ToneFormat.replace("TT", toneNumbers[tone]);
                 }
+                }
+                catch (Exception e)
+                {
+                    ToneFormat=kondakT;
+                }
+                
                 if (kondakP != null && kondakP != "") {
                     textOut += "<p style=\"text-align: center;\">" + ToneFormat + SaintInfo[5] + SaintInfo[2] + Podobni.get(kondakT + kondakP) + "</p>";
                 } else {
