@@ -478,8 +478,14 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                         //It is assumed that the highest Type == Rank found in all the files that are being parsed is equal 
                         //to the Rank for the day.
                         //Y.S. 2010/02/01 n.s.
-                        int Rank = Integer.parseInt((String)table.get("Type"));
+                        int Rank=0;
+                        if (table.get("Type") != null){
+                            //System.out.println("A!"+table.get("Type").toString()+"!B");
+                            if (table.get("Type").toString().length() > 0){
+                         Rank = Integer.parseInt((String)table.get("Type"));
                         StringOp.dayInfo.put("dRank",Math.max(Integer.parseInt(StringOp.dayInfo.get("dRank").toString()),Rank));
+                            }
+                        }
                         //System.out.println(StringOp.dayInfo.get("dRank")+"\nFound Rank: "+Rank );
 
 			switch (Rank)
@@ -594,7 +600,9 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                             parts = cmd.split("\\?");
                             if (parts[0].indexOf("goDoSaint") != -1)
                             {
+                                
                                 String[] parts2=parts[1].split("=");
+                                System.out.println(parts2[1]);
                                 if (SaintLink == null){
                                     SaintLink=new DoSaint(parts2[1]);
                                 }
