@@ -43,60 +43,60 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="And" Value=" τα "/>
 <PHRASE Key="Comma" Value=", "/>
 <PHRASE Key="0" Value="Ponomar" Comment="This is the only entry for this key."/>
-<PHRASE Key="1" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
-<PHRASE Key="2" Value="Sunday/,Monday/,Tuesday/,Wednesday/,Thursday/,Friday/,Saturday" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
-<PHRASE Key="3" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
-<PHRASE Key="4" Value="January/,February/,March/,April/,May/,June/,July/,August/,September/,October/,November/,December" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'. These are the civil months that are to be used for the Greogorian calendar (An issue for the Chinese version)."/>
-<PHRASE Key="5" Value="Sunday/,Monday/,Tuesday/,Wednesday/,Thursday/,Friday/,Saturday" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
+<PHRASE Key="1" Value="Ἰανουάριος/,Φεβρουάριος/,Μάρτιος/,Ἀπρίλιος/,Μάιος/,Ἰούνιος/,Ἰούλιος/,Αὔγουστος/,Σεπτέμβριος/,Ὀκτώβριος/,Νοέμβριος/,Δεκέμβριος" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
+<PHRASE Key="2" Value="Κυριακὴ/,Δευτέρα/,Τρίτη/,Τετάρτη/,Πέμπτη/,Παρασκευὴ/,Σάββατον" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
+<PHRASE Key="3" Value="Ἰανουάριου/,Φεβρουάριου/, Μάρτιου/, Ἀπρίλιου /,Μάιου/,Ἰούνιου/,Ἰούλιου/,Αὔγουστου/,Σεπτέμβριου/,Ὀκτώβριου/,Νοέμβριου/,Δεκέμβριου" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="4" Value="Ἰανουάριου/,Φεβρουάριου/, Μάρτιου/, Ἀπρίλιου /,Μάιου/,Ἰούνιου/,Ἰούλιου/,Αὔγουστου/,Σεπτέμβριου/,Ὀκτώβριου/,Νοέμβριου/,Δεκέμβριου" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'. These are the civil months that are to be used for the Greogorian calendar (An issue for the Chinese version)."/>
+<PHRASE Key="5" Value="Κυριακὴ/,Δευτέρα/,Τρίτη/,Τετάρτη/,Πέμπτη/,Παρασκευὴ/,Σάββατον" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
 <PHRASE Key="SMenu" Value="Saints/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
-<PHRASE Key="Services" Value="Services/,Divine Liturgy/,Vespers/,Compline/,Matins/,Prime (First Hour)/, Terce (Third Hour)/,Sext (Sixth Hour)/,None (Ninth Hour)/,Royal Hours/,All-Night Vigil/,Midnight Office/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
+<PHRASE Key="Services" Value="Λειτουργικὴ/,Θεία Λειτουργία/,Ἑσπερινός/,Ἀπόδειπνον/,Ὄρθρος/,Ὥρα αʹ/,Ὥρα γʹ/,Ὥρα ϝʹ/,Ὥρα θʹ/,Royal Hours/,All-Night Vigil/,Μεσονυκτικὸ/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
 <PHRASE Key="Bible" Value="Bible/,This allows the user to access the Bible" />
 <PHRASE Key="Help" Value="Help/,This accesses the Help files./,About/,Access the About file/,Go to Help"/>
 <PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
 <PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
 <PHRASE Key="Tones" Value=" /,αʹ/,βʹ/,γʹ/,δʹ/,πλ. αʹ/,πλ. βʹ/,βαρύς/,πλ. δ" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="Gregorian Calendar/,Sunrise/,Sunset/,Ecclesiastic Lunar Phase/,ἦχος TT; /,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
+<PHRASE Key="Main" Value="Gregorian Calendar/,Sunrise/,Sunset/,Ecclesiastic Lunar Phase/,Ἦχος TT; /,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
 <PHRASE Key="gospel" Value="Gospel"/>
 <PHRASE Key="apostol" Value="Apostol"/>
-<PHRASE Key="matins" Value="Matins"/>
-<PHRASE Key="vespers" Value="Vespers"/>
-<PHRASE Key="1st hour" Value="1&lt;sup&gt;st&lt;/sup&gt; hour"/>
-<PHRASE Key="3rd hour" Value="3&lt;sup&gt;rd&lt;/sup&gt; hour"/>
-<PHRASE Key="6th hour"	Value="6&lt;sup&gt;th&lt;/sup&gt; hour"/>
-<PHRASE Key="9th hour" Value="9&lt;sup&gt;th&lt;/sup&gt; hour"/>
+<PHRASE Key="matins" Value="Ὄρθρος"/>
+<PHRASE Key="vespers" Value="Ἑσπερινός"/>
+<PHRASE Key="1st hour" Value="Ὥρα αʹ"/>
+<PHRASE Key="3rd hour" Value="Ὥρα γʹ"/>
+<PHRASE Key="6th hour"	Value="Ὥρα ϝʹ"/>
+<PHRASE Key="9th hour" Value="Ὥρα θʹ"/>
 <PHRASE Key="Fasts" Value="Fast free /,Strict fast /,Fast: Wine and oil allowed /,Fast: Fish, wine, and oil allowed /,Fasting regulations: /,Error calculating fast information /,: Monastic Rule: /,No Food /,Dry Food only /,Hot Food without oil /,Fast: Caviar, wine, and oil permitted /,Fast: Meat is excluded /,Fast: Wine is permitted /,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast: " />
-<PHRASE Key="Week1" Value="Sun/,Mon/,Tue/,Wed/,Thu/,Fri/,Sat" Comment="This the abbreviation of the days of the week." />
+<PHRASE Key="Week1" Value="Κυρ/,Δευτ/,Τρ/,Τετ/,Πέμ/,Παρ/,Σάβ" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
-<PHRASE Key="Primes" Value="No Service Today/,Prime (First Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Primes" Value="No Service Today/,Ὥρα αʹ/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Royal Hours"/>
 <PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
-<PHRASE Key="DateFormat" Value="WW, DD MM YY" Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
-<PHRASE Key="Feasts" Value="Circumcision of the Lord/,Theophany/,Nativity of St. John the Baptist/,Sts. Peter and Paul/,Transfiguration/,Dormition of the Theotokos/,Beheading of St. John the Baptist/,Nativity of the Theotokos/,Exaltation of the Holy Cross/,Protection of the Theotokos/,Entry of the Theotokos into the Temple/,Nativity of our Lord/,Kyriopascha: Pascha and Annunciation/,Pascha/,Annunciation/,Pentecost/,Ascension/,Palm Sunday/,Meeting of the Lord" />
+<PHRASE Key="DateFormat" Value="WW, DD MM YY μ.Χ." Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
+<PHRASE Key="Feasts" Value="Περιτομή του Κυρίου/,Αγία Θεοφάνεια/,Το Γενέθλιο του Αγίου Ιωάννη Προδρόμου και Βαπτιστού/,Άγιοι Πέτρος και Παύλος/,Μεταμόρφωση/,Κοίμησις της Θεοτόκου/,Αποτομή Κεφαλής/,Γέννηση της Υπεραγίας Θεοτόκου/,Ύψωση του Τιμίου και Ζωοποιού Σταυρού/,Αγία Σκέπη της Υπεραγίας Θεοτόκου εν Βλαχερνώ/,Εισόδια της Θεοτόκου/,Η κατά σάρκα γέννησις του Κυρίου Ιησού Χριστού/,Κυρίοπασχα: ΑΓΙΟ ΠΑΣΧΑ και Ευαγγελισμός της Υπεραγίας Θεοτόκου/,ΑΓΙΟ ΠΑΣΧΑ/,Ευαγγελισμός της Υπεραγίας Θεοτόκου/,Κυριακή της Πεντηκοστής/,Της Αναλήψεως/,Κυριακή των Βαΐων/,Υπαπαντή του Κυρίου" />
 <PHRASE Key="Helpers" Value="Save to a html file." />
 <PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
 <PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
 <PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
 <PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
-<PHRASE Key="Terce" Value="No Service Today/,Terce (Third Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="Sexte" Value="No Service Today/,Sexte (Sixth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="None" Value="No Service Today/,None (Ninth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="FontFaceM" Value="" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
-<PHRASE Key="FontSizeM" Value="" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 14."/>
+<PHRASE Key="Terce" Value="No Service Today/,Ὥρα γʹ/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Sexte" Value="No Service Today/,Ὥρα ϝʹ/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="None" Value="No Service Today/,Ὥρα θʹ/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="FontFaceM" Value="Times New Roman" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontSizeM" Value="14" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 14."/>
 <PHRASE Key="FontFaceL" Value="Times New Roman" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
 <PHRASE Key="FontSizeL" Value="14" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 14."/>
 <PHRASE Key="CommSep" Value="; " Comment="This is the mark to separate the different commemorations that are dispalyed. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
 <PHRASE Key="ReadSep" Value="; " Comment="This is the mark to separate the readings. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
 <PHRASE Key="Colon" Value=": " Comment="This is for everytime that a colon is required. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
-<PHRASE Key="Language" Value="en" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
-<PHRASE Key="Country" Value="GB" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
+<PHRASE Key="Language" Value="el" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<PHRASE Key="Country" Value="GR" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0. The true 'Arabic' numerals have a zero point at '٠' (\u0660)."/>
-<PHRASE Key="Ideographic" Value="1" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
+<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
 <PHRASE Key="TimeF" Value="HH:MM" Comment="This gives the format for the time. The 24-hour clock will be used."/>
-<PHRASE Key="LivesW" Value="Life/,Troparion/, Podoben: /,Kontakion/,Tone: TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
+<PHRASE Key="LivesW" Value="Life/,Troparion/, Podoben: /,Kontakion/,Ἦχος: TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
 <PHRASE Key="IconW" Value="Previous Icon/,Next Icon/,No Icons were found."/>
 
 </LANGUAGEPACKS>
