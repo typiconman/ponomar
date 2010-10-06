@@ -1,16 +1,20 @@
 <DAY>
 
-<SAINT Name="Hieromartyr Dorotheus the Bishop of Tyre (+362)" Id="1233" Type="1" />
-<SAINT Name="St Michael, Metropolitan of Kiev" Id="" Type="0" />
-<SAINT Name="Repose of Right-believing Prince Theodore Yaroslavich of Novgorod (1233)" Id="2206" Type="1" />
-<SAINT Name="Holy Martyrs Marcian, Nicander, Hyperechius, Apollos, Leonidus, Arius, Gorgius, Selenius, Eireneus, and Pambon in Egypt (+ c.311)" Id="1237" Type="0" />
-<SAINT Name="Venerable Theodore the Wonderworker and Hermit of the Jordan (6th C)" Id="1239" Type="0" />
+<SAINT Name="Hieromartyr Dorotheus the Bishop of Tyre (c. +362)" Id="1233" Type="1" />
+<SAINT Name="New Hieromartyr Priest Michael (+1931)" Id="" Type="0"/>
+<SAINT Name="New Hieromartyr Priest Nicholas (+1943)" Id="" Type="0"/>
+<SAINT Name="Translation of the relics (1150) of the Right-believing Prince Igor of Chernigov and Kiev" Id="907" Type="0" />
+<SAINT Name="St Constantine, Metropolitan of Kiev and All Russia (+1159)" Id="" Type="0" />
+<SAINT Name="Repose of Right-believing Prince Theodore Yaroslavich  of Novgorod (+1233), brother of St. Alexander Nevsky" Id="2206" Type="1" />
+<SAINT Name="Finding of the relics (1599) of the Venerable Bassian and Jonah of Solovki" Id="1236" Type="0" />
+<SAINT Name="Holy Martyrs Marcian, Nicander, Hyperechius, Apollos, Leonidus, Arius, Gorgius, Selenius, Irenæus, and Pambon in Egypt (+ 305-311)" Id="1237" Type="0" />
+<SAINT Name="Venerable Theodore the Wonderworker and Hermit of the Jordan (c. 6th C)" Id="1239" Type="0" />
 <SAINT Name="Venerable Anubius the Confessor and Anchorite of Egypt (4th C)" Id="1238" Type="0" />
-<SAINT Name="Venerable Abba Dorotheus of Palestine (+ c.620)" Id="1240" Type="0" />
-<SAINT Name="St Constantine, Metropolitan of Kiev (+1159)" Id="" Type="0" />
-<SAINT Name="Translation of the relics of the Right-believing Prince Igor of Chernigov and Kiev (1150)" Id="907" Type="0" />
-<SAINT Name="Finding of the relics of the Venerable Bassian and Jonah of Solovki (1599)" Id="1236" Type="0" />
-<SAINT Name="Venerable Peter the Serb" Id="" Type="0" />
-<SAINT Name="New Martyr Mark of Smyrna" Id="" Type="0" />
-
+<SAINT Name="Venerable Abba Dorotheus of Palestine (6th C)" Id="1240" Type="0" />
+<SAINT Name="Igorevskaya Icon of the Mother of God (1147)" Id="1244" Type="0"/>
+<SAINT Name="Venerable Peter the Serb (+1275)" Id="" Type="0" />
+<SAINT Name="New Martyr Mark of Smyrna (+1801)" Id="" Type="0" />
+<SAINT Name="Hieromartyr Boniface, Archbishop of Mentz, Apostle of Germany (+755)" Id="060516" Type="0" />
 </DAY>
+	
+	
