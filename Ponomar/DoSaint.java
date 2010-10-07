@@ -125,7 +125,18 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         if (name.equals("")) {
             textOut = SaintInfo[6];
         } else {
-            textOut = "<h1 style=\"text-align: center;\">" + name + "</h1>";
+            String DisplayFontM = (String) Text.Phrases.get("FontFaceM");
+            String DisplaySizeM = (String) Text.Phrases.get("FontSizeM");
+            Font value1 = (Font) UIManager.get("Menu.font");
+            if (DisplaySizeM == null || DisplaySizeM.equals("")) {
+                DisplaySizeM = Integer.toString(value1.getSize());
+            }
+            if (DisplayFontM == null || DisplayFontM.equals("")) {
+                DisplayFontM = value1.getFontName();
+            }
+            DisplaySizeM = Integer.toString(Math.max(Integer.parseInt(DisplaySizeM), value1.getSize()));
+
+            textOut = "<body style=\"font-family:" + DisplayFontM + ";font-size:" + DisplaySizeM + ";\"><h1 style=\"text-align: center;\">" + name + "</h1>";
             if (life != null && !life.equals("")) {
                 textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[0] + "</h2>" + "<p style=\"text-align: center;\"><small>" + copyright + "</small></p>" + "<p>" + life + "</p>";
             }
@@ -133,7 +144,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             //Get the language settings
             String DisplayFont = (String) Text.Phrases.get("FontFaceL");
             String DisplaySize = (String) Text.Phrases.get("FontSizeL");
-            Font value1 = (Font) UIManager.get("Menu.font");
+            
             if (DisplaySize == null || DisplaySize.equals("")) {
                 DisplaySize = Integer.toString(value1.getSize());
             }
