@@ -42,7 +42,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Year" Value="2006-2010"/>
 <PHRASE Key="And" Value=" τα "/>
 <PHRASE Key="Comma" Value=", "/>
-<PHRASE Key="0" Value="Ponomar" Comment="This is the only entry for this key."/>
+<PHRASE Key="0" Value="Παραμοναριος" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="Ἰανουάριος/,Φεβρουάριος/,Μάρτιος/,Ἀπρίλιος/,Μάιος/,Ἰούνιος/,Ἰούλιος/,Αὔγουστος/,Σεπτέμβριος/,Ὀκτώβριος/,Νοέμβριος/,Δεκέμβριος" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="Κυριακὴ/,Δευτέρα/,Τρίτη/,Τετάρτη/,Πέμπτη/,Παρασκευὴ/,Σάββατον" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
 <PHRASE Key="3" Value="Ἰανουάριου/,Φεβρουάριου/, Μάρτιου/, Ἀπρίλιου /,Μάιου/,Ἰούνιου/,Ἰούλιου/,Αὔγουστου/,Σεπτέμβριου/,Ὀκτώβριου/,Νοέμβριου/,Δεκέμβριου" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
@@ -57,10 +57,10 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
 <PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
-<PHRASE Key="Tones" Value=" /,αʹ/,βʹ/,γʹ/,δʹ/,πλ. αʹ/,πλ. βʹ/,βαρύς/,πλ. δ" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="Gregorian Calendar/,Sunrise/,Sunset/,Ecclesiastic Lunar Phase/,Ἦχος TT; /,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
-<PHRASE Key="gospel" Value="Gospel"/>
-<PHRASE Key="apostol" Value="Apostol"/>
+<PHRASE Key="Tones" Value=" /,αʹ/,βʹ/,γʹ/,δʹ/,πλ. αʹ/,πλ. βʹ/,βαρύς/,πλ. δʹ" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Main" Value="Γρηγοριανὸ ἡμερολόγιο/,Sunrise/,Sunset/,Ecclesiastic Lunar Phase/,Ἦχος TT; /,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
+<PHRASE Key="gospel" Value="Εὐαγγέλιο"/>
+<PHRASE Key="apostol" Value="Ἐπιστολὴ "/>
 <PHRASE Key="matins" Value="Ὄρθρος"/>
 <PHRASE Key="vespers" Value="Ἑσπερινός"/>
 <PHRASE Key="1st hour" Value="Ὥρα αʹ"/>
@@ -96,7 +96,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0. The true 'Arabic' numerals have a zero point at '٠' (\u0660)."/>
 <PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
 <PHRASE Key="TimeF" Value="HH:MM" Comment="This gives the format for the time. The 24-hour clock will be used."/>
-<PHRASE Key="LivesW" Value="Life/,Troparion/, Podoben: /,Kontakion/,Ἦχος: TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
+<PHRASE Key="LivesW" Value="Βιογραϕιον/,Ἀπολυτίκιον/, Ἰδιόμελον: /,Κοντάκιον/,Ἦχος: TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
 <PHRASE Key="IconW" Value="Previous Icon/,Next Icon/,No Icons were found."/>
 
 </LANGUAGEPACKS>
