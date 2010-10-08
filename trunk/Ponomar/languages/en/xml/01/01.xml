@@ -11,7 +11,7 @@
 <SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:17-23" Cmd="dow != 0 &amp;&amp; dow != 6" Note="for the hierarch"/>
 <LITURGY Type="2" Comment="Always St Basil's Liturgy on this day!"/>
 <SAINT Name="Circumcision of the Lord" Id="134" Type="6" />
-<SAINT Name="Saint Basil the Great, Archbishop of Caesarea in Cappadocia (+376)" Id="373" Type="1" />
+<SAINT Name="Saint Basil the Great, Archbishop of Caesarea in Cappadocia (+376)" Id="772426" Cid="010101" Type="1" />
 <SAINT Name="Venerable Martyr Jeremiah (+1918)" Id="4810" Type="0"/>
 <SAINT Name="New Hieromartyr Platon, Bishop of Revel and those with him: Priests Michael and Nicholas (+1919)" Id="4891" Type="0" />
 <SAINT Name="New Hieromartyr Alexander, Archbishop of Samara, and those with him (+1938)" Id="4732" Type="0" />
