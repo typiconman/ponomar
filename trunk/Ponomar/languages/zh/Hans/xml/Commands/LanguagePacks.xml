@@ -38,8 +38,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="NameLocal" Value="简体中文"/>
 <PHRASE Key="NameEnglish" Value="Simplified Chinese"/>
 <PHRASE Key="BibleV" Value="zh/Hans/bible/cuv"/>
-<PHRASE Key="Authors" Value="Aleksandr Andreev/,Yuri Shardt"/>
-<PHRASE Key="Year" Value="2006-2010"/>
+<PHRASE Key="Authors" Value="亚历山大·安德瑞耶/,尤里·斯查德"/>
+<PHRASE Key="Year" Value="2006-2010年"/>
 <PHRASE Key="And" Value=""/>
 <PHRASE Key="Comma" Value="、"/>
 <PHRASE Key="0" Value="波诺马里" Comment="This is the only entry for this key."/>
@@ -48,16 +48,16 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="3" Value="主显月/,献主月/,福音月/,凯旋月/,圣君月/,使徒月/,先知月/,安息月/,圣架月/,帡幪月/,入殿月/,降生月" Comment="The names of the liturgical months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="4" Value="1月/,2月/,3月/,4月/,5月/,6月/,7月/,8月/,9月/,10月/,11月/,12月" Comment="The names of the civil months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="5" Value="星期天/,星期一/,星期二/,星期三/,星期四/,星期五/,星期六" Comment="The names of the civil week in the nominative case, that is, for use in the format 'Year Month Date Week'."/>
-<PHRASE Key="Options" Value="Options" />
-<PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
-<PHRASE Key="SMenu" Value="圣人/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
-<PHRASE Key="Services" Value="Services/,事奉圣礼/,暮时课/,晚堂课/,晨时课/,一时课/,三时课/,六时课/,九时课/,皇时课/,All-Night Vigil/,中夜课/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
+<PHRASE Key="Options" Value="选择" />
+<PHRASE Key="File" Value="文件/,保存/,The usual 文件选择/,This 保存 the current display/,退出/,This 退出程序/,打印/,This 打印s the current textbox." />
+<PHRASE Key="SMenu" Value="圣人/,Actions for 查找 and sorting infromation about saints/,查找/,查找 for information about a given saint" />
+<PHRASE Key="Services" Value="礼仪/,事奉圣礼/,暮时课/,晚堂课/,晨时课/,一时课/,三时课/,六时课/,九时课/,皇时课/,All-Night Vigil/,中夜课/,代圣体血礼仪/,This allows the user to compile the 礼仪/,Compile 事奉圣礼 for the given day/,Compile 暮时课 for the given day/,Compile 晚堂课 for the given day/,Compile 晨时课 for the day/,Compile 一时课 for the given day/,Compile 三时课 for the given day/,Compile 六时课 for the given day/,Compile 九时课 for the given day/,Compile 皇时课 for the given day/,Compile the All-Night Vigil for the given day/,Compile 中夜课 for the given day/,Compile 代圣体血礼仪 for the given day" />
 <PHRASE Key="Bible" Value="圣经/,This allows the user to access the Bible" />
-<PHRASE Key="Help" Value="求助/,This accesses the 求助 files./,About/,Access the About file/,Go to 求助"/>
-<PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
-<PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,在波诺马里项目中，我们认为礼典信息应当免费——也就是说不收费也不受版权的制约。上帝并没有保留圣经的版权，圣约安也没有保留《八音集》的版权。 您可以从本站获得任何东西并用于任何用途，只要您信任我们。如果您要发布您自己对本站信息的修改成果，您需要在许可的体系下进行。/,Copyright/,by/,Acknowledgements: 中文版由正教会中华诸圣会提供。" />
-<PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
-<PHRASE Key="Tones" Value=" /,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Help" Value="求助/,This accesses the 求助 文件s./,About/,Access the About 文件/,Go to 求助"/>
+<PHRASE Key="LanguageMenu" Value="语言/,选择 the Interface 语言/,选择s the Interface 语言/,OK/,In order for the interface 语言 to change, please restart the 程序./,No/,Do you wish to overwrite the 文件:/,Are you sure you wish to close this window?"/>
+<PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The 程序 is currently in its developmental phase./,在波诺马里项目中，我们认为礼典信息应当免费——也就是说不收费也不受版权的制约。上帝并没有保留圣经的版权，圣约安也没有保留《八音集》的版权。 您可以从本站获得任何东西并用于任何用途，只要您信任我们。如果您要发布您自己对本站信息的修改成果，您需要在许可的体系下进行。/,Copyright/,by/,Acknowledgements: 中文版由正教会中华诸圣会提供。" />
+<PHRASE Key="GospelSelection" Value="乔尔丹维尔/,路喀跳转/,福音经课/,选择所需福音经课。" />
+<PHRASE Key="Tones" Value=" /,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other 语言s, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
 <PHRASE Key="Main" Value="格里高利历/,日出/,日落/,Ecclesiastic 月相/,第TT调式；/,Information for /,Are you sure you wish to quit?" />
 <PHRASE Key="gospel" Value="圣福音经"/>
 <PHRASE Key="apostol" Value="使徒经书"/>
@@ -73,28 +73,28 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Primes" Value="本日沒有聚会/,一时课/,差遣颂 for/,丢失/,集祷颂 for/,Kathisma"/>
 <PHRASE Key="RoyalHours" Value="本日沒有皇时课 /,皇时课"/>
 <PHRASE Key="DayReading" Value="for 主日/,for 瞻礼二/,for 瞻礼三/,for 瞻礼四/,for 瞻礼五/,for 预备日/,for 安息日" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
-<PHRASE Key="DateFormat" Value="YY年MMDD日WW" Comment="This will display a type similar to 1999年十月4日星期一. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
+<PHRASE Key="DateFormat" Value="YY年MMDD日WW" Comment="This will 显示 a type similar to 1999年十月4日星期一. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
 <PHRASE Key="Feasts" Value="主耶稣基督受割礼日/,主显节/,施浸礼者圣约安诞辰/,圣裴特若及圣帕弗罗/,主易圣容节/,圣母安息节/,施浸礼者圣约安授首纪念日/,圣母诞辰节/,举扬圣架节/,圣母护守节/,诞神女进殿节/,主降生节/,主葩斯哈：圣葩斯哈主日及诞神女福音节/,圣葩斯哈主日/,诞神女福音节/,五旬节/,主升天节/,圣枝主日/,主进殿节" />
-<PHRASE Key="Helpers" Value="Save to a html file." />
-<PHRASE Key="ServiceRead" Value="The desired title 丢失./,There was a serious 错误 reading the file: /,The desired command 丢失./,The desired header 丢失./,错误 finding the desired information: " />
-<PHRASE Key="Errors" Value="找不到 /,Unable to process floater # /,错误 at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was 找不到/,错误 Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
+<PHRASE Key="Helpers" Value="保存 to a html 文件." />
+<PHRASE Key="ServiceRead" Value="所需标题丢失。/,There was a serious 错误 reading the 文件: /,所需命令丢失。/,所需页眉丢失。/,错误 finding the 所需 information: " />
+<PHRASE Key="Errors" Value="找不到 /,Unable to process floater # /,错误 at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was 找不到/,错误 Reading the values/,无效的 Month/,无效的 Day:/,in/,A julian day must be greater than 0" />
 <PHRASE Key="PrimeSelection" Value="诵经士/,司祭/,主教/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
 <PHRASE Key="Commemoration" Value="错误 reading the Hashtable!\nMissing element: /, with Tag: /,错误 reading the Hashtable!\nMissing Node: /,错误 reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
-<PHRASE Key="BibleW" Value="前一章/,全章/,下一章/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,错误 reading bmlfile: /,Resource 找不到: "/>
+<PHRASE Key="BibleW" Value="前一章/,全章/,下一章/,Bookmark Passage/,复制 Passage/,保存 Passage/,打印 Passage/,Ponomar Scripture Reader/,错误 reading bml文件: /,Resource 找不到: "/>
 <PHRASE Key="Terce" Value="本日沒有聚会/,三时课/,差遣颂 for/,丢失/,集祷颂 for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="本日沒有聚会/,六时课/,差遣颂 for/,丢失/,集祷颂 for/,Kathisma"/>
 <PHRASE Key="None" Value="本日沒有聚会/,九时课/,差遣颂 for/,丢失/,集祷颂 for/,Kathisma"/>
-<PHRASE Key="FontFaceM" Value="SimSun" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
-<PHRASE Key="FontSizeM" Value="20" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
-<PHRASE Key="FontFaceL" Value="SimSun" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
-<PHRASE Key="FontSizeL" Value="20" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontFaceM" Value="SimSun" Comment="This is the 字体 to be used for 显示 all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will 选择 the default 字体."/>
+<PHRASE Key="FontSizeM" Value="20" Comment="The size of the 字体  for the Main interface, since some 语言s need a larger 字体 size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontFaceL" Value="SimSun" Comment="This is the 字体 to be used for 显示 information in the Liturgical aspect. At times, the 字体 of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
+<PHRASE Key="FontSizeL" Value="20" Comment="The size of the 字体  for the Liturgics aspect (see FontFaceL) for explanation, since some 语言s need a larger 字体 size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="CommSep" Value="；" Comment="This is the mark to separate the different commemorations that are dispalyed."/>
 <PHRASE Key="ReadSep" Value="；" Comment="This is the mark to separate the readings."/>
 <PHRASE Key="Colon" Value="：" Comment="This is for everytime that a colon is required."/>
-<PHRASE Key="Language" Value="zh" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<PHRASE Key="Language" Value="zh" Comment="This is the 2 letter ISO code for the given 语言. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
 <PHRASE Key="Country" Value="CN" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
-<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV. 1 = yes!"/>
+<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be 显示 instead of the normal decimal based values, that is, 145 will be 显示 as for example, CXLV. 1 = yes!"/>
 <PHRASE Key="TimeF" Value="HH时MM分" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <PHRASE Key="LivesW" Value="生平/,差遣颂/, Podoben: /,集祷颂/,第TT调式/,; /,Information about this commemoration 丢失." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
 <PHRASE Key="IconW" Value="上一页圣像/,下一页圣像/,圣像文件找不到。"/>
