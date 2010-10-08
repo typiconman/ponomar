@@ -11,7 +11,7 @@
 <SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:17-23" Cmd="dow != 0 &amp;&amp; dow != 6" Note="for the hierarch"/>
 <LITURGY Type="2" Comment="Always St Basil's Liturgy on this day!"/>
 <SAINT Name="主耶稣基督受割礼日" Id="134" Type="6"/>
-<SAINT Name="大圣瓦西里（卡帕多西亚之恺撒里亚城总主教，379年）" Id="373" Type="1" />
+<SAINT Name="大圣瓦西里（卡帕多西亚之恺撒里亚城总主教，379年）" Id="772426" Cid="010101" Type="1" />
 <SAINT Name="殉道修士耶热弥亚（1918年）" Id="4810" Type="0"/>
 <SAINT Name="圣普拉同（瑞维尔城之主教）及偕同就义司祭圣米哈伊尔，圣尼科拉（爱沙尼亚之新殉道者，1919年）" Id="4891" Type="0" />
 <SAINT Name="圣亚力山大（撒玛拉总主教，1938年）及偕同他一起就义的人：亚历山大、约安、亚历山大、特罗非摩、维亚谢斯拉夫、瓦西里和司祭雅科弗" Id="4732" Type="0" />
@@ -26,5 +26,4 @@
 <SAINT Name="圣女芳赫雅（基乐阿尼城人，约520年）" Id="" Type="0" />
 <SAINT Name="圣克拉鲁（高卢之维恩城人，约660年）" Id="" Type="0" />
 <SAINT Name="圣马尔立斯（威尔士巴德西岛的宣信者，公元6世纪）" Id="" Type="0" />
-
 </DAY>

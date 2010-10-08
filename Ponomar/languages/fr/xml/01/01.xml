@@ -11,7 +11,7 @@
 <SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:17-23" Cmd="dow != 0 &amp;&amp; dow != 6" Note="for the hierarch"/>
 <LITURGY Type="2" Comment="Always St Basil's Liturgy on this day!"/>
 <SAINT Name="Circoncision selon la chair de notre Seigneur" Id="134" Type="6" />
-<SAINT Name="St Basile le Grand, Archevêque de Césarée" Id="373" Type="1" />
+<SAINT Name="St Basile le Grand, Archevêque de Césarée" Id="772426" Cid="010101" Type="1" />
 <SAINT Name="St Théodote" Id="" Type="0" />
 <SAINT Name="St Grégoire, Evêque de Naziance, père de St Grégoire le Théologien" Id="" Type="0" />
 <SAINT Name="St Théodose, Higoumène de Triglia en Bithynie" Id="" Type="0" />
