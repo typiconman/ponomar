@@ -37,7 +37,7 @@ Note: The general format for the files is:
 <PHRASE Key="Tones" Value=" /,αʹ/,βʹ/,γʹ/,δʹ/,πλ. αʹ/,πλ. βʹ/,βαρύς/,πλ. δʹ" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
 <PHRASE Key="Main" Value="Γρηγοριανὸ ἡμερολόγιο/,Sunrise/,Ἡλιοβασίλεμα/,Ecclesiastic Lunar Phase/,Ἦχος TT; /,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
 <PHRASE Key="gospel" Value="Εὐαγγέλιο"/>
-<PHRASE Key="apostol" Value="Ἐπιστολὴ "/>
+<PHRASE Key="apostol" Value="Ἀπόστολος"/>
 <PHRASE Key="matins" Value="Ὄρθρος"/>
 <PHRASE Key="vespers" Value="Ἑσπερινός"/>
 <PHRASE Key="1st hour" Value="Ὥρα αʹ"/>
@@ -45,7 +45,7 @@ Note: The general format for the files is:
 <PHRASE Key="6th hour"	Value="Ὥρα ϝʹ"/>
 <PHRASE Key="9th hour" Value="Ὥρα θʹ"/>
 <PHRASE Key="Fasts" Value="Fast free /,Strict fast /,Fast: Wine and oil allowed /,Fast: Fish, wine, and oil allowed /,Fasting regulations: /,Error calculating fast information /,: Monastic Rule: /,No Food /,Dry Food only /,Hot Food without oil /,Fast: Caviar, wine, and oil permitted /,Fast: Meat is excluded /,Fast: Wine is permitted /,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast: " />
-<PHRASE Key="Week1" Value="Κυρ/,Δευτ/,Τρ/,Τετ/,Πέμ/,Παρ/,Σάβ" Comment="This the abbreviation of the days of the week." />
+<PHRASE Key="Week1" Value="Κυρ/,Δευ/,Τρί/,Τετ/,Πέμ/,Παρ/,Σάβ" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="No Service Today/,Ὥρα αʹ/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Μεγάλαι ὧραι"/>
@@ -65,8 +65,8 @@ Note: The general format for the files is:
 <PHRASE Key="FontSizeM" Value="14" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 14."/>
 <PHRASE Key="FontFaceL" Value="Times New Roman" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
 <PHRASE Key="FontSizeL" Value="14" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 14."/>
-<PHRASE Key="CommSep" Value="; " Comment="This is the mark to separate the different commemorations that are dispalyed. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
-<PHRASE Key="ReadSep" Value="; " Comment="This is the mark to separate the readings. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
+<PHRASE Key="CommSep" Value=", " Comment="This is the mark to separate the different commemorations that are dispalyed. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
+<PHRASE Key="ReadSep" Value=", " Comment="This is the mark to separate the readings. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
 <PHRASE Key="Colon" Value=": " Comment="This is for everytime that a colon is required. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
 <PHRASE Key="Language" Value="el" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
 <PHRASE Key="Country" Value="GR" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
