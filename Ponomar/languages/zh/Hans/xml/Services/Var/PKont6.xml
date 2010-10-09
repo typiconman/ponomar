@@ -1,4 +1,5 @@
 <SERVICES>
-<CREATE Who="SR" What="KONTAKION/WFL6" Header="1" RedFirst="1" NewLine="1"/>
-
+<LANGUAGE>
+<CREATE Who="SR" What="KONTAKION/SAT2" Header="1" RedFirst="1" NewLine="1"/>
+</LANGUAGE>
 </SERVICES>
