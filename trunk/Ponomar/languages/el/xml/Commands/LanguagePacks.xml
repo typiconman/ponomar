@@ -8,41 +8,18 @@ Note: The general format for the files is:
 &lt;LANGUAGE NameLocal="Name of the language in the language itself" NameEnglish="Name of the language in English" Cmd="LS == ##"&gt;
 &lt;PHRASE Key="some value" Text="the translated text" Comment="Translator's comments or clarifications in the same language as the LanguageName"/&gt;
 &lt;PHRASE .../&gt;
-&lt;/LANGUAGE&gt;
-Final Comments:
-Translator: Aleksander Andreev (almost all)
-State of completion: 5 -->
-<!-- Ce document contient toute l’information spécifique à chaque langue pour l’interface de Ponomar. Pour des raisons préliminaire et pour éprouver le programme, au moins l’information dans les files suivants doivent être traduire : Le file de Pâques dans le « Pentecostarion » (xml/pentecostarion/1.xml); le file pour le Fête de l’Annonciation (25 mars, xml/3/25.xml); le 12 premier vers du Évangile selon Jean, et le service de la première heure (Prime) (xml/Services/Primes...). L’état de finissement est défini par un valeur sur 10, où 0 signifie que rien n’était complies; 1 signifie que les suggestions au-sous a été complies; 5 signifie que tous qui peut utiliser est complies; et 10 signfie que nous avons un langue absolument finie, y compris les file de vidéo et d’audio.
-Note: /, est utilisé pour separer les éléments d'une liste.
-Note : Les defaults doivent être « loaded » avant que cette file peut être lu.
-Note : Cette section de file doit être traduis dans tous les autres langues.
-<B>Note : Tous les sections pour chaque langue doit contenir les mêmes phrase. <B>
-Note : Le format général est :
-&lt;LANGUAGE NameLocal="le nom de la langue dans la lange-même" NameEnglish="le nom de la langue en anglais" Cmd="LS == ##"&gt;
-&lt;PHRASE Key="le même valeur" Text="le texte traduis" Comment="Des suggestions ou clarifications du traducteur dans le même langue que NameLocal"/&gt;
-&lt;PHRASE .../&gt;
-&lt;/LANGUAGE&gt;   
-Suggestion finale :
-Traducteur : Yuri Shardt
-L’état de completation : 1 (sauf le Bible et la première heure).
--->
-<!--
-The Russian part has been partially completed by Aleksander Andreev, while the Church Slavonic Bible has (except for III Esdras) been added. The Russian version of the Menologion and Pentecostarion/Triodion (as per the Moscow Patriarchiate regulations) has been added by Aleks.
--->
-<!--
-The Chinese version (both Traditional and Simplified characters) of the Menologion and Pentecostarion/Triodion has been added by Mitrophan Chin.
-Likewise, the Bible in both Traditional and Simplified Chinese characters has been added by Mitrophan Chin. Only the New Testament and most of the Old Testament are available.
--->   
+&lt;/LANGUAGE&gt;-->
+<!-- The Greek part has been created by Yuri Shardt, based on his limited knowledge of Greek. The polytonic forms are used here. -->   
 
 
-<PHRASE Key="NameLocal" Value="Ελληνική"/>
-<PHRASE Key="NameEnglish" Value="Greek"/>
+<PHRASE Key="NameLocal" Value="Ἑλληνικὴ"/>
+<PHRASE Key="NameEnglish" Value="Polytonic Greek"/>
 <PHRASE Key="BibleV" Value="el/bible/spt"/>
 <PHRASE Key="Authors" Value="Aleksandr Andreev/,Yuri Shardt"/>
 <PHRASE Key="Year" Value="2006-2010"/>
 <PHRASE Key="And" Value=" τα "/>
 <PHRASE Key="Comma" Value=", "/>
-<PHRASE Key="0" Value="Παραμοναριος" Comment="This is the only entry for this key."/>
+<PHRASE Key="0" Value="Παραμονάριος" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="Ἰανουάριος/,Φεβρουάριος/,Μάρτιος/,Ἀπρίλιος/,Μάιος/,Ἰούνιος/,Ἰούλιος/,Αὔγουστος/,Σεπτέμβριος/,Ὀκτώβριος/,Νοέμβριος/,Δεκέμβριος" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="Κυριακὴ/,Δευτέρα/,Τρίτη/,Τετάρτη/,Πέμπτη/,Παρασκευὴ/,Σάββατον" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
 <PHRASE Key="3" Value="Ἰανουάριου/,Φεβρουάριου/, Μάρτιου/, Ἀπρίλιου /,Μάιου/,Ἰούνιου/,Ἰούλιου/,Αὔγουστου/,Σεπτέμβριου/,Ὀκτώβριου/,Νοέμβριου/,Δεκέμβριου" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
@@ -50,15 +27,15 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="5" Value="Κυριακὴ/,Δευτέρα/,Τρίτη/,Τετάρτη/,Πέμπτη/,Παρασκευὴ/,Σάββατον" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
 <PHRASE Key="Options" Value="Options" />
 <PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
-<PHRASE Key="SMenu" Value="Saints/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
-<PHRASE Key="Services" Value="Λειτουργικὴ/,Θεία Λειτουργία/,Ἑσπερινός/,Ἀπόδειπνον/,Ὄρθρος/,Ὥρα αʹ/,Ὥρα γʹ/,Ὥρα ϝʹ/,Ὥρα θʹ/,Royal Hours/,All-Night Vigil/,Μεσονυκτικὸ/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
-<PHRASE Key="Bible" Value="Bible/,This allows the user to access the Bible" />
+<PHRASE Key="SMenu" Value="Ἅγιοι/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
+<PHRASE Key="Services" Value="Λειτουργικὴ/,Θεία Λειτουργία/,Ἑσπερινός/,Ἀπόδειπνον/,Ὄρθρος/,Ὥρα αʹ/,Ὥρα γʹ/,Ὥρα ϝʹ/,Ὥρα θʹ/,Μεγάλαι ὧραι/,All-Night Vigil/,Μεσονυκτικὸ/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
+<PHRASE Key="Bible" Value="Ἁγία Γραφὴ/,This allows the user to access the Bible" />
 <PHRASE Key="Help" Value="Help/,This accesses the Help files./,About/,Access the About file/,Go to Help"/>
 <PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
 <PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
 <PHRASE Key="Tones" Value=" /,αʹ/,βʹ/,γʹ/,δʹ/,πλ. αʹ/,πλ. βʹ/,βαρύς/,πλ. δʹ" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="Γρηγοριανὸ ἡμερολόγιο/,Sunrise/,Sunset/,Ecclesiastic Lunar Phase/,Ἦχος TT; /,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
+<PHRASE Key="Main" Value="Γρηγοριανὸ ἡμερολόγιο/,Sunrise/,Ἡλιοβασίλεμα/,Ecclesiastic Lunar Phase/,Ἦχος TT; /,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
 <PHRASE Key="gospel" Value="Εὐαγγέλιο"/>
 <PHRASE Key="apostol" Value="Ἐπιστολὴ "/>
 <PHRASE Key="matins" Value="Ὄρθρος"/>
@@ -71,7 +48,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Week1" Value="Κυρ/,Δευτ/,Τρ/,Τετ/,Πέμ/,Παρ/,Σάβ" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="No Service Today/,Ὥρα αʹ/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Royal Hours"/>
+<PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Μεγάλαι ὧραι"/>
 <PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
 <PHRASE Key="DateFormat" Value="WW, DD MM YY μ.Χ." Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
 <PHRASE Key="Feasts" Value="Περιτομή του Κυρίου/,Αγία Θεοφάνεια/,Το Γενέθλιο του Αγίου Ιωάννη Προδρόμου και Βαπτιστού/,Άγιοι Πέτρος και Παύλος/,Μεταμόρφωση/,Κοίμησις της Θεοτόκου/,Αποτομή Κεφαλής/,Γέννηση της Υπεραγίας Θεοτόκου/,Ύψωση του Τιμίου και Ζωοποιού Σταυρού/,Αγία Σκέπη της Υπεραγίας Θεοτόκου εν Βλαχερνώ/,Εισόδια της Θεοτόκου/,Η κατά σάρκα γέννησις του Κυρίου Ιησού Χριστού/,Κυρίοπασχα: ΑΓΙΟ ΠΑΣΧΑ και Ευαγγελισμός της Υπεραγίας Θεοτόκου/,ΑΓΙΟ ΠΑΣΧΑ/,Ευαγγελισμός της Υπεραγίας Θεοτόκου/,Κυριακή της Πεντηκοστής/,Της Αναλήψεως/,Κυριακή των Βαΐων/,Υπαπαντή του Κυρίου" />

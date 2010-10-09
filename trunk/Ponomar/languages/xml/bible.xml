@@ -515,84 +515,84 @@ GNU General Public License for details.
 </BIBLE>
 
 <BIBLE Id="el/bible/spt" Name="Η Αγία Γραφή">
-	<INFO ChapterN="Κεφάλαιο ^NN" HeaderFormat="^NAME ^CNN" ChapterNI="^NN" VerseNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " FontFace="Times New Roman" FontSize="14"/>
-	<BOOK Id="Gen" Name="Γένεσις" Chapters="50" Short="Γέν" Intro="A reading from Genesis"/>
-	<BOOK Id="Ex" Name="Ἔξοδος" Chapters="40" Short="Έξ" Intro="A reading from Exodus" Note="There seems to ba issues with the versification of Chapters 37 to end."/>
-	<BOOK Id="Lev" Name="Λευϊτικόν" Chapters="27" Short="Λευ" Intro="A reading from Levites"/>
-	<BOOK Id="Num" Name="Ἀριθμοί" Chapters="36" Short="Αριθ" Intro="A reading from Numbers"/>
-	<BOOK Id="Deut" Name="Δευτερονόμιον" Chapters="34" Short="Δευτ" Intro="A reading Deuteronomy"/>
-	<BOOK Id="Josh" Name="Ἰησοῦς Nαυῆ" Chapters="24" Short="Ιησ" Intro="A reading from Joshua, the son of Nun" Note="Issue with Chapter 12, Verses 18-22, Different set of kings listed in different versions, issues with the number of verses in the final chapter"/>
-	<BOOK Id="Judg" Name="Κριταί" Chapters="21" Short="Κριτ" Intro="A reading from Judges"/>
+	<INFO ChapterN="Κεφάλαιο ^NN" HeaderFormat="^NAME ^CNN" ChapterNI="^NN" VerseNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep=", " Duration="-" SelectionSeparator=", " BCSep=" " FontFace="Times New Roman" FontSize="14"/>
+	<BOOK Id="Gen" Name="Γένεσις" Chapters="50" Short="Γέν" Intro="Γενέσεως τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Ex" Name="Ἔξοδος" Chapters="40" Short="Έξ" Intro="Τῆς Ἐξόδου τὸ Ἀνάγνωσμα" Note="There seems to ba issues with the versification of Chapters 37 to end."/>
+	<BOOK Id="Lev" Name="Λευϊτικόν" Chapters="27" Short="Λευ" Intro="Λευϊτικοῦ τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Num" Name="Ἀριθμοὶ" Chapters="36" Short="Αριθ" Intro="Ἀριθμῶν τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Deut" Name="Δευτερονόμιον" Chapters="34" Short="Δευτ" Intro="Δευτερονομίου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Josh" Name="Ἰησοῦς Nαυῆ" Chapters="24" Short="Ιησ" Intro="Ἰησοῦ τοῦ Ναυῆ τὸ Ἀνάγνωσμα" Note="Issue with Chapter 12, Verses 18-22, Different set of kings listed in different versions, issues with the number of verses in the final chapter"/>
+	<BOOK Id="Judg" Name="Κριταὶ" Chapters="21" Short="Κριτ" Intro="Κριτῶν τὸ Ἀνάγνωσμα"/>
 	<BOOK Id="Ruth" Name="Ῥούθ" Chapters="4" Short="Ρούθ" Intro="A reading from Ruth"/>
-	<BOOK Id="I_Kings" Name="Βασιλειῶν Α'" Chapters="31" Short="Βασ Α'" Intro="A reading from the first Book of Kingdoms"/>
-	<BOOK Id="II_Kings" Name="Βασιλειῶν Β'" Chapters="24" Short="Βασ Β'" Intro="A reading from the second Book of Kingdoms"/>
-	<BOOK Id="III_Kings" Name="Βασιλειῶν Γ'" Chapters="22" Short="Βασ Γ'" Intro="A reading from the third Book of Kingdoms" Note="There are versification issues here, especially Chapters 6, 11."/>
-	<BOOK Id="IV_Kings" Name="Βασιλειῶν Δ'" Chapters="25" Short="Βασ Δ'" Intro="A reading from the fourth Book of Kingdoms"/>
-	<BOOK Id="I_Paral" Name="Παραλειπομένων Α'" Chapters="29" Short="Παραλ Α'" Intro="A reading from the first Book of Paralipomenon"/>
-	<BOOK Id="II_Paral" Name="Παραλειπομένων Β'" Chapters="36" Short="Παραλ Β'" Intro="A reading from the second Book of Paraliponmenon" Note="There are versification issues with Chapters 35 and 36."/>
-	<BOOK Id="II_Esdra" Name="Ἔσδρας Αʹ" Chapters="9" Short="Ἔσδρας Αʹ" Intro="A reading from the second Book of Esdras" Note="In LXX, Esdras A' corresponds to the Slavonic (and other) Esdras II."/>
-	<BOOK Id="I_Esdra" Name="Ἔσδρας Βʹ" Chapters="10" Short="Ἔσδρας Βʹ" Intro="A reading from the first Book of Esdras" Note="In LXX, Esdras B' corresponds to the Slavonic (and other) Esdras I (Chapters 1 to 10) and Nehemiah (Chapter 11 to end)."/>
+	<BOOK Id="I_Kings" Name="Βασιλειῶν αʹ" Chapters="31" Short="Βασ αʹ" Intro="Βασιλειῶν αʹ τὸ Ἀνάγνωσμ"/>
+	<BOOK Id="II_Kings" Name="Βασιλειῶν βʹ" Chapters="24" Short="Βασ βʹ" Intro="Βασιλειῶν βʹ τὸ Ἀνάγνωσμ"/>
+	<BOOK Id="III_Kings" Name="Βασιλειῶν γʹ" Chapters="22" Short="Βασ γ" Intro="Βασιλειῶν τρίτης τὸ Ἀνάγνωσμα" Note="There are versification issues here, especially Chapters 6, 11."/>
+	<BOOK Id="IV_Kings" Name="Βασιλειῶν δʹ" Chapters="25" Short="Βασ δʹ" Intro="Βασιλειῶν τετάρτης τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="I_Paral" Name="Παραλειπομένων αʹ" Chapters="29" Short="Παραλ αʹ" Intro="A reading from the first Book of Paralipomenon"/>
+	<BOOK Id="II_Paral" Name="Παραλειπομένων βʹ" Chapters="36" Short="Παραλ βʹ" Intro="A reading from the second Book of Paraliponmenon" Note="There are versification issues with Chapters 35 and 36."/>
+	<BOOK Id="II_Esdra" Name="Ἔσδρας αʹ" Chapters="9" Short="Ἔσδρας αʹ" Intro="A reading from the second Book of Esdras" Note="In LXX, Esdras A' corresponds to the Slavonic (and other) Esdras II."/>
+	<BOOK Id="I_Esdra" Name="Ἔσδρας βʹ" Chapters="10" Short="Ἔσδρας βʹ" Intro="A reading from the first Book of Esdras" Note="In LXX, Esdras B' corresponds to the Slavonic (and other) Esdras I (Chapters 1 to 10) and Nehemiah (Chapter 11 to end)."/>
 	<BOOK Id="Nehem" Name="Νεεμίας" Chapters="13" Short="Νεεμίας" Intro="A reading from the Prophecy of Nehemiah" Note="See Esdras B'"/>
 	<BOOK Id="Tobit" Name="Τωβίτ" Chapters="14" Short="Τωβίτ" Intro="A reading from Tobit"/>
 	<BOOK Id="Judith" Name="Ἰουδίθ" Chapters="16" Short="Ἰουδίθ" Intro="A reading from Judith"/>
 	<BOOK Id="Esther" Name="Ἐσθήρ" Chapters="10" Short="Ἐσθήρ" Intro="A reading from Esther"/>
-	<BOOK Id="Job" Name="Ἰώβ" Chapters="42" Short="Ἰώβ" Intro="A reading from the Job"/>
+	<BOOK Id="Job" Name="Ἰώβ" Chapters="42" Short="Ἰώβ" Intro="Ἰὼβ τὸ Ἀνάγνωσμα"/>
 	<BOOK Id="Psalm" Name="Ψαλμοί" Chapters="151" Short="Ψαλ" Intro="Ψαλμοί"/>
-	<BOOK Id="Prov" Name="Παροιμίαι" Chapters="28" Short="Παρ" Intro="A reading from Proverbs" Notes="Chapters 16, 19, 24 need to be checked for versification, as well the number of chapters is different from all other versions!"/>
+	<BOOK Id="Prov" Name="Παροιμίαι" Chapters="28" Short="Παρ" Intro="Παροιμιῶν τὸ Ἀνάγνωσμα" Notes="Chapters 16, 19, 24 need to be checked for versification, as well the number of chapters is different from all other versions!"/>
 	<BOOK Id="Eccles" Name="Ἐκκλησιαστής" Chapters="12" Short="Ἐκκ" Intro="A reading from Ecclesiastes"/>
 	<BOOK Id="Song" Name="Ἆσμα Ἀσμάτων" Chapters="8" Short="Ἆσμα" Intro="A reading from the Song of Songs"/>
-	<BOOK Id="Wisd" Name="Σοφία Σαλoμῶντος" Chapters="19" Short="Σοφία" Intro="A reading from the Wisdom of Solomon"/>
+	<BOOK Id="Wisd" Name="Σοφία Σαλoμῶντος" Chapters="19" Short="Σοφία" Intro="Σοφίας Σολομῶντος τὸ Ἀνάγνωσμα"/>
 	<BOOK Id="Sirach" Name="Σοφία Ἰησοῦ Σειράχ" Chapters="51" Short="Σειράχ" Intro="A reading from the Prophecy of Sirach, son of Jesus"/>
-	<BOOK Id="Isa" Name="Ἡσαΐας" Chapters="66" Short="Ἡσα" Intro="A reading from the Prophecy of Isaiah"/>
-	<BOOK Id="Jerem" Name="Ἱερεμίας" Chapters="52" Short="Ἱερ" Intro="A reading from the Prophecy of Jeremiah" Note="Versification Issues Throughout."/>
-	<BOOK Id="Lamen" Name="Θρῆνοι Ἱερεμίου" Chapters="5" Short="Θρῆνοι" Intro="A reading from the Lamentations of Jeremiah"/>
-	<BOOK Id="Epistle" Name="Επιστολή Ἱερεμίου" Chapters="1" Short="Επιστολή" Intro="A reading from the Epistle of Jeremiah"/>
-	<BOOK Id="Baruch" Name="Βαρούχ" Chapters="5" Short="Βαρούχ" Intro="A reading from the Prophecy of Jeremiah"/>
-	<BOOK Id="Ezek" Name="Ἰεζεκιήλ" Chapters="48" Short="Ἰεζ" Intro="A reading from the Prophecy of Ezekiel"/>
-	<BOOK Id="Dan" Name="Δανιήλ" Chapters="14" Short="Δαν" Intro="A reading from the Prophecy of Daniel" Note="This is not strictly speaking the translation from the LXX, but done by Theodotion. The original version is found as an Appendix."/>
+	<BOOK Id="Isa" Name="Ἡσαΐας" Chapters="66" Short="Ἡσα" Intro="Προφητείας Ἡσαΐου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Jerem" Name="Ἱερεμίας" Chapters="52" Short="Ἱερ" Intro="Προφητείας Ἱερεμίου τὸ Ἀνάγνωσμα" Note="Versification Issues Throughout."/>
+	<BOOK Id="Lamen" Name="Θρῆνοι Ἱερεμίου" Chapters="5" Short="Θρῆνοι" Intro="Προφητείας Ἱερεμίου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Epistle" Name="Επιστολὴ Ἱερεμίου" Chapters="1" Short="Επιστολή" Intro="A reading from the Epistle of Jeremiah"/>
+	<BOOK Id="Baruch" Name="Βαρούχ" Chapters="5" Short="Βαρούχ" Intro="Προφητείας Ἱερεμίου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Ezek" Name="Ἰεζεκιὴλ" Chapters="48" Short="Ἰεζ" Intro="Προφητείας Ἰεζεκιὴλ τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Dan" Name="Δανιὴλ" Chapters="14" Short="Δαν" Intro="Προφητείας Δανιὴλ τὸ Ἀνάγνωσμα" Note="This is not strictly speaking the translation from the LXX, but done by Theodotion. The original version is found as an Appendix."/>
 	<BOOK Id="Hos" Name="Ὡσηέ" Chapters="14" Short="Ὡσηέ" Intro="A reading from the Prophecy of Hosea"/>
-	<BOOK Id="Joel" Name="Ἰωήλ" Chapters="3" Short="Ἰωήλ" Intro="A reading from the Prophecy of Joel"/>
+	<BOOK Id="Joel" Name="Ἰωὴλ " Chapters="3" Short="Ἰωὴλ" Intro="Προφητείας Ἰωὴλ τὸ Ἀνάγνωσμα"/>
 	<BOOK Id="Amos" Name="Ἀμώς" Chapters="9" Short="Ἀμώς" Intro="A reading from the Prophecy of Amos"/>
 	<BOOK Id="Obad" Name="Ὀβδίας" Chapters="1" Short="Ὀβδ" Intro="A reading from the Prophecy of Obadiah"/>
-	<BOOK Id="Jona" Name="Ἰωνᾶς" Chapters="4" Short="Ἰωνᾶς" Intro="A reading from the Prophecy of Jonah"/>
-	<BOOK Id="Mica" Name="Μιχαίας" Chapters="7" Short="Μιχ" Intro="A reading from the Prophecy of Micah"/>
+	<BOOK Id="Jona" Name="Ἰωνᾶς" Chapters="4" Short="Ἰωνᾶς" Intro="Προφητείας Ἰωνᾶ τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Mica" Name="Μιχαίας" Chapters="7" Short="Μιχ" Intro="Προφητείας Μιχαίου τὸ Ἀνάγνωσμα"/>
 	<BOOK Id="Nahum" Name="Ναούμ" Chapters="3" Short="Ναούμ" Intro="A reading from the Prophecy of Nahum"/>
 	<BOOK Id="Habak" Name="Ἀμβακούμ" Chapters="3" Short="Ἀμβ" Intro="A reading from the Prophecy of Habakuk"/>
-	<BOOK Id="Zeph" Name="Σοφονίας" Chapters="3" Short="Σοφ" Intro="A reading from the Prophecy of Zephaniah"/>
+	<BOOK Id="Zeph" Name="Σοφονίας" Chapters="3" Short="Σοφ" Intro="Προφητείας Σοφονίου τὸ Ἀνάγνωσμα"/>
 	<BOOK Id="Hagg" Name="Ἀγγαῖος" Chapters="2" Short="Ἀγγ" Intro="A reading from the Prophecy of Haggai"/>
-	<BOOK Id="Zech" Name="Ζαχαρίας" Chapters="14" Short="Ζαχ" Intro="A reading from the Prophecy of Zechariah"/>
-	<BOOK Id="Mal" Name="Μαλαχίας" Chapters="4" Short="Μαλ" Intro="A reading from the Prophecy of Malachi"/>
-	<BOOK Id="I_Macc" Name="Μακκαβαίων Α'" Chapters="16" Short="Μακ Α'" Intro="A reading from the first Book of Maccabees"/>
-	<BOOK Id="II_Macc" Name="Μακκαβαίων Β'" Chapters="15" Short="Μακ Β'" Intro="A reading from the second Book of Maccabees"/>
-	<BOOK Id="III_Macc" Name="Μακκαβαίων Γ'" Chapters="7"  Short="Μακ Γ'" Intro="A reading from the third Book of Maccabees" Note="Some issues with versification."/>
-	<BOOK Id="III_Esdra" Name="Ἔσδρας Γ'" Chapters="16" Short="Ἔσδρας Γ'" Intro="A reading from the third Book of Esdras" Note="This book is not found in the Greek versions of the Bible."/>
-	<BOOK Id="Mt" Name="Κατά Ματθαίον Ευαγγέλιο" Chapters="28" Short="Ματ" Intro="A reading from the Holy Gospel according to Matthew"/>
-	<BOOK Id="Mk" Name="Κατα Μαρκον Ευαγγέλιο" Chapters="16" Short="Μαρ" Intro="A reading from the Holy Gospel according to Mark"/>
-	<BOOK Id="Lk" Name="Κατά Λουκάν Ευαγγέλιο" Chapters="24" Short="Λου" Intro="A reading from the Holy Gospel according to Luke"/>
-	<BOOK Id="Jn" Name="Κατά Ιωάννην Ευαγγέλιο" Chapters="21" Short="Ιωάν" Intro="A reading from the Holy Gospel accoridng to John"/>
-	<BOOK Id="Acts" Name="Πράξεις των Αποστόλων" Chapters="28" Short="Πράξ" Intro="A reading from the Acts of the Apostles"/>
-	<BOOK Id="Jas" Name="Καθολική Επιστολή Ιακώβου" Chapters="5" Short="Ιακώβου" Intro="A reading from the Epistle of James"/>
-	<BOOK Id="I_Pet" Name="Καθολική Επιστολή Πέτρου Α'" Chapters="5" Short="Πέτρου Α'" Intro="A reading from the the first Epistle of Peter"/>
-	<BOOK Id="II_Pet" Name="Καθολική Επιστολή Πέτρου Β'" Chapters="3" Short="Πέτρου Β'" Intro="A reading from the second Epistle of Peter"/>
-	<BOOK Id="I_Jn" Name="Καθολική Επιστολή Ἰωάννου Α'" Chapters="5" Short="Ἰωάν Α'" Intro="A reading from the first Epistle of John"/>
-	<BOOK Id="II_Jn" Name="Καθολική Επιστολή Ἰωάννου Β'" Chapters="1" Short="Ἰωάν Β'" Intro="A reading from the second Epistle of John"/>
-	<BOOK Id="III_Jn" Name="Καθολική Επιστολή Ἰωάννου Γ'" Chapters="1" Short="Ἰωάν Γ'" Intro="A reading from the third Epistle of John"/>
-	<BOOK Id="Jude" Name="Καθολική Επιστολή Ἰούδα" Chapters="1" Short="Ἰούδα" Intro="A reading from the Epistle of Jude"/>
-	<BOOK Id="Rom" Name="Προς Ρωμαίους" Chapters="16" Short="Ρωμ" Intro="A reading from the Epistle of Paul to the Romans"/>
-	<BOOK Id="I_Cor" Name="Προς Κορινθίους Α'" Chapters="16" Short="Κορ Α'" Intro="A reading from the first Epistle of Paul to the Corinthians"/>
-	<BOOK Id="II_Cor" Name="Προς Κορινθίους Β'" Chapters="13" Short="Κορ Β'" Intro="A reading from the second Epistle of Paul to the Corinthians"/>
-	<BOOK Id="Gal" Name="Προς Γαλάτας" Chapters="6" Short="Γαλ" Intro="A reading from the Epistle of Paul to the Galatians"/>
-	<BOOK Id="Eph" Name="Προς Εφεσίους" Chapters="6" Short="Εφ" Intro="A reading from the Epistle of Paul to the Ephesians"/>
-	<BOOK Id="Philip" Name="Προς Φιλιππησίους" Chapters="4" Short="Φιλ" Intro="A reading from the Epistle to the Philippians"/>
-	<BOOK Id="Col" Name="Προς Κολοσσαείς" Chapters="4" Short="Κολ" Intro="A reading from the Epistle to the Colossians"/>
-	<BOOK Id="I_Thess" Name="Προς Θεσσαλονικείς Α'" Chapters="5" Short="Θεσ Α'" Intro="A reading from the first Epistle to the Thessalonians"/>
-	<BOOK Id="II_Thess" Name="Προς Θεσσαλονικείς Β'" Chapters="3" Short="Θεσ Β'" Intro="A reading from the second Epistle to the Thessalonians"/>
-	<BOOK Id="I_Tim" Name="Προς Τιμόθεον Α'" Chapters="6" Short="Τιμ Α'" Intro="A reading from the first Epistle to Timothy"/>
-	<BOOK Id="II_Tim" Name="Προς Τιμόθεον Β'" Chapters="4" Short="Τιμ Β'" Intro="A reading from the second Epistle to Timothy"/>
-	<BOOK Id="Tit" Name="Προς Τίτον" Chapters="3" Short="Τίτον" Intro="A reading from the Epistle to Titus"/>
-	<BOOK Id="Philemon" Name="Προς Φιλήμονα" Chapters="1" Short="Φιλήμονα" Intro="A reading from the Epistle to Philemon"/>
-	<BOOK Id="Heb" Name="Προς Εβραίους" Chapters="13" Short="Εβρ" Intro="A reading from the Epistle to the Hebrews"/>
-	<BOOK Id="Apoc" Name="Αποκάλυψις" Chapters="22" Short="Αποκ" Intro="A reading from the Book of Revelations"/>
+	<BOOK Id="Zech" Name="Ζαχαρίας" Chapters="14" Short="Ζαχ" Intro="Προφητείας Ζαχαρίου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Mal" Name="Μαλαχίας" Chapters="4" Short="Μαλ" Intro="Προφητείας Μαλαχίου τὸ ἀνάγνωσμα"/>
+	<BOOK Id="I_Macc" Name="Μακκαβαίων αʹ" Chapters="16" Short="Μακ αʹ" Intro="A reading from the first Book of Maccabees"/>
+	<BOOK Id="II_Macc" Name="Μακκαβαίων βʹ" Chapters="15" Short="Μακ βʹ" Intro="A reading from the second Book of Maccabees"/>
+	<BOOK Id="III_Macc" Name="Μακκαβαίων γʹ" Chapters="7"  Short="Μακ γʹ" Intro="A reading from the third Book of Maccabees" Note="Some issues with versification."/>
+	<BOOK Id="III_Esdra" Name="Ἔσδρας γʹ" Chapters="16" Short="Ἔσδρας γʹ" Intro="A reading from the third Book of Esdras" Note="This book is not found in the Greek versions of the Bible."/>
+	<BOOK Id="Mt" Name="Εὐαγγέλιον κατὰ Ματθαῖον" Chapters="28" Short="Ματ" Intro="Εὐαγγέλιον ἐκ τοῦ κατὰ Ματθαῖον"/>
+	<BOOK Id="Mk" Name="Εὐαγγέλιον κατὰ Μᾶρκον" Chapters="16" Short="Μᾶρ" Intro="Εὐαγγέλιον ἐκ τοῦ κατὰ Μᾶρκον"/>
+	<BOOK Id="Lk" Name="Εὐαγγέλιον κατὰ Λουκᾶν" Chapters="24" Short="Λου" Intro="Εὐαγγέλιον ἐκ τοῦ κατὰ Λουκᾶν"/>
+	<BOOK Id="Jn" Name="Εὐαγγέλιον κατὰ Ἰωάννην" Chapters="21" Short="Ἰωάν" Intro="Εὐαγγέλιον ἐκ τοῦ κατὰ Ἰωάννην"/>
+	<BOOK Id="Acts" Name="Πράξεων τῶν Ἀποστολων" Chapters="28" Short="Πράξ" Intro="A reading from the Acts of the Apostles"/>
+	<BOOK Id="Jas" Name="Καθολικὴ Επιστολὴ Ιακώβου" Chapters="5" Short="Ιακώβου" Intro="A reading from the Epistle of James"/>
+	<BOOK Id="I_Pet" Name="Καθολικὴ Επιστολὴ Πέτρου αʹ" Chapters="5" Short="Πέτρου αʹ" Intro="Καθολικῆς αʹ Ἐπιστολῆς Πέτρου Τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="II_Pet" Name="Καθολικὴ Επιστολὴ Πέτρου βʹ" Chapters="3" Short="Πέτρου βʹ" Intro="Καθολικῆς βʹ Ἐπιστολῆς Πέτρου Τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="I_Jn" Name="Καθολικὴ Επιστολὴ Ἰωάννου αʹ" Chapters="5" Short="Ἰωάν αʹ" Intro="Καθολικῆς αʹ Ἐπιστολῆς Ἰωάννου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="II_Jn" Name="Καθολικὴ Επιστολὴ Ἰωάννου βʹ" Chapters="1" Short="Ἰωάν βʹ" Intro="Καθολικῆς βʹ Ἐπιστολῆς Ἰωάννου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="III_Jn" Name="Καθολικὴ Επιστολὴ Ἰωάννου γʹ" Chapters="1" Short="Ἰωάν γʹ" Intro="Καθολικῆς Γʹ Ἐπιστολῆς Ἰωάννου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Jude" Name="Καθολικὴ Επιστολὴ Ἰούδα" Chapters="1" Short="Ἰούδα" Intro="A reading from the Epistle of Jude"/>
+	<BOOK Id="Rom" Name="Πρὸς Ῥωμαίους" Chapters="16" Short="Ῥωμ" Intro="Πρὸς Ῥωμαίους Ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="I_Cor" Name="Πρὸς Κορινθίους αʹ" Chapters="16" Short="Κορ αʹ" Intro="Πρὸς Κορινθίους αʹ Ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="II_Cor" Name="Πρὸς Κορινθίους βʹ" Chapters="13" Short="Κορ βʹ" Intro="Πρὸς Κορινθίους βʹ Ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Gal" Name="Πρὸς Γαλάτας" Chapters="6" Short="Γαλ" Intro="Πρὸς Γαλάτας ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Eph" Name="Πρὸς Εφεσίους" Chapters="6" Short="Εφ" Intro="A reading from the Epistle of Paul to the Ephesians"/>
+	<BOOK Id="Philip" Name="Πρὸς Φιλιππησίους" Chapters="4" Short="Φιλ" Intro="Πρὸς Φιλιππησίους Ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Col" Name="Πρὸς Κολοσσαείς" Chapters="4" Short="Κολ" Intro="A reading from the Epistle to the Colossians"/>
+	<BOOK Id="I_Thess" Name="Πρὸς Θεσσαλονικείς αʹ" Chapters="5" Short="Θεσ α'" Intro="Πρὸς Θεσσαλονικεὶς αʹ Ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="II_Thess" Name="Πρὸς Θεσσαλονικείς βʹ" Chapters="3" Short="Θεσ βʹ" Intro="Πρὸς Θεσσαλονικεὶς Βʹ Ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="I_Tim" Name="Πρὸς Τιμόθεον αʹ" Chapters="6" Short="Τιμ αʹ" Intro="Πρὸς Τιμόθεον αʹ Ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="II_Tim" Name="Πρὸς Τιμόθεον βʹ" Chapters="4" Short="Τιμ βʹ" Intro="Πρὸς Τιμόθεον βʹ Ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Tit" Name="Πρὸς Τίτον" Chapters="3" Short="Τίτον" Intro="Πρὸς Τίτον ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Philemon" Name="Πρὸς Φιλήμονα" Chapters="1" Short="Φιλήμονα" Intro="A reading from the Epistle to Philemon"/>
+	<BOOK Id="Heb" Name="Πρὸς Ἑβραίους" Chapters="13" Short="Ἑβρ" Intro="Πρὸς Ἑβραίους Ἐπιστολῆς Παύλου τὸ Ἀνάγνωσμα"/>
+	<BOOK Id="Apoc" Name="Ἀποκάλυψις" Chapters="22" Short="Αποκ" Intro="A reading from the Book of Revelations"/>
 	<BOOK Id="Composite" Name="Composite" Chapters="8" Short="Composite" Intro=""/>
 </BIBLE>
 
