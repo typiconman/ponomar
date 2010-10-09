@@ -59,7 +59,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     private boolean changeIt = false;
     private boolean changeItBooks = true;	//ADDED Y.S.
     //ADDED Y.S. 20081211 n.s. DEFAULT DISPLAY PARAMETERS
-    private String ChapterName = "Chapter";
+    private String ChapterName = "Chapter ^NN";
     private String[] VerseNumber = {"Prologue", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180"};
     private String[] ChapterNumber = {"Prologue", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180"};
     private String[] Comments;
@@ -75,6 +75,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     private OrderedHashtable comboBoxList;
     private OrderedHashtable findIdL;
     private ComponentOrientation OrientText=ComponentOrientation.LEFT_TO_RIGHT;
+    private String ChapterNameI="^NN";
+    private String Header="^NAME^CNN";
     //new String[]
     //{"Previous Chapter", "Entire Chapter", "Next Chapter", "Bookmark Passage", "Copy Passage", "Save Passage", "Print Passage"};
 
@@ -304,6 +306,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                     }
                 }
                 ChapterName = (String) table.get("ChapterN");
+                ChapterNameI= (String) table.get("ChapterNI");
+                Header=(String) table.get("HeaderFormat");
                 String a = (String) table.get("VerseNo");
                 VerseNumber = a.split(",");
                 a = (String) table.get("ChapterNo");
@@ -561,7 +565,12 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         
         text.setContentType("text/html; charset=UTF-8");
         text.setFont(CurrentFont);
-        printText="<body style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "pt\">" + "<B>" + (String) books.get(curbook) + " " + formatPassage(curpassage) + "</B><BR>" + Stuff[0] + "</body>";
+        String headerA=Header.replace("^NAME", (String) books.get(curbook));
+        headerA=headerA.replace("^CNN", formatPassage(curpassage));
+        //output1[2] = (String) books.get(curbook) + " " + formatPassage(curpassage); //QAZ!!
+
+        printText="<body style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "pt\">" + "<B>" + headerA + "</B><BR>" + Stuff[0] + "</body>";
+                //+ (String) books.get(curbook) + " " + formatPassage(curpassage) + "</B><BR>" + Stuff[0] + "</body>";
         text.setText(printText);
         //System.out.println(Stuff[0]);
         //text.setText("<B>" + (String)books.get(curbook) + " " + formatPassage(curpassage) + "</B><BR>" +Stuff[0]);
@@ -624,7 +633,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 
         k = mText.indexOf("#");
         if (k != -1) {
-            return "<BR><B>" + ChapterName + " " + ChapterNumber[Integer.parseInt(mText.substring(1))] + "</B>"; //ADDED MULTILINGUAL SUPPORT
+            String ChapterNameF=ChapterName.replace("^NN",ChapterNumber[Integer.parseInt(mText.substring(1))]); //ToneFormat.replace("TT",toneNumbers[tone])
+            return "<BR><B>" + ChapterNameF + "</B>"; //ADDED MULTILINGUAL SUPPORT
         }
         return mText;
     }
@@ -665,7 +675,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 
         k = mText.indexOf("#");
         if (k != -1 && RedStuff) {
-            return "<BR><B>" + ChapterName + " " + ChapterNumber[Integer.parseInt(mText.substring(1))] + "</B>"; //ADDED MULTILINGUAL SUPPORT
+            String ChapterNameF=ChapterName.replace("^NN",ChapterNumber[Integer.parseInt(mText.substring(1))]); //ToneFormat.replace("TT",toneNumbers[tone])
+            return "<BR><B>" + ChapterNameF + "</B>"; //ADDED MULTILINGUAL SUPPORT
         } else if (k != -1 && !RedStuff) {
             return "";
         }
@@ -699,7 +710,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         if (newPassage.indexOf(":") == -1) {
             // just a chapter specification, e.g. Gen_1
             int d = (int) Integer.parseInt(newPassage);
-            newPassage = ChapterNumber[d];
+            String ChapterNameF=ChapterNameI.replace("^NN",ChapterNumber[d]); //ToneFormat.replace("TT",toneNumbers[tone])
+            newPassage = ChapterNameF; //ChapterNumber[d]; //This needs to be changed for Chinese QAZ!!
             return newPassage;
         } else {
             // e.g. 2:11-3:2, 5, 13-14, 17-4:1
@@ -767,7 +779,11 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         //TODO: get rid of these string operations. They are bad, and take up too much CPU time
         String passage = parts[1].replaceAll(" ", "");
         String output = "<A Href=reading#" + parts[0].replace(' ', '_') + "#" + passage + ">";
-        output += getAbbrev(parts[0]) + " " + formatPassage(passage) + "</A>";
+        String headerA=Header.replace("^NAME", getAbbrev(parts[0]));
+        headerA=headerA.replace("^CNN", formatPassage(passage));
+        //HeaderFormat="^NAME ^CNN"
+        //output += getAbbrev(parts[0]) + " " + formatPassage(passage) + "</A>";
+        output+=headerA+"</A>";
         return output;
     }
 
@@ -903,7 +919,10 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         String[] output1 = new String[3];
         output1[0] = ret;
         output1[1] = InstructFirst;
-        output1[2] = (String) books.get(curbook) + " " + formatPassage(curpassage);
+        String headerA=Header.replace("^NAME", (String) books.get(curbook));
+        headerA=headerA.replace("^CNN", formatPassage(curpassage));
+        //output1[2] = (String) books.get(curbook) + " " + formatPassage(curpassage); //QAZ!!
+        output1[2]=headerA;
         return output1;
     }
 
