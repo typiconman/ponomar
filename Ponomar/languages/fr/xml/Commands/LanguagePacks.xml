@@ -42,6 +42,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Year" Value="2006-2010"/>
 <PHRASE Key="And" Value=" et "/>
 <PHRASE Key="Comma" Value=", "/>
+<PHRASE Key="Copyright" Value="Droits d’Auteur réservés ^YY par ^AA"/>
  <PHRASE Key="0" Value="Ponomar" Comment="Ceci est la seule valeur pour cette clé."/>
 <PHRASE Key="1" Value="janvier/,février/,mars/,avril/,mai/,juin/,juillet/,août/,septembre/,octobre/,novembre/,décembre" Comment="Les noms des mois dans le cas nominatif, utilisés dans la forme 'mois année'."/>
 <PHRASE Key="2" Value="dimanche/,lundi/,mardi/,mercredi/,jeudi/,vendredi/,samedi" Comment="Les noms de la semaine dans le cas nominatif, utilisés dans la forme 'semaine, mois numéro, année'."/> 

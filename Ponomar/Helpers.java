@@ -94,7 +94,7 @@ class Helpers
         			try
         			{
         				BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(FileName),"UTF8"));	
-	    				out.write(strOut + "<body><BR><BR><i>"+AboutNames[3]+" " +(String) ConfigurationFiles.Defaults.get("Year") +" " +AboutNames[4] + " " +(String) ConfigurationFiles.Defaults.get("Authors")+"</i></body></html>");
+	    				out.write(strOut + "<body><BR><BR><i>"+getCopyright()+"</i></body></html>");
                                         if (strOut.substring(0, 4).equals("<html>"))
                                         {
                                             out.write("</html>");
@@ -195,6 +195,32 @@ class Helpers
 
 
             return addon+currentPath+BasePath;
+        }
+        public String getCopyright(){
+
+            LanguagePack Text=new LanguagePack();
+		//String [] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
+		String[] Authors=Text.obtainValues((String) Text.Phrases.get("Authors"));
+                String Year=Text.Phrases.get("Year").toString();
+                String Comma=Text.Phrases.get("Comma").toString();
+                String And=Text.Phrases.get("And").toString();
+                String AuthorList=Authors[0];
+                if (Authors.length>2)
+                {
+                for(int i=1;i < Authors.length-1;i++)
+                {
+                    AuthorList=AuthorList+Authors[i]+Comma;
+                }
+                }
+                if (Authors.length>1)
+                {
+                    AuthorList=AuthorList+And+Authors[Authors.length-1];
+                }
+
+               String Copyright=Text.Phrases.get("Copyright").toString();
+               Copyright=Copyright.replace("^YY",Year);
+               Copyright=Copyright.replace("^AA",AuthorList);
+               return Copyright;
         }
 	
 }

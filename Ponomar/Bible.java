@@ -396,7 +396,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
             Vector dummy = new Vector();
             // add the chapters of book n
             for (int i = 1; i <= m; i++) {
-                dummy.addElement(ChapterNumber[i]);	//CHANGED Y.S. 2008/12/11 n.s. FOR DIFFERENT FORMAT VERSIONS
+                dummy.addElement(ChapterNameI.replace("^NN",ChapterNumber[i]));	//QAZ CHANGED Y.S. 2008/12/11 n.s. FOR DIFFERENT FORMAT VERSIONS
             }
             chaptersBox.setListData(dummy);
             curbook = books.keySet().toArray()[n].toString();
