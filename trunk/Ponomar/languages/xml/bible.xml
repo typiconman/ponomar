@@ -626,14 +626,20 @@ CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " FontSize="20" Orient="r
 	<BOOK Id="II_Paral" Name="٢ اخبار" Chapters="36" Short="II Paral" Intro="A reading from the second Book of Paraliponmenon"/>
 	<BOOK Id="I_Esdra" Name="١ عزرا" Chapters="10" Short="I Esdra" Intro="A reading from the first Book of Esdras"/>
 	<BOOK Id="Nehem" Name="نحميا" Chapters="13" Short="Nehem" Intro="A reading from the Prophecy of Nehemiah"/>
-	<BOOK Id="Esther" Name="استير" Chapters="10" Short="Esther" Intro="A reading from Esther"/>
+	<BOOK Id="Tobit" Name="طوبيت" Chapters="14" Short="Tobit" Intro="A reading from Tobit"/>
+	<BOOK Id="Judith" Name="سفر يهوديت" Chapters="16" Short="Judith" Intro="A reading from Judith"/>
+	<BOOK Id="Esther" Name="استير" Chapters="10" Short="Esther" Intro="A reading from Esther" Note="Harmonisation required: The Arabic text has an additional 6 chapters, which are claimed to be derived from the Greek Septuagint."/>
 	<BOOK Id="Job" Name="ايوب" Chapters="42" Short="Job" Intro="A reading from the Job"/>
 	<BOOK Id="Psalm" Name="مزامير" Chapters="151" Short="Ps" Intro="Psalm"/>
 	<BOOK Id="Prov" Name="امثال" Chapters="31" Short="Prov" Intro="A reading from Proverbs"/>
 	<BOOK Id="Eccles" Name="جامعة" Chapters="12" Short="Eccles" Intro="A reading from Ecclesiastes"/>
 	<BOOK Id="Song" Name="نشيد الانشاد" Chapters="8" Short="Song" Intro="A reading from the Song of Songs"/>
+	<BOOK Id="Wisd" Name="سفر الحكمة" Chapters="19" Short="Wisd" Intro="A reading from the Wisdom of Solomon"/>
+	<BOOK Id="Sirach" Name="سفر يشوع بن سيراخ" Chapters="51" Short="Sirach" Intro="A reading from the Prophecy of Sirach, son of Jesus"/>
 	<BOOK Id="Isa" Name="اشعياء" Chapters="66" Short="Isa" Intro="A reading from the Prophecy of Isaiah"/>
 	<BOOK Id="Jerem" Name="ارميا" Chapters="52" Short="Jerem" Intro="A reading from the Prophecy of Jeremiah"/>
+	<BOOK Id="Epistle" Name="Epistle of Jeremiah" Chapters="1" Short="Epistle" Intro="A reading from the Epistle of Jeremiah"/>
+	<BOOK Id="Baruch" Name="سفر باروخ" Chapters="5" Short="Baruch" Intro="A reading from the Prophecy of Jeremiah" Note="Last Chapter shorter than in all the others."/>
 	<BOOK Id="Lamen" Name="مراثي" Chapters="5" Short="Lamen" Intro="A reading from the Lamentations of Jeremiah"/>
 	<BOOK Id="Ezek" Name="حزقيال" Chapters="48" Short="Ezek" Intro="A reading from the Prophecy of Ezekiel"/>
 	<BOOK Id="Dan" Name="دانيال" Chapters="14" Short="Dan" Intro="A reading from the Prophecy of Daniel"/>
@@ -649,6 +655,8 @@ CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " FontSize="20" Orient="r
 	<BOOK Id="Hagg" Name="حجى" Chapters="2" Short="Hagg" Intro="A reading from the Prophecy of Haggai"/>
 	<BOOK Id="Zech" Name="زكريا" Chapters="14" Short="Zech" Intro="A reading from the Prophecy of Zechariah"/>
 	<BOOK Id="Mal" Name="ملاخي" Chapters="4" Short="Mal" Intro="A reading from the Prophecy of Malachi"/>
+	<BOOK Id="I_Macc" Name="١ المكابيين" Chapters="16" Short="I Macc" Intro="A reading from the first Book of Maccabees"/>
+	<BOOK Id="II_Macc" Name="٢ المكابيين" Chapters="15" Short="II Macc" Intro="A reading from the second Book of Maccabees"/>
 	<BOOK Id="Mt" Name="متى" Chapters="28" Short="Mt" Intro="A reading from the Holy Gospel according to Matthew"/>
 	<BOOK Id="Mk" Name="مرقس" Chapters="16" Short="Mk" Intro="A reading from the Holy Gospel according to Mark"/>
 	<BOOK Id="Lk" Name="لوقا" Chapters="24" Short="Lk" Intro="A reading from the Holy Gospel according to Luke"/>
