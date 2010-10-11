@@ -22,8 +22,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="BibleV" Value="zh/Hant/bible/cuv"/>
 <PHRASE Key="Authors" Value="亞歷山大·安德瑞耶/,尤里·斯查德"/>
 <PHRASE Key="Year" Value="二〇〇六～二〇一〇年"/>
-<PHRASE Key="And" Value=""/>
+<PHRASE Key="And" Value="、"/>
 <PHRASE Key="Comma" Value="、"/>
+<PHRASE Key="Copyright" Value="^AA^YY版權所有"/>
 <PHRASE Key="0" Value="波諾馬里" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the liturgical months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="主日/,瞻禮二/,瞻禮三/,瞻禮四/,瞻禮五/,預備日/,安息日" Comment="The names of the liturgical week in the nominative case, that is, for use in the format 'Year Month Date Week'."/>

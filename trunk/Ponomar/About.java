@@ -35,7 +35,7 @@ class About extends JFrame
 		setTitle(value);
 		LanguagePack Text=new LanguagePack();
 		String [] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
-		String[] Authors=Text.obtainValues((String) Text.Phrases.get("Authors"));
+		/*String[] Authors=Text.obtainValues((String) Text.Phrases.get("Authors"));
                 String Year=Text.Phrases.get("Year").toString();
                 String Comma=Text.Phrases.get("Comma").toString();
                 String And=Text.Phrases.get("And").toString();
@@ -50,13 +50,16 @@ class About extends JFrame
                 if (Authors.length>1)
                 {
                     AuthorList=AuthorList+And+Authors[Authors.length-1];
-                }
+                }*/
+                Helpers About1=new Helpers();
 		JPanel contentPane=new JPanel(new BorderLayout());
 		contentPane.setOpaque(true);
 		JTextPane output=new JTextPane();
 		output.setEditable(false);
 		output.setContentType("text/html");
-		output.setText("<B><center><Font Size='14'>"+(String)Ponomar.Phrases.get("0")+"</Font></center></B><p><center>"+AboutNames[0]+" "+(String) ConfigurationFiles.Defaults.get("Version")+"</center></p><p>"+AboutNames[1]+"</p><p>"+AboutNames[2]+"</p><p>"+AboutNames[3]+" " +Year +" " +AboutNames[4] + " " +AuthorList +"<BR>" + AboutNames[5] + "<BR>");
+                String DisplayFont=StringOp.dayInfo.get("FontFaceM").toString();
+                String DisplaySize=StringOp.dayInfo.get("FontSizeM").toString();
+		output.setText("<body style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\"><B><h1 style=\"text-align: center;\">"+(String)Ponomar.Phrases.get("0")+"</h1></B><p style=\"text-align: center;\">"+AboutNames[0]+" "+(String) ConfigurationFiles.Defaults.get("Version")+"</p><p>"+AboutNames[1]+"</p><p>"+AboutNames[2]+"</p><p>"+About1.getCopyright()+"<BR>" + AboutNames[5] + "<BR>");
 		output.setCaretPosition(0);
 		JScrollPane scrollPane = new JScrollPane(output);
 		contentPane.add(scrollPane,BorderLayout.CENTER);
