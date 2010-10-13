@@ -205,7 +205,7 @@ GNU General Public License for details.
 	<BOOK Id="II_Esdra" Name="в҃ є҆́здры" Chapters="9" Short="2 Езд." Intro=""/>
 	<BOOK Id="Tobit" Name="Тѡвї́т" Chapters="14" Short="Тов" Intro=""/>
 	<BOOK Id="Judith" Name="Ї҆ꙋдї́ѳ" Chapters="16" Short="Иудифь." Intro=""/>
-	<BOOK Id="Esther" Name="Є҆сѳи́рь" Chapters="10" Short="Есф." Intro=""/>
+	<BOOK Id="Esther" Name="Є҆сѳи́рь" Chapters="10" Short="Есф." Intro="" Note="There may be issues with the versification here and in all the other versions."/>
 	<BOOK Id="Job" Name="Ї҆́ѡвъ" Chapters="42" Short="Иов" Intro="Ї҆́ѡва чте́нїе" Note="The last verse of Chapter 42 is much longer than in all the other translations!"/>
 	<BOOK Id="Psalm" Name="Ѱалти́рь" Chapters="151" Short="Пс." Intro="Ѱало́мъ"/>
 	<BOOK Id="Prov" Name="При́тчей соломѡ́нихъ" Chapters="31" Short="Притч." Intro="При́тчей чте́нїе"/>
@@ -628,7 +628,7 @@ CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " FontSize="20" Orient="r
 	<BOOK Id="Nehem" Name="نحميا" Chapters="13" Short="Nehem" Intro="A reading from the Prophecy of Nehemiah"/>
 	<BOOK Id="Tobit" Name="طوبيت" Chapters="14" Short="Tobit" Intro="A reading from Tobit"/>
 	<BOOK Id="Judith" Name="سفر يهوديت" Chapters="16" Short="Judith" Intro="A reading from Judith"/>
-	<BOOK Id="Esther" Name="استير" Chapters="10" Short="Esther" Intro="A reading from Esther" Note="Harmonisation required: The Arabic text has an additional 6 chapters, which are claimed to be derived from the Greek Septuagint."/>
+	<BOOK Id="Esther" Name="استير" Chapters="10" Short="Esther" Intro="A reading from Esther" />
 	<BOOK Id="Job" Name="ايوب" Chapters="42" Short="Job" Intro="A reading from the Job"/>
 	<BOOK Id="Psalm" Name="مزامير" Chapters="151" Short="Ps" Intro="Psalm"/>
 	<BOOK Id="Prov" Name="امثال" Chapters="31" Short="Prov" Intro="A reading from Proverbs"/>
