@@ -638,7 +638,7 @@ CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " FontSize="20" Orient="r
 	<BOOK Id="Sirach" Name="سفر يشوع بن سيراخ" Chapters="51" Short="Sirach" Intro="A reading from the Prophecy of Sirach, son of Jesus"/>
 	<BOOK Id="Isa" Name="اشعياء" Chapters="66" Short="Isa" Intro="A reading from the Prophecy of Isaiah"/>
 	<BOOK Id="Jerem" Name="ارميا" Chapters="52" Short="Jerem" Intro="A reading from the Prophecy of Jeremiah"/>
-	<BOOK Id="Epistle" Name="Epistle of Jeremiah" Chapters="1" Short="Epistle" Intro="A reading from the Epistle of Jeremiah"/>
+	<BOOK Id="Epistle" Name="رسالة ارميا" Chapters="1" Short="Epistle" Intro="A reading from the Epistle of Jeremiah"/>
 	<BOOK Id="Baruch" Name="سفر باروخ" Chapters="5" Short="Baruch" Intro="A reading from the Prophecy of Jeremiah" Note="Last Chapter shorter than in all the others."/>
 	<BOOK Id="Lamen" Name="مراثي" Chapters="5" Short="Lamen" Intro="A reading from the Lamentations of Jeremiah"/>
 	<BOOK Id="Ezek" Name="حزقيال" Chapters="48" Short="Ezek" Intro="A reading from the Prophecy of Ezekiel"/>
