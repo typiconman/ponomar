@@ -1,5 +1,5 @@
 <DAY>
-<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
+<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
 <SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
 <SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11" Cmd="nday != 50" Note="for Sts Methodius and Cyrill"/>
 
@@ -24,3 +24,4 @@
 <SAINT Name="聖維若（來自愛爾蘭的主教，傳教於荷蘭的林博格地方，710年）" Id="" Type="0"/>
 
 </DAY>
+	

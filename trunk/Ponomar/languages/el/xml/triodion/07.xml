@@ -2,9 +2,11 @@
 <SCRIPTURE Type="vespers" Reading="Gen_49:1-2, 8-12" />
 <SCRIPTURE Type="vespers" Reading="Zeph_3:14-19" />
 <SCRIPTURE Type="vespers" Reading="Zech_9:9-15" />
-<SCRIPTURE Type="matins" Reading="Mt_21:1-11, 15-17" Pericope="73"/>
+<SCRIPTURE Type="matins" Reading="Mt_21:1-11, 15-17" Pericope="83"/>
 <SCRIPTURE Type="apostol" Reading="Philip_4:4-9" Pericope="247"/>
 <SCRIPTURE Type="gospel" Reading="Jn_12:1-18" Pericope="41"/>
 <LITURGY Type="1" Comment="Always St John's" />
 <SAINT Name="Κυριακή των Βαΐων" Id="87" Type=""/>
 </DAY>
+
+	
