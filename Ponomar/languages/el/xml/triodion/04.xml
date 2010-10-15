@@ -1,5 +1,5 @@
 <DAY>
-<SCRIPTURE Type="matins" Reading="Jn_12:17-50" Pericope="41"/>
+<SCRIPTURE Type="matins" Reading="Jn_12:17-50" Pericope="41 (mid)"/>
 <SCRIPTURE Type="6th hour" Reading="Ezek_2:3-3:3" />
 <SCRIPTURE Type="vespers" Reading="Ex_2:11-22" />
 <SCRIPTURE Type="vespers" Reading="Job_2:1-10" />
@@ -8,3 +8,5 @@
 <LITURGY Type="3" Comment="Pre-sanctified always" Cmd="dRank != 7"/>
 <SAINT Name="Μεγάλη Τετάρτη - Της αλειψάσης τον Κύριον μύρω" Id="378" Type=""/>
 </DAY>
+
+	

@@ -1,5 +1,5 @@
 <DAY>
-<SCRIPTURE Type="matins" Reading="Mt_21:18-43" Pericope="74"/>
+<SCRIPTURE Type="matins" Reading="Mt_21:18-43" Pericope="84"/>
 <SCRIPTURE Type="6th hour" Reading="Ezek_1:1-20" />
 <SCRIPTURE Type="vespers" Reading="Ex_1:1-20" />
 <SCRIPTURE Type="vespers" Reading="Job_1:1-12" />
@@ -7,3 +7,5 @@
 <SAINT Name="Μεγάλη Δευτέρα - Ιωσήφ του Παγκάλου" Id="376" Type=""/>
 <LITURGY Type="3" Comment="Pre-sanctified, except Annuncation" Cmd="dRank != 7"/>
 </DAY>
+
+	
