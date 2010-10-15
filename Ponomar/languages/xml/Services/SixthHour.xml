@@ -122,7 +122,7 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="GloryPriest1" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0 &amp;&amp; (PFlag1 == 0 || PFlag1 == 1)" />
 <CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1" Cmd="PFlag1 == 0 || PFlag1 == 1"/>
 <CREATE What="LordHaveMercy" Who="R" RedFirst="1" Times="3" NewLine="1" Cmd="PFlag1 == 0 || PFlag1 == 1"/>
-<CREATE What="InvocationFather" Who="R" RedFirst="1" NewLine="1" Cmd="PS != 0 &amp;&amp; (PFlag1 == 0 || PFlag1 == 1)"/>
+<CREATE What="InvocationFather2" Who="R" RedFirst="1" NewLine="1" Cmd="PS != 0 &amp;&amp; (PFlag1 == 0 || PFlag1 == 1)"/>
 <CREATE What="SmallEnding" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0 &amp;&amp; (PFlag1 == 0 || PFlag1 == 1)"/>
 <CREATE What="Ending" Who="R" RedFirst="1" NewLine="1" Cmd="PS == 0 &amp;&amp; (PFlag1 == 0 || PFlag1 == 1)"/>
 <CREATE What="SmallEndingWP" Who="SR" RedFirst="1" NewLine="1" Cmd="PS == 0 &amp;&amp; (PFlag1 == 0 || PFlag1 == 1)"/>
