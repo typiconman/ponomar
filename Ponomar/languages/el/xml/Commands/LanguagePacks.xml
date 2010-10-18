@@ -76,5 +76,6 @@ Note: The general format for the files is:
 <PHRASE Key="TimeF" Value="HH:MM" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <PHRASE Key="LivesW" Value="Βιογραϕιον/,Ἀπολυτίκιον/, Ἰδιόμελον: /,Κοντάκιον/,Ἦχος: TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
 <PHRASE Key="IconW" Value="Previous Icon/,Next Icon/,No Icons were found."/>
+<PHRASE Key="Colon" Value=": " Note="This is how a colon is to appear in the given texts."/>
 
 </LANGUAGEPACKS>

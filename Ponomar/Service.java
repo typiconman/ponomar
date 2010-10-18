@@ -183,9 +183,11 @@ public class Service implements DocHandler
 			ReadText textGet1=new ReadText();
                         WhoLast="";
 			String text4=textGet1.readText(ServiceFileName+"Text/"+Title+".xml");
+                        String Ponomar=Text.Phrases.get("0").toString();
+                        String Colon=Text.Phrases.get("Colon").toString();
 			if(text4 != null)
 			{
-				Header1=Header1+"<title>Ponomar: "+text4+"</title>";
+				Header1=Header1+"<title>"+Ponomar+Colon+text4+"</title>";
                                 
 			}
 			else
@@ -699,7 +701,7 @@ public class Service implements DocHandler
                     if(!Who.equals(""))
 			{
 				String textWho = textGet.readText(CommonPrayersFileName+Who+".xml");
-				text2="<p><B><FONT color=\"red\">"+textWho+"</FONT></B> "+text2;
+                                text2="<p><B><FONT color=\"red\">"+textWho+"</FONT></B>"+text2;
 				if(!WhoLast.equals(""))
 				{
 					text2="</p>"+text4+text2;	
