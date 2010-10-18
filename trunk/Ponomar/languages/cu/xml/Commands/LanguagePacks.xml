@@ -100,5 +100,6 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <!-- Traditionally, Church Slavonic uses a glyph-based approach to writing numbers, which at present cannot be truly implemented! -->
 <PHRASE Key="LivesW" Value="Жи́тїе/,Тропа́рь/, Подо́бенъ: /,Конда́къ/,Гла́съ TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
 <PHRASE Key="IconW" Value="Previous ї҆конꙋ/,Слѣ́дꙋющꙋ ї҆конꙋ/,Ї҆ко́нъ немаетъ."/>
+<PHRASE Key="Colon" Value=": " Note="This is how a colon is to appear in the given texts."/>
 
 </LANGUAGEPACKS>

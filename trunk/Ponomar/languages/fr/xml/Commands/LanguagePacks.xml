@@ -98,5 +98,6 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="TimeF" Value="HH h MM min" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <PHRASE Key="LivesW" Value="Vive/,Le tropaire/, Podoben : /,Le kondakion/,Tone : TT/, ; /,Il manque l'infomration sur cette commemoration." Comment="A space (if required) should be placed before and after the 2nd entry."/>
 <PHRASE Key="IconW" Value="Icon précédent/,Icon suivant/,Aucun Icon n'avait pas trouvé."/>
+<PHRASE Key="Colon" Value=" : " Note="This is how a colon is to appear in the given texts."/>
 
 </LANGUAGEPACKS>
