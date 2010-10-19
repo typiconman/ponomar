@@ -1,0 +1,17 @@
+<SAINT>
+<!-- The Synaxis of the Three Hierarchs -->
+<SERVICE>
+<VESPERS>
+<SCRIPTURE Type="vespers" Reading="Deut_1:8-11, 15-17" />
+<SCRIPTURE Type="vespers" Reading="Deut_10:14-21" />
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9" />
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Cmd="dow != 0"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_13:7-16"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" />
+</LITURGY>
+</SERVICE>
+</SAINT>
