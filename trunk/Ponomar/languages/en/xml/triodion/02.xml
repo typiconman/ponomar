@@ -15,7 +15,7 @@
 <SCRIPTURE Type="1st hour" Reading="Gal_6:14-18" Pericope="215 (mid)"/>
 <SCRIPTURE Type="1st hour" Reading="Mt_27:1-56" Pericope="110"/>
 <SCRIPTURE Type="3rd hour" Reading="Isa_8:4-11" />
-<SCRIPTURE Type="3rd hour" Reading="Rom_5:6-11" Pericope="78 (mid)"/>
+<SCRIPTURE Type="3rd hour" Reading="Rom_5:6-11" Pericope="88 (mid)"/>
 <SCRIPTURE Type="3rd hour" Reading="Mk_15:16-41" Pericope="67"/>
 <SCRIPTURE Type="6th hour" Reading="Isa_52:13-15, 53:1-12, 54:1" />
 <SCRIPTURE Type="6th hour" Reading="Heb_2:11-18" Pericope="306"/>
@@ -54,7 +54,7 @@ The Thief, seeing the Prince of life hanging on the Cross, said: If he who is cr
 Come, let us all sing the praise of him who was crucified for us; for Mary looked upon him on the Tree and said: ‘Though you endure the Cross, yet you are my Son and my God’.
 	</KONTAKION>
 <ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
-	<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
+	<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8<BR>The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
 Today the veil of the Temple is rent, as a reproof against the transgressors; and the sun hides its own rays, as it sees the Master crucified.
 	</IDIOMEL><!-- Note the difference in assigned Tones here -->
 <VERSE Type="1" >
@@ -155,3 +155,4 @@ There is none who does good; no, not one.
 </SERVICE>
 
 </DAY>
+	
