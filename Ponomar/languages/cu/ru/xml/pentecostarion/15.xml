@@ -2,10 +2,11 @@
 <PRIMES Type="Easter" />
 <SCRIPTURE Type="matins" Reading="Mk_16:9-20" Pericope="71" />
 <SCRIPTURE Type="apostol" Reading="Acts_6:1-7" Pericope="16" />
-<SCRIPTURE Type="gospel" Reading="Mk_15:43-16:8" Pericope="79" />
+<SCRIPTURE Type="gospel" Reading="Mk_15:43-16:8" Pericope="69" />
 
 <SAINT Name="Среда 2-й седмицы по Пасхе. Свв. жен мироносиц, Иосифа Аримафейского и Никодима" Id="2598" Type="1" Tone="2"/>
 <SAINT Name="Блгв. Тамары, царицы Грузинской (1213) (Среда 2-й седмицы по Пасхе)" Id="2687" Type="0"/>
 
 </DAY>
+	
 	
