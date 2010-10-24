@@ -1,4 +1,19 @@
 <DAY>
+<SAINT Name="2" Cmd="dow == 0" />
+<SAINT Name="8" Cmd="dow == 6" />
+<SCRIPTURE Type="1st hour" Reading="Mica_5:2-4" Cmd="dow == 5" />
+<SCRIPTURE Type="1st hour" Reading="Heb_1:1-2" Pericope="303" Cmd="dow == 5" />
+<SCRIPTURE Type="1st hour" Reading="Mt_1:18-25" Pericope="2" Cmd="dow == 5" />
+<SCRIPTURE Type="3rd hour" Reading="Baruch_3:36-4:4" Cmd="dow == 5" />
+<SCRIPTURE Type="3rd hour" Reading="Gal_3:23-29" Pericope="208" Cmd="dow == 5" />
+<SCRIPTURE Type="3rd hour" Reading="Lk_2:1-20" Pericope="5" Cmd="dow == 5" />
+<SCRIPTURE Type="6th hour" Reading="Isa_7:10-16, 8:1-4, 8-10" Cmd="dow == 5" />
+<SCRIPTURE Type="6th hour" Reading="Heb_1:10-2:3" Pericope="304" Cmd="dow == 5" />
+<SCRIPTURE Type="6th hour" Reading="Mt_2:1-12" Pericope="3" Cmd="dow == 5" />
+<SCRIPTURE Type="9th hour" Reading="Isa_9:6-7" Cmd="dow == 5" />
+<SCRIPTURE Type="9th hour" Reading="Heb_2:11-18" Pericope="306" Cmd="dow == 5" />
+<SCRIPTURE Type="9th hour" Reading="Mt_2:13-23" Pericope="4" Cmd="dow == 5" />
+<LITURGY Type="-1" Cmd="dow == 5"/>
 <SAINT Name="Άγιοι Δέκα Μάρτυρες που μαρτύρησαν στην Κρήτη" Id="4947" Type=""/>
 <SAINT Name="Άγιος Ναούμ ο Θεοφόρος και θαυματουργός" Id="4945" Type=""/>
 <SAINT Name="Όσιος Παύλος Αρχιεπίσκοπος Νεοκαισαρείας" Id="4946" Type=""/>
@@ -7,3 +22,5 @@
 <SAINT Name="Όσιος Νήφων επίσκοπος Κωνσταντιανής" Id="4942" Type=""/>
 <SAINT Name="Άγιος Χρυσογόνος" Id="4941" Type=""/>
 </DAY>
+
+	

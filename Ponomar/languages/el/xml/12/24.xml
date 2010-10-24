@@ -1,4 +1,32 @@
 <DAY>
+<SAINT Name="2" Cmd="dow == 0" />
+<SAINT Name="8" Cmd="dow == 6" />
+<SCRIPTURE Type="1st hour" Reading="Mica_5:2-4" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="1st hour" Reading="Heb_1:1-2" Pericope="303" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="1st hour" Reading="Mt_1:18-25" Pericope="2" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="3rd hour" Reading="Baruch_3:36-4:4" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="3rd hour" Reading="Gal_3:23-29" Pericope="208" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="3rd hour" Reading="Lk_2:1-20" Pericope="5" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="6th hour" Reading="Isa_7:10-16, 8:1-4, 8-10" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="6th hour" Reading="Heb_1:10-2:3" Pericope="304" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="6th hour" Reading="Mt_2:1-12" Pericope="3" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="9th hour" Reading="Isa_9:6-7" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="9th hour" Reading="Heb_2:11-18" Pericope="306" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="9th hour" Reading="Mt_2:13-23" Pericope="4" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="vespers" Reading="Gen_1:1-13" />
+<SCRIPTURE Type="vespers" Reading="Num_24:2-9, 17-18" />
+<SCRIPTURE Type="vespers" Reading="Mica_4:6-7, 5:2-4" />
+<SCRIPTURE Type="vespers" Reading="Isa_11:1-10" />
+<SCRIPTURE Type="vespers" Reading="Baruch_3:36-38, 4:1-4" />
+<SCRIPTURE Type="vespers" Reading="Dan_2:31-36, 44-45" />
+<SCRIPTURE Type="vespers" Reading="Isa_9:6-7" />
+<SCRIPTURE Type="vespers" Reading="Isa_7:10-16, 8:1-4, 8-10" />
+<SCRIPTURE Type="vespers" Reading="Heb_1:1-12" Pericope="303" Cmd="dow == 6 || dow == 0" />
+<SCRIPTURE Type="vespers" Reading="Lk_2:1-20" Pericope="5" Cmd="dow == 6 || dow == 0" />
+<SCRIPTURE Type="apostol" Reading="Heb_1:1-12" Pericope="303" Cmd="!(dow == 6 || dow == 0)" />
+<SCRIPTURE Type="gospel" Reading="Lk_2:1-20" Pericope="5" Cmd="!(dow == 6 || dow == 0)" />
+<LITURGY Type="2" Cmd="dow != 6 &amp;&amp; dow != 0"/>
+<LITURGY Type="1" Cmd="dow == 6 || dow == 0"/>
 <SAINT Name="Προεόρτια Χριστουγέννων" Id="4811" Type=""/>
 <SAINT Name="Αγία Ευγενία η Οσιοπαρθενομάρτυς" Id="4812" Type=""/>
 <SAINT Name="Άγιος Φίλιππος" Id="4814" Type=""/>
@@ -14,3 +42,5 @@
 <SAINT Name="Άγιος Καστούλος" Id="4825" Type=""/>
 <SAINT Name="Όσιος Αγάπιος ο νεώτερος" Id="4826" Type=""/>
 </DAY>
+
+	

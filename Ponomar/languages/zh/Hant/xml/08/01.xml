@@ -1,7 +1,7 @@
 <DAY>
 <SCRIPTURE Type="apostol" Reading="I Cor_1:18-24" Pericope="125" Note="for the Cross"/>
 <SCRIPTURE Type="gospel" Reading="Jn_19:6-11, 13-20, 25-35" Pericope="60" Note="for the Cross"/>
-<SCRIPTURE Type="apostol" Reading="Heb_11:33-12-2" Pericope="330" Note="for the Martyrs" Cmd="dow != 0"/>
+<SCRIPTURE Type="apostol" Reading="Heb_11:33-12:2" Pericope="330" Note="for the Martyrs" Cmd="dow != 0"/>
 <SCRIPTURE Type="gospel" Reading="Mt_10:32-36, 11:1" Pericope="38" Note="for the Martyrs" Cmd="dow != 0"/>
 
 <SAINT Name="救主基督施生命十字聖架之寶木巡遊紀念日（1164年）（本月三個救主慶節中的第一個）" Id="4360" Type="3" />
@@ -14,3 +14,4 @@
 <SAINT Name="聖提摩泰（顯行靈蹟者，伯羅奔尼撒半島的普里科尼索總主教）" Id="" Type="0" />
 
 </DAY>
+	
