@@ -1,8 +1,9 @@
 <DAY>
 <PRIMES Type="Normal" />
-<SCRIPTURE Type="apostol" Reading="I Cor_4:5-8" Pericope="130"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:5-8" Pericope="130 mid"/>
 <SCRIPTURE Type="gospel" Reading="Mt_13:44-54" Pericope="55"/>
 
 <SAINT Name="Friday of the 6th week after Pentecost" Id="" Type="0" Tone="4" />
 
 </DAY>
+	
