@@ -152,8 +152,8 @@ GNU General Public License for details.
 	<BOOK Id="Mal" Name="Malachie" Chapters="4" Short="Ml" Intro="Une lection de la prophétie de Malachie"/>
 	<BOOK Id="I_Macc" Name="1 Maccabées" Chapters="16" Short="1 M" Intro="Une lection du premier livre des Maccabées"/>
 	<BOOK Id="II_Macc" Name="2 Maccabées" Chapters="15" Short="2 M" Intro="Une lection du deuxième livre des Maccabées"/>
-	<BOOK Id="III_Macc" Name="3 Maccabées" Chapters="7"  Short="3 M" Intro="Une lection du troisième livre des Maccabées"/>
-	<BOOK Id="III_Esdra" Name="3 Esdras" Chapters="16" Short="3 Esd" Intro="Une lection du troisième livre d'Esdras"/>
+	<BOOK Id="III_Macc" Name="3 Maccabées" Chapters="7"  Short="3 M" Intro="Une lection du troisième livre des Maccabées" Source="OCRed from digital copy of La Bible des Septante, Le troisieme livre des Maccabées, Extrait de 'La Bible Traduction nouvelle avec introductions et commentaires par Edouard Reuss. (1879)"/>
+	<BOOK Id="III_Esdra" Name="3 Esdras" Chapters="16" Short="3 Esd" Intro="Une lection du troisième livre d'Esdras" Source="OCRed from digital copy of 'Les Apocryphes Ethiopiens Traduits en francais par René Basset...IX Apocalypse d'Esdras' (1899). Modified to correct for the differences in order."/>
 	<BOOK Id="Mt" Name="Matthieu" Chapters="28" Short="Mt" Intro="Une lection du Saint Évangile selon Saint Matthieu"/>
 	<BOOK Id="Mk" Name="Marc" Chapters="16" Short="Marc" Intro="Une lection du Saint Évangile selon Saint Marc"/>
 	<BOOK Id="Lk" Name="Luc" Chapters="24" Short="Lc" Intro="Une lection du Saint Évangile selon Saint Luc"/>
