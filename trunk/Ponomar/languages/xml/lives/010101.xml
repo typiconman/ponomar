@@ -1,0 +1,19 @@
+<SAINT>
+<!-- For the Circumcision of the Lord -->
+<SERVICE>
+<VESPERS>
+<SCRIPTURE Type="vespers" Reading="Gen_17:1-7, 9-12, 14" />
+<SCRIPTURE Type="vespers" Reading="Prov_8:22-30" />
+<SCRIPTURE Type="vespers" Reading="Prov_10:31-32, 11:1-12" />
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="dow != 0" />
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Pericope="254" Reading="Col_2:8-12" Note="0"/>
+<SCRIPTURE Type="apostol" Pericope="318" Reading="Heb_7:26-8:2" Cmd="dow != 0 &amp;&amp; dow != 6" Note="772426"/>
+<SCRIPTURE Type="gospel" Pericope="6" Reading="Lk_2:20-21, 40-52" Note="0"/>
+<SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:17-23" Cmd="dow != 0 &amp;&amp; dow != 6" Note="772426"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
