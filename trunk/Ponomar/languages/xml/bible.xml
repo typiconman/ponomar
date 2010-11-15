@@ -235,7 +235,7 @@ GNU General Public License for details.
 	<BOOK Id="I_Macc" Name="а҃ маккавей́скаѧ" Chapters="16" Short="1 Макк." Intro=""/>
 	<BOOK Id="II_Macc" Name="в҃ маккавей́скаѧ" Chapters="15" Short="2 Макк." Intro=""/>
 	<BOOK Id="III_Macc" Name="г҃ маккавей́скаѧ" Chapters="7"  Short="3 Макк." Intro=""/>
-	<BOOK Id="III_Esdra" Name="г҃ є҆́здры" Chapters="16" Short="3 Езд." Intro="" Note="Missing. A pdf copy of this Book from the Ostrog Bible is available."/>
+	<BOOK Id="III_Esdra" Name="г҃ є҆́здры" Chapters="16" Short="3 Езд." Intro="" Note="A reconstructed full Church Slavonic version based on the civil script Church Slavonic version on drevo.ru using a primitive Bayesian approach for reconstruction. Not all words could be recovered or properly recovered. A pdf copy of this Book from the Ostrog Bible is available, but the translation differs quite a bit from this version."/>
 	<BOOK Id="Mt" Name="Ѿ Матѳе́а" Chapters="28" Short="Мф." Intro="Ѿ матѳе́а ст҃а́гѡ є҆ѵⷢлїа чте́нїе"/>
 	<BOOK Id="Mk" Name="Ѿ Ма́рка" Chapters="16" Short="Мк." Intro="Ѿ ма́рка ст҃а́гѡ є҆ѵⷢлїа чте́нїе"/>
 	<BOOK Id="Lk" Name="Ѿ лꙋкѝ" Chapters="24" Short="Лк." Intro="Ѿ лꙋкѝ ст҃а́гѡ є҆ѵⷢлїа чте́нїе"/>
