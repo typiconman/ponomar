@@ -1,4 +1,4 @@
-<DAY>
+<SAINT>
 <PRIMES Type="Normal" />
 <SCRIPTURE Type="apostol" Reading="I Pet_4:12-5:5" Pericope="62" Cmd="nday == -73" />
 <SCRIPTURE Type="apostol" Reading="Heb_10:35-11:7" Pericope="226" Cmd="nday == -94" />
@@ -24,4 +24,4 @@
 <SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="(nday == -73) &amp;&amp; GS == 0" /> 
 <SCRIPTURE Type="gospel" Reading="Mk_9:10-16" Pericope="41" Cmd="(nday == -94) &amp;&amp; GS == 0" /> 
 <SCRIPTURE Type="gospel" Reading="Lk_21:28-33" Pericope="107" Cmd="(nday == -101 || nday > 0) &amp;&amp; GS == 0" />
-</DAY>
+</SAINT>
