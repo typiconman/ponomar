@@ -1,20 +1,6 @@
 <DAY>
-<SAINT Name="0" Cmd="dow == 0 || dow == 1" />
-<SAINT Name="6" Cmd="dow == 6" />
-<SCRIPTURE Type="vespers" Reading="Gen_17:1-7, 9-12, 14" />
-<SCRIPTURE Type="vespers" Reading="Prov_8:22-30" />
-<SCRIPTURE Type="vespers" Reading="Prov_10:31-32, 11:1-12" />
-<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="dow != 0" />
-<SCRIPTURE Type="apostol" Pericope="254" Reading="Col_2:8-12" Note="for the Circumcision"/>
-<SCRIPTURE Type="gospel" Pericope="6" Reading="Lk_2:20-21, 40-52" Note="for the Circumcision"/>
-<SCRIPTURE Type="apostol" Pericope="318" Reading="Heb_7:26-8:2" Cmd="dow != 0 &amp;&amp; dow != 6" Note="for the hierarch"/>
-<SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:17-23" Cmd="dow != 0 &amp;&amp; dow != 6" Note="for the hierarch"/>
-<LITURGY Type="2" Comment="Always St Basil's Liturgy on this day!"/>
-<SAINT Name="Обрезание Господне" Id="134" Type="6"/>
-<SAINT Name="Свт. Василия Великого, архиеп. Кесарии Каппадокийской (376)" Id="772426" Cid="010101" Type="1"/>
-<SAINT Name="Прмч. Иеремии (1918)" Id="4810" Type="0"/>
-<SAINT Name="Сщмчч. Платона, еп. Ревельского, и с ним Михаила и Николая пресвитеров (1919)" Id="4891" Type="0"/>
-<SAINT Name="Cщмчч. Александра, архиеп. Самарского, и с ним Иоанна, Александра, Иоанна, Александра, Трофима, Вячеслава, Василия и Иакова пресвитеров (1938)" Id="4732" Type="0"/>
-<SAINT Name="Мч. Василия Анкирского (ок. 362)" Id="" Type="0"/>
-<SAINT Name="Св. Емилии, матери свт. Василия Великого (IV)" Id="135" Type="0"/>
+<SAINT SId="772427" CId="772427" />
+<SAINT SId="772431,772432,772433,772434,772435,772436,772437,772438,772439" CId="010103" />
+<SAINT SId="772440" CId="772440" />
+<SAINT SId="772441" CId="772441" />
 </DAY>

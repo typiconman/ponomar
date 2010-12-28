@@ -1,0 +1,29 @@
+<DAY>
+<PRIMES Type="Normal" />
+<!-- last week -->
+<SCRIPTURE Type="apostol" Reading="II Pet_1:1-10" Pericope="64" Cmd="nday == -72" />
+<!-- forth to last week -->
+<SCRIPTURE Type="apostol" Reading="Heb_11:8, 11-16" Pericope="227" Cmd="nday == -93" />
+<!-- fifth to last week; this scenario could take place in the previous year (e.g. 2010) -->
+<SCRIPTURE Type="apostol" Reading="Heb_7:18-25" Pericope="217" Cmd="nday == -100 || nday > 0" />
+<!-- Adding the Lucan Jump Reading for the 31 Week Reading (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 2 &amp;&amp; doy &lt;= 8) &amp;&amp; GS == 1"/>
+<!-- Adding the Lucan Jump Reading for the 30 Week Reading (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="((doy &gt;= 360 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 1)) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 30 &amp;&amp; doy &lt;= 36 &amp;&amp; nday == -72) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 23 &amp;&amp; doy &lt;= 29 &amp;&amp; nday == -72) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 2 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 16 &amp;&amp; doy &lt;= 22 &amp;&amp; nday == -72) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 1 more week (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 9 &amp;&amp; doy &lt;= 15 &amp;&amp; nday == -72) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Pericope="41" Cmd="(doy &gt;= 9 &amp;&amp; doy &lt;= 15 &amp;&amp; nday == -93) &amp;&amp; GS == 1"/>
+<!-- Adding the Supplementary Readings: 5 more weeks (Y.S. 2008) -->
+<SCRIPTURE Type="gospel" Reading="Lk_21:37-22:8" Pericope="108" Cmd="(doy &gt;= 9 &amp;&amp; doy &lt;= 15 &amp;&amp; nday == -100) &amp;&amp; GS == 1"/>
+<!-- Readings for the Jordanville implementation -->
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(nday == -72) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Pericope="41" Cmd="(nday == -93) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Lk_21:37-22:8" Pericope="108" Cmd="(nday == -100 || nday > 0) &amp;&amp; GS == 0" /> 
+</DAY>

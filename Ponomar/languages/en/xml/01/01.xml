@@ -1,25 +1,6 @@
 <DAY>
-<SAINT Name="0" Cmd="dow == 0 || dow == 1" />
-<SAINT Name="6" Cmd="dow == 6" />
-<SCRIPTURE Type="vespers" Reading="Gen_17:1-7, 9-12, 14" />
-<SCRIPTURE Type="vespers" Reading="Prov_8:22-30" />
-<SCRIPTURE Type="vespers" Reading="Prov_10:31-32, 11:1-12" />
-<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="dow != 0" />
-<SCRIPTURE Type="apostol" Pericope="254" Reading="Col_2:8-12" Note="for the Circumcision"/>
-<SCRIPTURE Type="gospel" Pericope="6" Reading="Lk_2:20-21, 40-52" Note="for the Circumcision"/>
-<SCRIPTURE Type="apostol" Pericope="318" Reading="Heb_7:26-8:2" Cmd="dow != 0 &amp;&amp; dow != 6" Note="for the hierarch"/>
-<SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:17-23" Cmd="dow != 0 &amp;&amp; dow != 6" Note="for the hierarch"/>
-<LITURGY Type="2" Comment="Always St Basil's Liturgy on this day!"/>
-<SAINT Name="Circumcision of the Lord" Id="134" Type="6" />
-<SAINT Name="Saint Basil the Great, Archbishop of Caesarea in Cappadocia (+376)" Id="772426" Cid="010101" Type="1" />
-<SAINT Name="Venerable Martyr Jeremiah (+1918)" Id="4810" Type="0"/>
-<SAINT Name="New Hieromartyr Platon, Bishop of Revel and those with him: Priests Michael and Nicholas (+1919)" Id="4891" Type="0" />
-<SAINT Name="New Hieromartyr Alexander, Archbishop of Samara, and those with him (+1938)" Id="4732" Type="0" />
-<SAINT Name="Martyr Basil of Ancyra (+c.362)" Id="" Type="0" />
-<SAINT Name="Saint Emilia, the mother of Saint Basil the Great (4th C)" Id="135" Type="0"/>
-<SAINT Name="Saint Gregory, Bishop of Nazianzus (+374), father of St Gregory the Theologian" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Fulgentius, Bishop of Ruspe (+533)" Id="010109" Type="0" />
-<SAINT Name="Martyr Peter of Peloponessus (+1776)" Id="" Type="0" />
-<SAINT Name="Martyr Theodotus" Id="" Type="0" />
-<SAINT Name="Venerable Theodosius, Abbot of Triglia" Id="" Type="0" />
+<SAINT SId="772427" CId="772427" />
+<SAINT SId="772431,772432,772433,772434,772435,772436,772437,772438,772439" CId="010103" />
+<SAINT SId="772440" CId="772440" />
+<SAINT SId="772441" CId="772441" />
 </DAY>
