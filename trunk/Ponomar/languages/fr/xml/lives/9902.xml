@@ -1,0 +1,4 @@
+<SAINT>
+<NAME Nominative="Dimanche avant la Theophanie" Short="Dimanche avant la Theophanie" Cmd="dow == 0"/>
+<NAME Nominative="" Short="Dimanche avant la Theophanie" Cmd="dow != 0"/>
+</SAINT>

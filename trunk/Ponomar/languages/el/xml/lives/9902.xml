@@ -1,0 +1,4 @@
+<SAINT>
+<NAME Nominative="ΠΡΟ ΤΩΝ ΦΩΤΩΝ" Short="Κυριακῆς πρό τῶν Φώτων" Cmd="dow == 0"/>
+<NAME Nominative="" Short="Κυριακῆς πρό τῶν Φώτων" Cmd="dow != 0"/>
+</SAINT>
