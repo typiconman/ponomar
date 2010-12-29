@@ -1,18 +1,3 @@
 <DAY>
-<FAST Num="0" />
-<SAINT Name="0" Cmd="dow == 0" />
-<SAINT Name="6" Cmd="dow == 6" />
-<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318" Note="for the Hierarch"/>
-<SCRIPTURE Type="gospel" Reading="Jn_15:1-8" Pericope="50" Note="for the Hierarch"/>
-<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for St Seraphim"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Seraphim" />
-
-<SAINT Name="Предпразднство Богоявления" Id="9014" Type="0"/>
-<SAINT Name="Свт. Сильвестра, Папы Римского (335)" Id="137" Type="1"/>
-<SAINT Name="Прав. Иулиании Лазаревской, Муромской (1604)" Id="9015" Type="0"/>
-<SAINT Name="Преставление (1833), второе обретение (1991) мощей прп. Серафима, Саровского чудотворца." Id="1968" Type="4"/>
-<SAINT Name="Мч. Василия (1942)" Id="" Type="0"/>
-<SAINT Name="Сщмч. Феогена, еп Парийского (ок. 320)" Id="141" Type="0"/>
-<SAINT Name="Прп. Сильвестра Печерского (XII)" Id="1995" Type="0"/>
-
+<SAINT CId="772460" SId="772460"/>
 </DAY>

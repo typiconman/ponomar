@@ -1,0 +1,4 @@
+<SAINT>
+<NAME Nominative="主显节前主日" Short="主显节前主日" Cmd="dow == 0"/>
+<NAME Nominative="" Short="主显节前主日" Cmd="dow != 0"/>
+</SAINT>
