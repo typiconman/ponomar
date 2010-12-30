@@ -4,18 +4,18 @@
 <SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
 <SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
 
-<SAINT Name="聖女克塞尼亞及她的兩位使女（羅馬人，5世紀）" Id="294" Type="1" />
-<SAINT Name="殉道者瓦維拉和他的兩位弟子：提摩泰及阿伽彼（西西里島，3世紀）" Id="297" Type="0" />
+<SAINT Name="聖女克塞尼亞及她的兩位使女（羅馬人，五世紀）" Id="294" Type="1" />
+<SAINT Name="殉道者瓦維拉和他的兩位弟子：提摩泰及阿伽彼（西西里島，三世紀）" Id="297" Type="0" />
 <SAINT Name="聖瑪其多尼（敘利亞之隱士，420年）" Id="298" Type="0" />
 <SAINT Name="聖斐利基安（意大利佛利格諾城主教，254年）" Id="" Type="0" />
-<SAINT Name="聖斐洛（塞浦路斯的卡爾帕西亞城主教，5世紀）" Id="" Type="0" />
+<SAINT Name="聖斐洛（塞浦路斯的卡爾帕西亞城主教，五世紀）" Id="" Type="0" />
 <SAINT Name="敬遷修士殉道者波斯人聖阿納斯塔西（628年）之聖髑紀念日（632年）" Id="165" Type="0" />
-<SAINT Name="殉道者帕弗羅、帕弗西里、德奧多提安（埃及，3世紀）" Id="" Type="0" />
+<SAINT Name="殉道者帕弗羅、帕弗西里、德奧多提安（埃及，三世紀）" Id="" Type="0" />
 <SAINT Name="殉道者瓦爾西邁及與他一同就義的他的兩位兄弟（敘利亞）" Id="" Type="0" />
-<SAINT Name="聖佐息瑪（埃及的巴比倫城主教，6世紀）" Id="" Type="0" />
+<SAINT Name="聖佐息瑪（埃及的巴比倫城主教，六世紀）" Id="" Type="0" />
 <SAINT Name="聖革拉息默（彼爾姆城主教，1441年）" Id="502" Type="0" />
 <SAINT Name="殉道者約安（喀山，1529年）" Id="979" Type="0" />
-<SAINT Name="聖女克塞尼亞（彼得堡的成德者，聖愚，19世紀）" Id="2568" Type="1" Cmd="nday != -57"/>
+<SAINT Name="聖女克塞尼亞（彼得堡的成德者，聖愚，十九世紀）" Id="2568" Type="1" Cmd="nday != -57"/>
 <SAINT Name="聖盧彼基諾（高盧的利比迪亞科地方，500年）" Id="" Type="0" />
 <SAINT Name="聖奈奧非特（塞浦路斯之閉關者，1214年）" Id="" Type="0" />
 <SAINT Name="殉道者聖卡多克" Id="" Type="0" />
