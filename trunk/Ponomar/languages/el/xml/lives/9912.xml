@@ -1,0 +1,4 @@
+<SAINT>
+<NAME Nominative="Σαββάτον πρό τῆς Ὑψώσεως" Short="Σαββάτου πρό τῆς Ὑψώσεως" Cmd="dow == 6"/>
+<NAME Nominative="" Short="Σαββάτου πρό τῆς Ὑψώσεως" Cmd="dow != 6"/>
+</SAINT>
