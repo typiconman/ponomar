@@ -56,6 +56,7 @@ public class Day implements DocHandler {
     private int Tone = -1;
     private String[] MainNames=Text.obtainValues((String)Text.Phrases.get("Main"));
     private String[] toneNumbers= Text.obtainValues((String)Text.Phrases.get("Tones"));
+    private String forComm=(String)Text.Phrases.get("Commemoration2");
 
     protected Day(String FileName) {
         Information = new OrderedHashtable();
@@ -88,7 +89,7 @@ public class Day implements DocHandler {
         try {
             //BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName+".xml")), "UTF8"));
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(), FileName + ".xml")), "UTF8"));
-            System.out.println("===============\n"+helper.langFileFind(StringOp.dayInfo.get("LS").toString(), FileName + ".xml"));
+            //System.out.println("===============\n"+helper.langFileFind(StringOp.dayInfo.get("LS").toString(), FileName + ".xml"));
             QDParser.parse(this, frf);
         } catch (Exception e) {
             e.printStackTrace();
@@ -122,7 +123,7 @@ public class Day implements DocHandler {
         //      return;
         //}
         if (elem.equals("SAINT") && read) {
-            System.out.println(table);
+            //System.out.println(table);
              String Sid="1";
             if (table.get("SId")!=null){
                 Sid = table.get("SId").toString();
@@ -158,6 +159,10 @@ public class Day implements DocHandler {
         return dayRank;
     }
     public int getTone(){
+        if(Tone==0)
+				{
+					Tone=8;
+				}
         return Tone;
     }
 
@@ -174,10 +179,10 @@ public class Day implements DocHandler {
             String Sid = CCom.getSId();
             String Cid = CCom.getCId();
             String NameF = CCom.getName();
-            System.out.println(NameF);
-
-
-            output += "<A Href='goDoSaint?id=" + Sid + "," + Cid + "'>";
+            //System.out.println(NameF);
+            if (CCom.checkLife()){
+                output += "<A Href='goDoSaint?id=" + Sid + "," + Cid + "'>";
+            }
             int Rank = CCom.getRank();
             switch (Rank) {
                 case 8:
@@ -207,9 +212,13 @@ public class Day implements DocHandler {
                     output += NameF;
                 //Note: \u00A0 is a nonbreaking space.
                 }
-
+             if (CCom.checkLife()){
             output += "</A>";
+             }
             if (Tone != -1){
+                int Cidn=Integer.parseInt(Cid);
+                //System.out.println(Cidn);
+                if (Cidn>=9000 && Cidn<9400){
                 if(Tone==0)
 				{
 					Tone=8;
@@ -222,6 +231,7 @@ public class Day implements DocHandler {
                                 ToneFormat=CSep+ToneFormat.replace("TT",toneNumbers[Tone]);
                                 output+=ToneFormat;
                 
+            }
             }
         }
         return output;
@@ -242,7 +252,7 @@ public class Day implements DocHandler {
 
             int counterI=0;
             
-            System.out.println(fileNew.getAbsolutePath());
+            //System.out.println(fileNew.getAbsolutePath());
             while (fileNew.exists()){
             
                 IconImages.add(fileNew.toString());
@@ -300,9 +310,19 @@ public class Day implements DocHandler {
                     RInformation[i]=new OrderedHashtable();
 
                     //System.out.println(CurrentC.getGrammar("Short")+" "+CurrentC.getReadings());
+                    //forComm=forComm.replace("^CC", CurrentC.getGrammar("Short"));
+                    //Temporary grammar processor
+                    int getN=forComm.indexOf("%getN");
+                    int forwardbracket=forComm.indexOf("(",getN);
+                    int backbracket=forComm.indexOf(")");
+                    String info=forComm.substring(forwardbracket+1,backbracket);
+                    String[] splits=info.split(",");
+                    String forCommF=forComm.substring(0,getN)+CurrentC.getGrammar(splits[1])+forComm.substring(backbracket+1);
+                   
+
 
                     RInformation[i].put("Rank",Ranked);
-                    RInformation[i].put("Name"," (For "+ CurrentC.getGrammar("Short")+")");
+                    RInformation[i].put("Name",forCommF);
                     RInformation[i].put("Readings",CurrentC.getReadings());
                 //dayRank = Math.max(CurrentC.getRank(), dayRank);
             }

@@ -716,7 +716,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 		}
 
 		filename += lineNumber >= 10 ? lineNumber : "0" + lineNumber ; // CLEANED UP
-                System.out.println("++++++++++++++++++++++\n"+filename+"\n+++++++++++++++++++\n");
+                //System.out.println("++++++++++++++++++++++\n"+filename+"\n+++++++++++++++++++\n");
 		Day PaschalCycle=new Day(filename);
                 
                 // READ THE PENTECOSTARION / TRIODION INFORMATION
@@ -770,10 +770,8 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 		String collection="";
 		output += "<BR><BR>";
                 OrderedHashtable[] PaschalReadings=PaschalCycle.getReadings();
-                System.out.println("Length of Ordinary Readings="+PaschalReadings.length);
-                if (PaschalReadings.length>0){
-                    System.out.println("The readings are "+ PaschalReadings[0]);
-                }
+                //System.out.println("Length of Ordinary Readings="+PaschalReadings.length);
+                
                 OrderedHashtable[] MenaionReadings=SolarCycle.getReadings();
                 Bible ShortForm=new Bible();
                 
