@@ -99,5 +99,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="LivesW" Value="Vive/,Le tropaire/, Podoben : /,Le kondakion/,Tone : TT/, ; /,Il manque l'infomration sur cette commemoration." Comment="A space (if required) should be placed before and after the 2nd entry."/>
 <PHRASE Key="IconW" Value="Icon précédent/,Icon suivant/,Aucun Icon n'avait pas trouvé."/>
 <PHRASE Key="Colon" Value=" : " Note="This is how a colon is to appear in the given texts."/>
+<PHRASE Key="Commemoration2" Value=" (pour %getN(^CC,Short))" Comments="%getN is a generalised grammar engine that will return the appropriate grammatical form. The format is Noun (in this case to be specified so ^CC) and the desired case (as defined in the commemoration files)"/>
+<PHRASE Key="Commemoration3" Value="Il manque le nom de cette commémoration." Comments="Failure to find any name for a given commemoration!"/>
 
 </LANGUAGEPACKS>

@@ -52,18 +52,20 @@ public class Commemoration1 implements DocHandler {
     private boolean readService = false;
     private LanguagePack Text = new LanguagePack();
     private String[] CommNames = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
+    private String errorName=(String)Text.Phrases.get("Commemoration3");
     private Helpers helper;
     private boolean combine = false;
+    private boolean skipElement = false;
 
     protected Commemoration1(String SId, String CId) {
         Information = new OrderedHashtable();
         readings = new OrderedHashtable();
         RoyalHours = new OrderedHashtable();
-        grammar= new OrderedHashtable();
+        grammar = new OrderedHashtable();
         Information.put("SID", SId);
         Information.put("CID", CId);
         helper = new Helpers();
-        ServiceInfo=new OrderedHashtable();
+        ServiceInfo = new OrderedHashtable();
         readCommemoration(SId, CId);
 
     }
@@ -78,7 +80,7 @@ public class Commemoration1 implements DocHandler {
     {
 
         try {
-            combine = false;
+            combine = true;
             String language = StringOp.dayInfo.get("LS").toString();
             String[] pathS = language.split("/");
             int path = pathS.length;
@@ -88,20 +90,13 @@ public class Commemoration1 implements DocHandler {
                 if (i == -1) {
                     pathF = "";
                 } else {
-                    pathF += "/"+pathS[i];
+                    pathF += "/" + pathS[i];
                 }
-                System.out.println("pathF="+pathF);
-                
+                //System.out.println("pathF=" + pathF);
 
-                String FileName = "Ponomar/languages/" + pathF + "/xml/lives/"  + CId + ".xml";
-                File f = new File(FileName);
 
-                System.out.println("---------------------\n"+FileName);
-                System.out.println(Information);
-                System.out.println(f.exists());
-                System.out.println(StringOp.dayInfo.get("doy"));
-                System.out.println("Liturgy Service Information is given as "+getServiceNode("/LITURGY"));
-                System.out.println("\n---------------------\n");
+                String FileName = "Ponomar/languages/" + pathF + "/xml/lives/" + CId + ".xml";
+                File f = new File(FileName);             
 
                 if (f.exists()) {
 
@@ -131,21 +126,13 @@ public class Commemoration1 implements DocHandler {
         // THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
         // TODAY'S INFORMATION IN dayInfo.
         // IT WOULD BE VERY RARE IN THIS CASE
+        skipElement = false;
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-
             if (StringOp.evalbool(table.get("Cmd").toString()) == false) {
 
-                if (readService && read) {
-            Location1 += "/" + elem;
-            //elemRH=elem;
-            value = new OrderedHashtable();
-            for (Enumeration e = table.keys(); e.hasMoreElements();) {
-                String type = (String) e.nextElement();
-                value.put(type, table.get(type));
-            }
-            
-        }
+
+                skipElement = true;
 
 
                 return;
@@ -159,16 +146,14 @@ public class Commemoration1 implements DocHandler {
         //}
         if (elem.equals("SERVICE") && read) {
             readService = true;
-            if (ServiceInfo == null)
-            {
+            if (ServiceInfo == null) {
                 ServiceInfo = new OrderedHashtable();
             }
-            
+
             Location1 = new String();
-            
-            if (table.get("Type") != null)
-            {
-            Information.put("Rank", Integer.parseInt(table.get("Type").toString()));
+
+            if (table.get("Type") != null) {
+                Information.put("Rank", Integer.parseInt(table.get("Type").toString()));
             }
             return;
         }
@@ -210,8 +195,7 @@ public class Commemoration1 implements DocHandler {
         }
         if (elem.equals("GRAMMAR") && read) {
             //THIS SHOULD ONLY BE READ ONCE PER LANGUAGE AND PASS!
-            if (grammar==null)
-            {
+            if (grammar == null) {
                 grammar = new OrderedHashtable();
             }
             for (Enumeration e = table.keys(); e.hasMoreElements();) {
@@ -221,9 +205,9 @@ public class Commemoration1 implements DocHandler {
             Information.put("Grammar", grammar);
         }
         //if (elem.equals("SERVICE") && read) {
-            
-            //Information.put("Cycle",table.get("Cycle").toString());
-       // }
+
+        //Information.put("Cycle",table.get("Cycle").toString());
+        // }
         if (elem.equals("ICON") && read) {
             Information.put("Icon", table.get("Id").toString());
         }
@@ -239,11 +223,12 @@ public class Commemoration1 implements DocHandler {
         }
         if (elem.equals("NAME") && read) {
             //grammar=new OrderedHashtable();
-            for (Enumeration e = table.keys();e.hasMoreElements();){
-                String type = (String)e.nextElement();
-                grammar.put(type,table.get(type));
+            //System.out.println("Hello World: This is Name testing!");
+            for (Enumeration e = table.keys(); e.hasMoreElements();) {
+                String type = (String) e.nextElement();
+                grammar.put(type, table.get(type));
             }
-            Information.put("grammar",grammar);
+            Information.put("grammar", grammar);
             //Information.put("Nominative", table.get("Nominative").toString());
             //Information.put("Short", table.get("Short").toString());
             //Information.put("ShortFor", table.get("ShortF").toString());
@@ -255,6 +240,10 @@ public class Commemoration1 implements DocHandler {
     }
 
     public void endElement(String elem) {
+        if (skipElement) {
+            skipElement = false;
+            return;
+        }
         if (elem.equals("LANGUAGE")) {
             read = false;
         }
@@ -274,7 +263,7 @@ public class Commemoration1 implements DocHandler {
             //System.out.println(textR);
             //System.out.println(Location1);
             //System.out.println(value.get("Type"));
-            
+
             /*if(elem.equals("VERSE")){
             System.out.println(textR);
             }*/
@@ -304,12 +293,12 @@ public class Commemoration1 implements DocHandler {
                     //There are no other instances of this info
                     if (elemRH == null || value == null) {
                         //System.out.println("A null set of values was encountered. Why? At point elemRH = "+elemRH+" and value = "+value+" and location = "+Location1);
-                        if (Location1.lastIndexOf("/") == -1){
-                            Location1="";
+                        if (Location1.lastIndexOf("/") == -1) {
+                            Location1 = "";
                             return;
 
                         }
-                        System.out.println("****\n"+Location1+"\n****\n");
+                        //System.out.println("****\n" + Location1 + "\n****\n");
                         Location1 = Location1.substring(0, Location1.lastIndexOf("/"));
                         return;
                     }
@@ -348,19 +337,14 @@ public class Commemoration1 implements DocHandler {
             try {
                 return grammar.get(value).toString();
             } catch (Exception e) {
-                if (grammar != null){
-                if (grammar.get("Nominative") != null )
-                {
-                    return grammar.get("Nominative").toString();
-                }
-                else
-                {
-                    return "N/A";
-                }
-                }
-                else
-                {
-                    return "Error finding desired information!";
+                if (grammar != null) {
+                    if (grammar.get("Nominative") != null) {
+                        return grammar.get("Nominative").toString();
+                    } else {
+                        return errorName;
+                    }
+                } else {
+                    return errorName;
                 }
             }
         } else {
@@ -369,32 +353,36 @@ public class Commemoration1 implements DocHandler {
     }
 
     public int getRank() {
-        if (!Information.containsKey("Rank")){
+        if (!Information.containsKey("Rank")) {
             return 0;
         }
         //System.out.println(Information.get("Rank").toString());
         int Rank = Integer.parseInt(Information.get("Rank").toString());
         return Rank;
     }
+
     public String getSId() {
-        if (!Information.containsKey("SID")){
+        if (!Information.containsKey("SID")) {
             return "";
         }
         return Information.get("SID").toString();
     }
+
     public String getCId() {
-        if (!Information.containsKey("CID")){
+        if (!Information.containsKey("CID")) {
             return "";
         }
         return Information.get("CID").toString();
     }
-public String getName() {
-    return getGrammar("Nominative");
-    /*if (!Information.containsKey("Nominative")){
-            return "";
+
+    public String getName() {
+        return getGrammar("Nominative");
+        /*if (!Information.containsKey("Nominative")){
+        return "";
         }
         return Information.get("Nominative").toString();*/
     }
+
     public String getIcon() {
         return Information.get("Icon").toString();
     }
@@ -406,56 +394,58 @@ public String getName() {
     public String getCycle() {
         return Information.get("Cycle").toString();
     }
-    public OrderedHashtable getReadings(){
+
+    public OrderedHashtable getReadings() {
         //return (OrderedHashtable) Information.get("Scripture");
         //This is a list of all possible cases:
         //1stHour,3rdHour,6thHour,9thHour,apostol,gospel,VESPERS,MATINS
-        readings=new OrderedHashtable();
-        OrderedHashtable readingsT=getServiceNode("/VESPERS/SCRIPTURE");
-        if (readingsT != null){
-            readings.put("VESPERS",readingsT);
+        readings = new OrderedHashtable();
+        OrderedHashtable readingsT = getServiceNode("/VESPERS/SCRIPTURE");
+        if (readingsT != null) {
+            readings.put("VESPERS", readingsT);
         }
-        readingsT=getServiceNode("/1stHour/SCRIPTURE");
-        if (readingsT != null){
-            readings.put("1stHour",readingsT);
+        readingsT = getServiceNode("/1stHour/SCRIPTURE");
+        if (readingsT != null) {
+            readings.put("1stHour", readingsT);
         }
-        readingsT=getServiceNode("/3rdHour/SCRIPTURE");
-        if (readingsT != null){
-            readings.put("3rdHour",readingsT);
+        readingsT = getServiceNode("/3rdHour/SCRIPTURE");
+        if (readingsT != null) {
+            readings.put("3rdHour", readingsT);
         }
-        readingsT=getServiceNode("/6thHour/SCRIPTURE");
-        if (readingsT != null){
-            readings.put("6thHour",readingsT);
+        readingsT = getServiceNode("/6thHour/SCRIPTURE");
+        if (readingsT != null) {
+            readings.put("6thHour", readingsT);
         }
-        readingsT=getServiceNode("/9thHour/SCRIPTURE");
-        if (readingsT != null){
-            readings.put("9thHour",readingsT);
+        readingsT = getServiceNode("/9thHour/SCRIPTURE");
+        if (readingsT != null) {
+            readings.put("9thHour", readingsT);
         }
-        readingsT=getServiceNode("/MATINS/SCRIPTURE");
-        if (readingsT != null){
-            readings.put("MATINS",readingsT);
+        readingsT = getServiceNode("/MATINS/SCRIPTURE");
+        if (readingsT != null) {
+            readings.put("MATINS", readingsT);
         }
-        readingsT=getServiceNode("/LITURGY/SCRIPTURE");
-        if (readingsT != null){
-            readings.put("LITURGY",readingsT);
+        readingsT = getServiceNode("/LITURGY/SCRIPTURE");
+        if (readingsT != null) {
+            readings.put("LITURGY", readingsT);
         }
 
-        
+
         return readings;
     }
-    public OrderedHashtable getServiceNode(String Node){
-        if (ServiceInfo != null){
-        if (ServiceInfo.containsKey(Node)) {
-            OrderedHashtable stuff = (OrderedHashtable) ServiceInfo.get(Node);
+
+    public OrderedHashtable getServiceNode(String Node) {
+        if (ServiceInfo != null) {
+            if (ServiceInfo.containsKey(Node)) {
+                OrderedHashtable stuff = (OrderedHashtable) ServiceInfo.get(Node);
 
 
                 return stuff;
 
+            }
         }
-        }
-            //System.out.println(CommNames[2] + Node);
-            return null;
-        
+        //System.out.println(CommNames[2] + Node);
+        return null;
+
     }
 
     public OrderedHashtable getService(String Node, String Type) {
@@ -501,6 +491,15 @@ public String getName() {
 
 
     }
+    public boolean checkLife(){
+        //Checks whether the given commemoration has an associated life or not
+        
+        if (Information.get("LIFE")!= null){
+            return true;
+        }
+        return false;
+    }
+
 
     public static void main(String[] argz) {
         StringOp.dayInfo = new OrderedHashtable();
@@ -520,9 +519,9 @@ public String getName() {
         System.out.println(Paramony.Information.get("LIFE"));
         System.out.println(Paramony.getGrammar("Nominative"));
         System.out.println(Paramony.getRank());
-        System.out.println(Paramony.getService("/LITURGY/TROPARION","1"));
-        System.out.println(Paramony.getService("/LITURGY/KONTAKION","1"));
-        System.out.println(Paramony.getService("/VESPERS/SCRIPTURE","3"));
+        System.out.println(Paramony.getService("/LITURGY/TROPARION", "1"));
+        System.out.println(Paramony.getService("/LITURGY/KONTAKION", "1"));
+        System.out.println(Paramony.getService("/VESPERS/SCRIPTURE", "3"));
         System.out.println(Paramony.readings.get("Vespers"));
     }
 }
