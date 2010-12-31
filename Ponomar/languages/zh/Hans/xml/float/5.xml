@@ -1,8 +1,0 @@
-﻿<DAY>
-<SCRIPTURE Type="apostol" Reading="Gal_1:11-19" Pericope="200" Note="主降生节后主日"/>
-<SCRIPTURE Type="gospel" Reading="Mt_2:13-23" Pericope="4" Note="主降生节后主日"/>
-
-<SAINT Name="主降生节后主日：纪念义人圣约熙福——吾主之鞠父；圣王达维德——吾主之先祖；及圣雅科弗——吾主之圣昆" Id="9010" Type="1" Cmd="dow == 0" />
-<SAINT Name="纪念义人圣约熙福——吾主之鞠父；圣王达维德——吾主之先祖；及圣雅科弗——吾主之圣昆" Id="9010" Type="1" Cmd="dow != 0" />
-
-</DAY>

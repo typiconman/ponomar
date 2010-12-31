@@ -1,0 +1,4 @@
+<SAINT>
+<NAME Nominative="举扬圣架节前安息日" Short="举扬圣架节前安息日" Cmd="dow == 6"/>
+<NAME Nominative="" Short="举扬圣架节前安息日" Cmd="dow != 6"/>
+</SAINT>
