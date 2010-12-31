@@ -1,5 +1,7 @@
 <SAINT>
 <PRIMES Type="Normal" />
+<SERVICE Type="0">
+<LITURGY>
 <!-- if it is the last week, we read the readings for the 33rd week -->
 <SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" Pericope="293" Cmd="nday == -71" />
 <!-- if it is the fourth to last, we read the readings for the 30th week -->
@@ -27,4 +29,6 @@
 <SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88"  Cmd="(nday == -71) &amp;&amp; GS == 0" /> 
 <SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" Cmd="(nday == -92) &amp;&amp; GS == 0" /> 
 <SCRIPTURE Type="gospel" Reading="Lk_13:18-29" Pericope="72" Cmd="(nday == -99 || nday > 0) &amp;&amp; GS == 0" /> 
+</LITURGY>
+</SERVICE>
 </SAINT>

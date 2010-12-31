@@ -2,9 +2,9 @@
 <!-- For the Circumcision of the Lord -->
 <SERVICE Type="8">
 <VESPERS>
-<SCRIPTURE Type="vespers" Reading="Gen_17:1-7, 9-12, 14" />
-<SCRIPTURE Type="vespers" Reading="Prov_8:22-30" />
-<SCRIPTURE Type="vespers" Reading="Prov_10:31-32, 11:1-12" />
+<SCRIPTURE Type="1" Reading="Gen_17:1-7, 9-12, 14" />
+<SCRIPTURE Type="2" Reading="Prov_8:22-30" />
+<SCRIPTURE Type="3" Reading="Prov_10:31-32, 11:1-12" />
 </VESPERS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Pericope="254" Reading="Col_2:8-12"/>

@@ -202,7 +202,14 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
             iconImage.removeAll();
             String IconLocation=pathImage+"icons/";
             //System.out.println(IconLocation+Images[Number]+".jpg");
-            JLabel label= new JLabel(new ImageIcon(IconLocation+Images[Number]+".jpg"));
+             JLabel label =new JLabel();
+            if (Images[Number].contains(".jpg")){
+               label= new JLabel(new ImageIcon(Images[Number]));
+            }
+            else
+            {
+                label= new JLabel(new ImageIcon(IconLocation+Images[Number]+".jpg"));
+            }
             label.setHorizontalAlignment(JLabel.CENTER);
             iconImage.add(label);
            text.setText("<body style=\"font-family:"+Face+";font-size:"+Size+"pt\">"+ Names[Number]+"</body>");
@@ -283,6 +290,57 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 		//return date.getYear();
 	}
 */
+        public void updateImagesFiled(String[] ImagesF, String[] NamesF){
+            //This changes the images available in the system
+            //System.out.println(Names[0]);
+            Number=0;
+            Images=ImagesF;
+            Names=NamesF;
+            System.out.println(Images.length);
+            //text=new JTextPane();
+            //System.out.println(Names[0]);
+            //System.out.println(NamesF[0]);
+            if (Images.length<=0)
+		{
+			//date = new JDate();
+                    //System.out.println(Images.length);
+                    Images=new String[1];
+                    Images[0]=pathImage+"icons/"+"Default1.jpg";
+                    Names=new String[1];
+                    Names[0]=captions[2];
+                    //return;
+
+		}
+            if (Images.length<2){
+            previous.setEnabled(false);
+            next.setEnabled(false);
+             }else
+             {
+
+            previous.setEnabled(true);
+            next.setEnabled(true);
+
+             }
+
+            updateImages2();
+
+        }
+        private void updateImages2(){
+            //iconImage=new JPanel();
+            iconImage.removeAll();
+            String IconLocation=pathImage+"icons/";
+            //System.out.println(IconLocation+Images[Number]+".jpg");
+            JLabel label= new JLabel(new ImageIcon(Images[Number]));
+            label.setHorizontalAlignment(JLabel.CENTER);
+            iconImage.add(label);
+           text.setText("<body style=\"font-family:"+Face+";font-size:"+Size+"pt\">"+ Names[Number]+"</body>");
+           //frame.pack();
+           //System.out.Println(getAncestorOfClass(new JFrame(),iconImage));
+           //repaint();
+           
+
+
+        }
 	public static void main(String[] argz)
 	{
 		// for testing purposes only
