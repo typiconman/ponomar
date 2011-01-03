@@ -878,9 +878,22 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                             gospel.add(stepG.get("Reading").toString());
 
                         }
+                        OrderedHashtable readingsA=new OrderedHashtable();
+                        readingsA.put("Readings",epistle);
+                        readingsA.put("Rank",Rank);
+                        readingsA.put("Tag",Tag);
+                        DivineLiturgy1 trial1=new DivineLiturgy1();
                         String type1 =(String) Phrases.Phrases.get("apostol");
                         output+="<B>"+type1+"</B>"+Colon;
-                        for (int j=0; j<Readings.size();j++){
+                        output+=trial1.Readings(readingsA,"apostol",today);
+                        readingsA.put("Readings",gospel);
+                        output+=RSep;
+                        type1 =(String) Phrases.Phrases.get("gospel");
+                        output+="<B>"+type1+"</B>"+Colon;
+                        output+=trial1.Readings(readingsA,"gospel",today);
+
+                        
+                        /*for (int j=0; j<Readings.size();j++){
                             if (j!=0){
                             output+=RSep;
                         }
@@ -891,11 +904,10 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                         if (Readings.size()>1){
                             output+= Tag.get(j).toString();
                         }
-                        }
-                        output+=RSep;
-                        type1 =(String) Phrases.Phrases.get("gospel");
-                        output+="<B>"+type1+"</B>"+Colon;
-                        for (int j=0; j<Readings.size();j++){
+                        }*/
+                        
+                        
+                        /*for (int j=0; j<Readings.size();j++){
                             if (j!=0){
                             output+=RSep;
                         }
@@ -905,7 +917,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                         if (Readings.size()>1){
                             output+= Tag.get(j).toString();
                         }
-                        }
+                        }*/
                         continue;
 
                     }
