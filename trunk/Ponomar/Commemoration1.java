@@ -214,12 +214,16 @@ public class Commemoration1 implements DocHandler {
         if (elem.equals("TROPARION") && read) {
             variable = new OrderedHashtable();
             variable.put("Tone", table.get("Tone").toString());
+            if (table.get("Author") != null){
             variable.put("Author", table.get("Author").toString());
+            }
         }
         if (elem.equals("KONTAKION") && read) {
             variable = new OrderedHashtable();
             variable.put("Tone", table.get("Tone").toString());
+            if (table.get("Author") != null){
             variable.put("Author", table.get("Author").toString());
+            }
         }
         if (elem.equals("NAME") && read) {
             //grammar=new OrderedHashtable();
@@ -353,11 +357,22 @@ public class Commemoration1 implements DocHandler {
     }
 
     public int getRank() {
+
         if (!Information.containsKey("Rank")) {
+            int Cidn=Integer.parseInt(Information.get("CID").toString());
+            if (Cidn>=9000 && Cidn<9900){
+                Information.put("Rank","-2");
+                return -2;
+            }
             return 0;
         }
         //System.out.println(Information.get("Rank").toString());
         int Rank = Integer.parseInt(Information.get("Rank").toString());
+        int Cidn=Integer.parseInt(Information.get("CID").toString());
+            if (Cidn>=9000 && Cidn<9900){
+                Information.put("Rank","-2");
+                return -2;
+            }
         return Rank;
     }
 

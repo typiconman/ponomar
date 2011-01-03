@@ -52,7 +52,7 @@ public class Day implements DocHandler {
     private Helpers helper;
     private int counter = 0;
     private Vector OrderedCommemorations;
-    private int dayRank = -1;
+    private int dayRank = -100;
     private int Tone = -1;
     private String[] MainNames=Text.obtainValues((String)Text.Phrases.get("Main"));
     private String[] toneNumbers= Text.obtainValues((String)Text.Phrases.get("Tones"));
@@ -67,7 +67,7 @@ public class Day implements DocHandler {
 
         counter = 0;
         OrderedCommemorations = new Vector();
-        dayRank = -1;
+        dayRank = -100;
         readDay(FileName);
 
 
@@ -76,7 +76,7 @@ public class Day implements DocHandler {
     protected Day() {
         counter = 0;
         OrderedCommemorations = new Vector();
-        dayRank = -1;
+        dayRank = -100;
 
         Information = new OrderedHashtable();
         readings = new OrderedHashtable();
@@ -128,6 +128,7 @@ public class Day implements DocHandler {
             if (table.get("SId")!=null){
                 Sid = table.get("SId").toString();
             }
+             
 
             String Cid = table.get("CId").toString();
             if (table.get("Tone")!=null){
@@ -148,7 +149,7 @@ public class Day implements DocHandler {
     }
 
     public int getDayRank() {
-        if (dayRank == -1) {
+        if (dayRank == -100) {
 
 
             for (int i = 0; i < OrderedCommemorations.size(); i++) {
@@ -218,7 +219,7 @@ public class Day implements DocHandler {
             if (Tone != -1){
                 int Cidn=Integer.parseInt(Cid);
                 //System.out.println(Cidn);
-                if (Cidn>=9000 && Cidn<9400){
+                if (Cidn>=9000 && Cidn<9900){
                 if(Tone==0)
 				{
 					Tone=8;
@@ -307,6 +308,7 @@ public class Day implements DocHandler {
                     //ReadingsA[i]=CurrentC.getReadings();
                     count.add(i);
                     int Ranked=(int) CurrentC.getRank();
+                    //System.out.println("For "+CurrentC.getCId().toString()+" rank is "+Ranked);
                     RInformation[i]=new OrderedHashtable();
 
                     //System.out.println(CurrentC.getGrammar("Short")+" "+CurrentC.getReadings());
