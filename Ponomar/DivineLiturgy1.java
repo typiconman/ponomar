@@ -178,7 +178,7 @@ public class DivineLiturgy1 implements DocHandler {
 
                 getReadings(today, ReadingType);
                 tomorrowRead = getReadings(today, ReadingType);
-                tomorrows = new classifyReadings(tomorrowRead);
+                tomorrows = new classifyReadings(tomorrowRead);                
 
 
                 today.subtractDays(1);
@@ -237,7 +237,7 @@ public class DivineLiturgy1 implements DocHandler {
 
         Vector dailyVf = new Vector();
         Vector dailyRf = new Vector();
-        Vector dailyTf = new Vector();
+        Vector dailyTf = new Vector();        
         for (int i=0;i<yesterdays.suppressedV.size();i++){
             dailyVf.add(yesterdays.suppressedV.get(i));
             dailyRf.add(yesterdays.suppressedR.get(i));
@@ -255,7 +255,7 @@ public class DivineLiturgy1 implements DocHandler {
             dailyRf.add(tomorrows.suppressedR.get(i));
             dailyTf.add((dow + 1) % 7);
 
-        }
+        }        
         
 
         
@@ -292,10 +292,10 @@ public class DivineLiturgy1 implements DocHandler {
             dailyTf.add(menaionT.get(i));
 
         }
-         /*   System.out.println("---Testing Main Programme-----");
+         //System.out.println("---Testing Main Programme-----");
 
-        System.out.println(menaionV);
-        System.out.println(dailyV);*/
+        //System.out.println(menaionV);
+        //System.out.println(dailyVf);
         
         return format(dailyVf, dailyRf, dailyTf);
     }
@@ -441,9 +441,9 @@ public class DivineLiturgy1 implements DocHandler {
 
         //output += RSep;
         OrderedHashtable Final2 = new OrderedHashtable();
-        Final2.put("Reading", type);
+        Final2.put("Readings", type);
         Final2.put("Rank", Rank);
-        Final2.put("Tag", Tag);
+        Final2.put("Tag", Tag);        
 
 
 
@@ -513,17 +513,24 @@ public class DivineLiturgy1 implements DocHandler {
                 output += ShortForm.getHyperlink(reading);
 
                 if ((Integer) vectR.get(k) == -2 ) {
-                    int tag = Integer.parseInt((String) vectT.get(k));
-                    output += " (" + Week((String) vectT.get(k)) + ")";
+                    if (vectV.size()>1){
+                    int tag = (Integer) vectT.get(k);
+                    output += " (" + Week(vectT.get(k).toString()) + ")";
+                    }
                 } else {
                     output += vectT.get(k);
                 }
 
                 if (k < vectV.size() - 1) {
-                    output += StringOp.dayInfo.get("ReadSep") + " ";		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
+                    output += StringOp.dayInfo.get("ReadSep");		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
                 }
             }
         } catch (Exception a) {
+            
+            System.out.println(a.toString());
+            StackTraceElement[] trial=a.getStackTrace();
+            System.out.println(trial[0].toString());
+
         }
         return output;
     }
@@ -603,8 +610,7 @@ public class DivineLiturgy1 implements DocHandler {
             
             //System.out.println(readingsIn);
             Suppress();
-            //LeapReadings();
-            
+            //LeapReadings();            
 
 
         }
@@ -741,7 +747,7 @@ public class DivineLiturgy1 implements DocHandler {
         }
 
         protected void LeapReadings() {
-            //SKIPS THE READINGS IF THERE ARE ANY BREAKS!
+            //SKIPS THE READINGS IF THERE ARE ANY BREAKS!           
             int doy = Integer.parseInt(StringOp.dayInfo.get("doy").toString());
             int dow = Integer.parseInt(StringOp.dayInfo.get("dow").toString());
             int nday = Integer.parseInt(StringOp.dayInfo.get("nday").toString());
