@@ -372,8 +372,8 @@ public class Day implements DocHandler {
 
     public static void main(String[] argz) {
         StringOp.dayInfo = new OrderedHashtable();
-        StringOp.dayInfo.put("LS", "en/");
-        StringOp.dayInfo.put("dow", "1");
+        StringOp.dayInfo.put("LS", "cu/ru/");
+        StringOp.dayInfo.put("dow", "5");
         //Commemoration Paramony = new Commemoration("P_3174");    //Paramony of Christmas
         System.out.println("THIS IS RUNNING ON DEBUG MODE, USING THE FILE FOR the Paramony of Christmas");
         //OrderedHashtable stuff=Paramony.getRH("Idiomel","11");
@@ -381,12 +381,13 @@ public class Day implements DocHandler {
         //System.out.println(Paramony .ServiceInfo());
         //System.out.println(Paramony.getRH("IDIOMEL","11"));
         //System.out.println(Paramony);
-        Day Paramony = new Day("01/01"); //Forefeast of Christmas
+        Day Paramony = new Day("xml/pentecostarion/06"); //Forefeast of Christmas
 
         System.out.println(Paramony.getCommsHyper());
         System.out.println(Paramony.getDayRank());
         OrderedHashtable[] Testing=Paramony.getReadings();
         System.out.println(Testing[0].get("Readings"));
+        System.out.println(Testing[1].get("Readings"));
         //System.out.println(Testing[0].get("Information"));
     }
 }
