@@ -882,6 +882,8 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                         readingsA.put("Readings",epistle);
                         readingsA.put("Rank",Rank);
                         readingsA.put("Tag",Tag);
+                        System.out.println(Tag);
+                        System.out.println("Hello World");
                         DivineLiturgy1 trial1=new DivineLiturgy1();
                         String type1 =(String) Phrases.Phrases.get("apostol");
                         output+="<B>"+type1+"</B>"+Colon;

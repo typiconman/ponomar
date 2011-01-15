@@ -72,7 +72,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Week1" Value="Вс/,Пон/,Вт/,Ср/,Чт/,Пт/,Сб" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="No Service Today/,Prime (First Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
+<PHRASE Key="DayReading" Value="для Sunday/,для Monday/,для Tuesday/,для Wednseday/,для Thursday/,для Friday/,для Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
 <PHRASE Key="DateFormat" Value="WW, DD MM YY г." Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
 <PHRASE Key="Feasts" Value="Circumcision of the Lord/,Theophany/,Nativity of St. John the Baptist/,Sts. Peter and Paul/,Transfiguration/,Dormition of the Theotokos/,Beheading of St. John the Baptist/,Nativity of the Theotokos/,Exaltation of the Holy Cross/,Protection of the Theotokos/,Entry of the Theotokos into the Temple/,Nativity of our Lord/,Kyriopascha: Pascha and Annunciation/,Pascha/,Annunciation/,Pentecost/,Ascension/,Palm Sunday/,Meeting of the Lord" />
 <PHRASE Key="Helpers" Value="Save to a html file." />
