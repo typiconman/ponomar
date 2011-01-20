@@ -7,10 +7,18 @@ Unicode Glyph Catalog for Church Slavonic Fonts
 
 = Details =
 
-*Glyph	Glyph Name	Unicode*
+*Glyph
+Glyph Name
+Unicode*
 
-A	A		U+0001
-a	a		U+0001
+A
+A
+U+0001
+
+a
+a
+U+0001
+
 B	B		U+0001
 b	b		U+0001
 C	C		U+0001
