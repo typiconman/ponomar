@@ -1,0 +1,14 @@
+<SAINT>
+<SERVICE Type="3">
+<PRIMES Type="Easter"/>
+<VESPERS>
+<SCRIPTURE Type="vespers" Reading="Mica_4:2-3, 5, 6:1-5, 8"/>
+<SCRIPTURE Type="vespers" Reading="Isa_55:1-13"/>
+<SCRIPTURE Type="vespers" Reading="Prov_9:1-11"/>
+</VESPERS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Acts_14:6-18" Pericope="34"/>
+<SCRIPTURE Type="gospel" Reading="Jn_7:14-30" Pericope="26"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
