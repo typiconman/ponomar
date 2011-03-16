@@ -1,0 +1,17 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<VESPERS>
+<SCRIPTURE Type="vespers" Reading="Isa_43:9-14"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9"/>
+<SCRIPTURE Type="vespers" Reading="Wisd_5:15-6:3"/>
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="matins" Reading="Mt_28:16-20" Pericope="116"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_11:33-12:2" Pericope="330"/>
+<SCRIPTURE Type="gospel" Reading="Mt_10:32-33, 37-38, 19:27-30" Pericope="38"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
