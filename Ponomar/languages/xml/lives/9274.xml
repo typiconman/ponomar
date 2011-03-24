@@ -1,0 +1,22 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<MATINS>
+<SCRIPTURE Type="matins" Reading="Jn_21:1-14" Pericope="66" Cmd="dRank != 6"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)" Cmd="nday == -77"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" Cmd="nday != -77"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(nday == -84 &amp;&amp; !(doy &lt;= 12 &amp;&amp; doy &gt;= 6)) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &gt;= 348 &amp;&amp; doy &lt;= 354) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(nday == -84 &amp;&amp; !(doy &lt;= 12 &amp;&amp; doy &gt;= 6)) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(nday == -84 &amp;&amp; !(doy &lt;= 12 &amp;&amp; doy &gt;= 6)) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(nday == -84 &amp;&amp; !(doy &lt;= 12 &amp;&amp; doy &gt;= 6)) &amp;&amp; GS == 0"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

@@ -1,0 +1,15 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_7:1-6" Pericope="315"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:27-33" Pericope="52" Cmd="((doy &gt;= 359 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 0)) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:17-27" Pericope="45" Cmd="(doy &gt;= 352 &amp;&amp; doy &lt;= 358) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_9:10-16" Pericope="39" Cmd="(doy &gt;= 345 &amp;&amp; doy &lt;= 351) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:28-33" Pericope="107" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_20:9-18" Pericope="100" Cmd="(doy &gt;= 331 &amp;&amp; doy &lt;= 337) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:31-34" Pericope="92" Cmd="(doy &gt;= 324 &amp;&amp; doy &lt;= 330) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:28-33" Pericope="107" Cmd="GS == 0"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

@@ -1,0 +1,12 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<MATINS>
+<SCRIPTURE Type="matins" Reading="Mk_16:9-20" Pericope="71"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="II Cor_1:21-2:4" Pericope="170"/>
+<SCRIPTURE Type="gospel" Reading="Mt_22:1-14" Pericope="89"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

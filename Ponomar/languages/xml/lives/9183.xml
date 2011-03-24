@@ -1,0 +1,18 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<MATINS>
+<SCRIPTURE Type="matins" Reading="Jn_20:11-18" Pericope="64" Cmd="dRank != 6"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="II Cor_11:31-12:9" Pericope="194"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:19-31" Pericope="83" Cmd="(doy &gt;= 292 &amp;&amp; doy &lt;= 298) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_8:5-15" Pericope="35" Cmd="(doy &gt;= 285 &amp;&amp; doy &lt;= 291) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:11-16" Pericope="30" Cmd="(doy &gt;= 278 &amp;&amp; doy &lt;= 284) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:31-36" Pericope="26" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Pericope="17" Cmd="(doy &gt;= 264 &amp;&amp; doy &lt;= 270) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mt_19:16-26" Pericope="79" Cmd="(doy &gt;= 257 &amp;&amp; doy &lt;= 263) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:31-36" Pericope="26" Cmd="GS == 0"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

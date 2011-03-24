@@ -1,0 +1,11 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:17-5:5" Pericope="132"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:1-13" Pericope="97" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" Cmd="(doy &gt;= 263 &amp;&amp; doy &lt;= 269) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:1-13" Pericope="97" Cmd="GS == 0"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
