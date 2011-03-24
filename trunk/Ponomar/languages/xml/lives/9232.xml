@@ -1,0 +1,19 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<MATINS>
+<SCRIPTURE Type="matins" Reading="Lk_24:1-12" Pericope="112" Cmd="dRank != 6"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Eph_5:9-19" Pericope="229"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 340) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &gt;= 334 &amp;&amp; doy &lt;= 336) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 340) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" Cmd="(doy &gt;= 327 &amp;&amp; doy &lt;= 333) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:25-37" Pericope="53" Cmd="(doy &gt;= 313 &amp;&amp; doy &lt;= 319) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_8:41-56" Pericope="39" Cmd="(doy &gt;= 306 &amp;&amp; doy &lt;= 312) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" Cmd="GS == 0"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

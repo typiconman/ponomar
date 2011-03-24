@@ -1,0 +1,17 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Jas_3:1-10" Pericope="54"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="((doy &gt;= 364 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 5)) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Pericope="43" Cmd="(doy &gt;= 6 &amp;&amp; doy &lt;= 12 &amp;&amp; nday == -89) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Pericope="34" Cmd="(doy &gt;= 343 &amp;&amp; doy &lt;= 349) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Pericope="43" Cmd="(doy &gt;= 6 &amp;&amp; doy &lt;= 12 &amp;&amp; nday == -89) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Pericope="43" Cmd="(doy &gt;= 6 &amp;&amp; doy &lt;= 12 &amp;&amp; nday == -89) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="GS == 0"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

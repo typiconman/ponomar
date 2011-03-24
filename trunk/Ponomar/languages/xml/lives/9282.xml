@@ -1,0 +1,21 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="I Pet_2:21-3:9" Pericope="59" Cmd="nday == -76"/>
+<SCRIPTURE Type="apostol" Reading="Heb_8:7-13" Pericope="319" Cmd="nday == -97"/>
+<SCRIPTURE Type="apostol" Reading="Heb_3:5-11, 17-19" Pericope="308" Cmd="nday == -104 || nday &gt; 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="(nday == -76) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &gt;= 356 &amp;&amp; doy &lt;= 362) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="(nday == -76) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="(nday == -76) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="(nday == -76) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="(nday == -76) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:11-21" Pericope="33" Cmd="(nday == -97) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_20:27-44" Pericope="102" Cmd="(nday == -104 || nday &gt; 0) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="(nday == -76) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:11-21" Pericope="33" Cmd="(nday == -97) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_20:27-44" Pericope="102" Cmd="(nday == -104 || nday &gt; 0) &amp;&amp; GS == 0"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

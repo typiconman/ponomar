@@ -1,0 +1,18 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="I Pet_2:21-3:9" Pericope="59"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &gt;= 5 &amp;&amp; doy &lt;= 11 &amp;&amp; nday == -83) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_9:42-10:1" Pericope="42" Cmd="(doy &gt;= 349 &amp;&amp; doy &lt;= 355) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &gt;= 5 &amp;&amp; doy &lt;= 11 &amp;&amp; nday == -83) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &gt;= 5 &amp;&amp; doy &lt;= 11 &amp;&amp; nday == -83) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:46-52" Pericope="48" Cmd="(doy &gt;= 5 &amp;&amp; doy &lt;= 11 &amp;&amp; nday == -83) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="GS == 0"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

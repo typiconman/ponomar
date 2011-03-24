@@ -1,0 +1,16 @@
+<SAINT>
+<SERVICE Type="0">
+<PRIMES Type="Normal"/>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Jas_3:1-10" Pericope="54" Cmd="nday == -82"/>
+<SCRIPTURE Type="apostol" Reading="I Pet_3:10-22" Pericope="60" Cmd="nday == -75"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="(nday == -82) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="(nday == -82) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="(nday == -82) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="(nday == -82) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 0"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
