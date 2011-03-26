@@ -420,7 +420,7 @@ public class DivineLiturgy1 implements DocHandler {
 
 
         OrderedHashtable temp = (OrderedHashtable) CombinedReadings.get("LITURGY");
-        System.out.println("temp values (423)" + temp);
+        //System.out.println("temp values (423)" + temp);
         Vector Readings = (Vector) temp.get("Readings");
         Vector Rank = (Vector) temp.get("Rank");
         Vector Tag = (Vector) temp.get("Tag");
