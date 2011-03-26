@@ -3,8 +3,8 @@
 <PRIMES Type="Normal"/>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="II Pet_1:1-10" Pericope="64"/>
-<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 0"/>
 </LITURGY>

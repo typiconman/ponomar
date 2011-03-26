@@ -4,11 +4,11 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Pet_1:1-2, 10-12, 2:6-10" Pericope="58" Cmd="nday == -79"/>
 <SCRIPTURE Type="apostol" Reading="II Pet_1:1-10" Pericope="64" Cmd="nday == -72"/>
-<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(nday == -72) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(nday == -72) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(nday == -72) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(nday == -72) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(nday == -72) &amp;&amp; GS == 0"/>
 </LITURGY>

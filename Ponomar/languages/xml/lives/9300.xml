@@ -4,11 +4,11 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Pet_1:1-2, 10-12, 2:6-10" Pericope="58" Cmd="nday == -79"/>
 <SCRIPTURE Type="apostol" Reading="Jas_2:1-13" Pericope="52" Cmd="nday == -86"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(nday == -86) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(nday == -86) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(nday == -86) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(doy >= 23 &amp;&amp; doy <= 29 &amp;&amp; nday == -79) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(doy >= 23 &amp;&amp; doy <= 29 &amp;&amp; nday == -86) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(doy >= 16 &amp;&amp; doy <= 22 &amp;&amp; nday == -79) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(doy >= 16 &amp;&amp; doy <= 22 &amp;&amp; nday == -86) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(doy >= 9 &amp;&amp; doy <= 15 &amp;&amp; nday == -86) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(nday == -79) &amp;&amp; GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(nday == -86) &amp;&amp; GS == 0"/>
 </LITURGY>

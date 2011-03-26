@@ -11,10 +11,10 @@
 <SCRIPTURE Type="apostol" Reading="Eph_5:9-19" Pericope="229" Cmd="doy &lt;= 7"/>
 <SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="((doy &gt;= 362 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 3)) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &gt;= 355 &amp;&amp; doy &lt;= 361) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &gt;= 348 &amp;&amp; doy &lt;= 354) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &gt;= 341 &amp;&amp; doy &lt;= 347) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &gt;= 334 &amp;&amp; doy &lt;= 336) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &gt;= 334 &amp;&amp; doy &lt;= 336) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 340) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" Cmd="(doy &gt;= 327 &amp;&amp; doy &lt;= 333) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="GS == 0"/>
 </LITURGY>

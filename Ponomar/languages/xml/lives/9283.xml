@@ -4,15 +4,15 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Pet_3:10-22" Pericope="60" Cmd="nday == -75"/>
 <SCRIPTURE Type="apostol" Reading="Heb_9:8-10, 15-23" Cmd="nday == -96"/>
-<SCRIPTURE Type="apostol" Reading="Heb_4:1-13" Pericope="310" Cmd="nday == -103 || nday &gt; 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="Heb_4:1-13" Pericope="310" Cmd="nday == -103 || nday &gt; 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="(doy &gt;= 357 &amp;&amp; doy &lt;= 363) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Pericope="34" Cmd="(nday == -96) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_21:12-19" Pericope="106" Cmd="(nday == -103 || nday &gt; 0) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Pericope="34" Cmd="(nday == -96) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:12-19" Pericope="106" Cmd="(nday == -103 || nday &gt; 0) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -75) &amp;&amp; GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Pericope="34" Cmd="(nday == -96) &amp;&amp; GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Lk_21:12-19" Pericope="106" Cmd="(nday == -103 || nday &gt; 0) &amp;&amp; GS == 0"/>

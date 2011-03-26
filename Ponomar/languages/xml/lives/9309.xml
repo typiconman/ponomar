@@ -6,8 +6,8 @@
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 0"/>
 </LITURGY>

@@ -7,9 +7,9 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" Cmd="nday == -84"/>
 <SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)" Cmd="nday == -77"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" Cmd="(nday &lt; -77) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" Cmd="(nday &lt; -77) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &gt;= 11 &amp;&amp; doy &lt;= 17 &amp;&amp; nday == -84) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &gt;= 11 &amp;&amp; doy &lt;= 17 &amp;&amp; nday == -84) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" Cmd="(nday &lt; -77) &amp;&amp; GS == 0"/>
