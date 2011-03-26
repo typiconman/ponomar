@@ -5,10 +5,10 @@
 <SCRIPTURE Type="apostol" Reading="Jas_2:1-13" Pericope="52" Cmd="nday == -86"/>
 <SCRIPTURE Type="apostol" Reading="Heb_11:8, 11-16" Pericope="327" Cmd="nday == -93"/>
 <SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 2 &amp;&amp; doy &lt;= 8) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(nday == -86) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Pericope="41" Cmd="(nday == -93) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(nday == -86) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Pericope="41" Cmd="(nday == -93) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(nday == -86) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Pericope="41" Cmd="(nday == -93) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(nday == -86) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Pericope="41" Cmd="(nday == -93) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(nday == -86) &amp;&amp; GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Pericope="41" Cmd="(nday == -93) &amp;&amp; GS == 0"/>
 </LITURGY>

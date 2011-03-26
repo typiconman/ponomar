@@ -4,14 +4,14 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" Cmd="nday == -74"/>
 <SCRIPTURE Type="apostol" Reading="Heb_10:1-18" Pericope="323" Cmd="nday == -95"/>
-<SCRIPTURE Type="apostol" Reading="Heb_5:11-6:8" Pericope="312" Cmd="nday == -102 || nday &gt; 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="Heb_5:11-6:8" Pericope="312" Cmd="nday == -102 || nday &gt; 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Pericope="51" Cmd="(doy &gt;= 358 &amp;&amp; doy &lt;= 364) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" Cmd="(nday == -95) &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" Cmd="(nday == -95) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_21:5-7, 10-11,20-24" Pericope="104" Cmd="(doy &gt;= 7 &amp;&amp; doy &lt;= 13 &amp;&amp; nday == -102) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" Cmd="(nday == -95) &amp;&amp; GS == 0"/>

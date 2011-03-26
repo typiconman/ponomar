@@ -266,7 +266,7 @@ protected static double eval(String expression) throws IllegalArgumentException
 	{
 		j = expression.lastIndexOf("-", len);
 		// SINCE UNARY OPERATORS ARE NOT FOLLOWED BY A SPACE: TEST FOR THE PRESENCE OF A FOLLOWING SPACE
-		if (expression.charAt(j+1) == ' ')
+               if (expression.charAt(j+1) == ' ')
 		{
 			test = false;
 		}

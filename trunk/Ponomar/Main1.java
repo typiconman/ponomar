@@ -874,19 +874,36 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                             OrderedHashtable liturgy=(OrderedHashtable)Readings.get(j);
                             OrderedHashtable stepE=(OrderedHashtable)liturgy.get("apostol");
                             OrderedHashtable stepG=(OrderedHashtable)liturgy.get("gospel");
+                            
+                            if (stepE!=null)
+                            {
                             epistle.add(stepE.get("Reading").toString());
+                            }
+                            else
+                            {
+                                epistle.add("");
+                            }
+                            if (stepG!=null)
+                            {
                             gospel.add(stepG.get("Reading").toString());
+                           }
+                            else
+                            {
+                                gospel.add("");
+                            }
+                            
 
                         }
                         OrderedHashtable readingsA=new OrderedHashtable();
                         readingsA.put("Readings",epistle);
                         readingsA.put("Rank",Rank);
                         readingsA.put("Tag",Tag);
-                        System.out.println(Tag);
-                        System.out.println("Hello World");
+                        //System.out.println(Tag);
+                        //System.out.println("Hello World");
                         DivineLiturgy1 trial1=new DivineLiturgy1();
                         String type1 =(String) Phrases.Phrases.get("apostol");
                         output+="<B>"+type1+"</B>"+Colon;
+                        System.out.println(readingsA);
                         output+=trial1.Readings(readingsA,"apostol",today);
                         readingsA.put("Readings",gospel);
                         output+=RSep;
