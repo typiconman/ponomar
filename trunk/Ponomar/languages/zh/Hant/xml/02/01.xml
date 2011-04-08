@@ -1,10 +1,10 @@
 <DAY>
-<SCRIPTURE Type="vespers" Reading="Composite_6" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="vespers" Reading="Isa_6:1-12" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="vespers" Reading="Isa_19:1-5, 12, 16, 19-21" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="matins" Reading="Lk_2:25-32" Pericope="8" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="apostol" Reading="Heb_7:7-17" Pericope="316" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="gospel" Reading="Lk_2:22-40" Pericope="7" Cmd="nday == -49" Note="for the feast"/>
+<SCRIPTURE Type="vespers" Reading="Composite_6" Cmd="nday == -49" Note="瞻禮讀經"/>
+<SCRIPTURE Type="vespers" Reading="Isa_6:1-12" Cmd="nday == -49" Note="瞻禮讀經"/>
+<SCRIPTURE Type="vespers" Reading="Isa_19:1-5, 12, 16, 19-21" Cmd="nday == -49" Note="瞻禮讀經"/>
+<SCRIPTURE Type="matins" Reading="Lk_2:25-32" Pericope="8" Cmd="nday == -49" Note="瞻禮讀經"/>
+<SCRIPTURE Type="apostol" Reading="Heb_7:7-17" Pericope="316" Cmd="nday == -49" Note="瞻禮讀經"/>
+<SCRIPTURE Type="gospel" Reading="Lk_2:22-40" Pericope="7" Cmd="nday == -49" Note="瞻禮讀經"/>
 
 <SAINT Name="主進殿節前期" Id="2124" Type="0" Cmd="nday != -49" />
 <SAINT Name="紀念我們的主，上帝，救主被奉獻於聖殿，也紀念聖母取潔" Id="373" Type="7" Cmd="nday == -49" />
