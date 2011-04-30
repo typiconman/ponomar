@@ -67,7 +67,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="3rd hour" Value="Ча́съ тре́тїй"/>
 <PHRASE Key="6th hour"	Value="Ча́съ шесты́й"/>
 <PHRASE Key="9th hour" Value="Ча́съ девѧ́тый"/>
-<PHRASE Key="Fasts" Value="По́ста нѣ̀ /,Стро́гий по́стъ/,По́стъ: разрѣша́етсѧ на вїно̀ и҆ є҆ле́й /,По́стъ: разрѣша́етсѧ на рыбꙋ̀ /,Оу҆́казанїе варе́нїѧ: /,Ошибка при вычеслении указаний /,: Монасты́рская кꙋхнѧ: /,Стро́гий по́стъ/,Сꙋхоѧде́нїе /,Варе́нїе бе́з꙽ є҆ле́ѧ/,По́стъ: Разрѣша́етсѧ на ры́бною и҆крꙋ̀ /,Ма́сленца (варе́нїе бе́з꙽ мѧ́са) /,По́стъ: Разрѣша́етсѧ вїно̀҆ /,мѧ́со/,мла҆чные продꙋ́кты/,ры́ба/,ры́бнаѧ и҆́кпа/,є҆ле́й/,вїно̀/,сухоѧденїе/,/,/,/,разрѣша́етсѧ/,запрещается/,и҆/,, пока/,По́стъ: " />
+<PHRASE Key="Fasts" Value="По́ста нѣ̀ /,Стро́гий по́стъ/,По́стъ: разрѣша́етсѧ на вїно̀ и҆ є҆ле́й /,По́стъ: разрѣша́етсѧ на рыбꙋ̀ /,Оу҆́казанїе варе́нїѧ: /,Ошибка при вычеслении указаний /,: Монасты́рская кꙋхнѧ: /,Стро́гий по́стъ/,Сꙋхоѧде́нїе /,Варе́нїе бе́з̾ є҆ле́ѧ/,По́стъ: Разрѣша́етсѧ на ры́бною и҆крꙋ̀ /,Ма́сленца (варе́нїе бе́з̾ мѧ́са) /,По́стъ: Разрѣша́етсѧ вїно̀҆ /,мѧ́со/,мла҆чные продꙋ́кты/,ры́ба/,ры́бнаѧ и҆́кпа/,є҆ле́й/,вїно̀/,сухоѧденїе/,/,/,/,разрѣша́етсѧ/,запрещается/,и҆/,, пока/,По́стъ: " />
 <PHRASE Key="Week1" Value="не/,пон/,вт/,ср/,чт/,пт/,сб" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="No Service Today/,Ча́съ пе́рвый/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
@@ -79,7 +79,10 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
 <PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
 <PHRASE Key="RoyalHours" Value="The Royal Hours are not served today/,Часѡ́въ ца́рскихъ"/>
-<PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
+<PHRASE Key="Commemoration" Value="Error reading the Hashtable!
+Missing element: /, with Tag: /,Error reading the Hashtable!
+Missing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines 
+"/>
 <PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
 <PHRASE Key="Terce" Value="No Service Today/,Ча́съ тре́тїй/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="No Service Today/,Ча́съ шесты́й/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
