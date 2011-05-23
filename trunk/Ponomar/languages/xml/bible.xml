@@ -217,12 +217,12 @@ GNU General Public License for details.
 	<BOOK Id="Jerem" Name="Ї҆еремї́и" Chapters="52" Short="Иер." Intro="Прⷪро́чества їеремї́ина чте́нїе"/>
 	<BOOK Id="Lamen" Name="Пла́чь ї҆еремї́евъ" Chapters="5" Short="Плачь" Intro=""/>
 	<BOOK Id="Epistle" Name="Посла́нїе їеремї́ино" Chapters="1" Short="По. Иер." Intro=""/>
-	<BOOK Id="Baruch" Name="Варꙋ́хъ " Chapters="5" Short="Вар." Intro="Прⷪро́чества ї҆еремї́ина чте́нїе"/>
+	<BOOK Id="Baruch" Name="Варꙋ́хъ" Chapters="5" Short="Вар." Intro="Прⷪро́чества ї҆еремї́ина чте́нїе"/>
 	<BOOK Id="Ezek" Name="Ї҆езекї́илѧ" Chapters="48" Short="Иез." Intro="Прⷪро́чества ї҆езекї́илева чте́нїе"/>
 	<BOOK Id="Dan" Name="Данїи́ла" Chapters="14" Short="Дан." Intro="Прⷪро́чества даиїи́лова чте́нїе"/>
 	<BOOK Id="Hos" Name="Ѡ҆сї́а" Chapters="14" Short="Ос." Intro=""/>
 	<BOOK Id="Joel" Name="Ї҆ѡи́ль" Chapters="3" Short="Иоиль" Intro="Прⷪро́чества ї҆ѡ́илева чте́нїе"/>
-	<BOOK Id="Amos" Name="А҆мѡ́с" Chapters="9" Short="Ам." Intro=""/>
+	<BOOK Id="Amos" Name="А҆мѡ́съ" Chapters="9" Short="Ам." Intro=""/>
 	<BOOK Id="Obad" Name="А҆вдї́й " Chapters="1" Short="Авд." Intro=""/>
 	<BOOK Id="Jona" Name="Ї҆ѡ́ны" Chapters="4" Short="Ион." Intro="Прⷪро́чества ї҆ѡ́нина чте́нїе"/>
 	<BOOK Id="Mica" Name="Мїхе́й" Chapters="7" Short="Мих." Intro="Прⷪро́чества мїхе́ина чте́нїе" Note="There may be some issue with Chapter 7 and the initial word of Verses 1 and 2. The .pdf and .hip files do not agree on what is to be displayed!"/>
