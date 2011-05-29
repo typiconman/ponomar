@@ -101,7 +101,7 @@ public class Commemoration1 implements DocHandler {
                 if (f.exists()) {
 
                     BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(FileName), "UTF8"));
-                    QDParser.parse(this, frf);
+                    QDParser.parse(this, frf);                    
                 } else {
                     //The given file does not exist, do nothing, it is not a calamity!
                 }
@@ -147,7 +147,7 @@ public class Commemoration1 implements DocHandler {
         if (elem.equals("SERVICE") && read) {
             readService = true;
             if (ServiceInfo == null) {
-                ServiceInfo = new OrderedHashtable();
+                ServiceInfo = new OrderedHashtable();               
             }
 
             Location1 = new String();
@@ -164,7 +164,7 @@ public class Commemoration1 implements DocHandler {
             for (Enumeration e = table.keys(); e.hasMoreElements();) {
                 String type = (String) e.nextElement();
                 value.put(type, table.get(type));
-            }
+            }            
             return;
         }
 
@@ -239,6 +239,10 @@ public class Commemoration1 implements DocHandler {
 
         }
         if (elem.equals("LIFE") && read) {
+            Information.put("LifeID",table.get("Id"));
+            if (table.get("Copyright")!=null){
+            Information.put("LifeCopyright",table.get("Copyright"));
+            }
         }
 
     }
@@ -273,7 +277,7 @@ public class Commemoration1 implements DocHandler {
             }*/
             //System.out.println("In endElement, I saw the following elements: "+elem);
             if (textR != null) {
-                value.put("text", textR);
+                value.put("text", textR);                
             }
             if (ServiceInfo.containsKey(Location1)) {
                 OrderedHashtable stuff = (OrderedHashtable) ServiceInfo.get(Location1);
@@ -312,7 +316,7 @@ public class Commemoration1 implements DocHandler {
                 ServiceInfo.put(Location1, stuff);
             }
             value = new OrderedHashtable();
-            Location1 = Location1.substring(0, Location1.lastIndexOf("/"));
+            Location1 = Location1.substring(0, Location1.lastIndexOf("/"));            
 
             //return;
         }
@@ -327,7 +331,7 @@ public class Commemoration1 implements DocHandler {
     }
 
     public void text(String text) {
-        textR = text;
+        textR = text;        
     }
 
     public String getGrammar(String value) {
@@ -417,7 +421,7 @@ public class Commemoration1 implements DocHandler {
         readings = new OrderedHashtable();
         OrderedHashtable readingsT = getServiceNode("/VESPERS/SCRIPTURE");
         if (readingsT != null) {
-            readings.put("VESPERS", readingsT);
+            readings.put("VESPERS", readingsT);            
         }
         readingsT = getServiceNode("/1stHour/SCRIPTURE");
         if (readingsT != null) {
@@ -515,10 +519,33 @@ public class Commemoration1 implements DocHandler {
         return false;
     }
 
+    public String getLife(){
+        //Checks whether the given commemoration has an associated life or not
+
+        if (Information.get("LIFE")!= null){
+            return Information.get("LIFE").toString();
+        }
+        else
+        {
+            return null;
+        }
+    }
+    public String getLifeCopyright(){
+        //Checks whether the given commemoration has an associated life or not
+
+        if (Information.get("LifeCopyright")!= null){
+            return Information.get("LifeCopyright").toString();
+        }
+        else
+        {
+            return null;
+        }
+    }
+
 
     public static void main(String[] argz) {
         StringOp.dayInfo = new OrderedHashtable();
-        StringOp.dayInfo.put("LS", "en/");
+        StringOp.dayInfo.put("LS", "cu/ru/");
         StringOp.dayInfo.put("dow", "1");
         //StringOp.dayInfo.put("")
         //Commemoration Paramony = new Commemoration("P_3174");    //Paramony of Christmas
@@ -531,12 +558,12 @@ public class Commemoration1 implements DocHandler {
         Commemoration1 Paramony = new Commemoration1("0", "010101"); //Forefeast of Christmas
         //System.out.println(Paramony.getService("/MATINS/KONTAKION","1"));
         System.out.println(Paramony.getRank());
-        System.out.println(Paramony.Information.get("LIFE"));
+        //System.out.println(Paramony.Information.get("LIFE"));
         System.out.println(Paramony.getGrammar("Nominative"));
         System.out.println(Paramony.getRank());
         System.out.println(Paramony.getService("/LITURGY/TROPARION", "1"));
         System.out.println(Paramony.getService("/LITURGY/KONTAKION", "1"));
         System.out.println(Paramony.getService("/VESPERS/SCRIPTURE", "3"));
-        System.out.println(Paramony.readings.get("Vespers"));
+        System.out.println(Paramony.getReadings().get("VESPERS"));
     }
 }
