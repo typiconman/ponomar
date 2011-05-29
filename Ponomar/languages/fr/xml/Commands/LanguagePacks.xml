@@ -96,7 +96,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
 <PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
 <PHRASE Key="TimeF" Value="HH h MM min" Comment="This gives the format for the time. The 24-hour clock will be used."/>
-<PHRASE Key="LivesW" Value="Vive/,Le tropaire/, Podoben : /,Le kondakion/,Tone : TT/, ; /,Il manque l'infomration sur cette commemoration." Comment="A space (if required) should be placed before and after the 2nd entry."/>
+<PHRASE Key="LivesW" Value="Vie/,Le tropaire/, Podoben : /,Le kondakion/,Tone : TT/, ; /,Il manque l'infomration sur cette commemoration." Comment="A space (if required) should be placed before and after the 2nd entry."/>
 <PHRASE Key="IconW" Value="Icon précédent/,Icon suivant/,Aucun Icon n'avait pas trouvé."/>
 <PHRASE Key="Colon" Value=" : " Note="This is how a colon is to appear in the given texts."/>
 <PHRASE Key="Commemoration2" Value=" (pour %getN(^CC,Short))" Comments="%getN is a generalised grammar engine that will return the appropriate grammatical form. The format is Noun (in this case to be specified so ^CC) and the desired case (as defined in the commemoration files)"/>
