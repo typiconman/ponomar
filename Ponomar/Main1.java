@@ -86,7 +86,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
         private String CSep=new String();
         private String Colon=new String();
         private String Ideographic=new String();
-        private DoSaint SaintLink;
+        private DoSaint1 SaintLink;
         private IconDisplay displayIcon;
         private Vector IconImages;
         private Vector IconNames;
@@ -464,7 +464,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 			String id = (String)table.get("Id");
 			if (id.length() != 0)
 			{
-				output += "<A Href='goDoSaint?id=" + table.get("Id") + "'>";
+				output += "<A Href='gDoSainto?id=" + table.get("Id") + "'>";
                                 //if there is an id, then check if an Icon exists
                                 //System.out.println("Ponomar/images/icons/"+id+".jpg");
                                File file=new File("Ponomar/images/icons/"+id+".jpg");
@@ -604,13 +604,16 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                                 String[] parts2=parts[1].split("=");
                                 //System.out.println(parts2[1]);
                                 String[] parts3=parts2[1].split(",");
+                                
+                                Commemoration1 trial1=new Commemoration1(parts3[parts3.length-2],parts3[parts3.length-1]);
                                 if (SaintLink == null){
                                     System.out.println(parts3[parts3.length-1]);
-                                    SaintLink=new DoSaint(parts3[parts3.length-1]);
+
+                                    SaintLink=new DoSaint1(trial1);
                                 }
                                 else
                                 {
-                                    SaintLink.refresh(parts3[parts3.length-1]);
+                                    SaintLink.refresh(trial1);
                                 }
                                 
                             }
