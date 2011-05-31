@@ -746,7 +746,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 		//filename += ".xml";
                 Day SolarCycle=new Day(filename);
                 StringOp.dayInfo.put("dRank",Math.max(SolarCycle.getDayRank(), PaschalCycle.getDayRank()));
-                output+=PaschalCycle.getCommsHyper();
+                output+=PaschalCycle.getCommsHyper()+CSep;
                 output+=SolarCycle.getCommsHyper();
                 StringOp.dayInfo.put("Tone",PaschalCycle.getTone());
 		// PARSE THE MENAION XML FILE

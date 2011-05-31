@@ -59,7 +59,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="About" Value="Версия/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="НЕ использовать Воздвиженскую отступку/,Использовать Воздвиженскую отступку/,Лекционарий/,Выбор лекционария." />
 <PHRASE Key="Tones" Value=" /,1-й/,2-й/,3-й/,4-й/,5-й/,6-й/,7-й/,8-й" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="по гражданскому стилю/,Восход солнца/,Заход солнца/,Фаза луны/,Глас TT; /,Информация о /,Вы действительно хотите закрыть программу?" />
+<PHRASE Key="Main" Value="по гражданскому стилю/,Восход солнца/,Заход солнца/,Фаза луны/,Глас TT/,Информация о /,Вы действительно хотите закрыть программу?" />
 <PHRASE Key="gospel" Value="Евангелие"/>
 <PHRASE Key="apostol" Value="Апостол"/>
 <PHRASE Key="matins" Value="Утреня"/>

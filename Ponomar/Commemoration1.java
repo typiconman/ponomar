@@ -374,8 +374,10 @@ public class Commemoration1 implements DocHandler {
         int Rank = Integer.parseInt(Information.get("Rank").toString());
         int Cidn=Integer.parseInt(Information.get("CID").toString());
             if (Cidn>=9000 && Cidn<9900){
+                if (Rank<2){
                 Information.put("Rank","-2");
                 return -2;
+                }
             }
         return Rank;
     }
@@ -545,7 +547,7 @@ public class Commemoration1 implements DocHandler {
 
     public static void main(String[] argz) {
         StringOp.dayInfo = new OrderedHashtable();
-        StringOp.dayInfo.put("LS", "cu/ru/");
+        StringOp.dayInfo.put("LS", "en/");
         StringOp.dayInfo.put("dow", "1");
         //StringOp.dayInfo.put("")
         //Commemoration Paramony = new Commemoration("P_3174");    //Paramony of Christmas
@@ -555,12 +557,12 @@ public class Commemoration1 implements DocHandler {
         //System.out.println(Paramony .ServiceInfo());
         //System.out.println(Paramony.getRH("IDIOMEL","11"));
         //System.out.println(Paramony);
-        Commemoration1 Paramony = new Commemoration1("0", "010101"); //Forefeast of Christmas
+        Commemoration1 Paramony = new Commemoration1("0", "9001"); //Forefeast of Christmas
         //System.out.println(Paramony.getService("/MATINS/KONTAKION","1"));
         System.out.println(Paramony.getRank());
         //System.out.println(Paramony.Information.get("LIFE"));
         System.out.println(Paramony.getGrammar("Nominative"));
-        System.out.println(Paramony.getRank());
+        System.out.println("Rank = "+Paramony.getRank());
         System.out.println(Paramony.getService("/LITURGY/TROPARION", "1"));
         System.out.println(Paramony.getService("/LITURGY/KONTAKION", "1"));
         System.out.println(Paramony.getService("/VESPERS/SCRIPTURE", "3"));
