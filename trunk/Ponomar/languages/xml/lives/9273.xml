@@ -2,16 +2,16 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" Cmd="(doy &gt;= 3 &amp;&amp; doy &lt;= 9) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="(doy &gt;= 10 &amp;&amp; doy &lt;= 16 &amp;&amp; nday == -85) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" Cmd="(doy &gt;= 347 &amp;&amp; doy &lt;= 353) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="(doy &gt;= 10 &amp;&amp; doy &lt;= 16 &amp;&amp; nday == -85) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="(doy &gt;= 10 &amp;&amp; doy &lt;= 16 &amp;&amp; nday == -85) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" Cmd="GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" />
+<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Cmd="(doy &gt;= 3 &amp;&amp; doy &lt;= 9) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Cmd="((doy &gt;= 361 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 2)) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Cmd="(doy &gt;= 354 &amp;&amp; doy &lt;= 360) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Cmd="(doy &gt;= 347 &amp;&amp; doy &lt;= 353) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Cmd="(doy &gt;= 17 &amp;&amp; doy &lt;= 23 &amp;&amp; nday == -78) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Cmd="(doy &gt;= 17 &amp;&amp; doy &lt;= 23 &amp;&amp; nday == -85) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Cmd="(doy &gt;= 10 &amp;&amp; doy &lt;= 16 &amp;&amp; nday == -78) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Cmd="(doy &gt;= 10 &amp;&amp; doy &lt;= 16 &amp;&amp; nday == -85) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:3-10"  Cmd="GS == 0" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>
