@@ -85,8 +85,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Terce" Value="No Service Today/,Terce (Third Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="No Service Today/,Sexte (Sixth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="None" Value="No Service Today/,None (Ninth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
-<PHRASE Key="FontFaceM" Value="" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
-<PHRASE Key="FontSizeM" Value="" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
+<PHRASE Key="FontFaceM" Value="Times New Roman" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontSizeM" Value="14" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="FontFaceL" Value="Hirmos Ponomar" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
 <PHRASE Key="FontSizeL" Value="18" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="CommSep" Value="; " Comment="This is the mark to separate the different commemorations that are dispalyed."/>
