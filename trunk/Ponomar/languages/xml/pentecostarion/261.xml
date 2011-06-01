@@ -1,3 +1,9 @@
 <DAY>
+
+
+
+
+<SAINT CId="9902" Cmd="doy == 0"/>
+<SAINT CId="9904" Cmd="doy == 359"/>
 <SAINT SId="0" CId="9261" Tone="5"/>
 </DAY>

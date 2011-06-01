@@ -1,9 +1,4 @@
 <SAINT>
-<SERVICE Type="0">
-<PRIMES Type="Easter"/>
-<LITURGY>
-<SCRIPTURE Type="apostol" Reading="Acts_4:1-10" Pericope="10"/>
-<SCRIPTURE Type="gospel" Reading="Jn_3:16-21" Pericope="10"/>
-</LITURGY>
-</SERVICE>
-</SAINT>
+<SERVICE Type="0"><LITURGY><SCRIPTURE Type="apostol" Reading="I Cor_1:26-29" Pericope="125 (mid)"/>
+<SCRIPTURE Type="gospel" Reading="Jn_8:21-30" Pericope="30"/>
+</LITURGY></SERVICE></SAINT>

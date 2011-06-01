@@ -1,5 +1,11 @@
 <SAINT>
-<SCRIPTURE Type="vespers" Reading="Jn_20:19-25" Pericope="65"/>
+<SERVICE>
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Jn_20:19-25" Pericope="65"/>
+</VESPERS>
+<LITURGY>
 <SCRIPTURE Type="apostol" Reading="Acts_1:1-8" Pericope="1"/>
 <SCRIPTURE Type="gospel" Reading="Jn_1:1-17" Pericope="1"/>
+</LITURGY>
+</SERVICE>
 </SAINT>

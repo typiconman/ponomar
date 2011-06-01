@@ -1,3 +1,6 @@
 <DAY>
+
+<SAINT CId="9912" Cmd="doy &gt;= 249 &amp;&amp; doy &lt;= 255 &amp;&amp; doy != 250"/>
+<SAINT CId="9910" Cmd="doy &gt;= 257 &amp;&amp; doy &lt;= 263"/>
 <SAINT SId="0" CId="9175" Tone="8"/>
 </DAY>
