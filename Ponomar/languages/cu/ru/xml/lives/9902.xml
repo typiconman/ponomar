@@ -1,4 +1,4 @@
-<SAINT>
-<NAME Nominative="Неделя пред Богоявлением" Short="Недели пред Богоявлением" Cmd="dow == 0"/>
-<NAME Nominative="" Short="Недели пред Богоявлением" Cmd="dow != 0"/>
+﻿<SAINT>
+<NAME Nominative="Неделя пред Богоявлением" Genetive="Недели пред Богоявлением" Short="Неделя пред Богоявлением" Cmd="dow == 0"/>
+<NAME Nominative="" Genetive="Недели пред Богоявлением" Short="Неделя пред Богоявлением" Cmd="dow != 0"/>
 </SAINT>

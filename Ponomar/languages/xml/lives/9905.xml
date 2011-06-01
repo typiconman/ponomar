@@ -1,4 +1,4 @@
 <SAINT>
-<SCRIPTURE Type="apostol" Reading="I Tim_6:11-16" Pericope="288"/>
-<SCRIPTURE Type="gospel" Reading="Mt_12:15-21" Pericope="46 (mid)"/>
+<SERVICE><LITURGY><SCRIPTURE Type="apostol" Reading="I Tim_6:11-16" Pericope="288"/>
+<SCRIPTURE Type="gospel" Reading="Mt_12:15-21" Pericope="46 (mid)"/></LITURGY></SERVICE>
 </SAINT>

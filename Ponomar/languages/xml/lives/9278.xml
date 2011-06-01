@@ -3,14 +3,14 @@
 <PRIMES Type="Normal"/>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Pet_4:12-5:5" Pericope="62"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_11:27-33" Pericope="52" Cmd="(doy &gt;= 8 &amp;&amp; doy &lt;= 14 &amp;&amp; nday == -80) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_10:17-27" Pericope="45" Cmd="(doy &gt;= 352 &amp;&amp; doy &lt;= 358) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_11:27-33" Pericope="52" Cmd="(doy &gt;= 8 &amp;&amp; doy &lt;= 14 &amp;&amp; nday == -80) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_11:27-33" Pericope="52" Cmd="(doy &gt;= 8 &amp;&amp; doy &lt;= 14 &amp;&amp; nday == -80) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_11:27-33" Pericope="52" Cmd="(doy &gt;= 8 &amp;&amp; doy &lt;= 14 &amp;&amp; nday == -80) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_12:38-44" Pericope="57" Cmd="GS == 0"/>
 </LITURGY>

@@ -1,4 +1,11 @@
 <SAINT>
+<SERVICE Type="0">
+<LITURGY>
+
 <SCRIPTURE Type="apostol" Reading="I Cor_2:6-9" Pericope="126"/>
+
 <SCRIPTURE Type="gospel" Reading="Mt_10:37-11:1" Pericope="39"/>
+</LITURGY>
+</SERVICE>
+
 </SAINT>

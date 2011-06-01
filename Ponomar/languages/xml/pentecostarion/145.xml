@@ -1,3 +1,7 @@
 <DAY>
+
 <SAINT SId="0" CId="9145" Tone="4"/>
+<SAINT CId="9912" Cmd="doy == 255"/>
+
+
 </DAY>
