@@ -2,9 +2,9 @@
 <SERVICE Type="8">
 <PRIMES Type="Normal"/>
 <VESPERS>
-<SCRIPTURE Type="vespers" Reading="Num_11:16-17, 11:24-29"/>
-<SCRIPTURE Type="vespers" Reading="Joel_2:23-32"/>
-<SCRIPTURE Type="vespers" Reading="Ezek_36:24-28"/>
+<SCRIPTURE Type="1" Reading="Num_11:16-17, 11:24-29"/>
+<SCRIPTURE Type="2" Reading="Joel_2:23-32"/>
+<SCRIPTURE Type="3" Reading="Ezek_36:24-28"/>
 </VESPERS>
 <MATINS>
 <SCRIPTURE Type="matins" Reading="Jn_20:19-23" Pericope="65"/>
