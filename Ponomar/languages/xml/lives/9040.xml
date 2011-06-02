@@ -2,9 +2,9 @@
 <SERVICE Type="8">
 <PRIMES Type="Ascension"/>
 <VESPERS>
-<SCRIPTURE Type="vespers" Reading="Isa_2:2-3"/>
-<SCRIPTURE Type="vespers" Reading="Isa_62:10-12, 63:1-3, 63:7-9"/>
-<SCRIPTURE Type="vespers" Reading="Zech_14:4, 14:8-11"/>
+<SCRIPTURE Type="1" Reading="Isa_2:2-3"/>
+<SCRIPTURE Type="2" Reading="Isa_62:10-12, 63:1-3, 63:7-9"/>
+<SCRIPTURE Type="3" Reading="Zech_14:4, 14:8-11"/>
 </VESPERS>
 <MATINS>
 <SCRIPTURE Type="matins" Reading="Mk_16:9-20" Pericope="71"/>
