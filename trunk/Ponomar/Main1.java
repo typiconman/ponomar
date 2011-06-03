@@ -898,15 +898,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 
                         }
                         OrderedHashtable readingsA=new OrderedHashtable();
-                        System.out.println("=====");
-                        System.out.println(epistle.get(0).equals(""));
-                        if (nday==-52)
-                        {
-                            System.out.println("For the day when nday == -52, the following was found");
-                            System.out.println(epistle);
-                            System.out.println(gospel);
-
-                        }
+                        
                         if (!epistle.get(0).equals(""))
                         {
                         readingsA.put("Readings",epistle);
