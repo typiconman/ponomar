@@ -898,6 +898,17 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 
                         }
                         OrderedHashtable readingsA=new OrderedHashtable();
+                        System.out.println("=====");
+                        System.out.println(epistle.get(0).equals(""));
+                        if (nday==-52)
+                        {
+                            System.out.println("For the day when nday == -52, the following was found");
+                            System.out.println(epistle);
+                            System.out.println(gospel);
+
+                        }
+                        if (!epistle.get(0).equals(""))
+                        {
                         readingsA.put("Readings",epistle);
                         readingsA.put("Rank",Rank);
                         readingsA.put("Tag",Tag);
@@ -908,11 +919,18 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                         output+="<B>"+type1+"</B>"+Colon;
                         //System.out.println(readingsA);
                         output+=trial1.Readings(readingsA,"apostol",today);
-                        readingsA.put("Readings",gospel);
                         output+=RSep;
-                        type1 =(String) Phrases.Phrases.get("gospel");
+                        }
+                        if (!gospel.get(0).equals(""))
+                        {
+                        readingsA.put("Readings",gospel);
+                        readingsA.put("Rank",Rank);
+                        readingsA.put("Tag",Tag);
+                        String type1 =(String) Phrases.Phrases.get("gospel");
+                        DivineLiturgy1 trial1=new DivineLiturgy1();
                         output+="<B>"+type1+"</B>"+Colon;
                         output+=trial1.Readings(readingsA,"gospel",today);
+                        }
 
                         
                         /*for (int j=0; j<Readings.size();j++){

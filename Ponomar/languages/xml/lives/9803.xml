@@ -1,0 +1,22 @@
+<SAINT>
+<SERVICE Type="0">
+<MATINS>
+<SCRIPTURE Type="1" Reading="Lk_22:1-39"/>
+</MATINS>
+<PRIMES>
+<SCRIPTURE Type="1" Reading="Jerem_11:18-12:5, 9-11, 14-15"/>
+</PRIMES>
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Ex_19:10-19"/>
+<SCRIPTURE Type="2" Reading="Job_38:1-23, 42:1-5"/>
+<SCRIPTURE Type="3" Reading="Isa_50:4-11"/>
+</VESPERS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="I Cor_11:23-32" Pericope="149"/>
+<SCRIPTURE Type="gospel" Reading="Mt_26:1-20" Pericope="107"/>
+<SCRIPTURE Type="gospel" Reading="Jn_13:3-17"/>
+<SCRIPTURE Type="gospel" Reading="Mt_26:21-39"/>
+<SCRIPTURE Type="gospel" Reading="Lk_22:43-45"/>
+<SCRIPTURE Type="gospel" Reading="Mt_26:40-27:2"/>
+</LITURGY>
+</SERVICE></SAINT>

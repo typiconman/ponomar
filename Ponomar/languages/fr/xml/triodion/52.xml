@@ -1,8 +1,0 @@
-<DAY>
-<PRIMES Type="Normal" />
-<SCRIPTURE Type="apostol" Pericope="78" Reading="Jude_1:11-25" />
-<SCRIPTURE Type="gospel" Pericope="110" Reading="Lk_23:1-34, 44-56" />
-
-<SAINT Name="Jeudi de Cheesefare" Id="" Type="0" Tone="((ndayP - dow) / 7) % 8"/>
-
-</DAY>
