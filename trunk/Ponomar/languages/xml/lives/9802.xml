@@ -1,0 +1,48 @@
+<SAINT>
+<SERVICE Type="0">
+<MATINS>
+<SCRIPTURE Type="1" Reading="Jn_13:31-18:1"/>
+<SCRIPTURE Type="2" Reading="Jn_18:1-28"/>
+<SCRIPTURE Type="3" Reading="Mt_26:57-75"/>
+<SCRIPTURE Type="4" Reading="Jn_18:28-19:16"/>
+<SCRIPTURE Type="5" Reading="Mt_27:3-32"/>
+<SCRIPTURE Type="6" Reading="Mk_15:16-32"/>
+<SCRIPTURE Type="7" Reading="Mt_27:33-54"/>
+<SCRIPTURE Type="8" Reading="Lk_23:32-49"/>
+<SCRIPTURE Type="9" Reading="Jn_19:25-37"/>
+<SCRIPTURE Type="10" Reading="Mk_15:43-47"/>
+<SCRIPTURE Type="11" Reading="Jn_19:38-42"/>
+<SCRIPTURE Type="12" Reading="Mt_27:62-66"/>
+</MATINS>
+<PRIMES>
+<SCRIPTURE Type="1" Reading="Zech_11:10-13"/>
+<SCRIPTURE Type="2" Reading="Gal_6:14-18"/>
+<SCRIPTURE Type="3" Reading="Mt_27:1-56"/>
+</PRIMES>
+<TERCE>
+<SCRIPTURE Type="1" Reading="Isa_8:4-11"/>
+<SCRIPTURE Type="2" Reading="Rom_5:6-11"/>
+<SCRIPTURE Type="3" Reading="Mk_15:16-41"/>
+</TERCE>
+<SEXTE>
+<SCRIPTURE Type="1" Reading="Isa_52:13-15, 53:1-12, 54:1"/>
+<SCRIPTURE Type="2" Reading="Heb_2:11-18"/>
+<SCRIPTURE Type="3" Reading="Lk_23:32-49"/>
+</SEXTE>
+<NONE>
+<SCRIPTURE Type="1" Reading="Jerem_11:18-23, 12:1-5, 9:15"/>
+<SCRIPTURE Type="2" Reading="Heb_10:19-31"/>
+<SCRIPTURE Type="3" Reading="Jn_18:28-19:37"/>
+</NONE>
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Ex_33:11-23"/>
+<SCRIPTURE Type="2" Reading="Job_42:12-16"/>
+<SCRIPTURE Type="3" Reading="Isa_52:12-15, 53:1-12, 54:1"/>
+<SCRIPTURE Type="4" Reading="I Cor_1:18-2:2"/>
+<SCRIPTURE Type="5" Reading="Mt_27:1-38"/>
+<SCRIPTURE Type="6" Reading="Lk_23:39-43"/>
+<SCRIPTURE Type="7" Reading="Mt_27:39-54"/>
+<SCRIPTURE Type="8" Reading="Jn_19:31-37"/>
+<SCRIPTURE Type="9" Reading="Mt_27:55-61"/>
+</VESPERS>
+</SERVICE></SAINT>

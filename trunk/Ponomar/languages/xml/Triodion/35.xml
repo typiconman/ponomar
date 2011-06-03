@@ -1,5 +1,4 @@
 <DAY>
-<SAINT SId="T" CId="35" /> <!-- This signifies that we are dealing with the Triodion and that is the 35th entry -->
-<SAINT SId="543" CId="543" /> <!-- This is for St. Gregory Palamas, who is commemorated today. Whether there is a need for special service is unknown at present. -->
-<LITURGY Type="2" Comment="Always St Basil's Liturgy"/>
+<SAINT SId="0" CId="9835" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT SId="543" CId="543""/>
 </DAY>

@@ -1,0 +1,16 @@
+<SAINT>
+<SERVICE Type="0">
+<MATINS>
+<SCRIPTURE Type="1" Reading="Jn_12:17-50"/>
+</MATINS>
+<SEXTE>
+<SCRIPTURE Type="1" Reading="Ezek_2:3-3:3"/>
+</SEXTE>
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Ex_2:11-22"/>
+<SCRIPTURE Type="2" Reading="Job_2:1-10"/>
+</VESPERS>
+<LITURGY>
+<SCRIPTURE Type="gospel" Reading="Mt_26:6-16" Pericope="108"/>
+</LITURGY>
+</SERVICE></SAINT>

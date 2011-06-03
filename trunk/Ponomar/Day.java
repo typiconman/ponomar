@@ -132,7 +132,7 @@ public class Day implements DocHandler {
 
             String Cid = table.get("CId").toString();
             if (table.get("Tone")!=null){
-                Tone=Integer.parseInt(table.get("Tone").toString());
+               Tone=(int) Math.floor(StringOp.eval(table.get("Tone").toString()));
             }
             Commemoration1 DayA = new Commemoration1(Sid, Cid);
 
@@ -160,6 +160,7 @@ public class Day implements DocHandler {
         return dayRank;
     }
     public int getTone(){
+        
         if(Tone==0)
 				{
 					Tone=8;

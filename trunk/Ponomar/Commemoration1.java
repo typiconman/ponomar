@@ -425,21 +425,21 @@ public class Commemoration1 implements DocHandler {
         if (readingsT != null) {
             readings.put("VESPERS", readingsT);            
         }
-        readingsT = getServiceNode("/1stHour/SCRIPTURE");
+        readingsT = getServiceNode("/PRIMES/SCRIPTURE");
         if (readingsT != null) {
-            readings.put("1stHour", readingsT);
+            readings.put("1st hour", readingsT);
         }
-        readingsT = getServiceNode("/3rdHour/SCRIPTURE");
+        readingsT = getServiceNode("/TERCE/SCRIPTURE");
         if (readingsT != null) {
-            readings.put("3rdHour", readingsT);
+            readings.put("3rd hour", readingsT);
         }
-        readingsT = getServiceNode("/6thHour/SCRIPTURE");
+        readingsT = getServiceNode("/SEXTE/SCRIPTURE");
         if (readingsT != null) {
-            readings.put("6thHour", readingsT);
+            readings.put("6th hour", readingsT);
         }
-        readingsT = getServiceNode("/9thHour/SCRIPTURE");
+        readingsT = getServiceNode("/NONE/SCRIPTURE");
         if (readingsT != null) {
-            readings.put("9thHour", readingsT);
+            readings.put("9th hour", readingsT);
         }
         readingsT = getServiceNode("/MATINS/SCRIPTURE");
         if (readingsT != null) {

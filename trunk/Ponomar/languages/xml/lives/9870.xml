@@ -1,0 +1,13 @@
+<SAINT>
+<SERVICE Type="0">
+<MATINS>
+<SCRIPTURE Type="1" Reading="Jn_21:15-25" Cmd="(ndayP / 7 - 7) % 11 == 0"/>
+<SCRIPTURE Type="1" Reading="Mt_28:16-20" Cmd="(ndayP / 7 - 7) % 11 == 1"/>
+<SCRIPTURE Type="1" Reading="Lk_24:1-12" Cmd="(ndayP / 7 - 7) % 11 == 4"/>
+<SCRIPTURE Type="1" Reading="Lk_24:12-35" Cmd="(ndayP / 7 - 7) % 11 == 5"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="II Tim_3:10-15" Pericope="296"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:10-14" Pericope="89"/>
+</LITURGY>
+</SERVICE></SAINT>
