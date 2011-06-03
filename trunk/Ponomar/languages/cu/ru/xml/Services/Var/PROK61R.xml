@@ -1,7 +1,7 @@
 <SERVICE>
 <LANGUAGE>
 
-<GETID Type="T" Id="26" Header="1" What="/SEXTE/PROKEIMENON/1a" Who="R" RedFirst="1" NewLine="1"/>
-<GETID Type="T" Id="26" What="/SEXTE/PROKEIMENON/1b" Who="R"/>
+<GETID Type="T" Id="48" Header="1" What="/SEXTE/PROKEIMENON/1a" Who="R" RedFirst="1" NewLine="1"/>
+<GETID Type="T" Id="48" What="/SEXTE/PROKEIMENON/1b" Who="R"/>
 </LANGUAGE>
 </SERVICE>
