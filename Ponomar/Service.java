@@ -12,7 +12,7 @@ import java.beans.*;
 THIS MODULE READ XML FILES THAT CONTAIN A SET OF <CREATE> TAGS THAT SET THE RULES FOR THE CREATION OF
 A SERVICE
 
-(C) 2008, 2009 YURI SHARDT. ALL RIGHTS RESERVED.
+(C) 2008, 2009, 2011 YURI SHARDT. ALL RIGHTS RESERVED.
 TO START THE READING OF THE SERVICE FILES, CALL startService(FileName)
 TO CONTINUE READING, THE SAME SERVICE, BUT WITH POSSIBLY DIFFERENT FILES, CALL readService(FileName)
 TO END THE SERVICE READER CALL, closeService();
@@ -356,7 +356,12 @@ public class Service implements DocHandler
                     if (table.get("Type")!= null){
                         Type=table.get("Type").toString();
                     }
-                    Commemoration data=new Commemoration(table.get("Id").toString(),Type);
+                    String LifeId=table.get("Id").toString();
+                    if (Type.equals("T"))
+                    {
+                        LifeId="98"+LifeId;
+                    }
+                    Commemoration1 data=new Commemoration1("0",LifeId);
                     String Info = table.get("What").toString();
                     int parsedInfo1=Info.lastIndexOf("/");
                    //System.out.println(parsedInfo[0]);
