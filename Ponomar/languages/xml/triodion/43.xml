@@ -1,3 +1,4 @@
 <DAY>
-<SAINT SId="0" CId="2203" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT SId="0" CId="9843" Tone="((ndayP - dow) / 7) % 8"/>
+<SAINT SId="2203" CId="2203"/>
 </DAY>
