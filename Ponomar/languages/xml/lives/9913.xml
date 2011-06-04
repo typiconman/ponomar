@@ -1,0 +1,21 @@
+<SAINT>
+<!-- Basic Service for the Departed -->
+<SERVICE Type="0">
+<LITURGY>
+
+<SCRIPTURE Type="apostol" Reading="I Cor_15:47-57" Pericope="163" Cmd="dow == 8"/>
+<SCRIPTURE Type="gospel" Reading="Jn_5:24-30" Pericope="16" Cmd="dow == 6 || nday != -50"/>
+<SCRIPTURE Type="apostol" Reading="I Thess_4:13-17" Pericope="270" Cmd="dow == 6 || nday != -50"/>
+<SCRIPTURE Type="gospel" Reading="Jn_6:35-39" Pericope="" Cmd="dow == 8"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_15:20-28" Pericope="" Cmd="dow == 8"/>
+<SCRIPTURE Type="gospel" Reading="Jn_5:17-24" Pericope="" Cmd="dow == 8"/>
+<SCRIPTURE Type="apostol" Reading="Rom_14:6-9" Pericope="" Cmd="dow == 8"/>
+<SCRIPTURE Type="gospel" Reading="Jn_6:40-44" Pericope="" Cmd="dow == 8"/>
+<SCRIPTURE Type="gospel" Reading="Jn_6:48-54" Pericope="" Cmd="dow == 8"/>
+<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Cmd="nday == -50"/>
+<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Cmd="nday == -50"/>
+</LITURGY>
+</LITURGY>
+</SERVICE>
+
+</SAINT>
