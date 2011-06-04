@@ -1,5 +1,6 @@
 <SERVICE>
+<LANGUAGE>
 
-<BIBLE Verses="Isa_58:1-11" Who="SR" RedFirst="1" Header="1" NewLine="1" />
-
+<BIBLE Verses="Isa_26:21-27:9" Who="SR" RedFirst="1" Header="1" NewLine="1" />
+</LANGUAGE>
 </SERVICE>

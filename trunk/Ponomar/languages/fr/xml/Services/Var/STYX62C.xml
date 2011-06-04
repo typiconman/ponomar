@@ -1,5 +1,6 @@
 <SERVICE>
+<LANGUAGE>
 
-<GETID Type="T" Id="11" What="/SEXTE/STICHOS/2" Who="C" RedFirst="1" NewLine="1"/>
-
+<GETID Type="T" Id="25" What="/SEXTE/STICHOS/2" Who="C" RedFirst="1" NewLine="1"/>
+</LANGUAGE>
 </SERVICE>

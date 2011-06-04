@@ -1,0 +1,4 @@
+<SAINT>
+<NAME Nominative="Commemoration of the Departed" Short="departed" Cmd="nday != -50"/>
+<NAME Nominative="Commemoration of all the saints, who showed forth in asceticism" Short="departed" Cmd="nday == -50"/>
+</SAINT>

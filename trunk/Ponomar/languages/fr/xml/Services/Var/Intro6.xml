@@ -1,5 +1,6 @@
 <SERVICE>
+<LANGUAGE>
 
-<BIBLE getReading="Isa_58:1-11" Who="SR" NewLine="1"/>
-
+<BIBLE getReading="Isa_26:21-27:9" Who="SR" NewLine="1"/>
+</LANGUAGE>
 </SERVICE>
