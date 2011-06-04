@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME Nominative="紀念亡者" Short="紀念亡者" Cmd="nday != -50 || nday != -57"/>
+<NAME Nominative="紀念亡者之安息日" Short="紀念亡者" Cmd="nday == -57"/>
+<NAME Nominative="紀念所有神聖而心懷上帝，以克修生活光照了世界的聖教父" Short="紀念亡者" Cmd="nday == -50"/>
+</SAINT>

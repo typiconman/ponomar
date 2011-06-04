@@ -1,0 +1,4 @@
+﻿<SAINT>
+<NAME Nominative="Поминовение усопших" Short="усопших" Genetive="усопших" Cmd="nday != -50"/>
+<NAME Nominative="Поминовение всех свв. отцев в монашестве подвизавшихся" Short="усопших" Genetive="усопших" Cmd="nday == -50"/>
+</SAINT>
