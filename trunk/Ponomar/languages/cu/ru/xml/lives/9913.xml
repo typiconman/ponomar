@@ -1,4 +1,5 @@
 ﻿<SAINT>
-<NAME Nominative="Поминовение усопших" Short="усопших" Genetive="усопших" Cmd="nday != -50"/>
+<NAME Nominative="Поминовение усопших" Short="усопших" Genetive="усопших" Cmd="nday != -50 || nday != 49"/>
 <NAME Nominative="Поминовение всех свв. отцев в монашестве подвизавшихся" Short="усопших" Genetive="усопших" Cmd="nday == -50"/>
+<NAME Nominative="Троицкая родительская суббота" Short="усопших" Genetive="усопших" Cmd="nday == 49"/>
 </SAINT>
