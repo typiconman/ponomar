@@ -2,5 +2,14 @@
 <SERVICE Type="8">
 <VESPERS>
 <SCRIPTURE Type="1" Reading="Gen_49:1-2, 8-12"/>
+<SCRIPTURE Type="2" Reading="Zeph_3:14-19"/>
+<SCRIPTURE Type="3" Reading="Zech_9:9-15"/>
 </VESPERS>
+<MATINS>
+<SCRIPTURE Type="1" Reading="Mt_21:1-11, 15-17"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Philip_4:4-9" Pericope="247"/>
+<SCRIPTURE Type="gospel" Reading="Jn_12:1-18" Pericope="41"/>
+</LITURGY>
 </SERVICE></SAINT>
