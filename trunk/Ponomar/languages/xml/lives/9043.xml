@@ -2,9 +2,9 @@
 <SERVICE Type="1">
 <PRIMES Type="Ascension"/>
 <VESPERS>
-<SCRIPTURE Type="vespers" Reading="Gen_14:14-20"/>
-<SCRIPTURE Type="vespers" Reading="Deut_1:8-10, 1:15-17"/>
-<SCRIPTURE Type="vespers" Reading="Deut_10:14-21"/>
+<SCRIPTURE Type="1" Reading="Gen_14:14-20"/>
+<SCRIPTURE Type="2" Reading="Deut_1:8-10, 1:15-17"/>
+<SCRIPTURE Type="3" Reading="Deut_10:14-21"/>
 </VESPERS>
 <MATINS>
 <SCRIPTURE Type="matins" Reading="Jn_21:1-14" Pericope="66"/>
