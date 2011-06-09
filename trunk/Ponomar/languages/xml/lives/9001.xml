@@ -1,7 +1,7 @@
 <SAINT>
 <SERVICE Type="8">
 <VESPERS>
-<SCRIPTURE Type="vespers" Reading="Jn_20:19-25" Pericope="65"/>
+<SCRIPTURE Type="1" Reading="Jn_20:19-25" Pericope="65"/>
 </VESPERS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Acts_1:1-8" Pericope="1"/>
