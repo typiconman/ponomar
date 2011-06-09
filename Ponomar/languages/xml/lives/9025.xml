@@ -2,9 +2,9 @@
 <SERVICE Type="3">
 <PRIMES Type="Easter"/>
 <VESPERS>
-<SCRIPTURE Type="vespers" Reading="Mica_4:2-3, 5, 6:1-5, 8"/>
-<SCRIPTURE Type="vespers" Reading="Isa_55:1-13"/>
-<SCRIPTURE Type="vespers" Reading="Prov_9:1-11"/>
+<SCRIPTURE Type="1" Reading="Mica_4:2-3, 5, 6:1-5, 8"/>
+<SCRIPTURE Type="2" Reading="Isa_55:1-13"/>
+<SCRIPTURE Type="3" Reading="Prov_9:1-11"/>
 </VESPERS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Acts_14:6-18" Pericope="34"/>
