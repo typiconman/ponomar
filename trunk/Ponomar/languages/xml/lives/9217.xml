@@ -6,7 +6,7 @@
 <SCRIPTURE Type="gospel" Reading="Lk_10:19-21" Pericope="51 (mid)" Cmd="(doy &gt;= 326 &amp;&amp; doy &lt;= 332) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_9:57-62" Pericope="49" Cmd="(doy &gt;= 319 &amp;&amp; doy &lt;= 325) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_9:37-43" Pericope="46" Cmd="(doy &gt;= 312 &amp;&amp; doy &lt;= 318) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_9:1-6" Pericope="40" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:1-6" Pericope="40" Cmd="(doy &gt;= 305 &amp;&amp; doy &lt;= 311) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_8:16-21" Pericope="36" Cmd="(doy &gt;= 298 &amp;&amp; doy &lt;= 304) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_7:1-10" Pericope="29" Cmd="(doy &gt;= 291 &amp;&amp; doy &lt;= 297) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_9:1-6" Pericope="40" Cmd="GS == 0"/>
