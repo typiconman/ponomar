@@ -1,5 +1,5 @@
 <DAY>
-<SAINT CId="9902" Cmd="doy &gt;= 0"/>
+<SAINT CId="9902" Cmd="doy == 0"/>
 
 <SAINT SId="0" CId="9282" Tone="0"/>
 </DAY>
