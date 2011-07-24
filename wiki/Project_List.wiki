@@ -1,0 +1,47 @@
+#summary This is a listing of all the various projects which the Ponomar team are working on.
+
+= Introduction =
+
+This is a listing of all the various projects which the Ponomar team are working on.
+
+= Details =
+
+*1. Unicode Slavonic Font Encoding*
+
+  * Manifesto
+  * Periodization of Slavonic Scripts
+  * Catalogue of Slavonic Characters - The Complete Character Set
+  * Historical Variants / Variation Selectors
+  * Character Proposals in Progress
+  * Keyboard Layouts & Drivers
+  * Text Encoding Conversion & Utilities
+  * Other Projects & "Competing" Developers
+
+*2. Digital Chant Projects*
+
+  * Ponomar OpenMusic Project
+  * LilyChant
+
+*3A. Znamenny Chant Font Encoding*
+
+  * Identification of the Complete Character Range
+  * Catalogue of Neumes
+  * Unicode Character Proposals
+  * Development of Znamenny "Kriuki" Fonts
+
+*3B. Kievan Notation Font encoding*
+
+  * Identification of the Complete Character Range
+  * Unicode Character Proposals
+  * Development of Kievan "Square Note" Fonts
+
+*Reference Articles & Documentation*
+
+  * Variation Selectors
+  * Kendema, Trema, Double Grave Accent
+  * FontForge Techniques & Procedures
+  * Keyboard Layouts & Drivers (and their development)
+
+*Links*
+
+  * Related Projects
