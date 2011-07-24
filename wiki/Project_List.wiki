@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This is a listing of all the various projects which the Ponomar team are working on.
+This is an initial attempt to catalogue all the various projects that the Ponomar Team is involved in. PLEASE feel free to edit and add to this listing. Once we've got this listing fairly complete, I would like to begin to develop a wiki-based presentation of all our materials, so that we can keep track of our progress and not lose information in past e-mails (as we have been currently doing). Organisation is key to projects being completed properly. Thanks! -- Nikita
 
 = Details =
 
