@@ -10,12 +10,8 @@
 
 ----
 
-= Related Literary Projects =
-
-  * *ხელნაწერთა ეროვნული ცენტრი* -- [http://www.manuscript.ge/]
-
 = Typographers Working on Related Projects =
-(competing/conflicting projects)
+_competing/conflicting projects_
 
   * *Баранов Виктор Аркадьевич* -- [http://www.istu.ru/unit/epign/lingvo/]
   * *Victor A.Baranov: Главная страница* -- [http://sites.google.com/site/personalsiteofvictorabaranov/]
@@ -53,6 +49,12 @@
   * *Наукова бібліотека - Цінні видання* -- [http://lib.oa.edu.ua/about/funds/valuable-editions]
 
   * *Иван Федоров - Энциклопедиа* -- [http://broadcasting.ru/wiki/index.php?title=Иван_Федоров]
+
+----
+
+= Related Literary Projects =
+
+  * *ხელნაწერთა ეროვნული ცენტრი* -- [http://www.manuscript.ge/]
 
 ----
 
