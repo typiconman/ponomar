@@ -5,9 +5,11 @@
   * --
 
 
+
 = Related Literary Projects =
 
   * *ხელნაწერთა ეროვნული ცენტრი* -- [http://www.manuscript.ge/]
+
 
 
 = Digital Text Archives =
@@ -19,6 +21,7 @@
   * *Славянские рукописи. Фонд OLDPRINT.* | Официальный сайт Свято-Троицкой Сергиевой Лавры -- [http://www.stsl.ru/manuscripts/oldprint]
 
   * x
+
 
 
 = History of Slavic Book Printing =
@@ -38,6 +41,7 @@
   * *Наукова бібліотека - Цінні видання* -- [http://lib.oa.edu.ua/about/funds/valuable-editions]
 
   * *Иван Федоров - Энциклопедиа* -- [http://broadcasting.ru/wiki/index.php?title=Иван_Федоров]
+
 
 
 = The Church Slavonic Alphabet: Introduction =
