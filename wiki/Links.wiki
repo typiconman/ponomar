@@ -1,10 +1,15 @@
 #summary Links
 
-= Introduction =
+= Related Unicode Font Projects =
 
-LINKS
+  * --
 
+= Related Literary Projects =
 
-= Details =
+  * ხელნაწერთა ეროვნული ცენტრი - http://www.manuscript.ge/
 
-ხელნაწერთა ეროვნული ცენტრი - http://www.manuscript.ge/
+= Digital Text Archives =
+
+  * Единоверческий архив - http://sidashtaras.ru/?idx=413&PHPSESSID=69ac558f24cac76ece8e93fd70f0de64
+
+  * x
