@@ -4,13 +4,13 @@
 
   * --
 
-
+----
 
 = Related Literary Projects =
 
   * *ხელნაწერთა ეროვნული ცენტრი* -- [http://www.manuscript.ge/]
 
-
+----
 
 = Digital Text Archives =
 
@@ -22,7 +22,7 @@
 
   * x
 
-
+----
 
 = History of Slavic Book Printing =
 
@@ -42,7 +42,7 @@
 
   * *Иван Федоров - Энциклопедиа* -- [http://broadcasting.ru/wiki/index.php?title=Иван_Федоров]
 
-
+----
 
 = The Church Slavonic Alphabet: Introduction =
 
