@@ -2,6 +2,10 @@
 
 = Related Unicode Font Projects =
 
+  * *3aHyga/churchfonts - GitHub* -- [defunct web site] [archived HERE]
+
+  * *Представление славянского текста* -- [http://znamen.ru/fmt-slav.htm]
+
   * --
 
 ----
@@ -9,6 +13,13 @@
 = Related Literary Projects =
 
   * *ხელნაწერთა ეროვნული ცენტრი* -- [http://www.manuscript.ge/]
+
+= Typographers Working on Related (Competing/Conflicting) Projects =
+
+  * *Баранов Виктор Аркадьевич* -- [http://www.istu.ru/unit/epign/lingvo/]
+  * *Victor.A.Baranov: Главная страница* -- [http://sites.google.com/site/personalsiteofvictorabaranov/]
+
+  * ** -- []
 
 ----
 
@@ -47,3 +58,5 @@
 = The Church Slavonic Alphabet: Introduction =
 
   * *Володимир Бацунов: Ћирилица у источнословенским земљамa* -- [http://guskova.ru/~mladich/slav/p_cyr]
+
+  * *Црквенословенско писмо* -- [http://guskova.ru/~mladich/slav/csl]
