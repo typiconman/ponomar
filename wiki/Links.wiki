@@ -7,6 +7,4 @@ LINKS
 
 = Details =
 
-[Link to ხელნაწერთა ეროვნული ცენტრი] http://www.manuscript.ge/
-
-[http://www.manuscript.ge/] ხელნაწერთა ეროვნული ცენტრი
+ხელნაწერთა ეროვნული ცენტრი [http://www.manuscript.ge/]
