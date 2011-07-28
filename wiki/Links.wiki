@@ -1,4 +1,4 @@
-#summary A preliminary collection of links which are of interest to Slavonic typographers and type designers.
+#summary A collection of links which are of interest to Slavonic typographers and type designers.
 
 = Related Slavonic Font Projects =
 _Unicode & Non-Unicode Projects_
