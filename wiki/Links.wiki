@@ -1,6 +1,7 @@
 #summary Links
 
-= Related Unicode Font Projects =
+= Related Slavonic Font Projects =
+_Unicode & Non-Unicode Projects_
 
   * *3aHyga/churchfonts - GitHub* -- [defunct web site] [archived HERE]
 
