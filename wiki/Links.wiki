@@ -6,7 +6,8 @@
 
   * *Представление славянского текста* -- [http://znamen.ru/fmt-slav.htm]
 
-  * --
+  * *HIP-стандарт* -- инвариантное представление церковнославянских текстов -- [http://www.orthlib.ru/hip/]
+  * *HIP в системе TeX-LaTeX* -- [http://www.orthlib.ru/hip/hiptex.html]
 
 ----
 
@@ -16,19 +17,23 @@ _competing/conflicting projects_
   * *Баранов Виктор Аркадьевич* -- [http://www.istu.ru/unit/epign/lingvo/]
   * *Victor A.Baranov: Главная страница* -- [http://sites.google.com/site/personalsiteofvictorabaranov/]
 
-  * ** -- []
+  * *Ralph Cleminson* -- [http://web.ceu.hu/medstud/ralph.htm]
+  * *School of Languages and Area Studies (SLAS): Prof. Ralph Cleminson* -- [http://www.port.ac.uk/departments/academic/slas/staff/title,1898,en.html]
+
+  * *David J. Birnbaum* -- [http://www.slavic.pitt.edu/people/faculty/birnbaum.php]
+  * *David J. Birnbaum: Home Page* -- [http://clover.slavic.pitt.edu/~djb/]
 
 ----
 
 = Digital Text Archives =
+
+  * *Библиотека святоотеческой литературы* -- [http://www.orthlib.ru/]
 
   * *Единоверческий архив* -- [http://sidashtaras.ru/?idx=413&PHPSESSID=69ac558f24cac76ece8e93fd70f0de64]
 
   * *Slovo-ASO Project:* Towards a Digital Library of South Slavic Manuscripts -- [http://slovo-aso.cl.bas.bg/index.html]
 
   * *Славянские рукописи. Фонд OLDPRINT.* | Официальный сайт Свято-Троицкой Сергиевой Лавры -- [http://www.stsl.ru/manuscripts/oldprint]
-
-  * x
 
 ----
 
@@ -63,3 +68,11 @@ _competing/conflicting projects_
   * *Володимир Бацунов: Ћирилица у источнословенским земљамa* -- [http://guskova.ru/~mladich/slav/p_cyr]
 
   * *Црквенословенско писмо* -- [http://guskova.ru/~mladich/slav/csl]
+
+  * *Краткий учебник церковнославянского языка* -- [http://www.blagogon.ru/biblio/232/]
+
+----
+
+= Church Slavonic Dictionaries & Lexica =
+
+  * --
