@@ -1,0 +1,9 @@
+<DAY>
+<SAINT SId="373" CId="37302" Cmd="nday == -54 || nday == -58" />
+<SAINT SId="373" CId="37303" Cmd="nday == -55 || nday &lt;= -59"/>
+<SAINT SId="409" CId="409"/>
+<SAINT SId="410" CId="410"/>
+<SAINT SId="020700" CId="020700"/>
+<SAINT SId="020701" CId="020701"/>
+<SAINT SId="411" CId="411"/>
+</DAY>
