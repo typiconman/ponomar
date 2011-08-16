@@ -1,0 +1,4 @@
+<SAINT>
+
+<NAME Nominative="Попразднство Сретения Господня." Short="Попразднство Сретения Господня." Cmd="nday == -51 || nday == -53 || nday == -55 || nday == -56 || nday == -57 || nday &lt;= -59"/>
+<SERVICE Type="0"/></SAINT>
