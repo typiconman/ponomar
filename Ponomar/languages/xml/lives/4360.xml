@@ -1,0 +1,15 @@
+<SAINT>
+<SERVICE>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="I Cor_1:18-24" Pericope="125"/>
+<SCRIPTURE Type="gospel" Reading="Jn_19:6-11, 13-20, 25-35" Pericope="60"/>
+</LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_11:33-12:2" Cmd="dow != 0" Pericope="330"/>
+<SCRIPTURE Type="gospel" Reading="Mt_10:32-36, 11:1" Cmd="dow != 0" Pericope="38"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>

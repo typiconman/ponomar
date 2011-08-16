@@ -1,0 +1,12 @@
+<SAINT>
+<SERVICE Type="2">
+<VESPERS>
+<!-- The proper ordering of the readings is required -->
+<SCRIPTURE Type="4" Reading="Ex_3:1-8" Cmd="nday &gt; -7 &amp;&amp; (dow == 5 || dow == 6)"/>
+<SCRIPTURE Type="5" Reading="Prov_8:22-30" Cmd="nday &gt; -7 &amp;&amp; (dow == 5 || dow == 6)"/>
+<SCRIPTURE Type="1" Reading="Gen_28:10-17" Cmd="nday &lt; 0"/>
+<SCRIPTURE Type="2" Reading="Ezek_43:27-44:4" Cmd="nday &lt; 0"/>
+<SCRIPTURE Type="3" Reading="Prov_9:1-11" Cmd="nday &lt; 0"/>
+</VESPERS>
+</SERVICE>
+</SAINT>

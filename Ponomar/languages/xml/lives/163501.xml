@@ -1,0 +1,14 @@
+<SAINT>
+<!-- Transfer of the relics of St. Nicholas -->
+<SERVICE Type="4">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Prov_10:7, 6, 3:13-16"/>
+<SCRIPTURE Type="2" Reading="Prov_10:31-32, 11:1-12"/>
+<SCRIPTURE Type="3" Reading="Wisd_4:7-15"/>
+</VESPERS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_13:17-21"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

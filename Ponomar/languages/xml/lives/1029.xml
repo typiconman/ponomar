@@ -1,0 +1,11 @@
+<SAINT>
+<SERVICE>
+<MATINS>
+<SCRIPTURE Type="1" Reading="Jn_21:15-25" Cmd="dow != 0"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Cmd="dRank &lt; 5" Pericope="131"/>
+<SCRIPTURE Type="gospel" Reading="Mt_13:53-58" Cmd="dRank &lt; 5" Pericope="56"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

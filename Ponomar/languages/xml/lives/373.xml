@@ -1,0 +1,16 @@
+<SAINT>
+<SERVICE>
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Composite_6" />
+<SCRIPTURE Type="2" Reading="Isa_6:1-12" />
+<SCRIPTURE Type="3" Reading="Isa_19:1-5, 12, 16, 19-21" />
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="1" Reading="Lk_2:25-32" />
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_7:7-17" />
+<SCRIPTURE Type="gospel" Reading="Lk_2:22-40" />
+</LITURGY>
+</SERVICE>
+</SAINT>

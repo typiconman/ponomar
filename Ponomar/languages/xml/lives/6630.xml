@@ -1,0 +1,25 @@
+<SAINT>
+<!-- This is the service file for St. John of Shanghai -->
+<SERVICE Type="5">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Composite_3" />
+<SCRIPTURE Type="2" Reading="Composite_4" />
+<SCRIPTURE Type="3" Reading="Wisd_4:7-15" />
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="1" Reading="Jn_10:1-9" Pericope="35" Note="for St John"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="335" Note="for St John"/>
+<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St John"/>
+</LITURGY>
+</SERVICE>
+<!-- Autoconvert results
+<SERVICE>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Jude_1:1-25" Pericope="77"/>
+<SCRIPTURE Type="gospel" Reading="Jn_14:21-24" Pericope="48"/>
+</LITURGY>
+</SERVICE>
+-->
+</SAINT>

@@ -1,0 +1,16 @@
+<SAINT>
+≈вр., 335 зач., XIII, 17-21. Ћк., 24 зач., VI, 17-23*
+<SERVICE>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Eph_13:17-21" Pericope="335"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24"/>
+</LITURGY>
+</SERVICE>
+<!-- Originally placed here
+<SERVICE>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54"/>
+</LITURGY>
+</SERVICE> -->
+</SAINT>

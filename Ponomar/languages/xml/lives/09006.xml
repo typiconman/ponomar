@@ -1,0 +1,20 @@
+<SAINT>
+<SERVICE>
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Gen_1:1-13"/>
+<SCRIPTURE Type="2" Reading="Num_24:2-9, 17-18"/>
+<SCRIPTURE Type="3" Reading="Mica_4:6-7, 5:2-4"/>
+<SCRIPTURE Type="4" Reading="Isa_11:1-10"/>
+<SCRIPTURE Type="5" Reading="Baruch_3:36-38, 4:1-4"/>
+<SCRIPTURE Type="6" Reading="Dan_2:31-36, 44-45"/>
+<SCRIPTURE Type="7" Reading="Isa_9:6-7"/>
+<SCRIPTURE Type="8" Reading="Isa_7:10-16, 8:1-4, 8-10"/>
+<SCRIPTURE Type="9" Reading="Heb_1:1-12" Cmd="dow == 6 || dow == 0"/>
+<SCRIPTURE Type="10" Reading="Lk_2:1-20" Cmd="dow == 6 || dow == 0"/>
+</VESPERS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_1:1-12" Cmd="!(dow == 6 || dow == 0)" Pericope="303"/>
+<SCRIPTURE Type="gospel" Reading="Lk_2:1-20" Cmd="!(dow == 6 || dow == 0)" Pericope="5"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
