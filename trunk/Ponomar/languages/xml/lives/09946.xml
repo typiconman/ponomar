@@ -1,0 +1,16 @@
+<SAINT>
+<SERVICE>
+<VESPERS>
+<SCRIPTURE Type="1" Reading="III Kings_17:1-23"/>
+<SCRIPTURE Type="2" Reading="III Kings_18:1, 17-40, 44, 42, 45-56, 19:1-16"/>
+<SCRIPTURE Type="3" Reading="Composite_5"/>
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="1" Reading="Lk_4:22-30" Cmd="dow != 0"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Jas_5:10-20" Pericope="57"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:22-30" Pericope="14"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

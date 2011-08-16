@@ -1,0 +1,16 @@
+<SAINT>
+<SERVICE Type="4">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Isa_43:9-14"/>
+<SCRIPTURE Type="2" Reading="Wisd_3:1-9"/>
+<SCRIPTURE Type="3" Reading="Wisd_5:15-6:3"/>
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="1" Reading="Lk_21:12-19" Cmd="dow != 0"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_12:1-10" Pericope="331"/>
+<SCRIPTURE Type="gospel" Reading="Mt_20:1-16" Pericope="80"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

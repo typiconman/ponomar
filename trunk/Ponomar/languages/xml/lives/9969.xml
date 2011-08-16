@@ -1,0 +1,14 @@
+﻿<SAINT>
+<!-- 9969 -->
+<SERVICE Type="4">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Gen_14:14-20" />
+<SCRIPTURE Type="2" Reading="Deut_1:8-11" />
+<SCRIPTURE Type="3" Reading="Deut_10:14-21" />
+</VESPERS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_13:7-16" Pericope="334" Note="for the Holy Fathers"/>
+<SCRIPTURE Type="gospel" Reading="Jn_17:1-13" Pericope="56" Note="for the Holy Fathers"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

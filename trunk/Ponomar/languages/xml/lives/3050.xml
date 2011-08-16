@@ -1,0 +1,17 @@
+<SAINT>
+<SERVICE>
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Composite_1"/>
+<SCRIPTURE Type="2" Reading="Judg_13:2-8, 13-14, 17-18, 21"/>
+<SCRIPTURE Type="3" Reading="Composite_2"/>
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="1" Reading="Lk_1:24-25, 57-68, 76, 80" Cmd="dow != 0"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Rom_13:12-14:4" Pericope="112"/>
+<SCRIPTURE Type="gospel" Reading="Lk_1:1-25, 57-68, 76, 80" Pericope="1"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
+</SAINT>

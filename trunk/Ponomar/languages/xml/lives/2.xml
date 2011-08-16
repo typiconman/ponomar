@@ -1,0 +1,64 @@
+<SAINT>
+<SERVICE>
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Composite_6" Cmd="nday == -49"/>
+<SCRIPTURE Type="1" Reading="Isa_6:1-12" Cmd="nday == -49"/>
+<SCRIPTURE Type="1" Reading="Isa_19:1-5, 12, 16, 19-21" Cmd="nday == -49"/>
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="1" Reading="Lk_2:25-32" Cmd="nday == -49"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_7:7-17" Cmd="nday == -49" Pericope="316"/>
+<SCRIPTURE Type="gospel" Reading="Lk_2:22-40" Cmd="nday == -49" Pericope="7"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>
+</SAINT>

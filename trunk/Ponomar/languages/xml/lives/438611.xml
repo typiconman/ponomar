@@ -1,0 +1,17 @@
+<SAINT>
+<!-- This will clear all readings that would be inherited from the main file for the Transfiguration -->
+<SERVICE Type="1">
+<!--<VESPERS>
+<SCRIPTURE Type="1" Reading=""/>
+<SCRIPTURE Type="2" Reading=""/>
+<SCRIPTURE Type="3" Reading=""/>
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="1" Reading=""/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="" Pericope=""/>
+<SCRIPTURE Type="gospel" Reading="" Pericope=""/>
+</LITURGY>-->
+</SERVICE>
+</SAINT>

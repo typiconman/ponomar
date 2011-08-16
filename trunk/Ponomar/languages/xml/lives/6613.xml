@@ -1,0 +1,14 @@
+<SAINT>
+<!-- for the Russian New Martyrs -->
+<SERVICE Type="5">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Isa_43:9-14" Note="for the New Martyrs"/>
+<SCRIPTURE Type="2" Reading="Wisd_3:1-9" Note="for the New Martyrs"/>
+<SCRIPTURE Type="3" Reading="Wisd_4:7-15" Note="for the New Martyrs"/>
+</VESPERS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Rom_8:28-39" Pericope="99" Note="for the New Martyrs"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:12-19" Pericope="106" Note="for the New Martyrs"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

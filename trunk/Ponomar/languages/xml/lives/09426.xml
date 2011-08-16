@@ -1,0 +1,13 @@
+<SAINT>
+<SERVICE>
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Isa_61:1-9"/>
+<SCRIPTURE Type="2" Reading="Lev_26:3-12, 14-17, 19-20, 22, 33, 40-41"/>
+<SCRIPTURE Type="3" Reading="Wisd_4:7-15"/>
+</VESPERS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="I Tim_2:1-7" Pericope="282"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:16-22" Pericope="13"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
