@@ -1,15 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Святой мученик Анастасий"/> 
-<LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
-   Святой мученик Анастасий был учеником преподобного Макси- ма Исповедника, вместе с ним терпел гонения от монофелитов. Он описал жизнь своего учителя. Скончался в 662 году. 
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
-
+<NAME Nominative="Мч. Анастасия (662)" Short="Мч. Анастасия (662)"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
+    Святой мученик Анастасий был учеником преподобного Макси- ма Исповедника, вместе с ним терпел гонения от монофелитов. Он описал жизнь своего учителя. Скончался в 662 году. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

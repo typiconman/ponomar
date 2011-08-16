@@ -1,14 +1,4 @@
-<SAINT>
-
-<NAME Nominative=""/> 
-<LIFE Id="bulgakov">
-
-</LIFE>
-<TROPARION Tone="">
-
-</TROPARION>
-<KONTAKION Tone="">
-
-</KONTAKION>
-
+﻿<SAINT>
+<NAME Nominative="Сщмчч. Иоанна епископа и Иакова пресвитера, в Персии пострадавших (ок. 345)" Short="Сщмчч. Иоанна"/>
+<SERVICE Type="0"/>
 </SAINT>
