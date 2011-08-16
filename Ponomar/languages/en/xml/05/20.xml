@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Martyrs Thallelaeus, Alexander and Asterius (+ c.284)" Id="1108" Type="1" />
-<SAINT Name="Finding of the relics of St Alexis the Metropolitan of Moscow and Wonderworker of All Russia (1431)" Id="131" Type="3" />
-<SAINT Name="Blessed St Dovmont, baptized Timothy, the Prince of Pskov (+1299)" Id="1111" Type="0" />
-<SAINT Name="Martyr Asclas of Egypt (+ c.287)" Id="1109" Type="0" />
-<SAINT Name="Sts. Zabulon and Susanna, parents of Equal to the Apostles Nina (3rd-4th C.)" Id="2630" Type="0"/>
-<SAINT Name="Venerable Thalassius (+660)" Id="" Type="0" />
-<SAINT Name="Venerable Nikita, John, and Joseph of Chios (+1050)" Id="" Type="0" />
-
+<DAY><SAINT SId="110801" CId="110801"/>
+<SAINT SId="131" CId="13101"/>
+<SAINT SId="1111" CId="1111"/>
+<SAINT SId="110901" CId="110901"/>
+<SAINT SId="263001" CId="263001"/>
+<SAINT SId="052000" CId="052000"/>
+<SAINT SId="052001" CId="052001"/>
 </DAY>

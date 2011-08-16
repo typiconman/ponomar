@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Hieromartyr Basil of Ancyra (+363)" Id="689" Type="1" />
-<SAINT Name="Martyr Drosis the Daughter of the Emperor Trajan (104-117)" Id="690" Type="0" />
-<SAINT Name="Venerable Isaac the Founder of the Dalmatian Monastery at Constantinople (4th C)" Id="1101" Type="0" />
-<SAINT Name="Martyrs Callinica and Basilissa of Rome" Id="" Type="0" />
-<SAINT Name="Venerable Martyr Euthymius of Constantinople" Id="" Type="0" />
-<SAINT Name="Monkmartyr Euthymius of Prodromou on Mt Athos (+1814)" Id="" Type="0" />
-
+<DAY><SAINT SId="689" CId="689"/>
+<SAINT SId="690" CId="690"/>
+<SAINT SId="1101" CId="1101"/>
+<SAINT SId="032200" CId="032200"/>
+<SAINT SId="032201" CId="032201"/>
+<SAINT SId="032202" CId="032202"/>
 </DAY>

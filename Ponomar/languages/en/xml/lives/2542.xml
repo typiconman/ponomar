@@ -1,16 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Martyrs Elpidius, Marcellus and Eustochius"/> 
-<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-      Martyrs Elpidius, Marcellus and Eustochius, were burned to death for Christ
-during the reign of the Emperor Julian the Apostate.
-
-</LIFE>
-<TROPARION Tone="">
-
-</TROPARION>
-<KONTAKION Tone="">
-
-</KONTAKION>
-
+<NAME Nominative="Martyrs Elpidias, Marcellus and Eustochius, who suffered under Julian the Apostate (4th C)" Short="Martyrs Elpidias,"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+       Martyrs Elpidius, Marcellus and Eustochius, were burned to death for Christ during the reign of the Emperor Julian the Apostate. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

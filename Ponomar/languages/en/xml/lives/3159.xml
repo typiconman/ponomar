@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Holy Martyr Juliana of Nicomedia"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
-      St. Juliana, daughter of wealthy parents, while yet in childhood was betrothed to a certain nobleman. Having accepted Christ and not inclined to her Pagan groom, St. Juliana refused to be joined in marriage and for her faith in Christ was subjected to cruel torture after which she was beheaded in Nicomedia in 304. Seeing the firmness of the martyress in her suffering, 500 men and 130 women accepted Christ for which they all were cut down by the sword. The relics of St. Juliana are now in Naples. 
-</LIFE>
-<TROPARION Tone="4">
-Thy ewe-lamb Juliana crieth out to Thee with a loud voice, O Jesus:/ "I love Thee, O my Bridegroom,/ and, seeking Thee, I pass through many struggles:/ I am crucified and buried with Thee in Thy baptism,/ and suffer for Thy sake, that I may reign with Thee;/ I die for Thee that I might live with Thee./ As an unblemished sacrifice accept me,/ who sacrifice myself with love for Thee// By her supplications save Thou our souls, in that Thou art merciful.
-</TROPARION>
-<KONTAKION Tone="3" Podoben="1">
-Rendered wholly pure by the beauties of virginity,/ and having now been crowned with wreaths of martyrdom, O virgin Juliana,/ thou grantest healing and salvation/ unto those in need and affliction who approach thy shrine, for Christ poureth forth divine grace and life everlasting.
-</KONTAKION>
-
+<NAME Nominative="Virginmartyr Juliana of Nicomedia, and with her 500 Men and 150 Women (+304)" Short="Virginmartyr Juliana"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+       St. Juliana, daughter of wealthy parents, while yet in childhood was betrothed to a certain nobleman. Having accepted Christ and not inclined to her Pagan groom, St. Juliana refused to be joined in marriage and for her faith in Christ was subjected to cruel torture after which she was beheaded in Nicomedia in 304. Seeing the firmness of the martyress in her suffering, 500 men and 130 women accepted Christ for which they all were cut down by the sword. The relics of St. Juliana are now in Naples. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="4">
+ Thy ewe-lamb Juliana crieth out to Thee with a loud voice, O Jesus:/ "I love Thee, O my Bridegroom,/ and, seeking Thee, I pass through many struggles:/ I am crucified and buried with Thee in Thy baptism,/ and suffer for Thy sake, that I may reign with Thee;/ I die for Thee that I might live with Thee./ As an unblemished sacrifice accept me,/ who sacrifice myself with love for Thee// By her supplications save Thou our souls, in that Thou art merciful.
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="3">
+ Rendered wholly pure by the beauties of virginity,/ and having now been crowned with wreaths of martyrdom, O virgin Juliana,/ thou grantest healing and salvation/ unto those in need and affliction who approach thy shrine, for Christ poureth forth divine grace and life everlasting.
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

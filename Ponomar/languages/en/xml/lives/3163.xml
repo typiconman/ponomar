@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Martyr Themistocles"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
-He was born in Myra in Lycia and was a shepherd of his flock. During the Decius persecution he fearlessly confessed himself a Christian, was tortured for this and beheaded by the sword in the year 251. 
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Martyr Themistocles of Myra in Lycia (+251)" Short="Martyr Themistocles"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+ He was born in Myra in Lycia and was a shepherd of his flock. During the Decius persecution he fearlessly confessed himself a Christian, was tortured for this and beheaded by the sword in the year 251. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

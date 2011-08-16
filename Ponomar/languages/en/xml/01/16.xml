@@ -1,13 +1,8 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Acts_12:1-11" Pericope="29" Note="for St Peter"/>
-<SCRIPTURE Type="gospel" Reading="Jn_21:15-25" Pericope="67" Note="for St Peter"/>
-
-<SAINT Name="Veneration of the precious Chains of the Holy and All-Glorious Apostle Peter" Id="1785" Type="2" />
-<SAINT Name="Martyrs Speusippus, Eleusippus, Meleusippus and their Grandmother Leonilla, together with Neon, Turbo, and the woman Jonilla (Vovilla) in Cappadocia (161-180)" Id="229" Type="0" />
-<SAINT Name="Martyr Danax the Reader in Macedonia (2nd C)" Id="" Type="0" />
-<SAINT Name="Venerable Romilus" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Honoratus, Bishop of Arliev" Id="" Type="0" />
-<SAINT Name="Blessed Maxim of Totma, the Fool-for-Christ (+ 1650)" Id="1436" Type="0" />
-<SAINT Name="New Hieromartyr Damascene of Chilandar" Id="" Type="0" />
-
+<DAY><SAINT SId="1785" CId="1785"/>
+<SAINT SId="229" CId="229"/>
+<SAINT SId="231" CId="231"/>
+<SAINT SId="011601" CId="011601"/>
+<SAINT SId="011602" CId="011602"/>
+<SAINT SId="1436" CId="1436"/>
+<SAINT SId="01160399" CId="01160399"/>
 </DAY>

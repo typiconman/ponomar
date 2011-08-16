@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Holy Martyrs Agapius, Publius, Timolaus, Romulus, Alexander, Alexander, Dionysius and Dionysius of Palestine (+ 303)" Id="646" Type="1" />
-<SAINT Name="New Hieromartyr Priest Alexis (+1938)" Id="" Type="0"/>
-<SAINT Name="New Hieromartyr Priest Michael (+1940)" Id="" Type="0"/>
-<SAINT Name="Hieromartyr Alexander of Side, in Pamphylia (+ 270-275)" Id="647" Type="0" />
-<SAINT Name="Martyr Nicander of Egypt (+ c. 302)" Id="648" Type="0" />
-<SAINT Name="New Martyr Manuel of Crete" Id="" Type="0" />
-<SAINT Name="Venerable Nicander of Gorodnoezersk" Id="" Type="0" />
-
+<DAY><SAINT SId="646" CId="646"/>
+<SAINT SId="031500" CId="031500"/>
+<SAINT SId="031501" CId="031501"/>
+<SAINT SId="647" CId="647"/>
+<SAINT SId="648" CId="648"/>
+<SAINT SId="031502" CId="031502"/>
+<SAINT SId="031503" CId="031503"/>
 </DAY>

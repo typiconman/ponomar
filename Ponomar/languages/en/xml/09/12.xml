@@ -1,16 +1,9 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240" Note="for the Theotokos"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
-<SAINT Name="1" Cmd="dow == 0" />
-<SAINT Name="7" Cmd="dow == 6" />
-
-<SAINT Name="Apodosis of the Nativity of the Theotokos" Id="" Type="3" />
-<SAINT Name="Hieromartyr Autonomus the Bishop in Italy (+313) [his service is sung on the 11th]" Id="1512" Type="1" />
-<SAINT Name="Hieromartyr Coronatus, Bishop of Nicomedia (3rd C)" Id="1517" Type="0" />
-<SAINT Name="Martyr Julian of Galatia and 40 others (4th C)" Id="1515" Type="0" />
-<SAINT Name="Martyr Theodore of Alexandria" Id="1516" Type="0" />
-<SAINT Name="Venerable Bassian of Tikhsnen, Vologda (+1624)" Id="1513" Type="0" />
-<SAINT Name="Venerable Athansius of Serpukhov and his disciple Athanasius" Id="1518" Type="0" />
-<SAINT Name="Translation of the relics of Righteous Simeon of Verkhoturye (1704)" Id="1999" Type="0" />
-
+<DAY><SAINT SId="147904" CId="147904"/>
+<SAINT SId="1512" CId="1512"/>
+<SAINT SId="1517" CId="1517"/>
+<SAINT SId="1515" CId="1515"/>
+<SAINT SId="1516" CId="1516"/>
+<SAINT SId="1513" CId="1513"/>
+<SAINT SId="1518" CId="1518"/>
+<SAINT SId="199901" CId="199901"/>
 </DAY>

@@ -1,17 +1,14 @@
-<DAY>
-
-<SAINT Name="Martyrs Onisiphorus and Porphyrius of Ephesus (3rd-4th C)" Id="2503" Type="1" />
-<SAINT Name="Venerable Matrona, Abbess of Constantinople (+c.492)" Id="2405" Type="1" />
-<SAINT Name="Venerable Theoctista of the Isle of Lesbos (+881)" Id="2505" Type="1" />
-<SAINT Name="Martyr Alexander of Thessalonica (4th C)" Id="128" Type="0" />
-<SAINT Name="Martyr Anthony" Id="2508" Type="0" />
-<SAINT Name="Venerable Eustolia and Sosipatra the Queen" Id="2510" Type="0" />
-<SAINT Name="Venerable John Kolov" Id="2509" Type="0" />
-<SAINT Name="Venerable Simeon Metaphrastes" Id="" Type="0" />
-<SAINT Name="Venerable Onisiphor the Confessor, of the Caves of Kiev (+1148)" Id="2506" Type="0" />
-<SAINT Name="Venerable Euphymios and Neophytes, Founders of the Dochiariou Monastery on Mt Athos (10th C)" Id="" Type="0" />
-<SAINT Name="Venerable Helladia" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Nectarius, Metropolitan of Pentapolis" Id="" Type="0" />
-<SAINT Name="Icon of the Mother of God 'Skoroposlushnitsa'" Id="2512" Type="4" />
-
+<DAY><SAINT SId="2503" CId="2503"/>
+<SAINT SId="2405" CId="2405"/>
+<SAINT SId="2505" CId="2505"/>
+<SAINT SId="128" CId="128"/>
+<SAINT SId="2508" CId="2508"/>
+<SAINT SId="2510" CId="2510"/>
+<SAINT SId="2509" CId="2509"/>
+<SAINT SId="11090000" CId="11090000"/>
+<SAINT SId="2506" CId="2506"/>
+<SAINT SId="11090100" CId="11090100"/>
+<SAINT SId="11090299" CId="11090299"/>
+<SAINT SId="11090200" CId="11090200"/>
+<SAINT SId="2512" CId="2512"/>
 </DAY>

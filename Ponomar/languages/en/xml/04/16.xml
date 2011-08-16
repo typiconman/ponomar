@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Holy Martyrs Agape, Irene, and Chione (+304)" Id="2367" Type="1" />
-<SAINT Name="Martyr Leonidas and the Holy Martyrs Charissa, Nike, Galina, Kalisa (Kalida), Nunekhia, Basilissa, and Theodora, and others at Corinth (+258)" Id="867" Type="0" />
-<SAINT Name="Icons of the Mother of God of Tambov (1692), of Ilyinsk-Chernigov (1658)" Id="870" Type="0" />
-<SAINT Name="Martyr Irene of Greece (+258)" Id="" Type="0" />
-<SAINT Name="New Martyr Michael" Id="" Type="0" />
-<SAINT Name="Venerable Princess Theodora-Bassa of Nizhny Novgorod" Id="" Type="0" />
-
+<DAY><SAINT SId="2367" CId="2367"/>
+<SAINT SId="867" CId="867"/>
+<SAINT SId="870" CId="870"/>
+<SAINT SId="041600" CId="041600"/>
+<SAINT SId="041601" CId="041601"/>
+<SAINT SId="041602" CId="041602"/>
 </DAY>

@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Saint Paul the Confessor, Bishop of Constantinople (+ 350)" Id="2491" Type="2" />
-<SAINT Name="Venerable Varlaam, Abbot of Khutinsk (+ 1192)" Id="357" Type="3" />
-<SAINT Name="Venerable Luke of Sicily (+ c. 800-820)" Id="2492" Type="0" />
-<SAINT Name="Martyrs Tecusa, Alexandra, Polactia, Claudia, Euphrosene, Athanasia, and Matrona" Id="1093" Type="0" />
-<SAINT Name="Venerable Luke, Economos of the Caves of Kiev (13th C)" Id="6702" Type="0" />
-<SAINT Name="Repose of Saint Herman, Archbishop of Kazan (+ 1567)" Id="509" Type="0" />
-<SAINT Name="New Hieromartyr Nikita, bishop of Orekhovo-Zuevo, and those with him (+1937)" Id="4857" Type="0" />
-
+<DAY><SAINT SId="2491" CId="2491"/>
+<SAINT SId="357" CId="357"/>
+<SAINT SId="2492" CId="2492"/>
+<SAINT SId="1093" CId="1093"/>
+<SAINT SId="6702" CId="6702"/>
+<SAINT SId="50902" CId="50902"/>
+<SAINT SId="4857" CId="4857"/>
 </DAY>

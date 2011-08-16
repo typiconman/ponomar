@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="Dormition of the Righteous Anna, Mother of the Most Holy Theotokos" Id="2394" Type="3" />
-<SAINT Name="Holy Women Olympias the Deaconess (+ 408-410) of Constantinople and Eupraxia, the Virgin of Tabenna (+ 413)" Id="4301" Type="1" />
-<SAINT Name="Holy Martyrs of Lyon: Saktus, Matturus, Attalus, and Blondina" Id="" Type="0" />
-<SAINT Name="Venerable Macarius, Abbot Zheltovodsk and Unzha (+ 1444)" Id="1403" Type="3" />
-<SAINT Name="Saint Christopher of Solvychegodsk (16th C)" Id="" Type="0" />
-
+<DAY><SAINT SId="2394" CId="2394"/>
+<SAINT SId="4301" CId="4301"/>
+<SAINT SId="07250000" CId="07250000"/>
+<SAINT SId="1403" CId="1403"/>
+<SAINT SId="07250100" CId="07250100"/>
 </DAY>

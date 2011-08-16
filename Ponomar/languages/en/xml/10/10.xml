@@ -1,21 +1,16 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for the Optina Elders"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for the Optina Elders"/>
-<SAINT Name="14" Cmd="dow == 0" />
-
-<SAINT Name="Martyrs Eulampius and Eulampia, at Nicomedia, and 200 martyrs with them (+303-311)" Id="1702" Type="1" />
-<SAINT Name="Martyr Theotecnus" Id="1705" Type="0" />
-<SAINT Name="Venerable Theophilus" Id="1707" Type="0" />
-<SAINT Name="Blessed Andrew of Totemsk, the Fool-for-Christ (+1673)" Id="1704" Type="0" />
-<SAINT Name="26 Monkmartyrs of the Zographou Monastery on Mt Athos (+1284): Abbot Thomas and the monks: Barsonuphius, Cyrill, Micah, Simon, Hillarion, James, Job, Cyprian, Sabbas, another James, Martinian, Cosmas, Sergius, Minus, Joasaph, Joannicius, Paul, Anthony, Euthemius, Dometian, Parthenius, and four laymen" Id="" Type="0" />
-<SAINT Name="Venerable Bassian of Constantinople" Id="1706" Type="0" />
-<SAINT Name="Synaxis of the 7 saints of Volyn in rememberance of the return of the Pochaev Lavra to the Orthodox in 1831: Venerable Job of Pochaev" Id="" Type="0" />
-<SAINT Name="Saints Stephen and Amphilochius, Bishops of Vladimir Volynsky" Id="155" Type="0" />
-<SAINT Name="Venerable Martyr Macarius, Archimandrite of Obruch" Id="" Type="0" />
-<SAINT Name="Blessed Theodore, Prince of Ostrog" Id="" Type="0" />
-<SAINT Name="Yaropolk, Prince of Vladimir Volynsky" Id="" Type="0" />
-<SAINT Name="and Juliana, Princess of Olshansk" Id="" Type="0" />
-<SAINT Name="Saint Ambrose, Elder of Optina, the Wonderworker (+1891)" Id="4645" Type="4" />
-<SAINT Name="Synaxis of the Optina Elders: Leo, Macarius, Ambrose, Moses, Anthony, Hillarion, Isaac (the first), Anatoly (the elder), Joseph, Barsonophius, Anatoly (the younger), Nectarius, Isaac (the second), and Nikon" Id="7009" Type="4" />
-
+<DAY><SAINT SId="9914" CId="9914" Cmd="dow == 0"/>
+<SAINT SId="1702" CId="1702"/>
+<SAINT SId="1705" CId="1705"/>
+<SAINT SId="170701" CId="170701"/>
+<SAINT SId="1704" CId="1704"/>
+<SAINT SId="10100100" CId="10100100"/>
+<SAINT SId="1706" CId="1706"/>
+<SAINT SId="10100000" CId="10100000"/>
+<SAINT SId="15501" CId="15501"/>
+<SAINT SId="10100299" CId="10100299"/>
+<SAINT SId="10100399" CId="10100399"/>
+<SAINT SId="10100499" CId="10100499"/>
+<SAINT SId="10100599" CId="10100599"/>
+<SAINT SId="464501" CId="464501"/>
+<SAINT SId="7009" CId="7009"/>
 </DAY>

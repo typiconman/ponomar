@@ -1,11 +1,7 @@
-<DAY>
-<SAINT Name="9" Cmd="dow == 6" />
-
-<SAINT Name="Martyrs Marcian and Martyrios, Notaries of Constantinople (+c.355)" Id="4589" Type="1" />
-<SAINT Name="Martyr Anastasius the Fuller, at Salona in Dalmatia (3rd C)" Id="4591" Type="0" />
-<SAINT Name="Saint Tabitha, the widow raised from the dead by the Apostle Peter (1st C)" Id="4592" Type="0" />
-<SAINT Name="Venerable Kallia" Id="" Type="0" />
-<SAINT Name="Venerable Martyrius the Deacon and Martyrius the Hermit, of the Caves of Kiev (13th-15th C)" Id="6732" Type="0" />
-<SAINT Name="Venerable Matrona the Confessor (+1963)" Id="" Type="0" />
-
+<DAY><SAINT SId="4589" CId="4589"/>
+<SAINT SId="4591" CId="4591"/>
+<SAINT SId="4592" CId="4592"/>
+<SAINT SId="10250099" CId="10250099"/>
+<SAINT SId="6732" CId="6732"/>
+<SAINT SId="10250000" CId="10250000"/>
 </DAY>

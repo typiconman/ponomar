@@ -1,11 +1,8 @@
-<DAY>
-<SAINT Name="15" Cmd="dow == 6" />
-
-<SAINT Name="Holy Martyrs Leontius, Hypatius, and Theodulus in Syria (70-79)" Id="1335" Type="1" />
-<SAINT Name="Martyr Etherius" Id="" Type="0" />
-<SAINT Name="Saint Leontius the Clairvoyant of Mt. Athos (+1605)" Id="" Type="0" />
-<SAINT Name="Venerable Leontius, Canonarch of the Kiev Caves (14th C)" Id="1337" Type="0" />
-<SAINT Name="'Bogolubskaya' Icon of the Mother of God (1155)" Id="1339" Type="0" />
-<SAINT Name="New Hieromartyrs Priests Basil, Alexander, Basil, and Serge (+1938);" Id="4904" Type="0" />
-
+<DAY><SAINT SId="6630" CId="6630" Cmd="dow == 6"/>
+<SAINT SId="1335" CId="1335"/>
+<SAINT SId="06180000" CId="06180000"/>
+<SAINT SId="06180100" CId="06180100"/>
+<SAINT SId="1337" CId="1337"/>
+<SAINT SId="06180200" CId="06180200"/>
+<SAINT SId="4904" CId="4904"/>
 </DAY>

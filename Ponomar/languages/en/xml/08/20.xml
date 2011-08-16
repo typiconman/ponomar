@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="Afterfeast of the Dormition" Id="" Type="0" />
-<SAINT Name="Prophet Samuel (11th C BC)" Id="1921" Type="1" />
-<SAINT Name="Hieromartyr Philip, Bishop of Heraclius and with him the Martyrs Sevirus, Memnon, and the 37 Martyrs burned at Thrace (+304)" Id="4484" Type="0" />
-<SAINT Name="Martyr Lucius the Senator (+310)" Id="" Type="0" />
-<SAINT Name="Martyrs Iliodoros, and Dosos (+380)" Id="" Type="0" />
-
+<DAY><SAINT SId="4444" CId="444412"/>
+<SAINT SId="1921" CId="1921"/>
+<SAINT SId="4484" CId="4484"/>
+<SAINT SId="08200000" CId="08200000"/>
+<SAINT SId="08200100" CId="08200100"/>
 </DAY>

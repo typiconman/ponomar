@@ -1,14 +1,4 @@
-<SAINT>
-
-<NAME Nominative="Righteous Simeon of Verkhoturiye"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
-(life needs to be translated into English)
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+﻿<SAINT>
+<NAME Nominative="The second finding (1992) of relics of Righteous Simeon of Verkhoturye († 1642)" Short="The second"/>
+<SERVICE Type="0"/>
 </SAINT>

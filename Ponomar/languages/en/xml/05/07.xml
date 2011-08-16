@@ -1,19 +1,10 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Prov_10:7,6,3:13-16" Note="for St Nicholas" Cmd="nday == 46"/>
-<SCRIPTURE Type="vespers" Reading="Prov_10:31-32, 11:1-12" Note="for St Nicholas" Cmd="nday == 46"/>
-<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" Note="for St Nicholas" Cmd="nday == 46"/>
-<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="nday == 46" Note="for St Nicholas"/>
-<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Nicholas" Cmd="nday == 46"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Nicholas" Cmd="nday == 46"/>
-
-<SAINT Name="Transfer of the relics of St Nicholas the Wonderworker from Myra to Bari (1087) [transferred from Saturday]" Id="1635" Type="4" Cmd="nday == 46"/>
-<SAINT Name="Commemoration of the Apparition of the Sign of the Precious Cross Over Jerusalem in 351 AD" Id="1005" Type="2" />
-<SAINT Name="Martyr Acacius the Centurion at Byzantium (+303)" Id="1006" Type="1" />
-<SAINT Name="Venerable Nilus the Abbot of Sora (+1508)" Id="1652" Type="0" />
-<SAINT Name="Saint John Zedazeni and his Twelve Disciples: Abibus, Bishop of Nekressi, Anthony of Martkob, David of Gareji, Zeno of Ikalto, Thaddeus of Stepantsmind, Jesse of Tsilkani, Joseph, bishop of Alaverdi, Isidore of Samtavno, Michael of Ulompo, Pyrrhus of Breta, Stephen of Khirsa, and Shio Mgvime, in Georgia (6th C)" Id="1010" Type="0" />
-<SAINT Name="Uncovering of the relics (1815) of Venerable Nilus the Myrrh-gusher of Mt. Athos" Id="2529" Type="0"/>
-<SAINT Name="Icons of the Mother of God: 'Zhirovitskaya' and 'Liubechskaya'" Id="1011" Type="0" />
-<SAINT Name="Martyr Domitilla" Id="" Type="0" />
-<SAINT Name="New Martyr Pachomius" Id="" Type="0" />
-
+<DAY><SAINT SId="1635" CId="163501" Cmd="nday == 46"/>
+<SAINT SId="1005" CId="1005"/>
+<SAINT SId="1006" CId="1006"/>
+<SAINT SId="1652" CId="1652"/>
+<SAINT SId="1010" CId="1010"/>
+<SAINT SId="2529" CId="2529"/>
+<SAINT SId="1011" CId="1011"/>
+<SAINT SId="050700" CId="050700"/>
+<SAINT SId="050701" CId="050701"/>
 </DAY>

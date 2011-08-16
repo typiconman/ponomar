@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="Transfer from Jerusalem to Constantinople of the relics of the Protomartyr and Archdeacon Stephen (c. 428)" Id="2051" Type="2" />
-<SAINT Name="Blessed Basil of Moscow, the Fool-for-Christ (+ 1557)" Id="379" Type="3" />
-<SAINT Name="Finding of the Relics of the Righteous Nicodemus, Gamalieilus, and Abibus" Id="" Type="0" />
-<SAINT Name="Hieromartyr Fructuosus, Bishop of Tarragon and with him the deacons Eulogius and Augrius" Id="" Type="0" />
-<SAINT Name="Hieromartyr Stephen, Pope of Rome and those with him (257)" Id="4368" Type="0" />
-
+<DAY><SAINT SId="2051" CId="2051"/>
+<SAINT SId="379" CId="379"/>
+<SAINT SId="08020100" CId="08020100"/>
+<SAINT SId="08020000" CId="08020000"/>
+<SAINT SId="4368" CId="4368"/>
 </DAY>

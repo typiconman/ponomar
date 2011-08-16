@@ -1,7 +1,4 @@
-<DAY>
-
-<SAINT Name="Prophet Naum (7th C BC)" Id="3047" Type="1" />
-<SAINT Name="Martyr Ananias the Persian" Id="" Type="0" />
-<SAINT Name="Righteous Philaret the Merciful of Amnia in Asia Minor (+792)" Id="3048" Type="0" />
-
+<DAY><SAINT SId="3047" CId="3047"/>
+<SAINT SId="12010000" CId="12010000"/>
+<SAINT SId="3048" CId="3048"/>
 </DAY>

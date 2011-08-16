@@ -1,14 +1,11 @@
-﻿<DAY>
-
-<SAINT Name="Venerable Onuphrius the Great (4th C)" Id="1287" Type="2" />
-<SAINT Name="Venerable Peter of Mt. Athos (+734)" Id="9288" Type="1" />
-<SAINT Name="Uncovering of the relics (1650) and second glorification (1909) of Righteous Princess Anna of Kashin" Id="2393" Type="0"/>
-<SAINT Name="Venerable Arsenius the Abbot of Konevits (+1447)" Id="265" Type="0" />
-<SAINT Name="Venerable Onuphrius the Abbot of Malsk, Pskov (+1492)" Id="1290" Type="0" />
-<SAINT Name="Venerable Bassian and Jonah of Petroma, Solovki (+1561)" Id="1236" Type="0" />
-<SAINT Name="Venerable Onuphrius and Auxentius of Vologda (15th-16th C)" Id="" Type="0" />
-<SAINT Name="Venerable Stephen of Komel the Abbot of Ozersk Monastery, Vologda (+1542)" Id="1291" Type="0" />
-<SAINT Name="Venerable Desert Fathers: John, Andrew, Hiraclemon, and Theophilus of Egypt (4th C)" Id="" Type="0" />
-<SAINT Name="Venerable Timothy, the hermit of Egypt (4th C)" Id="" Type="0" />
-
+<DAY><SAINT SId="1287" CId="1287"/>
+<SAINT SId="09288" CId="09288"/>
+<SAINT SId="2393" CId="2393"/>
+<SAINT SId="265" CId="265"/>
+<SAINT SId="1290" CId="1290"/>
+<SAINT SId="123601" CId="123601"/>
+<SAINT SId="06120000" CId="06120000"/>
+<SAINT SId="1291" CId="1291"/>
+<SAINT SId="06120100" CId="06120100"/>
+<SAINT SId="06120200" CId="06120200"/>
 </DAY>

@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Martyrs Acyndinos, Pegasias, Aphthonios, Elpidiphoros, Anempodistus and 7,000 suffering with them in Persia (c.341-345)" Id="2474" Type="1" />
-<SAINT Name="Venerable Marcian of Cyprus (+388)" Id="148-" Type="0" />
-<SAINT Name="Hieromartyr Victorinus, Bishop of Pataba" Id="" Type="0" />
-<SAINT Name="Martyr Eustochiuma the virgin" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Theodotus, Bishop of Laodicea" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Felix, Pope of Rome" Id="" Type="0" />
-
+<DAY><SAINT SId="2474" CId="2474"/>
+<SAINT SId="1480" CId="1480"/>
+<SAINT SId="11020099" CId="11020099"/>
+<SAINT SId="11020199" CId="11020199"/>
+<SAINT SId="11020299" CId="11020299"/>
+<SAINT SId="11020399" CId="11020399"/>
 </DAY>

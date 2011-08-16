@@ -1,9 +1,7 @@
 <DAY>
-<SAINT Name="13" Cmd="dow == 0" />
-
-<SAINT Name="Hieromartyr Athenogoras, Bishop of Heracleopolis, and his 10 Disciples (+c.311)" Id="4234" Type="1" />
-<SAINT Name="Martyrs Paul and two sisters Alevtina (Valentina) and Chionea (Thea), at Caesarea in Palestine (+308)" Id="4244" Type="0" />
-<SAINT Name="Martyrs Antiochos the Physician and Faustus (4th C)" Id="4245" Type="0" />
-<SAINT Name="Virginmartyr Julia of Carthage (+ c.440 or 613)" Id="4246" Type="0" />
-
+<SAINT SId="9969" CId="9969" Cmd="dow == 0"/>
+<SAINT SId="4234" CId="4234"/>
+<SAINT SId="4244" CId="4244"/>
+<SAINT SId="4245" CId="4245"/>
+<SAINT SId="4246" CId="4246"/>
 </DAY>

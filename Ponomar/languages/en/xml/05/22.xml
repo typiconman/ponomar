@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Martyr Basiliscus the Bishop of Comana (+ c.308)" Id="391" Type="1" />
-<SAINT Name="Holy Passion-Bearer King John-Vladimir of Serbia (+1015)" Id="1027" Type="0" />
-<SAINT Name="Righteous James of Borovichi, Novgorod miracle worker (+ c.1540)" Id="868" Type="0" />
-<SAINT Name="New Hieromartyr Priest Michael (+1942)" Id="" Type="0" />
-<SAINT Name="Commemoration of the Holy Fathers of the Second Ecumenical Council (381)" Id="1126" Type="0" />
-<SAINT Name="Righteous Melchisedek, King of Salem" Id="" Type="0" />
-<SAINT Name="Martyr Sophia the healer" Id="" Type="0" />
-
+<DAY><SAINT SId="391" CId="391"/>
+<SAINT SId="1027" CId="1027"/>
+<SAINT SId="868" CId="868"/>
+<SAINT SId="052200" CId="052200"/>
+<SAINT SId="1126" CId="1126"/>
+<SAINT SId="052201" CId="052201"/>
+<SAINT SId="052202" CId="052202"/>
 </DAY>

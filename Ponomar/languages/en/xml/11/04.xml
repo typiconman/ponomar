@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="Venerable Joannicius the Great (+ 846)" Id="2482" Type="1" />
-<SAINT Name="Hieromartyrs Nicander, Bishop of Myra, and Hermes the Presbyter (1st C)" Id="2483" Type="1" />
-<SAINT Name="Blessed Simon of Yurevetsk (+ 1584)" Id="6879" Type="0" />
-<SAINT Name="Venerable Nicander, Abbot of Gorodensk (16th C)" Id="651" Type="0" />
-<SAINT Name="Venerable Mercurius, the Faster of the Kievan Caves, far caves (14th C)" Id="1520" Type="0" />
-
+<DAY><SAINT SId="2482" CId="2482"/>
+<SAINT SId="2483" CId="2483"/>
+<SAINT SId="6879" CId="6879"/>
+<SAINT SId="651" CId="651"/>
+<SAINT SId="1520" CId="1520"/>
 </DAY>

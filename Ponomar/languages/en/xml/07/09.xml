@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Hieromartyr Pancratios, Bishop of Taoromina in Sicily (1st C)" Id="1725" Type="1" />
-<SAINT Name="Hieromartyr Cyril, Bishop of Gortyna in Crete (3rd-4th C)" Id="1225" Type="0" />
-<SAINT Name="Martyr Alexander (4th C)" Id="" Type="0" />
-<SAINT Name="Venerable Patermuphios and Coprius, Ascetics in Egypt (4th C)" Id="4201" Type="0" />
-<SAINT Name="Saint Theodore, Bishop of Edessa, and those with him (9th C)" Id="4202" Type="0" />
-<SAINT Name="Venerable Anthony of Leokhnovo" Id="" Type="0" />
-
+<DAY><SAINT SId="1725" CId="1725"/>
+<SAINT SId="122501" CId="122501"/>
+<SAINT SId="07090099" CId="07090099"/>
+<SAINT SId="4201" CId="4201"/>
+<SAINT SId="4202" CId="4202"/>
+<SAINT SId="07090199" CId="07090199"/>
 </DAY>

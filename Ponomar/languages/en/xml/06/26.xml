@@ -1,13 +1,7 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Lk_1:39-49, 56" Pericope="4" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240" Note="for the Theotokos"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
-
-<SAINT Name="Appearance of the Tikhvin Icon of the Mother of God (1383)" Id="1395" Type="4" />
-<SAINT Name="Venerable David of Thessalonica (6th C)" Id="1396" Type="1" />
-<SAINT Name="St. John the Bishop of the Goths (7th C)" Id="1106" Type="0" />
-<SAINT Name="St. Dionysius the Archbishop of Suzdal (+1385)" Id="631" Type="0" />
-<SAINT Name="Icons of the Mother of God of Lidda (1st C), Niamets (1399), and the Seven Lakes (17th C)" Id="1399" Type="0" />
-<SAINT Name="New Hieromartyr Priest George (+1918)" Id="" Type="0" />
-
+<DAY><SAINT SId="1395" CId="1395"/>
+<SAINT SId="1396" CId="1396"/>
+<SAINT SId="1106" CId="1106"/>
+<SAINT SId="631" CId="631"/>
+<SAINT SId="1399" CId="1399"/>
+<SAINT SId="06260000" CId="06260000"/>
 </DAY>

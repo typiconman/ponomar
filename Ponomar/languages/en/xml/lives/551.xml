@@ -1,28 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Our Father among the Saints Gregory, Bishop of Neo-Caesarea, Wonderworker"/> 
-<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-      Born in the city of Neo-Caesarea, he received an excellent education under
-the direction of the famous Origen. Upon the completion of his education, St.
-Gregory left for the desert in which he "subdued demonic assaults and carnal
-deception", and entirely turned himself over to prayer and the study of Holy
-Scripture. Soon because of his virtuous life, the inhabitants of Neo-Caesarea
-elected him bishop. In this rank he so zealously worked at converting the pagans
-to Christ, that when he died there were only 17 pagans in Neo-Caesarea. When he
-became bishop there were only 17 Christians. St. Gregory was called
-wonderworker and another Moses because of the many miracles performed by
-him. He died about the year 270. The Holy Church blesses him as "the strong
-conqueror of atheistic evil", "giver of the laws of piety and wise teacher", "an
-imitator of the apostles as a worker of miracles", "guide of those who had gone
-astray and physician of the infirm", "giver of abundant requests to those entreating
-you, the mightiest oppressor of demons".
-
-</LIFE>
-<TROPARION Tone="8">
-By vigilance in prayer and continuance in the working of miracles,/ thou didst acquire the name of thy worthy deeds.// Yet pray thou to Christ God, O father Gregory, that He enlighten our souls, lest we sleep unto death.
-</TROPARION>
-<KONTAKION Tone="2">
-Receiving the power to work many miracles,/ thou didst terrify the demons with awesome signs,/ and didst dispel the diseases of men, O most wise Gregory./ And thou wast called the wonderworker,// receiving this title from thy works.
-</KONTAKION>
-
+<NAME Nominative="Saint Gregory the Wonderworker, Bishop of Neo-Caesarea (+c.266-270)" Short="Saint Gregory"/>
+<SERVICE Type="2"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+       Born in the city of Neo-Caesarea, he received an excellent education under the direction of the famous Origen. Upon the completion of his education, St. Gregory left for the desert in which he "subdued demonic assaults and carnal deception", and entirely turned himself over to prayer and the study of Holy Scripture. Soon because of his virtuous life, the inhabitants of Neo-Caesarea elected him bishop. In this rank he so zealously worked at converting the pagans to Christ, that when he died there were only 17 pagans in Neo-Caesarea. When he became bishop there were only 17 Christians. St. Gregory was called wonderworker and another Moses because of the many miracles performed by him. He died about the year 270. The Holy Church blesses him as "the strong conqueror of atheistic evil", "giver of the laws of piety and wise teacher", "an imitator of the apostles as a worker of miracles", "guide of those who had gone astray and physician of the infirm", "giver of abundant requests to those entreating you, the mightiest oppressor of demons". 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="8">
+ By vigilance in prayer and continuance in the working of miracles,/ thou didst acquire the name of thy worthy deeds.// Yet pray thou to Christ God, O father Gregory, that He enlighten our souls, lest we sleep unto death.
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="2">
+ Receiving the power to work many miracles,/ thou didst terrify the demons with awesome signs,/ and didst dispel the diseases of men, O most wise Gregory./ And thou wast called the wonderworker,// receiving this title from thy works.
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

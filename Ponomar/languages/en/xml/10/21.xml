@@ -1,14 +1,11 @@
-<DAY>
-<SAINT Name="9" Cmd="dow == 6" />
-
-<SAINT Name="Venerable Hilarion the Great (+ 371-372)" Id="4561" Type="2" />
-<SAINT Name="Transfer of the relics of Saint Hilarion, Bishop of Meglina in Bulgaria (1206)" Id="928" Type="2" />
-<SAINT Name="Martyrs Dasius, Gaius, and Zoticus" Id="4567" Type="0" />
-<SAINT Name="Venerable Hilarion, Abbot of Pskovoezersk" Id="933" Type="0" />
-<SAINT Name="Venerable Theophilus and James, Abbots of Omucha in Pskov (c. 1412)" Id="4566" Type="0" />
-<SAINT Name="Saint Hilarion the Schema-Monk of the Caves of Kiev (16th C)" Id="932" Type="0" />
-<SAINT Name="Venerable Theophilus of Mt Athos" Id="" Type="0" />
-<SAINT Name="New Martyr John of the Peloponesis" Id="" Type="0" />
-<SAINT Name="New Hieromartyrs Pavlin, Bishop of Mogilev, Artemiy, Archbishop of Ekaterinburg, and those with them (+1937)" Id="4882" Type="0" />
-
+<DAY><SAINT SId="9913" CId="9913" Cmd="dow == 6"/>
+<SAINT SId="4561" CId="4561"/>
+<SAINT SId="92801" CId="92801"/>
+<SAINT SId="4567" CId="4567"/>
+<SAINT SId="933" CId="933"/>
+<SAINT SId="4566" CId="4566"/>
+<SAINT SId="93201" CId="93201"/>
+<SAINT SId="10210000" CId="10210000"/>
+<SAINT SId="10210199" CId="10210199"/>
+<SAINT SId="4882" CId="4882"/>
 </DAY>

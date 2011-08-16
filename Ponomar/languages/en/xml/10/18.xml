@@ -1,15 +1,10 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Col_4:5-9, 14, 18" Pericope="260 (mid)" Note="for the Apostle"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:16-21" Pericope="51" Note="for the Apostle"/>
-
-<SAINT Name="Holy Apostle and Evangelist Luke (1st C)" Id="1764" Type="4" />
-<SAINT Name="Martyr Marinus the Elder at Anazarbus (4th C)" Id="1767" Type="0" />
-<SAINT Name="Venerable Julian the Hermit, of Mesopotamia (4th C)" Id="1768" Type="0" />
-<SAINT Name="Venerable David of Serpukhov (+1520)" Id="" Type="0" />
-<SAINT Name="St Mnason, Bishop of Cyprus" Id="" Type="0" />
-<SAINT Name="Hieromartyr Asklipiades, Archbishop of Antioch" Id="" Type="0" />
-<SAINT Name="St Peter, Metropolitan of Chernigov" Id="" Type="0" />
-<SAINT Name="New Hieromartyrs Gabriel and Cormidolus of Egypt" Id="" Type="0" />
-
+<DAY><SAINT SId="9913" CId="9913" Cmd="dow == 6"/>
+<SAINT SId="176401" CId="176401"/>
+<SAINT SId="1767" CId="1767"/>
+<SAINT SId="1768" CId="1768"/>
+<SAINT SId="10170100" CId="10170100"/>
+<SAINT SId="10170000" CId="10170000"/>
+<SAINT SId="10180299" CId="10180299"/>
+<SAINT SId="10180399" CId="10180399"/>
+<SAINT SId="10170200" CId="10170200"/>
 </DAY>

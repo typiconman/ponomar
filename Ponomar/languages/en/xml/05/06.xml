@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Righteous Job the Long-Suffering (c.2000-1500 BC)" Id="1035" Type="1" />
-<SAINT Name="Venerable Micah of Radonezh (+1385)" Id="1565" Type="0"/>
-<SAINT Name="Venerable Job, Abbot and Wonderworker of Pochaev (17th C)" Id="1037" Type="0" />
-<SAINT Name="Martyrs Barbarus the Soldier, and together with him Bacchus, Callimachus and Dionysius in Morea (+ c.362)" Id="1002" Type="0" />
-<SAINT Name="Martyr Barbarus in Thessaly, who was a robber" Id="1003" Type="0" />
-<SAINT Name="New Martyr Vuka&#353;in (+1943)" Id="" Type="0" />
-
+<DAY><SAINT SId="1035" CId="1035"/>
+<SAINT SId="1565" CId="1565"/>
+<SAINT SId="1037" CId="1037"/>
+<SAINT SId="1002" CId="1002"/>
+<SAINT SId="1003" CId="1003"/>
+<SAINT SId="050600" CId="050600"/>
 </DAY>

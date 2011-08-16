@@ -1,17 +1,14 @@
-<DAY>
-
-<SAINT Name="Virginmartyr Pelagia of Tarsus, in Asia Minor (+ c.290)" Id="2643" Type="1" />
-<SAINT Name="New Hieromartyr Priest John (+1942)" Id="" Type="0"/>
-<SAINT Name="New Hieromartyr Deacon Nicholas (+1943)" Id="" Type="0"/>
-<SAINT Name="Venerable brothers Alfanov: Nikita, Cyril, Nicephorus, Clement, and Isaac, of Novgorod (14th-15th C)" Id="990" Type="0" />
-<SAINT Name="Hieromartyr Erasmus the Bishop of Formia in Campania (+303)" Id="991" Type="0" />
-<SAINT Name="Hieromartyr Albian the Bishop of Anaea in Asia Minor (+304)" Id="992" Type="0" />
-<SAINT Name="Hieromartyr Silvanus the Bishop of Gaza, and with him 40 Martyrs (+311)" Id="1990" Type="0" />
-<SAINT Name="Icon of the Mother of God of Staraya Rusa (1570)" Id="995" Type="0" />
-<SAINT Name="Transfer of the Relics of the Righteous Lazarus and the Holy Equal-to-the-Apostles Mary Magdalene" Id="" Type="0" />
-<SAINT Name="Venerable Martyrs of Palestine: Afrodisus, Leontius, Anthony, Valerianus, Macrobius, and others" Id="" Type="0" />
-<SAINT Name="St Athanasius, Bishop of Corinth" Id="" Type="0" />
-<SAINT Name="Venerable Nicephorus of Midicea" Id="" Type="0" />
-<SAINT Name="Another Venerable Nicephorus" Id="" Type="0" />
-
+<DAY><SAINT SId="2643" CId="2643"/>
+<SAINT SId="050400" CId="050400"/>
+<SAINT SId="050401" CId="050401"/>
+<SAINT SId="990" CId="990"/>
+<SAINT SId="991" CId="991"/>
+<SAINT SId="992" CId="992"/>
+<SAINT SId="1990" CId="1990"/>
+<SAINT SId="995" CId="995"/>
+<SAINT SId="050404" CId="050404"/>
+<SAINT SId="050402" CId="050402"/>
+<SAINT SId="050403" CId="050403"/>
+<SAINT SId="050406" CId="050406"/>
+<SAINT SId="05040699" CId="05040699"/>
 </DAY>

@@ -1,16 +1,9 @@
-<DAY>
-<SAINT Name="5" Cmd="dow == 0 || dow == 1" />
-<SAINT Name="17" Cmd="dow == 6" />
-<SCRIPTURE Type="apostol" Reading="Heb_2:11-18" Pericope="306" Note="for the feast" Cmd="dow != 0"/>
-<SCRIPTURE Type="gospel" Reading="Mt_2:13-23" Pericope="4" Note="for the feast" Cmd="dow != 0"/>
-
-<SAINT Name="Second Day of the Feast of the Nativity of Our Lord. Synaxis of the Most-Holy Theotokos" Id="3177" Type="3" />
-<SAINT Name="Hieromartyr Euthymius, Bishop of Sardis (+ c. 840)" Id="3181" Type="1" />
-<SAINT Name="Venerable Evaristus of the Studion Monastery (9th C)" Id="3183" Type="0" />
-<SAINT Name="Venerable Constantine of Synada (8th C)" Id="3182" Type="0" />
-<SAINT Name="Holy Hierarch Archelaus, Bishop of Kaskhara" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Constantine the Russian, of the Lavra on Mt Athos (+ 1743)" Id="" Type="0" />
-<SAINT Name="Venerable Martyr Isaaki II of Optina (+1938)" Id="4637" Type="0" />
-<SAINT Name="Icons of the Mother of God 'Kikkskaya' and 'Helper in labor'" Id="2530" Type="0" />
-
+<DAY><SAINT SId="3177" CId="3177"/>
+<SAINT SId="3181" CId="3181"/>
+<SAINT SId="3183" CId="3183"/>
+<SAINT SId="3182" CId="3182"/>
+<SAINT SId="12260099" CId="12260099"/>
+<SAINT SId="12260200" CId="12260200"/>
+<SAINT SId="4637" CId="4637"/>
+<SAINT SId="2530" CId="2530"/>
 </DAY>

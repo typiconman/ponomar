@@ -1,14 +1,16 @@
-<SAINT>
-
-<NAME Nominative="Holy Martyress Theodosia of Tyre"/> 
+﻿<SAINT>
+<NAME Nominative="Virginmartyr Theodosia of Tyre († 307-308) and Martyr Irene" Short="Virginmartyr Theodosia"/>
+<SERVICE Type="0"/>
 <LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
-The Holy Martyress Theodosia of Tyre suffered for Christ in the year 307 or 308, and the account of her life is under 3 April. On 29 May is celebrated the memory of the transfer of her relics to Constantinople and Venice.
-</LIFE>
-<TROPARION Tone="4">
-Thou didst right-pleasingly attain unto virtue, O martyr,/ and becamest a pure habitation of Christ, the beloved abode of the Holy Spirit./ Wherefore, suffering well,/ thou didst put to shame the enemy who wageth war upon the human race./ and didst cut down Copronymus with the sword of the Faith, O Theodosia;/ and, rejoicing, thou hast passed over to the heavenly bridal-chamber.// Ask thou great mercy for those who ever honor thee with faith.
-</TROPARION>
-<KONTAKION Tone="2" Podoben="3">
-Through labors thou didst attain unto the life abounding in ease, O martyr,/ and with thy blood thou didst choke Copronymus,/ the enemy of the Church of Christ,/ O most blessed Theodosia;/ and thou dost rejoice with the armies on high,// protecting those who honor thy memory.
-</KONTAKION>
-
+ The Holy Martyress Theodosia of Tyre suffered for Christ in the year 307 or 308, and the account of her life is under 3 April. On 29 May is celebrated the memory of the transfer of her relics to Constantinople and Venice.
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="4">
+ Thou didst right-pleasingly attain unto virtue, O martyr,/ and becamest a pure habitation of Christ, the beloved abode of the Holy Spirit./ Wherefore, suffering well,/ thou didst put to shame the enemy who wageth war upon the human race./ and didst cut down Copronymus with the sword of the Faith, O Theodosia;/ and, rejoicing, thou hast passed over to the heavenly bridal-chamber.// Ask thou great mercy for those who ever honor thee with faith.
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="2">
+ Through labors thou didst attain unto the life abounding in ease, O martyr,/ and with thy blood thou didst choke Copronymus,/ the enemy of the Church of Christ,/ O most blessed Theodosia;/ and thou dost rejoice with the armies on high,// protecting those who honor thy memory.
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

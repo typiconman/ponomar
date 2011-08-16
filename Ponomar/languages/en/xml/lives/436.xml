@@ -1,14 +1,4 @@
 <SAINT>
-
-<NAME Nominative="St. Boniface the Merciful, Bishop of Ferentino"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
-He was born in the province of Tuscany, Italy and lived in the Sixth Century. He was glorified for disinterestedness, love for the poor and working wonders. 
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Saint Anthony, Patriarch of Constantinople (+ 895)" Short="Saint Anthony"/>
+<SERVICE Type="0"/>
 </SAINT>

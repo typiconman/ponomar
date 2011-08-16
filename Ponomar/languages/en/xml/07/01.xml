@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Holy Unmercenaries Cosmas and Damian, Martyrs at Rome (+ 284)" Id="1298" Type="2" />
-<SAINT Name="Martyr Potitus at Naples (2nd C)" Id="4133" Type="0" />
-<SAINT Name="Venerable Peter of Constantinople (+ 854)" Id="4134" Type="0" />
-<SAINT Name="Venerable Nicodemus the Hagiorite" Id="" Type="0" />
-<SAINT Name="Venerable Basil (9th C)" Id="" Type="0" />
-<SAINT Name="Blessed Angelina, Princess of Serbia (16th C)" Id="2386" Type="0" />
-
+<DAY><SAINT SId="1298" CId="1298"/>
+<SAINT SId="4133" CId="4133"/>
+<SAINT SId="4134" CId="4134"/>
+<SAINT SId="07010099" CId="07010099"/>
+<SAINT SId="07010000" CId="07010000"/>
+<SAINT SId="2386" CId="2386"/>
 </DAY>

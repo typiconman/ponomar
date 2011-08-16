@@ -1,8 +1,4 @@
-<DAY>
-<SAINT Name="16" Cmd="dow == 0" />
-
-<SAINT Name="Martyrs Thyrsos, Leukios, Callinicos of Apollonia (+ 249-251)" Id="3116" Type="1" />
-<SAINT Name="Martyrs Philemon, Apollonios, Arian and Theotychos (+ 286-287)" Id="3117" Type="1" />
-<SAINT Name="New Martyr Priest Nicholas (+1937)" Id="" Type="0" />
-
+<DAY><SAINT SId="3116" CId="3116"/>
+<SAINT SId="3117" CId="3117"/>
+<SAINT SId="12140000" CId="12140000"/>
 </DAY>

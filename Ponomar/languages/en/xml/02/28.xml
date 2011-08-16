@@ -1,14 +1,12 @@
-<DAY>
-
-<SAINT Name="On this day, we sing the service for the Finding of the Head of the Forerunner" Id="1007" Type="4" Cmd="nday == 43" />
-<SAINT Name="Venerable Basil the Confessor, companion of the Venerable Procopius at Decapolis (+ c. 750)" Id="523" Type="1" />
-<SAINT Name="Hieromartyr Proterius the Patriarch of Alexandria (+ 457)" Id="526" Type="0" />
-<SAINT Name="Hieromartyr Nestor, Bishop of Magydos in Pamphylia (+250)" Id="527" Type="0" />
-<SAINT Name="Venerable women: Marina, Kyra, and Dominica of Syria (+ c. 450)" Id="528" Type="0" />
-<SAINT Name="Apostles of the 70: Nymphus and Ebbulus" Id="" Type="0" />
-<SAINT Name="New Martyr Kyr-Anna" Id="" Type="0" />
-<SAINT Name="Blessed Nicholas Salos of Pskov the Fool-For-Christ (+1576)" Id="1636" Type="0" />
-<SAINT Name="Holy Right-believing Great Prince Yaroslav" Id="" Type="0" />
-<SAINT Name="Hieromartyr Arsenius, Metropolitan of Rostov (+1772)" Id="4762" Type="0" />
-
+<DAY><SAINT SId="1007" CId="09107" Cmd="nday == 43"/>
+<SAINT SId="523" CId="523"/>
+<SAINT SId="526" CId="526"/>
+<SAINT SId="527" CId="527"/>
+<SAINT SId="528" CId="528"/>
+<SAINT SId="022800" CId="022800"/>
+<SAINT SId="02280199" CId="02280199"/>
+<SAINT SId="1636" CId="1636"/>
+<SAINT SId="02280299" CId="02280299"/>
+<SAINT SId="4762" CId="4762"/>
+<!-- Feb 29th needs to be placed here -->
 </DAY>

@@ -1,14 +1,11 @@
-<DAY>
-<SAINT Name="15" Cmd="dow == 6" />
-
-<SAINT Name="Hieromartyr Methodius the Bishop of Patara (+312)" Id="1353" Type="1" />
-<SAINT Name="Holy Martyrs Aristocles the Presbyter, Demetrian, and Athanasius the Reader (+ c.306)" Id="1352" Type="0" />
-<SAINT Name="Holy Martyrs Inna, Pinna, and Rimma (1st-2nd C), the Scythians" Id="949" Type="0" />
-<SAINT Name="St. Leucius the Bishop of Brindisi (5th C)" Id="1355" Type="0" />
-<SAINT Name="Holy Prince Gleb of Vladimir, named George in holy Baptism (+1175)" Id="1358" Type="0" />
-<SAINT Name="Transfer of the Relics of Saint Gurias, Archbishop of Kazan (1630)" Id="553" Type="0" />
-<SAINT Name="Venerable Naum, disciple of Sts Cyrill and Methodius" Id="" Type="0" />
-<SAINT Name="Venerable Callistos and 2 other desert-dwellers" Id="" Type="0" />
-<SAINT Name="Venerable Callistos, Patriarch of Constantinople;" Id="" Type="0" />
-
+<DAY><SAINT SId="6630" CId="6630" Cmd="dow == 6"/>
+<SAINT SId="1353" CId="1353"/>
+<SAINT SId="1352" CId="1352"/>
+<SAINT SId="949" CId="949"/>
+<SAINT SId="1355" CId="1355"/>
+<SAINT SId="1358" CId="1358"/>
+<SAINT SId="55300" CId="55301"/>
+<SAINT SId="06200000" CId="06200000"/>
+<SAINT SId="06200199" CId="06200199"/>
+<SAINT SId="06201000" CId="06201000"/>
 </DAY>

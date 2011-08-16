@@ -1,18 +1,15 @@
-<DAY>
-
-<SAINT Name="St. Metrophanes the first Patriarch of Constantinople (+ c.326)" Id="1224" Type="1" />
-<SAINT Name="New Hieromartyr Priest Peter (+1918)" Id="" Type="0" />
-<SAINT Name="Venerable Methodius the Abbot of Pashnoshsk (+1392)" Id="1303" Type="0" />
-<SAINT Name="Holy Martyrs Frontasius, Severinus, Severianus and Silanus (1st C)" Id="1227" Type="0" />
-<SAINT Name="Holy Martyr Concordius (+ c.175)" Id="1225" Type="0"/>
-<SAINT Name="Hieromartyr Astius the Bishop of Dyrrachium (2nd C)" Id="1226" Type="0" />
-<SAINT Name="St. Zosimus, bishop of Babylon in Egypt (6th C)" Id="1228" Type="0" />
-<SAINT Name="New Hieromartyr Joannicius, Metropolitan of Montenegro and the Littoral (+1945)" Id="" Type="0" />
-<SAINT Name="Sts Martha and Mary, the sisters of Lazarus (1st C)" Id="" Type="0" />
-<SAINT Name="Venerable Sophia of Thrace (10th-11th C)" Id="" Type="0" />
-<SAINT Name="Venerable Alonius of Egypt (5th C)" Id="" Type="0" />
-<SAINT Name="Venerable Optatus, bishop of Milevum (+376)" Id="060412" Type="0" />
-<SAINT Name="Venerable Eleazar and Nazarius, Wonderworkers of Olonets (15th C)" Id="" Type="0" />
-<SAINT Name="New Hieromartyrs Andronicus, Archbishop of Perm, Basil, Archbishop of Chernigov, and those with them (+1918)" Id="" Type="0" />
-
+<DAY><SAINT SId="1224" CId="1224"/>
+<SAINT SId="06040000" CId="06040000"/>
+<SAINT SId="1303" CId="1303"/>
+<SAINT SId="1227" CId="1227"/>
+<SAINT SId="1225" CId="1225"/>
+<SAINT SId="1226" CId="1226"/>
+<SAINT SId="1228" CId="1228"/>
+<SAINT SId="06040100" CId="06040100"/>
+<SAINT SId="06040200" CId="06040200"/>
+<SAINT SId="06040500" CId="06040500"/>
+<SAINT SId="06040300" CId="06040300"/>
+<SAINT SId="060412" CId="060412"/>
+<SAINT SId="06040600" CId="06040600"/>
+<SAINT SId="06040699" CId="06040699"/>
 </DAY>

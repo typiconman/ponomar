@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Martyrs Proclus and Hilarion (2nd C)" Id="4220" Type="1" />
-<SAINT Name="Venerable Michael of Maleinus (+ 962)" Id="1555" Type="1" />
-<SAINT Name="Martyr Golinducha, in baptism Mary, of Persia (+ 591)" Id="4224" Type="0" />
-<SAINT Name="Martyrs Theodore the Varangian, and his son John, of Kiev (+ 983)" Id="2180" Type="0" />
-<SAINT Name="Righteous Veronica (1st C)" Id="" Type="0" />
-<SAINT Name="Venerable Arsenius of Novgorod" Id="6449" Type="0" />
-<SAINT Name="Venerable Simon, Abbot of Volomsk (+ 1641)" Id="2013" Type="0" />
-<SAINT Name="Venerable John and Gabriel the Hageorites (Georgian Church)" Id="6627" Type="0" />
-<SAINT Name="Blessed Serapion of Vladimmir" Id="" Type="0" />
-<SAINT Name="The Three-handed Icon of the Mother of God" Id="2994" Type="4"/>
-
+<DAY><SAINT SId="4220" CId="4220"/>
+<SAINT SId="1555" CId="1555"/>
+<SAINT SId="4224" CId="4224"/>
+<SAINT SId="2180" CId="2180"/>
+<SAINT SId="07120000" CId="07120000"/>
+<SAINT SId="6449" CId="6449"/>
+<SAINT SId="2013" CId="2013"/>
+<SAINT SId="6627" CId="6627"/>
+<SAINT SId="07120100" CId="07120100"/>
+<SAINT SId="2994" CId="2994"/>
 </DAY>

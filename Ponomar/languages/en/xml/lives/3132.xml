@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Blessed Empress Theophania, first wife of Emperor Leo the Philosopher"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
-By the slander of a bishop, she together with her husband (then still an heir to the throne) suffered a three-year prison sentence. After she was released, she spent her life in prayer and fasting. Meekness, mercy and fervent contrition for her sins were the distinctive good deeds of St. Theophania. She died in the year 892. Her relics are in Constantinople in the Patriarchate. 
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Blessed Empress Theophania (+ c. 893-894)" Short="Blessed Empress"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+ By the slander of a bishop, she together with her husband (then still an heir to the throne) suffered a three-year prison sentence. After she was released, she spent her life in prayer and fasting. Meekness, mercy and fervent contrition for her sins were the distinctive good deeds of St. Theophania. She died in the year 892. Her relics are in Constantinople in the Patriarchate. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

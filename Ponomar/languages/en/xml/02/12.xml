@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Saint Meletios, Archbishop of Antioch (+ 381)" Id="4627" Type="1" />
-<SAINT Name="Saint Alexis, Metropolitan of Moscow and Wonderworker of All Russia (+ 1378)" Id="131" Type="4"/>
-<SAINT Name="Saint Anthony, Patriarch of Constantinople (+ 895)" Id="436" Type="0" />
-<SAINT Name="Venerable Mary (known as the Monk Marinus), and her father, the Venerable Eugene at Alexandria (6th C)" Id="435" Type="0" />
-<SAINT Name="Hieromartyr Urbanus, Bishop of Rome" Id="" Type="0" />
-<SAINT Name="Venerable Callia of Constantinople" Id="" Type="0" />
-<SAINT Name="St Meletius the Archbishop of Kharkov (+ 1840)" Id="1510" Type="0" />
-<SAINT Name="New Martyr Christus of Albania (+ 1748)" Id="" Type="0" />
-<SAINT Name="Iveron Icon of the Mother of God (9th C)" Id="2858" Type="0" />
-
+<DAY><SAINT SId="4627" CId="4627"/>
+<SAINT SId="131" CId="131"/>
+<SAINT SId="436" CId="436"/>
+<SAINT SId="43501" CId="43501"/>
+<SAINT SId="02120099" CId="02120099"/>
+<SAINT SId="02120199" CId="02120199"/>
+<SAINT SId="1510" CId="1510"/>
+<SAINT SId="02120299" CId="02120299"/>
+<SAINT SId="2858" CId="2858"/>
 </DAY>

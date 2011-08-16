@@ -1,15 +1,10 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Acts_26:1-5, 12-20" Pericope="49" Note="for Sts Constantine and Helen"/>
-<SCRIPTURE Type="gospel" Reading="Jn_10:1-9" Pericope="35" Note="for Sts Constantine and Helen"/>
-
-<SAINT Name="Meeting of the Vladimir Icon of the Mother of God (established in memory of the deliverance of Moscow from the Tatar invasion led by Crimean Khan Makhmet-Girei in 1521)" Id="2812" Type="4" />
-<SAINT Name="Holy Equal-to-the-Apostles Emperor Constantine the Great (+337) with his Mother Helen (+327)" Id="1270" Type="4" />
-<SAINT Name="Venerable Prince Yaroslav, (in baptism Constantine) (+1129), with his children Michael and Theodore, Wonderworkers of Murom (12th C)" Id="1276" Type="3" />
-<SAINT Name="Uncovering of the relics of Blessed Andrew of Simbirsk (1998)" Id="" Type="0" />
-<SAINT Name="Venerable Cassian the Greek of Uglich (+1504)" Id="1654" Type="0" />
-<SAINT Name="Synaxis of All Saints of Karelia" Id="" Type="0" />
-<SAINT Name="Revered lists of the Vladimir Icon of the Mother of God: the Pskov-Pechersk 'Tenderness' (1524), Zaonikievskaya (1588), Krasnogorskaya or Montenegro (1603), Orange (1634)" Id="2997" Type="0" />
-<SAINT Name="Venerable Agapit of Markushev (+1584)" Id="" Type="0" />
-<SAINT Name="New Martyr Pachomius (+1730)" Id="" Type="0" />
-
+<DAY><SAINT SId="2812" CId="2812"/>
+<SAINT SId="1270" CId="1270"/>
+<SAINT SId="1276" CId="1276"/>
+<SAINT SId="052100" CId="052100"/>
+<SAINT SId="1654" CId="1654"/>
+<SAINT SId="052101" CId="052101"/>
+<SAINT SId="2997" CId="2997"/>
+<SAINT SId="05210299" CId="05210299"/>
+<SAINT SId="052104" CId="052104"/>
 </DAY>

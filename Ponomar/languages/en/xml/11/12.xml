@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="Saint John the Merciful, Patriarch of Alexandria (+612)" Id="2526" Type="2" />
-<SAINT Name="Venerable Nilus the Faster, of Sinai (5th C)" Id="2527" Type="1" />
-<SAINT Name="Prophet Ahijah (c +960 BC)" Id="2528" Type="0" />
-<SAINT Name="St Leo Stipiotes, Patriarch of Constantinople" Id="" Type="0" />
-<SAINT Name="Venerable Nilus the Myrrhstreaming of Mt Athos (17th C)" Id="2529" Type="0" />
-<SAINT Name="Venerable Martin, Bishop of Frangia" Id="" Type="0" />
-<SAINT Name="Blessed John 'the Hairy', at Rostov (+1580)" Id="967" Type="0" />
-<SAINT Name="New Martyrs Sabbas and Nicholas of Constantinople" Id="" Type="0" />
-
+<DAY><SAINT SId="252601" CId="252601"/>
+<SAINT SId="2527" CId="2527"/>
+<SAINT SId="2528" CId="2528"/>
+<SAINT SId="11120000" CId="11120000"/>
+<SAINT SId="252901" CId="252901"/>
+<SAINT SId="11120199" CId="11120199"/>
+<SAINT SId="96701" CId="96701"/>
+<SAINT SId="11120299" CId="11120299"/>
 </DAY>

@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="Venerable Kyriakos the Hermit of Palestine (+556)" Id="1626" Type="2" />
-<SAINT Name="Venerable Theophanes the Merciful of Gaza" Id="1628" Type="0" />
-<SAINT Name="Martyrs Dadas, Habeddai, Casdoe or (Kazdoia) of Persia (4th C)" Id="1627" Type="0" />
-<SAINT Name="Venerable Gudelia of Persia" Id="" Type="0" />
-<SAINT Name="Holy 80 Martyrs at Byzantium" Id="" Type="0" />
-<SAINT Name="Venerable Mary of Palestine" Id="" Type="0" />
-<SAINT Name="New Hieromartyr John, Archbishop of Riga (+1934)" Id="" Type="0" />
-<SAINT Name="Finding of the Relics of St John, Archbishop and Wonderworker of Shanghai, Western Europe, and San Francisco (1993)" Id="6630" Type="0" />
-
+<DAY><SAINT SId="1626" CId="1626"/>
+<SAINT SId="1628" CId="1628"/>
+<SAINT SId="162701" CId="162701"/>
+<SAINT SId="09290000" CId="09290000"/>
+<SAINT SId="09290100" CId="09290100"/>
+<SAINT SId="09290299" CId="09290299"/>
+<SAINT SId="09290300" CId="09290300"/>
+<SAINT SId="6630" CId="663001"/>
 </DAY>

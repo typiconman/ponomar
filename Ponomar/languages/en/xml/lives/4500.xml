@@ -1,13 +1,16 @@
-
 <SAINT>
-<NAME Nominative="Martyr Luppos"/> 
-<LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
-The Martyr Luppos lived at the end of the III Century - beginning II Century, and was a faithful servant of the holy GreatMartyr Demetrios of Soluneia (Thessalonika, Comm. 26 October). Being present at the death of his master, he soaked his own clothing with his blood and took a ring from his hand. With this clothing, and likewise with the ring and the name of the GreatMartyr Demetrios, Saint Luppos worked at Soluneia many miracles. He destroyed pagan idols, for which he was subjected to persecution by the pagans, but by the power of God he was preserved unharmed. Saint Luppos voluntarily delivered himself over into the hands of the torturers and by order of the emperor Maximian Galerius he was beheaded by the sword (+ post 306).
-</LIFE>
-<TROPARION Tone="1">
 
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
+<NAME Nominative="Martyr Lupus, the slave of St Demetrius of Thessalonica (+c.306)" Short="Martyr Lupus,"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+ The Martyr Luppos lived at the end of the III Century - beginning II Century, and was a faithful servant of the holy GreatMartyr Demetrios of Soluneia (Thessalonika, Comm. 26 October). Being present at the death of his master, he soaked his own clothing with his blood and took a ring from his hand. With this clothing, and likewise with the ring and the name of the GreatMartyr Demetrios, Saint Luppos worked at Soluneia many miracles. He destroyed pagan idols, for which he was subjected to persecution by the pagans, but by the power of God he was preserved unharmed. Saint Luppos voluntarily delivered himself over into the hands of the torturers and by order of the emperor Maximian Galerius he was beheaded by the sword (+ post 306).
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

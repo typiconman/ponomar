@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Commemoration of the Miracle of the Archangel Michael at Chonah (4th C)" Id="91547" Type="2" />
-<SAINT Name="St. Archippus of Herapolis (4th C)" Id="1463" Type="0" />
-<SAINT Name="Martyrs Eudoxius, Zeno, Macarius and 1104 soldiers with them (311-312)" Id="1462" Type="1" />
-<SAINT Name="Martyr Cyriacus, Faustus the Presbyter, Abibas the Deacon, and 11 others at Alexandria (+c.250)" Id="1464" Type="0" />
-<SAINT Name="Martry Romulus and 11,000 soldiers (+c.107-115)" Id="1464" Type="0"/>
-<SAINT Name="Holy Hierarch Cyril, Bishop of Gortyna (3rd-4th C)" Id="1225" Type="0" />
-<SAINT Name="St. David of Hermopolis in Egypt (6th C)" Id="1467" Type="0" />
-
+<DAY><SAINT SId="91547" CId="91547"/>
+<SAINT SId="1463" CId="1463"/>
+<SAINT SId="1462" CId="1462"/>
+<SAINT SId="1464" CId="1464"/>
+<SAINT SId="146401" CId="146401"/>
+<SAINT SId="122501" CId="122501"/>
+<SAINT SId="1467" CId="1467"/>
 </DAY>

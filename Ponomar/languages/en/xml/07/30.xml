@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Holy Apostles of the 70: Silas and Sylvanus, and those with them: Criscentus, Epenetus and Andronicus (1st C)" Id="4349" Type="1" />
-<SAINT Name="Hieromartyr Valentine, Bishop of Interamna (terni) in Italy (+ c.273) and those with him: Proculus, Eutheus, Appolonius, and Aundius" Id="336" Type="0" />
-<SAINT Name="Martyr John, the soldier at Constantinople (4th C)" Id="969" Type="0" />
-<SAINT Name="Hieromartyrs Polychronios, Bishop of Babylon, and those with him: Parmenius, Elminus, and Christotelus the Presbyters, Luke and Muko the Deacons, Audon, Senes, Olympius, and Maxim (+c 251)" Id="4352" Type="0" />
-<SAINT Name="Holy Hierarch Timothy II, the Confessor, Patriarch of Alexandria" Id="" Type="0" />
-<SAINT Name="Venerable Angelina of Serbia" Id="" Type="0" />
-<SAINT Name="Finding of the Relics of Venerable Prince Vladislav of Serbia" Id="" Type="0" />
-<SAINT Name="Finding of the Relics of Venerable Herman of Solovki (1484)" Id="" Type="0" />
-<SAINT Name="Venerable Anatolius of Optina, the Younger (+1922)" Id="4630" Type="0" />
-<SAINT Name="Icon of the Mother of God 'Okonskaya'" Id="" Type="0" />
-
+<DAY><SAINT SId="4349" CId="4349"/>
+<SAINT SId="336" CId="336"/>
+<SAINT SId="96901" CId="96901"/>
+<SAINT SId="4352" CId="4352"/>
+<SAINT SId="07300099" CId="07300099"/>
+<SAINT SId="07300000" CId="07300000"/>
+<SAINT SId="07300299" CId="07300299"/>
+<SAINT SId="50101" CId="50101"/>
+<SAINT SId="4630" CId="4630"/>
+<SAINT SId="07300100" CId="07300100"/>
 </DAY>

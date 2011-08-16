@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="Martyrs Minos, Hermogenes, and Eugraphos of Alexandria (+c.313)" Id="3095" Type="1" />
-<SAINT Name="Saint Joasaph, Bishop of Belgorod (+1754)" Id="1031" Type="1" />
-<SAINT Name="Martyr Gemellos of Paphlagonia (+c.361)" Id="3096" Type="0" />
-<SAINT Name="Venerable Thomas of Bithynia (10th C)" Id="3097" Type="0" />
-<SAINT Name="Blessed John, the King of Serbia (+1503) and his parents: Blessed Stephen and Blessed Angelina Brankovich" Id="1015" Type="0" />
-
+<DAY><SAINT SId="3095" CId="3095"/>
+<SAINT SId="103102" CId="103102"/>
+<SAINT SId="3096" CId="3096"/>
+<SAINT SId="3097" CId="3097"/>
+<SAINT SId="1015" CId="1015"/>
 </DAY>

@@ -1,19 +1,4 @@
 <SAINT>
-
-<NAME Nominative="Martyr Epimachus"/> 
-<LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
-       He was born in Egypt and from the first for a long time was an ascetic in desert
-solitude on the hills of Pelusium. During the persecution of Christians in Alexandria,
-St. Epimachus, burning with zealousness for the true faith, went into the city,
-destroyed pagan altars and firmly preached Christ to the pagans. After enduring many
-tortures he was beheaded for this in about the year 250.
-
-</LIFE>
-<TROPARION Tone="" Translator="Aleksandr Andreev">
-
-</TROPARION>
-<KONTAKION Tone="" Translator="Aleksandr Andreev">
-
-</KONTAKION>
-
+<NAME Nominative="Translation of the relics of the Martyr Epimachus of Pelusium" Short="Translation"/>
+<SERVICE Type="0"/>
 </SAINT>

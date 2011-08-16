@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="On this day, we sing the service for the Finding of the Head of the Forerunner" Id="1007" Type="4" Cmd="nday == 43" />
-<SAINT Name="Holy Hierarch Porphyrius, Archbishop of Gaza (+420)" Id="510" Type="1" />
-<SAINT Name="New Martyr John Calphus" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Priest Peter (+1930)" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Priest Sergey (+1933)" Id="" Type="0" />
-<SAINT Name="New Nun-Martyr Anna (+1937)" Id="" Type="0" />
-<SAINT Name="New Hieromartyrs John, Bishop of Rylsk and Priest John (1938)" Id="" Type="0" />
-<SAINT Name="Venerable Sebastian of Poshekhonye (+c 1500)" Id="3140" Type="0" />
-<SAINT Name="Martyrs Sebastian and Christodulus (+c 66)" Id="512" Type="0" />
-
+<DAY><SAINT SId="1007" CId="09107" Cmd="nday == 43"/>
+<SAINT SId="510" CId="510"/>
+<SAINT SId="022600" CId="022600"/>
+<SAINT SId="02260199" CId="02260199"/>
+<SAINT SId="022601" CId="022601"/>
+<SAINT SId="02260399" CId="02260399"/>
+<SAINT SId="022603" CId="022603"/>
+<SAINT SId="3140" CId="3140"/>
+<SAINT SId="512" CId="512"/>
 </DAY>

@@ -1,16 +1,8 @@
-<DAY>
-<SAINT Name="2" Cmd="dow == 0" />
-<SAINT Name="8" Cmd="dow == 6" />
-<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318" Note="for St Peter"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Peter"/>
-
-<SAINT Name="Forefeast of the Nativity" Id="9001" Type="0" />
-<SAINT Name="Virginmartyr Juliana of Nicomedia, and with her 500 Men and 150 Women (+304)" Id="3159" Type="1" />
-<SAINT Name="Repose of Saint Peter, Metropolitan of Moscow and Wonderworker of All Russia (+1326)" Id="1779" Type="4" />
-<SAINT Name="Martyr Themistocles of Myra in Lycia (+251)" Id="3163" Type="0" />
-<SAINT Name="Saint Juliana, Princess of Viazma (+1406)" Id="9005" Type="0" />
-<SAINT Name="Blessed Procopius of Viatka, Fool-for-Christ (+1627)" Id="3162" Type="0" />
-<SAINT Name="New Hieromartyr Nikita, Bishop of Belevsk (+1938)" Id="" Type="0" />
-
+<DAY><SAINT SId="09001" CId="09001"/>
+<SAINT SId="3159" CId="3159"/>
+<SAINT SId="177901" CId="177901"/>
+<SAINT SId="3163" CId="3163"/>
+<SAINT SId="09005" CId="09005"/>
+<SAINT SId="3162" CId="3162"/>
+<SAINT SId="12210099" CId="12210099"/>
 </DAY>

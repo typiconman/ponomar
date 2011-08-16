@@ -1,16 +1,13 @@
-<DAY>
-<SAINT Name="15" Cmd="dow == 6" />
-
-<SAINT Name="Martyr Julian of Tarsus, in Cilicia (+ c.300)" Id="1366" Type="1" />
-<SAINT Name="Hieromartyr Terence the Bishop of Iconium (1st C)" Id="2095" Type="0" />
-<SAINT Name="Monks Julius the presbyter and Julian the Deacon (5th C)" Id="1368" Type="0" />
-<SAINT Name="New Martyr Nikita" Id="" Type="0" />
-<SAINT Name="Holy Martyr Archil II, King of Georgia (+744)" Id="1369" Type="0" />
-<SAINT Name="Holy Martyr Luarsab II, King of Georgia (+1622)" Id="" Type="0" />
-<SAINT Name="Venerable Anastasia of Serbia" Id="" Type="0" />
-<SAINT Name="Finding of the relics of the Venerable Maximus the Greek (1996)" Id="274" Type="0" />
-<SAINT Name="Venerable New Confessor George (+1932)" Id="4739" Type="0" />
-<SAINT Name="New Hieromartyr Priest John  (+1918)" Id="" Type="0" />
-<SAINT Name="New Hieromartyrs Priests Paul and Nicholas (+1938);" Id="" Type="0" />
-
+<DAY><SAINT SId="6630" CId="6630" Cmd="dow == 6"/>
+<SAINT SId="1366" CId="1366"/>
+<SAINT SId="2095" CId="2095"/>
+<SAINT SId="1368" CId="1368"/>
+<SAINT SId="06210300" CId="06210300"/>
+<SAINT SId="1369" CId="1369"/>
+<SAINT SId="06210500" CId="06210500"/>
+<SAINT SId="06210299" CId="06210299"/>
+<SAINT SId="274" CId="274"/>
+<SAINT SId="4739" CId="4739"/>
+<SAINT SId="06210000" CId="06210000"/>
+<SAINT SId="06210100" CId="06210100"/>
 </DAY>

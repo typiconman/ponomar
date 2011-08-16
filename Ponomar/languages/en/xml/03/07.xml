@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="On this day we sing the service for the Forty Martyrs" Id="1238" Type="4" Cmd="nday == 19" />
-<SAINT Name="Hieromartyrs Basil, Ephraim, Eugene, Elpidius, Agathodorus, Aetherius, and Kapiton of Cherson (4th C)" Id="588" Type="1" />
-<SAINT Name="New Hieromartyr Priest Nicholas (+1930)" Id="" Type="0"/>
-<SAINT Name="New Venerable Martyrs Nilus, Matrona, Mary, Eudocia, Catherine, Antonina, Nadezhda, Xenia and Anna (+1938)" Id="" Type="0"/>
-<SAINT Name="Venerable Paul the Simple (4th C)" Id="1668" Type="0" />
-<SAINT Name="Holy Hierarchs Nestor and Arcadius, Bishops of Tremethus in Cyprus" Id="" Type="0" />
-<SAINT Name="Venerable Emilian, in the world Victorinus, of Italy" Id="590" Type="0" />
-<SAINT Name="St. Paul the Confessor the Bishop of Plusias (9th C)" Id="589" Type="0" />
-
+<DAY><SAINT SId="1238" CId="1238" Cmd="nday == 19"/>
+<SAINT SId="588" CId="588"/>
+<SAINT SId="030700" CId="030700"/>
+<SAINT SId="030701" CId="030701"/>
+<SAINT SId="1668" CId="1668"/>
+<SAINT SId="03070299" CId="03070299"/>
+<SAINT SId="590" CId="590"/>
+<SAINT SId="589" CId="589"/>
 </DAY>

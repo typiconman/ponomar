@@ -1,13 +1,7 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostle"/>
-<SCRIPTURE Type="gospel" Reading="Jn_1:43-51" Pericope="5" Note="for the Apostle"/>
-
-<SAINT Name="Holy and All-praised Apostle Philip (1st C)" Id="2535" Type="4" />
-<SAINT Name="Saint Gregory Palamas, Archbishop of Thessalonica (+ c. 1360)" Id="543" Type="0" />
-<SAINT Name="Saint Justinian the Emperor (+ 565) and his wife Saint Theodora (+ 548)" Id="2537" Type="0" />
-<SAINT Name="Saint Philip, Abbot of Irap near Novgorod (+ 1527)" Id="2536" Type="0" />
-<SAINT Name="Martyr Serapion the Elder" Id="" Type="0" />
-<SAINT Name="Preparation for the Nativity Fast" Id="" Type="0" />
-
+<DAY><SAINT SId="2535" CId="2535"/>
+<SAINT SId="543" CId="543"/>
+<SAINT SId="2537" CId="2537"/>
+<SAINT SId="2536" CId="2536"/>
+<SAINT SId="11140099" CId="11140099"/>
+<SAINT SId="11140199" CId="11140199"/>
 </DAY>

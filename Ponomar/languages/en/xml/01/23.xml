@@ -1,17 +1,10 @@
-<DAY>
-<SAINT Name="12" Cmd="dow == 0" />
-<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="nday == -58 || dow == 6" />
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday == -58 || dow == 6" Note="for St Xenia"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday == -58 || dow == 6" Note="for St Xenia"/>
-
-<SAINT Name="Blessed Xenia of Saint Petersburg (19th C) [from Saturday]" Id="2568" Type="1" Cmd="nday == -58"/>
-<SAINT Name="Blessed Xenia of Saint Petersburg (19th C) [from Sunday]" Id="2568" Type="1" Cmd="dow == 6"/>
-<SAINT Name="Hieromartyr Clement, Bishop of Ancyra, and Martyr Agathangel (+ c 312)" Id="284" Type="1" />
-<SAINT Name="Saint Paulinus the Merciful, Bishop of Nola (+ 431)" Id="289" Type="0" />
-<SAINT Name="Venerable Mausima the Syrian (4th C)" Id="287" Type="0" />
-<SAINT Name="Venerable Salamanes the Silent of the Euphrates (+ c. 400)" Id="288" Type="0" />
-<SAINT Name="Venerable Gennadius of Kostroma (+ 1565)" Id="470" Type="0" />
-<SAINT Name="Venerable Eusebius" Id="" Type="0" />
-<SAINT Name="Commemoration of Sixth Ecumenical Council (680-681)" Id="291" Type="0" />
-
+<DAY><SAINT SId="6613" CId="6613" Cmd="dow == 0"/>
+<SAINT SId="2568" CId="2568" Cmd="nday == -58 || dow == 6"/>
+<SAINT SId="284" CId="284"/>
+<SAINT SId="289" CId="289"/>
+<SAINT SId="287" CId="287"/>
+<SAINT SId="288" CId="288"/>
+<SAINT SId="470" CId="470"/>
+<SAINT SId="012300" CId="012300"/>
+<SAINT SId="291" CId="291"/>
 </DAY>

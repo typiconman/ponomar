@@ -1,17 +1,8 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="I Jn_3:21-4:6" Note="for the Apostle"/>
-<SCRIPTURE Type="vespers" Reading="I Jn_4:11-16" Note="for the Apostle"/>
-<SCRIPTURE Type="vespers" Reading="I Jn_4:20-5:5" Note="for the Apostle"/>
-<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0" Note="for the Apostle"/>
-<SCRIPTURE Type="apostol" Reading="I Jn_1:1-7" Pericope="68" Note="for the Apostle"/>
-<SCRIPTURE Type="gospel" Reading="Jn_19:25-27, 21:24-25" Pericope="61" Note="for the Apostle"/>
-
-<SAINT Name="Holy Apostle and Evangelist John the Theologian (+98-117)" Id="962" Type="5" />
-<SAINT Name="Venerable Arsenius the Great (+449-450)" Id="9262" Type="1" />
-<SAINT Name="New Martyr Nicephorus (+1942)" Id="" Type="0"/>
-<SAINT Name="Venerable Arsenius the Lover-of-Labor(14th C) and Pimen the Ascetic (12th C) of the Kiev Far Caves" Id="4390" Type="0" />
-<SAINT Name="Righteous Emily (+375)" Id="" Type="0" />
-<SAINT Name="Translation of the relics (1785) of Venerable Arsenius of Novgorod" Id="" Type="0" />
-<SAINT Name="Venerable Herax of Egypt (5th C)" Id="" Type="0" />
-
+<DAY><SAINT SId="962" CId="962"/>
+<SAINT SId="09262" CId="09262"/>
+<SAINT SId="050800" CId="050800"/>
+<SAINT SId="4390" CId="4390"/>
+<SAINT SId="050801" CId="050801"/>
+<SAINT SId="050802" CId="050802"/>
+<SAINT SId="05080399" CId="05080399"/>
 </DAY>

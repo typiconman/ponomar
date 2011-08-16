@@ -1,13 +1,9 @@
-<DAY>
-<FAST Num="-2" />
-
-<SAINT Name="Apodosis of the Theophany" Id="9017" Type="3" />
-<SAINT Name="Holy Monastic Fathers slain in Sinai and Raithu (4th-5th C): Isaiah, Savva, Moses and his disciple Moses, Jeremiah, Paul, Adam, Sergius, Domnus, Proclus, Hipatius, Isaac, Macarius, Mark, Eusibius, Benjamin, Elijah, and others [their service is sung on the 13th]" Id="215" Type="1" />
-<SAINT Name="Saint Nina, Equal-to-the-Apostles and Enlightener of Georgia (+ 335)" Id="2630" Type="4" />
-<SAINT Name="Venerable Theodoulos, son of the Venerable Nilus of Sinai (5th C)" Id="215" Type="0" />
-<SAINT Name="Venerable Stephen, Abbot of Chenolaklos Monastery near Chalcedon (8th C)" Id="219" Type="0" />
-<SAINT Name="Venerable Joseph the Analytic of Raithu (4th C)" Id="217" Type="0" />
-<SAINT Name="Martyr Agnia" Id="" Type="0" />
-<SAINT Name="Holy Hieromartyr Barbasceminus, Bishop of Seleucia" Id="" Type="0" />
-
+<DAY><SAINT SId="163" CId="090171"/>
+<SAINT SId="21501" CId="21501"/>
+<SAINT SId="2630" CId="2630"/>
+<SAINT SId="215" CId="215"/>
+<SAINT SId="219" CId="219"/>
+<SAINT SId="217" CId="217"/>
+<SAINT SId="01140099" CId="01140099"/>
+<SAINT SId="01140199" CId="01140199"/>
 </DAY>

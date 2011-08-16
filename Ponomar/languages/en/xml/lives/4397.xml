@@ -1,12 +1,11 @@
-<SAINT>
-<NAME Nominative="Sainted Emelian, Bishop of Kyzika"/> 
-<LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
-Sainted Emelian, Bishop of Kyzika, lived during the reign of the Iconoclast emperor Leo the Armenian (813-820). He was summoned together with other bishops to the court of the emperor, who insistently urged the bishops to refrain from the veneration of holy icons. Saint Emelian was the first firmly to answer the emperor, that the question about the veneration of holy icons ought to be discussed and decided only within the Church by spiritual personages, and not at the imperial court. In the year 815 he was sent to prison for the Orthodox faith, where he died as a confessor.
+﻿<SAINT>
+<NAME Nominative="Saint Emilian the Confessor, Bishop of Cyzicus († c. 815-820)" Short="Saint Emilian"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+&lt;p&gt; Sainted Emelian, Bishop of Kyzika, lived during the reign of the Iconoclast emperor Leo the Armenian (813-820). He was summoned together with other bishops to the court of the emperor, who insistently urged the bishops to refrain from the veneration of holy icons. Saint Emelian was the first firmly to answer the emperor, that the question about the veneration of holy icons ought to be discussed and decided only within the Church by spiritual personages, and not at the imperial court. In the year 815 he was sent to prison for the Orthodox faith, where he died as a confessor.&lt;/p&gt;
 </LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="3">
-Chanting, the Church, for which thou didst suffer, O Emilian,/ doth glorify thee who didst show thyself/ to be a mighty champion of the Trinity./ Wherefore, we honor thy memory.// Deliver thy servants from the invasion of the heathen.
-</KONTAKION>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="3">
+Chanting, the Church, for which thou didst suffer, O Emilian, doth glorify thee who didst show thyself to be a mighty champion of the Trinity. Wherefore, we honor thy memory. Deliver thy servants from the invasion of the heathen.
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

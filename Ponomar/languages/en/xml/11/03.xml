@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Martyrs Akepsimos the Bishop, Joseph the Presbyter and Haiphal the Deacon of Persia (4th C)" Id="2478" Type="1" />
-<SAINT Name="Dedication of the Church of the Greatmartyr George in Lydda (4th C)" Id="497" Type="1" />
-<SAINT Name="Martyrs Atticus, Agapius, Eudoxius, Caterius, Istucarius, Pactobius, and Nictopolionus" Id="" Type="0" />
-<SAINT Name="Venerable Snandulia (Yazdundokta) of Persia" Id="" Type="0" />
-<SAINT Name="Venerable Akepsimos, Hermit of Cyrrhus in Syria (4th C)" Id="2479" Type="0" />
-<SAINT Name="Venerable Anna Vsevolodovna, Princess of Russia (+1112)" Id="" Type="0" />
-<SAINT Name="Venerable Elias of Egypt" Id="" Type="0" />
-<SAINT Name="Righteous Achemanidus the Confessor" Id="" Type="0" />
-<SAINT Name="Icon of the Mother of God 'Znamenie' of Tsarskoye Syelo" Id="" Type="0" />
-
+<DAY><SAINT SId="2478" CId="2478"/>
+<SAINT SId="497" CId="497"/>
+<SAINT SId="11030100" CId="11030100"/>
+<SAINT SId="11030000" CId="11030000"/>
+<SAINT SId="2479" CId="2479"/>
+<SAINT SId="11030400" CId="11030400"/>
+<SAINT SId="11030200" CId="11030200"/>
+<SAINT SId="11030300" CId="11030300"/>
+<SAINT SId="11030599" CId="11030599"/>
 </DAY>

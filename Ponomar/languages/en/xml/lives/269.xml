@@ -1,14 +1,10 @@
 <SAINT>
-
-<NAME Nominative="Holy Martyr Neophytes"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-The Holy Martyr Neophytes, a native of the city of Nicea, was raised by his parents in strict Christian piety. For his virtue, temperance and unceasing prayer, it pleased God to glorify Saint Neophytes with the gift of wonderworking, while the saint was yet but a lad! Like unto Moses, the holy lad brought forth water from a stone of the city wall and gave this water to those suffering thirst. In answer to the prayer of the mother of Saint Neophytes, seeking that the Will of God concerning her son might be revealed to her, a white dove miraculously appeared, and announced about the salvific path awaiting him. The saint was led forth from his parental home by this dove and brought to a mountain cave, which served as a sheltering den for a lion. The lad dwelt there until his fifteenth year, leaving it but once to bury his parents and distribute their substance to the poor.  	During the time of the persecution by Diocletian (284-305), he voluntarily appeared in Nicea and boldly began to denounce the impiety of the pagan faith. The enraged persecutors suspended the saint on a tree, they whipped him with ox thongs and cut at his body with iron. Then they threw him into a red-hot oven, but the holy martyr remained unharmed, spending 3 days and 3 nights in it. The torturers, not knowing what more to do with him, decided to kill him. One of the pagans thrust a spear into his chest, and the saint expired to the Lord in his 16th year of life, somewhere in the years 303-305, at Nicea.
-</LIFE>
-<TROPARION Tone="4">
-In his suffering, O Lord,/ Thy martyr Neophytus received an imperishable crown from Thee our God;/ for, possessed of Thy might,/ he set at nought the tormentors and crushed the feeble audacity of the demons.// By his supplications save Thou our souls.
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Martyr Neophytes of Nicea (+303-305)" Short="Martyr Neophytes"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+ The Holy Martyr Neophytes, a native of the city of Nicea, was raised by his parents in strict Christian piety. For his virtue, temperance and unceasing prayer, it pleased God to glorify Saint Neophytes with the gift of wonderworking, while the saint was yet but a lad! Like unto Moses, the holy lad brought forth water from a stone of the city wall and gave this water to those suffering thirst. In answer to the prayer of the mother of Saint Neophytes, seeking that the Will of God concerning her son might be revealed to her, a white dove miraculously appeared, and announced about the salvific path awaiting him. The saint was led forth from his parental home by this dove and brought to a mountain cave, which served as a sheltering den for a lion. The lad dwelt there until his fifteenth year, leaving it but once to bury his parents and distribute their substance to the poor.  	During the time of the persecution by Diocletian (284-305), he voluntarily appeared in Nicea and boldly began to denounce the impiety of the pagan faith. The enraged persecutors suspended the saint on a tree, they whipped him with ox thongs and cut at his body with iron. Then they threw him into a red-hot oven, but the holy martyr remained unharmed, spending 3 days and 3 nights in it. The torturers, not knowing what more to do with him, decided to kill him. One of the pagans thrust a spear into his chest, and the saint expired to the Lord in his 16th year of life, somewhere in the years 303-305, at Nicea.
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="4">
+ In his suffering, O Lord,/ Thy martyr Neophytus received an imperishable crown from Thee our God;/ for, possessed of Thy might,/ he set at nought the tormentors and crushed the feeble audacity of the demons.// By his supplications save Thou our souls.
+</TROPARION></LITURGY></SERVICE>
 </SAINT>

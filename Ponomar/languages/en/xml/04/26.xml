@@ -1,9 +1,8 @@
 <DAY>
-
-<SAINT Name="Hieromartyr Basil, Bishop of Amaseia (+ c.322)" Id="936" Type="1" />
-<SAINT Name="Holy Hierarch Stephen, Bishop of Great Perm (+1396)" Id="937" Type="3" />
-<SAINT Name="New Hieromartyr Priest John and his children Nicholas and Peter (+1918)" Id="" Type="0" />
-<SAINT Name="Righteous Virgin Glaphyra (+322)" Id="936" Type="0" />
-<SAINT Name="Venerable Joannicius of Devich in Serbia (13th C)" Id="6920" Type="0" />
-
+<SAINT SId="09497" CId="09497" Cmd="nday == 1"/>
+<SAINT SId="93601" CId="93601"/>
+<SAINT SId="937" CId="937"/>
+<SAINT SId="042600" CId="042600"/>
+<SAINT SId="936" CId="936"/>
+<SAINT SId="6920" CId="6920"/>
 </DAY>

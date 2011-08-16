@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="Martyrs Sergius and Baccus in Syria (290-303)" Id="1685" Type="2" />
-<SAINT Name="Martyrs Julian the Presbyter and Caesarius the Deacon, at Terracina (1st C)" Id="1688" Type="0" />
-<SAINT Name="Martyr Polychronios the Presbyter (4th C)" Id="1687" Type="0" />
-<SAINT Name="Martyr Pelagia" Id="2643" Type="0" />
-<SAINT Name="St Mark, Pope of Rome" Id="" Type="0" />
-<SAINT Name="St Eumenius, Bishop of Alexandria" Id="" Type="0" />
-<SAINT Name="Venerable Mark of Egypt" Id="" Type="0" />
-<SAINT Name="Venerable Sergius of Nurom" Id="1971" Type="0" />
-<SAINT Name="Venerable Sergius the Obedient of the Caves of Kiev (13th C)" Id="6832" Type="0" />
-<SAINT Name="Finding of the relics of Venerable Martinian, Abbot of Belozersk (1514)" Id="200" Type="0" />
-<SAINT Name="Saint Jonah, Wonderworker of Hankow and Manchuria (+1925)" Id="6946" Type="4" />
-
+<DAY><SAINT SId="168501" CId="168501"/>
+<SAINT SId="1688" CId="1688"/>
+<SAINT SId="1687" CId="1687"/>
+<SAINT SId="2643" CId="2643"/>
+<SAINT SId="10070099" CId="10070099"/>
+<SAINT SId="10070199" CId="10070199"/>
+<SAINT SId="10070299" CId="10070299"/>
+<SAINT SId="1971" CId="1971"/>
+<SAINT SId="6832" CId="6832"/>
+<SAINT SId="20001" CId="20001"/>
+<SAINT SId="6946" CId="6946"/>
 </DAY>

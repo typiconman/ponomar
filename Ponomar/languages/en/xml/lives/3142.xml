@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Ven. Florus, Bishop of Amisus"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
-A court guard and then a patrician in Constantinople, after the death of his wife and children, he left secular vanity and practiced asceticism as a monk in Annapolis. For his holy life he later was elected bishop of Amisus in Cappadocia. He died at the end of the sixth century. 
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Venerable Florus, Bishop of Amis" Short="Venerable Florus,"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+ A court guard and then a patrician in Constantinople, after the death of his wife and children, he left secular vanity and practiced asceticism as a monk in Annapolis. For his holy life he later was elected bishop of Amisus in Cappadocia. He died at the end of the sixth century. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

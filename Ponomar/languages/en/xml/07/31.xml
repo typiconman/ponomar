@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Forefeast of the Procession of the Venerable and Life-Creating Cross of the Lord" Id="" Type="2" />
-<SAINT Name="Righteous Eudocimus of Cappadocia (9th C)" Id="4356" Type="2" />
-<SAINT Name="Righteous Joseph of Arimathea (1st C)" Id="" Type="0" />
-<SAINT Name="Righteous Ehud, a Judge of Israel (Judg 3:15)" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Herman, Bishop of Okser" Id="" Type="0" />
-<SAINT Name="Martyr Judith of Caesarea" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Benjamin, Metropolitan of Petrograd and Gdovsk (+ 1922) and those with him: Archimandrite Sergius and the laymen: Yuri and John" Id="407" Type="0" />
-<SAINT Name="New Hieromartyr Nicholas (1941)" Id="" Type="0" />
-<SAINT Name="Saint Vasily the Confessor, bishop of Kineshemsk (1945)" Id="4777" Type="0" />
-
+<DAY><SAINT SId="07310000" CId="07310000"/>
+<SAINT SId="4356" CId="4356"/>
+<SAINT SId="07310100" CId="07310100"/>
+<SAINT SId="07310299" CId="07310299"/>
+<SAINT SId="07310300" CId="07310300"/>
+<SAINT SId="07310200" CId="07310200"/>
+<SAINT SId="407" CId="407"/>
+<SAINT SId="07310600" CId="07310600"/>
+<SAINT SId="4777" CId="4777"/>
 </DAY>

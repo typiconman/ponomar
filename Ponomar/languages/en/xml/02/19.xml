@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Apostles of the Seventy: Archippus and Philemon, and martyred Equal-to-the-Apostles Apphia (1st C)" Id="9279" Type="1" />
-<SAINT Name="St. Theodore of Sanaxar (+ 1791)" Id="" Type="0"/>
-<SAINT Name="New Martyr Dimitry (1942)" Id="" Type="0"/>
-<SAINT Name="Venerable Dositheus of Palestine, a Disciple of Venerable Abba Dorotheus (7th C)" Id="473" Type="0" />
-<SAINT Name="Venerable Rabulas of Samosata (+c. 530)" Id="474" Type="0" />
-<SAINT Name="Holy Confessors Eugene and Macarius, Presbyters at Antioch (+363)" Id="472" Type="0" />
-<SAINT Name="Martyrs Maximus, Theodotus, Hesychius and Asclepiodota of Adrianopolis (+305-311)" Id="471" Type="0" />
-<SAINT Name="Venerable Conon of Palestine (+ 555)" Id="" Type="0" />
-<SAINT Name="Venerable Philotheia of Athens (+ 1589)" Id="" Type="0" />
-
+<DAY><SAINT SId="09279" CId="09279"/>
+<SAINT SId="021900" CId="021900"/>
+<SAINT SId="021901" CId="021901"/>
+<SAINT SId="473" CId="473"/>
+<SAINT SId="474" CId="474"/>
+<SAINT SId="472" CId="472"/>
+<SAINT SId="471" CId="471"/>
+<SAINT SId="021902" CId="021902"/>
+<SAINT SId="021903" CId="021903"/>
 </DAY>

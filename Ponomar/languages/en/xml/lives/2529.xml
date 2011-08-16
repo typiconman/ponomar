@@ -1,19 +1,4 @@
-<SAINT>
-
-<NAME Nominative="Nilus the Myrrh-gusher"/> 
-<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-Born in the village of Petra (in Morea), he was
-tonsured as an ascetic on Mount Athos. He died in peace in the 17th century. In 1815
-the relics of Nilus were discovered uncorrupted and sweet smelling. Today part of
-them is in the temple constructed on the place of the ascetical efforts of the Venerable
-Nilus and the rest in the Athonite Laura.
-
-</LIFE>
-<TROPARION Tone="">
-
-</TROPARION>
-<KONTAKION Tone="">
-
-</KONTAKION>
-
+﻿<SAINT>
+<NAME Nominative="Uncovering of the relics (1815) of Venerable Nilus the Myrrh-gusher of Mt. Athos" Short="Uncovering"/>
+<SERVICE Type="0"/>
 </SAINT>

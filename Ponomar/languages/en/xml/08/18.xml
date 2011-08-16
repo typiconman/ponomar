@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Afterfeast of the Dormition" Id="" Type="0" />
-<SAINT Name="Martyrs Florus and Laurus of Illyria (2nd C)" Id="2315" Type="1" />
-<SAINT Name="Martyrs Hermes, Serapion, and Polienus of Rome (2nd c.)" Id="4467" Type="0" />
-<SAINT Name="Hieromartyr Emilian the Bishop and with him Hilarion, Dionysius, and Hermippus (+c.300)" Id="4468" Type="0" />
-<SAINT Name="Venerable Barnabas and Sophronios (+412)" Id="" Type="0" />
-<SAINT Name="Venerable Christopher (+c.668)" Id="" Type="0" />
-<SAINT Name="Saints John (+674) and George (+683), Patriarchs of Constantinople" Id="4469" Type="0" />
-<SAINT Name="Venerable Barnabus, Sophronius, and Christopher" Id="" Type="0" />
-<SAINT Name="Venerable John of Rila" Id="1011" Type="0" />
-<SAINT Name="New Martyr Gregory the Presbyter and Martyrs Eugene and Michael (+1937)" Id="" Type="0" />
-
+<DAY><SAINT SId="4444" CId="444412"/>
+<SAINT SId="2315" CId="2315"/>
+<SAINT SId="4467" CId="4467"/>
+<SAINT SId="4468" CId="4468"/>
+<SAINT SId="08180000" CId="08180000"/>
+<SAINT SId="08180299" CId="08180299"/>
+<SAINT SId="4469" CId="4469"/>
+<SAINT SId="08180399" CId="08180399"/>
+<SAINT SId="101101" CId="101101"/>
+<SAINT SId="08180499" CId="08180499"/>
 </DAY>

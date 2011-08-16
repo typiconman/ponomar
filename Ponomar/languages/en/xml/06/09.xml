@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Saint Cyril, Archbishop of Alexandria (+444)" Id="1221" Type="2" />
-<SAINT Name="Venerable Cyril the Abbot of White Lake (+1427)" Id="9224" Type="3" />
-<SAINT Name="Righteous Alexius, archpriest of Moscow (+1923)" Id="" Type="0" />
-<SAINT Name="Venerable Alexander the Abbot of Kushta, Vologda (+1439)" Id="1270" Type="0" />
-<SAINT Name="Holy Women Martyrs Thekla, Martha and Mary in Persia (+346)" Id="1271" Type="0" />
-<SAINT Name="St. Columba, or Columkille, Abbot in Ireland (+597)" Id="060906" Type="0" />
-
+<DAY><SAINT SId="1221" CId="1221"/>
+<SAINT SId="09224" CId="09224"/>
+<SAINT SId="06090000" CId="06090000"/>
+<SAINT SId="127001" CId="127001"/>
+<SAINT SId="1271" CId="1271"/>
+<SAINT SId="060906" CId="060906"/>
 </DAY>

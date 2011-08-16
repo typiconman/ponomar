@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Holy Disciple Carpus"/> 
-<LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
-	The Holy Disciple Carpus (from the 70) -- was a disciple and companion of the holy Apostle Paul. In the 2nd Epistle to Timothy, the apostle mentions the name Carpus, at the house of whom in Troias he left a phelon and books (2 Tim. 4: 13). Knowing Carpus as a man of virtue and possessing a mind of lofty purity, the Apostle Paul made him bishop of Thracian Bereia. The disciple Carpus went preaching the Gospel to the island of Crete. Here he encountered Saint Dionysios the Areopagite (Comm. 3 October). In his reminiscences Dionysios recounts about a miraculous vision to the disciple Carpus.  	The holy disciple Carpus died peacefully at Bereia (according to other histories he received a martyr&apos;s end during the persecution under the emperor Nero).  	The Holy Disciple Alphaeus (of the 70) came from the Galilean city of Capernaum and was the father of the Apostles James Alphaeus and Matthew. 
-</LIFE>
-<TROPARION Tone="3">
-O holy apostle Carpus/ entreat the merciful God// that He grant to our souls remission of transgressions.
-</TROPARION>
-<KONTAKION Tone="4" Podoben="1">
-Illumined by the great outpouring of thy miracles,/ the Church hath ever acquired thee as an all-radiant star, O Apostle Carpus.// Save those who honor thy memory with faith.
-</KONTAKION>
-
+<NAME Nominative="Apostles of the Seventy Carpus and Alphaeus (1st C)" Short="Apostles of"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+ 	The Holy Disciple Carpus (from the 70) -- was a disciple and companion of the holy Apostle Paul. In the 2nd Epistle to Timothy, the apostle mentions the name Carpus, at the house of whom in Troias he left a phelon and books (2 Tim. 4: 13). Knowing Carpus as a man of virtue and possessing a mind of lofty purity, the Apostle Paul made him bishop of Thracian Bereia. The disciple Carpus went preaching the Gospel to the island of Crete. Here he encountered Saint Dionysios the Areopagite (Comm. 3 October). In his reminiscences Dionysios recounts about a miraculous vision to the disciple Carpus.  	The holy disciple Carpus died peacefully at Bereia (according to other histories he received a martyr&apos;s end during the persecution under the emperor Nero).  	The Holy Disciple Alphaeus (of the 70) came from the Galilean city of Capernaum and was the father of the Apostles James Alphaeus and Matthew. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="3">
+ O holy apostle Carpus/ entreat the merciful God// that He grant to our souls remission of transgressions.
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="4">
+ Illumined by the great outpouring of thy miracles,/ the Church hath ever acquired thee as an all-radiant star, O Apostle Carpus.// Save those who honor thy memory with faith.
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

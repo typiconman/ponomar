@@ -1,17 +1,6 @@
 <SAINT>
-
-<NAME Nominative="Martyrs Cyriena and Juliana"/> 
-<LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
-      Martyrs Cyriena and Juliana, suffered for Christ during the reign of
-Maximian in the city of Rosa in Cilicia. After undergoing various abuses these
-holy Martyrs were burned to death.
-
+<NAME Nominative="Martyrs Cyrenia and Juliana of Clicia (4th C)" Short="Martyrs Cyrenia"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
+Martyrs Cyriena and Juliana, suffered for Christ during the reign of Maximian in the city of Rosa in Cilicia. After undergoing various abuses these holy Martyrs were burned to death. 
 </LIFE>
-<TROPARION Tone="" Translator="Aleksandr Andreev">
-
-</TROPARION>
-<KONTAKION Tone="" Translator="Aleksandr Andreev">
-
-</KONTAKION>
-
 </SAINT>

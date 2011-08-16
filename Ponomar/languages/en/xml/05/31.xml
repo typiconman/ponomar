@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Apostle Hermas of the Seventy (1st C)" Id="791" Type="1" />
-<SAINT Name="Martyr Hermias at Comana (2nd C)" Id="1182" Type="1" />
-<SAINT Name="New Hieromartyr Priest Philosoph and his children Martyrs Boris and Nicholas (+1918)" Id="4927" Type="0" />
-<SAINT Name="Martyr Philosoph (3rd C) of Alexandria" Id="1183" Type="0" />
-<SAINT Name="Martyr Magus the Magician" Id="" Type="0" />
-<SAINT Name="St Eustathius, Patriarch of Constantinople (+1025)" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Hierotheos, Bishop of Nikolsk (+1928)" Id="" Type="0" />
-
+<DAY><SAINT SId="79101" CId="79101"/>
+<SAINT SId="1182" CId="1182"/>
+<SAINT SId="4927" CId="4927"/>
+<SAINT SId="1183" CId="1183"/>
+<SAINT SId="05310099" CId="05310099"/>
+<SAINT SId="05310000" CId="05310000"/>
+<SAINT SId="05310100" CId="05310100"/>
 </DAY>

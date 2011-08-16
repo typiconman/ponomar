@@ -1,18 +1,13 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for St Macarius"/>
-<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Macarius"/>
-
-<SAINT Name="Venerable Macarius the Great, of Egypt (+c.390-391)" Id="1401" Type="2" />
-<SAINT Name="Venerable Macarius of Alexandria (+ 394-395)" Id="1398" Type="0" />
-<SAINT Name="Virgin-martyr Euphrasia of Nicomedia (+303)" Id="253" Type="0" />
-<SAINT Name="Saint Arsenius, Archbishop of Kerkyra (8th C)" Id="255" Type="0" />
-<SAINT Name="Translation of the Relics of St Gregory the Theologian" Id="" Type="0" />
-<SAINT Name="Venerable Meletius Ballisiotus" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Mark, Archbishop of Ephesus (+ c.1444)" Id="256" Type="1" />
-<SAINT Name="Venerable Macarius the Deacon of the Caves of Kiev (13th-14th C)" Id="1411" Type="0" />
-<SAINT Name="Righteous Theodore, Fool-for-Christ, of Novgorod (+1392)" Id="2191" Type="0" />
-<SAINT Name="Finding of the Relics of Monk Sabbas of Storozhev and Zvenigorod (1652)" Id="1904" Type="0" />
-<SAINT Name="Venerable Macarius the Faster of the Caves of Kiev (12th C)" Id="1411" Type="0" />
-<SAINT Name="Saint Anthony the Stylite (Pillar-Dweller), of Martkobsa, Georgia (6th C)" Id="215" Type="0" />
-
+<DAY><SAINT SId="1401" CId="1401"/>
+<SAINT SId="1398" CId="1398"/>
+<SAINT SId="253" CId="253"/>
+<SAINT SId="255" CId="255"/>
+<SAINT SId="011900" CId="011900"/>
+<SAINT SId="01190199" CId="01190199"/>
+<SAINT SId="256" CId="256"/>
+<SAINT SId="1411" CId="1411"/>
+<SAINT SId="2191" CId="2191"/>
+<SAINT SId="1904" CId="1904"/>
+<SAINT SId="141101" CId="141101"/>
+<SAINT SId="21502" CId="21502"/>
 </DAY>

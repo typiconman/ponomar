@@ -1,15 +1,7 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Mt_10:16-22" Pericope="36" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="II Tim_2:1-10" Pericope="292" Note="for the Greatmartyr"/>
-<SCRIPTURE Type="gospel" Reading="Jn_15:17-16:2" Pericope="52" Note="for the Greatmartyr"/>
-<SCRIPTURE Type="apostol" Reading="Heb_12:6-13, 25-27" Pericope="331 (mid)" Note="for the Earthquake" Cmd="dow != 0"/>
-<SCRIPTURE Type="gospel" Reading="Mt_8:23-27" Pericope="27" Note="for the Earthquake" Cmd="dow != 0"/>
-
-<SAINT Name="Greatmartyr Demetrius of Thessalonica (+c.306)" Id="604" Type="4" />
-<SAINT Name="Venerable Athanasius of Medicia" Id="4596" Type="0" />
-<SAINT Name="Commemoration of the Great Earthquake at Constantinople in 740 AD" Id="" Type="1" />
-<SAINT Name="Venerable Theophilus of the Caves of Kiev, Archbishop of Novgorod (+1482)" Id="2268" Type="0" />
-<SAINT Name="Venerable Martyr Joasaph" Id="" Type="0" />
-<SAINT Name="Saint Dimitri of Basarbov of Bulgaria (+1685)" Id="4597" Type="0" />
-
+<DAY><SAINT SId="60401" CId="60401"/>
+<SAINT SId="4596" CId="4596"/>
+<SAINT SId="10260000" CId="10260000"/>
+<SAINT SId="2268" CId="2268"/>
+<SAINT SId="10260100" CId="10260100"/>
+<SAINT SId="4597" CId="4597"/>
 </DAY>

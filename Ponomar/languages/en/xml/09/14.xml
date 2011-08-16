@@ -1,17 +1,8 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Ex_15:22-27, 16:1" />
-<SCRIPTURE Type="vespers" Reading="Prov_3:11-18" />
-<SCRIPTURE Type="vespers" Reading="Isa_60:11-16" />
-<SCRIPTURE Type="matins" Reading="Jn_12:28-36" Pericope="42 (mid)"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_1:18-24" Pericope="125"/>
-<SCRIPTURE Type="gospel" Reading="Jn_19:6-11, 13-20, 25-28, 30-35" Pericope="60"/>
-
-<SAINT Name="The Universal Exaltation of the Precious and Life-Giving Cross" Id="1529" Type="8" />
-<SAINT Name="Repose of St John Chrysostom, Archbishop of Constantinople" Id="978" Type="1" />
-<SAINT Name="Martyr Papas of Licaonia" Id="" Type="0" />
-<SAINT Name="Venerable Queen Placylla" Id="" Type="0" />
-<SAINT Name="Venerable Mary of Egissa" Id="" Type="0" />
-<SAINT Name="New Venerable Martyr Macarius of Thessaloniki" Id="" Type="0" />
-<SAINT Name="Icon of the Mother of God of Lesna (1683)" Id="1531" Type="0" />
-
+<DAY><SAINT SId="1529" CId="1529"/>
+<SAINT SId="97802" CId="97801"/>
+<SAINT SId="09140000" CId="09140000"/>
+<SAINT SId="09140100" CId="09140100"/>
+<SAINT SId="09140200" CId="09140200"/>
+<SAINT SId="09140300" CId="09140300"/>
+<SAINT SId="1531" CId="1531"/>
 </DAY>

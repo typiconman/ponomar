@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Martyr Marinus"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
-He suffered in Rome about 283-284. Refusing to bring a sacrifice to idols and subverting the latter by the power of prayer, St. Marinus after severe torture was beheaded by the sword. 
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Martyr Marinus of Rome (3rd C)" Short="Martyr Marinus"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+ He suffered in Rome about 283-284. Refusing to bring a sacrifice to idols and subverting the latter by the power of prayer, St. Marinus after severe torture was beheaded by the sword. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

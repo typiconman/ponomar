@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="Hieromartyr Antipas, Bishop of Pergamum and Disciple of St John the Theologian (+ c.68)" Id="829" Type="1" />
-<SAINT Name="New Martyrs Peter and Prochorus (+1918)" Id="4884" Type="0"/>
-<SAINT Name="New Hieromartyr Priest Nicholas (+1938)" Id="" Type="0"/>
-<SAINT Name="Venerable James the Abbot of Zheleznoborov and James, his disciple (+1442)" Id="831" Type="0" />
-<SAINT Name="Holy Hierarch Barsanuphius, Bishop of Tver (+1576)" Id="362" Type="0" />
-<SAINT Name="Martyrs Processus and Martinian (+ c.67)" Id="833" Type="0" />
-<SAINT Name="Venerable Pharmuthius the Anchorite of Egypt (4th C)" Id="834" Type="0" />
-<SAINT Name="Venerable John the Disciple of the Venerable Gregory of Decapolis (9th C)" Id="880" Type="0" />
-<SAINT Name="Hieromartyr Damian, Bishop of Thessalonica" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Philip, Bishop of Gortina" Id="" Type="0" />
-<SAINT Name="Venerable Euthemius and Chariton of Sianzhemsk" Id="" Type="0" />
-
+<DAY><SAINT SId="829" CId="829"/>
+<SAINT SId="4884" CId="4884"/>
+<SAINT SId="041100" CId="041100"/>
+<SAINT SId="831" CId="831"/>
+<SAINT SId="362" CId="362"/>
+<SAINT SId="833" CId="833"/>
+<SAINT SId="834" CId="834"/>
+<SAINT SId="880" CId="880"/>
+<SAINT SId="041102" CId="041102"/>
+<SAINT SId="041101" CId="041101"/>
+<SAINT SId="04110399" CId="04110399"/>
 </DAY>

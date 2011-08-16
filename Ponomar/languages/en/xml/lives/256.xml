@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Saint Mark Eugenikes, ArchBishop of Ephesus"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-Saint Mark Eugenikes, ArchBishop of Ephesus, was a reknown defender of Orthodoxy at the Council of Florence. Nothing was able to sway him towards Uniatism. Secretly slipping away from Florence, Saint Mark zealously urged the inhabitants of Constantinople to repudiate the dishonourable concordat. He died in the year 1457.
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Holy Hierarch Mark, Archbishop of Ephesus (+ c.1444)" Short="Holy Hierarch"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+ Saint Mark Eugenikes, ArchBishop of Ephesus, was a reknown defender of Orthodoxy at the Council of Florence. Nothing was able to sway him towards Uniatism. Secretly slipping away from Florence, Saint Mark zealously urged the inhabitants of Constantinople to repudiate the dishonourable concordat. He died in the year 1457.
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

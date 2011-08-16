@@ -1,13 +1,4 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Gen_28:10-17" />
-<SCRIPTURE Type="vespers" Reading="Ezek_43:27, 44:1-4" />
-<SCRIPTURE Type="vespers" Reading="Prov_9:1-11" />
-<SCRIPTURE Type="matins" Reading="Lk_1:39-49, 56" Pericope="4"/>
-<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240" Note="for the Feast"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Feast"/>
-
-<SAINT Name="The Dormition (Repose) of our Most Holy Lady Theotokos and Ever-Virgin Mary" Id="4444" Type="7" />
-<SAINT Name="Venerable Macarius the Roman and Chariton" Id="" Type="0" />
-<SAINT Name="Icons of the Mother of God: 'Atskurskaya', 'Of the Pskov Caves', 'The Giver of Reason', and 'Of the Crimea'" Id="4278" Type="0" />
-
+<DAY><SAINT SId="4444" CId="4444"/>
+<SAINT SId="08150000" CId="08150000"/>
+<SAINT SId="427801" CId="427801"/>
 </DAY>

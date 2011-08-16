@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Holy Prophet Zechariah and Righteous Elizabeth, parents of St John the Baptist (1st C)" Id="1453" Type="2" />
-<SAINT Name="Martyrs Urban, Theodore, Medimnus and with them 77 Men at Nicomedia (+370)" Id="1458" Type="0" />
-<SAINT Name="Martyr Abdias of Persia (5th C)" Id="1459" Type="0" />
-<SAINT Name="Martyrs Thiphael and his sister Thebaia (1st-2nd C)" Id="1456" Type="0" />
-<SAINT Name="Martyr Serbilus" Id="" Type="0" />
-<SAINT Name="Virginmartyr Rhais of Alexandria (+c.308)" Id="2656" Type="0" />
-<SAINT Name="Hieromartyr Athanasius of Brest-Litovsk (+1648)" Id="294" Type="0" />
-<SAINT Name="Martyred Soldiers Juventinus and Maximus (+c.362)" Id="1131" Type="0" />
-<SAINT Name="Killing of the Holy Right-Believing Prince Gleb, in Baptism David (+1015)" Id="518" Type="0" />
-<SAINT Name="Appearance of the Apostle Peter to Emperor Justinian in Athyra" Id="" Type="0" />
-
+<DAY><SAINT SId="1453" CId="1453"/>
+<SAINT SId="1458" CId="1458"/>
+<SAINT SId="145901" CId="145901"/>
+<SAINT SId="1456" CId="1456"/>
+<SAINT SId="09050100" CId="09050100"/>
+<SAINT SId="2656" CId="2656"/>
+<SAINT SId="29402" CId="29402"/>
+<SAINT SId="1131" CId="1131"/>
+<SAINT SId="51801" CId="51801"/>
+<SAINT SId="09050000" CId="09050000"/>
 </DAY>

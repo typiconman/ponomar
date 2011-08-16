@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Holy Martyr Anastasias"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-The Holy Martyr Anastasias was a student of the Monk Maximos the Confessor, and together with him suffered persecution under the Monothelites. He penned the Vita of his teacher. He died in the year 662.
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Martyr Anastasius, disciple of Venerable Maximus the Confessor (+662)" Short="Martyr Anastasius,"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+ The Holy Martyr Anastasias was a student of the Monk Maximos the Confessor, and together with him suffered persecution under the Monothelites. He penned the Vita of his teacher. He died in the year 662.
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

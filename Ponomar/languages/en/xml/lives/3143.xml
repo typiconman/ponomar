@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Ven. Confessor Michael"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
-He was born in Jerusalem and accused of iconoclasm he underwent exile by Emperor Theophilus. During the reign of Emperor Michael, St. Michael was installed as Synkellos of the Constantinopolitan patriarchy. He died about 845. 
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Venerable Michael Singelos, the Confessor" Short="Venerable Michael"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+ He was born in Jerusalem and accused of iconoclasm he underwent exile by Emperor Theophilus. During the reign of Emperor Michael, St. Michael was installed as Synkellos of the Constantinopolitan patriarchy. He died about 845. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

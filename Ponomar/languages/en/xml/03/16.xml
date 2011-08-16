@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="Martyr Sabinus of Egypt (+ 287)" Id="653" Type="1" />
-<SAINT Name="Martyr Papas of Lyconia (+ 305-311)" Id="654" Type="1" />
-<SAINT Name="Apostle Aristobulus of the Seventy, Bishop of Britain (1st C)" Id="255" Type="0" />
-<SAINT Name="Hieromartyr Alexander, Pope of Rome (+ 119)" Id="655" Type="0" />
-<SAINT Name="Martyr Julian of Anazarbus (4th C)" Id="656" Type="0" />
-<SAINT Name="St. Serapion the Archbishop of Novgorod (+ 1516)" Id="6825" Type="0" />
-<SAINT Name="Hieromartyrs Trophimus and Thallus, Priests of Laodicea (+ c.300)" Id="657" Type="0" />
-<SAINT Name="Venerable Christodoulus the Wonderworker" Id="" Type="0" />
-
+<DAY><SAINT SId="65301" CId="65301"/>
+<SAINT SId="654" CId="654"/>
+<SAINT SId="25501" CId="25501"/>
+<SAINT SId="655" CId="655"/>
+<SAINT SId="656" CId="656"/>
+<SAINT SId="6825" CId="6825"/>
+<SAINT SId="657" CId="657"/>
+<SAINT SId="031600" CId="031600"/>
 </DAY>

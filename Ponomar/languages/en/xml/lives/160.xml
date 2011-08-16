@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Monk Minos"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-The Monk Minos pursued asceticism for 50 years in a Sinai monastery, and died peacefully in the second half of the VI Century.
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Venerable Mennas of Sinai (6th C)" Short="Venerable Mennas"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+ The Monk Minos pursued asceticism for 50 years in a Sinai monastery, and died peacefully in the second half of the VI Century.
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

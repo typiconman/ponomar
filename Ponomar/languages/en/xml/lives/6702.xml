@@ -1,16 +1,6 @@
 <SAINT>
-
-<NAME Nominative="Ven. Luke, steward (economos) of the Cave"/> 
-<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-The time of his asceticism is not
-known with precision. His incorrupt relics repose in the St. Anthony Cave.
-
+<NAME Nominative="Venerable Luke, Economos of the Caves of Kiev (13th C)" Short="Venerable Luke,"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+The time of his asceticism is not known with precision. His incorrupt relics repose in the St. Anthony Cave. 
 </LIFE>
-<TROPARION Tone="" Translator="Aleksandr Andreev">
-
-</TROPARION>
-<KONTAKION Tone="" Translator="Aleksandr Andreev">
-
-</KONTAKION>
-
 </SAINT>
