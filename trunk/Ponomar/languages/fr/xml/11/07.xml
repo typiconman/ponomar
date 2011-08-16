@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Sts Hiéron et ses 33 compagnons à Mélitène" Id="2496" Type="1" />
-<SAINT Name="Sts Mélasippe, Cassine et Antoine leur fils" Id="2497" Type="0" />
-<SAINT Name="Sts Auctus, Taurion et Thessalonique" Id="2498" Type="0" />
-<SAINT Name="St Athénodore, frère de St Grégoire le Thaumaturge" Id="" Type="0" />
-<SAINT Name="St Alexandre à Thessalonique" Id="" Type="0" />
-<SAINT Name="St Lazare le Thamaturge" Id="2499" Type="1" />
-<SAINT Name="St Zosime de Vorozomsk" Id="848" Type="0" />
-<SAINT Name="St Cyrille de Novoézersk (Vologda) (translation des Reliques)" Id="1229" Type="0" />
-<SAINT Name="St Willibrord, 1er Evêque d'Utrecht et apôtre de la Hollande" Id="" Type="0" />
-
+<DAY><SAINT SId="2496" CId="2496"/>
+<SAINT SId="2497" CId="2497"/>
+<SAINT SId="2498" CId="2498"/>
+<SAINT SId="11070097" CId="11070097"/>
+<SAINT SId="11070100" CId="11070100"/>
+<SAINT SId="249901" CId="249901"/>
+<SAINT SId="848" CId="848"/>
+<SAINT SId="1229" CId="122901"/>
+<SAINT SId="11070000" CId="11070000"/>
 </DAY>

@@ -1,13 +1,12 @@
 <DAY>
-<SAINT Name="19" Cmd="nday == -54 || nday == -58" />
-
-<SAINT Name="St Parthénios, Evêque de Lampsaque" Id="409" Type="1" />
-<SAINT Name="St Luc le Nouveau du Mont Steirion" Id="410" Type="1" />
-<SAINT Name="Sts 4 tribuns et leurs 1003 serviteurs Martyrs à la suite de St Pierre d'Alexandrie" Id="411" Type="0" />
-<SAINT Name="Sts Adauques et les Martyrs de Phrygie" Id="" Type="0" />
-<SAINT Name="Sts Théopempte et ses compagnons" Id="" Type="0" />
-<SAINT Name="St Aprion, Evêque de Chypre" Id="" Type="0" />
-<SAINT Name="St Pierre de Monovaques" Id="" Type="0" />
-<SAINT Name="St Néomartyr Georges de Crète" Id="" Type="0" />
-
+<SAINT SId="373" CId="37302" Cmd="nday == -54 || nday == -58" />
+<SAINT SId="373" CId="37303" Cmd="nday == -55 || nday &lt;= -59"/>
+<SAINT SId="409" CId="409"/>
+<SAINT SId="410" CId="410"/>
+<SAINT SId="411" CId="411"/>
+<SAINT SId="02070097" CId="02070097"/>
+<SAINT SId="02070197" CId="02070197"/>
+<SAINT SId="02070297" CId="02070297"/>
+<SAINT SId="02070397" CId="02070397"/>
+<SAINT SId="02070497" CId="02070497"/>
 </DAY>

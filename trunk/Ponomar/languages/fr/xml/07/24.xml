@@ -1,15 +1,9 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Lk_2112-19" Pericope="106" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Rom_8:28-39" Pericope="99" Note="for Sts Boris and Gleb"/>
-<SCRIPTURE Type="gospel" Reading="Jn_15:17-16:2" Pericope="52" Note="for Sts Boris and Gleb"/>
-
-<SAINT Name="St Théophile de Zakynthos" Id="" Type="0" />
-<SAINT Name="Ste Christine de Tyr, Grande Martyre" Id="4296" Type="2" />
-<SAINT Name="Sts Hyménée (Ménée) et Capiton" Id="" Type="0" />
-<SAINT Name="St Hermogène" Id="" Type="0" />
-<SAINT Name="St Athanase de Kios" Id="" Type="0" />
-<SAINT Name="St Athanase de Kios, Néomartyr" Id="" Type="0" />
-<SAINT Name="St Boris et Gleb (Romain et David au St Baptême)" Id="324" Type="4" />
-<SAINT Name="St Polycarpe, Archimandrite des Grottes de Kiev" Id="6803" Type="0" />
-
+<DAY><SAINT SId="07240000" CId="07240000"/>
+<SAINT SId="4296" CId="4296"/>
+<SAINT SId="07240197" CId="07240197"/>
+<SAINT SId="07240297" CId="07240297"/>
+<SAINT SId="07240397" CId="07240397"/>
+<SAINT SId="07240497" CId="07240497"/>
+<SAINT SId="32401" CId="32401"/>
+<SAINT SId="6803" CId="6803"/>
 </DAY>

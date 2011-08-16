@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="St Guérasime l'Anachorète du Jourdain" Id="504" Type="1" />
-<SAINT Name="Sts Paul, Julienne sa soeur et leurs compagnons" Id="564" Type="0" />
-<SAINT Name="St Grégoire, Evêque de Constantia en Chypre" Id="" Type="0" />
-<SAINT Name="St Grégoire, Evêque d'Assos" Id="" Type="0" />
-<SAINT Name="St Daniel, Prince de Moscou" Id="579" Type="0" />
-<SAINT Name="Sts Basile et Joasaph de Pskov" Id="561" Type="0" />
-<SAINT Name="St Guérasime de Vologda" Id="503" Type="0" />
-
+<DAY><SAINT SId="504" CId="504"/>
+<SAINT SId="564" CId="564"/>
+<SAINT SId="030401" CId="030401"/>
+<SAINT SId="030402" CId="030402"/>
+<SAINT SId="579" CId="579"/>
+<SAINT SId="561" CId="561"/>
+<SAINT SId="503" CId="503"/>
 </DAY>

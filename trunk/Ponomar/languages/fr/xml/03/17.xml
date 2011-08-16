@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="St Alexis l'Homme de Dieu" Id="134" Type="1" />
-<SAINT Name="St Marin" Id="663" Type="0" />
-<SAINT Name="St Théostéricte le Confesseur, Higoumène du Monastère du Pélécète" Id="" Type="0" />
-<SAINT Name="St Paul" Id="" Type="0" />
-<SAINT Name="St Macaire le Thaumaturge, Higoumène de Koliazino" Id="1404" Type="3" />
-<SAINT Name="St Patrick, Illuminateur de l'Irlande" Id="" Type="0" />
-
+<DAY><SAINT SId="134" CId="134"/>
+<SAINT SId="663" CId="663"/>
+<SAINT SId="03170097" CId="03170097"/>
+<SAINT SId="031702" CId="031702"/>
+<SAINT SId="1404" CId="1404"/>
+<SAINT SId="031703" CId="031703"/>
 </DAY>

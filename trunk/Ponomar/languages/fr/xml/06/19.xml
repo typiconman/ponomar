@@ -1,19 +1,14 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Jude_1:1-25" Pericope="77" Note="for the Apostle"/>
-<SCRIPTURE Type="gospel" Reading="Jn_14:21-24" Pericope="48" Note="for the Apostle"/>
-<SAINT Name="15" Cmd="dow == 6" />
-
-<SAINT Name="St Apôtre Jude" Id="1346" Type="4" />
-<SAINT Name="St Sozime le Soldat à Antioche de Pisidie" Id="1347" Type="0" />
-<SAINT Name="St Zénon, Ermite en Egypte" Id="" Type="0" />
-<SAINT Name="St Jean le solitaire de Jérusalem" Id="1349" Type="0" />
-<SAINT Name="Ste Myrophore Marie, mère de l'Apôtre Jacques" Id="" Type="0" />
-<SAINT Name="St Asyncritos" Id="" Type="0" />
-<SAINT Name="St Païssios le Grand" Id="1707" Type="0" />
-<SAINT Name="St Père Job, 1er Patriarche de Moscou" Id="6632" Type="4" />
-<SAINT Name="St Païssios de Chilandar" Id="1350" Type="0" />
-<SAINT Name="St Hildegrain, Evêque de Chalons en Champagne" Id="" Type="0" />
-<SAINT Name="Ste Martyre Valérie de Milan" Id="" Type="0" />
-<SAINT Name="Dormition de St Jean Maximovitch" Id="6630" Type="5" Cmd="dow != 6"/>
-
+<DAY><SAINT SId="6630" CId="6630" Cmd="dow == 6"/>
+<SAINT SId="1346" CId="1346"/>
+<SAINT SId="1347" CId="1347"/>
+<SAINT SId="06190100" CId="06190100"/>
+<SAINT SId="1349" CId="1349"/>
+<SAINT SId="06190000" CId="06190000"/>
+<SAINT SId="06190297" CId="06190297"/>
+<SAINT SId="1707" CId="1707"/>
+<SAINT SId="6632" CId="6632"/>
+<SAINT SId="1350" CId="1350"/>
+<SAINT SId="06190397" CId="06190397"/>
+<SAINT SId="06190497" CId="06190497"/>
+<SAINT SId="663002" CId="663002" Cmd="dow != 6"/>
 </DAY>

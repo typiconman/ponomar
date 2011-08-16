@@ -1,13 +1,7 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Lk_1:39-49, 56" Pericope="4" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Philip_2:5-11" Pericope="240" Note="for the Theotokos"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
-
-<SAINT Name="St David de Thessalonique" Id="1396" Type="1" />
-<SAINT Name="St Jean, Evêque de Gothie" Id="1106" Type="0" />
-<SAINT Name="St Anthion" Id="" Type="0" />
-<SAINT Name="St David de Ste Anne" Id="" Type="0" />
-<SAINT Name="Apparition de l'Icône de la Mère de Dieu de Tichvin" Id="" Type="0" />
-<SAINT Name="St Denys, Archevêque de Souzdal" Id="631" Type="0" />
-
+<DAY><SAINT SId="1396" CId="1396"/>
+<SAINT SId="1106" CId="1106"/>
+<SAINT SId="06260097" CId="06260097"/>
+<SAINT SId="06260100" CId="06260100"/>
+<SAINT SId="1395" CId="1395"/>
+<SAINT SId="631" CId="631"/>
 </DAY>

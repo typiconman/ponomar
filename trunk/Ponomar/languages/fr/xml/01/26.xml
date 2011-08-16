@@ -1,13 +1,10 @@
-<DAY>
-<SAINT Name="12" Cmd="dow == 0" />
-
-<SAINT Name="Sts Xénophon, Marie, Arcade et Jean" Id="312" Type="1" />
-<SAINT Name="St Syméon l'Ancien" Id="390" Type="0" />
-<SAINT Name="Sts Ananie, Pierre et leurs 7 compagnons en Phénicie" Id="314" Type="0" />
-<SAINT Name="St Ammonas en Egypte" Id="" Type="0" />
-<SAINT Name="St Gabriel, Higoumène à Jérusalem" Id="" Type="0" />
-<SAINT Name="St Clément du Mont Sagmation" Id="" Type="0" />
-<SAINT Name="St David III le BÃÂ¢tisseur, roi de Géorgie" Id="318" Type="0" />
-<SAINT Name="Ste Paule de Rome" Id="" Type="0" />
-
+<DAY><SAINT SId="6613" CId="6613" Cmd="dow == 0"/>
+<SAINT SId="312" CId="312"/>
+<SAINT SId="390" CId="390"/>
+<SAINT SId="314" CId="314"/>
+<SAINT SId="01260097" CId="01260097"/>
+<SAINT SId="01260197" CId="01260197"/>
+<SAINT SId="01260297" CId="01260297"/>
+<SAINT SId="318" CId="318"/>
+<SAINT SId="01260397" CId="01260397"/>
 </DAY>

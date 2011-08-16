@@ -1,22 +1,19 @@
-<DAY>
-
-<SAINT Name="St Ambroise de Milan" Id="142" Type="1" />
-<SAINT Name="St Athénodore" Id="3079" Type="0" />
-<SAINT Name="St Néophyte" Id="" Type="0" />
-<SAINT Name="St Dométios" Id="" Type="0" />
-<SAINT Name="STS Isidore, Aseptime et Léon" Id="" Type="0" />
-<SAINT Name="Sts Gaïus et Gaïen" Id="" Type="0" />
-<SAINT Name="Sts Martyrs d'Afrique" Id="" Type="0" />
-<SAINT Name="Ste Dame Orthodoxe de Rome" Id="" Type="0" />
-<SAINT Name="St Paul l'Obéissant" Id="3080" Type="0" />
-<SAINT Name="St Ignace" Id="" Type="0" />
-<SAINT Name="St Priscus" Id="" Type="0" />
-<SAINT Name="St Martin" Id="" Type="0" />
-<SAINT Name="St Nicolas" Id="" Type="0" />
-<SAINT Name="St Grégoire l'Hésychaste" Id="" Type="0" />
-<SAINT Name="St Antoine de Siya" Id="3078" Type="2" />
-<SAINT Name="St Nil de Stolbensk" Id="1653" Type="3" />
-<SAINT Name="St Jean le Jeuneur des Grottes de Kiev" Id="6624" Type="0" />
-<SAINT Name="Ste Philmothée la Nouvelle de Tirnovo (translations des Reliques)" Id="" Type="0" />
-
+<DAY><SAINT SId="142" CId="142"/>
+<SAINT SId="3079" CId="3079"/>
+<SAINT SId="12070097" CId="12070097"/>
+<SAINT SId="12070197" CId="12070197"/>
+<SAINT SId="12070297" CId="12070297"/>
+<SAINT SId="12070397" CId="12070397"/>
+<SAINT SId="12070497" CId="12070497"/>
+<SAINT SId="12070597" CId="12070597"/>
+<SAINT SId="3080" CId="3080"/>
+<SAINT SId="12070697" CId="12070697"/>
+<SAINT SId="12070797" CId="12070797"/>
+<SAINT SId="12070897" CId="12070897"/>
+<SAINT SId="12070997" CId="12070997"/>
+<SAINT SId="12070200" CId="12070200"/>
+<SAINT SId="3078" CId="3078"/>
+<SAINT SId="1653" CId="1653"/>
+<SAINT SId="6624" CId="6624"/>
+<SAINT SId="12071197" CId="12071197"/>
 </DAY>

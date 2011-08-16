@@ -1,19 +1,10 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Gen_28:10-17" />
-<SCRIPTURE Type="vespers" Reading="Ezek_43:27, 44:1-4" />
-<SCRIPTURE Type="vespers" Reading="Prov_9:1-11" />
-<SCRIPTURE Type="matins" Reading="Lk_1:39-49, 56" Pericope="4"/>
-<SCRIPTURE Type="apostol" Reading="Heb_9:1-7" Pericope="320" Note="for the Theotokos"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
-
-<SAINT Name="Ste Protection de Notre Souveraine la Mère de Dieu" Id="1638" Type="6" />
-<SAINT Name="St Ananie, Apôtre" Id="1639" Type="1" />
-<SAINT Name="St Romanos le Mélode" Id="1878" Type="1" />
-<SAINT Name="Sts Michel, Higoumène du Monastère de Zobée et ses compagnons" Id="" Type="0" />
-<SAINT Name="St Domnin" Id="" Type="0" />
-<SAINT Name="St Jean Coucouzèle le Chantre (Grande Lavra, Athos)" Id="" Type="0" />
-<SAINT Name="St Grégoire le Domestikos (Grande Lavra, Athos)" Id="" Type="0" />
-<SAINT Name="St Sabas, higoumène du Monastère de l'Ascension à Vichera (Novgorod)" Id="1893" Type="3" />
-<SAINT Name="St Rémi, Evêque de Reims" Id="" Type="0" />
-
+<DAY><SAINT SId="1638" CId="1638"/>
+<SAINT SId="1639" CId="1639"/>
+<SAINT SId="1878" CId="1878"/>
+<SAINT SId="10010100" CId="10010100"/>
+<SAINT SId="10010000" CId="10010000"/>
+<SAINT SId="10010200" CId="10010200"/>
+<SAINT SId="10010300" CId="10010300"/>
+<SAINT SId="1893" CId="1893"/>
+<SAINT SId="10010497" CId="10010497"/>
 </DAY>

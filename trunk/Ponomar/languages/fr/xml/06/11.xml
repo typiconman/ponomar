@@ -1,13 +1,7 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Acts_11:19-26, 29-30" Pericope="28" Note="for the Apostles"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:16-21" Pericope="51" Note="for the Apostles"/>
-
-<SAINT Name="St Apôtre Barthélémy et Barnabé" Id="365" Type="4" />
-<SAINT Name="Synaxe de la Mère de Dieu, en mémoire de la révélation de l'hymne 'Il est digne' (Axion Estin) par l'Archange Gabriel" Id="1285" Type="0" />
-<SAINT Name="Les 222 Néomartyrs de la Mission russe de Pékin" Id="" Type="0" />
-<SAINT Name="St Barnabé le Thaumaturge de Basa à Chypre" Id="" Type="0" />
-<SAINT Name="St Barnabé, Higoumène de Vetlouga" Id="6800" Type="0" />
-<SAINT Name="Ste Martyre Macre de Fismes" Id="" Type="0" />
-
+<DAY><SAINT SId="365" CId="365"/>
+<SAINT SId="1285" CId="1285"/>
+<SAINT SId="06110000" CId="06110000"/>
+<SAINT SId="06110200" CId="06110200"/>
+<SAINT SId="6800" CId="6800"/>
+<SAINT SId="06110297" CId="06110297"/>
 </DAY>

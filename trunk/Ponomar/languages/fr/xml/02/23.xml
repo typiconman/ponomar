@@ -1,17 +1,16 @@
 <DAY>
-
-<SAINT Name="St Polycarpe, Evêque de Smyrne" Id="496" Type="1" />
-<SAINT Name="Ste Gorgonie" Id="" Type="0" />
-<SAINT Name="St Alexandre l'Acémète" Id="112" Type="0" />
-<SAINT Name="Sts Jean, Moîse, Antiochus et Antonin" Id="498" Type="0" />
-<SAINT Name="St Zebinas et ses disciples" Id="" Type="0" />
-<SAINT Name="St Clément" Id="" Type="0" />
-<SAINT Name="Ste Théa" Id="" Type="0" />
-<SAINT Name="St Damien d'Esphigménou" Id="" Type="0" />
-<SAINT Name="St Jean le Moissonneur (Theristis)" Id="" Type="0" />
-<SAINT Name="St Moîse du Lac Blanc" Id="" Type="0" />
-<SAINT Name="St Polycarpe de Bryansk" Id="1811" Type="0" />
-<SAINT Name="St Lazare du Péloponèse" Id="" Type="0" />
-<SAINT Name="St Polychronios Evêque de Babylone et ses compagnons" Id="" Type="0" />
-
+<SAINT SId="1007" CId="09107" Cmd="nday == 58 || nday == 54 || nday == 52 || nday == 49"/>
+<SAINT SId="496" CId="496"/>
+<SAINT SId="022300" CId="022300"/>
+<SAINT SId="112" CId="112"/>
+<SAINT SId="498" CId="498"/>
+<SAINT SId="02230197" CId="02230197"/>
+<SAINT SId="02230297" CId="02230297"/>
+<SAINT SId="02230397" CId="02230397"/>
+<SAINT SId="02230497" CId="02230497"/>
+<SAINT SId="02230597" CId="02230597"/>
+<SAINT SId="022301" CId="022301"/>
+<SAINT SId="1811" CId="1811"/>
+<SAINT SId="02230797" CId="02230797"/>
+<SAINT SId="02230897" CId="02230897"/>
 </DAY>

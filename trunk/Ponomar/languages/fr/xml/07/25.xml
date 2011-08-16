@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Dormition de Sainte Anne" Id="2394" Type="3" />
-<SAINT Name="165 Pères du 5ème Concile OEcuménique" Id="4306" Type="0" />
-<SAINT Name="Ste Eupraxie de Tabenna" Id="" Type="0" />
-<SAINT Name="Ste Olympiade, la Diaconesse de Constantinople" Id="4301" Type="10" />
-<SAINT Name="St Macaire de Jeltovodsk et Oujensk, le Thaumaturge" Id="1403" Type="3" />
-<SAINT Name="St Christophe, Higoumène du Monastère de Sovychegodsk (Vologda)" Id="" Type="0" />
-<SAINT Name="Sts Martyrs de Lyon et de Vienne, Blandine, Sanctus, Maturus et Attale" Id="" Type="0" />
-
+<DAY><SAINT SId="2394" CId="2394"/>
+<SAINT SId="4306" CId="4306"/>
+<SAINT SId="430101" CId="430101"/>
+<SAINT SId="4301" CId="4301"/>
+<SAINT SId="1403" CId="1403"/>
+<SAINT SId="07250100" CId="07250100"/>
+<SAINT SId="07250000" CId="07250000"/>
 </DAY>

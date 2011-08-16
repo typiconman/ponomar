@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Sts 42 Martyrs d'Amorium et leurs compagnons" Id="579" Type="1" />
-<SAINT Name="St Hésichius le Thaumaturge" Id="575" Type="0" />
-<SAINT Name="St Maxime" Id="" Type="0" />
-<SAINT Name="St Euphrosynos" Id="" Type="0" />
-<SAINT Name="St Arcade" Id="" Type="0" />
-<SAINT Name="Sts Julien et Eubule" Id="" Type="0" />
-<SAINT Name="Invention de la Sainte Croix par Sainte Hélène et des précieux Clous de la Passion de notre Seigneur Jésus-Christ" Id="2494" Type="0" />
-<SAINT Name="St Job de Moscou" Id="6649" Type="0" />
-<SAINT Name="St Fridolin de Seckingen" Id="" Type="0" />
-<SAINT Name="St Nicolas Vélimirovitch, Evêque de Jitcha et d'Ochrid" Id="" Type="0" />
-
+<DAY><SAINT SId="57901" CId="57901"/>
+<SAINT SId="575" CId="575"/>
+<SAINT SId="03060097" CId="03060097"/>
+<SAINT SId="03060197" CId="03060197"/>
+<SAINT SId="03060297" CId="03060297"/>
+<SAINT SId="03060397" CId="03060397"/>
+<SAINT SId="2494" CId="2494"/>
+<SAINT SId="6649" CId="6649"/>
+<SAINT SId="030601" CId="030601"/>
+<SAINT SId="03060597" CId="03060597"/>
 </DAY>

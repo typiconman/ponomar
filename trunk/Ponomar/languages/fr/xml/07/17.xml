@@ -1,12 +1,9 @@
-<DAY>
-<SAINT Name="13" Cmd="dow == 0" />
-
-<SAINT Name="Ste Marina Grande-Martyre d'Antioche de Pisidie" Id="2587" Type="2" />
-<SAINT Name="St Euphrasios, Evêque d'ionopolis (Paphlagonie)" Id="" Type="0" />
-<SAINT Name="St Lazare du Mont Galésion (transfert des Reliques)" Id="2499" Type="0" />
-<SAINT Name="St Léonide, Higoumène du Monastère d'Oustnedoumsk" Id="1343" Type="0" />
-<SAINT Name="St Irénarque, Higoumène du Monastère de Solovski" Id="4251" Type="0" />
-<SAINT Name="Sts Spératus, Nartzalus, Cittinus, Félix, Aquilinus, Laetantius, Januaria, Générosa, vestia, Donata et Secubda à Scilli" Id="" Type="0" />
-<SAINT Name="Ste Marcelline, soeur de St Ambroise de Milan" Id="" Type="0" />
-
+<DAY><SAINT SId="9969" CId="9969" Cmd="dow == 0"/>
+<SAINT SId="2587" CId="2587"/>
+<SAINT SId="07170097" CId="07170097"/>
+<SAINT SId="2499" CId="2499"/>
+<SAINT SId="1343" CId="1343"/>
+<SAINT SId="4251" CId="4251"/>
+<SAINT SId="07170197" CId="07170197"/>
+<SAINT SId="07170297" CId="07170297"/>
 </DAY>

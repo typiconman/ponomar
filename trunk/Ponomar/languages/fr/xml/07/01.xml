@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="Sts Côme et Damien les Romains, Thaumaturges et Anargyres" Id="1298" Type="2" />
-<SAINT Name="St Pierre d'Evandros" Id="4134" Type="0" />
-<SAINT Name="St Léon l'Ermite" Id="" Type="0" />
-<SAINT Name="St Basile, fondateur du Monastère du Torrent-Profond (Bathys Ryax)" Id="" Type="0" />
-<SAINT Name="St Constantin l'Alaman et ses compagnons" Id="" Type="0" />
-<SAINT Name="St Léonce de Radauts" Id="" Type="0" />
-<SAINT Name="St Galle, Evêque de Clermont" Id="" Type="0" />
-<SAINT Name="St Eparque le Reclus, près d'Angoulème" Id="" Type="0" />
-
+<DAY><SAINT SId="1298" CId="1298"/>
+<SAINT SId="4134" CId="4134"/>
+<SAINT SId="07010097" CId="07010097"/>
+<SAINT SId="07010000" CId="07010000"/>
+<SAINT SId="07010297" CId="07010297"/>
+<SAINT SId="07010397" CId="07010397"/>
+<SAINT SId="07010497" CId="07010497"/>
+<SAINT SId="07010597" CId="07010597"/>
 </DAY>

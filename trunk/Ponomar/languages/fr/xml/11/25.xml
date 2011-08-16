@@ -1,23 +1,20 @@
-<DAY>
-
-<SAINT Name="Apodose de l'Entree au Temple" Id="3"/>
-<SAINT Name="St Clément, Evêque de Rome" Id="6969" Type="1" />
-<SAINT Name="St Pierre d'Alexandrie" Id="369" Type="1" />
-<SAINT Name="St Malc" Id="" Type="0" />
-<SAINT Name="St Carion" Id="" Type="0" />
-<SAINT Name="St Hermogène, Evêque d'Agrigente" Id="" Type="0" />
-<SAINT Name="Sts Philoumène et Christophe" Id="" Type="0" />
-<SAINT Name="St Eugène" Id="" Type="0" />
-<SAINT Name="Sts Procope et Christophe" Id="" Type="0" />
-<SAINT Name="St Alexandre de Corinthe" Id="" Type="0" />
-<SAINT Name="St Grégoire de la Pierre d'or" Id="" Type="0" />
-<SAINT Name="St Chrysogone" Id="" Type="0" />
-<SAINT Name="St Marc, en Bithynie" Id="" Type="0" />
-<SAINT Name="St Théodore d'Antioche" Id="" Type="0" />
-<SAINT Name="St Mercure de Smolensk" Id="" Type="0" />
-<SAINT Name="St Simon de SoÃÂ¯ga" Id="" Type="0" />
-<SAINT Name="St Luc des grottes de Kiev" Id="" Type="0" />
-<SAINT Name="St Portien" Id="" Type="0" />
-<SAINT Name="St Nicomède le nouveau" Id="" Type="0" />
-
+<DAY><SAINT SId="3" CId="3"/>
+<SAINT SId="6969" CId="6969"/>
+<SAINT SId="36902" CId="36902"/>
+<SAINT SId="11250097" CId="11250097"/>
+<SAINT SId="11250197" CId="11250197"/>
+<SAINT SId="11250297" CId="11250297"/>
+<SAINT SId="11250397" CId="11250397"/>
+<SAINT SId="11250497" CId="11250497"/>
+<SAINT SId="11250597" CId="11250597"/>
+<SAINT SId="11250697" CId="11250697"/>
+<SAINT SId="11250797" CId="11250797"/>
+<SAINT SId="11250897" CId="11250897"/>
+<SAINT SId="11250997" CId="11250997"/>
+<SAINT SId="11251097" CId="11251097"/>
+<SAINT SId="11251197" CId="11251197"/>
+<SAINT SId="11251297" CId="11251297"/>
+<SAINT SId="11251397" CId="11251397"/>
+<SAINT SId="11251497" CId="11251497"/>
+<SAINT SId="11251597" CId="11251597"/>
 </DAY>

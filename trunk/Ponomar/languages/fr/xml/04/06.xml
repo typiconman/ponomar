@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="St Eutyche, Patriarche de Constantinople" Id="795" Type="1" />
-<SAINT Name="Sts 120 Martyrs en Perse" Id="" Type="0" />
-<SAINT Name="Ste Platonide" Id="" Type="0" />
-<SAINT Name="Sts 2 Martyrs d'Ascalon" Id="" Type="0" />
-<SAINT Name="St Grégoire le Sinaïte" Id="" Type="0" />
-<SAINT Name="St Grégoire de la Grande Lavra" Id="" Type="0" />
-<SAINT Name="Sts Manuel, Théodore, Georges et Michel de Samothrace" Id="" Type="0" />
-<SAINT Name="St. Méthode, Apôtre des Slaves" Id="1525" Type="4" />
-
+<DAY><SAINT SId="795" CId="795"/>
+<SAINT SId="040600" CId="040600"/>
+<SAINT SId="040601" CId="040601"/>
+<SAINT SId="04060297" CId="04060297"/>
+<SAINT SId="040602" CId="040602"/>
+<SAINT SId="040603" CId="040603"/>
+<SAINT SId="040604" CId="040604"/>
+<SAINT SId="1525" CId="1525"/>
 </DAY>

@@ -1,25 +1,20 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="335" Note="for St Jonah" />
-<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St Jonah"/>
-
-<SAINT Name="St Prophète Amos" Id="149" Type="1" />
-<SAINT Name="Sts Apôtres Fortunatus, Achaïcus et Stéphanas" Id="" Type="0" />
-<SAINT Name="Sts Guy (Vitus), Modeste et Crescens" Id="1311" Type="0" />
-<SAINT Name="St Doulas de Cilicie" Id="1310" Type="0" />
-<SAINT Name="St Doulas d'Egypte" Id="1313" Type="0" />
-<SAINT Name="St Horsière" Id="" Type="0" />
-<SAINT Name="Ste Graus" Id="" Type="0" />
-<SAINT Name="St Nerses" Id="" Type="0" />
-<SAINT Name="St Théodore du Sykeon (translation des Reliques)" Id="2200" Type="0" />
-<SAINT Name="St Syméon, Archevêque de Novgorod" Id="" Type="0" />
-<SAINT Name="Sts Grégoire et Cassien, Higoumènes d'Avnejk" Id="" Type="0" />
-<SAINT Name="St Lazare, Prince de Serbie" Id="1327" Type="0" />
-<SAINT Name="St Ephrem, Patriarche de Serbie" Id="1320" Type="0" />
-<SAINT Name="St Spyridon, Patriarche de Serbie" Id="" Type="0" />
-<SAINT Name="St Jérôme" Id="1314" Type="0" />
-<SAINT Name="St Abraham d'Auvergne" Id="" Type="0" />
-<SAINT Name="St Joseph de Bethléem" Id="" Type="0" />
-<SAINT Name="Sts Néomartyrs de Serbie" Id="" Type="0" />
-<SAINT Name="St Augustin, Evêque d'Hippone" Id="1316" Type="0" />
-
+<DAY><SAINT SId="149" CId="149"/>
+<SAINT SId="06150600" CId="06150600"/>
+<SAINT SId="1311" CId="1311"/>
+<SAINT SId="1310" CId="1310"/>
+<SAINT SId="1313" CId="1313"/>
+<SAINT SId="06150197" CId="06150197"/>
+<SAINT SId="06150297" CId="06150297"/>
+<SAINT SId="06150397" CId="06150397"/>
+<SAINT SId="2200" CId="220001"/>
+<SAINT SId="06150400" CId="06150400"/>
+<SAINT SId="06150300" CId="06150300"/>
+<SAINT SId="1327" CId="1327"/>
+<SAINT SId="1320" CId="1320"/>
+<SAINT SId="06150200" CId="06150200"/>
+<SAINT SId="1314" CId="1314"/>
+<SAINT SId="06150100" CId="06150100"/>
+<SAINT SId="06150500" CId="06150500"/>
+<SAINT SId="06150997" CId="06150997"/>
+<SAINT SId="1316" CId="1316"/>
 </DAY>

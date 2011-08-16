@@ -1,22 +1,16 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Philip"/>
-<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St Philip"/>
-
-<SAINT Name="St Gérasime de Carpénision" Id="" Type="0" />
-<SAINT Name="St Hyacinthe de le Cubiculaire" Id="4142" Type="1" />
-<SAINT Name="Sts Théodote, Théodotie, Golindouch, Diomède, Eulampios et Asclépias" Id="" Type="0" />
-<SAINT Name="St Anatole, Archevêque de Contantinople" Id="4150" Type="0" />
-<SAINT Name="Sts Marc et Mocios" Id="4148" Type="0" />
-<SAINT Name="St Isaïe l'Anachorète" Id="" Type="0" />
-<SAINT Name="St Joachim du Monastère de Noténa en Achaïe" Id="" Type="0" />
-<SAINT Name="Sts Basile et Constantin de Iaroslav" Id="6492" Type="0" />
-<SAINT Name="St Anatole le Reclus des Grottes de Kiev" Id="" Type="0" />
-<SAINT Name="(un autre) St Anatole des Grottes de Kiev" Id="6416" Type="0" />
-<SAINT Name="Jean de Moscou, Fol en Christ" Id="989" Type="0" />
-<SAINT Name="St Nicodème du lac Koja" Id="1627" Type="0" />
-<SAINT Name="Sts Jean et Longin, Thaumaturges de Yarensk (Solovski)" Id="4145" Type="0" />
-<SAINT Name="St Philippe, Métropolite de Moscou (translation des Reliques)" Id="2294" Type="4" />
-<SAINT Name="St Amable, Prêtre à Riom" Id="" Type="0" />
-
+<DAY><SAINT SId="07030097" CId="07030097"/>
+<SAINT SId="4142" CId="4142"/>
+<SAINT SId="07030197" CId="07030197"/>
+<SAINT SId="4150" CId="4150"/>
+<SAINT SId="4148" CId="4148"/>
+<SAINT SId="07030000" CId="07030000"/>
+<SAINT SId="07030397" CId="07030397"/>
+<SAINT SId="6492" CId="6492"/>
+<SAINT SId="07030497" CId="07030497"/>
+<SAINT SId="6416" CId="6416"/>
+<SAINT SId="989" CId="989"/>
+<SAINT SId="1627" CId="1627"/>
+<SAINT SId="4145" CId="4145"/>
+<SAINT SId="2294" CId="2294"/>
+<SAINT SId="07030597" CId="07030597"/>
 </DAY>

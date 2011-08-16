@@ -1,16 +1,13 @@
-<DAY>
-
-<SAINT Name="St Callinique de Gangres" Id="4341" Type="1" />
-<SAINT Name="St Jean le Soldat" Id="" Type="0" />
-<SAINT Name="Ste Théodote et ses 3 enfants" Id="2718" Type="0" />
-<SAINT Name="St Constantin, Patriarche de Constantinople" Id="" Type="0" />
-<SAINT Name="St Théodose le Jeune, Empereur" Id="" Type="0" />
-<SAINT Name="Sts Mamas et Basilisque le Vieillard" Id="" Type="0" />
-<SAINT Name="Sts Benjamin et Bérios" Id="" Type="0" />
-<SAINT Name="St Romain, Higoumène du Monastère de Kirjatch" Id="" Type="0" />
-<SAINT Name="Sts Constantin et Cosmas de Kosin" Id="4342" Type="0" />
-<SAINT Name="St Bogolep de Cherny-Yar, enfant-moine du Grand-Habit" Id="" Type="0" />
-<SAINT Name="St Eusthate de Mtskheta en Géorgie" Id="4346" Type="0" />
-<SAINT Name="St Loup, Evêque de Troyes" Id="" Type="0" />
-
+<DAY><SAINT SId="4341" CId="4341"/>
+<SAINT SId="07290097" CId="07290097"/>
+<SAINT SId="2718" CId="2718"/>
+<SAINT SId="4342" CId="4342"/>
+<SAINT SId="07290000" CId="07290000"/>
+<SAINT SId="07290200" CId="07290200"/>
+<SAINT SId="07290497" CId="07290497"/>
+<SAINT SId="07290597" CId="07290597"/>
+<SAINT SId="4342" CId="4342"/>
+<SAINT SId="07290300" CId="07290300"/>
+<SAINT SId="4346" CId="4346"/>
+<SAINT SId="07290100" CId="07290100"/>
 </DAY>

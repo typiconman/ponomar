@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="St Thomas du Mont Maléon" Id="2325" Type="1" />
-<SAINT Name="Ste Kyriaquie de Nicomédie" Id="4177" Type="0" />
-<SAINT Name="Sts Pérégrin, Lucien, Pompée, Hésichius, Pappias, Saturnin et germain à Dyrrachium" Id="4175" Type="0" />
-<SAINT Name="Sts Eusthate, Polycarpe le Jeune et Evangélos en Macédoine" Id="" Type="0" />
-<SAINT Name="St Félix, Evêque de Nantes" Id="" Type="0" />
-
+<DAY><SAINT SId="2325" CId="2325"/>
+<SAINT SId="4177" CId="4177"/>
+<SAINT SId="4175" CId="4175"/>
+<SAINT SId="07070097" CId="07070097"/>
+<SAINT SId="07070197" CId="07070197"/>
 </DAY>

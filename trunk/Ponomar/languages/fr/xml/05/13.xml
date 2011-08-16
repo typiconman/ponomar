@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Ste Martyre Glycérie et son geôlier Laodicios" Id="2445" Type="1" />
-<SAINT Name="St Serge le Confesseur" Id="" Type="0" />
-<SAINT Name="St Pausicace, Evêque de Synnades" Id="1059" Type="0" />
-<SAINT Name="St Nicéphore du Monastère d'Alphapsis" Id="" Type="0" />
-<SAINT Name="Sts Jean et Euthyme, fondateurs du Monastère d'Iviron et de Georges 1er" Id="" Type="0" />
-<SAINT Name="St Eupheme d'Iviron" Id="6564" Type="0" />
-<SAINT Name="Ste Glycérie de Novgorod" Id="2446" Type="0" />
-<SAINT Name="Stes Martyres Agnès et Disciole de Poitiers" Id="" Type="0" />
-<SAINT Name="St Sertvatius, Evêque de Tongres (Belgique)" Id="" Type="0" />
-<SAINT Name="St Gabriel l'Ibère, qui recueillit l'Icône de la Portaïtissa" Id="" Type="0" />
-
+<DAY><SAINT SId="2445" CId="2445"/>
+<SAINT SId="05130097" CId="05130097"/>
+<SAINT SId="1059" CId="1059"/>
+<SAINT SId="051302" CId="051302"/>
+<SAINT SId="05130297" CId="05130297"/>
+<SAINT SId="6564" CId="6564"/>
+<SAINT SId="2446" CId="2446"/>
+<SAINT SId="05130397" CId="05130397"/>
+<SAINT SId="051301" CId="051301"/>
+<SAINT SId="051304" CId="051304"/>
 </DAY>

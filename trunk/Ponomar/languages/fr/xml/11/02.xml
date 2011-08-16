@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="Sts Akyndinos, Pégase, Aphtonios, Elpidéphore et Anempodiste" Id="2474" Type="1" />
-<SAINT Name="Sts Attique, Eudoxe, Agapios, Marin, Océanos, Eustrate, Captérios, Styrakios, Tobie et leurs compagnons" Id="" Type="0" />
-<SAINT Name="Stes Cyriaque, Domnine et Domna" Id="" Type="0" />
-<SAINT Name="St Marcien de Cyr" Id="1480" Type="0" />
-<SAINT Name="St Cyprien de Storoziev (Olonetsk)" Id="" Type="0" />
-
+<DAY><SAINT SId="2474" CId="2474"/>
+<SAINT SId="11020097" CId="11020097"/>
+<SAINT SId="11020197" CId="11020197"/>
+<SAINT SId="1480" CId="1480"/>
+<SAINT SId="11020000" CId="11020000"/>
 </DAY>

@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Sts Martyrs Phamphyle et ses compagnons" Id="453" Type="1" />
-<SAINT Name="St Maruthas, Evêque de Sophène" Id="454" Type="0" />
-<SAINT Name="St Flavien, Patriarche de Contantinople" Id="" Type="0" />
-<SAINT Name="St Flavien l'Ermite" Id="" Type="0" />
-<SAINT Name="Ste Marie la Nouvelle de Byrie en Thrace" Id="" Type="0" />
-<SAINT Name="St Honeste, disciple de St Saturnin" Id="" Type="0" />
-
+<DAY><SAINT SId="453" CId="453"/>
+<SAINT SId="454" CId="454"/>
+<SAINT SId="02160097" CId="02160097"/>
+<SAINT SId="02160197" CId="02160197"/>
+<SAINT SId="02160297" CId="02160297"/>
+<SAINT SId="02160397" CId="02160397"/>
 </DAY>

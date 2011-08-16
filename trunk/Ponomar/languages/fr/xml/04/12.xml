@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Basile le Confesseur, Evêque de Parion" Id="837" Type="1" />
-<SAINT Name="St Artemon de Laodicée" Id="" Type="0" />
-<SAINT Name="Ste Anthouse, fille de l'empereur Constantin Copronyme" Id="842" Type="0" />
-<SAINT Name="Sts Démas et Protion" Id="" Type="0" />
-<SAINT Name="Sts Ménas, David et Jean" Id="841" Type="0" />
-<SAINT Name="St Acace de Kavsokalyvia" Id="" Type="0" />
-<SAINT Name="St Basile, Evêque de Riazan" Id="" Type="0" />
-<SAINT Name="St Zénon, Evêque ce Vérone" Id="839" Type="0" />
-<SAINT Name="St. Florentin d'Arles" Id="" Type="0" />
-
+<DAY><SAINT SId="837" CId="837"/>
+<SAINT SId="04120097" CId="04120097"/>
+<SAINT SId="842" CId="842"/>
+<SAINT SId="04120197" CId="04120197"/>
+<SAINT SId="841" CId="841"/>
+<SAINT SId="04120297" CId="04120297"/>
+<SAINT SId="041203" CId="041203"/>
+<SAINT SId="839" CId="839"/>
+<SAINT SId="04120497" CId="04120497"/>
 </DAY>

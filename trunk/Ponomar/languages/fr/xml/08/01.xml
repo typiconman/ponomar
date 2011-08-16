@@ -1,18 +1,10 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="I Cor_1:18-24" Pericope="125" Note="for the Cross"/>
-<SCRIPTURE Type="gospel" Reading="Jn_19:6-11, 13-20, 25-35" Pericope="60" Note="for the Cross"/>
-<SCRIPTURE Type="apostol" Reading="Heb_11:33-12:2" Pericope="330" Note="for the Martyrs" Cmd="dow != 0"/>
-<SCRIPTURE Type="gospel" Reading="Mt_10:32-36, 11:1" Pericope="38" Note="for the Martyrs" Cmd="dow != 0"/>
-
-<SAINT Name="Procession de la Sainte et Vivifiante Croix à Constantinople" Id="4360" Type="3" />
-<SAINT Name="Les 7 Frères Maccabées, leur Mère Solomie et Eléazar, leur MaÃÂ®tre" Id="24" Type="1" />
-<SAINT Name="Ste Elésa de Cythère" Id="" Type="0" />
-<SAINT Name="Sts Léonce, Attios, Alexandre, Cindée, Mnisithée, Cyriaque, Minnaios, Caton et Eukléos" Id="" Type="0" />
-<SAINT Name="Sts Polieucte, Théodore, Cyrique, Eléazar et leurs compagnons" Id="" Type="0" />
-<SAINT Name="Sts Minès et Ménéos" Id="" Type="0" />
-<SAINT Name="St Papas le Jeune" Id="" Type="0" />
-<SAINT Name="St Thimothée le Thaumaturge, Evêque de Proconèse" Id="" Type="0" />
-<SAINT Name="St Eusèbe, Evêque de Verceil" Id="" Type="0" />
-
+<DAY><SAINT SId="4360" CId="4360"/>
+<SAINT SId="24" CId="24"/>
+<SAINT SId="08010097" CId="08010097"/>
+<SAINT SId="24" CId="24"/>
+<SAINT SId="08010297" CId="08010297"/>
+<SAINT SId="08010397" CId="08010397"/>
+<SAINT SId="08010497" CId="08010497"/>
+<SAINT SId="08010000" CId="08010000"/>
+<SAINT SId="08010697" CId="08010697"/>
 </DAY>
-	

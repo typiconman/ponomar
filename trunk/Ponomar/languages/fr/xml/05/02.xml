@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Translation des Reliques de St Athanase le Grand" Id="295" Type="2" />
-<SAINT Name="Sts Hesperios, Zoé et leurs enfants Cyrioaque et Théodule" Id="971" Type="0" />
-<SAINT Name="St Sabas, Evêque de Daphnousie" Id="" Type="0" />
-<SAINT Name="St Jourdain le Thaumaturge" Id="" Type="0" />
-<SAINT Name="Sts Boris et Gleb (Tranfert des Reliques)" Id="324" Type="0" />
-<SAINT Name="St Athanase de Lubensk" Id="307" Type="0" />
-<SAINT Name="St Boris-Michel, Tsar de Bulgarie" Id="323" Type="0" />
-
+<DAY><SAINT SId="29501" CId="29501"/>
+<SAINT SId="971" CId="971"/>
+<SAINT SId="05020097" CId="05020097"/>
+<SAINT SId="05020197" CId="05020197"/>
+<SAINT SId="324" CId="324"/>
+<SAINT SId="30701" CId="30701"/>
+<SAINT SId="323" CId="323"/>
 </DAY>

@@ -1,22 +1,16 @@
-<DAY>
-<SAINT Name="12" Cmd="dow == 0" />
-<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="dow != 0 &amp;&amp; nday != -57" />
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
-
-<SAINT Name="Ste Xénie et ses 2 servantes" Id="294" Type="1" />
-<SAINT Name="Ste Xénie, Folle en Christ de St Petersbourg" Id="2568" Type="1" Cmd="nday != -57 &amp;&amp; dow != 0"/>
-<SAINT Name="Ste Xénie, Folle en Christ de St Petersbourg [celebre le samedi]" Id="2568" Type="1" Cmd="dow == 0"/>
-<SAINT Name="Sts Paul, Pausirion et Théodotion" Id="" Type="0" />
-<SAINT Name="Sts Babylas d'Antioche, Agapios et Timothée" Id="297" Type="0" />
-<SAINT Name="St Macédonien" Id="" Type="0" />
-<SAINT Name="St Philon, Evêque de Carpasia en Chypre" Id="" Type="0" />
-<SAINT Name="St Zosime" Id="" Type="0" />
-<SAINT Name="Sts Hermogène et Mamas" Id="" Type="0" />
-<SAINT Name="St Philippice (ou Philippe)" Id="" Type="0" />
-<SAINT Name="St Barsimas" Id="" Type="0" />
-<SAINT Name="St Néophyte le reclus de Chypre" Id="" Type="0" />
-<SAINT Name="St Jean de Kazan" Id="979" Type="0" />
-<SAINT Name="St Gérasime, Evêque de Perm" Id="502" Type="0" />
-
+<DAY><SAINT SId="6613" CId="6613" Cmd="dow == 0"/>
+<SAINT SId="294" CId="294"/>
+<SAINT SId="2568" CId="2568" Cmd="nday != -57 &amp;&amp; dow != 0"/>
+<SAINT SId="256801" CId="256801" Cmd="dow == 0"/>
+<SAINT SId="01240097" CId="01240097"/>
+<SAINT SId="297" CId="297"/>
+<SAINT SId="01240197" CId="01240197"/>
+<SAINT SId="012401" CId="012401"/>
+<SAINT SId="012402" CId="012402"/>
+<SAINT SId="01240497" CId="01240497"/>
+<SAINT SId="01240597" CId="01240597"/>
+<SAINT SId="012404" CId="012404"/>
+<SAINT SId="01240797" CId="01240797"/>
+<SAINT SId="979" CId="979"/>
+<SAINT SId="502" CId="502"/>
 </DAY>

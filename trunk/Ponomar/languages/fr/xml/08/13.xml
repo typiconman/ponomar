@@ -1,17 +1,14 @@
-<DAY>
-
-<SAINT Name="Apodose de la Transfiguration" Id="" Type="3"/>
-<SAINT Name="St Maxime le Confesseur (transfert des Reliques)" Id="267" Type="1" />
-<SAINT Name="St Séridos, Higoumène du Monastère de Gaza" Id="" Type="0" />
-<SAINT Name="St Dorothée de Gaza" Id="" Type="0" />
-<SAINT Name="St Dosithée de Gaza" Id="" Type="0" />
-<SAINT Name="Ste Eudocie, Impératrice" Id="" Type="0" />
-<SAINT Name="Ste Impératrice Irène devenue Xénie, fondatrice du Monastère du Pantocrator" Id="" Type="0" />
-<SAINT Name="St Coronatos" Id="" Type="0" />
-<SAINT Name="Sts Pamphile et Capiton" Id="" Type="0" />
-<SAINT Name="Sts Serge et Etienne" Id="" Type="0" />
-<SAINT Name="St Tkhon de Zadonsk, Evêque de Voronège" Id="2216" Type="4" />
-<SAINT Name="St Maxime de Moscou, Fol en Christ" Id="1430" Type="1" />
-<SAINT Name="Ste Radegonde, Reine des Francs" Id="" Type="0" />
-
+<DAY><SAINT SId="4683" CId="468312"/>
+<SAINT SId="267" CId="26701"/>
+<SAINT SId="08130100" CId="08130100"/>
+<SAINT SId="08130297" CId="08130297"/>
+<SAINT SId="08130397" CId="08130397"/>
+<SAINT SId="08130497" CId="08130497"/>
+<SAINT SId="08130200" CId="08130200"/>
+<SAINT SId="08130697" CId="08130697"/>
+<SAINT SId="08130797" CId="08130797"/>
+<SAINT SId="08130897" CId="08130897"/>
+<SAINT SId="221601" CId="221601"/>
+<SAINT SId="1430" CId="1430"/>
+<SAINT SId="08130000" CId="08130000"/>
 </DAY>

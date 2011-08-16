@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="St Père Jean l'Isaurien" Id="" Type="0" />
-<SAINT Name="St Sabas le Goth" Id="" Type="0" />
-<SAINT Name="St Cosmas le Confesseur, Evêque de Chalcédoine" Id="882" Type="0" />
-<SAINT Name="St Euthyme le Taumaturge" Id="" Type="0" />
-<SAINT Name="St Naucrace le Studite" Id="" Type="0" />
-<SAINT Name="Ste Anastasie la Thaumaturge" Id="" Type="0" />
-<SAINT Name="St Jean Koulikas de Joannina" Id="883" Type="0" />
-<SAINT Name="St Père Euthyme, Illuminateur de la Carélie" Id="" Type="0" />
-
+<DAY><SAINT SId="04180097" CId="04180097"/>
+<SAINT SId="041805" CId="041805"/>
+<SAINT SId="882" CId="882"/>
+<SAINT SId="04180297" CId="04180297"/>
+<SAINT SId="041803" CId="041803"/>
+<SAINT SId="041804" CId="041804"/>
+<SAINT SId="883" CId="883"/>
+<SAINT SId="041802" CId="041802"/>
 </DAY>

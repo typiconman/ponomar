@@ -1,14 +1,13 @@
 <DAY>
-
-<SAINT Name="Ste Mère Elisabeth, la Thaumaturge" Id="924" Type="0" />
-<SAINT Name="Sts Sabas le Stratilate, le Goth et 70 soldats" Id="922" Type="1" />
-<SAINT Name="St Pasicrate et Valention" Id="927" Type="0" />
-<SAINT Name="Sts Eusèbe, Néon, Léonce, Longin, Christophe, Dimitrios, Danabos, Donat, Therin, Nestabe et Nikée" Id="928" Type="0" />
-<SAINT Name="St Duc de Mytilène le tailleurSt Nicolas de Magnésie" Id="" Type="0" />
-<SAINT Name="St Sabas des Grottes de Kiev" Id="925" Type="0" />
-<SAINT Name="Sts Iorest et Sabas, Métropolites d'Oradéa et de Transylvanie" Id="" Type="0" />
-<SAINT Name="St Joseph, Evêque de Maramouresh" Id="" Type="0" />
-<SAINT Name="St Wilfrid, Evêque d'York" Id="" Type="0" />
-<SAINT Name="Stes Mère Beuve et Dode de Reims" Id="" Type="0" />
-
+<SAINT SId="09497" CId="09497" Cmd="nday == 1"/>
+<SAINT SId="924" CId="924"/>
+<SAINT SId="922" CId="922"/>
+<SAINT SId="927" CId="927"/>
+<SAINT SId="928" CId="928"/>
+<SAINT SId="042405" CId="042405"/>
+<SAINT SId="925" CId="925"/>
+<SAINT SId="042407" CId="042407"/>
+<SAINT SId="042408" CId="042408"/>
+<SAINT SId="042409" CId="042409"/>
+<SAINT SId="04240497" CId="04240497"/>
 </DAY>

@@ -1,18 +1,6 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Ex_3:1-8" Cmd="nday != 0" Note="for the Feast"/>
-<SCRIPTURE Type="vespers" Reading="Prov_8:22-30" Cmd="nday != 0" Note="for the Feast"/>
-<SCRIPTURE Type="vespers" Reading="Gen_28:10-17" Cmd="nday &gt; 0" Note="for the Feast"/>
-<SCRIPTURE Type="vespers" Reading="Ezek_43:27-44:4" Cmd="nday &gt; 0" Note="for the Feast"/>
-<SCRIPTURE Type="vespers" Reading="Prov_9:1-11" Cmd="nday &gt; 0" Note="for the Feast"/>
-<SCRIPTURE Type="matins" Reading="Lk_1:39-49, 56" Pericope="4" Note="for the Feast"/>
-<SCRIPTURE Type="apostol" Reading="Heb_2:11-18" Pericope="306" Note="for the Feast"/>
-<SCRIPTURE Type="gospel" Reading="Lk_1:24-38" Pericope="3" Note="for the Feast"/>
-<LITURGY Type="1" Cmd="dow != 0"/>
-
-<SAINT Name="Annonciation à la Très Sainte Mère de Dieu" Id="707" Type="7" />
-<SAINT Name="Stes Pélagie et Théodosie" Id="" Type="0" />
-<SAINT Name="St Senouphios le Sémiophore" Id="" Type="0" />
-<SAINT Name="St Parthène de Kiev" Id="" Type="0" />
-<SAINT Name="St. Tikhon, Patriarche de Moscou" Id="4644" Type="0" />
-
+<DAY><SAINT SId="707" CId="707"/>
+<SAINT SId="032503" CId="032503"/>
+<SAINT SId="032504" CId="032504"/>
+<SAINT SId="032505" CId="032505"/>
+<SAINT SId="4644" CId="4644"/>
 </DAY>

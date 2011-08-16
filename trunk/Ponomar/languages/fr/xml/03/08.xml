@@ -1,10 +1,8 @@
-<DAY>
-
-<SAINT Name="St Théophylacte, Evêque de Nicomédie" Id="594" Type="1" />
-<SAINT Name="St Paul le Confesseur, Evêque de Plousias" Id="" Type="0" />
-<SAINT Name="St Hermès, Apôtre, disciple de St Paul" Id="792" Type="0" />
-<SAINT Name="St Dion" Id="" Type="0" />
-<SAINT Name="St Dométios" Id="" Type="0" />
-<SAINT Name="St Lazare, Higoumène du Monastère de Mourmansk et St Athanase son successeur" Id="1326" Type="0" />
-
+<DAY><SAINT SId="1238" CId="1238" Cmd="nday == 26"/>
+<SAINT SId="594" CId="594"/>
+<SAINT SId="030804" CId="030804"/>
+<SAINT SId="792" CId="792"/>
+<SAINT SId="03080197" CId="03080197"/>
+<SAINT SId="030802" CId="030802"/>
+<SAINT SId="1326" CId="1326"/>
 </DAY>

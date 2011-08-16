@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="St Onésime, Apôtre des 70" Id="450" Type="1" />
-<SAINT Name="St Eusèbe" Id="451" Type="0" />
-<SAINT Name="St Major de Gaza" Id="" Type="0" />
-<SAINT Name="St Théognios, Evêque de Bethelie" Id="" Type="0" />
-<SAINT Name="St Néomartyr Jean de Thessalonique" Id="" Type="0" />
-<SAINT Name="St Dalmate de Sibérie" Id="" Type="0" />
-<SAINT Name="St Anthime de Chios" Id="" Type="0" />
-
+<DAY><SAINT SId="450" CId="450"/>
+<SAINT SId="451" CId="451"/>
+<SAINT SId="021501" CId="021501"/>
+<SAINT SId="02150197" CId="02150197"/>
+<SAINT SId="02150297" CId="02150297"/>
+<SAINT SId="02150397" CId="02150397"/>
+<SAINT SId="02150497" CId="02150497"/>
 </DAY>

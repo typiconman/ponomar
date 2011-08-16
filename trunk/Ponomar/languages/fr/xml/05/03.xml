@@ -1,14 +1,9 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Heb_13:3-16" Pericope="334" Note="for St Theodosius"/>
-<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Theodosius"/>
-
-<SAINT Name="Sts Martyrs Timothée et Maure" Id="980" Type="1" />
-<SAINT Name="Sts Diodore et Rhodopien" Id="" Type="0" />
-<SAINT Name="Ste Xénie la Thaumaturge" Id="" Type="0" />
-<SAINT Name="St Pierre le thaumaturge, Evêque d'Argos" Id="982" Type="0" />
-<SAINT Name="St OEcuménios le Thaumaturge, Evêque de Trikkie" Id="" Type="0" />
-<SAINT Name="St Luc du Steirion (invention des Reliques)" Id="" Type="0" />
-<SAINT Name="St Ahmed le Calligraphe" Id="" Type="0" />
-<SAINT Name="St Théodose, Higoumène des Grottes de Kiev" Id="2211" Type="4" />
-
+<DAY><SAINT SId="980" CId="980"/>
+<SAINT SId="05030097" CId="05030097"/>
+<SAINT SId="05030197" CId="05030197"/>
+<SAINT SId="982" CId="982"/>
+<SAINT SId="05030297" CId="05030297"/>
+<SAINT SId="05030397" CId="05030397"/>
+<SAINT SId="05030497" CId="05030497"/>
+<SAINT SId="2211" CId="2211"/>
 </DAY>

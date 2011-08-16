@@ -1,23 +1,17 @@
 <DAY>
-<SCRIPTURE Type="vespers" Reading="Composite_6" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="vespers" Reading="Isa_6:1-12" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="vespers" Reading="Isa_19:1-5, 12, 16, 19-21" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="matins" Reading="Lk_2:25-32" Pericope="8" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="apostol" Reading="Heb_7:7-17" Pericope="316" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="gospel" Reading="Lk_2:22-40" Pericope="7" Cmd="nday == -49" Note="for the feast"/>
-
-<SAINT Name="St Tryphon, Protecteur des jardins" Id="2" Type="0" />
-<SAINT Name="Sts Saturus, Saturnin, Secondus, Revocat, Perpetue et Felicite" Id="368" Type="0" />
-<SAINT Name="St Pierre de Galatie" Id="369" Type="0" />
-<SAINT Name="St Bendenianos (ou Bendimien) du Mont St Auxence" Id="370" Type="0" />
-<SAINT Name="Sts David, Syméon et Georges de Mytilène" Id="" Type="0" />
-<SAINT Name="St Basile le Confesseur, Evêque de Thessalonique" Id="" Type="0" />
-<SAINT Name="St Nil le Nouveau à Damas" Id="" Type="0" />
-<SAINT Name="St Timothée le Confesseur" Id="" Type="0" />
-<SAINT Name="St Theion" Id="" Type="0" />
-<SAINT Name="St Carion" Id="" Type="0" />
-<SAINT Name="St Néomartyr Anastase à Nauplie" Id="" Type="0" />
-<SAINT Name="St Tryphon de Pechenga et Kola" Id="" Type="0" />
-<SAINT Name="Ste Brigitte de Kildare" Id="" Type="0" />
-
+<SAINT SId="2124" CId="2124" Cmd="nday != -49"/>
+<SAINT SId="373" CId="373" Cmd="nday == -49"/>
+<SAINT SId="369" CId="369"/>
+<SAINT SId="368" CId="368"/>
+<SAINT SId="36903" CId="36903"/>
+<SAINT SId="370" CId="370"/>
+<SAINT SId="02010097" CId="02010097"/>
+<SAINT SId="02010197" CId="02010197"/>
+<SAINT SId="02010297" CId="02010297"/>
+<SAINT SId="02010397" CId="02010397"/>
+<SAINT SId="02010497" CId="02010497"/>
+<SAINT SId="02010597" CId="02010597"/>
+<SAINT SId="02010697" CId="02010697"/>
+<SAINT SId="02010797" CId="02010797"/>
+<SAINT SId="020102" CId="020102"/>
 </DAY>

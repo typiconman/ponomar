@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="St Jean Climaque" Id="986" Type="1" />
-<SAINT Name="St Jean qui pratiqua l'ascèse dans un puits" Id="" Type="0" />
-<SAINT Name="St Jean, Patriarche de Jérusalem" Id="" Type="0" />
-<SAINT Name="Ste Eubula, Mère de St Pantéléimon" Id="739" Type="0" />
-<SAINT Name="St Zacharie, Evêque de Corinthe" Id="" Type="0" />
-<SAINT Name="St. Sophrone d'Irkoutsk" Id="2043" Type="0" />
-<SAINT Name="St. Rieul d'Arles" Id="" Type="0" />
-
+<DAY><SAINT SId="986" CId="986"/>
+<SAINT SId="033002" CId="033002"/>
+<SAINT SId="033000" CId="033000"/>
+<SAINT SId="739" CId="739"/>
+<SAINT SId="033001" CId="033001"/>
+<SAINT SId="2043" CId="2043"/>
+<SAINT SId="03300397" CId="03300397"/>
 </DAY>

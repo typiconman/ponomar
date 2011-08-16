@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="Ste Eudocie la Samaritaine" Id="2466" Type="1" />
-<SAINT Name="Ste Domnine de Syrie" Id="541" Type="0" />
-<SAINT Name="Ste Antonine" Id="2401" Type="0" />
-<SAINT Name="Sts Marcel et Antoine" Id="" Type="0" />
-<SAINT Name="Sts Sylvestre et Sophrone" Id="" Type="0" />
-<SAINT Name="St Nestorien" Id="" Type="0" />
-<SAINT Name="Sts Charise, Nicéphore et Agapios" Id="" Type="0" />
-<SAINT Name="St Agapios de Vatopédi" Id="" Type="0" />
-<SAINT Name="St Martyrius de Zelenetsk" Id="1494" Type="0" />
-<SAINT Name="St David, Evêque du pays de Galles" Id="" Type="0" />
-<SAINT Name="St Aubin, Evêque d'Angers" Id="" Type="0" />
-
+<DAY><SAINT SId="2466" CId="2466"/>
+<SAINT SId="541" CId="541"/>
+<SAINT SId="2401" CId="2401"/>
+<SAINT SId="030103" CId="030103"/>
+<SAINT SId="03010197" CId="03010197"/>
+<SAINT SId="03010297" CId="03010297"/>
+<SAINT SId="03010397" CId="03010397"/>
+<SAINT SId="030104" CId="030104"/>
+<SAINT SId="1494" CId="1494"/>
+<SAINT SId="03010597" CId="03010597"/>
+<SAINT SId="03010697" CId="03010697"/>
 </DAY>

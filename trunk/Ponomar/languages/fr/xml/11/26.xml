@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="St Alypios le Stylite" Id="137" Type="1" />
-<SAINT Name="St Nicon le Métanoité" Id="" Type="0" />
-<SAINT Name="St Stylianos de Paphlagonie" Id="" Type="0" />
-<SAINT Name="St Acace, mentionné dans l'Echelle Sainte" Id="" Type="0" />
-<SAINT Name="St Silos, Evêque de Corinthe en Perse" Id="" Type="0" />
-<SAINT Name="St Jacques l'Anachorète" Id="3230" Type="0" />
-<SAINT Name="St Georges de Chios" Id="" Type="0" />
-<SAINT Name="St Innocent, Evêque d'Irkoutsk" Id="951" Type="1" />
-
+<DAY><SAINT SId="137" CId="137"/>
+<SAINT SId="11260000" CId="11260000"/>
+<SAINT SId="11260300" CId="11260300"/>
+<SAINT SId="11260200" CId="11260200"/>
+<SAINT SId="11260397" CId="11260397"/>
+<SAINT SId="3230" CId="3230"/>
+<SAINT SId="11260100" CId="11260100"/>
+<SAINT SId="95101" CId="95101"/>
 </DAY>

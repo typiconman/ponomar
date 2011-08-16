@@ -1,16 +1,9 @@
-<DAY>
-<SAINT Name="12" Cmd="dow == 0" />
-<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="nday == -58 || dow == 6" />
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday == -58 || dow == 6" Note="for St Xenia"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday == -58 || dow == 6" Note="for St Xenia"/>
-
-<SAINT Name="Ste Xénie, Folle en Christ de St Petersbourg [transfert du samedi]" Id="2568" Type="1" Cmd="nday == -58"/>
-<SAINT Name="Ste Xénie, Folle en Christ de St Petersbourg [transfert du dimanche]" Id="2568" Type="1" Cmd="dow == 6"/>
-<SAINT Name="St Clément, Evêque d'Ancyre et St Agathange" Id="284" Type="1" />
-<SAINT Name="St Eusèbe, ascète en Syrie" Id="" Type="0" />
-<SAINT Name="St Maésymas le Syrien" Id="287" Type="0" />
-<SAINT Name="St Salaman l'Hésychaste" Id="288" Type="0" />
-<SAINT Name="St Denys de l'Olympe" Id="" Type="0" />
-<SAINT Name="St Gennade de Kostroma" Id="470" Type="0" />
-
+<DAY><SAINT SId="6613" CId="6613" Cmd="dow == 0"/>
+<SAINT SId="2568" CId="2568" Cmd="nday == -58 || dow == 6"/>
+<SAINT SId="284" CId="284"/>
+<SAINT SId="01230097" CId="01230097"/>
+<SAINT SId="287" CId="287"/>
+<SAINT SId="288" CId="288"/>
+<SAINT SId="01230197" CId="01230197"/>
+<SAINT SId="470" CId="470"/>
 </DAY>

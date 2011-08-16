@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="St Antipas, Evêque de Pergame" Id="829" Type="1" />
-<SAINT Name="St Pharmouthios d'Egypte" Id="834" Type="0" />
-<SAINT Name="St Jacques, Higoumène de Jeliezny-Borok" Id="831" Type="0" />
-<SAINT Name="Sts Euthyme et Chariton, fondateurs du Monastère de l'Ascension (Vologda)" Id="" Type="0" />
-<SAINT Name="St Barsanuphe, Evêque de Tver" Id="362" Type="0" />
-<SAINT Name="Sts Callinique de Tchernica, Evêque de Rimnicu-Vilcea" Id="" Type="0" />
-<SAINT Name="Sts Procès et Martinien de Rome" Id="833" Type="0" />
-<SAINT Name="St Chariton, Higoumène de Sianjemsk" Id="" Type="0" />
-<SAINT Name="St Algéric de Tours" Id="" Type="0" />
-
+<DAY><SAINT SId="829" CId="829"/>
+<SAINT SId="834" CId="834"/>
+<SAINT SId="831" CId="831"/>
+<SAINT SId="04110097" CId="04110097"/>
+<SAINT SId="362" CId="362"/>
+<SAINT SId="04110197" CId="04110197"/>
+<SAINT SId="833" CId="833"/>
+<SAINT SId="04110297" CId="04110297"/>
+<SAINT SId="04110397" CId="04110397"/>
 </DAY>

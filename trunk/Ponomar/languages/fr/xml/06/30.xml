@@ -1,13 +1,8 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostles"/>
-<SCRIPTURE Type="gospel" Reading="Mk_3:13-19" Pericope="12" Note="for the Apostles"/>
-
-<SAINT Name="Synaxe des douze Apôtres" Id="1419" Type="4" />
-<SAINT Name="St Méliton" Id="" Type="0" />
-<SAINT Name="St Pierre de Sinope" Id="" Type="0" />
-<SAINT Name="St Michel le Jardinier à Athènes" Id="" Type="0" />
-<SAINT Name="St Georges III l'Hagiorite, Higoumène d'Iviron" Id="" Type="0" />
-<SAINT Name="St Gélase de Rimets, Evêque de Transylvanie" Id="" Type="0" />
-<SAINT Name="St Martial, Evêque de Limoges" Id="" Type="0" />
-
+<DAY><SAINT SId="1419" CId="1419"/>
+<SAINT SId="06300097" CId="06300097"/>
+<SAINT SId="06300197" CId="06300197"/>
+<SAINT SId="06300000" CId="06300000"/>
+<SAINT SId="06300397" CId="06300397"/>
+<SAINT SId="06301000" CId="06301000"/>
+<SAINT SId="06300597" CId="06300597"/>
 </DAY>

@@ -1,11 +1,10 @@
 <DAY>
-
-<SAINT Name="Synaxe de l'Archange Gabriel" Id="446" Type="3" />
-<SAINT Name="Sts Codrat, Théodose, Emmanuel et 40 autres Martyrs" Id="" Type="0" />
-<SAINT Name="Sts 26 Goths" Id="712" Type="1" />
-<SAINT Name="St Etienne de Triglia le Confesseur" Id="" Type="0" />
-<SAINT Name="St Basile le Jeune" Id="714" Type="0" />
-<SAINT Name="St Abraham du Mont Latros" Id="" Type="0" />
-<SAINT Name="St Nicéphore, Evêque de Milet" Id="" Type="0" />
-
+<SAINT SId="446" CId="446"/>
+<SAINT SId="032600" CId="032600"/>
+<SAINT SId="032602" CId="032602"/>
+<SAINT SId="712" CId="712"/>
+<SAINT SId="032603" CId="032603"/>
+<SAINT SId="71401" CId="71401"/>
+<SAINT SId="03260297" CId="03260297"/>
+<SAINT SId="03260397" CId="03260397"/>
 </DAY>

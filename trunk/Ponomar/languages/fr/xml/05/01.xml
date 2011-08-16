@@ -1,28 +1,23 @@
-<DAY>
-
-<SAINT Name="St Prophète Jérémie" Id="963" Type="1" />
-<SAINT Name="St Bata le Perse" Id="967" Type="0" />
-<SAINT Name="St Philosophe" Id="" Type="0" />
-<SAINT Name="St Michel de Chalcédoine" Id="" Type="0" />
-<SAINT Name="St Panarétos, Evêque de Paphos en Chypre" Id="" Type="0" />
-<SAINT Name="Ste Isidora, Folle en Christ" Id="" Type="0" />
-<SAINT Name="St Sabas" Id="" Type="0" />
-<SAINT Name="St Romain de Raqqa" Id="" Type="0" />
-<SAINT Name="Sts Euthyme, Ignace et Acace de la Skite du Précurseur au Mont Athos" Id="6922" Type="0" />
-<SAINT Name="St Nicéphore de Chio" Id="" Type="0" />
-<SAINT Name="Ste Maria de Mérambélos" Id="" Type="0" />
-<SAINT Name="St Paphnuce de Borovsk" Id="964" Type="3" />
-<SAINT Name="St Gérasime de Boldina" Id="501" Type="0" />
-<SAINT Name="Ste Thamar, Reine de Géorgie" Id="2687" Type="0" />
-<SAINT Name="St Macaire, Métropolite de Kiev" Id="1406" Type="0" />
-<SAINT Name="St Orens, Métropolite d'Auch" Id="" Type="0" />
-<SAINT Name="Sts Justin, Phocius et Isicius en Bigorre" Id="" Type="0" />
-<SAINT Name="St Magnus, Fondateur du Monastère de Lavedan" Id="" Type="0" />
-<SAINT Name="St Urbice" Id="" Type="0" />
-<SAINT Name="St Macaire de Langon" Id="" Type="0" />
-<SAINT Name="St Brieuc de Bretagne" Id="" Type="0" />
-<SAINT Name="St. Sigismond" Id="" Type="0" />
-
+<DAY><SAINT SId="963" CId="963"/>
+<SAINT SId="967" CId="967"/>
+<SAINT SId="05010097" CId="05010097"/>
+<SAINT SId="05010197" CId="05010197"/>
+<SAINT SId="05010297" CId="05010297"/>
+<SAINT SId="05010397" CId="05010397"/>
+<SAINT SId="05010497" CId="05010497"/>
+<SAINT SId="05010597" CId="05010597"/>
+<SAINT SId="6922" CId="6922"/>
+<SAINT SId="05010697" CId="05010697"/>
+<SAINT SId="05010797" CId="05010797"/>
+<SAINT SId="964" CId="964"/>
+<SAINT SId="501" CId="501"/>
+<SAINT SId="2687" CId="2687"/>
+<SAINT SId="1406" CId="1406"/>
+<SAINT SId="05010897" CId="05010897"/>
+<SAINT SId="05010997" CId="05010997"/>
+<SAINT SId="05011097" CId="05011097"/>
+<SAINT SId="05011197" CId="05011197"/>
+<SAINT SId="05011297" CId="05011297"/>
+<SAINT SId="05011397" CId="05011397"/>
+<SAINT SId="05011497" CId="05011497"/>
 </DAY>
-	
-	

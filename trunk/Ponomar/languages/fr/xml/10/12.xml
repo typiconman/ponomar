@@ -1,20 +1,17 @@
-<DAY>
-<SAINT Name="14" Cmd="dow == 0" />
-
-<SAINT Name="Sts Probus, Tarachus et Andronique" Id="1715" Type="1" />
-<SAINT Name="Ste Domnine" Id="1720" Type="0" />
-<SAINT Name="Ste Anastasie" Id="" Type="0" />
-<SAINT Name="Sts 70 Martyrs" Id="" Type="0" />
-<SAINT Name="st Théodote, Evêque d'Ephèse" Id="" Type="0" />
-<SAINT Name="Ste Malpheta" Id="" Type="0" />
-<SAINT Name="Ste Anthia" Id="" Type="0" />
-<SAINT Name="Sts Juventin et Maxime" Id="" Type="0" />
-<SAINT Name="St Jason, Evêque de Damas" Id="" Type="0" />
-<SAINT Name="Sts Andromaque et Diodore" Id="" Type="0" />
-<SAINT Name="St Théosébios d'Arsinoé en Chypre" Id="" Type="0" />
-<SAINT Name="St Syméon le Nouveau Théologien" Id="" Type="0" />
-<SAINT Name="Mémoire du Bon Larron" Id="" Type="0" />
-<SAINT Name="Sts Amphiloque, Macaire, Taraise et Théodose de Gluchetsk (Vologda)" Id="152" Type="0" />
-<SAINT Name="St Néomartir Juvénal de Riazan" Id="" Type="0" />
-
+<DAY><SAINT SId="9914" CId="9914" Cmd="dow == 0"/>
+<SAINT SId="1715" CId="1715"/>
+<SAINT SId="1720" CId="1720"/>
+<SAINT SId="10120100" CId="10120100"/>
+<SAINT SId="10120197" CId="10120197"/>
+<SAINT SId="10120200" CId="10120200"/>
+<SAINT SId="10120397" CId="10120397"/>
+<SAINT SId="10120497" CId="10120497"/>
+<SAINT SId="10120597" CId="10120597"/>
+<SAINT SId="10120300" CId="10120300"/>
+<SAINT SId="10120797" CId="10120797"/>
+<SAINT SId="10120500" CId="10120500"/>
+<SAINT SId="10120400" CId="10120400"/>
+<SAINT SId="10121097" CId="10121097"/>
+<SAINT SId="152" CId="152"/>
+<SAINT SId="10121197" CId="10121197"/>
 </DAY>

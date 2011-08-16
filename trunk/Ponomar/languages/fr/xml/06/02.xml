@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="St Nicéphore le Confesseur, Patriarche de Constantinople" Id="1625" Type="1" />
-<SAINT Name="Sts Erasme d'Ochrid et ses 20 000 compagnons" Id="" Type="0" />
-<SAINT Name="St Marin de Constantinople" Id="" Type="0" />
-<SAINT Name="St Néomartyr Constantin, le musulman converti" Id="" Type="0" />
-<SAINT Name="St Jean le Nouveau de Suceava (Roumanie)" Id="991" Type="2" />
-<SAINT Name="St Dimitrios de Philadelphie" Id="" Type="0" />
-<SAINT Name="St Pothin, Evêque de Lyon et Martyr" Id="" Type="0" />
-
+<DAY><SAINT SId="162501" CId="162501"/>
+<SAINT SId="06020000" CId="06020000"/>
+<SAINT SId="06020197" CId="06020197"/>
+<SAINT SId="06020200" CId="06020200"/>
+<SAINT SId="99101" CId="99101"/>
+<SAINT SId="06020100" CId="06020100"/>
+<SAINT SId="06020497" CId="06020497"/>
 </DAY>

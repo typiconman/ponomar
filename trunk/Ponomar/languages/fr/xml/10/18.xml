@@ -1,16 +1,11 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Col_4:5-9, 14, 18" Pericope="260 (mid)" Note="for the Apostle"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:16-21" Pericope="51" Note="for the Apostle"/>
-
-<SAINT Name="St Apôtre et Evangéliste Luc" Id="1764" Type="4" />
-<SAINT Name="St Marinos l'Ancien" Id="1767" Type="0" />
-<SAINT Name="St Julien Sabas" Id="1768" Type="0" />
-<SAINT Name="Mémoire de 40 enfants Martyrs" Id="" Type="0" />
-<SAINT Name="St Minason, Evêque de Chypre" Id="" Type="0" />
-<SAINT Name="Sts Syméon et Théodore, Ste Euphrosynie, Fondateur du Monastère de la Grande Grotte dans le Péloponèse" Id="" Type="0" />
-<SAINT Name="Sts Néomartyrs Gabriel et Kermidolis en Egypte" Id="" Type="0" />
-<SAINT Name="St David, Fondateur du Monastère de Serpoukhov" Id="" Type="0" />
-<SAINT Name="St Pierrede Tsétinié, Métropolite du Monténégro" Id="" Type="0" />
-
+<DAY><SAINT SId="9913" CId="9913" Cmd="dow == 6"/>
+<SAINT SId="176401" CId="176401"/>
+<SAINT SId="1767" CId="1767"/>
+<SAINT SId="1768" CId="1768"/>
+<SAINT SId="10180097" CId="10180097"/>
+<SAINT SId="10170000" CId="10170000"/>
+<SAINT SId="10170400" CId="10170400"/>
+<SAINT SId="10170200" CId="10170200"/>
+<SAINT SId="10170100" CId="10170100"/>
+<SAINT SId="10180597" CId="10180597"/>
 </DAY>

@@ -1,13 +1,10 @@
-<DAY>
-<SAINT Name="15" Cmd="dow == 6" />
-
-<SAINT Name="St Tykhon le Thaumaturge, Evêque d'Amathonte à Chypre" Id="1322" Type="1" />
-<SAINT Name="St Marc le Juste, Evêque d'Apollonias, neveu de l'Apôtre Barnabé" Id="" Type="0" />
-<SAINT Name="Sts 5 Martyrs de Nicomédie" Id="" Type="0" />
-<SAINT Name="Sts Martyrs Tigrius et Eutrope de Constantinople" Id="1324" Type="0" />
-<SAINT Name="St Tykhon de Loukhov" Id="2117" Type="0" />
-<SAINT Name="St Hermogène, Evêque de tobolsk" Id="4794" Type="0" />
-<SAINT Name="St Thykon de Kalouga" Id="2118" Type="0" />
-<SAINT Name="Sts 40 Martyrs de Rome" Id="" Type="0" />
-
+<DAY><SAINT SId="6630" CId="6630" Cmd="dow == 6"/>
+<SAINT SId="1322" CId="1322"/>
+<SAINT SId="06160000" CId="06160000"/>
+<SAINT SId="06160200" CId="06160200"/>
+<SAINT SId="1324" CId="1324"/>
+<SAINT SId="2117" CId="2117"/>
+<SAINT SId="4794" CId="4794"/>
+<SAINT SId="2118" CId="2118"/>
+<SAINT SId="06160300" CId="06160300"/>
 </DAY>

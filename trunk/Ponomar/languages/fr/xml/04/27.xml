@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="St Syméon, Evêque de Jérusalem" Id="1997" Type="1" />
-<SAINT Name="Brâlure des Reliques de St Sabbas, Archevêque de Serbie" Id="" Type="0" />
-<SAINT Name="St Jean le Confesseur, Higoumène du Monastère des Cathares" Id="" Type="0" />
-<SAINT Name="St Pollion" Id="" Type="0" />
-<SAINT Name="St Lollion le Nouveau" Id="" Type="0" />
-<SAINT Name="St Euloge l'Hospitalier" Id="942" Type="0" />
-<SAINT Name="St Nicon, Higoumène de la Laure de Dt Gérasime du Jourdain" Id="" Type="0" />
-<SAINT Name="St Etienne des Grottes de Kiev, Evêque de Vladimir" Id="" Type="0" />
-<SAINT Name="Sts Alpinien et Austriclien, de Limoges" Id="" Type="0" />
-
+<DAY><SAINT SId="1997" CId="1997"/>
+<SAINT SId="042706" CId="042706"/>
+<SAINT SId="042703" CId="042703"/>
+<SAINT SId="042704" CId="042704"/>
+<SAINT SId="04270397" CId="04270397"/>
+<SAINT SId="942" CId="942"/>
+<SAINT SId="042705" CId="042705"/>
+<SAINT SId="04270597" CId="04270597"/>
+<SAINT SId="04270697" CId="04270697"/>
 </DAY>

@@ -1,11 +1,7 @@
-<DAY>
-<SAINT Name="3" Cmd="dow == 0" />
-<SAINT Name="10" Cmd="dow == 6" />
-
-<SAINT Name="St Polyeucte" Id="178" Type="1" />
-<SAINT Name="St Eustrate le Thaumaturge, Higoumène du Monastère des Agaures en Bithynie" Id="182" Type="0" />
-<SAINT Name="St Pierre II, Evêque de Sébaste" Id="181" Type="0" />
-<SAINT Name="St Philippe, Métropolite de Moscou" Id="180" Type="4" />
-<SAINT Name="Ste Parthéna d'Edesse" Id="" Type="0" />
-
+<DAY><SAINT SId="163" CId="09017"/>
+<SAINT SId="178" CId="178"/>
+<SAINT SId="182" CId="182"/>
+<SAINT SId="18101" CId="18101"/>
+<SAINT SId="180" CId="180"/>
+<SAINT SId="01090097" CId="01090097"/>
 </DAY>

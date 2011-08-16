@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="Ste Martyre Matrone de Thessalonique" Id="716" Type="1" />
-<SAINT Name="St Hanani, Prophète" Id="" Type="0" />
-<SAINT Name="St Philet le sénateur, Lydie sa femme et ses compagnons" Id="" Type="0" />
-<SAINT Name="St Eutyche, Evêque" Id="" Type="0" />
-<SAINT Name="St Cyrique d'Apros" Id="" Type="0" />
-<SAINT Name="St Paul, Evêque de Corinthe" Id="" Type="0" />
-<SAINT Name="St Jean de Lycopolis" Id="" Type="0" />
-<SAINT Name="St. Matthieu de Beauvais" Id="" Type="0" />
-
+<DAY><SAINT SId="716" CId="716"/>
+<SAINT SId="032701" CId="032701"/>
+<SAINT SId="03270197" CId="03270197"/>
+<SAINT SId="03270297" CId="03270297"/>
+<SAINT SId="032700" CId="032700"/>
+<SAINT SId="032702" CId="032702"/>
+<SAINT SId="03270597" CId="03270597"/>
+<SAINT SId="03270697" CId="03270697"/>
 </DAY>

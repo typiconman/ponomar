@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="St Jacques le Perse" Id="3234" Type="2" />
-<SAINT Name="St Pinufe" Id="" Type="0" />
-<SAINT Name="St Nathanael de Nitrie" Id="" Type="0" />
-<SAINT Name="St Moise de Palestine" Id="" Type="0" />
-<SAINT Name="St Théodose de Tirnovo" Id="" Type="0" />
-<SAINT Name="St Jacques, Archevêque de Rostov" Id="3235" Type="2" />
-<SAINT Name="St Diodore (Damien) de la Montagne St Georges" Id="" Type="0" />
-
+<DAY><SAINT SId="3234" CId="3234"/>
+<SAINT SId="11270100" CId="11270100"/>
+<SAINT SId="11270300" CId="11270300"/>
+<SAINT SId="11270297" CId="11270297"/>
+<SAINT SId="11270400" CId="11270400"/>
+<SAINT SId="3235" CId="3235"/>
+<SAINT SId="11270500" CId="11270500"/>
 </DAY>

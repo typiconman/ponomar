@@ -1,9 +1,8 @@
 <DAY>
-
-<SAINT Name="Sts Ephrem, Basile, Eugène, Agathodore, Capiton, Etherius et Elpidius, Evêques de Cherson" Id="588" Type="1" />
-<SAINT Name="Sts Arcade et Nestor, Evêques de Trimithonte" Id="" Type="0" />
-<SAINT Name="St Paul le Simple, disciple de St Antoine le Grand" Id="1668" Type="0" />
-<SAINT Name="St Ephrem, Patriarche d'Antioche" Id="" Type="0" />
-<SAINT Name="St Laurent, fondateur du monastère de la Mère de Dieu 'Phanéroménie' à Salamine" Id="" Type="0" />
-
+<SAINT SId="1238" CId="1238" Cmd="nday == 19"/>
+<SAINT SId="588" CId="588"/>
+<SAINT SId="03070097" CId="03070097"/>
+<SAINT SId="1668" CId="1668"/>
+<SAINT SId="03070197" CId="03070197"/>
+<SAINT SId="03070297" CId="03070297"/>
 </DAY>

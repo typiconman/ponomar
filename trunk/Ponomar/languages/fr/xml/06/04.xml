@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="St Métrophane, Archevêque de Constantinople" Id="1224" Type="1" />
-<SAINT Name="Stes Marthe et Marie soeurs de Lazare" Id="" Type="0" />
-<SAINT Name="Ste Sophie de Thrace" Id="" Type="0" />
-<SAINT Name="St Jean, Higoumène du Monastère de Monagria" Id="" Type="0" />
-<SAINT Name="St Alonios en Egypte" Id="" Type="0" />
-<SAINT Name="St Méthode de Piechnocha" Id="1303" Type="0" />
-<SAINT Name="Sts Eléazar et Nazaire d'Olonets" Id="" Type="0" />
-
+<DAY><SAINT SId="1224" CId="1224"/>
+<SAINT SId="06040200" CId="06040200"/>
+<SAINT SId="06040500" CId="06040500"/>
+<SAINT SId="06040400" CId="06040400"/>
+<SAINT SId="06040300" CId="06040300"/>
+<SAINT SId="1303" CId="1303"/>
+<SAINT SId="06040600" CId="06040600"/>
 </DAY>

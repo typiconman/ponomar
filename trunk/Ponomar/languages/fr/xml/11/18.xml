@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="St Platon" Id="2555" Type="1" />
-<SAINT Name="St Romain" Id="2556" Type="1" />
-<SAINT Name="Sts Zachée et Alphée" Id="2557" Type="0" />
-<SAINT Name="St Anastase et Daniel le musulman converti" Id="" Type="0" />
-<SAINT Name="Ste Aude, disciple de ste Geneviève" Id="" Type="0" />
-
+<DAY><SAINT SId="2555" CId="2555"/>
+<SAINT SId="2556" CId="2556"/>
+<SAINT SId="2557" CId="2557"/>
+<SAINT SId="11180100" CId="11180100"/>
+<SAINT SId="11180000" CId="11180000"/>
 </DAY>

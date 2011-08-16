@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="Sts 45 Martyrs de Nicopolis, en Arménie" Id="4207" Type="1" />
-<SAINT Name="Sts Bianor et Silvain" Id="" Type="0" />
-<SAINT Name="St Apollonios de Sardes" Id="4210" Type="0" />
-<SAINT Name="Sts Pères Martyrs du Désert de Nitrie" Id="" Type="0" />
-<SAINT Name="Sts Parthénios et Euménios, rénovateur du Monastère de Koudouma en Crète" Id="" Type="0" />
-<SAINT Name="St Joseph de Damas" Id="" Type="0" />
-<SAINT Name="St Antoine, fondateur des Grottes de Kiev" Id="218" Type="3" />
-<SAINT Name="St Sylvain des Grottes de Kiev" Id="1988" Type="0" />
-
+<DAY><SAINT SId="4207" CId="4207"/>
+<SAINT SId="07100000" CId="07100000"/>
+<SAINT SId="4210" CId="4210"/>
+<SAINT SId="07100197" CId="07100197"/>
+<SAINT SId="07100297" CId="07100297"/>
+<SAINT SId="07102000" CId="07102000"/>
+<SAINT SId="21801" CId="21801"/>
+<SAINT SId="1988" CId="1988"/>
 </DAY>

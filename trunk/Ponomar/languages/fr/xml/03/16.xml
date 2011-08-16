@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="St Sabin d'Egypte" Id="653" Type="1" />
-<SAINT Name="St Papas" Id="654" Type="1" />
-<SAINT Name="St Jean du Monastère des Roufinianes" Id="" Type="0" />
-<SAINT Name="St Romain de Parion" Id="" Type="0" />
-<SAINT Name="St Alexandre 1er, Pape de Rome" Id="655" Type="0" />
-<SAINT Name="St Aninas le Thaumaturge" Id="" Type="0" />
-<SAINT Name="St Christodule le Thaumaturge, fondateur du Monastère de St Jean le Théologien à Patmos" Id="" Type="0" />
-<SAINT Name="St Sérapion, Archevêque de Novgorod" Id="6825" Type="0" />
-<SAINT Name="St Malachie" Id="" Type="0" />
-
+<DAY><SAINT SId="65301" CId="65301"/>
+<SAINT SId="654" CId="654"/>
+<SAINT SId="03160097" CId="03160097"/>
+<SAINT SId="03160197" CId="03160197"/>
+<SAINT SId="655" CId="655"/>
+<SAINT SId="03160297" CId="03160297"/>
+<SAINT SId="031600" CId="031600"/>
+<SAINT SId="6825" CId="6825"/>
+<SAINT SId="031601" CId="031601"/>
 </DAY>

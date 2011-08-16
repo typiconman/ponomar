@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Ste Fébronie de Nisibe" Id="9392" Type="1" />
-<SAINT Name="Stes Libye, Léonis et Eutrope" Id="" Type="0" />
-<SAINT Name="Sts Orence, Pharnace, Eros, Firme, Firmin, Cyriaque et Longin" Id="" Type="0" />
-<SAINT Name="Sts Denys l'Athonite, Fondateur de Dyonisiou et son successeur Dométios" Id="" Type="0" />
-<SAINT Name="St Simon" Id="" Type="0" />
-<SAINT Name="St Procope à Smyne" Id="" Type="0" />
-<SAINT Name="St Georges d'Attalia" Id="" Type="0" />
-<SAINT Name="Sts Princes de Mourom Pierre et Fébronie (David et Euphrosyne dans le monachisme)" Id="6796" Type="3" />
-<SAINT Name="St Antide, Evêque de Besancon" Id="" Type="0" />
-
+<DAY><SAINT SId="09392" CId="09392"/>
+<SAINT SId="06250097" CId="06250097"/>
+<SAINT SId="06250197" CId="06250197"/>
+<SAINT SId="06250200" CId="06250200"/>
+<SAINT SId="06250100" CId="06250100"/>
+<SAINT SId="06250300" CId="06250300"/>
+<SAINT SId="06250400" CId="06250400"/>
+<SAINT SId="6796" CId="6796"/>
+<SAINT SId="06250697" CId="06250697"/>
 </DAY>

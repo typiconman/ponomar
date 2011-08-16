@@ -1,5 +1,7 @@
 ﻿<SAINT>
-<NAME Nominative="Commemoration des defunts" Short="defunts" Cmd="nday != -50 || nday != -57"/>
-<NAME Nominative="Samedi de Souvien" Short="defunts" Cmd="nday == -57"/>
-<NAME Nominative="Samedi de la commemoration de tous les saints" Short="defunts" Cmd="nday == -50"/>
+<NAME Short="defunts"/>
+<NAME Nominative="Commemoration des defunts" Cmd="nday != -50 || nday != -57 &amp;&amp; !(doy >= 287 &amp;&amp; doy <= 294)"/>
+<NAME Nominative="Samedi de Souvien" Cmd="nday == -57 &amp;&amp; !(doy >= 287 &amp;&amp; doy <= 294)"/>
+<NAME Nominative="Samedi de la commemoration de tous les saints"  Cmd="nday == -50 &amp;&amp; !(doy >= 287 &amp;&amp; doy <= 294)"/>
+<NAME Nominative="Samedi de Demetrius, commemoration des defunts" Cmd="doy >= 287 &amp;&amp; doy <= 294"/>
 </SAINT>

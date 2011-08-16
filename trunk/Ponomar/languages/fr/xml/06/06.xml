@@ -1,18 +1,14 @@
-<DAY>
-
-<SAINT Name="St Hilarion, Higoumène du Monastère de Dalmate" Id="1246" Type="1" />
-<SAINT Name="St Attale le Thaumaturge" Id="" Type="0" />
-<SAINT Name="Stes Cyrie, Valérie et Marcia" Id="" Type="0" />
-<SAINT Name="Ste Archélaïde et ses compagnes à Salerne" Id="1249" Type="0" />
-<SAINT Name="St Gélase" Id="" Type="0" />
-<SAINT Name="St Anoub le Thaumaturge" Id="" Type="0" />
-<SAINT Name="St Photas" Id="" Type="0" />
-<SAINT Name="St Bessarion le Thaumaturge" Id="1247" Type="1" />
-<SAINT Name="St Céras, Evêque de Grenoble" Id="" Type="0" />
-<SAINT Name="St Hilaire le Nouveau de Constantinople" Id="" Type="0" />
-<SAINT Name="St Père Païssios d'Ouglitch" Id="6785" Type="0" />
-<SAINT Name="St Jonas de Klimetzk" Id="1248" Type="0" />
-<SAINT Name="St Claude, Evêque de Besancon" Id="" Type="0" />
-
+<DAY><SAINT SId="1246" CId="1246"/>
+<SAINT SId="06060097" CId="06060097"/>
+<SAINT SId="06060197" CId="06060197"/>
+<SAINT SId="1249" CId="1249"/>
+<SAINT SId="06060297" CId="06060297"/>
+<SAINT SId="06060397" CId="06060397"/>
+<SAINT SId="06060497" CId="06060497"/>
+<SAINT SId="1247" CId="1247"/>
+<SAINT SId="06060597" CId="06060597"/>
+<SAINT SId="1246" CId="1246"/>
+<SAINT SId="6785" CId="6785"/>
+<SAINT SId="1248" CId="1248"/>
+<SAINT SId="06060797" CId="06060797"/>
 </DAY>
-	

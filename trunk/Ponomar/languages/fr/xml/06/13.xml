@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Ste Martyre Aquiline" Id="9294" Type="1" />
-<SAINT Name="Ste Anne et son fils Jean" Id="1297" Type="0" />
-<SAINT Name="St Jacques (qui vénéra l'Antéchrist)" Id="" Type="0" />
-<SAINT Name="St Antipater, Evêque de Bostra" Id="" Type="0" />
-<SAINT Name="St Diodore d'Emèse" Id="" Type="0" />
-<SAINT Name="Sts Andronique et Sabas de Moscou" Id="6815" Type="0" />
-<SAINT Name="St Aventin" Id="" Type="0" />
-<SAINT Name="St Néomartyr Nicolas, le Diacre de Lesbos (invention des Reliques)" Id="" Type="0" />
-<SAINT Name="St Martyr Ragnebert en Bugey" Id="" Type="0" />
-
+<DAY><SAINT SId="09294" CId="09294"/>
+<SAINT SId="1297" CId="1297"/>
+<SAINT SId="06130097" CId="06130097"/>
+<SAINT SId="06130400" CId="06130400"/>
+<SAINT SId="06130297" CId="06130297"/>
+<SAINT SId="6815" CId="6815"/>
+<SAINT SId="06130397" CId="06130397"/>
+<SAINT SId="06130497" CId="06130497"/>
+<SAINT SId="06130597" CId="06130597"/>
 </DAY>

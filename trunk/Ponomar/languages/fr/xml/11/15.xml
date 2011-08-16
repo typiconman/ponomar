@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="Sts Gourias, Samonas et Habib" Id="552" Type="1" />
-<SAINT Name="St Kyntien de Séleucie, un des 318 Pères du 1er Concile de Nicée (325)" Id="" Type="0" />
-<SAINT Name="Sts Elpidios, Marcel et Eustochios" Id="2542" Type="0" />
-<SAINT Name="St Dimitrien" Id="" Type="0" />
-<SAINT Name="St Philippe du Monastère de Rabang (Vlogda)" Id="" Type="0" />
-<SAINT Name="St Germain (Hermann) de l'Alaska" Id="" Type="0" />
-<SAINT Name="St Staretz Paissy Velitchkovsky" Id="6782" Type="1" />
-<SAINT Name="St Thomas II le Nouveau, Patriarche de Constantinople" Id="" Type="0" />
-
+<DAY><SAINT SId="552" CId="552"/>
+<SAINT SId="11150200" CId="11150200"/>
+<SAINT SId="2542" CId="2542"/>
+<SAINT SId="11150100" CId="11150100"/>
+<SAINT SId="11150300" CId="11150300"/>
+<SAINT SId="11150000" CId="11150000"/>
+<SAINT SId="6782" CId="6782"/>
+<SAINT SId="11150400" CId="11150400"/>
 </DAY>

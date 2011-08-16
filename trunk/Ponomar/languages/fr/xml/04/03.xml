@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="St Nicétas le Confesseur, Higoumène du Monastère du Médikion" Id="767" Type="1" />
-<SAINT Name="St Joseph l'Hymnographe" Id="" Type="0" />
-<SAINT Name="St Elpidophore, Sts Dios, Bythonios et Galycos" Id="771" Type="0" />
-<SAINT Name="St Paul le Russe" Id="" Type="0" />
-<SAINT Name="St Nectaire de Bejetsk" Id="" Type="0" />
-<SAINT Name="Ste Mère Fare" Id="" Type="0" />
-
+<DAY><SAINT SId="767" CId="767"/>
+<SAINT SId="04030097" CId="04030097"/>
+<SAINT SId="771" CId="771"/>
+<SAINT SId="040301" CId="040301"/>
+<SAINT SId="040302" CId="040302"/>
+<SAINT SId="040303" CId="040303"/>
 </DAY>

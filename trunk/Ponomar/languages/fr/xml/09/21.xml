@@ -1,19 +1,14 @@
-<DAY>
-<SAINT Name="4" Cmd="dow == 0" />
-<SAINT Name="11" Cmd="dow == 6" />
-
-<SAINT Name="Apodose de l'Exaltation de la Sainte et Vivifiante Croix" Id="" Type="3" />
-<SAINT Name="St Codrat, Apôtre à Magnésie" Id="1256" Type="1" />
-<SAINT Name="St Prophète Jonas" Id="" Type="0" />
-<SAINT Name="St Jonas le sabbaïte, Sts Théodore et Théophane, les Marqués" Id="" Type="0" />
-<SAINT Name="St Eusèbe" Id="" Type="0" />
-<SAINT Name="Sts Eusèbe, Nestabe, Zénon, nestor et Boussiris" Id="" Type="0" />
-<SAINT Name="St Isaac, Evêque de Sitie enb Chypre" Id="" Type="0" />
-<SAINT Name="St Pricus" Id="" Type="0" />
-<SAINT Name="Sts 6 Martyrs écuyers de l'Empereur Maximien" Id="" Type="0" />
-<SAINT Name="St Dimitris, Evêque de Rostov (invention des Reliques)" Id="601" Type="4" />
-<SAINT Name="St Joseph du Monastère de Zaonikiev (Vologda)" Id="1576" Type="0" />
-<SAINT Name="St Daniel, Higoumène de Choujgorsk (Novgorod)" Id="586" Type="0" />
-<SAINT Name="St Castor de Nшmes, Evêque d'Apt" Id="" Type="0" />
-
+<DAY><SAINT SId="1529" CId="152915"/>
+<SAINT SId="1256" CId="1256"/>
+<SAINT SId="09210197" CId="09210197"/>
+<SAINT SId="09210297" CId="09210297"/>
+<SAINT SId="09210397" CId="09210397"/>
+<SAINT SId="09210497" CId="09210497"/>
+<SAINT SId="09210100" CId="09210100"/>
+<SAINT SId="09210000" CId="09210000"/>
+<SAINT SId="09210797" CId="09210797"/>
+<SAINT SId="60103" CId="60102"/>
+<SAINT SId="157601" CId="157601"/>
+<SAINT SId="586" CId="586"/>
+<SAINT SId="09210897" CId="09210897"/>
 </DAY>

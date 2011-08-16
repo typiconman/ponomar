@@ -1,13 +1,7 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="I Jn_4:12-19" Pericope="73 (mid)" Note="for the Apostle"/>
-<SCRIPTURE Type="gospel" Reading="Jn_19:25-27, 21:24-25" Pericope="61" Note="for the Apostle"/>
-
-<SAINT Name="Mémoire du transfert de St Jean le Théologien" Id="962" Type="5" />
-<SAINT Name="St Gédéon, Juge en Israel" Id="" Type="0" />
-<SAINT Name="Ste Chiras" Id="" Type="0" />
-<SAINT Name="Stes cinq Martyres Vierges et moniales" Id="" Type="0" />
-<SAINT Name="St Nil de Calabre" Id="" Type="0" />
-<SAINT Name="St Ephrem, Higoumène du Monastère de Perekop" Id="814" Type="0" />
-
+<DAY><SAINT SId="962" CId="962"/>
+<SAINT SId="09260000" CId="09260000"/>
+<SAINT SId="09260197" CId="09260197"/>
+<SAINT SId="09260297" CId="09260297"/>
+<SAINT SId="09260100" CId="09260100"/>
+<SAINT SId="81401" CId="81401"/>
 </DAY>

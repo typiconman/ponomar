@@ -1,23 +1,18 @@
-<DAY>
-<SAINT Name="3" Cmd="dow == 0" />
-<SAINT Name="10" Cmd="dow == 6" />
-
-<SAINT Name="Aprèsfête de Théophanie" Id="9017" Type="1" />
-<SAINT Name="Ste Domnique" Id="170" Type="1" />
-<SAINT Name="St Georges de Choziba" Id="169" Type="1" />
-<SAINT Name="St Cartérios de Césarée" Id="" Type="0" />
-<SAINT Name="Sts Théophile et Hellade" Id="" Type="0" />
-<SAINT Name="St Agathon d'Egypte" Id="" Type="0" />
-<SAINT Name="St Prophète Shémaya l' ÃÂlamite" Id="" Type="0" />
-<SAINT Name="St Attique, Patriarche de Constantinople" Id="" Type="0" />
-<SAINT Name="St Cyr, Patriarche de Constantinople" Id="" Type="0" />
-<SAINT Name="St Théodore, fondateur du Monastère de Chora" Id="" Type="0" />
-<SAINT Name="St Macaire Makris, Higoumène du Monastère du Christ Pantocrator" Id="" Type="0" />
-<SAINT Name="St Abo de Tiflis en Géorgie" Id="176" Type="0" />
-<SAINT Name="St Grégoire des Grottes de Kiev" Id="171" Type="0" />
-<SAINT Name="autre St Grégoire des Grottes de Kiev" Id="545" Type="0" />
-<SAINT Name="St Grégoire d'Ochrid" Id="" Type="0" />
-<SAINT Name="Sts Isidore de Yuriev et ses 72 compagnons" Id="" Type="0" />
-<SAINT Name="St Séverin, Apôtre du Norique" Id="" Type="0" />
-
+<DAY><SAINT SId="163" CId="09017"/>
+<SAINT SId="170" CId="170"/>
+<SAINT SId="169" CId="169"/>
+<SAINT SId="01080097" CId="01080097"/>
+<SAINT SId="01080197" CId="01080197"/>
+<SAINT SId="01080297" CId="01080297"/>
+<SAINT SId="01080397" CId="01080397"/>
+<SAINT SId="01080497" CId="01080497"/>
+<SAINT SId="01080597" CId="01080597"/>
+<SAINT SId="01080697" CId="01080697"/>
+<SAINT SId="01080797" CId="01080797"/>
+<SAINT SId="176" CId="176"/>
+<SAINT SId="171" CId="171"/>
+<SAINT SId="545" CId="545"/>
+<SAINT SId="01080897" CId="01080897"/>
+<SAINT SId="1119" CId="1119">
+<SAINT SId="01081097" CId="01081097"/>
 </DAY>

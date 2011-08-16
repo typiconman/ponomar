@@ -1,12 +1,9 @@
-<DAY>
-<SAINT Name="15" Cmd="dow == 6" />
-
-<SAINT Name="St Julien de Cilicie" Id="1366" Type="1" />
-<SAINT Name="Sts Julien d'Egypte, Basilisse, Сelse, Antoine, Anastase, Marcianilla, 20 soldats et 7 frères" Id="" Type="0" />
-<SAINT Name="St Martyr Aphrodisios" Id="" Type="0" />
-<SAINT Name="St Nicétas de Nisyros" Id="" Type="0" />
-<SAINT Name="St Artchil II, Roi de Géorgie" Id="1369" Type="0" />
-<SAINT Name="St Luarsab II, Roi de Géorgie" Id="" Type="0" />
-<SAINT Name="Ste Anne, mère de St Sava" Id="" Type="0" />
-
+<DAY><SAINT SId="6630" CId="6630" Cmd="dow == 6"/>
+<SAINT SId="1366" CId="1366"/>
+<SAINT SId="06210400" CId="06210400"/>
+<SAINT SId="06210200" CId="06210200"/>
+<SAINT SId="06210297" CId="06210297"/>
+<SAINT SId="1369" CId="1369"/>
+<SAINT SId="06210500" CId="06210500"/>
+<SAINT SId="06210497" CId="06210497"/>
 </DAY>

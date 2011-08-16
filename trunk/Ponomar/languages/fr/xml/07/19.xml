@@ -1,19 +1,13 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Mt_11:27-30" Pericope="43" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for St Seraphim"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Seraphim"/>
-<SAINT Name="13" Cmd="dow == 0" />
-
-<SAINT Name="Ste Macrine, soeur de St Basile et de St Grégoire de Nysse et ses 4 compagnes" Id="4264" Type="1" />
-<SAINT Name="St Dios" Id="4265" Type="1" />
-<SAINT Name="Découverte des Reliques de St Séraphim de Sarov et sa canonisation" Id="9968" Type="5" />
-<SAINT Name="St Etienne, Prince de Serbie" Id="" Type="0" />
-<SAINT Name="St Michel le Sabaïte" Id="" Type="0" />
-<SAINT Name="St Théodore, Evêque d'Edesse" Id="" Type="0" />
-<SAINT Name="St Grégoire, Evêque de Panédos le Confesseur" Id="" Type="0" />
-<SAINT Name="St Dioklès" Id="" Type="0" />
-<SAINT Name="St Romain, Prince de Ryazan" Id="1875" Type="1" />
-<SAINT Name="St Païssios des Grottes de Kiev" Id="1710" Type="0" />
-<SAINT Name="St Etienne, Prince de Serbie et sa mère Militsa" Id="4269" Type="0" />
-
+<DAY><SAINT SId="9969" CId="9969" Cmd="dow == 0"/>
+<SAINT SId="4264" CId="4264"/>
+<SAINT SId="4265" CId="4265"/>
+<SAINT SId="09968" CId="09968"/>
+<SAINT SId="07190097" CId="07190097"/>
+<SAINT SId="07190197" CId="07190197"/>
+<SAINT SId="07190000" CId="07190000"/>
+<SAINT SId="07190397" CId="07190397"/>
+<SAINT SId="07190497" CId="07190497"/>
+<SAINT SId="1875" CId="1875"/>
+<SAINT SId="1710" CId="1710"/>
+<SAINT SId="4269" CId="4269"/>
 </DAY>

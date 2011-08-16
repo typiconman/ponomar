@@ -1,19 +1,14 @@
-<DAY>
-<SAINT Name="1" Cmd="dow == 0" />
-<SAINT Name="7" Cmd="dow == 6" />
-
-<SAINT Name="Prefete de la Nativite de la Genetrice de Dieu" Id="" Type="2"/>
-<SAINT Name="St Sozon" Id="1470" Type="1" />
-<SAINT Name="Sts Evodus et Onésiophore, Apôtres" Id="1474" Type="0" />
-<SAINT Name="St Eupsychios" Id="1476" Type="0" />
-<SAINT Name="St Pierre le Pieux, Higoumène" Id="" Type="0" />
-<SAINT Name="St Luc de Lycaonie" Id="1477" Type="0" />
-<SAINT Name="St Jean, Archevêque de Novgorod" Id="990" Type="3" />
-<SAINT Name="St Macaire, Archimandrite de Kanev" Id="1405" Type="1" />
-<SAINT Name="Ste Reine" Id="" Type="0" />
-<SAINT Name="Ste Grimonie de Soissons" Id="" Type="0" />
-<SAINT Name="St Euvert, Evêque d'Orléans" Id="" Type="0" />
-<SAINT Name="St Augustal, Evêque d'Arles" Id="" Type="0" />
-<SAINT Name="St Cloud, Fondateur et Higoumène du Monastère de Nogent-sur-Seine" Id="" Type="0" />
-
+<DAY><SAINT SId="147901" CId="147901"/>
+<SAINT SId="1470" CId="1470"/>
+<SAINT SId="1474" CId="1474"/>
+<SAINT SId="1476" CId="1476"/>
+<SAINT SId="09070197" CId="09070197"/>
+<SAINT SId="1477" CId="1477"/>
+<SAINT SId="99001" CId="99001"/>
+<SAINT SId="140501" CId="140501"/>
+<SAINT SId="09070297" CId="09070297"/>
+<SAINT SId="09070397" CId="09070397"/>
+<SAINT SId="09070497" CId="09070497"/>
+<SAINT SId="09070597" CId="09070597"/>
+<SAINT SId="09070000" CId="09070000"/>
 </DAY>

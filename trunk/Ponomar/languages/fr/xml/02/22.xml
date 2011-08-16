@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Sts Apôtres et Martyrs du Quartier d'Eugène à Constantinople (Invention des Reliques)" Id="491" Type="1" />
-<SAINT Name="St Papias, Evêque d'Hiérapolis" Id="" Type="0" />
-<SAINT Name="St Télesphore, Pape de Rome" Id="" Type="0" />
-<SAINT Name="St Athanase de Paulopetrion" Id="302" Type="0" />
-<SAINT Name="Ste Anthouse et ses 12 servantes" Id="" Type="0" />
-<SAINT Name="St Synetos" Id="" Type="0" />
-<SAINT Name="Sts Thalasse et Limnée" Id="493" Type="0" />
-<SAINT Name="St Baradate" Id="" Type="0" />
-<SAINT Name="St Blaise, Evêque" Id="" Type="0" />
-<SAINT Name="St Léonce en Lycie" Id="" Type="0" />
-
+<DAY><SAINT SId="491" CId="491"/>
+<SAINT SId="022203" CId="022203"/>
+<SAINT SId="022204" CId="022204"/>
+<SAINT SId="302" CId="302"/>
+<SAINT SId="02220297" CId="02220297"/>
+<SAINT SId="02220397" CId="02220397"/>
+<SAINT SId="493" CId="493"/>
+<SAINT SId="02220497" CId="02220497"/>
+<SAINT SId="02220597" CId="02220597"/>
+<SAINT SId="02220697" CId="02220697"/>
 </DAY>

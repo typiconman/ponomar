@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="St Charalampos, ses bourreaux Sts Porphyre et Baptos et 2 femmes convertie à son Martyre" Id="421" Type="1" />
-<SAINT Name="Sts Paul, Valentine et Thée" Id="2502" Type="0" />
-<SAINT Name="St Anastase II, Patriarche de Jérusalem" Id="" Type="0" />
-<SAINT Name="St Père Zénon" Id="" Type="0" />
-<SAINT Name="St Prochore des Grottes de Kiev" Id="" Type="0" />
-<SAINT Name="Sts Vladimir et Anne, Princes de Novgorod" Id="2395" Type="0" />
-<SAINT Name="St Longin de Koriajemka" Id="424" Type="0" />
-<SAINT Name="Ste Scholastique, soeur jumelle de St Benoît" Id="" Type="0" />
-
+<DAY><SAINT SId="421" CId="421"/>
+<SAINT SId="2502" CId="2502"/>
+<SAINT SId="02100097" CId="02100097"/>
+<SAINT SId="02100197" CId="02100197"/>
+<SAINT SId="1856" CId="1856"/>
+<SAINT SId="2395" CId="2395"/>
+<SAINT SId="424" CId="424"/>
+<SAINT SId="02100397" CId="02100397"/>
 </DAY>

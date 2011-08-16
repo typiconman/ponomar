@@ -1,19 +1,14 @@
-<DAY>
-
-<SAINT Name="St Dorothée, Evêque de Tyr (361)" Id="1233" Type="1" />
-<SAINT Name="St Igor, Prince de Tchernigov et de Kiev (1150)" Id="907" Type="0" />
-<SAINT Name="St Constantin, Métropolite de Kiev (1159)" Id="" Type="0" />
-<SAINT Name="St Théodore, Prince de Novgorod (1233)" Id="2206" Type="1" />
-<SAINT Name="Sts Marcien, Nicandre (Nicanor), Hypéréchios, Appollonios, Arrios, Gorgios, Sélinias, Irénée et Pammon (Pambo) en Egypte (305-311)" Id="1237" Type="0" />
-<SAINT Name="St Abba Dorothée" Id="1240" Type="0" />
-<SAINT Name="St Pierre de Koricha (1275)" Id="" Type="0" />
-<SAINT Name="St Marc de Smyne (1801)" Id="" Type="0" />
-<SAINT Name="St Boniface, Apôtre de la Germanie (755)" Id="060516" Type="0" />
-<SAINT Name="St Christophe de Rome" Id="" Type="0" />
-<SAINT Name="St Conon de Rome" Id="" Type="0" />
-<SAINT Name="St Eutrope, Evêque d'Orange" Id="" Type="0" />
-<SAINT Name="Sts Amand, Alexandre, Lucius et Audalde de Caunes en Minervois" Id="" Type="0" />
-
+<DAY><SAINT SId="1233" CId="1233"/>
+<SAINT SId="907" CId="907"/>
+<SAINT SId="06050200" CId="06050200"/>
+<SAINT SId="220601" CId="220601"/>
+<SAINT SId="1237" CId="1237"/>
+<SAINT SId="1240" CId="1240"/>
+<SAINT SId="06050300" CId="06050300"/>
+<SAINT SId="06050400" CId="06050400"/>
+<SAINT SId="060516" CId="060516"/>
+<SAINT SId="06050397" CId="06050397"/>
+<SAINT SId="06050500" CId="06050500"/>
+<SAINT SId="06050597" CId="06050597"/>
+<SAINT SId="06050697" CId="06050697"/>
 </DAY>
-	
-	

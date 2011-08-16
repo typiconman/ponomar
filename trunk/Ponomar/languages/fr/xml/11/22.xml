@@ -1,22 +1,19 @@
-<DAY>
-
-<SAINT Name="Sts Philémon, Apphia, Archippe et Onésime" Id="2288" Type="1" />
-<SAINT Name="Sts Cécile, Valérien et Tiburce" Id="2581" Type="0" />
-<SAINT Name="St Maxime" Id="" Type="0" />
-<SAINT Name="Sts Marc, Etienne et Marc" Id="" Type="0" />
-<SAINT Name="St Procope de Palestine" Id="2582" Type="0" />
-<SAINT Name="St Ménigne le Foulon" Id="2583" Type="0" />
-<SAINT Name="St Abba (ou Agabbas)" Id="2584" Type="0" />
-<SAINT Name="St Callixte II Xanthopoulos, Patriarche de Constantinople" Id="" Type="0" />
-<SAINT Name="Sts Christophe et Euphémie" Id="" Type="0" />
-<SAINT Name="Sts Thadée" Id="" Type="0" />
-<SAINT Name="St Agapion" Id="" Type="0" />
-<SAINT Name="St Agapios" Id="" Type="0" />
-<SAINT Name="St Sisinius" Id="" Type="0" />
-<SAINT Name="St Germain en Macédoine" Id="" Type="0" />
-<SAINT Name="St Pierre-Iaropolk de Volynie" Id="2364" Type="0" />
-<SAINT Name="St Michel de Tver" Id="1562" Type="2" />
-<SAINT Name="St Clément D'Ochrid, illuminateur des Bulgares" Id="" Type="0" />
-<SAINT Name="St Michel le Sodat en Bulgarie" Id="2585" Type="0" />
-
+<DAY><SAINT SId="2288" CId="2288"/>
+<SAINT SId="2581" CId="2581"/>
+<SAINT SId="11220097" CId="11220097"/>
+<SAINT SId="11220100" CId="11220100"/>
+<SAINT SId="2582" CId="2582"/>
+<SAINT SId="2583" CId="2583"/>
+<SAINT SId="2584" CId="2584"/>
+<SAINT SId="11220400" CId="11220400"/>
+<SAINT SId="11220397" CId="11220397"/>
+<SAINT SId="11220497" CId="11220497"/>
+<SAINT SId="11220000" CId="11220000"/>
+<SAINT SId="11220697" CId="11220697"/>
+<SAINT SId="11220797" CId="11220797"/>
+<SAINT SId="11220200" CId="11220200"/>
+<SAINT SId="2364" CId="2364"/>
+<SAINT SId="1562" CId="1562"/>
+<SAINT SId="11220300" CId="11220300"/>
+<SAINT SId="2585" CId="2585"/>
 </DAY>

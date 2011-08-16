@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Ste Charitine" Id="1673" Type="1" />
-<SAINT Name="Ste Mamelcta" Id="1678" Type="0" />
-<SAINT Name="St Jean Mauropus, Métropolite d' Euchaïta" Id="" Type="0" />
-<SAINT Name="St Evdokimos du Monastère de Vatopédi (Athos)" Id="" Type="0" />
-<SAINT Name="St Sabas de Vatopédi (Athos)" Id="" Type="0" />
-<SAINT Name="Ste Méthodie de Kimolos" Id="" Type="0" />
-<SAINT Name="Sts Pierre, Alexis, Jonas, Philippe et Hermogène, Métropolites de Moscou et de toute la Russie" Id="1779" Type="3" />
-<SAINT Name="Sts Damien le guérisseur, Jérémie et Matthieu des Grottes de Kiev" Id="1674" Type="0" />
-<SAINT Name="Ste Charitine, Princesse de Lituanie" Id="2748" Type="0" />
-
+<DAY><SAINT SId="1673" CId="1673"/>
+<SAINT SId="1678" CId="1678"/>
+<SAINT SId="10050100" CId="10050100"/>
+<SAINT SId="10050197" CId="10050197"/>
+<SAINT SId="10050200" CId="10050200"/>
+<SAINT SId="10050300" CId="10050300"/>
+<SAINT SId="1779" CId="1779"/>
+<SAINT SId="1674" CId="1674"/>
+<SAINT SId="2748" CId="2748"/>
 </DAY>

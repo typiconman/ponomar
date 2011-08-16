@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="St Ménas de Kotyée" Id="2520" Type="1" />
-<SAINT Name="St Victor, Mégalomartyr" Id="2521" Type="1" />
-<SAINT Name="Sts Vincent et Valérien" Id="2522" Type="1" />
-<SAINT Name="Ste Stéphanide" Id="" Type="0" />
-<SAINT Name="St Théodore Studite" Id="2202" Type="1" />
-<SAINT Name="St Maxime de Moscou, Fol en Christ" Id="1430" Type="1" />
-<SAINT Name="St Etienne, fondateur du Monastère de Détchani en Serbie" Id="6934" Type="0" />
-<SAINT Name="St Martyrius de Zélénetsk (Pskov)" Id="1494" Type="0" />
-<SAINT Name="St Martin le Miséricordieux, Evêque de Tours" Id="" Type="0" />
-
+<DAY><SAINT SId="2520" CId="2520"/>
+<SAINT SId="2521" CId="2521"/>
+<SAINT SId="2522" CId="2522"/>
+<SAINT SId="11110000" CId="11110000"/>
+<SAINT SId="2202" CId="2202"/>
+<SAINT SId="143001" CId="143001"/>
+<SAINT SId="6934" CId="6934"/>
+<SAINT SId="1494" CId="1494"/>
+<SAINT SId="11110100" CId="11110100"/>
 </DAY>

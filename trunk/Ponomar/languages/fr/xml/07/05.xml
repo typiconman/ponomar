@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="St Athanase l'Athonite, fondateur de la Grande Lavra" Id="293" Type="4" />
-<SAINT Name="St Lampade le Thaumaturge" Id="" Type="0" />
-<SAINT Name="Sts Basile et ses 70 compagnons à Scythopolis" Id="" Type="0" />
-<SAINT Name="Ste Cyrilla de Cyrène" Id="" Type="0" />
-<SAINT Name="St Cyprien le Jeune" Id="" Type="0" />
-<SAINT Name="Synaxe des Sts de Lesbos" Id="" Type="0" />
-<SAINT Name="Sts Athanase et Théodose de Cherepovetsk (Novgorod)" Id="" Type="0" />
-<SAINT Name="St Serge de Radonège (Invention des Reliques)" Id="1974" Type="3" />
-<SAINT Name="St Valier, Evêque de Couserans" Id="" Type="0" />
-<SAINT Name="Ste Martyre Princesse Elizabeth et moine Barbare, et Princes Martyres Jean, Igor, Constantine, Serge et Vladimir, tues a Alapaievsk" Id="2500" Type="3"/>
-
+<DAY><SAINT SId="293" CId="293"/>
+<SAINT SId="07050000" CId="07050000"/>
+<SAINT SId="07050197" CId="07050197"/>
+<SAINT SId="07050297" CId="07050297"/>
+<SAINT SId="07050397" CId="07050397"/>
+<SAINT SId="07050700" CId="07050700"/>
+<SAINT SId="07050600" CId="07050600"/>
+<SAINT SId="1974" CId="1974"/>
+<SAINT SId="07050697" CId="07050697"/>
+<SAINT SId="2500" CId="2500"/>
 </DAY>

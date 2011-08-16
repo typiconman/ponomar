@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="St Martyr Calliope" Id="807" Type="0" />
-<SAINT Name="St Georges, Evêque de Mytilène" Id="805" Type="1" />
-<SAINT Name="Sts Rufin, Aquilina et 200 soldats à Sinope" Id="808" Type="0" />
-<SAINT Name="St Sabas de Kalymnos" Id="" Type="0" />
-<SAINT Name="St Gérasime de Byzance" Id="" Type="0" />
-<SAINT Name="St Daniel de Pereyaslavl" Id="582" Type="0" />
-
+<DAY><SAINT SId="807" CId="807"/>
+<SAINT SId="805" CId="805"/>
+<SAINT SId="808" CId="808"/>
+<SAINT SId="04070097" CId="04070097"/>
+<SAINT SId="040704" CId="040704"/>
+<SAINT SId="582" CId="582"/>
 </DAY>

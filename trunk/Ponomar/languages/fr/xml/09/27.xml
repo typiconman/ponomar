@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Sts Callistrate et ses 49 compagnons" Id="1611" Type="1" />
-<SAINT Name="Ste Epicaris" Id="1616" Type="0" />
-<SAINT Name="St Ignace, 4ème Higoumène du Monastère du Christ Sauveur" Id="900" Type="0" />
-<SAINT Name="Sts Marc, Aristarque et Zénon, Apôtres" Id="1615" Type="0" />
-<SAINT Name="Sts Phimémon, Evêque et Fortunianus son compagnon" Id="" Type="0" />
-<SAINT Name="Ste Gaïenne" Id="" Type="0" />
-<SAINT Name="Quinze Martyrs morts noyés" Id="" Type="0" />
-<SAINT Name="Ste Aquilina" Id="" Type="0" />
-<SAINT Name="St Sabbatios du Monastère de Solovski" Id="1907" Type="3" />
-<SAINT Name="St Exupère, Archevêque de Toulouse" Id="" Type="0" />
-
+<DAY><SAINT SId="1611" CId="1611"/>
+<SAINT SId="1616" CId="1616"/>
+<SAINT SId="90001" CId="90001"/>
+<SAINT SId="1615" CId="1615"/>
+<SAINT SId="09270097" CId="09270097"/>
+<SAINT SId="09270197" CId="09270197"/>
+<SAINT SId="09270297" CId="09270297"/>
+<SAINT SId="09270000" CId="09270000"/>
+<SAINT SId="1907" CId="1907"/>
+<SAINT SId="09270497" CId="09270497"/>
 </DAY>
