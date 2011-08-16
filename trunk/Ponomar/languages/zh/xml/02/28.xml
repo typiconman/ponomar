@@ -1,0 +1,14 @@
+<DAY>
+<SAINT SId="1007" CId="09107" Cmd="nday == 43"/>
+<SAINT SId="523" CId="523"/>
+<SAINT SId="02280096" CId="02280096"/>
+<SAINT SId="527" CId="527"/>
+<SAINT SId="528" CId="528"/>
+<SAINT SId="526" CId="526"/>
+<SAINT SId="02280196" CId="02280196"/>
+<SAINT SId="02280296" CId="02280296"/>
+<SAINT SId="02280396" CId="02280396"/>
+<SAINT SId="1636" CId="1636"/>
+<SAINT SId="4762" CId="4762"/>
+<!-- Add the February 29th celebrations -->
+</DAY>

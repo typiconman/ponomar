@@ -1,0 +1,12 @@
+<DAY><SAINT SId="6613" CId="6613" Cmd="dow == 0"/>
+<SAINT SId="2568" CId="2568" Cmd="nday == -58 || dow == 6"/>
+<SAINT SId="284" CId="284"/>
+<SAINT SId="289" CId="289"/>
+<SAINT SId="287" CId="287"/>
+<SAINT SId="288" CId="288"/>
+<SAINT SId="470" CId="470"/>
+<SAINT SId="01230096" CId="01230096"/>
+<SAINT SId="291" CId="291"/>
+<SAINT SId="01230196" CId="01230196"/>
+<SAINT SId="012301" CId="012301"/>
+</DAY>
