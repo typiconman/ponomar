@@ -1,15 +1,4 @@
-<SAINT>
-
-<NAME Nominative="Святитель Иннокентий, епископ Иркутский"/> 
-<LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
-Сведения о нем помещены 26 ноября. 
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
-
+﻿<SAINT>
+<NAME Nominative="Обретение мощей свт. Иннокентия, еп. Иркутского (1805)." Short="Обретение мощей"/>
+<SERVICE Type="0"/>
 </SAINT>

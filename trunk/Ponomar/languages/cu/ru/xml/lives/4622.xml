@@ -1,14 +1,6 @@
-<SAINT>
-
-<NAME Nominative="Преподобная Мавра"/> 
-<LIFE Id="bulgakov">
-Преподобная Мавра подвизалась в Царьграде, где основала обитель, в которой и скончалась в V веке.
+﻿<SAINT>
+<NAME Nominative="Прп. Мавры Константинопольской (V)" Short="Прп. Мавры"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov">
+ Преподобная Мавра подвизалась в Царьграде, где основала обитель, в которой и скончалась в V веке.
 </LIFE>
-<TROPARION Tone="">
-
-</TROPARION>
-<KONTAKION Tone="">
-
-</KONTAKION>
-
 </SAINT>
