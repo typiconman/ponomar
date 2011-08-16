@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME Short="聖麥托迪（885年）及聖基里爾（869年）"/>
+<NAME Nominative="聖麥托迪（885年）及聖基里爾（869年），亞使徒，斯拉夫民族之導師" Cmd="nday != 51"/>
+<NAME Nominative="聖麥托迪（885年）及聖基里爾（869年），亞使徒，斯拉夫民族之導師(transferred to Tuesday)" Cmd="nday == 51"/>
+<SERVICE Type="5"/></SAINT>
