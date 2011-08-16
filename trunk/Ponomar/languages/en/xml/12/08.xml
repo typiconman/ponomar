@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="Venerable Patapios of Thebes (7th C)" Id="3083" Type="1" />
-<SAINT Name="Holy Apostles of the 70: Sosthenes, Apollos, Cephas, Tychicos, Epaphrodites, Caesarius and Onysiphoros (1st C)" Id="3085" Type="0" />
-<SAINT Name="Holy 362 Martyrs: 62 Clergy and 300 Laymen, who suffered in Africa under the Arian Heretics (+477)" Id="3085" Type="0" />
-<SAINT Name="Martyr Anthusa at Rome (5th C)" Id="2404" Type="0" />
-<SAINT Name="Venerable Cyrill, Abbot of Chelmogorsk (+1378)" Id="1234" Type="0" />
-
+<DAY><SAINT SId="3083" CId="3083"/>
+<SAINT SId="3085" CId="3085"/>
+<SAINT SId="308501" CId="308501"/>
+<SAINT SId="2404" CId="2404"/>
+<SAINT SId="1234" CId="1234"/>
 </DAY>

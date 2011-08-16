@@ -1,18 +1,15 @@
 <DAY>
-<SAINT Name="19" Cmd="nday == -49" />
-<!-- The Apodosis of the Meeting of the Lord falls on February 4 if it's Cheesefare Sunday -->
-
-<SAINT Name="Afterfeast of the Meeting of the Lord" Id="" Type="0" Cmd="nday &lt; -49" />
-<SAINT Name="Venerable Isidore of Pelusium (+ 436-440)" Id="382" Type="1" />
-<SAINT Name="Holy Right-Believing Prince George of Vladimir (+ 1238)" Id="487" Type="1" />
-<SAINT Name="Venerable Cyril, Abbot and Wonderworker of Novoezersk (+ 1532)" Id="1229" Type="1" />
-<SAINT Name="Venerable Nicholas the Confessor, Abbot of the Studion Monastery (+ 868)" Id="389" Type="0" />
-<SAINT Name="Holy Hierarch John, Bishop of Eirinopolis" Id="" Type="0" />
-<SAINT Name="Hieromartyr Abraham Bishop of Arbela in Assyria (+ ca 344-347)" Id="" Type="0" />
-<SAINT Name="Martyr Jadorus" Id="" Type="0" />
-<SAINT Name="Venerable Abraham and Coprius of Pechenga (15th C)" Id="387" Type="0" />
-<SAINT Name="Holy Hierarch Phileus, Bishop of Tmuina" Id="" Type="0" />
-<SAINT Name="New Martyr Joseph of Aleppo" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Methodius, bishop of Petropavlovsk (+1921)" Id="" Type="0" />
-
+<SAINT SId="373" CId="37302" Cmd="nday == -49" />
+<SAINT SId="373" CId="37303" Cmd="nday &lt; -49"/>
+<SAINT SId="382" CId="382"/>
+<SAINT SId="487" CId="487"/>
+<SAINT SId="1229" CId="1229"/>
+<SAINT SId="389" CId="389"/>
+<SAINT SId="02040199" CId="02040199"/>
+<SAINT SId="020400" CId="020400"/>
+<SAINT SId="02040399" CId="02040399"/>
+<SAINT SId="387" CId="387"/>
+<SAINT SId="02040499" CId="02040499"/>
+<SAINT SId="02040599" CId="02040599"/>
+<SAINT SId="02040699" CId="02040699"/>
 </DAY>

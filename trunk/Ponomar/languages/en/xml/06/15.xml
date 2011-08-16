@@ -1,23 +1,18 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="335" Note="for St Jonah" />
-<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St Jonah"/>
-
-<SAINT Name="Holy Prophet Amos (8th C BC)" Id="149" Type="1" />
-<SAINT Name="Saint Jonah, Metropolitan of Moscow and Wonderworker of All Russia (+1461)" Id="1042" Type="4" />
-<SAINT Name="Martyr Doulas of Cilicia (+ c.313)" Id="1310" Type="0" />
-<SAINT Name="Right-believing Prince Lazar, the Great Martyr of Serbia (+1389)" Id="1327" Type="0" />
-<SAINT Name="Venerable Jerome (Hieronymus) of Stridonium (+ c.420)" Id="1314" Type="0" />
-<SAINT Name="Venerable Doulas the Passion-bearer" Id="1313" Type="0" />
-<SAINT Name="Blessed Augustine, Bishop of Hippo (+430)" Id="1316" Type="0" />
-<SAINT Name="Translation of the relics of St Theodore the Sykeote (9th C)" Id="2200" Type="0" />
-<SAINT Name="St. Ephraim the Bulgarian, Patriarch of Serbia (after 1399)" Id="1320" Type="0" />
-<SAINT Name="Venerable Orsisius of Taunesiot, disciple of Venerable Pachomius the Great" Id="" Type="0" />
-<SAINT Name="Venerable Gregory and Cassian of Avnezh" Id="" Type="0" />
-<SAINT Name="Martyr Leonida" Id="" Type="0" />
-<SAINT Name="Holy Martyrs Vitus, Modestus, and Crescentia (+ c.303)" Id="1311" Type="0" />
-<SAINT Name="Apostles Stephen and Fotunatus of the 70 (1st C)" Id="" Type="0" />
-<SAINT Name="Martyr Hesychius the soldier" Id="" Type="0" />
-<SAINT Name="St Cerdon, Patriarch of Alexandria" Id="" Type="0" />
-<SAINT Name="St Glycerius, Metropolitan of Slatioara" Id="" Type="0" />
-
+<DAY><SAINT SId="149" CId="149"/>
+<SAINT SId="1042" CId="1042"/>
+<SAINT SId="1310" CId="1310"/>
+<SAINT SId="1327" CId="1327"/>
+<SAINT SId="1314" CId="1314"/>
+<SAINT SId="1313" CId="1313"/>
+<SAINT SId="1316" CId="1316"/>
+<SAINT SId="2200" CId="220001"/>
+<SAINT SId="1320" CId="1320"/>
+<SAINT SId="06150099" CId="06150099"/>
+<SAINT SId="06150199" CId="06150199"/>
+<SAINT SId="06150299" CId="06150299"/>
+<SAINT SId="1311" CId="1311"/>
+<SAINT SId="06150600" CId="06150600"/>
+<SAINT SId="06150499" CId="06150499"/>
+<SAINT SId="06150000" CId="06150000"/>
+<SAINT SId="06150699" CId="06150699"/>
 </DAY>

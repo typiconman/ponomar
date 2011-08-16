@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Holy Fourteen Thousand Children Slain for Christ's sake by Herod in Bethlehem"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
-Having learned from the Magi about the birth of the King of the Jews, our Lord Jesus Christ, and being afraid that this King would deprive him of his throne, Herod commanded that all children of the male gender two years old and younger be killed in Bethlehem and its vicinity. This inhuman decree was fulfilled, but, on the command of God, the holy family fled to Egypt (see Dec. 26). Near the cave of the Nativity of Christ (see page 230) there is a cave where the Roman Catholics built an altar in the name of the Holy Children Martyrs and where their sacred remains are stored behind an iron grating. 
-</LIFE>
-<TROPARION Tone="1">
-By the pangs of Thy saints,/ wherewith they suffered for Thee,/ be entreated O Lord, and heal all our pains,// O Thou Who lovest mankind.
-</TROPARION>
-<KONTAKION Tone="4" Podoben="1">
-The star sent the magi to Him Who was born,/ and Herod cruelly sent an unjust army,// seeking to slay Him Who lay as a babe in the manger.
-</KONTAKION>
-
+<NAME Nominative="Martyred 14,000 Holy Infants, slain by Herod in Bethlehem" Short="Martyred 14,000"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+ Having learned from the Magi about the birth of the King of the Jews, our Lord Jesus Christ, and being afraid that this King would deprive him of his throne, Herod commanded that all children of the male gender two years old and younger be killed in Bethlehem and its vicinity. This inhuman decree was fulfilled, but, on the command of God, the holy family fled to Egypt (see Dec. 26). Near the cave of the Nativity of Christ (see page 230) there is a cave where the Roman Catholics built an altar in the name of the Holy Children Martyrs and where their sacred remains are stored behind an iron grating. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ By the pangs of Thy saints,/ wherewith they suffered for Thee,/ be entreated O Lord, and heal all our pains,// O Thou Who lovest mankind.
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="4">
+ The star sent the magi to Him Who was born,/ and Herod cruelly sent an unjust army,// seeking to slay Him Who lay as a babe in the manger.
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Monk Bukolos, Bishop of Smyrna"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-The Monk Bukolos, Bishop of Smyrna, was a disciple of the holy Apostle and Evangelist John the Theologian, and was established by him as the first bishop of the Smyrna Church (Asia Minor). 	By the grace of God, Saint Bukolos converted to Christ and baptised many of the pagans, and as an experienced and wise guide he defended his flock from the darkness of heresy. He died at peace in about the years 100-105. He passed his flock on to SaintPolycarp (Comm. 23 February), one of the apostolic fathers, who likewise was a disciple of the holy Apostle John the Theologian. At the grave of Saint Bukolos grew a myrtle tree, which healed the sick.
-</LIFE>
-<TROPARION Tone="4">
-The truth of things revealed thee to thy flock as a rule of faith,/ a model of meekness and a teacher of abstinence/ wherefore thou hast attained the heights through humility/ and riches through poverty.// O hierarch Bucolus our father, entreat Christ God that our souls be saved.
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Saint Bukolos, Bishop of Smyrna (+c.100)" Short="Saint Bukolos,"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+ The Monk Bukolos, Bishop of Smyrna, was a disciple of the holy Apostle and Evangelist John the Theologian, and was established by him as the first bishop of the Smyrna Church (Asia Minor). 	By the grace of God, Saint Bukolos converted to Christ and baptised many of the pagans, and as an experienced and wise guide he defended his flock from the darkness of heresy. He died at peace in about the years 100-105. He passed his flock on to SaintPolycarp (Comm. 23 February), one of the apostolic fathers, who likewise was a disciple of the holy Apostle John the Theologian. At the grave of Saint Bukolos grew a myrtle tree, which healed the sick.
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="4">
+ The truth of things revealed thee to thy flock as a rule of faith,/ a model of meekness and a teacher of abstinence/ wherefore thou hast attained the heights through humility/ and riches through poverty.// O hierarch Bucolus our father, entreat Christ God that our souls be saved.
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

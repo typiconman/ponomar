@@ -1,16 +1,11 @@
-<DAY>
-<SAINT Name="4" Cmd="dow == 0" />
-<SAINT Name="11" Cmd="dow == 6" />
-
-<SAINT Name="Afterfeast of the Exaltation of the Cross" Id="" Type="0" />
-<SAINT Name="Greatmartyr Euphemia the All-Praised (+304)" Id="2479" Type="2" />
-<SAINT Name="Martyrs Victor and Sosthenes at Chalcedon (+c.304)" Id="1543" Type="0" />
-<SAINT Name="Holy Martyrs Sebastiana (1st C) and Melitina of Marcianopolis (2nd C)" Id="1545" Type="0" />
-<SAINT Name="Martyr Liudmila, Princess of the Czechs (+927)" Id="1548" Type="0" />
-<SAINT Name="Venerable Dorotheus the Hermit of Egypt (4th C)" Id="1547" Type="0" />
-<SAINT Name="Venerable Procopius, Abbot of Sazavsk, in Bohemia" Id="" Type="0" />
-<SAINT Name="Repose of St Cyprian, Metropolitan of Kiev and All Russia (+1406)" Id="1209" Type="0" />
-<SAINT Name="Martyrs Isaac and Joseph of Georgia (+808)" Id="1549" Type="0" />
-<SAINT Name="New Hieromartyr Priest Gregory (+1937)" Id="4795" Type="0" />
-
+<DAY><SAINT SId="1529" CId="152912"/>
+<SAINT SId="2479" CId="2479"/>
+<SAINT SId="1543" CId="1543"/>
+<SAINT SId="154502" CId="154502"/>
+<SAINT SId="1548" CId="1548"/>
+<SAINT SId="1547" CId="1547"/>
+<SAINT SId="09160000" CId="09160000"/>
+<SAINT SId="120901" CId="120901"/>
+<SAINT SId="1549" CId="1549"/>
+<SAINT SId="4795" CId="4795"/>
 </DAY>

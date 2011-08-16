@@ -1,14 +1,12 @@
 <DAY>
-<SAINT Name="14" Cmd="dow == 0" />
-
-<SAINT Name="Venerable Pelagia the Penitent (+ 457)" Id="2641" Type="1" />
-<SAINT Name="Venerable Pelagia of Antioch" Id="" Type="0" />
-<SAINT Name="Venerable Taisia of Egypt (4th C)" Id="2686" Type="0" />
-<SAINT Name="St James, Patriarch of Antioch" Id="" Type="0" />
-<SAINT Name="Venerable Tryphon, Archimandrite of Vyatka (+ 1612)" Id="2125" Type="0" />
-<SAINT Name="Venerable Dositheus, Abbot of Verkhneostrovsk and Pskov (+ 1482)" Id="1692" Type="0" />
-<SAINT Name="Venerable Ignatius the Bulgarian" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Dmitry, archbishop of Mozhaisk and those with him (+1937)" Id="4798" Type="0" />
-<SAINT Name="New Hieromartyr Jonah, bishop of Velizh, and those with him (+1937)" Id="4836" Type="0" />
-
+<SAINT SId="9914" CId="9914" Cmd="dow == 0"/>
+<SAINT SId="2641" CId="2641"/>
+<SAINT SId="10080000" CId="10080000"/>
+<SAINT SId="2686" CId="2686"/>
+<SAINT SId="10080199" CId="10080199"/>
+<SAINT SId="2125" CId="2125"/>
+<SAINT SId="1692" CId="1692"/>
+<SAINT SId="10080100" CId="10080100"/>
+<SAINT SId="4798" CId="4798"/>
+<SAINT SId="4836" CId="4836"/>
 </DAY>

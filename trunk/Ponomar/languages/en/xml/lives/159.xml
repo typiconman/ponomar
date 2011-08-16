@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Monk Phosterios"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-The Monk Phosterios the Wanderer pursued asceticism on an high mountain. By his powerful working of miracles and saintly life, he restored many from heresy.
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Venerable Phosterius the Hermit (6th C)" Short="Venerable Phosterius"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+ The Monk Phosterios the Wanderer pursued asceticism on an high mountain. By his powerful working of miracles and saintly life, he restored many from heresy.
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

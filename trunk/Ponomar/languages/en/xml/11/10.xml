@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="Apostles of the 70: Herastos, Olympos, Rodion, Sosipater, Quartus and Tercias (1st C)" Id="2514" Type="1" />
-<SAINT Name="Martyr Orestes the Physician of Cappadocia (+304)" Id="2512" Type="0" />
-<SAINT Name="Hieromartyr Milios, Bishop of Persia, and two of his disciples, Euores the Presbyter and Seboes the Deacon (+341)" Id="2516" Type="0" />
-<SAINT Name="Venerable Theostricuts in Symboli" Id="" Type="0" />
-<SAINT Name="Martyr Constantine, Prince of Georgia (+842)" Id="2517" Type="0" />
-<SAINT Name="Holy Hierarch Nonnus, Bishop of Illiopolis" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Dimitrius, Patriarch of Antioch" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Marcian the Confessor, Bishop of Thrace" Id="" Type="0" />
-<SAINT Name="Hieromartyr Gennadius" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Prokopi, Archbishop of Odessa and those with him (+1937)" Id="4894" Type="0" />
-<SAINT Name="New Hieromartyr Augustine, Archbishop of Kaluga and those with him (+1937)" Id="4724" Type="0" />
-
+<DAY><SAINT SId="2514" CId="2514"/>
+<SAINT SId="2515" CId="2515"/>
+<SAINT SId="2516" CId="2516"/>
+<SAINT SId="11100099" CId="11100099"/>
+<SAINT SId="2517" CId="2517"/>
+<SAINT SId="11100100" CId="11100100"/>
+<SAINT SId="11100299" CId="11100299"/>
+<SAINT SId="11100399" CId="11100399"/>
+<SAINT SId="11100499" CId="11100499"/>
+<SAINT SId="4894" CId="4894"/>
+<SAINT SId="4724" CId="4724"/>
 </DAY>

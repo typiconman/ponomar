@@ -1,14 +1,4 @@
 <SAINT>
-
-<NAME Nominative="Sainted Innokentii, Bishop of Irkutsk"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-The account about him is located under 26 November.
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Finding of the relics of Saint Innocent, Bishop of Irkutsk (1805)" Short="Finding"/>
+<SERVICE Type="0"/>
 </SAINT>

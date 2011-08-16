@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Afterfeast of the Entry of the Theotokos" Id="" Type="0" />
-<SAINT Name="Saint Amphylochios, Bishop of Iconiun (+394)" Id="3209" Type="1" />
-<SAINT Name="Saint Gregory, Bishop of Agrigentum (6th-7th C)" Id="3211" Type="1" />
-<SAINT Name="Repose of the Great Prince Alexander Nevsky, tonsured Alexei, Wonderworker of All Russia (+1263)" Id="114" Type="3" />
-<SAINT Name="Holy Hieararch Mitrophan, in monastic-schema Macarius, Bishop of Voronezh (+1703)" Id="1545" Type="4" />
-<SAINT Name="Martyr Sisinias, Bishop of Cyzicus (3rd C)" Id="3214" Type="0" />
-<SAINT Name="Martyr Theodore of Antioch (4th C)" Id="" Type="0" />
-<SAINT Name="Venerable Ischirion, Bishop of Egypt" Id="" Type="0" />
-<SAINT Name="New Hieormartyr Philip (Raspopov) (+1919)" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Boris, Bishop of Ivanovo (+1937)" Id="" Type="0" />
-
+<DAY><SAINT SId="2575" CId="257511"/>
+<SAINT SId="3209" CId="3209"/>
+<SAINT SId="3211" CId="3211"/>
+<SAINT SId="11401" CId="11401"/>
+<SAINT SId="154503" CId="154503"/>
+<SAINT SId="3214" CId="3214"/>
+<SAINT SId="11230000" CId="11230000"/>
+<SAINT SId="11230100" CId="11230100"/>
+<SAINT SId="11230399" CId="11230399"/>
+<SAINT SId="11230400" CId="11230400"/>
 </DAY>

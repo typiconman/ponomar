@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Greatmartyr Barbara and Martyr Juliana, at Heliopolis in Syria (+c.306)" Id="3061" Type="2" />
-<SAINT Name="Venerable John of Damascus (+ 776)" Id="3062" Type="1" />
-<SAINT Name="Venerable John, Bishop of Polybotum (8th C)" Id="" Type="0" />
-<SAINT Name="Hieromartyr Seraphim, Bishop of Phanarium" Id="" Type="0" />
-<SAINT Name="Saint Heracles, Patriarch of Alexandria" Id="" Type="0" />
-<SAINT Name="Saint Genadiy, Archbishop of Novgorod (+ 1505)" Id="471" Type="0" />
-
+<DAY><SAINT SId="3061" CId="3061"/>
+<SAINT SId="3062" CId="3062"/>
+<SAINT SId="12040099" CId="12040099"/>
+<SAINT SId="12040199" CId="12040199"/>
+<SAINT SId="12040299" CId="12040299"/>
+<SAINT SId="47101" CId="47101"/>
 </DAY>

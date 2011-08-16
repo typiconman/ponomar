@@ -1,10 +1,8 @@
 <DAY>
-<SAINT Name="12" Cmd="dow == 0" />
-
-<SAINT Name="Apostle Timothy of the Seventy (+96)" Id="279" Type="1" />
-<SAINT Name="Monkmartyr Anastasius the Persian (628)" Id="165" Type="1" />
-<SAINT Name="Monkmartyr Anastasius the Deacon of the Kievan Caves, near caves (12th C)" Id="166" Type="0" />
-<SAINT Name="Martyred Bishops Manuel, George, Peter, Leontius and Martyred Priests Sionius, Gabriel, John, Leontius, Parodus and 377 others in Bulgaria (+ c. 817)" Id="" Type="0" />
-<SAINT Name="Venerable Macarius of Zhabyn and Belevsk, the Wonderworker (+1623)" Id="1402" Type="0" />
-
+<SAINT SId="6613" CId="6613" Cmd="dow == 0"/>
+<SAINT SId="279" CId="279"/>
+<SAINT SId="165" CId="165"/>
+<SAINT SId="166" CId="166"/>
+<SAINT SId="012200" CId="012200"/>
+<SAINT SId="1402" CId="1402"/>
 </DAY>

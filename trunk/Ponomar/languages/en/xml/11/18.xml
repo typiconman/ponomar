@@ -1,8 +1,5 @@
-<DAY>
-
-<SAINT Name="Martyr Platon of Ancyra (+ 302 or 306)" Id="2555" Type="1" />
-<SAINT Name="Martyr Romanos the Deacon, of Caesarea and the youth Barulas (+ 303)" Id="2556" Type="1" />
-<SAINT Name="Martyrs Zaccheaus the Deacon and Alphaeus the Reader, of Caesarea (+ 303)" Id="2557" Type="0" />
-<SAINT Name="Blessed Magna of Ancyra" Id="" Type="0" />
-
+<DAY><SAINT SId="2555" CId="2555"/>
+<SAINT SId="2556" CId="2556"/>
+<SAINT SId="2557" CId="2557"/>
+<SAINT SId="11180099" CId="11180099"/>
 </DAY>

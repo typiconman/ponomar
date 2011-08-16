@@ -1,16 +1,13 @@
-<DAY>
-
-<SAINT Name="Venerable Gerasimus of the Jordan (+ 451)" Id="504" Type="1" />
-<SAINT Name="Venerable Gerasimus of Vologda (+ 1178)" Id="503" Type="0" />
-<SAINT Name="Right-believing Prince Daniel of Moscow (+ 1303)" Id="579" Type="0" />
-<SAINT Name="New Hieromartyr Priest Alexander (+ 1938)" Id="" Type="0"/>
-<SAINT Name="Martyr Paul and his sister Juliana (+ c.273) and with them: Quadratus, Akakius and Stratonicus" Id="564" Type="0" />
-<SAINT Name="Holy Hierarch Gregory, Bishop of Constantia" Id="" Type="0" />
-<SAINT Name="Venerable James the Faster of Phoenicia (6th C)" Id="565" Type="0" />
-<SAINT Name="Translation of the relics of Blessed Prince Wenceslaus of the Czech Lands (929-935)" Id="441" Type="0" />
-<SAINT Name="Right-believing Prince Basil (Vasilko) of Rostov (+ 1238)" Id="386" Type="0" />
-<SAINT Name="Holy Hierarch Gregory, Bishop of Assus" Id="" Type="0" />
-<SAINT Name="Venerable Joasaph of Snetogorsk, Pskov (+ 1299)" Id="561" Type="0" />
-<SAINT Name="Venerable Basil of Mirozh" Id="" Type="0" />
-
+<DAY><SAINT SId="504" CId="504"/>
+<SAINT SId="503" CId="503"/>
+<SAINT SId="579" CId="579"/>
+<SAINT SId="030400" CId="030400"/>
+<SAINT SId="564" CId="564"/>
+<SAINT SId="030401" CId="030401"/>
+<SAINT SId="565" CId="565"/>
+<SAINT SId="441" CId="441"/>
+<SAINT SId="386" CId="386"/>
+<SAINT SId="030402" CId="030402"/>
+<SAINT SId="561" CId="561"/>
+<SAINT SId="030403" CId="030403"/>
 </DAY>

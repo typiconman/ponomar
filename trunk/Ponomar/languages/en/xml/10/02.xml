@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Hieromartyr Cyprian and Virginmartyr Justina of Nicomedia (+ 304)" Id="1651" Type="2" />
-<SAINT Name="Blessed Andrew, Fool-for-Christ, at Constantinople (+ c. 936)" Id="1652" Type="1" />
-<SAINT Name="Repose of Blessed Princess Anna of Kashin (+ 1338)" Id="2393" Type="0" />
-<SAINT Name="Venerable Cyprian, the Fool-for-Christ of Suzdal" Id="" Type="0" />
-<SAINT Name="New Martyr George" Id="" Type="0" />
-<SAINT Name="Venerable Cassian the Greek of Uglich (+ 1504)" Id="1654" Type="0" />
-<SAINT Name="Martyrs David and Constantine, Princes of Aragvet, Georgia (+ 740)" Id="1655" Type="0" />
-
+<DAY><SAINT SId="1651" CId="1651"/>
+<SAINT SId="165201" CId="165201"/>
+<SAINT SId="239302" CId="239302"/>
+<SAINT SId="10020300" CId="10020300"/>
+<SAINT SId="10020400" CId="10020400"/>
+<SAINT SId="1654" CId="1654"/>
+<SAINT SId="1655" CId="1655"/>
 </DAY>

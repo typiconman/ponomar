@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Hieromartyr Eutychius, disciple of the Apostle John the Theologian (1st C)" Id="4505" Type="1" />
-<SAINT Name="Translation of the relics of Saint Peter, Metropolitan of Moscow and All Russia (1479)" Id="9779" Type="3" />
-<SAINT Name="Venerable Arsenius of Komel" Id="264" Type="0" />
-<SAINT Name="Venerable George Limniotes the Confessor of Mt Olympus (3rd C)" Id="4511" Type="0" />
-<SAINT Name="Martyr Tation of Claudiopolis (+305)" Id="4509" Type="0" />
-<SAINT Name="Virginmartyr Sira of Persia (+588)" Id="4510" Type="0" />
-<SAINT Name="Icon of the Mother of God 'Petrovskaya'" Id="4512" Type="0" />
-
+<DAY><SAINT SId="4505" CId="4505"/>
+<SAINT SId="09779" CId="09779"/>
+<SAINT SId="264" CId="264"/>
+<SAINT SId="4511" CId="4511"/>
+<SAINT SId="4509" CId="4509"/>
+<SAINT SId="4510" CId="4510"/>
+<SAINT SId="4512" CId="4512"/>
 </DAY>

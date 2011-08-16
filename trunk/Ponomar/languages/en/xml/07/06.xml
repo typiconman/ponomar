@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Venerable Sisoes the Great (+429)" Id="4163" Type="1" />
-<SAINT Name="Finding of the relics of the Holy Princess Juliana of Olshansk (16th C)" Id="2531" Type="0" />
-<SAINT Name="Martyrs Marinus, Martha, Audifax, Habbakuk, Valentine, Asterius, Isaurus, Innocent, Felix, Hermius, Basil, Peregrinus, and Ruthinus, at Rome (+269)" Id="4166" Type="0" />
-<SAINT Name="Martyr Quintus of Phrygia (+c.283)" Id="4168" Type="0" />
-<SAINT Name="Martyr Lucia the Virgin and with her: Rixus, Anthony, Lucian, Isidor, Diodorus, Cutonius, Aronosus, Capicus, and Saturus" Id="4169" Type="0" />
-<SAINT Name="Venerable Sisoes, Schemamonk of the Kievan Caves (13th C)" Id="2029" Type="0" />
-<SAINT Name="New Hieromartyr Simon, Bishop of Ufa (+1921)" Id="" Type="0" />
-
+<DAY><SAINT SId="4163" CId="4163"/>
+<SAINT SId="2531" CId="2531"/>
+<SAINT SId="4166" CId="4166"/>
+<SAINT SId="4168" CId="4168"/>
+<SAINT SId="4169" CId="4169"/>
+<SAINT SId="2029" CId="2029"/>
+<SAINT SId="07060099" CId="07060099"/>
 </DAY>

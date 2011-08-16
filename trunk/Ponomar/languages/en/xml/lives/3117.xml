@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Martyrs Philemon, Apollonios, Arian and Theotychos"/> 
-<LIFE Id="bulgakov" Copyright="">
-&lt;not available in English&gt;
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Martyrs Philemon, Apollonios, Arian and Theotychos (+ 286-287)" Short="Martyrs Philemon,"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov">
+ &lt;not available in English&gt;
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

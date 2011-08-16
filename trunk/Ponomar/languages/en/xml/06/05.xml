@@ -1,20 +1,16 @@
-<DAY>
-
-<SAINT Name="Hieromartyr Dorotheus the Bishop of Tyre (c. +362)" Id="1233" Type="1" />
-<SAINT Name="New Hieromartyr Priest Michael (+1931)" Id="" Type="0"/>
-<SAINT Name="New Hieromartyr Priest Nicholas (+1943)" Id="" Type="0"/>
-<SAINT Name="Translation of the relics (1150) of the Right-believing Prince Igor of Chernigov and Kiev" Id="907" Type="0" />
-<SAINT Name="St Constantine, Metropolitan of Kiev and All Russia (+1159)" Id="" Type="0" />
-<SAINT Name="Repose of Right-believing Prince Theodore Yaroslavich  of Novgorod (+1233), brother of St. Alexander Nevsky" Id="2206" Type="1" />
-<SAINT Name="Finding of the relics (1599) of the Venerable Bassian and Jonah of Solovki" Id="1236" Type="0" />
-<SAINT Name="Holy Martyrs Marcian, Nicander, Hyperechius, Apollos, Leonidus, Arius, Gorgius, Selenius, Irenæus, and Pambon in Egypt (+ 305-311)" Id="1237" Type="0" />
-<SAINT Name="Venerable Theodore the Wonderworker and Hermit of the Jordan (c. 6th C)" Id="1239" Type="0" />
-<SAINT Name="Venerable Anubius the Confessor and Anchorite of Egypt (4th C)" Id="1238" Type="0" />
-<SAINT Name="Venerable Abba Dorotheus of Palestine (6th C)" Id="1240" Type="0" />
-<SAINT Name="Igorevskaya Icon of the Mother of God (1147)" Id="1244" Type="0"/>
-<SAINT Name="Venerable Peter the Serb (+1275)" Id="" Type="0" />
-<SAINT Name="New Martyr Mark of Smyrna (+1801)" Id="" Type="0" />
-<SAINT Name="Hieromartyr Boniface, Archbishop of Mentz, Apostle of Germany (+755)" Id="060516" Type="0" />
+<DAY><SAINT SId="1233" CId="1233"/>
+<SAINT SId="06050000" CId="06050000"/>
+<SAINT SId="06050100" CId="06050100"/>
+<SAINT SId="907" CId="907"/>
+<SAINT SId="06050200" CId="06050200"/>
+<SAINT SId="2206" CId="2206"/>
+<SAINT SId="1236" CId="1236"/>
+<SAINT SId="1237" CId="1237"/>
+<SAINT SId="1239" CId="1239"/>
+<SAINT SId="123802" CId="123802"/>
+<SAINT SId="1240" CId="1240"/>
+<SAINT SId="1244" CId="1244"/>
+<SAINT SId="06050300" CId="06050300"/>
+<SAINT SId="06050400" CId="06050400"/>
+<SAINT SId="060516" CId="060516"/>
 </DAY>
-	
-	

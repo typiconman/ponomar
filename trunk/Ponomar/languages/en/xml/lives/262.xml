@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Holy Martyrs Bassos, Eusebios, Eutykhios and Basilides"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-The Holy Martyrs Bassos, Eusebios, Eutykhios and Basilides were courtiers of the emperor Diocletian. He sent them as witnesses of the suffering of the Nicomedia bishop Theopemptos (Comm. 5 January) for his faith in Christ. They themselves came to believe and accepted holy Baptism. For this they were subjected to tortures and condemned to death. Saint Bassos they buried in the ground and hacked at him; Saint Eusebios they hung head downwards and cut him in two; Saint Eutykhios they tied hands and legs to a pillar and broke him apart; Saint Basilides they cut in the stomach with a knife. The martyrs suffered in the year 303. 
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Martyrs Bassus, Eusebius, Eutychius and Basilides at Nicomedia (+ 303)" Short="Martyrs Bassus,"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+ The Holy Martyrs Bassos, Eusebios, Eutykhios and Basilides were courtiers of the emperor Diocletian. He sent them as witnesses of the suffering of the Nicomedia bishop Theopemptos (Comm. 5 January) for his faith in Christ. They themselves came to believe and accepted holy Baptism. For this they were subjected to tortures and condemned to death. Saint Bassos they buried in the ground and hacked at him; Saint Eusebios they hung head downwards and cut him in two; Saint Eutykhios they tied hands and legs to a pillar and broke him apart; Saint Basilides they cut in the stomach with a knife. The martyrs suffered in the year 303. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Martyrs Terence, Pompius, and with them Africanus, Macarius, Xeno, Alexander and the other 33 beheaded at Carthage (+ c.249-251)" Id="822" Type="1" />
-<SAINT Name="New Hieromartyr Priest Phlegon (+1938)" Id="" Type="0"/>
-<SAINT Name="New Martyr Demetrius (+1942)" Id="" Type="0"/>
-<SAINT Name="Martyrs James the Presbyter and the deacons Azadanes and Abdikius of Persia (+ c.380)" Id="823" Type="0" />
-<SAINT Name="New Hieromartyr Gregory V, Patriarch of Constantinople (+1821)" Id="826" Type="0" />
-<SAINT Name="Prophetess Olda" Id="" Type="0" />
-<SAINT Name="New Martyr Dimus" Id="" Type="0" />
-
+<DAY><SAINT SId="82201" CId="82201"/>
+<SAINT SId="041000" CId="041000"/>
+<SAINT SId="041001" CId="041001"/>
+<SAINT SId="823" CId="823"/>
+<SAINT SId="826" CId="826"/>
+<SAINT SId="041002" CId="041002"/>
+<SAINT SId="041003" CId="041003"/>
 </DAY>

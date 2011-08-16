@@ -1,22 +1,14 @@
 <DAY>
-<SCRIPTURE Type="vespers" Reading="Composite_6" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="vespers" Reading="Isa_6:1-12" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="vespers" Reading="Isa_19:1-5, 12, 16, 19-21" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="matins" Reading="Lk_2:25-32" Pericope="8" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="apostol" Reading="Heb_7:7-17" Pericope="316" Cmd="nday == -49" Note="for the feast"/>
-<SCRIPTURE Type="gospel" Reading="Lk_2:22-40" Pericope="7" Cmd="nday == -49" Note="for the feast"/>
-
-<SAINT Name="Forefeast of the Meeting of the Lord" Id="2124" Type="0" Cmd="nday != -49" />
-<SAINT Name="On this day we observe the Meeting of our Lord, God, and Saviour Jesus Christ" Id="373" Type="7" Cmd="nday == -49" />
-<SAINT Name="Martyr Tryphon of Campsada near Apamea in Syria (+250)" Id="369" Type="2"/>
-<SAINT Name="[the service to St Tryphon is transferred to Compline Friday evening" Id="" Type="0" Cmd="nday == -49"/>
-<SAINT Name="New Hieromartyr Priest Nicholas (+1938)" Id="" Type="0"/>
-<SAINT Name="Venerable Peter of Galatia, the Hermit, near Antioch in Syria (+429)" Id="" Type="0" />
-<SAINT Name="Venerable Vendimianus, the Hermit of Bithynia (+c.512)" Id="370" Type="0" />
-<SAINT Name="Martyrs Perpetua, a woman of Carthage, and the Catechumens: Saturus, Revocatus, Saturninus, Secundulus, Felicita (+c.202-203)" Id="368" Type="0" />
-<SAINT Name="Saint Bridget of Ireland (523)" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Basil, Archbishop of Thessalonica" Id="" Type="0" />
-<SAINT Name="Martyr Anastasius" Id="" Type="0" />
-<SAINT Name="New Martyr Peter Skipetrov (+1918)" Id="" Type="0" />
-
+<SAINT SId="2124" CId="2124" Cmd="nday != -49"/>
+<SAINT SId="373" CId="373" Cmd="nday == -49"/>
+<SAINT SId="369" CId="369" Cmd="nday != -49"/>
+<SAINT SId="020100" CId="020100"/>
+<SAINT SId="36903" CId="36903"/>
+<SAINT SId="370" CId="370"/>
+<SAINT SId="368" CId="368"/>
+<SAINT SId="020102" CId="020102"/>
+<SAINT SId="02010499" CId="02010499"/>
+<SAINT SId="02010599" CId="02010599"/>
+<SAINT SId="02010699" CId="02010699"/>
+<SAINT SId="36901" CId="36901" Cmd="nday == -49"/>
 </DAY>

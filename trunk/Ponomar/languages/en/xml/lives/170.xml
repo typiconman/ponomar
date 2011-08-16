@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Nun Domnica"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-The Nun Domnica came from Carthage to Constantinople during the time of the holy Emperor Theodosius the Great. Here she accepted Baptism from Patriarch Nektarios and entered a women&apos;s monastery. By means of strict and prolonged ascetic effort she attained to high spiritual perfection. The saint healed the sick, demonstrated power over the natural elements, and predicted the future. By her miracles the saint moved inhabitants of the capital towards concerns about life eternal and the soul. Adorned by virtues, the saint expired from life a spotless virgin in her old age (+ 474).
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Venerable Domnica of Constantinople (+ c 474)" Short="Venerable Domnica"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+ The Nun Domnica came from Carthage to Constantinople during the time of the holy Emperor Theodosius the Great. Here she accepted Baptism from Patriarch Nektarios and entered a women&apos;s monastery. By means of strict and prolonged ascetic effort she attained to high spiritual perfection. The saint healed the sick, demonstrated power over the natural elements, and predicted the future. By her miracles the saint moved inhabitants of the capital towards concerns about life eternal and the soul. Adorned by virtues, the saint expired from life a spotless virgin in her old age (+ 474).
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

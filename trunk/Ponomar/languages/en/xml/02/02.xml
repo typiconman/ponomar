@@ -1,16 +1,7 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Composite_6" Cmd="nday != -48" />
-<SCRIPTURE Type="vespers" Reading="Isa_6:1-12" Cmd="nday != -48" />
-<SCRIPTURE Type="vespers" Reading="Isa_19:1-5, 12, 16, 19-21" Cmd="nday != -48" />
-<SCRIPTURE Type="matins" Reading="Lk_2:25-32" Cmd="nday != -48" />
-<SCRIPTURE Type="apostol" Reading="Heb_7:7-17" Cmd="nday != -48" />
-<SCRIPTURE Type="gospel" Reading="Lk_2:22-40" Cmd="nday != -48" />
-
-<SAINT Name="The Meeting of our Lord, God, and Saviour Jesus Christ in the Temple" Id="373" Type="7" Cmd="nday != -48" />
-<SAINT Name="(The feast of the Meeting of the Lord is transfered to Sunday)" Id="" Type="0" Cmd="nday == -48"/>
-<SAINT Name="Holy and Righteous Simeon the God-Receiver and Anna the Prophetess (1st C) [transfered from Tuesday]" Id="1998" Type="2" Cmd="nday == -48" />
-<SAINT Name="New Martyr Jordan of Trapesunt" Id="" Type="0" />
-<SAINT Name="Venerable Martyr Gabriel" Id="" Type="0" />
-<SAINT Name="Icon of the Mother of God 'Softening of evil hearts'" Id="" Type="0" />
-
+<DAY><SAINT SId="373" CId="373" Cmd="nday != -48"/>
+<SAINT SId="1998" CId="1998" Cmd="nday == -48"/>
+<SAINT SId="02020199" CId="02020199"/>
+<SAINT SId="02020299" CId="02020299"/>
+<SAINT SId="02020399" CId="02020399"/>
+<SAINT SId="37301" CId="37301" Cmd="nday == -48"/>
 </DAY>

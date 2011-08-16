@@ -1,8 +1,5 @@
-<DAY>
-
-<SAINT Name="Venerable Isaac the Founder of the Dalmatian Monastery at Constantinople (+383)" Id="1101" Type="1" />
-<SAINT Name="New Hieromartyr Priest Basil (+1942)" Id="" Type="0" />
-<SAINT Name="St. Macrina, grandmother of St. Basil the Great (4th C)" Id="" Type="0" />
-<SAINT Name="Martyr Natalius" Id="" Type="0" />
-
+<DAY><SAINT SId="1101" CId="1101"/>
+<SAINT SId="05300000" CId="05300000"/>
+<SAINT SId="05300100" CId="05300100"/>
+<SAINT SId="05300200" CId="05300200"/>
 </DAY>

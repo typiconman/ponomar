@@ -1,13 +1,8 @@
-<DAY>
-<SAINT Name="4" Cmd="dow == 0" />
-<SAINT Name="11" Cmd="dow == 6" />
-
-<SAINT Name="Afterfeast of the Exaltation of the Cross" Id="" Type="0" />
-<SAINT Name="Holy Martyrs Trophimus, Sabbatius and Dorymedon (+276)" Id="1564" Type="1" />
-<SAINT Name="Holy Prince Theodore of Smolensk (+1299) his sons David and Constantine, Wonderworkers of Yaroslavl" Id="2197" Type="3" />
-<SAINT Name="Martyr Zosimas the Hermit of Cilicia (4th C)" Id="850" Type="0" />
-<SAINT Name="Hieromartyr Jannuarius, Bishop of Benebent and those with him" Id="" Type="0" />
-<SAINT Name="Holy Prince Igor of Chernigov and Kiev (+1147)" Id="907" Type="0" />
-<SAINT Name="Holy Schema-Hieromonk Alexis of Zosimovskaya Hermitage (+1928)" Id="" Type="0" />
-
+<DAY><SAINT SId="1529" CId="152912"/>
+<SAINT SId="156401" CId="156401"/>
+<SAINT SId="219701" CId="219701"/>
+<SAINT SId="85001" CId="85001"/>
+<SAINT SId="09190100" CId="09190100"/>
+<SAINT SId="90701" CId="90701"/>
+<SAINT SId="09190000" CId="09190000"/>
 </DAY>

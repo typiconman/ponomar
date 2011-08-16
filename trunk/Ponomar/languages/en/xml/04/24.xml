@@ -1,19 +1,18 @@
 <DAY>
-
-<SAINT Name="Martyr Sabbas Stratelates 'the General' of Rome and 70 soldiers with him (+272)" Id="922" Type="1" />
-<SAINT Name="Martyr Sergius (+1938)" Id="" Type="0"/>
-<SAINT Name="Venerable Sava the Recluse of the Near Caves of Kiev (13th C)" Id="925" Type="0" />
-<SAINT Name="Venerable Alexius the Hermit of the Near Caves of Kiev (13th C)" Id="133" Type="0"/>
-<SAINT Name="Martyrs Pasikrates and Valention in Moesia, Bulgaria (+228)" Id="927" Type="0" />
-<SAINT Name="Martyrs Eusebius, Neon, Leontius, Longinus, and 40 Others (+303)" Id="928" Type="0" />
-<SAINT Name="Venerable Thomas the Fool-for-Christ of Syria (+ c.546-560)" Id="923" Type="0" />
-<SAINT Name="Venerable Elizabeth the Wonderworker of Constantinople (6th-8th C)" Id="924" Type="0" />
-<SAINT Name="New Hieromartyr Priest Branko of Serbia (+1941)" Id="" Type="0" />
-<SAINT Name="Icon of the Mother of God of Molchen (1405)" Id="929" Type="0" />
-<SAINT Name="Martyr Alexander of Lyon (+177)" Id="" Type="0" />
-<SAINT Name="New Martyr Nicholas of Magnesia (+1795)" Id="" Type="0" />
-<SAINT Name="New Martyr George in Anatolia (+1796)" Id="" Type="0" />
-<SAINT Name="New Martyr Ducas of Mitylene (+1564)" Id="" Type="0" />
-<SAINT Name="Venerable Innocent the Presbyter on the Mount of Olives (4th C)" Id="" Type="0" />
-
+<SAINT SId="09497" CId="09497" Cmd="nday == 1"/>
+<SAINT SId="922" CId="922"/>
+<SAINT SId="042400" CId="042400"/>
+<SAINT SId="925" CId="925"/>
+<SAINT SId="133" CId="133"/>
+<SAINT SId="927" CId="927"/>
+<SAINT SId="928" CId="928"/>
+<SAINT SId="923" CId="923"/>
+<SAINT SId="924" CId="924"/>
+<SAINT SId="042401" CId="042401"/>
+<SAINT SId="929" CId="929"/>
+<SAINT SId="042402" CId="042402"/>
+<SAINT SId="042403" CId="042403"/>
+<SAINT SId="042404" CId="042404"/>
+<SAINT SId="04240599" CId="04240599"/>
+<SAINT SId="042406" CId="042406"/>
 </DAY>

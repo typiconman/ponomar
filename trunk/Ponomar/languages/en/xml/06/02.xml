@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="St. Nicephorus the Confessor, Patriarch of Constantinople (+828)" Id="1625" Type="1" />
-<SAINT Name="Great Martyr John the New of Sochi, who suffered at Belgrade (+ 1330-1340)" Id="991" Type="2" />
-<SAINT Name="Uncovering of the relics (1819) of Righteous Juliana, princess of Vyazemsk, Novotorzhskoy" Id="2526" Type="0"/>
-<SAINT Name="Kievo-Bratsk Icon of the Mother of God (1654)" Id="1468" Type="0"/>
-<SAINT Name="Hieromartyr Pothinus, bishop of Lyon and with him martyr Blandin and others (+177)" Id="060205" Type="0" />
-<SAINT Name="New Martyr Demetrius of Philadelphia (+1657)" Id="" Type="0" />
-<SAINT Name="New Martyr Constantine the Hagarian (+1819)" Id="" Type="0" />
-
+<DAY><SAINT SId="162501" CId="162501"/>
+<SAINT SId="99101" CId="99101"/>
+<SAINT SId="2526" CId="2526"/>
+<SAINT SId="1468" CId="1468"/>
+<SAINT SId="060205" CId="060205"/>
+<SAINT SId="06020100" CId="06020100"/>
+<SAINT SId="06020200" CId="06020200"/>
 </DAY>

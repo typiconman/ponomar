@@ -1,18 +1,9 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Wisd_5:15-6:3"/>
-<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9"/>
-<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15"/>
-<SCRIPTURE Type="matins" Reading="Mt_4:25-5:12" Pericope="10" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="II Cor_4:6-15" Pericope="176" Note="for St Chariton"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Chariton"/>
-
-<SAINT Name="Venerable Chariton the Confessor, Abbot of Palestine (+c.350)" Id="1619" Type="4" />
-<SAINT Name="Prophet Baruch (6th C BC)" Id="364" Type="0" />
-<SAINT Name="Martyrs Alexander, Altheos, Zosimas, Mark the Shepherd, Nikon, Neonos, Helioldoros, Stephen, another Mark and 24 others in Pisidia and Phrygia (4th C)" Id="1623" Type="0" />
-<SAINT Name="Venerable women Eustochia and Paula" Id="" Type="0" />
-<SAINT Name="Martyrdom of Saint Wenceslaus (Vyacheslav), Prince of the Czech Lands (+935)" Id="441" Type="0" />
-<SAINT Name="Venerable Herodius of Ilozersk" Id="1621" Type="0" />
-<SAINT Name="Venerable Chareton of Sianzhemsk" Id="" Type="0" />
-<SAINT Name="Venerable Schema-Monk Cyril and the Schema-Nun Maria the parents of the Venerable Sergius of Radonezh" Id="6670" Type="4" />
-
+<DAY><SAINT SId="1619" CId="1619"/>
+<SAINT SId="364" CId="364"/>
+<SAINT SId="1623" CId="1623"/>
+<SAINT SId="09280099" CId="09280099"/>
+<SAINT SId="441" CId="441"/>
+<SAINT SId="1621" CId="1621"/>
+<SAINT SId="09280000" CId="09280000"/>
+<SAINT SId="6670" CId="6670"/>
 </DAY>

@@ -1,10 +1,5 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostle"/>
-<SCRIPTURE Type="gospel" Reading="Mt_9:9-13" Pericope="30" Note="for the Apostle"/>
-
-<SAINT Name="Holy Apostle and Evangelist Matthew (+ 60)" Id="1500" Type="4" />
-<SAINT Name="Saint Fulvianus, Prince of Ethiopia, in Holy Baptism Matthew (1st C)" Id="2546" Type="0" />
-<SAINT Name="Holy Hierarch Anianus, Patriarch of Alexandria" Id="" Type="0" />
-<SAINT Name="Venerable Sergius of Malopinezh (+1585)" Id="" Type="0" />
-
+<DAY><SAINT SId="1500" CId="1500"/>
+<SAINT SId="2546" CId="2546"/>
+<SAINT SId="11160099" CId="11160099"/>
+<SAINT SId="11160100" CId="11160100"/>
 </DAY>

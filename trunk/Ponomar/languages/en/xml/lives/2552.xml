@@ -1,18 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Venerable Lazarus, Iconographer"/> 
-<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-From his youth he struggled ascetically as a monk and for his efforts he was
-worthy of the rank of priest. He was engaged in the writing of Holy Icons and for
-this he suffered during the reign of the Emperor Theophilus who ordered that the
-fingers of the Saint be burned. He died about the year 857.
-
-</LIFE>
-<TROPARION Tone="">
-
-</TROPARION>
-<KONTAKION Tone="">
-
-</KONTAKION>
-
+<NAME Nominative="Venerable Lazarus the Iconographer, of Constantinople (+c.857)" Short="Venerable Lazarus"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+ From his youth he struggled ascetically as a monk and for his efforts he was worthy of the rank of priest. He was engaged in the writing of Holy Icons and for this he suffered during the reign of the Emperor Theophilus who ordered that the fingers of the Saint be burned. He died about the year 857. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

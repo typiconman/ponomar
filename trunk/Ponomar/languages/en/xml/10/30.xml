@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Hieromartyr Zenobios, Bishop of Aegea, and his sister Zenobia in Cilicia (+ 285)" Id="4614" Type="1" />
-<SAINT Name="Martyr Anastasia of Thessalonika" Id="2382" Type="0" />
-<SAINT Name="Martyr Eutropia of Alexandria (+ c. 250)" Id="4617" Type="0" />
-<SAINT Name="Apostles of the 70: Tertius, Mark, Justus and Artemis (1st C)" Id="4615" Type="0" />
-<SAINT Name="Hieromartyr Marcian, Bishop of Syracuse (2nd C)" Id="1484" Type="0" />
-<SAINT Name="Saint Serapion, Archbishop of Antioch" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Kyriacus, Bishop of Corinth" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Asterius, Metropolitan of Amassia" Id="" Type="0" />
-<SAINT Name="Saint Stephen Miliutin the King of Serbia, his brother Dragutin and their mother Helen" Id="4618" Type="0" />
-<SAINT Name="New Hieromartyr Priest Leonid (+1941)" Id="" Type="0" />
-
+<DAY><SAINT SId="4614" CId="4614"/>
+<SAINT SId="238201" CId="238201"/>
+<SAINT SId="4617" CId="4617"/>
+<SAINT SId="4615" CId="4615"/>
+<SAINT SId="1484" CId="1484"/>
+<SAINT SId="10300099" CId="10300099"/>
+<SAINT SId="10300199" CId="10300199"/>
+<SAINT SId="10300299" CId="10300299"/>
+<SAINT SId="4618" CId="4618"/>
+<SAINT SId="10300399" CId="10300399"/>
 </DAY>

@@ -1,14 +1,12 @@
 <DAY>
-<SAINT Name="9" Cmd="dow == 6" />
-
-<SAINT Name="Venerable Euthymios the New, of Thessalonica and Monk of Mt Athos (+ 889)" Id="1743" Type="1" />
-<SAINT Name="Monkmartyr Lucian, Presbyter of Antioch (+ 312)" Id="1745" Type="1" />
-<SAINT Name="Venerable Sabina, Bishop of Katana" Id="1749" Type="0" />
-<SAINT Name="Martyrs Sarbilos and Bebea of Edessa (2nd C)" Id="1748" Type="0" />
-<SAINT Name="Venerable John, Bishop of Suzdal (+ 1373)" Id="1746" Type="0" />
-<SAINT Name="Venerable Dionysius, Archbishop of Suzdal" Id="" Type="0" />
-<SAINT Name="Venerable Martyr Lucian of the Caves of Kiev" Id="" Type="0" />
-<SAINT Name="Icon of the Mother of God 'Sporitelnitsa Khlebov'" Id="1750" Type="0" />
-<SAINT Name="Holy Hierarch and Confessor Athanasius, bishop of Kovrov (+1962)" Id="4746" Type="0" />
-
+<SAINT SId="9913" CId="9913" Cmd="dow == 6"/>
+<SAINT SId="1743" CId="1743"/>
+<SAINT SId="1745" CId="1745"/>
+<SAINT SId="1749" CId="1749"/>
+<SAINT SId="1748" CId="1748"/>
+<SAINT SId="1746" CId="1746"/>
+<SAINT SId="10150200" CId="10150200"/>
+<SAINT SId="10150100" CId="10150100"/>
+<SAINT SId="1750" CId="1750"/>
+<SAINT SId="4746" CId="4746"/>
 </DAY>

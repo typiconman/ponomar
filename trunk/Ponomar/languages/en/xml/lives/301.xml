@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Righteous Athanasii (Afanasii) of Navolotsk"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-Righteous Athanasii (Afanasii) of Navolotsk went at the end of the XVI Century from the Kargopol&apos; region to the Olonets land, where he founded a monastery 78 versts from what later emerged as the city of Petrozavodsk. The saint died near the Verkholedsk suburb not far from Shenkursk. 
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Righteous Athanasius of Novoltsk (16th-17th C)" Short="Righteous Athanasius"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+ Righteous Athanasii (Afanasii) of Navolotsk went at the end of the XVI Century from the Kargopol&apos; region to the Olonets land, where he founded a monastery 78 versts from what later emerged as the city of Petrozavodsk. The saint died near the Verkholedsk suburb not far from Shenkursk. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

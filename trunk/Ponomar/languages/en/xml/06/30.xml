@@ -1,11 +1,6 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostles"/>
-<SCRIPTURE Type="gospel" Reading="Mk_3:13-19" Pericope="12" Note="for the Apostles"/>
-
-<SAINT Name="Synaxis of the Twelve Glorious and All-Praised Apostles: Peter and Andrew, James and John, Phillip, Bartholomew, Thomas, Matthew, James the son of Alpheus, Jude [Thaddeus], Simon Zealotes, and Matthias" Id="1419" Type="4" />
-<SAINT Name="New Martyr Michael of Athens" Id="" Type="0" />
-<SAINT Name="Venerable Peter, Crown Prince of the Horde" Id="1784" Type="0" />
-<SAINT Name="Murder of the Right-believing Prince Andrew of Bogoliubovo" Id="" Type="0" />
-<SAINT Name="Glorification of Saint Sophronius, Bishop of Irkutsk and All Siberia (1918)" Id="2043" Type="0" />
-
+<DAY><SAINT SId="1419" CId="1419"/>
+<SAINT SId="06300000" CId="06300000"/>
+<SAINT SId="1784" CId="1784"/>
+<SAINT SId="06300199" CId="06300199"/>
+<SAINT SId="2043" CId="204301"/>
 </DAY>

@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Venerable Ignatius, Archimandrite of the Caves of Kiev"/> 
-<LIFE Id="bulgakov" Copyright="Aleksandr Andreev.">
-His relics are in the Kiev Far Caves.
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="Venerable Ignatius, Archimandrite of the Caves of Kiev (+1435)" Short="Venerable Ignatius,"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Aleksandr Andreev.">
+ His relics are in the Kiev Far Caves.
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

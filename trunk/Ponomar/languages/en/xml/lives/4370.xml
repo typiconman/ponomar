@@ -1,12 +1,16 @@
 <SAINT>
-<NAME Nominative="Monks Isaac, Dalmatius and Faustus"/> 
-<LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
-The Monks Isaac, Dalmatius and Faustus were hegumens of a Dalmatian monastery. The Monk Dalmatius had served in the army of the holy nobleborn emperor Theodosius the Great (379-395) and gained his notice. Having left the world somewhere between the years 381-383, the Monk Dalmatius together with his son Faustus went to the monastery of the Monk Isaac near Constantinople. The Monk Isaac vowed father and son into monasticism, and they both began to lead a strict ascetic life. Once during Great Lent the Monk Dalmatius did not partake of food during the course of 40 days, and later having regained his strength, he was vouchsafed worthy of a Divine vision. Having drawn near the end of his earthly life, the Monk Isaac put in his place as monastery head the Monk Dalmatius, through whose name the monastery became known as the Dalmatian. 	The Monk Dalmatius showed himself a zealous proponent of the Orthodox faith at the III OEcumenical Council at Ephesus (431), which censured the heresy of Nestorius. 	After the Council the holy fathers elevated the Monk Dalmatius to the dignity of archimandrite of the Dalmatian monastery, at which he died at age ninety (after year 446).  	About the Monk Faustus is known that he, like his father, was a great ascetic and in monastic deeds he particularly excelled at fasting. After the death of his father, Faustus became hegumen of the monastery.
-</LIFE>
-<TROPARION Tone="4">
-O God of our fathers,/ deal with us ever according to Thy meekness./ Take not Thy mercy from us,/ but through their supplications// direct our life in peace.
-</TROPARION>
-<KONTAKION Tone="2" Podoben="4">
-With hymns let us praise Isaacius, Dalmatus and Faustus,/ who shone forth like beacons through fasting/ and turned away heresies with faith;// for they are saints of God who entreat Him in our behalf.
-</KONTAKION>
+
+<NAME Nominative="Venerable Isaac, Dalmatius and Faustus, Ascetics of the Dalmatian Monastery in Constantinople (4th-5th C)" Short="Venerable Isaac,"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+ The Monks Isaac, Dalmatius and Faustus were hegumens of a Dalmatian monastery. The Monk Dalmatius had served in the army of the holy nobleborn emperor Theodosius the Great (379-395) and gained his notice. Having left the world somewhere between the years 381-383, the Monk Dalmatius together with his son Faustus went to the monastery of the Monk Isaac near Constantinople. The Monk Isaac vowed father and son into monasticism, and they both began to lead a strict ascetic life. Once during Great Lent the Monk Dalmatius did not partake of food during the course of 40 days, and later having regained his strength, he was vouchsafed worthy of a Divine vision. Having drawn near the end of his earthly life, the Monk Isaac put in his place as monastery head the Monk Dalmatius, through whose name the monastery became known as the Dalmatian. 	The Monk Dalmatius showed himself a zealous proponent of the Orthodox faith at the III OEcumenical Council at Ephesus (431), which censured the heresy of Nestorius. 	After the Council the holy fathers elevated the Monk Dalmatius to the dignity of archimandrite of the Dalmatian monastery, at which he died at age ninety (after year 446).  	About the Monk Faustus is known that he, like his father, was a great ascetic and in monastic deeds he particularly excelled at fasting. After the death of his father, Faustus became hegumen of the monastery.
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="4">
+ O God of our fathers,/ deal with us ever according to Thy meekness./ Take not Thy mercy from us,/ but through their supplications// direct our life in peace.
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="2">
+ With hymns let us praise Isaacius, Dalmatus and Faustus,/ who shone forth like beacons through fasting/ and turned away heresies with faith;// for they are saints of God who entreat Him in our behalf.
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

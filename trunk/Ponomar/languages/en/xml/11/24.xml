@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="Afterfeast of the Entry of the Theotokos" Id="" Type="0" />
-<SAINT Name="Greatmartyr Catherine of Alexandria (+305-313)" Id="2491" Type="2" />
-<SAINT Name="Greatmartyr Mercurius [Mercury] of Caesarea in Cappadocia (3rd C)" Id="3217" Type="1" />
-<SAINT Name="Martyr Mercurius of Smolensk (+1239)" Id="1521" Type="2" />
-<SAINT Name="Martyrs Augusta the Empress of Alexandria and Porphyrius the General and 200 Soldiers, martyred with the Greatmartyr Catherine (+ 305-313)" Id="3218" Type="0" />
-<SAINT Name="Venerable Mastridia the Virgin" Id="3221" Type="0" />
-<SAINT Name="Venerable Simon of Solvychegodsk" Id="2017" Type="0" />
-<SAINT Name="Martyr Alexander" Id="" Type="0" />
-<SAINT Name="Venerable Gregory of Khrisipetreia" Id="" Type="0" />
-<SAINT Name="Venerable Mercurius, the Faster of the Caves of Kiev, Bishop of Smolensk (14th C)" Id="1520" Type="0" />
-<SAINT Name="Venerable Luke, Economist of the Caves of Kiev" Id="" Type="0" />
-
+<DAY><SAINT SId="2575" CId="257511"/>
+<SAINT SId="249101" CId="249101"/>
+<SAINT SId="3217" CId="3217"/>
+<SAINT SId="152101" CId="152101"/>
+<SAINT SId="3218" CId="3218"/>
+<SAINT SId="3221" CId="3221"/>
+<SAINT SId="2017" CId="2017"/>
+<SAINT SId="11240199" CId="11240199"/>
+<SAINT SId="11240000" CId="11240000"/>
+<SAINT SId="1520" CId="1520"/>
+<SAINT SId="11240100" CId="11240100"/>
 </DAY>

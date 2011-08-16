@@ -1,15 +1,9 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Lk_21:12-19" Pericope="106" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="II Tim_2:1-10" Pericope="292" Note="for the Martyr"/>
-<SCRIPTURE Type="gospel" Reading="Jn_15:17-16:2" Pericope="52" Note="for the Martyr"/>
-
-<SAINT Name="Holy Greatmartyr and Healer Panteleimon (+ 305)" Id="1727" Type="2" />
-<SAINT Name="Venerable Anthusa, Abbess of Mantinea in Asia Minor, and her 90 Monastics (8th C)" Id="4316" Type="0" />
-<SAINT Name="Venerable Sisinius the Wonderworker" Id="" Type="0" />
-<SAINT Name="Blessed Nicholas Konchanov the Fool-for-Christ of Novgorod (+ 1392)" Id="1634" Type="0" />
-<SAINT Name="Holy Hierarch Joasaph, Metropolitan of Moscow" Id="" Type="0" />
-<SAINT Name="New Martyr Chrystodulus" Id="" Type="0" />
-<SAINT Name="Holy Equal-to-the-Apostles Clement of Ochrid (+ 916), Bishop of Greater Macedonia, with Saints Naum, Sabbas, Gorazd and Angelar, desciples of Sts Cyrill and Methodius" Id="4317" Type="0" />
-<SAINT Name="Glorification of Saint Herman of Alaska" Id="506" Type="1" />
-
+<DAY><SAINT SId="1727" CId="1727"/>
+<SAINT SId="4316" CId="4316"/>
+<SAINT SId="07270099" CId="07270099"/>
+<SAINT SId="1634" CId="1634"/>
+<SAINT SId="07270000" CId="07270000"/>
+<SAINT SId="07270299" CId="07270299"/>
+<SAINT SId="4317" CId="4317"/>
+<SAINT SId="50602" CId="50601"/>
 </DAY>

@@ -1,24 +1,15 @@
-<SAINT>
-
-<NAME Nominative="Our Father among the Saints Paul, Archbishop of Constantinople, Confessor."/> 
-<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-       He was born in Thessalonica, and was the successor of St. Alexander. He was a
-"champion of Orthodoxy, like the Apostle Paul adorned with piety, with courage of
-soul and endurance in tribulation". For his zealous refutation of "the evil opinions of
-the Arians" he "endured persecution and tribulation" and four times was removed
-from the patriarchal throne by Emperor Constantius, who was an Arian. Finally, St.
-Paul was banished to a prison in Cucusa, Armenia where he died as a martyr "for the
-Trinity without beginning and one in essence". The Arians killed him, strangling him
-during the service with his omophorion in the year 350. In the year 381 his
-uncorrupted relics were transferred to Constantinople and in 1236 to Venice where
-they remain until today.
-
-</LIFE>
-<TROPARION Tone="3" Translator="Aleksandr Andreev">
+﻿<SAINT>
+<NAME Nominative="Saint Paul the Confessor, Bishop of Constantinople († 350)" Short="Saint Paul"/>
+<SERVICE Type="2"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+&lt;p&gt; He was born in Thessalonica, and was the successor of St. Alexander. He was a “champion of Orthodoxy, like the Apostle Paul adorned with piety, with courage of soul and endurance in tribulation”. For his zealous refutation of “the evil opinions of the Arians” he “endured persecution and tribulation” and four times was removed from the patriarchal throne by Emperor Constantius, who was an Arian. Finally, St. Paul was banished to a prison in Cucusa, Armenia where he died as a martyr “for the Trinity without beginning and one in essence”. The Arians killed him, strangling him during the service with his omophorion in the year 350. In the year 381 his uncorrupted relics were transferred to Constantinople and in 1236 to Venice where they remain until today. &lt;/p&gt;
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="3" Translator="Aleksandr Andreev">
 Through thy confession of the divine Faith the Church hath shown thee to be another Paul,/ a zealot among her priests;/ and Abel crieth out to the Lord with thee,/ as doth the righteous blood of Zachariah.// O venerable father, entreat Christ God, that we be given great mercy.
-</TROPARION>
-<KONTAKION Tone="2" Translator="Aleksandr Andreev">
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="2" Translator="Aleksandr Andreev">
 O Paul, who shone forth upon the earth like a star of heavenly splendor,/ thou dost now enlighten the universal Church/ for which thou didst suffer, laying down thy life./ And like that of Zachariah and Abel,// thy blood crieth out to the Lord.
-</KONTAKION>
-
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

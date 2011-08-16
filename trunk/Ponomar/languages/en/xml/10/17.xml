@@ -1,11 +1,9 @@
-<DAY>
-
-<SAINT Name="Holy Prophet Hosea (+820 BC)" Id="1756" Type="1" />
-<SAINT Name="Venerable Martyr Andrew of Crete (+767)" Id="182" Type="1" />
-<SAINT Name="Transfer of the relics of the Righteous Lazarus of the Four-Days to Constantinople (898)" Id="1760" Type="0" />
-<SAINT Name="Martyrs and Unmercenaries Cosmas and Damian in Cilicia (Arabia), with their brothers the Martyrs Leontius, Anthymus and Eutropius (+287 or 303)" Id="1295" Type="0" />
-<SAINT Name="Hieromartyr Hero, Bishop of Antioch" Id="" Type="0" />
-<SAINT Name="Venerable Anatoly of Leokhnovo" Id="214" Type="0" />
-<SAINT Name="New Hieromartyr Alexander, Archbishop of Semipalatinsk (+1937)" Id="4734" Type="0" />
-
+<DAY><SAINT SId="9913" CId="9913" Cmd="dow == 6"/>
+<SAINT SId="1756" CId="1756"/>
+<SAINT SId="18201" CId="18201"/>
+<SAINT SId="1760" CId="1760"/>
+<SAINT SId="1295" CId="1295"/>
+<SAINT SId="10170099" CId="10170099"/>
+<SAINT SId="214" CId="214"/>
+<SAINT SId="4734" CId="4734"/>
 </DAY>

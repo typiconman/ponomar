@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="The Monk George Khozebites"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
-The Monk George Khozebites was born on the island of Crete. At the death of his parents he set off to Palestine to venerate at the holy places. Here he entered into the Khuzebite monastic community, situated between the River Jordan and Jerusalem, and he later became head of this monastery. The Monk George presented the monks example in fasting, vigil and physical efforts. Having lived upon the earth as though incorporeal, he died peacefully (VII).
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="4" Podoben="1">
-Thou hast been shown to be an all-radiant beacon/ illumining with divine rays the faithful who cry out to thee:/ Pray for us to Christ the Master,/ Who appeared in the streams of the Jordar// and hath enlightened mortals.
-</KONTAKION>
-
+<NAME Nominative="Monk George Chozebite, Abbot (7th C)" Short="Monk George"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+ The Monk George Khozebites was born on the island of Crete. At the death of his parents he set off to Palestine to venerate at the holy places. Here he entered into the Khuzebite monastic community, situated between the River Jordan and Jerusalem, and he later became head of this monastery. The Monk George presented the monks example in fasting, vigil and physical efforts. Having lived upon the earth as though incorporeal, he died peacefully (VII).
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="4">
+ Thou hast been shown to be an all-radiant beacon/ illumining with divine rays the faithful who cry out to thee:/ Pray for us to Christ the Master,/ Who appeared in the streams of the Jordar// and hath enlightened mortals.
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

@@ -1,16 +1,10 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Mt_11:27-30" Pericope="43" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for Sts Zosima and Sabbatius"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for Sts Zosima and Sabbatius"/>
-
-<SAINT Name="Afterfeast of the Transfiguration of the Lord" Id="" Type="0" />
-<SAINT Name="Saint Emelian the Confessor, Bishop of Cyzicus (+ c815-820)" Id="4397" Type="1" />
-<SAINT Name="Saint Myron the Wonderworker, Bishop of Crete (+ c350)" Id="4400" Type="0" />
-<SAINT Name="Venerable Gregory of Mt Sinai" Id="4402" Type="0" />
-<SAINT Name="Venerable Gregory, the Iconographer of the Kievan Caves (12th C)" Id="4398" Type="0" />
-<SAINT Name="Martyrs Eleutherius and Leonidus" Id="4401" Type="0" />
-<SAINT Name="First (1566) and Second (1992) Translation of the relics of the Venerable Zosima and Sabbatius of Solovki" Id="854" Type="4" />
-<SAINT Name="Icon of the Mother of God 'Tolgskaya'" Id="4404" Type="0" />
-<SAINT Name="New Martyr Nicodimus, archbishop of Kostroma (+ 1938)" Id="4859" Type="0" />
-
+<DAY><SAINT SId="4386" CId="438611"/>
+<SAINT SId="4397" CId="4397"/>
+<SAINT SId="4400" CId="4400"/>
+<SAINT SId="4402" CId="4402"/>
+<SAINT SId="4398" CId="4398"/>
+<SAINT SId="4401" CId="4401"/>
+<SAINT SId="854" CId="85401"/>
+<SAINT SId="4404" CId="4404"/>
+<SAINT SId="4859" CId="4859"/>
 </DAY>

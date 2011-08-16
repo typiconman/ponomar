@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="Greatmartyr James the Persian (+ 421)" Id="3234" Type="2" />
-<SAINT Name="Venerable Palladios (6th-7th C)" Id="" Type="1" />
-<SAINT Name="Saint James, Bishop and Wonderworker of Rostov (+ 1392)" Id="3235" Type="2" />
-<SAINT Name="Finding of the relics of Saint Vsevolod, in baptism Gabriel, Prince of Pskov (1192)" Id="438" Type="0" />
-<SAINT Name="Venerable Roman of Seleucia, the Wonderworker" Id="3236" Type="0" />
-<SAINT Name="Venerable Pinuphrious of Egypt" Id="" Type="0" />
-<SAINT Name="Venerable Nathaniel of Nytria" Id="" Type="0" />
-<SAINT Name="Venerable Palladius, Bishop Elenopolis" Id="" Type="0" />
-<SAINT Name="Venerable Diodore of Yuriegorsk" Id="" Type="0" />
-<SAINT Name="Icons of the Mother of God: 'Znamenie' of Novgorod and 'Znamenie', the Kursk-Root" Id="3233" Type="4" />
-<SAINT Name="New Hieromartyr Nicholas, Archbishop of Vladimir, and those with him (+1937)" Id="4842" Type="0" />
-
+<DAY><SAINT SId="3234" CId="3234"/>
+<SAINT SId="11270000" CId="11270000"/>
+<SAINT SId="3235" CId="3235"/>
+<SAINT SId="43802" CId="43802"/>
+<SAINT SId="3236" CId="3236"/>
+<SAINT SId="11270100" CId="11270100"/>
+<SAINT SId="11270300" CId="11270300"/>
+<SAINT SId="11270399" CId="11270399"/>
+<SAINT SId="11270500" CId="11270500"/>
+<SAINT SId="3233" CId="3233"/>
+<SAINT SId="4842" CId="4842"/>
 </DAY>

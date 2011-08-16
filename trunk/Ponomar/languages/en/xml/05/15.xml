@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Venerable Pachomius the Great, Founder of Coenobitic Monasticism (+ c.348)" Id="1070" Type="2" />
-<SAINT Name="St. Isaiah the Bishop and Wonderworker of Rostov (+1090)" Id="" Type="3" />
-<SAINT Name="Blessed Crown Prince Demetrius of Uglich and Moscow (+1591)" Id="605" Type="3" />
-<SAINT Name="Venerable Isaiah the Wonderworker of the Kiev Near Caves (+1115)" Id="1108" Type="0" />
-<SAINT Name="Venerable Pachomius the Abbot and Siluan of Nerekhta (+1384)" Id="1072" Type="0" />
-<SAINT Name="Venerable Euphrosynus the Abbot and Wonderworker of Pskov (+1481) and his disciple Serapion (+1480)" Id="747" Type="0" />
-<SAINT Name="St. Achilles the Bishop of Larissa (+ c.330)" Id="1074" Type="0" />
-
+<DAY><SAINT SId="1070" CId="1070"/>
+<SAINT SId="051500" CId="051500"/>
+<SAINT SId="60501" CId="60501"/>
+<SAINT SId="1108" CId="1108"/>
+<SAINT SId="1072" CId="1072"/>
+<SAINT SId="74701" CId="74701"/>
+<SAINT SId="1074" CId="1074"/>
 </DAY>

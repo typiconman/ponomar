@@ -1,16 +1,13 @@
-<DAY>
-
-<SAINT Name="Afterfeast of the Entry of the Theotokos" Id="" Type="0" />
-<SAINT Name="Apostles of the 70: Philemon and Archippos, Martyr Apphia, wife of Philemon and Equal-to the-Apostles, and Onesimus, disciple of St Paul (1st C)" Id="2288" Type="1" />
-<SAINT Name="Holy Right-believing Prince Michael of Tver (+ 1318)" Id="1562" Type="2" />
-<SAINT Name="Martyr Cecelia and the Martyrs Valerian, Tiburtius and Maximus at Rome (+c.230)" Id="2581" Type="0" />
-<SAINT Name="Martyrs Procopius the Reader" Id="2582" Type="0"/>
-<SAINT Name="Martyr Meningus" Id="2583" Type="0" />
-<SAINT Name="Venerable Agabbas of Syria (5th C)" Id="2584" Type="0" />
-<SAINT Name="Righteous Michael the Soldier, of Bulgaria (+ 866)" Id="2585" Type="0" />
-<SAINT Name="Martyr Agapionus" Id="" Type="0" />
-<SAINT Name="Martyrs Stephen and Mark" Id="" Type="0" />
-<SAINT Name="Venerable Callistos, Patriarch of Constantinople" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Clement, Bishop of Ochrid (Bulgaria)" Id="" Type="0" />
-
+<DAY><SAINT SId="2575" CId="257511"/>
+<SAINT SId="2288" CId="2288"/>
+<SAINT SId="1562" CId="1562"/>
+<SAINT SId="2581" CId="2581"/>
+<SAINT SId="2582" CId="2582"/>
+<SAINT SId="2583" CId="2583"/>
+<SAINT SId="2584" CId="2584"/>
+<SAINT SId="2585" CId="2585"/>
+<SAINT SId="11220000" CId="11220000"/>
+<SAINT SId="11220100" CId="11220100"/>
+<SAINT SId="11220400" CId="11220400"/>
+<SAINT SId="11220300" CId="11220300"/>
 </DAY>

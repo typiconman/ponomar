@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Hieromartyr Theodotus the Bishop of Ancyra (+303)" Id="9216" Type="1" />
-<SAINT Name="New Hieromartyrs Archbishop Andronicus of Perm, Priests Alexander, Alexis, Alexander, Valentine, Benjamin, Victor, Alexander, Paul, Vladimir, Ignatius, Michael, Nicholas, Paul, Alexander, Nicholas, Deacon Gregory and Martyrs Athanasius and Alexander (+1918)" Id="4756" Type="0"/>
-<SAINT Name="New Hieromartyrs Priests Nicholas and Peter (+1919)" Id="" Type="0"/>
-<SAINT Name="Hieromartyr Marcellinus, Pope of Rome and Martyrs Claudius, Cyrinus, and Antoninus (+304)" Id="1252" Type="0" />
-<SAINT Name="Hieromartyr Marcellus, Pope of Rome, and those with him: Martyrs Sisinius and Cyriacus the deacons, Smaragdus, Largius, Apronian, Saturnian, Papius, Maurus, and Cryscentian, and Martyred women Priscilla, Lucina, and Artemia the Princess (+ c.310)" Id="1253" Type="0" />
-<SAINT Name="Holy Women Martyrs Caleria (Valeria), Kyriaki and Maria in Caesarea of Palestine (+284-305)" Id="1254" Type="0" />
-<SAINT Name="Synaxis of All Saints of Ivanovo" Id="" Type="0"/>
-<SAINT Name="St. Colman, Bishop of Dromore (+c .610)" Id="060708" Type="0" />
-<SAINT Name="Venerable Daniel of Skete (+420)" Id="" Type="0" />
-<SAINT Name="Martyr Potamiena" Id="" Type="0" />
-
+<DAY><SAINT SId="09216" CId="09216"/>
+<SAINT SId="4756" CId="4756"/>
+<SAINT SId="06070000" CId="06070000"/>
+<SAINT SId="1252" CId="1252"/>
+<SAINT SId="1253" CId="1253"/>
+<SAINT SId="1254" CId="1254"/>
+<SAINT SId="06070100" CId="06070100"/>
+<SAINT SId="060708" CId="060708"/>
+<SAINT SId="06070200" CId="06070200"/>
+<SAINT SId="06070399" CId="06070399"/>
 </DAY>

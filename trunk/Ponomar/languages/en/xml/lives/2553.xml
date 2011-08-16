@@ -1,17 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Martyr Gobron (Michael) and the 133 warriors with him"/> 
-<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-      Martyr Gobron (Michael) and the 133 warriors with him who suffered
-for Christ in Kakheti by the Arab Emir Abdul-Kasim in the year 920. For their
-refusal to accept Islam all the Holy Martyrs were executed by the sword.
-
-</LIFE>
-<TROPARION Tone="">
-
-</TROPARION>
-<KONTAKION Tone="">
-
-</KONTAKION>
-
+<NAME Nominative="Martyr Gobrones, in Holy Baptism Michael, and 133 Soldiers in Georgia (+914)" Short="Martyr Gobrones,"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+       Martyr Gobron (Michael) and the 133 warriors with him who suffered for Christ in Kakheti by the Arab Emir Abdul-Kasim in the year 920. For their refusal to accept Islam all the Holy Martyrs were executed by the sword. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

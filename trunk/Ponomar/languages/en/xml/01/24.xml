@@ -1,23 +1,17 @@
-<DAY>
-<SAINT Name="12" Cmd="dow == 0" />
-<SCRIPTURE Type="matins" Reading="Lk_15:1-10" Cmd="dow != 0 &amp;&amp; nday != -57" />
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="nday != -57 &amp;&amp; dow != 0" Note="for St Xenia"/>
-
-<SAINT Name="Venerable Xenia of Rome and her two female slaves (5th C)" Id="294" Type="1" />
-<SAINT Name="Martyrs Babylas (Vavila) of Sicily and his two disciples: Timothy and Agapius (3rd C)" Id="297" Type="0" />
-<SAINT Name="Saint Macedonius, the Hermit, of Syria (+c.420)" Id="298" Type="0" />
-<SAINT Name="Hieromartyr Felician, Bishop of Pholina" Id="" Type="0" />
-<SAINT Name="Venerable Philon, Bishop of Calpacia" Id="" Type="0" />
-<SAINT Name="Transfer of the relics of venerable martyr Anastasius the Persian" Id="165" Type="0" />
-<SAINT Name="Martyrs Paul, Pausirius, and Theodotian" Id="" Type="0" />
-<SAINT Name="Venerable Philippicus" Id="" Type="0" />
-<SAINT Name="Martyr Barsima and his two brothers" Id="" Type="0" />
-<SAINT Name="Venerable Zosimus of Mt Sinai" Id="" Type="0" />
-<SAINT Name="Venerable Dionisius of Olympus" Id="" Type="0" />
-<SAINT Name="Saint Gerasim, Bishop of Perm (+1441)" Id="502" Type="0" />
-<SAINT Name="Martyr John of Kazan (+1529)" Id="979" Type="0" />
-<SAINT Name="Blessed Xenia of Saint Petersburg (19th C)" Id="2568" Type="1" Cmd="nday != -57 &amp;&amp; dow != 0"/>
-<SAINT Name="Blessed Xenia of Saint Petersburg (19th C) [transferred to Saturday]" Id="2568" Type="1" Cmd="dow == 0"/>
-
+<DAY><SAINT SId="6613" CId="6613" Cmd="dow == 0"/>
+<SAINT SId="294" CId="294"/>
+<SAINT SId="297" CId="297"/>
+<SAINT SId="298" CId="298"/>
+<SAINT SId="01240099" CId="01240099"/>
+<SAINT SId="01240199" CId="01240199"/>
+<SAINT SId="165" CId="16501"/>
+<SAINT SId="012400" CId="012400"/>
+<SAINT SId="012403" CId="012403"/>
+<SAINT SId="01240499" CId="01240499"/>
+<SAINT SId="01240599" CId="01240599"/>
+<SAINT SId="01240699" CId="01240699"/>
+<SAINT SId="502" CId="502"/>
+<SAINT SId="979" CId="979"/>
+<SAINT SId="2568" CId="2568" Cmd="nday != -57 &amp;&amp; dow != 0"/>
+<SAINT SId="256801" CId="256801" Cmd="dow == 0"/>
 </DAY>

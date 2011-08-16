@@ -1,15 +1,12 @@
-﻿<DAY>
-
-<SAINT Name="Translation of the relics of the Greatmartyr Theodore Stratelates (+319)" Id="2201" Type="2" />
-<SAINT Name="St Theodore the Bishop of Rostov and Suzdal (+ 1023)" Id="" Type="0" />
-<SAINT Name="Finding of the relics of Sts. Basil and Constantine, princes of Yaroslavl (13th C)" Id="6492" Type="0" />
-<SAINT Name="Saint Ephraim, Patriarch of Antioch (+ c.545)" Id="1261" Type="0" />
-<SAINT Name="Venerable Zosimus of Phoenicia, Syria (6th C)" Id="1262" Type="0" />
-<SAINT Name="Icon of the Mother of God of Yaroslavl (13th C) and Uryupinsk (1821)" Id="1265" Type="0" />
-<SAINT Name="St Médard, Bishop of Noyon (6th C)" Id="060807" Type="0" />
-<SAINT Name="Venerable Melania" Id="" Type="0" />
-<SAINT Name="Venerable Athra" Id="" Type="0" />
-<SAINT Name="Venerable Naucratius (+848)" Id="" Type="0" />
-<SAINT Name="New Martyr Theophanes (+1559)" Id="" Type="0" />
-
+<DAY><SAINT SId="2201" CId="220101"/>
+<SAINT SId="06080000" CId="06080000"/>
+<SAINT SId="6492" CId="6492"/>
+<SAINT SId="1261" CId="1261"/>
+<SAINT SId="1262" CId="1262"/>
+<SAINT SId="1265" CId="1265"/>
+<SAINT SId="060807" CId="060807"/>
+<SAINT SId="06080500" CId="06080500"/>
+<SAINT SId="06080100" CId="06080100"/>
+<SAINT SId="06080300" CId="06080300"/>
+<SAINT SId="06080400" CId="06080400"/>
 </DAY>

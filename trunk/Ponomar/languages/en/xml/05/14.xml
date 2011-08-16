@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Martyr Isidore of Chios" Id="1062" Type="1" />
-<SAINT Name="Venerable Isidore the Fool-For-Christ and Wonderworker of Rostov (+1474)" Id="" Type="2" />
-<SAINT Name="New Hieromartyr Priest Peter (+1939)" Id="" Type="0"/>
-<SAINT Name="St. Nikita the Bishop of Novgorod and the Recluse of the Kiev Far Caves (+1108)" Id="347" Type="0" />
-<SAINT Name="Martyr Maximus (+ c.250)" Id="1063" Type="0" />
-<SAINT Name="Venerable Serapion of Egypt (5th C)" Id="1064" Type="0" />
-<SAINT Name="Saint Leontius, Patriarch of Jerusalem (+1175)" Id="1065" Type="0" />
-<SAINT Name="Icons of the Mother of God 'Yaroslavksaya' (1823), 'Terebinskaya', and 'Serafimo-Ponetaevskaya'" Id="1068" Type="0" />
-<SAINT Name="New Martyr Mark of Smyrna (+1643)" Id="" Type="0" />
-<SAINT Name="New Martyr Raiko (John) of Bulgaria (+1802)" Id="" Type="0" />
-
+<DAY><SAINT SId="1062" CId="1062"/>
+<SAINT SId="051400" CId="051400"/>
+<SAINT SId="051401" CId="051401"/>
+<SAINT SId="347" CId="34702"/>
+<SAINT SId="1063" CId="1063"/>
+<SAINT SId="1064" CId="1064"/>
+<SAINT SId="1065" CId="1065"/>
+<SAINT SId="1068" CId="1068"/>
+<SAINT SId="051402" CId="051402"/>
+<SAINT SId="051403" CId="051403"/>
 </DAY>

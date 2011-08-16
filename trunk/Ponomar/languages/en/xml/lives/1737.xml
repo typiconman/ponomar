@@ -1,21 +1,16 @@
 <SAINT>
 
-<NAME Nominative="The Holy Martyrs Nazarius, Gervase, Protase, and Celsius"/> 
-<LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
-      The holy martyrs Nazarius, Gervase, Protase, and Celsius suffered during the
-reign of the Emperor Nero in the city of Milan. The martyrs Nazarius and Celsius, who
-worked hard for the enlightenment of the pagans in the faith in Christ, were subjected to
-various tortures, were fed to beasts, thrown into the sea and, at last, when both survived,
-were beheaded. The martyrs Gervase and Protase were twins. St. Gervase for confessing
-Christ was whipped to death by tin rods, and St. Protase was truncated by the sword.
-Their relics were discovered in 357 and are now in Milan.
-</LIFE>
-<TROPARION Tone="4" Translator="Aleksandr Andreev">
-Thy martyrs, O Lord, in their suffering received crowns of incorruption from Thee, our God; for having Thy might they deposed the tormentors and destroyed the powerless audacity of the daemons. Through their prayers do Thou save our souls.
-</TROPARION>
-<KONTAKION Tone="2" Translator="Aleksandr Andreev">
-Having appeared as bright lamps, O divine martyrs, you enlightened all creation with the light of your wonders, releasing from infirmities, ever driving away the deep night, continually pray to Christ the One God for us all.
-
-</KONTAKION>
-
+<NAME Nominative="Martyrs Nazarius, Gervasius, Protasius and Celsius of Milan (1st C)" Short="Martyrs Nazarius,"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
+       The holy martyrs Nazarius, Gervase, Protase, and Celsius suffered during the reign of the Emperor Nero in the city of Milan. The martyrs Nazarius and Celsius, who worked hard for the enlightenment of the pagans in the faith in Christ, were subjected to various tortures, were fed to beasts, thrown into the sea and, at last, when both survived, were beheaded. The martyrs Gervase and Protase were twins. St. Gervase for confessing Christ was whipped to death by tin rods, and St. Protase was truncated by the sword. Their relics were discovered in 357 and are now in Milan.
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="4" Translator="Aleksandr Andreev">
+ Thy martyrs, O Lord, in their suffering received crowns of incorruption from Thee, our God; for having Thy might they deposed the tormentors and destroyed the powerless audacity of the daemons. Through their prayers do Thou save our souls.
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="2" Translator="Aleksandr Andreev">
+ Having appeared as bright lamps, O divine martyrs, you enlightened all creation with the light of your wonders, releasing from infirmities, ever driving away the deep night, continually pray to Christ the One God for us all. 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

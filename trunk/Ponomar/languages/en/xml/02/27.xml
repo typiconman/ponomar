@@ -1,20 +1,11 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Isa_40:1-3, 41:17-18, 45:8, 48:20-21, 54:1" Note="for the Forerunner" Cmd="nday == -43"/>
-<SCRIPTURE Type="vespers" Reading="Mal_3:1-3, 5-7, 12, 17-18, 4:4-6" Note="for the Forerunner" Cmd="nday == -43"/>
-<SCRIPTURE Type="vespers" Reading="Wisd_4:7, 16-17, 19-20, 5:1-7" Note="for the Forerunner" Cmd="nday == -43"/>
-<SCRIPTURE Type="matins" Reading="Lk_7:17-30" Pericope="31" Note="for the Forerunner" Cmd="nday == -43"/>
-<SCRIPTURE Type="apostol" Reading="II Cor_4:6-15" Pericope="176" Note="for the Forerunner" Cmd="nday == -43"/>
-<SCRIPTURE Type="gospel" Reading="Mt_11:2-15" Pericope="40" Note="for the Forerunner" Cmd="nday == -43"/>
-
-<SAINT Name="On this day, we sing the service for the Finding of the Head of the Forerunner" Id="1007" Type="4" Cmd="nday == -43" />
-<SAINT Name="Venerable Procopius, Confessor of Decapolis (+ c. 750)" Id="1843" Type="1" Cmd="nday != -43" />
-<SAINT Name="Venerable Procopius, Confessor of Decapolis (+ c. 750) [transferred to Wednesday]" Id="1843" Type="1" Cmd="nday == -43" />
-<SAINT Name="New Hieromartyr Priest Peter, Martyr Michael (+1938)" Id="" Type="0"/>
-<SAINT Name="Venerable Titus the Presbyter of the Caves of Kiev (+ after 1196)" Id="2113" Type="0" />
-<SAINT Name="Venerable Thalelaeus the Hermit of Syria (+460)" Id="518" Type="0" />
-<SAINT Name="Martyr Gelasius" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Macarius, Bishop of Jerusalem" Id="" Type="0" />
-<SAINT Name="Venerable Titus the Soldier, of the Kiev Caves (14th C)" Id="6865" Type="0" />
-<SAINT Name="Venerable Stephen" Id="" Type="0" />
-
+<DAY><SAINT SId="1007" CId="09107" Cmd="nday == -43"/>
+<SAINT SId="1843" CId="1843" Cmd="nday != -43"/>
+<SAINT SId="022700" CId="022700"/>
+<SAINT SId="2113" CId="2113"/>
+<SAINT SId="518" CId="518"/>
+<SAINT SId="022701" CId="022701"/>
+<SAINT SId="02270299" CId="02270299"/>
+<SAINT SId="6865" CId="6865"/>
+<SAINT SId="022702" CId="022702"/>
+<SAINT SId="184301" CId="184301" Cmd="nday == -43"/>
 </DAY>

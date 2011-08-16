@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="Commemoration of the Holy Fathers of Seven Ecumenical Councils" Id="" Type="0" />
-<SAINT Name="Holy Martyr Theodotus of Ancyra and the Holy Seven Virgin-martyrs Alexandra, Tecusa, Claudia, Phaine, Euphrasia, Matrona, and Julia (+303)" Id="2206" Type="1" />
-<SAINT Name="Holy Martyrs Peter, Dionysius, Andrew, Paul, and Christina, who suffered under emperor Decius (+249-251)" Id="1094" Type="1" />
-<SAINT Name="Venerable Macarius of Altai (+1847)" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Priest Michael (+1932)" Id="" Type="0"/>
-<SAINT Name="New Hieromartyr Priest Basil (+1942)" Id="" Type="0"/>
-<SAINT Name="Holy Martyrs Simeon, Isaac and Bachtisius in Persia (4th C)" Id="" Type="0" />
-<SAINT Name="Holy Martyrs Heraclius, Paulinus, Benedimus" Id="1095" Type="0" />
-<SAINT Name="Holy Martyrs David and Tarichan in Georgia (+693)" Id="1096" Type="0" />
-<SAINT Name="Martyr Euphrasia of Nicaea (3rd-4th C)" Id="" Type="0" />
-<SAINT Name="Hieromartyr Potamon, Bishop of Heraclea (+341)" Id="051811" Type="0" />
-
+<DAY><SAINT SId="051800" CId="051800"/>
+<SAINT SId="2206" CId="2206"/>
+<SAINT SId="1094" CId="1094"/>
+<SAINT SId="051801" CId="051801"/>
+<SAINT SId="051802" CId="051802"/>
+<SAINT SId="051803" CId="051803"/>
+<SAINT SId="051804" CId="051804"/>
+<SAINT SId="1095" CId="1095"/>
+<SAINT SId="1096" CId="1096"/>
+<SAINT SId="051805" CId="051805"/>
+<SAINT SId="051811" CId="051811"/>
 </DAY>

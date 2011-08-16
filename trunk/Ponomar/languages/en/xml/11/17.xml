@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="Saint Gregory the Wonderworker, Bishop of Neo-Caesarea (+c.266-270)" Id="551" Type="2" />
-<SAINT Name="Venerable Nikon, Abbot of Radonezh, and disciple of Venerable Sergius (+1426)" Id="1644" Type="3" />
-<SAINT Name="Venerable Lazarus the Iconographer, of Constantinople (+c.857)" Id="2552" Type="0" />
-<SAINT Name="Venerable Longinus of Egypt" Id="" Type="0" />
-<SAINT Name="St Maximus, Patriarch of Constantinople" Id="" Type="0" />
-<SAINT Name="Martyr Gobrones, in Holy Baptism Michael, and 133 Soldiers in Georgia (+914)" Id="2553" Type="0" />
-<SAINT Name="Venerable Gennadius of Vatopedi" Id="" Type="0" />
-<SAINT Name="Venerable Paisius (Velichkovsky)" Id="" Type="1" />
-
+<DAY><SAINT SId="551" CId="551"/>
+<SAINT SId="1644" CId="1644"/>
+<SAINT SId="2552" CId="2552"/>
+<SAINT SId="11170000" CId="11170000"/>
+<SAINT SId="11170100" CId="11170100"/>
+<SAINT SId="2553" CId="2553"/>
+<SAINT SId="11170400" CId="11170400"/>
+<SAINT SId="11170399" CId="11170399"/>
 </DAY>

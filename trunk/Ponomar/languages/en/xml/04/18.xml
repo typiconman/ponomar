@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Venerable John the Disciple of Venerable Gregory of Decapolis (+ c.820-850)" Id="880" Type="1" />
-<SAINT Name="New Hieromartyr Priest Bessarion (+ 1918)" Id="" Type="0"/>
-<SAINT Name="New Venerable Martyr Tamara (+ 1942)" Id="" Type="0"/>
-<SAINT Name="Martyrs Victor, Zoticus, Acindynus, Xeno, Severian and Caesarius (+303)" Id="881" Type="0" />
-<SAINT Name="Saint Cosmas, Bishop of Chalcedon, and his companion St. Auxentius (+815-820)" Id="882" Type="0" />
-<SAINT Name="New Martyr John Culicus the New of Epirus (+1526)" Id="883" Type="0" />
-<SAINT Name="Icon of the Mother of God of Maximov (1299)" Id="885" Type="0" />
-<SAINT Name="Martyr Mappalycus" Id="" Type="0" />
-<SAINT Name="Venerable Anthony, Euthymius, and Felix, Enlighteners of Karelia and Finland (15th C)" Id="" Type="0" />
-
+<DAY><SAINT SId="880" CId="880"/>
+<SAINT SId="041800" CId="041800"/>
+<SAINT SId="041801" CId="041801"/>
+<SAINT SId="881" CId="881"/>
+<SAINT SId="882" CId="882"/>
+<SAINT SId="883" CId="883"/>
+<SAINT SId="885" CId="885"/>
+<SAINT SId="04180299" CId="04180299"/>
+<SAINT SId="041802" CId="041802"/>
 </DAY>

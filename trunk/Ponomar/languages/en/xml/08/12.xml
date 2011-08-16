@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Afterfeast of the Transfiguration of the Lord" Id="" Type="0" />
-<SAINT Name="Martyrs Photios and Anicletas of Nicomedia and many with them (+ 305-306)" Id="4425" Type="1" />
-<SAINT Name="Martyrs Pamphilius and Captonus" Id="4427" Type="0" />
-<SAINT Name="Hieromartyr Alexander, Bishop of Comana (3rd C)" Id="4426" Type="0" />
-<SAINT Name="Venerable Palamon of Egypt" Id="" Type="0" />
-<SAINT Name="Venerable Castor, Bishop of Apta" Id="" Type="0" />
-<SAINT Name="New Martyrs of Belgorod: Barlaam, Sergius, Elija, Vyacheslav, Ioasaph, John, Anthony, Micah, Vissarion, Matthew, Euthemius, Barnabus, Dimitry, Savva, Hermogenes, Arcadius, Euthemius, Marcellus, John, James, Peter, James, Alexander, Theodore, Peter, Sergius, and Alexey (+1918)" Id="4470" Type="0" />
-
+<DAY><SAINT SId="4386" CId="438611"/>
+<SAINT SId="4425" CId="4425"/>
+<SAINT SId="4427" CId="4427"/>
+<SAINT SId="4426" CId="4426"/>
+<SAINT SId="08120000" CId="08120000"/>
+<SAINT SId="08120100" CId="08120100"/>
+<SAINT SId="4470" CId="4470"/>
 </DAY>

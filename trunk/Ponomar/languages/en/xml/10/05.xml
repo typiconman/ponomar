@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Holy Hierarchs Peter, Alexis, Jonah, Macarius, Philip, Job, Hermogenes, Tikhon, Peter, Philaret, Innocent and Macarius, Wonderworkers of Moscow" Id="1779" Type="3" />
-<SAINT Name="Martyr Charitina of Amisus (+304)" Id="1673" Type="1" />
-<SAINT Name="Venerable Damian the Presbyter and Healer (+1071), Jeremiah (+c.1070) and Matthew (+c.1083) the Clairvoyants of the Caves of Kiev" Id="1674" Type="0" />
-<SAINT Name="Martyr Mamelta of Persia (+c.344)" Id="1678" Type="0" />
-<SAINT Name="Hieromartyr Dionysios, Bishop of Alexandria (264-265)" Id="1676" Type="0" />
-<SAINT Name="Venerable Cosmas the Abbot" Id="" Type="0" />
-<SAINT Name="Venerable Eudocimus the Vatopedi" Id="" Type="0" />
-<SAINT Name="Venerable Charitina, Princess of Lithuania (+1281)" Id="2748" Type="0" />
-<SAINT Name="Venerable Gregory of Chandzoe in Georgia (+861)" Id="1679" Type="0" />
-
+<DAY><SAINT SId="1779" CId="1779"/>
+<SAINT SId="1673" CId="1673"/>
+<SAINT SId="1674" CId="1674"/>
+<SAINT SId="1678" CId="1678"/>
+<SAINT SId="1676" CId="1676"/>
+<SAINT SId="10050000" CId="10050000"/>
+<SAINT SId="10050199" CId="10050199"/>
+<SAINT SId="2748" CId="2748"/>
+<SAINT SId="1679" CId="1679"/>
 </DAY>

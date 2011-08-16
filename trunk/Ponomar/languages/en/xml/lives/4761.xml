@@ -1,14 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Hieromartyr Arkady, BIshop of Luben, Vicar of Poltava"/> 
-<LIFE Id="bulgakov" Copyright="">
-He was murdered by the NKVD in Butovo near Moscow on 29 (16) December 1937. (full life needs translation)
-</LIFE>
-<TROPARION Tone="1">
-
-</TROPARION>
-<KONTAKION Tone="1">
-
-</KONTAKION>
-
+<NAME Nominative="New Hieromartyr Arkadiy, Bishop of Bezhetsk (+1937)" Short="New Hieromartyr"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov">
+ He was murdered by the NKVD in Butovo near Moscow on 29 (16) December 1937. (full life needs translation)
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="1">
+ 
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="1">
+ 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

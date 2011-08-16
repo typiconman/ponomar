@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Greatmartyr Irene of Thessalonica (1st-2nd C)" Id="2523" Type="1" />
-<SAINT Name="Uncovering the relics of Venerable James the Abbot of Zhelezny Bor (+1442)" Id="871" Type="0" />
-<SAINT Name="Icon of the Mother of God 'the Inexhaustible Cup' (1878)" Id="" Type="0" />
-<SAINT Name="Martyrs Neophyte, Gaius, and Gaianus" Id="" Type="0" />
-<SAINT Name="Venerable Micah, disciple of St Sergius of Radonezh" Id="" Type="0" />
-<SAINT Name="Venerable Hadrian of Monzensk" Id="" Type="0" />
-<SAINT Name="St. Hilary, Archbishop of Arles (+449)" Id="050507" Type="0" />
-
+<DAY><SAINT SId="2523" CId="2523"/>
+<SAINT SId="871" CId="871"/>
+<SAINT SId="050500" CId="050500"/>
+<SAINT SId="050501" CId="050501"/>
+<SAINT SId="050504" CId="050504"/>
+<SAINT SId="050502" CId="050502"/>
+<SAINT SId="050507" CId="050507"/>
 </DAY>

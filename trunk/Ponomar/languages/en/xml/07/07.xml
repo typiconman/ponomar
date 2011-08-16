@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Venerable Thomas of Mt Maleon (10th C)" Id="2325" Type="1" />
-<SAINT Name="Martyrs Epictetus the Presbyter and Astion the Monastic in Scythia (+ 290)" Id="4176" Type="0" />
-<SAINT Name="Venerable Akakios of Sinai (6th C)" Id="3248" Type="1" />
-<SAINT Name="Martyrs Kyriaki, Bassa and others with them in Nicomedia (4th C)" Id="4177" Type="0" />
-<SAINT Name="Venerable Eudoxia, in monasticism Evphrosynia, Grand Duchess of Moscow (+ 1407)" Id="2467" Type="0" />
-<SAINT Name="Martyrs Peregrinus, Lucian, Ompeius, Hesychius, Papius, Satorninus and Germanus of Dyrrachium in Macedonia (2nd C)" Id="4175" Type="0" />
-<SAINT Name="Hieromartyr Evangelus, Bishop of Romania" Id="" Type="0" />
-<SAINT Name="Righteous Panthene the Confessor, a teacher at Alexandria" Id="" Type="0" />
-<SAINT Name="Icon of the Mother of God of Vlakherna" Id="4178" Type="0" />
-
+<DAY><SAINT SId="2325" CId="2325"/>
+<SAINT SId="4176" CId="4176"/>
+<SAINT SId="3248" CId="3248"/>
+<SAINT SId="4177" CId="4177"/>
+<SAINT SId="246701" CId="246701"/>
+<SAINT SId="4175" CId="4175"/>
+<SAINT SId="07070000" CId="07070000"/>
+<SAINT SId="07070100" CId="07070100"/>
+<SAINT SId="4178" CId="4178"/>
 </DAY>

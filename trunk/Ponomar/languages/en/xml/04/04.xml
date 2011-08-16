@@ -1,17 +1,14 @@
-<DAY>
-
-<SAINT Name="Venerable Joseph the Hymnographer (+883)" Id="775" Type="1" />
-<SAINT Name="Venerable George of Mt. Maleon in the Peloponnesus (9th C)" Id="776" Type="1" />
-<SAINT Name="Venerable New Martyrs Benjamin and Niciphorus (+1928)" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Nicholas, Bishop of Velsk, Venerable Martyr Mary (+1932)" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Priest John (+1933)" Id="4766" Type="0"/>
-<SAINT Name="New Martyr John (+1943)" Id="" Type="0"/>
-<SAINT Name="Venerable Joseph the Much-Ailing, of the Caves of Kiev (14th C)" Id="1060" Type="0" />
-<SAINT Name="Venerable Zosimas the Abbot of Vorbozomsk (+ c.1550)" Id="848" Type="0" />
-<SAINT Name="Venerable Zosimas of Palestine, who found Venerable Mary of Egypt (+ c.560)" Id="754" Type="0" />
-<SAINT Name="Virginmartyr Pherbutha (Phermoutha) of Persia, with her sister and servant (+341-343)" Id="780" Type="0" />
-<SAINT Name="New Hieromartyr Nikita of Albania" Id="" Type="0" />
-<SAINT Name="Venerable Theonas, Metropolitan of Thessaloniki" Id="" Type="0" />
-<SAINT Name="Icon of the Mother of God 'Gerondissa'" Id="" Type="0" />
-
+<DAY><SAINT SId="775" CId="775"/>
+<SAINT SId="776" CId="776"/>
+<SAINT SId="040400" CId="040400"/>
+<SAINT SId="04040199" CId="04040199"/>
+<SAINT SId="476606" CId="476606"/>
+<SAINT SId="040402" CId="040402"/>
+<SAINT SId="1060" CId="1060"/>
+<SAINT SId="848" CId="848"/>
+<SAINT SId="754" CId="754"/>
+<SAINT SId="780" CId="780"/>
+<SAINT SId="040403" CId="040403"/>
+<SAINT SId="040404" CId="040404"/>
+<SAINT SId="040405" CId="040405"/>
 </DAY>

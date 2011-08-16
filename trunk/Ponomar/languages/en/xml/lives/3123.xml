@@ -1,15 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Our Father among the Saints Stephan the Confessor, Archbishop of Surozh"/> 
-<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
-       Born in Cappadocia, and when 15 years old he came to Constantinople for higher education that he completed so successfully that he surpassed &quot;all the teachers, who were in the city&quot;. At a mature age he was tonsured a monk and in order to practice supreme ascetical efforts he left for the desert where he lived for 30 years &quot;as his undefiled way of life showed&quot;. Due to a special revelation he was called from the desert by Patriarch German and ordained the Bishop of Surozh (today called Sudak, in Crimea). His pastorate was strongly infected with heresy and he had time to exterminate the heresy and restored Orthodoxy within 5 years. During the reign of the iconoclast Leo the Isaurian he, having gone to Constantinople, &quot;plainly preached the Orthodox tradition&quot; and endured torture and imprisonment for venerating holy icons. During the reign of Copronymus St. Stephan, exhausted from the imprisonment, mutilated from torture, already in old age, received his freedom, and again came back to his pastorate and soon died in about the middle of the VIII century. 
-</LIFE>
-<TROPARION Tone="4">
-As a hierarch thou didst dwell with the bodiless hosts, O Hierarch Stephen, for thou wielded the Cross as a sword, and firmly standing against the iconoclasts and those who warred against the Spirit, those who would not venerate the most pure image of Christ our God, thou didst cut down every heresy of the wicked. Therefore, receiving the crown of martyrdom, thou delivered thy city of Surozh from all enmity. And now we pray to thee, O Holy One, do thou deliver us from all evil temptation and troubles, and eternal torments.
-</TROPARION>
-<KONTAKION Tone="3">
-Strengthened by the power of the Most High, O Dedicated One, thou cast down the pride of the iconoclast Emperor. and today thy relics are the glory and holy wealth of thy city of Surozh and all us faithful which the angelic hosts offer up, glorifying thee with hymns and songs, O greatly Dedicated Stephen.
-
-</KONTAKION>
-
+<NAME Nominative="Saint Stephen the Confessor, Archbishop of Surozh (8th C)" Short="Saint Stephen"/>
+<SERVICE Type="2"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+        Born in Cappadocia, and when 15 years old he came to Constantinople for higher education that he completed so successfully that he surpassed &quot;all the teachers, who were in the city&quot;. At a mature age he was tonsured a monk and in order to practice supreme ascetical efforts he left for the desert where he lived for 30 years &quot;as his undefiled way of life showed&quot;. Due to a special revelation he was called from the desert by Patriarch German and ordained the Bishop of Surozh (today called Sudak, in Crimea). His pastorate was strongly infected with heresy and he had time to exterminate the heresy and restored Orthodoxy within 5 years. During the reign of the iconoclast Leo the Isaurian he, having gone to Constantinople, &quot;plainly preached the Orthodox tradition&quot; and endured torture and imprisonment for venerating holy icons. During the reign of Copronymus St. Stephan, exhausted from the imprisonment, mutilated from torture, already in old age, received his freedom, and again came back to his pastorate and soon died in about the middle of the VIII century. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="4">
+ As a hierarch thou didst dwell with the bodiless hosts, O Hierarch Stephen, for thou wielded the Cross as a sword, and firmly standing against the iconoclasts and those who warred against the Spirit, those who would not venerate the most pure image of Christ our God, thou didst cut down every heresy of the wicked. Therefore, receiving the crown of martyrdom, thou delivered thy city of Surozh from all enmity. And now we pray to thee, O Holy One, do thou deliver us from all evil temptation and troubles, and eternal torments.
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="3">
+ Strengthened by the power of the Most High, O Dedicated One, thou cast down the pride of the iconoclast Emperor. and today thy relics are the glory and holy wealth of thy city of Surozh and all us faithful which the angelic hosts offer up, glorifying thee with hymns and songs, O greatly Dedicated Stephen. 
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

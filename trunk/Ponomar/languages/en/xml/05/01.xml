@@ -1,15 +1,10 @@
-<DAY>
-
-<SAINT Name="Prophet Jeremiah (6th C BC)" Id="963" Type="1" />
-<SAINT Name="Venerable Paphnutius the Abbot of Borovsk (+1477)" Id="964" Type="3" />
-<SAINT Name="New Martyr Nina (+1938)" Id="4876" Type="0" />
-<SAINT Name="Hieromartyr Macarius, Metropolitan of Kiev (+1497)" Id="1406" Type="0" />
-<SAINT Name="Venerable Gerasim of Boldinsk (+1554)" Id="501" Type="0" />
-<SAINT Name="Venerable Martyr Bata the Persian (4th C)" Id="967" Type="0" />
-<SAINT Name="Right-believing Tamara, Queen of Georgia (+1213)" Id="2687" Type="0" />
-<SAINT Name="New Venerable Martyrs Euthymius (+1814), Ignatius (+1814), and Acacius (+1816) of Mt. Athos" Id="6922" Type="0" />
-<SAINT Name="Icons of the Theotokos: 'Byzantine', 'the Unexpected Joy', 'Myrrh-bearing' (1647), and 'Andronikite' (14th C)" Id="969" Type="0" />
-
+<DAY><SAINT SId="963" CId="963"/>
+<SAINT SId="964" CId="964"/>
+<SAINT SId="4876" CId="4876"/>
+<SAINT SId="1406" CId="1406"/>
+<SAINT SId="501" CId="501"/>
+<SAINT SId="967" CId="967"/>
+<SAINT SId="2687" CId="2687"/>
+<SAINT SId="6922" CId="6922"/>
+<SAINT SId="969" CId="969"/>
 </DAY>
-	
-	

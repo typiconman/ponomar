@@ -1,26 +1,16 @@
 <SAINT>
 
-<NAME Nominative="Holy Apostle and Evangelist Matthew"/> 
-<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-       The Holy Apostle Matthew, also named Levi, was born in Nazareth, and up
-to his calling was a publican and in Capernaum had his duty house, i.e. a special
-place for collecting duties, probably, from the courts coming by sea to Capernaum.
-As Jesus Christ was passing, He saw Matthew, sitting at the duty office. Jesus said
-to him: "Follow Me. And he arose and followed" Him (Mt. 9:9). After he was
-called by the Lord to the rank of the 12 apostles, he preached the Gospel in
-Palestine, Syria, Media, Persia, India and Ethiopia, announcing peace, life and
-salvation", and "to the pagans falling into fiery temptation". He died, according to
-tradition, by fire in about the year 60. He wrote his Gospel for the Palestinian
-Christians in which he mainly announces the incarnation of the Son of God, about
-His origin in the flesh from David and Abraham and consequently more than the
-others pointed out the fulfillment of the ancient prophecies about Jesus Christ.
-
-</LIFE>
-<TROPARION Tone="3">
-O holy apostle and evangelist Matthew,/ entreat the merciful God,// that He grant unto our souls remission of transgressions.
-</TROPARION>
-<KONTAKION Tone="4">
-Casting off the yoke of thy publican's office,/ thou didst shoulder the yoke of righteousness/ and wast shown to be a most excellent merchant,/ bringing in the wisdom from on high as riches./ Wherefore, thou didst preach the Word of truth/ and hast uplifted the souls of the despondent// describing the hour of judgment.
-</KONTAKION>
-
+<NAME Nominative="Holy Apostle and Evangelist Matthew (+ 60)" Short="Holy Apostle"/>
+<SERVICE Type="4"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+        The Holy Apostle Matthew, also named Levi, was born in Nazareth, and up to his calling was a publican and in Capernaum had his duty house, i.e. a special place for collecting duties, probably, from the courts coming by sea to Capernaum. As Jesus Christ was passing, He saw Matthew, sitting at the duty office. Jesus said to him: "Follow Me. And he arose and followed" Him (Mt. 9:9). After he was called by the Lord to the rank of the 12 apostles, he preached the Gospel in Palestine, Syria, Media, Persia, India and Ethiopia, announcing peace, life and salvation", and "to the pagans falling into fiery temptation". He died, according to tradition, by fire in about the year 60. He wrote his Gospel for the Palestinian Christians in which he mainly announces the incarnation of the Son of God, about His origin in the flesh from David and Abraham and consequently more than the others pointed out the fulfillment of the ancient prophecies about Jesus Christ. 
+</LIFE><SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="3">
+ O holy apostle and evangelist Matthew,/ entreat the merciful God,// that He grant unto our souls remission of transgressions.
+</TROPARION></LITURGY></SERVICE>
+<SERVICE>
+<LITURGY>
+<KONTAKION Type="1" Tone="4">
+ Casting off the yoke of thy publican's office,/ thou didst shoulder the yoke of righteousness/ and wast shown to be a most excellent merchant,/ bringing in the wisdom from on high as riches./ Wherefore, thou didst preach the Word of truth/ and hast uplifted the souls of the despondent// describing the hour of judgment.
+</KONTAKION></LITURGY></SERVICE>
 </SAINT>

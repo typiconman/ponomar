@@ -1,39 +1,8 @@
-<DAY>
-<SAINT Name="2" Cmd="dow == 0" />
-<SAINT Name="8" Cmd="dow == 6" />
-<SCRIPTURE Type="1st hour" Reading="Mica_5:2-4" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="1st hour" Reading="Heb_1:1-2" Pericope="303" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="1st hour" Reading="Mt_1:18-25" Pericope="2" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="3rd hour" Reading="Baruch_3:36-4:4" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="3rd hour" Reading="Gal_3:23-29" Pericope="208" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="3rd hour" Reading="Lk_2:1-20" Pericope="5" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="6th hour" Reading="Isa_7:10-16, 8:1-4, 8-10" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="6th hour" Reading="Heb_1:10-2:3" Pericope="304" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="6th hour" Reading="Mt_2:1-12" Pericope="3" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="9th hour" Reading="Isa_9:6-7" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="9th hour" Reading="Heb_2:11-18" Pericope="306" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="9th hour" Reading="Mt_2:13-23" Pericope="4" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="vespers" Reading="Gen_1:1-13" />
-<SCRIPTURE Type="vespers" Reading="Num_24:2-9, 17-18" />
-<SCRIPTURE Type="vespers" Reading="Mica_4:6-7, 5:2-4" />
-<SCRIPTURE Type="vespers" Reading="Isa_11:1-10" />
-<SCRIPTURE Type="vespers" Reading="Baruch_3:36-38, 4:1-4" />
-<SCRIPTURE Type="vespers" Reading="Dan_2:31-36, 44-45" />
-<SCRIPTURE Type="vespers" Reading="Isa_9:6-7" />
-<SCRIPTURE Type="vespers" Reading="Isa_7:10-16, 8:1-4, 8-10" />
-<SCRIPTURE Type="vespers" Reading="Heb_1:1-12" Pericope="303" Cmd="dow == 6 || dow == 0" />
-<SCRIPTURE Type="vespers" Reading="Lk_2:1-20" Pericope="5" Cmd="dow == 6 || dow == 0" />
-<SCRIPTURE Type="apostol" Reading="Heb_1:1-12" Pericope="303" Cmd="!(dow == 6 || dow == 0)" />
-<SCRIPTURE Type="gospel" Reading="Lk_2:1-20" Pericope="5" Cmd="!(dow == 6 || dow == 0)" />
-<LITURGY Type="2" Cmd="dow != 6 &amp;&amp; dow != 0"/>
-<LITURGY Type="1" Cmd="dow == 6 || dow == 0"/>
-
-<SAINT Name="Eve of the Nativity of Christ" Id="9006" Type="1" />
-<SAINT Name="Nun-Martyr Eugenia of Rome, and with her the Martyrs Philip, her father, Protus, Hyacinth, Basilla, and Claudia (+c.262)" Id="3172" Type="1" />
-<SAINT Name="Venerable Nicholas the Monk, of Bulgaria (9th C)" Id="3173" Type="0" />
-<SAINT Name="Venerable Antiochus of Palestine (+c.635)" Id="" Type="0" />
-<SAINT Name="Venerable Aphrodisius of Palestine" Id="" Type="0" />
-<SAINT Name="New Martyr Akhmed of Constantinople (+1682)" Id="" Type="0" />
-
+<DAY><SAINT SId="09006" CId="09006"/>
+<SAINT SId="09007" CId="09007" Cmd="dow != 0 || dow != 6"/>
+<SAINT SId="3172" CId="3172"/>
+<SAINT SId="3173" CId="3173"/>
+<SAINT SId="12240000" CId="12240000"/>
+<SAINT SId="12240100" CId="12240100"/>
+<SAINT SId="12240200" CId="12240200"/>
 </DAY>
-	

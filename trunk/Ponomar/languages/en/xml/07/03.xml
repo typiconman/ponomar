@@ -1,22 +1,16 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Philip"/>
-<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St Philip"/>
-
-<SAINT Name="Martyr Hyacinth of Caesarea in Cappadocia (+ 108)" Id="4142" Type="1" />
-<SAINT Name="Translation of the relics of Hieromartyr Philip, Metropolitan of Moscow (1652)" Id="2294" Type="4" />
-<SAINT Name="Martyrs Mocius and Mark" Id="4148" Type="0" />
-<SAINT Name="Martyrs Diomedes, Eulampius, Asclipiodotus, and Martyr Golindukha" Id="" Type="0" />
-<SAINT Name="Saint Anatolius, Patriarch of Constantinople (+ 458)" Id="4150" Type="0" />
-<SAINT Name="Blessed Princes Basil and Constantine of Yaroslav (13th C)" Id="6492" Type="0" />
-<SAINT Name="Venerable Alexander, Founder of the 'Unsleeping Ones' Monastery (+ c 430)" Id="112" Type="0" />
-<SAINT Name="Venerable Isaiah the Hermit" Id="" Type="0" />
-<SAINT Name="Holy Hierarchs Anatolius and Eusebius, Bishops of Laodicea" Id="" Type="0" />
-<SAINT Name="Holy Hierarch Claudian, Patriarch of Alexandria" Id="" Type="0" />
-<SAINT Name="Venerable Anatoly, Hermit of the Caves of Kiev" Id="" Type="0" />
-<SAINT Name="Venerable Anatoly (another) of the Caves of Kiev" Id="6416" Type="0" />
-<SAINT Name="Venerable Nicodim, Abbot of Kozheyezersk (+ 1640)" Id="1627" Type="0" />
-<SAINT Name="Venerable John and Longin of Yarena" Id="4145" Type="0" />
-<SAINT Name="Blessed John of Moscow, Fool-for-Christ (+ 1589)" Id="989" Type="0" />
-
+<DAY><SAINT SId="4142" CId="4142"/>
+<SAINT SId="2294" CId="2294"/>
+<SAINT SId="4148" CId="4148"/>
+<SAINT SId="07030100" CId="07030100"/>
+<SAINT SId="4150" CId="4150"/>
+<SAINT SId="649201" CId="649201"/>
+<SAINT SId="112" CId="112"/>
+<SAINT SId="07030000" CId="07030000"/>
+<SAINT SId="07030299" CId="07030299"/>
+<SAINT SId="07030399" CId="07030399"/>
+<SAINT SId="07030200" CId="07030200"/>
+<SAINT SId="6416" CId="6416"/>
+<SAINT SId="1627" CId="1627"/>
+<SAINT SId="4145" CId="4145"/>
+<SAINT SId="989" CId="989"/>
 </DAY>

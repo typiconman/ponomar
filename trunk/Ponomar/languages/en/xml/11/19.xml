@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Prophet Obadiah (9th C BC)" Id="2559" Type="1" />
-<SAINT Name="Martyr Varlaam of Caesarea in Cappadocia (+c.304)" Id="2560" Type="1" />
-<SAINT Name="Venerable Varlaam and Joasaph, Prince of India, and King Abennar, his father (4th C)" Id="2561" Type="3" />
-<SAINT Name="Venerable Varlaam, the first Abbot of the Caves of Kiev (+ 1065)" Id="355" Type="0" />
-<SAINT Name="Martyr Aza of Isauria and with him 150 Soldiers and others (+284-305)" Id="2564" Type="0" />
-<SAINT Name="Martyr Iliodorus of Pomphilia" Id="2565" Type="0" />
-<SAINT Name="Venerable Hilarion of Georgia, the Wonderworker" Id="2566" Type="0" />
-<SAINT Name="Holy Hierarch Philaret, Metropolitan of Moscow and Kolomna (+ 1867)" Id="2284" Type="4" />
-<SAINT Name="New Hieromartyr Porfiri, bishop of Simferopol and those with him (+1937)" Id="" Type="0" />
-
+<DAY><SAINT SId="2559" CId="2559"/>
+<SAINT SId="2560" CId="2560"/>
+<SAINT SId="2561" CId="2561"/>
+<SAINT SId="355" CId="355"/>
+<SAINT SId="2564" CId="2564"/>
+<SAINT SId="2565" CId="2565"/>
+<SAINT SId="2566" CId="2566"/>
+<SAINT SId="2284" CId="2284"/>
+<SAINT SId="11190100" CId="11190100"/>
 </DAY>

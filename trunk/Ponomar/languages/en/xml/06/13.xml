@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="Martyr Aquilina of Byblos in Syria (+293)" Id="9294" Type="1" />
-<SAINT Name="St. Triphyllius, Bishop of Leucosia (Nicosia) in Cyprus (+ c.370)" Id="1296" Type="1" />
-<SAINT Name="Venerable Alexandra of Diveevsky Convent (+1789)" Id="" Type="0"/>
-<SAINT Name="New Hieromartyr Priest Alexander (+1918)" Id="" Type="0" />
-<SAINT Name="New Hieromartyr Priest Demetrius (+1940)" Id="" Type="0" />
-<SAINT Name="New Martyr Pelagia (+1944)" Id="" Type="0"/>
-<SAINT Name="Venerable Andronicus (+1395) and Sava (15th C) of Moscow" Id="6815" Type="0" />
-<SAINT Name="Martyr Antonina of Nicea (+ c.284-305)" Id="2401" Type="0" />
-<SAINT Name="Venerables Anna (+826) and her son John in Constantinople (9th C)" Id="1297" Type="0" />
-<SAINT Name="Venerable Antipater, bishop of Bostra in Arabia (+458)" Id="" Type="0" />
-
+<DAY><SAINT SId="09294" CId="09294"/>
+<SAINT SId="1296" CId="1296"/>
+<SAINT SId="06130000" CId="06130000"/>
+<SAINT SId="06130100" CId="06130100"/>
+<SAINT SId="06130200" CId="06130200"/>
+<SAINT SId="06130300" CId="06130300"/>
+<SAINT SId="6815" CId="6815"/>
+<SAINT SId="2401" CId="2401"/>
+<SAINT SId="1297" CId="1297"/>
+<SAINT SId="06130400" CId="06130400"/>
 </DAY>

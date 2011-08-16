@@ -1,19 +1,6 @@
 <SAINT>
-
-<NAME Nominative="Stephen Dechani, King of the Serbs (1321-1336)"/> 
-<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-       He became famous by his piety, love for building temples to God (he
-constructed the Dechani monastery) and compassion for the poor. Having led
-most of his life under the oppression of various disasters, Saint Stephen died a
-martyr. He was strangled by agents of his own son in Zvelane __ 1336. His
-relics are in the Dechani Monastery.
-
+<NAME Nominative="Repose of Saint Stefan Dechani of Serbia (+ c. 1336)" Short="Repose of"/>
+<SERVICE Type="0"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+He became famous by his piety, love for building temples to God (he constructed the Dechani monastery) and compassion for the poor. Having led most of his life under the oppression of various disasters, Saint Stephen died a martyr. He was strangled by agents of his own son in Zvelane __ 1336. His relics are in the Dechani Monastery. 
 </LIFE>
-<TROPARION Tone="">
-
-</TROPARION>
-<KONTAKION Tone="">
-
-</KONTAKION>
-
 </SAINT>
