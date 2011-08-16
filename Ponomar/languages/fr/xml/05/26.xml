@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="St Apôtre Carpos des 70" Id="1141" Type="1" />
-<SAINT Name="St Apôtre Alphée des 70 et ses enfants Abercius et Hélène" Id="1143" Type="0" />
-<SAINT Name="St néo-Martyr Alexandre de Thessalonique" Id="" Type="0" />
-<SAINT Name="St Georges de Sophia" Id="1142" Type="2" />
-<SAINT Name="St Macaire de Koliazino (translation des reliques)" Id="1404" Type="0" />
-<SAINT Name="Ste Bénédicte" Id="" Type="0" />
-<SAINT Name="St Augustin, Evêque de Canterbury" Id="" Type="0" />
-
+<DAY><SAINT SId="1141" CId="1141"/>
+<SAINT SId="1143" CId="1143"/>
+<SAINT SId="052600" CId="052600"/>
+<SAINT SId="1142" CId="1142"/>
+<SAINT SId="1404" CId="140401"/>
+<SAINT SId="05260197" CId="05260197"/>
+<SAINT SId="052607" CId="052607"/>
 </DAY>

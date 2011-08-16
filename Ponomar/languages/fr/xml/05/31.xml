@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="Sts Martyr Hermios et Marus le Mage converti" Id="1182" Type="1" />
-<SAINT Name="Sts 5 Martyrs d'Ascalon" Id="" Type="0" />
-<SAINT Name="St Eusèbe et Charalampos" Id="" Type="0" />
-<SAINT Name="St Eusthate, Patriarche de Constantinople" Id="" Type="0" />
-<SAINT Name="Ste Pétronille, fille de l'Apôtre St Pierre" Id="" Type="0" />
-
+<DAY><SAINT SId="1182" CId="1182"/>
+<SAINT SId="05310097" CId="05310097"/>
+<SAINT SId="05310197" CId="05310197"/>
+<SAINT SId="05310000" CId="05310000"/>
+<SAINT SId="05310397" CId="05310397"/>
 </DAY>

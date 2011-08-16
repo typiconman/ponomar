@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="St Martin 1er, Evêque de Rome" Id="" Type="0" />
-<SAINT Name="Sts maxime, Quintilien et Dadas" Id="" Type="0" />
-<SAINT Name="Sts Eleuthère le Perse, Théodose et Zoïle le Romain" Id="" Type="0" />
-<SAINT Name="St Romain, Evêque de Metz" Id="" Type="0" />
-<SAINT Name="St Mars, Evêque de Clermont" Id="" Type="0" />
-
+<DAY><SAINT SId="04130097" CId="04130097"/>
+<SAINT SId="041302" CId="041302"/>
+<SAINT SId="04130297" CId="04130297"/>
+<SAINT SId="04130397" CId="04130397"/>
+<SAINT SId="041303" CId="041303"/>
 </DAY>

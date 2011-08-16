@@ -1,13 +1,5 @@
-<DAY>
-<SCRIPTURE Type="matins" Reading="Mk_1:9-11" Pericope="2"/>
-<SCRIPTURE Type="apostol" Reading="Tit_2:11-14, 3:4-7" Pericope="302"/>
-<SCRIPTURE Type="gospel" Reading="Mt_3:13-17" Pericope="6"/>
-<LITURGY Type="1" Cmd="dow != 0 &amp;&amp; dow != 1" Comment="St John's EXCEPT Sunday or Monday"/>
-<LITURGY Type="2" Cmd="dow == 0 || dow == 1" Comment="St Basils IF Sunday or Monday"/>
-
-<SAINT Name="Sainte Théophanie de notre Seigneur" Id="163" Type="8" />
-<SAINT Name="St Romanos de Lacédémone (Sparte)" Id="" Type="0" />
-<SAINT Name="St Théophane le reclus, Evêque de Tambov et Vladimir" Id="" Type="0" />
-<SAINT Name="St Melaine, Illuminateur de Rennes" Id="" Type="0" />
-
+<DAY><SAINT SId="163" CId="163"/>
+<SAINT SId="01060097" CId="01060097"/>
+<SAINT SId="01060197" CId="01060197"/>
+<SAINT SId="01060297" CId="01060297"/>
 </DAY>

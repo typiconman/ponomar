@@ -1,14 +1,11 @@
-<DAY>
-
-<SAINT Name="St Pacôme le Grand" Id="1070" Type="2" />
-<SAINT Name="St Achille, Evêque de Larissa" Id="1074" Type="0" />
-<SAINT Name="St Barbaros" Id="" Type="0" />
-<SAINT Name="St André l'Ermite" Id="" Type="0" />
-<SAINT Name="St Panigyrios le Thaumaturge à Chypre" Id="" Type="0" />
-<SAINT Name="St Isaie des Grottes de Kiev" Id="1108" Type="0" />
-<SAINT Name="St Euphrosynus de Pskov" Id="747" Type="0" />
-<SAINT Name="St Dimitri de Moscou" Id="605" Type="3" />
-<SAINT Name="St Isaie, Evêque de Rostov" Id="" Type="3" />
-<SAINT Name="Sts Martyrs cassius, Victorin, Maxime en Auvergne" Id="" Type="0" />
-
+<DAY><SAINT SId="1070" CId="1070"/>
+<SAINT SId="1074" CId="1074"/>
+<SAINT SId="05150097" CId="05150097"/>
+<SAINT SId="05150197" CId="05150197"/>
+<SAINT SId="05150297" CId="05150297"/>
+<SAINT SId="1108" CId="1108"/>
+<SAINT SId="747" CId="747"/>
+<SAINT SId="605" CId="605"/>
+<SAINT SId="051500" CId="051500"/>
+<SAINT SId="05150497" CId="05150497"/>
 </DAY>

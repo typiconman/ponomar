@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="Sts Cosme et Damien, Anargyres et Thaumaturges" Id="1294" Type="2" />
-<SAINT Name="Stes Cyrienne et Julienne" Id="2470" Type="0" />
-<SAINT Name="Sts Césaire, Dacius, Sabinien, Agrippa, Sabas, Adrien et Thomas" Id="" Type="0" />
-<SAINT Name="Sts Jean et Jacques le Zélote de Perse" Id="2574" Type="0" />
-<SAINT Name="Sts Jacques, Jacques et Denys" Id="" Type="0" />
-<SAINT Name="St David d'Eubée" Id="" Type="0" />
-<SAINT Name="Ste Hélène de Sinope" Id="" Type="0" />
-<SAINT Name="St Austremoine, 1er Evêque de Clermont" Id="" Type="0" />
-
+<DAY><SAINT SId="1294" CId="1294"/>
+<SAINT SId="2470" CId="2470"/>
+<SAINT SId="11010000" CId="11010000"/>
+<SAINT SId="2574" CId="2574"/>
+<SAINT SId="11010100" CId="11010100"/>
+<SAINT SId="11010200" CId="11010200"/>
+<SAINT SId="11010300" CId="11010300"/>
+<SAINT SId="11010497" CId="11010497"/>
 </DAY>

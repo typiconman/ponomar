@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="St Prophète Elisée" Id="764" Type="1" />
-<SAINT Name="St Méthode le Confesseur, Patriarche de Constantinople" Id="1301" Type="1" />
-<SAINT Name="St Cyrille, Evêque de Gortyne" Id="" Type="0" />
-<SAINT Name="St Niphon l'Athonite" Id="" Type="0" />
-<SAINT Name="Ste Julitte" Id="" Type="0" />
-<SAINT Name="St Mstislav-Georges, Prince de Smolensk et de Novgorod" Id="" Type="0" />
-<SAINT Name="St Elisée de Souma" Id="" Type="0" />
-<SAINT Name="Sts Martyrs Rufin et Valère de Soissons" Id="" Type="0" />
-
+<DAY><SAINT SId="76401" CId="76401"/>
+<SAINT SId="1301" CId="1301"/>
+<SAINT SId="06140097" CId="06140097"/>
+<SAINT SId="06140200" CId="06140200"/>
+<SAINT SId="06140100" CId="06140100"/>
+<SAINT SId="06140000" CId="06140000"/>
+<SAINT SId="06140497" CId="06140497"/>
+<SAINT SId="06140597" CId="06140597"/>
 </DAY>

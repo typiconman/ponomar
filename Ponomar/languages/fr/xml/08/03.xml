@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Sts Isaac, Faust et Dalmate" Id="4370" Type="1" />
-<SAINT Name="St Etienne 1er, Pape de Rome" Id="" Type="0" />
-<SAINT Name="Ste Salomé, la Myrophore" Id="" Type="0" />
-<SAINT Name="Ste Théoclite, la Thaumaturge" Id="" Type="0" />
-<SAINT Name="St Jean le Moine et St Jean le nouveau, Archevêque d'Ephèse" Id="" Type="0" />
-<SAINT Name="St jean le Confesseur, Higoumène de Patélaraïa" Id="" Type="0" />
-<SAINT Name="St Cosmas en Palestine" Id="4373" Type="0" />
-<SAINT Name="St Antoine le Romain Taumaturge et higoumène à Novgorod" Id="219" Type="3" />
-<SAINT Name="St Radjéni, Protomartyr de Géorgie" Id="4372" Type="0" />
-
+<DAY><SAINT SId="4370" CId="4370"/>
+<SAINT SId="08030097" CId="08030097"/>
+<SAINT SId="08030000" CId="08030000"/>
+<SAINT SId="08030200" CId="08030200"/>
+<SAINT SId="08030397" CId="08030397"/>
+<SAINT SId="08030100" CId="08030100"/>
+<SAINT SId="4373" CId="4373"/>
+<SAINT SId="21901" CId="21901"/>
+<SAINT SId="4372" CId="4372"/>
 </DAY>

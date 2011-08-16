@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="St Hesichius le Palatin" Id="" Type="0" />
-<SAINT Name="St Théodote, Evêque de Kyrenia en Chypre" Id="544" Type="1" />
-<SAINT Name="St Quintus le Thaumaturge" Id="" Type="0" />
-<SAINT Name="Sts Nestor et Tribimios" Id="" Type="0" />
-<SAINT Name="Sts Troadios et ses compagnons" Id="" Type="0" />
-<SAINT Name="Ste Euthalie" Id="545" Type="0" />
-<SAINT Name="St Arsène, Evêque de Tver" Id="546" Type="3" />
-<SAINT Name="Sts Sabas et Barsanuphe de Tver" Id="" Type="0" />
-<SAINT Name="Sts Sabbatius et Euphrosynus de Tver" Id="" Type="0" />
-<SAINT Name="St Chad, Evêque de Lichfield" Id="" Type="0" />
-<SAINT Name="St Nicolas Planas (Papa Planas)" Id="" Type="0" />
-
+<DAY><SAINT SId="03020097" CId="03020097"/>
+<SAINT SId="544" CId="544"/>
+<SAINT SId="03020197" CId="03020197"/>
+<SAINT SId="03020297" CId="03020297"/>
+<SAINT SId="030200" CId="030200"/>
+<SAINT SId="54501" CId="54501"/>
+<SAINT SId="546" CId="546"/>
+<SAINT SId="03020497" CId="03020497"/>
+<SAINT SId="03020597" CId="03020597"/>
+<SAINT SId="030201" CId="030201"/>
+<SAINT SId="03020797" CId="03020797"/>
 </DAY>

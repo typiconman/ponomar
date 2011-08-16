@@ -1,14 +1,9 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Heb_9:1-7" Pericope="320" Note="for the Theotokos"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54" Note="for the Theotokos"/>
-
-<SAINT Name="Déposition de la précieuse Ceinture de la Très Sainte Mère de Dieu" Id="4557" Type="3" />
-<SAINT Name="Sts Martyrs André, Héracléios, Fauste et Ménas" Id="" Type="0" />
-<SAINT Name="St Martyr Philéortos" Id="" Type="0" />
-<SAINT Name="St Martyr Diadoque" Id="" Type="0" />
-<SAINT Name="7 Stes Vierges Martyres de Gaza" Id="" Type="0" />
-<SAINT Name="Sts 366 Martyrs de Nicomédie" Id="" Type="0" />
-<SAINT Name="Sts 4 Martyrs de Pergé en Pamphylie" Id="" Type="0" />
-<SAINT Name="St Aidan, fondateur du Monastère de Lindisfarne" Id="" Type="0" />
-
+<DAY><SAINT SId="4557" CId="4557"/>
+<SAINT SId="08310097" CId="08310097"/>
+<SAINT SId="08310197" CId="08310197"/>
+<SAINT SId="08310297" CId="08310297"/>
+<SAINT SId="08310200" CId="08310200"/>
+<SAINT SId="08310300" CId="08310300"/>
+<SAINT SId="08310597" CId="08310597"/>
+<SAINT SId="08310000" CId="08310000"/>
 </DAY>

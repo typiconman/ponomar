@@ -1,14 +1,10 @@
-<DAY>
-<SAINT Name="3" Cmd="dow == 0" />
-<SAINT Name="10" Cmd="dow == 6" />
-
-<SAINT Name="Sts Hermyle et Stratonique" Id="799" Type="1" />
-<SAINT Name="St Jacques, Evêque de Nisibe" Id="212" Type="0" />
-<SAINT Name="St Athanase" Id="" Type="0" />
-<SAINT Name="Sts Pachôme et Papyrin" Id="" Type="0" />
-<SAINT Name="St Maxime le Kavsokalyvite" Id="" Type="0" />
-<SAINT Name="St Irénarque de Rostov" Id="210" Type="0" />
-<SAINT Name="St Eléazar d'Anzersk" Id="211" Type="0" />
-<SAINT Name="St Hilaire, Evêque de Poitiers" Id="" Type="0" />
-
+<DAY><SAINT SId="163" CId="09017"/>
+<SAINT SId="799" CId="799"/>
+<SAINT SId="212" CId="212"/>
+<SAINT SId="01130097" CId="01130097"/>
+<SAINT SId="01130197" CId="01130197"/>
+<SAINT SId="011301" CId="011301"/>
+<SAINT SId="210" CId="210"/>
+<SAINT SId="211" CId="211"/>
+<SAINT SId="01130397" CId="01130397"/>
 </DAY>

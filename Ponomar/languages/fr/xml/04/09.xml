@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="St Eupsyque de Césarée" Id="818" Type="1" />
-<SAINT Name="Sts Badème l'Archimandrite et ses 7 disciples" Id="820" Type="0" />
-<SAINT Name="Sts Heliodore Evêque, Dausan, Marjab et leurs 270 compagnons à Bet-Zabde en Perse" Id="819" Type="0" />
-<SAINT Name="Sts Raphaél, Nicolas et Irène de Mytilène" Id="" Type="0" />
-<SAINT Name="St Marcel, Evêque de Die" Id="" Type="0" />
-
+<DAY><SAINT SId="818" CId="818"/>
+<SAINT SId="820" CId="820"/>
+<SAINT SId="819" CId="819"/>
+<SAINT SId="040902" CId="040902"/>
+<SAINT SId="04090197" CId="04090197"/>
 </DAY>

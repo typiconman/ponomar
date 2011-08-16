@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="St Théodore le Conscrit (Tiron)" Id="2203" Type="2" />
-<SAINT Name="Ste Mariamne, soeur du St Apôtre Philippe" Id="459" Type="0" />
-<SAINT Name="St Théostéricte" Id="" Type="0" />
-<SAINT Name="St Ménas d'Alexandrie (invention de ses Reliques)" Id="" Type="0" />
-<SAINT Name="Sts Marcien et Pulchérie" Id="" Type="0" />
-<SAINT Name="St Auxibe, Evêque de Soles en Chypre" Id="" Type="0" />
-<SAINT Name="St Théodore de Byzance" Id="" Type="0" />
-<SAINT Name="St Michel Mauropeidis d'Andrinopole" Id="" Type="0" />
-<SAINT Name="St Thédore le Silencieux des Grottes de Kiev" Id="458" Type="0" />
-<SAINT Name="Sts Théodose de Tirnovo et son disciple Romain" Id="" Type="0" />
-<SAINT Name="St Hermogène, Patriarche de Moscou" Id="804" Type="1" />
-
+<DAY><SAINT SId="2203" CId="2203"/>
+<SAINT SId="459" CId="459"/>
+<SAINT SId="02170097" CId="02170097"/>
+<SAINT SId="02170197" CId="02170197"/>
+<SAINT SId="02170297" CId="02170297"/>
+<SAINT SId="02170397" CId="02170397"/>
+<SAINT SId="02170497" CId="02170497"/>
+<SAINT SId="02170597" CId="02170597"/>
+<SAINT SId="458" CId="458"/>
+<SAINT SId="02170697" CId="02170697"/>
+<SAINT SId="804" CId="804"/>
 </DAY>

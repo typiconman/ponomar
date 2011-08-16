@@ -1,11 +1,7 @@
-<DAY>
-
-<SAINT Name="St Jean le Russe" Id="1010" Type="0" />
-<SAINT Name="St Hellade, Hiéromartyr" Id="" Type="0" />
-<SAINT Name="St Théraponte de Sardes" Id="1148" Type="1" />
-<SAINT Name="Sts Alypios, Eubiote, Paul et Julienne" Id="" Type="0" />
-<SAINT Name="Sts Cyprien, Photius et Jonas, Métropolite de Kiev (translation des reliques)" Id="1209" Type="0" />
-<SAINT Name="St Théraponte du Lac Blanc" Id="2275" Type="0" />
-<SAINT Name="St Nil de Stolbensk (translation des reliques)" Id="1635" Type="3" />
-
+<DAY><SAINT SId="101001" CId="101001"/>
+<SAINT SId="05270097" CId="05270097"/>
+<SAINT SId="1148" CId="1148"/>
+<SAINT SId="05270197" CId="05270197"/>
+<SAINT SId="1209" CId="1209"/>
+<SAINT SId="2275" CId="2275"/>
 </DAY>

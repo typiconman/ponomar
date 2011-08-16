@@ -1,12 +1,10 @@
-<DAY>
-
-<SAINT Name="St Euplus le Diacre,Grand-Martyr" Id="4417" Type="1" />
-<SAINT Name="St Néophyte, Zénon, Gaïus, Marc, Macaire et Gaïen" Id="4420" Type="0" />
-<SAINT Name="St Passarion de Palestine" Id="" Type="0" />
-<SAINT Name="St Niphon, Patriarche de Constantinople" Id="" Type="0" />
-<SAINT Name="Commémoration de l'invention l'Icône non faite de main d'homme de notre Seigneur" Id="" Type="0" />
-<SAINT Name="Sts Anastase et Dimitrios de Lesbos" Id="" Type="0" />
-<SAINT Name="Sts Basile et Théodore des Grottes de Kiev" Id="2196" Type="0" />
-<SAINT Name="St Théodore (ex-prince d'Ostrog) des grottes de Kiev" Id="2181" Type="0" />
-
+<DAY><SAINT SId="4386" CId="438611"/>
+<SAINT SId="4417" CId="4417"/>
+<SAINT SId="4420" CId="4420"/>
+<SAINT SId="08110000" CId="08110000"/>
+<SAINT SId="08110100" CId="08110100"/>
+<SAINT SId="08110297" CId="08110297"/>
+<SAINT SId="08110200" CId="08110200"/>
+<SAINT SId="2196" CId="2196"/>
+<SAINT SId="2181" CId="2181"/>
 </DAY>

@@ -1,6 +1,3 @@
-<DAY>
-
-<SAINT Name="St Cyrille, Archevêque de Jérusalem" Id="665" Type="1" />
-<SAINT Name="Sts Trophime et Eucarpion à Nicomédie" Id="" Type="0" />
-
+<DAY><SAINT SId="665" CId="665"/>
+<SAINT SId="031801" CId="031801"/>
 </DAY>

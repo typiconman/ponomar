@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="St Théophane le Confesseur, Higoumène du Monastère du Grand-Champ au Mont Sigriane" Id="621" Type="1" />
-<SAINT Name="St Grégoire 1er, Pape de Rome, dit le Dialogue (en Occident, Grégoire le Grand)" Id="536" Type="0" />
-<SAINT Name="St Syméon, le Nouveau Théologien" Id="626" Type="0" />
-<SAINT Name="St Juste Phinées" Id="623" Type="0" />
-<SAINT Name="St Nicodème de Mammola en Calabre" Id="" Type="0" />
-<SAINT Name="St Paul, Evêque de Léon" Id="" Type="0" />
-
+<DAY><SAINT SId="621" CId="621"/>
+<SAINT SId="536" CId="536"/>
+<SAINT SId="626" CId="626"/>
+<SAINT SId="623" CId="623"/>
+<SAINT SId="031203" CId="031203"/>
+<SAINT SId="03120197" CId="03120197"/>
 </DAY>

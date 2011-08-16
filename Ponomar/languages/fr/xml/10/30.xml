@@ -1,20 +1,17 @@
-<DAY>
-
-<SAINT Name="Sts Zénobe et Zénobie sa soeur" Id="4614" Type="1" />
-<SAINT Name="St Marcien, Evêque de Syracuse" Id="1484" Type="0" />
-<SAINT Name="Sts Alexandre, Cronion, Julien, Macaire et leurs 13 compagnons" Id="" Type="0" />
-<SAINT Name="Ste Eutropie" Id="4617" Type="0" />
-<SAINT Name="St Cléopas, Apôtre" Id="" Type="0" />
-<SAINT Name="St Joseph 1er, Patriarxhe de Constantinople" Id="" Type="0" />
-<SAINT Name="Sts Astérios, claude, Néon et néonille leur soeur" Id="" Type="0" />
-<SAINT Name="Sts Tertios, Marc, Justus et Artémas" Id="4615" Type="0" />
-<SAINT Name="9 Sts Martyrs" Id="" Type="0" />
-<SAINT Name="St Manuel" Id="" Type="0" />
-<SAINT Name="St Dométios" Id="" Type="0" />
-<SAINT Name="Le Saint bourreau resté anonyme, qui après avoir reconnu le Christ, fut jeté dans un sombre cachot et y mourut" Id="" Type="0" />
-<SAINT Name="St Herménegild" Id="" Type="0" />
-<SAINT Name="Ste Hélène d'Anjou, Reine de Serbie" Id="" Type="0" />
-<SAINT Name="St Roi Miloutine de Serbie" Id="4618" Type="0" />
-<SAINT Name="St Dragoutine, Roi de Serbie, nommé Théoctiste dans le monachisme" Id="" Type="0" />
-
+<DAY><SAINT SId="4614" CId="4614"/>
+<SAINT SId="1484" CId="1484"/>
+<SAINT SId="10300000" CId="10300000"/>
+<SAINT SId="4617" CId="4617"/>
+<SAINT SId="10300100" CId="10300100"/>
+<SAINT SId="10300200" CId="10300200"/>
+<SAINT SId="10300397" CId="10300397"/>
+<SAINT SId="4615" CId="4615"/>
+<SAINT SId="10300497" CId="10300497"/>
+<SAINT SId="10300597" CId="10300597"/>
+<SAINT SId="10300697" CId="10300697"/>
+<SAINT SId="10300797" CId="10300797"/>
+<SAINT SId="10300897" CId="10300897"/>
+<SAINT SId="10300997" CId="10300997"/>
+<SAINT SId="4618" CId="4618"/>
+<SAINT SId="4618" CId="4618"/>
 </DAY>

@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="St Apôtre Barthélemy (translation de ses Reliques)" Id="9365" Type="2" />
-<SAINT Name="St Apôtre Tite, Evêque de Gortyne en Crète" Id="2110" Type="2" />
-<SAINT Name="Sts Jean II et Epiphane, Patriarches de Constantinople" Id="" Type="0" />
-<SAINT Name="St Ménas, Patriarche de Constantinople" Id="4519" Type="0" />
-<SAINT Name="St Jean de Carpathos" Id="" Type="0" />
-<SAINT Name="Sts Euloge Evêque d'Edesse et Protogène Evêque de Carrhée" Id="" Type="0" />
-<SAINT Name="St Martyr Sabbas de Bénéthalon" Id="" Type="0" />
-<SAINT Name="Synaxe des Hiérarques de Crète André, Cyrille et Eumène" Id="" Type="0" />
-<SAINT Name="Ste Alvère à Agen" Id="" Type="0" />
-<SAINT Name="St Arédius de Limoges" Id="" Type="0" />
-<SAINT Name="St Genès d'Arles" Id="" Type="0" />
-
+<DAY><SAINT SId="09365" CId="09365"/>
+<SAINT SId="2110" CId="2110"/>
+<SAINT SId="08250097" CId="08250097"/>
+<SAINT SId="4519" CId="4519"/>
+<SAINT SId="08250197" CId="08250197"/>
+<SAINT SId="08250297" CId="08250297"/>
+<SAINT SId="08250397" CId="08250397"/>
+<SAINT SId="08250100" CId="08250100"/>
+<SAINT SId="08250597" CId="08250597"/>
+<SAINT SId="08250000" CId="08250000"/>
+<SAINT SId="08250797" CId="08250797"/>
 </DAY>

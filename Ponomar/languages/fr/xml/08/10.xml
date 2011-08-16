@@ -1,8 +1,6 @@
-<DAY>
-
-<SAINT Name="St Laurent, Archidiacre, St Sixte, Evêque de Rome et St Hippolyte" Id="4414" Type="1" />
-<SAINT Name="St Héron le Philosophe" Id="" Type="0" />
-<SAINT Name="Sts 6 Martyrs de Lybie" Id="" Type="0" />
-<SAINT Name="St Laurent, Fol en Christ à Kalouga" Id="1319" Type="0" />
-
+<DAY><SAINT SId="4386" CId="438611"/>
+<SAINT SId="4414" CId="4414"/>
+<SAINT SId="08100097" CId="08100097"/>
+<SAINT SId="08100000" CId="08100000"/>
+<SAINT SId="1319" CId="1319"/>
 </DAY>

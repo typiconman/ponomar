@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="Sts Silas, Sylvain, Epénète, Crescens et Andronique, Apôtres" Id="4349" Type="1" />
-<SAINT Name="Ste Julitte de Césarée" Id="" Type="0" />
-<SAINT Name="Sts Paul, Evêque et Jean, Prêtre" Id="" Type="0" />
-<SAINT Name="St Germain de Solovski (transfert des Reliques)" Id="512" Type="0" />
-<SAINT Name="Ste Angéline, proncesse de Serbie" Id="" Type="0" />
-
+<DAY><SAINT SId="4349" CId="4349"/>
+<SAINT SId="07300097" CId="07300097"/>
+<SAINT SId="07300197" CId="07300197"/>
+<SAINT SId="512" CId="512"/>
+<SAINT SId="07300000" CId="07300000"/>
 </DAY>

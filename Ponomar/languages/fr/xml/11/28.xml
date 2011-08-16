@@ -1,8 +1,5 @@
-<DAY>
-
-<SAINT Name="St Etienne le Jeune et ses compagnons" Id="3241" Type="2" />
-<SAINT Name="Sts Irénarque et ses compagnons à Sébaste" Id="3242" Type="1" />
-<SAINT Name="Sts Timothée, Théodore, Evêques et leurs compagnons" Id="" Type="0" />
-<SAINT Name="St Thédore, Archevêque de Rostov" Id="2198" Type="0" />
-
+<DAY><SAINT SId="3241" CId="3241"/>
+<SAINT SId="3242" CId="3242"/>
+<SAINT SId="11280000" CId="11280000"/>
+<SAINT SId="2198" CId="2198"/>
 </DAY>

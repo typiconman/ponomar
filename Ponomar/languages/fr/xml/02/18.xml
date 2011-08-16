@@ -1,11 +1,7 @@
-<DAY>
-<FAST Num="-1" />
-
-<SAINT Name="St Léon 1er, Pape de Rome" Id="1333" Type="1" />
-<SAINT Name="Sts Léon et Parégoire" Id="" Type="0" />
-<SAINT Name="St Agapet, Evêque de Sinaos en Phrygie" Id="467" Type="0" />
-<SAINT Name="Sts Victorin, Dorothée, Théodule et Agrippa" Id="" Type="0" />
-<SAINT Name="St Pioulios" Id="" Type="0" />
-<SAINT Name="St Cosmas, moine de Yakhrom" Id="466" Type="0" />
-
+<DAY><SAINT SId="1333" CId="1333"/>
+<SAINT SId="02180097" CId="02180097"/>
+<SAINT SId="467" CId="467"/>
+<SAINT SId="02180197" CId="02180197"/>
+<SAINT SId="02180297" CId="02180297"/>
+<SAINT SId="466" CId="466"/>
 </DAY>

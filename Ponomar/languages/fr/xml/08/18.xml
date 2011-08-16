@@ -1,14 +1,12 @@
-<DAY>
-
-<SAINT Name="Sts Flore et Laure et leurs compagnons" Id="2315" Type="1" />
-<SAINT Name="Sts Hermès, Sérapion et Polyen de Rome" Id="4467" Type="0" />
-<SAINT Name="Ste Julienne" Id="" Type="0" />
-<SAINT Name="St Léon" Id="" Type="0" />
-<SAINT Name="St Macaire de Constantinople" Id="759" Type="0" />
-<SAINT Name="Sts Georges 1er, Jean V Patriarche de Constantinople" Id="4469" Type="0" />
-<SAINT Name="Sts Barnabé et Sophrone, fondateur du monastère de la Mère de Dieu de Souméla, et St Christophe qui le restaurra" Id="" Type="0" />
-<SAINT Name="St Sophrone de la Skite de Ste Anne au Mont Athos" Id="" Type="0" />
-<SAINT Name="St Arsène le Nouveau de Paros" Id="" Type="0" />
-<SAINT Name="St Père Jean de Rila" Id="1011" Type="0" />
-
+<DAY><SAINT SId="4444" CId="444412"/>
+<SAINT SId="2315" CId="2315"/>
+<SAINT SId="4467" CId="4467"/>
+<SAINT SId="08180400" CId="08180400"/>
+<SAINT SId="08180500" CId="08180500"/>
+<SAINT SId="759" CId="759"/>
+<SAINT SId="4469" CId="4469"/>
+<SAINT SId="08180000" CId="08180000"/>
+<SAINT SId="08180200" CId="08180200"/>
+<SAINT SId="08180300" CId="08180300"/>
+<SAINT SId="101101" CId="101101"/>
 </DAY>

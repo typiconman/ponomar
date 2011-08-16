@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="St Phocas le Thaumaturge" Id="2321" Type="1" />
-<SAINT Name="St Phocas le Jardinier" Id="1582" Type="0" />
-<SAINT Name="Sts Isaac, Martin et Nicolas" Id="" Type="0" />
-<SAINT Name="St Cosmas du Monastère de Zographou (Athos)" Id="" Type="0" />
-<SAINT Name="Sts 26 moines et Martyrs du Monastère de Zographou (Athos)" Id="" Type="0" />
-<SAINT Name="St Jonas, Higoumène de Iachezersk" Id="1584" Type="0" />
-<SAINT Name="St Macaire, Higoumène de Jabin" Id="1402" Type="0" />
-<SAINT Name="St Théophane l' Hésichaste des Grottes de Kiev" Id="" Type="0" />
-<SAINT Name="St Sophrone, Evêque de Vratchane, en Bulgarie" Id="" Type="0" />
-
+<DAY><SAINT SId="232101" CId="232101"/>
+<SAINT SId="1582" CId="1582"/>
+<SAINT SId="09220097" CId="09220097"/>
+<SAINT SId="09220100" CId="09220100"/>
+<SAINT SId="09220000" CId="09220000"/>
+<SAINT SId="1584" CId="1584"/>
+<SAINT SId="1402" CId="1402"/>
+<SAINT SId="09220300" CId="09220300"/>
+<SAINT SId="09220497" CId="09220497"/>
 </DAY>

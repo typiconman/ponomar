@@ -1,10 +1,5 @@
-<DAY>
-<SAINT Name="4" Cmd="dow == 0" />
-<SAINT Name="11" Cmd="dow == 6" />
-
-<SAINT Name="Apresfete de l'Exaltation" Id="" Type="0"/>
-<SAINT Name="Sts Trophime, Sabbatios et Dorymède" Id="1564" Type="1" />
-<SAINT Name="St Janvier, Evêque de Bénévent et ses compagnons" Id="" Type="0" />
-<SAINT Name="St Théodore, Prince de Smolensk, Yaroslav et ses enfants David et Constantin" Id="2197" Type="3" />
-
+<DAY><SAINT SId="1529" CId="152912"/>
+<SAINT SId="156401" CId="156401"/>
+<SAINT SId="09190100" CId="09190100"/>
+<SAINT SId="219701" CId="219701"/>
 </DAY>

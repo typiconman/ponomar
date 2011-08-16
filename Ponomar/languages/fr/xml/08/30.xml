@@ -1,21 +1,12 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Isa_66:10-14" />
-<SCRIPTURE Type="vespers" Reading="Isa_61:1-14, 62:1-5" />
-<SCRIPTURE Type="vespers" Reading="Isa_60:1-16" />
-<SCRIPTURE Type="matins" Reading="Mt_11:27-30" Pericope="43" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for St Alexander Nevsky"/>
-<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Alexander Nevsky" />
-
-<SAINT Name="Sts Alexandre, Jean et Paul le Jeune, Patriarches de Constantinople" Id="4546" Type="1" />
-<SAINT Name="Six Martyrs de Mélitène" Id="" Type="0" />
-<SAINT Name="Seize Martyrs de Thèbes" Id="" Type="0" />
-<SAINT Name="St Sarmatas du désert d'Egypte" Id="" Type="0" />
-<SAINT Name="St Christophore de Palestine" Id="4550" Type="0" />
-<SAINT Name="St Fantin le Thaumaturge" Id="4551" Type="0" />
-<SAINT Name="Ste Bryène de Nisibe" Id="" Type="0" />
-<SAINT Name="St Eulalios, Evêque de Lapithos à Chypre" Id="" Type="0" />
-<SAINT Name="St Alexandre de Svir" Id="125" Type="3" />
-<SAINT Name="St Alexandre Nevsky (translation des Reliques)" Id="114" Type="4" />
-<SAINT Name="Synaxe des Illuminateurs de l'Eglise Serbe" Id="4552" Type="0" />
-
+<DAY><SAINT SId="4546" CId="4546"/>
+<SAINT SId="08302000" CId="08302000"/>
+<SAINT SId="08301000" CId="08301000"/>
+<SAINT SId="08303000" CId="08303000"/>
+<SAINT SId="4550" CId="4550"/>
+<SAINT SId="4551" CId="4551"/>
+<SAINT SId="08304000" CId="08304000"/>
+<SAINT SId="08300000" CId="08300000"/>
+<SAINT SId="125" CId="125"/>
+<SAINT SId="114" CId="114"/>
+<SAINT SId="4552" CId="4552"/>
 </DAY>

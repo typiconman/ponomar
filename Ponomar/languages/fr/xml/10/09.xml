@@ -1,16 +1,10 @@
-<DAY>
-<SAINT Name="14" Cmd="dow == 0" />
-<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_4:9-16" Pericope="131" Note="for the Apostle"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:16-21" Pericope="51" Note="for the Apostle"/>
-
-<SAINT Name="St Apôtre Jacques, Fils d'Alphée" Id="867" Type="4" />
-<SAINT Name="St Andronique et Ste Athanasie son épouse" Id="1696" Type="1" />
-<SAINT Name="Stes Polplia (ou Publia)" Id="1699" Type="0" />
-<SAINT Name="St Pierre le Militaire" Id="" Type="0" />
-<SAINT Name="St Patriarche Abraham et st Lot son neveu" Id="1697" Type="0" />
-<SAINT Name="St Denis, 1er Evêque de Paris, Sts Rustique et Eleuthère ses compagnons" Id="" Type="0" />
-<SAINT Name="St Savin du Lavedan" Id="" Type="0" />
-<SAINT Name="St Néomartyr Jean de Prousse" Id="" Type="0" />
-
+<DAY><SAINT SId="9914" CId="9914" Cmd="dow == 0"/>
+<SAINT SId="86701" CId="86701"/>
+<SAINT SId="1696" CId="1696"/>
+<SAINT SId="1699" CId="1699"/>
+<SAINT SId="10090097" CId="10090097"/>
+<SAINT SId="1697" CId="1697"/>
+<SAINT SId="10090200" CId="10090200"/>
+<SAINT SId="10090297" CId="10090297"/>
+<SAINT SId="10090397" CId="10090397"/>
 </DAY>

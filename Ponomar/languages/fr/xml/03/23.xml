@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Sts Martyrs Nicon et ses 199 disciples" Id="694" Type="1" />
-<SAINT Name="St Dométios de Phrygie" Id="" Type="0" />
-<SAINT Name="St Luc de Mytilène" Id="" Type="0" />
-<SAINT Name="St Pachome de Nerekhta" Id="" Type="0" />
-<SAINT Name="St Basile de Mangazea" Id="378" Type="0" />
-<SAINT Name="St. Père Nicon des Grottes de Kiev" Id="1643" Type="0" />
-
+<DAY><SAINT SId="694" CId="694"/>
+<SAINT SId="032302" CId="032302"/>
+<SAINT SId="032303" CId="032303"/>
+<SAINT SId="032304" CId="032304"/>
+<SAINT SId="378" CId="378"/>
+<SAINT SId="1643" CId="1643"/>
 </DAY>

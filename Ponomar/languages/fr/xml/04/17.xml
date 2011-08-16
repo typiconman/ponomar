@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Sts Siméon Bar Sabbae, Evêque de Perse et ses compagnons" Id="873" Type="1" />
-<SAINT Name="St Adrien" Id="73" Type="0" />
-<SAINT Name="St Agapet, Pape de Rome" Id="878" Type="0" />
-<SAINT Name="St Acace, Evêque de Mélitène" Id="874" Type="1" />
-<SAINT Name="St Macaire (Notaras), Evêque de Corinthe" Id="" Type="0" />
-<SAINT Name="St Païssios le Fol en Christ des Grottes de Kiev" Id="" Type="0" />
-<SAINT Name="St. Zosime de Solovki" Id="854" Type="3" />
-
+<DAY><SAINT SId="873" CId="873"/>
+<SAINT SId="73" CId="73"/>
+<SAINT SId="878" CId="878"/>
+<SAINT SId="874" CId="874"/>
+<SAINT SId="04170097" CId="04170097"/>
+<SAINT SId="041701" CId="041701"/>
+<SAINT SId="854" CId="854"/>
 </DAY>

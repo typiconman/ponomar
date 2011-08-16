@@ -1,17 +1,14 @@
-<DAY>
-
-<SAINT Name="Translation des Reliques de St Thédore le Stratilate" Id="2201" Type="2" />
-<SAINT Name="Sts Nicandre et Marcien" Id="" Type="0" />
-<SAINT Name="Ste Calliope" Id="" Type="0" />
-<SAINT Name="St Naucrace" Id="" Type="0" />
-<SAINT Name="St Paul du monastère de Kaioumas" Id="" Type="0" />
-<SAINT Name="St Athre de Nitrie" Id="" Type="0" />
-<SAINT Name="Ste Mélania" Id="" Type="0" />
-<SAINT Name="St Nicandre" Id="" Type="0" />
-<SAINT Name="St Marc" Id="" Type="0" />
-<SAINT Name="St Théophane, Néomartyr" Id="" Type="0" />
-<SAINT Name="St Théodore, Evêque de Rostov" Id="" Type="0" />
-<SAINT Name="St Médard, Evêque de Noyons" Id="060807" Type="0" />
-<SAINT Name="St Martyr Maxime d'Aix en Provence" Id="" Type="0" />
-
+<DAY><SAINT SId="2201" CId="220101"/>
+<SAINT SId="06080097" CId="06080097"/>
+<SAINT SId="06080197" CId="06080197"/>
+<SAINT SId="06080300" CId="06080300"/>
+<SAINT SId="06080200" CId="06080200"/>
+<SAINT SId="06080100" CId="06080100"/>
+<SAINT SId="06080500" CId="06080500"/>
+<SAINT SId="06080697" CId="06080697"/>
+<SAINT SId="06080797" CId="06080797"/>
+<SAINT SId="06080400" CId="06080400"/>
+<SAINT SId="06080000" CId="06080000"/>
+<SAINT SId="060807" CId="060807"/>
+<SAINT SId="06081097" CId="06081097"/>
 </DAY>

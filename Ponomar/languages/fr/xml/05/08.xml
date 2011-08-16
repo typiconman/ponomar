@@ -1,21 +1,12 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="I Jn_3:21-4:6" Note="for the Apostle"/>
-<SCRIPTURE Type="vespers" Reading="I Jn_4:11-16" Note="for the Apostle"/>
-<SCRIPTURE Type="vespers" Reading="I Jn_4:20-5:5" Note="for the Apostle"/>
-<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0" Note="for the Apostle"/>
-<SCRIPTURE Type="apostol" Reading="I Jn_1:1-7" Pericope="68" Note="for the Apostle"/>
-<SCRIPTURE Type="gospel" Reading="Jn_19:25-27, 21:24-25" Pericope="61" Note="for the Apostle"/>
-
-<SAINT Name="Synaxe du St Apôtre et Evangéliste Jean le Théologien" Id="962" Type="5" />
-<SAINT Name="St Arsène le Grand" Id="9262" Type="1" />
-<SAINT Name="St Miles le Mélode" Id="" Type="0" />
-<SAINT Name="St Nicomas" Id="" Type="0" />
-<SAINT Name="St Taraise de Lycaonie le thaumaturge" Id="" Type="0" />
-<SAINT Name="St Arsène, fondateur du monastère de la Dormition de la Mère de Dieu à Barnakova" Id="" Type="0" />
-<SAINT Name="St Arsène le Laborieux des Grottes de Kiev" Id="4390" Type="0" />
-<SAINT Name="Guérison miraculeuse de Stéphane l'aveugle opérée par la Mère de Dieu à Cassiope" Id="" Type="0" />
-<SAINT Name="Dormition de Joseph d'Optina" Id="" Type="0" />
-<SAINT Name="St Arsène de Novgorod" Id="" Type="0" />
-<SAINT Name="St Godon, Evêque de Metz" Id="" Type="0" />
-
+<DAY><SAINT SId="962" CId="962"/>
+<SAINT SId="09262" CId="09262"/>
+<SAINT SId="05080097" CId="05080097"/>
+<SAINT SId="05080197" CId="05080197"/>
+<SAINT SId="05080297" CId="05080297"/>
+<SAINT SId="050802" CId="050802"/>
+<SAINT SId="4390" CId="4390"/>
+<SAINT SId="050803" CId="050803"/>
+<SAINT SId="05080597" CId="05080597"/>
+<SAINT SId="05080697" CId="05080697"/>
+<SAINT SId="05080797" CId="05080797"/>
 </DAY>

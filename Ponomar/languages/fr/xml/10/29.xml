@@ -1,16 +1,13 @@
-<DAY>
-
-<SAINT Name="Ste Anastasie la Romaine" Id="2382" Type="1" />
-<SAINT Name="Sts Abramios et Marie sa Nièce" Id="4612" Type="1" />
-<SAINT Name="Sts Cyrille, Ménas et Ménaios" Id="" Type="0" />
-<SAINT Name="St Sabas le Stratylate" Id="" Type="0" />
-<SAINT Name="Ste Anne, qui se fit appeler Euphimien" Id="2391" Type="0" />
-<SAINT Name="Ste Mélitène" Id="" Type="0" />
-<SAINT Name="St Athanase de Sparte" Id="" Type="0" />
-<SAINT Name="St Néomartyr Timothée, moine du Monastère d'Esphigménou (Athos)" Id="" Type="0" />
-<SAINT Name="St Abramios de Rostov" Id="4610" Type="3" />
-<SAINT Name="St Abramios le reclus des Grottes de Kiev" Id="" Type="0" />
-<SAINT Name="St Nestor l'illetré des Grottes de Kiev" Id="" Type="0" />
-<SAINT Name="St Jean Kotchourov" Id="" Type="0" />
-
+<DAY><SAINT SId="2382" CId="2382"/>
+<SAINT SId="4612" CId="4612"/>
+<SAINT SId="10290097" CId="10290097"/>
+<SAINT SId="10290197" CId="10290197"/>
+<SAINT SId="2391" CId="2391"/>
+<SAINT SId="10290300" CId="10290300"/>
+<SAINT SId="10290100" CId="10290100"/>
+<SAINT SId="10290200" CId="10290200"/>
+<SAINT SId="4610" CId="4610"/>
+<SAINT SId="10290000" CId="10290000"/>
+<SAINT SId="10290697" CId="10290697"/>
+<SAINT SId="10290797" CId="10290797"/>
 </DAY>

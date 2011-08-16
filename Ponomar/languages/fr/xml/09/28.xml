@@ -1,19 +1,10 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Wisd_5:15-6:3"/>
-<SCRIPTURE Type="vespers" Reading="Wisd_3:1-9"/>
-<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15"/>
-<SCRIPTURE Type="matins" Reading="Mt_4:25-5:12" Pericope="10" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="II Cor_4:6-15" Pericope="176" Note="for St Chariton"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Chariton"/>
-
-<SAINT Name="St Chariton" Id="1619" Type="4" />
-<SAINT Name="St Prophète Baruch" Id="364" Type="0" />
-<SAINT Name="Sts Marc le Pasteur, Alexandre, Alphée, Zosime, Nicon, Néon, Héliodore et autres Vierges et enfants martyrisées à Antioche de Pisidie" Id="1623" Type="0" />
-<SAINT Name="Sts Calmlinique et Eustate le Romain" Id="" Type="0" />
-<SAINT Name="St Alexandre et ses 30 compagnons" Id="" Type="0" />
-<SAINT Name="St Hérodion, Fondateur du Monastère d'Iloezersk" Id="1621" Type="0" />
-<SAINT Name="St Chariton de Sianjemsk" Id="" Type="0" />
-<SAINT Name="St Vinceslas, Roi des Tchèques" Id="441" Type="0" />
-<SAINT Name="St Fauste, Evêque de Riez et 3ème Higoumène de Lérins" Id="" Type="0" />
-
+<DAY><SAINT SId="1619" CId="1619"/>
+<SAINT SId="364" CId="364"/>
+<SAINT SId="1623" CId="1623"/>
+<SAINT SId="09280097" CId="09280097"/>
+<SAINT SId="1623" CId="1623"/>
+<SAINT SId="162101" CId="162101"/>
+<SAINT SId="09280000" CId="09280000"/>
+<SAINT SId="44101" CId="44101"/>
+<SAINT SId="09280397" CId="09280397"/>
 </DAY>

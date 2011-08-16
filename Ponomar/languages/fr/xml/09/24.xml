@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Ste Thecle, Protomartyre et égale aux Apôtres" Id="1594" Type="2" />
-<SAINT Name="St Père Coprios" Id="1634" Type="0" />
-<SAINT Name="St Abramios, 1er Higoumène du Monastère de la Ste Transfiguration à Pskov" Id="" Type="0" />
-<SAINT Name="Sts Simon (Etienne), David et Vladislav, moines en Serbie" Id="1598" Type="0" />
-<SAINT Name="St Nicandre à Pskov" Id="1595" Type="0" />
-<SAINT Name="St Galaction à Vologda" Id="460" Type="0" />
-
+<DAY><SAINT SId="1594" CId="1594"/>
+<SAINT SId="1634" CId="1634"/>
+<SAINT SId="09240000" CId="09240000"/>
+<SAINT SId="1598" CId="1598"/>
+<SAINT SId="1595" CId="1595"/>
+<SAINT SId="460" CId="460"/>
 </DAY>

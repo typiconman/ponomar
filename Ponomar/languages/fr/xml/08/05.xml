@@ -1,15 +1,12 @@
-<DAY>
-
-<SAINT Name="Prefete de la Transfiguration" Id="" Type="2"/>
-<SAINT Name="St Eusigne d'Antioche" Id="4380" Type="1" />
-<SAINT Name="Sts Candide et Candidien" Id="" Type="0" />
-<SAINT Name="Ste Nonne, Mère de St Grédoire le Théologien" Id="4383" Type="0" />
-<SAINT Name="St Soleb l'Egyptien" Id="" Type="0" />
-<SAINT Name="St Fabien, Pape de Rome" Id="" Type="0" />
-<SAINT Name="St Euthyme, Patriarche de Constantinople" Id="" Type="0" />
-<SAINT Name="St Eugène d'Aitolie" Id="" Type="0" />
-<SAINT Name="St Christos de Prévéza, Néomartyr" Id="" Type="0" />
-<SAINT Name="St Jean de Chozéba" Id="1038" Type="0" />
-<SAINT Name="St Oswald, Roi de Northumbrie et Martyr" Id="" Type="0" />
-
+<DAY><SAINT SId="08050000" CId="08050000"/>
+<SAINT SId="4380" CId="4380"/>
+<SAINT SId="08050200" CId="08050200"/>
+<SAINT SId="4383" CId="4383"/>
+<SAINT SId="08050297" CId="08050297"/>
+<SAINT SId="08050100" CId="08050100"/>
+<SAINT SId="08050400" CId="08050400"/>
+<SAINT SId="08050597" CId="08050597"/>
+<SAINT SId="08050600" CId="08050600"/>
+<SAINT SId="1038" CId="1038"/>
+<SAINT SId="08050300" CId="08050300"/>
 </DAY>

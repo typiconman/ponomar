@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Sts Apôtres Andronique et Junia" Id="194" Type="1" />
-<SAINT Name="Sts Solochon, Pamphamer et Pamphylon" Id="1089" Type="0" />
-<SAINT Name="St Athanase le Nouveau, Evêque de Christianopolis" Id="" Type="0" />
-<SAINT Name="St Nicolas de Metsovo" Id="" Type="0" />
-<SAINT Name="Ste Euphosyne de Moscou (grande princesse Eudocie)" Id="2467" Type="0" />
-<SAINT Name="St Adrien (transfert des reliques), Higoumène du Monastère d'Ondroussov" Id="" Type="0" />
-<SAINT Name="Pères Nectaire et Théophane, fondateurs du Monastère de Barlaam" Id="" Type="0" />
-
+<DAY><SAINT SId="194" CId="194"/>
+<SAINT SId="1089" CId="1089"/>
+<SAINT SId="051703" CId="051703"/>
+<SAINT SId="051702" CId="051702"/>
+<SAINT SId="2467" CId="2467"/>
+<SAINT SId="051701" CId="051701"/>
+<SAINT SId="051700" CId="051700"/>
 </DAY>

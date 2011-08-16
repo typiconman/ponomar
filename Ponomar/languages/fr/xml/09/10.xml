@@ -1,17 +1,12 @@
-<DAY>
-<SAINT Name="1" Cmd="dow == 0" />
-<SAINT Name="7" Cmd="dow == 6" />
-
-<SAINT Name="Apresfete de la Nativite de la Genetrice de Dieu" Id="" Type="0"/>
-<SAINT Name="Stes Martyres Ménédore, Métrodore et Nymphodore" Id="1497" Type="1" />
-<SAINT Name="St Barypsabas" Id="" Type="0" />
-<SAINT Name="Sts Apelle, Luc et Clément, Apôtres" Id="1501" Type="0" />
-<SAINT Name="Ste Pulchérie, Impératrice" Id="1503" Type="0" />
-<SAINT Name="St Pierre le Confesseur, Métropolite de Nicée" Id="1504" Type="0" />
-<SAINT Name="St Joasaph, moine de Kubensk (Vologda)" Id="1033" Type="0" />
-<SAINT Name="St Paul, Fils de l'obéissance des Grottes de Kiev" Id="1695" Type="0" />
-<SAINT Name="St Cassien, Higoumène du Monastère du Saint Sauveur à Kubensk" Id="" Type="0" />
-<SAINT Name="St Cyrille, higoumène du Monastère du Lac Blanc" Id="" Type="0" />
-<SAINT Name="St Salvius, Evêque d'Albi" Id="" Type="0" />
-
+<DAY><SAINT SId="1479" CId="147912"/>
+<SAINT SId="1497" CId="1497"/>
+<SAINT SId="09100000" CId="09100000"/>
+<SAINT SId="1501" CId="1501"/>
+<SAINT SId="1503" CId="1503"/>
+<SAINT SId="1504" CId="1504"/>
+<SAINT SId="1033" CId="1033"/>
+<SAINT SId="1695" CId="1695"/>
+<SAINT SId="09100297" CId="09100297"/>
+<SAINT SId="09100397" CId="09100397"/>
+<SAINT SId="09100100" CId="09100100"/>
 </DAY>

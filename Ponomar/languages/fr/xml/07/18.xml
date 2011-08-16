@@ -1,16 +1,13 @@
-<DAY>
-<SAINT Name="13" Cmd="dow == 0" />
-
-<SAINT Name="St Emilen de Durostorum (Silistrie actuelle en Bulgarie)" Id="4255" Type="1" />
-<SAINT Name="St Hyacinthe d'Amastris" Id="4256" Type="1" />
-<SAINT Name="St Pambo de Scété" Id="4259" Type="0" />
-<SAINT Name="St Athanase de Clysma" Id="" Type="0" />
-<SAINT Name="St Marcel" Id="" Type="0" />
-<SAINT Name="Sts Dasios et Maron" Id="" Type="0" />
-<SAINT Name="St Etienne II, Patriarche de Chalcédoine, le Confesseur" Id="" Type="0" />
-<SAINT Name="St Onésiphore de Chypre" Id="" Type="0" />
-<SAINT Name="St Jean l'endurant des Grottes de Kiev" Id="1001" Type="0" />
-<SAINT Name="St Pambo l'Obéissant des grottes de Kiev" Id="4258" Type="0" />
-<SAINT Name="St Léonce, Higoumène du Monastère de Karikhov (Novgorod)" Id="" Type="0" />
-
+<DAY><SAINT SId="9969" CId="9969" Cmd="dow == 0"/>
+<SAINT SId="4255" CId="4255"/>
+<SAINT SId="4256" CId="4256"/>
+<SAINT SId="4259" CId="4259"/>
+<SAINT SId="07180000" CId="07180000"/>
+<SAINT SId="07180197" CId="07180197"/>
+<SAINT SId="07180297" CId="07180297"/>
+<SAINT SId="07180200" CId="07180200"/>
+<SAINT SId="07180497" CId="07180497"/>
+<SAINT SId="1001" CId="1001"/>
+<SAINT SId="4258" CId="4258"/>
+<SAINT SId="07180100" CId="07180100"/>
 </DAY>

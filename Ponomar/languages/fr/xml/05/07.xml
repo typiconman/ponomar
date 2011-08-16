@@ -1,21 +1,13 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Prov_10:7,6,3:13-16" Note="for St Nicholas" Cmd="nday == 46"/>
-<SCRIPTURE Type="vespers" Reading="Prov_10:31-32, 11:1-12" Note="for St Nicholas" Cmd="nday == 46"/>
-<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" Note="for St Nicholas" Cmd="nday == 46"/>
-<SCRIPTURE Type="matins" Reading="Jn_10:1-9" Pericope="35 (mid)" Cmd="nday == 46" Note="for St Nicholas"/>
-<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335" Note="for St Nicholas" Cmd="nday == 46"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for St Nicholas" Cmd="nday == 46"/>
-
-<SAINT Name="Apparition de la Ste Croix au-dessus de Jérusalem" Id="1005" Type="2" />
-<SAINT Name="St Nil de la Sora" Id="1652" Type="0" />
-<SAINT Name="Sts Codrat, Rufin et Saturnin de Nicomédie" Id="" Type="0" />
-<SAINT Name="St Acace le Centurion" Id="1006" Type="1" />
-<SAINT Name="St Maxime" Id="" Type="0" />
-<SAINT Name="St Jean le Psychaïte" Id="" Type="0" />
-<SAINT Name="St Nil le Myroblite" Id="2529" Type="0" />
-<SAINT Name="St Pachôme d'Oussaki" Id="" Type="0" />
-<SAINT Name="Sts Jean Zedazneli et les 12 Pères Syriens, fondateur du monachisme en Géorgie" Id="1010" Type="0" />
-<SAINT Name="St Bason de Laon" Id="" Type="0" />
-<SAINT Name="St Hernin de Locarn" Id="" Type="0" />
-
+<DAY><SAINT SId="1635" CId="163501" Cmd="nday == 46"/>
+<SAINT SId="1005" CId="1005"/>
+<SAINT SId="1652" CId="1652"/>
+<SAINT SId="05070097" CId="05070097"/>
+<SAINT SId="1006" CId="1006"/>
+<SAINT SId="05070197" CId="05070197"/>
+<SAINT SId="05070297" CId="05070297"/>
+<SAINT SId="2529" CId="2529"/>
+<SAINT SId="050701" CId="050701"/>
+<SAINT SId="1010" CId="1010"/>
+<SAINT SId="05070497" CId="05070497"/>
+<SAINT SId="05070597" CId="05070597"/>
 </DAY>

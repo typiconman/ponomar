@@ -1,13 +1,9 @@
-<DAY>
-<SAINT Name="16" Cmd="dow == 0" />
-
-<SAINT Name="St Prophète Agée" Id="3130" Type="1" />
-<SAINT Name="St Marin" Id="3131" Type="0" />
-<SAINT Name="Sts Promus, Hilarion et leurs compagnons" Id="" Type="0" />
-<SAINT Name="St Memnon, Archevêque d'Ephèse" Id="" Type="0" />
-<SAINT Name="St Modeste II, Archevêque de Jérusalem" Id="" Type="0" />
-<SAINT Name="Ste Théophania" Id="3132" Type="0" />
-<SAINT Name="St Nicolas II Chrysobergès, Patriarche de Constantinople" Id="" Type="0" />
-<SAINT Name="Ste Sophie de Souzdal" Id="3133" Type="0" />
-
+<DAY><SAINT SId="3130" CId="3130"/>
+<SAINT SId="3131" CId="3131"/>
+<SAINT SId="12160097" CId="12160097"/>
+<SAINT SId="12160000" CId="12160000"/>
+<SAINT SId="12160100" CId="12160100"/>
+<SAINT SId="3132" CId="3132"/>
+<SAINT SId="12160200" CId="12160200"/>
+<SAINT SId="313301" CId="313301"/>
 </DAY>

@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="Sts Marc, Evêque d'Arethuse, Cyrille et leurs compagnons" Id="729" Type="1" />
-<SAINT Name="Sts Jonas, Barachise et leurs compagnons" Id="" Type="0" />
-<SAINT Name="St Diadoque, Evêque de Photicée en Epire" Id="" Type="0" />
-<SAINT Name="St Eustathe, Evêque de Kios en Bithybie" Id="731" Type="0" />
-<SAINT Name="Sts Jonas et Marc de Pskov" Id="732" Type="0" />
-<SAINT Name="St. Eustaise de Luxeuil" Id="" Type="0" />
-
+<DAY><SAINT SId="729" CId="729"/>
+<SAINT SId="032902" CId="032902"/>
+<SAINT SId="032903" CId="032903"/>
+<SAINT SId="731" CId="731"/>
+<SAINT SId="732" CId="732"/>
+<SAINT SId="032904" CId="032904"/>
 </DAY>

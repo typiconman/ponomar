@@ -1,13 +1,8 @@
-<DAY>
-<SAINT Name="12" Cmd="dow == 0" />
-<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318" Note="for St John Chrysostom"/>
-<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36" Note="for St John Chrysostom"/>
-
-<SAINT Name="Transfert des Reliques de St Jean Chrysostome" Id="9022" Type="4" />
-<SAINT Name="Ste Marcienne" Id="" Type="0" />
-<SAINT Name="St Claudien" Id="" Type="0" />
-<SAINT Name="St Pierre l'Egyptien" Id="" Type="0" />
-<SAINT Name="St Dimitrios, Néomartyr" Id="" Type="0" />
-<SAINT Name="St Tite le Soldat des grottes de Kiev" Id="" Type="0" />
-
+<DAY><SAINT SId="6613" CId="6613" Cmd="dow == 0"/>
+<SAINT SId="09022" CId="09022"/>
+<SAINT SId="01270097" CId="01270097"/>
+<SAINT SId="01270197" CId="01270197"/>
+<SAINT SId="01270297" CId="01270297"/>
+<SAINT SId="01270397" CId="01270397"/>
+<SAINT SId="01270497" CId="01270497"/>
 </DAY>

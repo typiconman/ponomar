@@ -1,22 +1,19 @@
-<DAY>
-
-<SAINT Name="Sts Térence, sa femme Néonile et leyrs enfants" Id="" Type="1" />
-<SAINT Name="St Etienne le Sabaïte" Id="4606" Type="1" />
-<SAINT Name="St Etienne le Sabaïte, neveu de St Jean Damacène" Id="" Type="0" />
-<SAINT Name="Sts Térence, Africanus, Maxime, Pompéeet leurs 36 compagnons" Id="" Type="0" />
-<SAINT Name="Sts Firmilien et Melchion" Id="" Type="0" />
-<SAINT Name="Ste Fébronia" Id="" Type="0" />
-<SAINT Name="St Cyriaque, Evêque de Jérusalem et sa mère Anne" Id="" Type="0" />
-<SAINT Name="St Athanase, Patriarche de Contantinople" Id="" Type="0" />
-<SAINT Name="Sts Angélis, Manuel, Georges et Nicolas de Crète" Id="" Type="0" />
-<SAINT Name="St Dimitris, Métropolite de Rostov" Id="601" Type="4" />
-<SAINT Name="St Job de Potchaev" Id="1037" Type="4" />
-<SAINT Name="St Arsène, Evêque de Petch" Id="269" Type="3" />
-<SAINT Name="St Néophyte, Evêque d'Urbinsk en Géorgie" Id="4607" Type="0" />
-<SAINT Name="St Nestor des Grottes de Kiev" Id="" Type="0" />
-<SAINT Name="Ste Parascève de Pirmin (Archangelsk)" Id="" Type="0" />
-<SAINT Name="St Diomède de Chypre" Id="" Type="0" />
-<SAINT Name="St Ratislav de Moravie" Id="" Type="0" />
-<SAINT Name="St Théophile, Fol en Christ des Grottes de Kiev" Id="" Type="0" />
-
+<DAY><SAINT SId="10280000" CId="10280000"/>
+<SAINT SId="4606" CId="4606"/>
+<SAINT SId="4606" CId="4606"/>
+<SAINT SId="10280100" CId="10280100"/>
+<SAINT SId="10280200" CId="10280200"/>
+<SAINT SId="10280400" CId="10280400"/>
+<SAINT SId="10280300" CId="10280300"/>
+<SAINT SId="10280500" CId="10280500"/>
+<SAINT SId="10280900" CId="10280900"/>
+<SAINT SId="60103" CId="60103"/>
+<SAINT SId="1037" CId="1037"/>
+<SAINT SId="26901" CId="26901"/>
+<SAINT SId="4607" CId="4607"/>
+<SAINT SId="10280600" CId="10280600"/>
+<SAINT SId="10280700" CId="10280700"/>
+<SAINT SId="10281097" CId="10281097"/>
+<SAINT SId="10281197" CId="10281197"/>
+<SAINT SId="10280800" CId="10280800"/>
 </DAY>

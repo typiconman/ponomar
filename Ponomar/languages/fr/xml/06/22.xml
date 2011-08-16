@@ -1,12 +1,9 @@
-<DAY>
-<SAINT Name="15" Cmd="dow == 6" />
-
-<SAINT Name="St Zenon et Zenas, son serviteur" Id="1376" Type="0" />
-<SAINT Name="St Eusèbe, Evêque de Samosate" Id="1375" Type="1" />
-<SAINT Name="Sts Pompien, Galaction, Julienne et Saturnin" Id="1377" Type="0" />
-<SAINT Name="St Basile, Higoumène du Monastère de Patellaria" Id="" Type="0" />
-<SAINT Name="St Alban, Protomartyr d'Angleterre" Id="" Type="0" />
-<SAINT Name="St Hervé en Bretagne" Id="" Type="0" />
-<SAINT Name="St Paulin, Evêque de Nole" Id="" Type="0" />
-
+<DAY><SAINT SId="6630" CId="6630" Cmd="dow == 6"/>
+<SAINT SId="1376" CId="1376"/>
+<SAINT SId="1375" CId="1375"/>
+<SAINT SId="1377" CId="1377"/>
+<SAINT SId="06220097" CId="06220097"/>
+<SAINT SId="06220100" CId="06220100"/>
+<SAINT SId="06220297" CId="06220297"/>
+<SAINT SId="06220397" CId="06220397"/>
 </DAY>

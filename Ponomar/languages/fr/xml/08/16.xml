@@ -1,22 +1,17 @@
-<DAY>
-<SCRIPTURE Type="apostol" Reading="Col_1:12-18" Pericope="250" Note="for the Icon"/>
-<SCRIPTURE Type="gospel" Reading="Lk_9:51-56, 10:22-24" Pericope="48 (mid)" Note="for the Icon"/>
-
-<SAINT Name="Apresfete de la Dormition" Id="" Type="0"/>
-<SAINT Name="Transfert d'Edesse à Constantinople de l'Image non faite de main d'homme" Id="4447" Type="3" />
-<SAINT Name="St Diomède" Id="4448" Type="1" />
-<SAINT Name="St Chérémon de Scété" Id="4449" Type="0" />
-<SAINT Name="St Alcibiade" Id="" Type="0" />
-<SAINT Name="Sts 33 Martyrs de Palestine" Id="" Type="1" />
-<SAINT Name="St Nil d'Erikoussa, rénovateur du Monastère de Hiéromérion" Id="" Type="0" />
-<SAINT Name="St Nicodème des Météores" Id="" Type="0" />
-<SAINT Name="St Gérasime le Nouveau de Céphalonie" Id="" Type="0" />
-<SAINT Name="St Stamatios de Volos" Id="" Type="0" />
-<SAINT Name="St Apostolos" Id="" Type="0" />
-<SAINT Name="St Timothée, Archevêque d'Euripos, fondateur du monastère de Pantéli en attique" Id="" Type="0" />
-<SAINT Name="Sts Séraphim, Dorothée, Jacques, Dimitrios, Basile et Saranthée à Mégares" Id="" Type="0" />
-<SAINT Name="St Joachim d'Osogovsk" Id="" Type="0" />
-<SAINT Name="St Raphael du Banat" Id="" Type="0" />
-<SAINT Name="St Prince Constantin Brancoveanu, ses fils et son conseiller" Id="" Type="0" />
-
+<DAY><SAINT SId="4444" CId="444412"/>
+<SAINT SId="4447" CId="4447"/>
+<SAINT SId="4448" CId="4448"/>
+<SAINT SId="4449" CId="4449"/>
+<SAINT SId="08160900" CId="08160900"/>
+<SAINT SId="08160800" CId="08160800"/>
+<SAINT SId="08160400" CId="08160400"/>
+<SAINT SId="08160200" CId="08160200"/>
+<SAINT SId="08160100" CId="08160100"/>
+<SAINT SId="08160300" CId="08160300"/>
+<SAINT SId="08160600" CId="08160600"/>
+<SAINT SId="08160500" CId="08160500"/>
+<SAINT SId="08160700" CId="08160700"/>
+<SAINT SId="08160000" CId="08160000"/>
+<SAINT SId="08161197" CId="08161197"/>
+<SAINT SId="08161297" CId="08161297"/>
 </DAY>

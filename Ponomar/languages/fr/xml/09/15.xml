@@ -1,19 +1,14 @@
-<DAY>
-<SAINT Name="4" Cmd="dow == 0" />
-<SAINT Name="11" Cmd="dow == 6" />
-
-<SAINT Name="Apresfete de l'Exaltation" Id="" Type="0"/>
-<SAINT Name="Sts Nicétas le Goth et les martyrs qui souffrirent en même temps" Id="1533" Type="2" />
-<SAINT Name="St Philothée" Id="1534" Type="0" />
-<SAINT Name="St Porphyre le comédien" Id="1536" Type="0" />
-<SAINT Name="Sts Maxime, Théodote et Asclepiodote" Id="1537" Type="0" />
-<SAINT Name="St Acace (Akakios) de Mélitène" Id="" Type="0" />
-<SAINT Name="St Syméon, Archevêque de thessalonique" Id="" Type="0" />
-<SAINT Name="St Protomartyr et Archidiacre Etienne (invention des Reliques)" Id="2051" Type="0" />
-<SAINT Name="Sts Bessarion 1er et Bessarion II, Archevêque de Larissa" Id="" Type="0" />
-<SAINT Name="St Gérasime, fondateur du Monastère de la Ste Trinité dit de Sourvia" Id="" Type="0" />
-<SAINT Name="St Néomartyr Jean de Crète" Id="" Type="0" />
-<SAINT Name="St Joseph le Jeune, Métropolite de Témisvar" Id="" Type="0" />
-<SAINT Name="St Joseph, Higoumène d' Alaverdsk" Id="1535" Type="0" />
-
+<DAY><SAINT SId="1529" CId="152912"/>
+<SAINT SId="153301" CId="153301"/>
+<SAINT SId="1534" CId="1534"/>
+<SAINT SId="1536" CId="1536"/>
+<SAINT SId="1537" CId="1537"/>
+<SAINT SId="09150500" CId="09150500"/>
+<SAINT SId="09150000" CId="09150000"/>
+<SAINT SId="205101" CId="205101"/>
+<SAINT SId="09150100" CId="09150100"/>
+<SAINT SId="09150200" CId="09150200"/>
+<SAINT SId="09150400" CId="09150400"/>
+<SAINT SId="09150300" CId="09150300"/>
+<SAINT SId="1535" CId="1535"/>
 </DAY>

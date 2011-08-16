@@ -1,7 +1,4 @@
-<DAY>
-
-<SAINT Name="St Jean Cassien le Roumain" Id="530" Type="0" />
-<SAINT Name="St Germain de Dobrogéa, le compagnon de St Jean Cassien" Id="" Type="0" />
-<SAINT Name="St Cassien le Reclus Jeûneur des Grottes de Kiev" Id="" Type="0" />
-
+<DAY><SAINT SId="530" CId="530"/>
+<SAINT SId="02290097" CId="02290097"/>
+<SAINT SId="02290197" CId="02290197"/>
 </DAY>

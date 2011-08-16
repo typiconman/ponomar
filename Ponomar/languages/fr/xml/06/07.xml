@@ -1,16 +1,13 @@
-<DAY>
-
-<SAINT Name="St Martyr Théodote d'Ancyre" Id="9216" Type="1" />
-<SAINT Name="Ste Potamienne et ses compagnons" Id="" Type="0" />
-<SAINT Name="St Lycarion" Id="" Type="0" />
-<SAINT Name="Ste Zénaide la Thaumaturge" Id="" Type="0" />
-<SAINT Name="Ste Aissia et Suzanne, disciples de St Pancrace, Evêque de Taormina" Id="" Type="0" />
-<SAINT Name="Sts Taraise et Jean" Id="" Type="0" />
-<SAINT Name="Sts Etienne et Anthime les Prêtres zélés (Spoudaioi)" Id="" Type="0" />
-<SAINT Name="Ste Sébastienne la Thaumaturge" Id="" Type="0" />
-<SAINT Name="St Panaghis (Païssios) Bassia" Id="" Type="0" />
-<SAINT Name="St Daniel de Scété" Id="" Type="0" />
-<SAINT Name="St Vulphy d'Amiens" Id="" Type="0" />
-<SAINT Name="Sts Sérenic et Sérené" Id="" Type="0" />
-
+<DAY><SAINT SId="09216" CId="09216"/>
+<SAINT SId="06070200" CId="06070200"/>
+<SAINT SId="06070500" CId="06070500"/>
+<SAINT SId="06070297" CId="06070297"/>
+<SAINT SId="06070400" CId="06070400"/>
+<SAINT SId="06070497" CId="06070497"/>
+<SAINT SId="06070597" CId="06070597"/>
+<SAINT SId="06070697" CId="06070697"/>
+<SAINT SId="06070600" CId="06070600"/>
+<SAINT SId="06070300" CId="06070300"/>
+<SAINT SId="06070997" CId="06070997"/>
+<SAINT SId="06071097" CId="06071097"/>
 </DAY>

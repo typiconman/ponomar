@@ -1,17 +1,9 @@
-<DAY>
-<SAINT Name="1" Cmd="dow == 0" />
-<SAINT Name="7" Cmd="dow == 6" />
-<SCRIPTURE Type="matins" Reading="Mt_11:27-30" Pericope="43" Cmd="dow != 0"/>
-<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" Note="for Sts Sergius and Herman"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Note="for Sts Sergius and Herman"/>
-
-<SAINT Name="Apresfete de la Nativite de la Genetrice de Dieu" Id="" Type="0"/>
-<SAINT Name="Ste Théodora d'Alexandrie" Id="1506" Type="1" />
-<SAINT Name="St Euphrosynos le Cuisinier" Id="1509" Type="0" />
-<SAINT Name="Ste Ias de Perse" Id="2468" Type="0" />
-<SAINT Name="Sts Diodore, Diomède et Didyme" Id="" Type="0" />
-<SAINT Name="Ste Xénie de St Petersbourg, Folle en Christ" Id="" Type="0" />
-<SAINT Name="St Serge et St Germain de Valaam (translation des Reliques)" Id="1411" Type="4" />
-<SAINT Name="St Elie de Calabre" Id="" Type="0" />
-
+<DAY><SAINT SId="1479" CId="147912"/>
+<SAINT SId="1506" CId="1506"/>
+<SAINT SId="1509" CId="1509"/>
+<SAINT SId="246801" CId="246801"/>
+<SAINT SId="09110100" CId="09110100"/>
+<SAINT SId="09110300" CId="09110300"/>
+<SAINT SId="141102" CId="141103"/>
+<SAINT SId="09110397" CId="09110397"/>
 </DAY>

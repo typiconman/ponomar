@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="St Prophète Nahum" Id="3047" Type="1" />
-<SAINT Name="St Antoine le Jeune" Id="" Type="0" />
-<SAINT Name="St Philarète le Miséricordieux" Id="3048" Type="0" />
-<SAINT Name="St Ananie (ou Ménas) le Persan" Id="" Type="0" />
-<SAINT Name="St Onésime, Ananie et Solochon, Evêque d'Ephèse" Id="" Type="0" />
-<SAINT Name="St Théoclite, Evêque de Lacédémone (Sparte)" Id="" Type="0" />
-<SAINT Name="St Eloi, Eveque de Noyon" Id="" Type="0" />
-
+<DAY><SAINT SId="3047" CId="3047"/>
+<SAINT SId="12010200" CId="12010200"/>
+<SAINT SId="3048" CId="3048"/>
+<SAINT SId="12010000" CId="12010000"/>
+<SAINT SId="12010297" CId="12010297"/>
+<SAINT SId="12010100" CId="12010100"/>
+<SAINT SId="12010497" CId="12010497"/>
 </DAY>

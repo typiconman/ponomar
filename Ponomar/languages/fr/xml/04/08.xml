@@ -1,9 +1,6 @@
-<DAY>
-
-<SAINT Name="Sts Apôtres des 70 Herodion, Agabos, Rufus, Phlegon et Asyncrite" Id="811" Type="1" />
-<SAINT Name="St Célestin 1er, Pape de Rome" Id="812" Type="0" />
-<SAINT Name="St Jean le Navigateur à Chios" Id="" Type="0" />
-<SAINT Name="St Rufus l'Obéissant des Grottes de Kiev" Id="1888" Type="0" />
-<SAINT Name="St Niphonte, Evêque de Novgorod" Id="" Type="0" />
-
+<DAY><SAINT SId="811" CId="811"/>
+<SAINT SId="812" CId="812"/>
+<SAINT SId="040801" CId="040801"/>
+<SAINT SId="1888" CId="1888"/>
+<SAINT SId="040800" CId="040800"/>
 </DAY>

@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="St Syméon Stylite le Jeune du Mont Admirable" Id="2012" Type="2" />
-<SAINT Name="Sts Mélèce le Stratilate et ses compagnons" Id="1135" Type="0" />
-<SAINT Name="Sts Cyriaque d'Eurychos à Chypre" Id="" Type="0" />
-<SAINT Name="St Nicetas le Style de Pereyaslav" Id="6759" Type="3" />
-<SAINT Name="St Vincent de Lérins" Id="" Type="0" />
-<SAINT Name="Sts Martyrs Donatien et Rogatien de Nantes" Id="" Type="0" />
-
+<DAY><SAINT SId="2012" CId="2012"/>
+<SAINT SId="1135" CId="1135"/>
+<SAINT SId="05240097" CId="05240097"/>
+<SAINT SId="6759" CId="6759"/>
+<SAINT SId="05240197" CId="05240197"/>
+<SAINT SId="05240297" CId="05240297"/>
 </DAY>

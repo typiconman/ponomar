@@ -1,14 +1,11 @@
-<DAY>
-<SAINT Name="12" Cmd="dow == 0" />
-
-<SAINT Name="St Ephrem le Syrien" Id="817" Type="2" />
-<SAINT Name="St Pallade l'Anachorète d'Antioche" Id="326" Type="0" />
-<SAINT Name="St Jacques, l'Ascète de Porphyrianos" Id="" Type="0" />
-<SAINT Name="Ste Charis" Id="" Type="0" />
-<SAINT Name="St Isaac le Syrien, Evêque de Ninive" Id="1097" Type="0" />
-<SAINT Name="St Ephrem l'Eunuque des Grottes de Kiev, Evêque de Pereslav" Id="815" Type="0" />
-<SAINT Name="St Ephrem de Novotorjk" Id="813" Type="0" />
-<SAINT Name="Ste Théodose de Totma" Id="2213" Type="1" />
-<SAINT Name="St Jean de Réomé" Id="" Type="0" />
-
+<DAY><SAINT SId="6613" CId="6613" Cmd="dow == 0"/>
+<SAINT SId="817" CId="817"/>
+<SAINT SId="326" CId="326"/>
+<SAINT SId="01280097" CId="01280097"/>
+<SAINT SId="01280197" CId="01280197"/>
+<SAINT SId="1097" CId="1097"/>
+<SAINT SId="815" CId="815"/>
+<SAINT SId="813" CId="813"/>
+<SAINT SId="2213" CId="2213"/>
+<SAINT SId="01280297" CId="01280297"/>
 </DAY>

@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Déposition de la précieuse Robe la Mère de Dieu" Id="4138" Type="3" />
-<SAINT Name="St Juvénal, Patriarche de Jérusalem" Id="4140" Type="0" />
-<SAINT Name="Sts Paul, Bilon, Théon et Héron à Thessalonique" Id="" Type="0" />
-<SAINT Name="St Lampros" Id="" Type="0" />
-<SAINT Name="St Photios, Métropolite de Kiev" Id="2331" Type="0" />
-<SAINT Name="St Etienne le grand, Voïvode de Moldavie" Id="" Type="0" />
-<SAINT Name="Ste Monégonde de Chartres" Id="" Type="0" />
-
+<DAY><SAINT SId="4138" CId="4138"/>
+<SAINT SId="4140" CId="4140"/>
+<SAINT SId="07020097" CId="07020097"/>
+<SAINT SId="07020197" CId="07020197"/>
+<SAINT SId="2331" CId="2331"/>
+<SAINT SId="07020200" CId="07020200"/>
+<SAINT SId="07020100" CId="07020100"/>
 </DAY>

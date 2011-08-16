@@ -1,11 +1,8 @@
-<DAY>
-<SAINT Name="13" Cmd="dow == 0" />
-
-<SAINT Name="Synaxe de l'Archange Gabriel" Id="446" Type="2" />
-<SAINT Name="St Etienne le Sabaïte" Id="4229" Type="1" />
-<SAINT Name="Ste Golindouch (Marie au St Baptême) de Perse" Id="" Type="0" />
-<SAINT Name="Ste Sirée de Perse" Id="" Type="0" />
-<SAINT Name="Ste Sarra de Scété" Id="" Type="0" />
-<SAINT Name="Sts Héliophotos, Epaphrodite, Ammon, Choulélaios et Eusthénios à Chypre" Id="" Type="0" />
-
+<DAY><SAINT SId="9969" CId="9969" Cmd="dow == 0"/>
+<SAINT SId="446" CId="446"/>
+<SAINT SId="4229" CId="4229"/>
+<SAINT SId="07130097" CId="07130097"/>
+<SAINT SId="07130197" CId="07130197"/>
+<SAINT SId="07130000" CId="07130000"/>
+<SAINT SId="07130397" CId="07130397"/>
 </DAY>

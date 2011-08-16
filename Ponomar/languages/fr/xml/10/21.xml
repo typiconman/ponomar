@@ -1,24 +1,21 @@
-<DAY>
-<SAINT Name="9" Cmd="dow == 6" />
-
-<SAINT Name="St Hilarion le Grand" Id="4561" Type="2" />
-<SAINT Name="St Philothée de l'Athos" Id="" Type="0" />
-<SAINT Name="Sts Gaïus, Dasius et Zotique" Id="4567" Type="0" />
-<SAINT Name="St Zacharie, moine" Id="" Type="0" />
-<SAINT Name="Ste Théodote et St Socrate" Id="" Type="0" />
-<SAINT Name="St Eucratos" Id="" Type="0" />
-<SAINT Name="St Baruch" Id="" Type="0" />
-<SAINT Name="St Azis" Id="" Type="0" />
-<SAINT Name="St Jean de Monembasia" Id="" Type="0" />
-<SAINT Name="St Jacques du Monastère du Christ Sauveur" Id="" Type="0" />
-<SAINT Name="St Plantin et Ste Irène" Id="" Type="0" />
-<SAINT Name="St Hilarion des Grottes de Kiev" Id="932" Type="0" />
-<SAINT Name="Sts Théophile et Jacques de Omoutsk (Pskov)" Id="4566" Type="0" />
-<SAINT Name="St Hilarion du lac Pskov" Id="933" Type="0" />
-<SAINT Name="St Hilarion, Evêque de Meglin en Bulgarie" Id="928" Type="2" />
-<SAINT Name="Sts Vessarion, sophrone et Opréa de Roumanie" Id="" Type="0" />
-<SAINT Name="Sts Moïse Matsinic de Sibiu et Jean de Galesh" Id="" Type="0" />
-<SAINT Name="St Vulfolaïc, stylite de CarignanSte Ursule et ses compagnes à Cologne" Id="" Type="0" />
-<SAINT Name="St Fintan de Taghmon" Id="" Type="0" />
-
+<DAY><SAINT SId="9913" CId="9913" Cmd="dow == 6"/>
+<SAINT SId="4561" CId="4561"/>
+<SAINT SId="10210097" CId="10210097"/>
+<SAINT SId="4567" CId="4567"/>
+<SAINT SId="10210197" CId="10210197"/>
+<SAINT SId="10210200" CId="10210200"/>
+<SAINT SId="10210397" CId="10210397"/>
+<SAINT SId="10210497" CId="10210497"/>
+<SAINT SId="10210597" CId="10210597"/>
+<SAINT SId="10210100" CId="10210100"/>
+<SAINT SId="10210797" CId="10210797"/>
+<SAINT SId="10210897" CId="10210897"/>
+<SAINT SId="93201" CId="93201"/>
+<SAINT SId="4566" CId="4566"/>
+<SAINT SId="933" CId="933"/>
+<SAINT SId="92801" CId="92801"/>
+<SAINT SId="10210997" CId="10210997"/>
+<SAINT SId="10211097" CId="10211097"/>
+<SAINT SId="10211197" CId="10211197"/>
+<SAINT SId="10211297" CId="10211297"/>
 </DAY>

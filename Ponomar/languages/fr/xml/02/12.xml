@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="St Mélèce, Archevêque d'Antioche" Id="4627" Type="1" />
-<SAINT Name="Ste Marie qui changea son nom en Marin" Id="435" Type="0" />
-<SAINT Name="St Antoine II, Cauleas, Patriarche de Constantinople" Id="436" Type="0" />
-<SAINT Name="Sts Plotin et Saturnin" Id="" Type="0" />
-<SAINT Name="St Néomartyr Christos le Jardinier" Id="" Type="0" />
-<SAINT Name="St Alexis, Métropolite de Moscou" Id="131" Type="4" />
-<SAINT Name="St Bassien, Higoumène du Monastère de la forêt de Ryabovsky" Id="" Type="0" />
-<SAINT Name="St Benoît d'Aniane" Id="" Type="0" />
-<SAINT Name="St Rioc de Landevenec" Id="" Type="0" />
-
+<DAY><SAINT SId="4627" CId="4627"/>
+<SAINT SId="43501" CId="43501"/>
+<SAINT SId="436" CId="436"/>
+<SAINT SId="02120097" CId="02120097"/>
+<SAINT SId="02120197" CId="02120197"/>
+<SAINT SId="131" CId="131"/>
+<SAINT SId="02120297" CId="02120297"/>
+<SAINT SId="02120397" CId="02120397"/>
+<SAINT SId="02120497" CId="02120497"/>
 </DAY>

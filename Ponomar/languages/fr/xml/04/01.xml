@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Ste Marie l'Egyptienne" Id="2539" Type="1" />
-<SAINT Name="St Macaire le Confesseur, Higoumène du Monastère du Pélécète" Id="759" Type="0" />
-<SAINT Name="St Meliton, Evêques de Sardes" Id="" Type="0" />
-<SAINT Name="St Juste Achaz" Id="" Type="0" />
-<SAINT Name="Sts Gérontios et Basilide" Id="758" Type="0" />
-<SAINT Name="St. Euthyme de Souzdal" Id="743" Type="3" />
-<SAINT Name="St Abraham le Bulgare" Id="32" Type="0" />
-<SAINT Name="St Gérontios des Grottes de Kiev" Id="757" Type="0" />
-<SAINT Name="St. Valéry de Luxeuil" Id="" Type="0" />
-
+<DAY><SAINT SId="2539" CId="2539"/>
+<SAINT SId="759" CId="759"/>
+<SAINT SId="040103" CId="040103"/>
+<SAINT SId="040101" CId="040101"/>
+<SAINT SId="758" CId="758"/>
+<SAINT SId="743" CId="743"/>
+<SAINT SId="32" CId="32"/>
+<SAINT SId="757" CId="757"/>
+<SAINT SId="04010297" CId="04010297"/>
 </DAY>

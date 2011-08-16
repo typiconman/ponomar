@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="Ste et Grande Martyre Irène de Thessalonique" Id="2523" Type="1" />
-<SAINT Name="St Euthyme le Thaumaturge, Evêque de Madytos" Id="" Type="0" />
-<SAINT Name="Sts Néophyte, Gaïus et Gaïen" Id="" Type="0" />
-<SAINT Name="St Michée de Radonège" Id="" Type="0" />
-<SAINT Name="St Adrien de Monza" Id="" Type="0" />
-<SAINT Name="St Jacques, Higoumène de Jeliezby-Borok" Id="871" Type="0" />
-<SAINT Name="St Britton, Evêque de Trèves" Id="" Type="0" />
-<SAINT Name="St Martyr Ephrem le nouvel apparu" Id="" Type="0" />
-<SAINT Name="St Hilaire, Evêque d'Arles (449)" Id="050507" Type="0" />
-
+<DAY><SAINT SId="2523" CId="2523"/>
+<SAINT SId="050503" CId="050503"/>
+<SAINT SId="050501" CId="050501"/>
+<SAINT SId="050504" CId="050504"/>
+<SAINT SId="050502" CId="050502"/>
+<SAINT SId="871" CId="871"/>
+<SAINT SId="05050497" CId="05050497"/>
+<SAINT SId="05050597" CId="05050597"/>
+<SAINT SId="050507" CId="050507"/>
 </DAY>

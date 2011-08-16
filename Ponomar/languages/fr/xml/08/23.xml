@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="Apodose de la Dormition" Id="" Type="3"/>
-<SAINT Name="St Lupus" Id="4500" Type="1" />
-<SAINT Name="St Irénée, Evêque de Lyon" Id="4501" Type="0" />
-<SAINT Name="St Irénée, Evêque de Sirmium et ses compagnons Or et Oropsis" Id="" Type="0" />
-<SAINT Name="Sts Sévère et Mémnon le Centurion et les 38 Martyrs de Thrace" Id="" Type="0" />
-<SAINT Name="St Callinique, Patriarche de Constantinople" Id="4503" Type="0" />
-<SAINT Name="St Nicolas de Sicile" Id="" Type="0" />
-
+<DAY><SAINT SId="444414" CId="444414"/>
+<SAINT SId="4500" CId="4500"/>
+<SAINT SId="4501" CId="4501"/>
+<SAINT SId="08230197" CId="08230197"/>
+<SAINT SId="08230200" CId="08230200"/>
+<SAINT SId="4503" CId="4503"/>
+<SAINT SId="08230100" CId="08230100"/>
 </DAY>

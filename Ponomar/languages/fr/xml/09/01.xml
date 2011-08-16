@@ -1,21 +1,11 @@
-<DAY>
-<SCRIPTURE Type="vespers" Reading="Isa_61:1-9" />
-<SCRIPTURE Type="vespers" Reading="Lev_26:3-12, 14-17, 19-20, 22, 33, 40-41" />
-<SCRIPTURE Type="vespers" Reading="Wisd_4:7-15" />
-<SCRIPTURE Type="apostol" Reading="I Tim_2:1-7" Pericope="282" Note="for the New Year"/>
-<SCRIPTURE Type="gospel" Reading="Lk_4:16-22" Pericope="13" Note="for the New Year"/>
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" Note="for St Simeon" Cmd="dow != 0"/>
-<SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43" Note="for St Simeon" Cmd="dow != 0"/>
-
-<SAINT Name="Nouvel An écclésiastique" Id="" Type="4" />
-<SAINT Name="St Syméon Stylite l'Ancien et sa mère, Ste Marthe" Id="1426" Type="1" />
-<SAINT Name="St Josué, fils de Navé" Id="924" Type="0" />
-<SAINT Name="40 Vierges Martyres et leur père spirituel: Ammoun, Diacre" Id="1428" Type="0" />
-<SAINT Name="Sts Martyrs Evodus, Calliste et Hermogène" Id="1429" Type="0" />
-<SAINT Name="Ste Evanthia" Id="" Type="0" />
-<SAINT Name="St Mélétios le Jeune" Id="" Type="0" />
-<SAINT Name="St Nicolas de Courtaliotis en Crète" Id="" Type="0" />
-<SAINT Name="Synaxe de l'Icone de la Mère de Dieu de Miasènes" Id="" Type="0" />
-<SAINT Name="St Néo-Martyr Angélis" Id="" Type="0" />
-
+<DAY><SAINT SId="09426" CId="09426"/>
+<SAINT SId="1426" CId="1426"/>
+<SAINT SId="92401" CId="92401"/>
+<SAINT SId="1428" CId="1428"/>
+<SAINT SId="1429" CId="1429"/>
+<SAINT SId="09010197" CId="09010197"/>
+<SAINT SId="09010000" CId="09010000"/>
+<SAINT SId="09010100" CId="09010100"/>
+<SAINT SId="09010300" CId="09010300"/>
+<SAINT SId="09010200" CId="09010200"/>
 </DAY>

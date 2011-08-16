@@ -1,11 +1,8 @@
-<DAY>
-
-<SAINT Name="St Isaac le Confesseur, fondateur du Monastère de Dalmate à Constantinople" Id="1101" Type="1" />
-<SAINT Name="St Natalios" Id="" Type="0" />
-<SAINT Name="Sts Romain et Télétios" Id="" Type="0" />
-<SAINT Name="St Euplous" Id="" Type="0" />
-<SAINT Name="St Barlaam" Id="" Type="0" />
-<SAINT Name="St Jean de Galitch" Id="" Type="0" />
-<SAINT Name="St Félix, Evêque de Rome" Id="" Type="0" />
-
+<DAY><SAINT SId="1101" CId="1101"/>
+<SAINT SId="05300200" CId="05300200"/>
+<SAINT SId="05300197" CId="05300197"/>
+<SAINT SId="05300297" CId="05300297"/>
+<SAINT SId="05300397" CId="05300397"/>
+<SAINT SId="05300497" CId="05300497"/>
+<SAINT SId="05300597" CId="05300597"/>
 </DAY>

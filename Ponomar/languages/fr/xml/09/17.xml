@@ -1,16 +1,11 @@
-<DAY>
-<SAINT Name="4" Cmd="dow == 0" />
-<SAINT Name="11" Cmd="dow == 6" />
-
-<SAINT Name="Apresfete de l'Exaltation" Id="" Type="0"/>
-<SAINT Name="Stes Foi, Espérance, Charité et leur mère Sophie" Id="2434" Type="1" />
-<SAINT Name="Ste Agathoclée" Id="" Type="0" />
-<SAINT Name="Stes Lucie et Géminien son fils spirituel" Id="" Type="0" />
-<SAINT Name="Ste Théodote" Id="1554" Type="0" />
-<SAINT Name="Sts Péléas et Nil, Sts Elie et Patermouthios, 100 Martyrs d'Egypte, 50 Martyrs de Palestine" Id="1556" Type="0" />
-<SAINT Name="Sts Charalampos, Pantoléon et leurs compagnons" Id="" Type="0" />
-<SAINT Name="Sts Héraclide et Myron, Evêques de Tamassos à Chypre" Id="" Type="0" />
-<SAINT Name="St Anastase de Chypre" Id="" Type="0" />
-<SAINT Name="Sts Mesclin de Tarbes" Id="" Type="0" />
-
+<DAY><SAINT SId="1529" CId="152912"/>
+<SAINT SId="2434" CId="2434"/>
+<SAINT SId="09170197" CId="09170197"/>
+<SAINT SId="09170100" CId="09170100"/>
+<SAINT SId="155401" CId="155401"/>
+<SAINT SId="1556" CId="1556"/>
+<SAINT SId="09170397" CId="09170397"/>
+<SAINT SId="09170000" CId="09170000"/>
+<SAINT SId="09170200" CId="09170200"/>
+<SAINT SId="09170697" CId="09170697"/>
 </DAY>

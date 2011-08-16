@@ -1,10 +1,7 @@
-<DAY>
-
-<SAINT Name="St Crescens de Myre" Id="" Type="0" />
-<SAINT Name="St Léonide, Evêque d'Athènes" Id="2431" Type="0" />
-<SAINT Name="Ste Anastasie et Basilisse" Id="" Type="0" />
-<SAINT Name="Sts Théodore et Pausilype" Id="" Type="0" />
-<SAINT Name="St Martyr Soukias et ses compagnons en Arménie" Id="861" Type="0" />
-<SAINT Name="St Mstislav-Theodore, Prince de Kiev" Id="" Type="0" />
-
+<DAY><SAINT SId="04150097" CId="04150097"/>
+<SAINT SId="2431" CId="2431"/>
+<SAINT SId="04150197" CId="04150197"/>
+<SAINT SId="04150297" CId="04150297"/>
+<SAINT SId="861" CId="861"/>
+<SAINT SId="041502" CId="041502"/>
 </DAY>

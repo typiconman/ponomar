@@ -1,12 +1,9 @@
-<DAY>
-<SAINT Name="12" Cmd="dow == 0" />
-
-<SAINT Name="St Timothée, Apôtre" Id="279" Type="1" />
-<SAINT Name="St Anastase le Perse" Id="165" Type="1" />
-<SAINT Name="Sts Manuel, Georges, Pierre, Léon, Gabriel, Sionios, Jean, Léon, Parode et 377 Sts Martyrs en Bulgarie" Id="" Type="0" />
-<SAINT Name="St Joseph le Crétois, le Sanctifié (Samakos)" Id="" Type="0" />
-<SAINT Name="St Anastase le Diacre des Grottes de Kiev" Id="166" Type="0" />
-<SAINT Name="St Macaire le Thaumaturge, Higoumène du Monastère de Zhabin" Id="1402" Type="0" />
-<SAINT Name="St Paulin le Miséricordieux, Evêque de Nole" Id="" Type="0" />
-
+<DAY><SAINT SId="6613" CId="6613" Cmd="dow == 0"/>
+<SAINT SId="279" CId="279"/>
+<SAINT SId="165" CId="165"/>
+<SAINT SId="012200" CId="012200"/>
+<SAINT SId="01220197" CId="01220197"/>
+<SAINT SId="166" CId="166"/>
+<SAINT SId="1402" CId="1402"/>
+<SAINT SId="01220297" CId="01220297"/>
 </DAY>

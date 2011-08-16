@@ -1,7 +1,4 @@
-<DAY>
-
-<SAINT Name="Miracle de l'Archange Michel à Colosses" Id="91547" Type="2" />
-<SAINT Name="Sts Eudoxe, Romulus, Xénon, Macaire et leurs compagnons" Id="1462" Type="1" />
-<SAINT Name="Sts Faustus, Bibos, Denys, Cyriaque, Andronique, Théoctiste, Macaire, André, Sarapabon, Cyriaque, Andropélagia, Thécle et Calodotie" Id="1466" Type="0" />
-
+<DAY><SAINT SId="91547" CId="91547"/>
+<SAINT SId="1462" CId="1462"/>
+<SAINT SId="1466" CId="1466"/>
 </DAY>

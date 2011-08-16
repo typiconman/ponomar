@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="St Archippe, Apôtre" Id="9279" Type="1" />
-<SAINT Name="Sts Maxime, Théodote, Hesychius et Asclépiodote" Id="471" Type="0" />
-<SAINT Name="St Rabulas" Id="" Type="0" />
-<SAINT Name="Sts Eugène et Marcaire" Id="472" Type="0" />
-<SAINT Name="St Conon" Id="" Type="0" />
-<SAINT Name="Ste Philothée d'Athène" Id="" Type="0" />
-<SAINT Name="St Nicétas l'Athonite" Id="" Type="0" />
-<SAINT Name="St Mesrop le Traducteur" Id="" Type="0" />
-
+<DAY><SAINT SId="09279" CId="09279"/>
+<SAINT SId="471" CId="471"/>
+<SAINT SId="02190097" CId="02190097"/>
+<SAINT SId="472" CId="472"/>
+<SAINT SId="021902" CId="021902"/>
+<SAINT SId="021903" CId="021903"/>
+<SAINT SId="021904" CId="021904"/>
+<SAINT SId="021905" CId="021905"/>
 </DAY>

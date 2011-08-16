@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="St Eutychès, Evêque de Mélitène" Id="1157" Type="0" />
-<SAINT Name="Ste Héliconis" Id="1158" Type="0" />
-<SAINT Name="St Nicétas, Archevêque de Chalcédoine et ses parents Nicétas et Ignace" Id="1156" Type="1" />
-<SAINT Name="St Zacharie de Prousse" Id="" Type="0" />
-<SAINT Name="St Mitros" Id="" Type="0" />
-<SAINT Name="St André le Fol en Christ" Id="" Type="0" />
-<SAINT Name="St Ignace, Evêque de Rostov" Id="" Type="2" />
-<SAINT Name="St Sophrone de Bulgarie" Id="" Type="0" />
-<SAINT Name="St Germain, Evêque de Paris" Id="" Type="0" />
-
+<DAY><SAINT SId="1157" CId="1157"/>
+<SAINT SId="1158" CId="1158"/>
+<SAINT SId="1156" CId="1156"/>
+<SAINT SId="05270600" CId="05270600"/>
+<SAINT SId="05270500" CId="05270500"/>
+<SAINT SId="05280700" CId="05280700"/>
+<SAINT SId="05280397" CId="05280397"/>
+<SAINT SId="05270400" CId="05270400"/>
+<SAINT SId="05280597" CId="05280597"/>
 </DAY>

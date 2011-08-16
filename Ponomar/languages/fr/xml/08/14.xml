@@ -1,12 +1,9 @@
-<DAY>
-
-<SAINT Name="Prefete de la Dormition" Id="" Type="2"/>
-<SAINT Name="St Prophète Michée" Id="4437" Type="2" />
-<SAINT Name="St Marcel, Evêque d'Apamée" Id="4440" Type="0" />
-<SAINT Name="St Urcicin (ou Oursicios)" Id="" Type="0" />
-<SAINT Name="St Lucius le Soldat" Id="" Type="0" />
-<SAINT Name="St Syméon le Joailler de Trébizonde" Id="" Type="0" />
-<SAINT Name="St Arcade du Monastère de Novotorsk" Id="257" Type="0" />
-<SAINT Name="St Théodose de Kiev (translation des Reliques)" Id="2211" Type="3" />
-
+<DAY><SAINT SId="4444" CId="444411"/>
+<SAINT SId="4437" CId="4437"/>
+<SAINT SId="4440" CId="4440"/>
+<SAINT SId="08140197" CId="08140197"/>
+<SAINT SId="08140297" CId="08140297"/>
+<SAINT SId="08140000" CId="08140000"/>
+<SAINT SId="257" CId="257"/>
+<SAINT SId="2211" CId="221101"/>
 </DAY>

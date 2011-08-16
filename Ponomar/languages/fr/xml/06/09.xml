@@ -1,16 +1,13 @@
-<DAY>
-
-<SAINT Name="St Cyrille, Archevêque d'Alexandrie" Id="1221" Type="2" />
-<SAINT Name="St Cyrille du lac Blanc" Id="9224" Type="3" />
-<SAINT Name="St Alexandre de Kouchta" Id="1270" Type="0" />
-<SAINT Name="Stes Thècle, Mariamne, Marthe, Marie et Ennatha" Id="1271" Type="0" />
-<SAINT Name="Sts Oreste, Diomède et Rhodon" Id="" Type="0" />
-<SAINT Name="St Alexandre, Evêque de Prousse" Id="" Type="0" />
-<SAINT Name="St Anania" Id="" Type="0" />
-<SAINT Name="St Cyr" Id="" Type="0" />
-<SAINT Name="Stes 3 Vierges Martyres de Chio" Id="" Type="0" />
-<SAINT Name="St Raphaèl d'Agapia" Id="" Type="0" />
-<SAINT Name="St Vincent de l'Agenais" Id="" Type="0" />
-<SAINT Name="St Colomba d'Irlande, fondateur du Monastère d'Iona" Id="060906" Type="0" />
-
+<DAY><SAINT SId="1221" CId="1221"/>
+<SAINT SId="09224" CId="09224"/>
+<SAINT SId="127001" CId="127001"/>
+<SAINT SId="1271" CId="1271"/>
+<SAINT SId="06090097" CId="06090097"/>
+<SAINT SId="06090100" CId="06090100"/>
+<SAINT SId="06090297" CId="06090297"/>
+<SAINT SId="06090397" CId="06090397"/>
+<SAINT SId="06090200" CId="06090200"/>
+<SAINT SId="06090597" CId="06090597"/>
+<SAINT SId="06090697" CId="06090697"/>
+<SAINT SId="060906" CId="060906"/>
 </DAY>

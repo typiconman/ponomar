@@ -1,16 +1,13 @@
-<DAY>
-
-<SAINT Name="Sts Aceptimas, Joseph et Aithala" Id="2478" Type="1" />
-<SAINT Name="St Aceptime" Id="2479" Type="0" />
-<SAINT Name="St Achéménide le Confesseur" Id="" Type="0" />
-<SAINT Name="St Théodore, Evêque d'Ancyre" Id="" Type="0" />
-<SAINT Name="Sts Dace, Sévère, Andronas, Théodote et Théodotie" Id="" Type="0" />
-<SAINT Name="St Elie d'Egypte" Id="" Type="0" />
-<SAINT Name="9 Sts Martyrs" Id="" Type="0" />
-<SAINT Name="28 Sts Martyrs" Id="" Type="0" />
-<SAINT Name="St Georges de Néapolis" Id="" Type="0" />
-<SAINT Name="St Georges le Mégalomartyr (trnslation de ses Reliques et dédicace de son église à Lydda)" Id="497" Type="1" />
-<SAINT Name="Ste Anne, fille du Prince Vsevolod 1er Iaroslavitch" Id="" Type="0" />
-<SAINT Name="St Poimen de Zographou" Id="" Type="0" />
-
+<DAY><SAINT SId="2478" CId="2478"/>
+<SAINT SId="247901" CId="247901"/>
+<SAINT SId="11030300" CId="11030300"/>
+<SAINT SId="11030500" CId="11030500"/>
+<SAINT SId="11030297" CId="11030297"/>
+<SAINT SId="11030200" CId="11030200"/>
+<SAINT SId="11030497" CId="11030497"/>
+<SAINT SId="11030597" CId="11030597"/>
+<SAINT SId="11030600" CId="11030600"/>
+<SAINT SId="497" CId="497"/>
+<SAINT SId="11030400" CId="11030400"/>
+<SAINT SId="11030897" CId="11030897"/>
 </DAY>

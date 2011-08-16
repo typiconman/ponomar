@@ -1,13 +1,10 @@
-<DAY>
-
-<SAINT Name="St Léon le Thaumaturge, Evêque de Catane" Id="478" Type="1" />
-<SAINT Name="St Bessarion le Grand" Id="" Type="0" />
-<SAINT Name="St Agathon, Pape de Rome" Id="482" Type="0" />
-<SAINT Name="St Cindée, Evêque de Pisidie" Id="" Type="0" />
-<SAINT Name="St Plotin" Id="" Type="0" />
-<SAINT Name="St Corneille de Pskov et son disciple Bassien" Id="1288" Type="0" />
-<SAINT Name="St Eleuthère, Evêque de Tournai" Id="" Type="0" />
-<SAINT Name="St Eucher, Evêque d'Orléans" Id="" Type="0" />
-<SAINT Name="St Agathon des Grottes de Kiev" Id="60" Type="0" />
-
+<DAY><SAINT SId="478" CId="478"/>
+<SAINT SId="02200097" CId="02200097"/>
+<SAINT SId="482" CId="482"/>
+<SAINT SId="02200197" CId="02200197"/>
+<SAINT SId="02200297" CId="02200297"/>
+<SAINT SId="1288" CId="1288"/>
+<SAINT SId="02200397" CId="02200397"/>
+<SAINT SId="02200497" CId="02200497"/>
+<SAINT SId="60" CId="60"/>
 </DAY>
