@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME Short="saints"/>
+<NAME Nominative="St Syméon le Théodoque («celui qui a reçu Dieu») et Ste Anne la Prophétesse" Cmd="!(doy ==32 &amp;&amp; nday == -48)"/>
+<NAME Nominative="St Syméon le Théodoque («celui qui a reçu Dieu») et Ste Anne la Prophétesse (transfert du mardi)" Cmd="doy ==32 &amp;&amp; nday == -48"/>
+<SERVICE Type="2"/></SAINT>

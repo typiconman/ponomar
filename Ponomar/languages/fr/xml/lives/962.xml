@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME Short="St Jean"/>
+<NAME Nominative="Synaxe du St Apôtre et Evangéliste Jean le Théologien" Cmd="doy != 268"/>
+<NAME Nominative="Mémoire du transfert de St Jean le Théologien" Cmd="doy == 268"/>
+<SERVICE Type="5"/></SAINT>

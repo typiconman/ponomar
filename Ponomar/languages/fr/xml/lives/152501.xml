@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME Short="sts Cyrille et Méthode"/>
+<NAME Nominative="Sts Cyrille et Méthode, Illuminateurs des Slaves" Cmd="nday != 51"/>
+<NAME Nominative="Sts Cyrille et Méthode, Illuminateurs des Slaves [transféré de lundi]" Cmd="nday == 51"/>
+></SAINT>

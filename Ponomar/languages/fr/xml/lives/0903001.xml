@@ -1,0 +1,4 @@
+﻿<SAINT>
+<NAME Nominative="&lt;i&gt;La fête des trois hiérarche est transfert au mardi&lt;/i&gt;" Cmd="nday == -53"/>
+<NAME Nominative="&lt;i&gt;La fête des trois hiérarche est transfert au jeudi&lt;/i&gt;" Cmd="nday == -51"/>
+</SAINT>
