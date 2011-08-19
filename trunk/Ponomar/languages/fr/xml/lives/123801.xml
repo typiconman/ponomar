@@ -1,0 +1,4 @@
+﻿<SAINT>
+<NAME Nominative="&lt;i&gt;Le service pour les saints martyrs est chanté au mardi prochain.&lt;/i&gt;" Cmd="nday == -17 || nday == -25"/>
+<NAME Nominative="&lt;i&gt;Le service pour les saints martyrs est chanté au cinquième dimanche du carême.&lt;/i&gt;" Cmd="nday == -15"/>
+</SAINT>

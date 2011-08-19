@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME  Short="St. Jean"/>
+<NAME Nominative="Le 1-ère et seconde invention du chef de St. Jean le Baptiste" Cmd="doy == 54"/>
+<NAME Nominative="Le 1-ère et seconde invention du chef de St. Jean le Baptiste (transféré du 24 février)" Cmd="doy != 54"/>
+<SERVICE Type="4"/></SAINT>

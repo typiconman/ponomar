@@ -1,0 +1,20 @@
+﻿<SAINT>
+<NAME Short="Georges"/>
+<NAME Nominative="St. Grand Martyr Georges le Tropéophore et ses compagnons" Cmd="doy == 112"/>
+<NAME Nominative="St. Grand Martyr Georges le Tropéophore et ses compagnons (transféré de Pâques)" Cmd="doy == 113"/>
+<NAME Nominative="St. Grand Martyr Georges le Tropéophore et ses compagnons (transféré de saint et grand samedi)" Cmd="doy == 114"/>
+<NAME Nominative="St. Grand Martyr Georges le Tropéophore et ses compagnons (transféré de saint et grand vendredi)" Cmd="doy == 115"/>
+<LIFE Id="orthodoxwiki" Copyright="">
+&lt;p&gt;Saint Georges, né entre 275 et 280, était issu d'une famille riche et de haute condition de Cappadoce. Ayant perdu son père à l'âge de dix ans, sa mère Polychronia, qui était devenue chrétienne à l'insu de son mari, retourna dans sa patrie, la Palestine, et éleva son jeune fils dans les vertus évangéliques. De belle apparence, intelligent et de mœurs raffinées, Georges entra dans la carrière militaire à l'âge de dix-huit ans. Il plut à ses supérieurs et fut rapidement élevé au grade de tribun de la garde impériale, puis, semble-t-il, à la dignité de préfet.&lt;/p&gt;&lt;p&gt;De retour vers la Cappadoce après une campagne victorieuse, passant dans la région d'Attalia en Pamphylie, il délivra la fille du roi, qui avait été livrée en pâture à un redoutable dragon, et mit à mort la bête par la force surnaturelle qu'il tirait de sa foi. Admiratifs devant cette démonstration de la puissance accordée par le Christ à ses fidèles contre les puissances du mal, les païens de l'endroit se convertirent tous au christianisme. &lt;/p&gt;&lt;p&gt;Au temps de la Grande Persécution déclenchée par Dioclétien (vers 304), comme l'empereur avait convoqué à Nicomédie tous les gouverneurs d'Orient pour leur communiquer ses décrets contre les Chrétiens, Saint Georges, sentant que le moment était venu pour lui de confesser publiquement le Christ, distribua tous ses biens aux pauvres, affranchit ses esclaves et se rendit à la cour. Il se présenta au milieu de l'assemblée et reprocha au souverain de verser injustement le sang innocent des Chrétiens. &lt;/p&gt;&lt;p&gt;Il reçus le martyre avec beaucoup de gens qu'il a converti. &lt;/p&gt;&lt;p&gt;Conformément à la recommandation du Saint, son serviteur transporta ensuite sa précieuse relique dans sa patrie, Lydda (Diospolis) en Palestine (cf. 3 novembre), où d'innombrables miracles s'accomplirent dans la vaste église que l'on construisit en son honneur. &lt;/p&gt;&lt;p&gt;Le culte de Saint Georges a connu une immense faveur dans tout le monde chrétien, tant en Orient qu'en Occident. Il a été choisi pour protecteur de pays comme la Géorgie et la Grande-Bretagne, des milliers d'églises lui ont été consacrées et toute âme chrétienne voit en lui l'incarnation des vertus de vaillance, de patience dans les afflictions et de confiance en l'assistance de la Grâce que le Christ, Maître du combat, a recommandées à tous les soldats de la piété. &lt;/p&gt;
+</LIFE>
+<SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="4">
+Libérateur des captifs, * toi qui assures aux pauvres ta protection, * en qui les malades trouvent aussi médecin * et les princes, leur Seigneur, * victorieux défenseur, * saint Georges, victorieux et grand martyr * intercède auprès du Christ notre Dieu * pour le salut de nos âmes.
+</TROPARION>
+<KONTAKION Type="1" Tone="4">
+Cultivant toi-même par Dieu, tu devins * le vénérable jardinier de la foi, * recueillant les gerbes des vertus : * ayant semé dans les larmes, tu moissonnas dans la joie ; * pour le combat sanglant que tu menas, * tu obtins le Christ comme prix ; * par tes prières, saint Georges, tu procures à tous le pardon de leurs péchés.
+</KONTAKION>
+</LITURGY>
+</SERVICE>
+</SAINT>

@@ -1,0 +1,7 @@
+﻿<SAINT>
+<NAME Short="Ste Xénie"/>
+<NAME Nominative="Ste Xénie, Folle en Christ de St Petersbourg [transfert du samedi]" Cmd="nday == -58"/>
+<NAME Nominative="Ste Xénie, Folle en Christ de St Petersbourg [transfert du dimanche]" Cmd="dow == 6"/>
+<NAME Nominative="Ste Xénie, Folle en Christ de St Petersbourg" Cmd="nday != -57 &amp;&amp; dow != 0"/>
+<SERVICE Type="1"/>
+</SAINT>
