@@ -1,0 +1,19 @@
+﻿<SAINT>
+<NAME Short="the Synaxis"/>
+<NAME Nominative="Synaxis of the “Three Hierarchs”—Basil the Great, Gregory the Theologian, and John Chrysostom (Transferred from Wednesday)" Cmd="nday == -54"/>
+<NAME Nominative="Synaxis of the “Three Hierarchs”—Basil the Great, Gregory the Theologian, and John Chrysostom (Transferred from Friday)" Cmd="nday == -52"/>
+<NAME Nominative="Synaxis of the “Three Hierarchs”—Basil the Great, Gregory the Theologian, and John Chrysostom" Cmd="nday != -52 &amp;&amp; nday != -54"/>
+<LIFE Id="1" Copyright="Clergyman's Handbook. Copyright 1997 by translator Fr. S. Janos.">
+&lt;p&gt;“Three Saints”—the Synaxis (Assembly; Slav. Соборъ) of the Holy Œcumenical Teachers of the Church and Sainted-Hierarchs: Basil the Great, Gregory the Theologian, and John Chrysostom: At Constantinople for a long time there raged disputes about which one of the three sainted-hierarchs should be accorded the primacy of honour. One faction of the people preferred Saint Basil (Comm. 1 January), others stood forth for Saint Gregory the Theologian (Comm. 25 January), while a third reverenced Saint John Chrysostom (Comm. 13 November). &lt;/p&gt; &lt;p&gt;From this arose among church factions amongst Christians: some called themselves Basilians, others–Gregorians, and the third–Johannites. In accord with the will of God, in the year 1084 the three sainted-hierarchs appeared to the Euchantine metropolitan John, and in declaring that they were equal before God, they gave orders that the disputes should stop and that a day in common celebration of their memory should be established. &lt;/p&gt;
+</LIFE>
+<SERVICE Type="5">
+<LITURGY>
+<TROPARION Type="1" Tone="4">
+In that ye share in the ways of the apostles, O teachers of the whole world, entreat the Master of all, that He grant peace to the world and great mercy to our souls.
+</TROPARION>
+<KONTAKION Type="1" Tone="2" Podoben="5">
+The sacred and divinely eloquent preachers, the foremost among the teachers, O Lord, hast Thou received into the delight of Thy good things and into rest; for Thou hast accepted their pangs and labors as greater than any wholeburnt offering, O Thou Who alone dost glorify Thy saints.
+</KONTAKION>
+</LITURGY>
+</SERVICE>
+</SAINT>

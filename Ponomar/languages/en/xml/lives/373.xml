@@ -1,0 +1,6 @@
+<SAINT>
+<NAME Short="Meeting"/>
+<NAME Nominative="On this day we observe the Meeting of our Lord, God, and Saviour Jesus Christ" Cmd="doy == 31"/>
+<NAME Nominative="The Meeting of our Lord, God, and Saviour Jesus Christ in the Temple" Cmd="doy != 31"/>
+<SERVICE Type="7"/>
+</SAINT>

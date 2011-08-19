@@ -1,0 +1,19 @@
+﻿<SAINT>
+<NAME Short="Translation"/>
+<NAME Nominative="Translation of the relics of the Hieromartyr Ignatius the Godbearer, Bishop of Antioch (+ 107)" Cmd="nday != -52 &amp;&amp; nday != -51"/>
+<NAME Nominative="Translation of the relics of the Hieromartyr Ignatius the Godbearer, Bishop of Antioch (+ 107) &lt;i&gt;(The service can be transferred to Friday.)&lt;/i&gt;" Cmd="nday == -52"/>
+<NAME Nominative="Translation of the relics of the Hieromartyr Ignatius the Godbearer, Bishop of Antioch &lt;i&gt;(from Thursday)&lt;/i&gt; (+ 107)" Cmd="nday == -51"/>
+<SERVICE Type="2"/>
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+&lt;p&gt;The Transfer of the Relics of the hieromartyr Ignatios the God-Bearer: (the account about him is located under 20 December). After the holy hieromartyr Ignatios was thrown for devouring by wild beasts at Rome dying in the year 107–on orders of the emperor Trajan, Christians gathered up his bones and preserved them at Rome. Later in the year 108 they were transferred to the outskirts of Antioch. A second transfer–into the city of Antioch itself, was done in the year 438. And after the taking of Antioch by the Persians, the relics of hieromartyr Ignatios were returned to Rome and placed into the church in honour of the holy hieromartyr Pope Clement in the year 540 (but according to other histories, the year was 637). The hieromartyr introduced antiphonal singing into Church Divine-services. He has left us seven archpastoral epistles in which he provided instruction on faith, love and good works, he urged likewise the preserving of the oneness of the faith and to beware of heretics, and he bid the obeying and honouring of bishops, “looking upon the bishop as upon Christ Himself.”&lt;/p&gt; &lt;p&gt; “Hearken ye unto the bishop, so that God in turn might hearken unto you... let Baptism remain with you, like a shield and buckler; faith–like an helmet; love–like a spear; patience–like full armour.” &lt;/p&gt;</LIFE>
+<SERVICE>
+<LITURGY>
+<TROPARION Type="1" Tone="4">
+As thou didst share in the ways of the apostles/ and didst occupy their throne,/ thou didst find thine activity to be a passage to divine vision,/ O divinely inspired one./ Wherefore, ordering the word of truth,/ thou didst suffer for the Faith even to the shedding of thy blood.// O hieromartyr Ignatius, entreat Christ God, that our souls be saved.
+</TROPARION>
+<KONTAKION Type="1" Tone="4" Podoben="1">
+Thou didst shine forth from the East today,/ illumining all creation with thy doctrines, O God-bearing and divine Ignatius,// and art adorned with martyrdom.
+</KONTAKION>
+</LITURGY>
+</SERVICE>
+</SAINT>

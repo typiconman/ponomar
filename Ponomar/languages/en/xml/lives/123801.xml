@@ -1,0 +1,4 @@
+<SAINT>
+<NAME Nominative="&lt;i&gt;The Service for the Martyrs is sung on the previous Tuesday&lt;/i&gt;" Cmd="nday == -17 || nday == -25"/>
+<NAME Nominative="&lt;i&gt;The Service for the Martyrs is sung on the Fifth Sunday of Lent&lt;/i&gt;" Cmd="nday == -15"/>
+</SAINT>
