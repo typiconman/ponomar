@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME Short="显行灵迹"/>
+<NAME Nominative="显行灵迹者圣尼科拉之圣髑由小亚细亚的弥拉城被敬迁于意大利的巴里城纪念日（1087年）" Cmd="nday != 46"/>
+<NAME Nominative="显行灵迹者圣尼科拉之圣髑由小亚细亚的弥拉城被敬迁于意大利的巴里城纪念日（1087年）(transferred from Saturday)" Cmd="nday == 46"/>
+</SAINT>

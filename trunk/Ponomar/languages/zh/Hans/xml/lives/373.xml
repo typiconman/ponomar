@@ -1,0 +1,6 @@
+﻿<SAINT>
+<NAME Short="主进殿节"/>
+<SERVICE Type="7"/>
+<NAME Nominative="纪念我们的主，上帝，救主被奉献于圣殿，也纪念圣母取洁" Cmd="doy == 31"/>
+<NAME Nominative="主进殿节——纪念我们的主，上帝，救主被奉献于圣殿，也纪念圣母取洁" Cmd="doy != 31"/>
+</SAINT>

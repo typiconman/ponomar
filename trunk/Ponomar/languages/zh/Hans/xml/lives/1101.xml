@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME Nominative="圣伊萨克（君士坦丁堡的达尔马提亚修道院创建者，383年）" Short="圣伊萨克（君士坦丁堡的达尔马提亚修道院创建者，383年）"/>
+<SERVICE Type="0" Cmd="doy != 149"/>
+<SERVICE Type="1" Cmd="doy == 149"/>
+</SAINT>

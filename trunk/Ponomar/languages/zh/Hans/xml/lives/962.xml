@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME Short="神学家约安"/>
+<NAME Nominative="圣使徒，著福音者，神学家约安（98-117年间）" Cmd="doy != 268"/>
+<NAME Nominative="圣使徒，著福音者，神学家圣约安安息纪念日" Cmd="doy == 268"/>
+<SERVICE Type="5"/></SAINT>

@@ -1,0 +1,7 @@
+﻿<SAINT>
+<NAME Short="圣女克塞尼亚"/>
+<NAME Nominative="圣女克塞尼亚（彼得堡的成德者，圣愚，19世纪）［转自安息日／周六］" Cmd="nday == -58"/>
+<NAME Nominative="圣女克塞尼亚（彼得堡的成德者，圣愚，19世纪）［转自主日／周日］" Cmd="dow == 6"/>
+<NAME Nominative="圣女克塞尼亚（彼得堡的成德者，圣愚，19世纪）" Cmd="nday != -57 &amp;&amp; dow != 0"/>
+<SERVICE Type="1"/>
+</SAINT>
