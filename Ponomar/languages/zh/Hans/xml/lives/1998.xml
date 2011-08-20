@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME Short="纪念义人，迎主者圣西麦翁，及女先知圣安纳（公元1世纪）"/>
+<NAME Nominative="纪念义人，迎主者圣西麦翁，及女先知圣安纳（公元1世纪）（transferred from Tuesday）" Cmd="doy ==32 &amp;&amp; nday == -48"/>
+<NAME Nominative="纪念义人，迎主者圣西麦翁，及女先知圣安纳（公元1世纪）" Cmd="!(doy ==32 &amp;&amp; nday == -48)"/>
+<SERVICE Type="2"/></SAINT>

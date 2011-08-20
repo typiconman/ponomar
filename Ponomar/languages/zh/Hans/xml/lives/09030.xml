@@ -1,0 +1,6 @@
+﻿<SAINT>
+<NAME Short="三圣司教"/>
+<NAME Nominative="三圣司教（大圣瓦西里、神学家圣格里高利、圣金口约安）纪念日 （转自瞻礼四／周三）" Cmd="nday == -54"/>
+<NAME Nominative="三圣司教（大圣瓦西里、神学家圣格里高利、圣金口约安）纪念日 （转自预备日／周五）" Cmd="nday == -52"/>
+<NAME Nominative="三圣司教（大圣瓦西里、神学家圣格里高利、圣金口约安）纪念日" Cmd="nday != -52 &amp;&amp; nday != -54"/>
+</SAINT>

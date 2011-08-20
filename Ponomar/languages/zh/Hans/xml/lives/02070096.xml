@@ -1,0 +1,4 @@
+<SAINT>
+
+<NAME Nominative="主进殿节庆期" Short="主进殿节庆期" Cmd="nday == -55 || nday &lt;= -59"/>
+<SERVICE Type="0"/></SAINT>

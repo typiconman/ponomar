@@ -1,0 +1,7 @@
+﻿<SAINT>
+<NAME Short="神圣荣耀之大殉道者"/>
+<NAME Nominative="神圣荣耀之大殉道者，凯旋得胜者，显行灵迹者，格奥尔吉（303年）" Cmd="doy == 112"/>
+<NAME Nominative="神圣荣耀之大殉道者，凯旋得胜者，显行灵迹者，格奥尔吉（303年）（transferred from Pascha）" Cmd="doy == 113"/>
+<NAME Nominative="神圣荣耀之大殉道者，凯旋得胜者，显行灵迹者，格奥尔吉（303年）（transferred from Holy and Great Saturday）" Cmd="doy == 114"/>
+<NAME Nominative="神圣荣耀之大殉道者，凯旋得胜者，显行灵迹者，格奥尔吉（303年）（transferred from Holy and Great Friday）" Cmd="doy == 115"/>
+</SAINT>

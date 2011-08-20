@@ -1,0 +1,5 @@
+﻿<SAINT>
+<NAME Nominative="圣约纳安息纪念（基辅，莫斯科及全俄罗斯的都主教，1461年）" Short="圣约纳安息纪念"/>
+<SERVICE Type="0" Cmd="doy != 165"/>
+<SERVICE Type="4" Cmd="doy == 165"/>
+</SAINT>
