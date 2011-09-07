@@ -71,6 +71,7 @@ GNU General Public License for details.
 	<BOOK Id="I_Macc" Name="I Maccabees" Chapters="16" Short="I Macc" Intro="A reading from the first Book of Maccabees"/>
 	<BOOK Id="II_Macc" Name="II Maccabees" Chapters="15" Short="II Macc" Intro="A reading from the second Book of Maccabees"/>
 	<BOOK Id="III_Macc" Name="III Maccabees" Chapters="7"  Short="III Macc" Intro="A reading from the third Book of Maccabees"/>
+	<BOOK Id="IV_Macc" Name="IV Maccabees" Chapters="18" Short="IV Macc" Intro="A reading from the fourth Book of Maccabees" Note="This book is found in the appendix of the Greek Bible."/>
 	<BOOK Id="III_Esdra" Name="III Esdra" Chapters="16" Short="III Esdra" Intro="A reading from the third Book of Esdras"/>
 	<BOOK Id="Mt" Name="Matthew" Chapters="28" Short="Mt" Intro="A reading from the Holy Gospel according to Matthew"/>
 	<BOOK Id="Mk" Name="Mark" Chapters="16" Short="Mk" Intro="A reading from the Holy Gospel according to Mark"/>
@@ -284,8 +285,7 @@ GNU General Public License for details.
 	<BOOK Id="I_Paral" Name="I Paralipomenon" Chapters="29" Short="I Paral" Intro=""/>
 	<BOOK Id="II_Paral" Name="II Paralipomenon" Chapters="36" Short="II Paral" Intro=""/>
 	<BOOK Id="I_Esdra" Name="I Esdræ" Chapters="10" Short="Esdræ I" Intro=""/>
-	<BOOK Id="Nehem" Name="Nehemiæ" Chapters="13" Short="Nehem" Intro=""/>
-	<BOOK Id="II_Esdra" Name="II Esdræ" Chapters="9" Short="Esdræ II" Intro=""/>
+	<BOOK Id="Nehem" Name="II Esdræ" Chapters="13" Short="Esdræ II" Intro="" Note="also known as Nehemiæ"/>
 	<BOOK Id="Tobit" Name="Tobiæ" Chapters="14" Short="Tobiæ" Intro=""/>
 	<BOOK Id="Judith" Name="Judith" Chapters="16" Short="Judith" Intro=""/>
 	<BOOK Id="Esther" Name="Esther" Chapters="10" Short="Esther" Intro=""/>
@@ -318,7 +318,8 @@ GNU General Public License for details.
 	<BOOK Id="I_Macc" Name="I Machabæorum" Chapters="16" Short="I Mach" Intro=""/>
 	<BOOK Id="II_Macc" Name="II Machabæorum" Chapters="15" Short="II Mach" Intro=""/>
 	<BOOK Id="III_Macc" Name="III Machabæorum" Chapters="7"  Short="III Mach" Intro=""/>
-	<BOOK Id="III_Esdra" Name="III Esdræ" Chapters="16" Short="III Esdræ" Intro=""/>
+	<BOOK Id="II_Esdra" Name="III Esdræ" Chapters="9" Short="Esdræ III" Intro="" Note="This book is found in the appendix of the Latin Bible."/>
+	<BOOK Id="III_Esdra" Name="IV Esdræ" Chapters="16" Short="Esdræ IV" Intro="" Note="This book is found in the appendix of the Latin Bible."/>
 	<BOOK Id="Mt" Name="Matthæes" Chapters="28" Short="Mt" Intro=""/>
 	<BOOK Id="Mk" Name="Marcus" Chapters="16" Short="Mk" Intro=""/>
 	<BOOK Id="Lk" Name="Lucas" Chapters="24" Short="Lk" Intro=""/>
@@ -366,9 +367,9 @@ GNU General Public License for details.
 	<BOOK Id="IV_Kings" Name="众王传四" Chapters="25" Short="列下" Intro="恭读众王传四"/>
 	<BOOK Id="I_Paral" Name="史书补遗一" Chapters="29" Short="历上／编上" Intro="恭读史书补遗一（纪年书一）"/>
 	<BOOK Id="II_Paral" Name="史书补遗二" Chapters="36" Short="历下／编下" Intro="恭读史书补遗二（纪年书二）"/>
-	<BOOK Id="I_Esdra" Name="艾斯德拉纪一" Chapters="10" Short="拉／厄上" Intro="恭读艾斯德拉纪一"/>
+	<BOOK Id="II_Esdra" Name="艾斯德拉纪一" Chapters="9" Short="拉／厄上" Intro="恭读艾斯德拉纪一"/>
+	<BOOK Id="I_Esdra" Name="艾斯德拉纪二" Chapters="10" Short="艾斯德拉纪二" Intro="恭读艾斯德拉纪二"/>
 	<BOOK Id="Nehem" Name="奈俄弥亚纪" Chapters="13" Short="尼／厄下" Intro="恭读奈俄弥亚纪"/>
-	<BOOK Id="II_Esdra" Name="艾斯德拉纪二" Chapters="9" Short="艾斯德拉纪二" Intro="恭读艾斯德拉纪二"/>
 	<BOOK Id="Tobit" Name="托维特传" Chapters="14" Short="多" Intro="恭读托维特传"/>
 	<BOOK Id="Judith" Name="虞狄特传" Chapters="16" Short="友" Intro="恭读虞狄特传"/>
 	<BOOK Id="Esther" Name="艾斯提尔传" Chapters="10" Short="帖／艾" Intro="恭读艾斯提尔传"/>
@@ -401,7 +402,8 @@ GNU General Public License for details.
 	<BOOK Id="I_Macc" Name="玛喀维传一" Chapters="16" Short="加上" Intro="恭读玛喀维传一"/>
 	<BOOK Id="II_Macc" Name="玛喀维传二" Chapters="15" Short="加下" Intro="恭读玛喀维传三"/>
 	<BOOK Id="III_Macc" Name="玛喀维传三" Chapters="7"  Short="玛喀维传三" Intro="恭读玛喀维传三"/>
-	<BOOK Id="III_Esdra" Name="艾斯德拉纪三" Chapters="16" Short="艾斯德拉纪三" Intro="恭读艾斯德拉纪三"/>
+	<BOOK Id="IV_Macc" Name="玛喀维传四" Chapters="18" Short="玛喀维传四" Intro="恭读玛喀维传四" Note="圣经希腊文版本附录"/>
+	<BOOK Id="III_Esdra" Name="艾斯德拉纪三" Chapters="16" Short="艾斯德拉纪三" Intro="恭读艾斯德拉纪三" Note="圣经斯拉夫语译本附录"/>
 	<BOOK Id="Mt" Name="玛特泰福音" Chapters="28" Short="太／玛" Intro="恭读圣福音依玛特泰所传者"/>
 	<BOOK Id="Mk" Name="玛尔克福音" Chapters="16" Short="可／谷" Intro="恭读圣福音依玛尔克所传者"/>
 	<BOOK Id="Lk" Name="路喀福音" Chapters="24" Short="路加" Intro="恭读圣福音依路喀所传者"/>
@@ -448,9 +450,9 @@ GNU General Public License for details.
 	<BOOK Id="IV_Kings" Name="眾王傳四" Chapters="25" Short="列下" Intro="恭讀眾王傳四"/>
 	<BOOK Id="I_Paral" Name="史書補遺一" Chapters="29" Short="歷上／編上" Intro="恭讀史書補遺一（紀年書一）"/>
 	<BOOK Id="II_Paral" Name="史書補遺二" Chapters="36" Short="歷下／編下" Intro="恭讀史書補遺二（紀年書二）"/>
-	<BOOK Id="I_Esdra" Name="艾斯德拉紀一" Chapters="10" Short="拉／厄上" Intro="恭讀艾斯德拉紀一"/>
+	<BOOK Id="II_Esdra" Name="艾斯德拉紀一" Chapters="9" Short="艾斯德拉紀一" Intro="恭讀艾斯德拉紀一"/>
+	<BOOK Id="I_Esdra" Name="艾斯德拉紀二" Chapters="10" Short="拉／厄上" Intro="恭讀艾斯德拉紀二"/>
 	<BOOK Id="Nehem" Name="奈俄彌亞紀" Chapters="13" Short="尼／厄下" Intro="恭讀奈俄彌亞紀"/>
-	<BOOK Id="II_Esdra" Name="艾斯德拉紀二" Chapters="9" Short="艾斯德拉紀二" Intro="恭讀艾斯德拉紀二"/>
 	<BOOK Id="Tobit" Name="托維特傳" Chapters="14" Short="多" Intro="恭讀托維特傳"/>
 	<BOOK Id="Judith" Name="虞狄特傳" Chapters="16" Short="友" Intro="恭讀虞狄特傳"/>
 	<BOOK Id="Esther" Name="艾斯提爾傳" Chapters="10" Short="帖／艾" Intro="恭讀艾斯提爾傳"/>
@@ -483,7 +485,8 @@ GNU General Public License for details.
 	<BOOK Id="I_Macc" Name="瑪喀維傳一" Chapters="16" Short="加上" Intro="恭讀瑪喀維傳一"/>
 	<BOOK Id="II_Macc" Name="瑪喀維傳二" Chapters="15" Short="加下" Intro="恭讀瑪喀維傳三"/>
 	<BOOK Id="III_Macc" Name="瑪喀維傳三" Chapters="7"  Short="瑪喀維傳三" Intro="恭讀瑪喀維傳三"/>
-	<BOOK Id="III_Esdra" Name="艾斯德拉紀三" Chapters="16" Short="艾斯德拉紀三" Intro="恭讀艾斯德拉紀三"/>
+	<BOOK Id="IV_Macc" Name="瑪喀維傳四" Chapters="18" Short="瑪喀維傳四" Intro="恭讀瑪喀維傳四" Note="聖經希臘文版本附錄"/>
+	<BOOK Id="III_Esdra" Name="艾斯德拉紀三" Chapters="16" Short="艾斯德拉紀三" Intro="恭讀艾斯德拉紀三" Note="聖經斯拉夫語譯本附錄"/>
 	<BOOK Id="Mt" Name="瑪特泰福音" Chapters="28" Short="太／瑪" Intro="恭讀聖福音依瑪特泰所傳者"/>
 	<BOOK Id="Mk" Name="瑪爾克福音" Chapters="16" Short="可／谷" Intro="恭讀聖福音依瑪爾克所傳者"/>
 	<BOOK Id="Lk" Name="路喀福音" Chapters="24" Short="路加" Intro="恭讀聖福音依路喀所傳者"/>
@@ -565,6 +568,7 @@ GNU General Public License for details.
 	<BOOK Id="I_Macc" Name="Μακκαβαίων αʹ" Chapters="16" Short="Μακ αʹ" Intro="A reading from the first Book of Maccabees"/>
 	<BOOK Id="II_Macc" Name="Μακκαβαίων βʹ" Chapters="15" Short="Μακ βʹ" Intro="A reading from the second Book of Maccabees"/>
 	<BOOK Id="III_Macc" Name="Μακκαβαίων γʹ" Chapters="7"  Short="Μακ γʹ" Intro="A reading from the third Book of Maccabees" Note="Some issues with versification."/>
+	<BOOK Id="IV_Macc" Name="Μακκαβαίων δʹ" Chapters="18" Short="Μακ δʹ" Intro="A reading from the fourth Book of Maccabees" Note="This book is found in the appendix of the Greek Bible."/>
 	<BOOK Id="III_Esdra" Name="Ἔσδρας γʹ" Chapters="16" Short="Ἔσδρας γʹ" Intro="A reading from the third Book of Esdras" Note="This book is not found in the Greek versions of the Bible."/>
 	<BOOK Id="Mt" Name="Εὐαγγέλιον κατὰ Ματθαῖον" Chapters="28" Short="Ματ" Intro="Εὐαγγέλιον ἐκ τοῦ κατὰ Ματθαῖον"/>
 	<BOOK Id="Mk" Name="Εὐαγγέλιον κατὰ Μᾶρκον" Chapters="16" Short="Μᾶρ" Intro="Εὐαγγέλιον ἐκ τοῦ κατὰ Μᾶρκον"/>
