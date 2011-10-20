@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Clean Wednesday" Short="Clean Wednesday"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 4th Tone" Tone="4">
 Thou knowest our frame, thou knowest our weakness, O Lover of mankind; we have sinned, but have not turned away from Thee, O God, nor have we stretched out our hands to a strange god. Spare us in Thy goodness, O Compassionate One. 
@@ -10,7 +9,7 @@ Thou knowest our frame, thou knowest our weakness, O Lover of mankind; we have s
 I will confess thee, O Lord
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
- with my whole heart.
+&lt;p&gt;with my whole heart.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="1">
 I will be glad and rejoice in Thee.

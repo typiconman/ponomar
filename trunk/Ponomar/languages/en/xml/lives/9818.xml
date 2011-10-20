@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Wednesday of the Fifth Week of Lent" Short="Wednesday of the Fifth Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
 The pains of the saints, which they suffered for Thee, O Lord, be as supplications, and all our pains do Thou heal, O Lover of mankind, we pray.
@@ -10,7 +9,7 @@ The pains of the saints, which they suffered for Thee, O Lord, be as supplicatio
 It is good to give praise unto the Lord
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
- and to chant unto Thy name, O Most High
+&lt;p&gt;and to chant unto Thy name, O Most High&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="1">
 To proclaim in the morning Thy mercy, and Thy truth by night.

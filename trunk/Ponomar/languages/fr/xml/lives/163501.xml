@@ -1,5 +1,5 @@
 ﻿<SAINT>
 <NAME Short="Transfer"/>
-<NAME Nominative="Transfert des Reliques de St Nicolas de Myre à Bari [transfert de samedi]" Cmd="nday == 46"/>
-<NAME Nominative="Transfert des Reliques de St Nicolas de Myre à Bari" Cmd="nday != 46"/>
+<NAME Nominative="Transfert des Reliques de St. Nicolas de Myre à Bari [transfert de samedi]" Cmd="nday == 46"/>
+<NAME Nominative="Transfert des Reliques de St. Nicolas de Myre à Bari" Cmd="nday != 46"/>
 <SERVICE Type="4"/></SAINT>

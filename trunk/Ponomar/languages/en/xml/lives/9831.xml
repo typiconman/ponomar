@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Thursday of the Third Week of Lent" Short="Thursday of the Third Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 3rd Tone" Tone="3">
 If Thou shouldest mark iniquities, O Lover of mankind, what hope of salvation is there for us? But as Thou art compassionate, from on high send down Thy help upon Thy people, O Lord.
@@ -10,7 +9,7 @@ If Thou shouldest mark iniquities, O Lover of mankind, what hope of salvation is
 O God, in Thy name save me
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
- and in Thy strength do Thou judge me.
+&lt;p&gt;and in Thy strength do Thou judge me.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="1">
 O God, hearken unto my prayer, give ear unto the words of my mouth.
@@ -19,7 +18,7 @@ O God, hearken unto my prayer, give ear unto the words of my mouth.
 Give ear, O God
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
- unto my prayer, and disdain not my supplication.
+&lt;p&gt;unto my prayer, and disdain not my supplication.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="2">
 Attend unto me, and hear me.

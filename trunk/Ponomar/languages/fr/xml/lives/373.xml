@@ -1,4 +1,4 @@
 ﻿<SAINT>
-<NAME Nominative="Aujourd'hui, nous célébrons la Sainte Rencontre (Hypapante) de notre Seigneur" Short="Sainte Rencontre" Cmd="doy == 31"/>
+<NAME Nominative="Aujourd’hui, nous célébrons la Sainte Rencontre (Hypapante) de notre Seigneur" Short="Sainte Rencontre" Cmd="doy == 31"/>
 <NAME Nominative="Sainte Rencontre (Hypapante) de notre Seigneur" Short="Sainte Rencontre" Cmd="doy != 31"/>
 <SERVICE Type="7"/></SAINT>

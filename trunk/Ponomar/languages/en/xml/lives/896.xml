@@ -1,8 +1,7 @@
 <SAINT>
-
-<NAME Nominative="Venerable Theodore Trichinas 'the Hair-Shirt Wearer', hermit near Constantinople" Short="Venerable Theodore"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
- The Monk Theodore the Trikhinian was born into a rich Constantinople family. In his youth he withdrew into a wilderness monastery in Thrace and accepted monasticism. The monk was strict in fasting, and he wore only a coarse prickly hairshirt, which was called a &quot;trikhinia&quot; (&quot;vlasyanitsa&quot;). This name also was given to the monastery in which he pursued asceticism. During his life the monk worked many miracles and healings. After his death there flowed from his holy relics a salubrious myrh, which healed many of the sick and cast out impure spirits. 	The years during which the monk Theodore lived is unknown.
+<NAME Nominative="Venerable Theodore Trichinas “the Hair-Shirt Wearer”, hermit near Constantinople" Short="Venerable Theodore"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman”s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+&lt;p&gt;The Monk Theodore the Trikhinian was born into a rich Constantinople family. In his youth he withdrew into a wilderness monastery in Thrace and accepted monasticism. The monk was strict in fasting, and he wore only a coarse prickly hairshirt, which was called a “trikhinia” (“vlasyanitsa”). This name also was given to the monastery in which he pursued asceticism. During his life the monk worked many miracles and healings. After his death there flowed from his holy relics a salubrious myrh, which healed many of the sick and cast out impure spirits.&lt;/p&gt;&lt;p&gt;The years during which the monk Theodore lived is unknown.&lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="1">
@@ -11,6 +10,6 @@
 <SERVICE>
 <LITURGY>
 <KONTAKION Type="1" Tone="4">
- Thou hast been shown to be all-wondrous in life, O wise father Theodore, and changing thy rags of haircloth, which are more precious than royal treasure on earth, in their place thou didst receive heavenly vesture. Pray thou ever in our behalf, O venerable one.
+&lt;p&gt;Thou hast been shown to be all-wondrous in life, O wise father Theodore, and changing thy rags of haircloth, which are more precious than royal treasure on earth, in their place thou didst receive heavenly vesture. Pray thou ever in our behalf, O venerable one.&lt;/p&gt;
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

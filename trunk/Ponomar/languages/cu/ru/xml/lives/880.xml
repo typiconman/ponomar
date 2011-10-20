@@ -3,5 +3,5 @@
 <SERVICE Type="0" Cmd="doy == 100"/>
 <SERVICE Type="1" Cmd="doy == 107"/>
 </SAINT>
-<!-- There seems to be some confusion here about the two saints, as they seem to be comemorated twice with the space of a week (April 11th and 18th).
+<!-There seems to be some confusion here about the two saints, as they seem to be comemorated twice with the space of a week (April 11th and 18th).
 The reason for this is not known. -->

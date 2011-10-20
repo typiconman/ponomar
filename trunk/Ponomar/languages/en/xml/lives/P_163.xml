@@ -1,11 +1,10 @@
-<COMMEMORATION>
-
+﻿<COMMEMORATION>
 <NAME>The Eve (Paramony) of the Theophany</NAME>
 <SERVICE>
-	<ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
-	<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
+<ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
+<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
 Today the nature of water is sanctified, and the Jordan is cloven, and its waters shall be withheld from flowing; the Master being shown washed therein.
-	</IDIOMEL><!-- Note the difference in assigned Tones here -->
+</IDIOMEL><!-- Note the difference in assigned Tones here -->
 <VERSE Type="1" >
 Therefore will I remember Thee from the land of the Jordan and Hermoniem. The waters saw Thee, O God, the waters saw Thee and were afraid.
 </VERSE>
@@ -28,7 +27,6 @@ The voice of the Lord is upon many waters; the voice of Thy thunder was in heave
 <VERSE Type="1P" >
 I will love Thee, O Lord, my strength; the Lord is my support, refuge and deliverer.
 </VERSE><!-- The last 3 words of these verse are not found in the Church Slavonic -->
-
 <IDIOMEL Type="31" Tone="8" Header="Тropar, Tone 8" Author="">
 Verily, the right hand of the Forerunner, Baptizer, and Prophet, exceeding all Prophets in honor,
 did tremble when he beheld Thee, O Lamb of God that beareth the sins of the world. And being
@@ -54,7 +52,6 @@ The waters saw Thee, O God; the waters saw Thee and were afraid.
 <VERSE Type="3P">
 The voice of the Lord is upon the waters; the God of glory thundered, the Lord is upon many waters.
 </VERSE><!-- This does not quite match the Church Slavonic version -->
-	
 <IDIOMEL Type="61" Tone="8" Header="Tropar, Tone 8" Author="">
 Thus sayeth the Lord to John, Come, O Prophet, and baptize me, Who have created Thee, the
 Illuminator and Purifier of all by grace. Touch my divine head and falter not, O Prophet. Let be
@@ -84,7 +81,6 @@ The voice of the Lord is upon the waters; the God of glory thundered, the Lord i
 <VERSE Type="6P" >
 Bring unto the Lord, ye sons of God, bring unto the Lord glory and honor.
 </VERSE>
-
 <IDIOMEL Type="91" Tone="7" Header="Tropar, Tone 7" Author="">
 It is an astonishing thing how the Maker of heaven and earth is seen naked in the river, accepting
 like a servant baptism from a servant for our salvation. Therefore, the ranks of the angels were
@@ -122,8 +118,6 @@ The Lord is my light and my salvation; whom shall I fear?
 <VERSE Type="9P">
 The Lord is the defender of my life; of whom shall I be afraid?
 </VERSE>
-
-	</ROYALHOURS>
+</ROYALHOURS>
 </SERVICE>
-
 </COMMEMORATION>

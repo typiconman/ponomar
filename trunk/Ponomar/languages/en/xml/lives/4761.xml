@@ -1,8 +1,7 @@
 <SAINT>
-
-<NAME Nominative="New Hieromartyr Arkadiy, Bishop of Bezhetsk (+1937)" Short="New Hieromartyr"/>
+<NAME Nominative="New Hieromartyr Arkadiy, Bishop of Bezhetsk († 1937)" Short="New Hieromartyr"/>
 <SERVICE Type="0"/><LIFE Id="bulgakov">
- He was murdered by the NKVD in Butovo near Moscow on 29 (16) December 1937. (full life needs translation)
+&lt;p&gt;He was murdered by the NKVD in Butovo near Moscow on 29 (16) December 1937. (full life needs translation)&lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="1">

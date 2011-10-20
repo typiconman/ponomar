@@ -1,8 +1,8 @@
 ﻿<SAINT>
 <NAME Short=""/>
-<NAME Nominative="&lt;i&gt;Le service pour l'invention du chef de St. Jean le Baptiste est transféré au vendredi de carnaval&lt;/i&gt;" Cmd="nday == -57"/>
-<NAME Nominative="&lt;i&gt;Le service pour l'invention du chef de St. Jean le Baptiste est transféré au mardi des laitages&lt;/i&gt;" Cmd="nday == -53"/>
-<NAME Nominative="&lt;i&gt;Le service pour l'invention du chef de St. Jean le Baptiste est transféré au jeudi des laitages&lt;/i&gt;" Cmd="nday == -51"/>
-<NAME Nominative="&lt;i&gt;Le service pour l'invention du chef de St. Jean le Baptiste est transféré au dimanche des laitages&lt;/i&gt;" Cmd="nday == -48"/>
-<NAME Nominative="&lt;i&gt;Le service pour l'invention du chef de St. Jean le Baptiste est transféré au samedi de St. Théodore&lt;/i&gt;" Cmd="nday == -47 || nday == -46 || nday == -45 || nday == -44"/>
+<NAME Nominative="&lt;i&gt;Le service pour l’invention du chef de St. Jean le Baptiste est transféré au vendredi de carnaval&lt;/i&gt;" Cmd="nday == -57"/>
+<NAME Nominative="&lt;i&gt;Le service pour l’invention du chef de St. Jean le Baptiste est transféré au mardi des laitages&lt;/i&gt;" Cmd="nday == -53"/>
+<NAME Nominative="&lt;i&gt;Le service pour l’invention du chef de St. Jean le Baptiste est transféré au jeudi des laitages&lt;/i&gt;" Cmd="nday == -51"/>
+<NAME Nominative="&lt;i&gt;Le service pour l’invention du chef de St. Jean le Baptiste est transféré au dimanche des laitages&lt;/i&gt;" Cmd="nday == -48"/>
+<NAME Nominative="&lt;i&gt;Le service pour l’invention du chef de St. Jean le Baptiste est transféré au samedi de St. Théodore&lt;/i&gt;" Cmd="nday == -47 || nday == -46 || nday == -45 || nday == -44"/>
 </SAINT>

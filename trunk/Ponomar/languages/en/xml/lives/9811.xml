@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Wednesday of the Sixth Week of Lent" Short="Wednesday of the Sixth Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 5th Tone" Tone="5">
 Deal with us according to Thy mercy, O Lord, and deliver us not up with our sins, O holy Master Almighty, we pray Thee.
@@ -10,7 +9,7 @@ Deal with us according to Thy mercy, O Lord, and deliver us not up with our sins
 O Lord, save your people, and bless Your inheritance
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
- Praise the Lord, O ye servants, praise ye the name of the Lord.
+&lt;p&gt;Praise the Lord, O ye servants, praise ye the name of the Lord.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="1">
 Blessed be the name of the Lord from henceforth and for evermore.

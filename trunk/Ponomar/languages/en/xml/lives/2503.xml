@@ -1,16 +1,15 @@
 <SAINT>
-
 <NAME Nominative="Martyrs Onisiphorus and Porphyrius of Ephesus (3rd-4th C)" Short="Martyrs Onisiphorus"/>
 <SERVICE Type="1"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-        The Holy Martyrs Onesiphorus and Porphyrius suffered for Christ during the reign of the Emperor Diocletian. After tortures and burning on an iron pad, they were attached to wild horses and dragged by them until they died. 
+&lt;p&gt;       The Holy Martyrs Onesiphorus and Porphyrius suffered for Christ during the reign of the Emperor Diocletian. After tortures and burning on an iron pad, they were attached to wild horses and dragged by them until they died. &lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="4">
- In their sufferings, O Lord,/ Thy martyrs received imperishable crowns from Thee our God;/ for, possessed of Thy might,/ they set at nought the tormentors and crushed the feeble audacity of the demons.// By their supplications save Thou our souls.
+&lt;p&gt;In their sufferings, O Lord, * Thy martyrs received imperishable crowns from Thee our God; * for, possessed of Thy might, * they set at nought the tormentors and crushed the feeble audacity of the demons. ** By their supplications save Thou our souls.&lt;/p&gt;
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
 <KONTAKION Type="1" Tone="2">
- Having suffered mightily,/ the two martyrs cast the arrogance of the enemy down to the ground,/ being illumined by the grace of the uncreated Tfinity,/ O glorious Onesiphorus and Porphyrius.// Pray ye unceasingly in behalf of us all.
+&lt;p&gt;Having suffered mightily, * the two martyrs cast the arrogance of the enemy down to the ground, * being illumined by the grace of the uncreated Tfinity, * O glorious Onesiphorus and Porphyrius. ** Pray ye unceasingly in behalf of us all.&lt;/p&gt;
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

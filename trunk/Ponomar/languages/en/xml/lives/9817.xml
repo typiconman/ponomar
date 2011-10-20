@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Thursday of the Great Canon of St Andrew" Short="Thursday of the Great Canon of St Andrew"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 6th Tone" Tone="6">
 O compassionate, long-suffering, almighty Lord, send down Thy mercy on Thy people.
@@ -19,7 +18,7 @@ Let the many islands be glad.
 O sing unto the Lord a new song, for the Lord hath wrought wondrous things
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
- His right hand His salvation.
+&lt;p&gt;His right hand His salvation.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="2">
 All the ends of the earth have seen the salvation of our God.

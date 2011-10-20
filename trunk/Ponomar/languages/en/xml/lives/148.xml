@@ -1,8 +1,7 @@
 <SAINT>
-
-<NAME Nominative="Venerable Theoctistus, Abbot at Cucomo in Sicily (+ 800)" Short="Venerable Theoctistus,"/>
+<NAME Nominative="Venerable Theoctistus, Abbot at Cucomo in Sicily († 800)" Short="Venerable Theoctistus"/>
 <SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
- The Monk Theoktistos founded a monastery in the city of Kucuma on the island of Sicily, where he became hegumen. At his monastery lived Greek monks, having fled persecution by the iconoclasts. The monk died in the year 800.
+&lt;p&gt;The Monk Theoktistos founded a monastery in the city of Kucuma on the island of Sicily, where he became hegumen. At his monastery lived Greek monks, having fled persecution by the iconoclasts. The monk died in the year 800.&lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="1">

@@ -1,5 +1,5 @@
 ﻿<SAINT>
 <NAME Short="transfert"/>
-<NAME Nominative="Tranfert des Reliques de St Ignace le Théophore, Evêque d'Antioche" Cmd="nday != -52"/>
-<NAME Nominative="Tranfert des Reliques de St Ignace le Théophore, Evêque d'Antioche &lt;i&gt;(Le service peut-être transfert au vendredi)&lt;/i&gt;" Cmd="nday == -52"/>
+<NAME Nominative="Tranfert des Reliques de St. Ignace le Théophore, Evêque d’Antioche" Cmd="nday != -52"/>
+<NAME Nominative="Tranfert des Reliques de St. Ignace le Théophore, Evêque d’Antioche &lt;i&gt;(Le service peut-être transfert au vendredi)&lt;/i&gt;" Cmd="nday == -52"/>
 <SERVICE Type="2"/></SAINT>

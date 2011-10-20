@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Tuesday of the Sixth Week of Lent" Short="Tuesday of the Sixth Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 5th Tone" Tone="5">
 An invincible wall hast Thou given to our city, the Virgin who bore Thee; through her, O Savior, do Thou rescue our souls from the evils that surround us, we pray.
@@ -10,7 +9,7 @@ An invincible wall hast Thou given to our city, the Virgin who bore Thee; throug
 Help me, O Lord my God
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
- and save me according to Thy mercy.
+&lt;p&gt;and save me according to Thy mercy.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="1">
 O God, my praise do not pass over in silence.

@@ -1,15 +1,15 @@
 <SAINT>
 <NAME Nominative="Transfer of the relics of Hieromartyr Phocas, Bishop of Sinope (403-404)" Short="Transfer of"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
- The Transfer of the Relics of the Priest-Martyr Phokas from Sinope to Constantinople occurred on 22 July in either the year 403 or 404. The account about him is located under 22 September.
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman”s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+&lt;p&gt;The Transfer of the Relics of the Priest-Martyr Phokas from Sinope to Constantinople occurred on 22 July in either the year 403 or 404. The account about him is located under 22 September.&lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="4">
- As thou didst share in the ways of the apostles/ and didst occupy their throne,/ thou didst find thine activity to be a passage to divine vision,/ O divinely inspired one./ Wherefore, ordering the word of truth,/ thou didst suffer for the Faith even to the shedding of thy blood.// O hieromartyr Phocas, entreat Christ God, that our souls be saved.
+&lt;p&gt;As thou didst share in the ways of the apostles * and didst occupy their throne, * thou didst find thine activity to be a passage to divine vision, * O divinely inspired one. * Wherefore, ordering the word of truth, * thou didst suffer for the Faith even to the shedding of thy blood. ** O hieromartyr Phocas, entreat Christ God, that our souls be saved.&lt;/p&gt;
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
 <KONTAKION Type="1" Tone="6">
- Offering up sacrifices as a high priest, O father,/ in the end thou didst offer thyself as a living sacrifice,/ bearing witness lawfully to Christ God,/ accepting death and strengthened by angels,/ who cried out to thee:// Come with us, O Phocas, and no-one will be against us!
+&lt;p&gt;Offering up sacrifices as a high priest, O father, * in the end thou didst offer thyself as a living sacrifice, * bearing witness lawfully to Christ God, * accepting death and strengthened by angels, * who cried out to thee: ** Come with us, O Phocas, and no-one will be against us!&lt;/p&gt;
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

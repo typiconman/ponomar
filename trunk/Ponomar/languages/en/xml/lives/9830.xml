@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Friday of the Third Week of Lent" Short="Friday of the Third Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 8th Tone" Tone="8">
 Through the power of Thy word Thou hast perfected all things, O God, and from nonbeing Thou hast brought us into being. Deliver us not up utterly because of our iniquities, O Sinless Lord, we pray.
@@ -19,7 +18,7 @@ Do you indeed decree what is right?
 O God, my helper art Thou
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
- and Thy mercy shall go before me.
+&lt;p&gt;and Thy mercy shall go before me.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="2">
 Rescue me from mine enemies, O God, and from them that rise up against me redeem me.

@@ -1,5 +1,5 @@
 ﻿<SAINT>
 <NAME Short="St. Procope"/>
-<NAME Nominative="St Procope le Décapolite (transféré du samedi)" Cmd="doy != 57"/>
-<NAME Nominative="St Procope le Décapolite" Cmd="doy == 57"/>
+<NAME Nominative="St. Procope le Décapolite (transféré du samedi)" Cmd="doy != 57"/>
+<NAME Nominative="St. Procope le Décapolite" Cmd="doy == 57"/>
 <SERVICE Type="1"/></SAINT>

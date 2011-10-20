@@ -1,4 +1,4 @@
 <SAINT>
-<NAME Nominative="Samedi avant l'Exaltation" Short="samedi avant l'Exaltation" Cmd="dow == 6"/>
-<NAME Nominative="" Short="samedi avant l'Exaltation" Cmd="dow != 6"/>
+<NAME Nominative="Samedi avant l’Exaltation" Short="samedi avant l’Exaltation" Cmd="dow == 6"/>
+<NAME Nominative="" Short="samedi avant l’Exaltation" Cmd="dow != 6"/>
 </SAINT>
