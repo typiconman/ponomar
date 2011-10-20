@@ -1,16 +1,15 @@
 <SAINT>
-
-<NAME Nominative="Martyrs Probos, Tarachos and Andronicus, at Tarsus in Cilicia (+304)" Short="Martyrs Probos,"/>
+<NAME Nominative="Martyrs Probos, Tarachos and Andronicus, at Tarsus in Cilicia († 304)" Short="Martyrs Probos"/>
 <SERVICE Type="1"/><LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
-        St. Tarachus, a Roman citizen and warrior, was born in Claudiopolis, Isauria. St. Probus, a Thracian, from Perga, Pamphylia, and St. Andronicus was the son of a famous citizen of Ephesus. For confessing Christ all severely suffered first in the city of Tarsus (in Cilicia), then in Mopsuestia and finally in the city of Anazarbus. They were all beheaded after undergoing terrible tortures in the year 304. 
+&lt;p&gt;       St. Tarachus, a Roman citizen and warrior, was born in Claudiopolis, Isauria. St. Probus, a Thracian, from Perga, Pamphylia, and St. Andronicus was the son of a famous citizen of Ephesus. For confessing Christ all severely suffered first in the city of Tarsus (in Cilicia), then in Mopsuestia and finally in the city of Anazarbus. They were all beheaded after undergoing terrible tortures in the year 304. &lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="5" Translator="Aleksandr Andreev">
- The heavenly powers were amazed at the struggles of the Holy Martyrs, for even in their mortal bodies, they fell upon the bodiless enemy by the power of the Cross, invisibly defeating them. Therefore they are praying to the Lord that He may have mercy on our souls.
+&lt;p&gt;The heavenly powers were amazed at the struggles of the Holy Martyrs, for even in their mortal bodies, they fell upon the bodiless enemy by the power of the Cross, invisibly defeating them. Therefore they are praying to the Lord that He may have mercy on our souls.&lt;/p&gt;
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
 <KONTAKION Type="1" Tone="2" Translator="Aleksandr Andreev">
- Soldiers and Martyrs of Christ, Probus, Tarachus, and Andronicus, Revealed to us the glory of the Trinity: For you cleansed all from the errors of atheism, Fighting valiantly for the faith, O honorable sufferers. 
+&lt;p&gt;Soldiers and Martyrs of Christ, Probus, Tarachus, and Andronicus, Revealed to us the glory of the Trinity: For you cleansed all from the errors of atheism, Fighting valiantly for the faith, O honorable sufferers. &lt;/p&gt;
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

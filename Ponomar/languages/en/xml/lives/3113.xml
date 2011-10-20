@@ -1,8 +1,7 @@
 <SAINT>
-
-<NAME Nominative="Venerable Mardarius, Abbot of the Caves of Kiev (13th C)" Short="Venerable Mardarius,"/>
+<NAME Nominative="Venerable Mardarius, Abbot of the Caves of Kiev (13th C)" Short="Venerable Mardarius"/>
 <SERVICE Type="0"/><LIFE Id="bulgakov">
- &lt;not available in English&gt;
+&lt;p&gt;&lt;not available in English&gt;&lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="1">

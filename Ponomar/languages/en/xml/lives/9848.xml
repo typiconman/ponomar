@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Clean Monday: Beginning of Great Lent" Short="Clean Monday: Beginning of Great Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in Tone 5" Tone="5">
 O Lord, O Lord, at the presence of Whose power all things do fear and tremble: we fall down before Thee, O Immortal One; we pray to Thee O Holy One: Save our souls, through the intercessions of Thy saints.
@@ -19,7 +18,7 @@ Blessed is the man that hath not walked in the counsel of the ungodly, nor stood
 Serve ye the lord with fear,
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
- and rejoice in him with trembling.
+&lt;p&gt;and rejoice in him with trembling.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="2">
 Why have the heathen raged, and the peoples meditated empty things?

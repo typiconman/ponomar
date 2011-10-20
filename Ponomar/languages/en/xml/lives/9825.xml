@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Wednesday of the Fourth Week of Lent" Short="Wednesday of the Fourth Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone&lt;br&gt;(Troparion of the Cross)" Tone="1">
 O Lord, save Your people and bless Your inheritance; grant victory to the faithful over their adversary, and by the power of your Cross guard your habitation.
@@ -19,7 +18,7 @@ Let them be turned back and brought to shame that desire evils against Thee.
 In Thee, O Lord
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
- have I hoped, let me not be put to shame in the age to come.
+&lt;p&gt;have I hoped, let me not be put to shame in the age to come.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="2">
 In thy righteousness deliver me.

@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Tuesday of the Second Week of Lent" Short="Tuesday of the Second Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 6th Tone" Tone="6">
 We cannot hymn Thee as is meet, but we ask as we pray: destroy us not with our iniquities, O Lord Who art ready to do good things.
@@ -10,7 +9,7 @@ We cannot hymn Thee as is meet, but we ask as we pray: destroy us not with our i
 O Lord, I have loved the beauty of Thy house
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
- and the place where Thy glory dwelleth.
+&lt;p&gt;and the place where Thy glory dwelleth.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="1">
 Judge me, O Lord, for in mine innocence have I walked.

@@ -1,8 +1,7 @@
 <SAINT>
-
-<NAME Nominative="New Hieromartyr Thaddeus, Archbishop of Tver (+1937)" Short="New Hieromartyr"/>
+<NAME Nominative="New Hieromartyr Thaddeus, Archbishop of Tver († 1937)" Short="New Hieromartyr"/>
 <SERVICE Type="0"/><LIFE Id="bulgakov">
- Thaddeus (Uspensky), murdered by the Bolsheviks December 31, 1937. (Full life needs to be translated).
+&lt;p&gt;Thaddeus (Uspensky), murdered by the Bolsheviks December 31, 1937. (Full life needs to be translated).&lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="1">

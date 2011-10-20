@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Friday of the Second Week of Lent" Short="Friday of the Second Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
 By night and by day we fall down before Thee, O Lord, imploring Thee to grant unto our souls remission of sins, that in peace we may worship and glorify Thee, O Lover of mankind.
@@ -10,7 +9,7 @@ By night and by day we fall down before Thee, O Lord, imploring Thee to grant un
 O Lord, rebuke me not in Thine anger
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
- nor chasten me in Thy wrath.
+&lt;p&gt;nor chasten me in Thy wrath.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="1">
 For Thine arrows are fastened in me.
@@ -19,7 +18,7 @@ For Thine arrows are fastened in me.
 Hearken unto my prayer, O Lord
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
- and unto my supplication give ear.
+&lt;p&gt;and unto my supplication give ear.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="2">
 I said: I will take heed to my ways lest I sin with my tongue.

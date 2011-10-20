@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Tuesday of the Fifth Week of Lent" Short="Tuesday of the Fifth Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 3rd Tone" Tone="3">
 Our helper is the God of Jacob, and He is our defender in the day of affliction.
@@ -19,7 +18,7 @@ O Lord God of my salvation, by day have I cried and by night before Thee.
 Blessed is the people that knoweth jubilation.
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
- and Thy salvation do Thou give unto us.
+&lt;p&gt;and Thy salvation do Thou give unto us.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="2">
 O Lord, in the light of Thy face shall they walk.

@@ -1,8 +1,7 @@
 <SAINT>
-
-<NAME Nominative="Venerable Pardus, the Hermit of Palestine" Short="Venerable Pardus,"/>
+<NAME Nominative="Venerable Pardus, the Hermit of Palestine" Short="Venerable Pardus"/>
 <SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
- Born a Roman citizen, he originally was a driver. Once when lodging for the night his cart crushed a child, the Venerable Pardus, with troubled conscience, left for Mount Arion in Palestine, and accepted monasticism and before his death he carried out the strict ascetical efforts of desert living, constantly being distressed about his involuntary sin of manslaughter. He died in the sixth century. 
+&lt;p&gt;Born a Roman citizen, he originally was a driver. Once when lodging for the night his cart crushed a child, the Venerable Pardus, with troubled conscience, left for Mount Arion in Palestine, and accepted monasticism and before his death he carried out the strict ascetical efforts of desert living, constantly being distressed about his involuntary sin of manslaughter. He died in the sixth century. &lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="1">

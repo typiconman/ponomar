@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Friday of the Fifth Week of Lent" Short="Friday of the Fifth Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 8th Tone" Tone="8">
 Supremely praised art Thou, O Christ our God, Who shakest the earth, to convert and to save them that dwell therein, and yet establishest it in Thy goodness and ineffable compassion; through the intercessions of the Theotokos, have mercy on us.
@@ -19,7 +18,7 @@ I will chant and have understanding in a blameless path.
 O Lord, hear my prayer
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
- and let my cry come unto Thee.
+&lt;p&gt;and let my cry come unto Thee.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="2">
 Turn not Thy face from me.

@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Monday of the Third Week of Lent" Short="Monday of the Third Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 4th Tone" Tone="4">
 Heal our brokenness, for we are weak and crippled with sin, O Physician of our souls, O Lover of mankind, Who knowest the mind of man.
@@ -19,7 +18,7 @@ As the hart panteth after the fountains of water, so panteth my soul after Thee,
 He is the salvation of my countenance, and my God.
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
- and unto my supplication give ear.
+&lt;p&gt;and unto my supplication give ear.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="2">
 Judge me, O God, and give judgment to my cause.

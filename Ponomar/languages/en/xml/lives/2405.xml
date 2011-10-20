@@ -1,16 +1,15 @@
 <SAINT>
-
-<NAME Nominative="Venerable Matrona, Abbess of Constantinople (+c.492)" Short="Venerable Matrona,"/>
+<NAME Nominative="Venerable Matrona, Abbess of Constantinople († c. 492)" Short="Venerable Matrona"/>
 <SERVICE Type="1"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-       Born in Perga, Pamphilia, and exhausted by the sufferings at the hand of her husband, she hid herself from him and in the clothes of a eunuch was tonsured with the name of Babylus in the men's monastery of the Blessed Bassian (October 10). Then from here she left for the women's monastery in Emesa, and was in Jerusalem and on Mount Sinai and, finally, came back to Constantinople where she founded a women's monastery. After a long and God-pleasing ascetical effort she died in peace in 492. 
+&lt;p&gt;      Born in Perga, Pamphilia, and exhausted by the sufferings at the hand of her husband, she hid herself from him and in the clothes of a eunuch was tonsured with the name of Babylus in the men”s monastery of the Blessed Bassian (October 10). Then from here she left for the women”s monastery in Emesa, and was in Jerusalem and on Mount Sinai and, finally, came back to Constantinople where she founded a women”s monastery. After a long and God-pleasing ascetical effort she died in peace in 492. &lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="8">
- In thee, O mother, that which was created according to the image of God was manifestly saved./ For accepting thy cross thou didst follow after Christ,/ and praying thou didst learn to disdain the flesh,/ for thou didst transcend it to take care of thine immortal soul.// Wherefore, with the angels doth thy soul rejoice, O venerable Matrona.
+&lt;p&gt;In thee, O mother, that which was created according to the image of God was manifestly saved. * For accepting thy cross thou didst follow after Christ, * and praying thou didst learn to disdain the flesh, * for thou didst transcend it to take care of thine immortal soul. ** Wherefore, with the angels doth thy soul rejoice, O venerable Matrona.&lt;/p&gt;
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
 <KONTAKION Type="1" Tone="2">
- For the love of the Lord, O venerable Matrona,/ thou didst ignore thy desire for rest,/ illumining thy spirit with fasting;/ by thy supplications cast down the arro­gance of the adversaries, for mightily didst thou vanquish the wild beasts.
+&lt;p&gt;For the love of the Lord, O venerable Matrona, * thou didst ignore thy desire for rest, * illumining thy spirit with fasting; * by thy supplications cast down the arro­gance of the adversaries, for mightily didst thou vanquish the wild beasts.&lt;/p&gt;
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

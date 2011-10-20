@@ -1,4 +1,3 @@
 <SAINT>
-<NAME Nominative="32nd Sunday after Pentecost" Short="32nd Sunday after Pentecost" Cmd="nday != -77"/><NAME Nominative="Zacchaeus's Sunday, 32nd Sunday after
-
- Pentecost" Short="Zacchaeus" Cmd="nday == -77"/></SAINT>
+<NAME Nominative="32nd Sunday after Pentecost" Short="32nd Sunday after Pentecost" Cmd="nday != -77"/><NAME Nominative="Zacchæus”s Sunday, 32nd Sunday after
+&lt;p&gt;Pentecost" Short="Zacchæus" Cmd="nday == -77"/></SAINT>&lt;/p&gt;

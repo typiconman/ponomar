@@ -1,12 +1,11 @@
 <SAINT>
-
-<NAME Nominative="Hieromartyr Timothy, Bishop of Prussa (+361-363)" Short="Hieromartyr Timothy,"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman's Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
- The PriestMartyr Timothy, Bishop of Prussa (Bithynia), received from the Lord the gift of wonderworking because of his purity and sanctity of life. At Prussa he converted many pagans to the faith in Christ. The emperor Julian the Apostate (361-363), upon hearing about Saint Timothy had him locked up in prison, but even there also the saint continued to preach the Gospel. Julian forbade him to anymore teach about the Name of Jesus Christ, but the saint continued to spread about the Christian faith. Finally, the emperor gave orders to behead the saint. The holy relics of the saint were afterwards transferred to Constantinople.
+<NAME Nominative="Hieromartyr Timothy, Bishop of Prussa († 361-363)" Short="Hieromartyr Timothy"/>
+<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman”s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+&lt;p&gt;The Hieromartyr Timothy, Bishop of Prussa (Bithynia), received from the Lord the gift of wonderworking because of his purity and sanctity of life. At Prussa he converted many pagans to the faith in Christ. The emperor Julian the Apostate (361-363), upon hearing about Saint Timothy had him locked up in prison, but even there also the saint continued to preach the Gospel. Julian forbade him to anymore teach about the Name of Jesus Christ, but the saint continued to spread about the Christian faith. Finally, the emperor gave orders to behead the saint. The holy relics of the saint were afterwards transferred to Constantinople.&lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="4">
- No troparion in the Menaion
+&lt;p&gt;No troparion in the Menaion&lt;/p&gt;
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>

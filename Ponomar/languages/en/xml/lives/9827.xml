@@ -1,7 +1,6 @@
 <SAINT>
 <NAME Nominative="Monday of the Fourth Week of Lent" Short="Monday of the Fourth Week of Lent"/>
 <SERVICE>
-
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 7th Tone" Tone="7">
 O Lord, rebuke not in Thine anger the people that have sinned, nor chasten us in Thy wrath, O Thou Who art good; for all the earth doth glorify Thee, and we pray: spare us, O Holy One.
@@ -19,7 +18,7 @@ Shall not my soul be subjected to God? For from Him is my salvation.
 So shall I bless Thee in my life.
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
- and Thy mercy shall go before me.
+&lt;p&gt;and Thy mercy shall go before me.&lt;/p&gt;
 </PROKEIMENON>
 <STICHOS Type="2">
 O God, my God, unto Thee I rise early at dawn, my soul hath thirsted for Thee.
