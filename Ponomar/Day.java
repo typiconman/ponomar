@@ -92,6 +92,7 @@ public class Day implements DocHandler {
             //System.out.println("===============\n"+helper.langFileFind(StringOp.dayInfo.get("LS").toString(), FileName + ".xml"));
             QDParser.parse(this, frf);
         } catch (Exception e) {
+            System.out.println("In file name, "+helper.langFileFind(StringOp.dayInfo.get("LS").toString(), FileName + ".xml")+" an error occurred of type: ");
             e.printStackTrace();
         }
     }

@@ -78,14 +78,14 @@ public class Commemoration1 implements DocHandler {
 
     public void readCommemoration(String SId, String CId) //throws IOException
     {
-
+         String FileName="";
         try {
             combine = true;
             String language = StringOp.dayInfo.get("LS").toString();
             String[] pathS = language.split("/");
             int path = pathS.length;
             String pathF = "";
-
+           
             for (int i = -1; i < path; i++) {
                 if (i == -1) {
                     pathF = "";
@@ -95,7 +95,7 @@ public class Commemoration1 implements DocHandler {
                 //System.out.println("pathF=" + pathF);
 
 
-                String FileName = "Ponomar/languages/" + pathF + "/xml/lives/" + CId + ".xml";
+                FileName = "Ponomar/languages/" + pathF + "/xml/lives/" + CId + ".xml";
                 File f = new File(FileName);             
 
                 if (f.exists()) {
@@ -110,6 +110,7 @@ public class Commemoration1 implements DocHandler {
             //BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(), "xml/lives/" + CId + ".xml")), "UTF8"));
             //QDParser.parse(this, frf);
         } catch (Exception e) {
+            System.out.println("In file name, "+FileName+" an error occurred of type: ");
             e.printStackTrace();
         }
     }
