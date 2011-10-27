@@ -6,5 +6,5 @@
 <SAINT SId="042302" CId="042302"/>
 <SAINT SId="042303" CId="042303"/>
 <SAINT SId="042304" CId="042304"/>
-<SAINT SId="0949701" CId="0949701" Cmd="nday <= 0"/>
+<SAINT SId="0949701" CId="0949701" Cmd="nday &lt;= 0"/>
 </DAY>

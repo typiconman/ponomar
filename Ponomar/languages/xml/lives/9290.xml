@@ -5,15 +5,15 @@
 <SCRIPTURE Type="apostol" Reading="Heb_12:25-26, 13:22-25" Cmd="nday == -89" />
 <SCRIPTURE Type="apostol" Reading="Heb_9:8-10, 15-23" Cmd="nday == -96" />
 <!-- Adding the Lucan Jump Reading for the 31 Week Reading (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Cmd="((doy >= 364 &amp;&amp; doy <= 364) || (doy >= 0 &amp;&amp; doy <= 5)) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Cmd="((doy &gt;= 364 &amp;&amp; doy &lt;= 364) || (doy >= 0 &amp;&amp; doy <= 5)) &amp;&amp; GS == 1"/>
 <!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Cmd="(doy >= 13 &amp;&amp; doy <= 19 &amp;&amp; nday == -89) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Cmd="(doy &gt;= 13 &amp;&amp; doy &lt;= 19 &amp;&amp; nday == -89) &amp;&amp; GS == 1"/>
 <!-- Adding the Supplementary Readings: 5 more weeks (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Cmd="(doy >= 13 &amp;&amp; doy <= 19 &amp;&amp; nday == -96) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Cmd="(doy &gt;= 13 &amp;&amp; doy &lt;= 19 &amp;&amp; nday == -96) &amp;&amp; GS == 1"/>
 <!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Cmd="(doy >= 6 &amp;&amp; doy <= 12 &amp;&amp; nday == -89) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Cmd="(doy &gt;= 6 &amp;&amp; doy &lt;= 12 &amp;&amp; nday == -89) &amp;&amp; GS == 1"/>
 <!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Cmd="(doy >= 6 &amp;&amp; doy <= 12 &amp;&amp; nday == -96) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Cmd="(doy &gt;= 6 &amp;&amp; doy &lt;= 12 &amp;&amp; nday == -96) &amp;&amp; GS == 1"/>
 <!-- Readings for the Jordanville implementation -->
 <SCRIPTURE Type="gospel" Reading="Mk_12:18-27"  Cmd="(nday == -89) &amp;&amp; GS == 0" /> 
 <SCRIPTURE Type="gospel" Reading="Mk_8:22-26"  Cmd="(nday == -96) &amp;&amp; GS == 0" />
