@@ -9,13 +9,13 @@
 <SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Cmd="(nday == -84 &amp;&amp; GS == 1) || GS == 0" />
 <SCRIPTURE Type="apostol" Reading="Col_3:12-16" Cmd="nday == -91 &amp;&amp; GS == 1" />
 <!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Cmd="(doy >= 18 &amp;&amp; doy <= 24 &amp;&amp; nday == -84) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Cmd="(doy &gt;= 18 &amp;&amp; doy &lt;= 24 &amp;&amp; nday == -84) &amp;&amp; GS == 1"/>
 <!-- Adding the Supplementary Readings: 5 more weeks (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Cmd="(doy >= 18 &amp;&amp; doy <= 24 &amp;&amp; nday == -91) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Cmd="(doy &gt;= 18 &amp;&amp; doy &lt;= 24 &amp;&amp; nday == -91) &amp;&amp; GS == 1"/>
 <!-- Adding the Supplementary Readings: 3 more weeks (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Cmd="(doy >= 11 &amp;&amp; doy <= 17 &amp;&amp; nday == -84) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Cmd="(doy &gt;= 11 &amp;&amp; doy &lt;= 17 &amp;&amp; nday == -84) &amp;&amp; GS == 1"/>
 <!-- Adding the Supplementary Readings: 4 more weeks (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Cmd="(doy >= 11 &amp;&amp; doy <= 17 &amp;&amp; nday == -91) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Cmd="(doy &gt;= 11 &amp;&amp; doy &lt;= 17 &amp;&amp; nday == -91) &amp;&amp; GS == 1"/>
 <!-- Readings for the Jordanville implementation -->
 <!-- THEOPHANY JUPM IMPLEMENTATIONS: Always #31 (corrected 1/28/08 n.s) -->
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43"  Cmd="GS == 0" /> 
