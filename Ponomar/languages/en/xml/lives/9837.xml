@@ -2,10 +2,10 @@
 <NAME Nominative="Friday of the Second Week of Lent" Short="Friday of the Second Week of Lent"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 1&lt;sup&gt;st&lt;/sup&gt; Tone" Tone="1">
 By night and by day we fall down before Thee, O Lord, imploring Thee to grant unto our souls remission of sins, that in peace we may worship and glorify Thee, O Lover of mankind.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 O Lord, rebuke me not in Thine anger
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ O Lord, rebuke me not in Thine anger
 <STICHOS Type="1">
 For Thine arrows are fastened in me.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 Hearken unto my prayer, O Lord
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

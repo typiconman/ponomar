@@ -2,10 +2,10 @@
 <NAME Nominative="Clean Thursday" Short="Clean Thursday"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 1&lt;sup&gt;st&lt;/sup&gt; Tone" Tone="1">
 From enemies visible and invisible deliver us, O Lord, lest haply the heathen say: Where is their God? Let them understand, O Master, that Thou disregardest the sins of Thy people that repent.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 1st Tone" Tone="1">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 1&lt;sup&gt;st&lt;/sup&gt; Tone" Tone="1">
 When the Lord hath turned back the captivity of His people.
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ When the Lord hath turned back the captivity of His people.
 <STICHOS Type="1">
 The fool hath said in his heart: there is no God.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 O Lord, who shall abide in Thy tabernacle?
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

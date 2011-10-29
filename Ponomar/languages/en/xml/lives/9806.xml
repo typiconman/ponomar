@@ -2,10 +2,10 @@
 <NAME Nominative="Great Monday" Short="Great Monday"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 6th Tone" Tone="6">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 With a contrite soul we fall down before Thee, and we pray unto Thee, O Savior of the world: for Thou art the God of them that repent.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 When the Lord turned again the captivity of Sion.
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ When the Lord turned again the captivity of Sion.
 <STICHOS Type="1">
 Then was our mouth filled with joy.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 Except the Lord build the house,
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

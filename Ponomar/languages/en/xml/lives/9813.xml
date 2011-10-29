@@ -2,10 +2,10 @@
 <NAME Nominative="Monday of the Sixth Week of Lent" Short="Monday of the Sixth Week of Lent"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 6th Tone" Tone="6">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 This is the terrible day, O God, the evening of which we did not hope to attain; but in Thy love for mankind Thou hast vouchsafed us to behold it, O rice-Holy One, glory to Thee. 
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 Let the heart of them be glad that seek the Lord.
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ Let the heart of them be glad that seek the Lord.
 <STICHOS Type="1">
 O give thanks unto the Lord and call upon His name.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 Blessed is the Lord God of Israel,
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

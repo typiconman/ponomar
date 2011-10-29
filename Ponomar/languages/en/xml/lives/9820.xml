@@ -2,10 +2,10 @@
 <NAME Nominative="Monday of the Fifth Week of Lent" Short="Monday of the Fifth Week of Lent"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 3rd Tone" Tone="3">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 3&lt;sup&gt;rd&lt;/sup&gt; Tone" Tone="3">
 For our iniquities are risen against us, arise, O Lord, help us: for Thou art our Father, for we know none other beside Thee.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 Even Thine altars, O Lord of hosts
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ Even Thine altars, O Lord of hosts
 <STICHOS Type="1">
 How beloved are Thy dwellings, O Lord of hosts.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 8th Tone" Tone="8">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 8&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="8">
 Show us, O Lord, Thy mercy
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

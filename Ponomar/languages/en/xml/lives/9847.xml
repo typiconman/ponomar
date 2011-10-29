@@ -2,10 +2,10 @@
 <NAME Nominative="Clean Tuesday" Short="Clean Tuesday"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 1&lt;sup&gt;st&lt;/sup&gt; Tone" Tone="1">
 For we are strangers on the earth, as were all our fathers; keep our short life without sin, O our Savior, and have mercy on us, as the lover of mankind.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 Attend unto the voice of my supplication,
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ O my king and my God.
 <STICHOS Type="1">
 Unto my words give ear, O Lord; hear my cry.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 O Lord, rebuke me not in Thine anger.
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

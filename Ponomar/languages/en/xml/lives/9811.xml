@@ -2,10 +2,10 @@
 <NAME Nominative="Wednesday of the Sixth Week of Lent" Short="Wednesday of the Sixth Week of Lent"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 5th Tone" Tone="5">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 5&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="5">
 Deal with us according to Thy mercy, O Lord, and deliver us not up with our sins, O holy Master Almighty, we pray Thee.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 O Lord, save your people, and bless Your inheritance
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ O Lord, save your people, and bless Your inheritance
 <STICHOS Type="1">
 Blessed be the name of the Lord from henceforth and for evermore.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 Ye are blessed of the Lord,
 </PROKEIMENON>
 <PROKEIMENON Type="2b">
