@@ -2,10 +2,10 @@
 <NAME Nominative="Thursday of the Third Week of Lent" Short="Thursday of the Third Week of Lent"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 3rd Tone" Tone="3">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 3&lt;sup&gt;rd&lt;/sup&gt; Tone" Tone="3">
 If Thou shouldest mark iniquities, O Lover of mankind, what hope of salvation is there for us? But as Thou art compassionate, from on high send down Thy help upon Thy people, O Lord.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 O God, in Thy name save me
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ O God, in Thy name save me
 <STICHOS Type="1">
 O God, hearken unto my prayer, give ear unto the words of my mouth.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 7th Tone" Tone="7">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 7&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="7">
 Give ear, O God
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

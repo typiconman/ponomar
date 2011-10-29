@@ -2,10 +2,10 @@
 <NAME Nominative="Thursday of the Second Week of Lent" Short="Thursday of the Second Week of Lent"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 1&lt;sup&gt;st&lt;/sup&gt; Tone" Tone="1">
 Raise up us the fallen, make us to return, for we have turned away from Thee, O God, Lover of mankind, Who upholdeth the ends of the earth.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 I sought the Lord, and He heard me
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ I sought the Lord, and He heard me
 <STICHOS Type="1">
 I will bless the Lord at all times.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 : Arise, O Lord, and be attentive unto my judgment.
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

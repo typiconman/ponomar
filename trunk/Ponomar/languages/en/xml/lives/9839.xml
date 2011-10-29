@@ -2,10 +2,10 @@
 <NAME Nominative="Wednesday of the Second Week of Lent" Short="Wednesday of the Second Week of Lent"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 6th Tone" Tone="6">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 O Thou Most High Who dwellest in the heavens, Creator of every breath, save us, O God: for we have hoped in Thee, O our Savior.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 5th Tone" Tone="5">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 5&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="5">
 Unto Thee, O Lord, will I cry
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ Unto Thee, O Lord, will I cry
 <STICHOS Type="1">
 I will exalt Thee, O Lord, for Thou hast upheld me.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 In Thee, O Lord, have I hoped
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

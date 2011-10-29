@@ -2,10 +2,10 @@
 <NAME Nominative="Clean Friday" Short="Clean Friday"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 5th Tone" Tone="5">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 5&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="5">
 Our greatly sinful life and unrepentant disposition do thou forestall through thy compassion, O Lord; beside Thee we know none other, O thou that has dominion over life and death: save us, as Thou art the lover of mankind.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 7th Tone" Tone="7">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 7&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="7">
 I will love thee, O Lord, my strength;
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ in the Lord is my foundation.
 <STICHOS Type="1">
 My God is my helper, and I hope in Him!
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 O Lord my helper and my redeemer.
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

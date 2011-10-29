@@ -2,7 +2,7 @@
 <NAME Nominative="Saint Jonah, Metropolitan of Moscow and Wonderworker of All Russia († 1461)" Short="Saint Jonah"/>
 <SERVICE Type="0" Cmd="doy != 165"/>
 <SERVICE Type="4" Cmd="doy == 165"/>
-<LIFE Id="bulgakov" Copyright="The Clergyman”s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 Saint Jona, Metropolitan of Moscow and Wonderworker of All Russia († 31 March 1461)—the account about him is located under 31 March.
 </LIFE><SERVICE>
 <LITURGY>

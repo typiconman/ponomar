@@ -5,7 +5,7 @@
 <TROPARION Type="1" Header="Troparion of the Prophecy in the ?th Tone" Tone="?">
 ??
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 Because of the house of the Lord our God,
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ I have sought good things for thee.
 <STICHOS Type="1">
 I was glad because of them that said unto me: Let us go into the house of the Lord.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 Have mercy on us, O Lord
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

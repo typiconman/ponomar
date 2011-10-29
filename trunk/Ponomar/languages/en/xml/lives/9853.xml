@@ -2,10 +2,10 @@
 <NAME Nominative="Cheesefare Wednesday" Short="Cheesefare Wednesday"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 3rd Tone" Tone="3">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 3&lt;sup&gt;rd&lt;/sup&gt; Tone" Tone="3">
 King, Holy, and Almighty, Before you all creation stands in fear and trembling. Save us and forgive our sins, in Your great mercy
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 O Lord, save your people
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ and bless Your inheritance
 <STICHOS Type="1">
 To You, Lord will I call; my God, be not silent to me
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 7th Tone" Tone="7">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 7&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="7">
 The Lord will give strength to his people! *
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

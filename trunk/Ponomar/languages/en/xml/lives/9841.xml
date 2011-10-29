@@ -2,10 +2,10 @@
 <NAME Nominative="Monday of the Second Week of Lent" Short="Monday of the Second Week of Lent"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 5th Tone" Tone="5">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 5&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="5">
 O Thou that alone fashioned our hearts, remember that we are dust; condemn us not to the nethermost parts of the earth, O Sinless One.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 Ye that fear the Lord, praise Him.
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ Ye that fear the Lord, praise Him.
 <STICHOS Type="1">
 O God my God, attend to me, why hast Thou forsaken me?
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 Thy rod and Thy staff,
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

@@ -2,7 +2,7 @@
 <NAME Nominative="Synaxis of the Archangel Gabriel" Short="Synaxis"/>
 <SERVICE Type="3" Cmd="doy == 84"/>
 <SERVICE Type="2" Cmd="doy == 193"/>
-<LIFE Id="bulgakov" Copyright="The Clergyman”s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt; The synaxis of the Archangel Gabriel is celebrated on the day following the Annunciation, that is, March 26&lt;sup&gt;th&lt;/sup&gt;. This feast is celebrated a second time on July 13&lt;supth&lt;/sup&gt;. The reason for it being established probably served the dedication in the 17&lt;sup&gt;th&lt;/sup&gt; century of a church at Constantinople, constructed in the name of the Holy Chief (Archistrategos) of the Heavenly Hosts.&lt;/p&gt;&lt;p&gt;An account of the Holy Archangel is located under 26 March and 8 November.&lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>

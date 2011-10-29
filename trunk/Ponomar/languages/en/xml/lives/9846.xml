@@ -2,10 +2,10 @@
 <NAME Nominative="Clean Wednesday" Short="Clean Wednesday"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 4th Tone" Tone="4">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 Thou knowest our frame, thou knowest our weakness, O Lover of mankind; we have sinned, but have not turned away from Thee, O God, nor have we stretched out our hands to a strange god. Spare us in Thy goodness, O Compassionate One. 
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 I will confess thee, O Lord
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ I will confess thee, O Lord
 <STICHOS Type="1">
 I will be glad and rejoice in Thee.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 the Lord is righteous and hath loved righteousness;
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

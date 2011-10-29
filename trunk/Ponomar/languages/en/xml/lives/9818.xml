@@ -2,10 +2,10 @@
 <NAME Nominative="Wednesday of the Fifth Week of Lent" Short="Wednesday of the Fifth Week of Lent"/>
 <SERVICE>
 <SEXTE>
-<TROPARION Type="1" Header="Troparion of the Prophecy in the 1st Tone" Tone="1">
+<TROPARION Type="1" Header="Troparion of the Prophecy in the 1&lt;sup&gt;st&lt;/sup&gt; Tone" Tone="1">
 The pains of the saints, which they suffered for Thee, O Lord, be as supplications, and all our pains do Thou heal, O Lover of mankind, we pray.
 </TROPARION>
-<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4th Tone" Tone="4">
+<PROKEIMENON Type="1a" Header="First Prokeimenon of the Prophecy in the 4&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="4">
 It is good to give praise unto the Lord
 </PROKEIMENON>
 <PROKEIMENON Type="1b">
@@ -14,7 +14,7 @@ It is good to give praise unto the Lord
 <STICHOS Type="1">
 To proclaim in the morning Thy mercy, and Thy truth by night.
 </STICHOS>
-<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6th Tone" Tone="6">
+<PROKEIMENON Type="2a" Header="Second Prokeimenon of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">
 The Lord is King,
 </PROKEIMENON>
 <PROKEIMENON Type="2b">

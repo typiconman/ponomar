@@ -1,4 +1,4 @@
 ﻿<SAINT>
-<NAME Nominative="Sts. Joseph l’Épouse, David le Roi, et Jacques le frère du Seigneur" Short="Saints" Cmd="dow != 0">
-<NAME Nominative="Dimanche après la Nativité: Sts. Joseph l’Épouse, David le Roi, et Jacques le frère du Seigneur" Short="Dimanche après la Nativité" Cmd="dow == 0">
+<NAME Nominative="Sts. Joseph l’Épouse, David le Roi, et Jacques le frère du Seigneur" Short="Saints" Cmd="dow != 0"/>
+<NAME Nominative="Dimanche après la Nativité: Sts. Joseph l’Épouse, David le Roi, et Jacques le frère du Seigneur" Short="Dimanche après la Nativité" Cmd="dow == 0"/>
 </SAINT>
