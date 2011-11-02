@@ -2,7 +2,12 @@
 
 use warnings;
 use strict;
-
+## ACCORDING TO PERL DOC, YOU'RE NOT SUPPOSED TO use bytes
+## HOWEVER, XML::Parser APPEARS TO BE BROKEN, THEREFORE THE ONLY WAY TO GET 
+## UNICODE DATA THROUGH IT IS TO COMPLETELY SUPRESS CHARACTER SEMANTICS
+## (XXX) NOTE THAT THIS BREAKS SOME THINGS LIKE chr, ord, etc, BUT WE DON'T CARE
+## IF THIS BECOMES AN ISSUE, LOCALLY SET no bytes
+use bytes;
 ##################################################################################
 ### menologion3.cgi :: IMPLEMENTS THE RESULTS OF THE GREAT CONVERSION FOR PERL
 ### 
@@ -21,7 +26,7 @@ use Astro::Sunrise;
 BEGIN {
 	$ENV{PATH} = "/bin:/usr/bin";
 	delete @ENV{ qw( IFS CDPATH ENV BASH_ENV ) };
-	CGI::Carp::set_message( \&carp_error );
+	#CGI::Carp::set_message( \&carp_error );
 }
 
 ########################################### GLOBAL DEFINITION VARIABLES ##################
@@ -42,7 +47,9 @@ my %matinsGospels = (
 	"Jn_21:1-14" => 10,
 	"Jn_21:15-25" => 11
 );
-my %language_data = ();
+my %scriptTypes = ();
+my %language_data  = ();
+my %bibleBookNames = ();
 
 ## THIS IS THE MAIN FILE PATH
 my $basepath = "/home/ponomar0/svn/Ponomar/languages/";
@@ -52,6 +59,8 @@ tie my %SAINTS, "Tie::IxHash";
 tie my %READINGS, "Tie::IxHash";
 my @DEBUG = ();
 my $whichService = "";
+my $readPeriod = false;
+my $fast = "";
 
 ### DATA GLOBALS
 my $GS = 1; # gospel selector: exJordanville = 0; Lucan Jump = 1
@@ -269,6 +278,23 @@ sub startElement {
 			$whichService = "liturgy";
 			last SWITCH;
 		}
+		if ($element eq "PERIOD") {
+			$readPeriod = !false;
+			last SWITCH;
+		}
+		if ($element eq "RULE" && $readPeriod) {
+			$fast = $attrs{Case};
+			last SWITCH;
+		}
+		if ($element eq "BIBLE") {
+			# IDs are of the form lang/bible/version where lang is ISO lang code
+			my @lang_parts = split(/\//, $attrs{Id});
+			foreach (@lang_parts) {
+				last if $_ eq "bible";
+				### FIXME
+			}
+			last SWITCH;
+		}
 	};
 }
 
@@ -277,6 +303,8 @@ sub endElement {
 	
 	if ($element eq "VESPERS" || $element eq "MATINS" || $element eq "LITURGY" || $element eq "SERVICE") {
 		$whichService = "";
+	} elsif ($element eq "PERIOD") {
+		$readPeriod   = false;
 	}
 	return;
 }
@@ -288,6 +316,24 @@ sub formatScriptureReading {
 	my $MG = exists $matinsGospels{$reading} && $dow == 0 ? " " . $language_data{133 + $matinsGospels{$reading}} : "";
 	return defined $pericope ? qq(<A Href="JavaScript:doReadings('$book', '$verses');">$book $verses (§ $pericope)</A>$MG) : qq(<A Href="JavaScript:doReadings('$book', '$verses');">$book $verses</A>$MG);
 }
+
+sub convert {
+	my $fast = shift;
+
+	my %fastReqs = (
+		"0000000" => $language_data{120},
+		"0000001" => $language_data{121},
+		"0000011" => $language_data{122},
+		"0000111" => $language_data{123},
+		"0001111" => $language_data{124},
+		"0011111" => $language_data{125},
+		"0111111" => $language_data{126},
+		"1111111" => $language_data{127},
+		"0000010" => $language_data{128}
+		);
+	return exists $fastReqs{$fast} ? $language_data{30} . ": " . $fastReqs{$fast} : "Error computing fast requirements";
+}
+
 ##################################### BEGIN CODE #######################################
 my $q = new CGI;
 
@@ -376,6 +422,9 @@ $PARSER->setHandlers(	Start   => \&startElement,
 			Char    => \&text,
 			Default => \&default);
 
+#### LOAD BIBLE BOOKS FOR THE GIVEN LANGUAGE
+$PARSER->parsefile( findBottomUp($language, "xml/bible.xml") );
+
 #### BEGIN BY PARSING THE PENTECOSTARION / TRIODION FILE
 $src = "pentecostarion";
 push @DEBUG, findBottomUp($language, $filepath);
@@ -397,16 +446,44 @@ foreach my $CId (keys %SAINTS) {
 	$src = $CId;
 	foreach my $file (findTopDown($language, "xml/lives/$CId.xml")) {
 		push @DEBUG, $file;
-		$PARSER->parsefile( $file );
+		$PARSER->parsefile( $file);
+	}
+}
+
+##### PROCESS THE FASTING INSTRUCTIONS
+foreach my $file (findTopDown($language, "xml/Commands/Fasting.xml")) {
+	push @DEBUG, $file;
+	$PARSER->parsefile( $file );
+}
+
+##### GET THE ICON OF THE DAY
+# 1. Build the icon language substitution algorithm
+my @ils = ("cu", "el", "zh", "en", "fr");
+for (my $i = 0; $i <= $#ils; $i++) {
+	last if (split (/\//, $language))[0] eq $_;
+	push @ils, shift @ils;
+}
+
+# 2. Find out if we have an icon available
+my $icon = "http://www.ponomar.net/images/icon.jpg";
+OUTERLOOP: foreach my $id (sort { $SAINTS{$a}{Type} <=> $SAINTS{$b}{Type} } keys %SAINTS) {
+	foreach my $l (@ils) {
+		eval {
+			findBottomUp( $l, "icons/$id/" );
+		};
+		unless ($@) {
+			$icon = "http://www.ponomar.net/cgi-bin/fetch.cgi?lang=$l&saint=$id&icon=0";
+			last OUTERLOOP;
+		}
 	}
 }
 
 ################################ CREATE THE USER'S COOKIE ###################################
 my $cookievalue = join("|", ($City, $Lat, $Lon, $TZ, $language, $GS));
-my $cookie  = new CGI::Cookie(-name => 'menologion', 
-			      -value=> "$cookievalue",
+my $cookie  = new CGI::Cookie(-name   => 'menologion', 
+			      -value  => "$cookievalue",
 			      -expires=>'+1y',
-			      -domain=>'ponomar.net');
+			      -domain =>'ponomar.net');
 			     
 print "Set-Cookie: $cookie\n";
 ############################### NAVIGATION DATA #############################################
@@ -416,6 +493,18 @@ my @tomorrowvals  = ($tomorrow->getMonth(), $tomorrow->getDay(), $tomorrow->getY
 ################################ CONSTRUCT THE OUTPUT #######################################
 print "Content-type: text/html; charset=utf-8\n\n";
 %language_data = General->loadLanguage($language);
+%scriptTypes = (
+	"1st hour" => $language_data{84},
+	"3rd hour" => $language_data{85},
+	"6th hour" => $language_data{86},
+	"9th hour" => $language_data{87},
+	"vespers"  => $language_data{88},
+	"compline" => $language_data{89},
+	"nocturns" => $language_data{90},
+	"matins"   => $language_data{91},
+	"liturgy"  => $language_data{92},
+	);
+
 General->write_top($month, $day, $year);
 
 print "<CENTER>\n";
@@ -423,11 +512,11 @@ print "$language_data{20} <B>" . $today->toStringFull($language) . "</B><BR>";
 print "$language_data{21}: " . $today->toStringGregorian($language) . "<BR>";
 print "<BR><BR>";
 
-print qq(<A Href="JavaScript:navigate3($yesterdayvals[0], $yesterdayvals[1], $yesterdayvals[2]);"><< Previous day</A>);
-print "<IMG Src=\"../images/icon.jpg\" Alt=\"Icons not yet available\">\n";;
-print qq(<A Href="JavaScript:navigate3($tomorrowvals[0], $tomorrowvals[1], $tomorrowvals[2]);">Next day >></A></CENTER><BR><BR>);
+print qq(<A Href="JavaScript:navigate3($yesterdayvals[0], $yesterdayvals[1], $yesterdayvals[2]);">&lt;&lt; $language_data{22}</A>);
+print "<IMG Src=\"$icon\" Alt=\"Icon fetcher\">\n";;
+print qq(<A Href="JavaScript:navigate3($tomorrowvals[0], $tomorrowvals[1], $tomorrowvals[2]);">$language_data{23} &gt;&gt;</A></CENTER><BR><BR>);
 print "$language_data{24}: $sunrise; $language_data{25}: $sunset $language_data{26} $City (<A Href=\"JavaScript:openWindow('configure.cgi');\">$language_data{27}</A>)<BR>\n";
-
+print convert ($fast) . "<BR>\n";
 
 ## print Pentecostarion data
 foreach (keys %SAINTS) {
@@ -461,11 +550,11 @@ print "<BR><BR><DIV Class=\"header\" Align=\"center\">$language_data{29}</DIV><B
 ## TODO: IMPLEMENT SUPRESSION AND MOVEMENT OF READINGS
 foreach my $type (@order_of_types) {
 	next unless grep { exists $READINGS{$_}{$type} } @order_of_srcs;
-	print "<B>" . $type . "</B>: ";
+	print "<B>" . $scriptTypes{$type} . "</B>: ";
 	foreach my $source (@order_of_srcs) {
 		next unless $READINGS{$source}{$type};
 		print join ("; ", map { formatScriptureReading( $READINGS{$source}{$type}{$_}{Reading}, $READINGS{$source}{$type}{$_}{Pericope} ) } sort { $a cmp $b } keys %{ $READINGS{$source}{$type} });
-		print " (for " . $SAINTS{$source}{NAME}{Short} . "); ";
+		print " (" . ($SAINTS{$source}{NAME}{Genetive} or $SAINTS{$source}{NAME}{Short}) . "); ";
 	}
 	print "<BR>\n";
 }
