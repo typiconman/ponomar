@@ -60,6 +60,7 @@ tie my %READINGS, "Tie::IxHash";
 my @DEBUG = ();
 my $whichService = "";
 my $readPeriod = false;
+my $readBible  = false;
 my $fast = "";
 
 ### DATA GLOBALS
@@ -288,11 +289,20 @@ sub startElement {
 		}
 		if ($element eq "BIBLE") {
 			# IDs are of the form lang/bible/version where lang is ISO lang code
-			my @lang_parts = split(/\//, $attrs{Id});
-			foreach (@lang_parts) {
+			my @id_parts = ();
+			foreach (split(/\//, $attrs{Id})) {
 				last if $_ eq "bible";
-				### FIXME
+				push @id_parts, $_;
 			}
+			
+			my @lang_parts = split(/\//, $language);
+			$readBible = $id_parts[0] eq $lang_parts[0]; ## FIXME
+			last SWITCH;
+		}
+		if ($element eq "BOOK" && $readBible) {
+			my $tmpid = $attrs{Id};
+			$tmpid =~ s/_/ /;
+			$bibleBookNames{$tmpid} = $attrs{Short};
 			last SWITCH;
 		}
 	};
@@ -305,6 +315,8 @@ sub endElement {
 		$whichService = "";
 	} elsif ($element eq "PERIOD") {
 		$readPeriod   = false;
+	} elsif ($element eq "BIBLE") {
+		$readBible    = false;
 	}
 	return;
 }
@@ -314,7 +326,7 @@ sub formatScriptureReading {
 	
 	my ($book, $verses) = split(/_/, $reading);
 	my $MG = exists $matinsGospels{$reading} && $dow == 0 ? " " . $language_data{133 + $matinsGospels{$reading}} : "";
-	return defined $pericope ? qq(<A Href="JavaScript:doReadings('$book', '$verses');">$book $verses (§ $pericope)</A>$MG) : qq(<A Href="JavaScript:doReadings('$book', '$verses');">$book $verses</A>$MG);
+	return defined $pericope ? qq(<A Href="JavaScript:doReadings('$book', '$verses');">$bibleBookNames{$book} $verses (§ $pericope)</A>$MG) : qq(<A Href="JavaScript:doReadings('$book', '$verses');">$bibleBookNames{$book} $verses</A>$MG);
 }
 
 sub convert {
@@ -450,12 +462,6 @@ foreach my $CId (keys %SAINTS) {
 	}
 }
 
-##### PROCESS THE FASTING INSTRUCTIONS
-foreach my $file (findTopDown($language, "xml/Commands/Fasting.xml")) {
-	push @DEBUG, $file;
-	$PARSER->parsefile( $file );
-}
-
 ##### GET THE ICON OF THE DAY
 # 1. Build the icon language substitution algorithm
 my @ils = ("cu", "el", "zh", "en", "fr");
@@ -478,12 +484,21 @@ OUTERLOOP: foreach my $id (sort { $SAINTS{$a}{Type} <=> $SAINTS{$b}{Type} } keys
 	}
 }
 
+##### PROCESS THE FASTING INSTRUCTIONS
+##### SET dRank
+$dRank = max ( map { $SAINTS{$_}{Type} } keys %SAINTS );
+
+foreach my $file (findTopDown($language, "xml/Commands/Fasting.xml")) {
+	push @DEBUG, $file;
+	$PARSER->parsefile( $file );
+}
+
 ################################ CREATE THE USER'S COOKIE ###################################
 my $cookievalue = join("|", ($City, $Lat, $Lon, $TZ, $language, $GS));
 my $cookie  = new CGI::Cookie(-name   => 'menologion', 
 			      -value  => "$cookievalue",
-			      -expires=>'+1y',
-			      -domain =>'ponomar.net');
+			      -expires=> '+1y',
+			      -domain => 'ponomar.net');
 			     
 print "Set-Cookie: $cookie\n";
 ############################### NAVIGATION DATA #############################################
@@ -541,7 +556,7 @@ foreach (keys %SAINTS) {
 
 ################### BEGIN SCRIPTURE MEGA-SORTING ALGORITHM #####################
 my @order_of_types = ("vespers", "matins", "liturgy");
-my @order_of_srcs  = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "menaion");
+my @order_of_srcs  = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "menaion"); ## FIXME
 my %sort_order     = map  { $order_of_srcs[$_] => $_ } (0..$#order_of_srcs);
 my @order_of_srcs  = sort { $sort_order{$SAINTS{$a}{Reason}} <=> $sort_order{$SAINTS{$b}{Reason}} || $SAINTS{$b}{Type} <=> $SAINTS{$a}{Type}} keys %SAINTS;
 
