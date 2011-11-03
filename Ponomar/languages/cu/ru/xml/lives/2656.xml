@@ -1,7 +1,4 @@
 ﻿<SAINT>
-<NAME Nominative="Мц. Раисы (Ираиды) (ок. 308)" Short="Мц. Раисы"/>
-<SERVICE Type="0"/></SAINT>
-<!-This would seem that the two commemoration Sept. 23 and ?? are the same.
-<NAME Nominative="Мц. Ираиды девы (ок. 308)" Short="Мц. Ираиды"/>
-<SERVICE Type="0"/></SAINT>
--->
+<NAME Nominative="Мц. Раисы (Ираиды) девы (ок. 308)" Short="Мц. Раисы"/>
+<SERVICE Type="0"/>
+</SAINT>
