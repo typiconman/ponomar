@@ -8,10 +8,15 @@ use strict;
 ## (XXX) NOTE THAT THIS BREAKS SOME THINGS LIKE chr, ord, etc, BUT WE DON'T CARE
 ## IF THIS BECOMES AN ISSUE, LOCALLY SET no bytes
 use bytes;
-##################################################################################
-### menologion3.cgi :: IMPLEMENTS THE RESULTS OF THE GREAT CONVERSION FOR PERL
-### 
-##################################################################################
+
+########################################################################################
+### menologion.cgi :: VERSION 3: IMPLEMENTS THE RESULTS OF THE GREAT CONVERSION       ##
+### 										      ##
+### THIS SCRIPT PROCESSES XML DATA FOR THE PONOMAR PROJECT AND OUTPUTS A MENOLOGION   ##
+### FOR ANY DAY OF ANY YEAR							      ##
+###										      ##
+### (C) 2011 ALEKSANDR ANDREEV. THIS CODE IS PART OF THE PONOMAR PROJECT.	      ##
+########################################################################################
 
 use CGI;
 use CGI::Carp qw( fatalsToBrowser );
@@ -26,7 +31,7 @@ use Astro::Sunrise;
 BEGIN {
 	$ENV{PATH} = "/bin:/usr/bin";
 	delete @ENV{ qw( IFS CDPATH ENV BASH_ENV ) };
-	#CGI::Carp::set_message( \&carp_error );
+	CGI::Carp::set_message( \&carp_error );
 }
 
 ########################################### GLOBAL DEFINITION VARIABLES ##################
@@ -57,6 +62,7 @@ my $basepath = "/home/ponomar0/svn/Ponomar/languages/";
 ### THIS STORES ALL OF THE DATA FROM THE XML FILES
 tie my %SAINTS, "Tie::IxHash";
 tie my %READINGS, "Tie::IxHash";
+my %COMMANDS = ();
 my @DEBUG = ();
 my $whichService = "";
 my $readPeriod = false;
@@ -177,7 +183,7 @@ sub findTopDown {
 		my $path = $basepath . join ("/", @parts[0..$j]) . "/" . $file;
 		push @paths, $path if (-e $path);
 	}
-	die "Unable to find any instances of $file in the path for $language" unless (@paths);
+	warn "Unable to find any instances of $file in the path for $language" unless (@paths);
 	return @paths;
 }
 
@@ -267,6 +273,10 @@ sub startElement {
 			$SAINTS{$src}{Type} = $attrs{Type}; 
 			last SWITCH;
 		}
+		if ($element eq "SEXTE") {
+			$whichService = "6th hour";
+			last SWITCH;
+		}
 		if ($element eq "VESPERS") {
 			$whichService = "vespers";
 			last SWITCH;
@@ -303,6 +313,11 @@ sub startElement {
 			my $tmpid = $attrs{Id};
 			$tmpid =~ s/_/ /;
 			$bibleBookNames{$tmpid} = $attrs{Short};
+			last SWITCH;
+		}
+		if ($element eq "COMMAND") {
+			my $i = max keys %COMMANDS;
+			@{ $COMMANDS{++$i} }{keys %attrs} = values %attrs;
 			last SWITCH;
 		}
 	};
@@ -555,14 +570,48 @@ foreach (keys %SAINTS) {
 }
 
 ################### BEGIN SCRIPTURE MEGA-SORTING ALGORITHM #####################
-my @order_of_types = ("vespers", "matins", "liturgy");
-my @order_of_srcs  = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "menaion"); ## FIXME
-my %sort_order     = map  { $order_of_srcs[$_] => $_ } (0..$#order_of_srcs);
+my @order_of_types = ("1st hour", "6th hour", "vespers", "matins", "liturgy");
+my @order_of_reads = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "menaion"); ## FIXME
+my %sort_order     = map  { $order_of_reads[$_] => $_ } (0..$#order_of_reads);
 my @order_of_srcs  = sort { $sort_order{$SAINTS{$a}{Reason}} <=> $sort_order{$SAINTS{$b}{Reason}} || $SAINTS{$b}{Type} <=> $SAINTS{$a}{Type}} keys %SAINTS;
 
 print "<BR><BR><DIV Class=\"header\" Align=\"center\">$language_data{29}</DIV><BR>\n";
 
-## TODO: IMPLEMENT SUPRESSION AND MOVEMENT OF READINGS
+## IMPLEMENT SUPRESSION AND MOVEMENT OF READINGS
+# 1. LOAD SUPPRESSION INSTRUCTIONS INTO A HASH
+foreach ( findTopDown($language, "xml/Commands/DivineLiturgy.xml") ) {
+	$PARSER->parsefile( $_ );
+}
+
+# 2. DECIDE IF TODAY'S READINGS ARE SUPPRESSED
+foreach ( keys %COMMANDS ) {
+	## RECALL THAT IN PERL, VARS MUST START WITH $
+	my $cmd = $COMMANDS{$_}{Value};
+	foreach (@GLOBALS) {
+		$cmd =~ s/$_/\$$_/g;
+	}
+	next unless eval $cmd;
+	## IF WE GOT HERE, THEN THE READING IS TO BE SUPPRESSED
+	## REMEMBER, THE SUPPRESSION REFERS ONLY TO PENTECOSTARION READINGS
+	## AND MAY BE CAUSED BY THE PRESENCE OF A MENAION-BASED COMMEMORATION
+	## XXX: FOR EXAMPLE, THE dRank OF ASCENSION IS 7, BUT THE READING IS NOT SUPPRESSED
+	## WE HANDLE THIS BY ENSURING THAT THE SOURCE OF THE READING IS AN UNRANKED COMMEMORATION
+	## ALSO, NOTE THAT WE MAY HAVE MULTIPLE-SOURCE RANKED COMMEMORATIONS ON A GIVEN DAY
+	## E.G., ASCENSION + STS CYRIL AND METHODIUS, OR MID-PENTECOST + ST JOHN
+	## BUT IN THESE CASES, WE DO **NOT** SUPPRESS THE ``DAILY'' READINGS
+	foreach my $src (@order_of_srcs) {
+		next unless $READINGS{$src}{liturgy};
+		next unless $SAINTS{$src}{Reason} eq "pentecostarion";
+		delete $READINGS{$src}{liturgy} unless ($SAINTS{$src}{Type} > 2);
+		if ($COMMANDS{$_}{Name} eq "Suppress") {
+			delete $READINGS{$src}{matins}  unless ($SAINTS{$src}{Type} > 2);
+		}
+	}
+}
+
+# 3. TODO: CHECK TOMORROW AND YESTERDAY FOR TRANSFERS
+
+# 4. OUTPUT THE REMAINING READINGS	
 foreach my $type (@order_of_types) {
 	next unless grep { exists $READINGS{$_}{$type} } @order_of_srcs;
 	print "<B>" . $scriptTypes{$type} . "</B>: ";
@@ -574,4 +623,6 @@ foreach my $type (@order_of_types) {
 	print "<BR>\n";
 }
 
+############# DEBUGGING INFORMATION ####################
+print qq(<!-- dow: $dow; doy: $doy; nday: $nday; ndayP: $ndayP; ndayF: $ndayF; dRank: $dRank -->);
 General->footer_en();
