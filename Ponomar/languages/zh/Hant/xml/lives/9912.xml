@@ -1,4 +1,0 @@
-<SAINT>
-<NAME Nominative="舉揚聖架節前安息日" Short="舉揚聖架節前安息日" Cmd="dow == 6"/>
-<NAME Nominative="" Short="舉揚聖架節前安息日" Cmd="dow != 6"/>
-</SAINT>
