@@ -1,5 +1,0 @@
-﻿<SAINT>
-<NAME Short="聖普若科彼"/>
-<NAME Nominative="聖普若科彼（德卡頗利城的宣信者，750年）（transferred from Saturday）" Cmd="doy != 57"/>
-<NAME Nominative="聖普若科彼（德卡頗利城的宣信者，750年）" Cmd="doy == 57"/>
-<SERVICE Type="1"/></SAINT>

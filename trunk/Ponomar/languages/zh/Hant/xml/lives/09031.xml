@@ -1,5 +1,0 @@
-﻿<SAINT>
-<NAME Short="敬遷殉道司教伊格納提"/>
-<NAME Nominative="敬遷殉道司教伊格納提（被稱為『心懷上帝者』安提約希亞城主教）之聖髑紀念日（參考12月20日）（540年或637年）" Cmd="nday != -52"/>
-<NAME Nominative="敬遷殉道司教伊格納提（被稱為『心懷上帝者』安提約希亞城主教）之聖髑紀念日（參考12月20日）（540年或637年） (Can be transferred to Friday)" Cmd="nday == -52"/>
-<SERVICE Type="2"/></SAINT>

@@ -1,7 +1,0 @@
-﻿<SAINT>
-<NAME Short="聖女克塞尼亞"/>
-<NAME Nominative="聖女克塞尼亞（彼得堡的成德者，聖愚，十九世紀）〔轉自安息日／週六〕" Cmd="nday == -58"/>
-<NAME Nominative="聖女克塞尼亞（彼得堡的成德者，聖愚，十九世紀）〔轉自主日／週日〕" Cmd="dow == 6"/>
-<NAME Nominative="聖女克塞尼亞（彼得堡的成德者，聖愚，十九世紀）" Cmd="nday != -57 &amp;&amp; dow != 0"/>
-<SERVICE Type="1"/>
-</SAINT>
