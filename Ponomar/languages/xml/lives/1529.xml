@@ -1,5 +1,5 @@
 <SAINT>
-<SERVICE>
+<SERVICE Type="8">
 <VESPERS>
 <SCRIPTURE Type="1" Reading="Ex_15:22-27, 16:1"/>
 <SCRIPTURE Type="2" Reading="Prov_3:11-18"/>
@@ -14,4 +14,3 @@
 </LITURGY>
 </SERVICE>
 </SAINT>
-

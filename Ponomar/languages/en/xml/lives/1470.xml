@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyr Sozon of Cilicia († 304)" Short="Martyr Sozon"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Martyr Sozontes, a native of Likaonea, was a shepherd. He read the Holy Scriptures attentively, and he loved to share his knowledge about the One God with the shepherds who gathered together with him. He brought many to the faith in Christ and to Baptism. By night-time once, when he sat under an oak tree, he had a vision foretelling his deed of martyrdom for Christ. He set off to the city of Cilician Pompeiopolis, where a festal pagan celebration was being prepared for a golden idol, standing in a pagan temple. Unseen by anyone, saint Sozontes went into the pagan temple and broke off the hand of the idol, and having smashed it he gave the gold to the poor. The missing hands of the idol caused an uproar and commotion in the city: many were under suspicion, given over to interrogation and torture. Not wanting to be the cause ofd suffering for other people, Saint Sozontes went to the emperor Maximian (284-305) and declared, that it was he that broke the hand from the idol. “I did this,—he said,—so that ye might see the lack of power of your god, which offered me no resistance. It is not a god, but rather a deaf and dumb idol. I wanted to smash it all into pieces, so that people would no longer worship its wrought hands.” The emperor in a fitful rage commanded that Saint Sozontes be tortured mercilessly. They hung him up and struck at him with iron claws, and then they put on his legs iron shackles with nails inside and took him through the city. After this they again suspended him and beat him with iron rods until his bones broke. In these terrible torments Saint Sozontes gave up his spirit to God († c.  304). By decree of the emperor, slaves set a strong fire so as to burn the body of the martyr, but suddenly lightning flashed, it thundered loudly and a strong rain poured down over the flames of the fire. Christians took the body of the martyr by night and gave it over to burial. By his grave and at the place where he had the vision, there occurred healing of many of the sick. A church later was built in memory of the sufferings of the holy martyr.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In his suffering, O Lord, * Thy martyr Sozon received an imperishable crown from Thee our God; * for, possessed of Thy might, * he set at nought the tormentors and crushed the feeble audacity of the demons. ** By his supplications save Thou our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Assembling today, with a loud voice let us praise Sozon, * the true and divinely wise martyr, * the skilled athlete of piety, * the initiate of the mysteries of grace, * the most generous bestower of healings: ** for he entreateth Christ God in behalf of us all.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>
