@@ -3,8 +3,9 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Heb_9:24-28" Pericope="322"/>
 <SCRIPTURE Type="gospel" Reading="Mk_8:27-31" Pericope="35"/>
-</LITURGY>
+<!-- FIXME: MUST MIGRATE THESE TO A DIFFERENT COMMEMORATION -->
 <SCRIPTURE Type="apostol" Reading="Heb_9:1-7" Pericope="320"/>
 <SCRIPTURE Type="gospel" Reading="Lk_10:38-42, 11:27-28" Pericope="54"/>
 </LITURGY>
-</SERVICE></SAINT>
+</SERVICE>
+</SAINT>

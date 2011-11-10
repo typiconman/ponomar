@@ -2,5 +2,5 @@
 <SERVICE Type="0" Cmd="doy != 270"/>
 <SERVICE Type="4" Cmd="doy == 270"/>
 <NAME Nominative="Venerable Schema-monk Cyrill and Schema-nun Mary, parents of St Sergius of Radonezh († c. 1337)" Short="Venerable Schema-monks"/>
-<SERVICE Type="0"/></SAINT>
-INT>
+<SERVICE Type="0"/>
+</SAINT>
