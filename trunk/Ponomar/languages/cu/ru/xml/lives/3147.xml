@@ -1,15 +1,6 @@
 <SAINT>
 <NAME Nominative="Мчч. Илии, Прова и Ариса, египтян (308)" Short="Мчч. Илии"/>
-<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
+<LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
  Мученики Илия, Пров и Арис, родом из Египта, самоотверженно служили в темнице узникам-христианам во время гонения Максимина (305 313). За это были схвачены, претерпели тяжкие мучения и были преданы смерти (+ 308).
-</LIFE><SERVICE>
-<LITURGY>
-<TROPARION Type="1" Tone="1">
- 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
-<KONTAKION Type="1" Tone="1">
- 
-</KONTAKION></LITURGY></SERVICE>
+</LIFE>
 </SAINT>

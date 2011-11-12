@@ -1,15 +1,15 @@
-<COMMEMORATION>
+﻿<COMMEMORATION>
 <NAME>The Eve (Paramony) of the Nativity</NAME>
 <SERVICE>
-&lt;/p&gt;&lt;p&gt;<ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
-&lt;/p&gt;&lt;p&gt;<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
+<ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
+<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
 Prepare, O Bethlehem, and let the manger make ready and the cave receive; for truth hath come,
 and shadow hath passed. And God hath appeared to mankind from the Virgin, taking our likeness
 and deifying our nature. Wherefore, Adam and Eve are made new, crying, Goodwill hath appeared
 on earth to save our race.
-&lt;/p&gt;&lt;p&gt;</IDIOMEL><!-- Note the difference in assigned Tones here -->
+</IDIOMEL><!-- Note the difference in assigned Tones here -->
 <VERSE Type="1" >
-&lt;p&gt;God will come from Theman, and the Holy One from a mountain overshadowed by forest. &lt;/p&gt;
+God will come from Theman, and the Holy One from a mountain overshadowed by forest.
 </VERSE>
 <IDIOMEL Type="12" Tone="3" Header="Tropar, Tone 3">
 Now, hath come the time for the aforesaid prophecy mystically uttered to be fulfilled; namely, And
@@ -135,6 +135,6 @@ Sion is our mother, a man will say; and a man has been born in her.
 <VERSE Type="9P">
 Her foundations are in the holy mountains.
 </VERSE>
-&lt;/p&gt;&lt;p&gt;</ROYALHOURS>
+</ROYALHOURS>
 </SERVICE>
 </COMMEMORATION>

@@ -1,0 +1,5 @@
+<SAINT>
+<NAME Nominative="Недѣ́лѧ пред̾ бг҃оѧвле́нїемъ" Cmd="dow == 0"/>
+<NAME Nominative="" Cmd="dow != 0"/>
+<NAME Short=""/>
+</SAINT>

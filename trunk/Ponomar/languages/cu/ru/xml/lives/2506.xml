@@ -1,15 +1,6 @@
 <SAINT>
 <NAME Nominative="Прп. Онисифора Печерского (1148)" Short="Прп. Онисифора"/>
-<SERVICE Type="0"/><LIFE Id="bulgakov">
+<LIFE Id="bulgakov">
  Преподобный Онисифор Печерский подвизался в Киево-Печерском монастыре, был пресвитером и имел дар прозорливости. Скончался в 1148 году и погребен в Ближних пещерах рядом с преподобным Спиридоном.
-</LIFE><SERVICE>
-<LITURGY>
-<TROPARION Type="1">
- 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
-<KONTAKION Type="1">
- 
-</KONTAKION></LITURGY></SERVICE>
+</LIFE>
 </SAINT>

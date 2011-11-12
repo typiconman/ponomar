@@ -1,0 +1,8 @@
+<SAINT>
+<NAME Nominative="&lt;а҃&gt;The serѕ҃ce for the fа҃ndа҃ng of the Forerunner»s Head переносится на пятницу мясопустную&lt;/а҃&gt;" Cmd="nday == -57"/>
+<NAME Nominative="&lt;а҃&gt;The serѕ҃ce for the fа҃ndа҃ng of the Forerunner»s Head переносится на вторник сыропустный&lt;/а҃&gt;" Cmd="nday == -53"/>
+<NAME Nominative="&lt;а҃&gt;The serѕ҃ce for the fа҃ndа҃ng of the Forerunner»s Head переносится на четверг сыропустный&lt;/а҃&gt;" Cmd="nday == -51"/>
+<NAME Nominative="&lt;а҃&gt;The serѕ҃ce for the fа҃ndа҃ng of the Forerunner»s Head переносится на неделю сыропустную&lt;/а҃&gt;" Cmd="nday == -48"/>
+<NAME Nominative="&lt;а҃&gt;The serѕ҃ce for the fа҃ndа҃ng of the Forerunner»s Head переносится на Феодорвскую сꙋббѡ́тꙋ&lt;/а҃&gt;" Cmd="nday == -47 || nday == -46 || nday == -45 || nday == -44"/>
+<NAME Short="&lt;а҃&gt;The serѕ҃ce"/>
+</SAINT>

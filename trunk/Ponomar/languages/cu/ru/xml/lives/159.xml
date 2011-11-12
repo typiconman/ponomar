@@ -1,15 +1,6 @@
 <SAINT>
 <NAME Nominative="Прп. Фостирия" Short="Прп. Фостирия"/>
-<SERVICE Type="0"/><LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
+<LIFE Id="bulgakov" Copyright="Протоиерей Сергий Булгаков. Настольная Книга.">
     Преподобный Фостирий, пустынник, подвизался на высокой горе. Силой чудотворений и святостью жизни многих отвратил от ересей. 
-</LIFE><SERVICE>
-<LITURGY>
-<TROPARION Type="1" Tone="1">
- 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
-<KONTAKION Type="1" Tone="1">
- 
-</KONTAKION></LITURGY></SERVICE>
+</LIFE>
 </SAINT>

@@ -1,5 +1,3 @@
 ﻿<SAINT>
 <NAME Nominative="Прпп. схимонаха Кирилла и схимонахини Марии (ок. 1337), родителей прп. Сергия Радонежского" Genetive="Марии и Кирилла"/>
-<SERVICE Type="0" Cmd="doy != 270"/>
-<SERVICE Type="4" Cmd="doy == 270"/>
 </SAINT>
