@@ -27,13 +27,12 @@ Traducteur : Yuri Shardt
 L’état de completation : 1 (sauf le Bible et la première heure).
 -->
 <!--
-The Russian part has been partially completed by Aleksander Andreev, while the Church Slavonic Bible has (except for III Esdras) been added. The Russian version of the Menologion and Pentecostarion/Triodion (as per the Moscow Patriarchiate regulations) has been added by Aleks.
+The Russian part has been partially completed by Aleksander Andreev, while the Church Slavonic Bible has been added. The Russian version of the Menologion and Pentecostarion/Triodion (as per the Moscow Patriarchiate regulations) has been added by Aleks.
 -->
 <!--
 The Chinese version (both Traditional and Simplified characters) of the Menologion and Pentecostarion/Triodion has been added by Mitrophan Chin.
 Likewise, the Bible in both Traditional and Simplified Chinese characters has been added by Mitrophan Chin. Only the New Testament and most of the Old Testament are available.
 -->   
-
 <PHRASE Key="NameLocal" Value="церковнославѧнский"/>
 <PHRASE Key="NameEnglish" Value="Church Slavonic"/>
 <PHRASE Key="BibleV" Value="cu/bible/elis"/>
@@ -43,37 +42,37 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Comma" Value=", "/>
 <PHRASE Key="Copyright" Value="Все права защищены ^YY ^AA"/>
 <PHRASE Key="0" Value="Поно́марь" Comment="This is the only entry for this key."/>
-<PHRASE Key="1" Value="ї҆аннꙋарїй/,феѵрꙋа́лїй/,ма́ртъ/,а҆прї́ллїй/,ма́їй/,ї҆ꙋ́нїй/,ї҆ꙋ́лїй/,а҆́ѵгꙋстъ/,септе́мврїй/,о҆ктѡ́врїй/,ное́мврїй/,деке́мврїй" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
+<PHRASE Key="1" Value="і҆аннꙋарїй/,феѵрꙋа́лїй/,ма́ртъ/,а҆прі́ллїй/,ма́їй/,і҆ꙋ́нїй/,і҆ꙋ́лїй/,а҆́ѵгꙋстъ/,септе́мврїй/,о҆ктѡ́врїй/,ное́мврїй/,деке́мврїй" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="недѣ́лѧ/,понедѣ́льникъ/,вто́рникъ/,сре́да/,четверто́къ/,пѧто́къ/,сꙋббѡ́та" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
-<PHRASE Key="3" Value="ї҆аннꙋарїа/,феѵрꙋа́лїа/,ма́рта/,а҆прї́ллїа/,ма́їа/,ї҆ꙋ́нїа/,ї҆ꙋ́лїа/,а҆́ѵгꙋста/,септе́мврїа/,о҆ктѡ́врїа/,ное́мврїа/,деке́мврїа" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="3" Value="і҆аннꙋарїа/,феѵрꙋа́лїа/,ма́рта/,а҆прі́ллїа/,ма́їа/,і҆ꙋ́нїа/,і҆ꙋ́лїа/,а҆́ѵгꙋста/,септе́мврїа/,о҆ктѡ́врїа/,ное́мврїа/,деке́мврїа" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="5" Value="недѣ́лѧ/,понедѣ́льникъ/,вто́рникъ/,сре́да/,четверто́къ/,пѧто́къ/,сꙋббѡ́та" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
-<PHRASE Key="4" Value="ї҆аннꙋарїа/,феѵрꙋа́лїа/,ма́рта/,а҆прї́ллїа/,ма́їа/,ї҆ꙋ́нїа/,ї҆ꙋ́лїа/,а҆́ѵгꙋста/,септе́мврїа/,о҆ктѡ́врїа/,ное́мврїа/,деке́мврїа" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="4" Value="і҆аннꙋарїа/,феѵрꙋа́лїа/,ма́рта/,а҆прі́ллїа/,ма́їа/,і҆ꙋ́нїа/,і҆ꙋ́лїа/,а҆́ѵгꙋста/,септе́мврїа/,о҆ктѡ́врїа/,ное́мврїа/,деке́мврїа" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
 <PHRASE Key="Options" Value="Настройкѝ" />
-<PHRASE Key="File" Value="Фа́йлъ/,Сохрани́ть/,Ѡ҆быкнове́нное меню̀ фа́йлъ/,Сохранѧ́етъ текꙋ́щꙋю и҆нформа́цїю/,Выхо́дъ/,Оканчиваетъ рабо́тꙋ про́граммы/,Печа́ть/,Печа́тетъ текꙋ́щꙋю и҆нформа́цїю." />
+<PHRASE Key="File" Value="Фа́йлъ/,Сохрани́ть/,Ѡ҆быкнове́нное меню̀ фа́йлъ/,Сохранѧ́етъ текꙋ́щꙋю и҆нформа́цїю/,Выхо́дъ/,Оканчиваетъ рабо́тꙋ про́граммы/,Печа́ть/,Печа́тетъ текꙋ́щꙋю и҆нформа́цїю." />
 <PHRASE Key="SMenu" Value="Ст҃и/,Пои́скъ и҆ сорти́ровка по ст҃имъ/,Пои́ск/,Пои́ск и҆нформа́ции о҆ ст҃омъ" />
-<PHRASE Key="Services" Value="Богослꙋженїе/,Литꙋргї́ѧ/,Вече́рнѧ/,Повече́рїе/,Оу҆́тренѧ/,Ча́съ пе́рвый/,Ча́съ тре́тїй/,Ча́съ шесты́й/,Ча́съ девѧ́тый/,Часѡ́въ ца́рскихъ/,Всено́щное Бде́нїе/,Полуно́щница/,Тѷпїка̀/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
-<PHRASE Key="Bible" Value="Библи́ѧ/,Ѿкрыва́етъ те́ѯтъ ст агѡ писа́нїѧ" />
-<PHRASE Key="Help" Value="Спра́вка/,Ѿкрыва́етъ фа́йлъ спра́вки/,О҆ про́грамми/,И҆нформа́цїѧ о҆ програ́мми/,Ѿкрыва́етъ спра́вкꙋ"/>
+<PHRASE Key="Services" Value="Богослꙋженїе/,Литꙋргі́ѧ/,Вече́рнѧ/,Повече́рїе/,Оу҆́тренѧ/,Ча́съ пе́рвый/,Ча́съ тре́тїй/,Ча́съ шесты́й/,Ча́съ девѧ́тый/,Часѡ́въ ца́рскихъ/,Всено́щное Бде́нїе/,Полуно́щница/,Тѷпїка̀/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
+<PHRASE Key="Bible" Value="Библи́ѧ/,Ѿкрыва́етъ те́ѯтъ ст агѡ писа́нїѧ" />
+<PHRASE Key="Help" Value="Спра́вка/,Ѿкрыва́етъ фа́йлъ спра́вки/,О҆ про́грамми/,И҆нформа́цїѧ о҆ програ́мми/,Ѿкрыва́етъ спра́вкꙋ"/>
 <PHRASE Key="LanguageMenu" Value="Ѧ҆зы́къ/,Выбо́ръ ѧ҆зы́ка про́граммы/,Выбо́ръ ѧ҆зы́ка и҆нтерфейса̀/,Да̀/,Что́бы помѣ́нѧть ѧ҆зы́къ и҆нтерфейса҆, презагрꙋзи́те про́граммꙋ./,Нѣ̀/,Вы̀ дѣйствительно жела́ете и҆змѣ́нити фа́йлъ:/,Вы҆ дѣ́йствительно хочи́те закры́ти е҆то̀ ѻ҆кно̀;"/>
-<PHRASE Key="About" Value="Ве́рсїѧ/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
+<PHRASE Key="About" Value="Ве́рсїѧ/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="НЀ и҆спользо́вати Воздви́женскꙋю ѿстꙋ́пкꙋ/,И҆спользо́вати Воздви́женскꙋю ѿстꙋ́пкꙋ/,Лекционарий/,Выбо́ръ лекционария." />
 <PHRASE Key="Tones" Value=" /,а҃-й/,в҃-й/,г҃-й/,д҃-й/,е҃-й/,ѕ҃-й/,з҃-й/,и҃-й" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="по гражда́нскомꙋ стилю̀/,Восхо́дъ со́лнца/,Захо́дъ со́лнца/,Фа́за лꙋны̀/,Гла́с TT/,И҆нформа́цїѧ о҆ /,Вы̀ дѣ̀йствительно хочитѐ закры́ти про́граммꙋ;" />
-<PHRASE Key="gospel" Value="Є҆ѵлⷢїе"/>
+<PHRASE Key="Main" Value="по гражда́нскомꙋ стилю̀/,Восхо́дъ со́лнца/,Захо́дъ со́лнца/,Фа́за лꙋны̀/,Гла́съ TT/,И҆нформа́цїѧ о҆ /,Вы̀ дѣ̀йствительно хочитѐ закры́ти про́граммꙋ;" />
+<PHRASE Key="gospel" Value="Є҆ѵлⷢїе"/>
 <PHRASE Key="apostol" Value="А҆пⷭлъ"/>
 <PHRASE Key="matins" Value="Оу҆́тренѧ"/>
 <PHRASE Key="vespers" Value="Вече́рнѧ"/>
 <PHRASE Key="1st hour" Value="Ча́съ пе́рвый"/>
-<PHRASE Key="3rd hour" Value="Ча́съ тре́тїй"/>
+<PHRASE Key="3rd hour" Value="Ча́съ тре́тїй"/>
 <PHRASE Key="6th hour"	Value="Ча́съ шесты́й"/>
 <PHRASE Key="9th hour" Value="Ча́съ девѧ́тый"/>
-<PHRASE Key="Fasts" Value="По́ста нѣ̀ /,Стро́гий по́стъ/,По́стъ: разрѣша́етсѧ на вїно̀ и҆ є҆ле́й /,По́стъ: разрѣша́етсѧ на рыбꙋ̀ /,Оу҆́казанїе варе́нїѧ: /,Ошибка при вычеслении указаний /,: Монасты́рская кꙋхнѧ: /,Стро́гий по́стъ/,Сꙋхоѧде́нїе /,Варе́нїе бе́з̾ є҆ле́ѧ/,По́стъ: Разрѣша́етсѧ на ры́бною и҆крꙋ̀ /,Ма́сленца (варе́нїе бе́з̾ мѧ́са) /,По́стъ: Разрѣша́етсѧ вїно̀҆ /,мѧ́со/,мла҆чные продꙋ́кты/,ры́ба/,ры́бнаѧ и҆́кпа/,є҆ле́й/,вїно̀/,сухоѧденїе/,/,/,/,разрѣша́етсѧ/,запрещается/,и҆/,, пока/,По́стъ: " />
+<PHRASE Key="Fasts" Value="По́ста нѣ̀ /,Стро́гий по́стъ/,По́стъ: разрѣша́етсѧ на вїно̀ и҆ є҆ле́й /,По́стъ: разрѣша́етсѧ на рыбꙋ̀ /,Оу҆́казанїе варе́нїѧ: /,Ошибка при вычеслении указаний /,: Монасты́рская кꙋхнѧ: /,Стро́гий по́стъ/,Сꙋхоѧде́нїе /,Варе́нїе бе́з̾ є҆ле́ѧ/,По́стъ: Разрѣша́етсѧ на ры́бною и҆крꙋ̀ /,Ма́сленца (варе́нїе бе́з̾ мѧ́са) /,По́стъ: Разрѣша́етсѧ вїно̀҆ /,мѧ́со/,мла҆чные продꙋ́кты/,ры́ба/,ры́бнаѧ и҆́кпа/,є҆ле́й/,вїно̀/,сухоѧденїе/,/,/,/,разрѣша́етсѧ/,запрещается/,и҆/,, пока/,По́стъ: " />
 <PHRASE Key="Week1" Value="не/,пон/,вт/,ср/,чт/,пт/,сб" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="No Service Today/,Ча́съ пе́рвый/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="DayReading" Value="длѧ̀ недѣ́ли/,длѧ̀ понедѣ́льника/,длѧ̀ вто́рника/,длѧ̀ сре́ды/,длѧ̀ четвертка̀/,длѧ̀ пѧтка̀/,длѧ̀ сꙋббѡ́ты" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
 <PHRASE Key="DateFormat" Value="WW, DD_й де́нь MM YY лѣ́та." Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
-<PHRASE Key="Feasts" Value="Ѡ҆брѣ́занїе гдⷭа/,Бг҃оѧвле́нїе/,Ржⷭтво̀ прⷣте́чи/,Ст҃ы́й а҆пⷭль петро̀ и҆ па́ѵло/,Преѡбраже́нїе/,Оу҆спе́нїе бцⷣы/,Оу҆сѣкнове́нїе прⷣте́чи/,Ржⷭтво̀ бцⷣы/,Воздви́женїе честна́гѡ крⷭта/,Покро́въ бцⷣы/,Введе́нїе во хра́мъ бцⷣы/,Хрⷭто́ве ржⷭтво̀/,Кѷрїопа́сха: Па́сха и҆ бл҃говѣ́щенїе/,Па́сха/,Бл҃говѣ́щенїе/,Пентико́стїи/,Вознесе́нїе/,Недѣ́лѧ ва́їй/,Срѣ́тенїе гдⷭа" />
+<PHRASE Key="Feasts" Value="Ѡ҆брѣ́занїе гдⷭа/,Бг҃оѧвле́нїе/,Ржⷭтво̀ прⷣте́чи/,Ст҃ы́й а҆пⷭль петро̀ и҆ па́ѵло/,Преѡбраже́нїе/,Оу҆спе́нїе бцⷣы/,Оу҆сѣкнове́нїе прⷣте́чи/,Ржⷭтво̀ бцⷣы/,Воздви́женїе честна́гѡ крⷭта/,Покро́въ бцⷣы/,Введе́нїе во хра́мъ бцⷣы/,Хрⷭто́ве ржⷭтво̀/,Кѷрїопа́сха: Па́сха и҆ бл҃говѣ́щенїе/,Па́сха/,Бл҃говѣ́щенїе/,Пентико́стїи/,Вознесе́нїе/,Недѣ́лѧ ва́їй/,Срѣ́тенїе гдⷭа" />
 <PHRASE Key="Helpers" Value="Save to a html file." />
 <PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
@@ -84,7 +83,7 @@ Missing element: /, with Tag: /,Error reading the Hashtable!
 Missing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines 
 "/>
 <PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
-<PHRASE Key="Terce" Value="No Service Today/,Ча́съ тре́тїй/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Terce" Value="No Service Today/,Ча́съ тре́тїй/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="No Service Today/,Ча́съ шесты́й/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="None" Value="No Service Today/,Ча́съ девѧ́тый/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="FontFaceM" Value="Hirmos Ponomar" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
@@ -101,10 +100,9 @@ Missing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be mai
 <PHRASE Key="Ideographic" Value="1" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV. 1 = yes!"/>
 <PHRASE Key="TimeF" Value="HH-й ча́съ MM-а минꙋта̀" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <!-- Traditionally, Church Slavonic uses a glyph-based approach to writing numbers, which at present cannot be truly implemented! -->
-<PHRASE Key="LivesW" Value="Жи́тїе/,Тропа́рь/, Подо́бенъ: /,Конда́къ/,Гла́съ TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
-<PHRASE Key="IconW" Value="Previous ї҆конꙋ/,Слѣ́дꙋющꙋ ї҆конꙋ/,Ї҆ко́нъ немаетъ."/>
+<PHRASE Key="LivesW" Value="Жи́тїе/,Тропа́рь/, Подо́бенъ: /,Конда́къ/,Гла́съ TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="Previous і҆конꙋ/,Слѣ́дꙋющꙋ і҆конꙋ/,І҆ко́нъ немаетъ."/>
 <PHRASE Key="Colon" Value=": " Note="This is how a colon is to appear in the given texts."/>
 <PHRASE Key="Commemoration2" Value=" (длѧ̀ %getN(^CC,Genetive))" Comments="%getN is a generalised grammar engine that will return the appropriate grammatical form. The format is Noun (in this case to be specified so ^CC) and the desired case (as defined in the commemoration files)"/>
 <PHRASE Key="Commemoration3" Value="И҆мⷬкъ" Comments="Failure to find any name for a given commemoration!"/>
-
 </LANGUAGEPACKS>
