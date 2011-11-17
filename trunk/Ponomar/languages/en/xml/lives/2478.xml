@@ -1,15 +1,13 @@
 <SAINT>
-<NAME Nominative="Martyrs Akepsimos the Bishop, Joseph the Presbyter and Haiphal the Deacon of Persia (4&lt;sup&gt;th&lt;/sup&gt; C)" Short="Martyrs Akepsimos"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
-&lt;p&gt;      They suffered for Christ in Persia during the reign of Shapur II in the Fourth Century. St. Acepsimas was Bishop of Naasson where he zealously worked for the spread of the Christian faith. During the persecution, he was seized together with Presbyter Joseph and Deacon Aithalas. He underwent cruel beatings and for three years languished in prison. After this they beheaded him. Sts. Joseph and Aithalas were stoned to death. St. Aithalas is also commemorated on September 1. &lt;/p&gt;
-</LIFE><SERVICE>
-<LITURGY>
-<TROPARION Type="1" Tone="4" Translator="Aleksandr Andreev">
- 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
+<NAME Nominative="Martyrs Akepsimos the Bishop, Joseph the Presbyter and Haiphal the Deacon of Persia (4&lt;sup&gt;th&lt;/sup&gt; C)" Short="Martyrs"/>
+<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+<p>They suffered for Christ in Persia during the reign of Shapur II in the Fourth Century. St. Acepsimas was Bishop of Naasson where he zealously worked for the spread of the Christian faith. During the persecution, he was seized together with Presbyter Joseph and Deacon Aithalas. He underwent cruel beatings and for three years languished in prison. After this they beheaded him. Sts. Joseph and Aithalas were stoned to death. St. Aithalas is also commemorated on September 1. </p>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <KONTAKION Type="1" Tone="2" Translator="Aleksandr Andreev">
-&lt;p&gt;O wise one, thou didst celebrate the mysteries blamelessly, and becamest an acceptable sacrifice, O Divinely Blessed One; For thou didst gloriously drink the cup of Christ, Holy Acepsimas, together with thy co-sufferers praying unceasingly for us all.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+<p>O wise one, thou didst celebrate the mysteries blamelessly, and becamest an acceptable sacrifice, O Divinely Blessed One; For thou didst gloriously drink the cup of Christ, Holy Acepsimas, together with thy co-sufferers praying unceasingly for us all.</p>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

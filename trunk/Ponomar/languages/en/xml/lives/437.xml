@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyr Boniface at Tarsus in Cilicia and the Righteous Aglae (Aglaida) of Rome († 290)" Short="Martyr Boniface"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
 &lt;p&gt;He was a servant of a wealthy Roman woman, Aglae by name, with whom he lived a dissolute life. Previously suffering from an affliction of infatuation to a fault, he subsequently “was revealed a confessor and glorious sufferer in the name of the Lord.” When his mistress sent him to the East for martyr’s relics, Boniface there witnessed the suffering of Christians, accepted the Christian faith and for this he was tortured and beheaded in Tarsus. His companions brought his body to Rome in 290. They enshrined the relics of the holy martyr in the temple they raised up for the purpose. &lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
  
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4">
 &lt;p&gt;Of thine own will thou didst bring thyself as an unblemished sacred offering * to Him Who was born of the Virgin for thy sak, ** O all-wise Boniface, holy crown-bearer.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

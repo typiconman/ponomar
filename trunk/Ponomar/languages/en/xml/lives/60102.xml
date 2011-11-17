@@ -1,3 +1,12 @@
 <SAINT>
-<NAME Nominative="Finding of the relics of St Demetrius, Metropolitan of Rostov (1752)" Short="Finding"/>
-<SERVICE Type="4"/></SAINT>
+<NAME Nominative="Finding of the relics of St Demetrius, Metropolitan of Rostov (1752)" Short="Hierarch"/>
+<SERVICE Type="4">
+<MATINS>
+<SCRIPTURE Type="1" Reading="Jn_10:1-9" Pericope="35 (mid.)"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318"/>
+<SCRIPTURE Type="gospel" Reading="Jn_10:9-16" Pericope="36"/>
+</LITURGY>
+</SERVICE>
+</SAINT>

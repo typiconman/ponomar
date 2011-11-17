@@ -273,8 +273,20 @@ sub startElement {
 			$SAINTS{$src}{Type} = $attrs{Type}; 
 			last SWITCH;
 		}
+		if ($element eq "PRIMES") {
+			$whichService = "1st hour";
+			last SWITCH;
+		}
+		if ($element eq "TERCE") {
+			$whichService = "3rd hour";
+			last SWITCH;
+		}
 		if ($element eq "SEXTE") {
 			$whichService = "6th hour";
+			last SWITCH;
+		}
+		if ($element eq "NONE") {
+			$whichService = "9th hour";
 			last SWITCH;
 		}
 		if ($element eq "VESPERS") {
@@ -570,7 +582,7 @@ foreach (keys %SAINTS) {
 }
 
 ################### BEGIN SCRIPTURE MEGA-SORTING ALGORITHM #####################
-my @order_of_types = ("1st hour", "6th hour", "vespers", "matins", "liturgy");
+my @order_of_types = ("1st hour", "3rd hour", "6th hour", "9th hour", "vespers", "matins", "liturgy");
 my @order_of_reads = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "menaion"); ## FIXME
 my %sort_order     = map  { $order_of_reads[$_] => $_ } (0..$#order_of_reads);
 my @order_of_srcs  = sort { $sort_order{$SAINTS{$a}{Reason}} <=> $sort_order{$SAINTS{$b}{Reason}} || $SAINTS{$b}{Type} <=> $SAINTS{$a}{Type}} keys %SAINTS;
@@ -602,10 +614,10 @@ foreach ( keys %COMMANDS ) {
 	foreach my $src (@order_of_srcs) {
 		next unless $READINGS{$src}{liturgy};
 		next unless $SAINTS{$src}{Reason} eq "pentecostarion";
-		delete $READINGS{$src}{liturgy} unless ($SAINTS{$src}{Type} > 2);
-		if ($COMMANDS{$_}{Name} eq "Suppress") {
-			delete $READINGS{$src}{matins}  unless ($SAINTS{$src}{Type} > 2);
-		}
+		delete $READINGS{$src}{liturgy} unless ($SAINTS{$src}{Type} >= 1);
+		#if ($COMMANDS{$_}{Name} eq "Suppress") {
+		#	delete $READINGS{$src}{matins}  unless ($SAINTS{$src}{Type} >= 1);
+		#}
 	}
 }
 

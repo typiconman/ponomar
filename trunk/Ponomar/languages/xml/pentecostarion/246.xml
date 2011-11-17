@@ -1,8 +1,6 @@
 <DAY>
-
-
-<SAINT CId="9904" Cmd="doy &gt;= 359 &amp;&amp; doy &lt;= 364"/><SAINT CId="9906" Cmd="doy &gt;= 351 &amp;&amp; doy &lt;= 357"/>
-
-
-<SAINT CId="9908" Cmd="doy &gt;= 344 &amp;&amp; doy &lt;= 350"/><SAINT SId="0" CId="9246" Tone="3"/>
+<SAINT SId="0" CId="9246" Tone="3"/>
+<SAINT CId="9904" Cmd="doy &gt;= 359 &amp;&amp; doy &lt;= 364"/>
+<SAINT CId="9906" Cmd="doy &gt;= 351 &amp;&amp; doy &lt;= 357"/>
+<SAINT CId="9908" Cmd="doy &gt;= 344 &amp;&amp; doy &lt;= 350"/>
 </DAY>

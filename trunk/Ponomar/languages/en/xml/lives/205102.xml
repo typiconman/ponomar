@@ -1,15 +1,16 @@
 ﻿<SAINT>
-<NAME Nominative="Holy Protomartyr and Archdeacon Stephen († c.34)" Short="Holy Protomartyr"/>
-<SERVICE Type="2"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+<NAME Nominative="Holy Protomartyr and Archdeacon Stephen († c.34)" Short="Protomartyr"/>
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
 He belonged to the group of seven deacons installed by the apostles to serve meals for the widows (Acts 6) and was called archdeacon because he was the eldest of them. Filled with the Holy Spirit and power, he preached the word of God, confirming it with signs and wonders. During his last sermon about Christ in the Sanhedrin, those sitting there saw his face, “as the face of an Angel.” Upon finishing his sermon, St. Stephen, full of the Holy Spirit, “gazed into heaven and saw the glory to God, and Jesus standing at the right hand of God” (Acts 7:55). He underwent the hatred of the Jews for this sermon, who slandered him for blasphemy of God and Moses and they stoned him (about the year 34). Before his death St. Stephen, “knelt down,” prayed for his murderers, and cried “with a loud voice: ‘Lord, do not hold this sin against them′. And when he had said this, he fell asleep” (Acts 7:60). St. Stephen was the first of the Christians who suffered for their faith, according to St. Asterius, being “the first of the martyrs, teacher of suffering for Christ, the foundation of good confession, because before Stephen nobody poured out blood for the Gospel,” is why he is called Protomartyr. The body of Holy Protomartyr Stephen was honorably buried on the grounds of the Jewish teacher Gamaliel near Jerusalem. Refer to Aug. 2 and Sep. 15. The right hand of the Holy Protomartyr and Archdeacon Stephen is kept in a special ark (kivot) in the Serapion vault near the church of the Ven. Nikon in the Trinity - St. Sergius Laura. 
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="2">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 Thou didst fight the good fight, and, didst denounce the impiety of the tyrants, * O protomartyr and apostle of Christ; * for, stoned at the hands of the iniquitous, * thou hast received from on high a crown from the right hand of the Lord, ** and didst exclaim to God, crying aloud: O Lord, lay not this sin to their charge!
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="3">
 Yesterday the Master came to us in the flesh, * and today his servant departeth from the flesh. * Yesterday He that reigneth over the flesh was born, * and today his servant is slain by stoning. ** For His sake the godly protomartyr Stephen doth meet his end.
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

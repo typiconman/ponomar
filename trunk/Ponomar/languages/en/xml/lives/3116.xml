@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyrs Thyrsos, Leukios, Callinicos of Apollonia († 249-251)" Short="Martyrs Thyrsos"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
 &lt;p&gt;       “The wondrous Thyrsus, and the godly-minded Callinicus, and the glorious Leucius” suffered for Christ in the persecution during the reign of Decius (249-251) in Cæsarea, Bithynia. St. Leucius, who reproached the ruler Cumbricius for unfair persecution of Christians, was tortured and then beheaded. St. Thyrsus, being “strengthened by the power of the cross,” underwent “the planing of the body” and other tortures without injury and died in peace. St. Callinicus, who was a pagan priest, seeing the courage and miracles of St. Thyrsus, accepted Christ and was beheaded. During the reign of Diocletian “the great Philemon, and the most godly Arianus, and the wise Apolonius,” and together with them Theoctychus with three guards (imperial bodyguards) suffered in Antinoopolis, Egypt. Apolonius, the reader in Antinoopolis, frightened by the tortures, asked the pagan Philemon, a musician, to make an offering for him to the idol. But when disguised in the clothes of Apolonius, Philemon firmly confessed himself as a Christian before the torturer; Apolonius repented and also confessed Christ. After being tortured, both holy martyrs were beheaded. The torturer of Arianus, seeing the wonders of the holy martyrs, with his whole household also turned to Christ, and was sentenced to death for this. Four guards (of which Theoctychus was the eldest) voluntarily turned themselves over to be tortured for Christ. The church services do not mention the Martyr Theoctychus and the other guards.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In their sufferings, O Lord, * Thy martyrs received imperishable crowns from Thee our God; * for, possessed of Thy might, * they set at nought the tormenters and crushed the feeble audacity of the demons. ** By their supplications save Thou our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Reviling the impious tyrant, * O champions of faith and piety, * ye denounced his bestial thirst for blood, * and fortified by the help of Christ, O Thyrsus and Leucius, * ye vanquished his wrathful opposition. ** With those who suffered with you, pray ye in our behalf.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

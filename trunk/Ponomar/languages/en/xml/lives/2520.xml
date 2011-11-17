@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Great Martyr Menas of Egypt († 304)" Short="Great Martyr Menas"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
 &lt;p&gt;       Born in Egypt, a warrior, he during the persecution of the Emperor Diocletian left military service and, having gone to the desert, in fasting and prayer he was tonsured there. During one pagan feast he was revealed in the city of Cotiæum (in Phrygia) and began fearlessly to accuse the pagans of their errors. St. Menas was immediately seized and turned over to the cruelest tortures, after which with a sword they beheaded him (in the year 304). In a service for this day together with Menas the martyrs Sts. Victor, Vincent and Stephanida are glorified; but the majority of the church hymns are devoted in honor of the holy Martyr Menas. &lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In their sufferings, O Lord, * Thy martyrs received imperishable crowns from Thee our God; * for, possessed of Thy might, * they set at nought the tormentors and crushed the feeble audacity of the demons. ** By their supplications save Thou our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4">
 &lt;p&gt;Christ our God, the imperishable Crown of martyrs, * took thee, O passionbearer Minas, from a transient army, ** and showed thee forth as a partaker of the incorrupt­ible and heavenly.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

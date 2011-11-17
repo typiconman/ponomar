@@ -1,10 +1,13 @@
 <SAINT>
 <NAME Nominative="Martyr Victor at Damascus (2&lt;sup&gt;nd&lt;/sup&gt; C) along with the Martyr Stephanida of Spain" Short="Martyr Victor"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
 The Holy Martyr Victor suffered for Christ in the city of Damascus, during the reign of the Emperor Antoninus. St. Victor was born in Italy. For confessing Christ he was thrown into a flaming furnace and boiling oil and, when by the power of God he remained unharmed, they beheaded him with a sword. 
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 In their sufferings, O Lord, * Thy martyrs received imperishable crowns from Thee our God; * for, possessed of Thy might, * they set at nought the tormentors and crushed the feeble audacity of the demons. ** By their supplications save Thou our souls.
-</TROPARION></LITURGY></SERVICE>
+</TROPARION>
+</LITURGY>
+</SERVICE>
 </SAINT>
