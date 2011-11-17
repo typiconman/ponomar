@@ -1,7 +1,13 @@
 <SAINT>
-<SERVICE Type="0"><VESPERS><SCRIPTURE Type="1" Reading="Gen_14:14-20"/>
+<SERVICE Type="1">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Gen_14:14-20"/>
 <SCRIPTURE Type="2" Reading="Deut_1:8-11, 15-17"/>
 <SCRIPTURE Type="3" Reading="Deut_10:14-21"/>
-</VESPERS><LITURGY><SCRIPTURE Type="apostol" Reading="Heb_11:9-10, 17-23, 32-40" Pericope="328"/>
-<SCRIPTURE Type="gospel" Reading="Mt_1:1-25" Pericope="1"/></LITURGY></SERVICE>
+</VESPERS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="Heb_11:9-10, 17-23, 32-40" Pericope="328"/>
+<SCRIPTURE Type="gospel" Reading="Mt_1:1-25" Pericope="1"/>
+</LITURGY>
+</SERVICE>
 </SAINT>

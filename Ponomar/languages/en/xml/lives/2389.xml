@@ -1,15 +1,7 @@
 <SAINT>
 <NAME Nominative="Virginmartyr Anysia at Thessalonica († c.  285-305)" Short="Virginmartyr Anysia"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
 &lt;p&gt;      Born in the city of Thessalonica, the daughter of rich and God-fearing parents, she, having devoted her life to the Lord, abided unceasingly in fasting and prayer and used her estate to help the poor, the sick and captives in prisons. Once, walking in the temple, St. Anysia met a pagan warrior, who stopped her and demanded that she should have brought an offering for the solar feast. St. Anysia refused and for this was killed by the warrior (at the end of the third century).&lt;/p&gt;
-</LIFE><SERVICE>
-<LITURGY>
-<TROPARION Type="1" Tone="1">
- 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
-<KONTAKION Type="1" Tone="1">
- 
-</KONTAKION></LITURGY></SERVICE>
+</LIFE>
+<SERVICE Type="1"/>
 </SAINT>

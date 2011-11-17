@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyrs Galaction and his wife Epistimia, at Emesa (3&lt;sup&gt;rd&lt;/sup&gt; C)" Short="Martyrs Galaction"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
 &lt;p&gt; They suffered for Christ during the persecution of Decius in the city of Emesa, Phœnicia. St. Galaction, being a Christian, according to the will of his parents, was betrothed to the pagan Epistime. Having instructed her in the holy faith, St. Galaction convinced her to lead a virgin life, and was himself tonsured as a monk on Mount Publion near Sinai. During the persecution when he was seized for torture, St. Epistime voluntarily joined him to share with him the cup of suffering. After severe tortures both holy martyrs were beheaded. &lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4" Translator="Aleksandr Andreev">
 Thy martyrs, O Lord, through their sufferings have received incorruptible crowns from Thee, our God. For having Thy strength, they despoiled their adversaries, and shattered the powerless audacity of demons. Through their intercessions, save Thou our souls!
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2" Translator="Aleksandr Andreev">
 Thou hast been counted among the ranks of the martyrs of Christ, having fought valiantly, thou brightly struggled, O glorious Galaction, with thine honourable wife and fellow sufferer, Epistime; pray ye unceasingly to the one God for us all.
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>
