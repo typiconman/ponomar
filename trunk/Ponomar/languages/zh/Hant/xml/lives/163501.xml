@@ -1,5 +1,5 @@
 <SAINT>
-<NAME Short="顯行靈跡"/>
-<NAME Nominative="顯行靈跡者聖尼科拉之聖髑由小亞細亞的彌拉城被敬遷於意大利的巴里城紀念日（1087年）" Cmd="nday != 46"/>
-<NAME Nominative="顯行靈跡者聖尼科拉之聖髑由小亞細亞的彌拉城被敬遷於意大利的巴里城紀念日（1087年）(transferred from Saturday)" Cmd="nday == 46"/>
+<NAME Short="顯行靈蹟"/>
+<NAME Nominative="顯行靈蹟者聖尼科拉之聖髑由小亞細亞的彌拉城被敬遷於意大利的巴里城紀念日（1087年）" Cmd="nday != 46"/>
+<NAME Nominative="顯行靈蹟者聖尼科拉之聖髑由小亞細亞的彌拉城被敬遷於意大利的巴里城紀念日（1087年）(transferred from Saturday)" Cmd="nday == 46"/>
 </SAINT>
