@@ -1,5 +1,5 @@
 <SAINT>
-<NAME Short="紀念義人，迎主者聖西麥翁，及女先知聖安納（公元1世紀）"/>
-<NAME Nominative="紀念義人，迎主者聖西麥翁，及女先知聖安納（公元1世紀）（transferred from Tuesday）" Cmd="doy ==32 &amp;&amp; nday == -48"/>
-<NAME Nominative="紀念義人，迎主者聖西麥翁，及女先知聖安納（公元1世紀）" Cmd="!(doy ==32 &amp;&amp; nday == -48)"/>
+<NAME Short="紀念義人，迎主者聖西麥翁，及女先知聖安納（公元一世紀）"/>
+<NAME Nominative="紀念義人，迎主者聖西麥翁，及女先知聖安納（公元一世紀）（transferred from Tuesday）" Cmd="doy ==32 &amp;&amp; nday == -48"/>
+<NAME Nominative="紀念義人，迎主者聖西麥翁，及女先知聖安納（公元一世紀）" Cmd="!(doy ==32 &amp;&amp; nday == -48)"/>
 <SERVICE Type="2"/></SAINT>
