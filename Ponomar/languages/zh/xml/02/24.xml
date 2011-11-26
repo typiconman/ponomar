@@ -2,9 +2,9 @@
 <SAINT SId="1007" CId="09107" Cmd="!(nday == -57 || nday == -53 || nday == -51 || nday == -48 || nday == -47 || nday == -46 || nday == -45 || nday == -44)"/>
 <SAINT SId="1843" CId="1843" Cmd="nday == -46"/>
 <SAINT SId="506" CId="506"/>
-<SAINT SId="02240096" CId="02240096"/>
-<SAINT SId="02240196" CId="02240196"/>
-<SAINT SId="02240296" CId="02240296"/>
+<SAINT SId="02240096" CId="022400"/>
+<SAINT SId="02240196" CId="022401"/>
+<SAINT SId="02240296" CId="022402"/>
 <SAINT SId="0910701" CId="0910701" Cmd="(nday == -57 || nday == -53 || nday == -51 || nday == -48 || nday == -47 || nday == -46 || nday == -45 || nday == -44)"/>
 
 </DAY>
