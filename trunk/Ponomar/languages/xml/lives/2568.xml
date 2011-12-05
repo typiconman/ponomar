@@ -1,11 +1,11 @@
 <SAINT>
 <SERVICE>
 <MATINS>
-<SCRIPTURE Type="1" Reading="Lk_15:1-10" Cmd="nday == -58 || dow == 6"/>
+<SCRIPTURE Type="1" Reading="Lk_15:1-10"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Cmd="nday == -58 || dow == 6" Pericope="208"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Cmd="nday == -58 || dow == 6" Pericope="104"/>
+<SCRIPTURE Type="apostol" Reading="Gal_3:23-4:3" Pericope="208"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

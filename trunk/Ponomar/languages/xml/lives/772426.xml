@@ -5,8 +5,8 @@
 <SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="dow != 0" />
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Pericope="318" Reading="Heb_7:26-8:2" Cmd="dow != 0 &amp;&amp; dow != 6"/>
-<SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:17-23" Cmd="dow != 0 &amp;&amp; dow != 6" />
+<SCRIPTURE Type="apostol" Pericope="318" Reading="Heb_7:26-8:2" Cmd="dow != 0"/>
+<SCRIPTURE Type="gospel" Pericope="24" Reading="Lk_6:17-23" Cmd="dow != 0" />
 </LITURGY>
 </SERVICE>
 </SAINT>

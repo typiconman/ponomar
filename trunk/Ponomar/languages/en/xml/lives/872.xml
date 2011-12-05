@@ -1,17 +1,19 @@
 <SAINT>
-<NAME Nominative="Holy Apostle James Zebedee, brother of John the Theologian († 44)" Short="Holy Apostle"/>
-<SERVICE Type="4"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<NAME Nominative="Holy Apostle James Zebedee, brother of John the Theologian († 44)" Short="Apostle"/>
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Holy Apostle James, Son of Zebedee, one of the 12 Apostles, was called by our Lord Jesus Christ for apostolic service together with his brother, the Apostle John the Theologian. It was to them and to the holy Apostle Peter pre-eminently over the other Apostles that Jesus Christ revealed His Divine Mysteries: at the Resuscitation of the Daughter of Jairus, on Mount Tabor (at the Transfiguration), and in the Garden of Gethsemane.&lt;/p&gt;&lt;p&gt;Saint James, after the Descent of the Holy Spirit, preached in Spain and in other lands, and then he returned to Jerusalem. He openly and boldly taught about Jesus Christ as the Saviour of the world, and with the words of Holy Scripture he denounced the Pharisees and the Scribes [scholars], reproaching them with malice of heart and unbelief. The Jews had not the ability to refute the apostolic discourse and for money they hired the pseudo-philosopher and sorcerer Hermogenes, so that he would enter into a disputation with the apostle and confute his arguments about Christ as the Promised Messiah having come into the world. The sorcerer sent to the apostle his student Philip, who was converted to belief in Christ. Then Hermogenes himself became persuaded of the power of God, he burnt his books on magic, accepted holy Baptism and became a true follower of Christ.&lt;/p&gt;&lt;p&gt;The unbelieving among the Jews persuaded Herod Agrippa (40-44) to arrest the Apostle James and sentence him to death. Saint James calmly heard out the death sentence and continued to bear witness about Christ. One of the false-witnesses against the apostle by the name of Josiah was struck by the courage of Saint James. He came to believe in the truth of the words about the coming of Christ the Messiah. When they led forth the apostle for execution, Josiah fell at his feet, repenting his sin and asking forgiveness. The apostle hugged him, gave him a kiss and said: “Peace and forgiveness be unto thee.” Then Josiah confessed before everyone his faith in Christ, and he was beheaded together with Saint James in the year 44 at Jerusalem.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="4">
 <LITURGY>
 <TROPARION Type="1" Tone="3">
 &lt;p&gt;O holy apostle James * entreat the merciful God ** that He grant to our souls remission of transgressions.&lt;/p&gt;
-</TROPARION><TROPARION Type="2" Tone="3">
+</TROPARION>
+<TROPARION Type="2" Tone="3">
 &lt;/p&gt;&lt;p&gt;Thou wast a chosen apostle of Christ * and the only brother of the beloved Theologian, * O most lauded James. * Ask thou remission of sins for those who hymn thee, ** and great mercy for our souls.
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Hearing the voice of God calling thee, * thou didst disdain the love of thy father, * and with thy kinsman thou didst hasten after Christ, O glorious James. * And with him thou wast counted worthy to behold ** the divine transfiguration of the Lord.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

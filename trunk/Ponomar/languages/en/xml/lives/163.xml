@@ -1,15 +1,16 @@
 <SAINT>
-<NAME Nominative="Holy Theophany: the Baptism of Our Lord, God, and Saviour Jesus Christ" Short="Holy Theophany:"/>
-<SERVICE Type="8"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+<NAME Nominative="Holy Theophany: the Baptism of Our Lord, God, and Saviour Jesus Christ" Short="Holy Theophany"/>
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
 &lt;p&gt;Theophany  * Bogoyavlenie denotes the feast whereby through the Baptism of the Lord the Most Holy Trinity has been revealed to the world (Mt. 3: 13-17; Mk. 1: 9-11;  Lk. 3: 21-22). God the Father spoke from Heaven about the Son, the Son was baptised by the holy ForeRunner of the Lord John, and the Holy Spirit descended upon the Son in the form of a Dove. From ancient times this feast was called the Day of Illumination and the Feast of Lights, since that God is Light and has appeared to illumine “those sitting in darkness and the shadow of death” (Mt. 4: 16) and to save through grace the fallen race of mankind.&lt;/p&gt;&lt;p&gt;In the ancient Church it was the custom to baptise catechumens at the vespers of Theophany, such that Baptism also is revealed as a spiritual illumination of mankind.&lt;/p&gt;&lt;p&gt;The origin of the feast of Theophany came about in Apostolic times. Mention is made concerning it in the Apostolic Decretals. From the II Century there is preserved the testimony of Saint Clement of Alexandria concerning the celebration of the Baptism of the Lord and performing the night vigil before this feast.&lt;/p&gt;&lt;p&gt;In the III Century on the feast of Theophany there is known the dialogue concerning Divine-services between the holy martyr Hyppolitus and Saint Gregory the WonderWorker. In the following centuries—from the IV to IX Century—all the great fathers of the Church—Gregory the Theologian, John Chrysostomos, Ambrose of Milan, John Damascene, had their own comments about the feast of Theophany. The monks Joseph the Studite, Theophanes and Byzantios composed much liturgical music for this feastday, which even now  is sung for Divine-services. The Monk John Damascene said, that the Lord was baptised not because He Himself had need for cleansing, but so that “by water to bury human sin,” to fulfill the law, to reveal the mystery of the Holy Trinity, and finally, to sanctify “watery nature” and to proffer it to us in the form and example of Baptism.&lt;/p&gt;&lt;p&gt;On the feastday of the Baptism of Christ, Holy Church asserts our faith in the mystery—most sublime and incomprehensible to human intellect—of the Three Persons of the One God. It teaches us to confess and glorify as equally-honoured the Holy Trinity One-Essence and Undivided. It exposes and collapses the fallacies of the ancient pseudo-teachings, which attempted with reason and by human terms to explain the Creator of the world. The Church shews the necessity of Baptism for believers in Christ, and it inspires for us a sense of deep gratitude for the Illumination and Purification of our sinful nature. The Church teaches that our salvation and cleansing from sin is possible only by the power of the grace of the Holy Spirit, wherefore it is necessary to preserve worthily these gifts of the grace of holy Baptism—keeping clean this priceless garb, about which the feast of the Baptism tells us: “As many as have been baptised into Christ, have put on Christ” (Gal. 3:27). [Translator Note: literally rendered from Greek “Theophany” means “Manifestation of God,” whereas “Epiphany” connotes “Manifest upon”; “Theophany” is the more accurate rendering of Slavonic “Bogoyavlenie.”]&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="8">
 <LITURGY>
 <TROPARION Type="1" Tone="1">
 &lt;p&gt;When Thou, O Lord, wast baptized in the Jordan, * the worship of the Trinity was made manifest; * for, the voice of the Father bare witness unto Thee, * calling Thee His beloved Son; * and the Spirit in the form of a dove * confirmed the certainty of His word. * O Christ our God, Who hast appeared and enlightened the worlds, ** glory be to Thee!&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4">
 &lt;p&gt;Thou hast appeared today to the whole world, * and Thy light, O Lord, hath been signed upon us * who hymn Thee with understanding. * Thou hast come, Thou hast appeared, * the Light unapproachable.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

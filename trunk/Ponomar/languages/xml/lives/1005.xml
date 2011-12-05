@@ -1,16 +1,8 @@
 <SAINT>
-<SERVICE>
-<VESPERS>
-<SCRIPTURE Type="1" Reading="Prov_10:7,6,3:13-16" Cmd="nday == 46"/>
-<SCRIPTURE Type="1" Reading="Prov_10:31-32, 11:1-12" Cmd="nday == 46"/>
-<SCRIPTURE Type="1" Reading="Wisd_4:7-15" Cmd="nday == 46"/>
-</VESPERS>
-<MATINS>
-<SCRIPTURE Type="1" Reading="Jn_10:1-9" Cmd="nday == 46"/>
-</MATINS>
+<SERVICE Type="2">
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Cmd="nday == 46" Pericope="335"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Cmd="nday == 46" Pericope="24"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_1:18-2:2" Pericope="125"/>
+<SCRIPTURE Type="gospel" Reading="Jn_19:6-11, 13-20, 25-28, 30-35" Pericope="60"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

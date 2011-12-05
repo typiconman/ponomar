@@ -1,7 +1,7 @@
 <SAINT>
 <SERVICE Type="1">
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Philemon_1:1-25" Pericope="part of 302"/>
+<SCRIPTURE Type="apostol" Reading="Philemon_1:1-25" Pericope="after 302"/>
 <SCRIPTURE Type="gospel" Reading="Lk_10:1-15" Pericope="50"/>
 </LITURGY>
 </SERVICE>
