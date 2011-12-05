@@ -6,7 +6,7 @@
 <SCRIPTURE Type="3" Reading="Ezek_43:27, 44:1-4"/>
 </VESPERS>
 <MATINS>
-<SCRIPTURE Type="1" Reading="Lk_1:39-49, 56"/>
+<SCRIPTURE Type="1" Reading="Lk_1:39-49, 56" Pericope="4"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Heb_9:1-7" Pericope="320"/>

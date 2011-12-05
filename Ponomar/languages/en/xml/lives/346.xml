@@ -1,15 +1,16 @@
 <SAINT>
-<NAME Nominative="Holy Wonderworkers and Unmercenary Martyrs Cyrus and John, and together with them the Martyr Athanasia and her daughters: Theodotia, Theoctista and Eudoxia at Canopus in Egypt († 311)" Short="Holy Wonderworkers"/>
-<SERVICE Type="2"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+<NAME Nominative="Holy Wonderworkers and Unmercenary Martyrs Cyrus and John, and together with them the Martyr Athanasia and her daughters: Theodotia, Theoctista and Eudoxia at Canopus in Egypt († 311)" Short="Unmercenaries"/>
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
 &lt;p&gt;The Holy UnMercenary Cyrus was a noted physician in the city of Alexandria, where he was born and grew up. He was a Christian and he doctored all the sick for free, not only offering help for bodily ills, but healing also infirmities of soul, such as were causes of bodily sickness. Preaching the Gospel teaching, the holy physician converted many pagans to Christ. During the time of the persecution by Diocletian (284-305), Saint Cyrus withdrew into the Arabian wilderness, where he took on the monastic life, and continued there also to doctor people by his prayer, having received from God the gift to heal every sickness.&lt;/p&gt;&lt;p&gt;In the city of Edessa at this time lived the soldier John, a pious Christian. When the persecution started, he went to Jerusalem and there, hearing about Saint Cyrus, he began to search for him, and he went first to Alexandria and then to Arabia. Having finally found Saint Cyrus, John with all his heart became attached to him and became his faithful follower. They learned that in Egypt in the city of Canopis had been arrested the Christian Athanasia and her three young daughters: Theoktista—age 15, Theodotia—age 13, and Eudoxia—age 11. Saints Cyrus and John hastened to go to them in help, worrying that fear in the face of torture might impel them to renounce Christ. They visited them in prison and gave them courage to stand what was before them. Learning of this, the governor of the city arrested Saints Cyrus and John, and convincing himself of their steadfast and fearless confession of faith in Christ, he gave them over to terrible tortures before the very eyes of Athanasia and her daughters, who in turn bravely endured all the tortures and were beheaded. After them at the same place they executed the holy UnMercenaries Cyrus and John († 311). Christians buried their bodies in a church of the holy Disciple and Evangelist Mark. In the V Century the relics of Saints Cyrus and John were transferred from Canopis to Manuphin. Later on their relics were transferred to Rome, and from there to Munchen (Munich) (an account further is located under 28June).&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="2">
 <LITURGY>
 <TROPARION Type="1" Tone="5">
 &lt;p&gt;O Christ God, Thou hast given us an impregnable rampart in the miracles of Thy holy martyrs. * Through their supplications destroy Thou the councils of the heather * and strengthen the scepters of kingdoms, ** in that Thou alone art good and lovest mankind.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="3">
 &lt;p&gt;Receiving the gift of miracles from”grace divine, * O saints, ye work wonders unceasingly * cutting down all our passions with invisible skill, * O divinely wise Cyrus and glorious John; ** for ye are divine physicians.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

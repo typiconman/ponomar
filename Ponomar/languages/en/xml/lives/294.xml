@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Venerable Xenia of Rome and her two female slaves (5&lt;sup&gt;th&lt;/sup&gt; C)" Short="Venerable Xenia"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
 &lt;p&gt;The Nun Xenia (V), in the world Eusebia, was the only daughter of an eminent Roman senator. From her youth she yearned for God. In order to evade the marriage set up for her, she secretly left from her parental home together with two servants devoted to her and they set sail upon a ship. Through the Providence of God meeting up with the head of the monastery of the holy Apostle Andrew, which was situated in the city of Milassa, in Cæsarea, she besought him to take her with her companions to Milassa. Having changed her name, she called herself Xenia [which in Greek means “stranger” or foreigner”]. At Milassa she bought land, built a church in the name of Saint Stephen and founded a woman’s monastery. Soon after this the bishop of Milassa, Paul, consecrated Xenia a deaconess, as fully worthy of that calling through virtuous life. The saint rendered aid to all: for the destitute she was a benefactress, for the grief-stricken—a comforter, for sinners—a guide. She possessed deep humility, accounting herself worst and most sinful of all. In her ascetic deeds she was guided by the counsels of the Palestinian ascetic, the Monk Euthymios. By her lofty life Saint Xenia attracted many a soul to salvation. The death of the holy virgin, during a time of prayer, was marked by the Lord with the appearance over the monastery in the heavens of an apparition in the form of a luminous crown with a radiant cross amidst it, which accompanied the body of the saint when it was carried into the city to the people, and it stayed until the moment of burial. Many of the sick, having touched to the remains of the saint, received healing.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="8">
 &lt;p&gt;In thee, O mother, that which was created according to the image of God was manifestly saved. * For accepting thy cross thou didst follow after Christ, * and praying thou didst learn to disdain the flesh, * for thou didst transcend it to take care of thine immortal soul. ** Wherefore, with the angels doth thy soul rejoice, O venerable Xenia.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Celebrating thy strange memorial, O Xenia, * we who honor thee with love hymn Christ, * Who giveth thee the power of healing in all things. * To Him do thou ever pray in our behalf.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

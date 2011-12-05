@@ -2,7 +2,7 @@
 <NAME Nominative="Eve of Theophany" Short="Eve"/> 
 <LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
 </LIFE>
-<SERVICE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 Once, the River Jordan was turned back by the mantle of Elisha when Elijah was borne aloft, and the waters were parted on either side, and the path which before was wet became dry for him, as a true image of baptism, whereby we pass through the flow of life. Christ hath appeared in the Jordan to sanctify the waters.

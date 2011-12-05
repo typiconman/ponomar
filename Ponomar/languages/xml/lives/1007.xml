@@ -1,8 +1,8 @@
 <SAINT>
-<SERVICE>
+<SERVICE Type="3">
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Acts_19:1-8" />
-<SCRIPTURE Type="gospel" Reading="Jn_1:29-34" />
+<SCRIPTURE Type="apostol" Reading="Acts_19:1-8" Pericope="42" />
+<SCRIPTURE Type="gospel" Reading="Jn_1:29-34" Pericope="3" />
 </LITURGY>
 </SERVICE>
 </SAINT>
