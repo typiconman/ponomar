@@ -6,7 +6,7 @@
 <SCRIPTURE Type="3" Reading="Isa_61:10-11, 62:1-5"/>
 </VESPERS>
 <MATINS>
-<SCRIPTURE Type="1" Reading="Mt_10:16-22" Cmd="dow != 0"/>
+<SCRIPTURE Type="1" Reading="Mt_10:16-22" Pericope="36" Cmd="dow != 0"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Rom_8:28-39" Pericope="99"/>

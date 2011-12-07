@@ -6,7 +6,7 @@
 <SCRIPTURE Type="3" Reading="III Kings_19:3-9, 11-13, 15-16"/>
 </VESPERS>
 <MATINS>
-<SCRIPTURE Type="1" Reading="Lk_9:28-36"/>
+<SCRIPTURE Type="1" Reading="Lk_9:28-36" Pericope="45"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="II Pet_1:10-19" Pericope="65"/>

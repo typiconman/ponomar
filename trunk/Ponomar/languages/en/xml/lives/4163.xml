@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Venerable Sisoes the Great († 429)" Short="Venerable Sisoes"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;Monk Sisoes the Great († 429) was an hermit-monk, pursuing asceticism in the Egyptian wilderness in a cave sanctified by the prayerful labours of his predecessor—the Monk Anthony the Great (Comm. 17 January). For his sixty years of wilderness deeds the Monk Sisoes attained to sublime spiritual purity and he was vouchsafed a gift of wonderworking, such that by his prayer he even once returned a dead lad back to life.&lt;/p&gt;&lt;p&gt;Extremely strict with himself, the Monk Sisoes was very merciful and compassionate to those nearby and he received everyone with love. Those, who visited him, the monk first of all always taught humility. To the question of one of the monks as to how might he attain to a constant mindfulness of God, the monk remarked: “That is still not of much consequence, my son, but more important is this—to account oneself below everyone else, because such disparagement assists in the acquisition of humility.” Asked by the monks, whether one year is sufficient for repentance in having fallen into sin against a brother,—the Monk Sisoes said: “I believe in the mercy of God the Lover-of-Mankind, and if a man repent with all his soul, then God wilt accept his repentance in the course of three days.”&lt;/p&gt;&lt;p&gt;When the Monk Sisoes lay upon his death-bed, the disciples surrounding the elder saw that his face did shine. They asked the dying man what he saw. Abba Sisoes answered, that he looked upon the prophets and apostles. The disciples asked, with whom did the monk converse? He said that Angels had come for his soul, and he had entreated them to give him a short bit of time yet for repentance. “Thou, father, hast not need for repentance,”—replied the students. But the Monk Sisoes, with his great humility, answered: “I do not know for sure whether I have even begun to make my repentance.” After these words the face of the holy abba shone so, that the brethren were not able to look upon him. The monk had time to tell them that he saw the Lord Himself, and his holy soul expired to the Heavenly Kingdom.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="1">
 &lt;p&gt;A desert dweller, an angel in the flesh, * and a wonderworker wast thou shown to be, * O our God-bearing father Sisoes, * for having acquired heavenly gifts through fasting, vigilance, and prayer, * thou dost heal the infirm, * and the souls of those who have recourse to thee with faith. * Glory to Him Who hath given thee strength! * Glory to Him Who hath crowned thee! ** Glory to Him Who worketh healings for all through thee!&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4">
 &lt;p&gt;Having struggled, thou wast seen to be an angel on the earth, O venerable one, * ever illumining the thoughts of the faithful with divine signs. ** Wherefore, we honor thee with faith, O Sisoes.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

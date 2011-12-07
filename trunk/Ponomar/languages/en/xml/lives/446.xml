@@ -1,20 +1,21 @@
 <SAINT>
-<NAME Nominative="Synaxis of the Archangel Gabriel" Short="Synaxis"/>
-<SERVICE Type="3" Cmd="doy == 84"/>
-<SERVICE Type="2" Cmd="doy == 193"/>
+<NAME Nominative="Synaxis of the Archangel Gabriel" Short="Archangel"/>
 <LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt; The synaxis of the Archangel Gabriel is celebrated on the day following the Annunciation, that is, March 26&lt;sup&gt;th&lt;/sup&gt;. This feast is celebrated a second time on July 13&lt;supth&lt;/sup&gt;. The reason for it being established probably served the dedication in the 17&lt;sup&gt;th&lt;/sup&gt; century of a church at Constantinople, constructed in the name of the Holy Chief (Archistrategos) of the Heavenly Hosts.&lt;/p&gt;&lt;p&gt;An account of the Holy Archangel is located under 26 March and 8 November.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE>
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 Supreme commander of the armies of Heaven, we, the unworthy, do ever entreat thee, that by thy prayers thou ever surround us with the protection of the wings of thine immaterial glory, preserving us that earnestly fall down before thee and cry aloud: Deliver us from misfortunes, in that thou art the leader of the hosts on high.
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 O wise Gabriel, thou leader of the angels, minister of the glory of God and divine champion of the world, who beholdest the glory of God in the heavens and bestowest grace on earth: save and preserve those who cry out to thee: Be thou thyself our helper, and no one will prevail against us!
 </KONTAKION>
 <KONTAKION Type="2" Tone="2">
 O chief commander of God, minister of glory divine, captain of the angels and instructor of men: beg thou great mercy and that which is profitable for us, for thou art the supreme commander of the bodiless hosts.
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
+<SERVICE Type="3" Cmd="doy == 84"/>
+<SERVICE Type="2" Cmd="doy == 193"/>
 </SAINT>
