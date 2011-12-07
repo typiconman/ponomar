@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyr Julian of Tarsus, in Cilicia († c. 300)" Short="Martyr Julian"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Holy Martyr Julian of Tarsus was born in the Asia Minor province of Cilicia. He was the son of a pagan senator, but his mother confessed Christianity. After the death of her husband the mother of Saint Julian resettled to Tarsis, where the son was baptised and raised in Christian piety. When Julian reached age 18, a persecution against Christians started under the emperor Diocletian (284-305). Among others arrested was also Saint Julian. They brought him before the governor Marcian for trial, where for a long time they urged him to renounce Christ. Neither tortures nor threats, nor promises of gifts and honours could convince the pious youth to offer pagan sacrifice and a denial of Christ. The holy confessor remained steadfast in his firm faith. For a whole year they led the martyr through the cities of Cilicia, in each of them subjecting him to interrogation and tortures, after which they threw him in prison. The mother of Saint Julian followed after her son and prayed, that the Lord would strengthen him yet more in faith and act. In the city of Aegea under the pretext of urging her son to offer sacrifice to idols, she besought the governor to permit her to visit the prison. She spent three days in prison with Saint Julian, beseeching him to be strong to the end.&lt;/p&gt;&lt;p&gt;Saint Julian was again brought to stand before the governor. Thinking, that the mother had persuaded her son to submit to the imperial decree, the governor began to praise her prudence. But suddenly the saint boldly confessed himself a Christian. And the holy Martyr Julian all the more fearlessly and boldly denounced the pagan polytheism. The governor then gave orders to cut off the feet of the mother of Saint Julian, since she had accompanied her son from Tarsis. They tied the Martyr Julian into a sack, filled with sand and poisonous vipers, and threw it into the sea. The body of the sufferer was carried by the waves to the shores of Alexandria, and with reverence was buried by a certain pious Alexandrian Christian. The martyr’s death occurred in about the year 305. Afterwards the relics of the holy martyr were transferred to Antioch. Saint John Chrysostom honoured the memory of the holy Martyr Julian with a sermon of laudation.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In his suffering, O Lord, * Thy martyr Julian received an imperishable crown from Thee our God; * for, possessed of Thy might, * he set at nought the tormentors and crushed the feeble audacity of the demons. ** By his supplications save Thou our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;As is meet, let us all praise Julian today, * the invincible warrior of piety, * the true counselor and soldier of the Truth, * and let us cry aloud unto him: * Entreat Christ God in behalf of us all!&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

@@ -1,15 +1,16 @@
 <SAINT>
-<NAME Nominative="Synaxis of the Twelve Glorious and All-Praised Apostles: Peter and Andrew, James and John, Phillip, Bartholomew, Thomas, Matthew, James the son of Alpheus, Jude [Thaddeus], Simon Zealotes, and Matthias" Short="Synaxis of"/>
-<SERVICE Type="4"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<NAME Nominative="Synaxis of the Twelve Glorious and All-Praised Apostles: Peter and Andrew, James and John, Phillip, Bartholomew, Thomas, Matthew, James the son of Alpheus, Jude [Thaddeus], Simon Zealotes, and Matthias" Short="Synaxis"/>
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;Sobor (Assemblage) of the Glorious and All-Praiseworthy 12 Apostles of Christ appears an ancient feast. Holy Church,—honouring each of the 12 Apostles at a separate time of the year, from ancient times established a general commemoration of them on the day following after the commemoration of the Glorious and First-Ranked among the Apostles Peter and Paul († c.  67). An account about each of the Apostles is on the day of his individual commemoration: the Apostle Peter († c.  67; Comm. 29 June); the Apostle Andrew the First-Called († 62, Comm. 30 November); the Apostle James son of Zebedee († 44, Comm. 30 April); the Apostle and Evangelist John the Theologian († early II Century, Comm. 26 September); Apostle Philip (Comm. 14 November); Apostle Bartholomew (Comm. 11 June); Apostle Thomas (Comm. 6 October); Apostle and Evangelist Matthew († 60, Comm. 16 November); Apostle James Alphæus (Comm. 9October); Apostle Jude, brother of the Lord († c.  80, Comm. 19 June); Apostle Simon Zelotes (Comm. 10 May); Apostle Matthias († c.  63, Comm. 9 August).&lt;/p&gt;&lt;p&gt;The holy nobleborn emperor Constantine the Great (306-337) built at Tsar′grad a temple in the name of the holy Twelve Apostles. Directions for the celebrating of this feast are encountered from the IV Century.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="4">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;O first enthroned among the apostles * and teachers of the whole world; * entreat the Master of all, * that He grant peace to the world ** and great mercy to our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Christ the Rock doth radiantly glorify the rock of Faith, * the most excellent of His disciples, * as He doth Paul and the assembly of the twelve today; * and, faithfully celebrating their memory, ** we glorify Him Who glorified them.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

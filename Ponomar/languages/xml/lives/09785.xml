@@ -6,7 +6,7 @@
 <SCRIPTURE Type="3" Reading="I Pet_2:11-24"/>
 </VESPERS>
 <MATINS>
-<SCRIPTURE Type="1" Reading="Jn_21:15-25" Cmd="dow != 0"/>
+<SCRIPTURE Type="1" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="II Cor_11:21-12:9" Pericope="193"/>
