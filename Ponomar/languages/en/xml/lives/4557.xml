@@ -1,17 +1,19 @@
 <SAINT>
-<NAME Nominative="Placing of the Venerable Belt of the Most Holy Mother of God in Constantinople (c 395-408)" Short="Placing of"/>
-<SERVICE Type="3"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<NAME Nominative="Placing of the Venerable Sash of the Most Holy Mother of God in Constantinople (c 395-408)" Short="Theotokos"/>
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Placing of the Venerable Belt of the Most Holy Mother of God in the Constantinople Blachernæ Church was during the reign of the emperor Arcadius (395408). Before this the holy relict, entrusted to the Apostle Thomas by the Mother of God Herself, was after Her Dormition thereafter kept at Jerusalem by pious Christians. After many years, during the reign of emperor Leo the Wise (886-911), from the Belt of the Mother of God was accomplished a miraculous healing of his spouse Zoa, suffering from an unclean spirit.&lt;/p&gt;&lt;p&gt;The empress had a vision, that she would be healed of her infirmity when the Belt of the Mother of God would be placed upon her. The emperor turned with his petition to the Patriarch. The Patriarch removed the seal and opened the vessel in which the relict was kept: the Belt of the Mother of God appeared completely whole and undamaged by time. The Patriarch placed the Belt on the sick empress, and she immediately was freed from her infirmity. They served a solemn thanksgiving molieben to the Most Holy Mother of God, and the venerable Belt they placed back into the vessel and resealed the seal.&lt;/p&gt;&lt;p&gt;In commemoration of the miraculous occurrence and the twofold Placing of the venerable Belt, the feast of the Placing of the Venerable Belt of the Most Holy Mother of God was established. Parts of the holy Belt are in the Athos Batopedia monastery, in Trier monastery and in Gruzia (Georgia).&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="3">
 <LITURGY>
 <TROPARION Type="1" Tone="8">
 &lt;p&gt;O Ever-virgin Theotokos, protection of mankind: * thou hast given to thy city a mighty legacy, * the robe and cincture of thy most honored body, * which have remained incorrupt through thy seedless birthgiving. * For in thee are nature and time renewed. ** Wherefore, we beseech thee to grant peace to thy city and great mercy to our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Thy precious cincture, which encircled thy womb * which was pleasing to God, O Theotokos, * is the invincible might of thy city and an inexhaustible treasury of good things, ** O only Ever-virgin who gavest birth.&lt;/p&gt;
-</KONTAKION><KONTAKION Type="2" Tone="4">
+</KONTAKION>
+<KONTAKION Type="2" Tone="4">
 &lt;p&gt;Today thy temple doth celebrate the deposition * of thy precious cincture, O all-hymned one, * and it earnestly crieth out to thee: * Rejoice, O Virgin, ** thou boast of Christians!&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

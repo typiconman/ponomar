@@ -1,12 +1,12 @@
 <SAINT>
-<SERVICE>
+<SERVICE Type="5">
 <VESPERS>
 <SCRIPTURE Type="1" Reading="III Kings_8:22-23, 27-30"/>
 <SCRIPTURE Type="2" Reading="Isa_61:10-11, 62:1-5"/>
 <SCRIPTURE Type="3" Reading="Isa_60:1-16"/>
 </VESPERS>
 <MATINS>
-<SCRIPTURE Type="1" Reading="Jn_10:9-16" Cmd="dow != 0"/>
+<SCRIPTURE Type="1" Reading="Jn_10:9-16" Pericope="36" Cmd="dow != 0"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Gal_1:11-19" Pericope="200"/>

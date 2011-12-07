@@ -1,0 +1,9 @@
+<SAINT>
+<SERVICE Type="2">
+<!-- FIXME -->
+<LITURGY Cmd="doy == 193">
+<SCRIPTURE Type="apostol" Reading="Heb_2:2-10" Pericope="305"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:16-21" Pericope="51"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
