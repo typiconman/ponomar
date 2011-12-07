@@ -1,15 +1,16 @@
 <SAINT>
-<NAME Nominative="Appearance of the Tikhvin Icon of the Mother of God (1383)" Short="Appearance of"/>
-<SERVICE Type="4"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<NAME Nominative="Appearance of the Tikhvin Icon of the Mother of God (1383)" Short="Tikhvin Icon"/>
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Tikhvin Icon of the Mother of God, according to tradition, is one of the icons written by the holy Disciple and Evangelist Luke. In the V Century it was transferred from Jerusalem to Constantinople, where the Blachernæ church was built for it. In the year 1383, 70 years before the taking of Constantinople by the Turks, the icon disappeared from the church, and re-appeared amidst a radiant light over the waters of Lake Ladoga. Miraculously taken from place to place, it then remained near the city of Tikhvin. At the place of the appearance of the icon was built a wooden church in honour of the Uspenie-Dormition of the Mother of God. Through the zeal of GreatPrince Vasilii Ivanovich (1505-1533), in place of the wooden church was built a stone church. In 1560 by order of tsar Ivan the Terrible a men’s monastery was established nearby the church, and enclosed by a stone wall. During the years 1613-1614 the Swedish army, having seized Novgorod, more than once tried to destroy the monastery, but by the intercession of the Mother of God the monastery was saved. Thus, one time, in sight of the nearby Swedish army, the monks decided to flee from the monastery taking with them the wonderworking icon, but they were not able to remove it from its place. This miracle halted the dispirited, and they remained at the monastery, hoping on the intercession of the Mother of God. The insignificant number of defenders of the monastery successfully repulsed the numerically greater enemy. The invading Swedes them encountered a numerous Russian army, coming from Moscow, like some heavenly host, and they turned to flight. Imperial emissaries arrived at the monastery after the miraculous victory over the Swedes. Taking along a copy of the wonderworking icon, they set off to the village of Stolbovo, 50 versts from Tikhvin, where on 10 February 1617 peace was concluded with the Swedes. The primary pledge of peace from the Russian side was on the transferred copy of the wonderworking icon. Afterwards this copy was taken to Moscow and placed in the Uspensk cathedral, and then at the request of the people of Novgorod, involved then in war with the Swedes, it was sent off to Novgorod and placed in the Sophia cathedral. The All-Russian feast of the Tikhvinsk Icon of the Mother of God, glorified by innumerable miracles, was established by the Church in memory of its miraculous appearance and the vanquishing of enemies through the intercession of the Mother of God. &lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="4">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;Today thy most precious icon hath shone forth upon us in the air like the all-radiant sun, O Mistress, illumining the world with rays of mercy; and great Russia, reverently receiving it from on high as a gift of God, glorifieth thee as the Mistress of all, O Mother of God, and joyously magnifieth Christ our God Who was born of thee. Him do thou entreat, O Lady, Queen and Theotokos, that He preserve all the cities and lands where Christians live, unharmed by all the assaults of the enemy, and save those who with, faith worship before the all-honored image of Him and thee, O Virgin who knewest not wedlock.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="8">
 &lt;p&gt;O ye people, let us make haste to the Virgin Theotokos and Queen, giving thanks to Christ our God; and gazing with compunction at her miraculous icon, let us fall down and cry out to her: O Mary our Mistress, visiting this land in the miraculous appearance of thy precious icon, save our faithful Emperor and all Christians in peace and prosperity, showing us to be inheritors of the life of heaven. For to thee do we cry with faith: Rejoice, O Virgin, salvation of the world!&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>
