@@ -1,8 +1,8 @@
 <DAY>
-<SAINT Name="Όσιος Ευμένιος ο θαυματουργός, επίσκοπος Γορτύνης" Id="3603" Type=""/>
-<SAINT Name="Αγία Αριάδνη" Id="3606" Type=""/>
-<SAINT Name="Όσιος Ρωμύλος" Id="3608" Type=""/>
-<SAINT Name="Αγίες Σοφία και Ειρήνη" Id="3604" Type=""/>
-<SAINT Name="Άγιος Κάστωρ" Id="3607" Type=""/>
-<SAINT Name="Άγιος Ιλαρίων της Όπτινα" Id="3609" Type=""/>
+<SAINT SId="3603" CId="3603"/>
+<SAINT SId="3606" CId="3606"/>
+<SAINT SId="3608" CId="3608"/>
+<SAINT SId="3604" CId="3604"/>
+<SAINT SId="3607" CId="3607"/>
+<SAINT SId="3609" CId="3609"/>
 </DAY>

@@ -1,6 +1,6 @@
 <DAY>
-<SAINT Name="Οσία Πελαγία" Id="2170" Type=""/>
-<SAINT Name="Αγία Πελαγία η Παρθένος" Id="2171" Type=""/>
-<SAINT Name="Αγία Ταϊσία" Id="2172" Type=""/>
-<SAINT Name="Άγιος Ιγνάτιος ο νέος Οσιομάρτυρας" Id="2173" Type=""/>
+<SAINT SId="2170" CId="2170"/>
+<SAINT SId="2171" CId="2171"/>
+<SAINT SId="2172" CId="2172"/>
+<SAINT SId="2173" CId="2173"/>
 </DAY>

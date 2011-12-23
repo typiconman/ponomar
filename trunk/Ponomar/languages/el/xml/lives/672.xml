@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Αγία Μητέρα και τα Άγια Τρία Παιδιά της"/>
+
+<NAME Nominative="Αγία Μητέρα και τα Άγια Τρία Παιδιά της" Short="Αγία Μητέρα"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Μαρτύρησαν δια ξίφους.
-</LIFE>
-</SAINT>
+ Μαρτύρησαν δια ξίφους.
+</LIFE></SAINT>

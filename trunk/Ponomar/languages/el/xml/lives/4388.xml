@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Καλλιόπιος"/>
+
+<NAME Nominative="Άγιος Καλλιόπιος" Short="Άγιος Καλλιόπιος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Καλλιόπιος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Καλλιόπιος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

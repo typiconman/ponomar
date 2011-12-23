@@ -1,14 +1,14 @@
 <DAY>
-<SAINT Name="Όσιος Θεοφύλακτος Βουλγαρίας ο Χαλκιδεύς" Id="5477" Type=""/>
-<SAINT Name="Απόδοση της εορτής των Χριστουγέννων" Id="2280" Type=""/>
-<SAINT Name="Άγιος Γεώργιος ο Θαυματουργός ο λεγόμενος μαχαιρωμένος" Id="2279" Type=""/>
-<SAINT Name="Άγιος Γαυδέντιος" Id="2278" Type=""/>
-<SAINT Name="Αγία Νέμη" Id="2277" Type=""/>
-<SAINT Name="Άγιος Βούσιρις" Id="2276" Type=""/>
-<SAINT Name="Αγία Ολυμπιοδώρα" Id="2275" Type=""/>
-<SAINT Name="Άγιες Δέκα Παρθένες" Id="2274" Type=""/>
-<SAINT Name="Όσιος Γάιος" Id="2273" Type=""/>
-<SAINT Name="Όσιος Γελάσιος" Id="2272" Type=""/>
-<SAINT Name="Άγιος Ζωτικός ο Ορφανοτρόφος" Id="2271" Type=""/>
-<SAINT Name="Οσία Μελάνη η Ρωμαία" Id="2270" Type=""/>
+<SAINT SId="5477" CId="5477"/>
+<SAINT SId="2280" CId="2280"/>
+<SAINT SId="2279" CId="2279"/>
+<SAINT SId="2278" CId="2278"/>
+<SAINT SId="2277" CId="2277"/>
+<SAINT SId="2276" CId="2276"/>
+<SAINT SId="2275" CId="2275"/>
+<SAINT SId="2274" CId="2274"/>
+<SAINT SId="2273" CId="2273"/>
+<SAINT SId="2272" CId="2272"/>
+<SAINT SId="2271" CId="2271"/>
+<SAINT SId="2270" CId="2270"/>
 </DAY>

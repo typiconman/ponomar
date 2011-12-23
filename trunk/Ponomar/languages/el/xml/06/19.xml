@@ -1,9 +1,9 @@
 <DAY>
-<SAINT Name="Άγιος Ιούδας ο Απόστολος" Id="877" Type=""/>
-<SAINT Name="Όσιος Παΐσιος ο Μέγας και θεοφόρος" Id="874" Type=""/>
-<SAINT Name="Άγιος Ζώσιμος" Id="876" Type=""/>
-<SAINT Name="Όσιος Ζήνων" Id="875" Type=""/>
-<SAINT Name="Άγιος Ασύγκριτος ο Ιερομάρτυρας" Id="873" Type=""/>
-<SAINT Name="Όσιος Βαρλαάμ ο Βάζσκυ" Id="872" Type=""/>
-<SAINT Name="Άγιος Ιώβ Μητροπολίτης Μόσχας" Id="3910" Type=""/>
+<SAINT SId="877" CId="877"/>
+<SAINT SId="874" CId="874"/>
+<SAINT SId="876" CId="876"/>
+<SAINT SId="875" CId="875"/>
+<SAINT SId="873" CId="873"/>
+<SAINT SId="872" CId="872"/>
+<SAINT SId="3910" CId="3910"/>
 </DAY>

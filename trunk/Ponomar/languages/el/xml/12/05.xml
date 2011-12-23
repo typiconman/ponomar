@@ -1,12 +1,12 @@
 <DAY>
-<SAINT Name="Άγιος Σάββας ο Ηγιασμένος" Id="4726" Type=""/>
-<SAINT Name="Άγιος Διογένης" Id="4729" Type=""/>
-<SAINT Name="Άγιος Αναστάσιος" Id="4727" Type=""/>
-<SAINT Name="Όσιος Γράτος" Id="4728" Type=""/>
-<SAINT Name="Άγιος Αβέρκιος" Id="4730" Type=""/>
-<SAINT Name="Όσιος Νόννος" Id="4731" Type=""/>
-<SAINT Name="Όσιος Νεκτάριος ο Αθωνίτης" Id="4732" Type=""/>
-<SAINT Name="Όσιος Φιλόθεος ο Καρεώτης" Id="4733" Type=""/>
-<SAINT Name="Άγιοι Οσιομάρτυρες του Αγίου Όρους" Id="4734" Type=""/>
-<SAINT Name="Άγιος Νιζέριος" Id="4735" Type=""/>
+<SAINT SId="4726" CId="4726"/>
+<SAINT SId="4729" CId="4729"/>
+<SAINT SId="4727" CId="4727"/>
+<SAINT SId="4728" CId="4728"/>
+<SAINT SId="4730" CId="4730"/>
+<SAINT SId="4731" CId="4731"/>
+<SAINT SId="4732" CId="4732"/>
+<SAINT SId="4733" CId="4733"/>
+<SAINT SId="4734" CId="4734"/>
+<SAINT SId="4735" CId="4735"/>
 </DAY>

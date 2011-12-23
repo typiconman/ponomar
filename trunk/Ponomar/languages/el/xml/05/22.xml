@@ -1,15 +1,15 @@
 <DAY>
-<SAINT Name="Άγιος Βασιλίσκος" Id="2601" Type=""/>
-<SAINT Name="Μνήμη της Β' Αγίας Οικουμενικής Συνόδου" Id="2602" Type=""/>
-<SAINT Name="Άγιος Παύλος ο Πελοποννήσιος ο Οσιομάρτυρας" Id="2608" Type=""/>
-<SAINT Name="Άγιος Μάρκελλος" Id="2603" Type=""/>
-<SAINT Name="Άγιος Κόδρος" Id="2604" Type=""/>
-<SAINT Name="Αγία Σοφία η Ιατρός" Id="2605" Type=""/>
-<SAINT Name="Άγιος Ιωάννης ο Βλαδίμηρος ο βασιλεύς και θαυματουργός" Id="2606" Type=""/>
-<SAINT Name="Άγιος Ζαχαρίας ο Νέος ο Ιερομάρτυρας του Προυσκέως" Id="2611" Type=""/>
-<SAINT Name="Μνήμη της Θεοτόκου «εν Σοφιανοίς»" Id="2607" Type=""/>
-<SAINT Name="Άγιοι Αιμίλιος και Κάστος οι Αφρικανοί" Id="2609" Type=""/>
-<SAINT Name="Οσία Καλή" Id="2612" Type=""/>
-<SAINT Name="Αγία Ελένη της Ωξέρρης" Id="2614" Type=""/>
-<SAINT Name="Άγιος Ιάκωβος ο Δίκαιος" Id="2616" Type=""/>
+<SAINT SId="2601" CId="2601"/>
+<SAINT SId="2602" CId="2602"/>
+<SAINT SId="2608" CId="2608"/>
+<SAINT SId="2603" CId="2603"/>
+<SAINT SId="2604" CId="2604"/>
+<SAINT SId="2605" CId="2605"/>
+<SAINT SId="2606" CId="2606"/>
+<SAINT SId="2611" CId="2611"/>
+<SAINT SId="2607" CId="2607"/>
+<SAINT SId="2609" CId="2609"/>
+<SAINT SId="2612" CId="2612"/>
+<SAINT SId="2614" CId="2614"/>
+<SAINT SId="2616" CId="2616"/>
 </DAY>

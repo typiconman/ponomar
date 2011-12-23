@@ -1,12 +1,12 @@
 <DAY>
-<SAINT Name="Άγιοι Ανδριανός και Ναταλία" Id="1371" Type=""/>
-<SAINT Name="Όσιος Ιωάσαφ γιος του βασιλιά της Ινδίας Αβενίρ" Id="1342" Type=""/>
-<SAINT Name="Όσιος Τιθόης" Id="1343" Type=""/>
-<SAINT Name="Άγιοι Εικοσιτρείς Μάρτυρες" Id="1348" Type=""/>
-<SAINT Name="Άγιοι Αττικός και Σισίνιος" Id="1346" Type=""/>
-<SAINT Name="Όσιος Ιβιστίων" Id="1345" Type=""/>
-<SAINT Name="Άγιος Ανδριανός" Id="1344" Type=""/>
-<SAINT Name="Άγιος Γελάσιος" Id="1341" Type=""/>
-<SAINT Name="Όσιος Αδριανός εκ Ρωσίας" Id="2403" Type=""/>
-<SAINT Name="Σύναξη της Υπεραγίας Θεοτόκου του Βλαδιμήρου" Id="2537" Type=""/>
+<SAINT SId="1371" CId="1371"/>
+<SAINT SId="1342" CId="1342"/>
+<SAINT SId="1343" CId="1343"/>
+<SAINT SId="1348" CId="1348"/>
+<SAINT SId="1346" CId="1346"/>
+<SAINT SId="1345" CId="1345"/>
+<SAINT SId="1344" CId="1344"/>
+<SAINT SId="1341" CId="1341"/>
+<SAINT SId="2403" CId="2403"/>
+<SAINT SId="2537" CId="2537"/>
 </DAY>

@@ -1,12 +1,12 @@
 <DAY>
-<SAINT Name="Άγιος Πολύευκτος" Id="1650" Type=""/>
-<SAINT Name="Όσιος Ευστράτιος ο Θαυματουργός" Id="1649" Type=""/>
-<SAINT Name="Όσιος Πέτρος Επίσκοπος Σεβαστείας" Id="1648" Type=""/>
-<SAINT Name="Αγία Αντωνίνα που μαρτύρησε στη Νικομήδεια" Id="1647" Type=""/>
-<SAINT Name="Άγιος Λαυρέντιος" Id="1646" Type=""/>
-<SAINT Name="Μνήμη Μεγάλου Σεισμού" Id="1645" Type=""/>
-<SAINT Name="Άγιος Φίλιππος Μητροπολίτης Μόσχας και πάσης Ρωσίας" Id="1644" Type=""/>
-<SAINT Name="Άγιος Adrian ηγούμενος Καντουαρίας" Id="1643" Type=""/>
-<SAINT Name="Άγιος Brithwald αρχιεπίσκοπος Καντουαρίας" Id="1642" Type=""/>
-<SAINT Name="Όσιος Ιωνάς ο Γέροντας" Id="1651" Type=""/>
+<SAINT SId="1650" CId="1650"/>
+<SAINT SId="1649" CId="1649"/>
+<SAINT SId="1648" CId="1648"/>
+<SAINT SId="1647" CId="1647"/>
+<SAINT SId="1646" CId="1646"/>
+<SAINT SId="1645" CId="1645"/>
+<SAINT SId="1644" CId="1644"/>
+<SAINT SId="1643" CId="1643"/>
+<SAINT SId="1642" CId="1642"/>
+<SAINT SId="1651" CId="1651"/>
 </DAY>

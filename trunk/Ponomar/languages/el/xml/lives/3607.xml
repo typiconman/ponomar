@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Κάστωρ"/>
+
+<NAME Nominative="Άγιος Κάστωρ" Short="Άγιος Κάστωρ"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Δεν έχουμε λεπτομέρειες για τον βίο του Αγίου.
-</LIFE>
-</SAINT>
+ Δεν έχουμε λεπτομέρειες για τον βίο του Αγίου.
+</LIFE></SAINT>

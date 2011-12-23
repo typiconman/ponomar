@@ -1,17 +1,17 @@
 <DAY>
-<SAINT Name="Άγιος Κλήμης Ιερομάρτυρας, επίσκοπος Ρώμης" Id="4420" Type=""/>
-<SAINT Name="Άγιος Πέτρος Ιερομάρτυρας Αρχιεπίσκοπος Αλεξανδρείας" Id="4419" Type=""/>
-<SAINT Name="Άγιος Ερμογένης επίσκοπος Ακραγαντίνων" Id="4415" Type=""/>
-<SAINT Name="Όσιος Μάλχος" Id="4418" Type=""/>
-<SAINT Name="Όσιος Καρίων" Id="4417" Type=""/>
-<SAINT Name="Άγιοι Φιλούμενος και Χριστόφορος" Id="4413" Type=""/>
-<SAINT Name="Άγιος Ευγένιος" Id="4412" Type=""/>
-<SAINT Name="Άγιοι Προκόπιος και Χριστόφορος" Id="4410" Type=""/>
-<SAINT Name="Άγιος Αλέξανδρος" Id="4409" Type=""/>
-<SAINT Name="Όσιος Γρηγόριος" Id="4408" Type=""/>
-<SAINT Name="Άγιος Χρυσόγονος" Id="4407" Type=""/>
-<SAINT Name="Όσιος Μάρκος ο Τριγλινός" Id="4406" Type=""/>
-<SAINT Name="Άγιος Θεόδωρος που μαρτύρησε στην Αντιόχεια" Id="4405" Type=""/>
-<SAINT Name="Άγιος Μερκούριος «ὁ ἐν Σμολένσκῃ»" Id="4416" Type=""/>
-<SAINT Name="Όσιος Μερκούριος ο νηστευτής" Id="3850" Type=""/>
+<SAINT SId="4420" CId="4420"/>
+<SAINT SId="4419" CId="4419"/>
+<SAINT SId="4415" CId="4415"/>
+<SAINT SId="4418" CId="4418"/>
+<SAINT SId="4417" CId="4417"/>
+<SAINT SId="4413" CId="4413"/>
+<SAINT SId="4412" CId="4412"/>
+<SAINT SId="4410" CId="4410"/>
+<SAINT SId="4409" CId="4409"/>
+<SAINT SId="4408" CId="4408"/>
+<SAINT SId="4407" CId="4407"/>
+<SAINT SId="4406" CId="4406"/>
+<SAINT SId="4405" CId="4405"/>
+<SAINT SId="4416" CId="4416"/>
+<SAINT SId="3850" CId="3850"/>
 </DAY>

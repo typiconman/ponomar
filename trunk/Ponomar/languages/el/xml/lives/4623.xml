@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Σισίνιος ο Ιερομάρτυρας"/>
+
+<NAME Nominative="Άγιος Σισίνιος ο Ιερομάρτυρας" Short="Άγιος Σισίνιος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Σισίνιος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Σισίνιος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

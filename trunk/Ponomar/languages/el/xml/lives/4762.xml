@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Νεόφυτος"/>
+
+<NAME Nominative="Άγιος Νεόφυτος" Short="Άγιος Νεόφυτος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Νεόφυτος μαρτύρησε δια πνιγμού μέσα στη θάλασσα.
-</LIFE>
-</SAINT>
+ Ο Άγιος Νεόφυτος μαρτύρησε δια πνιγμού μέσα στη θάλασσα.
+</LIFE></SAINT>

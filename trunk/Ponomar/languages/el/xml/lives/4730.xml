@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Αβέρκιος"/>
+
+<NAME Nominative="Άγιος Αβέρκιος" Short="Άγιος Αβέρκιος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Αβέρκιος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Αβέρκιος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

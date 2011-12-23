@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Αγία Ταμάρα η βασίλισσα"/>
+
+<NAME Nominative="Αγία Ταμάρα η βασίλισσα" Short="Αγία Ταμάρα"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Για τον βίο της Αγίας Ταμάρα βλέπε την 1η Μαΐου.
-</LIFE>
-</SAINT>
+ Για τον βίο της Αγίας Ταμάρα βλέπε την 1η Μαΐου.
+</LIFE></SAINT>

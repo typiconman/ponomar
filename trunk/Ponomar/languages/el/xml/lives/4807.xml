@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Θεότεκνος"/>
+
+<NAME Nominative="Άγιος Θεότεκνος" Short="Άγιος Θεότεκνος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Θεότεκνος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Θεότεκνος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Θεόδοτος"/>
+
+<NAME Nominative="Άγιος Θεόδοτος" Short="Άγιος Θεόδοτος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Θεόδοτος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Θεόδοτος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

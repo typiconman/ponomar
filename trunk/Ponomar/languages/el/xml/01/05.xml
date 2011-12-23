@@ -1,13 +1,13 @@
 <DAY>
-<SAINT Name="Παραμονή των Φώτων" Id="850" Type=""/>
-<SAINT Name="Άγιοι Θεόπεμπτος και Θεωνάς" Id="848" Type=""/>
-<SAINT Name="Οσία Συγκλητική" Id="847" Type=""/>
-<SAINT Name="Άγιος Ρωμανός ο νέος Οσιομάρτυρας" Id="840" Type=""/>
-<SAINT Name="Όσιος Γρηγόριος ο εν Ακρίτα" Id="846" Type=""/>
-<SAINT Name="Όσιος Φωστήριος" Id="845" Type=""/>
-<SAINT Name="Άγιος Σάις" Id="844" Type=""/>
-<SAINT Name="Άγιος Θεόειδος" Id="843" Type=""/>
-<SAINT Name="Οσία Δομνίνα" Id="842" Type=""/>
-<SAINT Name="Οσία Τατιανή" Id="841" Type=""/>
-<SAINT Name="Όσιος Δωρόθεος" Id="838" Type=""/>
+<SAINT SId="850" CId="850"/>
+<SAINT SId="848" CId="848"/>
+<SAINT SId="847" CId="847"/>
+<SAINT SId="840" CId="840"/>
+<SAINT SId="846" CId="846"/>
+<SAINT SId="845" CId="845"/>
+<SAINT SId="844" CId="844"/>
+<SAINT SId="843" CId="843"/>
+<SAINT SId="842" CId="842"/>
+<SAINT SId="841" CId="841"/>
+<SAINT SId="838" CId="838"/>
 </DAY>

@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Αππίων"/>
+
+<NAME Nominative="Άγιος Αππίων" Short="Άγιος Αππίων"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Αππίων μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Αππίων μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

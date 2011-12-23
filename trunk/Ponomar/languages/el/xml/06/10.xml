@@ -1,11 +1,11 @@
 <DAY>
-<SAINT Name="Άγιοι Αλέξανδρος και Αντωνίνα" Id="791" Type=""/>
-<SAINT Name="Άγιος Τιμόθεος επίσκοπος Προύσας" Id="789" Type=""/>
-<SAINT Name="Άγιος Νεανίσκος και σοφότατος Μάρτυρας" Id="790" Type=""/>
-<SAINT Name="Όσιος Κανίδης" Id="788" Type=""/>
-<SAINT Name="Όσιοι Θεοφάνης και Πανσέμνη" Id="786" Type=""/>
-<SAINT Name="Άγιος Απόλλως" Id="785" Type=""/>
-<SAINT Name="Άγιος Αλέξιος επίσκοπος Βιθυνίας" Id="784" Type=""/>
-<SAINT Name="Όσιος Σιλουανός ο της Λαύρας Κιέβου" Id="783" Type=""/>
-<SAINT Name="Άγιος Βασίλειος Επίσκοπος Ριαζάν και Μουρώμ" Id="2543" Type=""/>
+<SAINT SId="791" CId="791"/>
+<SAINT SId="789" CId="789"/>
+<SAINT SId="790" CId="790"/>
+<SAINT SId="788" CId="788"/>
+<SAINT SId="786" CId="786"/>
+<SAINT SId="785" CId="785"/>
+<SAINT SId="784" CId="784"/>
+<SAINT SId="783" CId="783"/>
+<SAINT SId="2543" CId="2543"/>
 </DAY>

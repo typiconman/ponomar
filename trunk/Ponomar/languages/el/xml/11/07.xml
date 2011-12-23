@@ -1,14 +1,14 @@
 <DAY>
-<SAINT Name="Άγιοι Τριάντα τρεις Μάρτυρες «οἱ ἐν Μελιτινῇ»" Id="4302" Type=""/>
-<SAINT Name="Όσιος Λάζαρος ο Θαυματουργός, ο Γαλλησιώτης" Id="4347" Type=""/>
-<SAINT Name="Άγιοι Μελάσιππος, Κασσίνη και Αντώνιος και Σαράντα Παίδες" Id="4337" Type=""/>
-<SAINT Name="Άγιοι Αύκτος, Ταυρίων και Θεσσαλονίκη" Id="4341" Type=""/>
-<SAINT Name="Άγιοι Ματρωνιανός και Αντώνιος" Id="4335" Type=""/>
-<SAINT Name="Άγιος Αθηνόδωρος" Id="4344" Type=""/>
-<SAINT Name="Άγιος Γρηγόριος" Id="4345" Type=""/>
-<SAINT Name="Άγιος Αλέξανδρος από τη Θεσσαλονίκη" Id="4346" Type=""/>
-<SAINT Name="Όσιος Κύριλλος ο Θαυματουργός" Id="2120" Type=""/>
-<SAINT Name="Άγιος Willibrord" Id="4349" Type=""/>
-<SAINT Name="Όσιος Αμβρόσιος" Id="4348" Type=""/>
-<SAINT Name="Ανάμνηση Θαύματος Αγίου Σπυρίδωνα" Id="4845" Type=""/>
+<SAINT SId="4302" CId="4302"/>
+<SAINT SId="4347" CId="4347"/>
+<SAINT SId="4337" CId="4337"/>
+<SAINT SId="4341" CId="4341"/>
+<SAINT SId="4335" CId="4335"/>
+<SAINT SId="4344" CId="4344"/>
+<SAINT SId="4345" CId="4345"/>
+<SAINT SId="4346" CId="4346"/>
+<SAINT SId="2120" CId="2120"/>
+<SAINT SId="4349" CId="4349"/>
+<SAINT SId="4348" CId="4348"/>
+<SAINT SId="4845" CId="4845"/>
 </DAY>

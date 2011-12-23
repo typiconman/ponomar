@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Ησύχιος"/>
+
+<NAME Nominative="Άγιος Ησύχιος" Short="Άγιος Ησύχιος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Ησύχιος μαρτύρησε δια απαγχονισμού.
-</LIFE>
-</SAINT>
+ Ο Άγιος Ησύχιος μαρτύρησε δια απαγχονισμού.
+</LIFE></SAINT>

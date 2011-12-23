@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Ωκεανός"/>
+
+<NAME Nominative="Άγιος Ωκεανός" Short="Άγιος Ωκεανός"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Ωκεανός μαρτύρησε δια πυρός.
-</LIFE>
-</SAINT>
+ Ο Άγιος Ωκεανός μαρτύρησε δια πυρός.
+</LIFE></SAINT>

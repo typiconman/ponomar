@@ -1,10 +1,10 @@
 <DAY>
-<SAINT Name="Άγιος Αρέθας ο Μεγαλομάρτυρας και οι «σὺν αὐτῶ»" Id="3715" Type=""/>
-<SAINT Name="Αγία Σεβαστιανή" Id="3718" Type=""/>
-<SAINT Name="Αγία Γυναίκα και το Άγιο Βρέφος της" Id="3716" Type=""/>
-<SAINT Name="Άγιοι Μάρκος, Σωτήριχος και Ουαλεντίνος" Id="3719" Type=""/>
-<SAINT Name="Άγιος Ακάκιος ο Πρεσβύτερος" Id="3722" Type=""/>
-<SAINT Name="Άγιος Νέρδων" Id="3723" Type=""/>
-<SAINT Name="Όσιος Αρέθας «ὁ ἐν τῷ Σπηλαίῳ»" Id="3724" Type=""/>
-<SAINT Name="Άγιος Maglorious του Sark" Id="3949" Type=""/>
+<SAINT SId="3715" CId="3715"/>
+<SAINT SId="3718" CId="3718"/>
+<SAINT SId="3716" CId="3716"/>
+<SAINT SId="3719" CId="3719"/>
+<SAINT SId="3722" CId="3722"/>
+<SAINT SId="3723" CId="3723"/>
+<SAINT SId="3724" CId="3724"/>
+<SAINT SId="3949" CId="3949"/>
 </DAY>

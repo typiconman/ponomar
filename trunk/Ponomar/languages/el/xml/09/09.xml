@@ -1,9 +1,9 @@
 <DAY>
-<SAINT Name="Μνήμη των Δικαίων Θεοπατόρων Ιωακείμ και Άννης" Id="1482" Type=""/>
-<SAINT Name="Άγιος Σεβηριανός ο Μεγαλομάρτυρας" Id="1481" Type=""/>
-<SAINT Name="Μνήμη της Γ' Αγίας Οικουμενικής Συνόδου" Id="1479" Type=""/>
-<SAINT Name="Όσιος Θεοφάνης ο Ομολογητής" Id="1480" Type=""/>
-<SAINT Name="Άγιος Χαρίτων" Id="1478" Type=""/>
-<SAINT Name="Όσιος Ιωσήφ ο θαυματουργός ο εν Βελόν" Id="1477" Type=""/>
-<SAINT Name="Άγιος Kiaran" Id="1476" Type=""/>
+<SAINT SId="1482" CId="1482"/>
+<SAINT SId="1481" CId="1481"/>
+<SAINT SId="1479" CId="1479"/>
+<SAINT SId="1480" CId="1480"/>
+<SAINT SId="1478" CId="1478"/>
+<SAINT SId="1477" CId="1477"/>
+<SAINT SId="1476" CId="1476"/>
 </DAY>

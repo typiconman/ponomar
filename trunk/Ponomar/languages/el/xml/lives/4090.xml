@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Σαβίνος"/>
+
+<NAME Nominative="Άγιος Σαβίνος" Short="Άγιος Σαβίνος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Σαβίνος μαρτύρησε δια πυρός.
-</LIFE>
-</SAINT>
+ Ο Άγιος Σαβίνος μαρτύρησε δια πυρός.
+</LIFE></SAINT>

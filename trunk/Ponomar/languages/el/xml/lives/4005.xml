@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Αντίγονος"/>
+
+<NAME Nominative="Άγιος Αντίγονος" Short="Άγιος Αντίγονος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Αντίγονος μαρτύρησε δια πυρός.
-</LIFE>
-</SAINT>
+ Ο Άγιος Αντίγονος μαρτύρησε δια πυρός.
+</LIFE></SAINT>

@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Νίρος"/>
+
+<NAME Nominative="Άγιος Νίρος" Short="Άγιος Νίρος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Νίρος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Νίρος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

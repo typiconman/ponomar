@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Ευτύχιος"/>
+
+<NAME Nominative="Άγιος Ευτύχιος" Short="Άγιος Ευτύχιος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Ευτύχιος μαρτύρησε δια σταυρικού θανάτου.
-</LIFE>
-</SAINT>
+ Ο Άγιος Ευτύχιος μαρτύρησε δια σταυρικού θανάτου.
+</LIFE></SAINT>

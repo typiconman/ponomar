@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Δομέτιος"/>
+
+<NAME Nominative="Άγιος Δομέτιος" Short="Άγιος Δομέτιος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Δομέτιος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Δομέτιος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Θεοκλής"/>
+
+<NAME Nominative="Άγιος Θεοκλής" Short="Άγιος Θεοκλής"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Θεοκλής μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Θεοκλής μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

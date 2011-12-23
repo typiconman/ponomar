@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Θεαγένης"/>
+
+<NAME Nominative="Άγιος Θεαγένης" Short="Άγιος Θεαγένης"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Θεαγένης ή Θεογένης μαρτύρησε δια πυρός.
-</LIFE>
-</SAINT>
+ Ο Άγιος Θεαγένης ή Θεογένης μαρτύρησε δια πυρός.
+</LIFE></SAINT>

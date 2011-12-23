@@ -1,8 +1,8 @@
 <DAY>
-<SAINT Name="Άγιος Κύριλλος Αρχιεπίσκοπος Ιεροσολύμων" Id="4355" Type=""/>
-<SAINT Name="Άγιοι Τρόφιμος και Ευκαρπίων" Id="4353" Type=""/>
-<SAINT Name="Άγιοι Μύριοι Μάρτυρες" Id="4352" Type=""/>
-<SAINT Name="Όσιος Ανανίας ο Θαυματουργός" Id="4351" Type=""/>
-<SAINT Name="Άγιος Edward βασιλέας της Αγγλίας" Id="4350" Type=""/>
-<SAINT Name="Όσιος Κύριλλος του Αστραχάν" Id="4356" Type=""/>
+<SAINT SId="4355" CId="4355"/>
+<SAINT SId="4353" CId="4353"/>
+<SAINT SId="4352" CId="4352"/>
+<SAINT SId="4351" CId="4351"/>
+<SAINT SId="4350" CId="4350"/>
+<SAINT SId="4356" CId="4356"/>
 </DAY>

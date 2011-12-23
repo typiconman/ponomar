@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Αγία Άννα"/>
+
+<NAME Nominative="Αγία Άννα" Short="Αγία Άννα"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Η Αγία Άννα μαρτύρησε στην Ρώμη.
-</LIFE>
-</SAINT>
+ Η Αγία Άννα μαρτύρησε στην Ρώμη.
+</LIFE></SAINT>

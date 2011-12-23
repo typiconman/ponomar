@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Φιλέορτος"/>
+
+<NAME Nominative="Άγιος Φιλέορτος" Short="Άγιος Φιλέορτος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Φιλέορτος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Φιλέορτος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

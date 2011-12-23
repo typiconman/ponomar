@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Επίμαχος"/>
+
+<NAME Nominative="Άγιος Επίμαχος" Short="Άγιος Επίμαχος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Επίμαχος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Επίμαχος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

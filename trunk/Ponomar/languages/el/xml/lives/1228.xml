@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιοι Δεκαέξι Μάρτυρες οι Θηβαίοι"/>
+
+<NAME Nominative="Άγιοι Δεκαέξι Μάρτυρες οι Θηβαίοι" Short="Άγιοι Δεκαέξι"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Μαρτύρησαν όλοι δια ξίφους.
-</LIFE>
-</SAINT>
+ Μαρτύρησαν όλοι δια ξίφους.
+</LIFE></SAINT>

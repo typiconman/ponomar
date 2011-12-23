@@ -1,14 +1,14 @@
 <DAY>
-<SAINT Name="Άγιος Καλλιόπιος" Id="282" Type=""/>
-<SAINT Name="Όσιος Γεώργιος επίσκοπος Μυτιλήνης" Id="283" Type=""/>
-<SAINT Name="Άγιος Ρουφίνος ο Διάκονος" Id="284" Type=""/>
-<SAINT Name="Αγία Ακυλίνα" Id="285" Type=""/>
-<SAINT Name="Άγιοι Διακόσιοι Μάρτυρες οι εν Σινώπη" Id="286" Type=""/>
-<SAINT Name="Όσιος Σάββας ο Νέος ο εν Καλύμνω" Id="287" Type=""/>
-<SAINT Name="Όσιος Γεράσιμος ο Βυζάντιος" Id="288" Type=""/>
-<SAINT Name="Άγιος Τύχων Πατριάρχης Μόσχας" Id="147" Type=""/>
-<SAINT Name="Όσιος Δανιήλ ο θαυματουργός" Id="289" Type=""/>
-<SAINT Name="Όσιος Αγαπητός ο Τυφλός" Id="319" Type=""/>
-<SAINT Name="Όσιος Λεύκιος εκ Ρωσίας" Id="318" Type=""/>
-<SAINT Name="Σύναξη πάντων των Σιναϊτών Αγίων" Id="3990" Type=""/>
+<SAINT SId="282" CId="282"/>
+<SAINT SId="283" CId="283"/>
+<SAINT SId="284" CId="284"/>
+<SAINT SId="285" CId="285"/>
+<SAINT SId="286" CId="286"/>
+<SAINT SId="287" CId="287"/>
+<SAINT SId="288" CId="288"/>
+<SAINT SId="147" CId="147"/>
+<SAINT SId="289" CId="289"/>
+<SAINT SId="319" CId="319"/>
+<SAINT SId="318" CId="318"/>
+<SAINT SId="3990" CId="3990"/>
 </DAY>

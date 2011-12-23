@@ -1,12 +1,12 @@
 <DAY>
-<SAINT Name="Όσιος Παύλος ο Θηβαίος" Id="21" Type=""/>
-<SAINT Name="Όσιος Ιωάννης ο Καλυβίτης" Id="22" Type=""/>
-<SAINT Name="Άγιος Πανσόφιος" Id="23" Type=""/>
-<SAINT Name="Άγιοι Έξι Μάρτυρες" Id="24" Type=""/>
-<SAINT Name="Όσιος Αλέξανδρος ο Ακοίμητος" Id="1890" Type=""/>
-<SAINT Name="Άγιοι Ελπίδιος, Δάναξ και Ελένη" Id="25" Type=""/>
-<SAINT Name="Αγία Σεκουνδίνη" Id="1888" Type=""/>
-<SAINT Name="Αγία Ita, ηγουμένη (Ιρλανδή)" Id="29" Type=""/>
-<SAINT Name="Όσιος Πρόχορος" Id="1889" Type=""/>
-<SAINT Name="Όσιος Γαβριήλ" Id="28" Type=""/>
+<SAINT SId="21" CId="21"/>
+<SAINT SId="22" CId="22"/>
+<SAINT SId="23" CId="23"/>
+<SAINT SId="24" CId="24"/>
+<SAINT SId="1890" CId="1890"/>
+<SAINT SId="25" CId="25"/>
+<SAINT SId="1888" CId="1888"/>
+<SAINT SId="29" CId="29"/>
+<SAINT SId="1889" CId="1889"/>
+<SAINT SId="28" CId="28"/>
 </DAY>

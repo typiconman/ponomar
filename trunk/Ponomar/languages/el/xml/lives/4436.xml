@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Αρσάκιος"/>
+
+<NAME Nominative="Άγιος Αρσάκιος" Short="Άγιος Αρσάκιος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Αρσάκιος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Αρσάκιος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Αγία Χριστίνα η εν Περσία"/>
+
+<NAME Nominative="Αγία Χριστίνα η εν Περσία" Short="Αγία Χριστίνα"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Μαρτύρησε αφού την μαστίγωσαν μέχρι θανάτου.
-</LIFE>
-</SAINT>
+ Μαρτύρησε αφού την μαστίγωσαν μέχρι θανάτου.
+</LIFE></SAINT>

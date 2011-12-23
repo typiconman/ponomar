@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Θέρμος"/>
+
+<NAME Nominative="Άγιος Θέρμος" Short="Άγιος Θέρμος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Θέρμος τελειώθηκε διά πυρός.
-</LIFE>
-</SAINT>
+ Ο Άγιος Θέρμος τελειώθηκε διά πυρός.
+</LIFE></SAINT>

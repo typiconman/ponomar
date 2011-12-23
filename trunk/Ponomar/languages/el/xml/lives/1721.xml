@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Αγία Μεδούλη με τη συνοδεία της"/>
+
+<NAME Nominative="Αγία Μεδούλη με τη συνοδεία της" Short="Αγία Μεδούλη"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Μαρτύρησαν αφού τις έριξαν μέσα στη φωτιά.
-</LIFE>
-</SAINT>
+ Μαρτύρησαν αφού τις έριξαν μέσα στη φωτιά.
+</LIFE></SAINT>

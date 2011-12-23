@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Άζης"/>
+
+<NAME Nominative="Άγιος Άζης" Short="Άγιος Άζης"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Άζης μαρτύρησε δια πυρός.
-</LIFE>
-</SAINT>
+ Ο Άγιος Άζης μαρτύρησε δια πυρός.
+</LIFE></SAINT>

@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγια Δύο Παιδιά"/>
+
+<NAME Nominative="Άγια Δύο Παιδιά" Short="Άγια Δύο Παιδιά"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Τα Άγια Δύο Παιδιά μαρτύρησαν δια σταυρικού θανάτου.
-</LIFE>
-</SAINT>
+ Τα Άγια Δύο Παιδιά μαρτύρησαν δια σταυρικού θανάτου.
+</LIFE></SAINT>
