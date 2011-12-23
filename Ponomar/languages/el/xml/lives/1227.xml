@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Ευλάλιος ο Ιεράρχης"/>
+
+<NAME Nominative="Άγιος Ευλάλιος ο Ιεράρχης" Short="Άγιος Ευλάλιος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Ευλάλιος απεβίωσε ειρηνικά.
-</LIFE>
-</SAINT>
+ Ο Άγιος Ευλάλιος απεβίωσε ειρηνικά.
+</LIFE></SAINT>

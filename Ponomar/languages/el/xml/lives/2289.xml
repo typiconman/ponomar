@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Δονάτος"/>
+
+<NAME Nominative="Άγιος Δονάτος" Short="Άγιος Δονάτος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Δονάτος μαρτύρησε αφού θανατώθηκε με βέλη.
-</LIFE>
-</SAINT>
+ Ο Άγιος Δονάτος μαρτύρησε αφού θανατώθηκε με βέλη.
+</LIFE></SAINT>

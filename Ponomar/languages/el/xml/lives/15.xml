@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Θεόπιστος"/>
+
+<NAME Nominative="Άγιος Θεόπιστος" Short="Άγιος Θεόπιστος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Θεόπιστος μαρτύρησε δια λιθοβολισμού.
-</LIFE>
-</SAINT>
+ Ο Άγιος Θεόπιστος μαρτύρησε δια λιθοβολισμού.
+</LIFE></SAINT>

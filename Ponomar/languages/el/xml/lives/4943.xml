@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Σχίνων"/>
+
+<NAME Nominative="Άγιος Σχίνων" Short="Άγιος Σχίνων"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Σχίνων mαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Σχίνων mαρτύρησε δια ξίφους.
+</LIFE></SAINT>

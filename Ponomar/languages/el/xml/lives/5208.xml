@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Αγία Χάρις"/>
+
+<NAME Nominative="Αγία Χάρις" Short="Αγία Χάρις"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Η Αγία Χάρις μαρτύρησε αφού της έκοψαν τα πόδια.
-</LIFE>
-</SAINT>
+ Η Αγία Χάρις μαρτύρησε αφού της έκοψαν τα πόδια.
+</LIFE></SAINT>

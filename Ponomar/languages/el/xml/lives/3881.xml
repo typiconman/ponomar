@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Γλύκων"/>
+
+<NAME Nominative="Άγιος Γλύκων" Short="Άγιος Γλύκων"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Γλύκων μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Γλύκων μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

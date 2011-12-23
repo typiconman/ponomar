@@ -1,14 +1,14 @@
 <DAY>
-<SAINT Name="Εύρεση των Τιμίων Λειψάνων των Αγίων Αναργύρων Κύρου και Ιωάννου" Id="2812" Type=""/>
-<SAINT Name="Άγιος Παππίας" Id="2814" Type=""/>
-<SAINT Name="Άγιος Σέργιος ο δίκαιος ο Μάγιστρος" Id="2815" Type=""/>
-<SAINT Name="Άγιος Μακεδόνιος" Id="2816" Type=""/>
-<SAINT Name="Όσιος Ουλκιανός" Id="2817" Type=""/>
-<SAINT Name="Άγιος Παύλος ο ιατρός" Id="2818" Type=""/>
-<SAINT Name="Άγια Δύο Παιδιά" Id="2819" Type=""/>
-<SAINT Name="Όσιος Μωυσής ο Αναχωρητής" Id="2820" Type=""/>
-<SAINT Name="Άγιος Δονάγος επίσκοπος Λιβύης" Id="2821" Type=""/>
-<SAINT Name="Άγιοι Εβδομήντα Μάρτυρες οι εν Σκυθοπόλει" Id="971" Type=""/>
-<SAINT Name="Άγιοι Τρεις Μάρτυρες από τη Γαλατία" Id="2823" Type=""/>
-<SAINT Name="Όσιος Μάγνος" Id="2824" Type=""/>
+<SAINT SId="2812" CId="2812"/>
+<SAINT SId="2814" CId="2814"/>
+<SAINT SId="2815" CId="2815"/>
+<SAINT SId="2816" CId="2816"/>
+<SAINT SId="2817" CId="2817"/>
+<SAINT SId="2818" CId="2818"/>
+<SAINT SId="2819" CId="2819"/>
+<SAINT SId="2820" CId="2820"/>
+<SAINT SId="2821" CId="2821"/>
+<SAINT SId="971" CId="971"/>
+<SAINT SId="2823" CId="2823"/>
+<SAINT SId="2824" CId="2824"/>
 </DAY>

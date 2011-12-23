@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Σαλωνάς ο Ρωμαίος"/>
+
+<NAME Nominative="Άγιος Σαλωνάς ο Ρωμαίος" Short="Άγιος Σαλωνάς"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Σαλωνάς μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Σαλωνάς μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

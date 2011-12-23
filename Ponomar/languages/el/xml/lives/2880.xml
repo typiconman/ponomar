@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιοι Δύο Χιλιάδες Μάρτυρες"/>
+
+<NAME Nominative="Άγιοι Δύο Χιλιάδες Μάρτυρες" Short="Άγιοι Δύο"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Όλοι μαρτύρησαν δια ξίφους.
-</LIFE>
-</SAINT>
+ Όλοι μαρτύρησαν δια ξίφους.
+</LIFE></SAINT>

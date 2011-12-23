@@ -1,11 +1,11 @@
 <DAY>
-<SAINT Name="Άγιος Βασιλέας Ιερομάρτυρας Επίσκοπος Αμασείας" Id="492" Type=""/>
-<SAINT Name="Αγία Γλαφυρή" Id="489" Type=""/>
-<SAINT Name="Οσία Ιούστα" Id="488" Type=""/>
-<SAINT Name="Όσιος Νέστωρ" Id="487" Type=""/>
-<SAINT Name="Άγιος Στέφανος Επίσκοπος Περμ" Id="486" Type=""/>
-<SAINT Name="Όσιος Καλάντιος" Id="485" Type=""/>
-<SAINT Name="Άγιος Λέων Επίσκοπος Σάμου" Id="490" Type=""/>
-<SAINT Name="Ανακομιδή των ιερών λειψάνων του οσίου πατρός ημών Ιωαννικίου του Αναχωρητού, του εκ Σερβίας" Id="2939" Type=""/>
-<SAINT Name="Όσιος Ανατόλιος ο Σιναΐτης" Id="2941" Type=""/>
+<SAINT SId="492" CId="492"/>
+<SAINT SId="489" CId="489"/>
+<SAINT SId="488" CId="488"/>
+<SAINT SId="487" CId="487"/>
+<SAINT SId="486" CId="486"/>
+<SAINT SId="485" CId="485"/>
+<SAINT SId="490" CId="490"/>
+<SAINT SId="2939" CId="2939"/>
+<SAINT SId="2941" CId="2941"/>
 </DAY>

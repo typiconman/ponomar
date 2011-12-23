@@ -1,10 +1,10 @@
 <DAY>
-<SAINT Name="Άγιος Ιωάννης συγγραφέας της Κλίμακος" Id="215" Type=""/>
-<SAINT Name="Άγιος Ζαχαρίας Μητροπολίτης Κορίνθου" Id="210" Type=""/>
-<SAINT Name="Προφήτης Ιωήλ" Id="214" Type=""/>
-<SAINT Name="Όσιος Ιωάννης ο εν τω φρέατι" Id="213" Type=""/>
-<SAINT Name="Άγιος Ιωάννης Πατριάρχης Ιεροσολύμων" Id="212" Type=""/>
-<SAINT Name="Αγία Ευβουλή" Id="211" Type=""/>
-<SAINT Name="Άγιος Βίκτωρ" Id="209" Type=""/>
-<SAINT Name="Άγιος Σωφρόνιος Επίσκοπος Ιρκούτσκ" Id="2666" Type=""/>
+<SAINT SId="215" CId="215"/>
+<SAINT SId="210" CId="210"/>
+<SAINT SId="214" CId="214"/>
+<SAINT SId="213" CId="213"/>
+<SAINT SId="212" CId="212"/>
+<SAINT SId="211" CId="211"/>
+<SAINT SId="209" CId="209"/>
+<SAINT SId="2666" CId="2666"/>
 </DAY>

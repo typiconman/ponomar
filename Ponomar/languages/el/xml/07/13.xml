@@ -1,8 +1,8 @@
 <DAY>
-<SAINT Name="Σύναξη του Αρχαγγέλου Γαβριήλ" Id="3049" Type=""/>
-<SAINT Name="Όσιος Στέφανος ο Σαββαΐτης" Id="3051" Type=""/>
-<SAINT Name="Οσία Σάρρα" Id="3052" Type=""/>
-<SAINT Name="Αγία Γολινδούχ η Περσίδα που μετονομάστηκε Μαρία" Id="3053" Type=""/>
-<SAINT Name="Άγιοι Ηλιόφωτοι" Id="3054" Type=""/>
-<SAINT Name="Άγιος Ονησίφορος" Id="3059" Type=""/>
+<SAINT SId="3049" CId="3049"/>
+<SAINT SId="3051" CId="3051"/>
+<SAINT SId="3052" CId="3052"/>
+<SAINT SId="3053" CId="3053"/>
+<SAINT SId="3054" CId="3054"/>
+<SAINT SId="3059" CId="3059"/>
 </DAY>

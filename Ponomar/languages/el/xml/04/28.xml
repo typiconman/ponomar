@@ -1,10 +1,10 @@
 <DAY>
-<SAINT Name="Άγιοι Εννέα Μάρτυρες εν Κυζίκω" Id="508" Type=""/>
-<SAINT Name="Διήγηση θαύματος που έγινε στην Καρθαγένη της Αφρικής" Id="507" Type=""/>
-<SAINT Name="Όσιος Μέμνων ο Θαυματουργός" Id="506" Type=""/>
-<SAINT Name="Όσιος Αυξίβιος" Id="505" Type=""/>
-<SAINT Name="Όσιος Κύριλλος Επίσκοπος Τούρωφ" Id="504" Type=""/>
-<SAINT Name="Άγιος Αρσένιος ο μάρτυρας" Id="503" Type=""/>
-<SAINT Name="Όσιος Αγάθων" Id="502" Type=""/>
-<SAINT Name="Σύναξη της Παναγίας της Εικοσπενταρούσας στην Σαμοθράκη" Id="5130" Type=""/>
+<SAINT SId="508" CId="508"/>
+<SAINT SId="507" CId="507"/>
+<SAINT SId="506" CId="506"/>
+<SAINT SId="505" CId="505"/>
+<SAINT SId="504" CId="504"/>
+<SAINT SId="503" CId="503"/>
+<SAINT SId="502" CId="502"/>
+<SAINT SId="5130" CId="5130"/>
 </DAY>

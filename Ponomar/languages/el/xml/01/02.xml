@@ -1,16 +1,16 @@
 <DAY>
-<SAINT Name="Άγιος Σίλβεστρος Πάπας Ρώμης" Id="18" Type=""/>
-<SAINT Name="Άγιος Θεαγένης ιερομάρτυρας " Id="13" Type=""/>
-<SAINT Name="Όσιος Σεραφείμ του Σαρώφ" Id="12" Type=""/>
-<SAINT Name="Άγιος Θεόπεμπτος" Id="14" Type=""/>
-<SAINT Name="Αγία Θεοδότη μητέρα των Αγίων Αναργύρων" Id="8" Type=""/>
-<SAINT Name="Όσιος Μάρκος ο κωφός" Id="19" Type=""/>
-<SAINT Name="Άγιος Βασίλειος μάρτυρας εξ Άγκυρας" Id="10" Type=""/>
-<SAINT Name="Άγιος Σέργιος " Id="17" Type=""/>
-<SAINT Name="Άγιος Θεόπιστος" Id="15" Type=""/>
-<SAINT Name="Άγιος Κοσμάς ο Α' Αρχιεπίσκοπος Κωνσταντινούπολης " Id="16" Type=""/>
-<SAINT Name="Άγιος Γεώργιος (ή Ζώρζης ή Γκιουρτζής) ο Ίβηρ" Id="9" Type=""/>
-<SAINT Name="Όσιος Σίλβεστρος Ρώσος της Λαύρας του Κιέβου" Id="20" Type=""/>
-<SAINT Name="Άγιος Ισίδωρος ο Ιερομάρτυρας" Id="1873" Type=""/>
-<SAINT Name="Οσία Ιουλιανή η Δικαία" Id="1874" Type=""/>
+<SAINT SId="18" CId="18"/>
+<SAINT SId="13" CId="13"/>
+<SAINT SId="12" CId="12"/>
+<SAINT SId="14" CId="14"/>
+<SAINT SId="8" CId="8"/>
+<SAINT SId="19" CId="19"/>
+<SAINT SId="10" CId="10"/>
+<SAINT SId="17" CId="17"/>
+<SAINT SId="15" CId="15"/>
+<SAINT SId="16" CId="16"/>
+<SAINT SId="9" CId="9"/>
+<SAINT SId="20" CId="20"/>
+<SAINT SId="1873" CId="1873"/>
+<SAINT SId="1874" CId="1874"/>
 </DAY>

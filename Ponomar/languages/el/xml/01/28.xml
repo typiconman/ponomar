@@ -1,12 +1,12 @@
 <DAY>
-<SAINT Name="Όσιος Εφραίμ ο Σύρος" Id="5204" Type=""/>
-<SAINT Name="Όσιος Παλλάδιος" Id="5205" Type=""/>
-<SAINT Name="Όσιος Ιάκωβος ο Ασκητής" Id="5206" Type=""/>
-<SAINT Name="Αγία Χάρις" Id="5208" Type=""/>
-<SAINT Name="Αγίες Δύο Μάρτυρες, Μητέρα και Θυγατέρα" Id="5207" Type=""/>
-<SAINT Name="Μνήμη όλων των Ερημιτών" Id="5209" Type=""/>
-<SAINT Name="Άγιος Γεώργιος ο Μάρτυρας" Id="5211" Type=""/>
-<SAINT Name="Όσιος Εφραίμ ο εκ Ρωσίας" Id="5212" Type=""/>
-<SAINT Name="Όσιος Εφραίμ ο εκ Κιέβου" Id="5213" Type=""/>
-<SAINT Name="Όσιος Θεοδόσιος της Τότμα" Id="5210" Type=""/>
+<SAINT SId="5204" CId="5204"/>
+<SAINT SId="5205" CId="5205"/>
+<SAINT SId="5206" CId="5206"/>
+<SAINT SId="5208" CId="5208"/>
+<SAINT SId="5207" CId="5207"/>
+<SAINT SId="5209" CId="5209"/>
+<SAINT SId="5211" CId="5211"/>
+<SAINT SId="5212" CId="5212"/>
+<SAINT SId="5213" CId="5213"/>
+<SAINT SId="5210" CId="5210"/>
 </DAY>

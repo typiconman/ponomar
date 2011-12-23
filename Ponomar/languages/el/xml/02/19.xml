@@ -1,12 +1,12 @@
 <DAY>
-<SAINT Name="Α' Χαιρετισμοί" Id="264" Type=""/>
-<SAINT Name="Αγία Φιλοθέη η Αθηναία" Id="5516" Type=""/>
-<SAINT Name="Άγιος Άρχιππος ο Απόστολος" Id="5506" Type=""/>
-<SAINT Name="Άγιος Νικήτας ο νέος Ιερομάρτυρας" Id="5517" Type=""/>
-<SAINT Name="Άγιοι Μάξιμος, Θεόδοτος, Ησύχιος και Ασκληπιοδότη" Id="5507" Type=""/>
-<SAINT Name="Όσιος Ραβουλάς" Id="5511" Type=""/>
-<SAINT Name="Όσιοι Ευγένιος και Μακάριος οι Ομολογητές" Id="5512" Type=""/>
-<SAINT Name="Όσιος Κόνων" Id="5514" Type=""/>
-<SAINT Name="Όσιος Σωφρόνιος" Id="5515" Type=""/>
-<SAINT Name="Οσία Μαρία του Όλονετς" Id="5518" Type=""/>
+<SAINT SId="264" CId="264"/>
+<SAINT SId="5516" CId="5516"/>
+<SAINT SId="5506" CId="5506"/>
+<SAINT SId="5517" CId="5517"/>
+<SAINT SId="5507" CId="5507"/>
+<SAINT SId="5511" CId="5511"/>
+<SAINT SId="5512" CId="5512"/>
+<SAINT SId="5514" CId="5514"/>
+<SAINT SId="5515" CId="5515"/>
+<SAINT SId="5518" CId="5518"/>
 </DAY>

@@ -1,13 +1,13 @@
 <DAY>
-<SAINT Name="Δίκαιος Ιώβ ο Προφήτης" Id="2281" Type=""/>
-<SAINT Name="Όσιος Σεραφείμ που ασκήτευσε στο όρος Δομπού Λεβαδείας" Id="2292" Type=""/>
-<SAINT Name="Όσιοι Μάμας, Παχώμιος και Ιλαρίων" Id="2282" Type=""/>
-<SAINT Name="Άγιος Δημητρίων" Id="2285" Type=""/>
-<SAINT Name="Άγιοι Δάναξ, Μέσιρος και Θερίνος" Id="2286" Type=""/>
-<SAINT Name="Άγιος Δονάτος" Id="2289" Type=""/>
-<SAINT Name="Άγιος Βάρβαρος" Id="2290" Type=""/>
-<SAINT Name="Ανάμνηση των εγκαινίων του ναού των Αγίων Κοσμά και Δαμιανού στη Μονή του Ψαμαθία" Id="2291" Type=""/>
-<SAINT Name="Όσιος Ιώβ ο θαυματουργός" Id="2293" Type=""/>
-<SAINT Name="Άγιος Eadbert εκ Σκωτίας" Id="2294" Type=""/>
-<SAINT Name="Οσία Βενεδίκτη η Ρωμαία" Id="2295" Type=""/>
+<SAINT SId="2281" CId="2281"/>
+<SAINT SId="2292" CId="2292"/>
+<SAINT SId="2282" CId="2282"/>
+<SAINT SId="2285" CId="2285"/>
+<SAINT SId="2286" CId="2286"/>
+<SAINT SId="2289" CId="2289"/>
+<SAINT SId="2290" CId="2290"/>
+<SAINT SId="2291" CId="2291"/>
+<SAINT SId="2293" CId="2293"/>
+<SAINT SId="2294" CId="2294"/>
+<SAINT SId="2295" CId="2295"/>
 </DAY>

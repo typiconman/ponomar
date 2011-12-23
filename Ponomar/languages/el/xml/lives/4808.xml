@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Μαριανός"/>
+
+<NAME Nominative="Άγιος Μαριανός" Short="Άγιος Μαριανός"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Μαριανός μαρτύρησε δια λιθοβολισμού.
-</LIFE>
-</SAINT>
+ Ο Άγιος Μαριανός μαρτύρησε δια λιθοβολισμού.
+</LIFE></SAINT>

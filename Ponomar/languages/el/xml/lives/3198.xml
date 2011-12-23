@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Θεόδωρος"/>
+
+<NAME Nominative="Άγιος Θεόδωρος" Short="Άγιος Θεόδωρος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Θεόδωρος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Θεόδωρος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Αγίες Δύο Κόρες"/>
+
+<NAME Nominative="Αγίες Δύο Κόρες" Short="Αγίες Δύο Κόρες"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Οι Αγίες Δύο Κόρες μαρτύρησαν δια ξίφους.
-</LIFE>
-</SAINT>
+ Οι Αγίες Δύο Κόρες μαρτύρησαν δια ξίφους.
+</LIFE></SAINT>

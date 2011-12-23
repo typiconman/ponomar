@@ -1,11 +1,11 @@
 <DAY>
-<SAINT Name="Δ' Χαιρετισμοί" Id="267" Type=""/>
-<SAINT Name="Όσιος Θεοφάνης ο Ομολογητής της Συγριανής" Id="5605" Type=""/>
-<SAINT Name="Όσιος Γρηγόριος ο Α' Διάλογος Πάπας Ρώμης" Id="5606" Type=""/>
-<SAINT Name="Άγιοι Εννέα Μάρτυρες" Id="5607" Type=""/>
-<SAINT Name="Δίκαιος Φινεές" Id="5608" Type=""/>
-<SAINT Name="Όσιος Συμεών ο Ευλαβής" Id="2827" Type=""/>
-<SAINT Name="Άγιος Λαυρέντιος" Id="5609" Type=""/>
-<SAINT Name="Προφήτης Ααρών" Id="5611" Type=""/>
-<SAINT Name="Άγιος Δημήτριος βασιλεύς της Γεωργίας" Id="5610" Type=""/>
+<SAINT SId="267" CId="267"/>
+<SAINT SId="5605" CId="5605"/>
+<SAINT SId="5606" CId="5606"/>
+<SAINT SId="5607" CId="5607"/>
+<SAINT SId="5608" CId="5608"/>
+<SAINT SId="2827" CId="2827"/>
+<SAINT SId="5609" CId="5609"/>
+<SAINT SId="5611" CId="5611"/>
+<SAINT SId="5610" CId="5610"/>
 </DAY>

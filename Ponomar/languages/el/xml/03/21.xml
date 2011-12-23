@@ -1,11 +1,11 @@
 <DAY>
-<SAINT Name="Άγιος Ιάκωβος ο Ομολογητής ο Επίσκοπος" Id="4990" Type=""/>
-<SAINT Name="Άγιος Θωμάς Πατριάρχης Κωνσταντινούπολης" Id="4991" Type=""/>
-<SAINT Name="Όσιος Σεραπίων ο Σιδώνιος" Id="4995" Type=""/>
-<SAINT Name="Άγιοι Φιλήμων και Δομνίνος" Id="4992" Type=""/>
-<SAINT Name="Όσιος Βήρυλλος Επίσκοπος Κατάνης" Id="4994" Type=""/>
-<SAINT Name="Αγία Μαρία «ἡ ἐν Πέργῃ»" Id="4996" Type=""/>
-<SAINT Name="Όσιος Σεραφείμ" Id="4998" Type=""/>
-<SAINT Name="Άγιος Γεώργιος ο Νεομάρτυρας" Id="4997" Type=""/>
-<SAINT Name="Άγιοι Οκτώ εν Φθιώτιδι" Id="2667" Type=""/>
+<SAINT SId="4990" CId="4990"/>
+<SAINT SId="4991" CId="4991"/>
+<SAINT SId="4995" CId="4995"/>
+<SAINT SId="4992" CId="4992"/>
+<SAINT SId="4994" CId="4994"/>
+<SAINT SId="4996" CId="4996"/>
+<SAINT SId="4998" CId="4998"/>
+<SAINT SId="4997" CId="4997"/>
+<SAINT SId="2667" CId="2667"/>
 </DAY>

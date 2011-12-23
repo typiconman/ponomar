@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Αγία Σοφία η Ιατρός"/>
+
+<NAME Nominative="Αγία Σοφία η Ιατρός" Short="Αγία Σοφία"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Η Αγία Μάρτυς Σοφία μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Η Αγία Μάρτυς Σοφία μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

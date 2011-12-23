@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Θεόπεμπτος"/>
+
+<NAME Nominative="Άγιος Θεόπεμπτος" Short="Άγιος Θεόπεμπτος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Απεβίωσε ειρηνικά.
-</LIFE>
-</SAINT>
+ Απεβίωσε ειρηνικά.
+</LIFE></SAINT>

@@ -1,8 +1,8 @@
 <DAY>
-<SAINT Name="Άγιοι Κήρυκος και Ιουλίττα η μητέρα του" Id="3174" Type=""/>
-<SAINT Name="Άγιος Βλαδίμηρος ο Ισαπόστολος βασιλιάς των Ρώσων" Id="3171" Type=""/>
-<SAINT Name="Άγιος Λολλιανός" Id="3173" Type=""/>
-<SAINT Name="Άγιος Αβούδιμος" Id="3172" Type=""/>
-<SAINT Name="Εύρεση τιμίας κάρας της Οσίας Ματρώνας της Χιοπολίτιδας" Id="3170" Type=""/>
-<SAINT Name="Άγιος Swithn" Id="3169" Type=""/>
+<SAINT SId="3174" CId="3174"/>
+<SAINT SId="3171" CId="3171"/>
+<SAINT SId="3173" CId="3173"/>
+<SAINT SId="3172" CId="3172"/>
+<SAINT SId="3170" CId="3170"/>
+<SAINT SId="3169" CId="3169"/>
 </DAY>

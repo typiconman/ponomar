@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Νεστοριανός"/>
+
+<NAME Nominative="Άγιος Νεστοριανός" Short="Άγιος Νεστοριανός"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Νεστοριανός μαρτύρησε διά ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Νεστοριανός μαρτύρησε διά ξίφους.
+</LIFE></SAINT>

@@ -1,12 +1,12 @@
 <DAY>
-<SAINT Name="Άγιος Μάρκος ο Απόστολος και Ευαγγελιστής" Id="475" Type=""/>
-<SAINT Name="Άγιος Μακεδόνιος Β' Πατριάρχης Κωνσταντινούπολης" Id="477" Type=""/>
-<SAINT Name="Ανάμνηση των εγκαινίων του σεπτού Αποστολείου" Id="476" Type=""/>
-<SAINT Name="Αγία Νίκη" Id="478" Type=""/>
-<SAINT Name="Άγιοι Οκτώ Οσιομάρτυρες και Αναχωρητές" Id="479" Type=""/>
-<SAINT Name="Άγιος Maughald (Ιρλανδός)" Id="480" Type=""/>
-<SAINT Name="Άγιος Αννιανός Επίσκοπος Αλεξανδρείας" Id="481" Type=""/>
-<SAINT Name="Όσιος Σιλβέστρος της Ομπνόρα" Id="482" Type=""/>
-<SAINT Name="Όσιος Βασίλειος ο Ησυχαστής" Id="483" Type=""/>
-<SAINT Name="Σύναξη Ευβοέων Αγίων" Id="5913" Type=""/>
+<SAINT SId="475" CId="475"/>
+<SAINT SId="477" CId="477"/>
+<SAINT SId="476" CId="476"/>
+<SAINT SId="478" CId="478"/>
+<SAINT SId="479" CId="479"/>
+<SAINT SId="480" CId="480"/>
+<SAINT SId="481" CId="481"/>
+<SAINT SId="482" CId="482"/>
+<SAINT SId="483" CId="483"/>
+<SAINT SId="5913" CId="5913"/>
 </DAY>

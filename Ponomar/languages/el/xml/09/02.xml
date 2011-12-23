@@ -1,17 +1,17 @@
 <DAY>
-<SAINT Name="Άγιος Μάμας" Id="1396" Type=""/>
-<SAINT Name="Άγιος Ιωάννης ο Νηστευτής, Πατριάρχης Κωνσταντινούπολης" Id="1395" Type=""/>
-<SAINT Name="Άγιος Διομήδης" Id="1394" Type=""/>
-<SAINT Name="Άγιος Ιουλιανός" Id="1393" Type=""/>
-<SAINT Name="Άγιος Φίλιππος" Id="1392" Type=""/>
-<SAINT Name="Άγιος Ευτυχιανός" Id="1391" Type=""/>
-<SAINT Name="Άγιος Ησύχιος" Id="1390" Type=""/>
-<SAINT Name="Άγιος Λεωνίδης" Id="1389" Type=""/>
-<SAINT Name="Άγιος Ευτύχιος" Id="1388" Type=""/>
-<SAINT Name="Άγιος Φιλάδελφος" Id="1387" Type=""/>
-<SAINT Name="Άγιος Μελάνιππος" Id="1386" Type=""/>
-<SAINT Name="Αγία Παρθαγάπη" Id="1385" Type=""/>
-<SAINT Name="Δίκαιοι Ελεάζαρ και Φινεές" Id="1383" Type=""/>
-<SAINT Name="Άγιοι Αειθαλάς και Αμών" Id="1381" Type=""/>
-<SAINT Name="Όσιος Θεοδόσιος καθηγούμενος της Λαύρας των Σπηλαίων του Κιέβου" Id="3824" Type=""/>
+<SAINT SId="1396" CId="1396"/>
+<SAINT SId="1395" CId="1395"/>
+<SAINT SId="1394" CId="1394"/>
+<SAINT SId="1393" CId="1393"/>
+<SAINT SId="1392" CId="1392"/>
+<SAINT SId="1391" CId="1391"/>
+<SAINT SId="1390" CId="1390"/>
+<SAINT SId="1389" CId="1389"/>
+<SAINT SId="1388" CId="1388"/>
+<SAINT SId="1387" CId="1387"/>
+<SAINT SId="1386" CId="1386"/>
+<SAINT SId="1385" CId="1385"/>
+<SAINT SId="1383" CId="1383"/>
+<SAINT SId="1381" CId="1381"/>
+<SAINT SId="3824" CId="3824"/>
 </DAY>

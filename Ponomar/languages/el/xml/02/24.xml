@@ -1,7 +1,7 @@
 <DAY>
-<SAINT Name="Α' και Β' Εύρεση Τιμίας κεφαλής του Αγίου Προφήτου, προδρόμου και βαπτιστού Ιωάννη" Id="3684" Type=""/>
-<SAINT Name="Όσιος Boisil εκ Σκωτίας" Id="3685" Type=""/>
-<SAINT Name="Άγιος Ethelbert βασιλιάς της Αγγλίας" Id="3686" Type=""/>
-<SAINT Name="Όσιος Έρασμος εκ Ρωσίας" Id="3687" Type=""/>
-<SAINT Name="Όσιος Ιωάννης ο Θεριστής ο εν Καλαβρία" Id="3688" Type=""/>
+<SAINT SId="3684" CId="3684"/>
+<SAINT SId="3685" CId="3685"/>
+<SAINT SId="3686" CId="3686"/>
+<SAINT SId="3687" CId="3687"/>
+<SAINT SId="3688" CId="3688"/>
 </DAY>

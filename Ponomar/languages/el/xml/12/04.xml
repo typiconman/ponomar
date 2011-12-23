@@ -1,12 +1,12 @@
 <DAY>
-<SAINT Name="Αγία Βαρβάρα η Μεγαλομάρτυς" Id="4721" Type=""/>
-<SAINT Name="Όσιος Ιωάννης ο Δαμασκηνός" Id="4720" Type=""/>
-<SAINT Name="Άγιος Σεραφείμ ο Νέος Ιερομάρτυρας" Id="4714" Type=""/>
-<SAINT Name="Όσιος Ιωάννης επίσκοπος Πολυβότου, ο Θαυματουργός" Id="4719" Type=""/>
-<SAINT Name="Αγία Ιουλιανή" Id="4718" Type=""/>
-<SAINT Name="Άγιοι Χριστόδουλος και Χριστοδούλη η Παρθένος" Id="4716" Type=""/>
-<SAINT Name="Μνήμη των Δώδεκα Προφητών" Id="4715" Type=""/>
-<SAINT Name="Όσιος Κασσιανός" Id="4713" Type=""/>
-<SAINT Name="Άγιος Κρίσπος" Id="4712" Type=""/>
-<SAINT Name="Άγιος Δαμάσος" Id="4711" Type=""/>
+<SAINT SId="4721" CId="4721"/>
+<SAINT SId="4720" CId="4720"/>
+<SAINT SId="4714" CId="4714"/>
+<SAINT SId="4719" CId="4719"/>
+<SAINT SId="4718" CId="4718"/>
+<SAINT SId="4716" CId="4716"/>
+<SAINT SId="4715" CId="4715"/>
+<SAINT SId="4713" CId="4713"/>
+<SAINT SId="4712" CId="4712"/>
+<SAINT SId="4711" CId="4711"/>
 </DAY>

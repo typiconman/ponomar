@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Σέβηρος"/>
+
+<NAME Nominative="Άγιος Σέβηρος" Short="Άγιος Σέβηρος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Σέβηρος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Σέβηρος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

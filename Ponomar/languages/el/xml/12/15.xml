@@ -1,13 +1,13 @@
 <DAY>
-<SAINT Name="Άγιος Ελευθέριος ο Ιερομάρτυρας" Id="4882" Type=""/>
-<SAINT Name="Αγία Ανθία" Id="4881" Type=""/>
-<SAINT Name="Άγιος Κορέμμων ο έπαρχος" Id="4880" Type=""/>
-<SAINT Name="Άγιοι Δύο Δήμιοι" Id="4879" Type=""/>
-<SAINT Name="Άγιος Ελευθέριος ο Κουβικουλάριος" Id="4878" Type=""/>
-<SAINT Name="Αγία Σωσάννα η Οσιομάρτυς" Id="4877" Type=""/>
-<SAINT Name="Άγιος Βάκχος ο Νέος" Id="4876" Type=""/>
-<SAINT Name="Όσιος Παύλος ο νέος που ασκήτευε στο Λάτριο όρος" Id="4875" Type=""/>
-<SAINT Name="Μνήμη Χειροτονίας Αγίου Ιωάννου του Χρυσοστόμου" Id="4874" Type=""/>
-<SAINT Name="Άγιος Στέφανος Αρχιεπίσκοπος Σουρόζας" Id="4873" Type=""/>
-<SAINT Name="Αγίος Γουρίας" Id="2781" Type=""/>
+<SAINT SId="4882" CId="4882"/>
+<SAINT SId="4881" CId="4881"/>
+<SAINT SId="4880" CId="4880"/>
+<SAINT SId="4879" CId="4879"/>
+<SAINT SId="4878" CId="4878"/>
+<SAINT SId="4877" CId="4877"/>
+<SAINT SId="4876" CId="4876"/>
+<SAINT SId="4875" CId="4875"/>
+<SAINT SId="4874" CId="4874"/>
+<SAINT SId="4873" CId="4873"/>
+<SAINT SId="2781" CId="2781"/>
 </DAY>

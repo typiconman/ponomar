@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Λεωνίδης"/>
+
+<NAME Nominative="Άγιος Λεωνίδης" Short="Άγιος Λεωνίδης"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Λεωνίδης μαρτύρησε δια πυρός.
-</LIFE>
-</SAINT>
+ Ο Άγιος Λεωνίδης μαρτύρησε δια πυρός.
+</LIFE></SAINT>

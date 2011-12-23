@@ -1,12 +1,12 @@
 <DAY>
-<SAINT Name="Όσιος Ιλαρίων ο Νέος" Id="3858" Type=""/>
-<SAINT Name="Άγιος Ηρωδίων ο Απόστολος" Id="3859" Type=""/>
-<SAINT Name="Όσιος Στέφανος ο Θαυματουργός" Id="3860" Type=""/>
-<SAINT Name="Άγιος Ευστράτιος ο Νηστευτής ο Οσιομάρτυρας" Id="3861" Type=""/>
-<SAINT Name="Όσιος Ησύχιος ο Ιεροσολυμίτης" Id="3862" Type=""/>
-<SAINT Name="Άγιος Boyan ο επονομαζόμενος Enravota πρίγκιπας των Βουλγάρων" Id="3863" Type=""/>
-<SAINT Name="Όσιος Ιλαρίων εκ Ρωσίας" Id="3864" Type=""/>
-<SAINT Name="Όσιος Διονύσιος ο Ελεήμων" Id="3867" Type=""/>
-<SAINT Name="Όσιος Ιωάννης εκ Γεωργίας" Id="3866" Type=""/>
-<SAINT Name="Ανάμνηση Θαύματος Αγίου Σπυρίδωνα" Id="4843" Type=""/>
+<SAINT SId="3858" CId="3858"/>
+<SAINT SId="3859" CId="3859"/>
+<SAINT SId="3860" CId="3860"/>
+<SAINT SId="3861" CId="3861"/>
+<SAINT SId="3862" CId="3862"/>
+<SAINT SId="3863" CId="3863"/>
+<SAINT SId="3864" CId="3864"/>
+<SAINT SId="3867" CId="3867"/>
+<SAINT SId="3866" CId="3866"/>
+<SAINT SId="4843" CId="4843"/>
 </DAY>

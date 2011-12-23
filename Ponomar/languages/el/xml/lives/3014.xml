@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Καπίτων"/>
+
+<NAME Nominative="Άγιος Καπίτων" Short="Άγιος Καπίτων"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Καπίτων μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Καπίτων μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

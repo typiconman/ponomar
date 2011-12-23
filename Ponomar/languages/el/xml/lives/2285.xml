@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Δημητρίων"/>
+
+<NAME Nominative="Άγιος Δημητρίων" Short="Άγιος Δημητρίων"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Δημητρίων μαρτύρησε αφού θανατώθηκε με βέλη.
-</LIFE>
-</SAINT>
+ Ο Άγιος Δημητρίων μαρτύρησε αφού θανατώθηκε με βέλη.
+</LIFE></SAINT>

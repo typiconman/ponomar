@@ -1,9 +1,9 @@
 <DAY>
-<SAINT Name="Άγιος Πλάτωνας" Id="4458" Type=""/>
-<SAINT Name="Άγιος Ρωμανός" Id="4459" Type=""/>
-<SAINT Name="Άγιος Αναστάσιος ο Νεομάρτυρας από την Παραμυθιά της Ηπείρου" Id="4465" Type=""/>
-<SAINT Name="Άγιο Νήπιο" Id="4460" Type=""/>
-<SAINT Name="Άγιος Ρωμανός από την Παλαιστίνη" Id="4461" Type=""/>
-<SAINT Name="Άγιοι Ζακχαίος ο Διάκονος και Αλφαίος" Id="4462" Type=""/>
-<SAINT Name="Όσιος Βασίλειος" Id="4464" Type=""/>
+<SAINT SId="4458" CId="4458"/>
+<SAINT SId="4459" CId="4459"/>
+<SAINT SId="4465" CId="4465"/>
+<SAINT SId="4460" CId="4460"/>
+<SAINT SId="4461" CId="4461"/>
+<SAINT SId="4462" CId="4462"/>
+<SAINT SId="4464" CId="4464"/>
 </DAY>

@@ -1,16 +1,16 @@
 <DAY>
-<SAINT Name="Άγιος Λέων ο Θαυματουργός Επίσκοπος Κατάνης" Id="5519" Type=""/>
-<SAINT Name="Άγιος Αγάθων Πάπας Ρώμης" Id="5523" Type=""/>
-<SAINT Name="Όσιος Βησσαρίων" Id="5522" Type=""/>
-<SAINT Name="Άγιος Σαδώκ ο Ιερομάρτυρας και οι μαζί μ' αυτόν Εκατόν εικοσιοκτώ μάρτυρες" Id="4046" Type=""/>
-<SAINT Name="Όσιος Κινδέος Επίσκοπος Πισιδίας" Id="5524" Type=""/>
-<SAINT Name="Όσιος Πλωτίνος" Id="5525" Type=""/>
-<SAINT Name="Άγιος Ανιανός" Id="5526" Type=""/>
-<SAINT Name="Άγιοι Δίδυμος, Νεμέσιος και Ποτάμιος" Id="5527" Type=""/>
-<SAINT Name="Άγιος Ευτρόπιος" Id="5530" Type=""/>
-<SAINT Name="Αγία Αππία η μάρτυς" Id="5531" Type=""/>
-<SAINT Name="Οσία Mildred" Id="5532" Type=""/>
-<SAINT Name="Άγιος Μακάριος ο Οσιομάρτυρας και ο συν αυτώ αναιρεθέντες" Id="5533" Type=""/>
-<SAINT Name="Όσιος Αγάθων ο Θαυματουργός" Id="3825" Type=""/>
-<SAINT Name="Άγιος Κορνήλιος ο Ιερομάρτυρας εκ Ρωσίας" Id="5534" Type=""/>
+<SAINT SId="5519" CId="5519"/>
+<SAINT SId="5523" CId="5523"/>
+<SAINT SId="5522" CId="5522"/>
+<SAINT SId="4046" CId="4046"/>
+<SAINT SId="5524" CId="5524"/>
+<SAINT SId="5525" CId="5525"/>
+<SAINT SId="5526" CId="5526"/>
+<SAINT SId="5527" CId="5527"/>
+<SAINT SId="5530" CId="5530"/>
+<SAINT SId="5531" CId="5531"/>
+<SAINT SId="5532" CId="5532"/>
+<SAINT SId="5533" CId="5533"/>
+<SAINT SId="3825" CId="3825"/>
+<SAINT SId="5534" CId="5534"/>
 </DAY>

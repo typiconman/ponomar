@@ -1,7 +1,7 @@
 <DAY>
-<SAINT Name="Άγιοι Φώτιος και Ανίκητος" Id="1141" Type=""/>
-<SAINT Name="Άγιοι Πάμφιλος και Καπίτων" Id="1136" Type=""/>
-<SAINT Name="Όσιος Παλάμων" Id="1140" Type=""/>
-<SAINT Name="Άγιοι Δώδεκα Στρατιώτες Μάρτυρες από την Κρήτη" Id="1139" Type=""/>
-<SAINT Name="Όσιος Κάστωρ" Id="1138" Type=""/>
+<SAINT SId="1141" CId="1141"/>
+<SAINT SId="1136" CId="1136"/>
+<SAINT SId="1140" CId="1140"/>
+<SAINT SId="1139" CId="1139"/>
+<SAINT SId="1138" CId="1138"/>
 </DAY>

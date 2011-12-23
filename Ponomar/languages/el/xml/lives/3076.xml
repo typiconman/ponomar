@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιες Γυναίκες οι Μάρτυρες"/>
+
+<NAME Nominative="Άγιες Γυναίκες οι Μάρτυρες" Short="Άγιες Γυναίκες"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Όλες μαρτύρησαν δια ξίφους.
-</LIFE>
-</SAINT>
+ Όλες μαρτύρησαν δια ξίφους.
+</LIFE></SAINT>

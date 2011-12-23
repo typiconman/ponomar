@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Πιούλιος"/>
+
+<NAME Nominative="Άγιος Πιούλιος" Short="Άγιος Πιούλιος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Πιούλιος μαρτύρησε διά ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Πιούλιος μαρτύρησε διά ξίφους.
+</LIFE></SAINT>

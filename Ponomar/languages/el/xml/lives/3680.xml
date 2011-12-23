@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Αγία Χήρα"/>
+
+<NAME Nominative="Αγία Χήρα" Short="Αγία Χήρα"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Η Αγία Χήρα μαρτύρησε, αφού θανατώθηκε με μαχαίρι.
-</LIFE>
-</SAINT>
+ Η Αγία Χήρα μαρτύρησε, αφού θανατώθηκε με μαχαίρι.
+</LIFE></SAINT>

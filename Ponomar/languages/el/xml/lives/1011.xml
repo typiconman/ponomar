@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Ευάγγελος"/>
+
+<NAME Nominative="Άγιος Ευάγγελος" Short="Άγιος Ευάγγελος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Ευάγγελος μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Ευάγγελος μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

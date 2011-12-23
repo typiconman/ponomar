@@ -1,9 +1,9 @@
 <DAY>
-<SAINT Name="Ύψωση του Τιμίου και Ζωοποιού Σταυρού" Id="3483" Type=""/>
-<SAINT Name="Αγία Πλακίλλα η Ευσεβέστατη Βασίλισσα" Id="3484" Type=""/>
-<SAINT Name="Μνήμη της ΣΤ’ Οικουμενικής Συνόδου" Id="3485" Type=""/>
-<SAINT Name="Άγιος Πάπας" Id="3486" Type=""/>
-<SAINT Name="Άγιος Θεοκλής" Id="3488" Type=""/>
-<SAINT Name="Άγιος Βαλεριανός το νήπιο" Id="3489" Type=""/>
-<SAINT Name="Άγιος Μακάριος ο Νέος ο οσιομάρτυρας" Id="3490" Type=""/>
+<SAINT SId="3483" CId="3483"/>
+<SAINT SId="3484" CId="3484"/>
+<SAINT SId="3485" CId="3485"/>
+<SAINT SId="3486" CId="3486"/>
+<SAINT SId="3488" CId="3488"/>
+<SAINT SId="3489" CId="3489"/>
+<SAINT SId="3490" CId="3490"/>
 </DAY>

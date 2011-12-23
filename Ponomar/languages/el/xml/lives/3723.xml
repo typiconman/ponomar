@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Νέρδων"/>
+
+<NAME Nominative="Άγιος Νέρδων" Short="Άγιος Νέρδων"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Νέρδων μαρτύρησε δια πυρός.
-</LIFE>
-</SAINT>
+ Ο Άγιος Νέρδων μαρτύρησε δια πυρός.
+</LIFE></SAINT>

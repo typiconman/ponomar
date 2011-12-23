@@ -1,15 +1,15 @@
 <DAY>
-<SAINT Name="Όσιος Γεώργιος ο εν Μαλεώ" Id="263" Type=""/>
-<SAINT Name="Όσιος Ζωσιμάς" Id="255" Type=""/>
-<SAINT Name="Άγιοι Θεόδουλος και Αγαθάπους" Id="261" Type=""/>
-<SAINT Name="Αγία Φερφούθη μετά της αδελφής και ανιψιάς της" Id="260" Type=""/>
-<SAINT Name="Όσιος Πόπλιος" Id="259" Type=""/>
-<SAINT Name="Όσιος Πλάτων ηγούμενος της Μονής Στουδίου" Id="254" Type=""/>
-<SAINT Name="Όσιοι Θεωνάς. Συμεών και Φερβίνος" Id="256" Type=""/>
-<SAINT Name="Όσιος Θεωνάς" Id="253" Type=""/>
-<SAINT Name="Όσιος Ιωσήφ ο Πολύαθλος" Id="250" Type=""/>
-<SAINT Name="Άγιος Ισίδωρος Επίσκοπος Σεβίλλης" Id="317" Type=""/>
-<SAINT Name="Όσιος Ζωσιμάς εκ Ρωσίας" Id="2687" Type=""/>
-<SAINT Name="Όσιος Ιωσήφ" Id="2688" Type=""/>
-<SAINT Name="Σύναξη της Υπεραγίας Θεοτόκου της Γεροντίσσης" Id="2685" Type=""/>
+<SAINT SId="263" CId="263"/>
+<SAINT SId="255" CId="255"/>
+<SAINT SId="261" CId="261"/>
+<SAINT SId="260" CId="260"/>
+<SAINT SId="259" CId="259"/>
+<SAINT SId="254" CId="254"/>
+<SAINT SId="256" CId="256"/>
+<SAINT SId="253" CId="253"/>
+<SAINT SId="250" CId="250"/>
+<SAINT SId="317" CId="317"/>
+<SAINT SId="2687" CId="2687"/>
+<SAINT SId="2688" CId="2688"/>
+<SAINT SId="2685" CId="2685"/>
 </DAY>

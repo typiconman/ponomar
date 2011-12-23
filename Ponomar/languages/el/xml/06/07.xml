@@ -1,15 +1,15 @@
 <DAY>
-<SAINT Name="Άγιος Θεόδοτος ο εν Άγκυρα" Id="729" Type=""/>
-<SAINT Name="Αγία Ποταμιαίνη" Id="725" Type=""/>
-<SAINT Name="Άγιος Παναγής Μπασιάς" Id="718" Type=""/>
-<SAINT Name="Αγία Ζηναΐς η Θαυματουργή" Id="728" Type=""/>
-<SAINT Name="Αγίες Αισία και Σωσάννα" Id="726" Type=""/>
-<SAINT Name="Άγιος Λυκαρίων" Id="724" Type=""/>
-<SAINT Name="Άγιοι Ταράσιος και Ιωάννης" Id="722" Type=""/>
-<SAINT Name="Όσιος Στέφανος ο Πρεσβύτερος" Id="721" Type=""/>
-<SAINT Name="Όσιος Άνθιμος ο Πρεσβύτερος" Id="720" Type=""/>
-<SAINT Name="Οσία Σεβαστιανή η Θαυματουργή" Id="719" Type=""/>
-<SAINT Name="Άγιοι Βασιλείδης μάρτυρας Στρατιώτης και Ιωάννης ο οσιομάρτυρας" Id="716" Type=""/>
-<SAINT Name="Άγιος Αντώνιος της Μονής Βαλαάμ" Id="715" Type=""/>
-<SAINT Name="Άγιος Willibald" Id="714" Type=""/>
+<SAINT SId="729" CId="729"/>
+<SAINT SId="725" CId="725"/>
+<SAINT SId="718" CId="718"/>
+<SAINT SId="728" CId="728"/>
+<SAINT SId="726" CId="726"/>
+<SAINT SId="724" CId="724"/>
+<SAINT SId="722" CId="722"/>
+<SAINT SId="721" CId="721"/>
+<SAINT SId="720" CId="720"/>
+<SAINT SId="719" CId="719"/>
+<SAINT SId="716" CId="716"/>
+<SAINT SId="715" CId="715"/>
+<SAINT SId="714" CId="714"/>
 </DAY>

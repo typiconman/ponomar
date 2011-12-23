@@ -1,11 +1,11 @@
 <DAY>
-<SAINT Name="Άγιος Θεόδωρος ο Στρατηλάτης" Id="781" Type=""/>
-<SAINT Name="Προφήτης Ζαχαρίας" Id="780" Type=""/>
-<SAINT Name="Άγιες Μάρθα, Μαρία και Λυκαρίων ο Οσιομάρτυρας" Id="777" Type=""/>
-<SAINT Name="Άγιοι Νικηφόρος και Στέφανος οι Μάρτυρες" Id="775" Type=""/>
-<SAINT Name="Όσιοι Φιλάδελφος και Πολύκαρπος" Id="773" Type=""/>
-<SAINT Name="Όσιος Μακάριος Επίσκοπος Πάφου" Id="772" Type=""/>
-<SAINT Name="Άγιος Περγέτος" Id="771" Type=""/>
-<SAINT Name="Άγιος Σάββας Αρχιεπίσκοπος Σερβίας" Id="782" Type=""/>
-<SAINT Name="Άγιος Αγαθάγγελος Επίσκοπος Δαμασκού" Id="2052" Type=""/>
+<SAINT SId="781" CId="781"/>
+<SAINT SId="780" CId="780"/>
+<SAINT SId="777" CId="777"/>
+<SAINT SId="775" CId="775"/>
+<SAINT SId="773" CId="773"/>
+<SAINT SId="772" CId="772"/>
+<SAINT SId="771" CId="771"/>
+<SAINT SId="782" CId="782"/>
+<SAINT SId="2052" CId="2052"/>
 </DAY>

@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Αγία Ιουλιανή"/>
+
+<NAME Nominative="Αγία Ιουλιανή" Short="Αγία Ιουλιανή"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Η Αγία Ιουλιανή μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ Η Αγία Ιουλιανή μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Νέων"/>
+
+<NAME Nominative="Άγιος Νέων" Short="Άγιος Νέων"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-O Άγιος Νέων μαρτύρησε δια ξίφους.
-</LIFE>
-</SAINT>
+ O Άγιος Νέων μαρτύρησε δια ξίφους.
+</LIFE></SAINT>

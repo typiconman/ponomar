@@ -1,14 +1,14 @@
 <DAY>
-<SAINT Name="Προφήτης Αμώς" Id="2754" Type=""/>
-<SAINT Name="Όσιος Ιερώνυμος" Id="2760" Type=""/>
-<SAINT Name="Άγιος Αυγουστίνος" Id="2761" Type=""/>
-<SAINT Name="Άγιοι Φουρτουνάτος, Αχαϊκός και Στεφανάς οι Απόστολοι" Id="2756" Type=""/>
-<SAINT Name="Άγιος Δουλάς" Id="2755" Type=""/>
-<SAINT Name="Όσιος Ορτίσιος" Id="2759" Type=""/>
-<SAINT Name="Αγία Γραύς" Id="2762" Type=""/>
-<SAINT Name="Άγιος Νέρσης" Id="2763" Type=""/>
-<SAINT Name="Άγιος Ιωνάς της Μονής Πεσόνσα" Id="2765" Type=""/>
-<SAINT Name="Σύναξη της Υπεραγίας Θεοτόκου πέραν εν τοις Μαρανακίου" Id="2764" Type=""/>
-<SAINT Name="Όσιος Κύριλλος ο Θαυματουργός" Id="2119" Type=""/>
-<SAINT Name="Όσιος Ιωνάς Μητροπολίτης πασών των Ρωσιών" Id="3905" Type=""/>
+<SAINT SId="2754" CId="2754"/>
+<SAINT SId="2760" CId="2760"/>
+<SAINT SId="2761" CId="2761"/>
+<SAINT SId="2756" CId="2756"/>
+<SAINT SId="2755" CId="2755"/>
+<SAINT SId="2759" CId="2759"/>
+<SAINT SId="2762" CId="2762"/>
+<SAINT SId="2763" CId="2763"/>
+<SAINT SId="2765" CId="2765"/>
+<SAINT SId="2764" CId="2764"/>
+<SAINT SId="2119" CId="2119"/>
+<SAINT SId="3905" CId="3905"/>
 </DAY>

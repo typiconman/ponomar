@@ -1,6 +1,6 @@
 <SAINT>
-<NAME Nominative="Άγιος Πομπήιος"/>
+
+<NAME Nominative="Άγιος Πομπήιος" Short="Άγιος Πομπήιος"/>
 <LIFE Id="saintgr" Copyright="saint.gr">
-Ο Άγιος Μάρτυς Πομπήιος τελειώθηκε διά ξίφους.
-</LIFE>
-</SAINT>
+ Ο Άγιος Μάρτυς Πομπήιος τελειώθηκε διά ξίφους.
+</LIFE></SAINT>

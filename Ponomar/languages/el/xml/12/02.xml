@@ -1,13 +1,13 @@
 <DAY>
-<SAINT Name="Προφήτης Αββακούμ" Id="4691" Type=""/>
-<SAINT Name="Αγία Μυρώπη" Id="4697" Type=""/>
-<SAINT Name="Άγιοι Ιωάννης, Ηρακλείμων, Ανδρέας και Θεόφιλος οι Ερημίτες" Id="4692" Type=""/>
-<SAINT Name="Άγιος Σολομών Αρχιεπίσκοπος Εφέσου" Id="4696" Type=""/>
-<SAINT Name="Άγιος Άβιβος ο νέος" Id="4698" Type=""/>
-<SAINT Name="Άγιος Μωυσής ο Ομολογητής" Id="4699" Type=""/>
-<SAINT Name="Όσιος Κύριλλος ο Φιλεώτης" Id="4700" Type=""/>
-<SAINT Name="Όσιος Αθανάσιος ο Έγκλειστος «ἐν τῷ Σπηλαίῳ»" Id="3827" Type=""/>
-<SAINT Name="Όσιος Αββακούμ ο ασκητής" Id="4702" Type=""/>
-<SAINT Name="Όσιος Ισίδωρος" Id="4701" Type=""/>
-<SAINT Name="Όσιος Ιωαννίκιος ο εν Σερβία" Id="484" Type=""/>
+<SAINT SId="4691" CId="4691"/>
+<SAINT SId="4697" CId="4697"/>
+<SAINT SId="4692" CId="4692"/>
+<SAINT SId="4696" CId="4696"/>
+<SAINT SId="4698" CId="4698"/>
+<SAINT SId="4699" CId="4699"/>
+<SAINT SId="4700" CId="4700"/>
+<SAINT SId="3827" CId="3827"/>
+<SAINT SId="4702" CId="4702"/>
+<SAINT SId="4701" CId="4701"/>
+<SAINT SId="484" CId="484"/>
 </DAY>

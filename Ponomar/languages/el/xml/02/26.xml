@@ -1,21 +1,21 @@
 <DAY>
-<SAINT Name="Β' Χαιρετισμοί" Id="265" Type=""/>
-<SAINT Name="Όσιος Πορφύριος επίσκοπος Γάζης" Id="5370" Type=""/>
-<SAINT Name="Αγία Φωτεινή η Μεγαλομάρτυς η Σαμαρείτιδα" Id="5369" Type=""/>
-<SAINT Name="Αγία Ανατολή" Id="5362" Type=""/>
-<SAINT Name="Αγία Φωτώ" Id="5363" Type=""/>
-<SAINT Name="Αγία Φωτίς" Id="5364" Type=""/>
-<SAINT Name="Αγία Παρασκευή" Id="5365" Type=""/>
-<SAINT Name="Αγία Κυριακή" Id="5366" Type=""/>
-<SAINT Name="Άγιος Φωτεινός" Id="5357" Type=""/>
-<SAINT Name="Άγιος Ιωσής" Id="5358" Type=""/>
-<SAINT Name="Άγιος Σεβαστιανός ο δούκας" Id="5359" Type=""/>
-<SAINT Name="Άγιος Βίκτωρ" Id="5360" Type=""/>
-<SAINT Name="Άγιος Χριστόδουλος" Id="5361" Type=""/>
-<SAINT Name="Άγιος Ιωάννης ο Κάλφας ο Νεομάρτυρας" Id="5367" Type=""/>
-<SAINT Name="Μνήμη χειροτονίας Αγίου Ιωάννου του Χρυσοστόμου σε πρεσβύτερο" Id="5355" Type=""/>
-<SAINT Name="Άγιος Νικόλαος ο Κατοπινός" Id="5356" Type=""/>
-<SAINT Name="Άγιος Θεόκλητος ο φαρμακός" Id="5368" Type=""/>
-<SAINT Name="Σύναξη Υπεραγίας Θεοτόκου του Μεζχέτσκ εν Κιέβω Ρωσίας" Id="5373" Type=""/>
-<SAINT Name="Όσιος Σεβαστιανός του Ποσεσόνε" Id="5372" Type=""/>
+<SAINT SId="265" CId="265"/>
+<SAINT SId="5370" CId="5370"/>
+<SAINT SId="5369" CId="5369"/>
+<SAINT SId="5362" CId="5362"/>
+<SAINT SId="5363" CId="5363"/>
+<SAINT SId="5364" CId="5364"/>
+<SAINT SId="5365" CId="5365"/>
+<SAINT SId="5366" CId="5366"/>
+<SAINT SId="5357" CId="5357"/>
+<SAINT SId="5358" CId="5358"/>
+<SAINT SId="5359" CId="5359"/>
+<SAINT SId="5360" CId="5360"/>
+<SAINT SId="5361" CId="5361"/>
+<SAINT SId="5367" CId="5367"/>
+<SAINT SId="5355" CId="5355"/>
+<SAINT SId="5356" CId="5356"/>
+<SAINT SId="5368" CId="5368"/>
+<SAINT SId="5373" CId="5373"/>
+<SAINT SId="5372" CId="5372"/>
 </DAY>

@@ -1,9 +1,9 @@
 <DAY>
-<SAINT Name="Αγία Ευφημία" Id="3556" Type=""/>
-<SAINT Name="Αγία Μελιτίνη" Id="3557" Type=""/>
-<SAINT Name="Αγία Λουντμίλα" Id="3558" Type=""/>
-<SAINT Name="Όσιος Δωρόθεος ο εν Αιγύπτω Ερημίτης" Id="3559" Type=""/>
-<SAINT Name="Όσιος Κυπριανός Μητροπολίτης Κιέβου" Id="3560" Type=""/>
-<SAINT Name="Άγιος Ninian" Id="3561" Type=""/>
-<SAINT Name="Αγία Edithac" Id="3562" Type=""/>
+<SAINT SId="3556" CId="3556"/>
+<SAINT SId="3557" CId="3557"/>
+<SAINT SId="3558" CId="3558"/>
+<SAINT SId="3559" CId="3559"/>
+<SAINT SId="3560" CId="3560"/>
+<SAINT SId="3561" CId="3561"/>
+<SAINT SId="3562" CId="3562"/>
 </DAY>
