@@ -1,12 +1,13 @@
 <DAY>
-<SAINT SId="33" CId="33"/>
-<SAINT SId="30" CId="30"/>
-<SAINT SId="32" CId="32"/>
-<SAINT SId="31" CId="31"/>
-<SAINT SId="1841" CId="1841"/>
-<SAINT SId="1840" CId="1840"/>
-<SAINT SId="1839" CId="1839"/>
-<SAINT SId="1838" CId="1838"/>
-<SAINT SId="5960" CId="5960"/>
-<SAINT SId="1837" CId="1837"/>
+<SAINT SId="33" CId="33" Cmd="!(nday == -17 || nday == -15 || nday == -25)"/>
+<SAINT SId="60001" CId="60001"/>
+<SAINT SId="601" CId="601"/>
+<SAINT SId="03090395" CId="03090395"/>
+<SAINT SId="03090495" CId="03090495"/>
+<SAINT SId="03090595" CId="03090595"/>
+<SAINT SId="03090695" CId="03090695"/>
+<SAINT SId="03090795" CId="03090795"/>
+<SAINT SId="03090895" CId="03090895"/>
+<SAINT SId="602" CId="602"/>
+<SAINT SId="123801" CId="123801" Cmd="nday == -17 || nday == -15 || nday == -25"/>
 </DAY>

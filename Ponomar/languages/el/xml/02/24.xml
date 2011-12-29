@@ -1,7 +1,9 @@
 <DAY>
-<SAINT SId="3684" CId="3684"/>
-<SAINT SId="3685" CId="3685"/>
-<SAINT SId="3686" CId="3686"/>
-<SAINT SId="3687" CId="3687"/>
-<SAINT SId="3688" CId="3688"/>
+<SAINT SId="3684" CId="3684" Cmd="!(nday == -57 || nday == -53 || nday == -51 || nday == -48 || nday == -47 || nday == -46 || nday == -45 || nday == -44)"/>
+<SAINT SId="03100195" CId="03100195" Cmd="nday == -46"/>
+<SAINT SId="02240295" CId="02240295"/>
+<SAINT SId="02240395" CId="02240395"/>
+<SAINT SId="506" CId="506"/>
+<SAINT SId="02240595" CId="02240595"/>
+<SAINT SId="0910701" CId="0910701" Cmd="(nday == -57 || nday == -53 || nday == -51 || nday == -48 || nday == -47 || nday == -46 || nday == -45 || nday == -44)"/>
 </DAY>
