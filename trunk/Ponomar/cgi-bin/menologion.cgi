@@ -38,7 +38,7 @@ BEGIN {
 use constant false => 0;
 use constant CREATION_OF_THE_WORLD => 5508;
 my @typicon  = ("", "✺", "<FONT Face=\"Hirmos Ponomar\">🕃</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕃</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕂</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕁</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕀</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕀</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕀</FONT>");
-my @tones    = ("VIII", "I", "II", "III", "IV", "V", "VI", "VII");
+my @toneNumbers = ();
 my %matinsGospels = (
 	"Mt_28:16-20" => 1,
 	"Mk_16:1-8" => 2,
@@ -415,6 +415,22 @@ if ( $day =~ /^([$validchars]+)$/ ) {
 	die "This is not a valid Day. Execution stopped ";
 }
 
+### LOAD LANGUAGE DATA
+%language_data = General->loadLanguage($language);
+%scriptTypes = (
+	"1st hour" => $language_data{84},
+	"3rd hour" => $language_data{85},
+	"6th hour" => $language_data{86},
+	"9th hour" => $language_data{87},
+	"vespers"  => $language_data{88},
+	"compline" => $language_data{89},
+	"nocturns" => $language_data{90},
+	"matins"   => $language_data{91},
+	"liturgy"  => $language_data{92},
+	);
+@toneNumbers = map $language_data{$_}, (76..83); 
+unshift @toneNumbers, ""; 
+
 #### CREATE THE GLOBAL CLASSES
 my $today      = JDate->new($month, $day, $year);
 my $thispascha = getPascha($year);
@@ -534,18 +550,6 @@ my @tomorrowvals  = ($tomorrow->getMonth(), $tomorrow->getDay(), $tomorrow->getY
 
 ################################ CONSTRUCT THE OUTPUT #######################################
 print "Content-type: text/html; charset=utf-8\n\n";
-%language_data = General->loadLanguage($language);
-%scriptTypes = (
-	"1st hour" => $language_data{84},
-	"3rd hour" => $language_data{85},
-	"6th hour" => $language_data{86},
-	"9th hour" => $language_data{87},
-	"vespers"  => $language_data{88},
-	"compline" => $language_data{89},
-	"nocturns" => $language_data{90},
-	"matins"   => $language_data{91},
-	"liturgy"  => $language_data{92},
-	);
 
 General->write_top($month, $day, $year);
 
@@ -567,7 +571,7 @@ foreach (keys %SAINTS) {
 	# Get the dRank of the observance
 	print $typicon[$SAINTS{$_}{Type}] . " " if ($SAINTS{$_}{Type});
 	print qq(<B>) . $SAINTS{$_}{NAME}{Nominative} . "</B>";
-	print " Tone " . $tones[$SAINTS{$_}{Tone}] if ($SAINTS{$_}{Tone});
+	print " " . $toneNumbers[$SAINTS{$_}{Tone}] if ($SAINTS{$_}{Tone});
 	print "; ";
 }
 
@@ -577,16 +581,19 @@ foreach (keys %SAINTS) {
 	next unless $SAINTS{$_}{Reason} eq "menaion";
 	
 	print $typicon[$SAINTS{$_}{Type}] . " " if ($SAINTS{$_}{Type});
-	print qq(<A Href="JavaScript:doLives($_);">) . $SAINTS{$_}{NAME}{Nominative} . "</A>";
+	if ($SAINTS{$_}{Type} >= 5) {
+		print qq(<A Href="JavaScript:doLives($_);"><B><FONT Color="red">) .
+			$SAINTS{$_}{NAME}{Nominative} . "</FONT></B></A>";
+	} elsif ($SAINTS{$_}{Type} >= 4) {
+		print qq(<A Href="JavaScript:doLives($_);"><B>) .
+			$SAINTS{$_}{NAME}{Nominative} . "</B></A>";
+	} else {	
+		print qq(<A Href="JavaScript:doLives($_);">) . $SAINTS{$_}{NAME}{Nominative} . "</A>";
+	}
 	print "; ";
 }
 
 ################### BEGIN SCRIPTURE MEGA-SORTING ALGORITHM #####################
-my @order_of_types = ("1st hour", "3rd hour", "6th hour", "9th hour", "vespers", "matins", "liturgy");
-my @order_of_reads = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "menaion"); ## FIXME
-my %sort_order     = map  { $order_of_reads[$_] => $_ } (0..$#order_of_reads);
-my @order_of_srcs  = sort { $sort_order{$SAINTS{$a}{Reason}} <=> $sort_order{$SAINTS{$b}{Reason}} || $SAINTS{$b}{Type} <=> $SAINTS{$a}{Type}} keys %SAINTS;
-
 print "<BR><BR><DIV Class=\"header\" Align=\"center\">$language_data{29}</DIV><BR>\n";
 
 ## IMPLEMENT SUPRESSION AND MOVEMENT OF READINGS
@@ -611,10 +618,10 @@ foreach ( keys %COMMANDS ) {
 	## ALSO, NOTE THAT WE MAY HAVE MULTIPLE-SOURCE RANKED COMMEMORATIONS ON A GIVEN DAY
 	## E.G., ASCENSION + STS CYRIL AND METHODIUS, OR MID-PENTECOST + ST JOHN
 	## BUT IN THESE CASES, WE DO **NOT** SUPPRESS THE ``DAILY'' READINGS
-	foreach my $src (@order_of_srcs) {
-		next unless $READINGS{$src}{liturgy};
-		next unless $SAINTS{$src}{Reason} eq "pentecostarion";
-		delete $READINGS{$src}{liturgy} unless ($SAINTS{$src}{Type} >= 1);
+	foreach my $source (keys %READINGS) {
+		next unless $READINGS{$source}{liturgy};
+		next unless $SAINTS{$source}{Reason} eq "pentecostarion";
+		delete $READINGS{$source}{liturgy} unless ($SAINTS{$source}{Type} >= 1);
 		#if ($COMMANDS{$_}{Name} eq "Suppress") {
 		#	delete $READINGS{$src}{matins}  unless ($SAINTS{$src}{Type} >= 1);
 		#}
@@ -622,6 +629,110 @@ foreach ( keys %COMMANDS ) {
 }
 
 # 3. TODO: CHECK TOMORROW AND YESTERDAY FOR TRANSFERS
+### 3.1: TOMORROW
+### 3.1.1: Set the Globals to TOmorrow's values
+$dow = $tomorrow->getDayOfWeek();
+$doy = $tomorrow->getDoy();
+$nday  = JDate->difference($tomorrow, $thispascha);
+$ndayP = JDate->difference($tomorrow, $lastpascha);
+$ndayF = JDate->difference($tomorrow, $nextpascha);
+$Year  = $tomorrow->getYear();
+
+### 3.1.2: Figure out where we are in the Pentecostarion / Triodion cycle
+if ($nday >= -70 && $nday < 0) {
+	$directory = "triodion";
+	$filename  = abs($nday);
+} elsif ($nday < -70) {
+	$directory = "pentecostarion";
+	$filename  = $ndayP + 1;
+} else {
+	$directory = "pentecostarion";
+	$filename  = $nday + 1;
+}
+
+$filepath = "xml/" . $directory . "/" . ($filename >= 10 ? $filename . ".xml" : "0" . $filename . ".xml");
+
+### 3.1.3: Set the SOURCE. Pentecostarion2 means we are only interested in readings for tomorrow
+$src = "pentecostarion2";
+
+### 3.1.4: Parse tomorrow's Pentecostarion DATA
+## THIS ADDS DATA TO SAINTS WITH THE "Reason" LABEL SET TO pentecostarion2
+push @DEBUG, findBottomUp($language, $filepath);
+$PARSER->parsefile( findBottomUp($language, $filepath) );
+
+### 3.1.5: NOW PARSE EACH COMMEMORATION FILE FILE OF pentecostarion2 TO OBTAIN DAILY READINGS
+### FIXME: THIS PROCESS COULD BE SIMPLIFIED BY PARSING ONLY A KNOWN SUBSET OF FILES
+$src = "";
+#die join (",", map { $_ => $SAINTS{$_}{Reason} } keys %SAINTS);
+	
+foreach my $local (keys %SAINTS) {
+	next unless $SAINTS{$local}{Reason} eq "pentecostarion2";
+
+	$src = $local;
+	foreach my $file (findTopDown($language, "xml/lives/$local.xml")) {
+		push @DEBUG, $file;
+		$PARSER->parsefile( $file);
+	}
+}
+
+### 3.1.6: Parse tomorrow's Menaion DATA
+$filepath = "xml/";
+$filepath .= $tomorrow->getMonth() < 10 ? "0" . $tomorrow->getMonth() : $tomorrow->getMonth();
+$filepath .= $tomorrow->getDay() < 10 ? "/0" . $tomorrow->getDay() : "/" . $tomorrow->getDay();
+$filepath .= ".xml";
+
+$src = "menaion2";
+push @DEBUG, findBottomUp($language, $filepath);
+$PARSER->parsefile( findBottomUp($language, $filepath) );
+
+### 3.1.7: Again, parse each commemoration file. Here, we actually only need the dRank
+### XXX: IN THE FUTURE, WE SHOULD ALLOW FOR DIFFERENT SERVICE ALTERNATIVES
+$src = "";
+foreach my $CId (keys %SAINTS) {
+	next unless $SAINTS{$CId}{Reason} eq "menaion2";
+	$src = $CId;
+	foreach my $file (findTopDown($language, "xml/lives/$CId.xml")) {
+		push @DEBUG, $file;
+		$PARSER->parsefile( $file);
+	}
+}
+
+### 3.1.8: Compute tomorrow's dRank
+$dRank = 5; #max ( map { $SAINTS{$_}{Type} } grep { $SAINTS{$_}{Reason} eq "menaion2" } keys %SAINTS );
+
+### 3.1.9: CHECK IF WE HAVE A TransferRulesB COMMAND
+my $KEEP_FLAG = false;
+foreach (keys %COMMANDS) {
+	if ($COMMANDS{$_}{Name} eq "TransferRulesB") {
+		my $cmd = $COMMANDS{$_}{Value};
+		foreach (@GLOBALS) {
+			$cmd =~ s/$_/\$$_/g;
+		}
+		if (eval $cmd) {
+			$KEEP_FLAG = !false;
+		}
+	}
+}
+
+### 3.1.10: DELETE TOMORROW'S READINGS, KEEPING IF THE TRANSFERRULESB COMMAND WAS TRUE
+foreach my $src (keys %READINGS) {
+	delete $READINGS{$src} if ($SAINTS{$src}{Reason} eq "menaion2");
+	delete $READINGS{$src} if ($SAINTS{$src}{Reason} eq "pentecostarion2" && !$KEEP_FLAG);
+}	
+
+# 3.3: SET EVERYTHING BACK
+$dow = $today->getDayOfWeek();
+$doy = $today->getDoy();
+$nday  = JDate->difference($today, $thispascha);
+$ndayP = JDate->difference($today, $lastpascha);
+$ndayF = JDate->difference($today, $nextpascha);
+$Year  = $today->getYear();
+
+## SET US UP THE BOMB
+my @order_of_types = ("1st hour", "3rd hour", "6th hour", "9th hour", "vespers", "matins", "liturgy");
+my @order_of_reads = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "menaion"); ## FIXME
+my %sort_order     = map  { $order_of_reads[$_] => $_ } (0..$#order_of_reads);
+my @order_of_srcs  = sort { $sort_order{$SAINTS{$a}{Reason}} <=> $sort_order{$SAINTS{$b}{Reason}} || $SAINTS{$b}{Type} <=> $SAINTS{$a}{Type}} keys %SAINTS;
 
 # 4. OUTPUT THE REMAINING READINGS	
 foreach my $type (@order_of_types) {
