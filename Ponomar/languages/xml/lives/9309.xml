@@ -1,15 +1,16 @@
 <SAINT>
+<!-- THIS IS THE 37TH SUNDAY AFTER PENTECOST -->
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <MATINS>
 <SCRIPTURE Type="matins" Reading="Lk_24:1-12" Pericope="112"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)" EffWeek="32"/>
+<!-- READINGS FOR ZACCHAEUS SUNDAY IF THIS DAY FALLS BETWEEN JANUARY 24 AND FEBURARY 8 -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 1 &amp;&amp; (doy &gt;= 23 &amp;&amp; doy &lt;= 38)" EffWeek="32"/>
+<!-- NOT USING THE LUCAN JUMP -->
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="GS == 0" EffWeek="32"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

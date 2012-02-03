@@ -1,18 +1,28 @@
 <SAINT>
+<!-- THIS IS THE 33RD SUNDAY AFTER PENTECOST -->
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <MATINS>
 <SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dRank != 6"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)" Cmd="nday == -77"/>
+<!-- CASE ONE: THERE ARE NO MORE WEEKS REMAINING AND WE ARE BETWEEN JANUARY 7 AND JANUARY 28 -->
+<!-- THE READINGS FOR THE 32ND SUNDAY ARE READ -->
+<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)" EffWeek="32" Cmd="GS == 1 &amp;&amp; (nday == -77 &amp;&amp; doy &gt;= 6 &amp;&amp; doy &lt;= 27)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" EffWeek="32" Cmd="GS == 1 &amp;&amp; (nday == -77 &amp;&amp; doy &gt;= 6 &amp;&amp; doy &lt;= 27)"/>
+
+<!-- CASE TWO: WE ARE NOT USING THE LUCAN JUMP. KEEPING YURI'S OLD RULES -->
+<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)" Cmd="GS == 0 &amp;&amp; nday == -77"/>
+<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0"/>
+
+<!-- YURI'S OLD RULES ARE KEPT HERE FOR NOW:
 <SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="((doy &gt;= 362 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 3)) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &gt;= 355 &amp;&amp; doy &lt;= 361) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy &gt;= 25 &amp;&amp; doy &lt;= 31 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy &gt;= 18 &amp;&amp; doy &lt;= 24 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy &gt;= 11 &amp;&amp; doy &lt;= 17 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(doy &gt;= 4 &amp;&amp; doy &lt;= 10 &amp;&amp; nday == -77) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0"/>
+-->
 </LITURGY>
 </SERVICE>
 </SAINT>
