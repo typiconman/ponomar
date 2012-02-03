@@ -1,18 +1,40 @@
 <SAINT>
+<!-- THIS IS THE 30TH SUNDAY AFTER PENTCOST -->
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <MATINS>
 <SCRIPTURE Type="matins" Reading="Jn_20:11-18" Pericope="64" Cmd="dRank != 6"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258"/>
+<!-- CASE ONE: THERE ARE TWO MORE WEEKS AND IT IS DECEMBER 30 -->
+<!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -91 &amp;&amp; doy == 363)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -91 &amp;&amp; doy == 363)"/>
+
+<!-- CASE TWO: THERE ARE TWO MORE WEEKS AND IT IS DECEMBER 26, 27 OR 28 -->
+<!-- THE READINGS FOR THE 30TH WEEK ARE READ -->
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (ndayF == -91 &amp;&amp; (doy == 359 || doy == 360 || doy == 361))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (ndayF == -91 &amp;&amp; (doy == 359 || doy == 360 || doy == 361))"/>
+
+<!-- CASE THREE: THERE ARE TWO MORE WEEKS AND IT IS JANUARY 1, 2, 3, 4, 8 OR 9 -->
+<!-- THE READINGS FOR THE 30TH WEEK ARE READ -->
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; (doy &gt;= 0 &amp;&amp; doy &lt;= 3 || doy &gt;= 7 &amp;&amp; doy &lt;= 8))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; (doy &gt;= 0 &amp;&amp; doy &lt;= 3 || doy &gt;= 7 &amp;&amp; doy &lt;= 8))"/>
+
+<!-- CASE FOUR: WE ARE IN THE PERIOD DECEMBER 3 TO DECEMBER 9 -->
+<!-- THE READINGS FOR THE 29TH WEEK ARE READ -->
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 340) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" EffWeek="29" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 340) &amp;&amp; GS == 1"/>
+
+<!-- CASE FIVE: WE ARE NOT USING THE LUCAN JUMP; KEEPING YURI'S RULES -->
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="GS == 0"/>
+
+<!-- DEBUG: KEEPING YURI'S READINGS FOR NOW:
 <SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="((doy &gt;= 362 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 3)) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &gt;= 355 &amp;&amp; doy &lt;= 361) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 340) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 340) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="GS == 0"/>
+-->
 </LITURGY>
 </SERVICE>
 </SAINT>
