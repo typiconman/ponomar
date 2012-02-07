@@ -349,10 +349,11 @@ sub endElement {
 }
 
 sub formatScriptureReading {
-	my ($reading, $pericope) = @_;
+	my ($reading, $pericope, $effWeek) = @_;
 	
 	my ($book, $verses) = split(/_/, $reading);
 	my $MG = exists $matinsGospels{$reading} && $dow == 0 ? " " . $language_data{133 + $matinsGospels{$reading}} : "";
+	$MG .= " for Sunday $effWeek" if (defined $effWeek);
 	return defined $pericope ? qq(<A Href="JavaScript:doReadings('$book', '$verses');">$bibleBookNames{$book} $verses (§ $pericope)</A>$MG) : qq(<A Href="JavaScript:doReadings('$book', '$verses');">$bibleBookNames{$book} $verses</A>$MG);
 }
 
@@ -740,7 +741,7 @@ foreach my $type (@order_of_types) {
 	print "<B>" . $scriptTypes{$type} . "</B>: ";
 	foreach my $source (@order_of_srcs) {
 		next unless $READINGS{$source}{$type};
-		print join ("; ", map { formatScriptureReading( $READINGS{$source}{$type}{$_}{Reading}, $READINGS{$source}{$type}{$_}{Pericope} ) } sort { $a cmp $b } keys %{ $READINGS{$source}{$type} });
+		print join ("; ", map { formatScriptureReading( $READINGS{$source}{$type}{$_}{Reading}, $READINGS{$source}{$type}{$_}{Pericope}, $READINGS{$source}{$type}{$_}{EffWeek} ) } sort { $a cmp $b } keys %{ $READINGS{$source}{$type} });
 		print " (" . ($SAINTS{$source}{NAME}{Genetive} or $SAINTS{$source}{NAME}{Short}) . "); ";
 	}
 	print "<BR>\n";

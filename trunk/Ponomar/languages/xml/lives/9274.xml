@@ -23,8 +23,8 @@
 
 <!-- CASE FOUR: THERE IS ONE MORE WEEK OF READINGS AND IT IS BETWEEN JANUARY 1 AND JANUARY 20, EXCEPT JANUARY 6 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy &gt;= 0 &amp;&amp; doy != 5 doy &lt;= 15)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy &gt;= 0 &amp;&amp; doy != 5 doy &lt;= 15)"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy &gt;= 0 &amp;&amp; doy != 5 &amp;&amp; doy &lt;= 19)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy &gt;= 0 &amp;&amp; doy != 5 &amp;&amp; doy &lt;= 19)"/>
 
 <!-- CASE FIVE: THERE IS ONE MORE WEEK OF READINGS AND IT IS DECEMBER 31 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
