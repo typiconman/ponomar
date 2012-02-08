@@ -9,8 +9,8 @@
 <!-- EPISTLE READING IS ALWAYS FOR THE 28TH WEEK, except during SBN or SAN -->
 <SCRIPTURE Type="apostol" Reading="Col_1:12-18" Pericope="250" EffWeek="28" Cmd="GS == 1 &amp;&amp; doy &lt; 344"/>
 
-<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" EffWeek="26" Cmd="GS == 1 &amp;&amp; (doy &lt;= 329 &amp;&amp; doy &gt;= 320)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" EffWeek="27" Cmd="GS == 1 &amp;&amp; (doy &lt;= 333 &amp;&amp; doy &gt;= 330)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" EffWeek="26" Cmd="GS == 1 &amp;&amp; (doy &lt;= 327 &amp;&amp; doy &gt;= 320)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" EffWeek="27" Cmd="GS == 1 &amp;&amp; (doy &lt;= 333 &amp;&amp; doy &gt;= 328)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" EffWeek="29" Cmd="(doy &lt;= 343 &amp;&amp; doy &gt;= 337) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="(doy &lt;= 336 &amp;&amp; doy &gt;= 334) &amp;&amp; GS == 1"/>
 

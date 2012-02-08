@@ -23,8 +23,8 @@
 
 <!-- CASE FOUR: WE ARE IN THE PERIOD DECEMBER 3 TO DECEMBER 9 -->
 <!-- THE READINGS FOR THE 29TH WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 340) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" EffWeek="29" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 340) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 343) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" EffWeek="29" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 343) &amp;&amp; GS == 1"/>
 
 <!-- CASE FIVE: WE ARE NOT USING THE LUCAN JUMP; KEEPING YURI'S RULES -->
 <SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" Cmd="GS == 0"/>

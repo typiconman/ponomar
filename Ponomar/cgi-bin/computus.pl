@@ -44,6 +44,14 @@ sub text {
 	return;
 }
 
+sub formatReadings {
+	my ($effWeek, $NDAY, $short) = @_;
+
+	return defined $effWeek ? $effWeek : 
+		(length($short) > 1 && index($short, "Pentecost") == -1) ? join '' , map {(split //,$_)[0]} split /\s/, $short :
+		($NDAY - 49) / 7;
+}
+
 sub startElement {
 	my( $parseinst, $element, %attrs ) = @_;
 	
@@ -69,6 +77,14 @@ sub startElement {
 		if ($element eq "NAME") {
 			# src is a CID or SID
 			# PUSH ALL INFORMATION INTO THIS HASH
+			die "Invalid identifier $src " unless exists $SAINTS{$src};
+			delete $attrs{Cmd};
+			## THIS WILL DO THE FOLLOWING:
+			## SUPPOSE WE HAVE THE TAG NAME WITH ATTRS Nominative, Short
+			## WE NOW SET $SAINTS{$src}{NAME}{Nominative}, etc.
+			## WHEN (if) WE REREAD THIS FILE IN A DIFFERENT LANG, THESE ATTRS
+			## WILL BE AUTOMATICALLY OVERWRITTEN AS NEEDED
+			@{ $SAINTS{$src}{$element}}{keys %attrs} = values %attrs;
 			last SWITCH;
 		}
 		if ($element eq "SCRIPTURE") {
@@ -220,17 +236,18 @@ print OUTFILE join("\t", 1..37);
 print OUTFILE "\n";
 
 for (my $year = $start; $year <= $end; $year++) {
-	my $pascha = getPascha($year);
-	
-	my $lastpascha = getPascha($year - 1);
-	my $nextpascha = getPascha($year + 1);
-	
+	my $FOUNDATION = getPascha($year);	
 	print OUTFILE $year . "\t";
-	print OUTFILE $pascha->toString() . "\t";
+	print OUTFILE $FOUNDATION->toString() . "\t";
 	
 	for (my $i = 56; $i < 315; $i += 7) {
-		my $today = $pascha->addDays($i);
-
+		my $today = $FOUNDATION->addDays($i);
+				
+		my $pascha = getPascha($today->getYear());
+	
+		my $lastpascha = getPascha($today->getYear() - 1);
+		my $nextpascha = getPascha($today->getYear() + 1);
+		my $printed = 0;
 		untie %SAINTS;
 		foreach (keys %SAINTS) {
 			delete $SAINTS{$_};
@@ -251,14 +268,15 @@ for (my $year = $start; $year <= $end; $year++) {
 		$dow = $today->getDayOfWeek();
 		die "Fatal error; will not implode" unless $dow == 0;
 		
-		$doy = $today->getDoy();
-		$nday = JDate->difference($today, $pascha);
+		$doy   = $today->getDoy();
+		$nday  = JDate->difference($today, $pascha);
 		$ndayP = JDate->difference($today, $lastpascha);
 		$ndayF = JDate->difference($today, $nextpascha);
 		$Year  = $today->getYear();
+
 		
-		my $directory;
-		my $filename;
+		my $directory = "";
+		my $filename = "";
 		if ($nday >= -70 && $nday < 0) {
 			$directory = "triodion";
 			$filename  = abs($nday);
@@ -287,51 +305,38 @@ for (my $year = $start; $year <= $end; $year++) {
 			}
 		}
 
-#		## IMPLEMENT SUPRESSION AND MOVEMENT OF READINGS
-#		# 1. LOAD SUPPRESSION INSTRUCTIONS INTO A HASH
-#		foreach ( findTopDown($language, "xml/Commands/DivineLiturgy.xml") ) {
-#			$PARSER->parsefile( $_ );
-#		}
-#		# 2. DECIDE IF TODAY'S READINGS ARE SUPPRESSED
-#		foreach ( keys %COMMANDS ) {
-#			## RECALL THAT IN PERL, VARS MUST START WITH $
-#			my $cmd = $COMMANDS{$_}{Value};
-#			foreach (@GLOBALS) {
-#				$cmd =~ s/$_/\$$_/g;
-#			}
-#			next unless eval $cmd;
-#			## IF WE GOT HERE, THEN THE READING IS TO BE SUPPRESSED
-#			## REMEMBER, THE SUPPRESSION REFERS ONLY TO PENTECOSTARION READINGS
-#			## AND MAY BE CAUSED BY THE PRESENCE OF A MENAION-BASED COMMEMORATION
-#			## XXX: FOR EXAMPLE, THE dRank OF ASCENSION IS 7, BUT THE READING IS NOT SUPPRESSED
-#			## WE HANDLE THIS BY ENSURING THAT THE SOURCE OF THE READING IS AN UNRANKED COMMEMORATION
-#			## ALSO, NOTE THAT WE MAY HAVE MULTIPLE-SOURCE RANKED COMMEMORATIONS ON A GIVEN DAY
-#			## E.G., ASCENSION + STS CYRIL AND METHODIUS, OR MID-PENTECOST + ST JOHN
-#			## BUT IN THESE CASES, WE DO **NOT** SUPPRESS THE ``DAILY'' READINGS
-#			foreach my $source (keys %READINGS) {
-#				next unless $READINGS{$source}{liturgy};
-#				next unless $SAINTS{$source}{Reason} eq "pentecostarion";
-#				delete $READINGS{$source}{liturgy} unless ($SAINTS{$source}{Type} >= 1);
-#			}
-#		}
+		## SET US UP THE BOMB
+		my @order_of_types = ("liturgy");
+		my @order_of_reads = ("pentecostarion"); ## FIXME
+		my %sort_order     = map  { $order_of_reads[$_] => $_ } (0..$#order_of_reads);
+		my @order_of_srcs  = sort { $sort_order{$SAINTS{$a}{Reason}} <=> $sort_order{$SAINTS{$b}{Reason}} || $SAINTS{$b}{Type} <=> $SAINTS{$a}{Type}} keys %SAINTS;
 
-		## GET THE EFFWEEK PARAMETER OF THE GOSPEL READING (IF ANY)
-		## AND PRINT IT
-		my $type = "liturgy";
-		my $src  = "pentecostarion";
-		foreach my $CID (keys %SAINTS) {
-			#next unless $SAINTS{$CID}{Reason} eq $src;
-			
-			foreach (keys %{ $READINGS{$CID}{$type} }) {
-				next unless $_ eq "gospel";
-				print OUTFILE $READINGS{$CID}{$type}{$_}{EffWeek};
-			#	print OUTFILE $today->toString();
-			#	print OUTFILE $doy;
+		# 4. OUTPUT THE REMAINING READINGS	
+		foreach my $type (@order_of_types) {
+			next unless grep { exists $READINGS{$_}{$type} } @order_of_srcs;
+
+			foreach my $source (@order_of_srcs) {
+				next unless $READINGS{$source}{$type};
+				
+				print OUTFILE join ("/", 
+					map { 
+					formatReadings($READINGS{$source}{$type}{$_}{EffWeek}, $nday, ($SAINTS{$source}{NAME}{Genetive} or $SAINTS{$source}{NAME}{Short}))
+					} 
+					sort { $a cmp $b }
+					keys %{ $READINGS{$source}{$type} }
+					);
+				$printed = 1;
 			}
 		}
+		unless ($printed) {
+			print OUTFILE "THEO" if ($doy == 5);
+			print OUTFILE "NAT"  if ($doy == 358);
+		}
+
 		print OUTFILE "\t";
 		
 	}
+
 	print OUTFILE "\n";
 }
 
