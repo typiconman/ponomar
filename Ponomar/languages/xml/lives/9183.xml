@@ -12,8 +12,6 @@
 <SCRIPTURE Type="gospel" Reading="Lk_7:11-16" Pericope="30" EffWeek="20" Cmd="(doy &gt;= 278 &amp;&amp; doy &lt;= 284) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_6:31-36" Pericope="26" EffWeek="19" Cmd="(doy &gt;= 271 &amp;&amp; doy &lt;= 277) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Pericope="17" EffWeek="18" Cmd="(doy &gt;= 264 &amp;&amp; doy &lt;= 270) &amp;&amp; GS == 1"/>
-<!-- in the case below, only the reading for SAE is read 
-<SCRIPTURE Type="gospel" Reading="Mt_19:16-26" Pericope="79" EffWeek="17" Cmd="(doy &gt;= 257 &amp;&amp; doy &lt;= 263) &amp;&amp; GS == 1"/>-->
 <SCRIPTURE Type="gospel" Reading="Lk_6:31-36" Pericope="26" Cmd="GS == 0"/>
 </LITURGY>
 </SERVICE>

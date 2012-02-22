@@ -5,13 +5,13 @@
 <SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dRank != 6"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Gal_6:11-18" Pericope="215"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:25-37" Pericope="53" EffWeek="25" Cmd="(doy &gt;= 313 &amp;&amp; doy &lt;= 319) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="apostol" Reading="Gal_6:11-18" Pericope="215" EffWeek="22"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:25-37" Pericope="53" EffWeek="25" Cmd="(doy &gt;= 313 &amp;&amp; doy &lt;= 317) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_8:41-56" Pericope="39" EffWeek="24" Cmd="(doy &gt;= 306 &amp;&amp; doy &lt;= 312) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_8:26-39" Pericope="38" EffWeek="23" Cmd="(doy &gt;= 299 &amp;&amp; doy &lt;= 305) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_16:19-31" Pericope="83" EffWeek="22" Cmd="(doy &gt;= 292 &amp;&amp; doy &lt;= 298) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_8:5-15" Pericope="35" EffWeek="21" Cmd="(doy &gt;= 285 &amp;&amp; doy &lt;= 291) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_7:11-16" Pericope="30" EffWeek="20" Cmd="(doy &gt;= 278 &amp;&amp; doy &lt;= 284) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:11-16" Pericope="30" EffWeek="20" Cmd="(doy &gt;= 283 &amp;&amp; doy &lt;= 284) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_16:19-31" Pericope="83" Cmd="GS == 0"/>
 </LITURGY>
 </SERVICE>
