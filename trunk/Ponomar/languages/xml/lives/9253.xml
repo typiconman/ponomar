@@ -6,25 +6,14 @@
 <SCRIPTURE Type="matins" Reading="Jn_20:1-10" Pericope="63" Cmd="dRank != 6"/>
 </MATINS>
 <LITURGY>
-<!-- FIRST, RULES FOR THE EPISTLE READINGS. KEEPING YURI'S RULES -->
-<SCRIPTURE Type="apostol" Reading="Col_3:4-11" Pericope="257" EffWeek="29" Cmd="doy &lt;= 350 &amp;&amp; doy &gt;= 344"/>
+<!-- DEBUG: REMOVE THIS READING, IT SHOULD COME FROM THE FLOATER:
+<SCRIPTURE Type="apostol" Reading="Col_3:4-11" Pericope="257" EffWeek="29" Cmd="doy &lt;= 350 &amp;&amp; doy &gt;= 344"/>-->
 <SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="doy &lt;= 343 &amp;&amp; doy &gt;= 337"/>
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="doy &lt;= 336 &amp;&amp; doy &gt;= 330"/>
-<!-- REMOVING THIS READING. ONLY READINGS FOR SBT SHOULD BE READ HERE
-<SCRIPTURE Type="apostol" Reading="Eph_5:9-19" Pericope="229" EffWeek="26" Cmd="doy &lt;= 7"/> -->
-
-<!-- REMOVING THIS READING. ONLY READINGS FOR SAN OR SBT SHOULD BE READ HERE
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="((doy &gt;= 362 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 3)) &amp;&amp; GS == 1"/>-->
-<!-- REMOVING THIS READING. ONLY READINGS FOR SBN OR SAN SHOULD BE READ HERE
-<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="(doy &gt;= 355 &amp;&amp; doy &lt;= 361) &amp;&amp; GS == 1"/>-->
-<!-- REMOVING THIS READING. ONLY READINGS FOR SBN OR SSBN SHOULD BE READ HERE
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(doy &gt;= 348 &amp;&amp; doy &lt;= 354) &amp;&amp; GS == 1"/>-->
-<!-- REMOVING THIS READING. ONLY READINGS FOR SSBN SHOULD BE READ HERE
-<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="(doy &gt;= 341 &amp;&amp; doy &lt;= 347) &amp;&amp; GS == 1"/> -->
-
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="doy &lt;= 336 &amp;&amp; doy &gt;= 332"/>
+<!-- LUCAN JUMP READINGS -->
 <SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" EffWeek="29" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 343) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="(doy &gt;= 334 &amp;&amp; doy &lt;= 336) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" EffWeek="27" Cmd="(doy &gt;= 327 &amp;&amp; doy &lt;= 333) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" EffWeek="27" Cmd="(doy &gt;= 332 &amp;&amp; doy &lt;= 333) &amp;&amp; GS == 1"/>
 <!-- IF NOT USING THE LUCAN JUMP: -->
 <SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" Cmd="GS == 0"/>
 </LITURGY>

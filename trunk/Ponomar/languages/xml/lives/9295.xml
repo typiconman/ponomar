@@ -17,10 +17,10 @@
 <SCRIPTURE Type="apostol" Reading="II Cor_6:1-10" Pericope="181" EffWeek="16" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 20)"/>
 <SCRIPTURE Type="gospel" Reading="Mt_25:14-30" Pericope="105" EffWeek="16" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 20)"/>
 
-<!-- CASE THREE: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS BETWEEN JANUARY 15 AND JANUARY 18 -->
+<!-- CASE THREE: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS BETWEEN JANUARY 15 AND JANUARY 18  or JANUARY 10 OR JANUARY 11 -->
 <!-- THE READINGS FOR THE 30TH WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy &gt;= 14 &amp;&amp; doy &lt;= 17)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy &gt;= 14 &amp;&amp; doy &lt;= 17)"/>
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy &gt;= 14 &amp;&amp; doy &lt;= 17 || doy == 9 || doy == 10)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy &gt;= 14 &amp;&amp; doy &lt;= 17 || doy == 9 || doy == 10)"/>
 
 <!-- CASE FOUR: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS JANUARY 14 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
@@ -35,15 +35,6 @@
 <!-- CASE SIX: WE ARE NOT USING THE LUCAN JUMP. KEEPING YURI'S RULES -->
 <SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" Cmd="GS == 0" />
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="GS == 0" /> 
-
-<!-- KEEPING YURI'S OLD RULES FOR NOW:
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Cmd="(nday == -84 &amp;&amp; GS == 1) || GS == 0" />
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Cmd="nday == -91 &amp;&amp; GS == 1" />
-<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Cmd="(doy &gt;= 18 &amp;&amp; doy &lt;= 24 &amp;&amp; nday == -84) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Cmd="(doy &gt;= 18 &amp;&amp; doy &lt;= 24 &amp;&amp; nday == -91) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Cmd="(doy &gt;= 11 &amp;&amp; doy &lt;= 17 &amp;&amp; nday == -84) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Cmd="(doy &gt;= 11 &amp;&amp; doy &lt;= 17 &amp;&amp; nday == -91) &amp;&amp; GS == 1"/>
--->
 </LITURGY>
 </SERVICE>
 </SAINT>

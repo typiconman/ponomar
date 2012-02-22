@@ -13,8 +13,6 @@
 <SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Pericope="17" EffWeek="18" Cmd="(doy &gt;= 264 &amp;&amp; doy &lt;= 270) &amp;&amp; GS == 1"/>
 <!-- THIS ONLY OCCURS IN ONE CASE: WHEN EXALTATION IS ON SUNDAY AND ZACCHAEUS FALLS ON WEEK 36 ON FEBRUARY 1 -->
 <SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" EffWeek="17" Cmd="(doy == 263 &amp;&amp; ndayF == -210) &amp;&amp; GS == 1"/>
-<!-- the below is never read
-<SCRIPTURE Type="gospel" Reading="Mt_18:23-35" Pericope="77" EffWeek="16" Cmd="(doy &gt;= 250 &amp;&amp; doy &lt;= 256) &amp;&amp; GS == 1"/>-->
 <SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Pericope="17" Cmd="GS == 0"/>
 </LITURGY>
 </SERVICE>

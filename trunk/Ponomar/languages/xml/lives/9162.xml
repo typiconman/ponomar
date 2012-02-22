@@ -7,11 +7,12 @@
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="II Cor_6:1-10" Pericope="181" Cmd="GS == 0"/>
-<SCRIPTURE Type="apostol" Reading="II Cor_6:1-10" Pericope="181" Cmd="GS == 1 &amp;&amp; !(doy == 252 &amp;&amp; ndayF == -224)"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_6:1-10" Pericope="181" EffWeek="16" Cmd="GS == 1 &amp;&amp; !(doy == 252 &amp;&amp; ndayF == -224)"/>
 <!-- IN ONE CASE, THE READING FOR THE 16TH WEEK IS NOT READ. IT IS TRANSFERRED TO THE 35TH WEEK -->
 <SCRIPTURE Type="gospel" Reading="Mt_25:14-30" Pericope="105" EffWeek="16" Cmd="GS == 1 &amp;&amp; doy &lt; 264 &amp;&amp; !(doy == 252 &amp;&amp; ndayF == -224)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:31-36" Pericope="26" EffWeek="19" Cmd="(doy &gt;= 271 &amp;&amp; doy &lt;= 277) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Pericope="17" EffWeek="18" Cmd="(doy &gt;= 264 &amp;&amp; doy &lt;= 270) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:31-36" Pericope="26" EffWeek="19" Cmd="(doy &gt;= 271 &amp;&amp; doy &lt;= 277) &amp;&amp; GS == 1"/>
+
 <SCRIPTURE Type="gospel" Reading="Mt_25:14-30" Pericope="105" EffWeek="16" Cmd="GS == 0"/>
 </LITURGY>
 </SERVICE>
