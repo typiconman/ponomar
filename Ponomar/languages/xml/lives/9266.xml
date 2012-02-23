@@ -4,7 +4,7 @@
 <PRIMES Type="Normal"/>
 <LITURGY>
 <!-- CASE ONE: DECEMBER 12 TO DECEMBER 16 -->
-<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy &lt;= 349"/>
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" EffWeek="31" Cmd="(doy &gt;= 345 &amp;&amp; doy &lt;= 349) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" EffWeek="30" Cmd="(doy &gt;= 345 &amp;&amp; doy &lt;= 349) &amp;&amp; GS == 1"/>
 
 <!-- CASE TWO: JANUARY 14 OR JANUARY 15; READINGS FOR THE 31ST SATURDAY -->
