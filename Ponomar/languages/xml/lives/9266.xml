@@ -1,16 +1,34 @@
 <SAINT>
+<!-- THIS IS THE 31st SATURDAY AFTER PENTECOST -->
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Col_1:3-6" />
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Cmd="(doy &gt;= 3 &amp;&amp; doy &lt;= 9) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Cmd="((doy &gt;= 361 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 2)) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Cmd="(doy &gt;= 354 &amp;&amp; doy &lt;= 360) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Cmd="(doy &gt;= 347 &amp;&amp; doy &lt;= 353) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_13:18-29" Cmd="(doy &gt;= 340 &amp;&amp; doy &lt;= 346) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Cmd="(doy &gt;= 10 &amp;&amp; doy &lt;= 16 &amp;&amp; nday == -85) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Cmd="(doy &gt;= 10 &amp;&amp; doy &lt;= 16 &amp;&amp; nday == -92) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15"  Cmd="GS == 0" /> 
+<!-- CASE ONE: DECEMBER 12 TO DECEMBER 16 -->
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy &lt;= 349"/>
+<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" EffWeek="30" Cmd="(doy &gt;= 345 &amp;&amp; doy &lt;= 349) &amp;&amp; GS == 1"/>
+
+<!-- CASE TWO: JANUARY 14 OR JANUARY 15; READINGS FOR THE 31ST SATURDAY -->
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 13 || doy == 14"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 13 || doy == 14"/>
+
+<!-- CASE THREE: TWO MORE WEEKS OF READINGS AND IT IS JANUARY 1-3 or 7-10 -->
+<!-- READINGS FOR THE 31ST SATURDAY -->
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; (doy &gt;= 6 &amp;&amp; doy &lt;= 9 || doy &lt;= 2)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; (doy &gt;= 6 &amp;&amp; doy &lt;= 9 || doy &lt;= 2)"/>
+
+<!-- CASE FOUR: TWO MORE WEEKS OF READINGS AND IT IS DECEMBER 31 OR DECEMBER 27 -->
+<!-- READINGS FOR THE 31ST SATURDAY -->
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; ndayF == -85 &amp;&amp; (doy == 360 || doy == 364)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; ndayF == -85 &amp;&amp; (doy == 360 || doy == 364)"/>
+
+<!-- CASE FOUR: TWO MORE WEEKS OF READINGS AND IT IS DECEMBER 29 OR DECEMBER 30 -->
+<!-- READINGS FOR THE 32nd SATURDAY -->
+<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" EffWeek="32" Cmd="GS == 1 &amp;&amp; ndayF == -85 &amp;&amp; (doy == 362 || doy == 363)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" EffWeek="32" Cmd="GS == 1 &amp;&amp; ndayF == -85 &amp;&amp; (doy == 362 || doy == 363)"/>
+
+<!-- CASE FIVE: NOT USING THE LUCAN JUMP -->
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="GS == 0" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>

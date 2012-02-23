@@ -1,12 +1,10 @@
 <SAINT>
 <SERVICE Type="0">
+<!-- THIS IS THE 38th SATURDAY AFTER PENTECOST -->
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" Pericope="293"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" Cmd="GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" Cmd="GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" Cmd="GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" EffWeek="33" Pericope="293"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" EffWeek="33" />
 </LITURGY>
 </SERVICE>
 </SAINT>
