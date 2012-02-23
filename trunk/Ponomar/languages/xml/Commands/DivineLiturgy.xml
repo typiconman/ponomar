@@ -3,7 +3,6 @@
 <COMMAND Name="Suppress" Value="(doy == 358 || doy == 357 || doy == 4 || doy == 5)" Comment="Suppress sequential readings on eve and day of Nativity and Theophany"/>
 <COMMAND Name="Suppress" Value="(doy &gt;= 344 &amp;&amp; doy &lt;= 350) &amp;&amp; dow == 0" Comment="Suppress the sequential readings on the Second Sunday before Christmas." />
 <COMMAND Name="Suppress" Value="(doy &gt;= 351 &amp;&amp; doy &lt;= 357) &amp;&amp; dow == 0" Comment="Suppress the sequential readings on the First Sunday before Christmas." />
-<!-- TODO: in the below, we need to consider the fact that the Suppressed Sunday reading may be used later (e.g., as in 2012) -->
 <COMMAND Name="Suppress" Value="(doy == 256 || doy == 217) &amp;&amp; dow == 0" Comment="Suppress the Sunday readings on Exaltation and Transfiguration"/>
 <COMMAND Name="TransferRulesB" Value="dow &gt; 1 &amp;&amp; (doy == 217 || doy == 256)" Comment="Daily readings on Transfiguration and Exaltation are moved to the prior day"/>
 <COMMAND Name="TransferRulesF" Value="dow == 1 &amp;&amp; (doy == 217 || doy == 256)" Comment="Daily readings on Transfiguration and Exaltation are moved to the next day"/>
@@ -11,7 +10,7 @@
 For example, Ascension has a dRank > 5, but its readings ("daily readings" in some sense) are 
 most certainty *not transferred*.
 We're going to handle this in the implementation by keeping track of the Src of the observances -->
-<!--COMMAND Name="TransferRulesB" Value="dow &gt; 1 &amp;&amp; dRank &gt;= 5 &amp;&amp; (nday &gt; 50 || nday &lt; -49)" Comment="Daily readings are moved back on a Vigil-rank saint occuring M-Sat"/>-->
+<COMMAND Name="TransferRulesB" Value="dow &gt; 1 &amp;&amp; dRank &gt;= 5 &amp;&amp; (nday &gt; 50 || nday &lt; -49)" Comment="Daily readings are moved back on a Vigil-rank saint occuring M-Sat"/>
 <COMMAND Name="TransferRulesF" Value="dow == 1 &amp;&amp; dRank &gt;= 5 &amp;&amp; (nday &gt; 50 || nday &lt; -49)" Comment="Daily readings are moved back on a Vigil-rank saint occuring on a Monday"/>
 <COMMAND Name="TransferRulesB" Value="dow &gt; 1 &amp;&amp; doy == 243" Comment="Daily readings transferred on New Year"/>
 <COMMAND Name="TransferRulesF" Value="dow == 1 &amp;&amp; doy == 243" Comment="Daily readings transferred on New Year"/>
