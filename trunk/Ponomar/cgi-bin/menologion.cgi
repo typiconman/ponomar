@@ -353,7 +353,7 @@ sub formatScriptureReading {
 	
 	my ($book, $verses) = split(/_/, $reading);
 	my $MG = exists $matinsGospels{$reading} && $dow == 0 ? " " . $language_data{133 + $matinsGospels{$reading}} : "";
-	$MG .= " for Sunday $effWeek" if (defined $effWeek);
+	$MG .= " jump to week $effWeek" if (defined $effWeek);
 	return defined $pericope ? qq(<A Href="JavaScript:doReadings('$book', '$verses');">$bibleBookNames{$book} $verses (§ $pericope)</A>$MG) : qq(<A Href="JavaScript:doReadings('$book', '$verses');">$bibleBookNames{$book} $verses</A>$MG);
 }
 
