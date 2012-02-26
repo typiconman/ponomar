@@ -3,7 +3,15 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Gal_3:8-12" Pericope="205" EffWeek="26"/>
+<!-- XXX: EPISTLE READING FOR THE 26TH SATURDAY ARE READ ON THE SATURDAY BEFORE NATIVITY.
+ON THIS SATURDAY, WE READ THE READING THAT IS OMITTED ON THAT SATURDAY THAT HAPPENS TO BE SATBN -->
+<SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213" EffWeek="27" Cmd="doy == 343 || doy == 344"/>
+<SCRIPTURE Type="apsotol" Reading="Eph_1:16-23" Pericope="218" EffWeek="28" Cmd="doy &gt;= 336 &amp;&amp; doy &lt;= 342"/>
+<SCRIPTURE Type="apostol" Reading="Eph_2:11-13" Pericope="220 (mid)" EffWeek="29" Cmd="doy &gt;= 329 &amp;&amp; doy &lt;= 335"/>
+<SCRIPTURE Type="apostol" Reading="Eph_5:1-8" Pericope="228" EffWeek="30" Cmd="doy &gt;= 322 &amp;&amp; doy &lt;= 328"/>
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249" EffWeek="31" Cmd="doy &gt;= 315 &amp;&amp; doy &lt;= 321"/>
+<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" EffWeek="32" Cmd="doy &gt;= 310 &amp;&amp; doy &lt;= 314"/>
+<!-- LUCAN JUMP GOSPEL READINGS ARE USUAL -->
 <SCRIPTURE Type="gospel" Reading="Lk_9:1-6" Pericope="40" EffWeek="24" Cmd="(doy &gt;= 305 &amp;&amp; doy &lt;= 311) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_9:37-43" Pericope="46" EffWeek="25" Cmd="(doy &gt;= 312 &amp;&amp; doy &lt;= 318) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_9:57-62" Pericope="49" EffWeek="26" Cmd="(doy &gt;= 319 &amp;&amp; doy &lt;= 325) &amp;&amp; GS == 1"/>

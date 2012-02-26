@@ -39,6 +39,7 @@ use constant false => 0;
 use constant CREATION_OF_THE_WORLD => 5508;
 my @typicon  = ("", "✺", "<FONT Face=\"Hirmos Ponomar\">🕃</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕃</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕂</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕁</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕀</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕀</FONT>", "<FONT Face=\"Hirmos Ponomar\" Color=\"red\">🕀</FONT>");
 my @toneNumbers = ();
+my @weekDays = ();
 my %matinsGospels = (
 	"Mt_28:16-20" => 1,
 	"Mk_16:1-8" => 2,
@@ -60,7 +61,10 @@ my %bibleBookNames = ();
 my $basepath = "/home/ponomar0/svn/Ponomar/languages/";
 
 ### THIS STORES ALL OF THE DATA FROM THE XML FILES
-tie my %SAINTS, "Tie::IxHash";
+### XXX: IT APPEARS THAT TIE::IXHASH IS STUPID AND CANNOT HANDLE MULTI-LEVEL HASHES
+### THAT IS, HASHES OF ARRAYS OF HASHES OF HASHES, PROPERLY
+my %SAINTS = ();
+my @SAINT_KEYS = ();
 tie my %READINGS, "Tie::IxHash";
 my %COMMANDS = ();
 my @DEBUG = ();
@@ -233,7 +237,8 @@ sub startElement {
 			# PUSH ALL OTHER RELEVANT KEYS TO THIS HASH
 			my $CId = $attrs{CId};
 			delete $attrs{CId};
-			%{ $SAINTS{$CId}} = (%attrs, "Reason" => $src);
+			%{ $SAINTS{$CId} } = (%attrs, "Reason" => $src);
+			push @SAINT_KEYS, $CId;
 			last SWITCH;
 		} 
 		if ($element eq "NAME") {
@@ -353,7 +358,7 @@ sub formatScriptureReading {
 	
 	my ($book, $verses) = split(/_/, $reading);
 	my $MG = exists $matinsGospels{$reading} && $dow == 0 ? " " . $language_data{133 + $matinsGospels{$reading}} : "";
-	$MG .= " jump to week $effWeek" if (defined $effWeek);
+	$MG .= " (" . $weekDays[$dow] . " $effWeek)" if (defined $effWeek);
 	return defined $pericope ? qq(<A Href="JavaScript:doReadings('$book', '$verses');">$bibleBookNames{$book} $verses (§ $pericope)</A>$MG) : qq(<A Href="JavaScript:doReadings('$book', '$verses');">$bibleBookNames{$book} $verses</A>$MG);
 }
 
@@ -429,8 +434,9 @@ if ( $day =~ /^([$validchars]+)$/ ) {
 	"matins"   => $language_data{91},
 	"liturgy"  => $language_data{92},
 	);
-@toneNumbers = map $language_data{$_}, (76..83); 
-unshift @toneNumbers, ""; 
+@toneNumbers = map $language_data{$_}, (76..83);
+@weekDays    = map $language_data{$_}, (106..112);
+#unshift @toneNumbers, ""; 
 
 #### CREATE THE GLOBAL CLASSES
 my $today      = JDate->new($month, $day, $year);
@@ -516,7 +522,8 @@ for (my $i = 0; $i <= $#ils; $i++) {
 
 # 2. Find out if we have an icon available
 my $icon = "http://www.ponomar.net/images/icon.jpg";
-OUTERLOOP: foreach my $id (sort { $SAINTS{$a}{Type} <=> $SAINTS{$b}{Type} } keys %SAINTS) {
+OUTERLOOP: foreach my $id (sort { $SAINTS{$a}{Type} <=> $SAINTS{$b}{Type} } @SAINT_KEYS) {
+	next unless $id;
 	foreach my $l (@ils) {
 		eval {
 			findBottomUp( $l, "icons/$id/" );
@@ -566,7 +573,7 @@ print "$language_data{24}: $sunrise; $language_data{25}: $sunset $language_data{
 print convert ($fast) . "<BR>\n";
 
 ## print Pentecostarion data
-foreach (keys %SAINTS) {
+foreach (@SAINT_KEYS) {
 	next unless $SAINTS{$_}{Reason} eq "pentecostarion";
 
 	# Get the dRank of the observance
@@ -578,7 +585,7 @@ foreach (keys %SAINTS) {
 
 print "<BR><BR>";
 ## print the Menaion data
-foreach (keys %SAINTS) {
+foreach (@SAINT_KEYS) {
 	next unless $SAINTS{$_}{Reason} eq "menaion";
 	
 	print $typicon[$SAINTS{$_}{Type}] . " " if ($SAINTS{$_}{Type});
@@ -631,7 +638,7 @@ foreach ( keys %COMMANDS ) {
 
 # 3. TODO: CHECK TOMORROW AND YESTERDAY FOR TRANSFERS
 ### 3.1: TOMORROW
-### 3.1.1: Set the Globals to TOmorrow's values
+### 3.1.1: Set the Globals to Tomorrow's values
 $dow = $tomorrow->getDayOfWeek();
 $doy = $tomorrow->getDoy();
 $nday  = JDate->difference($tomorrow, $thispascha);
@@ -663,16 +670,17 @@ $PARSER->parsefile( findBottomUp($language, $filepath) );
 
 ### 3.1.5: NOW PARSE EACH COMMEMORATION FILE FILE OF pentecostarion2 TO OBTAIN DAILY READINGS
 ### FIXME: THIS PROCESS COULD BE SIMPLIFIED BY PARSING ONLY A KNOWN SUBSET OF FILES
+### XXX: I NO LONGER REMEMBER WHAT THE ABOVE COMMENT REFERS TO :(
 $src = "";
-#die join (",", map { $_ => $SAINTS{$_}{Reason} } keys %SAINTS);
-	
-foreach my $local (keys %SAINTS) {
-	next unless $SAINTS{$local}{Reason} eq "pentecostarion2";
+my @SOURCES = ();
+foreach my $source (keys %SAINTS) {
+	push @SOURCES, $source;
+	next unless $SAINTS{$source}{Reason} eq "pentecostarion2";
 
-	$src = $local;
-	foreach my $file (findTopDown($language, "xml/lives/$local.xml")) {
+	$src = $source;
+	foreach my $file (findTopDown($language, "xml/lives/$source.xml")) {
 		push @DEBUG, $file;
-		$PARSER->parsefile( $file);
+		$PARSER->parsefile( $file );
 	}
 }
 
@@ -699,7 +707,7 @@ foreach my $CId (keys %SAINTS) {
 }
 
 ### 3.1.8: Compute tomorrow's dRank
-$dRank = 5; #max ( map { $SAINTS{$_}{Type} } grep { $SAINTS{$_}{Reason} eq "menaion2" } keys %SAINTS );
+$dRank = max ( map { $SAINTS{$_}{Type} } grep { $SAINTS{$_}{Reason} eq "menaion2" } keys %SAINTS );
 
 ### 3.1.9: CHECK IF WE HAVE A TransferRulesB COMMAND
 my $KEEP_FLAG = false;
@@ -731,7 +739,7 @@ $Year  = $today->getYear();
 
 ## SET US UP THE BOMB
 my @order_of_types = ("1st hour", "3rd hour", "6th hour", "9th hour", "vespers", "matins", "liturgy");
-my @order_of_reads = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "menaion"); ## FIXME
+my @order_of_reads = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "pentecostarion2", "menaion"); ## FIXME
 my %sort_order     = map  { $order_of_reads[$_] => $_ } (0..$#order_of_reads);
 my @order_of_srcs  = sort { $sort_order{$SAINTS{$a}{Reason}} <=> $sort_order{$SAINTS{$b}{Reason}} || $SAINTS{$b}{Type} <=> $SAINTS{$a}{Type}} keys %SAINTS;
 
