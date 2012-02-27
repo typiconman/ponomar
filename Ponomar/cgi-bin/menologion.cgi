@@ -228,7 +228,7 @@ sub startElement {
 			$tone =~ s/([^\$])$_/$1\$$_/g;
 		}
 
-		$Tone = int(eval($tone));
+		$attrs{Tone} = $Tone = int(eval($tone));
 	}
 	SWITCH: {
 		if ($element eq "SAINT") {
@@ -436,7 +436,7 @@ if ( $day =~ /^([$validchars]+)$/ ) {
 	);
 @toneNumbers = map $language_data{$_}, (76..83);
 @weekDays    = map $language_data{$_}, (106..112);
-#unshift @toneNumbers, ""; 
+unshift @toneNumbers, ""; 
 
 #### CREATE THE GLOBAL CLASSES
 my $today      = JDate->new($month, $day, $year);
@@ -669,16 +669,17 @@ push @DEBUG, findBottomUp($language, $filepath);
 $PARSER->parsefile( findBottomUp($language, $filepath) );
 
 ### 3.1.5: NOW PARSE EACH COMMEMORATION FILE FILE OF pentecostarion2 TO OBTAIN DAILY READINGS
-### FIXME: THIS PROCESS COULD BE SIMPLIFIED BY PARSING ONLY A KNOWN SUBSET OF FILES
-### XXX: I NO LONGER REMEMBER WHAT THE ABOVE COMMENT REFERS TO :(
 $src = "";
-my @SOURCES = ();
+
 foreach my $source (keys %SAINTS) {
-	push @SOURCES, $source;
 	next unless $SAINTS{$source}{Reason} eq "pentecostarion2";
+	## XXX: CIDs 9800 - 9900 are reserved for Triodion
+	## CIDs 9900 - 9999 are reserved for Pentecostarion
+	## NO OTHER CIDs should be read
+	next unless ($source >= 9800 && $source < 10000);
 
 	$src = $source;
-	foreach my $file (findTopDown($language, "xml/lives/$source.xml")) {
+	foreach my $file (findTopDown($language, "xml/lives/$src.xml")) {
 		push @DEBUG, $file;
 		$PARSER->parsefile( $file );
 	}
@@ -697,10 +698,11 @@ $PARSER->parsefile( findBottomUp($language, $filepath) );
 ### 3.1.7: Again, parse each commemoration file. Here, we actually only need the dRank
 ### XXX: IN THE FUTURE, WE SHOULD ALLOW FOR DIFFERENT SERVICE ALTERNATIVES
 $src = "";
-foreach my $CId (keys %SAINTS) {
-	next unless $SAINTS{$CId}{Reason} eq "menaion2";
-	$src = $CId;
-	foreach my $file (findTopDown($language, "xml/lives/$CId.xml")) {
+foreach my $source (keys %SAINTS) {
+	next unless $SAINTS{$source}{Reason} eq "menaion2";
+
+	$src = $source;
+	foreach my $file (findTopDown($language, "xml/lives/$src.xml")) {
 		push @DEBUG, $file;
 		$PARSER->parsefile( $file);
 	}
@@ -729,6 +731,100 @@ foreach my $src (keys %READINGS) {
 	delete $READINGS{$src} if ($SAINTS{$src}{Reason} eq "pentecostarion2" && !$KEEP_FLAG);
 }	
 
+### 3.2: NOW CHECK FOR TRANSFER READINGS FOR YESTERDAY
+### 3.2.1: Set the Globals to Yesterday's values
+$dow = $yesterday->getDayOfWeek();
+$doy = $yesterday->getDoy();
+$nday  = JDate->difference($yesterday, $thispascha);
+$ndayP = JDate->difference($yesterday, $lastpascha);
+$ndayF = JDate->difference($yesterday, $nextpascha);
+$Year  = $yesterday->getYear();
+
+### 3.2.2: Figure out where we are in the Pentecostarion / Triodion cycle
+if ($nday >= -70 && $nday < 0) {
+	$directory = "triodion";
+	$filename  = abs($nday);
+} elsif ($nday < -70) {
+	$directory = "pentecostarion";
+	$filename  = $ndayP + 1;
+} else {
+	$directory = "pentecostarion";
+	$filename  = $nday + 1;
+}
+
+$filepath = "xml/" . $directory . "/" . ($filename >= 10 ? $filename . ".xml" : "0" . $filename . ".xml");
+
+### 3.2.3: Set the SOURCE. Pentecostarion3 means we are only interested in readings for yesterday
+$src = "pentecostarion3";
+
+### 3.2.4: Parse yesterday's Pentecostarion DATA
+## THIS ADDS DATA TO SAINTS WITH THE "Reason" LABEL SET TO pentecostarion3
+push @DEBUG, findBottomUp($language, $filepath);
+$PARSER->parsefile( findBottomUp($language, $filepath) );
+
+### 3.2.5: NOW PARSE EACH COMMEMORATION FILE OF pentecostarion3 TO OBTAIN DAILY READINGS
+$src = "";
+
+foreach my $source (keys %SAINTS) {
+	next unless $SAINTS{$source}{Reason} eq "pentecostarion3";
+	## XXX: CIDs 9800 - 9900 are reserved for Triodion
+	## CIDs 9900 - 9999 are reserved for Pentecostarion
+	## NO OTHER CIDs should be read
+	next unless ($source >= 9800 && $source < 10000);
+	
+	$src = $source;
+	foreach my $file (findTopDown($language, "xml/lives/$src.xml")) {
+		push @DEBUG, $file;
+		$PARSER->parsefile( $file );
+	}
+}
+
+### 3.2.6: Parse yesterday's Menaion DATA
+$filepath = "xml/";
+$filepath .= $yesterday->getMonth() < 10 ? "0" . $yesterday->getMonth() : $yesterday->getMonth();
+$filepath .= $yesterday->getDay() < 10 ? "/0" . $yesterday->getDay() : "/" . $yesterday->getDay();
+$filepath .= ".xml";
+
+$src = "menaion3";
+push @DEBUG, findBottomUp($language, $filepath);
+$PARSER->parsefile( findBottomUp($language, $filepath) );
+
+### 3.2.7: Again, parse each commemoration file. Here, we actually only need the dRank
+### XXX: IN THE FUTURE, WE SHOULD ALLOW FOR DIFFERENT SERVICE ALTERNATIVES
+$src = "";
+foreach my $source (keys %SAINTS) {
+	next unless $SAINTS{$source}{Reason} eq "menaion3";
+
+	$src = $source;
+	foreach my $file (findTopDown($language, "xml/lives/$src.xml")) {
+		push @DEBUG, $file;
+		$PARSER->parsefile( $file );
+	}
+}
+
+### 3.2.8: Compute yesterday's dRank
+$dRank = max ( map { $SAINTS{$_}{Type} } grep { $SAINTS{$_}{Reason} eq "menaion3" } keys %SAINTS );
+
+### 3.2.9: CHECK IF WE HAVE A TransferRulesF COMMAND
+$KEEP_FLAG = false;
+foreach (keys %COMMANDS) {
+	if ($COMMANDS{$_}{Name} eq "TransferRulesF") {
+		my $cmd = $COMMANDS{$_}{Value};
+		foreach (@GLOBALS) {
+			$cmd =~ s/$_/\$$_/g;
+		}
+		if (eval $cmd) {
+			$KEEP_FLAG = !false;
+		}
+	}
+}
+
+### 3.2.10: DELETE YESTERDAY'S READINGS, KEEPING IF THE TRANSFERRULESF COMMAND WAS TRUE
+foreach my $src (keys %READINGS) {
+	delete $READINGS{$src} if ($SAINTS{$src}{Reason} eq "menaion3");
+	delete $READINGS{$src} if ($SAINTS{$src}{Reason} eq "pentecostarion3" && !$KEEP_FLAG);
+}	
+
 # 3.3: SET EVERYTHING BACK
 $dow = $today->getDayOfWeek();
 $doy = $today->getDoy();
@@ -736,10 +832,11 @@ $nday  = JDate->difference($today, $thispascha);
 $ndayP = JDate->difference($today, $lastpascha);
 $ndayF = JDate->difference($today, $nextpascha);
 $Year  = $today->getYear();
+$dRank = max ( map { $SAINTS{$_}{Type} } grep { $SAINTS{$_}{Reason} eq "menaion" || $SAINTS{$_}{Reason} eq "pentecostarion" } keys %SAINTS );
 
 ## SET US UP THE BOMB
 my @order_of_types = ("1st hour", "3rd hour", "6th hour", "9th hour", "vespers", "matins", "liturgy");
-my @order_of_reads = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "pentecostarion2", "menaion"); ## FIXME
+my @order_of_reads = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "pentecostarion2", "pentecostarion3", "menaion");
 my %sort_order     = map  { $order_of_reads[$_] => $_ } (0..$#order_of_reads);
 my @order_of_srcs  = sort { $sort_order{$SAINTS{$a}{Reason}} <=> $sort_order{$SAINTS{$b}{Reason}} || $SAINTS{$b}{Type} <=> $SAINTS{$a}{Type}} keys %SAINTS;
 
