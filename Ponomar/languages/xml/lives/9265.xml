@@ -2,15 +2,15 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Jas_2:1-13" />
-<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Cmd="(doy &gt;= 2 &amp;&amp; doy &lt;= 8) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Cmd="((doy &gt;= 360 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 1)) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Cmd="(doy &gt;= 353 &amp;&amp; doy &lt;= 359) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Cmd="(doy &gt;= 346 &amp;&amp; doy &lt;= 352) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_21:37-22:8" Cmd="(doy &gt;= 339 &amp;&amp; doy &lt;= 345) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Cmd="(doy &gt;= 9 &amp;&amp; doy &lt;= 15 &amp;&amp; nday == -86) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Cmd="(doy &gt;= 9 &amp;&amp; doy &lt;= 15 &amp;&amp; nday == -93) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:23-32"  Cmd="GS == 0" /> 
+<SCRIPTURE Type="apostol" Reading="Jas_2:1-13" Pericope="52"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:37-22:8" Pericope="108" Cmd="(doy &gt;= 344 &amp;&amp; doy &lt;= 345) &amp;&amp; GS == 1" EffWeek="29"/>
+<SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Pericope="41" Cmd="(doy &gt;= 346 &amp;&amp; doy &lt;= 352) &amp;&amp; GS == 1" EffWeek="30"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(doy &gt;= 353 &amp;&amp; doy &lt;= 359) &amp;&amp; GS == 1" EffWeek="31"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="((doy &gt;= 360 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 1)) &amp;&amp; GS == 1" EffWeek="32"/>
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="(doy &gt;= 2 &amp;&amp; doy &lt;= 8) &amp;&amp; GS == 1" EffWeek="33"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="(doy &gt;= 9 &amp;&amp; doy &lt;= 13 &amp;&amp; nday == -86) &amp;&amp; GS == 1" EffWeek="31"/>
+<SCRIPTURE Type="gospel" Reading="Mk_9:33-41" Pericope="41" Cmd="(doy &gt;= 9 &amp;&amp; doy &lt;= 13 &amp;&amp; nday == -93) &amp;&amp; GS == 1" EffWeek="30"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:23-32" Pericope="46" Cmd="GS == 0"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

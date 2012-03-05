@@ -838,7 +838,7 @@ $dRank = max ( map { $SAINTS{$_}{Type} } grep { $SAINTS{$_}{Reason} eq "menaion"
 my @order_of_types = ("1st hour", "3rd hour", "6th hour", "9th hour", "vespers", "matins", "liturgy");
 my @order_of_reads = $dow == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "pentecostarion2", "pentecostarion3", "menaion");
 my %sort_order     = map  { $order_of_reads[$_] => $_ } (0..$#order_of_reads);
-my @order_of_srcs  = sort { $sort_order{$SAINTS{$a}{Reason}} <=> $sort_order{$SAINTS{$b}{Reason}} || $SAINTS{$b}{Type} <=> $SAINTS{$a}{Type}} keys %SAINTS;
+my @order_of_srcs  = sort { $sort_order{$SAINTS{$a}{Reason}} <=> $sort_order{$SAINTS{$b}{Reason}} } keys %SAINTS;
 
 # 4. OUTPUT THE REMAINING READINGS	
 foreach my $type (@order_of_types) {

@@ -6,8 +6,6 @@
 <SCRIPTURE Type="matins" Reading="Jn_20:1-10" Pericope="63" Cmd="dRank != 6"/>
 </MATINS>
 <LITURGY>
-<!-- DEBUG: REMOVE THIS READING, IT SHOULD COME FROM THE FLOATER:
-<SCRIPTURE Type="apostol" Reading="Col_3:4-11" Pericope="257" EffWeek="29" Cmd="doy &lt;= 350 &amp;&amp; doy &gt;= 344"/>-->
 <SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="doy &lt;= 343 &amp;&amp; doy &gt;= 337"/>
 <SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="doy &lt;= 336 &amp;&amp; doy &gt;= 332"/>
 <!-- LUCAN JUMP READINGS -->

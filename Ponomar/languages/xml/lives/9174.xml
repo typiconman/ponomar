@@ -3,12 +3,12 @@
 <PRIMES Type="Normal"/>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Eph_6:18-24" Pericope="234"/>
-<SCRIPTURE Type="gospel" Reading="Lk_9:12-18" Pericope="42" Cmd="(doy &gt;= 283 &amp;&amp; doy &lt;= 289) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_7:31-35" Pericope="32" Cmd="(doy &gt;= 276 &amp;&amp; doy &lt;= 282) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Cmd="(doy &gt;= 269 &amp;&amp; doy &lt;= 275) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_4:22-30" Pericope="14" Cmd="(doy &gt;= 262 &amp;&amp; doy &lt;= 268) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" Cmd="(doy &gt;= 255 &amp;&amp; doy &lt;= 261) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mt_24:27-33, 42-51" Pericope="100" Cmd="(doy &gt;= 248 &amp;&amp; doy &lt;= 254) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:12-18" Pericope="42" EffWeek="21" Cmd="(doy &gt;= 283 &amp;&amp; doy &lt;= 289) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:31-35" Pericope="32" EffWeek="20" Cmd="(doy &gt;= 276 &amp;&amp; doy &lt;= 282) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" EffWeek="19" Cmd="(doy &gt;= 269 &amp;&amp; doy &lt;= 275) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:22-30" Pericope="14" EffWeek="18" Cmd="(doy &gt;= 262 &amp;&amp; doy &lt;= 268) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:1-12" Pericope="53" EffWeek="17" Cmd="(doy &gt;= 255 &amp;&amp; doy &lt;= 261) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:27-33, 42-51" Pericope="100" EffWeek="16" Cmd="(doy &gt;= 248 &amp;&amp; doy &lt;= 254) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_4:22-30" Pericope="14" Cmd="GS == 0"/>
 </LITURGY>
 </SERVICE>

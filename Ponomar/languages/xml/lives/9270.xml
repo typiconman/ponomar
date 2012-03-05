@@ -2,16 +2,14 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Jas_3:11-4:6" />
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Cmd="(doy &gt;= 0 &amp;&amp; doy &lt;= 6) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Cmd="(doy &gt;= 358 &amp;&amp; doy &lt;= 364) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Cmd="(doy &gt;= 351 &amp;&amp; doy &lt;= 357) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Cmd="(doy &gt;= 344 &amp;&amp; doy &lt;= 350) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Cmd="(doy &gt;= 14 &amp;&amp; doy &lt;= 20 &amp;&amp; nday == -81) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Cmd="(doy &gt;= 14 &amp;&amp; doy &lt;= 20 &amp;&amp; nday == -88) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Cmd="(doy &gt;= 7 &amp;&amp; doy &lt;= 13 &amp;&amp; nday == -81) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Cmd="(doy &gt;= 7 &amp;&amp; doy &lt;= 13 &amp;&amp; nday == -88) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:23-26"  Cmd="GS == 0" /> 
+<SCRIPTURE Type="apostol" Reading="Jas_3:11-4:6" Pericope="55" EffWeek="32"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" Cmd="(doy &gt;= 349 &amp;&amp; doy &lt;= 350) &amp;&amp; GS == 1" EffWeek="30"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" Cmd="(doy &gt;= 351 &amp;&amp; doy &lt;= 357) &amp;&amp; GS == 1" EffWeek="31"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Pericope="51" Cmd="(doy &gt;= 358 &amp;&amp; doy &lt;= 364) &amp;&amp; GS == 1" EffWeek="32"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(doy &gt;= 0 &amp;&amp; doy &lt;= 6) &amp;&amp; GS == 1" EffWeek="33"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Pericope="51" Cmd="(doy &gt;= 7 &amp;&amp; doy &lt;= 18 &amp;&amp; nday == -81) &amp;&amp; GS == 1" EffWeek="32"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" Cmd="(doy &gt;= 7 &amp;&amp; doy &lt;= 18 &amp;&amp; nday == -88) &amp;&amp; GS == 1" EffWeek="31"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Pericope="51" Cmd="GS == 0" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>
