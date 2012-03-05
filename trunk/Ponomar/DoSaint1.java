@@ -16,7 +16,7 @@ import javax.swing.text.html.HTMLDocument;
 THIS MODULE CREATES THE TEXT FOR THE ORTHODOX SERVICE OF THE FIRST HOUR (PRIME)
 THIS MODULE IS STILL IN THE DEVELOPMENT PHASE.
 
-(C) 2007, 2008 YURI SHARDT. ALL RIGHTS RESERVED.
+(C) 2007, 2008, 2012 YURI SHARDT. ALL RIGHTS RESERVED.
 Updated some parts to make it compatible with the changes in Ponomar, especially the language issues!
 
 PERMISSION IS HEREBY GRANTED TO USE, MODIFY, AND/OR REDISTRIBUTE THIS SOURCE CODE
@@ -48,6 +48,14 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
     private String kondakT = "";  //Tone
     private String kondakP = "";  //Podoben melody
     private String textR = "";
+    //There may be a second tropar and kontak
+    private String tropar2 = "";
+    private String troparT2 = ""; //Tone
+    private String troparP2 = "";  //Podoben melody
+    private String kondak2 = "";
+    private String kondakT2 = "";  //Tone
+    private String kondakP2 = "";  //Podoben melody
+
     private String name = "";
     private String copyright = ""; //Any additional information about the life.
     private LanguagePack Text = new LanguagePack();
@@ -82,6 +90,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
     private Font CurrentFont = DefaultFont;
     private Commemoration1 SaintInfo2;
     private Bible bible;
+    private String name2;
 
     public DoSaint1(Commemoration1 SaintInfo) {
         //Get the Podobni
@@ -120,6 +129,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
     {
         //Order the desired Text
         name=SaintInfo2.getName();
+        name2=SaintInfo2.getGrammar("Short");
         life=SaintInfo2.getLife();
         copyright=SaintInfo2.getLifeCopyright();
         OrderedHashtable troparInfo=(OrderedHashtable)SaintInfo2.getService("/LITURGY/TROPARION","1");
@@ -129,6 +139,21 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         if (troparInfo.get("Podoben")!=null){
         troparP=troparInfo.get("Podoben").toString();
         }}
+        else{
+            tropar=null;
+        }
+
+        OrderedHashtable troparInfo2=(OrderedHashtable)SaintInfo2.getService("/LITURGY/TROPARION","2");
+        if (troparInfo2 !=null){
+        tropar2=troparInfo2.get("text").toString();
+        troparT2=troparInfo2.get("Tone").toString();
+        if (troparInfo2.get("Podoben")!=null){
+        troparP2=troparInfo2.get("Podoben").toString();
+        }}
+        else{
+            tropar2=null;
+        }
+         
 
         OrderedHashtable kontakionInfo=(OrderedHashtable)SaintInfo2.getService("/LITURGY/KONTAKION","1");
         if (kontakionInfo !=null){
@@ -137,6 +162,20 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
          if (kontakionInfo.get("Podoben")!=null){
         kondakP=kontakionInfo.get("Podoben").toString();
          }}
+         else{
+            kondak=null;
+         }
+
+        OrderedHashtable kontakionInfo2=(OrderedHashtable)SaintInfo2.getService("/LITURGY/KONTAKION","2");
+        if (kontakionInfo2 !=null){
+        kondak2=kontakionInfo2.get("text").toString();
+        kondakT2=kontakionInfo2.get("Tone").toString();
+         if (kontakionInfo2.get("Podoben")!=null){
+        kondakP2=kontakionInfo2.get("Podoben").toString();
+         }}
+         else{
+            kondak2=null;
+         }
 
 
         Text = new LanguagePack();
@@ -207,6 +246,34 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
                 textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + tropar + "</p>";
             }
 
+            if (tropar2 != null && tropar2 != "") {
+                textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[1] + "</h2>";
+                String ToneFormat = new String();
+                try
+                {
+                 int tone = -1;
+                    tone = Integer.parseInt(troparT2);
+
+
+
+
+                if (tone != -1) {
+                    ToneFormat = SaintInfo[4];
+                    ToneFormat = ToneFormat.replace("TT", toneNumbers[tone]);
+                }
+                }
+                catch (Exception e)
+                {
+                    ToneFormat=troparT2;
+                }
+                if (troparP2 != null && troparP2 != "") {
+                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + SaintInfo[5] + SaintInfo[2] + Podobni.get(troparT2 + troparP2) + "</p>";
+                } else {
+                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + "</p>";
+                }
+                textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + tropar2 + "</p>";
+            }
+
             if (kondak != null && kondak != "") {
                 textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[3] + "</h2>";
                 
@@ -232,11 +299,37 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
                 }
                 textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + kondak + "</p>";
             }
+
+            if (kondak2 != null && kondak2 != "") {
+                textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[3] + "</h2>";
+
+                String ToneFormat = new String();
+
+                try
+                {
+                    int tone = Integer.parseInt(kondakT2);
+                if (tone != -1) {
+                    ToneFormat = SaintInfo[4];
+                    ToneFormat = ToneFormat.replace("TT", toneNumbers[tone]);
+                }
+                }
+                catch (Exception e)
+                {
+                    ToneFormat=kondakT2;
+                }
+
+                if (kondakP2 != null && kondakP2 != "") {
+                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + SaintInfo[5] + SaintInfo[2] + Podobni.get(kondakT2 + kondakP2) + "</p>";
+                } else {
+                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + "</p>";
+                }
+                textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + kondak2 + "</p>";
+            }
         }
         //Other information can go here!
         //String textOut=header+image+rest;
         
-        frames = new JFrame((String) Text.Phrases.get("0") + (String) Text.Phrases.get("Colon") + name);
+        frames = new JFrame((String) Text.Phrases.get("0") + (String) Text.Phrases.get("Colon") + name2);
         
         //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
