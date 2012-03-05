@@ -2,11 +2,8 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="II Pet_1:1-10" Pericope="64"/>
-<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" Cmd="GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="II Pet_1:1-10" Pericope="64" EffWeek="33"/>
+<SCRIPTURE Type="gospel" Reading="Mk_13:1-8" Pericope="58" EffWeek="33"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

@@ -4,7 +4,7 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Gal_3:15-22" Pericope="207"/>
 <SCRIPTURE Type="gospel" Reading="Mk_6:7-13" Pericope="23" Cmd="doy &lt; 260 &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_4:1-15" Pericope="12" Cmd="(doy &gt;= 260 &amp;&amp; doy &lt;= 266) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:1-15" Pericope="12" EffWeek="18" Cmd="(doy &gt;= 260 &amp;&amp; doy &lt;= 266) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_6:7-13" Pericope="23" Cmd="GS == 0"/>
 </LITURGY>
 </SERVICE>

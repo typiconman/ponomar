@@ -2,13 +2,10 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Jas_3:11-4:6" Pericope="55" Cmd="nday == -81"/>
-<SCRIPTURE Type="apostol" Reading="Jas_1:1-18" Pericope="50" Cmd="nday == -88"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Pericope="51" Cmd="(nday == -81) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" Cmd="(nday == -88) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Pericope="51" Cmd="(nday == -81) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" Cmd="(nday == -88) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" Cmd="(nday == -88) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="apostol" Reading="Jas_3:11-4:6" Pericope="55" Cmd="nday == -81" EffWeek="32"/>
+<SCRIPTURE Type="apostol" Reading="Jas_1:1-18" Pericope="50" Cmd="nday == -88" EffWeek="31"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Pericope="51" Cmd="(nday == -81) &amp;&amp; GS == 1" EffWeek="32"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" Cmd="(nday == -88) &amp;&amp; GS == 1" EffWeek="31"/>
 <SCRIPTURE Type="gospel" Reading="Mk_11:23-26" Pericope="51" Cmd="(nday == -81) &amp;&amp; GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" Cmd="(nday == -88) &amp;&amp; GS == 0"/>
 </LITURGY>
