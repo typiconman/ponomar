@@ -1,4 +1,7 @@
 <SAINT>
+<INFO Type="BIRTH" Date="256-285" Certainty="a" Source="" Place=""/>
+<INFO Type="REPOSE" Date="303/03/23" Source="" Place="Nicomedia" Geo="40/46N;29/55E"/>
+<INFO Type="PATRONAGE" Values="Separate the patronage with semicolons and use the default values, which can then be automatically translated, otherwise enter one for each language"/>
 <SERVICE Type="5"/>
 <SERVICE>
 <VESPERS>

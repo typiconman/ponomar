@@ -20,7 +20,7 @@ import javax.swing.text.MutableAttributeSet;
  OUTPUTS RELEVANT INFORMATION FOR EACH DAY, WITH LINKS TO DETAILED INFO.
 
  Main.java is part of the Ponomar program.
- Copyright 2006, 2007, 2008, 2009, 2010 Aleksandr Andreev and Yuri Shardt.
+ Copyright 2006, 2007, 2008, 2009, 2010, 2012 Aleksandr Andreev and Yuri Shardt.
  Corresponding e-mail aleksandr.andreev@gmail.com
 
  Ponomar is free software; you can redistribute it and/or
@@ -487,7 +487,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                             }
                         }
                         //System.out.println(StringOp.dayInfo.get("dRank")+"\nFound Rank: "+Rank );
-
+                        
 			switch (Rank)
 			{
 				case 8:
@@ -514,7 +514,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                                 output += "<Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + table.get("Name") + "</I>";
 					break;
 				default:
-					output += table.get("Name");
+                                    output += table.get("Name");                                
                                         //Note: \u00A0 is a nonbreaking space.
 			}
 

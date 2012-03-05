@@ -484,7 +484,7 @@ public class Commemoration1 implements DocHandler {
                 return stuff1;
             } else {
                 System.out.println(CommNames[0] + Node + CommNames[1] + Type);
-                return new OrderedHashtable();
+                return null;
             }
         } else {
             System.out.println(CommNames[2] + Node);

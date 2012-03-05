@@ -14,7 +14,7 @@ THIS MODULE READS XML FILES THAT CONTAIN THAT ARE OF THE <DAY> TYPE
 AND STORES THE INFORMATION IN A MANNER USUABLE BY OTHER COMPONENTS
 OF THE PROGRAMME.
 
-(C) 2010 YURI SHARDT. ALL RIGHTS RESERVED.
+(C) 2010, 2012 YURI SHARDT. ALL RIGHTS RESERVED.
 
 PERMISSION IS HEREBY GRANTED TO USE, MODIFY, AND/OR REDISTRIBUTE THIS SOURCE CODE
 PROVIDED THAT THIS NOTICE REMAINS IN ALL VERSION AND / OR DERIVATIVES THEREOF.
@@ -174,14 +174,16 @@ public class Day implements DocHandler {
         String CSep=(String)Text.Phrases.get("CommSep");
         String output = "";
         for (int i = 0; i < OrderedCommemorations.size(); i++) {
-            if (output.length()>0){
-                output+=CSep;
-            }
             Commemoration1 CCom = (Commemoration1) OrderedCommemorations.get(i);
-            
+
             String Sid = CCom.getSId();
             String Cid = CCom.getCId();
             String NameF = CCom.getName();
+            
+            if (output.length()>0 && NameF.length()>0){
+                output+=CSep;
+            }
+            
             //System.out.println(NameF);
             if (CCom.checkLife()){
                 output += "<A Href='goDoSaint?id=" + Sid + "," + Cid + "'>";
@@ -212,7 +214,7 @@ public class Day implements DocHandler {
                     output += "<Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
                     break;
                 default:
-                    output += NameF;
+                    output += NameF;                    
                 //Note: \u00A0 is a nonbreaking space.
                 }
              if (CCom.checkLife()){
