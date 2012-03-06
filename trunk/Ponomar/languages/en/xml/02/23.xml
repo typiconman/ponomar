@@ -1,4 +1,5 @@
-<DAY><SAINT SId="1007" CId="09107" Cmd="nday == -58 || nday == -54 || nday == -52 || nday == -49"/>
+<DAY>
+<SAINT SId="1007" CId="09107" Cmd="nday == -58 || nday == -54 || nday == -52 || nday == -49"/>
 <SAINT SId="496" CId="496"/>
 <SAINT SId="4874" CId="4874"/>
 <SAINT SId="498" CId="498"/>
@@ -9,4 +10,6 @@
 <SAINT SId="022301" CId="022301"/>
 <SAINT SId="02230399" CId="022302"/>
 <SAINT SId="02230499" CId="022303"/>
+<!-- READINGS FOR THE FINDING OF THE HEAD DONE TOMORROW (DURING LENT) -->
+<SAINT SId="1007" CId="0910701" Cmd="nday &gt;= -49 &amp;&amp; dow != 6 || nday == -51 || nday == -53"/>
 </DAY>

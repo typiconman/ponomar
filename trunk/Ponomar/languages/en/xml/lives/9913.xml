@@ -1,5 +1,4 @@
 <SAINT>
 <NAME Nominative="Commemoration of the Departed" Short="departed" Cmd="nday != -50 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)"/>
-<NAME Nominative="Commemoration of all the saints, who showed forth in asceticism" Short="departed" Cmd="nday == -50 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)"/>
 <NAME Nominative="Demetrius Saturday: Commemoration of the Departed" Short="departed" Cmd="doy &gt;= 287 &amp;&amp; doy &lt;= 294"/>
 </SAINT>

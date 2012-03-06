@@ -1,14 +1,19 @@
 <SAINT>
 <SERVICE Type="7">
-<VESPERS>
-<SCRIPTURE Type="1" Reading="Ex_3:1-8" Cmd="nday != 0"/>
-<SCRIPTURE Type="2" Reading="Prov_8:22-30" Cmd="nday != 0"/>
-<SCRIPTURE Type="3" Reading="Gen_28:10-17" Cmd="nday &gt; 0"/>
-<SCRIPTURE Type="4" Reading="Ezek_43:27-44:4" Cmd="nday &gt; 0"/>
-<SCRIPTURE Type="5" Reading="Prov_9:1-11" Cmd="nday &gt; 0"/>
+<!-- THE RUBRICS FOR ANNUNCIATION VARY, DEPENDING ON THE SEASON -->
+<VESPERS Cmd="nday &gt; 0 || nday &lt; 0 &amp;&amp; dow == 0">
+<SCRIPTURE Type="1" Reading="Gen_28:10-17"/>
+<SCRIPTURE Type="2" Reading="Ezek_43:27-44:4"/>
+<SCRIPTURE Type="3" Reading="Prov_9:1-11"/>
+<SCRIPTURE Type="4" Reading="Ex_3:1-8"/>
+<SCRIPTURE Type="5" Reading="Prov_8:22-30"/>
+</VESPERS>
+<VESPERS Cmd="nday &lt; 0 &amp;&amp; !(dow == 0 || dow == 6)">
+<SCRIPTURE Type="1" Reading="Ex_3:1-8"/>
+<SCRIPTURE Type="2" Reading="Prov_8:22-30"/>
 </VESPERS>
 <MATINS>
-<SCRIPTURE Type="1" Reading="Lk_1:39-49, 56"/>
+<SCRIPTURE Type="1" Reading="Lk_1:39-49, 56" Pericope="4"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Heb_2:11-18" Pericope="306"/>

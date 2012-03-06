@@ -1,5 +1,5 @@
 <SAINT>
-<NAME Short=""/>
+<NAME Short="Finding of the Head"/>
 <NAME Nominative="&lt;i&gt;The service for the finding of the Forerunner”s Head is observed on Meatfare Friday&lt;/i&gt;" Cmd="nday == -57"/>
 <NAME Nominative="&lt;i&gt;The service for the finding of the Forerunner”s Head is observed on Cheesefare Tuesday&lt;/i&gt;" Cmd="nday == -53"/>
 <NAME Nominative="&lt;i&gt;The service for the finding of the Forerunner”s Head is observed on Cheesefare Thursday&lt;/i&gt;" Cmd="nday == -51"/>

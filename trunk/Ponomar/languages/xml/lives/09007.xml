@@ -4,23 +4,23 @@
 <SERVICE>
 <PRIMES>
 <SCRIPTURE Type="1" Reading="Mica_5:2-4" Cmd="!(dow == 6 || dow == 0)"/>
-<SCRIPTURE Type="2" Reading="Heb_1:1-2" Cmd="!(dow == 6 || dow == 0)"/>
-<SCRIPTURE Type="3" Reading="Mt_1:18-25" Cmd="!(dow == 6 || dow == 0)"/>
+<SCRIPTURE Type="2" Reading="Heb_1:1-2" Pericope="303" Cmd="!(dow == 6 || dow == 0)"/>
+<SCRIPTURE Type="3" Reading="Mt_1:18-25" Pericope="2" Cmd="!(dow == 6 || dow == 0)"/>
 </PRIMES>
 <TERCE>
 <SCRIPTURE Type="1" Reading="Baruch_3:36-4:4" Cmd="!(dow == 6 || dow == 0)"/>
-<SCRIPTURE Type="2" Reading="Gal_3:23-29" Cmd="!(dow == 6 || dow == 0)"/>
-<SCRIPTURE Type="3" Reading="Lk_2:1-20" Cmd="!(dow == 6 || dow == 0)"/>
+<SCRIPTURE Type="2" Reading="Gal_3:23-29" Pericope="208" Cmd="!(dow == 6 || dow == 0)"/>
+<SCRIPTURE Type="3" Reading="Lk_2:1-20" Pericope="5" Cmd="!(dow == 6 || dow == 0)"/>
 </TERCE>
 <SEXTE>
 <SCRIPTURE Type="1" Reading="Isa_7:10-16, 8:1-4, 8-10" Cmd="!(dow == 6 || dow == 0)"/>
-<SCRIPTURE Type="2" Reading="Heb_1:10-2:3" Cmd="!(dow == 6 || dow == 0)"/>
-<SCRIPTURE Type="3" Reading="Mt_2:1-12" Cmd="!(dow == 6 || dow == 0)"/>
+<SCRIPTURE Type="2" Reading="Heb_1:10-2:3" Pericope="304" Cmd="!(dow == 6 || dow == 0)"/>
+<SCRIPTURE Type="3" Reading="Mt_2:1-12" Pericope="3" Cmd="!(dow == 6 || dow == 0)"/>
 </SEXTE>
 <NONE>
 <SCRIPTURE Type="1" Reading="Isa_9:6-7" Cmd="!(dow == 6 || dow == 0)"/>
-<SCRIPTURE Type="2" Reading="Heb_2:11-18" Cmd="!(dow == 6 || dow == 0)"/>
-<SCRIPTURE Type="3" Reading="Mt_2:13-23" Cmd="!(dow == 6 || dow == 0)"/>
+<SCRIPTURE Type="2" Reading="Heb_2:11-18" Pericope="306" Cmd="!(dow == 6 || dow == 0)"/>
+<SCRIPTURE Type="3" Reading="Mt_2:13-23" Pericope="4" Cmd="!(dow == 6 || dow == 0)"/>
 </NONE>
 </SERVICE>
 </SAINT>
