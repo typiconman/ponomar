@@ -3,16 +3,16 @@
 <SERVICE Type="5"/>
 <SERVICE>
 <VESPERS>
-<SCRIPTURE Type="1" Reading="Deut_1:8-11, 15-17" />
-<SCRIPTURE Type="2" Reading="Deut_10:14-21" />
-<SCRIPTURE Type="3" Reading="Wisd_3:1-9" />
+<SCRIPTURE Type="1" Reading="Deut_1:8-11, 15-17"/>
+<SCRIPTURE Type="2" Reading="Deut_10:14-21"/>
+<SCRIPTURE Type="3" Reading="Wisd_3:1-9"/>
 </VESPERS>
 <MATINS>
-<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Cmd="dow != 0"/>
+<SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="dow != 0"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Heb_13:7-16"/>
-<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" />
+<SCRIPTURE Type="apostol" Reading="Heb_13:7-16" Pericope="334"/>
+<SCRIPTURE Type="gospel" Reading="Mt_5:14-19" Pericope="11"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

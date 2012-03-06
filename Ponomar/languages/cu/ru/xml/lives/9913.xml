@@ -1,7 +1,6 @@
 ﻿<SAINT>
 <NAME Short="усопших" Genetive="усопших"/>
-<NAME Nominative="Поминовение усопших" Cmd="nday != -50 || nday != 49 &amp;&amp; !(doy >= 287 &amp;&amp; doy <= 294)"/>
-<NAME Nominative="Поминовение всех свв. отцев в монашестве подвизавшихся" Cmd="nday == -50 &amp;&amp; !(doy >= 287 &amp;&amp; doy <= 294)"/>
-<NAME Nominative="Троицкая родительская суббота"  Cmd="nday == 49 &amp;&amp; !(doy >= 287 &amp;&amp; doy <= 294)"/>
-<NAME Nominative="Димитриевская родительская суббота" Cmd="doy >= 287 &amp;&amp; doy <= 294"/>
+<NAME Nominative="Поминовение усопших" Cmd="nday != -50 || nday != 49 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)"/>
+<NAME Nominative="Троицкая родительская суббота"  Cmd="nday == 49 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)"/>
+<NAME Nominative="Димитриевская родительская суббота" Cmd="doy &gt;= 287 &amp;&amp; doy &lt;= 294"/>
 </SAINT>

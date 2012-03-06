@@ -1,25 +1,26 @@
 <SAINT>
-<NAME Nominative="" /> <!-- No name should be assigned to this commemoration. This file stores the readings and service for the Royal Hours -->
+<NAME Nominative="" Short="Royal Hours"/>
+<!-- No name should be assigned to this commemoration. This file stores the readings and service for the Royal Hours of Theophany -->
 <SERVICE>
 <PRIMES>
-<SCRIPTURE Type="1" Reading="Isa_35:1-10" />
-<SCRIPTURE Type="2" Reading="Acts_13:25-32" />
-<SCRIPTURE Type="3" Reading="Mt_3:1-12" />
+<SCRIPTURE Type="1" Reading="Isa_35:1-10"/>
+<SCRIPTURE Type="2" Reading="Acts_13:25-32" Pericope="33"/>
+<SCRIPTURE Type="3" Reading="Mt_3:1-11" Pericope="5"/>
 </PRIMES>
 <TERCE>
-<SCRIPTURE Type="1" Reading="Isa_1:16-20" />
-<SCRIPTURE Type="2" Reading="Acts_19:1-8" />
-<SCRIPTURE Type="3" Reading="Mk_1:1-8" />
+<SCRIPTURE Type="1" Reading="Isa_1:16-20"/>
+<SCRIPTURE Type="2" Reading="Acts_19:1-8" Pericope="42"/>
+<SCRIPTURE Type="3" Reading="Mk_1:1-8" Pericope="1"/>
 </TERCE>
 <SEXTE>
-<SCRIPTURE Type="1" Reading="Isa_12:3-6" />
-<SCRIPTURE Type="2" Reading="Rom_6:6-23" />
-<SCRIPTURE Type="3" Reading="Mk_1:9-15" />
+<SCRIPTURE Type="1" Reading="Isa_12:3-6"/>
+<SCRIPTURE Type="2" Reading="Rom_6:3-11" Pericope="91"/>
+<SCRIPTURE Type="3" Reading="Mk_1:9-15" Pericope="2"/>
 </SEXTE>
 <NONE>
-<SCRIPTURE Type="1" Reading="Isa_49:8-15" />
-<SCRIPTURE Type="2" Reading="Tit_2:11-3:7" />
-<SCRIPTURE Type="3" Reading="Mt_3:13-17" />
+<SCRIPTURE Type="1" Reading="Isa_49:8-15"/>
+<SCRIPTURE Type="2" Reading="Tit_2:11-14,3:4-7" Pericope="302"/>
+<SCRIPTURE Type="3" Reading="Mt_3:13-17" Pericope="6"/>
 </NONE>
 </SERVICE>
 </SAINT>

@@ -2,7 +2,7 @@
 <!-- This is for the Transfer of the relics of Boris and Gleb, as well as the main feast. -->
 <SERVICE Type="4">
 <MATINS>
-<SCRIPTURE Type="1" Reading="Lk_22:12-19" Cmd="dow != 0"/>
+<SCRIPTURE Type="1" Reading="Lk_21:12-19" Cmd="dow != 0" Pericope="106"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Rom_8:28-39" Pericope="99"/>

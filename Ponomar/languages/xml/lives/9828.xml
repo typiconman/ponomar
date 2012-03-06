@@ -1,10 +1,10 @@
 <SAINT>
 <SERVICE Type="0">
 <MATINS>
-<SCRIPTURE Type="1" Reading="Lk_24:36-53" Cmd="((ndayP / 7 - 7) % 11 == 6) &amp;&amp; dRank != 6"/>
-<SCRIPTURE Type="1" Reading="Jn_20:1-10" Cmd="((ndayP / 7 - 7) % 11 == 7) &amp;&amp; dRank != 6"/>
-<SCRIPTURE Type="1" Reading="Jn_21:1-14" Cmd="((ndayP / 7 - 7) % 11 == 10) &amp;&amp; dRank != 6"/>
-<SCRIPTURE Type="1" Reading="Jn_21:15-25" Cmd="((ndayP / 7 - 7) % 11 == 0) &amp;&amp; dRank != 6"/>
+<SCRIPTURE Type="1" Reading="Lk_24:36-53" Pericope="114" Cmd="((ndayP / 7 - 7) % 11 == 6) &amp;&amp; dRank != 6"/>
+<SCRIPTURE Type="1" Reading="Jn_20:1-10" Pericope="63" Cmd="((ndayP / 7 - 7) % 11 == 7) &amp;&amp; dRank != 6"/>
+<SCRIPTURE Type="1" Reading="Jn_21:1-14" Pericope="66" Cmd="((ndayP / 7 - 7) % 11 == 10) &amp;&amp; dRank != 6"/>
+<SCRIPTURE Type="1" Reading="Jn_21:15-25" Pericope="67" Cmd="((ndayP / 7 - 7) % 11 == 0) &amp;&amp; dRank != 6"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Heb_4:14-5:6" Pericope="311"/>

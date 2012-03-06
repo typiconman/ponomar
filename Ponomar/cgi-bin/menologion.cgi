@@ -358,7 +358,7 @@ sub formatScriptureReading {
 	
 	my ($book, $verses) = split(/_/, $reading);
 	my $MG = exists $matinsGospels{$reading} && $dow == 0 ? " " . $language_data{133 + $matinsGospels{$reading}} : "";
-	$MG .= " (" . $weekDays[$dow] . " $effWeek)" if (defined $effWeek);
+	# $MG .= " (" . $weekDays[$dow] . " $effWeek)" if (defined $effWeek);
 	return defined $pericope ? qq(<A Href="JavaScript:doReadings('$book', '$verses');">$bibleBookNames{$book} $verses (§ $pericope)</A>$MG) : qq(<A Href="JavaScript:doReadings('$book', '$verses');">$bibleBookNames{$book} $verses</A>$MG);
 }
 
@@ -674,9 +674,9 @@ $src = "";
 foreach my $source (keys %SAINTS) {
 	next unless $SAINTS{$source}{Reason} eq "pentecostarion2";
 	## XXX: CIDs 9800 - 9900 are reserved for Triodion
-	## CIDs 9900 - 9999 are reserved for Pentecostarion
+	## CIDs 9000 - 9315 are reserved for Pentecostarion
 	## NO OTHER CIDs should be read
-	next unless ($source >= 9800 && $source < 10000);
+	next unless (($source > 9000 && $source <= 9315) || ($source > 9800 && $source < 9900));
 
 	$src = $source;
 	foreach my $file (findTopDown($language, "xml/lives/$src.xml")) {
@@ -768,9 +768,9 @@ $src = "";
 foreach my $source (keys %SAINTS) {
 	next unless $SAINTS{$source}{Reason} eq "pentecostarion3";
 	## XXX: CIDs 9800 - 9900 are reserved for Triodion
-	## CIDs 9900 - 9999 are reserved for Pentecostarion
+	## CIDs 9000 - 9315 are reserved for Pentecostarion
 	## NO OTHER CIDs should be read
-	next unless ($source >= 9800 && $source < 10000);
+	next unless (($source > 9000 && $source <= 9315) || ($source > 9800 && $source < 9900));
 	
 	$src = $source;
 	foreach my $file (findTopDown($language, "xml/lives/$src.xml")) {
@@ -846,8 +846,22 @@ foreach my $type (@order_of_types) {
 	print "<B>" . $scriptTypes{$type} . "</B>: ";
 	foreach my $source (@order_of_srcs) {
 		next unless $READINGS{$source}{$type};
-		print join ("; ", map { formatScriptureReading( $READINGS{$source}{$type}{$_}{Reading}, $READINGS{$source}{$type}{$_}{Pericope}, $READINGS{$source}{$type}{$_}{EffWeek} ) } sort { $a cmp $b } keys %{ $READINGS{$source}{$type} });
-		print " (" . ($SAINTS{$source}{NAME}{Genetive} or $SAINTS{$source}{NAME}{Short}) . "); ";
+		
+		foreach my $reading (sort {$a cmp $b} keys %{ $READINGS{$source}{$type} } ) {
+			if (defined $READINGS{$source}{$type}{$reading}{EffWeek}) {
+				print formatScriptureReading( $READINGS{$source}{$type}{$reading}{Reading}, $READINGS{$source}{$type}{$reading}{Pericope} );
+				my $descript = $SAINTS{$source}{NAME}{Nominative};
+				my $effWeek  = $READINGS{$source}{$type}{$reading}{EffWeek};
+				$descript =~ s/\d+/$effWeek/;
+				print " ($descript); ";
+			} else {
+				print formatScriptureReading( $READINGS{$source}{$type}{$reading}{Reading}, $READINGS{$source}{$type}{$reading}{Pericope} );
+				print "; ";
+			}
+		}
+			
+#		print join ("; ", map { formatScriptureReading( $READINGS{$source}{$type}{$_}{Reading}, $READINGS{$source}{$type}{$_}{Pericope}, $READINGS{$source}{$type}{$_}{EffWeek} ) } sort { $a cmp $b } keys %{ $READINGS{$source}{$type} });
+		print " (" . ($SAINTS{$source}{NAME}{Genetive} or $SAINTS{$source}{NAME}{Short}) . "); " unless (grep { $READINGS{$source}{$type}{$_}{EffWeek} } keys %{ $READINGS{$source}{$type} });
 	}
 	print "<BR>\n";
 }
