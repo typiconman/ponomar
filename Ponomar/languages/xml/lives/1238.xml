@@ -1,6 +1,6 @@
 <SAINT>
 <SERVICE Type="4">
-<VESPERS>
+<VESPERS Cmd="dow == 0">
 <SCRIPTURE Type="1" Reading="Isa_43:9-14"/>
 <SCRIPTURE Type="2" Reading="Wisd_3:1-9"/>
 <SCRIPTURE Type="3" Reading="Wisd_5:15-6:3"/>
