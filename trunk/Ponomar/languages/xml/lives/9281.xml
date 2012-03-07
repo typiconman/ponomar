@@ -3,7 +3,7 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <MATINS>
-<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dRank != 6"/>
+<SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dRank &lt; 7"/>
 </MATINS>
 <LITURGY>
 <!-- CASE ONE: THERE ARE NO MORE WEEKS REMAINING AND WE ARE BETWEEN JANUARY 7 AND JANUARY 28 -->

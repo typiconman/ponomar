@@ -1,6 +1,6 @@
-<DAY><SAINT CId="9901" Cmd="doy &gt;= 6 &amp;&amp; doy &lt;= 12"/>
-
-<SAINT CId="9903" Cmd="doy == 363 || doy == 364 || (doy &gt;= 0 &amp;&amp; doy &lt;= 4)"/>
+<DAY>
 <SAINT CId="9905" Cmd="doy &gt;= 359 &amp;&amp; doy &lt;= 364"/>
+<SAINT CId="9903" Cmd="doy == 363 || doy == 364 || (doy &gt;= 0 &amp;&amp; doy &lt;= 4)"/>
+<SAINT CId="9901" Cmd="doy &gt;= 6 &amp;&amp; doy &lt;= 12"/>
 <SAINT SId="0" CId="9280" Tone="7"/>
 </DAY>
