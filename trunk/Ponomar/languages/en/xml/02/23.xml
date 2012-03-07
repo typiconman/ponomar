@@ -10,6 +10,6 @@
 <SAINT SId="022301" CId="022301"/>
 <SAINT SId="02230399" CId="022302"/>
 <SAINT SId="02230499" CId="022303"/>
-<!-- READINGS FOR THE FINDING OF THE HEAD DONE TOMORROW (DURING LENT) -->
-<SAINT SId="1007" CId="0910701" Cmd="nday &gt;= -49 &amp;&amp; dow != 6 || nday == -51 || nday == -53"/>
+<!-- READINGS FOR THE FINDING OF THE HEAD DONE TOMORROW (DURING LENT or the two days of Cheese Week) -->
+<SAINT SId="1007" CId="0910702" Cmd="nday &gt;= -43 &amp;&amp; dow != 6 || nday == -51 || nday == -53"/>
 </DAY>
