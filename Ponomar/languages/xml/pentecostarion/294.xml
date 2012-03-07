@@ -1,3 +1,4 @@
-<DAY><SAINT CId="9901" Cmd="doy &gt;= 6 &amp;&amp; doy &lt;= 12"/>
+<DAY>
+<SAINT CId="9901" Cmd="doy &gt;= 6 &amp;&amp; doy &lt;= 12"/>
 <SAINT SId="0" CId="9294" Tone="1"/>
 </DAY>

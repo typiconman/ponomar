@@ -2,7 +2,7 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <MATINS>
-<SCRIPTURE Type="matins" Reading="Jn_21:1-14" Pericope="66" Cmd="dRank != 6"/>
+<SCRIPTURE Type="matins" Reading="Jn_21:1-14" Pericope="66" Cmd="dRank &lt; 7"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Gal_2:16-20" Pericope="203" EffWeek="21"/>
