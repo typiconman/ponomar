@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Saint Meletios, Archbishop of Antioch († 381)" Short="Saint Meletios"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
 &lt;p&gt;Saint Meletios, Archbishop of Antioch, was at first a bishop of Sebasteia in Armenia (c.357), and afterwards he was summoned by the emperor Constantius to Antioch to help defend against the Arian heresy, and received there the cathedra-seat.&lt;/p&gt;&lt;p&gt;Saint Meletios struggled quite zealously against the Arian error, but through the intrigues of the heretics he was thrice deposed from his cathedra-seat; Constantius had become surrounded by the Arians and had been swayed over to their position. In all this Saint Meletios was distinguished by an extraordinary gentleness, and he constantly led along his flock by the example of his own virtue and kindly disposition, presupposing that upon suchlike a soil sprouts more readily the seeds of the true teaching of the faith.&lt;/p&gt;&lt;p&gt;Saint Meletios was the one who ordained as deacon the future hierarch Saint Basil the Great. And Saint Meletios also baptised and encouraged the growth under him of another of the greatest luminaries of Orthodoxy—Saint John Chrysostom, who afterwards wrote an eulogy to his former archpastor. &lt;/p&gt;&lt;p&gt;After Constantius, the throne was occupied by Julian the Apostate, and the saint again was expelled, having to hide himself away in secret places for his safety. But again returning under the emperor Jovian in the year 363, Saint Meletios wrote his theological tract, “Exposition of the Faith,” which facilitated the conversion to Orthodoxy of many of the Arians.&lt;/p&gt;&lt;p&gt;In the year 381, under the emperor Theodosius the Great (379-395), the Second Œcumenical Council was convened. Already in the year 380 the saint had set off on his way to the Second Œcumenical Council at Constantinople, and came to preside over it. Before the start of the Council, Saint Meletios raised up his hand displaying three fingers, and then conjoining together two fingers and bending the one he blessed the people, proclaiming: “We apprehend three hypostatic-persons, and we speak about one self-same nature,”—and with this declaration of the saint there flashed the fire of a lightning-bolt. During the time of the Council Saint Meletios expired to the Lord. Saint Gregory of Nyssa honoured the memory of the deceased with an eulogistic word. &lt;/p&gt;&lt;p&gt;There are preserved discourses of Saint Meletios concerning the One-in-Essence nature of the Son of God with God the Father, and also his letter to the emperor Jovian about the confessing of the Holy Trinity. The relics of Saint Meletios were transferred from Constantinople to Antioch. &lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;The truth of things revealed thee to thy flock as a rule of faith, * a model of meekness and a teacher of abstinence * wherefore thou hast attained the heights through humility * and riches through poverty. ** O hierarch Meletius our father, entreat Christ God that our souls be saved.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="6">
 &lt;p&gt;Fearing the boldness of thy spirit, * the apostate Macedonius fleeth; * but we, thy servants, celebrating a service of prayer to thee, * have recourse to thee with love, O Meletius, conversor with the angels, * fiery sword of Christ our God who cuttest down all the ungodly; ** and we hymn thee as a beacon enlightening all.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

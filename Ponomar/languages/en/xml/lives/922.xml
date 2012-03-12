@@ -1,17 +1,18 @@
 <SAINT>
 <NAME Nominative="Martyr Sabbas Stratelates “the General” of Rome and 70 soldiers with him († 272)" Short="Martyr Sabbas"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Martyr Sava came from a Gothic tribe. For his bravery he attained the high rank of military-commander or “stratilates,” and he served under the Roman emperor Aurelian (270-275).&lt;/p&gt;&lt;p&gt;From the time of his youth Sava was a Christian and he fervently followed the commands of Christ,—he helped the needy and visited Christians locked up in prison. For his pure and virtuous life the saint received from the Lord the gift of wonderworking and in the Name of Christ he healed the sick and cast out demons.&lt;/p&gt;&lt;p&gt;When the emperor learned that Saint Sava was a Christian, he demanded that he apostacise. The martyr threw down his military sash and declared, that he would not forsake his faith. They beat him, burnt at him with torches, threw him in a cauldron with tar, but the martyr remained unharmed.&lt;/p&gt;&lt;p&gt;Looking on at his torments, 70 Soldiers came to believe in Christ, who then were beheaded by the sword. Saint Sava they threw in prison. At midnight during the time of prayer, Christ appeared to the martyr and shone on him the Light of His Glory. The Saviour bid him not to fear, but rather stand firm. Encouraged, the Martyr Sava underwent new torture in the morning and was drownded in a river († 272).&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In their sufferings, O Lord, * Thy martyrs received imperishable crowns from Thee our God; * for, possessed of Thy might, * they set at nought the tormentors and crushed the feeble audacity of the demons. ** By their supplications save Thou our souls.&lt;/p&gt;
 </TROPARION><TROPARION Type="2" Tone="5">
 &lt;/p&gt;&lt;p&gt;Abandoning earthly rank and honor, O athlete, * thou didst confess Christ God * before the false and tyrannical emperors, * and for His sake thou didst undergo many sufferings, O glorious one. * Wherefore, splendidly adorned with the armies of heaven, * thou hast been crowned with a most beautiful wreath of victory by the King Who reigneth over all. * Standing before Him, O Sabbas, ** pray thou that He save our souls.
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4">
 &lt;p&gt;Shown to be an invincible athlete, * thou didst overcome the wiles of the barbarians, O glorious one, * and having contended most steadfastly, * thou didst vanquish a multitude of the invisible fœ. * Wherefore, thou hast woven a wreath of victory. * Entreat Christ, O most blessed Sabbas, ** in behalf of us who honor thee with faith.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

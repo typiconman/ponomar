@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyr Myron the Presbyter of Cyzicus († 250)" Short="Martyr Myron"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Holy Martyr Myron was a presbyter in Achæia (Greece), and lived during the III Century. He suffered in the year 250 under the emperor Decius (249-251). The presbyter was gentle and kind to people, but he was also courageous in the defense of his spiritual children. One time, on the feast of the Nativity of Christ, he was celebrating Divine-services. The local governor Antipater came into the church with soldiers so as to arrest those praying there and to subject them to torture. Seeing this, Saint Myron began heatedly to plead for his flock, denouncing the governor for his cruelty. The saint was delivered over to torture,—they took him and struck at his body with iron rods. They then threw the presbyter into a red-hot oven, but the Lord preserved the martyr—at the very moment when about 150 men at a nearby pagan temple were scorched by the oven fire. The governor then began to demand the martyr to worship idols. Having received from Saint Myron a firm refusal, Antipater ordered the leather thongs to be cut from his skin. Saint Myron took one of the leather thongs and threw it in the face of his tormentor. Falling into a rage, Antipater gave orders to strike Saint Myron all over his stripped body, and then to deliver the martyr over to wild beasts for devouring. But the beasts would not touch him. Perceiving himself defeated, Antipater in his blind rage committed suicide. They then took Saint Myron to the city of Kizika, where he was beheaded by the sword († 250).&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="1">
  
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4">
 &lt;p&gt;Having loved Christ from childhood * and observed His divine commandments, O all-glorious one, * thou didst make haste to Him wholly, O most honorable Myron, * and dost pray earnestly with the angels. ** Entreat forgiveness of sins for all who honor thy memory.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

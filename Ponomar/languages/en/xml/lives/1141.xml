@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Apostles of the Seventy Carpus and Alphæus (1&lt;sup&gt;st&lt;/sup&gt; C)" Short="Apostles of"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;/p&gt;&lt;p&gt;The Holy Disciple Carpus (from the 70)—was a disciple and companion of the holy Apostle Paul. In the 2&lt;sup&gt;nd&lt;/sup&gt; Epistle to Timothy, the apostle mentions the name Carpus, at the house of whom in Troias he left a phelon and books (2 Tim. 4: 13). Knowing Carpus as a man of virtue and possessing a mind of lofty purity, the Apostle Paul made him bishop of Thracian Bereia. The disciple Carpus went preaching the Gospel to the island of Crete. Here he encountered Saint Dionysios the Areopagite (Comm. 3 October). In his reminiscences Dionysios recounts about a miraculous vision to the disciple Carpus. &lt;/p&gt;&lt;p&gt;The holy disciple Carpus died peacefully at Bereia (according to other histories he received a martyr’s end during the persecution under the emperor Nero). &lt;/p&gt;&lt;p&gt;The Holy Disciple Alphæus (of the 70) came from the Galilean city of Capernaum and was the father of the Apostles James Alphæus and Matthew. 
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="3">
 &lt;p&gt;O holy apostle Carpus * entreat the merciful God ** that He grant to our souls remission of transgressions.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4">
 &lt;p&gt;Illumined by the great outpouring of thy miracles, * the Church hath ever acquired thee as an all-radiant star, O Apostle Carpus. ** Save those who honor thy memory with faith.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

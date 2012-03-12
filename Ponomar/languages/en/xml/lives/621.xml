@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Venerable Theophanes the Confessor of Sigriane († 818)" Short="Venerable Theophanes"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
 &lt;p&gt;The Monk Theophanes the Confessor was born at Constantinople into a pious and reknown family. the father of Theophanes was a kinsman of the Byzantine emperor Leo the Isaurian (717-741). Three years after Theophanes was born, his father died, leaving his family under the care of the emperor himself. Theophanes grew up at the court and became a dignitary under the emperor Leo the Khozar (775-780). His position obliged him to enter into marriage. With the consent of his bride, Theophanes preserved his chastity, since in his soul matured the desire to assume the monastic form. Visiting upon a time with his spouse at monasteries in the Sygreian district (Asia Minor), Theophanes met the perspicacious elder Gregory Stratitios, who predicted to Theophanes’ wife, that her husband would merit the crown of martyrdom. Awhile later the spouse of Theophanes was tonsured a nun in one of the monasteries in Bithynia, and Theophanes accepted monastic tonsure under the monastic elder Gregory. With the blessing of the elder, Theophanes built a monastery on the Island of Kalon in the Sea of Marmara and secluded himself in his cell, being occupied with the transcription of books. And in this occupation Theophanes attained an high degree of mastery. Later on the Monk Theophanes founded yet another monastery in the Sygreian district, at a place called the “Big Settlement,” and became its hegumen. The monk himself took part in all the monastic tasks and for everyone he gave example by his love for work and effort. He was granted by the Lord the gift of wonderworking: he healed the sick and cast out devils. In the year 787 at Nicæa was convened the Seventh Œcumenical Council, which condemned the heresy of the Iconoclasts. The Monk Theophanes was also invited to the Council. He arrived dressed in his patch-tattered attire, but he shone forth by his God-inspired wisdom in affirming the dogmas of the true Orthodoxy.&lt;/p&gt;&lt;p&gt;At age 50 the Monk Theophanes fell grievously ill and right up to his very end he suffered terribly. Situated on his sick-bed, the monk toiled incessantly: he wrote his work, “The Chronographia,”—an history of the Christian Church covering the years 285-813. This work even up into the present has remained an invaluable source in the history of the Church.&lt;/p&gt;&lt;p&gt;During the reign of the emperor Leo the Armenian (813-820), when the saint was already well up into age, the Iconoclast heresy made a comeback. They demanded of Saint Theophanes that he accept the heresy, but he firmly refused and was locked up in prison. His “Big Settlement” monastery was put to the torch. In prison for 23 days, the holy confessor died († 818). After the death of the impious emperor Leo the Armenian, the “Big Settlement” monastery was restored and the relics of the holy confessor were transferred there.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="1">
  
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Receiving divine revelation from on high, * with diligence thou didst depart from the midst of the tumult of life; * and, having become a solitary, O venerable one, * thou didst receive the power to work wonders and the dignity of prophecy, ** having deprived thyself of wealth and wife.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

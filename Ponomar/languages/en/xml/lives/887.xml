@@ -1,15 +1,7 @@
 <SAINT>
 <NAME Nominative="Venerable John of the Ancient Caves in Palestine (8&lt;sup&gt;th&lt;/sup&gt; C)" Short="Venerable John"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Monk John of the Old-Cave is called such because he asceticised during the VIII Century in the Laura of the Monk Chariton († 450, Comm. 28 September). This was called the “Old,” or ancient one, as among the oldest of Palestinian monasteries. The Laura was situated not far from Bethlehem, near the Dead Sea. Saint John in his early years left the world, went to venerate at the holy places of Jerusalem and settled at the Laura, where he attained high spiritual accomplishment. He was ordained to the dignity of presbyter and glorified by his ascetic life. &lt;/p&gt;
-</LIFE><SERVICE>
-<LITURGY>
-<TROPARION Type="1" Tone="1">
- 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
-<KONTAKION Type="1" Tone="1">
- 
-</KONTAKION></LITURGY></SERVICE>
+</LIFE>
+<SERVICE Type="1"/>
 </SAINT>

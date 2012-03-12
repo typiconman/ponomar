@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyrs Emilian and Hyacinth of Amastris" Short="Martyrs Emilian"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Holy Martyr Emelian, a Slav, suffered for Christ during the reign of the emperor Julian the Apostate (361-363). Julian wanted to restore in the Roman empire the cult of the pagan gods, and he circulated an edict throughout all the regions, according to which all Christians would be subject to death. &lt;/p&gt;&lt;p&gt;The city of Dorostolum, situated on the banks of the River Dunaj (Danube), where Saint Emelian lived, was governed by an official named Capitolinus. The imperial edict was read in the city square. The people of Dorostolum said that there were no Christians in the city.&lt;/p&gt;&lt;p&gt;Saint Emelian was a slave of the local city-head, and he was secretly a Christian. Emboldened by the harsh edict, Saint Emelian snuck into the pagan temple, he destroyed statues of the idols with an hammer, he overturned the altars and the candle-stands, and then emerged without notice. But soon the pagans discovered, that the pagan-temple was in ruins. An angry crowd began to beat up a certain Christian, who by chance happened by. Saint Emelian then shouted out loudly, that they should not lay hold of that innocent man, and then he said that he himself had wrecked the pagan-temple. They seized hold of him and led him for judgement to Capitolinus. By order of the official, Saint Emelian was for a long time beaten mercilessly, and then he was condemned to burning. Thrown into a bon-fire, he did not perish, but rather the flames burnt many of the pagans standing about. And when the bon-fire had gone out, Saint Emelian lay down upon the dying embers and with a prayer gave up his spirit to the Lord († 363). At Constantinople afterwards there was built a church in honour of the holy Martyr Emelian, wherein also they transferred his relics.  The Holy Martyr Iacynthos (Hyacinthe) (IV) was born into a pious Christian family in the city of Amastridea (now Amastra in Anatolia). An Angel which appeared gave him his name. As a three year old boy Saint Iacynthos besought of God that a dead infant might be resurrected, and the Lord hearkened to his childish prayer: the dead one arose. Both lads afterwards grew up together, and together they asceticised in virtuous life. Saint Iacynthos once noticed, how the pagans were worshipping a tree, and so he chopped it down. For this they subjected him to harsh tortures. They smashed out all his teeth, and having bound him with rope, they dragged him along the ground and threw him in prison. And it was there that the holy sufferer expired to God.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In his suffering, O Lord, * Thy martyr Emilian received an imperishable crown from Thee our God; * for, possessed of Thy might, * he set at nought the tormentors and crushed the feeble audacity of the demons. ** By his supplications save Thou our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="3">
 &lt;p&gt;Aflame with zeal divine, thou wast not afraid of the ministering fire, * but, fearlessly ascending of thine own will, * thou wast consumed by the kindled fire, * and didst offer thyself to the Master as a sacrifice. ** O glorious martyr Emilian, entreat Christ God, that He grant us great mercy.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

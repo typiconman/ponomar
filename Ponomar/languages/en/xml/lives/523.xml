@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Venerable Basil the Confessor, companion of the Venerable Procopius at Decapolis († c.  750)" Short="Venerable Basil"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
 &lt;p&gt;The Monk Basil the Confessor was a monastic and suffered during the reign of the iconoclast emperor Leo the Isaurian (717-741). When a persecution started against those that venerated holy icons, Saint Basil together with his companion the Monk Prokopios (Comm. 27 February) was subjected to much torture and locked up in prison. here both martyrs languished for a long while, until the death of the impious emperor. When the holy Confessors Basil and Prokopios were set free together with other venerators of holy icons, they continued with their monastic efforts, instructing many in the Orthodox faith and the virtuous life. The Monk Basil died peacefully in the year 750. &lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="1">
 &lt;p&gt;A dweller in the desert, an angel in the flesh, * and a wonderworker wast thou, * O our God-bearing father Basil. * Receiving heavenly gifts through fasting, vigil and prayer, * thou healest the sicknesses and souls * of those who with faith have recourse unto thee. * Glory to Him Who gaveth thee strength! * Glory to Him Who hath crowned thee! ** Glory to Him Who worketh healings for all through thee!&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Receiving divine revelation from on high, * thou didst withdraw from the midst of the tumult, O wise one; * and having lived the monastic life venerably, thou didst receive the power to work miracles and to heal diseases by grace, ** O most blessed and sacred Basil.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyrs Photios and Anicletas of Nicomedia and many with them († 305-306)" Short="Martyrs Photios"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Martyrs Anicetas and Photios (his nephew) were natives of Nicomedia. Anicetas, a military official, denounced the emperor Diocletian (284-305) for having set up in the city square an implement of execution for frightening Christians. The enraged emperor ordered Saint Anicetas to be tortured, and later condemned him to be devoured by wild beasts. But the lions they set loose became gentle and fondled up to him. Suddenly there began a strong earthquake, resulting in the collapse of the pagan temple of Hercules, and many pagans perished beneath the crumbled city walls. The executioner took up a sword to cut off the saint’s head, but he himself fell down insensible. They tried to break Saint Anicetas on the wheel and burn him with fire, but the wheel stopped and the fire went out. They threw the martyr into a furnace with boiling tin, but the tin got cold. Thus the Lord preserved His servant for the edification of many. The martyr’s nephew, Saint Photios, saluted the sufferer and turn to the emperor, remarking: “O idol-worshipper, thine gods—be nothing!” The sword, held over the new confessor, instead struck the executioner himself. Then the martyrs were thrown into prison. After three days Diocletian began to urge them: “Worship our gods, and I shalt give ye glory and riches.” The martyrs answered: “Perish thou with thine honour and riches!” Then they tied them by the legs to wild horses, but the saints, dragged along the ground, remained unharmed. They did not suffer either in the heated up bath-house, which tumbled apart. Finally Diocletian ordered a great furnace to be fired up, and many Christians, inspired by the deeds of Saints Anicetas and Photios, went in themselves with the words: “We are Christians!” They all died with prayer on their lips. The bodies of Saints Anicetas and Photios were not harmed by the fire, and even their hair remained whole. seeing this, many of the pagans came to believe in Christ. This event happened in the year 305.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In their sufferings, O Lord, * Thy martyrs received imperishable crowns from Thee our God; * for, possessed of Thy might, * they set at nought the tormentors and crushed the feeble audacity of the demons. ** By their supplications save Thou our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="1">
  
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

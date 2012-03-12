@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyr Isidore of Chios" Short="Martyr Isidore"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Holy Martyr Isidor lived during the III Century on the Island of Chios, and was a native of Alexandria. During the first year of rule of the emperor Decius (249-251) there was issued an edict to make a census of all those capable to serve in the armies of the Roman empire. Saint Isidor, tall and strong of body, was drafted into the regiment of the military-commander Numerius. Saint Isidor was a Christian, he led a life of temperance and abstinence, he was chaste and he shunned all the pagan customs. Another imperial edict then commanded, that all the soldiers were to worship the Roman pagan gods and to offer them sacrifice. Not to obey the edict carried the penalty of torture and death. The centurion reported to the military-commander Numerius, that Isidor was a Christian. At the interrogation before Numerius Saint Isidor without flinching confessed his faith in Christ the Saviour and refused to offer sacrifice to idols. Numerius urged the saint not to expose himself to tortures and to obey the will of the emperor, but Saint Isidor answered, that he would obey only the will of the eternal God, Christ the Saviour, and never would he renounce Him. The saint was handed over to torture. During the time of torments he praised Christ God and denounced the pagan idols. The military-commander gave orders to cut out the tongue of the saint, but even after this the saint continued distinctly to give glory to Christ. Numerius in fright fell to the ground and himself lost the gift of speech. Getting up with the help of soldiers, by means of gestures he demanded a small board and on it wrote an order—to cut off the head of Saint Isidor. Saint Isidor welcomed his death sentence with joy and said: “I glorify Thee, O my Master, that by Thy mercy Thou hast accepted me in Thine Heavenly Habitation!” The death of the martyr occurred in the year 251. After execution his body was cast out without burial, but another saint, the secret Christian Ammonios, took up his body and committed it to earth. Later on Ammonios himself accepted a martyr’s death in the city of Kyzikos (Comm. 4 September).&lt;/p&gt;&lt;p&gt;At the beginning of the XII Century the Russian pilgrim Daniel saw the relics of the holy Martyr Isidor on the Island of Chios. His relics were later transferred to Constantinople and placed in the church of Saint Irene.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In his suffering, O Lord, * Thy martyr Isidore received an imperishable crown from Thee our God; * for, possessed of Thy might, * he set at nought the tormentors and crushed the feeble audacity of the demons. ** By his supplications save Thou our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4">
 &lt;p&gt;In thy supplications unto God * thou wast shown to be an all-great helmsman for the whole world, O holy one; ** wherefore, we hymn thee today, O divinely wise and all-glorious martyr Isidore.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

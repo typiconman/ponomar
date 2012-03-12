@@ -1,15 +1,7 @@
 <SAINT>
 <NAME Nominative="St. Hypatius the Wonderworker and Bishop of Gangra († c. 326)" Short="St. Hypatius"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
 &lt;p&gt;The Hieromartyr Ipatios, Bishop of Gangra, was bishop of the city of Gangra in Paphlagonia (Asia Minor). In the year 325 he participated in the I Œcumenical Council at Nicæa, at which the heresy of Arius was given anathema.&lt;/p&gt;&lt;p&gt;When Saint Ipatios was returning in 326 from Constantinople to Gangra, followers of the schismatics Novatus and Felicissimus fell upon him in a desolate place. The heretics ran him through with swords and spears, and threw him from an high bank into a swamp. Like the First-martyr Arch-deacon Stephen, Saint Ipatios prayed for his murderers. A certain Arian woman struck the saint on the head with a stone, and he died. The murderers hid his body in a cave, where a christian who kept straw there found his body. Recognising the body of the bishop, he hastened to report about this in the city, and the inhabitants of Gangra piously buried the remains of their beloved arch-pastor. &lt;/p&gt;&lt;p&gt;After death the relics of Saint Ipatios won reknown for numerous miracles, in particular the casting out of demons and for healing the sick.&lt;/p&gt;&lt;p&gt;From of old the Priestmartyr Ipatios was particularly venerated in the Russian land. Thus in the year 1330 was built at Kostroma the Ipatiev monastery, on the place of an appearance of the Mother of God with the Pre-eternal Christ-Child and saints that were present—the Apostle Philip and the Priestmartyr Ipatios, bishop of Gangra. This monastery afterwards occupied a significant place in the spiritual and social life of the nation, particularly during the years of the Time of Troubles. The old-time copies of the Vita of the Priestmartyr Ipatios were widely distributed in Russian literature, and one of these entered into the compiling of the Chet′i Minei [Reading Menaion] of Metropolitan Makarii (1542-1564). In this Vita was preserved an account about the appearance of the Saviour to Saint Ipatios on the eve of the martyr’s death. The veneration to the saint consists of prayers, words of praise and teaching on the day of his memory. The pious veneration of Saint Ipatios was also expressed in the liturgical works of Russian authors. During the XIX Century was written a new service to the Priestmartyr Ipatios, distinct from the services written by the Monk Joseph the Studite, contained in the March Menaion.&lt;/p&gt;
-</LIFE><SERVICE>
-<LITURGY>
-<TROPARION Type="1" Tone="1">
- 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
-<KONTAKION Type="1" Tone="1">
- 
-</KONTAKION></LITURGY></SERVICE>
+</LIFE>
+<SERVICE Type="1"/>
 </SAINT>
