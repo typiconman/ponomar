@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyrs Agathonicus of Nicomedia and his companions: Zotikos, Theoprepios, Acyndinos, Severian, Zeno and others who suffered under Maximian († c. 305-311)" Short="Martyrs Agathonicus"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Martyrs Agathonikes, Zotikos, Theoprepios (in Slavonic: Bogolep), Akyndinos, Severian, Zinon and others accepted death for Christ during the reign of the emperor Maximian (284-305). The Martyr Agathonikes was descended from the illustrious lineage of the Hypasians, and he lived at Nicomedia. Having become well versed in Holy Scripture, he converted many pagans to Christ, in which number was also the most eminent member of the Senate (its “princeps” or leader). Comitus Evtolmius was sent to the Pontine (lower Black Sea) region, where he crucified the followers of the Christian Zotikos, all who had refused to offer sacrifice to idols, but Zotikos himself he took with him. In Nicomedia Evtolmius arrested the Martyr Agathonikes (together with the princeps), and also Theoprepios, Akyndinos and Severian. After tortures, Evtolmius ordered that the martyrs be taken to Thrace for trial by the emperor. But along the way, in the vicinity of Potama, he put to death the Martyrs Zotikos, Theoprepios and Akyndinos - who were unable to proceed further behind the chariot of the governor because of wounds received during the time of torture. The Martyr Severian was put to death at Chalcedon, and the Martyr Agathonikes together with others was beheaded with the sword by order of the emperor, in Selymbria.&lt;/p&gt;&lt;p&gt;The relics of the Martyr Agathonikes within a church named for him was seen at Constantinople in the year 1200 by the Russian pilgrim Antonii. And in the XIV Century Philotheos, the archbishop of Selymbria, devoted a discourse of laudation to the Martyr Agathonikes.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In their sufferings, O Lord, * Thy martyrs received imperishable crowns from Thee our God; * for, possessed of Thy might, * they set at nought the tormentors and crushed the feeble audacity of the demons. ** By their supplications save Thou our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="1">
 &lt;p&gt;Having acquired a good name, O divinely wise one, * thou didst convert wicked men to the Faith, * not fearing tortures, O glorious Agathonicus. * Wherefore, thou hast become an heir to good things, ** and with those who suffered&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

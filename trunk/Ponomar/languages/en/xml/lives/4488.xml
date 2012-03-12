@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Apostle of the Seventy Thaddeus († c. 44)" Short="Apostle of"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Disciple from the Seventy, Thaddeus, was by descent an Hebrew, and he was born in the Syrian city of Edessa. (The holy Disciple from the Seventy Thaddeus mustneeds be distinguished from the Apostle from the Twelve, Jude, also called Thaddeus or Levi, Comm. 19 June). Having come to Jerusalem for a feastday, he heard the preaching of John the Forerunner and, having received from him baptism in Jordan, he remained in Palestine. In beholding the Saviour, he became His follower, and was chosen by the Lord amidst the number of the Seventy Disciples, which He sent by twos for preaching to the cities and locales, which He intended to visit (Lk. 10: 1). After the Ascension of the Saviour to Heaven, the Disciple Thaddeus preached the good-news in Syria and Mesopotamia. He came preaching the Gospel to Edessa and he converted to Christ king Abgar, the people and the pagan-priests. He backed up his preaching with many miracles (about which Abgar wrote to the Assyrian emperor Nerses); he established there priests and built up the Edessa Church. Prince Abgar wanted to reward the Disciple Thaddeus with rich gifts, but he refused and went preaching to other cities, converting many pagans to the Christian faith. Having arrived preaching in the city of Berit (Beirut), he founded there the Church, and it was in this city that he peacefully died in the year 44. (This place for his death is indicated in the Slavonic Meneion, but according to other sources he died in Edessa. According to an ancient Armenian tradition, the Disciple Thaddeus after various tortures was beheaded by the sword on 21 December in the Artaz region in the year 50).&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="3">
 &lt;p&gt;O holy apostle Thaddeus * entreat the merciful God ** that He grant to our souls remission of transgressions.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4">
 &lt;p&gt;Church, ever enlightened by thy miracles, * hath acquired thee as an all-radiant star, O Apostle Thaddeus. ** Save those who with faith honor thy memory.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

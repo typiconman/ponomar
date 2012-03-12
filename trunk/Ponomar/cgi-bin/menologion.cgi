@@ -522,14 +522,14 @@ for (my $i = 0; $i <= $#ils; $i++) {
 
 # 2. Find out if we have an icon available
 my $icon = "http://www.ponomar.net/images/icon.jpg";
-OUTERLOOP: foreach my $id (sort { $SAINTS{$a}{Type} <=> $SAINTS{$b}{Type} } @SAINT_KEYS) {
+OUTERLOOP: foreach my $id (sort { $SAINTS{$b}{Type} <=> $SAINTS{$a}{Type} } @SAINT_KEYS) {
 	next unless $id;
 	foreach my $l (@ils) {
 		eval {
 			findBottomUp( $l, "icons/$id/" );
 		};
 		unless ($@) {
-			$icon = "http://www.ponomar.net/cgi-bin/fetch.cgi?lang=$l&saint=$id&icon=0";
+			$icon = "http://www.ponomar.net/cgi-bin/fetch.cgi?lang=$l&saint=$id&icon=thumb";
 			last OUTERLOOP;
 		}
 	}

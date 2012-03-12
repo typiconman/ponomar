@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Hieromartyr Therapontes the Bishop of Sardis (3&lt;sup&gt;rd&lt;/sup&gt; C)" Short="Hieromartyr Therapontes"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Hieromartyr Therapontos, Bishop of Sardis suffered for Christ during the III Century (the city of Sardis, or Sarda, was situated in the Asia Minor district of Lydia). In fulfilling his priestly service, Saint Therapontos enlightened with the light of the Christian faith and baptised many of the pagan-Hellenes (Greeks). For this, he was brought to trial before the governor Julian and fearlessly declared himself a Christian bishop. They threw him into prison, where for a long time he languished with hunger and thirst, and then they gave him over to cruel tortures, but the torments did not break the saint’s valiant confessing of faith. In chains they led off the saint to the city of Sinaion in Phrygia, and thence to Ancyra. In these cities they again tortured him. They took him to the River Astala, where they stretched him cross-form and bare upon the ground, fastened to four posts driven into the ground, and they beat him fiercely. After this torture, they took the passion-bearer of Christ off to the outskirts of the Satalia diocese, part of the Sardis metropolitanate, and here after long beatings Saint Therapontos ended with his martyr’s deed. The dry posts, to which the saint had been tied, and having soaked up his blood, gave forth green shoots and grew into large trees, the leaves of which were found to have curative powers through which many people received graced healing. &lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;Need English translation&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="1">
  
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

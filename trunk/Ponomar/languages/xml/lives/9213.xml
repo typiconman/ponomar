@@ -2,7 +2,7 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Thess_3:9-13" Pericope="268"/>
+<SCRIPTURE Type="apostol" Reading="I Thess_3:9-13" Pericope="268" EffWeek="24"/>
 <SCRIPTURE Type="gospel" Reading="Lk_17:26-37" Pericope="87" EffWeek="27" Cmd="(doy &gt;= 322 &amp;&amp; doy &lt;= 328) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_14:25-35" Pericope="77" EffWeek="26" Cmd="(doy &gt;= 315 &amp;&amp; doy &lt;= 321) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_12:42-48" Pericope="68" EffWeek="25" Cmd="(doy &gt;= 308 &amp;&amp; doy &lt;= 314) &amp;&amp; GS == 1"/>

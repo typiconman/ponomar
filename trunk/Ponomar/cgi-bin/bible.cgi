@@ -1,14 +1,6 @@
 #!/usr/bin/perl -wT
 
-use warnings;
 use strict;
-use utf8;
-
-############################################################################################
-#### bible.cgi :: THIS IS THE BIBLE READER FOR ONLINE MENOLOGION, COMPATIBLE W/ V. 3
-####
-############################################################################################
-
 use CGI;
 use CGI::Carp qw( fatalsToBrowser );
 use CGI::Cookie;
@@ -17,38 +9,78 @@ use XML::Parser;
 use lib "./";
 use General;
 
+#################################################################################################
+# bible.cgi :: A REWRITE OF THE PONOMAR LECTIONARY (V. 1.2)					#
+# Copyright 2006, 2009 ALEKSANDR ANDREEV. ALL RIGHTS RESERVED					#
+#												#
+# NO PORTION OF THIS CODE MAY BE REPRODUCED OR MODIFIED WITHOUT THE EXPRESS CONSENT 		#
+# AND WRITTEN PERMISSION OF THE AUTHOR.								#
+#################################################################################################
+
+## GLOBALS
+my $basepath = "/home/ponomar0/svn/Ponomar/languages/"; # MUST END IN A SLASH
+my @instructions; # Global array containing reading instructions
+my $dummy; ## A DUMMY TO KEEP THE PREVIOUS CHAPTER
 use constant false => 0;
+
+## GET THE SESSION DATA
+my $q = new CGI;
+my $version = $q->param("version");
+my $book    = $q->param("book")    || "Gen";
+my $reading = $q->param("reading") || "1:1-13"; ## EG: 2:11-3:2, 5, 13-14, 17-4:1
+my $mode    = $q->param("mode");
+my $menu    = $q->param("menu");
+my $language = $q->param("lang") || "en";
+my $hideversenum = $q->param("hideversenum") || 0;
+my $orient  = "ltr";
+
+my @chapters; ## THE CHAPTERS PART OF THE READINGS
+my @verses;   ## THE VERSES PART OF THE READINGS
+my $i = 0;    ## i IS A DUMMY VARIABLE
+$book =~ s/ /_/g; ## REPLACE SPACES IN THE BOOK NAME WITH _
 
 BEGIN {
 	$ENV{PATH} = "/bin:/usr/bin";
 	delete @ENV{ qw( IFS CDPATH ENV BASH_ENV ) };
 }
 
-## GLOBALS
-my $basepath = "/home/ponomar0/svn/Ponomar/languages/";
-my @instructions; # Global array containing reading instructions
-my @chapters; ## THE CHAPTERS PART OF THE READINGS
-my @verses;   ## THE VERSES PART OF THE READINGS
-my $dummy; ## A DUMMY TO KEEP THE PREVIOUS CHAPTER
+# grab the user's cookie
+my $City = "Hillsborough";
+my $Lat = 0.1;
+my $Lon = 1.3;
+my $TZ = -2;
+my $GS = 0;
 
-### DATA GLOBALS
-my $GS = 1; # gospel selector: exJordanville = 0; Lucan Jump = 1
-my $language = "en"; # English is the default language
-my $Lat = 60.0; # THE DEFAULT LATITUDE
-my $Lon = 30.3; # THE DEFAULT LONGITUDE
-my $TZ  = 3;	# THE DEFAULT TIMEZONE (FROM GMT)
-my $City = "Saint Petersburg, Russia"; # THE NAME OF THE DEFAULT LOCATION
-my $dow;	# today's day of week
-my $doy;	# Day-of-year
-my $nday;	# Number of days before or after this year's Pascha
-my $ndayP;	# Number of days after last year's Pascha
-my $ndayF;	# Number of days before next year's Pascha
-my $Tone;
-my $Year;
-my $dRank;
-my @GLOBALS = qw /dow doy nday Year GS Tone dRank/;
+my %cookies     = fetch CGI::Cookie;
+if ($cookies{"menologion"}) {
+	my @temp = split(/\|/, $cookies{"menologion"}->value());
+	if (@temp == 6) {
+		($City, $Lat, $Lon, $TZ, $language, $GS) = @temp;
+	}
+}
 
-#################################### BEGIN SUBROUTINES ###########################
+if ($version) {
+	$language = (split(/\//, $version))[0];
+}
+
+# PREVENT HACKING
+if ($language =~ /^([a-zA-Z\/]+)$/) {
+	$language = $1;
+} else {
+	$language = "en";
+}
+
+## A HASH FOR STORING VERSIONS OF SCRIPTURE AVAILABLE THROUGH THIS SCRIPT
+tie my %versions, "Tie::IxHash";
+
+## A HASH FOR STORING BOOKS AVAILABLE IN A VERSION
+tie my %books, "Tie::IxHash";
+
+## A HASH FOR STORING THE NUMBER OF CHAPTERS AVAILABLE IN A BOOK
+tie my %chaps, "Tie::IxHash";
+my $readingVersion = 0;
+
+## SUBROUTINES
 sub findBottomUp {
 	my ($language, $file) = @_;
 	
@@ -74,41 +106,6 @@ sub findBottomUp {
 
 	return $basepath . $file if (-e $basepath . $file);
 	die "Unable to find file $file in the bottom-up path for language $language";
-}
-
-sub findTopDown {
-	my ($language, $file) = @_;
-	
-	###########################
-	### THIS ALGORITHM IMPLEMENTS THE TOP-DOWN APPROACH FOR READING FILES
-	### DESCRIBED BY YURI IN op. cit., p. 28
-	###
-	### WE CREATE AN ARRAY OF ALL EXTANT FILES NAMED $file IN ALL PATHS
-	### BEGINNING WITH BASEPATH
-	### AND UP TO $basepath/<language>/<script>/<locale>/file
-	### PARAMETERS: SAME AS ABOVE
-	############################
-	
-	my @paths = ();
-	push @paths, $basepath . $file if (-e $basepath . $file);
-	my @parts = split(/\//, $language);
-	for (my $j = 0; $j < @parts; $j++) {
-		my $path = $basepath . join ("/", @parts[0..$j]) . "/" . $file;
-		push @paths, $path if (-e $path);
-	}
-	warn "Unable to find any instances of $file in the path for $language" unless (@paths);
-	return @paths;
-}
-
-sub isNumeric {
-	shift;
-	return /^(\d+\.?\d*|\.\d+)$/;
-}
-
-sub max {
-	my $max = shift;
-	for ( @_ ) { $max = $_ if $max < $_; }
-	return $max;
 }
 
 sub output {
@@ -151,15 +148,14 @@ sub output {
 sub readBible {
 	my $mood = shift;
 	
-	my $filename = $basepath . "$version/" . $book . ".text";
+	my $filename = "$basepath/$version/$book.text";
 	open (PASSAGE, $filename) || die ("Unable to read from $filename : $!");
 		my $dummy   = 0;	# Dummy variable; 1 if we print current line, 0 otherwise
 		my $curline = "";	# Contents of the current line of the book file
 		my $curchap = 0; 	# Current chapter number
 		my $curverse = 0;	# Current verse number
 
-		my $text = ($mood eq "html" && index($version, "cu/") != -1) ? qq( <SPAN Style="font-family: Hirmos Ponomar; font-size: 16px;">) : 
-			   ($mood eq "html") ? qq(<SPAN Style="font-size: 14px">) : "";
+		my $text = ($mood eq "html" && index($version, "cu/") != -1) ? qq( <SPAN Style="font-family: SlavonicFont">) : "";
 
 		## LOOP THROUGH ALL THE READINGS
 		for (my $i = 0; $i < @chapters; $i++) {
@@ -184,22 +180,27 @@ sub readBible {
 			$dummy = 1 - $dummy;
 		}
 	close (PASSAGE);
-	$text .= ($mood eq "html") ? "</SPAN>" : "";
+	$text .= ($mood eq "html" && index($version, "cu/") != -1) ? "</SPAN>" : "";
 	return $text;
 }
 
-################################ PARSING SUBROUTINES #######################################
-tie my %versions, "Tie::IxHash";
-tie my %books, "Tie::IxHash";
-tie my %chaps, "Tie::IxHash";
-my $readingVersion = 0;
+## GET THE XML BIBLE DATA.
+#   1. SET UP THE PARSER
+my $parser = new XML::Parser(ErrorContext => 2);
+$parser->setHandlers(	Start   => \&startElement,
+			End     => \&endElement,
+			Char    => \&text,
+			Default => \&default);
 
+#   2. XML PARSING SUBROUTINES
 sub default {
-	return;
+	# do nothing
+	return 0;
 }
 
 sub text {
-	return;
+	my ($parseinst, $data) = @_;
+	return 0;
 }
 
 sub startElement {
@@ -242,66 +243,28 @@ sub endElement {
 	}
 }
 
-############################# END OF SUBROUTINES ################################
-
-##################################### BEGIN CODE #######################################
-my $q = new CGI;
-
-#### GET THE USER'S COOKIE
-my %cookies = fetch CGI::Cookie;
-if ($cookies{"menologion"}) {
-	my @temp = split(/\|/, $cookies{"menologion"}->value());
-	if (@temp == 6) {
-		($City, $Lat, $Lon, $TZ, $language, $GS) = @temp;
-	}
-}
-
-##### SET UP THE ARGUMENTS
-my $version = $q->param("version");
-my $book    = $q->param("book")    || "Gen";
-my $reading = $q->param("reading") || "1:1-13"; ## EG: 2:11-3:2, 5, 13-14, 17-4:1
-my $mode    = $q->param("mode");
-my $menu    = $q->param("menu");
-my $language = $q->param("lang") || "en";
-my $hideversenum = $q->param("hideversenum") || 0;
-my $orient  = "ltr";
-
-if ($version) {
-	$language = (split(/\//, $version))[0];
-}
-
-# PREVENT HACKING
-if ($language =~ /^([a-zA-Z\/]+)$/) {
-	$language = $1;
-} else {
-	$language = "en";
-}
-
-## GET THE XML BIBLE DATA.
-my $parser = new XML::Parser(ErrorContext => 2);
-$parser->setHandlers(	Start   => \&startElement,
-			End     => \&endElement,
-			Char    => \&text,
-			Default => \&default);
-
-$parser->parsefile( findBottomUp($language, "xml/bible.xml") );
+$parser->parsefile(findBottomUp($language, "xml/bible.xml"));
 
 # CHECK VALIDITY
 unless ( exists( $versions{$version} ) ) {
+	## ERROR OUT: NO SUCH VERSION
 	die ("The version $version does not exist in the Lectionary");
 }
 unless ( exists( $books{$book} ) ) {
+	## ERROR OUT: NO SUCH BOOK
 	die ("The book $book does not exist in the Scriptures");
 }
 
-####### FIGURE OUT WHICH SECTIONS OF THE BIBLE NEED TO BE READ #####
-
+# PARSE THE READING INSTRUCTIONS
+## CHECK TO SEE IF THIS ISN'T JUST A CHAPTER SPECIFICATION
 if ( index($reading, ":") == -1) {
+	my $nexxt = $reading + 1; ## ADD ONE TO THE CHAPTER
 	$chapters[0] = $reading;
 	$verses[0] = 1;
-	$chapters[1] = $reading + 1;
+	$chapters[1] = $nexxt;
 	$verses[1] = 0; ## 0 MEANS STOP BEFORE THE CHAPTER STARTS	
 } else {
+
 	my @parts = split(", ", $reading);
 	## EG 2:11-3:2 / 5 / 13-14 / 17-4:1
 
@@ -331,63 +294,88 @@ if ( index($reading, ":") == -1) {
 	}
 }
 
-############################# OUTPUT CONSTRUCTION ############################3
-if ($mode eq "print") {
-	# Create a printable version
-	print "Content-type: text/html; charset=utf-8\n\n";
-	print qq(<HTML><HEAD><TITLE>$book $reading</TITLE>
-<LINK Rel="stylesheet" Href="http://www.ponomar.net/main.css" Type="text/css" />
-</HEAD>
-<BODY OnLoad="JavaScript:window.print();">
-<DIV Class="mainframe">
-<CENTER><BIG><B>$books{$book} $reading [$versions{$version}]</B></BIG></CENTER><BR><BR>);
-	print readBible("html");
-	if (@instructions) {
-		# PROCESS THE READING INSTRUCTIONS
-		print "<DIV Class=\"instructions\"><A Name=\"instructions\">\n";
-		print join "<BR>", @instructions;
-		print "</A></DIV>\n";
-	}
-	print qq(</DIV><BR>
-<DIV Class="copyright">Printed using Ponomar Lectionary 1.2 at <A Href="http://www.ponomar.net/">http://www.ponomar.net/</A></DIV>
-</BODY>
-</HTML>);
-} elsif ($mode eq "save") {
-	## TODO: USE THE EXAMPLE OF xml2stuff TO ALLOW FOR OTHER FORMATS (E.G., TEX, OOO)
-	print "Content-type: text/html; charset=utf-8\n";
-	print "Content-disposition: attachment; filename=scripture.html\n\n";
+# now, figure out what it is we've been asked to do.
+SWITCH: {
+	if ($mode eq "print") {
+		# Create a printable version
+		my $fontsize = 18;
+		if ($cookies{"fontsize"}) {
+			$fontsize = $cookies{"fontsize"}->value();
+		}
+		$fontsize .= "px";
 		
-	print "<HTML><HEAD><TITLE>$books{$book} $reading [$versions{$version}]</TITLE>\n";
-	print qq(<META Http-equiv="content-type" Content="text/html; charset=utf-8">\n);
-	print qq(</HEAD><BODY>\n);
-	print qq(<CENTER><BIG><B>$books{$book} $reading [$versions{$version}]</B></BIG></CENTER><BR><BR>);
-	print readBible("html");
-	if (@instructions) {
-		# PROCESS THE READING INSTRUCTIONS
-		print "<DIV Class=\"instructions\"><A Name=\"instructions\">\n";
-		print join "<BR>", @instructions;
-		print "</A></DIV>\n";
+		print "Content-type: text/html; charset=utf-8\n\n";
+		print qq(<HTML><HEAD><TITLE>$book $reading</TITLE>
+			<LINK Rel="stylesheet" Href="http://www.ponomar.net/new.css" Type="text/css" />
+			</HEAD>
+			<BODY OnLoad="JavaScript:window.print();">
+			<DIV Class="mainframe" Style="font-size: $fontsize">
+			<CENTER><BIG><B>$books{$book} $reading [$versions{$version}]</B></BIG></CENTER><BR><BR>);
+		print readBible("html");
+		if (@instructions) {
+			# PROCESS THE READING INSTRUCTIONS
+			print "<DIV Class=\"instructions\"><A Name=\"instructions\">\n";
+			print join "<BR>", @instructions;
+			print "</A></DIV>\n";
+		}
+		print qq(</DIV><BR>
+			<DIV Class="copyright">Printed using Ponomar Lectionary 1.2 at <A Href="http://www.ponomar.net/">http://www.ponomar.net/</A></DIV>
+			</BODY>
+			</HTML>);
+		last SWITCH;
 	}
-	print qq(</DIV><BR>
-<DIV Class="copyright">Saved using Ponomar Lectionary 1.2 at <A Href="http://www.ponomar.net/">http://www.ponomar.net/</A></DIV>
-</BODY>
-</HTML>);
-} else {
+	if ($mode eq "save") {
+		# Output an rtf file
+		print "Content-type: text/html; charset=utf-8\n";
+		print "Content-disposition: attachment; filename=scripture.html\n\n";
+		
+#		print "{\\rtf1\n";
+#		print "{\\colortbl \\red255\\green255\\blue255\\;\\red255\\green0\\blue0;\\red255\\green0\\blue0; }\n";
+#		print "{\\info{\\author Ponomar Lectionary 1.2}{\\comment Copyright 2009 Ponomar Technologies, Inc.}{\\title $book $reading [$version]}}\n";
+#		print "{\\qc\\b $books{$book} $reading} [$versions{$version}]\\par\n";
+		print "<HTML><HEAD><TITLE>$books{$book} $reading [$versions{$version}]</TITLE>\n";
+		print qq(<META Http-equiv="content-type" Content="text/html; charset=utf-8">\n);
+		print qq(</HEAD><BODY>\n);
+		print qq(<CENTER><BIG><B>$books{$book} $reading [$versions{$version}]</B></BIG></CENTER><BR><BR>);
+		print readBible("html");
+		if (@instructions) {
+			# PROCESS THE READING INSTRUCTIONS
+			print "<DIV Class=\"instructions\"><A Name=\"instructions\">\n";
+			print join "<BR>", @instructions;
+			print "</A></DIV>\n";
+		}
+		print qq(</DIV><BR>
+			<DIV Class="copyright">Saved using Ponomar Lectionary 1.2 at <A Href="http://www.ponomar.net/">http://www.ponomar.net/</A></DIV>
+			</BODY>
+			</HTML>);
+
+#		print "\\par\n";
+#		if (@instructions) {
+#			# PROCESS THE READING INSTRUCTIONS
+#			print "{\\i Instructions:}\\par\n";
+#			print join "\\par\n", grep { $_ = "{\\cf2 $_ }" } @instructions;
+#		}
+
+#		print "\\par }";
+		last SWITCH;
+	}
+	## NORMAL VIEW MODE
 	print "Content-type: text/html; charset=utf-8\n\n";
 
 	print <<END_OF_TOP;
-<HTML>
-<HEAD><TITLE>Ponomar Project :: Online Menologion</TITLE>
-<!---
-	UNIFIED TEMPLATE FOR ONLINE SERVICES OF THE PONOMAR PROJECT
-	MENOLOGION / LECTIONARY / PASCHALION / PARISH DIRECTORY
-	Copyright (C) 2008 ALEKSANDR ANDREEV
-	This code is free software and is distributed under the terms of the
-	GNU General Public License, either version 3 or later.
----->
-<LINK Rel="stylesheet" Type="text/css" Href="http://www.ponomar.net/new.css">
-<SCRIPT Language="JavaScript" Src="http://www.ponomar.net/new.js"></SCRIPT>
-<script type="text/javascript">
+	<HTML>
+	<HEAD><TITLE>Ponomar Project :: Online Menologion</TITLE>
+	<!---
+		UNIFIED TEMPLATE FOR ONLINE SERVICES OF THE PONOMAR PROJECT
+		MENOLOGION / LECTIONARY / PASCHALION / PARISH DIRECTORY
+
+		Copyright (C) 2008 ALEKSANDR ANDREEV
+		This code is free software and is distributed under the terms of the
+		GNU General Public License, either version 3 or later.
+	---->
+	<LINK Rel="stylesheet" Type="text/css" Href="http://www.ponomar.net/new.css">
+	<SCRIPT Language="JavaScript" Src="http://www.ponomar.net/new.js"></SCRIPT>
+	<script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
@@ -398,8 +386,8 @@ pageTracker._setDomainName("none");
 pageTracker._setAllowLinker(true);
 pageTracker._trackPageview();
 } catch(err) {}</script>
-</HEAD>
-<BODY MarginWidth=0 MarginHeight=0 LeftMargin=0 TopMargin=0 BgColor="#FFFFFF">
+	</HEAD>
+	<BODY MarginWidth=0 MarginHeight=0 LeftMargin=0 TopMargin=0 BgColor="#FFFFFF" OnLoad="JavaScript:viewerResize(200);">
 END_OF_TOP
 
 	unless ($menu eq "no") {
@@ -421,7 +409,6 @@ END_OF_TOP2
 	} else {
 		print "<TABLE CellPadding=0 CellSpacing=0 Width=\"100%\" BgColor=\"#F6F6F6\">";
 	}
-	
 	print <<END_OF_TOP3;
 	<TR>
 		<TD Class="borderbar" Width=22%>
@@ -451,6 +438,7 @@ END_OF_TOP3
 
 	## PRINT THE DIFFERENT BOOKS
 	print "<SELECT Name=\"book\" Size=\"15\" OnChange=\"JavaScript:changeMe2();\">\n";
+
 	while ( my ($bk1, $book1) = each(%books) ) {
 		my $selected = ($bk1 eq $book) ? "Selected" : "";
 		print "<OPTION Value=\"$bk1\" $selected > $book1 </OPTION>\n";
@@ -462,20 +450,45 @@ END_OF_TOP3
 	print "<INPUT Type=\"hidden\" Id=\"reading\" Name=\"reading\" Value=\"$reading\">\n";
 	print "<SELECT Name=\"chapter\" Id=\"chapter\" Size=15 OnChange=\"JavaScript:changeMe2();\">\n";
 
-	for (my $j = 1; $j <= $chaps{$book}; $j++) {
+	my $end = $chaps{$book};
+
+	for (my $j = 1; $j <= $end; $j++) {
 		my $selected = ($j == $chapters[0]) ? "Selected" : "";
 		print "<OPTION Value=$j $selected > $j &nbsp;&nbsp; </OPTION>\n";
 	}
 
 	print "</SELECT></FORM><BR><BR>\n";
-	print "<UL Class=\"commentary\"><LI>\n";
-	print join "</LI><LI>", qq(<A Href="JavaScript:openWindow('http://www.ponomar.net/slvsupport.html');">How to display Church Slavonic characters</A>);
-	print "</LI></UL>\n";
-	
+
+	## GET THE COMMENTARY, IF APPROPRIATE
+#	open (COMMENTARY, "/home/ponomar0/www/data/commentary.dat") || die( "Could not get commentary file: $!" );
+#		my @commentaries = <COMMENTARY>;
+#	close (COMMENTARY);
+	my @commentout;
+
+#	foreach my $commentary (@commentaries) {
+#		my @chunks = split (/\*/, $commentary);
+		
+		## CHECK IF THE COMMENTARY MACHES THE BOOK
+#		if ($chunks[0] eq $book) {
+			## GET THE REST OF THE DATA
+			## DATA STORED AS:
+			## BOOK#TITLE AND AUTHOR AND DESCRIPTION#LANG#URL
+#			push @commentout, "<A Href=\"JavaScript:doComments('$chunks[3]');\">$chunks[1] ($chunks[2])</A>";
+#		}
+#	}
+	push @commentout, qq(<A Href="http://www.ponomar.net/cu_support.html" Target="_blank">How to display Church Slavonic characters</A>);
+
+	## NOW PRINT OUT THE COMMENTARY	
+	unless (@commentout == 0) {	
+		print "<UL Class=\"commentary\"><LI>\n";
+		print join "</LI><LI>", @commentout;
+		print "</LI></UL>\n";
+	}
+
 	## NOW PRINT THE MAIN FRAME
 	my $align = $orient eq "ltr" ? "left" : "right";
-	print "</TD><TD Class=\"mainframe\" Id=\"contents\" VAlign=\"top\" Align=\"$align\" Dir=\"$orient\">\n";
-	
+	print "</TD><TD VAlign=\"top\" Align=\"$align\" Dir=\"$orient\">\n";
+
 	## FIGURE OUT THE PREVIOUS SCRIPTURE PASSAGE
 	my $prevchap = $chapters[0] - 1;
 	my $prevbook = $book;
@@ -501,7 +514,7 @@ END_OF_TOP3
 		}
 		$nextchap = 1;
 	}
-	
+
 	## BUILD A NAVIGATION TOOLBAR
 	print "<A Href=\"bible.cgi?version=$version&book=$prevbook&reading=$prevchap&hideversenum=$hideversenum\" Title=\"Go to $books{$prevbook} $prevchap\">";
 	print "<IMG Src=\"../images/previous.gif\" Border=0 Alt=\"Go to $books{$prevbook} $prevchap\"></A>\n";
@@ -511,10 +524,12 @@ END_OF_TOP3
 	print "<IMG Src=\"../images/next.gif\" Border=0 Alt=\"Go to $books{$nextbook} $nextchap\"></A>\n";
 	print "<A Href=\"bible.cgi?version=$version&book=$book&reading=$reading&hideversenum=" . (!$hideversenum) . "\">";
 	print "<IMG Src=\"../images/versenums.gif\" Border=0 Alt=\"Turn verse numbers off / on\"></A>\n";
-	print "<A Href=\"Javascript:decreaseFontSize();\">\n";
+	print "<A Href=\"Javascript:viewerFontSize(-1);\">\n";
 	print "<IMG Src=\"../images/font-dec.gif\" Border=0 Alt=\"-\"></A>\n";
-	print "<A Href=\"JavaScript:increaseFontSize();\">\n";
+	print "<A Href=\"Javascript:viewerFontSize(1);\">\n";
 	print "<IMG Src=\"../images/font-inc.gif\" Border=0 Alt=\"+\"></A>\n";
+#	print "<A Href=\"bookmark.cgi?version=$version&book=$book&reading=$reading\" Title=\"Bookmark $books{$book} $reading\">";
+#	print "<IMG Src=\"../images/bookmark.gif\" Border=0 Alt=\"Bookmark $books{$book} $reading\"></A>\n";
 	print "<A Href=\"JavaScript:doClipboard();\" Title=\"Copy $books{$book} $reading to Lectionary's Clipboard\">";
 	print "<IMG Src=\"../images/copy.gif\" Border=0 Alt=\"Copy $books{$book} $reading to Lectionary's Clipboard\"></A>\n";
 	print "<A Href=\"bible.cgi?version=$version&book=$book&reading=$reading&mode=save&hideversenum=$hideversenum\" Title=\"Save $books{$book} $reading as a text file\">";
@@ -523,9 +538,10 @@ END_OF_TOP3
 	print "<IMG Src=\"../images/print.gif\" Border=0 Alt=\"Print $books{$book} $reading\"></A>\n";
 	print "<A Href=\"JavaScript:doMail();\" Title=\"E-mail $books{$book} $reading\">";
 	print "<IMG Src=\"../images/email.gif\" Border=0 Alt=\"E-mail $books{$book} $reading\"></A><BR><BR>\n";
+	print qq(<DIV Id="zviewer" Class="viewer">);
 	print "<CENTER><BIG><B>$books{$book} $reading</BIG></B></CENTER>\n";
-	
 	print readBible("html");
+	print "</DIV>";
 	if (@instructions) {
 		# PROCESS THE READING INSTRUCTIONS
 		print "<DIV Class=\"instructions\"><A Name=\"instructions\">\n";
@@ -541,7 +557,7 @@ END_OF_TOP3
 			<A Href="JavaScript:openWindow('http://www.ponomar.net/mailme.html');">Contact Me</A>
 		</TD>
 		<TD Align="Center" Width="78%" Class="copyright">
-			Lectionary 1.3 &copy; 2006-2009 Aleksandr Andreev.
+			Lectionary 1.2 &copy; 2006-2009 Aleksandr Andreev.
 		</TD>
 	</TR>
 </TABLE>
@@ -549,6 +565,6 @@ END_OF_TOP3
 </HTML>
 END_OF_FOOTER
 
-} 
+} # end switch;
 
 print "\n";
