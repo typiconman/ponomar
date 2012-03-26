@@ -3,7 +3,7 @@
 <PRIMES Type="Normal"/>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Eph_2:19-3:7" Pericope="222" EffWeek="17"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" Cmd="(doy &lt; 259 &amp;&amp; GS == 1) || GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" EffWeek="17" Cmd="(doy &lt; 259 &amp;&amp; GS == 1) || GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Lk_6:37-45" Pericope="27" EffWeek="20" Cmd="(doy &gt;= 273 &amp;&amp; doy &lt;= 279) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_5:12-16" Pericope="18" EffWeek="19" Cmd="(doy &gt;= 266 &amp;&amp; doy &lt;= 272) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_3:23-4:1" Pericope="11" EffWeek="18" Cmd="(doy &gt;= 259 &amp;&amp; doy &lt;= 265) &amp;&amp; GS == 1"/>
