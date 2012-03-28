@@ -3,7 +3,7 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <MATINS>
-<SCRIPTURE Type="matins" Reading="Lk_24:12-35" Pericope="113" Cmd="dRank &lt; 6"/>
+<SCRIPTURE Type="matins" Reading="Lk_24:13-35" Pericope="113" Cmd="dRank &lt; 6"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="II Cor_6:1-10" Pericope="181" Cmd="GS == 0"/>
