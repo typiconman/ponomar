@@ -1,6 +1,6 @@
 <SAINT>
 <SERVICE Type="3">
-<LITURGY>
+<LITURGY Cmd="nday &gt;= 7">
 <SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213"/>
 <SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24"/>
 </LITURGY>
