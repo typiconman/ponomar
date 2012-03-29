@@ -189,32 +189,49 @@ public class Day implements DocHandler {
                 output += "<A Href='goDoSaint?id=" + Sid + "," + Cid + "'>";
             }
             int Rank = CCom.getRank();
+            String Rank0Format=(String)Text.Phrases.get("Rank0");
+            String Rank1Format=(String)Text.Phrases.get("Rank1");
+            String Rank2Format=(String)Text.Phrases.get("Rank2");
+            String Rank3Format=(String)Text.Phrases.get("Rank3");
+            String Rank4Format=(String)Text.Phrases.get("Rank4");
+            String Rank5Format=(String)Text.Phrases.get("Rank5");
+            String Rank6Format=(String)Text.Phrases.get("Rank6");
+
             switch (Rank) {
                 case 8:
                 case 7:
                 case 6:
                     //output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";//A698
-                    output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD40</Font><B>\u00A0" + NameF + "</B></FONT>";
+                    //output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD40</Font><B>\u00A0" + NameF + "</B></FONT>";
+                    output +=Rank6Format.replace("^NF", NameF);
                     //output += "</body><body style=\"font-family:Hirmos Ponomar;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt;color:red;font-style:bold\">\u00A0" + table.get("Name") + "</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt\">";
                     //output += "<style style=\"font-family:Hirmos Ponomar;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</style>\u00A0<style style=\"color:red\">" + table.get("Name") + "</style>";
                     //output+="<B><rank style=\"font-face:Hirmos Ponomar;size=18;color:red\">\uA698</rank><B>\u00A0"+table.get("Name");
                     //output += "<div style=\"font-face:Hirmos Ponomar; font-size:18pt; color:red\">\uA698\u00A0</div><Font color='red'><B>" + table.get("Name") + "</B></Font>";
                     break;
                 case 5:
-                    output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD41</Font>\u00A0" + NameF + "</FONT>";
+                    //output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD41</Font>\u00A0" + NameF + "</FONT>";
+                    output+=Rank5Format.replace("^NF",NameF);
                     break;
                 case 4:
-                    output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\uD83D\uDD42</Font><B>\u00A0" + NameF + "</B>";
+                    //output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\uD83D\uDD42</Font><B>\u00A0" + NameF + "</B>";
+                    output+=Rank4Format.replace("^NF",NameF);
                     break;
 
                 case 3:
-                    output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
+                    //output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
+                    output+=Rank3Format.replace("^NF",NameF);
                     break;
                 case 2:
-                    output += "<Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
+                    //output += "<Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
+                    output+=Rank2Format.replace("^NF",NameF);
+                    break;
+                case 1:
+                    output+=Rank1Format.replace("^NF",NameF);
                     break;
                 default:
-                    output += NameF;                    
+                    //output += NameF;
+                    output+=Rank0Format.replace("^NF",NameF);
                 //Note: \u00A0 is a nonbreaking space.
                 }
              if (CCom.checkLife()){
