@@ -217,8 +217,8 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
             //The specified fonts sizes are the mininum required.
             //    Style+="body {font-family:"+DisplayFont+";font-size:"+DisplaySize+"}\n";
             //System.out.println("["+tropar+"]"+tropar.length());
-
-            if (tropar != null && tropar != "") {
+            //System.out.println(name + ": " + tropar + "; " + tropar.length()+"; "+tropar.equals("\n \n"));
+            if (tropar != null && tropar != "" && !tropar.equals("\n \n")) {
                 textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[1] + "</h2>";
                 String ToneFormat = new String();
                 try
@@ -246,7 +246,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
                 textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + tropar + "</p>";
             }
 
-            if (tropar2 != null && tropar2 != "") {
+            if (tropar2 != null && tropar2 != "" && !tropar2.equals("\n \n")) {
                 textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[1] + "</h2>";
                 String ToneFormat = new String();
                 try
@@ -274,7 +274,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
                 textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + tropar2 + "</p>";
             }
 
-            if (kondak != null && kondak != "") {
+            if (kondak != null && kondak != "" && !kondak.equals("\n \n")) {
                 textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[3] + "</h2>";
                 
                 String ToneFormat = new String();
@@ -300,7 +300,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
                 textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + kondak + "</p>";
             }
 
-            if (kondak2 != null && kondak2 != "") {
+            if (kondak2 != null && kondak2 != "" && !kondak2.equals("\n \n")) {
                 textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[3] + "</h2>";
 
                 String ToneFormat = new String();

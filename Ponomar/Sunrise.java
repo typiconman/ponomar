@@ -370,8 +370,9 @@ final class Sunrise
                         }
                         else
                         {
-                        Format=Format.replace("HH", Integer.toString(hour));
-                        Format=Format.replace("MM", Integer.toString(minute));
+                        Format=Format.replace("HH", String.format("%0"+(String) Phrases.Phrases.get("PadH")+"d", hour));//Integer.toString(hour));
+                        //Format=Format.replace("MM", Integer.toString(minute));
+                        Format=Format.replace("MM",String.format("%0"+(String) Phrases.Phrases.get("PadM")+"d", minute));
                         }
                         out[i]=Format;
 		}
