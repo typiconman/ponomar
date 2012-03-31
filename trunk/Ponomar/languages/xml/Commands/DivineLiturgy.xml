@@ -1,5 +1,7 @@
 <DATA>
 <!-- THIS IS DivineLiturgy.xml VERSION 2.0 -->
+<COMMAND Name="Transfer" Value="1" Comment="This determines whether the sequential readings are (Value = 1) or are not (Value = 0) transferred if they must be skipped when a Class I, Class II or Class III(a) feast occurs on a given day." Cmd="GS == 1"/>
+<COMMAND Name="Transfer" Value="1" Comment="This determines whether the sequential readings are (Value = 1) or are not (Value = 0) transferred if they must be skipped when a Class I, Class II or Class III(a) feast occurs on a given day." Cmd="GS == 0"/>
 <COMMAND Name="Suppress" Value="(doy == 358 || doy == 357 || doy == 4 || doy == 5)" Comment="Suppress sequential readings on eve and day of Nativity and Theophany"/>
 <COMMAND Name="Suppress" Value="(doy &gt;= 344 &amp;&amp; doy &lt;= 350) &amp;&amp; dow == 0" Comment="Suppress the sequential readings on the Second Sunday before Christmas." />
 <COMMAND Name="Suppress" Value="(doy &gt;= 351 &amp;&amp; doy &lt;= 357) &amp;&amp; dow == 0" Comment="Suppress the sequential readings on the First Sunday before Christmas." />
@@ -18,3 +20,4 @@ We're going to handle this in the implementation by keeping track of the Src of 
 <!-- TODO: WE NEED TO IMPLEMENT SUPPRESSION RULES FOR THE THEOPHANY PERIOD -->
 <!-- XXX: YURI (in version 1 of DivineLiturgy.xml) HAS SUPPRESSION IN SEPTEMBER, BUT THIS IS DUBIOUS -->
 </DATA>
+
