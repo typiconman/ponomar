@@ -26,7 +26,7 @@ en:
 	thursday: Thursday
 	friday: Friday
 	saturday: Saturday
-	date_format_full: "%A, %B %d %Y"
+	date_format_full: "%A, %B %d, %Y"
 	date_format_short: "%m/%d/%Y"
 	fast_0000000: "Complete fast (no food)"
 	fast_0000001: "Xerophagy"

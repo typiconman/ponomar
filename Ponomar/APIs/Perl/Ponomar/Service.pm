@@ -187,6 +187,7 @@ sub execCommands {
 		
 		## IF WE GOT HERE, THEN TOMORROW'S READINGS ARE READ TODAY
 		foreach ($ponomar->getReadings('liturgy', 'pentecostarion')) {
+			next unless ($_->getSaint() >= 9000 && $_->getSaint() <= 9315);
 			push @{ $self->{_readings} }, $_;
 		}
 	}
@@ -211,7 +212,9 @@ sub execCommands {
 		next unless eval $cmd;
 		
 		## IF WE GOT HERE, THEN YESTERDAY'S READINGS ARE READ TODAY
+		## CAUTION! THE SOURCE OF THE READINGS MUST BE THE DAY
 		foreach ($ponomar->getReadings('liturgy', 'pentecostarion')) {
+			next unless ($_->getSaint() >= 9000 && $_->getSaint() <= 9315);
 			push @{ $self->{_readings} }, $_;
 		}
 	}

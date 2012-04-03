@@ -20,7 +20,7 @@ use vars qw (@ISA @EXPORT_OK %EXPORT_TAGS @EXPORT $VERSION $basepath);
 BEGIN {
 	$VERSION = 0.01;
 	@ISA 	 = qw( Exporter );
-	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max getMatinsGospel);
+	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel);
 	@EXPORT_OK = ();
 	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
 }
@@ -173,6 +173,39 @@ sub max {
 	my $max = shift;
 	for ( @_ ) { $max = $_ if $max < $_; }
 	return $max;
+}
+
+=item argmax($code, @array)
+
+Given an C<@array> of objects, returns the object that maximizes the function given by C<$code> (the argument of the maximum).
+
+Note that C<$code> need not specify a function that is injective. However, if the argmax is not unique, only the first maximizer will be returned (this is a bug?).
+
+If the argmax is the empty set, C<undef> is returned. However, by construction this would never occur, unless C<$code> returns something that is not comparable or C<@array> is C<undef>, since the argmax on an empty domain is necessarily empty (or is it?). I should have paid attention in Analysis ...
+
+E.g.:
+
+ argmax { $_->getKey('Type') } $ponomar->getSaints();
+
+Returns the highest-ranked Saint of the day.
+=cut
+
+sub argmax (&@) {
+	return () unless @_ > 1;
+
+	my $index = undef;
+	my $max   = undef;
+	my $block = shift;
+
+	for (@_) {
+		my $val = $block->($_);
+		if ( not defined $max or $val > $max) {
+			$max = $val;
+			$index = $_;
+		}
+	}
+	
+	return $index;
 }
 
 =item getMatinsGospel($reading)
