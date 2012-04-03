@@ -36,9 +36,11 @@
 	<!-- On the eve of the feast of Annunciation, if it falls before Lazarus Saturday, we allow oil and wine. -->
 	<RULE Case="0000111" Cmd="doy == 82"/>
 	<!-- On the Finding of the Head and the 40 Martyrs, we allow wine and oil, excpet it be clean week -->
-	<RULE Case="0000111" Cmd="dRank &gt;= 4 &amp;&amp; nday &gt;= -43"/>
+	<!-- According to p. 267 of Typikon, wine and oil is allowed on March 26.
+	     I take this to mean, however, only as an anology to Finding of the head -->
+	<RULE Case="0000111" Cmd="(dRank &gt;= 4 || doy == 84) &amp;&amp; nday &gt;= -43"/>
 	<!-- BUt if it be Wed or Fri, we allow cooked food without oil (see p. 249 of Typikon) -->
-	<RULE Case="0000011" Cmd="dRank &gt;= 4 &amp;&amp; nday &gt;= -43 &amp;&amp; (dow == 3 || dow == 5)"/>
+	<RULE Case="0000011" Cmd="(dRank &gt;= 4 || doy == 84) &amp;&amp; nday &gt;= -43 &amp;&amp; (dow == 3 || dow == 5)"/>
 	<!-- Friday of the Akathist: we allow wine for the sake of the labor of vigil that is to come (p.. 435) -->
 	<RULE Case="0000010" Cmd="nday == -16"/>
 	<!-- On Annunciation itself, we allow fish -->

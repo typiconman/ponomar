@@ -70,7 +70,7 @@ sub load ($) {
 	unless ($file) {
 		Carp::croak("No locale file defined");
 	}
-	
+
 	$_yaml = YAML::Tiny->new;
 	$_yaml = YAML::Tiny->read( $file );
 	Carp::croak (__PACKAGE__ . "::load($file) - Error reading from YAML file.") unless defined $_yaml;

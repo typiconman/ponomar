@@ -12,7 +12,14 @@ our @EXPORT = ();
 our @EXPORT_OK = ();
 
 require Ponomar::Sunrise;
-
+use overload
+	'==' 	=> "equals",
+	'<'	=> "before",
+	'>'	=> "after",
+	'++'	=> "addOneDay",
+	'--'	=> "subtractOneDay",
+	'='	=> sub { $_[0]->new($_[0]->{_mnjday}) }; # ugh, perl, Really?
+	
 my @DAYS_IN_MONTH = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 my @DAYS_IN_LEAP  = (31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 
@@ -72,7 +79,7 @@ sub new ($;$$) {
 		_mnjday => $mn_jday
 	};
 	
-	bless $self, $class;
+	bless $self;
 	return $self;
 }
 
@@ -380,6 +387,32 @@ sub addDays ($$) {
 	return Ponomar::JDate->new($self->{_mnjday} + $n);
 }
 
+=item addOneDay()
+
+Returns a new JDate object, advanced by one day
+
+=cut
+sub addOneDay($) {
+	my $self = shift;
+	
+	$self->{_mnjday}++;
+}
+
+=item addMonths($integer)
+
+Returns a new JDate object, advanced by $integer months
+
+=cut
+
+sub addMonths($$) {
+	my $self = shift;
+	my $n    = shift;
+	
+	my $m    = $self->getMonth();
+	return $m == 12 ? Ponomar::JDate->new(1, $self->getDay(), $self->getYear() + 1) :
+		Ponomar::JDate->new($m + 1, $self->getDay(), $self->getYear);
+}
+
 =item subtractDays($integer)
 
 Returns a new JDate object, diminished by $integer days
@@ -393,6 +426,33 @@ sub subtractDays ($$) {
 	return Ponomar::JDate->new($self->{_mnjday} - $n);
 }
 
+=item subtractOneDay()
+
+Returns a new JDate object, diminished by one day
+
+=cut
+
+sub subtractOneDay($) {
+	my $self = shift;
+	
+	$self->{_mnjday}--;
+}
+
+=item subtractMonths($integer)
+
+Returns a new JDate object, diminished by $integer months
+
+=cut
+
+sub subtractMonths($$) {
+	my $self = shift;
+	my $n    = shift;
+	
+	my $m    = $self->getMonth();
+	return $m == 1 ? Ponomar::JDate->new(12, $self->getDay(), $self->getYear() - 1) :
+		Ponomar::JDate->new($m - 1, $self->getDay(), $self->getYear());
+}
+
 =item equals($date)
 
 Returns true of this JDate object and the other object $date are the same Julian day. Returns false otherwise.
@@ -404,6 +464,30 @@ sub equals ($$) {
 	my $other = shift;
 	
 	return $self->{_mnjday} == $other->{_mnjday};
+}
+
+=item before($date)
+
+Returns true if self is before $date
+
+=cut
+sub before($$) {
+	my $self = shift;
+	my $other = shift;
+	
+	return $self->{_mnjday} < $other->{_mnjday};
+}
+
+=item after($date)
+
+Returns true if self is after $date 
+
+=cut
+sub after($$) {
+	my $self = shift;
+	my $other = shift;
+	
+	return $self->{_mnjday} > $other->{_mnjday};
 }
 
 =item getJulianDay()

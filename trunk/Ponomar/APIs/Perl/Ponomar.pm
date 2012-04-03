@@ -108,7 +108,8 @@ BEGIN {
 }
 
 INIT {
-	Ponomar::I18n::load('Ponomar/locales.yml');
+	require File::Basename;
+	Ponomar::I18n::load(File::Basename::dirname($INC{__PACKAGE__ . '.pm'}) . "/Ponomar/locales.yml");
 }
 
 END {
@@ -315,6 +316,20 @@ sub getFastingInstructions {
 	my $self = shift;
 	
 	return Ponomar::I18n::getLocaleKey('fast_' . $self->{_fast}, $self->{_lang});
+}
+
+=item getFastingCode()
+
+Returns the raw code of the fasting instruction, e.g., 000001. 
+
+E.g., the following test if meat is allowed on a given day:
+ split(//, $ponomar->getFastingCode())[0] == 1
+
+=cut
+
+sub getFastingCode {
+	my $self = shift;
+	return $self->{_fast};
 }
 
 =item getReadings( [$type, $Src] )
