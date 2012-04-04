@@ -84,7 +84,10 @@ sub init {
 
 	my $CId = $self->{CId};
 	foreach my $file (findTopDown($language, "xml/lives/$CId.xml")) {
-		$parser->parsefile( $file );
+		eval {
+			$parser->parsefile( $file );
+		};
+		Carp::croak(__PACKAGE__ . "::init() - Parsing error $@ in file " . $file) if ($@);
 	}
 	
 	return 1;

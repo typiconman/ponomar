@@ -1,7 +1,7 @@
-<DAY><SAINT SId="09497" CId="09497" Cmd="nday > 0"/>
+<DAY><SAINT SId="09497" CId="09497" Cmd="nday &gt; 0"/>
 <SAINT SId="04230097" CId="04230097"/>
 <SAINT SId="042305" CId="042305"/>
 <SAINT SId="042302" CId="042302"/>
 <SAINT SId="042303" CId="042303"/>
-<SAINT SId="0949701" CId="0949701" Cmd="nday <= 0"/>
+<SAINT SId="0949701" CId="0949701" Cmd="nday &lt;= 0"/>
 </DAY>

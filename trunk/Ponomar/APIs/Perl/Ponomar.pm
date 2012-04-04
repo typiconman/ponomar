@@ -250,7 +250,10 @@ sub init {
 	### TODO: PARSE BIBLE HERE?
 	#### BEGIN BY PARSING THE PENTECOSTARION / TRIODION FILE
 	local $src = "pentecostarion";
-	$parser->parsefile( findBottomUp($language, $filepath) );
+	eval {
+		$parser->parsefile( findBottomUp($language, $filepath) );
+	};
+	Carp::croak(__PACKAGE__ . "::init() - Parsing error $@ in file " . findBottomUp($language, $filepath)) if ($@);
 	
 	#### NEXT, PARSE THE MENAION FILE
 	$filepath = "xml/";
@@ -259,7 +262,10 @@ sub init {
 	$filepath .= ".xml";
 
 	local $src = "menaion";
-	$parser->parsefile( findBottomUp($language, $filepath) );
+	eval {
+		$parser->parsefile( findBottomUp($language, $filepath) );
+	};
+	Carp::croak(__PACKAGE__ . "::init() - Parsing error $@ in file " . findBottomUp($language, $filepath)) if ($@);
 
 	## SET THE DRANK OF THE DAY FOR FASTING PURPOSES
 	local $dRank = max (  map { $_->getKey("Type") } @{ $self->{_saints} });
@@ -267,7 +273,10 @@ sub init {
 	
 	## READ IN THE FASTING INSTRUCTIONS
 	foreach my $file (findTopDown($language, "xml/Commands/Fasting.xml")) {
-		$parser->parsefile( $file );
+		eval {
+			$parser->parsefile( $file );
+		};
+		Carp::croak(__PACKAGE__ . "::init() - Parsing error $@ in file " . $file) if ($@);
 	}
 
 	return 1;
@@ -340,8 +349,6 @@ Optional parameters C<$type> and C<$Src>
 
 C<$Src> limits returned array to source of commemoration (e.g., pentecostarion, menaion); C<$type> limits returned array to type of service (e.g., vespers, liturgy)
 
-=back
-
 =cut
 
 sub getReadings {
@@ -360,6 +367,25 @@ sub getReadings {
 	return @out;
 	#UGH! TODO: REWRITE THIS CODE, THIS COULD BE DONE WITH ONE LINE OF PERL
 	## SOMETHING ALONG THE LINES OF map { grep {} map { ... }}
+}
+
+=item loadBible([$version])
+
+Loads the Bible in this language. Optional parameter C<$version> specifies which version of the Bible to load
+if multiple versions are available in a language. If C<$version> is not specified, the default version is used.
+
+You can get a list of available versions by calling C<getBibleVersions()>.
+
+Returns a reference to a new C<Ponomar::Bible> object.
+
+=back
+
+=cut
+sub loadBible {
+	my $self = shift;
+	my $version = shift;
+	
+	return Ponomar::Bible->new( Lang => $self->{_lang}, Version => $version );
 }
 
 1;

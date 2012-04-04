@@ -1,7 +1,7 @@
 <SAINT>
 <NAME Short="紀念亡者"/>
-<NAME Nominative="紀念亡者"  Cmd="nday != -50 || nday != -57 &amp;&amp; !(doy >= 287 &amp;&amp; doy <= 294)"/>
-<NAME Nominative="紀念亡者之安息日" Cmd="nday == -57 &amp;&amp; !(doy >= 287 &amp;&amp; doy <= 294)"/>
-<NAME Nominative="紀念所有神聖而心懷上帝，以克修生活光照了世界的聖教父" Cmd="nday == -50 &amp;&amp; !(doy >= 287 &amp;&amp; doy <= 294)"/>
-<NAME Nominative="聖迪彌特里節前安息日：紀念亡者之安息日" Cmd="doy >= 287 &amp;&amp; doy <= 294"/>
+<NAME Nominative="紀念亡者"  Cmd="nday != -50 || nday != -57 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)"/>
+<NAME Nominative="紀念亡者之安息日" Cmd="nday == -57 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)"/>
+<NAME Nominative="紀念所有神聖而心懷上帝，以克修生活光照了世界的聖教父" Cmd="nday == -50 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)"/>
+<NAME Nominative="聖迪彌特里節前安息日：紀念亡者之安息日" Cmd="doy &gt;= 287 &amp;&amp; doy &lt;= 294"/>
 </SAINT>
