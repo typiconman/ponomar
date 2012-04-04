@@ -26,6 +26,13 @@ en:
 	thursday: Thursday
 	friday: Friday
 	saturday: Saturday
+	sun: Sun
+	mon: Mon
+	tue: Tue
+	wed: Wed
+	thu: Thu
+	fri: Fri
+	sat: Sat
 	date_format_full: "%A, %B %d, %Y"
 	date_format_short: "%m/%d/%Y"
 	fast_0000000: "Complete fast (no food)"
@@ -89,6 +96,13 @@ en/UK:
 	thursday: Thursday
 	friday: Friday
 	saturday: Saturday
+	sun: Sun
+	mon: Mon
+	tue: Tue
+	wed: Wed
+	thu: Thu
+	fri: Fri
+	sat: Sat
 	date_format_full: "%A, %B %d %Y"
 	date_format_short: "%d/%m/%Y"
 	fast_0000000: "Complete fast (no food)"
@@ -152,6 +166,13 @@ fr:
 	thursday: jeudi
 	friday: vendredi
 	saturday: samedi
+	sun: di
+	mon: lu
+	tue: ma
+	wed: me
+	thu: je
+	fri: ve
+	sat: sa
 	date_format_full: "%A, %B %d %Y"
 	date_format_short: "%d/%m/%Y"
 	fast_0000000: "Jeûne complet (sans nourriture)"
@@ -215,6 +236,13 @@ cu/ru:
 	thursday: четверг
 	friday: пятница
 	saturday: суббота
+	sun: вс
+	mon: пн
+	tue: вт
+	wed: ср
+	thu: чт
+	fri: пт
+	sat: сб
 	date_format_full: "%A, %B %d %Y"
 	date_format_short: "%d.%m.%Y"
 	fast_0000000: "строгий пост (полное воздержание от пищи)"
@@ -278,6 +306,13 @@ zh/Hans:
 	thursday: 瞻礼五
 	friday: 预备日
 	saturday: 安息日
+	sun: 主日
+	mon: 瞻礼二
+	tue: 瞻礼三
+	wed: 瞻礼四
+	thu: 瞻礼五
+	fri: 预备日
+	sat: 安息日	
 	date_format_full: "%Y 年 %B %d 日"
 	date_format_short: "%d.%m.%Y"
 	fast_0000000: 完全的禁食
@@ -341,6 +376,13 @@ zh/Hant:
 	thursday: 瞻禮五
 	friday: 預備日
 	saturday: 安息日
+	sun: 主日
+	mon: 瞻禮二
+	tue: 瞻禮三
+	wed: 瞻禮四
+	thu: 瞻禮五
+	fri: 預備日
+	sat: 安息日	
 	date_format_full: "%Y 年 %B %d 日"
 	date_format_short: "%d.%m.%Y"
 	fast_0000000: 完全的禁食
@@ -404,6 +446,13 @@ el:
 	thursday: Πέμπτη
 	friday: Παρασκευή
 	saturday: Σάββατο
+	sun: Κυ
+	mon: Δε
+	tue: Τρ
+	wed: Τε
+	thu: Πε
+	fri: Πα
+	sat: Σα	
 	date_format_full: "%A, %B %d %Y"
 	date_format_short: "%d.%m.%Y"
 	fast_0000000: "Complete fast (no food)"
