@@ -650,7 +650,7 @@ Astronomical twilight (the sky is completely dark)
 
 =cut
 
-sub getSunriseSunset ($$$$;$) {
+sub getSunriseSunset ($$$$;$$) {
 	my $self = shift;
 	my ($lon, $lat, $TZ, $isdst, $alt) = @_;
 	my $altit = $alt || -0.833;

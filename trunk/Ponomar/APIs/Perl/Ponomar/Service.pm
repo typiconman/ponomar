@@ -161,8 +161,10 @@ sub execCommands {
 			$cmd =~ s/$_/\$$_/g;
 		}
 		next unless eval $cmd;
-		## IF WE'RE HERE, THEN WE MUST DELETE THE READINGS ASSOCIATED WITH THIS SERVICE
-		$self->{_readings} = () unless $self->{dRank} >= 1;
+		if ( $_->{Name} eq "Suppress" || $_->{Name} eq "TransferRulesB" || $_->{Name} eq "TransferRulesF" ) {
+			## IF WE'RE HERE, THEN WE MUST DELETE THE READINGS ASSOCIATED WITH THIS SERVICE
+			$self->{_readings} = () unless $self->{dRank} >= 1;
+		}
 	}
 	
 	## set up tomorrow
