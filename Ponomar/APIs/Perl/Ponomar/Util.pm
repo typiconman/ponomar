@@ -22,7 +22,8 @@ BEGIN {
 	@ISA 	 = qw( Exporter );
 	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel);
 	@EXPORT_OK = ();
-	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
+#	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
+	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
 }
 
 my %matinsGospels = (
@@ -163,6 +164,115 @@ sub getToday {
 	return new Ponomar::JDate(int(time / 86400) + 2440588);
 }
 
+=item julianFromGregorian( $month, $day, $year )
+
+Given a C<$month>, C<$day>, and C<$year> on the B<Gregorian> calendar, 
+returns a JDate object with the Julian day for this date.
+If date is before 1582, the function croaks.
+
+The formulae are from Meuss, p. 61.
+
+=cut
+
+sub julianFromGregorian {
+	my ($month, $day, $year) = @_;
+	
+	croak (__PACKAGE__ . "::julianFromGregorian($month, $day, $year) - Year is before 1582.") if ($year < 1582);
+	
+	if ($month < 3) {
+		$month += 12;
+	}
+	my $a = int($year / 100);
+	my $b = 2 - $a + int($a / 4);
+	return new Ponomar::JDate( int(365.25 * ($year + 4716)) + int(30.6001 * ($month + 1)) + $day + $b - 1524 );
+}
+
+=item getNextYearWithSamePascha ( $year )
+
+Given C<$year>, a year AD, returns the next year when Pascha occurs on the same date as this year.
+
+=cut
+
+sub getNextYearWithSamePascha {
+	my $year = shift;
+	my $oldyear = $year;
+	my $oldkey = getKeyOfBoundaries($year);
+	
+	while ($year - $oldyear < 533) {
+		# get the next year that has the same concurrent.
+		if ($year % 4 == 2) {
+			$year += 11;
+		} elsif ($year % 4 == 3) {
+			$year += 5;
+		} else {
+			$year += 6;
+		}
+	
+		# compute the key of boundaries in this year
+		my $newkey = getKeyOfBoundaries($year);
+		last if ($newkey eq $oldkey);
+	}
+	return $year;
+}
+
+=item getPreviousYearWithSamePascha ($year)
+
+Given C<$year>, a year AD, returns the previous year when Pascha occurs on the same day
+
+=cut
+
+sub getPreviousYearWithSamePascha {
+	my $year = shift;
+	my $oldyear = $year;
+	my $oldkey = getKeyOfBoundaries($year);
+	
+	while ($oldyear - $year < 533) {
+		# get the next year that has the same concurrent.
+		if ($year % 4 == 2) {
+			$year -= 5;
+		} elsif ($year % 4 == 3) {
+			$year -= 11;
+		} else {
+			$year -= 6;
+		}
+	
+		# compute the key of boundaries in this year
+		my $newkey = getKeyOfBoundaries($year);
+		last if ($newkey eq $oldkey);
+	}
+	return $year;
+}
+
+=item getThisDayNextYear ($jdate)
+
+Given C<$jdate>, a date on the Julian calendar, returns a date next year that is same number of days away
+from next year's Pascha.
+
+=cut
+
+sub getThisDayNextYear {
+	my $date = shift;
+	
+	my $pascha = getPascha($date->getYear());
+	my $nday   = $date->getDaysSince($pascha);
+	return getPascha($date->getYear() + 1)->addDays($nday);
+}
+
+=item getThisDayPreviousYear ($jdate)
+
+Given C<$jdate>, a date on the Julian calendar, returns a date in the previous year that is the same number 
+of days away from the previous year's Pascha.
+
+=cut
+
+sub getThisDayPreviousYear {
+	my $date = shift;
+	
+	my $pascha = getPascha($date->getYear());
+	my $nday   = $date->getDaysSince($pascha);
+	return getPascha($date->getYear() - 1)->addDays($nday);
+}
+	
 =item max(@array)
 
 Given an C<@array> of real numbers, returns the maximum.
@@ -214,8 +324,6 @@ Given a C<$reading>, which a String of the type returned by a Reading object, re
 
 B<FIXME>: THIS SHOULD ACTUALLY TAKE THE READING OBJECT AND CHECK IF IT'S SUNDAY AND MATINS!!
 
-=back
-
 =cut
 
 sub getMatinsGospel {
@@ -224,7 +332,179 @@ sub getMatinsGospel {
 	return $matinsGospels{$reading};
 }
 
-1;
+=item getIndiction( $year )
 
+Given C<$year>, a year AD, returns the Indiction of the year.
+Carps if C<$year> is before 313 AD.
+
+=cut
+
+sub getIndiction {
+	my $year = shift;
+	
+	carp (__PACKAGE__ . "::getIndiction($year) - Year is before 312 AD!") if ($year < 313);
+	my $indikt = ($year - 312) % 15;
+	if ($indikt == 0) {
+		$indikt += 15;
+	}
+	return $indikt;
+}
+
+=item getSolarCycle( $year )
+
+Given C<$year>, a year AD, returns the solar cycle of the year.
+
+=cut
+
+sub getSolarCycle {
+	my $year = shift;
+	
+	my $solarcycle = ($year + 20) % 28;
+	$solarcycle += 28 if ($solarcycle == 0);
+	return $solarcycle;
+}
+
+=item getConcurrent( $year )
+
+Given C<$year>, a year AD, returns the concurrent (a number from 1 to 7)
+The concurrent numbers are associated with the Slavonic вруцелѣто letters so that 1 = А, 2 = В, etc.
+
+=cut
+
+sub getConcurrent {
+	my $year = shift;
+	
+	my $krug_solntsu = ($year + 20) % 28;
+	my $vrutseleto = $krug_solntsu + int($krug_solntsu / 4);
+	while ($vrutseleto > 7) {
+		$vrutseleto -= 7;
+	}
+	return $vrutseleto;
+}
+
+=item getLunarCycle( $year )
+
+Given C<$year>, a year AD, returns the lunar (Metonic) cycle number
+
+=cut
+
+sub getLunarCycle {
+	my $year = shift;
+	
+	my $krug_lune = ($year - 2) % 19;
+	$krug_lune += 19 if ($krug_lune == 0);
+	return $krug_lune;
+}
+
+=item getFoundation( $year )
+
+Given C<$year>, a year AD, returns the foundation (the "age of the moon" on March 1 of that year)
+
+=cut
+
+sub getFoundation {
+	my $year = shift;
+	
+	my $osnovanie = (($year + 1) % 19) * 11;
+	return $osnovanie % 30;
+}
+
+=item getEpacta( $year )
+
+Given C<$year>, a year AD, returns the Epacta. Note that this is not the Roman Epacta (the age of the moon on January 1). Rather, this is the number that needs to be added to make the Foundation 21 (51).
+
+=cut
+
+sub getEpacta {
+	my $year = shift;
+	
+	my $foundation = getFoundation($year);
+	return (51 - $foundation) % 30;
+}
+
+=item getKeyOfBoundaries( $year )
+
+Given C<$year>, a year AD, returns the Key of Boundaries, a letter indicating the structure of the year
+
+=cut
+
+sub getKeyOfBoundaries {
+	my $year = shift;
+	use utf8;
+	my @letters = ("А", "Б", "В", "Г", "Д", "Е", "Ж", "Ѕ", "З", "И", "І", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "У", "Ф", "Х", "Ѿ", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Ѣ", "Ю", "Ѫ", "Ѧ");
+	
+	my $pascha = getPascha($year);
+	my $kluch;
+	if ($pascha->getMonth() == 3) {
+		# PASCHA IS IN MARCH
+		$kluch = $pascha->getDay() - 21;
+	} elsif ($pascha->getMonth() == 4) {
+		# PASCHA IS IN APRIL
+		$kluch = $pascha->getDay() + 10;
+	}
+	return $letters[$kluch - 1];
+}
+
+=item getGregorianEaster( $year )
+
+Given C<$year>, a year AD, returns the date of the Gregorian Easter (according to the Julian calendar)
+If C<$year> is less than 1583, this routine croaks.
+This routine uses the formulae as given by Meuss, Astronomical Algorithms, Chapter 8
+
+=cut
+
+sub getGregorianEaster {
+	my $year = shift;
+	
+	my $a = $year % 19;
+	my $b = int($year / 100);
+	my $c = $year % 100;
+	my $d = int($b / 4);
+	my $e = $b % 4;
+	my $f = int(($b + 8) / 25);
+	my $g = int(($b - $f + 1) / 3);
+	my $h = (19 * $a + $b - $d - $g + 15) % 30;
+	my $i = int($c / 4);
+	my $k = $c % 4;
+	my $l = (32 + 2 * $e + 2 * $i - $h - $k) % 7;
+	my $m = int(($a + 11 * $h + 22 * $l) / 451);
+	my $n = int(($h + $l - 7 * $m + 114) / 31);
+	my $p = ($h + $l - 7 * $m + 114) % 31;
+	return julianFromGregorian($n, $p + 1, $year);
+}
+
+=item getPassover( $year )
+
+Given C<$year>, a year AD, returns the date of the Jewish Passover (15 Nisan) according to the Julian calendar
+The formulae are due to Meeus, Astronomical Algorithms, Chapter 9.
+
+Note that this is the actual, modern Jewish Pesach, not the ecclesiastical Old Testament Passover.
+The ecclesiastical old testament Passover can be obtained from the Epakta.
+
+=cut
+
+sub getPassover {
+	my $year = shift;
+	
+	my $a = (12 * $year + 12) % 19;
+	my $b = $year % 4;
+	my $Q = -1.904412361576 + 1.554241796621 * $a + 0.25 * $b - 0.003177794022 * $year;
+	my $j = (int($Q) + 3 * $year + 5 * $b + 2) % 7;
+	my $r = $Q - int($Q);
+	
+	my $d = int($Q) + 22;
+	if ($j = 2 || $j == 4 || $j == 6) {
+		$d++;
+	} elsif ($j == 1 && $a > 6 && $r >= 0.632870370) {
+		$d += 2;
+	} elsif ($j == 0 && $a > 11 && $r >= 0.897723765) {
+		$d++;
+	}
+	
+	return $d > 31 ? new Ponomar::JDate(4, $d - 31, $year) :
+			new Ponomar::JDate(3, $d, $year);
+}
+
+	
 __END__
 

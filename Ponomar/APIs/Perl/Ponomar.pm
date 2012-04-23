@@ -99,6 +99,7 @@ use Ponomar::JDate;
 use Ponomar::Saint;
 use Ponomar::Util;
 use Ponomar::I18n;
+use Ponomar::Bible;
 
 BEGIN {
 	$VERSION = 0.01;

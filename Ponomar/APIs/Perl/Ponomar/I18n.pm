@@ -42,14 +42,7 @@ my @WEEKDAY_NAMES = qw(sunday monday tuesday wednesday thursday friday saturday)
 
 ## poor man's version of POSIX::strftime
 sub strftime ($@) {
-	my ($format, $locale, $object) = @_;
-	my %convert = (
-		Y => $object->getYear(),
-		m => sprintf( '%02d', $object->getMonth() ),
-		d => sprintf( '%02d', $object->getDay() ),
-		A => getLocaleKey( $WEEKDAY_NAMES[$object->getDayOfWeek()], $locale ),
-		B => getLocaleKey( $MONTH_NAMES[$object->getMonth() - 1], $locale )
-	);
+	my ($format, %convert) = @_;
 	$format =~ s#%(.)#$convert{$1}#sg;
 	$format;
 }
@@ -127,27 +120,62 @@ RETURNS THE FULLSTRING REPRESENTATION OF C<$jdate>, a Ponomar::JDate object, IN 
 sub dateToStringFull ($;$) {
 	my $date = shift;
 	my $locale = shift || "en";
-	
+	my %convert = (
+		Y => $date->getYear(),
+		m => sprintf( '%02d', $date->getMonth() ),
+		d => sprintf( '%02d', $date->getDay() ),
+		A => getLocaleKey( $WEEKDAY_NAMES[$date->getDayOfWeek()], $locale ),
+		B => getLocaleKey( $MONTH_NAMES[$date->getMonth() - 1], $locale )
+	);
+
 	my $format = getLocaleKey('date_format_full', $locale);
-	return strftime($format, $locale, $date);
+	return strftime($format, %convert);
 }
 
 =item dateToString($jdate, [$locale])
 
 Returns a short string representation of C<$jdate>, a Ponomar::JDate object, in the specified C<$locale>. If C<$locale> is not specified, C<'en'> is assumed.
 
-=back
-
 =cut
 
 sub dateToString ($;$) {
 	my $date = shift;
 	my $locale = shift || "en";
-	
+	my %convert = (
+		Y => $date->getYear(),
+		m => sprintf( '%02d', $date->getMonth() ),
+		d => sprintf( '%02d', $date->getDay() ),
+		A => getLocaleKey( $WEEKDAY_NAMES[$date->getDayOfWeek()], $locale ),
+		B => getLocaleKey( $MONTH_NAMES[$date->getMonth() - 1], $locale )
+	);
+
 	my $format = getLocaleKey('date_format_short', $locale);
-	return strftime($format, $locale, $date);
+	return strftime($format, %convert);
 }
 
+=item dateToStringGregorian($jdate, [$locale])
+
+Returns a string representation of C<$jdate>, a Ponomar::JDate object, in the specified C<$locale> on the Gregorian calendar.
+If C<$locale> is not specified, C<en> is assumed.
+
+=back
+
+=cut
+
+sub dateToStringGregorian ($;$) {
+	my $date = shift;
+	my $locale = shift || "en";
+	my %convert = (
+		Y => $date->getYearGregorian(),
+		m => sprintf( '%02d', $date->getMonthGregorian() ),
+		d => sprintf( '%02d', $date->getDayGregorian() ),
+		A => getLocaleKey( $WEEKDAY_NAMES[$date->getDayOfWeek()], $locale ),
+		B => getLocaleKey( $MONTH_NAMES[$date->getMonthGregorian() - 1], $locale )
+	);
+	my $format = getLocaleKey('date_format_full', $locale);
+	return strftime($format, %convert);
+}
+	
 1;
 
 __END__
