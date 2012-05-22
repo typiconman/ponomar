@@ -34,7 +34,7 @@ en:
 	fri: Fri
 	sat: Sat
 	date_format_full: "%A, %B %d, %Y"
-	date_format_short: "%m/%d/%Y"
+	date_format_short: "%d %B"
 	fast_0000000: "Complete fast (no food)"
 	fast_0000001: "Xerophagy"
 	fast_0000011: "Food without oil"
@@ -104,7 +104,7 @@ en/UK:
 	fri: Fri
 	sat: Sat
 	date_format_full: "%A, %B %d %Y"
-	date_format_short: "%d/%m/%Y"
+	date_format_short: "%d %B"
 	fast_0000000: "Complete fast (no food)"
 	fast_0000001: "Xerophagy"
 	fast_0000011: "Food without oil"
