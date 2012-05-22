@@ -113,6 +113,21 @@ sub getYear ($) {
 	return int($n1 + $n2) - 4800 + $adj;
 }
 
+=item getYearAM()
+
+Returns the Year from the (Byzantine) Creation of the World (anno mundi)
+The Creation of the World took place on March 1, 5508 BC.
+
+=cut
+
+sub getYearAM ($) {
+	my $self = shift;
+	
+	my $y = $self->getYear();
+	my $cutoff = Ponomar::JDate->new(3, 1, $y);
+	return $self->before($cutoff) ? $y + 5507 : $y + 5508;
+}
+
 =item getMonth()
 
 Returns the Month of the JDate object
