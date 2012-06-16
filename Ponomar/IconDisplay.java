@@ -5,6 +5,9 @@ import java.awt.*;
 import java.awt.event.*;
 import java.beans.*;
 import java.net.URL;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import javax.imageio.ImageIO;
 
 /**************************************************************
 IconDisplay:
@@ -69,7 +72,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 			//date = new JDate();
                     System.out.println(Images.length);
                     Images=new String[1];
-                    Images[0]="Default1";
+                    Images[0]="Ponomar/languages/icons/Default1.jpg";
                     Names=new String[1];
                     Names[0]=captions[2];
                     //return;
@@ -86,6 +89,8 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
                 caption=new JPanel();
 
                 //if(Images.length>1){
+                // BufferedImage image = ImageIO.read(new File(path));
+        //LoadAndShow test = new LoadAndShow(image);
 
                 String imgLocation = "images/0.gif";
                 URL imgURL = IconDisplay.class.getResource(imgLocation);
@@ -197,7 +202,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
             updateImages();
 
         }
-        private void updateImages(){
+        private void updateImages() {
             //iconImage=new JPanel();
             iconImage.removeAll();
             String IconLocation=pathImage+"icons/";
@@ -210,9 +215,62 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
             {
                 label= new JLabel(new ImageIcon(IconLocation+Images[Number]+".jpg"));
             }
+             BufferedImage image=null;
+             try
+             {
+             image = ImageIO.read(new File(Images[Number]));
+             }
+             catch(IOException valueIO)
+             {                
+
+             }
+             System.out.println(image.getWidth() +" " + image.getHeight());
+
+             //Testing something
+
+             float iw = image.getWidth();
+            float ih = image.getHeight();
+            float pw = this.getWidth()*(float)0.95;   //panel width
+            float ph = this.getHeight()*(float)0.8;  //panel height
+            System.out.println("pw=" +pw+ " ph="+ph);
+            Image scaledImage=image;
+            //TESTING HERE
+            if ( pw < iw || ph < ih ) {
+
+                /* compare some ratios and then decide which side of image to anchor to panel
+                   and scale the other side
+                   (this is all based on empirical observations and not at all grounded in theory)*/
+
+                //System.out.println("pw/ph=" + pw/ph + ", iw/ih=" + iw/ih);
+
+                if ( (pw / ph) > (iw / ih) ) {
+                    iw = -1;
+                    ih = ph;
+                } else {
+                    iw = pw;
+                    ih = -1;
+                }
+
+                //prevent errors if panel is 0 wide or high
+                if (iw == 0) {
+                    iw = -1;
+                }
+                if (ih == 0) {
+                    ih = -1;
+                }
+
+                scaledImage = image.getScaledInstance(new Float(iw).intValue(), new Float(ih).intValue(), Image.SCALE_DEFAULT);
+
+            } else {
+                //scaledImage = image;
+            }
+                //scaledImage = image.getScaledInstance(new Float(pw).intValue(), new Float(ph).intValue(), Image.SCALE_DEFAULT);
+
+             //Image scaledImage=image.getScaledInstance(new Float(40).intValue(), new Float(40).intValue(), Image.SCALE_DEFAULT);
+             label.setIcon(new ImageIcon(scaledImage));
             label.setHorizontalAlignment(JLabel.CENTER);
             iconImage.add(label);
-           text.setText("<body style=\"font-family:"+Face+";font-size:"+Size+"pt\">"+ Names[Number]+"</body>");
+            text.setText("<body style=\"font-family:"+Face+";font-size:"+Size+"pt\">"+ Names[Number]+"</body>");           
            //frame.pack();
            //System.out.Println(getAncestorOfClass(new JFrame(),iconImage));
            //repaint();
@@ -305,7 +363,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 			//date = new JDate();
                     //System.out.println(Images.length);
                     Images=new String[1];
-                    Images[0]=pathImage+"icons/"+"Default1.jpg";
+                    Images[0]="Ponomar/languages/icons/Default1.jpg";
                     Names=new String[1];
                     Names[0]=captions[2];
                     //return;
@@ -322,7 +380,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 
              }
 
-            updateImages2();
+            updateImages();
 
         }
         private void updateImages2(){

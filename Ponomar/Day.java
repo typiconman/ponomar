@@ -57,8 +57,9 @@ public class Day implements DocHandler {
     private String[] MainNames=Text.obtainValues((String)Text.Phrases.get("Main"));
     private String[] toneNumbers= Text.obtainValues((String)Text.Phrases.get("Tones"));
     private String forComm=(String)Text.Phrases.get("Commemoration2");
+    private static StringOp ParameterValues = new StringOp();
 
-    protected Day(String FileName) {
+    protected Day(String FileName, StringOp ParameterValues) {
         Information = new OrderedHashtable();
         readings = new OrderedHashtable();
         RoyalHours = new OrderedHashtable();
@@ -71,6 +72,20 @@ public class Day implements DocHandler {
         readDay(FileName);
 
 
+    }
+    protected Day(String FileName)
+    {
+        ParameterValues.dayInfo=StringOp.dayInfo;
+        Information = new OrderedHashtable();
+        readings = new OrderedHashtable();
+        RoyalHours = new OrderedHashtable();
+        Information.put("ID", FileName);
+        helper = new Helpers();
+
+        counter = 0;
+        OrderedCommemorations = new Vector();
+        dayRank = -100;
+        readDay(FileName);
     }
 
     protected Day() {
@@ -87,12 +102,12 @@ public class Day implements DocHandler {
     {
         FileName = FileName;
         try {
-            //BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName+".xml")), "UTF8"));
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(), FileName + ".xml")), "UTF8"));
-            //System.out.println("===============\n"+helper.langFileFind(StringOp.dayInfo.get("LS").toString(), FileName + ".xml"));
+            //BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(),FileName+".xml")), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(), FileName + ".xml")), "UTF8"));
+            //System.out.println("===============\n"+helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(), FileName + ".xml"));
             QDParser.parse(this, frf);
         } catch (Exception e) {
-            System.out.println("In file name, "+helper.langFileFind(StringOp.dayInfo.get("LS").toString(), FileName + ".xml")+" an error occurred of type: ");
+            System.out.println("In file name, "+helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(), FileName + ".xml")+" an error occurred of type: ");
             e.printStackTrace();
         }
     }
@@ -112,7 +127,7 @@ public class Day implements DocHandler {
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (StringOp.evalbool(table.get("Cmd").toString()) == false) {
+            if (ParameterValues.evalbool(table.get("Cmd").toString()) == false) {
 
                 return;
             }
@@ -133,7 +148,7 @@ public class Day implements DocHandler {
 
             String Cid = table.get("CId").toString();
             if (table.get("Tone")!=null){
-               Tone=(int) Math.floor(StringOp.eval(table.get("Tone").toString()));
+               Tone=(int) Math.floor(ParameterValues.eval(table.get("Tone").toString()));
             }
             Commemoration1 DayA = new Commemoration1(Sid, Cid);
 
@@ -268,9 +283,13 @@ public class Day implements DocHandler {
             Commemoration1 CCom = (Commemoration1) OrderedCommemorations.get(i);
             String Sid = CCom.getSId();
             String Cid = CCom.getCId();
-            String NameF = CCom.getName();
+            String NameF = CCom.getGrammar("Short");
             
-            File fileNew=new File(helper.langFileFind(StringOp.dayInfo.get("LS").toString(), "/icons/"+ Cid + "/0.jpg"));
+            File fileNew=new File(helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "/icons/"+ Cid + "/0.jpg"));
+           /* if (!(fileNew.exists())){
+                fileNew=new File(helper.langFileFind("el", "/icons/"+ Cid + "/0.jpg"));
+            }*/
+            //The above code will add the Greek Icons and this will allow me to do what I wish to do!!!
 
             int counterI=0;
             
@@ -280,7 +299,7 @@ public class Day implements DocHandler {
                 IconImages.add(fileNew.toString());
                 IconNames.add(NameF);
                 counterI+=1;
-                fileNew=new File(helper.langFileFind(StringOp.dayInfo.get("LS").toString(), "/icons/"+ Cid + "/"+counterI+".jpg"));
+                fileNew=new File(helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "/icons/"+ Cid + "/"+counterI+".jpg"));
             }
         File file = new File("Ponomar/images/icons/" + Cid + ".jpg");
         if (file.exists()) {
@@ -392,9 +411,9 @@ public class Day implements DocHandler {
     }
 
     public static void main(String[] argz) {
-        StringOp.dayInfo = new OrderedHashtable();
-        StringOp.dayInfo.put("LS", "cu/ru/");
-        StringOp.dayInfo.put("dow", "5");
+        ParameterValues.dayInfo = new OrderedHashtable();
+        ParameterValues.dayInfo.put("LS", "cu/ru/");
+        ParameterValues.dayInfo.put("dow", "5");
         //Commemoration Paramony = new Commemoration("P_3174");    //Paramony of Christmas
         System.out.println("THIS IS RUNNING ON DEBUG MODE, USING THE FILE FOR the Paramony of Christmas");
         //OrderedHashtable stuff=Paramony.getRH("Idiomel","11");

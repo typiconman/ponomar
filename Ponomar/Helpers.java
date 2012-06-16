@@ -222,6 +222,18 @@ class Helpers
                Copyright=Copyright.replace("^AA",AuthorList);
                return Copyright;
         }
+        public Hashtable deepCopy(Hashtable original){
+            //Currently does not work.
+            Hashtable copy = new Hashtable();
+            for (Enumeration e = original.keys(); e.hasMoreElements(); )
+		{
+			String type = e.nextElement().toString();
+                        String vect = original.get(type).toString();
+
+			copy.put(type.toString(),original.get(type).toString());
+		}
+            return copy;
+        }
 	
 }
 
