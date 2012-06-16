@@ -7,7 +7,7 @@ import java.util.*;
 import java.io.*;
 
 /***************************************************************
-DivineLiturgy.java :: MODULE THAT TAKES THE GIVEN DIVIN LITURGY (GOSPEL AND EPISTLE) READINGS FOR THE DAY,
+DivineLiturgy1.java :: MODULE THAT TAKES THE GIVEN DIVIN LITURGY (GOSPEL AND EPISTLE) READINGS FOR THE DAY,
 THAT IS, PENTECOSTARION, MENELOGION, AND FLOATERS AND RETURNS
 THE APPROPRIATE SET OF READINGS FOR THE DAY AND THEIR ORDER
 ASSUMING THAT THE "LUCAN JUMP" IS BEING USED. THIS FUNCITON MUST BE
@@ -16,9 +16,10 @@ THIS PROGRAMME HAS BEEN GENERALISED TO ALLOW ANY SET OF RULES TO BE USED.
 
 Further work will convert this into the programme that will allow the creation of the text for the Divine Liturgy.
 
-DivineLiturgy.java is part of the Ponomar project.
-Copyright 2008 Yuri Shardt
+DivineLiturgy1.java is part of the Ponomar project.
+Copyright 2008, 2012 Yuri Shardt
 version 1.0: May 2008
+ * version 2.0: June 2012, further updates and corrections to the new format.
 yuri.shardt (at) gmail.com
 
 PERMISSION IS HEREBY GRANTED TO USE, MODIFY, AND/OR REDISTRIBUTE THIS SOURCE CODE
@@ -62,6 +63,7 @@ public class DivineLiturgy1 implements DocHandler {
     private static Vector suppressedT = new Vector();
     private static OrderedHashtable tomorrowRead = new OrderedHashtable();
     private static OrderedHashtable yesterdayRead = new OrderedHashtable();
+    private static StringOp Information3  = new StringOp();
 
     public DivineLiturgy1() {
     }
@@ -116,7 +118,10 @@ public class DivineLiturgy1 implements DocHandler {
          ********************************************************/
         //PROCESS THE READINGS INTO THE DESIRED FORMS:
         classifyReadings orderedReadings = new classifyReadings(readingsIn);
-
+       /* Information3.dayInfo.put("doy","12");
+        Information3.dayInfo.put("dow","1");
+        Information3.dayInfo.put("nday","2");
+        System.out.println("Testing the new StringOp formulation is " + Information3.evalbool("doy == 12"));*/
 
         Information = new OrderedHashtable();
         int doy = Integer.parseInt(StringOp.dayInfo.get("doy").toString());
@@ -139,7 +144,7 @@ public class DivineLiturgy1 implements DocHandler {
          */
         if ((doy >= 4 && doy <= 10) && (dow == 0) && ReadingType.equals("apostol")) {
             //IF THERE IS AN APOSTOL ON THIS DAY, THEN THERE MAY BE ISSUES WITH ITS PRESENCE.
-            //NOTE: NOTHING IS CURRENTLY DONE ABOUT THIS!
+            //NOTE: NOTHING IS CURRENTLY DONE ABOUT THIS!           
         }
 
         //CHECK WHETHER OR NOT IT IS DESIRED TO TRANSFER THE SKIPPED SEQUENTIAL READINGS
@@ -162,23 +167,32 @@ public class DivineLiturgy1 implements DocHandler {
                 //THE SAME PROCEDURE AS IN Main.java WILL BE FOLLOWED!
 
 
+                //Rewriting the transferring rules based on the changes in the file format for the ranking and the like (Y.S. 20120610 n.s.)
+
+                
+                StringOp Transfers=new StringOp();
+                Transfers.dayInfo = StringOp.dayInfo;//findLanguage.deepCopy((Hashtable)StringOp.dayInfo.clone());
+                Information3.dayInfo.putAll(StringOp.dayInfo);
+                String dRankOld=StringOp.dayInfo.get("dRank").toString();
                 today.addDays(1);
-
-
                 // PUT THE RELEVANT DATA IN THE HASH FOR TOMORROW
-                StringOp.dayInfo.put("dow", today.getDayOfWeek());
-                StringOp.dayInfo.put("doy", today.getDoy());
+                //System.out.println("Case I: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("dRank").toString()+" In Information3, doy = "+Information3.dayInfo.get("dRank").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("dRank"));
+                Information3.dayInfo.put("dow", today.getDayOfWeek());
+                Information3.dayInfo.put("doy", today.getDoy());
+                Information3.dayInfo.put("dRank","0");
+                //System.out.println("Case II: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("doy").toString()+" In Information3, doy = "+Information3.dayInfo.get("doy").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("doy"));
                 nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
                 int ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
                 //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
                 int ndayF = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
-                StringOp.dayInfo.put("nday", nday);
-                StringOp.dayInfo.put("ndayP", ndayP);
-                StringOp.dayInfo.put("ndayF", ndayF);
+                Information3.dayInfo.put("nday", nday);
+                Information3.dayInfo.put("ndayP", ndayP);
+                Information3.dayInfo.put("ndayF", ndayF);
 
                 getReadings(today, ReadingType);
                 tomorrowRead = getReadings(today, ReadingType);
-                tomorrows = new classifyReadings(tomorrowRead);                
+                tomorrows = new classifyReadings(tomorrowRead, Information3);
+                //System.out.println("Case III: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("dRank").toString()+" In Information3, doy = "+Information3.dayInfo.get("dRank").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("dRank"));
 
 
                 today.subtractDays(1);
@@ -191,6 +205,7 @@ public class DivineLiturgy1 implements DocHandler {
                 StringOp.dayInfo.put("nday", nday);
                 StringOp.dayInfo.put("ndayP", ndayP);
                 StringOp.dayInfo.put("ndayF", ndayF);
+                StringOp.dayInfo.put("dRank",dRankOld);
             }
             //NOW WE NEED TO CHECK YESTERDAY'S READINGS, BUT THIS WILL ONLY OCCUR ON A TUESDAY OR DEC. 6th
             transferRule = (Vector) Information.get("TransferRulesF");
@@ -202,22 +217,27 @@ public class DivineLiturgy1 implements DocHandler {
                 //THE SAME PROCEDURE AS IN Main.java WILL BE FOLLOWED!
 
 
+                StringOp Transfers=new StringOp();
+                Transfers.dayInfo.putAll(StringOp.dayInfo);
+                Information3.dayInfo.putAll(StringOp.dayInfo);
+                String dRankOld=StringOp.dayInfo.get("dRank").toString();
                 today.subtractDays(1);
 
 
                 // PUT THE RELEVANT DATA IN THE HASH FOR TOMORROW
-                StringOp.dayInfo.put("dow", today.getDayOfWeek());
-                StringOp.dayInfo.put("doy", today.getDoy());
+                Information3.dayInfo.put("dow", today.getDayOfWeek());
+                Information3.dayInfo.put("doy", today.getDoy());
+                Information3.dayInfo.put("dRank","0");
                 nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
                 int ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
                 //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
                 int ndayF = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
-                StringOp.dayInfo.put("nday", nday);
-                StringOp.dayInfo.put("ndayP", ndayP);
-                StringOp.dayInfo.put("ndayF", ndayF);
+                Information3.dayInfo.put("nday", nday);
+                Information3.dayInfo.put("ndayP", ndayP);
+                Information3.dayInfo.put("ndayF", ndayF);
 
                 yesterdayRead = getReadings(today, ReadingType);
-                yesterdays = new classifyReadings(yesterdayRead);
+                yesterdays = new classifyReadings(yesterdayRead, Information3);
 
 
 
@@ -231,6 +251,7 @@ public class DivineLiturgy1 implements DocHandler {
                 StringOp.dayInfo.put("nday", nday);
                 StringOp.dayInfo.put("ndayP", ndayP);
                 StringOp.dayInfo.put("ndayF", ndayF);
+                StringOp.dayInfo.put("dRank",dRankOld);
             }
         }
 
@@ -324,7 +345,7 @@ public class DivineLiturgy1 implements DocHandler {
 
         filename += lineNumber >= 10 ? lineNumber + "" : "0" + lineNumber + ""; // CLEANED UP
         // READ THE PENTECOSTARION / TRIODION INFORMATION
-        Day checkingP = new Day(filename);
+        Day checkingP = new Day(filename,Information3);
 
 
         //ADDED 2008/05/19 n.s. Y.S.
@@ -341,7 +362,8 @@ public class DivineLiturgy1 implements DocHandler {
         filename += d < 10 ? "/0" + d : "/" + d; // CLEANED UP
         filename += "";
         
-        Day checkingM = new Day(filename);
+        Day checkingM = new Day(filename,Information3);
+        Information3.dayInfo.put("dRank",Math.max(checkingP.getDayRank(), checkingM.getDayRank()));
 
         OrderedHashtable[] PaschalReadings = checkingP.getReadings();
         OrderedHashtable[] MenaionReadings = checkingM.getReadings();
@@ -571,16 +593,28 @@ public class DivineLiturgy1 implements DocHandler {
         public Vector suppressedV = new Vector();
         public Vector suppressedR = new Vector();
         public Vector suppressedT = new Vector();
+        private StringOp ParameterValues=new StringOp();
 
         public classifyReadings() {
         }
 
-        public classifyReadings(OrderedHashtable readingsIn) {
+        public classifyReadings(OrderedHashtable readingsInA) {
+            StringOp Testing = new StringOp();
+            ParameterValues.dayInfo=StringOp.dayInfo;
+            classify(readingsInA);
+        }
+
+        public classifyReadings(OrderedHashtable readingsInA, StringOp ParameterValues) {
+            classify(readingsInA);
+
+        }
+        private void classify(OrderedHashtable readingsIn)
+        {
             //Initialise Information.
             Information2=new OrderedHashtable();
             try {
-                FileReader frf = new FileReader(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
-                //System.out.println(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
+                FileReader frf = new FileReader(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
+                //System.out.println(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
                 //DivineLiturgy a1 = new classifyReadin();
                 QDParser.parse(this, frf);
             } catch (Exception e) {
@@ -614,9 +648,8 @@ public class DivineLiturgy1 implements DocHandler {
                     menaionT.add(paschalT.get(k));
                 }
 
-            }
+            }           
             
-            //System.out.println(readingsIn);
             Suppress();
             //LeapReadings();            
 
@@ -636,7 +669,7 @@ public class DivineLiturgy1 implements DocHandler {
             if (table.get("Cmd") != null) {
                 // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-                if (StringOp.evalbool(table.get("Cmd").toString()) == false) {
+                if (ParameterValues.evalbool(table.get("Cmd").toString()) == false) {
                     return;
                 }
             }
@@ -669,11 +702,11 @@ public class DivineLiturgy1 implements DocHandler {
 
         private void Suppress() {
             //THIS FUNCTION CONSIDERS WHAT HOLIDAYS ARE CURRENTLY OCCURING AND RETURNS THE READINGS FOR THE DAY, WHERE SUPPRESSED CONTAINS THE READINGS THAT WERE SUPPRESSED.
-            int doy = Integer.parseInt(StringOp.dayInfo.get("doy").toString());
-            int dow = Integer.parseInt(StringOp.dayInfo.get("dow").toString());
-            int nday = Integer.parseInt(StringOp.dayInfo.get("nday").toString());
-            int ndayF = Integer.parseInt(StringOp.dayInfo.get("ndayF").toString());
-            int ndayP = Integer.parseInt(StringOp.dayInfo.get("ndayP").toString());
+            int doy = Integer.parseInt(ParameterValues.dayInfo.get("doy").toString());
+            int dow = Integer.parseInt(ParameterValues.dayInfo.get("dow").toString());
+            int nday = Integer.parseInt(ParameterValues.dayInfo.get("nday").toString());
+            int ndayF = Integer.parseInt(ParameterValues.dayInfo.get("ndayF").toString());
+            int ndayP = Integer.parseInt(ParameterValues.dayInfo.get("ndayP").toString());
             LeapReadings();		//THIS ALLOWS APPROPRIATE SKIPPING OF READINGS OVER THE NATIVITY SEASON!
 
             /******************************************************
@@ -693,7 +726,7 @@ public class DivineLiturgy1 implements DocHandler {
                 }
                 dailyV.clear();
                 dailyR.clear();
-                dailyT.clear();
+                dailyT.clear();                
                 return;				//There is no need for any other readings to be considered!
             }
 
@@ -732,7 +765,7 @@ public class DivineLiturgy1 implements DocHandler {
                 if (vect != null) {
                     for (Enumeration e2 = vect.elements(); e2.hasMoreElements();) {
                         String Command = (String) e2.nextElement();
-                        if (StringOp.evalbool(Command)) {
+                        if (ParameterValues.evalbool(Command)) {
                             //THE CURRENT COMMAND WAS TRUE AND THE SEQUENTITIAL READING IS TO BE SUPPRESSED/TRANSFERRED
                             for (int k = 0; k < dailyV.size(); k++) {
                                 suppressedV.add(dailyV.get(k));
@@ -756,11 +789,11 @@ public class DivineLiturgy1 implements DocHandler {
 
         protected void LeapReadings() {
             //SKIPS THE READINGS IF THERE ARE ANY BREAKS!           
-            int doy = Integer.parseInt(StringOp.dayInfo.get("doy").toString());
-            int dow = Integer.parseInt(StringOp.dayInfo.get("dow").toString());
-            int nday = Integer.parseInt(StringOp.dayInfo.get("nday").toString());
-            int ndayF = Integer.parseInt(StringOp.dayInfo.get("ndayF").toString());
-            int ndayP = Integer.parseInt(StringOp.dayInfo.get("ndayP").toString());
+            int doy = Integer.parseInt(ParameterValues.dayInfo.get("doy").toString());
+            int dow = Integer.parseInt(ParameterValues.dayInfo.get("dow").toString());
+            int nday = Integer.parseInt(ParameterValues.dayInfo.get("nday").toString());
+            int ndayF = Integer.parseInt(ParameterValues.dayInfo.get("ndayF").toString());
+            int ndayP = Integer.parseInt(ParameterValues.dayInfo.get("ndayP").toString());
 
             //IN ALL CASES ONLY THE PENTECOSTARION READINGS ARE EFFECTED!
             Vector empty = new Vector();
@@ -773,7 +806,7 @@ public class DivineLiturgy1 implements DocHandler {
                 if (vect != null) {
                     for (Enumeration e2 = vect.elements(); e2.hasMoreElements();) {
                         String Command = (String) e2.nextElement();
-                        if (StringOp.evalbool(Command)) {
+                        if (ParameterValues.evalbool(Command)) {
                             //THE CURRENT COMMAND WAS TRUE AND THE SEQUENTITIAL READING IS TO BE SKIPPED
                             dailyV.clear();
                             dailyR.clear();
