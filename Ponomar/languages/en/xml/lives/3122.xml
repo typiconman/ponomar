@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Venerable Paul of Latros († 955)" Short="Venerable Paul"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1999-2008 Archpriest Eugene D. Tarris.">
 &lt;p&gt;He in adolescence devoted himself to serving the Lord in a monastery on Mount Latros in Asia Minor, near Miletus. The Venerable Paul was known for constant prayer, strict fasting, and deep silence. Venerable Paul died in the year 955, knowing beforehand the hour of his death. &lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;O most glorious Paul, we hymn thee * as one who dwelleth together with the incorporeal hosts * and as a companion of all the venerable, ** and we beseech thee: ** Pray thou ever for us, that we may find mercy.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="8">
 &lt;p&gt;From thy youth, O wise one, thou didst manfully desire that which passeth understanding * and didst forsake the tumult of the world. * For thy divine way of life thou becamest a dwelling-place of the Trinity, * and hast illumined those who have recourse to thee with faith. ** Wherefore, we cry out: Rejoice, O Paul who art most rich!&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

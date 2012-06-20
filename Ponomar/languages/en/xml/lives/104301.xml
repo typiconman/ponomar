@@ -1,15 +1,16 @@
 ﻿<SAINT>
 <NAME Nominative="Repose of Saint Jonah, Archbishop of Novgorod († 1470)" Short="Repose of"/>
-<SERVICE Type="3"/><LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
+<LIFE Id="bulgakov" Translator="Archpriest Eugene Tarris">
 &lt;p&gt; St. Jonah, in the world John, was born in Novgorod, in 14&lt;sup&gt;th&lt;/sup&gt; Century and, having been an orphan since childhood, was turned over to a certain deacon for his education. In childhood he liked to read the Holy Scriptures more than to play with his friends. Having reached maturity, John decided to take the way of salvation, according to which he steadily went during all his life, and was tonsured in the Otensk Hermitage (about 50 versts (33 miles) from Novgorod). Because of his holy life the monks of this hermitage selected him to be their hegumen, and in 1458 the Novgorodians selected him to be their archbishop. Having become the Archbishop of Novgorod, Jonah wisely led his flock and was the good shepherd, “leading his flock to faith by true words”, “father-like providing for widows and orphans, taking out affronts, softening enmity, making peace”. His “meekness and good nature” surprised pious autocrats and he received their love and respect, so they “always were ready to follow” the bishop “needing prayers and blessings” from him. St. Jonah reposed in peace in 1470. Wonderful was the deep respect of contemporaries for St. Jonah. Considering his holiness and wonderworking, they left his coffin open, and the body of the hierarch remained uncorrupt. His relics now rest in the Otensk Monastery (see Novgorod Diocese). The Moscow Council in 1540 established the feast day for St. Jonah. The Holy Church glorifies him, as “the intercessor for orphans and widows, the comforter of the grieving, the helper of those coming to him and the warm defender and instiller of tranquility and mercy to the novices and autocratic sovereigns calling on him”. &lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="3">
 <LITURGY>
 <TROPARION Type="1" Tone="4" Translator="Aleksandr Andreev">
 A rule of faith and an image of meekness, and like the garden in the middle of paradise thou enlightenest the world by thy righteous deeds, and therefore we lovingly venerate thine honoured bier and faithfully cry out: intercede for those who hymn your light-bearing memory, O Father Jonah, and pray that our souls may be saved. 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4" Translator="Aleksandr Andreev">
 Thou didst accept from on high divine grace to intercede between God and men, as a bishop raising up offerings and bringing down peace and an abundance of fruits to thy people, O blessed Jonah, for thou art the praise of Great Novgorod and the joy of those who dwell therein. 
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>
