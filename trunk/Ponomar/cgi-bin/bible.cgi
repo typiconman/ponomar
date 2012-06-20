@@ -30,7 +30,8 @@ my $book    = $q->param("book")    || "Gen";
 my $reading = $q->param("reading") || "1:1-13"; ## EG: 2:11-3:2, 5, 13-14, 17-4:1
 my $mode    = $q->param("mode");
 my $menu    = $q->param("menu");
-my $language = $q->param("lang") || "en";
+my $lang = $q->param("lang") || "en";
+my $language = "";
 my $hideversenum = $q->param("hideversenum") || 0;
 my $orient  = "ltr";
 
@@ -58,6 +59,8 @@ if ($cookies{"menologion"}) {
 		($City, $Lat, $Lon, $TZ, $language, $GS) = @temp;
 	}
 }
+
+$language = $lang if defined ($lang);
 
 if ($version) {
 	$language = (split(/\//, $version))[0];
