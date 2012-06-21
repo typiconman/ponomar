@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Venerable Hilarion the New, Abbot of the Dalmatian Monastery († 845)" Short="Venerable Hilarion"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Monk Ilarion (Hilary) the New was born of pious parents, Peter and Theodosia, who raised him in the virtues and instructed him in Holy Scripture. At twelve years of age Saint Ilarion was tonsured into monasticism at the Isykhia monastery near Byzantium, and from there he transferred to the Dalmatia monastery, where he took on the great schema and became a disciple of the Monk Gregory Dekapolites (Comm. 20November). The monk deeply venerated his God-bearing patronal-name saint—the Monk Ilarion the Great (Comm. 21 October), and he strove to imitate his life, whereby he came to be called Ilarion the New. At the Dalmatia monastery they ordained him presbyter. After the death of the hegumen the brethren wanted to elect Saint Ilarion to this position, but learning of this, he secretly withdrew away to Byzantium. &lt;/p&gt;&lt;p&gt;Then the monks of Dalmatia monastery sent off a petition to Saint Patriarch Nikephoros, asking that the Monk Ilarion be assigned as hegumen. The Patriarch summoned the saint and persuaded him to give his assent. The Monk Ilarion submitted out of holy obedience. Over the course of eight years he peacefully guided the monastery. But in the year 813 the iconoclast Leo the Armenian (813-820) occupied the imperial throne. The monk refused to blaspheme holy icons and he boldly accused the emperor of heresy, for which he endured many torments. They locked him up in prison for awhile, and vexed him with hunger and thirst. The impious patriarch Theodotos, having replaced the exiled Patriarch Nikephoros, caused the monk much suffering in demanding a rejection of Orthodoxy. The monks of the Dalmatia monastery went to the emperor and besought him to release the saint, promising to submit to the imperial will. But having returned to the monastery, the Monk Ilarion and all the monks continued to venerate holy icons. The enraged emperor again locked up the monk in prison. With all the powers at his disposal to demand a renunciation, he gave the saint over to torture and confined him in prison.&lt;/p&gt;&lt;p&gt;But the wrath of God overtook the wicked emperor: he was cut down by his own soldiers in church at that very spot, where once before he had thrown down an holy icon. The new emperor Michael II the Stammerer (820-829) set free the Monk Ilarion from his imprisonment, and the saint settled into a solitary cell. Upon the death of the Monk Theodore the Studite (Comm. 11 November)—who likewise had suffered for holy icons, the Monk Ilarion was vouchsafed to behold holy Angels lifting up to Heaven the holy soul of  Saint Theodore. &lt;/p&gt;&lt;p&gt;Under the iconoclast emperor Theophilos (829-842), the Monk Ilarion was again put under guard, and beaten terribly, and they confined him on the island of Athysia.&lt;/p&gt;&lt;p&gt;After the death of Theophilos, the holy empress Saint Theodora (842-855) gave orders to restore the confessors from exile. The Monk Ilarion returned to the Dalmatia monastery, again accepting to be hegumen at it, and he peacefully died in the year 845. &lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;O God of our fathers, * deal with us ever according to Thy meekness. * Deprive us not of Thy mercy, * but through their supplications ** direct our life in peace.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Like a shepherd didst thou preserve within thy fold * the flock of thy life-bearing pasture, * and wast shown to be great by the loftiness of thy works, O Hilarion the New, * having undergone much suffering and sorrow in thy piety. * Wherefore, thou hast made thine abode in the most joyful life in heavenly Sion. ** Pray for us, O venerable one!&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

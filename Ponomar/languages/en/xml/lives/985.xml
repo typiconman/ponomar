@@ -1,15 +1,13 @@
 <SAINT>
 <NAME Nominative="Venerable John Calabytes the Hut-Dweller (5&lt;sup&gt;th&lt;/sup&gt; C)" Short="Venerable John"/>
-<SERVICE Type="2"/><LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
 &lt;p&gt;The Monk John the Tent-Dweller was the son of rich and illustrious parents living in Constantinople during the V Century, and he received a fine education. He loved to read spiritual books, and having perceived the vanity of secular life, he preferred “rather than the broad path one that was narrow and infirm and extremely rigorous.” Having persuaded his parents to give him a Gospel, he set out secretly to Bithynia. At the monastery “Unceasing Vigilance” he received monastic tonsure. The young monk began to asceticise with zeal, astonishing his brethren with unceasing prayer, humble obedience, strict abstinence and perseverance at work.&lt;/p&gt;&lt;p&gt;After six years he began to undergo temptations: thoughts about his parents, about their love and fondness, about their sorrow—all this began to overtake the young ascetic.&lt;/p&gt;&lt;p&gt;Saint John disclosed his situation to the hegumen and he asked to be released from the monastery, and he besought the brethren not to forget him in their prayers, hoping that by their prayers he would with the help of God, both see his parents and overcome the snares of the devil. The hegumen gave him his blessing.&lt;/p&gt;&lt;p&gt;Saint John returned to Constantinople in the clothes of a beggar, and known to no one. He settled at the gates of his parental home. The parents sent him food from their table, for the sake of Christ. For three years, oppressed and insulted, he lived in a tent (hut), enduring cold and frost, unceasingly conversing with the Lord and the holy Angels. Always with him was the Gospel, given him by his parents, and from which he unceasingly gathered out sayings of life eternal. Before his death the Lord appeared in a vision to the monk, revealing that the end of his sorrows was approaching and that after three days he would be taken up into the Heavenly Kingdom.&lt;/p&gt;&lt;p&gt;Only then did the saint show his parents the Gospel, which they had given him shortly before he had left his parental home. The parents recognised their son. With tears of joy they hugged him simultaneously with tears of sorrow, in that he had endured privation for so long at the very gates of his parental home. Saint John gave final instructions to his parents to bury him on the spot where stood his tent, and to put in the grave the beggar’s rags that he wore during life. &lt;/p&gt;&lt;p&gt;The saint died in the mid V Century, when he was not yet 25 years of age. On the place of his burial the parents built a church to God and alongside it an house of hospitality for strangers. In the XII Century the head of the saint was taken by Crusaders to Besacon (in France), and the other relics of the saint were taken to Rome.&lt;/p&gt;
-</LIFE><SERVICE>
-<LITURGY>
-<TROPARION Type="1" Tone="1">
- 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Loving the riches which cannot be stolen, O all-wise John, * thou didst hate the riches of thy parents/and, holding the Gospel in thy hands, ** thou didst follow after Christ God, praying unceasingly for us all.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

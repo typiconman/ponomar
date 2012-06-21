@@ -1,6 +1,6 @@
 <SAINT>
 <!-- For St. Basil the Great -->
-<SERVICE Type="1">
+<SERVICE Type="1" Tie="010101">
 <MATINS>
 <SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="dow != 0" />
 </MATINS>

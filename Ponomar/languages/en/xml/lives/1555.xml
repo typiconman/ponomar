@@ -1,15 +1,12 @@
 <SAINT>
 <NAME Nominative="Venerable Michael of Maleinus († 962)" Short="Venerable Michael"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Monk Michael Maleinos was born about the year 894 in the Charsian region (Cappadocia) and at Baptism he received the name Manuel. He was of the same lineage with the Byzantine emperor Leo VI the Wise (886-911). At age 18 Manuel went off to Bithynia, to the Kimineia monastery under the guidance of the elder, John Heladites, who vowed him into monasticism with the name Michael. Fulfilling a very difficult obedience in spite of his illustrious lineage, he demonstrated an example of great humility.&lt;/p&gt;&lt;p&gt;After the passage of a certain while he was vouchsafed the grace of the priesthood. Constantly studying the Holy Scripture, the Monk Michael showed how the priesthood ought to be properly conjoined with monasticism,—he attained to an high degree of dispassion and acquired the gift of perspicacity. He was very compassionate and kindly towards people, he could not let remain without help and consolation those who were in need and in sorrow, and by his ardent prayer he accomplished many miracles.&lt;/p&gt;&lt;p&gt;After much monastic effort under the guidance of the elder John, the Monk Michael besought of him blessing for a solitary life in a cave, Five days of the week he spent at prayerful concentration and only on Saturday and Sunday did he come to the monastery for participation in Divine-services and communion of the Holy Mysteries. &lt;/p&gt;&lt;p&gt;By his example of sublime spiritual life the holy hermit attracted many seeking after salvation. In a desolate place called Dry Lake, the Monk Michael founded a monastery for the brethren gathering to him, and gave it a strict ustav (monastic-rule). When the monastery was secure, the Monk Michael went to a still more remote place and built there a new monastery. By the efforts of the holy abba, all the Kumineia mountain was covered over by monastic communities, where constantly prayers were raised up for all the world to the Throne of the Most-High.&lt;/p&gt;&lt;p&gt;About the year 953 amongst the brethren entered the youth Abraham, flourishing under the guidance of Saint Michael, who gave him the name Athanasias. Later on the Monk Athanasias (Comm. 5 July) himself founded the reknown Athos Laura, the first life-in-common monastery on the Holy Mountain. In the building of the Laura great help was rendered to the Monk Athanasias by the nephew of the Monk Michael—the later Byzantine emperor Nicephoros Phokas (963-969), who in visiting his uncle met also Athanasias. After fifty years of incessant monastic effort the monk Michael Maleinos peacefully expired to the Lord in the year 962.&lt;/p&gt;
-</LIFE><SERVICE>
-<LITURGY>
-<TROPARION Type="1" Tone="1">
- 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</LIFE>
+<SERVICE Type="1">
 <KONTAKION Type="1" Tone="2">
 &lt;p&gt;Thou didst lighten the heaviness of the flesh by thy works * and didst give speedy wings to thy soul by enlightenment, O Michael; * and thou hast shown thyself to be a dwelling-place for the Trinity, ** beholding Whom, O blessed one, pray thou unceasingly for us all.&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

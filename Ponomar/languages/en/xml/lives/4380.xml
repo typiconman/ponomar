@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyr Eusignios of Antioch († 362)" Short="Martyr Eusignios"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Martyr Eusignios was born at Antioch in the mid III Century. Over the course of sixty years he served in the Roman armies of the emperors Diocletian, Maximian Hercules, Constantius Chlorus, Constantine the Great and his sons. Saint Eusignios was a companion of Saint Basiliskos (Comm. 3 March and 22 May), and he provided an account of his deed of martyrdom († c.  308). At the beginning of the reign of Saint Constantine the Great, Saint Eusignios was a witness to the appearance in the sky of the starry Cross, a prediction of victory. Saint Eusignios retired in his old age from military service and returned to his own country. There he spent his time in prayer, fasting, and attending the temple of God. And thus he lived until the reign of Julian the Apostate (361-363), who yearned for a return to paganism. Through the denunciation of one of the Antioch citizens, Saint Eusignios stood trial as a Christian before the emperor Julian in the year 362. He fearlessly accused the emperor of apostacy from Christ, and reproached him with the example of his relative, Constantine the Great, and he described in detail how he himself had been an eyewitness to the appearance in the sky of the sign of the Cross. Julian did not spare the quite old Saint Eusignios, then 110 years old, but rather ordered him beheaded.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;Let us go forth to meet the transfiguration of Christ, * splendidly celebrating the forefeast thereof, O ye faithful; * and let us cry aloud: * The day of divine gladness hath arrived! ** The Master ascendeth Mount Tabor to shine forth the beauty of His divinity!&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="1">
  
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>
