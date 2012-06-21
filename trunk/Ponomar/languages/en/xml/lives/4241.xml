@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Martyrs Kyrikos and his mother Julitta, of Tarsus († c. a 305)" Short="Martyrs Kyrikos"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Holy Martyrs Kyrikos and Julitta lived in Asia Minor in the city of Iconium in the Likaoneia region. Saint Julitta was descended from an illustrious family and was a Christian. Widowed early on, she raised her three year old son Kyrikos. During the time of the persecution made against Christians by the emperor Diocletian (284-305), Saint Julitta with her son and two trustworthy servants departed the city, leaving behind her home and property and servants.&lt;/p&gt;&lt;p&gt;Under the guise of being impoverished she his out first at Seleucia, and then at Tarsis. And it was there in about the year 305 that she was recognised, arrested and brought to trial before the governor named Alexander. Strengthened by the Lord, she fearlessly gave answer to the questions of the judge and she firmly confessed her faith in Christ. The governor gave orders to beat the saint with canes. During the time of torment Saint Julitta kept repeating: “I am a Christian and will not offer sacrifice to demons.”&lt;/p&gt;&lt;p&gt;The little boy Kyrikos cried, seeing his mother being tortured, and wanted to go to her. The governor Alexander tried to hug him, but the boy broke free and shouted: “Let me go to my mother, I am a Christian.” The governor flung the boy from the high rostrum onto the stone steps, and the boy tumbled downwards striking the sharp edges, and died. The mother, seeing her lacerated son, gave thanks to God that He had vouchsafed the boy a martyr’s end. After many cruel tortures they beheaded Saint Julitta with the sword. &lt;/p&gt;&lt;p&gt;The relics of Saints Kyrikos and Julitta were discovered during the reign of holy Equal-to-the-Apostles Constantine († 337, Comm. 21 May). In honour of these holy martyrs there was built near Constantinople a monastery, and not far off from Jerusalem was built a church. In popular custom, Saints Kyrikos and Julitta are prayed to for family happiness, and the restoring to health of sick children.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In their sufferings, O Lord, * Thy martyrs received imperishable crowns from Thee our God; * for, possessed of Thy might, * they set at nought the tormentors and crushed the feeble audacity of the demons. ** By their supplications save Thou our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="4">
 &lt;p&gt;Holding Cyricus in her embrace, Julitta, the martyr of Christ, * cried out, exulting manfully in the contest: ** "Christ is the boast of the martyrs!"&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

@@ -1,15 +1,8 @@
 <SAINT>
 <NAME Nominative="Venerable Stephen of St Sabbas Monastery († 794)" Short="Venerable Stephen"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Monk Stephanos Savvaites, nephew of Saint John of Damascus (Comm. on 4 December), was born in the year 725. The ten year old lad entered the Lavra of Saint Savva and spent his whole life at this monastery, sometimes going out into the wilderness for solitary ascetic deeds. The monk Stephanos was bestowed the gifts of wonder-working and perspicacity: he healed the sick, cast out devils, and discerned the thoughts of those coming to him for counsel. He died in the year 724, foretelling in advance the day of his death. The life of the monk was compiled by his student Leontios.&lt;/p&gt;
-</LIFE><SERVICE>
-<LITURGY>
-<TROPARION Type="1" Tone="1">
- 
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
-<KONTAKION Type="1" Tone="1">
- 
-</KONTAKION></LITURGY></SERVICE>
+</LIFE>
+<SERVICE Type="1">
+</SERVICE>
 </SAINT>

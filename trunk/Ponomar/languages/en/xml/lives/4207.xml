@@ -1,15 +1,16 @@
 <SAINT>
 <NAME Nominative="Holy 45 Martyrs at Nicopolis in Armenia († c. a 319): Leontius, Mauricius, Daniel, Anthony, Alexander, Meneus, Janicita, Sisinius, Biriladus, and others" Short="Holy 45"/>
-<SERVICE Type="1"/><LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
+<LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
 &lt;p&gt;The Forty-five Martyrs of the Armenian City of Nicopolis suffered during the reign of the emperor Licinius (307-324), then a co-regent with Constantine the Great. Licinius fiercely persecuted Christians and in his Eastern districts of the empire he issued an edict to put to death anyone who would not consent to return to paganism. When the persecutions began at Nicopolis, more than forty of the persecuted of Christ decided to voluntarily appear before their persecutors, to openly confess their faith in the Son of God and accept martyrdom. The holy confessors were headed by Leontios, Mauricios, Daniel, Anthony and Alexander, and were distinguished by their virtuous life. The hegemon-procurator of the Armenian district, Licius, before whom the holy confessors presented themselves, was amazed at the directness and bravery of those who voluntarily doomed themselves to torture and death. He tried to persuade them to renounce Christ and offer sacrifice to the pagan gods, but the saints remained steadfast. They refuted all the arguments of the governor, pointing out to him all the falseness of faith in the disgusting and vice-filled pagan gods, leading to ruin those that worship them. The hegemon-procurator gave orders to beat the confessors about the face with stones, and then shackle and imprison them. &lt;/p&gt;&lt;p&gt;In prison the saints rejoiced and sang psalms of David. Saint Leontios inspired and encouraged the brethren in the faith, readying them to accept new tortures for the true faith, and telling them of the bravery of all those formerly that had suffered for Christ. In the morning, after repeated refusal to offer sacrifice to the idols, the saints were again given over to torture. Saint Leontios, seeing the intense suffering of the martyrs and worrying, that certain of them might collapse in spirit and lose faith, prayed to God, that he might see a quick end of the matter for all. &lt;/p&gt;&lt;p&gt;When the holy martyrs sang psalms at midnight, an Angel of the Lord suddenly appeared to them, and the prison blazed with light. The Angel declared to the martyrs, that their deed was near its end, and their names already were inscribed in Heaven. Two of the prison guards, Meneas and Virilades, beheld what was happening and believed in Christ. On the following morning the governor decided to put to death the martyr-witnesses of Christ. After beastly tortures they burned them in a fire, and their bones they threw in a river († c.  318). Pious people found them, gathered them up and saved them. Later on, when freedom had been bestown to the Church of Christ, on this spot was built a church in the name of the holy 45 Martyrs.&lt;/p&gt;
-</LIFE><SERVICE>
+</LIFE>
+<SERVICE Type="1">
 <LITURGY>
 <TROPARION Type="1" Tone="4">
 &lt;p&gt;In their sufferings, O Lord, * Thy martyrs received imperishable crowns from Thee our God; * for, possessed of Thy might, * they set at nought the tormentors and crushed the feeble audacity of the demons. ** By their supplications save Thou our souls.&lt;/p&gt;
-</TROPARION></LITURGY></SERVICE>
-<SERVICE>
-<LITURGY>
+</TROPARION>
 <KONTAKION Type="1" Tone="8">
 &lt;p&gt;For the sake of Christ, O martyrs, ye endured many torments. * Ye set at nought all of idolatrous polytheism and destroyed all the ungodliness of every falsehood, * trampling them down by the power of Christ. ** And ye teach us all to chant openly, with faith: Alleluia!&lt;/p&gt;
-</KONTAKION></LITURGY></SERVICE>
+</KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

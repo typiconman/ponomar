@@ -1,5 +1,6 @@
 <SAINT>
-<SERVICE>
+<SERVICE Cmd="nday != -49" Tie="369"/>
+<SERVICE Cmd="nday == -49">
 <VESPERS>
 <SCRIPTURE Type="1" Reading="Composite_6" Cmd="nday == -49"/>
 <SCRIPTURE Type="1" Reading="Isa_6:1-12" Cmd="nday == -49"/>
