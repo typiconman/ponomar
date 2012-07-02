@@ -11,8 +11,8 @@ For example, Ascension has a dRank > 5, but its readings ("daily readings" in so
 most certainty *not transferred*.
 We're going to handle this in the implementation by keeping track of the Src of the observances -->
 <COMMAND Name="TransferRulesB" Value="dow != 0 &amp;&amp; !(nday >= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; doy != 338"/>
-<COMMAND Name="TransferRulesF" Value="dow == 2 &amp;&amp; !(nday >= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; ((dow == 2  &amp;&amp; doy != 339) || ((doy == 340 &amp;&amp; (dow != 0 &amp;&amp; dow != 2))))" Cmd="GS == 1" Comment="This determines the rules used to transfer the readings to the next day (forwards). Note that St. Nicholas's day has a special set of rules."/>
-<COMMAND Name="Class3Transfers" Value="(dRank &gt;= 5 &amp;&amp; dow != 0) &amp;&amp; (nday &gt; 50 || nday &lt; -49)"/>
+<COMMAND Name="TransferRulesF" Value="dow == 2 &amp;&amp; !(nday >= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; ((dow == 2  &amp;&amp; doy != 339) || ((doy == 340 &amp;&amp; (dow != 0 &amp;&amp; dow != 2))))" Comment="This determines the rules used to transfer the readings to the next day (forwards). Note that St. Nicholas's day has a special set of rules."/>
+<COMMAND Name="Class3Transfers" Value="((dRank &gt;= 5 &amp;&amp; dow != 0)) &amp;&amp; (nday &gt; 50 || nday &lt; -49)"/>
 <!--<COMMAND Name="TransferRuleB" Value="dow != 6 &amp;&amp; ((nday &gt; 50 &amp;&amp; doy &lt;= 364) || (nday &lt; -63 &amp;&amp; (doy &lt;= 59 || doy == 366)))"/>
 <COMMAND Name="TransferRuleF" Value="dow == 2 &amp;&amp; ((nday &gt; 50 &amp;&amp; doy &lt;= 364) || (nday &lt; -63 &amp;&amp; (doy &lt;= 59 || doy == 366)))"/>-->
 <!-- TODO: WE NEED TO IMPLEMENT SUPPRESSION RULES FOR THE THEOPHANY PERIOD -->

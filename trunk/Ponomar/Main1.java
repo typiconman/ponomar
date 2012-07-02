@@ -953,6 +953,56 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                         continue;
 
                     }
+                    if (element1.equals("MATINS")){
+                        if (firstTime){
+                            firstTime=false;
+                        }
+                        else{
+                            output+=RSep;
+                        }
+                        Vector matins2 = new Vector();
+
+                        for (int j=0;j<Readings.size();j++){
+                            OrderedHashtable matins=(OrderedHashtable)Readings.get(j);
+                            //System.out.println("In Main1, we have "+Readings.get(j));
+                            OrderedHashtable stepE=(OrderedHashtable)matins.get("matins");
+                            if (stepE == null){
+                                stepE=(OrderedHashtable)matins.get("1");
+                            }
+                            //OrderedHashtable stepE=(OrderedHashtable)matins.get("matins");
+                            //System.out.println("In Main1, we have "+matins2);
+                            //System.out.println(stepE);
+                            
+                            if (stepE!=null)
+                            {
+                            matins2.add(stepE.get("Reading").toString());
+                            }
+                            else
+                            {
+                                matins2.add("");
+                            }
+                        }
+
+                        OrderedHashtable readingsA=new OrderedHashtable();
+
+                        
+
+
+
+                        readingsA.put("Readings",matins2);
+                        readingsA.put("Rank",Rank);
+                        readingsA.put("Tag",Tag);
+                        Matins trial1=new Matins();
+                        String type1 =(String) Phrases.Phrases.get("matins");
+                        output+="<B>"+type1+"</B>"+Colon;
+                        //System.out.println(readingsA);
+                        output+=trial1.Readings(readingsA,today);
+                        //output+=RSep;
+
+                        
+                        continue;
+
+                    }
                     if (firstTime){
                             firstTime=false;
                         }

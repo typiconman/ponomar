@@ -97,5 +97,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="PadH" Value="1" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 <PHRASE Key="PadM" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 
+<PHRASE Key="IconSearch" Value="cu/ru/,el/,en" Note="There is no need to include the current language and its path up, as it will be searched by default. Similarly, only the lowest desired searachable path should be considered, as the programme will by default search up the tree from the given point."/>
+
 
 </LANGUAGEPACKS>
