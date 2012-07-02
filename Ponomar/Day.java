@@ -284,11 +284,18 @@ public class Day implements DocHandler {
             String Sid = CCom.getSId();
             String Cid = CCom.getCId();
             String NameF = CCom.getGrammar("Short");
+            String[] IconSearch=Text.obtainValues((String)Text.Phrases.get("IconSearch"));
             
             File fileNew=new File(helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "/icons/"+ Cid + "/0.jpg"));
-           /* if (!(fileNew.exists())){
-                fileNew=new File(helper.langFileFind("el", "/icons/"+ Cid + "/0.jpg"));
-            }*/
+            int countSearch=0;
+            String LanguageString=ParameterValues.dayInfo.get("LS").toString();
+            
+            while (!(fileNew.exists()) && countSearch<IconSearch.length){
+                LanguageString=IconSearch[countSearch];
+                fileNew=new File(helper.langFileFind(IconSearch[countSearch], "/icons/"+ Cid + "/0.jpg"));
+                countSearch+=1;               
+            }
+
             //The above code will add the Greek Icons and this will allow me to do what I wish to do!!!
 
             int counterI=0;
@@ -299,7 +306,7 @@ public class Day implements DocHandler {
                 IconImages.add(fileNew.toString());
                 IconNames.add(NameF);
                 counterI+=1;
-                fileNew=new File(helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "/icons/"+ Cid + "/"+counterI+".jpg"));
+                fileNew=new File(helper.langFileFind(LanguageString, "/icons/"+ Cid + "/"+counterI+".jpg"));
             }
         File file = new File("Ponomar/images/icons/" + Cid + ".jpg");
         if (file.exists()) {
