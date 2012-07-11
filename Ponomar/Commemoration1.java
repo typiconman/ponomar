@@ -56,6 +56,7 @@ public class Commemoration1 implements DocHandler {
     private Helpers helper;
     private boolean combine = false;
     private boolean skipElement = false;
+    private boolean presentPropers=false;
 
     protected Commemoration1(String SId, String CId) {
         Information = new OrderedHashtable();
@@ -193,6 +194,7 @@ public class Commemoration1 implements DocHandler {
                 readings.put(type, vect);
             }
             Information.put("Scripture", readings);
+            //Information.put("presentPropers",true);
         }
         if (elem.equals("GRAMMAR") && read) {
             //THIS SHOULD ONLY BE READ ONCE PER LANGUAGE AND PASS!
@@ -218,12 +220,14 @@ public class Commemoration1 implements DocHandler {
             if (table.get("Author") != null){
             variable.put("Author", table.get("Author").toString());
             }
+            //Information.put("presentPropers",true);
         }
         if (elem.equals("KONTAKION") && read) {
             variable = new OrderedHashtable();
             variable.put("Tone", table.get("Tone").toString());
             if (table.get("Author") != null){
             variable.put("Author", table.get("Author").toString());
+            //Information.put("presentPropers",true);
             }
         }
         if (elem.equals("NAME") && read) {
@@ -260,6 +264,7 @@ public class Commemoration1 implements DocHandler {
             readRH = false;
         }
         if (elem.equals("SERVICE") && read) {
+            //Information.put("presentPropers",true);
             readService = false;
 
             //System.out.println(ServiceInfo);
@@ -317,7 +322,7 @@ public class Commemoration1 implements DocHandler {
                 ServiceInfo.put(Location1, stuff);
             }
             value = new OrderedHashtable();
-            Location1 = Location1.substring(0, Location1.lastIndexOf("/"));            
+            Location1 = Location1.substring(0, Location1.lastIndexOf("/"));             
 
             //return;
         }
@@ -407,6 +412,52 @@ public class Commemoration1 implements DocHandler {
 
     public String getIcon() {
         return Information.get("Icon").toString();
+    }
+    public OrderedHashtable getDisplayIcons(){
+
+        //Ordered List of the Icons
+        Vector IconImages = new Vector();
+        Vector IconNames=new Vector();
+
+
+
+
+            String Cid = Information.get("CID").toString();
+            String NameF = getGrammar("Short");
+            String[] IconSearch=Text.obtainValues((String)Text.Phrases.get("IconSearch"));
+
+            File fileNew=new File(helper.langFileFind(StringOp.dayInfo.get("LS").toString(), "/icons/"+ Cid + "/0.jpg"));
+            int countSearch=0;
+            String LanguageString=StringOp.dayInfo.get("LS").toString();
+
+            while (!(fileNew.exists()) && countSearch<IconSearch.length){
+                LanguageString=IconSearch[countSearch];
+                fileNew=new File(helper.langFileFind(IconSearch[countSearch], "/icons/"+ Cid + "/0.jpg"));
+                countSearch+=1;
+            }
+
+            //The above code will add the Greek Icons and this will allow me to do what I wish to do!!!
+
+            int counterI=0;
+
+            //System.out.println(fileNew.getAbsolutePath());
+            while (fileNew.exists()){
+
+                IconImages.add(fileNew.toString());
+                IconNames.add(NameF);
+                counterI+=1;
+                fileNew=new File(helper.langFileFind(LanguageString, "/icons/"+ Cid + "/"+counterI+".jpg"));
+            }
+        File file = new File("Ponomar/images/icons/" + Cid + ".jpg");
+        if (file.exists()) {
+            IconImages.add(file.toString());
+            IconNames.add(NameF);
+        }
+
+        OrderedHashtable finalI = new OrderedHashtable();
+        finalI.put("Images",IconImages);
+        finalI.put("Names",IconNames);
+        return finalI;
     }
 
     public String getID() {
@@ -520,6 +571,33 @@ public class Commemoration1 implements DocHandler {
             return true;
         }
         return false;
+    }
+    public boolean checkIcon(){
+        //Checks whether the given commemoration has any icons assoicated with it
+        OrderedHashtable checkIcon=getDisplayIcons();
+        if (checkIcon.size()>0){
+            return true;
+        }
+        return false;
+    }
+    public boolean checkPropers(){
+        //Checks whether there are any associated propers for the given commemoration that could be display.
+        //At present only cares about the tropar and kondak.
+        /*System.out.println(Information.get("CID"));
+        OrderedHashtable check1=getService("/LITURGY/TROPARION","1");
+        System.out.println(check1);
+        if (check1 != null){
+            System.out.println("This is CCID: "+ Information.get("CID")+" and check1 form: "+check1);
+            return true;
+        }*/
+        /*if (Information.get("presentPropers")!=null){
+        boolean check= Boolean.parseBoolean(Information.get("presentPropers").toString());
+        if (check){
+            return true;
+        }
+        }*/
+        return false;
+
     }
 
     public String getLife(){

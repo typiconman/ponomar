@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="DAY">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="SAINT" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="SId" type="xs:string" use="required"/>
+					<xs:attribute name="CId" type="xs:string" use="required"/>
+					<xs:attribute name="Cmd" type="xs:string" />
+					<xs:attribute name="Tone">
+						<xs:simpleType>
+							<xs:restriction base="xs:integer">
+								<xs:minInclusive value="-1"/>
+								<xs:maxInclusive value="7"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+
+
+	</xs:complexType>
+
+</xs:element>
+
+</xs:schema>

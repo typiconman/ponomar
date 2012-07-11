@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attribute name="Cmd" type="xs:string"/>
+	<xs:element name="COMMAND">
+		<xs:complexType>
+			<xs:attribute name="Name" use="required"/>
+			<xs:attribute name="Value" use="required"/>
+			<xs:attribute name="Comment"/>
+			<xs:attribute ref="Cmd"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="TIMES">
+		<xs:complexType>
+			<xs:attribute name="Value" use="required"/>
+			<xs:attribute ref="Cmd" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	
+	<xs:element name="RULE">
+		<xs:complexType>
+			<xs:attribute name="Value"/>
+			<xs:attribute ref="Cmd"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="PERIOD">
+		<xs:complexType>
+			<xs:sequence>
+				
+				<xs:element ref="RULE" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="Cmd" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FASTING">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PERIOD" maxOccurs="unbounded"/>				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+</xs:schema>
