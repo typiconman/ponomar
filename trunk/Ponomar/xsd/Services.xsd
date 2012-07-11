@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attribute name="Who">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[P,SR,R,D,C,B,]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="NewLine">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="0"/>
+				<xs:maxInclusive value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="RedFirst">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="0"/>
+				<xs:maxInclusive value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="Times">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:element name="CREATE">
+		<xs:complexType>
+			<xs:attribute ref="Who" use="required"/>
+			<xs:attribute ref="RedFirst" use="required"/>
+			<xs:attribute name="What" use="required" type="xs:string"/>
+			<xs:attribute ref="Times"/>
+			<xs:attribute ref="NewLine" use="required"/>
+			<xs:attribute name="Header" type="xs:string"/>
+			<xs:attribute name="Command" type="xs:string"/>
+			<xs:attribute name="CommandB" type="xs:string"/>
+			<xs:attribute name="Cmd" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TITLE">
+		<xs:complexType>
+			<xs:attribute name="Value" type="xs:string" use="required"/>
+			<xs:attribute name="Header" type="xs:string"/>
+			<xs:attribute name="Source" type="xs:string"/>
+			<xs:attribute name="Comment" type="xs:string"/>
+			<xs:attribute name="Cmd" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET">
+		<xs:complexType>
+			<xs:attribute name="Value" type="xs:string" use="required"/>
+			<xs:attribute name="Cmd" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BIBLE">
+		<xs:complexType>
+			<xs:attribute name="Verse" type="xs:string" use="required"/>
+			<xs:attribute name="getReading" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute ref="Who" use="required"/>
+			<xs:attribute ref="RedFirst" use="required"/>
+			<xs:attribute ref="NewLine" use="required"/>
+			<xs:attribute ref="Times"/>
+			<xs:attribute name="Header" type="xs:string"/>
+			<xs:attribute name="Command" type="xs:string"/>
+			<xs:attribute name="CommandB" type="xs:string"/>
+			<xs:attribute name="Cmd" type="xs:string"/>
+			<xs:attribute name="TwoStars">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TEXT">
+		<xs:complexType>
+			<xs:attribute ref="Who" use="required"/>
+			<xs:attribute ref="RedFirst" use="required"/>
+			<xs:attribute name="What" use="required" type="xs:string"/>
+			<xs:attribute ref="Times"/>
+			<xs:attribute ref="NewLine" use="required"/>
+			<xs:attribute name="Header" type="xs:string"/>
+			<xs:attribute name="Command" type="xs:string"/>
+			<xs:attribute name="CommandB" type="xs:string"/>
+			<xs:attribute name="Cmd" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LANGUAGES">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="TITLE" maxOccurs="unbounded"/>
+				<xs:element ref="CREATE" maxOccurs="unbounded"/>
+				<xs:element ref="BIBLE" maxOccurs="unbounded"/>
+				<xs:element ref="GET" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SERVICE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="LANGUAGES"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

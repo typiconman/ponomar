@@ -4,4 +4,4 @@
 		<TIMES Value="&lt;i&gt;Twice&lt;/i&gt;" Cmd="Times == 2"/>
 		<TIMES Value="&lt;i&gt;Thrice&lt;/i&gt;" Cmd="Times == 3"/>
 		<TIMES Value="&lt;i&gt;^# times&lt;/i&gt;" Cmd="Times &gt;= 4"/>
-	</DATA>
+</DATA>

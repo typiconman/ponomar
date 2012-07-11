@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attribute name="Cmd" type="xs:string"/>
+	<xs:element name="COMMAND">
+		<xs:complexType>
+			<xs:attribute name="Name" use="required"/>
+			<xs:attribute name="Value" use="required"/>
+			<xs:attribute name="Comment"/>
+			<xs:attribute ref="Cmd"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="TIMES">
+		<xs:complexType>
+			<xs:attribute name="Value" use="required"/>
+			<xs:attribute ref="Cmd" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="PRIMES">
+		<xs:complexType>
+			<xs:attribute name="Type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[None,Normal,Lenten,Paschal,Easter]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="Troparion"/>
+			<xs:attribute name="Kontakion"/>
+			<xs:attribute name="PickT"/>
+			<xs:attribute name="PickK"/>
+			<xs:attribute ref="Cmd" use="required"/>
+		</xs:complexType>		
+	</xs:element>
+
+	<xs:element name="TERCE">
+		<xs:complexType>
+			<xs:attribute name="Type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[None,Normal,Lenten,Paschal,Easter]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="Troparion"/>
+			<xs:attribute name="Kontakion"/>
+			<xs:attribute name="PickT"/>
+			<xs:attribute name="PickK"/>
+			<xs:attribute ref="Cmd" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="SEXTE">
+		<xs:complexType>
+			<xs:attribute name="Type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[None,Normal,Lenten,Paschal,Easter]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="Troparion"/>
+			<xs:attribute name="Kontakion"/>
+			<xs:attribute name="PickT"/>
+			<xs:attribute name="PickK"/>
+			<xs:attribute ref="Cmd" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="NONE">
+		<xs:complexType>
+			<xs:attribute name="Type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[None,Normal,Lenten,Paschal,Easter]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="Troparion"/>
+			<xs:attribute name="Kontakion"/>
+			<xs:attribute name="PickT"/>
+			<xs:attribute name="PickK"/>
+			<xs:attribute ref="Cmd" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="VESPERS"/>
+	<xs:element name="MATINS"/>
+	<xs:element name="LITURGY"/>
+	<xs:element name="TYPIKA"/>
+	<xs:element name="RULE">
+		<xs:complexType>
+			<xs:attribute name="Value"/>
+			<xs:attribute ref="Cmd"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="PERIOD">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PRIMES" maxOccurs="unbounded"/>
+				<xs:element ref="TERCE" maxOccurs="unbounded"/>
+				<xs:element ref="SEXTE" maxOccurs="unbounded"/>
+				<xs:element ref="NONE" maxOccurs="unbounded"/>
+				<xs:element ref="VESPERS" maxOccurs="unbounded"/>
+				<xs:element ref="MATINS" maxOccurs="unbounded"/>
+				<xs:element ref="LITURGY" maxOccurs="unbounded"/>
+				<xs:element ref="TYPIKA" maxOccurs="unbounded"/>
+				<xs:element ref="RULE" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="Cmd" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PHRASE">
+		<xs:complexType>
+			<xs:attribute name="Key" use="required"/>
+			<xs:attribute name="Value" use="required"/>			
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DATA">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PERIOD" maxOccurs="unbounded"/>
+				<xs:element ref="COMMAND" maxOccurs="unbounded"/>
+				<xs:element ref="TIMES" maxOccurs="unbounded"/>
+				<xs:element ref="PHRASE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+</xs:schema>

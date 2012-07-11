@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">	
+<xs:element name="LANGUAGEPACKS">
+<xs:complexType>
+	<xs:sequence>
+			<xs:element name="PHRASE" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="Key"/>
+					<xs:attribute name="Value"/>
+					<xs:attribute name="Comment"/>
+				</xs:complexType>
+			
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

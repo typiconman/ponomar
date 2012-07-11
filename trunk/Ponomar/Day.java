@@ -200,7 +200,7 @@ public class Day implements DocHandler {
             }
             
             //System.out.println(NameF);
-            if (CCom.checkLife()){
+            if (CCom.checkLife() || CCom.checkPropers()){
                 output += "<A Href='goDoSaint?id=" + Sid + "," + Cid + "'>";
             }
             int Rank = CCom.getRank();

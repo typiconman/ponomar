@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attribute name="Type">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="1"/>				
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:element name="SCRIPTURE">
+		<xs:complexType>
+			<xs:attribute ref="Type" use="required"/>
+			<xs:attribute name="Reading" use="required" type="xs:string"/>
+			<xs:attribute name="Pericope" type="xs:integer"/>
+			<xs:attribute name="EffWeek">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="32"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="Cmd" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attribute name="Tone">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="0"/>
+				<xs:maxInclusive value ="7"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="Podoben" type="xs:string"/>
+	<xs:attribute name="Author" type="xs:string"/>
+	<xs:attribute name="Translator" type="xs:string"/>
+	<xs:attribute name="Header" type="xs:string"/>
+	<xs:element name="TROPARION">
+		<xs:complexType>
+			<xs:attribute ref="Type" use="required"/>
+			<xs:attribute ref="Tone"/>
+			<xs:attribute ref="Podoben"/>
+			<xs:attribute ref="Author"/>
+			<xs:attribute ref="Translator"/>
+			<xs:attribute ref="Header"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="KONTAKION">
+		<xs:complexType>
+			<xs:attribute ref="Type" use="required"/>
+			<xs:attribute ref="Tone"/>
+			<xs:attribute ref="Podoben"/>
+			<xs:attribute ref="Author"/>
+			<xs:attribute ref="Translator"/>
+			<xs:attribute ref="Header"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="IDIOMELA">
+		<xs:complexType>
+			<xs:attribute ref="Type" use="required"/>
+			<xs:attribute ref="Tone"/>
+			<xs:attribute ref="Podoben"/>
+			<xs:attribute ref="Author"/>
+			<xs:attribute ref="Translator"/>
+			<xs:attribute ref="Header"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="VERSE">
+		<xs:complexType>
+			<xs:attribute ref="Type" use="required"/>			
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PROKIMENON">
+		<xs:complexType>
+			<xs:attribute ref="Type" use="required"/>
+			<xs:attribute ref="Tone"/>
+			<xs:attribute ref="Podoben"/>
+			<xs:attribute ref="Author"/>
+			<xs:attribute ref="Translator"/>
+			<xs:attribute ref="Header"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MATINS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SCRIPTURE" maxOccurs="unbounded"/>			
+			</xs:sequence>		
+			<xs:attribute name="Type"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LITURGY">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SCRIPTURE" maxOccurs="2"/>
+				<xs:element ref="TROPARION" maxOccurs="3"/>
+				<xs:element ref="KONTAKION" maxOccurs="3"/>
+			</xs:sequence>
+			<xs:attribute name="Type"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="VESPERS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SCRIPTURE" maxOccurs="14"/>				
+			</xs:sequence>
+			<xs:attribute name="Type"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PRIMES">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SCRIPTURE" maxOccurs="2"/>				
+			</xs:sequence>
+			<xs:attribute name="Type"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TERCE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SCRIPTURE" maxOccurs="2"/>
+			</xs:sequence>
+			<xs:attribute name="Type"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SEXTE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SCRIPTURE" maxOccurs="2"/>
+			</xs:sequence>
+			<xs:attribute name="Type"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NONE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SCRIPTURE" maxOccurs="2"/>
+			</xs:sequence>
+			<xs:attribute name="Type"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ROYALHOURS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SCRIPTURE" maxOccurs="10"/>
+				<xs:element ref="TROPARION" maxOccurs="unbounded"/>
+				<xs:element ref="KONTAKION" maxOccurs="unbounded"/>
+				<xs:element ref="IDIOMELA" maxOccurs="unbounded"/>
+				<xs:element ref="VERSE" maxOccurs="unbounded"/>
+				<xs:element ref="PROKIMENON" maxOccurs="unbounded"/>				
+			</xs:sequence>
+			<xs:attribute name="Type"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LIFE">
+		<xs:complexType>
+			<xs:attribute name="id" use="required"/>
+			<xs:attribute name="Copyright"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SERVICE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MATINS"/>
+				<xs:element ref="LITURGY"/>
+				<xs:element ref="ROYALHOURS"/>
+				<xs:element ref="PRIMES"/>
+				<xs:element ref="TERCE"/>
+				<xs:element ref="SEXTE"/>
+				<xs:element ref="NONE"/>
+				<xs:element ref="VESPERS"/>
+			</xs:sequence>
+			<xs:attribute name="Type">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="9"/>						
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="Cmd" type="xs:string"/>
+			<xs:attribute name="tie" type="xs:integer"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NAME">
+		<xs:complexType>
+			<xs:attribute name="Nominative" type="xs:string" use="required"/>
+			<xs:attribute name="Cmd" type="xs:string"/>
+			<xs:attribute name="Genetive" type="xs:string"/>
+			<xs:attribute name="Short" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+		
+	
+<xs:element name="SAINT">
+<xs:complexType>
+	<xs:sequence>
+			<xs:element ref="NAME" maxOccurs="unbounded"/>
+			<xs:element ref="LIFE" maxOccurs="unbounded"/>
+			<xs:element ref="SERVICE"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>
