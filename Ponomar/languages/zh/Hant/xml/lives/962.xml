@@ -1,5 +1,4 @@
 <SAINT>
 <NAME Short="神學家約安"/>
-<NAME Nominative="聖使徒，著福音者，神學家約安（98-117年間）" Cmd="doy != 268"/>
-<NAME Nominative="聖使徒，著福音者，神學家聖約安安息紀念日" Cmd="doy == 268"/>
+<NAME Nominative="聖使徒，著福音者，神學家聖約安安息紀念日"/>
 <SERVICE Type="5"/></SAINT>
