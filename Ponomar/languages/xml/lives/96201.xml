@@ -1,0 +1,16 @@
+<SAINT>
+<SERVICE Type="5">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="I Jn_3:21-4:6"/>
+<SCRIPTURE Type="2" Reading="I Jn_4:11-16"/>
+<SCRIPTURE Type="3" Reading="I Jn_4:20-5:5"/>
+</VESPERS>
+<MATINS>
+<SCRIPTURE Type="1" Reading="Jn_21:15-25" Pericope="67" Cmd="dow != 0"/>
+</MATINS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="I Jn_1:1-7" Pericope="68"/>
+<SCRIPTURE Type="gospel" Reading="Jn_19:25-27, 21:24-25" Pericope="61"/>
+</LITURGY>
+</SERVICE>
+</SAINT>
