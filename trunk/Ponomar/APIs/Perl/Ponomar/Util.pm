@@ -149,9 +149,11 @@ sub getGregorianOffset ($) {
 	return $answer;
 }
 
-=item getToday()
+=item getToday( [$timeshift] )
 
 Returns a Ponomar::JDate object with the date of Today according to the System clock.
+
+Optional parameter C<$timeshift> indicates a Time zone shift from UTC in HOURS.
 
 B<WARNING>: Ponomar::Util relies on time to set Today. It assumes that the system's epoch begins
 on 00:00:00 UTC, January 1, 1970 (GREGORIAN!). It has recently come to my attention that this is not true for all systems. I know of no way to get around this problem, so this should be considered a bug.
@@ -161,7 +163,9 @@ on 00:00:00 UTC, January 1, 1970 (GREGORIAN!). It has recently come to my attent
 sub getToday {
 	## WE SHALL ASSUME THAT THE EPOCH BEGINS ON JANUARY 1, 1970
 	## THIS IS JULIAN DAY 2440588
-	return new Ponomar::JDate(int(time / 86400) + 2440588);
+	my $timeshift = shift || 0;
+	
+	return new Ponomar::JDate(int(time / 86400) + 2440588 + $timeshift * 3600);
 }
 
 =item julianFromGregorian( $month, $day, $year )
@@ -505,6 +509,6 @@ sub getPassover {
 			new Ponomar::JDate(3, $d, $year);
 }
 
-	
+
 __END__
 
