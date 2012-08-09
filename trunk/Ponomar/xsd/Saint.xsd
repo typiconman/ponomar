@@ -37,53 +37,73 @@
 	<xs:attribute name="Header" type="xs:string"/>
 	<xs:element name="TROPARION">
 		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
 			<xs:attribute ref="Type" use="required"/>
 			<xs:attribute ref="Tone"/>
 			<xs:attribute ref="Podoben"/>
 			<xs:attribute ref="Author"/>
 			<xs:attribute ref="Translator"/>
 			<xs:attribute ref="Header"/>
-		</xs:complexType>
-	</xs:element>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>		
+	</xs:element>	
 	<xs:element name="KONTAKION">
 		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
 			<xs:attribute ref="Type" use="required"/>
 			<xs:attribute ref="Tone"/>
 			<xs:attribute ref="Podoben"/>
 			<xs:attribute ref="Author"/>
 			<xs:attribute ref="Translator"/>
 			<xs:attribute ref="Header"/>
+				</xs:extension>
+			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="IDIOMELA">
 		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
 			<xs:attribute ref="Type" use="required"/>
 			<xs:attribute ref="Tone"/>
 			<xs:attribute ref="Podoben"/>
 			<xs:attribute ref="Author"/>
 			<xs:attribute ref="Translator"/>
 			<xs:attribute ref="Header"/>
+			</xs:extension>
+			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="VERSE">
 		<xs:complexType>
-			<xs:attribute ref="Type" use="required"/>			
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+			<xs:attribute ref="Type" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="PROKIMENON">
 		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
 			<xs:attribute ref="Type" use="required"/>
 			<xs:attribute ref="Tone"/>
 			<xs:attribute ref="Podoben"/>
 			<xs:attribute ref="Author"/>
 			<xs:attribute ref="Translator"/>
 			<xs:attribute ref="Header"/>
+			</xs:extension>
+			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="MATINS">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="SCRIPTURE" maxOccurs="unbounded"/>			
+				<xs:element ref="SCRIPTURE" minOccurs="0" maxOccurs="unbounded"/>			
 			</xs:sequence>		
 			<xs:attribute name="Type"/>
 		</xs:complexType>
@@ -91,9 +111,9 @@
 	<xs:element name="LITURGY">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="SCRIPTURE" maxOccurs="2"/>
-				<xs:element ref="TROPARION" maxOccurs="3"/>
-				<xs:element ref="KONTAKION" maxOccurs="3"/>
+				<xs:element ref="SCRIPTURE" minOccurs="0" maxOccurs="2"/>
+				<xs:element ref="TROPARION" minOccurs="0" maxOccurs="3"/>
+				<xs:element ref="KONTAKION" minOccurs="0" maxOccurs="3"/>
 			</xs:sequence>
 			<xs:attribute name="Type"/>
 		</xs:complexType>
@@ -101,7 +121,7 @@
 	<xs:element name="VESPERS">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="SCRIPTURE" maxOccurs="14"/>				
+				<xs:element ref="SCRIPTURE" minOccurs="0" maxOccurs="14"/>				
 			</xs:sequence>
 			<xs:attribute name="Type"/>
 		</xs:complexType>
@@ -109,7 +129,7 @@
 	<xs:element name="PRIMES">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="SCRIPTURE" maxOccurs="2"/>				
+				<xs:element ref="SCRIPTURE" minOccurs="0" maxOccurs="2"/>				
 			</xs:sequence>
 			<xs:attribute name="Type"/>
 		</xs:complexType>
@@ -117,7 +137,7 @@
 	<xs:element name="TERCE">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="SCRIPTURE" maxOccurs="2"/>
+				<xs:element ref="SCRIPTURE" minOccurs="0" maxOccurs="2"/>
 			</xs:sequence>
 			<xs:attribute name="Type"/>
 		</xs:complexType>
@@ -125,7 +145,7 @@
 	<xs:element name="SEXTE">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="SCRIPTURE" maxOccurs="2"/>
+				<xs:element ref="SCRIPTURE" minOccurs="0" maxOccurs="2"/>
 			</xs:sequence>
 			<xs:attribute name="Type"/>
 		</xs:complexType>
@@ -133,7 +153,7 @@
 	<xs:element name="NONE">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="SCRIPTURE" maxOccurs="2"/>
+				<xs:element ref="SCRIPTURE" minOccurs="0" maxOccurs="2"/>
 			</xs:sequence>
 			<xs:attribute name="Type"/>
 		</xs:complexType>
@@ -141,33 +161,37 @@
 	<xs:element name="ROYALHOURS">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="SCRIPTURE" maxOccurs="10"/>
-				<xs:element ref="TROPARION" maxOccurs="unbounded"/>
-				<xs:element ref="KONTAKION" maxOccurs="unbounded"/>
-				<xs:element ref="IDIOMELA" maxOccurs="unbounded"/>
-				<xs:element ref="VERSE" maxOccurs="unbounded"/>
-				<xs:element ref="PROKIMENON" maxOccurs="unbounded"/>				
+				<xs:element ref="SCRIPTURE" minOccurs="0" maxOccurs="10"/>
+				<xs:element ref="TROPARION" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="KONTAKION" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="IDIOMELA" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="VERSE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="PROKIMENON" minOccurs="0" maxOccurs="unbounded"/>				
 			</xs:sequence>
 			<xs:attribute name="Type"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="LIFE">
 		<xs:complexType>
-			<xs:attribute name="id" use="required"/>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+			<xs:attribute name="Id" use="required"/>
 			<xs:attribute name="Copyright"/>
+				</xs:extension>
+			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="SERVICE">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="MATINS"/>
-				<xs:element ref="LITURGY"/>
-				<xs:element ref="ROYALHOURS"/>
-				<xs:element ref="PRIMES"/>
-				<xs:element ref="TERCE"/>
-				<xs:element ref="SEXTE"/>
-				<xs:element ref="NONE"/>
-				<xs:element ref="VESPERS"/>
+				<xs:element ref="LITURGY" minOccurs="0"/>
+				<xs:element ref="ROYALHOURS" minOccurs="0"/>
+				<xs:element ref="MATINS" minOccurs="0"/>
+				<xs:element ref="PRIMES" minOccurs="0"/>
+				<xs:element ref="TERCE" minOccurs="0"/>
+				<xs:element ref="SEXTE" minOccurs="0"/>
+				<xs:element ref="NONE" minOccurs="0"/>
+				<xs:element ref="VESPERS" minOccurs="0"/>
 			</xs:sequence>
 			<xs:attribute name="Type">
 				<xs:simpleType>
@@ -195,8 +219,8 @@
 <xs:complexType>
 	<xs:sequence>
 			<xs:element ref="NAME" maxOccurs="unbounded"/>
-			<xs:element ref="LIFE" maxOccurs="unbounded"/>
-			<xs:element ref="SERVICE"/>
+			<xs:element ref="LIFE" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="SERVICE" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
 </xs:element>
