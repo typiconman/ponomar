@@ -35,7 +35,7 @@ Note: The general format for the files is:
 <PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
 <PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
-<PHRASE Key="Tones" Value=" /,αʹ/,βʹ/,γʹ/,δʹ/,πλ. αʹ/,πλ. βʹ/,βαρύς/,πλ. δʹ" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Tones" Value="πλ. δʹ/,αʹ/,βʹ/,γʹ/,δʹ/,πλ. αʹ/,πλ. βʹ/,βαρύς/,πλ. δʹ" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
 <PHRASE Key="Main" Value="Γρηγοριανὸ ἡμερολόγιο/,Sunrise/,Ἡλιοβασίλεμα/,Ecclesiastic Lunar Phase/,Ἦχος TT/,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
 <PHRASE Key="gospel" Value="Εὐαγγέλιο"/>
 <PHRASE Key="apostol" Value="Ἀπόστολος"/>
