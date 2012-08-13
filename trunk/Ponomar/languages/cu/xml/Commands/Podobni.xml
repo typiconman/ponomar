@@ -3,16 +3,16 @@
 		<PODOBEN Tone="2" Case="1" Intro="Киими похвальными венцы" Comment="At Vespers, on Lord, I have cried for Sts Peter and Paul."/>
 		<PODOBEN Tone="2" Case="2" Intro="Доме Евфрафов" Comment="Sunday before the Nativity"/>
 		<PODOBEN Tone="1" Case="1" Intro="О, дивное чудо" Comment="At Vespers, on Lord, I have cried for the Dormition."/>
-		<PODOBEN Tone="8" Case="1" Intro="О преславного чудесе" Comment="Stichera for the Exaltation."/>
+		<PODOBEN Tone="0" Case="1" Intro="О преславного чудесе" Comment="Stichera for the Exaltation."/>
 		<PODOBEN Tone="2" Case="3" Intro="Вышнихъ ищя" Comment=""/>
 		<PODOBEN Tone="2" Case="4" Intro="Въ молитвахъ" Comment="Kontakion of the Dormition."/>
 		<PODOBEN Tone="3" Case="1" Intro="Дева днесь" Comment="Kontakion for the Nativity"/>
 		<PODOBEN Tone="2" Case="5" Intro="Твердыя" Comment=""/>
-		<PODOBEN Tone="8" Case="2" Intro="Взбранной" Comment="Kontakion for the Annunciation."/>
+		<PODOBEN Tone="0" Case="2" Intro="Взбранной" Comment="Kontakion for the Annunciation."/>
 		<PODOBEN Tone="4" Case="1" Intro="Явился еси" Comment="Kontakion for Theophany."/>
 		<PODOBEN Tone="4" Case="2" Intro="Вознесыйся" Comment="Kontakion of the Cross."/>
 		<PODOBEN Tone="1" Case="2" Intro="Ликъ ангельский" Comment="."/>
-		<PODOBEN Tone="8" Case="3" Intro="Яко начатки" Comment=""/>
+		<PODOBEN Tone="0" Case="3" Intro="Яко начатки" Comment=""/>
 		<PODOBEN Tone="2" Case="6" Intro="Кровей твоих" Comment="At Vespers, on Lord, I have cried for Sts Peter and Paul."/>
 		<PODOBEN Tone="6" Case="1" Intro="Еже о насъ" Comment=""/>
 		<PODOBEN Tone="2" Case="7" Intro="Въ вышнихъ живый" Comment=""/>

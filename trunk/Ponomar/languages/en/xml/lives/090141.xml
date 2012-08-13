@@ -2,7 +2,7 @@
 <NAME Nominative="" /> <!-- No name should be assigned to this commemoration. This file stores the readings and service for the Royal Hours -->
 <SERVICE>
 <ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
-<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
+<IDIOMEL Type="11" Tone="0" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
 Today the nature of water is sanctified, and the Jordan is cloven, and its waters shall be withheld from flowing; the Master being shown washed therein.
 </IDIOMEL><!-- Note the difference in assigned Tones here -->
 <VERSE Type="1" >
@@ -14,27 +14,27 @@ Thou didst come to the river like a man, O Christ King. Thou dost hasten, O good
 <VERSE Type="2">
 The waters saw Thee, O God; the waters saw Thee and were afraid.
 </VERSE>
-<IDIOMEL Type="13" Tone="8" Header="Tropar, Tone 8" Author="">
+<IDIOMEL Type="13" Tone="0" Header="Tropar, Tone 8" Author="">
 Toward the voice in the wilderness, Prepare ye the way of the Lord. Thou didst come taking the
 likeness of a servant, seeking baptism, O Thou Who knowest no sin. The waters saw Thee and
 were afraid, and the Forerunner trembled and cried, saying, How shall the Light seek to be
 lighted for the lamp? How shall the servant place His hand upon the Master? Wherefore, sanctify
 me and the waters, O Savior, carrying the sin of the world.
 </IDIOMEL>
-<PROKIMENON Type="1P" Tone="4" Header="Prokeimenon of the Prophecy, Tone 4">
+<PROKEIMENON Type="1P" Tone="4" Header="Prokeimenon of the Prophecy, Tone 4">
 The voice of the Lord is upon many waters; the voice of Thy thunder was in heaven.
-</PROKIMENON>
+</PROKEIMENON>
 <VERSE Type="1P" >
 I will love Thee, O Lord, my strength; the Lord is my support, refuge and deliverer.
 </VERSE><!-- The last 3 words of these verse are not found in the Church Slavonic -->
-<IDIOMEL Type="31" Tone="8" Header="Tropar, Tone 8" Author="">
+<IDIOMEL Type="31" Tone="0" Header="Tropar, Tone 8" Author="">
 Verily, the right hand of the Forerunner, Baptizer, and Prophet, exceeding all Prophets in honor,
 did tremble when he beheld Thee, O Lamb of God that beareth the sins of the world. And being
 encompassed with fear, shouted, saying, I dare not touch Thy head, O Word. Sanctify Thou me
 and enlighten me, O compassionate One; for Thou art the Life, the Light, and the Safety of the
 world.
 </IDIOMEL><!-- Note the difference in assigned Tones here -->
-<IDIOMEL Type="32" Tone="8" Header="Troparion, Tone 8">
+<IDIOMEL Type="32" Tone="0" Header="Troparion, Tone 8">
 Our God the Trinity hath revealed Himself to us today as free from division; for the Father
 uttered the clear testimony to His Son, and the Spirit descended from heaven in the likeness of a
 dove, and the Son bowed His pure head to the Forerunner, and being baptized did save mankind
@@ -46,13 +46,13 @@ willing to be baptized to lighten us who have erred, delivering us from all the 
 and his gins, since Thou art compassionate, the Father testified of Thee, and the divine Spirit did
 come to Thee in the likeness of a dove. Dwell Thou, therefore, in our souls, O Lover of mankind.
 </IDIOMEL>
-<PROKIMENON Type="3P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+<PROKEIMENON Type="3P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
 The waters saw Thee, O God; the waters saw Thee and were afraid.
-</PROKIMENON>
+</PROKEIMENON>
 <VERSE Type="3P">
 The voice of the Lord is upon the waters; the God of glory thundered, the Lord is upon many waters.
 </VERSE><!-- This does not quite match the Church Slavonic version -->
-<IDIOMEL Type="61" Tone="8" Header="Tropar, Tone 8" Author="">
+<IDIOMEL Type="61" Tone="0" Header="Tropar, Tone 8" Author="">
 Thus sayeth the Lord to John, Come, O Prophet, and baptize me, Who have created Thee, the
 Illuminator and Purifier of all by grace. Touch my divine head and falter not, O Prophet. Let be
 now; for I have come to fulfill all justice. Be not doubtful, therefore, at all; for verily, I have
@@ -75,9 +75,9 @@ baptized in me, doth teach me to burn the thorns of sins. And John, the voice of
 testify with me, crying, Behold the Lamb of God Who beareth the sin of the world. Let us believers
 therefore cry unto Him, saying, O God that hath appeared for our salvation, glory to Thee.
 </IDIOMEL>
-<PROKIMENON Type="6P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+<PROKEIMENON Type="6P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
 The voice of the Lord is upon the waters; the God of glory thundered, the Lord is upon many waters.
-</PROKIMENON>
+</PROKEIMENON>
 <VERSE Type="6P" >
 Bring unto the Lord, ye sons of God, bring unto the Lord glory and honor.
 </VERSE>
@@ -112,9 +112,9 @@ concluding our praise and beginning the celebration of the Feast.
 <IDIOMEL Type="93.5" Tone="6" Header="Tropar, Tone 6" Author="">
 And the bridegroom of the Church calleth the Magi.
 </IDIOMEL>
-<PROKIMENON Type="9P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+<PROKEIMENON Type="9P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
 The Lord is my light and my salvation; whom shall I fear?
-</PROKIMENON>
+</PROKEIMENON>
 <VERSE Type="9P">
 The Lord is the defender of my life; of whom shall I be afraid?
 </VERSE>

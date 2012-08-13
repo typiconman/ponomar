@@ -58,7 +58,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="LanguageMenu" Value="Langue/,Sélectionner la langue de l'interface/, Sélectionner la langue de l'interface/,Oui/,Pour changer la langue de l'interface, s’il vous plaît recommencer le programme./,Non/,Est-ce que vous veuillez surecrire ce file : /,Est-ce que vous êtes sûre que vous veuillez fermer ce fenêtre ?"/>
 <PHRASE Key="About" Value="Version/,Ponomar est désigné enfin que l'utilisateur peut comprendre et connaître la richesse et la beauté de la tradition Orthodoxe. Le programme est dans sa phase développementale./,Chez Ponomar, nous croyons que les textes Orthodoxes doivent être libre pour les utiliser et les distribuer. Dieu n'avait pas réclamé ses droits d’auteur sur le Bible. St. Jean Damascène n'avait pas réclamé ses droits d’auteur sur l'Octoèques. Donc, Ponomar et tous les textes, qui sont incorporés dans Ponomar, sont distribués sur les termes de GPL./,Droits d’Auteur réservés/,par/,Reconnaissances : (Aucuns)" />
  <PHRASE Key="GospelSelection" Value="Jordanville/,Saute Lucienne/,Le lectionnaire d'Évangile/,Sélectionner le lectionnaire d'Évangile désirée." />
- <PHRASE Key="Tones" Value="/,I/,II/,III/,IV/,V/,VI/,VII/,VIII" Comments="Permettre d'utiliser des formats différentes dans les autres langues comme la grecque (avec des lettres) and le vieux slave (avec des lettres cyrilliques)" />
+ <PHRASE Key="Tones" Value="VIII/,I/,II/,III/,IV/,V/,VI/,VII/,VIII" Comments="Permettre d'utiliser des formats différentes dans les autres langues comme la grecque (avec des lettres) and le vieux slave (avec des lettres cyrilliques)" />
  <PHRASE Key="Main" Value="Le calendrier grégorien/,Le lever de soleil/,Le coucher de soleil/,La phase de la lune ecclésiastique/,Ton TT/,L'Information pour /,Est-ce que vous êtes sûre que vous veuillez quitter le programme ?" />
  <PHRASE Key="gospel" Value="Évangile"/> <PHRASE Key="apostol" Value="Épître"/>
 <PHRASE Key="matins" Value="Matines"/>
@@ -98,7 +98,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="TimeF" Value="HH h MM min" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <PHRASE Key="LivesW" Value="Vie/,Le tropaire/, Podoben : /,Le kondakion/,Tone : TT/, ; /,Il manque l'infomration sur cette commemoration." Comment="A space (if required) should be placed before and after the 2nd entry."/>
 <PHRASE Key="IconW" Value="Icon précédent/,Icon suivant/,Aucun Icon n'avait pas trouvé."/>
-<PHRASE Key="Colon" Value=" : " Note="This is how a colon is to appear in the given texts."/>
+<PHRASE Key="Colon" Value=" : " Comment="This is how a colon is to appear in the given texts."/>
 <PHRASE Key="Commemoration2" Value=" (pour %getN(^CC,Short))" Comments="%getN is a generalised grammar engine that will return the appropriate grammatical form. The format is Noun (in this case to be specified so ^CC) and the desired case (as defined in the commemoration files)"/>
 <PHRASE Key="Commemoration3" Value="Il manque le nom de cette commémoration." Comments="Failure to find any name for a given commemoration!"/>
 
@@ -110,9 +110,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Rank5" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕁&lt;/span&gt; ^NF&lt;/span&gt;"/>
 <PHRASE Key="Rank6" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;%&gt;🕀&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;&lt;/span&gt;"/>
 
-<PHRASE Key="PadH" Value="1" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
-<PHRASE Key="PadM" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
+<PHRASE Key="PadH" Value="1" Comment="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
+<PHRASE Key="PadM" Value="2" Comment="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 
-<PHRASE Key="IconSearch" Value="cu/ru/,el/,en" Note="There is no need to include the current language and its path up, as it will be searched by default. Similarly, only the lowest desired searachable path should be considered, as the programme will by default search up the tree from the given point."/>
+<PHRASE Key="IconSearch" Value="cu/ru/,el/,en" Comment="There is no need to include the current language and its path up, as it will be searched by default. Similarly, only the lowest desired searachable path should be considered, as the programme will by default search up the tree from the given point."/>
 
 </LANGUAGEPACKS>

@@ -3,7 +3,7 @@
 <!-- This provides the readings for the Royal Hours on Christmas -->
 <SERVICE>
 <ROYALHOURS><!-- The verses for the Idiomels are the same in all the hours -->
-<IDIOMEL Type="11" Tone="8" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
+<IDIOMEL Type="11" Tone="0" Header="Tropar, Tone 8&lt;BR&gt;The Work of Sophronios, the Patriarch of Jerusalem" Author="Sophronios, the Patriarch of Jerusalem">
 Prepare, O Bethlehem, and let the manger make ready and the cave receive; for truth hath come,
 and shadow hath passed. And God hath appeared to mankind from the Virgin, taking our likeness
 and deifying our nature. Wherefore, Adam and Eve are made new, crying, Goodwill hath appeared
@@ -22,7 +22,7 @@ therefore, ascribe unto Him magnification.
 <VERSE Type="2">
 Lord, I heard your report and was afraid. Lord, I understood Your deeds and was scared.
 </VERSE><!-- The English version that I had access to missed the second part of the verse, which I translated from the Church Slavonic (only an approximate version) Y.S. -->
-<IDIOMEL Type="13" Tone="8" Header="Tropar, Tone 8" Author="">
+<IDIOMEL Type="13" Tone="0" Header="Tropar, Tone 8" Author="">
 Thus saith Joseph to the Virgin, What is this thing, O Mary, which I behold in thee? Verily, I am
 surprised and perplexed, and my mind is dazzled. Wherefore, henceforth from this moment be thou
 secluded in secret. What is this matter, O Mary, that I behold in thee? For thou hast given me
@@ -31,9 +31,9 @@ brought me blame. Therefore, I cannot bear the reproach of men, from the Temple 
 took thee; from the priests I received thee as innocent of all blame. What then is this thing I
 behold?
 </IDIOMEL>
-<PROKIMENON Type="1P" Tone="4" Header="Prokeimenon of the Prophecy, Tone 4">
+<PROKEIMENON Type="1P" Tone="4" Header="Prokeimenon of the Prophecy, Tone 4">
 The Lord said to me, "You are my Son, today I have begotten you."
-</PROKIMENON>
+</PROKEIMENON>
 <VERSE Type="1P" >
 Ask of me, and I shall give you the Nations as your inheritance.
 </VERSE>
@@ -43,7 +43,7 @@ Virgin and went about among men, the only Son, beheld as a man placed in a mean 
 Lord of the house wrapped in swaddling clothes. And the star pointeth for the Magi to worship
 Him; and we sing shouting, O Trinity, save our souls.
 </IDIOMEL><!-- Note the difference in assigned Tones here -->
-<IDIOMEL Type="32" Tone="8" Header="Troparion, Tone 8">
+<IDIOMEL Type="32" Tone="0" Header="Troparion, Tone 8">
 When the heavenly hosts beheld the mystery before Thy Birth, O Lord, they were struck with
 surprise; for Thou Who didst adorn the heavens with stars was pleased to become like a babe, and
 lie in a manger for beasts, O Thou Almighty One in Whose grasp are all the regions of the earth;
@@ -57,13 +57,12 @@ was revealed to me by the angel. Therefore, I am convinced that Mary shall give 
 inexplicable manner to God, whom Magi from the east shall come to worship and to serve with
 precious gifts. Wherefore, O Thou who wast incarnate for our sakes, glory to Thee.
 </IDIOMEL>
-<PROKIMENON Type="3P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+<PROKEIMENON Type="3P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
 For a Child has been born for us, and a Son has been given to us.
-</PROKIMENON>
+</PROKEIMENON>
 <VERSE Type="3P" >
 And the government is upon His shoulders.
 </VERSE>
-&lt;/p&gt;&lt;p&gt;
 <IDIOMEL Type="61" Tone="1" Header="Tropar, Tone 1" Author="">
 Come, ye believers, let us ascend in a divine manner and behold a divine condescension, revealed
 to us from on high, openly in Bethlehem. And having purified our minds by good conduct, let us
@@ -85,9 +84,9 @@ having conceived, cometh today to Bethlehem, to give birth to the Lord. The rank
 hasten, and Joseph, seeing these things, shouted, crying, What is this strange mystery that hath
 befallen thee, O Virgin? And how shalt thou give birth, O ewe that hath not known wedlock?
 </IDIOMEL>
-<PROKIMENON Type="6P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+<PROKEIMENON Type="6P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
 From the womb before the Morning Star I have begotten you.
-</PROKIMENON><!-- The Church Slavonic is slightly different here И҆з чре́ва пре́жде денни́цы роди́хъ тѧ̀, клѧ́тсѧ гдⷭь и҆ не раска́етсѧ. -->
+</PROKEIMENON><!-- The Church Slavonic is slightly different here И҆з чре́ва пре́жде денни́цы роди́хъ тѧ̀, клѧ́тсѧ гдⷭь и҆ не раска́етсѧ. -->
 <VERSE Type="6P" >
 The Lord said to my Lord: Sit at my right hand, until I make your enemies a footstool for your feet.
 </VERSE><!-- The Church Slavonic and the Greek are the laconic: Речѐ гдⷭь гдⷭви моемꙋ̀, сѣдѝ ѡ҆деснꙋ́ю менѐ. The fuller version makes more sense.-->
@@ -130,9 +129,9 @@ We worship Thy Nativity, O Christ.
 <IDIOMEL Type="93.8" Tone="6" Header="Tropar, Tone 6" Author="">
 Show us also Thy divine Theophany!
 </IDIOMEL>
-<PROKIMENON Type="9P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
+<PROKEIMENON Type="9P" Tone="4" Header="The Prokeimenon of the Prophecy, Tone 4">
 Sion is our mother, a man will say; and a man has been born in her.
-</PROKIMENON>
+</PROKEIMENON>
 <VERSE Type="9P">
 Her foundations are in the holy mountains.
 </VERSE>

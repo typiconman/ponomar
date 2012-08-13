@@ -1,9 +1,13 @@
 <SAINT>
-<NAME Nominative="Forefeast of Theophany" Short="Forefeast"/> 
-<TROPARION Tone="4">
+<NAME Nominative="Forefeast of Theophany" Short="Forefeast"/>
+<SERVICE Type="0">
+<LITURGY>
+<TROPARION Tone="4" Type="1">
 Make ready, O Zebulon! * Adorn thyself, O Nephthali! * O River Jordan, leaping up, * receive thou the Master Who cometh to be Baptized! * Rejoice, O Adam, with our first mother! * Hide not yourselves as ye did before in paradise; * for He that beheld you naked hath appeared, * that He may clothe you in your primal raiment. ** Christ hath appeared, desiring to make all creation new!
 </TROPARION>
-<KONTAKION Tone="4" Podoben="1">
+<KONTAKION Tone="4" Podoben="1" Type="1">
 In the streams of the Jordan the Lord crieth out to John today: * Fear not to baptize Me, ** for I have come to save Adam the first-created!
 </KONTAKION>
+</LITURGY>
+</SERVICE>
 </SAINT>

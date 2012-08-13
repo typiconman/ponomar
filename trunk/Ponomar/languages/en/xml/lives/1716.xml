@@ -1,15 +1,15 @@
-<SAINT>
+﻿<SAINT>
 <NAME Nominative="Venerable Cosmas the Hymnographer, Bishop of Majuma († c. 787)" Short="Venerable Cosmas"/>
 <SERVICE Type="1"/><LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
-&lt;p&gt;       He was the closest friend and co-worker of the Venerable John of Damascus. For his piety he was installed as the Bishop of Maium, and worked very hard in this position for his flock and died in peace at the end of the Eighth Century (after 776). Glorifying the hierarch as "nourisher of wisdom, "nurse of purity", "enlightener of the faithful" and "renowned theologian", the Holy Church witnesses that Bishop Cosmas was "meek and humble of mind, calm and blameless in speech, kind and guileless, chaste and righteous, most simple and wholesome". Brought up "in piety and faith" and "with the mind and soul adorned in wisdom", Bishop Cosmas adorned the Church "with systematic and didactic hymns", satisfying "reason", and "which clearly open to all" "the truly strange and most wonderful mysteries of Christ". &lt;/p&gt;
+&lt;p&gt;He was the closest friend and co-worker of the Venerable John of Damascus. For his piety he was installed as the Bishop of Maium, and worked very hard in this position for his flock and died in peace at the end of the Eighth Century (after 776). Glorifying the hierarch as "nourisher of wisdom, "nurse of purity", "enlightener of the faithful" and "renowned theologian", the Holy Church witnesses that Bishop Cosmas was "meek and humble of mind, calm and blameless in speech, kind and guileless, chaste and righteous, most simple and wholesome". Brought up "in piety and faith" and "with the mind and soul adorned in wisdom", Bishop Cosmas adorned the Church "with systematic and didactic hymns", satisfying "reason", and "which clearly open to all" "the truly strange and most wonderful mysteries of Christ". &lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="8" Translator="Aleksandr Andreev">
+<TROPARION Type="1" Tone="0" Translator="Aleksandr Andreev">
 &lt;p&gt;Instructor of Orthodoxy, teacher of piety and purity, light of the universe and God-inspired adornment of the hierarchs, O wise Cosmas, with thy teachings thou hast enlightened all. O spiritual flute, pray unto Christ God that our souls may be saved.&lt;/p&gt;
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="8" Translator="Aleksandr Andreev">
+<KONTAKION Type="1" Tone="0" Translator="Aleksandr Andreev">
 &lt;p&gt;O God-inspired Cosmas, thou hast adorned thyself with virtues, adorning the church of Christ with hymns, O Blessed One. But pray to the Lord that He may deliver us from the snares of our enemies, as we cry out to thee: rejoice, O most richly adorned Father.&lt;/p&gt;
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

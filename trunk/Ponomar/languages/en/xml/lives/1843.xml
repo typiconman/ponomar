@@ -1,4 +1,4 @@
-<SAINT>
+﻿<SAINT>
 <NAME Short="Venerable Procopius"/>
 <NAME Nominative="Venerable Procopius, Confessor of Decapolis († c.  750) (transferred from Saturday)" Cmd="doy != 57"/>
 <NAME Nominative="Venerable Procopius, Confessor of Decapolis († c.  750)" Cmd="doy == 57"/>
@@ -7,7 +7,7 @@
 </LIFE>
 <SERVICE Type="1">
 <LITURGY>
-<TROPARION Type="1" Tone="8">
+<TROPARION Type="1" Tone="0">
 &lt;p&gt;With the streams of thy tears thou didst irrigate the barren desert, * and with sighs from the depths of thy soul thou didst render thy labors fruitful an hundredfold. * Thou wast a beacon for the whole world, radiating miracles. ** O our father Procopius, entreat Christ God that our souls be saved.&lt;/p&gt;
 </TROPARION>
 <KONTAKION Type="1" Tone="4">

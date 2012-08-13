@@ -3,7 +3,7 @@
 	<xs:attribute name="Who">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:pattern value="[P,SR,R,D,C,B,]"/>
+				<xs:pattern value="[P,SR,R,D,C,B]"/>
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:attribute>
