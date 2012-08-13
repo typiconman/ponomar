@@ -1,0 +1,96 @@
+﻿<LANGUAGEPACKS>
+<!-- This document contains all the required languages specific features for the Ponomar interface in all the languages that are supported by the programme. For trial purposes, at least all the information in this file should be translated, the Easter file in the Pentecostarion (xml/pentecostarion/1.xml), and the file for the Feast of the Annunciation (March 25th, xml/3/25.xml), the first 12 verses of the Gospel according to John, and the Prime service (xml/Services/Primes...) so as to test all the capabilities of the programme. The state of completion is defined as a value out of 10 that states what is available: 0 represents nothing, 1 represents the above requirements, 5 all that is currently required, 10 a complete language, including video and audio files.
+Note: /, is used to separate entries in a list.
+Note: The defaults must be loaded before this file can be read.
+Note: This section should be translated into all of the supported languages.
+<B>Note: All the sections must contain the same set of phrases, even if some are not translated!</B>
+Note: The general format for the files is:
+&lt;LANGUAGE NameLocal="Name of the language in the language itself" NameEnglish="Name of the language in English" Cmd="LS == ##"&gt;
+&lt;PHRASE Key="some value" Text="the translated text" Comment="Translator's comments or clarifications in the same language as the LanguageName"/&gt;
+&lt;PHRASE .../&gt;
+&lt;/LANGUAGE&gt;-->
+<!-- The Greek part has been created by Yuri Shardt, based on his limited knowledge of Greek. The polytonic forms are used here. -->   
+
+
+<PHRASE Key="NameLocal" Value="Ελληνικά"/>
+<PHRASE Key="NameEnglish" Value="Monotonic Greek"/>
+<PHRASE Key="BibleV" Value="el/bible/spt"/>
+<PHRASE Key="Authors" Value="Aleksandr Andreev/,Yuri Shardt"/>
+<PHRASE Key="Year" Value="2006-2010"/>
+<PHRASE Key="And" Value=" τα "/>
+<PHRASE Key="Comma" Value=", "/>
+<PHRASE Key="Copyright" Value="Με επιφύλαξη παντός δικαιώματος ^YY ^AA"/>
+<PHRASE Key="0" Value="Παραμονάριος" Comment="This is the only entry for this key."/>
+<PHRASE Key="1" Value="Ιανουάριος/,Φεβρουάριος/,Μάρτιος/,Απρίλιος/,Μάιος/,Ιούνιος/,Ιούλιος/,Αύγουστος/,Σεπτέμβριος/,Οκτώβριος/,Νοέμβριος/,Δεκέμβριος" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
+<PHRASE Key="2" Value="Κυριακή/,Δευτέρα/,Τρίτη/,Τετάρτη/,Πέμπτη/,Παρασκευή/,Σάββατον" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
+<PHRASE Key="3" Value="Ιανουαρίου/,Φεβρουαρίου/,Μαρτίου/,Απριλίου/,Μαΐου/,Ιουνίου/,Ιουλίου/,Αυγούστου/,Σεπτεμβρίου/,Οκτωβρίου/,Νοεμβρίου/,Δεκεμβρίου" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
+<PHRASE Key="4" Value="Ιανουαρίου/,Φεβρουαρίου/,Μαρτίου/,Απριλίου/,Μαΐου/,Ιουνίου/,Ιουλίου/,Αυγούστου/,Σεπτεμβρίου/,Οκτωβρίου/,Νοεμβρίου/,Δεκεμβρίου" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'. These are the civil months that are to be used for the Greogorian calendar (An issue for the Chinese version)."/>
+<PHRASE Key="5" Value="Κυριακή/,Δευτέρα/,Τρίτη/,Τετάρτη/,Πέμπτη/,Παρασκευή/,Σάββατον" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'. These are the civil weeks for use with the Greogorian Calendar (An issue for the Chinese version)."/>
+<PHRASE Key="Options" Value="Options" />
+<PHRASE Key="File" Value="File/,Save/,The usual file options/,This saves the current display/,Exit/,This exits the programme/,Print/,This prints the current textbox." />
+<PHRASE Key="SMenu" Value="Άγιοι/,Actions for searching and sorting infromation about saints/,Search/,Search for information about a given saint" />
+<PHRASE Key="Services" Value="Λειτουργική/,Θεία Λειτουργία/,Εσπερινός/,Απόδειπνον/,Όρθρος/,Ώρα αʹ/,Ώρα γʹ/,Ώρα ϝʹ/,Ώρα θʹ/,Μεγάλαι ώραι/,All-Night Vigil/,Μεσονυκτικό/,Typica/,This allows the user to compile the services/,Compile the Divine Liturgy for the given day/,Compile Vespers for the given day/,Compile the Complines for the given day/,Compile Matins for the day/,Compile Prime (First Hour) for the given day/,Compile Terce (Third Hour) for the given day/,Compile Sext (Sixth Hour) for the given day/,Compile None (Ninth Hour) for the given day/,Compile the Royal Hours for the given day/,Compile the All-Night Vigil for the given day/,Compile the Midnight Office for the given day/,Compile the Typica for the given day" />
+<PHRASE Key="Bible" Value="Άγία Γραφή/,This allows the user to access the Bible" />
+<PHRASE Key="Help" Value="Help/,This accesses the Help files./,About/,Access the About file/,Go to Help"/>
+<PHRASE Key="LanguageMenu" Value="Language/,Select the Interface Language/,Selects the Interface Language/,OK/,In order for the interface language to change, please restart the programme./,No/,Do you wish to overwrite the file:/,Are you sure you wish to close this window?"/>
+<PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
+<PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
+<PHRASE Key="Tones" Value="πλ. δʹ/,αʹ/,βʹ/,γʹ/,δʹ/,πλ. αʹ/,πλ. βʹ/,βαρύς/,πλ. δʹ" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Main" Value="Γρηγοριανό ημερολόγιο/,Sunrise/,Ηλιοβασίλεμα/,Ecclesiastic Lunar Phase/,Ήχος TT/,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
+<PHRASE Key="gospel" Value="Ευαγγέλιο"/>
+<PHRASE Key="apostol" Value="Απόστολος"/>
+<PHRASE Key="matins" Value="Όρθρος"/>
+<PHRASE Key="vespers" Value="Εσπερινός"/>
+<PHRASE Key="1st hour" Value="Ώρα αʹ"/>
+<PHRASE Key="3rd hour" Value="Ώρα γʹ"/>
+<PHRASE Key="6th hour"	Value="Ώρα ϝʹ"/>
+<PHRASE Key="9th hour" Value="Ώρα θʹ"/>
+<PHRASE Key="Fasts" Value="Fast free /,Strict fast /,Fast: Wine and oil allowed /,Fast: Fish, wine, and oil allowed /,Fasting regulations: /,Error calculating fast information /,: Monastic Rule: /,No Food /,Dry Food only /,Hot Food without oil /,Fast: Caviar, wine, and oil permitted /,Fast: Meat is excluded /,Fast: Wine is permitted /,meat/,diary products/,fish/,caviar/,oil/,wine/,dry food/,is/,are/,are/,permitted/,forbidden/,and/,, while/,Fast: " />
+<PHRASE Key="Week1" Value="Κυρ/,Δευ/,Τρί/,Τετ/,Πέμ/,Παρ/,Σάβ" Comment="This the abbreviation of the days of the week." />
+<PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
+<PHRASE Key="Primes" Value="No Service Today/,Ὥρα αʹ/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="RoyalHours" Value="The Royal Hours are not served today./,Μεγάλαι ώραι"/>
+<PHRASE Key="DayReading" Value="for Sunday/,for Monday/,for Tuesday/,for Wednseday/,for Thursday/,for Friday/,for Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
+<PHRASE Key="DateFormat" Value="WW, DD MM YY μ.Χ." Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
+<PHRASE Key="Feasts" Value="Περιτομή του Κυρίου/,Αγία Θεοφάνεια/,Το Γενέθλιο του Αγίου Ιωάννη Προδρόμου και Βαπτιστού/,Άγιοι Πέτρος και Παύλος/,Μεταμόρφωση/,Κοίμησις της Θεοτόκου/,Αποτομή Κεφαλής/,Γέννηση της Υπεραγίας Θεοτόκου/,Ύψωση του Τιμίου και Ζωοποιού Σταυρού/,Αγία Σκέπη της Υπεραγίας Θεοτόκου εν Βλαχερνώ/,Εισόδια της Θεοτόκου/,Η κατά σάρκα γέννησις του Κυρίου Ιησού Χριστού/,Κυρίοπασχα: ΑΓΙΟ ΠΑΣΧΑ και Ευαγγελισμός της Υπεραγίας Θεοτόκου/,ΑΓΙΟ ΠΑΣΧΑ/,Ευαγγελισμός της Υπεραγίας Θεοτόκου/,Κυριακή της Πεντηκοστής/,Της Αναλήψεως/,Κυριακή των Βαΐων/,Υπαπαντή του Κυρίου" />
+<PHRASE Key="Helpers" Value="Save to a html file." />
+<PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
+<PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
+<PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
+<PHRASE Key="Commemoration" Value="Error reading the Hashtable!\nMissing element: /, with Tag: /,Error reading the Hashtable!\nMissing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
+<PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
+<PHRASE Key="Terce" Value="No Service Today/,Ώρα γʹ/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Sexte" Value="No Service Today/,Ώρα ϝʹ/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="None" Value="No Service Today/,Ώρα θʹ/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="FontFaceM" Value="Times New Roman" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
+<PHRASE Key="FontSizeM" Value="14" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 14."/>
+<PHRASE Key="FontFaceL" Value="Times New Roman" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
+<PHRASE Key="FontSizeL" Value="14" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 14."/>
+<PHRASE Key="CommSep" Value=", " Comment="This is the mark to separate the different commemorations that are dispalyed. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
+<PHRASE Key="ReadSep" Value=", " Comment="This is the mark to separate the readings. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
+<PHRASE Key="Colon" Value=": " Comment="This is for everytime that a colon is required. Spaces on both sides, if required, must be included. This is to avoid issues with East Asian languages."/>
+<PHRASE Key="Language" Value="el" Comment="This is the 2 letter ISO code for the given language. This will also determine component orientation, for example left-to-right, right-to-left (Hebrew, Arabic, Farsi), top-right-to-bottom-left (Traditional Chinese, Korean, Japanese), and top-left-to-bottom-right (Traditional Mongolian)."/>
+<PHRASE Key="Country" Value="GR" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
+<PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0. The true 'Arabic' numerals have a zero point at '٠' (\u0660)."/>
+<PHRASE Key="Ideographic" Value="0" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV."/>
+<PHRASE Key="TimeF" Value="HH:MM" Comment="This gives the format for the time. The 24-hour clock will be used."/>
+<PHRASE Key="LivesW" Value="Βιογραϕιον/,Ἀπολυτίκιον/, ιδιόμελον: /,Κοντάκιον/,Ήχος: TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
+<PHRASE Key="IconW" Value="Previous Icon/,Next Icon/,No Icons were found."/>
+<PHRASE Key="Colon" Value=": " Note="This is how a colon is to appear in the given texts."/>
+<PHRASE Key="Commemoration2" Value=" (For %getN(^CC,Short))" Comments="%getN is a generalised grammar engine that will return the appropriate grammatical form. The format is Noun (in this case to be specified so ^CC) and the desired case (as defined in the commemoration files)"/>
+<PHRASE Key="Commemoration3" Value="Name not found" Comments="Failure to find any name for a given commemoration!"/>
+
+<PHRASE Key="Rank0" Value="^NF"/>
+<PHRASE Key="Rank1" Value="^NF"/>
+<PHRASE Key="Rank2" Value="&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕃&lt;/span&gt; &lt;I&gt;^NF&lt;/I&gt;"/>
+<PHRASE Key="Rank3" Value="&lt;span style=&quot;color:red;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕃&lt;/span&gt; &lt;I&gt;^NF&lt;/I&gt;"/>
+<PHRASE Key="Rank4" Value="&lt;span style=&quot;color:red;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕂&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;"/>
+<PHRASE Key="Rank5" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕁&lt;/span&gt; ^NF&lt;/span&gt;"/>
+<PHRASE Key="Rank6" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;%&gt;🕀&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;&lt;/span&gt;"/>
+
+<PHRASE Key="PadH" Value="1" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
+<PHRASE Key="PadM" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
+
+<PHRASE Key="IconSearch" Value="cu/ru/,en" Note="There is no need to include the current language and its path up, as it will be searched by default. Similarly, only the lowest desired searachable path should be considered, as the programme will by default search up the tree from the given point."/>
+
+</LANGUAGEPACKS>
