@@ -41,7 +41,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="LanguageMenu" Value="语言/,选择 the Interface 语言/,选择s the Interface 语言/,OK/,In order for the interface 语言 to change, please restart the 程序./,No/,Do you wish to overwrite the 文件:/,Are you sure you wish to close this window?"/>
 <PHRASE Key="About" Value="Version/,波诺马里 is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The 程序 is currently in its developmental phase./,在波诺马里项目中，我们认为礼典信息应当免费——也就是说不收费也不受版权的制约。上帝并没有保留圣经的版权，圣约安也没有保留《八音集》的版权。 您可以从本站获得任何东西并用于任何用途，只要您信任我们。如果您要发布您自己对本站信息的修改成果，您需要在许可的体系下进行。/,版权所有/,/,为感谢：中文版由正教会中华诸圣会提供。" />
 <PHRASE Key="GospelSelection" Value="乔尔丹维尔/,路喀跳转/,福音经课/,选择所需福音经课。" />
-<PHRASE Key="Tones" Value=" /,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other 语言s, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Tones" Value="八/,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other 语言s, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
 <PHRASE Key="Main" Value="格里高利历/,日出/,日落/,Ecclesiastic 月相/,第TT调式/,Information for /,Are you sure you wish to quit?" />
 <PHRASE Key="gospel" Value="圣福音经"/>
 <PHRASE Key="apostol" Value="使徒经书"/>

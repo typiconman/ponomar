@@ -6,10 +6,10 @@
 <SERVICE Type="4">
 <LITURGY>
 <TROPARION Type="1" Tone="3">
-<p>O holy apostle Philip * entreat the merciful God ** that He grant to our souls remission of transgressions.</p>
+&lt;p&gt;O holy apostle Philip * entreat the merciful God ** that He grant to our souls remission of transgressions.&lt;/p&gt;
 </TROPARION>
-<KONTAKION Type="1" Tone="8">
-<p>Thy disciple and friend, the emulator of Thy suffering, * the divinely eloquent Philip, proclaimed Thee to the world as God; ** by his prayers and through the Theotokos, keep Thy Church and every city from most iniquitous enemies, O most Merciful One.</p>
+<KONTAKION Type="1" Tone="0">
+&lt;p&gt;Thy disciple and friend, the emulator of Thy suffering, * the divinely eloquent Philip, proclaimed Thee to the world as God; ** by his prayers and through the Theotokos, keep Thy Church and every city from most iniquitous enemies, O most Merciful One.&lt;/p&gt;
 </KONTAKION>
 </LITURGY>
 </SERVICE>

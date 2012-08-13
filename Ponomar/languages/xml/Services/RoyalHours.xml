@@ -58,18 +58,18 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <GETID Type="M" Id="090141" What="/ROYALHOURS/IDIOMEL/13" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Type="M" Id="9802" What="/ROYALHOURS/IDIOMEL/13" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
-<!-- Prokimenon of the Prophecy -->
-<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKIMENON/1P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
+<!-- PROKEIMENON of the Prophecy -->
+<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKEIMENON/1P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Type="M" Id="09007" What="/ROYALHOURS/VERSE/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
-<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKIMENON/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
+<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKEIMENON/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
 
-<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKIMENON/1P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
+<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKEIMENON/1P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
 <GETID Type="M" Id="090141" What="/ROYALHOURS/VERSE/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
-<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKIMENON/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
+<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKEIMENON/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKIMENON/1P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKEIMENON/1P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 <GETID Type="M" Id="9802" What="/ROYALHOURS/VERSE/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKIMENON/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKEIMENON/1P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="Wisdom" Who="D" RedFirst="1" NewLine="1" />
 
@@ -203,18 +203,18 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <GETID Type="M" Id="090141" What="/ROYALHOURS/IDIOMEL/33" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Type="M" Id="9802" What="/ROYALHOURS/IDIOMEL/33" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
-<!-- Prokimenon of the Prophecy -->
-<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKIMENON/3P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
+<!-- PROKEIMENON of the Prophecy -->
+<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKEIMENON/3P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Type="M" Id="09007" What="/ROYALHOURS/VERSE/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
-<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKIMENON/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
+<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKEIMENON/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
 
-<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKIMENON/3P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
+<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKEIMENON/3P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
 <GETID Type="M" Id="090141" What="/ROYALHOURS/VERSE/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
-<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKIMENON/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
+<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKEIMENON/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKIMENON/3P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKEIMENON/3P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 <GETID Type="M" Id="9802" What="/ROYALHOURS/VERSE/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKIMENON/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKEIMENON/3P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="Wisdom" Who="D" RedFirst="1" NewLine="1" />
 <BIBLE getReading="Baruch" Who="SR" NewLine="1" Cmd="PFlag == 0"/>
@@ -341,18 +341,18 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <GETID Type="M" Id="090141" What="/ROYALHOURS/IDIOMEL/63" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 <GETID Type="M" Id="9802" What="/ROYALHOURS/IDIOMEL/63" Who="" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
-<!-- Prokimenon of the Prophecy -->
-<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKIMENON/6P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
+<!-- PROKEIMENON of the Prophecy -->
+<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKEIMENON/6P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Type="M" Id="09007" What="/ROYALHOURS/VERSE/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
-<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKIMENON/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
+<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKEIMENON/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
 
-<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKIMENON/6P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
+<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKEIMENON/6P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
 <GETID Type="M" Id="090141" What="/ROYALHOURS/VERSE/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
-<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKIMENON/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
+<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKEIMENON/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKIMENON/6P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKEIMENON/6P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 <GETID Type="M" Id="9802" What="/ROYALHOURS/VERSE/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKIMENON/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKEIMENON/6P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="Wisdom" Who="D" RedFirst="1" NewLine="1" />
 <BIBLE getReading="Isa" Who="SR" NewLine="1"/>
@@ -514,18 +514,18 @@ This interpolation interputs the repetition of the Third Idiomel. -->
 <GETID Type="M" Id="9802" What="/ROYALHOURS/IDIOMEL/93.3" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 1" Times="3"/>
 <GETID Type="M" Id="9802" What="/ROYALHOURS/IDIOMEL/93.4" Who="SR" RedFirst="1" NewLine="1" Cmd="PFlag == 2" />
 
-<!-- Prokimenon of the Prophecy -->
-<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKIMENON/9P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
+<!-- PROKEIMENON of the Prophecy -->
+<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKEIMENON/9P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 0"/>
 <GETID Type="M" Id="09007" What="/ROYALHOURS/VERSE/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
-<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKIMENON/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
+<GETID Type="M" Id="09007" What="/ROYALHOURS/PROKEIMENON/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 0"/>
 
-<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKIMENON/9P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
+<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKEIMENON/9P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 1"/>
 <GETID Type="M" Id="090141" What="/ROYALHOURS/VERSE/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
-<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKIMENON/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
+<GETID Type="M" Id="090141" What="/ROYALHOURS/PROKEIMENON/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 1"/>
 
-<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKIMENON/9P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
+<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKEIMENON/9P" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="PFlag == 2"/>
 <GETID Type="M" Id="9802" What="/ROYALHOURS/VERSE/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
-<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKIMENON/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
+<GETID Type="M" Id="9802" What="/ROYALHOURS/PROKEIMENON/9P" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="Wisdom" Who="D" RedFirst="1" NewLine="1" />
 <BIBLE getReading="Isa" Who="R" NewLine="1" Cmd="PFlag != 2"/>

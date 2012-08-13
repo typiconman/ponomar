@@ -58,7 +58,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="LanguageMenu" Value="Язык/,Выбор языка программы/,Выбор языка интерфейса/,OK/,Чтобы поменять язык интерфейса, перезагрузите программу./,Нет/,Вы действительно желаете изменить файл:/,Вы действительно хотите закрыть это окно?"/>
 <PHRASE Key="About" Value="Версия/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="НЕ использовать Воздвиженскую отступку/,Использовать Воздвиженскую отступку/,Лекционарий/,Выбор лекционария." />
-<PHRASE Key="Tones" Value=" /,1-й/,2-й/,3-й/,4-й/,5-й/,6-й/,7-й/,8-й" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Tones" Value="8-й/,1-й/,2-й/,3-й/,4-й/,5-й/,6-й/,7-й/,8-й" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
 <PHRASE Key="Main" Value="по гражданскому стилю/,Восход солнца/,Заход солнца/,Фаза луны/,Глас TT/,Информация о /,Вы действительно хотите закрыть программу?" />
 <PHRASE Key="gospel" Value="Евангелие"/>
 <PHRASE Key="apostol" Value="Апостол"/>
@@ -71,11 +71,11 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Fasts" Value="Поста нет /,Строгий пост /,Пост: разрешается вино и растительное масло /,Пост: разрешается рыба /,Указания пищи: /,Ошибка при вычеслении указаний /,: Монастырская кухня: /,Строгий пост /,Сухоядение /,Пища без растительного масла /,Пост: Разрешается рыбная икра /,Масленца (пища без мяса) /,Пост: Разрешается вино /,мясо/,молочные продукты/,рыба/,рыбная икпа/,растительное масло/,вино/,сухофрукты/,/,/,/,разрешается/,запрещается/,и/,, пока/,Пост: " />
 <PHRASE Key="Week1" Value="Вс/,Пон/,Вт/,Ср/,Чт/,Пт/,Сб" Comment="This the abbreviation of the days of the week." />
 <PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
-<PHRASE Key="Primes" Value="No Service Today/,Prime (First Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
+<PHRASE Key="Primes" Value="Эта служба не поется сегодня./,Prime (First Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="DayReading" Value="для Sunday/,для Monday/,для Tuesday/,для Wednseday/,для Thursday/,для Friday/,для Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
 <PHRASE Key="DateFormat" Value="WW, DD MM YY г." Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
 <PHRASE Key="Feasts" Value="Circumcision of the Lord/,Theophany/,Nativity of St. John the Baptist/,Sts. Peter and Paul/,Transfiguration/,Dormition of the Theotokos/,Beheading of St. John the Baptist/,Nativity of the Theotokos/,Exaltation of the Holy Cross/,Protection of the Theotokos/,Entry of the Theotokos into the Temple/,Nativity of our Lord/,Kyriopascha: Pascha and Annunciation/,Pascha/,Annunciation/,Pentecost/,Ascension/,Palm Sunday/,Meeting of the Lord" />
-<PHRASE Key="Helpers" Value="Save to a html file." />
+<PHRASE Key="Helpers" Value="Сохранить в файл HTML." />
 <PHRASE Key="ServiceRead" Value="The desired title is missing./,There was a serious error reading the file: /,The desired command is missing./,The desired header is missing./,Error finding the desired information: " />
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
 <PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />

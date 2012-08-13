@@ -1,15 +1,15 @@
-<SAINT>
+﻿<SAINT>
 <NAME Nominative="Venerable Theophanes, the Confessor and Hymnographer, Bishop of Nicæa († c. 850)" Short="Venerable Theophanes"/>
 <SERVICE Type="1"/><LIFE Id="bulgakov" Translator="Fr. Eugene Tarris">
 &lt;p&gt;     Born in Arabia, together with his brother St. Theodore (see December 27), he was a zealous advocate of iconolatry during the reigns of the Emperors Leo the Armenian, Michael the Stammerer and Theophilus. His suffering for the holy icons continued for 25 years. During the reign of the Emperor Theophilus they after cruel torture cut an inscription into his skin with needles. He died about the year 847. He composed about 145 church Canons. According to the words of the Church, "with ascetic labors" and "with the fervor of abstention " he withered "the sweet passions", and by his speech "of systematic words" washed away "the heretical darkness" and lightened up "the heretical haze". &lt;/p&gt;
 </LIFE><SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="8" Translator="Aleksandr Andreev">
+<TROPARION Type="1" Tone="0" Translator="Aleksandr Andreev">
 &lt;p&gt;Preceptor of Orthodoxy, Teacher of piety and purity, Lamp of the universe, Catalyst of the divine spirituality of bishops, O most wise Theophanes, thou hast enlightened all through thy teaching. O, spiritual flute: pray thou to Christ our God, that He may save our souls. &lt;/p&gt;
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="8" Translator="Aleksandr Andreev">
+<KONTAKION Type="1" Tone="0" Translator="Aleksandr Andreev">
 &lt;p&gt;Having thundered the divine incarnation of Christ, Thou didst completely expose the fleshless enemies, O wondrous Theophanes. Therefore, all faithfully and piously cry out unto thee:  Pray unceasingly for us all. &lt;/p&gt;
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

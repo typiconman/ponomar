@@ -1,18 +1,18 @@
 ﻿<INFORMATION>
-	
+	<!-- The tones can only range from 0 to 7, with 0 representing tone 8 -->
 		<PODOBEN Tone="2" Case="1" Intro="With what wreaths of praise" Comment="At Vespers, on Lord, I have cried for Sts Peter and Paul."/>
 		<PODOBEN Tone="2" Case="2" Intro="O, house of Ephratha" Comment="Sunday before the Nativity"/>
 		<PODOBEN Tone="1" Case="1" Intro="O, the marvellous wonder" Comment="At Vespers, on Lord, I have cried for the Dormition."/>
-		<PODOBEN Tone="8" Case="1" Intro="O all-glorious wonder" Comment="Stichera for the Exaltation."/>
+		<PODOBEN Tone="0" Case="1" Intro="O all-glorious wonder" Comment="Stichera for the Exaltation."/>
 		<PODOBEN Tone="2" Case="3" Intro="Seeking the heights" Comment=""/>
 		<PODOBEN Tone="2" Case="4" Intro="The tomb and mortality" Comment="Kontakion of the Dormition."/>
 		<PODOBEN Tone="3" Case="1" Intro="Today, the Virgin" Comment="Kontakion for the Nativity"/>
 		<PODOBEN Tone="2" Case="5" Intro="The steadfast" Comment=""/>
-		<PODOBEN Tone="8" Case="2" Intro="To Thee, the Champion Leader" Comment="Kontakion for the Annunciation."/>
+		<PODOBEN Tone="0" Case="2" Intro="To Thee, the Champion Leader" Comment="Kontakion for the Annunciation."/>
 		<PODOBEN Tone="4" Case="1" Intro="Thou hast appeared" Comment="Kontakion for Theophany."/>
 		<PODOBEN Tone="4" Case="2" Intro="Having been lifted up" Comment="Kontakion of the Cross."/>
 		<PODOBEN Tone="1" Case="2" Intro="The Angelic assembly" Comment="."/>
-		<PODOBEN Tone="8" Case="3" Intro="As firstfruits" Comment=""/>
+		<PODOBEN Tone="0" Case="3" Intro="As firstfruits" Comment=""/>
 		<PODOBEN Tone="2" Case="6" Intro="Of thy blood" Comment="At Vespers, on Lord, I have cried for Sts Peter and Paul."/>
 		<PODOBEN Tone="6" Case="1" Intro="When Thou hadst fulfilled Thine economy" Comment=""/>
 		<PODOBEN Tone="2" Case="7" Intro="He who dwelleth in the highest" Comment=""/>
