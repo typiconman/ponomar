@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="BOOK">
+		<xs:complexType>
+			<xs:attribute name="Id" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[Gen,Ex,Lev,Num,Deut,Josh,I_Kings,II_Kings,III_Kings,IV_Kings,I_Paral,II_Paral,I_Esdra,Nehem,II_Esdra,Tobit,Judith,Esther,Job,Psalm,PRov,Eccles,Song,Wisd,Sirach,Isa,Jerem,Lamen,Epistle,Baruch,Ezek,Dan,Hos,Joel,Amos,Obad,Jona,Mica,Nahum,Habak,Zeph,Hagg,Zech,Mal,I_Macc,II_Macc,III_Macc,III_Macc,IV_Macc,III_Esdra,Mt,Mk,Lk,Jn,Acts,Jas,I_Pet,II_Pet,I_Jn,II_Jn,III_Jn,Jude,Rom,I_Cor,II_Cor,Gal,Eph,Philip,Col,I_Thess,II_Thess,I_Tim,II_Tim,Tit,Philemon,Heb,Apoc,Composite]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="Name" use="required"/>
+			<xs:attribute name="Chapters" use="required" type="xs:integer"/>
+			<xs:attribute  name="Short" use="required"/>
+			<xs:attribute name="Intro"/>
+		</xs:complexType>			
+	</xs:element>
+	<xs:element name="INFO">
+		<xs:complexType>
+			<xs:attribute name="ChapterN" use="required"/>
+			<xs:attribute name="HeaderFormat" use="required"/>
+			<xs:attribute name="ChapterNI" use="required"/>
+			<xs:attribute name="VerseNo" use="required"/>
+			<xs:attribute name="ChapterNo" use="required"/>
+			<xs:attribute name="CVSep" use="required"/>
+			<xs:attribute name="Duration" use="required"/>
+			<xs:attribute name="SelectionSeparator" use="required"/>
+			<xs:attribute name="BCSep" use="required"/>
+			<xs:attribute name="FontFace"/>
+			<xs:attribute name="FontSize"/>
+		</xs:complexType>			
+	</xs:element>
+	<xs:element name="BIBLE">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="INFO" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="BIBLE" minOccurs="1" maxOccurs="81"/>
+			</xs:choice>
+			<xs:attribute name="Id" use="required" type="xs:string"/>
+			<xs:attribute name="Name" use="required" type="xs:string"/>			
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMLFILE">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="BIBLE" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attribute name="Name"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
