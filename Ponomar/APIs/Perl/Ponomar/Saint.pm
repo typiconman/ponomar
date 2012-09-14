@@ -40,17 +40,17 @@ Saint object have the following properties
 	Name: A hash of Names for the Saint, which contains keys Nominative, Genetive, Short, etc.
 	Src: the Src of the commemoration (triodion, pentecostarion, or menaion)
 	Services: an array consisting the Services defined for this Saint 
+	GS: the Gospel Selector, which can be zero or one
+TODO: we should probably make the GS parameter more meaningful
 
 B<CURRENT LIMITATION>: ONLY ONE SET OF SERVICES IS ALLOWED FOR A SAINT. THIS NEEDS TO BE FIXED!
-
-Additional limitation: I have internally set C<$GS> to be equal to 1. This needs to be fixed.
 
 =cut
 
 sub new {
 	my $class = shift;
 	my %pars = @_;
-$GS = 1; ## FIXME
+	$GS = exists $pars{GS} ? $pars{GS} : 1; # BY DEFAULT, LUCAN JUMP IS ON!
 	my $self = bless \%pars, $class;
 	$self->init();
 	return $self;

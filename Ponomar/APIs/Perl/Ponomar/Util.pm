@@ -22,8 +22,8 @@ BEGIN {
 	@ISA 	 = qw( Exporter );
 	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel);
 	@EXPORT_OK = ();
-#	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
-	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
+	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
+#	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
 }
 
 my %matinsGospels = (
@@ -39,6 +39,19 @@ my %matinsGospels = (
 	"Jn_21:1-14" => 10,
 	"Jn_21:15-25" => 11
 );
+
+## some auxilliary functions for doing math
+sub pi () { 4 * CORE::atan2(1, 1) }
+
+sub deg2rad {
+	shift;
+	return $_ * pi () / 180;
+}
+
+sub rad2deg {
+	shift;
+	return $_ * 180 / pi ();
+}
 
 =head3 METHODS
 
@@ -509,6 +522,103 @@ sub getPassover {
 			new Ponomar::JDate(3, $d, $year);
 }
 
+=item getNextFullMoon( $date )
+
+Give C<$date>, a JDate object (date on the Julian calendar)
+Returns the Date and Time (Universal Time) of the next astronomical full moon.
+Used in Milankovic calculations
+
+Formulae due to Meuss, p. 350ff.
+
+=cut
+
+sub getNextFullMoon {
+	my $date = shift;
+	
+	# step 1: get "k"
+	my $year = $date->getYear();
+	my $rem  = $date->getDaysSince(new Ponomar::JDate(1, 1, $year));
+	### NOTE THAT K MUST BE AN INTEGER AND WE MUST ROUND away from zero TO GET THE NEXT MOON
+	my $k    = ($year + $rem / 365.25 - 2000) * 12.3685;
+	$k = $k >= 0 ? int($k) + 1 : int($k);
+	# step 2: get "T", the time in Julian centuries since 2000
+	my $T    = $k / 1236.85;
+	# step 3: get JDE -- the time of the mean phase of the Moon
+	my $JDE = 2451550.09766 + 29.530588861 * $k + 0.00015437 * $T ** 2 - 
+			0.000000150 * $T ** 3 + 0.00000000073 * $T ** 4;
+	# Calculate Eccentricity of Earth's orbit around the Sun
+	my $E = 1 - 0.002516 * $T - 0.0000074 * $T ** 2;
+	# Calculate Mean anomaly of Sun
+	my $M1 = deg2rad( 2.5534 + 29.10535670 * $k - 0.0000014 * $T ** 2 - 0.00000011 * $T ** 3 );
+	# Calculate Mean anomaly of Moon
+	my $M2 = deg2rad( 201.5643 + 385.81693528 * $k + 0.0107582 * $T ** 2 + 0.00001238 * $T ** 3 - 0.000000058 * $T ** 4);
+	# Calculate Moon's argument of latitude
+	my $F  = deg2rad( 160.7108 + 390.67050284 * $k - 0.0016118 * $T ** 2 - 0.00000227 * $T ** 3 + 0.000000011 * $T ** 4 );
+	# Calculate longitude of ascending node of the lunar orbit
+	my $O  = deg2rad( 124.7746 - 1.56375588 * $k + 0.0020672 * $T ** 2 + 0.00000215 * $T ** 3 );
+	
+	## ADD TO JDE THE CORRECTION TERMS BELOW
+	$JDE += -0.40614 * sin ($M2) 
+	       + 0.17302 * $E * sin ($M1)
+	       + 0.01614 * sin (2 * $M2)
+	       + 0.01043 * sin ( 2 * $F)
+	       + 0.00734 * $E * sin ( $M2 - $M1)
+	       - 0.00515 * $E * sin ( $M2 + $M1)
+	       + 0.00209 * ($E ** 2) * sin (2 * $M1)
+	       - 0.00111 * sin ( $M2 - 2 * $F)
+	       - 0.00057 * sin ( $M2 + 2 * $F)
+	       + 0.00056 * $E * sin (2 * $M2 + $M1)
+	       - 0.00042 * sin (3 * $M2)
+	       + 0.00042 * $E * sin ($M1 + 2 * $F)
+	       + 0.00038 * $E * sin ($M1 - 2 * $F)
+	       - 0.00024 * $E * sin (2 * $M2 - $M1)
+	       - 0.00017 * sin ($O)
+	       - 0.00007 * sin ($M2 + 2 * $M1)
+	       + 0.00004 * sin (2 * $M2 - 2 * $F)
+	       + 0.00004 * sin (3 * $M1)
+	       + 0.00003 * sin ($M2 + $M1 - 2 * $F)
+	       + 0.00003 * sin (2 * $M2 + 2 * $F)
+	       - 0.00003 * sin ($M2 + $M1 + 2 * $F)
+	       + 0.00003 * sin ($M2 - $M1 + 2 * $F)
+	       - 0.00002 * sin ($M2 - $M1 - 2 * $F)
+	       - 0.00002 * sin (3 * $M2 + $M1)
+	       + 0.00002 * sin (4 * $M2);
+	
+	## compute the planetary terms
+	my $A1 = deg2rad (299.77 + 0.107408 * $k - 0.009173 * $T ** 2);
+	my $A2 = deg2rad (251.88 + 0.016321 * $k);
+	my $A3 = deg2rad (251.83 + 26.651886 * $k);
+	my $A4 = deg2rad (349.92 + 36.412478 * $k);
+	my $A5 = deg2rad (84.66  + 18.206239 * $k);
+	my $A6 = deg2rad (141.74 + 53.303771 * $k);
+	my $A7 = deg2rad (207.14 + 2.453732 * $k);
+	my $A8 = deg2rad (154.84 + 7.306860 * $k);
+	my $A9 = deg2rad (34.52 + 27.261239 * $k);
+	my $A10 = deg2rad (207.19 + 0.121824 * $k);
+	my $A11 = deg2rad (291.34 + 1.844379 * $k);
+	my $A12 = deg2rad (161.72 + 24.198154 * $k);
+	my $A13 = deg2rad (239.56 + 25.513099 * $k);
+	my $A14 = deg2rad (331.55 + 3.592518 * $k);
+	
+	## Add to JDE the planetary correction terms
+	$JDE += 0.000325 * sin ($A1)
+	       + 0.000165 * sin ($A2)
+	       + 0.000164 * sin ($A3)
+	       + 0.000126 * sin ($A4)
+	       + 0.000110 * sin ($A5)
+	       + 0.000062 * sin ($A6)
+	       + 0.000060 * sin ($A7)
+	       + 0.000056 * sin ($A8)
+	       + 0.000047 * sin ($A9)
+	       + 0.000042 * sin ($A10)
+	       + 0.000040 * sin ($A11)
+	       + 0.000037 * sin ($A12)
+	       + 0.000035 * sin ($A13)
+	       + 0.000023 * sin ($A14);
+	
+	### JDE now contains the Julian day of the moon (perhaps we need to add or subtract 0.5?)
+	return $JDE - 0.5;
+}
 
 __END__
 

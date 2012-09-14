@@ -3,7 +3,7 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <MATINS>
-<SCRIPTURE Type="matins" Reading="Lk_24:12-35" Pericope="113" Cmd="dRank &lt; 7"/>
+<SCRIPTURE Type="matins" Reading="Lk_24:13-35" Pericope="113" Cmd="dRank &lt; 7"/>
 </MATINS>
 <LITURGY>
 <!-- EPISTLE READINGS ARE ALWAYS FOR THE 27TH WEEK -->
