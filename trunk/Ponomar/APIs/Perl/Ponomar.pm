@@ -152,7 +152,7 @@ sub startElement {
 		if ($element eq "SAINT") {
 			my $CId = $attrs{CId};
 			# create a new Saint object
-			my $saint = Ponomar::Saint->new( CId => $CId, Src => $src, Date => $self->{_date}, Lang => $self->{_lang} );
+			my $saint = Ponomar::Saint->new( CId => $CId, Src => $src, Date => $self->{_date}, Lang => $self->{_lang}, GS => $GS );
 			push @{ $self->{_saints} }, $saint;
 			last SWITCH;
 		}
@@ -183,23 +183,30 @@ sub endElement {
 
 =over 4
 
-=item new($date, $language)
+=item new($date, $language, [$useLucanJump] )
 
 Creates a new Ponomar object for Julian date C<$date> and lanuguage C<$language> Runs the initial initialization process, reading XML for this C<$date>. Returns a reference to the new object. E.g.:
-	
+
+Parameter C<$useLucanJump> is optional. If set to true, the Lucan Jump will be used. If set to false, the Lucan Jump will not be used.
+By default, this parameter is assumed to be true.
+
 	$ponomar = new Ponomar(Ponomar::Util::getToday(), 'en')
+	$ponomar = new Ponomar(Ponomar::Util::getToday(), 'zh/Hant', 0)
 
 =cut
 
 sub new {
 	my $class = shift;
-	my ($date, $language) = @_;
+	my ($date, $language, $useLucanJump) = @_;
+	
+	$useLucanJump //= 1;
 	
 	my $self = {
 		_date => $date,
-		_lang => $language
+		_lang => $language,
+		_useLucanJump => $useLucanJump
 	};
-	$GS = 0; ## FIXME
+	$GS = ($useLucanJump != 0);
 	bless $self, $class;
 	$self->init();
 	return $self;

@@ -37,14 +37,15 @@ Service objects have the following properties
 	dRank: The Rank of this service (NOT the rank of the day)
 	parent: a reference to a Saint object which begat this Service
 
-BUG ALERT: C<$GS> is treated as 1 for now.
+Note that C<$GS> is inherited from the parent.
 
 =cut
 
 sub new {
 	my $class = shift;
 	my $self  = { @_ };
-$GS = 1; ## FIXME
+	$GS = defined $self->{parent}->getKey('GS') ? $self->{parent}->getKey('GS') : 1;
+
 	bless $self, $class;
 	return $self;
 }
@@ -175,7 +176,7 @@ sub execCommands {
 	local $ndayP = $tomorrow->getDaysSince($lastpascha);
 	local $ndayF = $tomorrow->getDaysSince($nextpascha);
 	
-	my $ponomar  = Ponomar->new($tomorrow, $language);
+	my $ponomar  = Ponomar->new($tomorrow, $language, $GS);
 	## get tomorrow's dRank
 	local $dRank = max (  map { $_->getKey("Type") } $ponomar->getSaints() );
 	foreach (@{ $self->{commands} }) {
@@ -202,7 +203,7 @@ sub execCommands {
 	local $ndayP = $yesterday->getDaysSince($lastpascha);
 	local $ndayF = $yesterday->getDaysSince($nextpascha);
 	
-	$ponomar  = Ponomar->new($yesterday, $language);
+	$ponomar  = Ponomar->new($yesterday, $language, $GS);
 	local $dRank = max (  map { $_->getKey("Type") } $ponomar->getSaints() );
 	foreach (@{ $self->{commands} }) {
 		next unless $_->{Name} eq 'TransferRulesF';
