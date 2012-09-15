@@ -20,10 +20,11 @@ use vars qw (@ISA @EXPORT_OK %EXPORT_TAGS @EXPORT $VERSION $basepath);
 BEGIN {
 	$VERSION = 0.01;
 	@ISA 	 = qw( Exporter );
-	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel);
+	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel julianFromGregorian);
 	@EXPORT_OK = ();
-	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
+#	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
 #	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
+	$basepath = "/home/sasha/svn/ponomar/svn/trunk/Ponomar/languages/";
 }
 
 my %matinsGospels = (
@@ -198,6 +199,7 @@ sub julianFromGregorian {
 	
 	if ($month < 3) {
 		$month += 12;
+		$year -= 1;
 	}
 	my $a = int($year / 100);
 	my $b = 2 - $a + int($a / 4);
