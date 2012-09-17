@@ -2,14 +2,14 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Philip_1:12-20" Pericope="237" EffWeek="19"/>
-<SCRIPTURE Type="gospel" Reading="Lk_9:44-50" Pericope="47" EffWeek="22" Cmd="(doy &gt;= 288 &amp;&amp; doy &lt;= 294) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_8:22-25" Pericope="37" EffWeek="21" Cmd="(doy &gt;= 281 &amp;&amp; doy &lt;= 287) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:46-7:1" Pericope="28" EffWeek="20" Cmd="(doy &gt;= 274 &amp;&amp; doy &lt;= 280) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:33-39" Pericope="21" EffWeek="19" Cmd="(doy &gt;= 267 &amp;&amp; doy &lt;= 273) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_4:1-15" Pericope="12" EffWeek="18" Cmd="(doy &gt;= 260 &amp;&amp; doy &lt;= 266) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mt_23:29-89" Pericope="96" EffWeek="17" Cmd="(doy &gt;= 253 &amp;&amp; doy &lt;= 259) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:33-39" Pericope="21" Cmd="GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="Philip_1:20-27" Pericope="238" EffWeek="19"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:49-56" Pericope="48" EffWeek="22" Cmd="(doy &gt;= 288 &amp;&amp; doy &lt;= 294) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:7-11" Pericope="41" EffWeek="21" Cmd="(doy &gt;= 281 &amp;&amp; doy &lt;= 287) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:17-30" Pericope="31" EffWeek="20" Cmd="(doy &gt;= 274 &amp;&amp; doy &lt;= 280) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:12-19" Pericope="23" EffWeek="19" Cmd="(doy &gt;= 267 &amp;&amp; doy &lt;= 273) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:22-30" Pericope="14" EffWeek="18" Cmd="(doy &gt;= 260 &amp;&amp; doy &lt;= 266) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:13-28" Pericope="99" EffWeek="17" Cmd="(doy &gt;= 253 &amp;&amp; doy &lt;= 259) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="23" Cmd="GS == 0"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

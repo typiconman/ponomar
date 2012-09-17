@@ -22,9 +22,9 @@ BEGIN {
 	@ISA 	 = qw( Exporter );
 	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel julianFromGregorian);
 	@EXPORT_OK = ();
-#	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
+	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
 #	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
-	$basepath = "/home/sasha/svn/ponomar/svn/trunk/Ponomar/languages/";
+#	$basepath = "/home/sasha/svn/ponomar/svn/trunk/Ponomar/languages/";
 }
 
 my %matinsGospels = (
@@ -522,6 +522,68 @@ sub getPassover {
 	
 	return $d > 31 ? new Ponomar::JDate(4, $d - 31, $year) :
 			new Ponomar::JDate(3, $d, $year);
+}
+
+sub getCivilHolidays {
+	my $year = shift;
+	
+	my $offset = getGregorianOffset $year;
+	
+	my %holidays = ();
+	
+	$holidays{'Easter'} = getGregorianEaster $year;
+	$holidays{'Civil New Year'} = julianFromGregorian(1, 1, $year);
+	$holidays{'Australia Day'}  = julianFromGregorian(1, 26, $year);
+	$holidays{'Anzac Day'}      = julianFromGregorian(4, 25, $year);
+	$holidays{'Diamond Jubilee'} = julianFromGregorian(6, 5, $year);
+	$holidays{'Independence Day (US)'} = julianFromGregorian(7, 4, $year);
+	$holidays{'Western Christmas'} = julianFromGregorian(12, 25, $year);
+	$holidays{'Boxing Day (Canada)'} = julianFromGregorian(12, 26, $year);
+	
+	$holidays{'Canada Day'} = julianFromGregorian(7, 1, $year);
+	if ($holidays{'Canada Day'}->getDayOfWeek() == 0) {
+		$holidays{'Canada Day'}++;
+	}
+	
+	$holidays{'Veterans Day (US)'} = julianFromGregorian(11, 11, $year);
+	if ($holidays{'Veterans Day (US)'}->getDayOfWeek() == 0) {
+		$holidays{'Veterans Day (US)'}++;
+	} elsif ($holidays{'Veterans Day (US)'}->getDayOfWeek() == 6) {
+		$holidays{'Veterans Day (US)'}--;
+	}
+	
+	# NOW MORE COMPLEX COMPUTATIONS. 
+	my $firstMondayOfYear = $holidays{'Civil New Year'}->addDays((8 - $holidays{'Civil New Year'}->getDayOfWeek()) % 7);
+	$holidays{'MLK Day (US)'} = $firstMondayOfYear->addDays(14);
+	
+	my $firstMondayOfFeb  = julianFromGregorian(2, 1, $year)->addDays((8 - julianFromGregorian(2, 1, $year)->getDayOfWeek()) % 7);
+	$holidays{'Presidents Day (US)'} = $firstMondayOfFeb->addDays(14);
+	
+	$holidays{'Bank Holiday (UK)'} = julianFromGregorian(5, 1, $year)->addDays((8 - julianFromGregorian(5, 1, $year)->getDayOfWeek()) % 7);
+	$holidays{'Memorial Day (US)'} = $holidays{'Bank Holiday (UK)'}->addDays(21);
+	my $dummy = $holidays{'Memorial Day (US)'}->addDays(7);
+	$holidays{'Memorial Day (US)'} = $dummy->getMonthGregorian() == 5 ? $dummy : $holidays{'Memorial Day (US)'};
+	
+	$holidays{'Victoria Day (Canada)'} = julianFromGregorian(5, 25, $year);
+	$holidays{'Victoria Day (Canada)'} = $holidays{'Victoria Day (Canada)'}->getDayOfWeek() == 1 ?
+						$holidays{'Victoria Day (Canada)'}->subtractDays(7)   :
+						$holidays{'Victoria Day (Canada)'}->subtractDays(($holidays{'Victoria Day (Canada)'}->getDayOfWeek() + 6) % 7);
+	
+	my $firstMondayOfAug = julianFromGregorian(8, 1, $year)->addDays((8 - julianFromGregorian(8, 1, $year)->getDayOfWeek()) % 7);
+	$holidays{'Bank Holiday 2 (UK)'} = $firstMondayOfAug->addDays(21);
+	$dummy = $holidays{'Bank Holiday 2 (UK)'}->addDays(7);
+	$holidays{'Bank Holiday 2 (UK)'} = $dummy->getMonthGregorian() == 8 ? $dummy : $holidays{'Bank Holiday 2 (UK)'};
+	
+	$holidays{'Labor Day (US)'} = julianFromGregorian(9, 1, $year)->addDays((8 - julianFromGregorian(9, 1, $year)->getDayOfWeek()) % 7);
+	
+	my $firstMondayOfOct = julianFromGregorian(10, 1, $year)->addDays((8 - julianFromGregorian(10, 1, $year)->getDayOfWeek()) % 7);
+	$holidays{'Columbus Day (US)'} = $firstMondayOfOct->addDays(7);
+	$holidays{'Thanksgiving Day (Canada)'} = $firstMondayOfOct->addDays(7);
+	
+	my $firstThursdayOfNov = julianFromGregorian(11, 1, $year)->addDays((11 - julianFromGregorian(11, 1, $year)->getDayOfWeek()) % 7);
+	$holidays{'Thanksgiving Day (US)'} = $firstThursdayOfNov->addDays(21);
+
+	return %holidays;
 }
 
 =item getNextFullMoon( $date )
