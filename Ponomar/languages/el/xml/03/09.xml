@@ -1,5 +1,5 @@
 <DAY>
-<SAINT SId="33" CId="33" Cmd="!(nday == -17 || nday == -15 || nday == -25)"/>
+<SAINT SId="1238" CId="1238" Cmd="!(nday == -17 || nday == -15 || nday == -25)"/>
 <SAINT SId="60001" CId="60001"/>
 <SAINT SId="601" CId="601"/>
 <SAINT SId="03090395" CId="03090395"/>
