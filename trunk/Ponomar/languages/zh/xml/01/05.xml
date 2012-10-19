@@ -14,5 +14,6 @@
 <SAINT SId="0105056" CId="010505"/>
 <SAINT SId="010506" CId="010506"/>
 <SAINT SId="01050996" CId="010509"/>
+<SAINT SId="01050796" CId="01050796"/>
 <SAINT SId="09014" CId="090141" Cmd="dow != 6 &amp;&amp; dow != 0"/>
 </DAY>

@@ -14,9 +14,11 @@
 <SAINT SId="010215" CId="010215"/>
 <SAINT CId="010211" SId="010211"/>
 <SAINT SId="010216" CId="010216"/>
-<SAINT SId="6630" CId="010202"/>
+<SAINT SId="772457" CId="772457"/>
 <SAINT SId="010217" CId="010217"/>
 <SAINT SId="010218" CId="010218"/>
 <SAINT SId="010219" CId="010219"/>
+<SAINT SId="772440" CId="772440"/>
+<SAINT CId="010202" SId="010202"/>
 <!-- This needs to be aligned with the Chinese version -->
 </DAY>
