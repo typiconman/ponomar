@@ -1,3 +1,8 @@
-<SAINT>
-<NAME Nominative="Ἅγιος Γεώργιος ὁ Μεγαλομάρτυς καὶ Τροπαιοφόρος" Short="Ἅγιος Γεώργιος ὁ Μεγαλομάρτυς καὶ Τροπαιοφόρος"/>
+﻿<SAINT>
+<NAME Short="Ἅγιος Γεώργιος ὁ Μεγαλομάρτυς καὶ Τροπαιοφόρος"/>
+<NAME Nominative="Ἅγιος Γεώργιος ὁ Μεγαλομάρτυς καὶ Τροπαιοφόρος"/>
+<NAME Nominative="Ἅγιος Γεώργιος ὁ Μεγαλομάρτυς καὶ Τροπαιοφόρος" Cmd="doy == 112"/>
+<NAME Nominative="Ἅγιος Γεώργιος ὁ Μεγαλομάρτυς καὶ Τροπαιοφόρος (transferred from Pascha)" Cmd="doy == 113"/>
+<NAME Nominative="Ἅγιος Γεώργιος ὁ Μεγαλομάρτυς καὶ Τροπαιοφόρος (transferred from Holy and Great Saturday)" Cmd="doy == 114"/>
+<NAME Nominative="ΆἍγιος Γεώργιος ὁ Μεγαλομάρτυς καὶ Τροπαιοφόρος (transferred from Holy and Great Friday)" Cmd="doy == 115"/>
 </SAINT>

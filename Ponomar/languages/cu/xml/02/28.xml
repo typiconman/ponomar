@@ -3,7 +3,6 @@
 <SAINT SId="1007" CId="09107" Cmd="nday == -43"/>
 <SAINT SId="523" CId="523" Cmd="nday != -43"/>
 <SAINT SId="530" CId="530" Cmd="Year % 4 == 0"/> <!-- February 29th -->
-<SAINT SId="523" CId="523"/>
 <SAINT SId="4762" CId="4762"/>
 <SAINT SId="02280098" CId="02280098"/>
 <SAINT SId="527" CId="527"/>
