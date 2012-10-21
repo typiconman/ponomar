@@ -1,5 +1,5 @@
 ﻿<SAINT>
-<NAME Short="St Nicholas"/>
+<NAME Short="Transfer"/>
 <NAME Nominative="Transfer of the relics of St Nicholas the Wonderworker from Myra to Bari (1087) [transferred from Saturday]" Cmd="nday == 46"/>
 <NAME Nominative="Transfer of the relics of St Nicholas the Wonderworker from Myra to Bari (1087)" Cmd="nday != 46"/>
 <LIFE Id="bulgakov" Copyright="The Clergyman’s Handbook. Moscow. 1978. English translation Copyright 1997 Fr. S. Janos.">
