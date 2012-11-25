@@ -57,9 +57,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
  <PHRASE Key="Help" Value="Aide/,Cette commande permit l'utilisateur d'utiliser l'aide./,À propos de/,Accéder au files qui expliquent le raison pour Ponomar/,Aller à l'aide"/>
 <PHRASE Key="LanguageMenu" Value="Langue/,Sélectionner la langue de l'interface/, Sélectionner la langue de l'interface/,Oui/,Pour changer la langue de l'interface, s’il vous plaît recommencer le programme./,Non/,Est-ce que vous veuillez surecrire ce file : /,Est-ce que vous êtes sûre que vous veuillez fermer ce fenêtre ?"/>
 <PHRASE Key="About" Value="Version/,Ponomar est désigné enfin que l'utilisateur peut comprendre et connaître la richesse et la beauté de la tradition Orthodoxe. Le programme est dans sa phase développementale./,Chez Ponomar, nous croyons que les textes Orthodoxes doivent être libre pour les utiliser et les distribuer. Dieu n'avait pas réclamé ses droits d’auteur sur le Bible. St. Jean Damascène n'avait pas réclamé ses droits d’auteur sur l'Octoèques. Donc, Ponomar et tous les textes, qui sont incorporés dans Ponomar, sont distribués sur les termes de GPL./,Droits d’Auteur réservés/,par/,Reconnaissances : (Aucuns)" />
- <PHRASE Key="GospelSelection" Value="Jordanville/,Saute Lucienne/,Le lectionnaire d'Évangile/,Sélectionner le lectionnaire d'Évangile désirée." />
+ <PHRASE Key="GospelSelection" Value="Saute de Théophanie/,Saute Lucienne/,Le lectionnaire d'Évangile/,Sélectionner le lectionnaire d'Évangile désirée." />
  <PHRASE Key="Tones" Value="VIII/,I/,II/,III/,IV/,V/,VI/,VII/,VIII" Comments="Permettre d'utiliser des formats différentes dans les autres langues comme la grecque (avec des lettres) and le vieux slave (avec des lettres cyrilliques)" />
- <PHRASE Key="Main" Value="Le calendrier grégorien/,Le lever de soleil/,Le coucher de soleil/,La phase de la lune ecclésiastique/,Ton TT/,L'Information pour /,Est-ce que vous êtes sûre que vous veuillez quitter le programme ?" />
+ <PHRASE Key="Main" Value="Le calendrier grégorien/,&lt;B&gt;Le lever de soleil&lt;/B&gt; : /,&lt;B&gt;Le coucher de soleil&lt;/B&gt; : /,&lt;B&gt;La phase de la lune&lt;/B&gt; : /,Ton TT/,L'Information pour /,Est-ce que vous êtes sûre que vous veuillez quitter le programme ?" />
  <PHRASE Key="gospel" Value="Évangile"/> <PHRASE Key="apostol" Value="Épître"/>
 <PHRASE Key="matins" Value="Matines"/>
 <PHRASE Key="vespers" Value="Vêpres"/>
@@ -112,7 +112,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 
 <PHRASE Key="PadH" Value="1" Comment="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 <PHRASE Key="PadM" Value="2" Comment="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
-
+<PHRASE Key="OrderBox" Value="MM" Note="This determine the order in which the Month Year selection boxes in the Main display for the calendar are displayed. MM implies that the month will come first, while YY implies that the year will do so."/>
 <PHRASE Key="IconSearch" Value="cu/ru/,el/,en" Comment="There is no need to include the current language and its path up, as it will be searched by default. Similarly, only the lowest desired searachable path should be considered, as the programme will by default search up the tree from the given point."/>
 
 </LANGUAGEPACKS>

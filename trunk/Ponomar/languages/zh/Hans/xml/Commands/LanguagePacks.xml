@@ -1,4 +1,4 @@
-<LANGUAGEPACKS>
+﻿<LANGUAGEPACKS>
 <!-- This document contains all the required languages specific features for the Ponomar interface in all the languages that are supported by the programme. For trial purposes, at least all the information in this file should be translated, the Easter file in the Pentecostarion (xml/pentecostarion/1.xml), and the file for the Feast of the Annunciation (March 25th, xml/3/25.xml), the first 12 verses of the Gospel according to John, and the Prime service (xml/Services/Primes...) so as to test all the capabilities of the programme. The state of completion is defined as a value out of 10 that states what is available: 0 represents nothing, 1 represents the above requirements, 5 all that is currently required, 10 a complete language, including video and audio files.
 Note: /, is used to separate entries in a list.
 Note: The defaults must be loaded before this file can be read.
@@ -42,7 +42,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="About" Value="版本/,波诺马里的设计为用户提供了访问，了解和体验的丰富和美丽的正教圣传。该程序是目前发展阶段。/,在波诺马里项目中，我们认为礼典信息应当免费——也就是说不收费也不受版权的制约。上帝并没有保留圣经的版权，圣约安也没有保留《八音集》的版权。 您可以从本站获得任何东西并用于任何用途，只要您信任我们。如果您要发布您自己对本站信息的修改成果，您需要在许可的体系下进行。/,版权所有/,/,为感谢：中文版由正教会中华诸圣会提供。" />
 <PHRASE Key="GospelSelection" Value="乔尔丹维尔/,路喀跳转/,福音经课/,选择所需福音经课。" />
 <PHRASE Key="Tones" Value="八/,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other 语言s, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="格里高利历/,日出/,日落/,教会月相/,第TT调式/,信息 /,你确定要退出吗？" />
+<PHRASE Key="Main" Value="格里高利历/,&lt;B&gt;日出&lt;/B&gt;：/,&lt;B&gt;日落&lt;/B&gt;：/,&lt;B&gt;教会月相&lt;/B&gt;：/,第TT调式/,信息 /,你确定要退出吗？" />
 <PHRASE Key="gospel" Value="圣福音经"/>
 <PHRASE Key="apostol" Value="使徒经书"/>
 <PHRASE Key="matins" Value="晨时课"/>
@@ -96,7 +96,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 
 <PHRASE Key="PadH" Value="1" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 <PHRASE Key="PadM" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
-
+<PHRASE Key="OrderBox" Value="YY" Note="This determine the order in which the Month Year selection boxes in the Main display for the calendar are displayed. MM implies that the month will come first, while YY implies that the year will do so."/>
 <PHRASE Key="IconSearch" Value="cu/ru/,el/,en" Note="There is no need to include the current language and its path up, as it will be searched by default. Similarly, only the lowest desired searachable path should be considered, as the programme will by default search up the tree from the given point."/>
 
 

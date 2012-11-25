@@ -1,4 +1,4 @@
-package Ponomar;
+//package Ponomar; Removed this line to remove this file from the project
 
 import javax.swing.*;
 import javax.swing.event.*;
@@ -20,7 +20,7 @@ import javax.swing.text.MutableAttributeSet;
  OUTPUTS RELEVANT INFORMATION FOR EACH DAY, WITH LINKS TO DETAILED INFO.
 
  Main.java is part of the Ponomar program.
- Copyright 2006, 2007, 2008, 2009, 2010, 2012 Aleksandr Andreev and Yuri Shardt.
+ Copyright 2006, 2007, 2008, 2009, 2010 Aleksandr Andreev and Yuri Shardt.
  Corresponding e-mail aleksandr.andreev@gmail.com
 
  Ponomar is free software; you can redistribute it and/or
@@ -34,7 +34,7 @@ import javax.swing.text.MutableAttributeSet;
  GNU General Public License for details.
 ***********************************************************************/
 
-public class Main1 extends JFrame implements PropertyChangeListener, DocHandler, HyperlinkListener, ActionListener
+public class Main extends JFrame implements PropertyChangeListener, DocHandler, HyperlinkListener, ActionListener
 {
 	// First, some relevant constants
 	private final static String configFileName = "ponomar.config"; // CONFIGURATIONS FILE
@@ -86,7 +86,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
         private String CSep=new String();
         private String Colon=new String();
         private String Ideographic=new String();
-        private DoSaint1 SaintLink;
+        private DoSaint SaintLink;
         private IconDisplay displayIcon;
         private Vector IconImages;
         private Vector IconNames;
@@ -94,7 +94,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
         Helpers findLanguage;
 
 	// CONSTRUCTOR
-	public Main1()
+	public Main()
 	{
 		//super("Ponomar");
 		
@@ -464,7 +464,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 			String id = (String)table.get("Id");
 			if (id.length() != 0)
 			{
-				output += "<A Href='gDoSainto?id=" + table.get("Id") + "'>";
+				output += "<A Href='goDoSaint?id=" + table.get("Id") + "'>";
                                 //if there is an id, then check if an Icon exists
                                 //System.out.println("Ponomar/images/icons/"+id+".jpg");
                                File file=new File("Ponomar/images/icons/"+id+".jpg");
@@ -487,7 +487,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                             }
                         }
                         //System.out.println(StringOp.dayInfo.get("dRank")+"\nFound Rank: "+Rank );
-                        
+
 			switch (Rank)
 			{
 				case 8:
@@ -514,7 +514,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                                 output += "<Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + table.get("Name") + "</I>";
 					break;
 				default:
-                                    output += table.get("Name");                                
+					output += table.get("Name");
                                         //Note: \u00A0 is a nonbreaking space.
 			}
 
@@ -603,17 +603,12 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
                                 
                                 String[] parts2=parts[1].split("=");
                                 //System.out.println(parts2[1]);
-                                String[] parts3=parts2[1].split(",");
-                                
-                                Commemoration1 trial1=new Commemoration1(parts3[parts3.length-2],parts3[parts3.length-1]);
                                 if (SaintLink == null){
-                                    System.out.println(parts3[parts3.length-1]);
-
-                                    SaintLink=new DoSaint1(trial1);
+                                    SaintLink=new DoSaint(parts2[1]);
                                 }
                                 else
                                 {
-                                    SaintLink.refresh(trial1);
+                                    SaintLink.refresh(parts2[1]);
                                 }
                                 
                             }
@@ -681,11 +676,11 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 		readings = new OrderedHashtable();
 		fastInfo = new Stack();
 		//MY ATTEMPT AT SORTING THE READINGS FOR THE LITURGY 2008/05/24 n.s. YURI SHARDT
-		/*ReadScriptures = new OrderedHashtable[3];		//CONTAINS A SORTED ARRAY OF ALL THE READINGS
+		ReadScriptures = new OrderedHashtable[3];		//CONTAINS A SORTED ARRAY OF ALL THE READINGS
 		ReadScriptures[0] = new OrderedHashtable();		//STORES THE PENTECOSTARION READINGS (SEQUENTIAL (rjadovoje) READINGS!)
 		ReadScriptures[1] = new OrderedHashtable();		//CONTAINS THE MENALOGION READINGS, EXCLUDING ANY FLOATERS
 		ReadScriptures[2] = new OrderedHashtable();		//CONTAINS THE FLOATER READINGS.
-		*/
+		
 		//TESTING THE LANGUAGE PACKS
 		String rough=(String)Phrases.Phrases.get("1");
 		String[] final1=rough.split(",");
@@ -699,7 +694,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 		output += "<BR><B>"+MainNames[2]+"</B>"+Colon + sunriseSunset[1];
 		output += "<BR><BR>"; //<B>"+MainNames[3]+"</B>"+Colon+ Paschalion.getLunarPhaseString(today) +"<BR><BR>";
 		// getting rid of the lunar phase until we program a paschalion ...
-                if (nday >= -70 && nday < 0)
+		if (nday >= -70 && nday < 0)
 		{
 			filename = triodionFileName;
 			lineNumber = Math.abs(nday);
@@ -718,13 +713,22 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 			lineNumber = nday + 1;
 		}
 
-		filename += lineNumber >= 10 ? lineNumber : "0" + lineNumber ; // CLEANED UP
-                //System.out.println("++++++++++++++++++++++\n"+filename+"\n+++++++++++++++++++\n");
-		Day PaschalCycle=new Day(filename);
-                
-                // READ THE PENTECOSTARION / TRIODION INFORMATION
+		filename += lineNumber >= 10 ? lineNumber + ".xml" : "0" + lineNumber + ".xml"; // CLEANED UP
+		// READ THE PENTECOSTARION / TRIODION INFORMATION
+		try
+		{
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
+			//FileReader frf = new FileReader(filename);
+			QDParser.parse(this, frf);
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		//ADDED 2008/05/19 n.s. Y.S.
+		//COPYING SOME READINGS FILES
 		
-		/*
+		
 		for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements(); )
 		{
 			String type = (String)e.nextElement();
@@ -734,23 +738,19 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 		}
 		
 		
-		readings.clear();*/
+		readings.clear();
 		
 		// GET THE MENAION DATA, THESE MAY BE INDEPENDENT OF THE GOSPEL READING IMPLEMENTATION, BUT WILL NOT BE SO IMPLEMENTED
 		int m = today.getMonth();
 		int d = today.getDay();
 
-		filename = "xml/";
-		filename += m < 10 ? "0" + m : "" + m;  // CLEANED UP
+		filename = "";
+		filename += m < 10 ? "xml/0" + m : "xml/" + m;  // CLEANED UP
 		filename += d < 10 ? "/0" + d : "/" + d; // CLEANED UP
-		//filename += ".xml";
-                Day SolarCycle=new Day(filename);
-                StringOp.dayInfo.put("dRank",Math.max(SolarCycle.getDayRank(), PaschalCycle.getDayRank()));
-                output+=PaschalCycle.getCommsHyper()+CSep;
-                output+=SolarCycle.getCommsHyper();
-                StringOp.dayInfo.put("Tone",PaschalCycle.getTone());
+		filename += ".xml";
+
 		// PARSE THE MENAION XML FILE
-		/*try
+		try
 		{
 			BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
 			//FileReader fr = new FileReader(filename);
@@ -759,316 +759,19 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 		catch (Exception e)
 		{
 			System.out.println(Errors[2] + " " + today.toString() + Colon + e.toString());
-		}*/
+		}
 		//ADDED 2008/05/19 n.s. Y.S.
-		/*for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements(); )
+		for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements(); )
 		{
 			String type = (String)e.nextElement();
 			Vector vect = (Vector)readings.get(type);
 			
 			ReadScriptures[1].put(type, vect);
-		}*/
+		}
 		
 			
 		String collection="";
 		output += "<BR><BR>";
-                OrderedHashtable[] PaschalReadings=PaschalCycle.getReadings();
-                //System.out.println("Length of Ordinary Readings="+PaschalReadings.length);
-                
-                OrderedHashtable[] MenaionReadings=SolarCycle.getReadings();
-                Bible ShortForm=new Bible();
-                
-                OrderedHashtable CombinedReadings=new OrderedHashtable();
-                //for(int j=0;j<7;j++){
-                    for(int k=0;k<MenaionReadings.length;k++){
-                        OrderedHashtable Reading=(OrderedHashtable) MenaionReadings[k].get("Readings");
-                        OrderedHashtable Readings=(OrderedHashtable) Reading.get("Readings");
-                        for (Enumeration e=Readings.enumerateKeys();e.hasMoreElements();){
-                            String element1=e.nextElement().toString();
-                            if (CombinedReadings.get(element1)!=null){
-                                //Type of Reading already exists combine them
-                                OrderedHashtable temp=(OrderedHashtable) CombinedReadings.get(element1);
-                                Vector Readings2=(Vector)temp.get("Readings");
-                                Vector Rank=(Vector)temp.get("Rank");
-                                Vector Tag=(Vector)temp.get("Tag");
-                                Readings2.add(Readings.get(element1));
-                                Rank.add(Reading.get("Rank"));
-                                Tag.add(Reading.get("Name"));
-                                temp.put("Readings",Readings2);
-                                temp.put("Rank",Rank);
-                                temp.put("Tag",Tag);
-                                CombinedReadings.put(element1,temp);
-                            }
-                            else{
-                                //Reading does not exist
-                                Vector Readings2= new Vector();
-                                Vector Rank=new Vector();
-                                Vector Tag=new Vector();
-                                Readings2.add(Readings.get(element1));
-                                Rank.add(Reading.get("Rank"));
-                                Tag.add(Reading.get("Name"));
-                                OrderedHashtable temp = new OrderedHashtable();
-                                temp.put("Readings",Readings2);
-                                temp.put("Rank",Rank);
-                                temp.put("Tag",Tag);
-                                CombinedReadings.put(element1,temp);
-                            }
-                        }
-                    }
-                for(int k=0;k<PaschalReadings.length;k++){
-                        OrderedHashtable Reading=(OrderedHashtable) PaschalReadings[k].get("Readings");
-                        OrderedHashtable Readings=(OrderedHashtable) Reading.get("Readings");
-                        for (Enumeration e=Readings.enumerateKeys();e.hasMoreElements();){
-                            String element1=e.nextElement().toString();
-                            if (CombinedReadings.get(element1)!=null){
-                                //Type of Reading already exists combine them
-                                OrderedHashtable temp=(OrderedHashtable) CombinedReadings.get(element1);
-                                Vector Readings2=(Vector) temp.get("Readings");
-                                Vector Rank=(Vector) temp.get("Rank");
-                                Vector Tag=(Vector) temp.get("Tag");
-                                Readings2.add(Readings.get(element1));
-                                Rank.add(Reading.get("Rank"));
-                                Tag.add(Reading.get("Name"));
-                                temp.put("Readings",Readings2);
-                                temp.put("Rank",Rank);
-                                temp.put("Tag",Tag);
-                                CombinedReadings.put(element1,temp);
-                            }
-                            else{
-                                //Reading does not exist
-                                Vector Readings2= new Vector();
-                                Vector Rank=new Vector();
-                                Vector Tag=new Vector();
-                                Readings2.add(Readings.get(element1));
-                                Rank.add(Reading.get("Rank"));
-                                
-                                Tag.add(Reading.get("Name"));
-                                OrderedHashtable temp = new OrderedHashtable();
-                                temp.put("Readings",Readings2);
-                                temp.put("Rank",Rank);
-                                temp.put("Tag",Tag);
-                                CombinedReadings.put(element1,temp);
-                            }
-                        }
-                    }
-                //}
-                boolean firstTime=true;
-                for (Enumeration e=CombinedReadings.enumerateKeys();e.hasMoreElements();){
-                    //Temperary solution
-                    String element1=e.nextElement().toString();
-                    OrderedHashtable temp=(OrderedHashtable) CombinedReadings.get(element1);
-                    Vector Readings=(Vector) temp.get("Readings");
-                    Vector Rank=(Vector) temp.get("Rank");
-                    Vector Tag=(Vector) temp.get("Tag");
-                    if (element1.equals("LITURGY")){
-                        if (firstTime){
-                            firstTime=false;
-                        }
-                        else{
-                            output+=RSep;
-                        }
-                        //Special case and consider it differently
-                        Vector epistle=new Vector();
-
-                        Vector gospel=new Vector();
-
-
-                        for (int j=0;j<Readings.size();j++){
-                            OrderedHashtable liturgy=(OrderedHashtable)Readings.get(j);
-                            OrderedHashtable stepE=(OrderedHashtable)liturgy.get("apostol");
-                            OrderedHashtable stepG=(OrderedHashtable)liturgy.get("gospel");
-                            
-                            if (stepE!=null)
-                            {
-                            epistle.add(stepE.get("Reading").toString());
-                            }
-                            else
-                            {
-                                epistle.add("");
-                            }
-                            if (stepG!=null)
-                            {
-                            gospel.add(stepG.get("Reading").toString());
-                           }
-                            else
-                            {
-                                gospel.add("");
-                            }
-                            
-
-                        }
-                        OrderedHashtable readingsA=new OrderedHashtable();
-                        
-                        if (!epistle.get(0).equals(""))
-                        {
-                        readingsA.put("Readings",epistle);
-                        readingsA.put("Rank",Rank);
-                        readingsA.put("Tag",Tag);
-                        //System.out.println(Tag);
-                        //System.out.println("Hello World");
-                        DivineLiturgy1 trial1=new DivineLiturgy1();
-                        String type1 =(String) Phrases.Phrases.get("apostol");
-                        output+="<B>"+type1+"</B>"+Colon;
-                        //System.out.println(readingsA);
-                        output+=trial1.Readings(readingsA,"apostol",today);
-                        output+=RSep;
-                        }
-                        if (!gospel.get(0).equals(""))
-                        {
-                        readingsA.put("Readings",gospel);
-                        readingsA.put("Rank",Rank);
-                        readingsA.put("Tag",Tag);
-                        String type1 =(String) Phrases.Phrases.get("gospel");
-                        DivineLiturgy1 trial1=new DivineLiturgy1();
-                        output+="<B>"+type1+"</B>"+Colon;
-                        output+=trial1.Readings(readingsA,"gospel",today);
-                        }
-
-                        
-                        /*for (int j=0; j<Readings.size();j++){
-                            if (j!=0){
-                            output+=RSep;
-                        }
-                            String BibleText=epistle.get(j).toString();
-                            
-                            output+=ShortForm.getHyperlink(BibleText);
-
-                        if (Readings.size()>1){
-                            output+= Tag.get(j).toString();
-                        }
-                        }*/
-                        
-                        
-                        /*for (int j=0; j<Readings.size();j++){
-                            if (j!=0){
-                            output+=RSep;
-                        }
-                            String BibleText=gospel.get(j).toString();
-                            output+=ShortForm.getHyperlink(BibleText);
-
-                        if (Readings.size()>1){
-                            output+= Tag.get(j).toString();
-                        }
-                        }*/
-                        continue;
-
-                    }
-                    if (element1.equals("MATINS")){
-                        if (firstTime){
-                            firstTime=false;
-                        }
-                        else{
-                            output+=RSep;
-                        }
-                        Vector matins2 = new Vector();
-
-                        for (int j=0;j<Readings.size();j++){
-                            OrderedHashtable matins=(OrderedHashtable)Readings.get(j);
-                            //System.out.println("In Main1, we have "+Readings.get(j));
-                            OrderedHashtable stepE=(OrderedHashtable)matins.get("matins");
-                            if (stepE == null){
-                                stepE=(OrderedHashtable)matins.get("1");
-                            }
-                            //OrderedHashtable stepE=(OrderedHashtable)matins.get("matins");
-                            //System.out.println("In Main1, we have "+matins2);
-                            //System.out.println(stepE);
-                            
-                            if (stepE!=null)
-                            {
-                            matins2.add(stepE.get("Reading").toString());
-                            }
-                            else
-                            {
-                                matins2.add("");
-                            }
-                        }
-
-                        OrderedHashtable readingsA=new OrderedHashtable();
-
-                        
-
-
-
-                        readingsA.put("Readings",matins2);
-                        readingsA.put("Rank",Rank);
-                        readingsA.put("Tag",Tag);
-                        Matins trial1=new Matins();
-                        String type1 =(String) Phrases.Phrases.get("matins");
-                        output+="<B>"+type1+"</B>"+Colon;
-                        //System.out.println(readingsA);
-                        output+=trial1.Readings(readingsA,today);
-                        //output+=RSep;
-
-                        
-                        continue;
-
-                    }
-                    if (firstTime){
-                            firstTime=false;
-                        }
-                        else{
-                            output+=RSep;
-                        }
-                    String type1 =(String) Phrases.Phrases.get(element1.toLowerCase());
-                    output+="<B>"+type1+"</B>"+Colon;
-                    for (int i=0;i<Readings.size();i++){
-                        OrderedHashtable Reading=(OrderedHashtable) Readings.get(i);
-                        String Name="";
-                        if (i!=0){
-                            output+=RSep;
-                        }
-                        //System.out.println(Reading);
-                        //System.out.println(Tag.get(i));
-                        boolean first=true;
-
-                        for (Enumeration e2=Reading.enumerateKeys();e2.hasMoreElements();){
-                         if (first){
-                             first=false;
-                         }
-                         else
-                         {
-                             output+=RSep;
-                         }
-                            String element2=e2.nextElement().toString();
-                            OrderedHashtable stuff=(OrderedHashtable) Reading.get(element2);
-                            String BibleText=stuff.get("Reading").toString();
-                            output+=ShortForm.getHyperlink(BibleText);                            
-                        }
-                        if (Readings.size()>1){
-                            output+=Tag.get(i).toString();                         
-                        
-                        }
-                        
-                    }//output += RSep;
-                }
-               /* for(int j=0;j<MenaionReadings.length;j++){
-                  OrderedHashtable Reading=(OrderedHashtable) MenaionReadings[j].get("Readings");
-                  OrderedHashtable Readings=(OrderedHashtable) Reading.get("Readings");
-
-
-                for(Enumeration e=Readings.enumerateKeys();e.hasMoreElements();){
-                    String element1=e.nextElement().toString();
-                    if (element1.equals("VESPERS")){
-                        output+="Vespers: ";
-                        OrderedHashtable test = (OrderedHashtable) Readings.get("VESPERS");
-                        for (Enumeration e1=test.enumerateKeys();e1.hasMoreElements();){
-                            String element2=e1.nextElement().toString();
-                            OrderedHashtable readV=(OrderedHashtable) test.get(element2);
-                            String readingV=readV.get("Reading").toString();
-
-                            output+=ShortForm.getHyperlink(readingV);
-
-
-                   			/*{
-						(String) reading = (String) e2.nextElement();
-						output+=ShortForm.getHyperlink(reading);}*/
-                   // }
-                    //}
-                   /* System.out.println(e.nextElement());
-                }
-                }*/
-
-
 		// OUTPUT THE SCRIPTURE READINGS BY PARSING THE SCRIPTURE HASHTABLE
 		//MODIFIED BY Y.S. 2008/05/25 n.s. TO ACCOUNT FOR CHANGES IN THE SAVING OF THE READINGS!
 		//THIS IS A COMPACT AND QUICK METHOD TO DO THIS THAT DOES NOT ASSUME THE EXISTENCE OF ANY GIVEN READING.
@@ -1077,7 +780,7 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 		//OTHER PROGRAMMES MAY SOON FOLLOW.
 		//MADE FURTHER CORRECTIONS AND IMPROVEMENTS 2008/12/11 n.s. 
 		
-		/*Vector readingType = new Vector();
+		Vector readingType = new Vector();
 		for(int i=0;i <=2;i++)
 		{
 			//WE NEED TO DETERMINE WHICH READINGS ARE PRESENT TODAY
@@ -1182,29 +885,18 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 			}
 			
 			
-		}*/
+		}
                 
-                
-                OrderedHashtable iconsP=(OrderedHashtable)PaschalCycle.getIcon();
-                OrderedHashtable iconsM=(OrderedHashtable)SolarCycle.getIcon();
-                //String[] ss = (String[])v.toArray(new String[v.size()]);
-                Vector ImageList=(Vector)iconsM.get("Images");
-                Vector NamesList=(Vector)iconsM.get("Names");
-                String[] iconImages=new String[ImageList.size()];
-                String[] iconNames=new String[NamesList.size()];
-                
-                iconImages=(String[])ImageList.toArray(new String[ImageList.size()]);
-                iconNames=(String[])NamesList.toArray(new String[NamesList.size()]);
-                
-                //iconImages=(String [])IconImages.toArray(new String[IconImages.size()]);
-                //iconNames=(String [])IconNames.toArray(new String[IconImages.size()]);
+                String[] iconImages=new String[IconImages.size()];
+                String[] iconNames=new String[IconImages.size()];
+                iconImages=(String [])IconImages.toArray(new String[IconImages.size()]);
+                iconNames=(String [])IconNames.toArray(new String[IconImages.size()]);
                 //System.out.println(iconNames.length);
                 //System.out.println(iconImages);
                 //if (iconNames.length>0)
-                
                 {
                     //System.out.println(iconImages[0]+"   "+iconNames[0]+"   ");
-                    displayIcon.updateImagesFiled(iconImages,iconNames);
+                    displayIcon.updateImages(iconImages,iconNames);
                     
                 }
                 //this.pack();
@@ -1250,6 +942,6 @@ public class Main1 extends JFrame implements PropertyChangeListener, DocHandler,
 
 	public static void main(String[] argz)
 	{
-		new Main1();
+		new Main();
 	}
 }

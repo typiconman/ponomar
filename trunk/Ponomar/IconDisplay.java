@@ -56,7 +56,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 	{
 		//this(null);
 	}
-
+        
 	protected IconDisplay(String[] ImagesF, String[] NamesF)
 	{
 		//super();

@@ -53,6 +53,7 @@ class JCalendar extends JPanel implements ActionListener, FocusListener, Propert
 	private JTextField yearChooser;
 	private LanguagePack Text=new LanguagePack();
 	private final String[] months = Text.obtainValues((String)Text.Phrases.get("1"));
+        private final String OrderBox=(String)Text.Phrases.get("OrderBox");
 
 
 	protected JCalendar()
@@ -83,8 +84,16 @@ class JCalendar extends JPanel implements ActionListener, FocusListener, Propert
 		yearChooser.setText(new Integer(date.getYear()).toString());
 		yearChooser.addFocusListener(this);
 
-		monthYearPanel.add(monthChooser, BorderLayout.WEST);
+                if(OrderBox.equals("YY")){
+                    monthYearPanel.add(yearChooser, BorderLayout.WEST);
+		monthYearPanel.add(monthChooser, BorderLayout.CENTER);
+                }
+                else{
+                    monthYearPanel.add(monthChooser, BorderLayout.WEST);
 		monthYearPanel.add(yearChooser, BorderLayout.CENTER);
+                }
+
+		
 		monthYearPanel.setBorder(BorderFactory.createEmptyBorder());
 
 		daySelector = new JDaySelector();
