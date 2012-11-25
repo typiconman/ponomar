@@ -36,7 +36,7 @@ Note: The general format for the files is:
 <PHRASE Key="About" Value="Version/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="Jordanville/,Lucan Jump/,Gospel Lectionary/,Select the desired Gospel Lectionary." />
 <PHRASE Key="Tones" Value="πλ. δʹ/,αʹ/,βʹ/,γʹ/,δʹ/,πλ. αʹ/,πλ. βʹ/,βαρύς/,πλ. δʹ" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="Γρηγοριανό ημερολόγιο/,Sunrise/,Ηλιοβασίλεμα/,Ecclesiastic Lunar Phase/,Ήχος TT/,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
+<PHRASE Key="Main" Value="Γρηγοριανό ημερολόγιο/,&lt;B&gt;Sunrise&lt;/B&gt;: /,&lt;B&gt;Ηλιοβασίλεμα&lt;/B&gt;: /,&lt;B&gt;Lunar Phase&lt;/B&gt;: /,Ήχος TT/,Information for /,Are you sure you wish to quit?" Comment="TT represents the Tone number that will be replaced later on."/>
 <PHRASE Key="gospel" Value="Ευαγγέλιο"/>
 <PHRASE Key="apostol" Value="Απόστολος"/>
 <PHRASE Key="matins" Value="Όρθρος"/>
@@ -90,7 +90,7 @@ Note: The general format for the files is:
 
 <PHRASE Key="PadH" Value="1" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 <PHRASE Key="PadM" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
-
+<PHRASE Key="OrderBox" Value="MM" Note="This determine the order in which the Month Year selection boxes in the Main display for the calendar are displayed. MM implies that the month will come first, while YY implies that the year will do so."/>
 <PHRASE Key="IconSearch" Value="cu/ru/,en" Note="There is no need to include the current language and its path up, as it will be searched by default. Similarly, only the lowest desired searachable path should be considered, as the programme will by default search up the tree from the given point."/>
 
 </LANGUAGEPACKS>

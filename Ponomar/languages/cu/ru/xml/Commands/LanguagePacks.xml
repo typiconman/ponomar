@@ -59,7 +59,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="About" Value="Версия/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="НЕ использовать Воздвиженскую отступку/,Использовать Воздвиженскую отступку/,Лекционарий/,Выбор лекционария." />
 <PHRASE Key="Tones" Value="8-й/,1-й/,2-й/,3-й/,4-й/,5-й/,6-й/,7-й/,8-й" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="по гражданскому стилю/,Восход солнца/,Заход солнца/,Фаза луны/,Глас TT/,Информация о /,Вы действительно хотите закрыть программу?" />
+<PHRASE Key="Main" Value="по гражданскому стилю/,&lt;B&gt;Восход солнца&lt;/B&gt;: /,&lt;B&gt;Заход солнца&lt;/B&gt;: /,&lt;B&gt;Фаза луны&lt;/B&gt;: /,Глас TT/,Информация о /,Вы действительно хотите закрыть программу?" />
 <PHRASE Key="gospel" Value="Евангелие"/>
 <PHRASE Key="apostol" Value="Апостол"/>
 <PHRASE Key="matins" Value="Утреня"/>
@@ -70,7 +70,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="9th hour" Value="Час 9-й"/>
 <PHRASE Key="Fasts" Value="Поста нет /,Строгий пост /,Пост: разрешается вино и растительное масло /,Пост: разрешается рыба /,Указания пищи: /,Ошибка при вычеслении указаний /,: Монастырская кухня: /,Строгий пост /,Сухоядение /,Пища без растительного масла /,Пост: Разрешается рыбная икра /,Масленца (пища без мяса) /,Пост: Разрешается вино /,мясо/,молочные продукты/,рыба/,рыбная икпа/,растительное масло/,вино/,сухофрукты/,/,/,/,разрешается/,запрещается/,и/,, пока/,Пост: " />
 <PHRASE Key="Week1" Value="Вс/,Пон/,Вт/,Ср/,Чт/,Пт/,Сб" Comment="This the abbreviation of the days of the week." />
-<PHRASE Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
+<PHRASE Key="Phases" Value="новолуние/,растущий серп/,первая четверть/,растущая луна/,полнолуние,/,Убывающая луна/,последняя четверть/,Убывающий серп" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="Эта служба не поется сегодня./,Prime (First Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="DayReading" Value="для Sunday/,для Monday/,для Tuesday/,для Wednseday/,для Thursday/,для Friday/,для Saturday" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
 <PHRASE Key="DateFormat" Value="WW, DD MM YY г." Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
@@ -113,7 +113,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 
 <PHRASE Key="PadH" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 <PHRASE Key="PadM" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
-
+<PHRASE Key="OrderBox" Value="MM" Note="This determine the order in which the Month Year selection boxes in the Main display for the calendar are displayed. MM implies that the month will come first, while YY implies that the year will do so."/>
 <PHRASE Key="IconSearch" Value="el/,en" Note="There is no need to include the current language and its path up, as it will be searched by default. Similarly, only the lowest desired searachable path should be considered, as the programme will by default search up the tree from the given point."/>
 
 </LANGUAGEPACKS>

@@ -13,8 +13,7 @@ import javax.swing.text.*;
 import javax.swing.text.html.HTMLDocument;
 
 /***********************************************************************
-THIS MODULE CREATES THE TEXT FOR THE ORTHODOX SERVICE OF THE FIRST HOUR (PRIME)
-THIS MODULE IS STILL IN THE DEVELOPMENT PHASE.
+THIS MODULE CREATES THE WINDOW TO DISPLAY THE SAINT INFORMATION.
 
 (C) 2007, 2008, 2012 YURI SHARDT. ALL RIGHTS RESERVED.
 Updated some parts to make it compatible with the changes in Ponomar, especially the language issues!
@@ -348,6 +347,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         //output.setText(header);
         output.setText(textOut);
         output.setCaretPosition(0);
+
         JScrollPane scrollPane = new JScrollPane(output);
         JMenuBar MenuBar = new JMenuBar();
         MenuFiles demo = new MenuFiles();
@@ -363,6 +363,20 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         frames.pack();
         frames.setSize(800, 700);
         frames.setVisible(true);
+
+        /*OrderedHashtable iconsM=(OrderedHashtable)SaintInfo2.getDisplayIcons();
+        Vector ImageList=(Vector)iconsM.get("Images");
+                Vector NamesList=(Vector)iconsM.get("Names");
+                String[] iconImages=new String[ImageList.size()];
+                String[] iconNames=new String[NamesList.size()];
+
+                iconImages=(String[])ImageList.toArray(new String[ImageList.size()]);
+                iconNames=(String[])NamesList.toArray(new String[NamesList.size()]);
+        System.out.println("Icon Length is: " + iconNames.length);
+        IconDisplay icons=new IconDisplay(iconImages,iconNames);
+        contentPane.add(icons);
+        textOut+=icons;
+        output.setText(textOut);*/
 
         Helpers orient = new Helpers();
 
