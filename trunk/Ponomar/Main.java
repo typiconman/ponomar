@@ -649,7 +649,22 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
                   //  output="";
                 //}
                 
-                output += "<B>" + today.toString() + "</B><BR>";
+                
+                String AMC=(String)Phrases.Phrases.get("AMC");
+                String AML=(String)Phrases.Phrases.get("AML");
+                String Format="";
+                if(AMC.equals("1")){
+                    PCalendar checking = new PCalendar(today,PCalendar.julian);
+                    Format=(String)Phrases.Phrases.get("AM");
+                    Format=Format.replace("^YYAM",Integer.toString((int)checking.getAM()));
+                }
+                //System.out.println("AML = " + AML.equals("B"));
+                if(AML.equals("B")){
+                output += "<B>" + Format + today.toString()+ "</B><BR>";}
+                else {
+                    output += "<B>" + today.toString()+ Format + "</B><BR>";
+                }
+                      
 		output +=MainNames[0] +Colon + (String)today.getGregorianDateS() + "<BR>";
 		String filename = "";
 		int lineNumber = 0;

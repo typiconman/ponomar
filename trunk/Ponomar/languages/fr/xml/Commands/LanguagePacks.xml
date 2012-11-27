@@ -72,7 +72,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Phases" Value="Nouvelle Lune/,Premier croissant/,Premier quartier/,Lune gibbeuse ascendante/,Pleine Lune/,Lune gibbeuse descendante/,Dernier quartier/,Dernier croissant" Comment="Les phases de la lune" />
 <PHRASE Key="Primes" Value="Aucun office de Primes n’est pas célébré aujourd'hui/,Prime (Première Heure)/,Le tropaire pour/,n'était pas trouvé/,Le kondakion pour/,Le Kathisme"/>
 <PHRASE Key="DayReading" Value="pour dimanche/,pour lundi/,pour   mardi/,pour mercredi/,pour jeudi/,pour vendredi/,pour samedi" Comment="Ceci sont les formes placée dans les parenthèses après les lectures transférées (l'Évangile et l'Épître)."/>
-<PHRASE Key="DateFormat" Value="WW, le DD MM YY" Comment="Ceci montrera quelque chose similaire à mercredi, le 28 août 2008. Les clés permis sont WW pour le jour, DD for numéro de jour, MM pour le mois, YY pour l'année. Des informations supplémentaires, comme une comma,   pourraient inclus."/>
+<PHRASE Key="DateFormat" Value="WW, le DD MM YY apr. J.-C." Comment="Ceci montrera quelque chose similaire à mercredi, le 28 août 2008. Les clés permis sont WW pour le jour, DD for numéro de jour, MM pour le mois, YY pour l'année. Des informations supplémentaires, comme une comma,   pourraient inclus."/>
 <PHRASE Key="Feasts" Value="La Circoncision de Seigneur/,La Théophanie/,La Nativité de St. Jean le Baptiste/,Sts. Pierre et Paul/,La Transfiguration/,La Dormition de la Mère de Dieu/,La Décollation de St. Jean le Baptiste/,La Nativité de la Mère de Dieu/,L'Exaltation de la Sainte Croix/,La Protection de la Mère de Dieu/,L'Entrée de la Mère de Dieu dans le Temple/,La Nativité de nôtre Seigneur/,Kyriopâques: Pâques et l'Annonciation/,Pâques/,L'Annonciation/,Le Pentecôte/,L'Ascension de Seigneur/,Le Dimanche des Rameaux/,Le Rencontre de nôtre Seigneur" />
 <PHRASE Key="Helpers" Value="Sauvegarder un file html." />
 <PHRASE Key="PrimeSelection" Value="Lecteur/,Prêtre/,Éveque/,Indépendente/,Sans le début/,Sans le fin/,Sans le début et le fin/,Type" />
@@ -114,5 +114,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="PadM" Value="2" Comment="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 <PHRASE Key="OrderBox" Value="MM" Note="This determine the order in which the Month Year selection boxes in the Main display for the calendar are displayed. MM implies that the month will come first, while YY implies that the year will do so."/>
 <PHRASE Key="IconSearch" Value="cu/ru/,el/,en" Comment="There is no need to include the current language and its path up, as it will be searched by default. Similarly, only the lowest desired searachable path should be considered, as the programme will by default search up the tree from the given point."/>
-
+<PHRASE Key="AM" Value=" (A.M. ^YYAM)" Note="This displays the anno mundi year in brackets in the calendar, only for the Julian date"/>
+<PHRASE Key="AMC" Value="1" Note="This determines whether or not the Anno Mundi value will be displayed. 1 = Yes, 0 = No."/>
+<PHRASE Key="AML" Value="A" Note="This determines whether the AM value comes before (B) the rest of the date or after (A) it"/>
 </LANGUAGEPACKS>
