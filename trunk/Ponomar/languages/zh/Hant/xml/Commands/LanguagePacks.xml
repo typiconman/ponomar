@@ -98,7 +98,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="PadM" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 <PHRASE Key="OrderBox" Value="YY" Note="This determine the order in which the Month Year selection boxes in the Main display for the calendar are displayed. MM implies that the month will come first, while YY implies that the year will do so."/>
 <PHRASE Key="IconSearch" Value="cu/ru/,el/,en" Note="There is no need to include the current language and its path up, as it will be searched by default. Similarly, only the lowest desired searachable path should be considered, as the programme will by default search up the tree from the given point."/>
-<PHRASE Key="AM" Value="（創世^YYAM）" Note="This displays the anno mundi year in brackets in the calendar, only for the Julian date"/>
+<PHRASE Key="AM" Value="（創世^YYAM年）" Note="This displays the anno mundi year in brackets in the calendar, only for the Julian date"/>
 <PHRASE Key="AMC" Value="1" Note="This determines whether or not the Anno Mundi value will be displayed. 1 = Yes, 0 = No."/>
 <PHRASE Key="AML" Value="B" Note="This determines whether the AM value comes before (B) the rest of the date or after (A) it"/>
 </LANGUAGEPACKS>
