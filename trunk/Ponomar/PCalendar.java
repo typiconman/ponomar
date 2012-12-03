@@ -48,7 +48,7 @@ class PCalendar implements Cloneable
             PCalendar cutoff=new PCalendar(new JDate(9,1,date.getYear()),julian);
             double year=date.getYear();
             double AM=5508- Math.floor(difference / 365) + year;
-            if (JulianDay()>cutoff.JulianDay()){
+            if (JulianDay()>=cutoff.JulianDay()){
                 AM=AM+1;
             }
             return (int)AM;
