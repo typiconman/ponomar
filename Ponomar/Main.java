@@ -309,7 +309,7 @@ public class Main extends JFrame implements PropertyChangeListener, DocHandler, 
         if(name.equals(FileNames[1]))
         {
         	//SAVE THE CURRENT WINDOW
-       		helper.SaveHTMLFile(MainNames[5]+ " "+today+".html", "<html><title>"+(String)Phrases.Phrases.get("0")+Colon + today+"</title>"+output);
+       		helper.SaveHTMLFile(MainNames[5]+ " "+today+".html", "<html><http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"/><title>"+(String)Phrases.Phrases.get("0")+Colon + today+"</title>"+output);
        	}
         if(name.equals(FileNames[4]))
         {

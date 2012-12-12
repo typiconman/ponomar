@@ -534,7 +534,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
             } else if (butnum == 5) {
                 // save button clicked ...
                 //System.out.println(text.getText());
-                helper.SaveHTMLFile((String) books.get(curbook) + "_" + formatPassage(curpassage).replace(":", "-") + ".html", "<html><TITLE>"+ (String) books.get(curbook) + " " + formatPassage(curpassage)+ "</TITLE>" + printText);
+                helper.SaveHTMLFile((String) books.get(curbook) + "_" + formatPassage(curpassage).replace(":", "-") + ".html", "<html><http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"/><TITLE>"+ (String) books.get(curbook) + " " + formatPassage(curpassage)+ "</TITLE>" + printText);
             } else if (butnum == 6) {
                 // print button clicked ...
                 //helper.sendHTMLToPrinter("<TITLE>" + curbook + " " + curpassage + "</TITLE>" + "<H3>" + curbook + " " + curpassage + "</H3>" + text.getText());
