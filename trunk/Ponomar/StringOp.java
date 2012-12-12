@@ -34,7 +34,7 @@ import java.util.Hashtable;
 	* PLEASE SEE COMMENTS BELOW FOR FULL DOCUMENTATION OF FEATURES
 *********************************************************************************/
 
-final class StringOp
+final class StringOp implements Cloneable
 {
 	//private static LanguagePack Phrases = new LanguagePack();
 	//private static String [] Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
@@ -435,7 +435,12 @@ private static double bool2double(boolean expression)
 	}
 	return result;
 }
-
+public StringOp clone(){
+    StringOp aped=new StringOp();
+    aped=this;
+    //To implement cloning of the table here is required.
+    return aped;
+}
 // CAN BE USED TO TEST eval(String) AGAINST OUTPUT FROM KNOWN SOURCE, E.G. MATLAB
 public static void main(String[] argz)
 {

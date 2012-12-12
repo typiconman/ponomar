@@ -65,7 +65,7 @@ public class Service implements DocHandler
                 WhoLast="";
 		count=-1;
 		//Service1="";
-                Header1="<head>\n";//<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
+                Header1="<http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"/><head>\n";//<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
                 Style="<style type=\"text/css\">\nrubric {color:red;font-weight:bold}\np {margin-left:.5in;text-indent:-.5in}\nh1 {color:red;font-weight:bold;text-align:center}\ncomment {color:red;font-size:50%;font-style:italic}\ncommand {color:red;font-style:italic}\nh2 {color:red;font-size:110%;text-align:center}\n";
 
                 /*int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());

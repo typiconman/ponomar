@@ -36,12 +36,12 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="NameLocal" Value="церковнославѧнский"/>
 <PHRASE Key="NameEnglish" Value="Church Slavonic"/>
 <PHRASE Key="BibleV" Value="cu/bible/elis"/>
-<PHRASE Key="Authors" Value="А҆ле́ѯандръ А҆ндреевъ/,Ю҆рѣ́й Ша́рдтъ"/>
-<PHRASE Key="Year" Value="҂в҃ѕ до ҂в҃і лѣ́тъ"/>
+<PHRASE Key="Authors" Value="А҆леѯа́ндръ А҆ндреевъ/,Ю҆рѣ́й Ша́рдтъ"/>
+<PHRASE Key="Year" Value=".҂в҃ѕ. до .҂в҃і. лѣ́тъ"/>
 <PHRASE Key="And" Value=" и҆ "/>
 <PHRASE Key="Comma" Value=", "/>
 <PHRASE Key="Copyright" Value="Все права защищены ^YY ^AA"/>
-<PHRASE Key="0" Value="Поно́марь" Comment="This is the only entry for this key."/>
+<PHRASE Key="0" Value="Понома́рь" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="і҆аннꙋарїй/,феѵрꙋа́лїй/,ма́ртъ/,а҆прі́ллїй/,ма́їй/,і҆ꙋ́нїй/,і҆ꙋ́лїй/,а҆́ѵгꙋстъ/,септе́мврїй/,о҆ктѡ́врїй/,ное́мврїй/,деке́мврїй" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
 <PHRASE Key="2" Value="недѣ́лѧ/,понедѣ́льникъ/,вто́рникъ/,сре́да/,четверто́къ/,пѧто́къ/,сꙋббѡ́та" Comment="The names of the week in the nominative case, that is, for use in the format 'Week, Month Date, Year'."/>
 <PHRASE Key="3" Value="і҆аннꙋарїа/,феѵрꙋа́лїа/,ма́рта/,а҆прі́ллїа/,ма́їа/,і҆ꙋ́нїа/,і҆ꙋ́лїа/,а҆́ѵгꙋста/,септе́мврїа/,о҆ктѡ́врїа/,ное́мврїа/,деке́мврїа" Comment="The names of the months in the genitive case, that is, for use in the format 'Wednesday, 28 March 2008'."/>
@@ -57,7 +57,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="About" Value="Ве́рсїѧ/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="НЀ и҆спользо́вати Воздви́женскꙋю ѿстꙋ́пкꙋ/,И҆спользо́вати Воздви́женскꙋю ѿстꙋ́пкꙋ/,Лекционарий/,Выбо́ръ лекционария." />
 <PHRASE Key="Tones" Value="и҃-й/,а҃-й/,в҃-й/,г҃-й/,д҃-й/,е҃-й/,ѕ҃-й/,з҃-й/,и҃-й" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="по гражда́нскомꙋ стилю̀/,Восхо́дъ со́лнца: /,Захо́дъ со́лнца: /,Фа́за лꙋны̀: /,Гла́съ TT/,И҆нформа́цїѧ о҆ /,Вы̀ дѣ̀йствительно хочитѐ закры́ти про́граммꙋ;" />
+<PHRASE Key="Main" Value="по гражда́нскомꙋ стилю̀/,Восхо́дъ со́лнца: /,Захо́дъ со́лнца: /,Фа́за мѣ́сѧца: /,Гла́съ TT/,И҆нформа́цїѧ о҆ /,Вы̀ дѣ̀йствительно хочитѐ закры́ти про́граммꙋ;" />
 <PHRASE Key="gospel" Value="Є҆ѵлⷢїе"/>
 <PHRASE Key="apostol" Value="А҆пⷭлъ"/>
 <PHRASE Key="matins" Value="Оу҆́тренѧ"/>
@@ -66,9 +66,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="3rd hour" Value="Ча́съ тре́тїй"/>
 <PHRASE Key="6th hour"	Value="Ча́съ шесты́й"/>
 <PHRASE Key="9th hour" Value="Ча́съ девѧ́тый"/>
-<PHRASE Key="Fasts" Value="По́ста нѣ̀ /,Стро́гий по́стъ/,По́стъ: разрѣша́етсѧ на вїно̀ и҆ є҆ле́й /,По́стъ: разрѣша́етсѧ на рыбꙋ̀ /,Оу҆́казанїе варе́нїѧ: /,Ошибка при вычеслении указаний /,: Монасты́рская кꙋхнѧ: /,Стро́гий по́стъ/,Сꙋхоѧде́нїе /,Варе́нїе бе́з̾ є҆ле́ѧ/,По́стъ: Разрѣша́етсѧ на ры́бною и҆крꙋ̀ /,Ма́сленца (варе́нїе бе́з̾ мѧ́са) /,По́стъ: Разрѣша́етсѧ вїно̀҆ /,мѧ́со/,мла҆чные продꙋ́кты/,ры́ба/,ры́бнаѧ и҆́кпа/,є҆ле́й/,вїно̀/,сухоѧденїе/,/,/,/,разрѣша́етсѧ/,запрещается/,и҆/,, пока/,По́стъ: " />
-<PHRASE Key="Week1" Value="не/,пон/,вт/,ср/,чт/,пт/,сб" Comment="This the abbreviation of the days of the week." />
-<PHRASE Key="Phases" Value="новолꙋние/,растꙋщий серп/,первая четверть/,растꙋщая лꙋна/,полнолꙋние,/,Убывающая лꙋна/,последняя четверть/,Убывающий серп" Comment="Lunar Phases" />
+<PHRASE Key="Fasts" Value="По́ста нѣ̀ /,Стро́гий по́стъ/,По́стъ: разрѣша́етсѧ на вїно̀ и҆ є҆ле́й /,По́стъ: разрѣша́етсѧ на рыбꙋ̀ /,Оу҆каза́нїе варе́нїѧ: /,Ошибка при вычеслении указаний /,: Монасты́рская кꙋхнѧ: /,Стро́гий по́стъ/,Сꙋхоѧде́нїе /,Варе́нїе бе́з̾ є҆ле́ѧ/,По́стъ: Разрѣша́етсѧ на ры́бною и҆крꙋ̀ /,Ма́сленца (варе́нїе бе́з̾ мѧ́са) /,По́стъ: Разрѣша́етсѧ вїно̀҆ /,мѧ́со/,мла҆чные продꙋ́кты/,ры́ба/,ры́бнаѧ и҆́кпа/,є҆ле́й/,вїно̀/,сухоѧденїе/,/,/,/,разрѣша́етсѧ/,запрещается/,и҆/,, пока/,По́стъ: " />
+<PHRASE Key="Week1" Value="ндⷧѧ/,пнⷣе/,втоⷬ/,срⷣе/,чеⷦ/,пѧⷦ/,сꙋⷠ" Comment="This the abbreviation of the days of the week." />
+<PHRASE Key="Phases" Value="но́вый мѣ́сѧцъ/,растꙋ́щь се́рпъ/,пе́рваѧ че́тверть/,растꙋ́щь мѣ́сѧцъ/,по́лный мѣ́сѧцъ,/,ѹ҆быва́ющь мѣ́сѧцъ/,послѣ́днѧѧ че́тверть/,ѹ҆быва́ющъ се́рпъ" Comment="Lunar Phases" />
 <PHRASE Key="Primes" Value="No Service Today/,Ча́съ пе́рвый/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="DayReading" Value="длѧ̀ недѣ́ли/,длѧ̀ понедѣ́льника/,длѧ̀ вто́рника/,длѧ̀ сре́ды/,длѧ̀ четвертка̀/,длѧ̀ пѧтка̀/,длѧ̀ сꙋббѡ́ты" Comment="These are the forms put in brackets after transferred readings (Gospel and Apostol)."/>
 <PHRASE Key="DateFormat" Value="WW, DD_й де́нь MM YY лѣ́та" Comment="This will display a type similar to Wednesday, 28 August 2008. The permissible codes are WW for Weekname, DD for the day number, MM for the month, YY for the year. Any additonal formatting can be included such as comma after any number."/>
@@ -78,10 +78,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Errors" Value="Unable to find /,Unable to process floater # /,Error at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was not found/,Error Reading the values/,Invalid Month/,Invalid Day:/,in/,A julian day must be greater than 0" />
 <PHRASE Key="PrimeSelection" Value="Reader/,Priest/,Bishop/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
 <PHRASE Key="RoyalHours" Value="The Royal Hours are not served today/,Часѡ́въ ца́рскихъ"/>
-<PHRASE Key="Commemoration" Value="Error reading the Hashtable!
-Missing element: /, with Tag: /,Error reading the Hashtable!
-Missing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines 
-"/>
+<PHRASE Key="Commemoration" Value="Error reading the Hashtable! Missing element: /, with Tag: /,Error reading the Hashtable! Missing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines "/>
 <PHRASE Key="BibleW" Value="Previous Chapter/,Entire Chapter/,Next Chapter/,Bookmark Passage/,Copy Passage/,Save Passage/,Print Passage/,Ponomar Scripture Reader/,Error reading bmlfile: /,Resource not found: "/>
 <PHRASE Key="Terce" Value="No Service Today/,Ча́съ тре́тїй/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="Sexte" Value="No Service Today/,Ча́съ шесты́й/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
@@ -98,7 +95,7 @@ Missing Node: /,Error reading the Hashtable!!!" Comments="The spaces must be mai
 <PHRASE Key="Country" Value="RU" Comment="This is the 2 letter ISO code for the given country. This may be required later on for some things."/>
 <PHRASE Key="ZeroPoint" Value="0" Comment="This is the Unicode location for the starting point of the numbers. Changing it to a different starting point will allow any non-Western decimal system to be used. For 'Arabic' numerals (0,1,2,3,4,5...) the starting point is 0!"/>
 <PHRASE Key="Ideographic" Value="1" Comment="This allows ideographic numerals to be displayed instead of the normal decimal based values, that is, 145 will be displayed as for example, CXLV. 1 = yes!"/>
-<PHRASE Key="TimeF" Value="HH-й ча́съ MM-а минꙋта̀" Comment="This gives the format for the time. The 24-hour clock will be used."/>
+<PHRASE Key="TimeF" Value="HH-й ча́съ MM-а минꙋ́та" Comment="This gives the format for the time. The 24-hour clock will be used."/>
 <!-- Traditionally, Church Slavonic uses a glyph-based approach to writing numbers, which at present cannot be truly implemented! -->
 <PHRASE Key="LivesW" Value="Жи́тїе/,Тропа́рь/, Подо́бенъ: /,Конда́къ/,Гла́съ TT/,; /,Information about this commemoration is missing." Comment="A space (ifrequired) should be placed before and after the 2nd entry."/>
 <PHRASE Key="IconW" Value="Previous і҆конꙋ/,Слѣ́дꙋющꙋ і҆конꙋ/,І҆ко́нъ немаетъ."/>

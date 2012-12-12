@@ -36,7 +36,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for details.
 ******************************************************************/
 
-public class OrderedHashtable extends Hashtable 
+public class OrderedHashtable extends Hashtable implements Cloneable
 {
 
 	//member variables
@@ -61,7 +61,7 @@ public class OrderedHashtable extends Hashtable
 		this.mSerialOrder.clear();
 	}
 
-
+        
 	/** Removes the key (and its corresponding value) from this OrderedHashtable.
 	* Does nothing if key is not in the OrderedHashtable.
 	*
@@ -149,6 +149,31 @@ public class OrderedHashtable extends Hashtable
 		s.append(" }");
 		return s.toString();
 	}
+        public OrderedHashtable clone(){
+            OrderedHashtable cloned =new OrderedHashtable();
+            OrderedHashtable current=this;
+
+            Enumeration keys=current.enumerateKeys();
+            while(keys.hasMoreElements()){
+                String key=keys.nextElement().toString();
+                String item=(String)current.get(key);
+                cloned.put(new String(key), new String(item));
+            }
+
+            return cloned;
+        }
+        public static void main(String[] argz) {
+        //Testing cloning of OrderedHashtables
+            OrderedHashtable test=new OrderedHashtable();
+            test.put("hippo","large");
+            test.put("mouse", "small");
+            test.put("lion","roars");
+            OrderedHashtable aped=test.clone();
+            aped.put("lion", "yellow");
+            System.out.println("In test, we have that a lion " + test.get("lion"));
+            System.out.println("In aped, we have that a lion is " + aped.get("lion"));
+
+    }
 
 	private class OrderedSet extends AbstractSet
 	{
@@ -296,4 +321,6 @@ public class OrderedHashtable extends Hashtable
 			}
 		}
 	}
+        
+
 }
