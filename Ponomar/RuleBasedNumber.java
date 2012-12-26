@@ -67,17 +67,19 @@ class RuleBasedNumber implements DocHandler
     private String fformat="###";
     private OrderedHashtable Phrases;		//STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT INTERFACE LANGUAGE.
     private boolean readRules=false;
+    private StringOp Analyse= new StringOp();
 
-    public RuleBasedNumber()
+    public RuleBasedNumber(OrderedHashtable dayInfo)
 	{
     	//Do nothing right now; later load the required rules.
+        Analyse.dayInfo=dayInfo;
             initialise();
     }
     private void initialise()
     {
 		String filename="xml/Commands/RuleBasedNumbers.xml";
-                Helpers findLanguage=new Helpers();
-                filename=findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename);
+                Helpers findLanguage=new Helpers(Analyse.dayInfo);
+                filename=findLanguage.langFileFind(Analyse.dayInfo.get("LS").toString(),filename);
 		try
 		{
 			//ALLOWS MULTILINGUAL SUPPORT, WHICH IS A MUST IN OUR CASE.
@@ -110,7 +112,7 @@ class RuleBasedNumber implements DocHandler
 		if (table.get("Cmd") != null)
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false)
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -142,7 +144,7 @@ class RuleBasedNumber implements DocHandler
                         }
                         if (Key.equals("Cz"))
                         {
-                            Cz=StringOp.evalbool(Value);                           
+                            Cz=Analyse.evalbool(Value);
 
                         }
                         if (Key.equals("UB"))
@@ -229,9 +231,9 @@ class RuleBasedNumber implements DocHandler
            squareSplit[1]=squareSplit[1].replace("N",Double.toString(Number));
            
 
-           if (StringOp.evalbool(squareSplit[2]))
+           if (Analyse.evalbool(squareSplit[2]))
            {
-             int dloc=(int) StringOp.eval(squareSplit[1]);
+             int dloc=(int) Analyse.eval(squareSplit[1]);
            if (dloc>FormattedNumber.length()-1-change)
            {
                dloc=FormattedNumber.length()-1-change;
@@ -286,9 +288,9 @@ class RuleBasedNumber implements DocHandler
            squareSplit[2]=squareSplit[2].replace("N",Double.toString(Number));
            squareSplit[1]=squareSplit[1].replace("N",Double.toString(Number));
 
-           if (StringOp.evalbool(squareSplit[2]))
+           if (Analyse.evalbool(squareSplit[2]))
            {
-             int dloc=FormattedNumber.length()-change-(int) StringOp.eval(squareSplit[1]);
+             int dloc=FormattedNumber.length()-change-(int) Analyse.eval(squareSplit[1]);
            if (dloc<0)
            {
                dloc=-change;
@@ -437,7 +439,7 @@ class RuleBasedNumber implements DocHandler
            squareSplit[1]=squareSplit[1].replace("N",Double.toString(Number));
            squareSplit[1]=squareSplit[1].replace("$",Double.toString(remainder));
 
-           if (StringOp.evalbool(squareSplit[1]))
+           if (Analyse.evalbool(squareSplit[1]))
            {
                      FNumber=FNumber.substring(0,squareF)+squareSplit[0].substring(1)+FNumber.substring(squareAF+1);
 
@@ -533,10 +535,10 @@ class RuleBasedNumber implements DocHandler
         //DEBUG MODE
         System.out.println("RuleBasedNumber.java running in Debug mode");
         System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
-        StringOp.dayInfo = new Hashtable();
-        StringOp.dayInfo.put("LS","6");
+        OrderedHashtable dayInfo = new OrderedHashtable();
+        dayInfo.put("LS","6");
 
-        RuleBasedNumber test=new RuleBasedNumber();
+        RuleBasedNumber test=new RuleBasedNumber(dayInfo);
         int number=10018;
 
 

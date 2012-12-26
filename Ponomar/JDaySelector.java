@@ -67,15 +67,21 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 	private boolean decorationBordersVisible;
 	private Hashtable feasts;
 	private int[] fasts;
-	private LanguagePack Text=new LanguagePack();
-        private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.BOLD,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
-        private NumberFormat numFormat = NumberFormat.getInstance(new Locale(Text.Phrases.get("Language").toString(),Text.Phrases.get("Country").toString()));
+	private LanguagePack Text;//=new LanguagePack();
+        private StringOp Analyse=new StringOp();
+        private Font CurrentFont;
+        private NumberFormat numFormat;// = NumberFormat.getInstance(new Locale(Text.Phrases.get("Language").toString(),Text.Phrases.get("Country").toString()));
         //(String)Text.Phrases.get("LanguageMenu")
-        private DecimalFormat df=(DecimalFormat)numFormat;
+        private DecimalFormat df;//=(DecimalFormat)numFormat;
 
-	protected JDaySelector()
+	protected JDaySelector(OrderedHashtable dayInfo)
 	{
+            Analyse.dayInfo=dayInfo;
+            Text=new LanguagePack(dayInfo);
+            numFormat = NumberFormat.getInstance(new Locale(Text.Phrases.get("Language").toString(),Text.Phrases.get("Country").toString()));
+            CurrentFont=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.BOLD,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
             //Initialise the required locales
+            df=(DecimalFormat)numFormat;
             DecimalFormatSymbols dfs=df.getDecimalFormatSymbols();
             //dfs.setZeroDigit('\u0660');
             
@@ -182,7 +188,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		commonBackgrounds[1] = new Color(170, 170, 170);
 		commonBackgrounds[2] = new Color(221, 221, 221);
 		selectedColor = new Color(255, 255, 0);
-		feasts = Paschalion.getFeasts(today.getYear());
+		feasts = Paschalion.getFeasts(today.getYear(),Analyse.dayInfo);
 		fasts = Paschalion.getFasts(today.getYear());
 
 		drawDayNames();
@@ -278,6 +284,110 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 				days[i + n + 7].setBackground(sundayForeground);
 				days[i + n + 7].setToolTipText((String)feasts.get(tmpCalendar.getJulianDay()));
 			} 
+			else
+			{
+			//	days[i + n + 7].setBackground(commonBackground);
+				days[i + n + 7].setBackground(commonBackgrounds[fasts[diff]]);
+				days[i + n + 7].setToolTipText(null);
+			}
+
+			// CHECK IF THIS DAY IS SELECTED
+			if (this.day == (n + 1))
+			{
+				oldColor = days[i + n + 7].getBackground();
+				days[i + n + 7].setBackground(selectedColor);
+				selectedDay = days[i + n + 7];
+			}
+/**			else
+			{
+				days[i + n + 7].setBackground(commonBackground);
+			}**/
+
+			// WE ARE NOT GOING TO WORRY ABOUT THE CALENDAR BEING OUT OF BOUNDS
+			// THOUGH WE PROBABLY SHOULD
+
+			diff++;
+			n++;
+			tmpCalendar.addDays(1);
+		}
+
+		for (int k = n + i + 7; k < 49; k++)
+		{
+			// HIDE THE BUTTONS THAT COME AFTER THE END OF THE MONTH
+			days[k].setVisible(false);
+			days[k].setText("");
+		}
+
+		// DRAW THE TONES
+		drawTones();
+	}
+        private void drawDaysGregorian()
+	{
+            //THIS COMPUTES THE GREGORIAN CALENDAR DAYS: THERE ARE SOME ISSUES, NAMELY
+            //ALIGNING THE JULIAN OBSERVATIONS (FEASTS/FASTS) WITH THEIR CORRESPONDING GREGORIAN DATE!
+            //WE WILL NEED TO USE PCalendar to disambiguate between systems.
+		JDate tmpCalendar = (JDate)today.clone();
+		int firstDayOfWeek = 0;
+		// SET CALENDAR TO START OF THE MONTH
+		tmpCalendar.subtractDays(tmpCalendar.getDay() - 1);
+		int firstDay = tmpCalendar.getDayOfWeek() - firstDayOfWeek;
+		JDate startOfYear = new JDate(1, 1, tmpCalendar.getYear());
+
+		if (firstDay < 0)
+		{
+			firstDay += 7;
+		}
+
+		int i;
+
+		for (i = 0; i < firstDay; i++)
+		{
+			days[i + 7].setVisible(false);
+			days[i + 7].setText("");
+		}
+
+		JDate firstDayOfNextMonth = (JDate)tmpCalendar.clone();
+		firstDayOfNextMonth.addMonths();
+
+		int n = 0; // KEEPS TRACK OF DAYS
+		int diff = (int)JDate.difference(tmpCalendar, startOfYear);
+
+		while (JDate.difference(firstDayOfNextMonth, tmpCalendar) > 0)
+		{
+
+                    days[i + n + 7].setText(numFormat.format(n + 1)); //Integer.toString(n + 1))
+                     //days[i + n + 7].setText(Integer.toString(n + 1));
+
+                        //Potentially there might be a need to change the font of the numbers here;
+                        //for those cases where non-numbers are used to mark a calendar!
+			days[i + n + 7].setVisible(true);
+
+			// SEE IF THIS DAY IS TODAY
+			if (tmpCalendar.equals(today))
+			{
+				days[i + n + 7].setForeground(dukeBlue);
+
+			}
+
+			// SEE IF THIS IS A SUNDAY
+			if (tmpCalendar.getDayOfWeek() == 0)
+			{
+				days[i + n + 7].setForeground(sundayForeground);
+			}
+			else
+			{
+				days[i + n + 7].setForeground(weekdayForeground);
+			}
+
+//			System.out.println(tmpCalendar.toString());
+			// CHECK IF THIS DAY IS A FEAST DAY
+			if (feasts.containsKey(tmpCalendar.getJulianDay()))
+			{
+				// THIS IS A FEAST DAY
+				days[i + n + 7].setForeground(weekdayForeground);
+				days[i + n + 7].setBackground(sundayForeground);
+				days[i + n + 7].setToolTipText((String)feasts.get(tmpCalendar.getJulianDay()));
+			}
 			else
 			{
 			//	days[i + n + 7].setBackground(commonBackground);
@@ -622,7 +732,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 	{
 		// FOR TESTING PURPOSES ONLY!!!
 		JFrame frame = new JFrame("TESTING THE CALENDAR CONTROL");
-		frame.getContentPane().add(new JDaySelector());
+		//frame.getContentPane().add(new JDaySelector());
 		frame.pack();
 		frame.setVisible(true);
 	}

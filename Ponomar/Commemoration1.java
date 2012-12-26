@@ -50,22 +50,27 @@ public class Commemoration1 implements DocHandler {
     private OrderedHashtable ServiceInfo;
     private String Location1;
     private boolean readService = false;
-    private LanguagePack Text = new LanguagePack();
-    private String[] CommNames = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
-    private String errorName=(String)Text.Phrases.get("Commemoration3");
+    private LanguagePack Text;// = new LanguagePack();
+    private String[] CommNames;// = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
+    private String errorName;//=(String)Text.Phrases.get("Commemoration3");
     private Helpers helper;
     private boolean combine = false;
     private boolean skipElement = false;
     private boolean presentPropers=false;
+    private StringOp Analyse=new StringOp();
 
-    protected Commemoration1(String SId, String CId) {
+    protected Commemoration1(String SId, String CId,OrderedHashtable dayInfo) {
+        Analyse.dayInfo=dayInfo;
+       Text = new LanguagePack(dayInfo);
+    CommNames = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
+    errorName=(String)Text.Phrases.get("Commemoration3");
         Information = new OrderedHashtable();
         readings = new OrderedHashtable();
         RoyalHours = new OrderedHashtable();
         grammar = new OrderedHashtable();
         Information.put("SID", SId);
         Information.put("CID", CId);
-        helper = new Helpers();
+        helper = new Helpers(Analyse.dayInfo);
         ServiceInfo = new OrderedHashtable();
         readCommemoration(SId, CId);
 
@@ -74,7 +79,7 @@ public class Commemoration1 implements DocHandler {
     protected Commemoration1() {
         Information = new OrderedHashtable();
         readings = new OrderedHashtable();
-        helper = new Helpers();
+        helper = new Helpers(Analyse.dayInfo);
     }
 
     public void readCommemoration(String SId, String CId) //throws IOException
@@ -82,7 +87,7 @@ public class Commemoration1 implements DocHandler {
          String FileName="";
         try {
             combine = true;
-            String language = StringOp.dayInfo.get("LS").toString();
+            String language = Analyse.dayInfo.get("LS").toString();
             String[] pathS = language.split("/");
             int path = pathS.length;
             String pathF = "";
@@ -131,7 +136,7 @@ public class Commemoration1 implements DocHandler {
         skipElement = false;
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-            if (StringOp.evalbool(table.get("Cmd").toString()) == false) {
+            if (Analyse.evalbool(table.get("Cmd").toString()) == false) {
 
 
                 skipElement = true;
@@ -426,9 +431,9 @@ public class Commemoration1 implements DocHandler {
             String NameF = getGrammar("Short");
             String[] IconSearch=Text.obtainValues((String)Text.Phrases.get("IconSearch"));
 
-            File fileNew=new File(helper.langFileFind(StringOp.dayInfo.get("LS").toString(), "/icons/"+ Cid + "/0.jpg"));
+            File fileNew=new File(helper.langFileFind(Analyse.dayInfo.get("LS").toString(), "/icons/"+ Cid + "/0.jpg"));
             int countSearch=0;
-            String LanguageString=StringOp.dayInfo.get("LS").toString();
+            String LanguageString=Analyse.dayInfo.get("LS").toString();
 
             while (!(fileNew.exists()) && countSearch<IconSearch.length){
                 LanguageString=IconSearch[countSearch];
@@ -625,9 +630,9 @@ public class Commemoration1 implements DocHandler {
 
 
     public static void main(String[] argz) {
-        StringOp.dayInfo = new OrderedHashtable();
-        StringOp.dayInfo.put("LS", "en/");
-        StringOp.dayInfo.put("dow", "1");
+        OrderedHashtable dayInfo = new OrderedHashtable();
+        dayInfo.put("LS", "en/");
+        dayInfo.put("dow", "1");
         //StringOp.dayInfo.put("")
         //Commemoration Paramony = new Commemoration("P_3174");    //Paramony of Christmas
         System.out.println("THIS IS RUNNING ON DEBUG MODE, USING THE FILE FOR the Paramony of Christmas");
@@ -636,7 +641,7 @@ public class Commemoration1 implements DocHandler {
         //System.out.println(Paramony .ServiceInfo());
         //System.out.println(Paramony.getRH("IDIOMEL","11"));
         //System.out.println(Paramony);
-        Commemoration1 Paramony = new Commemoration1("0", "9001"); //Forefeast of Christmas
+        Commemoration1 Paramony = new Commemoration1("0", "9001",dayInfo); //Forefeast of Christmas
         //System.out.println(Paramony.getService("/MATINS/KONTAKION","1"));
         System.out.println(Paramony.getRank());
         //System.out.println(Paramony.Information.get("LIFE"));

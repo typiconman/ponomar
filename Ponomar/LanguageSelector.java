@@ -36,12 +36,13 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
 	private int DefaultLocation;
         private String Default;
         private String[] NameLanguages;
+        private StringOp Analyse=new StringOp();
 	
 
 	
-	public LanguageSelector()
+	public LanguageSelector(OrderedHashtable dayInfo)
 	{
-	
+	Analyse.dayInfo=dayInfo;
                 Default = (String) ConfigurationFiles.Defaults.get("Language");
 		String rough = (String) ConfigurationFiles.Defaults.get("AvailableLanguages");
 		AvailableLanguages=rough.split(",");
@@ -61,10 +62,11 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
 		}
 	
 	}
-	public JMenu createLanguageMenu()
+	public JMenu createLanguageMenu(OrderedHashtable dayInfo)
 	{
-            Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
-            LanguagePack Text=new LanguagePack();
+            Analyse.dayInfo=dayInfo;
+            Font CurrentFont=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
+            LanguagePack Text=new LanguagePack(dayInfo);
 		String [] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 		//DETERMINE THE DEFAULTS
 		String Default = (String) ConfigurationFiles.Defaults.get("Language");
@@ -84,8 +86,8 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
 		for(int i=0;i<AvailableLanguages.length;i++)
 		{
                     //System.out.println(AvailableLanguages[i]);
-                    Helpers getFile=new Helpers();
-                    LanguagePack lang=new LanguagePack(getFile.langFileFind(AvailableLanguages[i],"xml/Commands/LanguagePacks.xml"));
+                    Helpers getFile=new Helpers(Analyse.dayInfo);
+                    LanguagePack lang=new LanguagePack(getFile.langFileFind(AvailableLanguages[i],"xml/Commands/LanguagePacks.xml"),Analyse.dayInfo.clone());
                     NameLanguages[i]= lang.Phrases.get("NameLocal").toString();
                     LanguageBox=new JRadioButtonMenuItem((String) lang.Phrases.get("NameLocal").toString());
 			LanguageBox.addActionListener(this);	
@@ -138,7 +140,7 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
 	
 	public void actionPerformed(ActionEvent e)
 	{
-		LanguagePack Text=new LanguagePack();
+		LanguagePack Text=new LanguagePack(Analyse.dayInfo.clone());
 		String [] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 		//THIS WILL DETERMINE THE APPROPRIATE LANGUAGE LOCATION
 		LanguageLocation=e.getActionCommand().toString();

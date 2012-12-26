@@ -38,8 +38,8 @@ public class Service implements DocHandler
 	private static boolean read=false;
 	private String filename;
 	private int lineNumber;
-	private LanguagePack Text=new LanguagePack();
-	private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
+	private LanguagePack Text;//=new LanguagePack();
+	private String[] ServiceNames;//=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 	private String Who;
 	private String What;
@@ -57,15 +57,21 @@ public class Service implements DocHandler
         private String Style;
         private String Header1;
         private Helpers findLanguage;
+        private StringOp Analyse=new StringOp();
 	//private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
-
+        public Service (OrderedHashtable dayInfo){
+            Analyse.dayInfo=dayInfo;
+                Text=new LanguagePack(dayInfo);
+                ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
+        }
         public String startService(String FileName)
 	{
-		findLanguage=new Helpers();
+		findLanguage=new Helpers(Analyse.dayInfo);
+                
                 WhoLast="";
 		count=-1;
 		//Service1="";
-                Header1="<http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"/><head>\n";//<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
+                Header1="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n<head>\n";//<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
                 Style="<style type=\"text/css\">\nrubric {color:red;font-weight:bold}\np {margin-left:.5in;text-indent:-.5in}\nh1 {color:red;font-weight:bold;text-align:center}\ncomment {color:red;font-size:50%;font-style:italic}\ncommand {color:red;font-style:italic}\nh2 {color:red;font-size:110%;text-align:center}\n";
 
                 /*int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
@@ -90,18 +96,18 @@ public class Service implements DocHandler
                 }
                 DisplaySize=Integer.toString(Math.max(Integer.parseInt(DisplaySize), value1.getSize())); //If the default user's font size is larger than the required there is not need to change it.
                 //The specified fonts sizes are the mininum required.
-                Style+="body {font-family:"+DisplayFont+";font-size:"+DisplaySize+"}\n";
+                Style+="body {font-family:"+DisplayFont+";font-size:"+DisplaySize+"}\n</head>";
 		return readService(FileName);
 	}
 	public String readService(String FileName) //throws IOException
 	{
 		Service1="";
-                
+                System.out.println("In the body, we have that "+Analyse.dayInfo.get("PFlag3"));
                
 
             	try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(Analyse.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -140,7 +146,7 @@ public class Service implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -180,7 +186,7 @@ public class Service implements DocHandler
 			//WE ARE DEALING WITH THE TITLE OF THE SERVICE. IT CAN HAVE 3 PARTS: THE TITLE ITSELF, THE SOURCE FOR 
 			//SERVICE, AND SOME ADDITIONAL COMMENTS.
 			String Title=table.get("Header").toString();
-			ReadText textGet1=new ReadText();
+			ReadText textGet1=new ReadText(Analyse.dayInfo.clone());
                         WhoLast="";
 			String text4=textGet1.readText(ServiceFileName+"Text/"+Title+".xml");
                         String Ponomar=Text.Phrases.get("0").toString();
@@ -228,7 +234,7 @@ public class Service implements DocHandler
 			//WE ARE DEALING WITH THE TITLE OF THE SERVICE. IT CAN HAVE 3 PARTS: THE TITLE ITSELF, THE SOURCE FOR
 			//SERVICE, AND SOME ADDITIONAL COMMENTS.
 			//String Subtitle=table.get("Header").toString();
-			ReadText textGet1=new ReadText();
+			ReadText textGet1=new ReadText(Analyse.dayInfo.clone());
                         WhoLast="";
 
 			String Subtitle=table.get("Value").toString();
@@ -277,14 +283,14 @@ public class Service implements DocHandler
 				//THE BOOK COULD BE OF THE FORM II_NAME_Chapter:VerseStart-VerseEnd,Verse,Verse,Chapter:Verse
 				String Reading1=table.get("Verses").toString();
 				int k=Reading1.lastIndexOf("_");
-				Bible reader=new Bible();
+				Bible reader=new Bible(Analyse.dayInfo);
 				parsedBible=reader.getText(Reading1.substring(0,k),Reading1.substring(k+1),false);
 				What2=parsedBible[0].substring(1);											
 			}
 			if(table.get("getReading") != null)
 			{
 				//THIS ALLOWS THE READING HEADER FOR THE GIVEN SELECTION TO BE OBTAINED, THAT IS, "A reading from the Book of...."
-				Bible reader=new Bible();
+				Bible reader=new Bible(Analyse.dayInfo);
 				What2=reader.getIntro(table.get("getReading").toString());
 			}
 			int Stars2=-1;	 		//THIS VARIABLE CONSIDERS WHAT TO DO WITH ANY POSSIBLE 2 STARS IN THE TEXT "**"
@@ -361,7 +367,7 @@ public class Service implements DocHandler
                     {
                         LifeId="98"+LifeId;
                     }
-                    Commemoration1 data=new Commemoration1("0",LifeId);
+                    Commemoration1 data=new Commemoration1("0",LifeId,Analyse.dayInfo);
                     String Info = table.get("What").toString();
                     int parsedInfo1=Info.lastIndexOf("/");
                    //System.out.println(parsedInfo[0]);
@@ -425,7 +431,7 @@ public class Service implements DocHandler
 			}
 			readIncidentals(table);
 			//System.out.println(What);
-			ReadText textGet=new ReadText();
+			ReadText textGet=new ReadText(Analyse.dayInfo.clone());
 			if(What != null)
 			{
 				What2 = textGet.readText(CommonPrayersFileName+What+".xml");
@@ -509,7 +515,7 @@ public class Service implements DocHandler
 	private String Implement(int Header,String text4, String What)
 	{
 		String text2=What;
-		ReadText textGet=new ReadText();
+		ReadText textGet=new ReadText(Analyse.dayInfo.clone());
 		
 		/* Original place of this when there the times is used as it was orignally.
 		if(Command != null)
@@ -580,12 +586,12 @@ public class Service implements DocHandler
 			}*/
 			//THIS IS THE ORIGINAL  VERSION OF TIMES. CHANGED TO A BETTER VERSION. 2009/05/18 Y.S.
 			textTimes=new String();
-			StringOp.dayInfo.put("Times",Integer.parseInt(Times));
+			Analyse.dayInfo.put("Times",Integer.parseInt(Times));
 			
 			try
 			{
 				String FileName="xml/Commands/Times.xml";
-				BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
+				BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(Analyse.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 				QDParser.parse(this, frf1);
 			}
 			catch (Exception e)

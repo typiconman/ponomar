@@ -32,21 +32,23 @@ class Languagizer extends JFrame implements DocHandler, ListSelectionListener, A
 	private Hashtable frenchTypes = new Hashtable();
 	private boolean readFile = false;
 	private int LS = 3;
+        private StringOp Analyse=new StringOp();
 	
 	private JDate today = new JDate(1, 1, 2009);
 	
 	public Languagizer ()
 	{
-		super ("Languagizer");
+
+            super ("Languagizer");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new BorderLayout());
 		
 		//WE NEED THIS HANDY STORER OF VALUES NOW.
-		StringOp.dayInfo = new Hashtable();
+		Analyse.dayInfo = new OrderedHashtable();
 		
-		StringOp.dayInfo.put("LS", LS);
-		StringOp.dayInfo.put("nday", 1);
-		StringOp.dayInfo.put("dow", 0);
+		Analyse.dayInfo.put("LS", LS);
+		Analyse.dayInfo.put("nday", 1);
+		Analyse.dayInfo.put("dow", 0);
 		
 		JPanel topPanel = new JPanel();
 		topPanel.setLayout(new GridLayout());
@@ -78,7 +80,7 @@ class Languagizer extends JFrame implements DocHandler, ListSelectionListener, A
 		topPanel.add(russianPanel);
 
 		LS = 0;
-		StringOp.dayInfo.put("LS", LS);
+		Analyse.dayInfo.put("LS", LS);
 		try
 		{
 			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));	//Unicodised it.
@@ -101,7 +103,7 @@ class Languagizer extends JFrame implements DocHandler, ListSelectionListener, A
 		topPanel.add(englishPanel);
 		
 		LS = 1;
-		StringOp.dayInfo.put("LS", LS);
+		Analyse.dayInfo.put("LS", LS);
 		try
 		{
 			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));	//Unicodised it.
@@ -153,7 +155,7 @@ class Languagizer extends JFrame implements DocHandler, ListSelectionListener, A
 		if (table.get("Cmd") != null)
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -311,7 +313,7 @@ class Languagizer extends JFrame implements DocHandler, ListSelectionListener, A
 		frenchTypes.clear();
 		
 		LS = 3;
-		StringOp.dayInfo.put("LS", LS);
+		Analyse.dayInfo.put("LS", LS);
 		int month = today.getMonth();
 		int day   = today.getDay();
 		bmlfile = "Ponomar/xml/" + (month < 10 ? "0" + Integer.toString(month) : Integer.toString(month)) + "/" + 
@@ -330,7 +332,7 @@ class Languagizer extends JFrame implements DocHandler, ListSelectionListener, A
 		russianBox.setListData(russianNames);
 				
 		LS = 0;
-		StringOp.dayInfo.put("LS", LS);
+		Analyse.dayInfo.put("LS", LS);
 		try
 		{
 			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));	//Unicodised it.
@@ -344,7 +346,7 @@ class Languagizer extends JFrame implements DocHandler, ListSelectionListener, A
 		englishBox.setListData(englishNames);
 		
 		LS = 1;
-		StringOp.dayInfo.put("LS", LS);
+		Analyse.dayInfo.put("LS", LS);
 		try
 		{
 			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));	//Unicodised it.

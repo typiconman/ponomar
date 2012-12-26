@@ -51,68 +51,36 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 	private final static String pentecostarionFileName = "xml/pentecostarion/"; // PENTECOSTARION FILE
 	private String filename;
 	private int lineNumber;
-	private LanguagePack Text=new LanguagePack();
-	private String[] PrimesNames=Text.obtainValues((String)Text.Phrases.get("None"));
-	private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
+	private LanguagePack Text;//=new LanguagePack();
+	private String[] PrimesNames;//=Text.obtainValues((String)Text.Phrases.get("None"));
+	private String[] LanguageNames;//=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 	private String LentenK;				//ANY REQUIRED KATHISMA REFERENCED USING "LENTENK = "17"" WOULD BE THE 17th KATHISMA.
 	private JFrame frames;
-	private String[] FileNames=Text.obtainValues((String)Text.Phrases.get("File"));
-	private String[] HelpNames=Text.obtainValues((String)Text.Phrases.get("Help")); 
+	private String[] FileNames;//=Text.obtainValues((String)Text.Phrases.get("File"));
+	private String[] HelpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
 	String newline = "\n";
 	private String strOut;
 	private JDate today;
 	private Helpers helper;
-	private PrimeSelector SelectorP=new PrimeSelector();
+	private PrimeSelector SelectorP;//=new PrimeSelector();
 	private PrintableTextPane output;
         private String DisplayFont =new String(); //ALLOWS A CUSTOM FONT AND SIZE TO BE SPECIFIED FOR A GIVEN BIBLE READING: REQUIRED FOR OLD CHURCH SLAVONIC AT PRESENT
 	private String DisplaySize="12";  //UNTIL A COMPLETE UNICODE FONT IS AVAILIBLE.
 	private Font DefaultFont=new Font("",Font.BOLD,12);		//CREATE THE DEFAULT FONT
 	private Font CurrentFont=DefaultFont;
+        private StringOp Analyse=new StringOp();
         //private Helpers findLanguage;
 	
 	
-	public NinthHour(int Weekday)
+	public NinthHour(JDate date, OrderedHashtable dayInfo)
 	{
-		/*helper=new Helpers();
-		StringOp.dayInfo = new Hashtable();
-		StringOp.dayInfo.put("dow", Weekday);		//DETERMINE THE DAY OF THE WEEK.
-		
-		try
-		{
-			FileReader frf = new FileReader(ServicesFileName + "TrialPrimes.xml");
-			//Primes Primes1 = new Primes();
-			QDParser.parse(this, frf);
-
-		}
-		catch (Exception Primes)
-		{
-			Primes.printStackTrace();
-			return; 			//IF THERE ARE NO FILES FOR PRIMES THEN QUIT THE PROGRAMME.
-		}
-
-		//THE TONE/WEEKDAY FILES HAVE BEEN PARSED
-		//NOW PARSE THE EASTER CYCLE FILE TO CHECK FOR ANY ISSUES ABOUT ADDITIONS (BETTER VERSION MAY BE OBTAINED LATER)
-		//FINALLY PARSE THE MENOLOGION FILE
-
-		//CREATE THE SERVICE
-		try
-		{
-			createPrimes();
-			BufferedReader in = new BufferedReader(new FileReader(FileNameOut));
-			strOut = new String();
-			String str = new String();
-			strOut="<Font Size=\"12\">This is a preliminary attempt at creating the Ninth Hour service.</Font>\n\n";
-			while ((str = in.readLine()) != null)
-        		{
-            			strOut += str;
-        		}                        
-		}
-		catch (IOException j)
-		{
-		}*/
-	}	
-	public NinthHour(JDate date)
-	{
+            Analyse.dayInfo=dayInfo;
+            Text=new LanguagePack(dayInfo);
+            PrimesNames=Text.obtainValues((String)Text.Phrases.get("None"));
+	LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
+        FileNames=Text.obtainValues((String)Text.Phrases.get("File"));
+	HelpNames=Text.obtainValues((String)Text.Phrases.get("Help"));
+        SelectorP=new PrimeSelector(dayInfo);
 		/*THIS IS THE PLAN FOR CREATING THE SERVICE
 		1) DETERMINE ON THE BASIS OF THE PENTECOSTARION (EASTER CYCLE) THE APPROPRIATE TONE AND ANY EASTER RELATED CHANGES TO THE SERVICE
 		2) LOAD THE INFORMATION FOR THE TONE, WEEKDAY, AND ANY CHANGES
@@ -134,7 +102,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 		
 		//CREATING THE SERVICE	
 		today=date;
-		helper=new Helpers();
+		helper=new Helpers(Analyse.dayInfo);
 		try
 		{
 			String strOut=createPrimes();
@@ -180,8 +148,8 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 		output.setCaretPosition(0);
                 JScrollPane scrollPane = new JScrollPane(output);
 		JMenuBar MenuBar=new JMenuBar();
-		MenuFiles demo=new MenuFiles();
-		PrimeSelector trial=new PrimeSelector();
+		MenuFiles demo=new MenuFiles(Analyse.dayInfo);
+		PrimeSelector trial=new PrimeSelector(Analyse.dayInfo);
 		MenuBar.add(demo.createFileMenu(this));
 		MenuBar.add(trial.createPrimeMenu());
 		MenuBar.add(demo.createHelpMenu(this));
@@ -194,8 +162,8 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 		frames.setSize(800,700);
 		frames.setVisible(true);
 
-                Helpers orient=new Helpers();
-                orient.applyOrientation(frames,(ComponentOrientation)StringOp.dayInfo.get("Orient"));
+                Helpers orient=new Helpers(Analyse.dayInfo);
+                orient.applyOrientation(frames,(ComponentOrientation)Analyse.dayInfo.get("Orient"));
                 
 
 		//scrollPane.top();
@@ -203,13 +171,13 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 	private String createPrimes() throws IOException
 	{
 		//OBTAIN THE DEFAULTS FOR THE SERVICE (WHAT WAS LAST USED!)
-		StringOp.dayInfo.put("PS",SelectorP.getWhoValue());
+		Analyse.dayInfo.put("PS",SelectorP.getWhoValue());
 		int TypeP=SelectorP.getTypeValue();
-		Service ReadPrime=new Service();
+		Service ReadPrime=new Service(Analyse.dayInfo);
 		//FIRST READ THE TONE FILES:
-				int Weekday=Integer.parseInt(StringOp.dayInfo.get("dow").toString());
+				int Weekday=Integer.parseInt(Analyse.dayInfo.get("dow").toString());
 				//System.out.println(Weekday);
-				int Tone=Integer.parseInt(StringOp.dayInfo.get("Tone").toString());
+				int Tone=Integer.parseInt(Analyse.dayInfo.get("Tone").toString());
 				if(Tone==8)
 				{
 					Tone=0;
@@ -251,7 +219,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 
 				try
 				{
-					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
+					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 					QDParser.parse(this, frf);
 
 				}
@@ -264,7 +232,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 		//READ THE PENTECOSTARION!
 		
 		//Integer.parseInt(dayInfo.get(expression).toString())
-		int nday=Integer.parseInt(StringOp.dayInfo.get("nday").toString());
+		int nday=Integer.parseInt(Analyse.dayInfo.get("nday").toString());
 	
 		if (nday >= -70 && nday < 0)
 		{
@@ -275,7 +243,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 		{
 			// WE HAVE NOT YET REACHED THE LENTEN TRIODION
 			filename = pentecostarionFileName;
-			lineNumber = Integer.parseInt(StringOp.dayInfo.get("ndayP").toString()) + 1;
+			lineNumber = Integer.parseInt(Analyse.dayInfo.get("ndayP").toString()) + 1;
 		}
 		else
 		{
@@ -290,7 +258,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 		
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.dayInfo.get("LS").toString(),filename)), "UTF8"));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -300,7 +268,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 		
 		//CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
 		//POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
-		ServiceInfo ServicePrimes=new ServiceInfo("NONE");
+		ServiceInfo ServicePrimes=new ServiceInfo("NONE",Analyse.dayInfo);
 		OrderedHashtable PrimesTrial = ServicePrimes.ServiceRules();
 		
 		Type=PrimesTrial.get("Type").toString();
@@ -323,18 +291,18 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 		//DETERMINE THE ORDERING OF THE TROPARIA AND KONTAKIA IF THERE ARE 2 OR MORE
 				
 		String strOut= new String();
-		StringOp.dayInfo.put("PFlag1",TypeP);
-		StringOp.dayInfo.put("PFlag2",0);
+		Analyse.dayInfo.put("PFlag1",TypeP);
+		Analyse.dayInfo.put("PFlag2",0);
 		//NOTE PFlag2 == 3 for Holy Week Services!
 		if(Type.equals("Lenten"))
 	       {
-	       		StringOp.dayInfo.put("PFlag2",1);
+	       		Analyse.dayInfo.put("PFlag2",1);
 	       		
 	       		if(LentenK != null)
 	       		{
-	       			StringOp.dayInfo.put("PFlag2",2);
+	       			Analyse.dayInfo.put("PFlag2",2);
 	       			//CREATE THE KATHISMA PART
-	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKath9.xml"),"UTF8"));
+	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKath9.xml"),"UTF8"));
 	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma"+LentenK+"\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
@@ -349,18 +317,18 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 	    		{
 	    		    	if(Troparion2 != null)
 	    		    	{
-	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop91.xml"),"UTF8"));
+	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop91.xml"),"UTF8"));
 	    				String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    				out.write(Data);
 	    				out.close();
 	    				
-	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop92.xml"),"UTF8"));
+	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop92.xml"),"UTF8"));
 	    				Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion2+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    				out.write(Data);
 	    				out.close();
 					
 	    		    	}
-    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop92.xml"),"UTF8"));
+    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop92.xml"),"UTF8"));
 	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
@@ -372,7 +340,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 	       	//APROPRIATE KONTAKION MUST STILL BE CREATED!
 	       	if (Kontakion1 != null)
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+StringOp.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKont9.xml"),"UTF8"));
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKont9.xml"),"UTF8"));
 	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+Kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    		out.write(Data);
 	    		out.close();
@@ -404,7 +372,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				
 				return;
@@ -483,7 +451,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 	public static void main(String[] argz)
 	{
 		
-		new Primes(3);	//CREATE THE SERVICE FOR WEDNESDAY FOR TONE 1.
+		//new Primes(3);	//CREATE THE SERVICE FOR WEDNESDAY FOR TONE 1.
 	}
 	
 	public String readText(String filename)
@@ -491,7 +459,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 		try
 		{
        			 text= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.dayInfo.get("LS").toString(),filename)), "UTF8"));
        			 QDParser.parse(this,fr);
        			 if(text.length()==0)
        			 {
@@ -516,8 +484,8 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
         String name = source.getText();
        if (name.equals(HelpNames[2]))
         {
-        	 Helpers orient=new Helpers();
-                orient.applyOrientation(new About(),(ComponentOrientation)StringOp.dayInfo.get("Orient"));
+        	 Helpers orient=new Helpers(Analyse.dayInfo);
+                orient.applyOrientation(new About(Analyse.dayInfo),(ComponentOrientation)Analyse.dayInfo.get("Orient"));
         }
          if (name.equals(HelpNames[0]))
         {

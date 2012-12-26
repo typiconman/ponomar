@@ -37,7 +37,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="NameEnglish" Value="Church Slavonic"/>
 <PHRASE Key="BibleV" Value="cu/bible/elis"/>
 <PHRASE Key="Authors" Value="А҆леѯа́ндръ А҆ндреевъ/,Ю҆рѣ́й Ша́рдтъ"/>
-<PHRASE Key="Year" Value=".҂в҃ѕ. до .҂в҃і. лѣ́тъ"/>
+<PHRASE Key="Year" Value=".҂в҃ѕ. до .҂ві҃г. лѣ́тъ"/>
 <PHRASE Key="And" Value=" и҆ "/>
 <PHRASE Key="Comma" Value=", "/>
 <PHRASE Key="Copyright" Value="Все права защищены ^YY ^AA"/>
@@ -119,4 +119,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="AM" Value=" (^YYAM лѣ́та свѣ́та)" Note="This displays the anno mundi year in brackets in the calendar, only for the Julian date"/>
 <PHRASE Key="AMC" Value="1" Note="This determines whether or not the Anno Mundi value will be displayed. 1 = Yes, 0 = No."/>
 <PHRASE Key="AML" Value="A" Note="This determines whether the AM value comes before (B) the rest of the date or after (A) it"/>
+<PHRASE Key="NoIcon" Value="Ponomar/languages/cu/icons/4447/0.jpg" Note="This is a relative path to the default icon desired for the case where there is no icons available."/>
+<PHRASE Key="Options2" Value="Понома́рь: Defaults/,Географическаѧ и҆҆нформацїѧ/,Широта̀: /,°, отрицательнаѧ къ ю҆́гꙋ/,Долгота̀: /,°, отрицательнаѧ на за́падѣ/,Часовой по́ѧсъ: /, г по Гринвичꙋ/,Гражданская и҆҆нформацїѧ/,Отображений календарь:/,ю҆лїанский/,григорїанский/,Да̀/,Нѣ̀"/>
+<PHRASE Key="OptionsW" Value="700" Note="Width of the Options window"/>
+<PHRASE Key="OptionsH" Value="300" Note="Height of the Options window"/>
+<PHRASE Key="OptionMenu" Value="Defaults…"/>
 </LANGUAGEPACKS>

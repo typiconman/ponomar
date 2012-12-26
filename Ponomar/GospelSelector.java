@@ -41,17 +41,23 @@ class GospelSelector extends JPanel implements ActionListener, PropertyChangeLis
 	private static String LastLocation;			//AVOID REPEATING IF THERE IS NO CHANGE IN THE SELECTION
 	private JMenu submenu;
 	private JRadioButtonMenuItem rbMenu1Item, rbMenu2Item;
-	private LanguagePack Text=new LanguagePack();
-	private String[] SelectorNames=Text.obtainValues((String)Text.Phrases.get("GospelSelection"));
-	
-	public GospelSelector()
+	private LanguagePack Text;//=new LanguagePack();
+	private String[] SelectorNames;//=Text.obtainValues((String)Text.Phrases.get("GospelSelection"));
+	private StringOp Analyse=new StringOp();
+	public GospelSelector(OrderedHashtable dayInfo)
 	{
-	
+	Analyse.dayInfo=dayInfo;
+        Text=new LanguagePack(dayInfo);
+         SelectorNames=Text.obtainValues((String)Text.Phrases.get("GospelSelection"));
+                Font CurrentFont=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
+           
 	}
 	public JPanel createGospelSelector()
 	{
-			
-                Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
+            
+           
+            SelectorNames=Text.obtainValues((String)Text.Phrases.get("GospelSelection"));
+                Font CurrentFont=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
             //DETERMINE THE DEFAULTS
 		String Default = (String) ConfigurationFiles.Defaults.get("GospelSelector");
 		//Create the radio buttons.

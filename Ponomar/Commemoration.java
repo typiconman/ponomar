@@ -50,18 +50,22 @@ public class Commemoration implements DocHandler
         private OrderedHashtable ServiceInfo;
         private String Location1;
         private boolean readService=false;
-        private LanguagePack Text=new LanguagePack();
-	private String[] CommNames=Text.obtainValues((String)Text.Phrases.get("Commemoration"));
+        private LanguagePack Text;//=new LanguagePack();
+	private String[] CommNames;//=Text.obtainValues((String)Text.Phrases.get("Commemoration"));
         private Helpers helper;
+        private StringOp Analyse=new StringOp();
 	
-	protected Commemoration(String FileName)
+	protected Commemoration(String FileName, OrderedHashtable dayInfo)
 	{
-		Information=new OrderedHashtable();
+            Analyse.dayInfo=dayInfo;
+            Information=new OrderedHashtable();
 		readings=new OrderedHashtable();
                 RoyalHours=new OrderedHashtable();
                 Information.put("ID",FileName);
-                helper=new Helpers();
+                helper=new Helpers(Analyse.dayInfo);
                 readCommemoration(Location+FileName);
+                Text=new LanguagePack(Analyse.dayInfo);
+	 CommNames=Text.obtainValues((String)Text.Phrases.get("Commemoration"));
 
 	}
         protected Commemoration(String FileName,String Type)
@@ -75,7 +79,7 @@ public class Commemoration implements DocHandler
 		readings=new OrderedHashtable();
                 RoyalHours=new OrderedHashtable();
                 Information.put("ID",FileName);
-                helper=new Helpers();
+                helper=new Helpers(Analyse.dayInfo);
                 String FilePath = new String();
                 if (Type.equals("M")){
                     FilePath=Location+FileName;
@@ -92,7 +96,7 @@ public class Commemoration implements DocHandler
 	{
 		Information=new OrderedHashtable();
 		readings=new OrderedHashtable();
-                helper=new Helpers();
+                helper=new Helpers(Analyse.dayInfo);
 	}
 	protected Commemoration(String Name, OrderedHashtable grammar, OrderedHashtable readings)
 	{
@@ -104,7 +108,7 @@ public class Commemoration implements DocHandler
 		Information.put("Grammar",grammar);
 		Information.put("Scripture",readings);
 		Information.put("ID","-1");
-                helper=new Helpers();
+                helper=new Helpers(Analyse.dayInfo);
 	}
 	
 	
@@ -113,7 +117,7 @@ public class Commemoration implements DocHandler
 		
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName+".xml")), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.dayInfo.get("LS").toString(),FileName+".xml")), "UTF8"));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -143,7 +147,7 @@ public class Commemoration implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 
                             return;
@@ -416,9 +420,9 @@ public class Commemoration implements DocHandler
 
 	public static void main(String[] argz)
 	{
-		StringOp.dayInfo=new OrderedHashtable();
-		StringOp.dayInfo.put("LS","2");
-                StringOp.dayInfo.put("dow","1");
+		OrderedHashtable dayInfo=new OrderedHashtable();
+		dayInfo.put("LS","2");
+                dayInfo.put("dow","1");
 		//Commemoration Paramony = new Commemoration("P_3174");    //Paramony of Christmas
 		System.out.println("THIS IS RUNNING ON DEBUG MODE, USING THE FILE FOR the Paramony of Christmas");
                 //OrderedHashtable stuff=Paramony.getRH("Idiomel","11");
@@ -426,7 +430,7 @@ public class Commemoration implements DocHandler
                 //System.out.println(Paramony .ServiceInfo());
                 //System.out.println(Paramony.getRH("IDIOMEL","11"));
 		//System.out.println(Paramony);
-                Commemoration Paramony=new Commemoration("01"); //Forefeast of Christmas
+                Commemoration Paramony=new Commemoration("01",dayInfo); //Forefeast of Christmas
                 System.out.println(Paramony.getService("/MATINS/KONTAKION","1"));
 	}
 	

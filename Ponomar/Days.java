@@ -41,6 +41,7 @@ public class Days implements DocHandler
 	private String[] Rank;
 	private String[] Icons;
 	private int Number;
+        private StringOp Analyse=new StringOp();
 	//private OrderedHashtable readings;
 	//private OrderedHashtable grammar;
 	//private OrderedHashtable variable;
@@ -49,13 +50,15 @@ public class Days implements DocHandler
 	protected Days()
 	{
 		//THIS OPENS A NEW INSTANCE OF THE CLASS AND RESETS EVERYTHING TO DEFAULT VALUES
+
 		reset();			
 	}
-	protected Days(String FileName)
+	protected Days(String FileName,OrderedHashtable dayInfo)
 	{
 		//THIS READS A GIVEN FILE AND RESETS EVERYTHING
 		reset();
 		//THE FILENAME MUST CONTAIN THE APPROPRIATE FOLDER AND EXTENSION (.xml)
+                Analyse.dayInfo=dayInfo;
 		readDay(FileName);		
 	}
 	
@@ -95,7 +98,7 @@ public class Days implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -121,7 +124,7 @@ public class Days implements DocHandler
 				//THERE IS ONLY A LIST OF POSSIBLE ID'S THAT NEED TO BE READ
 				for(int i=0;i<Id.length;i++)
 				{
-					Commemoration Saint=new Commemoration(Id[i]);
+					Commemoration Saint=new Commemoration(Id[i],Analyse.dayInfo);
 					CommemorationList.add(Saint);
 				}
 			}
@@ -139,7 +142,7 @@ public class Days implements DocHandler
 					//AN ID NUMBER IS SPECIFIED, SKIP THE NAME AND READ THE ACTUAL ID FILE
 					//Commemoration Saint=new Commemoration();
 					//CommemorationList.add(Saint.Commemoration(Id));
-					Commemoration Saint=new Commemoration(Id[0]);
+					Commemoration Saint=new Commemoration(Id[0],Analyse.dayInfo);
 					CommemorationList.add(Saint);
 				}
 			}

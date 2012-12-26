@@ -35,22 +35,23 @@ public class UsualBeginning
 	//TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
 	//DURING THE COURSE OF A SINGLE WEEK.
 	public static String UsualBeginning1;
+        private static StringOp Analyse=new StringOp();
 	public UsualBeginning(int Weekday)
 	{
-		StringOp.dayInfo = new Hashtable();
-		StringOp.dayInfo.put("dow", Weekday);		//DETERMINE THE DAY OF THE WEEK.
-		StringOp.dayInfo.put("PS",1);
-		StringOp.dayInfo.put("nday",250);
-		StringOp.dayInfo.put("LS",0);
+		//Analyse.dayInfo = new OrderedHashtable();
+		Analyse.dayInfo.put("dow", Weekday);		//DETERMINE THE DAY OF THE WEEK.
+		Analyse.dayInfo.put("PS",1);
+		Analyse.dayInfo.put("nday",250);
+		Analyse.dayInfo.put("LS",0);
 		final String UsualFileName = "Ponomar/xml/Services/UsualBeginning/"; // THE LOCATION FOR ANY EXTRA INFORMATION
-		Service test2=new Service();
+		Service test2=new Service(Analyse.dayInfo.clone());
 		 test2.readService(UsualFileName+"UsualBeginning.xml");
 		UsualBeginning1=test2.Service1;
 	}	
-	public UsualBeginning()
+	public UsualBeginning(OrderedHashtable dayInfo)
 	{
 		final String UsualFileName = "Ponomar/xml/Services/UsualBeginning/";
-		Service test2=new Service();
+		Service test2=new Service(dayInfo);
 		UsualBeginning1=test2.readService(UsualFileName+"UsualBeginning.xml");
 		 	
 		 	

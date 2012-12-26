@@ -43,14 +43,17 @@ class PrimeSelector extends JPanel implements ActionListener, PropertyChangeList
 	private static String LastLocation=Default[0];			//AVOID REPEATING IF THERE IS NO CHANGE IN THE SELECTION
 	private JMenu submenu;
 	private JRadioButtonMenuItem rbMenu1Item, rbMenu2Item, rbMenu4Item, rbMenu5Item, rbMenu6Item;
-	private LanguagePack Text=new LanguagePack();
-	private String[] SelectorNames=Text.obtainValues((String)Text.Phrases.get("PrimeSelection"));
+	private LanguagePack Text;//=new LanguagePack();
+	private String[] SelectorNames;//=Text.obtainValues((String)Text.Phrases.get("PrimeSelection"));
 	private static String LastLocation2=Default[1];
 	private static String ReadingLocation2=Default[1];
+        private StringOp Analyse=new StringOp();
 	
-	public PrimeSelector()
+	public PrimeSelector(OrderedHashtable dayInfo)
 	{
-	
+            Analyse.dayInfo=dayInfo;
+            Text=new LanguagePack(dayInfo);
+            SelectorNames=Text.obtainValues((String)Text.Phrases.get("PrimeSelection"));
 	}
 		
 	public JMenu createPrimeMenu()

@@ -39,6 +39,11 @@ final class StringOp implements Cloneable
 	//private static LanguagePack Phrases = new LanguagePack();
 	//private static String [] Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
 
+   protected OrderedHashtable  dayInfo;
+   public StringOp()
+   {
+       dayInfo=new OrderedHashtable();
+   }
 // JOINS THE MEMBERS OF AN ARRAY, ANALAGOUS TO PERL'S join FUNCTION
 protected static String join(String[] pieces)
 {
@@ -71,7 +76,7 @@ protected static String capitalize(String str)
 
 // STORES VARIABLE VALUES FOR eval(String) AS String variable -> int value
 // Hashtable MUST BE INITIALIZED AND VALUES MUST BE ENTERED BEFORE CALLING eval(String) [in a constructor, probably]
-protected static Hashtable dayInfo;
+
 
 /****************************************************************************************
 	eval 2.0 :: AN ALL PURPOSE EXPRESSION PARSER THAT FULLY OBEYS CORRECT ORDER OF OPERATIONS
@@ -93,7 +98,7 @@ protected static Hashtable dayInfo;
 		mathematical operations, unary and binary logic operators and correct OOO.
 ******************************************************************************/
 
-protected static double eval(String expression) throws IllegalArgumentException
+protected double eval(String expression) throws IllegalArgumentException
 {
 	double result = Double.NaN;
 	int i = -1;
@@ -405,7 +410,7 @@ protected static double eval(String expression) throws IllegalArgumentException
 	return result;
 }
 
-protected static boolean evalbool(String expression)
+protected boolean evalbool(String expression)
 {
 	// THIS FUNCTION SIMPLY CONVERTS A DOUBLE INTO A BOOLEAN EXPRESSION, WHERE 0 = FALSE
 	// EVERYTHING ELSE EQUALS TRUE! THIS FUNCTION IS REQUIRED FOR &&, ||, and ! OPERATORS
@@ -437,19 +442,39 @@ private static double bool2double(boolean expression)
 }
 public StringOp clone(){
     StringOp aped=new StringOp();
-    aped=this;
+    //aped=this;
     //To implement cloning of the table here is required.
+    OrderedHashtable testing=this.dayInfo.clone();
+    aped.dayInfo=testing;//testing;
     return aped;
 }
 // CAN BE USED TO TEST eval(String) AGAINST OUTPUT FROM KNOWN SOURCE, E.G. MATLAB
 public static void main(String[] argz)
 {
 	//String arg = join(argz);
-	dayInfo = new Hashtable();
+
+	/*dayInfo = new OrderedHashtable();
         dayInfo.put("nday", 3);
 	dayInfo.put("wday", 6);
-	dayInfo.put("Easter",81);
-	
+	dayInfo.put("ndayP",81);
+*/
+        /*OrderedHashtable tested=dayInfo.clone();
+        tested.put("ndayF","-345");
+        System.out.println("In dayInfo we have "+dayInfo);
+        System.out.println("In tested, we have " +tested);
+	*/
+        StringOp testing = new StringOp();
+        testing.dayInfo.put("nday", 3);
+	testing.dayInfo.put("wday", 6);
+	testing.dayInfo.put("ndayP",81);
+
+        StringOp testin2=new StringOp();
+        testin2=testing.clone();
+        testin2.dayInfo.put("testing","-123");
+
+        System.out.println("In testing.dayInfo we have "+testing.dayInfo);
+        System.out.println("In testin2.dayInfo, we have " +testin2.dayInfo);
+
 	String arg = 
 	//"(Easter + 5) < (100 +5";								//should fail with an error message stating no closing brackets.
 	//"Today + 5 > 100";						 			//should fail and return an error message with non-existant variable
@@ -460,7 +485,7 @@ public static void main(String[] argz)
 	//"(Easter + 48) * (Easter - 48) > 45"; 						//true		|
 	//"(Easter) < 48"; 									//false		|
 	//"(Easter - 49) % 8 < 1 && !(Easter + 45 > wday == 6)";  				// TRUE		|
-	//"!((nday > 4 && wday == 6) || (wday  == 5 || wday == 6))";				//false 	|
+	"!((nday > 4 && wday == 6) || (wday  == 5 || wday == 6))";				//false 	|
 	//"((nday > 4 && wday == 6) || (wday  == 5 || wday == 6))";				//true		|
 	 // "Easter - 49  < 48";								//true		|
 	// "(Easter - 49) > 45";								//false		|
@@ -475,7 +500,7 @@ public static void main(String[] argz)
 	//"!true";										// false	|
 	//"!false";										// true		|
 	//"true || false";									// true		|
-	"true && false || false && true";							// false	|
+	//"true && false || false && true";							// false	|
 	// "60 < Easter < 80";									// true!!!!!!  \|/
 	/**													v
 		80 < Easter < 100 is "true" since the function first evaluates 80 < Easter to be 1, which is < 100.
@@ -487,8 +512,10 @@ public static void main(String[] argz)
 
 		A. ANDREEV, 8/1/2007 N.S.
 	*****/
-	System.out.println("Evaluating " + arg);
-	System.out.println(evalbool(arg));
+	//System.out.println("Evaluating " + arg);
+	//System.out.println(evalbool(arg));
+
+        
 }
 
 }

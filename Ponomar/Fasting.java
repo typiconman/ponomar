@@ -32,16 +32,22 @@ public class Fasting implements DocHandler
 	private static boolean readLanguage=false;
 	private static OrderedHashtable Information;
 	
-	private LanguagePack Phrases=new LanguagePack();
+	private LanguagePack Phrases;
 	//GET THE APPROPRIATE FASTING LINES
 	//private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 	private static String Fast;
 	private static Helpers helper;
+        private static StringOp Analyse=new StringOp();
+        public Fasting(OrderedHashtable dayInfo){
+            Analyse.dayInfo=dayInfo;
+            Phrases=new LanguagePack(dayInfo);
+        }
 	public String FastRules() //throws IOException
 	{
-		Fast=new String();
-		helper=new Helpers();
+            
+            Fast=new String();
+		helper=new Helpers(Analyse.dayInfo);
 		Information=new OrderedHashtable();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
@@ -97,7 +103,7 @@ public class Fasting implements DocHandler
 		//System.out.print("Today's rank is "+StringOp.dayInfo.get("dRank")+"\n");
 		try
 		{
-			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
+			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 			QDParser.parse(this, frf1);
 		}
 		catch (Exception e)
@@ -257,7 +263,7 @@ public class Fasting implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}

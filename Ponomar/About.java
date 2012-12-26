@@ -27,13 +27,18 @@ yuri (dot) shardt (at) gmail.com
 **********************************************************************/
 class About extends JFrame
 {
-	private LanguagePack Ponomar=new LanguagePack();
-	private String value=(String)Ponomar.Phrases.get("0");
-	protected About()
+	private LanguagePack Ponomar;//=new LanguagePack();
+	private String value;//=(String)Ponomar.Phrases.get("0");
+        private StringOp Analyse=new StringOp();
+	protected About(OrderedHashtable dayInfo)
 	{
+            Analyse.dayInfo=dayInfo;
+            Ponomar=new LanguagePack(dayInfo);
+            
+	 value=(String)Ponomar.Phrases.get("0");
 		//ALLOWS A DIFFERENT TITLE TO BE SPECIFIED BY THE USER (CYRILLIC FOR THE CYRILLIC VERSIONS)
 		setTitle(value);
-		LanguagePack Text=new LanguagePack();
+		LanguagePack Text=new LanguagePack(dayInfo);
 		String [] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
 		/*String[] Authors=Text.obtainValues((String) Text.Phrases.get("Authors"));
                 String Year=Text.Phrases.get("Year").toString();
@@ -51,14 +56,14 @@ class About extends JFrame
                 {
                     AuthorList=AuthorList+And+Authors[Authors.length-1];
                 }*/
-                Helpers About1=new Helpers();
+                Helpers About1=new Helpers(Analyse.dayInfo);
 		JPanel contentPane=new JPanel(new BorderLayout());
 		contentPane.setOpaque(true);
 		JTextPane output=new JTextPane();
 		output.setEditable(false);
 		output.setContentType("text/html");
-                String DisplayFont=StringOp.dayInfo.get("FontFaceM").toString();
-                String DisplaySize=StringOp.dayInfo.get("FontSizeM").toString();
+                String DisplayFont= Analyse.dayInfo.get("FontFaceM").toString();
+                String DisplaySize= Analyse.dayInfo.get("FontSizeM").toString();
 		output.setText("<body style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\"><B><h1 style=\"text-align: center;\">"+(String)Ponomar.Phrases.get("0")+"</h1></B><p style=\"text-align: center;\">"+AboutNames[0]+" "+(String) ConfigurationFiles.Defaults.get("Version")+"</p><p>"+AboutNames[1]+"</p><p>"+AboutNames[2]+"</p><p>"+About1.getCopyright()+"<BR>" + AboutNames[5] + "<BR>");
 		output.setCaretPosition(0);
 		JScrollPane scrollPane = new JScrollPane(output);
