@@ -31,23 +31,25 @@ class LanguagePack implements DocHandler
 {
 	OrderedHashtable Phrases;		//STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT INTERFACE LANGUAGE.
 	private boolean readPhrases=false;		//DETERMINE WHETHER TO READ OR NOT TO READ THE GIVEN PHRASES	(THIS MUST BE ADDED TO ALL THE READERS).
-	
-	public LanguagePack()
+	private StringOp Analyse=new StringOp();
+	public LanguagePack(OrderedHashtable dayInfo)
 	{
 		Phrases =new OrderedHashtable();
+                Analyse.dayInfo=dayInfo;
 		ReadPhrases();
 		
 	}
-        public LanguagePack(String path)
+        public LanguagePack(String path, OrderedHashtable dayInfo)
 	{
-		Phrases =new OrderedHashtable();
+	Analyse.dayInfo=dayInfo;
+            Phrases =new OrderedHashtable();
 		ReadPhrases(path);
 
 	}
 	private void ReadPhrases()
 	{
-            Helpers getFile=new Helpers();
-            ReadPhrases(getFile.langFileFind(StringOp.dayInfo.get("LS").toString(),"xml/Commands/LanguagePacks.xml"));
+            Helpers getFile=new Helpers(Analyse.dayInfo);
+            ReadPhrases(getFile.langFileFind(Analyse.dayInfo.get("LS").toString(),"xml/Commands/LanguagePacks.xml"));
         }
         private void ReadPhrases(String langPath)
 	{
@@ -94,7 +96,7 @@ class LanguagePack implements DocHandler
 		if (table.get("Cmd") != null)
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}			

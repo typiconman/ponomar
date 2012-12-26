@@ -41,10 +41,10 @@ public class Matins implements DocHandler {
     private static OrderedHashtable FloaterS;
     private static OrderedHashtable Information;		//CONTAINS COMMANDS ABOUT HOW TO CARRY OUT THE ORDERING OF THE READINGS
     private static String Glocation;
-    private static LanguagePack Phrases = new LanguagePack();
-    private static String[] TransferredDays = Phrases.obtainValues((String) Phrases.Phrases.get("DayReading"));
-    private static String[] Error = Phrases.obtainValues((String) Phrases.Phrases.get("Errors"));
-    private static Helpers findLanguage = new Helpers();
+    private static LanguagePack Phrases ;//= new LanguagePack();
+    private static String[] TransferredDays;// = Phrases.obtainValues((String) Phrases.Phrases.get("DayReading"));
+    private static String[] Error;// = Phrases.obtainValues((String) Phrases.Phrases.get("Errors"));
+    private static Helpers findLanguage;// = new Helpers();
     private static Vector dailyV = new Vector();
     private static Vector dailyR = new Vector();
     private static Vector dailyT = new Vector();
@@ -61,7 +61,12 @@ public class Matins implements DocHandler {
     private static OrderedHashtable yesterdayRead = new OrderedHashtable();
     private static StringOp Information3  = new StringOp();
 
-    public Matins() {
+    public Matins(OrderedHashtable dayInfo) {
+        Information3.dayInfo=dayInfo;
+        Phrases = new LanguagePack(dayInfo);
+        TransferredDays = Phrases.obtainValues((String) Phrases.Phrases.get("DayReading"));
+        Error = Phrases.obtainValues((String) Phrases.Phrases.get("Errors"));
+        findLanguage=new Helpers(Information3.dayInfo);
     }
 
 //THESE ARE THE SAME FUNCTION AS IN MAIN, BUT TRIMMED FOR THE CURRENT NEEDS
@@ -78,7 +83,7 @@ public class Matins implements DocHandler {
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (StringOp.evalbool(table.get("Cmd").toString()) == false) {
+            if (Information3.evalbool(table.get("Cmd").toString()) == false) {
                 return;
             }
         }
@@ -120,10 +125,10 @@ public class Matins implements DocHandler {
         System.out.println("Testing the new StringOp formulation is " + Information3.evalbool("doy == 12"));*/
 
         Information = new OrderedHashtable();
-        int doy = Integer.parseInt(StringOp.dayInfo.get("doy").toString());
-        int dow = Integer.parseInt(StringOp.dayInfo.get("dow").toString());
-        int nday = Integer.parseInt(StringOp.dayInfo.get("nday").toString());
-        int dRank=Integer.parseInt(StringOp.dayInfo.get("dRank").toString());
+        int doy = Integer.parseInt(Information3.dayInfo.get("doy").toString());
+        int dow = Integer.parseInt(Information3.dayInfo.get("dow").toString());
+        int nday = Integer.parseInt(Information3.dayInfo.get("nday").toString());
+        int dRank=Integer.parseInt(Information3.dayInfo.get("dRank").toString());
 
 
         //DETERMINE THE GOVERNING PARAMETERS FOR COMPILING THE READINGS
@@ -181,7 +186,7 @@ public class Matins implements DocHandler {
 
         filename += lineNumber >= 10 ? lineNumber + "" : "0" + lineNumber + ""; // CLEANED UP
         // READ THE PENTECOSTARION / TRIODION INFORMATION
-        Day checkingP = new Day(filename,Information3);
+        Day checkingP = new Day(filename,Information3.dayInfo);
 
 
         //ADDED 2008/05/19 n.s. Y.S.
@@ -198,7 +203,7 @@ public class Matins implements DocHandler {
         filename += d < 10 ? "/0" + d : "/" + d; // CLEANED UP
         filename += "";
 
-        Day checkingM = new Day(filename,Information3);
+        Day checkingM = new Day(filename,Information3.dayInfo);
         Information3.dayInfo.put("dRank",Math.max(checkingP.getDayRank(), checkingM.getDayRank()));
 
         OrderedHashtable[] PaschalReadings = checkingP.getReadings();
@@ -324,13 +329,13 @@ public class Matins implements DocHandler {
         }
         if (b.length() > 0) {
             if (output.length() > 0) {
-                output += StringOp.dayInfo.get("ReadSep") + " ";
+                output += Information3.dayInfo.get("ReadSep") + " ";
             }
             output += b;
         }
         if (c.length() > 0) {
             if (output.length() > 0) {
-                output += StringOp.dayInfo.get("ReadSep") + " ";
+                output += Information3.dayInfo.get("ReadSep") + " ";
             }
             output += c;
 
@@ -343,7 +348,7 @@ public class Matins implements DocHandler {
     public String format(Vector vectV, Vector vectR, Vector vectT) {
         String output = "";
         
-        Bible ShortForm = new Bible();
+        Bible ShortForm = new Bible(Information3.dayInfo);
         try {
             Enumeration e3 = vectV.elements();
             for (int k = 0; k < vectV.size(); k++) {
@@ -360,7 +365,7 @@ public class Matins implements DocHandler {
                 }
 
                 if (k < vectV.size() - 1) {
-                    output += StringOp.dayInfo.get("ReadSep");		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
+                    output += Information3.dayInfo.get("ReadSep");		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
                 }
             }
         } catch (Exception a) {
@@ -408,7 +413,7 @@ public class Matins implements DocHandler {
 
         public classifyReadings(OrderedHashtable readingsInA) {
             StringOp Testing = new StringOp();
-            ParameterValues.dayInfo=StringOp.dayInfo;
+            ParameterValues.dayInfo=Information3.dayInfo;
             classify(readingsInA);
         }
 

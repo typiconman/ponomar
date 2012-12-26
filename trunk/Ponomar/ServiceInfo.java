@@ -33,18 +33,20 @@ public class ServiceInfo implements DocHandler
 	private static boolean readLanguage=false;
 	private static OrderedHashtable Information;
 	
-	private LanguagePack Phrases=new LanguagePack();
+	private LanguagePack Phrases;//=new LanguagePack();
 	//GET THE APPROPRIATE FASTING LINES
 	//private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 	private static OrderedHashtable Service;
 	private String Type;
         private Helpers findLanguage;
-	
-	public ServiceInfo(String Info)
+	private StringOp Analyse=new StringOp();
+	public ServiceInfo(String Info, OrderedHashtable dayInfo)
 	{
 		Type = Info;
-                findLanguage=new Helpers();
+                findLanguage=new Helpers(Analyse.dayInfo);
+                Analyse.dayInfo=dayInfo;
+                Phrases=new LanguagePack(dayInfo);
 	}
 	
 	public OrderedHashtable ServiceRules() //throws IOException
@@ -105,7 +107,7 @@ public class ServiceInfo implements DocHandler
 		//System.out.print("Today's rank is "+StringOp.dayInfo.get("dRank")+"\n");
 		try
 		{
-			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),FileName)), "UTF8"));
+			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(Analyse.dayInfo.get("LS").toString(),FileName)), "UTF8"));
 			QDParser.parse(this, frf1);
 		}
 		catch (Exception e)
@@ -137,7 +139,7 @@ public class ServiceInfo implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}

@@ -45,10 +45,10 @@ public class DivineLiturgy1 implements DocHandler {
     private static OrderedHashtable FloaterS;
     private static OrderedHashtable Information;		//CONTAINS COMMANDS ABOUT HOW TO CARRY OUT THE ORDERING OF THE READINGS
     private static String Glocation;
-    private static LanguagePack Phrases = new LanguagePack();
-    private static String[] TransferredDays = Phrases.obtainValues((String) Phrases.Phrases.get("DayReading"));
-    private static String[] Error = Phrases.obtainValues((String) Phrases.Phrases.get("Errors"));
-    private static Helpers findLanguage = new Helpers();
+    private static LanguagePack Phrases;// = new LanguagePack();
+    private static String[] TransferredDays;// = Phrases.obtainValues((String) Phrases.Phrases.get("DayReading"));
+    private static String[] Error;// = Phrases.obtainValues((String) Phrases.Phrases.get("Errors"));
+    private static Helpers findLanguage;// = new Helpers();
     private static Vector dailyV = new Vector();
     private static Vector dailyR = new Vector();
     private static Vector dailyT = new Vector();
@@ -64,8 +64,14 @@ public class DivineLiturgy1 implements DocHandler {
     private static OrderedHashtable tomorrowRead = new OrderedHashtable();
     private static OrderedHashtable yesterdayRead = new OrderedHashtable();
     private static StringOp Information3  = new StringOp();
+    private static StringOp Analyse=new StringOp();
 
-    public DivineLiturgy1() {
+    public DivineLiturgy1(OrderedHashtable dayInfo) {
+        Analyse.dayInfo=dayInfo;
+          Phrases = new LanguagePack(dayInfo);
+    TransferredDays = Phrases.obtainValues((String) Phrases.Phrases.get("DayReading"));
+     Error = Phrases.obtainValues((String) Phrases.Phrases.get("Errors"));
+     findLanguage=new Helpers(Analyse.dayInfo);
     }
 
 //THESE ARE THE SAME FUNCTION AS IN MAIN, BUT TRIMMED FOR THE CURRENT NEEDS
@@ -82,7 +88,7 @@ public class DivineLiturgy1 implements DocHandler {
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (StringOp.evalbool(table.get("Cmd").toString()) == false) {
+            if (Analyse.evalbool(table.get("Cmd").toString()) == false) {
                 return;
             }
         }
@@ -124,15 +130,15 @@ public class DivineLiturgy1 implements DocHandler {
         System.out.println("Testing the new StringOp formulation is " + Information3.evalbool("doy == 12"));*/
 
         Information = new OrderedHashtable();
-        int doy = Integer.parseInt(StringOp.dayInfo.get("doy").toString());
-        int dow = Integer.parseInt(StringOp.dayInfo.get("dow").toString());
-        int nday = Integer.parseInt(StringOp.dayInfo.get("nday").toString());
+        int doy = Integer.parseInt(Analyse.dayInfo.get("doy").toString());
+        int dow = Integer.parseInt(Analyse.dayInfo.get("dow").toString());
+        int nday = Integer.parseInt(Analyse.dayInfo.get("nday").toString());
 
 
         //DETERMINE THE GOVERNING PARAMETERS FOR COMPILING THE READINGS
         try {
-            FileReader frf = new FileReader(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
-            DivineLiturgy1 a1 = new DivineLiturgy1();
+            FileReader frf = new FileReader(findLanguage.langFileFind(Analyse.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
+            DivineLiturgy1 a1 = new DivineLiturgy1(Analyse.dayInfo);
             QDParser.parse(a1, frf);
         } catch (Exception e) {
             e.printStackTrace();
@@ -160,7 +166,7 @@ public class DivineLiturgy1 implements DocHandler {
              */
             //NOTE 2: NO READINGS ARE TRANSFERRED DURING LENT, THAT IS, -48 <= nday <=0.
             Vector transferRule = (Vector) Information.get("TransferRulesB");
-            boolean transfer2 = StringOp.evalbool((String) transferRule.get(0));
+            boolean transfer2 =Analyse.evalbool((String) transferRule.get(0));
             if (transfer2) //St. NICHOLAS'S DAY HAS A SPECIAL SET OF RULES
             {
                 //IT IS OBLIGATORY TO CHECK THE NEXT DAY IF ANY READINGS ARE TRANSFERRED!
@@ -171,9 +177,9 @@ public class DivineLiturgy1 implements DocHandler {
 
                 
                 StringOp Transfers=new StringOp();
-                Transfers.dayInfo = StringOp.dayInfo;//findLanguage.deepCopy((Hashtable)StringOp.dayInfo.clone());
-                Information3.dayInfo.putAll(StringOp.dayInfo);
-                String dRankOld=StringOp.dayInfo.get("dRank").toString();
+                Transfers.dayInfo = Analyse.dayInfo.clone();//findLanguage.deepCopy((Hashtable)StringOp.dayInfo.clone());
+                Information3.dayInfo.putAll(Analyse.dayInfo);
+                String dRankOld=Analyse.dayInfo.get("dRank").toString();
                 today.addDays(1);
                 // PUT THE RELEVANT DATA IN THE HASH FOR TOMORROW
                 //System.out.println("Case I: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("dRank").toString()+" In Information3, doy = "+Information3.dayInfo.get("dRank").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("dRank"));
@@ -191,25 +197,25 @@ public class DivineLiturgy1 implements DocHandler {
 
                 getReadings(today, ReadingType);
                 tomorrowRead = getReadings(today, ReadingType);
-                tomorrows = new classifyReadings(tomorrowRead, Information3);
+                tomorrows = new classifyReadings(tomorrowRead, Information3.dayInfo.clone());
                 //System.out.println("Case III: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("dRank").toString()+" In Information3, doy = "+Information3.dayInfo.get("dRank").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("dRank"));
 
 
                 today.subtractDays(1);
-                StringOp.dayInfo.put("dow", today.getDayOfWeek());
-                StringOp.dayInfo.put("doy", today.getDoy());
+                Analyse.dayInfo.put("dow", today.getDayOfWeek());
+                Analyse.dayInfo.put("doy", today.getDoy());
                 nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
                 ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
                 //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
                 ndayF = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
-                StringOp.dayInfo.put("nday", nday);
-                StringOp.dayInfo.put("ndayP", ndayP);
-                StringOp.dayInfo.put("ndayF", ndayF);
-                StringOp.dayInfo.put("dRank",dRankOld);
+                Analyse.dayInfo.put("nday", nday);
+                Analyse.dayInfo.put("ndayP", ndayP);
+                Analyse.dayInfo.put("ndayF", ndayF);
+                Analyse.dayInfo.put("dRank",dRankOld);
             }
             //NOW WE NEED TO CHECK YESTERDAY'S READINGS, BUT THIS WILL ONLY OCCUR ON A TUESDAY OR DEC. 6th
             transferRule = (Vector) Information.get("TransferRulesF");
-            transfer2 = StringOp.evalbool((String) transferRule.get(0));
+            transfer2 = Analyse.evalbool((String) transferRule.get(0));
 
             if (transfer2) //IF IT IS A SATURDAY, THEN THE READINGS WILL BE SKIPPED, ???
             {
@@ -218,9 +224,9 @@ public class DivineLiturgy1 implements DocHandler {
 
 
                 StringOp Transfers=new StringOp();
-                Transfers.dayInfo.putAll(StringOp.dayInfo);
-                Information3.dayInfo.putAll(StringOp.dayInfo);
-                String dRankOld=StringOp.dayInfo.get("dRank").toString();
+                Transfers.dayInfo.putAll(Analyse.dayInfo.clone());
+                Information3.dayInfo.putAll(Analyse.dayInfo);
+                String dRankOld=Analyse.dayInfo.get("dRank").toString();
                 today.subtractDays(1);
 
 
@@ -237,21 +243,21 @@ public class DivineLiturgy1 implements DocHandler {
                 Information3.dayInfo.put("ndayF", ndayF);
 
                 yesterdayRead = getReadings(today, ReadingType);
-                yesterdays = new classifyReadings(yesterdayRead, Information3);
+                yesterdays = new classifyReadings(yesterdayRead, Information3.dayInfo.clone());
 
 
 
                 today.addDays(1);
-                StringOp.dayInfo.put("dow", today.getDayOfWeek());
-                StringOp.dayInfo.put("doy", today.getDoy());
+                Analyse.dayInfo.put("dow", today.getDayOfWeek());
+                Analyse.dayInfo.put("doy", today.getDoy());
                 nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
                 ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
                 //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
                 ndayF = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
-                StringOp.dayInfo.put("nday", nday);
-                StringOp.dayInfo.put("ndayP", ndayP);
-                StringOp.dayInfo.put("ndayF", ndayF);
-                StringOp.dayInfo.put("dRank",dRankOld);
+                Analyse.dayInfo.put("nday", nday);
+                Analyse.dayInfo.put("ndayP", ndayP);
+                Analyse.dayInfo.put("ndayF", ndayF);
+                Analyse.dayInfo.put("dRank",dRankOld);
             }
         }
 
@@ -345,7 +351,7 @@ public class DivineLiturgy1 implements DocHandler {
 
         filename += lineNumber >= 10 ? lineNumber + "" : "0" + lineNumber + ""; // CLEANED UP
         // READ THE PENTECOSTARION / TRIODION INFORMATION
-        Day checkingP = new Day(filename,Information3);
+        Day checkingP = new Day(filename,Information3.dayInfo);
 
 
         //ADDED 2008/05/19 n.s. Y.S.
@@ -362,7 +368,7 @@ public class DivineLiturgy1 implements DocHandler {
         filename += d < 10 ? "/0" + d : "/" + d; // CLEANED UP
         filename += "";
         
-        Day checkingM = new Day(filename,Information3);
+        Day checkingM = new Day(filename,Information3.dayInfo);
         Information3.dayInfo.put("dRank",Math.max(checkingP.getDayRank(), checkingM.getDayRank()));
 
         OrderedHashtable[] PaschalReadings = checkingP.getReadings();
@@ -488,13 +494,13 @@ public class DivineLiturgy1 implements DocHandler {
         }
         if (b.length() > 0) {
             if (output.length() > 0) {
-                output += StringOp.dayInfo.get("ReadSep") + " ";
+                output += Analyse.dayInfo.get("ReadSep") + " ";
             }
             output += b;
         }
         if (c.length() > 0) {
             if (output.length() > 0) {
-                output += StringOp.dayInfo.get("ReadSep") + " ";
+                output += Analyse.dayInfo.get("ReadSep") + " ";
             }
             output += c;
 
@@ -535,7 +541,7 @@ public class DivineLiturgy1 implements DocHandler {
         }
         } catch (Exception e) {
         }*/
-        Bible ShortForm = new Bible();
+        Bible ShortForm = new Bible(Analyse.dayInfo);
         try {
             Enumeration e3 = vectV.elements();
             for (int k = 0; k < vectV.size(); k++) {
@@ -552,7 +558,7 @@ public class DivineLiturgy1 implements DocHandler {
                 }
 
                 if (k < vectV.size() - 1) {
-                    output += StringOp.dayInfo.get("ReadSep");		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
+                    output += Analyse.dayInfo.get("ReadSep");		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
                 }
             }
         } catch (Exception a) {
@@ -600,11 +606,13 @@ public class DivineLiturgy1 implements DocHandler {
 
         public classifyReadings(OrderedHashtable readingsInA) {
             StringOp Testing = new StringOp();
-            ParameterValues.dayInfo=StringOp.dayInfo;
+            ParameterValues.dayInfo=Analyse.dayInfo;
+            //System.out.println("In ParameterValues, we have LS = " + ParameterValues.dayInfo.get("LS")+" while in Analyse, we have "+Analyse.dayInfo.get("LS"));
             classify(readingsInA);
         }
 
-        public classifyReadings(OrderedHashtable readingsInA, StringOp ParameterValues) {
+       public classifyReadings(OrderedHashtable readingsInA, OrderedHashtable dayInfo) {
+           ParameterValues.dayInfo=dayInfo;
             classify(readingsInA);
 
         }
@@ -612,6 +620,8 @@ public class DivineLiturgy1 implements DocHandler {
         {
             //Initialise Information.
             Information2=new OrderedHashtable();
+            findLanguage=new Helpers(ParameterValues.dayInfo);
+            //System.out.println(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
             try {
                 FileReader frf = new FileReader(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
                 //System.out.println(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));

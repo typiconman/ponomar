@@ -60,7 +60,7 @@ final class Paschalion
 		return remainder;
 	}
 
-	// A METHOD TO OBTAIN THE DATE OF THE ORTHODOX PASCHA
+	// A METHOD TO OBTAIN THE DATE OF THE JULIAN PASCHA
 	// USES THE GAUSSIAN FORMULAE TO OBTAIN PASCHA
 	// PARAMETERS: AN int WITH THE YEAR DESIRED
 	// RETURNS: A JDate WITH THE DATE OF PASCHA FOR THAT YEAR (JULIAN CALENDAR)
@@ -83,7 +83,7 @@ final class Paschalion
 		return new JDate(f, g, year);
 	}
 
-	// A METHOD TO OBTAIN THE DATE OF ORTHODOX PENTECOST
+	// A METHOD TO OBTAIN THE DATE OF JULIAN PENTECOST
 	// USES THE ABOVE ALGORITHM AND ADDS 49 DAYS
 	// PARAMETERS: AN int WITH THE YEAR DESIRED
 	// RETURNS: A JDate WITH THE DATE OF PENTECOST (JULIAN CALENDAR)
@@ -101,7 +101,7 @@ final class Paschalion
 		return date;
 	}
 
-	// A METHOD TO OBTAIN THE DATE ORTHODOX LENT STARTS (48 DAYS BEFORE PASCHA)
+	// A METHOD TO OBTAIN THE DATE JULIAN LENT STARTS (48 DAYS BEFORE PASCHA)
 	// USES THE ABOVE ALOGORITHM AND SUBTRACTS 48 DAYS
 	// PARAMETERS: AN int WITH THE YEAR DESIRED
 	// RETURNS: A JDate WITH THE DATE LENT STARTS (DATE OF CLEAN MONDAY)
@@ -278,7 +278,7 @@ final class Paschalion
 	}
 
 	// CONVERT ABOVE TO A STRING WITH THE PHASE OF THE MOON
-	protected static String getLunarPhaseString(JDate date) throws IllegalArgumentException
+	protected static String getLunarPhaseString(JDate date, OrderedHashtable dayInfo) throws IllegalArgumentException
 	{
 		double raw;
 
@@ -296,7 +296,7 @@ final class Paschalion
 		// IFF THE TIME OF FULL MOON OCCURS +/- ONE-HALF LUNAR DAY (lengthOfRem)
 		// FROM THE TIME WE ARE CONSIDERING, SINCE THE TIME WE ARE CONSIDERING IS NOON
 		// ALL OTHER PHASES ARE ANALAGOUS
-		LanguagePack Text=new LanguagePack();
+		LanguagePack Text=new LanguagePack(dayInfo);
 		String[] Phases=Text.obtainValues((String)Text.Phrases.get("Phases"));
 		if (raw < lengthOfRem || raw > 1 - lengthOfRem)
 		{
@@ -528,7 +528,7 @@ final class Paschalion
 	//	FIRST ENTRY: THE julian date of a feast
 	//	SECOND ENTRY: A STRING DESCRIBING THAT FEAST
 	// THROWS: ditto
-	protected static Hashtable getFeasts(int year) throws IllegalArgumentException
+	protected static Hashtable getFeasts(int year, OrderedHashtable dayInfo) throws IllegalArgumentException
 	{
 		if (year < 33)
 		{
@@ -536,7 +536,7 @@ final class Paschalion
 		}
 
 		Hashtable feasts = new Hashtable();
-		LanguagePack Text=new LanguagePack();
+		LanguagePack Text=new LanguagePack(dayInfo);
 		String[] FeastNames=Text.obtainValues((String)Text.Phrases.get("Feasts"));
 		// ADD ALL THE FIXED FEASTS TO OUR HASHTABLE
 		feasts.put(new JDate(1, 1, year).getJulianDay(), FeastNames[0]);

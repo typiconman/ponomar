@@ -47,35 +47,41 @@ public class Day implements DocHandler {
     private OrderedHashtable ServiceInfo;
     private String Location1;
     private boolean readService = false;
-    private LanguagePack Text = new LanguagePack();
-    private String[] CommNames = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
+    private LanguagePack Text;// = new LanguagePack();
+    private String[] CommNames;// = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
     private Helpers helper;
     private int counter = 0;
     private Vector OrderedCommemorations;
     private int dayRank = -100;
     private int Tone = -1;
-    private String[] MainNames=Text.obtainValues((String)Text.Phrases.get("Main"));
-    private String[] toneNumbers= Text.obtainValues((String)Text.Phrases.get("Tones"));
-    private String forComm=(String)Text.Phrases.get("Commemoration2");
+    private String[] MainNames;//=Text.obtainValues((String)Text.Phrases.get("Main"));
+    private String[] toneNumbers;//= Text.obtainValues((String)Text.Phrases.get("Tones"));
+    private String forComm;//=(String)Text.Phrases.get("Commemoration2");
     private static StringOp ParameterValues = new StringOp();
 
-    protected Day(String FileName, StringOp ParameterValues) {
+    protected Day(String FileName, OrderedHashtable dayInfo) {
         Information = new OrderedHashtable();
         readings = new OrderedHashtable();
         RoyalHours = new OrderedHashtable();
-        Information.put("ID", FileName);
-        helper = new Helpers();
-
+        ParameterValues.dayInfo=dayInfo;
+        helper = new Helpers(ParameterValues.dayInfo);
+        Text = new LanguagePack(ParameterValues.dayInfo);
+    CommNames = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
+MainNames=Text.obtainValues((String)Text.Phrases.get("Main"));
+    toneNumbers= Text.obtainValues((String)Text.Phrases.get("Tones"));
+    forComm=(String)Text.Phrases.get("Commemoration2");
         counter = 0;
         OrderedCommemorations = new Vector();
         dayRank = -100;
+         Information.put("ID", FileName);
         readDay(FileName);
+
 
 
     }
     protected Day(String FileName)
     {
-        ParameterValues.dayInfo=StringOp.dayInfo;
+       /*ParameterValues.dayInfo=StringOp.dayInfo;
         Information = new OrderedHashtable();
         readings = new OrderedHashtable();
         RoyalHours = new OrderedHashtable();
@@ -85,7 +91,7 @@ public class Day implements DocHandler {
         counter = 0;
         OrderedCommemorations = new Vector();
         dayRank = -100;
-        readDay(FileName);
+        readDay(FileName);*/
     }
 
     protected Day() {
@@ -95,19 +101,24 @@ public class Day implements DocHandler {
 
         Information = new OrderedHashtable();
         readings = new OrderedHashtable();
-        helper = new Helpers();
+        helper = new Helpers(ParameterValues.dayInfo);
+        System.out.println("NOTE USING WRONG DAY INPUT FORMAT!!!!");
     }
 
     public void readDay(String FileName) //throws IOException
     {
         FileName = FileName;
+        //System.out.println(ParameterValues.dayInfo.get("LS"));
+        String test=ParameterValues.dayInfo.get("LS").toString();
+        //System.out.println("In Day, we have the path as " + test);
+        
         try {
             //BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(),FileName+".xml")), "UTF8"));
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(), FileName + ".xml")), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind((String)ParameterValues.dayInfo.get("LS"), FileName + ".xml")), "UTF8"));
             //System.out.println("===============\n"+helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(), FileName + ".xml"));
             QDParser.parse(this, frf);
         } catch (Exception e) {
-            System.out.println("In file name, "+helper.langFileFind(ParameterValues.dayInfo.get("LS").toString(), FileName + ".xml")+" an error occurred of type: ");
+            System.out.println("In file name, "+helper.langFileFind((String)ParameterValues.dayInfo.get("LS"), FileName + ".xml")+" an error occurred of type: ");
             e.printStackTrace();
         }
     }
@@ -150,7 +161,7 @@ public class Day implements DocHandler {
             if (table.get("Tone")!=null){
                Tone=(int) Math.floor(ParameterValues.eval(table.get("Tone").toString()));
             }
-            Commemoration1 DayA = new Commemoration1(Sid, Cid);
+            Commemoration1 DayA = new Commemoration1(Sid, Cid,ParameterValues.dayInfo);
 
             OrderedCommemorations.addElement(DayA);
 

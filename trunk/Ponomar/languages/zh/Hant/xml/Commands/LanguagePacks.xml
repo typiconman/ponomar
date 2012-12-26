@@ -21,7 +21,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="NameEnglish" Value="Traditional Chinese"/>
 <PHRASE Key="BibleV" Value="zh/Hant/bible/cuv"/>
 <PHRASE Key="Authors" Value="亞歷山大·安德瑞耶/,尤里·斯查德"/>
-<PHRASE Key="Year" Value="二〇〇六～二〇一〇年"/>
+<PHRASE Key="Year" Value="二〇〇六～二〇一三年"/>
 <PHRASE Key="And" Value="、"/>
 <PHRASE Key="Comma" Value="、"/>
 <PHRASE Key="Copyright" Value="^AA^YY版權所有"/>
@@ -101,4 +101,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="AM" Value="（創世^YYAM年）" Note="This displays the anno mundi year in brackets in the calendar, only for the Julian date"/>
 <PHRASE Key="AMC" Value="1" Note="This determines whether or not the Anno Mundi value will be displayed. 1 = Yes, 0 = No."/>
 <PHRASE Key="AML" Value="B" Note="This determines whether the AM value comes before (B) the rest of the date or after (A) it"/>
+<PHRASE Key="NoIcon" Value="Ponomar/languages/cu/icons/4447/0.jpg" Note="This is a relative path to the default icon desired for the case where there is no icons available."/>
+<PHRASE Key="Options2" Value="Ponomar: Defaults/,Geographical Information/,Latitude: /,°, negative to the South/,Longitude: /,°, negative to the West/,Time Zone: /, h from Greenwich mean time/,Civil Information/,Display Calendar:/,Julian/,Gregorian/,OK/,CANCEL"/>
+<PHRASE Key="OptionsW" Value="700" Note="Width of the Options window"/>
+<PHRASE Key="OptionsH" Value="300" Note="Height of the Options window"/>
+<PHRASE Key="OptionMenu" Value="Defaults…"/>
 </LANGUAGEPACKS>

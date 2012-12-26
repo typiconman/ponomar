@@ -36,23 +36,25 @@ class JDate implements Comparable, Cloneable
 	private final static int daysInMonthLeap[] = new int[]
 	{31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	
-	private static LanguagePack Phrases=new LanguagePack();
-	private static String[] monthNames=Phrases.obtainValues((String)Phrases.Phrases.get("3"));
+	private static LanguagePack Phrases;//=new LanguagePack();
+	private static String[] monthNames;//=Phrases.obtainValues((String)Phrases.Phrases.get("3"));
 
 	//private final static String monthNames[] = new String[]
 	//{"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
-	private static String[] dayNames = Phrases.obtainValues((String)Phrases.Phrases.get("2"));
-        private static String[] civilMonthNames=Phrases.obtainValues((String)Phrases.Phrases.get("4"));
+	private static String[] dayNames;// = Phrases.obtainValues((String)Phrases.Phrases.get("2"));
+        private static String[] civilMonthNames;//=Phrases.obtainValues((String)Phrases.Phrases.get("4"));
+
 
 	//private final static String monthNames[] = new String[]
 	//{"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
-	private static String[] civilDayNames = Phrases.obtainValues((String)Phrases.Phrases.get("5"));
+	private static String[] civilDayNames;// = Phrases.obtainValues((String)Phrases.Phrases.get("5"));
 	//new String[]
 	//{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-	private static String[] Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
+	private static String[] Errors;//=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
 	private static String Format;
+        private static StringOp Analyse=new StringOp();
 
 
 	// Two "overloaded" modulo methods to replace the existing % operator
@@ -179,7 +181,8 @@ class JDate implements Comparable, Cloneable
 	// RETURNS: an integer with the month of the JDate object
 	protected int getMonth()
 	{
-		long jbar = mn_jday + 32083;
+	
+            long jbar = mn_jday + 32083;
 		// Take jbar modulo 1461 to get the number of days since the last four-year cycle
 		int da = (int)(jbar % 1461);
 		// Take da modulo 365 to get the number of days since the last 1 March
@@ -281,8 +284,15 @@ class JDate implements Comparable, Cloneable
 
 		return new Date(y - 1900, m - 1, d); // return the date object
 	}
-	protected String getGregorianDateS()
+	protected String getGregorianDateS(OrderedHashtable dayInfo)
 	{
+            Analyse.dayInfo=dayInfo;
+            Phrases=new LanguagePack(dayInfo);
+            dayNames = Phrases.obtainValues((String)Phrases.Phrases.get("2"));
+         civilMonthNames=Phrases.obtainValues((String)Phrases.Phrases.get("4"));
+        	monthNames=Phrases.obtainValues((String)Phrases.Phrases.get("3"));
+                civilDayNames = Phrases.obtainValues((String)Phrases.Phrases.get("5"));
+	Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
 		//GIVES THE STRING IN THE LOCAL FORMAT.
 		double j1;
 
@@ -322,7 +332,7 @@ class JDate implements Comparable, Cloneable
 		int year = y;
 		int month = m;
 		int day = d;
-                if(StringOp.dayInfo.get("Ideographic")==null)
+                if(Analyse.dayInfo.get("Ideographic")==null)
                 {
                     Format=Format.replace("WW",civilDayNames[dow]);
 		Format=Format.replace("DD",String.valueOf(day));
@@ -332,9 +342,9 @@ class JDate implements Comparable, Cloneable
                 }
                 else
                 {
-                if (StringOp.dayInfo.get("Ideographic").equals("1"))
+                if (Analyse.dayInfo.get("Ideographic").equals("1"))
                 {
-                    RuleBasedNumber convertN=new RuleBasedNumber();
+                    RuleBasedNumber convertN=new RuleBasedNumber(Analyse.dayInfo);
                     Format=Format.replace("WW",civilDayNames[dow]);
                     Format=Format.replace("DD",convertN.getFormattedNumber(Long.parseLong(String.valueOf(day))));
                     Format=Format.replace("MM",civilMonthNames[month-1]);
@@ -413,15 +423,20 @@ class JDate implements Comparable, Cloneable
 	// A METHOD TO OBTAIN A STRING FROM A JDATE OBJECT
 	// PARAMETERS: NONE
 	// RETURNS: A STRING WITH THE STRING VALUE OF A DATE
-	public String toString()
+	public String toString(OrderedHashtable dayInfo)
 	{
+           Analyse.dayInfo=dayInfo;
+            Phrases=new LanguagePack(dayInfo);
+            dayNames = Phrases.obtainValues((String)Phrases.Phrases.get("2"));
+         civilMonthNames=Phrases.obtainValues((String)Phrases.Phrases.get("4"));
+        	monthNames=Phrases.obtainValues((String)Phrases.Phrases.get("3"));
 		Format=(String)Phrases.Phrases.get("DateFormat");
 		int dow = getDayOfWeek();
 		int year = getYear();
 		int month = getMonth();
 		int day = getDay();
 
-                if(StringOp.dayInfo.get("Ideographic")==null)
+                if(Analyse.dayInfo.get("Ideographic")==null)
                 {
                     Format=Format.replace("WW",dayNames[dow]);
 		Format=Format.replace("DD",String.valueOf(day));
@@ -431,9 +446,9 @@ class JDate implements Comparable, Cloneable
                 }
                 else
                 {
-                if (StringOp.dayInfo.get("Ideographic").equals("1"))
+                if (Analyse.dayInfo.get("Ideographic").equals("1"))
                 {
-                    RuleBasedNumber convertN=new RuleBasedNumber();
+                    RuleBasedNumber convertN=new RuleBasedNumber(dayInfo);
                     Format=Format.replace("WW",dayNames[dow]);
                     Format=Format.replace("DD",convertN.getFormattedNumber(Long.parseLong(String.valueOf(day))));
                     Format=Format.replace("MM",monthNames[month-1]);

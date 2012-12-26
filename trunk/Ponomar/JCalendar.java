@@ -51,19 +51,32 @@ class JCalendar extends JPanel implements ActionListener, FocusListener, Propert
 	private JPanel monthYearPanel;
 	private JComboBox monthChooser;
 	private JTextField yearChooser;
-	private LanguagePack Text=new LanguagePack();
-	private final String[] months = Text.obtainValues((String)Text.Phrases.get("1"));
-        private final String OrderBox=(String)Text.Phrases.get("OrderBox");
+	private LanguagePack Text;//=new LanguagePack();
+	private String[] months; //= Text.obtainValues((String)Text.Phrases.get("1"));
+        private String OrderBox;//=(String)Text.Phrases.get("OrderBox");
+        private StringOp Analyse=new StringOp();
 
 
-	protected JCalendar()
+	protected JCalendar(OrderedHashtable dayInfo)
 	{
-		this(null);
-	}
+            this(null,dayInfo);
+            
+	Analyse.dayInfo=dayInfo;
+                Text=new LanguagePack(dayInfo);
+                months = Text.obtainValues((String)Text.Phrases.get("1"));
+                OrderBox=(String)Text.Phrases.get("OrderBox");
+                date=new JDate();
 
-	protected JCalendar(JDate date)
+                }
+        
+
+	protected JCalendar(JDate date, OrderedHashtable dayInfo)
 	{
 		super();
+                Analyse.dayInfo=dayInfo;
+                Text=new LanguagePack(dayInfo);
+                months = Text.obtainValues((String)Text.Phrases.get("1"));
+                OrderBox=(String)Text.Phrases.get("OrderBox");
 		setName("JCalendar");
 		setLayout(new BorderLayout());
 
@@ -96,14 +109,15 @@ class JCalendar extends JPanel implements ActionListener, FocusListener, Propert
 		
 		monthYearPanel.setBorder(BorderFactory.createEmptyBorder());
 
-		daySelector = new JDaySelector();
+		daySelector = new JDaySelector(Analyse.dayInfo.clone());
 		daySelector.setYear(date.getYear());
 		daySelector.setMonth(date.getMonth());
 		daySelector.setDay(date.getDay());
 		daySelector.addPropertyChangeListener(this);
 
 		add(monthYearPanel, BorderLayout.NORTH);
-		add(daySelector, BorderLayout.CENTER);	
+		add(daySelector, BorderLayout.CENTER);
+                System.out.println("Calendar created");
 	}
 
 	public void actionPerformed(ActionEvent e)
@@ -196,12 +210,12 @@ class JCalendar extends JPanel implements ActionListener, FocusListener, Propert
 		// for testing purposes only
 		// do not run as standalone -- may explode, leak, and cause serious injury
 		// (to your computer) [just kidding]
-		JFrame frame = new JFrame("JCalendar");
+		/*JFrame frame = new JFrame("JCalendar");
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JCalendar jcalendar = new JCalendar();
 		jcalendar.setOpaque(true);
 		frame.setContentPane(jcalendar);
 		frame.pack();
-		frame.setVisible(true);
+		frame.setVisible(true);*/
 	}
 }

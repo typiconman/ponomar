@@ -1,18 +1,16 @@
 package Ponomar;
 
 import javax.swing.*;
-import javax.swing.event.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.beans.*;
-import java.util.*;
-import java.io.*;
 
 /************************************************************
 THIS CREATES THE MENUS REQUIRED FOR THE PROGRAMME/INTERFACE
 
-COPYRIGHT 2008 Yuri Shardt
+COPYRIGHT 2008, 2012 Yuri Shardt
 Version 1.0 August 2008
+Version 2.0 December 2012
 
  PERMISSION IS HEREBY GRANTED TO USE, MODIFY, AND/OR REDISTRIBUTE THIS SOURCE CODE
  PROVIDED THAT THIS NOTICE REMAINS IN ALL VERSION AND / OR DERIVATIVES THEREOF.
@@ -40,34 +38,50 @@ class MenuFiles extends JMenu implements ItemListener, PropertyChangeListener
 	private JMenuItem menuItem, menu3Item, menu4Item, menu5Item, menu6Item, menu7Item, menu8Item, menu9Item, menu10Item, menu11Item, menu12Item, menu13Item, menu14Item, menu15Item, menu16Item, menu17Item, menu18Item, menu19Item;
 	private JRadioButtonMenuItem rbMenu1Item, rbMenu2Item;
 	private JMenu OptionsMenu;
-	private LanguagePack Text=new LanguagePack();
-	private String[] SaintNames=Text.obtainValues((String)Text.Phrases.get("SMenu"));
-	private String OptionsNames=(String)Text.Phrases.get("Options");
-	private String[] FileNames=Text.obtainValues((String)Text.Phrases.get("File")); 
-	private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("Services"));
-	private String[] BibleName=Text.obtainValues((String)Text.Phrases.get("Bible"));
-	private String[] HelpNames=Text.obtainValues((String)Text.Phrases.get("Help"));
-	private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
+	private LanguagePack Text;//=new LanguagePack();
+	private String[] SaintNames;//=Text.obtainValues((String)Text.Phrases.get("SMenu"));
+	private String OptionsNames;//=(String)Text.Phrases.get("Options");
+	private String[] FileNames;//=Text.obtainValues((String)Text.Phrases.get("File"));
+	private String[] ServiceNames;//=Text.obtainValues((String)Text.Phrases.get("Services"));
+	private String[] BibleName;//=Text.obtainValues((String)Text.Phrases.get("Bible"));
+	private String[] HelpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
+         private StringOp Analyse=new StringOp();
+	private Font CurrentFont;//=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
 
-public MenuFiles()
+
+public MenuFiles(OrderedHashtable dayInfo)
 {
-	
+	Analyse.dayInfo=dayInfo;
+        Text=new LanguagePack(dayInfo);
+        SaintNames=Text.obtainValues((String)Text.Phrases.get("SMenu"));
+	OptionsNames=(String)Text.Phrases.get("Options");
+	 FileNames=Text.obtainValues((String)Text.Phrases.get("File"));
+	ServiceNames=Text.obtainValues((String)Text.Phrases.get("Services"));
+	BibleName=Text.obtainValues((String)Text.Phrases.get("Bible"));
+	HelpNames=Text.obtainValues((String)Text.Phrases.get("Help"));
+         CurrentFont=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
 }
-public JMenu createOptionsMenu(PropertyChangeListener pl)
+public JMenu createOptionsMenu(PropertyChangeListener pl, ActionListener al)
 {
 	OptionsMenu = new JMenu(OptionsNames);
 	OptionsMenu.setMnemonic(KeyEvent.VK_O);
         //OptionsMenu.setFont(CurrentFont);
 	//ADD THIS MENU TO THE MAIN MENU
-	GospelSelection = new GospelSelector();
+	GospelSelection = new GospelSelector(Analyse.dayInfo);
 	Selection = GospelSelection.createGospelMenu();
 	GospelSelection.addPropertyChangeListener(pl);
 	OptionsMenu.add(Selection);
 		
-	LanguageSelection = new LanguageSelector();
-	JMenu Selection2=LanguageSelection.createLanguageMenu();
+	LanguageSelection = new LanguageSelector(Analyse.dayInfo.clone());
+	JMenu Selection2=LanguageSelection.createLanguageMenu(Analyse.dayInfo.clone());
 	LanguageSelection.addPropertyChangeListener(pl);
 	OptionsMenu.add(Selection2);
+
+        JMenuItem Selection3=new JMenuItem(Text.Phrases.get("OptionMenu").toString());
+        Selection3.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, ActionEvent.CTRL_MASK));
+	Selection3.getAccessibleContext().setAccessibleDescription(Text.Phrases.get("OptionMenu").toString());
+	Selection3.addActionListener(al);
+        OptionsMenu.add(Selection3);
 	
 	return OptionsMenu;
 }

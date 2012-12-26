@@ -1,6 +1,7 @@
 package Ponomar;
 
 import java.util.*;
+import java.awt.*;
 
 /******************************************************************************
 OrderedHashtable.java - A FIFO HASHTABLE
@@ -156,6 +157,22 @@ public class OrderedHashtable extends Hashtable implements Cloneable
             Enumeration keys=current.enumerateKeys();
             while(keys.hasMoreElements()){
                 String key=keys.nextElement().toString();
+                if (key.equals("Locale"))
+                {
+                    Locale item=(Locale)current.get(key);
+                    cloned.put(new String(key), item);
+                    continue;
+                }
+                if (key.equals("Orient")){
+                    ComponentOrientation item=(ComponentOrientation)current.get(key);
+                    cloned.put(new String(key), item);
+                    continue;
+                }
+                if (current.get(key) instanceof Integer){
+                    Integer item=(Integer)current.get(key);
+                    cloned.put(new String(key), new Integer(item));
+                    continue;
+                }
                 String item=(String)current.get(key);
                 cloned.put(new String(key), new String(item));
             }

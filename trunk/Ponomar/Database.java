@@ -43,12 +43,12 @@ public class Database
 	//private OrderedHashtable variable;
 	//private String textR;
 	
-	
-	protected Database()
+	private StringOp Analyse=new StringOp();
+	protected Database(OrderedHashtable dayInfo)
 	{
 		//THIS OPENS A NEW INSTANCE OF THE CLASS AND RESETS EVERYTHING TO DEFAULT VALUES
 		//LOADS THE DATABASE, CREATES ONE IF THERE IS NONE CREATED FOR THE GIVEN LANGUAGE
-		
+		Analyse.dayInfo=dayInfo;
     		try
     		{
     			Class.forName(dbDriver);
@@ -70,7 +70,7 @@ public class Database
 	public void create()
 	{
 		//THIS FUNCTION CREATES THE DATABASE FILE IF REQUIRED AND LOADS THE FILE INTO THE PROGRAMME!
-		String FileName="Database"+StringOp.dayInfo.get("LS")+".txt";
+		String FileName="Database"+Analyse.dayInfo.get("LS")+".txt";
 		System.out.println(FileName);
 		File f = new File(Location+FileName);
     		if(!f.exists())
@@ -106,7 +106,7 @@ public class Database
     						{
     							FileName2=Months[i]+"/"+j+".xml";
     						}
-    						Days Events= new Days(FileName2);
+    						Days Events= new Days(FileName2,Analyse.dayInfo);
     						for(int k=0;k<Events.getNumber();k++)
     						{
     					  			out.write(Events.getID(k)+"%"+Events.getGrammar(k,"")+"%"+"F"+Count+"%"+Events.getCycle(k));
@@ -184,12 +184,12 @@ public class Database
 	public static void main(String[] argz)
 	{
 		//THIS STILL DOES NOT WORK!!!
-		StringOp.dayInfo=new OrderedHashtable();
-		StringOp.dayInfo.put("LS","0");
-		StringOp.dayInfo.put("nday",1);
-		StringOp.dayInfo.put("dow",1);
-		StringOp.dayInfo.put("doy",1);
-		Database trial=new Database();
+		OrderedHashtable dayInfo=new OrderedHashtable();
+		dayInfo.put("LS","0");
+		dayInfo.put("nday",1);
+		dayInfo.put("dow",1);
+		dayInfo.put("doy",1);
+		Database trial=new Database(dayInfo);
 		System.out.println("THIS IS RUNNING ON DEBUG MODE");
 		trial.create();
 		trial.select("SELECT * FROM COMMEMORATIONS");

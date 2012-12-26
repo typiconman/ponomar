@@ -55,7 +55,12 @@ final class Sunrise
 	protected final static double NAUTICAL     = -12.0;
 	protected final static double AMATEUR      = -15.0;
 	protected final static double ASTRONOMICAL = -18.0;
-        private static LanguagePack Phrases=new LanguagePack();
+        private static LanguagePack Phrases;//=new LanguagePack();
+        private static StringOp Analyse=new StringOp();
+        public Sunrise(OrderedHashtable dayInfo){
+            Analyse.dayInfo=dayInfo;
+            Phrases=new LanguagePack(dayInfo);
+        }
 
 	// MATHEMATICAL FUNCTIONS
 	// OVERRIDDEN TRIGONOMETRIC FUNCTIONS, used to work with degrees instead of radians
@@ -361,9 +366,9 @@ final class Sunrise
 				out[i] += ":" + minute;
 			}*/
                         //Changed to this by Y.S. to interationalised it.
-                        if (StringOp.dayInfo.get("Ideographic").equals("1"))
+                        if (Analyse.dayInfo.get("Ideographic").equals("1"))
                         {
-                            RuleBasedNumber convertN=new RuleBasedNumber();
+                            RuleBasedNumber convertN=new RuleBasedNumber(Analyse.dayInfo.clone());
                             Format=Format.replace("HH", convertN.getFormattedNumber(hour));
                                Format=Format.replace("MM", convertN.getFormattedNumber(minute));
 

@@ -243,14 +243,14 @@ class Astronomy
             return revolution(lunarlong(day)-solarlong(day));
 
         }
-        public String lunarphase(long day){
+        public String lunarphase(long day, OrderedHashtable dayInfo){
             /*Determine the lunar phase given various for the given JDE day;
              * Assumes that the given day is midnight local time.
              * */
             double todaysAge=lunarage(day);
             double tomorrowsAge=lunarage(day+1);
             String phase="Error";
-         LanguagePack Text = new LanguagePack();
+         LanguagePack Text = new LanguagePack(dayInfo);
          String[] PhaseNames = Text.obtainValues((String) Text.Phrases.get("Phases"));
             //Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
             if (todaysAge>tomorrowsAge){
@@ -347,12 +347,12 @@ class Astronomy
         }
         public static void main(String[] argz)
 	{
-            StringOp.dayInfo=new OrderedHashtable();
-            StringOp.dayInfo.put("LS", "en/");
+            OrderedHashtable dayInfo=new OrderedHashtable();
+            dayInfo.put("LS", "en/");
             Astronomy test = new Astronomy();
                 
                 for(int k=0;k<30;k++){
-                System.out.println("phase = " + test.lunarphase((long)1444534.0+k));
+                System.out.println("phase = " + test.lunarphase((long)1444534.0+k,dayInfo));
                 }
 	}
 

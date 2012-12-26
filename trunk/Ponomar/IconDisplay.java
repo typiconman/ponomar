@@ -44,11 +44,12 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
         private JButton next;
         private String Face;
         private String Size;
+        private StringOp Analyse = new StringOp();
         //private Font CurrentFont = DefaultFont;
         
-	private LanguagePack Text=new LanguagePack();
-	private final String[] months = Text.obtainValues((String)Text.Phrases.get("1"));
-        private final String[] captions = Text.obtainValues((String) Text.Phrases.get("IconW"));
+	private LanguagePack Text;//=new LanguagePack();
+	private String[] months;// = Text.obtainValues((String)Text.Phrases.get("1"));
+        private String[] captions;// = Text.obtainValues((String) Text.Phrases.get("IconW"));
         //private static JFrame frame;
 
 
@@ -57,9 +58,13 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 		//this(null);
 	}
         
-	protected IconDisplay(String[] ImagesF, String[] NamesF)
+	protected IconDisplay(String[] ImagesF, String[] NamesF,OrderedHashtable dayInfo)
 	{
 		//super();
+            Analyse.dayInfo=dayInfo;
+             Text=new LanguagePack(dayInfo);
+	 months = Text.obtainValues((String)Text.Phrases.get("1"));
+         captions = Text.obtainValues((String) Text.Phrases.get("IconW"));
                 
                 Images=ImagesF;
                 Names=NamesF;
@@ -72,7 +77,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 			//date = new JDate();
                     System.out.println(Images.length);
                     Images=new String[1];
-                    Images[0]="Ponomar/languages/icons/Default1.jpg";
+                    Images[0]=Text.Phrases.get("NoIcon").toString();//"Ponomar/languages/icons/Default1.jpg";
                     Names=new String[1];
                     Names[0]=captions[2];
                     //return;
@@ -111,8 +116,8 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 
 
                 //The textbox name
-                Face=StringOp.dayInfo.get("FontFaceM").toString();
-                Size=StringOp.dayInfo.get("FontSizeM").toString();
+                Face=Analyse.dayInfo.get("FontFaceM").toString();
+                Size=Analyse.dayInfo.get("FontSizeM").toString();
                 text = new PrintableTextPane();
                 text.setEditable(false);
                 text.setContentType("text/html");
@@ -182,7 +187,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 			//date = new JDate();
                     //System.out.println(Images.length);
                     Images=new String[1];
-                    Images[0]="Default1";
+                    Images[0]=Text.Phrases.get("NoIcon").toString();//"Default1";
                     Names=new String[1];
                     Names[0]=captions[2];
                     //return;
@@ -224,7 +229,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
              {                
 
              }
-             System.out.println(image.getWidth() +" " + image.getHeight());
+             //System.out.println(image.getWidth() +" " + image.getHeight());
 
              //Testing something
 
@@ -232,7 +237,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
             float ih = image.getHeight();
             float pw = this.getWidth()*(float)0.95;   //panel width
             float ph = this.getHeight()*(float)0.8;  //panel height
-            System.out.println("pw=" +pw+ " ph="+ph);
+            //System.out.println("pw=" +pw+ " ph="+ph);
             Image scaledImage=image;
             //TESTING HERE
             if ( pw < iw || ph < ih ) {
@@ -270,7 +275,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
              label.setIcon(new ImageIcon(scaledImage));
             label.setHorizontalAlignment(JLabel.CENTER);
             iconImage.add(label);
-            text.setText("<body style=\"font-family:"+Face+";font-size:"+Size+"pt\">"+ Names[Number]+"</body>");           
+            text.setText("<body style=\"font-family:"+Face+";font-size:"+Size+"pt\">"+ Names[Number]+"</body>");            
            //frame.pack();
            //System.out.Println(getAncestorOfClass(new JFrame(),iconImage));
            //repaint();
@@ -363,7 +368,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 			//date = new JDate();
                     //System.out.println(Images.length);
                     Images=new String[1];
-                    Images[0]="Ponomar/languages/icons/Default1.jpg";
+                    Images[0]=Text.Phrases.get("NoIcon").toString();//"Ponomar/languages/icons/Default1.jpg";
                     Names=new String[1];
                     Names[0]=captions[2];
                     //return;
@@ -404,8 +409,8 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 		// for testing purposes only
 		// do not run as standalone -- may explode, leak, and cause serious injury
 		// (to your computer) [just kidding]
-		StringOp.dayInfo=new OrderedHashtable();
-                StringOp.dayInfo.put("LS","0");
+		OrderedHashtable dayInfo=new OrderedHashtable();
+                dayInfo.put("LS","0");
                 frame = new JFrame("IconDisplay");
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setTitle("Icon Viewer");
@@ -413,7 +418,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
                 String[] b={"Saint First and Second","Saint Second","Saint Third and Fourth and Fifteenth"};
 		//String[] a=new String[0];
                 //String[] b=new String[0];
-                IconDisplay jcalendar = new IconDisplay(a,b);
+                IconDisplay jcalendar = new IconDisplay(a,b,dayInfo);
 		jcalendar.setOpaque(true);
 		frame.setContentPane(jcalendar);
 		frame.pack();

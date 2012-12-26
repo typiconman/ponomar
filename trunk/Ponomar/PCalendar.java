@@ -13,10 +13,12 @@ class PCalendar implements Cloneable
         private JDate date; //Stores the date associated with the given calendar.
         public final static String julian="julian"; //Fixes the spelling of the Julian option
         public final static String gregorian="gregorian"; //Fixes the spelling of the Gregorian option
+        private StringOp Analyse=new StringOp();
 
-        protected PCalendar(JDate date1, String calendar){
+        protected PCalendar(JDate date1, String calendar,OrderedHashtable dayInfo){
             date=date1;
             type=calendar;
+            Analyse.dayInfo=dayInfo;
         }
         //Computes the Julian Day given the calendar type
         private double JulianDay(){
@@ -45,7 +47,7 @@ class PCalendar implements Cloneable
             if (type.equals(gregorian)){
                 difference=getDiff();
             }
-            PCalendar cutoff=new PCalendar(new JDate(9,1,date.getYear()),julian);
+            PCalendar cutoff=new PCalendar(new JDate(9,1,date.getYear()),julian,Analyse.dayInfo.clone());
             double year=date.getYear();
             double AM=5508- Math.floor(difference / 365) + year;
             if (JulianDay()>=cutoff.JulianDay()){
@@ -54,32 +56,32 @@ class PCalendar implements Cloneable
             return (int)AM;
         }
         public double getDiff(){
-            PCalendar test=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),julian);
-            PCalendar test2=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),gregorian);
+            PCalendar test=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),julian,Analyse.dayInfo.clone());
+            PCalendar test2=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),gregorian,Analyse.dayInfo.clone());
             return (test.JulianDay()-test2.JulianDay());
         }
 
         public Object clone()
 	{
-		return new PCalendar(date, type);
+		return new PCalendar(date, type,Analyse.dayInfo.clone());
 	}
 
         public static void main(String[] argz)
 	{
-            StringOp.dayInfo=new OrderedHashtable();
-            StringOp.dayInfo.put("LS", "en/");
-            PCalendar test=new PCalendar(new JDate(10,4,1957),gregorian);
+            OrderedHashtable dayInfo=new OrderedHashtable();
+            dayInfo.put("LS", "en/");
+            PCalendar test=new PCalendar(new JDate(10,4,1957),gregorian,dayInfo);
             System.out.println(test.JulianDay());
-            test=new PCalendar(new JDate(1,27,333),julian);
+            test=new PCalendar(new JDate(1,27,333),julian,dayInfo);
             System.out.println(test.JulianDay());
-            test=new PCalendar(new JDate(1,14,2012),julian);
-            PCalendar test2=new PCalendar(new JDate(1,14,2012),gregorian);
+            test=new PCalendar(new JDate(1,14,2012),julian,dayInfo);
+            PCalendar test2=new PCalendar(new JDate(1,14,2012),gregorian,dayInfo);
             System.out.println(test.JulianDay()-test2.JulianDay());
 
             System.out.println("Anno Mundi: "+test.getAM());
-            test=new PCalendar(new JDate(9,14,2012),julian);
+            test=new PCalendar(new JDate(9,14,2012),julian,dayInfo);
             System.out.println("Anno Mundi: "+test.getAM());
-            test=new PCalendar(new JDate(9,14,458973),gregorian);
+            test=new PCalendar(new JDate(9,14,458973),gregorian,dayInfo);
             System.out.println("Anno Mundi: "+test.getAM());
 	}
 

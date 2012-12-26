@@ -38,13 +38,15 @@ public class ReadText implements DocHandler
 	private static boolean read=false;
 	private static String header;
         private Helpers findLanguage;
+        private StringOp Analyse=new StringOp();
         //There is no assumption about the provenence of the text, it must still be determined
 		
 		
 	
-	public ReadText()
+	public ReadText(OrderedHashtable dayInfo)
 	{
-            findLanguage=new Helpers();
+            findLanguage=new Helpers(Analyse.dayInfo);
+            Analyse.dayInfo=dayInfo;
 	}
 	
 				
@@ -68,7 +70,7 @@ public class ReadText implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false) 
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -115,7 +117,7 @@ public class ReadText implements DocHandler
 		try
 		{
        			 text= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(Analyse.dayInfo.get("LS").toString(),filename)), "UTF8"));
        			 QDParser.parse(this,fr);
        			 if(text.length()==0)
        			 {
@@ -138,7 +140,7 @@ public class ReadText implements DocHandler
 		try
 		{
        			 header= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(Analyse.dayInfo.get("LS").toString(),filename)), "UTF8"));
        			 QDParser.parse(this,fr);
        			 if(header.length()==0)
        			 {

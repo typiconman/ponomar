@@ -17,11 +17,15 @@ class Helpers
 {
 	//private LanguagePack Text=new LanguagePack();
 	//private String[] PrimesNames=Text.obtainValues((String)Text.Phrases.get("Primes"));
-	
+	private StringOp Analyse=new StringOp();
+
+        public Helpers(OrderedHashtable dayInfo){
+            Analyse.dayInfo=dayInfo;
+        }
 	
 	public boolean closeFrame(String title)
 	{
-            LanguagePack Text=new LanguagePack();
+            LanguagePack Text=new LanguagePack(Analyse.dayInfo);
             String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 
             Object[] options = {LanguageNames[3],LanguageNames[5]};
@@ -49,7 +53,7 @@ class Helpers
 	}
 	public void SaveHTMLFile(String defaultname, String strOut)
 	{
-            LanguagePack Text=new LanguagePack();
+            LanguagePack Text=new LanguagePack(Analyse.dayInfo);
             String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 	 String[] HelperNames=Text.obtainValues((String)Text.Phrases.get("Helpers"));
 	 String[] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
@@ -171,6 +175,9 @@ class Helpers
             
             String addon="Ponomar/languages/";
             String currentPath=LanguagePath;
+            /*if(LanguagePath==null){
+                return "ERROR";
+            }*/
             File testFile=new File(addon+LanguagePath+BasePath);
             
             //System.out.println(currentPath);
@@ -199,7 +206,7 @@ class Helpers
         }
         public String getCopyright(){
 
-            LanguagePack Text=new LanguagePack();
+            LanguagePack Text=new LanguagePack(Analyse.dayInfo);
 		//String [] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
 		String[] Authors=Text.obtainValues((String) Text.Phrases.get("Authors"));
                 String Year=Text.Phrases.get("Year").toString();

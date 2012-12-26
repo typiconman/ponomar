@@ -38,7 +38,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="NameEnglish" Value="English" />
 <PHRASE Key="BibleV" Value="en/bible/kjv"/>
 <PHRASE Key="Authors" Value="Aleksandr Andreev/,Yuri Shardt"/>
-<PHRASE Key="Year" Value="2006-2010"/>
+<PHRASE Key="Year" Value="2006-2013"/>
 <PHRASE Key="And" Value=" and "/>
 <PHRASE Key="Copyright" Value="Copyright ^YY by ^AA"/>
 <PHRASE Key="Comma" Value=", "/>
@@ -119,4 +119,8 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="AM" Value=" (A.M. ^YYAM)" Note="This displays the anno mundi year in brackets in the calendar, only for the Julian date"/>
 <PHRASE Key="AMC" Value="1" Note="This determines whether or not the Anno Mundi value will be displayed. 1 = Yes, 0 = No."/>
 <PHRASE Key="AML" Value="A" Note="This determines whether the AM value comes before (B) the rest of the date or after (A) it"/>
+<PHRASE Key="NoIcon" Value="Ponomar/languages/cu/icons/4447/0.jpg" Note="This is a relative path to the default icon desired for the case where there is no icons available."/>
+<PHRASE Key="Options2" Value="Ponomar: Defaults/,Geographical Information/,Latitude: /,°, negative to the South/,Longitude: /,°, negative to the West/,Time Zone: /, h from Greenwich mean time/,Civil Information/,Display Calendar:/,Julian/,Gregorian/,OK/,CANCEL"/>
+<PHRASE Key="OptionMenu" Value="Defaults…"/>
+
 </LANGUAGEPACKS>

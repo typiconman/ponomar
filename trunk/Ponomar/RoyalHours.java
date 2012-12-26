@@ -51,13 +51,13 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 	//private final static String pentecostarionFileName = "xml/pentecostarion/"; // PENTECOSTARION FILE
 	private String filename;
 	private int lineNumber;
-	private LanguagePack Text=new LanguagePack();
-	private String[] PrimesNames=Text.obtainValues((String)Text.Phrases.get("RoyalHours"));
-	private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
+	private LanguagePack Text;//=new LanguagePack();
+	private String[] PrimesNames;//=Text.obtainValues((String)Text.Phrases.get("RoyalHours"));
+	private String[] LanguageNames;//=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 	//private String LentenK;				//ANY REQUIRED KATHISMA REFERENCED USING "LENTENK = "17"" WOULD BE THE 17th KATHISMA.
 	private JFrame frames;
-	private String[] FileNames=Text.obtainValues((String)Text.Phrases.get("File"));
-	private String[] HelpNames=Text.obtainValues((String)Text.Phrases.get("Help"));
+	private String[] FileNames;//=Text.obtainValues((String)Text.Phrases.get("File"));
+	private String[] HelpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
 	String newline = "\n";
 	private String strOut;
 	private JDate today;
@@ -68,13 +68,19 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 	private String DisplaySize="12";  //UNTIL A COMPLETE UNICODE FONT IS AVAILIBLE.
 	private Font DefaultFont=new Font("",Font.BOLD,12);		//CREATE THE DEFAULT FONT
 	private Font CurrentFont=DefaultFont;
+        private StringOp Analyse=new StringOp();
 
-
-	public RoyalHours(JDate date)
+	public RoyalHours(JDate date, OrderedHashtable dayInfo)
 	{
+            Analyse.dayInfo=dayInfo;
+            Text=new LanguagePack(dayInfo);
+            PrimesNames=Text.obtainValues((String)Text.Phrases.get("RoyalHours"));
+	LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
+        FileNames=Text.obtainValues((String)Text.Phrases.get("File"));
+	HelpNames=Text.obtainValues((String)Text.Phrases.get("Help"));
 		today=date;
-		helper=new Helpers();
-                StringOp.dayInfo.put("PS",1);
+		helper=new Helpers(Analyse.dayInfo);
+                Analyse.dayInfo.put("PS",1);
 
 		try
 		{
@@ -87,7 +93,7 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 			else
 			{
 				//strOut=strOut+"<p><Font Color='red'>Disclaimer: This is a preliminary attempt at creating the Primes service.</Font></p>";
-				//int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
+				//int LangCode=Integer.parseInt(Analyse.dayInfo.get("LS").toString());
                                 //if (LangCode==2 || LangCode==3 ){
                                     //strOut="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"><p><font face=\"Hirmos Ponomar\" size=\"5\">"+strOut+"</font></p>";
                                     //System.out.println("Added Font");
@@ -121,7 +127,7 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 		output.setCaretPosition(0);
                 JScrollPane scrollPane = new JScrollPane(output);
 		JMenuBar MenuBar=new JMenuBar();
-		MenuFiles demo=new MenuFiles();
+		MenuFiles demo=new MenuFiles(Analyse.dayInfo);
 		//PrimeSelector trial=new PrimeSelector();
 		MenuBar.add(demo.createFileMenu(this));
 		//MenuBar.add(trial.createPrimeMenu());
@@ -135,8 +141,8 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 		frames.setSize(800,700);
 		frames.setVisible(true);
 
-                Helpers orient=new Helpers();
-                orient.applyOrientation(frames,(ComponentOrientation)StringOp.dayInfo.get("Orient"));
+                Helpers orient=new Helpers(Analyse.dayInfo);
+                orient.applyOrientation(frames,(ComponentOrientation)Analyse.dayInfo.get("Orient"));
 
 
 
@@ -145,28 +151,28 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 	private String createHours() throws IOException
 	{
 		//OBTAIN THE DEFAULTS FOR THE SERVICE (WHAT WAS LAST USED!)
-		//StringOp.dayInfo.put("PS",SelectorP.getWhoValue());
+		//Analyse.dayInfo.put("PS",SelectorP.getWhoValue());
                 //MUST ADD APPROPRIATE SELECTOR OF TYPE OF SERVICE
 		//int TypeP=SelectorP.getTypeValue();
                 
-		Service ReadHours=new Service();
+		Service ReadHours=new Service(Analyse.dayInfo);
 
-		int Eday=Integer.parseInt(StringOp.dayInfo.get("nday").toString());
-                int day=Integer.parseInt(StringOp.dayInfo.get("doy").toString());
-                int dow=Integer.parseInt(StringOp.dayInfo.get("dow").toString());
+		int Eday=Integer.parseInt(Analyse.dayInfo.get("nday").toString());
+                int day=Integer.parseInt(Analyse.dayInfo.get("doy").toString());
+                int dow=Integer.parseInt(Analyse.dayInfo.get("dow").toString());
                 
 
                 if (!((Eday == -2) || (day == 4 && (dow != 6 && dow != 0)) || (day == 2 && dow == 5) || (day == 3 && dow == 5) || (day == 357 && ((dow != 6) && dow != 0)) || (day == 356 && dow == 5) || (day == 355 && dow == 5))){
                     return "Royal Hours are not served today.";
                 }
 		//BASED ON THE DATE DETERMINE THE CORRECT FLAGS
-                StringOp.dayInfo.put("PFlag",0); //FOR EVE OF NATIVITY!
+                Analyse.dayInfo.put("PFlag",0); //FOR EVE OF NATIVITY!
                 if ((Eday == -2)){
-                    StringOp.dayInfo.put("PFlag",2); //FOR GOOD FRIDAY
+                    Analyse.dayInfo.put("PFlag",2); //FOR GOOD FRIDAY
 
                 }
                 if ((day == 4 && (dow != 6 && dow != 0)) || (day == 2 && dow == 5) || (day == 3 && dow == 5)){
-                    StringOp.dayInfo.put("PFlag",1);
+                    Analyse.dayInfo.put("PFlag",1);
                 }
 
 
@@ -199,7 +205,7 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-			if (StringOp.evalbool(table.get("Cmd").toString()) == false)
+			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 
 				return;
@@ -247,7 +253,7 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 		try
 		{
        			 text= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),filename)), "UTF8"));
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.dayInfo.get("LS").toString(),filename)), "UTF8"));
        			 QDParser.parse(this,fr);
        			 if(text.length()==0)
        			 {
@@ -272,8 +278,8 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
         String name = source.getText();
        if (name.equals(HelpNames[2]))
         {
-        	 Helpers orient=new Helpers();
-                orient.applyOrientation(new About(),(ComponentOrientation)StringOp.dayInfo.get("Orient"));
+        	 Helpers orient=new Helpers(Analyse.dayInfo);
+                orient.applyOrientation(new About(Analyse.dayInfo),(ComponentOrientation)Analyse.dayInfo.get("Orient"));
         }
          if (name.equals(HelpNames[0]))
         {
@@ -350,17 +356,17 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 		System.out.println("RoyalHours.java running in Debug mode");
 		System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
                 
-                StringOp.dayInfo = new Hashtable();
+               OrderedHashtable dayInfo = new OrderedHashtable();
 
-                StringOp.dayInfo.put("dow",3);
-                StringOp.dayInfo.put("doy",357);
-                StringOp.dayInfo.put("nday",-256);
-                StringOp.dayInfo.put("LS",0); //ENGLISH
-                StringOp.dayInfo.put("PS",1);
+                dayInfo.put("dow",3);
+                dayInfo.put("doy",357);
+                dayInfo.put("nday",-256);
+                dayInfo.put("LS",0); //ENGLISH
+                dayInfo.put("PS",1);
 
                 JDate todays=new JDate(12,24,2009);
 
-		new RoyalHours(todays);
+		new RoyalHours(todays,dayInfo);
 	}
 
 
