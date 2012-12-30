@@ -58,7 +58,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="GospelSelection" Value="НЀ и҆спользо́вати Воздви́женскꙋю ѿстꙋ́пкꙋ/,И҆спользо́вати Воздви́женскꙋю ѿстꙋ́пкꙋ/,Лекционарий/,Выбо́ръ лекционария." />
 <PHRASE Key="Tones" Value="и҃-й/,а҃-й/,в҃-й/,г҃-й/,д҃-й/,е҃-й/,ѕ҃-й/,з҃-й/,и҃-й" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
 <PHRASE Key="Main" Value="по гражда́нскомꙋ стилю̀/,Восхо́дъ со́лнца: /,Захо́дъ со́лнца: /,Фа́за мѣ́сѧца: /,Гла́съ TT/,И҆нформа́цїѧ о҆ /,Вы̀ дѣ̀йствительно хочитѐ закры́ти про́граммꙋ;" />
-<PHRASE Key="gospel" Value="Є҆ѵлⷢїе"/>
+<PHRASE Key="gospel" Value="Є҆ѵⷢлїе"/>
 <PHRASE Key="apostol" Value="А҆пⷭлъ"/>
 <PHRASE Key="matins" Value="Оу҆́тренѧ"/>
 <PHRASE Key="vespers" Value="Вече́рнѧ"/>
@@ -124,4 +124,5 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="OptionsW" Value="700" Note="Width of the Options window"/>
 <PHRASE Key="OptionsH" Value="300" Note="Height of the Options window"/>
 <PHRASE Key="OptionMenu" Value="Defaults…"/>
+<PHRASE Key="BibleW2" Value="Toggle Verse Numbers on/off"/>
 </LANGUAGEPACKS>

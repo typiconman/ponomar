@@ -326,12 +326,31 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
             //THIS COMPUTES THE GREGORIAN CALENDAR DAYS: THERE ARE SOME ISSUES, NAMELY
             //ALIGNING THE JULIAN OBSERVATIONS (FEASTS/FASTS) WITH THEIR CORRESPONDING GREGORIAN DATE!
             //WE WILL NEED TO USE PCalendar to disambiguate between systems.
-		JDate tmpCalendar = (JDate)today.clone();
+		
+                PCalendar tmpJulianC = new PCalendar((JDate) today.clone(),"julian",Analyse.dayInfo);
+                PCalendar tmpGregorianC = new PCalendar(new JDate(tmpJulianC.getYearG(),tmpJulianC.getMonthG(),tmpJulianC.getDayG()),"gregorian",Analyse.dayInfo);
 		int firstDayOfWeek = 0;
-		// SET CALENDAR TO START OF THE MONTH
+		//implicitly using the Gregorian calendar at this point.
+                JDate tmpCalendar = new JDate(tmpJulianC.getYearG(),tmpJulianC.getMonthG(),tmpJulianC.getDayG());
+                
+                //We know need to know the correct feasts and the like
+                feasts = Paschalion.getFeasts(tmpGregorianC.getYearJ(),Analyse.dayInfo);
+		int[] fastsA = Paschalion.getFasts(tmpGregorianC.getYearJ());
+                int[] fastsB = Paschalion.getFasts(tmpGregorianC.getYearJ()-1);
+                int[] fastsP = Paschalion.getFasts(tmpGregorianC.getYearJ()+1);
+                
+                //we need to determine if we need to consider additional cases before and after since the Gregorian year and Julian year may not align.
+                feasts.putAll(Paschalion.getFeasts((int) tmpGregorianC.getYearJ()-1,Analyse.dayInfo));
+                feasts.putAll(Paschalion.getFeasts((int) tmpGregorianC.getYearJ()+1,Analyse.dayInfo));
+                //System.out.println(feasts);
+                fasts=Arrays.copyOf(fastsB, fastsA.length + fastsB.length+fastsP.length);
+                System.arraycopy(fastsA, 0, fasts, fastsB.length, fastsA.length);
+                System.arraycopy(fastsP,0,fasts,fastsB.length+fastsA.length,fastsP.length);
+
+                // SET CALENDAR TO START OF THE MONTH
 		tmpCalendar.subtractDays(tmpCalendar.getDay() - 1);
 		int firstDay = tmpCalendar.getDayOfWeek() - firstDayOfWeek;
-		JDate startOfYear = new JDate(1, 1, tmpCalendar.getYear());
+		JDate startOfYear = new JDate(1, 1, tmpCalendar.getYear()-1);
 
 		if (firstDay < 0)
 		{

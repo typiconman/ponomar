@@ -178,7 +178,7 @@ public class DivineLiturgy1 implements DocHandler {
                 
                 StringOp Transfers=new StringOp();
                 Transfers.dayInfo = Analyse.dayInfo.clone();//findLanguage.deepCopy((Hashtable)StringOp.dayInfo.clone());
-                Information3.dayInfo.putAll(Analyse.dayInfo);
+                Information3.dayInfo=Analyse.dayInfo.clone();
                 String dRankOld=Analyse.dayInfo.get("dRank").toString();
                 today.addDays(1);
                 // PUT THE RELEVANT DATA IN THE HASH FOR TOMORROW
@@ -202,7 +202,7 @@ public class DivineLiturgy1 implements DocHandler {
 
 
                 today.subtractDays(1);
-                Analyse.dayInfo.put("dow", today.getDayOfWeek());
+                /*Analyse.dayInfo.put("dow", today.getDayOfWeek());
                 Analyse.dayInfo.put("doy", today.getDoy());
                 nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
                 ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
@@ -211,7 +211,7 @@ public class DivineLiturgy1 implements DocHandler {
                 Analyse.dayInfo.put("nday", nday);
                 Analyse.dayInfo.put("ndayP", ndayP);
                 Analyse.dayInfo.put("ndayF", ndayF);
-                Analyse.dayInfo.put("dRank",dRankOld);
+                Analyse.dayInfo.put("dRank",dRankOld);*/
             }
             //NOW WE NEED TO CHECK YESTERDAY'S READINGS, BUT THIS WILL ONLY OCCUR ON A TUESDAY OR DEC. 6th
             transferRule = (Vector) Information.get("TransferRulesF");
@@ -225,7 +225,7 @@ public class DivineLiturgy1 implements DocHandler {
 
                 StringOp Transfers=new StringOp();
                 Transfers.dayInfo.putAll(Analyse.dayInfo.clone());
-                Information3.dayInfo.putAll(Analyse.dayInfo);
+                Information3.dayInfo=Analyse.dayInfo.clone();
                 String dRankOld=Analyse.dayInfo.get("dRank").toString();
                 today.subtractDays(1);
 
@@ -248,7 +248,7 @@ public class DivineLiturgy1 implements DocHandler {
 
 
                 today.addDays(1);
-                Analyse.dayInfo.put("dow", today.getDayOfWeek());
+                /*Analyse.dayInfo.put("dow", today.getDayOfWeek());
                 Analyse.dayInfo.put("doy", today.getDoy());
                 nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
                 ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
@@ -257,7 +257,7 @@ public class DivineLiturgy1 implements DocHandler {
                 Analyse.dayInfo.put("nday", nday);
                 Analyse.dayInfo.put("ndayP", ndayP);
                 Analyse.dayInfo.put("ndayF", ndayF);
-                Analyse.dayInfo.put("dRank",dRankOld);
+                Analyse.dayInfo.put("dRank",dRankOld);*/
             }
         }
 

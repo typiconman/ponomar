@@ -98,4 +98,5 @@ Note: The general format for the files is:
 <PHRASE Key="NoIcon" Value="Ponomar/languages/cu/icons/4447/0.jpg" Note="This is a relative path to the default icon desired for the case where there is no icons available."/>
 <PHRASE Key="Options2" Value="Ponomar: Defaults/,Geographical Information/,Latitude: /,°, negative to the South/,Longitude: /,°, negative to the West/,Time Zone: /, h from Greenwich mean time/,Civil Information/,Display Calendar:/,Julian/,Gregorian/,OK/,CANCEL"/>
 <PHRASE Key="OptionMenu" Value="Defaults…"/>
+<PHRASE Key="BibleW2" Value="Toggle Verse Numbers on/off"/>
 </LANGUAGEPACKS>

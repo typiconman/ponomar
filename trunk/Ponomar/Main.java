@@ -220,6 +220,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         splitter.setRightComponent(right);
 
         today = new JDate(calendar.getMonth(), calendar.getDay(), calendar.getYear());
+                
         setContentPane(splitter);
 
         Locale place = new Locale(Phrases.Phrases.get("Language").toString(), Phrases.Phrases.get("Country").toString());
@@ -412,7 +413,17 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         if (AMC.equals("1")) {
             PCalendar checking = new PCalendar(today, PCalendar.julian, Analyse.dayInfo);
             Format = (String) Phrases.Phrases.get("AM");
-            Format = Format.replace("^YYAM", Integer.toString((int) checking.getAM()));
+            if (Analyse.dayInfo.get("Ideographic").equals("1"))
+                {
+                    RuleBasedNumber convertN=new RuleBasedNumber(Analyse.dayInfo);
+                    
+                    Format = Format.replace("^YYAM", convertN.getFormattedNumber(Long.parseLong(Integer.toString((int) checking.getAM()))));
+
+                }
+                else
+                {
+		Format = Format.replace("^YYAM", Integer.toString((int) checking.getAM()));
+                }
         }
         //System.out.println("AML = " + AML.equals("B"));
         if (AML.equals("B")) {

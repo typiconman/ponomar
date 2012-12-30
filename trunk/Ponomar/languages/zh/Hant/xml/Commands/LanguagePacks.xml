@@ -106,4 +106,5 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="OptionsW" Value="700" Note="Width of the Options window"/>
 <PHRASE Key="OptionsH" Value="300" Note="Height of the Options window"/>
 <PHRASE Key="OptionMenu" Value="Defaults…"/>
+<PHRASE Key="BibleW2" Value="Toggle Verse Numbers on/off"/>
 </LANGUAGEPACKS>
