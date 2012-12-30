@@ -63,22 +63,28 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     private boolean changeIt = false;
     private boolean changeItBooks = true;	//ADDED Y.S.
     //ADDED Y.S. 20081211 n.s. DEFAULT DISPLAY PARAMETERS
-    private String ChapterName = "Chapter ^NN";
-    private String[] VerseNumber = {"Prologue", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180"};
-    private String[] ChapterNumber = {"Prologue", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180"};
+    private String ChapterName = "<p style=\"font-style:bold;color:red\">^NAME ^NN</p>";
+    private String[] VerseNumber = {"<p style=\"font-style:italic;font-size:10pt;\">^TT</p><BR>", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180"};
+    private String[] ChapterNumber = {"<p style=\"font-style:italic;font-size:10pt;\">^TT</p><BR>", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180"};
     private String CVSep = ":";
     private String Duration = "-";
     private String SelectionSeparator = ", ";
     private String InstructFirst;
-    private static final int NUM_BUTTONS = 7;
+    private static final int NUM_BUTTONS = 8;
     private LanguagePack Text;//= new LanguagePack();
     private final String[] captions;// = Text.obtainValues((String) Text.Phrases.get("BibleW"));
     private String printText;
     private String currentBible = "";
     private ComponentOrientation OrientText = ComponentOrientation.LEFT_TO_RIGHT;
     private String ChapterNameI = "^NN";
-    private String Header = "^NAME^CNN";
+    private String Header = "<h1 style=\"font-style:bold;color:red;\">^NAME ^CNN</h1>";
     private StringOp Analyse = new StringOp();
+    private String AbbrevFormat="^NAME ^CNN";
+    private String VerseNumbered="";
+    private String VerseNoNumbered="";
+    private String VerseLink=" ";
+    private boolean versed=true;
+    //private String prologue="<p style=\"font-style:italic;font-size:10px;\">^TT</p><BR>";
     
 
     // CONSTRUCTOR
@@ -167,11 +173,19 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 
             JButton button = new JButton();
             button.setActionCommand(Integer.toString(bnum));
-            button.setToolTipText(captions[bnum]);
+
+            
             button.addActionListener(this);
 
             if (imgURL != null) {
+                if (bnum<7){
                 button.setIcon(new ImageIcon(imgURL, captions[bnum]));
+                button.setToolTipText(captions[bnum]);
+                }else{
+                    String part2=(String)Text.Phrases.get("BibleW2");
+                    button.setIcon(new ImageIcon(imgURL,part2));
+                    button.setToolTipText(part2);
+                }
             } else {
                 button.setText(Integer.toString(bnum));
                 System.err.println(captions[9] + imgLocation);
@@ -308,6 +322,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                     alignText = "right";
                 }
             }
+
             String entry = "<html><p style=\"font-family:" + DisplayFontA + ";font-size:" + DisplaySizeA + "pt;text-align:" + alignText + "\">" + Name + "</p></html>";
             versions.put(lastversion, "<html><p style=\"font-family:" + DisplayFontA + ";font-size:" + DisplaySizeA + "pt;text-align:" + alignText + "\">" + Name + "</p></html>");
             findId.put(entry, lastversion);
@@ -331,6 +346,10 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                 ChapterName = (String) table.get("ChapterN");
                 ChapterNameI = (String) table.get("ChapterNI");
                 Header = (String) table.get("HeaderFormat");
+                AbbrevFormat=(String)table.get("AbbrevFormat");
+                VerseNumbered=(String)table.get("VerseNumFormat");
+                VerseNoNumbered=(String)table.get("VerseNoNumFormat");
+                VerseLink=(String)table.get("VerseLink");
                 String a = (String) table.get("VerseNo");
                 VerseNumber = a.split(",");
                 a = (String) table.get("ChapterNo");
@@ -557,6 +576,9 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
             } else if (butnum == 6) {
                 // print button clicked ...
                 helper.sendHTMLToPrinter(text);
+            }else if (butnum ==7){
+                versed=!versed;
+                update(curbook, curpassage);
             }
         }
     }
@@ -571,7 +593,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         changeIt = false;
         instructions = "";
 
-        String Stuff[] = parseReadings(newBook, newPassage, true);
+        String Stuff[] = parseReadings(newBook, newPassage, versed);
 
         curbook = newBook;
         curpassage = newPassage;
@@ -586,7 +608,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         headerA = headerA.replace("^CNN", formatPassage(curpassage));
         
 
-        printText = "<body style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "pt\">" + "<B>" + headerA + "</B><BR>" + Stuff[0] + "</body>";
+        printText = "<body style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "pt\">" + headerA +  Stuff[0] + "</body>";
 
         text.setText(printText);
        
@@ -622,7 +644,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     }
     //THIS FUNCTION HAS BEEN REPLACED BY THE SAME NAMED FUNCTION BUT A DIFFERENT SET OF CALLING ARGUMENTS.
 
-   private String process(String mText) {
+   /*private String process(String mText) {
         int k = mText.indexOf("**");
         if (k != -1) {
             // found scripture reading instructions ... parse
@@ -639,13 +661,13 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
             return " <SUP>" + VerseNumber[Integer.parseInt(mText.substring(0, k))] + "</SUP>" + mText.substring(k + 1); //ADDED A SPACE BETWEEN THE LAST SENTENCE AND THE VERSE NUMBER Y.S. AND CORRECTED MULTILINGUAL ISSUES
         }
 
-        k = mText.indexOf("#");
+        k = mText.indexOf("#");//THIS
         if (k != -1) {
             String ChapterNameF = ChapterName.replace("^NN", ChapterNumber[Integer.parseInt(mText.substring(1))]); //ToneFormat.replace("TT",toneNumbers[tone])
-            return "<BR><B>" + ChapterNameF + "</B>"; //ADDED MULTILINGUAL SUPPORT
+            return "<BR>" + ChapterNameF + ""; //ADDED MULTILINGUAL SUPPORT
         }
         return mText;
-    }
+    }*/
 
     private String process(String mText, boolean RedStuff) {
         int k = mText.indexOf("**");
@@ -655,15 +677,15 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
             String third = mText.substring(mText.lastIndexOf("**") + 2);
             String second = mText.substring(k + 2, mText.lastIndexOf("**"));
             if (RedStuff) {
-                mText = first + "<FONT Color=\"red\">**</FONT>" + third;
+                mText = first + "<SPAN style=\"color:red;\">**</SPAN>" + third;
             } else {
                 mText = first + "**" + third;
             }
             instructions += "**" + second + "<BR>";
         }
         if (RedStuff) {
-            mText = mText.replace("*(", "<FONT Color=\"red\">");
-            mText = mText.replace(")*", "</FONT>");
+            mText = mText.replace("*(", "<SPAN style=\"color:red;\">");
+            mText = mText.replace(")*", "</SPAN>");
         } else {
             //THIS JUST GIVES THE REQUIRED TEXT WITHOUT ANY COMMENTS
             int k2 = mText.indexOf("*(");
@@ -676,15 +698,31 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         }
         k = mText.indexOf("|");
         if (k != -1 && RedStuff) {
-            return " <SUP>" + VerseNumber[Integer.parseInt(mText.substring(0, k))] + "</SUP>" + mText.substring(k + 1); //ADDED A SPACE BETWEEN THE LAST SENTENCE AND THE VERSE NUMBER Y.S. AND CORRECTED MULTILINGUAL ISSUES
+            int verseNo=Integer.parseInt(mText.substring(0, k));
+            if (verseNo==0){
+                return VerseNumber[0].replace("^TT", mText.substring(k+2));
+            }
+            else{
+                String Versed=VerseNumbered.replace("^VN",VerseNumber[Integer.parseInt(mText.substring(0, k))]);
+                Versed=Versed.replace("^VT",mText.substring(k+2));
+                return Versed;
+            //return " <SUP>" + VerseNumber[Integer.parseInt(mText.substring(0, k))] + "</SUP>" + mText.substring(k + 1); //ADDED A SPACE BETWEEN THE LAST SENTENCE AND THE VERSE NUMBER Y.S. AND CORRECTED MULTILINGUAL ISSUES
+            }
         } else if (k != -1 && !RedStuff) {
-            return mText.substring(k + 1);
+            int verseNo=Integer.parseInt(mText.substring(0, k));
+            if (verseNo==0){
+                return VerseNumber[0].replace("^TT", mText.substring(k+2));
+            }
+            else{
+                return VerseNoNumbered.replace("^VT",mText.substring(k + 2));
+            }
         }
 
         k = mText.indexOf("#");
         if (k != -1 && RedStuff) {
             String ChapterNameF = ChapterName.replace("^NN", ChapterNumber[Integer.parseInt(mText.substring(1))]); //ToneFormat.replace("TT",toneNumbers[tone])
-            return "<BR><B>" + ChapterNameF + "</B>"; //ADDED MULTILINGUAL SUPPORT
+            ChapterNameF=ChapterNameF.replace("^NAME", (String) books.get(curbook));
+            return "<BR>" + ChapterNameF + ""; //ADDED MULTILINGUAL SUPPORT
         } else if (k != -1 && !RedStuff) {
             return "";
         }
@@ -782,7 +820,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         //TODO: get rid of these string operations. They are bad, and take up too much CPU time
         String passage = parts[1].replaceAll(" ", "");
         String output = "<A Href=reading#" + parts[0].replace(' ', '_') + "#" + passage + ">";
-        String headerA = Header.replace("^NAME", getAbbrev(parts[0]));
+        String headerA = AbbrevFormat.replace("^NAME", getAbbrev(parts[0]));
         headerA = headerA.replace("^CNN", formatPassage(passage));
         
         output += headerA + "</A>";
@@ -806,7 +844,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
             pChapters.add(d);
             pChapters.add(d + 1);
             pVerses.add(1);
-            pVerses.add(-1); // zero means -- stop before chapter starts //HELP HERE
+            pVerses.add(-1); // -1 means -- stop before chapter starts
         } else {
             // e.g. 2:11-3:2, 5, 13-14, 17-4:1
             String[] parts = newPassage.split(",");
@@ -883,7 +921,11 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                     }
 
                     if (printMe) {
-                        ret += process(mLine, RedStuff);
+                        if (!ret.equals("")){
+                        ret += VerseLink + process(mLine, RedStuff);
+                        }else{
+                            ret += process(mLine, RedStuff);
+                        }
                     }
                 }
 
@@ -902,7 +944,11 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                     }
                     //Correcting issues with not being able to read all the desired readings Y.S. 2008/12/12 n.s.
                     if (printMe || nCurVerse == Integer.parseInt(v.toString()) || nCurVerse == 0) {
-                        ret += process(mLine, RedStuff);
+                        if (!ret.equals("")){
+                        ret += VerseLink + process(mLine, RedStuff);
+                        }else{
+                            ret += process(mLine, RedStuff);
+                        }
                         if (nCurChapter == Integer.parseInt(pChapters.elementAt(0).toString()) && nCurVerse == Integer.parseInt(pVerses.elementAt(0).toString())) {
                             //THE FIRST VERSE HAS BEEN READ, THE INSTRUCTIONS ASSOCIATED WITH THIS VERSE NEED TO BE SAVED
                             InstructFirst = instructions;

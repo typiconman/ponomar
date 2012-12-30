@@ -285,7 +285,7 @@ public class Service implements DocHandler
 				int k=Reading1.lastIndexOf("_");
 				Bible reader=new Bible(Analyse.dayInfo);
 				parsedBible=reader.getText(Reading1.substring(0,k),Reading1.substring(k+1),false);
-				What2=parsedBible[0].substring(1);											
+				What2=parsedBible[0].substring(0);
 			}
 			if(table.get("getReading") != null)
 			{

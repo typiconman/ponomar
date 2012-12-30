@@ -1,5 +1,3 @@
-
-
 <DATA>
 <!-- THIS IS DivineLiturgy.xml VERSION 2.0 -->
 <COMMAND Name="Transfer" Value="1" Comment="This determines whether the sequential readings are (Value = 1) or are not (Value = 0) transferred if they must be skipped when a Class I, Class II or Class III(a) feast occurs on a given day." Cmd="GS == 1"/>

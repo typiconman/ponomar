@@ -35,10 +35,6 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
     //TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
     //DURING THE COURSE OF A SINGLE WEEK.
 
-    private final static String configFileName = "ponomar.config";   //CONFIGURATIONS FILE
-    private final static String lifeFileName = "xml/lives/";   // THE LOCATION OF THE Lives File
-    private final static String iconFileName = "images/icons/"; // THE LOCATION OF THE ICON
-    private final static String serviceFileName = "xml/Services/menaion/";
     private String life = "";
     private String tropar = "";
     private String troparT = ""; //Tone
@@ -60,33 +56,28 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
     private LanguagePack Text; //= new LanguagePack();
     private OrderedHashtable Podobni;
     
-    private static OrderedHashtable PrimesTK;
+    
     private static String FileNameIn = "xml/Services/PRIMES1/";
-    private static String FileNameOut = FileNameIn + "Primes.html";
     private static String text;
     private static boolean read = false;
     private static String Type;
-    private final static String triodionFileName = "xml/triodion/";   // TRIODION FILE
-    private final static String pentecostarionFileName = "Pxml/pentecostarion/"; // PENTECOSTARION FILE
-    private String filename;
-    private int lineNumber;
-    private String[] PrimesNames;// = Text.obtainValues((String) Text.Phrases.get("Primes"));
+    
+    
     private String[] LanguageNames;// = Text.obtainValues((String) Text.Phrases.get("LanguageMenu"));
-    private String LentenK;				//ANY REQUIRED KATHISMA REFERENCED USING "LENTENK = "17"" WOULD BE THE 17th KATHISMA.
+    
     private JFrame frames;
     private String[] FileNames;// = Text.obtainValues((String) Text.Phrases.get("File"));
     private String[] HelpNames;// = Text.obtainValues((String) Text.Phrases.get("Help"));
     String newline = "\n";
     private String strOut;
-    private JDate today;
+    
     private Helpers helper;// = new Helpers();
     //private PrimeSelector SelectorP=new PrimeSelector();
     private PrintableTextPane output;
     //private JEditorPane output;
-    private String DisplayFont = new String(); //ALLOWS A CUSTOM FONT AND SIZE TO BE SPECIFIED FOR A GIVEN BIBLE READING: REQUIRED FOR OLD CHURCH SLAVONIC AT PRESENT
-    private String DisplaySize = "12";  //UNTIL A COMPLETE UNICODE FONT IS AVAILIBLE.
-    private Font DefaultFont = new Font("", Font.BOLD, 12);		//CREATE THE DEFAULT FONT
-    private Font CurrentFont = DefaultFont;
+   
+   
+    
     private Commemoration1 SaintInfo2;
     private Bible bible;
     private String name2;
@@ -96,7 +87,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         //Get the Podobni
         Analyse.dayInfo=dayInfo;
         Text = new LanguagePack(dayInfo);
-        PrimesNames = Text.obtainValues((String) Text.Phrases.get("Primes"));
+        //PrimesNames = Text.obtainValues((String) Text.Phrases.get("Primes"));
     LanguageNames = Text.obtainValues((String) Text.Phrases.get("LanguageMenu"));
 
     FileNames = Text.obtainValues((String) Text.Phrases.get("File"));
@@ -114,25 +105,11 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
     }
 
     public void refresh(Commemoration1 SaintInfo) {
-        //Get Life, Tropar, Icon, and Liturgical Information!
-        //Get Life and TroparA
-        /*if (SaintId.equals(""))
-        {
-            SaintId="-100";
-        }
-        name="";
-        try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(StringOp.dayInfo.get("LS").toString(),lifeFileName + SaintId + ".xml")), "UTF8"));
-            QDParser.parse(this, frf);
-        } catch (Exception Primes) {
-            //Primes.printStackTrace();
-            }*/
+        
         SaintInfo2=SaintInfo;
         CreateWindow();
 
-        //PrimesWindow("<h1 style=\"text-align: center;\">"+name+"</h1>"+life+"</p><h2>Troparion</h2> <small>"+troparT+"</small><p>"+tropar+"</p><h2>Kontakion</h2><small>"+kondakT+"/"+kondakP+"</small><p>"+kondak+"</p>");
-//"<img id=\"137\" src=\"file://C:\\Users/Yuri/Ponomar Main/Subversion Version/ponomar/"+iconFileName+"137.jpg\" width=\"238\" height=\"300\" alt=\"\" />","<p>"
-    }
+  }
 
     private void CreateWindow()//(String textOut)
     {
@@ -192,7 +169,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         String[] MainNames = Text.obtainValues((String) Text.Phrases.get("Main"));
         String[] SaintInfo = Text.obtainValues((String) Text.Phrases.get("LivesW"));
         String textOut = "";
-        //System.out.println(SaintInfo[1]);
+        
         if (name.equals("")) {
             textOut = SaintInfo[6];
         } else {
@@ -223,10 +200,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
                 DisplayFont = value1.getFontName();
             }
             DisplaySize = Integer.toString(Math.max(Integer.parseInt(DisplaySize), value1.getSize())); //If the default user's font size is larger than the required there is not need to change it.
-            //The specified fonts sizes are the mininum required.
-            //    Style+="body {font-family:"+DisplayFont+";font-size:"+DisplaySize+"}\n";
-            //System.out.println("["+tropar+"]"+tropar.length());
-            //System.out.println(name + ": " + tropar + "; " + tropar.length()+"; "+tropar.equals("\n \n"));
+           
             if (tropar != null && tropar != "" && !tropar.equals("\n \n")) {
                 textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[1] + "</h2>";
                 String ToneFormat = new String();
@@ -340,12 +314,15 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         
         frames = new JFrame((String) Text.Phrases.get("0") + (String) Text.Phrases.get("Colon") + name2);
         
-        //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //frames.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JPanel left=new JPanel();
+        JPanel right=new JPanel();
+        left.setLayout(new BorderLayout());
+        right.setLayout(new BoxLayout(right, BoxLayout.PAGE_AXIS));
 
         textOut = textOut.replaceAll("</br>", "<BR>");
         textOut = textOut.replaceAll("<br>", "<BR>");
         strOut = textOut;
-        //System.out.println(textOut);
         JPanel contentPane = new JPanel(new BorderLayout());
         contentPane.setOpaque(true);
         output = new PrintableTextPane();
@@ -357,6 +334,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         //output.setText(header);
         output.setText(textOut);
         output.setCaretPosition(0);
+        contentPane.add(output);
 
         JScrollPane scrollPane = new JScrollPane(output);
         JMenuBar MenuBar = new JMenuBar();
@@ -369,12 +347,19 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         //trial.addPropertyChangeListener(this);
 
         contentPane.add(scrollPane, BorderLayout.CENTER);
-        frames.setContentPane(contentPane);
-        frames.pack();
-        frames.setSize(800, 700);
-        frames.setVisible(true);
+        right.add(contentPane);
 
-        /*OrderedHashtable iconsM=(OrderedHashtable)SaintInfo2.getDisplayIcons();
+        JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        splitter.setLeftComponent(left);
+        splitter.setRightComponent(right);
+
+        frames.add(splitter);
+
+
+        //frames.setContentPane(contentPane);
+        
+
+        OrderedHashtable iconsM=(OrderedHashtable)SaintInfo2.getDisplayIcons();
         Vector ImageList=(Vector)iconsM.get("Images");
                 Vector NamesList=(Vector)iconsM.get("Names");
                 String[] iconImages=new String[ImageList.size()];
@@ -383,15 +368,20 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
                 iconImages=(String[])ImageList.toArray(new String[ImageList.size()]);
                 iconNames=(String[])NamesList.toArray(new String[NamesList.size()]);
         System.out.println("Icon Length is: " + iconNames.length);
-        IconDisplay icons=new IconDisplay(iconImages,iconNames);
-        contentPane.add(icons);
-        textOut+=icons;
-        output.setText(textOut);*/
+        IconDisplay icons=new IconDisplay(iconImages,iconNames,Analyse.dayInfo);
+        left.add(new JPanel(),BorderLayout.NORTH);
+        left.add(icons,BorderLayout.CENTER);
+        left.add(new JPanel(),BorderLayout.SOUTH);
+//        contentPane.add(icons);
+  //      textOut+=icons;
+    //    output.setText(textOut);
 
         Helpers orient = new Helpers(Analyse.dayInfo);
 
         orient.applyOrientation(frames,(ComponentOrientation)Analyse.dayInfo.get("Orient"));
-
+        frames.pack();
+        frames.setSize(800, 700);
+        frames.setVisible(true);
         //scrollPane.top();
     }
 

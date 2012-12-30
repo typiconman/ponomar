@@ -120,4 +120,5 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="NoIcon" Value="Ponomar/languages/cu/icons/4447/0.jpg" Note="This is a relative path to the default icon desired for the case where there is no icons available."/>
 <PHRASE Key="Options2" Value="Ponomar : Options/,Information géographique/,Latitude : /,°, négative au sud/,Longitude : /,°, négative à l’ouest/,Fuseau horaire : /, h à partir du temps moyen/,Information civile/,Affichage calendrier :/,julien/,grégorien/,Oui/,Annuler"/>
 <PHRASE Key="OptionMenu" Value="Défaults…"/>
+<PHRASE Key="BibleW2" Value="Bascule l’affichage des numéros de versets"/>
 </LANGUAGEPACKS>

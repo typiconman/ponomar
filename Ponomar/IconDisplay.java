@@ -33,8 +33,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
 	private JPanel iconImage;
         private JPanel caption;
         private String pathImage="Ponomar/images/";
-	private JComboBox monthChooser;
-	private PrintableTextPane yearChooser;
+	
         private int Number=0;
         private String[] Images;
         private String[] Names;
@@ -69,7 +68,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
                 Images=ImagesF;
                 Names=NamesF;
 		//setName("Icon Viewer");
-		setLayout(new BorderLayout());
+		setLayout(new BoxLayout(this,BoxLayout.PAGE_AXIS));
                 //System.out.println(Images.length);
 
 		if (Images.length<=0)
@@ -105,6 +104,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
                 previous.setActionCommand("previous");
                 previous.setToolTipText(captions[0]);
                 previous.addActionListener(this);
+                
 
                 if (imgURL != null) {
                     previous.setIcon(new ImageIcon(imgURL, captions[0]));//captions[bnum]));
@@ -112,23 +112,31 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
                     //button.setText(Integer.toString(bnum));
                     //System.err.println(captions[9] + imgLocation);
                 }
+                caption.setLayout(new BorderLayout());
                 caption.add(previous,BorderLayout.WEST);
 
 
                 //The textbox name
                 Face=Analyse.dayInfo.get("FontFaceM").toString();
                 Size=Analyse.dayInfo.get("FontSizeM").toString();
-                text = new PrintableTextPane();
+                text = new JTextPane();
                 text.setEditable(false);
                 text.setContentType("text/html");
+                JTextPane testing =new JTextPane();
+                //text.setMaximumSize(new Dimension(1000,1500));
+                text.setFont(new Font(Face,Font.PLAIN,Integer.parseInt(Size)));
+                JScrollPane scroller =new JScrollPane(text);
+                
+
 
                 //JTextPane test=new JTextPane();
-                text.setFont(new Font(Face,Font.PLAIN,Integer.parseInt(Size)));
+                
 
                 // instructionsText.setComponentOrientation(OrientText);
                 //text.setText(Names[Number]);
                 //text.setFont();
-                caption.add(text,BorderLayout.EAST);
+                caption.add(text,BorderLayout.CENTER);
+                caption.setMaximumSize(new Dimension(1000,1000));
                 //if(Images.length>1){
                     next = new JButton();
                 next = new JButton();
@@ -275,7 +283,7 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
              label.setIcon(new ImageIcon(scaledImage));
             label.setHorizontalAlignment(JLabel.CENTER);
             iconImage.add(label);
-            text.setText("<body style=\"font-family:"+Face+";font-size:"+Size+"pt\">"+ Names[Number]+"</body>");            
+            text.setText("<html><body style=\"font-family:"+Face+";font-size:"+Size+"pt;text-align: center;\">"+ Names[Number]+"</body></html>");
            //frame.pack();
            //System.out.Println(getAncestorOfClass(new JFrame(),iconImage));
            //repaint();
