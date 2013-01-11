@@ -2,6 +2,7 @@
 <SERVICE Type="2">
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Heb_11:33-12:2" Pericope="330"/>
+<!-- note that this should be Heb. 11:33-12:2a (§330) -->
 <SCRIPTURE Type="gospel" Reading="Lk_21:12-19" Pericope="106"/>
 </LITURGY>
 </SERVICE>

@@ -1,7 +1,7 @@
 <SAINT>
 <SERVICE Type="0">
 <MATINS>
-<SCRIPTURE Type="1" Reading="Mt_21:18-43" Pericope="84"/>
+<SCRIPTURE Type="1" Reading="Mt_21:18-43" Pericope="84-88"/>
 </MATINS>
 <SEXTE>
 <SCRIPTURE Type="1" Reading="Ezek_1:1-20"/>
@@ -11,6 +11,6 @@
 <SCRIPTURE Type="2" Reading="Job_1:1-12"/>
 </VESPERS>
 <LITURGY>
-<SCRIPTURE Type="gospel" Reading="Mt_24:3-35" Pericope="98"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:3-35" Pericope="98-101"/>
 </LITURGY>
 </SERVICE></SAINT>

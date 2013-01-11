@@ -9,7 +9,7 @@
 <SCRIPTURE Type="1" Reading="Lk_1:24-25, 57-68, 76, 80" Cmd="dow != 0" Pericope="3"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Rom_13:12-14:4" Pericope="112"/>
+<SCRIPTURE Type="apostol" Reading="Rom_13:11-14:4" Pericope="112"/> <!-- SHOULD BE 13:11b, BUT WE CANNOT SUPPORT THE a/b NOTATION YET! -->
 <SCRIPTURE Type="gospel" Reading="Lk_1:1-25, 57-68, 76, 80" Pericope="1"/>
 </LITURGY>
 </SERVICE>
