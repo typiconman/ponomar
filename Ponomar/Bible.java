@@ -711,7 +711,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         } else if (k != -1 && !RedStuff) {
             int verseNo=Integer.parseInt(mText.substring(0, k));
             if (verseNo==0){
-                return VerseNumber[0].replace("^TT", mText.substring(k+2));
+                return "";//VerseNumber[0].replace("^TT", mText.substring(k+2));
             }
             else{
                 return VerseNoNumbered.replace("^VT",mText.substring(k + 2));
