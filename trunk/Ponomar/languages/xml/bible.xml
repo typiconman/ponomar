@@ -214,34 +214,34 @@ GNU General Public License for details.
 	<BOOK Id="Song" Name="Пѣ́снь пѣ́сней" Chapters="8" Short="Песн." Intro=""/>
 	<BOOK Id="Wisd" Name="Премꙋ́дрости соломѡ́ни" Chapters="19" Short="Прем. Солом." Intro="Премꙋ́дрости соломѡ́новы чте́нїе"/>
 	<BOOK Id="Sirach" Name="Сїрахъ" Chapters="51" Short="Сир." Intro="" Note="The French Version has an extra chapter 52!"/>
-	<BOOK Id="Isa" Name="И҆са́їи" Chapters="66" Short="Ис." Intro="Прⷪро́чества и҆са́їина чте́нїе"/>
-	<BOOK Id="Jerem" Name="І҆еремі́и" Chapters="52" Short="Иер." Intro="Прⷪро́чества їеремі́ина чте́нїе"/>
+	<BOOK Id="Isa" Name="И҆са́їи" Chapters="66" Short="Ис." Intro="Прⷪ҇ро́чества и҆са́їина чте́нїе"/>
+	<BOOK Id="Jerem" Name="І҆еремі́и" Chapters="52" Short="Иер." Intro="Прⷪ҇ро́чества їеремі́ина чте́нїе"/>
 	<BOOK Id="Lamen" Name="Пла́чь і҆еремі́евъ" Chapters="5" Short="Плачь" Intro=""/>
 	<BOOK Id="Epistle" Name="Посла́нїе їеремі́ино" Chapters="1" Short="По. Иер." Intro=""/>
-	<BOOK Id="Baruch" Name="Варꙋ́хъ" Chapters="5" Short="Вар." Intro="Прⷪро́чества і҆еремі́ина чте́нїе"/>
-	<BOOK Id="Ezek" Name="І҆езекі́илѧ" Chapters="48" Short="Иез." Intro="Прⷪро́чества і҆езекі́илева чте́нїе"/>
-	<BOOK Id="Dan" Name="Данїи́ла" Chapters="14" Short="Дан." Intro="Прⷪро́чества даиїи́лова чте́нїе"/>
+	<BOOK Id="Baruch" Name="Варꙋ́хъ" Chapters="5" Short="Вар." Intro="Прⷪ҇ро́чества і҆еремі́ина чте́нїе"/>
+	<BOOK Id="Ezek" Name="І҆езекі́илѧ" Chapters="48" Short="Иез." Intro="Прⷪ҇ро́чества і҆езекі́илева чте́нїе"/>
+	<BOOK Id="Dan" Name="Данїи́ла" Chapters="14" Short="Дан." Intro="Прⷪ҇ро́чества даиїи́лова чте́нїе"/>
 	<BOOK Id="Hos" Name="Ѡ҆сі́а" Chapters="14" Short="Ос." Intro=""/>
-	<BOOK Id="Joel" Name="І҆ѡи́ль" Chapters="3" Short="Иоиль" Intro="Прⷪро́чества і҆ѡ́илева чте́нїе"/>
+	<BOOK Id="Joel" Name="І҆ѡи́ль" Chapters="3" Short="Иоиль" Intro="Прⷪ҇ро́чества і҆ѡ́илева чте́нїе"/>
 	<BOOK Id="Amos" Name="А҆мѡ́съ" Chapters="9" Short="Ам." Intro=""/>
 	<BOOK Id="Obad" Name="А҆вді́й " Chapters="1" Short="Авд." Intro=""/>
-	<BOOK Id="Jona" Name="І҆ѡ́ны" Chapters="4" Short="Ион." Intro="Прⷪро́чества і҆ѡ́нина чте́нїе"/>
-	<BOOK Id="Mica" Name="Мїхе́й" Chapters="7" Short="Мих." Intro="Прⷪро́чества мїхе́ина чте́нїе" Note="There may be some issue with Chapter 7 and the initial word of Verses 1 and 2. The .pdf and .hip files do not agree on what is to be displayed!"/>
+	<BOOK Id="Jona" Name="І҆ѡ́ны" Chapters="4" Short="Ион." Intro="Прⷪ҇ро́чества і҆ѡ́нина чте́нїе"/>
+	<BOOK Id="Mica" Name="Мїхе́й" Chapters="7" Short="Мих." Intro="Прⷪ҇ро́чества мїхе́ина чте́нїе" Note="There may be some issue with Chapter 7 and the initial word of Verses 1 and 2. The .pdf and .hip files do not agree on what is to be displayed!"/>
 	<BOOK Id="Nahum" Name="Наꙋ́мъ" Chapters="3" Short="Наум" Intro=""/>
 	<BOOK Id="Habak" Name="А҆ввакꙋ́мъ" Chapters="3" Short="Авв." Intro=""/>
-	<BOOK Id="Zeph" Name="Софо́нїа" Chapters="3" Short="Соф." Intro="Прⷪро́чества софо́нїева чте́нїе"/>
+	<BOOK Id="Zeph" Name="Софо́нїа" Chapters="3" Short="Соф." Intro="Прⷪ҇ро́чества софо́нїева чте́нїе"/>
 	<BOOK Id="Hagg" Name="А҆гге́й" Chapters="2" Short="Агг." Intro=""/>
-	<BOOK Id="Zech" Name="Заха́рїа" Chapters="14" Short="Зах." Intro="Прⷪро́чества заха́рїина чте́нїе"/>
-	<BOOK Id="Mal" Name="Малахі́а" Chapters="4" Short="Мал." Intro="Прⷪро́чества малахі́ина чте́нїе"/>
+	<BOOK Id="Zech" Name="Заха́рїа" Chapters="14" Short="Зах." Intro="Прⷪ҇ро́чества заха́рїина чте́нїе"/>
+	<BOOK Id="Mal" Name="Малахі́а" Chapters="4" Short="Мал." Intro="Прⷪ҇ро́чества малахі́ина чте́нїе"/>
 	<BOOK Id="I_Macc" Name="а҃ маккавей́скаѧ" Chapters="16" Short="1 Макк." Intro=""/>
 	<BOOK Id="II_Macc" Name="в҃ маккавей́скаѧ" Chapters="15" Short="2 Макк." Intro=""/>
 	<BOOK Id="III_Macc" Name="г҃ маккавей́скаѧ" Chapters="7"  Short="3 Макк." Intro=""/>
 	<BOOK Id="III_Esdra" Name="г҃ є҆́здры" Chapters="16" Short="3 Езд." Intro="" Note="Proper Church Slavonic version of III Esdras added, based on a text avaialable at a Bulgarian Orthodox site."/>
-	<BOOK Id="Mt" Name="Ѿ Матѳе́а" Chapters="28" Short="Мф." Intro="Ѿ матѳе́а ст҃а́гѡ є҆ѵⷢлїа чте́нїе"/>
-	<BOOK Id="Mk" Name="Ѿ Ма́рка" Chapters="16" Short="Мк." Intro="Ѿ ма́рка ст҃а́гѡ є҆ѵⷢлїа чте́нїе"/>
-	<BOOK Id="Lk" Name="Ѿ лꙋкѝ" Chapters="24" Short="Лк." Intro="Ѿ лꙋкѝ ст҃а́гѡ є҆ѵⷢлїа чте́нїе"/>
-	<BOOK Id="Jn" Name="Ѿ і҆ѡа́нна" Chapters="21" Short="Ин." Intro="Ѿ і҆ѡа́нна ст҃а́гѡ є҆ѵⷢлїа чте́нїе"/>
-	<BOOK Id="Acts" Name="Дѣѧ̑нїѧ ст҃ы́хъ а҆пⷭ﻿лъ" Chapters="28" Short="Деян." Intro="Дѣѧ̑нїй ст҃ы́хъ а҆пⷭлъ чте́нїе"/>
+	<BOOK Id="Mt" Name="Ѿ Матѳе́а" Chapters="28" Short="Мф." Intro="Ѿ матѳе́а ст҃а́гѡ є҆ѵⷢ҇лїа чте́нїе"/>
+	<BOOK Id="Mk" Name="Ѿ Ма́рка" Chapters="16" Short="Мк." Intro="Ѿ ма́рка ст҃а́гѡ є҆ѵⷢ҇лїа чте́нїе"/>
+	<BOOK Id="Lk" Name="Ѿ лꙋкѝ" Chapters="24" Short="Лк." Intro="Ѿ лꙋкѝ ст҃а́гѡ є҆ѵⷢ҇лїа чте́нїе"/>
+	<BOOK Id="Jn" Name="Ѿ і҆ѡа́нна" Chapters="21" Short="Ин." Intro="Ѿ і҆ѡа́нна ст҃а́гѡ є҆ѵⷢ҇лїа чте́нїе"/>
+	<BOOK Id="Acts" Name="Дѣѧ̑нїѧ ст҃ы́хъ а҆пⷭ҇﻿лъ" Chapters="28" Short="Деян." Intro="Дѣѧ̑нїй ст҃ы́хъ а҆пⷭ҇лъ чте́нїе"/>
 	<BOOK Id="Jas" Name="І҆а́кѡвле" Chapters="5" Short="Иак." Intro=""/>
 	<BOOK Id="I_Pet" Name="Пе́рвое петра̀" Chapters="5" Short="1 Петр." Intro="Собо́рнагѡ посла́нїѧ петро́ва чте́нїе"/>
 	<BOOK Id="II_Pet" Name="Второ́е петра̀" Chapters="3" Short="2 Петр." Intro=""/>
@@ -249,20 +249,20 @@ GNU General Public License for details.
 	<BOOK Id="II_Jn" Name="Второ́е і҆ѡа́нна" Chapters="1" Short="2 Ин." Intro=""/>
 	<BOOK Id="III_Jn" Name="Тре́тїе і҆ѡа́нна" Chapters="1" Short="3 Ин." Intro=""/>
 	<BOOK Id="Jude" Name="І҆ꙋ́дино" Chapters="1" Short="Иуд." Intro=""/>
-	<BOOK Id="Rom" Name="Къ ри́млѧнѡмъ" Chapters="16" Short="Рим." Intro="Къ ри́млѧнѡмъ посла́нїѧ ст҃гѡ а҆пⷭла па́ѵла чте́нїе"/>
+	<BOOK Id="Rom" Name="Къ ри́млѧнѡмъ" Chapters="16" Short="Рим." Intro="Къ ри́млѧнѡмъ посла́нїѧ ст҃гѡ а҆пⷭ҇ла па́ѵла чте́нїе"/>
 	<BOOK Id="I_Cor" Name="Пе́рвое къ корі́нѳѧнѡмъ" Chapters="16" Short="1 Кор." Intro=""/>
 	<BOOK Id="II_Cor" Name="Второ́е къ корі́нѳѧнѡмъ" Chapters="13" Short="2 Кор." Intro=""/>
-	<BOOK Id="Gal" Name="Къ гала́тѡмъ" Chapters="6" Short="Гал." Intro="Къ гала́тѡмъ посла́нїѧ ст҃гѡ а҆пⷭла па́ѵла чте́нїе"/>
-	<BOOK Id="Eph" Name="Ко є҆фесе́ємъ" Chapters="6" Short="Еф." Intro="Ко є҆фесе́ємъ посла́нїѧ ст҃гѡ а҆пⷭла па́ѵла чте́нїе"/>
-	<BOOK Id="Philip" Name="Къ фїлїпписі́ємъ" Chapters="4" Short="Флп." Intro="Къ фїлїпписі́ємъ посла́нїѧ ст҃гѡ а҆пⷭла па́ѵла чте́нїе"/>
-	<BOOK Id="Col" Name="Къ колосса́ємъ  " Chapters="4" Short="Кол." Intro="Къ колосса́ємъ посла́нїѧ ст҃гѡ а҆пⷭла па́ѵла чте́нїе"/>
+	<BOOK Id="Gal" Name="Къ гала́тѡмъ" Chapters="6" Short="Гал." Intro="Къ гала́тѡмъ посла́нїѧ ст҃гѡ а҆пⷭ҇ла па́ѵла чте́нїе"/>
+	<BOOK Id="Eph" Name="Ко є҆фесе́ємъ" Chapters="6" Short="Еф." Intro="Ко є҆фесе́ємъ посла́нїѧ ст҃гѡ а҆пⷭ҇ла па́ѵла чте́нїе"/>
+	<BOOK Id="Philip" Name="Къ фїлїпписі́ємъ" Chapters="4" Short="Флп." Intro="Къ фїлїпписі́ємъ посла́нїѧ ст҃гѡ а҆пⷭ҇ла па́ѵла чте́нїе"/>
+	<BOOK Id="Col" Name="Къ колосса́ємъ  " Chapters="4" Short="Кол." Intro="Къ колосса́ємъ посла́нїѧ ст҃гѡ а҆пⷭ҇ла па́ѵла чте́нїе"/>
 	<BOOK Id="I_Thess" Name="Пе́рвое къ солꙋ́нѧнѡмъ" Chapters="5" Short="1 Сол." Intro=""/>
 	<BOOK Id="II_Thess" Name="Второ́е къ солꙋ́нѧнѡмъ" Chapters="3" Short="2 Сол." Intro=""/>
 	<BOOK Id="I_Tim" Name="Пе́рвое къ тїмоѳе́ю " Chapters="6" Short="1 Тим." Intro=""/>
 	<BOOK Id="II_Tim" Name="Второ́е къ тїмоѳе́ю" Chapters="4" Short="2 Тим." Intro=""/>
-	<BOOK Id="Tit" Name="Къ ті́тꙋ" Chapters="3" Short="Тит." Intro="Къ ті́тꙋ посла́нїѧ ст҃гѡ а҆пⷭла па́ѵла чте́нїе"/>
-	<BOOK Id="Philemon" Name="Къ фїлимо́нꙋ" Chapters="1" Short="Флм." Intro="Къ фїлимо́нꙋ посла́нїѧ ст҃гѡ а҆пⷭла па́ѵла чте́нїе"/>
-	<BOOK Id="Heb" Name="Ко є҆вре́ємъ" Chapters="13" Short="Евр." Intro="Ко є҆вре́ємъ посла́нїѧ ст҃гѡ а҆пⷭла па́ѵла чте́нїе"/>
+	<BOOK Id="Tit" Name="Къ ті́тꙋ" Chapters="3" Short="Тит." Intro="Къ ті́тꙋ посла́нїѧ ст҃гѡ а҆пⷭ҇ла па́ѵла чте́нїе"/>
+	<BOOK Id="Philemon" Name="Къ фїлимо́нꙋ" Chapters="1" Short="Флм." Intro="Къ фїлимо́нꙋ посла́нїѧ ст҃гѡ а҆пⷭ҇ла па́ѵла чте́нїе"/>
+	<BOOK Id="Heb" Name="Ко є҆вре́ємъ" Chapters="13" Short="Евр." Intro="Ко є҆вре́ємъ посла́нїѧ ст҃гѡ а҆пⷭ҇ла па́ѵла чте́нїе"/>
 	<BOOK Id="Apoc" Name="А҆пока́лѷѱїсъ" Chapters="22" Short="Апок." Intro=""/>
 	<BOOK Id="Composite" Name="Composite" Chapters="8" Short="Composite" Intro=""/>
 
