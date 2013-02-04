@@ -66,12 +66,38 @@ sub getBookNameShort {
 	my $self = shift;
 	my $book = shift;
 	
-	return ${$self->{_bibleBookNames}}{$book};
+	return ${$self->{_bibleBookNames}}{$book}{Short};
+}
+
+=item getBookName ( $book )
+
+Returns the full form of the name of the book C<$book> in the current Bible
+
+=cut
+
+sub getBookName {
+	my $self = shift;
+	my $book = shift;
+	
+	return ${$self->{_bibleBookNames}}{$book}{Full};
+}
+
+=item exists ( $book )
+
+Returns true if the book C<$book> exists in the current Bible
+
+=cut
+
+sub exists {
+	my $self = shift;
+	my $book = shift;
+	
+	return exists ${$self->{_bibleBookNames}}{$book};
 }
 
 =item getPassage ($reading)
 
-Returns the text of the Bible passage given by the Reading object C<$reading>
+Returns a set of verse objects with the text of the Bible passage given by the Reading object C<$reading>
 
 =back
 
@@ -126,8 +152,49 @@ sub getPassage {
 
 	# we now have a set of starting and stopping points in @chapters and @verses
 	# we are ready to read the Bible!
+	local $language = $self->{Lang};
+	$book =~ s/ /_/; # UGH!
+	my $file = findBottomUp($language, "bible/" . $self->{_version} . "/" . $book . ".text");
+	my @output = ();
 	
-	return undef;
+	# open up this book of the Bible
+	open (BOOK, $file) || Carp::croak (__PACKAGE__ . "::getPassage(" . $reading->getReading() . ") - Error reading from text file.");
+		my $curchap = 0;
+		my $curverse = 0;
+		my $readThis = 0;
+		my $i = 0;
+		
+		while (<BOOK>) {
+			my $text = "";
+			if (index($_, "#") != -1) {
+				$curchap = substr($_, 1);
+				$curverse = 0;
+				next;
+			} else {
+				($curverse, $text) = split (/\|/, $_);
+			}
+			if ($curchap == $chapters[$i] && $curverse == $verses[$i]) {
+				$readThis = 1 - $readThis;
+				$i++;
+			}
+			if ($readThis) {
+				# read the passage
+				$text =~ s/\r?\n//;
+				# remove reading instructions
+				# FIXME: THERE NEEDS TO BE A DIFFERENT WAY TO HANDLE THIS
+				$text =~ s/\*\*([^\*]+)\*\*/<a href="#" title="$1">**<\/a>/g;
+				$text =~ s/\*([^\*]+)\*/<a href="#" title="$1">*<\/a>/g; # /
+				push @output, { Chapter => $curchap, Verse => $curverse, Text => $text };
+			}
+			if ($curchap == $chapters[$i] && $curverse == $verses[$i]) {
+				$readThis = 1 - $readThis;
+				$i++;
+			}
+		}	
+			
+	close (BOOK);
+
+	return @output;
 }
 
 ############ THE FOLLOWING METHODS SHOULD BE TREATED AS PRIVATE #####################################
@@ -146,19 +213,20 @@ sub startElement {
 	
 	if ($element eq "BIBLE") {
 		# IDs are of the form lang/bible/version where lang is ISO lang code
-		my @id_parts = ();
-		foreach (split(/\//, $attrs{Id})) {
-			last if $_ eq "bible";
-			push @id_parts, $_;
-		}
-			
+		my ($first, $last) = split(/\/bible\//, $attrs{Id});
+		my @id_parts = split (/\//, $first);
+		
 		my @lang_parts = split(/\//, $language);
 		$self->{_readBible} = $id_parts[0] eq $lang_parts[0]; ## FIXME to allow different versions
+		$self->{_version} = $last if ($self->{_readBible});
 	}
 	if ($element eq "BOOK" && $self->{_readBible}) {
 		my $tmpid = $attrs{Id};
 		$tmpid =~ s/_/ /;
-		${$self->{_bibleBookNames}}{$tmpid} = $attrs{Short};
+		${$self->{_bibleBookNames}}{$tmpid} = { "Short" => $attrs{Short}, 
+							"Full"  => $attrs{Name},
+							"Chapters" => $attrs{Chapters}
+							};
 	}
 	return;
 }
