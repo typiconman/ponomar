@@ -55,7 +55,7 @@ if ($cookies{"menologion"}) {
 
 my $tmshft = $q->param("tmshft") % 25 || 0;
 $tmshft += $TZ;
-my $today = getToday($tmshift);
+my $today = getToday($tmshft);
 my $year = $q->param("year") || $today->getYear();
 my $month = $q->param("month") || $today->getMonth();
 my $day   = $q->param("day") || $today->getDay();
