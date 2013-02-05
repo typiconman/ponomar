@@ -1,4 +1,4 @@
-﻿<LANGUAGEPACKS>
+<LANGUAGEPACKS>
 <!-- This document contains all the required languages specific features for the Ponomar interface in all the languages that are supported by the programme. For trial purposes, at least all the information in this file should be translated, the Easter file in the Pentecostarion (xml/pentecostarion/1.xml), and the file for the Feast of the Annunciation (March 25th, xml/3/25.xml), the first 12 verses of the Gospel according to John, and the Prime service (xml/Services/Primes...) so as to test all the capabilities of the programme. The state of completion is defined as a value out of 10 that states what is available: 0 represents nothing, 1 represents the above requirements, 5 all that is currently required, 10 a complete language, including video and audio files.
 Note: /, is used to separate entries in a list.
 Note: The defaults must be loaded before this file can be read.
@@ -34,14 +34,14 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Options" Value="選擇" />
 <PHRASE Key="File" Value="文件/,保存/,一般的文件選擇/,這會保存當前顯示/,退出/,這將退出程序/,打印/,這將打印當前文本框" />
 <PHRASE Key="SMenu" Value="聖人/,Actions for 查找 and sorting infromation 關於 saints/,查找/,查找 for information 關於 a given saint" />
-<PHRASE Key="Services" Value="禮儀/,事奉聖禮/,暮時課/,晚堂課/,晨時課/,一時課/,三時課/,六時課/,九時課/,皇時課/,守夜祈禱/,中夜課/,代聖體血禮儀/,This allows the user to compile the 禮儀/,Compile 事奉聖禮 for the given day/,Compile 暮時課 for the given day/,Compile 晚堂課 for the given day/,Compile 晨時課 for the day/,Compile 一時課 for the given day/,Compile 三時課 for the given day/,Compile 六時課 for the given day/,Compile 九時課 for the given day/,Compile 皇時課 for the given day/,Compile the 守夜祈禱 for the given day/,Compile 中夜課 for the given day/,Compile 代聖體血禮儀 for the given day" />
+<PHRASE Key="Services" Value="禮儀/,事奉聖禮/,暮時課/,晚堂課/,晨時課/,一時課/,三時課_hant.htm/,六時課/,九時課/,皇時課/,守夜祈禱/,中夜課/,代聖體血禮儀/,This allows the user to compile the 禮儀/,Compile 事奉聖禮 for the given day/,Compile 暮時課 for the given day/,Compile 晚堂課 for the given day/,Compile 晨時課 for the day/,Compile 一時課 for the given day/,Compile 三時課 for the given day/,Compile 六時課 for the given day/,Compile 九時課 for the given day/,Compile 皇時課 for the given day/,Compile the 守夜祈禱 for the given day/,Compile 中夜課 for the given day/,Compile 代聖體血禮儀 for the given day" />
 <PHRASE Key="Bible" Value="聖經/,這允許用戶存取聖經" />
 <PHRASE Key="Help" Value="求助/,This accesses the 求助文件s./,關於/,Access the 關於 文件/,Go to 求助"/>
 <PHRASE Key="LanguageMenu" Value="語言/,選擇 the Interface 語言/,選擇s the Interface 語言/,OK/,In order for the interface 語言 to change, please restart the 程序./,No/,Do you wish to overwrite the 文件:/,Are you sure you wish to close this window?"/>
 <PHRASE Key="About" Value="版本/,波諾馬里的設計為用戶提供了訪問，了解和體驗的豐富和美麗的正教聖傳。該程序是目前發展階段。/,在波諾馬里項目中，我們認為禮典信息應當免費——也就是說不收費也不受版權的制約。上帝並沒有保留聖經的版權，聖約安也沒有保留《八音集》的版權。您可以從本站獲得任何東西並用於任何用途，只要您信任我們。如果您要發佈您自己對本站信息的修改成果，您需要在許可的體系下進行。/,版權所有/,/,為感謝：中文版由正教會中華諸聖會提供。" />
-<PHRASE Key="GospelSelection" Value="喬爾丹維爾/,路喀跳轉/,福音經課/,選擇所需福音經課。" />
-<PHRASE Key="Tones" Value="八/,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other 語言, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="格里高利歷/,&lt;B&gt;日出&lt;/B&gt;：/,&lt;B&gt;日落&lt;/B&gt;：/,&lt;B&gt;教會月相&lt;/B&gt;：/,第TT調式/,信息 /,你確定要退出嗎？" />
+<PHRASE Key="GospelSelection" Value="主顯跳轉/,路喀跳轉/,福音經課/,選擇所需福音經課。" />
+<PHRASE Key="Tones" Value="第八調/,第一調/,第二調/,第三調/,第四調/,第五調/,第六調/,第七調/,第八調" Comments="To allow different formatting of the tones in other 語言, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Main" Value="格里高利歷/,&lt;B&gt;日出&lt;/B&gt;：/,&lt;B&gt;日落&lt;/B&gt;：/,&lt;B&gt;月相&lt;/B&gt;：/,第TT調式/,信息 /,你確定要退出嗎？" />
 <PHRASE Key="gospel" Value="聖福音經"/>
 <PHRASE Key="apostol" Value="使徒經書"/>
 <PHRASE Key="matins" Value="晨時課"/>
@@ -61,7 +61,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Helpers" Value="保存 to a html 文件." />
 <PHRASE Key="ServiceRead" Value="所需標題丟失。/,There was a serious 錯誤 reading the 文件: /,所需命令丟失。/,所需頁眉丟失。/,錯誤 finding 所需 information: " />
 <PHRASE Key="Errors" Value="找不到 /,Unable to process floater # /,錯誤 at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was 找不到/,錯誤 Reading the values/,無效的 Month/,無效的 Day:/,in/,A julian day must be greater than 0" />
-<PHRASE Key="PrimeSelection" Value="誦經士/,司祭/,主教/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
+<PHRASE Key="PrimeSelection" Value="誦經士/,司祭/,主教/,單獨/,無始/,無終/,無始無終/,儀式類型" />
 <PHRASE Key="Commemoration" Value="錯誤 reading the Hashtable!\nMissing element: /, with Tag: /,錯誤 reading the Hashtable!\nMissing Node: /,錯誤 reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
 <PHRASE Key="BibleW" Value="前一章/,全章/,下一章/,收藏經文/,複製經文/,保存經文/,打印經文/,波諾馬里聖經讀者/,錯誤 reading bml文件: /,Resource 找不到: "/>
 <PHRASE Key="Terce" Value="本日沒有聚會/,三時課/,差遣頌於/,丟失/,集禱頌於/,座"/>
