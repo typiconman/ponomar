@@ -1,4 +1,4 @@
-﻿<LANGUAGEPACKS>
+<LANGUAGEPACKS>
 <!-- This document contains all the required languages specific features for the Ponomar interface in all the languages that are supported by the programme. For trial purposes, at least all the information in this file should be translated, the Easter file in the Pentecostarion (xml/pentecostarion/1.xml), and the file for the Feast of the Annunciation (March 25th, xml/3/25.xml), the first 12 verses of the Gospel according to John, and the Prime service (xml/Services/Primes...) so as to test all the capabilities of the programme. The state of completion is defined as a value out of 10 that states what is available: 0 represents nothing, 1 represents the above requirements, 5 all that is currently required, 10 a complete language, including video and audio files.
 Note: /, is used to separate entries in a list.
 Note: The defaults must be loaded before this file can be read.
@@ -40,9 +40,9 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Help" Value="求助/,This accesses the 求助 文件s./,关于/,Access the 关于 文件/,Go to 求助"/>
 <PHRASE Key="LanguageMenu" Value="语言/,选择 the Interface 语言/,选择s the Interface 语言/,OK/,In order for the interface 语言 to change, please restart the 程序./,No/,Do you wish to overwrite the 文件:/,Are you sure you wish to close this window?"/>
 <PHRASE Key="About" Value="版本/,波诺马里的设计为用户提供了访问，了解和体验的丰富和美丽的正教圣传。该程序是目前发展阶段。/,在波诺马里项目中，我们认为礼典信息应当免费——也就是说不收费也不受版权的制约。上帝并没有保留圣经的版权，圣约安也没有保留《八音集》的版权。 您可以从本站获得任何东西并用于任何用途，只要您信任我们。如果您要发布您自己对本站信息的修改成果，您需要在许可的体系下进行。/,版权所有/,/,为感谢：中文版由正教会中华诸圣会提供。" />
-<PHRASE Key="GospelSelection" Value="乔尔丹维尔/,路喀跳转/,福音经课/,选择所需福音经课。" />
-<PHRASE Key="Tones" Value="八/,一/,二/,三/,四/,五/,六/,七/,八" Comments="To allow different formatting of the tones in other 语言s, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="格里高利历/,&lt;B&gt;日出&lt;/B&gt;：/,&lt;B&gt;日落&lt;/B&gt;：/,&lt;B&gt;教会月相&lt;/B&gt;：/,第TT调式/,信息 /,你确定要退出吗？" />
+<PHRASE Key="GospelSelection" Value="主显跳转/,路喀跳转/,福音经课/,选择所需福音经课。" />
+<PHRASE Key="Tones" Value="第8调/,第1调/,第2调/,第3调/,第4调/,第5调/,第6调/,第7调/,第8调" Comments="To allow different formatting of the tones in other 语言s, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
+<PHRASE Key="Main" Value="格里高利历/,&lt;B&gt;日出&lt;/B&gt;：/,&lt;B&gt;日落&lt;/B&gt;：/,&lt;B&gt;月相&lt;/B&gt;：/,第TT调式/,信息 /,你确定要退出吗？" />
 <PHRASE Key="gospel" Value="圣福音经"/>
 <PHRASE Key="apostol" Value="使徒经书"/>
 <PHRASE Key="matins" Value="晨时课"/>
@@ -62,7 +62,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Helpers" Value="保存 to a html 文件." />
 <PHRASE Key="ServiceRead" Value="所需标题丢失。/,There was a serious 错误 reading the 文件: /,所需命令丢失。/,所需页眉丢失。/,错误 finding the 所需 information: " />
 <PHRASE Key="Errors" Value="找不到 /,Unable to process floater # /,错误 at day /,Malformed expression: Not Enough Brackets/,Malformed expression:/,was 找不到/,错误 Reading the values/,无效的 Month/,无效的 Day:/,in/,A julian day must be greater than 0" />
-<PHRASE Key="PrimeSelection" Value="诵经士/,司祭/,主教/,Independent/,Without Beginning/,Without Ending/,Without Beginning or Ending/,Type" />
+<PHRASE Key="PrimeSelection" Value="诵经士/,司祭/,主教/,单独/,无始/,无终/,无始无终/,仪式类型" />
 <PHRASE Key="Commemoration" Value="错误 reading the Hashtable!\nMissing element: /, with Tag: /,错误 reading the Hashtable!\nMissing Node: /,错误 reading the Hashtable!!!" Comments="The spaces must be maintained, as well as the new lines \n"/>
 <PHRASE Key="BibleW" Value="前一章/,全章/,下一章/,收藏经文/,复制经文/,保存经文/,打印经文/,波诺马里圣经读者/,错误 reading bml文件: /,Resource 找不到: "/>
 <PHRASE Key="Terce" Value="本日沒有聚会/,三时课/,差遣颂于/,丢失/,集祷颂于/,座"/>
