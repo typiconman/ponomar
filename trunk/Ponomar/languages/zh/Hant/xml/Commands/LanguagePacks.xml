@@ -34,7 +34,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Options" Value="選擇" />
 <PHRASE Key="File" Value="文件/,保存/,一般的文件選擇/,這會保存當前顯示/,退出/,這將退出程序/,打印/,這將打印當前文本框" />
 <PHRASE Key="SMenu" Value="聖人/,Actions for 查找 and sorting infromation 關於 saints/,查找/,查找 for information 關於 a given saint" />
-<PHRASE Key="Services" Value="禮儀/,事奉聖禮/,暮時課/,晚堂課/,晨時課/,一時課/,三時課_hant.htm/,六時課/,九時課/,皇時課/,守夜祈禱/,中夜課/,代聖體血禮儀/,This allows the user to compile the 禮儀/,Compile 事奉聖禮 for the given day/,Compile 暮時課 for the given day/,Compile 晚堂課 for the given day/,Compile 晨時課 for the day/,Compile 一時課 for the given day/,Compile 三時課 for the given day/,Compile 六時課 for the given day/,Compile 九時課 for the given day/,Compile 皇時課 for the given day/,Compile the 守夜祈禱 for the given day/,Compile 中夜課 for the given day/,Compile 代聖體血禮儀 for the given day" />
+<PHRASE Key="Services" Value="禮儀/,事奉聖禮/,暮時課/,晚堂課/,晨時課/,一時課/,三時課/,六時課/,九時課/,皇時課/,守夜祈禱/,中夜課/,代聖體血禮儀/,This allows the user to compile the 禮儀/,Compile 事奉聖禮 for the given day/,Compile 暮時課 for the given day/,Compile 晚堂課 for the given day/,Compile 晨時課 for the day/,Compile 一時課 for the given day/,Compile 三時課 for the given day/,Compile 六時課 for the given day/,Compile 九時課 for the given day/,Compile 皇時課 for the given day/,Compile the 守夜祈禱 for the given day/,Compile 中夜課 for the given day/,Compile 代聖體血禮儀 for the given day" />
 <PHRASE Key="Bible" Value="聖經/,這允許用戶存取聖經" />
 <PHRASE Key="Help" Value="求助/,This accesses the 求助文件s./,關於/,Access the 關於 文件/,Go to 求助"/>
 <PHRASE Key="LanguageMenu" Value="語言/,選擇 the Interface 語言/,選擇s the Interface 語言/,OK/,In order for the interface 語言 to change, please restart the 程序./,No/,Do you wish to overwrite the 文件:/,Are you sure you wish to close this window?"/>
