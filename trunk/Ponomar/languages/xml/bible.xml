@@ -569,7 +569,6 @@ GNU General Public License for details.
 	<BOOK Id="II_Macc" Name="Μακκαβαίων βʹ" Chapters="15" Short="Μακ βʹ" Intro="A reading from the second Book of Maccabees"/>
 	<BOOK Id="III_Macc" Name="Μακκαβαίων γʹ" Chapters="7"  Short="Μακ γʹ" Intro="A reading from the third Book of Maccabees" Note="Some issues with versification."/>
 	<BOOK Id="IV_Macc" Name="Μακκαβαίων δʹ" Chapters="18" Short="Μακ δʹ" Intro="A reading from the fourth Book of Maccabees" Note="This book is found in the appendix of the Greek Bible."/>
-	<BOOK Id="III_Esdra" Name="Ἔσδρας γʹ" Chapters="16" Short="Ἔσδρας γʹ" Intro="A reading from the third Book of Esdras" Note="This book is not found in the Greek versions of the Bible."/>
 	<BOOK Id="Mt" Name="Εὐαγγέλιον κατὰ Ματθαῖον" Chapters="28" Short="Ματ" Intro="Εὐαγγέλιον ἐκ τοῦ κατὰ Ματθαῖον"/>
 	<BOOK Id="Mk" Name="Εὐαγγέλιον κατὰ Μᾶρκον" Chapters="16" Short="Μᾶρ" Intro="Εὐαγγέλιον ἐκ τοῦ κατὰ Μᾶρκον"/>
 	<BOOK Id="Lk" Name="Εὐαγγέλιον κατὰ Λουκᾶν" Chapters="24" Short="Λου" Intro="Εὐαγγέλιον ἐκ τοῦ κατὰ Λουκᾶν"/>
