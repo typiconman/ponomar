@@ -314,7 +314,7 @@ public class Service implements DocHandler
 					if(a1 != -1)
 					{
 						textNew=parsedBible[1].substring(a1+1,a2+a1+1).replace("...",""); 		//3 separate dots
-						textNew=textNew.replace("…",""); 								//The 3 dots combined as a single symbol
+						textNew=textNew.replace("...",""); 								//The 3 dots combined as a single symbol
 					}
 										
 					What2=textNew+" "+What2.substring(k+2);
