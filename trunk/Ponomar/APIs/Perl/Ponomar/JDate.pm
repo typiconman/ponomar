@@ -22,6 +22,8 @@ use overload
 	
 my @DAYS_IN_MONTH = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 my @DAYS_IN_LEAP  = (31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+my @MONTH_NAMES   = qw(january february march april may june july august september october november december);
+my @WEEKDAY_NAMES = qw(sunday monday tuesday wednesday thursday friday saturday);
 
 ##################### INTERNAL SUBS #####################################
 # overloaded modulo operator
@@ -124,8 +126,8 @@ sub getYearAM ($) {
 	my $self = shift;
 	
 	my $y = $self->getYear();
-	my $cutoff = Ponomar::JDate->new(3, 1, $y);
-	return $self->before($cutoff) ? $y + 5507 : $y + 5508;
+	my $cutoff = Ponomar::JDate->new(9, 1, $y);
+	return $self->before($cutoff) ? $y + 5508 : $y + 5509;
 }
 
 =item getMonth()
@@ -223,6 +225,18 @@ sub getDayOfWeek ($) {
 	}
 
 	return $temp;
+}
+
+=item getDayOfWeekString 
+
+Returns the day of the week as a string
+
+=cut
+
+sub getDayOfWeekString ($) {
+	my $self = shift;
+	
+	return $WEEKDAY_NAMES[$self->getDayOfWeek()];
 }
 
 =item getDoy()
