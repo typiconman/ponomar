@@ -2,7 +2,7 @@
 <SERVICE Type="0">
 <MATINS>
 <SCRIPTURE Type="1" Reading="Lk_24:1-12" Pericope="112" Cmd="((ndayP / 7 - 7) % 11 == 4) &amp;&amp; dRank != 6"/>
-<SCRIPTURE Type="1" Reading="Lk_24:13-35" Pericope="113" Cmd="((ndayP / 7 - 7) % 11 == 5) &amp;&amp; dRank != 6"/>
+<SCRIPTURE Type="1" Reading="Lk_24:12-35" Pericope="113" Cmd="((ndayP / 7 - 7) % 11 == 5) &amp;&amp; dRank != 6"/>
 <SCRIPTURE Type="1" Reading="Jn_20:11-18" Pericope="64" Cmd="((ndayP / 7 - 7) % 11 == 8) &amp;&amp; dRank != 6"/>
 <SCRIPTURE Type="1" Reading="Jn_20:19-31" Pericope="65" Cmd="((ndayP / 7 - 7) % 11 == 9) &amp;&amp; dRank != 6"/>
 </MATINS>

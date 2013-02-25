@@ -22,8 +22,8 @@ BEGIN {
 	@ISA 	 = qw( Exporter );
 	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel julianFromGregorian);
 	@EXPORT_OK = ();
-	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
-#	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
+#	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
+	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
 #	$basepath = "/home/sasha/svn/ponomar/svn/trunk/Ponomar/languages/";
 }
 
@@ -32,7 +32,7 @@ my %matinsGospels = (
 	"Mk_16:1-8" => 2,
 	"Mk_16:9-20" => 3,
 	"Lk_24:1-12" => 4,
-	"Lk_24:13-35" => 5,
+	"Lk_24:12-35" => 5,
 	"Lk_24:36-53" => 6,
 	"Jn_20:1-10" => 7,
 	"Jn_20:11-18" => 8,
@@ -177,9 +177,9 @@ on 00:00:00 UTC, January 1, 1970 (GREGORIAN!). It has recently come to my attent
 sub getToday {
 	## WE SHALL ASSUME THAT THE EPOCH BEGINS ON JANUARY 1, 1970
 	## THIS IS JULIAN DAY 2440588
-	my $timeshift = shift || 0;
+	my $timeshift = shift;
 	
-	return new Ponomar::JDate(int(time / 86400) + 2440588 + $timeshift * 3600);
+	return new Ponomar::JDate(int((time + $timeshift * 60 * 60) / 86400) + 2440588);
 }
 
 =item julianFromGregorian( $month, $day, $year )
