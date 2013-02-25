@@ -3,7 +3,7 @@
 <MATINS>
 <SCRIPTURE Type="1" Reading="Mt_28:16-20" Pericope="116" Cmd="(ndayP / 7 - 7) % 11 == 1"/>
 <SCRIPTURE Type="1" Reading="Mk_16:1-8" Pericope="70" Cmd="(ndayP / 7 - 7) % 11 == 2"/>
-<SCRIPTURE Type="1" Reading="Lk_24:13-35" Pericope="113" Cmd="(ndayP / 7 - 7) % 11 == 5"/>
+<SCRIPTURE Type="1" Reading="Lk_24:12-35" Pericope="113" Cmd="(ndayP / 7 - 7) % 11 == 5"/>
 <SCRIPTURE Type="1" Reading="Lk_24:36-53" Pericope="114" Cmd="(ndayP / 7 - 7) % 11 == 6"/>
 </MATINS>
 <LITURGY>

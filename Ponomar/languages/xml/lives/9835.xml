@@ -1,7 +1,7 @@
 <SAINT>
 <SERVICE Type="0">
 <MATINS>
-<SCRIPTURE Type="1" Reading="Lk_24:13-35" Pericope="113" Cmd="((ndayP / 7 - 7) % 11 == 5) &amp;&amp; dRank != 6"/>
+<SCRIPTURE Type="1" Reading="Lk_24:12-35" Pericope="113" Cmd="((ndayP / 7 - 7) % 11 == 5) &amp;&amp; dRank != 6"/>
 <SCRIPTURE Type="1" Reading="Lk_24:36-53" Pericope="114" Cmd="((ndayP / 7 - 7) % 11 == 6) &amp;&amp; dRank != 6"/>
 <SCRIPTURE Type="1" Reading="Jn_20:19-31" Pericope="65" Cmd="((ndayP / 7 - 7) % 11 == 9) &amp;&amp; dRank != 6"/>
 <SCRIPTURE Type="1" Reading="Jn_21:1-14" Pericope="65" Cmd="((ndayP / 7 - 7) % 11 == 10) &amp;&amp; dRank != 6"/>
