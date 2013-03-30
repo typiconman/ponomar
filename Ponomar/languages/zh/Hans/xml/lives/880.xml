@@ -1,5 +1,5 @@
-﻿<SAINT>
-<NAME Nominative="圣约安（德卡颇利的圣格里高利之弟子，820年）" Short="圣约安（德卡颇利的圣格里高利之弟子，820年）"/>
+<SAINT>
+<NAME Nominative="圣约翰（德卡颇利的圣格里高利之弟子，820年）" Short="圣约翰（德卡颇利的圣格里高利之弟子，820年）"/>
 <SERVICE Type="0" Cmd="doy == 100"/>
 <SERVICE Type="1" Cmd="doy == 107"/>
 </SAINT>
