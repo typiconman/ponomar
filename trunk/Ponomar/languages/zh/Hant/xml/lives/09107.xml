@@ -1,5 +1,5 @@
 <SAINT>
 <NAME Short="初次"/>
-<NAME Nominative="初次（四世紀）及再次（452年）尋獲施浸者前驅聖約安之聖首（transferred from February 24th）" Cmd="doy != 54"/>
-<NAME Nominative="初次（四世紀）及再次（452年）尋獲施浸者前驅聖約安之聖首" Cmd="doy == 54"/>
+<NAME Nominative="初次（四世紀）及再次（452年）尋獲施浸者前驅聖約翰之聖首（transferred from February 24th）" Cmd="doy != 54"/>
+<NAME Nominative="初次（四世紀）及再次（452年）尋獲施浸者前驅聖約翰之聖首" Cmd="doy == 54"/>
 <SERVICE Type="4"/></SAINT>
