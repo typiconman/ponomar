@@ -268,6 +268,88 @@ GNU General Public License for details.
 
 </BIBLE>
 
+<BIBLE Id="cu/ru/bible/synod" Name="Русская (Синодальный перевод)">
+	<INFO VerseNumFormat="&lt;SPAN style=&quot;color:red;&quot;&gt;^VN&lt;/SPAN&gt; ^VT" VerseNoNumFormat="^VT" VerseLink=" " AbbrevFormat="^NAME ^CNN" ChapterN="&lt;p style=&quot;color:red;&quot;&gt;^NAME ^NN&lt;/p&gt;" HeaderFormat="&lt;h1 style=&quot;color:red;&quot;&gt;^NAME ^CNN&lt;/h1&gt;" ChapterNI="^NN" VerseNo="&lt;p style=&quot;color:red;font-size:12pt;&quot;&gt;^TT&lt;/p&gt;&lt;BR&gt;,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Пролог,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep="," Duration="-" SelectionSeparator="; " BCSep=" "/>
+	<BOOK Id="Gen" Name="Бытие" Chapters="50" Short="Быт." Intro="Бытия чтение"/>
+	<BOOK Id="Ex" Name="Исход" Chapters="40" Short="Исх." Intro="Исхода чтение"/>
+	<BOOK Id="Lev" Name="Левит" Chapters="27" Short="Лев." Intro="Левитских книг чтение"/>
+	<BOOK Id="Num" Name="Числа" Chapters="36" Short="Чис." Intro="Числ чтение"/>
+	<BOOK Id="Deut" Name="Второзаконие" Chapters="34" Short="Втор." Intro="Второго закона чтение"/>
+	<BOOK Id="Josh" Name="Иисуса навина" Chapters="24" Short="Нав." Intro="Иисуса навина чтение" />
+	<BOOK Id="Judg" Name="Судей израилевых" Chapters="21" Short="Суд." Intro="Судей чтение" Notes=""/>
+	<BOOK Id="Ruth" Name="Руфь" Chapters="4" Short="Руф." Intro=""/>
+	<BOOK Id="I_Kings" Name="1 царств" Chapters="31" Short="1 Цар." Intro=""/>
+	<BOOK Id="II_Kings" Name="2 царств" Chapters="24" Short="2 Цар." Intro=""/>
+	<BOOK Id="III_Kings" Name="3 царств" Chapters="22" Short="3 Цар." Intro="Царств третьих чтение"/>
+	<BOOK Id="IV_Kings" Name="4 царств" Chapters="25" Short="4 Цар." Intro="Царств четвертых чтение"/>
+	<BOOK Id="I_Paral" Name="1 паралипоменон" Chapters="29" Short="1 Пар." Intro=""/>
+	<BOOK Id="II_Paral" Name="2 паралипоменон" Chapters="36" Short="2 Пар." Intro=""/>
+	<BOOK Id="I_Esdra" Name="1 ездры " Chapters="10" Short="1 Езд." Intro=""/>
+	<BOOK Id="Nehem" Name="Неемии" Chapters="13" Short="Неем" Intro=""/>
+	<BOOK Id="II_Esdra" Name="2 ездры" Chapters="9" Short="2 Езд." Intro=""/>
+	<BOOK Id="Tobit" Name="Товит" Chapters="14" Short="Тов" Intro=""/>
+	<BOOK Id="Judith" Name="Иудиф" Chapters="16" Short="Иудифь." Intro=""/>
+	<BOOK Id="Esther" Name="Есфирь" Chapters="10" Short="Есф." Intro="" Note="There may be issues with the versification here and in all the other versions."/>
+	<BOOK Id="Job" Name="Иов" Chapters="42" Short="Иов" Intro="Иова чтение"/>
+	<BOOK Id="Psalm" Name="Псалтирь" Chapters="151" Short="Пс." Intro="Псалом"/>
+	<BOOK Id="Prov" Name="Притчи" Chapters="31" Short="Притч." Intro="Притчей чтение"/>
+	<BOOK Id="Eccles" Name="Екклесиаст" Chapters="12" Short="Еккл." Intro=""/>
+	<BOOK Id="Song" Name="Песнь песней" Chapters="8" Short="Песн." Intro=""/>
+	<BOOK Id="Wisd" Name="Премудрости Соломона" Chapters="19" Short="Прем. Солом." Intro="Премудрости Соломона чтение"/>
+	<BOOK Id="Sirach" Name="Сирах" Chapters="51" Short="Сир." Intro="" Note="The French Version has an extra chapter 52!"/>
+	<BOOK Id="Isa" Name="Исаии" Chapters="66" Short="Ис." Intro="Пророчества Исаии чтение"/>
+	<BOOK Id="Jerem" Name="Иеремии" Chapters="52" Short="Иер." Intro="Пророчества Иеремии чтение"/>
+	<BOOK Id="Lamen" Name="Плачь Иеремии" Chapters="5" Short="Плачь" Intro=""/>
+	<BOOK Id="Epistle" Name="Послание Иеремии" Chapters="1" Short="По. Иер." Intro=""/>
+	<BOOK Id="Baruch" Name="Варуха" Chapters="5" Short="Вар." Intro="Пророчества Иеремии чтение"/>
+	<BOOK Id="Ezek" Name="Иезекииля" Chapters="48" Short="Иез." Intro="Пророчества Иезекииля чтение"/>
+	<BOOK Id="Dan" Name="Даниила" Chapters="14" Short="Дан." Intro="Пророчества Даииила чтение"/>
+	<BOOK Id="Hos" Name="Осии" Chapters="14" Short="Ос." Intro=""/>
+	<BOOK Id="Joel" Name="Иоиля" Chapters="3" Short="Иоиль" Intro="Пророчества Иоиля чтение"/>
+	<BOOK Id="Amos" Name="Амоса" Chapters="9" Short="Ам." Intro=""/>
+	<BOOK Id="Obad" Name="Авдия" Chapters="1" Short="Авд." Intro=""/>
+	<BOOK Id="Jona" Name="Ионы" Chapters="4" Short="Ион." Intro="Пророчества Ионы чтение"/>
+	<BOOK Id="Mica" Name="Михея" Chapters="7" Short="Мих." Intro="Пророчества Михея чтение" />
+	<BOOK Id="Nahum" Name="Наума" Chapters="3" Short="Наум" Intro=""/>
+	<BOOK Id="Habak" Name="Аввакума" Chapters="3" Short="Авв." Intro=""/>
+	<BOOK Id="Zeph" Name="Софонии" Chapters="3" Short="Соф." Intro="Пророчества Софонии чтение"/>
+	<BOOK Id="Hagg" Name="Аггея" Chapters="2" Short="Агг." Intro=""/>
+	<BOOK Id="Zech" Name="Захарии" Chapters="14" Short="Зах." Intro="Пророчества Захарии чтение"/>
+	<BOOK Id="Mal" Name="Малахии" Chapters="4" Short="Мал." Intro="Пророчества Малахии чтение"/>
+	<BOOK Id="I_Macc" Name="1 Маккавейская" Chapters="16" Short="1 Макк." Intro=""/>
+	<BOOK Id="II_Macc" Name="2 Маккавейская" Chapters="15" Short="2 Макк." Intro=""/>
+	<BOOK Id="III_Macc" Name="3 Маккавейская" Chapters="7"  Short="3 Макк." Intro=""/>
+	<BOOK Id="III_Esdra" Name="3 Ездры" Chapters="16" Short="3 Езд." Intro=""/>
+	<BOOK Id="Mt" Name="От Матфея" Chapters="28" Short="Мф." Intro="От Матфея святаго Евангелия чтение"/>
+	<BOOK Id="Mk" Name="От Марка" Chapters="16" Short="Мк." Intro="От мМарка святаго Евангелия чтение"/>
+	<BOOK Id="Lk" Name="От Луки" Chapters="24" Short="Лк." Intro="От Луки святаго Евангелия чтение"/>
+	<BOOK Id="Jn" Name="От Иоанна" Chapters="21" Short="Ин." Intro="От Иоанна святаго Евангелия чтение"/>
+	<BOOK Id="Acts" Name="Деяния святых Апостолов" Chapters="28" Short="Деян." Intro="Деяний святых Апостолов чтение"/>
+	<BOOK Id="Jas" Name="Иакова" Chapters="5" Short="Иак." Intro=""/>
+	<BOOK Id="I_Pet" Name="Первое Петра" Chapters="5" Short="1 Петр." Intro="Соборного послания Петра чтение"/>
+	<BOOK Id="II_Pet" Name="Второе Петра" Chapters="3" Short="2 Петр." Intro=""/>
+	<BOOK Id="I_Jn" Name="Первое Иоанна" Chapters="5" Short="1 Ин." Intro=""/>
+	<BOOK Id="II_Jn" Name="Второе Иоанна" Chapters="1" Short="2 Ин." Intro=""/>
+	<BOOK Id="III_Jn" Name="Третие Иоанна" Chapters="1" Short="3 Ин." Intro=""/>
+	<BOOK Id="Jude" Name="Иуды" Chapters="1" Short="Иуд." Intro=""/>
+	<BOOK Id="Rom" Name="К Римлянам" Chapters="16" Short="Рим." Intro="К римляном послания святого апостола Павла чтение"/>
+	<BOOK Id="I_Cor" Name="Первое к Коринфянам" Chapters="16" Short="1 Кор." Intro=""/>
+	<BOOK Id="II_Cor" Name="Второе к Коринфянам" Chapters="13" Short="2 Кор." Intro=""/>
+	<BOOK Id="Gal" Name="К Галатам" Chapters="6" Short="Гал." Intro=""/>
+	<BOOK Id="Eph" Name="К Ефесянам" Chapters="6" Short="Еф." Intro=""/>
+	<BOOK Id="Philip" Name="К Филиппийцам" Chapters="4" Short="Флп." Intro=""/>
+	<BOOK Id="Col" Name="К Колоссянам" Chapters="4" Short="Кол." Intro=""/>
+	<BOOK Id="I_Thess" Name="Первое к Фессалоникийцам" Chapters="5" Short="1 Фес." Intro=""/>
+	<BOOK Id="II_Thess" Name="Второе к Фессалоникийцам" Chapters="3" Short="2 Фес." Intro=""/>
+	<BOOK Id="I_Tim" Name="Первое к Тимофею" Chapters="6" Short="1 Тим." Intro=""/>
+	<BOOK Id="II_Tim" Name="Второе к Тимофею" Chapters="4" Short="2 Тим." Intro=""/>
+	<BOOK Id="Tit" Name="К Титу" Chapters="3" Short="Тит." Intro="К Титу послания святого апостола павла чтение"/>
+	<BOOK Id="Philemon" Name="К Филимону" Chapters="1" Short="Флм." Intro="К Филимону послания святого апостола павла чтение"/>
+	<BOOK Id="Heb" Name="К Евреям" Chapters="13" Short="Евр." Intro="Ко евреем послания святого апостола павла чтение"/>
+	<BOOK Id="Apoc" Name="Откровение" Chapters="22" Short="Отк." Intro=""/>
+	<BOOK Id="Composite" Name="Composite" Chapters="8" Short="Composite" Intro=""/>
+
+</BIBLE>
 <BIBLE Id="la/bible/vulgate" Name="Latina (vulgata)">
 	<INFO VerseNumFormat="&lt;SUP&gt;^VN&lt;/SUP&gt; ^VT" VerseNoNumFormat="^VT" VerseLink=" " AbbrevFormat="^NAME ^CNN" ChapterN="&lt;p style=&quot;font-style:bold;color:red;&quot;&gt;^NAME ^NN&lt;/p&gt;" HeaderFormat="&lt;h1 style=&quot;font-style:bold;color:red;&quot;&gt;^NAME ^CNN&lt;/h1&gt;" ChapterNI="^NN" VerseNo="&lt;p style=&quot;font-style:italic;font-size:10pt;&quot;&gt;^TT&lt;/p&gt;&lt;BR&gt;,I,II,III,IV,V,VI,VII,VIII,IX,X,XI,XII,XIII,XIV,XV,XVI,XVII,XVIII,XIX,XX,XXI,XXII,XXIII,XXIV,XXV,XXVI,XXVII,XXVIII,XXIX,XXX,XXXI,XXXII,XXXIII,XXXIV,XXXV,XXXVI,XXXVII,XXXVIII,XXXIX,XL,XLI,XLII,XLIII,XLIV,XLV,XLVI,XLVII,XLVIII,XLIX,L,LI,LII,LIII,LIV,LV,LVI,LVII,LVIII,LIX,LX,LXI,LXII,LXIII,LXIV,LXV,LXVI,LXVII,LXVIII,LXIX,LXX,LXXI,LXXII,LXXIII,LXXIV,LXXV,LXXVI,LXXVII,LXXVIII,LXXIX,LXXX,LXXXI,LXXXII,LXXXIII,LXXXIV,LXXXV,LXXXVI,LXXXVII,LXXXVIII,LXXXIX,XC,XCI,XCII,XCIII,XCIV,XCV,XCVI,XCVII,XCVIII,XCIX,C,CI,CII,CIII,CIV,CV,CVI,CVII,CVIII,CIX,CX,CXI,CXII,CXIII,CXIV,CXV,CXVI,CXVII,CXVIII,CXIX,CXX,CXXI,CXXII,CXXIII,CXXIV,CXXV,CXXVI,CXXVII,CXXVIII,CXXIX,CXXX,CXXXI,CXXXII,CXXXIII,CXXXIV,CXXXV,CXXXVI,CXXXVII,CXXXVIII,CXXXIX,CXL,CXLI,CXLII,CXLIII,CXLIV,CXLV,CXLVI,CXLVII,CXLVIII,CXLIX,CL,CLI,CLII,CLIII,CLIV,CLV,CLVI,CLVII,CLVIII,CLIX,CLX,CLXI,CLXII,CLXIII,CLXIV,CLXV,CLXVI,CLXVII,CLXVIII,CLXIX,CLXX,CLXXI,CLXXII,CLXXIII,CLXXIV,CLXXV,CLXXVI,CLXXVII,CLXXVIII,CLXXIX,CLXXX" ChapterNo="Prologus,I,II,III,IV,V,VI,VII,VIII,IX,X,XI,XII,XIII,XIV,XV,XVI,XVII,XVIII,XIX,XX,XXI,XXII,XXIII,XXIV,XXV,XXVI,XXVII,XXVIII,XXIX,XXX,XXXI,XXXII,XXXIII,XXXIV,XXXV,XXXVI,XXXVII,XXXVIII,XXXIX,XL,XLI,XLII,XLIII,XLIV,XLV,XLVI,XLVII,XLVIII,XLIX,L,LI,LII,LIII,LIV,LV,LVI,LVII,LVIII,LIX,LX,LXI,LXII,LXIII,LXIV,LXV,LXVI,LXVII,LXVIII,LXIX,LXX,LXXI,LXXII,LXXIII,LXXIV,LXXV,LXXVI,LXXVII,LXXVIII,LXXIX,LXXX,LXXXI,LXXXII,LXXXIII,LXXXIV,LXXXV,LXXXVI,LXXXVII,LXXXVIII,LXXXIX,XC,XCI,XCII,XCIII,XCIV,XCV,XCVI,XCVII,XCVIII,XCIX,C,CI,CII,CIII,CIV,CV,CVI,CVII,CVIII,CIX,CX,CXI,CXII,CXIII,CXIV,CXV,CXVI,CXVII,CXVIII,CXIX,CXX,CXXI,CXXII,CXXIII,CXXIV,CXXV,CXXVI,CXXVII,CXXVIII,CXXIX,CXXX,CXXXI,CXXXII,CXXXIII,CXXXIV,CXXXV,CXXXVI,CXXXVII,CXXXVIII,CXXXIX,CXL,CXLI,CXLII,CXLIII,CXLIV,CXLV,CXLVI,CXLVII,CXLVIII,CXLIX,CL,CLI,CLII,CLIII,CLIV,CLV,CLVI,CLVII,CLVIII,CLIX,CLX,CLXI,CLXII,CLXIII,CLXIV,CLXV,CLXVI,CLXVII,CLXVIII,CLXIX,CLXX,CLXXI,CLXXII,CLXXIII,CLXXIV,CLXXV,CLXXVI,CLXXVII,CLXXVIII,CLXXIX,CLXXX"  CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " />
 	<BOOK Id="Gen" Name="Genesis" Chapters="50" Short="Gen" Intro=""/>
