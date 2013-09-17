@@ -14,8 +14,10 @@
 <SCRIPTURE Type="11" Reading="III Kings_18:30-39"/>
 <SCRIPTURE Type="12" Reading="IV Kings_2:19-22"/>
 <SCRIPTURE Type="13" Reading="Isa_49:8-15"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_9:19-27" Pericope="143" Cmd="dow == 0 || dow == 6"/>
+<SCRIPTURE Type="gospel" Reading="Lk_3:1-18" Pericope="9" Cmd="dow == 0 || dow == 6"/>
 </VESPERS>
-<LITURGY>
+<LITURGY Cmd="dow != 0 &amp;&amp; dow != 6">
 <SCRIPTURE Type="apostol" Reading="I Cor_9:19-27" Pericope="143"/>
 <SCRIPTURE Type="gospel" Reading="Lk_3:1-18" Pericope="9"/>
 </LITURGY>
