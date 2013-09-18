@@ -98,6 +98,11 @@ sub setSaint {
 	$self->{saint} = $saint;
 }
 
+sub getCmd {
+	my $self = shift;
+	return $self->{Cmd};
+}
+
 =item equals($other)
 
 Tests to see if this Readings object is equal to another object

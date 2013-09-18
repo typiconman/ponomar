@@ -37,15 +37,14 @@ Service objects have the following properties
 	dRank: The Rank of this service (NOT the rank of the day)
 	parent: a reference to a Saint object which begat this Service
 
-Note that C<$GS> is inherited from the parent.
+BUG ALERT: C<$GS> is treated as 1 for now.
 
 =cut
 
 sub new {
 	my $class = shift;
 	my $self  = { @_ };
-	$GS = defined $self->{parent}->getKey('GS') ? $self->{parent}->getKey('GS') : 1;
-
+$GS = 1; ## FIXME
 	bless $self, $class;
 	return $self;
 }
@@ -126,6 +125,18 @@ the method will croak.
 sub execCommands {
 	my $self = shift;
 	local $dRank = shift;
+
+	if ($self->{Type} eq 'matins' && $self->hasReadings()) {
+		return;
+		foreach my $reading ($self->getReadings()) {
+			my $cmd = $reading->getCmd();
+
+			foreach (@GLOBALS) {
+				$cmd =~ s/$_/\$$_/g;
+			}
+			$self->deleteReading($reading) unless eval $cmd;
+		}
+	}
 	
 	return unless $self->{Type} eq 'liturgy';
 	Carp::croak (__PACKAGE__ . "::execCommands - Invalid parent") unless (ref $self->{parent} eq "Ponomar::Saint");
@@ -162,12 +173,13 @@ sub execCommands {
 			$cmd =~ s/$_/\$$_/g;
 		}
 		next unless eval $cmd;
+
 		if ( $_->{Name} eq "Suppress" || $_->{Name} eq "TransferRulesB" || $_->{Name} eq "TransferRulesF" ) {
 			## IF WE'RE HERE, THEN WE MUST DELETE THE READINGS ASSOCIATED WITH THIS SERVICE
 			$self->{_readings} = () unless $self->{dRank} >= 1;
 		}
 	}
-	
+
 	## set up tomorrow
 	my $tomorrow = $date->addDays(1);
 	local $dow   = $tomorrow->getDayOfWeek();
@@ -176,7 +188,7 @@ sub execCommands {
 	local $ndayP = $tomorrow->getDaysSince($lastpascha);
 	local $ndayF = $tomorrow->getDaysSince($nextpascha);
 	
-	my $ponomar  = Ponomar->new($tomorrow, $language, $GS);
+	my $ponomar  = Ponomar->new($tomorrow, $language);
 	## get tomorrow's dRank
 	local $dRank = max (  map { $_->getKey("Type") } $ponomar->getSaints() );
 	foreach (@{ $self->{commands} }) {
@@ -203,7 +215,7 @@ sub execCommands {
 	local $ndayP = $yesterday->getDaysSince($lastpascha);
 	local $ndayF = $yesterday->getDaysSince($nextpascha);
 	
-	$ponomar  = Ponomar->new($yesterday, $language, $GS);
+	$ponomar  = Ponomar->new($yesterday, $language);
 	local $dRank = max (  map { $_->getKey("Type") } $ponomar->getSaints() );
 	foreach (@{ $self->{commands} }) {
 		next unless $_->{Name} eq 'TransferRulesF';
