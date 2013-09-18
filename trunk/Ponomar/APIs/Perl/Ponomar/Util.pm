@@ -22,8 +22,8 @@ BEGIN {
 	@ISA 	 = qw( Exporter );
 	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel julianFromGregorian);
 	@EXPORT_OK = ();
-#	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
-	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
+	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
+#	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
 #	$basepath = "/home/sasha/svn/ponomar/svn/trunk/Ponomar/languages/";
 }
 
