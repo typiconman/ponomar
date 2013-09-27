@@ -3,7 +3,7 @@
 <SERVICE Type="1">
 <LITURGY>
 
-<SCRIPTURE Type="apostol" Reading="II Pet_1:1-10" Pericope="64" Cmd="nday == -72" EffWeek="33"/>
+<SCRIPTURE Type="apostol" Reading="II Pet_1:1-10a" Pericope="64" Cmd="nday == -72" EffWeek="33"/>
 <SCRIPTURE Type="apostol" Reading="Heb_11:8, 11-16" Pericope="327" Cmd="nday == -93" EffWeek="30"/>
 <SCRIPTURE Type="apostol" Reading="Heb_7:18-25" Pericope="317" Cmd="nday == -100" EffWeek="29"/>
 

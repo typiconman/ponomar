@@ -1,4 +1,4 @@
-﻿<SAINT>
+<SAINT>
 <INFO Place="Nicomedia" Type="REPOSE"/>
 <NAME Short="Holy Great Martyr"/>
 <NAME Nominative="Holy Great Martyr, Trophy-bearer and Wonderworker George († 303)" Cmd="doy == 112"/>

@@ -1,4 +1,4 @@
-﻿<SAINT>
+<SAINT>
 <NAME Short="Venerable Procopius"/>
 <NAME Nominative="Venerable Procopius, Confessor of Decapolis († c.  750) (transferred from Saturday)" Cmd="doy != 57"/>
 <NAME Nominative="Venerable Procopius, Confessor of Decapolis († c.  750)" Cmd="doy == 57"/>

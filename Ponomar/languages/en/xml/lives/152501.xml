@@ -1,4 +1,4 @@
-﻿<SAINT>
+<SAINT>
 <NAME Short="Holy Equal-to-the-Apostles"/>
 <NAME Nominative="Holy Equal-to-the-Apostles Methodius († 885) and Cyrill († 869), teachers of the Slavs" Cmd="nday != 51"/>
 <NAME Nominative="Holy Equal-to-the-Apostles Methodius († 885) and Cyrill († 869), teachers of the Slavs [from Monday]" Cmd="nday == 51"/>
