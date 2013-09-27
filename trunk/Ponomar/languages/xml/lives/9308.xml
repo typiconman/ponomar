@@ -5,7 +5,7 @@
 <LITURGY>
 <!-- CASE ONE: THERE ARE NO MORE WEEKS LEFT -->
 <SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" Pericope="293" EffWeek="33" Cmd="nday == -71"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" EffWeek="33" Cmd="nday == -71"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:2-8a" Pericope="88" EffWeek="33" Cmd="nday == -71"/>
 
 <!-- CASE TWO: THERE IS ONE MORE WEEK LEFT -->
 <SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" EffWeek="32" Cmd="nday == -78"/>

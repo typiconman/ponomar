@@ -5,12 +5,12 @@
 <LITURGY>
 <!-- CASE ONE: IT IS JANUARY 18 TO FEBRUARY 3; READINGS FOR THE 33RD WEEK -->
 <SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" Pericope="293" EffWeek="33" Cmd="GS == 1 &amp;&amp; doy &gt;= 17 &amp;&amp; doy &lt;= 33"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" EffWeek="33" Cmd="GS == 1 &amp;&amp; doy &gt;= 17 &amp;&amp; doy &lt;= 33"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:2-8a" Pericope="88" EffWeek="33" Cmd="GS == 1 &amp;&amp; doy &gt;= 17 &amp;&amp; doy &lt;= 33"/>
 
 <!-- CASE TWO: THERE ARE NO MORE WEEKS AND IT IS JANUARY 13 TO JANUARY 16 -->
 <!-- READINGS FOR THE 33RD WEEK -->
 <SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" Pericope="293" EffWeek="33" Cmd="GS == 1 &amp;&amp; (nday == -71 &amp;&amp; doy &gt;= 12 &amp;&amp; doy &lt;= 16)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" EffWeek="33" Cmd="GS == 1 &amp;&amp; (nday == -71 &amp;&amp; doy &gt;= 12 &amp;&amp; doy &lt;= 16)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:2-8a" Pericope="88" EffWeek="33" Cmd="GS == 1 &amp;&amp; (nday == -71 &amp;&amp; doy &gt;= 12 &amp;&amp; doy &lt;= 16)"/>
 
 <!-- CASE THREE: THERE ARE THREE OR FOUR MORE WEEKS LEFT AND IT IS JANUARY 14 TO JANUARY 17 -->
 <!-- READINGS FOR THE 31ST WEEK -->
@@ -26,7 +26,7 @@
 <!-- this scenario could take place in the previous year (e.g. 2010) -->
 <SCRIPTURE Type="apostol" Reading="Eph_2:11-13" Pericope="220 (mid)" Cmd="GS == 0 &amp;&amp; (nday == -99 || nday > 0)"/>
 <!-- Adding the Lucan Jump Reading for the 31 Week Reading (Y.S. 2008) -->
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88"  Cmd="(nday == -71) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Lk_18:2-8a" Pericope="88"  Cmd="(nday == -71) &amp;&amp; GS == 0" /> 
 <SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" Cmd="(nday == -92) &amp;&amp; GS == 0" /> 
 <SCRIPTURE Type="gospel" Reading="Lk_13:18-29" Pericope="72" Cmd="(nday == -99 || nday &gt; 0) &amp;&amp; GS == 0" /> 
 </LITURGY>
