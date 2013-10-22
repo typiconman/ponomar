@@ -1,7 +1,7 @@
 <SAINT>
-<SERVICE Type="2" Cmd="!(nday == -54 || nday == -58)"> <!-- if the Apodosis of the Meeting falls on this day, we do not read these readings -->
+<SERVICE Type="2"> <!-- if the Apodosis of the Meeting falls on this day, we do not read these readings -->
 <!-- the service to St Theodore is in this case transferred to Compline -->
-<LITURGY>
+<LITURGY Cmd="!(nday == -54 || nday == -58)">
 <SCRIPTURE Type="apostol" Reading="II Tim_2:1-10" Pericope="292"/>
 <SCRIPTURE Type="gospel" Reading="Mt_10:16-22" Pericope="36"/>
 </LITURGY>
