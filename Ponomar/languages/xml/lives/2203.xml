@@ -1,6 +1,6 @@
 <SAINT>
 <SERVICE Type="1">
-<LITURGY Cmd="nday &lt;= -49 || dow == 6">
+<LITURGY Cmd="nday &lt;= -50 || dow == 6">
 <SCRIPTURE Type="apostol" Reading="II Tim_2:1-10" Pericope="292"/>
 <SCRIPTURE Type="gospel" Reading="Jn_15:17-16:2" Pericope="52"/>
 </LITURGY>

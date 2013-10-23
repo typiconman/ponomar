@@ -7,8 +7,7 @@
 <SCRIPTURE Type="1" Reading="Jn_20:19-31" Pericope="65" Cmd="((ndayP / 7 - 7) % 11 == 9) &amp;&amp; dRank != 6"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Heb_11:24-26, 11:32-12:2" Pericope="329 (mid)"/>
-<!-- Should read: Heb. 11:24-26, 11:32-12:2a (§329 mid.) -->
+<SCRIPTURE Type="apostol" Reading="Heb_11:24-26, 11:32-12:2a" Pericope="329 (mid)"/>
 <SCRIPTURE Type="gospel" Reading="Jn_1:43-51" Pericope="5"/>
 </LITURGY>
 </SERVICE></SAINT>

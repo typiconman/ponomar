@@ -7,7 +7,7 @@
 <SCRIPTURE Type="1" Reading="Jn_20:11-18" Pericope="64" Cmd="((ndayP / 7 - 7) % 11 == 8) &amp;&amp; dRank != 6"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Rom_13:11-14:4" Pericope="112"/>
+<SCRIPTURE Type="apostol" Reading="Rom_13:11b-14:4" Pericope="112"/>
 <SCRIPTURE Type="gospel" Reading="Mt_6:14-21" Pericope="17"/>
 </LITURGY>
 </SERVICE></SAINT>
