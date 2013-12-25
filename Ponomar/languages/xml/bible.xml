@@ -102,7 +102,60 @@ GNU General Public License for details.
 	<BOOK Id="Apoc" Name="Apocalypse" Chapters="22" Short="Apoc" Intro="A reading from the Book of Revelations"/>
 	<BOOK Id="Composite" Name="Composite" Chapters="8" Short="Composite" Intro=""/>
 </BIBLE>
-
+<BIBLE Id="en/bible/brenton" Name="English OT (Brenton LXX)">
+<!-- Brenton LXX translation into English. Source: http://www.ecmarsh.com/lxx/; Psalms reversified to agree with original Greek by AA. -->
+	<INFO VerseNumFormat="&lt;SUP&gt;^VN&lt;/SUP&gt; ^VT" VerseNoNumFormat="^VT" VerseLink=" " AbbrevFormat="^NAME ^CNN" ChapterN="&lt;p style=&quot;font-style:bold;color:red;&quot;&gt;^NAME ^NN&lt;/p&gt;" HeaderFormat="&lt;h1 style=&quot;font-style:bold;color:red;&quot;&gt;^NAME ^CNN&lt;/h1&gt;" ChapterNI="^NN" VerseNo="&lt;p style=&quot;font-style:italic;font-size:10pt;&quot;&gt;^TT&lt;/p&gt;&lt;BR&gt;,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " Orient="ltr"/>
+	<BOOK Id="Gen" Name="Genesis" Chapters="50" Short="Gen" Intro="A reading from Genesis"/>
+	<BOOK Id="Ex" Name="Exodus" Chapters="40" Short="Ex" Intro="A reading from Exodus"/>
+	<BOOK Id="Lev" Name="Leviticus" Chapters="27" Short="Lev" Intro="A reading from Levites"/>
+	<BOOK Id="Num" Name="Numbers" Chapters="36" Short="Num" Intro="A reading from Numbers"/>
+	<BOOK Id="Deut" Name="Deuteronomy" Chapters="34" Short="Deut" Intro="A reading Deuteronomy"/>
+	<BOOK Id="Josh" Name="Joshua" Chapters="24" Short="Josh" Intro="A reading from Joshua, the son of Nun"/>
+	<BOOK Id="Judg" Name="Judges" Chapters="21" Short="Judg" Intro="A reading from Judges"/>
+	<BOOK Id="Ruth" Name="Ruth" Chapters="4" Short="Ruth" Intro="A reading from Ruth"/>
+	<BOOK Id="I_Kings" Name="I Kingdoms" Chapters="31" Short="I Kings" Intro="A reading from the first Book of Kingdoms"/>
+	<BOOK Id="II_Kings" Name="II Kingdoms" Chapters="24" Short="II Kings" Intro="A reading from the second Book of Kingdoms"/>
+	<BOOK Id="III_Kings" Name="III Kingdoms" Chapters="22" Short="III Kings" Intro="A reading from the third Book of Kingdoms"/>
+	<BOOK Id="IV_Kings" Name="IV Kingdoms" Chapters="25" Short="IV Kings" Intro="A reading from the fourth Book of Kingdoms"/>
+	<BOOK Id="I_Paral" Name="I Paralipomenon" Chapters="29" Short="I Paral" Intro="A reading from the first Book of Paralipomenon"/>
+	<BOOK Id="II_Paral" Name="II Paralipomenon" Chapters="36" Short="II Paral" Intro="A reading from the second Book of Paraliponmenon"/>
+	<BOOK Id="I_Esdra" Name="I Esdra" Chapters="10" Short="I Esdra" Intro="A reading from the first Book of Esdras"/>
+	<BOOK Id="Nehem" Name="Nehemiah" Chapters="13" Short="Nehem" Intro="A reading from the Prophecy of Nehemiah"/>
+	<BOOK Id="II_Esdra" Name="II Esdra" Chapters="9" Short="II Esdra" Intro="A reading from the second Book of Esdras"/>
+	<BOOK Id="Tobit" Name="Tobit" Chapters="14" Short="Tobit" Intro="A reading from Tobit"/>
+	<BOOK Id="Judith" Name="Judith" Chapters="16" Short="Judith" Intro="A reading from Judith"/>
+	<BOOK Id="Esther" Name="Esther" Chapters="10" Short="Esther" Intro="A reading from Esther"/>
+	<BOOK Id="Job" Name="Job" Chapters="42" Short="Job" Intro="A reading from the Job"/>
+	<BOOK Id="Psalm" Name="Psalm" Chapters="151" Short="Ps" Intro="Psalm"/>
+	<BOOK Id="Prov" Name="Proverbs" Chapters="31" Short="Prov" Intro="A reading from Proverbs"/>
+	<BOOK Id="Eccles" Name="Ecclesiastes" Chapters="12" Short="Eccles" Intro="A reading from Ecclesiastes"/>
+	<BOOK Id="Song" Name="Song of Songs" Chapters="8" Short="Song" Intro="A reading from the Song of Songs"/>
+	<BOOK Id="Wisd" Name="Wisdom of Solomon" Chapters="19" Short="Wisd" Intro="A reading from the Wisdom of Solomon"/>
+	<BOOK Id="Sirach" Name="Sirach" Chapters="51" Short="Sirach" Intro="A reading from the Prophecy of Sirach, son of Jesus"/>
+	<BOOK Id="Isa" Name="Isaiah" Chapters="66" Short="Isa" Intro="A reading from the Prophecy of Isaiah"/>
+	<BOOK Id="Jerem" Name="Jeremiah" Chapters="52" Short="Jerem" Intro="A reading from the Prophecy of Jeremiah"/>
+	<BOOK Id="Lamen" Name="Lamentations" Chapters="5" Short="Lamen" Intro="A reading from the Lamentations of Jeremiah"/>
+	<BOOK Id="Epistle" Name="Epistle of Jeremiah" Chapters="1" Short="Epistle" Intro="A reading from the Epistle of Jeremiah"/>
+	<BOOK Id="Baruch" Name="Baruch" Chapters="5" Short="Baruch" Intro="A reading from the Prophecy of Jeremiah"/>
+	<BOOK Id="Ezek" Name="Ezekiel" Chapters="48" Short="Ezek" Intro="A reading from the Prophecy of Ezekiel"/>
+	<BOOK Id="Dan" Name="Daniel" Chapters="14" Short="Dan" Intro="A reading from the Prophecy of Daniel"/>
+	<BOOK Id="Hos" Name="Hosea" Chapters="14" Short="Hos" Intro="A reading from the Prophecy of Hosea"/>
+	<BOOK Id="Joel" Name="Joel" Chapters="3" Short="Joel" Intro="A reading from the Prophecy of Joel"/>
+	<BOOK Id="Amos" Name="Amos" Chapters="9" Short="Amos" Intro="A reading from the Prophecy of Amos"/>
+	<BOOK Id="Obad" Name="Obadiah" Chapters="1" Short="Obad" Intro="A reading from the Prophecy of Obadiah"/>
+	<BOOK Id="Jona" Name="Jonah" Chapters="4" Short="Jona" Intro="A reading from the Prophecy of Jonah"/>
+	<BOOK Id="Mica" Name="Micah" Chapters="7" Short="Mica" Intro="A reading from the Prophecy of Micah"/>
+	<BOOK Id="Nahum" Name="Nahum" Chapters="3" Short="Nahum" Intro="A reading from the Prophecy of Nahum"/>
+	<BOOK Id="Habak" Name="Habakuk" Chapters="3" Short="Habak" Intro="A reading from the Prophecy of Habakuk"/>
+	<BOOK Id="Zeph" Name="Zephaniah" Chapters="3" Short="Zeph" Intro="A reading from the Prophecy of Zephaniah"/>
+	<BOOK Id="Hagg" Name="Haggai" Chapters="2" Short="Hagg" Intro="A reading from the Prophecy of Haggai"/>
+	<BOOK Id="Zech" Name="Zechariah" Chapters="14" Short="Zech" Intro="A reading from the Prophecy of Zechariah"/>
+	<BOOK Id="Mal" Name="Malachi" Chapters="4" Short="Mal" Intro="A reading from the Prophecy of Malachi"/>
+	<BOOK Id="I_Macc" Name="I Maccabees" Chapters="16" Short="I Macc" Intro="A reading from the first Book of Maccabees"/>
+	<BOOK Id="II_Macc" Name="II Maccabees" Chapters="15" Short="II Macc" Intro="A reading from the second Book of Maccabees"/>
+	<BOOK Id="III_Macc" Name="III Maccabees" Chapters="7"  Short="III Macc" Intro="A reading from the third Book of Maccabees"/>	
+	<BOOK Id="IV_Macc" Name="IV Maccabees" Chapters="18" Short="IV Macc" Intro="A reading from the fourth Book of Maccabees"/>
+</BIBLE>
 <BIBLE Id="fr/bible/ls" Name="français (Louis Segond)">
 	<INFO VerseNumFormat="&lt;SUP&gt;^VN&lt;/SUP&gt; ^VT" VerseNoNumFormat="^VT" VerseLink=" " AbbrevFormat="^NAME ^CNN" ChapterN="&lt;p style=&quot;font-style:bold;color:red;&quot;&gt;^NAME ^NN&lt;/p&gt;" HeaderFormat="&lt;h1 style=&quot;font-style:bold;color:red;&quot;&gt;^NAME ^CNN&lt;/h1&gt;" ChapterNI="^NN" VerseNo="&lt;p style=&quot;font-style:italic;font-size:10pt;&quot;&gt;^TT&lt;/p&gt;&lt;BR&gt;,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Prologue,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep=":" Duration="-" SelectionSeparator=", " BCSep=" " />
 	<BOOK Id="Gen" Name="Genèsis" Chapters="50" Short="Gen" Intro="Une lection de Genèsis"/>
