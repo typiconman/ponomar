@@ -1,15 +1,10 @@
 <DAY>
-
-<SAINT SId="5" CId="010201" />
-
+<!-- January 2 -->
+<SAINT SId="0" CId="010201" />
 <SAINT CId="772455" SId="772455"/>
-
 <SAINT CId="772456" SId="772456"/>
-
 <SAINT CId="772457" SId="772457"/>
-
 <SAINT CId="772458" SId="772458"/>
-
 <SAINT CId="772459" SId="772459"/>
 <SAINT CId="010202" SId="010202"/>
 </DAY>

@@ -1,6 +1,16 @@
+<!-- January 1 -->
+<!-- KEY: G: in Greek Sources; R: in Russian sources; U: Unsourced, scheduled for deletion unless someone can find an authoritative source -->
 <DAY>
 <SAINT SId="0" CId="010101" />
 <SAINT SId="772426" CId="772426" />
-<SAINT SId="772428,772429,772430" CId="010102" />
+<SAINT SId="772440" CId="772440" />
+<SAINT SId="772444" CId="772444" Src="G" />
+<SAINT SId="772447" CId="772447" Src="G" />
+<SAINT SId="772446" CId="772446" Src="G" />
+<SAINT SId="772443" CId="772443" Src="G" />
+<SAINT SId="772441" CId="772441" Src="R" />
+<SAINT SId="772427" CId="772427" Src="R" />
+<SAINT SId="772428,772429,772430" CId="010102" Src="R"/>
+<SAINT SId="772431,772432,772433,772434,772435,772436,772437,772438,772439" CId="010103" Src="R"/>
+<SAINT SId="010109" CId="010109" Src="U"/>
 </DAY>
-

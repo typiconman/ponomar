@@ -1,4 +1,6 @@
 <SAINT>
-<NAME Nominative="New Hieromartyr Platon, Bishop of Reval and those with him: Priests Michael and Nicholas († 1919)" Short="NH Bishop Platon" />
+<NAME Nominative="New Hieromartyr Platon (Kulbusch), Bishop of Reval and Priests Michael Bleive and Nicholas Bezhanitsky" Short="Hieromartyrs" />
+<LIFE Repose="1 Jan 1919"/>
+<!-- TODO: Decompose into individual commemorations -->
 <SERVICE Type="0"/>
 </SAINT>
