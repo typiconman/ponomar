@@ -217,8 +217,15 @@ sub startElement {
 		my @id_parts = split (/\//, $first);
 		
 		my @lang_parts = split(/\//, $language);
-		$self->{_readBible} = $id_parts[0] eq $lang_parts[0]; ## FIXME to allow different versions
-		$self->{_version} = $last if ($self->{_readBible});
+	#	$self->{_readBible} = $id_parts[0] eq $lang_parts[0]; ## FIXED
+		if ($id_parts[0] eq $lang_parts[0]) {
+			if (defined $self->{_version}) {
+				$self->{_readBible} = $id_parts[1] eq $self->{_version};
+			} else {
+				$self->{_readBible} = 1;
+				$self->{_version} = $last;
+			}
+		}
 	}
 	if ($element eq "BOOK" && $self->{_readBible}) {
 		my $tmpid = $attrs{Id};
