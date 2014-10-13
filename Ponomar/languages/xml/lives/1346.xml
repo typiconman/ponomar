@@ -2,7 +2,8 @@
 <SERVICE>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Jude_1:1-25" Pericope="77"/>
-<SCRIPTURE Type="gospel" Reading="Jn_14:21-24" Pericope="48"/>
+<!-- XXX: it is not clear if 77 here should be just Jude 1:1-10 or the whole of Jude, as above -->
+<SCRIPTURE Type="gospel" Reading="Jn_14:21-24" Pericope="48 (mid.)"/>
 </LITURGY>
 </SERVICE>
 </SAINT>
