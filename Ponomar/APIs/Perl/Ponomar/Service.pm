@@ -127,7 +127,7 @@ sub execCommands {
 	local $dRank = shift;
 
 	if ($self->{Type} eq 'matins' && $self->hasReadings()) {
-		return;
+##		return;
 		foreach my $reading ($self->getReadings()) {
 			my $cmd = $reading->getCmd();
 
