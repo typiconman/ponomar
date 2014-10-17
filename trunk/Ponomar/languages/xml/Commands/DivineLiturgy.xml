@@ -7,8 +7,9 @@
 <COMMAND Name="Suppress" Value="(doy &gt;= 344 &amp;&amp; doy &lt;= 350) &amp;&amp; dow == 0" Comment="Suppress the sequential readings on the Second Sunday before Christmas." />
 <COMMAND Name="Suppress" Value="(doy &gt;= 351 &amp;&amp; doy &lt;= 357) &amp;&amp; dow == 0" Comment="Suppress the sequential readings on the First Sunday before Christmas." />
 <COMMAND Name="Suppress" Value="(doy == 256 || doy == 217) &amp;&amp; dow == 0" Comment="Suppress the Sunday readings on Exaltation and Transfiguration"/>
+<!-- XXX: these two rules are entirely duplicated by the rules below, so we comment them out 
 <COMMAND Name="TransferRulesB" Value="dow &gt; 1 &amp;&amp; (doy == 217 || doy == 256)" Comment="Daily readings on Transfiguration and Exaltation are moved to the prior day"/>
-<COMMAND Name="TransferRulesF" Value="dow == 1 &amp;&amp; (doy == 217 || doy == 256)" Comment="Daily readings on Transfiguration and Exaltation are moved to the next day"/>
+<COMMAND Name="TransferRulesF" Value="dow == 1 &amp;&amp; (doy == 217 || doy == 256)" Comment="Daily readings on Transfiguration and Exaltation are moved to the next day"/> -->
 <!-- XXX: In the implementation, take care to keep track of the source of the dRank-ed observance
 For example, Ascension has a dRank > 5, but its readings ("daily readings" in some sense) are
 most certainty *not transferred*.
