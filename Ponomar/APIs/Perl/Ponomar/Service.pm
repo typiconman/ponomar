@@ -127,7 +127,7 @@ sub execCommands {
 	local $dRank = shift;
 
 	if ($self->{Type} eq 'matins' && $self->hasReadings()) {
-##		return;
+		return; ## XXX: fails on Sundays because $reading->getCmd is not defined!
 		foreach my $reading ($self->getReadings()) {
 			my $cmd = $reading->getCmd();
 
