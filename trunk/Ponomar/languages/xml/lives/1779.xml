@@ -1,11 +1,11 @@
 <SAINT>
 <SERVICE>
 <MATINS>
-<!-- below reading read only if we are serving a Polyeleos -->
+<!-- below reading read only if we are serving a Polyeleos, but typicon symbol is Doxology. This should be fixed in the Typicon translation. -->
 <SCRIPTURE Type="matins" Reading="Jn_10:9-16" Pericope="36" Cmd="dow != 0 &amp;&amp; dRank &gt; 3"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Heb_7:26-8:2" Pericope="318"/>
+<SCRIPTURE Type="apostol" Reading="Heb_13:17-21" Pericope="335"/>
 <SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24"/>
 </LITURGY>
 </SERVICE>
