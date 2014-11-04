@@ -1,7 +1,9 @@
 <SAINT>
 <SERVICE>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Jn_4:7-11" Pericope="73 (mid)"/>
+<SCRIPTURE Type="apostol" Reading="I Jn_4:7-11" /> 
+<!-- XXX: The above reading should not have a pericope assigned to it, because it is not numbered in the Epistle book
+see discussion of this matter with Daniel Olson on Nov 3-4, 2014 -->
 <SCRIPTURE Type="gospel" Reading="Lk_6:31-36" Pericope="26"/>
 </LITURGY>
 </SERVICE>
