@@ -9,11 +9,12 @@
 </PRIMES>
 <TERCE>
 <SCRIPTURE Type="1" Reading="Baruch_3:36-4:4" Cmd="!(dow == 6 || dow == 0)"/>
+<!-- NB: the above reading has different versification in different Bibles. This should be fixed! -->
 <SCRIPTURE Type="2" Reading="Gal_3:23-29" Pericope="208" Cmd="!(dow == 6 || dow == 0)"/>
 <SCRIPTURE Type="3" Reading="Lk_2:1-20" Pericope="5" Cmd="!(dow == 6 || dow == 0)"/>
 </TERCE>
 <SEXTE>
-<SCRIPTURE Type="1" Reading="Isa_7:10-16, 8:1-4, 8-10" Cmd="!(dow == 6 || dow == 0)"/>
+<SCRIPTURE Type="1" Reading="Isa_7:10-16a; 8:1-4, 8b-10" Cmd="!(dow == 6 || dow == 0)"/>
 <SCRIPTURE Type="2" Reading="Heb_1:10-2:3" Pericope="304" Cmd="!(dow == 6 || dow == 0)"/>
 <SCRIPTURE Type="3" Reading="Mt_2:1-12" Pericope="3" Cmd="!(dow == 6 || dow == 0)"/>
 </SEXTE>
