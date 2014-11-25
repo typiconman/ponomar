@@ -9,7 +9,7 @@
 <!-- NB: the above reading has different versification in different Bibles. This should be fixed! -->
 <SCRIPTURE Type="6" Reading="Dan_2:31-36, 44-45"/>
 <SCRIPTURE Type="7" Reading="Isa_9:6-7"/>
-<SCRIPTURE Type="8" Reading="Isa_7:10-16a; 8:1-4, 8b-10"/>
+<SCRIPTURE Type="8" Reading="Isa_7:10-16a, 8:1-4, 8b-10"/>
 <SCRIPTURE Type="9" Reading="Heb_1:1-12" Pericope="303" Cmd="dow == 6 || dow == 0"/>
 <SCRIPTURE Type="A" Reading="Lk_2:1-20" Pericope="5" Cmd="dow == 6 || dow == 0"/>
 </VESPERS>
