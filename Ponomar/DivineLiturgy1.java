@@ -17,10 +17,11 @@ THIS PROGRAMME HAS BEEN GENERALISED TO ALLOW ANY SET OF RULES TO BE USED.
 Further work will convert this into the programme that will allow the creation of the text for the Divine Liturgy.
 
 DivineLiturgy1.java is part of the Ponomar project.
-Copyright 2008, 2012 Yuri Shardt
+Copyright 2008, 2012, 2015 Yuri Shardt
 version 1.0: May 2008
  * version 2.0: June 2012, further updates and corrections to the new format.
-yuri.shardt (at) gmail.com
+ * version 2.5: 2015, updates and corrections
+
 
 PERMISSION IS HEREBY GRANTED TO USE, MODIFY, AND/OR REDISTRIBUTE THIS SOURCE CODE
 PROVIDED THAT THIS NOTICE REMAINS IN ALL VERSION AND / OR DERIVATIVES THEREOF.
@@ -728,7 +729,7 @@ public class DivineLiturgy1 implements DocHandler {
             3. THEOPHANY: JANUARY 6th: DOY == 5
             4. TRANSFIGURATION: AUGUST 6th: DOY == 217
              ******************************************************/
-            if (doy == 256 || doy == 358 || doy == 5 || doy == 217) {
+   /*         if (doy == 256 || doy == 358 || doy == 5 || doy == 217) {
                 for (int k = 0; k < dailyV.size(); k++) {
                     suppressedV.add(dailyV.get(k));
                     suppressedR.add(dailyR.get(k));
@@ -739,7 +740,7 @@ public class DivineLiturgy1 implements DocHandler {
                 dailyT.clear();                
                 return;				//There is no need for any other readings to be considered!
             }
-
+*/
             /********************************
             FOR ALL HOLIDAY OF THE SECOND CLASS, THAT IS, OF THE MOTHER OF GOD, THEN ONLY THE MENALOGION
             READINGS ARE TAKEN, IF IT FALLS DURING MONDAY TO SATURDAY, OTHERWISE THE READINGS
@@ -751,7 +752,7 @@ public class DivineLiturgy1 implements DocHandler {
             4. DORMITION OF THE MOTHER OF GOD: AUGUST 15th: DOY == 226
             5. ENTRY OF THE MOTHER OF GOD INTO THE TEMPLE: NOVEMBER 21st: 324
              **************************************************************************************/
-            if ((doy == 32 && nday != -48) || doy == 250 || doy == 226 || doy == 324) {
+ /*           if ((doy == 32 && nday != -48) || doy == 250 || doy == 226 || doy == 324) {
                 if (dow != 0) {
                     for (int k = 0; k < dailyV.size(); k++) {
                         suppressedV.add(dailyV.get(k));
@@ -770,7 +771,7 @@ public class DivineLiturgy1 implements DocHandler {
             }
 
 
-            if (dow != 0) {
+            if (dow != 0) {*/
                 Vector vect = (Vector) Information2.get("Class3Transfers");
                 if (vect != null) {
                     for (Enumeration e2 = vect.elements(); e2.hasMoreElements();) {
@@ -790,11 +791,11 @@ public class DivineLiturgy1 implements DocHandler {
                     }
                 }
                 return;					//There is no need for any other readings to be considered!
-            }
+            //}
 
             //AT THIS POINT, THE PENTECOSTARION READINGS MAY BE REDUCED DUE TO REPEATS
 
-            return;
+            //return;
         }
 
         protected void LeapReadings() {

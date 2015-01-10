@@ -62,18 +62,19 @@ class GospelSelector extends JPanel implements ActionListener, PropertyChangeLis
 		String Default = (String) ConfigurationFiles.Defaults.get("GospelSelector");
 		//Create the radio buttons.
 		JordanvilleButton = new JRadioButton(SelectorNames[0]);
-	        JordanvilleButton.setMnemonic(KeyEvent.VK_J);
-        	JordanvilleButton.setActionCommand("Jordanville");
+	        JordanvilleButton.setMnemonic(KeyEvent.VK_T);
+        	JordanvilleButton.setActionCommand("TheophanyJump");
         	JordanvilleButton.setFont(CurrentFont);
         	LucanButton = new JRadioButton(SelectorNames[1]);
 		 LucanButton.setMnemonic(KeyEvent.VK_L);
-        	 LucanButton.setActionCommand("LucanJump");
+                 LucanButton.setActionCommand("LucanJump");
         	 LucanButton.setFont(CurrentFont);
-        	if(Default.equals("Jordanville"))
+                 
+        	if(Default.equals("TheophanyJump"))
         	{
         		JordanvilleButton.setSelected(true);
-        		ReadingLocation="Jordanville";
-        		LastLocation="Jordanville";
+        		ReadingLocation="TheophanyJump";
+        		LastLocation="TheophanyJump";
         	}
         	else
         	{
@@ -131,20 +132,22 @@ class GospelSelector extends JPanel implements ActionListener, PropertyChangeLis
 		ButtonGroup group = new ButtonGroup();
 		rbMenu1Item=new JRadioButtonMenuItem(SelectorNames[0]);
 		rbMenu1Item.addActionListener(this);
-		rbMenu1Item.setMnemonic(KeyEvent.VK_J);
+                rbMenu1Item.setActionCommand("TheophanyJump");
+        	rbMenu1Item.setMnemonic(KeyEvent.VK_T);
 		rbMenu1Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_J, ActionEvent.CTRL_MASK));
 		//rbMenu1Item.setFont(CurrentFont);
 
 		rbMenu2Item = new JRadioButtonMenuItem(SelectorNames[1]);
 		rbMenu2Item.setMnemonic(KeyEvent.VK_L);
+                rbMenu2Item.setActionCommand("LucanJump");
 		rbMenu2Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, ActionEvent.CTRL_MASK));
 		//rbMenu2Item.setFont(CurrentFont);
 		
-		if(Default.equals("Jordanville"))
+		if(Default.equals("TheophanyJump"))
         	{
         		rbMenu1Item.setSelected(true);
-        		ReadingLocation="Jordanville";
-        		LastLocation="Jordanville";
+        		ReadingLocation="TheophanyJump";
+        		LastLocation="TheophanyJump";
         	}
         	else
         	{
@@ -166,6 +169,7 @@ class GospelSelector extends JPanel implements ActionListener, PropertyChangeLis
 	{
 		//THIS WILL DETERMINE THE PATH TO THE APPROPRIATE READING LOCATION
 		ReadingLocation=e.getActionCommand();
+                
 		if(!ReadingLocation.equals(LastLocation))
 		{
 			firePropertyChange("Gospel Lectionary", (String) ReadingLocation, (String) LastLocation);
@@ -185,11 +189,13 @@ class GospelSelector extends JPanel implements ActionListener, PropertyChangeLis
 
 	protected static int getGValue()
 	{
-		if(ReadingLocation.equals("Jordanville"))
+            
+		if(ReadingLocation.equals("TheophanyJump"))
 		{
 			return 0;
 		}
 		return 1;
+                
 		
 	}
 
