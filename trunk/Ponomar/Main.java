@@ -456,6 +456,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         Analyse.dayInfo.put("ndayF", ndayF);	// THE NUMBER OF DAYS TO NEXT YEAR'S PASCHA (CAN BE +ve or -ve).
         //ADDING THE TYPE OF GOSPEL READINGS TO BE FOLLOWED
         Analyse.dayInfo.put("GS", GospelSelector.getGValue());
+        
         //INTERFACE LANGUAGE
         Analyse.dayInfo.put("LS", LanguageLocation.getLValue());
         Analyse.dayInfo.put("Year", today.getYear());

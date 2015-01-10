@@ -14,7 +14,9 @@ THIS MODULE READS XML FILES THAT CONTAIN THAT ARE OF THE <COMMEMORATION> TYPE
 AND STORES THE INFORMATION IN A MANNER USUABLE BY OTHER COMPONENTS
 OF THE PROGRAMME.
 
-(C) 2009 YURI SHARDT. ALL RIGHTS RESERVED.
+(C) 2009, 2015 YURI SHARDT. ALL RIGHTS RESERVED.
+* 
+* 2015 Changes: Updates and simplifications due to changes in the overall standard.
 
 PERMISSION IS HEREBY GRANTED TO USE, MODIFY, AND/OR REDISTRIBUTE THIS SOURCE CODE
 PROVIDED THAT THIS NOTICE REMAINS IN ALL VERSION AND / OR DERIVATIVES THEREOF.
@@ -249,11 +251,13 @@ public class Commemoration1 implements DocHandler {
 
         }
         if (elem.equals("LIFE") && read) {
+            if (table.get("Id")!=null){
             Information.put("LifeID",table.get("Id"));
+        }
             if (table.get("Copyright")!=null){
             Information.put("LifeCopyright",table.get("Copyright"));
             }
-        }
+         }
 
     }
 
@@ -374,8 +378,10 @@ public class Commemoration1 implements DocHandler {
     public int getRank() {
 
         if (!Information.containsKey("Rank")) {
-            int Cidn=Integer.parseInt(Information.get("CID").toString());
-            if (Cidn>=9000 && Cidn<9900){
+            String CID = Information.get("CID").toString();
+            int Cidn=Integer.parseInt(CID);
+            //System.out.println("CID: "+CID+"; length: "+CID.length());
+            if ((Cidn>=9000 && Cidn<9900) && CID.length()==4){
                 Information.put("Rank","-2");
                 return -2;
             }
@@ -383,8 +389,9 @@ public class Commemoration1 implements DocHandler {
         }
         //System.out.println(Information.get("Rank").toString());
         int Rank = Integer.parseInt(Information.get("Rank").toString());
-        int Cidn=Integer.parseInt(Information.get("CID").toString());
-            if (Cidn>=9000 && Cidn<9900){
+        String CID = Information.get("CID").toString();
+        int Cidn=Integer.parseInt(CID);
+            if ((Cidn>=9000 && Cidn<9900) && CID.length()==4){
                 if (Rank<2){
                 Information.put("Rank","-2");
                 return -2;

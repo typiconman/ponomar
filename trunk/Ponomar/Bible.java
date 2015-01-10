@@ -84,6 +84,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     private String VerseNoNumbered="";
     private String VerseLink=" ";
     private boolean versed=true;
+    private String[] halfVerse={"a","b","c"};
     //private String prologue="<p style=\"font-style:italic;font-size:10px;\">^TT</p><BR>";
     
 
@@ -354,6 +355,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                 VerseNumber = a.split(",");
                 a = (String) table.get("ChapterNo");
                 ChapterNumber = a.split(",");
+                a= (String) table.get("Parts");
+                halfVerse=a.split(",");
                 
                 CVSep = (String) table.get("CVSep");	//Chapter Verse Separator: Book Chapter:Verse or Book Chapter,Verse or something else
                 Duration = (String) table.get("Duration"); //SEPARATOR BETWEEN THE ENDS OF A CONTINUOUS READING: 3:2-4:5, or 3:2-10
@@ -699,22 +702,30 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         k = mText.indexOf("|");
         if (k != -1 && RedStuff) {
             int verseNo=Integer.parseInt(mText.substring(0, k));
+            String textVerse=mText.substring(k+1);
+            if (mText.substring(k+1).equals(" ")){
+                textVerse=mText.substring(k+2);
+            }
             if (verseNo==0){
-                return VerseNumber[0].replace("^TT", mText.substring(k+2));
+                return VerseNumber[0].replace("^TT",textVerse); //mText.substring(k+2));
             }
             else{
                 String Versed=VerseNumbered.replace("^VN",VerseNumber[Integer.parseInt(mText.substring(0, k))]);
-                Versed=Versed.replace("^VT",mText.substring(k+2));
+                Versed=Versed.replace("^VT",textVerse);//mText.substring(k+2));
                 return Versed;
             //return " <SUP>" + VerseNumber[Integer.parseInt(mText.substring(0, k))] + "</SUP>" + mText.substring(k + 1); //ADDED A SPACE BETWEEN THE LAST SENTENCE AND THE VERSE NUMBER Y.S. AND CORRECTED MULTILINGUAL ISSUES
             }
         } else if (k != -1 && !RedStuff) {
             int verseNo=Integer.parseInt(mText.substring(0, k));
+             String textVerse=mText.substring(k+1);
+            if (mText.substring(k+1).equals(" ")){
+                textVerse=mText.substring(k+2);
+            }
             if (verseNo==0){
                 return "";//VerseNumber[0].replace("^TT", mText.substring(k+2));
             }
             else{
-                return VerseNoNumbered.replace("^VT",mText.substring(k + 2));
+                return VerseNoNumbered.replace("^VT",textVerse);//mText.substring(k + 2));
             }
         }
 
@@ -751,6 +762,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     }
 
     private String formatPassage(String newPassage) {
+        //System.out.println("Hello there, passage: "+newPassage);
         if (newPassage.indexOf(":") == -1) {
             // just a chapter specification, e.g. Gen_1
             int d = (int) Integer.parseInt(newPassage);
@@ -762,33 +774,48 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
             String[] parts = newPassage.split(",");
 
             for (int j = 0; j < parts.length; j++) {
+                
                 //e.g. 2:11-3:2 or 13-14 or 5 or 4:5
                 if (parts[j].indexOf("-") == -1) {
                     // the example of 5 or 4:5; replicate
                     if (parts[j].indexOf(":") == -1) {
-                        parts[j] = VerseNumber[Integer.parseInt(parts[j])];
+                        //System.out.println("Testing the parsing function: Integer: "+Integer.toString(obtainNumber(parts[j]))+" Fraction: "+obtainPart(parts[j]));
+                        parts[j] = VerseNumber[obtainNumber(parts[j])]+obtainPart(parts[j]);
                     } else {
-                        int verse = (int) Integer.parseInt(parts[j].split(":")[1]);
+                        
+                        //System.out.println("Testing the parsing function: Integer: "+Integer.toString(obtainNumber(parts[j]))+" Fraction: "+obtainPart(parts[j]));
+                        int verse = (int) +obtainNumber(parts[j].split(":")[1]);
                         int chapter = (int) Integer.parseInt(parts[j].split(":")[0]);
-                        parts[j] = ChapterNumber[chapter] + CVSep + VerseNumber[verse];
+                        parts[j] = ChapterNumber[chapter] + CVSep + VerseNumber[verse]+obtainPart(parts[j].split(":")[1]);
                     }
                 } else {
                     String[] sections = parts[j].split("-");
+                    
 
                     for (int k = 0; k < sections.length; k++) {
+                        
                         if (sections[k].indexOf(":") == -1) {
+                            
                             // E.g. 13 or 5
-                            sections[k] = VerseNumber[Integer.parseInt(sections[k])];
+                            //System.out.println("Testing the parsing function: Integer: "+Integer.toString(obtainNumber(sections[k]))+" Fraction: "+obtainPart(sections[k]));
+                            sections[k] = VerseNumber[obtainNumber(sections[k])]+obtainPart(sections[k]);
+                            
                         } else {
-                            int verse = (int) Integer.parseInt(sections[k].split(":")[1]);
+                            //System.out.println("Hello midpoint + " + sections[k] + " "+sections[k]);
+                            //System.out.println(sections[k].split(":")[1]);
+                            int verse = (int) +obtainNumber(sections[k].split(":")[1]);
+                            //System.out.println(verse);
                             int chapter = (int) Integer.parseInt(sections[k].split(":")[0]);
-                            sections[k] = ChapterNumber[chapter] + CVSep + VerseNumber[verse];
+                            //System.out.println(chapter);
+                            sections[k] = ChapterNumber[chapter] + CVSep + VerseNumber[verse]+obtainPart(sections[k].split(":")[1]);
                         }
+                        //System.out.println(sections[k] + "testing parts: "+parts[j]);
                         if (k == 0) {
                             parts[j] = sections[k];
                         } else {
                             parts[j] = parts[j] + Duration + sections[k];
                         }
+                        
                     }
                 }
                 //RECONSTRUCT THE GIVEN READING PART
@@ -798,6 +825,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                     newPassage = newPassage + SelectionSeparator + parts[j];
                 }
             }
+            //System.out.println("Hello end");
         }
         return newPassage;
     }
@@ -805,7 +833,10 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     public String getHyperlink(String reading) {
         //THIS FUNCTION CREATES THE HYPERLINK FOR BIBLE READINGS
         //CREATED Y.S. 2008/12/11 n.s.
-       
+       if (reading.length()<1)
+       {
+           return "";
+       }
         LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
         curversion = getLang.Phrases.get("BibleV").toString();
 
@@ -862,9 +893,9 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                     int chapter = i;
                     if (sections[k].indexOf(":") == -1) {
                         // E.g. 13 or 5
-                        verse = (int) Integer.parseInt(sections[k]);
+                        verse = (int) obtainNumber(sections[k]); //UPDATABLE: Once we can deal with partial verses.
                     } else {
-                        verse = (int) Integer.parseInt(sections[k].split(":")[1]);
+                        verse = obtainNumber(sections[k].split(":")[1]); //UPDATABLE: Once we can deal with partial verses.
                         chapter = (int) Integer.parseInt(sections[k].split(":")[0]);
                         i = chapter;
                     }
@@ -1003,6 +1034,52 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         return (String) Intro.get(Id);
 
 
+    }
+    private int obtainNumber(String verse)
+    {
+        //System.out.println(verse+" inside the obtainNumber function");
+        //Allows us to separate the part after the number from the number in the case that
+        //we are dealing with part of a verse, for example 29a or 30b, where the verse is 29 and the part is a.
+        int size=verse.length();
+        //System.out.println(size);
+        if (Character.isDigit(verse.charAt(size-1)))
+        {
+            //System.out.println("Case 1");
+            return Integer.parseInt(verse);
+        }else
+        {
+            //System.out.println("Case 2");
+            if (size<3){
+                //System.out.println("Case 2a");
+                return Integer.parseInt(verse.substring(0,1));
+            }else{
+                //System.out.println("Case 2b");
+            return Integer.parseInt(verse.substring(0,size-1));
+            }
+        }
+    }
+    private String obtainPart(String verse)
+    {
+        //Allows us to separate the part after the number from the number in the case that
+        //we are dealing with part of a verse, for example 29a or 30b, where the verse is 29 and the part is a.
+        int size=verse.length();
+        //System.out.println("Testing obtainpart: "+verse.substring(size-1));
+        if (Character.isDigit(verse.charAt(size-1)))
+        {
+            return "";
+        }else
+        {
+            String part=verse.substring(size-1);
+            if (part.equals("a")){
+                return halfVerse[0];
+            }else if (part.equals("b")){
+                return halfVerse[1];
+            }else if (part.equals("c")){
+                return halfVerse[2];
+            }
+            
+            return verse.substring(size-1);
+        }
     }
 
     public static void main(String[] argz) {

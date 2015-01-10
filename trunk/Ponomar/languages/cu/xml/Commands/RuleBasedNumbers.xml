@@ -78,7 +78,7 @@ Copyright 2010 Yuri Shardt, as part of the Ponomar Project.
 		<PHRASE Key="Cz" Value="false"/>
 		<PHRASE Key="UB" Value="10000000000"/> <!-- Actually, it could be a bit higher -->
 		<PHRASE Key="IM" Value=""/>
-		<PHRASE Key="fformat" Value=".##['҃','length(A) / 2 - 0.5','length(A) % 2 == 1']['҃','length(A) / 2','length(A) % 2 == 0 &amp;&amp; (N &gt;= 20 &amp;&amp; N &lt; 1000 || N &gt; 10000)']['҃','length(A) / 2 - 1','length(A) % 2 == 0 &amp;&amp; (N &gt;= 1000 &amp;&amp; N &lt; 10000)']['҃','length(A) / 2 - 1','length(A) % 2 == 0 &amp;&amp; N &lt; 20']#."/>
+		<PHRASE Key="fformat" Value="##['҃','length(A) / 2 - 0.5','length(A) % 2 == 1 &amp;&amp; N < 10000']['҃','length(A) / 2','length(A) % 2 == 0 &amp;&amp; (N &gt;= 20 &amp;&amp; N &lt; 1000 || N &gt; 10000) &amp;&amp; N &lt; 10000']['҃','length(A) / 2 - 1','length(A) % 2 == 0 &amp;&amp; (N &gt;= 1000 &amp;&amp; N &lt; 10000) &amp;&amp; N &lt; 10000']['҃','length(A) / 2 - 1','length(A) % 2 == 0 &amp;&amp; N &lt; 20']#"/>
 		<PHRASE Key="zero" Value="ни́чь"/>
 		 
 	

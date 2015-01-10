@@ -285,7 +285,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
             else{
                 ConfigurationFiles.Defaults.put("Longitude",longitude.getText().toString());
             }
-            ConfigurationFiles.Defaults.put("TimeZone2",TimeZone2.getSelectedItem().toString());
+            ConfigurationFiles.Defaults.put("TimeZone",TimeZone2.getSelectedItem().toString());
             
             String previous=ConfigurationFiles.Defaults.get("Calendar").toString();
             if (jRadioButton1.getSelectedObjects()!=null){

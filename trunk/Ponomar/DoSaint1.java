@@ -50,6 +50,8 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
     private String kondak2 = "";
     private String kondakT2 = "";  //Tone
     private String kondakP2 = "";  //Podoben melody
+    
+    private String repose=""; //date of repose (not yet standardised)
 
     private String name = "";
     private String copyright = ""; //Any additional information about the life.
@@ -442,6 +444,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         textR = "";
         name = "";
         copyright = "";
+        repose="";
 
     }
 
@@ -471,10 +474,16 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
             if (table.get("Copyright") != null) {
                 copyright = table.get("Copyright").toString();
             }
+            if (table.get("Repose") != null) {
+                repose = table.get("Copyright").toString();
+            }
             return;
         }
         if (elem.equals("NAME") && read) {
             name = table.get("Nominative").toString();
+            if (repose!=""){
+                name=name+"(† "+repose+")";
+            }
         }
         if (elem.equals("TROPARION") && read) {
             troparT = table.get("Tone").toString();
