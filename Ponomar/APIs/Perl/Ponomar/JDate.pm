@@ -360,7 +360,6 @@ Returns the number of days since $date, another JDate object
 sub getDaysSince ($$) {
 	my $self = shift;
 	my $other = shift;
-	
 	return $self->{_mnjday} - $other->{_mnjday};
 }
 

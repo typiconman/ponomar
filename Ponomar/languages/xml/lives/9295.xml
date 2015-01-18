@@ -19,12 +19,13 @@
 
 <!-- CASE THREE: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS BETWEEN JANUARY 15 AND JANUARY 18  or JANUARY 10 OR JANUARY 11 -->
 <!-- THE READINGS FOR THE 30TH WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy &gt;= 14 &amp;&amp; doy &lt;= 17 || doy == 9 || doy == 10)"/>
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; (doy == 14 || doy == 15 || doy == 17 || doy == 9 || doy == 10))"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid)" EffWeek="17" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 16)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy &gt;= 14 &amp;&amp; doy &lt;= 17 || doy == 9 || doy == 10)"/>
 
 <!-- CASE FOUR: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS JANUARY 14 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 13)"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 13)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 13)"/>
 
 <!-- CASE FIVE: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS JANUARY 19, 20 OR 22 THRU 25 -->
