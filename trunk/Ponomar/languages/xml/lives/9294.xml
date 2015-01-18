@@ -4,11 +4,12 @@
 <PRIMES Type="Normal"/>
 <LITURGY>
 <!-- CASE ONE: IT IS JANUARY 14; READIGNS FOR THE 30TH SATURDAY -->
-<SCRIPTURE Type="apostol" Reading="Eph_5:1-8" Pericope="228" EffWeek="30" Cmd="GS == 1 &amp;&amp; doy == 13"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="GS == 1 &amp;&amp; doy == 13"/>
 <SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" EffWeek="30" Cmd="GS == 1 &amp;&amp; doy == 13"/>
 
 <!-- CASE TWO: IT IS JANUARY 16 OR 17; READINGS FOR THE 31ST SATURDAY -->
-<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 15 || doy == 16"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="GS == 1 &amp;&amp; (nday == -92 &amp;&amp; doy == 15 || doy == 16)"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="GS == 1 &amp;&amp; (nday == -85 &amp;&amp; doy == 15 || doy == 16)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 15 || doy == 16"/>
 
 <!-- CASE THREE: IT IS JANUARY 20 OR JANUARY 22; READINGS FOR THE 16TH SATURDAY -->
@@ -17,12 +18,12 @@
 
 <!-- CASE FOUR: IT IS JANUARY 15 AND THERE ARE TWO MORE WEEKS -->
 <!-- READINGS FOR THE 31ST WEEK -->
-<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; doy == 14"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; doy == 14"/>
 <SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; doy == 14"/>
 
 <!-- CASE FIVE: IT IS JANUARY 15 AND THERE ARE THREE MORE WEEKS -->
 <!-- READINGS FOR THE 30TH WEEK -->
-<SCRIPTURE Type="apostol" Reading="Eph_5:1-8" Pericope="228" EffWeek="30" Cmd="GS == 1 &amp;&amp; nday == -92 &amp;&amp; doy == 14"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="GS == 1 &amp;&amp; nday == -92 &amp;&amp; doy == 14"/>
 <SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" EffWeek="30" Cmd="GS == 1 &amp;&amp; nday == -92 &amp;&amp; doy == 14"/>
 
 <!-- CASE SIX: THERE ARE TWO MORE WEEKS AND IT IS ONE OF JAN 18, 19, 21, 23 OR 24 -->

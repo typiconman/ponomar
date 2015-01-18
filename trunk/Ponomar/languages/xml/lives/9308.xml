@@ -6,9 +6,10 @@
 <!-- CASE ONE: THERE ARE NO MORE WEEKS LEFT -->
 <SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" Pericope="293" EffWeek="33" Cmd="nday == -71"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:2-8a" Pericope="88" EffWeek="33" Cmd="nday == -71"/>
-
 <!-- CASE TWO: THERE IS ONE MORE WEEK LEFT -->
-<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" EffWeek="32" Cmd="nday == -78"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="nday == -78 &amp;&amp; (doy &gt;= 24 &amp;&amp; doy &lt;= 26)"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_15:58-16:3" Pericope="164" EffWeek="19" Cmd="nday == -78 &amp;&amp; doy &lt;= 23"/>
+<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" EffWeek="32" Cmd="nday == -78 &amp;&amp; doy &gt;= 27"/>
 <SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" EffWeek="32" Cmd="nday == -78"/>
 </LITURGY>
 </SERVICE>

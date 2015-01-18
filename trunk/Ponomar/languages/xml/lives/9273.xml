@@ -20,7 +20,7 @@
 
 <!-- CASE FOUR: THERE ARE TWO MORE WEEKS LEFT AND IT IS JANUARY 18 TO JANUARY 20 -->
 <!-- READINGS FOR 17TH SATURDAY -->
-<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; doy &gt;= 17 &amp;&amp; doy &lt;= 19"/>
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; doy &gt;= 17 &amp;&amp; doy &lt;= 19"/>
 <SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; doy &gt;= 17 &amp;&amp; doy &lt;= 19"/>
 
 <!-- CASE FIVE: THERE ARE TWO MORE WEEKS LEFT AND IT IS JANUARY 14 TO JANUARY 17 -->

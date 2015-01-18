@@ -20,7 +20,7 @@ use vars qw (@ISA @EXPORT_OK %EXPORT_TAGS @EXPORT $VERSION $basepath);
 BEGIN {
 	$VERSION = 0.01;
 	@ISA 	 = qw( Exporter );
-	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel julianFromGregorian);
+	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel julianFromGregorian getNextYearWithBoundary);
 	@EXPORT_OK = ();
 	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
 #	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
@@ -117,7 +117,7 @@ Returns a new Ponomar::JDate object with Pascha for the specified C<$year>.
 
 sub getPascha ($) {
 	my $inyear = shift;
-	
+
 	#Use the Gaussian formulae to calculate the Alexandria Paschallion
 	my $a = $inyear % 4;
 	my $b = $inyear % 7;
@@ -260,6 +260,27 @@ sub getPreviousYearWithSamePascha {
 		last if ($newkey eq $oldkey);
 	}
 	return $year;
+}
+
+
+=item getNextYearWithBoundary ($i, $Year)
+
+Solves a reverse computus problem by returning the next year after $Year when pascha occurs $i days after March 22
+
+=cut
+
+sub getNextYearWithBoundary { # XXX: very buggy!
+	my $i = shift;
+	my $Year = shift;
+
+	Carp::croak ("Invalid arguments") if ($i < 0 || $i > 35);
+	my $newyear = $Year + 1;
+	while ($newyear - $Year < 533) {
+		my $pascha = getPascha($newyear);
+		last if ($pascha->getDaysSince(new Ponomar::JDate(3, 22, $newyear)) == $i);
+		$newyear++;
+	}
+	return $newyear;
 }
 
 =item getThisDayNextYear ($jdate)
