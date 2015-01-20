@@ -15,7 +15,7 @@ use overload
 	'!=' => "notEquals";
 
 BEGIN {
-	$VERSION = 0.01;
+	$VERSION = 0.02;
 }
 
 =head3 METHODS
@@ -31,6 +31,7 @@ A Reading object has the following elements
 	Reading => The Reading (e.g., Gen_1:1-13)
 	Pericope => The Pericope (e.g., 103 -- OPTIONAL)
 	EffWeek => The EffWeek (e.g., 17 -- OPTIONAL)
+	Type => The Type of readings. This is useless, except for Liturgy, where it is apostol or gospel
 	saint => The Assigned Saint or Commemoration ID
 
 =cut
@@ -85,6 +86,17 @@ sub setEffWeek {
 	my $self = shift;
 	my $effWeek = shift;
 	$self->{EffWeek} = $effWeek;
+}
+
+sub setType {
+	my $self = shift;
+	my $type = shift;
+	$self->{Type} = $type;
+}
+
+sub getType {
+	my $self = shift;
+	return $self->{Type};
 }
 
 sub getSaint {

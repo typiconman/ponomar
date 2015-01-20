@@ -20,9 +20,9 @@ use vars qw (@ISA @EXPORT_OK %EXPORT_TAGS @EXPORT $VERSION $basepath);
 BEGIN {
 	$VERSION = 0.01;
 	@ISA 	 = qw( Exporter );
-	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel julianFromGregorian getNextYearWithBoundary);
+	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel julianFromGregorian getNextYearWithBoundary getKeyOfBoundaries);
 	@EXPORT_OK = ();
-	$basepath = "/home/sasha/svn/ponomar/Ponomar/languages/";
+	$basepath = "/home/sasha/svn/ponomar/ponomar/Ponomar/languages/";
 #	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
 #	$basepath = "/home/sasha/svn/ponomar/svn/trunk/Ponomar/languages/";
 }
@@ -80,7 +80,7 @@ sub findBottomUp {
 		my $path = $basepath . join ("/", @parts[0..$j]) . "/$file";
 		return $path if (-e $path);
 	}
-
+#warn "Foudn $basepath/$file" if (-e $basepath . $file);
 	return $basepath . $file if (-e $basepath . $file);
 	croak (__PACKAGE__ . "::findBottomUp($language, $file) : unable to find file");
 }
@@ -105,6 +105,7 @@ sub findTopDown {
 		my $path = $basepath . join ("/", @parts[0..$j]) . "/" . $file;
 		push @paths, $path if (-e $path);
 	}
+#warn join(",", @paths);
 	carp (__PACKAGE__ . "::findTopDown($language, $file) : unable to find any instances") unless (@paths);
 	return @paths;
 }

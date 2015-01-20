@@ -9,7 +9,7 @@
 
 <!-- CASE TWO: THERE ARE NO MORE WEEKS AND IT IS JANUARY 13 TO JANUARY 16 -->
 <!-- READINGS FOR THE 33RD WEEK -->
-<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="GS == 1 &amp;&amp; (nday == -71 &amp;&amp; doy == 12)"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_10:23-28" Pericope="146" EffWeek="16" Cmd="GS == 1 &amp;&amp; (nday == -71 &amp;&amp; doy == 12)"/>
 <SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" Pericope="293" EffWeek="33" Cmd="GS == 1 &amp;&amp; (nday == -71 &amp;&amp; doy &gt;= 13 &amp;&amp; doy &lt;= 16)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:2-8a" Pericope="88" EffWeek="33" Cmd="GS == 1 &amp;&amp; (nday == -71 &amp;&amp; doy &gt;= 12 &amp;&amp; doy &lt;= 16)"/>
 

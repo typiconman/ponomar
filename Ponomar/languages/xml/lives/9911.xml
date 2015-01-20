@@ -1,8 +1,9 @@
 <SAINT>
 <SERVICE Type="0">
+<!-- This is the Sunday before Exaltation -->
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Gal_6:11-18" Pericope="215"/>
-<SCRIPTURE Type="gospel" Reading="Jn_3:13-17" Pericope="9"/>
+<SCRIPTURE Type="apostol" EffWeek="SBE" Reading="Gal_6:11-18" Pericope="215"/>
+<SCRIPTURE Type="gospel" EffWeek="SBE" Reading="Jn_3:13-17" Pericope="9"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

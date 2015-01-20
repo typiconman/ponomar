@@ -1,8 +1,9 @@
 <SAINT>
 <SERVICE>
+<!-- This is the Sunday before Theophany -->
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="II Tim_4:5-8" Pericope="298"/>
-<SCRIPTURE Type="gospel" Reading="Mk_1:1-8" Pericope="1"/>
+<SCRIPTURE Type="apostol" EffWeek="SBT" Reading="II Tim_4:5-8" Pericope="298"/>
+<SCRIPTURE Type="gospel" EffWeek="SBT" Reading="Mk_1:1-8" Pericope="1"/>
 </LITURGY>
 </SERVICE>
 </SAINT>
