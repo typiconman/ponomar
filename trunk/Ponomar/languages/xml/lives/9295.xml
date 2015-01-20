@@ -21,8 +21,7 @@
 <!-- THE READINGS FOR THE 30TH WEEK ARE READ -->
 <SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; (doy == 14 || doy == 15))"/>
 <SCRIPTURE Type="apostol" Reading="II Cor_9:6-11" Pericope="188" EffWeek="18" Cmd="GS == 1 &amp;&amp;  (doy == 9 || doy == 10)"/>
-4<SCRIPTURE Type="apostol" Reading="II Cor_9:6-11" Pericope="188" EffWeek="18" Cmd="GS == 1 &amp;&amp; nday == -91 &amp;&amp; doy == 17"/>
-<SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid)" EffWeek="17" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 16)"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid)" EffWeek="17" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; (doy == 17 || doy == 16))"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy &gt;= 14 &amp;&amp; doy &lt;= 17 || doy == 9 || doy == 10)"/>
 
 <!-- CASE FOUR: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS JANUARY 14 -->
