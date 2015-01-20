@@ -4,7 +4,7 @@
 <PRIMES Type="Normal"/>
 <LITURGY>
 <!-- CASE ONE: IT IS JANUARY 16 OR 17; READINGS FOR THE 31ST WEEK -->
-<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 15 || doy == 16"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_15:58-16:3" Pericope="164" EffWeek="19" Cmd="GS == 1 &amp;&amp; doy == 15 || doy == 16"/>
 <SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 15 || doy == 16"/>
 
 <!-- CASE TWO: IT IS JANUARY 18 THRU 21 OR JANUARY 27 OR JANUARY 29 -->

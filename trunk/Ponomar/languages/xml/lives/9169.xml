@@ -6,11 +6,11 @@
 <SCRIPTURE Type="matins" Reading="Lk_24:36-53" Pericope="114" Cmd="dRank &lt;= 6"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid)" Cmd="GS == 1 &amp;&amp; !(doy == 259 &amp;&amp; ndayF == -210 || ndayF == -217 &amp;&amp; doy &gt;= 257)" EffWeek="17"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid)" Cmd="GS == 1 &amp;&amp; !(doy == 259 &amp;&amp; ndayF == -210 || ndayF == -217 &amp;&amp; doy &gt;= 257 || doy == 252)" EffWeek="17"/>
 <SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid)" Cmd="GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Lk_7:11-16" Pericope="30" EffWeek="20" Cmd="(doy &gt;= 278 &amp;&amp; doy &lt;= 284) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_6:31-36" Pericope="26" EffWeek="19" Cmd="(doy &gt;= 271 &amp;&amp; doy &lt;= 277) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Pericope="17" EffWeek="18" Cmd="(doy &gt;= 264 &amp;&amp; doy &lt;= 270) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Pericope="17" EffWeek="18" Cmd="(doy &gt;= 264 &amp;&amp; doy &lt;= 270 &amp;&amp; doy != 252) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" EffWeek="17" Cmd="GS == 1 &amp;&amp; (doy &lt; 264 &amp;&amp; !(doy == 259 &amp;&amp; ndayF == -210 || ndayF == -217 &amp;&amp; doy &gt;= 257))"/>
 <SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" Cmd="GS == 0"/>
 </LITURGY>

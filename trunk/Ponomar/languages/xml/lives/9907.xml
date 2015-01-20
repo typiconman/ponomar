@@ -1,8 +1,9 @@
 <SAINT>
 <SERVICE Type="1">
+<!-- This is the Saturday before Nativity -->
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Gal_3:8-12" Pericope="205"/>
-<SCRIPTURE Type="gospel" Reading="Lk_13:18-29" Pericope="72"/>
+<SCRIPTURE Type="apostol" EffWeek="26" Reading="Gal_3:8-12" Pericope="205"/>
+<SCRIPTURE Type="gospel" EffWeek="29" Reading="Lk_13:18-29" Pericope="72"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

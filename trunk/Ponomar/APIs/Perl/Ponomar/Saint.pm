@@ -291,6 +291,7 @@ sub startElement {
 			delete @attrs{ qw(Type) };
 			my $reading = new Ponomar::Reading( %attrs );
 			$reading->setSaint($self->{CId});
+			$reading->setType($type);
 			### XXX: BAD CODE HERE, THERE SHOULD BE NO NEED FOR THE GREP
 			grep { $_->addReading( $reading ) } $self->getServices($self->{_whichService});
 			last SWITCH;
