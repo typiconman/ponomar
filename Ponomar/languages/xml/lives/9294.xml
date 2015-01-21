@@ -3,9 +3,9 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<!-- CASE ONE: IT IS JANUARY 14; READIGNS FOR THE 30TH SATURDAY -->
+<!-- CASE ONE: IT IS JANUARY 14; READIGNS FOR THE 31ST SATURDAY -->
 <SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="GS == 1 &amp;&amp; doy == 13"/>
-<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" EffWeek="30" Cmd="GS == 1 &amp;&amp; doy == 13"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 13"/>
 
 <!-- CASE TWO: IT IS JANUARY 16 OR 17; READINGS FOR THE 31ST SATURDAY -->
 <SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="GS == 1 &amp;&amp; (nday == -92 &amp;&amp; (doy == 15 || doy == 16))"/>

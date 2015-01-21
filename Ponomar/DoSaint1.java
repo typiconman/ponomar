@@ -482,7 +482,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         if (elem.equals("NAME") && read) {
             name = table.get("Nominative").toString();
             if (repose!=""){
-                name=name+"(† "+repose+")";
+                name=name+"(\u2020 "+repose+")";
             }
         }
         if (elem.equals("TROPARION") && read) {

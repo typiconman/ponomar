@@ -14,7 +14,7 @@ CLASSES = \
 	Ponomar/LanguagePack.java \
 	Ponomar/JDate.java \
 	Ponomar/Paschalion.java \
-	Ponomar/DoSaint.java \
+	Ponomar/DoSaint1.java \
 	Ponomar/Sunrise.java \
 	Ponomar/PrintableTextPane.java \
 	Ponomar/ConfigurationFiles.java \
@@ -32,7 +32,7 @@ CLASSES = \
 	Ponomar/Database.java \
 	Ponomar/Days.java \
 	Ponomar/Fasting.java \
-	Ponomar/DivineLiturgy.java \
+	Ponomar/DivineLiturgy1.java \
 	Ponomar/Primes.java \
 	Ponomar/PrimeSelector.java \
 	Ponomar/RoyalHours.java \
