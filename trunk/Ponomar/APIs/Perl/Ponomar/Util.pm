@@ -11,6 +11,7 @@ This is not an Object Oriented class, but rather is a set of utility functions f
 =cut
 
 use strict;
+use utf8;
 require 5.004;
 use Carp;
 require Exporter;
@@ -20,7 +21,7 @@ use vars qw (@ISA @EXPORT_OK %EXPORT_TAGS @EXPORT $VERSION $basepath);
 BEGIN {
 	$VERSION = 0.01;
 	@ISA 	 = qw( Exporter );
-	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax getMatinsGospel julianFromGregorian getNextYearWithBoundary getKeyOfBoundaries);
+	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax isNumeric getMatinsGospel julianFromGregorian getNextYearWithBoundary getKeyOfBoundaries);
 	@EXPORT_OK = ();
 	$basepath = "/home/sasha/svn/ponomar/ponomar/Ponomar/languages/";
 #	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
@@ -359,6 +360,18 @@ sub argmax (&@) {
 	return $index;
 }
 
+=item isNumeric($variable)
+
+Given a C<$variable> returns true if C<$variable> is a real number.
+
+=cut
+
+sub isNumeric {
+	my $var = shift;
+	return $var =~ /^-?\d+\.?\d*$/;
+}
+
+
 =item getMatinsGospel($reading)
 
 Given a C<$reading>, which a String of the type returned by a Reading object, returns the Matins Gospel number. If the reading is not a matins gospel, returns C<undef>.
@@ -472,7 +485,7 @@ Given C<$year>, a year AD, returns the Key of Boundaries, a letter indicating th
 sub getKeyOfBoundaries {
 	my $year = shift;
 	use utf8;
-	my @letters = ("А", "Б", "В", "Г", "Д", "Е", "Ж", "Ѕ", "З", "И", "І", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "У", "Ф", "Х", "Ѿ", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Ѣ", "Ю", "Ѫ", "Ѧ");
+	my @letters = ("А", "Б", "В", "Г", "Д", "Е", "Ж", "Ѕ", "З", "И", "І", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "Ꙋ", "Ф", "Х", "Ѿ", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Ѣ", "Ю", "Ѫ", "Ѧ");
 	
 	my $pascha = getPascha($year);
 	my $kluch;

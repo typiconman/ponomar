@@ -4,8 +4,8 @@
 <PRIMES Type="Normal"/>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Cor_10:23-28" Pericope="146" EffWeek="16" Cmd="GS == 0"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_10:23-28" Pericope="146" EffWeek="16" Cmd="GS == 1 &amp;&amp; !(ndayF == -225 &amp;&amp; doy &lt;= 254 &amp;&amp; doy &gt;= 249)"/>
-<SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" Cmd="doy &lt; 263 &amp;&amp; !(ndayF == -225 &amp;&amp; doy &lt;= 254 &amp;&amp; doy &gt;= 249) &amp;&amp; GS == 1" EffWeek="16"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_10:23-28" Pericope="146" EffWeek="16" Cmd="GS == 1 &amp;&amp; !(ndayF == -225 &amp;&amp; doy &lt;= 255 &amp;&amp; doy &gt;= 249)"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" Cmd="doy &lt; 263 &amp;&amp; !(ndayF == -225 &amp;&amp; doy &lt;= 255 &amp;&amp; doy &gt;= 249) &amp;&amp; GS == 1" EffWeek="16"/>
 <SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" Cmd="(doy &gt;= 263 &amp;&amp; doy &lt;= 269) &amp;&amp; GS == 1" EffWeek="18"/>
 <SCRIPTURE Type="gospel" Reading="Lk_5:17-26" Pericope="19" Cmd="(doy &gt;= 270 &amp;&amp; doy &lt;= 274) &amp;&amp; GS == 1" EffWeek="19"/>
 <SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" Cmd="GS == 0"/>

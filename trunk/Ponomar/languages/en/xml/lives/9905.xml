@@ -1,4 +1,4 @@
 <SAINT>
-<NAME Short="Saturday after the Nativity"/>
-<NAME Nominative="Saturday after the Nativity of Christ" Cmd="dow == 6"/>
+<NAME Nominative="" Short="Saturday after the Nativity" Cmd="dow != 6"/>
+<NAME Nominative="Saturday after the Nativity of Christ" Short="Saturday after the Nativity" Cmd="dow == 6"/>
 </SAINT>
