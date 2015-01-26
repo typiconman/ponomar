@@ -24,7 +24,7 @@
 <!-- CASE FIVE: IT IS JANUARY 15 AND THERE ARE THREE MORE WEEKS -->
 <!-- READINGS FOR THE 30TH WEEK -->
 <SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="GS == 1 &amp;&amp; nday == -92 &amp;&amp; doy == 14"/>
-<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" EffWeek="30" Cmd="GS == 1 &amp;&amp; nday == -92 &amp;&amp; doy == 14"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -92 &amp;&amp; doy == 14"/>
 
 <!-- CASE SIX: THERE ARE TWO MORE WEEKS AND IT IS ONE OF JAN 18, 19, 21, 23 OR 24 -->
 <!-- READINGS FOR THE 17TH WEEK -->

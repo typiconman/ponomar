@@ -9,8 +9,8 @@
 
 <!-- CASE ONE: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS JAN 9-11 -->
 <!-- THE READINGS FOR THE 30TH WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; (doy == 8 || doy == 10)"/>
-<SCRIPTURE Type="apostol" Reading="II Cor_9:6-11" Pericope="188" EffWeek="18" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 9"/>
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; nday == -91 &amp;&amp; (doy == 10)"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_9:6-11" Pericope="188" EffWeek="18" Cmd="GS == 1 &amp;&amp; nday == -91 &amp;&amp; (doy == 8 || doy == 9)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy &gt;= 8 &amp;&amp; doy &lt;= 10)"/>
 
 <!-- CASE TWO: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS JANUARY 15, 17, OR 18 -->

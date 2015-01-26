@@ -18,7 +18,7 @@
 
 <!-- CASE THREE: THERE IS ONE MORE WEEK REMAINING AND IT IS JANUARY 21 -->
 <!-- THE READINGS FOR THE 17TH WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy == 20)"/>
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy == 20)"/>
 <SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" EffWeek="17" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy == 20)"/>
 
 <!-- CASE FOUR: THERE IS ONE MORE WEEK OF READINGS AND IT IS BETWEEN JANUARY 1 AND JANUARY 20, EXCEPT JANUARY 6 -->
@@ -28,8 +28,8 @@
 
 <!-- CASE FIVE: THERE IS ONE MORE WEEK OF READINGS AND IT IS DECEMBER 31 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -84 &amp;&amp; doy == 364"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -84 &amp;&amp; doy == 364"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; ndayF == -84 &amp;&amp; doy == 364"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; ndayF == -84 &amp;&amp; doy == 364"/>
 
 <!-- CASE SIX: WE ARE NOT USING THE LUCAN JUMP; USING YURI'S RULES: -->
 <SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)" Cmd="GS == 0 &amp;&amp; nday == -77"/>
