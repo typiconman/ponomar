@@ -420,6 +420,7 @@ sub addDays ($$) {
 Returns a new JDate object, advanced by one day
 
 =cut
+
 sub addOneDay($) {
 	my $self = shift;
 	
@@ -499,6 +500,7 @@ sub equals ($$) {
 Returns true if self is before $date
 
 =cut
+
 sub before($$) {
 	my $self = shift;
 	my $other = shift;
@@ -511,6 +513,7 @@ sub before($$) {
 Returns true if self is after $date 
 
 =cut
+
 sub after($$) {
 	my $self = shift;
 	my $other = shift;

@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fullpage}
+\usepackage{makeidx}
+\usepackage{hyperref}
+\makeindex
+\title{Ponomar Application Programming Interface for Perl}
+\author{Aleksandr Andreev}
+\date{Alpha Version as of \today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\clearpage
+
+\section{License}
+\textcopyright{} 2012-2015 Aleksandr Andreev and Yuri Shardt \\
+
+This documentation is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit \href{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/}.
+
+\section{Installation Instructions}
+
+To work with the API, you need to download all of the API files and all of the XML files. The easiest way to do this is to checkout the files from the \href{https://code.google.com/p/ponomar}{Ponomar Google Code repository}.
+You can put the API files into a different directory or you can keep them in the svn tree. In any case, you need to open the \path{Ponomar/Util.pm} file and
+modify the $basepath$ variable on line 27 to point to the root of your Ponomar XML tree. 
+
+Unfortunately, there is no installer to automate this process. (This is a bug).
+
+\clearpage
+
+

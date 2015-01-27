@@ -18,6 +18,7 @@ require Exporter;
 require Ponomar::JDate;
 use vars qw (@ISA @EXPORT_OK %EXPORT_TAGS @EXPORT $VERSION $basepath);
 
+## $basepath IS THE PATH TO THE ROOT OF THE XML DATA. YOU WILL NEED TO SET THIS VARIABLE
 BEGIN {
 	$VERSION = 0.01;
 	@ISA 	 = qw( Exporter );
@@ -25,7 +26,6 @@ BEGIN {
 	@EXPORT_OK = ();
 	$basepath = "/home/sasha/svn/ponomar/ponomar/Ponomar/languages/";
 #	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
-#	$basepath = "/home/sasha/svn/ponomar/svn/trunk/Ponomar/languages/";
 }
 
 my %matinsGospels = (
@@ -106,7 +106,7 @@ sub findTopDown {
 		my $path = $basepath . join ("/", @parts[0..$j]) . "/" . $file;
 		push @paths, $path if (-e $path);
 	}
-#warn join(",", @paths);
+
 	carp (__PACKAGE__ . "::findTopDown($language, $file) : unable to find any instances") unless (@paths);
 	return @paths;
 }
@@ -271,7 +271,8 @@ Solves a reverse computus problem by returning the next year after $Year when pa
 
 =cut
 
-sub getNextYearWithBoundary { # XXX: very buggy!
+## TODO: THIS CODE NEEDS TO BE FIXED.
+sub getNextYearWithBoundary {
 	my $i = shift;
 	my $Year = shift;
 
@@ -340,6 +341,7 @@ E.g.:
  argmax { $_->getKey('Type') } $ponomar->getSaints();
 
 Returns the highest-ranked Saint of the day.
+
 =cut
 
 sub argmax (&@) {
@@ -482,9 +484,11 @@ Given C<$year>, a year AD, returns the Key of Boundaries, a letter indicating th
 
 =cut
 
+## FIXME: here we should use Unicode codepoints so that the script does not depend on UTF support on the client side
+## and so that it is absolutely clear which code points are being used.
+
 sub getKeyOfBoundaries {
 	my $year = shift;
-	use utf8;
 	my @letters = ("А", "Б", "В", "Г", "Д", "Е", "Ж", "Ѕ", "З", "И", "І", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "Ꙋ", "Ф", "Х", "Ѿ", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Ѣ", "Ю", "Ѫ", "Ѧ");
 	
 	my $pascha = getPascha($year);
@@ -533,7 +537,7 @@ Given C<$year>, a year AD, returns the date of the Jewish Passover (15 Nisan) ac
 The formulae are due to Meeus, Astronomical Algorithms, Chapter 9.
 
 Note that this is the actual, modern Jewish Pesach, not the ecclesiastical Old Testament Passover.
-The ecclesiastical old testament Passover can be obtained from the Epakta.
+The ecclesiastical old testament Passover can be obtained from the Epacta.
 
 =cut
 
@@ -629,6 +633,10 @@ Used in Milankovic calculations
 
 Formulae due to Meuss, p. 350ff.
 
+XXX: FULL MILANKOVIC COMPUTATION OF PASCHA IS NOT SUPPORTED yet.
+
+=back
+
 =cut
 
 sub getNextFullMoon {
@@ -716,6 +724,7 @@ sub getNextFullMoon {
 	       + 0.000023 * sin ($A14);
 	
 	### JDE now contains the Julian day of the moon (perhaps we need to add or subtract 0.5?)
+	### FIXME: check if this code actually returns correct results
 	return $JDE - 0.5;
 }
 
