@@ -103,13 +103,15 @@ use Ponomar::Bible;
 
 BEGIN {
 	$VERSION = 0.01;
-	### TODO: ADD EXPORTER CRAP HERE
+	### TODO: ADD EXPORTER STUFF HERE
 	
 	@GLOBALS = qw /dow doy nday Year GS dRank/;
 }
 
 INIT {
-	require File::Basename;
+	require File::Basename; ## TODO: CHANGE THIS TO PERL 5 SYNTAX
+	## LOADS INTERNATIONALIZATION SUPPORT FOR PONOMAR
+	## TODO: GET RID OF Ponomar::I18n and switch to the new CLDR module for Perl
 	Ponomar::I18n::load(File::Basename::dirname($INC{__PACKAGE__ . '.pm'}) . "/Ponomar/locales.yml");
 }
 
@@ -186,7 +188,7 @@ sub endElement {
 =item new($date, $language)
 
 Creates a new Ponomar object for Julian date C<$date> and lanuguage C<$language> Runs the initial initialization process, reading XML for this C<$date>. Returns a reference to the new object. E.g.:
-	
+
 	$ponomar = new Ponomar(Ponomar::Util::getToday(), 'en')
 
 =cut
@@ -199,7 +201,7 @@ sub new {
 		_date => $date,
 		_lang => $language
 	};
-	$GS = 0; ## FIXME
+	$GS = 0; ## FIXME: ALLOW THE USER TO TURN THE LUCAN JUMP OFF AND ON
 	bless $self, $class;
 	$self->init();
 	return $self;
@@ -382,6 +384,7 @@ Returns a reference to a new C<Ponomar::Bible> object.
 =back
 
 =cut
+
 sub loadBible {
 	my $self = shift;
 	my $version = shift;
@@ -393,4 +396,4 @@ sub loadBible {
 
 __END__
 
- 
+

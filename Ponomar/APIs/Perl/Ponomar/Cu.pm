@@ -7,6 +7,8 @@ Ponomar::Cu -- Church Slavonic support in the Ponomar API
 =head3 DESCRIPTION
 
 This is not an Object Oriented class, but rather a set of utility functions for working with Church Slavonic texts.
+This code is DEPRECATED and will be deleted. Use L<Lingua::CU> instead.
+TODO: The Ponomar API needs to be rewritten so that everything uses Lingua::CU.
 
 =cut
 
