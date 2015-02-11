@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Ponomar" Language="1033" Version="1.0.0.0" Manufacturer="Ponomar Project" UpgradeCode="7dc73215-34b2-4645-a1fd-349f9fd4e8eb">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="Ponomar" Level="1">
+      <ComponentGroupRef Id="MyComponentGroup" />
+      <ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Ponomar" />
+			</Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="PonomarStartMenuFolder" Name="Ponomar" />
+      </Directory>
+		</Directory>
+	</Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="cmpPonomarShortcut" Guid="{73D2142C-8DEF-4550-9BDD-BF2314F1F9A7}">
+        <Shortcut Id="PonomarApplicationShortcut"
+                  Name="Ponomar"
+                  Description="Runs the Ponomar application"
+                  Directory="PonomarStartMenuFolder"
+                  Target="[INSTALLFOLDER]bin\Ponomar.exe" />
+        <RemoveFolder Id="RemovePonomarStartMenuFolder"
+                      Directory="PonomarStartMenuFolder"
+                      On="uninstall" />
+        <RegistryValue Root="HKCU"
+                       Key="Software\Ponomar Project\Ponomar"
+                       Name="installed"
+                       Type="integer"
+                       Value="1"
+                       KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
