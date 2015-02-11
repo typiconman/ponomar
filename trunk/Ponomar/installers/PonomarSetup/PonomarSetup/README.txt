@@ -22,7 +22,6 @@ Components.wxs file. The Components.wxs file itself was generated as follows:
 - Copy the following directories from the Ponomar source tree to that folder:
     images
     languages
-    xml
 - Create a subfolder named bin, and place Ponomar.exe in it.
 - Create a subfolder named src, and place our .java source code files in it.
 - The SourceFiles folder thus contains the following subdirectories:
@@ -30,7 +29,6 @@ Components.wxs file. The Components.wxs file itself was generated as follows:
     images
     languages
     src
-    xml
 - In the PonomarSetup project's Properties, on the Build tab, define the
   following preprocessor variable (revise the path as applicable):
     SourceFilesDir=C:\Users\Matthew\Desktop\SourceFiles
