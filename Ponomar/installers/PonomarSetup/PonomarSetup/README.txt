@@ -9,8 +9,9 @@ This project was created using the community edition of Microsoft Visual Studio
 When built, this project creates an MSI installer and two .cab files.
 
 When run, the MSI installer creates the Ponomar directory under the applicable
-Program Files directory, and creates an application shortcut in the applicable
-OS-specific .
+Program Files directory, which means either either "Program Files" or "Program
+Files (x86)". It also creates an application shortcut in the applicable Start
+menu, which differs depending on the Windows version.
 
 The contents of the Ponomar application directory are as defined in the
 Components.wxs file. The Components.wxs file itself was generated as follows:
