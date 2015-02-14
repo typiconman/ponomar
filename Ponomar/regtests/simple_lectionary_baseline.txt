@@ -1,5 +1,5 @@
 Lectionary of sequential readings
-Generated Sat Feb 14 13:44:15 2015
+Generated Sat Feb 14 15:51:51 2015
 
 
 PASCHA. The Bright and Glorious Resurrection of our Lord, God, and Saviour Jesus Christ
@@ -86,8 +86,8 @@ Monday:	Eph 5:9-19 (§229)	Mt 18:10-20 (§75)
 Tuesday:	Rom 1:1-7, 13-17 (§79)	Mt 4:25-5:13 (§10)
 Wednesday:	Rom 1:18-27 (§80)	Mt 5:20-26 (§12)
 Thursday:	Rom 1:28-2:9 (§81)	Mt 5:27-32 (§13)
-Friday:	Rom 2:14-29 (§82)	Mt 5:33-41 (§14)
-Saturday:	Rom 1:7-12 (§79 (mid))	Mt 5:42-48 (§15)
+Friday:	Rom 2:14-29 (§82)	Mt 5:33-41 (§14)	Rom 1:7-12 (§79 (mid))	Mt 5:42-48 (§15)
+Saturday:	
 
 
 1<sup>st</sup> Sunday after Pentecost. Feast of All Saints
@@ -107,8 +107,8 @@ Rom 2:10-16 (§81 (mid))	Heb 11:33-12:2 (§330)	Mt 4:18-23 (§9)	Mt 4:25-5:12 (�
 Monday:	Rom 7:1-13 (§94)	Mt 9:36-10:8 (§34)
 Tuesday:	Rom 7:14-8:2 (§95)	Mt 10:9-15 (§35)
 Wednesday:	Rom 8:2-13 (§96)	Mt 10:16-22 (§36)
-Thursday:	Rom 8:22-27 (§98)	Mt 10:23-31 (§37)
-Friday:	Rom 9:6-19 (§101)	Mt 10:32-36, 11:1 (§38)
+Thursday:	Rom 8:22-27 (§98)	Mt 10:23-31 (§37)	Rom 9:6-19 (§101)	Mt 10:32-36, 11:1 (§38)
+Friday:	
 Saturday:	Rom 3:28-4:3 (§85)	Mt 7:24-8:4 (§24)
 
 
@@ -139,8 +139,8 @@ Rom 10:1-10 (§103)	Mt 8:28-9:1 (§28)
 6<sup>th</sup> week after Pentecost
 Monday:	Rom 16:17-24 (§121)	Mt 13:10-23 (§51)
 Tuesday:	I Cor 1:1-9 (§122)	Mt 13:24-30 (§52)
-Wednesday:	I Cor 2:9-3:8 (§127)	Mt 13:31-36 (§53)
-Thursday:	I Cor 3:18-23 (§129)	Mt 13:36-43 (§54)
+Wednesday:	I Cor 2:9-3:8 (§127)	Mt 13:31-36 (§53)	I Cor 3:18-23 (§129)	Mt 13:36-43 (§54)
+Thursday:	
 Friday:	I Cor 4:5-8 (§130 (mid))	Mt 13:44-54 (§55)
 Saturday:	Rom 9:1-5 (§100)	Mt 9:18-26 (§32)
 
@@ -170,8 +170,8 @@ Saturday:	Rom 13:1-10 (§111)	Mt 12:30-37 (§47)
 8<sup>th</sup> Sunday after Pentecost
 I Cor 1:10-18 (§124)	Mt 14:14-22 (§58)
 9<sup>th</sup> week after Pentecost
-Monday:	I Cor 11:31-12:6 (§150)	Mt 18:1-11 (§74)
-Tuesday:	I Cor 12:12-26 (§152)	Mt 18:18-22, 19:1-2, 13-15 (§76)
+Monday:	
+Tuesday:	I Cor 12:12-26 (§152)	Mt 18:18-22, 19:1-2, 13-15 (§76)	I Cor 11:31-12:6 (§150)	Mt 18:1-11 (§74)
 Wednesday:	I Cor 13:4-14:5 (§154)	Mt 20:1-16 (§80)
 Thursday:	I Cor 14:6-19 (§155)	Mt 20:17-28 (§81)
 Friday:	I Cor 14:26-40 (§157)	Mt 21:12-14, 17-20 (§83 (mid.))
@@ -182,8 +182,8 @@ Saturday:	Rom 14:6-9 (§113)	Mt 15:32-39 (§64)
 I Cor 3:9-17 (§128)	Mt 14:22-34 (§59)
 10<sup>th</sup> week after Pentecost
 Monday:	I Cor 15:12-19 (§159)	Mt 21:18-22 (§84)
-Tuesday:	I Cor 15:29-38 (§161)	Mt 21:23-27 (§85)
-Wednesday:	I Cor 16:4-12 (§165)	Mt 21:28-32 (§86)
+Tuesday:	I Cor 15:29-38 (§161)	Mt 21:23-27 (§85)	I Cor 16:4-12 (§165)	Mt 21:28-32 (§86)
+Wednesday:	
 Thursday:	II Cor 1:1-7 (§167)	Mt 21:43-46 (§88)
 Friday:	II Cor 1:12-20 (§169)	Mt 22:23-33 (§91)
 Saturday:	Rom 15:30-33 (§119)	Mt 17:24-18:4 (§73)
@@ -204,8 +204,8 @@ Saturday:	I Cor 1:3-9 (§123)	Mt 19:3-12 (§78)
 I Cor 9:2-12 (§141)	Mt 18:23-35 (§77)
 12th week after Pentecost
 Monday:	II Cor 5:10-15 (§179)	Mk 1:9-15 (§2)
-Tuesday:	II Cor 5:15-21 (§180)	Mk 1:16-22 (§3)
-Wednesday:	II Cor 6:11-16 (§182)	Mk 1:23-28 (§4)
+Tuesday:	II Cor 5:15-21 (§180)	Mk 1:16-22 (§3)	II Cor 6:11-16 (§182)	Mk 1:23-28 (§4)
+Wednesday:	
 Thursday:	II Cor 7:1-10 (§183)	Mk 1:29-35 (§5)
 Friday:	II Cor 7:10-16 (§184)	Mk 2:18-22 (§9)
 Saturday:	I Cor 1:26-29 (§125 (mid))	Mt 20:29-34 (§82)
@@ -218,8 +218,8 @@ Monday:	II Cor 8:7-15 (§186)	Mk 3:6-12 (§11)
 Tuesday:	II Cor 8:16-9:5 (§187)	Mk 3:13-19 (§12)
 Wednesday:	II Cor 9:12-10:7 (§189)	Mk 3:20-27 (§13)
 Thursday:	II Cor 10:7-18 (§190)	Mk 3:28-35 (§14)
-Friday:	II Cor 11:5-21 (§192)	Mk 4:1-9 (§15)
-Saturday:	I Cor 2:6-9 (§126)	Mt 22:15-22 (§90)
+Friday:	II Cor 11:5-21 (§192)	Mk 4:1-9 (§15)	I Cor 2:6-9 (§126)	Mt 22:15-22 (§90)
+Saturday:	
 
 
 Sunday before the Exaltation
@@ -228,8 +228,8 @@ Gal 6:11-18 (§215)	Jn 3:13-17 (§9)	I Cor 16:13-24 (§166)	Mt 21:33-42 (§87)
 Monday:	II Cor 12:10-19 (§195)	Mk 4:10-23 (§16)
 Tuesday:	II Cor 12:20-13:2 (§196)	Mk 4:24-34 (§17)
 Wednesday:	II Cor 13:3-14 (§197)	Mk 4:35-41 (§18)
-Thursday:	Gal 1:1-10, 20-2:5 (§198)	Mk 5:1-20 (§19)	I Cor 2:6-9 (§126)	Mt 10:37-11:1 (§39)
-Friday:	Gal 2:6-10 (§201)	Mk 5:22-24, 35-6:1 (§20)
+Thursday:	Gal 1:1-10, 20-2:5 (§198)	Mk 5:1-20 (§19)	Gal 2:6-10 (§201)	Mk 5:22-24, 35-6:1 (§20)	I Cor 2:6-9 (§126)	Mt 10:37-11:1 (§39)
+Friday:	
 Saturday:	I Cor 1:26-29 (§125 (mid))	Jn 8:21-30 (§30)	I Cor 4:1-5 (§130)	Mt 23:1-12 (§93)
 
 
@@ -248,8 +248,8 @@ Saturday:	I Cor 4:17-5:5 (§132)	Mt 24:1-13 (§97)
 II Cor 4:6-15 (§176)	Mt 22:35-46 (§92)
 16<sup>th</sup> week after Pentecost
 Monday:	Gal 4:28-5:10 (§211)	Mk 6:54-7:8 (§27)
-Tuesday:	Gal 5:11-21 (§212)	Mk 7:5-16 (§28)
-Wednesday:	Gal 6:2-10 (§214)	Mk 7:14-24 (§29)
+Tuesday:	Gal 5:11-21 (§212)	Mk 7:5-16 (§28)	Gal 6:2-10 (§214)	Mk 7:14-24 (§29)
+Wednesday:	
 Thursday:	Eph 1:1-9 (§216)	Mk 7:24-30 (§30)
 Friday:	Eph 1:7-17 (§217)	Mk 8:1-10 (§32)
 Saturday:	I Cor 10:23-28 (§146)	Mt 24:34-44 (§101)
@@ -258,8 +258,8 @@ Saturday:	I Cor 10:23-28 (§146)	Mt 24:34-44 (§101)
 16<sup>th</sup> Sunday after Pentecost
 II Cor 6:1-10 (§181)	Mt 25:14-30 (§105)
 17<sup>th</sup> week after Pentecost
-Monday:	Eph 1:22-2:3 (§219)	Mk 10:46-52 (§48)
-Tuesday:	Eph 2:19-3:7 (§222)	Mk 11:11-23 (§50)
+Monday:	
+Tuesday:	Eph 2:19-3:7 (§222)	Mk 11:11-23 (§50)	Eph 1:22-2:3 (§219)	Mk 10:46-52 (§48)
 Wednesday:	Eph 3:8-21 (§223)	Mk 11:23-26 (§51)
 Thursday:	Eph 4:14-19 (§225)	Mk 11:27-33 (§52)
 Friday:	Eph 4:17-25 (§226)	Mk 12:1-12 (§53)
@@ -324,8 +324,8 @@ Saturday:	II Cor 5:1-10 (§178)	Lk 7:2-10 (§29)
 22<sup>nd</sup> Sunday after Pentecost
 Gal 6:11-18 (§215)	Lk 16:19-31 (§83)
 23<sup>rd</sup> week after Pentecost
-Monday:	I Thess 1:1-5 (§262)	Lk 10:22-24 (§52)
-Tuesday:	I Thess 1:6-10 (§263)	Lk 11:1-10 (§55)
+Monday:	I Thess 1:1-5 (§262)	Lk 10:22-24 (§52)	I Thess 1:6-10 (§263)	Lk 11:1-10 (§55)
+Tuesday:	
 Wednesday:	I Thess 2:1-8 (§264)	Lk 11:9-13 (§56)
 Thursday:	I Thess 2:9-14 (§265)	Lk 11:14-23 (§57)
 Friday:	I Thess 2:14-19 (§266)	Lk 11:23-26 (§58)
@@ -336,8 +336,8 @@ Saturday:	II Cor 8:1-5 (§185)	Lk 8:16-21 (§36)
 Eph 2:4-10 (§220)	Lk 8:26-39 (§38)
 24<sup>th</sup> week after Pentecost
 Monday:	I Thess 2:20-3:8 (§267)	Lk 11:29-33 (§59)
-Tuesday:	I Thess 3:9-13 (§268)	Lk 11:34-41 (§60)
-Wednesday:	I Thess 4:1-12 (§269)	Lk 11:42-46 (§61)
+Tuesday:	I Thess 3:9-13 (§268)	Lk 11:34-41 (§60)	I Thess 4:1-12 (§269)	Lk 11:42-46 (§61)
+Wednesday:	
 Thursday:	I Thess 5:1-8 (§271)	Lk 11:47-12:1 (§62)
 Friday:	I Thess 5:9-13, 24-28 (§272)	Lk 12:2-12 (§63)
 Saturday:	II Cor 11:1-6 (§191)	Lk 9:1-6 (§40)
@@ -358,10 +358,10 @@ Saturday:	Gal 1:3-10 (§199)	Lk 9:37-43 (§46)
 Eph 4:1-6 (§224)	Lk 10:25-37 (§53)
 26<sup>th</sup> Week after Pentecost
 Monday:	I Tim 1:1-7 (§278)	Lk 14:12-15 (§75)
-Tuesday:	I Tim 1:8-14 (§279)	Lk 14:25-35 (§77)
-Wednesday:	I Tim 1:18-20, 2:8-15 (§281)	Lk 15:1-10 (§78)
-Thursday:	I Tim 3:1-13 (§283)	Lk 16:1-9 (§80)
-Friday:	I Tim 4:4-8, 16 (§285)	Lk 16:15-18, 17:1-4 (§82)
+Tuesday:	I Tim 1:8-14 (§279)	Lk 14:25-35 (§77)	I Tim 1:18-20, 2:8-15 (§281)	Lk 15:1-10 (§78)
+Wednesday:	
+Thursday:	
+Friday:	I Tim 4:4-8, 16 (§285)	Lk 16:15-18, 17:1-4 (§82)	I Tim 3:1-13 (§283)	Lk 16:1-9 (§80)
 Saturday:	Eph 1:16-23 (§218)	Lk 9:57-62 (§49)
 
 
@@ -390,8 +390,8 @@ Saturday:	Gal 3:8-12 (§205)	Lk 13:18-29 (§72)
 28<sup>th</sup> Sunday after Pentecost
 Heb 11:9-10, 17-23, 32-40 (§328)	Mt 1:1-25 (§1)
 29<sup>th</sup> Week after Pentecost
-Monday:	Heb 3:5-11, 17-19 (§308)	Lk 20:27-44 (§102)
-Tuesday:	Heb 4:1-13 (§310)	Lk 21:12-19 (§106)
+Monday:	
+Tuesday:	
 Wednesday:	Heb 5:11-6:8 (§312)	Lk 21:5-7, 10-11, 20-24 (§104)
 Thursday:	Heb 7:1-6 (§315)	Lk 21:28-33 (§107)
 Friday:	Heb 7:18-25 (§317)	Lk 21:37-22:8 (§108)
@@ -406,11 +406,11 @@ Tuesday:	II Tim 4:5-8 (§298)	Mk 1:1-8 (§1)	Heb 9:8-10, 15-23 (§321)	Mk 8:22-2
 Wednesday:	Heb 10:1-18 (§323)	Mk 8:30-34 (§36)
 Thursday:	Heb 10:35-11:7 (§326)	Mk 9:10-16 (§39)
 Friday:	Heb 11:8, 11-16 (§327)	Mk 9:33-41 (§41)
-Saturday:	I Tim 3:14-4:5 (§284)	Mt 3:1-11 (§5)	Eph 5:1-8 (§228)	Lk 14:1-11 (§74)
+Saturday:	Eph 5:1-8 (§228)	Lk 14:1-11 (§74)
 
 
 30<sup>th</sup> Sunday after Pentecost
-Col 3:12-16 (§258)	Lk 18:18-27 (§91)
+
 31<sup>st</sup> Week after Pentecost
 Monday:	Heb 11:17-23, 27-31 (§329)	Mk 9:42-10:1 (§42)
 Tuesday:	Heb 12:25-26, 13:22-25 (§333)	Mk 10:2-12 (§43)
@@ -425,8 +425,8 @@ Eph 4:7-13 (§224 (mid))	Mt 4:12-17 (§8)	I Tim 1:15-17 (§280 (mid))	Lk 18:35-4
 32<sup>nd</sup> Week after Pentecost
 Monday:	Jas 2:14-26 (§53)	Mk 10:46-52 (§48)
 Tuesday:	Jas 3:1-10 (§54)	Mk 11:11-23 (§50)
-Wednesday:	Jas 3:11-4:6 (§55)	Mk 11:23-26 (§51)
-Thursday:	Jas 4:7-5:9 (§56)	Mk 11:27-33 (§52)
+Wednesday:	Jas 3:11-4:6 (§55)	Mk 11:23-26 (§51)	Jas 4:7-5:9 (§56)	Mk 11:27-33 (§52)
+Thursday:	
 Friday:	I Pet 1:1-2, 10-12, 2:6-10 (§58)	Mk 12:1-12 (§53)
 Saturday:	I Thess 5:14-23 (§273)	Lk 17:3-10 (§84)
 
@@ -446,11 +446,11 @@ Sunday of the Publican and the Pharisee
 II Tim 3:10-15 (§296)	Lk 18:10-14 (§89)
 Fast-free Week
 Monday:	II Pet 1:20-2:9 (§66)	Mk 13:9-13 (§59)
-Tuesday:	II Pet 2:9-22 (§67)	Mk 13:14-23 (§60)
-Wednesday:	II Pet 3:1-18 (§68)	Mk 13:24-31 (§61)
+Tuesday:	II Pet 2:9-22 (§67)	Mk 13:14-23 (§60)	II Pet 3:1-18 (§68)	Mk 13:24-31 (§61)
+Wednesday:	
 Thursday:	I Jn 1:8-2:6 (§69)	Mk 13:31-14:2 (§62)
-Friday:	I Jn 2:7-17 (§70)	Mk 14:3-9 (§63)
-Saturday:	II Tim 3:1-9 (§295)	Lk 20:45-21:4 (§103)
+Friday:	I Jn 2:7-17 (§70)	Mk 14:3-9 (§63)	II Tim 3:1-9 (§295)	Lk 20:45-21:4 (§103)
+Saturday:	
 
 
 Sunday of the Prodigal Son
