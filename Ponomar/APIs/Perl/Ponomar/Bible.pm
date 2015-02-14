@@ -14,7 +14,7 @@ use XML::Parser;
 use Ponomar::Util;
 
 BEGIN {
-	$VERSION = 0.01;
+	$VERSION = 0.02;
 }
 
 our ($language);

@@ -15,7 +15,7 @@
 <SCRIPTURE Type="gospel" Reading="Lk_10:25-37" Pericope="53" EffWeek="25" Cmd="(doy &gt;= 313 &amp;&amp; doy &lt;= 319) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_8:41-56" Pericope="39" EffWeek="24" Cmd="(doy &gt;= 311 &amp;&amp; doy &lt;= 312) &amp;&amp; GS == 1"/>
 <!-- NOT USING LUCAN JUMP -->
-<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" Cmd="GS == 0"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" Cmd="GS == 0 &amp;&amp; doy &lt; 344"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

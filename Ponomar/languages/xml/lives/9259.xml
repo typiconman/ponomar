@@ -3,12 +3,12 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Eph_5:1-8" Pericope="228" Cmd="GS == 0"/>
 <SCRIPTURE Type="apostol" Reading="Eph_5:1-8" Pericope="228" EffWeek="30" Cmd="GS == 1 &amp;&amp; doy &gt;= 338 &amp;&amp; doy &lt;= 349"/>
 <SCRIPTURE Type="gospel" Reading="Lk_12:32-40" Pericope="67" EffWeek="28" Cmd="(doy &gt;= 338 &amp;&amp; doy &lt;= 339) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="(doy &gt;= 340 &amp;&amp; doy &lt;= 342) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" EffWeek="30" Cmd="(doy &gt;= 343 &amp;&amp; doy &lt;= 349) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" Cmd="GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="Eph_5:1-8" Pericope="228" Cmd="GS == 0 &amp;&amp; doy &lt; 350"/>
+<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" Cmd="GS == 0 &amp;&amp; doy &lt; 350"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

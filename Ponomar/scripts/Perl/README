@@ -1,1 +1,19 @@
-This folder contains sample scripts that use the Perl API.
+This folder contains scripts that use the Perl API and are use for regression testing.
+
+The output of regression tests is written to /Ponomar/regtests/
+
+The following tests are available:
+1. simple_lectionary.pl
+	This script runs the calendar for one year (2013) and determines the sequential lessons at Liturgy without the Lucan Jump
+		and without any transfers. It is used for checking if the XML data are sane.
+	Output is written to simple_lectionary.txt
+	Base specification is in simple_lectionary_baseline.txt
+
+	If you make changes to XML files, you should run this script and then check
+	diff simple_lectionary.txt simple_lectionary_baseline.txt
+	Only the timestamp line of this file should be changing.
+
+	NOTE THAT THIS SCRIPT DOES NOT ACTUALLY CREATE THE SEQUENTIAL LECTIONARY
+	because some transfers are handled directly in CMDs on individual days (e.g., for SSBN and SBN)
+	But it's a fairly close approximation.
+
