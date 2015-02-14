@@ -26,9 +26,9 @@
 <SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="(doy &gt;= 339 &amp;&amp; doy &lt;= 343) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" EffWeek="29" Cmd="(doy &gt;= 339 &amp;&amp; doy &lt;= 343) &amp;&amp; GS == 1"/>
 
-<!-- CASE FIVE: WE ARE NOT USING THE LUCAN JUMP; KEEPING YURI'S RULES -->
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="GS == 0"/>
+<!-- CASE FIVE: WE ARE NOT USING THE LUCAN JUMP -->
+<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" Cmd="GS == 0 &amp;&amp; doy &lt; 344"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="GS == 0 &amp;&amp; doy &lt; 344"/>
 
 </LITURGY>
 </SERVICE>

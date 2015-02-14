@@ -7,7 +7,7 @@
 <SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Cmd="(nday == -82) &amp;&amp; GS == 1" Pericope="50" EffWeek="32"/>
 <SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Cmd="(nday == -89) &amp;&amp; GS == 1" Pericope="43" EffWeek="31"/>
 <SCRIPTURE Type="gospel" Reading="Mk_11:11-23"  Cmd="(nday == -82) &amp;&amp; GS == 0" Pericope="50"/> 
-<SCRIPTURE Type="gospel" Reading="Mk_12:18-27"  Cmd="(nday == -89) &amp;&amp; GS == 0" Pericope="56"/> 
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27"  Cmd="(nday == -89) &amp;&amp; GS == 0" Pericope="55"/> 
 </LITURGY>
 </SERVICE>
 </SAINT>

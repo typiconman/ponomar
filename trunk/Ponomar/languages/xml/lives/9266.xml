@@ -27,8 +27,8 @@
 <SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" EffWeek="32" Cmd="GS == 1 &amp;&amp; ndayF == -85 &amp;&amp; (doy == 362 || doy == 363)"/>
 
 <!-- CASE FIVE: NOT USING THE LUCAN JUMP -->
-<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" Cmd="GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="GS == 0" /> 
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" Cmd="GS == 0 &amp;&amp; doy &lt; 350"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="GS == 0 &amp;&amp; doy &lt; 350" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>

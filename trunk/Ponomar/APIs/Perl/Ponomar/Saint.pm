@@ -21,7 +21,7 @@ use Ponomar::Service;
 use Ponomar::Reading;
 
 BEGIN {
-	$VERSION = 0.01;
+	$VERSION = 0.02;
 	@GLOBALS = qw /dow doy nday Year GS Tone dRank/;	
 }
 our ($dow, $doy, $nday, $ndayP, $ndayF, $dRank, $Year, $language, $GS);
@@ -43,14 +43,13 @@ Saint object have the following properties
 
 B<CURRENT LIMITATION>: ONLY ONE SET OF SERVICES IS ALLOWED FOR A SAINT. THIS NEEDS TO BE FIXED!
 
-Additional limitation: I have internally set C<$GS> to be equal to 1. This needs to be fixed.
-
 =cut
 
 sub new {
 	my $class = shift;
 	my %pars = @_;
-$GS = 1; ## FIXME
+	$GS = $pars{GS};
+	delete @pars{ qw(GS) };
 	my $self = bless \%pars, $class;
 	$self->init();
 	return $self;
@@ -190,7 +189,7 @@ Adds a Service object of type C<$type> to self. Type here is the type of service
 sub addService {
 	my $self = shift;
 	my $type = shift;
-	my $service = new Ponomar::Service( Type => $type, dRank => $self->{Type}, parent => $self );
+	my $service = new Ponomar::Service( Type => $type, dRank => $self->{Type}, parent => $self, GS => $GS );
 	push @{ $self->{_services} }, $service;
 	return 1;
 }

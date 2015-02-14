@@ -119,6 +119,9 @@ END {
 	Ponomar::I18n::unload();
 }
 
+use constant TRUE  => 1;
+use constant FALSE => "";
+
 our ($dow, $doy, $nday, $ndayP, $ndayF, $Year, $src, $dRank, $GS);
 
 ############################### LOCAL SUBS ######################################
@@ -154,7 +157,7 @@ sub startElement {
 		if ($element eq "SAINT") {
 			my $CId = $attrs{CId};
 			# create a new Saint object
-			my $saint = Ponomar::Saint->new( CId => $CId, Src => $src, Date => $self->{_date}, Lang => $self->{_lang} );
+			my $saint = Ponomar::Saint->new( CId => $CId, Src => $src, Date => $self->{_date}, Lang => $self->{_lang}, GS => $GS );
 			push @{ $self->{_saints} }, $saint;
 			last SWITCH;
 		}
@@ -185,23 +188,27 @@ sub endElement {
 
 =over 4
 
-=item new($date, $language)
+=item new($date, $language, [$GS] )
 
-Creates a new Ponomar object for Julian date C<$date> and lanuguage C<$language> Runs the initial initialization process, reading XML for this C<$date>. Returns a reference to the new object. E.g.:
+Creates a new Ponomar object for Julian date C<$date> and language C<$language>, using Gospel Selection algorithm $GS.
+Runs the initial initialization process, reading XML for this C<$date>. Returns a reference to the new object. E.g.:
 
 	$ponomar = new Ponomar(Ponomar::Util::getToday(), 'en')
+
+The paramater C<$GS> determines if the Lucan Jump is used in the selection of scriptures (C<$GS = 1> for Lucan jump and C<0> otherwise). If C<$GS> is not specified, <1> is assumed.
 
 =cut
 
 sub new {
 	my $class = shift;
-	my ($date, $language) = @_;
+	my ($date, $language, $lectionary_style) = @_;
 	
 	my $self = {
 		_date => $date,
-		_lang => $language
+		_lang => $language || 'en',
+		_GS => $lectionary_style || 1
 	};
-	$GS = 0; ## FIXME: ALLOW THE USER TO TURN THE LUCAN JUMP OFF AND ON
+	$GS = $lectionary_style;
 	bless $self, $class;
 	$self->init();
 	return $self;
@@ -392,8 +399,58 @@ sub loadBible {
 	return Ponomar::Bible->new( Lang => $self->{_lang}, Version => $version );
 }
 
+=item Constant: NO_LUCAN_JUMP
+
+The Lucan Jump for the Lectionary is not used
+
+=back
+
+=cut
+
+sub NO_LUCAN_JUMP {
+	return 0;
+}
+
+=item Constant: LUCAN_JUMP
+
+The Lucan Jump for the Lectionary is used
+
+=back
+
+=cut
+
+sub LUCAN_JUMP {
+	return TRUE;
+}
+
+=item setLectionaryStyle ( $style )
+
+Sets the Lectionary to use the Lucan Jump (C<$style> = LUCAN_JUMP) or not use the Lucan Jump (C<$style>= NO_LUCAN_JUMP)
+
+=back
+
+=cut
+
+sub setLectionaryStyle {
+	my $self = shift;
+	my $lectionary_style = shift || 0;
+	$self->{_GS} = $lectionary_style;
+}
+
+=item getLectionaryStyle()
+
+Returns 1 if the lectinary uses the Lucan Jump and zero otherwise
+
+=back
+
+=cut
+
+sub getLectionaryStyle {
+	my $self = shift;
+	return $self->{_GS} == TRUE;
+}
+
 1;
 
 __END__
-
 
