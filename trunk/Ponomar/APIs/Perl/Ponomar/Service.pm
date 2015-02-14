@@ -184,19 +184,17 @@ sub execCommands {
 	my $self = shift;
 	local $dRank = shift;
 
+	# XXX: this handles supression of readings at Matins, but it is currently not implemeneted correctly.
 	if ($self->{Type} eq 'matins' && $self->hasReadings()) {
 		return; ## XXX: fails on Sundays because $reading->getCmd is not defined!
 		foreach my $reading ($self->getReadings()) {
 			my $cmd = $reading->getCmd();
 
-			foreach (@GLOBALS) {
-				$cmd =~ s/$_/\$$_/g;
-			}
 			$self->deleteReading($reading) unless eval $cmd;
 		}
 	}
 	
-	return unless $self->{Type} eq 'liturgy';
+	return unless $self->{Type} eq 'liturgy'; # the only service at which we can do stuff is Liturgy
 	Carp::croak (__PACKAGE__ . "::execCommands - Invalid parent") unless (ref $self->{parent} eq "Ponomar::Saint");
 
 	local $language = $self->{parent}->getKey('Lang');
@@ -213,13 +211,20 @@ sub execCommands {
 	local $ndayP = $date->getDaysSince($lastpascha);
 	local $ndayF = $date->getDaysSince($nextpascha);
 
-	# step 1. Check if readings today are suppressed and not transferred
+	# step 0. first check if transfer is implemented
+	# transfer is not implemented during the Pentecostarion / Lenten Triodion periods
+	# (this information is coded in DivineLiturgy.xml)
+	# or the user may override transfer by calling addCommands('Transfer', 0)
 	foreach (@{ $self->{commands} }) {
 		my $cmd = $_->{Value};
-
-		foreach (@GLOBALS) {
-			$cmd =~ s/$_/\$$_/g;
+		if ( $_->{Name} eq "Transfer" && eval ($cmd) == 0) {
+			return; # transferring not needed, so we quit.
 		}
+	}
+
+	# step 1. Check if readings today are suppressed or transferred
+	foreach (@{ $self->{commands} }) {
+		my $cmd = $_->{Value};
 		next unless eval $cmd;
 
 		if ( $_->{Name} eq "Suppress" || $_->{Name} eq "Class3Transfers") {
@@ -230,28 +235,10 @@ sub execCommands {
 
 	# if we got down here, then both Suppress and Class3Transfers are ZERO
 	# now we check if any readings from tomorrow or yesterday are transferred to today
-	# first check if transfer is implemented
-	# TODO: this should check if we are outside of Pentecostarion / Lenten Triodion periods
-	foreach (@{ $self->{commands} }) {
-		my $cmd = $_->{Value};
-
-		foreach (@GLOBALS) { # FIXME: get rid of all of this GLOBALS foreach'ing stuff
-			$cmd =~ s/$_/\$$_/g;
-		}
-
-		if ( $_->{Name} eq "Transfer" && eval ($cmd) == 0) {
-			return; # transferring not implemented, so we quit.
-		}
-	}
-
 	# now check if we need to set up tomorrow
 	foreach (@{ $self->{commands} }) {
 		next unless $_->{Name} eq 'TransferRulesB';
 		my $cmd = $_->{Value};
-		
-		foreach (@GLOBALS) {
-			$cmd =~ s/$_/\$$_/g;
-		}
 		next unless eval $cmd;
 		
 		## IF WE GOT HERE, THEN we must check tomorrow for transfers
@@ -263,7 +250,7 @@ sub execCommands {
 		local $ndayP = $tomorrow->getDaysSince($lastpascha);
 		local $ndayF = $tomorrow->getDaysSince($nextpascha);
 	
-		my $ponomar  = Ponomar->new($tomorrow, $language);
+		my $ponomar  = Ponomar->new($tomorrow, $language, $GS);
 		## get tomorrow's dRank
 		local $dRank = max (  map { $_->getKey("Type") } $ponomar->getSaints('menaion') );
 
@@ -271,14 +258,9 @@ sub execCommands {
 		foreach (@{ $self->{commands} }) {
 			next unless $_->{Name} eq 'Class3Transfers';
 			my $cmd = $_->{Value};
-		
-			foreach (@GLOBALS) {
-				$cmd =~ s/$_/\$$_/g;
-			}
 			next unless eval $cmd;
 			# if we've gotten down here, then we must transfer tomorrow's readings to today
 			foreach ($ponomar->getReadings('liturgy', 'pentecostarion')) {
-			#next unless ($_->getSaint() >= 9000 && $_->getSaint() <= 9315); FIXME
 				push @{ $self->{_readings} }, $_;
 			}
 		}
@@ -288,10 +270,6 @@ sub execCommands {
 	foreach (@{ $self->{commands} }) {
 		next unless $_->{Name} eq 'TransferRulesF';
 		my $cmd = $_->{Value};
-		
-		foreach (@GLOBALS) {
-			$cmd =~ s/$_/\$$_/g;
-		}
 		next unless eval $cmd;
 		
 		# if we got here, then we have to check yesterday for transfers
@@ -302,21 +280,16 @@ sub execCommands {
 		local $ndayP = $yesterday->getDaysSince($lastpascha);
 		local $ndayF = $yesterday->getDaysSince($nextpascha);
 	
-		my $ponomar  = Ponomar->new($yesterday, $language);
+		my $ponomar  = Ponomar->new($yesterday, $language, $GS);
 		local $dRank = max (  map { $_->getKey("Type") } $ponomar->getSaints('menaion') );
 
 		# check if yesterday is suppressed.
 		foreach (@{ $self->{commands} }) {
 			next unless $_->{Name} eq 'Class3Transfers';
 			my $cmd = $_->{Value};
-		
-			foreach (@GLOBALS) {
-				$cmd =~ s/$_/\$$_/g;
-			}
 			next unless eval $cmd;
-			# if we've gotten down here, then we must transfer tomorrow's readings to today
+			# if we've gotten down here, then we must transfer yesterday's readings to today
 			foreach ($ponomar->getReadings('liturgy', 'pentecostarion')) {
-			#next unless ($_->getSaint() >= 9000 && $_->getSaint() <= 9315); FIXME
 				push @{ $self->{_readings} }, $_;
 			}
 		}
@@ -350,6 +323,10 @@ sub startElement {
 	if ($element eq "COMMAND") {
 		delete $attrs{Cmd};
 		delete $attrs{Comment};
+		foreach (@GLOBALS) {
+			$attrs{Value} =~ s/$_/\$$_/g;
+		}
+
 		push @{ $self->{commands} }, \%attrs;
 	}
 	return 1;
