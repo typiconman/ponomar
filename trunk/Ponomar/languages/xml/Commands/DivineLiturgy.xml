@@ -3,11 +3,12 @@
 <!-- If  Transfer is True, then we run the scripture transfer algorithm; if it is 0, then we do nothing -->
 <COMMAND Name="Transfer" Value="nday &gt;= 52 || nday &lt; -55" Comment="This determines whether the sequential readings may be skipped or transferred." Cmd="GS == 1"/>
 <COMMAND Name="Transfer" Value="nday &gt;= 52 || nday &lt; -55" Comment="This determines whether the sequential readings may be skipped or transferred." Cmd="GS == 0"/>
+<COMMAND Name="Suppress" Value="(doy == 358 || doy == 357 || (doy == 4 &amp;&amp; dow != 0) || doy == 5)" Comment="Suppress sequential readings on eve and day of Nativity and Theophany"/>
 <!-- If Suppress is True, then the readings for the day are not read and not transferred -->
-<COMMAND Name="Suppress" Value="(doy == 358 || doy == 357 || doy == 4 || doy == 5)" Comment="Suppress sequential readings on eve and day of Nativity and Theophany"/>
 <!-- If Class3Transfers is TRUE, then the daily readings should be transferred to another day. -->
 <!-- I am making this rule and Suppress mutually exclusive, but I don't think this should affect anything -AA -->
 <COMMAND Name="Class3Transfers" Value="!(doy == 358 || doy == 357 || doy == 4 || doy == 5) &amp;&amp; ((dRank &gt;= 5 &amp;&amp; dow != 0) || dRank == 8)" Cmd="GS == 1 || GS == 0"/>
+<COMMAND Name="Class3Transfers" Value="(doy == 3 &amp;&amp; dow == 5) || (doy ==356 &amp;&amp; dow == 5)" Comment="There is no Liturgy on Friday when the Royal Hous occur. The readings are moved to Thursday." Cmd="GS == 1 || GS == 0"/>
 <!-- Can I accept transfers from Tomorrow today -->
 <!-- XXX: check of nday > -63 and nday <= 0 is superfluous and will be removed -->
 <COMMAND Name="TransferRulesB" Value="dow != 0 &amp;&amp; !(nday >= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; doy != 338" Cmd="GS == 1" Comment="This determines the rules used to transfer the readings to the previous day. Note that St. Nicholas's day has a special set of rules"/>
@@ -31,19 +32,4 @@
 <COMMAND Name="Suppress" Value="(nday - ndayF == 385) &amp;&amp; ((nday >= 239) &amp;&amp; ((doy >= 355 &amp;&amp; doy &lt;= 364) || ((doy >= 350 &amp;&amp; doy &lt;= 354) &amp;&amp; (dow == 6 || dow == 0))))" Cmd="GS == 0" Comment="This skips the readings over Christmas in the case that there are 4 repeats in the Jordanville version."/>
 <COMMAND Name="Suppress" Value="(ndayP - nday == 385) &amp;&amp; ((ndayP >= 239) &amp;&amp; ((doy >= 0 &amp;&amp; doy &lt;= 6) || ((doy >= 7 &amp;&amp; doy &lt;= 13) &amp;&amp; (dow == 6 || dow == 0))))" Cmd="GS == 0" Comment="This skips the readings in January Christmas in the case that there are 4 repeats in the Jordanville version."/>
 <COMMAND Name="Suppress" Value="(ndayP - nday == 364) &amp;&amp; ((ndayP &lt;= 280 &amp;&amp; ndayP >= 274) &amp;&amp; ((doy >= 0 &amp;&amp; doy &lt;= 6) || ((doy >= 7 &amp;&amp; doy &lt;= 13) &amp;&amp; (dow == 6 || dow == 0))))" Cmd="GS == 0" Comment="This skips the readings in January Christmas in the case that there is a single repeat (33rd Week) in the Jordanville version."/>-->
-<COMMAND Name="Class3Transfers" Value="(doy == 3 &amp;&amp; dow == 5) || (doy ==356 &amp;&amp; dow == 5)" Comment="There is no Liturgy on Friday when the Royal Hous occur. The readings are moved to Thursday."/>
-<!--
-<COMMAND Name="Suppress" Value="(doy == 358 || doy == 357 || (doy == 4 &amp;&amp; dow != 0) || doy == 5)" Comment="Suppress sequential readings on eve and day of Nativity and Theophany"/>
-<COMMAND Name="Suppress" Value="(doy &gt;= 344 &amp;&amp; doy &lt;= 350) &amp;&amp; dow == 0" Comment="Suppress the sequential readings on the Second Sunday before Christmas." />
-<COMMAND Name="Suppress" Value="(doy &gt;= 351 &amp;&amp; doy &lt;= 357) &amp;&amp; dow == 0" Comment="Suppress the sequential readings on the First Sunday before Christmas." />
-<COMMAND Name="Suppress" Value="(doy == 256 || doy == 217) &amp;&amp; dow == 0" Comment="Suppress the Sunday readings on Exaltation and Transfiguration"/>
---><!-- XXX: these two rules are entirely duplicated by the rules below, so we comment them out 
-<COMMAND Name="TransferRulesB" Value="dow &gt; 1 &amp;&amp; (doy == 217 || doy == 256)" Comment="Daily readings on Transfiguration and Exaltation are moved to the prior day"/>
-<COMMAND Name="TransferRulesF" Value="dow == 1 &amp;&amp; (doy == 217 || doy == 256)" Comment="Daily readings on Transfiguration and Exaltation are moved to the next day"/> -->
-<!-- XXX: In the implementation, take care to keep track of the source of the dRank-ed observance
-For example, Ascension has a dRank > 5, but its readings ("daily readings" in some sense) are
-most certainty *not transferred*.
-We're going to handle this in the implementation by keeping track of the Src of the observances -->
 </DATA>
-
-

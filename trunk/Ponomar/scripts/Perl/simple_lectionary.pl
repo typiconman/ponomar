@@ -30,7 +30,7 @@ sub formatReading {
 	return defined $pericope ? $passage . " (§$pericope)" : $passage;
 }
 
-my $start = getPascha(2014);
+my $start = getPascha(2013);
 my $end = getPascha($start->getYear() + 1);
 my $output = "../../regtests/simple_lectionary.txt";
 my $baseline = "../../regtests/simple_lectionary_baseline.txt";
@@ -43,7 +43,7 @@ print OUTFILE "Generated ", strftime( "%a %b %e %H:%M:%S %Y", localtime) , "\n";
 
 
 for (my $today = $start; $today->getDaysUntil($end) > 0; $today++) {
-	my $ponomar = new Ponomar($today, 'en', 1); # GOSPEL SELECTOR IS SET TO ZERO XXX
+	my $ponomar = new Ponomar($today, 'en', 0);
 
 	my $object = ($ponomar->getSaints('pentecostarion'))[0];
 	next unless ($object->hasServices('liturgy'));
