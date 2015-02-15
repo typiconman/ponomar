@@ -201,12 +201,16 @@ The paramater C<$GS> determines if the Lucan Jump is used in the selection of sc
 
 sub new {
 	my $class = shift;
-	my ($date, $language, $lectionary_style) = @_;
-	
+	my $date = shift;
+	my $language = defined $_[0] ? $_[0] : 'en';
+	my $lectionary_style = defined $_[1] ? $_[1] : 1;
+# TODO: CLEAN UP THIS CODE
+# WE SHOULD ALLOW THE USER TO PASS THE PARAMETERS IN ANY ORDER, AND WITH CLEARLY
+# SPECIFIED DEFAULT VALUES.
 	my $self = {
 		_date => $date,
-		_lang => $language || 'en',
-		_GS => $lectionary_style || 1
+		_lang => $language,
+		_GS => $lectionary_style
 	};
 	$GS = $lectionary_style;
 	bless $self, $class;
