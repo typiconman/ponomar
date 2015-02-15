@@ -17,3 +17,15 @@ The following tests are available:
 	because some transfers are handled directly in CMDs on individual days (e.g., for SSBN and SBN)
 	But it's a fairly close approximation.
 
+2. paschalion.pl
+	This script runs creates a paschalion table for 532 years (one great cycle) beginning with 2000.
+	Output is written to paschalion.txt
+	Base specification is in paschalion_baseline.txt
+
+	The purpose of this script is to test if:
+		* Unicode support is working normally
+		* The API loads properly
+		* Support for Julian dates and computations is sane
+		* The Paschalion is implemented correctly
+	NOTE THAT ALL DATES ARE ACCORDING TO THE JULIAN CALENDAR
+

@@ -35,7 +35,6 @@ my $end = getPascha($start->getYear() + 1);
 my $output = "../../regtests/simple_lectionary.txt";
 my $baseline = "../../regtests/simple_lectionary_baseline.txt";
 my @weekdays = qw/Sunday Monday Tuesday Wednesday Thursday Friday Saturday/;
-my @typicon = qw/. . 🕄 🕃 🕂 🕁 🕀 🕀 🕀/;
 
 open (OUTFILE, ">:encoding(UTF-8)", $output) || die "Cannot write to output file: $!";
 
