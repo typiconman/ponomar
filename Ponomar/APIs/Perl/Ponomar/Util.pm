@@ -400,9 +400,7 @@ sub getIndiction {
 	
 	carp (__PACKAGE__ . "::getIndiction($year) - Year is before 312 AD!") if ($year < 313);
 	my $indikt = ($year - 312) % 15;
-	if ($indikt == 0) {
-		$indikt += 15;
-	}
+	$indikt += 15 if ($indikt == 0);
 	return $indikt;
 }
 
@@ -435,6 +433,7 @@ sub getConcurrent {
 	while ($vrutseleto > 7) {
 		$vrutseleto -= 7;
 	}
+	$vrutseleto += 7 if ($vrutseleto == 0);
 	return $vrutseleto;
 }
 
@@ -461,8 +460,12 @@ Given C<$year>, a year AD, returns the foundation (the "age of the moon" on Marc
 sub getFoundation {
 	my $year = shift;
 	
-	my $osnovanie = (($year + 1) % 19) * 11;
-	return $osnovanie % 30;
+	my $osnovanie = ((($year + 1) % 19) * 11);
+	while ($osnovanie > 30) {
+		$osnovanie -= 30;
+	}
+
+	return $osnovanie == 0 ? 29 : $osnovanie;
 }
 
 =item getEpacta( $year )
