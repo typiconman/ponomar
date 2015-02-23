@@ -19,7 +19,18 @@
 
 <!-- THESE RULES ALLOW US TO SUPPRESS SEQUENTIAL READINGS IF THEY HAVE BEEN READ BEFORE -->
 <!-- NB: READINGS MAY NOT BE SUPPRESSED IN SEPTEMBER, SINCE EPISTLE READING IS UNIQUE UNDER LJ SCHEME -->
-<!-- the rest of this reading suppression scheme must be double-checked before implementing
+<!-- XXX: FIXME for these rubrics to be useable, we must check if Menaion has readings as well, currently not implemented
+<COMMAND Name="Suppress" Value="dRank &gt;= 2 &amp;&amp; nday == -96 &amp;&amp; ndayP == 289 &amp;&amp; (doy &gt;= 3 &amp;&amp; doy &lt;= 4)" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="dRank &gt;= 2 &amp;&amp; nday == -95 &amp;&amp; ndayP == 290 &amp;&amp; (doy &gt;= 4 &amp;&amp; doy &lt;= 5)" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="dRank &gt;= 2 &amp;&amp; nday == -94 &amp;&amp; ndayP == 291 &amp;&amp; (doy &gt;= 5 &amp;&amp; doy &lt;= 6)" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="dRank &gt;= 2 &amp;&amp; nday == -93 &amp;&amp; ndayP == 292 &amp;&amp; (doy &gt;= 6 &amp;&amp; doy &lt;= 7)" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="dRank &gt;= 2 &amp;&amp; nday == -92 &amp;&amp; ndayP == 293 &amp;&amp; (doy &gt;= 7 &amp;&amp; doy &lt;= 8)" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="dRank &gt;= 2 &amp;&amp; ((ndayP == 282 &amp;&amp; doy &lt;= 6)  || (nday == 282 &amp;&amp; doy &gt;= 361))" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="dRank &gt;= 2 &amp;&amp; ((ndayP == 283 &amp;&amp; doy &lt;= 7)  || (nday == 283 &amp;&amp; doy &gt;= 362))" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="dRank &gt;= 2 &amp;&amp; ((ndayP == 284 &amp;&amp; doy &lt;= 8)  || (nday == 284 &amp;&amp; doy &gt;= 363))" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="dRank &gt;= 2 &amp;&amp; ((ndayP == 285 &amp;&amp; doy &lt;= 9)  || (nday == 285 &amp;&amp; doy &gt;= 364))" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="dRank &gt;= 2 &amp;&amp; ndayP == 286 &amp;&amp; doy &lt;= 10" Cmd="GS == 1"/>
+--><!-- XXX: the rules below look so complicated, I don't know how to interpret them.
 <COMMAND Name="Suppress" Value="(doy == 355 || (doy == 356 &amp;&amp; dow != 1) || (doy == 357 &amp;&amp; (dow &gt;= 3 || dow == 0)) || (doy == 358 &amp;&amp; (dow &gt;= 4 || dow == 0)) || (doy == 359 &amp;&amp; (dow &gt;= 5 || dow == 0)) || (doy == 360 &amp;&amp; (dow == 6 || dow == 0)) || (doy == 361 &amp;&amp;  dow == 0)) &amp;&amp; (ndayF &gt;= -125 &amp;&amp; ndayF &lt;= -105)" Comment="This suppresses the readings that occur over Christmas in the case that there are 3 repeats and it is the 31st week of effective readings." Cmd="GS == 1"/>
 <COMMAND Name="Suppress" Value="(doy == 362 || (doy == 363 &amp;&amp; dow != 1) || (doy == 364 &amp;&amp; (dow &gt;= 3 || dow == 0)) || (doy == 361 &amp;&amp; dow != 0) || (doy == 360 &amp;&amp; (dow &lt; 6 &amp;&amp; dow != 0)) || (doy == 359 &amp;&amp; (dow &lt; 5 &amp;&amp; dow != 0)) || (doy == 358 &amp;&amp; (dow &lt; 4 &amp;&amp; dow != 0)) || (doy == 357 &amp;&amp; (dow &lt; 3 &amp;&amp; dow != 0)) || (doy == 356 &amp;&amp; (dow == 1))) &amp;&amp; (ndayF &gt;= -118 &amp;&amp; ndayF &lt;= -81)" Comment="This suppresses the readings that occur over Christmas in the case that there are 2 repeats and it is the 32nd week of effective readings." Cmd="GS == 1"/>
 <COMMAND Name="Suppress" Value=" ((doy == 0 &amp;&amp; (dow &gt;= 4 || dow == 0)) || (doy == 1 &amp;&amp; (dow &gt;= 5 || dow == 0)) || (doy == 2 &amp;&amp; (dow == 6 || dow == 0)) || (doy == 3 &amp;&amp;  dow == 0)) &amp;&amp;  (nday &gt;= -118 &amp;&amp; nday &lt;= -81)" Comment="This suppresses the readings that occur over Christmas in the case that there are at least 2 repeats and it is the 32nd week of effective readings and it is January." Cmd="GS == 1"/>

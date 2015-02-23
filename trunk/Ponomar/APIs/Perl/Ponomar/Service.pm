@@ -228,7 +228,10 @@ sub execCommands {
 		next unless eval $cmd;
 
 		if ( $_->{Name} eq "Suppress" || $_->{Name} eq "Class3Transfers") {
-			$self->{_readings} = ();
+	# TODO: we have to figure out if today has Menaion readings.
+	#		if (grep { $_->hasReadings() } map { $_->getServices('liturgy') } $self->{parent}->{ponomar}->getSaints('menaion')) {
+				$self->{_readings} = ();
+		#	}
 			return;
 		}
 	}
