@@ -156,10 +156,10 @@ public class DivineLiturgy1 implements DocHandler {
 
         //CHECK WHETHER OR NOT IT IS DESIRED TO TRANSFER THE SKIPPED SEQUENTIAL READINGS
         Vector transfer = (Vector) Information.get("Transfer");
-        int transfer1 = Integer.parseInt((String) transfer.get(0));
+        boolean transfer1 = Analyse.evalbool((String) transfer.get(0));
         classifyReadings tomorrows = new classifyReadings();
         classifyReadings yesterdays = new classifyReadings();
-        if (transfer1 == 1) {
+        if (transfer1) {
             /*NOW CONSIDER ANY SUPPRESSED READINGS:
             //THE FOLLOWING SHOULD BE NOTED:
             1. READINGS ARE NEVER TRANSFERRED TO A SUNDAY

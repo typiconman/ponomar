@@ -190,7 +190,7 @@ public class Search extends JFrame implements ActionListener
         public static void main(String[] argz)
         {
             OrderedHashtable dayinfo=new OrderedHashtable();
-            dayinfo.put("LS","en/");
+            dayinfo.put("LS","fr/");
             Search testing = new Search(dayinfo);
             
 
