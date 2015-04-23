@@ -87,7 +87,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="None" Value="No Service Today/,None (Ninth Hour)/,The tropar for/,is missing/,The kontakion for/,Kathisma"/>
 <PHRASE Key="FontFaceM" Value="Times New Roman" Comment="This is the font to be used for displaying all the relevant information on screen  for the Main interface. A blank entry of &quot;&quot; will select the default font."/>
 <PHRASE Key="FontSizeM" Value="14" Comment="The size of the font  for the Main interface, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
-<PHRASE Key="FontFaceL" Value="Hirmos Ponomar" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
+<PHRASE Key="FontFaceL" Value="Ponomar Unicode TT" Comment="This is the font to be used for displaying information in the Liturgical aspect. At times, the font of the Liturgics will be different from that of the main Screen (for example, Russian interface; Church Slavonic Liturgics)."/>
 <PHRASE Key="FontSizeL" Value="18" Comment="The size of the font  for the Liturgics aspect (see FontFaceL) for explanation, since some languages need a larger font size to be legible. A blank entry will give the default value of 12."/>
 <PHRASE Key="CommSep" Value="; " Comment="This is the mark to separate the different commemorations that are dispalyed."/>
 <PHRASE Key="ReadSep" Value="; " Comment="This is the mark to separate the readings."/>
@@ -105,11 +105,11 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 
 <PHRASE Key="Rank0" Value="^NF"/>
 <PHRASE Key="Rank1" Value="^NF"/>
-<PHRASE Key="Rank2" Value="&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕃&lt;/span&gt; &lt;I&gt;^NF&lt;/I&gt;"/>
-<PHRASE Key="Rank3" Value="&lt;span style=&quot;color:red;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕃&lt;/span&gt; &lt;I&gt;^NF&lt;/I&gt;"/>
-<PHRASE Key="Rank4" Value="&lt;span style=&quot;color:red;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕂&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;"/>
-<PHRASE Key="Rank5" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕁&lt;/span&gt; ^NF&lt;/span&gt;"/>
-<PHRASE Key="Rank6" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;%&gt;🕀&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;&lt;/span&gt;"/>
+<PHRASE Key="Rank2" Value="&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕃&lt;/span&gt; &lt;I&gt;^NF&lt;/I&gt;"/>
+<PHRASE Key="Rank3" Value="&lt;span style=&quot;color:red;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕃&lt;/span&gt; &lt;I&gt;^NF&lt;/I&gt;"/>
+<PHRASE Key="Rank4" Value="&lt;span style=&quot;color:red;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕂&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;"/>
+<PHRASE Key="Rank5" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕁&lt;/span&gt; ^NF&lt;/span&gt;"/>
+<PHRASE Key="Rank6" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%&quot;%&gt;🕀&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;&lt;/span&gt;"/>
 
 <PHRASE Key="PadH" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 <PHRASE Key="PadM" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>

@@ -104,11 +104,11 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 
 <PHRASE Key="Rank0" Value="^NF"/>
 <PHRASE Key="Rank1" Value="^NF"/>
-<PHRASE Key="Rank2" Value="&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕃&lt;/span&gt; &lt;I&gt;^NF&lt;/I&gt;"/>
-<PHRASE Key="Rank3" Value="&lt;span style=&quot;color:red;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕃&lt;/span&gt; &lt;I&gt;^NF&lt;/I&gt;"/>
-<PHRASE Key="Rank4" Value="&lt;span style=&quot;color:red;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕂&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;"/>
-<PHRASE Key="Rank5" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;&gt;🕁&lt;/span&gt; ^NF&lt;/span&gt;"/>
-<PHRASE Key="Rank6" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Hirmos Ponomar;font-size:130%&quot;%&gt;🕀&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;&lt;/span&gt;"/>
+<PHRASE Key="Rank2" Value="&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕃&lt;/span&gt; &lt;I&gt;^NF&lt;/I&gt;"/>
+<PHRASE Key="Rank3" Value="&lt;span style=&quot;color:red;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕃&lt;/span&gt; &lt;I&gt;^NF&lt;/I&gt;"/>
+<PHRASE Key="Rank4" Value="&lt;span style=&quot;color:red;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕂&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;"/>
+<PHRASE Key="Rank5" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕁&lt;/span&gt; ^NF&lt;/span&gt;"/>
+<PHRASE Key="Rank6" Value="&lt;span style=&quot;color:red&quot;&gt;&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%&quot;%&gt;🕀&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;&lt;/span&gt;"/>
 
 <PHRASE Key="PadH" Value="1" Comment="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 <PHRASE Key="PadM" Value="2" Comment="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>

@@ -76,7 +76,7 @@ public class Service implements DocHandler
 
                 /*int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
                                 if (LangCode==2 || LangCode==3 ){
-                                    Style=Style+"body {font-family:\"Hirmos Ponomar\";font-size:18pt}\n";
+                                    Style=Style+"body {font-family:\"Ponomar Unicode TT\";font-size:18pt}\n";
                                     //System.out.println("Added Font");
                                    }
                                 else{
@@ -171,7 +171,7 @@ public class Service implements DocHandler
 			
 			if(NullCheck == 0 || (NullCheck == 1 && Service1 != null))
 			{
-				//Service1=OldText[count]+"<font face=\"Hirmos Ponomar\" size=\"5\">"+Service1+"</font>";
+				//Service1=OldText[count]+"<font face=\"Ponomar Unicode TT\" size=\"5\">"+Service1+"</font>";
                                 Service1=OldText[count]+Service1;
 			}
 			else
