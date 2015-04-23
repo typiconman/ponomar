@@ -116,7 +116,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 				//strOut=strOut+"<p><Font Color='red'>Disclaimer: This is a preliminary attempt at creating the Primes service.</Font></p>";
 				//int LangCode=Integer.parseInt(Analyse.dayInfo.get("LS").toString());
                                 //if (LangCode==2 || LangCode==3 ){
-                                    //strOut="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"><p><font face=\"Hirmos Ponomar\" size=\"5\">"+strOut+"</font></p>";
+                                    //strOut="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"><p><font face=\"Ponomar Unicode TT\" size=\"5\">"+strOut+"</font></p>";
                                     //System.out.println("Added Font");
                                   // }
 

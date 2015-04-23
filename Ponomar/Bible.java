@@ -302,7 +302,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
             if (table.get("FontFace") == null) {
 
                 DisplayFontA = value1a.getFontName();
-                if (DisplayFontA.equals("Hirmos Ponomar"));
+                if (DisplayFontA.equals("Ponomar Unicode TT"));
                 {
                     DisplayFontA = "Times New Roman";
                 }
@@ -369,7 +369,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                 if (table.get("FontFace") == null) {
 
                     DisplayFont = value1.getFontName();
-                    if (DisplayFont.equals("Hirmos Ponomar"));
+                    if (DisplayFont.equals("Ponomar Unicode TT"));
                     {
                         DisplayFont = "Times New Roman";
                     }

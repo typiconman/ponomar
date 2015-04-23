@@ -227,29 +227,29 @@ MainNames=Text.obtainValues((String)Text.Phrases.get("Main"));
                 case 8:
                 case 7:
                 case 6:
-                    //output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";//A698
-                    //output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD40</Font><B>\u00A0" + NameF + "</B></FONT>";
+                    //output += "<FONT Color='red'><Font face='Ponomar Unicode TT' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";//A698
+                    //output += "<FONT Color='red'><Font face='Ponomar Unicode TT' size='+1'>\uD83D\uDD40</Font><B>\u00A0" + NameF + "</B></FONT>";
                     output +=Rank6Format.replace("^NF", NameF);
-                    //output += "</body><body style=\"font-family:Hirmos Ponomar;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt;color:red;font-style:bold\">\u00A0" + table.get("Name") + "</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt\">";
-                    //output += "<style style=\"font-family:Hirmos Ponomar;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</style>\u00A0<style style=\"color:red\">" + table.get("Name") + "</style>";
-                    //output+="<B><rank style=\"font-face:Hirmos Ponomar;size=18;color:red\">\uA698</rank><B>\u00A0"+table.get("Name");
-                    //output += "<div style=\"font-face:Hirmos Ponomar; font-size:18pt; color:red\">\uA698\u00A0</div><Font color='red'><B>" + table.get("Name") + "</B></Font>";
+                    //output += "</body><body style=\"font-family:Ponomar Unicode TT;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt;color:red;font-style:bold\">\u00A0" + table.get("Name") + "</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt\">";
+                    //output += "<style style=\"font-family:Ponomar Unicode TT;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</style>\u00A0<style style=\"color:red\">" + table.get("Name") + "</style>";
+                    //output+="<B><rank style=\"font-face:Ponomar Unicode TT;size=18;color:red\">\uA698</rank><B>\u00A0"+table.get("Name");
+                    //output += "<div style=\"font-face:Ponomar Unicode TT; font-size:18pt; color:red\">\uA698\u00A0</div><Font color='red'><B>" + table.get("Name") + "</B></Font>";
                     break;
                 case 5:
-                    //output += "<FONT Color='red'><Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD41</Font>\u00A0" + NameF + "</FONT>";
+                    //output += "<FONT Color='red'><Font face='Ponomar Unicode TT' size='+1'>\uD83D\uDD41</Font>\u00A0" + NameF + "</FONT>";
                     output+=Rank5Format.replace("^NF",NameF);
                     break;
                 case 4:
-                    //output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\uD83D\uDD42</Font><B>\u00A0" + NameF + "</B>";
+                    //output += "<Font Color='red' face='Ponomar Unicode TT' size='+1'>\uD83D\uDD42</Font><B>\u00A0" + NameF + "</B>";
                     output+=Rank4Format.replace("^NF",NameF);
                     break;
 
                 case 3:
-                    //output += "<Font Color='red' face='Hirmos Ponomar' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
+                    //output += "<Font Color='red' face='Ponomar Unicode TT' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
                     output+=Rank3Format.replace("^NF",NameF);
                     break;
                 case 2:
-                    //output += "<Font face='Hirmos Ponomar' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
+                    //output += "<Font face='Ponomar Unicode TT' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
                     output+=Rank2Format.replace("^NF",NameF);
                     break;
                 case 1:

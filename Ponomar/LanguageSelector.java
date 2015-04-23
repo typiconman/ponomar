@@ -114,7 +114,7 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
                         {
                         
                             //We are going to treat Church Slavonic specially
-                            Font ChineseFont=new Font("Hirmos Ponomar",Font.PLAIN,18);
+                            Font ChineseFont=new Font("Ponomar Unicode TT",Font.PLAIN,18);
                             LanguageBox.setFont(ChineseFont);
                             //LanguageBox.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
                             //LanguageBox.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
@@ -123,7 +123,7 @@ class LanguageSelector extends JMenu implements ActionListener, PropertyChangeLi
                         else
                         {
                             //We do not want the default font necessarily being used here.
-                            //if (CurrentFont.getFontName().toString().equals("Hirmos Ponomar"))
+                            //if (CurrentFont.getFontName().toString().equals("Ponomar Unicode TT"))
                                 //This is only an issue for fonts that lack a complete character set.
                             {
                             Font DefaultFont=new Font("Times New Roman",Font.BOLD,14);

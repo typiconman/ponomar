@@ -363,7 +363,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 dayInfo.put("nday",-256);
                 dayInfo.put("LS","cu/"); //ENGLISH
                 dayInfo.put("PS",1);
-                dayInfo.put("FontFaceM","Hirmos Ponomar");
+                dayInfo.put("FontFaceM","Ponomar Unicode TT");
                 dayInfo.put("FontSizeM","18");
                 dayInfo.put("Orient",ComponentOrientation.getOrientation(new Locale("ru")));
 
