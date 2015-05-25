@@ -8,7 +8,7 @@ Ponomar is a fully-functional program suite for the Orthodox Church and provides
 6. Library of patristic text and scriptural commentary
 7. Library of liturgical music in a variety of traditional chant
 
-Copyright 2006-20145 Aleksandr Andreev and others.
+Copyright 2006-2015 Aleksandr Andreev and others.
 
 Ponomar is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
