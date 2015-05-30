@@ -26,9 +26,15 @@ along with Ponomar.  If not, see <http://www.gnu.org/licenses/>.
 IMPORTANT INFORMATION
 Ponomar is ALPHA-PHASE software and is intended for SOFTWARE-TESTING PURPOSES ONLY.
 
-In order to fully use the Ponomar Java programme, the following steps can be followed:
-1) Install the Ponomar Unicode font located at http://www.ponomar.net/cu_support/fonts.html. Although this font is for primarily displaying Church Slavonic, it does contain special Typicon glyphs that are used by most of the other languages. Note that Ponomar uses the TrueType version of this font (Ponomar Unicode TT) because Java has poor support of OpenType fonts.
+In order to fully use the Ponomar Java program, the following steps can be followed:
+1) Install the Ponomar Unicode font located at http://www.ponomar.net/cu_support/fonts.html. 
+Although this font is for primarily displaying Church Slavonic, 
+it does contain special Typicon glyphs that are used by most of the other languages.
+Note that Ponomar uses the TrueType version of this font (Ponomar Unicode TT)
+because Java has poor support of OpenType fonts.
+
 2) Install an SDK for Java. 
+
 3) Create the .class files by typing 
 
 make
@@ -39,6 +45,6 @@ java Ponomar.Main
 
 and the main Ponomar interface should appear.
 
-5) Additional Ponomar Project software -- fonts and keyboard drivers for working with Church Slavic texts may be found at http://www.ponomar.net/cu_support.html
+5) Additional Ponomar Project software -- fonts and keyboard drivers for working with Church Slavonic texts may be found at http://www.ponomar.net/cu_support.html
 
 
