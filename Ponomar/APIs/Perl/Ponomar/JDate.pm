@@ -5,6 +5,7 @@ use strict;
 require 5.004;
 require Exporter;
 require Carp;
+use POSIX qw(floor);
 
 our $VERSION = '0.01';
 our @ISA = qw( Exporter );
@@ -56,9 +57,19 @@ These conventions are due to some poor choices of conventions back in the day wh
 
 =item C<new($julian_day)> OR C<new($month, $day, $year)>
 
-Creates a new instance of Ponomar::JDate either set to Month, Day, Year OR to the Julian Day
+Creates a new instance of Ponomar::JDate either set to Month, Day, Year 
+where Month, Day, Year is a calendar date on the JULIAN CALENDAR
 
-What is a Julian Day? Read here: http://en.wikipedia.org/wiki/Julian_day
+OR to the Julian Day
+
+The months begin with 1 for January and run to 12 for December
+Though years BC are generally not used, if necessary, the code is defined
+so that the C<$year> before AD 1 is -1 (B<NOT> 0).
+the C<$day> may have a fractional component.
+
+Note that Julian Days begin at Noon UTC, so we usually have a 0.5 around,
+which is a bit annoying, but is done this way to keep all formulae in this code
+the same as in Meuss, Astronomical Algorithms (1st edition).
 
 =cut
 
@@ -71,10 +82,12 @@ sub new ($;$$) {
 	} else {
 		my ($month, $day, $year) = @_;
 
-		my $a = int((14 - $month) / 12);
-		my $y = $year + 4800 - $a;
-		my $m = $month + 12 * $a - 3;
-		$mn_jday = $day + int((153 * $m + 2) / 5) + 365 * $y + int($y / 4) - 32083;
+		if ($month == 1 || $month == 2) {
+			$month += 12;
+			$year--;
+		}
+
+		$mn_jday = floor(365.25 * ($year + 4716)) + floor(30.6001 * ($month + 1)) + $day - 1524.5;
 	}
 	
 	my $self = {
@@ -100,19 +113,15 @@ sub getYear ($) {
 	my $self = shift;
 	
 	my $mn_jday = $self->{_mnjday};
-	my $jbar = $mn_jday + 32083;
-	## Compute the number of four-year Julian cycles that have elapsed since mn_jday
-	## There are 1461 days in each cycle
-	## Multiply this number by four (years/cycle)
-	my $n1 = int($jbar / 1461) * 4;
-	## Compute the number of days since the last four-year cycle
-	## Divide by 365 days in a year
-	my $n2 = int($jbar % 1461) / 365;
-	my $da = int($jbar % 1461);
-	## Add one if we are after December 31, since JDate starts March 1
-	my $adj = ($da % 365) > 306 ? 1 : 0;
-
-	return int($n1 + $n2) - 4800 + $adj;
+	$mn_jday += 0.5;
+	my $a = floor($mn_jday);
+	my $B = $a + 1524;
+	my $C = floor(($B - 122.1) / 365.25);
+	my $D = floor(365.25 * $C);
+	my $E = floor(($B - $D) / 30.6001);
+	my $m = $E < 14 ? $E - 1 : $E - 13;
+	return $m > 2 ? $C - 4716 : $C - 4715;
+#	return int($n1 + $n2) - 4800 + $adj;
 }
 
 =item getYearAM()
@@ -145,24 +154,15 @@ NOTE THAT: January is month 1
 
 sub getMonth ($) {
 	my $self = shift;
-
-	my $mn_jday = $self->{_mnjday};
-	my $jbar = $mn_jday + 32083;
-	## Take jbar modulo 1461 to get the number of days since the last four-year cycle
-	my $da = int($jbar % 1461);
-	## Take da modulo 365 to get the number of days since the last 1 March
-	my $m = &mod($da, 365);
-	## now, subtract off days for each of the months
-	my $j = 2;
 	
-	while ($m > $DAYS_IN_LEAP[$j]) {
-		$m -= $DAYS_IN_LEAP[$j];
-		$j++;
-		if ($j == 12) {
-			$j = 0;
-		}
-	}
-	return $j + 1;
+	my $mn_jday = $self->{_mnjday};
+	$mn_jday += 0.5;
+	my $a = floor($mn_jday);
+	my $B = $a + 1524;
+	my $C = floor(($B - 122.1) / 365.25);
+	my $D = floor(365.25 * $C);
+	my $E = floor(($B - $D) / 30.6001);
+	return $E < 14 ? $E - 1 : $E - 13;
 }
 
 =item getDay()
@@ -178,28 +178,16 @@ Example:
 
 sub getDay ($) {
 	my $self = shift;
-
+	
 	my $mn_jday = $self->{_mnjday};
-	my $jbar = $mn_jday + 32083;
-	## repeat above steps until m
-	my $da = &mod($jbar, 1461);
-	my $m = 0;
-	if ($da == 1461) {
-		$m = 29; ## FEBRUARY 29
-	} else {
-		$m  = &mod($da, 365);
-		## this number is the number of days since the last March 1
-		## now, take off days for each month
-		my $k = 2;
-		while ($m > $DAYS_IN_MONTH[$k]) {
-			$m -= $DAYS_IN_MONTH[$k];
-			$k++;
-			if ($k == 12) {
-				$k = 0;
-			}
-		}
-	}
-	return $m; ## the number of days that will remain at the end
+	$mn_jday += 0.5;
+	my $a = floor($mn_jday);
+	my $B = $a + 1524;
+	my $C = floor(($B - 122.1) / 365.25);
+	my $D = floor(365.25 * $C);
+	my $E = floor(($B - $D) / 30.6001);
+	my $F = $mn_jday - $a;
+	return $B - $D - floor(30.6001 * $E) + $F;
 }
 
 =item getDayOfWeek()
@@ -219,12 +207,8 @@ sub getDayOfWeek ($) {
 	my $self = shift;
 
 	my $mn_jday = $self->{_mnjday};
-	my $temp = int($mn_jday % 7) + 1;
-	if ($temp == 7) {
-		$temp = 0;
-	}
-
-	return $temp;
+	return floor($mn_jday + 1.5) % 7;
+#	return $temp;
 }
 
 =item getDayOfWeekString 
@@ -250,7 +234,7 @@ Note that January 1 is doy 0. February 29, if it exists, is doy 366
 sub getDoy ($) {
 	my $self = shift;
 	
-	my $jbar = $self->{_mnjday} + 32083;
+	my $jbar = $self->{_mnjday} + 32083.5;
 	my $da   = mod($jbar, 1461);
 	return $da == 1461 ? 366 : mod($da + 59, 365) - 1; ## Jan 1 is doy 0
 }
@@ -265,32 +249,19 @@ sub getYearGregorian ($) {
 	my $self = shift;
 	
 	my $mn_jday = $self->{_mnjday};
-	my $j1 = 0;
-	if ($mn_jday >= 2299160.5) {
-		my $tmp = int((($mn_jday - 1867216.0) - 0.25) / 36524.25);
-		$j1 = $mn_jday + 1 + $tmp - int(0.25 * $tmp);
+	$mn_jday += 0.5;
+	my $a;
+	if (floor($mn_jday) < 2299161) {
+		$a = floor($mn_jday);
 	} else {
-		$j1 = $mn_jday;
+		my $alpha = floor((floor($mn_jday) - 1867216.25) / 36524.25);
+		$a = floor($mn_jday) + 1 + $alpha - floor($alpha / 4);
 	}
-
-	my $j2 = $j1 + 1524.0;
-	my $j3 = int(6680.0 + (($j2 - 2439870.0) - 122.1) / 365.25);
-	my $j4 = int($j3 * 365.25);
-	my $j5 = int(($j2 - $j4) / 30.6001);
-	my $m = int($j5 - 1.0);
-	if ($m > 12) {
-		$m -= 12;
-	}
-
-	my $y = int($j3 - 4715.0);
-
-	if ($m > 2) {
-		--$y;
-	}
-	if ($y <= 0) {
-		--$y;
-	}
-	return $y;
+	my $C = floor(($a + 1524 - 122.1) / 365.25);
+	my $D = floor(365.25 * $C);
+	my $E = floor(($a + 1524 - $D) / 30.6001);
+	my $m = $E < 14 ? $E - 1 : $E - 13;
+	return $m > 2 ? $C - 4716 : $C - 4715;
 }
 
 =item getMonthGregorian()
@@ -301,28 +272,20 @@ Returns the month of the JDate object according to the (proleptic) Gregorian cal
 
 sub getMonthGregorian ($) {
 	my $self = shift;
-
+	
 	my $mn_jday = $self->{_mnjday};
-	my $j1 = 0;
-
-	if ($mn_jday >= 2299160.5) {
-		my $tmp = int((($mn_jday - 1867216.0) - 0.25) / 36524.25);
-		$j1 = $mn_jday + 1 + $tmp - int(0.25 * $tmp);
+	$mn_jday += 0.5;
+	my $a;
+	if (floor($mn_jday) < 2299161) {
+		$a = floor($mn_jday);
 	} else {
-		$j1 = $mn_jday;
+		my $alpha = floor((floor($mn_jday) - 1867216.25) / 36524.25);
+		$a = floor($mn_jday) + 1 + $alpha - floor($alpha / 4);
 	}
-
-	my $j2 = $j1 + 1524.0;
-	my $j3 = int(6680.0 + (($j2 - 2439870.0) - 122.1) / 365.25);
-	my $j4 = int($j3 * 365.25);
-	my $j5 = int(($j2 - $j4) / 30.6001);
-
-	my $d = int($j2 - $j4 - int($j5 * 30.6001));
-	my $m = int($j5 - 1.0);
-	if ($m > 12) {
-		$m -= 12;
-	}
-	return $m;
+	my $C = floor(($a + 1524 - 122.1) / 365.25);
+	my $D = floor(365.25 * $C);
+	my $E = floor(($a + 1524 - $D) / 30.6001);
+	return $E < 14 ? $E - 1 : $E - 13;
 }
 
 =item getDayGregorian()
@@ -335,20 +298,19 @@ sub getDayGregorian ($) {
 	my $self = shift;
 	
 	my $mn_jday = $self->{_mnjday};
-	my $j1 = 0;
-	if ($mn_jday >= 2299160.5) {
-		my $tmp = int((($mn_jday - 1867216.0) - 0.25) / 36524.25);
-		$j1 = $mn_jday + 1 + $tmp - int(0.25 * $tmp);
+	$mn_jday += 0.5;
+	my $a;
+	if (floor($mn_jday) < 2299161) {
+		$a = floor($mn_jday);
 	} else {
-		$j1 = $mn_jday;
+		my $alpha = floor((floor($mn_jday) - 1867216.25) / 36524.25);
+		$a = floor($mn_jday) + 1 + $alpha - floor($alpha / 4);
 	}
-
-	my $j2 = $j1 + 1524.0;
-	my $j3 = int(6680.0 + (($j2 - 2439870.0) - 122.1) / 365.25);
-	my $j4 = int($j3 * 365.25);
-	my $j5 = int(($j2 - $j4) / 30.6001);
-
-	return int($j2 - $j4 - int($j5 * 30.6001));
+	my $C = floor(($a + 1524 - 122.1) / 365.25);
+	my $D = floor(365.25 * $C);
+	my $E = floor(($a + 1524 - $D) / 30.6001);
+	my $F = $mn_jday - floor($mn_jday);
+	return $a + 1524 - $D - floor(30.6001 * $E) + $F;
 }
 
 =item getDaysSince($date)
@@ -539,11 +501,7 @@ sub getNearestSunday ($) {
 	my $self = shift;
 
 	my $mn_jday = $self->{_mnjday};
-	my $dow = int($mn_jday % 7) + 1;
-	if ($dow == 7) {
-		$dow = 0;
-	}
-	
+	my $dow = floor($mn_jday + 1.5) % 7;	
 	return $dow <= 3 ? JDate->new($mn_jday - $dow) : JDate->new($mn_jday + 7 - $dow);
 }
 
@@ -553,8 +511,7 @@ sub getPreviousSunday ($) {
 	my $self = shift;
 	
 	my $mn_jday = $self->{_mnjday};
-	my $dow = int($mn_jday % 7) + 1;
-	
+	my $dow =  floor($mn_jday + 1.5) % 7;
 	return Ponomar::JDate->new($mn_jday - $dow);
 }
 
@@ -564,11 +521,7 @@ sub getNextSunday ($) {
 	my $self = shift;
 	
 	my $mn_jday = $self->{_mnjday};
-	my $dow = int($mn_jday % 7) + 1;
-	if ($dow == 7) {
-		$dow = 0;
-	}
-	
+	my $dow = floor($mn_jday + 1.5) % 7;
 	return Ponomar::JDate->new($mn_jday + 7 - $dow);
 }
 
@@ -584,7 +537,7 @@ sub times ($$) {
 }
 
 ## RETURNS THE CLOSEST JDATE TO THE CURRENT JDATE DIVIDED BY N
-## THIS MAY BE MARGINALLY USEFULL IN FINDING OUT THINGS LIKE MIDPOINTS OF TIME PERIODS
+## THIS MAY BE MARGINALLY USEFUL IN FINDING OUT THINGS LIKE MIDPOINTS OF TIME PERIODS
 sub divide ($$) {
 	my $self = shift;
 	my $n = shift;
@@ -712,6 +665,88 @@ sub getSunriseSunset ($$$$;$$) {
 	}
 	
 	return Ponomar::Sunrise::convert_hour($tmp_rise_3, $tmp_set_3, $TZ, $isdst);
+}
+
+# local (non-exportable sub) to test if a year is a leap year according to the Milankovich calendar
+sub mIsMilankovichLeap {
+	my $year = shift;
+	if ($year % 4 == 0) {
+		if ($year % 100 == 0) {
+			return ( (($year / 100) % 9 == 2) || (($year / 100) % 9) == 6);
+		} else {
+			return 1;
+		}
+	}
+	return 0;
+}
+
+
+=item getMilankovichYear
+
+Returns the year of the JDate object according to the (proleptic) Milankovich calendar.
+
+=cut
+
+sub getMilankovichYear {
+	my $self = shift;
+	my $Days = floor ($self->{_mnjday} - 1721425.5);
+	my $PriorCenturies = floor($Days / 36524);
+	my $R1 = $Days - 36524 * $PriorCenturies - floor((2 * $PriorCenturies + 6) / 9);
+	my $PriorSubCycles = floor($R1 / 1461);
+	$R1 %= 1461;
+	my $PriorYears = floor ($R1 / 365);
+	my $year = 100 * $PriorCenturies + 4 * $PriorSubCycles + $PriorYears;
+	return $R1 % 365 == 0 ? $year : $year + 1;
+}
+
+=item getMilankovichMonth
+
+Returns the month of the JDate object according to the (proleptic) Milankovich calendar.
+
+=cut
+
+sub getMilankovichMonth {
+	my $self = shift;
+	# TODO: fix this computation so that there is no duplication of code with the above method
+	my $Days = floor ($self->{_mnjday} - 1721425.5);
+	my $PriorCenturies = floor($Days / 36524);
+	my $R1 = $Days - 36524 * $PriorCenturies - floor((2 * $PriorCenturies + 6) / 9);
+	my $PriorSubCycles = floor($R1 / 1461);
+	$R1 %= 1461;
+	my $PriorYears = floor ($R1 / 365);
+	my $year = 100 * $PriorCenturies + 4 * $PriorSubCycles + $PriorYears;
+	$year++ unless ($R1 % 365 == 0);
+	$R1 = $R1 % 365 == 0 ?
+		$R1 = mIsMilankovichLeap($year) && $PriorSubCycles == 0 ? 366 : 365 :
+		$R1 % 365;
+	my $correction = $R1 - 1 < (31 + 28 + mIsMilankovichLeap($year)) ? 0 : 2 - mIsMilankovichLeap($year);
+	return floor((12 * ($R1 - 1 + $correction) + 373) / 367);
+}
+
+=item getMilankovichDay
+
+Returns the day of the JDate object according to the (proleptic) Milankovich calendar.
+
+=cut
+
+sub getMilankovichDay {
+	my $self = shift;
+	my $year = $self->getMilankovichYear();
+	my $month = $self->getMilankovichMonth();
+
+	# cheat: get the Julian Day for the first day of this month
+	my $f = 1721425.5 + 365 * ($year - 1) + floor(($year - 1) / 4) + floor((367 * $month - 362) / 12) + 1;
+	if ($month > 2) {
+		if (mIsMilankovichLeap($year)) {
+			$f--;
+		} else {
+			$f -= 2;
+		}
+	}
+
+	# correction for prior century leap years
+	$f += -1 * floor(($year - 1) / 100) + floor( (2 * floor(($year - 1) / 100) + 6) / 9);
+	return floor($self->{_mnjday} - $f + 1);
 }
 
 1;

@@ -13,6 +13,7 @@ This is not an Object Oriented class, but rather is a set of utility functions f
 use strict;
 use utf8;
 require 5.004;
+use POSIX qw(floor);
 use Carp;
 require Exporter;
 require Ponomar::JDate;
@@ -23,9 +24,9 @@ BEGIN {
 	$VERSION = 0.01;
 	@ISA 	 = qw( Exporter );
 	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax isNumeric getMatinsGospel julianFromGregorian getNextYearWithBoundary getKeyOfBoundaries);
-	@EXPORT_OK = qw(getIndiction getSolarCycle getConcurrent getLunarCycle getFoundation getEpacta);
-	$basepath = "/home/sasha/svn/ponomar/ponomar/Ponomar/languages/";
-#	$basepath = "/home/ponomar0/svn/Ponomar/languages/";
+	@EXPORT_OK = qw(getIndiction getSolarCycle getConcurrent getLunarCycle getFoundation getEpacta getNextFullMoon getVernalEquinox getJulianDayFromMilankovich getMilankovichPascha);
+	$basepath = "/home/sasha/ponomar/Ponomar/languages/";
+#	$basepath = "/home/ponomar0/git/ponomar/Ponomar/languages/";
 }
 
 my %matinsGospels = (
@@ -636,10 +637,6 @@ Used in Milankovic calculations
 
 Formulae due to Meuss, p. 350ff.
 
-XXX: FULL MILANKOVIC COMPUTATION OF PASCHA IS NOT SUPPORTED yet.
-
-=back
-
 =cut
 
 sub getNextFullMoon {
@@ -648,24 +645,22 @@ sub getNextFullMoon {
 	# step 1: get "k"
 	my $year = $date->getYear();
 	my $rem  = $date->getDaysSince(new Ponomar::JDate(1, 1, $year));
-	### NOTE THAT K MUST BE AN INTEGER AND WE MUST ROUND away from zero TO GET THE NEXT MOON
-	my $k    = ($year + $rem / 365.25 - 2000) * 12.3685;
-	$k = $k >= 0 ? int($k) + 1 : int($k);
+	my $k    = floor( ($year + $rem / 365.25 - 2000) * 12.3685 ) + 0.5;
 	# step 2: get "T", the time in Julian centuries since 2000
 	my $T    = $k / 1236.85;
 	# step 3: get JDE -- the time of the mean phase of the Moon
-	my $JDE = 2451550.09766 + 29.530588861 * $k + 0.00015437 * $T ** 2 - 
+	my $JDE = 2451550.09765 + 29.530588853 * $k + 0.0001337 * $T ** 2 - 
 			0.000000150 * $T ** 3 + 0.00000000073 * $T ** 4;
 	# Calculate Eccentricity of Earth's orbit around the Sun
 	my $E = 1 - 0.002516 * $T - 0.0000074 * $T ** 2;
 	# Calculate Mean anomaly of Sun
-	my $M1 = deg2rad( 2.5534 + 29.10535670 * $k - 0.0000014 * $T ** 2 - 0.00000011 * $T ** 3 );
+	my $M1 = deg2rad( 2.5534 + 29.10535669 * $k - 0.0000218 * $T ** 2 - 0.00000011 * $T ** 3 );
 	# Calculate Mean anomaly of Moon
-	my $M2 = deg2rad( 201.5643 + 385.81693528 * $k + 0.0107582 * $T ** 2 + 0.00001238 * $T ** 3 - 0.000000058 * $T ** 4);
+	my $M2 = deg2rad( 201.5643 + 385.81693528 * $k + 0.0107438 * $T ** 2 + 0.00001239 * $T ** 3 - 0.000000058 * $T ** 4);
 	# Calculate Moon's argument of latitude
-	my $F  = deg2rad( 160.7108 + 390.67050284 * $k - 0.0016118 * $T ** 2 - 0.00000227 * $T ** 3 + 0.000000011 * $T ** 4 );
+	my $F  = deg2rad( 160.7108 + 390.67050274 * $k - 0.0016341 * $T ** 2 - 0.00000227 * $T ** 3 + 0.000000011 * $T ** 4 );
 	# Calculate longitude of ascending node of the lunar orbit
-	my $O  = deg2rad( 124.7746 - 1.56375588 * $k + 0.0020672 * $T ** 2 + 0.00000215 * $T ** 3 );
+	my $O  = deg2rad( 124.7746 - 1.56375580 * $k + 0.0020691 * $T ** 2 + 0.00000215 * $T ** 3 );
 	
 	## ADD TO JDE THE CORRECTION TERMS BELOW
 	$JDE += -0.40614 * sin ($M2) 
@@ -698,7 +693,7 @@ sub getNextFullMoon {
 	my $A1 = deg2rad (299.77 + 0.107408 * $k - 0.009173 * $T ** 2);
 	my $A2 = deg2rad (251.88 + 0.016321 * $k);
 	my $A3 = deg2rad (251.83 + 26.651886 * $k);
-	my $A4 = deg2rad (349.92 + 36.412478 * $k);
+	my $A4 = deg2rad (349.42 + 36.412478 * $k);
 	my $A5 = deg2rad (84.66  + 18.206239 * $k);
 	my $A6 = deg2rad (141.74 + 53.303771 * $k);
 	my $A7 = deg2rad (207.14 + 2.453732 * $k);
@@ -725,11 +720,210 @@ sub getNextFullMoon {
 	       + 0.000037 * sin ($A12)
 	       + 0.000035 * sin ($A13)
 	       + 0.000023 * sin ($A14);
-	
-	### JDE now contains the Julian day of the moon (perhaps we need to add or subtract 0.5?)
-	### FIXME: check if this code actually returns correct results
-	return $JDE - 0.5;
+
+	### JDE now contains the Julian day of the moon
+	# XXX: Why do we have to add one? There is some kind of problem with our code
+	return new Ponomar::JDate($JDE);
 }
+
+=item getVernalEquinox ( $year ) 
+
+Given C<$year>, a year between AD 1000 and AD 3000, returns the date of the March equinox
+
+=cut
+
+sub getVernalEquinox {
+	my $year = shift;
+	carp (__PACKAGE__ . "::getVernalEquinox($year) : year outside allowed bounds") unless ($year > 999 && $year < 3001);
+	carp (__PACKAGE__ . "::getVernalEquinox($year) : year must be an integer") unless ($year == int($year));
+
+	my $y = ($year - 2000) / 1000;
+	my $JDE0 = 2451623.80984 + 365242.37404 * $y + 0.05169 * $y ** 2 - 0.00411 * $y ** 3 - 0.00057 * $y ** 4;
+	my $T = ($JDE0 - 2451545.0) / 36525;
+	my $W = deg2rad(35999.373 * $T - 2.47);
+	my $lambda = 1 + 0.0334 * cos($W) + 0.0007 * cos(2 * $W);
+	my $S = 	485 * cos (deg2rad( 324.96 + 1934.136 * $T)) +
+			203 * cos (deg2rad( 337.23 + 32964.467 * $T)) +
+			199 * cos (deg2rad( 342.08 + 20.186 * $T)) +
+			182 * cos (deg2rad( 27.85 + 445267.112 * $T)) +
+			156 * cos (deg2rad( 73.14 + 45036.886 * $T)) +
+			136 * cos (deg2rad(171.52 + 22518.443 * $T)) +
+			 77 * cos (deg2rad(222.54 + 65928.934 * $T)) +
+			 74 * cos (deg2rad(296.72 + 3034.906 * $T)) +
+			 70 * cos (deg2rad(243.58 + 9037.513 * $T)) +
+			 58 * cos (deg2rad(119.81 + 33718.147 * $T)) +
+			 52 * cos (deg2rad(297.17 + 150.678 * $T)) +
+			 50 * cos (deg2rad(21.02 + 2281.226 * $T)) +
+			 45 * cos (deg2rad(247.54 + 29929.562 * $T)) +
+			 44 * cos (deg2rad(325.15 + 31555.956 * $T)) +
+			 29 * cos (deg2rad(60.93 + 4443.417 * $T)) +
+			 18 * cos (deg2rad(155.12 + 67555.328 * $T)) +
+			 17 * cos (deg2rad(288.79 + 4562.452 * $T)) +
+			 16 * cos (deg2rad(198.04 + 62894.029 * $T)) +
+			 14 * cos (deg2rad(199.76 + 31436.921 * $T)) +
+			 12 * cos (deg2rad(95.39 + 14577.848 * $T)) +
+			 12 * cos (deg2rad(287.11 + 31931.756 * $T)) +
+			 12 * cos (deg2rad(320.81 + 34777.259 * $T)) +
+			  9 * cos (deg2rad(227.73 + 1222.114 * $T)) +
+			  8 * cos (deg2rad(15.45 + 16859.074 * $T));
+
+	# time of vernal equinox expressed as a Julian Ephemeris Day
+	# (hence in Dynamical Time). See Meeus, p. 165-168.
+	return new Ponomar::JDate( $JDE0 + (0.00001 * $S) / $lambda );
+}
+
+=item isMilankovichLeap ($year) 
+
+Given C<$year>, a year, returns 0 unless it is a leap year on the Milankovich calendar
+
+=cut
+
+sub isMilankovichLeap {
+	my $year = shift;
+	carp (__PACKAGE__ . "::isMilankovichLeap($year) : invalid year specified") unless ($year == int($year));
+	if ($year % 4 == 0) {
+		if ($year % 100 == 0) {
+			return ( (($year / 100) % 9 == 2) || (($year / 100) % 9) == 6);
+		} else {
+			return 1;
+		}
+	}
+	return 0;
+}
+
+=item getJulianDayFromMilankovich ($month, $day, $year) 
+
+Given C<$month>, C<$day>, C<$year>, a date according to the (proleptic) Milankovich calendar, returns
+the Julian Day, that is the number of days since January 1, 4713 BC on the proleptic Julian calendar.
+
+=cut
+
+sub getJulianDayFromMilankovich {
+	my ($month, $day, $year) = @_;
+
+	# validation
+	carp (__PACKAGE__ . "::getJulianDayFromMilankovich($month, $day, $year) : invalid date specified") unless ($year == int($year) && $month == int($month) && $day == int($day));
+	carp (__PACKAGE__ . "::getJulianDayFromMilankovich($month, $day, $year) : invalid date specified") unless ($month > 0 && $month < 13);
+	my @NUM_DAYS = isMilankovichLeap($year) ? (0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31) : (0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+	carp (__PACKAGE__ . "::getJulianDayFromMilankovich($month, $day, $year) : invalid date specified") unless ($day > 0 && $day <= $NUM_DAYS[$month]);
+
+	my $f = 1721425.5 + 365 * ($year - 1) + floor(($year - 1) / 4) + floor((367 * $month - 362) / 12) + $day;
+	if ($month > 2) {
+		if (isMilankovichLeap($year)) {
+			$f--;
+		} else {
+			$f -= 2;
+		}
+	}
+
+	# correction for prior century leap years
+	$f += -1 * floor(($year - 1) / 100) + floor( (2 * floor(($year - 1) / 100) + 6) / 9);
+	return $f;
+}
+
+=item getDeltaT ( $date )
+
+Give C<$date>, a JDate object with year between -1999 and +3000 on the (proleptic) Gregorian calendar,
+ returns Delta T, the offset (in seconds) between Dynamic Time and Universal Time
+Note that UT = TD - DeltaT
+These formulae are by Fred Espenak and Jean Meeus, see 
+http://eclipse.gsfc.nasa.gov/SEcat5/deltatpoly.html
+for more information
+
+=cut
+
+sub getDeltaT {
+	my $date = shift;
+	my $year = $date->getYearGregorian();
+	my $month = $date->getMonthGregorian();
+
+	# validation
+	carp (__PACKAGE__ . "::getDeltaT($year) : year outside of range") unless ($year > -2000 && $year < 3001);
+
+	
+	my $y = $year + ($month - 0.5) / 12;
+	if ($year < -500) {
+		return -20 + 32 * (($y - 1820) / 100) ** 2;
+	} elsif ($year < 501) {
+		return 10583.6 - 1014.41 * ($y / 100) + 33.78311 * ($y / 100) ** 2 - 5.952053 * ($y / 100) ** 3 - 0.1798452 * ($y / 100) ** 4 + 0.022174192 * ($y / 100) ** 5 + 0.0090316521 * ($y / 100) ** 6;
+	} elsif ($year < 1601) {
+		return 1574.2 - 556.01 * (($y-1000)/100) + 71.23472 * (($y-1000)/100) ** 2 + 0.319781 * (($y-1000)/100) ** 3 - 0.8503463 * (($y-1000)/100) ** 4 - 0.005050998 * (($y-1000)/100) ** 5 + 0.0083572073 * (($y-1000)/100) ** 6;
+	} elsif ($year < 1701) {
+		return 120 - 0.9808 * ($y - 1600) - 0.01532 * ($y - 1600) ** 2 + ($y - 1600) ** 3 / 7129;
+	} elsif ($year < 1801) {
+		return 8.83 + 0.1603 * ($y - 1700) - 0.0059285 * ($y - 1700) ** 2 + 0.00013336 * ($y - 1700) ** 3 - ($y - 1700) ** 4 / 1174000;
+	} elsif ($year < 1861) {
+		return 13.72 - 0.332447 * ($y - 1800) + 0.0068612 * ($y - 1800) ** 2 + 0.0041116 * ($y - 1800) ** 3 - 0.00037436 * ($y - 1800) ** 4 + 0.0000121272 * ($y - 1800) ** 5 - 0.0000001699 * ($y - 1800) ** 6 + 0.000000000875 * ($y - 1800) ** 7;
+	} elsif ($year < 1901) {
+		return 7.62 + 0.5737 * ($y - 1860) - 0.251754 * ($y - 1860) ** 2 + 0.01680668 * ($y - 1860) ** 3 - 0.0004473624 * ($y - 1860) ** 4 + ($y - 1860) ** 5 / 233174;
+	} elsif ($year < 1921) {
+		return -2.79 + 1.494119 * ($y - 1900) - 0.0598939 * ($y - 1900) ** 2 + 0.0061966 * ($y - 1900) ** 3 - 0.000197 * ($y - 1900) ** 4;
+	} elsif ($year < 1942) {
+		return 21.20 + 0.84493*($y - 1920) - 0.076100 * ($y - 1920) ** 2 + 0.0020936 * ($y - 1920) ** 3;
+	} elsif ($year < 1962) {
+		return 29.07 + 0.407*($y - 1950) - ($y - 1950) ** 2/233 + ($y - 1950) ** 3 / 2547;
+	} elsif ($year < 1987) {
+		return 45.45 + 1.067*($y - 1975) - ($y - 1975) ** 2/260 - ($y - 1975) ** 3 / 718;
+	} elsif ($year < 2006) {
+		return 63.86 + 0.3345 * ($y - 2000) - 0.060374 * ($y - 2000) ** 2 + 0.0017275 * ($y - 2000) ** 3 + 0.000651814 * ($y - 2000) ** 4 + 0.00002373599 * ($y - 2000) ** 5;
+	} elsif ($year < 2051) {
+		return 62.92 + 0.32217 * ($y - 2000) + 0.005589 * ($y - 2000) ** 2;
+	} elsif ($year < 2151) {
+		return -20 + 32 * (($y-1820)/100)**2 - 0.5628 * (2150 - $y);
+	} else {
+		return -20 + 32 * ($y-1820)/100  ** 2;
+	}
+}
+
+
+=item getMilankovichPascha ( $year )
+
+Wrapper sub for Milankovich calculations. Given a C<$year> AD, return the Pascha
+according to the Milankovich specification.
+
+The Milankovich Pascha is defined as 
+The Sunday after the midnight-to-midnight day at the meridian of the Church of the Holy Sepulchre in Jerusalem during which the first full moon after the vernal equinox occurs.
+
+I<Method for computing Milankovic Pascha>
+
+1. Compute the date and time of the Vernal Equinox for C<$year> (returns C<$EQ>, a Julian Day)
+2. Compute the date and time of the full moon that occurs after C<$EQ> (return C<$MOON>, a Julian Day in Dynamic Time)
+3. Get the Date part of C<$MOON> (returns C<$DAY>, C<$MONTH>, a date on the Julian calendar)
+4. Convert the time part of C<$MOON> to Universal Time using the polynomials here:
+	http://eclipse.gsfc.nasa.gov/SEcat5/deltatpoly.html
+5. Convert the Universal Time to local time at the Church of the Holy Sepulchre. For simplicity, assume
+  Holy Sepulchre is two hours ahead of UT (This is C<$TIME> in Hours.decimal)
+6. If C<$TIME> > 24, add one to C<$DAY> (note this may push C<$MONTH> up)
+7. Compute the next Sunday after C<$DAY> (C<$PDAY>). This is the date of Pascha.
+
+Returns a JDate object containing the Julian Day of the Milankovich Pascha
+
+B<NOTE>: the resulting JDate object is a Julian Day. Since you're working with the 
+Milankovich calendar, you will probably want the date on the Milankovich calendar.
+Use the getMilankovich... functions of the JDate class.
+
+=back
+
+=cut
+
+sub getMilankovichPascha {
+	my $year = shift;
+
+	# Milankovich calculations are really only valid up to the year 3000 AD 
+	carp (__PACKAGE__ . "::getMilankovichPascha($year) : year outside of range") unless ($year > 0 && $year < 3001);
+	my $ve = getVernalEquinox($year);
+
+	my $moon = getNextFullMoon($ve);
+	my $start = $ve; # iterator :(
+	while ($moon->getJulianDay() < $ve->getJulianDay()) {
+		$start = $start->addDays(1);
+		$moon = getNextFullMoon($start);
+	}
+	my $apparentMoon = new Ponomar::JDate($moon->getJulianDay() - getDeltaT($moon) / (60 * 60 * 24) + 2.0 / 24); # this is the time when the full moon occured at Jerusalem
+	return $apparentMoon->addDays(7 - $apparentMoon->getDayOfWeek());
+}
+
+1;
 
 __END__
 
