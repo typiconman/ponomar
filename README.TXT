@@ -45,6 +45,6 @@ java Ponomar.Main
 
 and the main Ponomar interface should appear.
 
-5) Additional Ponomar Project software -- fonts and keyboard drivers for working with Church Slavonic texts may be found at http://www.ponomar.net/cu_support.html
+5) Additional Ponomar Project software -- fonts and keyboard drivers for working with Church Slavonic texts may be found at http://www.ponomar.net/cu_support.html .
 
 
