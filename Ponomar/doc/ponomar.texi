@@ -1,0 +1,521 @@
+
+\input texinfo.tex    @c -*-texinfo-*-
+
+@c %**start of header
+@setfilename ponomar.info
+@settitle Ponomar
+@documentencoding UTF-8
+@include cyrillic.itexi
+
+@c updated this information
+@set UPDATED @today{}
+@set VERSION 2.0
+
+@copying
+This manual (version @value{VERSION}, @value{UPDATED}) describes
+the Ponomar data structure as used by the Ponomar API.
+
+Ponomar is a repository of liturgical data with an underlying API for 
+computing liturgical information in the Byzantine Rite. This document
+addresses the data structure @emph{only}. The workings of the API are
+documented in a separate file available at @url{http://www.ponomar.net/files/ponomar.pdf}.
+
+Copyright @copyright{} 2010, 2015 Aleksandr Andreev and Yuri Shardt.
+
+@quotation
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with the Front-Cover Texts being ``Ponomar: A Data
+Repository for Liturgical Computing'',
+and with no Back-Cover Texts.  A copy of the license
+is included in the section entitled ``GNU Free Documentation
+License''.
+@end quotation
+@end copying
+
+@titlepage
+@title Ponomar
+@subtitle A Data Repository for Liturgical Computing
+@subtitle Documentation version @value{VERSION}, @value{UPDATED}
+
+@author Aleksandr Andreev
+@author Yuri Shardt
+
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+
+@end titlepage
+
+@c So the toc is printed at the start.
+@contents
+@node Top
+@ifnottex
+@top Ponomar Data Repository
+Documentation for Ponomar Data Repository
+@end ifnottex
+@menu
+* Introduction::
+* Day files::
+* Commemoraiton files::
+* Liturgical commands::
+* Transliteration policy::
+* References::
+@end menu
+
+@node Introduction
+@chapter Introduction
+Ponomar (Пономарь) is a liturgical computing data repository with an underlying API
+(Application Programming Interface). The present document describes the data storage
+format for the liturgical data in Ponomar. All data are stored in XML format.
+
+The XML format used to store the data is an evolving standard. All portions of this 
+data format are subject to change at any time.
+
+Ponomar is provided in @strong{AS-IS condition}, with ABSOLUTELY NO WARRANTY,
+not even the implied warranties of MERCHANTABILITY or FITNESS FOR A PURPOSE.
+@cindex warranty
+@cindex XML
+
+@node Day files
+@chapter Day files
+
+The @samp{DAY} files contain an ordered list of @samp{SId}s and @samp{CId}s of the commemorations that are to
+be celebrated on a given day. There are two types of files: those for the Menaion (fixed commemorations)
+and the Triodion/Pentecostarion (movable commemorations). 
+The Menaion commemoration files are stored in the path @indicateurl{/languages/XX/xml/mm/dd.xml},
+where @samp{XX} is the ISO 639-2 language code, @samp{mm} is the two digit month number and @samp{dd} is the 
+two digit day number.
+
+Each commemoration is referred using the @samp{SAINT} tag. Each @samp{SAINT} tag has the following attributes
+(attributes in @emph{italics} are optional):
+
+@itemize @bullet
+@item @samp{SId} -- one (or more) saint Id's (possibly separated by commas).
+Any @samp{SId} uniquely identifies a saint; commemorations that refer to the same saint use the same @samp{SId}.
+Some @samp{SId}s are reserved @pxref{List of reserved SId's}.
+
+@item @samp{CId} -- one unique @samp{CId}, which uniquely identifies a commemoration
+
+@item @samp{@var{Src}} -- the source of this commemoration :
+@itemize @bullet
+@item OEcumenical (no value or empty value)
+@item Greek sources (@samp{el})
+@item Russian sources (@samp{ru})
+@item Roman sources (@samp{la})
+@item possibly others
+@end itemize
+
+@item @samp{@var{Cmd}} -- a series of liturgical commands,
+which specify rules for when the commemoration occurs; @xref{Liturgical commands}.
+@end itemize
+
+There should not be any language specific information (e.g. names of the commemoration) in the @samp{DAY}
+file. Furthermore, since this file is ordered, if there is a need to change the ordering or add more
+commemorations in a given language, then the complete file must be recreated at the appropriate
+language level.
+
+@strong{Proposed change}: It is proposed that the language-specific @samp{DAY} files be eliminated
+and that all month/day data be stored at the root level.
+The implication of this is that the order in which the saints are displayed will no longer be 
+customizable by language.
+A user can still select if he wishes to display only the OEcumenical saints, or other (@samp{el}, @samp{ru},
+ @samp{la}, etc.) saints, and any saint can be displayed regardless of the language of the user's interface.
+
+@cindex saint, language, interface, date
+@section Examples
+@subsection Menaion files
+
+The following example is for January 1 (old style). The @samp{SId} and @samp{CId} values
+ are for demonstration purposes only. These files would be placed in the folder @samp{01} (for January)
+and labeled based on the date (@samp{01.xml}).
+
+@example
+<DAY>
+<SAINT SId="0" CId="F0" Cmd="dow == 0 || dow == 1"/>
+<SAINT SId="0" CId="F6" Cmd="dow == 6"/>
+<SAINT SId="0" CId="134" />
+<SAINT SId="123" CId="373" />
+<SAINT SId="4810" CId="4810" Src="ru" />
+<SAINT SId="4891" CId="4891" Src="el" />
+<SAINT SId="4732" CId="4732" Src="el" />
+<SAINT SId="010106" CId="010106" Src="ru" />
+<SAINT SId="135" CId="135" Src="la" />
+</DAY>
+@end example
+
+@subsection Triodion / Pentecostarion files
+
+The following example is for the Second Sunday of Lent. The @samp{SId} and @samp{CId} values
+ are for demonstration purposes only. These files would be located in the directories @samp{triodion} 
+(for Lent) and @samp{pentecostarion} (for Sunday of Pascha and after) and labeled based on the distance
+ from Pascha in days (@samp{35.xml}, in this example).
+
+@example
+<DAY>
+<SAINT SId="5" CId="35" />
+<SAINT SId="543" CId="543" />
+</DAY>
+@end example
+
+@strong{Note}: for reasons of convention, the day of Pascha itself is considered the first day after Pascha.
+@xref{Liturgical commands} for more information.
+
+@node List of reserved SId's
+@section List of reserved @samp{SId}s
+
+Generally, @samp{SId} values need to be unique for a Saint. Any Saint that has only one commemoration
+may use the same value both for the @samp{SId} and for the @samp{CId} of the lone commemoration.
+The following @samp{SId} values are reserved for specific categories of commemorations:
+
+@itemize @bullet
+@item @samp{0} -- not used
+@item @samp{1} -- Indicates a feast of the Lord or the Cross
+@item @samp{2} -- Indicates a feast of the Theotokos
+@item @samp{3} -- Indicates an Icon of the Theotokos
+@item @samp{4} -- reserved for future use
+@item @samp{5} -- indicates a commemoraiton that refers to no saint, for example, a day before Pascha
+or after Pentecost
+@item @samp{6} - @samp{9} -- reserved for future use
+@end itemize
+
+@node Commemoration files
+@chapter Commemoration files
+
+For each of the commemorations given in a @samp{Day} file, a @samp{Commemoraiton} file is
+created. All @samp{Commemoration} files (both for Menaion-based and Triodion/Pentecostarion-
+based commemoraitons) are located in the @indicateurl{Ponomar/languages/XX/xml/lives/} 
+directory under the filename @samp{NNNN.xml}, where @samp{NNNN} is the @samp{CId} or
+@samp{SId} of the commemoration. Note that @samp{NNNN} needs to be numeric, but need not 
+be limited in the number of digits; there are no limiations on the @samp{SId} or @samp{CId}
+values beyond the reserved list of @samp{SId}s (@pxref{List of reserved SId's}).
+
+Since for many commemorations, there is a lot of language independent information
+(scriptural lessons and service rank), @samp{commemoration} files may be stored at the root level.
+Information from @samp{commemoration} files is read bottom-up, meaning that language-specific files
+can append (and overwrite) root-level file data. This applies primary to Octoechoes files.
+
+The following tags and attributes are placed in the @samp{commemoration} files (with optional attributes
+indicated in @emph{italics}):
+
+@itemize @bullet
+@item Tag @samp{NAME} -- contains information about the name of the commemoration. Only one
+@samp{NAME} tag may be specified in a @samp{commemoration} file. Attributes:
+@itemize @bullet
+@item @samp{Nominative}  -- the full name of the commemoration used in the liturgical calendar
+Note that while this attibute is called ``Nominative'', it may not actually be in the Nominative case,
+depending on the grammar of the language in question. @strong{Note}: none of the attributes of the 
+@samp{NAME} tag may be used to store dates of repose or any other information. No HTML or 
+other markup is allowed in these attributes. Names are always given using the conventions 
+for transliterating Greek and Slavonic materials; @pxref{Transliteration policy}.
+@item @samp{Short} -- the short form of the name (used for indexing)
+@item @samp{@var{Genetive}} -- the form of the commemoration used in headings (where different from @samp{Nominative}). Note that this is usually in the Nominative case (despite the name of this Attribute).
+@item @samp{@var{ShortF}} -- which gives the form for referencing the propers for the
+commemoration, where this is different from @samp{Short}; in English, this is the form @samp{for XXX}.
+@end itemize
+@item Tag @samp{@var{INFO}}, which contains information about the commemoration, 
+which can then be used to create automatic dates and process queries. Only one @samp{INFO} tag
+may be specified; the following attributes  have been defined so far (others can be added later):
+@itemize @bullet
+@item @samp{@var{Year}} -- for commemorations that are not saints -- the generic year of this event
+@item @samp{@var{BirthDate}} -- date of the birth of this saint, if known, 
+in the format @samp{MM-DD-YYYY [BC]}. @strong{Note} that if the month or date are unknown, only
+the year may be specified.
+@item @samp{@var{ReposeDate}} -- date of the repose of this saint, if known, in the format 
+@samp{MM-DD-YYYY [BC]}. 
+@item @samp{@var{ReposeCentury}} -- century of repose, if known. @strong{Note} that specifying both
+@samp{ReposeCentury} and @samp{ReposeDate} will result in a runtime error.
+@item @samp{@var{GlorificationDate}} -- date of glorification, if known
+@item @samp{@var{BirthPlace}} -- place of birth, if known
+@item @samp{@var{ReposePlace}} -- place of repose, if known
+@item @samp{@var{ShrinePlace}} -- place of shrine, if known
+@item @samp{@var{BelongsTo}} -- indicates the @samp{CId}(s) of the Synaxis(es) to which this saint belongs
+ (may be separated by commas).
+@end itemize
+@item @samp{@var{LIFE}} -- gives the Life or @emph{vita} for the commemoration. Multiple @samp{LIFE}
+tags may be specified. The following attributes must be included:
+@itemize @bullet
+@item @samp{Id} -- gives the code for the source of the life
+@item @samp{Copyright} -- gives the copyright information about the source of the life.
+@item The Life itself is included between the tags, that is, @samp{<LIFE>text</LIFE>}.
+Unicode should be used throughout in UTF-8 encoding and basic HTML formatting is permitted 
+(but must be escaped? @strong{Clarify this!}). References to Scriptural passages and other commemoration
+ should eventually be linked together, but at present the feature is not available. Concerning
+the usage of Unicode, see @xref{Encoding Unicode strings}.
+@end itemize
+@item @samp{service} -- contains all the liturgical propers for a given commemoration. The tags that may 
+be placed inside the @samp{service} tag are defined below @pxref{Service tag contents}. In principle,
+multiple @samp{service} tags may be placed inside a @samp{commemoration} file; in practice,
+selection from among multiple available liturgical services is presently not supported by the API.
+The following attributes may be used in the @samp{service} tags:
+@itemize @bullet
+@item @samp{@var{Type}} -- indicates the rank of the commemoration. Ranks are numerical values
+and are described in a following section (@pxref{Liturgical ranks}).
+@item @samp{@var{Cmd}} -- a liturgical command (@pxref{Liturgical commands}).
+@item @samp{@var{Transfer}} -- indicates that a service is transferred to (possible values):
+@itemize @bullet
+@item @samp{1} -- Compline on that day
+@item @samp{-1} -- Previous day
+@item @samp{algorithmic} -- to some other day (like the closest Saturday or Sunday) 
+@end itemize
+@item @samp{@var{LinksTo}} -- links the service to another @samp{service} 
+(for double commemorations or other linkages).
+@end itemize
+@end itemize
+
+@section Examples
+@subsection Commemoration file
+
+Here is an example of a file used to store commemoration information for a feast of the Lord:
+
+@example
+<SAINT>
+ <NAME Nominative="Church New Year" Short="Church New Year"/>
+ <LIFE Id="bulgakov" Copyright="Bulgakov Handbook trans. by John Doe">
+   Lorum ipsum dolor sit amet
+ </LIFE>
+ <SERVICE Type="4">
+...
+ </SERVICE>
+</SAINT>
+@end example
+
+Note that the contents of the @samp{service} tag are given below (@pxref{Service tag contents}).
+
+@subsection Saint file
+
+Here is an example of a file used to store information about a Saint that has multiple commemorations:
+
+@example
+<SAINT>
+ <NAME Nominative="St. Symeon Stylites, the Elder" Short="Symeon" 
+     ShortF="for St. Symeon"/>
+  <INFO BirthDate="388" ReposeDate="9-2-459" 
+     ReposePlace="between Aleppo and Antioch" BelongsTo="98501"/>
+  @r{@samp{98501} is the code for the Synaxis of the Ascetics on Cheese Saturday}
+  <LIFE Id="bulgakov" Copyright="Bulgakov Handbook trans. by John Doe">
+   The Monk Simeon the Stylite was born in the ...
+  </LIFE>
+ <SERVICE Type="1" LinksTo="09426"/>
+  @r{@samp{09426} is the code for the Church New Year.}
+</SAINT>
+@end example
+
+@node Liturgical ranks
+@section Liturgical ranks
+
+The following liturgical ranks are used in the @samp{Type} attribute of the @samp{service} tag.
+The same values are also used in the @var{dRank} global variable (@pxref{Liturgical commands}).
+
+@itemize @bullet
+@item @samp{8} -- Feast of the Lord
+@item @samp{7} -- Feast of the Theotokos
+@item @samp{6} -- Great Saint (Peter and Paul, John the Theologian, etc.)
+@item @samp{5} -- Vigil-rank commemoration
+@item @samp{4} -- Polyeleos-rank commemoration
+@item @samp{3} -- Doxology-rank commemoration
+@item @samp{2} -- Hexahymnographical commemoration
+@item @samp{1} -- Simple commemoration
+@item @samp{0} (or no value) -- no service
+@item @samp{-1} -- Alleluia or Troparion possible
+@item @samp{-2} -- Double commemoration that may be split
+@end itemize
+
+@strong{Note}: it is not entirely clear to me as to the difference between @samp{6} and @samp{5}, and so 
+it is proposed to eliminate @samp{6}, merging it with @samp{5}.
+
+@node Service tag contents
+@section Service tag contents
+
+The @samp{service} tag contains all of the liturgical propers for a given commemoration. Like a liturgical
+service, the @samp{service} tag contains various @emph{offices}, indicated by the use of tags.
+The following office tags are supported:
+
+@itemize @bullet
+@item @samp{Vespers} -- indicates propers for Vespers
+@item @samp{Matins} -- indicates propers for Matins
+@item @samp{Liturgy} -- indicates propers for the Divine Liturgy
+@end itemize
+
+Liturgical propers are placed within each of the individual office tags to which they apply. 
+Presently, the only propers that are supported are the liturgical lessons (readings), specified by the 
+@samp{reading} tag. The @samp{reading} tag may have the following attributes:
+
+@itemize @bullet
+@item @samp{Type} -- indicates the type of the reading. For Liturgy, this may take
+one of two possible values, @samp{apostol} or @samp{gospel}, which indicate the
+Epistle and Gospel lessons, respectively. Outside of the Liturgy, @samp{apostol}
+and @samp{gospel} may also be used; Old Testament passages are just given 
+numerical values for @samp{Type} in the order in which they appear in the office.
+@item @samp{Reading} -- the scriptural passage to be read, in the format 
+@samp{Book name_chapter:start-end}. The list of book name abbreviations is provided
+in the Appendix. Example: @samp{I Tim_2:1-7}.
+@item @samp{@var{Pericope}} -- if applicable, the pericope number according to the Slavonic books.
+The character sequence @samp{(mid.)} may be used to indicate a pericope that starts from the 
+midpoint.
+@end itemize
+
+@subsection Example
+
+The following example illustrates how the readings are specified:
+
+@example
+<SERVICE Type="4">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Isa_61:1-9"/>
+<SCRIPTURE Type="2" Reading="Lev_26:3-12, 14-17, 19-20, 22, 33, 40-41"/>
+<SCRIPTURE Type="3" Reading="Wisd_4:7-15"/>
+</VESPERS>
+<LITURGY>
+<SCRIPTURE Type="apostol" Reading="I Tim_2:1-7" Pericope="282"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:16-22" Pericope="13"/>
+</LITURGY>
+</SERVICE>
+@end example
+
+Note that pericopes are only defined for Epistle and Gospel lessons. Using a @samp{pericope} attribute
+when @samp{Type} is something other than @samp{apostol} or @samp{gospel} will produce a runtime
+error.
+
+@node Liturgical commands
+@chapter Liturgical commands
+
+Yuri may have written this seciton in a separate document earlier?
+
+@node Transliteration policy
+@chapter Transliteration policy
+
+Personal names that occur in the Menologion of the Orthodox Church come from a variety of ethnic-linguistic backgrounds. A standard is necessary to render these names in English. Presently, different authors / sources render names based on different linguistic backgrounds and using a mixture of transliteration systems. Thus, it is possible to find the same name written in English as: George, Georgios, Georgius, Georgiy, Georgij, Georgy, Yuri, Yurij, Yury, Georgije, etc. Nonetheless, in liturgical languages used by the Orthodox Church we generally see a tendency to standardize the rendering of names based on the idiomatic rules of the language; thus, for example, Russians use the Russian name Afanasy when speaking of St. Athanasius the Great, of St. Afanasy the Confessor of Kovrov, or of Atanasije (Jevtic), the well-known Serbian theologian. 
+
+For purposes of rendering proper names in the Ponomar software and in the English translation of the Typicon, we propose to adopt, with some exceptions, the “standardized etymological approach”. This approach guarantees that:
+
+@itemize @bullet
+@item The etymology (and thus meaning) of any name is obvious
+@item The spelling of the name follows standard rules for idiomatic English
+@item The same name is always rendered in an identical manner, regardless of the subject's ethnic-linguistic background
+@item The pronunciation of the name follows accepted conventions for English pronunciation (but does not necessarily reflect the pronunciation of the name in the subject's native language)
+@end itemize
+
+@section Standardized Etymological Approach
+
+The Standardized Etymological Approach can be described in the following steps:
+
+@enumerate
+@item Is the subject a well-known person with a clearly established name in English?
+ In this case, the established name is used. For example, Apostle Peter, not Pyotr, Pjotr,
+ Petros, or Boutros. Note that this name should always be used, regardless of other conventions
+ implied by the SEA. Thus, we write ``Ivan the Terrible'', even though rule 2 below would
+ suggest ``John the Terrible''. We do this because “Ivan the Terrible” is an established usage
+ in English sources.
+@item Established English usage will be taken as given in the 1939 
+edition of the Encyclopaedia Britannica. If the term does not occur in the 1939 edition,
+ but occurs in a later edition, then the establish usage will be taken as given in the earliest 
+edition where the term appears.
+@item Is the subject's name a clearly established name in English? 
+Then this clearly established name should be used. Thus, Peter of Krutitsa, 
+not Pyotr of Krutitsa; Patriarch John of Antioch, not Youhanna of Antioch.
+@item All other names should be resolved to their etymological source. 
+Thus, for names of Greek origin, the Greek form of the name should be used as the basis 
+of transliteration; for names of Russian origin, the Russian form should be used.
+ Note that in the Menologion, names may also be of Latin, Georgian, or Syrian origin.
+@item The appropriate standards for transliterating terms into English should then be applied.
+See the tables @xref{Transliteration of Greek Names and Terms into English} or 
+@xref{Transliteration of Russian Names and Terms into English}.
+@end enumerate
+
+@section Examples
+
+The following examples are illustrative:
+
+@itemize @bullet
+@item Савва Звенигородский, a 15th Century Russian saint. 
+The name Savva is Greek in origin – Σάββας.
+Following the conventions for transliterating Greek into English, it should be rendered as Sabbas of Zvenigorod. 
+Note that this holds true for all persons named Sabbas; 
+thus, we have Sabbas the Sanctified, Sabbas the Goth. However, Sava (Sabbas) of Serbia, 
+since Sava is established English usage in this case (however, we will place Sabbas in parentheses).
+
+@item Тихон Задонский. The name Tychon is Greek in origin – Τυχων. Following the conventions for transliterating Greek into English, it should be rendered as Tychon of Zadonsk. Note that this is true for all persons named Tychon: thus, we have St Tychon of Cyprus (June 16). However, established English usage is Saint Tikhon,
+ Patriarch of Moscow (as given in the Encyclopædia Britannica). In this instance, we write St. Tikhon (Tychon), putting the etymologically correct spelling in parentheses.
+
+@item Мчч. Борис и Глеб. These names are of Slavic origin, and so following the conventions for transliterating Russian into English, should be written as Boris and Gleb (not Hleb). Note also that this applies to Vladimir (not Volodymir or Wladimir); Igor; etc.
+
+@item Aphrahat. This name is Syriac in origin. Following the conventions of transliterating Syriac into English, it should be rendered as Aphrahat. (Here it is proposed that the name not be hellenized and then latinized and then transliterated as Aphraates).
+@end itemize
+
+A special note about Biblical names:
+
+In general, the Greek versions of Biblical names should be used, based on a transliteration of the Greek
+ name as it occurs in the LXX into English.
+Thus, Sophonias (not Zephanaiah); Elias (not Elijah). Exceptions are made in cases where the
+ Biblical name has a well-established form in English.
+ Thus, Abraham (not Abraam); Jacob (not Iacobus); Joshua (not Iesus or Jesus), son of 
+Nun.@footnote{This rule is applied to all persons with this name; thus, Joshua of Anzer Island, not Jesus of Anzer Island.}
+
+@node Encoding Unicode strings
+@section Encoding Unicode strings
+
+Unicode is a computing industry standard for the consistent encoding, representation, and handling of text expressed in most of the world's writing systems. Unicode has become the most common method for representing text on the computer. As a matter of policy throughout the Ponomar Project, all text should be represented in Unicode. Any text in legacy encoding schemes -- be they encoded according to some national standard or a private, @emph{ad hoc} codepage -- should be converted to Unicode. This section of the documentation describes a number of additional policies that have been adopted in order to correctly implement Unicode in the Ponomar data repository.
+
+@subsection Encoding Issues and BOM
+
+All text should be encoded in UTF-8. XML documents may include an XML Prolog that explicitly specifies the UTF-8 encoding, as follows:
+
+@example
+<?xml version="1.0" encoding="UTF-8"?>
+@end example
+
+However, the use of the XML Prolog is optional. If an XML Prolog is not specified in an XML file, the encoding is automatically assumed to be UTF-8.
+
+Implementations using the Ponomar data repository should be UTF-8-@emph{aware}. For example, in the Perl programming language, it may be necessary to specify the pragma @code{use utf8} and to open files with the mode @code{<:encoding(UTF-8)}. CGI and PHP scripts processing Ponomar data should return the HTTP header @code{Content-type: text/html; charset=utf-8}. While it is possible to convert Ponomar data from UTF-8 to other encodings, this is discouraged.
+
+The @strong{byte order mark} (BOM) is the Unicode character U+FEFF that is used at the beginning of a text stream to indicate its endianness. The BOM has no meaning in UTF-8 since UTF-8 always has the same byte order. Furthermore, the presence of a BOM may interfere with certain operations involving text processing by some APIs relying on Ponomar data (for example, the presence of a BOM may break the @code{#!} placed at the start of scripts or the discovery of an XML Prolog). Therefore, the use of U+FEFF in Ponomar data files is @strong{forbidden}. Some Ponomar API text processing implementations will automatically strip any BOM from XML files.
+
+Users are discouraged from editing Ponomar data files in certain Microsoft programs (such as Windows Notepad) that may automatically add the BOM to UTF-8 encoded text. If this is unavoidable, users should strive to remove the BOM from edited files before committing them to the Ponomar data repository.
+
+@subsection Forbidden characters
+
+Certain Unicode characters are forbidden and may not be used within XML files. These forbidden characters are listed in [@cite{utr20}]; see Section 3: ``Characters not Suitable for use With Markup''. These include the line and paragraph separator characters U+2028 and U+2029 as well as characters designating bidirectional text (for data in Arabic and Hebrew). In addition to characters listed in [@cite{utr20}], it is forbidden to use U+FEFF Byte Order Mark in Ponomar data files (for reasons explained above). The following Cyrillic characters are also forbidden:
+
+@itemize @bullet
+@item U+0478 and U+0479 (digraph Uk) -- these characters have an ambiguous representation and should not be used. 
+@item U+2DF5 Combining Letter Es-Te -- deprecated; use instead the sequence U+2DED U+2DEE.
+@end itemize
+
+Furthermore, the use of Unicode @emph{variation selectors} except for encoding variation sequences standardized in Unicode is forbidden. Data editors should not rely on variation selectors since they are not intended to be used as a general code extension mechanism. Instead, glyph variants may be accessed from the Private Use Area in accordance with [@cite{puapolicy}] via the use of stylistic alternatives or stylistic sets (@strong{TODO}: this needs to be fleshed out).
+
+@subsection Normalization
+
+Some Unicode strings can be represented by several different Unicode codepoint sequences. Each of these sequences has the same semantic meaning but is encoded differently. For example, the Cyrillic letter @samp{й} may be encoded as U+0439 or as the sequence U+0438 U+0306. The existence of multiple representations is problematic for APIs performing operations involving string matching. Unicode has a mechanism, called Unicode Normalization Forms, to resolve these issues. Following the recommendations set forth in [@cite{W3CCHARMOD}], it is required that all data in the Ponomar repository be stored and exchanged in Unicode Normalization Form C (NFC). Generally, this means that any character sequence involving combining characters be replaced, as far as possible, by a canonically equivalent precomposed character. Some Ponomar APIs, particularly in Perl, will automatically convert data files to the NFC form (in Perl, this is done using the @code{Unicode::Normalize} module).
+
+The use of character escape sequences, such as encoding the Cyrillic letter @samp{й} as the hexadecimal HTML entity @code{&#x0439;} should be avoided since such sequences are not XML namespace-specific.
+
+
+@node References
+@chapter References
+
+
+@table @cite
+
+@item puapolicy
+Aleksandr Andreev, Yuri Shardt and Nikita Simmons. Private Use Area (PUA) Allocation Policy. 12 August 2015. URL: @url{http://www.ponomar.net/files/pua_policy.pdf}.
+
+@item utr20
+Martin D@"urst and Asmus Freytag, @emph{edd}. Unicode in XML and other Markup Languages. 24 January 2013. Unicode Technical Report @hashchar{}20. URL: @url{http://www.unicode.org/reports/tr20/}.
+
+@item W3CCHARMOD
+Addison Phillips, @emph{ed}. Character Model for the World Wide Web:
+String Matching and Searching. 21 July 2015. W3C Recommendation. URL: 
+@url{http://www.w3.org/TR/charmod-norm/}.
+
+@end table
+
+@node Index
+@unnumbered Index
+
+@c @printindex
+
+@include fdl.itexi
+
+@bye

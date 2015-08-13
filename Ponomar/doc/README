@@ -1,0 +1,9 @@
+Documentation for the Ponomar software.
+
+Requirements:
+texinfo
+
+To compile:
+texi2any --pdf ponomar.texi
+
+
