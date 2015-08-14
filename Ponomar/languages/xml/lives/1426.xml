@@ -1,5 +1,5 @@
 <SAINT>
-<SERVICE Type="1" Tie="09426">
+<SERVICE Type="-2" Tie="09426">
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258"/>
 <SCRIPTURE Type="gospel" Reading="Mt_11:27-30" Pericope="43"/>

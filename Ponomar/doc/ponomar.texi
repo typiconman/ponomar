@@ -225,13 +225,14 @@ the year may be specified.
 @item @samp{@var{ReposeDate}} -- date of the repose of this saint, if known, in the format 
 @samp{MM-DD-YYYY [BC]}. 
 @item @samp{@var{ReposeCentury}} -- century of repose, if known. @strong{Note} that specifying both
-@samp{ReposeCentury} and @samp{ReposeDate} will result in a runtime error.
+@samp{ReposeCentury} and @samp{ReposeDate} will result in a runtime error. Actually, @samp{@var{ReposeCentury}} is a general ``catch-all'' category for anything that cannot be formatted as a date or year, for example, things like @samp{c. 450} (where @samp{c} stands for @emph{circa}).
 @item @samp{@var{GlorificationDate}} -- date of glorification, if known
 @item @samp{@var{BirthPlace}} -- place of birth, if known
 @item @samp{@var{ReposePlace}} -- place of repose, if known
 @item @samp{@var{ShrinePlace}} -- place of shrine, if known
 @item @samp{@var{BelongsTo}} -- indicates the @samp{CId}(s) of the Synaxis(es) to which this saint belongs
  (may be separated by commas).
+@item @samp{@var{Note}} -- may be used to place additional information, which may be ignored by some processors but placed by others in  a footnote.
 @end itemize
 @item @samp{@var{LIFE}} -- gives the Life or @emph{vita} for the commemoration. Multiple @samp{LIFE}
 tags may be specified. The following attributes must be included:
@@ -259,10 +260,26 @@ and are described in a following section (@pxref{Liturgical ranks}).
 @item @samp{-1} -- Previous day
 @item @samp{algorithmic} -- to some other day (like the closest Saturday or Sunday) 
 @end itemize
-@item @samp{@var{LinksTo}} -- links the service to another @samp{service} 
+@item @samp{@var{Tie}} -- links the service to another @samp{service} 
 (for double commemorations or other linkages).
 @end itemize
 @end itemize
+
+Commemorations may be empty files containing little but the names of the saint. In many instances, such as when a saint is commemorated as part of a greater Synaxis and no information is available for the saint apart from the greater commemoration, the saint's commemoration file should simply link to the greater commemoration file. The linkage is provided via the @samp{<REF>} tag:
+
+@example
+<REF CId="@var{CId}"/>
+@end example
+
+@strong{Note}: even if no information is available for the saint apart from the greater commemoraiton, saint files should nonetheless be created for this saint and should contain, as a minumum, the @samp{<NAME>} and @samp{<REF>} tags. The presence of these tags assure that the saint will be correctly indexed.
+
+@strong{Note also}: the @samp{<REF>} tag may also be used to link commemorations to external databases. For example, all New Martyrs and Confessors of Russia should be linked to the database hosted by the St. Tikhon's Orthodox Humanitarian University [@cite{pstgu}]. This is accomplished by specifying at @samp{Type} attribute for the @samp{<REF>} tag and then in the @samp{CId} attribute specifying the unique identifier in the external database. For example:
+
+@example
+<REF Type="pstbi" CId="HYZ9E..."/>
+@end example
+
+In the futre, these @samp{<REF>} tags may be used to automatically update or populate our data from external sources.
 
 @section Examples
 @subsection Commemoration file

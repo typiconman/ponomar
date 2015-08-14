@@ -1,3 +1,7 @@
 <SAINT>
-<NAME Nominative="Holy Martyrs Callista and her brothers Evodus and Hermogenes, Christians of Nicomedia († 309)" Short="Holy Martyrs"/>
-<SERVICE Type="0"/></SAINT>
+<NAME Nominative="Martyr Callista and her half-brothers Evodus and Hermogenes" Short="Holy Martyrs"/>
+<INFO ReposeDate="309" ReposePlace="Nicomedia"/>
+<LIFE Id="bulgakov" Copyright="©  1997  by translator Fr. S. Janos.">
+The Holy Martyrs Callista and her brothers Evodos and Hermogenes, Christians of Nicomedia, were brought to trial before the pagan governor for confessing their faith in Christ. Having refused to offer sacrifice to idols, they were cut down by the sword (+ 309). 
+</LIFE>
+</SAINT>

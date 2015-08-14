@@ -1,3 +1,5 @@
 <SAINT>
-<NAME Nominative="Martyr Aithalus the Deacon" Short="Martyr Aithalus"/>
-<SERVICE Type="0"/></SAINT>
+<NAME Nominative="Martyr Aithalas the Deacon" Short="Aithalus"/>
+<INFO ReposeDate="330" ReposePlace="in Persia under Shapur II" Note="see November 3"/>
+<REF CId="2478"/>
+</SAINT>
