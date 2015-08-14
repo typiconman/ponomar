@@ -280,6 +280,16 @@ sub startElement {
 			@{ $self->{Name} }{keys %attrs} = values %attrs;
 			last SWITCH;
 		}
+		if ($element eq "INFO") {
+			@{ $self->{Info} }{keys %attrs} = values %attrs;
+			last SWITCH;
+		}
+		if ($element eq "REF") {
+			unless (defined $attrs{Type}) {
+				$self->{Ref} = $attrs{CId};
+			}
+			last SWITCH;
+		}
 		if ($element eq "SERVICE") {
 			$self->{Type} = $attrs{Type};
 			last SWITCH;

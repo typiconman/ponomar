@@ -156,8 +156,9 @@ sub startElement {
 	SWITCH: {
 		if ($element eq "SAINT") {
 			my $CId = $attrs{CId};
+			my $menologion= defined $attrs{Src} ? $attrs{Src} : "";
 			# create a new Saint object
-			my $saint = Ponomar::Saint->new( CId => $CId, Src => $src, Date => $self->{_date}, Lang => $self->{_lang}, GS => $GS); #ponomar => $self 
+			my $saint = Ponomar::Saint->new( CId => $CId, Src => $src, Date => $self->{_date}, Lang => $self->{_lang}, GS => $GS, Menologion=> $menologion ); #ponomar => $self 
 			push @{ $self->{_saints} }, $saint;
 			last SWITCH;
 		}
