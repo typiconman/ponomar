@@ -232,6 +232,7 @@ the year may be specified.
 @item @samp{@var{ShrinePlace}} -- place of shrine, if known
 @item @samp{@var{BelongsTo}} -- indicates the @samp{CId}(s) of the Synaxis(es) to which this saint belongs
  (may be separated by commas).
+@item @samp{Male} -- is @samp{1} if the saint is male and @samp{0} if the saint is female; this important parameter is used in generating lists of saint names.
 @item @samp{@var{Note}} -- may be used to place additional information, which may be ignored by some processors but placed by others in  a footnote.
 @end itemize
 @item @samp{@var{LIFE}} -- gives the Life or @emph{vita} for the commemoration. Multiple @samp{LIFE}
