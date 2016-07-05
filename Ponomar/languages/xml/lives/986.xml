@@ -2,7 +2,7 @@
 <SERVICE>
 <LITURGY Cmd="nday &lt; -49 || nday &gt; 7 || nday == -21">
 <SCRIPTURE Type="apostol" Reading="Eph_5:9-19" Pericope="229"/>
-<SCRIPTURE Type="gospel" Reading="Mt_4:25-5:12" Pericope="10"/>
+<SCRIPTURE Type="gospel" Reading="Mt_4:25-5:12a" Pericope="10"/>
 </LITURGY>
 </SERVICE>
 </SAINT>
