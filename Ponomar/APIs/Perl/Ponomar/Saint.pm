@@ -25,6 +25,7 @@ BEGIN {
 	@GLOBALS = qw /dow doy nday Year GS Tone dRank/;	
 }
 our ($dow, $doy, $nday, $ndayP, $ndayF, $dRank, $Year, $language, $GS);
+my $readLife = 0;
 
 =head3 METHODS
 
@@ -257,7 +258,11 @@ sub default {
 }
 
 sub text {
-	## FIXME: LIFE SHOULD BE READ HERE
+	my ($parseinst, $data) = @_;
+	if ($readLife) {
+			$self->{Life}->{Text} .= ($data);
+			$readLife--;
+	}
 	return;
 }
 
@@ -338,6 +343,13 @@ sub startElement {
 		if ($element eq "NONE") {
 			$self->{_whichService} = 'none';
 			$self->addService('none');
+			last SWITCH;
+		}
+		if ($element eq "LIFE") {
+			delete $attrs{Cmd};
+			$readLife++;
+			$self->{Life}->{keys %attrs} = values %attrs;
+			$self->{Life}->{Text} = "";
 			last SWITCH;
 		}
 	};

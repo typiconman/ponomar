@@ -112,6 +112,26 @@ sub findTopDown {
 	return @paths;
 }
 
+=item exists_saint($cid)
+
+Checks if a saint with CId C<$cid> exists in the file structure.
+Returns 1 if saint exists and 0 otherwise.
+
+=cut
+
+sub exists_saint {
+	my $cid = shift;
+
+	unless (defined $cid && $cid =~ /\d+/) {
+		carp (__PACKAGE__ . "::exists_saint($cid) : invalid CId specified";
+	}
+
+	# XXX: create a separate sub that checks valid languages first, and get rid
+	# of hard-coded dependency.
+	my @paths = map { "$basepath/$_/lives/$cid.xml" } ('', 'en', 'cu', 'cu/ru', 'el', 'fr', 'zh');
+	return scalar map { -e $_ } @paths;
+}
+
 =item getPascha($year)
 
 Returns a new Ponomar::JDate object with Pascha for the specified C<$year>.
