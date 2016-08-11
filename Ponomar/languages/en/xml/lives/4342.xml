@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <SAINT>
-<NAME Nominative="Holy Hierarch Constantine, Patriarch of Constantinople" Short="Holy Hierarch"/>
-<SERVICE Type="0"/></SAINT>
+<NAME Nominative="Holy Hierarch Constantine, Patriarch of Constantinople" Short="Constantine"
+ShortF="for St. Constantine"/>
+<LIFE Id="" Copyright="">
+
+</LIFE>
+<SERVICE Type="0"/>
+</SAINT>
