@@ -258,10 +258,9 @@ sub default {
 }
 
 sub text {
-	my ($parseinst, $data) = @_;
+	my ( $self, $parseinst, $data ) = @_;
 	if ($readLife) {
-			$self->{Life}->{Text} .= ($data);
-			$readLife--;
+			${ $self->{Life}}{Text} .= ($data);
 	}
 	return;
 }
@@ -348,8 +347,8 @@ sub startElement {
 		if ($element eq "LIFE") {
 			delete $attrs{Cmd};
 			$readLife++;
-			$self->{Life}->{keys %attrs} = values %attrs;
-			$self->{Life}->{Text} = "";
+			@{ $self->{Life} }{keys %attrs} = values %attrs;
+			${ $self->{Life}}{Text} = "";
 			last SWITCH;
 		}
 	};
@@ -364,6 +363,9 @@ sub endElement {
 		$element eq "PRIMES" || $element eq "TERCE" ||
 		$element eq "SEXTE" || $element eq "NONE") {
 		undef $self->{_whichService};
+	}
+	if ($element eq "LIFE") {
+		$readLife--;
 	}
 	return 1;
 }

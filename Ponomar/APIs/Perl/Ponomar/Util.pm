@@ -25,8 +25,8 @@ BEGIN {
 	@ISA 	 = qw( Exporter );
 	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax isNumeric getMatinsGospel julianFromGregorian getNextYearWithBoundary getKeyOfBoundaries);
 	@EXPORT_OK = qw(getIndiction getSolarCycle getConcurrent getLunarCycle getFoundation getEpacta getNextFullMoon getVernalEquinox getJulianDayFromMilankovich getMilankovichPascha);
-	$basepath = "/home/sasha/ponomar/Ponomar/languages/";
-#	$basepath = "/home/ponomar0/git/ponomar/Ponomar/languages/";
+#	$basepath = "/home/sasha/ponomar/Ponomar/languages/";
+	$basepath = "/home/ponomar0/git/ponomar/Ponomar/languages/";
 }
 
 my %matinsGospels = (
@@ -123,7 +123,7 @@ sub exists_saint {
 	my $cid = shift;
 
 	unless (defined $cid && $cid =~ /\d+/) {
-		carp (__PACKAGE__ . "::exists_saint($cid) : invalid CId specified";
+		carp (__PACKAGE__ . "::exists_saint($cid) : invalid CId specified" );
 	}
 
 	# XXX: create a separate sub that checks valid languages first, and get rid
