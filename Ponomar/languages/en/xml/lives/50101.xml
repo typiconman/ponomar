@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <SAINT>
-<NAME Nominative="Finding of the Relics of Venerable Herman of Solovki (1484)" Short="Finding of"/>
-<SERVICE Type="0"/></SAINT>
+<NAME Nominative="Finding of the Relics of Venerable Germanus of Solovki" Short="Germanus"
+ShortF="for St. Germanus"/>
+<INFO BirthPlace="Solovki Monastery" ReposeDate="1484"/>
+<LIFE Id="" Copyright="">
+
+</LIFE>
+<SERVICE Type="0"/>
+</SAINT>
