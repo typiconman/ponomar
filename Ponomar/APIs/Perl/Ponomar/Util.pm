@@ -575,7 +575,7 @@ sub getPassover {
 	my $r = $Q - int($Q);
 	
 	my $d = int($Q) + 22;
-	if ($j = 2 || $j == 4 || $j == 6) {
+	if ($j == 2 || $j == 4 || $j == 6) {
 		$d++;
 	} elsif ($j == 1 && $a > 6 && $r >= 0.632870370) {
 		$d += 2;
