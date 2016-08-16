@@ -7,7 +7,7 @@
 </MATINS>
 <LITURGY>
 <!-- EXPLANATION: 9232 CAN FALL ON DOY 344 OR 345, THEN THE READIGNS FOR THE FOREFATHERS ARE READ -->
-<SCRIPTURE Type="apostol" Reading="Eph_5:9-19" Pericope="229" EffWeek="26" Cmd="doy &lt; 344"/>
+<SCRIPTURE Type="apostol" Reading="Eph_5:8b-19" Pericope="229" EffWeek="26" Cmd="doy &lt; 344"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="(doy &gt;= 334 &amp;&amp; doy &lt;= 336) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" EffWeek="29" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 343) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" EffWeek="27" Cmd="(doy &gt;= 327 &amp;&amp; doy &lt;= 333) &amp;&amp; GS == 1"/>

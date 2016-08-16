@@ -2,7 +2,7 @@
 <SERVICE Type="1" Tie="799">
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Rom_8:28-39" Pericope="99" Cmd="dow != 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" Cmd="dow != 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23a" Pericope="24" Cmd="dow != 1"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

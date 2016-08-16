@@ -8,7 +8,7 @@
 <LITURGY>
 <!-- CASE ONE: THERE ARE TWO MORE WEEKS AND IT IS DECEMBER 30 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -91 &amp;&amp; doy == 363)"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -91 &amp;&amp; doy == 363)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -91 &amp;&amp; doy == 363)"/>
 
 <!-- CASE TWO: THERE ARE TWO MORE WEEKS AND IT IS DECEMBER 26, 27 OR 28 -->

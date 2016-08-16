@@ -25,7 +25,7 @@
 
 <!-- CASE FOUR: THERE ARE THREE MORE WEEKS OF READINGS AND IT IS JANUARY 14 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -98 &amp;&amp; doy == 13)"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -98 &amp;&amp; doy == 13)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -98 &amp;&amp; doy == 13)"/>
 
 <!-- CASE FIVE: WE ARE NOT USING THE LUCAN JUMP. KEEPING YURI'S OLD RULES -->

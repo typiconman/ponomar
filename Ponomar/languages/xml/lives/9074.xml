@@ -2,7 +2,7 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Rom_11:2-12" Pericope="105"/>
+<SCRIPTURE Type="apostol" Reading="Rom_11:2b-12" Pericope="105"/>
 <SCRIPTURE Type="gospel" Reading="Mt_11:20-26" Pericope="42"/>
 </LITURGY>
 </SERVICE>

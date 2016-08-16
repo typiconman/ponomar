@@ -5,10 +5,10 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="II Cor_8:1-5" Pericope="185" EffWeek="23"/>
 <SCRIPTURE Type="gospel" Reading="Lk_6:1-10" Pericope="22" EffWeek="21" Cmd="(doy &gt;= 289 &amp;&amp; doy &lt;= 290) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_7:2-10" Pericope="29" EffWeek="22" Cmd="(doy &gt;= 291 &amp;&amp; doy &lt;= 297) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:1b-10" Pericope="29" EffWeek="22" Cmd="(doy &gt;= 291 &amp;&amp; doy &lt;= 297) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_8:16-21" Pericope="36" EffWeek="23" Cmd="(doy &gt;= 298 &amp;&amp; doy &lt;= 304) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_9:1-6" Pericope="40" EffWeek="24" Cmd="(doy &gt;= 305 &amp;&amp; doy &lt;= 311) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_9:37-43" Pericope="46" EffWeek="25" Cmd="(doy &gt;= 312 &amp;&amp; doy &lt;= 318) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:37-43a" Pericope="46" EffWeek="25" Cmd="(doy &gt;= 312 &amp;&amp; doy &lt;= 318) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_9:57-62" Pericope="49" EffWeek="26" Cmd="(doy &gt;= 319 &amp;&amp; doy &lt;= 323) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_8:16-21" Pericope="36" Cmd="GS == 0"/>
 </LITURGY>

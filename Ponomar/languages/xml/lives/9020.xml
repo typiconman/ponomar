@@ -2,7 +2,7 @@
 <SERVICE Type="0">
 <PRIMES Type="Easter"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Acts_8:40-9:19" Pericope="21"/>
+<SCRIPTURE Type="apostol" Reading="Acts_8:40-9:19a" Pericope="21"/>
 <SCRIPTURE Type="gospel" Reading="Jn_6:48-54" Pericope="23"/>
 </LITURGY>
 </SERVICE>

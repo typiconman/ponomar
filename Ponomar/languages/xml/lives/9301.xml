@@ -24,7 +24,7 @@
 
 <!-- CASE FIVE: LUCAN JUMP NOT USED -->
 <SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" Cmd="GS == 0 &amp;&amp; nday == -78"/>
-<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid)" Cmd="GS == 0 &amp;&amp; nday == -85"/>
+<SCRIPTURE Type="apostol" Reading="Col_1:2b-6" Pericope="249 (mid.)" Cmd="GS == 0 &amp;&amp; nday == -85"/>
 <SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" Cmd="nday == -78 &amp;&amp; GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="nday == -85 &amp;&amp; GS == 0"/>
 </LITURGY>

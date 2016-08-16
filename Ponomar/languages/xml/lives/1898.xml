@@ -1,7 +1,7 @@
 <SAINT>
 <SERVICE Type="5">
 <MATINS>
-<SCRIPTURE Type="1" Reading="Lk_6:17-23" Pericope="24" Cmd="dow != 0"/>
+<SCRIPTURE Type="1" Reading="Lk_6:17-23a" Pericope="24" Cmd="dow != 0"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Gal_5:22-6:2" Pericope="213"/>

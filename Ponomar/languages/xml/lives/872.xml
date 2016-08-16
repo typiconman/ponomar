@@ -2,7 +2,7 @@
 <SERVICE>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Acts_12:1-11" Cmd="dRank &lt; 5" Pericope="29"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:1-11" Cmd="dRank &lt; 5" Pericope="17"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:1b-11" Cmd="dRank &lt; 5" Pericope="17"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

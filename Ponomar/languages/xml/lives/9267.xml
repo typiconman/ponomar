@@ -9,27 +9,27 @@
 
 <!-- CASE ONE: THERE IS ONE MORE WEEK AND IT IS DECEMBER 30 -->
 <!-- THE READINGS FOR THE 32ND WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid)" EffWeek="32" Cmd="GS == 1 &amp;&amp; (ndayF == -84 &amp;&amp; doy == 363)"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid. 1)" EffWeek="32" Cmd="GS == 1 &amp;&amp; (ndayF == -84 &amp;&amp; doy == 363)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" EffWeek="32" Cmd="GS == 1 &amp;&amp; (ndayF == -84 &amp;&amp; doy == 363)"/>
 
 <!-- CASE TWO: THERE IS ONE MORE WEEK AND IT IS DECEMBER 28, 29 OR 31 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -84 &amp;&amp; (doy == 361 || doy == 362 || doy == 364))"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -84 &amp;&amp; (doy == 361 || doy == 362 || doy == 364))"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -84 &amp;&amp; (doy == 361 || doy == 362 || doy == 364))"/>
 
 <!-- CASE THREE: THERE IS ONE MORE WEEK AND IT IS JANUARY 1 TO JANUARY 16, EXCEPT JANUARY 6 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy != 5 &amp;&amp; (doy &gt;= 0 &amp;&amp; doy &lt;= 15))"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy != 5 &amp;&amp; (doy &gt;= 0 &amp;&amp; doy &lt;= 15))"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy != 5 &amp;&amp; (doy &gt;= 0 &amp;&amp; doy &lt;= 15))"/>
 
 <!-- CASE FOUR: THERE IS TWO MORE WEEKS AND IT IS JANUARY 14 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 13)"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 13)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 13)"/>
 
 <!-- CASE FIVE: THERE IS TWO MORE WEEKS AND IT IS DECEMBER 30 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -91 &amp;&amp; doy == 363)"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -91 &amp;&amp; doy == 363)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (ndayF == -91 &amp;&amp; doy == 363)"/>
 
 <!-- CASE SIX: THERE IS TWO MORE WEEKS AND IT IS DECEMBER 26, 27 OR 28 -->
@@ -43,7 +43,7 @@
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; (doy &gt;= 0 &amp;&amp; doy &lt;= 3 || doy &gt;= 7 &amp;&amp; doy &lt;= 10))"/>
 
 <!-- CASE EIGHT: WE ARE NOT USING THE LUCAN JUMP. -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" Cmd="GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" Cmd="GS == 0"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="GS == 0" />
 </LITURGY>
 </SERVICE>

@@ -5,7 +5,7 @@
 <SCRIPTURE Type="apostol" Reading="I Thess_4:1-12" Pericope="269" EffWeek="24"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:15-17, 26-30" Pericope="90" EffWeek="27" Cmd="(doy &gt;= 323 &amp;&amp; doy &lt;= 329) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_15:1-10" Pericope="78" EffWeek="26" Cmd="(doy &gt;= 316 &amp;&amp; doy &lt;= 322) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_12:48-59" Pericope="69" EffWeek="25" Cmd="(doy &gt;= 309 &amp;&amp; doy &lt;= 315) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:48b-59" Pericope="69" EffWeek="25" Cmd="(doy &gt;= 309 &amp;&amp; doy &lt;= 315) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_11:42-46" Pericope="61" EffWeek="24" Cmd="(doy &gt;= 302 &amp;&amp; doy &lt;= 308) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_11:9-13" Pericope="56" EffWeek="23" Cmd="(doy &gt;= 295 &amp;&amp; doy &lt;= 301) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_9:44-50" Pericope="47" EffWeek="22" Cmd="(doy &gt;= 288 &amp;&amp; doy &lt;= 294) &amp;&amp; GS == 1"/>

@@ -10,7 +10,7 @@
 <SCRIPTURE Type="gospel" Reading="Lk_5:17-26" Pericope="19" EffWeek="19" Cmd="(doy &gt;= 270 &amp;&amp; doy &lt;= 276) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_5:27-32" Pericope="20" EffWeek="20" Cmd="(doy &gt;= 277 &amp;&amp; doy &lt;= 283) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_6:1-10" Pericope="22" EffWeek="21" Cmd="(doy &gt;= 284 &amp;&amp; doy &lt;= 290) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_7:2-10" Pericope="29" EffWeek="22" Cmd="(doy &gt;= 291 &amp;&amp; doy &lt;= 295) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_7:1b-10" Pericope="29" EffWeek="22" Cmd="(doy &gt;= 291 &amp;&amp; doy &lt;= 295) &amp;&amp; GS == 1"/>
 
 <SCRIPTURE Type="gospel" Reading="Lk_5:17-26" Pericope="19" Cmd="GS == 0"/>
 </LITURGY>

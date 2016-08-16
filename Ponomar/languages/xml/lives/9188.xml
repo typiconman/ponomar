@@ -2,13 +2,13 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Philip_3:8-19" Pericope="245" EffWeek="20"/>
+<SCRIPTURE Type="apostol" Reading="Philip_3:8b-19" Pericope="245" EffWeek="20"/>
 <SCRIPTURE Type="gospel" Reading="Lk_11:23-26" Pericope="58" EffWeek="23" Cmd="(doy &gt;= 297 &amp;&amp; doy &lt;= 303) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_10:1-15" Pericope="50" EffWeek="22" Cmd="(doy &gt;= 290 &amp;&amp; doy &lt;= 296) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_9:12-18" Pericope="42" EffWeek="21" Cmd="(doy &gt;= 283 &amp;&amp; doy &lt;= 289) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_9:12b-18a" Pericope="42" EffWeek="21" Cmd="(doy &gt;= 283 &amp;&amp; doy &lt;= 289) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_7:31-35" Pericope="32" EffWeek="20" Cmd="(doy &gt;= 276 &amp;&amp; doy &lt;= 282) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:17-23" Pericope="24" EffWeek="19" Cmd="(doy &gt;= 269 &amp;&amp; doy &lt;= 275) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_4:22-30" Pericope="14" EffWeek="18" Cmd="(doy &gt;= 262 &amp;&amp; doy &lt;= 268) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_6:17-23a" Pericope="24" EffWeek="19" Cmd="(doy &gt;= 269 &amp;&amp; doy &lt;= 275) &amp;&amp; GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:22b-30" Pericope="14" EffWeek="18" Cmd="(doy &gt;= 262 &amp;&amp; doy &lt;= 268) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_7:31-35" Pericope="32" Cmd="GS == 0"/>
 </LITURGY>
 </SERVICE>
