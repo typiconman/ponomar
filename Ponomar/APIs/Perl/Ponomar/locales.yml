@@ -244,7 +244,7 @@ cu/ru:
 	fri: пт
 	sat: сб
 	date_format_full: "%A, %B %d %Y"
-	date_format_short: "%d.%m.%Y"
+	date_format_short: "%d %B"
 	fast_0000000: "строгий пост (полное воздержание от пищи)"
 	fast_0000001: "сухоядение"
 	fast_0000011: "пища без растительного масла"
