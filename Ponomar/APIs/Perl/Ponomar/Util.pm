@@ -47,13 +47,13 @@ my %matinsGospels = (
 sub pi () { 4 * CORE::atan2(1, 1) }
 
 sub deg2rad {
-	shift;
-	return $_ * pi () / 180;
+	my $n = shift;
+	return $n * pi () / 180;
 }
 
 sub rad2deg {
-	shift;
-	return $_ * 180 / pi ();
+	my $n = shift;
+	return $n * 180 / pi ();
 }
 
 =head3 METHODS
@@ -750,6 +750,8 @@ sub getNextFullMoon {
 
 Given C<$year>, a year between AD 1000 and AD 3000, returns the date of the March equinox
 
+Formulae due to Meuss, Astronomical Algorithms, pp. 177--182.
+
 =cut
 
 sub getVernalEquinox {
@@ -759,6 +761,7 @@ sub getVernalEquinox {
 
 	my $y = ($year - 2000) / 1000;
 	my $JDE0 = 2451623.80984 + 365242.37404 * $y + 0.05169 * $y ** 2 - 0.00411 * $y ** 3 - 0.00057 * $y ** 4;
+#	my $JDE0 = 2451716.56767 + 365241.62603 * $y + 0.00325 * $y ** 2 + 0.00888 * $y ** 3 - 0.00030 * $y ** 4;
 	my $T = ($JDE0 - 2451545.0) / 36525;
 	my $W = deg2rad(35999.373 * $T - 2.47);
 	my $lambda = 1 + 0.0334 * cos($W) + 0.0007 * cos(2 * $W);
@@ -788,7 +791,7 @@ sub getVernalEquinox {
 			  8 * cos (deg2rad(15.45 + 16859.074 * $T));
 
 	# time of vernal equinox expressed as a Julian Ephemeris Day
-	# (hence in Dynamical Time). See Meeus, p. 165-168.
+	# (hence in Dynamical Time).
 	return new Ponomar::JDate( $JDE0 + (0.00001 * $S) / $lambda );
 }
 

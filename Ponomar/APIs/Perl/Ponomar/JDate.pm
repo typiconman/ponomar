@@ -190,6 +190,62 @@ sub getDay ($) {
 	return $B - $D - floor(30.6001 * $E) + $F;
 }
 
+=item getHour()
+
+Returns the hour component of the JDate object (which may be fractional)
+
+This is useful for such things as vernal equinox, sunrize and moon calculations
+
+The result is always in hours since midnight UTC, and by convention
+the JDay starts at noon UTC.
+
+=cut
+
+sub getHour($) {
+	my $self = shift;
+
+	my $mn_jday = $self->{_mnjday} - 0.5;
+	my $r = $mn_jday - int ($mn_jday);
+	return int($r * 24);
+}
+
+
+=item getMinute()
+
+Returns the minute component of the JDate object (which may be fractional)
+
+This is useful for such things as vernal equinox, sunrize and moon calculations
+
+The result is always in minutes since the last hour UTC.
+
+=cut
+
+sub getMinute($) {
+	my $self = shift;
+
+	my $mn_jday = $self->{_mnjday} - 0.5;
+	my $r = $mn_jday - int ($mn_jday);
+	return int( ($r * 24 - int($r * 24)) * 60);
+}
+
+=item getSecond()
+
+Returns the second component of the JDate object (which may be fractional)
+
+This is useful for such things as vernal equinox, sunrize and moon calculations
+
+The result is always in seconds since the last minute UTC.
+
+=cut
+
+sub getSecond($) {
+	my $self = shift;
+
+	my $mn_jday = $self->{_mnjday} - 0.5;
+	my $r = $mn_jday - int ($mn_jday);
+	return int( ( ($r * 24 - int($r * 24)) * 60 - int( ($r * 24 - int($r * 24)) * 60) ) * 60);
+}
+
 =item getDayOfWeek()
 
 Returns the day of the week of the JDate object
