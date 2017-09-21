@@ -25,8 +25,8 @@ BEGIN {
 	@ISA 	 = qw( Exporter );
 	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax isNumeric getMatinsGospel julianFromGregorian getNextYearWithBoundary getKeyOfBoundaries);
 	@EXPORT_OK = qw(getIndiction getSolarCycle getConcurrent getLunarCycle getFoundation getEpacta getNextFullMoon getVernalEquinox getJulianDayFromMilankovich getMilankovichPascha);
-#	$basepath = "/home/sasha/ponomar/Ponomar/languages/";
-	$basepath = "/home/ponomar0/git/ponomar/Ponomar/languages/";
+	$basepath = "/home/sasha/ponomar/Ponomar/languages/";
+#	$basepath = "/home/ponomar0/git/ponomar/Ponomar/languages/";
 }
 
 my %matinsGospels = (
