@@ -173,7 +173,7 @@ fr:
 	thu: je
 	fri: ve
 	sat: sa
-	date_format_full: "%A, %B %d %Y"
+	date_format_full: "%A %d %B %Y"
 	date_format_short: "%d/%m/%Y"
 	fast_0000000: "Jeûne complet (sans nourriture)"
 	fast_0000001: "Xérophagie"
@@ -205,14 +205,14 @@ fr:
 	nocturns: Mesonyktikon
 	matins: Matines
 	liturgy: Liturgie
-	tone1: "Ton 1-er"
-	tone2: "Ton 2-nd"
-	tone3: "Ton 3-em"
-	tone4: "Ton 4-em"
-	tone5: "Ton 5-em"
-	tone6: "Ton 6-em"
-	tone7: "Ton 7-em"
-	tone8: "Ton 8-em"
+	tone1: "Ton 1"
+	tone2: "Ton 2"
+	tone3: "Ton 3"
+	tone4: "Ton 4"
+	tone5: "Ton 5"
+	tone6: "Ton 6"
+	tone7: "Ton 7"
+	tone8: "Ton 8"
 
 cu/ru:
 	name: Пономарь
