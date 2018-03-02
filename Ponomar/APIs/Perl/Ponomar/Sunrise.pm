@@ -276,6 +276,14 @@ sub rev180 {
 sub equal {
     my ($A, $B, $dp) = @_;
 
+    # needs to be untainted (why?)
+    if ($A =~ /(^-?\d+\.?\d*$)/) {
+	$A = $1;
+    } else { carp "not a real number"; }
+    if ($B =~ /(^-?\d+\.?\d*$)/) {
+	$B = $1;
+    } else { carp "not a real number"; }
+
     return sprintf("%.${dp}g", $A) eq sprintf("%.${dp}g", $B);
   }
 
