@@ -4,7 +4,8 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Heb_9:8-10, 15-23" Pericope="321" EffWeek="30"/>
 <SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" EffWeek="33" Cmd="((doy &gt;= 364 &amp;&amp; doy &lt;= 364) || (doy &gt;= 0 &amp;&amp; doy &lt;= 5)) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" EffWeek="32" Cmd="(doy &gt;= 357 &amp;&amp; doy &lt;= 363) &amp;&amp; GS == 1"/>
+<!-- <SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" EffWeek="32" Cmd="(doy &gt;= 357 &amp;&amp; doy &lt;= 363) &amp;&amp; GS == 1"/> -->
+<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Pericope="43" EffWeek="31" Cmd="(doy &gt;= 357 &amp;&amp; doy &lt;= 363) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Pericope="43" EffWeek="31" Cmd="(doy &gt;= 350 &amp;&amp; doy &lt;= 356) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Pericope="34" EffWeek="30" Cmd="(doy &gt;= 343 &amp;&amp; doy &lt;= 349) &amp;&amp; GS == 1"/>
 <SCRIPTURE Type="gospel" Reading="Lk_21:12-19" Pericope="106" EffWeek="29" Cmd="(doy &gt;= 336 &amp;&amp; doy &lt;= 342) &amp;&amp; GS == 1"/>

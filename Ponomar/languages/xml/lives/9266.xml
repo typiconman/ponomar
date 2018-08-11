@@ -11,6 +11,10 @@
 <SCRIPTURE Type="apostol" Reading="Col_1:2b-6" Pericope="249 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 13 || doy == 14"/>
 <SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 13 || doy == 14"/>
 
+<!-- CASE SOMETHING: IT IS JANUARY 5 AND WE NEED MORE READINGS -->
+<SCRIPTURE Type="apostol" Reading="Eph_5:1-8a" Pericope="228" EffWeek="30" Cmd="GS == 1 &amp;&amp; doy == 4 &amp;&amp; nday == -91"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" EffWeek="16" Cmd="GS == 1 &amp;&amp; doy == 4 &amp;&amp; nday == -91"/>
+
 <!-- CASE THREE: TWO MORE WEEKS OF READINGS AND IT IS JANUARY 1-3 or 7-10 -->
 <!-- READINGS FOR THE 31ST SATURDAY -->
 <SCRIPTURE Type="apostol" Reading="Col_1:2b-6" Pericope="249 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; (doy &gt;= 6 &amp;&amp; doy &lt;= 9 || doy &lt;= 2)"/>

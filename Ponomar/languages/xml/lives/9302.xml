@@ -15,8 +15,12 @@
 
 <!-- CASE TWO: THERE IS ONE MORE WEEK TO GO AND WE ARE ON JANUARY 21 OR BETWEEN JANUARY 26 AND FEB 1 -->
 <!-- THE READING FOR THE 17TH SUNDAY IS READ -->
-<SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid.)" EffWeek="17" Cmd="nday == -84 &amp;&amp; (doy == 20 || doy &gt;= 25 &amp;&amp; doy &lt;= 31)"/>
-<SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" EffWeek="17" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; (doy == 20 || doy &gt;= 25 &amp;&amp; doy &lt;= 31))"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid.)" EffWeek="17" Cmd="nday == -84 &amp;&amp; doy &gt;= 25 &amp;&amp; doy &lt;= 31"/>
+<SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" EffWeek="17" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy &gt;= 25 &amp;&amp; doy &lt;= 31)"/>
+
+<SCRIPTURE Type="apostol" Reading="II Cor_9:6-11" Pericope="188" EffWeek="18" Cmd="nday == -84 &amp;&amp; doy == 20"/>
+<SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" EffWeek="17" Cmd="GS == 1 &amp;&amp; (nday == -84 &amp;&amp; doy == 20)"/>
+
 
 <!-- CASE THREE: THERE IS ONE MORE WEEK TO GO AND WE ARE ON JANUARY 17 TO JANUARY 20 OR JANUARY 22 TO JANUARY 25 -->
 <!-- THE READING FOR THE 31ST SUNDAY IS READ -->

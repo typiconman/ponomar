@@ -26,7 +26,8 @@
 
 <!-- CASE FOUR: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS JANUARY 14 -->
 <!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="II Cor_9:6-11" Pericope="188" EffWeek="18" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 13)"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 13)"/>
+<!-- <SCRIPTURE Type="apostol" Reading="II Cor_9:6-11" Pericope="188" EffWeek="18" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 13)"/> -->
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy == 13)"/>
 
 <!-- CASE FIVE: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS JANUARY 19, 20 OR 22 THRU 25 -->
