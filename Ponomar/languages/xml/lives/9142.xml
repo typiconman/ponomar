@@ -2,8 +2,8 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="II Cor_12:10-19" Pericope="195"/>
-<SCRIPTURE Type="gospel" Reading="Mk_4:10-23" Pericope="16"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_12:10-19" Pericope="195" EffWeek="14"/>
+<SCRIPTURE Type="gospel" Reading="Mk_4:10-23" Pericope="16" EffWeek="14"/>
 </LITURGY>
 </SERVICE>
 </SAINT>
