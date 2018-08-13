@@ -6,15 +6,12 @@
 <SCRIPTURE Type="matins" Reading="Jn_21:15-25" Pericope="67" Cmd="dRank &lt; 7"/>
 </MATINS>
 <LITURGY>
-<!-- CASE ONE: THERE ARE NO MORE WEEKS REMAINING AND WE ARE BETWEEN JANUARY 7 AND JANUARY 28 -->
-<!-- THE READINGS FOR THE 32ND SUNDAY ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid. 1)" EffWeek="32" Cmd="GS == 1 &amp;&amp; (nday == -77 &amp;&amp; doy &gt;= 6 &amp;&amp; doy &lt;= 27)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" EffWeek="32" Cmd="GS == 1 &amp;&amp; (nday == -77 &amp;&amp; doy &gt;= 6 &amp;&amp; doy &lt;= 27)"/>
-
-<!-- CASE TWO: WE ARE NOT USING THE LUCAN JUMP. KEEPING YURI'S OLD RULES -->
-<SCRIPTURE Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid. 1)" Cmd="GS == 0 &amp;&amp; nday == -77"/>
-<SCRIPTURE Type="gospel" Reading="Lk_19:1-10" Pericope="94" Cmd="(nday == -77) &amp;&amp; GS == 0"/>
-
+<READING Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="nday == -98 &amp;&amp; (doy == 10)"/>
+<READING Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="nday == -105 &amp;&amp; (doy == 10)"/>
+<READING Type="apostol" Reading="I Tim_4:9-15" Pericope="285 (mid. 1)" EffWeek="32" Cmd="nday == -77 &amp;&amp; ((doy &gt;= 6 &amp;&amp; doy &lt;= 27))"/>
+<READING Type="gospel" Reading="Lk_19:1-10" Pericope="94" EffWeek="32" Cmd="nday == -77 &amp;&amp; ((doy &gt;= 6 &amp;&amp; doy &lt;= 27))"/>
+<READING Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="nday == -98 &amp;&amp; (doy == 10)"/>
+<READING Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="nday == -105 &amp;&amp; (doy == 10)"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

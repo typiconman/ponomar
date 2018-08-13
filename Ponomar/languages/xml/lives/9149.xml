@@ -2,10 +2,16 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Gal_2:11-16" Pericope="202" EffWeek="15"/>
-<SCRIPTURE Type="gospel" Reading="Mk_5:24b-34" Pericope="21" EffWeek="15" Cmd="doy &lt; 258 &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_3:19-22" Pericope="10" EffWeek="18" Cmd="(doy &gt;= 258 &amp;&amp; doy &lt;= 264) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mk_5:24b-34" Pericope="21" Cmd="GS == 0"/>
+<READING Type="apostol" Reading="Gal_2:11-16" Pericope="202" EffWeek="15" Cmd="ndayF == -209 &amp;&amp; ((doy &gt;= 239 &amp;&amp; doy &lt;= 260))"/>
+<READING Type="apostol" Reading="Gal_2:11-16" Pericope="202" EffWeek="15" Cmd="ndayF == -230 &amp;&amp; ((doy &gt;= 234 &amp;&amp; doy &lt;= 235) || (doy &gt;= 237 &amp;&amp; doy &lt;= 238) || doy == 240 || (doy &gt;= 242 &amp;&amp; doy &lt;= 243))"/>
+<READING Type="apostol" Reading="Gal_2:11-16" Pericope="202" EffWeek="15" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 243 &amp;&amp; doy &lt;= 262))"/>
+<READING Type="apostol" Reading="Gal_2:11-16" Pericope="202" EffWeek="15" Cmd="ndayF == -237 &amp;&amp; ((doy &gt;= 228 &amp;&amp; doy &lt;= 243))"/>
+<READING Type="apostol" Reading="Mk_5:24b-34" Pericope="21" EffWeek="15" Cmd="ndayF == -209 &amp;&amp; ((doy &gt;= 239 &amp;&amp; doy &lt;= 257))"/>
+<READING Type="apostol" Reading="Mk_5:24b-34" Pericope="21" EffWeek="15" Cmd="ndayF == -230 &amp;&amp; ((doy &gt;= 234 &amp;&amp; doy &lt;= 235) || (doy &gt;= 237 &amp;&amp; doy &lt;= 238) || doy == 240 || (doy &gt;= 242 &amp;&amp; doy &lt;= 243))"/>
+<READING Type="apostol" Reading="Mk_5:24b-34" Pericope="21" EffWeek="15" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 243 &amp;&amp; doy &lt;= 257))"/>
+<READING Type="apostol" Reading="Mk_5:24b-34" Pericope="21" EffWeek="15" Cmd="ndayF == -237 &amp;&amp; ((doy &gt;= 228 &amp;&amp; doy &lt;= 243))"/>
+<READING Type="apostol" Reading="Lk_3:19-22" Pericope="10" EffWeek="18" Cmd="ndayF == -209 &amp;&amp; ((doy &gt;= 258 &amp;&amp; doy &lt;= 260))"/>
+<READING Type="apostol" Reading="Lk_3:19-22" Pericope="10" EffWeek="18" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 258 &amp;&amp; doy &lt;= 262))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

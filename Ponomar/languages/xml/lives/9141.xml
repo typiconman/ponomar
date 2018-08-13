@@ -5,8 +5,14 @@
 <SCRIPTURE Type="matins" Reading="Mk_16:1-8" Pericope="70"/>
 </MATINS>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Cor_16:13-24" Pericope="166" EffWeek="13"/>
-<SCRIPTURE Type="gospel" Reading="Mt_21:33-42" Pericope="87" EffWeek="13"/>
+<READING Type="apostol" Reading="I Cor_16:13-24" Pericope="166" EffWeek="13" Cmd="ndayF == -245 &amp;&amp; ((doy &gt;= 220 &amp;&amp; doy &lt;= 235))"/>
+<READING Type="apostol" Reading="I Cor_16:13-24" Pericope="166" EffWeek="13" Cmd="ndayF == -217 &amp;&amp; ((doy &gt;= 231 &amp;&amp; doy &lt;= 252))"/>
+<READING Type="apostol" Reading="I Cor_16:13-24" Pericope="166" EffWeek="13" Cmd="ndayF == -238 &amp;&amp; ((doy &gt;= 226 &amp;&amp; doy &lt;= 227) || (doy &gt;= 229 &amp;&amp; doy &lt;= 230) || doy == 232 || (doy &gt;= 234 &amp;&amp; doy &lt;= 235))"/>
+<READING Type="apostol" Reading="I Cor_16:13-24" Pericope="166" EffWeek="13" Cmd="ndayF == -210 &amp;&amp; ((doy &gt;= 235 &amp;&amp; doy &lt;= 254))"/>
+<READING Type="apostol" Reading="Mt_21:33-42" Pericope="87" EffWeek="13" Cmd="ndayF == -217 &amp;&amp; ((doy &gt;= 231 &amp;&amp; doy &lt;= 252))"/>
+<READING Type="apostol" Reading="Mt_21:33-42" Pericope="87" EffWeek="13" Cmd="ndayF == -245 &amp;&amp; ((doy &gt;= 220 &amp;&amp; doy &lt;= 235))"/>
+<READING Type="apostol" Reading="Mt_21:33-42" Pericope="87" EffWeek="13" Cmd="ndayF == -238 &amp;&amp; ((doy &gt;= 226 &amp;&amp; doy &lt;= 227) || (doy &gt;= 229 &amp;&amp; doy &lt;= 230) || doy == 232 || (doy &gt;= 234 &amp;&amp; doy &lt;= 235))"/>
+<READING Type="apostol" Reading="Mt_21:33-42" Pericope="87" EffWeek="13" Cmd="ndayF == -210 &amp;&amp; ((doy &gt;= 235 &amp;&amp; doy &lt;= 254))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

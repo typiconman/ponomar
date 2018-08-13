@@ -6,33 +6,14 @@
 <SCRIPTURE Type="matins" Reading="Mt_28:16-20" Pericope="116" Cmd="dRank &lt; 7"/>
 </MATINS>
 <LITURGY>
-
-<!-- CASE ONE: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS JAN 9-11 -->
-<!-- THE READINGS FOR THE 30TH WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; nday == -91 &amp;&amp; (doy == 10)"/>
-<SCRIPTURE Type="apostol" Reading="II Cor_9:6-11" Pericope="188" EffWeek="18" Cmd="GS == 1 &amp;&amp; nday == -91 &amp;&amp; (doy == 8 || doy == 9)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; doy &gt;= 8 &amp;&amp; doy &lt;= 10)"/>
-
-<!-- CASE TWO: THERE ARE TWO MORE WEEKS OF READINGS AND IT IS JANUARY 15, 17, OR 18 -->
-<!-- THE READINGS FOR THE 30TH WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; (doy == 14 || doy == 16 || doy == 17))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -91 &amp;&amp; (doy == 14 || doy == 16 || doy == 17))"/>
-
-<!-- CASE THREE: THERE ARE THREE MORE WEEKS OF READINGS AND IT IS JANUARY 15 THRU 18 -->
-<!-- THE READINGS FOR THE 30TH WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -98 &amp;&amp; doy &gt;= 14 &amp;&amp; doy &lt;= 17)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="GS == 1 &amp;&amp; (nday == -98 &amp;&amp; doy &gt;= 14 &amp;&amp; doy &lt;= 17)"/>
-
-<!-- CASE FOUR: THERE ARE THREE MORE WEEKS OF READINGS AND IT IS JANUARY 14 -->
-<!-- THE READINGS FOR THE 31ST WEEK ARE READ -->
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -98 &amp;&amp; doy == 13)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="GS == 1 &amp;&amp; (nday == -98 &amp;&amp; doy == 13)"/>
-
-<!-- CASE FIVE: WE ARE NOT USING THE LUCAN JUMP. KEEPING YURI'S OLD RULES -->
-<SCRIPTURE Type="apostol" Reading="Col_3:12-16" Pericope="258" Cmd="GS == 0 &amp;&amp; (nday == -91 &amp;&amp; doy &gt; 12)"/>
-<SCRIPTURE Type="apostol" Reading="Col_3:4-11" Pericope="257" Cmd="GS == 0 &amp;&amp; (nday == -98 &amp;&amp; doy &gt; 12)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(nday == -91 &amp;&amp; doy &gt; 12) &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="75" Cmd="(nday == -98 &amp;&amp; doy &gt; 12) &amp;&amp; GS == 0"/>
+<READING Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" EffWeek="31" Cmd="nday == -98 &amp;&amp; (doy == 13 || doy == 17)"/>
+<READING Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" EffWeek="31" Cmd="nday == -91 &amp;&amp; ((doy &gt;= 8 &amp;&amp; doy &lt;= 9) || doy == 17)"/>
+<READING Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="nday == -98 &amp;&amp; ((doy &gt;= 14 &amp;&amp; doy &lt;= 16))"/>
+<READING Type="apostol" Reading="Col_3:12-16" Pericope="258" EffWeek="30" Cmd="nday == -91 &amp;&amp; (doy == 14 || doy == 16)"/>
+<READING Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="nday == -91 &amp;&amp; ((doy &gt;= 8 &amp;&amp; doy &lt;= 9) || doy == 14 || doy == 16)"/>
+<READING Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="nday == -98 &amp;&amp; ((doy &gt;= 14 &amp;&amp; doy &lt;= 16))"/>
+<READING Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="nday == -98 &amp;&amp; (doy == 13 || doy == 17)"/>
+<READING Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="nday == -91 &amp;&amp; (doy == 17)"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

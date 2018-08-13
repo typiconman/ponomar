@@ -2,19 +2,20 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" Cmd="GS == 0"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="GS == 1 &amp;&amp; doy &gt;= 263"/>
-
-<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="(doy &gt;= 263 &amp;&amp; doy &lt;= 269) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:17-26" Pericope="19" EffWeek="19" Cmd="(doy &gt;= 270 &amp;&amp; doy &lt;= 276) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:27-32" Pericope="20" EffWeek="20" Cmd="(doy &gt;= 277 &amp;&amp; doy &lt;= 283) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_6:1-10" Pericope="22" EffWeek="21" Cmd="(doy &gt;= 284 &amp;&amp; doy &lt;= 288) &amp;&amp; GS == 1"/>
-
-<!-- DEBUG: THESE READINGS ARE REMOVED. ONLY THE READINGS FOR SATAE OR SATBE SHOULD BE READ
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="(doy &gt;= 256 &amp;&amp; doy &lt;= 262) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Mt_19:3-12" Pericope="78" Cmd="(doy &gt;= 249 &amp;&amp; doy &lt;= 255) &amp;&amp; GS == 1"/>-->
-
-<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" Cmd="GS == 0"/>
+<READING Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="ndayF == -183 &amp;&amp; ((doy &gt;= 265 &amp;&amp; doy &lt;= 286))"/>
+<READING Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="ndayF == -204 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 264) || doy == 266 || (doy &gt;= 268 &amp;&amp; doy &lt;= 269))"/>
+<READING Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="ndayF == -211 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 269))"/>
+<READING Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="ndayF == -176 &amp;&amp; ((doy &gt;= 269 &amp;&amp; doy &lt;= 288))"/>
+<READING Type="apostol" Reading="Lk_5:27-32" Pericope="20" EffWeek="20" Cmd="ndayF == -176 &amp;&amp; ((doy &gt;= 277 &amp;&amp; doy &lt;= 283))"/>
+<READING Type="apostol" Reading="Lk_5:27-32" Pericope="20" EffWeek="20" Cmd="ndayF == -183 &amp;&amp; ((doy &gt;= 277 &amp;&amp; doy &lt;= 283))"/>
+<READING Type="apostol" Reading="Lk_5:17-26" Pericope="19" EffWeek="19" Cmd="ndayF == -183 &amp;&amp; ((doy &gt;= 270 &amp;&amp; doy &lt;= 276))"/>
+<READING Type="apostol" Reading="Lk_5:17-26" Pericope="19" EffWeek="19" Cmd="ndayF == -176 &amp;&amp; ((doy &gt;= 270 &amp;&amp; doy &lt;= 276))"/>
+<READING Type="apostol" Reading="Lk_6:1-10" Pericope="22" EffWeek="21" Cmd="ndayF == -176 &amp;&amp; ((doy &gt;= 284 &amp;&amp; doy &lt;= 288))"/>
+<READING Type="apostol" Reading="Lk_6:1-10" Pericope="22" EffWeek="21" Cmd="ndayF == -183 &amp;&amp; ((doy &gt;= 284 &amp;&amp; doy &lt;= 286))"/>
+<READING Type="apostol" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="ndayF == -204 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 264) || doy == 266 || (doy &gt;= 268 &amp;&amp; doy &lt;= 269))"/>
+<READING Type="apostol" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="ndayF == -183 &amp;&amp; ((doy &gt;= 265 &amp;&amp; doy &lt;= 269))"/>
+<READING Type="apostol" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="ndayF == -176 &amp;&amp; (doy == 269)"/>
+<READING Type="apostol" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="ndayF == -211 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 269))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>
