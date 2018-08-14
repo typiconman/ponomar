@@ -1,24 +1,11 @@
-This folder contains scripts that use the Perl API and are use for regression testing.
+This folder contains scripts that use the Perl API to either generate the Ponomar data automagically
+or to perform regression tests.
 
-The output of regression tests is written to /Ponomar/regtests/
+NOTE: do NOT run scripts 1 and 2 directly; rather, run `make test` from the root directory.
 
 The following tests are available:
-1. simple_lectionary.pl
-	This script runs the calendar for one year (2013) and determines the sequential lessons at Liturgy without the Lucan Jump
-		and without any transfers. It is used for checking if the XML data are sane.
-	Output is written to simple_lectionary.txt
-	Base specification is in simple_lectionary_baseline.txt
-
-	If you make changes to XML files, you should run this script and then check
-	diff simple_lectionary.txt simple_lectionary_baseline.txt
-	Only the timestamp line of this file should be changing.
-
-	NOTE THAT THIS SCRIPT DOES NOT ACTUALLY CREATE THE SEQUENTIAL LECTIONARY
-	because some transfers are handled directly in CMDs on individual days (e.g., for SSBN and SBN)
-	But it's a fairly close approximation.
-
-2. paschalion.pl
-	This script runs creates a paschalion table for 532 years (one great cycle) beginning with 2000.
+1. paschalion.pl
+	This script creates a paschalion table for 532 years (one great cycle) beginning with 1941.
 	Output is written to paschalion.txt
 	Base specification is in paschalion_baseline.txt
 
@@ -28,4 +15,33 @@ The following tests are available:
 		* Support for Julian dates and computations is sane
 		* The Paschalion is implemented correctly
 	NOTE THAT ALL DATES ARE ACCORDING TO THE JULIAN CALENDAR
+
+2. test_lj.pl
+	This script tests the implementation of the Lucan Jump. It runs the Ponomar API for
+	a given set of years and checks that the lessons at Liturgy are the same as those
+	specified in the data files used by kahuna.pl to generate the rules for the Lucan Jump.
+
+	WARNING: THIS SCRIPT ONLY TESTS IF NO ARBITRARY CHANGES WERE MADE TO THE CMDs IN THE XML FILES.
+    IT DOES NOT CHECK IF THE ACTUAL DATA USED TO GENERATE THE CMDs IS SANE.
+    IF YOU MODIFY THE DATA AND RUN KAHUNA.PL, THEN RUN THIS SCRIPT, YOU WILL OBVIOUSLY GET THE SAME DATA BACK.
+
+3. kahuna.pl
+	* kahuna -- a Hawaiian word, defined as a "magician, wizard, minister, expert in any profession".
+	This is a complicated script that generates the Lucan Jump implementation rules on the basis
+	of data files. The data files are stored in the data/ folder.
+	For an explanation of the Lucan Jump and for the charts that serve as the basis for the data files,
+	see the paper: Андреев А. А. О порядке чтения Евангелия за Божественной литургией в свете
+		рекомендаций Поместного собора 1917-18 гг. // Вестник Екатеринбургской духовной
+		семинарии. 2018.
+
+	YOU SHOULD NOT MODIFY KAHUNA.PL OR THE RELEVANT DATA FILES WITHOUT CONSULTING ALEKSANDR ANDREEV.
+
+4. typicon_menologion.pl
+    A DEPRECATED SCRIPT TO USED TO GENERATE MENOLOGION DATA FOR THE ENGLISH TYPICON IN TEX FORMAT
+
+5. create_tables.pl
+    A DEPRECATED SCRIPT THAT DOES SOMETHING WITH TABLES?
+
+6. create_index.pl
+    A DEPRECATED SCRIPT THAT CREATES AN INDEX OF SAINTS
 

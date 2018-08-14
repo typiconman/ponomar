@@ -11,11 +11,11 @@ use utf8;
 ##                                                                                                  ##
 ######################################################################################################
 
-use lib "/home/sasha/Documents/ponomar/Ponomar/APIs/Perl";
+use lib "Ponomar/APIs/Perl/";
 use Ponomar;
 use Ponomar::Util;
 
-my $inpath = "data";
+my $inpath = "Ponomar/scripts/Perl/data";
 my $outpath = "/tmp";
 
 # DO NOT EDIT BELOW THIS LINE!

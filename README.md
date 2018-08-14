@@ -8,7 +8,7 @@ Ponomar is a fully-functional program suite for the Orthodox Church and provides
 6. Library of patristic text and scriptural commentary
 7. Library of liturgical music in a variety of traditional chant
 
-Copyright 2006-2015 Aleksandr Andreev and others.
+Copyright 2006-2018 Aleksandr Andreev and others.
 
 Ponomar is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ IMPORTANT INFORMATION
 Ponomar is ALPHA-PHASE software and is intended for SOFTWARE-TESTING PURPOSES ONLY.
 
 In order to fully use the Ponomar Java program, the following steps can be followed:
-1) Install the Ponomar Unicode font located at http://www.ponomar.net/cu_support/fonts.html. 
+1) Install the Ponomar Unicode fonts located at https://sci.ponomar.net/fonts.html. 
 Although this font is for primarily displaying Church Slavonic, 
 it does contain special Typicon glyphs that are used by most of the other languages.
 Note that Ponomar uses the TrueType version of this font (Ponomar Unicode TT)
@@ -37,14 +37,18 @@ because Java has poor support of OpenType fonts.
 
 3) Create the .class files by typing 
 
-make
+`make`
 
 4) From the root of this project, type 
 
-java Ponomar.Main
+`java Ponomar.Main`
 
 and the main Ponomar interface should appear.
 
-5) Additional Ponomar Project software -- fonts and keyboard drivers for working with Church Slavonic texts may be found at http://www.ponomar.net/cu_support.html
+5) A Perl API is available in Ponomar/APIs/Perl. See its documentation.
 
+6) If you make any changes, be sure to run the regression tests:
 
+`make test`
+
+.

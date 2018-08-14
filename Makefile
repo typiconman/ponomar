@@ -49,6 +49,10 @@ default: classes
 
 classes: $(CLASSES:.java=.class)
 
+test:
+	perl Ponomar/scripts/Perl/paschalion.pl
+	perl Ponomar/scripts/Perl/test_lj.pl
+	
 clean:
 	$(RM) Ponomar/*.class
 
