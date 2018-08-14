@@ -2,18 +2,18 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<READING Type="apostol" Reading="Gal_6:2-10" Pericope="214" EffWeek="16" Cmd="ndayF == -228 &amp;&amp; ((doy &gt;= 237 &amp;&amp; doy &lt;= 252))"/>
-<READING Type="apostol" Reading="Gal_6:2-10" Pericope="214" EffWeek="16" Cmd="ndayF == -200 &amp;&amp; ((doy &gt;= 248 &amp;&amp; doy &lt;= 269))"/>
-<READING Type="apostol" Reading="Gal_6:2-10" Pericope="214" EffWeek="16" Cmd="ndayF == -193 &amp;&amp; ((doy &gt;= 252 &amp;&amp; doy &lt;= 271))"/>
-<READING Type="apostol" Reading="Gal_6:2-10" Pericope="214" EffWeek="16" Cmd="ndayF == -221 &amp;&amp; ((doy &gt;= 243 &amp;&amp; doy &lt;= 244) || (doy &gt;= 246 &amp;&amp; doy &lt;= 247) || doy == 249 || (doy &gt;= 251 &amp;&amp; doy &lt;= 252))"/>
-<READING Type="apostol" Reading="Lk_5:33-39" Pericope="21" EffWeek="19" Cmd="ndayF == -200 &amp;&amp; ((doy &gt;= 267 &amp;&amp; doy &lt;= 269))"/>
-<READING Type="apostol" Reading="Lk_5:33-39" Pericope="21" EffWeek="19" Cmd="ndayF == -193 &amp;&amp; ((doy &gt;= 267 &amp;&amp; doy &lt;= 271))"/>
-<READING Type="apostol" Reading="Mk_7:14-24a" Pericope="29" EffWeek="16" Cmd="ndayF == -200 &amp;&amp; ((doy &gt;= 248 &amp;&amp; doy &lt;= 259))"/>
-<READING Type="apostol" Reading="Mk_7:14-24a" Pericope="29" EffWeek="16" Cmd="ndayF == -221 &amp;&amp; ((doy &gt;= 243 &amp;&amp; doy &lt;= 244) || (doy &gt;= 246 &amp;&amp; doy &lt;= 247) || doy == 249 || (doy &gt;= 251 &amp;&amp; doy &lt;= 252))"/>
-<READING Type="apostol" Reading="Mk_7:14-24a" Pericope="29" EffWeek="16" Cmd="ndayF == -193 &amp;&amp; ((doy &gt;= 252 &amp;&amp; doy &lt;= 259))"/>
-<READING Type="apostol" Reading="Mk_7:14-24a" Pericope="29" EffWeek="16" Cmd="ndayF == -228 &amp;&amp; ((doy &gt;= 237 &amp;&amp; doy &lt;= 252))"/>
-<READING Type="apostol" Reading="Lk_4:1-15" Pericope="12" EffWeek="18" Cmd="ndayF == -200 &amp;&amp; ((doy &gt;= 260 &amp;&amp; doy &lt;= 266))"/>
-<READING Type="apostol" Reading="Lk_4:1-15" Pericope="12" EffWeek="18" Cmd="ndayF == -193 &amp;&amp; ((doy &gt;= 260 &amp;&amp; doy &lt;= 266))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_6:2-10" Pericope="214" EffWeek="16" Cmd="ndayF == -228 &amp;&amp; ((doy &gt;= 237 &amp;&amp; doy &lt;= 252))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_6:2-10" Pericope="214" EffWeek="16" Cmd="ndayF == -200 &amp;&amp; ((doy &gt;= 248 &amp;&amp; doy &lt;= 269))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_6:2-10" Pericope="214" EffWeek="16" Cmd="ndayF == -193 &amp;&amp; ((doy &gt;= 252 &amp;&amp; doy &lt;= 271))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_6:2-10" Pericope="214" EffWeek="16" Cmd="ndayF == -221 &amp;&amp; ((doy &gt;= 243 &amp;&amp; doy &lt;= 244) || (doy &gt;= 246 &amp;&amp; doy &lt;= 247) || doy == 249 || (doy &gt;= 251 &amp;&amp; doy &lt;= 252))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:33-39" Pericope="21" EffWeek="19" Cmd="ndayF == -200 &amp;&amp; ((doy &gt;= 267 &amp;&amp; doy &lt;= 269))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:33-39" Pericope="21" EffWeek="19" Cmd="ndayF == -193 &amp;&amp; ((doy &gt;= 267 &amp;&amp; doy &lt;= 271))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:1-15" Pericope="12" EffWeek="18" Cmd="ndayF == -200 &amp;&amp; ((doy &gt;= 260 &amp;&amp; doy &lt;= 266))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:1-15" Pericope="12" EffWeek="18" Cmd="ndayF == -193 &amp;&amp; ((doy &gt;= 260 &amp;&amp; doy &lt;= 266))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_7:14-24a" Pericope="29" EffWeek="16" Cmd="ndayF == -228 &amp;&amp; ((doy &gt;= 237 &amp;&amp; doy &lt;= 252))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_7:14-24a" Pericope="29" EffWeek="16" Cmd="ndayF == -200 &amp;&amp; ((doy &gt;= 248 &amp;&amp; doy &lt;= 259))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_7:14-24a" Pericope="29" EffWeek="16" Cmd="ndayF == -193 &amp;&amp; ((doy &gt;= 252 &amp;&amp; doy &lt;= 259))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_7:14-24a" Pericope="29" EffWeek="16" Cmd="ndayF == -221 &amp;&amp; ((doy &gt;= 243 &amp;&amp; doy &lt;= 244) || (doy &gt;= 246 &amp;&amp; doy &lt;= 247) || doy == 249 || (doy &gt;= 251 &amp;&amp; doy &lt;= 252))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

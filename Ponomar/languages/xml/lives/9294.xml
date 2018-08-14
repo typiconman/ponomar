@@ -3,14 +3,14 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<READING Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 18) || doy == 20 || (doy &gt;= 22 &amp;&amp; doy &lt;= 23))"/>
-<READING Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 13 &amp;&amp; doy &lt;= 16))"/>
-<READING Type="apostol" Reading="I Cor_10:23-28" Pericope="146" EffWeek="16" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 23))"/>
-<READING Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 14 &amp;&amp; doy &lt;= 15))"/>
-<READING Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 13 &amp;&amp; doy &lt;= 16))"/>
-<READING Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 14 &amp;&amp; doy &lt;= 15))"/>
-<READING Type="gospel" Reading="Mt_24:34-44" Pericope="101" EffWeek="16" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 23))"/>
-<READING Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 18) || doy == 20 || (doy &gt;= 22 &amp;&amp; doy &lt;= 23))"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_10:23-28" Pericope="146" EffWeek="16" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 23))"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 18) || doy == 20 || (doy &gt;= 22 &amp;&amp; doy &lt;= 23))"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 13 &amp;&amp; doy &lt;= 16))"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 14 &amp;&amp; doy &lt;= 15))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" EffWeek="16" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 23))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 14 &amp;&amp; doy &lt;= 15))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 13 &amp;&amp; doy &lt;= 16))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 18) || doy == 20 || (doy &gt;= 22 &amp;&amp; doy &lt;= 23))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

@@ -2,10 +2,10 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<READING Type="apostol" Reading="Heb_12:25-26, 13:22-25" Pericope="333" EffWeek="31" Cmd="nday == -89 &amp;&amp; ((doy &gt;= 11 &amp;&amp; doy &lt;= 26))"/>
-<READING Type="apostol" Reading="Jas_3:1-10" Pericope="54" EffWeek="32" Cmd="nday == -82 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 18) || (doy &gt;= 20 &amp;&amp; doy &lt;= 21) || doy == 23 || (doy &gt;= 25 &amp;&amp; doy &lt;= 26))"/>
-<READING Type="gospel" Reading="Mk_10:2-12" Pericope="43" EffWeek="31" Cmd="nday == -89 &amp;&amp; ((doy &gt;= 11 &amp;&amp; doy &lt;= 26))"/>
-<READING Type="gospel" Reading="Mk_11:11-23" Pericope="50" EffWeek="32" Cmd="nday == -82 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 18) || (doy &gt;= 20 &amp;&amp; doy &lt;= 21) || doy == 23 || (doy &gt;= 25 &amp;&amp; doy &lt;= 26))"/>
+<SCRIPTURE Type="apostol" Reading="Jas_3:1-10" Pericope="54" EffWeek="32" Cmd="nday == -82 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 18) || (doy &gt;= 20 &amp;&amp; doy &lt;= 21) || doy == 23 || (doy &gt;= 25 &amp;&amp; doy &lt;= 26))"/>
+<SCRIPTURE Type="apostol" Reading="Heb_12:25-26, 13:22-25" Pericope="333" EffWeek="31" Cmd="nday == -89 &amp;&amp; ((doy &gt;= 11 &amp;&amp; doy &lt;= 26))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Pericope="43" EffWeek="31" Cmd="nday == -89 &amp;&amp; ((doy &gt;= 11 &amp;&amp; doy &lt;= 26))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:11-23" Pericope="50" EffWeek="32" Cmd="nday == -82 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 18) || (doy &gt;= 20 &amp;&amp; doy &lt;= 21) || doy == 23 || (doy &gt;= 25 &amp;&amp; doy &lt;= 26))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

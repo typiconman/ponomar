@@ -137,7 +137,7 @@ foreach my $nday (keys %gigantic_matrix) {
                         my $command = xmlEscape("nday == $nday && (" . stringify(@doys) . ")");
                         my $reading = $lectionary{$epistle}{$dow}{epistleReading};
                         my $pericope = $lectionary{$epistle}{$dow}{epistlePericope};
-                        print OUTPUT qq(<READING Type="apostol" Reading="$reading" Pericope="$pericope" EffWeek="$epistle" Cmd="$command"/>), "\n";
+                        print OUTPUT qq(<SCRIPTURE Type="apostol" Reading="$reading" Pericope="$pericope" EffWeek="$epistle" Cmd="$command"/>), "\n";
                     }
                     @doys = ();
                    
@@ -149,7 +149,7 @@ foreach my $nday (keys %gigantic_matrix) {
                         my $command = xmlEscape("ndayF == $nday && (" . stringify(@doys) . ")");
                         my $reading = $lectionary{$epistle}{$dow}{epistleReading};
                         my $pericope = $lectionary{$epistle}{$dow}{epistlePericope};
-                        print OUTPUT qq(<READING Type="apostol" Reading="$reading" Pericope="$pericope" EffWeek="$epistle" Cmd="$command"/>), "\n";
+                        print OUTPUT qq(<SCRIPTURE Type="apostol" Reading="$reading" Pericope="$pericope" EffWeek="$epistle" Cmd="$command"/>), "\n";
                     }
                 }
             }
@@ -168,7 +168,7 @@ foreach my $nday (keys %gigantic_matrix) {
                         my $command = xmlEscape("nday == $nday && (" . stringify(@doys) . ")");
                         my $reading = $lectionary{$gospel}{$dow}{gospelReading};
                         my $pericope = $lectionary{$gospel}{$dow}{gospelPericope};
-                        print OUTPUT qq(<READING Type="gospel" Reading="$reading" Pericope="$pericope" EffWeek="$gospel" Cmd="$command"/>), "\n";
+                        print OUTPUT qq(<SCRIPTURE Type="gospel" Reading="$reading" Pericope="$pericope" EffWeek="$gospel" Cmd="$command"/>), "\n";
                     }
                     @doys = ();
                    
@@ -180,7 +180,7 @@ foreach my $nday (keys %gigantic_matrix) {
                         my $command = xmlEscape("ndayF == $nday && (" . stringify(@doys) . ")");
                         my $reading = $lectionary{$gospel}{$dow}{gospelReading};
                         my $pericope = $lectionary{$gospel}{$dow}{gospelPericope};
-                        print OUTPUT qq(<READING Type="apostol" Reading="$reading" Pericope="$pericope" EffWeek="$gospel" Cmd="$command"/>), "\n";
+                        print OUTPUT qq(<SCRIPTURE Type="gospel" Reading="$reading" Pericope="$pericope" EffWeek="$gospel" Cmd="$command"/>), "\n";
                     }
 
                 }

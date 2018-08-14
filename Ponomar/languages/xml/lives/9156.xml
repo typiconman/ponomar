@@ -2,18 +2,18 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<READING Type="apostol" Reading="Gal_4:28-5:10" Pericope="211" EffWeek="16" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 246 &amp;&amp; doy &lt;= 267))"/>
-<READING Type="apostol" Reading="Gal_4:28-5:10" Pericope="211" EffWeek="16" Cmd="ndayF == -223 &amp;&amp; ((doy &gt;= 241 &amp;&amp; doy &lt;= 242) || (doy &gt;= 244 &amp;&amp; doy &lt;= 245) || doy == 247 || (doy &gt;= 249 &amp;&amp; doy &lt;= 250))"/>
-<READING Type="apostol" Reading="Gal_4:28-5:10" Pericope="211" EffWeek="16" Cmd="ndayF == -195 &amp;&amp; ((doy &gt;= 250 &amp;&amp; doy &lt;= 269))"/>
-<READING Type="apostol" Reading="Gal_4:28-5:10" Pericope="211" EffWeek="16" Cmd="ndayF == -230 &amp;&amp; ((doy &gt;= 235 &amp;&amp; doy &lt;= 250))"/>
-<READING Type="apostol" Reading="Lk_4:37-44" Pericope="16" EffWeek="19" Cmd="ndayF == -195 &amp;&amp; ((doy &gt;= 265 &amp;&amp; doy &lt;= 269))"/>
-<READING Type="apostol" Reading="Lk_4:37-44" Pericope="16" EffWeek="19" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 265 &amp;&amp; doy &lt;= 267))"/>
-<READING Type="apostol" Reading="Mk_6:54-7:8a" Pericope="27" EffWeek="16" Cmd="ndayF == -195 &amp;&amp; ((doy &gt;= 250 &amp;&amp; doy &lt;= 257))"/>
-<READING Type="apostol" Reading="Mk_6:54-7:8a" Pericope="27" EffWeek="16" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 246 &amp;&amp; doy &lt;= 257))"/>
-<READING Type="apostol" Reading="Mk_6:54-7:8a" Pericope="27" EffWeek="16" Cmd="ndayF == -223 &amp;&amp; ((doy &gt;= 241 &amp;&amp; doy &lt;= 242) || (doy &gt;= 244 &amp;&amp; doy &lt;= 245) || doy == 247 || (doy &gt;= 249 &amp;&amp; doy &lt;= 250))"/>
-<READING Type="apostol" Reading="Mk_6:54-7:8a" Pericope="27" EffWeek="16" Cmd="ndayF == -230 &amp;&amp; ((doy &gt;= 235 &amp;&amp; doy &lt;= 250))"/>
-<READING Type="apostol" Reading="Lk_3:19-22" Pericope="10" EffWeek="18" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 258 &amp;&amp; doy &lt;= 264))"/>
-<READING Type="apostol" Reading="Lk_3:19-22" Pericope="10" EffWeek="18" Cmd="ndayF == -195 &amp;&amp; ((doy &gt;= 258 &amp;&amp; doy &lt;= 264))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_4:28-5:10" Pericope="211" EffWeek="16" Cmd="ndayF == -223 &amp;&amp; ((doy &gt;= 241 &amp;&amp; doy &lt;= 242) || (doy &gt;= 244 &amp;&amp; doy &lt;= 245) || doy == 247 || (doy &gt;= 249 &amp;&amp; doy &lt;= 250))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_4:28-5:10" Pericope="211" EffWeek="16" Cmd="ndayF == -195 &amp;&amp; ((doy &gt;= 250 &amp;&amp; doy &lt;= 269))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_4:28-5:10" Pericope="211" EffWeek="16" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 246 &amp;&amp; doy &lt;= 267))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_4:28-5:10" Pericope="211" EffWeek="16" Cmd="ndayF == -230 &amp;&amp; ((doy &gt;= 235 &amp;&amp; doy &lt;= 250))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_6:54-7:8a" Pericope="27" EffWeek="16" Cmd="ndayF == -223 &amp;&amp; ((doy &gt;= 241 &amp;&amp; doy &lt;= 242) || (doy &gt;= 244 &amp;&amp; doy &lt;= 245) || doy == 247 || (doy &gt;= 249 &amp;&amp; doy &lt;= 250))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_6:54-7:8a" Pericope="27" EffWeek="16" Cmd="ndayF == -230 &amp;&amp; ((doy &gt;= 235 &amp;&amp; doy &lt;= 250))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_6:54-7:8a" Pericope="27" EffWeek="16" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 246 &amp;&amp; doy &lt;= 257))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_6:54-7:8a" Pericope="27" EffWeek="16" Cmd="ndayF == -195 &amp;&amp; ((doy &gt;= 250 &amp;&amp; doy &lt;= 257))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:37-44" Pericope="16" EffWeek="19" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 265 &amp;&amp; doy &lt;= 267))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:37-44" Pericope="16" EffWeek="19" Cmd="ndayF == -195 &amp;&amp; ((doy &gt;= 265 &amp;&amp; doy &lt;= 269))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_3:19-22" Pericope="10" EffWeek="18" Cmd="ndayF == -202 &amp;&amp; ((doy &gt;= 258 &amp;&amp; doy &lt;= 264))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_3:19-22" Pericope="10" EffWeek="18" Cmd="ndayF == -195 &amp;&amp; ((doy &gt;= 258 &amp;&amp; doy &lt;= 264))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>
