@@ -3,30 +3,12 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<!-- CASE ONE: IT IS JANUARY 16 OR 17; READINGS FOR THE 31ST WEEK -->
-<SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="GS == 1 &amp;&amp; doy == 15 || doy == 16"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 15 || doy == 16"/>
-
-<!-- CASE TWO: IT IS JANUARY 18 THRU 21 OR JANUARY 27 OR JANUARY 29 -->
-<!-- READINGS FOR THE 17TH WEEK -->
-<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="GS == 1 &amp;&amp; (doy &gt;= 17 &amp;&amp; doy &lt;= 20 || doy == 26 || doy == 28)"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="GS == 1 &amp;&amp; (doy &gt;= 17 &amp;&amp; doy &lt;= 20 || doy == 26 || doy == 28)"/>
-
-<!-- CASE THREE: THERE IS ONE MORE WEEK AND IT IS JANUARY 22 - 26 OR JAN 28, 30 OR 31 -->
-<!-- READINGS FOR THE 32ND WEEK -->
-<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" EffWeek="32" Cmd="GS == 1 &amp;&amp; nday == -78 &amp;&amp; (doy &gt;= 21 &amp;&amp; doy &lt;= 25 || doy == 27 || doy == 29 || doy == 30)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" EffWeek="32" Cmd="GS == 1 &amp;&amp; nday == -78 &amp;&amp; (doy &gt;= 21 &amp;&amp; doy &lt;= 25 || doy == 27 || doy == 29 || doy == 30)"/>
-
-<!-- CASE FOUR: THERE IS TWO MORE WEEKS AND IT IS JANUARY 22-26 OR JAN 28, 30 OR 31 -->
-<!-- READINGS FOR THE 17TH WEEK -->
-<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; (doy &gt;= 21 &amp;&amp; doy &lt;= 25 || doy == 27 || doy == 29 || doy == 30)"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; (doy &gt;= 21 &amp;&amp; doy &lt;= 25 || doy == 27 || doy == 29 || doy == 30)"/>
-
-<!-- CASE FIVE: LUCAN JUMP NOT USED -->
-<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" Cmd="GS == 0 &amp;&amp; nday == -78"/>
-<SCRIPTURE Type="apostol" Reading="Col_1:2b-6" Pericope="249 (mid.)" Cmd="GS == 0 &amp;&amp; nday == -85"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" Cmd="nday == -78 &amp;&amp; GS == 0"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="nday == -85 &amp;&amp; GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 19) || (doy &gt;= 24 &amp;&amp; doy &lt;= 30))"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_15:39-45" Pericope="162" EffWeek="18" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 15 &amp;&amp; doy &lt;= 16) || (doy &gt;= 20 &amp;&amp; doy &lt;= 23))"/>
+<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" EffWeek="32" Cmd="nday == -78 &amp;&amp; ((doy &gt;= 21 &amp;&amp; doy &lt;= 22) || (doy &gt;= 24 &amp;&amp; doy &lt;= 25) || doy == 27 || (doy &gt;= 29 &amp;&amp; doy &lt;= 30))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 17 &amp;&amp; doy &lt;= 30))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" EffWeek="32" Cmd="nday == -78 &amp;&amp; ((doy &gt;= 21 &amp;&amp; doy &lt;= 22) || (doy &gt;= 24 &amp;&amp; doy &lt;= 25) || doy == 27 || (doy &gt;= 29 &amp;&amp; doy &lt;= 30))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 15 &amp;&amp; doy &lt;= 16))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

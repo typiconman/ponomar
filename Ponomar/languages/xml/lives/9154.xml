@@ -2,10 +2,16 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Cor_4:17-5:5" Pericope="132" EffWeek="15"/>
-<SCRIPTURE Type="gospel" Reading="Mt_24:1-13" Pericope="97" Cmd="doy &lt; 263 &amp;&amp; GS == 1" EffWeek="15"/>
-<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" Cmd="(doy &gt;= 263 &amp;&amp; doy &lt;= 269) &amp;&amp; GS == 1" EffWeek="18"/>
-<SCRIPTURE Type="gospel" Reading="Mt_24:1-13" Pericope="97" Cmd="GS == 0"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:17-5:5" Pericope="132" EffWeek="15" Cmd="ndayF == -197 &amp;&amp; ((doy &gt;= 248 &amp;&amp; doy &lt;= 267))"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:17-5:5" Pericope="132" EffWeek="15" Cmd="ndayF == -232 &amp;&amp; ((doy &gt;= 233 &amp;&amp; doy &lt;= 248))"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:17-5:5" Pericope="132" EffWeek="15" Cmd="ndayF == -204 &amp;&amp; ((doy &gt;= 244 &amp;&amp; doy &lt;= 265))"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_4:17-5:5" Pericope="132" EffWeek="15" Cmd="ndayF == -225 &amp;&amp; ((doy &gt;= 239 &amp;&amp; doy &lt;= 240) || (doy &gt;= 242 &amp;&amp; doy &lt;= 243) || doy == 245 || (doy &gt;= 247 &amp;&amp; doy &lt;= 248))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="ndayF == -204 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 265))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="ndayF == -197 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 267))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:1-13" Pericope="97" EffWeek="15" Cmd="ndayF == -197 &amp;&amp; ((doy &gt;= 248 &amp;&amp; doy &lt;= 262))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:1-13" Pericope="97" EffWeek="15" Cmd="ndayF == -232 &amp;&amp; ((doy &gt;= 233 &amp;&amp; doy &lt;= 248))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:1-13" Pericope="97" EffWeek="15" Cmd="ndayF == -204 &amp;&amp; ((doy &gt;= 244 &amp;&amp; doy &lt;= 262))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:1-13" Pericope="97" EffWeek="15" Cmd="ndayF == -225 &amp;&amp; ((doy &gt;= 239 &amp;&amp; doy &lt;= 240) || (doy &gt;= 242 &amp;&amp; doy &lt;= 243) || doy == 245 || (doy &gt;= 247 &amp;&amp; doy &lt;= 248))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

@@ -6,18 +6,25 @@
 <SCRIPTURE Type="matins" Reading="Lk_24:12-35" Pericope="113" Cmd="dRank &lt; 7"/>
 </MATINS>
 <LITURGY>
-<!-- EPISTLE READINGS ARE ALWAYS FOR THE 27TH WEEK -->
-<SCRIPTURE Type="apostol" Reading="Eph_6:10-17" Pericope="233" EffWeek="27" Cmd="doy &lt; 344"/>
-<!-- case one: SBN; doy between 351 and 352 -->
-<!-- case two: SSBN, WEEK 28; doy between 344 and 350 -->
-<!-- case three: lucan jump cases -->
-<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" EffWeek="29" Cmd="(doy &gt;= 337 &amp;&amp; doy &lt;= 343) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="(doy &gt;= 334 &amp;&amp; doy &lt;= 336) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" EffWeek="27" Cmd="(doy &gt;= 327 &amp;&amp; doy &lt;= 333) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" EffWeek="26" Cmd="(doy &gt;= 320 &amp;&amp; doy &lt;= 326) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_10:25-37" Pericope="53" EffWeek="25" Cmd="(doy &gt;= 318 &amp;&amp; doy &lt;= 319) &amp;&amp; GS == 1"/>
-<!-- CASE FOUR: NOT USING LUCAN JUMP -->
-<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" Cmd="GS == 0 &amp;&amp; doy &lt; 344"/>
+<SCRIPTURE Type="apostol" Reading="Eph_6:10-17" Pericope="233" EffWeek="27" Cmd="ndayF == -147 &amp;&amp; ((doy &gt;= 318 &amp;&amp; doy &lt;= 333))"/>
+<SCRIPTURE Type="apostol" Reading="Eph_6:10-17" Pericope="233" EffWeek="27" Cmd="ndayF == -119 &amp;&amp; ((doy &gt;= 329 &amp;&amp; doy &lt;= 343))"/>
+<SCRIPTURE Type="apostol" Reading="Eph_6:10-17" Pericope="233" EffWeek="27" Cmd="ndayF == -112 &amp;&amp; ((doy &gt;= 333 &amp;&amp; doy &lt;= 343))"/>
+<SCRIPTURE Type="apostol" Reading="Eph_6:10-17" Pericope="233" EffWeek="27" Cmd="ndayF == -140 &amp;&amp; ((doy &gt;= 324 &amp;&amp; doy &lt;= 325) || (doy &gt;= 327 &amp;&amp; doy &lt;= 328) || doy == 330 || (doy &gt;= 332 &amp;&amp; doy &lt;= 333))"/>
+<SCRIPTURE Type="apostol" Reading="Col_3:4-11" Pericope="257" EffWeek="29" Cmd="ndayF == -119 &amp;&amp; ((doy &gt;= 344 &amp;&amp; doy &lt;= 350))"/>
+<SCRIPTURE Type="apostol" Reading="Col_3:4-11" Pericope="257" EffWeek="29" Cmd="ndayF == -112 &amp;&amp; ((doy &gt;= 344 &amp;&amp; doy &lt;= 350))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" EffWeek="29" Cmd="ndayF == -112 &amp;&amp; ((doy &gt;= 337 &amp;&amp; doy &lt;= 343))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="85" EffWeek="29" Cmd="ndayF == -119 &amp;&amp; ((doy &gt;= 337 &amp;&amp; doy &lt;= 343))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_14:16-24" Pericope="76" EffWeek="28" Cmd="ndayF == -119 &amp;&amp; ((doy &gt;= 344 &amp;&amp; doy &lt;= 350))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_14:16-24" Pericope="76" EffWeek="28" Cmd="ndayF == -112 &amp;&amp; ((doy &gt;= 344 &amp;&amp; doy &lt;= 350))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" EffWeek="26" Cmd="ndayF == -140 &amp;&amp; ((doy &gt;= 324 &amp;&amp; doy &lt;= 325))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_12:16-21" Pericope="66" EffWeek="26" Cmd="ndayF == -147 &amp;&amp; ((doy &gt;= 320 &amp;&amp; doy &lt;= 326))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="ndayF == -119 &amp;&amp; ((doy &gt;= 334 &amp;&amp; doy &lt;= 336))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="ndayF == -112 &amp;&amp; ((doy &gt;= 334 &amp;&amp; doy &lt;= 336))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" EffWeek="27" Cmd="ndayF == -147 &amp;&amp; ((doy &gt;= 327 &amp;&amp; doy &lt;= 333))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" EffWeek="27" Cmd="ndayF == -112 &amp;&amp; (doy == 333)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" EffWeek="27" Cmd="ndayF == -119 &amp;&amp; ((doy &gt;= 329 &amp;&amp; doy &lt;= 333))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:10-17" Pericope="71" EffWeek="27" Cmd="ndayF == -140 &amp;&amp; ((doy &gt;= 327 &amp;&amp; doy &lt;= 328) || doy == 330 || (doy &gt;= 332 &amp;&amp; doy &lt;= 333))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_10:25-37" Pericope="53" EffWeek="25" Cmd="ndayF == -147 &amp;&amp; ((doy &gt;= 318 &amp;&amp; doy &lt;= 319))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

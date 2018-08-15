@@ -3,36 +3,29 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<!-- CASE ONE: DECEMBER 12 TO DECEMBER 16 -->
-<SCRIPTURE Type="apostol" Reading="Col_1:2b-6" Pericope="249 (mid.)" EffWeek="31" Cmd="(doy &gt;= 345 &amp;&amp; doy &lt;= 349) &amp;&amp; GS == 1"/>
-<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" EffWeek="30" Cmd="(doy &gt;= 345 &amp;&amp; doy &lt;= 349) &amp;&amp; GS == 1"/>
-
-<!-- CASE TWO: JANUARY 14 OR JANUARY 15; READINGS FOR THE 31ST SATURDAY -->
-<SCRIPTURE Type="apostol" Reading="Col_1:2b-6" Pericope="249 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 13 || doy == 14"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 13 || doy == 14"/>
-
-<!-- CASE SOMETHING: IT IS JANUARY 5 AND WE NEED MORE READINGS -->
-<SCRIPTURE Type="apostol" Reading="Eph_5:1-8a" Pericope="228" EffWeek="30" Cmd="GS == 1 &amp;&amp; doy == 4 &amp;&amp; nday == -91"/>
-<SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" EffWeek="16" Cmd="GS == 1 &amp;&amp; doy == 4 &amp;&amp; nday == -91"/>
-
-<!-- CASE THREE: TWO MORE WEEKS OF READINGS AND IT IS JANUARY 1-3 or 7-10 -->
-<!-- READINGS FOR THE 31ST SATURDAY -->
-<SCRIPTURE Type="apostol" Reading="Col_1:2b-6" Pericope="249 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; (doy &gt;= 6 &amp;&amp; doy &lt;= 9 || doy &lt;= 2)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; nday == -85 &amp;&amp; (doy &gt;= 6 &amp;&amp; doy &lt;= 9 || doy &lt;= 2)"/>
-
-<!-- CASE FOUR: TWO MORE WEEKS OF READINGS AND IT IS DECEMBER 31 OR DECEMBER 27 -->
-<!-- READINGS FOR THE 31ST SATURDAY -->
-<SCRIPTURE Type="apostol" Reading="Col_1:2b-6" Pericope="249 (mid.)" EffWeek="31" Cmd="GS == 1 &amp;&amp; ndayF == -85 &amp;&amp; (doy == 360 || doy == 364)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; ndayF == -85 &amp;&amp; (doy == 360 || doy == 364)"/>
-
-<!-- CASE FOUR: TWO MORE WEEKS OF READINGS AND IT IS DECEMBER 29 OR DECEMBER 30 -->
-<!-- READINGS FOR THE 32nd SATURDAY -->
-<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" EffWeek="32" Cmd="GS == 1 &amp;&amp; ndayF == -85 &amp;&amp; (doy == 362 || doy == 363)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" EffWeek="32" Cmd="GS == 1 &amp;&amp; ndayF == -85 &amp;&amp; (doy == 362 || doy == 363)"/>
-
-<!-- CASE FIVE: NOT USING THE LUCAN JUMP -->
-<SCRIPTURE Type="apostol" Reading="Col_1:2b-6" Pericope="249 (mid.)" Cmd="GS == 0 &amp;&amp; doy &lt; 350"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" Cmd="GS == 0 &amp;&amp; doy &lt; 350" /> 
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid.)" EffWeek="31" Cmd="ndayF == -92 &amp;&amp; (doy == 363)"/>
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid.)" EffWeek="31" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 4) || (doy &gt;= 6 &amp;&amp; doy &lt;= 14))"/>
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid.)" EffWeek="31" Cmd="ndayF == -85 &amp;&amp; ((doy &gt;= 360 &amp;&amp; doy &lt;= 362) || doy == 364)"/>
+<SCRIPTURE Type="apostol" Reading="Col_1:3-6" Pericope="249 (mid.)" EffWeek="31" Cmd="ndayF == -120 &amp;&amp; ((doy &gt;= 345 &amp;&amp; doy &lt;= 349))"/>
+<SCRIPTURE Type="apostol" Reading="I Thess_5:14-23" Pericope="273" EffWeek="32" Cmd="ndayF == -85 &amp;&amp; (doy == 363)"/>
+<SCRIPTURE Type="apostol" Reading="Gal_3:8-12" Pericope="205" EffWeek="26" Cmd="ndayF == -120 &amp;&amp; ((doy &gt;= 350 &amp;&amp; doy &lt;= 356))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_3:8-12" Pericope="205" EffWeek="26" Cmd="ndayF == -92 &amp;&amp; (doy == 356)"/>
+<SCRIPTURE Type="apostol" Reading="Gal_3:8-12" Pericope="205" EffWeek="26" Cmd="ndayF == -113 &amp;&amp; ((doy &gt;= 351 &amp;&amp; doy &lt;= 352) || (doy &gt;= 354 &amp;&amp; doy &lt;= 355))"/>
+<SCRIPTURE Type="apostol" Reading="Eph_5:1-8a" Pericope="228" EffWeek="30" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 4) || (doy &gt;= 6 &amp;&amp; doy &lt;= 12))"/>
+<SCRIPTURE Type="apostol" Reading="Eph_5:1-8a" Pericope="228" EffWeek="30" Cmd="ndayF == -92 &amp;&amp; (doy == 364)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:18-29" Pericope="72" EffWeek="29" Cmd="ndayF == -113 &amp;&amp; ((doy &gt;= 351 &amp;&amp; doy &lt;= 352) || (doy &gt;= 354 &amp;&amp; doy &lt;= 355))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:18-29" Pericope="72" EffWeek="29" Cmd="ndayF == -92 &amp;&amp; (doy == 356)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_13:18-29" Pericope="72" EffWeek="29" Cmd="ndayF == -120 &amp;&amp; ((doy &gt;= 350 &amp;&amp; doy &lt;= 356))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="ndayF == -92 &amp;&amp; (doy == 363)"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="nday == -85 &amp;&amp; ((doy &gt;= 1 &amp;&amp; doy &lt;= 4) || (doy &gt;= 6 &amp;&amp; doy &lt;= 14))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="ndayF == -85 &amp;&amp; ((doy &gt;= 361 &amp;&amp; doy &lt;= 362) || doy == 364)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="nday == -85 &amp;&amp; (doy == 0)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="ndayF == -85 &amp;&amp; (doy == 360)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 2))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="ndayF == -92 &amp;&amp; (doy == 364)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_14:1-11" Pericope="74" EffWeek="30" Cmd="ndayF == -120 &amp;&amp; ((doy &gt;= 345 &amp;&amp; doy &lt;= 349))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_17:3-10" Pericope="84" EffWeek="32" Cmd="ndayF == -85 &amp;&amp; (doy == 363)"/>
+<SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" EffWeek="16" Cmd="nday == -92 &amp;&amp; ((doy &gt;= 3 &amp;&amp; doy &lt;= 4) || (doy &gt;= 6 &amp;&amp; doy &lt;= 12))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

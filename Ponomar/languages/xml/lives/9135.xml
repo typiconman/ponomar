@@ -2,8 +2,14 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="II Cor_8:7-15" Pericope="186" EffWeek="13"/>
-<SCRIPTURE Type="gospel" Reading="Mk_3:6-12" Pericope="11" EffWeek="13"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_8:7-15" Pericope="186" EffWeek="13" Cmd="ndayF == -223 &amp;&amp; ((doy &gt;= 225 &amp;&amp; doy &lt;= 246))"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_8:7-15" Pericope="186" EffWeek="13" Cmd="ndayF == -216 &amp;&amp; ((doy &gt;= 229 &amp;&amp; doy &lt;= 248))"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_8:7-15" Pericope="186" EffWeek="13" Cmd="ndayF == -244 &amp;&amp; ((doy &gt;= 220 &amp;&amp; doy &lt;= 221) || (doy &gt;= 223 &amp;&amp; doy &lt;= 224) || doy == 226 || (doy &gt;= 228 &amp;&amp; doy &lt;= 229))"/>
+<SCRIPTURE Type="apostol" Reading="II Cor_8:7-15" Pericope="186" EffWeek="13" Cmd="ndayF == -251 &amp;&amp; ((doy &gt;= 214 &amp;&amp; doy &lt;= 229))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_3:6-12" Pericope="11" EffWeek="13" Cmd="ndayF == -223 &amp;&amp; ((doy &gt;= 225 &amp;&amp; doy &lt;= 246))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_3:6-12" Pericope="11" EffWeek="13" Cmd="ndayF == -216 &amp;&amp; ((doy &gt;= 229 &amp;&amp; doy &lt;= 248))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_3:6-12" Pericope="11" EffWeek="13" Cmd="ndayF == -244 &amp;&amp; ((doy &gt;= 220 &amp;&amp; doy &lt;= 221) || (doy &gt;= 223 &amp;&amp; doy &lt;= 224) || doy == 226 || (doy &gt;= 228 &amp;&amp; doy &lt;= 229))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_3:6-12" Pericope="11" EffWeek="13" Cmd="ndayF == -251 &amp;&amp; ((doy &gt;= 214 &amp;&amp; doy &lt;= 229))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

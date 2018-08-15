@@ -3,8 +3,8 @@
 <!-- THIS IS THE 38th SATURDAY AFTER PENTECOST -->
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" EffWeek="33" Pericope="293"/>
-<SCRIPTURE Type="gospel" Reading="Lk_18:2-8a" Pericope="88" EffWeek="33" />
+<SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" Pericope="293" EffWeek="33" Cmd="nday == -71 &amp;&amp; ((doy &gt;= 29 &amp;&amp; doy &lt;= 44))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:2-8a" Pericope="88" EffWeek="33" Cmd="nday == -71 &amp;&amp; ((doy &gt;= 29 &amp;&amp; doy &lt;= 44))"/>
 </LITURGY>
 </SERVICE>
 </SAINT>
