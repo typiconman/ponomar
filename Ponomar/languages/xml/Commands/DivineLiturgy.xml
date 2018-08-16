@@ -4,13 +4,15 @@
 <!-- If  Transfer is True, then we run the scripture transfer algorithm; if it is 0, then we do nothing -->
 <COMMAND Name="Transfer" Value="nday &gt;= 52 || nday &lt; -55" Comment="This determines whether the sequential readings may be skipped or transferred." Cmd="GS == 1"/>
 <COMMAND Name="Transfer" Value="nday &gt;= 52 || nday &lt; -55" Comment="This determines whether the sequential readings may be skipped or transferred." Cmd="GS == 0"/>
-<COMMAND Name="Suppress" Value="(doy == 358 || doy == 357 || (doy == 4 &amp;&amp; dow != 0) || doy == 5)" Comment="Suppress sequential readings on eve and day of Nativity and Theophany"/>
-<COMMAND Name="Suppress" Value="(doy == 256 || doy == 217) &amp;&amp; dow == 0" Comment="Suppress Sunday readings if Exaltation or Transfiguration falls on Sunday"/>
+<COMMAND Name="Suppress" Value="doy == 4 &amp;&amp; dow != 0 &amp;&amp; dow != 6" Comments="Eve of Theophany can have seq. readings on Sat. (see Table 25b, 2019) and on Sun. (see Table 24b, 2087)" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="doy == 357 &amp;&amp; dow != 6" Comments="Eve of Nativity can have seq. readings on Sat. (see Table 27a, 2084)" Cmd="GS == 1"/>
+<COMMAND Name="Suppress" Value="(doy == 358 || doy == 5)" Comment="Nativity and Theophany never have seq. readings"/>
+<COMMAND Name="Suppress" Value="(doy == 256 || doy == 217) &amp;&amp; dow == 0" Comment="Suppress seq. readings if Exaltation or Transfiguration falls on Sunday"/>
 <!-- If Suppress is True, then the readings for the day are not read and not transferred -->
 <!-- If Class3Transfers is TRUE, then the daily readings should be transferred to another day. -->
 <!-- I am making this rule and Suppress mutually exclusive, but I don't think this should affect anything -AA -->
 <COMMAND Name="Class3Transfers" Value="!(doy == 358 || doy == 357 || doy == 4 || doy == 5 || doy == 256 || doy == 217) &amp;&amp; ((dRank &gt;= 5 &amp;&amp; dow != 0) || dRank == 8)" Cmd="GS == 1 || GS == 0"/>
-<COMMAND Name="Class3Transfers" Value="(doy == 3 &amp;&amp; dow == 5) || (doy == 356 &amp;&amp; dow == 5)" Comment="There is no Liturgy on Friday when the Royal Hous occur. The readings are moved to Thursday." Cmd="GS == 1 || GS == 0"/>
+<COMMAND Name="Class3Transfers" Value="(doy == 3 &amp;&amp; dow == 5) || (doy == 356 &amp;&amp; dow == 5)" Comment="There is no Liturgy on Friday when the Royal Hours occur. The readings are moved to Thursday." Cmd="GS == 1 || GS == 0"/>
 <COMMAND Name="Class3Transfers" Value="(doy == 256 || doy == 217) &amp;&amp; dow != 0" Comments="Exaltation and Transfiguration readings are only transferred if it's not a Sunday"/>
 <!-- Can I accept transfers from Tomorrow today -->
 <!-- XXX: check of nday > -63 and nday <= 0 is superfluous and will be removed -->
