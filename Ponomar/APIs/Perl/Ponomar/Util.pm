@@ -2,7 +2,7 @@ package Ponomar::Util;
 
 =head1 Ponomar::Util
 
-Ponomar::Util - Exports utility functions for Ponomar API
+Ponomar::Util - Exports utility functions for Ponomar API.
 
 =head3 DESCRIPTION
 
@@ -15,6 +15,7 @@ use utf8;
 require 5.004;
 use POSIX qw(floor);
 use Carp;
+# use File::ShareDir 'dist_dir';
 require Exporter;
 require Ponomar::JDate;
 use vars qw (@ISA @EXPORT_OK %EXPORT_TAGS @EXPORT $VERSION $basepath);
@@ -25,8 +26,7 @@ BEGIN {
 	@ISA 	 = qw( Exporter );
 	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax isNumeric getMatinsGospel julianFromGregorian getNextYearWithBoundary getKeyOfBoundaries);
 	@EXPORT_OK = qw(getIndiction getSolarCycle getConcurrent getLunarCycle getFoundation getEpacta getNextFullMoon getVernalEquinox getJulianDayFromMilankovich getMilankovichPascha);
-	$basepath = "/home/sasha/Documents/ponomar/Ponomar/languages/";
-#	$basepath = "/home/ponomar0/git/ponomar/Ponomar/languages/";
+	$basepath = "/home/sasha/Documents/ponomar/Ponomar/languages/"; # dist_dir('Ponomar');
 }
 
 my %matinsGospels = (
@@ -91,9 +91,11 @@ sub findBottomUp {
 
 THIS ALGORITHM IMPLEMENTS THE TOP-DOWN APPROACH FOR READING FILES DESCRIBED BY YURI IN op. cit., p. 28
 
-WE CREATE AN ARRAY OF ALL EXTANT FILES NAMED C<$file> IN ALL PATHS BEGINNING WITH BASEPATH AND UP TO C<< $basepath/<language>/<script>/<locale>/file >>
+WE CREATE AN ARRAY OF ALL EXTANT FILES NAMED C<$file> IN ALL PATHS BEGINNING WITH BASEPATH AND UP TO 
 
-PARAMETERS: SAME AS ABOVE. Returns: an array of all files in the top-down path. Carps and returns an empty array if not files were found.
+C<< $basepath/<language>/<script>/<locale>/file >>
+
+PARAMETERS: SAME AS ABOVE. Returns: an array of all files in the top-down path. Carps and returns an empty array if no files were found.
 
 =cut
 
@@ -115,7 +117,7 @@ sub findTopDown {
 =item exists_saint($cid)
 
 Checks if a saint with CId C<$cid> exists in the file structure.
-Returns 1 if saint exists and 0 otherwise.
+Returns C<1> if saint exists and C<0> otherwise.
 
 =cut
 
@@ -190,9 +192,9 @@ sub getGregorianOffset ($) {
 
 Returns a Ponomar::JDate object with the date of Today according to the System clock.
 
-Optional parameter C<$timeshift> indicates a Time zone shift from UTC in HOURS.
+Optional parameter C<$timeshift> indicates a Time zone shift from UTC in hours.
 
-B<WARNING>: Ponomar::Util relies on time to set Today. It assumes that the system's epoch begins
+B<WARNING>: Ponomar::Util relies on C<time> to set Today. It assumes that the system's epoch begins
 on 00:00:00 UTC, January 1, 1970 (GREGORIAN!). It has recently come to my attention that this is not true for all systems. I know of no way to get around this problem, so this should be considered a bug.
 
 =cut
@@ -288,7 +290,7 @@ sub getPreviousYearWithSamePascha {
 
 =item getNextYearWithBoundary ($i, $Year)
 
-Solves a reverse computus problem by returning the next year after $Year when pascha occurs $i days after March 22
+Solves a reverse computus problem by returning the next year after C<$Year> when pascha occurs C<$i> days after March 22.
 
 =cut
 
@@ -441,8 +443,8 @@ sub getSolarCycle {
 
 =item getConcurrent( $year )
 
-Given C<$year>, a year AD, returns the concurrent (a number from 1 to 7)
-The concurrent numbers are associated with the Slavonic вруцелѣто letters so that 1 = А, 2 = В, etc.
+Given C<$year>, a year AD, returns the concurrent (a number from C<1> to C<7>).
+The concurrent numbers are associated with the Slavonic вруцелѣто letters so that C<1> = А, C<2> = В, etc.
 
 =cut
 
@@ -474,7 +476,7 @@ sub getLunarCycle {
 
 =item getFoundation( $year )
 
-Given C<$year>, a year AD, returns the foundation (the "age of the moon" on March 1 of that year)
+Given C<$year>, a year AD, returns the foundation (the ``age of the moon" on March 1 of that year)
 
 =cut
 
@@ -491,7 +493,8 @@ sub getFoundation {
 
 =item getEpacta( $year )
 
-Given C<$year>, a year AD, returns the Epacta. Note that this is not the Roman Epacta (the age of the moon on January 1). Rather, this is the number that needs to be added to make the Foundation 21 (51).
+Given C<$year>, a year AD, returns the Epacta. Note that this is not the Roman Epacta (the age of the moon on January 1). 
+Rather, this is the number that needs to be added to make the Foundation C<21> (or C<51>).
 
 =cut
 
@@ -504,7 +507,7 @@ sub getEpacta {
 
 =item getKeyOfBoundaries( $year )
 
-Given C<$year>, a year AD, returns the Key of Boundaries, a letter indicating the structure of the year
+Given C<$year>, a year AD, returns the Key of Boundaries, a letter indicating the structure of the year.
 
 =cut
 
@@ -529,9 +532,9 @@ sub getKeyOfBoundaries {
 
 =item getGregorianEaster( $year )
 
-Given C<$year>, a year AD, returns the date of the Gregorian Easter (according to the Julian calendar)
+Given C<$year>, a year AD, returns the date of the Gregorian Easter (according to the Julian calendar).
 If C<$year> is less than 1583, this routine croaks.
-This routine uses the formulae as given by Meuss, Astronomical Algorithms, Chapter 8
+This routine uses the formulae as given by Meuss, Astronomical Algorithms, Chapter 8.
 
 =cut
 
@@ -557,7 +560,7 @@ sub getGregorianEaster {
 
 =item getPassover( $year )
 
-Given C<$year>, a year AD, returns the date of the Jewish Passover (15 Nisan) according to the Julian calendar
+Given C<$year>, a year AD, returns the date of the Jewish Passover (15 Nisan) according to the Julian calendar.
 The formulae are due to Meeus, Astronomical Algorithms, Chapter 9.
 
 Note that this is the actual, modern Jewish Pesach, not the ecclesiastical Old Testament Passover.
@@ -651,9 +654,9 @@ sub getCivilHolidays {
 
 =item getNextFullMoon( $date )
 
-Give C<$date>, a JDate object (date on the Julian calendar)
-Returns the Date and Time (Universal Time) of the next astronomical full moon.
-Used in Milankovic calculations
+Given C<$date>, a JDate object, returns the Date and Time (Universal Time)
+of the next astronomical full moon.
+Used in Milankovic calculations.
 
 Formulae due to Meuss, p. 350ff.
 
@@ -750,7 +753,7 @@ sub getNextFullMoon {
 
 Given C<$year>, a year between AD 1000 and AD 3000, returns the date of the March equinox
 
-Formulae due to Meuss, Astronomical Algorithms, pp. 177--182.
+Formulae due to Meuss, Astronomical Algorithms, pp. 177-182.
 
 =cut
 
@@ -797,7 +800,7 @@ sub getVernalEquinox {
 
 =item isMilankovichLeap ($year) 
 
-Given C<$year>, a year, returns 0 unless it is a leap year on the Milankovich calendar
+Given C<$year>, a year, returns 0 unless it is a leap year on the Milankovich calendar.
 
 =cut
 
@@ -846,12 +849,12 @@ sub getJulianDayFromMilankovich {
 
 =item getDeltaT ( $date )
 
-Give C<$date>, a JDate object with year between -1999 and +3000 on the (proleptic) Gregorian calendar,
- returns Delta T, the offset (in seconds) between Dynamic Time and Universal Time
-Note that UT = TD - DeltaT
+Give C<$date>, a JDate object with year between 1999 BC and 3000 AD on the (proleptic) Julian calendar,
+returns Delta T, that is, the offset (in seconds) between Dynamic Time and Universal Time.
+Note that UT = TD - DeltaT.
 These formulae are by Fred Espenak and Jean Meeus, see 
-http://eclipse.gsfc.nasa.gov/SEcat5/deltatpoly.html
-for more information
+L<http://eclipse.gsfc.nasa.gov/SEcat5/deltatpoly.html>
+for more information.
 
 =cut
 
@@ -901,29 +904,41 @@ sub getDeltaT {
 
 =item getMilankovichPascha ( $year )
 
-Wrapper sub for Milankovich calculations. Given a C<$year> AD, return the Pascha
+Wrapper sub for Milankovich calculations. Given a C<$year> AD, returns the Pascha
 according to the Milankovich specification.
 
 The Milankovich Pascha is defined as 
-The Sunday after the midnight-to-midnight day at the meridian of the Church of the Holy Sepulchre in Jerusalem during which the first full moon after the vernal equinox occurs.
+the Sunday after the midnight-to-midnight day at the meridian of the Church of the Holy Sepulchre in Jerusalem during which the first full moon after the vernal equinox occurs.
 
-I<Method for computing Milankovic Pascha>
+=head3 Method for computing Milankovich Pascha
 
-1. Compute the date and time of the Vernal Equinox for C<$year> (returns C<$EQ>, a Julian Day)
-2. Compute the date and time of the full moon that occurs after C<$EQ> (return C<$MOON>, a Julian Day in Dynamic Time)
-3. Get the Date part of C<$MOON> (returns C<$DAY>, C<$MONTH>, a date on the Julian calendar)
-4. Convert the time part of C<$MOON> to Universal Time using the polynomials here:
-	http://eclipse.gsfc.nasa.gov/SEcat5/deltatpoly.html
-5. Convert the Universal Time to local time at the Church of the Holy Sepulchre. For simplicity, assume
-  Holy Sepulchre is two hours ahead of UT (This is C<$TIME> in Hours.decimal)
-6. If C<$TIME> > 24, add one to C<$DAY> (note this may push C<$MONTH> up)
-7. Compute the next Sunday after C<$DAY> (C<$PDAY>). This is the date of Pascha.
+=over 8
 
-Returns a JDate object containing the Julian Day of the Milankovich Pascha
+=item Compute the date and time of the Vernal Equinox for C<$year> (returns C<$EQ>, a Julian Day)
+
+=item Compute the date and time of the full moon that occurs after C<$EQ> (returns C<$MOON>, a Julian Day in Dynamic Time)
+
+=item Get the Date part of C<$MOON> (returns C<$DAY>, C<$MONTH>, a date on the Julian calendar)
+
+=item Convert the time part of C<$MOON> to Universal Time using the polynomials here:
+	L<http://eclipse.gsfc.nasa.gov/SEcat5/deltatpoly.html>.
+
+=item Convert the Universal Time to local time at the Church of the Holy Sepulchre. For simplicity, assume the Holy Sepulchre is always two hours ahead of UT. (This is C<$TIME> in Hours, including a fractional component).
+
+=item If C<$TIME> > 24, add C<1> to C<$DAY> (note this may also push C<$MONTH> up).
+
+=item Compute the next Sunday after C<$DAY> (C<$PDAY>). This is the date of Pascha.
+
+=back
+
+The method returns a JDate object containing the Julian Day of the Milankovich Pascha.
 
 B<NOTE>: the resulting JDate object is a Julian Day. Since you're working with the 
-Milankovich calendar, you will probably want the date on the Milankovich calendar.
-Use the getMilankovich... functions of the JDate class.
+Milankovich calendar, you will probably want the date according to the Milankovich calendar.
+Use the C<getMilankovich...> functions of the JDate class, e.g.:
+
+	$pascha = getMilankovichPascha(2100);
+	print $pascha->getMilankovichDay();
 
 =back
 

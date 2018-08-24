@@ -2,7 +2,8 @@ package Ponomar::Sunrise;
 
 =head1 Ponomar::Sunrise
 
-Ponomar::Sunrise - Module that provides functions for the computation of Sunrise and Sunset
+Ponomar::Sunrise - Module that provides functions for the computation of Sunrise and Sunset.
+Do not call directly, rather use C<JDate::getSunrise()>.
 
 =cut
 
@@ -366,27 +367,22 @@ sub ASTRONOMICAL () { -18 }
 
 =head3 DESCRIPTION
 
-Modified Astro::Sunrise to work with dates on the Julian Calendar. Removed dependency on DateTime. Removed wrapper methods, which have been moved to Ponomar::JDate. Basic computation kept in tact.
+Modified version of C<Astro::Sunrise> to work with dates on the Julian Calendar. Dependency on C<DateTime> removed.
+Removed wrapper methods, which have been moved to C<Ponomar::JDate>. Basic computation kept in tact.
 
 =head3 SPECIAL THANKS
 
-Modified from Astro::Sunrise, which is by
+Modified from C<Astro::Sunrise>, which is by
 Ron Hill
-rkhill@firstlight.net
+L<rkhill@firstlight.net>.
 
 =head3 COPYRIGHT and LICENSE
 
 Here is the copyright information provided by Ron Hill in Astro::Sunrise:
 
-Here is the copyright information provided by Paul Schlyer:
+Written as DAYLEN.C, 1989-08-16. Modified to SUNRISET.C, 1992-12-01.
 
-Written as DAYLEN.C, 1989-08-16
-
-Modified to SUNRISET.C, 1992-12-01
-
-(c) Paul Schlyter, 1989, 1992
-
-Released to the public domain by Paul Schlyter, December 1992
+Copyright Paul Schlyter, 1989, 1992. Released to the public domain by Paul Schlyter, December 1992.
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),

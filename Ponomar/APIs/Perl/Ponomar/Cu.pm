@@ -7,7 +7,7 @@ Ponomar::Cu -- Church Slavonic support in the Ponomar API
 =head3 DESCRIPTION
 
 This is not an Object Oriented class, but rather a set of utility functions for working with Church Slavonic texts.
-This code is DEPRECATED and will be deleted. Use L<Lingua::CU> instead.
+This code is DEPRECATED and will be deleted. Use L<Lingua::CU> class instead.
 TODO: The Ponomar API needs to be rewritten so that everything uses Lingua::CU.
 
 =cut
@@ -46,7 +46,7 @@ Takes C<$string>, a string in HIP (Hyperinvariant Presentation), and converts it
 
 sub hip2unicode {
 	my $string = shift;
-	
+	Carp::carp('Sub hip2unicode() is deprecated.');
 	return;
 }
 
@@ -58,6 +58,7 @@ Takes C<$string>, a string in UCS (Universal Church Slavonic), and converts it t
 
 sub ucs2unicode {
 	my $string = shift;
+	Carp::carp('Sub ucs2unicode() is deprecated.');
 
 	my %dictionary = (
 		"!" => chr(0x0021),
@@ -293,6 +294,7 @@ including numerals.
 
 sub resolveTitli {
 	my $string = shift;
+	Carp::carp('Sub resolveTitli() is deprecated.');
 	
 	return;
 }
@@ -305,6 +307,7 @@ Takes C<$string>, a numeral in Church Slavonic, and converts it to a numeral in 
 
 sub cu2arabic {
 	my $numeral = shift;
+	Carp::carp('Sub cu2arabic() is deprecated.');
 	
 	return;
 }
@@ -317,7 +320,7 @@ Takes C<$number>, a number, and returns its representation in Slavonic numerals.
 
 sub arabic2cu {
 	my $number = shift;
-	
+	Carp::carp('Sub arabic2cu() is deprecated.');	
 	return;
 }
 

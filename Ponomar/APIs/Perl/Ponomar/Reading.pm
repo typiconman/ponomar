@@ -2,7 +2,7 @@ package Ponomar::Reading;
 
 =head1 Ponomar::Reading
 
-Ponomar::Reading - a scripture reading object for the Ponomar API
+Ponomar::Reading - a scripture reading object for the Ponomar API.
 
 =cut
 
@@ -24,15 +24,15 @@ BEGIN {
 
 =item new( %attributes )
 
-Creates a new Reading object
+Creates a new Reading object.
 
-A Reading object has the following elements
+A Reading object has the following elements:
 
-	Reading => The Reading (e.g., Gen_1:1-13)
-	Pericope => The Pericope (e.g., 103 -- OPTIONAL)
-	EffWeek => The EffWeek (e.g., 17 -- OPTIONAL)
-	Type => The Type of readings. This is useless, except for Liturgy, where it is apostol or gospel
-	saint => The Assigned Saint or Commemoration ID
+C<Reading> => The Reading (e.g., I<Gen_1:1-13>)
+C<Pericope> => The Pericope number (e.g., C<103> -- OPTIONAL)
+C<EffWeek> => The effective week of the reading (e.g., C<17> -- OPTIONAL)
+C<Type> => The Type of reading. This is useless, except for Liturgy, where it must be one of C<apostol> or C<gospel>.
+C<saint> => The Assigned Saint or Commemoration ID.
 
 =cut
 
@@ -56,7 +56,7 @@ sub getReading {
 
 =item setReading($string)
 
-Sets the Reading of the object to $string
+Sets the Reading of the object to C<$string>.
 
 =cut
 
@@ -117,7 +117,7 @@ sub getCmd {
 
 =item equals($other)
 
-Tests to see if this Readings object is equal to another object
+Tests to see if this Reading object is equal to another object C<$other>.
 
 The following are equivalent:
 
@@ -126,7 +126,7 @@ The following are equivalent:
 2. C<< $ReadingsA->{Reading} = $ReadingsB->{Reading} >> and
 C<< $ReadingsA->{Saint}   = $ReadingsB->{Saint} >>
    
-Note that this method has been overloaded as C<==> Thus, you can write C<$ReadingsA == $ReadingsB>.
+Note that this method has been overloaded as C<==>; thus, you can write C<$ReadingsA == $ReadingsB>.
 
 =cut
 
@@ -140,11 +140,11 @@ sub equals {
 
 =item notEquals($other)
 
-Tests to see if this Readings object is not equal to another object
+Tests to see if this Reading object is not equal to another Reading object C<$other>.
 
 The following are equivalent:
 
-1. C<$ReadingsA> is not equal to C<$ReadingsB>
+1. C<$ReadingsA> is not equal to C<$ReadingsB>.
 
 2. C<< $ReadingsA->{Reading} != $ReadingsB->{Reading} >> OR
 C<< $ReadingsA->{Saint}    != $ReadingsB->{Saint} >>

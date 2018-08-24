@@ -1,33 +1,117 @@
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{textcomp}
-\usepackage{fullpage}
-\usepackage{makeidx}
-\usepackage{hyperref}
-\makeindex
+\documentclass[11pt]{ltxdoc}
+\usepackage[usenames,dvipsnames,table]{xcolor}
+\usepackage{xltxtra}
+%\usepackage{makeidx}
+\usepackage{ccicons}
+\usepackage{polyglossia}
+\definecolor{myblue}{rgb}{0.02,0.04,0.48}
+\definecolor{lightblue}{rgb}{0.61,.8,.8}
+\definecolor{myred}{rgb}{0.65,0.04,0.07}
+\usepackage[
+    bookmarks=true,
+    colorlinks=true,
+    linkcolor=myblue,
+    urlcolor=myblue,
+    citecolor=myblue,
+    hyperindex=false,
+    hyperfootnotes=false,
+    pdftitle={Ponomar: An Application Programming Interface for Liturgical Computations in the Perl Language},
+    pdfauthor={Aleksandr Andreev},
+    pdfkeywords={Ponomar, liturgics, computational science, liturgy, Orthodox Church}
+    ]{hyperref}
+%\makeindex
+\setmainlanguage[variant=american]{english}
 \title{Ponomar: An Application Programming Interface for Liturgical Computations in the Perl Language}
 \author{Aleksandr Andreev \and Yuri Shardt}
 \date{Alpha Version as of \today}
 
+% declare fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Linux Libertine O}
+\setsansfont{DejaVu Sans}
+\setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+
+\linespread{1.05}
+\frenchspacing
+\EnableCrossrefs
+\CodelineIndex
+\RecordChanges
+% COMMENT THE NEXT LINE TO INCLUDE THE CODE
+\AtBeginDocument{\OnlyDescription}
+
 \begin{document}
 
-\maketitle
+%\maketitle
+
+\begin{titlepage}
+
+\centering
+\scshape
+
+\vspace*{\baselineskip}
+
+\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal rule
+\rule{\textwidth}{0.4pt} % Thin horizontal rule
+	
+\vspace{0.95\baselineskip} % Whitespace above the title
+	
+{\Huge PONOMAR \\} % Title
+	
+\vspace{0.95\baselineskip} % Whitespace below the title
+	
+\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal rule
+\rule{\textwidth}{1.6pt} % Thick horizontal rule
+
+\vspace{2\baselineskip} % Whitespace after the title block
+
+{\large An Application Programming Interface \\ for Liturgical Computations \\ in the Perl Language }
+
+\vspace*{3\baselineskip}
+
+Created By
+	
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+	
+	{\scshape\Large Aleksandr Andreev \\ Yuri Shardt \\} % Editor list
+	
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	
+	\textit{Slavonic Computing Initiative} % Editor affiliation
+	
+	\vfill % Whitespace between editor names and publisher logo
+	
+	%------------------------------------------------
+	%	Publisher
+	%------------------------------------------------
+	
+%	\plogo % Publisher logo
+	
+	\vspace{0.3\baselineskip} % Whitespace under the publisher logo
+	
+	{\large St. Petersburg} % Publisher
+
+	\the\year % Publication year
+
+\end{titlepage}
+
+\clearpage
+
+\noindent \textcopyright{} 2012--{\the\year} Aleksandr Andreev and Yuri Shardt \\
+
+\noindent This document is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit the \href{http://creativecommons.org/licenses/by-sa/4.0/}{CreativeCommons website}. \\
+
+\noindent The software is provided ``as is'', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
+
+\clearpage
+
+%\section{Installation Instructions}
+
+%To work with the API, you need to download all of the API files and all of the XML files. The easiest way to do this is to checkout the files from the \href{https://code.google.com/p/ponomar}{Ponomar Google Code repository}.
+%You can put the API files into a different directory or you can keep them in the svn tree. In any case, you need to open the \path{Ponomar/Util.pm} file and
+%modify the |basepath| variable on line 27 to point to the root of your Ponomar XML tree. 
+
+%Unfortunately, there is no installer to automate this process. (This is a bug).
+
 \tableofcontents
-\clearpage
-
-\section{License}
-\textcopyright{} 2012-2015 Aleksandr Andreev and Yuri Shardt \\
-
-This documentation is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit \href{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/}.
-
-\section{Installation Instructions}
-
-To work with the API, you need to download all of the API files and all of the XML files. The easiest way to do this is to checkout the files from the \href{https://code.google.com/p/ponomar}{Ponomar Google Code repository}.
-You can put the API files into a different directory or you can keep them in the svn tree. In any case, you need to open the \path{Ponomar/Util.pm} file and
-modify the $basepath$ variable on line 27 to point to the root of your Ponomar XML tree. 
-
-Unfortunately, there is no installer to automate this process. (This is a bug).
-
-\clearpage
 
 

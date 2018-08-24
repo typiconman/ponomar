@@ -72,7 +72,7 @@ sub load ($) {
 
 =item getLocaleKey($key, $locale)
 
-Returns the appropriate C<$key> in the given C<$language> E.g.:
+Returns the appropriate C<$key> in the given C<$language>; e.g.:
 
 	Ponomar::I18n::getLocaleKey('february', 'en') 
 
@@ -102,7 +102,7 @@ sub getAvailableLanguages {
 
 =item unload()
 
-UNLOADS THE LOCALIZATION, freeing up the memory and destroying the internal YAML::Tiny object
+Unloads the localization, freeing up the memory and destroying the internal YAML::Tiny object.
 
 =cut
 
@@ -113,7 +113,7 @@ sub unload {
 
 =item dateToStringFull($jdate, [$locale])
 
-RETURNS THE FULLSTRING REPRESENTATION OF C<$jdate>, a Ponomar::JDate object, IN THE SPECIFIED LOCALE. IF LOCALE IS NOT SPECIFIED, C<en> IS ASSUMED
+Returns the fullstring representation of C<$jdate>, a Ponomar::JDate object, in the specified locale. If locale is not specified, C<en> is assumed.
 
 =cut
 

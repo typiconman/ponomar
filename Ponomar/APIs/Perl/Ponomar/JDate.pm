@@ -47,9 +47,7 @@ Ponomar::JDate - A module for working with dates on the (proleptic) Julian Calen
 	$date2 = $date->addDays(1);	# returns February 2, 2001
 	$date2->equals(new Ponomar::JDate(2, 2, 2001)); # RETURNS true
 
-CONVENTIONS: January is treated as Month 1. Sunday is treated as day of week 0. January 1 is treated as day of year 0.
-
-These conventions are due to some poor choices of conventions back in the day when Ponomar was first written, in Visual Basic (ASP), and hosted on the Brinkster server (I believe this was in 2005).
+By convention January is treated as Month 1. Sunday is treated as day of week 0. January 1 is treated as day of year 0.
 
 =head3 METHODS
 
@@ -58,14 +56,12 @@ These conventions are due to some poor choices of conventions back in the day wh
 =item C<new($julian_day)> OR C<new($month, $day, $year)>
 
 Creates a new instance of Ponomar::JDate either set to Month, Day, Year 
-where Month, Day, Year is a calendar date on the JULIAN CALENDAR
+where Month, Day, Year is a calendar date on the Julian Calendar or to the Julian Day.
 
-OR to the Julian Day
-
-The months begin with 1 for January and run to 12 for December
+The months begin with 1 for January and run to 12 for December.
 Though years BC are generally not used, if necessary, the code is defined
 so that the C<$year> before AD 1 is -1 (B<NOT> 0).
-the C<$day> may have a fractional component.
+The C<$day> may have a fractional component.
 
 Note that Julian Days begin at Noon UTC, so we usually have a 0.5 around,
 which is a bit annoying, but is done this way to keep all formulae in this code
@@ -126,7 +122,7 @@ sub getYear ($) {
 
 =item getYearAM()
 
-Returns the Year from the (Byzantine) Creation of the World (anno mundi)
+Returns the Year from the (Byzantine) Creation of the World (anno mundi).
 The Creation of the World took place on March 1, 5508 BC.
 
 =cut
@@ -141,14 +137,14 @@ sub getYearAM ($) {
 
 =item getMonth()
 
-Returns the Month of the JDate object
+Returns the Month of the JDate object.
 
 Example:
 
 	$date = new Ponomar::JDate(2, 1, 2001);
 	$date->getMonth(); # returns 2
 
-NOTE THAT: January is month 1
+B<NB>: January is month 1
 
 =cut
 
@@ -192,9 +188,9 @@ sub getDay ($) {
 
 =item getHour()
 
-Returns the hour component of the JDate object (which may be fractional)
+Returns the hour component of the JDate object (which may be fractional).
 
-This is useful for such things as vernal equinox, sunrize and moon calculations
+This is useful for such things as vernal equinox, sunrize and moon calculations.
 
 The result is always in hours since midnight UTC, and by convention
 the JDay starts at noon UTC.
@@ -212,9 +208,9 @@ sub getHour($) {
 
 =item getMinute()
 
-Returns the minute component of the JDate object (which may be fractional)
+Returns the minute component of the JDate object (which may be fractional).
 
-This is useful for such things as vernal equinox, sunrize and moon calculations
+This is useful for such things as vernal equinox, sunrize and moon calculations.
 
 The result is always in minutes since the last hour UTC.
 
@@ -230,9 +226,9 @@ sub getMinute($) {
 
 =item getSecond()
 
-Returns the second component of the JDate object (which may be fractional)
+Returns the second component of the JDate object (which may be fractional).
 
-This is useful for such things as vernal equinox, sunrize and moon calculations
+This is useful for such things as vernal equinox, sunrize and moon calculations.
 
 The result is always in seconds since the last minute UTC.
 
@@ -248,14 +244,14 @@ sub getSecond($) {
 
 =item getDayOfWeek()
 
-Returns the day of the week of the JDate object
+Returns the day of the week of the JDate object.
 
 Example:
 
 	$date = new Ponomar::JDate(2, 1, 2001);
 	$date->getDayOfWeek(); # returns 2
 
-NOTE THAT: Sunday is day of week 0
+B<NB>: Sunday is day of week 0.
 
 =cut
 
@@ -269,7 +265,7 @@ sub getDayOfWeek ($) {
 
 =item getDayOfWeekString 
 
-Returns the day of the week as a string
+Returns the day of the week as a string.
 
 =cut
 
@@ -283,7 +279,7 @@ sub getDayOfWeekString ($) {
 
 Returns the day of the year (doy) of a JDate object.
 
-Note that January 1 is doy 0. February 29, if it exists, is doy 366
+Note that January 1 is doy 0. February 29, if it exists, is doy 366.
 
 =cut
 
@@ -322,7 +318,7 @@ sub getYearGregorian ($) {
 
 =item getMonthGregorian()
 
-Returns the month of the JDate object according to the (proleptic) Gregorian calendar
+Returns the month of the JDate object according to the (proleptic) Gregorian calendar.
 
 =cut
 
@@ -371,7 +367,7 @@ sub getDayGregorian ($) {
 
 =item getDaysSince($date)
 
-Returns the number of days since $date, another JDate object
+Returns the number of days since C<$date>, another JDate object.
 
 =cut
 
@@ -383,7 +379,7 @@ sub getDaysSince ($$) {
 
 =item getDaysUntil($date)
 
-Returns the number of days until $date, another JDate object
+Returns the number of days until C<$date>, another JDate object.
 
 =cut
 
@@ -396,7 +392,7 @@ sub getDaysUntil ($$) {
 
 =item getWeeksSince($date)
 
-Returns the number of weeks since $date, another JDate object
+Returns the number of weeks since C<$date>, another JDate object.
 
 =cut
 
@@ -409,7 +405,7 @@ sub getWeeksSince ($$) {
 
 =item getWeeksUntil($date)
 
-Returns the number of weeks until $date, another JDate object
+Returns the number of weeks until C<$date>, another JDate object.
 
 =cut
 
@@ -422,7 +418,7 @@ sub getWeeksUntil ($$) {
 
 =item addDays($integer)
 
-Returns a new JDate object, advanced by $integer days
+Returns a new JDate object, advanced by C<$integer> days.
 
 =cut
 
@@ -435,7 +431,7 @@ sub addDays ($$) {
 
 =item addOneDay()
 
-Returns a new JDate object, advanced by one day
+Returns a new JDate object, advanced by one day.
 
 =cut
 
@@ -447,7 +443,7 @@ sub addOneDay($) {
 
 =item addMonths($integer)
 
-Returns a new JDate object, advanced by $integer months
+Returns a new JDate object, advanced by C<$integer> months.
 
 =cut
 
@@ -462,7 +458,7 @@ sub addMonths($$) {
 
 =item subtractDays($integer)
 
-Returns a new JDate object, diminished by $integer days
+Returns a new JDate object, diminished by C<$integer> days.
 
 =cut
 
@@ -475,7 +471,7 @@ sub subtractDays ($$) {
 
 =item subtractOneDay()
 
-Returns a new JDate object, diminished by one day
+Returns a new JDate object, diminished by one day.
 
 =cut
 
@@ -487,7 +483,7 @@ sub subtractOneDay($) {
 
 =item subtractMonths($integer)
 
-Returns a new JDate object, diminished by $integer months
+Returns a new JDate object, diminished by C<$integer> months.
 
 =cut
 
@@ -502,7 +498,7 @@ sub subtractMonths($$) {
 
 =item equals($date)
 
-Returns true of this JDate object and the other object $date are the same Julian day. Returns false otherwise.
+Returns true of this JDate object and the object C<$date> are the same Julian day. Returns false otherwise.
 
 =cut
 
@@ -515,7 +511,7 @@ sub equals ($$) {
 
 =item before($date)
 
-Returns true if self is before $date
+Returns true if self is before C<$date>.
 
 =cut
 
@@ -528,7 +524,7 @@ sub before($$) {
 
 =item after($date)
 
-Returns true if self is after $date 
+Returns true if self is after C<$date>. 
 
 =cut
 
@@ -551,8 +547,13 @@ sub getJulianDay ($) {
 	return $self->{_mnjday};
 }
 
-## RETURNS THE NEAREST SUNDAY TO A JDATE OBJECT
-## XXX: IF TODAY IS A SUNDAY, RETURNS TODAY
+=item getNearestSunday()
+
+Returns a new JDate object with the nearest Sunday to a JDate object.
+B<NB>: if the JDate object is a Sunday, returns itself.
+
+=cut
+
 sub getNearestSunday ($) {
 	my $self = shift;
 
@@ -561,8 +562,13 @@ sub getNearestSunday ($) {
 	return $dow <= 3 ? JDate->new($mn_jday - $dow) : JDate->new($mn_jday + 7 - $dow);
 }
 
-## RETURNS THE PREVIOUS SUNDAY BEFORE A JDATE OBJECT
-## XXX: IF TODAY IS A SUNDAY, RETURNS ONE WEEK BEFORE!
+=item getPreviousSunday()
+
+Returns a new JDate object with the previous Sunday to a JDate object.
+B<NB>: if the JDate object is a Sunday, returns one week before.
+
+=cut
+
 sub getPreviousSunday ($) {
 	my $self = shift;
 	
@@ -571,8 +577,13 @@ sub getPreviousSunday ($) {
 	return Ponomar::JDate->new($mn_jday - $dow);
 }
 
-## RETURNS THE NEXT SUNDAY AFTER A JDATE OBJECT
-## XXX: IF TODAY IS A SUNDAY, RETURNS ONE WEEK LATER!
+=item getNextSunday()
+
+Returns a new JDate object with the next Sunday to a JDate object.
+B<NB>: if the JDate object is a Sunday, returns one week later.
+
+=cut
+
 sub getNextSunday ($) {
 	my $self = shift;
 	
@@ -581,10 +592,13 @@ sub getNextSunday ($) {
 	return Ponomar::JDate->new($mn_jday + 7 - $dow);
 }
 
-## VARIOUS ESOTERIC MATHEMATICAL FUNCTIONS THAT MAY OR MAY NOT BE ACTUALLY USEFUL BEHAVIOR
-## HOWEVER, THEY ALLOW JDATES TO BEHAVE LIKE INTEGERS, WHICH IN A SENSE, THEY ARE
+=item times($n)
 
-## SCALAR PRODUCT
+Returns the a new JDate object with the Julian Day multiplied by C<$n>.
+Probably not very useful.
+
+=cut
+
 sub times ($$) {
 	my $self = shift;
 	my $n = shift;
@@ -592,8 +606,13 @@ sub times ($$) {
 	return JDate->new($self->{_mnjday} * $n);
 }
 
-## RETURNS THE CLOSEST JDATE TO THE CURRENT JDATE DIVIDED BY N
-## THIS MAY BE MARGINALLY USEFUL IN FINDING OUT THINGS LIKE MIDPOINTS OF TIME PERIODS
+=item divide($n)
+
+Returns the closest JDate object to the current JDate object divided by  C<$n>.
+This may be marginally useful in finding out things like midpoints of time periods.
+
+=cut
+
 sub divide ($$) {
 	my $self = shift;
 	my $n = shift;
@@ -602,8 +621,13 @@ sub divide ($$) {
 	return JDate->new(int($self->{_mnjday} / $n));
 }
 
-## RETURNS THE JDATE MOD N
-## THIS IS PROBABLY COMPLETELY USELESS
+=item module($n)
+
+Returns the JDate object C<mod> C<$n>.
+Probably completely useless.
+
+=cut
+
 sub modulo ($$) {
 	my $self = shift;
 	my $n = shift;
@@ -612,79 +636,62 @@ sub modulo ($$) {
 }
 
 
-=item getSunrise
+=item getSunrise($longitude, $latitude, $TimeZone, [$DST, $ALT])
 
-This function will return the sunrise/sunset for a given day.
+Return the sunrise/sunset for a given day.
 
  Eastern longitude is entered as a positive number
  Western longitude is entered as a negative number
  Northern latitude is entered as a positive number
  Southern latitude is entered as a negative number
 
-Examples:
+Example:
 
-C<($sunrise, $sunset) = $date->getSunrise(longitude, latitude, TimeZone, DST);>
-
-C<($sunrise, $sunset) = $date->getSunrise(longitude, latitude, TimeZone, DST, ALT);>
+C<< ($sunrise, $sunset) = $date->getSunrise($longitude, $latitude, $TimeZone, $DST, $ALT); >>
 
 Returns the sunrise and sunset times, in HH:MM format.
-(Note: Time Zone is the offset from GMT and DST is daylight
-savings time, 1 means DST is in effect and 0 is not).  In the first form,
-a default altitude of -.0833 is used.  In the second form, the altitude
-is specified as the last argument.  Note that adding 1 to the
-Time Zone during DST and specifying DST as 0 is the same as indicating the
-Time Zone correctly and specifying DST as 1.
+Note: C<$Time Zone> is the offset from UTC and $<DST> is daylight
+saving time (C<1> means DST is in effect and C<0> means it is not).  If C<$ALT> is not specified,
+a default altitude of C<-.0833> is used. Note that adding C<1> to C<$TimeZone> during DST
+and specifying C<$DST> as C<0> is the same as indicating the
+Time Zone correctly and specifying C<$DST> as C<1>.
 
-a) Compute sunrise or sunset as always, with one exception: to convert LHA from degrees to hours,
-   divide by 15.04107 instead of 15.0 (this accounts for the difference between the solar day 
-   and the sidereal day.
-
-b) Re-do the computation but compute the Sun's RA and Decl, and also GMST0, for the moment 
-   of sunrise or sunset last computed.
-
-c) Iterate b) until the computed sunrise or sunset no longer changes significantly. 
-   Usually 2 iterations are enough, in rare cases 3 or 4 iterations may be needed.
-
-There are a number of sun altitides to chose from.  The default is
--0.833 because this is what most countries use. Feel free to
-specify it if you need to. Here is the list of values to specify
-altitude (ALT) with, including symbolic constants for each.
+There are a number of values of C<$ALT> to choose from.  The default is
+C<-0.833> because this is what most countries use. Here is the list of other common values:
 
 =over 4
 
-=item B<0> degrees
+=item C<0> degrees
 
 Center of Sun's disk touches a mathematical horizon
 
-=item B<-0.25> degrees
+=item C<-0.25> degrees
 
 Sun's upper limb touches a mathematical horizon
 
-=item B<-0.583> degrees
+=item C<-0.583> degrees
 
 Center of Sun's disk touches the horizon; atmospheric refraction accounted for
 
-=item B<-0.833> degrees, DEFAULT
+=item C<-0.833> degrees, DEFAULT
 
 Sun's supper limb touches the horizon; atmospheric refraction accounted for
 
-=item B<-6> degrees, CIVIL
+=item C<-6> degrees, CIVIL
 
 Civil twilight (one can no longer read outside without artificial illumination)
 
-=item B<-12> degrees, NAUTICAL
+=item C<-12> degrees, NAUTICAL
 
 Nautical twilight (navigation using a sea horizon no longer possible)
 
-=item B<-15> degrees, AMATEUR
+=item C<-15> degrees, AMATEUR
 
 Amateur astronomical twilight (the sky is dark enough for most astronomical observations)
 
-=item B<-18> degrees, ASTRONOMICAL
+=item C<-18> degrees, ASTRONOMICAL
 
 Astronomical twilight (the sky is completely dark)
-
-=back
 
 =back
 
@@ -737,7 +744,7 @@ sub mIsMilankovichLeap {
 }
 
 
-=item getMilankovichYear
+=item getMilankovichYear()
 
 Returns the year of the JDate object according to the (proleptic) Milankovich calendar.
 
@@ -755,7 +762,7 @@ sub getMilankovichYear {
 	return $R1 % 365 == 0 ? $year : $year + 1;
 }
 
-=item getMilankovichMonth
+=item getMilankovichMonth()
 
 Returns the month of the JDate object according to the (proleptic) Milankovich calendar.
 
@@ -779,9 +786,11 @@ sub getMilankovichMonth {
 	return floor((12 * ($R1 - 1 + $correction) + 373) / 367);
 }
 
-=item getMilankovichDay
+=item getMilankovichDay()
 
 Returns the day of the JDate object according to the (proleptic) Milankovich calendar.
+
+=back
 
 =cut
 
@@ -808,4 +817,3 @@ sub getMilankovichDay {
 1;
 
 __END__
-

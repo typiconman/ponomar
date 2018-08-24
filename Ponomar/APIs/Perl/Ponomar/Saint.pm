@@ -2,7 +2,7 @@ package Ponomar::Saint;
 
 =head1 Ponomar::Saint
 
-Ponomar::Saint : a Commemoration / Saint object for the Ponomar API
+Ponomar::Saint : a Commemoration / Saint object for the Ponomar API.
 
 =cut
 
@@ -33,14 +33,14 @@ my $readLife = 0;
 
 =item new (%attrs)
 
-Creates a new Saint object and runs init(), loading XML data for this Saint
+Creates a new Saint object and runs C<init()>, loading XML data for this Saint.
 
-Saint object have the following properties
+Saint objects have the following properties
 
-	CId : the _C_ommemoration ID
-	Name: A hash of Names for the Saint, which contains keys Nominative, Genetive, Short, etc.
-	Src: the Src of the commemoration (triodion, pentecostarion, or menaion)
-	Services: an array consisting the Services defined for this Saint 
+C<CId> : the B<C>ommemoration B<ID>.
+C<Name>: A hash of Names for the Saint, which contains keys C<Nominative>, C<Genetive>, C<Short>, etc.
+C<Src>: the source of the commemoration (one of C<triodion>, C<pentecostarion>, or C<menaion>).
+C<Services>: an array containing the Services defined for this Saint.
 
 B<CURRENT LIMITATION>: ONLY ONE SET OF SERVICES IS ALLOWED FOR A SAINT. THIS NEEDS TO BE FIXED!
 
@@ -133,11 +133,11 @@ Tests to see if this saint is equal to C<$other> saint
 
 The following are equivalent:
 
-1. C<$saintA> is equal to C<$saintB>
+1. C<$saintA> is equal to C<$saintB>.
 
-2. C<< $saintA->{Cid} >> is equal to C<< $saintB->{Cid} >>
+2. C<< $saintA->{Cid} >> is equal to C<< $saintB->{Cid} >>.
 
-This method has been overwritten as ==, so you can write C<$saintA == $saintB>.
+This method has been overloaded as C<==>, so you can write C<$saintA == $saintB>.
 
 =cut
 
@@ -154,11 +154,11 @@ Tests to see if this saint is not equal to C<$other> saint
 
 The following are equivalent:
 
-1. C<$saintA> is not equal to C<$saintB>
+1. C<$saintA> is not equal to C<$saintB>.
 
-2. C<< $saintA->{Cid} >> is not equal to C<< $saintB->{Cid} >>
+2. C<< $saintA->{Cid} >> is not equal to C<< $saintB->{Cid} >>.
 
-This method has been overwritten as C<!=>, so you can write C<$saintA != $saintB>.
+This method has been overloaded as C<!=>, so you can write C<$saintA != $saintB>.
 
 =cut
 
@@ -169,9 +169,10 @@ sub notEquals {
 	return $self->{CId} ne $other->{CId};
 }
 
-=item stringify
+=item stringify()
 
-Returns a string. By definition, the stringification of the Saint is his CId. This method is overwritten by "", so you can write C<"$saint">, if you'd like
+Returns a string. By definition, the stringification of the Saint is his CId.
+This method is overloaded as C<"">, so you can write C<"$saint">.
 
 =cut
 
@@ -183,7 +184,8 @@ sub stringify {
 
 =item addService($type)
 
-Adds a Service object of type C<$type> to self. Type here is the type of service, e.g., vespers, matins, liturgy, etc.
+Adds a Service object of type C<$type> to self. Type here is the type of service, e.g., 
+one of C<vespers>, C<matins>, C<liturgy>, etc.
 
 =cut
 
@@ -197,7 +199,10 @@ sub addService {
 
 =item getServices( [$type] )
 
-Returns an array of Service objects associated with this saint. If C<$type> is specified, returns only those Service objects of a particular C<$type>. C<$type> is the Type of service, e.g., vespers, matins, liturgy, etc.
+Returns an array of Service objects associated with this saint. 
+If C<$type> is specified, returns only those Service objects of a particular C<$type>. 
+C<$type> is the Type of service, e.g., 
+one of C<vespers>, C<matins>, C<liturgy>, etc.
 
 =cut
 

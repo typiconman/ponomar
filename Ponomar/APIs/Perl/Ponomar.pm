@@ -1,48 +1,36 @@
 package Ponomar;
 
-=head1 Ponomar API Documentation
+=head1 Introduction to the Ponomar API
 
-This is the documentation for the Ponomar API (Application Programming Interface) for Perl.
-
-WARNING: Ponomar API is PRE-BETA STAGE SOFTWARE. THE USE OF THIS API FOR PURPOSES OTHER THAN TESTING THE API IS STRICTLY PROHIBITED.
-
-This software is provided in AS-IS condition, with absolutely NO WARRANTY of any kind, express or implied, not even the implied warranties of merchantability or fitness for a purpose. Under no circumstances shall Ponomar Technologies, Inc., Aleksandr Andreev, Yuri Shardt, or any other individuals involved with this software, jointly or severably, be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of, or in connection with this software or with the use, misuse or other dealings with this software.
-
-=head2 AUTHOR
-
-Aleksandr Andreev (aleksandr.andreev@gmail.com)
-
-=head2 COPYRIGHT
-
-The XML, text, binary and YAML data of the Ponomar Project are Copyright 2006-2012 Aleksandr Andreev and Yuri Shardt. Chinese translation Copyright 2009-2012 Orthodox Fellowship of All Saints of China, Inc. Portions Copyright 2006 Priest Iulian Nistea. Portions Copyright 1996-2001 Priest Stephen Janos. Portions Copyright 2006 Iconography School of Moscow Theological Academy.
-
-Permission is granted to copy, distribute and/or modify this information under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, with no Front-Cover Texts, and with no Back-Cover Texts OR under the terms of the Creative Commons 3.0 Attribution Share-Alike License, at your choosing.
-
-The code of the Ponomar Perl API is Copyright 2012 Aleksandr Andreev. This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
-
-=head2 HOW STUFF WORKS
-
-Ponomar is an Object Oriented API; the set of Ponomar classes is designed to eliminate the need for low-level interaction with XML (or YAML) data and CMDs (liturgical CoMmanDs). Basic implementations of calendar software can be written using this API with about 5 lines of code. More complex implementations will require array-based manipulation of Ponomar object (as in, lots of grep, map and foreach); but it beats working with the XML directly.
+Ponomar is an Object Oriented API; the set of Ponomar classes is designed to eliminate the need for low-level interaction with XML (or YAML) data and CMDs (liturgical CoMmanDs). Basic implementations of calendar software can be written using this API with about 5 lines of code. More complex implementations will require array-based manipulation of Ponomar objects (as in, lots of C<grep>, C<map> and C<foreach>); but it beats working with the XML directly.
 
 Note that the API is designed to be format independent. That is, data outputed by the API is strictly Unicode text; it lacks formatting or markup. (THIS IS NOT ACTUALLY TRUE: certain XML files in Ponomar contain markup, e.g., C<< <SUP> >> tags. This is problematic and should be considered a defect of the API).
 
-NOTE THAT PONOMAR WORKS WITH JULIAN DATES (actually, Julian B<days>). UNLESS A METHOD SPECIFICALLY CONTAINS THE WORDS 'Gregorian' or 'Milankovic' ALL CALCULATIONS AND DATES ARE ACCORDING TO THE JULIAN CALENDAR.
+Note that Ponomar works with Julian Dates (actually, Julian B<days>). Unless a method specifically contains the words `Gregorian' or `Milankovich',
+all calculations and dates are according to the Julian Calendar.
 
 The non-OOO Ponomar::Util class provides handy functions for generating common dates including Today and any year's Pascha without having to deal with the Ponomar::JDate object. See the documentation for Ponomar::Util for details.
 
-The workflow is as follows. 
+=head2 SYNOPSIS
 
-Upon initialization, Ponomar immediately loads the Ponomar::I18n helper class, which handles all Internationalization (I18n) support for Ponomar. The load() method of Ponomar::I18n loads into memory Ponomar locale data. Locale data is stored in YAML (YAML A'int a Markup Language) format in the file locales.yml. 
+ use Ponomar;
+ use Ponomar::JDate;
+
+ $ponomar = new Ponomar(new Ponomar::JDate(1, 1, 2001), 'en');
+ print join('; ', map { $_->getKey('Name')->{Nominative} }
+     $ponomar->getSaints('menaion'));
+
+=head2 Workflow
+
+Upon initialization, Ponomar immediately loads the Ponomar::I18n helper class, which handles all Internationalization (I18n) support for Ponomar. The C<load()> method of Ponomar::I18n loads into memory Ponomar locale data. Locale data is stored in YAML (YAML A'int a Markup Language) format in the file C<locales.yml>. 
 
 The user begins by creating a Ponomar object. The Ponomar object takes two initial parameters, the C<$date> and the C<$locale>. The C<$locale> is an ISO 639-2 language code (string). The C<$date> is an instance of the Ponomar::JDate class (see documentation for Ponomar::JDate), which is in essence a glorified Integer (Julian Day object).
 
-The constructor of Ponomar calls the C<init()> method, which loads XML data for the given day and locale. 
-
-The reading of XML DATA proceeds in the following order. I<NOTE THAT THIS IS EXTREMELY IMPORTANT -- PONOMAR DATA IS PROCESSED ON A FIFO (First In First Out) BASIS.>
+The constructor of Ponomar calls the C<init()> method, which loads XML data for the given day and locale. The reading of XML DATA proceeds in the following FIFO (First In First Out) order:
 
 =over 4
 
-=item Step One. THE RELEVANT TOP-LEVEL SAINT FILES ARE READ FOR PENTECOSTARION / TRIODION This creates a set of Ponomar::Saint objects with two properties:
+=item Step 1. The relevant top-level saint files are read for Pentecostarion / Triodion. This creates a set of Ponomar::Saint objects with two properties:
 
 =over 4
 
@@ -54,37 +42,37 @@ The reading of XML DATA proceeds in the following order. I<NOTE THAT THIS IS EXT
 
 =back
 
-NOTE THAT THIS IS IMPORTANT: Ponomar Saints are not date-independent entities -- Saint data may contain CMDs which are DATE-DEPENDENT. b. and c., above, are inherited from the underlying Ponomar object.
+B<Important>: Ponomar Saints are not date-independent entities: saint data may contain CMDs which are date dependent. b. and c., above, are inherited from the underlying Ponomar object.
 
 =item Step 2. At this stage, the Tone is set.
 
-=item Step 3. LOADING OF SAINT DATA FOR PENTECOSTARION / TRIODION
+=item Step 3. Loading of Saint data for Pentecostarion / Triodion
 
-Immediately upon construction, the Ponomar::Saint object loads all topDown XML files associated with CId. This will load the NAMEs of the Saint as well as the LIFEs and the SERVICEs.
+Immediately upon construction, the Ponomar::Saint object loads all top-down XML files associated with CId. This will load the NAMEs of the Saint as well as the LIFEs and the SERVICEs.
 
-=item Step 4. LOADING OF SERVICE DATA FOR PENTECOSTARION / TRIODION
+=item Step 4. Loading of service data for Pentecostarion / Triodion
 
-Presently, SERVICE tags are more or less wrappers. The only useful information obtained from the SERVICE tag is the Type (more properly, "rank") of the service. This is used to set the Type property of the Saint object. SERVICE objects also handle Commands (see the documentation of Ponomar::Service for details).
+Presently, SERVICE tags are more or less wrappers. The only useful information obtained from the SERVICE tag is the Type (more properly, ``rank'') of the service. This is used to set the Type property of the Saint object. SERVICE objects also handle Commands (see the documentation of Ponomar::Service for details).
 
-Upon encountering individual services (VESPERS, MATINS, LITURGY, etc), Ponomar::Saint creates a new instance  of Ponomar::Service. The Service object contains only two properties, the Type (which is type of service, more propertly, the type of "office", e.g., 'vespers', 'matins', 'liturgy', etc) and the dRank of the service (which is the rank and is inheretied from the Type property of the Ponomar::Saint parent). Note that dRank is not the same as the day's dRank, computed below. The confusion in terminology is unfortunate.
+Upon encountering individual services (VESPERS, MATINS, LITURGY, etc), Ponomar::Saint creates a new instance  of Ponomar::Service. The Service object contains only two properties, the Type (which is type of service, more properly, the type of ``office'', e.g., `vespers', `matins', `liturgy', etc) and the C<dRank> of the service (which is the rank and is inheretied from the Type property of the Ponomar::Saint parent). Note that C<dRank> is not the same as the day's C<dRank>, computed below. The confusion in terminology is unfortunate.
 
 B<BUG NOTICE>: As presently written, the API accepts only one SERVICE per Saint. That is, only one type of service may be read in, e.g., reading a second VESPERS service into a Saint will create two Service objects that are completely indistinguishable. This means that subsequent Scripture readings, if any, will be assigned to both Service objects. This will have unforseen consequences, especially for the sorting algorithm of Scriptures. This is a bug.
 
-=item Step 5. LOADING OF MENAION DATA
+=item Step 5. Loading of Menaion data
 
 Steps 1, 3 and 4 are repeated for the Menaion-based data.
 
-=item The C<dRank> (rank of the day) is set.
+=item Step 6. The C<dRank> (rank of the day) is set.
 
-Presently, dRank is the max of all ranks available for a given day. As currently written, the API does not allow the user to select between service or commemoration alternatives. 
+Presently, C<dRank> is the max of all ranks available for a given day. As currently written, the API does not allow the user to select between service or commemoration alternatives. 
 
-=item The day's fasting information is computed.
+=item Step 7. The day's fasting information is computed.
+
+=back
 
 Initialization stops at this point and your Ponomar object is ready to work.
 
-B<NOTE>: The initial initialization does not handle suppression or transfer of readings. This is handled by calling the executeCommands method of relevant Service objects. See the documentation for Ponomar::Service for details.
-
-=back
+B<NOTE>: The initial initialization does not handle suppression or transfer of readings. This is handled by calling the C<executeCommands> method of relevant Service objects. See the documentation for Ponomar::Service for details.
 
 =head1 The C<Ponomar> Class
 
@@ -196,7 +184,8 @@ Runs the initial initialization process, reading XML for this C<$date>. Returns 
 
 	$ponomar = new Ponomar(Ponomar::Util::getToday(), 'en')
 
-The paramater C<$GS> determines if the Lucan Jump is used in the selection of scriptures (C<$GS = 1> for Lucan jump and C<0> otherwise). If C<$GS> is not specified, <1> is assumed.
+The deprecated paramater C<$GS> determines if the Lucan Jump is used in the selection of scriptures.
+As of August 2018, non-Lucan Jump implementations are no longer supported (C<$GS> is always treated as C<1> regardless of user input).
 
 =cut
 
@@ -299,7 +288,7 @@ sub init {
 
 =item getSaints( [$src] )
 
-Returns the Array of Saint objects associated with the Ponomar object Optional parameter $src can take on one of two values: 'pentecostarion' or 'menaion' and conditions the returned array on the Source of the commemoration.
+Returns the Array of Saint objects associated with the Ponomar object Optional parameter C<$src> can take on one of two values: 'pentecostarion' or 'menaion' and conditions the returned array on the Source of the commemoration.
 
 Note that for the purposes of Source, Triodion-based commemorations are called 'pentecostarion', i.e., 'pentecostarion' refers to everything based off the Paschal cycle. E.g.:
 
@@ -347,7 +336,8 @@ sub getFastingInstructions {
 Returns the raw code of the fasting instruction, e.g., 000001. 
 
 E.g., the following test if meat is allowed on a given day:
- split(//, $ponomar->getFastingCode())[0] == 1
+ 
+C<< split(//, $ponomar->getFastingCode())[0] == 1 >>
 
 =cut
 
@@ -393,8 +383,6 @@ You can get a list of available versions by calling C<getBibleVersions()>.
 
 Returns a reference to a new C<Ponomar::Bible> object.
 
-=back
-
 =cut
 
 sub loadBible {
@@ -406,45 +394,42 @@ sub loadBible {
 
 =item Constant: NO_LUCAN_JUMP
 
-The Lucan Jump for the Lectionary is not used
-
-=back
+Deprecated.
 
 =cut
 
 sub NO_LUCAN_JUMP {
+	Carp::carp('Constant NO_LUCAN_JUMP is deprecated.');
 	return 0;
 }
 
 =item Constant: LUCAN_JUMP
 
-The Lucan Jump for the Lectionary is used
-
-=back
+Deprecated.
 
 =cut
 
 sub LUCAN_JUMP {
+	Carp::carp('Constant LUCAN_JUMP is deprecated.');
 	return TRUE;
 }
 
 =item setLectionaryStyle ( $style )
 
-Sets the Lectionary to use the Lucan Jump (C<$style> = LUCAN_JUMP) or not use the Lucan Jump (C<$style>= NO_LUCAN_JUMP)
-
-=back
+Deprecated.
 
 =cut
 
 sub setLectionaryStyle {
 	my $self = shift;
-	my $lectionary_style = shift || 0;
-	$self->{_GS} = $lectionary_style;
+
+	Carp::carp('Sub setLectionaryStyle() is deprecated.');
+	return 0;
 }
 
 =item getLectionaryStyle()
 
-Returns 1 if the lectinary uses the Lucan Jump and zero otherwise
+Deprecated.
 
 =back
 
@@ -452,10 +437,10 @@ Returns 1 if the lectinary uses the Lucan Jump and zero otherwise
 
 sub getLectionaryStyle {
 	my $self = shift;
+	Carp::carp('Sub getLectionaryStyle() is deprecated.');
 	return $self->{_GS} == TRUE;
 }
 
 1;
 
 __END__
-

@@ -2,7 +2,7 @@ package Ponomar::Service;
 
 =head1 Ponomar::Service
 
-Ponomar::Service - A service object for the Ponomar API
+Ponomar::Service - A service object for the Ponomar API.
 
 =cut
 
@@ -34,9 +34,11 @@ sub LITURGY { 'liturgy'; }
 Creates a new Service object
 
 Service objects have the following properties
-	type: The type of service (vespers, matins, etc)
-	dRank: The Rank of this service (NOT the rank of the day)
-	parent: a reference to a Saint object which begat this Service
+
+C<type>: The type of service (e.g., e.g., 
+one of C<vespers>, C<matins>, C<liturgy>, etc.)
+C<dRank>: The Rank of this service (NOT the rank of the day).
+C<parent>: a reference to a Saint object which begat this Service object.
 
 =cut
 
@@ -86,7 +88,7 @@ sub deleteReading {
 	return 1;
 }
 
-=item getReadings
+=item getReadings()
 
 Returns the set of Readings objects assigned to the service
 
@@ -97,7 +99,7 @@ sub getReadings {
 	return scalar $self->{_readings} ? @{ $self->{_readings} } : undef;
 }
 
-=item hasReadings
+=item hasReadings()
 
 Returns true if the Service has Readings objects assigned
 
@@ -108,9 +110,10 @@ sub hasReadings {
 	return scalar $self->{_readings};
 }
 
-=item getType
+=item getType()
 
-Returns the Type of the service (e.g., vespers, matins, etc.)
+Returns the Type of the service (e.g., 
+one of C<vespers>, C<matins>, C<liturgy>, etc.).
 
 =cut
 
@@ -123,10 +126,8 @@ sub getType {
 =item clearCommands ( [$commandName] )
 
 Removes all liturgical commands named C<$commandName> from this service object. 
-If C<$commandName> is C<undef>, removes all liturgical commands period.
+If C<$commandName> is C<undef>, removes all liturgical commands.
 Returns nothing.
-
-=back
 
 =cut
 
@@ -144,14 +145,12 @@ sub clearCommands {
 
 =item addCommands ( $name, $value ) 
 
-Given a liturgical command  with name C<$name> and boolean test <$value>, adds this command to the list of
+Given a liturgical command  with name C<$name> and boolean test C<$value>, adds this command to the list of
 available commands for this Service.
 See the documentation for DivineLiturgy.xml for the list of allowable command names.
-Note that C<$value> is not checked for correct syntax. (FIXME)
-If either C<$name> or C<$value> is undefined, the mothod will croak.
-Returns nothing
-
-=back
+Note that C<$value> is not checked for correct syntax. (THIS IS A BUG).
+If either C<$name> or C<$value> is C<undef>, the method will croak.
+Returns nothing.
 
 =cut
 
@@ -169,9 +168,9 @@ sub addCommands {
 
 Given the C<$dRank> of the day, executes a set of commands associated with this service. These commands may generate instructions, rearrange readings or do other operations.
 
-Presently, only one set of Commands is supported, this is the set of commands recorded in C<DivineLiturgy.xml>. Thus, if the type of the service object is liturgy, the file C<DivineLiturgy.xml> is processed and readings are suppressed or transferred as necessary.
+Presently, only one set of Commands is supported, this is the set of commands recorded in C<DivineLiturgy.xml>. Thus, if the type of the service object is C<liturgy>, the file C<DivineLiturgy.xml> is processed and readings are suppressed or transferred as necessary.
 
-If the type is not liturgy, nothing is done and undef is returned.
+If the type is not C<liturgy>, nothing is done and C<undef> is returned.
 
 If C<< $self->{parent} >> is not a reference to a Saint, which is the parent of this Service,
 the method will croak.
