@@ -15,7 +15,7 @@ use utf8;
 require 5.004;
 use POSIX qw(floor);
 use Carp;
-# use File::ShareDir 'dist_dir';
+use File::ShareDir 'dist_dir';
 require Exporter;
 require Ponomar::JDate;
 use vars qw (@ISA @EXPORT_OK %EXPORT_TAGS @EXPORT $VERSION $basepath);
@@ -26,7 +26,7 @@ BEGIN {
 	@ISA 	 = qw( Exporter );
 	@EXPORT  = qw( getPascha getGregorianOffset findBottomUp findTopDown getToday max argmax isNumeric getMatinsGospel julianFromGregorian getNextYearWithBoundary getKeyOfBoundaries);
 	@EXPORT_OK = qw(getIndiction getSolarCycle getConcurrent getLunarCycle getFoundation getEpacta getNextFullMoon getVernalEquinox getJulianDayFromMilankovich getMilankovichPascha);
-	$basepath = "/home/sasha/Documents/ponomar/Ponomar/languages/"; # dist_dir('Ponomar');
+	$basepath = dist_dir('Ponomar') . '/';
 }
 
 my %matinsGospels = (

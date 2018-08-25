@@ -163,5 +163,7 @@ TSWLatexianTemp*
 ponomar.tex
 ponomar.log
 
+Makefile.old
+
 # Java stuff
 *.class
