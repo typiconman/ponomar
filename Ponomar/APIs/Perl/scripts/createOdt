@@ -1,0 +1,335 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+#use utf8;
+use bytes; # bad cargo cult programming; but otherwise Encode blows up because of bugs in OpenOffice::OODoc
+use Encode qw (encode decode);
+
+# use lib "/home/sasha/Documents/ponomar/Ponomar/APIs/Perl/blib/lib"; # debug only
+use Ponomar;
+use Ponomar::Util;
+use Ponomar::I18n;
+use Ponomar::JDate;
+use Ponomar::Bible;
+use OpenOffice::OODoc;
+
+use Getopt::Long;
+use Pod::Usage;
+use File::Basename;
+
+my @typicon_symbols = ("", "", "🕃", "🕃", "🕂", "🕁", "🕀", "🕀", "🕀");
+my %languages = map { $_ => 1 } qw(en fr el cu/ru zh/Hans zh/Hant); # TODO: api should return these based on data
+
+our(%opts);
+GetOptions(\%opts, 
+	'year|y=i',
+	'language|l=s',
+	'help|h');
+
+unless ($ARGV[0] || $opts{'help'})
+{
+	pod2usage(1);
+	exit;
+}
+
+if ($opts{'help'})
+{
+	pod2usage(-verbose => 2, -noperldoc => 1);
+	exit;
+}
+
+my $year = $opts{'year'} || 2018;
+unless ($year > 325) {
+	print "Error: year $year is not a valid year.$/";
+	exit;
+}
+
+my $language = $opts{'language'} || 'en';
+unless (exists $languages{$language}) {
+	print "Error: language $language is not valid.$/";
+	print "Valid languages are: " . join(',', keys %languages);
+	print "$/";
+	exit;
+}
+
+my $outpath = $ARGV[0];
+my ($name, $path, $suffix) = fileparse($outpath, qr/\.[^.]*/);
+
+unless ($suffix eq '.odt') {
+	print "Error: invalid file $name.$suffix.$/";
+	print "File should be in odt format";
+	print "$/";
+	exit;
+}
+
+my $document = odfDocument(file => $outpath, create => 'text' );
+my $par_object;
+my $bible = new Ponomar::Bible( Lang => $language );
+	
+sub addTypiconSymbol {
+	my $type = shift;
+	return unless defined $type;
+
+	if ($type >= 3) {
+		$document->extendText($par_object, $typicon_symbols[$type], 'SlavonicRed');
+	} else {
+		$document->extendText($par_object, $typicon_symbols[$type], 'Slavonic');
+	}
+	$document->extendText($par_object, ' ', 'Civil') if ($type >= 2);
+}		
+
+sub formatScriptureReading {
+	my ($reading, $pericope) = @_;
+	
+	my ($book, $verses) = split(/_/, $reading);
+	my $MG = defined getMatinsGospel($reading) ? " " . Ponomar::I18n::getLocaleKey('MG' . getMatinsGospel($reading), $language) : "";
+
+	$book = $bible->getBookNameShort($book);
+	if (defined $pericope) {
+		$document->extendText($par_object, "$book $verses (§ $pericope)" . $MG, 'Civil');
+	} else {
+		$document->extendText($par_object, "$book $verses" . $MG, 'Civil');
+	}
+}
+
+$document->createStyle("Slavonic",
+	family => 'text',
+	properties => 
+		{
+		"fo:font-family" => "Ponomar Unicode",
+		"fo:font-size"	=> "14pt",
+		}
+	);
+
+$document->createStyle("Civil",
+	family => 'text',
+	properties => 
+		{
+		"fo:font-family" => "Liberation Serif",
+		"fo:font-size"  => "14pt",
+		}
+	);
+
+$document->createStyle("SlavonicRed",
+	family => 'text',
+	properties =>
+		{
+		"fo:font-family" => "Ponomar Unicode",
+		"fo:font-size"   => "14pt",
+		"fo:color"       => rgb2oo('red')
+		}
+	);
+$document->createStyle("CivilRed",
+	family => 'text',
+	properties =>
+		{
+		"fo:font-family" => "Liberation Serif",
+		"fo:font-size"   => "14pt",
+		"fo:color"       => rgb2oo('red')
+		}
+	);
+$document->createStyle("CivilBold",
+	family => 'text',
+	properties =>
+		{
+		"fo:font-family" => "Liberation Serif",
+		"fo:font-size"	 => "14pt",
+		"fo:font-weight" => "bold"
+		}
+	);
+$document->createStyle("CivilItalic",
+	family => 'text',
+	properties =>
+		{
+		"fo:font-family" => "Liberation Serif",
+		"fo:font-size"	 => "14pt",
+		"fo:font-style"	 => "italic"
+		}
+	);
+		
+## header
+$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+$document->extendText($par_object, "$year Liturgical Calendar", 'Civil');
+
+for (my $today = new Ponomar::JDate(1, 1, $year); $today->getYear() == $year; $today = $today->addDays(1)) {
+	my $ponomar = Ponomar->new( $today, $language, 1 );
+
+	$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+
+	$document->extendText($par_object, encode('utf8', Ponomar::I18n::dateToStringFull($today, $language)), 'Civil');
+
+	$document->extendText($par_object, '; ' . encode('utf8', $ponomar->getTone()), 'Civil') if (defined $ponomar->getTone());
+
+	$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+	$document->extendText($par_object, encode('utf8', $ponomar->getFastingInstructions()), 'CivilItalic');
+
+	$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+	$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+	my @saints = $ponomar->getSaints('pentecostarion');
+	for (my $i = 0; $i < @saints; $i++) {
+		next unless defined $saints[$i]->getKey('Name');
+		my $name = $saints[$i]->getKey('Name')->{Nominative};
+		no bytes;
+		$name =~ s|<.+?>||g; # ugh!
+
+		my $type = $saints[$i]->getKey('Type');
+		addTypiconSymbol($type);
+		if ( !defined $type || defined $type && $type < 5 ) {
+			$document->extendText($par_object, encode('utf8', $name), 'Civil');
+		} else {
+			$document->extendText($par_object, encode('utf8', $name), 'CivilRed');
+		}
+		use bytes;
+		$document->extendText($par_object, '; ', 'Civil') unless ($i == $#saints);
+	}
+
+	$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+	$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+
+	@saints = $ponomar->getSaints('menaion');
+	for (my $i = 0; $i < @saints; $i++) {
+		next unless defined $saints[$i]->getKey('Name');
+		my $name = $saints[$i]->getKey('Name')->{Nominative};
+		no bytes;
+		$name =~ s|<.+?>||g; # ugh!
+
+		my $type = $saints[$i]->getKey('Type');
+		addTypiconSymbol($type);
+
+		if ( !defined $type || defined $type && $type < 5 ) {
+			$document->extendText($par_object, encode('utf8', $name), 'Civil');
+		} else {
+			$document->extendText($par_object, encode('utf8', $name), 'CivilRed');
+		}
+		use bytes;
+		$document->extendText($par_object, '; ', 'Civil') unless ($i == $#saints);
+
+	}
+
+	$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+	$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+	
+	foreach ($ponomar->getSaints('pentecostarion')) {
+		next unless ($_->getKey('CId') >= 9000 && $_->getKey('CId') <= 9315);
+		my @services = $_->getServices();
+		foreach my $service (@services) {
+			## EXECCOMMANDS TAKES DRANK ARGUMENT
+			## USER MUST SET DRANK BASED ON WHAT SERVICE HE'S DOING
+			## FOR NOW, WE'RE USING THE MAX AVAILABLE DRANK
+			$service->execCommands( max (  map { $_->getKey("Type") } $ponomar->getSaints() ) );
+		}
+	}
+
+	my @order_of_types = ("prime", "terce", "sexte", "none", "vespers", "matins", "liturgy");
+	my @order_of_reads = $today->getDayOfWeek() == 6 ? ("menaion", "pentecostarion") : ("pentecostarion", "pentecostarion2", "pentecostarion3", "menaion");
+
+	foreach my $service_type (@order_of_types) {
+		next unless grep { $_->hasReadings() } map { $_->getServices($service_type) } $ponomar->getSaints();
+		$document->extendText($par_object, Ponomar::I18n::getLocaleKey($service_type, $language) . ': ', 'CivilBold');
+	
+		foreach my $comm_type (@order_of_reads) {
+	
+			my @saints = $ponomar->getSaints($comm_type);
+			foreach my $saint (@saints) {
+				next unless $saint->hasServices($service_type);
+				my @services = $saint->getServices($service_type);
+				next unless grep { $_->hasReadings() } @services;
+			
+				foreach my $service (@services) {
+					next unless $service->hasReadings();
+					my @readings = $service->getReadings();
+					
+					foreach my $reading (@readings) {
+						formatScriptureReading($reading->getReading(), $reading->getPericope());
+					
+						if (defined $reading->getEffWeek() || grep { $_->getSaint() ne $saint->getKey('CId') } @readings) {
+							my $descript;
+							if ($reading->getSaint() ne $saint->getKey('CId')) {
+								my $saint = Ponomar::Saint->new( CId => $reading->getSaint(), Src => 'nameonly', Date => $today, Lang => 'en' );
+								$descript = $saint->getKey('Name')->{Nominative};
+							} else {
+								$descript = $saint->getKey('Name')->{Nominative};
+							}
+							my $effWeek  = $reading->getEffWeek();
+							$descript =~ s/\d+/$effWeek/ if (defined $effWeek);
+							$descript =~ s|<.+?>||g; # ugh!
+							$document->extendText($par_object, " ($descript); ", 'Civil');
+						} else {
+							$document->extendText($par_object, "; ", 'Civil');
+						}
+					}
+				} # service
+				unless (grep { eval { defined $_->getEffWeek() || $_->getSaint() ne $saint->getKey('CId') } } map { $_->getReadings() } $saint->getServices()) {
+					my $name = "";
+					$name = ($saint->getKey('Name')->{Genetive} or $saint->getKey('Name')->{Short}) if (defined $saint->getKey('Name'));
+					$name =~ s|<.+?>||g; # ugh!
+					$document->extendText($par_object, " (" . $name . "); ", 'Civil');
+				} else {
+					$document->extendText($par_object, "; ", 'Civil');
+				}
+				$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+			} #saint
+		} # commemoration type
+		$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+	} # service type
+
+	$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');
+	$par_object = $document->appendParagraph( text => '', style => 'optionalParagraphStyle');	
+	$document->save();
+	
+	print "Finished processing " . Ponomar::I18n::dateToStringFull($today, $language) . "\n";
+}
+	
+	
+$document->save;
+
+__END__
+
+=head1 NAME
+
+createOdt - creates a calendar for a given year in LibreOffice ODT format
+
+=head1 SYNOPSIS
+
+  createOdt [-l language] [-y year] outfile
+  createOdt -h
+
+Reads Ponomar data for year and language and writes it to ODT outfile
+
+=head1 OPTIONS
+
+  -l (or -language): specifies the language (default is en)
+  -y (or -year): specifies the year
+The possible languages are:
+  en: English
+  fr: French
+  cu/ru: Russian (with Church Slavic)
+  el: Greek
+  zh/Hans: Chinese (Simplified)
+  zh/Hant: Chinese (Traditional)
+The option year may be any year from AD 325.
+
+Option -h prints the help screen and exits.
+
+=head1 DESCRIPTION
+
+Read the documentation for the Ponomar API at L<http://www.ponomar.net/files/ponomar.pdf>.
+
+=head1 SEE ALSO
+
+Ponomar
+
+=head1 AUTHOR
+
+Aleksandr Andreev L<aleksandr.andreev@gmail.com>
+
+=head1 LICENSING
+
+Copyright (c) 2015-2018 Aleksandr Andreev (L<https://sci.ponomar.net/>).
+
+This script is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.14.2 or,
+at your option, any later version of Perl you may have available.
+
+=cut
