@@ -10,12 +10,12 @@ my @scripts = grep {-f && !m/\./o && !m/~$/o } glob("scripts/*");
 
 WriteMakefile(
     NAME              => 'Ponomar',
-    VERSION_FROM      => 'Ponomar.pm', # finds $VERSION
+    VERSION_FROM      => 'lib/Ponomar.pm', # finds $VERSION
     clean => { FILES => "doc/ponomar.tex doc/*.log doc/*.log doc/*.aux doc/*.pdf doc/*.toc doc/*.out doc/*.idx doc/*.glo" },
     PREREQ_PM         => { 'XML::Parser' => 0, 'YAML::Tiny' => 0 },
     EXE_FILES => \@scripts,
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'Ponomar.pm', # retrieve abstract from module
+      (ABSTRACT_FROM  => 'lib/Ponomar.pm', # retrieve abstract from module
        AUTHOR         => 'Aleksandr Andreev <aleksandr.andreev@gmail.com>') : ()),
 );
 
