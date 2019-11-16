@@ -2,5 +2,5 @@
 <!-- ^# refers to the actual number that will be placed by the programme in the appropriate place -->
 	<TIMES Value="ἐκ γʹ" Cmd="Times == 3"/>
 	<TIMES Value="ἐκ βʹ" Cmd="Times == 2"/>
-	<TIMES Value="ἐκ ^#" Cmd="Times > 3"/>
+	<TIMES Value="ἐκ ^#" Cmd="Times &gt; 3"/>
 	</DATA>
