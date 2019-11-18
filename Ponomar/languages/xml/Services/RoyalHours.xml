@@ -89,9 +89,9 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <BIBLE getReading="Gal" Who="D" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="LetAttentive" Who="P" RedFirst="1" NewLine="1"/>
-<BIBLE Verses="Heb_1:1-2" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" 2Stars="2"/>
-<BIBLE Verses="Acts_13:25-33" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" 2Stars="2"/>
-<BIBLE Verses="Gal_6:14-18" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" 2Stars="2"/>
+<BIBLE Verses="Heb_1:1-2" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" TwoStars="2"/>
+<BIBLE Verses="Acts_13:25-33" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" TwoStars="2"/>
+<BIBLE Verses="Gal_6:14-18" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" TwoStars="2"/>
 
 <CREATE What="PeaceWithYou" Who="P" RedFirst="1" NewLine="1"/>
 <CREATE What="Alleluia" Who="C" RedFirst="1" NewLine="1" Times="3"/>
@@ -102,9 +102,9 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <BIBLE getReading="Mt" Who="P" NewLine="1"/>
 
 <CREATE What="GloryToLord" Who="C" RedFirst="1" NewLine="1" />
-<BIBLE Verses="Mt_1:18-25" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" 2Stars="2"/>
-<BIBLE Verses="Mt_3:1-6" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" 2Stars="2"/>
-<BIBLE Verses="Mt_27:1-56" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" 2Stars="2"/>
+<BIBLE Verses="Mt_1:18-25" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" TwoStars="2"/>
+<BIBLE Verses="Mt_3:1-6" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" TwoStars="2"/>
+<BIBLE Verses="Mt_27:1-56" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" TwoStars="2"/>
 
 <CREATE What="GloryToLord" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag != 2"/>
 <CREATE What="SufferingLord" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
@@ -232,9 +232,9 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 
 <CREATE What="LetAttentive" Who="P" RedFirst="1" NewLine="1"/>
 
-<BIBLE Verses="Gal_3:23-29" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" 2Stars="2"/>
-<BIBLE Verses="Acts_19:1-8" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" 2Stars="2"/>
-<BIBLE Verses="Rom_5:6-10" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" 2Stars="2"/>
+<BIBLE Verses="Gal_3:23-29" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" TwoStars="2"/>
+<BIBLE Verses="Acts_19:1-8" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" TwoStars="2"/>
+<BIBLE Verses="Rom_5:6-10" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" TwoStars="2"/>
 
 <CREATE What="PeaceWithYou" Who="P" RedFirst="1" NewLine="1"/>
 <CREATE What="Alleluia" Who="C" RedFirst="1" NewLine="1" Times="3"/>
@@ -246,9 +246,9 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <BIBLE getReading="Mk" Who="P" NewLine="1" Cmd="PFlag == 1 || PFlag == 2"/>
 
 <CREATE What="GloryToLord" Who="C" RedFirst="1" NewLine="1" />
-<BIBLE Verses="Lk_2:1-20" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" 2Stars="2"/>
-<BIBLE Verses="Mk_1:1-8" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" 2Stars="2"/>
-<BIBLE Verses="Mk_15:16-32" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" 2Stars="2"/>
+<BIBLE Verses="Lk_2:1-20" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" TwoStars="2"/>
+<BIBLE Verses="Mk_1:1-8" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" TwoStars="2"/>
+<BIBLE Verses="Mk_15:16-32" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" TwoStars="2"/>
 
 <CREATE What="GloryToLord" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag != 2"/>
 <CREATE What="SufferingLord" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>
@@ -369,8 +369,8 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 
 <CREATE What="LetAttentive" Who="P" RedFirst="1" NewLine="1"/>
 
-<BIBLE Verses="Heb_2:11-18" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0 || PFlag == 2" 2Stars="2"/>
-<BIBLE Verses="Rom_6:3-11" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" 2Stars="2"/>
+<BIBLE Verses="Heb_2:11-18" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0 || PFlag == 2" TwoStars="2"/>
+<BIBLE Verses="Rom_6:3-11" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" TwoStars="2"/>
 
 <CREATE What="PeaceWithYou" Who="P" RedFirst="1" NewLine="1"/>
 <CREATE What="Alleluia" Who="C" RedFirst="1" NewLine="1" Times="3"/>
@@ -384,9 +384,9 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 
 <CREATE What="GloryToLord" Who="C" RedFirst="1" NewLine="1" />
 
-<BIBLE Verses="Mt_2:1-12" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" 2Stars="2"/>
-<BIBLE Verses="Mk_1:9-11" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" 2Stars="2"/>
-<BIBLE Verses="Lk_23:32-49" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" 2Stars="2"/>
+<BIBLE Verses="Mt_2:1-12" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" TwoStars="2"/>
+<BIBLE Verses="Mk_1:9-11" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" TwoStars="2"/>
+<BIBLE Verses="Lk_23:32-49" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" TwoStars="2"/>
 
 
 <CREATE What="GloryToLord" Who="C" RedFirst="1" NewLine="1" />
@@ -539,9 +539,9 @@ This interpolation interputs the repetition of the Third Idiomel. -->
 <BIBLE getReading="Heb" Who="D" NewLine="1" Cmd="PFlag != 1"/>
 <BIBLE getReading="Tit" Who="D" NewLine="1" Cmd="PFlag == 1"/>
 <CREATE What="LetAttentive" Who="P" RedFirst="1" NewLine="1"/>
-<BIBLE Verses="Heb_2:11-18" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" 2Stars="2"/>
-<BIBLE Verses="Tit_2:11-15,3:4-7" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" 2Stars="2"/>
-<BIBLE Verses="Heb_10:19-31" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" 2Stars="2"/>
+<BIBLE Verses="Heb_2:11-18" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" TwoStars="2"/>
+<BIBLE Verses="Tit_2:11-15,3:4-7" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" TwoStars="2"/>
+<BIBLE Verses="Heb_10:19-31" Who="D" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" TwoStars="2"/>
 
 <CREATE What="PeaceWithYou" Who="P" RedFirst="1" NewLine="1"/>
 <CREATE What="Alleluia" Who="C" RedFirst="1" NewLine="1" Times="3"/>
@@ -553,9 +553,9 @@ This interpolation interputs the repetition of the Third Idiomel. -->
 <BIBLE getReading="Jn" Who="P" NewLine="1" Cmd="PFlag == 2"/>
 
 <CREATE What="GloryToLord" Who="C" RedFirst="1" NewLine="1" />
-<BIBLE Verses="Mt_2:13-23" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" 2Stars="2"/>
-<BIBLE Verses="Lk_3:1-18" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" 2Stars="2"/>
-<BIBLE Verses="Jn_18:28-19:37" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" 2Stars="2"/>
+<BIBLE Verses="Mt_2:13-23" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 0" TwoStars="2"/>
+<BIBLE Verses="Lk_3:1-18" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 1" TwoStars="2"/>
+<BIBLE Verses="Jn_18:28-19:37" Who="P" RedFirst="1" Header="1" NewLine="1" Cmd="PFlag == 2" TwoStars="2"/>
 
 <CREATE What="GloryToLord" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag != 2"/>
 <CREATE What="SufferingLord" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag == 2"/>

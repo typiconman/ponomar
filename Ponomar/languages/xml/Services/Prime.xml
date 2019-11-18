@@ -8,7 +8,7 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 
 <TITLE Value="PrimesV" Header="Primes1" Source="PrimeSource" Comment="PrimeComment"/>
 <GET File="UsualBeginning" Cmd="PFlag1 == 0 || PFlag1 == 2"/>
-<!-- <BIBLE Verses="Jn_1:29-36" Who="R" NewLine="1" 2Stars="2"/> -->
+<!-- <BIBLE Verses="Jn_1:29-36" Who="R" NewLine="1" TwoStars="2"/> -->
 <CREATE What="ComeWorship1" Who="R" RedFirst="1" NewLine="1" Command="Bow" />
 <CREATE What="ComeWorship2" Who="R" RedFirst="1" NewLine="1" Command="Bow" />
 <CREATE What="ComeWorship3" Who="R" RedFirst="1" NewLine="1" Command="Bow" />
