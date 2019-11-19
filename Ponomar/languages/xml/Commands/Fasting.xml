@@ -47,7 +47,7 @@
 	<RULE Case="0011111" Cmd="dRank &gt;= 6"/>
 </PERIOD>
 
-<PERIOD Cmd="nday >= -8 &amp;&amp; nday &lt;= -1">
+<PERIOD Cmd="nday &gt;= -8 &amp;&amp; nday &lt;= -1">
 	<!-- This is from Lazarus Sunday to Holy and Great Saturday. -->
 	<!-- Lazarus Saturday: Typikon (ch. 49) allows caviar. Fish if Annunciation -->
 	<RULE Case="0001111" Cmd="nday == -8"/>

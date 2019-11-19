@@ -1,9 +1,9 @@
 <TONE>
-<PRIMES TROPARION1="MON3" Type="Normal" KONTAKION1="MON3" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
-<PRIMES Type="Lenten" KONTAKION1="MTTL" Cmd="(nday > -50 &amp;&amp; nday < 0)" />
-<TERCE TROPARION1="MON3" Type="Normal" KONTAKION1="MON3" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
-<SEXTE TROPARION1="MON3" Type="Normal" KONTAKION1="MON3" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
-<SEXTE Type="Lenten" KONTAKION1="MTTL6" Cmd="(nday > -50 &amp;&amp; nday < 0)"/>
-<NONE TROPARION1="MON3" Type="Normal" KONTAKION1="MON3" Cmd="!(nday > -50 &amp;&amp; nday < 0)"/>
+<PRIMES TROPARION1="MON3" Type="Normal" KONTAKION1="MON3" Cmd="!(nday &gt; -50 &amp;&amp; nday &lt; 0)"/>
+<PRIMES Type="Lenten" KONTAKION1="MTTL" Cmd="(nday &gt; -50 &amp;&amp; nday &lt; 0)" />
+<TERCE TROPARION1="MON3" Type="Normal" KONTAKION1="MON3" Cmd="!(nday &gt; -50 &amp;&amp; nday &lt; 0)"/>
+<SEXTE TROPARION1="MON3" Type="Normal" KONTAKION1="MON3" Cmd="!(nday &gt; -50 &amp;&amp; nday &lt; 0)"/>
+<SEXTE Type="Lenten" KONTAKION1="MTTL6" Cmd="(nday &gt; -50 &amp;&amp; nday &lt; 0)"/>
+<NONE TROPARION1="MON3" Type="Normal" KONTAKION1="MON3" Cmd="!(nday &gt; -50 &amp;&amp; nday &lt; 0)"/>
 
 </TONE>
