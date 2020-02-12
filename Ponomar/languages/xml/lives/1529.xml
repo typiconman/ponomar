@@ -6,11 +6,11 @@
 <SCRIPTURE Type="3" Reading="Isa_60:11-16"/>
 </VESPERS>
 <MATINS>
-<SCRIPTURE Type="1" Reading="Jn_12:28-36" Pericope="42 (mid.)"/>
+<SCRIPTURE Type="1" Reading="Jn_12:28-36a" Pericope="42 (mid.)"/>
 </MATINS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Cor_1:18-24" Pericope="125"/>
-<SCRIPTURE Type="gospel" Reading="Jn_19:6-11, 13-20, 25-28, 30-35" Pericope="60"/>
+<SCRIPTURE Type="gospel" Reading="Jn_19:6-11a, 13-20, 25-28a, 30b-35a" Pericope="60"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

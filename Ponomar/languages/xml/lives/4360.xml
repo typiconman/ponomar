@@ -2,7 +2,7 @@
 <SERVICE Type="3">
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Cor_1:18-24" Pericope="125"/>
-<SCRIPTURE Type="gospel" Reading="Jn_19:6-11, 13-20, 25-28, 30-35" Pericope="60"/> <!-- SHOULD BE: John 19:6-11a, 13-20, 25-28a, 30b-35a -->
+<SCRIPTURE Type="gospel" Reading="Jn_19:6-11a, 13-20, 25-28a, 30b-35a" Pericope="60"/> <!-- SHOULD BE: John 19:6-11a, 13-20, 25-28a, 30b-35a -->
 </LITURGY>
 </SERVICE>
 </SAINT>
