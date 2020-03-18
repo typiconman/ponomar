@@ -440,6 +440,7 @@ GNU General Public License for details.
 	<BOOK Id="Job" Name="Иов" Chapters="42" Short="Иов" Intro="Иова чтение"/>
 	<BOOK Id="Prov" Name="Притчи" Chapters="31" Short="Притч." Intro="Притчей чтение"/>
 	<BOOK Id="Isa" Name="Исаии" Chapters="66" Short="Ис." Intro="Пророчества Исаии чтение"/>
+	<BOOK Id="Jerem" Name="Иеремии" Chapters="52" Short="Иер." Intro="Пророчества Иеремии чтение"/>
 	<BOOK Id="Ezek" Name="Иезекииля" Chapters="48" Short="Иез." Intro="Пророчества Иезекииля чтение"/>
 </BIBLE>
 <BIBLE Id="la/bible/vulgate" Name="Latina (vulgata)">
