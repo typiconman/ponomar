@@ -1,5 +1,10 @@
 <SAINT>
 <SERVICE Type="1" Tie="60401">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Isa_63:15-64:4"/>
+<SCRIPTURE Type="2" Reading="Jerem_2:2-12"/>
+<SCRIPTURE Type="3" Reading="Wisd_4:7-15"/>
+</VESPERS>
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="Heb_12:6-13, 25-27"  Pericope="331 (mid.)"/>
 <SCRIPTURE Type="gospel" Reading="Mt_8:23-27"  Pericope="27"/>
