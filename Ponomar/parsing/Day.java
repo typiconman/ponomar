@@ -395,17 +395,17 @@ mainNames=text.obtainValues((String)text.getPhrases().get("Main"));
                 //dayRank = Math.max(CurrentC.getRank(), dayRank);
             }
         }
-        if (count.isEmpty()){
-            OrderedHashtable[] readings = new OrderedHashtable[count.size()];
+        if (!count.isEmpty()){
+            OrderedHashtable[] readingsArray = new OrderedHashtable[count.size()];
             //int count2=0;
             for (int i = 0; i < count.size(); i++) {
-                readings[i]=new OrderedHashtable();
+                readingsArray[i]=new OrderedHashtable();
                 //Readings[i].put("Readings",ReadingsA[Integer.parseInt(count.get(i).toString())]);
-                readings[i].put("Readings",rInformation[Integer.parseInt(count.get(i).toString())]);
+                readingsArray[i].put("Readings",rInformation[Integer.parseInt(count.get(i).toString())]);
                 //count2+=1;
             }
 
-            return readings;
+            return readingsArray;
         }
         else
         {

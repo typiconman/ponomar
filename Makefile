@@ -9,12 +9,11 @@ CLASSES = \
 	Ponomar/parsing/DocHandler.java \
 	Ponomar/parsing/QDParser.java \
 	Ponomar/parsing/Reporter.java \
-	Ponomar/parsing/parseConvert.java \
 	Ponomar/utility/StringOp.java \
 	Ponomar/internationalization/LanguagePack.java \
 	Ponomar/calendar/JDate.java \
 	Ponomar/astronomy/Paschalion.java \
-	Ponomar/DoSaint1.java \
+	Ponomar/DoSaint.java \
 	Ponomar/astronomy/Sunrise.java \
 	Ponomar/panels/PrintableTextPane.java \
 	Ponomar/ConfigurationFiles.java \
@@ -29,9 +28,8 @@ CLASSES = \
 	Ponomar/parsing/Commemoration.java \
 	Ponomar/parsing/ReadText.java \
 	Ponomar/Bible.java \
-	Ponomar/parsing/Days.java \
 	Ponomar/parsing/Fasting.java \
-	Ponomar/readings/DivineLiturgy1.java \
+	Ponomar/readings/DivineLiturgy.java \
 	Ponomar/services/Primes.java \
 	Ponomar/panels/PrimeSelector.java \
 	Ponomar/services/RoyalHours.java \
