@@ -15,7 +15,7 @@ import javax.swing.text.html.HTMLDocument;
 import Ponomar.internationalization.LanguagePack;
 import Ponomar.panels.IconDisplay;
 import Ponomar.panels.PrintableTextPane;
-import Ponomar.parsing.Commemoration1;
+import Ponomar.parsing.Commemoration;
 import Ponomar.parsing.DocHandler;
 import Ponomar.parsing.QDParser;
 import Ponomar.utility.Helpers;
@@ -39,7 +39,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
 OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
  ***********************************************************************/
-public class DoSaint1 implements DocHandler, ActionListener, ItemListener, PropertyChangeListener, HyperlinkListener {
+public class DoSaint implements DocHandler, ActionListener, ItemListener, PropertyChangeListener, HyperlinkListener {
     //SOME QUICK NOTES FOR FURTHER IMPLEMENTATION:
     //THE DATE OR THE RELEVANT INFORMATION WILL HAVE TO BE GIVEN
     //TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
@@ -90,12 +90,12 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
    
    
     
-    private Commemoration1 SaintInfo2;
+    private Commemoration SaintInfo2;
     private Bible bible;
     private String name2;
     private StringOp Analyse=new StringOp();
 
-    public DoSaint1(Commemoration1 SaintInfo, OrderedHashtable dayInfo) {
+    public DoSaint(Commemoration SaintInfo, OrderedHashtable dayInfo) {
         //Get the Podobni
         Analyse.setDayInfo(dayInfo);
         Text = new LanguagePack(dayInfo);
@@ -116,7 +116,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         refresh(SaintInfo);
     }
 
-    public void refresh(Commemoration1 SaintInfo) {
+    public void refresh(Commemoration SaintInfo) {
         
         SaintInfo2=SaintInfo;
         CreateWindow();

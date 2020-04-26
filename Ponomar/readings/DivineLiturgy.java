@@ -46,7 +46,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
 OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
  **************************************************************/
-public class DivineLiturgy1 implements DocHandler {
+public class DivineLiturgy implements DocHandler {
 
     private final static String configFileName = "ponomar.config"; // CONFIGURATIONS FILE
     //private final static String generalFileName="Ponomar/xml/";
@@ -79,7 +79,7 @@ public class DivineLiturgy1 implements DocHandler {
     private static StringOp Information3  = new StringOp();
     private static StringOp Analyse=new StringOp();
 
-    public DivineLiturgy1(OrderedHashtable dayInfo) {
+    public DivineLiturgy(OrderedHashtable dayInfo) {
         Analyse.setDayInfo(dayInfo);
           Phrases = new LanguagePack(dayInfo);
     TransferredDays = Phrases.obtainValues((String) Phrases.getPhrases().get("DayReading"));
@@ -151,7 +151,7 @@ public class DivineLiturgy1 implements DocHandler {
         //DETERMINE THE GOVERNING PARAMETERS FOR COMPILING THE READINGS
         try {
             FileReader frf = new FileReader(findLanguage.langFileFind(Analyse.getDayInfo().get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
-            DivineLiturgy1 a1 = new DivineLiturgy1(Analyse.getDayInfo());
+            DivineLiturgy a1 = new DivineLiturgy(Analyse.getDayInfo());
             QDParser.parse(a1, frf);
         } catch (Exception e) {
             e.printStackTrace();

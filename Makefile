@@ -29,7 +29,6 @@ CLASSES = \
 	Ponomar/parsing/Commemoration.java \
 	Ponomar/parsing/ReadText.java \
 	Ponomar/Bible.java \
-	Ponomar/parsing/Database.java \
 	Ponomar/parsing/Days.java \
 	Ponomar/parsing/Fasting.java \
 	Ponomar/readings/DivineLiturgy1.java \

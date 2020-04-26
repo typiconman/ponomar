@@ -22,10 +22,10 @@ import Ponomar.internationalization.LanguageSelector;
 import Ponomar.panels.GospelSelector;
 import Ponomar.panels.IconDisplay;
 import Ponomar.panels.PrintableTextPane;
-import Ponomar.parsing.Commemoration1;
+import Ponomar.parsing.Commemoration;
 import Ponomar.parsing.Day;
 import Ponomar.parsing.Fasting;
-import Ponomar.readings.DivineLiturgy1;
+import Ponomar.readings.DivineLiturgy;
 import Ponomar.readings.Matins;
 import Ponomar.services.NinthHour;
 import Ponomar.services.Primes;
@@ -109,7 +109,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
     private String CSep = new String();
     private String Colon = new String();
     private String Ideographic = new String();
-    private DoSaint1 SaintLink;
+    private DoSaint SaintLink;
     private IconDisplay displayIcon;
     private Vector IconImages;
     private Vector IconNames;
@@ -411,11 +411,11 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                     //System.out.println(parts2[1]);
                     String[] parts3 = parts2[1].split(",");
 
-                    Commemoration1 trial1 = new Commemoration1(parts3[parts3.length - 2], parts3[parts3.length - 1], Analyse.getDayInfo());
+                    Commemoration trial1 = new Commemoration(parts3[parts3.length - 2], parts3[parts3.length - 1], Analyse.getDayInfo());
                     if (SaintLink == null) {
                         System.out.println(parts3[parts3.length - 1]);
 
-                        SaintLink = new DoSaint1(trial1, Analyse.getDayInfo());
+                        SaintLink = new DoSaint(trial1, Analyse.getDayInfo());
                     } else {
                         SaintLink.refresh(trial1);
                     }
@@ -693,7 +693,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                     readingsA.put("Tag", Tag);
                     //System.out.println(Tag);
                     //System.out.println("Hello World");
-                    DivineLiturgy1 trial1 = new DivineLiturgy1(Analyse.getDayInfo());
+                    DivineLiturgy trial1 = new DivineLiturgy(Analyse.getDayInfo());
                     String type1 = (String) Phrases.getPhrases().get("apostol");
                     output += "<B>" + type1 + "</B>" + Colon;
                     //System.out.println(readingsA);
@@ -705,7 +705,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                     readingsA.put("Rank", Rank);
                     readingsA.put("Tag", Tag);
                     String type1 = (String) Phrases.getPhrases().get("gospel");
-                    DivineLiturgy1 trial1 = new DivineLiturgy1(Analyse.getDayInfo());
+                    DivineLiturgy trial1 = new DivineLiturgy(Analyse.getDayInfo());
                     output += "<B>" + type1 + "</B>" + Colon;
                     output += trial1.Readings(readingsA, "gospel", today);
                 }

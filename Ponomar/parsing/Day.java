@@ -59,7 +59,7 @@ public class Day implements DocHandler {
     private String[] commNames;// = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
     private Helpers helper;
     private int counter = 0;
-    private Vector<Commemoration1> orderedCommemorations;
+    private Vector<Commemoration> orderedCommemorations;
     private int dayRank = -100;
     private int tone = -1;
     private String[] mainNames;//=Text.obtainValues((String)Text.Phrases.get("Main"));
@@ -169,7 +169,7 @@ mainNames=text.obtainValues((String)text.getPhrases().get("Main"));
             if (table.get("Tone")!=null){
                tone=(int) Math.floor(parameterValues.eval(table.get("Tone").toString()));
             }
-            Commemoration1 dayA = new Commemoration1(sId, cId,parameterValues.getDayInfo());
+            Commemoration dayA = new Commemoration(sId, cId,parameterValues.getDayInfo());
 
             orderedCommemorations.addElement(dayA);
 
@@ -188,7 +188,7 @@ mainNames=text.obtainValues((String)text.getPhrases().get("Main"));
 
 
             for (int i = 0; i < orderedCommemorations.size(); i++) {
-                Commemoration1 currentC = orderedCommemorations.get(i);
+                Commemoration currentC = orderedCommemorations.get(i);
                 dayRank = Math.max(currentC.getRank(), dayRank);
             }
         }
@@ -208,7 +208,7 @@ mainNames=text.obtainValues((String)text.getPhrases().get("Main"));
         String cSep=(String)text.getPhrases().get("CommSep");
         String output = "";
         for (int i = 0; i < orderedCommemorations.size(); i++) {
-            Commemoration1 cCom = orderedCommemorations.get(i);
+            Commemoration cCom = orderedCommemorations.get(i);
 
             String sId = cCom.getSId();
             String cId = cCom.getCId();
@@ -299,7 +299,7 @@ mainNames=text.obtainValues((String)text.getPhrases().get("Main"));
         Vector iconNames=new Vector();
 
         for (int i = 0; i < orderedCommemorations.size(); i++) {
-            Commemoration1 cCom = orderedCommemorations.get(i);
+            Commemoration cCom = orderedCommemorations.get(i);
             String sId = cCom.getSId();
             String cId = cCom.getCId();
             String nameF = cCom.getGrammar("Short");
@@ -366,7 +366,7 @@ mainNames=text.obtainValues((String)text.getPhrases().get("Main"));
 
 
         for (int i = 0; i < orderedCommemorations.size(); i++) {
-                Commemoration1 currentC = orderedCommemorations.get(i);
+                Commemoration currentC = orderedCommemorations.get(i);
                 int sizeR=currentC.getReadings().size();
                 if (currentC.getReadings() != null || sizeR>0){
                     //There are readings to consider for today.

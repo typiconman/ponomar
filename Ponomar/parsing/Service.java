@@ -370,7 +370,7 @@ public class Service implements DocHandler
                     {
                         lifeId="98"+lifeId;
                     }
-                    Commemoration1 data=new Commemoration1("0",lifeId,analyse.getDayInfo());
+                    Commemoration data=new Commemoration("0",lifeId,analyse.getDayInfo());
                     String info = table.get("What").toString();
                     int parsedInfo1=info.lastIndexOf('/');
                    //System.out.println(parsedInfo[0]);

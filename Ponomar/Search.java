@@ -7,7 +7,7 @@ import java.util.*;
 import java.io.*;
 import javax.swing.event.*;
 
-import Ponomar.parsing.Commemoration1;
+import Ponomar.parsing.Commemoration;
 import Ponomar.utility.OrderedHashtable;
 import Ponomar.utility.StringOp;
 
@@ -130,13 +130,13 @@ public class Search extends JFrame implements ActionListener
             System.out.println(listOfFiles.length);
 
             String found ="CId\tEnglish\tFrench\tRussian\tChurch Slavonic\tTraditional Chinese\tSimplified Chinese\tPolytonic Greek\tMonotonic Greek<BR>";
-            Commemoration1 test=new Commemoration1();
+            Commemoration test=new Commemoration();
             int count=0;
             for (File file : listOfFiles) {
                 if (file.isFile()) {
                     if (file.getName().endsWith("xml")){
                         System.out.println(file.getName());
-                        test =new Commemoration1(file.getName().substring(0, file.getName().length()-4),file.getName().substring(0, file.getName().length()-4),Analyse.getDayInfo());
+                        test =new Commemoration(file.getName().substring(0, file.getName().length()-4),file.getName().substring(0, file.getName().length()-4),Analyse.getDayInfo());
                         String nameF=test.getGrammar("Nominative").toString();
                         if (nameF.contains(search)){
                             found+=file.getName().subSequence(0, file.getName().length()-4)+"\t"+nameF+"\t";
