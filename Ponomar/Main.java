@@ -27,6 +27,7 @@ import Ponomar.parsing.Day;
 import Ponomar.parsing.Fasting;
 import Ponomar.readings.DivineLiturgy;
 import Ponomar.readings.Matins;
+import Ponomar.readings.utility.ReadingUtility;
 import Ponomar.services.NinthHour;
 import Ponomar.services.Primes;
 import Ponomar.services.RoyalHours;
@@ -545,8 +546,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         //System.out.println("First Menologion Reading is :"+MenaionReadings[0].get(READINGS));
         OrderedHashtable combinedReadings = new OrderedHashtable();
         //for(int j=0;j<7;j++){
-        processMenaionPaschalReadings(menaionReadings, combinedReadings);
-        processMenaionPaschalReadings(paschalReadings, combinedReadings);
+        ReadingUtility.processMenaionPaschalReadings(menaionReadings, combinedReadings);
+        ReadingUtility.processMenaionPaschalReadings(paschalReadings, combinedReadings);
         //}
         boolean firstTime = true;
         for (Enumeration e = combinedReadings.enumerateKeys(); e.hasMoreElements();) {
@@ -736,20 +737,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         return astronomicalData;
 	}
 
-	private void processMenaionPaschalReadings(OrderedHashtable[] menaionReadings, OrderedHashtable combinedReadings) {
-		for (int k = 0; k < menaionReadings.length; k++) {
-            OrderedHashtable reading = (OrderedHashtable) menaionReadings[k].get(READINGS_KEY);
-            OrderedHashtable readings = (OrderedHashtable) reading.get(READINGS_KEY);
-            for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements();) {
-                String element1 = e.nextElement().toString();
-                if (combinedReadings.get(element1) != null) {
-                    combinedReadings.put(element1, combineWithExistingReading(combinedReadings, reading, readings, element1));
-                } else {
-                    combinedReadings.put(element1, readingDoesNotExist(reading, readings, element1));
-                }
-            }
-        }
-	}
+
 
 	private String putMatinsReadings(Vector readings, Vector rank, Vector tag, OrderedHashtable readingsA, String key) {
 		readingsA.put(READINGS_KEY, processMatins(readings));
@@ -810,30 +798,6 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                 }
         }
 		return format;
-	}
-
-	private OrderedHashtable combineWithExistingReading(OrderedHashtable combinedReadings, OrderedHashtable reading,
-			OrderedHashtable readings, String element1) {
-		OrderedHashtable temp = (OrderedHashtable) combinedReadings.get(element1);
-		Vector readings2 = (Vector) temp.get(READINGS_KEY);
-		Vector rank = (Vector) temp.get("Rank");
-		Vector tag = (Vector) temp.get("Tag");
-		return putReadings(reading, readings, element1, temp, readings2, rank, tag);
-	}
-
-	private OrderedHashtable readingDoesNotExist(OrderedHashtable reading, OrderedHashtable readings, String element1) {
-		return putReadings(reading, readings, element1, new OrderedHashtable(), new Vector(), new Vector(), new Vector());
-	}
-
-	private OrderedHashtable putReadings(OrderedHashtable reading, OrderedHashtable readings, String element1,
-			OrderedHashtable temp, Vector readings2, Vector rank, Vector tag) {
-		readings2.add(readings.get(element1));
-		rank.add(reading.get("Rank"));
-		tag.add(reading.get("Name"));
-		temp.put(READINGS_KEY, readings2);
-		temp.put("Rank", rank);
-		temp.put("Tag", tag);
-		return temp;
 	}
 
     protected String getClassName(Object o) {
