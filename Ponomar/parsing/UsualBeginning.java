@@ -38,31 +38,31 @@ public class UsualBeginning
 	//THE DATE OR THE RELEVANT INFORMATION WILL HAVE TO BE GIVEN
 	//TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
 	//DURING THE COURSE OF A SINGLE WEEK.
-	public static String UsualBeginning1;
-        private static StringOp Analyse=new StringOp();
-	public UsualBeginning(int Weekday)
+	public static String usualBeginning1;
+        private static StringOp analyse=new StringOp();
+	public UsualBeginning(int weekday)
 	{
 		//Analyse.getDayInfo() = new OrderedHashtable();
-		Analyse.getDayInfo().put("dow", Weekday);		//DETERMINE THE DAY OF THE WEEK.
-		Analyse.getDayInfo().put("PS",1);
-		Analyse.getDayInfo().put("nday",250);
-		Analyse.getDayInfo().put("LS",0);
+		analyse.getDayInfo().put("dow", weekday);		//DETERMINE THE DAY OF THE WEEK.
+		analyse.getDayInfo().put("PS",1);
+		analyse.getDayInfo().put("nday",250);
+		analyse.getDayInfo().put("LS",0);
 		final String UsualFileName = "Ponomar/xml/Services/UsualBeginning/"; // THE LOCATION FOR ANY EXTRA INFORMATION
-		Service test2=new Service(Analyse.getDayInfo().clone());
+		Service test2=new Service(analyse.getDayInfo().clone());
 		 test2.readService(UsualFileName+"UsualBeginning.xml");
-		UsualBeginning1=test2.Service1;
+		usualBeginning1=test2.service1;
 	}	
 	public UsualBeginning(OrderedHashtable dayInfo)
 	{
 		final String UsualFileName = "Ponomar/xml/Services/UsualBeginning/";
 		Service test2=new Service(dayInfo);
-		UsualBeginning1=test2.readService(UsualFileName+"UsualBeginning.xml");
+		usualBeginning1=test2.readService(UsualFileName+"UsualBeginning.xml");
 		 	
 		 	
 	}
 	public String getUsualBeginning()
 	{
-		return UsualBeginning1;
+		return usualBeginning1;
 	}
 }
 

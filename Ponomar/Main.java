@@ -844,7 +844,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         //THIS IS NOW REPLACED BY THE NEW PROGRAMME, THAT SIMPLIFIES THE DETERMINATION OF THE FAST.
         String[] FastNames = Phrases.obtainValues((String) Phrases.getPhrases().get("Fasts"));
         Fasting getfast = new Fasting(Analyse.getDayInfo());
-        output += "<BR><BR>" + getfast.FastRules() + "<BR><BR>";
+        output += "<BR><BR>" + getfast.fastRules() + "<BR><BR>";
         //output+="</FONT>";
         output += "</body>";
 

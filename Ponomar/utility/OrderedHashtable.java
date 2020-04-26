@@ -56,7 +56,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 	* @exception UnsupportedOperationException - clear is not supported by
 	* the underlying Interface java.util.Map.
 	*/
-	synchronized public void clear() throws UnsupportedOperationException
+	public synchronized void clear() throws UnsupportedOperationException
 	{
 		super.clear();
 		this.mSerialOrder.clear();
@@ -70,7 +70,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 	* @returns the value to which the key had been mapped in this OrderedHashtable,
 	* or null if the key did not have a mapping.
 	*/
-	synchronized public Object remove(Object key)
+	public synchronized Object remove(Object key)
 	{
 		this.mSerialOrder.remove(key);
 		return super.remove(key);
@@ -89,7 +89,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 	* null if it did not have one.
 	*
 	*/
-	synchronized public Object put(Object key, Object value) throws NullPointerException
+	public synchronized Object put(Object key, Object value) throws NullPointerException
 	{
 		Object toReturn = super.put(key,value);
 		if(toReturn == null)
@@ -160,21 +160,21 @@ public class OrderedHashtable extends Hashtable implements Cloneable
                 if (key.equals("Locale"))
                 {
                     Locale item=(Locale)current.get(key);
-                    cloned.put(new String(key), item);
+                    cloned.put(key, item);
                     continue;
                 }
                 if (key.equals("Orient")){
                     ComponentOrientation item=(ComponentOrientation)current.get(key);
-                    cloned.put(new String(key), item);
+                    cloned.put(key, item);
                     continue;
                 }
                 if (current.get(key) instanceof Integer){
                     Integer item=(Integer)current.get(key);
-                    cloned.put(new String(key), new Integer(item));
+                    cloned.put(key, item);
                     continue;
                 }
                 String item=(String)current.get(key);
-                cloned.put(new String(key), new String(item));
+                cloned.put(key, item);
             }
 
             return cloned;
@@ -313,7 +313,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 	* @throws NullPointerException if the specified map is null.
 	*
 	*/
-	synchronized public void putAll(Map m) throws NullPointerException
+	public synchronized void putAll(Map m) throws NullPointerException
 	{
 		// if its one of "us" its ordered, make sure copy is ordered too!
 		if(m instanceof OrderedHashtable) 

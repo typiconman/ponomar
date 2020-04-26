@@ -1,18 +1,12 @@
 package Ponomar.parsing;
 
-import javax.swing.*;
-import java.beans.*;
-import java.awt.*;
 import java.util.*;
 import java.io.*;
-import javax.swing.event.*;
+import java.nio.charset.StandardCharsets;
 
 import Ponomar.utility.Helpers;
 import Ponomar.utility.OrderedHashtable;
 import Ponomar.utility.StringOp;
-
-import java.awt.event.*;
-import java.beans.*;
 
 
 /***********************************************************************
@@ -43,15 +37,15 @@ public class ReadText implements DocHandler
 	private static boolean read=false;
 	private static String header;
         private Helpers findLanguage;
-        private StringOp Analyse=new StringOp();
-        //There is no assumption about the provenence of the text, it must still be determined
+        private StringOp analyse=new StringOp();
+        //There is no assumption about the provenance of the text, it must still be determined
 		
 		
 	
 	public ReadText(OrderedHashtable dayInfo)
 	{
-            findLanguage=new Helpers(Analyse.getDayInfo());
-            Analyse.setDayInfo(dayInfo);
+            findLanguage=new Helpers(analyse.getDayInfo());
+            analyse.setDayInfo(dayInfo);
 	}
 	
 				
@@ -75,7 +69,7 @@ public class ReadText implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -121,8 +115,8 @@ public class ReadText implements DocHandler
 	{
 		try
 		{
-       			 text= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(Analyse.getDayInfo().get("LS").toString(),filename)), "UTF8"));
+       			 text= "";
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(),filename)), StandardCharsets.UTF_8));
        			 QDParser.parse(this,fr);
        			 if(text.length()==0)
        			 {
@@ -144,8 +138,8 @@ public class ReadText implements DocHandler
 	{
 		try
 		{
-       			 header= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(Analyse.getDayInfo().get("LS").toString(),filename)), "UTF8"));
+       			 header= "";
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(),filename)), StandardCharsets.UTF_8));
        			 QDParser.parse(this,fr);
        			 if(header.length()==0)
        			 {

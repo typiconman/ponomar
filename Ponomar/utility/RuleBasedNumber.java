@@ -10,6 +10,7 @@ import java.beans.*;
 import java.awt.*;
 import java.util.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 /***************************************************************
 RULEBASEDNUMBER.java :: MODULE THAT CONVERTS A DECIMAL NUMBER TO AN IDEOGRAPHIC NUMBER, THAT IS,
@@ -71,23 +72,23 @@ public class RuleBasedNumber implements DocHandler
     private String fformat="###";
     private OrderedHashtable Phrases;		//STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT INTERFACE LANGUAGE.
     private boolean readRules=false;
-    private StringOp Analyse= new StringOp();
+    private StringOp analyse= new StringOp();
 
     public RuleBasedNumber(OrderedHashtable dayInfo)
 	{
     	//Do nothing right now; later load the required rules.
-        Analyse.setDayInfo(dayInfo);
+        analyse.setDayInfo(dayInfo);
             initialise();
     }
     private void initialise()
     {
 		String filename="xml/Commands/RuleBasedNumbers.xml";
-                Helpers findLanguage=new Helpers(Analyse.getDayInfo());
-                filename=findLanguage.langFileFind(Analyse.getDayInfo().get("LS").toString(),filename);
+                Helpers findLanguage=new Helpers(analyse.getDayInfo());
+                filename=findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(),filename);
 		try
 		{
 			//ALLOWS MULTILINGUAL SUPPORT, WHICH IS A MUST IN OUR CASE.
-			BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
+			BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), StandardCharsets.UTF_8));
 			//FileReader fr = new FileReader(filename);
 			QDParser.parse(this, fr);
 		}
@@ -111,12 +112,12 @@ public class RuleBasedNumber implements DocHandler
 		// THE TAG COULD CONTAIN A COMMAND Cmd
 		// THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
 		// TODAY'S INFORMATION IN dayInfo.
-		String Language = new String();
+		String language = "";
 
 		if (table.get("Cmd") != null)
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -127,17 +128,17 @@ public class RuleBasedNumber implements DocHandler
 		//}
 		if (elem.equals("PHRASE") && readRules)
 		{
-			String Key=table.get("Key").toString();
-			String Value=table.get("Value").toString();
-			if (Key.equals("DF"))
+			String key=table.get("Key").toString();
+			String value=table.get("Value").toString();
+			if (key.equals("DF"))
                         {
-                           DF=obtainValues(Value);
+                           DF=obtainValues(value);
                            
                         }
                         
-                        if (Key.equals("BaN"))
+                        if (key.equals("BaN"))
                         {
-                            String[] tempvalue=obtainValues(Value);
+                            String[] tempvalue=obtainValues(value);
                             BaN=new long[tempvalue.length];
                             for(int i=0;i<tempvalue.length;i++)
                             {
@@ -146,26 +147,26 @@ public class RuleBasedNumber implements DocHandler
                             }
                             
                         }
-                        if (Key.equals("Cz"))
+                        if (key.equals("Cz"))
                         {
-                            Cz=Analyse.evalbool(Value);
+                            Cz=analyse.evalbool(value);
 
                         }
-                        if (Key.equals("UB"))
+                        if (key.equals("UB"))
                         {
-                            UB=Long.parseLong(Value);
+                            UB=Long.parseLong(value);
                         }
-                        if (Key.equals("fformat"))
+                        if (key.equals("fformat"))
                         {
-                            fformat=Value;
+                            fformat=value;
                         }
-                        if (Key.equals("IM"))
+                        if (key.equals("IM"))
                         {
-                            IM=obtainValues(Value);
+                            IM=obtainValues(value);
                         }
-                        if (Key.equals("zero"))
+                        if (key.equals("zero"))
                         {
-                            zero=Value;
+                            zero=value;
                         }
 		}
 	}
@@ -178,22 +179,22 @@ public class RuleBasedNumber implements DocHandler
 		}
 	 }
 
-        public String getFormattedNumber(double Number)
+        public String getFormattedNumber(double number)
 {
-   if (Number>UB)
+   if (number>UB)
         {
-            return Double.toString(Number);
+            return Double.toString(number);
         }
-   if (Number==0)
+   if (number==0)
    {
        return zero;
    }
-   String FormattedNumber=FormatNumber(Number);
+   String formattedNumber=formatNumber(number);
    //Perform final formatting
-   int firstOcto=fformat.indexOf("#");
-   int secondOcto=fformat.indexOf("#",firstOcto+1);
-   int thirdOcto=fformat.indexOf("#",secondOcto+1);
-   int lengthFN=FormattedNumber.length();
+   int firstOcto=fformat.indexOf('#');
+   int secondOcto=fformat.indexOf('#',firstOcto+1);
+   int thirdOcto=fformat.indexOf('#',secondOcto+1);
+   int lengthFN=formattedNumber.length();
    //Peform formatting over the formatted numbers
    int change=0;
    //System.out.println(lengthFN);
@@ -201,52 +202,52 @@ public class RuleBasedNumber implements DocHandler
    if (firstAdd != null)
    {
        //There is something to add after the letters
-       int curlF=firstAdd.indexOf("{");
-       String before=FormattedNumber.substring(0,1);
-       String after=FormattedNumber.substring(1);
+       int curlF=firstAdd.indexOf('{');
+       String before=formattedNumber.substring(0,1);
+       String after=formattedNumber.substring(1);
 
        while (curlF>-1)
        {
-           int curlAF=firstAdd.indexOf("}",curlF);
+           int curlAF=firstAdd.indexOf('}',curlF);
            String data=firstAdd.substring(curlF+1,curlAF-1);
            String[] curlSplit=data.split("','");
            int dloc=Integer.parseInt(curlSplit[1]);
-           if (dloc>FormattedNumber.length()-1)
+           if (dloc>formattedNumber.length()-1)
            {
-               dloc=FormattedNumber.length()-1;
+               dloc=formattedNumber.length()-1;
            }
-           FormattedNumber=FormattedNumber.substring(0,dloc+change)+curlSplit[0].substring(1)+FormattedNumber.substring(dloc+change);
+           formattedNumber=formattedNumber.substring(0,dloc+change)+curlSplit[0].substring(1)+formattedNumber.substring(dloc+change);
            change+=1;
-           curlF=firstAdd.indexOf("{",curlF+1);
+           curlF=firstAdd.indexOf('{',curlF+1);
 
 
        }
-       int squareF=firstAdd.indexOf("[");
+       int squareF=firstAdd.indexOf('[');
        while (squareF>-1)
        {
-           int squareAF=firstAdd.indexOf("]",squareF);
+           int squareAF=firstAdd.indexOf(']',squareF);
            String data=firstAdd.substring(squareF+1,squareAF-1);
            String[] squareSplit=data.split("','");
 
 
            squareSplit[2]=squareSplit[2].replace("length(A)", Integer.toString(lengthFN));
            squareSplit[1]=squareSplit[1].replace("length(A)", Integer.toString(lengthFN));
-           squareSplit[2]=squareSplit[2].replace("N",Double.toString(Number));
-           squareSplit[1]=squareSplit[1].replace("N",Double.toString(Number));
+           squareSplit[2]=squareSplit[2].replace("N",Double.toString(number));
+           squareSplit[1]=squareSplit[1].replace("N",Double.toString(number));
            
 
-           if (Analyse.evalbool(squareSplit[2]))
+           if (analyse.evalbool(squareSplit[2]))
            {
-             int dloc=(int) Analyse.eval(squareSplit[1]);
-           if (dloc>FormattedNumber.length()-1-change)
+             int dloc=(int) analyse.eval(squareSplit[1]);
+           if (dloc>formattedNumber.length()-1-change)
            {
-               dloc=FormattedNumber.length()-1-change;
+               dloc=formattedNumber.length()-1-change;
            }
-           FormattedNumber=FormattedNumber.substring(0,dloc+change)+squareSplit[0].substring(1)+FormattedNumber.substring(dloc+change);
+           formattedNumber=formattedNumber.substring(0,dloc+change)+squareSplit[0].substring(1)+formattedNumber.substring(dloc+change);
            change+=1;
            }
 
-           squareF=firstAdd.indexOf("[",squareF+1);
+           squareF=firstAdd.indexOf('[',squareF+1);
 
 
 
@@ -259,50 +260,50 @@ public class RuleBasedNumber implements DocHandler
    if (firstAdd != null)
    {
        //There is something to add after the letters
-       int curlF=firstAdd.indexOf("{");
-       String before=FormattedNumber.substring(0,1);
-       String after=FormattedNumber.substring(1);
+       int curlF=firstAdd.indexOf('{');
+       String before=formattedNumber.substring(0,1);
+       String after=formattedNumber.substring(1);
 
        while (curlF>-1)
        {
-           int curlAF=firstAdd.indexOf("}",curlF);
+           int curlAF=firstAdd.indexOf('}',curlF);
            String data=firstAdd.substring(curlF+1,curlAF-1);
            String[] curlSplit=data.split("','");
-           int dloc=FormattedNumber.length()-change-Integer.parseInt(curlSplit[1]);
+           int dloc=formattedNumber.length()-change-Integer.parseInt(curlSplit[1]);
            if (dloc<0)
            {
                dloc=-change;
            }
-           FormattedNumber=FormattedNumber.substring(0,dloc+change)+curlSplit[0].substring(1)+FormattedNumber.substring(dloc+change);
+           formattedNumber=formattedNumber.substring(0,dloc+change)+curlSplit[0].substring(1)+formattedNumber.substring(dloc+change);
            change+=1;
-           curlF=firstAdd.indexOf("{",curlF+1);
+           curlF=firstAdd.indexOf('{',curlF+1);
 
 
        }
-       int squareF=firstAdd.indexOf("[");
+       int squareF=firstAdd.indexOf('[');
        while (squareF>-1)
        {
-           int squareAF=firstAdd.indexOf("]",squareF);
+           int squareAF=firstAdd.indexOf(']',squareF);
            String data=firstAdd.substring(squareF+1,squareAF-1);
            String[] squareSplit=data.split("','");
 
 
            squareSplit[2]=squareSplit[2].replace("length(A)", Integer.toString(lengthFN));
            squareSplit[1]=squareSplit[1].replace("length(A)", Integer.toString(lengthFN));
-           squareSplit[2]=squareSplit[2].replace("N",Double.toString(Number));
-           squareSplit[1]=squareSplit[1].replace("N",Double.toString(Number));
+           squareSplit[2]=squareSplit[2].replace("N",Double.toString(number));
+           squareSplit[1]=squareSplit[1].replace("N",Double.toString(number));
 
-           if (Analyse.evalbool(squareSplit[2]))
+           if (analyse.evalbool(squareSplit[2]))
            {
-             int dloc=FormattedNumber.length()-change-(int) Analyse.eval(squareSplit[1]);
+             int dloc=formattedNumber.length()-change-(int) analyse.eval(squareSplit[1]);
            if (dloc<0)
            {
                dloc=-change;
            }
-           FormattedNumber=FormattedNumber.substring(0,dloc+change)+squareSplit[0].substring(1)+FormattedNumber.substring(dloc+change);
+           formattedNumber=formattedNumber.substring(0,dloc+change)+squareSplit[0].substring(1)+formattedNumber.substring(dloc+change);
            change+=1;
            }
-           squareF=firstAdd.indexOf("[",squareF+1);
+           squareF=firstAdd.indexOf('[',squareF+1);
 
 
 
@@ -317,11 +318,11 @@ public class RuleBasedNumber implements DocHandler
    {
        if (finalOcto==fformat.length()-1)
        {
-           return FormattedNumber;
+           return formattedNumber;
        }
        else
        {
-           return FormattedNumber+fformat.substring(finalOcto+1);
+           return formattedNumber+fformat.substring(finalOcto+1);
        }
    }
    else
@@ -332,16 +333,16 @@ public class RuleBasedNumber implements DocHandler
        }
        else
        {
-           return fformat.substring(0,firstOcto)+FormattedNumber+fformat.substring(finalOcto+1);
+           return fformat.substring(0,firstOcto)+formattedNumber+fformat.substring(finalOcto+1);
        }
    }
 
 }
-    private String FormatNumber(double Number)
+    private String formatNumber(double number)
     {
-        String FNumber="";
+        String fNumber="";
 
-        if (Number==0)
+        if (number==0)
         {
             if (!Cz)
             {
@@ -356,7 +357,7 @@ public class RuleBasedNumber implements DocHandler
         int i=-1;
         for(i=DF.length-1;i>=0;i--)
         {
-            if (BaN[i]<=Number)
+            if (BaN[i]<=number)
             {
                 //i=j;
                 break;
@@ -364,102 +365,102 @@ public class RuleBasedNumber implements DocHandler
         }
         String format=DF[i];
         long base=BaN[i];
-        long Pint=(long) Number/base; //The integer part of the number
-        long remainder=(long) Number-base;
+        long pint=(long) number/base; //The integer part of the number
+        long remainder=(long) number-base;
         //System.out.println("--------------------------");
         //System.out.println("base: "+base);
         //System.out.println("Pint: "+Pint);
         //System.out.println("remainder: "+remainder);
         //System.out.println("Number: "+Number);
-        int cbI=format.indexOf("{");
+        int cbI=format.indexOf('{');
         if (cbI>-1)
         {
             //We have found a case of repeat case
-            int cbF=format.lastIndexOf("}");
+            int cbF=format.lastIndexOf('}');
             //System.out.println(format);
             String cb=format.substring(cbI+1,cbF);
-            int quoteI=cb.indexOf("'");
-            int quoteF=cb.lastIndexOf("'");
+            int quoteI=cb.indexOf('\'');
+            int quoteF=cb.lastIndexOf('\'');
             String repeat=cb.substring(quoteI+1,quoteF);
             //System.out.println(cb);
             //System.out.println(quoteF);
             //System.out.println(cb.substring(quoteF+2));
             int times=Integer.parseInt(cb.substring(quoteF+2));
             long divide=(long) remainder/times;
-            FNumber=format.substring(0,cbI);
+            fNumber=format.substring(0,cbI);
             remainder=remainder-divide*times;
             for(int i1=1;i1<=divide;i1++)
             {
-                FNumber+=repeat;
+                fNumber+=repeat;
             }
             //System.out.println(FNumber);
             if (cbF+1<format.length())
             {
-                FNumber+=format.substring(cbF+1);
+                fNumber+=format.substring(cbF+1);
             }
         }
         else
         {
-            FNumber=format;
+            fNumber=format;
         }
-        int octo=format.indexOf("#");
+        int octo=format.indexOf('#');
         
         if (octo>=0)
         {
             //There is a need to convert the multiplier as per the rules
             //System.out.println("The octo location is "+octo);
-            String multiplier=FormatNumber(Pint);
+            String multiplier=formatNumber(pint);
             
             if (octo==0)
             {
-                FNumber=multiplier+FNumber.substring(1);
+                fNumber=multiplier+fNumber.substring(1);
             }
             else
             {
-                if (octo==FNumber.length()-1)
+                if (octo==fNumber.length()-1)
                 {
-                    FNumber=FNumber.substring(0,octo)+multiplier;
+                    fNumber=fNumber.substring(0,octo)+multiplier;
                 }
                 else
                 {
-                    FNumber=FNumber.substring(0,octo)+multiplier+FNumber.substring(octo+1);
+                    fNumber=fNumber.substring(0,octo)+multiplier+fNumber.substring(octo+1);
                     //System.out.println("After modifications, it is "+FNumber);
                 }
             }
-            remainder=(long) Number-Pint*base;
+            remainder=(long) number-pint*base;
         }
         //
-        int squareF=FNumber.indexOf("[");
+        int squareF=fNumber.indexOf('[');
        while (squareF>-1)
        {
-           int squareAF=FNumber.indexOf("]",squareF);
-           String data=FNumber.substring(squareF+1,squareAF-1);
+           int squareAF=fNumber.indexOf(']',squareF);
+           String data=fNumber.substring(squareF+1,squareAF-1);
            String[] squareSplit=data.split("','");
 
 
            //squareSplit[2]=squareSplit[2].replace("length(A)", Integer.toString(lengthFN));
            //squareSplit[1]=squareSplit[1].replace("length(A)", Integer.toString(lengthFN));
            //squareSplit[2]=squareSplit[2].replace("N",Double.toString(Number));
-           squareSplit[1]=squareSplit[1].replace("N",Double.toString(Number));
+           squareSplit[1]=squareSplit[1].replace("N",Double.toString(number));
            squareSplit[1]=squareSplit[1].replace("$",Double.toString(remainder));
 
-           if (Analyse.evalbool(squareSplit[1]))
+           if (analyse.evalbool(squareSplit[1]))
            {
-                     FNumber=FNumber.substring(0,squareF)+squareSplit[0].substring(1)+FNumber.substring(squareAF+1);
+                     fNumber=fNumber.substring(0,squareF)+squareSplit[0].substring(1)+fNumber.substring(squareAF+1);
 
            }
            else
            {
-               FNumber=FNumber.substring(0,squareF)+FNumber.substring(squareAF+1);
+               fNumber=fNumber.substring(0,squareF)+fNumber.substring(squareAF+1);
            }
-           squareF=FNumber.indexOf("[");
+           squareF=fNumber.indexOf('[');
 
 
 
 
        }
         //
-        int amper=FNumber.indexOf("$");
+        int amper=fNumber.indexOf('$');
         /*if (remainder==0)
         {
             amper=-1;
@@ -468,7 +469,7 @@ public class RuleBasedNumber implements DocHandler
         {
             //There is need to recursively solve the situation
             //System.out.println(remainder);
-            String amperNumber=FormatNumber(remainder);
+            String amperNumber=formatNumber(remainder);
             //System.out.println("The $ is given as "+amperNumber);
             //String amperNumber=Integer.toString(remainder);
             if (amperNumber.equals(""))
@@ -476,50 +477,50 @@ public class RuleBasedNumber implements DocHandler
                 //No number needs to be converted remove the symbol
                 if (amper==0)
             {
-                FNumber=FNumber.substring(1);
+                fNumber=fNumber.substring(1);
             }
             else
             {
-                if (amper==FNumber.length()-1)
+                if (amper==fNumber.length()-1)
                 {
                     //The ampersand is at the end of a number
-                    FNumber=FNumber.substring(0,amper);
+                    fNumber=fNumber.substring(0,amper);
                 }
                 else
                 {
                     //The ampersand is in the middle of the number
-                    String before=FNumber.substring(0,amper);
-                    String after=FNumber.substring(amper+1);
-                    FNumber=before+after;
+                    String before=fNumber.substring(0,amper);
+                    String after=fNumber.substring(amper+1);
+                    fNumber=before+after;
                 }
             }
             }else
             {
             if (amper==0)
             {
-                FNumber=amperNumber+FNumber.substring(1);
+                fNumber=amperNumber+fNumber.substring(1);
             }
             else
             {
-                if (amper==FNumber.length()-1)
+                if (amper==fNumber.length()-1)
                 {
                     //The ampersand is at the end of a number
-                    FNumber=FNumber.substring(0,amper)+amperNumber;
+                    fNumber=fNumber.substring(0,amper)+amperNumber;
                 }
                 else
                 {
                     //The ampersand is in the middle of the number
-                    String before=FNumber.substring(0,amper);
-                    String after=FNumber.substring(amper+1);
-                    FNumber=before+amperNumber+after;
+                    String before=fNumber.substring(0,amper);
+                    String after=fNumber.substring(amper+1);
+                    fNumber=before+amperNumber+after;
                 }
             }
             }
         }
         //System.out.println("At present, the number is converted as "+FNumber);
-        return FNumber;
+        return fNumber;
     }
-       public int ConvertToInteger(String FNumber)
+       public int convertToInteger(String fNumber)
        {
            //At present this is not supported.
            return -1;
@@ -529,7 +530,7 @@ public class RuleBasedNumber implements DocHandler
 
 	private String[] obtainValues(String in)
 	{
-		//THIS FUNCTION TAKES A STTRING SEPARATED BY '/,' AND RETURNS A STRING ARRAY.
+		//THIS FUNCTION TAKES A STRING SEPARATED BY '/,' AND RETURNS A STRING ARRAY.
 		String[] rough=in.split("/,");
 		//System.out.println(rough[0] + " " +rough[1]);
 		return rough;

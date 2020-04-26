@@ -1,17 +1,11 @@
 package Ponomar.parsing;
 
-import javax.swing.*;
-import java.beans.*;
-import java.awt.*;
 import java.util.*;
 import java.io.*;
-import javax.swing.event.*;
+import java.nio.charset.StandardCharsets;
 
 import Ponomar.utility.OrderedHashtable;
 import Ponomar.utility.StringOp;
-
-import java.awt.event.*;
-import java.beans.*;
 /***********************************************************************
 THIS MODULE READS XML FILES THAT CONTAIN THE <DAY> TYPE 
 AND STORES THE INFORMATION IN A MANNER USUABLE BY OTHER COMPONENTS
@@ -33,19 +27,19 @@ OF PONOMAR.
 
 public class Days implements DocHandler
 {
-	private final static String Location  = "Ponomar/xml/";   // THE LOCATION OF THE DAY FILES
+	private static final String LOCATION  = "Ponomar/xml/";   // THE LOCATION OF THE DAY FILES
 	private static boolean read=false;
 	private String filename;
 	private int lineNumber;
 	//private LanguagePack Text=new LanguagePack();
 	//private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-	private OrderedHashtable Commemorations;
-	private Vector CommemorationList;
-	private String[] Rank;
-	private String[] Icons;
-	private int Number;
-        private StringOp Analyse=new StringOp();
+	private OrderedHashtable commemorations;
+	private Vector<Commemoration> commemorationList;
+	private String[] rank;
+	private String[] icons;
+	private int number;
+        private StringOp analyse=new StringOp();
 	//private OrderedHashtable readings;
 	//private OrderedHashtable grammar;
 	//private OrderedHashtable variable;
@@ -57,22 +51,22 @@ public class Days implements DocHandler
 
 		reset();			
 	}
-	protected Days(String FileName,OrderedHashtable dayInfo)
+	protected Days(String fileName,OrderedHashtable dayInfo)
 	{
 		//THIS READS A GIVEN FILE AND RESETS EVERYTHING
 		reset();
 		//THE FILENAME MUST CONTAIN THE APPROPRIATE FOLDER AND EXTENSION (.xml)
-                Analyse.setDayInfo(dayInfo);
-		readDay(FileName);		
+                analyse.setDayInfo(dayInfo);
+		readDay(fileName);		
 	}
 	
-	public void readDay(String FileName) //throws IOException
+	public void readDay(String fileName) //throws IOException
 	{
 		//reset Rank, which can potentially have been changed
 		resetVars();
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Location+FileName), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(LOCATION+fileName), StandardCharsets.UTF_8));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -102,7 +96,7 @@ public class Days implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -120,34 +114,34 @@ public class Days implements DocHandler
 			{
 				return;
 			}
-			String IdAll=table.get("Id").toString();
-			String[] Id=IdAll.split(",");
-			Number++;
+			String idAll=table.get("Id").toString();
+			String[] id=idAll.split(",");
+			number++;
 			if(name.equals(""))
 			{
 				//THERE IS ONLY A LIST OF POSSIBLE ID'S THAT NEED TO BE READ
-				for(int i=0;i<Id.length;i++)
+				for(int i=0;i<id.length;i++)
 				{
-					Commemoration Saint=new Commemoration(Id[i],Analyse.getDayInfo());
-					CommemorationList.add(Saint);
+					Commemoration saint=new Commemoration(id[i],analyse.getDayInfo());
+					commemorationList.add(saint);
 				}
 			}
 			else
 			{
 				//THERE IS A NAME ASSIGNED FOR THE GIVEN DAY
-				if(Id[0].equals(""))
+				if(id[0].equals(""))
 				{
 					//System.out.println("Hello World : "+name);
-					Commemoration Saint= new Commemoration(name,new OrderedHashtable(),new OrderedHashtable());
-					CommemorationList.add(Saint);
+					Commemoration saint= new Commemoration(name,new OrderedHashtable(),new OrderedHashtable());
+					commemorationList.add(saint);
 				}
 				else
 				{
 					//AN ID NUMBER IS SPECIFIED, SKIP THE NAME AND READ THE ACTUAL ID FILE
 					//Commemoration Saint=new Commemoration();
 					//CommemorationList.add(Saint.Commemoration(Id));
-					Commemoration Saint=new Commemoration(Id[0],Analyse.getDayInfo());
-					CommemorationList.add(Saint);
+					Commemoration saint=new Commemoration(id[0],analyse.getDayInfo());
+					commemorationList.add(saint);
 				}
 			}
 		}
@@ -168,18 +162,18 @@ public class Days implements DocHandler
 	public void reset()
 	{
 		//RESETS THE FILE TO A BLANK FILE
-		Commemorations=new OrderedHashtable();
-		CommemorationList=new Vector();
+		commemorations=new OrderedHashtable();
+		commemorationList=new Vector<>();
 		resetVars();
 	}
 	private void resetVars()
 	{
-		Rank=new String[3];
-		Rank[0]=null;
-		Rank[1]=null;
-		Rank[2]=null;
-		Icons=new String[2];
-		Number=0;
+		rank=new String[3];
+		rank[0]=null;
+		rank[1]=null;
+		rank[2]=null;
+		icons=new String[2];
+		number=0;
 	}
 	public String[] getRank()
 	{
@@ -188,115 +182,115 @@ public class Days implements DocHandler
 		//THE SECOND ENTRY CONTAINS ANY COMMENTS ABOUT PRE- (B)/POST-(A) FEASTS, WHICH WILL BE RETURNED AS FeastRank_B/A.
 		//IF THERE IS NO PRE-/POSTFEAST, THEN THAT ENTRY IS NULL.
 		//THE THIRD ENTRY LISTS ALL OTHER SUBSIDIARY FEASTS THAT OCCUR WITH RANK GREATER THAN 3, SINCE THERE MAY BE A NEED TO KNOW THIS 
-		if(Rank[0]==null)
+		if(rank[0]==null)
 		{
-			Rank=new String[3];
-			Rank[0]="10";
-			Rank[1]=null;
-			Rank[2]=null;
-			for(int i=0;i<CommemorationList.size();i++)
+			rank=new String[3];
+			rank[0]="10";
+			rank[1]=null;
+			rank[2]=null;
+			for(int i=0;i<commemorationList.size();i++)
 			{
-				Commemoration Saint=(Commemoration)CommemorationList.get(i);
-				String RankSaint=Saint.getRank();
-				int k=RankSaint.indexOf("_");
+				Commemoration saint=commemorationList.get(i);
+				String rankSaint=saint.getRank();
+				int k=rankSaint.indexOf('_');
 				if(k == -1)
 				{
 					//THIS IS NOT A SPECIAL SEASON
-					int RankDay=Integer.parseInt(RankSaint);
-					if(RankDay<Integer.parseInt(Rank[0]) && RankDay != -1)
+					int rankDay=Integer.parseInt(rankSaint);
+					if(rankDay<Integer.parseInt(rank[0]) && rankDay != -1)
 					{
-						Rank[0]=RankSaint;
+						rank[0]=rankSaint;
 					}
-					if(Integer.parseInt(RankSaint)>=2)
+					if(Integer.parseInt(rankSaint)>=2)
 					{
-						if(Rank[2]==null)
+						if(rank[2]==null)
 						{
-							Rank[2]=RankSaint;
+							rank[2]=rankSaint;
 						}
 						else
 						{
-							Rank[2]+=","+RankSaint;
+							rank[2]+=","+rankSaint;
 						}
 					}
 				}
 				else
 				{
 					//THIS IS A SPECIAL SEASON
-					Rank[1]=RankSaint;
+					rank[1]=rankSaint;
 				}			
 			}
-			if(Rank[0].equals("10"))
+			if(rank[0].equals("10"))
 			{
-				Rank[0]="-1";
+				rank[0]="-1";
 			}
 		}
-		return Rank;
+		return rank;
 		
 	}
 	
 	public void order()
 	{
-		//THIS WILL ORDER THE COMMEMORATINS LISTED BASED ON THEIR RANK
+		//THIS WILL ORDER THE COMMEMORATIONS LISTED BASED ON THEIR RANK
 		//HOW TO IMPLEMENT THIS QUICKLY AND EFFICIENTLY IS A QUESTION
 	}
 	
 	public String[] getIcons()
 	{
 		//THIS WILL TAKE AN ORDERED LIST AND CONVERT ALL THE ICONS (SINCE A SINGLE COMMEMORATION CAN HAVE MORE THAN ONE ICON) INTO A LIST OF ICONS
-		if(Icons[0]==null)
+		if(icons[0]==null)
 		{
-			for(int i=0;i<CommemorationList.size();i++)
+			for(int i=0;i<commemorationList.size();i++)
 			{
-				Commemoration Saint=(Commemoration)CommemorationList.get(i);
-				String IconTest=Saint.getIcon();
-				String Name=Saint.getGrammar("");		//THE <NAME> TAG IS DESIRED
-				if(IconTest != null)
+				Commemoration saint=commemorationList.get(i);
+				String iconTest=saint.getIcon();
+				String name=saint.getGrammar("");		//THE <NAME> TAG IS DESIRED
+				if(iconTest != null)
 				{
 					//DETERMINE IF THERE ARE MULTIPLE ICONS FOR THE GIVEN DAY
-					String[] splits=IconTest.split(",");
-					String NameList=Name;
+					String[] splits=iconTest.split(",");
+					String nameList=name;
 					if(splits.length>1)
 					{
 						//THERE ARE MORE THAN ONE ICONS FOR A GIVEN DAY
 						for(i=2;i<splits.length;i++)
 						{
-							NameList+="%"+Name;
+							nameList+="%"+name;
 						}
 					}
-					if(Icons[0]==null)
+					if(icons[0]==null)
 					{
-						Icons[0]=IconTest;
-						Icons[1]=NameList;
+						icons[0]=iconTest;
+						icons[1]=nameList;
 					}
 					else
 					{
-						Icons[0]+="%"+IconTest;
-						Icons[1]+="%"+NameList;
+						icons[0]+="%"+iconTest;
+						icons[1]+="%"+nameList;
 					}
 				}
 			}
 		}
-		return Icons;
+		return icons;
 	}
 	public String getGrammar(int value, String case1)
 	{
-		Commemoration Saint=(Commemoration)CommemorationList.get(value);
-		return Saint.getGrammar(case1);
+		Commemoration saint=commemorationList.get(value);
+		return saint.getGrammar(case1);
 	}
 	public int getNumber()
 	{
 		//returns the number of commemorations on a given day
-		return Number;
+		return number;
 	}
 	public String getID(int value)
 	{
-		Commemoration Saint=(Commemoration)CommemorationList.get(value);
-		return Saint.getID();
+		Commemoration saint=commemorationList.get(value);
+		return saint.getID();
 	}
 	public String getCycle(int value)
 	{
-		Commemoration Saint=(Commemoration)CommemorationList.get(value);
-		return Saint.getCycle();
+		Commemoration saint=commemorationList.get(value);
+		return saint.getCycle();
 	}
 	
 }

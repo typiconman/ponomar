@@ -282,7 +282,7 @@ public class ThirdHour implements DocHandler, ActionListener, ItemListener, Prop
 		//CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
 		//POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
 		ServiceInfo ServicePrimes=new ServiceInfo("TERCE",Analyse.getDayInfo());
-		OrderedHashtable PrimesTrial = ServicePrimes.ServiceRules();
+		OrderedHashtable PrimesTrial = ServicePrimes.serviceRules();
 		
 		Type=PrimesTrial.get("Type").toString();
 		LentenK=(String) PrimesTrial.get("LENTENK");

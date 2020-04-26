@@ -5,6 +5,8 @@ import java.beans.*;
 import java.awt.*;
 import java.util.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+
 import javax.swing.event.*;
 
 import Ponomar.internationalization.LanguagePack;
@@ -41,51 +43,51 @@ public class Day implements DocHandler {
     //private LanguagePack Text=new LanguagePack();
     //private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
     //private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-    private OrderedHashtable Information;
+    private OrderedHashtable information;
     private OrderedHashtable readings;
     private OrderedHashtable grammar;
     private OrderedHashtable variable;
     private String textR;
     private boolean readRH = false;
-    private OrderedHashtable RoyalHours;
+    private OrderedHashtable royalHours;
     private String elemRH;
     private OrderedHashtable value;
-    private OrderedHashtable ServiceInfo;
-    private String Location1;
+    private OrderedHashtable serviceInfo;
+    private String location1;
     private boolean readService = false;
-    private LanguagePack Text;// = new LanguagePack();
-    private String[] CommNames;// = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
+    private LanguagePack text;// = new LanguagePack();
+    private String[] commNames;// = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
     private Helpers helper;
     private int counter = 0;
-    private Vector OrderedCommemorations;
+    private Vector<Commemoration1> orderedCommemorations;
     private int dayRank = -100;
-    private int Tone = -1;
-    private String[] MainNames;//=Text.obtainValues((String)Text.Phrases.get("Main"));
+    private int tone = -1;
+    private String[] mainNames;//=Text.obtainValues((String)Text.Phrases.get("Main"));
     private String[] toneNumbers;//= Text.obtainValues((String)Text.Phrases.get("Tones"));
     private String forComm;//=(String)Text.Phrases.get("Commemoration2");
-    private static StringOp ParameterValues = new StringOp();
+    private static StringOp parameterValues = new StringOp();
 
-    public Day(String FileName, OrderedHashtable dayInfo) {
-        Information = new OrderedHashtable();
+    public Day(String fileName, OrderedHashtable dayInfo) {
+        information = new OrderedHashtable();
         readings = new OrderedHashtable();
-        RoyalHours = new OrderedHashtable();
-        ParameterValues.setDayInfo(dayInfo);
-        helper = new Helpers(ParameterValues.getDayInfo());
-        Text = new LanguagePack(ParameterValues.getDayInfo());
-    CommNames = Text.obtainValues((String) Text.getPhrases().get("Commemoration"));
-MainNames=Text.obtainValues((String)Text.getPhrases().get("Main"));
-    toneNumbers= Text.obtainValues((String)Text.getPhrases().get("Tones"));
-    forComm=(String)Text.getPhrases().get("Commemoration2");
+        royalHours = new OrderedHashtable();
+        parameterValues.setDayInfo(dayInfo);
+        helper = new Helpers(parameterValues.getDayInfo());
+        text = new LanguagePack(parameterValues.getDayInfo());
+    commNames = text.obtainValues((String) text.getPhrases().get("Commemoration"));
+mainNames=text.obtainValues((String)text.getPhrases().get("Main"));
+    toneNumbers= text.obtainValues((String)text.getPhrases().get("Tones"));
+    forComm=(String)text.getPhrases().get("Commemoration2");
         counter = 0;
-        OrderedCommemorations = new Vector();
+        orderedCommemorations = new Vector<>();
         dayRank = -100;
-         Information.put("ID", FileName);
-        readDay(FileName);
+         information.put("ID", fileName);
+        readDay(fileName);
 
 
 
     }
-    protected Day(String FileName)
+    protected Day(String fileName)
     {
        /*ParameterValues.getDayInfo()=StringOp.dayInfo;
         Information = new OrderedHashtable();
@@ -102,29 +104,29 @@ MainNames=Text.obtainValues((String)Text.getPhrases().get("Main"));
 
     protected Day() {
         counter = 0;
-        OrderedCommemorations = new Vector();
+        orderedCommemorations = new Vector<>();
         dayRank = -100;
 
-        Information = new OrderedHashtable();
+        information = new OrderedHashtable();
         readings = new OrderedHashtable();
-        helper = new Helpers(ParameterValues.getDayInfo());
+        helper = new Helpers(parameterValues.getDayInfo());
         System.out.println("NOTE USING WRONG DAY INPUT FORMAT!!!!");
     }
 
-    public void readDay(String FileName) //throws IOException
+    public void readDay(String fileName) //throws IOException
     {
-        FileName = FileName;
+        fileName = fileName;
         //System.out.println(ParameterValues.getDayInfo().get("LS"));
-        String test=ParameterValues.getDayInfo().get("LS").toString();
+        String test=parameterValues.getDayInfo().get("LS").toString();
         //System.out.println("In Day, we have the path as " + test);
         
         try {
-            //BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(ParameterValues.getDayInfo().get("LS").toString(),FileName+".xml")), "UTF8"));
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind((String)ParameterValues.getDayInfo().get("LS"), FileName + ".xml")), "UTF8"));
+            //BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(ParameterValues.getDayInfo().get("LS").toString(),FileName+".xml")), StandardCharsets.UTF_8));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind((String)parameterValues.getDayInfo().get("LS"), fileName + ".xml")), StandardCharsets.UTF_8));
             //System.out.println("===============\n"+helper.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), FileName + ".xml"));
             QDParser.parse(this, frf);
         } catch (Exception e) {
-            System.out.println("In file name, "+helper.langFileFind((String)ParameterValues.getDayInfo().get("LS"), FileName + ".xml")+" an error occurred of type: ");
+            System.out.println("In file name, "+helper.langFileFind((String)parameterValues.getDayInfo().get("LS"), fileName + ".xml")+" an error occurred of type: ");
             e.printStackTrace();
         }
     }
@@ -144,7 +146,7 @@ MainNames=Text.obtainValues((String)Text.getPhrases().get("Main"));
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (ParameterValues.evalbool(table.get("Cmd").toString()) == false) {
+            if (parameterValues.evalbool(table.get("Cmd").toString()) == false) {
 
                 return;
             }
@@ -157,19 +159,19 @@ MainNames=Text.obtainValues((String)Text.getPhrases().get("Main"));
         //}
         if (elem.equals("SAINT") && read) {
             //System.out.println(table);
-             String Sid="1";
+             String sId="1";
             if (table.get("SId")!=null){
-                Sid = table.get("SId").toString();
+                sId = table.get("SId").toString();
             }
              
 
-            String Cid = table.get("CId").toString();
+            String cId = table.get("CId").toString();
             if (table.get("Tone")!=null){
-               Tone=(int) Math.floor(ParameterValues.eval(table.get("Tone").toString()));
+               tone=(int) Math.floor(parameterValues.eval(table.get("Tone").toString()));
             }
-            Commemoration1 DayA = new Commemoration1(Sid, Cid,ParameterValues.getDayInfo());
+            Commemoration1 dayA = new Commemoration1(sId, cId,parameterValues.getDayInfo());
 
-            OrderedCommemorations.addElement(DayA);
+            orderedCommemorations.addElement(dayA);
 
         }
 
@@ -185,57 +187,57 @@ MainNames=Text.obtainValues((String)Text.getPhrases().get("Main"));
         if (dayRank == -100) {
 
 
-            for (int i = 0; i < OrderedCommemorations.size(); i++) {
-                Commemoration1 CurrentC = (Commemoration1) OrderedCommemorations.get(i);
-                dayRank = Math.max(CurrentC.getRank(), dayRank);
+            for (int i = 0; i < orderedCommemorations.size(); i++) {
+                Commemoration1 currentC = orderedCommemorations.get(i);
+                dayRank = Math.max(currentC.getRank(), dayRank);
             }
         }
         return dayRank;
     }
     public int getTone(){
         
-        if(Tone==0)
+        if(tone==0)
 				{
-					Tone=8;
+					tone=8;
 				}
-        return Tone;
+        return tone;
     }
 
     public String getCommsHyper() {
         //Returns a hyperlinked listing of all the commemorations for a given day.
-        String CSep=(String)Text.getPhrases().get("CommSep");
+        String cSep=(String)text.getPhrases().get("CommSep");
         String output = "";
-        for (int i = 0; i < OrderedCommemorations.size(); i++) {
-            Commemoration1 CCom = (Commemoration1) OrderedCommemorations.get(i);
+        for (int i = 0; i < orderedCommemorations.size(); i++) {
+            Commemoration1 cCom = orderedCommemorations.get(i);
 
-            String Sid = CCom.getSId();
-            String Cid = CCom.getCId();
-            String NameF = CCom.getName();
+            String sId = cCom.getSId();
+            String cId = cCom.getCId();
+            String nameF = cCom.getName();
             
-            if (output.length()>0 && NameF.length()>0){
-                output+=CSep;
+            if (output.length()>0 && nameF.length()>0){
+                output+=cSep;
             }
             
             //System.out.println(NameF);
-            if (CCom.checkLife() || CCom.checkPropers()){
-                output += "<A Href='goDoSaint?id=" + Sid + "," + Cid + "'>";
+            if (cCom.checkLife() || cCom.checkPropers()){
+                output += "<A Href='goDoSaint?id=" + sId + "," + cId + "'>";
             }
-            int Rank = CCom.getRank();
-            String Rank0Format=(String)Text.getPhrases().get("Rank0");
-            String Rank1Format=(String)Text.getPhrases().get("Rank1");
-            String Rank2Format=(String)Text.getPhrases().get("Rank2");
-            String Rank3Format=(String)Text.getPhrases().get("Rank3");
-            String Rank4Format=(String)Text.getPhrases().get("Rank4");
-            String Rank5Format=(String)Text.getPhrases().get("Rank5");
-            String Rank6Format=(String)Text.getPhrases().get("Rank6");
+            int rank = cCom.getRank();
+            String rank0Format=(String)text.getPhrases().get("Rank0");
+            String rank1Format=(String)text.getPhrases().get("Rank1");
+            String rank2Format=(String)text.getPhrases().get("Rank2");
+            String rank3Format=(String)text.getPhrases().get("Rank3");
+            String rank4Format=(String)text.getPhrases().get("Rank4");
+            String rank5Format=(String)text.getPhrases().get("Rank5");
+            String rank6Format=(String)text.getPhrases().get("Rank6");
 
-            switch (Rank) {
+            switch (rank) {
                 case 8:
                 case 7:
                 case 6:
                     //output += "<FONT Color='red'><Font face='Ponomar Unicode TT' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";//A698
                     //output += "<FONT Color='red'><Font face='Ponomar Unicode TT' size='+1'>\uD83D\uDD40</Font><B>\u00A0" + NameF + "</B></FONT>";
-                    output +=Rank6Format.replace("^NF", NameF);
+                    output +=rank6Format.replace("^NF", nameF);
                     //output += "</body><body style=\"font-family:Ponomar Unicode TT;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt;color:red;font-style:bold\">\u00A0" + table.get("Name") + "</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt\">";
                     //output += "<style style=\"font-family:Ponomar Unicode TT;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</style>\u00A0<style style=\"color:red\">" + table.get("Name") + "</style>";
                     //output+="<B><rank style=\"font-face:Ponomar Unicode TT;size=18;color:red\">\uA698</rank><B>\u00A0"+table.get("Name");
@@ -243,47 +245,47 @@ MainNames=Text.obtainValues((String)Text.getPhrases().get("Main"));
                     break;
                 case 5:
                     //output += "<FONT Color='red'><Font face='Ponomar Unicode TT' size='+1'>\uD83D\uDD41</Font>\u00A0" + NameF + "</FONT>";
-                    output+=Rank5Format.replace("^NF",NameF);
+                    output+=rank5Format.replace("^NF",nameF);
                     break;
                 case 4:
                     //output += "<Font Color='red' face='Ponomar Unicode TT' size='+1'>\uD83D\uDD42</Font><B>\u00A0" + NameF + "</B>";
-                    output+=Rank4Format.replace("^NF",NameF);
+                    output+=rank4Format.replace("^NF",nameF);
                     break;
 
                 case 3:
                     //output += "<Font Color='red' face='Ponomar Unicode TT' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
-                    output+=Rank3Format.replace("^NF",NameF);
+                    output+=rank3Format.replace("^NF",nameF);
                     break;
                 case 2:
                     //output += "<Font face='Ponomar Unicode TT' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
-                    output+=Rank2Format.replace("^NF",NameF);
+                    output+=rank2Format.replace("^NF",nameF);
                     break;
                 case 1:
-                    output+=Rank1Format.replace("^NF",NameF);
+                    output+=rank1Format.replace("^NF",nameF);
                     break;
                 default:
                     //output += NameF;
-                    output+=Rank0Format.replace("^NF",NameF);
+                    output+=rank0Format.replace("^NF",nameF);
                 //Note: \u00A0 is a nonbreaking space.
                 }
-             if (CCom.checkLife()){
+             if (cCom.checkLife()){
             output += "</A>";
              }
-            if (Tone != -1){
-                int Cidn=Integer.parseInt(Cid);
-                //System.out.println(Cidn);
-                if (Cidn>=9000 && Cidn<9900){
-                if(Tone==0)
+            if (tone != -1){
+                int cIdn=Integer.parseInt(cId);
+                //System.out.println(cIdn);
+                if (cIdn>=9000 && cIdn<9900){
+                if(tone==0)
 				{
-					Tone=8;
+					tone=8;
 				}
 
 
 
-                                String ToneFormat = new String();
-                                ToneFormat=MainNames[4];
-                                ToneFormat=CSep+ToneFormat.replace("TT",toneNumbers[Tone]);
-                                output+=ToneFormat;
+                                String toneFormat = new String();
+                                toneFormat=mainNames[4];
+                                toneFormat=cSep+toneFormat.replace("TT",toneNumbers[tone]);
+                                output+=toneFormat;
                 
             }
             }
@@ -293,23 +295,23 @@ MainNames=Text.obtainValues((String)Text.getPhrases().get("Main"));
 
     public OrderedHashtable getIcon() {
         //Ordered List of the Icons
-        Vector IconImages = new Vector();
-        Vector IconNames=new Vector();
+        Vector iconImages = new Vector();
+        Vector iconNames=new Vector();
 
-        for (int i = 0; i < OrderedCommemorations.size(); i++) {
-            Commemoration1 CCom = (Commemoration1) OrderedCommemorations.get(i);
-            String Sid = CCom.getSId();
-            String Cid = CCom.getCId();
-            String NameF = CCom.getGrammar("Short");
-            String[] IconSearch=Text.obtainValues((String)Text.getPhrases().get("IconSearch"));
+        for (int i = 0; i < orderedCommemorations.size(); i++) {
+            Commemoration1 cCom = orderedCommemorations.get(i);
+            String sId = cCom.getSId();
+            String cId = cCom.getCId();
+            String nameF = cCom.getGrammar("Short");
+            String[] iconSearch=text.obtainValues((String)text.getPhrases().get("IconSearch"));
             
-            File fileNew=new File(helper.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), "/icons/"+ Cid + "/0.jpg"));
+            File fileNew=new File(helper.langFileFind(parameterValues.getDayInfo().get("LS").toString(), "/icons/"+ cId + "/0.jpg"));
             int countSearch=0;
-            String LanguageString=ParameterValues.getDayInfo().get("LS").toString();
+            String languageString=parameterValues.getDayInfo().get("LS").toString();
             
-            while (!(fileNew.exists()) && countSearch<IconSearch.length){
-                LanguageString=IconSearch[countSearch];
-                fileNew=new File(helper.langFileFind(IconSearch[countSearch], "/icons/"+ Cid + "/0.jpg"));
+            while (!(fileNew.exists()) && countSearch<iconSearch.length){
+                languageString=iconSearch[countSearch];
+                fileNew=new File(helper.langFileFind(iconSearch[countSearch], "/icons/"+ cId + "/0.jpg"));
                 countSearch+=1;               
             }
 
@@ -320,90 +322,90 @@ MainNames=Text.obtainValues((String)Text.getPhrases().get("Main"));
             //System.out.println(fileNew.getAbsolutePath());
             while (fileNew.exists()){
             
-                IconImages.add(fileNew.toString());
-                IconNames.add(NameF);
+                iconImages.add(fileNew.toString());
+                iconNames.add(nameF);
                 counterI+=1;
-                fileNew=new File(helper.langFileFind(LanguageString, "/icons/"+ Cid + "/"+counterI+".jpg"));
+                fileNew=new File(helper.langFileFind(languageString, "/icons/"+ cId + "/"+counterI+".jpg"));
             }
-        File file = new File("Ponomar/images/icons/" + Cid + ".jpg");
+        File file = new File("Ponomar/images/icons/" + cId + ".jpg");
         if (file.exists()) {
-            IconImages.add(file.toString());
-            IconNames.add(NameF);
+            iconImages.add(file.toString());
+            iconNames.add(nameF);
         }
         }
         OrderedHashtable finalI = new OrderedHashtable();
-        finalI.put("Images",IconImages);
-        finalI.put("Names",IconNames);
+        finalI.put("Images",iconImages);
+        finalI.put("Names",iconNames);
         return finalI;
     }
 
-    public OrderedHashtable getService(String Node, String Type) {
+    public OrderedHashtable getService(String node, String type) {
         //System.out.println(ServiceInfo);
         //System.out.println("\n\n");
         //System.out.println(Node+"/"+Type);
-        if (ServiceInfo.containsKey(Node)) {
-            OrderedHashtable stuff = (OrderedHashtable) ServiceInfo.get(Node);
+        if (serviceInfo.containsKey(node)) {
+            OrderedHashtable stuff = (OrderedHashtable) serviceInfo.get(node);
 
-            if (stuff.containsKey(Type)) {
-                OrderedHashtable stuff1 = (OrderedHashtable) stuff.get(Type);
+            if (stuff.containsKey(type)) {
+                OrderedHashtable stuff1 = (OrderedHashtable) stuff.get(type);
 
                 return stuff1;
             } else {
-                System.out.println(CommNames[0] + Node + CommNames[1] + Type);
+                System.out.println(commNames[0] + node + commNames[1] + type);
                 return new OrderedHashtable();
             }
         } else {
-            System.out.println(CommNames[2] + Node);
+            System.out.println(commNames[2] + node);
             return new OrderedHashtable();
         }
     }
     public OrderedHashtable[] getReadings(){
-        OrderedHashtable ReadingsA[] =new OrderedHashtable[OrderedCommemorations.size()];
-        OrderedHashtable RInformation[] = new OrderedHashtable[OrderedCommemorations.size()];
+        OrderedHashtable[] readingsA = new OrderedHashtable[orderedCommemorations.size()];
+        OrderedHashtable[] rInformation = new OrderedHashtable[orderedCommemorations.size()];
         Vector count= new Vector();
 
 
-        for (int i = 0; i < OrderedCommemorations.size(); i++) {
-                Commemoration1 CurrentC = (Commemoration1) OrderedCommemorations.get(i);
-                int sizeR=CurrentC.getReadings().size();
-                if (CurrentC.getReadings() != null || sizeR>0){
+        for (int i = 0; i < orderedCommemorations.size(); i++) {
+                Commemoration1 currentC = orderedCommemorations.get(i);
+                int sizeR=currentC.getReadings().size();
+                if (currentC.getReadings() != null || sizeR>0){
                     //There are readings to consider for today.
                     //ReadingsA[i]= new OrderedHashtable();
                     //ReadingsA[i]=CurrentC.getReadings();
                     count.add(i);
-                    int Ranked=(int) CurrentC.getRank();
+                    int ranked=(int) currentC.getRank();
                     //System.out.println("For "+CurrentC.getCId().toString()+" rank is "+Ranked);
-                    RInformation[i]=new OrderedHashtable();
+                    rInformation[i]=new OrderedHashtable();
 
                     //System.out.println(CurrentC.getGrammar("Short")+" "+CurrentC.getReadings());
                     //forComm=forComm.replace("^CC", CurrentC.getGrammar("Short"));
                     //Temporary grammar processor
                     int getN=forComm.indexOf("%getN");
-                    int forwardbracket=forComm.indexOf("(",getN);
-                    int backbracket=forComm.indexOf(")");
+                    int forwardbracket=forComm.indexOf('(',getN);
+                    int backbracket=forComm.indexOf(')');
                     String info=forComm.substring(forwardbracket+1,backbracket);
                     String[] splits=info.split(",");
-                    String forCommF=forComm.substring(0,getN)+CurrentC.getGrammar(splits[1])+forComm.substring(backbracket+1);
+                    String forCommF=forComm.substring(0,getN)+currentC.getGrammar(splits[1])+forComm.substring(backbracket+1);
                    
 
 
-                    RInformation[i].put("Rank",Ranked);
-                    RInformation[i].put("Name",forCommF);
-                    RInformation[i].put("Readings",CurrentC.getReadings());
+                    rInformation[i].put("Rank",ranked);
+                    rInformation[i].put("Name",forCommF);
+                    rInformation[i].put("Readings",currentC.getReadings());
                 //dayRank = Math.max(CurrentC.getRank(), dayRank);
             }
         }
-        if (count.size()>0){
-            OrderedHashtable Readings[] = new OrderedHashtable[count.size()];
+        if (count.isEmpty()){
+            OrderedHashtable[] readings = new OrderedHashtable[count.size()];
             //int count2=0;
             for (int i = 0; i < count.size(); i++) {
-                Readings[i]=new OrderedHashtable();
+                readings[i]=new OrderedHashtable();
                 //Readings[i].put("Readings",ReadingsA[Integer.parseInt(count.get(i).toString())]);
-                Readings[i].put("Readings",RInformation[Integer.parseInt(count.get(i).toString())]);
+                readings[i].put("Readings",rInformation[Integer.parseInt(count.get(i).toString())]);
                 //count2+=1;
             }
 
-            return Readings;
+            return readings;
         }
         else
         {
@@ -412,22 +414,22 @@ MainNames=Text.obtainValues((String)Text.getPhrases().get("Main"));
         
     }
 
-    public OrderedHashtable getRH(String Node, String Type) {
+    public OrderedHashtable getRH(String node, String type) {
 
-        if (RoyalHours.containsKey(Node)) {
+        if (royalHours.containsKey(node)) {
 
 
-            OrderedHashtable stuff = (OrderedHashtable) RoyalHours.get(Node);
+            OrderedHashtable stuff = (OrderedHashtable) royalHours.get(node);
             //System.out.println(stuff);
-            if (stuff.containsKey(Type)) {
-                OrderedHashtable stuff1 = (OrderedHashtable) stuff.get(Type);
+            if (stuff.containsKey(type)) {
+                OrderedHashtable stuff1 = (OrderedHashtable) stuff.get(type);
                 return stuff1;
             } else {
-                System.out.println(CommNames[3]);
+                System.out.println(commNames[3]);
                 return new OrderedHashtable();
             }
         } else {
-            System.out.println(CommNames[3]);
+            System.out.println(commNames[3]);
             return new OrderedHashtable();
         }
 
@@ -435,23 +437,23 @@ MainNames=Text.obtainValues((String)Text.getPhrases().get("Main"));
     }
 
     public static void main(String[] argz) {
-    	ParameterValues.setDayInfo(new OrderedHashtable());
-        ParameterValues.getDayInfo().put("LS", "cu/ru/");
-        ParameterValues.getDayInfo().put("dow", "5");
-        //Commemoration Paramony = new Commemoration("P_3174");    //Paramony of Christmas
+    	parameterValues.setDayInfo(new OrderedHashtable());
+        parameterValues.getDayInfo().put("LS", "cu/ru/");
+        parameterValues.getDayInfo().put("dow", "5");
+        //Commemoration paramony = new Commemoration("P_3174");    //Paramony of Christmas
         System.out.println("THIS IS RUNNING ON DEBUG MODE, USING THE FILE FOR the Paramony of Christmas");
         //OrderedHashtable stuff=Paramony.getRH("Idiomel","11");
-        //System.out.println(Paramony.getService("/ROYALHOURS/IDIOMEL","13"));
-        //System.out.println(Paramony .ServiceInfo());
-        //System.out.println(Paramony.getRH("IDIOMEL","11"));
-        //System.out.println(Paramony);
-        Day Paramony = new Day("xml/pentecostarion/06"); //Forefeast of Christmas
+        //System.out.println(paramony.getService("/ROYALHOURS/IDIOMEL","13"));
+        //System.out.println(paramony .ServiceInfo());
+        //System.out.println(paramony.getRH("IDIOMEL","11"));
+        //System.out.println(paramony);
+        Day paramony = new Day("xml/pentecostarion/06"); //Forefeast of Christmas
 
-        System.out.println(Paramony.getCommsHyper());
-        System.out.println(Paramony.getDayRank());
-        OrderedHashtable[] Testing=Paramony.getReadings();
-        System.out.println(Testing[0].get("Readings"));
-        System.out.println(Testing[1].get("Readings"));
+        System.out.println(paramony.getCommsHyper());
+        System.out.println(paramony.getDayRank());
+        OrderedHashtable[] testing=paramony.getReadings();
+        System.out.println(testing[0].get("Readings"));
+        System.out.println(testing[1].get("Readings"));
         //System.out.println(Testing[0].get("Information"));
     }
 }

@@ -5,6 +5,8 @@ import java.beans.*;
 import java.awt.*;
 import java.util.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+
 import javax.swing.event.*;
 
 import java.awt.event.*;
@@ -12,38 +14,38 @@ import java.beans.*;
 /***********************************************************************
 *******************************************************/
 
-public class parseConvert implements DocHandler
+public class ParseConvert implements DocHandler
 {
-	private final static String Location   = "Ponomar/data/blsl/BLS/";
+	private static final String LOCATION   = "Ponomar/data/blsl/BLS/";
 	private static String text2;
 	private static boolean read=false;
 	private static int verse;
 	private static int chapter;
 	private static String output;
-	private final static String locationOut="Ponomar/data/parsed/";
+	private static final String LOCATION_OUT="Ponomar/data/parsed/";
 	private static BufferedWriter out;
 	private String[] b;
 		
-	public parseConvert()
+	public ParseConvert()
 	{
 		//parse(Location+"ge.html",locationOut+"Gen.txt");
 		String[] files={"1ch","1co","1jo","1ki","1pe","1ti","2ch","2co","2jo","2ki","2th","2ti","3jo","ac","am","de","dochome","ec","eph","es","ezr","ga","hab","ho","isa","jas","jer","job","1sa","1th","2pe","2sa","col","da","ex","eze","hag","heb","joe","joh","jon","jos","jud","jude","la","le","lu","mal","mic","mr","mt","na","ne","nu","ob","phm","php","pr","ps","re","ro","ru","so","tit","zec","zep"};
 		for(int i=3; i<files.length;i++)
 		{
 			//int i=3;
-			prepareFiles(Location+files[i]+".html");
-			parse(Location+files[i]+".html",locationOut+files[i]+".text");
+			prepareFiles(LOCATION+files[i]+".html");
+			parse(LOCATION+files[i]+".html",LOCATION_OUT+files[i]+".text");
 		}
 		return;
 	}
-	public void prepareFiles(String FileNameIn)
+	public void prepareFiles(String fileNameIn)
 	{
-		String q=new String();
-		String renew=new String();
+		String q="";
+		String renew="";
 		
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(FileNameIn)));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(fileNameIn)));
 			q=frf.readLine();
 			int counter=0;
 			int cont=0;
@@ -63,12 +65,12 @@ public class parseConvert implements DocHandler
 						}
 						else
 						{
-						q=q.replaceAll("<DIV CLASS=s><DL>","\r\n<DIV>\r\n");
-						q=q.replaceAll("<DT><A","</DD>\r\n<A");
-						q=q.replaceAll("</A><DD>","</A>\r\n<DD>");
-						q=q.replaceAll("</DL></DIV><H2>","</DD>\r\n</DIV>\r\n<H2>");
-						q=q.replaceAll("</H2><DIV","</H2>\r\n<DIV");
-						q=q.replaceAll("</DL>","</DD>");
+						q=q.replace("<DIV CLASS=s><DL>","\r\n<DIV>\r\n");
+						q=q.replace("<DT><A","</DD>\r\n<A");
+						q=q.replace("</A><DD>","</A>\r\n<DD>");
+						q=q.replace("</DL></DIV><H2>","</DD>\r\n</DIV>\r\n<H2>");
+						q=q.replace("</H2><DIV","</H2>\r\n<DIV");
+						q=q.replace("</DL>","</DD>");
 						String q2=q.substring(0,6);
 						//System.out.println(q2);
 						if(q2.equals("<TABLE"))
@@ -84,7 +86,7 @@ public class parseConvert implements DocHandler
 				q=frf.readLine();
 			}
 			frf.close();	
-			BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(FileNameIn),"UTF8"));
+			BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileNameIn),StandardCharsets.UTF_8));
 			out2.write(renew);
 			out2.close();
 		}
@@ -106,7 +108,7 @@ public class parseConvert implements DocHandler
 			}
 		}
 	}
-	public void parse(String FileNameIn, String FileNameOut) //throws IOException
+	public void parse(String fileNameIn, String fileNameOut) //throws IOException
 	{
 		output=new String();
 		verse=0;
@@ -114,8 +116,8 @@ public class parseConvert implements DocHandler
 			
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(FileNameIn),"UTF8"));
-			out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(FileNameOut),"UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(fileNameIn),StandardCharsets.UTF_8));
+			out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileNameOut),StandardCharsets.UTF_8));
 			QDParser.parse(this, frf);
 			
 			//out.write(output);
@@ -256,7 +258,7 @@ public class parseConvert implements DocHandler
 	
 	public static void main(String[] argz)
 	{
-		new parseConvert();
+		new ParseConvert();
 	}
 	
 }

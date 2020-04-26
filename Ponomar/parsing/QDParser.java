@@ -29,7 +29,7 @@ public class QDParser {
     else
       return PRE;
   }
-  private final static int 
+  private static final int 
     TEXT = 1,
     ENTITY = 2,
     OPEN_TAG = 3,

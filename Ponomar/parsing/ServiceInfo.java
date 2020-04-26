@@ -1,19 +1,13 @@
 package Ponomar.parsing;
 
-import javax.swing.*;
-import java.beans.*;
-import java.awt.*;
 import java.util.*;
 import java.io.*;
-import javax.swing.event.*;
+import java.nio.charset.StandardCharsets;
 
 import Ponomar.internationalization.LanguagePack;
 import Ponomar.utility.Helpers;
 import Ponomar.utility.OrderedHashtable;
 import Ponomar.utility.StringOp;
-
-import java.awt.event.*;
-import java.beans.*;
 /***********************************************************************
 THIS MODULE READS THE ServiceRules.XML FILE TO DETERMINE THE CORRECT
 ORDER FOR PRIMES ON A GIVEN DAY
@@ -34,31 +28,31 @@ ORDER FOR PRIMES ON A GIVEN DAY
 
 public class ServiceInfo implements DocHandler
 {
-	private final static String FileName   = "xml/Commands/ServiceRules.xml";
+	private static final String FILENAME   = "xml/Commands/ServiceRules.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
-	private static OrderedHashtable Information;
+	private static OrderedHashtable information;
 	
-	private LanguagePack Phrases;//=new LanguagePack();
+	private LanguagePack phrases;//=new LanguagePack();
 	//GET THE APPROPRIATE FASTING LINES
 	//private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-	private static OrderedHashtable Service;
-	private String Type;
+	private static OrderedHashtable service;
+	private String type;
         private Helpers findLanguage;
-	private StringOp Analyse=new StringOp();
-	public ServiceInfo(String Info, OrderedHashtable dayInfo)
+	private StringOp analyse=new StringOp();
+	public ServiceInfo(String info, OrderedHashtable dayInfo)
 	{
-		Type = Info;
-                findLanguage=new Helpers(Analyse.getDayInfo());
-                Analyse.setDayInfo(dayInfo);
-                Phrases=new LanguagePack(dayInfo);
+		type = info;
+                findLanguage=new Helpers(analyse.getDayInfo());
+                analyse.setDayInfo(dayInfo);
+                phrases=new LanguagePack(dayInfo);
 	}
 	
-	public OrderedHashtable ServiceRules() //throws IOException
+	public OrderedHashtable serviceRules() //throws IOException
 	{
-		Service=new OrderedHashtable();;
-		Information=new OrderedHashtable();
+		service=new OrderedHashtable();
+		information=new OrderedHashtable();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
 		/*StringOp.dayInfo.put("dRank",1);	//ANY RANK LESS THAN 4 WILL DO
@@ -113,7 +107,7 @@ public class ServiceInfo implements DocHandler
 		//System.out.print("Today's rank is "+StringOp.dayInfo.get("dRank")+"\n");
 		try
 		{
-			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(Analyse.getDayInfo().get("LS").toString(),FileName)), "UTF8"));
+			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(),FILENAME)), StandardCharsets.UTF_8));
 			QDParser.parse(this, frf1);
 		}
 		catch (Exception e)
@@ -122,7 +116,7 @@ public class ServiceInfo implements DocHandler
 			return null;			//THERE WAS AN ERROR IN PROCESSING THE FILES
 		}
 		//NOW IT IS NECESSARY TO CONVERT THE COMPUTER SPEAK TO HUMAN SPEAK
-		return Service;
+		return service;
 	}
 					
 	public void startDocument()
@@ -145,7 +139,7 @@ public class ServiceInfo implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -158,7 +152,7 @@ public class ServiceInfo implements DocHandler
 		{
 			readPeriod=true;
 		}
-		if(elem.equals(Type) && readPeriod && readLanguage)
+		if(elem.equals(type) && readPeriod && readLanguage)
 		{
 			//A POTENTIAL ORDER RULE HAS BEEN ENCOUNTERED.
 			Enumeration listed = table.keys();
@@ -170,7 +164,7 @@ public class ServiceInfo implements DocHandler
 				{
 					continue;
 				}
-				Service.put(nextEle,table.get(nextEle).toString());
+				service.put(nextEle,table.get(nextEle).toString());
 				
 			}
 		}
@@ -181,17 +175,17 @@ public class ServiceInfo implements DocHandler
 		String name = table.get("Name").toString();
 		String value=table.get("Value").toString();
 		//IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
-		if (Information.containsKey(name))
+		if (information.containsKey(name))
 		{
-			Vector previous = (Vector)Information.get(name);
+			Vector previous = (Vector)information.get(name);
 			previous.add(value);
-			Information.put(name,previous);
+			information.put(name,previous);
 		}
 		else
 		{
 			Vector vect = new Vector();
 			vect.add(value);
-			Information.put(name,vect);
+			information.put(name,vect);
 		}
 		
 		}

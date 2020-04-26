@@ -1,20 +1,16 @@
 package Ponomar.parsing;
 
 import javax.swing.*;
-import java.beans.*;
 import java.awt.*;
 import java.util.*;
 import java.io.*;
-import javax.swing.event.*;
+import java.nio.charset.StandardCharsets;
 
 import Ponomar.Bible;
 import Ponomar.internationalization.LanguagePack;
 import Ponomar.utility.Helpers;
 import Ponomar.utility.OrderedHashtable;
 import Ponomar.utility.StringOp;
-
-import java.awt.event.*;
-import java.beans.*;
 /***********************************************************************
 THIS MODULE READ XML FILES THAT CONTAIN A SET OF <CREATE> TAGS THAT SET THE RULES FOR THE CREATION OF
 A SERVICE
@@ -38,48 +34,48 @@ TO END THE SERVICE READER CALL, closeService();
 
 public class Service implements DocHandler
 {
-	private final static String CommonPrayersFileName   = "xml/Services/CommonPrayers/";   // THE LOCATION OF THE BASIC SERVICE RULES
-	private final static String ServiceFileName="xml/Services/";
-	public static String Service1;
-	private static String text;
+	private static final String COMMONPRAYERS_FILENAME   = "xml/Services/CommonPrayers/";   // THE LOCATION OF THE BASIC SERVICE RULES
+	private static final String SERVICE_FILENAME="xml/Services/";
+	public static String service1;
+	//private static String text;
 	private static boolean read=false;
-	private String filename;
-	private int lineNumber;
-	private LanguagePack Text;//=new LanguagePack();
-	private String[] ServiceNames;//=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
-	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-	private String Who;
-	private String What;
-	private String RedFirst;
-	private String NewLine;
-	private String Times;
-	private int Header;
-	private String CommandB;
-	private String WhoLast="";
-	private String Command;
+	//private String filename;
+	//private int lineNumber;
+	private LanguagePack text;//=new LanguagePack();
+	private String[] serviceNames;//=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
+	//private String[] languageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
+	private String who;
+	private String what;
+	private String redFirst;
+	private String newLine;
+	private String times;
+	private int header;
+	private String commandB;
+	private String whoLast="";
+	private String command;
 	private int count=-1;
-	private String[] OldText=new String[10];
+	private String[] oldText=new String[10];
 	private String[] parsedBible;
 	private String textTimes;
-        private String Style;
-        private String Header1;
+        private String style;
+        private String header1;
         private Helpers findLanguage;
-        private StringOp Analyse=new StringOp();
+        private StringOp analyse=new StringOp();
 	//private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
         public Service (OrderedHashtable dayInfo){
-            Analyse.setDayInfo(dayInfo);
-                Text=new LanguagePack(dayInfo);
-                ServiceNames=Text.obtainValues((String)Text.getPhrases().get("ServiceRead"));
+            analyse.setDayInfo(dayInfo);
+                text=new LanguagePack(dayInfo);
+                serviceNames=text.obtainValues((String)text.getPhrases().get("ServiceRead"));
         }
-        public String startService(String FileName)
+        public String startService(String fileName)
 	{
-		findLanguage=new Helpers(Analyse.getDayInfo());
+		findLanguage=new Helpers(analyse.getDayInfo());
                 
-                WhoLast="";
+                whoLast="";
 		count=-1;
 		//Service1="";
-                Header1="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n<head>\n";//<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
-                Style="<style type=\"text/css\">\nrubric {color:red;font-weight:bold}\np {margin-left:.5in;text-indent:-.5in}\nh1 {color:red;font-weight:bold;text-align:center}\ncomment {color:red;font-size:50%;font-style:italic}\ncommand {color:red;font-style:italic}\nh2 {color:red;font-size:110%;text-align:center}\n";
+                header1="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n<head>\n";//<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
+                style="<style type=\"text/css\">\nrubric {color:red;font-weight:bold}\np {margin-left:.5in;text-indent:-.5in}\nh1 {color:red;font-weight:bold;text-align:center}\ncomment {color:red;font-size:50%;font-style:italic}\ncommand {color:red;font-style:italic}\nh2 {color:red;font-size:110%;text-align:center}\n";
 
                 /*int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
                                 if (LangCode==2 || LangCode==3 ){
@@ -89,32 +85,32 @@ public class Service implements DocHandler
                                 else{
                                     Style=Style+"body {font-size:12pt}\n";
                                 }*/
-                String DisplayFont=(String)Text.getPhrases().get("FontFaceL");
-                String DisplaySize=(String)Text.getPhrases().get("FontSizeL");
+                String displayFont=(String)text.getPhrases().get("FontFaceL");
+                String displaySize=(String)text.getPhrases().get("FontSizeL");
                 
                 Font value1 = (Font)UIManager.get ("Menu.font");
-                if (DisplaySize == null || DisplaySize.equals(""))
+                if (displaySize == null || displaySize.equals(""))
                 {
-                    DisplaySize=Integer.toString(value1.getSize());
+                    displaySize=Integer.toString(value1.getSize());
                 }
-                if (DisplayFont == null || DisplayFont.equals(""))
+                if (displayFont == null || displayFont.equals(""))
                 {
-                    DisplayFont=value1.getFontName();
+                    displayFont=value1.getFontName();
                 }
-                DisplaySize=Integer.toString(Math.max(Integer.parseInt(DisplaySize), value1.getSize())); //If the default user's font size is larger than the required there is not need to change it.
+                displaySize=Integer.toString(Math.max(Integer.parseInt(displaySize), value1.getSize())); //If the default user's font size is larger than the required there is not need to change it.
                 //The specified fonts sizes are the mininum required.
-                Style+="body {font-family:"+DisplayFont+";font-size:"+DisplaySize+"}\n</head>";
-		return readService(FileName);
+                style+="body {font-family:"+displayFont+";font-size:"+displaySize+"}\n</head>";
+		return readService(fileName);
 	}
-	public String readService(String FileName) //throws IOException
+	public String readService(String fileName) //throws IOException
 	{
-		Service1="";
-                System.out.println("In the body, we have that "+Analyse.getDayInfo().get("PFlag3"));
+		service1="";
+                System.out.println("In the body, we have that "+analyse.getDayInfo().get("PFlag3"));
                
 
             	try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(Analyse.getDayInfo().get("LS").toString(),FileName)), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(),fileName)), StandardCharsets.UTF_8));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -123,12 +119,12 @@ public class Service implements DocHandler
 			//return "";			//THERE WAS AN ERROR IN PROCESSING THE FILES
 		}
                 
-                return "<html>\n"+Header1+Style+"</style>\n</head>\n<body>"+Service1+"</body></html>";
+                return "<html>\n"+header1+style+"</style>\n</head>\n<body>"+service1+"</body></html>";
 	}
 	public String closeService()
 	{
 		//THIS CLOSES THE SERVICE TEXT APPROPRIATELY
-		WhoLast="";
+		whoLast="";
 		count=-1;
 		return "</p>";
 	}
@@ -153,7 +149,7 @@ public class Service implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -166,24 +162,24 @@ public class Service implements DocHandler
 		{
 			//WE NEED TO GET ANOTHER SERVICE OR PART THEREOF.
 			read=false;
-			String GetFile=table.get("File").toString();
+			String getFile=table.get("File").toString();
 			count++;
-			OldText[count]=Service1;
-			readService(ServiceFileName+GetFile+".xml");
-			int NullCheck=0;
+			oldText[count]=service1;
+			readService(SERVICE_FILENAME+getFile+".xml");
+			int nullCheck=0;
 			if(table.get("Null")!=null)
 			{
-				NullCheck=Integer.parseInt(table.get("Null").toString());
+				nullCheck=Integer.parseInt(table.get("Null").toString());
 			}
 			
-			if(NullCheck == 0 || (NullCheck == 1 && Service1 != null))
+			if(nullCheck == 0 || (nullCheck == 1 && service1 != null))
 			{
 				//Service1=OldText[count]+"<font face=\"Ponomar Unicode TT\" size=\"5\">"+Service1+"</font>";
-                                Service1=OldText[count]+Service1;
+                                service1=oldText[count]+service1;
 			}
 			else
 			{
-				Service1=OldText[count];
+				service1=oldText[count];
 			}
 			count--;
 			read=true;
@@ -192,264 +188,264 @@ public class Service implements DocHandler
 		{
 			//WE ARE DEALING WITH THE TITLE OF THE SERVICE. IT CAN HAVE 3 PARTS: THE TITLE ITSELF, THE SOURCE FOR 
 			//SERVICE, AND SOME ADDITIONAL COMMENTS.
-			String Title=table.get("Header").toString();
-			ReadText textGet1=new ReadText(Analyse.getDayInfo().clone());
-                        WhoLast="";
-			String text4=textGet1.readText(ServiceFileName+"Text/"+Title+".xml");
-                        String Ponomar=Text.getPhrases().get("0").toString();
-                        String Colon=Text.getPhrases().get("Colon").toString();
+			String title=table.get("Header").toString();
+			ReadText textGet1=new ReadText(analyse.getDayInfo().clone());
+                        whoLast="";
+			String text4=textGet1.readText(SERVICE_FILENAME+"Text/"+title+".xml");
+                        String ponomar=text.getPhrases().get("0").toString();
+                        String colon=text.getPhrases().get("Colon").toString();
 			if(text4 != null)
 			{
-				Header1=Header1+"<title>"+Ponomar+Colon+text4+"</title>";
+				header1=header1+"<title>"+ponomar+colon+text4+"</title>";
                                 
 			}
 			else
 			{
-				Header1=Header1+ServiceNames[0];
+				header1=header1+serviceNames[0];
 			}
-			Title=table.get("Value").toString();
-			text4=textGet1.readText(ServiceFileName+"Text/"+Title+".xml");
+			title=table.get("Value").toString();
+			text4=textGet1.readText(SERVICE_FILENAME+"Text/"+title+".xml");
 			if(text4 != null)
 			{
-				Service1+="<h1> "+text4+"</h1>\n";
+				service1+="<h1> "+text4+"</h1>\n";
 			}
 			else
 			{
-				Service1+="<h1>"+ServiceNames[0]+"</h1>\n";
+				service1+="<h1>"+serviceNames[0]+"</h1>\n";
 			}
 						
 			if(table.get("Source") != null)
 			{
-				String Source=table.get("Source").toString();
-				text4=textGet1.readText(ServiceFileName+"Text/"+Source+".xml");
-				Service1+="<Font color=\"red\"><I><small>"+text4+"</small></I><BR>";
+				String source=table.get("Source").toString();
+				text4=textGet1.readText(SERVICE_FILENAME+"Text/"+source+".xml");
+				service1+="<Font color=\"red\"><I><small>"+text4+"</small></I><BR>";
 			}
 			
 			if(table.get("Comment") != null)
 			{
-				String Comment=table.get("Comment").toString();
-				text4=textGet1.readText(ServiceFileName+"Text/"+Comment+".xml");
+				String comment=table.get("Comment").toString();
+				text4=textGet1.readText(SERVICE_FILENAME+"Text/"+comment+".xml");
 				if(text4 != null)
 				{
-					Service1+="<I><small>"+text4+"</small></I><BR>";
+					service1+="<I><small>"+text4+"</small></I><BR>";
 				}
 			}
-			Service1+="</Font>";
+			service1+="</Font>";
 		}
                 if(elem.equals("SUBTITLE") && read)
 		{
 			//WE ARE DEALING WITH THE TITLE OF THE SERVICE. IT CAN HAVE 3 PARTS: THE TITLE ITSELF, THE SOURCE FOR
 			//SERVICE, AND SOME ADDITIONAL COMMENTS.
 			//String Subtitle=table.get("Header").toString();
-			ReadText textGet1=new ReadText(Analyse.getDayInfo().clone());
-                        WhoLast="";
+			ReadText textGet1=new ReadText(analyse.getDayInfo().clone());
+                        whoLast="";
 
-			String Subtitle=table.get("Value").toString();
-			String text4=textGet1.readText(ServiceFileName+"Text/"+Subtitle+".xml");
+			String subtitle=table.get("Value").toString();
+			String text4=textGet1.readText(SERVICE_FILENAME+"Text/"+subtitle+".xml");
 			if(text4 != null)
 			{
-				Service1+="<h2> "+text4+"</h2>\n";
+				service1+="<h2> "+text4+"</h2>\n";
 			}
 			else
 			{
-				Service1+="<h2>"+ServiceNames[0]+"</h2>\n";
+				service1+="<h2>"+serviceNames[0]+"</h2>\n";
 			}
 
 			if(table.get("Comment") != null)
 			{
-				String Comment=table.get("Comment").toString();
-				text4=textGet1.readText(ServiceFileName+"Text/"+Comment+".xml");
+				String comment=table.get("Comment").toString();
+				text4=textGet1.readText(SERVICE_FILENAME+"Text/"+comment+".xml");
 				if(text4 != null)
 				{
-					Service1+="<I><small>"+text4+"</small></I><BR>";
+					service1+="<I><small>"+text4+"</small></I><BR>";
 				}
 			}
-			Service1+="</Font>";
+			service1+="</Font>";
 		}
 		if(elem.equals("TEXT") && read)
 		{
 			//HERE IS IT IS ASSUMED THAT THE TEXT AND THE HEADER HAVE BEEN CREATED PROGRAMMATICALLY AND HAVE BEEN ASSIGNED FIXED VALUES
 			//APPROPRIATE TO THE GIVEN LANGUAGE. THUS, BOTH what AND HeaderText ARE ASSUMED TO CONTAIN TEXT
-			What=table.get("What").toString();
-			String HeaderText="";
+			what=table.get("What").toString();
+			String headerText="";
 			if(table.get("Header") != null)
 			{
-				HeaderText=table.get("Header").toString();
-				Header=1;				
+				headerText=table.get("Header").toString();
+				header=1;				
 			}
 			readIncidentals(table);
-			Service1+=Implement(Header,HeaderText,What)+"\n";	
+			service1+=implement(header,headerText,what)+"\n";	
 		}
 		if(elem.equals("BIBLE") && read)
 		{
-			String What2=new String();
+			String what2="";
 			if(table.get("Verses") !=null)
 			{
 				//ALLOWING THE BIBLE TO BE READ Y.S. 2008/12/11 n.s.
 				//THE FORMAT FOR A BIBLE STATEMENT IS Bible="Book_Chapter:VerseStart-VerseEnd" or ="Book_Chapter:Verse,Chapter:Verse" or ="Book_Chapter"
 				//THE BOOK COULD BE OF THE FORM II_NAME_Chapter:VerseStart-VerseEnd,Verse,Verse,Chapter:Verse
-				String Reading1=table.get("Verses").toString();
-				int k=Reading1.lastIndexOf("_");
-				Bible reader=new Bible(Analyse.getDayInfo());
-				parsedBible=reader.getText(Reading1.substring(0,k),Reading1.substring(k+1),false);
-				What2=parsedBible[0].substring(0);
+				String reading1=table.get("Verses").toString();
+				int k=reading1.lastIndexOf('_');
+				Bible reader=new Bible(analyse.getDayInfo());
+				parsedBible=reader.getText(reading1.substring(0,k),reading1.substring(k+1),false);
+				what2=parsedBible[0].substring(0);
 			}
 			if(table.get("getReading") != null)
 			{
 				//THIS ALLOWS THE READING HEADER FOR THE GIVEN SELECTION TO BE OBTAINED, THAT IS, "A reading from the Book of...."
-				Bible reader=new Bible(Analyse.getDayInfo());
-				What2=reader.getIntro(table.get("getReading").toString());
+				Bible reader=new Bible(analyse.getDayInfo());
+				what2=reader.getIntro(table.get("getReading").toString());
 			}
-			int Stars2=-1;	 		//THIS VARIABLE CONSIDERS WHAT TO DO WITH ANY POSSIBLE 2 STARS IN THE TEXT "**"
-			int StarsBible=parsedBible[1].toString().indexOf("**");	//IF THERE ARE NO ** TO BE FOUND IN THE TEXT THEN THERE IS NO NEED TO CONTINUE!
-			if((table.get("2Stars") != null) && StarsBible != -1)
+			int stars2=-1;	 		//THIS VARIABLE CONSIDERS WHAT TO DO WITH ANY POSSIBLE 2 STARS IN THE TEXT "**"
+			int starsBible=parsedBible[1].indexOf("**");	//IF THERE ARE NO ** TO BE FOUND IN THE TEXT THEN THERE IS NO NEED TO CONTINUE!
+			if((table.get("2Stars") != null) && starsBible != -1)
 			{
-				Stars2=Integer.parseInt(table.get("2Stars").toString());
-				if(Stars2==1)
+				stars2=Integer.parseInt(table.get("2Stars").toString());
+				if(stars2==1)
 				{
 					//USE THE 2 STARS DATA AS AN ADDITIONAL HEADER
 					parsedBible[2]=parsedBible[1].substring(3)+"<BR>"+parsedBible[2];	
 					
 				}
-				if(Stars2==2)
+				if(stars2==2)
 				{
-					int k=What2.indexOf("**");
+					int k=what2.indexOf("**");
 					String[] splitString=parsedBible[1].split("<BR>");
-					int a1=splitString[0].indexOf("\"");
-					int a2=splitString[0].substring(a1+1).indexOf("\"");
-					String textNew=new String();
+					int a1=splitString[0].indexOf('\"');
+					int a2=splitString[0].substring(a1+1).indexOf('\"');
+					String textNew="";
 					if(a1 != -1)
 					{
 						textNew=parsedBible[1].substring(a1+1,a2+a1+1).replace("...",""); 		//3 separate dots
 						textNew=textNew.replace("...",""); 								//The 3 dots combined as a single symbol
 					}
 										
-					What2=textNew+" "+What2.substring(k+2);
+					what2=textNew+" "+what2.substring(k+2);
 				}				
 			}
 			//REMOVE THE 2 STARS FROM THE ORIGINAL READING
-			int Stars=What2.indexOf("**");
+			int stars=what2.indexOf("**");
 
-			while(Stars != -1)
+			while(stars != -1)
 			{
 				//System.out.println(What2);
-				if(Stars==0)
+				if(stars==0)
 				{
-					What2=What2.substring(3);
+					what2=what2.substring(3);
 				}
 				else
 				{
-					What2=What2.substring(0,Stars-1)+What2.substring(Stars+2);
+					what2=what2.substring(0,stars-1)+what2.substring(stars+2);
 				}
-				Stars=What2.indexOf("**");
+				stars=what2.indexOf("**");
 			}
 			
 			if(table.get("Header") != null)
 			{
 				if(table.get("Header").toString().equals("1"))
 				{
-					Header= Integer.parseInt(table.get("Header").toString());								
+					header= Integer.parseInt(table.get("Header").toString());								
 				}
 				else
 				{
-					Header=0;
+					header=0;
 				}
 			}
 			else
 			{
-				Header=0;
+				header=0;
 			}
 			readIncidentals(table);			
-			Service1+=Implement(Header,parsedBible[2],What2)+"\n";
+			service1+=implement(header,parsedBible[2],what2)+"\n";
 			read=true;
 		}
                 if (elem.equals("GETID") && read){
-                    String Type = "M";
+                    String type = "M";
                            //System.out.println(table.get("Type"));
                     if (table.get("Type")!= null){
-                        Type=table.get("Type").toString();
+                        type=table.get("Type").toString();
                     }
-                    String LifeId=table.get("Id").toString();
-                    if (Type.equals("T"))
+                    String lifeId=table.get("Id").toString();
+                    if (type.equals("T"))
                     {
-                        LifeId="98"+LifeId;
+                        lifeId="98"+lifeId;
                     }
-                    Commemoration1 data=new Commemoration1("0",LifeId,Analyse.getDayInfo());
-                    String Info = table.get("What").toString();
-                    int parsedInfo1=Info.lastIndexOf("/");
+                    Commemoration1 data=new Commemoration1("0",lifeId,analyse.getDayInfo());
+                    String info = table.get("What").toString();
+                    int parsedInfo1=info.lastIndexOf('/');
                    //System.out.println(parsedInfo[0]);
                     //The last 2 such elements are important as they contain the general location of what is desired!!!
                     //System.out.println(Info);
                     //System.out.println(parsedInfo[1]);
                     //GENERALISED THE VERSION TO ANYTHING LOCATED INSIDE THE SERVICE TAGS!!!
-                    OrderedHashtable RoyalHours=(OrderedHashtable)data.getService(Info.substring(0,parsedInfo1),Info.substring(parsedInfo1+1));
+                    OrderedHashtable royalHours=(OrderedHashtable)data.getService(info.substring(0,parsedInfo1),info.substring(parsedInfo1+1));
                     //System.out.println((OrderedHashtable)data.getService("/ROYALHOURS/VERSE","9P"));
                     //System.out.println(RoyalHours);
-                    String HeaderRH=new String();
-                    if(RoyalHours.get("Header")!=null){
-                        HeaderRH=RoyalHours.get("Header").toString();
+                    String headerRH="";
+                    if(royalHours.get("Header")!=null){
+                        headerRH=royalHours.get("Header").toString();
                     }
                     if(table.get("Header")!=null){
-                        Header=Integer.parseInt(table.get("Header").toString());
+                        header=Integer.parseInt(table.get("Header").toString());
                     }
                     else{
-                        Header=0;
+                        header=0;
                     }
                     //System.out.println(RoyalHours);
-                    if (RoyalHours.get("text") == null){
-                        Service1+="<BR><Font color=\"red\"> "+ServiceNames[4] + Info+"</Font><BR>";
+                    if (royalHours.get("text") == null){
+                        service1+="<BR><Font color=\"red\"> "+serviceNames[4] + info+"</Font><BR>";
                         
                     }
                     else{
                         //System.out.println(table);
                         readIncidentals(table);
 
-                        Service1+=Implement(Header,HeaderRH,RoyalHours.get("text").toString().substring(1))+"\n";
+                        service1+=implement(header,headerRH,royalHours.get("text").toString().substring(1))+"\n";
                     }
                     read=true;
                 }
 		if (elem.equals("CREATE") && read)
 		{
-			String What2="";
+			String what2="";
 			if(table.get("What") != null)
 			{
-				What=table.get("What").toString();
+				what=table.get("What").toString();
 			}
 			else
 			{
-				What=null;
+				what=null;
 			}
-			String text2="";
+			//String text2="";
 			if(table.get("Header") != null)
 			{
 				if(table.get("Header").toString().equals("1"))
 				{
-					Header= Integer.parseInt(table.get("Header").toString());
+					header= Integer.parseInt(table.get("Header").toString());
 										
 				}
 				else
 				{
-					Header=0;
+					header=0;
 				}
 			}
 			else
 			{
-				Header=0;
+				header=0;
 			}
 			readIncidentals(table);
 			//System.out.println(What);
-			ReadText textGet=new ReadText(Analyse.getDayInfo().clone());
-			if(What != null)
+			ReadText textGet=new ReadText(analyse.getDayInfo().clone());
+			if(what != null)
 			{
-				What2 = textGet.readText(CommonPrayersFileName+What+".xml");
-				if (What2 == null)
+				what2 = textGet.readText(COMMONPRAYERS_FILENAME+what+".xml");
+				if (what2 == null)
 				{
-					Service1+= "<BR><Font color=\"red\"/>" + ServiceNames[1] +" "+CommonPrayersFileName+What+".xml</FONT><BR>";
+					service1+= "<BR><Font color=\"red\"/>" + serviceNames[1] +" "+COMMONPRAYERS_FILENAME+what+".xml</FONT><BR>";
 					return;
 				}
 			}
 				
-			Service1+=Implement(Header,textGet.readHeader(CommonPrayersFileName+What+".xml"),What2)+"\n";		
+			service1+=implement(header,textGet.readHeader(COMMONPRAYERS_FILENAME+what+".xml"),what2)+"\n";		
 			read=true;
 		}
 		if (elem.equals("TIMES") && read)
@@ -476,53 +472,53 @@ public class Service implements DocHandler
 	{
 			//THIS READS THE COMMON LABELS FOR CREATE, BIBLE, AND TEXT TAGS.
 			
-                        Who = table.get("Who").toString();
+                        who = table.get("Who").toString();
 			if(table.get("CommandB") != null)
 			{
-				CommandB= table.get("CommandB").toString();	
+				commandB= table.get("CommandB").toString();	
 			}
 			else
 			{
-				CommandB=null;
+				commandB=null;
 			}
 			if(table.get("Command") != null)
 			{
-				Command= table.get("Command").toString();	
+				command= table.get("Command").toString();	
 			}
 			else
 			{
-				Command=null;
+				command=null;
 			}
 				if( table.get("RedFirst") != null)
 			{
-				RedFirst = table.get("RedFirst").toString();				
+				redFirst = table.get("RedFirst").toString();				
 			}
 			else
 			{
-				RedFirst=null;
+				redFirst=null;
 			}
 			if( table.get("NewLine") != null)
 			{
-				NewLine =  table.get("NewLine").toString();
+				newLine =  table.get("NewLine").toString();
 			}
 			else
 			{
-				NewLine=null;
+				newLine=null;
 			}
 			if(table.get("Times") != null)
 			{
-				Times= table.get("Times").toString();	
+				times= table.get("Times").toString();	
 			}
 			else
 			{
-				Times=null;
+				times=null;
 			}
 			
 	}
-	private String Implement(int Header,String text4, String What)
+	private String implement(int header,String text4, String what)
 	{
-		String text2=What;
-		ReadText textGet=new ReadText(Analyse.getDayInfo().clone());
+		String text2=what;
+		ReadText textGet=new ReadText(analyse.getDayInfo().clone());
 		
 		/* Original place of this when there the times is used as it was orignally.
 		if(Command != null)
@@ -539,16 +535,16 @@ public class Service implements DocHandler
 			}
 		}
 		*/
-		if(RedFirst != null)
+		if(redFirst != null)
 		{
-			if(RedFirst.equals("1"))
+			if(redFirst.equals("1"))
 			{
                             //ADDED 2009/10/20 n.s Yuri Shardt
                             //TAKING THE FIRST LETTER IS INSUFFICIENT FOR PROPERLY PROCESSING THE RED, AS ANY DIACRITICS MUST ALSO BE IN READ,
                             //FOR CHURCH SLAVONIC AND OTHER LANGUAGES, THIS MARKS DO NOT CREATE THEIR OWN SEPARATE LETTERS AS IN A+grave != A`
                             //AS ONE CHARACTER, BUT AS TWO CHARACTERS.
                             //LISTING ALL DIACRITIC MARKS THAT I WISH TO RECOGNISE: COMMON, SLAVIC, AND GREEK
-                           String[] List={"\u0300","\u0301","\u0302","\u0303","\u0304","\u0305","\u0306","\u0307","\u0308","\u0309","\u030a","\u030b","\u030c","\u030d","\u030e","\u030f",
+                           String[] list={"\u0300","\u0301","\u0302","\u0303","\u0304","\u0305","\u0306","\u0307","\u0308","\u0309","\u030a","\u030b","\u030c","\u030d","\u030e","\u030f",
                                             "\u0310","\u0311","\u0312","\u0313","\u0314","\u0315","\u0316","\u0317","\u0318","\u0319","\u031a","\u031b","\u031c","\u031d","\u031e","\u031f",
                                             "\u0320","\u0321","\u0322","\u0323","\u0324","\u0325","\u0326","\u0327","\u0328","\u0329","\u032a","\u032b","\u032c","\u032d","\u032e","\u032f",
                                             "\u0330","\u0331","\u0332","\u0333","\u0334","\u0335","\u0336","\u0337","\u0338","\u0339","\u033a","\u033b","\u033c","\u033d","\u033e","\u033f",
@@ -560,17 +556,17 @@ public class Service implements DocHandler
                                             "\ua66f",
                                             "\ua670","\ua671","\ua672","\ua673","\ua67c","\ua67d"};         //Some more Cyrilic Diacritics
                             //Continuing to add letters to the red part until none from the above list are found.
-                            String redNow=new String();
+                            String redNow="";
                             int countRed=1;
                             redNow=text2.substring(0,1);
                             
                             boolean stopRed=false;
                             while (!stopRed){
                                 stopRed=true;
-                                for(int i=0;i<List.length;i++){
+                                for(int i=0;i<list.length;i++){
                                     //System.out.println(redNow +" a");
                                     //System.out.println(text2.substring(countRed,countRed+1));
-                                    if(text2.substring(countRed,countRed+1).equals(List[i])){
+                                    if(text2.substring(countRed,countRed+1).equals(list[i])){
                                         stopRed=false;
                                         redNow=redNow+text2.substring(countRed,countRed+1);
                                         countRed=countRed+1;
@@ -582,8 +578,8 @@ public class Service implements DocHandler
                             text2="<B><FONT color=\"red\">"+redNow+"</FONT></B>"+text2.substring(countRed);
 			}
 		}
-		String textRepeat=new String();
-		if(Times != null)
+		String textRepeat="";
+		if(times != null)
 		{
 			/*int Time= Integer.parseInt(Times);
 			String textR=text2;
@@ -592,13 +588,13 @@ public class Service implements DocHandler
 				text2+="<BR>"+textR;
 			}*/
 			//THIS IS THE ORIGINAL  VERSION OF TIMES. CHANGED TO A BETTER VERSION. 2009/05/18 Y.S.
-			textTimes=new String();
-			Analyse.getDayInfo().put("Times",Integer.parseInt(Times));
+			textTimes="";
+			analyse.getDayInfo().put("Times",Integer.parseInt(times));
 			
 			try
 			{
-				String FileName="xml/Commands/Times.xml";
-				BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(Analyse.getDayInfo().get("LS").toString(),FileName)), "UTF8"));
+				String fileName="xml/Commands/Times.xml";
+				BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(),fileName)), StandardCharsets.UTF_8));
 				QDParser.parse(this, frf1);
 			}
 			catch (Exception e)
@@ -610,8 +606,8 @@ public class Service implements DocHandler
 			if (splitting != -1)
 			{
 				//REPLACE ^# BY THE ACTUAL NUMBER
-				String LHS = new String();
-				String RHS = new String();
+				String LHS = "";
+				String RHS = "";
 				if (splitting > 1)
 				{
 					LHS = textTimes.substring(0, splitting).trim();
@@ -620,7 +616,7 @@ public class Service implements DocHandler
 				{
 					RHS = textTimes.substring(splitting + 2);
 				}
-				textRepeat = LHS + Times + RHS;
+				textRepeat = LHS + times + RHS;
 	
 				
 			}
@@ -631,10 +627,10 @@ public class Service implements DocHandler
 				
 			
 		}
-		String textCommand=new String();
-		if(Command != null)
+		String textCommand="";
+		if(command != null)
 		{
-			String text3=textGet.readText(ServiceFileName+"Command/"+Command+".xml");
+			String text3=textGet.readText(SERVICE_FILENAME+"Command/"+command+".xml");
 			
 			if(text3 != null)
 			{
@@ -642,15 +638,15 @@ public class Service implements DocHandler
 			}
 			else
 			{
-				textCommand=ServiceNames[2];
+				textCommand=serviceNames[2];
 			}
 			//PROVIDING A PROPER COMBINATION OF THE 2 EVENTS: REPEAT AND COMMAND
                         //CORRECTED A FORMATING ERROR IN THE FOLLOWING LINES MISSING A CLOSING ANGLE BRACKET FOR </I>
                         //YURI SHARDT 2009/10/31 n.s.
                         
-			if (Times != null)
+			if (times != null)
 			{
-				String textR=textGet.readText(ServiceFileName+"Command/AfterEach.xml");
+				String textR=textGet.readText(SERVICE_FILENAME+"Command/AfterEach.xml");
 				if (textR !=null)
 				{
 					text2=text2+" <I><Font color=\"red\">("+textRepeat+textR+" "+textCommand+")</Font></I>";
@@ -658,7 +654,7 @@ public class Service implements DocHandler
 				}
 				else
 				{
-					text2=text2+" <I><Font color=\"red\">("+textRepeat+ServiceNames[2]+" "+textCommand+")</Font></I>";
+					text2=text2+" <I><Font color=\"red\">("+textRepeat+serviceNames[2]+" "+textCommand+")</Font></I>";
                                         
 				}
 			}
@@ -670,15 +666,15 @@ public class Service implements DocHandler
 		}
 		else
 		{
-			if(Times != null)
+			if(times != null)
 			{
 				text2=text2+" <I><Font color=\"red\">("+textRepeat+")</Font></I>";
 			}
 		}
 		
-		if(CommandB != null)
+		if(commandB != null)
 		{
-			String text3=textGet.readText(ServiceFileName+"Command/"+CommandB+".xml");
+			String text3=textGet.readText(SERVICE_FILENAME+"Command/"+commandB+".xml");
 				
 			if(text3 != null)
 			{
@@ -686,11 +682,11 @@ public class Service implements DocHandler
 			}
 			else
 			{
-				text2=" <I><Font color=\"red\">"+ServiceNames[2] + "</Font></I>"+text2;
+				text2=" <I><Font color=\"red\">"+serviceNames[2] + "</Font></I>"+text2;
 			}
 		}
 			
-		if(Header != 0)
+		if(header != 0)
 		{
 			if(text4 != null)
 			{
@@ -698,29 +694,29 @@ public class Service implements DocHandler
 			}
 			else
 			{
-				text4="<BR><B><Font color=\"red\">" +ServiceNames[3]+" </Font></B><BR>";
+				text4="<BR><B><Font color=\"red\">" +serviceNames[3]+" </Font></B><BR>";
 			}
                         
-			if (!WhoLast.equals("")){
+			if (!whoLast.equals("")){
                             text4="</p>"+text4;
                         }
-                        WhoLast="";
+                        whoLast="";
 							
 		}
 		else
 		{
 			text4="";
 		}
-		if(!Who.equals(WhoLast) || WhoLast.equals(""))
+		if(!who.equals(whoLast) || whoLast.equals(""))
 		{
 		//THERE HAS BEEN A CHANGE IN WHO IS READING THE SERVICE READER TO PRIEST OR SOMETHING SIMILAR
 		//THERE IS A NEED TO AFFIX THE NEW READER.
 		//THIS WILL ENTAIL BY DEFAULT A NEW LINE
-                    if(!Who.equals(""))
+                    if(!who.equals(""))
 			{
-				String textWho = textGet.readText(CommonPrayersFileName+Who+".xml");
+				String textWho = textGet.readText(COMMONPRAYERS_FILENAME+who+".xml");
                                 text2="<p><B><FONT color=\"red\">"+textWho+"</FONT></B>"+text2;
-				if(!WhoLast.equals(""))
+				if(!whoLast.equals(""))
 				{
 					text2="</p>"+text4+text2;	
 				}
@@ -731,9 +727,9 @@ public class Service implements DocHandler
 			}
 			else
 			{
-                            if(NewLine != null)
+                            if(newLine != null)
 				{
-					if(NewLine.equals("1"))
+					if(newLine.equals("1"))
 					{
 						text2="</p><BR>"+text4+text2;
 					}
@@ -750,16 +746,16 @@ public class Service implements DocHandler
 				}
 			}
 							
-			WhoLast=Who;	
+			whoLast=who;	
 		}
 		else
 		{
 		//THE READER IS THE SAME. CHECK IF A NEW LINE IS DESIRED
 			
 				
-				if(NewLine != null)
+				if(newLine != null)
 				{
-					if(NewLine.equals("1"))
+					if(newLine.equals("1"))
 					{
 						text2="<BR>"+text4+text2;
 					}

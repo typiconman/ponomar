@@ -5,6 +5,8 @@ import java.beans.*;
 import java.awt.*;
 import java.util.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+
 import javax.swing.event.*;
 
 import Ponomar.internationalization.LanguagePack;
@@ -33,28 +35,28 @@ THIS MODULE READS THE FASTING.XML FILE TO DETERMINE THE FAST ON A GIVEN DAY
 
 public class Fasting implements DocHandler
 {
-	private final static String FileName   = "xml/Commands/Fasting.xml";
+	private static final String FILENAME   = "xml/Commands/Fasting.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
-	private static OrderedHashtable Information;
+	private static OrderedHashtable information;
 	
-	private LanguagePack Phrases;
+	private LanguagePack phrases;
 	//GET THE APPROPRIATE FASTING LINES
 	//private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-	private static String Fast;
+	private static String fast;
 	private static Helpers helper;
-        private static StringOp Analyse=new StringOp();
+        private static StringOp analyse=new StringOp();
         public Fasting(OrderedHashtable dayInfo){
-            Analyse.setDayInfo(dayInfo);
-            Phrases=new LanguagePack(dayInfo);
+            analyse.setDayInfo(dayInfo);
+            phrases=new LanguagePack(dayInfo);
         }
-	public String FastRules() //throws IOException
+	public String fastRules() //throws IOException
 	{
             
-            Fast=new String();
-		helper=new Helpers(Analyse.getDayInfo());
-		Information=new OrderedHashtable();
+            fast="";
+		helper=new Helpers(analyse.getDayInfo());
+		information=new OrderedHashtable();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
                 //I have removed the klutz, as dRank has been properly implemented! Y.S 2010/02/02 n.s.
@@ -109,7 +111,7 @@ public class Fasting implements DocHandler
 		//System.out.print("Today's rank is "+StringOp.dayInfo.get("dRank")+"\n");
 		try
 		{
-			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.getDayInfo().get("LS").toString(),FileName)), "UTF8"));
+			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),FILENAME)), StandardCharsets.UTF_8));
 			QDParser.parse(this, frf1);
 		}
 		catch (Exception e)
@@ -118,9 +120,9 @@ public class Fasting implements DocHandler
 			return null;			//THERE WAS AN ERROR IN PROCESSING THE FILES
 		}
 		//NOW IT IS NECESSARY TO CONVERT THE COMPUTER SPEAK TO HUMAN SPEAK
-		return convert(Fast);
+		return convert(fast);
 	}
-	public String convert(String Fast)
+	public String convert(String fast)
 	{
 		/*COMMON REGULATIONS
 		0000000 : No Food
@@ -134,54 +136,54 @@ public class Fasting implements DocHandler
 		0000010 : Wine Permitted
 		*/
 		
-		String[] FastNames= Phrases.obtainValues((String)Phrases.getPhrases().get("Fasts"));
+		String[] fastNames= phrases.obtainValues((String)phrases.getPhrases().get("Fasts"));
 				
-		if(Fast.equals("0000000"))
+		if(fast.equals("0000000"))
 		{
-			return FastNames[4]+ FastNames[1]+FastNames[6]+ FastNames[7];
+			return fastNames[4]+ fastNames[1]+fastNames[6]+ fastNames[7];
 		}
-		if(Fast.equals("0000001"))
+		if(fast.equals("0000001"))
 		{
-			return  FastNames[4]+FastNames[1]+FastNames[6]+ FastNames[8];
+			return  fastNames[4]+fastNames[1]+fastNames[6]+ fastNames[8];
 		}
-		if(Fast.equals("0000011"))
+		if(fast.equals("0000011"))
 		{
-			return  FastNames[4]+FastNames[1]+FastNames[6]+ FastNames[9];
+			return  fastNames[4]+fastNames[1]+fastNames[6]+ fastNames[9];
 		}
-		if(Fast.equals("0000111"))
+		if(fast.equals("0000111"))
 		{
-			return  FastNames[4]+FastNames[2];
+			return  fastNames[4]+fastNames[2];
 		}
-		if(Fast.equals("0001111"))
+		if(fast.equals("0001111"))
 		{
-			return FastNames[4]+FastNames[10];
+			return fastNames[4]+fastNames[10];
 		}
-		if(Fast.equals("0011111"))
+		if(fast.equals("0011111"))
 		{
-			return  FastNames[4]+FastNames[3];
+			return  fastNames[4]+fastNames[3];
 		}
-		if(Fast.equals("0111111"))
+		if(fast.equals("0111111"))
 		{
-			return FastNames[4]+FastNames[11];
+			return fastNames[4]+fastNames[11];
 		}
-		if(Fast.equals("1111111"))
+		if(fast.equals("1111111"))
 		{
-			return  FastNames[4]+FastNames[0];
+			return  fastNames[4]+fastNames[0];
 		}
-		if(Fast.equals("0000010"))
+		if(fast.equals("0000010"))
 		{
-			return FastNames[4]+FastNames[12];
+			return fastNames[4]+fastNames[12];
 		}
 		//NONE OF THE PREDEFINED SEQUENCES WERE ENCOUNTERED.
 		//PARSE IT ELEMENT BY ELEMENT!
-		String[] item = new String[] {FastNames[13],FastNames[14],FastNames[15],FastNames[16],FastNames[17],FastNames[18],FastNames[19]};
+		String[] item = new String[] {fastNames[13],fastNames[14],fastNames[15],fastNames[16],fastNames[17],fastNames[18],fastNames[19]};
 		String[] permitted=new String[7];
 		String[] forbidden=new String[7];
 		int permit=0;
 		int forbid=0;
 		for(int i=0;i < 7;i++)
 		{
-			if(Fast.substring(i,i+1).equals("1"))
+			if(fast.substring(i,i+1).equals("1"))
 			{
 				//THE GIVEN ITEM IS PERMITTED
 				permitted[permit]=item[i];
@@ -194,7 +196,7 @@ public class Fasting implements DocHandler
 				forbid++;
 			}
 		}
-		String output=FastNames[27]+" ";
+		String output=fastNames[27]+" ";
 		for(int i=0;i < permit;i++)
 		{
 			output+=permitted[i];
@@ -204,23 +206,23 @@ public class Fasting implements DocHandler
 			}
 			if(i==permit-2)
 			{
-				output+=" "+FastNames[25]+" ";
+				output+=" "+fastNames[25]+" ";
 			}
 		}
 		if(permit==1)
 		{
-			output+=" "+FastNames[20]+" "+FastNames[23]; 
+			output+=" "+fastNames[20]+" "+fastNames[23]; 
 		}
 		else if(permit==2)
 		{
 			//FOR THOSES SLAVIC LANGUAGES WITH THE DUAL
-			output+=" "+FastNames[21]+" "+FastNames[23];
+			output+=" "+fastNames[21]+" "+fastNames[23];
 		}
 		else
 		{
-			output+=" "+FastNames[22]+" "+FastNames[23];
+			output+=" "+fastNames[22]+" "+fastNames[23];
 		}
-		output+=FastNames[26]+" ";
+		output+=fastNames[26]+" ";
 		for(int i=0;i < forbid;i++)
 		{
 			output+=forbidden[i];
@@ -230,23 +232,23 @@ public class Fasting implements DocHandler
 			}
 			if(i==forbid-2)
 			{
-				output+=" "+FastNames[25]+" ";
+				output+=" "+fastNames[25]+" ";
 			}
 		}
 		if(forbid==1)
 		{
-			output+=output+=" "+FastNames[20]+" "+FastNames[24]; 
+			output+=output+=" "+fastNames[20]+" "+fastNames[24]; 
 		}
 		else if(forbid==2)
 		{
 			//FOR THOSES SLAVIC LANGUAGES WITH THE DUAL
-			output+=" "+FastNames[21]+" "+FastNames[24];
+			output+=" "+fastNames[21]+" "+fastNames[24];
 		}
 		else
 		{
-			output+=" "+FastNames[22]+" "+FastNames[24];
+			output+=" "+fastNames[22]+" "+fastNames[24];
 		}
-		return FastNames[4]+" " +output;
+		return fastNames[4]+" " +output;
 	}
 				
 	public void startDocument()
@@ -269,7 +271,7 @@ public class Fasting implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				return;
 			}
@@ -285,7 +287,7 @@ public class Fasting implements DocHandler
 		if(elem.equals("RULE") && readPeriod && readLanguage)
 		{
 			//A POTENTIAL FASTING RULE HAS BEEN ENCOUNTERED THAT APPLIES FOR TODAY.
-			Fast=table.get("Case").toString();
+			fast=table.get("Case").toString();
 		}
 		//THE FOLLOWING SECTION SHOULD BE REMOVED ONCE THERE IS A PROPER RANKING OF DAYS
 		/*if (elem.equals("COMMAND"))
