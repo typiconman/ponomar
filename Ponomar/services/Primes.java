@@ -42,58 +42,29 @@ Updated some parts to make it compatible with the changes in Ponomar, especially
  OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
 ***********************************************************************/
-public class Primes implements DocHandler, ActionListener, ItemListener, PropertyChangeListener
+public class Primes extends LitService
 {
 	//SOME QUICK NOTES FOR FURTHER IMPLEMENTATION:
 	//THE DATE OR THE RELEVANT INFORMATION WILL HAVE TO BE GIVEN
 	//TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
 	//DURING THE COURSE OF A SINGLE WEEK.
-	private final static String configFileName = "ponomar.config";   //CONFIGURATIONS FILE
-	private final static String octoecheosFileName   = "xml/Services/Octoecheos/";   // THE LOCATION OF THE BASIC SERVICE RULES
-	private final static String ServicesFileName = "xml/Services/"; // THE LOCATION FOR ANY EXTRA INFORMATION
-	private static OrderedHashtable PrimesTK;
 	private static String FileNameIn="xml/Services/PRIMES1/";
 	private static String FileNameOut=FileNameIn+"Primes.html";
-	private static String text;
-	private static boolean read=false;
-	private static String Type;
 	private String Troparion1;
 	private String Kontakion1;
 	private String Kontakion2;
 	private String Troparion2;
-	private final static String triodionFileName   = "xml/triodion/";   // TRIODION FILE
-	private final static String pentecostarionFileName = "xml/pentecostarion/"; // PENTECOSTARION FILE
-	private String filename;
-	private int lineNumber;
-	private LanguagePack Text;//=new LanguagePack();
-	private String[] PrimesNames;//=Text.obtainValues((String)Text.Phrases.get("Primes"));
-	private String[] LanguageNames;//=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
 	private String LentenK;				//ANY REQUIRED KATHISMA REFERENCED USING "LENTENK = "17"" WOULD BE THE 17th KATHISMA.
-	private JFrame frames;
-	private String[] FileNames;//=Text.obtainValues((String)Text.Phrases.get("File"));
-	private String[] HelpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
-	String newline = "\n";
-	private String strOut;
-	private JDate today;
-	private Helpers helper;
 	private PrimeSelector SelectorP;//=new PrimeSelector();
-	private PrintableTextPane output;
-        private String DisplayFont =new String(); //ALLOWS A CUSTOM FONT AND SIZE TO BE SPECIFIED FOR A GIVEN BIBLE READING: REQUIRED FOR OLD CHURCH SLAVONIC AT PRESENT
-	private String DisplaySize="12";  //UNTIL A COMPLETE UNICODE FONT IS AVAILIBLE.
-	private Font DefaultFont=new Font("",Font.BOLD,12);		//CREATE THE DEFAULT FONT
-	private Font CurrentFont=DefaultFont;
-        private StringOp Analyse=new StringOp();
-	
-	
-		
+			
 	public Primes(JDate date, OrderedHashtable dayInfo)
 	{
-            Analyse.setDayInfo(dayInfo);
-            Text=new LanguagePack(dayInfo);
-            PrimesNames=Text.obtainValues((String)Text.getPhrases().get("Primes"));
-	LanguageNames=Text.obtainValues((String)Text.getPhrases().get("LanguageMenu"));
-        FileNames=Text.obtainValues((String)Text.getPhrases().get("File"));
-	HelpNames=Text.obtainValues((String)Text.getPhrases().get("Help"));
+            analyse.setDayInfo(dayInfo);
+            langText=new LanguagePack(dayInfo);
+            primesNames=langText.obtainValues((String)langText.getPhrases().get("Primes"));
+	languageNames=langText.obtainValues((String)langText.getPhrases().get("LanguageMenu"));
+        fileNames=langText.obtainValues((String)langText.getPhrases().get("File"));
+	helpNames=langText.obtainValues((String)langText.getPhrases().get("Help"));
         SelectorP=new PrimeSelector(dayInfo);
 		/*THIS IS THE PLAN FOR CREATING THE SERVICE
 		1) DETERMINE ON THE BASIS OF THE PENTECOSTARION (EASTER CYCLE) THE APPROPRIATE TONE AND ANY EASTER RELATED CHANGES TO THE SERVICE
@@ -116,14 +87,14 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		
 		//CREATING THE SERVICE	
 		today=date;
-		helper=new Helpers(Analyse.getDayInfo());
+		helper=new Helpers(analyse.getDayInfo());
 		try
 		{
-			String strOut=createPrimes();
+			String strOut=createHours();
 			if(strOut.equals("No Service Today"))
 			{
-				Object[] options = {LanguageNames[3]};
-				JOptionPane.showOptionDialog(null, PrimesNames[0],(String)Text.getPhrases().get("0") + Text.getPhrases().get("Colon")+ PrimesNames[1], JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+				Object[] options = {languageNames[3]};
+				JOptionPane.showOptionDialog(null, primesNames[0],(String)langText.getPhrases().get("0") + langText.getPhrases().get("Colon")+ primesNames[1], JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 			}
 			else
 			{
@@ -134,7 +105,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
                                     //System.out.println("Added Font");
                                   // }
 
-                                PrimesWindow(strOut);
+                                serviceWindow(strOut);
 			}
 		}
 		catch (IOException j)
@@ -143,54 +114,17 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		
 		 	
 	}
-	private void PrimesWindow(String textOut)
-	{
-		frames=new JFrame((String)Text.getPhrases().get("0") + (String)Text.getPhrases().get("Colon")+ PrimesNames[1]);
-		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		textOut=textOut.replaceAll("</br>", "<BR>");
-		textOut=textOut.replaceAll("<br>","<BR>");
-		strOut=textOut;
-		//System.out.println(textOut);
-		JPanel contentPane=new JPanel(new BorderLayout());
-		contentPane.setOpaque(true);
-		output=new PrintableTextPane();
-		output.setEditable(false);
-		output.setSize(800,700);
-		output.setContentType("text/html; charset=UTF-8");
-		output.setText(textOut);
-		output.setCaretPosition(0);
-                JScrollPane scrollPane = new JScrollPane(output);
-		JMenuBar MenuBar=new JMenuBar();
-		MenuFiles demo=new MenuFiles(Analyse.getDayInfo());
-		PrimeSelector trial=new PrimeSelector(Analyse.getDayInfo());
-		MenuBar.add(demo.createFileMenu(this));
-		MenuBar.add(trial.createPrimeMenu());
-		MenuBar.add(demo.createHelpMenu(this));
-		frames.setJMenuBar(MenuBar);
-		trial.addPropertyChangeListener(this);
-		
-		contentPane.add(scrollPane,BorderLayout.CENTER);
-		frames.setContentPane(contentPane);
-		frames.pack();
-		frames.setSize(800,700);
-		frames.setVisible(true);
-                
-                Helpers orient=new Helpers(Analyse.getDayInfo());
-                orient.applyOrientation(frames,(ComponentOrientation)Analyse.getDayInfo().get("Orient"));
 
-		//scrollPane.top();
-	}
-	private String createPrimes() throws IOException
+	protected String createHours() throws IOException
 	{
 		//OBTAIN THE DEFAULTS FOR THE SERVICE (WHAT WAS LAST USED!)
-		Analyse.getDayInfo().put("PS",SelectorP.getWhoValue());
+		analyse.getDayInfo().put("PS",SelectorP.getWhoValue());
 		int TypeP=SelectorP.getTypeValue();
-		Service ReadPrime=new Service(Analyse.getDayInfo());
+		Service ReadPrime=new Service(analyse.getDayInfo());
 		//FIRST READ THE TONE FILES:
-				int Weekday=Integer.parseInt(Analyse.getDayInfo().get("dow").toString());
+				int Weekday=Integer.parseInt(analyse.getDayInfo().get("dow").toString());
 				//System.out.println(Weekday);
-				int Tone=Integer.parseInt(Analyse.getDayInfo().get("Tone").toString());
+				int Tone=Integer.parseInt(analyse.getDayInfo().get("Tone").toString());
 				if(Tone==8)
 				{
 					Tone=0;
@@ -198,7 +132,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 				//System.out.println(Tone);
 				if(Tone != -1)
 				{
-				String FileName=octoecheosFileName + "Tone " +Tone;
+				String FileName=OCTOECHEOS_FILENAME + "Tone " +Tone;
 				if (Weekday==1)
 				{
 					FileName=FileName+"/Monday.xml";
@@ -232,7 +166,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 
 				try
 				{
-					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.getDayInfo().get("LS").toString(),FileName)), "UTF8"));
+					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),FileName)), "UTF8"));
 					QDParser.parse(this, frf);
 
 				}
@@ -245,23 +179,23 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		//READ THE PENTECOSTARION!
 		
 		//Integer.parseInt(dayInfo.get(expression).toString())
-		int nday=Integer.parseInt(Analyse.getDayInfo().get("nday").toString());
+		int nday=Integer.parseInt(analyse.getDayInfo().get("nday").toString());
 	
 		if (nday >= -70 && nday < 0)
 		{
-			filename = triodionFileName;
+			filename = TRIODION_FILENAME;
 			lineNumber = Math.abs(nday);
 		}
 		else if (nday < -70)
 		{
 			// WE HAVE NOT YET REACHED THE LENTEN TRIODION
-			filename = pentecostarionFileName;
-			lineNumber = Integer.parseInt(Analyse.getDayInfo().get("ndayP").toString()) + 1;
+			filename = PENTECOSTARION_FILENAME;
+			lineNumber = Integer.parseInt(analyse.getDayInfo().get("ndayP").toString()) + 1;
 		}
 		else
 		{
 			// WE ARE AFTER PASCHA AND BEFORE THE END OF THE YEAR
-			filename = pentecostarionFileName;
+			filename = PENTECOSTARION_FILENAME;
 			lineNumber = nday + 1;
 		}
 
@@ -271,7 +205,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.getDayInfo().get("LS").toString(),filename)), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),filename)), "UTF8"));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -281,41 +215,41 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		
 		//CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
 		//POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
-		ServiceInfo ServicePrimes=new ServiceInfo("PRIME",Analyse.getDayInfo());
+		ServiceInfo ServicePrimes=new ServiceInfo("PRIME",analyse.getDayInfo());
 		OrderedHashtable PrimesTrial = ServicePrimes.serviceRules();
 		
-		Type=PrimesTrial.get("Type").toString();
+		type=PrimesTrial.get("Type").toString();
 		LentenK=(String) PrimesTrial.get("LENTENK");
 				
 		String PrimesAdd1=new String();
 				
-		if (Type.equals("None"))
+		if (type.equals("None"))
 		{
 			//THERE ARE NO SERVICES TODAY, THAT IS, THE ROYAL HOURS ARE SERVED INSTEAD
 			return "No Service Today";
 		}
-		else if(Type.equals("Paschal"))
+		else if(type.equals("Paschal"))
 		{
                     
-                    return ReadPrime.startService(ServicesFileName+"PaschalHours.xml");
+                    return ReadPrime.startService(SERVICES_FILENAME+"PaschalHours.xml");
 		}
 		
 		//I WOULD THEN NEED TO READ THE MENOLOGION, BUT I WILL NOT DO SO RIGHT NOW.
 		//DETERMINE THE ORDERING OF THE TROPARIA AND KONTAKIA IF THERE ARE 2 OR MORE
 				
 		String strOut= new String();
-		Analyse.getDayInfo().put("PFlag1",TypeP);
-		Analyse.getDayInfo().put("PFlag2",0);
+		analyse.getDayInfo().put("PFlag1",TypeP);
+		analyse.getDayInfo().put("PFlag2",0);
 		//NOTE PFlag2 == 3 for Holy Week Services!
-		if(Type.equals("Lenten"))
+		if(type.equals("Lenten"))
 	       {
-	       		Analyse.getDayInfo().put("PFlag2",1);
+	       		analyse.getDayInfo().put("PFlag2",1);
 	       		
 	       		if(LentenK != null)
 	       		{
-	       			Analyse.getDayInfo().put("PFlag2",2);
+	       			analyse.getDayInfo().put("PFlag2",2);
 	       			//CREATE THE KATHISMA PART
-	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.getDayInfo().get("LS").toString()+ServicesFileName+"Var/PKath.xml"),"UTF8"));
+	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PKath.xml"),"UTF8"));
 	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma"+LentenK+"\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
@@ -330,18 +264,18 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	    		{
 	    		    	if(Troparion2 != null)
 	    		    	{
-	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.getDayInfo().get("LS").toString()+ServicesFileName+"Var/PTrop1.xml"),"UTF8"));
+	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop1.xml"),"UTF8"));
 	    				String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    				out.write(Data);
 	    				out.close();
 	    				
-	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.getDayInfo().get("LS").toString()+ServicesFileName+"Var/PTrop2.xml"),"UTF8"));
+	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop2.xml"),"UTF8"));
 	    				Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion2+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    				out.write(Data);
 	    				out.close();
 					
 	    		    	}
-    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.getDayInfo().get("LS").toString()+ServicesFileName+"Var/PTrop2.xml"),"UTF8"));
+    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop2.xml"),"UTF8"));
 	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
@@ -353,26 +287,17 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	       	//APROPRIATE KONTAKION MUST STILL BE CREATED!
 	       	if (Kontakion1 != null)
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.getDayInfo().get("LS").toString()+ServicesFileName+"Var/PKont1.xml"),"UTF8"));
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PKont1.xml"),"UTF8"));
 	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+Kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    		out.write(Data);
 	    		out.close();
 		}
 	    	 		
 		//System.out.println("Primes Case A: ");
-		strOut=ReadPrime.startService(ServicesFileName + "Prime.xml")+"</p>";
+		strOut=ReadPrime.startService(SERVICES_FILENAME + "Prime.xml")+"</p>";
 	
 	   
 	     return strOut;	     	     
-	}
-	public void startDocument()
-	{
-
-	}
-
-	public void endDocument()
-	{
-
 	}
 
 	public void startElement(String elem, Hashtable table)
@@ -385,7 +310,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd").toString()) == false)
 			{
 				
 				return;
@@ -407,7 +332,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 			String value=(String)table.get("Type");
 			if(value != null)
 			{
-				Type=(String)table.get("Type");
+				type=(String)table.get("Type");
 			}
 			value=(String)table.get("TROPARION1");
 			if(value != null)
@@ -442,125 +367,19 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 
 	}
 
-	public void endElement(String elem)
-	{
-		if(elem.equals("LANGUAGE") || elem.equals("TONE"))
-		{
-			read=false;
-		}
-	}
-
-	public void text(String text)
-	{
-
-	}
-
-	private boolean eval(String expression) throws IllegalArgumentException
-	{
-		return false;
-	}
-	
-
 	public static void main(String[] argz)
 	{
 		
 		//new Primes(3);	//CREATE THE SERVICE FOR WEDNESDAY FOR TONE 1.
 	}
 	
-	public String readText(String filename)
-	{
-		try
-		{
-       			 text= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.getDayInfo().get("LS").toString(),filename)), "UTF8"));
-       			 QDParser.parse(this,fr);
-       			 if(text.length()==0)
-       			 {
-       			 	text=null;
-       			 }       			 			
-       			      			       		
-	    	}
-	     	catch (Exception e)
-	     	{
-	     		//SERIOUS PROBLEM MISSING A PART OF THE SERVICE!
-	     		System.out.println(filename);
-	     		e.printStackTrace();
-	     		return null;
-	     	}
-	     	
-	     	return text;
-	}
-
-	 public void actionPerformed(ActionEvent e)
-  {
-        JMenuItem source = (JMenuItem)(e.getSource());
-        String name = source.getText();
-       if (name.equals(HelpNames[2]))
-        {
-        	 Helpers orient=new Helpers(Analyse.getDayInfo());
-                orient.applyOrientation(new About(Analyse.getDayInfo()),(ComponentOrientation)Analyse.getDayInfo().get("Orient"));
-        }
-         if (name.equals(HelpNames[0]))
-        {
-        	 //LAUNCH THE HELP FILE
-        	 
-        }
-        if(name.equals(FileNames[1]))
-        {
-        	//SAVE THE CURRENT WINDOW
-        	helper.saveHTMLFile(PrimesNames[1]+" "+today, strOut);
-        	       	
-       	}
-        if(name.equals(FileNames[4]))
-        {
-        	//CLOSE THE PRIMES FRAME
-        	if(helper.closeFrame(LanguageNames[7]))
-        	{
-        		frames.dispose();
-        	}
-        }
-        if(name.equals(FileNames[6]))
-        {
-        	//PRINT THE FILE
-        	helper.sendHTMLToPrinter(output);
-        }
-        String s = "Action event detected."
-                   + newline
-                   + "    Event source: " + source.getText()
-                   + " (an instance of " + getClassName(source) + ")";
-        System.out.println(s);
-        //output.append(s + newline);
-        //output.setCaretPosition(output.getDocument().getLength());
-    }
-    
-    protected String getClassName(Object o)
-    {
-        String classString = o.getClass().getName();
-        int dotIndex = classString.lastIndexOf(".");
-        return classString.substring(dotIndex+1);
-    }
-
-    public void itemStateChanged(ItemEvent e) {
-        JMenuItem source = (JMenuItem)(e.getSource());
-        String s = "Item event detected."
-                   + newline
-                   + "    Event source: " + source.getText()
-                   + " (an instance of " + getClassName(source) + ")"
-                   + newline
-                   + "    New state: "
-                   + ((e.getStateChange() == ItemEvent.SELECTED) ?
-                     "selected":"unselected");
-        System.out.println(s);
-        //output.append(s + newline);
-        //output.setCaretPosition(output.getDocument().getLength());
-    }
-    
+	@Override
 	public void propertyChange(PropertyChangeEvent e)
 	{
 		//THERE IS NOTHING HERE TO DO??
 		try
 		{
-                    strOut=createPrimes();
+                    strOut=createHours();
                     output.setText(strOut);
 			output.setCaretPosition(0);
 		}
