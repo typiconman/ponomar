@@ -508,7 +508,7 @@ public class ThirdHour implements DocHandler, ActionListener, ItemListener, Prop
         if(name.equals(FileNames[1]))
         {
         	//SAVE THE CURRENT WINDOW
-        	helper.SaveHTMLFile(PrimesNames[1]+" "+today, strOut);
+        	helper.saveHTMLFile(PrimesNames[1]+" "+today, strOut);
         	       	
        	}
         if(name.equals(FileNames[4]))

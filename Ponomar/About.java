@@ -33,19 +33,19 @@ yuri (dot) shardt (at) gmail.com
 **********************************************************************/
 public class About extends JFrame
 {
-	private LanguagePack Ponomar;//=new LanguagePack();
+	private LanguagePack ponomar;//=new LanguagePack();
 	private String value;//=(String)Ponomar.Phrases.get("0");
-        private StringOp Analyse=new StringOp();
+        private StringOp analyse=new StringOp();
 	public About(OrderedHashtable dayInfo)
 	{
-            Analyse.setDayInfo(dayInfo);
-            Ponomar=new LanguagePack(dayInfo);
+            analyse.setDayInfo(dayInfo);
+            ponomar=new LanguagePack(dayInfo);
             
-	 value=(String)Ponomar.getPhrases().get("0");
+	 value=(String)ponomar.getPhrases().get("0");
 		//ALLOWS A DIFFERENT TITLE TO BE SPECIFIED BY THE USER (CYRILLIC FOR THE CYRILLIC VERSIONS)
 		setTitle(value);
-		LanguagePack Text=new LanguagePack(dayInfo);
-		String [] AboutNames=Text.obtainValues((String)Text.getPhrases().get("About"));
+		LanguagePack text=new LanguagePack(dayInfo);
+		String [] aboutNames=text.obtainValues((String)text.getPhrases().get("About"));
 		/*String[] Authors=Text.obtainValues((String) Text.Phrases.get("Authors"));
                 String Year=Text.Phrases.get("Year").toString();
                 String Comma=Text.Phrases.get("Comma").toString();
@@ -62,15 +62,19 @@ public class About extends JFrame
                 {
                     AuthorList=AuthorList+And+Authors[Authors.length-1];
                 }*/
-                Helpers About1=new Helpers(Analyse.getDayInfo());
+                Helpers about1=new Helpers(analyse.getDayInfo());
 		JPanel contentPane=new JPanel(new BorderLayout());
 		contentPane.setOpaque(true);
 		JTextPane output=new JTextPane();
 		output.setEditable(false);
 		output.setContentType("text/html");
-                String DisplayFont= Analyse.getDayInfo().get("FontFaceM").toString();
-                String DisplaySize= Analyse.getDayInfo().get("FontSizeM").toString();
-		output.setText("<body style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\"><B><h1 style=\"text-align: center;\">"+(String)Ponomar.getPhrases().get("0")+"</h1></B><p style=\"text-align: center;\">"+AboutNames[0]+" "+(String) ConfigurationFiles.getDefaults().get("Version")+"</p><p>"+AboutNames[1]+"</p><p>"+AboutNames[2]+"</p><p>"+About1.getCopyright()+"<BR>" + AboutNames[5] + "<BR>");
+                String displayFont= analyse.getDayInfo().get("FontFaceM").toString();
+                String displaySize= analyse.getDayInfo().get("FontSizeM").toString();
+		output.setText("<body style=\"font-family:" + displayFont + ";font-size:" + displaySize
+				+ "\"><B><h1 style=\"text-align: center;\">" + (String) ponomar.getPhrases().get("0")
+				+ "</h1></B><p style=\"text-align: center;\">" + aboutNames[0] + " "
+				+ (String) ConfigurationFiles.getDefaults().get("Version") + "</p><p>" + aboutNames[1] + "</p><p>"
+				+ aboutNames[2] + "</p><p>" + about1.getCopyright() + "<BR>" + aboutNames[5] + "<BR>");
 		output.setCaretPosition(0);
 		JScrollPane scrollPane = new JScrollPane(output);
 		contentPane.add(scrollPane,BorderLayout.CENTER);

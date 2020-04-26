@@ -689,7 +689,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         if (name1.equals(FileNames[1])) {
             //SAVE THE CURRENT WINDOW
             System.out.println(strOut);
-            helper.SaveHTMLFile(name, strOut);
+            helper.saveHTMLFile(name, strOut);
 
 
         }

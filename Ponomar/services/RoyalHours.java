@@ -301,7 +301,7 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
         if(name.equals(FileNames[1]))
         {
         	//SAVE THE CURRENT WINDOW
-        	helper.SaveHTMLFile(PrimesNames[1]+" "+today, strOut);
+        	helper.saveHTMLFile(PrimesNames[1]+" "+today, strOut);
 
        	}
         if(name.equals(FileNames[4]))

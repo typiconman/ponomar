@@ -321,7 +321,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         }
         if (name.equals(FileNames[1])) {
             //SAVE THE CURRENT WINDOW
-            helper.SaveHTMLFile(MainNames[5] + " " + today + ".html", "<html><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"><title>" + (String) Phrases.getPhrases().get("0") + Colon + today + "</title>" + output);
+            helper.saveHTMLFile(MainNames[5] + " " + today + ".html", "<html><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"><title>" + (String) Phrases.getPhrases().get("0") + Colon + today + "</title>" + output);
         }
         if (name.equals(FileNames[4])) {
             if (helper.closeFrame(MainNames[6])) {
