@@ -1,6 +1,13 @@
 package Ponomar;
 
 import javax.swing.*;
+
+import Ponomar.internationalization.LanguagePack;
+import Ponomar.internationalization.LanguageSelector;
+import Ponomar.panels.GospelSelector;
+import Ponomar.utility.OrderedHashtable;
+import Ponomar.utility.StringOp;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.beans.*;
@@ -25,7 +32,7 @@ Version 2.0 December 2012
 
 **************************************************************/
 
-class MenuFiles extends JMenu implements ItemListener, PropertyChangeListener
+public class MenuFiles extends JMenu implements ItemListener, PropertyChangeListener
 {
 	JTextArea output;
 	String newline = "\n";
@@ -46,20 +53,20 @@ class MenuFiles extends JMenu implements ItemListener, PropertyChangeListener
 	private String[] BibleName;//=Text.obtainValues((String)Text.Phrases.get("Bible"));
 	private String[] HelpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
          private StringOp Analyse=new StringOp();
-	private Font CurrentFont;//=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
+	private Font CurrentFont;//=new Font((String)Analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.getDayInfo().get("FontSizeM")));
 
 
 public MenuFiles(OrderedHashtable dayInfo)
 {
-	Analyse.dayInfo=dayInfo;
+	Analyse.setDayInfo(dayInfo);
         Text=new LanguagePack(dayInfo);
-        SaintNames=Text.obtainValues((String)Text.Phrases.get("SMenu"));
-	OptionsNames=(String)Text.Phrases.get("Options");
-	 FileNames=Text.obtainValues((String)Text.Phrases.get("File"));
-	ServiceNames=Text.obtainValues((String)Text.Phrases.get("Services"));
-	BibleName=Text.obtainValues((String)Text.Phrases.get("Bible"));
-	HelpNames=Text.obtainValues((String)Text.Phrases.get("Help"));
-         CurrentFont=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
+        SaintNames=Text.obtainValues((String)Text.getPhrases().get("SMenu"));
+	OptionsNames=(String)Text.getPhrases().get("Options");
+	 FileNames=Text.obtainValues((String)Text.getPhrases().get("File"));
+	ServiceNames=Text.obtainValues((String)Text.getPhrases().get("Services"));
+	BibleName=Text.obtainValues((String)Text.getPhrases().get("Bible"));
+	HelpNames=Text.obtainValues((String)Text.getPhrases().get("Help"));
+         CurrentFont=new Font((String)Analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.getDayInfo().get("FontSizeM")));
 }
 public JMenu createOptionsMenu(PropertyChangeListener pl, ActionListener al)
 {
@@ -67,19 +74,19 @@ public JMenu createOptionsMenu(PropertyChangeListener pl, ActionListener al)
 	OptionsMenu.setMnemonic(KeyEvent.VK_O);
         //OptionsMenu.setFont(CurrentFont);
 	//ADD THIS MENU TO THE MAIN MENU
-	GospelSelection = new GospelSelector(Analyse.dayInfo);
+	GospelSelection = new GospelSelector(Analyse.getDayInfo());
 	Selection = GospelSelection.createGospelMenu();
 	GospelSelection.addPropertyChangeListener(pl);
 	OptionsMenu.add(Selection);
 		
-	LanguageSelection = new LanguageSelector(Analyse.dayInfo.clone());
-	JMenu Selection2=LanguageSelection.createLanguageMenu(Analyse.dayInfo.clone());
+	LanguageSelection = new LanguageSelector(Analyse.getDayInfo().clone());
+	JMenu Selection2=LanguageSelection.createLanguageMenu(Analyse.getDayInfo().clone());
 	LanguageSelection.addPropertyChangeListener(pl);
 	OptionsMenu.add(Selection2);
 
-        JMenuItem Selection3=new JMenuItem(Text.Phrases.get("OptionMenu").toString());
+        JMenuItem Selection3=new JMenuItem(Text.getPhrases().get("OptionMenu").toString());
         Selection3.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, ActionEvent.CTRL_MASK));
-	Selection3.getAccessibleContext().setAccessibleDescription(Text.Phrases.get("OptionMenu").toString());
+	Selection3.getAccessibleContext().setAccessibleDescription(Text.getPhrases().get("OptionMenu").toString());
 	Selection3.addActionListener(al);
         OptionsMenu.add(Selection3);
 	

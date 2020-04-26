@@ -1,6 +1,12 @@
 package Ponomar;
 
 import javax.swing.*;
+
+import Ponomar.internationalization.LanguagePack;
+import Ponomar.utility.Helpers;
+import Ponomar.utility.OrderedHashtable;
+import Ponomar.utility.StringOp;
+
 import java.awt.*;
 import java.util.*;
 import java.awt.event.*;
@@ -49,13 +55,13 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
 
 	public Options(OrderedHashtable dayInfo)
 	{
-            Analyse.dayInfo=dayInfo;
+            Analyse.setDayInfo(dayInfo);
             Text=new LanguagePack(dayInfo);
-            ConfigurationFiles.Defaults = new OrderedHashtable();
+            ConfigurationFiles.setDefaults(new OrderedHashtable());
             ConfigurationFiles.ReadFile();
             
-            Options=Text.obtainValues((String)Text.Phrases.get("Options2"));
-            CurrentFont=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
+            Options=Text.obtainValues((String)Text.getPhrases().get("Options2"));
+            CurrentFont=new Font((String)Analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.getDayInfo().get("FontSizeM")));
 
             //createDefaultWindow();
 	
@@ -85,7 +91,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 top.add(latitude2);
                 latitude=new JTextField();
                 latitude.setEditable(true);
-                latitude.setText(ConfigurationFiles.Defaults.get("Latitude").toString());
+                latitude.setText(ConfigurationFiles.getDefaults().get("Latitude").toString());
                 latitude.setHorizontalAlignment(JTextField.RIGHT);
                 latitude.setFont(CurrentFont);
                 top.add(latitude);
@@ -100,7 +106,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 top.add(longitude2);
                 longitude=new JTextField();
                 longitude.setEditable(true);
-                longitude.setText(ConfigurationFiles.Defaults.get("Longitude").toString());
+                longitude.setText(ConfigurationFiles.getDefaults().get("Longitude").toString());
                 longitude.setHorizontalAlignment(JTextField.RIGHT);
                 longitude.setFont(CurrentFont);
                 top.add(longitude);
@@ -125,7 +131,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 for(int i=0;i<Zone.length;i++){
                     TimeZone2.addItem(Zone[i]);
                 }
-                TimeZone2.setSelectedItem(ConfigurationFiles.Defaults.get("TimeZone").toString());
+                TimeZone2.setSelectedItem(ConfigurationFiles.getDefaults().get("TimeZone").toString());
                 TimeZone2.setEditable(false);
                 top.add(TimeZone2,BorderLayout.CENTER);
 
@@ -155,7 +161,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 name.setPreferredSize(new Dimension(50,50));
                 centre.add(name);
 
-                String DefaultCalendar = ConfigurationFiles.Defaults.get("Calendar").toString();
+                String DefaultCalendar = ConfigurationFiles.getDefaults().get("Calendar").toString();
 
                 jRadioButton1 = new JRadioButton();
                 jRadioButton1.setText(Options[10]);
@@ -232,8 +238,8 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
 
                 setContentPane(contentPane);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                Helpers orient = new Helpers(Analyse.dayInfo);
-                orient.applyOrientation(this, (ComponentOrientation) Analyse.dayInfo.get("Orient"));
+                Helpers orient = new Helpers(Analyse.getDayInfo());
+                orient.applyOrientation(this, (ComponentOrientation) Analyse.getDayInfo().get("Orient"));
                 
 
 
@@ -241,12 +247,12 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
        
 		pack();
 		int width=550;
-                if (Text.Phrases.get("OptionsW")!=null){
-                    width=Integer.parseInt(Text.Phrases.get("OptionsW").toString());
+                if (Text.getPhrases().get("OptionsW")!=null){
+                    width=Integer.parseInt(Text.getPhrases().get("OptionsW").toString());
                 }
                 int height=220;
-                if (Text.Phrases.get("OptionsH")!=null){
-                    height=Integer.parseInt(Text.Phrases.get("OptionsH").toString());
+                if (Text.getPhrases().get("OptionsH")!=null){
+                    height=Integer.parseInt(Text.getPhrases().get("OptionsH").toString());
                 }
                 setSize(width,height);
 		setVisible(true);
@@ -263,7 +269,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
         //JMenuItem source = (JMenuItem)(e.getSource());
         //String name = source.getText();
 
-        //Helpers helper = new Helpers(Analyse.dayInfo);
+        //Helpers helper = new Helpers(Analyse.getDayInfo());
         String name = e.getActionCommand();
         //ALLOWS A MULTILINGUAL PROPER VERSION
         if (name.equals(Options[12])) {
@@ -276,20 +282,20 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 System.out.println("Error in Entering Latitude; value not used");
             }
             else{
-                ConfigurationFiles.Defaults.put("Latitude",latitude.getText().toString());
+                ConfigurationFiles.getDefaults().put("Latitude",latitude.getText().toString());
             }
 
             if (!(longitude1>=-180 && longitude1<=180)){
                 System.out.println("Error in Entering Longitude; value not used");
             }
             else{
-                ConfigurationFiles.Defaults.put("Longitude",longitude.getText().toString());
+                ConfigurationFiles.getDefaults().put("Longitude",longitude.getText().toString());
             }
-            ConfigurationFiles.Defaults.put("TimeZone",TimeZone2.getSelectedItem().toString());
+            ConfigurationFiles.getDefaults().put("TimeZone",TimeZone2.getSelectedItem().toString());
             
-            String previous=ConfigurationFiles.Defaults.get("Calendar").toString();
+            String previous=ConfigurationFiles.getDefaults().get("Calendar").toString();
             if (jRadioButton1.getSelectedObjects()!=null){
-                ConfigurationFiles.Defaults.put("Calendar","Julian");
+                ConfigurationFiles.getDefaults().put("Calendar","Julian");
                 if (!(previous.equals("Julian")) && !ignore){
                     firePropertyChange("CalendarChange", 1,0);
                 }
@@ -297,7 +303,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
             else
             {
                
-                ConfigurationFiles.Defaults.put("Calendar","Gregorian");
+                ConfigurationFiles.getDefaults().put("Calendar","Gregorian");
                 if (!(previous.equals("Gregorian")) && !ignore){
                    firePropertyChange("CalendarChange", 0,1);
                 }

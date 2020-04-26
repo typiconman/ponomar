@@ -6,6 +6,11 @@ import java.awt.*;
 import java.util.*;
 import java.io.*;
 import javax.swing.event.*;
+
+import Ponomar.parsing.Commemoration1;
+import Ponomar.utility.OrderedHashtable;
+import Ponomar.utility.StringOp;
+
 import java.awt.event.*;
 import java.beans.*;
 
@@ -42,12 +47,12 @@ public class Search extends JFrame implements ActionListener
 	public Search(OrderedHashtable dayInfo)
 	{
 		//Assuming at present only English exists:
-            Analyse.dayInfo = dayInfo;
+            Analyse.setDayInfo(dayInfo);
 /*        Text = new LanguagePack(dayInfo);
         captions = Text.obtainValues((String) Text.Phrases.get("BibleW"));*/
         setTitle("Search Commemorations");
 
-//        LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
+//        LanguagePack getLang = new LanguagePack(Analyse.getDayInfo());
 
 
         JPanel top = new JPanel();
@@ -86,7 +91,7 @@ public class Search extends JFrame implements ActionListener
         add(splitter);
 
         //Adding a Menu Bar
-       /* MenuFiles demo = new MenuFiles(Analyse.dayInfo.clone());
+       /* MenuFiles demo = new MenuFiles(Analyse.getDayInfo().clone());
         JMenuBar MenuBar = new JMenuBar();
         MenuBar.add(demo.createFileMenu(this));
         MenuBar.add(demo.createHelpMenu(this));
@@ -113,7 +118,7 @@ public class Search extends JFrame implements ActionListener
         //JMenuItem source = (JMenuItem)(e.getSource());
         //String name = source.getText();
 
-        //Helpers helper = new Helpers(Analyse.dayInfo);
+        //Helpers helper = new Helpers(Analyse.getDayInfo());
         String name = e.getActionCommand();
         //ALLOWS A MULTILINGUAL PROPER VERSION
         if (name.equals("Search")) {
@@ -131,7 +136,7 @@ public class Search extends JFrame implements ActionListener
                 if (file.isFile()) {
                     if (file.getName().endsWith("xml")){
                         System.out.println(file.getName());
-                        test =new Commemoration1(file.getName().substring(0, file.getName().length()-4),file.getName().substring(0, file.getName().length()-4),Analyse.dayInfo);
+                        test =new Commemoration1(file.getName().substring(0, file.getName().length()-4),file.getName().substring(0, file.getName().length()-4),Analyse.getDayInfo());
                         String nameF=test.getGrammar("Nominative").toString();
                         if (nameF.contains(search)){
                             found+=file.getName().subSequence(0, file.getName().length()-4)+"\t"+nameF+"\t";

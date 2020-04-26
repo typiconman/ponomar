@@ -10,6 +10,33 @@ import java.io.*;
 import java.lang.Math;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
+
+import Ponomar.astronomy.Astronomy;
+import Ponomar.astronomy.Paschalion;
+import Ponomar.astronomy.Sunrise;
+import Ponomar.calendar.JCalendar;
+import Ponomar.calendar.JDate;
+import Ponomar.calendar.PCalendar;
+import Ponomar.internationalization.LanguagePack;
+import Ponomar.internationalization.LanguageSelector;
+import Ponomar.panels.GospelSelector;
+import Ponomar.panels.IconDisplay;
+import Ponomar.panels.PrintableTextPane;
+import Ponomar.parsing.Commemoration1;
+import Ponomar.parsing.Day;
+import Ponomar.parsing.Fasting;
+import Ponomar.readings.DivineLiturgy1;
+import Ponomar.readings.Matins;
+import Ponomar.services.NinthHour;
+import Ponomar.services.Primes;
+import Ponomar.services.RoyalHours;
+import Ponomar.services.SixthHour;
+import Ponomar.services.ThirdHour;
+import Ponomar.utility.Helpers;
+import Ponomar.utility.OrderedHashtable;
+import Ponomar.utility.RuleBasedNumber;
+import Ponomar.utility.StringOp;
+
 import javax.swing.text.MutableAttributeSet;
 
 /***********************************************************************
@@ -101,28 +128,28 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         //WE NEED THIS HANDY STORER OF VALUES NOW.
         //StringOp.dayInfo = new OrderedHashtable();
         //DETERMINE THE DEFAULTS
-        ConfigurationFiles.Defaults = new OrderedHashtable();
+        ConfigurationFiles.setDefaults(new OrderedHashtable());
         ConfigurationFiles.ReadFile();
-        LanguageLocation = new LanguageSelector(Analyse.dayInfo);
+        LanguageLocation = new LanguageSelector(Analyse.getDayInfo());
 
-        Analyse.dayInfo.put("LS", LanguageLocation.getLValue());
-        Phrases = new LanguagePack(Analyse.dayInfo);
+        Analyse.getDayInfo().put("LS", LanguageLocation.getLValue());
+        Phrases = new LanguagePack(Analyse.getDayInfo());
         //Changing language storage format
-        findLanguage = new Helpers(Analyse.dayInfo);
+        findLanguage = new Helpers(Analyse.getDayInfo());
 
-        toneNumbers = Phrases.obtainValues((String) Phrases.Phrases.get("Tones"));
-        SaintNames = Phrases.obtainValues((String) Phrases.Phrases.get("SMenu"));
-        OptionsNames = (String) Phrases.Phrases.get("Options");
-        FileNames = Phrases.obtainValues((String) Phrases.Phrases.get("File"));
-        ServiceNames = Phrases.obtainValues((String) Phrases.Phrases.get("Services"));
-        BibleName = Phrases.obtainValues((String) Phrases.Phrases.get("Bible"));
-        HelpNames = Phrases.obtainValues((String) Phrases.Phrases.get("Help"));
+        toneNumbers = Phrases.obtainValues((String) Phrases.getPhrases().get("Tones"));
+        SaintNames = Phrases.obtainValues((String) Phrases.getPhrases().get("SMenu"));
+        OptionsNames = (String) Phrases.getPhrases().get("Options");
+        FileNames = Phrases.obtainValues((String) Phrases.getPhrases().get("File"));
+        ServiceNames = Phrases.obtainValues((String) Phrases.getPhrases().get("Services"));
+        BibleName = Phrases.obtainValues((String) Phrases.getPhrases().get("Bible"));
+        HelpNames = Phrases.obtainValues((String) Phrases.getPhrases().get("Help"));
 
-        Errors = Phrases.obtainValues((String) Phrases.Phrases.get("Errors"));
-        MainNames = Phrases.obtainValues((String) Phrases.Phrases.get("Main"));
-        DisplayFont = (String) Phrases.Phrases.get("FontFaceM");
-        DisplaySize = (String) Phrases.Phrases.get("FontSizeM");
-        OrderBox = (String) Phrases.Phrases.get("OrderBox");
+        Errors = Phrases.obtainValues((String) Phrases.getPhrases().get("Errors"));
+        MainNames = Phrases.obtainValues((String) Phrases.getPhrases().get("Main"));
+        DisplayFont = (String) Phrases.getPhrases().get("FontFaceM");
+        DisplaySize = (String) Phrases.getPhrases().get("FontSizeM");
+        OrderBox = (String) Phrases.getPhrases().get("OrderBox");
 
         Font value1 = (Font) UIManager.get("Menu.font");
         if (DisplaySize == null || DisplaySize.equals("")) {
@@ -169,20 +196,20 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         }
 
         //System.out.println(this.getFont());
-        setTitle((String) Phrases.Phrases.get("0"));
-        RSep = (String) Phrases.Phrases.get("ReadSep");
-        CSep = (String) Phrases.Phrases.get("CommSep");
-        Colon = (String) Phrases.Phrases.get("Colon");
-        Analyse.dayInfo.put("FontFaceM", DisplayFont);
-        Analyse.dayInfo.put("FontSizeM", DisplaySize);
-        Analyse.dayInfo.put("ReadSep", RSep);
-        Analyse.dayInfo.put("Colon", Colon);
-        Ideographic = (String) Phrases.Phrases.get("Ideographic");
-        Analyse.dayInfo.put("Ideographic", Ideographic);
-        GospelLocation = new GospelSelector(Analyse.dayInfo);
+        setTitle((String) Phrases.getPhrases().get("0"));
+        RSep = (String) Phrases.getPhrases().get("ReadSep");
+        CSep = (String) Phrases.getPhrases().get("CommSep");
+        Colon = (String) Phrases.getPhrases().get("Colon");
+        Analyse.getDayInfo().put("FontFaceM", DisplayFont);
+        Analyse.getDayInfo().put("FontSizeM", DisplaySize);
+        Analyse.getDayInfo().put("ReadSep", RSep);
+        Analyse.getDayInfo().put("Colon", Colon);
+        Ideographic = (String) Phrases.getPhrases().get("Ideographic");
+        Analyse.getDayInfo().put("Ideographic", Ideographic);
+        GospelLocation = new GospelSelector(Analyse.getDayInfo());
 
         //ADD A MENU BAR Y.S. 2008/08/11 n.s.
-        demo = new MenuFiles(Analyse.dayInfo.clone());
+        demo = new MenuFiles(Analyse.getDayInfo().clone());
         MenuBar = new JMenuBar();
         MenuBar.add(demo.createFileMenu(this));
         MenuBar.add(demo.createOptionsMenu(this,this));
@@ -195,12 +222,12 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         setJMenuBar(MenuBar);
 
         JPanel left = new JPanel(new GridLayout(3, 0));
-        calendar = new JCalendar(Analyse.dayInfo);
+        calendar = new JCalendar(Analyse.getDayInfo());
         //System.out.println(calendar);
         calendar.addPropertyChangeListener(this);
         left.setLayout(new BorderLayout());
         left.add(calendar, BorderLayout.NORTH);
-        displayIcon = new IconDisplay(new String[0], new String[0], Analyse.dayInfo);
+        displayIcon = new IconDisplay(new String[0], new String[0], Analyse.getDayInfo());
         left.add(displayIcon, BorderLayout.CENTER);
 
 
@@ -223,10 +250,10 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                 
         setContentPane(splitter);
 
-        Locale place = new Locale(Phrases.Phrases.get("Language").toString(), Phrases.Phrases.get("Country").toString());
-        Helpers orient = new Helpers(Analyse.dayInfo);
-        Analyse.dayInfo.put("Locale", place);
-        Analyse.dayInfo.put("Orient", ComponentOrientation.getOrientation(place));
+        Locale place = new Locale(Phrases.getPhrases().get("Language").toString(), Phrases.getPhrases().get("Country").toString());
+        Helpers orient = new Helpers(Analyse.getDayInfo());
+        Analyse.getDayInfo().put("Locale", place);
+        Analyse.getDayInfo().put("Orient", ComponentOrientation.getOrientation(place));
         orient.applyOrientation(this, ComponentOrientation.getOrientation(place));
         this.validate();
 
@@ -281,20 +308,20 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
     }
 
     public void actionPerformed(ActionEvent e) {
-        Helpers helper = new Helpers(Analyse.dayInfo);
+        Helpers helper = new Helpers(Analyse.getDayInfo());
         JMenuItem source = (JMenuItem) (e.getSource());
         String name = source.getText();
         if (name.equals(HelpNames[2])) {
             //new About();
-            Helpers orient = new Helpers(Analyse.dayInfo);
-            orient.applyOrientation(new About(Analyse.dayInfo), (ComponentOrientation) Analyse.dayInfo.get("Orient"));
+            Helpers orient = new Helpers(Analyse.getDayInfo());
+            orient.applyOrientation(new About(Analyse.getDayInfo()), (ComponentOrientation) Analyse.getDayInfo().get("Orient"));
         }
         if (name.equals(HelpNames[0])) {
             //HELP FILES
         }
         if (name.equals(FileNames[1])) {
             //SAVE THE CURRENT WINDOW
-            helper.SaveHTMLFile(MainNames[5] + " " + today + ".html", "<html><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"><title>" + (String) Phrases.Phrases.get("0") + Colon + today + "</title>" + output);
+            helper.SaveHTMLFile(MainNames[5] + " " + today + ".html", "<html><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"><title>" + (String) Phrases.getPhrases().get("0") + Colon + today + "</title>" + output);
         }
         if (name.equals(FileNames[4])) {
             if (helper.closeFrame(MainNames[6])) {
@@ -315,22 +342,22 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         }
         if (name.equals(ServiceNames[5])) {
             //Create the primes service
-            new Primes(today, Analyse.dayInfo);
+            new Primes(today, Analyse.getDayInfo());
         }
         if (name.equals(ServiceNames[6])) {
-            new ThirdHour(today, Analyse.dayInfo);
+            new ThirdHour(today, Analyse.getDayInfo());
         }
         if (name.equals(ServiceNames[7])) {
-            new SixthHour(today, Analyse.dayInfo);
+            new SixthHour(today, Analyse.getDayInfo());
             //SEXT
         }
         if (name.equals(ServiceNames[8])) {
-            new NinthHour(today, Analyse.dayInfo);
+            new NinthHour(today, Analyse.getDayInfo());
             //NONE
         }
         if (name.equals(ServiceNames[9])) {
             //ROYAL HOURS
-            new RoyalHours(today, Analyse.dayInfo);
+            new RoyalHours(today, Analyse.getDayInfo());
         }
         if (name.equals(ServiceNames[10])) {
             //ALL-NIGHT VIGIL
@@ -343,14 +370,14 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         }
         if (name.equals(BibleName[0])) {
             //Launch the Bible Reader
-            Helpers orient = new Helpers(Analyse.dayInfo);
-            orient.applyOrientation(new Bible("Gen", "1:1-31", Analyse.dayInfo), (ComponentOrientation) Analyse.dayInfo.get("Orient"));
+            Helpers orient = new Helpers(Analyse.getDayInfo());
+            orient.applyOrientation(new Bible("Gen", "1:1-31", Analyse.getDayInfo()), (ComponentOrientation) Analyse.getDayInfo().get("Orient"));
         }
         if (name.equals(FileNames[6])) {
             helper.sendHTMLToPrinter(text);
         }
-        if (name.equals( Phrases.Phrases.get("OptionMenu"))){
-            Options optionsN=new Options(Analyse.dayInfo);
+        if (name.equals( Phrases.getPhrases().get("OptionMenu"))){
+            Options optionsN=new Options(Analyse.getDayInfo());
             optionsN.addPropertyChangeListener("CalendarChange",this); //nifty way of only listening to what I want to hear!
             optionsN.createDefaultWindow();
 
@@ -372,9 +399,9 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                     bible.update(parts[1], parts[2]);
                     bible.show();
                 } catch (NullPointerException npe) {
-                    bible = new Bible(parts[1], parts[2], Analyse.dayInfo);
-                    Helpers orient = new Helpers(Analyse.dayInfo);
-                    orient.applyOrientation(bible, (ComponentOrientation) Analyse.dayInfo.get("Orient"));
+                    bible = new Bible(parts[1], parts[2], Analyse.getDayInfo());
+                    Helpers orient = new Helpers(Analyse.getDayInfo());
+                    orient.applyOrientation(bible, (ComponentOrientation) Analyse.getDayInfo().get("Orient"));
                 }
             } else {
                 parts = cmd.split("\\?");
@@ -384,11 +411,11 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                     //System.out.println(parts2[1]);
                     String[] parts3 = parts2[1].split(",");
 
-                    Commemoration1 trial1 = new Commemoration1(parts3[parts3.length - 2], parts3[parts3.length - 1], Analyse.dayInfo);
+                    Commemoration1 trial1 = new Commemoration1(parts3[parts3.length - 2], parts3[parts3.length - 1], Analyse.getDayInfo());
                     if (SaintLink == null) {
                         System.out.println(parts3[parts3.length - 1]);
 
-                        SaintLink = new DoSaint1(trial1, Analyse.dayInfo);
+                        SaintLink = new DoSaint1(trial1, Analyse.getDayInfo());
                     } else {
                         SaintLink.refresh(trial1);
                     }
@@ -407,15 +434,15 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
      
 
 
-        String AMC = (String) Phrases.Phrases.get("AMC");
-        String AML = (String) Phrases.Phrases.get("AML");
+        String AMC = (String) Phrases.getPhrases().get("AMC");
+        String AML = (String) Phrases.getPhrases().get("AML");
         String Format = "";
         if (AMC.equals("1")) {
-            PCalendar checking = new PCalendar(today, PCalendar.julian, Analyse.dayInfo);
-            Format = (String) Phrases.Phrases.get("AM");
-            if (Analyse.dayInfo.get("Ideographic").equals("1"))
+            PCalendar checking = new PCalendar(today, PCalendar.julian, Analyse.getDayInfo());
+            Format = (String) Phrases.getPhrases().get("AM");
+            if (Analyse.getDayInfo().get("Ideographic").equals("1"))
                 {
-                    RuleBasedNumber convertN=new RuleBasedNumber(Analyse.dayInfo);
+                    RuleBasedNumber convertN=new RuleBasedNumber(Analyse.getDayInfo());
                     
                     Format = Format.replace("^YYAM", convertN.getFormattedNumber(Long.parseLong(Integer.toString((int) checking.getAM()))));
 
@@ -427,12 +454,12 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         }
         //System.out.println("AML = " + AML.equals("B"));
         if (AML.equals("B")) {
-            output += "<B>" + Format + today.toString(Analyse.dayInfo) + "</B><BR>";
+            output += "<B>" + Format + today.toString(Analyse.getDayInfo()) + "</B><BR>";
         } else {
-            output += "<B>" + today.toString(Analyse.dayInfo) + Format + "</B><BR>";
+            output += "<B>" + today.toString(Analyse.getDayInfo()) + Format + "</B><BR>";
         }
 
-        output += MainNames[0] + Colon + (String) today.getGregorianDateS(Analyse.dayInfo) + "<BR>";
+        output += MainNames[0] + Colon + (String) today.getGregorianDateS(Analyse.getDayInfo()) + "<BR>";
         String filename = "";
         int lineNumber = 0;
         int dow = today.getDayOfWeek();
@@ -447,21 +474,21 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         IconNames = new Vector();
 
         // PUT THE RELEVANT DATA IN THE HASH
-        Analyse.dayInfo.put("dow", dow);	// THE DAY'S DAY OF WEEK
-        Analyse.dayInfo.put("doy", doy);	// THE DAY'S DOY (see JDate.java for specification)
+        Analyse.getDayInfo().put("dow", dow);	// THE DAY'S DAY OF WEEK
+        Analyse.getDayInfo().put("doy", doy);	// THE DAY'S DOY (see JDate.java for specification)
         //System.out.println(doy);
-        Analyse.dayInfo.put("nday", nday);	// THE NUMBER OF DAYS BEFORE (-) OR AFTER (+) THIS YEAR'S PASCHA
-        Analyse.dayInfo.put("ndayP", ndayP);	// THE NUMBER OF DAYS AFTER LAST YEAR'S PASCHA
+        Analyse.getDayInfo().put("nday", nday);	// THE NUMBER OF DAYS BEFORE (-) OR AFTER (+) THIS YEAR'S PASCHA
+        Analyse.getDayInfo().put("ndayP", ndayP);	// THE NUMBER OF DAYS AFTER LAST YEAR'S PASCHA
         //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
-        Analyse.dayInfo.put("ndayF", ndayF);	// THE NUMBER OF DAYS TO NEXT YEAR'S PASCHA (CAN BE +ve or -ve).
+        Analyse.getDayInfo().put("ndayF", ndayF);	// THE NUMBER OF DAYS TO NEXT YEAR'S PASCHA (CAN BE +ve or -ve).
         //ADDING THE TYPE OF GOSPEL READINGS TO BE FOLLOWED
-        Analyse.dayInfo.put("GS", GospelSelector.getGValue());
+        Analyse.getDayInfo().put("GS", GospelSelector.getGValue());
         
         //INTERFACE LANGUAGE
-        Analyse.dayInfo.put("LS", LanguageLocation.getLValue());
-        Analyse.dayInfo.put("Year", today.getYear());
-        Analyse.dayInfo.put("dRank", 0); //The default rank for a day is 0. Y.S. 2010/02/01 n.s.
-        Analyse.dayInfo.put("Ideographic", Ideographic);
+        Analyse.getDayInfo().put("LS", LanguageLocation.getLValue());
+        Analyse.getDayInfo().put("Year", today.getYear());
+        Analyse.getDayInfo().put("dRank", 0); //The default rank for a day is 0. Y.S. 2010/02/01 n.s.
+        Analyse.getDayInfo().put("Ideographic", Ideographic);
 
         readings = new OrderedHashtable();
         fastInfo = new Stack();
@@ -472,15 +499,15 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         ReadScriptures[2] = new OrderedHashtable();		//CONTAINS THE FLOATER READINGS.
          */
         //TESTING THE LANGUAGE PACKS
-        String rough = (String) Phrases.Phrases.get("1");
+        String rough = (String) Phrases.getPhrases().get("1");
         String[] final1 = rough.split(",");
         //System.out.println(output);
 
 
 
         // GET THE DAY'S ASTRONOMICAL DATA
-        Sunrise sunrise = new Sunrise(Analyse.dayInfo);
-        String[] sunriseSunset = sunrise.getSunriseSunsetString(today, (String) ConfigurationFiles.Defaults.get("Longitude"), (String) ConfigurationFiles.Defaults.get("Latitude"), (String) ConfigurationFiles.Defaults.get("TimeZone"));
+        Sunrise sunrise = new Sunrise(Analyse.getDayInfo());
+        String[] sunriseSunset = sunrise.getSunriseSunsetString(today, (String) ConfigurationFiles.getDefaults().get("Longitude"), (String) ConfigurationFiles.getDefaults().get("Latitude"), (String) ConfigurationFiles.getDefaults().get("TimeZone"));
         output += "<BR>" + MainNames[1] + sunriseSunset[0];
         output += "<BR>" + MainNames[2] + sunriseSunset[1];
         output += "<BR><BR>"; //<B>"+MainNames[3]+"</B>"+Colon+ Paschalion.getLunarPhaseString(today) +"<BR><BR>";
@@ -488,7 +515,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         //adding the civil Lunar phase by request of Mitrophan
         Astronomy sky = new Astronomy();
 
-        output += MainNames[3] + sky.lunarphase(today.getJulianDay(), Analyse.dayInfo);
+        output += MainNames[3] + sky.lunarphase(today.getJulianDay(), Analyse.getDayInfo());
         output += "<BR><BR>";
 
         if (nday >= -70 && nday < 0) {
@@ -507,8 +534,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
         filename += lineNumber >= 10 ? lineNumber : "0" + lineNumber; // CLEANED UP
         //System.out.println("++++++++++++++++++++++\n"+filename+"\n+++++++++++++++++++\n");
-        //System.out.println("File name in Main: " + Analyse.dayInfo.get("LS").toString());
-        Day PaschalCycle = new Day(filename, Analyse.dayInfo);
+        //System.out.println("File name in Main: " + Analyse.getDayInfo().get("LS").toString());
+        Day PaschalCycle = new Day(filename, Analyse.getDayInfo());
 
         // READ THE PENTECOSTARION / TRIODION INFORMATION
 
@@ -532,11 +559,11 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         filename += m < 10 ? "0" + m : "" + m;  // CLEANED UP
         filename += d < 10 ? "/0" + d : "/" + d; // CLEANED UP
         //filename += ".xml";
-        Day SolarCycle = new Day(filename, Analyse.dayInfo);
-        Analyse.dayInfo.put("dRank", Math.max(SolarCycle.getDayRank(), PaschalCycle.getDayRank()));
+        Day SolarCycle = new Day(filename, Analyse.getDayInfo());
+        Analyse.getDayInfo().put("dRank", Math.max(SolarCycle.getDayRank(), PaschalCycle.getDayRank()));
         output += PaschalCycle.getCommsHyper() + CSep;
         output += SolarCycle.getCommsHyper();
-        Analyse.dayInfo.put("Tone", PaschalCycle.getTone());
+        Analyse.getDayInfo().put("Tone", PaschalCycle.getTone());
 
 
         String collection = "";
@@ -545,7 +572,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         //System.out.println("Length of Ordinary Readings="+PaschalReadings.length);
 
         OrderedHashtable[] MenaionReadings = SolarCycle.getReadings();
-        Bible ShortForm = new Bible(Analyse.dayInfo);
+        Bible ShortForm = new Bible(Analyse.getDayInfo());
         //System.out.println("First Paschal Reading is :"+PaschalReadings[0].get("Readings"));
         //System.out.println("First Menologion Reading is :"+MenaionReadings[0].get("Readings"));
         OrderedHashtable CombinedReadings = new OrderedHashtable();
@@ -666,8 +693,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                     readingsA.put("Tag", Tag);
                     //System.out.println(Tag);
                     //System.out.println("Hello World");
-                    DivineLiturgy1 trial1 = new DivineLiturgy1(Analyse.dayInfo);
-                    String type1 = (String) Phrases.Phrases.get("apostol");
+                    DivineLiturgy1 trial1 = new DivineLiturgy1(Analyse.getDayInfo());
+                    String type1 = (String) Phrases.getPhrases().get("apostol");
                     output += "<B>" + type1 + "</B>" + Colon;
                     //System.out.println(readingsA);
                     output += trial1.Readings(readingsA, "apostol", today);
@@ -677,8 +704,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                     readingsA.put("Readings", gospel);
                     readingsA.put("Rank", Rank);
                     readingsA.put("Tag", Tag);
-                    String type1 = (String) Phrases.Phrases.get("gospel");
-                    DivineLiturgy1 trial1 = new DivineLiturgy1(Analyse.dayInfo);
+                    String type1 = (String) Phrases.getPhrases().get("gospel");
+                    DivineLiturgy1 trial1 = new DivineLiturgy1(Analyse.getDayInfo());
                     output += "<B>" + type1 + "</B>" + Colon;
                     output += trial1.Readings(readingsA, "gospel", today);
                 }
@@ -747,8 +774,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                 readingsA.put("Readings", matins2);
                 readingsA.put("Rank", Rank);
                 readingsA.put("Tag", Tag);
-                Matins trial1 = new Matins(Analyse.dayInfo);
-                String type1 = (String) Phrases.Phrases.get("matins");
+                Matins trial1 = new Matins(Analyse.getDayInfo());
+                String type1 = (String) Phrases.getPhrases().get("matins");
                 output += "<B>" + type1 + "</B>" + Colon;
                 //System.out.println(readingsA);
                 output += trial1.Readings(readingsA, today);
@@ -763,7 +790,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
             } else {
                 output += RSep;
             }
-            String type1 = (String) Phrases.Phrases.get(element1.toLowerCase());
+            String type1 = (String) Phrases.getPhrases().get(element1.toLowerCase());
             output += "<B>" + type1 + "</B>" + Colon;
             for (int i = 0; i < Readings.size(); i++) {
                 OrderedHashtable Reading = (OrderedHashtable) Readings.get(i);
@@ -815,8 +842,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         }
 
         //THIS IS NOW REPLACED BY THE NEW PROGRAMME, THAT SIMPLIFIES THE DETERMINATION OF THE FAST.
-        String[] FastNames = Phrases.obtainValues((String) Phrases.Phrases.get("Fasts"));
-        Fasting getfast = new Fasting(Analyse.dayInfo);
+        String[] FastNames = Phrases.obtainValues((String) Phrases.getPhrases().get("Fasts"));
+        Fasting getfast = new Fasting(Analyse.getDayInfo());
         output += "<BR><BR>" + getfast.FastRules() + "<BR><BR>";
         //output+="</FONT>";
         output += "</body>";

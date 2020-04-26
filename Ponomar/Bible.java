@@ -4,6 +4,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.event.*;
+
+import Ponomar.internationalization.LanguagePack;
+import Ponomar.panels.PrintableTextPane;
+import Ponomar.parsing.DocHandler;
+import Ponomar.parsing.QDParser;
+import Ponomar.utility.Helpers;
+import Ponomar.utility.OrderedHashtable;
+import Ponomar.utility.StringOp;
+
 import java.io.*;
 import java.util.*;
 import java.net.URL;
@@ -32,7 +41,7 @@ it comes with ABSOLUTELY NO WARRANTY, without even the implied warranties of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for details.
  ****************************************************************************************/
-class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionListener {
+public class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionListener {
 
     private final static String bmlfile = "Ponomar/languages/xml/bible.xml"; // SOURCE FILE
     private final static String bibpath = "Ponomar/languages/";
@@ -91,13 +100,13 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     // CONSTRUCTOR
     protected Bible(String curbook, String curpassage, OrderedHashtable dayInfo) {
         
-        Analyse.dayInfo = dayInfo;
+        Analyse.setDayInfo(dayInfo);
         Text = new LanguagePack(dayInfo);
-        captions = Text.obtainValues((String) Text.Phrases.get("BibleW"));
+        captions = Text.obtainValues((String) Text.getPhrases().get("BibleW"));
         setTitle(captions[7]);
         
-        LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
-        curversion = getLang.Phrases.get("BibleV").toString();
+        LanguagePack getLang = new LanguagePack(Analyse.getDayInfo());
+        curversion = getLang.getPhrases().get("BibleV").toString();
         
 
         // FIRST, PARSE THE BIBLE.XML FILE TO OBTAIN ALL THE NECESSARY INFORMATION
@@ -183,7 +192,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                 button.setIcon(new ImageIcon(imgURL, captions[bnum]));
                 button.setToolTipText(captions[bnum]);
                 }else{
-                    String part2=(String)Text.Phrases.get("BibleW2");
+                    String part2=(String)Text.getPhrases().get("BibleW2");
                     button.setIcon(new ImageIcon(imgURL,part2));
                     button.setToolTipText(part2);
                 }
@@ -247,7 +256,7 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         add(splitter);
 
         //Adding a Menu Bar
-        MenuFiles demo = new MenuFiles(Analyse.dayInfo.clone());
+        MenuFiles demo = new MenuFiles(Analyse.getDayInfo().clone());
         JMenuBar MenuBar = new JMenuBar();
         MenuBar.add(demo.createFileMenu(this));
         MenuBar.add(demo.createHelpMenu(this));
@@ -262,10 +271,10 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 
     }
 
-    protected Bible(OrderedHashtable dayInfo) {
-        Analyse.dayInfo = dayInfo;
+    public Bible(OrderedHashtable dayInfo) {
+        Analyse.setDayInfo(dayInfo);
         Text = new LanguagePack(dayInfo);
-        captions = Text.obtainValues((String) Text.Phrases.get("BibleW"));
+        captions = Text.obtainValues((String) Text.getPhrases().get("BibleW"));
         //new Bible("Gen", "1:1-13"); <-- removed by Y.S. (not sure why, A.A.)
     }
 
@@ -437,10 +446,10 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     }
 
     public void actionPerformed(ActionEvent e) {
-        Helpers helper = new Helpers(Analyse.dayInfo);
+        Helpers helper = new Helpers(Analyse.getDayInfo());
         String name = e.getActionCommand();
-        String[] FileNames = Text.obtainValues((String) Text.Phrases.get("File"));
-        String[] HelpNames = Text.obtainValues((String) Text.Phrases.get("Help"));
+        String[] FileNames = Text.obtainValues((String) Text.getPhrases().get("File"));
+        String[] HelpNames = Text.obtainValues((String) Text.getPhrases().get("Help"));
         //ALLOWS A MULTILINGUAL PROPER VERSION
         if (name.equals("comboBoxChanged")) {
             //curversion = versions2.get(findId.get(versionsBox.getSelectedIndex()).toString()).toString();
@@ -471,8 +480,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 
         } else if (name.equals(HelpNames[2])) {
             //new About();
-            Helpers orient = new Helpers(Analyse.dayInfo);
-            orient.applyOrientation(new About(Analyse.dayInfo), (ComponentOrientation) Analyse.dayInfo.get("Orient"));
+            Helpers orient = new Helpers(Analyse.getDayInfo());
+            orient.applyOrientation(new About(Analyse.getDayInfo()), (ComponentOrientation) Analyse.getDayInfo().get("Orient"));
 
         } else if (name.equals(HelpNames[0])) {
             //HELP FILES
@@ -632,8 +641,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
     public String[] getText(String book, String passage, boolean RedStuff) {
         //SELECT THE CURRENT GENERAL BIBLE
         
-        LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
-        curversion = getLang.Phrases.get("BibleV").toString();
+        LanguagePack getLang = new LanguagePack(Analyse.getDayInfo());
+        curversion = getLang.getPhrases().get("BibleV").toString();
         try {
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));
             QDParser.parse(this, frf);
@@ -747,8 +756,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         //INITIALISE TO THE DEFAULT BIBLE FOR THE GIVEN LANGUAGE
         //ADDED Y.S. TO ALLOW FOR MULTILINGUAL AND ALL BIBLE READING
         
-        LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
-        curversion = getLang.Phrases.get("BibleV").toString();
+        LanguagePack getLang = new LanguagePack(Analyse.getDayInfo());
+        curversion = getLang.getPhrases().get("BibleV").toString();
         //System.out.println("Bible: " + curversion);
 
         try {
@@ -837,8 +846,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
        {
            return "";
        }
-        LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
-        curversion = getLang.Phrases.get("BibleV").toString();
+        LanguagePack getLang = new LanguagePack(Analyse.getDayInfo());
+        curversion = getLang.getPhrases().get("BibleV").toString();
 
         try {
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));
@@ -1010,8 +1019,8 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         //INITIALISE TO THE DEFAULT BIBLE FOR THE GIVEN LANGUAGE
         //ADDED Y.S. TO ALLOW FOR MULTILINGUAL AND ALL BIBLE READING
        
-        LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
-        curversion = getLang.Phrases.get("BibleV").toString();
+        LanguagePack getLang = new LanguagePack(Analyse.getDayInfo());
+        curversion = getLang.getPhrases().get("BibleV").toString();
 
         try {
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));

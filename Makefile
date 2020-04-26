@@ -5,44 +5,44 @@ JC = javac
 	$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-	Ponomar/OrderedHashtable.java \
-	Ponomar/DocHandler.java \
-	Ponomar/QDParser.java \
-	Ponomar/Reporter.java \
-	Ponomar/parseConvert.java \
-	Ponomar/StringOp.java \
-	Ponomar/LanguagePack.java \
-	Ponomar/JDate.java \
-	Ponomar/Paschalion.java \
+	Ponomar/utility/OrderedHashtable.java \
+	Ponomar/parsing/DocHandler.java \
+	Ponomar/parsing/QDParser.java \
+	Ponomar/parsing/Reporter.java \
+	Ponomar/parsing/parseConvert.java \
+	Ponomar/utility/StringOp.java \
+	Ponomar/internationalization/LanguagePack.java \
+	Ponomar/calendar/JDate.java \
+	Ponomar/astronomy/Paschalion.java \
 	Ponomar/DoSaint1.java \
-	Ponomar/Sunrise.java \
-	Ponomar/PrintableTextPane.java \
+	Ponomar/astronomy/Sunrise.java \
+	Ponomar/panels/PrintableTextPane.java \
 	Ponomar/ConfigurationFiles.java \
-	Ponomar/GospelSelector.java \
-	Ponomar/Helpers.java \
-	Ponomar/JDaySelector.java \
-	Ponomar/JCalendar.java \
-	Ponomar/LanguageSelector.java \
-	Ponomar/Languagizer.java \
+	Ponomar/panels/GospelSelector.java \
+	Ponomar/utility/Helpers.java \
+	Ponomar/calendar/JDaySelector.java \
+	Ponomar/calendar/JCalendar.java \
+	Ponomar/internationalization/LanguageSelector.java \
+	Ponomar/internationalization/Languagizer.java \
 	Ponomar/MenuFiles.java \
 	Ponomar/About.java \
-	Ponomar/Commemoration.java \
-	Ponomar/ReadText.java \
+	Ponomar/parsing/Commemoration.java \
+	Ponomar/parsing/ReadText.java \
 	Ponomar/Bible.java \
-	Ponomar/Database.java \
-	Ponomar/Days.java \
-	Ponomar/Fasting.java \
-	Ponomar/DivineLiturgy1.java \
-	Ponomar/Primes.java \
-	Ponomar/PrimeSelector.java \
-	Ponomar/RoyalHours.java \
-	Ponomar/Service.java \
-	Ponomar/ServiceInfo.java \
-	Ponomar/UsualBeginning.java \
-	Ponomar/ThirdHour.java \
-	Ponomar/SixthHour.java \
-	Ponomar/IconDisplay.java \
-	Ponomar/NinthHour.java \
+	Ponomar/parsing/Database.java \
+	Ponomar/parsing/Days.java \
+	Ponomar/parsing/Fasting.java \
+	Ponomar/readings/DivineLiturgy1.java \
+	Ponomar/services/Primes.java \
+	Ponomar/panels/PrimeSelector.java \
+	Ponomar/services/RoyalHours.java \
+	Ponomar/parsing/Service.java \
+	Ponomar/parsing/ServiceInfo.java \
+	Ponomar/parsing/UsualBeginning.java \
+	Ponomar/services/ThirdHour.java \
+	Ponomar/services/SixthHour.java \
+	Ponomar/panels/IconDisplay.java \
+	Ponomar/services/NinthHour.java \
 	Ponomar/Main.java 
 
 default: classes
@@ -55,5 +55,6 @@ test:
 	
 clean:
 	$(RM) Ponomar/*.class
+	$(RM) Ponomar/*/*.class
 
 

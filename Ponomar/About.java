@@ -3,6 +3,12 @@ package Ponomar;
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.event.*;
+
+import Ponomar.internationalization.LanguagePack;
+import Ponomar.utility.Helpers;
+import Ponomar.utility.OrderedHashtable;
+import Ponomar.utility.StringOp;
+
 import java.io.*;
 import java.util.*;
 
@@ -25,21 +31,21 @@ yuri (dot) shardt (at) gmail.com
  THE SOFTWARE.
 
 **********************************************************************/
-class About extends JFrame
+public class About extends JFrame
 {
 	private LanguagePack Ponomar;//=new LanguagePack();
 	private String value;//=(String)Ponomar.Phrases.get("0");
         private StringOp Analyse=new StringOp();
-	protected About(OrderedHashtable dayInfo)
+	public About(OrderedHashtable dayInfo)
 	{
-            Analyse.dayInfo=dayInfo;
+            Analyse.setDayInfo(dayInfo);
             Ponomar=new LanguagePack(dayInfo);
             
-	 value=(String)Ponomar.Phrases.get("0");
+	 value=(String)Ponomar.getPhrases().get("0");
 		//ALLOWS A DIFFERENT TITLE TO BE SPECIFIED BY THE USER (CYRILLIC FOR THE CYRILLIC VERSIONS)
 		setTitle(value);
 		LanguagePack Text=new LanguagePack(dayInfo);
-		String [] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
+		String [] AboutNames=Text.obtainValues((String)Text.getPhrases().get("About"));
 		/*String[] Authors=Text.obtainValues((String) Text.Phrases.get("Authors"));
                 String Year=Text.Phrases.get("Year").toString();
                 String Comma=Text.Phrases.get("Comma").toString();
@@ -56,15 +62,15 @@ class About extends JFrame
                 {
                     AuthorList=AuthorList+And+Authors[Authors.length-1];
                 }*/
-                Helpers About1=new Helpers(Analyse.dayInfo);
+                Helpers About1=new Helpers(Analyse.getDayInfo());
 		JPanel contentPane=new JPanel(new BorderLayout());
 		contentPane.setOpaque(true);
 		JTextPane output=new JTextPane();
 		output.setEditable(false);
 		output.setContentType("text/html");
-                String DisplayFont= Analyse.dayInfo.get("FontFaceM").toString();
-                String DisplaySize= Analyse.dayInfo.get("FontSizeM").toString();
-		output.setText("<body style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\"><B><h1 style=\"text-align: center;\">"+(String)Ponomar.Phrases.get("0")+"</h1></B><p style=\"text-align: center;\">"+AboutNames[0]+" "+(String) ConfigurationFiles.Defaults.get("Version")+"</p><p>"+AboutNames[1]+"</p><p>"+AboutNames[2]+"</p><p>"+About1.getCopyright()+"<BR>" + AboutNames[5] + "<BR>");
+                String DisplayFont= Analyse.getDayInfo().get("FontFaceM").toString();
+                String DisplaySize= Analyse.getDayInfo().get("FontSizeM").toString();
+		output.setText("<body style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\"><B><h1 style=\"text-align: center;\">"+(String)Ponomar.getPhrases().get("0")+"</h1></B><p style=\"text-align: center;\">"+AboutNames[0]+" "+(String) ConfigurationFiles.getDefaults().get("Version")+"</p><p>"+AboutNames[1]+"</p><p>"+AboutNames[2]+"</p><p>"+About1.getCopyright()+"<BR>" + AboutNames[5] + "<BR>");
 		output.setCaretPosition(0);
 		JScrollPane scrollPane = new JScrollPane(output);
 		contentPane.add(scrollPane,BorderLayout.CENTER);

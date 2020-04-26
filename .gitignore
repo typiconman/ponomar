@@ -160,6 +160,8 @@ TSWLatexianTemp*
 .pydevproject
 .DS_Store
 .settings
+.directory
+
 ponomar.tex
 ponomar.log
 
@@ -167,3 +169,4 @@ Makefile.old
 
 # Java stuff
 *.class
+.classpath

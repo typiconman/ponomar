@@ -12,6 +12,16 @@ import javax.swing.filechooser.FileFilter;
 import javax.swing.text.*;
 import javax.swing.text.html.HTMLDocument;
 
+import Ponomar.internationalization.LanguagePack;
+import Ponomar.panels.IconDisplay;
+import Ponomar.panels.PrintableTextPane;
+import Ponomar.parsing.Commemoration1;
+import Ponomar.parsing.DocHandler;
+import Ponomar.parsing.QDParser;
+import Ponomar.utility.Helpers;
+import Ponomar.utility.OrderedHashtable;
+import Ponomar.utility.StringOp;
+
 /***********************************************************************
 THIS MODULE CREATES THE WINDOW TO DISPLAY THE SAINT INFORMATION.
 
@@ -87,18 +97,18 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
 
     public DoSaint1(Commemoration1 SaintInfo, OrderedHashtable dayInfo) {
         //Get the Podobni
-        Analyse.dayInfo=dayInfo;
+        Analyse.setDayInfo(dayInfo);
         Text = new LanguagePack(dayInfo);
         //PrimesNames = Text.obtainValues((String) Text.Phrases.get("Primes"));
-    LanguageNames = Text.obtainValues((String) Text.Phrases.get("LanguageMenu"));
+    LanguageNames = Text.obtainValues((String) Text.getPhrases().get("LanguageMenu"));
 
-    FileNames = Text.obtainValues((String) Text.Phrases.get("File"));
-    HelpNames = Text.obtainValues((String) Text.Phrases.get("Help"));
-    helper=new Helpers(Analyse.dayInfo);
+    FileNames = Text.obtainValues((String) Text.getPhrases().get("File"));
+    HelpNames = Text.obtainValues((String) Text.getPhrases().get("Help"));
+    helper=new Helpers(Analyse.getDayInfo());
 
         Podobni = new OrderedHashtable();
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.dayInfo.get("LS").toString(),"xml/Commands/Podobni.xml")), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.getDayInfo().get("LS").toString(),"xml/Commands/Podobni.xml")), "UTF8"));
             QDParser.parse(this, frf);
         } catch (Exception Primes) {
             Primes.printStackTrace();
@@ -166,17 +176,17 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
          }
 
 
-        Text = new LanguagePack(Analyse.dayInfo);
-        String[] toneNumbers = Text.obtainValues((String) Text.Phrases.get("Tones"));
-        String[] MainNames = Text.obtainValues((String) Text.Phrases.get("Main"));
-        String[] SaintInfo = Text.obtainValues((String) Text.Phrases.get("LivesW"));
+        Text = new LanguagePack(Analyse.getDayInfo());
+        String[] toneNumbers = Text.obtainValues((String) Text.getPhrases().get("Tones"));
+        String[] MainNames = Text.obtainValues((String) Text.getPhrases().get("Main"));
+        String[] SaintInfo = Text.obtainValues((String) Text.getPhrases().get("LivesW"));
         String textOut = "";
         
         if (name.equals("")) {
             textOut = SaintInfo[6];
         } else {
-            String DisplayFontM = (String) Text.Phrases.get("FontFaceM");
-            String DisplaySizeM = (String) Text.Phrases.get("FontSizeM");
+            String DisplayFontM = (String) Text.getPhrases().get("FontFaceM");
+            String DisplaySizeM = (String) Text.getPhrases().get("FontSizeM");
             Font value1 = (Font) UIManager.get("Menu.font");
             if (DisplaySizeM == null || DisplaySizeM.equals("")) {
                 DisplaySizeM = Integer.toString(value1.getSize());
@@ -192,8 +202,8 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
             }
 
             //Get the language settings
-            String DisplayFont = (String) Text.Phrases.get("FontFaceL");
-            String DisplaySize = (String) Text.Phrases.get("FontSizeL");
+            String DisplayFont = (String) Text.getPhrases().get("FontFaceL");
+            String DisplaySize = (String) Text.getPhrases().get("FontSizeL");
             
             if (DisplaySize == null || DisplaySize.equals("")) {
                 DisplaySize = Integer.toString(value1.getSize());
@@ -314,7 +324,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         //Other information can go here!
         //String textOut=header+image+rest;
         
-        frames = new JFrame((String) Text.Phrases.get("0") + (String) Text.Phrases.get("Colon") + name2);
+        frames = new JFrame((String) Text.getPhrases().get("0") + (String) Text.getPhrases().get("Colon") + name2);
         
         //frames.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel left=new JPanel();
@@ -340,7 +350,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
 
         JScrollPane scrollPane = new JScrollPane(output);
         JMenuBar MenuBar = new JMenuBar();
-        MenuFiles demo = new MenuFiles(Analyse.dayInfo);
+        MenuFiles demo = new MenuFiles(Analyse.getDayInfo());
         //PrimeSelector trial=new PrimeSelector();
         MenuBar.add(demo.createFileMenu(this));
         //MenuBar.add(trial.createPrimeMenu());
@@ -370,7 +380,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
                 iconImages=(String[])ImageList.toArray(new String[ImageList.size()]);
                 iconNames=(String[])NamesList.toArray(new String[NamesList.size()]);
         System.out.println("Icon Length is: " + iconNames.length);
-        IconDisplay icons=new IconDisplay(iconImages,iconNames,Analyse.dayInfo);
+        IconDisplay icons=new IconDisplay(iconImages,iconNames,Analyse.getDayInfo());
         left.add(new JPanel(),BorderLayout.NORTH);
         left.add(icons,BorderLayout.CENTER);
         left.add(new JPanel(),BorderLayout.SOUTH);
@@ -378,9 +388,9 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
   //      textOut+=icons;
     //    output.setText(textOut);
 
-        Helpers orient = new Helpers(Analyse.dayInfo);
+        Helpers orient = new Helpers(Analyse.getDayInfo());
 
-        orient.applyOrientation(frames,(ComponentOrientation)Analyse.dayInfo.get("Orient"));
+        orient.applyOrientation(frames,(ComponentOrientation)Analyse.getDayInfo().get("Orient"));
         frames.pack();
         frames.setSize(800, 700);
         frames.setVisible(true);
@@ -401,9 +411,9 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
 					bible.update(parts2[0], parts2[1]);
 					bible.show();
 				} catch (NullPointerException npe) {
-					bible = new Bible(parts2[0], parts2[1],Analyse.dayInfo);
-                                        Helpers orient=new Helpers(Analyse.dayInfo);
-                orient.applyOrientation(bible,(ComponentOrientation)Analyse.dayInfo.get("Orient"));
+					bible = new Bible(parts2[0], parts2[1],Analyse.getDayInfo());
+                                        Helpers orient=new Helpers(Analyse.getDayInfo());
+                orient.applyOrientation(bible,(ComponentOrientation)Analyse.getDayInfo().get("Orient"));
 				}
 			}
                         else
@@ -650,7 +660,7 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
     public String readText(String filename) {
         try {
             text = new String();
-            BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.dayInfo.get("LS").toString(),filename)), "UTF8"));
+            BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.getDayInfo().get("LS").toString(),filename)), "UTF8"));
             QDParser.parse(this, fr);
             if (text.length() == 0) {
                 text = null;
@@ -670,8 +680,8 @@ public class DoSaint1 implements DocHandler, ActionListener, ItemListener, Prope
         JMenuItem source = (JMenuItem) (e.getSource());
         String name1 = source.getText();
         if (name1.equals(HelpNames[2])) {
-            Helpers orient = new Helpers(Analyse.dayInfo);
-            orient.applyOrientation(new About(Analyse.dayInfo), (ComponentOrientation) Analyse.dayInfo.get("Orient"));
+            Helpers orient = new Helpers(Analyse.getDayInfo());
+            orient.applyOrientation(new About(Analyse.getDayInfo()), (ComponentOrientation) Analyse.getDayInfo().get("Orient"));
         }
         if (name1.equals(HelpNames[0])) {
             //LAUNCH THE HELP FILE

@@ -1,6 +1,11 @@
 package Ponomar;
 
 import javax.swing.*;
+
+import Ponomar.parsing.DocHandler;
+import Ponomar.parsing.QDParser;
+import Ponomar.utility.OrderedHashtable;
+
 import java.beans.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -31,7 +36,7 @@ yuri.shardt (at) gmail.com
 
 public class ConfigurationFiles implements DocHandler
 {
-	protected static OrderedHashtable Defaults;		//STORES THE START-UP VALUES FOR PONOMAR
+	private static OrderedHashtable Defaults;		//STORES THE START-UP VALUES FOR PONOMAR
 	
 	//THIS ALLOWS THE PONOMAR CONFIGURAITON FILE TO BE MAINTAINED, UPDATED, AND READ.
 	public ConfigurationFiles()
@@ -70,10 +75,10 @@ public class ConfigurationFiles implements DocHandler
 			out.write("<CONFIGURATION>");
 			out.newLine();
 			output="<DEFAULT ";
-			for(Enumeration e=Defaults.keys(); e.hasMoreElements();)
+			for(Enumeration e=getDefaults().keys(); e.hasMoreElements();)
 			{
 				String key = (String) e.nextElement();
-				String value=(String) Defaults.get(key);
+				String value=(String) getDefaults().get(key);
 				output+=key + " = \"" + value + "\" ";
 			}
 			output+=" />";
@@ -107,7 +112,7 @@ public class ConfigurationFiles implements DocHandler
 				
 				if(value != null && entry != null)
 				{
-					Defaults.put(entry,value);
+					getDefaults().put(entry,value);
 				}
 			}
 			
@@ -118,4 +123,12 @@ public class ConfigurationFiles implements DocHandler
 	public void endElement(String elem) { }
 
 	public void text(String text) { }
+
+	public static OrderedHashtable getDefaults() {
+		return Defaults;
+	}
+
+	public static void setDefaults(OrderedHashtable defaults) {
+		Defaults = defaults;
+	}
 }
