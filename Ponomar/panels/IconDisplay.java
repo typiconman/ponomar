@@ -39,19 +39,19 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
         private JPanel caption;
         private String pathImage="Ponomar/images/";
 	
-        private int Number=0;
-        private String[] Images;
-        private String[] Names;
-        private JTextPane text;
+        private int number=0;
+        private String[] images;
+        private String[] names;
+        private JTextPane textPane;
         private static JFrame frame;
         private JButton previous;
         private JButton next;
-        private String Face;
-        private String Size;
-        private StringOp Analyse = new StringOp();
+        private String face;
+        private String size;
+        private StringOp analyse = new StringOp();
         //private Font CurrentFont = DefaultFont;
         
-	private LanguagePack Text;//=new LanguagePack();
+	private LanguagePack text;//=new LanguagePack();
 	private String[] months;// = Text.obtainValues((String)Text.Phrases.get("1"));
         private String[] captions;// = Text.obtainValues((String) Text.Phrases.get("IconW"));
         //private static JFrame frame;
@@ -62,28 +62,28 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 		//this(null);
 	}
         
-	public IconDisplay(String[] ImagesF, String[] NamesF,OrderedHashtable dayInfo)
+	public IconDisplay(String[] imagesF, String[] namesF, OrderedHashtable dayInfo)
 	{
 		//super();
-            Analyse.setDayInfo(dayInfo);
-             Text=new LanguagePack(dayInfo);
-	 months = Text.obtainValues((String)Text.getPhrases().get("1"));
-         captions = Text.obtainValues((String) Text.getPhrases().get("IconW"));
+            analyse.setDayInfo(dayInfo);
+             text=new LanguagePack(dayInfo);
+	 months = text.obtainValues((String)text.getPhrases().get("1"));
+         captions = text.obtainValues((String) text.getPhrases().get("IconW"));
                 
-                Images=ImagesF;
-                Names=NamesF;
+                images=imagesF;
+                names=namesF;
 		//setName("Icon Viewer");
 		setLayout(new BoxLayout(this,BoxLayout.PAGE_AXIS));
                 //System.out.println(Images.length);
 
-		if (Images.length<=0)
+		if (images.length<=0)
 		{
 			//date = new JDate();
-                    System.out.println(Images.length);
-                    Images=new String[1];
-                    Images[0]=Text.getPhrases().get("NoIcon").toString();//"Ponomar/languages/icons/Default1.jpg";
-                    Names=new String[1];
-                    Names[0]=captions[2];
+                    System.out.println(images.length);
+                    images=new String[1];
+                    images[0]=text.getPhrases().get("NoIcon").toString();//"Ponomar/languages/icons/Default1.jpg";
+                    names=new String[1];
+                    names[0]=captions[2];
                     //return;
 
 		}
@@ -105,7 +105,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
                 URL imgURL = IconDisplay.class.getResource(imgLocation);
                 //System.out.println(imgURL);
 
-                previous = new JButton();
+                previous = new JButton("<");
                 previous.setActionCommand("previous");
                 previous.setToolTipText(captions[0]);
                 previous.addActionListener(this);
@@ -122,15 +122,15 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 
 
                 //The textbox name
-                Face=Analyse.getDayInfo().get("FontFaceM").toString();
-                Size=Analyse.getDayInfo().get("FontSizeM").toString();
-                text = new JTextPane();
-                text.setEditable(false);
-                text.setContentType("text/html");
+                face=analyse.getDayInfo().get("FontFaceM").toString();
+                size=analyse.getDayInfo().get("FontSizeM").toString();
+                textPane = new JTextPane();
+                textPane.setEditable(false);
+                textPane.setContentType("text/html");
                 JTextPane testing =new JTextPane();
                 //text.setMaximumSize(new Dimension(1000,1500));
-                text.setFont(new Font(Face,Font.PLAIN,Integer.parseInt(Size)));
-                JScrollPane scroller =new JScrollPane(text);
+                textPane.setFont(new Font(face,Font.PLAIN,Integer.parseInt(size)));
+                JScrollPane scroller =new JScrollPane(textPane);
                 
 
 
@@ -140,11 +140,10 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
                 // instructionsText.setComponentOrientation(OrientText);
                 //text.setText(Names[Number]);
                 //text.setFont();
-                caption.add(text,BorderLayout.CENTER);
+                caption.add(textPane,BorderLayout.CENTER);
                 caption.setMaximumSize(new Dimension(1000,1000));
                 //if(Images.length>1){
-                    next = new JButton();
-                next = new JButton();
+                next = new JButton(">");
                 next.addActionListener(this);
                 next.setActionCommand("next");
                 next.setToolTipText(captions[1]);
@@ -161,7 +160,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
                
                add(iconImage,BorderLayout.NORTH);
                add(caption,BorderLayout.CENTER);
-               if (Images.length<2){
+               if (images.length<2){
             previous.setEnabled(false);
             next.setEnabled(false);
              }
@@ -173,40 +172,40 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
             String name=e.getActionCommand();
             //System.out.println(name);
             if(name.equals("next")){
-                Number+=1;
-                if (Number>=Images.length){
-                    Number=0;
+                number+=1;
+                if (number>=images.length){
+                    number=0;
                 }
 
             }else if(name.equals("previous")){
-                Number-=1;
-                if (Number<0){
-                    Number=Images.length-1;
+                number-=1;
+                if (number<0){
+                    number=images.length-1;
                 }
             }
             updateImages();
 	}
-        public void updateImages(String[] ImagesF, String[] NamesF){
+        public void updateImages(String[] imagesF, String[] namesF){
             //This changes the images available in the system
             //System.out.println(Names[0]);
-            Number=0;
-            Images=ImagesF;
-            Names=NamesF;
+            number=0;
+            images=imagesF;
+            names=namesF;
             //text=new JTextPane();
             //System.out.println(Names[0]);
             //System.out.println(NamesF[0]);
-            if (Images.length<=0)
+            if (images.length<=0)
 		{
 			//date = new JDate();
                     //System.out.println(Images.length);
-                    Images=new String[1];
-                    Images[0]=Text.getPhrases().get("NoIcon").toString();//"Default1";
-                    Names=new String[1];
-                    Names[0]=captions[2];
+                    images=new String[1];
+                    images[0]=text.getPhrases().get("NoIcon").toString();//"Default1";
+                    names=new String[1];
+                    names[0]=captions[2];
                     //return;
 
 		}
-            if (Images.length<2){
+            if (images.length<2){
             previous.setEnabled(false);
             next.setEnabled(false);
              }else
@@ -223,20 +222,20 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
         private void updateImages() {
             //iconImage=new JPanel();
             iconImage.removeAll();
-            String IconLocation=pathImage+"icons/";
+            String iconLocation=pathImage+"icons/";
             //System.out.println(IconLocation+Images[Number]+".jpg");
-             JLabel label =new JLabel();
-            if (Images[Number].contains(".jpg")){
-               label= new JLabel(new ImageIcon(Images[Number]));
+             JLabel label;
+            if (images[number].contains(".jpg")){
+               label= new JLabel(new ImageIcon(images[number]));
             }
             else
             {
-                label= new JLabel(new ImageIcon(IconLocation+Images[Number]+".jpg"));
+                label= new JLabel(new ImageIcon(iconLocation+images[number]+".jpg"));
             }
              BufferedImage image=null;
              try
              {
-             image = ImageIO.read(new File(Images[Number]));
+             image = ImageIO.read(new File(images[number]));
              }
              catch(IOException valueIO)
              {                
@@ -288,7 +287,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
              label.setIcon(new ImageIcon(scaledImage));
             label.setHorizontalAlignment(JLabel.CENTER);
             iconImage.add(label);
-            text.setText("<html><body style=\"font-family:"+Face+";font-size:"+Size+"pt;text-align: center;\">"+ Names[Number]+"</body></html>");
+            textPane.setText("<html><body style=\"font-family:"+face+";font-size:"+size+"pt;text-align: center;\">"+ names[number]+"</body></html>");
            //frame.pack();
            //System.out.Println(getAncestorOfClass(new JFrame(),iconImage));
            //repaint();
@@ -366,28 +365,28 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 		//return date.getYear();
 	}
 */
-        public void updateImagesFiled(String[] ImagesF, String[] NamesF){
+        public void updateImagesFiled(String[] imagesF, String[] namesF){
             //This changes the images available in the system
             //System.out.println(Names[0]);
-            Number=0;
-            Images=ImagesF;
-            Names=NamesF;
-            System.out.println(Images.length);
+            number=0;
+            images=imagesF;
+            names=namesF;
+            System.out.println(images.length);
             //text=new JTextPane();
             //System.out.println(Names[0]);
             //System.out.println(NamesF[0]);
-            if (Images.length<=0)
+            if (images.length<=0)
 		{
 			//date = new JDate();
                     //System.out.println(Images.length);
-                    Images=new String[1];
-                    Images[0]=Text.getPhrases().get("NoIcon").toString();//"Ponomar/languages/icons/Default1.jpg";
-                    Names=new String[1];
-                    Names[0]=captions[2];
+                    images=new String[1];
+                    images[0]=text.getPhrases().get("NoIcon").toString();//"Ponomar/languages/icons/Default1.jpg";
+                    names=new String[1];
+                    names[0]=captions[2];
                     //return;
 
 		}
-            if (Images.length<2){
+            if (images.length<2){
             previous.setEnabled(false);
             next.setEnabled(false);
              }else
@@ -404,12 +403,12 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
         private void updateImages2(){
             //iconImage=new JPanel();
             iconImage.removeAll();
-            String IconLocation=pathImage+"icons/";
+            String iconLocation=pathImage+"icons/";
             //System.out.println(IconLocation+Images[Number]+".jpg");
-            JLabel label= new JLabel(new ImageIcon(Images[Number]));
+            JLabel label= new JLabel(new ImageIcon(images[number]));
             label.setHorizontalAlignment(JLabel.CENTER);
             iconImage.add(label);
-           text.setText("<body style=\"font-family:"+Face+";font-size:"+Size+"pt\">"+ Names[Number]+"</body>");
+           textPane.setText("<body style=\"font-family:"+face+";font-size:"+size+"pt\">"+ names[number]+"</body>");
            //frame.pack();
            //System.out.Println(getAncestorOfClass(new JFrame(),iconImage));
            //repaint();

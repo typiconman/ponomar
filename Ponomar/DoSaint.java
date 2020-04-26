@@ -5,13 +5,10 @@ import java.beans.*;
 import java.awt.*;
 import java.util.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+
 import javax.swing.event.*;
 import java.awt.event.*;
-import java.beans.*;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.text.*;
-import javax.swing.text.html.HTMLDocument;
-
 import Ponomar.internationalization.LanguagePack;
 import Ponomar.panels.IconDisplay;
 import Ponomar.panels.PrintableTextPane;
@@ -65,22 +62,21 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
     private String name = "";
     private String copyright = ""; //Any additional information about the life.
-    private LanguagePack Text; //= new LanguagePack();
-    private OrderedHashtable Podobni;
+    private LanguagePack text; //= new LanguagePack();
+    private OrderedHashtable podobni;
     
     
-    private static String FileNameIn = "xml/Services/PRIMES1/";
-    private static String text;
+    private static String fileNameIn = "xml/Services/PRIMES1/";
     private static boolean read = false;
-    private static String Type;
+    private static String type;
     
     
-    private String[] LanguageNames;// = Text.obtainValues((String) Text.Phrases.get("LanguageMenu"));
+    private String[] languageNames;// = Text.obtainValues((String) Text.Phrases.get("LanguageMenu"));
     
     private JFrame frames;
-    private String[] FileNames;// = Text.obtainValues((String) Text.Phrases.get("File"));
-    private String[] HelpNames;// = Text.obtainValues((String) Text.Phrases.get("Help"));
-    String newline = "\n";
+    private String[] fileNames;// = Text.obtainValues((String) Text.Phrases.get("File"));
+    private String[] helpNames;// = Text.obtainValues((String) Text.Phrases.get("Help"));
+    static final String NEWLINE = "\n";
     private String strOut;
     
     private Helpers helper;// = new Helpers();
@@ -90,47 +86,47 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
    
    
     
-    private Commemoration SaintInfo2;
+    private Commemoration saintInfo2;
     private Bible bible;
     private String name2;
-    private StringOp Analyse=new StringOp();
+    private StringOp analyse=new StringOp();
 
-    public DoSaint(Commemoration SaintInfo, OrderedHashtable dayInfo) {
+    public DoSaint(Commemoration saintInfo, OrderedHashtable dayInfo) {
         //Get the Podobni
-        Analyse.setDayInfo(dayInfo);
-        Text = new LanguagePack(dayInfo);
+        analyse.setDayInfo(dayInfo);
+        text = new LanguagePack(dayInfo);
         //PrimesNames = Text.obtainValues((String) Text.Phrases.get("Primes"));
-    LanguageNames = Text.obtainValues((String) Text.getPhrases().get("LanguageMenu"));
+    languageNames = text.obtainValues((String) text.getPhrases().get("LanguageMenu"));
 
-    FileNames = Text.obtainValues((String) Text.getPhrases().get("File"));
-    HelpNames = Text.obtainValues((String) Text.getPhrases().get("Help"));
-    helper=new Helpers(Analyse.getDayInfo());
+    fileNames = text.obtainValues((String) text.getPhrases().get("File"));
+    helpNames = text.obtainValues((String) text.getPhrases().get("Help"));
+    helper=new Helpers(analyse.getDayInfo());
 
-        Podobni = new OrderedHashtable();
+        podobni = new OrderedHashtable();
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.getDayInfo().get("LS").toString(),"xml/Commands/Podobni.xml")), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),"xml/Commands/Podobni.xml")), StandardCharsets.UTF_8));
             QDParser.parse(this, frf);
-        } catch (Exception Primes) {
-            Primes.printStackTrace();
+        } catch (Exception primes) {
+            primes.printStackTrace();
         }
-        refresh(SaintInfo);
+        refresh(saintInfo);
     }
 
-    public void refresh(Commemoration SaintInfo) {
+    public void refresh(Commemoration saintInfo) {
         
-        SaintInfo2=SaintInfo;
-        CreateWindow();
+        saintInfo2=saintInfo;
+        createWindow();
 
   }
 
-    private void CreateWindow()//(String textOut)
+    private void createWindow()//(String textOut)
     {
         //Order the desired Text
-        name=SaintInfo2.getName();
-        name2=SaintInfo2.getGrammar("Short");
-        life=SaintInfo2.getLife();
-        copyright=SaintInfo2.getLifeCopyright();
-        OrderedHashtable troparInfo=(OrderedHashtable)SaintInfo2.getService("/LITURGY/TROPARION","1");
+        name=saintInfo2.getName();
+        name2=saintInfo2.getGrammar("Short");
+        life=saintInfo2.getLife();
+        copyright=saintInfo2.getLifeCopyright();
+        OrderedHashtable troparInfo=(OrderedHashtable)saintInfo2.getService("/LITURGY/TROPARION","1");
          if (troparInfo !=null){
         tropar=troparInfo.get("text").toString();
         troparT=troparInfo.get("Tone").toString();
@@ -141,7 +137,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             tropar=null;
         }
 
-        OrderedHashtable troparInfo2=(OrderedHashtable)SaintInfo2.getService("/LITURGY/TROPARION","2");
+        OrderedHashtable troparInfo2=(OrderedHashtable)saintInfo2.getService("/LITURGY/TROPARION","2");
         if (troparInfo2 !=null){
         tropar2=troparInfo2.get("text").toString();
         troparT2=troparInfo2.get("Tone").toString();
@@ -153,7 +149,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         }
          
 
-        OrderedHashtable kontakionInfo=(OrderedHashtable)SaintInfo2.getService("/LITURGY/KONTAKION","1");
+        OrderedHashtable kontakionInfo=(OrderedHashtable)saintInfo2.getService("/LITURGY/KONTAKION","1");
         if (kontakionInfo !=null){
         kondak=kontakionInfo.get("text").toString();
         kondakT=kontakionInfo.get("Tone").toString();
@@ -164,7 +160,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             kondak=null;
          }
 
-        OrderedHashtable kontakionInfo2=(OrderedHashtable)SaintInfo2.getService("/LITURGY/KONTAKION","2");
+        OrderedHashtable kontakionInfo2=(OrderedHashtable)saintInfo2.getService("/LITURGY/KONTAKION","2");
         if (kontakionInfo2 !=null){
         kondak2=kontakionInfo2.get("text").toString();
         kondakT2=kontakionInfo2.get("Tone").toString();
@@ -176,46 +172,46 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
          }
 
 
-        Text = new LanguagePack(Analyse.getDayInfo());
-        String[] toneNumbers = Text.obtainValues((String) Text.getPhrases().get("Tones"));
-        String[] MainNames = Text.obtainValues((String) Text.getPhrases().get("Main"));
-        String[] SaintInfo = Text.obtainValues((String) Text.getPhrases().get("LivesW"));
+        text = new LanguagePack(analyse.getDayInfo());
+        String[] toneNumbers = text.obtainValues((String) text.getPhrases().get("Tones"));
+        String[] mainNames = text.obtainValues((String) text.getPhrases().get("Main"));
+        String[] saintInfo = text.obtainValues((String) text.getPhrases().get("LivesW"));
         String textOut = "";
         
         if (name.equals("")) {
-            textOut = SaintInfo[6];
+            textOut = saintInfo[6];
         } else {
-            String DisplayFontM = (String) Text.getPhrases().get("FontFaceM");
-            String DisplaySizeM = (String) Text.getPhrases().get("FontSizeM");
+            String displayFontM = (String) text.getPhrases().get("FontFaceM");
+            String displaySizeM = (String) text.getPhrases().get("FontSizeM");
             Font value1 = (Font) UIManager.get("Menu.font");
-            if (DisplaySizeM == null || DisplaySizeM.equals("")) {
-                DisplaySizeM = Integer.toString(value1.getSize());
+            if (displaySizeM == null || displaySizeM.equals("")) {
+                displaySizeM = Integer.toString(value1.getSize());
             }
-            if (DisplayFontM == null || DisplayFontM.equals("")) {
-                DisplayFontM = value1.getFontName();
+            if (displayFontM == null || displayFontM.equals("")) {
+                displayFontM = value1.getFontName();
             }
-            DisplaySizeM = Integer.toString(Math.max(Integer.parseInt(DisplaySizeM), value1.getSize()));
+            displaySizeM = Integer.toString(Math.max(Integer.parseInt(displaySizeM), value1.getSize()));
 
-            textOut = "<body style=\"font-family:" + DisplayFontM + ";font-size:" + DisplaySizeM + ";\"><h1 style=\"text-align: center;\">" + name + "</h1>";
+            textOut = "<body style=\"font-family:" + displayFontM + ";font-size:" + displaySizeM + ";\"><h1 style=\"text-align: center;\">" + name + "</h1>";
             if (life != null && !life.equals("")) {
-                textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[0] + "</h2>" + "<p style=\"text-align: center;\"><small>" + copyright + "</small></p>" + "<p>" + life + "</p>";
+                textOut += "<h2 style=\"text-align: center;\">" + saintInfo[0] + "</h2>" + "<p style=\"text-align: center;\"><small>" + copyright + "</small></p>" + "<p>" + life + "</p>";
             }
 
             //Get the language settings
-            String DisplayFont = (String) Text.getPhrases().get("FontFaceL");
-            String DisplaySize = (String) Text.getPhrases().get("FontSizeL");
+            String displayFont = (String) text.getPhrases().get("FontFaceL");
+            String displaySize = (String) text.getPhrases().get("FontSizeL");
             
-            if (DisplaySize == null || DisplaySize.equals("")) {
-                DisplaySize = Integer.toString(value1.getSize());
+            if (displaySize == null || displaySize.equals("")) {
+                displaySize = Integer.toString(value1.getSize());
             }
-            if (DisplayFont == null || DisplayFont.equals("")) {
-                DisplayFont = value1.getFontName();
+            if (displayFont == null || displayFont.equals("")) {
+                displayFont = value1.getFontName();
             }
-            DisplaySize = Integer.toString(Math.max(Integer.parseInt(DisplaySize), value1.getSize())); //If the default user's font size is larger than the required there is not need to change it.
+            displaySize = Integer.toString(Math.max(Integer.parseInt(displaySize), value1.getSize())); //If the default user's font size is larger than the required there is not need to change it.
            
-            if (tropar != null && tropar != "" && !tropar.equals("\n \n")) {
-                textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[1] + "</h2>";
-                String ToneFormat = new String();
+            if (tropar != null && !tropar.isEmpty() && !tropar.equals("\n \n")) {
+                textOut += "<h2 style=\"text-align: center;\">" + saintInfo[1] + "</h2>";
+                String toneFormat = "";
                 try
                 {
                  int tone = -1;
@@ -225,25 +221,25 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
                 
 
                 if (tone != -1) {
-                    ToneFormat = SaintInfo[4];
-                    ToneFormat = ToneFormat.replace("TT", toneNumbers[tone]);
+                    toneFormat = saintInfo[4];
+                    toneFormat = toneFormat.replace("TT", toneNumbers[tone]);
                 }
                 }
                 catch (Exception e)
                 {
-                    ToneFormat=troparT;
+                    toneFormat=troparT;
                 }
-                if (troparP != null && troparP != "") {
-                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + SaintInfo[5] + SaintInfo[2] + Podobni.get(troparT + troparP) + "</p>";
+                if (troparP != null && !troparP.isEmpty()) {
+                    textOut += "<p style=\"text-align: center;\">" + toneFormat + saintInfo[5] + saintInfo[2] + podobni.get(troparT + troparP) + "</p>";
                 } else {
-                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + "</p>";
+                    textOut += "<p style=\"text-align: center;\">" + toneFormat + "</p>";
                 }
-                textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + tropar + "</p>";
+                textOut += "<p style=\"font-family:" + displayFont + ";font-size:" + displaySize + "\">" + tropar + "</p>";
             }
 
-            if (tropar2 != null && tropar2 != "" && !tropar2.equals("\n \n")) {
-                textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[1] + "</h2>";
-                String ToneFormat = new String();
+            if (tropar2 != null && !tropar2.isEmpty() && !tropar2.equals("\n \n")) {
+                textOut += "<h2 style=\"text-align: center;\">" + saintInfo[1] + "</h2>";
+                String toneFormat = "";
                 try
                 {
                  int tone = -1;
@@ -253,78 +249,78 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
 
                 if (tone != -1) {
-                    ToneFormat = SaintInfo[4];
-                    ToneFormat = ToneFormat.replace("TT", toneNumbers[tone]);
+                    toneFormat = saintInfo[4];
+                    toneFormat = toneFormat.replace("TT", toneNumbers[tone]);
                 }
                 }
                 catch (Exception e)
                 {
-                    ToneFormat=troparT2;
+                    toneFormat=troparT2;
                 }
-                if (troparP2 != null && troparP2 != "") {
-                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + SaintInfo[5] + SaintInfo[2] + Podobni.get(troparT2 + troparP2) + "</p>";
+                if (troparP2 != null && !troparP2.isEmpty()) {
+                    textOut += "<p style=\"text-align: center;\">" + toneFormat + saintInfo[5] + saintInfo[2] + podobni.get(troparT2 + troparP2) + "</p>";
                 } else {
-                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + "</p>";
+                    textOut += "<p style=\"text-align: center;\">" + toneFormat + "</p>";
                 }
-                textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + tropar2 + "</p>";
+                textOut += "<p style=\"font-family:" + displayFont + ";font-size:" + displaySize + "\">" + tropar2 + "</p>";
             }
 
-            if (kondak != null && kondak != "" && !kondak.equals("\n \n")) {
-                textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[3] + "</h2>";
+            if (kondak != null && !kondak.isEmpty() && !kondak.equals("\n \n")) {
+                textOut += "<h2 style=\"text-align: center;\">" + saintInfo[3] + "</h2>";
                 
-                String ToneFormat = new String();
+                String toneFormat = "";
 
                 try
                 {
                     int tone = Integer.parseInt(kondakT);
                 if (tone != -1) {
-                    ToneFormat = SaintInfo[4];
-                    ToneFormat = ToneFormat.replace("TT", toneNumbers[tone]);
+                    toneFormat = saintInfo[4];
+                    toneFormat = toneFormat.replace("TT", toneNumbers[tone]);
                 }
                 }
                 catch (Exception e)
                 {
-                    ToneFormat=kondakT;
+                    toneFormat=kondakT;
                 }
                 
-                if (kondakP != null && kondakP != "") {
-                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + SaintInfo[5] + SaintInfo[2] + Podobni.get(kondakT + kondakP) + "</p>";
+                if (kondakP != null && !kondakP.isEmpty()) {
+                    textOut += "<p style=\"text-align: center;\">" + toneFormat + saintInfo[5] + saintInfo[2] + podobni.get(kondakT + kondakP) + "</p>";
                 } else {
-                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + "</p>";
+                    textOut += "<p style=\"text-align: center;\">" + toneFormat + "</p>";
                 }
-                textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + kondak + "</p>";
+                textOut += "<p style=\"font-family:" + displayFont + ";font-size:" + displaySize + "\">" + kondak + "</p>";
             }
 
-            if (kondak2 != null && kondak2 != "" && !kondak2.equals("\n \n")) {
-                textOut += "<h2 style=\"text-align: center;\">" + SaintInfo[3] + "</h2>";
+            if (kondak2 != null && !kondak2.isEmpty() && !kondak2.equals("\n \n")) {
+                textOut += "<h2 style=\"text-align: center;\">" + saintInfo[3] + "</h2>";
 
-                String ToneFormat = new String();
+                String toneFormat = "";
 
                 try
                 {
                     int tone = Integer.parseInt(kondakT2);
                 if (tone != -1) {
-                    ToneFormat = SaintInfo[4];
-                    ToneFormat = ToneFormat.replace("TT", toneNumbers[tone]);
+                    toneFormat = saintInfo[4];
+                    toneFormat = toneFormat.replace("TT", toneNumbers[tone]);
                 }
                 }
                 catch (Exception e)
                 {
-                    ToneFormat=kondakT2;
+                    toneFormat=kondakT2;
                 }
 
-                if (kondakP2 != null && kondakP2 != "") {
-                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + SaintInfo[5] + SaintInfo[2] + Podobni.get(kondakT2 + kondakP2) + "</p>";
+                if (kondakP2 != null && !kondakP2.isEmpty()) {
+                    textOut += "<p style=\"text-align: center;\">" + toneFormat + saintInfo[5] + saintInfo[2] + podobni.get(kondakT2 + kondakP2) + "</p>";
                 } else {
-                    textOut += "<p style=\"text-align: center;\">" + ToneFormat + "</p>";
+                    textOut += "<p style=\"text-align: center;\">" + toneFormat + "</p>";
                 }
-                textOut += "<p style=\"font-family:" + DisplayFont + ";font-size:" + DisplaySize + "\">" + kondak2 + "</p>";
+                textOut += "<p style=\"font-family:" + displayFont + ";font-size:" + displaySize + "\">" + kondak2 + "</p>";
             }
         }
         //Other information can go here!
         //String textOut=header+image+rest;
         
-        frames = new JFrame((String) Text.getPhrases().get("0") + (String) Text.getPhrases().get("Colon") + name2);
+        frames = new JFrame((String) text.getPhrases().get("0") + (String) text.getPhrases().get("Colon") + name2);
         
         //frames.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel left=new JPanel();
@@ -332,8 +328,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         left.setLayout(new BorderLayout());
         right.setLayout(new BoxLayout(right, BoxLayout.PAGE_AXIS));
 
-        textOut = textOut.replaceAll("</br>", "<BR>");
-        textOut = textOut.replaceAll("<br>", "<BR>");
+        textOut = textOut.replace("</br>", "<BR>");
+        textOut = textOut.replace("<br>", "<BR>");
         strOut = textOut;
         JPanel contentPane = new JPanel(new BorderLayout());
         contentPane.setOpaque(true);
@@ -349,13 +345,13 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         contentPane.add(output);
 
         JScrollPane scrollPane = new JScrollPane(output);
-        JMenuBar MenuBar = new JMenuBar();
-        MenuFiles demo = new MenuFiles(Analyse.getDayInfo());
+        JMenuBar menuBarElement = new JMenuBar();
+        MenuFiles demo = new MenuFiles(analyse.getDayInfo());
         //PrimeSelector trial=new PrimeSelector();
-        MenuBar.add(demo.createFileMenu(this));
+        menuBarElement.add(demo.createFileMenu(this));
         //MenuBar.add(trial.createPrimeMenu());
-        MenuBar.add(demo.createHelpMenu(this));
-        frames.setJMenuBar(MenuBar);
+        menuBarElement.add(demo.createHelpMenu(this));
+        frames.setJMenuBar(menuBarElement);
         //trial.addPropertyChangeListener(this);
 
         contentPane.add(scrollPane, BorderLayout.CENTER);
@@ -371,16 +367,16 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         //frames.setContentPane(contentPane);
         
 
-        OrderedHashtable iconsM=(OrderedHashtable)SaintInfo2.getDisplayIcons();
-        Vector ImageList=(Vector)iconsM.get("Images");
-                Vector NamesList=(Vector)iconsM.get("Names");
-                String[] iconImages=new String[ImageList.size()];
-                String[] iconNames=new String[NamesList.size()];
+        OrderedHashtable iconsM=(OrderedHashtable)saintInfo2.getDisplayIcons();
+        Vector imageList=(Vector)iconsM.get("Images");
+                Vector namesList=(Vector)iconsM.get("Names");
+                String[] iconImages=new String[imageList.size()];
+                String[] iconNames=new String[namesList.size()];
 
-                iconImages=(String[])ImageList.toArray(new String[ImageList.size()]);
-                iconNames=(String[])NamesList.toArray(new String[NamesList.size()]);
+                iconImages=(String[])imageList.toArray(new String[imageList.size()]);
+                iconNames=(String[])namesList.toArray(new String[namesList.size()]);
         System.out.println("Icon Length is: " + iconNames.length);
-        IconDisplay icons=new IconDisplay(iconImages,iconNames,Analyse.getDayInfo());
+        IconDisplay icons=new IconDisplay(iconImages,iconNames,analyse.getDayInfo());
         left.add(new JPanel(),BorderLayout.NORTH);
         left.add(icons,BorderLayout.CENTER);
         left.add(new JPanel(),BorderLayout.SOUTH);
@@ -388,9 +384,9 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
   //      textOut+=icons;
     //    output.setText(textOut);
 
-        Helpers orient = new Helpers(Analyse.getDayInfo());
+        Helpers orient = new Helpers(analyse.getDayInfo());
 
-        orient.applyOrientation(frames,(ComponentOrientation)Analyse.getDayInfo().get("Orient"));
+        orient.applyOrientation(frames,(ComponentOrientation)analyse.getDayInfo().get("Orient"));
         frames.pack();
         frames.setSize(800, 700);
         frames.setVisible(true);
@@ -399,7 +395,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
     public void hyperlinkUpdate(HyperlinkEvent e)
 	{
-            if (e.getEventType().toString() == "ACTIVATED")
+            if (e.getEventType().toString().equals("ACTIVATED"))
 		{
 			String cmd = e.getDescription();
 			String[] parts = cmd.split("=");
@@ -411,9 +407,9 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 					bible.update(parts2[0], parts2[1]);
 					bible.show();
 				} catch (NullPointerException npe) {
-					bible = new Bible(parts2[0], parts2[1],Analyse.getDayInfo());
-                                        Helpers orient=new Helpers(Analyse.getDayInfo());
-                orient.applyOrientation(bible,(ComponentOrientation)Analyse.getDayInfo().get("Orient"));
+					bible = new Bible(parts2[0], parts2[1],analyse.getDayInfo());
+                                        Helpers orient=new Helpers(analyse.getDayInfo());
+                orient.applyOrientation(bible,(ComponentOrientation)analyse.getDayInfo().get("Orient"));
 				}
 			}
                         else
@@ -470,7 +466,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (Analyse.evalbool(table.get("Cmd").toString()) == false) {
+            if (analyse.evalbool(table.get("Cmd").toString()) == false) {
 
                 return;
             }
@@ -491,7 +487,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         }
         if (elem.equals("NAME") && read) {
             name = table.get("Nominative").toString();
-            if (repose!=""){
+            if (!repose.isEmpty()){
                 name=name+"(\u2020 "+repose+")";
             }
         }
@@ -511,7 +507,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             String tone = table.get("Tone").toString();
             String caseP = table.get("Case").toString();
             String intro = table.get("Intro").toString();
-            Podobni.put(tone + caseP, intro);
+            podobni.put(tone + caseP, intro);
         }
         /*if(readService && read){
         Location1+="/"+elem;
@@ -657,9 +653,9 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
     }
 
-    public String readText(String filename) {
+    /*public String readText(String filename) {
         try {
-            text = new String();
+            String text = "";
             BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(Analyse.getDayInfo().get("LS").toString(),filename)), "UTF8"));
             QDParser.parse(this, fr);
             if (text.length() == 0) {
@@ -674,32 +670,32 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         }
 
         return text;
-    }
+    }*/
 
     public void actionPerformed(ActionEvent e) {
         JMenuItem source = (JMenuItem) (e.getSource());
         String name1 = source.getText();
-        if (name1.equals(HelpNames[2])) {
-            Helpers orient = new Helpers(Analyse.getDayInfo());
-            orient.applyOrientation(new About(Analyse.getDayInfo()), (ComponentOrientation) Analyse.getDayInfo().get("Orient"));
+        if (name1.equals(helpNames[2])) {
+            Helpers orient = new Helpers(analyse.getDayInfo());
+            orient.applyOrientation(new About(analyse.getDayInfo()), (ComponentOrientation) analyse.getDayInfo().get("Orient"));
         }
-        if (name1.equals(HelpNames[0])) {
+        if (name1.equals(helpNames[0])) {
             //LAUNCH THE HELP FILE
         }
-        if (name1.equals(FileNames[1])) {
+        if (name1.equals(fileNames[1])) {
             //SAVE THE CURRENT WINDOW
             System.out.println(strOut);
             helper.saveHTMLFile(name, strOut);
 
 
         }
-        if (name1.equals(FileNames[4])) {
+        if (name1.equals(fileNames[4])) {
             //CLOSE THE PRIMES FRAME
-            if (helper.closeFrame(LanguageNames[7])) {
+            if (helper.closeFrame(languageNames[7])) {
                 frames.dispose();
             }
         }
-        if (name1.equals(FileNames[6])) {
+        if (name1.equals(fileNames[6])) {
             //PRINT THE FILE
             helper.sendHTMLToPrinter(output);
         }
@@ -708,7 +704,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
     protected String getClassName(Object o) {
         String classString = o.getClass().getName();
-        int dotIndex = classString.lastIndexOf(".");
+        int dotIndex = classString.lastIndexOf('.');
         return classString.substring(dotIndex + 1);
     }
 
