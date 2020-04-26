@@ -1,28 +1,18 @@
 package Ponomar.services;
 
 import javax.swing.*;
-import java.beans.*;
-import java.awt.*;
 import java.util.*;
 import java.io.*;
-import javax.swing.event.*;
-import java.awt.event.*;
-import java.beans.*;
-import javax.swing.filechooser.FileFilter;
+import java.nio.charset.StandardCharsets;
 
-import Ponomar.About;
-import Ponomar.MenuFiles;
 import Ponomar.calendar.JDate;
 import Ponomar.internationalization.LanguagePack;
 import Ponomar.panels.PrimeSelector;
-import Ponomar.panels.PrintableTextPane;
-import Ponomar.parsing.DocHandler;
 import Ponomar.parsing.QDParser;
 import Ponomar.parsing.Service;
 import Ponomar.parsing.ServiceInfo;
 import Ponomar.utility.Helpers;
 import Ponomar.utility.OrderedHashtable;
-import Ponomar.utility.StringOp;
 
 /***********************************************************************
 THIS MODULE CREATES THE TEXT FOR THE ORTHODOX SERVICE OF THE FIRST HOUR (PRIME)
@@ -48,14 +38,9 @@ public class ThirdHour extends LitService
 	//THE DATE OR THE RELEVANT INFORMATION WILL HAVE TO BE GIVEN
 	//TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
 	//DURING THE COURSE OF A SINGLE WEEK.
-	private static String FileNameIn="xml/Services/PRIMES1/";
-	private static String FileNameOut=FileNameIn+"Primes.html";
-	private String Troparion1;
-	private String Kontakion1;
-	private String Kontakion2;
-	private String Troparion2;
-	private String LentenK;				//ANY REQUIRED KATHISMA REFERENCED USING "LENTENK = "17"" WOULD BE THE 17th KATHISMA.
-	private PrimeSelector SelectorP;//=new PrimeSelector();	
+	private static String fileNameIn="xml/Services/PRIMES1/";
+	private static String fileNameOut=fileNameIn+"Primes.html";
+	private PrimeSelector selectorP;//=new PrimeSelector();	
 	
 	public ThirdHour(JDate date, OrderedHashtable dayInfo)
 	{
@@ -65,7 +50,7 @@ public class ThirdHour extends LitService
 	languageNames=langText.obtainValues((String)langText.getPhrases().get("LanguageMenu"));
         fileNames=langText.obtainValues((String)langText.getPhrases().get("File"));
 	helpNames=langText.obtainValues((String)langText.getPhrases().get("Help"));
-        SelectorP=new PrimeSelector(dayInfo);
+        selectorP=new PrimeSelector(dayInfo);
 		/*THIS IS THE PLAN FOR CREATING THE SERVICE
 		1) DETERMINE ON THE BASIS OF THE PENTECOSTARION (EASTER CYCLE) THE APPROPRIATE TONE AND ANY EASTER RELATED CHANGES TO THE SERVICE
 		2) LOAD THE INFORMATION FOR THE TONE, WEEKDAY, AND ANY CHANGES
@@ -118,8 +103,8 @@ public class ThirdHour extends LitService
 	protected String createHours() throws IOException
 	{
 		//OBTAIN THE DEFAULTS FOR THE SERVICE (WHAT WAS LAST USED!)
-		analyse.getDayInfo().put("PS",SelectorP.getWhoValue());
-		int TypeP=SelectorP.getTypeValue();
+		analyse.getDayInfo().put("PS",selectorP.getWhoValue());
+		int TypeP=selectorP.getTypeValue();
 		Service ReadPrime=new Service(analyse.getDayInfo());
 		//FIRST READ THE TONE FILES:
 				int Weekday=Integer.parseInt(analyse.getDayInfo().get("dow").toString());
@@ -166,7 +151,7 @@ public class ThirdHour extends LitService
 
 				try
 				{
-					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),FileName)), "UTF8"));
+					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),FileName)), StandardCharsets.UTF_8));
 					QDParser.parse(this, frf);
 
 				}
@@ -205,7 +190,7 @@ public class ThirdHour extends LitService
 		
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),filename)), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),filename)), StandardCharsets.UTF_8));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -219,9 +204,9 @@ public class ThirdHour extends LitService
 		OrderedHashtable PrimesTrial = ServicePrimes.serviceRules();
 		
 		type=PrimesTrial.get("Type").toString();
-		LentenK=(String) PrimesTrial.get("LENTENK");
+		lentenKat=(String) PrimesTrial.get(LENTENK);
 				
-		String PrimesAdd1=new String();
+		String PrimesAdd1="";
 				
 		if (type.equals("None"))
 		{
@@ -237,7 +222,7 @@ public class ThirdHour extends LitService
 		//I WOULD THEN NEED TO READ THE MENOLOGION, BUT I WILL NOT DO SO RIGHT NOW.
 		//DETERMINE THE ORDERING OF THE TROPARIA AND KONTAKIA IF THERE ARE 2 OR MORE
 				
-		String strOut= new String();
+		String strOut= "";
 		analyse.getDayInfo().put("PFlag1",TypeP);
 		analyse.getDayInfo().put("PFlag2",0);
 		//NOTE PFlag2 == 3 for Holy Week Services!
@@ -245,12 +230,12 @@ public class ThirdHour extends LitService
 	       {
 	       		analyse.getDayInfo().put("PFlag2",1);
 	       		
-	       		if(LentenK != null)
+	       		if(lentenKat != null)
 	       		{
 	       			analyse.getDayInfo().put("PFlag2",2);
 	       			//CREATE THE KATHISMA PART
-	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PKath3.xml"),"UTF8"));
-	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma"+LentenK+"\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PKath3.xml"),StandardCharsets.UTF_8));
+	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma"+lentenKat+"\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
 	       		}
@@ -260,23 +245,23 @@ public class ThirdHour extends LitService
 	       		//CREATE THE FIRST TROPAR (BEFORE THE Glory...) PART, IF ANY
 			//CREATE THE SECOND TROPAR (NORMAL)
 			//APPROPRIATE TROPAR STILL NEEDS TO BE DETERMINED!!
-			if(Troparion1 != null)
+			if(troparion1 != null)
 	    		{
-	    		    	if(Troparion2 != null)
+	    		    	if(troparion2 != null)
 	    		    	{
-	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop31.xml"),"UTF8"));
-	    				String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop31.xml"),StandardCharsets.UTF_8));
+	    				String Data=TROPARION_OUTPUT_START + troparion1 + TROPARION_OUTPUT_END;
 	    				out.write(Data);
 	    				out.close();
 	    				
-	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop32.xml"),"UTF8"));
-	    				Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion2+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop32.xml"),StandardCharsets.UTF_8));
+	    				Data=TROPARION_OUTPUT_START + troparion2 + TROPARION_OUTPUT_END;
 	    				out.write(Data);
 	    				out.close();
 					
 	    		    	}
-    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop32.xml"),"UTF8"));
-	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop32.xml"),StandardCharsets.UTF_8));
+	    			String Data=TROPARION_OUTPUT_START + troparion1 + TROPARION_OUTPUT_END;
 	    			out.write(Data);
 	    			out.close();
     	     		}
@@ -285,10 +270,10 @@ public class ThirdHour extends LitService
 	       	
 	       	//GET AND CREATE THE APPRORIATE KONTAKION
 	       	//APROPRIATE KONTAKION MUST STILL BE CREATED!
-	       	if (Kontakion1 != null)
+	       	if (kontakion1 != null)
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PKont3.xml"),"UTF8"));
-	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+Kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PKont3.xml"),StandardCharsets.UTF_8));
+	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    		out.write(Data);
 	    		out.close();
 		}
@@ -337,28 +322,28 @@ public class ThirdHour extends LitService
 			value=(String)table.get("TROPARION1");
 			if(value != null)
 			{
-				Troparion1=(String)table.get("TROPARION1");
+				troparion1=(String)table.get("TROPARION1");
 			}
 			value=(String)table.get("KONTAKION1");
 			if(value != null)
 			{
-				Kontakion1=(String)table.get("KONTAKION1");
+				kontakion1=(String)table.get("KONTAKION1");
 			}
 			value=(String)table.get("KONTAKION2");
 			if(value != null)
 			{
-				Kontakion1=(String)table.get("KONTAKION2");
+				kontakion1=(String)table.get("KONTAKION2");
 			}
 			value=(String)table.get("TROPARION2");
 			if(value != null)
 			{
-				Troparion1=(String)table.get("TROPARION2");
+				troparion1=(String)table.get("TROPARION2");
 			}
 				
-			value=(String)table.get("LENTENK");
+			value=(String)table.get(LENTENK);
 			if(value != null)
 			{
-				LentenK=(String)table.get("LENTENK");
+				lentenKat=(String)table.get(LENTENK);
 				//System.out.println(LentenK);
 			}
 			

@@ -13,6 +13,7 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.Hashtable;
 
 import javax.swing.JFrame;
@@ -33,13 +34,21 @@ import Ponomar.utility.Helpers;
 import Ponomar.utility.OrderedHashtable;
 import Ponomar.utility.StringOp;
 
+/***********************************************************************
+ * THIS MODULE COLLECT THE COMMON CODE OF THE SERVICE CLASSES.
+ ***********************************************************************/
 public abstract class LitService implements DocHandler, ActionListener, ItemListener, PropertyChangeListener {
 
 	protected static final String CONFIG_FILENAME = "ponomar.config";
 	protected static final String OCTOECHEOS_FILENAME = "xml/Services/Octoecheos/";
 	protected static final String SERVICES_FILENAME = "xml/Services/";
-	protected static final String TRIODION_FILENAME   = "xml/triodion/";   // TRIODION FILE
+	protected static final String TRIODION_FILENAME   = "xml/triodion/"; // TRIODION FILE
 	protected static final String PENTECOSTARION_FILENAME = "xml/pentecostarion/"; // PENTECOSTARION FILE
+	protected static final String TROPARION_OUTPUT_START = "<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/";
+	protected static final String TROPARION_OUTPUT_END = "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+	protected static final String PONOMAR_LANGUAGES = "Ponomar/languages/";
+	protected static final String LENTENK = "LENTENK";
+	protected static final String NEWLINE = "\n";
 	protected static OrderedHashtable primesTK;
 	protected static String text;
 	protected static boolean read=false;
@@ -52,7 +61,6 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
 	protected JFrame frames;
 	protected String[] fileNames;//=Text.obtainValues((String)Text.Phrases.get("File"));
 	protected String[] helpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
-	protected static final String NEWLINE = "\n";
 	protected String strOut;
 	protected JDate today;
 	protected Helpers helper;
@@ -62,6 +70,11 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
 	protected Font defaultFont=new Font("",Font.BOLD,12);		//CREATE THE DEFAULT FONT
 	protected Font currentFont=defaultFont;
 	protected StringOp analyse=new StringOp();
+	protected String troparion1;
+	protected String troparion2;
+	protected String kontakion1;
+	protected String kontakion2;
+	protected String lentenKat;	//ANY REQUIRED KATHISMA REFERENCED USING "LENTENK = "17"" WOULD BE THE 17th KATHISMA.
 
 	public LitService() {
 		super();
@@ -186,7 +199,7 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
 
 	}
 
-	private boolean eval(String expression) throws IllegalArgumentException
+	protected boolean eval(String expression) throws Throwable
 	{
 		return false;
 	}
@@ -195,8 +208,8 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
 	{
 		try
 		{
-       			 text= new String();
-       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),filename)), "UTF8"));
+       			 text= "";
+       			 BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),filename)), StandardCharsets.UTF_8));
        			 QDParser.parse(this,fr);
        			 if(text.length()==0)
        			 {
