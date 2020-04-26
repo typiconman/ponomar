@@ -426,33 +426,13 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         }
     }
 
-   
-    
-
     private void write() {
      
-         output = "<body style=\"font-family:" + displayFont + ";font-size:" + displaySize + "pt\">";
+        output = "<body style=\"font-family:" + displayFont + ";font-size:" + displaySize + "pt\">";
      
-
-
         String AMC = (String) phrases.getPhrases().get("AMC");
         String AML = (String) phrases.getPhrases().get("AML");
-        String format = "";
-        if (AMC.equals("1")) {
-            PCalendar checking = new PCalendar(today, PCalendar.julian, analyse.getDayInfo());
-            format = (String) phrases.getPhrases().get("AM");
-            if (analyse.getDayInfo().get("Ideographic").equals("1"))
-                {
-                    RuleBasedNumber convertN=new RuleBasedNumber(analyse.getDayInfo());
-                    
-                    format = format.replace("^YYAM", convertN.getFormattedNumber(Long.parseLong(Integer.toString((int) checking.getAM()))));
-
-                }
-                else
-                {
-		format = format.replace("^YYAM", Integer.toString((int) checking.getAM()));
-                }
-        }
+        String format = getFormat(AMC);
         //System.out.println("AML = " + AML.equals("B"));
         if (AML.equals("B")) {
             output += "<B>" + format + today.toString(analyse.getDayInfo()) + "</B><BR>";
@@ -460,7 +440,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
             output += "<B>" + today.toString(analyse.getDayInfo()) + format + "</B><BR>";
         }
 
-        output += mainNames[0] + colon + (String) today.getGregorianDateS(analyse.getDayInfo()) + "<BR>";
+        output += mainNames[0] + colon + today.getGregorianDateS(analyse.getDayInfo()) + "<BR>";
         String filename = "";
         int lineNumber = 0;
         int dow = today.getDayOfWeek();
@@ -504,20 +484,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         String[] final1 = rough.split(",");
         //System.out.println(output);
 
-
-
-        // GET THE DAY'S ASTRONOMICAL DATA
-        Sunrise sunrise = new Sunrise(analyse.getDayInfo());
-        String[] sunriseSunset = sunrise.getSunriseSunsetString(today, (String) ConfigurationFiles.getDefaults().get("Longitude"), (String) ConfigurationFiles.getDefaults().get("Latitude"), (String) ConfigurationFiles.getDefaults().get("TimeZone"));
-        output += "<BR>" + mainNames[1] + sunriseSunset[0];
-        output += "<BR>" + mainNames[2] + sunriseSunset[1];
-        output += "<BR><BR>"; //<B>"+MainNames[3]+"</B>"+Colon+ Paschalion.getLunarPhaseString(today) +"<BR><BR>";
-        // getting rid of the lunar phase until we program a paschalion ...
-        //adding the civil Lunar phase by request of Mitrophan
-        Astronomy sky = new Astronomy();
-
-        output += mainNames[3] + sky.lunarphase(today.getJulianDay(), analyse.getDayInfo());
-        output += "<BR><BR>";
+        output += getAstronomicalData();
 
         if (nday >= -70 && nday < 0) {
             filename = TRIODION_FILENAME;
@@ -578,75 +545,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         //System.out.println("First Menologion Reading is :"+MenaionReadings[0].get(READINGS));
         OrderedHashtable combinedReadings = new OrderedHashtable();
         //for(int j=0;j<7;j++){
-        for (int k = 0; k < menaionReadings.length; k++) {
-            OrderedHashtable reading = (OrderedHashtable) menaionReadings[k].get(READINGS_KEY);
-            OrderedHashtable readings = (OrderedHashtable) reading.get(READINGS_KEY);
-            for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements();) {
-                String element1 = e.nextElement().toString();
-                if (combinedReadings.get(element1) != null) {
-                    //Type of Reading already exists combine them
-                    OrderedHashtable temp = (OrderedHashtable) combinedReadings.get(element1);
-                    Vector readings2 = (Vector) temp.get(READINGS_KEY);
-                    Vector rank = (Vector) temp.get("Rank");
-                    Vector tag = (Vector) temp.get("Tag");
-                    readings2.add(readings.get(element1));
-                    rank.add(reading.get("Rank"));
-                    tag.add(reading.get("Name"));
-                    temp.put(READINGS_KEY, readings2);
-                    temp.put("Rank", rank);
-                    temp.put("Tag", tag);
-                    combinedReadings.put(element1, temp);
-                } else {
-                    //Reading does not exist
-                    Vector readings2 = new Vector();
-                    Vector rank = new Vector();
-                    Vector tag = new Vector();
-                    readings2.add(readings.get(element1));
-                    rank.add(reading.get("Rank"));
-                    tag.add(reading.get("Name"));
-                    OrderedHashtable temp = new OrderedHashtable();
-                    temp.put(READINGS_KEY, readings2);
-                    temp.put("Rank", rank);
-                    temp.put("Tag", tag);
-                    combinedReadings.put(element1, temp);
-                }
-            }
-        }
-        for (int k = 0; k < paschalReadings.length; k++) {
-            OrderedHashtable reading = (OrderedHashtable) paschalReadings[k].get(READINGS_KEY);
-            OrderedHashtable readings = (OrderedHashtable) reading.get(READINGS_KEY);
-            for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements();) {
-                String element1 = e.nextElement().toString();
-                if (combinedReadings.get(element1) != null) {
-                    //Type of Reading already exists combine them
-                    OrderedHashtable temp = (OrderedHashtable) combinedReadings.get(element1);
-                    Vector readings2 = (Vector) temp.get(READINGS_KEY);
-                    Vector rank = (Vector) temp.get("Rank");
-                    Vector tag = (Vector) temp.get("Tag");
-                    readings2.add(readings.get(element1));
-                    rank.add(reading.get("Rank"));
-                    tag.add(reading.get("Name"));
-                    temp.put(READINGS_KEY, readings2);
-                    temp.put("Rank", rank);
-                    temp.put("Tag", tag);
-                    combinedReadings.put(element1, temp);
-                } else {
-                    //Reading does not exist
-                    Vector readings2 = new Vector();
-                    Vector rank = new Vector();
-                    Vector tag = new Vector();
-                    readings2.add(readings.get(element1));
-                    rank.add(reading.get("Rank"));
-
-                    tag.add(reading.get("Name"));
-                    OrderedHashtable temp = new OrderedHashtable();
-                    temp.put(READINGS_KEY, readings2);
-                    temp.put("Rank", rank);
-                    temp.put("Tag", tag);
-                    combinedReadings.put(element1, temp);
-                }
-            }
-        }
+        processMenaionPaschalReadings(menaionReadings, combinedReadings);
+        processMenaionPaschalReadings(paschalReadings, combinedReadings);
         //}
         boolean firstTime = true;
         for (Enumeration e = combinedReadings.enumerateKeys(); e.hasMoreElements();) {
@@ -663,54 +563,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                     output += rSep;
                 }
                 //Special case and consider it differently
-                Vector epistle = new Vector();
-
-                Vector gospel = new Vector();
-
-
-                for (int j = 0; j < readings.size(); j++) {
-                    OrderedHashtable liturgy = (OrderedHashtable) readings.get(j);
-                    OrderedHashtable stepE = (OrderedHashtable) liturgy.get("apostol");
-                    OrderedHashtable stepG = (OrderedHashtable) liturgy.get("gospel");
-
-                    if (stepE != null) {
-                        epistle.add(stepE.get("Reading").toString());
-                    } else {
-                        epistle.add("");
-                    }
-                    if (stepG != null) {
-                        gospel.add(stepG.get("Reading").toString());
-                    } else {
-                        gospel.add("");
-                    }
-
-
-                }
-                OrderedHashtable readingsA = new OrderedHashtable();
-
-                if (!epistle.get(0).equals("")) {
-                    readingsA.put(READINGS_KEY, epistle);
-                    readingsA.put("Rank", rank);
-                    readingsA.put("Tag", tag);
-                    //System.out.println(Tag);
-                    //System.out.println("Hello World");
-                    DivineLiturgy trial1 = new DivineLiturgy(analyse.getDayInfo());
-                    String type1 = (String) phrases.getPhrases().get("apostol");
-                    output += "<B>" + type1 + "</B>" + colon;
-                    //System.out.println(readingsA);
-                    output += trial1.Readings(readingsA, "apostol", today);
-                    output += rSep;
-                }
-                if (!gospel.get(0).equals("")) {
-                    readingsA.put(READINGS_KEY, gospel);
-                    readingsA.put("Rank", rank);
-                    readingsA.put("Tag", tag);
-                    String type1 = (String) phrases.getPhrases().get("gospel");
-                    DivineLiturgy trial1 = new DivineLiturgy(analyse.getDayInfo());
-                    output += "<B>" + type1 + "</B>" + colon;
-                    output += trial1.Readings(readingsA, "gospel", today);
-                }
-
+                output += iterateEpistleGospel(readings, rank, tag);
 
                 /*for (int j=0; j<Readings.size();j++){
                 if (j!=0){
@@ -724,7 +577,6 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                 output+= Tag.get(j).toString();
                 }
                 }*/
-
 
                 /*for (int j=0; j<Readings.size();j++){
                 if (j!=0){
@@ -746,40 +598,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                 } else {
                     output += rSep;
                 }
-                Vector matins2 = new Vector();
 
-                for (int j = 0; j < readings.size(); j++) {
-                    OrderedHashtable matins = (OrderedHashtable) readings.get(j);
-                    //System.out.println("In Main1, we have "+Readings.get(j));
-                    OrderedHashtable stepE = (OrderedHashtable) matins.get("matins");
-                    if (stepE == null) {
-                        stepE = (OrderedHashtable) matins.get("1");
-                    }
-                    //OrderedHashtable stepE=(OrderedHashtable)matins.get("matins");
-                    //System.out.println("In Main1, we have "+matins2);
-                    //System.out.println(stepE);
-
-                    if (stepE != null) {
-                        matins2.add(stepE.get("Reading").toString());
-                    } else {
-                        matins2.add("");
-                    }
-                }
-
-                OrderedHashtable readingsA = new OrderedHashtable();
-
-
-
-
-
-                readingsA.put(READINGS_KEY, matins2);
-                readingsA.put("Rank", rank);
-                readingsA.put("Tag", tag);
-                Matins trial1 = new Matins(analyse.getDayInfo());
-                String type1 = (String) phrases.getPhrases().get("matins");
-                output += "<B>" + type1 + "</B>" + colon;
-                //System.out.println(readingsA);
-                output += trial1.Readings(readingsA, today);
+                output+=putMatinsReadings(readings, rank, tag, new OrderedHashtable(), "matins");
                 //output+=RSep;
 
 
@@ -793,54 +613,13 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
             }
             String type1 = (String) phrases.getPhrases().get(element1.toLowerCase());
             output += "<B>" + type1 + "</B>" + colon;
-            for (int i = 0; i < readings.size(); i++) {
-                OrderedHashtable reading = (OrderedHashtable) readings.get(i);
-                String name = "";
-                if (i != 0) {
-                    output += rSep;
-                }
-                //System.out.println(Reading);
-                //System.out.println(Tag.get(i));
-                boolean first = true;
-
-                for (Enumeration e2 = reading.enumerateKeys(); e2.hasMoreElements();) {
-                    if (first) {
-                        first = false;
-                    } else {
-                        output += rSep;
-                    }
-                    String element2 = e2.nextElement().toString();
-                    OrderedHashtable stuff = (OrderedHashtable) reading.get(element2);
-                    String bibleText = stuff.get("Reading").toString();
-                    output += shortForm.getHyperlink(bibleText);
-                }
-                if (readings.size() > 1) {
-                    output += tag.get(i).toString();
-
-                }
-
-            }//output += RSep;
+            output += iterateOverReadings(shortForm, readings, tag);
+            //output += RSep;
         }
 
 
 
-        OrderedHashtable iconsP = (OrderedHashtable) paschalCycle.getIcon();
-        OrderedHashtable iconsM = (OrderedHashtable) solarCycle.getIcon();
-        //String[] ss = (String[])v.toArray(new String[v.size()]);
-        Vector imageList = (Vector) iconsM.get("Images");
-        Vector namesList = (Vector) iconsM.get("Names");
-        String[] iconImages = new String[imageList.size()];
-        String[] iconNames = new String[namesList.size()];
-
-        iconImages = (String[]) imageList.toArray(new String[imageList.size()]);
-        iconNames = (String[]) namesList.toArray(new String[namesList.size()]);
-
-
-
-        {
-            displayIcon.updateImagesFiled(iconImages, iconNames);
-
-        }
+        displayIcons(paschalCycle, solarCycle);
 
         //THIS IS NOW REPLACED BY THE NEW PROGRAMME, THAT SIMPLIFIES THE DETERMINATION OF THE FAST.
         String[] fastNames = phrases.obtainValues((String) phrases.getPhrases().get("Fasts"));
@@ -857,6 +636,205 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 
     }
+
+	private String iterateEpistleGospel(Vector readings, Vector rank, Vector tag) {
+		
+		String epistleGospelOutput = "";
+		Vector epistle = new Vector();
+
+		Vector gospel = new Vector();
+
+		for (int j = 0; j < readings.size(); j++) {
+		    OrderedHashtable liturgy = (OrderedHashtable) readings.get(j);
+		    OrderedHashtable stepE = (OrderedHashtable) liturgy.get("apostol");
+		    OrderedHashtable stepG = (OrderedHashtable) liturgy.get("gospel");
+
+		    if (stepE != null) {
+		        epistle.add(stepE.get("Reading").toString());
+		    } else {
+		        epistle.add("");
+		    }
+		    if (stepG != null) {
+		        gospel.add(stepG.get("Reading").toString());
+		    } else {
+		        gospel.add("");
+		    }
+
+
+		}
+		OrderedHashtable readingsA = new OrderedHashtable();
+
+		if (!epistle.get(0).equals("")) {
+			epistleGospelOutput += putEpistleGospelReadings(rank, tag, epistle, readingsA, "apostol");
+		    epistleGospelOutput += rSep;
+		}
+		if (!gospel.get(0).equals("")) {
+			epistleGospelOutput += putEpistleGospelReadings(rank, tag, gospel, readingsA, "gospel");
+		}
+		return epistleGospelOutput;
+	}
+
+	private String iterateOverReadings(Bible shortForm, Vector readings, Vector tag) {
+		String readingOutput = "";
+		for (int i = 0; i < readings.size(); i++) {
+		    OrderedHashtable reading = (OrderedHashtable) readings.get(i);
+		    String name = "";
+		    if (i != 0) {
+		        readingOutput += rSep;
+		    }
+		    //System.out.println(Reading);
+		    //System.out.println(Tag.get(i));
+		    boolean first = true;
+
+		    for (Enumeration e2 = reading.enumerateKeys(); e2.hasMoreElements();) {
+		        if (first) {
+		            first = false;
+		        } else {
+		            readingOutput += rSep;
+		        }
+		        String element2 = e2.nextElement().toString();
+		        OrderedHashtable stuff = (OrderedHashtable) reading.get(element2);
+		        String bibleText = stuff.get("Reading").toString();
+		        readingOutput += shortForm.getHyperlink(bibleText);
+		    }
+		    if (readings.size() > 1) {
+		        readingOutput += tag.get(i).toString();
+
+		    }
+
+		}
+		return readingOutput;
+	}
+
+	private void displayIcons(Day paschalCycle, Day solarCycle) {
+		OrderedHashtable iconsP = (OrderedHashtable) paschalCycle.getIcon();
+        OrderedHashtable iconsM = (OrderedHashtable) solarCycle.getIcon();
+        //String[] ss = (String[])v.toArray(new String[v.size()]);
+        Vector imageList = (Vector) iconsM.get("Images");
+        Vector namesList = (Vector) iconsM.get("Names");
+        String[] iconImages = new String[imageList.size()];
+        String[] iconNames = new String[namesList.size()];
+
+        iconImages = (String[]) imageList.toArray(new String[imageList.size()]);
+        iconNames = (String[]) namesList.toArray(new String[namesList.size()]);
+
+        displayIcon.updateImagesFiled(iconImages, iconNames);
+	}
+
+	private String getAstronomicalData() {
+        Sunrise sunrise = new Sunrise(analyse.getDayInfo());
+        String[] sunriseSunset = sunrise.getSunriseSunsetString(today, (String) ConfigurationFiles.getDefaults().get("Longitude"), (String) ConfigurationFiles.getDefaults().get("Latitude"), (String) ConfigurationFiles.getDefaults().get("TimeZone"));
+        String astronomicalData = "<BR>" + mainNames[1] + sunriseSunset[0];
+        astronomicalData += "<BR>" + mainNames[2] + sunriseSunset[1];
+        astronomicalData += "<BR><BR>"; //<B>"+MainNames[3]+"</B>"+Colon+ Paschalion.getLunarPhaseString(today) +"<BR><BR>";
+        // getting rid of the lunar phase until we program a paschalion ...
+        //adding the civil Lunar phase by request of Mitrophan
+        Astronomy sky = new Astronomy();
+
+        astronomicalData += mainNames[3] + sky.lunarphase(today.getJulianDay(), analyse.getDayInfo());
+        astronomicalData += "<BR><BR>";
+        return astronomicalData;
+	}
+
+	private void processMenaionPaschalReadings(OrderedHashtable[] menaionReadings, OrderedHashtable combinedReadings) {
+		for (int k = 0; k < menaionReadings.length; k++) {
+            OrderedHashtable reading = (OrderedHashtable) menaionReadings[k].get(READINGS_KEY);
+            OrderedHashtable readings = (OrderedHashtable) reading.get(READINGS_KEY);
+            for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements();) {
+                String element1 = e.nextElement().toString();
+                if (combinedReadings.get(element1) != null) {
+                    combinedReadings.put(element1, combineWithExistingReading(combinedReadings, reading, readings, element1));
+                } else {
+                    combinedReadings.put(element1, readingDoesNotExist(reading, readings, element1));
+                }
+            }
+        }
+	}
+
+	private String putMatinsReadings(Vector readings, Vector rank, Vector tag, OrderedHashtable readingsA, String key) {
+		readingsA.put(READINGS_KEY, processMatins(readings));
+		readingsA.put("Rank", rank);
+		readingsA.put("Tag", tag);
+		Matins trial1 = new Matins(analyse.getDayInfo());
+		String type1 = (String) phrases.getPhrases().get(key);
+		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, today);
+	}
+
+	private String putEpistleGospelReadings(Vector rank, Vector tag, Vector reading, OrderedHashtable readingsA, String key) {
+		readingsA.put(READINGS_KEY, reading);
+		readingsA.put("Rank", rank);
+		readingsA.put("Tag", tag);
+		DivineLiturgy trial1 = new DivineLiturgy(analyse.getDayInfo());
+		String type1 = (String) phrases.getPhrases().get(key);
+		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, key, today);
+	}
+
+	private Vector<String> processMatins(Vector<OrderedHashtable> readings) {
+		Vector<String> matins2 = new Vector<>();
+
+		for (int j = 0; j < readings.size(); j++) {
+		    OrderedHashtable matins = readings.get(j);
+		    //System.out.println("In Main1, we have "+Readings.get(j));
+		    OrderedHashtable stepE = (OrderedHashtable) matins.get("matins");
+		    if (stepE == null) {
+		        stepE = (OrderedHashtable) matins.get("1");
+		    }
+		    //OrderedHashtable stepE=(OrderedHashtable)matins.get("matins");
+		    //System.out.println("In Main1, we have "+matins2);
+		    //System.out.println(stepE);
+
+		    if (stepE != null) {
+		        matins2.add(stepE.get("Reading").toString());
+		    } else {
+		        matins2.add("");
+		    }
+		}
+		return matins2;
+	}
+
+	private String getFormat(String amc) {
+		String format = "";
+        if (amc.equals("1")) {
+            PCalendar checking = new PCalendar(today, PCalendar.julian, analyse.getDayInfo());
+            format = (String) phrases.getPhrases().get("AM");
+            if (analyse.getDayInfo().get("Ideographic").equals("1"))
+                {
+                    RuleBasedNumber convertN=new RuleBasedNumber(analyse.getDayInfo());
+                    
+                    format = format.replace("^YYAM", convertN.getFormattedNumber(Long.parseLong(Integer.toString((int) checking.getAM()))));
+
+                }
+                else
+                {
+		format = format.replace("^YYAM", Integer.toString((int) checking.getAM()));
+                }
+        }
+		return format;
+	}
+
+	private OrderedHashtable combineWithExistingReading(OrderedHashtable combinedReadings, OrderedHashtable reading,
+			OrderedHashtable readings, String element1) {
+		OrderedHashtable temp = (OrderedHashtable) combinedReadings.get(element1);
+		Vector readings2 = (Vector) temp.get(READINGS_KEY);
+		Vector rank = (Vector) temp.get("Rank");
+		Vector tag = (Vector) temp.get("Tag");
+		return putReadings(reading, readings, element1, temp, readings2, rank, tag);
+	}
+
+	private OrderedHashtable readingDoesNotExist(OrderedHashtable reading, OrderedHashtable readings, String element1) {
+		return putReadings(reading, readings, element1, new OrderedHashtable(), new Vector(), new Vector(), new Vector());
+	}
+
+	private OrderedHashtable putReadings(OrderedHashtable reading, OrderedHashtable readings, String element1,
+			OrderedHashtable temp, Vector readings2, Vector rank, Vector tag) {
+		readings2.add(readings.get(element1));
+		rank.add(reading.get("Rank"));
+		tag.add(reading.get("Name"));
+		temp.put(READINGS_KEY, readings2);
+		temp.put("Rank", rank);
+		temp.put("Tag", tag);
+		return temp;
+	}
 
     protected String getClassName(Object o) {
         String classString = o.getClass().getName();
