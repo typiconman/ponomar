@@ -37,11 +37,15 @@ because Java has poor support of OpenType fonts.
 
 3) Create the .class files by typing 
 
-`make`
+`javac -cp src src/net/ponomar/Main.java -d bin`
 
-4) From the root of this project, type 
+4) Copy the image files
 
-`java Ponomar.Main`
+`cp -avr src/images/ bin/images/`
+
+4) Then type 
+
+`java -cp bin net.ponomar.Main`
 
 and the main Ponomar interface should appear.
 
