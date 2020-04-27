@@ -1,3 +1,5 @@
+# Ponomar
+
 Ponomar is a fully-functional program suite for the Orthodox Church and provides the following features:
 
 1. Calendar and liturgical information for any day of any year
@@ -23,36 +25,43 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Ponomar.  If not, see <http://www.gnu.org/licenses/>.
 
-IMPORTANT INFORMATION
+## Important information
 Ponomar is ALPHA-PHASE software and is intended for SOFTWARE-TESTING PURPOSES ONLY.
 
-In order to fully use the Ponomar Java program, the following steps can be followed:
-1) Install the Ponomar Unicode fonts located at https://sci.ponomar.net/fonts.html. 
-Although this font is for primarily displaying Church Slavonic, 
-it does contain special Typicon glyphs that are used by most of the other languages.
-Note that Ponomar uses the TrueType version of this font (Ponomar Unicode TT)
-because Java has poor support of OpenType fonts.
+## Building Ponomar
 
-2) Install an SDK for Java. 
+### Getting the right typefaces
 
-3) Create the .class files by typing 
+Download and install the [Ponomar Unicode fonts](https://sci.ponomar.net/fonts.html).
 
-`javac -cp src src/net/ponomar/Main.java -d bin`
+Although this font is for primarily displaying Church Slavonic, it does contain special Typicon glyphs that are used by most of the other languages.
 
-4) Copy the image files
+Note that Ponomar uses the TrueType version of this font (Ponomar Unicode TT) because Java has poor support of OpenType fonts.
 
-`cp -avr src/images/ bin/images/`
+### Building from the command line
 
-4) Then type 
+1) Install an SDK for Java. 
 
-`java -cp bin net.ponomar.Main`
+2) Create the .class files by typing 
 
-and the main Ponomar interface should appear.
+`make`
 
-5) A Perl API is available in Ponomar/APIs/Perl. See its documentation.
+4) Run the main class by typing
 
-6) If you make any changes, be sure to run the regression tests:
+`make run`
+
+The main Ponomar interface should appear.
+
+An IDE such as Eclipse or IntelliJ will provide a smoother experience with building.
+
+You can remove the binaries by typing
+
+`make clean`
+
+## Perl API
+
+A Perl API is available in Ponomar/APIs/Perl. See its documentation.
+
+If you make any changes, be sure to run the regression tests:
 
 `make test`
-
-.

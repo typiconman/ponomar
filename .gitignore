@@ -171,3 +171,4 @@ Makefile.old
 *.class
 .classpath
 /bin/
+/binary/
