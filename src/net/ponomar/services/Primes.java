@@ -12,6 +12,7 @@ import net.ponomar.panels.PrimeSelector;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.parsing.Service;
 import net.ponomar.parsing.ServiceInfo;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 
@@ -39,7 +40,7 @@ public class Primes extends LitService
 	//THE DATE OR THE RELEVANT INFORMATION WILL HAVE TO BE GIVEN
 	//TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
 	//DURING THE COURSE OF A SINGLE WEEK.
-	private static String fileNameIn="xml/Services/PRIMES1/";
+	private static String fileNameIn=Constants.SERVICES_PATH + "PRIMES1/";
 	private static String fileNameOut=fileNameIn+"Primes.html";
 	private PrimeSelector selectorP;//=new PrimeSelector();
 			
@@ -96,6 +97,7 @@ public class Primes extends LitService
 		}
 		catch (IOException j)
 		{
+			j.printStackTrace();
 		}
 		
 		 	
@@ -169,19 +171,19 @@ public class Primes extends LitService
 	
 		if (nday >= -70 && nday < 0)
 		{
-			filename = TRIODION_FILENAME;
+			filename = Constants.TRIODION_PATH;
 			lineNumber = Math.abs(nday);
 		}
 		else if (nday < -70)
 		{
 			// WE HAVE NOT YET REACHED THE LENTEN TRIODION
-			filename = PENTECOSTARION_FILENAME;
+			filename = Constants.PENTECOSTARION_PATH;
 			lineNumber = Integer.parseInt(analyse.getDayInfo().get("ndayP").toString()) + 1;
 		}
 		else
 		{
 			// WE ARE AFTER PASCHA AND BEFORE THE END OF THE YEAR
-			filename = PENTECOSTARION_FILENAME;
+			filename = Constants.PENTECOSTARION_PATH;
 			lineNumber = nday + 1;
 		}
 
@@ -217,7 +219,7 @@ public class Primes extends LitService
 		else if(type.equals("Paschal"))
 		{
                     
-                    return ReadPrime.startService(SERVICES_FILENAME+"PaschalHours.xml");
+                    return ReadPrime.startService(Constants.SERVICES_PATH+"PaschalHours.xml");
 		}
 		
 		//I WOULD THEN NEED TO READ THE MENOLOGION, BUT I WILL NOT DO SO RIGHT NOW.
@@ -235,7 +237,7 @@ public class Primes extends LitService
 	       		{
 	       			analyse.getDayInfo().put("PFlag2",2);
 	       			//CREATE THE KATHISMA PART
-	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PKath.xml"),StandardCharsets.UTF_8));
+	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PKath.xml"),StandardCharsets.UTF_8));
 	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma"+lentenKat+"\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
@@ -250,18 +252,18 @@ public class Primes extends LitService
 	    		{
 	    		    	if(troparion2 != null)
 	    		    	{
-	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop1.xml"),StandardCharsets.UTF_8));
+	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop1.xml"),StandardCharsets.UTF_8));
 	    				String Data = TROPARION_OUTPUT_START + troparion1 + TROPARION_OUTPUT_END;
 	    				out.write(Data);
 	    				out.close();
 	    				
-	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop2.xml"),StandardCharsets.UTF_8));
+	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop2.xml"),StandardCharsets.UTF_8));
 	    				Data = TROPARION_OUTPUT_START + troparion2 + TROPARION_OUTPUT_END;
 	    				out.write(Data);
 	    				out.close();
 					
 	    		    	}
-    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PTrop2.xml"),StandardCharsets.UTF_8));
+    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop2.xml"),StandardCharsets.UTF_8));
 	    			String Data = TROPARION_OUTPUT_START + troparion1 + TROPARION_OUTPUT_END;
 	    			out.write(Data);
 	    			out.close();
@@ -273,14 +275,14 @@ public class Primes extends LitService
 	       	//APROPRIATE KONTAKION MUST STILL BE CREATED!
 	       	if (kontakion1 != null)
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES+analyse.getDayInfo().get("LS").toString()+SERVICES_FILENAME+"Var/PKont1.xml"),StandardCharsets.UTF_8));
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PKont1.xml"),StandardCharsets.UTF_8));
 	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    		out.write(Data);
 	    		out.close();
 		}
 	    	 		
 		//System.out.println("Primes Case A: ");
-		strOut=ReadPrime.startService(SERVICES_FILENAME + "Prime.xml")+"</p>";
+		strOut=ReadPrime.startService(Constants.SERVICES_PATH + "Prime.xml")+"</p>";
 	
 	   
 	     return strOut;	     	     

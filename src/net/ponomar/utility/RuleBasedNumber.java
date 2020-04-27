@@ -82,7 +82,7 @@ public class RuleBasedNumber implements DocHandler
     }
     private void initialise()
     {
-		String filename="xml/Commands/RuleBasedNumbers.xml";
+		String filename=Constants.COMMANDS+"RuleBasedNumbers.xml";
                 Helpers findLanguage=new Helpers(analyse.getDayInfo());
                 filename=findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(),filename);
 		try

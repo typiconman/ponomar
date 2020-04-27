@@ -14,15 +14,15 @@ public class Astronomy
 {
 	
 	// CONSTANTS
-	private static double INV360 = (1.0 / 360.0);
-	private static double RADEG  = (180.0 / Math.PI);
-	private static double DEGRAD = (Math.PI / 180.0);
-	private static boolean upper_limb = true;
-	protected final static double DEFAULT      = -0.833;
-	protected final static double CIVIL        = -6.0;
-	protected final static double NAUTICAL     = -12.0;
-	protected final static double AMATEUR      = -15.0;
-	protected final static double ASTRONOMICAL = -18.0;
+	private static final double INV360 = (1.0 / 360.0);
+	private static final double RADEG  = (180.0 / Math.PI);
+	private static final double DEGRAD = (Math.PI / 180.0);
+	private static final boolean UPPER_LIMB = true;
+	protected static final double DEFAULT      = -0.833;
+	protected static final double CIVIL        = -6.0;
+	protected static final double NAUTICAL     = -12.0;
+	protected static final double AMATEUR      = -15.0;
+	protected static final double ASTRONOMICAL = -18.0;
         
 
 	// MATHEMATICAL FUNCTIONS
@@ -171,7 +171,7 @@ public class Astronomy
 		double tsouth  = 12.0 - rev180( sidtime - sRAsdec[0] ) / 15.0;
 		double sradius = 0.2666 / sRAsdec[0];
 
-		if (upper_limb)
+		if (UPPER_LIMB)
 		{
 			altit -= sradius;
 		}
@@ -343,9 +343,6 @@ public class Astronomy
                 phase=PhaseNames[7];
             //System.out.println(todaysAge+" "+tomorrowsAge);
             }*/
-
-
-
 
              return phase;
         }

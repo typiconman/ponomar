@@ -3,6 +3,7 @@ package net.ponomar.readings.utility;
 import java.util.Vector;
 
 import net.ponomar.readings.Matins;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -27,7 +28,7 @@ public class ClassifyMatins extends ClassifyReadings {
         Information2=new OrderedHashtable();
         /*try {
             FileReader frf = new FileReader(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/Matins.xml"));
-            //System.out.println(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
+            //System.out.println(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), Constants.DIVINE_LITURGY));
             //DivineLiturgy a1 = new classifyReadin();
             QDParser.parse(this, frf);
         } catch (Exception e) {

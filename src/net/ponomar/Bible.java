@@ -9,6 +9,7 @@ import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.panels.PrintableTextPane;
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -45,9 +46,7 @@ GNU General Public License for details.
  ****************************************************************************************/
 public class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionListener {
 
-    private static final String BMLFILE = "Ponomar/languages/xml/bible.xml"; // SOURCE FILE
-    private static final String BIBPATH = "Ponomar/languages/";
-    // Parsing and navigation information
+	// Parsing and navigation information
     private String curversion = "kjv"; // DEFAULT VERSION
     private String curbook;
     private String curpassage;
@@ -113,7 +112,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
 
         // FIRST, PARSE THE BIBLE.XML FILE TO OBTAIN ALL THE NECESSARY INFORMATION
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(BMLFILE), StandardCharsets.UTF_8));	//Unicodised it.
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), StandardCharsets.UTF_8));	//Unicodised it.
             QDParser.parse(this, frf);
         } catch (Exception e) {
             System.out.println(captions[8] + e.toString());
@@ -180,7 +179,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         toolbar.putClientProperty("JToolBar.isRollover", Boolean.TRUE);
         toolbar.setFloatable(false);
         for (int bnum = 0; bnum < NUM_BUTTONS; bnum++) {
-            String imgLocation = "images/" + bnum + ".gif";
+            String imgLocation = Constants.IMAGES_RESOURCE_PATH + bnum + ".gif";
             URL imgURL = Bible.class.getResource(imgLocation);
 
             JButton button = new JButton();
@@ -461,7 +460,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             chapters = new OrderedHashtable();
             try {
 
-                BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(BMLFILE), "UTF8"));	//Unicodised it.
+                BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), "UTF8"));	//Unicodised it.
                 QDParser.parse(this, frf);
             } catch (Exception ew) {
                 System.out.println("Error reading bmlfile: " + ew.toString());
@@ -646,7 +645,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         LanguagePack getLang = new LanguagePack(analyse.getDayInfo());
         curversion = getLang.getPhrases().get("BibleV").toString();
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(BMLFILE), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), "UTF8"));
             QDParser.parse(this, frf);
         } catch (Exception e) {
             System.out.println(captions[8] + e.toString());
@@ -763,7 +762,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         //System.out.println("Bible: " + curversion);
 
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(BMLFILE), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), "UTF8"));
             QDParser.parse(this, frf);
         } catch (Exception e) {
             System.out.println(captions[9] + e.toString());
@@ -852,7 +851,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         curversion = getLang.getPhrases().get("BibleV").toString();
 
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(BMLFILE), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), "UTF8"));
             QDParser.parse(this, frf);
         } catch (Exception e) {
             System.out.println(captions[8] + e.toString());
@@ -929,7 +928,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     }
 
     public String[] readBibleFiles(String curbook, String curpassage, boolean RedStuff, Vector pVerses, Vector pChapters) {
-        String filename = BIBPATH + curversion + "/" + curbook + ".text";
+        String filename = Constants.LANGUAGES_PATH + "/" + curversion + "/" + curbook + ".text";
         String ret = "";
 
         try {
@@ -1028,7 +1027,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         curversion = getLang.getPhrases().get("BibleV").toString();
 
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(BMLFILE), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), "UTF8"));
             QDParser.parse(this, frf);
         } catch (Exception e) {
             System.out.println(captions[8] + e.toString());

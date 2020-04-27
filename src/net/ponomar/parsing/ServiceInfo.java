@@ -5,6 +5,7 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -28,7 +29,7 @@ ORDER FOR PRIMES ON A GIVEN DAY
 
 public class ServiceInfo implements DocHandler
 {
-	private static final String FILENAME   = "xml/Commands/ServiceRules.xml";
+	private static final String FILENAME   = Constants.COMMANDS + "ServiceRules.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
 	private static OrderedHashtable information;
@@ -58,7 +59,7 @@ public class ServiceInfo implements DocHandler
 		/*StringOp.dayInfo.put("dRank",1);	//ANY RANK LESS THAN 4 WILL DO
 		try
 		{
-			FileReader frf = new FileReader("Ponomar/xml/Commands/DivineLiturgy.xml");
+			FileReader frf = new FileReader(Constants.DIVINE_LITURGY);
 			QDParser.parse(this, frf);
 			int doy=Integer.parseInt(StringOp.dayInfo.get("doy").toString());
 			int nday=Integer.parseInt(StringOp.dayInfo.get("nday").toString());

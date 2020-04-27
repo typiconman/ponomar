@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 import javax.swing.event.*;
 
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -37,7 +38,7 @@ THE SOFTWARE.
  ***********************************************************************/
 public class Day implements DocHandler {
 
-    private static boolean read = false;
+	private static boolean read = false;
     private String filename;
     private int lineNumber;
     //private LanguagePack Text=new LanguagePack();
@@ -67,26 +68,24 @@ public class Day implements DocHandler {
     private String forComm;//=(String)Text.Phrases.get("Commemoration2");
     private static StringOp parameterValues = new StringOp();
 
-    public Day(String fileName, OrderedHashtable dayInfo) {
-        information = new OrderedHashtable();
-        readings = new OrderedHashtable();
-        royalHours = new OrderedHashtable();
-        parameterValues.setDayInfo(dayInfo);
-        helper = new Helpers(parameterValues.getDayInfo());
-        text = new LanguagePack(parameterValues.getDayInfo());
-    commNames = text.obtainValues((String) text.getPhrases().get("Commemoration"));
-mainNames=text.obtainValues((String)text.getPhrases().get("Main"));
-    toneNumbers= text.obtainValues((String)text.getPhrases().get("Tones"));
-    forComm=(String)text.getPhrases().get("Commemoration2");
-        counter = 0;
-        orderedCommemorations = new Vector<>();
-        dayRank = -100;
-         information.put("ID", fileName);
-        readDay(fileName);
+	public Day(String fileName, OrderedHashtable dayInfo) {
+		information = new OrderedHashtable();
+		readings = new OrderedHashtable();
+		royalHours = new OrderedHashtable();
+		parameterValues.setDayInfo(dayInfo);
+		helper = new Helpers(parameterValues.getDayInfo());
+		text = new LanguagePack(parameterValues.getDayInfo());
+		commNames = text.obtainValues((String) text.getPhrases().get("Commemoration"));
+		mainNames = text.obtainValues((String) text.getPhrases().get("Main"));
+		toneNumbers = text.obtainValues((String) text.getPhrases().get("Tones"));
+		forComm = (String) text.getPhrases().get("Commemoration2");
+		counter = 0;
+		orderedCommemorations = new Vector<>();
+		dayRank = -100;
+		information.put("ID", fileName);
+		readDay(fileName);
 
-
-
-    }
+	}
     protected Day(String fileName)
     {
        /*ParameterValues.getDayInfo()=StringOp.dayInfo;
@@ -305,13 +304,13 @@ mainNames=text.obtainValues((String)text.getPhrases().get("Main"));
             String nameF = cCom.getGrammar("Short");
             String[] iconSearch=text.obtainValues((String)text.getPhrases().get("IconSearch"));
             
-            File fileNew=new File(helper.langFileFind(parameterValues.getDayInfo().get("LS").toString(), "/icons/"+ cId + "/0.jpg"));
+            File fileNew=new File(helper.langFileFind(parameterValues.getDayInfo().get("LS").toString(), Constants.ICONS_RESOURCE_PATH + cId + "/0.jpg"));
             int countSearch=0;
             String languageString=parameterValues.getDayInfo().get("LS").toString();
             
             while (!(fileNew.exists()) && countSearch<iconSearch.length){
                 languageString=iconSearch[countSearch];
-                fileNew=new File(helper.langFileFind(iconSearch[countSearch], "/icons/"+ cId + "/0.jpg"));
+                fileNew=new File(helper.langFileFind(iconSearch[countSearch], Constants.ICONS_RESOURCE_PATH + cId + "/0.jpg"));
                 countSearch+=1;               
             }
 
@@ -325,9 +324,9 @@ mainNames=text.obtainValues((String)text.getPhrases().get("Main"));
                 iconImages.add(fileNew.toString());
                 iconNames.add(nameF);
                 counterI+=1;
-                fileNew=new File(helper.langFileFind(languageString, "/icons/"+ cId + "/"+counterI+".jpg"));
+                fileNew=new File(helper.langFileFind(languageString, Constants.ICONS_RESOURCE_PATH + cId + "/" +counterI+".jpg"));
             }
-        File file = new File("Ponomar/images/icons/" + cId + ".jpg");
+        File file = new File(Constants.ICONS_LOCATION + cId + ".jpg");
         if (file.exists()) {
             iconImages.add(file.toString());
             iconNames.add(nameF);

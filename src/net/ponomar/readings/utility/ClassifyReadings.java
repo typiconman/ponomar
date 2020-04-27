@@ -13,9 +13,6 @@ public class ClassifyReadings implements DocHandler {
 	/**
 	 * 
 	 */
-	private final String configFileName = "ponomar.config";
-	private final String triodionFileName = "xml/triodion/";
-	private final String pentecostarionFileName = "xml/pentecostarion/";
 	protected OrderedHashtable Information2;
 	public Vector dailyV = new Vector();
 	public Vector dailyR = new Vector();

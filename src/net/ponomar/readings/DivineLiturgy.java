@@ -6,6 +6,7 @@ import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.readings.utility.ClassifyDivineLiturgy;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -43,7 +44,7 @@ THE SOFTWARE.
  *************************************************************/
 public class DivineLiturgy extends Reading {
 
-    private static StringOp analyse=new StringOp();
+	private static StringOp analyse=new StringOp();
 
     public DivineLiturgy(OrderedHashtable dayInfo) {
         getAnalyse().setDayInfo(dayInfo);
@@ -106,7 +107,7 @@ public class DivineLiturgy extends Reading {
 
         //DETERMINE THE GOVERNING PARAMETERS FOR COMPILING THE READINGS
         try {
-            FileReader frf = new FileReader(getFindLanguage().langFileFind(getAnalyse().getDayInfo().get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
+            FileReader frf = new FileReader(getFindLanguage().langFileFind(getAnalyse().getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
             DivineLiturgy a1 = new DivineLiturgy(getAnalyse().getDayInfo());
             QDParser.parse(a1, frf);
         } catch (Exception e) {

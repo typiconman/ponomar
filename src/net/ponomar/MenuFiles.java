@@ -32,7 +32,7 @@ import java.beans.*;
 
 public class MenuFiles extends JMenu implements ItemListener, PropertyChangeListener {
 	JTextArea output;
-	String newline = "\n";
+	static final String NEWLINE = "\n";
 	GospelSelector gospelSelection; // ALLOWS THE USER TO NOTE WHEN THE GOSPEL LECTIONARY FORMAT IS CHANGED
 	LanguageSelector languageSelection; // DITTO FOR LANGUAGES
 	private LanguagePack text;// =new LanguagePack();
@@ -154,8 +154,8 @@ public class MenuFiles extends JMenu implements ItemListener, PropertyChangeList
 
 	public void itemStateChanged(ItemEvent e) {
 		JMenuItem source = (JMenuItem) (e.getSource());
-		String s = "Item event detected." + newline + "    Event source: " + source.getText() + " (an instance of "
-				+ getClassName(source) + ")" + newline + "    New state: "
+		String s = "Item event detected." + NEWLINE + "    Event source: " + source.getText() + " (an instance of "
+				+ getClassName(source) + ")" + NEWLINE + "    New state: "
 				+ ((e.getStateChange() == ItemEvent.SELECTED) ? "selected" : "unselected");
 		System.out.println(s);
 	}

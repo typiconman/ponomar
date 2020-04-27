@@ -8,6 +8,7 @@ import java.nio.charset.StandardCharsets;
 
 import net.ponomar.Bible;
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -34,8 +35,8 @@ TO END THE SERVICE READER CALL, closeService();
 
 public class Service implements DocHandler
 {
-	private static final String COMMONPRAYERS_FILENAME   = "xml/Services/CommonPrayers/";   // THE LOCATION OF THE BASIC SERVICE RULES
-	private static final String SERVICE_FILENAME="xml/Services/";
+	private static final String TIMES = Constants.COMMANDS + "Times.xml";
+	private static final String COMMONPRAYERS_FILENAME = Constants.SERVICES_PATH + "CommonPrayers/";   // THE LOCATION OF THE BASIC SERVICE RULES
 	public static String service1;
 	//private static String text;
 	private static boolean read=false;
@@ -165,7 +166,7 @@ public class Service implements DocHandler
 			String getFile=table.get("File").toString();
 			count++;
 			oldText[count]=service1;
-			readService(SERVICE_FILENAME+getFile+".xml");
+			readService(Constants.SERVICES_PATH+getFile+".xml");
 			int nullCheck=0;
 			if(table.get("Null")!=null)
 			{
@@ -191,7 +192,7 @@ public class Service implements DocHandler
 			String title=table.get("Header").toString();
 			ReadText textGet1=new ReadText(analyse.getDayInfo().clone());
                         whoLast="";
-			String text4=textGet1.readText(SERVICE_FILENAME+"Text/"+title+".xml");
+			String text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+title+".xml");
                         String ponomar=text.getPhrases().get("0").toString();
                         String colon=text.getPhrases().get("Colon").toString();
 			if(text4 != null)
@@ -204,7 +205,7 @@ public class Service implements DocHandler
 				header1=header1+serviceNames[0];
 			}
 			title=table.get("Value").toString();
-			text4=textGet1.readText(SERVICE_FILENAME+"Text/"+title+".xml");
+			text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+title+".xml");
 			if(text4 != null)
 			{
 				service1+="<h1> "+text4+"</h1>\n";
@@ -217,14 +218,14 @@ public class Service implements DocHandler
 			if(table.get("Source") != null)
 			{
 				String source=table.get("Source").toString();
-				text4=textGet1.readText(SERVICE_FILENAME+"Text/"+source+".xml");
+				text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+source+".xml");
 				service1+="<Font color=\"red\"><I><small>"+text4+"</small></I><BR>";
 			}
 			
 			if(table.get("Comment") != null)
 			{
 				String comment=table.get("Comment").toString();
-				text4=textGet1.readText(SERVICE_FILENAME+"Text/"+comment+".xml");
+				text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+comment+".xml");
 				if(text4 != null)
 				{
 					service1+="<I><small>"+text4+"</small></I><BR>";
@@ -241,7 +242,7 @@ public class Service implements DocHandler
                         whoLast="";
 
 			String subtitle=table.get("Value").toString();
-			String text4=textGet1.readText(SERVICE_FILENAME+"Text/"+subtitle+".xml");
+			String text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+subtitle+".xml");
 			if(text4 != null)
 			{
 				service1+="<h2> "+text4+"</h2>\n";
@@ -254,7 +255,7 @@ public class Service implements DocHandler
 			if(table.get("Comment") != null)
 			{
 				String comment=table.get("Comment").toString();
-				text4=textGet1.readText(SERVICE_FILENAME+"Text/"+comment+".xml");
+				text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+comment+".xml");
 				if(text4 != null)
 				{
 					service1+="<I><small>"+text4+"</small></I><BR>";
@@ -593,7 +594,7 @@ public class Service implements DocHandler
 			
 			try
 			{
-				String fileName="xml/Commands/Times.xml";
+				String fileName=TIMES;
 				BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(),fileName)), StandardCharsets.UTF_8));
 				QDParser.parse(this, frf1);
 			}
@@ -630,7 +631,7 @@ public class Service implements DocHandler
 		String textCommand="";
 		if(command != null)
 		{
-			String text3=textGet.readText(SERVICE_FILENAME+"Command/"+command+".xml");
+			String text3=textGet.readText(Constants.SERVICES_PATH+"Command/"+command+".xml");
 			
 			if(text3 != null)
 			{
@@ -646,7 +647,7 @@ public class Service implements DocHandler
                         
 			if (times != null)
 			{
-				String textR=textGet.readText(SERVICE_FILENAME+"Command/AfterEach.xml");
+				String textR=textGet.readText(Constants.SERVICES_PATH+"Command/AfterEach.xml");
 				if (textR !=null)
 				{
 					text2=text2+" <I><Font color=\"red\">("+textRepeat+textR+" "+textCommand+")</Font></I>";
@@ -674,7 +675,7 @@ public class Service implements DocHandler
 		
 		if(commandB != null)
 		{
-			String text3=textGet.readText(SERVICE_FILENAME+"Command/"+commandB+".xml");
+			String text3=textGet.readText(Constants.SERVICES_PATH+"Command/"+commandB+".xml");
 				
 			if(text3 != null)
 			{

@@ -3,6 +3,7 @@ package net.ponomar.panels;
 import javax.swing.*;
 
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -37,7 +38,6 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 	//private JDate date;
 	private JPanel iconImage;
         private JPanel caption;
-        private String pathImage="src/images/";
 	
         private int number=0;
         private String[] images;
@@ -81,7 +81,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 			//date = new JDate();
                     System.out.println(images.length);
                     images=new String[1];
-                    images[0]=text.getPhrases().get("NoIcon").toString();//"Ponomar/languages/icons/Default1.jpg";
+                    images[0]=Constants.DEFAULT_ICON;
                     names=new String[1];
                     names[0]=captions[2];
                     //return;
@@ -101,11 +101,11 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
                 // BufferedImage image = ImageIO.read(new File(path));
         //LoadAndShow test = new LoadAndShow(image);
 
-                String imgLocation = "images/0.gif";
+                String imgLocation = Constants.PREVIOUS_BUTTON;
                 URL imgURL = IconDisplay.class.getResource(imgLocation);
                 //System.out.println(imgURL);
 
-                previous = new JButton("<");
+                previous = new JButton();
                 previous.setActionCommand("previous");
                 previous.setToolTipText(captions[0]);
                 previous.addActionListener(this);
@@ -143,11 +143,11 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
                 caption.add(textPane,BorderLayout.CENTER);
                 caption.setMaximumSize(new Dimension(1000,1000));
                 //if(Images.length>1){
-                next = new JButton(">");
+                next = new JButton();
                 next.addActionListener(this);
                 next.setActionCommand("next");
                 next.setToolTipText(captions[1]);
-               imgURL = IconDisplay.class.getResource("images/2.gif");
+               imgURL = IconDisplay.class.getResource(Constants.NEXT_BUTTON);
                 if (imgURL != null) {
                     next.setIcon(new ImageIcon(imgURL, captions[1]));//captions[bnum]));
                 } else {
@@ -199,7 +199,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 			//date = new JDate();
                     //System.out.println(Images.length);
                     images=new String[1];
-                    images[0]=text.getPhrases().get("NoIcon").toString();//"Default1";
+                    images[0]=Constants.DEFAULT_ICON;
                     names=new String[1];
                     names[0]=captions[2];
                     //return;
@@ -222,7 +222,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
         private void updateImages() {
             //iconImage=new JPanel();
             iconImage.removeAll();
-            String iconLocation=pathImage+"icons/";
+            String iconLocation=Constants.ICON_PATH;
             //System.out.println(IconLocation+Images[Number]+".jpg");
              JLabel label;
             if (images[number].contains(".jpg")){
@@ -244,9 +244,21 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
              //System.out.println(image.getWidth() +" " + image.getHeight());
 
              //Testing something
+             
+             float iw = 0;
+             float ih = 0;
 
-             float iw = image.getWidth();
-            float ih = image.getHeight();
+             try {
+                 iw = image.getWidth();
+                 ih = image.getHeight();
+             } catch(NullPointerException e){
+            	 System.out.println("Error finding file: " + images[number]);
+            	 //Create fallback image
+            	 image = new BufferedImage(1, 1, 1);
+            	 e.printStackTrace();
+             }
+             
+
             float pw = this.getWidth()*(float)0.95;   //panel width
             float ph = this.getHeight()*(float)0.8;  //panel height
             //System.out.println("pw=" +pw+ " ph="+ph);
@@ -371,7 +383,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
             number=0;
             images=imagesF;
             names=namesF;
-            System.out.println(images.length);
+            //System.out.println(images.length);
             //text=new JTextPane();
             //System.out.println(Names[0]);
             //System.out.println(NamesF[0]);
@@ -380,7 +392,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 			//date = new JDate();
                     //System.out.println(Images.length);
                     images=new String[1];
-                    images[0]=text.getPhrases().get("NoIcon").toString();//"Ponomar/languages/icons/Default1.jpg";
+                    images[0]=Constants.DEFAULT_ICON;
                     names=new String[1];
                     names[0]=captions[2];
                     //return;
@@ -403,8 +415,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
         private void updateImages2(){
             //iconImage=new JPanel();
             iconImage.removeAll();
-            String iconLocation=pathImage+"icons/";
-            //System.out.println(IconLocation+Images[Number]+".jpg");
+            //System.out.println(Constants.ICON_PATH+Images[Number]+".jpg");
             JLabel label= new JLabel(new ImageIcon(images[number]));
             label.setHorizontalAlignment(JLabel.CENTER);
             iconImage.add(label);

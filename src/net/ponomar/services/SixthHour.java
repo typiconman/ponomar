@@ -12,6 +12,7 @@ import net.ponomar.parsing.Day;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.parsing.Service;
 import net.ponomar.parsing.ServiceInfo;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 
@@ -42,7 +43,7 @@ public class SixthHour extends LitService {
 	private static final String SERVICE_LANGUAGE = "<SERVICE>\r\n<LANGUAGE>\r\n";
 	private static final String LANGUAGE_SERVICE = "\r\n</LANGUAGE>\r\n</SERVICE>";
 	private static final String GETID_TYPE_T_ID = "\r\n<GETID Type=\"T\" Id=\"";
-	private static String fileNameIn = "xml/Services/PRIMES1/";
+	private static String fileNameIn = Constants.SERVICES_PATH + "PRIMES1/";
     private static String fileNameOut = fileNameIn + "Primes.html";
     private PrimeSelector selectorP;// = new PrimeSelector();
     private String reading6th = "";
@@ -149,15 +150,15 @@ public class SixthHour extends LitService {
         int nday = Integer.parseInt(analyse.getDayInfo().get("nday").toString());
 
         if (nday >= -70 && nday < 0) {
-            filename = TRIODION_FILENAME;
+            filename = Constants.TRIODION_PATH;
             lineNumber = Math.abs(nday);
         } else if (nday < -70) {
             // WE HAVE NOT YET REACHED THE LENTEN TRIODION
-            filename = PENTECOSTARION_FILENAME;
+            filename = Constants.PENTECOSTARION_PATH;
             lineNumber = Integer.parseInt(analyse.getDayInfo().get("ndayP").toString()) + 1;
         } else {
             // WE ARE AFTER PASCHA AND BEFORE THE END OF THE YEAR
-            filename = PENTECOSTARION_FILENAME;
+            filename = Constants.PENTECOSTARION_PATH;
             lineNumber = nday + 1;
         }
 
@@ -204,7 +205,7 @@ public class SixthHour extends LitService {
             return "No Service Today";
         } else if (type.equals("Paschal")) {
 
-            return ReadPrime.startService(SERVICES_FILENAME + "PaschalHours.xml");
+            return ReadPrime.startService(Constants.SERVICES_PATH + "PaschalHours.xml");
         }
 
         //I WOULD THEN NEED TO READ THE MENOLOGION, BUT I WILL NOT DO SO RIGHT NOW.
@@ -222,44 +223,44 @@ public class SixthHour extends LitService {
             if (lentenKat != null) {
                 analyse.getDayInfo().put("PFlag2", 2);
                 //CREATE THE KATHISMA PART
-                BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PKath6.xml"), StandardCharsets.UTF_8));
+                BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PKath6.xml"), StandardCharsets.UTF_8));
                 String Data = "<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma" + lentenKat + "\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
                 out.write(Data);
                 out.close();
             }
             //System.out.println("Hello Lent b");
-            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/TP6R.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/TP6R.xml"), StandardCharsets.UTF_8));
             //System.out.println(Reading6th);
             String Data = SERVICE_LANGUAGE;
-            BufferedWriter out1a = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/TP6C.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out1a = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/TP6C.xml"), StandardCharsets.UTF_8));
             String Data1a = SERVICE_LANGUAGE;
-            BufferedWriter out1 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PROK61R.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out1 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK61R.xml"), StandardCharsets.UTF_8));
             String Data1 = SERVICE_LANGUAGE;
-            BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PROK61C.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK61C.xml"), StandardCharsets.UTF_8));
             String Data2 = SERVICE_LANGUAGE;
-            BufferedWriter out3 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/STYX61R.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out3 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/STYX61R.xml"), StandardCharsets.UTF_8));
             String Data3 = SERVICE_LANGUAGE;
-            BufferedWriter out4 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/STYX61C.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out4 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/STYX61C.xml"), StandardCharsets.UTF_8));
             String Data4 = SERVICE_LANGUAGE;
-            BufferedWriter out5 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PROK61a.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out5 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK61a.xml"), StandardCharsets.UTF_8));
             String Data5 = SERVICE_LANGUAGE;
-            BufferedWriter out6 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PROK61b.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out6 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK61b.xml"), StandardCharsets.UTF_8));
             String Data6 = SERVICE_LANGUAGE;
-            BufferedWriter out7 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/Intro6.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out7 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/Intro6.xml"), StandardCharsets.UTF_8));
             String Data7 = SERVICE_LANGUAGE;
-            BufferedWriter out8 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/Reading6.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out8 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/Reading6.xml"), StandardCharsets.UTF_8));
             String Data8 = SERVICE_LANGUAGE;
-            BufferedWriter out9 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PROK62R.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out9 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK62R.xml"), StandardCharsets.UTF_8));
             String Data9 = SERVICE_LANGUAGE;
-            BufferedWriter out10 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PROK62C.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out10 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK62C.xml"), StandardCharsets.UTF_8));
             String Data10 = SERVICE_LANGUAGE;
-            BufferedWriter out11 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/STYX62R.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out11 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/STYX62R.xml"), StandardCharsets.UTF_8));
             String Data11 = SERVICE_LANGUAGE;
-            BufferedWriter out12 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/STYX62C.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out12 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/STYX62C.xml"), StandardCharsets.UTF_8));
             String Data12 = SERVICE_LANGUAGE;
-            BufferedWriter out13 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PROK62a.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out13 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK62a.xml"), StandardCharsets.UTF_8));
             String Data13 = SERVICE_LANGUAGE;
-            BufferedWriter out14 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PROK62b.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out14 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK62b.xml"), StandardCharsets.UTF_8));
             String Data14 = SERVICE_LANGUAGE;
             if (reading6th != null) {
                 if (reading6th.length() > 0) {
@@ -345,10 +346,10 @@ public class SixthHour extends LitService {
             //CREATE THE FIRST TROPAR (BEFORE THE Glory...) PART, IF ANY
             //CREATE THE SECOND TROPAR (NORMAL)
             //APPROPRIATE TROPAR STILL NEEDS TO BE DETERMINED!!
-            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PTrop61.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PTrop61.xml"), StandardCharsets.UTF_8));
             String Data = "<SERVICE>\r\n<LANGUAGE>";
             String Data2 = "<SERVICE>\r\n<LANGUAGE>";
-            BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PTrop62.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PTrop62.xml"), StandardCharsets.UTF_8));
             if (troparion1 != null) {
                 System.out.println("The first Troparion is " + troparion1 + " Troparion2 is " + troparion2);
                 if (troparion2 != null) {
@@ -380,7 +381,7 @@ public class SixthHour extends LitService {
         //APROPRIATE KONTAKION MUST STILL BE CREATED!
        // System.out.println(Kontakion1);
         if (kontakion1 != null) {
-            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(PONOMAR_LANGUAGES + analyse.getDayInfo().get("LS").toString() + SERVICES_FILENAME + "Var/PKont6.xml"), StandardCharsets.UTF_8));
+            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PKont6.xml"), StandardCharsets.UTF_8));
             String Data = "<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"SR\" What=\"KONTAKION/" + kontakion1 + "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
             out.write(Data);
             out.close();
@@ -388,7 +389,7 @@ public class SixthHour extends LitService {
         //Else we are dealing with a Lenten service that does not have any variable parts.
         //System.out.println("Sixth Hour: "+Analyse.getDayInfo().get("PFlag3"));
 
-        strOut = ReadPrime.startService(SERVICES_FILENAME + "SixthHour.xml") + "</p>";
+        strOut = ReadPrime.startService(Constants.SERVICES_PATH + "SixthHour.xml") + "</p>";
 
 
         return strOut;

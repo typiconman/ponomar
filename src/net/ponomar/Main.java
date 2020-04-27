@@ -33,6 +33,7 @@ import net.ponomar.services.Primes;
 import net.ponomar.services.RoyalHours;
 import net.ponomar.services.SixthHour;
 import net.ponomar.services.ThirdHour;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.RuleBasedNumber;
@@ -63,11 +64,6 @@ GNU General Public License for details.
 public class Main extends JFrame implements PropertyChangeListener, HyperlinkListener, ActionListener {
     // First, some relevant constants
 
-    private static final String CONFIG_FILENAME = "ponomar.config"; // CONFIGURATIONS FILE
-    //private final static String generalFileName="Ponomar/xml/";
-    private static final String TRIODION_FILENAME = "xml/triodion/";   // TRIODION FILE
-    private static final String PENTECOSTARION_FILENAME = "xml/pentecostarion/"; // PENTECOSTARION FILE
-    private static final String NEWLINE = "\n";
     private static final String READINGS_KEY = "Readings";
     // Elements of the interface
     JDate today; 		// "TODAY" (I.E. THE DATE WE'RE WORKING WITH
@@ -313,6 +309,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         Helpers helper = new Helpers(analyse.getDayInfo());
         JMenuItem source = (JMenuItem) (e.getSource());
         String name = source.getText();
+
         if (name.equals(helpNames[2])) {
             //new About();
             Helpers orient = new Helpers(analyse.getDayInfo());
@@ -385,7 +382,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
         }
 
-        String s = "Action event detected." + NEWLINE + "    Event source: " + source.getText() + " (an instance of " + getClassName(source) + ")";
+        String s = "Action event detected." + Constants.NEWLINE + "    Event source: " + source.getText() + " (an instance of " + getClassName(source) + ")";
         System.out.println(s);
         //output.append(s + newline);
         //output.setCaretPosition(output.getDocument().getLength());
@@ -488,16 +485,16 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         output += getAstronomicalData();
 
         if (nday >= -70 && nday < 0) {
-            filename = TRIODION_FILENAME;
+            filename = Constants.TRIODION_PATH;
             lineNumber = Math.abs(nday);
         } else if (nday < -70) {
             // WE HAVE NOT YET REACHED THE LENTEN TRIODION
-            filename = PENTECOSTARION_FILENAME;
+            filename = Constants.PENTECOSTARION_PATH;
             JDate lastPascha = Paschalion.getPascha(today.getYear() - 1);
             lineNumber = (int) JDate.difference(today, lastPascha) + 1;
         } else {
             // WE ARE AFTER PASCHA AND BEFORE THE END OF THE YEAR
-            filename = PENTECOSTARION_FILENAME;
+            filename = Constants.PENTECOSTARION_PATH;
             lineNumber = nday + 1;
         }
 
@@ -783,7 +780,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 	private String getFormat(String amc) {
 		String format = "";
         if (amc.equals("1")) {
-            PCalendar checking = new PCalendar(today, PCalendar.julian, analyse.getDayInfo());
+            PCalendar checking = new PCalendar(today, PCalendar.JULIAN, analyse.getDayInfo());
             format = (String) phrases.getPhrases().get("AM");
             if (analyse.getDayInfo().get("Ideographic").equals("1"))
                 {

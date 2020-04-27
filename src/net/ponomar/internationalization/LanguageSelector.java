@@ -3,6 +3,7 @@ package net.ponomar.internationalization;
 import javax.swing.*;
 
 import net.ponomar.ConfigurationFiles;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -93,7 +94,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 		{
                     //System.out.println(AvailableLanguages[i]);
                     Helpers getFile=new Helpers(Analyse.getDayInfo());
-                    LanguagePack lang=new LanguagePack(getFile.langFileFind(AvailableLanguages[i],"xml/Commands/LanguagePacks.xml"),Analyse.getDayInfo().clone());
+                    LanguagePack lang=new LanguagePack(getFile.langFileFind(AvailableLanguages[i], Constants.LANGUAGE_PACKS),Analyse.getDayInfo().clone());
                     NameLanguages[i]= lang.getPhrases().get("NameLocal").toString();
                     LanguageBox=new JRadioButtonMenuItem((String) lang.getPhrases().get("NameLocal").toString());
 			LanguageBox.addActionListener(this);	

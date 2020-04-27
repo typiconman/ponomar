@@ -4,6 +4,7 @@ import javax.swing.*;
 
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 
 import java.beans.*;
@@ -49,8 +50,8 @@ public class ConfigurationFiles implements DocHandler
 		
 		try
 		{
-			//FileReader frf = new FileReader("Ponomar/xml/ponomar.config");
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream("src/languages/xml/ponomar.config"), "UTF8"));
+			//FileReader frf = new FileReader("Constants.CONFIG_FILE)");
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.CONFIG_FILE), "UTF8"));
 			//OutputStreamWriter out = new OutputStreamWriter(new ByteArrayOutputStream());
 			//System.out.println(out.getEncoding());
 
@@ -70,8 +71,8 @@ public class ConfigurationFiles implements DocHandler
 				
 		try
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src/languages/xml/ponomar.config"),"UTF8"));
-			//BufferedWriter out = new BufferedWriter(new FileWriter("Ponomar/xml/ponomar.config"));//,"UT8");
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.CONFIG_FILE),"UTF8"));
+			//BufferedWriter out = new BufferedWriter(new FileWriter("Constants.CONFIG_FILE)"));//,"UT8");
 			out.write("<CONFIGURATION>");
 			out.newLine();
 			output="<DEFAULT ";

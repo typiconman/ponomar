@@ -178,7 +178,7 @@ public class Helpers
         public String langFileFind(String languagePath, String basePath)
         {
             
-            String addon="src/languages/";
+            final String addon=Constants.LANGUAGES_PATH+"/";
             String currentPath=languagePath;
             /*if(LanguagePath==null){
                 return "ERROR";

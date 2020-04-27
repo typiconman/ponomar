@@ -29,14 +29,14 @@ import net.ponomar.utility.OrderedHashtable;
 public final class Paschalion
 {
 	// THE LENGTH OF A LUNAR MONTH
-	private final static double lunarMonth = 29.52916667;
-	private final static double lengthOfRem = 0.016932411; // SEE COMMENTS IN getLunarPhaseString()
+	private static final double LUNAR_MONTH = 29.52916667;
+	private static final double LENGTH_OF_REM = 0.016932411; // SEE COMMENTS IN getLunarPhaseString()
 
 	// THE FOUNDATION IS THE "AGE OF THE MOON" (NUMBER OF DAYS SINCE NEW MOON)
 	// ON 1 MARCH, JULIAN CALENDAR, FOR A PARTICULAR LUNAR YEAR
 	// THERE ARE 19 YEARS IN THE METONIC CYCLE
 	// IN THIS CALCULATION, IT IS HOURS SINCE MIDNIGHT
-	private final static double foundation[] = new double[]
+	private static final double FOUNDATION[] = new double[]
 	{14.042016807, 25.462184874, 6.084033613, 17.966386555, 28.336134454, 9.210084034, 20.504201681, 1.420168067, 12.294117647, 23.168067227, 4.546218487, 15.042016807, 26.294117647, 7.630252101, 18.546218487, 29.420168067, 11.756302521, 26.210084034, 3.042016807};
 
 	// A mod OPERATOR
@@ -269,16 +269,16 @@ public final class Paschalion
 
 		// TAKE THE DIFFERENCE MODULO THE LENGTH OF A LUNAR MONTH
 		// TO FIND THE REMAINDER OF THE MOON VIS-A-VIS MAR 1
-		double remainder = mod((double)diff, lunarMonth);
+		double remainder = mod((double)diff, LUNAR_MONTH);
 		// ADD THIS REMAINDER TO THE AGE OF THE MOON ON MAR 1
-		remainder += foundation[cycle - 1];
-		while (remainder >= lunarMonth)
+		remainder += FOUNDATION[cycle - 1];
+		while (remainder >= LUNAR_MONTH)
 		{
-			remainder -= lunarMonth;
+			remainder -= LUNAR_MONTH;
 		}
 
 		// SCALE THE AGE OF THE MOON TO A MORE MANAGEABLE QUANTITY
-		return (remainder / lunarMonth);
+		return (remainder / LUNAR_MONTH);
 	}
 
 	// CONVERT ABOVE TO A STRING WITH THE PHASE OF THE MOON
@@ -302,35 +302,35 @@ public final class Paschalion
 		// ALL OTHER PHASES ARE ANALAGOUS
 		LanguagePack Text=new LanguagePack(dayInfo);
 		String[] Phases=Text.obtainValues((String)Text.getPhrases().get("Phases"));
-		if (raw < lengthOfRem || raw > 1 - lengthOfRem)
+		if (raw < LENGTH_OF_REM || raw > 1 - LENGTH_OF_REM)
 		{
 			ret =Phases[0];
 		}
-		else if (raw < 0.25 - lengthOfRem)
+		else if (raw < 0.25 - LENGTH_OF_REM)
 		{
 			ret =Phases[1];
 		}
-		else if (raw >= 0.25 - lengthOfRem && raw <= 0.25 + lengthOfRem)
+		else if (raw >= 0.25 - LENGTH_OF_REM && raw <= 0.25 + LENGTH_OF_REM)
 		{
 			ret = Phases[2];
 		}
-		else if (raw < 0.5 - lengthOfRem)
+		else if (raw < 0.5 - LENGTH_OF_REM)
 		{
 			ret = Phases[3];
 		}
-		else if (raw >= 0.5 - lengthOfRem && raw <= 0.5 + lengthOfRem)
+		else if (raw >= 0.5 - LENGTH_OF_REM && raw <= 0.5 + LENGTH_OF_REM)
 		{
 			ret = Phases[4];
 		}
-		else if (raw < 0.75 - lengthOfRem)
+		else if (raw < 0.75 - LENGTH_OF_REM)
 		{
 			ret =Phases[5];
 		}
-		else if (raw >= 0.75 - lengthOfRem && raw <= 0.75 + lengthOfRem)
+		else if (raw >= 0.75 - LENGTH_OF_REM && raw <= 0.75 + LENGTH_OF_REM)
 		{
 			ret = Phases[6];
 		}
-		else if (raw >= 0.75 + lengthOfRem)
+		else if (raw >= 0.75 + LENGTH_OF_REM)
 		{
 			ret = Phases[7];
 		}
@@ -354,10 +354,10 @@ public final class Paschalion
 		}
 
 		// OBTAIN THE AGE OF THE MOON (AGAIN)
-		phase *= lunarMonth;
+		phase *= LUNAR_MONTH;
 
 		// CALCULATE HOW MANY DAYS REMAIN UNTIL PHASE == LUNARMONTH
-		int diff = (int)Math.floor(lunarMonth - phase);
+		int diff = (int)Math.floor(LUNAR_MONTH - phase);
 
 		// ADD THAT MANY DAYS TO THE CURRENT DATE
 		date.addDays(diff);
@@ -380,13 +380,13 @@ public final class Paschalion
 		}
 
 		// OBTAIN THE AGE OF THE MOON
-		phase *= lunarMonth;
+		phase *= LUNAR_MONTH;
 
 		// FIND OUT HOW MANY REMAIN UNTIL PHASE == LUNARMONTH / 2
-		int diff = (int)Math.floor(lunarMonth / 2 - phase);
+		int diff = (int)Math.floor(LUNAR_MONTH / 2 - phase);
 		if (diff < 0)
 		{
-			diff = (int)Math.floor(lunarMonth / 2 - phase + lunarMonth);
+			diff = (int)Math.floor(LUNAR_MONTH / 2 - phase + LUNAR_MONTH);
 		}
 
 		// ADD THIS MANY DAYS TO THE CURRENT DATE

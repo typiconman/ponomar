@@ -14,8 +14,8 @@ public class PCalendar implements Cloneable
 	private double difference; //Stores the associated difference in days between Julian and Gregorian calendars
         private String type; //Stores which calendar I am dealing with. At present only Gregorian and Julian.
         private JDate date; //Stores the date associated with the given calendar.
-        public final static String julian="julian"; //Fixes the spelling of the Julian option
-        public final static String gregorian="gregorian"; //Fixes the spelling of the Gregorian option
+        public final static String JULIAN="julian"; //Fixes the spelling of the Julian option
+        public final static String GREGORIAN="gregorian"; //Fixes the spelling of the Gregorian option
         private StringOp Analyse=new StringOp();
 
         public PCalendar(JDate date1, String calendar,OrderedHashtable dayInfo){
@@ -34,7 +34,7 @@ public class PCalendar implements Cloneable
             }
             double A=Math.floor(y/100);
             double B=0;
-            if (type.equals(gregorian) && (y > 1582 || y == 1582 && m > 10 || y == 1582 && m == 10 && d > 14)){
+            if (type.equals(GREGORIAN) && (y > 1582 || y == 1582 && m > 10 || y == 1582 && m == 10 && d > 14)){
                 //Note if the user specifies the Gregorian calendar before its existence, it will not be honoured.
                 B=2-A+Math.floor(A/4);
             }
@@ -48,10 +48,10 @@ public class PCalendar implements Cloneable
         public int getAM(){
             //returns the corresponding anno mundi given the date.
             difference=0;
-            if (type.equals(gregorian)){
+            if (type.equals(GREGORIAN)){
                 difference=getDiff();
             }
-            PCalendar cutoff=new PCalendar(new JDate(9,1,date.getYear()),julian,Analyse.getDayInfo().clone());
+            PCalendar cutoff=new PCalendar(new JDate(9,1,date.getYear()),JULIAN,Analyse.getDayInfo().clone());
             double year=date.getYear();
             double AM=5508- Math.floor(difference / 365) + year;
             if (JulianDay()>=cutoff.JulianDay()){
@@ -60,8 +60,8 @@ public class PCalendar implements Cloneable
             return (int)AM;
         }
         public double getDiff(){
-            PCalendar test=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),julian,Analyse.getDayInfo().clone());
-            PCalendar test2=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),gregorian,Analyse.getDayInfo().clone());
+            PCalendar test=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),JULIAN,Analyse.getDayInfo().clone());
+            PCalendar test2=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),GREGORIAN,Analyse.getDayInfo().clone());
             return (test.JulianDay()-test2.JulianDay());
         }
 
@@ -163,18 +163,18 @@ public class PCalendar implements Cloneable
 	{
             OrderedHashtable dayInfo=new OrderedHashtable();
             dayInfo.put("LS", "en/");
-            PCalendar test=new PCalendar(new JDate(10,4,1957),gregorian,dayInfo);
+            PCalendar test=new PCalendar(new JDate(10,4,1957),GREGORIAN,dayInfo);
             System.out.println(test.JulianDay());
-            test=new PCalendar(new JDate(1,27,333),julian,dayInfo);
+            test=new PCalendar(new JDate(1,27,333),JULIAN,dayInfo);
             System.out.println(test.JulianDay());
-            test=new PCalendar(new JDate(1,14,2012),julian,dayInfo);
-            PCalendar test2=new PCalendar(new JDate(1,14,2012),gregorian,dayInfo);
+            test=new PCalendar(new JDate(1,14,2012),JULIAN,dayInfo);
+            PCalendar test2=new PCalendar(new JDate(1,14,2012),GREGORIAN,dayInfo);
             System.out.println(test.JulianDay()-test2.JulianDay());
 
             System.out.println("Anno Mundi: "+test.getAM());
-            test=new PCalendar(new JDate(9,14,2012),julian,dayInfo);
+            test=new PCalendar(new JDate(9,14,2012),JULIAN,dayInfo);
             System.out.println("Anno Mundi: "+test.getAM());
-            test=new PCalendar(new JDate(9,14,458973),gregorian,dayInfo);
+            test=new PCalendar(new JDate(9,14,458973),GREGORIAN,dayInfo);
             System.out.println("Anno Mundi: "+test.getAM());
 	}
 

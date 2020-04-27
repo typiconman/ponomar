@@ -10,15 +10,13 @@ import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.parsing.Day;
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.readings.utility.ReadingUtility;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
 public abstract class Reading implements DocHandler {
 
-	protected static final String CONFIG_FILENAME = "ponomar.config";
-	protected static final String TRIODION_FILENAME = "xml/triodion/";
-	protected static final String PENTECOSTARION_FILENAME = "xml/pentecostarion/";
 	private static OrderedHashtable readings;
 	private static OrderedHashtable pentecostarionS;
 	private static OrderedHashtable menalogionS;
@@ -71,16 +69,16 @@ public abstract class Reading implements DocHandler {
         //I COPIED THIS FROM THE Main.java FILE BY ALEKS WITH MY MODIFICATIONS (Y.S.)
         //FROM HERE UNTIL
         if (nday >= -70 && nday < 0) {
-            filename = TRIODION_FILENAME;
+            filename = Constants.TRIODION_PATH;
             lineNumber = Math.abs(nday);
         } else if (nday < -70) {
             // WE HAVE NOT YET REACHED THE LENTEN TRIODION
-            filename = PENTECOSTARION_FILENAME;
+            filename = Constants.PENTECOSTARION_PATH;
             JDate lastPascha = Paschalion.getPascha(today.getYear() - 1);
             lineNumber = (int) JDate.difference(today, lastPascha) + 1;
         } else {
             // WE ARE AFTER PASCHA AND BEFORE THE END OF THE YEAR
-            filename = PENTECOSTARION_FILENAME;
+            filename = Constants.PENTECOSTARION_PATH;
             lineNumber = nday + 1;
         }
 

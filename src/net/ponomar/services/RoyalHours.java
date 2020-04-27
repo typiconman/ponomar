@@ -7,6 +7,7 @@ import net.ponomar.MenuFiles;
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.parsing.Service;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 
@@ -111,7 +112,7 @@ public class RoyalHours extends LitService {
 		String strOut = "";
 		// IT IS TO BE DECIDED WHETHER IT IS DESIRED TO SET THE TROPARIA PROPERLY!
 
-		strOut = readHours.startService(SERVICES_FILENAME + "RoyalHours.xml") + "</p>";
+		strOut = readHours.startService(Constants.SERVICES_PATH + "RoyalHours.xml") + "</p>";
 
 		return strOut;
 	}

@@ -7,13 +7,14 @@ import java.util.Vector;
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.readings.DivineLiturgy;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
 public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandler {
 
-        public ClassifyDivineLiturgy() {
+		public ClassifyDivineLiturgy() {
         }
 
         public ClassifyDivineLiturgy(OrderedHashtable readingsInA) {
@@ -33,10 +34,10 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
             //Initialise Information.
             Information2=new OrderedHashtable();
             DivineLiturgy.setFindLanguage(new Helpers(ParameterValues.getDayInfo()));
-            //System.out.println(findLanguage.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
+            //System.out.println(findLanguage.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
             try {
-                FileReader frf = new FileReader(DivineLiturgy.getFindLanguage().langFileFind(ParameterValues.getDayInfo().get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
-                //System.out.println(findLanguage.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
+                FileReader frf = new FileReader(DivineLiturgy.getFindLanguage().langFileFind(ParameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
+                //System.out.println(findLanguage.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
                 //DivineLiturgy a1 = new classifyReadin();
                 QDParser.parse(this, frf);
             } catch (Exception e) {

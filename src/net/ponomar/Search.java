@@ -8,6 +8,7 @@ import java.io.*;
 import javax.swing.event.*;
 
 import net.ponomar.parsing.Commemoration;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -34,6 +35,7 @@ THIS MODULE CREATES THE TEXT FOR THE SEARCHING FOR COMMEMORATIONS ACCROSS LANGUA
 ***********************************************************************/
 public class Search extends JFrame implements ActionListener
 {
+	private static final String LIVES_PATH = "xml/lives/";
 	//SOME QUICK NOTES FOR FURTHER IMPLEMENTATION:
 	//THE DATE OR THE RELEVANT INFORMATION WILL HAVE TO BE GIVEN
 	//TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
@@ -125,7 +127,7 @@ public class Search extends JFrame implements ActionListener
             System.out.println("Hello");
             String search = searchTerm.getText();
             //Will only search English
-            File folder = new File("Ponomar/languages/en/xml/lives");
+            File folder = new File(Constants.LANGUAGES_PATH + "/en/" + LIVES_PATH);
             File[] listOfFiles = folder.listFiles();
             System.out.println(listOfFiles.length);
 
@@ -141,37 +143,37 @@ public class Search extends JFrame implements ActionListener
                         if (nameF.contains(search)){
                             found+=file.getName().subSequence(0, file.getName().length()-4)+"\t"+nameF+"\t";
                             count+=1;
-                            if (new File("Ponomar/languages/fr/xml/lives/"+file.getName()).exists()){
+                            if (new File(Constants.LANGUAGES_PATH + "/fr/" + LIVES_PATH + file.getName()).exists()){
                                 found+="Exists;\t";
                             }else{
                                 found+="N/A;\t";
                             }
-                            if (new File("Ponomar/languages/cu/xml/lives/"+file.getName()).exists()){
+                            if (new File(Constants.LANGUAGES_PATH + "/cu/" + LIVES_PATH + file.getName()).exists()){
                                 found+="Exists;\t";
                             }else{
                                 found+="N/A;\t";
                             }
-                            if (new File("Ponomar/languages/cu/ru/xml/lives/"+file.getName()).exists()){
+                            if (new File(Constants.LANGUAGES_PATH + "/cu/ru/" + LIVES_PATH + file.getName()).exists()){
                                 found+="Exists;\t";
                             }else{
                                 found+="N/A;\t";
                             }
-                            if (new File("Ponomar/languages/zh/Hant/xml/lives/"+file.getName()).exists()){
+                            if (new File(Constants.LANGUAGES_PATH + "/zh/Hant/" + LIVES_PATH + file.getName()).exists()){
                                 found+="Exists;\t";
                             }else{
                                 found+="N/A;\t";
                             }
-                            if (new File("Ponomar/languages/zh/Hans/xml/lives/"+file.getName()).exists()){
+                            if (new File(Constants.LANGUAGES_PATH + "/zh/Hans/" + LIVES_PATH + file.getName()).exists()){
                                 found+="Exists;\t";
                             }else{
                                 found+="N/A;\t";
                             }
-                            if (new File("Ponomar/languages/el/xml/lives/"+file.getName()).exists()){
+                            if (new File(Constants.LANGUAGES_PATH + "/el/" + LIVES_PATH + file.getName()).exists()){
                                 found+="Exists;\t";
                             }else{
                                 found+="N/A;\t";
                             }
-                            if (new File("Ponomar/languages/el/mono/xml/lives/"+file.getName()).exists()){
+                            if (new File(Constants.LANGUAGES_PATH + "/el/mono/" + LIVES_PATH + file.getName()).exists()){
                                 found+="Exists;\t";
                             }else{
                                 found+="N/A;\t";

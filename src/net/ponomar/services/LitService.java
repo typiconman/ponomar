@@ -30,6 +30,7 @@ import net.ponomar.panels.PrimeSelector;
 import net.ponomar.panels.PrintableTextPane;
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -39,14 +40,9 @@ import net.ponomar.utility.StringOp;
  ***********************************************************************/
 public abstract class LitService implements DocHandler, ActionListener, ItemListener, PropertyChangeListener {
 
-	protected static final String CONFIG_FILENAME = "ponomar.config";
-	protected static final String OCTOECHEOS_FILENAME = "xml/Services/Octoecheos/";
-	protected static final String SERVICES_FILENAME = "xml/Services/";
-	protected static final String TRIODION_FILENAME   = "xml/triodion/"; // TRIODION FILE
-	protected static final String PENTECOSTARION_FILENAME = "xml/pentecostarion/"; // PENTECOSTARION FILE
+	protected static final String OCTOECHEOS_FILENAME = Constants.SERVICES_PATH + "Octoecheos/";
 	protected static final String TROPARION_OUTPUT_START = "<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/";
 	protected static final String TROPARION_OUTPUT_END = "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
-	protected static final String PONOMAR_LANGUAGES = "Ponomar/languages/";
 	protected static final String LENTENK = "LENTENK";
 	protected static final String NEWLINE = "\n";
 	protected static OrderedHashtable primesTK;

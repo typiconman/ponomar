@@ -7,6 +7,7 @@ import java.util.*;
 import java.io.*;
 import javax.swing.event.*;
 
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -47,14 +48,14 @@ public class UsualBeginning
 		analyse.getDayInfo().put("PS",1);
 		analyse.getDayInfo().put("nday",250);
 		analyse.getDayInfo().put("LS",0);
-		final String UsualFileName = "Ponomar/xml/Services/UsualBeginning/"; // THE LOCATION FOR ANY EXTRA INFORMATION
+		final String UsualFileName = "src/"+ Constants.SERVICES_PATH + "UsualBeginning/"; // THE LOCATION FOR ANY EXTRA INFORMATION
 		Service test2=new Service(analyse.getDayInfo().clone());
 		 test2.readService(UsualFileName+"UsualBeginning.xml");
 		usualBeginning1=test2.service1;
 	}	
 	public UsualBeginning(OrderedHashtable dayInfo)
 	{
-		final String UsualFileName = "Ponomar/xml/Services/UsualBeginning/";
+		final String UsualFileName = "src/" + Constants.SERVICES_PATH + "UsualBeginning/";
 		Service test2=new Service(dayInfo);
 		usualBeginning1=test2.readService(UsualFileName+"UsualBeginning.xml");
 		 	

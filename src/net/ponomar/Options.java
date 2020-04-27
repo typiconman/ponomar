@@ -34,7 +34,6 @@ THIS MODULE ALLOWS THE USER TO CHANGE THE DEFAULTS ASSOCIATED WITH THE JAVA PROG
 ***********************************************************************/
 public class Options extends JFrame implements ActionListener, ItemListener, PropertyChangeListener
 {
-	private final static String configFileName = "ponomar.config";   //CONFIGURATIONS FILE
 	private LanguagePack Text;//=new LanguagePack();
 	private StringOp Analyse=new StringOp();
         private String[] Options;

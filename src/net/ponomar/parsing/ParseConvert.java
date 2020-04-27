@@ -16,13 +16,13 @@ import java.beans.*;
 
 public class ParseConvert implements DocHandler
 {
-	private static final String LOCATION   = "Ponomar/data/blsl/BLS/";
+	private static final String LOCATION   = "src/data/blsl/BLS/";
 	private static String text2;
 	private static boolean read=false;
 	private static int verse;
 	private static int chapter;
 	private static String output;
-	private static final String LOCATION_OUT="Ponomar/data/parsed/";
+	private static final String LOCATION_OUT="src/data/parsed/";
 	private static BufferedWriter out;
 	private String[] b;
 		

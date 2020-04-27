@@ -96,7 +96,7 @@ public class Matins extends Reading {
 
         //DETERMINE THE GOVERNING PARAMETERS FOR COMPILING THE READINGS
         /*try {
-            FileReader frf = new FileReader(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(), "xml/Commands/Matins.xml"));
+            FileReader frf = new FileReader(findLanguage.langFileFind(StringOp.dayInfo.get("LS").toString(), Constants.COMMANDS + "Matins.xml"));
             Matins a1 = new Matins();
             QDParser.parse(a1, frf);
         } catch (Exception e) {

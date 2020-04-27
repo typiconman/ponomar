@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 import javax.swing.event.*;
 
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -35,7 +36,7 @@ THIS MODULE READS THE FASTING.XML FILE TO DETERMINE THE FAST ON A GIVEN DAY
 
 public class Fasting implements DocHandler
 {
-	private static final String FILENAME   = "xml/Commands/Fasting.xml";
+	private static final String FASTING_FILE   = Constants.COMMANDS + "Fasting.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
 	private static OrderedHashtable information;
@@ -63,7 +64,7 @@ public class Fasting implements DocHandler
 		//StringOp.dayInfo.put("dRank",1);	//ANY RANK LESS THAN 4 WILL DO
 		/*try
 		{
-			FileReader frf = new FileReader("Ponomar/xml/Commands/DivineLiturgy.xml");
+			FileReader frf = new FileReader(Constants.DIVINE_LITURGY);
 			QDParser.parse(this, frf);
 			int doy=Integer.parseInt(StringOp.dayInfo.get("doy").toString());
 			int nday=Integer.parseInt(StringOp.dayInfo.get("nday").toString());
@@ -111,7 +112,7 @@ public class Fasting implements DocHandler
 		//System.out.print("Today's rank is "+StringOp.dayInfo.get("dRank")+"\n");
 		try
 		{
-			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),FILENAME)), StandardCharsets.UTF_8));
+			BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),FASTING_FILE)), StandardCharsets.UTF_8));
 			QDParser.parse(this, frf1);
 		}
 		catch (Exception e)

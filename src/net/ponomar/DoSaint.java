@@ -15,6 +15,7 @@ import net.ponomar.panels.PrintableTextPane;
 import net.ponomar.parsing.Commemoration;
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -42,7 +43,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     //TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
     //DURING THE COURSE OF A SINGLE WEEK.
 
-    private String life = "";
+    private static final String PODOBNI = Constants.COMMANDS + "Podobni.xml";
+	private String life = "";
     private String tropar = "";
     private String troparT = ""; //Tone
     private String troparP = "";  //Podoben melody
@@ -66,7 +68,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     private OrderedHashtable podobni;
     
     
-    private static String fileNameIn = "xml/Services/PRIMES1/";
+    //private static String fileNameIn = Constants.SERVICES_PATH + "PRIMES1/";
     private static boolean read = false;
     private static String type;
     
@@ -104,7 +106,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
         podobni = new OrderedHashtable();
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),"xml/Commands/Podobni.xml")), StandardCharsets.UTF_8));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),PODOBNI)), StandardCharsets.UTF_8));
             QDParser.parse(this, frf);
         } catch (Exception primes) {
             primes.printStackTrace();

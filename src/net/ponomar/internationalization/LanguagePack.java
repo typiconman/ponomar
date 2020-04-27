@@ -5,6 +5,7 @@ import javax.swing.event.*;
 
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -56,7 +57,7 @@ public class LanguagePack implements DocHandler
 	private void ReadPhrases()
 	{
             Helpers getFile=new Helpers(Analyse.getDayInfo());
-            ReadPhrases(getFile.langFileFind(Analyse.getDayInfo().get("LS").toString(),"xml/Commands/LanguagePacks.xml"));
+            ReadPhrases(getFile.langFileFind(Analyse.getDayInfo().get("LS").toString(), Constants.LANGUAGE_PACKS));
         }
         private void ReadPhrases(String langPath)
 	{
