@@ -170,3 +170,4 @@ Makefile.old
 # Java stuff
 *.class
 .classpath
+/bin/
