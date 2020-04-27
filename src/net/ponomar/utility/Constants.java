@@ -34,8 +34,13 @@ public final class Constants {
 	public static final String LANGUAGE_PACKS = COMMANDS + "LanguagePacks.xml";
     public static final String DIVINE_LITURGY = COMMANDS + "DivineLiturgy.xml";
 
+    
+    public static final String READING = "Reading";
+
 
 
 	// Purely functional
 	public static final String NEWLINE = "\n";
+	public static final String DOUBLE_LINEBREAK = "<BR><BR>";
+
 }

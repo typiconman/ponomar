@@ -117,7 +117,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 	* OrderedHashtable.
 	*
 	*/
-	public Enumeration enumerateKeys() 
+	public Enumeration<String> enumerateKeys() 
 	{
 		return new Enumerator();
 	}
@@ -264,7 +264,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 	}
 
 	//inner class,
-	private class Enumerator implements Enumeration, Iterator
+	private class Enumerator implements Enumeration<String>, Iterator<String>
 	{
 		int COUNT = mSerialOrder.size(); //number of elements in the Vector
 		int SERIAL = 0; //keep track of the current element
@@ -274,7 +274,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 			return SERIAL < COUNT;
 		}
 
-		public Object nextElement() 
+		public String nextElement() 
 		{
 			synchronized (OrderedHashtable.this) 
 			{
@@ -282,7 +282,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 				{
 					throw new NoSuchElementException("OrderedHashtable Enumerator");
 				}
-				return mSerialOrder.elementAt(SERIAL++);
+				return (String) mSerialOrder.elementAt(SERIAL++);
 			}
 		}
 
@@ -291,7 +291,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 			return hasMoreElements();
 		}
 
-		public Object next() 
+		public String next() 
 		{
 			return nextElement();
 		}

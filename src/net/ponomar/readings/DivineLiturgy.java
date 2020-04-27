@@ -88,7 +88,7 @@ public class DivineLiturgy extends Reading {
     }
 
 
-    public String Readings(OrderedHashtable readingsIn, String ReadingType, JDate today) {
+    public String Readings(OrderedHashtable readingsIn, String readingType, JDate today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/
@@ -118,7 +118,7 @@ public class DivineLiturgy extends Reading {
         /*NOTE: SINCE THE 33rd SUNDAY AFTER PENTECOST DOES NOT HAVE ANY ASSOCIATED READINGS IN THE PENTECOSTARION,
         THIS CAN LEAD TO DIFFICULTIES IN DOING CERTAIN THINGS! THUS, THE FOLLOWING CORRECTIONS.
          */
-        if ((doy >= 4 && doy <= 10) && (dow == 0) && ReadingType.equals("apostol")) {
+        if ((doy >= 4 && doy <= 10) && (dow == 0) && readingType.equals("apostol")) {
             //IF THERE IS AN APOSTOL ON THIS DAY, THEN THERE MAY BE ISSUES WITH ITS PRESENCE.
             //NOTE: NOTHING IS CURRENTLY DONE ABOUT THIS!           
         }
@@ -165,8 +165,8 @@ public class DivineLiturgy extends Reading {
                 getInformation3().getDayInfo().put("ndayP", ndayP);
                 getInformation3().getDayInfo().put("ndayF", ndayF);
 
-                getReadings(today, ReadingType);
-                tomorrowRead = getReadings(today, ReadingType);
+                getReadings(today, readingType);
+                tomorrowRead = getReadings(today, readingType);
                 tomorrows = new ClassifyDivineLiturgy(tomorrowRead, getInformation3().getDayInfo().clone());
                 //System.out.println("Case III: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("dRank").toString()+" In Information3, doy = "+Information3.getDayInfo().get("dRank").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("dRank"));
 
@@ -212,7 +212,7 @@ public class DivineLiturgy extends Reading {
                 getInformation3().getDayInfo().put("ndayP", ndayP);
                 getInformation3().getDayInfo().put("ndayF", ndayF);
 
-                yesterdayRead = getReadings(today, ReadingType);
+                yesterdayRead = getReadings(today, readingType);
                 yesterdays = new ClassifyDivineLiturgy(yesterdayRead, getInformation3().getDayInfo().clone());
 
 

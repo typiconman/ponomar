@@ -14,6 +14,7 @@ import java.beans.*;
 import java.awt.*;
 import java.util.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 /***************************************************************
 LanguagePack.java :: MODULE THAT DETERMINES THE LANGUAGE SPECIFIC OUTPUTS
@@ -35,107 +36,104 @@ yuri (dot) shardt (at) gmail.com
  THE SOFTWARE.
 **************************************************************/
 
-public class LanguagePack implements DocHandler
-{
-	private OrderedHashtable Phrases;		//STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT INTERFACE LANGUAGE.
-	private boolean readPhrases=false;		//DETERMINE WHETHER TO READ OR NOT TO READ THE GIVEN PHRASES	(THIS MUST BE ADDED TO ALL THE READERS).
-	private StringOp Analyse=new StringOp();
-	public LanguagePack(OrderedHashtable dayInfo)
-	{
+public class LanguagePack implements DocHandler {
+	private OrderedHashtable requiredPhrases; // STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT
+												// INTERFACE LANGUAGE.
+	private boolean readPhrases = false; // DETERMINE WHETHER TO READ OR NOT TO READ THE GIVEN PHRASES (THIS MUST BE
+											// ADDED TO ALL THE READERS).
+	private StringOp analyse = new StringOp();
+
+	public LanguagePack(OrderedHashtable dayInfo) {
 		setPhrases(new OrderedHashtable());
-                Analyse.setDayInfo(dayInfo);
-		ReadPhrases();
-		
-	}
-        public LanguagePack(String path, OrderedHashtable dayInfo)
-	{
-	Analyse.setDayInfo(dayInfo);
-            setPhrases(new OrderedHashtable());
-		ReadPhrases(path);
+		analyse.setDayInfo(dayInfo);
+		readPhrases();
 
 	}
-	private void ReadPhrases()
-	{
-            Helpers getFile=new Helpers(Analyse.getDayInfo());
-            ReadPhrases(getFile.langFileFind(Analyse.getDayInfo().get("LS").toString(), Constants.LANGUAGE_PACKS));
-        }
-        private void ReadPhrases(String langPath)
-	{
-            String filename=langPath;
-		try
-		{
-			//ALLOWS MULTILINGUAL SUPPORT, WHICH IS A MUST IN OUR CASE.
-			BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF8"));
-			//FileReader fr = new FileReader(filename);
-                        QDParser.parse(this, fr);
-		}
-		catch (Exception e)
-		{
-			//THIS STATEMENT CANNOT BE MULTILINGUAL!
+
+	public LanguagePack(String path, OrderedHashtable dayInfo) {
+		analyse.setDayInfo(dayInfo);
+		setPhrases(new OrderedHashtable());
+		readPhrases(path);
+
+	}
+
+	private void readPhrases() {
+		Helpers getFile = new Helpers(analyse.getDayInfo());
+		readPhrases(getFile.langFileFind(analyse.getDayInfo().get("LS").toString(), Constants.LANGUAGE_PACKS));
+	}
+
+	private void readPhrases(String langPath) {
+		String filename = langPath;
+		try {
+			// ALLOWS MULTILINGUAL SUPPORT, WHICH IS A MUST IN OUR CASE.
+			BufferedReader fr = new BufferedReader(new InputStreamReader(new FileInputStream(filename), StandardCharsets.UTF_8));
+			// FileReader fr = new FileReader(filename);
+			QDParser.parse(this, fr);
+		} catch (Exception e) {
+			// THIS STATEMENT CANNOT BE MULTILINGUAL!
 			System.out.println("Unable to find " + filename);
-                        System.out.println(e.toString());
-                        for(int i=0;i<e.getStackTrace().length;i++)
-                        {
-                            System.out.println(e.getStackTrace()[i].toString());
-                        }
-                        System.out.println("------------------");
+			System.out.println(e.toString());
+			for (int i = 0; i < e.getStackTrace().length; i++) {
+				System.out.println(e.getStackTrace()[i].toString());
+			}
+			System.out.println("------------------");
 		}
-	
-	}
-	public String[] obtainValues(String in)
-	{
-		//THIS FUNCTION TAKES A STTRING SEPARATED BY '\,' AND RETURNS A STRING ARRAY.
-		String[] rough=in.split("/,");
-		//System.out.println(rough[0] + " " +rough[1]);
-		return rough;
-	}
-	
-	public void startDocument() { }
 
-	public void endDocument() { }
+	}
 
-	public void startElement(String elem, Hashtable table)
-	{
+	public String[] obtainValues(String in) {
+		// THIS FUNCTION TAKES A STTRING SEPARATED BY '\,' AND RETURNS A STRING ARRAY.
+		return in.split("/,");
+	}
+
+	public void startDocument() {
+	}
+
+	public void endDocument() {
+	}
+
+	public void startElement(String elem, Hashtable table) {
 		// THE TAG COULD CONTAIN A COMMAND Cmd
 		// THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
-		// TODAY'S INFORMATION IN dayInfo. 
-		String Language = new String();
-		
-		if (table.get("Cmd") != null)
-		{
+		// TODAY'S INFORMATION IN dayInfo.
+		//String language = "";
+
+		if (table.get("Cmd") != null) {
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-			if (Analyse.evalbool(table.get("Cmd").toString()) == false)
-			{
+			if (!analyse.evalbool(table.get("Cmd").toString())) {
 				return;
-			}			
+			}
 		}
-		//if(elem.equals("LANGUAGE"))
-		//{
-			readPhrases=true;
-		//}
-		if (elem.equals("PHRASE") && readPhrases)
-		{
-                    
-                    String Key=table.get("Key").toString();
-			String Value=table.get("Value").toString();
-			getPhrases().put(Key,Value);
-			//System.out.println("The current language is " + Language + ". The phrases are " +Phrases);
-		}			
+		// if(elem.equals("LANGUAGE"))
+		// {
+		readPhrases = true;
+		// }
+		if (elem.equals("PHRASE") && readPhrases) {
+
+			String key = table.get("Key").toString();
+			String value = table.get("Value").toString();
+			getPhrases().put(key, value);
+			// System.out.println("The current language is " + Language + ". The phrases are
+			// " +Phrases);
+		}
 	}
 
-	public void endElement(String elem)
-	{
-		if(elem.equals("LANGUAGE"))
-		{
-			readPhrases=false;
-		}	
-	 }
+	public void endElement(String elem) {
+		if (elem.equals("LANGUAGE")) {
+			readPhrases = false;
+		}
+	}
 
-	public void text(String text) { }
 	public OrderedHashtable getPhrases() {
-		return Phrases;
+		return requiredPhrases;
 	}
+
 	public void setPhrases(OrderedHashtable phrases) {
-		Phrases = phrases;
+		requiredPhrases = phrases;
+	}
+
+	@Override
+	public void text(String str) throws Exception {
+		
 	}
 }

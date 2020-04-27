@@ -35,35 +35,36 @@ yuri (dot) shardt (at) gmail.com
 
 public class LanguageSelector extends JMenu implements ActionListener, PropertyChangeListener
 {
-	private String LanguageLocation;			//DETERMINES THE LOCATION OF THE READINGS
+	private static final String LANGUAGE = "Language";
+	private String languageLocation;			//DETERMINES THE LOCATION OF THE READINGS
 	private JMenu menuPanel;
-	private JRadioButtonMenuItem LanguageBox;
-	private String LastLanguage;			//AVOID REPEATING IF THERE IS NO CHANGE IN THE SELECTION
-	private String[] AvailableLanguages;
-	private int DefaultLocation;
-        private String Default;
-        private String[] NameLanguages;
-        private StringOp Analyse=new StringOp();
+	private JRadioButtonMenuItem languageBox;
+	private String lastLanguage;			//AVOID REPEATING IF THERE IS NO CHANGE IN THE SELECTION
+	private String[] availableLanguages;
+	private int defaultLocation;
+        private String languageDefault;
+        private String[] nameLanguages;
+        private StringOp analyse=new StringOp();
 	
 
 	
 	public LanguageSelector(OrderedHashtable dayInfo)
 	{
-	Analyse.setDayInfo(dayInfo);
-                Default = (String) ConfigurationFiles.getDefaults().get("Language");
+	analyse.setDayInfo(dayInfo);
+                languageDefault = (String) ConfigurationFiles.getDefaults().get(LANGUAGE);
 		String rough = (String) ConfigurationFiles.getDefaults().get("AvailableLanguages");
-		AvailableLanguages=rough.split(",");
-		LanguageLocation=Default;
-		LastLanguage=Default;
-		NameLanguages=AvailableLanguages;
+		availableLanguages=rough.split(",");
+		languageLocation=languageDefault;
+		lastLanguage=languageDefault;
+		nameLanguages=availableLanguages;
 
-		DefaultLocation = 0;
+		defaultLocation = 0;
 		
-		for(int i=0; i<AvailableLanguages.length;i++)
+		for(int i=0; i<availableLanguages.length;i++)
 		{
-			if(AvailableLanguages[i].equals(Default))
+			if(availableLanguages[i].equals(languageDefault))
 			{
-				DefaultLocation=i;
+				defaultLocation=i;
 				break;
 			}
 		}
@@ -71,58 +72,58 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	}
 	public JMenu createLanguageMenu(OrderedHashtable dayInfo)
 	{
-            Analyse.setDayInfo(dayInfo);
-            Font CurrentFont=new Font((String)Analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.getDayInfo().get("FontSizeM")));
-            LanguagePack Text=new LanguagePack(dayInfo);
-		String [] LanguageNames=Text.obtainValues((String)Text.getPhrases().get("LanguageMenu"));
+            analyse.setDayInfo(dayInfo);
+            Font currentFont=new Font((String)analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get("FontSizeM")));
+            LanguagePack text=new LanguagePack(dayInfo);
+		String [] languageNames=text.obtainValues((String)text.getPhrases().get("LanguageMenu"));
 		//DETERMINE THE DEFAULTS
-		String Default = (String) ConfigurationFiles.getDefaults().get("Language");
+		String languageDefaultString = (String) ConfigurationFiles.getDefaults().get(LANGUAGE);
 		String rough = (String) ConfigurationFiles.getDefaults().get("AvailableLanguages");
-		AvailableLanguages=rough.split(",");
-		LanguageLocation=Default;
-		LastLanguage=Default;
+		availableLanguages=rough.split(",");
+		languageLocation=languageDefaultString;
+		lastLanguage=languageDefaultString;
 		
 		//CREATE THE COMBOBOX
-		menuPanel=new JMenu(LanguageNames[0]);
-		menuPanel.setToolTipText(LanguageNames[1]);
+		menuPanel=new JMenu(languageNames[0]);
+		menuPanel.setToolTipText(languageNames[1]);
 		menuPanel.setMnemonic(KeyEvent.VK_L);
-		menuPanel.getAccessibleContext().setAccessibleDescription(LanguageNames[2]);
+		menuPanel.getAccessibleContext().setAccessibleDescription(languageNames[2]);
 		//menuPanel.setFont(CurrentFont);
 		ButtonGroup group = new ButtonGroup();
 		
-		for(int i=0;i<AvailableLanguages.length;i++)
+		for(int i=0;i<availableLanguages.length;i++)
 		{
                     //System.out.println(AvailableLanguages[i]);
-                    Helpers getFile=new Helpers(Analyse.getDayInfo());
-                    LanguagePack lang=new LanguagePack(getFile.langFileFind(AvailableLanguages[i], Constants.LANGUAGE_PACKS),Analyse.getDayInfo().clone());
-                    NameLanguages[i]= lang.getPhrases().get("NameLocal").toString();
-                    LanguageBox=new JRadioButtonMenuItem((String) lang.getPhrases().get("NameLocal").toString());
-			LanguageBox.addActionListener(this);	
-			if (i == DefaultLocation)
+                    Helpers getFile=new Helpers(analyse.getDayInfo());
+                    LanguagePack lang=new LanguagePack(getFile.langFileFind(availableLanguages[i], Constants.LANGUAGE_PACKS),analyse.getDayInfo().clone());
+                    nameLanguages[i]= lang.getPhrases().get("NameLocal").toString();
+                    languageBox=new JRadioButtonMenuItem(lang.getPhrases().get("NameLocal").toString());
+			languageBox.addActionListener(this);	
+			if (i == defaultLocation)
 			{
-				LanguageBox.setSelected(true);
-                                LastLanguage=NameLanguages[i];
+				languageBox.setSelected(true);
+                                lastLanguage=nameLanguages[i];
 			}
 
-                        if (AvailableLanguages[i].substring(0,2).equals("zh"))
+                        if (availableLanguages[i].substring(0,2).equals("zh"))
                         {
                             //We are going to treat Chinese specially
-                            String FontName="SimSun";
+                            String fontName="SimSun";
 
-                            if (AvailableLanguages[i].substring(3,7).equals("Hant"))
+                            if (availableLanguages[i].substring(3,7).equals("Hant"))
                             {
-                                FontName="MingLiU";
+                                fontName="MingLiU";
                             }
-                            Font ChineseFont=new Font(FontName,Font.PLAIN,20);
-                            LanguageBox.setFont(ChineseFont);
+                            Font chineseFont=new Font(fontName,Font.PLAIN,20);
+                            languageBox.setFont(chineseFont);
 
                         }
-                        else if (AvailableLanguages[i].equals("cu/"))
+                        else if (availableLanguages[i].equals("cu/"))
                         {
                         
                             //We are going to treat Church Slavonic specially
-                            Font ChineseFont=new Font("Ponomar Unicode TT",Font.PLAIN,18);
-                            LanguageBox.setFont(ChineseFont);
+                            Font slavonicFont=new Font("Ponomar Unicode TT",Font.PLAIN,18);
+                            languageBox.setFont(slavonicFont);
                             //LanguageBox.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
                             //LanguageBox.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
                         
@@ -132,13 +133,11 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
                             //We do not want the default font necessarily being used here.
                             //if (CurrentFont.getFontName().toString().equals("Ponomar Unicode TT"))
                                 //This is only an issue for fonts that lack a complete character set.
-                            {
-                            Font DefaultFont=new Font("Times New Roman",Font.BOLD,14);
-                            LanguageBox.setFont(DefaultFont);
-                            }
+                            Font defaultFont=new Font("Times New Roman",Font.BOLD,14);
+                            languageBox.setFont(defaultFont);
                         }
-                        group.add(LanguageBox);
-			menuPanel.add(LanguageBox);
+                        group.add(languageBox);
+			menuPanel.add(languageBox);
 		}
 		
 		return menuPanel;	   	      	
@@ -147,17 +146,17 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	
 	public void actionPerformed(ActionEvent e)
 	{
-		LanguagePack Text=new LanguagePack(Analyse.getDayInfo().clone());
-		String [] LanguageNames=Text.obtainValues((String)Text.getPhrases().get("LanguageMenu"));
+		LanguagePack text=new LanguagePack(analyse.getDayInfo().clone());
+		String [] languageNames=text.obtainValues((String)text.getPhrases().get("LanguageMenu"));
 		//THIS WILL DETERMINE THE APPROPRIATE LANGUAGE LOCATION
-		LanguageLocation=e.getActionCommand().toString();
+		languageLocation=e.getActionCommand();
                 //System.out.println(LanguageLocation);
-                int NewLocation=-1;
-                for(int i =0;i < NameLanguages.length;i++)
+                int newLocation=-1;
+                for(int i =0;i < nameLanguages.length;i++)
                 {
-                    if (NameLanguages[i].equals(LanguageLocation))
+                    if (nameLanguages[i].equals(languageLocation))
                     {
-                        NewLocation = i;
+                        newLocation = i;
                         break;
                     }
                 }
@@ -166,17 +165,17 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
                 //String rough = (String) ConfigurationFiles.Defaults.get("AvailableLanguages");
 		//AvailableLanguages=rough.split(",");
 
-		if(!LanguageLocation.equals(LastLanguage)) //I might need to do something here!!!
+		if(!languageLocation.equals(lastLanguage)) //I might need to do something here!!!
 		{
 			
-			DefaultLocation=findString(AvailableLanguages,LanguageLocation);
-			firePropertyChange("Language", (String) LanguageLocation, (String) LastLanguage); //THIS WILL ONLY CAUSE A CHANGE IN THE DISPLAY OF DATA LANGUAGE, BUT NOT THE INTERFACE LANGUAGE. THE PROGRAMME NEEDS TO BE RESTARTED FOR THIS TO OCCUR.
+			defaultLocation=findString(availableLanguages,languageLocation);
+			firePropertyChange(LANGUAGE, languageLocation, lastLanguage); //THIS WILL ONLY CAUSE A CHANGE IN THE DISPLAY OF DATA LANGUAGE, BUT NOT THE INTERFACE LANGUAGE. THE PROGRAMME NEEDS TO BE RESTARTED FOR THIS TO OCCUR.
 			//A MESSAGE BOX SHOULD ALSO BE DISPLAYED!
-			Object[] options = {LanguageNames[3]};
-			JOptionPane.showOptionDialog(null, LanguageNames[4],(String)Text.getPhrases().get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+			Object[] options = {languageNames[3]};
+			JOptionPane.showOptionDialog(null, languageNames[4],(String)text.getPhrases().get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 			//JOptionPane.showMessageDialog(null, "In order for the interface language to change, please restart the programme.","Ponomar");
-			LastLanguage=NameLanguages[NewLocation];
-			ConfigurationFiles.getDefaults().put("Language",AvailableLanguages[NewLocation]);
+			lastLanguage=nameLanguages[newLocation];
+			ConfigurationFiles.getDefaults().put(LANGUAGE,availableLanguages[newLocation]);
 			ConfigurationFiles.WriteFile();
 		}
 		
@@ -203,7 +202,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	}
 	public String getLValue()
 	{
-		return Default; //DefaultLocation;
+		return languageDefault; //DefaultLocation;
 	}        
 
 }

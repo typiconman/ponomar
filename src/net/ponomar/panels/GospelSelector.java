@@ -40,79 +40,82 @@ yuri.shardt (at) gmail.com
 
 public class GospelSelector extends JPanel implements ActionListener, PropertyChangeListener
 {
-	private static String ReadingLocation;			//DETERMINES THE LOCATION OF THE READINGS
+	private static final String GOSPEL_SELECTOR = "GospelSelector";
+	private static final String THEOPHANY_JUMP = "TheophanyJump";
+	private static final String LUCAN_JUMP = "LucanJump";
+	private static String readingLocation;			//DETERMINES THE LOCATION OF THE READINGS
 	private JPanel radioPanel;
-	private JRadioButton LucanButton;
-	private JRadioButton JordanvilleButton;
-	private static String LastLocation;			//AVOID REPEATING IF THERE IS NO CHANGE IN THE SELECTION
+	private JRadioButton lucanButton;
+	private JRadioButton jordanvilleButton;
+	private static String lastLocation;			//AVOID REPEATING IF THERE IS NO CHANGE IN THE SELECTION
 	private JMenu submenu;
 	private JRadioButtonMenuItem rbMenu1Item, rbMenu2Item;
-	private LanguagePack Text;//=new LanguagePack();
-	private String[] SelectorNames;//=Text.obtainValues((String)Text.Phrases.get("GospelSelection"));
-	private StringOp Analyse=new StringOp();
+	private LanguagePack text;//=new LanguagePack();
+	private String[] selectorNames;//=Text.obtainValues((String)Text.Phrases.get("GospelSelection"));
+	private StringOp analyse=new StringOp();
 	public GospelSelector(OrderedHashtable dayInfo)
 	{
-	Analyse.setDayInfo(dayInfo);
-        Text=new LanguagePack(dayInfo);
-         SelectorNames=Text.obtainValues((String)Text.getPhrases().get("GospelSelection"));
-                Font CurrentFont=new Font((String)Analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.getDayInfo().get("FontSizeM")));
+	analyse.setDayInfo(dayInfo);
+        text=new LanguagePack(dayInfo);
+         selectorNames=text.obtainValues((String)text.getPhrases().get("GospelSelection"));
+                Font currentFont=new Font((String)analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get("FontSizeM")));
            
 	}
 	public JPanel createGospelSelector()
 	{
             
            
-            SelectorNames=Text.obtainValues((String)Text.getPhrases().get("GospelSelection"));
-                Font CurrentFont=new Font((String)Analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.getDayInfo().get("FontSizeM")));
+            selectorNames=text.obtainValues((String)text.getPhrases().get("GospelSelection"));
+                Font currentFont=new Font((String)analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get("FontSizeM")));
             //DETERMINE THE DEFAULTS
-		String Default = (String) ConfigurationFiles.getDefaults().get("GospelSelector");
+		String gospelDefault = (String) ConfigurationFiles.getDefaults().get(GOSPEL_SELECTOR);
 		//Create the radio buttons.
-		JordanvilleButton = new JRadioButton(SelectorNames[0]);
-	        JordanvilleButton.setMnemonic(KeyEvent.VK_T);
-        	JordanvilleButton.setActionCommand("TheophanyJump");
-        	JordanvilleButton.setFont(CurrentFont);
-        	LucanButton = new JRadioButton(SelectorNames[1]);
-		 LucanButton.setMnemonic(KeyEvent.VK_L);
-                 LucanButton.setActionCommand("LucanJump");
-        	 LucanButton.setFont(CurrentFont);
+		jordanvilleButton = new JRadioButton(selectorNames[0]);
+	        jordanvilleButton.setMnemonic(KeyEvent.VK_T);
+        	jordanvilleButton.setActionCommand(THEOPHANY_JUMP);
+        	jordanvilleButton.setFont(currentFont);
+        	lucanButton = new JRadioButton(selectorNames[1]);
+		 lucanButton.setMnemonic(KeyEvent.VK_L);
+                 lucanButton.setActionCommand(LUCAN_JUMP);
+        	 lucanButton.setFont(currentFont);
                  
-        	if(Default.equals("TheophanyJump"))
+        	if(gospelDefault.equals(THEOPHANY_JUMP))
         	{
-        		JordanvilleButton.setSelected(true);
-        		ReadingLocation="TheophanyJump";
-        		LastLocation="TheophanyJump";
+        		jordanvilleButton.setSelected(true);
+        		readingLocation=THEOPHANY_JUMP;
+        		lastLocation=THEOPHANY_JUMP;
         	}
         	else
         	{
-        		LucanButton.setSelected(true);
-        		ReadingLocation="LucanJump";
-        		LastLocation="LucanJump";
+        		lucanButton.setSelected(true);
+        		readingLocation=LUCAN_JUMP;
+        		lastLocation=LUCAN_JUMP;
         	}
         	      	
         	
         	 
         	 //GROUP THE RADIO BUTTONS
         	 ButtonGroup group = new ButtonGroup();
-        	group.add(JordanvilleButton);
-        	group.add(LucanButton);
+        	group.add(jordanvilleButton);
+        	group.add(lucanButton);
         	
         	//Register a listener for the radio buttons.
-       		JordanvilleButton.addActionListener(this);
-       		LucanButton.addActionListener(this);
+       		jordanvilleButton.addActionListener(this);
+       		lucanButton.addActionListener(this);
        		
        		
        		
        		
        		//CREATE THE RADIO BUTTONS AND ADD THEM		
 		radioPanel = new JPanel(new GridLayout(0, 2));
-		radioPanel.add(JordanvilleButton);
-        	radioPanel.add(LucanButton);
-        	JTextPane text = new JTextPane();
-		text.setEditable(false);
-		text.setContentType("text/html");
-        	text.setText(SelectorNames[2]);
-        	text.setOpaque(false);
-        	add(text);
+		radioPanel.add(jordanvilleButton);
+        	radioPanel.add(lucanButton);
+        	JTextPane textPane = new JTextPane();
+		textPane.setEditable(false);
+		textPane.setContentType("text/html");
+        	textPane.setText(selectorNames[2]);
+        	textPane.setOpaque(false);
+        	add(textPane);
         	add(radioPanel, BorderLayout.LINE_START);
         	//radioPanel.addPropertyChangeListener(this);
         	
@@ -127,39 +130,39 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
 		//GospelSelector sample=new GospelSelector();
 		//CREATE THE DEFAULT MENU
              //Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
-		submenu=new JMenu(SelectorNames[2]);
-		submenu.setToolTipText(SelectorNames[3]);
+		submenu=new JMenu(selectorNames[2]);
+		submenu.setToolTipText(selectorNames[3]);
 		submenu.setMnemonic(KeyEvent.VK_G);
-		submenu.getAccessibleContext().setAccessibleDescription(SelectorNames[3]);
+		submenu.getAccessibleContext().setAccessibleDescription(selectorNames[3]);
 		//submenu.setFont(CurrentFont);
 		//DETERMINE THE DEFAULTS
-		String Default = (String) ConfigurationFiles.getDefaults().get("GospelSelector");
+		String gospelDefault = (String) ConfigurationFiles.getDefaults().get(GOSPEL_SELECTOR);
 		
 		ButtonGroup group = new ButtonGroup();
-		rbMenu1Item=new JRadioButtonMenuItem(SelectorNames[0]);
+		rbMenu1Item=new JRadioButtonMenuItem(selectorNames[0]);
 		rbMenu1Item.addActionListener(this);
-                rbMenu1Item.setActionCommand("TheophanyJump");
+                rbMenu1Item.setActionCommand(THEOPHANY_JUMP);
         	rbMenu1Item.setMnemonic(KeyEvent.VK_T);
 		rbMenu1Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_J, ActionEvent.CTRL_MASK));
 		//rbMenu1Item.setFont(CurrentFont);
 
-		rbMenu2Item = new JRadioButtonMenuItem(SelectorNames[1]);
+		rbMenu2Item = new JRadioButtonMenuItem(selectorNames[1]);
 		rbMenu2Item.setMnemonic(KeyEvent.VK_L);
-                rbMenu2Item.setActionCommand("LucanJump");
+                rbMenu2Item.setActionCommand(LUCAN_JUMP);
 		rbMenu2Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, ActionEvent.CTRL_MASK));
 		//rbMenu2Item.setFont(CurrentFont);
 		
-		if(Default.equals("TheophanyJump"))
+		if(gospelDefault.equals(THEOPHANY_JUMP))
         	{
         		rbMenu1Item.setSelected(true);
-        		ReadingLocation="TheophanyJump";
-        		LastLocation="TheophanyJump";
+        		readingLocation=THEOPHANY_JUMP;
+        		lastLocation=THEOPHANY_JUMP;
         	}
         	else
         	{
         		rbMenu2Item.setSelected(true);
-        		ReadingLocation="LucanJump";
-        		LastLocation="LucanJump";
+        		readingLocation=LUCAN_JUMP;
+        		lastLocation=LUCAN_JUMP;
         	}
         	
 		group.add(rbMenu1Item);
@@ -174,13 +177,13 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
 	public void actionPerformed(ActionEvent e)
 	{
 		//THIS WILL DETERMINE THE PATH TO THE APPROPRIATE READING LOCATION
-		ReadingLocation=e.getActionCommand();
+		readingLocation=e.getActionCommand();
                 
-		if(!ReadingLocation.equals(LastLocation))
+		if(!readingLocation.equals(lastLocation))
 		{
-			firePropertyChange("Gospel Lectionary", (String) ReadingLocation, (String) LastLocation);
-			LastLocation=ReadingLocation;
-			ConfigurationFiles.getDefaults().put("GospelSelector",LastLocation);
+			firePropertyChange("Gospel Lectionary", readingLocation, lastLocation);
+			lastLocation=readingLocation;
+			ConfigurationFiles.getDefaults().put(GOSPEL_SELECTOR,lastLocation);
 			ConfigurationFiles.WriteFile();
 													
 		}
@@ -196,7 +199,7 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
 	public static int getGValue()
 	{
             
-		if(ReadingLocation.equals("TheophanyJump"))
+		if(readingLocation.equals(THEOPHANY_JUMP))
 		{
 			return 0;
 		}

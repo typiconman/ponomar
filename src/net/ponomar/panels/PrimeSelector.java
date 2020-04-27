@@ -40,26 +40,33 @@ yuri.shardt (at) gmail.com
 
 public class PrimeSelector extends JPanel implements ActionListener, PropertyChangeListener
 {
-	private static String a = (String) ConfigurationFiles.getDefaults().get("Primes");
-	private static String[] Default=a.split(",");
-	private static String ReadingLocation=Default[0];			//DETERMINES THE LOCATION OF THE READINGS
-	private JPanel radioPanel;
-	private JRadioButton LucanButton;
-	private JRadioButton JordanvilleButton;
-	private static String LastLocation=Default[0];			//AVOID REPEATING IF THERE IS NO CHANGE IN THE SELECTION
-	private JMenu submenu;
+	private static final String PRIEST = "Priest";
+	private static final String READER = "Reader";
+	private static final String INDEPENDENT = "Independent";
+	private static final String W_BEGINNING_ENDING = "W.BeginningEnding";
+	private static final String W_BEGINNING = "W.Beginning";
+	private static final String W_ENDING = "W.Ending";
+	private static final String PRIMES = "Primes";
+	private static String a = (String) ConfigurationFiles.getDefaults().get(PRIMES);
+	private static String[] primesDefault=a.split(",");
+	private static String readingLocation=primesDefault[0];			//DETERMINES THE LOCATION OF THE READINGS
+	//private JPanel radioPanel;
+	//private JRadioButton LucanButton;
+	//private JRadioButton JordanvilleButton;
+	private static String lastLocation=primesDefault[0];			//AVOID REPEATING IF THERE IS NO CHANGE IN THE SELECTION
+	//private JMenu submenu;
 	private JRadioButtonMenuItem rbMenu1Item, rbMenu2Item, rbMenu4Item, rbMenu5Item, rbMenu6Item;
-	private LanguagePack Text;//=new LanguagePack();
-	private String[] SelectorNames;//=Text.obtainValues((String)Text.Phrases.get("PrimeSelection"));
-	private static String LastLocation2=Default[1];
-	private static String ReadingLocation2=Default[1];
-        private StringOp Analyse=new StringOp();
+	private LanguagePack text;//=new LanguagePack();
+	private String[] selectorNames;//=Text.obtainValues((String)Text.Phrases.get("PrimeSelection"));
+	private static String lastLocation2=primesDefault[1];
+	private static String readingLocation2=primesDefault[1];
+        private StringOp analyse=new StringOp();
 	
 	public PrimeSelector(OrderedHashtable dayInfo)
 	{
-            Analyse.setDayInfo(dayInfo);
-            Text=new LanguagePack(dayInfo);
-            SelectorNames=Text.obtainValues((String)Text.getPhrases().get("PrimeSelection"));
+            analyse.setDayInfo(dayInfo);
+            text=new LanguagePack(dayInfo);
+            selectorNames=text.obtainValues((String)text.getPhrases().get("PrimeSelection"));
 	}
 		
 	public JMenu createPrimeMenu()
@@ -68,41 +75,41 @@ public class PrimeSelector extends JPanel implements ActionListener, PropertyCha
 		
 		//GospelSelector sample=new GospelSelector();
 		//CREATE THE DEFAULT MENU
-		a = (String) ConfigurationFiles.getDefaults().get("Primes");
-		String[] Default=a.split(",");
+		a = (String) ConfigurationFiles.getDefaults().get(PRIMES);
+		String[] primesDefaultStrings=a.split(",");
 	
-		JMenu menu=new JMenu(SelectorNames[7]);
+		JMenu menu=new JMenu(selectorNames[7]);
 		menu.setMnemonic(KeyEvent.VK_T);
-		menu.getAccessibleContext().setAccessibleDescription(SelectorNames[7]);
+		menu.getAccessibleContext().setAccessibleDescription(selectorNames[7]);
 				
 		//DETERMINE THE DEFAULTS
 				
 		ButtonGroup group = new ButtonGroup();
-		rbMenu1Item=new JRadioButtonMenuItem(SelectorNames[0]);
+		rbMenu1Item=new JRadioButtonMenuItem(selectorNames[0]);
 		rbMenu1Item.addActionListener(this);
 		rbMenu1Item.setMnemonic(KeyEvent.VK_R);
-		rbMenu1Item.setActionCommand("Reader");
+		rbMenu1Item.setActionCommand(READER);
 		rbMenu1Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, ActionEvent.CTRL_MASK));
 		group.add(rbMenu1Item);
 
-		rbMenu2Item = new JRadioButtonMenuItem(SelectorNames[1]);
+		rbMenu2Item = new JRadioButtonMenuItem(selectorNames[1]);
 		rbMenu2Item.setMnemonic(KeyEvent.VK_T);
 		rbMenu2Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, ActionEvent.CTRL_MASK));
 		rbMenu2Item.addActionListener(this);
-		rbMenu2Item.setActionCommand("Priest");
+		rbMenu2Item.setActionCommand(PRIEST);
 		group.add(rbMenu2Item);
 		
-		if(Default[0].equals("Reader"))
+		if(primesDefaultStrings[0].equals(READER))
         	{
         		rbMenu1Item.setSelected(true);
-        		ReadingLocation="Reader";
-        		LastLocation="Reader";
+        		readingLocation=READER;
+        		lastLocation=READER;
         	}
         	else
         	{
         		rbMenu2Item.setSelected(true);
-        		ReadingLocation="Priest";
-        		LastLocation="Priest";
+        		readingLocation=PRIEST;
+        		lastLocation=PRIEST;
         	}
         	
 		menu.add(rbMenu1Item);
@@ -110,57 +117,57 @@ public class PrimeSelector extends JPanel implements ActionListener, PropertyCha
 		menu.addSeparator();
 		
 		ButtonGroup group1=new ButtonGroup();
-		JRadioButtonMenuItem rbMenu3Item=new JRadioButtonMenuItem(SelectorNames[3]);
+		JRadioButtonMenuItem rbMenu3Item=new JRadioButtonMenuItem(selectorNames[3]);
 		rbMenu3Item.addActionListener(this);
 		rbMenu3Item.setMnemonic(KeyEvent.VK_I);
 		rbMenu3Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_I, ActionEvent.CTRL_MASK));
-		rbMenu3Item.setActionCommand("Independent");
+		rbMenu3Item.setActionCommand(INDEPENDENT);
 		group1.add(rbMenu3Item);
 
-		rbMenu4Item = new JRadioButtonMenuItem(SelectorNames[4]);
+		rbMenu4Item = new JRadioButtonMenuItem(selectorNames[4]);
 		rbMenu4Item.setMnemonic(KeyEvent.VK_B);
 		rbMenu4Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_B, ActionEvent.CTRL_MASK));
 		rbMenu4Item.addActionListener(this);
-		rbMenu4Item.setActionCommand("W.Beginning");
+		rbMenu4Item.setActionCommand(W_BEGINNING);
 		group1.add(rbMenu4Item);
 		
-		rbMenu5Item = new JRadioButtonMenuItem(SelectorNames[5]);
+		rbMenu5Item = new JRadioButtonMenuItem(selectorNames[5]);
 		rbMenu5Item.setMnemonic(KeyEvent.VK_E);
 		rbMenu5Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_E, ActionEvent.CTRL_MASK));
 		rbMenu5Item.addActionListener(this);
-		rbMenu5Item.setActionCommand("W.Ending");
+		rbMenu5Item.setActionCommand(W_ENDING);
 		group1.add(rbMenu5Item);
 		
-		rbMenu6Item = new JRadioButtonMenuItem(SelectorNames[6]);
+		rbMenu6Item = new JRadioButtonMenuItem(selectorNames[6]);
 		rbMenu6Item.setMnemonic(KeyEvent.VK_W);
 		rbMenu6Item.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_W, ActionEvent.CTRL_MASK));
 		rbMenu6Item.addActionListener(this);
-		rbMenu6Item.setActionCommand("W.BeginningEnding");
+		rbMenu6Item.setActionCommand(W_BEGINNING_ENDING);
 		group1.add(rbMenu6Item);
 		
-		if(Default[1].equals("Independent"))
+		if(primesDefaultStrings[1].equals(INDEPENDENT))
         	{
         		rbMenu3Item.setSelected(true);
-        		ReadingLocation2="Independent";
-        		LastLocation2="Independent";
+        		readingLocation2=INDEPENDENT;
+        		lastLocation2=INDEPENDENT;
         	}
-        	else if(Default[1].equals("W.Beginning"))
+        	else if(primesDefaultStrings[1].equals(W_BEGINNING))
         	{
         		rbMenu4Item.setSelected(true);
-        		ReadingLocation2="W.Beginning";
-        		LastLocation2="W.Beginning";
+        		readingLocation2=W_BEGINNING;
+        		lastLocation2=W_BEGINNING;
         	}
-        	else if(Default[1].equals("W.Ending"))
+        	else if(primesDefaultStrings[1].equals(W_ENDING))
         	{
         		rbMenu5Item.setSelected(true);
-        		ReadingLocation2="W.Ending";
-        		LastLocation2="W.Ending";
+        		readingLocation2=W_ENDING;
+        		lastLocation2=W_ENDING;
         	}
         	else
         	{
         		rbMenu6Item.setSelected(true);
-        		ReadingLocation2="W.BeginningEnding";
-        		LastLocation2="W.BeginningEnding";
+        		readingLocation2=W_BEGINNING_ENDING;
+        		lastLocation2=W_BEGINNING_ENDING;
         	}
         	
 		menu.add(rbMenu3Item);
@@ -173,24 +180,24 @@ public class PrimeSelector extends JPanel implements ActionListener, PropertyCha
 	public void actionPerformed(ActionEvent e)
 	{
 		//THIS WILL DETERMINE THE PATH TO THE APPROPRIATE READING LOCATION
-		ReadingLocation=e.getActionCommand();
-		String Last1=LastLocation;
-		String Last2=LastLocation2;
-		if(!ReadingLocation.equals(LastLocation) && (ReadingLocation.equals("Priest") || ReadingLocation.equals("Reader")))
+		readingLocation=e.getActionCommand();
+		String last1=lastLocation;
+		String last2=lastLocation2;
+		if(!readingLocation.equals(lastLocation) && (readingLocation.equals(PRIEST) || readingLocation.equals(READER)))
 		{
 			
-			LastLocation=ReadingLocation;
-			ConfigurationFiles.getDefaults().put("Primes",LastLocation+","+LastLocation2);
+			lastLocation=readingLocation;
+			ConfigurationFiles.getDefaults().put(PRIMES,lastLocation+","+lastLocation2);
 			ConfigurationFiles.WriteFile();
-			firePropertyChange("Who Change", (String) ReadingLocation, (String) Last1);										
+			firePropertyChange("Who Change", readingLocation, last1);										
 		}
-		else if(!ReadingLocation.equals(LastLocation2))
+		else if(!readingLocation.equals(lastLocation2))
 		{
 			
-			LastLocation2=ReadingLocation;
-			ConfigurationFiles.getDefaults().put("Primes",LastLocation+","+LastLocation2);
+			lastLocation2=readingLocation;
+			ConfigurationFiles.getDefaults().put(PRIMES,lastLocation+","+lastLocation2);
 			ConfigurationFiles.WriteFile();
-			firePropertyChange("Type Change", (String) ReadingLocation, (String) Last2);
+			firePropertyChange("Type Change", readingLocation, last2);
 												
 		}
 	}
@@ -203,7 +210,7 @@ public class PrimeSelector extends JPanel implements ActionListener, PropertyCha
 
 	public static int getWhoValue()
 	{
-		if(LastLocation.equals("Reader"))
+		if(lastLocation.equals(READER))
 		{
 			return 0;
 		}
@@ -213,15 +220,15 @@ public class PrimeSelector extends JPanel implements ActionListener, PropertyCha
 	
 	public static int getTypeValue()
 	{
-		if(LastLocation2.equals("Independent"))
+		if(lastLocation2.equals(INDEPENDENT))
 		{
 			return 0;
 		}
-		else if(LastLocation2.equals("W.Beginning"))
+		else if(lastLocation2.equals(W_BEGINNING))
 		{
 			return 1;
 		}
-		else if(LastLocation2.equals("W.Ending"))
+		else if(lastLocation2.equals(W_ENDING))
 		{
 			return 2;
 		}

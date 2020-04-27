@@ -13,11 +13,8 @@ import net.ponomar.utility.StringOp;
  for any lattitude and longitude for any day.
  METHODOLOGY: Call getSunriseSunset, see comments below for more information
 
- THANK YOU TO Ron Hill, Robert Creager, Joshua Hoblitt, Chris Phillips, Brian D Foy
- Paul Schlyer of Stockholm, Sweden, and others who worked on Astro::Sunrise PERL MODULE
+ A lot of the code has been moved to Astronomy. Check there for more information.
 
- CODE CONVERTED FROM PERL TO JAVA BY ALEKSANDR ANDREEV AS PART OF THE PONOMAR PROJECT
- CERTAIN FEATURES OF PERL CODE OMITTED FOR EASE AND BREVITY
  (C) 2006 ALEKSANDR ANDREEV.
 
  Here is the copyright information provided by Paul Schlyer:
@@ -51,201 +48,12 @@ import net.ponomar.utility.StringOp;
 
 public final class Sunrise
 {
-	// CONSTANTS
-	private static final double INV360 = (1.0 / 360.0);
-	private static final double RADEG  = (180.0 / Math.PI);
-	private static final double DEGRAD = (Math.PI / 180.0);
-	private static final boolean UPPER_LIMB = true;
-	protected static final double DEFAULT      = -0.833;
-	protected static final double CIVIL        = -6.0;
-	protected static final double NAUTICAL     = -12.0;
-	protected static final double AMATEUR      = -15.0;
-	protected static final double ASTRONOMICAL = -18.0;
-        private static LanguagePack Phrases;//=new LanguagePack();
-        private static StringOp Analyse=new StringOp();
+        private LanguagePack phrases;//=new LanguagePack();
+        private StringOp analyse=new StringOp();
         public Sunrise(OrderedHashtable dayInfo){
-            Analyse.setDayInfo(dayInfo);
-            Phrases=new LanguagePack(dayInfo);
+            analyse.setDayInfo(dayInfo);
+            phrases=new LanguagePack(dayInfo);
         }
-
-	// MATHEMATICAL FUNCTIONS
-	// OVERRIDDEN TRIGONOMETRIC FUNCTIONS, used to work with degrees instead of radians
-	private static double sind(double n)
-	{
-		return Math.sin( n * DEGRAD );
-	}
-
-	private static double cosd(double n)
-	{
-		return Math.cos( n * DEGRAD );
-	}
-
-	private static double tand(double n)
-	{
-		return Math.tan( n * DEGRAD );
-	}
-
-	private static double atand(double n)
-	{
-		return ( RADEG * Math.atan(n) );
-	}
-
-	private static double asind(double n)
-	{
-		return ( RADEG * Math.asin(n) );
-	}
-
-	private static double acosd(double n)
-	{
-		return ( RADEG * Math.acos(n) );
-	}
-
-	private static double atan2d(double n1, double n2)
-	{
-		return ( RADEG * Math.atan2(n1, n2) );
-	}
-
-	// REDUCES AN ANGLE TO WITHIN ONE REVOULTION (360 DEGREES)
-	private static double revolution(double angle)
-	{
-		return ( angle - 360.0 * Math.floor( angle * INV360 ) );
-	}
-
-	// REDUCES A GIVEN ANGLE TO BETWEEN +180 DEG AND -180 DEG
-	private static double rev180(double x)
-	{
-		return ( x - 360.0 * Math.floor( x * INV360 + 0.5 ) );
-	}
-
-	// THE NUMBER OF DAYS SINCE (OR, BEFORE)
-	// JANUARY 0, 2000 ****GREGORIAN****, FOR TECHNICAL REASONS
-	// WHICH, IN ANY CASE, IS DAY 2451544
-	private static long daysSinceJan0(long jday)
-	{
-		return jday - 2451544;
-	}
-
-	/******************** ASTRONOMICAL FUNCTIONS ************************/
-	// GMST0:: computes the Greenwich Mean Siderial Time for any date
-	// PARAMETERS:: A double REPRSENTING A DATE AND LOCATION WITH RESPECT TO GREENWICH, ENGLAND
-	// RETURNS:: A double WITH THE GMST
-	private static double GMST0(double d)
-	{
-		double sidtime0 = revolution( ( 180.0 + 356.0470 + 282.9404 ) + ( 0.9856002585 + 4.70935E-5 ) * d );
-		return sidtime0;
-	}
-
-	// sun_ra_dec:: COMPUTES THE SUN'S RIGHT ASCENSION AND DECLINATION
-	// PARAMETERS:: A double REPRESENTING A DATE AND LOCATION WITH RESPECT TO GREENWICH, ENGLAND
-	// RETURNS:: A double[] WITH THE RIGHT ASCENSION and DECLINATION
-	private static double[] sun_ra_dec(double d)
-	{
-		// Compute Sun's ecliptical coordinates 
-		double[] rlon = sunpos(d);
-		double r = rlon[0];
-		double lon = rlon[1];
-
-		// Compute ecliptic rectangular coordinates (z=0) 
-		double x = r * cosd(lon);
-		double y = r * sind(lon);
-
-		// Compute obliquity of ecliptic (inclination of Earth's axis) 
-		double obl_ecl = 23.4393 - 3.563E-7 * d;
-
-		// Convert to equatorial rectangular coordinates - x is unchanged 
-    		double z = y * sind(obl_ecl);
-		y *= cosd(obl_ecl);
-
-		// Convert to spherical coordinates 
-		double RA  = atan2d( y, x );
-		double dec = atan2d( z, Math.sqrt( x * x + y * y ) );
-
-		double[] RA_dec = {RA, dec};
-		return RA_dec;
-	}
-
-	// sunpos:: Computes the Sun's ecliptic longitude and distance
-	// at an instant given in d, number of days since 2000 Jan 0.0. gregorian
-	// PARAMETERS:: ditto
-	// RETURNS:: ecliptic longitude and distance True_solar_longitude, Solar_distance
-	private static double[] sunpos(double d)
-	{
-		// Mean anomaly of the Sun 
-		// Mean longitude of perihelion 
-		// Note: Sun's mean longitude = M + w 
-		// Eccentricity of Earth's orbit 
-		// Eccentric anomaly 
-		// x, y coordinates in orbit 
-		// True anomaly 
-
-		double Mean_anomaly_of_sun = revolution( 356.0470 + 0.9856002585 * d );
-		double Mean_longitude_of_perihelion = 282.9404 + 4.70935E-5 * d;
-		double Eccentricity_of_Earth_orbit  = 0.016709 - 1.151E-9 * d;
-
-		// Compute true longitude and radius vector 
-		double Eccentric_anomaly = Mean_anomaly_of_sun + Eccentricity_of_Earth_orbit * RADEG * sind(Mean_anomaly_of_sun) * ( 1.0 + Eccentricity_of_Earth_orbit * cosd(Mean_anomaly_of_sun) );
-		double x = cosd(Eccentric_anomaly) - Eccentricity_of_Earth_orbit;
-		double y = Math.sqrt( 1.0 - Eccentricity_of_Earth_orbit * Eccentricity_of_Earth_orbit ) * sind(Eccentric_anomaly);
-
-		double Solar_distance = Math.sqrt( x * x + y * y );    // Solar distance
-		double True_anomaly = atan2d( y, x );               // True anomaly
-
-		double True_solar_longitude = True_anomaly + Mean_longitude_of_perihelion;    // True solar longitude
-
-		if ( True_solar_longitude >= 360.0 )
-		{
-			True_solar_longitude -= 360.0;    // Make it 0..360 degrees
-		}
-
-		double[] retval = {Solar_distance, True_solar_longitude};
-		return retval;
-	}
-
-	// INTERNAL METHOD TO COMPUTE SUNRISE AND SUNSET
-	// PARAMETERS: A double WITH THE NUMBER OF DAYS SINCE JAN 200 0.0.0, GREGORIAN
-	// A DOUBLE WITH THE LONGITUDE WITH RESPECT TO GREENWICH, ENGLAND,
-	// A DOUBLE WITH THE LATITUDE WITH RESPECT TO THE EQUATOR
-	// A DOUBLE WITH THE DESIRED ALTITUDE OF SUNSET (OBSERVED, CIVIL, NAUTICAL, ETC.)
-	private static double[] sun_rise_set(double d, double lon, double lat, double altit)
-	{
-		double sidtime = revolution( GMST0(d) + 180.0 + lon );
-
-		double sRAsdec[] = sun_ra_dec(d);
-		double tsouth  = 12.0 - rev180( sidtime - sRAsdec[0] ) / 15.0;
-		double sradius = 0.2666 / sRAsdec[0];
-
-		if (UPPER_LIMB)
-		{
-			altit -= sradius;
-		}
-
-		// Compute the diurnal arc that the Sun traverses to reach 
-		// the specified altitude altit: 
-
-		double cost = ( sind(altit) - sind(lat) * sind(sRAsdec[1]) ) / ( cosd(lat) * cosd(sRAsdec[1]) );
-		double t;
-		if ( cost >= 1.0 )
-		{
-		        // "Sun never rises!!\n";
-			t = 0.0;    // Sun always below altit
-		}
-		else if ( cost <= -1.0 )
-		{
-			// "Sun never sets!!\n";
-			t = 12.0;    // Sun always above altit
-		}
-		else
-		{
-			t = acosd(cost) / 15.0;    // The diurnal arc, hours
-		}
-
-		// Store rise and set times - in hours UT 
-
-		double hour_rise_ut = tsouth - t;
-		double hour_set_ut  = tsouth + t;
-		double[] retval = {hour_rise_ut, hour_set_ut};
-		return retval;
-	}
 
 	// GATEWAY TO SUNRISE SUNSET INTERFACE
 	// COMPUTES THE SUNRISE AND SUNSET TIMES
@@ -304,8 +112,8 @@ public final class Sunrise
 
 	protected static double[] getSunriseSunset(JDate date, double lon, double lat, int tzone, boolean isDST, double alt)
 	{
-		double d = (double)daysSinceJan0(date.getJulianDay()) + 0.5 - lon / 360.0;
-		double[] hours = sun_rise_set(d, lon, lat, alt);
+		double d = (double)Astronomy.daysSinceJan0(date.getJulianDay()) + 0.5 - lon / 360.0;
+		double[] hours = Astronomy.computeSunriseSunset(d, lon, lat, alt);
 		
 		// CONVERT FROM UT TO THE LOCAL TIME
 		if (isDST)
@@ -336,13 +144,13 @@ public final class Sunrise
 		return hours;
 	}
 
-	public static String[] getSunriseSunsetString(JDate date, String lon, String lat, String tzone)
+	public String[] getSunriseSunsetString(JDate date, String lon, String lat, String tzone)
 	{
-		return getSunriseSunsetString(date, (double)Double.parseDouble(lon), (double)Double.parseDouble(lat), (int)Integer.parseInt(tzone));
+		return getSunriseSunsetString(date, Double.parseDouble(lon), Double.parseDouble(lat), Integer.parseInt(tzone));
 	}
 			
 
-	protected static String[] getSunriseSunsetString(JDate date, double lon, double lat, int tzone)
+	protected String[] getSunriseSunsetString(JDate date, double lon, double lat, int tzone)
 	{
 		double[] raw = getSunriseSunset(date, lon, lat, tzone, false, -0.833);
 		String[] out = new String[2];
@@ -351,7 +159,7 @@ public final class Sunrise
 		// NOW, TAKE THE RAW INPUT AND PARSE IT TO HOURS / MINUTES
 		for (int i = 0; i < 2; i++)
 		{
-			String Format=(String)Phrases.getPhrases().get("TimeF");
+			String format=(String)phrases.getPhrases().get("TimeF");
                         int hour = (int)Math.floor(raw[i]);
 			int minute = (int)Math.floor((raw[i] - hour) * 60);
                         /* original version
@@ -371,21 +179,20 @@ public final class Sunrise
 			{
 				out[i] += ":" + minute;
 			}*/
-                        //Changed to this by Y.S. to interationalised it.
-                        if (Analyse.getDayInfo().get("Ideographic").equals("1"))
-                        {
-                            RuleBasedNumber convertN=new RuleBasedNumber(Analyse.getDayInfo().clone());
-                            Format=Format.replace("HH", convertN.getFormattedNumber(hour));
-                               Format=Format.replace("MM", convertN.getFormattedNumber(minute));
+			// Changed to this by Y.S. to internationalise it.
+			if (analyse.getDayInfo().get("Ideographic").equals("1")) {
+				RuleBasedNumber convertN = new RuleBasedNumber(analyse.getDayInfo().clone());
+				format = format.replace("HH", convertN.getFormattedNumber(hour));
+				format = format.replace("MM", convertN.getFormattedNumber(minute));
 
-                        }
-                        else
-                        {
-                        Format=Format.replace("HH", String.format("%0"+(String) Phrases.getPhrases().get("PadH")+"d", hour));//Integer.toString(hour));
-                        //Format=Format.replace("MM", Integer.toString(minute));
-                        Format=Format.replace("MM",String.format("%0"+(String) Phrases.getPhrases().get("PadM")+"d", minute));
-                        }
-                        out[i]=Format;
+			} else {
+				format = format.replace("HH",
+						String.format("%0" + (String) phrases.getPhrases().get("PadH") + "d", hour));// Integer.toString(hour));
+				// Format=Format.replace("MM", Integer.toString(minute));
+				format = format.replace("MM",
+						String.format("%0" + (String) phrases.getPhrases().get("PadM") + "d", minute));
+			}
+			out[i] = format;
 		}
 
 		return out;

@@ -53,9 +53,9 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 	private JDaySelector daySelector;
 	private JDate date;
 	private JPanel monthYearPanel;
-	private JComboBox monthChooser;
+	private JComboBox<String> monthChooser;
 	private JTextField yearChooser;
-	private LanguagePack Text;// =new LanguagePack();
+	private LanguagePack text;// =new LanguagePack();
 	private String[] months; // = Text.obtainValues((String)Text.Phrases.get("1"));
 	private String orderBox;// =(String)Text.Phrases.get("OrderBox");
 	private StringOp analyse = new StringOp();
@@ -64,9 +64,9 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 		this(null, dayInfo);
 
 		analyse.setDayInfo(dayInfo);
-		Text = new LanguagePack(dayInfo);
-		months = Text.obtainValues((String) Text.getPhrases().get("1"));
-		orderBox = (String) Text.getPhrases().get("OrderBox");
+		text = new LanguagePack(dayInfo);
+		months = text.obtainValues((String) text.getPhrases().get("1"));
+		orderBox = (String) text.getPhrases().get("OrderBox");
 		date = new JDate();
 
 	}
@@ -74,9 +74,9 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 	protected JCalendar(JDate date, OrderedHashtable dayInfo) {
 		super();
 		analyse.setDayInfo(dayInfo);
-		Text = new LanguagePack(dayInfo);
-		months = Text.obtainValues((String) Text.getPhrases().get("1"));
-		orderBox = (String) Text.getPhrases().get("OrderBox");
+		text = new LanguagePack(dayInfo);
+		months = text.obtainValues((String) text.getPhrases().get("1"));
+		orderBox = (String) text.getPhrases().get("OrderBox");
 		setName("JCalendar");
 		setLayout(new BorderLayout());
 
@@ -88,7 +88,7 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 		monthYearPanel = new JPanel();
 		monthYearPanel.setLayout(new BorderLayout());
 
-		monthChooser = new JComboBox<String>(months);
+		monthChooser = new JComboBox<>(months);
 		monthChooser.setSelectedIndex(date.getMonth() - 1);
 		monthChooser.addActionListener(this);
 
@@ -141,12 +141,12 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 	public void focusLost(FocusEvent e) {
 		// CHECK IF THE TEXT OF THE OBJECT CHANGED
 		JTextField jtf = (JTextField) e.getSource();
-		String text = jtf.getText();
+		String textContent = jtf.getText();
 		int oldyear = date.getYear();
-		if (text.equals(String.valueOf(oldyear)) == false) {
+		if (!textContent.equals(String.valueOf(oldyear))) {
 			// THE OBJECT HAS CHANGED
 			// MAKE SURE THAT THE TEXT IS VALID
-			int newyear = Integer.parseInt(text);
+			int newyear = Integer.parseInt(textContent);
 			if (newyear > 33) {
 				// CHANGE THE DATE
 				int m = date.getMonth();
