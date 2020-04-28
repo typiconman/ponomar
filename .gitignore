@@ -172,3 +172,5 @@ Makefile.old
 .classpath
 /bin/
 /binary/
+.idea/
+*.iml

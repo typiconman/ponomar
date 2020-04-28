@@ -17,8 +17,6 @@ import net.ponomar.panels.PrintableTextPane;
 import net.ponomar.parsing.Commemoration;
 import net.ponomar.parsing.Day;
 import net.ponomar.parsing.Fasting;
-import net.ponomar.readings.DivineLiturgy;
-import net.ponomar.readings.Matins;
 import net.ponomar.readings.utility.ReadingUtility;
 import net.ponomar.services.NinthHour;
 import net.ponomar.services.Primes;
@@ -258,7 +256,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
     public void propertyChange(PropertyChangeEvent e) {
         
-        if (inited) {
+        if (Boolean.TRUE.equals(inited)) {
             // FIND OUT THE OLD YEAR
             int year = today.getYear();
             today = new JDate(calendar.getMonth(), calendar.getDay(), calendar.getYear());
@@ -360,7 +358,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 
 	public void hyperlinkUpdate(HyperlinkEvent e) {
-		if (e.getEventType().toString() == "ACTIVATED") {
+		if (e.getEventType().toString().equals("ACTIVATED")) {
 			String cmd = e.getDescription();
 			String[] parts = cmd.split("#");
 			if (parts[0].indexOf("reading") != -1) {
@@ -539,16 +537,14 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 	}
 
 	private void displayIcons(Day paschalCycle, Day solarCycle) {
-		OrderedHashtable iconsP = (OrderedHashtable) paschalCycle.getIcon();
+		//OrderedHashtable iconsP = (OrderedHashtable) paschalCycle.getIcon();
         OrderedHashtable iconsM = (OrderedHashtable) solarCycle.getIcon();
-        //String[] ss = (String[])v.toArray(new String[v.size()]);
+
         Vector<String> imageList = (Vector<String>) iconsM.get("Images");
         Vector<String> namesList = (Vector<String>) iconsM.get("Names");
-        String[] iconImages = new String[imageList.size()];
-        String[] iconNames = new String[namesList.size()];
 
-        iconImages = (String[]) imageList.toArray(new String[imageList.size()]);
-        iconNames = (String[]) namesList.toArray(new String[namesList.size()]);
+        String[] iconImages = imageList.toArray(new String[imageList.size()]);
+        String[] iconNames = namesList.toArray(new String[namesList.size()]);
 
         displayIcon.updateImagesFiled(iconImages, iconNames);
 	}

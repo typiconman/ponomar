@@ -5,51 +5,48 @@ import java.util.Vector;
 
 import net.ponomar.Bible;
 import net.ponomar.ConfigurationFiles;
-import net.ponomar.Main;
 import net.ponomar.astronomy.Astronomy;
 import net.ponomar.astronomy.Sunrise;
 import net.ponomar.calendar.JDate;
 import net.ponomar.calendar.PCalendar;
 import net.ponomar.internationalization.LanguagePack;
-import net.ponomar.parsing.Day;
 import net.ponomar.readings.DivineLiturgy;
 import net.ponomar.readings.Matins;
 
 public final class MenologionContent {
 
-    private StringOp analyse;
-    private LanguagePack phrases;
-    private JDate today;
-    private String rSep = "";
-    private String colon = "";
-
+	private StringOp analyse;
+	private LanguagePack phrases;
+	private JDate today;
+	private String rSep = "";
+	private String colon = "";
 
 	public MenologionContent(StringOp analyse, LanguagePack phrases, JDate today) {
 		this.analyse = analyse;
 		this.phrases = phrases;
 		this.today = today;
 	}
-	
+
 	private static final String READINGS_KEY = "Readings";
 
 	public String processReadings(Bible shortForm, OrderedHashtable combinedReadings) {
 		StringBuilder content = new StringBuilder();
 		boolean firstTime = true;
-        for (Enumeration<String> e = combinedReadings.enumerateKeys(); e.hasMoreElements();) {
-            //Temporary solution
-            String element1 = e.nextElement();
-            OrderedHashtable temp = (OrderedHashtable) combinedReadings.get(element1);
-            Vector<OrderedHashtable> readings = (Vector<OrderedHashtable>) temp.get(READINGS_KEY);
-            Vector<String> rank = (Vector<String>) temp.get("Rank");
-            Vector<String> tag = (Vector<String>) temp.get("Tag");
-            if (element1.equals("LITURGY")) {
-                if (firstTime) {
-                    firstTime = false;
-                } else {
-                    content.append(rSep);
-                }
-                //Special case and consider it differently
-                content.append(iterateEpistleGospel(readings, rank, tag));
+		for (Enumeration<String> e = combinedReadings.enumerateKeys(); e.hasMoreElements();) {
+			// Temporary solution
+			String element1 = e.nextElement();
+			OrderedHashtable temp = (OrderedHashtable) combinedReadings.get(element1);
+			Vector<OrderedHashtable> readings = (Vector<OrderedHashtable>) temp.get(READINGS_KEY);
+			Vector<String> rank = (Vector<String>) temp.get("Rank");
+			Vector<String> tag = (Vector<String>) temp.get("Tag");
+			if (element1.equals("LITURGY")) {
+				if (firstTime) {
+					firstTime = false;
+				} else {
+					content.append(rSep);
+				}
+				// Special case and consider it differently
+				content.append(iterateEpistleGospel(readings, rank, tag));
 
                 /*for (int j=0; j<Readings.size();j++){
                 if (j!=0){
@@ -76,76 +73,74 @@ public final class MenologionContent {
 
                 }
                 }*/
-                continue;
+				continue;
 
-            }
-            if (element1.equals("MATINS")) {
-                if (firstTime) {
-                    firstTime = false;
-                } else {
-                	content.append(rSep);
-                }
+			}
+			if (element1.equals("MATINS")) {
+				if (firstTime) {
+					firstTime = false;
+				} else {
+					content.append(rSep);
+				}
 
-                content.append(putMatinsReadings(readings, rank, tag, new OrderedHashtable(), "matins"));
-                //output+=RSep;
+				content.append(putMatinsReadings(readings, rank, tag, new OrderedHashtable(), "matins"));
+				// output+=RSep;
 
+				continue;
 
-                continue;
+			}
+			if (firstTime) {
+				firstTime = false;
+			} else {
+				content.append(rSep);
+			}
+			String type1 = (String) phrases.getPhrases().get(element1.toLowerCase());
+			content.append("<B>" + type1 + "</B>" + colon);
+			content.append(iterateOverReadings(shortForm, readings, tag, rSep));
 
-            }
-            if (firstTime) {
-                firstTime = false;
-            } else {
-            	content.append(rSep);
-            }
-            String type1 = (String) phrases.getPhrases().get(element1.toLowerCase());
-            content.append("<B>" + type1 + "</B>" + colon);
-            content.append(iterateOverReadings(shortForm, readings, tag, rSep));
-
-            //content.append(rSep);
-        }
+			// content.append(rSep);
+		}
 		return content.toString();
 	}
-	
+
 	public String iterateEpistleGospel(Vector<OrderedHashtable> readings, Vector<String> rank, Vector<String> tag) {
-		
+
 		String epistleGospelOutput = "";
 		Vector<String> epistle = new Vector<>();
 
 		Vector<String> gospel = new Vector<>();
 
 		for (int j = 0; j < readings.size(); j++) {
-		    OrderedHashtable liturgy = (OrderedHashtable) readings.get(j);
-		    OrderedHashtable stepE = (OrderedHashtable) liturgy.get("apostol");
-		    OrderedHashtable stepG = (OrderedHashtable) liturgy.get("gospel");
+			OrderedHashtable liturgy = readings.get(j);
+			OrderedHashtable stepE = (OrderedHashtable) liturgy.get("apostol");
+			OrderedHashtable stepG = (OrderedHashtable) liturgy.get("gospel");
 
-		    if (stepE != null) {
-		        epistle.add(stepE.get(Constants.READING).toString());
-		    } else {
-		        epistle.add("");
-		    }
-		    if (stepG != null) {
-		        gospel.add(stepG.get(Constants.READING).toString());
-		    } else {
-		        gospel.add("");
-		    }
-
+			if (stepE != null) {
+				epistle.add(stepE.get(Constants.READING).toString());
+			} else {
+				epistle.add("");
+			}
+			if (stepG != null) {
+				gospel.add(stepG.get(Constants.READING).toString());
+			} else {
+				gospel.add("");
+			}
 
 		}
 		OrderedHashtable readingsA = new OrderedHashtable();
 
 		if (!epistle.get(0).equals("")) {
 			epistleGospelOutput += putEpistleGospelReadings(rank, tag, epistle, readingsA, "apostol");
-		    epistleGospelOutput += rSep;
+			epistleGospelOutput += rSep;
 		}
 		if (!gospel.get(0).equals("")) {
 			epistleGospelOutput += putEpistleGospelReadings(rank, tag, gospel, readingsA, "gospel");
 		}
 		return epistleGospelOutput;
 	}
-	
-	
-	public String putMatinsReadings(Vector<OrderedHashtable> readings, Vector<String> rank, Vector<String> tag, OrderedHashtable readingsA, String key) {
+
+	public String putMatinsReadings(Vector<OrderedHashtable> readings, Vector<String> rank, Vector<String> tag,
+			OrderedHashtable readingsA, String key) {
 		readingsA.put(READINGS_KEY, MenologionContent.processMatins(readings));
 		readingsA.put("Rank", rank);
 		readingsA.put("Tag", tag);
@@ -154,7 +149,8 @@ public final class MenologionContent {
 		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, today);
 	}
 
-	private String putEpistleGospelReadings(Vector<String> rank, Vector<String> tag, Vector<String> reading, OrderedHashtable readingsA, String key) {
+	private String putEpistleGospelReadings(Vector<String> rank, Vector<String> tag, Vector<String> reading,
+			OrderedHashtable readingsA, String key) {
 		readingsA.put(READINGS_KEY, reading);
 		readingsA.put("Rank", rank);
 		readingsA.put("Tag", tag);
@@ -162,7 +158,6 @@ public final class MenologionContent {
 		String type1 = (String) phrases.getPhrases().get(key);
 		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, key, today);
 	}
-	
 
 	public static Vector<String> processMatins(Vector<OrderedHashtable> readings) {
 		Vector<String> matins2 = new Vector<>();
@@ -216,38 +211,41 @@ public final class MenologionContent {
 		return output.toString();
 	}
 
-	public static String getAstronomicalData(StringOp analyse, JDate today, String sunriseText, String sunsetText, String lunarPhaseText) {
-	    Sunrise sunrise = new Sunrise(analyse.getDayInfo());
-	    String[] sunriseSunset = sunrise.getSunriseSunsetString(today, (String) ConfigurationFiles.getDefaults().get("Longitude"), (String) ConfigurationFiles.getDefaults().get("Latitude"), (String) ConfigurationFiles.getDefaults().get("TimeZone"));
-	    String astronomicalData = "<BR>" + sunriseText + sunriseSunset[0];
-	    astronomicalData += "<BR>" + sunsetText + sunriseSunset[1];
-	    astronomicalData += Constants.DOUBLE_LINEBREAK; //<B>"+MainNames[3]+"</B>"+Colon+ Paschalion.getLunarPhaseString(today) +"<BR><BR>";
-	    // getting rid of the lunar phase until we program a paschalion ...
-	    //adding the civil Lunar phase by request of Mitrophan
-	    Astronomy sky = new Astronomy();
-	
-	    astronomicalData += lunarPhaseText + sky.lunarphase(today.getJulianDay(), analyse.getDayInfo());
-	    astronomicalData += Constants.DOUBLE_LINEBREAK;
-	    return astronomicalData;
+	public static String getAstronomicalData(StringOp analyse, JDate today, String sunriseText, String sunsetText,
+			String lunarPhaseText) {
+		Sunrise sunrise = new Sunrise(analyse.getDayInfo());
+		String[] sunriseSunset = sunrise.getSunriseSunsetString(today,
+				(String) ConfigurationFiles.getDefaults().get("Longitude"),
+				(String) ConfigurationFiles.getDefaults().get("Latitude"),
+				(String) ConfigurationFiles.getDefaults().get("TimeZone"));
+		String astronomicalData = "<BR>" + sunriseText + sunriseSunset[0];
+		astronomicalData += "<BR>" + sunsetText + sunriseSunset[1];
+		astronomicalData += Constants.DOUBLE_LINEBREAK; // <B>"+MainNames[3]+"</B>"+Colon+
+														// Paschalion.getLunarPhaseString(today) +"<BR><BR>";
+		// getting rid of the lunar phase until we program a paschalion ...
+		// adding the civil Lunar phase by request of Mitrophan
+		Astronomy sky = new Astronomy();
+
+		astronomicalData += lunarPhaseText + sky.lunarphase(today.getJulianDay(), analyse.getDayInfo());
+		astronomicalData += Constants.DOUBLE_LINEBREAK;
+		return astronomicalData;
 	}
 
 	public static String getFormat(String amc, StringOp analyse, JDate today, String am) {
 		String format = "";
-	    if (amc.equals("1")) {
-	        PCalendar checking = new PCalendar(today, PCalendar.JULIAN, analyse.getDayInfo());
-	        format = am;
-	        if (analyse.getDayInfo().get("Ideographic").equals("1"))
-	            {
-	                RuleBasedNumber convertN=new RuleBasedNumber(analyse.getDayInfo());
-	                
-	                format = format.replace("^YYAM", convertN.getFormattedNumber(Long.parseLong(Integer.toString((int) checking.getAM()))));
-	
-	            }
-	            else
-	            {
-		format = format.replace("^YYAM", Integer.toString((int) checking.getAM()));
-	            }
-	    }
+		if (amc.equals("1")) {
+			PCalendar checking = new PCalendar(today, PCalendar.JULIAN, analyse.getDayInfo());
+			format = am;
+			if (analyse.getDayInfo().get("Ideographic").equals("1")) {
+				RuleBasedNumber convertN = new RuleBasedNumber(analyse.getDayInfo());
+
+				format = format.replace("^YYAM",
+						convertN.getFormattedNumber(Long.parseLong(Integer.toString(checking.getAM()))));
+
+			} else {
+				format = format.replace("^YYAM", Integer.toString(checking.getAM()));
+			}
+		}
 		return format;
 	}
 

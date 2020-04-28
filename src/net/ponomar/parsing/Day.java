@@ -114,9 +114,9 @@ public class Day implements DocHandler {
 
     public void readDay(String fileName) //throws IOException
     {
-        fileName = fileName;
+        //fileName = fileName;
         //System.out.println(ParameterValues.getDayInfo().get("LS"));
-        String test=parameterValues.getDayInfo().get("LS").toString();
+        //String test=parameterValues.getDayInfo().get("LS").toString();
         //System.out.println("In Day, we have the path as " + test);
         
         try {

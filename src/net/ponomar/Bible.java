@@ -46,6 +46,11 @@ GNU General Public License for details.
  ****************************************************************************************/
 public class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionListener {
 
+	private static final String BIBLE_V = "BibleV";
+	private static final String FONT_FACE = "FontFace";
+	private static final String FONT_SIZE = "FontSize";
+	private static final String ORIENT = "Orient";
+	private static final String NAME = "^NAME";
 	// Parsing and navigation information
     private String curversion = "kjv"; // DEFAULT VERSION
     private String curbook;
@@ -59,7 +64,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     private OrderedHashtable abbrev = new OrderedHashtable();
     private boolean readFile = false;
     private OrderedHashtable findId = new OrderedHashtable();	//ADDED Y.S.
-    private OrderedHashtable Intro = new OrderedHashtable(); //ADDED Y.S.
+    private OrderedHashtable intro = new OrderedHashtable(); //ADDED Y.S.
     private String displayFont = ""; //ALLOWS A CUSTOM FONT AND SIZE TO BE SPECIFIED FOR A GIVEN BIBLE READING: REQUIRED FOR OLD CHURCH SLAVONIC AT PRESENT
     private String displaySize = "12";  //UNTIL A COMPLETE UNICODE FONT IS AVAILIBLE.
     private Font defaultFont = new Font("", Font.BOLD, 12);		//CREATE THE DEFAULT FONT
@@ -107,20 +112,18 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         setTitle(captions[7]);
         
         LanguagePack getLang = new LanguagePack(analyse.getDayInfo());
-        curversion = getLang.getPhrases().get("BibleV").toString();
+        curversion = getLang.getPhrases().get(BIBLE_V).toString();
+
+        parseBibleXML();
+        putXMLinUserInterface();
         
+        update(curbook, curpassage);
 
-        // FIRST, PARSE THE BIBLE.XML FILE TO OBTAIN ALL THE NECESSARY INFORMATION
-        try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), StandardCharsets.UTF_8));	//Unicodised it.
-            QDParser.parse(this, frf);
-        } catch (Exception e) {
-            System.out.println(captions[8] + e.toString());
-        }
+    }
 
+	protected void putXMLinUserInterface() {
         // NOW PUT THE XML INFORMATION INTO THE USER INTERFACE
-        
-        JPanel left = new JPanel();
+		JPanel left = new JPanel();
         JPanel right = new JPanel();
         left.setLayout(new BoxLayout(left, BoxLayout.PAGE_AXIS));
         right.setLayout(new BoxLayout(right, BoxLayout.PAGE_AXIS));
@@ -268,9 +271,17 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         pack();
         setSize(700, 600);
         setVisible(true);
-        update(curbook, curpassage);
+	}
 
-    }
+	protected void parseBibleXML() {
+        // PARSE THE BIBLE.XML FILE TO OBTAIN ALL THE NECESSARY INFORMATION
+		try {
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), StandardCharsets.UTF_8));	//Unicodised it.
+            QDParser.parse(this, frf);
+        } catch (Exception e) {
+            System.out.println(captions[8] + e.toString());
+        }
+	}
 
     public Bible(OrderedHashtable dayInfo) {
         analyse.setDayInfo(dayInfo);
@@ -300,7 +311,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             
             lastversion = (String) table.get("Id");
             currentBible = (String) table.get("Name");
-            findId.put((String) table.get("Name"), (String) table.get("Id"));//ADDED Y.S.
+            findId.put(table.get("Name"), table.get("Id"));//ADDED Y.S.
         }
         if (elem.equals("INFO")) {
             //ADDED Y.S. 2001211 n.s.
@@ -309,43 +320,43 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             String displayFontA = "";
             String displaySizeA = "";
 
-            if (table.get("FontFace") == null) {
+            if (table.get(FONT_FACE) == null) {
 
                 displayFontA = value1a.getFontName();
-                if (displayFontA.equals("Ponomar Unicode TT"));
+                if (displayFontA.equals("Ponomar Unicode TT"))
                 {
                     displayFontA = "Times New Roman";
                 }
 
             } else {
-                displayFontA = (String) table.get("FontFace");
+                displayFontA = (String) table.get(FONT_FACE);
             }
-            if (table.get("FontSize") == null) {
+            if (table.get(FONT_SIZE) == null) {
 
                 displaySizeA = Integer.toString(value1a.getSize());
             } else {
-                displaySizeA = (String) table.get("FontSize");
+                displaySizeA = (String) table.get(FONT_SIZE);
             }
-            String Name = currentBible;
+            String name = currentBible;
             String alignText = "left";
-            if (table.get("Orient") != null) {
-                if (table.get("Orient").equals("rtl")) {
+            if (table.get(ORIENT) != null) {
+                if (table.get(ORIENT).equals("rtl")) {
                     alignText = "right";
                 }
             }
 
-            String entry = "<html><p style=\"font-family:" + displayFontA + ";font-size:" + displaySizeA + "pt;text-align:" + alignText + "\">" + Name + "</p></html>";
-            versions.put(lastversion, "<html><p style=\"font-family:" + displayFontA + ";font-size:" + displaySizeA + "pt;text-align:" + alignText + "\">" + Name + "</p></html>");
+            String entry = "<html><p style=\"font-family:" + displayFontA + ";font-size:" + displaySizeA + "pt;text-align:" + alignText + "\">" + name + "</p></html>";
+            versions.put(lastversion, "<html><p style=\"font-family:" + displayFontA + ";font-size:" + displaySizeA + "pt;text-align:" + alignText + "\">" + name + "</p></html>");
             findId.put(entry, lastversion);
 
 
             if (curversion.equals(lastversion)) {
-                if (table.get("Orient") == null) {
+                if (table.get(ORIENT) == null) {
                     orientText = ComponentOrientation.LEFT_TO_RIGHT;
                     
                 } else {
                     
-                    if (table.get("Orient").equals("rtl")) {
+                    if (table.get(ORIENT).equals("rtl")) {
                         orientText = ComponentOrientation.RIGHT_TO_LEFT;
 
                     } else {
@@ -376,22 +387,22 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 
 
 
-                if (table.get("FontFace") == null) {
+                if (table.get(FONT_FACE) == null) {
 
                     displayFont = value1.getFontName();
-                    if (displayFont.equals("Ponomar Unicode TT"));
+                    if (displayFont.equals("Ponomar Unicode TT"))
                     {
                         displayFont = "Times New Roman";
                     }
 
                 } else {
-                    displayFont = (String) table.get("FontFace");
+                    displayFont = (String) table.get(FONT_FACE);
                 }
-                if (table.get("FontSize") == null) {
+                if (table.get(FONT_SIZE) == null) {
 
                     displaySize = Integer.toString(value1.getSize());
                 } else {
-                    displaySize = (String) table.get("FontSize");
+                    displaySize = (String) table.get(FONT_SIZE);
                 }
 
                 currentFont = new Font(displayFont, Font.PLAIN, Integer.parseInt(displaySize));               
@@ -399,11 +410,11 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             }
         } else if (elem.equals("BOOK")) {
             if (curversion.equals(lastversion)) {
-                books.put((String) table.get("Id"), (String) table.get("Name"));
-                chapters.put((String) table.get("Id"), (String) table.get("Chapters"));
-                Intro.put(table.get("Id").toString(), table.get("Intro").toString());  //ADDED Y.S.
+                books.put(table.get("Id"), table.get("Name"));
+                chapters.put(table.get("Id"), table.get("Chapters"));
+                intro.put(table.get("Id").toString(), table.get("Intro").toString());  //ADDED Y.S.
 
-                abbrev.put((String) table.get("Id"), (String) table.get("Short"));
+                abbrev.put(table.get("Id"), table.get("Short"));
             }
         }
     }
@@ -441,7 +452,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             if (changeIt) {
                 // NAVIGATE TO a different chapter
                 int n = chaptersBox.getSelectedIndex();
-                update(curbook, (new Integer(n + 1)).toString());
+                update(curbook, Integer.toString(n + 1));
             }
         }
     }
@@ -449,8 +460,8 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     public void actionPerformed(ActionEvent e) {
         Helpers helper = new Helpers(analyse.getDayInfo());
         String name = e.getActionCommand();
-        String[] FileNames = text.obtainValues((String) text.getPhrases().get("File"));
-        String[] HelpNames = text.obtainValues((String) text.getPhrases().get("Help"));
+        String[] fileNames = text.obtainValues((String) text.getPhrases().get("File"));
+        String[] helpNames = text.obtainValues((String) text.getPhrases().get("Help"));
         //ALLOWS A MULTILINGUAL PROPER VERSION
         if (name.equals("comboBoxChanged")) {
             //curversion = versions2.get(findId.get(versionsBox.getSelectedIndex()).toString()).toString();
@@ -460,7 +471,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             chapters = new OrderedHashtable();
             try {
 
-                BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), "UTF8"));	//Unicodised it.
+                BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), StandardCharsets.UTF_8));	//Unicodised it.
                 QDParser.parse(this, frf);
             } catch (Exception ew) {
                 System.out.println("Error reading bmlfile: " + ew.toString());
@@ -479,31 +490,31 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             //to here Y.S. 2010/07/01 n.s.
             update(curbook, curpassage);
 
-        } else if (name.equals(HelpNames[2])) {
+        } else if (name.equals(helpNames[2])) {
             //new About();
             Helpers orient = new Helpers(analyse.getDayInfo());
-            orient.applyOrientation(new About(analyse.getDayInfo()), (ComponentOrientation) analyse.getDayInfo().get("Orient"));
+            orient.applyOrientation(new About(analyse.getDayInfo()), (ComponentOrientation) analyse.getDayInfo().get(ORIENT));
 
-        } else if (name.equals(HelpNames[0])) {
+        } else if (name.equals(helpNames[0])) {
             //HELP FILES
-        } else if (name.equals(FileNames[1])) {
+        } else if (name.equals(fileNames[1])) {
             //SAVE THE CURRENT WINDOW
             helper.saveHTMLFile((String) books.get(curbook) + "_" + formatPassage(curpassage).replace(":", "-") + ".html", "<html><meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"><TITLE>" + (String) books.get(curbook) + " " + formatPassage(curpassage) + "</TITLE>" + printText);
-        } else if (name.equals(FileNames[4])) {
+        } else if (name.equals(fileNames[4])) {
             dispose();
-        } else if (name.equals(FileNames[6])) {
+        } else if (name.equals(fileNames[6])) {
             helper.sendHTMLToPrinter(textOutput);
         } else {
-            int butnum = (int) Integer.parseInt(name);
+            int butnum = Integer.parseInt(name);
             if (butnum == 0) {
                 // go back (prior chapter)
                 int curchap;
                 changeIt = false;
                 if (curpassage.indexOf(':') != -1) {
                     // we have a composite passage
-                    curchap = (int) Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':')));
+                    curchap = Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':')));
                 } else {
-                    curchap = (int) Integer.parseInt(curpassage);
+                    curchap = Integer.parseInt(curpassage);
                 }
                 curchap--;
 
@@ -515,13 +526,13 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                     } else {
                         Object[] booknames = books.keySet().toArray();
                         for (int i = 0; i < booknames.length; i++) {
-                            if (booknames[i].toString() == curbook) {
+                            if (booknames[i].toString().equals(curbook)) {
                                 curbook = booknames[i - 1].toString();
                                 break;
                             }
                         }
                     }
-                    curchap = (int) Integer.parseInt((String) chapters.get(curbook));
+                    curchap = Integer.parseInt((String) chapters.get(curbook));
                 }
                 curpassage = Integer.toString(curchap);
 
@@ -534,7 +545,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 if (curpassage.indexOf(':') == -1) {
                     return;
                 } else {
-                    curchap = (int) Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':')));
+                    curchap = Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':')));
                 }
 
                 curpassage = Integer.toString(curchap);
@@ -545,13 +556,13 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 changeIt = false;
                 if (curpassage.indexOf(':') != -1) {
                     // we have a composite passage
-                    curchap = (int) Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':')));
+                    curchap = Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':')));
                 } else {
-                    curchap = (int) Integer.parseInt(curpassage);
+                    curchap = Integer.parseInt(curpassage);
                 }
                 curchap++;
 
-                if (curchap > (int) Integer.parseInt((String) chapters.get(curbook))) {
+                if (curchap > Integer.parseInt((String) chapters.get(curbook))) {
                     // we have reached the beginning of this book
                     // get the previous book
                     if (curbook.indexOf("Apoc") != -1) {
@@ -559,7 +570,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                     } else {
                         Object[] booknames = books.keySet().toArray();
                         for (int i = 0; i < booknames.length - 1; i++) {
-                            if (booknames[i].toString() == curbook) {
+                            if (booknames[i].toString().equals(curbook)) {
                                 curbook = booknames[i + 1].toString();
                                 break;
                             }
@@ -606,22 +617,20 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         changeIt = false;
         instructions = "";
 
-        String Stuff[] = parseReadings(newBook, newPassage, versed);
+        String[] stuff = parseReadings(newBook, newPassage, versed);
 
         curbook = newBook;
         curpassage = newPassage;
 
         textOutput.setCaretPosition(0);
 
-        
-
         textOutput.setContentType("text/html; charset=UTF-8");
         textOutput.setFont(currentFont);
-        String headerA = header.replace("^NAME", (String) books.get(curbook));
+        String headerA = header.replace(NAME, (String) books.get(curbook));
         headerA = headerA.replace("^CNN", formatPassage(curpassage));
         
 
-        printText = "<body style=\"font-family:" + displayFont + ";font-size:" + displaySize + "pt\">" + headerA +  Stuff[0] + "</body>";
+        printText = "<body style=\"font-family:" + displayFont + ";font-size:" + displaySize + "pt\">" + headerA +  stuff[0] + "</body>";
 
         textOutput.setText(printText);
        
@@ -639,64 +648,32 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
 
     }
 
-    public String[] getText(String book, String passage, boolean RedStuff) {
+    public String[] getText(String book, String passage, boolean redStuff) {
         //SELECT THE CURRENT GENERAL BIBLE
         
         LanguagePack getLang = new LanguagePack(analyse.getDayInfo());
-        curversion = getLang.getPhrases().get("BibleV").toString();
-        try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), "UTF8"));
-            QDParser.parse(this, frf);
-        } catch (Exception e) {
-            System.out.println(captions[8] + e.toString());
-        }
+        curversion = getLang.getPhrases().get(BIBLE_V).toString();
+        parseBibleXML();
 
         //CALL THE PARSE READER AND OBTAIN THE RETURNED RESULTS: [0] contains the readings with or without extra markings, [1] contains any special instructions, and [2] contains the header, that is, a properly formated version of the reading.
-        String[] parsedResults = parseReadings(book, passage, RedStuff);
-        return parsedResults;
+        return parseReadings(book, passage, redStuff);
     }
-    //THIS FUNCTION HAS BEEN REPLACED BY THE SAME NAMED FUNCTION BUT A DIFFERENT SET OF CALLING ARGUMENTS.
 
-   /*private String process(String mText) {
+    private String process(String mText, boolean redStuff) {
         int k = mText.indexOf("**");
         if (k != -1) {
             // found scripture reading instructions ... parse
             String first = mText.substring(0, k);
             String third = mText.substring(mText.lastIndexOf("**") + 2);
             String second = mText.substring(k + 2, mText.lastIndexOf("**"));
-            mText = first + "<FONT Color=\"red\">**</FONT>" + third;
-            instructions += "**" + second + "<BR>";
-        }
-        mText = mText.replace("*(", "<FONT Color=\"red\">");
-        mText = mText.replace(")*", "</FONT>");
-        k = mText.indexOf("|");
-        if (k != -1) {
-            return " <SUP>" + VerseNumber[Integer.parseInt(mText.substring(0, k))] + "</SUP>" + mText.substring(k + 1); //ADDED A SPACE BETWEEN THE LAST SENTENCE AND THE VERSE NUMBER Y.S. AND CORRECTED MULTILINGUAL ISSUES
-        }
-
-        k = mText.indexOf('#');//THIS
-        if (k != -1) {
-            String ChapterNameF = ChapterName.replace("^NN", ChapterNumber[Integer.parseInt(mText.substring(1))]); //ToneFormat.replace("TT",toneNumbers[tone])
-            return "<BR>" + ChapterNameF + ""; //ADDED MULTILINGUAL SUPPORT
-        }
-        return mText;
-    }*/
-
-    private String process(String mText, boolean RedStuff) {
-        int k = mText.indexOf("**");
-        if (k != -1) {
-            // found scripture reading instructions ... parse
-            String first = mText.substring(0, k);
-            String third = mText.substring(mText.lastIndexOf("**") + 2);
-            String second = mText.substring(k + 2, mText.lastIndexOf("**"));
-            if (RedStuff) {
+            if (redStuff) {
                 mText = first + "<SPAN style=\"color:red;\">**</SPAN>" + third;
             } else {
                 mText = first + "**" + third;
             }
             instructions += "**" + second + "<BR>";
         }
-        if (RedStuff) {
+        if (redStuff) {
             mText = mText.replace("*(", "<SPAN style=\"color:red;\">");
             mText = mText.replace(")*", "</SPAN>");
         } else {
@@ -710,7 +687,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             }
         }
         k = mText.indexOf('|');
-        if (k != -1 && RedStuff) {
+        if (k != -1 && redStuff) {
             int verseNo=Integer.parseInt(mText.substring(0, k));
             String textVerse=mText.substring(k+1);
             if (mText.substring(k+1).equals(" ")){
@@ -720,12 +697,12 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 return verseNumber[0].replace("^TT",textVerse); //mText.substring(k+2));
             }
             else{
-                String Versed=verseNumbered.replace("^VN",verseNumber[Integer.parseInt(mText.substring(0, k))]);
-                Versed=Versed.replace("^VT",textVerse);//mText.substring(k+2));
-                return Versed;
+                String versedText=verseNumbered.replace("^VN",verseNumber[Integer.parseInt(mText.substring(0, k))]);
+                versedText=versedText.replace("^VT",textVerse);//mText.substring(k+2));
+                return versedText;
             //return " <SUP>" + VerseNumber[Integer.parseInt(mText.substring(0, k))] + "</SUP>" + mText.substring(k + 1); //ADDED A SPACE BETWEEN THE LAST SENTENCE AND THE VERSE NUMBER Y.S. AND CORRECTED MULTILINGUAL ISSUES
             }
-        } else if (k != -1 && !RedStuff) {
+        } else if (k != -1 && !redStuff) {
             int verseNo=Integer.parseInt(mText.substring(0, k));
              String textVerse=mText.substring(k+1);
             if (mText.substring(k+1).equals(" ")){
@@ -740,42 +717,42 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         }
 
         k = mText.indexOf('#');
-        if (k != -1 && RedStuff) {
-            String ChapterNameF = chapterName.replace("^NN", chapterNumber[Integer.parseInt(mText.substring(1))]); //ToneFormat.replace("TT",toneNumbers[tone])
-            ChapterNameF=ChapterNameF.replace("^NAME", (String) books.get(curbook));
-            return "<BR>" + ChapterNameF + ""; //ADDED MULTILINGUAL SUPPORT
-        } else if (k != -1 && !RedStuff) {
+        if (k != -1 && redStuff) {
+            String chapterNameF = chapterName.replace("^NN", chapterNumber[Integer.parseInt(mText.substring(1))]); //ToneFormat.replace("TT",toneNumbers[tone])
+            chapterNameF=chapterNameF.replace(NAME, (String) books.get(curbook));
+            return "<BR>" + chapterNameF + ""; //ADDED MULTILINGUAL SUPPORT
+        } else if (k != -1 && !redStuff) {
             return "";
         }
         return mText;
     }
 
     //ADDED BY YURI SHARDT 2008/09/20 TO MULTILINGUILISE THE READINGS!
-    public String getAbbrev(String Id) {
-        Id = Id.replace(' ', '_'); //THIS CAN BE AVOIDED IF THE DEFINITIONS ARE CHANGED
+    public String getAbbrev(String id) {
+        id = id.replace(' ', '_'); //THIS CAN BE AVOIDED IF THE DEFINITIONS ARE CHANGED
 
         //INITIALISE TO THE DEFAULT BIBLE FOR THE GIVEN LANGUAGE
         //ADDED Y.S. TO ALLOW FOR MULTILINGUAL AND ALL BIBLE READING
         
         LanguagePack getLang = new LanguagePack(analyse.getDayInfo());
-        curversion = getLang.getPhrases().get("BibleV").toString();
+        curversion = getLang.getPhrases().get(BIBLE_V).toString();
         //System.out.println("Bible: " + curversion);
 
         try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), "UTF8"));
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), StandardCharsets.UTF_8));
             QDParser.parse(this, frf);
         } catch (Exception e) {
             System.out.println(captions[9] + e.toString());
         }
 
-        return (String) abbrev.get(Id);
+        return (String) abbrev.get(id);
     }
 
     private String formatPassage(String newPassage) {
         //System.out.println("Hello there, passage: "+newPassage);
         if (newPassage.indexOf(':') == -1) {
             // just a chapter specification, e.g. Gen_1
-            int d = (int) Integer.parseInt(newPassage);
+            int d = Integer.parseInt(newPassage);
             String chapterNameF = chapterNameI.replace("^NN", chapterNumber[d]);
             newPassage = chapterNameF;
             return newPassage;
@@ -794,8 +771,8 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                     } else {
                         
                         //System.out.println("Testing the parsing function: Integer: "+Integer.toString(obtainNumber(parts[j]))+" Fraction: "+obtainPart(parts[j]));
-                        int verse = (int) +obtainNumber(parts[j].split(":")[1]);
-                        int chapter = (int) Integer.parseInt(parts[j].split(":")[0]);
+                        int verse = +obtainNumber(parts[j].split(":")[1]);
+                        int chapter = Integer.parseInt(parts[j].split(":")[0]);
                         parts[j] = chapterNumber[chapter] + cVSep + verseNumber[verse]+obtainPart(parts[j].split(":")[1]);
                     }
                 } else {
@@ -813,9 +790,9 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                         } else {
                             //System.out.println("Hello midpoint + " + sections[k] + " "+sections[k]);
                             //System.out.println(sections[k].split(":")[1]);
-                            int verse = (int) +obtainNumber(sections[k].split(":")[1]);
+                            int verse = +obtainNumber(sections[k].split(":")[1]);
                             //System.out.println(verse);
-                            int chapter = (int) Integer.parseInt(sections[k].split(":")[0]);
+                            int chapter = Integer.parseInt(sections[k].split(":")[0]);
                             //System.out.println(chapter);
                             sections[k] = chapterNumber[chapter] + cVSep + verseNumber[verse]+obtainPart(sections[k].split(":")[1]);
                         }
@@ -848,14 +825,9 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
            return "";
        }
         LanguagePack getLang = new LanguagePack(analyse.getDayInfo());
-        curversion = getLang.getPhrases().get("BibleV").toString();
+        curversion = getLang.getPhrases().get(BIBLE_V).toString();
 
-        try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), "UTF8"));
-            QDParser.parse(this, frf);
-        } catch (Exception e) {
-            System.out.println(captions[8] + e.toString());
-        }
+        parseBibleXML();
 
         String[] parts = reading.split("_");
         //TODO: get rid of these string operations. They are bad, and take up too much CPU time
@@ -864,7 +836,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
    
         String passage = parts[1].replace(" ", "");
         String output = "<A Href=reading#" + parts[0].replace(' ', '_') + "#" + passage + ">";
-        String headerA = abbrevFormat.replace("^NAME", getAbbrev(parts[0]));
+        String headerA = abbrevFormat.replace(NAME, getAbbrev(parts[0]));
         headerA = headerA.replace("^CNN", formatPassage(passage));
         
         output += headerA + "</A>";
@@ -879,12 +851,11 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         Vector pVerses = new Vector(); // stores the verse #s
         int i = 0;			 // dummy
         newBook = newBook.replace(" ", "_");
-        String ret = "";
         instructions = "";
 
         if (newPassage.indexOf(':') == -1) {
             // just a chapter specification, e.g. Gen_1
-            int d = (int) Integer.parseInt(newPassage);
+            int d = Integer.parseInt(newPassage);
             pChapters.add(d);
             pChapters.add(d + 1);
             pVerses.add(1);
@@ -906,10 +877,10 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                     int chapter = i;
                     if (sections[k].indexOf(':') == -1) {
                         // E.g. 13 or 5
-                        verse = (int) obtainNumber(sections[k]); //UPDATABLE: Once we can deal with partial verses.
+                        verse = obtainNumber(sections[k]); //UPDATABLE: Once we can deal with partial verses.
                     } else {
                         verse = obtainNumber(sections[k].split(":")[1]); //UPDATABLE: Once we can deal with partial verses.
-                        chapter = (int) Integer.parseInt(sections[k].split(":")[0]);
+                        chapter = Integer.parseInt(sections[k].split(":")[0]);
                         i = chapter;
                     }
 
@@ -923,19 +894,18 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         // now update the system variables
         curbook = newBook;
         curpassage = newPassage;
-        String[] Output = readBibleFiles(curbook, curpassage, redStuff, pVerses, pChapters);
-        return Output;
+        return readBibleFiles(curbook, curpassage, redStuff, pVerses, pChapters);
     }
 
-    public String[] readBibleFiles(String curbook, String curpassage, boolean RedStuff, Vector pVerses, Vector pChapters) {
+    public String[] readBibleFiles(String curbook, String curpassage, boolean redStuff, Vector pVerses, Vector pChapters) {
         String filename = Constants.LANGUAGES_PATH + "/" + curversion + "/" + curbook + ".text";
         String ret = "";
 
         try {
-            //BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));
+            //BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), StandardCharsets.UTF_8));
             FileInputStream fis = new FileInputStream(filename);
             //REMOVED TO ALLOW FOR NON-ASCII FILES Y.S. 2008/10/24 ns
-            BufferedReader br = new BufferedReader(new InputStreamReader(fis, "UTF8"));
+            BufferedReader br = new BufferedReader(new InputStreamReader(fis, StandardCharsets.UTF_8));
             String mLine = "";
             int nCurChapter = 0;
             int nCurVerse = -1;
@@ -957,18 +927,18 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                         //CHANGED DUE TO UNICODE ISSUES Y.S. 2008/10/24 ns
                         //System.out.println(mLine);
                         if (mLine.indexOf('#') == 1) {
-                            nCurChapter = (int) Integer.parseInt(mLine.substring(2));
+                            nCurChapter = Integer.parseInt(mLine.substring(2));
                         } else {
-                            nCurChapter = (int) Integer.parseInt(mLine.substring(1));
+                            nCurChapter = Integer.parseInt(mLine.substring(1));
                         }
                         nCurVerse = -1;
                     }
 
                     if (printMe) {
                         if (!ret.equals("")){
-                        ret += verseLink + process(mLine, RedStuff);
+                        ret += verseLink + process(mLine, redStuff);
                         }else{
-                            ret += process(mLine, RedStuff);
+                            ret += process(mLine, redStuff);
                         }
                     }
                 }
@@ -984,14 +954,14 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                     // format number|text, where number is verse number
                     int n = mLine.indexOf('|');
                     if (n != -1) {
-                        nCurVerse = (int) Integer.parseInt(mLine.substring(0, n));
+                        nCurVerse = Integer.parseInt(mLine.substring(0, n));
                     }
                     //Correcting issues with not being able to read all the desired readings Y.S. 2008/12/12 n.s.
                     if (printMe || nCurVerse == Integer.parseInt(v.toString()) || nCurVerse == 0) {
                         if (!ret.equals("")){
-                        ret += verseLink + process(mLine, RedStuff);
+                        ret += verseLink + process(mLine, redStuff);
                         }else{
-                            ret += process(mLine, RedStuff);
+                            ret += process(mLine, redStuff);
                         }
                         if (nCurChapter == Integer.parseInt(pChapters.elementAt(0).toString()) && nCurVerse == Integer.parseInt(pVerses.elementAt(0).toString())) {
                             //THE FIRST VERSE HAS BEEN READ, THE INSTRUCTIONS ASSOCIATED WITH THIS VERSE NEED TO BE SAVED
@@ -1011,7 +981,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         String[] output1 = new String[3];
         output1[0] = ret;
         output1[1] = instructFirst;
-        String headerA = header.replace("^NAME", (String) books.get(curbook));
+        String headerA = header.replace(NAME, (String) books.get(curbook));
         headerA = headerA.replace("^CNN", formatPassage(curpassage));
         
         output1[2] = headerA;
@@ -1024,14 +994,9 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         //ADDED Y.S. TO ALLOW FOR MULTILINGUAL AND ALL BIBLE READING
        
         LanguagePack getLang = new LanguagePack(analyse.getDayInfo());
-        curversion = getLang.getPhrases().get("BibleV").toString();
+        curversion = getLang.getPhrases().get(BIBLE_V).toString();
 
-        try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), "UTF8"));
-            QDParser.parse(this, frf);
-        } catch (Exception e) {
-            System.out.println(captions[8] + e.toString());
-        }
+        parseBibleXML();
         int k = id.lastIndexOf('_');
         if (k != -1) {
             if (id.substring(0, k).equals("Composite")) {
@@ -1041,10 +1006,10 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 System.out.println(result[1].substring(star1 + 1, starL) + " value of star1 " + star1 + " value of starL " + starL);
                 return result[1].substring(star1 + 1, starL).replace("...", "");
             } else {
-                return (String) Intro.get(id.substring(0, k));
+                return (String) intro.get(id.substring(0, k));
             }
         }
-        return (String) Intro.get(id);
+        return (String) intro.get(id);
 
 
     }
