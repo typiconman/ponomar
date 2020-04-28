@@ -508,14 +508,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             int butnum = Integer.parseInt(name);
             if (butnum == 0) {
                 // go back (prior chapter)
-                int curchap;
-                changeIt = false;
-                if (curpassage.indexOf(':') != -1) {
-                    // we have a composite passage
-                    curchap = Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':')));
-                } else {
-                    curchap = Integer.parseInt(curpassage);
-                }
+                int curchap = processCurrentChapter();
                 curchap--;
 
                 if (curchap == 0) {
@@ -552,14 +545,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 update(curbook, curpassage);
             } else if (butnum == 2) {
                 // go forward (next chapter)
-                int curchap;
-                changeIt = false;
-                if (curpassage.indexOf(':') != -1) {
-                    // we have a composite passage
-                    curchap = Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':')));
-                } else {
-                    curchap = Integer.parseInt(curpassage);
-                }
+                int curchap = processCurrentChapter();
                 curchap++;
 
                 if (curchap > Integer.parseInt((String) chapters.get(curbook))) {
@@ -606,6 +592,18 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             }
         }
     }
+
+	protected int processCurrentChapter() {
+		int currentChapter;
+		changeIt = false;
+		if (curpassage.indexOf(':') != -1) {
+		    // we have a composite passage
+		    currentChapter = Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':')));
+		} else {
+		    currentChapter = Integer.parseInt(curpassage);
+		}
+		return currentChapter;
+	}
 
     // updates the Scripture reading, setting a new reading
     protected void update(String newBook, String newPassage) {
@@ -677,14 +675,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             mText = mText.replace("*(", "<SPAN style=\"color:red;\">");
             mText = mText.replace(")*", "</SPAN>");
         } else {
-            //THIS JUST GIVES THE REQUIRED TEXT WITHOUT ANY COMMENTS
-            int k2 = mText.indexOf("*(");
-            while (k2 != -1) {
-                String first = mText.substring(0, k2);
-                String third = mText.substring(mText.indexOf(")*") + 2);
-                mText = first + " " + third;
-                k2 = mText.indexOf("*(");
-            }
+            mText = giveRequiredTextWithoutComments(mText);
         }
         k = mText.indexOf('|');
         if (k != -1 && redStuff) {
@@ -726,6 +717,17 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         }
         return mText;
     }
+
+	protected String giveRequiredTextWithoutComments(String mText) {
+		int k2 = mText.indexOf("*(");
+		while (k2 != -1) {
+		    String first = mText.substring(0, k2);
+		    String third = mText.substring(mText.indexOf(")*") + 2);
+		    mText = first + " " + third;
+		    k2 = mText.indexOf("*(");
+		}
+		return mText;
+	}
 
     //ADDED BY YURI SHARDT 2008/09/20 TO MULTILINGUILISE THE READINGS!
     public String getAbbrev(String id) {
