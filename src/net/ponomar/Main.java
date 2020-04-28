@@ -62,28 +62,17 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
     private JDate pascha; 		// THIS YEAR'S PASCHA
     private JDate pentecost; 	// THIS YEAR'S PENTECOST
     //private Stack fastInfo;		// CONTAINS A VECTOR OF THE FASTING INFORMATION FOR TODAY, WHICH IS LATER PASSED TO CONVOLVE()
-    private OrderedHashtable readings;	// CONTAINS TODAY'S SCRIPTURE READING
     private String output;  	// TODAY'S CALENDAR OUTPUT
     private Boolean inited = false; // PREVENTS MULTIPLE READING OF XML FILES ON LAUNCH
     private Bible bible;
-    private GospelSelector gospelLocation;		//THE GOSPEL SELECTOR OBJECT
-    private String gLocation;					//STORES THE PATH (FOLDER) TO THE APPROPRIATE GOSPEL READING LOCATION FILES
     private LanguageSelector languageLocation;
     //private String LLocation;
     //MY ATTEMPT AT SORTING THE READINGS FOR THE LITURGY 2008/05/19 n.s. YURI SHARDT
-    private OrderedHashtable pentecostarionS;		//CONTAINS THE PENTECOSTARION READINGS (SEQUENTIAL (rjadovoje) READINGS!)
-    private OrderedHashtable menalogionS;		//CONTAINS THE MENALOGION READINGS, EXCLUDING ANY FLOATERS
-    private OrderedHashtable floaterS;			//CONTAINS THE FLOATER READINGS.
-    private OrderedHashtable[] readScriptures;
     private JMenuBar menuBarElement;
     private MenuFiles demo;
     private LanguagePack phrases;
-    private static String[] toneNumbers;
-    private static String[] errors;
     public static String[] mainNames;
     private static boolean read = false;		//DETERMINES WHICH LANGUAGE WILL BE READ
-    private String[] saintNames;
-    private String optionsNames;
     private String[] fileNames;
     private String[] serviceNames;
     private String[] bibleName;
@@ -99,9 +88,6 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
     private String ideographic = "";
     private DoSaint saintLink;
     private IconDisplay displayIcon;
-    private Vector<String> iconImages;
-    private Vector<String> iconNames;
-    private String orderBox;
     private StringOp analyse = new StringOp();
     //private GospelSelector Selector;
     Helpers findLanguage;
@@ -125,19 +111,14 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         //Changing language storage format
         findLanguage = new Helpers(analyse.getDayInfo());
 
-        toneNumbers = phrases.obtainValues((String) phrases.getPhrases().get("Tones"));
-        saintNames = phrases.obtainValues((String) phrases.getPhrases().get("SMenu"));
-        optionsNames = (String) phrases.getPhrases().get("Options");
         fileNames = phrases.obtainValues((String) phrases.getPhrases().get("File"));
         serviceNames = phrases.obtainValues((String) phrases.getPhrases().get("Services"));
         bibleName = phrases.obtainValues((String) phrases.getPhrases().get("Bible"));
         helpNames = phrases.obtainValues((String) phrases.getPhrases().get("Help"));
 
-        errors = phrases.obtainValues((String) phrases.getPhrases().get("Errors"));
         mainNames = phrases.obtainValues((String) phrases.getPhrases().get("Main"));
         displayFont = (String) phrases.getPhrases().get("FontFaceM");
         displaySize = (String) phrases.getPhrases().get("FontSizeM");
-        orderBox = (String) phrases.getPhrases().get("OrderBox");
 
         Font value1 = (Font) UIManager.get("Menu.font");
         if (displaySize == null || displaySize.equals("")) {
@@ -194,7 +175,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         analyse.getDayInfo().put("Colon", colon);
         ideographic = (String) phrases.getPhrases().get("Ideographic");
         analyse.getDayInfo().put("Ideographic", ideographic);
-        gospelLocation = new GospelSelector(analyse.getDayInfo());
+        //gospelLocation = new GospelSelector(analyse.getDayInfo());
 
         //ADD A MENU BAR Y.S. 2008/08/11 n.s.
         demo = new MenuFiles(analyse.getDayInfo().clone());
@@ -444,10 +425,6 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
         int ndayF = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
 
-        //Clearing the holders for the icons and names
-        iconImages = new Vector<String>();
-        iconNames = new Vector<String>();
-
         // PUT THE RELEVANT DATA IN THE HASH
         analyse.getDayInfo().put("dow", dow);	// THE DAY'S DAY OF WEEK
         analyse.getDayInfo().put("doy", doy);	// THE DAY'S DOY (see JDate.java for specification)
@@ -465,7 +442,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         analyse.getDayInfo().put("dRank", 0); //The default rank for a day is 0. Y.S. 2010/02/01 n.s.
         analyse.getDayInfo().put("Ideographic", ideographic);
 
-        readings = new OrderedHashtable();
+        //readings = new OrderedHashtable();
         //fastInfo = new Stack();
         //MY ATTEMPT AT SORTING THE READINGS FOR THE LITURGY 2008/05/24 n.s. YURI SHARDT
 		/*ReadScriptures = new OrderedHashtable[3];		//CONTAINS A SORTED ARRAY OF ALL THE READINGS
