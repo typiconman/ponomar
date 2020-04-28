@@ -54,7 +54,6 @@ GNU General Public License for details.
 public class Main extends JFrame implements PropertyChangeListener, HyperlinkListener, ActionListener {
     // First, some relevant constants
 
-	private static final String READINGS_KEY = "Readings";
     // Elements of the interface
     JDate today; 		// "TODAY" (I.E. THE DATE WE'RE WORKING WITH
     private JCalendar calendar; 	// THE CALENDAR OBJECT
@@ -69,9 +68,9 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
     //private String LLocation;
     //MY ATTEMPT AT SORTING THE READINGS FOR THE LITURGY 2008/05/19 n.s. YURI SHARDT
     private JMenuBar menuBarElement;
-    private MenuFiles demo;
+    private MenuFiles menuFiles;
     private LanguagePack phrases;
-    public static String[] mainNames;
+    private static String[] mainNames;
     private static boolean read = false;		//DETERMINES WHICH LANGUAGE WILL BE READ
     private String[] fileNames;
     private String[] serviceNames;
@@ -120,14 +119,14 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         //gospelLocation = new GospelSelector(analyse.getDayInfo());
 
         //ADD A MENU BAR Y.S. 2008/08/11 n.s.
-        demo = new MenuFiles(analyse.getDayInfo().clone());
+        menuFiles = new MenuFiles(analyse.getDayInfo().clone());
         menuBarElement = new JMenuBar();
-        menuBarElement.add(demo.createFileMenu(this));
-        menuBarElement.add(demo.createOptionsMenu(this,this));
-        menuBarElement.add(demo.createSaintsMenu(this));
-        menuBarElement.add(demo.createServicesMenu(this));
-        menuBarElement.add(demo.createBibleMenu(this));
-        menuBarElement.add(demo.createHelpMenu(this));
+        menuBarElement.add(menuFiles.createFileMenu(this));
+        menuBarElement.add(menuFiles.createOptionsMenu(this,this));
+        menuBarElement.add(menuFiles.createSaintsMenu(this));
+        menuBarElement.add(menuFiles.createServicesMenu(this));
+        menuBarElement.add(menuFiles.createBibleMenu(this));
+        menuBarElement.add(menuFiles.createHelpMenu(this));
         menuBarElement.setFont(currentFont);
         //MenuBar.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
         setJMenuBar(menuBarElement);
@@ -176,15 +175,12 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         //Default screen size issues for East Asian languages!
         if (fontValue.getSize() < Integer.parseInt(displaySize)) {
             Dimension defaultScreen = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-
-            //System.out.println(screen);
             int newSize = Integer.parseInt(displaySize);
             int maxW = 95 * defaultScreen.width / 100;
             int maxH = 95 * defaultScreen.height / 100;
             screen.width = java.lang.Math.min(screen.width * newSize / fontValue.getSize(), maxW);
             screen.height = java.lang.Math.min(screen.height * newSize / fontValue.getSize(), maxH);
             this.setSize(screen);
-            //System.out.println(screen);
         }
 	}
 
@@ -359,48 +355,45 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
             optionsN.createDefaultWindow();
 
         }
-
-        String s = "Action event detected." + Constants.NEWLINE + "    Event source: " + source.getText() + " (an instance of " + getClassName(source) + ")";
-        System.out.println(s);
-        //output.append(s + newline);
-        //output.setCaretPosition(output.getDocument().getLength());
+        System.out.println("Action event detected." + Constants.NEWLINE + "    Event source: " + source.getText() + " (an instance of " + getClassName(source) + ")");
     }
 
 
-    public void hyperlinkUpdate(HyperlinkEvent e) {
-        if (e.getEventType().toString() == "ACTIVATED") {
-            String cmd = e.getDescription();
-            String[] parts = cmd.split("#");
-            if (parts[0].indexOf("reading") != -1) {
-                try {
-                    bible.update(parts[1], parts[2]);
-                    bible.setVisible(true);
-                } catch (NullPointerException npe) {
-                    bible = new Bible(parts[1], parts[2], analyse.getDayInfo());
-                    Helpers orient = new Helpers(analyse.getDayInfo());
-                    orient.applyOrientation(bible, (ComponentOrientation) analyse.getDayInfo().get("Orient"));
-                }
-            } else {
-                parts = cmd.split("\\?");
-                if (parts[0].indexOf("goDoSaint") != -1) {
+	public void hyperlinkUpdate(HyperlinkEvent e) {
+		if (e.getEventType().toString() == "ACTIVATED") {
+			String cmd = e.getDescription();
+			String[] parts = cmd.split("#");
+			if (parts[0].indexOf("reading") != -1) {
+				try {
+					bible.update(parts[1], parts[2]);
+					bible.setVisible(true);
+				} catch (NullPointerException npe) {
+					bible = new Bible(parts[1], parts[2], analyse.getDayInfo());
+					Helpers orient = new Helpers(analyse.getDayInfo());
+					orient.applyOrientation(bible, (ComponentOrientation) analyse.getDayInfo().get("Orient"));
+				}
+			} else {
+				parts = cmd.split("\\?");
+				if (parts[0].indexOf("goDoSaint") != -1) {
 
-                    String[] parts2 = parts[1].split("=");
-                    //System.out.println(parts2[1]);
-                    String[] parts3 = parts2[1].split(",");
+					String[] parts2 = parts[1].split("=");
+					// System.out.println(parts2[1]);
+					String[] parts3 = parts2[1].split(",");
 
-                    Commemoration trial1 = new Commemoration(parts3[parts3.length - 2], parts3[parts3.length - 1], analyse.getDayInfo());
-                    if (saintLink == null) {
-                        System.out.println(parts3[parts3.length - 1]);
+					Commemoration trial1 = new Commemoration(parts3[parts3.length - 2], parts3[parts3.length - 1],
+							analyse.getDayInfo());
+					if (saintLink == null) {
+						System.out.println(parts3[parts3.length - 1]);
 
-                        saintLink = new DoSaint(trial1, analyse.getDayInfo());
-                    } else {
-                        saintLink.refresh(trial1);
-                    }
+						saintLink = new DoSaint(trial1, analyse.getDayInfo());
+					} else {
+						saintLink.refresh(trial1);
+					}
 
-                }
-            }
-        }
-    }
+				}
+			}
+		}
+	}
 
     private void write() {
         text.setContentType("text/html; charset=UTF-8");
@@ -424,30 +417,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
         content += mainNames[0] + colon + today.getGregorianDateS(analyse.getDayInfo()) + "<BR>";
         String filename = "";
-        int lineNumber = 0;
-        int dow = today.getDayOfWeek();
-        int doy = today.getDoy();
-        int nday = (int) JDate.difference(today, this.pascha);
-        int ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
-        //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
-        int ndayF = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
-
-        // PUT THE RELEVANT DATA IN THE HASH
-        analyse.getDayInfo().put("dow", dow);	// THE DAY'S DAY OF WEEK
-        analyse.getDayInfo().put("doy", doy);	// THE DAY'S DOY (see JDate.java for specification)
-        //System.out.println(doy);
-        analyse.getDayInfo().put("nday", nday);	// THE NUMBER OF DAYS BEFORE (-) OR AFTER (+) THIS YEAR'S PASCHA
-        analyse.getDayInfo().put("ndayP", ndayP);	// THE NUMBER OF DAYS AFTER LAST YEAR'S PASCHA
-        //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
-        analyse.getDayInfo().put("ndayF", ndayF);	// THE NUMBER OF DAYS TO NEXT YEAR'S PASCHA (CAN BE +ve or -ve).
-        //ADDING THE TYPE OF GOSPEL READINGS TO BE FOLLOWED
-        analyse.getDayInfo().put("GS", GospelSelector.getGValue());
-        
-        //INTERFACE LANGUAGE
-        analyse.getDayInfo().put("LS", languageLocation.getLValue());
-        analyse.getDayInfo().put("Year", today.getYear());
-        analyse.getDayInfo().put("dRank", 0); //The default rank for a day is 0. Y.S. 2010/02/01 n.s.
-        analyse.getDayInfo().put("Ideographic", ideographic);
+        int lineNumber;
+		int nday = updateDayInfoAndReturnPaschaDifference();
 
         //readings = new OrderedHashtable();
         //fastInfo = new Stack();
@@ -457,12 +428,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         ReadScriptures[1] = new OrderedHashtable();		//CONTAINS THE MENALOGION READINGS, EXCLUDING ANY FLOATERS
         ReadScriptures[2] = new OrderedHashtable();		//CONTAINS THE FLOATER READINGS.
          */
-        //TESTING THE LANGUAGE PACKS
-        String rough = (String) phrases.getPhrases().get("1");
-        String[] final1 = rough.split(",");
-        //System.out.println(output);
 
-        content += MenologionContent.getAstronomicalData(analyse, today);
+        content += MenologionContent.getAstronomicalData(analyse, today, mainNames[1], mainNames[2], mainNames[3]);
 
         if (nday >= -70 && nday < 0) {
             filename = Constants.TRIODION_PATH;
@@ -512,7 +479,6 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         analyse.getDayInfo().put("Tone", paschalCycle.getTone());
 
 
-        String collection = "";
         content += Constants.DOUBLE_LINEBREAK;
         OrderedHashtable[] paschalReadings = paschalCycle.getReadings();
         //System.out.println("Length of Ordinary Readings="+PaschalReadings.length);
@@ -526,80 +492,15 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         ReadingUtility.processMenaionPaschalReadings(menaionReadings, combinedReadings);
         ReadingUtility.processMenaionPaschalReadings(paschalReadings, combinedReadings);
         //}
-        boolean firstTime = true;
-        for (Enumeration<String> e = combinedReadings.enumerateKeys(); e.hasMoreElements();) {
-            //Temporary solution
-            String element1 = e.nextElement();
-            OrderedHashtable temp = (OrderedHashtable) combinedReadings.get(element1);
-            Vector<OrderedHashtable> readings = (Vector<OrderedHashtable>) temp.get(READINGS_KEY);
-            Vector<String> rank = (Vector<String>) temp.get("Rank");
-            Vector<String> tag = (Vector<String>) temp.get("Tag");
-            if (element1.equals("LITURGY")) {
-                if (firstTime) {
-                    firstTime = false;
-                } else {
-                    content += rSep;
-                }
-                //Special case and consider it differently
-                content += iterateEpistleGospel(readings, rank, tag);
-
-                /*for (int j=0; j<Readings.size();j++){
-                if (j!=0){
-                output+=RSep;
-                }
-                String BibleText=epistle.get(j).toString();
-
-                output+=ShortForm.getHyperlink(BibleText);
-
-                if (Readings.size()>1){
-                output+= Tag.get(j).toString();
-                }
-                }*/
-
-                /*for (int j=0; j<Readings.size();j++){
-                if (j!=0){
-                output+=RSep;
-                }
-                String BibleText=gospel.get(j).toString();
-                output+=ShortForm.getHyperlink(BibleText);
-
-                if (Readings.size()>1){
-                output+= Tag.get(j).toString();
-                }
-                }*/
-                continue;
-
-            }
-            if (element1.equals("MATINS")) {
-                if (firstTime) {
-                    firstTime = false;
-                } else {
-                    content += rSep;
-                }
-
-                content+=putMatinsReadings(readings, rank, tag, new OrderedHashtable(), "matins");
-                //output+=RSep;
-
-
-                continue;
-
-            }
-            if (firstTime) {
-                firstTime = false;
-            } else {
-                content += rSep;
-            }
-            String type1 = (String) phrases.getPhrases().get(element1.toLowerCase());
-            content += "<B>" + type1 + "</B>" + colon;
-            content += MenologionContent.iterateOverReadings(shortForm, readings, tag, rSep);
-            //output += RSep;
-        }
-
-
-
+        
+		MenologionContent contentHelper = new MenologionContent(analyse, phrases, today);
+		contentHelper.setrSep(rSep);
+		contentHelper.setColon(colon);
+        
+        content += contentHelper.processReadings(shortForm, combinedReadings);
 
         //THIS IS NOW REPLACED BY THE NEW PROGRAMME, THAT SIMPLIFIES THE DETERMINATION OF THE FAST.
-        String[] fastNames = phrases.obtainValues((String) phrases.getPhrases().get("Fasts"));
+        //String[] fastNames = phrases.obtainValues((String) phrases.getPhrases().get("Fasts"));
         Fasting getfast = new Fasting(analyse.getDayInfo());
         content += Constants.DOUBLE_LINEBREAK + getfast.fastRules() + Constants.DOUBLE_LINEBREAK;
         //output+="</FONT>";
@@ -610,41 +511,31 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         return content;
 	}
 
-	private String iterateEpistleGospel(Vector<OrderedHashtable> readings, Vector<String> rank, Vector<String> tag) {
-		
-		String epistleGospelOutput = "";
-		Vector<String> epistle = new Vector<>();
+	protected int updateDayInfoAndReturnPaschaDifference() {
+        int dayOfWeek = today.getDayOfWeek();
+        int doy = today.getDoy();
+        int daysBeforeOrAfterPascha = (int) JDate.difference(today, this.pascha);
+        int daysAfterLastYearsPascha = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
+        //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
+        int daysBeforeNextYearsPascha = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
 
-		Vector<String> gospel = new Vector<>();
-
-		for (int j = 0; j < readings.size(); j++) {
-		    OrderedHashtable liturgy = (OrderedHashtable) readings.get(j);
-		    OrderedHashtable stepE = (OrderedHashtable) liturgy.get("apostol");
-		    OrderedHashtable stepG = (OrderedHashtable) liturgy.get("gospel");
-
-		    if (stepE != null) {
-		        epistle.add(stepE.get(Constants.READING).toString());
-		    } else {
-		        epistle.add("");
-		    }
-		    if (stepG != null) {
-		        gospel.add(stepG.get(Constants.READING).toString());
-		    } else {
-		        gospel.add("");
-		    }
-
-
-		}
-		OrderedHashtable readingsA = new OrderedHashtable();
-
-		if (!epistle.get(0).equals("")) {
-			epistleGospelOutput += putEpistleGospelReadings(rank, tag, epistle, readingsA, "apostol");
-		    epistleGospelOutput += rSep;
-		}
-		if (!gospel.get(0).equals("")) {
-			epistleGospelOutput += putEpistleGospelReadings(rank, tag, gospel, readingsA, "gospel");
-		}
-		return epistleGospelOutput;
+        // PUT THE RELEVANT DATA IN THE HASH
+        analyse.getDayInfo().put("dow", dayOfWeek);	// THE DAY'S DAY OF WEEK
+        analyse.getDayInfo().put("doy", doy);	// THE DAY'S DOY (see JDate.java for specification)
+        //System.out.println(doy);
+        analyse.getDayInfo().put("nday", daysBeforeOrAfterPascha);	// THE NUMBER OF DAYS BEFORE (-) OR AFTER (+) THIS YEAR'S PASCHA
+        analyse.getDayInfo().put("ndayP", daysAfterLastYearsPascha);	// THE NUMBER OF DAYS AFTER LAST YEAR'S PASCHA
+        //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
+        analyse.getDayInfo().put("ndayF", daysBeforeNextYearsPascha);	// THE NUMBER OF DAYS TO NEXT YEAR'S PASCHA (CAN BE +ve or -ve).
+        //ADDING THE TYPE OF GOSPEL READINGS TO BE FOLLOWED
+        analyse.getDayInfo().put("GS", GospelSelector.getGValue());
+        
+        //INTERFACE LANGUAGE
+        analyse.getDayInfo().put("LS", languageLocation.getLValue());
+        analyse.getDayInfo().put("Year", today.getYear());
+        analyse.getDayInfo().put("dRank", 0); //The default rank for a day is 0. Y.S. 2010/02/01 n.s.
+        analyse.getDayInfo().put("Ideographic", ideographic);
+		return daysBeforeOrAfterPascha;
 	}
 
 	private void displayIcons(Day paschalCycle, Day solarCycle) {
@@ -660,24 +551,6 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         iconNames = (String[]) namesList.toArray(new String[namesList.size()]);
 
         displayIcon.updateImagesFiled(iconImages, iconNames);
-	}
-
-	private String putMatinsReadings(Vector<OrderedHashtable> readings, Vector<String> rank, Vector<String> tag, OrderedHashtable readingsA, String key) {
-		readingsA.put(READINGS_KEY, MenologionContent.processMatins(readings));
-		readingsA.put("Rank", rank);
-		readingsA.put("Tag", tag);
-		Matins trial1 = new Matins(analyse.getDayInfo());
-		String type1 = (String) phrases.getPhrases().get(key);
-		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, today);
-	}
-
-	private String putEpistleGospelReadings(Vector<String> rank, Vector<String> tag, Vector<String> reading, OrderedHashtable readingsA, String key) {
-		readingsA.put(READINGS_KEY, reading);
-		readingsA.put("Rank", rank);
-		readingsA.put("Tag", tag);
-		DivineLiturgy trial1 = new DivineLiturgy(analyse.getDayInfo());
-		String type1 = (String) phrases.getPhrases().get(key);
-		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, key, today);
 	}
 
 	protected String getClassName(Object o) {
