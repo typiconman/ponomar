@@ -197,57 +197,57 @@ public class Fasting implements DocHandler
 				forbid++;
 			}
 		}
-		String output=fastNames[27]+" ";
+		StringBuilder output= new StringBuilder(fastNames[27] + " ");
 		for(int i=0;i < permit;i++)
 		{
-			output+=permitted[i];
+			output.append(permitted[i]);
 			if(i<permit-1)
 			{
-				output+=", ";
+				output.append(", ");
 			}
 			if(i==permit-2)
 			{
-				output+=" "+fastNames[25]+" ";
+				output.append(" ").append(fastNames[25]).append(" ");
 			}
 		}
 		if(permit==1)
 		{
-			output+=" "+fastNames[20]+" "+fastNames[23]; 
+			output.append(" ").append(fastNames[20]).append(" ").append(fastNames[23]);
 		}
 		else if(permit==2)
 		{
 			//FOR THOSES SLAVIC LANGUAGES WITH THE DUAL
-			output+=" "+fastNames[21]+" "+fastNames[23];
+			output.append(" ").append(fastNames[21]).append(" ").append(fastNames[23]);
 		}
 		else
 		{
-			output+=" "+fastNames[22]+" "+fastNames[23];
+			output.append(" ").append(fastNames[22]).append(" ").append(fastNames[23]);
 		}
-		output+=fastNames[26]+" ";
+		output.append(fastNames[26]).append(" ");
 		for(int i=0;i < forbid;i++)
 		{
-			output+=forbidden[i];
+			output.append(forbidden[i]);
 			if(i<forbid-1)
 			{
-				output+=", ";
+				output.append(", ");
 			}
 			if(i==forbid-2)
 			{
-				output+=" "+fastNames[25]+" ";
+				output.append(" ").append(fastNames[25]).append(" ");
 			}
 		}
 		if(forbid==1)
 		{
-			output+=output+=" "+fastNames[20]+" "+fastNames[24]; 
+			output.append(output.append(" ").append(fastNames[20]).append(" ").append(fastNames[24]));
 		}
 		else if(forbid==2)
 		{
 			//FOR THOSES SLAVIC LANGUAGES WITH THE DUAL
-			output+=" "+fastNames[21]+" "+fastNames[24];
+			output.append(" ").append(fastNames[21]).append(" ").append(fastNames[24]);
 		}
 		else
 		{
-			output+=" "+fastNames[22]+" "+fastNames[24];
+			output.append(" ").append(fastNames[22]).append(" ").append(fastNames[24]);
 		}
 		return fastNames[4]+" " +output;
 	}

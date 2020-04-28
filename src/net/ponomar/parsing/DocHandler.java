@@ -24,9 +24,9 @@ import java.util.*;
 
 public interface DocHandler 
 {
-  public void startElement(String tag,Hashtable h) throws Exception;
-  public void endElement(String tag) throws Exception;
-  public void startDocument() throws Exception;
-  public void endDocument() throws Exception;
-  public void text(String str) throws Exception;
+  void startElement(String tag, Hashtable h) throws Exception;
+  void endElement(String tag) throws Exception;
+  void startDocument() throws Exception;
+  void endDocument() throws Exception;
+  void text(String str) throws Exception;
 }

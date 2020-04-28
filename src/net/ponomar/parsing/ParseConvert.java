@@ -1,16 +1,8 @@
 package net.ponomar.parsing;
 
-import javax.swing.*;
-import java.beans.*;
-import java.awt.*;
-import java.util.*;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-
-import javax.swing.event.*;
-
-import java.awt.event.*;
-import java.beans.*;
+import java.util.Hashtable;
 /***********************************************************************
 *******************************************************/
 
@@ -41,7 +33,7 @@ public class ParseConvert implements DocHandler
 	public void prepareFiles(String fileNameIn)
 	{
 		String q="";
-		String renew="";
+		StringBuilder renew= new StringBuilder();
 		
 		try
 		{
@@ -77,7 +69,7 @@ public class ParseConvert implements DocHandler
 						{
 							break;
 						}
-						renew+=q+"\r\n";
+						renew.append(q).append("\r\n");
 						}
 					}
 					
@@ -87,7 +79,7 @@ public class ParseConvert implements DocHandler
 			}
 			frf.close();	
 			BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileNameIn),StandardCharsets.UTF_8));
-			out2.write(renew);
+			out2.write(renew.toString());
 			out2.close();
 		}
 		catch (Exception e)

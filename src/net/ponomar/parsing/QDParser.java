@@ -25,7 +25,7 @@ import java.util.*;
 public class QDParser {
 	private static int popMode(Stack st) {
 		if (!st.empty())
-			return ((Integer) st.pop()).intValue();
+			return (Integer) st.pop();
 		else
 			return PRE;
 	}
@@ -41,8 +41,8 @@ public class QDParser {
 		int c = 0;
 		int quotec = '"';
 		depth = 0;
-		StringBuffer sb = new StringBuffer();
-		StringBuffer etag = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
+		StringBuilder etag = new StringBuilder();
 		String tagName = null;
 		String lvalue = null;
 		String rvalue = null;
@@ -264,7 +264,7 @@ public class QDParser {
 					quotec = c;
 					mode = QUOTE;
 				} else if (Character.isWhitespace((char) c)) {
-					;
+
 				} else {
 					exc("Error in attribute processing", line, col);
 				}
@@ -286,7 +286,7 @@ public class QDParser {
 				if (c == '=') {
 					mode = ATTRIBUTE_RVALUE;
 				} else if (Character.isWhitespace((char) c)) {
-					;
+
 				} else {
 					exc("Error in attribute processing.", line, col);
 				}
@@ -301,7 +301,7 @@ public class QDParser {
 				} else if (c == '/') {
 					mode = SINGLE_TAG;
 				} else if (Character.isWhitespace((char) c)) {
-					;
+
 				} else {
 					mode = ATTRIBUTE_LVALUE;
 					sb.append((char) c);

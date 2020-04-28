@@ -557,23 +557,23 @@ public class Service implements DocHandler
                                             "\ua66f",
                                             "\ua670","\ua671","\ua672","\ua673","\ua67c","\ua67d"};         //Some more Cyrilic Diacritics
                             //Continuing to add letters to the red part until none from the above list are found.
-                            String redNow="";
+                            StringBuilder redNow= new StringBuilder();
                             int countRed=1;
-                            redNow=text2.substring(0,1);
+                            redNow = new StringBuilder(text2.substring(0, 1));
                             
                             boolean stopRed=false;
                             while (!stopRed){
                                 stopRed=true;
-                                for(int i=0;i<list.length;i++){
-                                    //System.out.println(redNow +" a");
-                                    //System.out.println(text2.substring(countRed,countRed+1));
-                                    if(text2.substring(countRed,countRed+1).equals(list[i])){
-                                        stopRed=false;
-                                        redNow=redNow+text2.substring(countRed,countRed+1);
-                                        countRed=countRed+1;
-                                        break;
-                                    }
-                                }                               
+								for (String s : list) {
+									//System.out.println(redNow +" a");
+									//System.out.println(text2.substring(countRed,countRed+1));
+									if (text2.substring(countRed, countRed + 1).equals(s)) {
+										stopRed = false;
+										redNow.append(text2.substring(countRed, countRed + 1));
+										countRed = countRed + 1;
+										break;
+									}
+								}
                             }
                             
                             text2="<B><FONT color=\"red\">"+redNow+"</FONT></B>"+text2.substring(countRed);

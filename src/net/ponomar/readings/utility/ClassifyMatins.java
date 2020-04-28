@@ -1,11 +1,10 @@
 package net.ponomar.readings.utility;
 
-import java.util.Vector;
-
 import net.ponomar.readings.Matins;
-import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
+
+import java.util.Vector;
 
 public class ClassifyMatins extends ClassifyReadings {
 

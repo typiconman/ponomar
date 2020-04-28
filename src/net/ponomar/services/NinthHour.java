@@ -1,6 +1,7 @@
 package net.ponomar.services;
 
 import javax.swing.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.io.*;
 import net.ponomar.calendar.JDate;
@@ -145,7 +146,7 @@ public class NinthHour extends LitService
 
 				try
 				{
-					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),FileName)), "UTF8"));
+					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),FileName)), StandardCharsets.UTF_8));
 					QDParser.parse(this, frf);
 
 				}
@@ -184,7 +185,7 @@ public class NinthHour extends LitService
 		
 		try
 		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),filename)), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),filename)), StandardCharsets.UTF_8));
 			QDParser.parse(this, frf);
 		}
 		catch (Exception e)
@@ -228,7 +229,7 @@ public class NinthHour extends LitService
 	       		{
 	       			analyse.getDayInfo().put("PFlag2",2);
 	       			//CREATE THE KATHISMA PART
-	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" +analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PKath9.xml"),"UTF8"));
+	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" +analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PKath9.xml"), StandardCharsets.UTF_8));
 	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma"+lentenKat+"\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
@@ -243,18 +244,18 @@ public class NinthHour extends LitService
 	    		{
 	    		    	if(troparion2 != null)
 	    		    	{
-	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" +analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop91.xml"),"UTF8"));
+	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" +analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop91.xml"), StandardCharsets.UTF_8));
 	    				String Data = TROPARION_OUTPUT_START + troparion1 + TROPARION_OUTPUT_END;
 	    				out.write(Data);
 	    				out.close();
 	    				
-	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" +analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop92.xml"),"UTF8"));
+	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" +analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop92.xml"), StandardCharsets.UTF_8));
 	    				Data=TROPARION_OUTPUT_START + troparion2 + TROPARION_OUTPUT_END;
 	    				out.write(Data);
 	    				out.close();
 					
 	    		    	}
-    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" +analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop92.xml"),"UTF8"));
+    	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" +analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop92.xml"), StandardCharsets.UTF_8));
 	    			String Data=TROPARION_OUTPUT_START + troparion1 + TROPARION_OUTPUT_END;
 	    			out.write(Data);
 	    			out.close();
@@ -266,7 +267,7 @@ public class NinthHour extends LitService
 	       	//APROPRIATE KONTAKION MUST STILL BE CREATED!
 	       	if (kontakion1 != null)
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" +analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PKont9.xml"),"UTF8"));
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" +analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PKont9.xml"), StandardCharsets.UTF_8));
 	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    		out.write(Data);
 	    		out.close();

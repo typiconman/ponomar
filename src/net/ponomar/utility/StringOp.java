@@ -1,5 +1,4 @@
 package net.ponomar.utility;
-import java.util.Hashtable;
 
 /*****************************************************************************
  StringOp.java :: A CLASS TO HANDLE ADDITIONAL STRING OPERATIONS 

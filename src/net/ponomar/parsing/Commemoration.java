@@ -1,5 +1,6 @@
 package net.ponomar.parsing;
 
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.io.*;
 
@@ -90,13 +91,13 @@ public class Commemoration implements DocHandler {
             String language = analyse.getDayInfo().get("LS").toString();
             String[] pathS = language.split("/");
             int path = pathS.length;
-            String pathF = "";
+            StringBuilder pathF = new StringBuilder();
            
             for (int i = -1; i < path; i++) {
                 if (i == -1) {
-                    pathF = "";
+                    pathF = new StringBuilder();
                 } else {
-                    pathF += "/" + pathS[i];
+                    pathF.append("/").append(pathS[i]);
                 }
                 //System.out.println("pathF=" + pathF);
 
@@ -106,7 +107,7 @@ public class Commemoration implements DocHandler {
 
                 if (f.exists()) {
 
-                    BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(FileName), "UTF8"));
+                    BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(FileName), StandardCharsets.UTF_8));
                     QDParser.parse(this, frf);                    
                 } else {
                     //The given file does not exist, do nothing, it is not a calamity!

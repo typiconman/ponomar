@@ -760,6 +760,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             // e.g. 2:11-3:2, 5, 13-14, 17-4:1
             String[] parts = newPassage.split(",");
 
+            StringBuilder newPassageBuilder = new StringBuilder(newPassage);
             for (int j = 0; j < parts.length; j++) {
                 
                 //e.g. 2:11-3:2 or 13-14 or 5 or 4:5
@@ -807,11 +808,12 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 }
                 //RECONSTRUCT THE GIVEN READING PART
                 if (j == 0) {
-                    newPassage = parts[j];
+                    newPassageBuilder = new StringBuilder(parts[j]);
                 } else {
-                    newPassage = newPassage + selectionSeparator + parts[j];
+                    newPassageBuilder.append(selectionSeparator).append(parts[j]);
                 }
             }
+            newPassage = newPassageBuilder.toString();
             //System.out.println("Hello end");
         }
         return newPassage;
@@ -899,7 +901,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
 
     public String[] readBibleFiles(String curbook, String curpassage, boolean redStuff, Vector<Integer> pVerses, Vector<Integer> pChapters) {
         String filename = Constants.LANGUAGES_PATH + "/" + curversion + "/" + curbook + ".text";
-        String ret = "";
+        StringBuilder ret = new StringBuilder();
 
         try {
             //BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), StandardCharsets.UTF_8));
@@ -935,10 +937,10 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                     }
 
                     if (printMe) {
-                        if (!ret.equals("")){
-                        ret += verseLink + process(mLine, redStuff);
+                        if (!ret.toString().equals("")){
+                        ret.append(verseLink).append(process(mLine, redStuff));
                         }else{
-                            ret += process(mLine, redStuff);
+                            ret.append(process(mLine, redStuff));
                         }
                     }
                 }
@@ -958,10 +960,10 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                     }
                     //Correcting issues with not being able to read all the desired readings Y.S. 2008/12/12 n.s.
                     if (printMe || nCurVerse == Integer.parseInt(v.toString()) || nCurVerse == 0) {
-                        if (!ret.equals("")){
-                        ret += verseLink + process(mLine, redStuff);
+                        if (!ret.toString().equals("")){
+                        ret.append(verseLink).append(process(mLine, redStuff));
                         }else{
-                            ret += process(mLine, redStuff);
+                            ret.append(process(mLine, redStuff));
                         }
                         if (nCurChapter == Integer.parseInt(pChapters.elementAt(0).toString()) && nCurVerse == Integer.parseInt(pVerses.elementAt(0).toString())) {
                             //THE FIRST VERSE HAS BEEN READ, THE INSTRUCTIONS ASSOCIATED WITH THIS VERSE NEED TO BE SAVED
@@ -979,7 +981,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         }
 
         String[] output1 = new String[3];
-        output1[0] = ret;
+        output1[0] = ret.toString();
         output1[1] = instructFirst;
         String headerA = header.replace(NAME, (String) books.get(curbook));
         headerA = headerA.replace("^CNN", formatPassage(curpassage));

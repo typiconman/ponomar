@@ -152,26 +152,26 @@ public class Matins extends Reading {
     }
 
     public String format(Vector vectV, Vector vectR, Vector vectT) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
         
         Bible ShortForm = new Bible(getInformation3().getDayInfo());
         try {
             Enumeration e3 = vectV.elements();
             for (int k = 0; k < vectV.size(); k++) {
                 String reading = (String) vectV.get(k);
-                output += ShortForm.getHyperlink(reading);
+                output.append(ShortForm.getHyperlink(reading));
 
                 if ((Integer) vectR.get(k) == -2 ) {
                     if (vectV.size()>1){
                     int tag = (Integer) vectT.get(k);
-                    output += " (" + Week(vectT.get(k).toString()) + ")";
+                    output.append(" (").append(Week(vectT.get(k).toString())).append(")");
                     }
                 } else {
-                    output += vectT.get(k);
+                    output.append(vectT.get(k));
                 }
 
                 if (k < vectV.size() - 1) {
-                    output += getInformation3().getDayInfo().get("ReadSep");		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
+                    output.append(getInformation3().getDayInfo().get("ReadSep"));		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
                 }
             }
         } catch (Exception a) {
@@ -181,7 +181,7 @@ public class Matins extends Reading {
             System.out.println(trial[0].toString());
 
         }
-        return output;
+        return output.toString();
     }
 
     private String Week(String dow) {

@@ -31,7 +31,7 @@ public class Helpers
 
             Object[] options = {languageNames[3],languageNames[5]};
 		//JOptionPane pane=new JOptionPane();
-		Object selectedValue=JOptionPane.showOptionDialog(null, title ,(String)text.getPhrases().get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+		Integer selectedValue=JOptionPane.showOptionDialog(null, title ,(String)text.getPhrases().get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 		//Object selectedValue = pane.getValue();
      		//System.out.println(selectedValue);
      		if(selectedValue == null)
@@ -45,10 +45,7 @@ public class Helpers
     		}
     		if(selectedValue instanceof Integer)
     		{
-    			if(((Integer)selectedValue).intValue()!=0)
-    			{
-    				return false;
-    			}
+				return selectedValue == 0;
     		}
     		return true;
 	}
@@ -87,7 +84,7 @@ public class Helpers
     				 	return;
     				 if(selectedValue instanceof Integer)
     				{
-    					if(((Integer)selectedValue).intValue()!=0)
+    					if((Integer) selectedValue !=0)
     					{
     						return;
     					}
@@ -213,22 +210,22 @@ public class Helpers
                 String year=text.getPhrases().get("Year").toString();
                 String comma=text.getPhrases().get("Comma").toString();
                 String and=text.getPhrases().get("And").toString();
-                String authorList=authors[0];
+                StringBuilder authorList= new StringBuilder(authors[0]);
                 if (authors.length>2)
                 {
                 for(int i=1;i < authors.length-1;i++)
                 {
-                    authorList=authorList+authors[i]+comma;
+                    authorList.append(authors[i]).append(comma);
                 }
                 }
                 if (authors.length>1)
                 {
-                    authorList=authorList+and+authors[authors.length-1];
+                    authorList.append(and).append(authors[authors.length - 1]);
                 }
 
                String copyright=text.getPhrases().get("Copyright").toString();
                copyright=copyright.replace("^YY",year);
-               copyright=copyright.replace("^AA",authorList);
+               copyright=copyright.replace("^AA", authorList.toString());
                return copyright;
         }
         public Hashtable<String, String> deepCopy(Hashtable original){

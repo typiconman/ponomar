@@ -35,10 +35,10 @@ public class JDate implements Comparable, Cloneable
 {
 	private long mn_jday;
 
-	private final static int daysInMonth[] = new int[]
+	private final static int[] daysInMonth = new int[]
 	{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-	private final static int daysInMonthLeap[] = new int[]
+	private final static int[] daysInMonthLeap = new int[]
 	{31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	
 	private static LanguagePack Phrases;//=new LanguagePack();

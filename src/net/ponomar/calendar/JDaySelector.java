@@ -1,17 +1,19 @@
 package net.ponomar.calendar;
 
-import javax.swing.*;
-
 import net.ponomar.astronomy.Paschalion;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.*;
-import java.text.*;
-import java.io.UnsupportedEncodingException;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
+import java.util.Arrays;
+import java.util.Hashtable;
+import java.util.Locale;
 
 /**************************************************************
 JDaySelector: A class for the object that does the heavy duty work in JCalendar
@@ -453,7 +455,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 
 	private void drawTones()
 	{
-		String numerals[]  =Text.obtainValues((String)Text.getPhrases().get("Tones"));
+		String[] numerals =Text.obtainValues((String)Text.getPhrases().get("Tones"));
 		
 
 		// THIS WILL WORK FOR ALL TIMES EXCEPT DURING LENT 
@@ -747,7 +749,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 			}
 			super.paint(g);
 		}
-	};
+	}
 
 	public static void main(String[] argz)
 	{

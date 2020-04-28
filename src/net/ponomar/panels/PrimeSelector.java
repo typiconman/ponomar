@@ -1,19 +1,16 @@
 package net.ponomar.panels;
 
-import javax.swing.*;
-import javax.swing.event.*;
-
 import net.ponomar.ConfigurationFiles;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.awt.*;
-import java.util.*;
-import java.io.*;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
 /***************************************************************
 GospelSelector.java :: MODULE THAT ALLOWS THE USER TO SELECT, USING RADIO BUTTONS,
@@ -144,31 +141,29 @@ public class PrimeSelector extends JPanel implements ActionListener, PropertyCha
 		rbMenu6Item.addActionListener(this);
 		rbMenu6Item.setActionCommand(W_BEGINNING_ENDING);
 		group1.add(rbMenu6Item);
-		
-		if(primesDefaultStrings[1].equals(INDEPENDENT))
-        	{
-        		rbMenu3Item.setSelected(true);
-        		readingLocation2=INDEPENDENT;
-        		lastLocation2=INDEPENDENT;
-        	}
-        	else if(primesDefaultStrings[1].equals(W_BEGINNING))
-        	{
-        		rbMenu4Item.setSelected(true);
-        		readingLocation2=W_BEGINNING;
-        		lastLocation2=W_BEGINNING;
-        	}
-        	else if(primesDefaultStrings[1].equals(W_ENDING))
-        	{
-        		rbMenu5Item.setSelected(true);
-        		readingLocation2=W_ENDING;
-        		lastLocation2=W_ENDING;
-        	}
-        	else
-        	{
-        		rbMenu6Item.setSelected(true);
-        		readingLocation2=W_BEGINNING_ENDING;
-        		lastLocation2=W_BEGINNING_ENDING;
-        	}
+
+		switch (primesDefaultStrings[1]) {
+			case INDEPENDENT:
+				rbMenu3Item.setSelected(true);
+				readingLocation2 = INDEPENDENT;
+				lastLocation2 = INDEPENDENT;
+				break;
+			case W_BEGINNING:
+				rbMenu4Item.setSelected(true);
+				readingLocation2 = W_BEGINNING;
+				lastLocation2 = W_BEGINNING;
+				break;
+			case W_ENDING:
+				rbMenu5Item.setSelected(true);
+				readingLocation2 = W_ENDING;
+				lastLocation2 = W_ENDING;
+				break;
+			default:
+				rbMenu6Item.setSelected(true);
+				readingLocation2 = W_BEGINNING_ENDING;
+				lastLocation2 = W_BEGINNING_ENDING;
+				break;
+		}
         	
 		menu.add(rbMenu3Item);
 		menu.add(rbMenu4Item);
@@ -220,17 +215,13 @@ public class PrimeSelector extends JPanel implements ActionListener, PropertyCha
 	
 	public static int getTypeValue()
 	{
-		if(lastLocation2.equals(INDEPENDENT))
-		{
-			return 0;
-		}
-		else if(lastLocation2.equals(W_BEGINNING))
-		{
-			return 1;
-		}
-		else if(lastLocation2.equals(W_ENDING))
-		{
-			return 2;
+		switch (lastLocation2) {
+			case INDEPENDENT:
+				return 0;
+			case W_BEGINNING:
+				return 1;
+			case W_ENDING:
+				return 2;
 		}
 		
 		return 3;

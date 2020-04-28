@@ -1,8 +1,5 @@
 package net.ponomar.internationalization;
 
-import javax.swing.*;
-import javax.swing.event.*;
-
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
@@ -10,11 +7,11 @@ import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
-import java.beans.*;
-import java.awt.*;
-import java.util.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.Hashtable;
 
 /***************************************************************
 LanguagePack.java :: MODULE THAT DETERMINES THE LANGUAGE SPECIFIC OUTPUTS

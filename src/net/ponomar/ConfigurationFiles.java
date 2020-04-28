@@ -1,18 +1,14 @@
 package net.ponomar;
 
-import javax.swing.*;
-
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 
-import java.beans.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.nio.charset.StandardCharsets;
-import java.util.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.util.Enumeration;
+import java.util.Hashtable;
 
 /***************************************************************
 ConfigurationFiles.java :: MODULE THAT READS AND UPDATES THE CONFIGURATION

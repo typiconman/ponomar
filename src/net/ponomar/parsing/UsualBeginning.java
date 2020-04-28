@@ -1,18 +1,8 @@
 package net.ponomar.parsing;
 
-import javax.swing.*;
-import java.beans.*;
-import java.awt.*;
-import java.util.*;
-import java.io.*;
-import javax.swing.event.*;
-
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
-
-import java.awt.event.*;
-import java.beans.*;
 
 
 /***********************************************************************

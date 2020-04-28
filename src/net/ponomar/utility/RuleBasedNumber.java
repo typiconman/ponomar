@@ -1,16 +1,13 @@
 package net.ponomar.utility;
 
-import javax.swing.*;
-import javax.swing.event.*;
-
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 
-import java.beans.*;
-import java.awt.*;
-import java.util.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.Hashtable;
 
 /***************************************************************
 RULEBASEDNUMBER.java :: MODULE THAT CONVERTS A DECIMAL NUMBER TO AN IDEOGRAPHIC NUMBER, THAT IS,
@@ -340,7 +337,7 @@ public class RuleBasedNumber implements DocHandler
 }
     private String formatNumber(double number)
     {
-        String fNumber="";
+        StringBuilder fNumber= new StringBuilder();
 
         if (number==0)
         {
@@ -387,21 +384,21 @@ public class RuleBasedNumber implements DocHandler
             //System.out.println(cb.substring(quoteF+2));
             int times=Integer.parseInt(cb.substring(quoteF+2));
             long divide=(long) remainder/times;
-            fNumber=format.substring(0,cbI);
+            fNumber = new StringBuilder(format.substring(0, cbI));
             remainder=remainder-divide*times;
             for(int i1=1;i1<=divide;i1++)
             {
-                fNumber+=repeat;
+                fNumber.append(repeat);
             }
             //System.out.println(FNumber);
             if (cbF+1<format.length())
             {
-                fNumber+=format.substring(cbF+1);
+                fNumber.append(format.substring(cbF + 1));
             }
         }
         else
         {
-            fNumber=format;
+            fNumber = new StringBuilder(format);
         }
         int octo=format.indexOf('#');
         
@@ -413,27 +410,27 @@ public class RuleBasedNumber implements DocHandler
             
             if (octo==0)
             {
-                fNumber=multiplier+fNumber.substring(1);
+                fNumber = new StringBuilder(multiplier + fNumber.substring(1));
             }
             else
             {
                 if (octo==fNumber.length()-1)
                 {
-                    fNumber=fNumber.substring(0,octo)+multiplier;
+                    fNumber = new StringBuilder(fNumber.substring(0, octo) + multiplier);
                 }
                 else
                 {
-                    fNumber=fNumber.substring(0,octo)+multiplier+fNumber.substring(octo+1);
+                    fNumber = new StringBuilder(fNumber.substring(0, octo) + multiplier + fNumber.substring(octo + 1));
                     //System.out.println("After modifications, it is "+FNumber);
                 }
             }
             remainder=(long) number-pint*base;
         }
         //
-        int squareF=fNumber.indexOf('[');
+        int squareF= fNumber.toString().indexOf('[');
        while (squareF>-1)
        {
-           int squareAF=fNumber.indexOf(']',squareF);
+           int squareAF= fNumber.toString().indexOf(']',squareF);
            String data=fNumber.substring(squareF+1,squareAF-1);
            String[] squareSplit=data.split("','");
 
@@ -446,21 +443,21 @@ public class RuleBasedNumber implements DocHandler
 
            if (analyse.evalbool(squareSplit[1]))
            {
-                     fNumber=fNumber.substring(0,squareF)+squareSplit[0].substring(1)+fNumber.substring(squareAF+1);
+                     fNumber = new StringBuilder(fNumber.substring(0, squareF) + squareSplit[0].substring(1) + fNumber.substring(squareAF + 1));
 
            }
            else
            {
-               fNumber=fNumber.substring(0,squareF)+fNumber.substring(squareAF+1);
+               fNumber = new StringBuilder(fNumber.substring(0, squareF) + fNumber.substring(squareAF + 1));
            }
-           squareF=fNumber.indexOf('[');
+           squareF= fNumber.toString().indexOf('[');
 
 
 
 
        }
         //
-        int amper=fNumber.indexOf('$');
+        int amper= fNumber.toString().indexOf('$');
         /*if (remainder==0)
         {
             amper=-1;
@@ -477,48 +474,48 @@ public class RuleBasedNumber implements DocHandler
                 //No number needs to be converted remove the symbol
                 if (amper==0)
             {
-                fNumber=fNumber.substring(1);
+                fNumber = new StringBuilder(fNumber.substring(1));
             }
             else
             {
                 if (amper==fNumber.length()-1)
                 {
                     //The ampersand is at the end of a number
-                    fNumber=fNumber.substring(0,amper);
+                    fNumber = new StringBuilder(fNumber.substring(0, amper));
                 }
                 else
                 {
                     //The ampersand is in the middle of the number
                     String before=fNumber.substring(0,amper);
                     String after=fNumber.substring(amper+1);
-                    fNumber=before+after;
+                    fNumber = new StringBuilder(before + after);
                 }
             }
             }else
             {
             if (amper==0)
             {
-                fNumber=amperNumber+fNumber.substring(1);
+                fNumber = new StringBuilder(amperNumber + fNumber.substring(1));
             }
             else
             {
                 if (amper==fNumber.length()-1)
                 {
                     //The ampersand is at the end of a number
-                    fNumber=fNumber.substring(0,amper)+amperNumber;
+                    fNumber = new StringBuilder(fNumber.substring(0, amper) + amperNumber);
                 }
                 else
                 {
                     //The ampersand is in the middle of the number
                     String before=fNumber.substring(0,amper);
                     String after=fNumber.substring(amper+1);
-                    fNumber=before+amperNumber+after;
+                    fNumber = new StringBuilder(before + amperNumber + after);
                 }
             }
             }
         }
         //System.out.println("At present, the number is converted as "+FNumber);
-        return fNumber;
+        return fNumber.toString();
     }
        public int convertToInteger(String fNumber)
        {

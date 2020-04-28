@@ -1,16 +1,12 @@
 package net.ponomar;
 
-import javax.swing.*;
-import java.awt.*;
-import javax.swing.event.*;
-
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
-import java.io.*;
-import java.util.*;
+import javax.swing.*;
+import java.awt.*;
 
 /********************************************************************
 THIS CLASS CREATES THE ABOUT BOX THAT APPEARS IN THE WINDOW.

@@ -135,7 +135,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 	/** Returns a string representation of the OrderedHashtable. */
 	public String toString()
 	{
-		StringBuffer s = new StringBuffer();
+		StringBuilder s = new StringBuilder();
 		s.append("{ ");
 		Object key = null;
 		int i = 0;
