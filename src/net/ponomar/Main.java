@@ -90,33 +90,106 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
     private IconDisplay displayIcon;
     private StringOp analyse = new StringOp();
     //private GospelSelector Selector;
-    Helpers findLanguage;
+    //Helpers findLanguage;
 
     // CONSTRUCTOR
     public Main() {
-        //super("Ponomar");
+    	loadPhrases();
+        Font fontValue = configureFonts();
+        configureWindow();
+        adjustResolutionEastAsianLanguages(fontValue);
+        today = new JDate(calendar.getMonth(), calendar.getDay(), calendar.getYear());
+        pascha = Paschalion.getPascha(today.getYear());
+        pentecost = Paschalion.getPentecost(today.getYear());
+        write();
+    }
 
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	protected void configureWindow() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        setTitle((String) phrases.getPhrases().get("0"));
+        rSep = (String) phrases.getPhrases().get("ReadSep");
+        cSep = (String) phrases.getPhrases().get("CommSep");
+        colon = (String) phrases.getPhrases().get("Colon");
+        analyse.getDayInfo().put("FontFaceM", displayFont);
+        analyse.getDayInfo().put("FontSizeM", displaySize);
+        analyse.getDayInfo().put("ReadSep", rSep);
+        analyse.getDayInfo().put("Colon", colon);
+        ideographic = (String) phrases.getPhrases().get("Ideographic");
+        analyse.getDayInfo().put("Ideographic", ideographic);
+        //gospelLocation = new GospelSelector(analyse.getDayInfo());
 
-        //WE NEED THIS HANDY STORER OF VALUES NOW.
-        //StringOp.dayInfo = new OrderedHashtable();
-        //DETERMINE THE DEFAULTS
-        ConfigurationFiles.setDefaults(new OrderedHashtable());
-        ConfigurationFiles.ReadFile();
-        languageLocation = new LanguageSelector(analyse.getDayInfo());
+        //ADD A MENU BAR Y.S. 2008/08/11 n.s.
+        demo = new MenuFiles(analyse.getDayInfo().clone());
+        menuBarElement = new JMenuBar();
+        menuBarElement.add(demo.createFileMenu(this));
+        menuBarElement.add(demo.createOptionsMenu(this,this));
+        menuBarElement.add(demo.createSaintsMenu(this));
+        menuBarElement.add(demo.createServicesMenu(this));
+        menuBarElement.add(demo.createBibleMenu(this));
+        menuBarElement.add(demo.createHelpMenu(this));
+        menuBarElement.setFont(currentFont);
+        //MenuBar.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+        setJMenuBar(menuBarElement);
 
-        analyse.getDayInfo().put("LS", languageLocation.getLValue());
-        phrases = new LanguagePack(analyse.getDayInfo());
-        //Changing language storage format
-        findLanguage = new Helpers(analyse.getDayInfo());
+        JPanel left = new JPanel(new GridLayout(3, 0));
+        calendar = new JCalendar(analyse.getDayInfo());
+        //System.out.println(calendar);
+        calendar.addPropertyChangeListener(this);
+        left.setLayout(new BorderLayout());
+        left.add(calendar, BorderLayout.NORTH);
+        displayIcon = new IconDisplay(new String[0], new String[0], analyse.getDayInfo());
+        left.add(displayIcon, BorderLayout.CENTER);
 
-        fileNames = phrases.obtainValues((String) phrases.getPhrases().get("File"));
-        serviceNames = phrases.obtainValues((String) phrases.getPhrases().get("Services"));
-        bibleName = phrases.obtainValues((String) phrases.getPhrases().get("Bible"));
-        helpNames = phrases.obtainValues((String) phrases.getPhrases().get("Help"));
+        JPanel right = new JPanel();
+        text = new PrintableTextPane();
+        text.setEditable(false);
+        text.addHyperlinkListener(this);
+        right.setLayout(new BorderLayout());
+        right.add(text, BorderLayout.CENTER);
+        right.setSize(200, 400);
+        JScrollPane scrollPane3 = new JScrollPane(text);
+        right.add(scrollPane3);
 
-        mainNames = phrases.obtainValues((String) phrases.getPhrases().get("Main"));
+        JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        splitter.setLeftComponent(left);
+        splitter.setRightComponent(right);
+     
+        setContentPane(splitter);
+
+        Locale place = new Locale(phrases.getPhrases().get("Language").toString(), phrases.getPhrases().get("Country").toString());
+        Helpers orient = new Helpers(analyse.getDayInfo());
+        analyse.getDayInfo().put("Locale", place);
+        analyse.getDayInfo().put("Orient", ComponentOrientation.getOrientation(place));
+        orient.applyOrientation(this, ComponentOrientation.getOrientation(place));
+        this.validate();
+
+        pack();
+        setSize(700, 500);
+        setVisible(true);
+
+        inited = true;
+	}
+
+	protected void adjustResolutionEastAsianLanguages(Font fontValue) {
+		Dimension screen = this.getSize();
+        //Default screen size issues for East Asian languages!
+        if (fontValue.getSize() < Integer.parseInt(displaySize)) {
+            Dimension defaultScreen = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+
+            //System.out.println(screen);
+            int newSize = Integer.parseInt(displaySize);
+            int maxW = 95 * defaultScreen.width / 100;
+            int maxH = 95 * defaultScreen.height / 100;
+            screen.width = java.lang.Math.min(screen.width * newSize / fontValue.getSize(), maxW);
+            screen.height = java.lang.Math.min(screen.height * newSize / fontValue.getSize(), maxH);
+            this.setSize(screen);
+            //System.out.println(screen);
+        }
+	}
+
+	protected Font configureFonts() {
+		//Load font settings
         displayFont = (String) phrases.getPhrases().get("FontFaceM");
         displaySize = (String) phrases.getPhrases().get("FontSizeM");
 
@@ -163,99 +236,33 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
                 //System.out.println(key);
             }
         }
+		return value1;
+	}
 
-        //System.out.println(this.getFont());
-        setTitle((String) phrases.getPhrases().get("0"));
-        rSep = (String) phrases.getPhrases().get("ReadSep");
-        cSep = (String) phrases.getPhrases().get("CommSep");
-        colon = (String) phrases.getPhrases().get("Colon");
-        analyse.getDayInfo().put("FontFaceM", displayFont);
-        analyse.getDayInfo().put("FontSizeM", displaySize);
-        analyse.getDayInfo().put("ReadSep", rSep);
-        analyse.getDayInfo().put("Colon", colon);
-        ideographic = (String) phrases.getPhrases().get("Ideographic");
-        analyse.getDayInfo().put("Ideographic", ideographic);
-        //gospelLocation = new GospelSelector(analyse.getDayInfo());
+	protected void loadPhrases() {
 
-        //ADD A MENU BAR Y.S. 2008/08/11 n.s.
-        demo = new MenuFiles(analyse.getDayInfo().clone());
-        menuBarElement = new JMenuBar();
-        menuBarElement.add(demo.createFileMenu(this));
-        menuBarElement.add(demo.createOptionsMenu(this,this));
-        menuBarElement.add(demo.createSaintsMenu(this));
-        menuBarElement.add(demo.createServicesMenu(this));
-        menuBarElement.add(demo.createBibleMenu(this));
-        menuBarElement.add(demo.createHelpMenu(this));
-        menuBarElement.setFont(currentFont);
-        //MenuBar.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
-        setJMenuBar(menuBarElement);
+        //WE NEED THIS HANDY STORER OF VALUES NOW.
+        //StringOp.dayInfo = new OrderedHashtable();
+        //DETERMINE THE DEFAULTS
+        ConfigurationFiles.setDefaults(new OrderedHashtable());
+        ConfigurationFiles.ReadFile();
+		languageLocation = new LanguageSelector(analyse.getDayInfo());
 
-        JPanel left = new JPanel(new GridLayout(3, 0));
-        calendar = new JCalendar(analyse.getDayInfo());
-        //System.out.println(calendar);
-        calendar.addPropertyChangeListener(this);
-        left.setLayout(new BorderLayout());
-        left.add(calendar, BorderLayout.NORTH);
-        displayIcon = new IconDisplay(new String[0], new String[0], analyse.getDayInfo());
-        left.add(displayIcon, BorderLayout.CENTER);
+        analyse.getDayInfo().put("LS", languageLocation.getLValue());
+        phrases = new LanguagePack(analyse.getDayInfo());
+        //Changing language storage format
+        //findLanguage = new Helpers(analyse.getDayInfo());
 
-
-
-        JPanel right = new JPanel();
-        text = new PrintableTextPane();
-        text.setEditable(false);
-        text.addHyperlinkListener(this);
-        right.setLayout(new BorderLayout());
-        right.add(text, BorderLayout.CENTER);
-        right.setSize(200, 400);
-        JScrollPane scrollPane3 = new JScrollPane(text);
-        right.add(scrollPane3);
-
-        JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
-        splitter.setLeftComponent(left);
-        splitter.setRightComponent(right);
-
-        today = new JDate(calendar.getMonth(), calendar.getDay(), calendar.getYear());
-                
-        setContentPane(splitter);
-
-        Locale place = new Locale(phrases.getPhrases().get("Language").toString(), phrases.getPhrases().get("Country").toString());
-        Helpers orient = new Helpers(analyse.getDayInfo());
-        analyse.getDayInfo().put("Locale", place);
-        analyse.getDayInfo().put("Orient", ComponentOrientation.getOrientation(place));
-        orient.applyOrientation(this, ComponentOrientation.getOrientation(place));
-        this.validate();
-
-        pack();
-        setSize(700, 500);
-        setVisible(true);
-
-        pascha = Paschalion.getPascha(today.getYear());
-        pentecost = Paschalion.getPentecost(today.getYear());
-
-
-        inited = true;
-        Dimension screen = this.getSize();
-        //Default screen size issues for East Asian languages!
-        if (value1.getSize() < Integer.parseInt(displaySize)) {
-            Dimension defaultScreen = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-
-            //System.out.println(screen);
-            int newSize = Integer.parseInt(displaySize);
-            int maxW = 95 * defaultScreen.width / 100;
-            int maxH = 95 * defaultScreen.height / 100;
-            screen.width = java.lang.Math.min(screen.width * newSize / value1.getSize(), maxW);
-            screen.height = java.lang.Math.min(screen.height * newSize / value1.getSize(), maxH);
-            this.setSize(screen);
-            //System.out.println(screen);
-        }
-
-        write();
-    }
+        fileNames = phrases.obtainValues((String) phrases.getPhrases().get("File"));
+        serviceNames = phrases.obtainValues((String) phrases.getPhrases().get("Services"));
+        bibleName = phrases.obtainValues((String) phrases.getPhrases().get("Bible"));
+        helpNames = phrases.obtainValues((String) phrases.getPhrases().get("Help"));
+        mainNames = phrases.obtainValues((String) phrases.getPhrases().get("Main"));
+	}
 
     public void propertyChange(PropertyChangeEvent e) {
         
-        if (inited == true) {
+        if (inited) {
             // FIND OUT THE OLD YEAR
             int year = today.getYear();
             today = new JDate(calendar.getMonth(), calendar.getDay(), calendar.getYear());
