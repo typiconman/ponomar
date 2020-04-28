@@ -3,6 +3,7 @@ package net.ponomar.readings.utility;
 import java.util.Enumeration;
 import java.util.Vector;
 
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 
 /***************************************************************
@@ -12,7 +13,7 @@ import net.ponomar.utility.OrderedHashtable;
 
 public final class ReadingUtility {
 	
-    static final String READINGS_KEY = "Readings";
+    static final String READINGS_KEY = Constants.READINGS;
 
 	public static void processMenaionPaschalReadings(OrderedHashtable[] menaionReadings, OrderedHashtable combinedReadings) {
 		for (OrderedHashtable menaionReading : menaionReadings) {

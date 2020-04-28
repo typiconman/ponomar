@@ -98,7 +98,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         analyse.setDayInfo(dayInfo);
         text = new LanguagePack(dayInfo);
         //PrimesNames = Text.obtainValues((String) Text.Phrases.get("Primes"));
-    languageNames = text.obtainValues((String) text.getPhrases().get("LanguageMenu"));
+    languageNames = text.obtainValues((String) text.getPhrases().get(Constants.LANGUAGE_MENU));
 
     fileNames = text.obtainValues((String) text.getPhrases().get("File"));
     helpNames = text.obtainValues((String) text.getPhrases().get("Help"));
@@ -183,8 +183,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         if (name.equals("")) {
             textOut = saintInfo[6];
         } else {
-            String displayFontM = (String) text.getPhrases().get("FontFaceM");
-            String displaySizeM = (String) text.getPhrases().get("FontSizeM");
+            String displayFontM = (String) text.getPhrases().get(Constants.FONT_FACE_M);
+            String displaySizeM = (String) text.getPhrases().get(Constants.FONT_SIZE_M);
             Font value1 = (Font) UIManager.get("Menu.font");
             if (displaySizeM == null || displaySizeM.equals("")) {
                 displaySizeM = Integer.toString(value1.getSize());
@@ -322,7 +322,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         //Other information can go here!
         //String textOut=header+image+rest;
         
-        frames = new JFrame((String) text.getPhrases().get("0") + (String) text.getPhrases().get("Colon") + name2);
+        frames = new JFrame((String) text.getPhrases().get("0") + (String) text.getPhrases().get(Constants.COLON) + name2);
         
         //frames.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel left=new JPanel();
@@ -340,7 +340,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         //output=new JEditorPane();
         output.setEditable(false);
         output.setSize(800, 700);
-        output.setContentType("text/html; charset=UTF-8");
+        output.setContentType(Constants.CONTENT_TYPE);
         //output.setText(header);
         output.setText(textOut);
         output.setCaretPosition(0);
@@ -388,7 +388,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
         Helpers orient = new Helpers(analyse.getDayInfo());
 
-        orient.applyOrientation(frames,(ComponentOrientation)analyse.getDayInfo().get("Orient"));
+        orient.applyOrientation(frames,(ComponentOrientation)analyse.getDayInfo().get(Constants.ORIENT));
         frames.pack();
         frames.setSize(800, 700);
         frames.setVisible(true);
@@ -411,7 +411,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 				} catch (NullPointerException npe) {
 					bible = new Bible(parts2[0], parts2[1],analyse.getDayInfo());
                                         Helpers orient=new Helpers(analyse.getDayInfo());
-                orient.applyOrientation(bible,(ComponentOrientation)analyse.getDayInfo().get("Orient"));
+                orient.applyOrientation(bible,(ComponentOrientation)analyse.getDayInfo().get(Constants.ORIENT));
 				}
 			}
                         else
@@ -479,16 +479,16 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
           //  return;
         //}
         if (elem.equals("LIFE") && read) {
-            if (table.get("Copyright") != null) {
-                copyright = table.get("Copyright").toString();
+            if (table.get(Constants.COPYRIGHT) != null) {
+                copyright = table.get(Constants.COPYRIGHT).toString();
             }
             if (table.get("Repose") != null) {
-                repose = table.get("Copyright").toString();
+                repose = table.get(Constants.COPYRIGHT).toString();
             }
             return;
         }
         if (elem.equals("NAME") && read) {
-            name = table.get("Nominative").toString();
+            name = table.get(Constants.NOMINATIVE).toString();
             if (!repose.isEmpty()){
                 name=name+"(\u2020 "+repose+")";
             }
@@ -530,7 +530,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     }
 
     public void endElement(String elem) {
-        if (elem.equals("LANGUAGE")) {
+        if (elem.equals(Constants.LANGUAGE)) {
             read = false;
         }
         if (elem.equals("LIFE") && read) {
@@ -640,12 +640,12 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         RSep=(String)Phrases.Phrases.get("ReadSep");
         CSep=(String)Phrases.Phrases.get("CommSep");
         Colon=(String)Phrases.Phrases.get("Colon");*/
-        dayInfo.put("FontFaceM", "TimesNewRoman");
-        dayInfo.put("FontSizeM", "14");
+        dayInfo.put(Constants.FONT_FACE_M, "TimesNewRoman");
+        dayInfo.put(Constants.FONT_SIZE_M, "14");
         /*StringOp.dayInfo.put("ReadSep",RSep);
         dayInfo.put("Colon",Colon);
         Ideographic=(String)Phrases.Phrases.get("Ideographic");*/
-        dayInfo.put("Ideographic", "0");
+        dayInfo.put(Constants.IDEOGRAPHIC, "0");
 
         //DoSaint1 test = new DoSaint1("134",dayInfo); //Forefeast of Christmas
         //System.out.println(Paramony.getService("/KONTAKION","1"));
@@ -676,7 +676,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         String name1 = source.getText();
         if (name1.equals(helpNames[2])) {
             Helpers orient = new Helpers(analyse.getDayInfo());
-            orient.applyOrientation(new About(analyse.getDayInfo()), (ComponentOrientation) analyse.getDayInfo().get("Orient"));
+            orient.applyOrientation(new About(analyse.getDayInfo()), (ComponentOrientation) analyse.getDayInfo().get(Constants.ORIENT));
         }
         if (name1.equals(helpNames[0])) {
             //LAUNCH THE HELP FILE

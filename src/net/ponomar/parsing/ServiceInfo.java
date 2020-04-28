@@ -170,11 +170,11 @@ public class ServiceInfo implements DocHandler
 			}
 		}
 		//THE FOLLOWING SECTION SHOULD BE REMOVED ONCE THERE IS A PROPER RANKING OF DAYS
-		if (elem.equals("COMMAND"))
+		if (elem.equals(Constants.COMMAND))
 		{
 		//THIS WILL STORE ALL THE POSSIBLE COMMANDS FOR A GIVEN SITUATION AND ALLOW THE RESULTS TO BE DETEMINED.
 		String name = table.get("Name").toString();
-		String value=table.get("Value").toString();
+		String value=table.get(Constants.VALUE).toString();
 		//IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
 		if (information.containsKey(name))
 		{
@@ -196,7 +196,7 @@ public class ServiceInfo implements DocHandler
 
 	public void endElement(String elem)
 	{
-		if(elem.equals("LANGUAGE"))
+		if(elem.equals(Constants.LANGUAGE))
 		{
 			readLanguage=false;
 		}

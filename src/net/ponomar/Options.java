@@ -3,6 +3,7 @@ package net.ponomar;
 import javax.swing.*;
 
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -62,7 +63,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
             ConfigurationFiles.ReadFile();
             
             optionsStrings=text.obtainValues((String)text.getPhrases().get("Options2"));
-            currentFont=new Font((String)analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get("FontSizeM")));
+            currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
 
             //createDefaultWindow();
 	
@@ -240,7 +241,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 setContentPane(contentPane);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 Helpers orient = new Helpers(analyse.getDayInfo());
-                orient.applyOrientation(this, (ComponentOrientation) analyse.getDayInfo().get("Orient"));
+                orient.applyOrientation(this, (ComponentOrientation) analyse.getDayInfo().get(Constants.ORIENT));
                 
 
 
@@ -369,9 +370,9 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 dayInfo.put("nday",-256);
                 dayInfo.put("LS","cu/"); //ENGLISH
                 dayInfo.put("PS",1);
-                dayInfo.put("FontFaceM","Ponomar Unicode TT");
-                dayInfo.put("FontSizeM","18");
-                dayInfo.put("Orient",ComponentOrientation.getOrientation(new Locale("ru")));
+                dayInfo.put(Constants.FONT_FACE_M, Constants.PONOMAR_UNICODE_TT);
+                dayInfo.put(Constants.FONT_SIZE_M,"18");
+                dayInfo.put(Constants.ORIENT,ComponentOrientation.getOrientation(new Locale("ru")));
 
                 new Options(dayInfo);
 	}

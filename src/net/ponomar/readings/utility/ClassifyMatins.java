@@ -1,6 +1,7 @@
 package net.ponomar.readings.utility;
 
 import net.ponomar.readings.Matins;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -34,7 +35,7 @@ public class ClassifyMatins extends ClassifyReadings {
             e.printStackTrace();
         }*/
 
-        Vector paschalV = (Vector) readingsIn.get("Readings");
+        Vector paschalV = (Vector) readingsIn.get(Constants.READINGS);
         Vector paschalR = (Vector) readingsIn.get("Rank");
         Vector paschalT = (Vector) readingsIn.get("Tag");
 
@@ -75,9 +76,9 @@ public class ClassifyMatins extends ClassifyReadings {
         int doy = Integer.parseInt(ParameterValues.getDayInfo().get("doy").toString());
         int dow = Integer.parseInt(ParameterValues.getDayInfo().get("dow").toString());
         int nday = Integer.parseInt(ParameterValues.getDayInfo().get("nday").toString());
-        int ndayF = Integer.parseInt(ParameterValues.getDayInfo().get("ndayF").toString());
-        int ndayP = Integer.parseInt(ParameterValues.getDayInfo().get("ndayP").toString());
-        int dRank = Integer.parseInt(ParameterValues.getDayInfo().get("dRank").toString());
+        int ndayF = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.NDAY_F).toString());
+        int ndayP = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.NDAY_P).toString());
+        int dRank = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.D_RANK).toString());
         //LeapReadings();		//THIS ALLOWS APPROPRIATE SKIPPING OF READINGS OVER THE NATIVITY SEASON!
 
       

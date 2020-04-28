@@ -250,15 +250,15 @@ public class Astronomy
             double days=daysSinceJan0(day);
             double T=days/36525;
             //System.out.println(T);
-            double Lprime=revolution(218.3164477+481267.88123421*T-0.0015786*T*T+T*T*T/538841-T*T*T*T/65194000);
+            double lPrime=revolution(218.3164477+481267.88123421*T-0.0015786*T*T+T*T*T/538841-T*T*T*T/65194000);
             double D=revolution(297.8501921+445267.1114034*T-0.0018819*T*T+T*T*T/545868-T*T*T*T/113065000);
-            double Mprime=revolution(134.9633964+477198.8675055*T+0.0087414*T*T-T*T*T/69699-T*T*T*T/14712000);
+            double mPrime=revolution(134.9633964+477198.8675055*T+0.0087414*T*T-T*T*T/69699-T*T*T*T/14712000);
             double E = 1-0.002516*T-0.0000074*T*T;
             //Only the first four additive terms considered
-            double additive=6288774*sind(Mprime)+1274027*E*sind(2*D-Mprime)+658314*sind(2*D)+213618*sind(2*Mprime);
+            double additive=6288774*sind(mPrime)+1274027*E*sind(2*D-mPrime)+658314*sind(2*D)+213618*sind(2*mPrime);
             //Action of Venus, Jupiter, or flattening ignored.
 
-			return revolution(Lprime+additive/1000000);
+			return revolution(lPrime+additive/1000000);
 
         }
         public double solarlong(long day){

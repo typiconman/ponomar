@@ -75,9 +75,6 @@ acs-*.bib
 # gnuplottex
 *-gnuplottex-*
 
-# hyperref
-*.brf
-
 # knitr
 *-concordance.tex
 *.tikz
@@ -103,9 +100,6 @@ _minted*
 
 # morewrites
 *.mw
-
-# mylatexformat
-*.fmt
 
 # nomencl
 *.nlo

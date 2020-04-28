@@ -1,22 +1,16 @@
 package net.ponomar.parsing;
 
-import javax.swing.*;
-import java.beans.*;
-import java.awt.*;
-import java.util.*;
-import java.io.*;
-import java.nio.charset.StandardCharsets;
-
-import javax.swing.event.*;
-
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
-import java.awt.event.*;
-import java.beans.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.Hashtable;
 /***********************************************************************
 THIS MODULE READS THE FASTING.XML FILE TO DETERMINE THE FAST ON A GIVEN DAY
 

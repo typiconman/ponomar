@@ -163,7 +163,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
                     cloned.put(key, item);
                     continue;
                 }
-                if (key.equals("Orient")){
+                if (key.equals(Constants.ORIENT)){
                     ComponentOrientation item=(ComponentOrientation)current.get(key);
                     cloned.put(key, item);
                     continue;

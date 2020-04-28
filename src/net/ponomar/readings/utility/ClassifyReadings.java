@@ -5,6 +5,7 @@ import java.util.Hashtable;
 import java.util.Vector;
 
 import net.ponomar.parsing.DocHandler;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -47,10 +48,10 @@ public class ClassifyReadings implements DocHandler {
 	        }
 	    }
 	
-	    if (elem.equals("COMMAND")) {
+	    if (elem.equals(Constants.COMMAND)) {
 	        //THIS WILL STORE ALL THE POSSIBLE COMMANDS FOR A GIVEN SITUATION AND ALLOW THE RESULTS TO BE DETEMINED.
 	        String name = (String) table.get("Name");
-	        String value = (String) table.get("Value");
+	        String value = (String) table.get(Constants.VALUE);
 	        //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
 	        //System.out.println("==============================\nTesting Information\n++++++++++++++++++++");
 	        if (Information2.containsKey(name)) {
@@ -72,8 +73,8 @@ public class ClassifyReadings implements DocHandler {
 	    int doy = Integer.parseInt(ParameterValues.getDayInfo().get("doy").toString());
 	    int dow = Integer.parseInt(ParameterValues.getDayInfo().get("dow").toString());
 	    int nday = Integer.parseInt(ParameterValues.getDayInfo().get("nday").toString());
-	    int ndayF = Integer.parseInt(ParameterValues.getDayInfo().get("ndayF").toString());
-	    int ndayP = Integer.parseInt(ParameterValues.getDayInfo().get("ndayP").toString());
+	    int ndayF = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.NDAY_F).toString());
+	    int ndayP = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.NDAY_P).toString());
 	
 	    //IN ALL CASES ONLY THE PENTECOSTARION READINGS ARE EFFECTED!
 	    Vector empty = new Vector();

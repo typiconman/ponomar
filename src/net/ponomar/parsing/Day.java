@@ -1,22 +1,18 @@
 package net.ponomar.parsing;
 
-import javax.swing.*;
-import java.beans.*;
-import java.awt.*;
-import java.util.*;
-import java.io.*;
-import java.nio.charset.StandardCharsets;
-
-import javax.swing.event.*;
-
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
-import java.awt.event.*;
-import java.beans.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.Hashtable;
+import java.util.Vector;
 
 /***********************************************************************
 THIS MODULE READS XML FILES THAT CONTAIN THAT ARE OF THE <DAY> TYPE
@@ -380,7 +376,7 @@ public class Day implements DocHandler {
 
                     rInformation[i].put("Rank",ranked);
                     rInformation[i].put("Name",forCommF);
-                    rInformation[i].put("Readings",currentC.getReadings());
+                    rInformation[i].put(Constants.READINGS,currentC.getReadings());
                 //dayRank = Math.max(CurrentC.getRank(), dayRank);
             }
         }
@@ -390,7 +386,7 @@ public class Day implements DocHandler {
             for (int i = 0; i < count.size(); i++) {
                 readingsArray[i]=new OrderedHashtable();
                 //Readings[i].put("Readings",ReadingsA[Integer.parseInt(count.get(i).toString())]);
-                readingsArray[i].put("Readings",rInformation[Integer.parseInt(count.get(i).toString())]);
+                readingsArray[i].put(Constants.READINGS,rInformation[Integer.parseInt(count.get(i).toString())]);
                 //count2+=1;
             }
 
@@ -441,8 +437,8 @@ public class Day implements DocHandler {
         System.out.println(paramony.getCommsHyper());
         System.out.println(paramony.getDayRank());
         OrderedHashtable[] testing=paramony.getReadings();
-        System.out.println(testing[0].get("Readings"));
-        System.out.println(testing[1].get("Readings"));
+        System.out.println(testing[0].get(Constants.READINGS));
+        System.out.println(testing[1].get(Constants.READINGS));
         //System.out.println(Testing[0].get("Information"));
     }
 }

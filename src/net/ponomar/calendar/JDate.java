@@ -3,6 +3,7 @@ package net.ponomar.calendar;
 import java.util.*;
 
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.RuleBasedNumber;
 import net.ponomar.utility.StringOp;
@@ -337,7 +338,7 @@ public class JDate implements Comparable, Cloneable
 		int year = y;
 		int month = m;
 		int day = d;
-                if(Analyse.getDayInfo().get("Ideographic")==null)
+                if(Analyse.getDayInfo().get(Constants.IDEOGRAPHIC)==null)
                 {
                     Format=Format.replace("WW",civilDayNames[dow]);
 		Format=Format.replace("DD",String.valueOf(day));
@@ -347,7 +348,7 @@ public class JDate implements Comparable, Cloneable
                 }
                 else
                 {
-                if (Analyse.getDayInfo().get("Ideographic").equals("1"))
+                if (Analyse.getDayInfo().get(Constants.IDEOGRAPHIC).equals("1"))
                 {
                     RuleBasedNumber convertN=new RuleBasedNumber(Analyse.getDayInfo());
                     Format=Format.replace("WW",civilDayNames[dow]);
@@ -441,7 +442,7 @@ public class JDate implements Comparable, Cloneable
 		int month = getMonth();
 		int day = getDay();
 
-                if(Analyse.getDayInfo().get("Ideographic")==null)
+                if(Analyse.getDayInfo().get(Constants.IDEOGRAPHIC)==null)
                 {
                     Format=Format.replace("WW",dayNames[dow]);
 		Format=Format.replace("DD",String.valueOf(day));
@@ -451,7 +452,7 @@ public class JDate implements Comparable, Cloneable
                 }
                 else
                 {
-                if (Analyse.getDayInfo().get("Ideographic").equals("1"))
+                if (Analyse.getDayInfo().get(Constants.IDEOGRAPHIC).equals("1"))
                 {
                     RuleBasedNumber convertN=new RuleBasedNumber(dayInfo);
                     Format=Format.replace("WW",dayNames[dow]);

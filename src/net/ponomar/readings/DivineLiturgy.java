@@ -68,10 +68,10 @@ public class DivineLiturgy extends Reading {
             }
         }
 
-        if (elem.equals("COMMAND")) {
+        if (elem.equals(Constants.COMMAND)) {
             //THIS WILL STORE ALL THE POSSIBLE COMMANDS FOR A GIVEN SITUATION AND ALLOW THE RESULTS TO BE DETEMINED.
             String name = (String) table.get("Name");
-            String value = (String) table.get("Value");
+            String value = (String) table.get(Constants.VALUE);
             //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
             if (information.containsKey(name)) {
                 Vector previous = (Vector) information.get(name);
@@ -149,21 +149,21 @@ public class DivineLiturgy extends Reading {
                 StringOp transfers=new StringOp();
                 transfers.setDayInfo(getAnalyse().getDayInfo().clone());//findLanguage.deepCopy((Hashtable)StringOp.dayInfo.clone());
                 getInformation3().setDayInfo(getAnalyse().getDayInfo().clone());
-                String dRankOld=getAnalyse().getDayInfo().get("dRank").toString();
+                String dRankOld=getAnalyse().getDayInfo().get(Constants.D_RANK).toString();
                 today.addDays(1);
                 // PUT THE RELEVANT DATA IN THE HASH FOR TOMORROW
                 //System.out.println("Case I: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("dRank").toString()+" In Information3, doy = "+Information3.getDayInfo().get("dRank").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("dRank"));
                 getInformation3().getDayInfo().put("dow", today.getDayOfWeek());
                 getInformation3().getDayInfo().put("doy", today.getDoy());
-                getInformation3().getDayInfo().put("dRank","0");
+                getInformation3().getDayInfo().put(Constants.D_RANK,"0");
                 //System.out.println("Case II: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("doy").toString()+" In Information3, doy = "+Information3.getDayInfo().get("doy").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("doy"));
                 nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
                 int ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
                 //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
                 int ndayF = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
                 getInformation3().getDayInfo().put("nday", nday);
-                getInformation3().getDayInfo().put("ndayP", ndayP);
-                getInformation3().getDayInfo().put("ndayF", ndayF);
+                getInformation3().getDayInfo().put(Constants.NDAY_P, ndayP);
+                getInformation3().getDayInfo().put(Constants.NDAY_F, ndayF);
 
                 getReadings(today, readingType);
                 tomorrowRead = getReadings(today, readingType);
@@ -196,21 +196,21 @@ public class DivineLiturgy extends Reading {
                 StringOp transfers=new StringOp();
                 transfers.getDayInfo().putAll(getAnalyse().getDayInfo().clone());
                 getInformation3().setDayInfo(getAnalyse().getDayInfo().clone());
-                String dRankOld=getAnalyse().getDayInfo().get("dRank").toString();
+                String dRankOld=getAnalyse().getDayInfo().get(Constants.D_RANK).toString();
                 today.subtractDays(1);
 
 
                 // PUT THE RELEVANT DATA IN THE HASH FOR TOMORROW
                 getInformation3().getDayInfo().put("dow", today.getDayOfWeek());
                 getInformation3().getDayInfo().put("doy", today.getDoy());
-                getInformation3().getDayInfo().put("dRank","0");
+                getInformation3().getDayInfo().put(Constants.D_RANK,"0");
                 nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
                 int ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
                 //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
                 int ndayF = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
                 getInformation3().getDayInfo().put("nday", nday);
-                getInformation3().getDayInfo().put("ndayP", ndayP);
-                getInformation3().getDayInfo().put("ndayF", ndayF);
+                getInformation3().getDayInfo().put(Constants.NDAY_P, ndayP);
+                getInformation3().getDayInfo().put(Constants.NDAY_F, ndayF);
 
                 yesterdayRead = getReadings(today, readingType);
                 yesterdays = new ClassifyDivineLiturgy(yesterdayRead, getInformation3().getDayInfo().clone());

@@ -108,7 +108,7 @@ public class LanguagePack implements DocHandler {
 		if (elem.equals("PHRASE") && readPhrases) {
 
 			String key = table.get("Key").toString();
-			String value = table.get("Value").toString();
+			String value = table.get(Constants.VALUE).toString();
 			getPhrases().put(key, value);
 			// System.out.println("The current language is " + Language + ". The phrases are
 			// " +Phrases);
@@ -116,7 +116,7 @@ public class LanguagePack implements DocHandler {
 	}
 
 	public void endElement(String elem) {
-		if (elem.equals("LANGUAGE")) {
+		if (elem.equals(Constants.LANGUAGE)) {
 			readPhrases = false;
 		}
 	}

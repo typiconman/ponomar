@@ -122,8 +122,8 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 
 
                 //The textbox name
-                face=analyse.getDayInfo().get("FontFaceM").toString();
-                size=analyse.getDayInfo().get("FontSizeM").toString();
+                face=analyse.getDayInfo().get(Constants.FONT_FACE_M).toString();
+                size=analyse.getDayInfo().get(Constants.FONT_SIZE_M).toString();
                 textPane = new JTextPane();
                 textPane.setEditable(false);
                 textPane.setContentType("text/html");

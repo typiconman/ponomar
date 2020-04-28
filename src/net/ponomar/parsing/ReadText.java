@@ -4,6 +4,7 @@ import java.util.*;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -80,11 +81,11 @@ public class ReadText implements DocHandler
 		//}
 		if(elem.equals("HEADER") && read)
 		{
-			header=(String)table.get("Value");
+			header=(String)table.get(Constants.VALUE);
 		}
 		if(elem.equals("TEXT") && read)
 		{
-			text+=(String)table.get("Value");
+			text+=(String)table.get(Constants.VALUE);
 			
 		}	
 		
@@ -93,7 +94,7 @@ public class ReadText implements DocHandler
 
 	public void endElement(String elem)
 	{
-		if(elem.equals("LANGUAGE") || elem.equals("TONE"))
+		if(elem.equals(Constants.LANGUAGE) || elem.equals("TONE"))
 		{
 			read=false;
 		}

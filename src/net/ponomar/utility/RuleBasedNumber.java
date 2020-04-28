@@ -126,7 +126,7 @@ public class RuleBasedNumber implements DocHandler
 		if (elem.equals("PHRASE") && readRules)
 		{
 			String key=table.get("Key").toString();
-			String value=table.get("Value").toString();
+			String value=table.get(Constants.VALUE).toString();
 			if (key.equals("DF"))
                         {
                            DF=obtainValues(value);
@@ -170,7 +170,7 @@ public class RuleBasedNumber implements DocHandler
 
 	public void endElement(String elem)
 	{
-		if(elem.equals("LANGUAGE"))
+		if(elem.equals(Constants.LANGUAGE))
 		{
 			readRules=false;
 		}

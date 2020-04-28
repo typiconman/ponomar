@@ -100,7 +100,7 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
          if (name.equals(helpNames[2]))
           {
           	 Helpers orient=new Helpers(analyse.getDayInfo());
-                  orient.applyOrientation(new About(analyse.getDayInfo()),(ComponentOrientation)analyse.getDayInfo().get("Orient"));
+                  orient.applyOrientation(new About(analyse.getDayInfo()),(ComponentOrientation)analyse.getDayInfo().get(Constants.ORIENT));
           }
            if (name.equals(helpNames[0]))
           {
@@ -137,7 +137,7 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
     
 	protected void serviceWindow(String textOut)
 	{
-		frames=new JFrame((String)langText.getPhrases().get("0") + (String)langText.getPhrases().get("Colon")+ primesNames[1]);
+		frames=new JFrame((String)langText.getPhrases().get("0") + (String)langText.getPhrases().get(Constants.COLON)+ primesNames[1]);
 		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		textOut=textOut.replace("</br>", "<BR>");
@@ -149,7 +149,7 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
 		output=new PrintableTextPane();
 		output.setEditable(false);
 		output.setSize(800,700);
-		output.setContentType("text/html; charset=UTF-8");
+		output.setContentType(Constants.CONTENT_TYPE);
 		output.setText(textOut);
 		output.setCaretPosition(0);
                 JScrollPane scrollPane = new JScrollPane(output);
@@ -162,7 +162,7 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
 		frames.setVisible(true);
                 
                 Helpers orient=new Helpers(analyse.getDayInfo());
-                orient.applyOrientation(frames,(ComponentOrientation)analyse.getDayInfo().get("Orient"));
+                orient.applyOrientation(frames,(ComponentOrientation)analyse.getDayInfo().get(Constants.ORIENT));
 
 		//scrollPane.top();
 	}
@@ -184,7 +184,7 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
     
 	public void endElement(String elem)
 	{
-		if(elem.equals("LANGUAGE") || elem.equals("TONE"))
+		if(elem.equals(Constants.LANGUAGE) || elem.equals("TONE"))
 		{
 			read=false;
 		}

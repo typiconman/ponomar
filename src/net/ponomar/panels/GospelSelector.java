@@ -1,19 +1,18 @@
 package net.ponomar.panels;
 
-import javax.swing.*;
-import javax.swing.event.*;
-
 import net.ponomar.ConfigurationFiles;
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
+import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.awt.*;
-import java.util.*;
-import java.io.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
 /***************************************************************
 GospelSelector.java :: MODULE THAT ALLOWS THE USER TO SELECT, USING RADIO BUTTONS,
@@ -58,7 +57,7 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
 	analyse.setDayInfo(dayInfo);
         text=new LanguagePack(dayInfo);
          selectorNames=text.obtainValues((String)text.getPhrases().get("GospelSelection"));
-                Font currentFont=new Font((String)analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get("FontSizeM")));
+                Font currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
            
 	}
 	public JPanel createGospelSelector()
@@ -66,7 +65,7 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
             
            
             selectorNames=text.obtainValues((String)text.getPhrases().get("GospelSelection"));
-                Font currentFont=new Font((String)analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get("FontSizeM")));
+                Font currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
             //DETERMINE THE DEFAULTS
 		String gospelDefault = (String) ConfigurationFiles.getDefaults().get(GOSPEL_SELECTOR);
 		//Create the radio buttons.

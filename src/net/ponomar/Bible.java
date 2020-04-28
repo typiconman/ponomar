@@ -49,7 +49,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
 	private static final String BIBLE_V = "BibleV";
 	private static final String FONT_FACE = "FontFace";
 	private static final String FONT_SIZE = "FontSize";
-	private static final String ORIENT = "Orient";
+	private static final String ORIENT = Constants.ORIENT;
 	private static final String NAME = "^NAME";
 	// Parsing and navigation information
     private String curversion = "kjv"; // DEFAULT VERSION
@@ -217,7 +217,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
 
         textOutput = new PrintableTextPane();
         textOutput.setEditable(false);
-        textOutput.setContentType("text/html; charset=UTF-8");
+        textOutput.setContentType(Constants.CONTENT_TYPE);
 
         textOutput.setSize(400, 600);
         /*c.ipady = 0;
@@ -323,9 +323,9 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             if (table.get(FONT_FACE) == null) {
 
                 displayFontA = value1a.getFontName();
-                if (displayFontA.equals("Ponomar Unicode TT"))
+                if (displayFontA.equals(Constants.PONOMAR_UNICODE_TT))
                 {
-                    displayFontA = "Times New Roman";
+                    displayFontA = Constants.TIMES_NEW_ROMAN;
                 }
 
             } else {
@@ -390,9 +390,9 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 if (table.get(FONT_FACE) == null) {
 
                     displayFont = value1.getFontName();
-                    if (displayFont.equals("Ponomar Unicode TT"))
+                    if (displayFont.equals(Constants.PONOMAR_UNICODE_TT))
                     {
-                        displayFont = "Times New Roman";
+                        displayFont = Constants.TIMES_NEW_ROMAN;
                     }
 
                 } else {
@@ -624,7 +624,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
 
         textOutput.setCaretPosition(0);
 
-        textOutput.setContentType("text/html; charset=UTF-8");
+        textOutput.setContentType(Constants.CONTENT_TYPE);
         textOutput.setFont(currentFont);
         String headerA = header.replace(NAME, (String) books.get(curbook));
         headerA = headerA.replace("^CNN", formatPassage(curpassage));

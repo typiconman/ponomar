@@ -470,7 +470,7 @@ public static void main(String[] argz)
         StringOp testing = new StringOp();
         testing.dayInfo.put("nday", 3);
 	testing.dayInfo.put("wday", 6);
-	testing.dayInfo.put("ndayP",81);
+	testing.dayInfo.put(Constants.NDAY_P,81);
 
         StringOp testin2=new StringOp();
         testin2=testing.clone();

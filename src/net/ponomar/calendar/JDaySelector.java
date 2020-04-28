@@ -2,6 +2,7 @@ package net.ponomar.calendar;
 
 import net.ponomar.astronomy.Paschalion;
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -87,7 +88,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
             Analyse.setDayInfo(dayInfo);
             Text=new LanguagePack(dayInfo);
             numFormat = NumberFormat.getInstance(new Locale(Text.getPhrases().get("Language").toString(),Text.getPhrases().get("Country").toString()));
-            CurrentFont=new Font((String)Analyse.getDayInfo().get("FontFaceM"),Font.BOLD,Integer.parseInt((String)Analyse.getDayInfo().get("FontSizeM")));
+            CurrentFont=new Font((String)Analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.BOLD,Integer.parseInt((String)Analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
             //Initialise the required locales
             df=(DecimalFormat)numFormat;
             DecimalFormatSymbols dfs=df.getDecimalFormatSymbols();

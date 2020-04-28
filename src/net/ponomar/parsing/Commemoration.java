@@ -186,7 +186,7 @@ public class Commemoration implements DocHandler {
         }
         if (elem.equals("SCRIPTURE") && read) {
             String type = (String) table.get("Type");
-            String reading = (String) table.get("Reading");
+            String reading = (String) table.get(Constants.READING);
             if (readings.containsKey(type)) {
 
                 // ADD THIS READING TO OTHERS OF THE SAME TYPE
@@ -243,7 +243,7 @@ public class Commemoration implements DocHandler {
                 String type = (String) e.nextElement();
                 grammar.put(type, table.get(type));
             }
-            information.put("grammar", grammar);
+            information.put(Constants.GRAMMAR, grammar);
             //Information.put("Nominative", table.get("Nominative").toString());
             //Information.put("Short", table.get("Short").toString());
             //Information.put("ShortFor", table.get("ShortF").toString());
@@ -253,8 +253,8 @@ public class Commemoration implements DocHandler {
             if (table.get("Id")!=null){
             information.put("LifeID",table.get("Id"));
         }
-            if (table.get("Copyright")!=null){
-            information.put("LifeCopyright",table.get("Copyright"));
+            if (table.get(Constants.COPYRIGHT)!=null){
+            information.put("LifeCopyright",table.get(Constants.COPYRIGHT));
             }
          }
 
@@ -265,7 +265,7 @@ public class Commemoration implements DocHandler {
             skipElement = false;
             return;
         }
-        if (elem.equals("LANGUAGE")) {
+        if (elem.equals(Constants.LANGUAGE)) {
             read = false;
         }
         if (elem.equals("ROYALHOURS")) {
@@ -350,18 +350,18 @@ public class Commemoration implements DocHandler {
 
     public String getGrammar(String value) {
         if (Integer.parseInt(information.get("CID").toString()) != -1) {
-            grammar = (OrderedHashtable) information.get("grammar");
+            grammar = (OrderedHashtable) information.get(Constants.GRAMMAR);
 
             if (value.equals("")) {
                 //System.out.println( Information.get("Name").toString());
-                return grammar.get("Nominative").toString();
+                return grammar.get(Constants.NOMINATIVE).toString();
             }
             try {
                 return grammar.get(value).toString();
             } catch (Exception e) {
                 if (grammar != null) {
-                    if (grammar.get("Nominative") != null) {
-                        return grammar.get("Nominative").toString();
+                    if (grammar.get(Constants.NOMINATIVE) != null) {
+                        return grammar.get(Constants.NOMINATIVE).toString();
                     } else {
                         return errorName;
                     }
@@ -414,7 +414,7 @@ public class Commemoration implements DocHandler {
     }
 
     public String getName() {
-        return getGrammar("Nominative");
+        return getGrammar(Constants.NOMINATIVE);
         /*if (!Information.containsKey("Nominative")){
         return "";
         }
@@ -645,7 +645,7 @@ public class Commemoration implements DocHandler {
         //System.out.println(Paramony.getService("/MATINS/KONTAKION","1"));
         System.out.println(Paramony.getRank());
         //System.out.println(Paramony.Information.get("LIFE"));
-        System.out.println(Paramony.getGrammar("Nominative"));
+        System.out.println(Paramony.getGrammar(Constants.NOMINATIVE));
         System.out.println("Rank = "+Paramony.getRank());
         System.out.println(Paramony.getService("/LITURGY/TROPARION", "1"));
         System.out.println(Paramony.getService("/LITURGY/KONTAKION", "1"));

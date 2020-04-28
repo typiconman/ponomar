@@ -107,13 +107,13 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         setTitle((String) phrases.getPhrases().get("0"));
         rSep = (String) phrases.getPhrases().get("ReadSep");
         cSep = (String) phrases.getPhrases().get("CommSep");
-        colon = (String) phrases.getPhrases().get("Colon");
-        analyse.getDayInfo().put("FontFaceM", displayFont);
-        analyse.getDayInfo().put("FontSizeM", displaySize);
+        colon = (String) phrases.getPhrases().get(Constants.COLON);
+        analyse.getDayInfo().put(Constants.FONT_FACE_M, displayFont);
+        analyse.getDayInfo().put(Constants.FONT_SIZE_M, displaySize);
         analyse.getDayInfo().put("ReadSep", rSep);
-        analyse.getDayInfo().put("Colon", colon);
-        ideographic = (String) phrases.getPhrases().get("Ideographic");
-        analyse.getDayInfo().put("Ideographic", ideographic);
+        analyse.getDayInfo().put(Constants.COLON, colon);
+        ideographic = (String) phrases.getPhrases().get(Constants.IDEOGRAPHIC);
+        analyse.getDayInfo().put(Constants.IDEOGRAPHIC, ideographic);
         //gospelLocation = new GospelSelector(analyse.getDayInfo());
 
         //ADD A MENU BAR Y.S. 2008/08/11 n.s.
@@ -157,7 +157,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         Locale place = new Locale(phrases.getPhrases().get("Language").toString(), phrases.getPhrases().get("Country").toString());
         Helpers orient = new Helpers(analyse.getDayInfo());
         analyse.getDayInfo().put("Locale", place);
-        analyse.getDayInfo().put("Orient", ComponentOrientation.getOrientation(place));
+        analyse.getDayInfo().put(Constants.ORIENT, ComponentOrientation.getOrientation(place));
         orient.applyOrientation(this, ComponentOrientation.getOrientation(place));
         this.validate();
 
@@ -184,8 +184,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 	protected Font configureFonts() {
 		//Load font settings
-        displayFont = (String) phrases.getPhrases().get("FontFaceM");
-        displaySize = (String) phrases.getPhrases().get("FontSizeM");
+        displayFont = (String) phrases.getPhrases().get(Constants.FONT_FACE_M);
+        displaySize = (String) phrases.getPhrases().get(Constants.FONT_SIZE_M);
 
         Font value1 = (Font) UIManager.get("Menu.font");
         if (displaySize == null || displaySize.equals("")) {
@@ -285,7 +285,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         if (name.equals(helpNames[2])) {
             //new About();
             Helpers orient = new Helpers(analyse.getDayInfo());
-            orient.applyOrientation(new About(analyse.getDayInfo()), (ComponentOrientation) analyse.getDayInfo().get("Orient"));
+            orient.applyOrientation(new About(analyse.getDayInfo()), (ComponentOrientation) analyse.getDayInfo().get(Constants.ORIENT));
         }
         if (name.equals(helpNames[0])) {
             //HELP FILES
@@ -342,7 +342,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         if (name.equals(bibleName[0])) {
             //Launch the Bible Reader
             Helpers orient = new Helpers(analyse.getDayInfo());
-            orient.applyOrientation(new Bible("Gen", "1:1-31", analyse.getDayInfo()), (ComponentOrientation) analyse.getDayInfo().get("Orient"));
+            orient.applyOrientation(new Bible("Gen", "1:1-31", analyse.getDayInfo()), (ComponentOrientation) analyse.getDayInfo().get(Constants.ORIENT));
         }
         if (name.equals(fileNames[6])) {
             helper.sendHTMLToPrinter(text);
@@ -368,7 +368,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 				} catch (NullPointerException npe) {
 					bible = new Bible(parts[1], parts[2], analyse.getDayInfo());
 					Helpers orient = new Helpers(analyse.getDayInfo());
-					orient.applyOrientation(bible, (ComponentOrientation) analyse.getDayInfo().get("Orient"));
+					orient.applyOrientation(bible, (ComponentOrientation) analyse.getDayInfo().get(Constants.ORIENT));
 				}
 			} else {
 				parts = cmd.split("\\?");
@@ -394,7 +394,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 	}
 
     private void write() {
-        text.setContentType("text/html; charset=UTF-8");
+        text.setContentType(Constants.CONTENT_TYPE);
         text.setFont(currentFont);
         text.setText(generateContent());
         text.setCaretPosition(0);
@@ -471,7 +471,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         filename += d < 10 ? "/0" + d : "/" + d; // CLEANED UP
         //filename += ".xml";
         Day solarCycle = new Day(filename, analyse.getDayInfo());
-        analyse.getDayInfo().put("dRank", Math.max(solarCycle.getDayRank(), paschalCycle.getDayRank()));
+        analyse.getDayInfo().put(Constants.D_RANK, Math.max(solarCycle.getDayRank(), paschalCycle.getDayRank()));
         content += paschalCycle.getCommsHyper() + cSep;
         content += solarCycle.getCommsHyper();
         analyse.getDayInfo().put("Tone", paschalCycle.getTone());
@@ -522,17 +522,17 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         analyse.getDayInfo().put("doy", doy);	// THE DAY'S DOY (see JDate.java for specification)
         //System.out.println(doy);
         analyse.getDayInfo().put("nday", daysBeforeOrAfterPascha);	// THE NUMBER OF DAYS BEFORE (-) OR AFTER (+) THIS YEAR'S PASCHA
-        analyse.getDayInfo().put("ndayP", daysAfterLastYearsPascha);	// THE NUMBER OF DAYS AFTER LAST YEAR'S PASCHA
+        analyse.getDayInfo().put(Constants.NDAY_P, daysAfterLastYearsPascha);	// THE NUMBER OF DAYS AFTER LAST YEAR'S PASCHA
         //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
-        analyse.getDayInfo().put("ndayF", daysBeforeNextYearsPascha);	// THE NUMBER OF DAYS TO NEXT YEAR'S PASCHA (CAN BE +ve or -ve).
+        analyse.getDayInfo().put(Constants.NDAY_F, daysBeforeNextYearsPascha);	// THE NUMBER OF DAYS TO NEXT YEAR'S PASCHA (CAN BE +ve or -ve).
         //ADDING THE TYPE OF GOSPEL READINGS TO BE FOLLOWED
         analyse.getDayInfo().put("GS", GospelSelector.getGValue());
         
         //INTERFACE LANGUAGE
         analyse.getDayInfo().put("LS", languageLocation.getLValue());
         analyse.getDayInfo().put("Year", today.getYear());
-        analyse.getDayInfo().put("dRank", 0); //The default rank for a day is 0. Y.S. 2010/02/01 n.s.
-        analyse.getDayInfo().put("Ideographic", ideographic);
+        analyse.getDayInfo().put(Constants.D_RANK, 0); //The default rank for a day is 0. Y.S. 2010/02/01 n.s.
+        analyse.getDayInfo().put(Constants.IDEOGRAPHIC, ideographic);
 		return daysBeforeOrAfterPascha;
 	}
 

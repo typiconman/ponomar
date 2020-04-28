@@ -1,6 +1,7 @@
 package net.ponomar;
 
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
@@ -64,8 +65,8 @@ public class About extends JFrame
 		JTextPane output=new JTextPane();
 		output.setEditable(false);
 		output.setContentType("text/html");
-                String displayFont= analyse.getDayInfo().get("FontFaceM").toString();
-                String displaySize= analyse.getDayInfo().get("FontSizeM").toString();
+                String displayFont= analyse.getDayInfo().get(Constants.FONT_FACE_M).toString();
+                String displaySize= analyse.getDayInfo().get(Constants.FONT_SIZE_M).toString();
 		output.setText("<body style=\"font-family:" + displayFont + ";font-size:" + displaySize
 				+ "\"><B><h1 style=\"text-align: center;\">" + (String) ponomar.getPhrases().get("0")
 				+ "</h1></B><p style=\"text-align: center;\">" + aboutNames[0] + " "

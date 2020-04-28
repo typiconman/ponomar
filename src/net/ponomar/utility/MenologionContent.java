@@ -27,7 +27,7 @@ public final class MenologionContent {
 		this.today = today;
 	}
 
-	private static final String READINGS_KEY = "Readings";
+	private static final String READINGS_KEY = Constants.READINGS;
 
 	public String processReadings(Bible shortForm, OrderedHashtable combinedReadings) {
 		StringBuilder content = new StringBuilder();
@@ -233,7 +233,7 @@ public final class MenologionContent {
 		if (amc.equals("1")) {
 			PCalendar checking = new PCalendar(today, PCalendar.JULIAN, analyse.getDayInfo());
 			format = am;
-			if (analyse.getDayInfo().get("Ideographic").equals("1")) {
+			if (analyse.getDayInfo().get(Constants.IDEOGRAPHIC).equals("1")) {
 				RuleBasedNumber convertN = new RuleBasedNumber(analyse.getDayInfo());
 
 				format = format.replace("^YYAM",

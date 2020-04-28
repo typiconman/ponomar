@@ -27,7 +27,7 @@ public class Helpers
 	public boolean closeFrame(String title)
 	{
             LanguagePack text=new LanguagePack(analyse.getDayInfo());
-            String[] languageNames=text.obtainValues((String)text.getPhrases().get("LanguageMenu"));
+            String[] languageNames=text.obtainValues((String)text.getPhrases().get(Constants.LANGUAGE_MENU));
 
             Object[] options = {languageNames[3],languageNames[5]};
 		//JOptionPane pane=new JOptionPane();
@@ -52,7 +52,7 @@ public class Helpers
 	public void saveHTMLFile(String defaultname, String strOut)
 	{
             LanguagePack text=new LanguagePack(analyse.getDayInfo());
-            String[] languageNames=text.obtainValues((String)text.getPhrases().get("LanguageMenu"));
+            String[] languageNames=text.obtainValues((String)text.getPhrases().get(Constants.LANGUAGE_MENU));
 	 String[] helperNames=text.obtainValues((String)text.getPhrases().get("Helpers"));
 	 String[] aboutNames=text.obtainValues((String)text.getPhrases().get("About"));
             JFileChooser fileSelector=new JFileChooser();
@@ -223,7 +223,7 @@ public class Helpers
                     authorList.append(and).append(authors[authors.length - 1]);
                 }
 
-               String copyright=text.getPhrases().get("Copyright").toString();
+               String copyright=text.getPhrases().get(Constants.COPYRIGHT).toString();
                copyright=copyright.replace("^YY",year);
                copyright=copyright.replace("^AA", authorList.toString());
                return copyright;

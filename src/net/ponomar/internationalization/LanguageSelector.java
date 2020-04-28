@@ -73,9 +73,9 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	public JMenu createLanguageMenu(OrderedHashtable dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
-            Font currentFont=new Font((String)analyse.getDayInfo().get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get("FontSizeM")));
+            Font currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
             LanguagePack text=new LanguagePack(dayInfo);
-		String [] languageNames=text.obtainValues((String)text.getPhrases().get("LanguageMenu"));
+		String [] languageNames=text.obtainValues((String)text.getPhrases().get(Constants.LANGUAGE_MENU));
 		//DETERMINE THE DEFAULTS
 		String languageDefaultString = (String) ConfigurationFiles.getDefaults().get(LANGUAGE);
 		String rough = (String) ConfigurationFiles.getDefaults().get("AvailableLanguages");
@@ -122,7 +122,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
                         {
                         
                             //We are going to treat Church Slavonic specially
-                            Font slavonicFont=new Font("Ponomar Unicode TT",Font.PLAIN,18);
+                            Font slavonicFont=new Font(Constants.PONOMAR_UNICODE_TT,Font.PLAIN,18);
                             languageBox.setFont(slavonicFont);
                             //LanguageBox.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
                             //LanguageBox.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
@@ -133,7 +133,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
                             //We do not want the default font necessarily being used here.
                             //if (CurrentFont.getFontName().toString().equals("Ponomar Unicode TT"))
                                 //This is only an issue for fonts that lack a complete character set.
-                            Font defaultFont=new Font("Times New Roman",Font.BOLD,14);
+                            Font defaultFont=new Font(Constants.TIMES_NEW_ROMAN,Font.BOLD,14);
                             languageBox.setFont(defaultFont);
                         }
                         group.add(languageBox);
@@ -147,7 +147,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	public void actionPerformed(ActionEvent e)
 	{
 		LanguagePack text=new LanguagePack(analyse.getDayInfo().clone());
-		String [] languageNames=text.obtainValues((String)text.getPhrases().get("LanguageMenu"));
+		String [] languageNames=text.obtainValues((String)text.getPhrases().get(Constants.LANGUAGE_MENU));
 		//THIS WILL DETERMINE THE APPROPRIATE LANGUAGE LOCATION
 		languageLocation=e.getActionCommand();
                 //System.out.println(LanguageLocation);

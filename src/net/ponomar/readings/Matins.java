@@ -4,6 +4,7 @@ import net.ponomar.Bible;
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.readings.utility.ClassifyMatins;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 
@@ -56,10 +57,10 @@ public class Matins extends Reading {
             }
         }
 
-        if (elem.equals("COMMAND")) {
+        if (elem.equals(Constants.COMMAND)) {
             //THIS WILL STORE ALL THE POSSIBLE COMMANDS FOR A GIVEN SITUATION AND ALLOW THE RESULTS TO BE DETEMINED.
             String name = (String) table.get("Name");
-            String value = (String) table.get("Value");
+            String value = (String) table.get(Constants.VALUE);
             //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
             if (information.containsKey(name)) {
                 Vector previous = (Vector) information.get(name);
@@ -91,7 +92,7 @@ public class Matins extends Reading {
         int doy = Integer.parseInt(getInformation3().getDayInfo().get("doy").toString());
         int dow = Integer.parseInt(getInformation3().getDayInfo().get("dow").toString());
         int nday = Integer.parseInt(getInformation3().getDayInfo().get("nday").toString());
-        int dRank=Integer.parseInt(getInformation3().getDayInfo().get("dRank").toString());
+        int dRank=Integer.parseInt(getInformation3().getDayInfo().get(Constants.D_RANK).toString());
 
 
         //DETERMINE THE GOVERNING PARAMETERS FOR COMPILING THE READINGS

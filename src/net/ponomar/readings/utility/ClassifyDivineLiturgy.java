@@ -44,7 +44,7 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
                 e.printStackTrace();
             }
 
-            Vector paschalV = (Vector) readingsIn.get("Readings");
+            Vector paschalV = (Vector) readingsIn.get(Constants.READINGS);
             Vector paschalR = (Vector) readingsIn.get("Rank");
             Vector paschalT = (Vector) readingsIn.get("Tag");
 
@@ -84,8 +84,8 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
             int doy = Integer.parseInt(ParameterValues.getDayInfo().get("doy").toString());
             int dow = Integer.parseInt(ParameterValues.getDayInfo().get("dow").toString());
             int nday = Integer.parseInt(ParameterValues.getDayInfo().get("nday").toString());
-            int ndayF = Integer.parseInt(ParameterValues.getDayInfo().get("ndayF").toString());
-            int ndayP = Integer.parseInt(ParameterValues.getDayInfo().get("ndayP").toString());
+            int ndayF = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.NDAY_F).toString());
+            int ndayP = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.NDAY_P).toString());
             LeapReadings();		//THIS ALLOWS APPROPRIATE SKIPPING OF READINGS OVER THE NATIVITY SEASON!
 
             /******************************************************

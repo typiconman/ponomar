@@ -41,7 +41,7 @@ public class RoyalHours extends LitService {
 		analyse.setDayInfo(dayInfo);
 		langText = new LanguagePack(dayInfo);
 		primesNames = langText.obtainValues((String) langText.getPhrases().get("RoyalHours"));
-		languageNames = langText.obtainValues((String) langText.getPhrases().get("LanguageMenu"));
+		languageNames = langText.obtainValues((String) langText.getPhrases().get(Constants.LANGUAGE_MENU));
 		fileNames = langText.obtainValues((String) langText.getPhrases().get("File"));
 		helpNames = langText.obtainValues((String) langText.getPhrases().get("Help"));
 		today = date;
@@ -53,7 +53,7 @@ public class RoyalHours extends LitService {
 			if (strOut.equals("Royal Hours are not served today.")) {
 				Object[] options = { languageNames[3] };
 				JOptionPane.showOptionDialog(null, primesNames[0],
-						(String) langText.getPhrases().get("0") + (String) langText.getPhrases().get("Colon")
+						(String) langText.getPhrases().get("0") + (String) langText.getPhrases().get(Constants.COLON)
 								+ primesNames[1],
 						JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 			} else {
@@ -135,7 +135,7 @@ public class RoyalHours extends LitService {
 		read = true;
 		// }
 		if (elem.equals("TEXT") && read) {
-			text += (String) table.get("Value");
+			text += (String) table.get(Constants.VALUE);
 
 		}
 		if (elem.equals("PRIMES") && read) {

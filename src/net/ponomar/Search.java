@@ -64,7 +64,7 @@ public class Search extends JFrame implements ActionListener
         searchTerm.setText("Please enter your search terms.");
         top.add(searchTerm);
         JTextPane text2 = new JTextPane();
-        text2.setContentType("text/html; charset=UTF-8");
+        text2.setContentType(Constants.CONTENT_TYPE);
         text2.setText("This is a trial search of the commemorations in a given language with display across languages. Unfortunately, no stemming or collation is available so that the results are very, very, very dependent on what you enter. The fewer letters or words that are entered here, the more likely you are to find what you are looking for. Entering \"George\" is more likely to give results than \"George the New Martyr.\"");
         text2.setEditable(false);
         JScrollPane scroll = new JScrollPane(text2);
@@ -77,7 +77,7 @@ public class Search extends JFrame implements ActionListener
 
          results=new JTextPane();
          results.setEditable(false);
-         results.setContentType("text/html; charset=UTF-8");
+         results.setContentType(Constants.CONTENT_TYPE);
          results.setText("There are no results.");
          JScrollPane scrollPane3 = new JScrollPane(results);
          bottom.add(scrollPane3);
@@ -135,7 +135,7 @@ public class Search extends JFrame implements ActionListener
                     if (file.getName().endsWith("xml")){
                         System.out.println(file.getName());
                         test =new Commemoration(file.getName().substring(0, file.getName().length()-4),file.getName().substring(0, file.getName().length()-4),Analyse.getDayInfo());
-                        String nameF=test.getGrammar("Nominative").toString();
+                        String nameF=test.getGrammar(Constants.NOMINATIVE).toString();
                         if (nameF.contains(search)){
                             found.append(file.getName().subSequence(0, file.getName().length() - 4)).append("\t").append(nameF).append("\t");
                             count+=1;

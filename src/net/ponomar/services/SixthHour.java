@@ -54,7 +54,7 @@ public class SixthHour extends LitService {
         analyse.setDayInfo(dayInfo);
             langText=new LanguagePack(dayInfo);
             primesNames=langText.obtainValues((String)langText.getPhrases().get("Sexte"));
-	languageNames=langText.obtainValues((String)langText.getPhrases().get("LanguageMenu"));
+	languageNames=langText.obtainValues((String)langText.getPhrases().get(Constants.LANGUAGE_MENU));
         fileNames=langText.obtainValues((String)langText.getPhrases().get("File"));
 	helpNames=langText.obtainValues((String)langText.getPhrases().get("Help"));
         selectorP=new PrimeSelector(dayInfo);
@@ -85,7 +85,7 @@ public class SixthHour extends LitService {
             String strOut = createHours();
             if (strOut.equals("No Service Today")) {
                 Object[] options = {languageNames[3]};
-                JOptionPane.showOptionDialog(null, primesNames[0], (String) langText.getPhrases().get("0") + (String) langText.getPhrases().get("Colon") + primesNames[1], JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+                JOptionPane.showOptionDialog(null, primesNames[0], (String) langText.getPhrases().get("0") + (String) langText.getPhrases().get(Constants.COLON) + primesNames[1], JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
             } else {
                 //strOut=strOut+"<p><Font Color='red'>Disclaimer: This is a preliminary attempt at creating the Primes service.</Font></p>";
                 //int LangCode=Integer.parseInt(Analyse.getDayInfo().get("LS").toString());
@@ -155,7 +155,7 @@ public class SixthHour extends LitService {
         } else if (nday < -70) {
             // WE HAVE NOT YET REACHED THE LENTEN TRIODION
             filename = Constants.PENTECOSTARION_PATH;
-            lineNumber = Integer.parseInt(analyse.getDayInfo().get("ndayP").toString()) + 1;
+            lineNumber = Integer.parseInt(analyse.getDayInfo().get(Constants.NDAY_P).toString()) + 1;
         } else {
             // WE ARE AFTER PASCHA AND BEFORE THE END OF THE YEAR
             filename = Constants.PENTECOSTARION_PATH;
@@ -169,13 +169,13 @@ public class SixthHour extends LitService {
         Day Readings = new Day(filename, analyse.getDayInfo());
         try {
             OrderedHashtable[] lessons = Readings.getReadings();
-            OrderedHashtable Reading = (OrderedHashtable) lessons[0].get("Readings");
-            OrderedHashtable lesson = (OrderedHashtable) Reading.get("Readings");
+            OrderedHashtable Reading = (OrderedHashtable) lessons[0].get(Constants.READINGS);
+            OrderedHashtable lesson = (OrderedHashtable) Reading.get(Constants.READINGS);
             OrderedHashtable reading = (OrderedHashtable) lesson.get("6th hour");
             //System.out.println("Reading == " +reading);
             OrderedHashtable lesson2 = (OrderedHashtable) reading.get("1");
             //System.out.println("Lesson 2 == "+lesson2);
-            reading6th = lesson2.get("Reading").toString();
+            reading6th = lesson2.get(Constants.READING).toString();
         } catch (Exception e)  {           //There are no appointed readings
             reading6th = "";
         }
@@ -212,16 +212,16 @@ public class SixthHour extends LitService {
         //DETERMINE THE ORDERING OF THE TROPARIA AND KONTAKIA IF THERE ARE 2 OR MORE
 
         String strOut = "";
-        analyse.getDayInfo().put("PFlag1", TypeP);
-        analyse.getDayInfo().put("PFlag2", 0);
+        analyse.getDayInfo().put(Constants.P_FLAG_1, TypeP);
+        analyse.getDayInfo().put(Constants.P_FLAG_2, 0);
         analyse.getDayInfo().put("PFlag3", 0);
         //NOTE PFlag2 == 3 for Holy Week Services!
 
         if (type.equals("Lenten")) {
-            analyse.getDayInfo().put("PFlag2", 1);
+            analyse.getDayInfo().put(Constants.P_FLAG_2, 1);
 
             if (lentenKat != null) {
-                analyse.getDayInfo().put("PFlag2", 2);
+                analyse.getDayInfo().put(Constants.P_FLAG_2, 2);
                 //CREATE THE KATHISMA PART
                 BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PKath6.xml"), StandardCharsets.UTF_8));
                 String Data = "<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma" + lentenKat + "\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
@@ -413,12 +413,12 @@ public class SixthHour extends LitService {
         read = true;
         //}
         if (elem.equals("TEXT") && read) {
-            text += (String) table.get("Value");
+            text += (String) table.get(Constants.VALUE);
 
         }
         if (elem.equals("SCRIPTURE") && read) {
             String type = (String) table.get("Type");
-            String reading = (String) table.get("Reading");
+            String reading = (String) table.get(Constants.READING);
             //System.out.println("The readings that were found were "+type+" "+reading);
             if (type.equals("6th hour")) {
                 reading6th = reading;
@@ -431,21 +431,21 @@ public class SixthHour extends LitService {
             if (value != null) {
                 type = (String) table.get("Type");
             }
-            value = (String) table.get("TROPARION1");
+            value = (String) table.get(Constants.TROPARION_1);
             if (value != null) {
-                troparion1 = (String) table.get("TROPARION1");
+                troparion1 = (String) table.get(Constants.TROPARION_1);
             }
-            value = (String) table.get("KONTAKION1");
+            value = (String) table.get(Constants.KONTAKION_1);
             if (value != null) {
-                kontakion1 = (String) table.get("KONTAKION1");
+                kontakion1 = (String) table.get(Constants.KONTAKION_1);
             }
-            value = (String) table.get("KONTAKION2");
+            value = (String) table.get(Constants.KONTAKION_2);
             if (value != null) {
-                kontakion1 = (String) table.get("KONTAKION2");
+                kontakion1 = (String) table.get(Constants.KONTAKION_2);
             }
-            value = (String) table.get("TROPARION2");
+            value = (String) table.get(Constants.TROPARION_2);
             if (value != null) {
-                troparion1 = (String) table.get("TROPARION2");
+                troparion1 = (String) table.get(Constants.TROPARION_2);
             }
 
             value = (String) table.get(LENTENK);

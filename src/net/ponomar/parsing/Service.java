@@ -194,7 +194,7 @@ public class Service implements DocHandler
                         whoLast="";
 			String text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+title+".xml");
                         String ponomar=text.getPhrases().get("0").toString();
-                        String colon=text.getPhrases().get("Colon").toString();
+                        String colon=text.getPhrases().get(Constants.COLON).toString();
 			if(text4 != null)
 			{
 				header1=header1+"<title>"+ponomar+colon+text4+"</title>";
@@ -204,7 +204,7 @@ public class Service implements DocHandler
 			{
 				header1=header1+serviceNames[0];
 			}
-			title=table.get("Value").toString();
+			title=table.get(Constants.VALUE).toString();
 			text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+title+".xml");
 			if(text4 != null)
 			{
@@ -241,7 +241,7 @@ public class Service implements DocHandler
 			ReadText textGet1=new ReadText(analyse.getDayInfo().clone());
                         whoLast="";
 
-			String subtitle=table.get("Value").toString();
+			String subtitle=table.get(Constants.VALUE).toString();
 			String text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+subtitle+".xml");
 			if(text4 != null)
 			{
@@ -451,7 +451,7 @@ public class Service implements DocHandler
 		}
 		if (elem.equals("TIMES") && read)
 		{
-			textTimes=table.get("Value").toString();
+			textTimes=table.get(Constants.VALUE).toString();
 		}
 		
 
@@ -459,7 +459,7 @@ public class Service implements DocHandler
 
 	public void endElement(String elem)
 	{
-		if(elem.equals("LANGUAGE") || elem.equals("TONE"))
+		if(elem.equals(Constants.LANGUAGE) || elem.equals("TONE"))
 		{
 			read=false;
 		}

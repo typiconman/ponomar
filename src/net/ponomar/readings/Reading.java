@@ -100,7 +100,7 @@ public abstract class Reading implements DocHandler {
         filename += "";
 
         Day checkingM = new Day(filename,getInformation3().getDayInfo());
-        getInformation3().getDayInfo().put("dRank",Math.max(checkingP.getDayRank(), checkingM.getDayRank()));
+        getInformation3().getDayInfo().put(Constants.D_RANK,Math.max(checkingP.getDayRank(), checkingM.getDayRank()));
 
         OrderedHashtable[] paschalReadings = checkingP.getReadings();
         OrderedHashtable[] menaionReadings = checkingM.getReadings();
@@ -113,7 +113,7 @@ public abstract class Reading implements DocHandler {
 
         OrderedHashtable temp = (OrderedHashtable) combinedReadings.get("LITURGY");
         //System.out.println("temp values (423)" + temp);
-        Vector Readings = (Vector) temp.get("Readings");
+        Vector Readings = (Vector) temp.get(Constants.READINGS);
         Vector Rank = (Vector) temp.get("Rank");
         Vector Tag = (Vector) temp.get("Tag");
         //Special case and consider it differently
@@ -127,7 +127,7 @@ public abstract class Reading implements DocHandler {
             OrderedHashtable stepE = (OrderedHashtable) liturgy.get(readingType);
             if (stepE != null) {
 
-                type.add(stepE.get("Reading").toString());
+                type.add(stepE.get(Constants.READING).toString());
             } else {
                 //type.add("");
             }
@@ -138,7 +138,7 @@ public abstract class Reading implements DocHandler {
 
         //output += RSep;
         OrderedHashtable Final2 = new OrderedHashtable();
-        Final2.put("Readings", type);
+        Final2.put(Constants.READINGS, type);
         Final2.put("Rank", Rank);
         Final2.put("Tag", Tag);
 

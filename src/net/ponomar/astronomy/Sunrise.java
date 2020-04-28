@@ -2,6 +2,7 @@ package net.ponomar.astronomy;
 
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.RuleBasedNumber;
 import net.ponomar.utility.StringOp;
@@ -180,7 +181,7 @@ public final class Sunrise
 				out[i] += ":" + minute;
 			}*/
 			// Changed to this by Y.S. to internationalise it.
-			if (analyse.getDayInfo().get("Ideographic").equals("1")) {
+			if (analyse.getDayInfo().get(Constants.IDEOGRAPHIC).equals("1")) {
 				RuleBasedNumber convertN = new RuleBasedNumber(analyse.getDayInfo().clone());
 				format = format.replace("HH", convertN.getFormattedNumber(hour));
 				format = format.replace("MM", convertN.getFormattedNumber(minute));
