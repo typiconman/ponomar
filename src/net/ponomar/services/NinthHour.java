@@ -216,7 +216,7 @@ public class NinthHour extends LitService
 		//I WOULD THEN NEED TO READ THE MENOLOGION, BUT I WILL NOT DO SO RIGHT NOW.
 		//DETERMINE THE ORDERING OF THE TROPARIA AND KONTAKIA IF THERE ARE 2 OR MORE
 				
-		String strOut= new String();
+		String strOut;
 		analyse.getDayInfo().put("PFlag1",TypeP);
 		analyse.getDayInfo().put("PFlag2",0);
 		//NOTE PFlag2 == 3 for Holy Week Services!

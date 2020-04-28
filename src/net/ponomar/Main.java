@@ -361,7 +361,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 		if (e.getEventType().toString().equals("ACTIVATED")) {
 			String cmd = e.getDescription();
 			String[] parts = cmd.split("#");
-			if (parts[0].indexOf("reading") != -1) {
+			if (parts[0].contains("reading")) {
 				try {
 					bible.update(parts[1], parts[2]);
 					bible.setVisible(true);
@@ -372,7 +372,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 				}
 			} else {
 				parts = cmd.split("\\?");
-				if (parts[0].indexOf("goDoSaint") != -1) {
+				if (parts[0].contains("goDoSaint")) {
 
 					String[] parts2 = parts[1].split("=");
 					// System.out.println(parts2[1]);

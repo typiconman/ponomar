@@ -531,9 +531,8 @@ public class RuleBasedNumber implements DocHandler
 	private String[] obtainValues(String in)
 	{
 		//THIS FUNCTION TAKES A STRING SEPARATED BY '/,' AND RETURNS A STRING ARRAY.
-		String[] rough=in.split("/,");
-		//System.out.println(rough[0] + " " +rough[1]);
-		return rough;
+        //System.out.println(rough[0] + " " +rough[1]);
+		return in.split("/,");
 	}
 
        public static void main(String[] argz) {

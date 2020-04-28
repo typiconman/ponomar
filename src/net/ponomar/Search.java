@@ -1,19 +1,15 @@
 package net.ponomar;
 
-import javax.swing.*;
-import java.beans.*;
-import java.awt.*;
-import java.util.*;
-import java.io.*;
-import javax.swing.event.*;
-
 import net.ponomar.parsing.Commemoration;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
-import java.awt.event.*;
-import java.beans.*;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
 
 
 /***********************************************************************
@@ -131,7 +127,7 @@ public class Search extends JFrame implements ActionListener
             File[] listOfFiles = folder.listFiles();
             System.out.println(listOfFiles.length);
 
-            String found ="CId\tEnglish\tFrench\tRussian\tChurch Slavonic\tTraditional Chinese\tSimplified Chinese\tPolytonic Greek\tMonotonic Greek<BR>";
+            StringBuilder found = new StringBuilder("CId\tEnglish\tFrench\tRussian\tChurch Slavonic\tTraditional Chinese\tSimplified Chinese\tPolytonic Greek\tMonotonic Greek<BR>");
             Commemoration test=new Commemoration();
             int count=0;
             for (File file : listOfFiles) {
@@ -141,44 +137,44 @@ public class Search extends JFrame implements ActionListener
                         test =new Commemoration(file.getName().substring(0, file.getName().length()-4),file.getName().substring(0, file.getName().length()-4),Analyse.getDayInfo());
                         String nameF=test.getGrammar("Nominative").toString();
                         if (nameF.contains(search)){
-                            found+=file.getName().subSequence(0, file.getName().length()-4)+"\t"+nameF+"\t";
+                            found.append(file.getName().subSequence(0, file.getName().length() - 4)).append("\t").append(nameF).append("\t");
                             count+=1;
                             if (new File(Constants.LANGUAGES_PATH + "/fr/" + LIVES_PATH + file.getName()).exists()){
-                                found+="Exists;\t";
+                                found.append("Exists;\t");
                             }else{
-                                found+="N/A;\t";
+                                found.append("N/A;\t");
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/cu/" + LIVES_PATH + file.getName()).exists()){
-                                found+="Exists;\t";
+                                found.append("Exists;\t");
                             }else{
-                                found+="N/A;\t";
+                                found.append("N/A;\t");
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/cu/ru/" + LIVES_PATH + file.getName()).exists()){
-                                found+="Exists;\t";
+                                found.append("Exists;\t");
                             }else{
-                                found+="N/A;\t";
+                                found.append("N/A;\t");
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/zh/Hant/" + LIVES_PATH + file.getName()).exists()){
-                                found+="Exists;\t";
+                                found.append("Exists;\t");
                             }else{
-                                found+="N/A;\t";
+                                found.append("N/A;\t");
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/zh/Hans/" + LIVES_PATH + file.getName()).exists()){
-                                found+="Exists;\t";
+                                found.append("Exists;\t");
                             }else{
-                                found+="N/A;\t";
+                                found.append("N/A;\t");
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/el/" + LIVES_PATH + file.getName()).exists()){
-                                found+="Exists;\t";
+                                found.append("Exists;\t");
                             }else{
-                                found+="N/A;\t";
+                                found.append("N/A;\t");
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/el/mono/" + LIVES_PATH + file.getName()).exists()){
-                                found+="Exists;\t";
+                                found.append("Exists;\t");
                             }else{
-                                found+="N/A;\t";
+                                found.append("N/A;\t");
                             }
-                            found+="<BR>";
+                            found.append("<BR>");
                         }
 
                     }

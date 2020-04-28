@@ -41,7 +41,7 @@ public class LanguagePack implements DocHandler {
 												// INTERFACE LANGUAGE.
 	private boolean readPhrases = false; // DETERMINE WHETHER TO READ OR NOT TO READ THE GIVEN PHRASES (THIS MUST BE
 											// ADDED TO ALL THE READERS).
-	private StringOp analyse = new StringOp();
+	private final StringOp analyse = new StringOp();
 
 	public LanguagePack(OrderedHashtable dayInfo) {
 		setPhrases(new OrderedHashtable());

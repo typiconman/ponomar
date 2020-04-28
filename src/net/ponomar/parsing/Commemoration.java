@@ -1,20 +1,13 @@
 package net.ponomar.parsing;
 
-import javax.swing.*;
-import java.beans.*;
-import java.awt.*;
 import java.util.*;
 import java.io.*;
-import javax.swing.event.*;
 
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
-
-import java.awt.event.*;
-import java.beans.*;
 
 /***********************************************************************
 THIS MODULE READS XML FILES THAT CONTAIN THAT ARE OF THE <COMMEMORATION> TYPE 
@@ -201,7 +194,7 @@ public class Commemoration implements DocHandler {
                 readings.put(type, vect);
             } else {
                 // CREATE A NEW TYPE WITH A COLLECTION INCLUDING THIS READING
-                Vector vect = new Vector();
+                Vector<String> vect = new Vector<>();
                 vect.add(reading);
                 readings.put(type, vect);
             }
@@ -433,8 +426,8 @@ public class Commemoration implements DocHandler {
     public OrderedHashtable getDisplayIcons(){
 
         //Ordered List of the Icons
-        Vector IconImages = new Vector();
-        Vector IconNames=new Vector();
+        Vector<String> IconImages = new Vector<>();
+        Vector<String> IconNames=new Vector<String>();
 
 
 
@@ -583,19 +576,13 @@ public class Commemoration implements DocHandler {
     }
     public boolean checkLife(){
         //Checks whether the given commemoration has an associated life or not
-        
-        if (information.get("LIFE")!= null){
-            return true;
-        }
-        return false;
+
+        return information.get("LIFE") != null;
     }
     public boolean checkIcon(){
         //Checks whether the given commemoration has any icons assoicated with it
         OrderedHashtable checkIcon=getDisplayIcons();
-        if (checkIcon.size()>0){
-            return true;
-        }
-        return false;
+        return checkIcon.size() > 0;
     }
     public boolean checkPropers(){
         //Checks whether there are any associated propers for the given commemoration that could be display.

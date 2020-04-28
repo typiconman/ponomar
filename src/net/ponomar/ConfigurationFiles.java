@@ -10,6 +10,7 @@ import net.ponomar.utility.OrderedHashtable;
 import java.beans.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.io.*;
 
@@ -51,7 +52,7 @@ public class ConfigurationFiles implements DocHandler
 		try
 		{
 			//FileReader frf = new FileReader("Constants.CONFIG_FILE)");
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.CONFIG_FILE), "UTF8"));
+			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.CONFIG_FILE), StandardCharsets.UTF_8));
 			//OutputStreamWriter out = new OutputStreamWriter(new ByteArrayOutputStream());
 			//System.out.println(out.getEncoding());
 
@@ -67,23 +68,23 @@ public class ConfigurationFiles implements DocHandler
 	
 	public static void WriteFile()
 	{
-		String output;
+		StringBuilder output;
 				
 		try
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.CONFIG_FILE),"UTF8"));
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.CONFIG_FILE), StandardCharsets.UTF_8));
 			//BufferedWriter out = new BufferedWriter(new FileWriter("Constants.CONFIG_FILE)"));//,"UT8");
 			out.write("<CONFIGURATION>");
 			out.newLine();
-			output="<DEFAULT ";
+			output = new StringBuilder("<DEFAULT ");
 			for(Enumeration e=getDefaults().keys(); e.hasMoreElements();)
 			{
 				String key = (String) e.nextElement();
 				String value=(String) getDefaults().get(key);
-				output+=key + " = \"" + value + "\" ";
+				output.append(key).append(" = \"").append(value).append("\" ");
 			}
-			output+=" />";
-			out.write(output);
+			output.append(" />");
+			out.write(output.toString());
 			out.newLine();
 			out.write("</CONFIGURATION>");
 			out.close();

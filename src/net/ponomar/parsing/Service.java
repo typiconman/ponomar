@@ -594,8 +594,7 @@ public class Service implements DocHandler
 			
 			try
 			{
-				String fileName=TIMES;
-				BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(),fileName)), StandardCharsets.UTF_8));
+				BufferedReader frf1 = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(), TIMES)), StandardCharsets.UTF_8));
 				QDParser.parse(this, frf1);
 			}
 			catch (Exception e)

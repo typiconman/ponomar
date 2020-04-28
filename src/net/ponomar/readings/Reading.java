@@ -1,7 +1,5 @@
 package net.ponomar.readings;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
 import java.util.Vector;
 
 import net.ponomar.astronomy.Paschalion;
@@ -121,19 +119,16 @@ public abstract class Reading implements DocHandler {
         //Special case and consider it differently
 
 
-        Vector type = new Vector();
+        Vector<String> type = new Vector<String>();
 
 
-        for (int j = 0; j < Readings.size(); j++) {
-            OrderedHashtable liturgy = (OrderedHashtable) Readings.get(j);
+        for (Object reading : Readings) {
+            OrderedHashtable liturgy = (OrderedHashtable) reading;
             OrderedHashtable stepE = (OrderedHashtable) liturgy.get(readingType);
-            if (stepE != null)
-            {
+            if (stepE != null) {
 
-            type.add(stepE.get("Reading").toString());
-            }
-            else
-            {
+                type.add(stepE.get("Reading").toString());
+            } else {
                 //type.add("");
             }
 

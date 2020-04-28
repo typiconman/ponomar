@@ -15,18 +15,18 @@ public final class ReadingUtility {
     static final String READINGS_KEY = "Readings";
 
 	public static void processMenaionPaschalReadings(OrderedHashtable[] menaionReadings, OrderedHashtable combinedReadings) {
-		for (int k = 0; k < menaionReadings.length; k++) {
-	        OrderedHashtable reading = (OrderedHashtable) menaionReadings[k].get(READINGS_KEY);
-	        OrderedHashtable readings = (OrderedHashtable) reading.get(READINGS_KEY);
-	        for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements();) {
-	            String element1 = e.nextElement().toString();
-	            if (combinedReadings.get(element1) != null) {
-	                combinedReadings.put(element1, combineWithExistingReading(combinedReadings, reading, readings, element1));
-	            } else {
-	                combinedReadings.put(element1, readingDoesNotExist(reading, readings, element1));
-	            }
-	        }
-	    }
+		for (OrderedHashtable menaionReading : menaionReadings) {
+			OrderedHashtable reading = (OrderedHashtable) menaionReading.get(READINGS_KEY);
+			OrderedHashtable readings = (OrderedHashtable) reading.get(READINGS_KEY);
+			for (Enumeration<String> e = readings.enumerateKeys(); e.hasMoreElements(); ) {
+				String element1 = e.nextElement().toString();
+				if (combinedReadings.get(element1) != null) {
+					combinedReadings.put(element1, combineWithExistingReading(combinedReadings, reading, readings, element1));
+				} else {
+					combinedReadings.put(element1, readingDoesNotExist(reading, readings, element1));
+				}
+			}
+		}
 	}
 	
 	private static OrderedHashtable combineWithExistingReading(OrderedHashtable combinedReadings, OrderedHashtable reading,

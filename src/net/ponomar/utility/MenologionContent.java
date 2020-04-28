@@ -95,7 +95,7 @@ public final class MenologionContent {
 				content.append(rSep);
 			}
 			String type1 = (String) phrases.getPhrases().get(element1.toLowerCase());
-			content.append("<B>" + type1 + "</B>" + colon);
+			content.append("<B>").append(type1).append("</B>").append(colon);
 			content.append(iterateOverReadings(shortForm, readings, tag, rSep));
 
 			// content.append(rSep);
@@ -110,8 +110,7 @@ public final class MenologionContent {
 
 		Vector<String> gospel = new Vector<>();
 
-		for (int j = 0; j < readings.size(); j++) {
-			OrderedHashtable liturgy = readings.get(j);
+		for (OrderedHashtable liturgy : readings) {
 			OrderedHashtable stepE = (OrderedHashtable) liturgy.get("apostol");
 			OrderedHashtable stepG = (OrderedHashtable) liturgy.get("gospel");
 
@@ -125,7 +124,6 @@ public final class MenologionContent {
 			} else {
 				gospel.add("");
 			}
-
 		}
 		OrderedHashtable readingsA = new OrderedHashtable();
 
@@ -162,8 +160,7 @@ public final class MenologionContent {
 	public static Vector<String> processMatins(Vector<OrderedHashtable> readings) {
 		Vector<String> matins2 = new Vector<>();
 
-		for (int j = 0; j < readings.size(); j++) {
-			OrderedHashtable matins = readings.get(j);
+		for (OrderedHashtable matins : readings) {
 			// System.out.println("In Main1, we have "+Readings.get(j));
 			OrderedHashtable stepE = (OrderedHashtable) matins.get("matins");
 			if (stepE == null) {
@@ -247,10 +244,6 @@ public final class MenologionContent {
 			}
 		}
 		return format;
-	}
-
-	public String getrSep() {
-		return rSep;
 	}
 
 	public void setrSep(String rSep) {

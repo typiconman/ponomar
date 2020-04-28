@@ -96,10 +96,10 @@ public class ClassifyMatins extends ClassifyReadings {
         }
 
         if (dow == 0 && dRank <= 6){
-            for (int k = 0; k < menaionV.size(); k++) {
-                suppressedV.add(menaionV.get(k));
-                suppressedR.add(menaionV.get(k));
-                suppressedT.add(menaionV.get(k));
+            for (Object o : menaionV) {
+                suppressedV.add(o);
+                suppressedR.add(o);
+                suppressedT.add(o);
             }
             menaionV.clear();
             menaionV.clear();

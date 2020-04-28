@@ -129,9 +129,9 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
 
                 }
 */
-                for(int i=0;i<timeZone.length;i++){
-                    timeZoneBox.addItem(timeZone[i]);
-                }
+        for (String s : timeZone) {
+            timeZoneBox.addItem(s);
+        }
                 timeZoneBox.setSelectedItem(ConfigurationFiles.getDefaults().get("TimeZone").toString());
                 timeZoneBox.setEditable(false);
                 top.add(timeZoneBox,BorderLayout.CENTER);
@@ -292,7 +292,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
             else{
                 ConfigurationFiles.getDefaults().put("Longitude",longitude.getText());
             }
-            ConfigurationFiles.getDefaults().put("TimeZone",timeZoneBox.getSelectedItem().toString());
+            ConfigurationFiles.getDefaults().put("TimeZone", Objects.requireNonNull(timeZoneBox.getSelectedItem()).toString());
             
             String previous=ConfigurationFiles.getDefaults().get(CALENDAR).toString();
             if (jRadioButton1.getSelectedObjects()!=null){

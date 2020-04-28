@@ -58,7 +58,7 @@ public class ClassifyReadings implements DocHandler {
 	            previous.add(value);
 	            Information2.put(name, previous);
 	        } else {
-	            Vector vect = new Vector();
+	            Vector<String> vect = new Vector<String>();
 	            vect.add(value);
 	            Information2.put(name, vect);
 	        }

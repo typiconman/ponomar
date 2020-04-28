@@ -401,7 +401,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 		{
 			String cmd = e.getDescription();
 			String[] parts = cmd.split("=");
-			if (parts[0].indexOf("bible") != -1)
+			if (parts[0].contains("bible"))
 			{
 			String[] parts2=parts[1].split("#");
                             try
@@ -642,8 +642,6 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         Colon=(String)Phrases.Phrases.get("Colon");*/
         dayInfo.put("FontFaceM", "TimesNewRoman");
         dayInfo.put("FontSizeM", "14");
-        dayInfo.put("FontFaceM", "TimesNewRoman");
-        dayInfo.put("FontSizeM", "14");
         /*StringOp.dayInfo.put("ReadSep",RSep);
         dayInfo.put("Colon",Colon);
         Ideographic=(String)Phrases.Phrases.get("Ideographic");*/
@@ -651,7 +649,6 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
         //DoSaint1 test = new DoSaint1("134",dayInfo); //Forefeast of Christmas
         //System.out.println(Paramony.getService("/KONTAKION","1"));
-        return;
 
     }
 

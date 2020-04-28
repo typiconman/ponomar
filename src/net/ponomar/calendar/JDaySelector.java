@@ -676,7 +676,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 	{
 		JButton button = (JButton)e.getSource();
 		String buttonText = button.getText();
-		int day = new Integer(buttonText).intValue();
+		int day = new Integer(buttonText);
 		setDay(day);
 	}
 
@@ -743,11 +743,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 					g.setColor(days[7].getBackground());
 				}
 				g.fillRect(0, 0, getWidth(), getHeight());
-				if (isBorderPainted()) {
-					setContentAreaFilled(true);
-				} else {
-					setContentAreaFilled(false);
-				}
+				setContentAreaFilled(isBorderPainted());
 			}
 			super.paint(g);
 		}

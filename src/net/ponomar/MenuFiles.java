@@ -35,14 +35,14 @@ public class MenuFiles extends JMenu implements ItemListener, PropertyChangeList
 	static final String NEWLINE = "\n";
 	GospelSelector gospelSelection; // ALLOWS THE USER TO NOTE WHEN THE GOSPEL LECTIONARY FORMAT IS CHANGED
 	LanguageSelector languageSelection; // DITTO FOR LANGUAGES
-	private LanguagePack text;// =new LanguagePack();
-	private String[] saintNames;// =Text.obtainValues((String)Text.Phrases.get("SMenu"));
-	private String optionsNames;// =(String)Text.Phrases.get("Options");
-	private String[] fileNames;// =Text.obtainValues((String)Text.Phrases.get("File"));
-	private String[] serviceNames;// =Text.obtainValues((String)Text.Phrases.get("Services"));
-	private String[] bibleName;// =Text.obtainValues((String)Text.Phrases.get("Bible"));
-	private String[] helpNames;// =Text.obtainValues((String)Text.Phrases.get("Help"));
-	private StringOp analyse = new StringOp();
+	private final LanguagePack text;// =new LanguagePack();
+	private final String[] saintNames;// =Text.obtainValues((String)Text.Phrases.get("SMenu"));
+	private final String optionsNames;// =(String)Text.Phrases.get("Options");
+	private final String[] fileNames;// =Text.obtainValues((String)Text.Phrases.get("File"));
+	private final String[] serviceNames;// =Text.obtainValues((String)Text.Phrases.get("Services"));
+	private final String[] bibleName;// =Text.obtainValues((String)Text.Phrases.get("Bible"));
+	private final String[] helpNames;// =Text.obtainValues((String)Text.Phrases.get("Help"));
+	private final StringOp analyse = new StringOp();
 
 	public MenuFiles(OrderedHashtable dayInfo) {
 		analyse.setDayInfo(dayInfo);

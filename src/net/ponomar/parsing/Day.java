@@ -186,8 +186,7 @@ public class Day implements DocHandler {
         if (dayRank == -100) {
 
 
-            for (int i = 0; i < orderedCommemorations.size(); i++) {
-                Commemoration currentC = orderedCommemorations.get(i);
+            for (Commemoration currentC : orderedCommemorations) {
                 dayRank = Math.max(currentC.getRank(), dayRank);
             }
         }
@@ -205,30 +204,28 @@ public class Day implements DocHandler {
     public String getCommsHyper() {
         //Returns a hyperlinked listing of all the commemorations for a given day.
         String cSep=(String)text.getPhrases().get("CommSep");
-        String output = "";
-        for (int i = 0; i < orderedCommemorations.size(); i++) {
-            Commemoration cCom = orderedCommemorations.get(i);
-
+        StringBuilder output = new StringBuilder();
+        for (Commemoration cCom : orderedCommemorations) {
             String sId = cCom.getSId();
             String cId = cCom.getCId();
             String nameF = cCom.getName();
-            
-            if (output.length()>0 && nameF.length()>0){
-                output+=cSep;
+
+            if (output.length() > 0 && nameF.length() > 0) {
+                output.append(cSep);
             }
-            
+
             //System.out.println(NameF);
-            if (cCom.checkLife() || cCom.checkPropers()){
-                output += "<A Href='goDoSaint?id=" + sId + "," + cId + "'>";
+            if (cCom.checkLife() || cCom.checkPropers()) {
+                output.append("<A Href='goDoSaint?id=").append(sId).append(",").append(cId).append("'>");
             }
             int rank = cCom.getRank();
-            String rank0Format=(String)text.getPhrases().get("Rank0");
-            String rank1Format=(String)text.getPhrases().get("Rank1");
-            String rank2Format=(String)text.getPhrases().get("Rank2");
-            String rank3Format=(String)text.getPhrases().get("Rank3");
-            String rank4Format=(String)text.getPhrases().get("Rank4");
-            String rank5Format=(String)text.getPhrases().get("Rank5");
-            String rank6Format=(String)text.getPhrases().get("Rank6");
+            String rank0Format = (String) text.getPhrases().get("Rank0");
+            String rank1Format = (String) text.getPhrases().get("Rank1");
+            String rank2Format = (String) text.getPhrases().get("Rank2");
+            String rank3Format = (String) text.getPhrases().get("Rank3");
+            String rank4Format = (String) text.getPhrases().get("Rank4");
+            String rank5Format = (String) text.getPhrases().get("Rank5");
+            String rank6Format = (String) text.getPhrases().get("Rank6");
 
             switch (rank) {
                 case 8:
@@ -236,7 +233,7 @@ public class Day implements DocHandler {
                 case 6:
                     //output += "<FONT Color='red'><Font face='Ponomar Unicode TT' size='+1'>\uA698</Font><B>\u00A0" + table.get("Name") + "</B></FONT>";//A698
                     //output += "<FONT Color='red'><Font face='Ponomar Unicode TT' size='+1'>\uD83D\uDD40</Font><B>\u00A0" + NameF + "</B></FONT>";
-                    output +=rank6Format.replace("^NF", nameF);
+                    output.append(rank6Format.replace("^NF", nameF));
                     //output += "</body><body style=\"font-family:Ponomar Unicode TT;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt;color:red;font-style:bold\">\u00A0" + table.get("Name") + "</body><body style=\"font-family:"+DisplayFont+";font-size:"+DisplaySize+"pt\">";
                     //output += "<style style=\"font-family:Ponomar Unicode TT;font-size:"+Integer.parseInt(DisplaySize)+2+"pt;color:red\">\uA698</style>\u00A0<style style=\"color:red\">" + table.get("Name") + "</style>";
                     //output+="<B><rank style=\"font-face:Ponomar Unicode TT;size=18;color:red\">\uA698</rank><B>\u00A0"+table.get("Name");
@@ -244,52 +241,48 @@ public class Day implements DocHandler {
                     break;
                 case 5:
                     //output += "<FONT Color='red'><Font face='Ponomar Unicode TT' size='+1'>\uD83D\uDD41</Font>\u00A0" + NameF + "</FONT>";
-                    output+=rank5Format.replace("^NF",nameF);
+                    output.append(rank5Format.replace("^NF", nameF));
                     break;
                 case 4:
                     //output += "<Font Color='red' face='Ponomar Unicode TT' size='+1'>\uD83D\uDD42</Font><B>\u00A0" + NameF + "</B>";
-                    output+=rank4Format.replace("^NF",nameF);
+                    output.append(rank4Format.replace("^NF", nameF));
                     break;
 
                 case 3:
                     //output += "<Font Color='red' face='Ponomar Unicode TT' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
-                    output+=rank3Format.replace("^NF",nameF);
+                    output.append(rank3Format.replace("^NF", nameF));
                     break;
                 case 2:
                     //output += "<Font face='Ponomar Unicode TT' size='+1'>\uD83D\uDD43</Font><I>\u00A0" + NameF + "</I>";
-                    output+=rank2Format.replace("^NF",nameF);
+                    output.append(rank2Format.replace("^NF", nameF));
                     break;
                 case 1:
-                    output+=rank1Format.replace("^NF",nameF);
+                    output.append(rank1Format.replace("^NF", nameF));
                     break;
                 default:
                     //output += NameF;
-                    output+=rank0Format.replace("^NF",nameF);
-                //Note: \u00A0 is a nonbreaking space.
-                }
-             if (cCom.checkLife()){
-            output += "</A>";
-             }
-            if (tone != -1){
-                int cIdn=Integer.parseInt(cId);
-                //System.out.println(cIdn);
-                if (cIdn>=9000 && cIdn<9900){
-                if(tone==0)
-				{
-					tone=8;
-				}
-
-
-
-                                String toneFormat = new String();
-                                toneFormat=mainNames[4];
-                                toneFormat=cSep+toneFormat.replace("TT",toneNumbers[tone]);
-                                output+=toneFormat;
-                
+                    output.append(rank0Format.replace("^NF", nameF));
+                    //Note: \u00A0 is a nonbreaking space.
             }
+            if (cCom.checkLife()) {
+                output.append("</A>");
+            }
+            if (tone != -1) {
+                int cIdn = Integer.parseInt(cId);
+                //System.out.println(cIdn);
+                if (cIdn >= 9000 && cIdn < 9900) {
+                    if (tone == 0) {
+                        tone = 8;
+                    }
+
+                    String toneFormat =  mainNames[4];
+                    toneFormat = cSep + toneFormat.replace("TT", toneNumbers[tone]);
+                    output.append(toneFormat);
+
+                }
             }
         }
-        return output;
+        return output.toString();
     }
 
     public OrderedHashtable getIcon() {
@@ -297,40 +290,39 @@ public class Day implements DocHandler {
         Vector iconImages = new Vector();
         Vector iconNames=new Vector();
 
-        for (int i = 0; i < orderedCommemorations.size(); i++) {
-            Commemoration cCom = orderedCommemorations.get(i);
+        for (Commemoration cCom : orderedCommemorations) {
             String sId = cCom.getSId();
             String cId = cCom.getCId();
             String nameF = cCom.getGrammar("Short");
-            String[] iconSearch=text.obtainValues((String)text.getPhrases().get("IconSearch"));
-            
-            File fileNew=new File(helper.langFileFind(parameterValues.getDayInfo().get("LS").toString(), Constants.ICONS_RESOURCE_PATH + cId + "/0.jpg"));
-            int countSearch=0;
-            String languageString=parameterValues.getDayInfo().get("LS").toString();
-            
-            while (!(fileNew.exists()) && countSearch<iconSearch.length){
-                languageString=iconSearch[countSearch];
-                fileNew=new File(helper.langFileFind(iconSearch[countSearch], Constants.ICONS_RESOURCE_PATH + cId + "/0.jpg"));
-                countSearch+=1;               
+            String[] iconSearch = text.obtainValues((String) text.getPhrases().get("IconSearch"));
+
+            File fileNew = new File(helper.langFileFind(parameterValues.getDayInfo().get("LS").toString(), Constants.ICONS_RESOURCE_PATH + cId + "/0.jpg"));
+            int countSearch = 0;
+            String languageString = parameterValues.getDayInfo().get("LS").toString();
+
+            while (!(fileNew.exists()) && countSearch < iconSearch.length) {
+                languageString = iconSearch[countSearch];
+                fileNew = new File(helper.langFileFind(iconSearch[countSearch], Constants.ICONS_RESOURCE_PATH + cId + "/0.jpg"));
+                countSearch += 1;
             }
 
             //The above code will add the Greek Icons and this will allow me to do what I wish to do!!!
 
-            int counterI=0;
-            
+            int counterI = 0;
+
             //System.out.println(fileNew.getAbsolutePath());
-            while (fileNew.exists()){
-            
+            while (fileNew.exists()) {
+
                 iconImages.add(fileNew.toString());
                 iconNames.add(nameF);
-                counterI+=1;
-                fileNew=new File(helper.langFileFind(languageString, Constants.ICONS_RESOURCE_PATH + cId + "/" +counterI+".jpg"));
+                counterI += 1;
+                fileNew = new File(helper.langFileFind(languageString, Constants.ICONS_RESOURCE_PATH + cId + "/" + counterI + ".jpg"));
             }
-        File file = new File(Constants.ICONS_LOCATION + cId + ".jpg");
-        if (file.exists()) {
-            iconImages.add(file.toString());
-            iconNames.add(nameF);
-        }
+            File file = new File(Constants.ICONS_LOCATION + cId + ".jpg");
+            if (file.exists()) {
+                iconImages.add(file.toString());
+                iconNames.add(nameF);
+            }
         }
         OrderedHashtable finalI = new OrderedHashtable();
         finalI.put("Images",iconImages);
@@ -346,9 +338,7 @@ public class Day implements DocHandler {
             OrderedHashtable stuff = (OrderedHashtable) serviceInfo.get(node);
 
             if (stuff.containsKey(type)) {
-                OrderedHashtable stuff1 = (OrderedHashtable) stuff.get(type);
-
-                return stuff1;
+                return (OrderedHashtable) stuff.get(type);
             } else {
                 System.out.println(commNames[0] + node + commNames[1] + type);
                 return new OrderedHashtable();

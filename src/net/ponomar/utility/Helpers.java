@@ -1,15 +1,11 @@
 package net.ponomar.utility;
 
 import javax.swing.*;
-import java.beans.*;
 import java.awt.*;
 import java.util.*;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
-import javax.swing.event.*;
-import java.awt.event.*;
-import java.beans.*;
 import javax.swing.filechooser.FileFilter;
 
 import net.ponomar.internationalization.LanguagePack;
@@ -235,9 +231,9 @@ public class Helpers
                copyright=copyright.replace("^AA",authorList);
                return copyright;
         }
-        public Hashtable deepCopy(Hashtable original){
+        public Hashtable<String, String> deepCopy(Hashtable original){
             //Currently does not work.
-            Hashtable copy = new Hashtable();
+            Hashtable<String, String> copy = new Hashtable<>();
             for (Enumeration e = original.keys(); e.hasMoreElements(); )
 		{
 			String type = e.nextElement().toString();
@@ -255,8 +251,7 @@ class JavaFileFilter extends FileFilter
 	public boolean accept(File file)
 	{
 		if(file.getName().endsWith(".html"))  return true;
-		if(file.isDirectory()) return true;
-		return false;
+		return file.isDirectory();
 	}
 	
 	public String getDescription()

@@ -106,7 +106,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 	* The remove() method of Iterator interface is optional in jdk1.3 and hence
 	* not implemented.
 	*/
-	public Iterator iterateKeys() 
+	public Iterator<String> iterateKeys()
 	{
 		return new Enumerator();
 	}
@@ -154,7 +154,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
             OrderedHashtable cloned =new OrderedHashtable();
             OrderedHashtable current=this;
 
-            Enumeration keys=current.enumerateKeys();
+            Enumeration<String> keys=current.enumerateKeys();
             while(keys.hasMoreElements()){
                 String key=keys.nextElement().toString();
                 if (key.equals("Locale"))
@@ -319,7 +319,7 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 		if(m instanceof OrderedHashtable) 
 		{
 			OrderedHashtable c = (OrderedHashtable)m;
-			Iterator itr = c.iterateKeys();
+			Iterator<String> itr = c.iterateKeys();
 			while (itr.hasNext())
 			{
 				Object o = itr.next();
@@ -328,11 +328,9 @@ public class OrderedHashtable extends Hashtable implements Cloneable
 		}
 		else // the map is not ordered, so add at will
 		{
-			Iterator itr = m.entrySet().iterator();
 
-			while (itr.hasNext())
-			{
-				Map.Entry e = (Map.Entry) itr.next();
+			for (Object o : m.entrySet()) {
+				Map.Entry e = (Map.Entry) o;
 				// Optimize in case the Entry is one of our own.
 				put(e.getKey(), e.getValue());
 			}

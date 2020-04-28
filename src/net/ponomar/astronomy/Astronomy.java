@@ -159,8 +159,7 @@ public class Astronomy
 		double rightAscension  = atan2d( y, x );
 		double declination = atan2d( z, Math.sqrt( x * x + y * y ) );
 
-		double[] RA_dec = {rightAscension, declination};
-		return RA_dec;
+		return new double[]{rightAscension, declination};
 	}
 
 	// computeSunPosition:: Computes the Sun's ecliptic longitude and distance
@@ -196,8 +195,7 @@ public class Astronomy
 			trueSolarLongitude -= 360.0;    // Make it 0..360 degrees
 		}
 
-		double[] retval = {solarDistance, trueSolarLongitude};
-		return retval;
+		return new double[]{solarDistance, trueSolarLongitude};
 	}
 
 	// INTERNAL METHOD TO COMPUTE SUNRISE AND SUNSET
@@ -242,8 +240,7 @@ public class Astronomy
 
 		double sunriseHourUT = tsouth - t;
 		double sunsetHourUT  = tsouth + t;
-		double[] retval = {sunriseHourUT, sunsetHourUT};
-		return retval;
+		return new double[]{sunriseHourUT, sunsetHourUT};
 	}
         public double lunarlong(long day){
             //Computes the apparant lunar longitude based on the method in Meeus, pp. 337-343
@@ -260,12 +257,8 @@ public class Astronomy
             //Only the first four additive terms considered
             double additive=6288774*sind(Mprime)+1274027*E*sind(2*D-Mprime)+658314*sind(2*D)+213618*sind(2*Mprime);
             //Action of Venus, Jupiter, or flattening ignored.
-            double longitude=revolution(Lprime+additive/1000000);
 
-            //System.out.println("Lunar Long=" + longitude);
-
-
-            return longitude;
+			return revolution(Lprime+additive/1000000);
 
         }
         public double solarlong(long day){

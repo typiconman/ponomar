@@ -44,7 +44,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	private int defaultLocation;
         private String languageDefault;
         private String[] nameLanguages;
-        private StringOp analyse=new StringOp();
+        private final StringOp analyse=new StringOp();
 	
 
 	

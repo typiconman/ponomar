@@ -78,7 +78,7 @@ public class DivineLiturgy extends Reading {
                 previous.add(value);
                 information.put(name, previous);
             } else {
-                Vector vect = new Vector();
+                Vector<String> vect = new Vector<String>();
                 vect.add(value);
                 information.put(name, vect);
             }
@@ -322,7 +322,7 @@ public class DivineLiturgy extends Reading {
     }
 
     public String format(Vector vectV, Vector vectR, Vector vectT) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
         //AT THIS POINT, THE PENTECOSTARION READINGS WILL BE FORMATED SO THAT THEY ARE SEQUENTIAL BY THE WEEK,
         //ESPECIALLY IF THERE ARE ANY RETRACTIONS OR THE LIKE.
         /*try {
@@ -357,19 +357,19 @@ public class DivineLiturgy extends Reading {
             Enumeration e3 = vectV.elements();
             for (int k = 0; k < vectV.size(); k++) {
                 String reading = (String) vectV.get(k);
-                output += ShortForm.getHyperlink(reading);
+                output.append(ShortForm.getHyperlink(reading));
 
                 if ((Integer) vectR.get(k) == -2 ) {
                     if (vectV.size()>1){
                     int tag = (Integer) vectT.get(k);
-                    output += " (" + Week(vectT.get(k).toString()) + ")";
+                    output.append(" (").append(Week(vectT.get(k).toString())).append(")");
                     }
                 } else {
-                    output += vectT.get(k);
+                    output.append(vectT.get(k));
                 }
 
                 if (k < vectV.size() - 1) {
-                    output += getAnalyse().getDayInfo().get("ReadSep");		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
+                    output.append(getAnalyse().getDayInfo().get("ReadSep"));		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
                 }
             }
         } catch (Exception a) {
@@ -379,7 +379,7 @@ public class DivineLiturgy extends Reading {
             System.out.println(trial[0].toString());
 
         }
-        return output;
+        return output.toString();
     }
 
     private String Week(String dow) {

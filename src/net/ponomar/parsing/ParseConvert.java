@@ -110,7 +110,7 @@ public class ParseConvert implements DocHandler
 	}
 	public void parse(String fileNameIn, String fileNameOut) //throws IOException
 	{
-		output=new String();
+		output= "";
 		verse=0;
 		chapter=0;
 			

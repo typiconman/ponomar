@@ -48,8 +48,8 @@ import net.ponomar.utility.StringOp;
 
 public final class Sunrise
 {
-        private LanguagePack phrases;//=new LanguagePack();
-        private StringOp analyse=new StringOp();
+        private final LanguagePack phrases;//=new LanguagePack();
+        private final StringOp analyse=new StringOp();
         public Sunrise(OrderedHashtable dayInfo){
             analyse.setDayInfo(dayInfo);
             phrases=new LanguagePack(dayInfo);
@@ -187,10 +187,10 @@ public final class Sunrise
 
 			} else {
 				format = format.replace("HH",
-						String.format("%0" + (String) phrases.getPhrases().get("PadH") + "d", hour));// Integer.toString(hour));
+						String.format("%0" + phrases.getPhrases().get("PadH") + "d", hour));// Integer.toString(hour));
 				// Format=Format.replace("MM", Integer.toString(minute));
 				format = format.replace("MM",
-						String.format("%0" + (String) phrases.getPhrases().get("PadM") + "d", minute));
+						String.format("%0" + phrases.getPhrases().get("PadM") + "d", minute));
 			}
 			out[i] = format;
 		}

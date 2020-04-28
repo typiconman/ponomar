@@ -36,7 +36,7 @@ public final class Paschalion
 	// ON 1 MARCH, JULIAN CALENDAR, FOR A PARTICULAR LUNAR YEAR
 	// THERE ARE 19 YEARS IN THE METONIC CYCLE
 	// IN THIS CALCULATION, IT IS HOURS SINCE MIDNIGHT
-	private static final double FOUNDATION[] = new double[]
+	private static final double[] FOUNDATION = new double[]
 	{14.042016807, 25.462184874, 6.084033613, 17.966386555, 28.336134454, 9.210084034, 20.504201681, 1.420168067, 12.294117647, 23.168067227, 4.546218487, 15.042016807, 26.294117647, 7.630252101, 18.546218487, 29.420168067, 11.756302521, 26.210084034, 3.042016807};
 
 	// A mod OPERATOR
@@ -59,9 +59,7 @@ public final class Paschalion
 	{
 		double quotient = Math.floor(divisor / modulo);
 
-		double remainder = divisor - quotient * modulo;
-
-		return remainder;
+		return divisor - quotient * modulo;
 	}
 
 	// A METHOD TO OBTAIN THE DATE OF THE JULIAN PASCHA
@@ -410,14 +408,14 @@ public final class Paschalion
 		}
 
 		// A HASHTABLE WITH MANDATORY FAST DAYS IN THE YEAR
-		Hashtable mustFast = new Hashtable();
+		Hashtable<Long, String> mustFast = new Hashtable<>();
 
 		mustFast.put(new JDate(1, 5, year).getJulianDay(), "Eve of Theophany");
 		mustFast.put(new JDate(8, 29, year).getJulianDay(), "Beheading");
 		mustFast.put(new JDate(9, 14, year).getJulianDay(), "Exaltation");
 
 		// A HASHTABLE WITH MANDATORY FAST-FREE DAYS
-		Hashtable cantFast = new Hashtable();
+		Hashtable<Long, String> cantFast = new Hashtable<>();
 
 		cantFast.put(new JDate(1, 6, year).getJulianDay(), "Theophany");
 
@@ -532,14 +530,14 @@ public final class Paschalion
 	//	FIRST ENTRY: THE julian date of a feast
 	//	SECOND ENTRY: A STRING DESCRIBING THAT FEAST
 	// THROWS: ditto
-	public static Hashtable getFeasts(int year, OrderedHashtable dayInfo) throws IllegalArgumentException
+	public static Hashtable<Long, String> getFeasts(int year, OrderedHashtable dayInfo) throws IllegalArgumentException
 	{
 		if (year < 33)
 		{
 			throw( new IllegalArgumentException("Invalid year"));
 		}
 
-		Hashtable feasts = new Hashtable();
+		Hashtable<Long, String> feasts = new Hashtable<>();
 		LanguagePack Text=new LanguagePack(dayInfo);
 		String[] FeastNames=Text.obtainValues((String)Text.getPhrases().get("Feasts"));
 		// ADD ALL THE FIXED FEASTS TO OUR HASHTABLE

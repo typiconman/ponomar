@@ -59,7 +59,7 @@ protected static String join(String[] pieces, String sep)
 {
 	if(pieces.length == 0) return "";
 
-	StringBuffer buf = new StringBuffer();
+	StringBuilder buf = new StringBuilder();
 	buf.append(pieces[0]);
 	for(int i=1,n=pieces.length; i<n; i++)
 	{
@@ -193,7 +193,7 @@ public double eval(String expression) throws IllegalArgumentException
 	
 	i = expression.lastIndexOf("==");
 	int j = expression.lastIndexOf("!=");
-	n = i > j ? i : j;
+	n = Math.max(i, j);
 	if (n != -1)
 	{
 		// SPLIT AT THE OPERATOR
@@ -222,9 +222,9 @@ public double eval(String expression) throws IllegalArgumentException
 	int l = expression.lastIndexOf(">=");
 	
 	// DETERMINE THE LARGEST (CLOSEST TO END OF EXPRESSION) VALUE
-	n = i > j ? i : j;
-	n = n > k ? n : k;
-	n = n > l ? n : l; 	
+	n = Math.max(i, j);
+	n = Math.max(n, k);
+	n = Math.max(n, l);
 	
 	if (n != -1)
 	{
@@ -288,7 +288,7 @@ public double eval(String expression) throws IllegalArgumentException
 		}
 	}
 	// DETERMINE THE LARGEST (CLOSEST TO END OF EXPRESSION) VALUE
-	n = i > j ? i : j;
+	n = Math.max(i, j);
 	
 	if (n != -1)
 	{
@@ -317,8 +317,8 @@ public double eval(String expression) throws IllegalArgumentException
 	k = expression.lastIndexOf("%");
 	
 	// DETERMINE THE LARGEST (CLOSEST TO END OF EXPRESSION) VALUE
-	n = i > j ? i : j;
-	n = n > k ? n : k;
+	n = Math.max(i, j);
+	n = Math.max(n, k);
 	
 	if (n != -1)
 	{
@@ -353,7 +353,7 @@ public double eval(String expression) throws IllegalArgumentException
 	i = expression.indexOf("!");
 	j = expression.indexOf("-");
 	
-	n = i > j ? i : j;
+	n = Math.max(i, j);
 	
 	if (n != -1)
 	{
@@ -378,12 +378,12 @@ public double eval(String expression) throws IllegalArgumentException
 	// A BOOLEAN STATEMENT (TRUE or FALSE)
 	// OR A NUMBER
 
-	if (expression.indexOf("true") != -1)
+	if (expression.contains("true"))
 	{
 		result = bool2double(true);
 		return result; // <----------------- ADDED BY A. ANDREEV 8/1/07 N.S. TO FIX HANDLING OF !TRUE
 	}
-	else if (expression.indexOf("false") != -1)
+	else if (expression.contains("false"))
 	{
 		result = bool2double(false);
 		return result; // <----------------- ADDED BY A. ANDREEV 8/1/07 N.S. TO FIX HANDLING OF !TRUE
@@ -434,7 +434,7 @@ public boolean evalbool(String expression)
 private static double bool2double(boolean expression)
 {
 	double result = 1.0;
-	if (expression == false)
+	if (!expression)
 	{
 		result = 0.0;
 	}
@@ -450,8 +450,7 @@ public StringOp clone(){
     StringOp aped=new StringOp();
     //aped=this;
     //To implement cloning of the table here is required.
-    OrderedHashtable testing=this.dayInfo.clone();
-    aped.dayInfo=testing;//testing;
+	aped.dayInfo= this.dayInfo.clone();//testing;
     return aped;
 }
 // CAN BE USED TO TEST eval(String) AGAINST OUTPUT FROM KNOWN SOURCE, E.G. MATLAB

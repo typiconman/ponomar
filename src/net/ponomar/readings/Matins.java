@@ -66,7 +66,7 @@ public class Matins extends Reading {
                 previous.add(value);
                 information.put(name, previous);
             } else {
-                Vector vect = new Vector();
+                Vector<String> vect = new Vector<String>();
                 vect.add(value);
                 information.put(name, vect);
             }
