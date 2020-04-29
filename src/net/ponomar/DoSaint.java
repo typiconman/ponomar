@@ -21,8 +21,6 @@ import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
 /***********************************************************************
-THIS MODULE CREATES THE WINDOW TO DISPLAY THE SAINT INFORMATION.
-
 (C) 2007, 2008, 2012 YURI SHARDT. ALL RIGHTS RESERVED.
 Updated some parts to make it compatible with the changes in Ponomar, especially the language issues!
 
@@ -37,6 +35,14 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
 OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
  ***********************************************************************/
+
+/**
+ * 
+ * This module creates the window to display the saint information.
+ * 
+ * @author Yuri Shardt
+ * 
+ */
 public class DoSaint implements DocHandler, ActionListener, ItemListener, PropertyChangeListener, HyperlinkListener {
     //SOME QUICK NOTES FOR FURTHER IMPLEMENTATION:
     //THE DATE OR THE RELEVANT INFORMATION WILL HAVE TO BE GIVEN

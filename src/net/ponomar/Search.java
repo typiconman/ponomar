@@ -13,8 +13,6 @@ import java.io.File;
 
 
 /***********************************************************************
-THIS MODULE CREATES THE TEXT FOR THE SEARCHING FOR COMMEMORATIONS ACCROSS LANGUAGES/JURISDICTIONS
-
 (C) 2013 YURI SHARDT. ALL RIGHTS RESERVED.
 
 
@@ -29,6 +27,14 @@ THIS MODULE CREATES THE TEXT FOR THE SEARCHING FOR COMMEMORATIONS ACCROSS LANGUA
  OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
 ***********************************************************************/
+
+/**
+ * 
+ * This module creates the text for the searching for commemorations across languages and jurisdictions.
+ * 
+ * @author Yuri Shardt
+ * 
+ */
 public class Search extends JFrame implements ActionListener
 {
 	private static final String LIVES_PATH = "xml/lives/";

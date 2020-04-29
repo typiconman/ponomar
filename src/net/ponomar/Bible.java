@@ -21,29 +21,31 @@ import java.nio.charset.StandardCharsets;
 
 import javax.swing.BoxLayout;
 
-/****************************************************************************************
-Bible.java : A SCRIPTURE READER INTERFACE FOR THE PONOMAR PROJECT.
-THIS MODULE OUTPUTS, BROWSES, AND SEARCHES THE SCRIPTURAL TEXTS.
-IT ALSO PROVIDES TOOLS FOR COPYING, SAVING, AND PRINTING SCRIPTURE TEXTS AND FOR
-CROSS-REFERENCING TRANSLATIONS, VERSIONS, AND PATRISTIC COMMENTARY.
+/*
+ * Copyright 2007, 2008 Aleksandr Andreev.
+ * Copyright 2012 Yuri Shardt and Aleksandr Andreev.
+ * 
+ * Ponomar is free software; you can redistribute it and/or modify it under the
+ * terms of the GNU General Public License as published by the Free Software
+ * Foundation; either version 3 of the License, or (at your option) any later
+ * version.
+ * 
+ * While Ponomar is distributed in the hope that it will be useful, it comes
+ * with ABSOLUTELY NO WARRANTY, without even the implied warranties of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+ * Public License for details.
+ */
 
-Bible.java is part of the Ponomar program.
-Copyright 2007, 2008 Aleksandr Andreev.
-Copyright 2012 Yuri Shardt and Aleksandr Andreev.
-aleksandr.andreev@gmail.com
-
-Version 3.0: Changes in layout and capabilities.
-
-Ponomar is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 3
-of the License, or (at your option) any later version.
-
-While Ponomar is distributed in the hope that it will be useful,
-it comes with ABSOLUTELY NO WARRANTY, without even the implied warranties of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for details.
- ****************************************************************************************/
+/**
+ * 
+ * A scripture reader interface for the Ponomar project. This module outputs,
+ * browses, and searches the scriptural texts. It also provides tools for
+ * copying, saving, and printing scripture texts and for Cross-referencing
+ * translations, versions, and patristic commentary.
+ * @author Yuri Shardt and Aleksandr Andreev (aleksandr.andreev@gmail.com)
+ * @version 3.0: Changes in layout and capabilities.
+ * 
+ */
 public class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionListener {
 
 	private static final String BIBLE_V = "BibleV";

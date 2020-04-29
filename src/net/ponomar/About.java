@@ -10,8 +10,6 @@ import javax.swing.*;
 import java.awt.*;
 
 /********************************************************************
-THIS CLASS CREATES THE ABOUT BOX THAT APPEARS IN THE WINDOW.
-
 Copyright 2008 Yuri Shardt
 version 1.0: August 2008
 yuri (dot) shardt (at) gmail.com
@@ -28,6 +26,14 @@ yuri (dot) shardt (at) gmail.com
  THE SOFTWARE.
 
 **********************************************************************/
+
+/**
+ * 
+ * This class creates the about box that appears in the window.
+ * 
+ * @author Yuri Shardt
+ * 
+ */
 public class About extends JFrame
 {
 	private LanguagePack ponomar;//=new LanguagePack();

@@ -11,9 +11,6 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 
 /***************************************************************
-ConfigurationFiles.java :: MODULE THAT READS AND UPDATES THE CONFIGURATION
-FILES.
-
 ConfigurationFiles.java is part of the Ponomar project.
 Copyright 2008, 2013 Yuri Shardt
 version 1.0: August 2008
@@ -32,6 +29,14 @@ yuri.shardt (at) gmail.com
  THE SOFTWARE.
 **************************************************************/
 
+/**
+ * 
+ * Module that reads and updates the configuration files.
+ * 
+ * @author Yuri Shardt
+ * @version 2.0: January 2013
+ * 
+ */
 public class ConfigurationFiles implements DocHandler
 {
 	private static OrderedHashtable Defaults;		//STORES THE START-UP VALUES FOR PONOMAR

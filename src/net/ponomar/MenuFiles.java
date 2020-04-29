@@ -12,7 +12,6 @@ import java.awt.event.*;
 import java.beans.*;
 
 /************************************************************
- * THIS CREATES THE MENUS REQUIRED FOR THE PROGRAMME/INTERFACE
  * 
  * COPYRIGHT 2008, 2012 Yuri Shardt Version 1.0 August 2008 Version 2.0 December
  * 2012
@@ -30,6 +29,13 @@ import java.beans.*;
  * 
  **************************************************************/
 
+/**
+ * 
+ * This creates the menus required for the programme/interface
+ * 
+ * @author Yuri Shardt
+ * 
+ */
 public class MenuFiles extends JMenu implements ItemListener, PropertyChangeListener {
 	JTextArea output;
 	static final String NEWLINE = "\n";

@@ -13,12 +13,7 @@ import java.util.*;
 import java.awt.event.*;
 import java.beans.*;
 
-
-
 /***********************************************************************
-THIS MODULE ALLOWS THE USER TO CHANGE THE DEFAULTS ASSOCIATED WITH THE JAVA PROGRAMME
- * THIS MODULE IS STILL IN THE DEVELOPMENT PHASE.
-
 (C) 2013 YURI SHARDT. ALL RIGHTS RESERVED.
 
 
@@ -33,6 +28,15 @@ THIS MODULE ALLOWS THE USER TO CHANGE THE DEFAULTS ASSOCIATED WITH THE JAVA PROG
  OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
 ***********************************************************************/
+
+/**
+ * 
+ * This module allows the user to change the defaults associated with the java programme. 
+ * This module is still in the development phase.
+ * 
+ * @author Yuri Shardt
+ * 
+ */
 public class Options extends JFrame implements ActionListener, ItemListener, PropertyChangeListener
 {
 	private static final String GREGORIAN = "Gregorian";

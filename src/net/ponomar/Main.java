@@ -29,29 +29,32 @@ import net.ponomar.utility.MenologionContent;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
-/***********************************************************************
-Main.java :: MAIN MODULE FOR THE PONOMAR PROGRAM.
-THIS MODULE CONSTITUTES THE PRIMARY PONOMAR GUI AND CENTRE OF THE PROGRAM.
-TO START THE PROGRAM, INVOKE main(String[]) OF THIS CLASS.
-OUTPUTS RELEVANT INFORMATION FOR EACH DAY, WITH LINKS TO DETAILED INFO.
+/* * Copyright 2006, 2007, 2008, 2009, 2010, 2012 Aleksandr Andreev and Yuri
+ * Shardt.
+ * 
+ * Ponomar is free software; you can redistribute it and/or modify it under the
+ * terms of the GNU General Public License as published by the Free Software
+ * Foundation; either version 3 of the License, or (at your option) any later
+ * version.
+ * 
+ * While Ponomar is distributed in the hope that it will be useful, it comes
+ * with ABSOLUTELY NO WARRANTY, without even the implied warranties of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+ * Public License for details.
+ */
 
-Main.java is part of the Ponomar program.
-Copyright 2006, 2007, 2008, 2009, 2010, 2012 Aleksandr Andreev and Yuri Shardt.
-Corresponding e-mail aleksandr.andreev@gmail.com
-
-Ponomar is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 3
-of the License, or (at your option) any later version.
-
-While Ponomar is distributed in the hope that it will be useful,
-it comes with ABSOLUTELY NO WARRANTY, without even the implied warranties of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for details.
- ***********************************************************************/
+/**
+ * 
+ * Main module for the Ponomar program. This module constitutes the primary
+ * Ponomar gui and centre of the program. To start the program, invoke
+ * main(string[]) of this class. Outputs relevant information for each day, with
+ * links to detailed info.
+ * <p>
+ * 
+ * @author Aleksandr Andreev (aleksandr.andreev@gmail.com) and Yuri Shardt
+ * 
+ */
 public class Main extends JFrame implements PropertyChangeListener, HyperlinkListener, ActionListener {
-    // First, some relevant constants
-
     // Elements of the interface
     JDate today; 		// "TODAY" (I.E. THE DATE WE'RE WORKING WITH
     private JCalendar calendar; 	// THE CALENDAR OBJECT
