@@ -275,6 +275,9 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         setVisible(true);
 	}
 
+    /**
+     * Parse the bible.xml file to obtain all the necessary information
+     */
 	protected void parseBibleXML() {
         // PARSE THE BIBLE.XML FILE TO OBTAIN ALL THE NECESSARY INFORMATION
 		try {
@@ -607,7 +610,9 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
 		return currentChapter;
 	}
 
-    // updates the Scripture reading, setting a new reading
+	/**
+	 * Updates the Scripture reading, setting a new reading.
+	 */
     protected void update(String newBook, String newPassage) {
         // we will parse the passage
         // update the variables
@@ -823,9 +828,13 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         return newPassage;
     }
 
+    /**
+     * This function creates the hyperlink for Bible readings.
+     * <p>
+     * Created Y.S. 2008/12/11 n.s.
+     * @return A String containing the hyperlink
+     */
     public String getHyperlink(String reading) {
-        //THIS FUNCTION CREATES THE HYPERLINK FOR BIBLE READINGS
-        //CREATED Y.S. 2008/12/11 n.s.
        if (reading.length()<1)
        {
            return "";
@@ -849,6 +858,12 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         return output;
     }
 
+    /**
+     * This function creates the hyperlink for Bible readings.
+     * <p>
+     * Created Y.S. 2008/12/11 n.s.
+     * @param redStuff  Boolean that determines whether or not any of the read comments in the bible readings are retained!
+     */
     public String[] parseReadings(String newBook, String newPassage, boolean redStuff) {
         //redStuff IS A BOOLEAN THAT DETERMINES WHETHER OR NOT ANY OF THE READ COMMENTS IN THE BIBLE READINGS ARE RETAINED!
         //THIS INCLUDES COMMENTS, (VERSE NUMBERS), CHAPTER NUMBERS,...
@@ -994,6 +1009,12 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         return output1;
     }
 
+	/**
+	 * Only the complete reading needs to be sent for the composite reading;
+	 * otherwise the book of the bible will suffice. Initialise to the default bible
+	 * for the given language. Added Y.S. To allow for multilingual and all bible
+	 * reading
+	 */
     public String getIntro(String id) {
         //ONLY THE COMPLETE READING NEEDS TO BE SENT FOR THE COMPOSITE READING; OTHERWISE THE BOOK OF THE BIBLE WILL SUFFICE
         //INITIALISE TO THE DEFAULT BIBLE FOR THE GIVEN LANGUAGE
