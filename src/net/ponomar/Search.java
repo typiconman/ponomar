@@ -51,7 +51,7 @@ public class Search extends JFrame implements ActionListener
         private JButton okay;
         private JTextPane results;
 		
-	public Search(LinkedHashMap dayInfo)
+	public Search(LinkedHashMap<String, Object> dayInfo)
 	{
 		//Assuming at present only English exists:
             Analyse.setDayInfo(dayInfo);
@@ -201,7 +201,7 @@ public class Search extends JFrame implements ActionListener
 
         public static void main(String[] argz)
         {
-        	LinkedHashMap dayinfo=new LinkedHashMap();
+        	LinkedHashMap<String, Object> dayinfo=new LinkedHashMap<String, Object>();
             dayinfo.put("LS","fr/");
             Search testing = new Search(dayinfo);
             

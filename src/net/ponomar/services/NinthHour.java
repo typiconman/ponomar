@@ -38,14 +38,14 @@ public class NinthHour extends LitService
 	private static String fileNameOut=fileNameIn+"Primes.html";
 	private PrimeSelector selectorP;//=new PrimeSelector();
 	
-	public NinthHour(JDate date, LinkedHashMap dayInfo)
+	public NinthHour(JDate date, LinkedHashMap<String, Object> dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             langText=new LanguagePack(dayInfo);
-            primesNames=langText.obtainValues((String)langText.getPhrases().get("None"));
-	languageNames=langText.obtainValues((String)langText.getPhrases().get(Constants.LANGUAGE_MENU));
-        fileNames=langText.obtainValues((String)langText.getPhrases().get("File"));
-	helpNames=langText.obtainValues((String)langText.getPhrases().get("Help"));
+            primesNames=langText.obtainValues(langText.getPhrases().get("None"));
+	languageNames=langText.obtainValues(langText.getPhrases().get(Constants.LANGUAGE_MENU));
+        fileNames=langText.obtainValues(langText.getPhrases().get("File"));
+	helpNames=langText.obtainValues(langText.getPhrases().get("Help"));
         selectorP=new PrimeSelector(dayInfo);
 		/*THIS IS THE PLAN FOR CREATING THE SERVICE
 		1) DETERMINE ON THE BASIS OF THE PENTECOSTARION (EASTER CYCLE) THE APPROPRIATE TONE AND ANY EASTER RELATED CHANGES TO THE SERVICE
@@ -75,7 +75,7 @@ public class NinthHour extends LitService
 			if(strOut.equals("No Service Today"))
 			{
 				Object[] options = {languageNames[3]};
-				JOptionPane.showOptionDialog(null, primesNames[0],(String)langText.getPhrases().get("0") + (String)langText.getPhrases().get(Constants.COLON)+ primesNames[1], JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+				JOptionPane.showOptionDialog(null, primesNames[0], langText.getPhrases().get("0") + langText.getPhrases().get(Constants.COLON) + primesNames[1], JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 			}
 			else
 			{

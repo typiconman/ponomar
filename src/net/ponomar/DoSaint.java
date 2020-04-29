@@ -73,7 +73,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     private String name = "";
     private String copyright = ""; //Any additional information about the life.
     private LanguagePack text; //= new LanguagePack();
-    private LinkedHashMap podobni;
+    private LinkedHashMap<String, String> podobni;
     
     
     //private static String fileNameIn = Constants.SERVICES_PATH + "PRIMES1/";
@@ -101,18 +101,18 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     private String name2;
     private StringOp analyse=new StringOp();
 
-    public DoSaint(Commemoration saintInfo, LinkedHashMap dayInfo) {
+    public DoSaint(Commemoration saintInfo, LinkedHashMap<String, Object> dayInfo) {
         //Get the Podobni
         analyse.setDayInfo(dayInfo);
         text = new LanguagePack(dayInfo);
         //PrimesNames = Text.obtainValues((String) Text.Phrases.get("Primes"));
-    languageNames = text.obtainValues((String) text.getPhrases().get(Constants.LANGUAGE_MENU));
+    languageNames = text.obtainValues(text.getPhrases().get(Constants.LANGUAGE_MENU));
 
-    fileNames = text.obtainValues((String) text.getPhrases().get("File"));
-    helpNames = text.obtainValues((String) text.getPhrases().get("Help"));
+    fileNames = text.obtainValues(text.getPhrases().get("File"));
+    helpNames = text.obtainValues(text.getPhrases().get("Help"));
     helper=new Helpers(analyse.getDayInfo());
 
-        podobni = new LinkedHashMap();
+        podobni = new LinkedHashMap<String, String>();
         try {
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),PODOBNI)), StandardCharsets.UTF_8));
             QDParser.parse(this, frf);
@@ -136,7 +136,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         name2=saintInfo2.getGrammar("Short");
         life=saintInfo2.getLife();
         copyright=saintInfo2.getLifeCopyright();
-        LinkedHashMap troparInfo=(LinkedHashMap)saintInfo2.getService("/LITURGY/TROPARION","1");
+        LinkedHashMap troparInfo= saintInfo2.getService("/LITURGY/TROPARION","1");
          if (troparInfo !=null){
         tropar=troparInfo.get("text").toString();
         troparT=troparInfo.get("Tone").toString();
@@ -147,7 +147,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             tropar=null;
         }
 
-         LinkedHashMap troparInfo2=(LinkedHashMap)saintInfo2.getService("/LITURGY/TROPARION","2");
+         LinkedHashMap troparInfo2= saintInfo2.getService("/LITURGY/TROPARION","2");
         if (troparInfo2 !=null){
         tropar2=troparInfo2.get("text").toString();
         troparT2=troparInfo2.get("Tone").toString();
@@ -159,7 +159,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         }
          
 
-        LinkedHashMap kontakionInfo=(LinkedHashMap)saintInfo2.getService("/LITURGY/KONTAKION","1");
+        LinkedHashMap kontakionInfo= saintInfo2.getService("/LITURGY/KONTAKION","1");
         if (kontakionInfo !=null){
         kondak=kontakionInfo.get("text").toString();
         kondakT=kontakionInfo.get("Tone").toString();
@@ -170,7 +170,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             kondak=null;
          }
 
-        LinkedHashMap kontakionInfo2=(LinkedHashMap)saintInfo2.getService("/LITURGY/KONTAKION","2");
+        LinkedHashMap kontakionInfo2= saintInfo2.getService("/LITURGY/KONTAKION","2");
         if (kontakionInfo2 !=null){
         kondak2=kontakionInfo2.get("text").toString();
         kondakT2=kontakionInfo2.get("Tone").toString();
@@ -183,16 +183,16 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
 
         text = new LanguagePack(analyse.getDayInfo());
-        String[] toneNumbers = text.obtainValues((String) text.getPhrases().get("Tones"));
-        String[] mainNames = text.obtainValues((String) text.getPhrases().get("Main"));
-        String[] saintInfo = text.obtainValues((String) text.getPhrases().get("LivesW"));
+        String[] toneNumbers = text.obtainValues(text.getPhrases().get("Tones"));
+        String[] mainNames = text.obtainValues(text.getPhrases().get("Main"));
+        String[] saintInfo = text.obtainValues(text.getPhrases().get("LivesW"));
         String textOut = "";
         
         if (name.equals("")) {
             textOut = saintInfo[6];
         } else {
-            String displayFontM = (String) text.getPhrases().get(Constants.FONT_FACE_M);
-            String displaySizeM = (String) text.getPhrases().get(Constants.FONT_SIZE_M);
+            String displayFontM = text.getPhrases().get(Constants.FONT_FACE_M);
+            String displaySizeM = text.getPhrases().get(Constants.FONT_SIZE_M);
             Font value1 = (Font) UIManager.get("Menu.font");
             if (displaySizeM == null || displaySizeM.equals("")) {
                 displaySizeM = Integer.toString(value1.getSize());
@@ -208,8 +208,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             }
 
             //Get the language settings
-            String displayFont = (String) text.getPhrases().get("FontFaceL");
-            String displaySize = (String) text.getPhrases().get("FontSizeL");
+            String displayFont = text.getPhrases().get("FontFaceL");
+            String displaySize = text.getPhrases().get("FontSizeL");
             
             if (displaySize == null || displaySize.equals("")) {
                 displaySize = Integer.toString(value1.getSize());
@@ -330,7 +330,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         //Other information can go here!
         //String textOut=header+image+rest;
         
-        frames = new JFrame((String) text.getPhrases().get("0") + (String) text.getPhrases().get(Constants.COLON) + name2);
+        frames = new JFrame(text.getPhrases().get("0") + text.getPhrases().get(Constants.COLON) + name2);
         
         //frames.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel left=new JPanel();
@@ -377,14 +377,14 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         //frames.setContentPane(contentPane);
         
 
-        LinkedHashMap iconsM=(LinkedHashMap)saintInfo2.getDisplayIcons();
-        Vector imageList=(Vector)iconsM.get("Images");
-                Vector namesList=(Vector)iconsM.get("Names");
+        LinkedHashMap<String, Vector<String>> iconsM= saintInfo2.getDisplayIcons();
+        Vector<String> imageList= iconsM.get("Images");
+                Vector<String> namesList= iconsM.get("Names");
                 String[] iconImages=new String[imageList.size()];
                 String[] iconNames=new String[namesList.size()];
 
-                iconImages=(String[])imageList.toArray(new String[imageList.size()]);
-                iconNames=(String[])namesList.toArray(new String[namesList.size()]);
+                iconImages=imageList.toArray(new String[0]);
+                iconNames=namesList.toArray(new String[0]);
         System.out.println("Icon Length is: " + iconNames.length);
         IconDisplay icons=new IconDisplay(iconImages,iconNames,analyse.getDayInfo());
         left.add(new JPanel(),BorderLayout.NORTH);
@@ -642,7 +642,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     public static void main(String[] argz) {
 
 
-        LinkedHashMap dayInfo = new LinkedHashMap();
+        LinkedHashMap<String, String> dayInfo = new LinkedHashMap<>();
         dayInfo.put("LS", "0");
         /*setTitle((String)Phrases.Phrases.get("0"));
         RSep=(String)Phrases.Phrases.get("ReadSep");

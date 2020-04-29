@@ -54,11 +54,11 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
 	private LanguagePack text;//=new LanguagePack();
 	private String[] selectorNames;//=Text.obtainValues((String)Text.Phrases.get("GospelSelection"));
 	private StringOp analyse=new StringOp();
-	public GospelSelector(LinkedHashMap dayInfo)
+	public GospelSelector(LinkedHashMap<String, Object> dayInfo)
 	{
 	analyse.setDayInfo(dayInfo);
         text=new LanguagePack(dayInfo);
-         selectorNames=text.obtainValues((String)text.getPhrases().get("GospelSelection"));
+         selectorNames=text.obtainValues(text.getPhrases().get("GospelSelection"));
                 Font currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
            
 	}
@@ -66,7 +66,7 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
 	{
             
            
-            selectorNames=text.obtainValues((String)text.getPhrases().get("GospelSelection"));
+            selectorNames=text.obtainValues(text.getPhrases().get("GospelSelection"));
                 Font currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
             //DETERMINE THE DEFAULTS
 		String gospelDefault = (String) ConfigurationFiles.getDefaults().get(GOSPEL_SELECTOR);

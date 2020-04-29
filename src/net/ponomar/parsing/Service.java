@@ -64,10 +64,10 @@ public class Service implements DocHandler
         private Helpers findLanguage;
         private StringOp analyse=new StringOp();
 	//private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
-        public Service (LinkedHashMap dayInfo){
+        public Service (LinkedHashMap<String, Object> dayInfo){
             analyse.setDayInfo(dayInfo);
                 text=new LanguagePack(dayInfo);
-                serviceNames=text.obtainValues((String)text.getPhrases().get("ServiceRead"));
+                serviceNames=text.obtainValues(text.getPhrases().get("ServiceRead"));
         }
         public String startService(String fileName)
 	{
@@ -87,8 +87,8 @@ public class Service implements DocHandler
                                 else{
                                     Style=Style+"body {font-size:12pt}\n";
                                 }*/
-                String displayFont=(String)text.getPhrases().get("FontFaceL");
-                String displaySize=(String)text.getPhrases().get("FontSizeL");
+                String displayFont= text.getPhrases().get("FontFaceL");
+                String displaySize= text.getPhrases().get("FontSizeL");
                 
                 Font value1 = (Font)UIManager.get ("Menu.font");
                 if (displaySize == null || displaySize.equals(""))
@@ -380,7 +380,7 @@ public class Service implements DocHandler
                     //System.out.println(Info);
                     //System.out.println(parsedInfo[1]);
                     //GENERALISED THE VERSION TO ANYTHING LOCATED INSIDE THE SERVICE TAGS!!!
-                    LinkedHashMap royalHours=(LinkedHashMap)data.getService(info.substring(0,parsedInfo1),info.substring(parsedInfo1+1));
+                    LinkedHashMap royalHours= data.getService(info.substring(0,parsedInfo1),info.substring(parsedInfo1+1));
                     //System.out.println((OrderedHashtable)data.getService("/ROYALHOURS/VERSE","9P"));
                     //System.out.println(RoyalHours);
                     String headerRH="";

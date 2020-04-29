@@ -61,7 +61,7 @@ public abstract class Reading implements DocHandler {
 		
 	}
 	
-    protected LinkedHashMap getReadings(JDate today, String readingType) {
+    protected LinkedHashMap<String, Vector<String>> getReadings(JDate today, String readingType) {
         String filename = "";
         int lineNumber = 0;
 
@@ -117,8 +117,8 @@ public abstract class Reading implements DocHandler {
         LinkedHashMap temp = (LinkedHashMap) combinedReadings.get("LITURGY");
         //System.out.println("temp values (423)" + temp);
         Vector Readings = (Vector) temp.get(Constants.READINGS);
-        Vector Rank = (Vector) temp.get("Rank");
-        Vector Tag = (Vector) temp.get("Tag");
+        Vector<String> Rank = (Vector<String>) temp.get("Rank");
+        Vector<String> Tag = (Vector<String>) temp.get("Tag");
         //Special case and consider it differently
 
 
@@ -140,7 +140,7 @@ public abstract class Reading implements DocHandler {
 
 
         //output += RSep;
-        LinkedHashMap Final2 = new LinkedHashMap();
+        LinkedHashMap<String, Vector<String>> Final2 = new LinkedHashMap<String, Vector<String>>();
         Final2.put(Constants.READINGS, type);
         Final2.put("Rank", Rank);
         Final2.put("Tag", Tag);

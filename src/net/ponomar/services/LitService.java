@@ -139,7 +139,7 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
     
 	protected void serviceWindow(String textOut)
 	{
-		frames=new JFrame((String)langText.getPhrases().get("0") + (String)langText.getPhrases().get(Constants.COLON)+ primesNames[1]);
+		frames=new JFrame(langText.getPhrases().get("0") + langText.getPhrases().get(Constants.COLON) + primesNames[1]);
 		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		textOut=textOut.replace("</br>", "<BR>");

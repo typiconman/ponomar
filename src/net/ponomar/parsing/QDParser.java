@@ -23,9 +23,9 @@ import java.util.*;
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  **********************************************************/
 public class QDParser {
-	private static int popMode(Stack st) {
+	private static int popMode(Stack<Integer> st) {
 		if (!st.empty())
-			return (Integer) st.pop();
+			return st.pop();
 		else
 			return PRE;
 	}
@@ -35,7 +35,7 @@ public class QDParser {
 			DOCTYPE = 14, PRE = 15, CDATA = 16;
 
 	public static void parse(DocHandler doc, Reader r) throws Exception {
-		Stack st = new Stack();
+		Stack<Integer> st = new Stack<>();
 		int depth = 0;
 		int mode = PRE;
 		int c = 0;
@@ -46,8 +46,8 @@ public class QDParser {
 		String tagName = null;
 		String lvalue = null;
 		String rvalue = null;
-		Hashtable attrs = null;
-		st = new Stack();
+		Hashtable<String, String> attrs = null;
+		st = new Stack<>();
 		doc.startDocument();
 		int line = 1, col = 0;
 		boolean eol = false;
@@ -156,7 +156,7 @@ public class QDParser {
 					st.push(new Integer(mode));
 					mode = OPEN_TAG;
 					tagName = null;
-					attrs = new Hashtable();
+					attrs = new Hashtable<>();
 					sb.append((char) c);
 				}
 
@@ -203,7 +203,7 @@ public class QDParser {
 					return;
 				}
 				sb.setLength(0);
-				attrs = new Hashtable();
+				attrs = new Hashtable<>();
 				tagName = null;
 				mode = popMode(st);
 
@@ -218,7 +218,7 @@ public class QDParser {
 					depth++;
 					doc.startElement(tagName, attrs);
 					tagName = null;
-					attrs = new Hashtable();
+					attrs = new Hashtable<>();
 					mode = popMode(st);
 				} else if (c == '/') {
 					mode = SINGLE_TAG;
@@ -297,7 +297,7 @@ public class QDParser {
 					doc.startElement(tagName, attrs);
 					depth++;
 					tagName = null;
-					attrs = new Hashtable();
+					attrs = new Hashtable<>();
 				} else if (c == '/') {
 					mode = SINGLE_TAG;
 				} else if (Character.isWhitespace((char) c)) {

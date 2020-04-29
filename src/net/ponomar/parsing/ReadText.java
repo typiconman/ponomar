@@ -44,7 +44,7 @@ public class ReadText implements DocHandler
 		
 		
 	
-	public ReadText(LinkedHashMap dayInfo)
+	public ReadText(LinkedHashMap<String, Object> dayInfo)
 	{
             findLanguage=new Helpers(analyse.getDayInfo());
             analyse.setDayInfo(dayInfo);

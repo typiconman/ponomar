@@ -281,7 +281,7 @@ public final class Paschalion
 	}
 
 	// CONVERT ABOVE TO A STRING WITH THE PHASE OF THE MOON
-	protected static String getLunarPhaseString(JDate date, LinkedHashMap dayInfo) throws IllegalArgumentException
+	protected static String getLunarPhaseString(JDate date, LinkedHashMap<String, Object> dayInfo) throws IllegalArgumentException
 	{
 		double raw;
 
@@ -300,7 +300,7 @@ public final class Paschalion
 		// FROM THE TIME WE ARE CONSIDERING, SINCE THE TIME WE ARE CONSIDERING IS NOON
 		// ALL OTHER PHASES ARE ANALAGOUS
 		LanguagePack Text=new LanguagePack(dayInfo);
-		String[] Phases=Text.obtainValues((String)Text.getPhrases().get("Phases"));
+		String[] Phases=Text.obtainValues(Text.getPhrases().get("Phases"));
 		if (raw < LENGTH_OF_REM || raw > 1 - LENGTH_OF_REM)
 		{
 			ret =Phases[0];
@@ -531,7 +531,7 @@ public final class Paschalion
 	//	FIRST ENTRY: THE julian date of a feast
 	//	SECOND ENTRY: A STRING DESCRIBING THAT FEAST
 	// THROWS: ditto
-	public static Hashtable<Long, String> getFeasts(int year, LinkedHashMap dayInfo) throws IllegalArgumentException
+	public static Hashtable<Long, String> getFeasts(int year, LinkedHashMap<String, Object> dayInfo) throws IllegalArgumentException
 	{
 		if (year < 33)
 		{
@@ -540,7 +540,7 @@ public final class Paschalion
 
 		Hashtable<Long, String> feasts = new Hashtable<>();
 		LanguagePack Text=new LanguagePack(dayInfo);
-		String[] FeastNames=Text.obtainValues((String)Text.getPhrases().get("Feasts"));
+		String[] FeastNames=Text.obtainValues(Text.getPhrases().get("Feasts"));
 		// ADD ALL THE FIXED FEASTS TO OUR HASHTABLE
 		feasts.put(new JDate(1, 1, year).getJulianDay(), FeastNames[0]);
 		feasts.put(new JDate(1, 6, year).getJulianDay(), FeastNames[1]);

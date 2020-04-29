@@ -52,15 +52,15 @@ public class MenuFiles extends JMenu implements ItemListener, PropertyChangeList
 	private final String[] helpNames;// =Text.obtainValues((String)Text.Phrases.get("Help"));
 	private final StringOp analyse = new StringOp();
 
-	public MenuFiles(LinkedHashMap dayInfo) {
+	public MenuFiles(LinkedHashMap<String, Object> dayInfo) {
 		analyse.setDayInfo(dayInfo);
 		text = new LanguagePack(dayInfo);
-		saintNames = text.obtainValues((String) text.getPhrases().get("SMenu"));
-		optionsNames = (String) text.getPhrases().get("Options");
-		fileNames = text.obtainValues((String) text.getPhrases().get("File"));
-		serviceNames = text.obtainValues((String) text.getPhrases().get("Services"));
-		bibleName = text.obtainValues((String) text.getPhrases().get("Bible"));
-		helpNames = text.obtainValues((String) text.getPhrases().get("Help"));
+		saintNames = text.obtainValues(text.getPhrases().get("SMenu"));
+		optionsNames = text.getPhrases().get("Options");
+		fileNames = text.obtainValues(text.getPhrases().get("File"));
+		serviceNames = text.obtainValues(text.getPhrases().get("Services"));
+		bibleName = text.obtainValues(text.getPhrases().get("Bible"));
+		helpNames = text.obtainValues(text.getPhrases().get("Help"));
 	}
 
 	public JMenu createOptionsMenu(PropertyChangeListener pl, ActionListener al) {

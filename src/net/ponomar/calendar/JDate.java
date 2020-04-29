@@ -291,15 +291,15 @@ public class JDate implements Comparable, Cloneable
 
 		return new Date(y - 1900, m - 1, d); // return the date object
 	}
-	public String getGregorianDateS(LinkedHashMap dayInfo)
+	public String getGregorianDateS(LinkedHashMap<String, Object> dayInfo)
 	{
             Analyse.setDayInfo(dayInfo);
             Phrases=new LanguagePack(dayInfo);
-            dayNames = Phrases.obtainValues((String)Phrases.getPhrases().get("2"));
-         civilMonthNames=Phrases.obtainValues((String)Phrases.getPhrases().get("4"));
-        	monthNames=Phrases.obtainValues((String)Phrases.getPhrases().get("3"));
-                civilDayNames = Phrases.obtainValues((String)Phrases.getPhrases().get("5"));
-	Errors=Phrases.obtainValues((String)Phrases.getPhrases().get("Errors"));
+            dayNames = Phrases.obtainValues(Phrases.getPhrases().get("2"));
+         civilMonthNames=Phrases.obtainValues(Phrases.getPhrases().get("4"));
+        	monthNames=Phrases.obtainValues(Phrases.getPhrases().get("3"));
+                civilDayNames = Phrases.obtainValues(Phrases.getPhrases().get("5"));
+	Errors=Phrases.obtainValues(Phrases.getPhrases().get("Errors"));
 		//GIVES THE STRING IN THE LOCAL FORMAT.
 		double j1;
 
@@ -334,7 +334,7 @@ public class JDate implements Comparable, Cloneable
 		{
 			--y;
 		}
-		Format=(String)Phrases.getPhrases().get("DateFormat");
+		Format= Phrases.getPhrases().get("DateFormat");
 		int dow =getDayOfWeek();
 		int year = y;
 		int month = m;
@@ -430,14 +430,14 @@ public class JDate implements Comparable, Cloneable
 	// A METHOD TO OBTAIN A STRING FROM A JDATE OBJECT
 	// PARAMETERS: NONE
 	// RETURNS: A STRING WITH THE STRING VALUE OF A DATE
-	public String toString(LinkedHashMap dayInfo)
+	public String toString(LinkedHashMap<String, Object> dayInfo)
 	{
            Analyse.setDayInfo(dayInfo);
             Phrases=new LanguagePack(dayInfo);
-            dayNames = Phrases.obtainValues((String)Phrases.getPhrases().get("2"));
-         civilMonthNames=Phrases.obtainValues((String)Phrases.getPhrases().get("4"));
-        	monthNames=Phrases.obtainValues((String)Phrases.getPhrases().get("3"));
-		Format=(String)Phrases.getPhrases().get("DateFormat");
+            dayNames = Phrases.obtainValues(Phrases.getPhrases().get("2"));
+         civilMonthNames=Phrases.obtainValues(Phrases.getPhrases().get("4"));
+        	monthNames=Phrases.obtainValues(Phrases.getPhrases().get("3"));
+		Format= Phrases.getPhrases().get("DateFormat");
 		int dow = getDayOfWeek();
 		int year = getYear();
 		int month = getMonth();

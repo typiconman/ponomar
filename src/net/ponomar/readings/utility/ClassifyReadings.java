@@ -16,7 +16,7 @@ public class ClassifyReadings implements DocHandler {
 	/**
 	 * 
 	 */
-	protected LinkedHashMap Information2;
+	protected LinkedHashMap<String, Vector<String>> Information2;
 	public Vector dailyV = new Vector();
 	public Vector dailyR = new Vector();
 	public Vector dailyT = new Vector();
@@ -57,7 +57,7 @@ public class ClassifyReadings implements DocHandler {
 	        //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
 	        //System.out.println("==============================\nTesting Information\n++++++++++++++++++++");
 	        if (Information2.containsKey(name)) {
-	            Vector previous = (Vector) Information2.get(name);
+	            Vector<String> previous = Information2.get(name);
 	            previous.add(value);
 	            Information2.put(name, previous);
 	        } else {
@@ -85,7 +85,7 @@ public class ClassifyReadings implements DocHandler {
 	    int available = menaionV.size();
 	
 	    if (available > 0) {
-	        Vector vect = (Vector) Information2.get("Suppress");
+	        Vector vect = Information2.get("Suppress");
 	        if (vect != null) {
 	            for (Enumeration e2 = vect.elements(); e2.hasMoreElements();) {
 	                String Command = (String) e2.nextElement();

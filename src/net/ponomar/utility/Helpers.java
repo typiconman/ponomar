@@ -20,18 +20,18 @@ public class Helpers
 	//private String[] PrimesNames=Text.obtainValues((String)Text.Phrases.get("Primes"));
 	private StringOp analyse=new StringOp();
 
-        public Helpers(LinkedHashMap dayInfo){
+        public Helpers(LinkedHashMap<String, Object> dayInfo){
             analyse.setDayInfo(dayInfo);
         }
 	
 	public boolean closeFrame(String title)
 	{
             LanguagePack text=new LanguagePack(analyse.getDayInfo());
-            String[] languageNames=text.obtainValues((String)text.getPhrases().get(Constants.LANGUAGE_MENU));
+            String[] languageNames=text.obtainValues(text.getPhrases().get(Constants.LANGUAGE_MENU));
 
             Object[] options = {languageNames[3],languageNames[5]};
 		//JOptionPane pane=new JOptionPane();
-		Integer selectedValue=JOptionPane.showOptionDialog(null, title ,(String)text.getPhrases().get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+		Integer selectedValue=JOptionPane.showOptionDialog(null, title , text.getPhrases().get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 		//Object selectedValue = pane.getValue();
      		//System.out.println(selectedValue);
      		if(selectedValue == null)
@@ -52,9 +52,9 @@ public class Helpers
 	public void saveHTMLFile(String defaultname, String strOut)
 	{
             LanguagePack text=new LanguagePack(analyse.getDayInfo());
-            String[] languageNames=text.obtainValues((String)text.getPhrases().get(Constants.LANGUAGE_MENU));
-	 String[] helperNames=text.obtainValues((String)text.getPhrases().get("Helpers"));
-	 String[] aboutNames=text.obtainValues((String)text.getPhrases().get("About"));
+            String[] languageNames=text.obtainValues(text.getPhrases().get(Constants.LANGUAGE_MENU));
+	 String[] helperNames=text.obtainValues(text.getPhrases().get("Helpers"));
+	 String[] aboutNames=text.obtainValues(text.getPhrases().get("About"));
             JFileChooser fileSelector=new JFileChooser();
         	File fileSelected = new File(defaultname);
         	fileSelector.setDialogTitle(helperNames[0]);
@@ -74,7 +74,7 @@ public class Helpers
         			//CHECK WHETHER IT IS DESIRED TO OVERWRITE THE FILE
         			Object[] options = {languageNames[3],languageNames[5]};
 				JOptionPane pane=new JOptionPane();
-				pane.showOptionDialog(null, languageNames[6] + "\n "+fileName.getPath(),(String)text.getPhrases().get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+				pane.showOptionDialog(null, languageNames[6] + "\n "+fileName.getPath(), text.getPhrases().get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 				Object selectedValue = pane.getValue();
      				if(selectedValue == null)
       					 //I WILL TREAT THIS AS NO
@@ -206,7 +206,7 @@ public class Helpers
 
             LanguagePack text=new LanguagePack(analyse.getDayInfo());
 		//String [] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
-		String[] authors=text.obtainValues((String) text.getPhrases().get("Authors"));
+		String[] authors=text.obtainValues(text.getPhrases().get("Authors"));
                 String year=text.getPhrases().get("Year").toString();
                 String comma=text.getPhrases().get("Comma").toString();
                 String and=text.getPhrases().get("And").toString();

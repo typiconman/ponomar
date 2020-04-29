@@ -85,7 +85,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
         //(String)Text.Phrases.get("LanguageMenu")
         private DecimalFormat df;//=(DecimalFormat)numFormat;
 
-	protected JDaySelector(LinkedHashMap dayInfo)
+	protected JDaySelector(LinkedHashMap<String, Object> dayInfo)
 	{
             Analyse.setDayInfo(dayInfo);
             Text=new LanguagePack(dayInfo);
@@ -209,7 +209,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 	private void drawDayNames()
 	{
 		//DateFormatSymbols dateFormatSymbols = new DateFormatSymbols(locale);
-		dayNames = Text.obtainValues((String)Text.getPhrases().get("Week1"));
+		dayNames = Text.obtainValues(Text.getPhrases().get("Week1"));
 
 		int day = 0;
 
@@ -458,7 +458,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 
 	private void drawTones()
 	{
-		String[] numerals =Text.obtainValues((String)Text.getPhrases().get("Tones"));
+		String[] numerals =Text.obtainValues(Text.getPhrases().get("Tones"));
 		
 
 		// THIS WILL WORK FOR ALL TIMES EXCEPT DURING LENT 

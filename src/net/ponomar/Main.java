@@ -109,15 +109,15 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 	protected void configureWindow() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		setTitle((String) phrases.getPhrases().get("0"));
-		rSep = (String) phrases.getPhrases().get("ReadSep");
-		cSep = (String) phrases.getPhrases().get("CommSep");
-		colon = (String) phrases.getPhrases().get(Constants.COLON);
+		setTitle(phrases.getPhrases().get("0"));
+		rSep = phrases.getPhrases().get("ReadSep");
+		cSep = phrases.getPhrases().get("CommSep");
+		colon = phrases.getPhrases().get(Constants.COLON);
 		analyse.getDayInfo().put(Constants.FONT_FACE_M, displayFont);
 		analyse.getDayInfo().put(Constants.FONT_SIZE_M, displaySize);
 		analyse.getDayInfo().put("ReadSep", rSep);
 		analyse.getDayInfo().put(Constants.COLON, colon);
-		ideographic = (String) phrases.getPhrases().get(Constants.IDEOGRAPHIC);
+		ideographic = phrases.getPhrases().get(Constants.IDEOGRAPHIC);
 		analyse.getDayInfo().put(Constants.IDEOGRAPHIC, ideographic);
 		//gospelLocation = new GospelSelector(analyse.getDayInfo());
 
@@ -168,7 +168,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 	 * Y.S. 2008/08/11 n.s.
 	 */
 	protected void addMenuBar() {
-		menuFiles = new MenuFiles((LinkedHashMap) analyse.getDayInfo().clone());
+		menuFiles = new MenuFiles((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
 		menuBarElement = new JMenuBar();
 		menuBarElement.add(menuFiles.createFileMenu(this));
 		menuBarElement.add(menuFiles.createOptionsMenu(this, this));
@@ -196,8 +196,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 	protected Font configureFonts() {
 		//Load font settings
-		displayFont = (String) phrases.getPhrases().get(Constants.FONT_FACE_M);
-		displaySize = (String) phrases.getPhrases().get(Constants.FONT_SIZE_M);
+		displayFont = phrases.getPhrases().get(Constants.FONT_FACE_M);
+		displaySize = phrases.getPhrases().get(Constants.FONT_SIZE_M);
 
 		Font value1 = (Font) UIManager.get("Menu.font");
 		if (displaySize == null || displaySize.equals("")) {
@@ -249,7 +249,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 		//WE NEED THIS HANDY STORER OF VALUES NOW.
 		//StringOp.dayInfo = new OrderedHashtable();
 		//DETERMINE THE DEFAULTS
-		ConfigurationFiles.setDefaults(new LinkedHashMap());
+		ConfigurationFiles.setDefaults(new LinkedHashMap<String, String>());
 		ConfigurationFiles.ReadFile();
 		languageLocation = new LanguageSelector(analyse.getDayInfo());
 
@@ -258,11 +258,11 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 		//Changing language storage format
 		//findLanguage = new Helpers(analyse.getDayInfo());
 
-		fileNames = phrases.obtainValues((String) phrases.getPhrases().get("File"));
-		serviceNames = phrases.obtainValues((String) phrases.getPhrases().get("Services"));
-		bibleName = phrases.obtainValues((String) phrases.getPhrases().get("Bible"));
-		helpNames = phrases.obtainValues((String) phrases.getPhrases().get("Help"));
-		mainNames = phrases.obtainValues((String) phrases.getPhrases().get("Main"));
+		fileNames = phrases.obtainValues(phrases.getPhrases().get("File"));
+		serviceNames = phrases.obtainValues(phrases.getPhrases().get("Services"));
+		bibleName = phrases.obtainValues(phrases.getPhrases().get("Bible"));
+		helpNames = phrases.obtainValues(phrases.getPhrases().get("Help"));
+		mainNames = phrases.obtainValues(phrases.getPhrases().get("Main"));
 	}
 
 	public void propertyChange(PropertyChangeEvent e) {
@@ -306,7 +306,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 			// SAVE THE CURRENT WINDOW
 			helper.saveHTMLFile(mainNames[5] + " " + today + ".html",
 					"<html><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"><title>"
-							+ (String) phrases.getPhrases().get("0") + colon + today + "</title>" + output);
+							+ phrases.getPhrases().get("0") + colon + today + "</title>" + output);
 		}
 		if (name.equals(fileNames[4])) {
 			if (helper.closeFrame(mainNames[6])) {
@@ -420,9 +420,9 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 	protected String generateContent() {
 		String content = "<body style=\"font-family:" + displayFont + ";font-size:" + displaySize + "pt\">";
 
-		String amc = (String) phrases.getPhrases().get("AMC");
-		String aml = (String) phrases.getPhrases().get("AML");
-		String format = MenologionContent.getFormat(amc, analyse, today, (String) phrases.getPhrases().get("AM"));
+		String amc = phrases.getPhrases().get("AMC");
+		String aml = phrases.getPhrases().get("AML");
+		String format = MenologionContent.getFormat(amc, analyse, today, phrases.getPhrases().get("AM"));
 		//System.out.println("AML = " + AML.equals("B"));
 		if (aml.equals("B")) {
 			content += "<B>" + format + today.toString(analyse.getDayInfo()) + "</B><BR>";
@@ -555,10 +555,10 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 	private void displayIcons(Day paschalCycle, Day solarCycle) {
 		//OrderedHashtable iconsP = (OrderedHashtable) paschalCycle.getIcon();
-		LinkedHashMap iconsM = solarCycle.getIcon();
+		LinkedHashMap<String, Vector<String>> iconsM = solarCycle.getIcon();
 
-		Vector<String> imageList = (Vector<String>) iconsM.get("Images");
-		Vector<String> namesList = (Vector<String>) iconsM.get("Names");
+		Vector<String> imageList = iconsM.get("Images");
+		Vector<String> namesList = iconsM.get("Names");
 
 		String[] iconImages = imageList.toArray(new String[0]);
 		String[] iconNames = namesList.toArray(new String[0]);

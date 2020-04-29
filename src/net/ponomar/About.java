@@ -41,16 +41,16 @@ public class About extends JFrame
 	private LanguagePack ponomar;//=new LanguagePack();
 	private String value;//=(String)Ponomar.Phrases.get("0");
         private StringOp analyse=new StringOp();
-	public About(LinkedHashMap dayInfo)
+	public About(LinkedHashMap<String, Object> dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             ponomar=new LanguagePack(dayInfo);
             
-	 value=(String)ponomar.getPhrases().get("0");
+	 value= ponomar.getPhrases().get("0");
 		//ALLOWS A DIFFERENT TITLE TO BE SPECIFIED BY THE USER (CYRILLIC FOR THE CYRILLIC VERSIONS)
 		setTitle(value);
 		LanguagePack text=new LanguagePack(dayInfo);
-		String [] aboutNames=text.obtainValues((String)text.getPhrases().get("About"));
+		String [] aboutNames=text.obtainValues(text.getPhrases().get("About"));
 		/*String[] Authors=Text.obtainValues((String) Text.Phrases.get("Authors"));
                 String Year=Text.Phrases.get("Year").toString();
                 String Comma=Text.Phrases.get("Comma").toString();
@@ -76,7 +76,7 @@ public class About extends JFrame
                 String displayFont= analyse.getDayInfo().get(Constants.FONT_FACE_M).toString();
                 String displaySize= analyse.getDayInfo().get(Constants.FONT_SIZE_M).toString();
 		output.setText("<body style=\"font-family:" + displayFont + ";font-size:" + displaySize
-				+ "\"><B><h1 style=\"text-align: center;\">" + (String) ponomar.getPhrases().get("0")
+				+ "\"><B><h1 style=\"text-align: center;\">" + ponomar.getPhrases().get("0")
 				+ "</h1></B><p style=\"text-align: center;\">" + aboutNames[0] + " "
 				+ (String) ConfigurationFiles.getDefaults().get("Version") + "</p><p>" + aboutNames[1] + "</p><p>"
 				+ aboutNames[2] + "</p><p>" + about1.getCopyright() + "<BR>" + aboutNames[5] + "<BR>");

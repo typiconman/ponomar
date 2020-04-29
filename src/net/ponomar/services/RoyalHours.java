@@ -37,13 +37,13 @@ public class RoyalHours extends LitService {
 
 	private static final String P_FLAG = "PFlag";
 
-	public RoyalHours(JDate date, LinkedHashMap dayInfo) {
+	public RoyalHours(JDate date, LinkedHashMap<String, Object> dayInfo) {
 		analyse.setDayInfo(dayInfo);
 		langText = new LanguagePack(dayInfo);
-		primesNames = langText.obtainValues((String) langText.getPhrases().get("RoyalHours"));
-		languageNames = langText.obtainValues((String) langText.getPhrases().get(Constants.LANGUAGE_MENU));
-		fileNames = langText.obtainValues((String) langText.getPhrases().get("File"));
-		helpNames = langText.obtainValues((String) langText.getPhrases().get("Help"));
+		primesNames = langText.obtainValues(langText.getPhrases().get("RoyalHours"));
+		languageNames = langText.obtainValues(langText.getPhrases().get(Constants.LANGUAGE_MENU));
+		fileNames = langText.obtainValues(langText.getPhrases().get("File"));
+		helpNames = langText.obtainValues(langText.getPhrases().get("Help"));
 		today = date;
 		helper = new Helpers(analyse.getDayInfo());
 		analyse.getDayInfo().put("PS", 1);
@@ -53,7 +53,7 @@ public class RoyalHours extends LitService {
 			if (strOut.equals("Royal Hours are not served today.")) {
 				Object[] options = { languageNames[3] };
 				JOptionPane.showOptionDialog(null, primesNames[0],
-						(String) langText.getPhrases().get("0") + (String) langText.getPhrases().get(Constants.COLON)
+						langText.getPhrases().get("0") + langText.getPhrases().get(Constants.COLON)
 								+ primesNames[1],
 						JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 			} else {

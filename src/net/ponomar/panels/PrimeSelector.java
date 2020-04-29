@@ -60,11 +60,11 @@ public class PrimeSelector extends JPanel implements ActionListener, PropertyCha
 	private static String readingLocation2=primesDefault[1];
         private StringOp analyse=new StringOp();
 	
-	public PrimeSelector(LinkedHashMap dayInfo)
+	public PrimeSelector(LinkedHashMap<String, Object> dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             text=new LanguagePack(dayInfo);
-            selectorNames=text.obtainValues((String)text.getPhrases().get("PrimeSelection"));
+            selectorNames=text.obtainValues(text.getPhrases().get("PrimeSelection"));
 	}
 		
 	public JMenu createPrimeMenu()

@@ -40,10 +40,10 @@ public final class StringOp implements Cloneable
 	//private static LanguagePack Phrases = new LanguagePack();
 	//private static String [] Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
 
-   private LinkedHashMap dayInfo;
+   private LinkedHashMap<String, Object> dayInfo;
    public StringOp()
    {
-       dayInfo=new LinkedHashMap();
+       dayInfo=new LinkedHashMap<String, Object>();
    }
 // JOINS THE MEMBERS OF AN ARRAY, ANALAGOUS TO PERL'S join FUNCTION
 protected static String join(String[] pieces)
@@ -441,17 +441,17 @@ private static double bool2double(boolean expression)
 	}
 	return result;
 }
-public LinkedHashMap getDayInfo() {
+public LinkedHashMap<String, Object> getDayInfo() {
 	return dayInfo;
 }
-public void setDayInfo(LinkedHashMap dayInfo) {
+public void setDayInfo(LinkedHashMap<String, Object> dayInfo) {
 	this.dayInfo = dayInfo;
 }
 public StringOp clone(){
     StringOp aped=new StringOp();
     //aped=this;
     //To implement cloning of the table here is required.
-	aped.dayInfo= (LinkedHashMap) this.dayInfo.clone();//testing;
+	aped.dayInfo= (LinkedHashMap<String, Object>) this.dayInfo.clone();//testing;
     return aped;
 }
 // CAN BE USED TO TEST eval(String) AGAINST OUTPUT FROM KNOWN SOURCE, E.G. MATLAB

@@ -37,11 +37,11 @@ THE SOFTWARE.
  **************************************************************/
 public class Matins extends Reading {
 
-    public Matins(LinkedHashMap dayInfo) {
+    public Matins(LinkedHashMap<String, Object> dayInfo) {
         getInformation3().setDayInfo(dayInfo);
         phrases = new LanguagePack(dayInfo);
-        transferredDays = phrases.obtainValues((String) phrases.getPhrases().get("DayReading"));
-        error = phrases.obtainValues((String) phrases.getPhrases().get("Errors"));
+        transferredDays = phrases.obtainValues(phrases.getPhrases().get("DayReading"));
+        error = phrases.obtainValues(phrases.getPhrases().get("Errors"));
         setFindLanguage(new Helpers(getInformation3().getDayInfo()));
     }
 
@@ -65,7 +65,7 @@ public class Matins extends Reading {
             String value = (String) table.get(Constants.VALUE);
             //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
             if (information.containsKey(name)) {
-                Vector previous = (Vector) information.get(name);
+                Vector<String> previous = (Vector<String>) information.get(name);
                 previous.add(value);
                 information.put(name, previous);
             } else {
@@ -79,7 +79,7 @@ public class Matins extends Reading {
     }
 
 
-    public String Readings(LinkedHashMap readingsIn, JDate today) {
+    public String Readings(LinkedHashMap<String, Vector<String>> readingsIn, JDate today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/
@@ -90,7 +90,7 @@ public class Matins extends Reading {
         Information3.getDayInfo().put("nday","2");
         System.out.println("Testing the new StringOp formulation is " + Information3.evalbool("doy == 12"));*/
 
-        information = new LinkedHashMap();
+        information = new LinkedHashMap<String, Vector<String>>();
         int doy = Integer.parseInt(getInformation3().getDayInfo().get("doy").toString());
         int dow = Integer.parseInt(getInformation3().getDayInfo().get("dow").toString());
         int nday = Integer.parseInt(getInformation3().getDayInfo().get("nday").toString());
@@ -154,7 +154,7 @@ public class Matins extends Reading {
         return output;
     }
 
-    public String format(Vector vectV, Vector vectR, Vector vectT) {
+    public String format(Vector vectV, Vector vectR, Vector<Integer> vectT) {
         StringBuilder output = new StringBuilder();
         
         Bible ShortForm = new Bible(getInformation3().getDayInfo());
@@ -166,7 +166,7 @@ public class Matins extends Reading {
 
                 if ((Integer) vectR.get(k) == -2 ) {
                     if (vectV.size()>1){
-                    int tag = (Integer) vectT.get(k);
+                    int tag = vectT.get(k);
                     output.append(" (").append(Week(vectT.get(k).toString())).append(")");
                     }
                 } else {

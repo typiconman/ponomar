@@ -61,14 +61,14 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
         private boolean ignore=true;
 
 
-	public Options(LinkedHashMap dayInfo)
+	public Options(LinkedHashMap<String, Object> dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             text=new LanguagePack(dayInfo);
-            ConfigurationFiles.setDefaults(new LinkedHashMap());
+            ConfigurationFiles.setDefaults(new LinkedHashMap<>());
             ConfigurationFiles.ReadFile();
             
-            optionsStrings=text.obtainValues((String)text.getPhrases().get("Options2"));
+            optionsStrings=text.obtainValues(text.getPhrases().get("Options2"));
             currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
 
             //createDefaultWindow();
@@ -369,7 +369,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
 		System.out.println("Options.java running in Debug mode");
 		System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
 
-		LinkedHashMap dayInfo = new LinkedHashMap();
+		LinkedHashMap<String, Object> dayInfo = new LinkedHashMap<>();
 
                 dayInfo.put("dow",3);
                 dayInfo.put("doy",357);

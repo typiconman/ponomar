@@ -37,22 +37,22 @@ yuri (dot) shardt (at) gmail.com
 **************************************************************/
 
 public class LanguagePack implements DocHandler {
-	private LinkedHashMap requiredPhrases; // STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT
+	private LinkedHashMap<String, String> requiredPhrases; // STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT
 												// INTERFACE LANGUAGE.
 	private boolean readPhrases = false; // DETERMINE WHETHER TO READ OR NOT TO READ THE GIVEN PHRASES (THIS MUST BE
 											// ADDED TO ALL THE READERS).
 	private final StringOp analyse = new StringOp();
 
-	public LanguagePack(LinkedHashMap dayInfo) {
-		setPhrases(new LinkedHashMap());
+	public LanguagePack(LinkedHashMap<String, Object> dayInfo) {
+		setPhrases(new LinkedHashMap<>());
 		analyse.setDayInfo(dayInfo);
 		readPhrases();
 
 	}
 
-	public LanguagePack(String path, LinkedHashMap dayInfo) {
+	public LanguagePack(String path, LinkedHashMap<String, Object> dayInfo) {
 		analyse.setDayInfo(dayInfo);
-		setPhrases(new LinkedHashMap());
+		setPhrases(new LinkedHashMap<>());
 		readPhrases(path);
 
 	}
@@ -124,11 +124,11 @@ public class LanguagePack implements DocHandler {
 		}
 	}
 
-	public LinkedHashMap getPhrases() {
+	public LinkedHashMap<String, String> getPhrases() {
 		return requiredPhrases;
 	}
 
-	public void setPhrases(LinkedHashMap phrases) {
+	public void setPhrases(LinkedHashMap<String, String> phrases) {
 		requiredPhrases = phrases;
 	}
 

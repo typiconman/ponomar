@@ -43,7 +43,7 @@ public class Day implements DocHandler {
     //private LanguagePack Text=new LanguagePack();
     //private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
     //private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-    private LinkedHashMap information;
+    private LinkedHashMap<String, String> information;
     private LinkedHashMap readings;
     private LinkedHashMap grammar;
     private LinkedHashMap variable;
@@ -67,17 +67,17 @@ public class Day implements DocHandler {
     private String forComm;//=(String)Text.Phrases.get("Commemoration2");
     private static StringOp parameterValues = new StringOp();
 
-	public Day(String fileName, LinkedHashMap dayInfo) {
-		information = new LinkedHashMap();
+	public Day(String fileName, LinkedHashMap<String, Object> dayInfo) {
+		information = new LinkedHashMap<>();
 		readings = new LinkedHashMap();
 		royalHours = new LinkedHashMap();
 		parameterValues.setDayInfo(dayInfo);
 		helper = new Helpers(parameterValues.getDayInfo());
 		text = new LanguagePack(parameterValues.getDayInfo());
-		commNames = text.obtainValues((String) text.getPhrases().get("Commemoration"));
-		mainNames = text.obtainValues((String) text.getPhrases().get("Main"));
-		toneNumbers = text.obtainValues((String) text.getPhrases().get("Tones"));
-		forComm = (String) text.getPhrases().get("Commemoration2");
+		commNames = text.obtainValues(text.getPhrases().get("Commemoration"));
+		mainNames = text.obtainValues(text.getPhrases().get("Main"));
+		toneNumbers = text.obtainValues(text.getPhrases().get("Tones"));
+		forComm = text.getPhrases().get("Commemoration2");
 		counter = 0;
 		orderedCommemorations = new Vector<>();
 		dayRank = -100;
@@ -105,7 +105,7 @@ public class Day implements DocHandler {
         orderedCommemorations = new Vector<>();
         dayRank = -100;
 
-        information = new LinkedHashMap();
+        information = new LinkedHashMap<>();
         readings = new LinkedHashMap();
         helper = new Helpers(parameterValues.getDayInfo());
         System.out.println("NOTE USING WRONG DAY INPUT FORMAT!!!!");
@@ -202,7 +202,7 @@ public class Day implements DocHandler {
 
     public String getCommsHyper() {
         //Returns a hyperlinked listing of all the commemorations for a given day.
-        String cSep=(String)text.getPhrases().get("CommSep");
+        String cSep= text.getPhrases().get("CommSep");
         StringBuilder output = new StringBuilder();
         for (Commemoration cCom : orderedCommemorations) {
             String sId = cCom.getSId();
@@ -218,13 +218,13 @@ public class Day implements DocHandler {
                 output.append("<A Href='goDoSaint?id=").append(sId).append(",").append(cId).append("'>");
             }
             int rank = cCom.getRank();
-            String rank0Format = (String) text.getPhrases().get("Rank0");
-            String rank1Format = (String) text.getPhrases().get("Rank1");
-            String rank2Format = (String) text.getPhrases().get("Rank2");
-            String rank3Format = (String) text.getPhrases().get("Rank3");
-            String rank4Format = (String) text.getPhrases().get("Rank4");
-            String rank5Format = (String) text.getPhrases().get("Rank5");
-            String rank6Format = (String) text.getPhrases().get("Rank6");
+            String rank0Format = text.getPhrases().get("Rank0");
+            String rank1Format = text.getPhrases().get("Rank1");
+            String rank2Format = text.getPhrases().get("Rank2");
+            String rank3Format = text.getPhrases().get("Rank3");
+            String rank4Format = text.getPhrases().get("Rank4");
+            String rank5Format = text.getPhrases().get("Rank5");
+            String rank6Format = text.getPhrases().get("Rank6");
 
             switch (rank) {
                 case 8:
@@ -284,16 +284,16 @@ public class Day implements DocHandler {
         return output.toString();
     }
 
-    public LinkedHashMap getIcon() {
+    public LinkedHashMap<String, Vector<String>> getIcon() {
         //Ordered List of the Icons
-        Vector iconImages = new Vector();
-        Vector iconNames=new Vector();
+        Vector<String> iconImages = new Vector<>();
+        Vector<String> iconNames=new Vector<>();
 
         for (Commemoration cCom : orderedCommemorations) {
             String sId = cCom.getSId();
             String cId = cCom.getCId();
             String nameF = cCom.getGrammar("Short");
-            String[] iconSearch = text.obtainValues((String) text.getPhrases().get("IconSearch"));
+            String[] iconSearch = text.obtainValues(text.getPhrases().get("IconSearch"));
 
             File fileNew = new File(helper.langFileFind(parameterValues.getDayInfo().get("LS").toString(), Constants.ICONS_RESOURCE_PATH + cId + "/0.jpg"));
             int countSearch = 0;
@@ -323,7 +323,7 @@ public class Day implements DocHandler {
                 iconNames.add(nameF);
             }
         }
-        LinkedHashMap finalI = new LinkedHashMap();
+        LinkedHashMap<String, Vector<String>> finalI = new LinkedHashMap<>();
         finalI.put("Images",iconImages);
         finalI.put("Names",iconNames);
         return finalI;
@@ -350,7 +350,7 @@ public class Day implements DocHandler {
     public LinkedHashMap[] getReadings(){
     	LinkedHashMap[] readingsA = new LinkedHashMap[orderedCommemorations.size()];
     	LinkedHashMap[] rInformation = new LinkedHashMap[orderedCommemorations.size()];
-        Vector count= new Vector();
+        Vector<Integer> count= new Vector<>();
 
 
         for (int i = 0; i < orderedCommemorations.size(); i++) {
@@ -425,7 +425,7 @@ public class Day implements DocHandler {
     }
 
     public static void main(String[] argz) {
-    	parameterValues.setDayInfo(new LinkedHashMap());
+    	parameterValues.setDayInfo(new LinkedHashMap<String, Object>());
         parameterValues.getDayInfo().put("LS", "cu/ru/");
         parameterValues.getDayInfo().put("dow", "5");
         //Commemoration paramony = new Commemoration("P_3174");    //Paramony of Christmas

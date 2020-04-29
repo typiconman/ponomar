@@ -62,23 +62,23 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 	private String orderBox;// =(String)Text.Phrases.get("OrderBox");
 	private StringOp analyse = new StringOp();
 
-	public JCalendar(LinkedHashMap dayInfo) {
+	public JCalendar(LinkedHashMap<String, Object> dayInfo) {
 		this(null, dayInfo);
 
 		analyse.setDayInfo(dayInfo);
 		text = new LanguagePack(dayInfo);
-		months = text.obtainValues((String) text.getPhrases().get("1"));
-		orderBox = (String) text.getPhrases().get("OrderBox");
+		months = text.obtainValues(text.getPhrases().get("1"));
+		orderBox = text.getPhrases().get("OrderBox");
 		date = new JDate();
 
 	}
 
-	protected JCalendar(JDate date, LinkedHashMap dayInfo) {
+	protected JCalendar(JDate date, LinkedHashMap<String, Object> dayInfo) {
 		super();
 		analyse.setDayInfo(dayInfo);
 		text = new LanguagePack(dayInfo);
-		months = text.obtainValues((String) text.getPhrases().get("1"));
-		orderBox = (String) text.getPhrases().get("OrderBox");
+		months = text.obtainValues(text.getPhrases().get("1"));
+		orderBox = text.getPhrases().get("OrderBox");
 		setName("JCalendar");
 		setLayout(new BorderLayout());
 
@@ -108,7 +108,7 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 
 		monthYearPanel.setBorder(BorderFactory.createEmptyBorder());
 
-		daySelector = new JDaySelector((LinkedHashMap) analyse.getDayInfo().clone());
+		daySelector = new JDaySelector((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
 		daySelector.setYear(date.getYear());
 		daySelector.setMonth(date.getMonth());
 		daySelector.setDay(date.getDay());

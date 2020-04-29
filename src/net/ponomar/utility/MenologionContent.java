@@ -85,7 +85,7 @@ public final class MenologionContent {
 					content.append(rSep);
 				}
 
-				content.append(putMatinsReadings(readings, rank, tag, new LinkedHashMap(), "matins"));
+				content.append(putMatinsReadings(readings, rank, tag, new LinkedHashMap<String, Vector<String>>(), "matins"));
 				// output+=RSep;
 
 				continue;
@@ -96,7 +96,7 @@ public final class MenologionContent {
 			} else {
 				content.append(rSep);
 			}
-			String type1 = (String) phrases.getPhrases().get(element1.toLowerCase());
+			String type1 = phrases.getPhrases().get(element1.toLowerCase());
 			content.append("<B>").append(type1).append("</B>").append(colon);
 			content.append(iterateOverReadings(shortForm, readings, tag, rSep));
 
@@ -127,7 +127,7 @@ public final class MenologionContent {
 				gospel.add("");
 			}
 		}
-		LinkedHashMap readingsA = new LinkedHashMap();
+		LinkedHashMap<String, Vector<String>> readingsA = new LinkedHashMap<>();
 
 		if (!epistle.get(0).equals("")) {
 			epistleGospelOutput += putEpistleGospelReadings(rank, tag, epistle, readingsA, "apostol");
@@ -140,22 +140,22 @@ public final class MenologionContent {
 	}
 
 	public String putMatinsReadings(Vector<LinkedHashMap> readings, Vector<String> rank, Vector<String> tag,
-			LinkedHashMap readingsA, String key) {
+									LinkedHashMap<String, Vector<String>> readingsA, String key) {
 		readingsA.put(READINGS_KEY, MenologionContent.processMatins(readings));
 		readingsA.put("Rank", rank);
 		readingsA.put("Tag", tag);
 		Matins trial1 = new Matins(analyse.getDayInfo());
-		String type1 = (String) phrases.getPhrases().get(key);
+		String type1 = phrases.getPhrases().get(key);
 		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, today);
 	}
 
 	private String putEpistleGospelReadings(Vector<String> rank, Vector<String> tag, Vector<String> reading,
-			LinkedHashMap readingsA, String key) {
+											LinkedHashMap<String, Vector<String>> readingsA, String key) {
 		readingsA.put(READINGS_KEY, reading);
 		readingsA.put("Rank", rank);
 		readingsA.put("Tag", tag);
 		DivineLiturgy trial1 = new DivineLiturgy(analyse.getDayInfo());
-		String type1 = (String) phrases.getPhrases().get(key);
+		String type1 = phrases.getPhrases().get(key);
 		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, key, today);
 	}
 

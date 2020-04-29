@@ -34,17 +34,17 @@ public class ServiceInfo implements DocHandler
 	private static final String FILENAME   = Constants.COMMANDS + "ServiceRules.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
-	private static LinkedHashMap information;
+	private static LinkedHashMap<String, Vector<String>> information;
 	
 	private LanguagePack phrases;//=new LanguagePack();
 	//GET THE APPROPRIATE FASTING LINES
 	//private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-	private static LinkedHashMap service;
+	private static LinkedHashMap<String, String> service;
 	private String type;
         private Helpers findLanguage;
 	private StringOp analyse=new StringOp();
-	public ServiceInfo(String info, LinkedHashMap dayInfo)
+	public ServiceInfo(String info, LinkedHashMap<String, Object> dayInfo)
 	{
 		type = info;
                 findLanguage=new Helpers(analyse.getDayInfo());
@@ -52,10 +52,10 @@ public class ServiceInfo implements DocHandler
                 phrases=new LanguagePack(dayInfo);
 	}
 	
-	public LinkedHashMap serviceRules() //throws IOException
+	public LinkedHashMap<String, String> serviceRules() //throws IOException
 	{
-		service=new LinkedHashMap();
-		information=new LinkedHashMap();
+		service=new LinkedHashMap<String, String>();
+		information=new LinkedHashMap<>();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
 		/*StringOp.dayInfo.put("dRank",1);	//ANY RANK LESS THAN 4 WILL DO
@@ -180,13 +180,13 @@ public class ServiceInfo implements DocHandler
 		//IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
 		if (information.containsKey(name))
 		{
-			Vector previous = (Vector)information.get(name);
+			Vector<String> previous = information.get(name);
 			previous.add(value);
 			information.put(name,previous);
 		}
 		else
 		{
-			Vector vect = new Vector();
+			Vector<String> vect = new Vector<>();
 			vect.add(value);
 			information.put(name,vect);
 		}

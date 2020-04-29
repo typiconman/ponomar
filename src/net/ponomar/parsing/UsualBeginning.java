@@ -42,11 +42,11 @@ public class UsualBeginning
 		analyse.getDayInfo().put("nday",250);
 		analyse.getDayInfo().put("LS",0);
 		final String UsualFileName = "src/"+ Constants.SERVICES_PATH + "UsualBeginning/"; // THE LOCATION FOR ANY EXTRA INFORMATION
-		Service test2=new Service((LinkedHashMap) analyse.getDayInfo().clone());
+		Service test2=new Service((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
 		 test2.readService(UsualFileName+"UsualBeginning.xml");
 		usualBeginning1=test2.service1;
 	}	
-	public UsualBeginning(LinkedHashMap dayInfo)
+	public UsualBeginning(LinkedHashMap<String, Object> dayInfo)
 	{
 		final String UsualFileName = "src/" + Constants.SERVICES_PATH + "UsualBeginning/";
 		Service test2=new Service(dayInfo);

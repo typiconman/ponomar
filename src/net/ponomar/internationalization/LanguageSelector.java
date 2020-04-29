@@ -50,7 +50,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	
 
 	
-	public LanguageSelector(LinkedHashMap dayInfo)
+	public LanguageSelector(LinkedHashMap<String, Object> dayInfo)
 	{
 	analyse.setDayInfo(dayInfo);
                 languageDefault = (String) ConfigurationFiles.getDefaults().get(LANGUAGE);
@@ -72,12 +72,12 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 		}
 	
 	}
-	public JMenu createLanguageMenu(LinkedHashMap dayInfo)
+	public JMenu createLanguageMenu(LinkedHashMap<String, Object> dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             Font currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
             LanguagePack text=new LanguagePack(dayInfo);
-		String [] languageNames=text.obtainValues((String)text.getPhrases().get(Constants.LANGUAGE_MENU));
+		String [] languageNames=text.obtainValues(text.getPhrases().get(Constants.LANGUAGE_MENU));
 		//DETERMINE THE DEFAULTS
 		String languageDefaultString = (String) ConfigurationFiles.getDefaults().get(LANGUAGE);
 		String rough = (String) ConfigurationFiles.getDefaults().get("AvailableLanguages");
@@ -148,8 +148,8 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	
 	public void actionPerformed(ActionEvent e)
 	{
-		LanguagePack text=new LanguagePack((LinkedHashMap) analyse.getDayInfo().clone());
-		String [] languageNames=text.obtainValues((String)text.getPhrases().get(Constants.LANGUAGE_MENU));
+		LanguagePack text=new LanguagePack((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
+		String [] languageNames=text.obtainValues(text.getPhrases().get(Constants.LANGUAGE_MENU));
 		//THIS WILL DETERMINE THE APPROPRIATE LANGUAGE LOCATION
 		languageLocation=e.getActionCommand();
                 //System.out.println(LanguageLocation);
@@ -174,7 +174,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 			firePropertyChange(LANGUAGE, languageLocation, lastLanguage); //THIS WILL ONLY CAUSE A CHANGE IN THE DISPLAY OF DATA LANGUAGE, BUT NOT THE INTERFACE LANGUAGE. THE PROGRAMME NEEDS TO BE RESTARTED FOR THIS TO OCCUR.
 			//A MESSAGE BOX SHOULD ALSO BE DISPLAYED!
 			Object[] options = {languageNames[3]};
-			JOptionPane.showOptionDialog(null, languageNames[4],(String)text.getPhrases().get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+			JOptionPane.showOptionDialog(null, languageNames[4], text.getPhrases().get("0"), JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 			//JOptionPane.showMessageDialog(null, "In order for the interface language to change, please restart the programme.","Ponomar");
 			lastLanguage=nameLanguages[newLocation];
 			ConfigurationFiles.getDefaults().put(LANGUAGE,availableLanguages[newLocation]);

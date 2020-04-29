@@ -45,11 +45,11 @@ public class DivineLiturgy extends Reading {
 
 	private static StringOp analyse=new StringOp();
 
-    public DivineLiturgy(LinkedHashMap dayInfo) {
+    public DivineLiturgy(LinkedHashMap<String, Object> dayInfo) {
         getAnalyse().setDayInfo(dayInfo);
           phrases = new LanguagePack(dayInfo);
-    transferredDays = phrases.obtainValues((String) phrases.getPhrases().get("DayReading"));
-     error = phrases.obtainValues((String) phrases.getPhrases().get("Errors"));
+    transferredDays = phrases.obtainValues(phrases.getPhrases().get("DayReading"));
+     error = phrases.obtainValues(phrases.getPhrases().get("Errors"));
      setFindLanguage(new Helpers(getAnalyse().getDayInfo()));
     }
 
@@ -73,7 +73,7 @@ public class DivineLiturgy extends Reading {
             String value = (String) table.get(Constants.VALUE);
             //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
             if (information.containsKey(name)) {
-                Vector previous = (Vector) information.get(name);
+                Vector<String> previous = (Vector<String>) information.get(name);
                 previous.add(value);
                 information.put(name, previous);
             } else {
@@ -87,7 +87,7 @@ public class DivineLiturgy extends Reading {
     }
 
 
-    public String Readings(LinkedHashMap readingsIn, String readingType, JDate today) {
+    public String Readings(LinkedHashMap<String, Vector<String>> readingsIn, String readingType, JDate today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/
@@ -98,7 +98,7 @@ public class DivineLiturgy extends Reading {
         Information3.getDayInfo().put("nday","2");
         System.out.println("Testing the new StringOp formulation is " + Information3.evalbool("doy == 12"));*/
 
-        information = new LinkedHashMap();
+        information = new LinkedHashMap<String, Vector<String>>();
         int doy = Integer.parseInt(getAnalyse().getDayInfo().get("doy").toString());
         int dow = Integer.parseInt(getAnalyse().getDayInfo().get("dow").toString());
         int nday = Integer.parseInt(getAnalyse().getDayInfo().get("nday").toString());
@@ -146,8 +146,8 @@ public class DivineLiturgy extends Reading {
 
                 
                 StringOp transfers=new StringOp();
-                transfers.setDayInfo((LinkedHashMap) getAnalyse().getDayInfo().clone());//findLanguage.deepCopy((Hashtable)StringOp.dayInfo.clone());
-                getInformation3().setDayInfo((LinkedHashMap) getAnalyse().getDayInfo().clone());
+                transfers.setDayInfo((LinkedHashMap<String, Object>) getAnalyse().getDayInfo().clone());//findLanguage.deepCopy((Hashtable)StringOp.dayInfo.clone());
+                getInformation3().setDayInfo((LinkedHashMap<String, Object>) getAnalyse().getDayInfo().clone());
                 String dRankOld=getAnalyse().getDayInfo().get(Constants.D_RANK).toString();
                 today.addDays(1);
                 // PUT THE RELEVANT DATA IN THE HASH FOR TOMORROW
@@ -193,8 +193,8 @@ public class DivineLiturgy extends Reading {
 
 
                 StringOp transfers=new StringOp();
-                transfers.getDayInfo().putAll((LinkedHashMap) getAnalyse().getDayInfo().clone());
-                getInformation3().setDayInfo((LinkedHashMap) getAnalyse().getDayInfo().clone());
+                transfers.getDayInfo().putAll((LinkedHashMap<String, Object>) getAnalyse().getDayInfo().clone());
+                getInformation3().setDayInfo((LinkedHashMap<String, Object>) getAnalyse().getDayInfo().clone());
                 String dRankOld=getAnalyse().getDayInfo().get(Constants.D_RANK).toString();
                 today.subtractDays(1);
 
@@ -320,7 +320,7 @@ public class DivineLiturgy extends Reading {
         return output;
     }
 
-    public String format(Vector vectV, Vector vectR, Vector vectT) {
+    public String format(Vector vectV, Vector vectR, Vector<Integer> vectT) {
         StringBuilder output = new StringBuilder();
         //AT THIS POINT, THE PENTECOSTARION READINGS WILL BE FORMATED SO THAT THEY ARE SEQUENTIAL BY THE WEEK,
         //ESPECIALLY IF THERE ARE ANY RETRACTIONS OR THE LIKE.
@@ -360,7 +360,7 @@ public class DivineLiturgy extends Reading {
 
                 if ((Integer) vectR.get(k) == -2 ) {
                     if (vectV.size()>1){
-                    int tag = (Integer) vectT.get(k);
+                    int tag = vectT.get(k);
                     output.append(" (").append(Week(vectT.get(k).toString())).append(")");
                     }
                 } else {

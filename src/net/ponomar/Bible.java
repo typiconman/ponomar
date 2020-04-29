@@ -61,14 +61,14 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     private String curpassage;
     private String lastversion = "";
     private String instructions = "";
-    private LinkedHashMap versions = new LinkedHashMap();
-    private LinkedHashMap versions2 = new LinkedHashMap();
+    private LinkedHashMap<String, String> versions = new LinkedHashMap<>();
+    private LinkedHashMap<String, String> versions2 = new LinkedHashMap<String, String>();
     private LinkedHashMap books = new LinkedHashMap();
     private LinkedHashMap chapters = new LinkedHashMap();
     private LinkedHashMap abbrev = new LinkedHashMap();
     private boolean readFile = false;
-    private LinkedHashMap findId = new LinkedHashMap();	//ADDED Y.S.
-    private LinkedHashMap intro = new LinkedHashMap(); //ADDED Y.S.
+    private LinkedHashMap<String, String> findId = new LinkedHashMap<String, String>();	//ADDED Y.S.
+    private LinkedHashMap<String, String> intro = new LinkedHashMap<String, String>(); //ADDED Y.S.
     private String displayFont = ""; //ALLOWS A CUSTOM FONT AND SIZE TO BE SPECIFIED FOR A GIVEN BIBLE READING: REQUIRED FOR OLD CHURCH SLAVONIC AT PRESENT
     private String displaySize = "12";  //UNTIL A COMPLETE UNICODE FONT IS AVAILIBLE.
     private Font defaultFont = new Font("", Font.BOLD, 12);		//CREATE THE DEFAULT FONT
@@ -108,11 +108,11 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     
 
     // CONSTRUCTOR
-    protected Bible(String curbook, String curpassage, LinkedHashMap dayInfo) {
+    protected Bible(String curbook, String curpassage, LinkedHashMap<String, Object> dayInfo) {
         
         analyse.setDayInfo(dayInfo);
         text = new LanguagePack(dayInfo);
-        captions = text.obtainValues((String) text.getPhrases().get("BibleW"));
+        captions = text.obtainValues(text.getPhrases().get("BibleW"));
         setTitle(captions[7]);
         
         LanguagePack getLang = new LanguagePack(analyse.getDayInfo());
@@ -146,7 +146,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         left.add(versionsBox);
         //GET THE DEFAULT LANGUAGE BIBLE INDEX LOCATION IN THE GIVEN LIST
         int indexV = 0;
-        Vector vers1 = new Vector(versions2.values());
+        Vector<String> vers1 = new Vector<>(versions2.values());
         for (indexV = 0; indexV < vers1.size(); indexV++) {
 
             if (findId.get(vers1.get(indexV)).toString().equals(curversion)) {
@@ -200,7 +200,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 button.setIcon(new ImageIcon(imgURL, captions[bnum]));
                 button.setToolTipText(captions[bnum]);
                 }else{
-                    String part2=(String)text.getPhrases().get("BibleW2");
+                    String part2= text.getPhrases().get("BibleW2");
                     button.setIcon(new ImageIcon(imgURL,part2));
                     button.setToolTipText(part2);
                 }
@@ -264,7 +264,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         add(splitter);
 
         //Adding a Menu Bar
-        MenuFiles demo = new MenuFiles((LinkedHashMap) analyse.getDayInfo().clone());
+        MenuFiles demo = new MenuFiles((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
         JMenuBar menuBar = new JMenuBar();
         menuBar.add(demo.createFileMenu(this));
         menuBar.add(demo.createHelpMenu(this));
@@ -290,10 +290,10 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         }
 	}
 
-    public Bible(LinkedHashMap dayInfo) {
+    public Bible(LinkedHashMap<String, Object> dayInfo) {
         analyse.setDayInfo(dayInfo);
         text = new LanguagePack(dayInfo);
-        captions = text.obtainValues((String) text.getPhrases().get("BibleW"));
+        captions = text.obtainValues(text.getPhrases().get("BibleW"));
         //new Bible("Gen", "1:1-13"); <-- removed by Y.S. (not sure why, A.A.)
     }
 
@@ -318,7 +318,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             
             lastversion = (String) table.get("Id");
             currentBible = (String) table.get("Name");
-            findId.put(table.get("Name"), table.get("Id"));//ADDED Y.S.
+            findId.put(table.get("Name").toString(), table.get("Id").toString());//ADDED Y.S.
         }
         if (elem.equals("INFO")) {
             //ADDED Y.S. 2001211 n.s.
@@ -467,8 +467,8 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     public void actionPerformed(ActionEvent e) {
         Helpers helper = new Helpers(analyse.getDayInfo());
         String name = e.getActionCommand();
-        String[] fileNames = text.obtainValues((String) text.getPhrases().get("File"));
-        String[] helpNames = text.obtainValues((String) text.getPhrases().get("Help"));
+        String[] fileNames = text.obtainValues(text.getPhrases().get("File"));
+        String[] helpNames = text.obtainValues(text.getPhrases().get("Help"));
         //ALLOWS A MULTILINGUAL PROPER VERSION
         if (name.equals("comboBoxChanged")) {
             //curversion = versions2.get(findId.get(versionsBox.getSelectedIndex()).toString()).toString();
@@ -1035,10 +1035,10 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 System.out.println(result[1].substring(star1 + 1, starL) + " value of star1 " + star1 + " value of starL " + starL);
                 return result[1].substring(star1 + 1, starL).replace("...", "");
             } else {
-                return (String) intro.get(id.substring(0, k));
+                return intro.get(id.substring(0, k));
             }
         }
-        return (String) intro.get(id);
+        return intro.get(id);
 
 
     }
@@ -1094,7 +1094,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         //DEBUG MODE
         System.out.println("Bible.java running in Debug mode");
         System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
-        LinkedHashMap dayInfo = new LinkedHashMap();
+        LinkedHashMap<String, Object> dayInfo = new LinkedHashMap<String, Object>();
         dayInfo.put("LS", "0");
         new Bible(dayInfo);
     }

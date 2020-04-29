@@ -286,7 +286,7 @@ public class Astronomy
             return revolution(lunarlong(day)-solarlong(day));
 
         }
-        public String lunarphase(long day, LinkedHashMap dayInfo){
+        public String lunarphase(long day, LinkedHashMap<String, Object> dayInfo){
             /*Determine the lunar phase given various for the given JDE day;
              * Assumes that the given day is midnight local time.
              * */
@@ -294,7 +294,7 @@ public class Astronomy
             double tomorrowsAge=lunarage(day+1);
             String phase="Error";
          LanguagePack text = new LanguagePack(dayInfo);
-         String[] phaseNames = text.obtainValues((String) text.getPhrases().get("Phases"));
+         String[] phaseNames = text.obtainValues(text.getPhrases().get("Phases"));
             //Key="Phases" Value="New Moon/,Waxing Crescent/,First Quarter/,Waxing Gibbous/,Full Moon/,Waning Gibbous/,Third Quarter/,Waning Crescent" Comment="Lunar Phases" />
             if (todaysAge>tomorrowsAge){
                 //This can only signify a new moon
@@ -387,7 +387,7 @@ public class Astronomy
         }
 
 	public static void main(String[] argz) {
-		LinkedHashMap dayInfo = new LinkedHashMap();
+		LinkedHashMap<String, Object> dayInfo = new LinkedHashMap<String, Object>();
 		dayInfo.put("LS", "en/");
 		Astronomy test = new Astronomy();
 

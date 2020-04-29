@@ -45,14 +45,14 @@ public class Primes extends LitService
 	private static String fileNameOut=fileNameIn+"Primes.html";
 	private PrimeSelector selectorP;//=new PrimeSelector();
 			
-	public Primes(JDate date, LinkedHashMap dayInfo)
+	public Primes(JDate date, LinkedHashMap<String, Object> dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             langText=new LanguagePack(dayInfo);
-            primesNames=langText.obtainValues((String)langText.getPhrases().get("Primes"));
-	languageNames=langText.obtainValues((String)langText.getPhrases().get(Constants.LANGUAGE_MENU));
-        fileNames=langText.obtainValues((String)langText.getPhrases().get("File"));
-	helpNames=langText.obtainValues((String)langText.getPhrases().get("Help"));
+            primesNames=langText.obtainValues(langText.getPhrases().get("Primes"));
+	languageNames=langText.obtainValues(langText.getPhrases().get(Constants.LANGUAGE_MENU));
+        fileNames=langText.obtainValues(langText.getPhrases().get("File"));
+	helpNames=langText.obtainValues(langText.getPhrases().get("Help"));
         selectorP=new PrimeSelector(dayInfo);
 		/*THIS IS THE PLAN FOR CREATING THE SERVICE
 		1) DETERMINE ON THE BASIS OF THE PENTECOSTARION (EASTER CYCLE) THE APPROPRIATE TONE AND ANY EASTER RELATED CHANGES TO THE SERVICE
@@ -82,7 +82,7 @@ public class Primes extends LitService
 			if(strOut.equals("No Service Today"))
 			{
 				Object[] options = {languageNames[3]};
-				JOptionPane.showOptionDialog(null, primesNames[0],(String)langText.getPhrases().get("0") + langText.getPhrases().get(Constants.COLON)+ primesNames[1], JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+				JOptionPane.showOptionDialog(null, primesNames[0], langText.getPhrases().get("0") + langText.getPhrases().get(Constants.COLON)+ primesNames[1], JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 			}
 			else
 			{
@@ -205,7 +205,7 @@ public class Primes extends LitService
 		//CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
 		//POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
 		ServiceInfo ServicePrimes=new ServiceInfo("PRIME",analyse.getDayInfo());
-		LinkedHashMap PrimesTrial = ServicePrimes.serviceRules();
+		LinkedHashMap<String, String> PrimesTrial = ServicePrimes.serviceRules();
 		
 		type=PrimesTrial.get("Type").toString();
 		lentenKat=(String) PrimesTrial.get(LENTENK);

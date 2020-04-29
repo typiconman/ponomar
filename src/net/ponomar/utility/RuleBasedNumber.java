@@ -72,7 +72,7 @@ public class RuleBasedNumber implements DocHandler
     private boolean readRules=false;
     private StringOp analyse= new StringOp();
 
-    public RuleBasedNumber(LinkedHashMap dayInfo)
+    public RuleBasedNumber(LinkedHashMap<String, Object> dayInfo)
 	{
     	//Do nothing right now; later load the required rules.
         analyse.setDayInfo(dayInfo);
@@ -537,7 +537,7 @@ public class RuleBasedNumber implements DocHandler
         //DEBUG MODE
         System.out.println("RuleBasedNumber.java running in Debug mode");
         System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
-        LinkedHashMap dayInfo = new LinkedHashMap();
+        LinkedHashMap<String, Object> dayInfo = new LinkedHashMap<String, Object>();
         dayInfo.put("LS","6");
 
         RuleBasedNumber test=new RuleBasedNumber(dayInfo);

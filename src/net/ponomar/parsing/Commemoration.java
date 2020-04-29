@@ -44,7 +44,7 @@ public class Commemoration implements DocHandler {
     private LinkedHashMap information;
     private LinkedHashMap readings;
     private LinkedHashMap grammar;
-    private LinkedHashMap variable;
+    private LinkedHashMap<String, String> variable;
     private String textR;
     private boolean readRH = false;
     private LinkedHashMap royalHours;
@@ -62,11 +62,11 @@ public class Commemoration implements DocHandler {
     private boolean presentPropers=false;
     private StringOp analyse=new StringOp();
 
-    public Commemoration(String sId, String cId,LinkedHashMap dayInfo) {
+    public Commemoration(String sId, String cId,LinkedHashMap<String, Object> dayInfo) {
         analyse.setDayInfo(dayInfo);
        Text = new LanguagePack(dayInfo);
-    commNames = Text.obtainValues((String) Text.getPhrases().get("Commemoration"));
-    errorName=(String)Text.getPhrases().get("Commemoration3");
+    commNames = Text.obtainValues(Text.getPhrases().get("Commemoration"));
+    errorName= Text.getPhrases().get("Commemoration3");
         information = new LinkedHashMap();
         readings = new LinkedHashMap();
         royalHours = new LinkedHashMap();
@@ -223,7 +223,7 @@ public class Commemoration implements DocHandler {
             information.put("Icon", table.get("Id").toString());
         }
         if (elem.equals("TROPARION") && read) {
-            variable = new LinkedHashMap();
+            variable = new LinkedHashMap<>();
             variable.put("Tone", table.get("Tone").toString());
             if (table.get("Author") != null){
             variable.put("Author", table.get("Author").toString());
@@ -231,7 +231,7 @@ public class Commemoration implements DocHandler {
             //Information.put("presentPropers",true);
         }
         if (elem.equals("KONTAKION") && read) {
-            variable = new LinkedHashMap();
+            variable = new LinkedHashMap<>();
             variable.put("Tone", table.get("Tone").toString());
             if (table.get("Author") != null){
             variable.put("Author", table.get("Author").toString());
@@ -426,7 +426,7 @@ public class Commemoration implements DocHandler {
     public String getIcon() {
         return information.get("Icon").toString();
     }
-    public LinkedHashMap getDisplayIcons(){
+    public LinkedHashMap<String, Vector<String>> getDisplayIcons(){
 
         //Ordered List of the Icons
         Vector<String> IconImages = new Vector<>();
@@ -437,7 +437,7 @@ public class Commemoration implements DocHandler {
 
             String Cid = information.get("CID").toString();
             String NameF = getGrammar("Short");
-            String[] IconSearch=Text.obtainValues((String)Text.getPhrases().get("IconSearch"));
+            String[] IconSearch=Text.obtainValues(Text.getPhrases().get("IconSearch"));
 
             File fileNew=new File(helper.langFileFind(analyse.getDayInfo().get("LS").toString(), Constants.ICONS_RESOURCE_PATH + Cid + "/0.jpg"));
             int countSearch=0;
@@ -467,7 +467,7 @@ public class Commemoration implements DocHandler {
             IconNames.add(NameF);
         }
 
-        LinkedHashMap finalI = new LinkedHashMap();
+        LinkedHashMap<String, Vector<String>> finalI = new LinkedHashMap<String, Vector<String>>();
         finalI.put("Images",IconImages);
         finalI.put("Names",IconNames);
         return finalI;
@@ -584,7 +584,7 @@ public class Commemoration implements DocHandler {
     }
     public boolean checkIcon(){
         //Checks whether the given commemoration has any icons assoicated with it
-    	LinkedHashMap checkIcon=getDisplayIcons();
+    	LinkedHashMap<String, Vector<String>> checkIcon=getDisplayIcons();
         return checkIcon.size() > 0;
     }
     public boolean checkPropers(){
@@ -632,7 +632,7 @@ public class Commemoration implements DocHandler {
 
 
     public static void main(String[] argz) {
-    	LinkedHashMap dayInfo = new LinkedHashMap();
+    	LinkedHashMap<String, Object> dayInfo = new LinkedHashMap<>();
         dayInfo.put("LS", "en/");
         dayInfo.put("dow", "1");
         //StringOp.dayInfo.put("")

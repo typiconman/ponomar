@@ -54,7 +54,7 @@ public final class Sunrise
 {
         private final LanguagePack phrases;//=new LanguagePack();
         private final StringOp analyse=new StringOp();
-        public Sunrise(LinkedHashMap dayInfo){
+        public Sunrise(LinkedHashMap<String, Object> dayInfo){
             analyse.setDayInfo(dayInfo);
             phrases=new LanguagePack(dayInfo);
         }
@@ -163,7 +163,7 @@ public final class Sunrise
 		// NOW, TAKE THE RAW INPUT AND PARSE IT TO HOURS / MINUTES
 		for (int i = 0; i < 2; i++)
 		{
-			String format=(String)phrases.getPhrases().get("TimeF");
+			String format= phrases.getPhrases().get("TimeF");
                         int hour = (int)Math.floor(raw[i]);
 			int minute = (int)Math.floor((raw[i] - hour) * 60);
                         /* original version
@@ -185,7 +185,7 @@ public final class Sunrise
 			}*/
 			// Changed to this by Y.S. to internationalise it.
 			if (analyse.getDayInfo().get(Constants.IDEOGRAPHIC).equals("1")) {
-				RuleBasedNumber convertN = new RuleBasedNumber((LinkedHashMap) analyse.getDayInfo().clone());
+				RuleBasedNumber convertN = new RuleBasedNumber((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
 				format = format.replace("HH", convertN.getFormattedNumber(hour));
 				format = format.replace("MM", convertN.getFormattedNumber(minute));
 

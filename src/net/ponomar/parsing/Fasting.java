@@ -45,7 +45,7 @@ public class Fasting implements DocHandler
 	private static String fast;
 	private static Helpers helper;
         private static StringOp analyse=new StringOp();
-        public Fasting(LinkedHashMap dayInfo){
+        public Fasting(LinkedHashMap<String, Object> dayInfo){
             analyse.setDayInfo(dayInfo);
             phrases=new LanguagePack(dayInfo);
         }
@@ -134,7 +134,7 @@ public class Fasting implements DocHandler
 		0000010 : Wine Permitted
 		*/
 		
-		String[] fastNames= phrases.obtainValues((String)phrases.getPhrases().get("Fasts"));
+		String[] fastNames= phrases.obtainValues(phrases.getPhrases().get("Fasts"));
 				
 		if(fast.equals("0000000"))
 		{

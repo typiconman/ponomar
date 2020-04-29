@@ -65,13 +65,13 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 		//this(null);
 	}
         
-	public IconDisplay(String[] imagesF, String[] namesF, LinkedHashMap dayInfo)
+	public IconDisplay(String[] imagesF, String[] namesF, LinkedHashMap<String, Object> dayInfo)
 	{
 		//super();
             analyse.setDayInfo(dayInfo);
              text=new LanguagePack(dayInfo);
-	 months = text.obtainValues((String)text.getPhrases().get("1"));
-         captions = text.obtainValues((String) text.getPhrases().get("IconW"));
+	 months = text.obtainValues(text.getPhrases().get("1"));
+         captions = text.obtainValues(text.getPhrases().get("IconW"));
                 
                 images=imagesF;
                 names=namesF;
@@ -435,7 +435,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 		// for testing purposes only
 		// do not run as standalone -- may explode, leak, and cause serious injury
 		// (to your computer) [just kidding]
-		LinkedHashMap dayInfo=new LinkedHashMap();
+		LinkedHashMap<String, Object> dayInfo=new LinkedHashMap<>();
                 dayInfo.put("LS","0");
                 frame = new JFrame("IconDisplay");
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

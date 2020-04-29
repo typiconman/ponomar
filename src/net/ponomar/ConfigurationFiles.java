@@ -42,7 +42,7 @@ yuri.shardt (at) gmail.com
  */
 public class ConfigurationFiles implements DocHandler
 {
-	private static LinkedHashMap Defaults;		//STORES THE START-UP VALUES FOR PONOMAR
+	private static LinkedHashMap<String, String> Defaults;		//STORES THE START-UP VALUES FOR PONOMAR
 	
 	//THIS ALLOWS THE PONOMAR CONFIGURAITON FILE TO BE MAINTAINED, UPDATED, AND READ.
 	public ConfigurationFiles()
@@ -81,10 +81,10 @@ public class ConfigurationFiles implements DocHandler
 			out.write("<CONFIGURATION>");
 			out.newLine();
 			output = new StringBuilder("<DEFAULT ");
-			for(Enumeration e=Collections.enumeration(getDefaults().keySet()); e.hasMoreElements();)				
+			for(Enumeration<String> e=Collections.enumeration(getDefaults().keySet()); e.hasMoreElements();)				
 			{
-				String key = (String) e.nextElement();
-				String value=(String) getDefaults().get(key);
+				String key = e.nextElement();
+				String value=getDefaults().get(key);
 				output.append(key).append(" = \"").append(value).append("\" ");
 			}
 			output.append(" />");
@@ -130,11 +130,11 @@ public class ConfigurationFiles implements DocHandler
 
 	public void text(String text) { }
 
-	public static LinkedHashMap getDefaults() {
+	public static LinkedHashMap<String, String> getDefaults() {
 		return Defaults;
 	}
 
-	public static void setDefaults(LinkedHashMap defaults) {
+	public static void setDefaults(LinkedHashMap<String, String> defaults) {
 		Defaults = defaults;
 	}
 }
