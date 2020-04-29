@@ -2,6 +2,7 @@ package net.ponomar;
 
 import javax.swing.*;
 import javax.swing.event.*;
+
 import java.beans.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -71,8 +72,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 	private JMenuBar menuBarElement;
 	private MenuFiles menuFiles;
 	private LanguagePack phrases;
-	private static String[] mainNames;
-	private static boolean read = false;		//DETERMINES WHICH LANGUAGE WILL BE READ
+	private String[] mainNames;
 	private String[] fileNames;
 	private String[] serviceNames;
 	private String[] bibleName;
@@ -216,6 +216,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 		//later work to implement it properly. At present, there seem to be some technical issues with obtaining
 		//everything properly.
 		Enumeration<Object> keys = UIManager.getDefaults().keys();
+		
 		while (keys.hasMoreElements()) {
 			Object key = keys.nextElement();
 			Object value = UIManager.get(key);
@@ -223,24 +224,22 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 				Font keyF = (Font) value;
 				String[] splitkey = key.toString().replace(".", ":").split(":");
 				//This prevents the font from being changed for those things that are to remain in the Latin alphabet!
-				if (splitkey.length > 1) {
-					if (splitkey[splitkey.length - 1].equals("acceleratorFont")) {
+				if (checkForAcceleratorFontSplitKey(splitkey) || checkForAcceleratorFontKey(key)) {
 						continue;
-					}
-					/*if (splitkey[0].equals("Button"))
-                    {
-                    continue;
-                    }*/
-				}
-				if (key.toString().equals("MenuItem.acceleratorFont")) {
-					continue;
 				}
 				Font newFont = new Font(currentFont.getFontName(), keyF.getStyle(), currentFont.getSize());
 				UIManager.put(key, newFont);
-				//System.out.println(key);
 			}
 		}
 		return value1;
+	}
+
+	protected boolean checkForAcceleratorFontKey(Object key) {
+		return key.toString().equals("MenuItem.acceleratorFont");
+	}
+
+	protected boolean checkForAcceleratorFontSplitKey(String[] splitkey) {
+		return splitkey.length > 1 && splitkey[splitkey.length - 1].equals("acceleratorFont");
 	}
 
 	protected void loadPhrases() {
@@ -367,44 +366,45 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 			optionsN.createDefaultWindow();
 
 		}
-		System.out.println("Action event detected." + Constants.NEWLINE + "    Event source: " + source.getText()
-		+ " (an instance of " + getClassName(source) + ")");
 	}
 
-
+	@Override
 	public void hyperlinkUpdate(HyperlinkEvent e) {
-		if (e.getEventType().toString().equals("ACTIVATED")) {
-			String cmd = e.getDescription();
-			String[] parts = cmd.split("#");
-			if (parts[0].contains("reading")) {
-				try {
-					bible.update(parts[1], parts[2]);
-					bible.setVisible(true);
-				} catch (NullPointerException npe) {
-					bible = new Bible(parts[1], parts[2], analyse.getDayInfo());
-					Helpers orient = new Helpers(analyse.getDayInfo());
-					orient.applyOrientation(bible, (ComponentOrientation) analyse.getDayInfo().get(Constants.ORIENT));
-				}
-			} else {
-				parts = cmd.split("\\?");
-				if (parts[0].contains("goDoSaint")) {
+		if (e.getEventType().equals(HyperlinkEvent.EventType.ACTIVATED)) {
+			activateHyperlink(e);
+		}
+	}
 
-					String[] parts2 = parts[1].split("=");
-					// System.out.println(parts2[1]);
-					String[] parts3 = parts2[1].split(",");
+	protected void activateHyperlink(HyperlinkEvent e) {
+		String description = e.getDescription();
+		if (description.contains("reading")) {
+			String[] bibleParts = description.split("#");
+			activateBibleHyperlink(bibleParts[1], bibleParts[2]);
+		} else if (description.contains("goDoSaint")) {
+			String queryString = description.split("\\?")[1];
+			String value = queryString.split("=")[1];
+			String[] ids = value.split(",");
+			activateSaintHyperlink(ids[0], ids[1]);
+		}
+	}
 
-					Commemoration trial1 = new Commemoration(parts3[parts3.length - 2], parts3[parts3.length - 1],
-							analyse.getDayInfo());
-					if (saintLink == null) {
-						System.out.println(parts3[parts3.length - 1]);
+	protected void activateSaintHyperlink(String sId, String cId) {
+		Commemoration commemoration = new Commemoration(sId, cId, analyse.getDayInfo());
+		if (saintLink == null) {
+			saintLink = new DoSaint(commemoration, analyse.getDayInfo());
+		} else {
+			saintLink.refresh(commemoration);
+		}
+	}
 
-						saintLink = new DoSaint(trial1, analyse.getDayInfo());
-					} else {
-						saintLink.refresh(trial1);
-					}
-
-				}
-			}
+	protected void activateBibleHyperlink(String book, String chapterAndVerse) {
+		try {
+			bible.update(book, chapterAndVerse);
+			bible.setVisible(true);
+		} catch (NullPointerException npe) {
+			bible = new Bible(book, chapterAndVerse, analyse.getDayInfo());
+			Helpers orient = new Helpers(analyse.getDayInfo());
+			orient.applyOrientation(bible, (ComponentOrientation) analyse.getDayInfo().get(Constants.ORIENT));
 		}
 	}
 
@@ -553,13 +553,13 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 	private void displayIcons(Day paschalCycle, Day solarCycle) {
 		//OrderedHashtable iconsP = (OrderedHashtable) paschalCycle.getIcon();
-		OrderedHashtable iconsM = (OrderedHashtable) solarCycle.getIcon();
+		OrderedHashtable iconsM = solarCycle.getIcon();
 
 		Vector<String> imageList = (Vector<String>) iconsM.get("Images");
 		Vector<String> namesList = (Vector<String>) iconsM.get("Names");
 
-		String[] iconImages = imageList.toArray(new String[imageList.size()]);
-		String[] iconNames = namesList.toArray(new String[namesList.size()]);
+		String[] iconImages = imageList.toArray(new String[0]);
+		String[] iconNames = namesList.toArray(new String[0]);
 
 		displayIcon.updateImagesFiled(iconImages, iconNames);
 	}
