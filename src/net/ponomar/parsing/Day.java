@@ -3,9 +3,9 @@ package net.ponomar.parsing;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import java.io.BufferedReader;
@@ -14,6 +14,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.Vector;
 
 /***********************************************************************
@@ -42,16 +43,16 @@ public class Day implements DocHandler {
     //private LanguagePack Text=new LanguagePack();
     //private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
     //private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-    private IOrderedHashtable information;
-    private IOrderedHashtable readings;
-    private IOrderedHashtable grammar;
-    private IOrderedHashtable variable;
+    private LinkedHashMap information;
+    private LinkedHashMap readings;
+    private LinkedHashMap grammar;
+    private LinkedHashMap variable;
     private String textR;
     private boolean readRH = false;
-    private IOrderedHashtable royalHours;
+    private LinkedHashMap royalHours;
     private String elemRH;
-    private IOrderedHashtable value;
-    private IOrderedHashtable serviceInfo;
+    private LinkedHashMap value;
+    private LinkedHashMap serviceInfo;
     private String location1;
     private boolean readService = false;
     private LanguagePack text;// = new LanguagePack();
@@ -66,10 +67,10 @@ public class Day implements DocHandler {
     private String forComm;//=(String)Text.Phrases.get("Commemoration2");
     private static StringOp parameterValues = new StringOp();
 
-	public Day(String fileName, IOrderedHashtable dayInfo) {
-		information = new OrderedHashtable();
-		readings = new OrderedHashtable();
-		royalHours = new OrderedHashtable();
+	public Day(String fileName, LinkedHashMap dayInfo) {
+		information = new LinkedHashMap();
+		readings = new LinkedHashMap();
+		royalHours = new LinkedHashMap();
 		parameterValues.setDayInfo(dayInfo);
 		helper = new Helpers(parameterValues.getDayInfo());
 		text = new LanguagePack(parameterValues.getDayInfo());
@@ -104,8 +105,8 @@ public class Day implements DocHandler {
         orderedCommemorations = new Vector<>();
         dayRank = -100;
 
-        information = new OrderedHashtable();
-        readings = new OrderedHashtable();
+        information = new LinkedHashMap();
+        readings = new LinkedHashMap();
         helper = new Helpers(parameterValues.getDayInfo());
         System.out.println("NOTE USING WRONG DAY INPUT FORMAT!!!!");
     }
@@ -283,7 +284,7 @@ public class Day implements DocHandler {
         return output.toString();
     }
 
-    public IOrderedHashtable getIcon() {
+    public LinkedHashMap getIcon() {
         //Ordered List of the Icons
         Vector iconImages = new Vector();
         Vector iconNames=new Vector();
@@ -322,33 +323,33 @@ public class Day implements DocHandler {
                 iconNames.add(nameF);
             }
         }
-        IOrderedHashtable finalI = new OrderedHashtable();
+        LinkedHashMap finalI = new LinkedHashMap();
         finalI.put("Images",iconImages);
         finalI.put("Names",iconNames);
         return finalI;
     }
 
-    public IOrderedHashtable getService(String node, String type) {
+    public LinkedHashMap getService(String node, String type) {
         //System.out.println(ServiceInfo);
         //System.out.println("\n\n");
         //System.out.println(Node+"/"+Type);
         if (serviceInfo.containsKey(node)) {
-        	IOrderedHashtable stuff = (IOrderedHashtable) serviceInfo.get(node);
+        	LinkedHashMap stuff = (LinkedHashMap) serviceInfo.get(node);
 
             if (stuff.containsKey(type)) {
-                return (IOrderedHashtable) stuff.get(type);
+                return (LinkedHashMap) stuff.get(type);
             } else {
                 System.out.println(commNames[0] + node + commNames[1] + type);
-                return new OrderedHashtable();
+                return new LinkedHashMap();
             }
         } else {
             System.out.println(commNames[2] + node);
-            return new OrderedHashtable();
+            return new LinkedHashMap();
         }
     }
-    public IOrderedHashtable[] getReadings(){
-    	IOrderedHashtable[] readingsA = new OrderedHashtable[orderedCommemorations.size()];
-    	IOrderedHashtable[] rInformation = new OrderedHashtable[orderedCommemorations.size()];
+    public LinkedHashMap[] getReadings(){
+    	LinkedHashMap[] readingsA = new LinkedHashMap[orderedCommemorations.size()];
+    	LinkedHashMap[] rInformation = new LinkedHashMap[orderedCommemorations.size()];
         Vector count= new Vector();
 
 
@@ -362,7 +363,7 @@ public class Day implements DocHandler {
                     count.add(i);
                     int ranked=(int) currentC.getRank();
                     //System.out.println("For "+CurrentC.getCId().toString()+" rank is "+Ranked);
-                    rInformation[i]=new OrderedHashtable();
+                    rInformation[i]=new LinkedHashMap();
 
                     //System.out.println(CurrentC.getGrammar("Short")+" "+CurrentC.getReadings());
                     //forComm=forComm.replace("^CC", CurrentC.getGrammar("Short"));
@@ -383,10 +384,10 @@ public class Day implements DocHandler {
             }
         }
         if (!count.isEmpty()){
-        	IOrderedHashtable[] readingsArray = new OrderedHashtable[count.size()];
+        	LinkedHashMap[] readingsArray = new LinkedHashMap[count.size()];
             //int count2=0;
             for (int i = 0; i < count.size(); i++) {
-                readingsArray[i]=new OrderedHashtable();
+                readingsArray[i]=new LinkedHashMap();
                 //Readings[i].put("Readings",ReadingsA[Integer.parseInt(count.get(i).toString())]);
                 readingsArray[i].put(Constants.READINGS,rInformation[Integer.parseInt(count.get(i).toString())]);
                 //count2+=1;
@@ -396,35 +397,35 @@ public class Day implements DocHandler {
         }
         else
         {
-            return new OrderedHashtable[0];
+            return new LinkedHashMap[0];
         }
         
     }
 
-    public IOrderedHashtable getRH(String node, String type) {
+    public LinkedHashMap getRH(String node, String type) {
 
         if (royalHours.containsKey(node)) {
 
 
-        	IOrderedHashtable stuff = (IOrderedHashtable) royalHours.get(node);
+        	LinkedHashMap stuff = (LinkedHashMap) royalHours.get(node);
             //System.out.println(stuff);
             if (stuff.containsKey(type)) {
-            	IOrderedHashtable stuff1 = (IOrderedHashtable) stuff.get(type);
+            	LinkedHashMap stuff1 = (LinkedHashMap) stuff.get(type);
                 return stuff1;
             } else {
                 System.out.println(commNames[3]);
-                return new OrderedHashtable();
+                return new LinkedHashMap();
             }
         } else {
             System.out.println(commNames[3]);
-            return new OrderedHashtable();
+            return new LinkedHashMap();
         }
 
 
     }
 
     public static void main(String[] argz) {
-    	parameterValues.setDayInfo(new OrderedHashtable());
+    	parameterValues.setDayInfo(new LinkedHashMap());
         parameterValues.getDayInfo().put("LS", "cu/ru/");
         parameterValues.getDayInfo().put("dow", "5");
         //Commemoration paramony = new Commemoration("P_3174");    //Paramony of Christmas
@@ -438,7 +439,7 @@ public class Day implements DocHandler {
 
         System.out.println(paramony.getCommsHyper());
         System.out.println(paramony.getDayRank());
-        IOrderedHashtable[] testing=paramony.getReadings();
+        LinkedHashMap[] testing=paramony.getReadings();
         System.out.println(testing[0].get(Constants.READINGS));
         System.out.println(testing[1].get(Constants.READINGS));
         //System.out.println(Testing[0].get("Information"));

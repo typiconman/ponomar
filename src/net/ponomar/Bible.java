@@ -11,9 +11,9 @@ import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import java.io.*;
@@ -61,14 +61,14 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     private String curpassage;
     private String lastversion = "";
     private String instructions = "";
-    private IOrderedHashtable versions = new OrderedHashtable();
-    private IOrderedHashtable versions2 = new OrderedHashtable();
-    private IOrderedHashtable books = new OrderedHashtable();
-    private IOrderedHashtable chapters = new OrderedHashtable();
-    private IOrderedHashtable abbrev = new OrderedHashtable();
+    private LinkedHashMap versions = new LinkedHashMap();
+    private LinkedHashMap versions2 = new LinkedHashMap();
+    private LinkedHashMap books = new LinkedHashMap();
+    private LinkedHashMap chapters = new LinkedHashMap();
+    private LinkedHashMap abbrev = new LinkedHashMap();
     private boolean readFile = false;
-    private IOrderedHashtable findId = new OrderedHashtable();	//ADDED Y.S.
-    private IOrderedHashtable intro = new OrderedHashtable(); //ADDED Y.S.
+    private LinkedHashMap findId = new LinkedHashMap();	//ADDED Y.S.
+    private LinkedHashMap intro = new LinkedHashMap(); //ADDED Y.S.
     private String displayFont = ""; //ALLOWS A CUSTOM FONT AND SIZE TO BE SPECIFIED FOR A GIVEN BIBLE READING: REQUIRED FOR OLD CHURCH SLAVONIC AT PRESENT
     private String displaySize = "12";  //UNTIL A COMPLETE UNICODE FONT IS AVAILIBLE.
     private Font defaultFont = new Font("", Font.BOLD, 12);		//CREATE THE DEFAULT FONT
@@ -108,7 +108,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     
 
     // CONSTRUCTOR
-    protected Bible(String curbook, String curpassage, IOrderedHashtable dayInfo) {
+    protected Bible(String curbook, String curpassage, LinkedHashMap dayInfo) {
         
         analyse.setDayInfo(dayInfo);
         text = new LanguagePack(dayInfo);
@@ -264,7 +264,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         add(splitter);
 
         //Adding a Menu Bar
-        MenuFiles demo = new MenuFiles(analyse.getDayInfo().clone());
+        MenuFiles demo = new MenuFiles((LinkedHashMap) analyse.getDayInfo().clone());
         JMenuBar menuBar = new JMenuBar();
         menuBar.add(demo.createFileMenu(this));
         menuBar.add(demo.createHelpMenu(this));
@@ -290,7 +290,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         }
 	}
 
-    public Bible(IOrderedHashtable dayInfo) {
+    public Bible(LinkedHashMap dayInfo) {
         analyse.setDayInfo(dayInfo);
         text = new LanguagePack(dayInfo);
         captions = text.obtainValues((String) text.getPhrases().get("BibleW"));
@@ -474,8 +474,8 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             //curversion = versions2.get(findId.get(versionsBox.getSelectedIndex()).toString()).toString();
             curversion = findId.get(Objects.requireNonNull(versionsBox.getSelectedItem()).toString()).toString();
             //REREAD THE BIBLE.XML FILE FOR THE NEW READINGS
-            books = new OrderedHashtable();
-            chapters = new OrderedHashtable();
+            books = new LinkedHashMap();
+            chapters = new LinkedHashMap();
             try {
 
                 BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(Constants.BML_FILE), StandardCharsets.UTF_8));	//Unicodised it.
@@ -1094,7 +1094,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         //DEBUG MODE
         System.out.println("Bible.java running in Debug mode");
         System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
-        IOrderedHashtable dayInfo = new OrderedHashtable();
+        LinkedHashMap dayInfo = new LinkedHashMap();
         dayInfo.put("LS", "0");
         new Bible(dayInfo);
     }

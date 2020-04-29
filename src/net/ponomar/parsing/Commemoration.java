@@ -7,9 +7,9 @@ import java.io.*;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 /***********************************************************************
@@ -41,16 +41,16 @@ public class Commemoration implements DocHandler {
     //private LanguagePack Text=new LanguagePack();
     //private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
     //private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-    private IOrderedHashtable information;
-    private IOrderedHashtable readings;
-    private IOrderedHashtable grammar;
-    private IOrderedHashtable variable;
+    private LinkedHashMap information;
+    private LinkedHashMap readings;
+    private LinkedHashMap grammar;
+    private LinkedHashMap variable;
     private String textR;
     private boolean readRH = false;
-    private IOrderedHashtable royalHours;
+    private LinkedHashMap royalHours;
     private String elemRH;
-    private IOrderedHashtable value;
-    private IOrderedHashtable serviceInfo;
+    private LinkedHashMap value;
+    private LinkedHashMap serviceInfo;
     private String location1;
     private boolean readService = false;
     private LanguagePack Text;// = new LanguagePack();
@@ -62,26 +62,26 @@ public class Commemoration implements DocHandler {
     private boolean presentPropers=false;
     private StringOp analyse=new StringOp();
 
-    public Commemoration(String sId, String cId,IOrderedHashtable dayInfo) {
+    public Commemoration(String sId, String cId,LinkedHashMap dayInfo) {
         analyse.setDayInfo(dayInfo);
        Text = new LanguagePack(dayInfo);
     commNames = Text.obtainValues((String) Text.getPhrases().get("Commemoration"));
     errorName=(String)Text.getPhrases().get("Commemoration3");
-        information = new OrderedHashtable();
-        readings = new OrderedHashtable();
-        royalHours = new OrderedHashtable();
-        grammar = new OrderedHashtable();
+        information = new LinkedHashMap();
+        readings = new LinkedHashMap();
+        royalHours = new LinkedHashMap();
+        grammar = new LinkedHashMap();
         information.put("SID", sId);
         information.put("CID", cId);
         helper = new Helpers(analyse.getDayInfo());
-        serviceInfo = new OrderedHashtable();
+        serviceInfo = new LinkedHashMap();
         readCommemoration(sId, cId);
 
     }
 
     public Commemoration() {
-        information = new OrderedHashtable();
-        readings = new OrderedHashtable();
+        information = new LinkedHashMap();
+        readings = new LinkedHashMap();
         helper = new Helpers(analyse.getDayInfo());
     }
 
@@ -157,7 +157,7 @@ public class Commemoration implements DocHandler {
         if (elem.equals("SERVICE") && read) {
             readService = true;
             if (serviceInfo == null) {
-                serviceInfo = new OrderedHashtable();               
+                serviceInfo = new LinkedHashMap();               
             }
 
             location1 = new String();
@@ -170,7 +170,7 @@ public class Commemoration implements DocHandler {
         if (readService && read) {
             location1 += "/" + elem;
             //elemRH=elem;
-            value = new OrderedHashtable();
+            value = new LinkedHashMap();
             for (Enumeration e = table.keys(); e.hasMoreElements();) {
                 String type = (String) e.nextElement();
                 value.put(type, table.get(type));
@@ -180,7 +180,7 @@ public class Commemoration implements DocHandler {
 
         if (readRH && read) {
             elemRH = elem;
-            value = new OrderedHashtable();
+            value = new LinkedHashMap();
             for (Enumeration e = table.keys(); e.hasMoreElements();) {
                 String type = (String) e.nextElement();
                 value.put(type, table.get(type));
@@ -207,7 +207,7 @@ public class Commemoration implements DocHandler {
         if (elem.equals("GRAMMAR") && read) {
             //THIS SHOULD ONLY BE READ ONCE PER LANGUAGE AND PASS!
             if (grammar == null) {
-                grammar = new OrderedHashtable();
+                grammar = new LinkedHashMap();
             }
             for (Enumeration e = table.keys(); e.hasMoreElements();) {
                 String type = (String) e.nextElement();
@@ -223,7 +223,7 @@ public class Commemoration implements DocHandler {
             information.put("Icon", table.get("Id").toString());
         }
         if (elem.equals("TROPARION") && read) {
-            variable = new OrderedHashtable();
+            variable = new LinkedHashMap();
             variable.put("Tone", table.get("Tone").toString());
             if (table.get("Author") != null){
             variable.put("Author", table.get("Author").toString());
@@ -231,7 +231,7 @@ public class Commemoration implements DocHandler {
             //Information.put("presentPropers",true);
         }
         if (elem.equals("KONTAKION") && read) {
-            variable = new OrderedHashtable();
+            variable = new LinkedHashMap();
             variable.put("Tone", table.get("Tone").toString());
             if (table.get("Author") != null){
             variable.put("Author", table.get("Author").toString());
@@ -296,7 +296,7 @@ public class Commemoration implements DocHandler {
                 value.put("text", textR);                
             }
             if (serviceInfo.containsKey(location1)) {
-                IOrderedHashtable stuff = (IOrderedHashtable) serviceInfo.get(location1);
+                LinkedHashMap stuff = (LinkedHashMap) serviceInfo.get(location1);
                 stuff.put(value.get("Type"), value);
                 serviceInfo.put(location1, stuff);
                 /*if(elem.equals("VERSE")){
@@ -307,7 +307,7 @@ public class Commemoration implements DocHandler {
                 //Location1=Location1.substring(0,Location1.lastIndexOf("/"));
             } else {
                 // CREATE A NEW ORDEREDHASHTABLE TO STORE THE DATA
-                IOrderedHashtable stuff = new OrderedHashtable();
+                LinkedHashMap stuff = new LinkedHashMap();
 
                 if (!(value.get("Type") == null)) {
                     //There are instances of this info
@@ -331,7 +331,7 @@ public class Commemoration implements DocHandler {
                 }
                 serviceInfo.put(location1, stuff);
             }
-            value = new OrderedHashtable();
+            value = new LinkedHashMap();
             location1 = location1.substring(0, location1.lastIndexOf("/"));             
 
             //return;
@@ -352,7 +352,7 @@ public class Commemoration implements DocHandler {
 
     public String getGrammar(String value) {
         if (Integer.parseInt(information.get("CID").toString()) != -1) {
-            grammar = (IOrderedHashtable) information.get(Constants.GRAMMAR);
+            grammar = (LinkedHashMap) information.get(Constants.GRAMMAR);
 
             if (value.equals("")) {
                 //System.out.println( Information.get("Name").toString());
@@ -426,7 +426,7 @@ public class Commemoration implements DocHandler {
     public String getIcon() {
         return information.get("Icon").toString();
     }
-    public IOrderedHashtable getDisplayIcons(){
+    public LinkedHashMap getDisplayIcons(){
 
         //Ordered List of the Icons
         Vector<String> IconImages = new Vector<>();
@@ -467,7 +467,7 @@ public class Commemoration implements DocHandler {
             IconNames.add(NameF);
         }
 
-        IOrderedHashtable finalI = new OrderedHashtable();
+        LinkedHashMap finalI = new LinkedHashMap();
         finalI.put("Images",IconImages);
         finalI.put("Names",IconNames);
         return finalI;
@@ -481,12 +481,12 @@ public class Commemoration implements DocHandler {
         return information.get("Cycle").toString();
     }
 
-    public IOrderedHashtable getReadings() {
+    public LinkedHashMap getReadings() {
         //return (OrderedHashtable) Information.get("Scripture");
         //This is a list of all possible cases:
         //1stHour,3rdHour,6thHour,9thHour,apostol,gospel,VESPERS,MATINS
-        readings = new OrderedHashtable();
-        IOrderedHashtable readingsT = getServiceNode("/VESPERS/SCRIPTURE");
+        readings = new LinkedHashMap();
+        LinkedHashMap readingsT = getServiceNode("/VESPERS/SCRIPTURE");
         if (readingsT != null) {
             readings.put("VESPERS", readingsT);            
         }
@@ -519,10 +519,10 @@ public class Commemoration implements DocHandler {
         return readings;
     }
 
-    public IOrderedHashtable getServiceNode(String Node) {
+    public LinkedHashMap getServiceNode(String Node) {
         if (serviceInfo != null) {
             if (serviceInfo.containsKey(Node)) {
-            	IOrderedHashtable stuff = (IOrderedHashtable) serviceInfo.get(Node);
+            	LinkedHashMap stuff = (LinkedHashMap) serviceInfo.get(Node);
 
 
                 return stuff;
@@ -534,16 +534,16 @@ public class Commemoration implements DocHandler {
 
     }
 
-    public IOrderedHashtable getService(String Node, String Type) {
+    public LinkedHashMap getService(String Node, String Type) {
         //System.out.println(ServiceInfo);
         //System.out.println("\n\n");
         //System.out.println(Node+"/"+Type);
         //System.out.println(ServiceInfo.get(Node));
         if (serviceInfo.containsKey(Node)) {
-        	IOrderedHashtable stuff = (IOrderedHashtable) serviceInfo.get(Node);
+        	LinkedHashMap stuff = (LinkedHashMap) serviceInfo.get(Node);
 
             if (stuff.containsKey(Type)) {
-            	IOrderedHashtable stuff1 = (IOrderedHashtable) stuff.get(Type);
+            	LinkedHashMap stuff1 = (LinkedHashMap) stuff.get(Type);
 
                 return stuff1;
             } else {
@@ -556,19 +556,19 @@ public class Commemoration implements DocHandler {
         }
     }
 
-    public IOrderedHashtable getRH(String Node, String Type) {
+    public LinkedHashMap getRH(String Node, String Type) {
 
         if (royalHours.containsKey(Node)) {
 
 
-        	IOrderedHashtable stuff = (IOrderedHashtable) royalHours.get(Node);
+        	LinkedHashMap stuff = (LinkedHashMap) royalHours.get(Node);
             //System.out.println(stuff);
             if (stuff.containsKey(Type)) {
-            	IOrderedHashtable stuff1 = (IOrderedHashtable) stuff.get(Type);
+            	LinkedHashMap stuff1 = (LinkedHashMap) stuff.get(Type);
                 return stuff1;
             } else {
                 System.out.println(commNames[3]);
-                return new OrderedHashtable();
+                return new LinkedHashMap();
             }
         } else {
             System.out.println(commNames[3]);
@@ -584,7 +584,7 @@ public class Commemoration implements DocHandler {
     }
     public boolean checkIcon(){
         //Checks whether the given commemoration has any icons assoicated with it
-    	IOrderedHashtable checkIcon=getDisplayIcons();
+    	LinkedHashMap checkIcon=getDisplayIcons();
         return checkIcon.size() > 0;
     }
     public boolean checkPropers(){
@@ -632,7 +632,7 @@ public class Commemoration implements DocHandler {
 
 
     public static void main(String[] argz) {
-    	IOrderedHashtable dayInfo = new OrderedHashtable();
+    	LinkedHashMap dayInfo = new LinkedHashMap();
         dayInfo.put("LS", "en/");
         dayInfo.put("dow", "1");
         //StringOp.dayInfo.put("")

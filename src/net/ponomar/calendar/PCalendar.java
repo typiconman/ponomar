@@ -1,8 +1,10 @@
 package net.ponomar.calendar;
 
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
+import java.util.LinkedHashMap;
+
 import net.ponomar.utility.StringOp;
 
 //Copyright 2012 Yuri Shardt
@@ -20,10 +22,10 @@ public class PCalendar implements Cloneable
         public final static String GREGORIAN="gregorian"; //Fixes the spelling of the Gregorian option
         private StringOp Analyse=new StringOp();
 
-        public PCalendar(JDate date1, String calendar,IOrderedHashtable iOrderedHashtable){
+        public PCalendar(JDate date1, String calendar,LinkedHashMap dayInfo){
             date=date1;
             type=calendar;
-            Analyse.setDayInfo(iOrderedHashtable);
+            Analyse.setDayInfo(dayInfo);
         }
         //Computes the Julian Day given the calendar type
         private double JulianDay(){
@@ -53,7 +55,7 @@ public class PCalendar implements Cloneable
             if (type.equals(GREGORIAN)){
                 difference=getDiff();
             }
-            PCalendar cutoff=new PCalendar(new JDate(9,1,date.getYear()),JULIAN,Analyse.getDayInfo().clone());
+            PCalendar cutoff=new PCalendar(new JDate(9,1,date.getYear()),JULIAN,(LinkedHashMap) Analyse.getDayInfo().clone());
             double year=date.getYear();
             double AM=5508- Math.floor(difference / 365) + year;
             if (JulianDay()>=cutoff.JulianDay()){
@@ -62,14 +64,14 @@ public class PCalendar implements Cloneable
             return (int)AM;
         }
         public double getDiff(){
-            PCalendar test=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),JULIAN,Analyse.getDayInfo().clone());
-            PCalendar test2=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),GREGORIAN,Analyse.getDayInfo().clone());
+            PCalendar test=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),JULIAN,(LinkedHashMap) Analyse.getDayInfo().clone());
+            PCalendar test2=new PCalendar(new JDate(date.getMonth(),date.getDay(),date.getYear()),GREGORIAN,(LinkedHashMap) Analyse.getDayInfo().clone());
             return (test.JulianDay()-test2.JulianDay());
         }
 
         public Object clone()
 	{
-		return new PCalendar(date, type,Analyse.getDayInfo().clone());
+		return new PCalendar(date, type,(LinkedHashMap) Analyse.getDayInfo().clone());
 	}
         //RETURNS THE YEAR, MONTH, DAY IN THE JULIAN CALENDAR
         private int[] getJulianDate(){
@@ -163,7 +165,7 @@ public class PCalendar implements Cloneable
 
         public static void main(String[] argz)
 	{
-        	IOrderedHashtable dayInfo=new OrderedHashtable();
+        	LinkedHashMap dayInfo=new LinkedHashMap();
             dayInfo.put("LS", "en/");
             PCalendar test=new PCalendar(new JDate(10,4,1957),GREGORIAN,dayInfo);
             System.out.println(test.JulianDay());

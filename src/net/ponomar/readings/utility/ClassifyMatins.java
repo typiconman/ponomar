@@ -2,11 +2,12 @@ package net.ponomar.readings.utility;
 
 import net.ponomar.readings.Matins;
 import net.ponomar.utility.Constants;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
+import java.util.LinkedHashMap;
 import java.util.Vector;
 
 public class ClassifyMatins extends ClassifyReadings {
@@ -14,20 +15,20 @@ public class ClassifyMatins extends ClassifyReadings {
     public ClassifyMatins() {
     }
 
-    public ClassifyMatins(IOrderedHashtable readingsInA) {
+    public ClassifyMatins(LinkedHashMap readingsInA) {
 		StringOp Testing = new StringOp();
         ParameterValues.setDayInfo(Matins.getInformation3().getDayInfo());
         classify(readingsInA);
     }
 
-    public ClassifyMatins(Matins matins, IOrderedHashtable readingsInA, StringOp ParameterValues) {
+    public ClassifyMatins(Matins matins, LinkedHashMap readingsInA, StringOp ParameterValues) {
 		classify(readingsInA);
 
     }
-    private void classify(IOrderedHashtable readingsIn)
+    private void classify(LinkedHashMap readingsIn)
     {
         //Initialise Information.
-        Information2=new OrderedHashtable();
+        Information2=new LinkedHashMap();
         /*try {
             FileReader frf = new FileReader(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/Matins.xml"));
             //System.out.println(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), Constants.DIVINE_LITURGY));

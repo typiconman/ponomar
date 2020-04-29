@@ -8,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 
 /***************************************************************
 RULEBASEDNUMBER.java :: MODULE THAT CONVERTS A DECIMAL NUMBER TO AN IDEOGRAPHIC NUMBER, THAT IS,
@@ -67,11 +68,11 @@ public class RuleBasedNumber implements DocHandler
      */
     //private String fformat=".#{'!','2'}['$@','2','N > 10']#['<','2','N > 1000']{'>','7'}#."; //Any marks that need to be added on top of the final number
     private String fformat="###";
-    private IOrderedHashtable Phrases;		//STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT INTERFACE LANGUAGE.
+    private LinkedHashMap Phrases;		//STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT INTERFACE LANGUAGE.
     private boolean readRules=false;
     private StringOp analyse= new StringOp();
 
-    public RuleBasedNumber(IOrderedHashtable dayInfo)
+    public RuleBasedNumber(LinkedHashMap dayInfo)
 	{
     	//Do nothing right now; later load the required rules.
         analyse.setDayInfo(dayInfo);
@@ -536,7 +537,7 @@ public class RuleBasedNumber implements DocHandler
         //DEBUG MODE
         System.out.println("RuleBasedNumber.java running in Debug mode");
         System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
-        IOrderedHashtable dayInfo = new OrderedHashtable();
+        LinkedHashMap dayInfo = new LinkedHashMap();
         dayInfo.put("LS","6");
 
         RuleBasedNumber test=new RuleBasedNumber(dayInfo);

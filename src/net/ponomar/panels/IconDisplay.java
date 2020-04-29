@@ -4,15 +4,16 @@ import javax.swing.*;
 
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.beans.*;
 import java.net.URL;
+import java.util.LinkedHashMap;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import javax.imageio.ImageIO;
@@ -64,7 +65,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 		//this(null);
 	}
         
-	public IconDisplay(String[] imagesF, String[] namesF, IOrderedHashtable dayInfo)
+	public IconDisplay(String[] imagesF, String[] namesF, LinkedHashMap dayInfo)
 	{
 		//super();
             analyse.setDayInfo(dayInfo);
@@ -434,7 +435,7 @@ public class IconDisplay extends JPanel implements ActionListener, FocusListener
 		// for testing purposes only
 		// do not run as standalone -- may explode, leak, and cause serious injury
 		// (to your computer) [just kidding]
-		IOrderedHashtable dayInfo=new OrderedHashtable();
+		LinkedHashMap dayInfo=new LinkedHashMap();
                 dayInfo.put("LS","0");
                 frame = new JFrame("IconDisplay");
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

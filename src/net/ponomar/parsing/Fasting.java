@@ -3,9 +3,9 @@ package net.ponomar.parsing;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import java.io.BufferedReader;
@@ -13,6 +13,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 /***********************************************************************
 THIS MODULE READS THE FASTING.XML FILE TO DETERMINE THE FAST ON A GIVEN DAY
 
@@ -35,7 +36,7 @@ public class Fasting implements DocHandler
 	private static final String FASTING_FILE   = Constants.COMMANDS + "Fasting.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
-	private static IOrderedHashtable information;
+	private static LinkedHashMap information;
 	
 	private LanguagePack phrases;
 	//GET THE APPROPRIATE FASTING LINES
@@ -44,7 +45,7 @@ public class Fasting implements DocHandler
 	private static String fast;
 	private static Helpers helper;
         private static StringOp analyse=new StringOp();
-        public Fasting(IOrderedHashtable dayInfo){
+        public Fasting(LinkedHashMap dayInfo){
             analyse.setDayInfo(dayInfo);
             phrases=new LanguagePack(dayInfo);
         }
@@ -53,7 +54,7 @@ public class Fasting implements DocHandler
             
             fast="";
 		helper=new Helpers(analyse.getDayInfo());
-		information=new OrderedHashtable();
+		information=new LinkedHashMap();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
                 //I have removed the klutz, as dRank has been properly implemented! Y.S 2010/02/02 n.s.

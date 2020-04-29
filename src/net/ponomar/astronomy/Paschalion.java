@@ -4,8 +4,8 @@ import java.util.*;
 
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 
 /***************************************************************************
  Paschalion.java - A CLASS FOR WORKING WITH THE PASCHALION OF THE ORTHODOX CHURCH
@@ -281,7 +281,7 @@ public final class Paschalion
 	}
 
 	// CONVERT ABOVE TO A STRING WITH THE PHASE OF THE MOON
-	protected static String getLunarPhaseString(JDate date, IOrderedHashtable dayInfo) throws IllegalArgumentException
+	protected static String getLunarPhaseString(JDate date, LinkedHashMap dayInfo) throws IllegalArgumentException
 	{
 		double raw;
 
@@ -531,7 +531,7 @@ public final class Paschalion
 	//	FIRST ENTRY: THE julian date of a feast
 	//	SECOND ENTRY: A STRING DESCRIBING THAT FEAST
 	// THROWS: ditto
-	public static Hashtable<Long, String> getFeasts(int year, IOrderedHashtable dayInfo) throws IllegalArgumentException
+	public static Hashtable<Long, String> getFeasts(int year, LinkedHashMap dayInfo) throws IllegalArgumentException
 	{
 		if (year < 33)
 		{

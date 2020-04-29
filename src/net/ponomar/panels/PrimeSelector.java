@@ -2,7 +2,7 @@ package net.ponomar.panels;
 
 import net.ponomar.ConfigurationFiles;
 import net.ponomar.internationalization.LanguagePack;
-import net.ponomar.utility.IOrderedHashtable;
+ 
 import net.ponomar.utility.StringOp;
 
 import javax.swing.*;
@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.util.LinkedHashMap;
 
 /***************************************************************
 GospelSelector.java :: MODULE THAT ALLOWS THE USER TO SELECT, USING RADIO BUTTONS,
@@ -59,7 +60,7 @@ public class PrimeSelector extends JPanel implements ActionListener, PropertyCha
 	private static String readingLocation2=primesDefault[1];
         private StringOp analyse=new StringOp();
 	
-	public PrimeSelector(IOrderedHashtable dayInfo)
+	public PrimeSelector(LinkedHashMap dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             text=new LanguagePack(dayInfo);

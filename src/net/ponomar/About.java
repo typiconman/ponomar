@@ -3,12 +3,13 @@ package net.ponomar;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.LinkedHashMap;
 
 /********************************************************************
 Copyright 2008 Yuri Shardt
@@ -40,7 +41,7 @@ public class About extends JFrame
 	private LanguagePack ponomar;//=new LanguagePack();
 	private String value;//=(String)Ponomar.Phrases.get("0");
         private StringOp analyse=new StringOp();
-	public About(IOrderedHashtable dayInfo)
+	public About(LinkedHashMap dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             ponomar=new LanguagePack(dayInfo);

@@ -5,12 +5,13 @@ import javax.swing.*;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.internationalization.LanguageSelector;
 import net.ponomar.panels.GospelSelector;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import java.awt.event.*;
 import java.beans.*;
+import java.util.LinkedHashMap;
 
 /************************************************************
  * 
@@ -51,7 +52,7 @@ public class MenuFiles extends JMenu implements ItemListener, PropertyChangeList
 	private final String[] helpNames;// =Text.obtainValues((String)Text.Phrases.get("Help"));
 	private final StringOp analyse = new StringOp();
 
-	public MenuFiles(IOrderedHashtable dayInfo) {
+	public MenuFiles(LinkedHashMap dayInfo) {
 		analyse.setDayInfo(dayInfo);
 		text = new LanguagePack(dayInfo);
 		saintNames = text.obtainValues((String) text.getPhrases().get("SMenu"));
@@ -71,8 +72,8 @@ public class MenuFiles extends JMenu implements ItemListener, PropertyChangeList
 		gospelSelection.addPropertyChangeListener(pl);
 		optionsMenu.add(gospelSelectionMenu);
 
-		languageSelection = new LanguageSelector(analyse.getDayInfo().clone());
-		JMenu languageSelectionMenu = languageSelection.createLanguageMenu(analyse.getDayInfo().clone());
+		languageSelection = new LanguageSelector((LinkedHashMap) analyse.getDayInfo().clone());
+		JMenu languageSelectionMenu = languageSelection.createLanguageMenu((LinkedHashMap) analyse.getDayInfo().clone());
 		languageSelection.addPropertyChangeListener(pl);
 		optionsMenu.add(languageSelectionMenu);
 

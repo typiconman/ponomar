@@ -7,9 +7,9 @@ import java.nio.charset.StandardCharsets;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 /***********************************************************************
 THIS MODULE READS THE ServiceRules.XML FILE TO DETERMINE THE CORRECT
@@ -34,17 +34,17 @@ public class ServiceInfo implements DocHandler
 	private static final String FILENAME   = Constants.COMMANDS + "ServiceRules.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
-	private static IOrderedHashtable information;
+	private static LinkedHashMap information;
 	
 	private LanguagePack phrases;//=new LanguagePack();
 	//GET THE APPROPRIATE FASTING LINES
 	//private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-	private static IOrderedHashtable service;
+	private static LinkedHashMap service;
 	private String type;
         private Helpers findLanguage;
 	private StringOp analyse=new StringOp();
-	public ServiceInfo(String info, IOrderedHashtable dayInfo)
+	public ServiceInfo(String info, LinkedHashMap dayInfo)
 	{
 		type = info;
                 findLanguage=new Helpers(analyse.getDayInfo());
@@ -52,10 +52,10 @@ public class ServiceInfo implements DocHandler
                 phrases=new LanguagePack(dayInfo);
 	}
 	
-	public IOrderedHashtable serviceRules() //throws IOException
+	public LinkedHashMap serviceRules() //throws IOException
 	{
-		service=new OrderedHashtable();
-		information=new OrderedHashtable();
+		service=new LinkedHashMap();
+		information=new LinkedHashMap();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
 		/*StringOp.dayInfo.put("dRank",1);	//ANY RANK LESS THAN 4 WILL DO

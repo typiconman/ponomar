@@ -26,10 +26,10 @@ import net.ponomar.services.SixthHour;
 import net.ponomar.services.ThirdHour;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
+ 
 import net.ponomar.utility.MenologionContent;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 /* * Copyright 2006, 2007, 2008, 2009, 2010, 2012 Aleksandr Andreev and Yuri
@@ -168,7 +168,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 	 * Y.S. 2008/08/11 n.s.
 	 */
 	protected void addMenuBar() {
-		menuFiles = new MenuFiles(analyse.getDayInfo().clone());
+		menuFiles = new MenuFiles((LinkedHashMap) analyse.getDayInfo().clone());
 		menuBarElement = new JMenuBar();
 		menuBarElement.add(menuFiles.createFileMenu(this));
 		menuBarElement.add(menuFiles.createOptionsMenu(this, this));
@@ -249,7 +249,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 		//WE NEED THIS HANDY STORER OF VALUES NOW.
 		//StringOp.dayInfo = new OrderedHashtable();
 		//DETERMINE THE DEFAULTS
-		ConfigurationFiles.setDefaults(new OrderedHashtable());
+		ConfigurationFiles.setDefaults(new LinkedHashMap());
 		ConfigurationFiles.ReadFile();
 		languageLocation = new LanguageSelector(analyse.getDayInfo());
 
@@ -495,14 +495,14 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 
 		content += Constants.DOUBLE_LINEBREAK;
-		IOrderedHashtable[] paschalReadings = paschalCycle.getReadings();
+		LinkedHashMap[] paschalReadings = paschalCycle.getReadings();
 		//System.out.println("Length of Ordinary Readings="+PaschalReadings.length);
 
-		IOrderedHashtable[] menaionReadings = solarCycle.getReadings();
+		LinkedHashMap[] menaionReadings = solarCycle.getReadings();
 		Bible shortForm = new Bible(analyse.getDayInfo());
 		//System.out.println("First Paschal Reading is :"+PaschalReadings[0].get(READINGS));
 		//System.out.println("First Menologion Reading is :"+MenaionReadings[0].get(READINGS));
-		IOrderedHashtable combinedReadings = new OrderedHashtable();
+		LinkedHashMap combinedReadings = new LinkedHashMap();
 		//for(int j=0;j<7;j++){
 		ReadingUtility.processMenaionPaschalReadings(menaionReadings, combinedReadings);
 		ReadingUtility.processMenaionPaschalReadings(paschalReadings, combinedReadings);
@@ -555,7 +555,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 	private void displayIcons(Day paschalCycle, Day solarCycle) {
 		//OrderedHashtable iconsP = (OrderedHashtable) paschalCycle.getIcon();
-		IOrderedHashtable iconsM = solarCycle.getIcon();
+		LinkedHashMap iconsM = solarCycle.getIcon();
 
 		Vector<String> imageList = (Vector<String>) iconsM.get("Images");
 		Vector<String> namesList = (Vector<String>) iconsM.get("Names");

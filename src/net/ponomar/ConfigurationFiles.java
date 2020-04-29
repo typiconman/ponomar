@@ -3,13 +3,15 @@ package net.ponomar;
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 
 /***************************************************************
 ConfigurationFiles.java is part of the Ponomar project.
@@ -40,7 +42,7 @@ yuri.shardt (at) gmail.com
  */
 public class ConfigurationFiles implements DocHandler
 {
-	private static IOrderedHashtable Defaults;		//STORES THE START-UP VALUES FOR PONOMAR
+	private static LinkedHashMap Defaults;		//STORES THE START-UP VALUES FOR PONOMAR
 	
 	//THIS ALLOWS THE PONOMAR CONFIGURAITON FILE TO BE MAINTAINED, UPDATED, AND READ.
 	public ConfigurationFiles()
@@ -79,7 +81,7 @@ public class ConfigurationFiles implements DocHandler
 			out.write("<CONFIGURATION>");
 			out.newLine();
 			output = new StringBuilder("<DEFAULT ");
-			for(Enumeration e=getDefaults().keys(); e.hasMoreElements();)
+			for(Enumeration e=Collections.enumeration(getDefaults().keySet()); e.hasMoreElements();)				
 			{
 				String key = (String) e.nextElement();
 				String value=(String) getDefaults().get(key);
@@ -128,11 +130,11 @@ public class ConfigurationFiles implements DocHandler
 
 	public void text(String text) { }
 
-	public static IOrderedHashtable getDefaults() {
+	public static LinkedHashMap getDefaults() {
 		return Defaults;
 	}
 
-	public static void setDefaults(IOrderedHashtable defaults) {
+	public static void setDefaults(LinkedHashMap defaults) {
 		Defaults = defaults;
 	}
 }

@@ -3,8 +3,8 @@ package net.ponomar.calendar;
 import net.ponomar.astronomy.Paschalion;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import javax.swing.*;
@@ -15,6 +15,7 @@ import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.Locale;
 
 /**************************************************************
@@ -84,7 +85,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
         //(String)Text.Phrases.get("LanguageMenu")
         private DecimalFormat df;//=(DecimalFormat)numFormat;
 
-	protected JDaySelector(IOrderedHashtable dayInfo)
+	protected JDaySelector(LinkedHashMap dayInfo)
 	{
             Analyse.setDayInfo(dayInfo);
             Text=new LanguagePack(dayInfo);

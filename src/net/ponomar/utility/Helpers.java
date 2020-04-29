@@ -20,7 +20,7 @@ public class Helpers
 	//private String[] PrimesNames=Text.obtainValues((String)Text.Phrases.get("Primes"));
 	private StringOp analyse=new StringOp();
 
-        public Helpers(IOrderedHashtable dayInfo){
+        public Helpers(LinkedHashMap dayInfo){
             analyse.setDayInfo(dayInfo);
         }
 	

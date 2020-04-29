@@ -4,8 +4,8 @@ import java.util.*;
 
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.RuleBasedNumber;
 import net.ponomar.utility.StringOp;
 
@@ -291,7 +291,7 @@ public class JDate implements Comparable, Cloneable
 
 		return new Date(y - 1900, m - 1, d); // return the date object
 	}
-	public String getGregorianDateS(IOrderedHashtable dayInfo)
+	public String getGregorianDateS(LinkedHashMap dayInfo)
 	{
             Analyse.setDayInfo(dayInfo);
             Phrases=new LanguagePack(dayInfo);
@@ -430,7 +430,7 @@ public class JDate implements Comparable, Cloneable
 	// A METHOD TO OBTAIN A STRING FROM A JDATE OBJECT
 	// PARAMETERS: NONE
 	// RETURNS: A STRING WITH THE STRING VALUE OF A DATE
-	public String toString(IOrderedHashtable dayInfo)
+	public String toString(LinkedHashMap dayInfo)
 	{
            Analyse.setDayInfo(dayInfo);
             Phrases=new LanguagePack(dayInfo);

@@ -17,9 +17,9 @@ import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 /***********************************************************************
@@ -73,7 +73,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     private String name = "";
     private String copyright = ""; //Any additional information about the life.
     private LanguagePack text; //= new LanguagePack();
-    private IOrderedHashtable podobni;
+    private LinkedHashMap podobni;
     
     
     //private static String fileNameIn = Constants.SERVICES_PATH + "PRIMES1/";
@@ -101,7 +101,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     private String name2;
     private StringOp analyse=new StringOp();
 
-    public DoSaint(Commemoration saintInfo, IOrderedHashtable dayInfo) {
+    public DoSaint(Commemoration saintInfo, LinkedHashMap dayInfo) {
         //Get the Podobni
         analyse.setDayInfo(dayInfo);
         text = new LanguagePack(dayInfo);
@@ -112,7 +112,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     helpNames = text.obtainValues((String) text.getPhrases().get("Help"));
     helper=new Helpers(analyse.getDayInfo());
 
-        podobni = new OrderedHashtable();
+        podobni = new LinkedHashMap();
         try {
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),PODOBNI)), StandardCharsets.UTF_8));
             QDParser.parse(this, frf);
@@ -136,7 +136,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         name2=saintInfo2.getGrammar("Short");
         life=saintInfo2.getLife();
         copyright=saintInfo2.getLifeCopyright();
-        IOrderedHashtable troparInfo=(IOrderedHashtable)saintInfo2.getService("/LITURGY/TROPARION","1");
+        LinkedHashMap troparInfo=(LinkedHashMap)saintInfo2.getService("/LITURGY/TROPARION","1");
          if (troparInfo !=null){
         tropar=troparInfo.get("text").toString();
         troparT=troparInfo.get("Tone").toString();
@@ -147,7 +147,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             tropar=null;
         }
 
-         IOrderedHashtable troparInfo2=(IOrderedHashtable)saintInfo2.getService("/LITURGY/TROPARION","2");
+         LinkedHashMap troparInfo2=(LinkedHashMap)saintInfo2.getService("/LITURGY/TROPARION","2");
         if (troparInfo2 !=null){
         tropar2=troparInfo2.get("text").toString();
         troparT2=troparInfo2.get("Tone").toString();
@@ -159,7 +159,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         }
          
 
-        IOrderedHashtable kontakionInfo=(IOrderedHashtable)saintInfo2.getService("/LITURGY/KONTAKION","1");
+        LinkedHashMap kontakionInfo=(LinkedHashMap)saintInfo2.getService("/LITURGY/KONTAKION","1");
         if (kontakionInfo !=null){
         kondak=kontakionInfo.get("text").toString();
         kondakT=kontakionInfo.get("Tone").toString();
@@ -170,7 +170,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             kondak=null;
          }
 
-        IOrderedHashtable kontakionInfo2=(IOrderedHashtable)saintInfo2.getService("/LITURGY/KONTAKION","2");
+        LinkedHashMap kontakionInfo2=(LinkedHashMap)saintInfo2.getService("/LITURGY/KONTAKION","2");
         if (kontakionInfo2 !=null){
         kondak2=kontakionInfo2.get("text").toString();
         kondakT2=kontakionInfo2.get("Tone").toString();
@@ -377,7 +377,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         //frames.setContentPane(contentPane);
         
 
-        IOrderedHashtable iconsM=(IOrderedHashtable)saintInfo2.getDisplayIcons();
+        LinkedHashMap iconsM=(LinkedHashMap)saintInfo2.getDisplayIcons();
         Vector imageList=(Vector)iconsM.get("Images");
                 Vector namesList=(Vector)iconsM.get("Names");
                 String[] iconImages=new String[imageList.size()];
@@ -642,7 +642,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     public static void main(String[] argz) {
 
 
-        IOrderedHashtable dayInfo = new OrderedHashtable();
+        LinkedHashMap dayInfo = new LinkedHashMap();
         dayInfo.put("LS", "0");
         /*setTitle((String)Phrases.Phrases.get("0"));
         RSep=(String)Phrases.Phrases.get("ReadSep");

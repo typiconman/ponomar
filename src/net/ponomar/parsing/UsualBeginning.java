@@ -1,8 +1,10 @@
 package net.ponomar.parsing;
 
+import java.util.LinkedHashMap;
+
 import net.ponomar.utility.Constants;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 
@@ -40,11 +42,11 @@ public class UsualBeginning
 		analyse.getDayInfo().put("nday",250);
 		analyse.getDayInfo().put("LS",0);
 		final String UsualFileName = "src/"+ Constants.SERVICES_PATH + "UsualBeginning/"; // THE LOCATION FOR ANY EXTRA INFORMATION
-		Service test2=new Service(analyse.getDayInfo().clone());
+		Service test2=new Service((LinkedHashMap) analyse.getDayInfo().clone());
 		 test2.readService(UsualFileName+"UsualBeginning.xml");
 		usualBeginning1=test2.service1;
 	}	
-	public UsualBeginning(IOrderedHashtable dayInfo)
+	public UsualBeginning(LinkedHashMap dayInfo)
 	{
 		final String UsualFileName = "src/" + Constants.SERVICES_PATH + "UsualBeginning/";
 		Service test2=new Service(dayInfo);

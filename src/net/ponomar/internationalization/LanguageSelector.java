@@ -5,13 +5,14 @@ import javax.swing.*;
 import net.ponomar.ConfigurationFiles;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.beans.*;
+import java.util.LinkedHashMap;
 
 /***************************************************************
 LanguageSelector.java :: MODULE THAT ALLOWS THE USER TO SELECT, USING A COMBOBOX,
@@ -49,7 +50,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	
 
 	
-	public LanguageSelector(IOrderedHashtable dayInfo)
+	public LanguageSelector(LinkedHashMap dayInfo)
 	{
 	analyse.setDayInfo(dayInfo);
                 languageDefault = (String) ConfigurationFiles.getDefaults().get(LANGUAGE);
@@ -71,7 +72,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 		}
 	
 	}
-	public JMenu createLanguageMenu(IOrderedHashtable dayInfo)
+	public JMenu createLanguageMenu(LinkedHashMap dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             Font currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
@@ -96,7 +97,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 		{
                     //System.out.println(AvailableLanguages[i]);
                     Helpers getFile=new Helpers(analyse.getDayInfo());
-                    LanguagePack lang=new LanguagePack(getFile.langFileFind(availableLanguages[i], Constants.LANGUAGE_PACKS),analyse.getDayInfo().clone());
+                    LanguagePack lang=new LanguagePack(getFile.langFileFind(availableLanguages[i], Constants.LANGUAGE_PACKS),(LinkedHashMap) analyse.getDayInfo().clone());
                     nameLanguages[i]= lang.getPhrases().get("NameLocal").toString();
                     languageBox=new JRadioButtonMenuItem(lang.getPhrases().get("NameLocal").toString());
 			languageBox.addActionListener(this);	
@@ -147,7 +148,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	
 	public void actionPerformed(ActionEvent e)
 	{
-		LanguagePack text=new LanguagePack(analyse.getDayInfo().clone());
+		LanguagePack text=new LanguagePack((LinkedHashMap) analyse.getDayInfo().clone());
 		String [] languageNames=text.obtainValues((String)text.getPhrases().get(Constants.LANGUAGE_MENU));
 		//THIS WILL DETERMINE THE APPROPRIATE LANGUAGE LOCATION
 		languageLocation=e.getActionCommand();

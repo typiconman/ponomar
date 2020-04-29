@@ -5,9 +5,9 @@ import javax.swing.*;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import java.awt.*;
@@ -61,11 +61,11 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
         private boolean ignore=true;
 
 
-	public Options(IOrderedHashtable dayInfo)
+	public Options(LinkedHashMap dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             text=new LanguagePack(dayInfo);
-            ConfigurationFiles.setDefaults(new OrderedHashtable());
+            ConfigurationFiles.setDefaults(new LinkedHashMap());
             ConfigurationFiles.ReadFile();
             
             optionsStrings=text.obtainValues((String)text.getPhrases().get("Options2"));
@@ -369,7 +369,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
 		System.out.println("Options.java running in Debug mode");
 		System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
 
-		IOrderedHashtable dayInfo = new OrderedHashtable();
+		LinkedHashMap dayInfo = new LinkedHashMap();
 
                 dayInfo.put("dow",3);
                 dayInfo.put("doy",357);

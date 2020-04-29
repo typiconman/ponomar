@@ -1,5 +1,7 @@
 package net.ponomar.utility;
 
+import java.util.LinkedHashMap;
+
 /*****************************************************************************
  StringOp.java :: A CLASS TO HANDLE ADDITIONAL STRING OPERATIONS 
  FOR THE PONOMAR PROGRAM(ME)
@@ -38,10 +40,10 @@ public final class StringOp implements Cloneable
 	//private static LanguagePack Phrases = new LanguagePack();
 	//private static String [] Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
 
-   private IOrderedHashtable dayInfo;
+   private LinkedHashMap dayInfo;
    public StringOp()
    {
-       dayInfo=new OrderedHashtable();
+       dayInfo=new LinkedHashMap();
    }
 // JOINS THE MEMBERS OF AN ARRAY, ANALAGOUS TO PERL'S join FUNCTION
 protected static String join(String[] pieces)
@@ -439,17 +441,17 @@ private static double bool2double(boolean expression)
 	}
 	return result;
 }
-public IOrderedHashtable getDayInfo() {
+public LinkedHashMap getDayInfo() {
 	return dayInfo;
 }
-public void setDayInfo(IOrderedHashtable dayInfo) {
+public void setDayInfo(LinkedHashMap dayInfo) {
 	this.dayInfo = dayInfo;
 }
 public StringOp clone(){
     StringOp aped=new StringOp();
     //aped=this;
     //To implement cloning of the table here is required.
-	aped.dayInfo= this.dayInfo.clone();//testing;
+	aped.dayInfo= (LinkedHashMap) this.dayInfo.clone();//testing;
     return aped;
 }
 // CAN BE USED TO TEST eval(String) AGAINST OUTPUT FROM KNOWN SOURCE, E.G. MATLAB

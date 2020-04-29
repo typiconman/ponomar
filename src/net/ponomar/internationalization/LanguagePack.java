@@ -4,9 +4,9 @@ import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import java.io.BufferedReader;
@@ -14,6 +14,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 
 /***************************************************************
 LanguagePack.java :: MODULE THAT DETERMINES THE LANGUAGE SPECIFIC OUTPUTS
@@ -36,22 +37,22 @@ yuri (dot) shardt (at) gmail.com
 **************************************************************/
 
 public class LanguagePack implements DocHandler {
-	private IOrderedHashtable requiredPhrases; // STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT
+	private LinkedHashMap requiredPhrases; // STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT
 												// INTERFACE LANGUAGE.
 	private boolean readPhrases = false; // DETERMINE WHETHER TO READ OR NOT TO READ THE GIVEN PHRASES (THIS MUST BE
 											// ADDED TO ALL THE READERS).
 	private final StringOp analyse = new StringOp();
 
-	public LanguagePack(IOrderedHashtable dayInfo) {
-		setPhrases(new OrderedHashtable());
+	public LanguagePack(LinkedHashMap dayInfo) {
+		setPhrases(new LinkedHashMap());
 		analyse.setDayInfo(dayInfo);
 		readPhrases();
 
 	}
 
-	public LanguagePack(String path, IOrderedHashtable dayInfo) {
+	public LanguagePack(String path, LinkedHashMap dayInfo) {
 		analyse.setDayInfo(dayInfo);
-		setPhrases(new OrderedHashtable());
+		setPhrases(new LinkedHashMap());
 		readPhrases(path);
 
 	}
@@ -123,11 +124,11 @@ public class LanguagePack implements DocHandler {
 		}
 	}
 
-	public IOrderedHashtable getPhrases() {
+	public LinkedHashMap getPhrases() {
 		return requiredPhrases;
 	}
 
-	public void setPhrases(IOrderedHashtable phrases) {
+	public void setPhrases(LinkedHashMap phrases) {
 		requiredPhrases = phrases;
 	}
 

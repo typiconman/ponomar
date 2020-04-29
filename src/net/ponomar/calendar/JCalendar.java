@@ -3,13 +3,14 @@ package net.ponomar.calendar;
 import javax.swing.*;
 
 import net.ponomar.internationalization.LanguagePack;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.beans.*;
+import java.util.LinkedHashMap;
 
 /**************************************************************
 JCalendar: AN IMPLEMENTATION OF A JULIAN CALENDAR CONTROL FOR THE GUI
@@ -61,7 +62,7 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 	private String orderBox;// =(String)Text.Phrases.get("OrderBox");
 	private StringOp analyse = new StringOp();
 
-	public JCalendar(IOrderedHashtable dayInfo) {
+	public JCalendar(LinkedHashMap dayInfo) {
 		this(null, dayInfo);
 
 		analyse.setDayInfo(dayInfo);
@@ -72,7 +73,7 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 
 	}
 
-	protected JCalendar(JDate date, IOrderedHashtable dayInfo) {
+	protected JCalendar(JDate date, LinkedHashMap dayInfo) {
 		super();
 		analyse.setDayInfo(dayInfo);
 		text = new LanguagePack(dayInfo);
@@ -107,7 +108,7 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 
 		monthYearPanel.setBorder(BorderFactory.createEmptyBorder());
 
-		daySelector = new JDaySelector(analyse.getDayInfo().clone());
+		daySelector = new JDaySelector((LinkedHashMap) analyse.getDayInfo().clone());
 		daySelector.setYear(date.getYear());
 		daySelector.setMonth(date.getMonth());
 		daySelector.setDay(date.getDay());

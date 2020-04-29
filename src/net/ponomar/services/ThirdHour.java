@@ -13,8 +13,8 @@ import net.ponomar.parsing.Service;
 import net.ponomar.parsing.ServiceInfo;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 
 /***********************************************************************
 THIS MODULE CREATES THE TEXT FOR THE ORTHODOX SERVICE OF THE FIRST HOUR (PRIME)
@@ -44,7 +44,7 @@ public class ThirdHour extends LitService
 	private static String fileNameOut=fileNameIn+"Primes.html";
 	private PrimeSelector selectorP;//=new PrimeSelector();	
 	
-	public ThirdHour(JDate date, IOrderedHashtable dayInfo)
+	public ThirdHour(JDate date, LinkedHashMap dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             langText=new LanguagePack(dayInfo);
@@ -203,7 +203,7 @@ public class ThirdHour extends LitService
 		//CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
 		//POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
 		ServiceInfo ServicePrimes=new ServiceInfo("TERCE",analyse.getDayInfo());
-		IOrderedHashtable PrimesTrial = ServicePrimes.serviceRules();
+		LinkedHashMap PrimesTrial = ServicePrimes.serviceRules();
 		
 		type=PrimesTrial.get("Type").toString();
 		lentenKat=(String) PrimesTrial.get(LENTENK);

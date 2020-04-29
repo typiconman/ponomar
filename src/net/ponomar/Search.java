@@ -2,9 +2,9 @@ package net.ponomar;
 
 import net.ponomar.parsing.Commemoration;
 import net.ponomar.utility.Constants;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 import javax.swing.*;
@@ -12,6 +12,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.util.LinkedHashMap;
 
 
 /***********************************************************************
@@ -50,7 +51,7 @@ public class Search extends JFrame implements ActionListener
         private JButton okay;
         private JTextPane results;
 		
-	public Search(IOrderedHashtable dayInfo)
+	public Search(LinkedHashMap dayInfo)
 	{
 		//Assuming at present only English exists:
             Analyse.setDayInfo(dayInfo);
@@ -200,7 +201,7 @@ public class Search extends JFrame implements ActionListener
 
         public static void main(String[] argz)
         {
-        	IOrderedHashtable dayinfo=new OrderedHashtable();
+        	LinkedHashMap dayinfo=new LinkedHashMap();
             dayinfo.put("LS","fr/");
             Search testing = new Search(dayinfo);
             

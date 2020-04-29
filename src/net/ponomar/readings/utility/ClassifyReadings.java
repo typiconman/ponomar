@@ -2,12 +2,13 @@ package net.ponomar.readings.utility;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.Vector;
 
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.utility.Constants;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 public class ClassifyReadings implements DocHandler {
@@ -15,7 +16,7 @@ public class ClassifyReadings implements DocHandler {
 	/**
 	 * 
 	 */
-	protected IOrderedHashtable Information2;
+	protected LinkedHashMap Information2;
 	public Vector dailyV = new Vector();
 	public Vector dailyR = new Vector();
 	public Vector dailyT = new Vector();

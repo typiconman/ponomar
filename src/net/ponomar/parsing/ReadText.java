@@ -6,8 +6,8 @@ import java.nio.charset.StandardCharsets;
 
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 
@@ -44,7 +44,7 @@ public class ReadText implements DocHandler
 		
 		
 	
-	public ReadText(IOrderedHashtable dayInfo)
+	public ReadText(LinkedHashMap dayInfo)
 	{
             findLanguage=new Helpers(analyse.getDayInfo());
             analyse.setDayInfo(dayInfo);

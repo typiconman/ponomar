@@ -1,10 +1,12 @@
 package net.ponomar.astronomy;
 
+import java.util.LinkedHashMap;
+
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.RuleBasedNumber;
 import net.ponomar.utility.StringOp;
 
@@ -52,7 +54,7 @@ public final class Sunrise
 {
         private final LanguagePack phrases;//=new LanguagePack();
         private final StringOp analyse=new StringOp();
-        public Sunrise(IOrderedHashtable dayInfo){
+        public Sunrise(LinkedHashMap dayInfo){
             analyse.setDayInfo(dayInfo);
             phrases=new LanguagePack(dayInfo);
         }
@@ -183,7 +185,7 @@ public final class Sunrise
 			}*/
 			// Changed to this by Y.S. to internationalise it.
 			if (analyse.getDayInfo().get(Constants.IDEOGRAPHIC).equals("1")) {
-				RuleBasedNumber convertN = new RuleBasedNumber(analyse.getDayInfo().clone());
+				RuleBasedNumber convertN = new RuleBasedNumber((LinkedHashMap) analyse.getDayInfo().clone());
 				format = format.replace("HH", convertN.getFormattedNumber(hour));
 				format = format.replace("MM", convertN.getFormattedNumber(minute));
 

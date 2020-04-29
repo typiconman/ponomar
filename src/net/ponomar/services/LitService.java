@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
@@ -32,8 +33,8 @@ import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 /***********************************************************************
@@ -46,7 +47,7 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
 	protected static final String TROPARION_OUTPUT_END = "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	protected static final String LENTENK = "LENTENK";
 	protected static final String NEWLINE = "\n";
-	protected static IOrderedHashtable primesTK;
+	protected static LinkedHashMap primesTK;
 	protected static String text;
 	protected static boolean read=false;
 	protected static String type;

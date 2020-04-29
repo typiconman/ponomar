@@ -10,8 +10,8 @@ import net.ponomar.Bible;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
 import net.ponomar.utility.StringOp;
 /***********************************************************************
 THIS MODULE READ XML FILES THAT CONTAIN A SET OF <CREATE> TAGS THAT SET THE RULES FOR THE CREATION OF
@@ -64,7 +64,7 @@ public class Service implements DocHandler
         private Helpers findLanguage;
         private StringOp analyse=new StringOp();
 	//private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
-        public Service (IOrderedHashtable dayInfo){
+        public Service (LinkedHashMap dayInfo){
             analyse.setDayInfo(dayInfo);
                 text=new LanguagePack(dayInfo);
                 serviceNames=text.obtainValues((String)text.getPhrases().get("ServiceRead"));
@@ -191,7 +191,7 @@ public class Service implements DocHandler
 			//WE ARE DEALING WITH THE TITLE OF THE SERVICE. IT CAN HAVE 3 PARTS: THE TITLE ITSELF, THE SOURCE FOR 
 			//SERVICE, AND SOME ADDITIONAL COMMENTS.
 			String title=table.get("Header").toString();
-			ReadText textGet1=new ReadText(analyse.getDayInfo().clone());
+			ReadText textGet1=new ReadText((LinkedHashMap) analyse.getDayInfo().clone());
                         whoLast="";
 			String text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+title+".xml");
                         String ponomar=text.getPhrases().get("0").toString();
@@ -239,7 +239,7 @@ public class Service implements DocHandler
 			//WE ARE DEALING WITH THE TITLE OF THE SERVICE. IT CAN HAVE 3 PARTS: THE TITLE ITSELF, THE SOURCE FOR
 			//SERVICE, AND SOME ADDITIONAL COMMENTS.
 			//String Subtitle=table.get("Header").toString();
-			ReadText textGet1=new ReadText(analyse.getDayInfo().clone());
+			ReadText textGet1=new ReadText((LinkedHashMap) analyse.getDayInfo().clone());
                         whoLast="";
 
 			String subtitle=table.get(Constants.VALUE).toString();
@@ -380,7 +380,7 @@ public class Service implements DocHandler
                     //System.out.println(Info);
                     //System.out.println(parsedInfo[1]);
                     //GENERALISED THE VERSION TO ANYTHING LOCATED INSIDE THE SERVICE TAGS!!!
-                    IOrderedHashtable royalHours=(IOrderedHashtable)data.getService(info.substring(0,parsedInfo1),info.substring(parsedInfo1+1));
+                    LinkedHashMap royalHours=(LinkedHashMap)data.getService(info.substring(0,parsedInfo1),info.substring(parsedInfo1+1));
                     //System.out.println((OrderedHashtable)data.getService("/ROYALHOURS/VERSE","9P"));
                     //System.out.println(RoyalHours);
                     String headerRH="";
@@ -436,7 +436,7 @@ public class Service implements DocHandler
 			}
 			readIncidentals(table);
 			//System.out.println(What);
-			ReadText textGet=new ReadText(analyse.getDayInfo().clone());
+			ReadText textGet=new ReadText((LinkedHashMap) analyse.getDayInfo().clone());
 			if(what != null)
 			{
 				what2 = textGet.readText(COMMONPRAYERS_FILENAME+what+".xml");
@@ -520,7 +520,7 @@ public class Service implements DocHandler
 	private String implement(int header,String text4, String what)
 	{
 		String text2=what;
-		ReadText textGet=new ReadText(analyse.getDayInfo().clone());
+		ReadText textGet=new ReadText((LinkedHashMap) analyse.getDayInfo().clone());
 		
 		/* Original place of this when there the times is used as it was orignally.
 		if(Command != null)

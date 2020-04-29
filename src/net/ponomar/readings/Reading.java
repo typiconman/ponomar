@@ -1,5 +1,6 @@
 package net.ponomar.readings;
 
+import java.util.LinkedHashMap;
 import java.util.Vector;
 
 import net.ponomar.astronomy.Paschalion;
@@ -10,18 +11,18 @@ import net.ponomar.parsing.DocHandler;
 import net.ponomar.readings.utility.ReadingUtility;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 public abstract class Reading implements DocHandler {
 
-	private static IOrderedHashtable readings;
-	private static IOrderedHashtable pentecostarionS;
-	private static IOrderedHashtable menalogionS;
-	private static IOrderedHashtable floaterS;
-	protected static IOrderedHashtable information;
+	private static LinkedHashMap readings;
+	private static LinkedHashMap pentecostarionS;
+	private static LinkedHashMap menalogionS;
+	private static LinkedHashMap floaterS;
+	protected static LinkedHashMap information;
 	private static String gLocation;
 	protected static LanguagePack phrases;
 	protected static String[] transferredDays;
@@ -39,8 +40,8 @@ public abstract class Reading implements DocHandler {
 	private static Vector suppressedV = new Vector();
 	private static Vector suppressedR = new Vector();
 	private static Vector suppressedT = new Vector();
-	protected static IOrderedHashtable tomorrowRead = new OrderedHashtable();
-	protected static IOrderedHashtable yesterdayRead = new OrderedHashtable();
+	protected static LinkedHashMap tomorrowRead = new LinkedHashMap();
+	protected static LinkedHashMap yesterdayRead = new LinkedHashMap();
 	private static StringOp information3 = new StringOp();
 
 	public Reading() {
@@ -60,7 +61,7 @@ public abstract class Reading implements DocHandler {
 		
 	}
 	
-    protected IOrderedHashtable getReadings(JDate today, String readingType) {
+    protected LinkedHashMap getReadings(JDate today, String readingType) {
         String filename = "";
         int lineNumber = 0;
 
@@ -104,16 +105,16 @@ public abstract class Reading implements DocHandler {
         Day checkingM = new Day(filename,getInformation3().getDayInfo());
         getInformation3().getDayInfo().put(Constants.D_RANK,Math.max(checkingP.getDayRank(), checkingM.getDayRank()));
 
-        IOrderedHashtable[] paschalReadings = checkingP.getReadings();
-        IOrderedHashtable[] menaionReadings = checkingM.getReadings();
-        IOrderedHashtable combinedReadings = new OrderedHashtable();
+        LinkedHashMap[] paschalReadings = checkingP.getReadings();
+        LinkedHashMap[] menaionReadings = checkingM.getReadings();
+        LinkedHashMap combinedReadings = new LinkedHashMap();
 
 
         ReadingUtility.processMenaionPaschalReadings(menaionReadings, combinedReadings);
         ReadingUtility.processMenaionPaschalReadings(paschalReadings, combinedReadings);
 
 
-        IOrderedHashtable temp = (IOrderedHashtable) combinedReadings.get("LITURGY");
+        LinkedHashMap temp = (LinkedHashMap) combinedReadings.get("LITURGY");
         //System.out.println("temp values (423)" + temp);
         Vector Readings = (Vector) temp.get(Constants.READINGS);
         Vector Rank = (Vector) temp.get("Rank");
@@ -125,8 +126,8 @@ public abstract class Reading implements DocHandler {
 
 
         for (Object reading : Readings) {
-        	IOrderedHashtable liturgy = (IOrderedHashtable) reading;
-        	IOrderedHashtable stepE = (IOrderedHashtable) liturgy.get(readingType);
+        	LinkedHashMap liturgy = (LinkedHashMap) reading;
+        	LinkedHashMap stepE = (LinkedHashMap) liturgy.get(readingType);
             if (stepE != null) {
 
                 type.add(stepE.get(Constants.READING).toString());
@@ -139,7 +140,7 @@ public abstract class Reading implements DocHandler {
 
 
         //output += RSep;
-        IOrderedHashtable Final2 = new OrderedHashtable();
+        LinkedHashMap Final2 = new LinkedHashMap();
         Final2.put(Constants.READINGS, type);
         Final2.put("Rank", Rank);
         Final2.put("Tag", Tag);

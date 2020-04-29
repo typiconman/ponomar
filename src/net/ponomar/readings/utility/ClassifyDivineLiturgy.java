@@ -2,6 +2,7 @@ package net.ponomar.readings.utility;
 
 import java.io.FileReader;
 import java.util.Enumeration;
+import java.util.LinkedHashMap;
 import java.util.Vector;
 
 import net.ponomar.parsing.DocHandler;
@@ -9,9 +10,9 @@ import net.ponomar.parsing.QDParser;
 import net.ponomar.readings.DivineLiturgy;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
+ 
+ 
+ 
 import net.ponomar.utility.StringOp;
 
 public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandler {
@@ -19,22 +20,22 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
 		public ClassifyDivineLiturgy() {
         }
 
-        public ClassifyDivineLiturgy(IOrderedHashtable readingsInA) {
+        public ClassifyDivineLiturgy(LinkedHashMap readingsInA) {
 			StringOp Testing = new StringOp();
             ParameterValues.setDayInfo(DivineLiturgy.getAnalyse().getDayInfo());
             //System.out.println("In ParameterValues, we have LS = " + ParameterValues.getDayInfo().get("LS")+" while in Analyse, we have "+Analyse.getDayInfo().get("LS"));
             classify(readingsInA);
         }
 
-       public ClassifyDivineLiturgy(IOrderedHashtable readingsInA, IOrderedHashtable dayInfo) {
+       public ClassifyDivineLiturgy(LinkedHashMap readingsInA, LinkedHashMap dayInfo) {
 		ParameterValues.setDayInfo(dayInfo);
             classify(readingsInA);
 
         }
-        private void classify(IOrderedHashtable readingsIn)
+        private void classify(LinkedHashMap readingsIn)
         {
             //Initialise Information.
-            Information2=new OrderedHashtable();
+            Information2=new LinkedHashMap();
             DivineLiturgy.setFindLanguage(new Helpers(ParameterValues.getDayInfo()));
             //System.out.println(findLanguage.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
             try {

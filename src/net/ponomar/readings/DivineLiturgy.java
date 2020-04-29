@@ -8,9 +8,6 @@ import net.ponomar.parsing.QDParser;
 import net.ponomar.readings.utility.ClassifyDivineLiturgy;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.IOrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
-import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
 import java.util.*;
@@ -48,7 +45,7 @@ public class DivineLiturgy extends Reading {
 
 	private static StringOp analyse=new StringOp();
 
-    public DivineLiturgy(IOrderedHashtable dayInfo) {
+    public DivineLiturgy(LinkedHashMap dayInfo) {
         getAnalyse().setDayInfo(dayInfo);
           phrases = new LanguagePack(dayInfo);
     transferredDays = phrases.obtainValues((String) phrases.getPhrases().get("DayReading"));
@@ -90,7 +87,7 @@ public class DivineLiturgy extends Reading {
     }
 
 
-    public String Readings(IOrderedHashtable readingsIn, String readingType, JDate today) {
+    public String Readings(LinkedHashMap readingsIn, String readingType, JDate today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/
@@ -101,7 +98,7 @@ public class DivineLiturgy extends Reading {
         Information3.getDayInfo().put("nday","2");
         System.out.println("Testing the new StringOp formulation is " + Information3.evalbool("doy == 12"));*/
 
-        information = new OrderedHashtable();
+        information = new LinkedHashMap();
         int doy = Integer.parseInt(getAnalyse().getDayInfo().get("doy").toString());
         int dow = Integer.parseInt(getAnalyse().getDayInfo().get("dow").toString());
         int nday = Integer.parseInt(getAnalyse().getDayInfo().get("nday").toString());
@@ -149,8 +146,8 @@ public class DivineLiturgy extends Reading {
 
                 
                 StringOp transfers=new StringOp();
-                transfers.setDayInfo(getAnalyse().getDayInfo().clone());//findLanguage.deepCopy((Hashtable)StringOp.dayInfo.clone());
-                getInformation3().setDayInfo(getAnalyse().getDayInfo().clone());
+                transfers.setDayInfo((LinkedHashMap) getAnalyse().getDayInfo().clone());//findLanguage.deepCopy((Hashtable)StringOp.dayInfo.clone());
+                getInformation3().setDayInfo((LinkedHashMap) getAnalyse().getDayInfo().clone());
                 String dRankOld=getAnalyse().getDayInfo().get(Constants.D_RANK).toString();
                 today.addDays(1);
                 // PUT THE RELEVANT DATA IN THE HASH FOR TOMORROW
@@ -169,7 +166,7 @@ public class DivineLiturgy extends Reading {
 
                 getReadings(today, readingType);
                 tomorrowRead = getReadings(today, readingType);
-                tomorrows = new ClassifyDivineLiturgy(tomorrowRead, getInformation3().getDayInfo().clone());
+                tomorrows = new ClassifyDivineLiturgy(tomorrowRead, (LinkedHashMap) getInformation3().getDayInfo().clone());
                 //System.out.println("Case III: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("dRank").toString()+" In Information3, doy = "+Information3.getDayInfo().get("dRank").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("dRank"));
 
 
@@ -196,8 +193,8 @@ public class DivineLiturgy extends Reading {
 
 
                 StringOp transfers=new StringOp();
-                transfers.getDayInfo().putAll(getAnalyse().getDayInfo().clone());
-                getInformation3().setDayInfo(getAnalyse().getDayInfo().clone());
+                transfers.getDayInfo().putAll((LinkedHashMap) getAnalyse().getDayInfo().clone());
+                getInformation3().setDayInfo((LinkedHashMap) getAnalyse().getDayInfo().clone());
                 String dRankOld=getAnalyse().getDayInfo().get(Constants.D_RANK).toString();
                 today.subtractDays(1);
 
@@ -215,7 +212,7 @@ public class DivineLiturgy extends Reading {
                 getInformation3().getDayInfo().put(Constants.NDAY_F, ndayF);
 
                 yesterdayRead = getReadings(today, readingType);
-                yesterdays = new ClassifyDivineLiturgy(yesterdayRead, getInformation3().getDayInfo().clone());
+                yesterdays = new ClassifyDivineLiturgy(yesterdayRead, (LinkedHashMap) getInformation3().getDayInfo().clone());
 
 
 
