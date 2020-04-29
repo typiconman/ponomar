@@ -5,6 +5,7 @@ import javax.swing.*;
 import net.ponomar.ConfigurationFiles;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -48,7 +49,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	
 
 	
-	public LanguageSelector(OrderedHashtable dayInfo)
+	public LanguageSelector(IOrderedHashtable dayInfo)
 	{
 	analyse.setDayInfo(dayInfo);
                 languageDefault = (String) ConfigurationFiles.getDefaults().get(LANGUAGE);
@@ -70,7 +71,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 		}
 	
 	}
-	public JMenu createLanguageMenu(OrderedHashtable dayInfo)
+	public JMenu createLanguageMenu(IOrderedHashtable dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             Font currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));

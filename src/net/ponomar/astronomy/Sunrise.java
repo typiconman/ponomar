@@ -3,6 +3,7 @@ package net.ponomar.astronomy;
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.RuleBasedNumber;
 import net.ponomar.utility.StringOp;
@@ -51,7 +52,7 @@ public final class Sunrise
 {
         private final LanguagePack phrases;//=new LanguagePack();
         private final StringOp analyse=new StringOp();
-        public Sunrise(OrderedHashtable dayInfo){
+        public Sunrise(IOrderedHashtable dayInfo){
             analyse.setDayInfo(dayInfo);
             phrases=new LanguagePack(dayInfo);
         }

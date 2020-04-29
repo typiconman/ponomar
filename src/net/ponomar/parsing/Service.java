@@ -10,6 +10,7 @@ import net.ponomar.Bible;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 /***********************************************************************
@@ -63,7 +64,7 @@ public class Service implements DocHandler
         private Helpers findLanguage;
         private StringOp analyse=new StringOp();
 	//private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
-        public Service (OrderedHashtable dayInfo){
+        public Service (IOrderedHashtable dayInfo){
             analyse.setDayInfo(dayInfo);
                 text=new LanguagePack(dayInfo);
                 serviceNames=text.obtainValues((String)text.getPhrases().get("ServiceRead"));
@@ -379,7 +380,7 @@ public class Service implements DocHandler
                     //System.out.println(Info);
                     //System.out.println(parsedInfo[1]);
                     //GENERALISED THE VERSION TO ANYTHING LOCATED INSIDE THE SERVICE TAGS!!!
-                    OrderedHashtable royalHours=(OrderedHashtable)data.getService(info.substring(0,parsedInfo1),info.substring(parsedInfo1+1));
+                    IOrderedHashtable royalHours=(IOrderedHashtable)data.getService(info.substring(0,parsedInfo1),info.substring(parsedInfo1+1));
                     //System.out.println((OrderedHashtable)data.getService("/ROYALHOURS/VERSE","9P"));
                     //System.out.println(RoyalHours);
                     String headerRH="";

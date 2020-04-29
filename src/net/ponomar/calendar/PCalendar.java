@@ -1,5 +1,7 @@
 package net.ponomar.calendar;
 
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -18,10 +20,10 @@ public class PCalendar implements Cloneable
         public final static String GREGORIAN="gregorian"; //Fixes the spelling of the Gregorian option
         private StringOp Analyse=new StringOp();
 
-        public PCalendar(JDate date1, String calendar,OrderedHashtable dayInfo){
+        public PCalendar(JDate date1, String calendar,IOrderedHashtable iOrderedHashtable){
             date=date1;
             type=calendar;
-            Analyse.setDayInfo(dayInfo);
+            Analyse.setDayInfo(iOrderedHashtable);
         }
         //Computes the Julian Day given the calendar type
         private double JulianDay(){
@@ -161,7 +163,7 @@ public class PCalendar implements Cloneable
 
         public static void main(String[] argz)
 	{
-            OrderedHashtable dayInfo=new OrderedHashtable();
+        	IOrderedHashtable dayInfo=new OrderedHashtable();
             dayInfo.put("LS", "en/");
             PCalendar test=new PCalendar(new JDate(10,4,1957),GREGORIAN,dayInfo);
             System.out.println(test.JulianDay());

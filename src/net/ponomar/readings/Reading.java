@@ -10,16 +10,18 @@ import net.ponomar.parsing.DocHandler;
 import net.ponomar.readings.utility.ReadingUtility;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
 public abstract class Reading implements DocHandler {
 
-	private static OrderedHashtable readings;
-	private static OrderedHashtable pentecostarionS;
-	private static OrderedHashtable menalogionS;
-	private static OrderedHashtable floaterS;
-	protected static OrderedHashtable information;
+	private static IOrderedHashtable readings;
+	private static IOrderedHashtable pentecostarionS;
+	private static IOrderedHashtable menalogionS;
+	private static IOrderedHashtable floaterS;
+	protected static IOrderedHashtable information;
 	private static String gLocation;
 	protected static LanguagePack phrases;
 	protected static String[] transferredDays;
@@ -37,8 +39,8 @@ public abstract class Reading implements DocHandler {
 	private static Vector suppressedV = new Vector();
 	private static Vector suppressedR = new Vector();
 	private static Vector suppressedT = new Vector();
-	protected static OrderedHashtable tomorrowRead = new OrderedHashtable();
-	protected static OrderedHashtable yesterdayRead = new OrderedHashtable();
+	protected static IOrderedHashtable tomorrowRead = new OrderedHashtable();
+	protected static IOrderedHashtable yesterdayRead = new OrderedHashtable();
 	private static StringOp information3 = new StringOp();
 
 	public Reading() {
@@ -58,7 +60,7 @@ public abstract class Reading implements DocHandler {
 		
 	}
 	
-    protected OrderedHashtable getReadings(JDate today, String readingType) {
+    protected IOrderedHashtable getReadings(JDate today, String readingType) {
         String filename = "";
         int lineNumber = 0;
 
@@ -102,16 +104,16 @@ public abstract class Reading implements DocHandler {
         Day checkingM = new Day(filename,getInformation3().getDayInfo());
         getInformation3().getDayInfo().put(Constants.D_RANK,Math.max(checkingP.getDayRank(), checkingM.getDayRank()));
 
-        OrderedHashtable[] paschalReadings = checkingP.getReadings();
-        OrderedHashtable[] menaionReadings = checkingM.getReadings();
-        OrderedHashtable combinedReadings = new OrderedHashtable();
+        IOrderedHashtable[] paschalReadings = checkingP.getReadings();
+        IOrderedHashtable[] menaionReadings = checkingM.getReadings();
+        IOrderedHashtable combinedReadings = new OrderedHashtable();
 
 
         ReadingUtility.processMenaionPaschalReadings(menaionReadings, combinedReadings);
         ReadingUtility.processMenaionPaschalReadings(paschalReadings, combinedReadings);
 
 
-        OrderedHashtable temp = (OrderedHashtable) combinedReadings.get("LITURGY");
+        IOrderedHashtable temp = (IOrderedHashtable) combinedReadings.get("LITURGY");
         //System.out.println("temp values (423)" + temp);
         Vector Readings = (Vector) temp.get(Constants.READINGS);
         Vector Rank = (Vector) temp.get("Rank");
@@ -123,8 +125,8 @@ public abstract class Reading implements DocHandler {
 
 
         for (Object reading : Readings) {
-            OrderedHashtable liturgy = (OrderedHashtable) reading;
-            OrderedHashtable stepE = (OrderedHashtable) liturgy.get(readingType);
+        	IOrderedHashtable liturgy = (IOrderedHashtable) reading;
+        	IOrderedHashtable stepE = (IOrderedHashtable) liturgy.get(readingType);
             if (stepE != null) {
 
                 type.add(stepE.get(Constants.READING).toString());
@@ -137,7 +139,7 @@ public abstract class Reading implements DocHandler {
 
 
         //output += RSep;
-        OrderedHashtable Final2 = new OrderedHashtable();
+        IOrderedHashtable Final2 = new OrderedHashtable();
         Final2.put(Constants.READINGS, type);
         Final2.put("Rank", Rank);
         Final2.put("Tag", Tag);

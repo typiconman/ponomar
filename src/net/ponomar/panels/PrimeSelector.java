@@ -2,7 +2,7 @@ package net.ponomar.panels;
 
 import net.ponomar.ConfigurationFiles;
 import net.ponomar.internationalization.LanguagePack;
-import net.ponomar.utility.OrderedHashtable;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.StringOp;
 
 import javax.swing.*;
@@ -59,7 +59,7 @@ public class PrimeSelector extends JPanel implements ActionListener, PropertyCha
 	private static String readingLocation2=primesDefault[1];
         private StringOp analyse=new StringOp();
 	
-	public PrimeSelector(OrderedHashtable dayInfo)
+	public PrimeSelector(IOrderedHashtable dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             text=new LanguagePack(dayInfo);

@@ -6,6 +6,8 @@ import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.readings.utility.ClassifyMatins;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 
 import java.util.*;
@@ -35,7 +37,7 @@ THE SOFTWARE.
  **************************************************************/
 public class Matins extends Reading {
 
-    public Matins(OrderedHashtable dayInfo) {
+    public Matins(IOrderedHashtable dayInfo) {
         getInformation3().setDayInfo(dayInfo);
         phrases = new LanguagePack(dayInfo);
         transferredDays = phrases.obtainValues((String) phrases.getPhrases().get("DayReading"));
@@ -77,7 +79,7 @@ public class Matins extends Reading {
     }
 
 
-    public String Readings(OrderedHashtable readingsIn, JDate today) {
+    public String Readings(IOrderedHashtable readingsIn, JDate today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/

@@ -17,6 +17,8 @@ import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -71,7 +73,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     private String name = "";
     private String copyright = ""; //Any additional information about the life.
     private LanguagePack text; //= new LanguagePack();
-    private OrderedHashtable podobni;
+    private IOrderedHashtable podobni;
     
     
     //private static String fileNameIn = Constants.SERVICES_PATH + "PRIMES1/";
@@ -99,7 +101,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     private String name2;
     private StringOp analyse=new StringOp();
 
-    public DoSaint(Commemoration saintInfo, OrderedHashtable dayInfo) {
+    public DoSaint(Commemoration saintInfo, IOrderedHashtable dayInfo) {
         //Get the Podobni
         analyse.setDayInfo(dayInfo);
         text = new LanguagePack(dayInfo);
@@ -134,7 +136,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         name2=saintInfo2.getGrammar("Short");
         life=saintInfo2.getLife();
         copyright=saintInfo2.getLifeCopyright();
-        OrderedHashtable troparInfo=(OrderedHashtable)saintInfo2.getService("/LITURGY/TROPARION","1");
+        IOrderedHashtable troparInfo=(IOrderedHashtable)saintInfo2.getService("/LITURGY/TROPARION","1");
          if (troparInfo !=null){
         tropar=troparInfo.get("text").toString();
         troparT=troparInfo.get("Tone").toString();
@@ -145,7 +147,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             tropar=null;
         }
 
-        OrderedHashtable troparInfo2=(OrderedHashtable)saintInfo2.getService("/LITURGY/TROPARION","2");
+         IOrderedHashtable troparInfo2=(IOrderedHashtable)saintInfo2.getService("/LITURGY/TROPARION","2");
         if (troparInfo2 !=null){
         tropar2=troparInfo2.get("text").toString();
         troparT2=troparInfo2.get("Tone").toString();
@@ -157,7 +159,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         }
          
 
-        OrderedHashtable kontakionInfo=(OrderedHashtable)saintInfo2.getService("/LITURGY/KONTAKION","1");
+        IOrderedHashtable kontakionInfo=(IOrderedHashtable)saintInfo2.getService("/LITURGY/KONTAKION","1");
         if (kontakionInfo !=null){
         kondak=kontakionInfo.get("text").toString();
         kondakT=kontakionInfo.get("Tone").toString();
@@ -168,7 +170,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             kondak=null;
          }
 
-        OrderedHashtable kontakionInfo2=(OrderedHashtable)saintInfo2.getService("/LITURGY/KONTAKION","2");
+        IOrderedHashtable kontakionInfo2=(IOrderedHashtable)saintInfo2.getService("/LITURGY/KONTAKION","2");
         if (kontakionInfo2 !=null){
         kondak2=kontakionInfo2.get("text").toString();
         kondakT2=kontakionInfo2.get("Tone").toString();
@@ -375,7 +377,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         //frames.setContentPane(contentPane);
         
 
-        OrderedHashtable iconsM=(OrderedHashtable)saintInfo2.getDisplayIcons();
+        IOrderedHashtable iconsM=(IOrderedHashtable)saintInfo2.getDisplayIcons();
         Vector imageList=(Vector)iconsM.get("Images");
                 Vector namesList=(Vector)iconsM.get("Names");
                 String[] iconImages=new String[imageList.size()];
@@ -640,7 +642,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     public static void main(String[] argz) {
 
 
-        OrderedHashtable dayInfo = new OrderedHashtable();
+        IOrderedHashtable dayInfo = new OrderedHashtable();
         dayInfo.put("LS", "0");
         /*setTitle((String)Phrases.Phrases.get("0"));
         RSep=(String)Phrases.Phrases.get("ReadSep");

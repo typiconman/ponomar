@@ -2,6 +2,8 @@ package net.ponomar.astronomy;
 
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 
 /***********************************************************
@@ -282,7 +284,7 @@ public class Astronomy
             return revolution(lunarlong(day)-solarlong(day));
 
         }
-        public String lunarphase(long day, OrderedHashtable dayInfo){
+        public String lunarphase(long day, IOrderedHashtable dayInfo){
             /*Determine the lunar phase given various for the given JDE day;
              * Assumes that the given day is midnight local time.
              * */
@@ -383,7 +385,7 @@ public class Astronomy
         }
 
 	public static void main(String[] argz) {
-		OrderedHashtable dayInfo = new OrderedHashtable();
+		IOrderedHashtable dayInfo = new OrderedHashtable();
 		dayInfo.put("LS", "en/");
 		Astronomy test = new Astronomy();
 

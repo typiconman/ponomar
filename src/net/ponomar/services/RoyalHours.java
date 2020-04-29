@@ -9,7 +9,7 @@ import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.parsing.Service;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
-import net.ponomar.utility.OrderedHashtable;
+import net.ponomar.utility.IOrderedHashtable;
 
 /***********************************************************************
  * THIS MODULE CREATES THE TEXT FOR THE ORTHODOX SERVICE OF THE FIRST HOUR
@@ -37,7 +37,7 @@ public class RoyalHours extends LitService {
 
 	private static final String P_FLAG = "PFlag";
 
-	public RoyalHours(JDate date, OrderedHashtable dayInfo) {
+	public RoyalHours(JDate date, IOrderedHashtable dayInfo) {
 		analyse.setDayInfo(dayInfo);
 		langText = new LanguagePack(dayInfo);
 		primesNames = langText.obtainValues((String) langText.getPhrases().get("RoyalHours"));
@@ -150,17 +150,16 @@ public class RoyalHours extends LitService {
 		System.out.println("RoyalHours.java running in Debug mode");
 		System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
 
-		OrderedHashtable dayInfo = new OrderedHashtable();
-
-		dayInfo.put("dow", 3);
-		dayInfo.put("doy", 357);
-		dayInfo.put("nday", -256);
-		dayInfo.put("LS", 0); // ENGLISH
-		dayInfo.put("PS", 1);
+		/*
+		 * IOrderedHashtable dayInfo = new OrderedHashtable();
+		 * 
+		 * dayInfo.put("dow", 3); dayInfo.put("doy", 357); dayInfo.put("nday", -256);
+		 * dayInfo.put("LS", 0); // ENGLISH dayInfo.put("PS", 1);
+		 */
 
 		JDate todays = new JDate(12, 24, 2009);
 
-		new RoyalHours(todays, dayInfo);
+		//new RoyalHours(todays, dayInfo);
 	}
 
 }

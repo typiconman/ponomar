@@ -26,7 +26,9 @@ import net.ponomar.services.SixthHour;
 import net.ponomar.services.ThirdHour;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.MenologionContent;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -493,14 +495,14 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 
 		content += Constants.DOUBLE_LINEBREAK;
-		OrderedHashtable[] paschalReadings = paschalCycle.getReadings();
+		IOrderedHashtable[] paschalReadings = paschalCycle.getReadings();
 		//System.out.println("Length of Ordinary Readings="+PaschalReadings.length);
 
-		OrderedHashtable[] menaionReadings = solarCycle.getReadings();
+		IOrderedHashtable[] menaionReadings = solarCycle.getReadings();
 		Bible shortForm = new Bible(analyse.getDayInfo());
 		//System.out.println("First Paschal Reading is :"+PaschalReadings[0].get(READINGS));
 		//System.out.println("First Menologion Reading is :"+MenaionReadings[0].get(READINGS));
-		OrderedHashtable combinedReadings = new OrderedHashtable();
+		IOrderedHashtable combinedReadings = new OrderedHashtable();
 		//for(int j=0;j<7;j++){
 		ReadingUtility.processMenaionPaschalReadings(menaionReadings, combinedReadings);
 		ReadingUtility.processMenaionPaschalReadings(paschalReadings, combinedReadings);
@@ -553,7 +555,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 	private void displayIcons(Day paschalCycle, Day solarCycle) {
 		//OrderedHashtable iconsP = (OrderedHashtable) paschalCycle.getIcon();
-		OrderedHashtable iconsM = solarCycle.getIcon();
+		IOrderedHashtable iconsM = solarCycle.getIcon();
 
 		Vector<String> imageList = (Vector<String>) iconsM.get("Images");
 		Vector<String> namesList = (Vector<String>) iconsM.get("Names");

@@ -3,6 +3,7 @@ package net.ponomar;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -39,7 +40,7 @@ public class About extends JFrame
 	private LanguagePack ponomar;//=new LanguagePack();
 	private String value;//=(String)Ponomar.Phrases.get("0");
         private StringOp analyse=new StringOp();
-	public About(OrderedHashtable dayInfo)
+	public About(IOrderedHashtable dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             ponomar=new LanguagePack(dayInfo);

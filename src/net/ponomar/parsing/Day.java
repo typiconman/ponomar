@@ -3,6 +3,8 @@ package net.ponomar.parsing;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -40,16 +42,16 @@ public class Day implements DocHandler {
     //private LanguagePack Text=new LanguagePack();
     //private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
     //private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-    private OrderedHashtable information;
-    private OrderedHashtable readings;
-    private OrderedHashtable grammar;
-    private OrderedHashtable variable;
+    private IOrderedHashtable information;
+    private IOrderedHashtable readings;
+    private IOrderedHashtable grammar;
+    private IOrderedHashtable variable;
     private String textR;
     private boolean readRH = false;
-    private OrderedHashtable royalHours;
+    private IOrderedHashtable royalHours;
     private String elemRH;
-    private OrderedHashtable value;
-    private OrderedHashtable serviceInfo;
+    private IOrderedHashtable value;
+    private IOrderedHashtable serviceInfo;
     private String location1;
     private boolean readService = false;
     private LanguagePack text;// = new LanguagePack();
@@ -64,7 +66,7 @@ public class Day implements DocHandler {
     private String forComm;//=(String)Text.Phrases.get("Commemoration2");
     private static StringOp parameterValues = new StringOp();
 
-	public Day(String fileName, OrderedHashtable dayInfo) {
+	public Day(String fileName, IOrderedHashtable dayInfo) {
 		information = new OrderedHashtable();
 		readings = new OrderedHashtable();
 		royalHours = new OrderedHashtable();
@@ -281,7 +283,7 @@ public class Day implements DocHandler {
         return output.toString();
     }
 
-    public OrderedHashtable getIcon() {
+    public IOrderedHashtable getIcon() {
         //Ordered List of the Icons
         Vector iconImages = new Vector();
         Vector iconNames=new Vector();
@@ -320,21 +322,21 @@ public class Day implements DocHandler {
                 iconNames.add(nameF);
             }
         }
-        OrderedHashtable finalI = new OrderedHashtable();
+        IOrderedHashtable finalI = new OrderedHashtable();
         finalI.put("Images",iconImages);
         finalI.put("Names",iconNames);
         return finalI;
     }
 
-    public OrderedHashtable getService(String node, String type) {
+    public IOrderedHashtable getService(String node, String type) {
         //System.out.println(ServiceInfo);
         //System.out.println("\n\n");
         //System.out.println(Node+"/"+Type);
         if (serviceInfo.containsKey(node)) {
-            OrderedHashtable stuff = (OrderedHashtable) serviceInfo.get(node);
+        	IOrderedHashtable stuff = (IOrderedHashtable) serviceInfo.get(node);
 
             if (stuff.containsKey(type)) {
-                return (OrderedHashtable) stuff.get(type);
+                return (IOrderedHashtable) stuff.get(type);
             } else {
                 System.out.println(commNames[0] + node + commNames[1] + type);
                 return new OrderedHashtable();
@@ -344,9 +346,9 @@ public class Day implements DocHandler {
             return new OrderedHashtable();
         }
     }
-    public OrderedHashtable[] getReadings(){
-        OrderedHashtable[] readingsA = new OrderedHashtable[orderedCommemorations.size()];
-        OrderedHashtable[] rInformation = new OrderedHashtable[orderedCommemorations.size()];
+    public IOrderedHashtable[] getReadings(){
+    	IOrderedHashtable[] readingsA = new OrderedHashtable[orderedCommemorations.size()];
+    	IOrderedHashtable[] rInformation = new OrderedHashtable[orderedCommemorations.size()];
         Vector count= new Vector();
 
 
@@ -381,7 +383,7 @@ public class Day implements DocHandler {
             }
         }
         if (!count.isEmpty()){
-            OrderedHashtable[] readingsArray = new OrderedHashtable[count.size()];
+        	IOrderedHashtable[] readingsArray = new OrderedHashtable[count.size()];
             //int count2=0;
             for (int i = 0; i < count.size(); i++) {
                 readingsArray[i]=new OrderedHashtable();
@@ -399,15 +401,15 @@ public class Day implements DocHandler {
         
     }
 
-    public OrderedHashtable getRH(String node, String type) {
+    public IOrderedHashtable getRH(String node, String type) {
 
         if (royalHours.containsKey(node)) {
 
 
-            OrderedHashtable stuff = (OrderedHashtable) royalHours.get(node);
+        	IOrderedHashtable stuff = (IOrderedHashtable) royalHours.get(node);
             //System.out.println(stuff);
             if (stuff.containsKey(type)) {
-                OrderedHashtable stuff1 = (OrderedHashtable) stuff.get(type);
+            	IOrderedHashtable stuff1 = (IOrderedHashtable) stuff.get(type);
                 return stuff1;
             } else {
                 System.out.println(commNames[3]);
@@ -436,7 +438,7 @@ public class Day implements DocHandler {
 
         System.out.println(paramony.getCommsHyper());
         System.out.println(paramony.getDayRank());
-        OrderedHashtable[] testing=paramony.getReadings();
+        IOrderedHashtable[] testing=paramony.getReadings();
         System.out.println(testing[0].get(Constants.READINGS));
         System.out.println(testing[1].get(Constants.READINGS));
         //System.out.println(Testing[0].get("Information"));

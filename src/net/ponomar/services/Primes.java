@@ -14,6 +14,7 @@ import net.ponomar.parsing.Service;
 import net.ponomar.parsing.ServiceInfo;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 
 /***********************************************************************
@@ -44,7 +45,7 @@ public class Primes extends LitService
 	private static String fileNameOut=fileNameIn+"Primes.html";
 	private PrimeSelector selectorP;//=new PrimeSelector();
 			
-	public Primes(JDate date, OrderedHashtable dayInfo)
+	public Primes(JDate date, IOrderedHashtable dayInfo)
 	{
             analyse.setDayInfo(dayInfo);
             langText=new LanguagePack(dayInfo);
@@ -204,7 +205,7 @@ public class Primes extends LitService
 		//CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
 		//POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
 		ServiceInfo ServicePrimes=new ServiceInfo("PRIME",analyse.getDayInfo());
-		OrderedHashtable PrimesTrial = ServicePrimes.serviceRules();
+		IOrderedHashtable PrimesTrial = ServicePrimes.serviceRules();
 		
 		type=PrimesTrial.get("Type").toString();
 		lentenKat=(String) PrimesTrial.get(LENTENK);

@@ -14,6 +14,7 @@ import net.ponomar.parsing.Service;
 import net.ponomar.parsing.ServiceInfo;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 
 /***********************************************************************
@@ -50,7 +51,7 @@ public class SixthHour extends LitService {
 
     
 
-    public SixthHour(JDate date, OrderedHashtable dayInfo) {
+    public SixthHour(JDate date, IOrderedHashtable dayInfo) {
         analyse.setDayInfo(dayInfo);
             langText=new LanguagePack(dayInfo);
             primesNames=langText.obtainValues((String)langText.getPhrases().get("Sexte"));
@@ -168,12 +169,12 @@ public class SixthHour extends LitService {
 
         Day Readings = new Day(filename, analyse.getDayInfo());
         try {
-            OrderedHashtable[] lessons = Readings.getReadings();
-            OrderedHashtable Reading = (OrderedHashtable) lessons[0].get(Constants.READINGS);
-            OrderedHashtable lesson = (OrderedHashtable) Reading.get(Constants.READINGS);
-            OrderedHashtable reading = (OrderedHashtable) lesson.get("6th hour");
+        	IOrderedHashtable[] lessons = Readings.getReadings();
+        	IOrderedHashtable Reading = (IOrderedHashtable) lessons[0].get(Constants.READINGS);
+        	IOrderedHashtable lesson = (IOrderedHashtable) Reading.get(Constants.READINGS);
+        	IOrderedHashtable reading = (IOrderedHashtable) lesson.get("6th hour");
             //System.out.println("Reading == " +reading);
-            OrderedHashtable lesson2 = (OrderedHashtable) reading.get("1");
+        	IOrderedHashtable lesson2 = (IOrderedHashtable) reading.get("1");
             //System.out.println("Lesson 2 == "+lesson2);
             reading6th = lesson2.get(Constants.READING).toString();
         } catch (Exception e)  {           //There are no appointed readings
@@ -193,7 +194,7 @@ public class SixthHour extends LitService {
         //CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
         //POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
         ServiceInfo ServicePrimes = new ServiceInfo("SEXTE",analyse.getDayInfo());
-        OrderedHashtable PrimesTrial = ServicePrimes.serviceRules();
+        IOrderedHashtable PrimesTrial = ServicePrimes.serviceRules();
 
         type = PrimesTrial.get("Type").toString();
         lentenKat = (String) PrimesTrial.get(LENTENK);

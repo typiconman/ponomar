@@ -8,6 +8,8 @@ import net.ponomar.parsing.QDParser;
 import net.ponomar.readings.utility.ClassifyDivineLiturgy;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -46,7 +48,7 @@ public class DivineLiturgy extends Reading {
 
 	private static StringOp analyse=new StringOp();
 
-    public DivineLiturgy(OrderedHashtable dayInfo) {
+    public DivineLiturgy(IOrderedHashtable dayInfo) {
         getAnalyse().setDayInfo(dayInfo);
           phrases = new LanguagePack(dayInfo);
     transferredDays = phrases.obtainValues((String) phrases.getPhrases().get("DayReading"));
@@ -88,7 +90,7 @@ public class DivineLiturgy extends Reading {
     }
 
 
-    public String Readings(OrderedHashtable readingsIn, String readingType, JDate today) {
+    public String Readings(IOrderedHashtable readingsIn, String readingType, JDate today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/

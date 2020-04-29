@@ -2,6 +2,8 @@ package net.ponomar.readings.utility;
 
 import net.ponomar.readings.Matins;
 import net.ponomar.utility.Constants;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -12,17 +14,17 @@ public class ClassifyMatins extends ClassifyReadings {
     public ClassifyMatins() {
     }
 
-    public ClassifyMatins(OrderedHashtable readingsInA) {
+    public ClassifyMatins(IOrderedHashtable readingsInA) {
 		StringOp Testing = new StringOp();
         ParameterValues.setDayInfo(Matins.getInformation3().getDayInfo());
         classify(readingsInA);
     }
 
-    public ClassifyMatins(Matins matins, OrderedHashtable readingsInA, StringOp ParameterValues) {
+    public ClassifyMatins(Matins matins, IOrderedHashtable readingsInA, StringOp ParameterValues) {
 		classify(readingsInA);
 
     }
-    private void classify(OrderedHashtable readingsIn)
+    private void classify(IOrderedHashtable readingsIn)
     {
         //Initialise Information.
         Information2=new OrderedHashtable();

@@ -6,6 +6,7 @@ import java.util.Vector;
 
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.utility.Constants;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -14,7 +15,7 @@ public class ClassifyReadings implements DocHandler {
 	/**
 	 * 
 	 */
-	protected OrderedHashtable Information2;
+	protected IOrderedHashtable Information2;
 	public Vector dailyV = new Vector();
 	public Vector dailyR = new Vector();
 	public Vector dailyT = new Vector();

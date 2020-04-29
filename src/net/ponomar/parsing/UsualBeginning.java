@@ -1,6 +1,7 @@
 package net.ponomar.parsing;
 
 import net.ponomar.utility.Constants;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -43,7 +44,7 @@ public class UsualBeginning
 		 test2.readService(UsualFileName+"UsualBeginning.xml");
 		usualBeginning1=test2.service1;
 	}	
-	public UsualBeginning(OrderedHashtable dayInfo)
+	public UsualBeginning(IOrderedHashtable dayInfo)
 	{
 		final String UsualFileName = "src/" + Constants.SERVICES_PATH + "UsualBeginning/";
 		Service test2=new Service(dayInfo);

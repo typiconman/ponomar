@@ -4,6 +4,8 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 import net.ponomar.utility.Constants;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 
 /***************************************************************
@@ -15,10 +17,10 @@ public final class ReadingUtility {
 	
     static final String READINGS_KEY = Constants.READINGS;
 
-	public static void processMenaionPaschalReadings(OrderedHashtable[] menaionReadings, OrderedHashtable combinedReadings) {
-		for (OrderedHashtable menaionReading : menaionReadings) {
-			OrderedHashtable reading = (OrderedHashtable) menaionReading.get(READINGS_KEY);
-			OrderedHashtable readings = (OrderedHashtable) reading.get(READINGS_KEY);
+	public static void processMenaionPaschalReadings(IOrderedHashtable[] menaionReadings, IOrderedHashtable combinedReadings) {
+		for (IOrderedHashtable menaionReading : menaionReadings) {
+			IOrderedHashtable reading = (IOrderedHashtable) menaionReading.get(READINGS_KEY);
+			IOrderedHashtable readings = (IOrderedHashtable) reading.get(READINGS_KEY);
 			for (Enumeration<String> e = readings.enumerateKeys(); e.hasMoreElements(); ) {
 				String element1 = e.nextElement().toString();
 				if (combinedReadings.get(element1) != null) {
@@ -30,21 +32,21 @@ public final class ReadingUtility {
 		}
 	}
 	
-	private static OrderedHashtable combineWithExistingReading(OrderedHashtable combinedReadings, OrderedHashtable reading,
-			OrderedHashtable readings, String element1) {
-		OrderedHashtable temp = (OrderedHashtable) combinedReadings.get(element1);
+	private static IOrderedHashtable combineWithExistingReading(IOrderedHashtable combinedReadings, IOrderedHashtable reading,
+			IOrderedHashtable readings, String element1) {
+		IOrderedHashtable temp = (IOrderedHashtable) combinedReadings.get(element1);
 		Vector readings2 = (Vector) temp.get(READINGS_KEY);
 		Vector rank = (Vector) temp.get("Rank");
 		Vector tag = (Vector) temp.get("Tag");
 		return putReadings(reading, readings, element1, temp, readings2, rank, tag);
 	}
 	
-	private static OrderedHashtable readingDoesNotExist(OrderedHashtable reading, OrderedHashtable readings, String element1) {
+	private static IOrderedHashtable readingDoesNotExist(IOrderedHashtable reading, IOrderedHashtable readings, String element1) {
 		return putReadings(reading, readings, element1, new OrderedHashtable(), new Vector(), new Vector(), new Vector());
 	}
 	
-	private static OrderedHashtable putReadings(OrderedHashtable reading, OrderedHashtable readings, String element1,
-			OrderedHashtable temp, Vector readings2, Vector rank, Vector tag) {
+	private static IOrderedHashtable putReadings(IOrderedHashtable reading, IOrderedHashtable readings, String element1,
+			IOrderedHashtable temp, Vector readings2, Vector rank, Vector tag) {
 		readings2.add(readings.get(element1));
 		rank.add(reading.get("Rank"));
 		tag.add(reading.get("Name"));

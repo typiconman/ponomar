@@ -38,7 +38,7 @@ public final class StringOp implements Cloneable
 	//private static LanguagePack Phrases = new LanguagePack();
 	//private static String [] Errors=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
 
-   private OrderedHashtable dayInfo;
+   private IOrderedHashtable dayInfo;
    public StringOp()
    {
        dayInfo=new OrderedHashtable();
@@ -439,10 +439,10 @@ private static double bool2double(boolean expression)
 	}
 	return result;
 }
-public OrderedHashtable getDayInfo() {
+public IOrderedHashtable getDayInfo() {
 	return dayInfo;
 }
-public void setDayInfo(OrderedHashtable dayInfo) {
+public void setDayInfo(IOrderedHashtable dayInfo) {
 	this.dayInfo = dayInfo;
 }
 public StringOp clone(){

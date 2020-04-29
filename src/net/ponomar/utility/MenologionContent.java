@@ -29,14 +29,14 @@ public final class MenologionContent {
 
 	private static final String READINGS_KEY = Constants.READINGS;
 
-	public String processReadings(Bible shortForm, OrderedHashtable combinedReadings) {
+	public String processReadings(Bible shortForm, IOrderedHashtable combinedReadings) {
 		StringBuilder content = new StringBuilder();
 		boolean firstTime = true;
 		for (Enumeration<String> e = combinedReadings.enumerateKeys(); e.hasMoreElements();) {
 			// Temporary solution
 			String element1 = e.nextElement();
-			OrderedHashtable temp = (OrderedHashtable) combinedReadings.get(element1);
-			Vector<OrderedHashtable> readings = (Vector<OrderedHashtable>) temp.get(READINGS_KEY);
+			IOrderedHashtable temp = (IOrderedHashtable) combinedReadings.get(element1);
+			Vector<IOrderedHashtable> readings = (Vector<IOrderedHashtable>) temp.get(READINGS_KEY);
 			Vector<String> rank = (Vector<String>) temp.get("Rank");
 			Vector<String> tag = (Vector<String>) temp.get("Tag");
 			if (element1.equals("LITURGY")) {
@@ -103,16 +103,16 @@ public final class MenologionContent {
 		return content.toString();
 	}
 
-	public String iterateEpistleGospel(Vector<OrderedHashtable> readings, Vector<String> rank, Vector<String> tag) {
+	public String iterateEpistleGospel(Vector<IOrderedHashtable> readings, Vector<String> rank, Vector<String> tag) {
 
 		String epistleGospelOutput = "";
 		Vector<String> epistle = new Vector<>();
 
 		Vector<String> gospel = new Vector<>();
 
-		for (OrderedHashtable liturgy : readings) {
-			OrderedHashtable stepE = (OrderedHashtable) liturgy.get("apostol");
-			OrderedHashtable stepG = (OrderedHashtable) liturgy.get("gospel");
+		for (IOrderedHashtable liturgy : readings) {
+			IOrderedHashtable stepE = (IOrderedHashtable) liturgy.get("apostol");
+			IOrderedHashtable stepG = (IOrderedHashtable) liturgy.get("gospel");
 
 			if (stepE != null) {
 				epistle.add(stepE.get(Constants.READING).toString());
@@ -125,7 +125,7 @@ public final class MenologionContent {
 				gospel.add("");
 			}
 		}
-		OrderedHashtable readingsA = new OrderedHashtable();
+		IOrderedHashtable readingsA = new OrderedHashtable();
 
 		if (!epistle.get(0).equals("")) {
 			epistleGospelOutput += putEpistleGospelReadings(rank, tag, epistle, readingsA, "apostol");
@@ -137,8 +137,8 @@ public final class MenologionContent {
 		return epistleGospelOutput;
 	}
 
-	public String putMatinsReadings(Vector<OrderedHashtable> readings, Vector<String> rank, Vector<String> tag,
-			OrderedHashtable readingsA, String key) {
+	public String putMatinsReadings(Vector<IOrderedHashtable> readings, Vector<String> rank, Vector<String> tag,
+			IOrderedHashtable readingsA, String key) {
 		readingsA.put(READINGS_KEY, MenologionContent.processMatins(readings));
 		readingsA.put("Rank", rank);
 		readingsA.put("Tag", tag);
@@ -148,7 +148,7 @@ public final class MenologionContent {
 	}
 
 	private String putEpistleGospelReadings(Vector<String> rank, Vector<String> tag, Vector<String> reading,
-			OrderedHashtable readingsA, String key) {
+			IOrderedHashtable readingsA, String key) {
 		readingsA.put(READINGS_KEY, reading);
 		readingsA.put("Rank", rank);
 		readingsA.put("Tag", tag);
@@ -157,14 +157,14 @@ public final class MenologionContent {
 		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, key, today);
 	}
 
-	public static Vector<String> processMatins(Vector<OrderedHashtable> readings) {
+	public static Vector<String> processMatins(Vector<IOrderedHashtable> readings) {
 		Vector<String> matins2 = new Vector<>();
 
-		for (OrderedHashtable matins : readings) {
+		for (IOrderedHashtable matins : readings) {
 			// System.out.println("In Main1, we have "+Readings.get(j));
-			OrderedHashtable stepE = (OrderedHashtable) matins.get("matins");
+			IOrderedHashtable stepE = (IOrderedHashtable) matins.get("matins");
 			if (stepE == null) {
-				stepE = (OrderedHashtable) matins.get("1");
+				stepE = (IOrderedHashtable) matins.get("1");
 			}
 			// OrderedHashtable stepE=(OrderedHashtable)matins.get("matins");
 			// System.out.println("In Main1, we have "+matins2);
@@ -179,11 +179,11 @@ public final class MenologionContent {
 		return matins2;
 	}
 
-	public static String iterateOverReadings(Bible shortForm, Vector<OrderedHashtable> readings, Vector<String> tag,
+	public static String iterateOverReadings(Bible shortForm, Vector<IOrderedHashtable> readings, Vector<String> tag,
 			String rSep) {
 		StringBuilder output = new StringBuilder();
 		for (int i = 0; i < readings.size(); i++) {
-			OrderedHashtable reading = readings.get(i);
+			IOrderedHashtable reading = readings.get(i);
 			if (i != 0) {
 				output.append(rSep);
 			}
@@ -196,7 +196,7 @@ public final class MenologionContent {
 					output.append(rSep);
 				}
 				String element2 = e2.nextElement();
-				OrderedHashtable stuff = (OrderedHashtable) reading.get(element2);
+				IOrderedHashtable stuff = (IOrderedHashtable) reading.get(element2);
 				String bibleText = stuff.get(Constants.READING).toString();
 				output.append(shortForm.getHyperlink(bibleText));
 			}

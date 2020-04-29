@@ -3,6 +3,8 @@ package net.ponomar.parsing;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -33,7 +35,7 @@ public class Fasting implements DocHandler
 	private static final String FASTING_FILE   = Constants.COMMANDS + "Fasting.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
-	private static OrderedHashtable information;
+	private static IOrderedHashtable information;
 	
 	private LanguagePack phrases;
 	//GET THE APPROPRIATE FASTING LINES
@@ -42,7 +44,7 @@ public class Fasting implements DocHandler
 	private static String fast;
 	private static Helpers helper;
         private static StringOp analyse=new StringOp();
-        public Fasting(OrderedHashtable dayInfo){
+        public Fasting(IOrderedHashtable dayInfo){
             analyse.setDayInfo(dayInfo);
             phrases=new LanguagePack(dayInfo);
         }

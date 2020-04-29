@@ -3,6 +3,7 @@ package net.ponomar;
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 
 import java.io.*;
@@ -39,7 +40,7 @@ yuri.shardt (at) gmail.com
  */
 public class ConfigurationFiles implements DocHandler
 {
-	private static OrderedHashtable Defaults;		//STORES THE START-UP VALUES FOR PONOMAR
+	private static IOrderedHashtable Defaults;		//STORES THE START-UP VALUES FOR PONOMAR
 	
 	//THIS ALLOWS THE PONOMAR CONFIGURAITON FILE TO BE MAINTAINED, UPDATED, AND READ.
 	public ConfigurationFiles()
@@ -127,11 +128,11 @@ public class ConfigurationFiles implements DocHandler
 
 	public void text(String text) { }
 
-	public static OrderedHashtable getDefaults() {
+	public static IOrderedHashtable getDefaults() {
 		return Defaults;
 	}
 
-	public static void setDefaults(OrderedHashtable defaults) {
+	public static void setDefaults(IOrderedHashtable defaults) {
 		Defaults = defaults;
 	}
 }

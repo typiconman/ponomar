@@ -67,11 +67,11 @@ public class RuleBasedNumber implements DocHandler
      */
     //private String fformat=".#{'!','2'}['$@','2','N > 10']#['<','2','N > 1000']{'>','7'}#."; //Any marks that need to be added on top of the final number
     private String fformat="###";
-    private OrderedHashtable Phrases;		//STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT INTERFACE LANGUAGE.
+    private IOrderedHashtable Phrases;		//STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT INTERFACE LANGUAGE.
     private boolean readRules=false;
     private StringOp analyse= new StringOp();
 
-    public RuleBasedNumber(OrderedHashtable dayInfo)
+    public RuleBasedNumber(IOrderedHashtable dayInfo)
 	{
     	//Do nothing right now; later load the required rules.
         analyse.setDayInfo(dayInfo);
@@ -536,7 +536,7 @@ public class RuleBasedNumber implements DocHandler
         //DEBUG MODE
         System.out.println("RuleBasedNumber.java running in Debug mode");
         System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
-        OrderedHashtable dayInfo = new OrderedHashtable();
+        IOrderedHashtable dayInfo = new OrderedHashtable();
         dayInfo.put("LS","6");
 
         RuleBasedNumber test=new RuleBasedNumber(dayInfo);

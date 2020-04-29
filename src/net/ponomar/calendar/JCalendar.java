@@ -3,6 +3,7 @@ package net.ponomar.calendar;
 import javax.swing.*;
 
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -60,7 +61,7 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 	private String orderBox;// =(String)Text.Phrases.get("OrderBox");
 	private StringOp analyse = new StringOp();
 
-	public JCalendar(OrderedHashtable dayInfo) {
+	public JCalendar(IOrderedHashtable dayInfo) {
 		this(null, dayInfo);
 
 		analyse.setDayInfo(dayInfo);
@@ -71,7 +72,7 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 
 	}
 
-	protected JCalendar(JDate date, OrderedHashtable dayInfo) {
+	protected JCalendar(JDate date, IOrderedHashtable dayInfo) {
 		super();
 		analyse.setDayInfo(dayInfo);
 		text = new LanguagePack(dayInfo);

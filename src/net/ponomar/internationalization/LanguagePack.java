@@ -4,6 +4,8 @@ import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -34,20 +36,20 @@ yuri (dot) shardt (at) gmail.com
 **************************************************************/
 
 public class LanguagePack implements DocHandler {
-	private OrderedHashtable requiredPhrases; // STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT
+	private IOrderedHashtable requiredPhrases; // STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT
 												// INTERFACE LANGUAGE.
 	private boolean readPhrases = false; // DETERMINE WHETHER TO READ OR NOT TO READ THE GIVEN PHRASES (THIS MUST BE
 											// ADDED TO ALL THE READERS).
 	private final StringOp analyse = new StringOp();
 
-	public LanguagePack(OrderedHashtable dayInfo) {
+	public LanguagePack(IOrderedHashtable dayInfo) {
 		setPhrases(new OrderedHashtable());
 		analyse.setDayInfo(dayInfo);
 		readPhrases();
 
 	}
 
-	public LanguagePack(String path, OrderedHashtable dayInfo) {
+	public LanguagePack(String path, IOrderedHashtable dayInfo) {
 		analyse.setDayInfo(dayInfo);
 		setPhrases(new OrderedHashtable());
 		readPhrases(path);
@@ -121,11 +123,11 @@ public class LanguagePack implements DocHandler {
 		}
 	}
 
-	public OrderedHashtable getPhrases() {
+	public IOrderedHashtable getPhrases() {
 		return requiredPhrases;
 	}
 
-	public void setPhrases(OrderedHashtable phrases) {
+	public void setPhrases(IOrderedHashtable phrases) {
 		requiredPhrases = phrases;
 	}
 

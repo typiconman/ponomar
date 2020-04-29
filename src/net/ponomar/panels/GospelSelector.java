@@ -3,6 +3,7 @@ package net.ponomar.panels;
 import net.ponomar.ConfigurationFiles;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -52,7 +53,7 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
 	private LanguagePack text;//=new LanguagePack();
 	private String[] selectorNames;//=Text.obtainValues((String)Text.Phrases.get("GospelSelection"));
 	private StringOp analyse=new StringOp();
-	public GospelSelector(OrderedHashtable dayInfo)
+	public GospelSelector(IOrderedHashtable dayInfo)
 	{
 	analyse.setDayInfo(dayInfo);
         text=new LanguagePack(dayInfo);

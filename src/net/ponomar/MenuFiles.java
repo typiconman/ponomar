@@ -5,6 +5,7 @@ import javax.swing.*;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.internationalization.LanguageSelector;
 import net.ponomar.panels.GospelSelector;
+import net.ponomar.utility.IOrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -50,7 +51,7 @@ public class MenuFiles extends JMenu implements ItemListener, PropertyChangeList
 	private final String[] helpNames;// =Text.obtainValues((String)Text.Phrases.get("Help"));
 	private final StringOp analyse = new StringOp();
 
-	public MenuFiles(OrderedHashtable dayInfo) {
+	public MenuFiles(IOrderedHashtable dayInfo) {
 		analyse.setDayInfo(dayInfo);
 		text = new LanguagePack(dayInfo);
 		saintNames = text.obtainValues((String) text.getPhrases().get("SMenu"));

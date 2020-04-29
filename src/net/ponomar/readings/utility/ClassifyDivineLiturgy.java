@@ -9,6 +9,8 @@ import net.ponomar.parsing.QDParser;
 import net.ponomar.readings.DivineLiturgy;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -17,19 +19,19 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
 		public ClassifyDivineLiturgy() {
         }
 
-        public ClassifyDivineLiturgy(OrderedHashtable readingsInA) {
+        public ClassifyDivineLiturgy(IOrderedHashtable readingsInA) {
 			StringOp Testing = new StringOp();
             ParameterValues.setDayInfo(DivineLiturgy.getAnalyse().getDayInfo());
             //System.out.println("In ParameterValues, we have LS = " + ParameterValues.getDayInfo().get("LS")+" while in Analyse, we have "+Analyse.getDayInfo().get("LS"));
             classify(readingsInA);
         }
 
-       public ClassifyDivineLiturgy(OrderedHashtable readingsInA, OrderedHashtable dayInfo) {
+       public ClassifyDivineLiturgy(IOrderedHashtable readingsInA, IOrderedHashtable dayInfo) {
 		ParameterValues.setDayInfo(dayInfo);
             classify(readingsInA);
 
         }
-        private void classify(OrderedHashtable readingsIn)
+        private void classify(IOrderedHashtable readingsIn)
         {
             //Initialise Information.
             Information2=new OrderedHashtable();

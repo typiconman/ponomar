@@ -11,6 +11,8 @@ import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 
@@ -59,14 +61,14 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     private String curpassage;
     private String lastversion = "";
     private String instructions = "";
-    private OrderedHashtable versions = new OrderedHashtable();
-    private OrderedHashtable versions2 = new OrderedHashtable();
-    private OrderedHashtable books = new OrderedHashtable();
-    private OrderedHashtable chapters = new OrderedHashtable();
-    private OrderedHashtable abbrev = new OrderedHashtable();
+    private IOrderedHashtable versions = new OrderedHashtable();
+    private IOrderedHashtable versions2 = new OrderedHashtable();
+    private IOrderedHashtable books = new OrderedHashtable();
+    private IOrderedHashtable chapters = new OrderedHashtable();
+    private IOrderedHashtable abbrev = new OrderedHashtable();
     private boolean readFile = false;
-    private OrderedHashtable findId = new OrderedHashtable();	//ADDED Y.S.
-    private OrderedHashtable intro = new OrderedHashtable(); //ADDED Y.S.
+    private IOrderedHashtable findId = new OrderedHashtable();	//ADDED Y.S.
+    private IOrderedHashtable intro = new OrderedHashtable(); //ADDED Y.S.
     private String displayFont = ""; //ALLOWS A CUSTOM FONT AND SIZE TO BE SPECIFIED FOR A GIVEN BIBLE READING: REQUIRED FOR OLD CHURCH SLAVONIC AT PRESENT
     private String displaySize = "12";  //UNTIL A COMPLETE UNICODE FONT IS AVAILIBLE.
     private Font defaultFont = new Font("", Font.BOLD, 12);		//CREATE THE DEFAULT FONT
@@ -106,7 +108,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     
 
     // CONSTRUCTOR
-    protected Bible(String curbook, String curpassage, OrderedHashtable dayInfo) {
+    protected Bible(String curbook, String curpassage, IOrderedHashtable dayInfo) {
         
         analyse.setDayInfo(dayInfo);
         text = new LanguagePack(dayInfo);
@@ -288,7 +290,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         }
 	}
 
-    public Bible(OrderedHashtable dayInfo) {
+    public Bible(IOrderedHashtable dayInfo) {
         analyse.setDayInfo(dayInfo);
         text = new LanguagePack(dayInfo);
         captions = text.obtainValues((String) text.getPhrases().get("BibleW"));
@@ -1092,7 +1094,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         //DEBUG MODE
         System.out.println("Bible.java running in Debug mode");
         System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
-        OrderedHashtable dayInfo = new OrderedHashtable();
+        IOrderedHashtable dayInfo = new OrderedHashtable();
         dayInfo.put("LS", "0");
         new Bible(dayInfo);
     }

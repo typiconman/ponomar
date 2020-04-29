@@ -7,6 +7,8 @@ import java.nio.charset.StandardCharsets;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
+import net.ponomar.utility.IOrderedHashtable;
+import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.OrderedHashtable;
 import net.ponomar.utility.StringOp;
 /***********************************************************************
@@ -32,17 +34,17 @@ public class ServiceInfo implements DocHandler
 	private static final String FILENAME   = Constants.COMMANDS + "ServiceRules.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
-	private static OrderedHashtable information;
+	private static IOrderedHashtable information;
 	
 	private LanguagePack phrases;//=new LanguagePack();
 	//GET THE APPROPRIATE FASTING LINES
 	//private String[] ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
 	//private String[] LanguageNames=Text.obtainValues((String)Text.Phrases.get("LanguageMenu"));
-	private static OrderedHashtable service;
+	private static IOrderedHashtable service;
 	private String type;
         private Helpers findLanguage;
 	private StringOp analyse=new StringOp();
-	public ServiceInfo(String info, OrderedHashtable dayInfo)
+	public ServiceInfo(String info, IOrderedHashtable dayInfo)
 	{
 		type = info;
                 findLanguage=new Helpers(analyse.getDayInfo());
@@ -50,7 +52,7 @@ public class ServiceInfo implements DocHandler
                 phrases=new LanguagePack(dayInfo);
 	}
 	
-	public OrderedHashtable serviceRules() //throws IOException
+	public IOrderedHashtable serviceRules() //throws IOException
 	{
 		service=new OrderedHashtable();
 		information=new OrderedHashtable();
