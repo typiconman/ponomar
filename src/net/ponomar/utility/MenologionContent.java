@@ -146,7 +146,7 @@ public final class MenologionContent {
 		readingsA.put("Tag", tag);
 		Matins trial1 = new Matins(analyse.getDayInfo());
 		String type1 = phrases.getPhrases().get(key);
-		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, today);
+		return "<B>" + type1 + "</B>" + colon + trial1.readings(readingsA, today);
 	}
 
 	private String putEpistleGospelReadings(Vector<String> rank, Vector<String> tag, Vector<String> reading,
@@ -156,7 +156,7 @@ public final class MenologionContent {
 		readingsA.put("Tag", tag);
 		DivineLiturgy trial1 = new DivineLiturgy(analyse.getDayInfo());
 		String type1 = phrases.getPhrases().get(key);
-		return "<B>" + type1 + "</B>" + colon + trial1.Readings(readingsA, key, today);
+		return "<B>" + type1 + "</B>" + colon + trial1.readings(readingsA, key, today);
 	}
 
 	public static Vector<String> processMatins(Vector<LinkedHashMap> readings) {

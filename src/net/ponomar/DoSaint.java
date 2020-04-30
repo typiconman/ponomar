@@ -186,7 +186,85 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         String[] toneNumbers = text.obtainValues(text.getPhrases().get("Tones"));
         String[] mainNames = text.obtainValues(text.getPhrases().get("Main"));
         String[] saintInfo = text.obtainValues(text.getPhrases().get("LivesW"));
-        String textOut = "";
+        String textOut = generateContent(toneNumbers, saintInfo);
+        //Other information can go here!
+        //String textOut=header+image+rest;
+        
+        frames = new JFrame(text.getPhrases().get("0") + text.getPhrases().get(Constants.COLON) + name2);
+        
+        //frames.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JPanel left=new JPanel();
+        JPanel right=new JPanel();
+        left.setLayout(new BorderLayout());
+        right.setLayout(new BoxLayout(right, BoxLayout.PAGE_AXIS));
+
+        textOut = textOut.replace("</br>", "<BR>");
+        textOut = textOut.replace("<br>", "<BR>");
+        strOut = textOut;
+        JPanel contentPane = new JPanel(new BorderLayout());
+        contentPane.setOpaque(true);
+        output = new PrintableTextPane();
+        output.addHyperlinkListener(this);
+        //output=new JEditorPane();
+        output.setEditable(false);
+        output.setSize(800, 700);
+        output.setContentType(Constants.CONTENT_TYPE);
+        //output.setText(header);
+        output.setText(textOut);
+        output.setCaretPosition(0);
+        contentPane.add(output);
+
+        JScrollPane scrollPane = new JScrollPane(output);
+        JMenuBar menuBarElement = new JMenuBar();
+        MenuFiles demo = new MenuFiles(analyse.getDayInfo());
+        //PrimeSelector trial=new PrimeSelector();
+        menuBarElement.add(demo.createFileMenu(this));
+        //MenuBar.add(trial.createPrimeMenu());
+        menuBarElement.add(demo.createHelpMenu(this));
+        frames.setJMenuBar(menuBarElement);
+        //trial.addPropertyChangeListener(this);
+
+        contentPane.add(scrollPane, BorderLayout.CENTER);
+        right.add(contentPane);
+
+        JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        splitter.setLeftComponent(left);
+        splitter.setRightComponent(right);
+
+        frames.add(splitter);
+
+
+        //frames.setContentPane(contentPane);
+        
+
+        LinkedHashMap<String, Vector<String>> iconsM= saintInfo2.getDisplayIcons();
+        Vector<String> imageList= iconsM.get("Images");
+                Vector<String> namesList= iconsM.get("Names");
+                String[] iconImages=new String[imageList.size()];
+                String[] iconNames=new String[namesList.size()];
+
+                iconImages=imageList.toArray(new String[0]);
+                iconNames=namesList.toArray(new String[0]);
+        System.out.println("Icon Length is: " + iconNames.length);
+        IconDisplay icons=new IconDisplay(iconImages,iconNames,analyse.getDayInfo());
+        left.add(new JPanel(),BorderLayout.NORTH);
+        left.add(icons,BorderLayout.CENTER);
+        left.add(new JPanel(),BorderLayout.SOUTH);
+//        contentPane.add(icons);
+  //      textOut+=icons;
+    //    output.setText(textOut);
+
+        Helpers orient = new Helpers(analyse.getDayInfo());
+
+        orient.applyOrientation(frames,(ComponentOrientation)analyse.getDayInfo().get(Constants.ORIENT));
+        frames.pack();
+        frames.setSize(800, 700);
+        frames.setVisible(true);
+        //scrollPane.top();
+    }
+
+	protected String generateContent(String[] toneNumbers, String[] saintInfo) {
+		String textOut = "";
         
         if (name.equals("")) {
             textOut = saintInfo[6];
@@ -327,81 +405,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
                 textOut += "<p style=\"font-family:" + displayFont + ";font-size:" + displaySize + "\">" + kondak2 + "</p>";
             }
         }
-        //Other information can go here!
-        //String textOut=header+image+rest;
-        
-        frames = new JFrame(text.getPhrases().get("0") + text.getPhrases().get(Constants.COLON) + name2);
-        
-        //frames.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel left=new JPanel();
-        JPanel right=new JPanel();
-        left.setLayout(new BorderLayout());
-        right.setLayout(new BoxLayout(right, BoxLayout.PAGE_AXIS));
-
-        textOut = textOut.replace("</br>", "<BR>");
-        textOut = textOut.replace("<br>", "<BR>");
-        strOut = textOut;
-        JPanel contentPane = new JPanel(new BorderLayout());
-        contentPane.setOpaque(true);
-        output = new PrintableTextPane();
-        output.addHyperlinkListener(this);
-        //output=new JEditorPane();
-        output.setEditable(false);
-        output.setSize(800, 700);
-        output.setContentType(Constants.CONTENT_TYPE);
-        //output.setText(header);
-        output.setText(textOut);
-        output.setCaretPosition(0);
-        contentPane.add(output);
-
-        JScrollPane scrollPane = new JScrollPane(output);
-        JMenuBar menuBarElement = new JMenuBar();
-        MenuFiles demo = new MenuFiles(analyse.getDayInfo());
-        //PrimeSelector trial=new PrimeSelector();
-        menuBarElement.add(demo.createFileMenu(this));
-        //MenuBar.add(trial.createPrimeMenu());
-        menuBarElement.add(demo.createHelpMenu(this));
-        frames.setJMenuBar(menuBarElement);
-        //trial.addPropertyChangeListener(this);
-
-        contentPane.add(scrollPane, BorderLayout.CENTER);
-        right.add(contentPane);
-
-        JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
-        splitter.setLeftComponent(left);
-        splitter.setRightComponent(right);
-
-        frames.add(splitter);
-
-
-        //frames.setContentPane(contentPane);
-        
-
-        LinkedHashMap<String, Vector<String>> iconsM= saintInfo2.getDisplayIcons();
-        Vector<String> imageList= iconsM.get("Images");
-                Vector<String> namesList= iconsM.get("Names");
-                String[] iconImages=new String[imageList.size()];
-                String[] iconNames=new String[namesList.size()];
-
-                iconImages=imageList.toArray(new String[0]);
-                iconNames=namesList.toArray(new String[0]);
-        System.out.println("Icon Length is: " + iconNames.length);
-        IconDisplay icons=new IconDisplay(iconImages,iconNames,analyse.getDayInfo());
-        left.add(new JPanel(),BorderLayout.NORTH);
-        left.add(icons,BorderLayout.CENTER);
-        left.add(new JPanel(),BorderLayout.SOUTH);
-//        contentPane.add(icons);
-  //      textOut+=icons;
-    //    output.setText(textOut);
-
-        Helpers orient = new Helpers(analyse.getDayInfo());
-
-        orient.applyOrientation(frames,(ComponentOrientation)analyse.getDayInfo().get(Constants.ORIENT));
-        frames.pack();
-        frames.setSize(800, 700);
-        frames.setVisible(true);
-        //scrollPane.top();
-    }
+		return textOut;
+	}
 
     public void hyperlinkUpdate(HyperlinkEvent e)
 	{
@@ -693,8 +698,6 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             //SAVE THE CURRENT WINDOW
             System.out.println(strOut);
             helper.saveHTMLFile(name, strOut);
-
-
         }
         if (name1.equals(fileNames[4])) {
             //CLOSE THE PRIMES FRAME

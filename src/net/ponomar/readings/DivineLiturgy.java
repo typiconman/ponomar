@@ -1,6 +1,5 @@
 package net.ponomar.readings;
 
-import net.ponomar.Bible;
 import net.ponomar.astronomy.Paschalion;
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
@@ -47,6 +46,7 @@ public class DivineLiturgy extends Reading {
 
     public DivineLiturgy(LinkedHashMap<String, Object> dayInfo) {
         getAnalyse().setDayInfo(dayInfo);
+        getInformation3().setDayInfo(dayInfo);
           phrases = new LanguagePack(dayInfo);
     transferredDays = phrases.obtainValues(phrases.getPhrases().get("DayReading"));
      error = phrases.obtainValues(phrases.getPhrases().get("Errors"));
@@ -55,39 +55,8 @@ public class DivineLiturgy extends Reading {
 
 //THESE ARE THE SAME FUNCTION AS IN MAIN, BUT TRIMMED FOR THE CURRENT NEEDS
 
-    public void startElement(String elem, Hashtable table) {
-        // THE TAG COULD CONTAIN A COMMAND Cmd
-        // THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
-        // TODAY'S INFORMATION IN dayInfo.
-        if (table.get("Cmd") != null) {
-            // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (getAnalyse().evalbool(table.get("Cmd").toString()) == false) {
-                return;
-            }
-        }
-
-        if (elem.equals(Constants.COMMAND)) {
-            //THIS WILL STORE ALL THE POSSIBLE COMMANDS FOR A GIVEN SITUATION AND ALLOW THE RESULTS TO BE DETEMINED.
-            String name = (String) table.get("Name");
-            String value = (String) table.get(Constants.VALUE);
-            //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
-            if (information.containsKey(name)) {
-                Vector<String> previous = (Vector<String>) information.get(name);
-                previous.add(value);
-                information.put(name, previous);
-            } else {
-                Vector<String> vect = new Vector<String>();
-                vect.add(value);
-                information.put(name, vect);
-            }
-
-        }
-        //ALL WE CARE ABOUT ARE THE SCRIPTURE READINGS
-    }
-
-
-    public String Readings(LinkedHashMap<String, Vector<String>> readingsIn, String readingType, JDate today) {
+    public String readings(LinkedHashMap<String, Vector<String>> readingsIn, String readingType, JDate today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/
@@ -123,7 +92,7 @@ public class DivineLiturgy extends Reading {
         }
 
         //CHECK WHETHER OR NOT IT IS DESIRED TO TRANSFER THE SKIPPED SEQUENTIAL READINGS
-        Vector transfer = (Vector) information.get("Transfer");
+        Vector transfer = information.get("Transfer");
         boolean transfer1 = getAnalyse().evalbool((String) transfer.get(0));
         ClassifyDivineLiturgy tomorrows = new ClassifyDivineLiturgy();
         ClassifyDivineLiturgy yesterdays = new ClassifyDivineLiturgy();
@@ -134,7 +103,7 @@ public class DivineLiturgy extends Reading {
             2. TUESDAY CAN HAVE 2 SETS OF READINGS TRANSFERRED TO IT: MONDAY'S AND WEDNESDAY'S
              */
             //NOTE 2: NO READINGS ARE TRANSFERRED DURING LENT, THAT IS, -48 <= nday <=0.
-            Vector transferRule = (Vector) information.get("TransferRulesB");
+            Vector transferRule = information.get("TransferRulesB");
             boolean transfer2 =getAnalyse().evalbool((String) transferRule.get(0));
             if (transfer2) //St. NICHOLAS'S DAY HAS A SPECIAL SET OF RULES
             {
@@ -183,7 +152,7 @@ public class DivineLiturgy extends Reading {
                 Analyse.getDayInfo().put("dRank",dRankOld);*/
             }
             //NOW WE NEED TO CHECK YESTERDAY'S READINGS, BUT THIS WILL ONLY OCCUR ON A TUESDAY OR DEC. 6th
-            transferRule = (Vector) information.get("TransferRulesF");
+            transferRule = information.get("TransferRulesF");
             transfer2 = getAnalyse().evalbool((String) transferRule.get(0));
 
             if (transfer2) //IF IT IS A SATURDAY, THEN THE READINGS WILL BE SKIPPED, ???
@@ -296,109 +265,14 @@ public class DivineLiturgy extends Reading {
         return format(dailyVf, dailyRf, dailyTf);
     }
 
- 	protected String Display(String a, String b, String c) {
-        //THIS FUNCTION TAKES THE POSSIBLE 3 READINGS AND COMBINES THEM AS APPROPRIATE, SO THAT NO SPACES OR OTHER UNDESIRED STUFF IS DISPLAYED!
-        String output = "";
-        if (a.length() > 0) {
-            output += a;
-        }
-        if (b.length() > 0) {
-            if (output.length() > 0) {
-                output += getAnalyse().getDayInfo().get("ReadSep") + " ";
-            }
-            output += b;
-        }
-        if (c.length() > 0) {
-            if (output.length() > 0) {
-                output += getAnalyse().getDayInfo().get("ReadSep") + " ";
-            }
-            output += c;
-
-        }
-
-        //TECHNICALLY, IF THERE ARE 3 OR MORE READINGS, THEN SOME SHOULD BE TAKEN "FROM THE BEGINNING" (nod zachalo).
-        return output;
-    }
-
-    public String format(Vector vectV, Vector vectR, Vector<Integer> vectT) {
-        StringBuilder output = new StringBuilder();
-        //AT THIS POINT, THE PENTECOSTARION READINGS WILL BE FORMATED SO THAT THEY ARE SEQUENTIAL BY THE WEEK,
-        //ESPECIALLY IF THERE ARE ANY RETRACTIONS OR THE LIKE.
-        /*try {
-        //The Readings should be sorted based on the order of values in Type, but only if it is numeric, that is, it is the Pentecostarion data
-        if (vectV.size() > 1) {
-        //THIS IS NOT THE MOST EFFECTIVE TECHNIQUE, BUT THEN THERE WILL ONLY EVER TRULY BE 2 READINGS TO MOVE!
-        int secondDay = Integer.parseInt((String) vectT.get(1));
-        int firstDay = Integer.parseInt((String) vectT.get(0));
-        //SOLVES AN ORDERING ISSUE WITH SUNDAY BEING ORIGINALLY PLACED BEFORE SATURDAY,
-        //WHEN IT SHOULD HAVE BEEN AFTER
-        //ADDED 2008/08/04 n.s. by Y.S.
-        if (secondDay == 0) {
-        secondDay = 7;
-        }
-        if (firstDay == 0) {
-        firstDay = 7;
-        }
-
-        if (Integer.parseInt((String) vectT.get(0)) > secondDay) {
-
-        Object a = vectV.set(0, vectV.get(1));
-        vectV.set(1, a);
-        a = Type.set(0, Type.get(1));
-        Type.set(1, a);
-        }
-
-        }
-        } catch (Exception e) {
-        }*/
-        Bible ShortForm = new Bible(getAnalyse().getDayInfo());
-        try {
-            Enumeration e3 = vectV.elements();
-            for (int k = 0; k < vectV.size(); k++) {
-                String reading = (String) vectV.get(k);
-                output.append(ShortForm.getHyperlink(reading));
-
-                if ((Integer) vectR.get(k) == -2 ) {
-                    if (vectV.size()>1){
-                    int tag = vectT.get(k);
-                    output.append(" (").append(Week(vectT.get(k).toString())).append(")");
-                    }
-                } else {
-                    output.append(vectT.get(k));
-                }
-
-                if (k < vectV.size() - 1) {
-                    output.append(getAnalyse().getDayInfo().get("ReadSep"));		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
-                }
-            }
-        } catch (Exception a) {
-            
-            System.out.println(a.toString());
-            StackTraceElement[] trial=a.getStackTrace();
-            System.out.println(trial[0].toString());
-
-        }
-        return output.toString();
-    }
-
-    private String Week(String dow) {
-        //CONVERTS THE DOW STRING INTO A NAME. THIS SHOULD BE IN THE ACCUSATIVE CASE
-        try {
-            return transferredDays[Integer.parseInt(dow)];
-        } catch (Exception a) {
-            return dow;		//A DAY OF THE WEEK WAS NOT SENT
-        }
-    }
-
-    public static void main(String[] argz) {
-    }
-
 	public static StringOp getAnalyse() {
+
 		return analyse;
 	}
 
-	public static void setAnalyse(StringOp analyse) {
-		DivineLiturgy.analyse = analyse;
+	public static void setAnalyse(StringOp newAnalyse) {
+		analyse = newAnalyse;
+
 	}
 
 }

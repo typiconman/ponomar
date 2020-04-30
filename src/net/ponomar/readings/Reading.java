@@ -1,8 +1,11 @@
 package net.ponomar.readings;
 
+import java.util.Enumeration;
+import java.util.Hashtable;
 import java.util.LinkedHashMap;
 import java.util.Vector;
 
+import net.ponomar.Bible;
 import net.ponomar.astronomy.Paschalion;
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
@@ -18,11 +21,11 @@ import net.ponomar.utility.StringOp;
 
 public abstract class Reading implements DocHandler {
 
-	private static LinkedHashMap readings;
+	//private static LinkedHashMap readings;
 	private static LinkedHashMap pentecostarionS;
 	private static LinkedHashMap menalogionS;
 	private static LinkedHashMap floaterS;
-	protected static LinkedHashMap information;
+	protected static LinkedHashMap<String, Vector<String>> information;
 	private static String gLocation;
 	protected static LanguagePack phrases;
 	protected static String[] transferredDays;
@@ -40,8 +43,8 @@ public abstract class Reading implements DocHandler {
 	private static Vector suppressedV = new Vector();
 	private static Vector suppressedR = new Vector();
 	private static Vector suppressedT = new Vector();
-	protected static LinkedHashMap tomorrowRead = new LinkedHashMap();
-	protected static LinkedHashMap yesterdayRead = new LinkedHashMap();
+	protected static LinkedHashMap<String, Vector<String>> tomorrowRead = new LinkedHashMap<String, Vector<String>>();
+	protected static LinkedHashMap<String, Vector<String>> yesterdayRead = new LinkedHashMap<String, Vector<String>>();
 	private static StringOp information3 = new StringOp();
 
 	public Reading() {
@@ -107,25 +110,25 @@ public abstract class Reading implements DocHandler {
 
         LinkedHashMap[] paschalReadings = checkingP.getReadings();
         LinkedHashMap[] menaionReadings = checkingM.getReadings();
-        LinkedHashMap combinedReadings = new LinkedHashMap();
+        LinkedHashMap<String, LinkedHashMap<String, Vector>> combinedReadings = new LinkedHashMap<String, LinkedHashMap<String, Vector>>();
 
 
         ReadingUtility.processMenaionPaschalReadings(menaionReadings, combinedReadings);
         ReadingUtility.processMenaionPaschalReadings(paschalReadings, combinedReadings);
 
 
-        LinkedHashMap temp = (LinkedHashMap) combinedReadings.get("LITURGY");
+        LinkedHashMap temp = combinedReadings.get("LITURGY");
         //System.out.println("temp values (423)" + temp);
-        Vector Readings = (Vector) temp.get(Constants.READINGS);
-        Vector<String> Rank = (Vector<String>) temp.get("Rank");
-        Vector<String> Tag = (Vector<String>) temp.get("Tag");
+        Vector readings = (Vector) temp.get(Constants.READINGS);
+        Vector<String> rank = (Vector<String>) temp.get("Rank");
+        Vector<String> tag = (Vector<String>) temp.get("Tag");
         //Special case and consider it differently
 
 
-        Vector<String> type = new Vector<String>();
+        Vector<String> type = new Vector<>();
 
 
-        for (Object reading : Readings) {
+        for (Object reading : readings) {
         	LinkedHashMap liturgy = (LinkedHashMap) reading;
         	LinkedHashMap stepE = (LinkedHashMap) liturgy.get(readingType);
             if (stepE != null) {
@@ -140,14 +143,43 @@ public abstract class Reading implements DocHandler {
 
 
         //output += RSep;
-        LinkedHashMap<String, Vector<String>> Final2 = new LinkedHashMap<String, Vector<String>>();
-        Final2.put(Constants.READINGS, type);
-        Final2.put("Rank", Rank);
-        Final2.put("Tag", Tag);
+        LinkedHashMap<String, Vector<String>> final2 = new LinkedHashMap<String, Vector<String>>();
+        final2.put(Constants.READINGS, type);
+        final2.put("Rank", rank);
+        final2.put("Tag", tag);
 
+        return final2;
+    }
+    
+    public void startElement(String elem, Hashtable table) {
+        // THE TAG COULD CONTAIN A COMMAND Cmd
+        // THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
+        // TODAY'S INFORMATION IN dayInfo.
+        if (table.get("Cmd") != null) {
+            // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
+            if (getInformation3().evalbool(table.get("Cmd").toString()) == false) {
+                return;
+            }
+        }
 
-        return Final2;
+        if (elem.equals(Constants.COMMAND)) {
+            //THIS WILL STORE ALL THE POSSIBLE COMMANDS FOR A GIVEN SITUATION AND ALLOW THE RESULTS TO BE DETEMINED.
+            String name = (String) table.get("Name");
+            String value = (String) table.get(Constants.VALUE);
+            //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
+            if (information.containsKey(name)) {
+                Vector<String> previous = information.get(name);
+                previous.add(value);
+                information.put(name, previous);
+            } else {
+                Vector<String> vect = new Vector<String>();
+                vect.add(value);
+                information.put(name, vect);
+            }
+
+        }
+        //ALL WE CARE ABOUT ARE THE SCRIPTURE READINGS
     }
 
 
@@ -173,6 +205,73 @@ public abstract class Reading implements DocHandler {
 		Reading.information3 = information3;
 	}
 	
+    protected String week(String dow) {
+        //CONVERTS THE DOW STRING INTO A NAME. THIS SHOULD BE IN THE ACCUSATIVE CASE
+        try {
+            return transferredDays[Integer.parseInt(dow)];
+        } catch (Exception a) {
+            return dow;		//A DAY OF THE WEEK WAS NOT SENT
+        }
+    }
+    
+    public String format(Vector vectV, Vector vectR, Vector<Integer> vectT) {
+        StringBuilder output = new StringBuilder();
+        //AT THIS POINT, THE PENTECOSTARION READINGS WILL BE FORMATED SO THAT THEY ARE SEQUENTIAL BY THE WEEK,
+        //ESPECIALLY IF THERE ARE ANY RETRACTIONS OR THE LIKE.
+
+        Bible shortForm = new Bible(getInformation3().getDayInfo());
+        try {
+            Enumeration e3 = vectV.elements();
+            for (int k = 0; k < vectV.size(); k++) {
+                String reading = (String) vectV.get(k);
+                output.append(shortForm.getHyperlink(reading));
+
+                if ((Integer) vectR.get(k) == -2 ) {
+                    if (vectV.size()>1){
+                    int tag = vectT.get(k);
+                    output.append(" (").append(week(vectT.get(k).toString())).append(")");
+                    }
+                } else {
+                    output.append(vectT.get(k));
+                }
+
+                if (k < vectV.size() - 1) {
+                    output.append(getInformation3().getDayInfo().get("ReadSep"));		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
+                }
+            }
+        } catch (Exception a) {
+            
+            System.out.println(a.toString());
+            StackTraceElement[] trial=a.getStackTrace();
+            System.out.println(trial[0].toString());
+
+        }
+        return output.toString();
+    }
+	
+    protected String Display(String a, String b, String c) {
+        //THIS FUNCTION TAKES THE POSSIBLE 3 READINGS AND COMBINES THEM AS APPROPRIATE, SO THAT NO SPACES OR OTHER UNDESIRED STUFF IS DISPLAYED!
+        String output = "";
+        if (a.length() > 0) {
+            output += a;
+        }
+        if (b.length() > 0) {
+            if (output.length() > 0) {
+                output += getInformation3().getDayInfo().get("ReadSep") + " ";
+            }
+            output += b;
+        }
+        if (c.length() > 0) {
+            if (output.length() > 0) {
+                output += getInformation3().getDayInfo().get("ReadSep") + " ";
+            }
+            output += c;
+
+        }
+
+        //TECHNICALLY, IF THERE ARE 3 OR MORE READINGS, THEN SOME SHOULD BE TAKEN "FROM THE BEGINNING" (nod zachalo).
+        return output;
+    }
 	
 
 }
