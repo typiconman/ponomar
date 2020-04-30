@@ -34,7 +34,7 @@ public class ServiceInfo implements DocHandler
 	private static final String FILENAME   = Constants.COMMANDS + "ServiceRules.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
-	private static LinkedHashMap<String, Vector<String>> information;
+	private static LinkedHashMap<String, ArrayList<String>> information;
 	
 	private LanguagePack phrases;//=new LanguagePack();
 	//GET THE APPROPRIATE FASTING LINES
@@ -76,7 +76,7 @@ public class ServiceInfo implements DocHandler
 				StringOp.dayInfo.put("dRank",7);
 			}
 			//THIS WILL NOT CATCH ALL THE RANK  3 OR 4 HOLIDAYS, BUT MOST OF THEM WILL BE SO CAUGHT
-			Vector vect = (Vector) Information.get("Class3Transfers");
+			ArrayList vect = (ArrayList) Information.get("Class3Transfers");
 			if(vect != null)
 			{
 				for(Enumeration e2=vect.elements();e2.hasMoreElements();)
@@ -180,13 +180,13 @@ public class ServiceInfo implements DocHandler
 		//IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
 		if (information.containsKey(name))
 		{
-			Vector<String> previous = information.get(name);
+			ArrayList<String> previous = information.get(name);
 			previous.add(value);
 			information.put(name,previous);
 		}
 		else
 		{
-			Vector<String> vect = new Vector<>();
+			ArrayList<String> vect = new ArrayList<>();
 			vect.add(value);
 			information.put(name,vect);
 		}

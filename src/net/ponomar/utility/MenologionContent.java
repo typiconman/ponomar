@@ -3,7 +3,7 @@ package net.ponomar.utility;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.LinkedHashMap;
-import java.util.Vector;
+import java.util.ArrayList;
 
 import net.ponomar.Bible;
 import net.ponomar.ConfigurationFiles;
@@ -38,9 +38,9 @@ public final class MenologionContent {
 			// Temporary solution
 			String element1 = e.nextElement();
 			LinkedHashMap temp = (LinkedHashMap) combinedReadings.get(element1);
-			Vector<LinkedHashMap> readings = (Vector<LinkedHashMap>) temp.get(READINGS_KEY);
-			Vector<String> rank = (Vector<String>) temp.get("Rank");
-			Vector<String> tag = (Vector<String>) temp.get("Tag");
+			ArrayList<LinkedHashMap> readings = (ArrayList<LinkedHashMap>) temp.get(READINGS_KEY);
+			ArrayList<String> rank = (ArrayList<String>) temp.get("Rank");
+			ArrayList<String> tag = (ArrayList<String>) temp.get("Tag");
 			if (element1.equals("LITURGY")) {
 				if (firstTime) {
 					firstTime = false;
@@ -105,12 +105,12 @@ public final class MenologionContent {
 		return content.toString();
 	}
 
-	public String iterateEpistleGospel(Vector<LinkedHashMap> readings, Vector<String> rank, Vector<String> tag) {
+	public String iterateEpistleGospel(ArrayList<LinkedHashMap> readings, ArrayList<String> rank, ArrayList<String> tag) {
 
 		String epistleGospelOutput = "";
-		Vector<String> epistle = new Vector<>();
+		ArrayList<String> epistle = new ArrayList<>();
 
-		Vector<String> gospel = new Vector<>();
+		ArrayList<String> gospel = new ArrayList<>();
 
 		for (LinkedHashMap liturgy : readings) {
 			LinkedHashMap stepE = (LinkedHashMap) liturgy.get("apostol");
@@ -127,7 +127,7 @@ public final class MenologionContent {
 				gospel.add("");
 			}
 		}
-		LinkedHashMap<String, Vector<String>> readingsA = new LinkedHashMap<>();
+		LinkedHashMap<String, ArrayList<String>> readingsA = new LinkedHashMap<>();
 
 		if (!epistle.get(0).equals("")) {
 			epistleGospelOutput += putEpistleGospelReadings(rank, tag, epistle, readingsA, "apostol");
@@ -139,8 +139,8 @@ public final class MenologionContent {
 		return epistleGospelOutput;
 	}
 
-	public String putMatinsReadings(Vector<LinkedHashMap> readings, Vector<String> rank, Vector<String> tag,
-									LinkedHashMap<String, Vector<String>> readingsA, String key) {
+	public String putMatinsReadings(ArrayList<LinkedHashMap> readings, ArrayList<String> rank, ArrayList<String> tag,
+									LinkedHashMap<String, ArrayList<String>> readingsA, String key) {
 		readingsA.put(READINGS_KEY, MenologionContent.processMatins(readings));
 		readingsA.put("Rank", rank);
 		readingsA.put("Tag", tag);
@@ -149,8 +149,8 @@ public final class MenologionContent {
 		return "<B>" + type1 + "</B>" + colon + trial1.readings(readingsA, today);
 	}
 
-	private String putEpistleGospelReadings(Vector<String> rank, Vector<String> tag, Vector<String> reading,
-											LinkedHashMap<String, Vector<String>> readingsA, String key) {
+	private String putEpistleGospelReadings(ArrayList<String> rank, ArrayList<String> tag, ArrayList<String> reading,
+											LinkedHashMap<String, ArrayList<String>> readingsA, String key) {
 		readingsA.put(READINGS_KEY, reading);
 		readingsA.put("Rank", rank);
 		readingsA.put("Tag", tag);
@@ -159,8 +159,8 @@ public final class MenologionContent {
 		return "<B>" + type1 + "</B>" + colon + trial1.readings(readingsA, key, today);
 	}
 
-	public static Vector<String> processMatins(Vector<LinkedHashMap> readings) {
-		Vector<String> matins2 = new Vector<>();
+	public static ArrayList<String> processMatins(ArrayList<LinkedHashMap> readings) {
+		ArrayList<String> matins2 = new ArrayList<>();
 
 		for (LinkedHashMap matins : readings) {
 			// System.out.println("In Main1, we have "+Readings.get(j));
@@ -181,7 +181,7 @@ public final class MenologionContent {
 		return matins2;
 	}
 
-	public static String iterateOverReadings(Bible shortForm, Vector<LinkedHashMap> readings, Vector<String> tag,
+	public static String iterateOverReadings(Bible shortForm, ArrayList<LinkedHashMap> readings, ArrayList<String> tag,
 			String rSep) {
 		StringBuilder output = new StringBuilder();
 		for (int i = 0; i < readings.size(); i++) {

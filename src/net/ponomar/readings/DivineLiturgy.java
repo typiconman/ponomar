@@ -56,7 +56,7 @@ public class DivineLiturgy extends Reading {
 //THESE ARE THE SAME FUNCTION AS IN MAIN, BUT TRIMMED FOR THE CURRENT NEEDS
 
 
-    public String readings(LinkedHashMap<String, Vector<String>> readingsIn, String readingType, JDate today) {
+    public String readings(LinkedHashMap<String, ArrayList<String>> readingsIn, String readingType, JDate today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/
@@ -92,7 +92,7 @@ public class DivineLiturgy extends Reading {
         }
 
         //CHECK WHETHER OR NOT IT IS DESIRED TO TRANSFER THE SKIPPED SEQUENTIAL READINGS
-        Vector<String> transfer = information.get("Transfer");
+        ArrayList<String> transfer = information.get("Transfer");
         boolean transfer1 = getAnalyse().evalbool(transfer.get(0));
         ClassifyDivineLiturgy tomorrows = new ClassifyDivineLiturgy();
         ClassifyDivineLiturgy yesterdays = new ClassifyDivineLiturgy();
@@ -103,7 +103,7 @@ public class DivineLiturgy extends Reading {
             2. TUESDAY CAN HAVE 2 SETS OF READINGS TRANSFERRED TO IT: MONDAY'S AND WEDNESDAY'S
              */
             //NOTE 2: NO READINGS ARE TRANSFERRED DURING LENT, THAT IS, -48 <= nday <=0.
-            Vector<String> transferRule = information.get("TransferRulesB");
+            ArrayList<String> transferRule = information.get("TransferRulesB");
             boolean transfer2 =getAnalyse().evalbool(transferRule.get(0));
             if (transfer2) //St. NICHOLAS'S DAY HAS A SPECIAL SET OF RULES
             {
@@ -200,9 +200,9 @@ public class DivineLiturgy extends Reading {
         }
 
 
-        Vector<Object> dailyVf = new Vector<>();
-        Vector<Object> dailyRf = new Vector<>();
-        Vector dailyTf = new Vector();        
+        ArrayList<Object> dailyVf = new ArrayList<>();
+        ArrayList<Object> dailyRf = new ArrayList<>();
+        ArrayList dailyTf = new ArrayList();        
         for (int i=0;i<yesterdays.suppressedV.size();i++){
             dailyVf.add(yesterdays.suppressedV.get(i));
             dailyRf.add(yesterdays.suppressedR.get(i));
@@ -225,9 +225,9 @@ public class DivineLiturgy extends Reading {
 
         
         //System.out.println("Testing some math: " + (0 - 1 + 7) % 7);
-        Vector<Object> menaionV = new Vector<>();
-        Vector<Object> menaionR = new Vector<>();
-        Vector menaionT = new Vector();
+        ArrayList<Object> menaionV = new ArrayList<>();
+        ArrayList<Object> menaionR = new ArrayList<>();
+        ArrayList menaionT = new ArrayList();
 
         for (int i=0;i<orderedReadings.menaionV.size();i++){
             menaionV.add(orderedReadings.menaionV.get(i));

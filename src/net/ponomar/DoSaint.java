@@ -233,9 +233,9 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
 		// frames.setContentPane(contentPane);
 
-		LinkedHashMap<String, Vector<String>> iconsM = saintInfo2.getDisplayIcons();
-		Vector<String> imageList = iconsM.get("Images");
-		Vector<String> namesList = iconsM.get("Names");
+		LinkedHashMap<String, ArrayList<String>> iconsM = saintInfo2.getDisplayIcons();
+		ArrayList<String> imageList = iconsM.get("Images");
+		ArrayList<String> namesList = iconsM.get("Names");
 		String[] iconImages = new String[imageList.size()];
 		String[] iconNames = new String[namesList.size()];
 

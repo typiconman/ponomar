@@ -4,7 +4,8 @@ import java.util.Enumeration;
 import java.util.HashMap;
 
 import java.util.LinkedHashMap;
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.Collections;
 
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.utility.Constants;
@@ -17,16 +18,16 @@ public class ClassifyReadings implements DocHandler {
 	/**
 	 * 
 	 */
-	protected LinkedHashMap<String, Vector<String>> information2;
-	public Vector dailyV = new Vector();
-	public Vector dailyR = new Vector();
-	public Vector dailyT = new Vector();
-	public Vector menaionV = new Vector();
-	public Vector menaionR = new Vector();
-	public Vector menaionT = new Vector();
-	public Vector suppressedV = new Vector();
-	public Vector suppressedR = new Vector();
-	public Vector suppressedT = new Vector();
+	protected LinkedHashMap<String, ArrayList<String>> information2;
+	public ArrayList dailyV = new ArrayList();
+	public ArrayList dailyR = new ArrayList();
+	public ArrayList dailyT = new ArrayList();
+	public ArrayList menaionV = new ArrayList();
+	public ArrayList menaionR = new ArrayList();
+	public ArrayList menaionT = new ArrayList();
+	public ArrayList suppressedV = new ArrayList();
+	public ArrayList suppressedR = new ArrayList();
+	public ArrayList suppressedT = new ArrayList();
 	protected StringOp parameterValues = new StringOp();
 
 	public ClassifyReadings() {
@@ -58,11 +59,11 @@ public class ClassifyReadings implements DocHandler {
 	        //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
 	        //System.out.println("==============================\nTesting Information\n++++++++++++++++++++");
 	        if (information2.containsKey(name)) {
-	            Vector<String> previous = information2.get(name);
+	            ArrayList<String> previous = information2.get(name);
 	            previous.add(value);
 	            information2.put(name, previous);
 	        } else {
-	            Vector<String> vect = new Vector<>();
+	            ArrayList<String> vect = new ArrayList<>();
 	            vect.add(value);
 	            information2.put(name, vect);
 	        }
@@ -80,15 +81,15 @@ public class ClassifyReadings implements DocHandler {
 	    int ndayP = Integer.parseInt(parameterValues.getDayInfo().get(Constants.NDAY_P).toString());
 	
 	    //IN ALL CASES ONLY THE PENTECOSTARION READINGS ARE EFFECTED!
-	    //Vector empty = new Vector();
+	    //ArrayList empty = new ArrayList();
 	    //USING THE NEWER VERSION OF STORED VALUES
 	    //EACH OF THE STORED COMMANDS ARE EVALUATED IF ANY ARE TRUE THEN THE READINGS ARE SKIPPED IF THERE ARE ANY FURTHER READINGS ON THAT DAY.
 	    int available = menaionV.size();
 	
 	    if (available > 0) {
-	        Vector<String> vect = information2.get("Suppress");
-	        if (vect != null) {
-	            for (Enumeration<String> e2 = vect.elements(); e2.hasMoreElements();) {
+	        ArrayList<String> list = information2.get("Suppress");
+	        if (list != null) {
+	            for (Enumeration<String> e2 = Collections.enumeration(list); e2.hasMoreElements();) {
 	                String command = e2.nextElement();
 	                if (parameterValues.evalbool(command)) {
 	                    //THE CURRENT COMMAND WAS TRUE AND THE SEQUENTITIAL READING IS TO BE SKIPPED

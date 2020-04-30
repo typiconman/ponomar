@@ -4,7 +4,8 @@ import java.util.Enumeration;
 import java.util.HashMap;
 
 import java.util.LinkedHashMap;
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.Collections;
 
 import net.ponomar.Bible;
 import net.ponomar.astronomy.Paschalion;
@@ -26,26 +27,26 @@ public abstract class Reading implements DocHandler {
 	private static LinkedHashMap pentecostarionS;
 	private static LinkedHashMap menalogionS;
 	private static LinkedHashMap floaterS;
-	protected static LinkedHashMap<String, Vector<String>> information;
+	protected static LinkedHashMap<String, ArrayList<String>> information;
 	private static String gLocation;
 	protected static LanguagePack phrases;
 	protected static String[] transferredDays;
 	protected static String[] error;
 	private static Helpers findLanguage;
-	private static Vector dailyV = new Vector();
-	private static Vector dailyR = new Vector();
-	private static Vector dailyT = new Vector();
-	private static Vector menaion2V = new Vector();
-	private static Vector menaion2R = new Vector();
-	private static Vector menaion2T = new Vector();
-	private static Vector menaionV = new Vector();
-	private static Vector menaionR = new Vector();
-	private static Vector menaionT = new Vector();
-	private static Vector suppressedV = new Vector();
-	private static Vector suppressedR = new Vector();
-	private static Vector suppressedT = new Vector();
-	protected static LinkedHashMap<String, Vector<String>> tomorrowRead = new LinkedHashMap<>();
-	protected static LinkedHashMap<String, Vector<String>> yesterdayRead = new LinkedHashMap<>();
+	private static ArrayList dailyV = new ArrayList();
+	private static ArrayList dailyR = new ArrayList();
+	private static ArrayList dailyT = new ArrayList();
+	private static ArrayList menaion2V = new ArrayList();
+	private static ArrayList menaion2R = new ArrayList();
+	private static ArrayList menaion2T = new ArrayList();
+	private static ArrayList menaionV = new ArrayList();
+	private static ArrayList menaionR = new ArrayList();
+	private static ArrayList menaionT = new ArrayList();
+	private static ArrayList suppressedV = new ArrayList();
+	private static ArrayList suppressedR = new ArrayList();
+	private static ArrayList suppressedT = new ArrayList();
+	protected static LinkedHashMap<String, ArrayList<String>> tomorrowRead = new LinkedHashMap<>();
+	protected static LinkedHashMap<String, ArrayList<String>> yesterdayRead = new LinkedHashMap<>();
 	private static StringOp information3 = new StringOp();
 
 	public Reading() {
@@ -65,7 +66,7 @@ public abstract class Reading implements DocHandler {
 		
 	}
 	
-    protected LinkedHashMap<String, Vector<String>> getReadings(JDate today, String readingType) {
+    protected LinkedHashMap<String, ArrayList<String>> getReadings(JDate today, String readingType) {
         String filename = "";
         int lineNumber = 0;
 
@@ -111,22 +112,22 @@ public abstract class Reading implements DocHandler {
 
         LinkedHashMap[] paschalReadings = checkingP.getReadings();
         LinkedHashMap[] menaionReadings = checkingM.getReadings();
-        LinkedHashMap<String, LinkedHashMap<String, Vector<String>>> combinedReadings = new LinkedHashMap<>();
+        LinkedHashMap<String, LinkedHashMap<String, ArrayList<String>>> combinedReadings = new LinkedHashMap<>();
 
 
         ReadingUtility.processMenaionPaschalReadings(menaionReadings, combinedReadings);
         ReadingUtility.processMenaionPaschalReadings(paschalReadings, combinedReadings);
 
 
-        LinkedHashMap<String, Vector<String>> temp = combinedReadings.get("LITURGY");
+        LinkedHashMap<String, ArrayList<String>> temp = combinedReadings.get("LITURGY");
         //System.out.println("temp values (423)" + temp);
-        Vector<String> readings = temp.get(Constants.READINGS);
-        Vector<String> rank = temp.get("Rank");
-        Vector<String> tag = temp.get("Tag");
+        ArrayList<String> readings = temp.get(Constants.READINGS);
+        ArrayList<String> rank = temp.get("Rank");
+        ArrayList<String> tag = temp.get("Tag");
         //Special case and consider it differently
 
 
-        Vector<String> type = new Vector<>();
+        ArrayList<String> type = new ArrayList<>();
 
 
         for (Object reading : readings) {
@@ -144,7 +145,7 @@ public abstract class Reading implements DocHandler {
 
 
         //output += RSep;
-        LinkedHashMap<String, Vector<String>> final2 = new LinkedHashMap<>();
+        LinkedHashMap<String, ArrayList<String>> final2 = new LinkedHashMap<>();
         final2.put(Constants.READINGS, type);
         final2.put("Rank", rank);
         final2.put("Tag", tag);
@@ -170,11 +171,11 @@ public abstract class Reading implements DocHandler {
             String value = table.get(Constants.VALUE);
             //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
             if (information.containsKey(name)) {
-                Vector<String> previous = information.get(name);
+                ArrayList<String> previous = information.get(name);
                 previous.add(value);
                 information.put(name, previous);
             } else {
-                Vector<String> vect = new Vector<>();
+                ArrayList<String> vect = new ArrayList<>();
                 vect.add(value);
                 information.put(name, vect);
             }
@@ -215,28 +216,28 @@ public abstract class Reading implements DocHandler {
         }
     }
     
-    public String format(Vector vectV, Vector vectR, Vector<Integer> vectT) {
+    public String format(ArrayList listV, ArrayList listR, ArrayList<Integer> listT) {
         StringBuilder output = new StringBuilder();
         //AT THIS POINT, THE PENTECOSTARION READINGS WILL BE FORMATED SO THAT THEY ARE SEQUENTIAL BY THE WEEK,
         //ESPECIALLY IF THERE ARE ANY RETRACTIONS OR THE LIKE.
 
         Bible shortForm = new Bible(getInformation3().getDayInfo());
         try {
-            Enumeration e3 = vectV.elements();
-            for (int k = 0; k < vectV.size(); k++) {
-                String reading = (String) vectV.get(k);
+            Enumeration e3 = Collections.enumeration(listV);
+            for (int k = 0; k < listV.size(); k++) {
+                String reading = (String) listV.get(k);
                 output.append(shortForm.getHyperlink(reading));
 
-                if ((Integer) vectR.get(k) == -2 ) {
-                    if (vectV.size()>1){
-                    int tag = vectT.get(k);
-                    output.append(" (").append(week(vectT.get(k).toString())).append(")");
+                if ((Integer) listR.get(k) == -2 ) {
+                    if (listV.size()>1){
+                    int tag = listT.get(k);
+                    output.append(" (").append(week(listT.get(k).toString())).append(")");
                     }
                 } else {
-                    output.append(vectT.get(k));
+                    output.append(listT.get(k));
                 }
 
-                if (k < vectV.size() - 1) {
+                if (k < listV.size() - 1) {
                     output.append(getInformation3().getDayInfo().get("ReadSep"));		//IF THERE ARE MORE READINGS OF THE SAME TYPE APPEND A SEMICOLON!
                 }
             }

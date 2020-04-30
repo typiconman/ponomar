@@ -3,7 +3,8 @@ package net.ponomar.readings.utility;
 import java.io.FileReader;
 import java.util.Enumeration;
 import java.util.LinkedHashMap;
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.Collections;
 
 import net.ponomar.parsing.DocHandler;
 import net.ponomar.parsing.QDParser;
@@ -16,19 +17,19 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
 		public ClassifyDivineLiturgy() {
         }
 
-        public ClassifyDivineLiturgy(LinkedHashMap<String, Vector<String>> readingsInA) {
+        public ClassifyDivineLiturgy(LinkedHashMap<String, ArrayList<String>> readingsInA) {
 			//StringOp Testing = new StringOp();
             parameterValues.setDayInfo(DivineLiturgy.getAnalyse().getDayInfo());
             //System.out.println("In ParameterValues, we have LS = " + ParameterValues.getDayInfo().get("LS")+" while in Analyse, we have "+Analyse.getDayInfo().get("LS"));
             classify(readingsInA);
         }
 
-       public ClassifyDivineLiturgy(LinkedHashMap<String, Vector<String>> readingsInA, LinkedHashMap<String, Object> dayInfo) {
+       public ClassifyDivineLiturgy(LinkedHashMap<String, ArrayList<String>> readingsInA, LinkedHashMap<String, Object> dayInfo) {
 		parameterValues.setDayInfo(dayInfo);
             classify(readingsInA);
 
         }
-        private void classify(LinkedHashMap<String, Vector<String>> readingsIn)
+        private void classify(LinkedHashMap<String, ArrayList<String>> readingsIn)
         {
             //Initialise Information.
             information2=new LinkedHashMap<>();
@@ -43,13 +44,13 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
                 e.printStackTrace();
             }
 
-            Vector<String> paschalV = readingsIn.get(Constants.READINGS);
-            Vector paschalR = readingsIn.get("Rank");
-            Vector<String> paschalT = readingsIn.get("Tag");
+            ArrayList<String> paschalV = readingsIn.get(Constants.READINGS);
+            ArrayList paschalR = readingsIn.get("Rank");
+            ArrayList<String> paschalT = readingsIn.get("Tag");
 
-            dailyV = new Vector();
-            dailyR = new Vector();
-            dailyT = new Vector();
+            dailyV = new ArrayList();
+            dailyR = new ArrayList();
+            dailyT = new ArrayList();
 
             
             if (paschalV == null){
@@ -139,9 +140,9 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
 
 
             if (dow != 0) {*/
-                Vector<String> vect = (Vector<String>) information2.get("Class3Transfers");
-                if (vect != null) {
-                    for (Enumeration<String> e2 = vect.elements(); e2.hasMoreElements();) {
+                ArrayList<String> list = (ArrayList<String>) information2.get("Class3Transfers");
+                if (list != null) {
+                    for (Enumeration<String> e2 = Collections.enumeration(list); e2.hasMoreElements();) {
                         String Command = e2.nextElement();
                         if (parameterValues.evalbool(Command)) {
                             //THE CURRENT COMMAND WAS TRUE AND THE SEQUENTITIAL READING IS TO BE SUPPRESSED/TRANSFERRED

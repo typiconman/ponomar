@@ -77,7 +77,7 @@ public class Fasting implements DocHandler
 				StringOp.dayInfo.put("dRank",6);
 			}
 			//THIS WILL NOT CATCH ALL THE RANK  3 OR 4 HOLIDAYS, BUT MOST OF THEM WILL BE SO CAUGHT
-			Vector vect = (Vector) Information.get("Class3Transfers");
+			ArrayList vect = (ArrayList) Information.get("Class3Transfers");
 			if(vect != null)
 			{
 				for(Enumeration e2=vect.elements();e2.hasMoreElements();)
@@ -297,13 +297,13 @@ public class Fasting implements DocHandler
 		//IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
 		if (Information.containsKey(name))
 		{
-			Vector previous = (Vector)Information.get(name);
+			ArrayList previous = (ArrayList)Information.get(name);
 			previous.add(value);
 			Information.put(name,previous);
 		}
 		else
 		{
-			Vector vect = new Vector();
+			ArrayList vect = new ArrayList();
 			vect.add(value);
 			Information.put(name,vect);
 		}

@@ -190,12 +190,12 @@ public class Commemoration implements DocHandler {
             if (readings.containsKey(type)) {
 
                 // ADD THIS READING TO OTHERS OF THE SAME TYPE
-                Vector<String> vect = (Vector<String>) readings.get(type);
+                ArrayList<String> vect = (ArrayList<String>) readings.get(type);
                 vect.add(reading);
                 readings.put(type, vect);
             } else {
                 // CREATE A NEW TYPE WITH A COLLECTION INCLUDING THIS READING
-                Vector<String> vect = new Vector<>();
+                ArrayList<String> vect = new ArrayList<>();
                 vect.add(reading);
                 readings.put(type, vect);
             }
@@ -425,11 +425,11 @@ public class Commemoration implements DocHandler {
         return information.get("Icon").toString();
     }
 
-	public LinkedHashMap<String, Vector<String>> getDisplayIcons() {
+	public LinkedHashMap<String, ArrayList<String>> getDisplayIcons() {
 
 		// Ordered List of the Icons
-		Vector<String> iconImages = new Vector<>();
-		Vector<String> iconNames = new Vector<>();
+		ArrayList<String> iconImages = new ArrayList<>();
+		ArrayList<String> iconNames = new ArrayList<>();
 
 		String cId = information.get("CID").toString();
 		String nameF = getGrammar("Short");
@@ -467,7 +467,7 @@ public class Commemoration implements DocHandler {
 			iconNames.add(nameF);
 		}
 
-		LinkedHashMap<String, Vector<String>> finalI = new LinkedHashMap<>();
+		LinkedHashMap<String, ArrayList<String>> finalI = new LinkedHashMap<>();
 		finalI.put("Images", iconImages);
 		finalI.put("Names", iconNames);
 		return finalI;
@@ -576,7 +576,7 @@ public class Commemoration implements DocHandler {
     }
     public boolean checkIcon(){
         //Checks whether the given commemoration has any icons assoicated with it
-    	LinkedHashMap<String, Vector<String>> checkIcon=getDisplayIcons();
+    	LinkedHashMap<String, ArrayList<String>> checkIcon=getDisplayIcons();
         return checkIcon.size() > 0;
     }
     public boolean checkPropers(){

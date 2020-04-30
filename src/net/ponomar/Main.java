@@ -471,7 +471,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
         for (Enumeration e = readings.enumerateKeys(); e.hasMoreElements(); )
         {
         String type = (String)e.nextElement();
-        Vector vect = (Vector)readings.get(type);
+        ArrayList vect = (ArrayList)readings.get(type);
 
         ReadScriptures[0].put(type, vect);
         }
@@ -555,10 +555,10 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 	private void displayIcons(Day paschalCycle, Day solarCycle) {
 		//OrderedHashtable iconsP = (OrderedHashtable) paschalCycle.getIcon();
-		LinkedHashMap<String, Vector<String>> iconsM = solarCycle.getIcon();
+		LinkedHashMap<String, ArrayList<String>> iconsM = solarCycle.getIcon();
 
-		Vector<String> imageList = iconsM.get("Images");
-		Vector<String> namesList = iconsM.get("Names");
+		ArrayList<String> imageList = iconsM.get("Images");
+		ArrayList<String> namesList = iconsM.get("Names");
 
 		String[] iconImages = imageList.toArray(new String[0]);
 		String[] iconNames = namesList.toArray(new String[0]);

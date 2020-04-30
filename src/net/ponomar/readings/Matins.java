@@ -49,7 +49,7 @@ public class Matins extends Reading {
 
 
 
-    public String readings(LinkedHashMap<String, Vector<String>> readingsIn, JDate today) {
+    public String readings(LinkedHashMap<String, ArrayList<String>> readingsIn, JDate today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/
@@ -77,9 +77,9 @@ public class Matins extends Reading {
         }*/
         //For the time being I will hard code the rules, as it is simple one. Suppress Sequential readings on Sunday if dRank > 6; otherwise suppress the menaion readings.
         
-		Vector<Object> dailyVf = new Vector<>();
-		Vector<Object> dailyRf = new Vector<>();
-		Vector dailyTf = new Vector();
+		ArrayList<Object> dailyVf = new ArrayList<>();
+		ArrayList<Object> dailyRf = new ArrayList<>();
+		ArrayList dailyTf = new ArrayList();
 
 		for (int i = 0; i < orderedReadings.dailyV.size(); i++) {
 			dailyVf.add(orderedReadings.dailyV.get(i));

@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 
 import java.util.LinkedHashMap;
-import java.util.Vector;
+import java.util.ArrayList;
 
 /***********************************************************************
 THIS MODULE READS XML FILES THAT CONTAIN THAT ARE OF THE <DAY> TYPE
@@ -60,7 +60,7 @@ public class Day implements DocHandler {
     private String[] commNames;// = Text.obtainValues((String) Text.Phrases.get("Commemoration"));
     private Helpers helper;
     private int counter = 0;
-    private Vector<Commemoration> orderedCommemorations;
+    private ArrayList<Commemoration> orderedCommemorations;
     private int dayRank = -100;
     private int tone = -1;
     private String[] mainNames;//=Text.obtainValues((String)Text.Phrases.get("Main"));
@@ -80,7 +80,7 @@ public class Day implements DocHandler {
 		toneNumbers = text.obtainValues(text.getPhrases().get("Tones"));
 		forComm = text.getPhrases().get("Commemoration2");
 		counter = 0;
-		orderedCommemorations = new Vector<>();
+		orderedCommemorations = new ArrayList<>();
 		dayRank = -100;
 		information.put("ID", fileName);
 		readDay(fileName);
@@ -96,14 +96,14 @@ public class Day implements DocHandler {
         helper = new Helpers();
 
         counter = 0;
-        OrderedCommemorations = new Vector();
+        OrderedCommemorations = new ArrayList();
         dayRank = -100;
         readDay(FileName);*/
     }
 
     protected Day() {
         counter = 0;
-        orderedCommemorations = new Vector<>();
+        orderedCommemorations = new ArrayList<>();
         dayRank = -100;
 
         information = new LinkedHashMap<>();
@@ -170,7 +170,7 @@ public class Day implements DocHandler {
             }
             Commemoration dayA = new Commemoration(sId, cId,parameterValues.getDayInfo());
 
-            orderedCommemorations.addElement(dayA);
+            orderedCommemorations.add(dayA);
 
         }
 
@@ -285,10 +285,10 @@ public class Day implements DocHandler {
         return output.toString();
     }
 
-    public LinkedHashMap<String, Vector<String>> getIcon() {
+    public LinkedHashMap<String, ArrayList<String>> getIcon() {
         //Ordered List of the Icons
-        Vector<String> iconImages = new Vector<>();
-        Vector<String> iconNames=new Vector<>();
+        ArrayList<String> iconImages = new ArrayList<>();
+        ArrayList<String> iconNames=new ArrayList<>();
 
         for (Commemoration cCom : orderedCommemorations) {
             String sId = cCom.getSId();
@@ -324,7 +324,7 @@ public class Day implements DocHandler {
                 iconNames.add(nameF);
             }
         }
-        LinkedHashMap<String, Vector<String>> finalI = new LinkedHashMap<>();
+        LinkedHashMap<String, ArrayList<String>> finalI = new LinkedHashMap<>();
         finalI.put("Images",iconImages);
         finalI.put("Names",iconNames);
         return finalI;
@@ -351,7 +351,7 @@ public class Day implements DocHandler {
     public LinkedHashMap[] getReadings(){
     	LinkedHashMap[] readingsA = new LinkedHashMap[orderedCommemorations.size()];
     	LinkedHashMap[] rInformation = new LinkedHashMap[orderedCommemorations.size()];
-        Vector<Integer> count= new Vector<>();
+        ArrayList<Integer> count= new ArrayList<>();
 
 
         for (int i = 0; i < orderedCommemorations.size(); i++) {

@@ -9,24 +9,24 @@ import net.ponomar.utility.Constants;
 import net.ponomar.utility.StringOp;
 
 import java.util.LinkedHashMap;
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class ClassifyMatins extends ClassifyReadings {
 
     public ClassifyMatins() {
     }
 
-    public ClassifyMatins(LinkedHashMap<String, Vector<String>> readingsInA) {
+    public ClassifyMatins(LinkedHashMap<String, ArrayList<String>> readingsInA) {
 		//StringOp Testing = new StringOp();
         parameterValues.setDayInfo(Reading.getInformation3().getDayInfo());
         classify(readingsInA);
     }
 
-    public ClassifyMatins(Matins matins, LinkedHashMap<String, Vector<String>> readingsInA, StringOp ParameterValues) {
+    public ClassifyMatins(Matins matins, LinkedHashMap<String, ArrayList<String>> readingsInA, StringOp ParameterValues) {
 		classify(readingsInA);
 
     }
-    private void classify(LinkedHashMap<String, Vector<String>> readingsIn)
+    private void classify(LinkedHashMap<String, ArrayList<String>> readingsIn)
     {
         //Initialise Information.
         information2=new LinkedHashMap<>();
@@ -39,13 +39,13 @@ public class ClassifyMatins extends ClassifyReadings {
             e.printStackTrace();
         }*/
 
-        Vector<String> paschalV = readingsIn.get(Constants.READINGS);
-        Vector paschalR = readingsIn.get("Rank");
-        Vector<String> paschalT = readingsIn.get("Tag");
+        ArrayList<String> paschalV = readingsIn.get(Constants.READINGS);
+        ArrayList paschalR = readingsIn.get("Rank");
+        ArrayList<String> paschalT = readingsIn.get("Tag");
 
-        dailyV = new Vector();
-        dailyR = new Vector();
-        dailyT = new Vector();
+        dailyV = new ArrayList();
+        dailyR = new ArrayList();
+        dailyT = new ArrayList();
 
 
         if (paschalV == null){
