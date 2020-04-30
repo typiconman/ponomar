@@ -37,7 +37,7 @@ public class Fasting implements DocHandler
 	private static final String FASTING_FILE   = Constants.COMMANDS + "Fasting.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
-	private static LinkedHashMap information;
+	private static LinkedHashMap<String, Object> information;
 	
 	private LanguagePack phrases;
 	//GET THE APPROPRIATE FASTING LINES
@@ -55,7 +55,7 @@ public class Fasting implements DocHandler
             
             fast="";
 		helper=new Helpers(analyse.getDayInfo());
-		information=new LinkedHashMap();
+		information=new LinkedHashMap<>();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
                 //I have removed the klutz, as dRank has been properly implemented! Y.S 2010/02/02 n.s.

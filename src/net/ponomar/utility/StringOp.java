@@ -43,7 +43,7 @@ public final class StringOp implements Cloneable
    private LinkedHashMap<String, Object> dayInfo;
    public StringOp()
    {
-       dayInfo=new LinkedHashMap<String, Object>();
+       dayInfo=new LinkedHashMap<>();
    }
 // JOINS THE MEMBERS OF AN ARRAY, ANALAGOUS TO PERL'S join FUNCTION
 protected static String join(String[] pieces)

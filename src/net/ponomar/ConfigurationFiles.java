@@ -111,11 +111,11 @@ public class ConfigurationFiles implements DocHandler
 		
 		if (elem.equals("DEFAULT"))
 		{
-			for(Enumeration e=Collections.enumeration(table.keySet()); e.hasMoreElements();)
+			for(Enumeration<String> e=Collections.enumeration(table.keySet()); e.hasMoreElements();)
 			{
 				
-				String entry=(String) e.nextElement();
-				String value = (String) table.get(entry);
+				String entry = e.nextElement();
+				String value = table.get(entry);
 				
 				if(value != null && entry != null)
 				{

@@ -44,8 +44,8 @@ public abstract class Reading implements DocHandler {
 	private static Vector suppressedV = new Vector();
 	private static Vector suppressedR = new Vector();
 	private static Vector suppressedT = new Vector();
-	protected static LinkedHashMap<String, Vector<String>> tomorrowRead = new LinkedHashMap<String, Vector<String>>();
-	protected static LinkedHashMap<String, Vector<String>> yesterdayRead = new LinkedHashMap<String, Vector<String>>();
+	protected static LinkedHashMap<String, Vector<String>> tomorrowRead = new LinkedHashMap<>();
+	protected static LinkedHashMap<String, Vector<String>> yesterdayRead = new LinkedHashMap<>();
 	private static StringOp information3 = new StringOp();
 
 	public Reading() {
@@ -111,18 +111,18 @@ public abstract class Reading implements DocHandler {
 
         LinkedHashMap[] paschalReadings = checkingP.getReadings();
         LinkedHashMap[] menaionReadings = checkingM.getReadings();
-        LinkedHashMap<String, LinkedHashMap<String, Vector>> combinedReadings = new LinkedHashMap<String, LinkedHashMap<String, Vector>>();
+        LinkedHashMap<String, LinkedHashMap<String, Vector<String>>> combinedReadings = new LinkedHashMap<>();
 
 
         ReadingUtility.processMenaionPaschalReadings(menaionReadings, combinedReadings);
         ReadingUtility.processMenaionPaschalReadings(paschalReadings, combinedReadings);
 
 
-        LinkedHashMap temp = combinedReadings.get("LITURGY");
+        LinkedHashMap<String, Vector<String>> temp = combinedReadings.get("LITURGY");
         //System.out.println("temp values (423)" + temp);
-        Vector readings = (Vector) temp.get(Constants.READINGS);
-        Vector<String> rank = (Vector<String>) temp.get("Rank");
-        Vector<String> tag = (Vector<String>) temp.get("Tag");
+        Vector<String> readings = temp.get(Constants.READINGS);
+        Vector<String> rank = temp.get("Rank");
+        Vector<String> tag = temp.get("Tag");
         //Special case and consider it differently
 
 

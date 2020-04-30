@@ -387,7 +387,7 @@ public class Astronomy
         }
 
 	public static void main(String[] argz) {
-		LinkedHashMap<String, Object> dayInfo = new LinkedHashMap<String, Object>();
+		LinkedHashMap<String, Object> dayInfo = new LinkedHashMap<>();
 		dayInfo.put("LS", "en/");
 		Astronomy test = new Astronomy();
 

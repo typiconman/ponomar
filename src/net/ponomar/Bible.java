@@ -135,7 +135,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         //setLayout(new GridBagLayout());
         //GridBagConstraints c = new GridBagConstraints();
 
-        versionsBox = new JComboBox<>(new Vector<Object>(versions.values()));
+        versionsBox = new JComboBox<>(new Vector<>(versions.values()));
         //versionsBox = new JComboBox(new Vector(comboBoxList.values()));
         //versionsBox.setComponentOrientation(new ComponentOrientation);
         /*c.weightx = 0.5;
@@ -158,7 +158,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
 
         JPanel middle = new JPanel();
         middle.setLayout(new BoxLayout(middle, BoxLayout.LINE_AXIS));
-        booksBox = new JList<>(new Vector<String>(books.values()));
+        booksBox = new JList<>(new Vector<>(books.values()));
         /*c.fill = GridBagConstraints.HORIZONTAL;
         c.gridx = 0;
         c.gridy = 1;
@@ -484,7 +484,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             }
             changeItBooks = false;
             booksBox.removeAll();
-            booksBox.setListData(new Vector<String>(books.values()));
+            booksBox.setListData(new Vector<>(books.values()));
             changeItBooks = true;
             //Adding local direction control, so that the direction of the Bible text
             //reflects the correct internal language direction

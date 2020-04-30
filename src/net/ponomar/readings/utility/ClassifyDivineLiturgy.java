@@ -10,10 +10,6 @@ import net.ponomar.parsing.QDParser;
 import net.ponomar.readings.DivineLiturgy;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
- 
- 
- 
-import net.ponomar.utility.StringOp;
 
 public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandler {
 
@@ -35,7 +31,7 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
         private void classify(LinkedHashMap<String, Vector<String>> readingsIn)
         {
             //Initialise Information.
-            information2=new LinkedHashMap();
+            information2=new LinkedHashMap<>();
             DivineLiturgy.setFindLanguage(new Helpers(parameterValues.getDayInfo()));
             //System.out.println(findLanguage.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
             try {
@@ -47,9 +43,9 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
                 e.printStackTrace();
             }
 
-            Vector paschalV = readingsIn.get(Constants.READINGS);
+            Vector<String> paschalV = readingsIn.get(Constants.READINGS);
             Vector paschalR = readingsIn.get("Rank");
-            Vector paschalT = readingsIn.get("Tag");
+            Vector<String> paschalT = readingsIn.get("Tag");
 
             dailyV = new Vector();
             dailyR = new Vector();
@@ -143,10 +139,10 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
 
 
             if (dow != 0) {*/
-                Vector vect = (Vector) information2.get("Class3Transfers");
+                Vector<String> vect = (Vector<String>) information2.get("Class3Transfers");
                 if (vect != null) {
-                    for (Enumeration e2 = vect.elements(); e2.hasMoreElements();) {
-                        String Command = (String) e2.nextElement();
+                    for (Enumeration<String> e2 = vect.elements(); e2.hasMoreElements();) {
+                        String Command = e2.nextElement();
                         if (parameterValues.evalbool(Command)) {
                             //THE CURRENT COMMAND WAS TRUE AND THE SEQUENTITIAL READING IS TO BE SUPPRESSED/TRANSFERRED
                             for (int k = 0; k < dailyV.size(); k++) {

@@ -249,7 +249,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 		//WE NEED THIS HANDY STORER OF VALUES NOW.
 		//StringOp.dayInfo = new OrderedHashtable();
 		//DETERMINE THE DEFAULTS
-		ConfigurationFiles.setDefaults(new LinkedHashMap<String, String>());
+		ConfigurationFiles.setDefaults(new LinkedHashMap<>());
 		ConfigurationFiles.ReadFile();
 		languageLocation = new LanguageSelector(analyse.getDayInfo());
 

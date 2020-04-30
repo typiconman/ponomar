@@ -158,7 +158,7 @@ public class ServiceInfo implements DocHandler
 		if(elem.equals(type) && readPeriod && readLanguage)
 		{
 			//A POTENTIAL ORDER RULE HAS BEEN ENCOUNTERED.
-			Enumeration listed = Collections.enumeration(table.keySet());
+			Enumeration<String> listed = Collections.enumeration(table.keySet());
 			while (listed.hasMoreElements())
 			{
 				String nextEle=listed.nextElement().toString();

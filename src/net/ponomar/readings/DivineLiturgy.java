@@ -67,7 +67,7 @@ public class DivineLiturgy extends Reading {
         Information3.getDayInfo().put("nday","2");
         System.out.println("Testing the new StringOp formulation is " + Information3.evalbool("doy == 12"));*/
 
-        information = new LinkedHashMap<String, Vector<String>>();
+        information = new LinkedHashMap<>();
         int doy = Integer.parseInt(getAnalyse().getDayInfo().get("doy").toString());
         int dow = Integer.parseInt(getAnalyse().getDayInfo().get("dow").toString());
         int nday = Integer.parseInt(getAnalyse().getDayInfo().get("nday").toString());
@@ -92,8 +92,8 @@ public class DivineLiturgy extends Reading {
         }
 
         //CHECK WHETHER OR NOT IT IS DESIRED TO TRANSFER THE SKIPPED SEQUENTIAL READINGS
-        Vector transfer = information.get("Transfer");
-        boolean transfer1 = getAnalyse().evalbool((String) transfer.get(0));
+        Vector<String> transfer = information.get("Transfer");
+        boolean transfer1 = getAnalyse().evalbool(transfer.get(0));
         ClassifyDivineLiturgy tomorrows = new ClassifyDivineLiturgy();
         ClassifyDivineLiturgy yesterdays = new ClassifyDivineLiturgy();
         if (transfer1) {
@@ -103,8 +103,8 @@ public class DivineLiturgy extends Reading {
             2. TUESDAY CAN HAVE 2 SETS OF READINGS TRANSFERRED TO IT: MONDAY'S AND WEDNESDAY'S
              */
             //NOTE 2: NO READINGS ARE TRANSFERRED DURING LENT, THAT IS, -48 <= nday <=0.
-            Vector transferRule = information.get("TransferRulesB");
-            boolean transfer2 =getAnalyse().evalbool((String) transferRule.get(0));
+            Vector<String> transferRule = information.get("TransferRulesB");
+            boolean transfer2 =getAnalyse().evalbool(transferRule.get(0));
             if (transfer2) //St. NICHOLAS'S DAY HAS A SPECIAL SET OF RULES
             {
                 //IT IS OBLIGATORY TO CHECK THE NEXT DAY IF ANY READINGS ARE TRANSFERRED!
@@ -135,7 +135,7 @@ public class DivineLiturgy extends Reading {
 
                 getReadings(today, readingType);
                 tomorrowRead = getReadings(today, readingType);
-                tomorrows = new ClassifyDivineLiturgy(tomorrowRead, (LinkedHashMap) getInformation3().getDayInfo().clone());
+                tomorrows = new ClassifyDivineLiturgy(tomorrowRead, (LinkedHashMap<String, Object>) getInformation3().getDayInfo().clone());
                 //System.out.println("Case III: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("dRank").toString()+" In Information3, doy = "+Information3.getDayInfo().get("dRank").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("dRank"));
 
 
@@ -153,7 +153,7 @@ public class DivineLiturgy extends Reading {
             }
             //NOW WE NEED TO CHECK YESTERDAY'S READINGS, BUT THIS WILL ONLY OCCUR ON A TUESDAY OR DEC. 6th
             transferRule = information.get("TransferRulesF");
-            transfer2 = getAnalyse().evalbool((String) transferRule.get(0));
+            transfer2 = getAnalyse().evalbool(transferRule.get(0));
 
             if (transfer2) //IF IT IS A SATURDAY, THEN THE READINGS WILL BE SKIPPED, ???
             {
@@ -181,7 +181,7 @@ public class DivineLiturgy extends Reading {
                 getInformation3().getDayInfo().put(Constants.NDAY_F, ndayF);
 
                 yesterdayRead = getReadings(today, readingType);
-                yesterdays = new ClassifyDivineLiturgy(yesterdayRead, (LinkedHashMap) getInformation3().getDayInfo().clone());
+                yesterdays = new ClassifyDivineLiturgy(yesterdayRead, (LinkedHashMap<String, Object>) getInformation3().getDayInfo().clone());
 
 
 
@@ -200,8 +200,8 @@ public class DivineLiturgy extends Reading {
         }
 
 
-        Vector dailyVf = new Vector();
-        Vector dailyRf = new Vector();
+        Vector<Object> dailyVf = new Vector<>();
+        Vector<Object> dailyRf = new Vector<>();
         Vector dailyTf = new Vector();        
         for (int i=0;i<yesterdays.suppressedV.size();i++){
             dailyVf.add(yesterdays.suppressedV.get(i));
@@ -225,8 +225,8 @@ public class DivineLiturgy extends Reading {
 
         
         //System.out.println("Testing some math: " + (0 - 1 + 7) % 7);
-        Vector menaionV = new Vector();
-        Vector menaionR = new Vector();
+        Vector<Object> menaionV = new Vector<>();
+        Vector<Object> menaionR = new Vector<>();
         Vector menaionT = new Vector();
 
         for (int i=0;i<orderedReadings.menaionV.size();i++){

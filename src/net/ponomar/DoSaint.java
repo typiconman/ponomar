@@ -129,139 +129,135 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 
   }
 
-    private void createWindow()//(String textOut)
-    {
-        //Order the desired Text
-        name=saintInfo2.getName();
-        name2=saintInfo2.getGrammar("Short");
-        life=saintInfo2.getLife();
-        copyright=saintInfo2.getLifeCopyright();
-        LinkedHashMap troparInfo= saintInfo2.getService("/LITURGY/TROPARION","1");
-         if (troparInfo !=null){
-        tropar=troparInfo.get("text").toString();
-        troparT=troparInfo.get("Tone").toString();
-        if (troparInfo.get("Podoben")!=null){
-        troparP=troparInfo.get("Podoben").toString();
-        }}
-        else{
-            tropar=null;
-        }
+	private void createWindow()// (String textOut)
+	{
+		// Order the desired Text
+		name = saintInfo2.getName();
+		name2 = saintInfo2.getGrammar("Short");
+		life = saintInfo2.getLife();
+		copyright = saintInfo2.getLifeCopyright();
+		LinkedHashMap<String, String> troparInfo = saintInfo2.getService("/LITURGY/TROPARION", "1");
+		if (troparInfo != null) {
+			tropar = troparInfo.get("text");
+			troparT = troparInfo.get("Tone");
+			if (troparInfo.get("Podoben") != null) {
+				troparP = troparInfo.get("Podoben");
+			}
+		} else {
+			tropar = null;
+		}
 
-         LinkedHashMap troparInfo2= saintInfo2.getService("/LITURGY/TROPARION","2");
-        if (troparInfo2 !=null){
-        tropar2=troparInfo2.get("text").toString();
-        troparT2=troparInfo2.get("Tone").toString();
-        if (troparInfo2.get("Podoben")!=null){
-        troparP2=troparInfo2.get("Podoben").toString();
-        }}
-        else{
-            tropar2=null;
-        }
-         
+		LinkedHashMap<String, String> troparInfo2 = saintInfo2.getService("/LITURGY/TROPARION", "2");
+		if (troparInfo2 != null) {
+			tropar2 = troparInfo2.get("text");
+			troparT2 = troparInfo2.get("Tone");
+			if (troparInfo2.get("Podoben") != null) {
+				troparP2 = troparInfo2.get("Podoben");
+			}
+		} else {
+			tropar2 = null;
+		}
 
-        LinkedHashMap kontakionInfo= saintInfo2.getService("/LITURGY/KONTAKION","1");
-        if (kontakionInfo !=null){
-        kondak=kontakionInfo.get("text").toString();
-        kondakT=kontakionInfo.get("Tone").toString();
-         if (kontakionInfo.get("Podoben")!=null){
-        kondakP=kontakionInfo.get("Podoben").toString();
-         }}
-         else{
-            kondak=null;
-         }
+		LinkedHashMap<String, String> kontakionInfo = saintInfo2.getService("/LITURGY/KONTAKION", "1");
+		if (kontakionInfo != null) {
+			kondak = kontakionInfo.get("text");
+			kondakT = kontakionInfo.get("Tone");
+			if (kontakionInfo.get("Podoben") != null) {
+				kondakP = kontakionInfo.get("Podoben");
+			}
+		} else {
+			kondak = null;
+		}
 
-        LinkedHashMap kontakionInfo2= saintInfo2.getService("/LITURGY/KONTAKION","2");
-        if (kontakionInfo2 !=null){
-        kondak2=kontakionInfo2.get("text").toString();
-        kondakT2=kontakionInfo2.get("Tone").toString();
-         if (kontakionInfo2.get("Podoben")!=null){
-        kondakP2=kontakionInfo2.get("Podoben").toString();
-         }}
-         else{
-            kondak2=null;
-         }
+		LinkedHashMap<String, String> kontakionInfo2 = saintInfo2.getService("/LITURGY/KONTAKION", "2");
+		if (kontakionInfo2 != null) {
+			kondak2 = kontakionInfo2.get("text");
+			kondakT2 = kontakionInfo2.get("Tone");
+			if (kontakionInfo2.get("Podoben") != null) {
+				kondakP2 = kontakionInfo2.get("Podoben");
+			}
+		} else {
+			kondak2 = null;
+		}
 
+		text = new LanguagePack(analyse.getDayInfo());
+		String[] toneNumbers = text.obtainValues(text.getPhrases().get("Tones"));
+		String[] mainNames = text.obtainValues(text.getPhrases().get("Main"));
+		String[] saintInfo = text.obtainValues(text.getPhrases().get("LivesW"));
+		String textOut = generateContent(toneNumbers, saintInfo);
+		// Other information can go here!
+		// String textOut=header+image+rest;
 
-        text = new LanguagePack(analyse.getDayInfo());
-        String[] toneNumbers = text.obtainValues(text.getPhrases().get("Tones"));
-        String[] mainNames = text.obtainValues(text.getPhrases().get("Main"));
-        String[] saintInfo = text.obtainValues(text.getPhrases().get("LivesW"));
-        String textOut = generateContent(toneNumbers, saintInfo);
-        //Other information can go here!
-        //String textOut=header+image+rest;
-        
-        frames = new JFrame(text.getPhrases().get("0") + text.getPhrases().get(Constants.COLON) + name2);
-        
-        //frames.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel left=new JPanel();
-        JPanel right=new JPanel();
-        left.setLayout(new BorderLayout());
-        right.setLayout(new BoxLayout(right, BoxLayout.PAGE_AXIS));
+		frames = new JFrame(text.getPhrases().get("0") + text.getPhrases().get(Constants.COLON) + name2);
 
-        textOut = textOut.replace("</br>", "<BR>");
-        textOut = textOut.replace("<br>", "<BR>");
-        strOut = textOut;
-        JPanel contentPane = new JPanel(new BorderLayout());
-        contentPane.setOpaque(true);
-        output = new PrintableTextPane();
-        output.addHyperlinkListener(this);
-        //output=new JEditorPane();
-        output.setEditable(false);
-        output.setSize(800, 700);
-        output.setContentType(Constants.CONTENT_TYPE);
-        //output.setText(header);
-        output.setText(textOut);
-        output.setCaretPosition(0);
-        contentPane.add(output);
+		// frames.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JPanel left = new JPanel();
+		JPanel right = new JPanel();
+		left.setLayout(new BorderLayout());
+		right.setLayout(new BoxLayout(right, BoxLayout.PAGE_AXIS));
 
-        JScrollPane scrollPane = new JScrollPane(output);
-        JMenuBar menuBarElement = new JMenuBar();
-        MenuFiles demo = new MenuFiles(analyse.getDayInfo());
-        //PrimeSelector trial=new PrimeSelector();
-        menuBarElement.add(demo.createFileMenu(this));
-        //MenuBar.add(trial.createPrimeMenu());
-        menuBarElement.add(demo.createHelpMenu(this));
-        frames.setJMenuBar(menuBarElement);
-        //trial.addPropertyChangeListener(this);
+		textOut = textOut.replace("</br>", "<BR>");
+		textOut = textOut.replace("<br>", "<BR>");
+		strOut = textOut;
+		JPanel contentPane = new JPanel(new BorderLayout());
+		contentPane.setOpaque(true);
+		output = new PrintableTextPane();
+		output.addHyperlinkListener(this);
+		// output=new JEditorPane();
+		output.setEditable(false);
+		output.setSize(800, 700);
+		output.setContentType(Constants.CONTENT_TYPE);
+		// output.setText(header);
+		output.setText(textOut);
+		output.setCaretPosition(0);
+		contentPane.add(output);
 
-        contentPane.add(scrollPane, BorderLayout.CENTER);
-        right.add(contentPane);
+		JScrollPane scrollPane = new JScrollPane(output);
+		JMenuBar menuBarElement = new JMenuBar();
+		MenuFiles demo = new MenuFiles(analyse.getDayInfo());
+		// PrimeSelector trial=new PrimeSelector();
+		menuBarElement.add(demo.createFileMenu(this));
+		// MenuBar.add(trial.createPrimeMenu());
+		menuBarElement.add(demo.createHelpMenu(this));
+		frames.setJMenuBar(menuBarElement);
+		// trial.addPropertyChangeListener(this);
 
-        JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
-        splitter.setLeftComponent(left);
-        splitter.setRightComponent(right);
+		contentPane.add(scrollPane, BorderLayout.CENTER);
+		right.add(contentPane);
 
-        frames.add(splitter);
+		JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+		splitter.setLeftComponent(left);
+		splitter.setRightComponent(right);
 
+		frames.add(splitter);
 
-        //frames.setContentPane(contentPane);
-        
+		// frames.setContentPane(contentPane);
 
-        LinkedHashMap<String, Vector<String>> iconsM= saintInfo2.getDisplayIcons();
-        Vector<String> imageList= iconsM.get("Images");
-                Vector<String> namesList= iconsM.get("Names");
-                String[] iconImages=new String[imageList.size()];
-                String[] iconNames=new String[namesList.size()];
+		LinkedHashMap<String, Vector<String>> iconsM = saintInfo2.getDisplayIcons();
+		Vector<String> imageList = iconsM.get("Images");
+		Vector<String> namesList = iconsM.get("Names");
+		String[] iconImages = new String[imageList.size()];
+		String[] iconNames = new String[namesList.size()];
 
-                iconImages=imageList.toArray(new String[0]);
-                iconNames=namesList.toArray(new String[0]);
-        System.out.println("Icon Length is: " + iconNames.length);
-        IconDisplay icons=new IconDisplay(iconImages,iconNames,analyse.getDayInfo());
-        left.add(new JPanel(),BorderLayout.NORTH);
-        left.add(icons,BorderLayout.CENTER);
-        left.add(new JPanel(),BorderLayout.SOUTH);
+		iconImages = imageList.toArray(new String[0]);
+		iconNames = namesList.toArray(new String[0]);
+		System.out.println("Icon Length is: " + iconNames.length);
+		IconDisplay icons = new IconDisplay(iconImages, iconNames, analyse.getDayInfo());
+		left.add(new JPanel(), BorderLayout.NORTH);
+		left.add(icons, BorderLayout.CENTER);
+		left.add(new JPanel(), BorderLayout.SOUTH);
 //        contentPane.add(icons);
-  //      textOut+=icons;
-    //    output.setText(textOut);
+		// textOut+=icons;
+		// output.setText(textOut);
 
-        Helpers orient = new Helpers(analyse.getDayInfo());
+		Helpers orient = new Helpers(analyse.getDayInfo());
 
-        orient.applyOrientation(frames,(ComponentOrientation)analyse.getDayInfo().get(Constants.ORIENT));
-        frames.pack();
-        frames.setSize(800, 700);
-        frames.setVisible(true);
-        //scrollPane.top();
-    }
+		orient.applyOrientation(frames, (ComponentOrientation) analyse.getDayInfo().get(Constants.ORIENT));
+		frames.pack();
+		frames.setSize(800, 700);
+		frames.setVisible(true);
+		// scrollPane.top();
+	}
 
 	protected String generateContent(String[] toneNumbers, String[] saintInfo) {
 		String textOut = "";

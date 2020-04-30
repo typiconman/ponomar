@@ -201,7 +201,7 @@ public class NinthHour extends LitService
 		type=PrimesTrial.get("Type").toString();
 		lentenKat=(String) PrimesTrial.get(LENTENK);
 				
-		String PrimesAdd1=new String();
+		String PrimesAdd1= "";
 				
 		if (type.equals("None"))
 		{

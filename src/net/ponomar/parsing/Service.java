@@ -380,12 +380,12 @@ public class Service implements DocHandler
                     //System.out.println(Info);
                     //System.out.println(parsedInfo[1]);
                     //GENERALISED THE VERSION TO ANYTHING LOCATED INSIDE THE SERVICE TAGS!!!
-                    LinkedHashMap royalHours= data.getService(info.substring(0,parsedInfo1),info.substring(parsedInfo1+1));
+                    LinkedHashMap<String, String> royalHours= data.getService(info.substring(0,parsedInfo1),info.substring(parsedInfo1+1));
                     //System.out.println((OrderedHashtable)data.getService("/ROYALHOURS/VERSE","9P"));
                     //System.out.println(RoyalHours);
                     String headerRH="";
                     if(royalHours.get("Header")!=null){
-                        headerRH=royalHours.get("Header").toString();
+                        headerRH=royalHours.get("Header");
                     }
                     if(table.get("Header")!=null){
                         header=Integer.parseInt(table.get("Header"));
@@ -522,7 +522,7 @@ public class Service implements DocHandler
 		String text2=what;
 		ReadText textGet=new ReadText((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
 		
-		/* Original place of this when there the times is used as it was orignally.
+		/* Original place of this when there the times is used as it was originally.
 		if(Command != null)
 		{
 			String text3=textGet.readText(ServiceFileName+"Command/"+Command+".xml");

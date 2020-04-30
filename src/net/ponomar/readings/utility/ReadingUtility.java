@@ -19,7 +19,7 @@ public final class ReadingUtility {
 	
     static final String READINGS_KEY = Constants.READINGS;
 
-	public static void processMenaionPaschalReadings(LinkedHashMap[] menaionReadings, LinkedHashMap<String, LinkedHashMap<String, Vector>> combinedReadings) {
+	public static void processMenaionPaschalReadings(LinkedHashMap[] menaionReadings, LinkedHashMap<String, LinkedHashMap<String, Vector<String>>> combinedReadings) {
 		for (LinkedHashMap menaionReading : menaionReadings) {
 			LinkedHashMap reading = (LinkedHashMap) menaionReading.get(READINGS_KEY);
 			LinkedHashMap readings = (LinkedHashMap) reading.get(READINGS_KEY);
@@ -34,21 +34,21 @@ public final class ReadingUtility {
 		}
 	}
 	
-	private static LinkedHashMap<String, Vector> combineWithExistingReading(LinkedHashMap<String, LinkedHashMap<String, Vector>> combinedReadings, LinkedHashMap reading,
-			LinkedHashMap readings, String element1) {
-		LinkedHashMap<String, Vector> temp = combinedReadings.get(element1);
+	private static LinkedHashMap<String, Vector<String>> combineWithExistingReading(LinkedHashMap<String, LinkedHashMap<String, Vector<String>>> combinedReadings, LinkedHashMap reading,
+																			LinkedHashMap readings, String element1) {
+		LinkedHashMap<String, Vector<String>> temp = combinedReadings.get(element1);
 		Vector readings2 = temp.get(READINGS_KEY);
 		Vector rank = temp.get("Rank");
 		Vector tag = temp.get("Tag");
 		return putReadings(reading, readings, element1, temp, readings2, rank, tag);
 	}
 	
-	private static LinkedHashMap<String, Vector> readingDoesNotExist(LinkedHashMap reading, LinkedHashMap readings, String element1) {
-		return putReadings(reading, readings, element1, new LinkedHashMap<String, Vector>(), new Vector(), new Vector(), new Vector());
+	private static LinkedHashMap<String, Vector<String>> readingDoesNotExist(LinkedHashMap reading, LinkedHashMap readings, String element1) {
+		return putReadings(reading, readings, element1, new LinkedHashMap<>(), new Vector(), new Vector(), new Vector());
 	}
 	
-	private static LinkedHashMap<String, Vector> putReadings(LinkedHashMap reading, LinkedHashMap readings, String element1,
-			LinkedHashMap<String, Vector> temp, Vector readings2, Vector rank, Vector tag) {
+	private static LinkedHashMap<String, Vector<String>> putReadings(LinkedHashMap reading, LinkedHashMap readings, String element1,
+			LinkedHashMap<String, Vector<String>> temp, Vector readings2, Vector rank, Vector tag) {
 		readings2.add(readings.get(element1));
 		rank.add(reading.get("Rank"));
 		tag.add(reading.get("Name"));

@@ -169,8 +169,8 @@ public class Commemoration implements DocHandler {
             location1 += "/" + elem;
             //elemRH=elem;
             value = new LinkedHashMap<>();
-            for (Enumeration e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
-                String type = (String) e.nextElement();
+            for (Enumeration<String> e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
+                String type = e.nextElement();
                 value.put(type, table.get(type));
             }            
             return;
@@ -179,8 +179,8 @@ public class Commemoration implements DocHandler {
         if (readRH && read) {
             elemRH = elem;
             value = new LinkedHashMap<>();
-            for (Enumeration e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
-                String type = (String) e.nextElement();
+            for (Enumeration<String> e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
+                String type = e.nextElement();
                 value.put(type, table.get(type));
             }
         }
@@ -207,8 +207,8 @@ public class Commemoration implements DocHandler {
             if (grammar == null) {
                 grammar = new LinkedHashMap<>();
             }
-            for (Enumeration e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
-                String type = (String) e.nextElement();
+            for (Enumeration<String> e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
+                String type = e.nextElement();
                 grammar.put(type, table.get(type));
             }
             information.put("Grammar", grammar);
@@ -239,8 +239,8 @@ public class Commemoration implements DocHandler {
         if (elem.equals("NAME") && read) {
             //grammar=new OrderedHashtable();
             //System.out.println("Hello World: This is Name testing!");
-            for (Enumeration e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
-                String type = (String) e.nextElement();
+            for (Enumeration<String> e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
+                String type = e.nextElement();
                 grammar.put(type, table.get(type));
             }
             information.put(Constants.GRAMMAR, grammar);
@@ -530,7 +530,7 @@ public class Commemoration implements DocHandler {
 
     }
 
-    public LinkedHashMap getService(String node, String type) {
+    public LinkedHashMap<String, String> getService(String node, String type) {
         //System.out.println(ServiceInfo);
         //System.out.println("\n\n");
         //System.out.println(Node+"/"+Type);
@@ -539,7 +539,7 @@ public class Commemoration implements DocHandler {
         	LinkedHashMap<String, Object> stuff = serviceInfo.get(node);
 
             if (stuff.containsKey(type)) {
-                return (LinkedHashMap) stuff.get(type);
+                return (LinkedHashMap<String, String>) stuff.get(type);
             } else {
                 System.out.println(commNames[0] + node + commNames[1] + type);
                 return null;
@@ -550,26 +550,25 @@ public class Commemoration implements DocHandler {
         }
     }
 
-    public LinkedHashMap getRH(String node, String type) {
+	public LinkedHashMap getRH(String node, String type) {
 
-        if (royalHours.containsKey(node)) {
+		if (royalHours.containsKey(node)) {
 
+			LinkedHashMap stuff = (LinkedHashMap) royalHours.get(node);
+			// System.out.println(stuff);
+			if (stuff.containsKey(type)) {
+				return (LinkedHashMap) stuff.get(type);
+			} else {
+				System.out.println(commNames[3]);
+				return new LinkedHashMap();
+			}
+		} else {
+			System.out.println(commNames[3]);
+			return null;
+		}
 
-        	LinkedHashMap stuff = (LinkedHashMap) royalHours.get(node);
-            //System.out.println(stuff);
-            if (stuff.containsKey(type)) {
-                return (LinkedHashMap) stuff.get(type);
-            } else {
-                System.out.println(commNames[3]);
-                return new LinkedHashMap();
-            }
-        } else {
-            System.out.println(commNames[3]);
-            return null;
-        }
-
-
-    }
+	}
+	
     public boolean checkLife(){
         //Checks whether the given commemoration has an associated life or not
 

@@ -538,7 +538,7 @@ public class RuleBasedNumber implements DocHandler
         //DEBUG MODE
         System.out.println("RuleBasedNumber.java running in Debug mode");
         System.out.println("This program comes with ABSOLUTELY NO WARRANTY!!");
-        LinkedHashMap<String, Object> dayInfo = new LinkedHashMap<String, Object>();
+        LinkedHashMap<String, Object> dayInfo = new LinkedHashMap<>();
         dayInfo.put("LS","6");
 
         RuleBasedNumber test=new RuleBasedNumber(dayInfo);

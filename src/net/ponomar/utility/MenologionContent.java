@@ -85,7 +85,7 @@ public final class MenologionContent {
 					content.append(rSep);
 				}
 
-				content.append(putMatinsReadings(readings, rank, tag, new LinkedHashMap<String, Vector<String>>(), "matins"));
+				content.append(putMatinsReadings(readings, rank, tag, new LinkedHashMap<>(), "matins"));
 				// output+=RSep;
 
 				continue;

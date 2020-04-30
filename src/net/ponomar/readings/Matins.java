@@ -60,7 +60,7 @@ public class Matins extends Reading {
         Information3.getDayInfo().put("nday","2");
         System.out.println("Testing the new StringOp formulation is " + Information3.evalbool("doy == 12"));*/
 
-        information = new LinkedHashMap<String, Vector<String>>();
+        information = new LinkedHashMap<>();
         int doy = Integer.parseInt(getInformation3().getDayInfo().get("doy").toString());
         int dow = Integer.parseInt(getInformation3().getDayInfo().get("dow").toString());
         int nday = Integer.parseInt(getInformation3().getDayInfo().get("nday").toString());
@@ -77,8 +77,8 @@ public class Matins extends Reading {
         }*/
         //For the time being I will hard code the rules, as it is simple one. Suppress Sequential readings on Sunday if dRank > 6; otherwise suppress the menaion readings.
         
-		Vector dailyVf = new Vector();
-		Vector dailyRf = new Vector();
+		Vector<Object> dailyVf = new Vector<>();
+		Vector<Object> dailyRf = new Vector<>();
 		Vector dailyTf = new Vector();
 
 		for (int i = 0; i < orderedReadings.dailyV.size(); i++) {

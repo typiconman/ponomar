@@ -201,7 +201,7 @@ public class Search extends JFrame implements ActionListener
 
         public static void main(String[] argz)
         {
-        	LinkedHashMap<String, Object> dayinfo=new LinkedHashMap<String, Object>();
+        	LinkedHashMap<String, Object> dayinfo=new LinkedHashMap<>();
             dayinfo.put("LS","fr/");
             Search testing = new Search(dayinfo);
             

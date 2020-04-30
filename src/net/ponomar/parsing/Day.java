@@ -426,7 +426,7 @@ public class Day implements DocHandler {
     }
 
     public static void main(String[] argz) {
-    	parameterValues.setDayInfo(new LinkedHashMap<String, Object>());
+    	parameterValues.setDayInfo(new LinkedHashMap<>());
         parameterValues.getDayInfo().put("LS", "cu/ru/");
         parameterValues.getDayInfo().put("dow", "5");
         //Commemoration paramony = new Commemoration("P_3174");    //Paramony of Christmas

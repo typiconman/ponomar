@@ -29,7 +29,7 @@ public class ClassifyMatins extends ClassifyReadings {
     private void classify(LinkedHashMap<String, Vector<String>> readingsIn)
     {
         //Initialise Information.
-        information2=new LinkedHashMap();
+        information2=new LinkedHashMap<>();
         /*try {
             FileReader frf = new FileReader(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/Matins.xml"));
             //System.out.println(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), Constants.DIVINE_LITURGY));
@@ -39,9 +39,9 @@ public class ClassifyMatins extends ClassifyReadings {
             e.printStackTrace();
         }*/
 
-        Vector paschalV = readingsIn.get(Constants.READINGS);
+        Vector<String> paschalV = readingsIn.get(Constants.READINGS);
         Vector paschalR = readingsIn.get("Rank");
-        Vector paschalT = readingsIn.get("Tag");
+        Vector<String> paschalT = readingsIn.get("Tag");
 
         dailyV = new Vector();
         dailyR = new Vector();

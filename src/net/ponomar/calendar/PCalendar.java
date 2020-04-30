@@ -165,7 +165,7 @@ public class PCalendar implements Cloneable
 
         public static void main(String[] argz)
 	{
-        	LinkedHashMap<String, Object> dayInfo=new LinkedHashMap<String, Object>();
+        	LinkedHashMap<String, Object> dayInfo=new LinkedHashMap<>();
             dayInfo.put("LS", "en/");
             PCalendar test=new PCalendar(new JDate(10,4,1957),GREGORIAN,dayInfo);
             System.out.println(test.JulianDay());
