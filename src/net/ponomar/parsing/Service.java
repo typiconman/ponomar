@@ -191,7 +191,7 @@ public class Service implements DocHandler
 			//WE ARE DEALING WITH THE TITLE OF THE SERVICE. IT CAN HAVE 3 PARTS: THE TITLE ITSELF, THE SOURCE FOR 
 			//SERVICE, AND SOME ADDITIONAL COMMENTS.
 			String title=table.get("Header").toString();
-			ReadText textGet1=new ReadText((LinkedHashMap) analyse.getDayInfo().clone());
+			ReadText textGet1=new ReadText((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
                         whoLast="";
 			String text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+title+".xml");
                         String ponomar=text.getPhrases().get("0").toString();
@@ -239,7 +239,7 @@ public class Service implements DocHandler
 			//WE ARE DEALING WITH THE TITLE OF THE SERVICE. IT CAN HAVE 3 PARTS: THE TITLE ITSELF, THE SOURCE FOR
 			//SERVICE, AND SOME ADDITIONAL COMMENTS.
 			//String Subtitle=table.get("Header").toString();
-			ReadText textGet1=new ReadText((LinkedHashMap) analyse.getDayInfo().clone());
+			ReadText textGet1=new ReadText((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
                         whoLast="";
 
 			String subtitle=table.get(Constants.VALUE).toString();
@@ -436,7 +436,7 @@ public class Service implements DocHandler
 			}
 			readIncidentals(table);
 			//System.out.println(What);
-			ReadText textGet=new ReadText((LinkedHashMap) analyse.getDayInfo().clone());
+			ReadText textGet=new ReadText((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
 			if(what != null)
 			{
 				what2 = textGet.readText(COMMONPRAYERS_FILENAME+what+".xml");
@@ -520,7 +520,7 @@ public class Service implements DocHandler
 	private String implement(int header,String text4, String what)
 	{
 		String text2=what;
-		ReadText textGet=new ReadText((LinkedHashMap) analyse.getDayInfo().clone());
+		ReadText textGet=new ReadText((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
 		
 		/* Original place of this when there the times is used as it was orignally.
 		if(Command != null)

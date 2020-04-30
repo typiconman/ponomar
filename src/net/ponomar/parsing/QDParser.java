@@ -46,7 +46,7 @@ public class QDParser {
 		String tagName = null;
 		String lvalue = null;
 		String rvalue = null;
-		Hashtable<String, String> attrs = null;
+		HashMap<String, String> attrs = null;
 		st = new Stack<>();
 		doc.startDocument();
 		int line = 1, col = 0;
@@ -156,7 +156,7 @@ public class QDParser {
 					st.push(new Integer(mode));
 					mode = OPEN_TAG;
 					tagName = null;
-					attrs = new Hashtable<>();
+					attrs = new HashMap<>();
 					sb.append((char) c);
 				}
 
@@ -196,14 +196,16 @@ public class QDParser {
 					tagName = sb.toString();
 				if (c != '>')
 					exc("Expected > for tag: <" + tagName + "/>", line, col);
-				doc.startElement(tagName, attrs);
+				Hashtable temp = new Hashtable();
+				temp.putAll(attrs);
+				doc.startElement(tagName, temp);
 				doc.endElement(tagName);
 				if (depth == 0) {
 					doc.endDocument();
 					return;
 				}
 				sb.setLength(0);
-				attrs = new Hashtable<>();
+				attrs = new HashMap<>();
 				tagName = null;
 				mode = popMode(st);
 
@@ -216,9 +218,11 @@ public class QDParser {
 						tagName = sb.toString();
 					sb.setLength(0);
 					depth++;
-					doc.startElement(tagName, attrs);
+					Hashtable temp = new Hashtable();
+					temp.putAll(attrs);
+					doc.startElement(tagName, temp);
 					tagName = null;
-					attrs = new Hashtable<>();
+					attrs = new HashMap<>();
 					mode = popMode(st);
 				} else if (c == '/') {
 					mode = SINGLE_TAG;
@@ -294,10 +298,12 @@ public class QDParser {
 			} else if (mode == IN_TAG) {
 				if (c == '>') {
 					mode = popMode(st);
-					doc.startElement(tagName, attrs);
+					Hashtable temp = new Hashtable();
+					temp.putAll(attrs);
+					doc.startElement(tagName, temp);
 					depth++;
 					tagName = null;
-					attrs = new Hashtable<>();
+					attrs = new HashMap<>();
 				} else if (c == '/') {
 					mode = SINGLE_TAG;
 				} else if (Character.isWhitespace((char) c)) {

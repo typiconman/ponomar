@@ -158,7 +158,7 @@ public class ReadText implements DocHandler
 	     	}
 	     	
 	     	return header;
-	} 
+	}
 	
 }
 

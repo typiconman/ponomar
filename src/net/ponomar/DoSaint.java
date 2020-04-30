@@ -112,7 +112,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     helpNames = text.obtainValues(text.getPhrases().get("Help"));
     helper=new Helpers(analyse.getDayInfo());
 
-        podobni = new LinkedHashMap<String, String>();
+        podobni = new LinkedHashMap<>();
         try {
             BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),PODOBNI)), StandardCharsets.UTF_8));
             QDParser.parse(this, frf);

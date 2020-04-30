@@ -20,26 +20,26 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
 		public ClassifyDivineLiturgy() {
         }
 
-        public ClassifyDivineLiturgy(LinkedHashMap readingsInA) {
-			StringOp Testing = new StringOp();
-            ParameterValues.setDayInfo(DivineLiturgy.getAnalyse().getDayInfo());
+        public ClassifyDivineLiturgy(LinkedHashMap<String, Vector<String>> readingsInA) {
+			//StringOp Testing = new StringOp();
+            parameterValues.setDayInfo(DivineLiturgy.getAnalyse().getDayInfo());
             //System.out.println("In ParameterValues, we have LS = " + ParameterValues.getDayInfo().get("LS")+" while in Analyse, we have "+Analyse.getDayInfo().get("LS"));
             classify(readingsInA);
         }
 
-       public ClassifyDivineLiturgy(LinkedHashMap readingsInA, LinkedHashMap dayInfo) {
-		ParameterValues.setDayInfo(dayInfo);
+       public ClassifyDivineLiturgy(LinkedHashMap<String, Vector<String>> readingsInA, LinkedHashMap<String, Object> dayInfo) {
+		parameterValues.setDayInfo(dayInfo);
             classify(readingsInA);
 
         }
-        private void classify(LinkedHashMap readingsIn)
+        private void classify(LinkedHashMap<String, Vector<String>> readingsIn)
         {
             //Initialise Information.
-            Information2=new LinkedHashMap();
-            DivineLiturgy.setFindLanguage(new Helpers(ParameterValues.getDayInfo()));
+            information2=new LinkedHashMap();
+            DivineLiturgy.setFindLanguage(new Helpers(parameterValues.getDayInfo()));
             //System.out.println(findLanguage.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
             try {
-                FileReader frf = new FileReader(DivineLiturgy.getFindLanguage().langFileFind(ParameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
+                FileReader frf = new FileReader(DivineLiturgy.getFindLanguage().langFileFind(parameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
                 //System.out.println(findLanguage.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
                 //DivineLiturgy a1 = new classifyReadin();
                 QDParser.parse(this, frf);
@@ -47,9 +47,9 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
                 e.printStackTrace();
             }
 
-            Vector paschalV = (Vector) readingsIn.get(Constants.READINGS);
-            Vector paschalR = (Vector) readingsIn.get("Rank");
-            Vector paschalT = (Vector) readingsIn.get("Tag");
+            Vector paschalV = readingsIn.get(Constants.READINGS);
+            Vector paschalR = readingsIn.get("Rank");
+            Vector paschalT = readingsIn.get("Tag");
 
             dailyV = new Vector();
             dailyR = new Vector();
@@ -84,11 +84,11 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
 
         private void Suppress() {
             //THIS FUNCTION CONSIDERS WHAT HOLIDAYS ARE CURRENTLY OCCURING AND RETURNS THE READINGS FOR THE DAY, WHERE SUPPRESSED CONTAINS THE READINGS THAT WERE SUPPRESSED.
-            int doy = Integer.parseInt(ParameterValues.getDayInfo().get("doy").toString());
-            int dow = Integer.parseInt(ParameterValues.getDayInfo().get("dow").toString());
-            int nday = Integer.parseInt(ParameterValues.getDayInfo().get("nday").toString());
-            int ndayF = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.NDAY_F).toString());
-            int ndayP = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.NDAY_P).toString());
+            int doy = Integer.parseInt(parameterValues.getDayInfo().get("doy").toString());
+            int dow = Integer.parseInt(parameterValues.getDayInfo().get("dow").toString());
+            int nday = Integer.parseInt(parameterValues.getDayInfo().get("nday").toString());
+            int ndayF = Integer.parseInt(parameterValues.getDayInfo().get(Constants.NDAY_F).toString());
+            int ndayP = Integer.parseInt(parameterValues.getDayInfo().get(Constants.NDAY_P).toString());
             LeapReadings();		//THIS ALLOWS APPROPRIATE SKIPPING OF READINGS OVER THE NATIVITY SEASON!
 
             /******************************************************
@@ -143,11 +143,11 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
 
 
             if (dow != 0) {*/
-                Vector vect = (Vector) Information2.get("Class3Transfers");
+                Vector vect = (Vector) information2.get("Class3Transfers");
                 if (vect != null) {
                     for (Enumeration e2 = vect.elements(); e2.hasMoreElements();) {
                         String Command = (String) e2.nextElement();
-                        if (ParameterValues.evalbool(Command)) {
+                        if (parameterValues.evalbool(Command)) {
                             //THE CURRENT COMMAND WAS TRUE AND THE SEQUENTITIAL READING IS TO BE SUPPRESSED/TRANSFERRED
                             for (int k = 0; k < dailyV.size(); k++) {
                                 suppressedV.add(dailyV.get(k));

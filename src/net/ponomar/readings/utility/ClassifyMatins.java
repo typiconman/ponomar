@@ -1,6 +1,7 @@
 package net.ponomar.readings.utility;
 
 import net.ponomar.readings.Matins;
+import net.ponomar.readings.Reading;
 import net.ponomar.utility.Constants;
  
  
@@ -15,20 +16,20 @@ public class ClassifyMatins extends ClassifyReadings {
     public ClassifyMatins() {
     }
 
-    public ClassifyMatins(LinkedHashMap readingsInA) {
-		StringOp Testing = new StringOp();
-        ParameterValues.setDayInfo(Matins.getInformation3().getDayInfo());
+    public ClassifyMatins(LinkedHashMap<String, Vector<String>> readingsInA) {
+		//StringOp Testing = new StringOp();
+        parameterValues.setDayInfo(Reading.getInformation3().getDayInfo());
         classify(readingsInA);
     }
 
-    public ClassifyMatins(Matins matins, LinkedHashMap readingsInA, StringOp ParameterValues) {
+    public ClassifyMatins(Matins matins, LinkedHashMap<String, Vector<String>> readingsInA, StringOp ParameterValues) {
 		classify(readingsInA);
 
     }
-    private void classify(LinkedHashMap readingsIn)
+    private void classify(LinkedHashMap<String, Vector<String>> readingsIn)
     {
         //Initialise Information.
-        Information2=new LinkedHashMap();
+        information2=new LinkedHashMap();
         /*try {
             FileReader frf = new FileReader(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/Matins.xml"));
             //System.out.println(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), Constants.DIVINE_LITURGY));
@@ -38,9 +39,9 @@ public class ClassifyMatins extends ClassifyReadings {
             e.printStackTrace();
         }*/
 
-        Vector paschalV = (Vector) readingsIn.get(Constants.READINGS);
-        Vector paschalR = (Vector) readingsIn.get("Rank");
-        Vector paschalT = (Vector) readingsIn.get("Tag");
+        Vector paschalV = readingsIn.get(Constants.READINGS);
+        Vector paschalR = readingsIn.get("Rank");
+        Vector paschalT = readingsIn.get("Tag");
 
         dailyV = new Vector();
         dailyR = new Vector();
@@ -76,12 +77,12 @@ public class ClassifyMatins extends ClassifyReadings {
 
     private void Suppress() {
         //THIS FUNCTION CONSIDERS WHAT HOLIDAYS ARE CURRENTLY OCCURING AND RETURNS THE READINGS FOR THE DAY, WHERE SUPPRESSED CONTAINS THE READINGS THAT WERE SUPPRESSED.
-        int doy = Integer.parseInt(ParameterValues.getDayInfo().get("doy").toString());
-        int dow = Integer.parseInt(ParameterValues.getDayInfo().get("dow").toString());
-        int nday = Integer.parseInt(ParameterValues.getDayInfo().get("nday").toString());
-        int ndayF = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.NDAY_F).toString());
-        int ndayP = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.NDAY_P).toString());
-        int dRank = Integer.parseInt(ParameterValues.getDayInfo().get(Constants.D_RANK).toString());
+        int doy = Integer.parseInt(parameterValues.getDayInfo().get("doy").toString());
+        int dow = Integer.parseInt(parameterValues.getDayInfo().get("dow").toString());
+        int nday = Integer.parseInt(parameterValues.getDayInfo().get("nday").toString());
+        int ndayF = Integer.parseInt(parameterValues.getDayInfo().get(Constants.NDAY_F).toString());
+        int ndayP = Integer.parseInt(parameterValues.getDayInfo().get(Constants.NDAY_P).toString());
+        int dRank = Integer.parseInt(parameterValues.getDayInfo().get(Constants.D_RANK).toString());
         //LeapReadings();		//THIS ALLOWS APPROPRIATE SKIPPING OF READINGS OVER THE NATIVITY SEASON!
 
       
