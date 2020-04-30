@@ -9,9 +9,9 @@ import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.panels.PrimeSelector;
 import net.ponomar.parsing.Day;
-import net.ponomar.parsing.QDParser;
 import net.ponomar.parsing.Service;
 import net.ponomar.parsing.ServiceInfo;
+import net.ponomar.parsing.utility.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
  

@@ -416,7 +416,7 @@ public boolean evalbool(String expression)
 	// THIS FUNCTION SIMPLY CONVERTS A DOUBLE INTO A BOOLEAN EXPRESSION, WHERE 0 = FALSE
 	// EVERYTHING ELSE EQUALS TRUE! THIS FUNCTION IS REQUIRED FOR &&, ||, and ! OPERATORS
 	
-	Double result = eval(expression);
+	double result = eval(expression);
 	if (result == Double.NaN)
 	{
 		System.out.println("Error Reading the values");

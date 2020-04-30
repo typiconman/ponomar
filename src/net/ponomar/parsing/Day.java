@@ -1,6 +1,8 @@
 package net.ponomar.parsing;
 
 import net.ponomar.internationalization.LanguagePack;
+import net.ponomar.parsing.utility.DocHandler;
+import net.ponomar.parsing.utility.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
  

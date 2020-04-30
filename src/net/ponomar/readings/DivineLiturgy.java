@@ -3,7 +3,7 @@ package net.ponomar.readings;
 import net.ponomar.astronomy.Paschalion;
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
-import net.ponomar.parsing.QDParser;
+import net.ponomar.parsing.utility.QDParser;
 import net.ponomar.readings.utility.ClassifyDivineLiturgy;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;

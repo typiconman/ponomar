@@ -7,8 +7,8 @@ import javax.swing.event.*;
 
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.panels.PrintableTextPane;
-import net.ponomar.parsing.DocHandler;
-import net.ponomar.parsing.QDParser;
+import net.ponomar.parsing.utility.DocHandler;
+import net.ponomar.parsing.utility.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
  
@@ -158,7 +158,6 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
 
         JPanel middle = new JPanel();
         middle.setLayout(new BoxLayout(middle, BoxLayout.LINE_AXIS));
-        books.values();
         booksBox = new JList<>(books.values().toArray(new String[0]));
         /*c.fill = GridBagConstraints.HORIZONTAL;
         c.gridx = 0;

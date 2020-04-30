@@ -1,14 +1,15 @@
-package net.ponomar.parsing;
+package net.ponomar.parsing.utility;
 
-import java.io.*;
-import java.util.*;
+import java.io.Reader;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.LinkedList;
 
-/**********************************************************
- * QDPARSER.JAVA : A QUICK AND DIRTY XML PARSER, WITH (VERY) LIMITED
- * FUNCTIONALITY
+/*
+ * ORIGINALLY FROM: SIMPLENN (https://github.com/cth/simplenn/blob/master/QDParser.java)
  * 
- * ORIGINALLY FROM: ? SLIGHT MODIFICATIONS BY ALEKSANDR ANDREEV.
- * 
+ * Copyright (c) 2006 Christian Theil Have
+ * SLIGHT MODIFICATIONS BY ALEKSANDR ANDREEV.
  * (C) 2006-2007 ALEKSANDR ANDREEV. ALL RIGHTS RESERVED.
  * 
  * PERMISSION IS HEREBY GRANTED TO USE, MODIFY, AND/OR REDISTRIBUTE THIS SOURCE
@@ -21,7 +22,16 @@ import java.util.*;
  * AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
  * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- **********************************************************/
+*/
+
+/**
+ * 
+ * A Quick and Dirty xml parser, with (very) limited functionality. To be used
+ * with classes implementing the {@link DocHandler} interface.
+ * 
+ * @author Christian Theil Have, with slight modifications by Aleksandr Andreev
+ * 
+ */
 public class QDParser {
 	private static int popMode(Deque<Integer> st) {
 		if (!st.isEmpty())

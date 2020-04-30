@@ -12,7 +12,7 @@ import net.ponomar.astronomy.Paschalion;
 import net.ponomar.calendar.JDate;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.parsing.Day;
-import net.ponomar.parsing.DocHandler;
+import net.ponomar.parsing.utility.DocHandler;
 import net.ponomar.readings.utility.ReadingUtility;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;

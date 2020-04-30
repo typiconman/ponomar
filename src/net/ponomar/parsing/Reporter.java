@@ -4,6 +4,10 @@ package net.ponomar.parsing;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashMap;
+
+import net.ponomar.parsing.utility.DocHandler;
+import net.ponomar.parsing.utility.QDParser;
+
 import java.io.FileReader;
 
 /** 

@@ -6,8 +6,8 @@ import java.util.LinkedHashMap;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import net.ponomar.parsing.DocHandler;
-import net.ponomar.parsing.QDParser;
+import net.ponomar.parsing.utility.DocHandler;
+import net.ponomar.parsing.utility.QDParser;
 import net.ponomar.readings.DivineLiturgy;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;

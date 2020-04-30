@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import net.ponomar.parsing.DocHandler;
+import net.ponomar.parsing.utility.DocHandler;
 import net.ponomar.utility.Constants;
  
  

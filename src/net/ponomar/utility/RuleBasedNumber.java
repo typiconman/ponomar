@@ -1,7 +1,7 @@
 package net.ponomar.utility;
 
-import net.ponomar.parsing.DocHandler;
-import net.ponomar.parsing.QDParser;
+import net.ponomar.parsing.utility.DocHandler;
+import net.ponomar.parsing.utility.QDParser;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

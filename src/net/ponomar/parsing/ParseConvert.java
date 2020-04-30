@@ -3,6 +3,9 @@ package net.ponomar.parsing;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+
+import net.ponomar.parsing.utility.DocHandler;
+import net.ponomar.parsing.utility.QDParser;
 /***********************************************************************
 *******************************************************/
 

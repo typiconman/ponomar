@@ -13,8 +13,8 @@ import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.panels.IconDisplay;
 import net.ponomar.panels.PrintableTextPane;
 import net.ponomar.parsing.Commemoration;
-import net.ponomar.parsing.DocHandler;
-import net.ponomar.parsing.QDParser;
+import net.ponomar.parsing.utility.DocHandler;
+import net.ponomar.parsing.utility.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
  

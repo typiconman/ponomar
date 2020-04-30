@@ -4,6 +4,8 @@ import java.util.*;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
+import net.ponomar.parsing.utility.DocHandler;
+import net.ponomar.parsing.utility.QDParser;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
  

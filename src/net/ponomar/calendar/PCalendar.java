@@ -76,7 +76,7 @@ public class PCalendar implements Cloneable
         //RETURNS THE YEAR, MONTH, DAY IN THE JULIAN CALENDAR
         private int[] getJulianDate(){
             //We wish to obtain the Julian calendar parameters
-            Double JD=getJulianDay()+0.5;
+            double JD=getJulianDay()+0.5;
             int A=integerPart(JD);
 
             int B=A + 1524;
@@ -102,7 +102,7 @@ public class PCalendar implements Cloneable
         //RETURNS THE YEAR, MONTH, DAY IN THE GREGORIAN CALENDAR
         private int[] getGregorianDate(){
             //We wish to obtain the Gregorian calendar parameters
-            Double JD=getJulianDay()+0.5;
+            double JD=getJulianDay()+0.5;
             int Z=integerPart(JD);
             int A=Z;
             //Again we will not honour Gregorian dates outside of the implmentation period!
