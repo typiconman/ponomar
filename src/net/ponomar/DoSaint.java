@@ -472,7 +472,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     public void endDocument() {
     }
 
-    public void startElement(String elem, Hashtable table) {
+    public void startElement(String elem, HashMap<String, String> table) {
 
         // THE TAG COULD CONTAIN A COMMAND Cmd
         // THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
@@ -481,7 +481,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (analyse.evalbool(table.get("Cmd").toString()) == false) {
+            if (analyse.evalbool(table.get("Cmd")) == false) {
 
                 return;
             }
@@ -493,35 +493,35 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         //}
         if (elem.equals("LIFE") && read) {
             if (table.get(Constants.COPYRIGHT) != null) {
-                copyright = table.get(Constants.COPYRIGHT).toString();
+                copyright = table.get(Constants.COPYRIGHT);
             }
             if (table.get("Repose") != null) {
-                repose = table.get(Constants.COPYRIGHT).toString();
+                repose = table.get(Constants.COPYRIGHT);
             }
             return;
         }
         if (elem.equals("NAME") && read) {
-            name = table.get(Constants.NOMINATIVE).toString();
+            name = table.get(Constants.NOMINATIVE);
             if (!repose.isEmpty()){
                 name=name+"(\u2020 "+repose+")";
             }
         }
         if (elem.equals("TROPARION") && read) {
-            troparT = table.get("Tone").toString();
+            troparT = table.get("Tone");
             if (table.get("Podoben") != null) {
-                troparP = table.get("Podoben").toString();
+                troparP = table.get("Podoben");
             }
         }
         if (elem.equals("KONTAKION") && read) {
-            kondakT = table.get("Tone").toString();
+            kondakT = table.get("Tone");
             if (table.get("Podoben") != null) {
-                kondakP = table.get("Podoben").toString();
+                kondakP = table.get("Podoben");
             }
         }
         if (elem.equals("PODOBEN") && read) {
-            String tone = table.get("Tone").toString();
-            String caseP = table.get("Case").toString();
-            String intro = table.get("Intro").toString();
+            String tone = table.get("Tone");
+            String caseP = table.get("Case");
+            String intro = table.get("Intro");
             podobni.put(tone + caseP, intro);
         }
         /*if(readService && read){

@@ -14,7 +14,7 @@ import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.util.Arrays;
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 
@@ -76,7 +76,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 	private boolean initialized;
 	private boolean decorationBackgroundVisible;
 	private boolean decorationBordersVisible;
-	private Hashtable feasts;
+	private HashMap<Long, String>  feasts;
 	private int[] fasts;
 	private LanguagePack Text;//=new LanguagePack();
         private StringOp Analyse=new StringOp();

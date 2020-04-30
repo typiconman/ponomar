@@ -7,7 +7,8 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Hashtable;
+import java.util.HashMap;
+
 import java.util.LinkedHashMap;
 
 /***************************************************************
@@ -105,7 +106,7 @@ public class RuleBasedNumber implements DocHandler
 
 	public void endDocument() { }
 
-	public void startElement(String elem, Hashtable table)
+	public void startElement(String elem, HashMap<String, String> table)
 	{
 		// THE TAG COULD CONTAIN A COMMAND Cmd
 		// THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
@@ -115,7 +116,7 @@ public class RuleBasedNumber implements DocHandler
 		if (table.get("Cmd") != null)
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-			if (analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd")) == false)
 			{
 				return;
 			}
@@ -126,8 +127,8 @@ public class RuleBasedNumber implements DocHandler
 		//}
 		if (elem.equals("PHRASE") && readRules)
 		{
-			String key=table.get("Key").toString();
-			String value=table.get(Constants.VALUE).toString();
+			String key=table.get("Key");
+			String value=table.get(Constants.VALUE);
 			if (key.equals("DF"))
                         {
                            DF=obtainValues(value);

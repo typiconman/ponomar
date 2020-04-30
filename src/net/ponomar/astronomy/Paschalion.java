@@ -409,14 +409,14 @@ public final class Paschalion
 		}
 
 		// A HASHTABLE WITH MANDATORY FAST DAYS IN THE YEAR
-		Hashtable<Long, String> mustFast = new Hashtable<>();
+		HashMap<Long, String> mustFast = new HashMap<>();
 
 		mustFast.put(new JDate(1, 5, year).getJulianDay(), "Eve of Theophany");
 		mustFast.put(new JDate(8, 29, year).getJulianDay(), "Beheading");
 		mustFast.put(new JDate(9, 14, year).getJulianDay(), "Exaltation");
 
 		// A HASHTABLE WITH MANDATORY FAST-FREE DAYS
-		Hashtable<Long, String> cantFast = new Hashtable<>();
+		HashMap<Long, String> cantFast = new HashMap<>();
 
 		cantFast.put(new JDate(1, 6, year).getJulianDay(), "Theophany");
 
@@ -531,14 +531,14 @@ public final class Paschalion
 	//	FIRST ENTRY: THE julian date of a feast
 	//	SECOND ENTRY: A STRING DESCRIBING THAT FEAST
 	// THROWS: ditto
-	public static Hashtable<Long, String> getFeasts(int year, LinkedHashMap<String, Object> dayInfo) throws IllegalArgumentException
+	public static HashMap<Long, String> getFeasts(int year, LinkedHashMap<String, Object> dayInfo) throws IllegalArgumentException
 	{
 		if (year < 33)
 		{
 			throw( new IllegalArgumentException("Invalid year"));
 		}
 
-		Hashtable<Long, String> feasts = new Hashtable<>();
+		HashMap<Long, String> feasts = new HashMap<>();
 		LanguagePack Text=new LanguagePack(dayInfo);
 		String[] FeastNames=Text.obtainValues(Text.getPhrases().get("Feasts"));
 		// ADD ALL THE FIXED FEASTS TO OUR HASHTABLE

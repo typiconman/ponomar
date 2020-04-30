@@ -13,7 +13,8 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Hashtable;
+import java.util.HashMap;
+
 import java.util.LinkedHashMap;
 
 /***************************************************************
@@ -92,7 +93,7 @@ public class LanguagePack implements DocHandler {
 	public void endDocument() {
 	}
 
-	public void startElement(String elem, Hashtable table) {
+	public void startElement(String elem, HashMap<String, String> table) {
 		// THE TAG COULD CONTAIN A COMMAND Cmd
 		// THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
 		// TODAY'S INFORMATION IN dayInfo.

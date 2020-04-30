@@ -117,7 +117,7 @@ public class RoyalHours extends LitService {
 		return strOut;
 	}
 
-	public void startElement(String elem, Hashtable table) {
+	public void startElement(String elem, HashMap<String, String> table) {
 
 		// THE TAG COULD CONTAIN A COMMAND Cmd
 		// THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
@@ -125,7 +125,7 @@ public class RoyalHours extends LitService {
 		if (table.get("Cmd") != null) {
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-			if (analyse.evalbool(table.get("Cmd").toString()) == false) {
+			if (analyse.evalbool(table.get("Cmd")) == false) {
 
 				return;
 			}
@@ -135,7 +135,7 @@ public class RoyalHours extends LitService {
 		read = true;
 		// }
 		if (elem.equals("TEXT") && read) {
-			text += (String) table.get(Constants.VALUE);
+			text += table.get(Constants.VALUE);
 
 		}
 		if (elem.equals("PRIMES") && read) {

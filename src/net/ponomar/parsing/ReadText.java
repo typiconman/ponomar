@@ -61,7 +61,7 @@ public class ReadText implements DocHandler
 
 	}
 
-	public void startElement(String elem, Hashtable table)
+	public void startElement(String elem, HashMap<String, String> table)
 	{
 		
 		// THE TAG COULD CONTAIN A COMMAND Cmd
@@ -71,7 +71,7 @@ public class ReadText implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd")) == false)
 			{
 				return;
 			}
@@ -82,11 +82,11 @@ public class ReadText implements DocHandler
 		//}
 		if(elem.equals("HEADER") && read)
 		{
-			header=(String)table.get(Constants.VALUE);
+			header=table.get(Constants.VALUE);
 		}
 		if(elem.equals("TEXT") && read)
 		{
-			text+=(String)table.get(Constants.VALUE);
+			text+=table.get(Constants.VALUE);
 			
 		}	
 		

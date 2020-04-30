@@ -54,7 +54,7 @@ public class ServiceInfo implements DocHandler
 	
 	public LinkedHashMap<String, String> serviceRules() //throws IOException
 	{
-		service=new LinkedHashMap<String, String>();
+		service=new LinkedHashMap<>();
 		information=new LinkedHashMap<>();
 		//THIS IS A KLUTZ THAT WILL BE REMOVED ONCE THERE IS A PROPER ABILITY TO RANK THE DAY
 		//RANK 1 HOLIDAYS
@@ -132,7 +132,7 @@ public class ServiceInfo implements DocHandler
 
 	}
 
-	public void startElement(String elem, Hashtable table)
+	public void startElement(String elem, HashMap<String, String> table)
 	{
 		
 		// THE TAG COULD CONTAIN A COMMAND Cmd
@@ -142,7 +142,7 @@ public class ServiceInfo implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd")) == false)
 			{
 				return;
 			}
@@ -158,7 +158,7 @@ public class ServiceInfo implements DocHandler
 		if(elem.equals(type) && readPeriod && readLanguage)
 		{
 			//A POTENTIAL ORDER RULE HAS BEEN ENCOUNTERED.
-			Enumeration listed = table.keys();
+			Enumeration listed = Collections.enumeration(table.keySet());
 			while (listed.hasMoreElements())
 			{
 				String nextEle=listed.nextElement().toString();
@@ -167,7 +167,7 @@ public class ServiceInfo implements DocHandler
 				{
 					continue;
 				}
-				service.put(nextEle,table.get(nextEle).toString());
+				service.put(nextEle,table.get(nextEle));
 				
 			}
 		}
@@ -175,8 +175,8 @@ public class ServiceInfo implements DocHandler
 		if (elem.equals(Constants.COMMAND))
 		{
 		//THIS WILL STORE ALL THE POSSIBLE COMMANDS FOR A GIVEN SITUATION AND ALLOW THE RESULTS TO BE DETEMINED.
-		String name = table.get("Name").toString();
-		String value=table.get(Constants.VALUE).toString();
+		String name = table.get("Name");
+		String value=table.get(Constants.VALUE);
 		//IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
 		if (information.containsKey(name))
 		{

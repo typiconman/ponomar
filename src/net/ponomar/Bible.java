@@ -303,10 +303,10 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     public void endDocument() {
     }
 
-    public void startElement(String elem, Hashtable table) {
+    public void startElement(String elem, HashMap<String, String> table) {
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-            if (analyse.evalbool(table.get("Cmd").toString()) == false) {
+            if (analyse.evalbool(table.get("Cmd")) == false) {
                 return;
             }
         }
@@ -314,11 +314,11 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         readFile = true;
         
         if (elem.equals("BIBLE")) {
-            versions2.put(table.get("Id").toString(), table.get("Name").toString());
+            versions2.put(table.get("Id"), table.get("Name"));
             
-            lastversion = (String) table.get("Id");
-            currentBible = (String) table.get("Name");
-            findId.put(table.get("Name").toString(), table.get("Id").toString());//ADDED Y.S.
+            lastversion = table.get("Id");
+            currentBible = table.get("Name");
+            findId.put(table.get("Name"), table.get("Id"));//ADDED Y.S.
         }
         if (elem.equals("INFO")) {
             //ADDED Y.S. 2001211 n.s.
@@ -336,13 +336,13 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 }
 
             } else {
-                displayFontA = (String) table.get(FONT_FACE);
+                displayFontA = table.get(FONT_FACE);
             }
             if (table.get(FONT_SIZE) == null) {
 
                 displaySizeA = Integer.toString(value1a.getSize());
             } else {
-                displaySizeA = (String) table.get(FONT_SIZE);
+                displaySizeA = table.get(FONT_SIZE);
             }
             String name = currentBible;
             String alignText = "left";
@@ -372,23 +372,23 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                         //But there could be other future orientations, such as tlb,etc...
                     }
                 }
-                chapterName = (String) table.get("ChapterN");
-                chapterNameI = (String) table.get("ChapterNI");
-                header = (String) table.get("HeaderFormat");
-                abbrevFormat=(String)table.get("AbbrevFormat");
-                verseNumbered=(String)table.get("VerseNumFormat");
-                verseNoNumbered=(String)table.get("VerseNoNumFormat");
-                verseLink=(String)table.get("VerseLink");
-                String a = (String) table.get("VerseNo");
+                chapterName = table.get("ChapterN");
+                chapterNameI = table.get("ChapterNI");
+                header = table.get("HeaderFormat");
+                abbrevFormat=table.get("AbbrevFormat");
+                verseNumbered=table.get("VerseNumFormat");
+                verseNoNumbered=table.get("VerseNoNumFormat");
+                verseLink=table.get("VerseLink");
+                String a = table.get("VerseNo");
                 verseNumber = a.split(",");
-                a = (String) table.get("ChapterNo");
+                a = table.get("ChapterNo");
                 chapterNumber = a.split(",");
-                a= (String) table.get("Parts");
+                a= table.get("Parts");
                 halfVerse=a.split(",");
                 
-                cVSep = (String) table.get("CVSep");	//Chapter Verse Separator: Book Chapter:Verse or Book Chapter,Verse or something else
-                duration = (String) table.get("Duration"); //SEPARATOR BETWEEN THE ENDS OF A CONTINUOUS READING: 3:2-4:5, or 3:2-10
-                selectionSeparator = (String) table.get("SelectionSeparator"); //SEPARATOR BETWEEN SELECTIONS OF READINGS, Exodus 3:2, 4:5-10, 10:10-11:3
+                cVSep = table.get("CVSep");	//Chapter Verse Separator: Book Chapter:Verse or Book Chapter,Verse or something else
+                duration = table.get("Duration"); //SEPARATOR BETWEEN THE ENDS OF A CONTINUOUS READING: 3:2-4:5, or 3:2-10
+                selectionSeparator = table.get("SelectionSeparator"); //SEPARATOR BETWEEN SELECTIONS OF READINGS, Exodus 3:2, 4:5-10, 10:10-11:3
                 //ALLOWINS DIFFERENT FONTS TO BE USED: 2009/02/16 n.s.
                 Font value1 = (Font) UIManager.get("Menu.font");
                 
@@ -403,13 +403,13 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                     }
 
                 } else {
-                    displayFont = (String) table.get(FONT_FACE);
+                    displayFont = table.get(FONT_FACE);
                 }
                 if (table.get(FONT_SIZE) == null) {
 
                     displaySize = Integer.toString(value1.getSize());
                 } else {
-                    displaySize = (String) table.get(FONT_SIZE);
+                    displaySize = table.get(FONT_SIZE);
                 }
 
                 currentFont = new Font(displayFont, Font.PLAIN, Integer.parseInt(displaySize));               
@@ -417,11 +417,10 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             }
         } else if (elem.equals("BOOK")) {
             if (curversion.equals(lastversion)) {
-                books.put(table.get("Id").toString(), table.get("Name").toString());
-                chapters.put(table.get("Id").toString(), table.get("Chapters").toString());
-                intro.put(table.get("Id").toString(), table.get("Intro").toString());  //ADDED Y.S.
-
-                abbrev.put(table.get("Id").toString(), table.get("Short").toString());
+                books.put(table.get("Id"), table.get("Name"));
+                chapters.put(table.get("Id"), table.get("Chapters"));
+                intro.put(table.get("Id"), table.get("Intro"));  //ADDED Y.S.
+                abbrev.put(table.get("Id"), table.get("Short"));
             }
         }
     }

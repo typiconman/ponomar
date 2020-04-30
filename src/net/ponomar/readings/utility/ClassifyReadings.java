@@ -1,7 +1,8 @@
 package net.ponomar.readings.utility;
 
 import java.util.Enumeration;
-import java.util.Hashtable;
+import java.util.HashMap;
+
 import java.util.LinkedHashMap;
 import java.util.Vector;
 
@@ -38,22 +39,22 @@ public class ClassifyReadings implements DocHandler {
 	public void endDocument() {
 	}
 
-	public void startElement(String elem, Hashtable table) {
+	public void startElement(String elem, HashMap<String, String> table) {
 	    // THE TAG COULD CONTAIN A COMMAND Cmd
 	    // THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
 	    // TODAY'S INFORMATION IN dayInfo.
 	    if (table.get("Cmd") != null) {
 	        // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 	
-	        if (parameterValues.evalbool(table.get("Cmd").toString()) == false) {
+	        if (parameterValues.evalbool(table.get("Cmd")) == false) {
 	            return;
 	        }
 	    }
 	
 	    if (elem.equals(Constants.COMMAND)) {
 	        //THIS WILL STORE ALL THE POSSIBLE COMMANDS FOR A GIVEN SITUATION AND ALLOW THE RESULTS TO BE DETEMINED.
-	        String name = (String) table.get("Name");
-	        String value = (String) table.get(Constants.VALUE);
+	        String name = table.get("Name");
+	        String value = table.get(Constants.VALUE);
 	        //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
 	        //System.out.println("==============================\nTesting Information\n++++++++++++++++++++");
 	        if (information2.containsKey(name)) {

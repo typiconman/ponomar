@@ -128,7 +128,7 @@ public class Commemoration implements DocHandler {
     public void endDocument() {
     }
 
-    public void startElement(String elem, Hashtable table) {
+    public void startElement(String elem, HashMap<String, String> table) {
 
         // THE TAG COULD CONTAIN A COMMAND Cmd
         // THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
@@ -137,7 +137,7 @@ public class Commemoration implements DocHandler {
         skipElement = false;
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-            if (analyse.evalbool(table.get("Cmd").toString()) == false) {
+            if (analyse.evalbool(table.get("Cmd")) == false) {
 
 
                 skipElement = true;
@@ -161,7 +161,7 @@ public class Commemoration implements DocHandler {
             location1 = "";
 
             if (table.get("Type") != null) {
-                information.put("Rank", Integer.parseInt(table.get("Type").toString()));
+                information.put("Rank", Integer.parseInt(table.get("Type")));
             }
             return;
         }
@@ -169,7 +169,7 @@ public class Commemoration implements DocHandler {
             location1 += "/" + elem;
             //elemRH=elem;
             value = new LinkedHashMap<>();
-            for (Enumeration e = table.keys(); e.hasMoreElements();) {
+            for (Enumeration e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
                 String type = (String) e.nextElement();
                 value.put(type, table.get(type));
             }            
@@ -179,14 +179,14 @@ public class Commemoration implements DocHandler {
         if (readRH && read) {
             elemRH = elem;
             value = new LinkedHashMap<>();
-            for (Enumeration e = table.keys(); e.hasMoreElements();) {
+            for (Enumeration e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
                 String type = (String) e.nextElement();
                 value.put(type, table.get(type));
             }
         }
         if (elem.equals("SCRIPTURE") && read) {
-            String type = (String) table.get("Type");
-            String reading = (String) table.get(Constants.READING);
+            String type = table.get("Type");
+            String reading = table.get(Constants.READING);
             if (readings.containsKey(type)) {
 
                 // ADD THIS READING TO OTHERS OF THE SAME TYPE
@@ -207,7 +207,7 @@ public class Commemoration implements DocHandler {
             if (grammar == null) {
                 grammar = new LinkedHashMap<>();
             }
-            for (Enumeration e = table.keys(); e.hasMoreElements();) {
+            for (Enumeration e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
                 String type = (String) e.nextElement();
                 grammar.put(type, table.get(type));
             }
@@ -218,28 +218,28 @@ public class Commemoration implements DocHandler {
         //Information.put("Cycle",table.get("Cycle").toString());
         // }
         if (elem.equals("ICON") && read) {
-            information.put("Icon", table.get("Id").toString());
+            information.put("Icon", table.get("Id"));
         }
         if (elem.equals("TROPARION") && read) {
             variable = new LinkedHashMap<>();
-            variable.put("Tone", table.get("Tone").toString());
+            variable.put("Tone", table.get("Tone"));
             if (table.get(AUTHOR) != null){
-            variable.put(AUTHOR, table.get(AUTHOR).toString());
+            variable.put(AUTHOR, table.get(AUTHOR));
             }
             //Information.put("presentPropers",true);
         }
         if (elem.equals("KONTAKION") && read) {
             variable = new LinkedHashMap<>();
-            variable.put("Tone", table.get("Tone").toString());
+            variable.put("Tone", table.get("Tone"));
             if (table.get(AUTHOR) != null){
-            variable.put(AUTHOR, table.get(AUTHOR).toString());
+            variable.put(AUTHOR, table.get(AUTHOR));
             //Information.put("presentPropers",true);
             }
         }
         if (elem.equals("NAME") && read) {
             //grammar=new OrderedHashtable();
             //System.out.println("Hello World: This is Name testing!");
-            for (Enumeration e = table.keys(); e.hasMoreElements();) {
+            for (Enumeration e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
                 String type = (String) e.nextElement();
                 grammar.put(type, table.get(type));
             }

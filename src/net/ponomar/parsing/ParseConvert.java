@@ -2,7 +2,7 @@ package net.ponomar.parsing;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.util.Hashtable;
+import java.util.HashMap;
 /***********************************************************************
 *******************************************************/
 
@@ -28,8 +28,8 @@ public class ParseConvert implements DocHandler
 			prepareFiles(LOCATION+files[i]+".html");
 			parse(LOCATION+files[i]+".html",LOCATION_OUT+files[i]+".text");
 		}
-		return;
 	}
+	
 	public void prepareFiles(String fileNameIn)
 	{
 		String q="";
@@ -149,7 +149,7 @@ public class ParseConvert implements DocHandler
 
 	}
 
-	public void startElement(String elem, Hashtable table)
+	public void startElement(String elem, HashMap<String, String> table)
 	{
 		
 		// THE TAG COULD CONTAIN A COMMAND Cmd
@@ -162,7 +162,7 @@ public class ParseConvert implements DocHandler
 			if(table.get("NAME") != null)
 			{
 				read=true;
-				b=table.get("NAME").toString().split(":");
+				b=table.get("NAME").split(":");
 				if(b[0].equals("1") && (Integer.parseInt(b[0]) != chapter) )
 				{
 					//THE FIRST CHAPTER IS BEING READ

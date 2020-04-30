@@ -196,9 +196,7 @@ public class QDParser {
 					tagName = sb.toString();
 				if (c != '>')
 					exc("Expected > for tag: <" + tagName + "/>", line, col);
-				Hashtable temp = new Hashtable();
-				temp.putAll(attrs);
-				doc.startElement(tagName, temp);
+				doc.startElement(tagName, attrs);
 				doc.endElement(tagName);
 				if (depth == 0) {
 					doc.endDocument();
@@ -218,9 +216,7 @@ public class QDParser {
 						tagName = sb.toString();
 					sb.setLength(0);
 					depth++;
-					Hashtable temp = new Hashtable();
-					temp.putAll(attrs);
-					doc.startElement(tagName, temp);
+					doc.startElement(tagName, attrs);
 					tagName = null;
 					attrs = new HashMap<>();
 					mode = popMode(st);
@@ -298,9 +294,7 @@ public class QDParser {
 			} else if (mode == IN_TAG) {
 				if (c == '>') {
 					mode = popMode(st);
-					Hashtable temp = new Hashtable();
-					temp.putAll(attrs);
-					doc.startElement(tagName, temp);
+					doc.startElement(tagName, attrs);
 					depth++;
 					tagName = null;
 					attrs = new HashMap<>();

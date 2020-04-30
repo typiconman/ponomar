@@ -287,7 +287,7 @@ public class ThirdHour extends LitService
 	     return strOut;	     	     
 	}
 	
-	public void startElement(String elem, Hashtable table)
+	public void startElement(String elem, HashMap<String, String> table)
 	{
 		
 		// THE TAG COULD CONTAIN A COMMAND Cmd
@@ -297,7 +297,7 @@ public class ThirdHour extends LitService
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd")) == false)
 			{
 				
 				return;
@@ -309,43 +309,43 @@ public class ThirdHour extends LitService
 		//}
 		if(elem.equals("TEXT") && read)
 		{
-			text+=(String)table.get(Constants.VALUE);
+			text+=table.get(Constants.VALUE);
 			
 		}
 		if (elem.equals("TERCE") && read)
 		{
 			//WE ARE DEALING WITH THE INFORMATION FOR TERCE (THERE COULD BE INFORMATION FOR OTHER SERVICES)
 			//THE VARIABLE COMPONETS IN THIS SERVICE ARE GIVEN BELOW
-			String value=(String)table.get("Type");
+			String value=table.get("Type");
 			if(value != null)
 			{
-				type=(String)table.get("Type");
+				type=table.get("Type");
 			}
-			value=(String)table.get(Constants.TROPARION_1);
+			value=table.get(Constants.TROPARION_1);
 			if(value != null)
 			{
-				troparion1=(String)table.get(Constants.TROPARION_1);
+				troparion1=table.get(Constants.TROPARION_1);
 			}
-			value=(String)table.get(Constants.KONTAKION_1);
+			value=table.get(Constants.KONTAKION_1);
 			if(value != null)
 			{
-				kontakion1=(String)table.get(Constants.KONTAKION_1);
+				kontakion1=table.get(Constants.KONTAKION_1);
 			}
-			value=(String)table.get(Constants.KONTAKION_2);
+			value=table.get(Constants.KONTAKION_2);
 			if(value != null)
 			{
-				kontakion1=(String)table.get(Constants.KONTAKION_2);
+				kontakion1=table.get(Constants.KONTAKION_2);
 			}
-			value=(String)table.get(Constants.TROPARION_2);
+			value=table.get(Constants.TROPARION_2);
 			if(value != null)
 			{
-				troparion1=(String)table.get(Constants.TROPARION_2);
+				troparion1=table.get(Constants.TROPARION_2);
 			}
 				
-			value=(String)table.get(LENTENK);
+			value=table.get(LENTENK);
 			if(value != null)
 			{
-				lentenKat=(String)table.get(LENTENK);
+				lentenKat=table.get(LENTENK);
 				//System.out.println(LentenK);
 			}
 			

@@ -12,7 +12,8 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Hashtable;
+import java.util.HashMap;
+
 import java.util.LinkedHashMap;
 /***********************************************************************
 THIS MODULE READS THE FASTING.XML FILE TO DETERMINE THE FAST ON A GIVEN DAY
@@ -259,7 +260,7 @@ public class Fasting implements DocHandler
 
 	}
 
-	public void startElement(String elem, Hashtable table)
+	public void startElement(String elem, HashMap<String, String> table)
 	{
 		
 		// THE TAG COULD CONTAIN A COMMAND Cmd
@@ -269,7 +270,7 @@ public class Fasting implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd")) == false)
 			{
 				return;
 			}
@@ -285,7 +286,7 @@ public class Fasting implements DocHandler
 		if(elem.equals("RULE") && readPeriod && readLanguage)
 		{
 			//A POTENTIAL FASTING RULE HAS BEEN ENCOUNTERED THAT APPLIES FOR TODAY.
-			fast=table.get("Case").toString();
+			fast=table.get("Case");
 		}
 		//THE FOLLOWING SECTION SHOULD BE REMOVED ONCE THERE IS A PROPER RANKING OF DAYS
 		/*if (elem.equals("COMMAND"))

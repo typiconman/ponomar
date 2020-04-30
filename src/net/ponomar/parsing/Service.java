@@ -141,7 +141,7 @@ public class Service implements DocHandler
 
 	}
 
-	public void startElement(String elem, Hashtable table)
+	public void startElement(String elem, HashMap<String, String> table)
 	{
 		
 		// THE TAG COULD CONTAIN A COMMAND Cmd
@@ -151,7 +151,7 @@ public class Service implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (analyse.evalbool(table.get("Cmd").toString()) == false)
+			if (analyse.evalbool(table.get("Cmd")) == false)
 			{
 				return;
 			}
@@ -164,14 +164,14 @@ public class Service implements DocHandler
 		{
 			//WE NEED TO GET ANOTHER SERVICE OR PART THEREOF.
 			read=false;
-			String getFile=table.get("File").toString();
+			String getFile=table.get("File");
 			count++;
 			oldText[count]=service1;
 			readService(Constants.SERVICES_PATH+getFile+".xml");
 			int nullCheck=0;
 			if(table.get("Null")!=null)
 			{
-				nullCheck=Integer.parseInt(table.get("Null").toString());
+				nullCheck=Integer.parseInt(table.get("Null"));
 			}
 			
 			if(nullCheck == 0 || (nullCheck == 1 && service1 != null))
@@ -190,12 +190,12 @@ public class Service implements DocHandler
 		{
 			//WE ARE DEALING WITH THE TITLE OF THE SERVICE. IT CAN HAVE 3 PARTS: THE TITLE ITSELF, THE SOURCE FOR 
 			//SERVICE, AND SOME ADDITIONAL COMMENTS.
-			String title=table.get("Header").toString();
+			String title=table.get("Header");
 			ReadText textGet1=new ReadText((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
                         whoLast="";
 			String text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+title+".xml");
-                        String ponomar=text.getPhrases().get("0").toString();
-                        String colon=text.getPhrases().get(Constants.COLON).toString();
+                        String ponomar=text.getPhrases().get("0");
+                        String colon=text.getPhrases().get(Constants.COLON);
 			if(text4 != null)
 			{
 				header1=header1+"<title>"+ponomar+colon+text4+"</title>";
@@ -205,7 +205,7 @@ public class Service implements DocHandler
 			{
 				header1=header1+serviceNames[0];
 			}
-			title=table.get(Constants.VALUE).toString();
+			title=table.get(Constants.VALUE);
 			text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+title+".xml");
 			if(text4 != null)
 			{
@@ -218,14 +218,14 @@ public class Service implements DocHandler
 						
 			if(table.get("Source") != null)
 			{
-				String source=table.get("Source").toString();
+				String source=table.get("Source");
 				text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+source+".xml");
 				service1+="<Font color=\"red\"><I><small>"+text4+"</small></I><BR>";
 			}
 			
 			if(table.get("Comment") != null)
 			{
-				String comment=table.get("Comment").toString();
+				String comment=table.get("Comment");
 				text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+comment+".xml");
 				if(text4 != null)
 				{
@@ -242,7 +242,7 @@ public class Service implements DocHandler
 			ReadText textGet1=new ReadText((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
                         whoLast="";
 
-			String subtitle=table.get(Constants.VALUE).toString();
+			String subtitle=table.get(Constants.VALUE);
 			String text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+subtitle+".xml");
 			if(text4 != null)
 			{
@@ -255,7 +255,7 @@ public class Service implements DocHandler
 
 			if(table.get("Comment") != null)
 			{
-				String comment=table.get("Comment").toString();
+				String comment=table.get("Comment");
 				text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+comment+".xml");
 				if(text4 != null)
 				{
@@ -268,11 +268,11 @@ public class Service implements DocHandler
 		{
 			//HERE IS IT IS ASSUMED THAT THE TEXT AND THE HEADER HAVE BEEN CREATED PROGRAMMATICALLY AND HAVE BEEN ASSIGNED FIXED VALUES
 			//APPROPRIATE TO THE GIVEN LANGUAGE. THUS, BOTH what AND HeaderText ARE ASSUMED TO CONTAIN TEXT
-			what=table.get("What").toString();
+			what=table.get("What");
 			String headerText="";
 			if(table.get("Header") != null)
 			{
-				headerText=table.get("Header").toString();
+				headerText=table.get("Header");
 				header=1;				
 			}
 			readIncidentals(table);
@@ -286,7 +286,7 @@ public class Service implements DocHandler
 				//ALLOWING THE BIBLE TO BE READ Y.S. 2008/12/11 n.s.
 				//THE FORMAT FOR A BIBLE STATEMENT IS Bible="Book_Chapter:VerseStart-VerseEnd" or ="Book_Chapter:Verse,Chapter:Verse" or ="Book_Chapter"
 				//THE BOOK COULD BE OF THE FORM II_NAME_Chapter:VerseStart-VerseEnd,Verse,Verse,Chapter:Verse
-				String reading1=table.get("Verses").toString();
+				String reading1=table.get("Verses");
 				int k=reading1.lastIndexOf('_');
 				Bible reader=new Bible(analyse.getDayInfo());
 				parsedBible=reader.getText(reading1.substring(0,k),reading1.substring(k+1),false);
@@ -296,13 +296,13 @@ public class Service implements DocHandler
 			{
 				//THIS ALLOWS THE READING HEADER FOR THE GIVEN SELECTION TO BE OBTAINED, THAT IS, "A reading from the Book of...."
 				Bible reader=new Bible(analyse.getDayInfo());
-				what2=reader.getIntro(table.get("getReading").toString());
+				what2=reader.getIntro(table.get("getReading"));
 			}
 			int stars2=-1;	 		//THIS VARIABLE CONSIDERS WHAT TO DO WITH ANY POSSIBLE 2 STARS IN THE TEXT "**"
 			int starsBible=parsedBible[1].indexOf("**");	//IF THERE ARE NO ** TO BE FOUND IN THE TEXT THEN THERE IS NO NEED TO CONTINUE!
 			if((table.get("2Stars") != null) && starsBible != -1)
 			{
-				stars2=Integer.parseInt(table.get("2Stars").toString());
+				stars2=Integer.parseInt(table.get("2Stars"));
 				if(stars2==1)
 				{
 					//USE THE 2 STARS DATA AS AN ADDITIONAL HEADER
@@ -344,9 +344,9 @@ public class Service implements DocHandler
 			
 			if(table.get("Header") != null)
 			{
-				if(table.get("Header").toString().equals("1"))
+				if(table.get("Header").equals("1"))
 				{
-					header= Integer.parseInt(table.get("Header").toString());								
+					header= Integer.parseInt(table.get("Header"));								
 				}
 				else
 				{
@@ -365,15 +365,15 @@ public class Service implements DocHandler
                     String type = "M";
                            //System.out.println(table.get("Type"));
                     if (table.get("Type")!= null){
-                        type=table.get("Type").toString();
+                        type=table.get("Type");
                     }
-                    String lifeId=table.get("Id").toString();
+                    String lifeId=table.get("Id");
                     if (type.equals("T"))
                     {
                         lifeId="98"+lifeId;
                     }
                     Commemoration data=new Commemoration("0",lifeId,analyse.getDayInfo());
-                    String info = table.get("What").toString();
+                    String info = table.get("What");
                     int parsedInfo1=info.lastIndexOf('/');
                    //System.out.println(parsedInfo[0]);
                     //The last 2 such elements are important as they contain the general location of what is desired!!!
@@ -388,7 +388,7 @@ public class Service implements DocHandler
                         headerRH=royalHours.get("Header").toString();
                     }
                     if(table.get("Header")!=null){
-                        header=Integer.parseInt(table.get("Header").toString());
+                        header=Integer.parseInt(table.get("Header"));
                     }
                     else{
                         header=0;
@@ -411,7 +411,7 @@ public class Service implements DocHandler
 			String what2="";
 			if(table.get("What") != null)
 			{
-				what=table.get("What").toString();
+				what=table.get("What");
 			}
 			else
 			{
@@ -420,9 +420,9 @@ public class Service implements DocHandler
 			//String text2="";
 			if(table.get("Header") != null)
 			{
-				if(table.get("Header").toString().equals("1"))
+				if(table.get("Header").equals("1"))
 				{
-					header= Integer.parseInt(table.get("Header").toString());
+					header= Integer.parseInt(table.get("Header"));
 										
 				}
 				else
@@ -452,7 +452,7 @@ public class Service implements DocHandler
 		}
 		if (elem.equals("TIMES") && read)
 		{
-			textTimes=table.get(Constants.VALUE).toString();
+			textTimes=table.get(Constants.VALUE);
 		}
 		
 
@@ -470,14 +470,14 @@ public class Service implements DocHandler
 	{
 
 	}
-	private void readIncidentals(Hashtable table)
+	private void readIncidentals(HashMap<String, String> table)
 	{
 			//THIS READS THE COMMON LABELS FOR CREATE, BIBLE, AND TEXT TAGS.
 			
-                        who = table.get("Who").toString();
+                        who = table.get("Who");
 			if(table.get("CommandB") != null)
 			{
-				commandB= table.get("CommandB").toString();	
+				commandB= table.get("CommandB");	
 			}
 			else
 			{
@@ -485,7 +485,7 @@ public class Service implements DocHandler
 			}
 			if(table.get("Command") != null)
 			{
-				command= table.get("Command").toString();	
+				command= table.get("Command");	
 			}
 			else
 			{
@@ -493,7 +493,7 @@ public class Service implements DocHandler
 			}
 				if( table.get("RedFirst") != null)
 			{
-				redFirst = table.get("RedFirst").toString();				
+				redFirst = table.get("RedFirst");				
 			}
 			else
 			{
@@ -501,7 +501,7 @@ public class Service implements DocHandler
 			}
 			if( table.get("NewLine") != null)
 			{
-				newLine =  table.get("NewLine").toString();
+				newLine =  table.get("NewLine");
 			}
 			else
 			{
@@ -509,7 +509,7 @@ public class Service implements DocHandler
 			}
 			if(table.get("Times") != null)
 			{
-				times= table.get("Times").toString();	
+				times= table.get("Times");	
 			}
 			else
 			{

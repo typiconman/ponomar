@@ -1,7 +1,8 @@
 package net.ponomar.readings;
 
 import java.util.Enumeration;
-import java.util.Hashtable;
+import java.util.HashMap;
+
 import java.util.LinkedHashMap;
 import java.util.Vector;
 
@@ -143,7 +144,7 @@ public abstract class Reading implements DocHandler {
 
 
         //output += RSep;
-        LinkedHashMap<String, Vector<String>> final2 = new LinkedHashMap<String, Vector<String>>();
+        LinkedHashMap<String, Vector<String>> final2 = new LinkedHashMap<>();
         final2.put(Constants.READINGS, type);
         final2.put("Rank", rank);
         final2.put("Tag", tag);
@@ -151,7 +152,7 @@ public abstract class Reading implements DocHandler {
         return final2;
     }
     
-    public void startElement(String elem, Hashtable table) {
+    public void startElement(String elem, HashMap<String, String> table) {
         // THE TAG COULD CONTAIN A COMMAND Cmd
         // THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
         // TODAY'S INFORMATION IN dayInfo.
@@ -165,15 +166,15 @@ public abstract class Reading implements DocHandler {
 
         if (elem.equals(Constants.COMMAND)) {
             //THIS WILL STORE ALL THE POSSIBLE COMMANDS FOR A GIVEN SITUATION AND ALLOW THE RESULTS TO BE DETEMINED.
-            String name = (String) table.get("Name");
-            String value = (String) table.get(Constants.VALUE);
+            String name = table.get("Name");
+            String value = table.get(Constants.VALUE);
             //IF THE GIVEN name OCCURS IN THE information HASHTABLE THAN AUGMENT ITS VALUES.
             if (information.containsKey(name)) {
                 Vector<String> previous = information.get(name);
                 previous.add(value);
                 information.put(name, previous);
             } else {
-                Vector<String> vect = new Vector<String>();
+                Vector<String> vect = new Vector<>();
                 vect.add(value);
                 information.put(name, vect);
             }

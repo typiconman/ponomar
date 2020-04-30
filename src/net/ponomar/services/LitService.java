@@ -14,7 +14,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Hashtable;
+import java.util.HashMap;
+
 import java.util.LinkedHashMap;
 
 import javax.swing.JFrame;
@@ -182,7 +183,7 @@ public abstract class LitService implements DocHandler, ActionListener, ItemList
 
     protected abstract String createHours() throws IOException;
     
-    public abstract void startElement(String elem, Hashtable table);
+    public abstract void startElement(String elem, HashMap<String, String> table);
     
 	public void endElement(String elem)
 	{

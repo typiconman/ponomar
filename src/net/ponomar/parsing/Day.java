@@ -13,7 +13,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Hashtable;
+import java.util.HashMap;
+
 import java.util.LinkedHashMap;
 import java.util.Vector;
 
@@ -135,7 +136,7 @@ public class Day implements DocHandler {
     public void endDocument() {
     }
 
-    public void startElement(String elem, Hashtable table) {
+    public void startElement(String elem, HashMap<String, String> table) {
 
         // THE TAG COULD CONTAIN A COMMAND Cmd
         // THE COMMAND TELLS US WHETHER OR NOT TO PROCESS THIS TAG GIVEN
@@ -144,7 +145,7 @@ public class Day implements DocHandler {
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (parameterValues.evalbool(table.get("Cmd").toString()) == false) {
+            if (parameterValues.evalbool(table.get("Cmd")) == false) {
 
                 return;
             }
@@ -159,13 +160,13 @@ public class Day implements DocHandler {
             //System.out.println(table);
              String sId="1";
             if (table.get("SId")!=null){
-                sId = table.get("SId").toString();
+                sId = table.get("SId");
             }
              
 
-            String cId = table.get("CId").toString();
+            String cId = table.get("CId");
             if (table.get("Tone")!=null){
-               tone=(int) Math.floor(parameterValues.eval(table.get("Tone").toString()));
+               tone=(int) Math.floor(parameterValues.eval(table.get("Tone")));
             }
             Commemoration dayA = new Commemoration(sId, cId,parameterValues.getDayInfo());
 

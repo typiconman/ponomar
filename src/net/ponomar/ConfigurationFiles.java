@@ -10,7 +10,8 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.Enumeration;
-import java.util.Hashtable;
+import java.util.HashMap;
+
 import java.util.LinkedHashMap;
 
 /***************************************************************
@@ -105,12 +106,12 @@ public class ConfigurationFiles implements DocHandler
 
 	public void endDocument() { }
 
-	public void startElement(String elem, Hashtable table)
+	public void startElement(String elem, HashMap<String, String> table)
 	{
 		
 		if (elem.equals("DEFAULT"))
 		{
-			for(Enumeration e=table.keys(); e.hasMoreElements();)
+			for(Enumeration e=Collections.enumeration(table.keySet()); e.hasMoreElements();)
 			{
 				
 				String entry=(String) e.nextElement();

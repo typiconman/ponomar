@@ -1,8 +1,9 @@
 package net.ponomar.parsing;
 
-import java.util.Hashtable;
-import java.util.Enumeration;
 
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.HashMap;
 import java.io.FileReader;
 
 /** 
@@ -23,12 +24,12 @@ public class Reporter implements DocHandler {
   public void endDocument() {
     System.out.println("  end document");
   }
-  public void startElement(String elem,Hashtable h) {
+  public void startElement(String elem,HashMap<String, String> h) {
     System.out.println("    start elem: "+elem);
-    Enumeration e = h.keys();
+    Enumeration<String> e = Collections.enumeration(h.keySet());
     while(e.hasMoreElements()) {
-      String key = (String)e.nextElement();
-      String val = (String)h.get(key);
+      String key = e.nextElement();
+      String val = h.get(key);
       System.out.println("      "+key+" = "+val);
     }
   }

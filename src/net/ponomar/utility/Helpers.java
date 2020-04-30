@@ -202,45 +202,30 @@ public class Helpers
 
             return addon+currentPath+basePath;
         }
-        public String getCopyright(){
 
-            LanguagePack text=new LanguagePack(analyse.getDayInfo());
-		//String [] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
-		String[] authors=text.obtainValues(text.getPhrases().get("Authors"));
-                String year=text.getPhrases().get("Year").toString();
-                String comma=text.getPhrases().get("Comma").toString();
-                String and=text.getPhrases().get("And").toString();
-                StringBuilder authorList= new StringBuilder(authors[0]);
-                if (authors.length>2)
-                {
-                for(int i=1;i < authors.length-1;i++)
-                {
-                    authorList.append(authors[i]).append(comma);
-                }
-                }
-                if (authors.length>1)
-                {
-                    authorList.append(and).append(authors[authors.length - 1]);
-                }
+	public String getCopyright() {
 
-               String copyright=text.getPhrases().get(Constants.COPYRIGHT).toString();
-               copyright=copyright.replace("^YY",year);
-               copyright=copyright.replace("^AA", authorList.toString());
-               return copyright;
-        }
-        public Hashtable<String, String> deepCopy(Hashtable original){
-            //Currently does not work.
-            Hashtable<String, String> copy = new Hashtable<>();
-            for (Enumeration e = original.keys(); e.hasMoreElements(); )
-		{
-			String type = e.nextElement().toString();
-                        String vect = original.get(type).toString();
-
-			copy.put(type,original.get(type).toString());
+		LanguagePack text = new LanguagePack(analyse.getDayInfo());
+		// String [] AboutNames=Text.obtainValues((String)Text.Phrases.get("About"));
+		String[] authors = text.obtainValues(text.getPhrases().get("Authors"));
+		String year = text.getPhrases().get("Year");
+		String comma = text.getPhrases().get("Comma");
+		String and = text.getPhrases().get("And");
+		StringBuilder authorList = new StringBuilder(authors[0]);
+		if (authors.length > 2) {
+			for (int i = 1; i < authors.length - 1; i++) {
+				authorList.append(authors[i]).append(comma);
+			}
 		}
-            return copy;
-        }
-	
+		if (authors.length > 1) {
+			authorList.append(and).append(authors[authors.length - 1]);
+		}
+
+		String copyright = text.getPhrases().get(Constants.COPYRIGHT);
+		copyright = copyright.replace("^YY", year);
+		copyright = copyright.replace("^AA", authorList.toString());
+		return copyright;
+	}
 }
 
 class JavaFileFilter extends FileFilter
