@@ -23,8 +23,8 @@ import java.util.*;
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  **********************************************************/
 public class QDParser {
-	private static int popMode(Stack<Integer> st) {
-		if (!st.empty())
+	private static int popMode(Deque<Integer> st) {
+		if (!st.isEmpty())
 			return st.pop();
 		else
 			return PRE;
@@ -35,7 +35,7 @@ public class QDParser {
 			DOCTYPE = 14, PRE = 15, CDATA = 16;
 
 	public static void parse(DocHandler doc, Reader r) throws Exception {
-		Stack<Integer> st = new Stack<>();
+		Deque<Integer> st;
 		int depth = 0;
 		int mode = PRE;
 		int c = 0;
@@ -47,7 +47,7 @@ public class QDParser {
 		String lvalue = null;
 		String rvalue = null;
 		HashMap<String, String> attrs = null;
-		st = new Stack<>();
+		st = new LinkedList<>();
 		doc.startDocument();
 		int line = 1, col = 0;
 		boolean eol = false;
@@ -79,14 +79,14 @@ public class QDParser {
 				// We are between tags collecting text.
 			} else if (mode == TEXT) {
 				if (c == '<') {
-					st.push(new Integer(mode));
+					st.push(mode);
 					mode = START_TAG;
 					if (sb.length() > 0) {
 						doc.text(sb.toString());
 						sb.setLength(0);
 					}
 				} else if (c == '&') {
-					st.push(new Integer(mode));
+					st.push(mode);
 					mode = ENTITY;
 					etag.setLength(0);
 				} else {
@@ -129,7 +129,7 @@ public class QDParser {
 			} else if (mode == PRE) {
 				if (c == '<') {
 					mode = TEXT;
-					st.push(new Integer(mode));
+					st.push(mode);
 					mode = START_TAG;
 				}
 
@@ -148,12 +148,12 @@ public class QDParser {
 			} else if (mode == START_TAG) {
 				mode = popMode(st);
 				if (c == '/') {
-					st.push(new Integer(mode));
+					st.push(mode);
 					mode = CLOSE_TAG;
 				} else if (c == '?') {
 					mode = DOCTYPE;
 				} else {
-					st.push(new Integer(mode));
+					st.push(mode);
 					mode = OPEN_TAG;
 					tagName = null;
 					attrs = new HashMap<>();
@@ -252,7 +252,7 @@ public class QDParser {
 					sb.append(' ');
 					// TEMPORARILY REMOVED FOR DEBUG PURPOSES
 				} else if (c == '&') {
-					st.push(new Integer(mode));
+					st.push(mode);
 					mode = ENTITY;
 					etag.setLength(0);
 				} else {
