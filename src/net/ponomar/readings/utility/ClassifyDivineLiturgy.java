@@ -9,6 +9,7 @@ import java.util.Collections;
 import net.ponomar.parsing.utility.DocHandler;
 import net.ponomar.parsing.utility.QDParser;
 import net.ponomar.readings.DivineLiturgy;
+import net.ponomar.readings.Reading;
 import net.ponomar.utility.Constants;
 import net.ponomar.utility.Helpers;
 
@@ -33,10 +34,10 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
         {
             //Initialise Information.
             information2=new LinkedHashMap<>();
-            DivineLiturgy.setFindLanguage(new Helpers(parameterValues.getDayInfo()));
+            Reading.setFindLanguage(new Helpers(parameterValues.getDayInfo()));
             //System.out.println(findLanguage.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
             try {
-                FileReader frf = new FileReader(DivineLiturgy.getFindLanguage().langFileFind(parameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
+                FileReader frf = new FileReader(Reading.getFindLanguage().langFileFind(parameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
                 //System.out.println(findLanguage.langFileFind(ParameterValues.getDayInfo().get("LS").toString(), Constants.DIVINE_LITURGY));
                 //DivineLiturgy a1 = new classifyReadin();
                 QDParser.parse(this, frf);
@@ -48,9 +49,9 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
             ArrayList paschalR = readingsIn.get("Rank");
             ArrayList<String> paschalT = readingsIn.get("Tag");
 
-            dailyV = new ArrayList();
+            dailyV = new ArrayList<String>();
             dailyR = new ArrayList();
-            dailyT = new ArrayList();
+            dailyT = new ArrayList<String>();
 
             
             if (paschalV == null){
@@ -73,20 +74,20 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
 
             }           
             
-            Suppress();
+            suppress();
             //LeapReadings();            
 
 
         }
 
-        private void Suppress() {
+        private void suppress() {
             //THIS FUNCTION CONSIDERS WHAT HOLIDAYS ARE CURRENTLY OCCURING AND RETURNS THE READINGS FOR THE DAY, WHERE SUPPRESSED CONTAINS THE READINGS THAT WERE SUPPRESSED.
             int doy = Integer.parseInt(parameterValues.getDayInfo().get("doy").toString());
             int dow = Integer.parseInt(parameterValues.getDayInfo().get("dow").toString());
             int nday = Integer.parseInt(parameterValues.getDayInfo().get("nday").toString());
             int ndayF = Integer.parseInt(parameterValues.getDayInfo().get(Constants.NDAY_F).toString());
             int ndayP = Integer.parseInt(parameterValues.getDayInfo().get(Constants.NDAY_P).toString());
-            LeapReadings();		//THIS ALLOWS APPROPRIATE SKIPPING OF READINGS OVER THE NATIVITY SEASON!
+            leapReadings();		//THIS ALLOWS APPROPRIATE SKIPPING OF READINGS OVER THE NATIVITY SEASON!
 
             /******************************************************
             FOR ALL HOLIDAYS OF THE FIRST CLASS, THAT IS, OF THE LORD, THEN ONLY THE MENALOGION
@@ -140,11 +141,11 @@ public class ClassifyDivineLiturgy extends ClassifyReadings implements DocHandle
 
 
             if (dow != 0) {*/
-                ArrayList<String> list = (ArrayList<String>) information2.get("Class3Transfers");
+                ArrayList<String> list = information2.get("Class3Transfers");
                 if (list != null) {
                     for (Enumeration<String> e2 = Collections.enumeration(list); e2.hasMoreElements();) {
-                        String Command = e2.nextElement();
-                        if (parameterValues.evalbool(Command)) {
+                        String command = e2.nextElement();
+                        if (parameterValues.evalbool(command)) {
                             //THE CURRENT COMMAND WAS TRUE AND THE SEQUENTITIAL READING IS TO BE SUPPRESSED/TRANSFERRED
                             for (int k = 0; k < dailyV.size(); k++) {
                                 suppressedV.add(dailyV.get(k));

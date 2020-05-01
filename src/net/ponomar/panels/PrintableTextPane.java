@@ -1,9 +1,12 @@
 package net.ponomar.panels;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.print.PageFormat;
 import java.awt.print.Printable;
+
+import javax.swing.JTextPane;
 
 /****************************************************************************************
 PrintableTextPane.java : AN IMPLEMENTATION OF JTextPane TO INCLUDE PRINTING HTML

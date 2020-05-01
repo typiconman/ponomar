@@ -4,6 +4,7 @@ import java.util.Enumeration;
 import java.util.HashMap;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -19,15 +20,15 @@ public class ClassifyReadings implements DocHandler {
 	 * 
 	 */
 	protected LinkedHashMap<String, ArrayList<String>> information2;
-	public ArrayList dailyV = new ArrayList();
-	public ArrayList dailyR = new ArrayList();
-	public ArrayList dailyT = new ArrayList();
-	public ArrayList menaionV = new ArrayList();
-	public ArrayList menaionR = new ArrayList();
-	public ArrayList menaionT = new ArrayList();
-	public ArrayList suppressedV = new ArrayList();
-	public ArrayList suppressedR = new ArrayList();
-	public ArrayList suppressedT = new ArrayList();
+	public List dailyV = new ArrayList();
+	public List dailyR = new ArrayList();
+	public List dailyT = new ArrayList();
+	public List menaionV = new ArrayList();
+	public List menaionR = new ArrayList();
+	public List menaionT = new ArrayList();
+	public List suppressedV = new ArrayList();
+	public List suppressedR = new ArrayList();
+	public List suppressedT = new ArrayList();
 	protected StringOp parameterValues = new StringOp();
 
 	public ClassifyReadings() {
@@ -47,7 +48,7 @@ public class ClassifyReadings implements DocHandler {
 	    if (table.get("Cmd") != null) {
 	        // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 	
-	        if (parameterValues.evalbool(table.get("Cmd")) == false) {
+	        if (!parameterValues.evalbool(table.get("Cmd"))) {
 	            return;
 	        }
 	    }
@@ -72,7 +73,7 @@ public class ClassifyReadings implements DocHandler {
 	    //ALL WE CARE ABOUT ARE THE SCRIPTURE READINGS
 	}
 
-	protected void LeapReadings() {
+	protected void leapReadings() {
 	    //SKIPS THE READINGS IF THERE ARE ANY BREAKS!
 	    int doy = Integer.parseInt(parameterValues.getDayInfo().get("doy").toString());
 	    int dow = Integer.parseInt(parameterValues.getDayInfo().get("dow").toString());

@@ -77,8 +77,8 @@ public class MenuFiles extends JMenu implements ItemListener, PropertyChangeList
 		languageSelection.addPropertyChangeListener(pl);
 		optionsMenu.add(languageSelectionMenu);
 
-		optionsMenu.add(generateMenuItem(text.getPhrases().get("OptionMenu").toString(),
-				text.getPhrases().get("OptionMenu").toString(), KeyEvent.VK_D, KeyEvent.VK_D, al, true));
+		optionsMenu.add(generateMenuItem(text.getPhrases().get("OptionMenu"),
+				text.getPhrases().get("OptionMenu"), KeyEvent.VK_D, KeyEvent.VK_D, al, true));
 
 		return optionsMenu;
 	}

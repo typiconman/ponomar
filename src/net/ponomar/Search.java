@@ -45,8 +45,8 @@ public class Search extends JFrame implements ActionListener
 	//THE DATE OR THE RELEVANT INFORMATION WILL HAVE TO BE GIVEN
 	//TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
 	//DURING THE COURSE OF A SINGLE WEEK.
-	public String UsualBeginning1;
-        private StringOp Analyse=new StringOp();
+	public String usualBeginning1;
+        private StringOp analyse=new StringOp();
         private JTextField searchTerm = new JTextField("");
         private JButton okay;
         private JTextPane results;
@@ -54,7 +54,7 @@ public class Search extends JFrame implements ActionListener
 	public Search(LinkedHashMap<String, Object> dayInfo)
 	{
 		//Assuming at present only English exists:
-            Analyse.setDayInfo(dayInfo);
+            analyse.setDayInfo(dayInfo);
 /*        Text = new LanguagePack(dayInfo);
         captions = Text.obtainValues((String) Text.Phrases.get("BibleW"));*/
         setTitle("Search Commemorations");
@@ -117,7 +117,7 @@ public class Search extends JFrame implements ActionListener
 	}
 	public String getUsualBeginning()
 	{
-		return UsualBeginning1;
+		return usualBeginning1;
 	}
 
          public void actionPerformed(ActionEvent e)
@@ -143,8 +143,8 @@ public class Search extends JFrame implements ActionListener
                 if (file.isFile()) {
                     if (file.getName().endsWith("xml")){
                         System.out.println(file.getName());
-                        test =new Commemoration(file.getName().substring(0, file.getName().length()-4),file.getName().substring(0, file.getName().length()-4),Analyse.getDayInfo());
-                        String nameF=test.getGrammar(Constants.NOMINATIVE).toString();
+                        test =new Commemoration(file.getName().substring(0, file.getName().length()-4),file.getName().substring(0, file.getName().length()-4),analyse.getDayInfo());
+                        String nameF=test.getGrammar(Constants.NOMINATIVE);
                         if (nameF.contains(search)){
                             found.append(file.getName().subSequence(0, file.getName().length() - 4)).append("\t").append(nameF).append("\t");
                             count+=1;

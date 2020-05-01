@@ -69,7 +69,7 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
             selectorNames=text.obtainValues(text.getPhrases().get("GospelSelection"));
                 Font currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
             //DETERMINE THE DEFAULTS
-		String gospelDefault = (String) ConfigurationFiles.getDefaults().get(GOSPEL_SELECTOR);
+		String gospelDefault = ConfigurationFiles.getDefaults().get(GOSPEL_SELECTOR);
 		//Create the radio buttons.
 		jordanvilleButton = new JRadioButton(selectorNames[0]);
 	        jordanvilleButton.setMnemonic(KeyEvent.VK_T);
@@ -137,7 +137,7 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
 		submenu.getAccessibleContext().setAccessibleDescription(selectorNames[3]);
 		//submenu.setFont(CurrentFont);
 		//DETERMINE THE DEFAULTS
-		String gospelDefault = (String) ConfigurationFiles.getDefaults().get(GOSPEL_SELECTOR);
+		String gospelDefault = ConfigurationFiles.getDefaults().get(GOSPEL_SELECTOR);
 		
 		ButtonGroup group = new ButtonGroup();
 		rbMenu1Item=new JRadioButtonMenuItem(selectorNames[0]);
@@ -185,7 +185,7 @@ public class GospelSelector extends JPanel implements ActionListener, PropertyCh
 			firePropertyChange("Gospel Lectionary", readingLocation, lastLocation);
 			lastLocation=readingLocation;
 			ConfigurationFiles.getDefaults().put(GOSPEL_SELECTOR,lastLocation);
-			ConfigurationFiles.WriteFile();
+			ConfigurationFiles.writeFile();
 													
 		}
 		

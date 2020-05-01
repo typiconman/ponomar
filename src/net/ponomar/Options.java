@@ -66,7 +66,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
             analyse.setDayInfo(dayInfo);
             text=new LanguagePack(dayInfo);
             ConfigurationFiles.setDefaults(new LinkedHashMap<>());
-            ConfigurationFiles.ReadFile();
+            ConfigurationFiles.readFile();
             
             optionsStrings=text.obtainValues(text.getPhrases().get("Options2"));
             currentFont=new Font((String)analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.PLAIN,Integer.parseInt((String)analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
@@ -99,7 +99,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 top.add(latitude2);
                 latitude=new JTextField();
                 latitude.setEditable(true);
-                latitude.setText(ConfigurationFiles.getDefaults().get("Latitude").toString());
+                latitude.setText(ConfigurationFiles.getDefaults().get("Latitude"));
                 latitude.setHorizontalAlignment(SwingConstants.RIGHT);
                 latitude.setFont(currentFont);
                 top.add(latitude);
@@ -114,7 +114,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 top.add(longitude2);
                 longitude=new JTextField();
                 longitude.setEditable(true);
-                longitude.setText(ConfigurationFiles.getDefaults().get("Longitude").toString());
+                longitude.setText(ConfigurationFiles.getDefaults().get("Longitude"));
                 longitude.setHorizontalAlignment(SwingConstants.RIGHT);
                 longitude.setFont(currentFont);
                 top.add(longitude);
@@ -139,7 +139,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
         for (String s : timeZone) {
             timeZoneBox.addItem(s);
         }
-                timeZoneBox.setSelectedItem(ConfigurationFiles.getDefaults().get("TimeZone").toString());
+                timeZoneBox.setSelectedItem(ConfigurationFiles.getDefaults().get("TimeZone"));
                 timeZoneBox.setEditable(false);
                 top.add(timeZoneBox,BorderLayout.CENTER);
 
@@ -169,7 +169,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 name.setPreferredSize(new Dimension(50,50));
                 centre.add(name);
 
-                String defaultCalendar = ConfigurationFiles.getDefaults().get(CALENDAR).toString();
+                String defaultCalendar = ConfigurationFiles.getDefaults().get(CALENDAR);
 
                 jRadioButton1 = new JRadioButton();
                 jRadioButton1.setText(optionsStrings[10]);
@@ -256,11 +256,11 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
 		pack();
 		int width=550;
                 if (text.getPhrases().get("OptionsW")!=null){
-                    width=Integer.parseInt(text.getPhrases().get("OptionsW").toString());
+                    width=Integer.parseInt(text.getPhrases().get("OptionsW"));
                 }
                 int height=220;
                 if (text.getPhrases().get("OptionsH")!=null){
-                    height=Integer.parseInt(text.getPhrases().get("OptionsH").toString());
+                    height=Integer.parseInt(text.getPhrases().get("OptionsH"));
                 }
                 setSize(width,height);
 		setVisible(true);
@@ -301,7 +301,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
             }
             ConfigurationFiles.getDefaults().put("TimeZone", Objects.requireNonNull(timeZoneBox.getSelectedItem()).toString());
             
-            String previous=ConfigurationFiles.getDefaults().get(CALENDAR).toString();
+            String previous=ConfigurationFiles.getDefaults().get(CALENDAR);
             if (jRadioButton1.getSelectedObjects()!=null){
                 ConfigurationFiles.getDefaults().put(CALENDAR,"Julian");
                 if (!(previous.equals("Julian")) && !ignore){
@@ -315,7 +315,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                    firePropertyChange("CalendarChange", 0,1);
                 }
             }
-            ConfigurationFiles.WriteFile();
+            ConfigurationFiles.writeFile();
             dispose();
             
         }

@@ -120,7 +120,7 @@ public class JCalendar extends JPanel implements ActionListener, FocusListener, 
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		JComboBox jcb = (JComboBox) e.getSource();
+		JComboBox<?> jcb = (JComboBox<?>) e.getSource();
 		int m = jcb.getSelectedIndex() + 1;
 		int d = date.getDay();
 		int old = date.getMonth();

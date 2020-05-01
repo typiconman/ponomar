@@ -148,7 +148,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 
 		setContentPane(splitter);
 
-		Locale place = new Locale(phrases.getPhrases().get("Language").toString(), phrases.getPhrases().get("Country").toString());
+		Locale place = new Locale(phrases.getPhrases().get("Language"), phrases.getPhrases().get("Country"));
 		Helpers orient = new Helpers(analyse.getDayInfo());
 		analyse.getDayInfo().put("Locale", place);
 		analyse.getDayInfo().put(Constants.ORIENT, ComponentOrientation.getOrientation(place));
@@ -250,7 +250,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 		//StringOp.dayInfo = new OrderedHashtable();
 		//DETERMINE THE DEFAULTS
 		ConfigurationFiles.setDefaults(new LinkedHashMap<>());
-		ConfigurationFiles.ReadFile();
+		ConfigurationFiles.readFile();
 		languageLocation = new LanguageSelector(analyse.getDayInfo());
 
 		analyse.getDayInfo().put("LS", languageLocation.getLValue());

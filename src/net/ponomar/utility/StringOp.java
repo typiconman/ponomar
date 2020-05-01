@@ -107,12 +107,12 @@ public double eval(String expression) throws IllegalArgumentException
 	do
 	{
 		// STARTING AT THE END OF STRING, FIND LAST OPEN PARENTHESIS
-		i = expression.lastIndexOf("(");
+		i = expression.lastIndexOf('(');
 
 		if (i != -1)
 		{
 			// IF FOUND, LOOK FOR THE FIRST CLOSED PARENTHESIS
-			int j = expression.indexOf(")", i);
+			int j = expression.indexOf(')', i);
 			// ONLY PRECEED IF THERE IS A CLOSING BRACKET!
 			if (j != -1)
 			{
@@ -153,10 +153,10 @@ public double eval(String expression) throws IllegalArgumentException
 	// THE GENERAL TEMPLATE IS AS FOLLOWS:
 	// FOR ANY COMBINATION OF SYMBOLS WITH THE SAME PRECEDENCE WITH LEFT TO RIGHT EQUAL PRECEDENCE
 	// GOING RIGHT TO LEFT, DETERMINE THE FIRST OCCURANCE OF THE SYMBOL
-	// SPLIT AT THIS OCCURRANCE OF THE SYMBOL INTO 2 PARTS: LHS AND RHS.
+	// SPLIT AT THIS OCCURRANCE OF THE SYMBOL INTO 2 PARTS: lhs AND rhs.
 	// CHECK, IF NECESSARY, FOR ANY UNARY OPERATORS (- (AS IN -100), !), WHICH DO NOT TAKE A SPACE BETWEEN THEM AND THE COMPONENT
 	//		E.G. -100, !TRUE, !(Easter < 100)
-	// EVALUATE THE INDIVIDUAL PARTS (RHS AND LHS)
+	// EVALUATE THE INDIVIDUAL PARTS (rhs AND lhs)
 	// RETURN THE RESULT
 		
 	// BASED ON ABOVE: LOWEST PRECENDENCE GOES TO ||: THUS, DO IT FIRST
@@ -164,13 +164,13 @@ public double eval(String expression) throws IllegalArgumentException
 	if (i != -1)
 	{
 		// SPLIT AT THE OPERATOR
-		String LHS;
-		String RHS;
-		LHS = expression.substring(0, i - 1).trim();
-		RHS = expression.substring(i + 2).trim();
+		String lhs;
+		String rhs;
+		lhs = expression.substring(0, i - 1).trim();
+		rhs = expression.substring(i + 2).trim();
 
 		// RECURSION: CALL EVAL ON THE TWO PARTS
-		result = bool2double(evalbool(LHS) || evalbool(RHS));
+		result = bool2double(evalbool(lhs) || evalbool(rhs));
 		return result;
 	}
 
@@ -179,13 +179,13 @@ public double eval(String expression) throws IllegalArgumentException
 	if (i != -1)
 	{
 		// SPLIT AT THE OPERATOR
-		String LHS;
-		String RHS;
-		LHS = expression.substring(0, i - 1).trim();
-		RHS = expression.substring(i + 2).trim();
+		String lhs;
+		String rhs;
+		lhs = expression.substring(0, i - 1).trim();
+		rhs = expression.substring(i + 2).trim();
 
 		// RECURSION: CALL EVAL ON THE TWO PARTS
-		result = bool2double(evalbool(LHS) && evalbool(RHS));
+		result = bool2double(evalbool(lhs) && evalbool(rhs));
 		return result;
 	}
 	
@@ -198,27 +198,27 @@ public double eval(String expression) throws IllegalArgumentException
 	if (n != -1)
 	{
 		// SPLIT AT THE OPERATOR
-		String LHS;
-		String RHS;
-		LHS = expression.substring(0, n - 1).trim();
-		RHS = expression.substring(n + 2).trim();
+		String lhs;
+		String rhs;
+		lhs = expression.substring(0, n - 1).trim();
+		rhs = expression.substring(n + 2).trim();
 
 		// RECURSION: CALL EVAL ON THE TWO PARTS, COMPARE BY OPERATOR
 		if (expression.charAt(n) == '=')
 		{
-			result = bool2double(eval(LHS) == eval(RHS));
+			result = bool2double(eval(lhs) == eval(rhs));
 		}
 		else
 		{
-			result = bool2double(eval(LHS) != eval(RHS));
+			result = bool2double(eval(lhs) != eval(rhs));
 		}
 		return result;
 	}
 	
 	// NOW DEAL WITH ALL INEQUALITIES (STRICT AND NOT STRICT)
 		
-	i = expression.lastIndexOf("<");
-	j = expression.lastIndexOf(">");
+	i = expression.lastIndexOf('<');
+	j = expression.lastIndexOf('>');
 	int k = expression.lastIndexOf("<=");
 	int l = expression.lastIndexOf(">=");
 	
@@ -230,32 +230,32 @@ public double eval(String expression) throws IllegalArgumentException
 	if (n != -1)
 	{
 		// SPLIT AT THE OPERATOR
-		String LHS;
-		String RHS;
-		LHS = expression.substring(0, n - 1).trim();
-		RHS = expression.substring(n + 2).trim();
+		String lhs;
+		String rhs;
+		lhs = expression.substring(0, n - 1).trim();
+		rhs = expression.substring(n + 2).trim();
 
 		// RECURSION: CALL EVAL ON THE TWO PARTS, COMPARE BY OPERATOR
 		if (expression.charAt(n) == '<')
 		{
 			if (expression.charAt(n+1) == '=')
 			{
-				result = bool2double(eval(LHS) <= eval(RHS));
+				result = bool2double(eval(lhs) <= eval(rhs));
 			}
 			else
 			{
-				result = bool2double(eval(LHS) < eval(RHS));
+				result = bool2double(eval(lhs) < eval(rhs));
 			}
 		}
 		else
 		{
 			if (expression.charAt(n+1) == '=')
 			{
-				result = bool2double(eval(LHS) >= eval(RHS));
+				result = bool2double(eval(lhs) >= eval(rhs));
 			}
 			else
 			{
-				result = bool2double(eval(LHS) > eval(RHS));
+				result = bool2double(eval(lhs) > eval(rhs));
 			}
 		}
 		return result;
@@ -263,14 +263,14 @@ public double eval(String expression) throws IllegalArgumentException
 	
 	// NOW DEAL WITH ALL ADDITIONS AND SUBTRACTIONS
 		
-	i = expression.lastIndexOf("+");
+	i = expression.lastIndexOf('+');
 	
 	// CHECK IF THERE IS A UNARY OPERATOR "-" PRESENT HERE
 	boolean test = true;
 	int len = expression.length();
 	while (test)
 	{
-		j = expression.lastIndexOf("-", len);
+		j = expression.lastIndexOf('-', len);
 		// SINCE UNARY OPERATORS ARE NOT FOLLOWED BY A SPACE: TEST FOR THE PRESENCE OF A FOLLOWING SPACE
                if (expression.charAt(j+1) == ' ')
 		{
@@ -294,28 +294,28 @@ public double eval(String expression) throws IllegalArgumentException
 	if (n != -1)
 	{
 		// SPLIT AT THE OPERATOR
-		String LHS;
-		String RHS;
-		LHS = expression.substring(0, n - 1).trim();
-		RHS = expression.substring(n + 2).trim();
+		String lhs;
+		String rhs;
+		lhs = expression.substring(0, n - 1).trim();
+		rhs = expression.substring(n + 2).trim();
 
 		// RECURSION: CALL EVAL ON THE TWO PARTS, COMPARE BY OPERATOR
 		if (expression.charAt(n) == '+')
 		{
-			result = eval(LHS) + eval(RHS);
+			result = eval(lhs) + eval(rhs);
 		}
 		else
 		{
-			result = eval(LHS) - eval(RHS);
+			result = eval(lhs) - eval(rhs);
 		}
 		return result;
 	}
 	
 	// NOW DEAL WITH MULTIPLICATION, DIVISION, AND MODULUS OPERATOR
 		
-	i = expression.lastIndexOf("*");
-	j = expression.lastIndexOf("/");
-	k = expression.lastIndexOf("%");
+	i = expression.lastIndexOf('*');
+	j = expression.lastIndexOf('/');
+	k = expression.lastIndexOf('%');
 	
 	// DETERMINE THE LARGEST (CLOSEST TO END OF EXPRESSION) VALUE
 	n = Math.max(i, j);
@@ -324,23 +324,23 @@ public double eval(String expression) throws IllegalArgumentException
 	if (n != -1)
 	{
 		// SPLIT AT THE OPERATOR
-		String LHS;
-		String RHS;
-		LHS = expression.substring(0, n - 1).trim();
-		RHS = expression.substring(n + 2).trim();
+		String lhs;
+		String rhs;
+		lhs = expression.substring(0, n - 1).trim();
+		rhs = expression.substring(n + 2).trim();
 
 		// RECURSION: CALL EVAL ON THE TWO PARTS, COMPARE BY OPERATOR
 		if (expression.charAt(n) == '*')
 		{
-			result=eval(LHS) * eval(RHS);
+			result=eval(lhs) * eval(rhs);
 		}
 		else if (expression.charAt(n) == '/')
 		{
-			result=eval(LHS) / eval(RHS);
+			result=eval(lhs) / eval(rhs);
 		}
 		else
 		{
-			result=eval(LHS) % eval(RHS);
+			result=eval(lhs) % eval(rhs);
 		}
 		return result;
 	}
@@ -351,25 +351,25 @@ public double eval(String expression) throws IllegalArgumentException
 	// UNLIKE FOR THE OTHER OPERATORS ABOVE, WHICH HAVE LEFT TO RIGHT PRECEDENCE AT EQUAL LEVEL
 	// UNARY OPERATORS TEND TO HAVE RIGHT TO LEFT PRECEDENCE AT EQUAL LEVEL
 	// THUS, THE FIRST ONE MUST BE FOUND
-	i = expression.indexOf("!");
-	j = expression.indexOf("-");
+	i = expression.indexOf('!');
+	j = expression.indexOf('-');
 	
 	n = Math.max(i, j);
 	
 	if (n != -1)
 	{
 		// REMOVE THE FIRST INSTANCE OF THE OPERATOR
-		String RHS;
-		RHS = expression.substring(n + 1).trim();
+		String rhs;
+		rhs = expression.substring(n + 1).trim();
 
 		// RECURSION: CALL EVAL ON THE TWO PARTS, COMPARE BY OPERATOR
 		if (expression.charAt(n) == '!')
 		{
-			result = bool2double(!evalbool(RHS));
+			result = bool2double(!evalbool(rhs));
 		}
 		else
 		{
-			result=-eval(RHS);
+			result=-eval(rhs);
 		}
 		return result;
 	}

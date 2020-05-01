@@ -9,15 +9,7 @@ import net.ponomar.utility.Constants;
 import net.ponomar.utility.RuleBasedNumber;
 import net.ponomar.utility.StringOp;
 
-/***********************************************************
- JDate : a class for performing operations with dates on the Julian calendar
-
- PURPOSE: the purpose of this class is to provide an easy interface to manipulate Julian dates
- METHODOLOGY: A JDate object is created by specifying the month, day, year.
- Internally, the mm/dd/yyyy is converted to a Julian date (a long).
- Operations can be performed easily with this Julian date.
- In the end, an mm/dd/yyyy can be obtained back from the JDate object
-
+/*
  JDate.java is part of the Ponomar program.
  Copyright 2006, 2007 Aleksandr Andreev.
  aleksandr.andreev@gmail.com
@@ -31,11 +23,22 @@ import net.ponomar.utility.StringOp;
  it comes with ABSOLUTELY NO WARRANTY, without even the implied warranties of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  GNU General Public License for details.
-************************************************************/
+*/
 
-public class JDate implements Comparable, Cloneable
+/**
+ * The purpose of this class is to provide an easy interface to manipulate
+ * Julian dates
+ * <p>
+ * A JDate object is created by specifying the month, day, year. Internally, the
+ * mm/dd/yyyy is converted to a Julian date (a long). Operations can be
+ * performed easily with this Julian date. In the end, an mm/dd/yyyy can be
+ * obtained back from the JDate object
+ * 
+ * @author Aleksandr Andreev
+ */
+public class JDate implements Comparable<JDate>, Cloneable
 {
-	private long mn_jday;
+	private long mnJday;
 
 	private final static int[] daysInMonth = new int[]
 	{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -43,7 +46,7 @@ public class JDate implements Comparable, Cloneable
 	private final static int[] daysInMonthLeap = new int[]
 	{31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	
-	private static LanguagePack Phrases;//=new LanguagePack();
+	private static LanguagePack phrases;//=new LanguagePack();
 	private static String[] monthNames;//=Phrases.obtainValues((String)Phrases.Phrases.get("3"));
 
 	//private final static String monthNames[] = new String[]
@@ -59,9 +62,9 @@ public class JDate implements Comparable, Cloneable
 	private static String[] civilDayNames;// = Phrases.obtainValues((String)Phrases.Phrases.get("5"));
 	//new String[]
 	//{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-	private static String[] Errors;//=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
-	private static String Format;
-        private static StringOp Analyse=new StringOp();
+	private static String[] errors;//=Phrases.obtainValues((String)Phrases.Phrases.get("Errors"));
+	private static String format;
+        private static StringOp analyse=new StringOp();
 
 
 	// Two "overloaded" modulo methods to replace the existing % operator
@@ -90,24 +93,24 @@ public class JDate implements Comparable, Cloneable
 		return temp;
 	}
 
-	// CONSTRUCTOR: creates a JDate object
-	// PARAMETERS: month - the month (Jan = 1 - Dec = 12) !
-	// 		day - the day (from 1 to daysInMonth[month - 1]
-	//		year - the year (AD)
-	// RETURNS:    none
-	// THROWS: 	IllegalArgumentException if argument is invalid 
-	// FOR MORE INFORMATION READ:
-	// http://en.wikipedia.org/wiki/Julian_date
+	/**
+	 * Constructor to create a JDate object.<p>
+	 * For more information, read: http://en.wikipedia.org/wiki/Julian_date
+	 * @param  month the month (Jan = 1 — Dec = 12)
+	 * @param  day  the day (from 1 to daysInMonth[month - 1]
+	 * @param  year  the year (AD)
+	 * @throws IllegalArgumentException if argument is invalid 
+	 */
 	public JDate(int month, int day, int year) throws IllegalArgumentException
 	{
 		if (month < 1 || month > 12)
 		{
-			throw (new IllegalArgumentException(Errors[7]) );
+			throw (new IllegalArgumentException(errors[7]) );
 		}
 
 		if (day < 0)
 		{
-			throw (new IllegalArgumentException(Errors[8]+" " + day) );
+			throw (new IllegalArgumentException(errors[8]+" " + day) );
 		}
 
 		if (year % 4 == 0)
@@ -115,14 +118,14 @@ public class JDate implements Comparable, Cloneable
 			// leap year
 			if (day > daysInMonthLeap[month - 1])
 			{
-				throw (new IllegalArgumentException(Errors[8]+" " + day + " "+Errors[9]+" " + month));
+				throw (new IllegalArgumentException(errors[8]+" " + day + " "+errors[9]+" " + month));
 			}
 		}
 		else
 		{
 			if (day > daysInMonth[month - 1])
 			{
-				throw (new IllegalArgumentException(Errors[8]+" " + day + " "+Errors[9]+" " + month));
+				throw (new IllegalArgumentException(errors[8]+" " + day + " "+errors[9]+" " + month));
 			}
 		}
 
@@ -132,26 +135,27 @@ public class JDate implements Comparable, Cloneable
 		int m = month + 12 * a - 3;
 
 		// construct a julian day
-		mn_jday = (long)(day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y / 4)) - 32083;
+		mnJday = (long)(day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y / 4)) - 32083;
 	}
 
-	// CONSTRUCTOR: CREATES A JDATE OBJECT
-	// PARAMETERS: A long WITH A JULIAN DATE
-	// RETURNS: NONE
-	// THROWS: IllegalArgumentException if the JULIAN DATE < 0
+	/**
+	 * Constructor to create a JDate object.
+	 * @param  long A Julian date
+	 * @throws IllegalArgumentException if the Julian date < 0
+	 */
 	public JDate(long jday) throws IllegalArgumentException
 	{
 		if (jday < 0)
 		{
-			throw (new IllegalArgumentException(Errors[9]) );
+			throw (new IllegalArgumentException(errors[9]) );
 		}
 
-		mn_jday = jday;
+		mnJday = jday;
 	}
 
-	// CONSTRUCTOR: CREATES A JDATE OBJECT INTIALIZED TO THE DAY WHEN THE CONSTRUCTOR WAS CALLED
-	// PARAMETERS: NONE
-	// RETURNS: NONE
+	/**
+	 * Constructor to create a JDate object initialized to the day when the constructor was called
+	 */
 	protected JDate()
 	{
 		Date now = new Date(); 
@@ -160,15 +164,16 @@ public class JDate implements Comparable, Cloneable
 		// convert the number of miliseconds to the number of days since Jan 1 1970 Greg
 		long days = (long)Math.floor(mils / 86400000);
 		// the Julian Day for Jan 1 1970 Gregorian is 2 440 588
-		mn_jday = days + 2440588;
+		mnJday = days + 2440588;
 	}
 
-	// A METHOD FOR OBTAINING THE YEAR BACK FROM A JDATE OBJECT
-	// PARAMETERS: none
-	// RETURNS: an integer with the year of the JDate object
+	/**
+	 * A method for obtaining the year from a JDate object
+	 * @return integer with the year of the JDate object
+	 */
 	public int getYear()
 	{
-		long jbar = mn_jday + 32083;
+		long jbar = mnJday + 32083;
 		// Compute the number of four-year Julian cycles that have elapsed since mn_jday
 		// There are 1461 days in each cycle
 		// Multiply this number by four (years/cycle)
@@ -183,13 +188,14 @@ public class JDate implements Comparable, Cloneable
 		return (int)(Math.floor(n1 + n2) - 4800 + adj);
 	}
 
-	// A METHOD TO OBTAIN THE MONTH FROM A JDATE OBJECT
-	// PARAMETERS: NONE
-	// RETURNS: an integer with the month of the JDate object
+	/**
+	 * A method for obtaining the month from a JDate object
+	 * @return integer with the month of the JDate object
+	 */
 	public int getMonth()
 	{
 	
-            long jbar = mn_jday + 32083;
+            long jbar = mnJday + 32083;
 		// Take jbar modulo 1461 to get the number of days since the last four-year cycle
 		int da = (int)(jbar % 1461);
 		// Take da modulo 365 to get the number of days since the last 1 March
@@ -209,12 +215,13 @@ public class JDate implements Comparable, Cloneable
 		return j + 1;
 	}
 
-	//  A METHOD FOR OBTAINING THE DAY FROM A JDATE OBJECT
-	//  PARAMETERS: NONE
-	//  RETURNS: AN INTEGER WITH THE DAY OF THE JDATE OBJECT
+	/**
+	 * A method for obtaining the day from a JDate object
+	 * @return integer with the day of the JDate object
+	 */
 	public int getDay()
 	{
-		long jbar = mn_jday + 32083;
+		long jbar = mnJday + 32083;
 		// repeat above steps until m
 		int da = mod(jbar, 1461);
 		int m;
@@ -241,30 +248,32 @@ public class JDate implements Comparable, Cloneable
 		return m; // the number of days that will remain at the end
 	}
 
-	// A METHOD TO OBTAIN THE JULIAN DATE FROM A JDATE OBJECT
-	// PARAMETERS: NONE
-	// RETURNS: A long WITH THE JULIAN DATE
+	/**
+	 * A method for obtaining the Julian date from a JDate object
+	 * @return long with the Julian date
+	 */
 	public long getJulianDay()
 	{
-		return mn_jday;
+		return mnJday;
 	}
 
-	// A METHOD TO OBTAIN THE GREGORIAN DATE FROM A JDATE OBJECT
-	// PARAMETERS: NONE
-	// RETURNS: A java.util.Date OBJECT WITH THE DATE ON THE GREGORIAN CALENDAR
-	// 	    IF YEAR < 1563, RETURNS THE DATE ON THE PROLEPTIC GREGORIAN CALENDAR
+	/**
+	 * A method for obtaining the Gregorian date from a JDate object
+	 * @return {@link Date} object with the date on the Gregorian calendar.<p>
+	 * If year < 1563, returns the date on the proleptic Gregorian calendar
+	 */
 	protected Date getGregorianDate()
 	{
 		double j1;
 
-		if (mn_jday >= 2299160.5) 
+		if (mnJday >= 2299160.5) 
 		{
-			double tmp = Math.floor(((mn_jday - 1867216.0) - 0.25) / 36524.25);
-			j1 = mn_jday + 1 + tmp - Math.floor(0.25 * tmp);
+			double tmp = Math.floor(((mnJday - 1867216.0) - 0.25) / 36524.25);
+			j1 = mnJday + 1 + tmp - Math.floor(0.25 * tmp);
 		}
 		else
 		{
-			j1 = (double)mn_jday;
+			j1 = (double)mnJday;
 		}
 
 		double j2 = j1 + 1524.0;
@@ -291,26 +300,27 @@ public class JDate implements Comparable, Cloneable
 
 		return new Date(y - 1900, m - 1, d); // return the date object
 	}
+	
 	public String getGregorianDateS(LinkedHashMap<String, Object> dayInfo)
 	{
-            Analyse.setDayInfo(dayInfo);
-            Phrases=new LanguagePack(dayInfo);
-            dayNames = Phrases.obtainValues(Phrases.getPhrases().get("2"));
-         civilMonthNames=Phrases.obtainValues(Phrases.getPhrases().get("4"));
-        	monthNames=Phrases.obtainValues(Phrases.getPhrases().get("3"));
-                civilDayNames = Phrases.obtainValues(Phrases.getPhrases().get("5"));
-	Errors=Phrases.obtainValues(Phrases.getPhrases().get("Errors"));
+            analyse.setDayInfo(dayInfo);
+            phrases=new LanguagePack(dayInfo);
+            dayNames = phrases.obtainValues(phrases.getPhrases().get("2"));
+         civilMonthNames=phrases.obtainValues(phrases.getPhrases().get("4"));
+        	monthNames=phrases.obtainValues(phrases.getPhrases().get("3"));
+                civilDayNames = phrases.obtainValues(phrases.getPhrases().get("5"));
+	errors=phrases.obtainValues(phrases.getPhrases().get("Errors"));
 		//GIVES THE STRING IN THE LOCAL FORMAT.
 		double j1;
 
-		if (mn_jday >= 2299160.5) 
+		if (mnJday >= 2299160.5) 
 		{
-			double tmp = Math.floor(((mn_jday - 1867216.0) - 0.25) / 36524.25);
-			j1 = mn_jday + 1 + tmp - Math.floor(0.25 * tmp);
+			double tmp = Math.floor(((mnJday - 1867216.0) - 0.25) / 36524.25);
+			j1 = mnJday + 1 + tmp - Math.floor(0.25 * tmp);
 		}
 		else
 		{
-			j1 = (double)mn_jday;
+			j1 = (double)mnJday;
 		}
 
 		double j2 = j1 + 1524.0;
@@ -334,50 +344,52 @@ public class JDate implements Comparable, Cloneable
 		{
 			--y;
 		}
-		Format= Phrases.getPhrases().get("DateFormat");
+		format= phrases.getPhrases().get("DateFormat");
 		int dow =getDayOfWeek();
 		int year = y;
 		int month = m;
 		int day = d;
-                if(Analyse.getDayInfo().get(Constants.IDEOGRAPHIC)==null)
+                if(analyse.getDayInfo().get(Constants.IDEOGRAPHIC)==null)
                 {
-                    Format=Format.replace("WW",civilDayNames[dow]);
-		Format=Format.replace("DD",String.valueOf(day));
-		Format=Format.replace("MM",civilMonthNames[month-1]);
-		Format=Format.replace("YY",String.valueOf(year));
-		Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
+                    format=format.replace("WW",civilDayNames[dow]);
+		format=format.replace("DD",String.valueOf(day));
+		format=format.replace("MM",civilMonthNames[month-1]);
+		format=format.replace("YY",String.valueOf(year));
+		format=Character.toUpperCase(format.charAt(0))+format.substring(1);
                 }
                 else
                 {
-                if (Analyse.getDayInfo().get(Constants.IDEOGRAPHIC).equals("1"))
+                if (analyse.getDayInfo().get(Constants.IDEOGRAPHIC).equals("1"))
                 {
-                    RuleBasedNumber convertN=new RuleBasedNumber(Analyse.getDayInfo());
-                    Format=Format.replace("WW",civilDayNames[dow]);
-                    Format=Format.replace("DD",convertN.getFormattedNumber(Long.parseLong(String.valueOf(day))));
-                    Format=Format.replace("MM",civilMonthNames[month-1]);
-                    Format=Format.replace("YY",convertN.getFormattedNumber(Long.parseLong(String.valueOf(year))));
-                    Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
+                    RuleBasedNumber convertN=new RuleBasedNumber(analyse.getDayInfo());
+                    format=format.replace("WW",civilDayNames[dow]);
+                    format=format.replace("DD",convertN.getFormattedNumber(Long.parseLong(String.valueOf(day))));
+                    format=format.replace("MM",civilMonthNames[month-1]);
+                    format=format.replace("YY",convertN.getFormattedNumber(Long.parseLong(String.valueOf(year))));
+                    format=Character.toUpperCase(format.charAt(0))+format.substring(1);
 
                 }
                 else
                 {
-		Format=Format.replace("WW",civilDayNames[dow]);
-		Format=Format.replace("DD",String.valueOf(day));
-		Format=Format.replace("MM",civilMonthNames[month-1]);
-		Format=Format.replace("YY",String.valueOf(year));
-		Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
+		format=format.replace("WW",civilDayNames[dow]);
+		format=format.replace("DD",String.valueOf(day));
+		format=format.replace("MM",civilMonthNames[month-1]);
+		format=format.replace("YY",String.valueOf(year));
+		format=Character.toUpperCase(format.charAt(0))+format.substring(1);
                 }
                 }
-		return Format;
+		return format;
 
 		//return new Date(y - 1900, m - 1, d); // return the date object
 	}
-	// A METHOD TO OBTAIN THE DAY OF WEEK FROM A JDATE OBJECT
-	// PARAMETERS: NONE
-	// RETURNS: AN INTEGER WITH THE DAY OF WEEK, WHERE SUNDAY = 0, MONDAY = 1, ETC.
+	
+	/**
+	 * A method for obtaining the day of week from a JDate object
+	 * @return integer with the day of the week of the JDate object, where Sunday = 0, Monday = 1, etc.
+	 */
 	public int getDayOfWeek()
 	{
-		int temp = (int)(mn_jday % 7) + 1;
+		int temp = (int)(mnJday % 7) + 1;
 		if (temp == 7)
 		{
 			temp = 0;
@@ -388,7 +400,7 @@ public class JDate implements Comparable, Cloneable
 
 	public int getDoy()
 	{
-		long jbar = mn_jday + 32083;
+		long jbar = mnJday + 32083;
 		// repeat above steps until m
 		int da = mod(jbar, 1461);
 
@@ -398,27 +410,30 @@ public class JDate implements Comparable, Cloneable
 		return da == 1461 ? 366 : mod(da + 59, 365) - 1; // Jan 1 is doy 0
 	}
 
-	// A METHOD TO CHECK IF ONE JDATE IS EQUAL TO ANOTHER JDATE
-	// PARAMETERS: A JDATE OBJECT m
-	// RETURNS: FOR n.equals(m), true iff n.getJulianDay() == m.getJulianDay()
-	//			     false otherwise
-	public boolean equals(JDate m)
+	/**
+	 * A method to check if one JDate object is equal to another JDate object.
+	 * @param jDate a JDate object
+	 * @return For n.equals(m), true iff n.getJulianDay() == m.getJulianDay()<p>false otherwise
+	 */
+	public boolean equals(JDate jDate)
 	{
-		return (mn_jday == m.getJulianDay());
+		return (mnJday == jDate.getJulianDay());
 	}
 
-	// A METHOD TO COMPARE TWO JDATE OBJECTS
-	// PARAMETERS: A JDATE OBJECT m
-	// RETURNS: FOR n.compareTo(m), 0 iff n == m
-	//				a number less than 0 iff n < m
-	//				 a number greater than 0 iff m > n
-	// THROWS: ClassCastException iff m is not a JDate object
-	public int compareTo(Object m) throws ClassCastException
+	/**
+	 * A method to compare two JDate objects.
+	 * @param jDate a JDate object
+	 * @return For n.compareTo(m), 0 iff n == m<p>
+	 * a number less than 0 iff n < m<p>
+	 * a number greater than 0 iff m > n
+	 */
+	@Override
+	public int compareTo(JDate jDate)
 	{	
 		int temp;
 		try
 		{
-			temp = (int)(mn_jday - ((JDate)m).getJulianDay());
+			temp = (int)(mnJday - jDate.getJulianDay());
 		}
 		catch (ClassCastException cce)
 		{
@@ -427,92 +442,89 @@ public class JDate implements Comparable, Cloneable
 		return temp;
 	}
 
-	// A METHOD TO OBTAIN A STRING FROM A JDATE OBJECT
-	// PARAMETERS: NONE
-	// RETURNS: A STRING WITH THE STRING VALUE OF A DATE
-	public String toString(LinkedHashMap<String, Object> dayInfo)
-	{
-           Analyse.setDayInfo(dayInfo);
-            Phrases=new LanguagePack(dayInfo);
-            dayNames = Phrases.obtainValues(Phrases.getPhrases().get("2"));
-         civilMonthNames=Phrases.obtainValues(Phrases.getPhrases().get("4"));
-        	monthNames=Phrases.obtainValues(Phrases.getPhrases().get("3"));
-		Format= Phrases.getPhrases().get("DateFormat");
+	/**
+	 * A method to obtain a String from a JDate object.
+	 * @param dayInfo a LinkedHashMap<String, Object> with localization
+	 * @return A String with the String value of a date
+	 */
+	public String toString(LinkedHashMap<String, Object> dayInfo) {
+		analyse.setDayInfo(dayInfo);
+		phrases = new LanguagePack(dayInfo);
+		dayNames = phrases.obtainValues(phrases.getPhrases().get("2"));
+		civilMonthNames = phrases.obtainValues(phrases.getPhrases().get("4"));
+		monthNames = phrases.obtainValues(phrases.getPhrases().get("3"));
+		format = phrases.getPhrases().get("DateFormat");
 		int dow = getDayOfWeek();
 		int year = getYear();
 		int month = getMonth();
 		int day = getDay();
 
-                if(Analyse.getDayInfo().get(Constants.IDEOGRAPHIC)==null)
-                {
-                    Format=Format.replace("WW",dayNames[dow]);
-		Format=Format.replace("DD",String.valueOf(day));
-		Format=Format.replace("MM",monthNames[month-1]);
-		Format=Format.replace("YY",String.valueOf(year));
-		Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
-                }
-                else
-                {
-                if (Analyse.getDayInfo().get(Constants.IDEOGRAPHIC).equals("1"))
-                {
-                    RuleBasedNumber convertN=new RuleBasedNumber(dayInfo);
-                    Format=Format.replace("WW",dayNames[dow]);
-                    Format=Format.replace("DD",convertN.getFormattedNumber(Long.parseLong(String.valueOf(day))));
-                    Format=Format.replace("MM",monthNames[month-1]);
-                    Format=Format.replace("YY",convertN.getFormattedNumber(Long.parseLong(String.valueOf(year))));
-                    Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
+		if (analyse.getDayInfo().get(Constants.IDEOGRAPHIC) == null) {
+			format = format.replace("WW", dayNames[dow]);
+			format = format.replace("DD", String.valueOf(day));
+			format = format.replace("MM", monthNames[month - 1]);
+			format = format.replace("YY", String.valueOf(year));
+			format = Character.toUpperCase(format.charAt(0)) + format.substring(1);
+		} else {
+			if (analyse.getDayInfo().get(Constants.IDEOGRAPHIC).equals("1")) {
+				RuleBasedNumber convertN = new RuleBasedNumber(dayInfo);
+				format = format.replace("WW", dayNames[dow]);
+				format = format.replace("DD", convertN.getFormattedNumber(Long.parseLong(String.valueOf(day))));
+				format = format.replace("MM", monthNames[month - 1]);
+				format = format.replace("YY", convertN.getFormattedNumber(Long.parseLong(String.valueOf(year))));
+				format = Character.toUpperCase(format.charAt(0)) + format.substring(1);
 
-                }
-                else
-                {
-		Format=Format.replace("WW",dayNames[dow]);
-		Format=Format.replace("DD",String.valueOf(day));
-		Format=Format.replace("MM",monthNames[month-1]);
-		Format=Format.replace("YY",String.valueOf(year));
-		Format=Character.toUpperCase(Format.charAt(0))+Format.substring(1);
-                }
-                }
-		
+			} else {
+				format = format.replace("WW", dayNames[dow]);
+				format = format.replace("DD", String.valueOf(day));
+				format = format.replace("MM", monthNames[month - 1]);
+				format = format.replace("YY", String.valueOf(year));
+				format = Character.toUpperCase(format.charAt(0)) + format.substring(1);
+			}
+		}
 
-		return Format;
+		return format;
 	}
 
-	// A CLONING METHOD
-	// PARAMETERS: NONE
-	// RETURNS: A CLONE
+	/**
+	 * A cloning method.
+	 * @return A clone.
+	 */
 	public Object clone()
 	{
-		return new JDate(mn_jday);
+		return new JDate(mnJday);
 	}
 
-	// ADDS A SPECIFIED NUMBER OF DAYS TO A JDATE OBJECT
-	// PARAMTERS: AN int WITH THE NUMBER OF DAYS TO BE ADDED
-	// RETURNS: NONE
+	/**
+	 * A method to add a specified number of days to a JDate object.
+	 * @param n an integer with the number of days to be added
+	 */
 	public synchronized void addDays(int n)
 	{
-		mn_jday += n;
+		mnJday += n;
 	}
 
-	// SUBTRACTS A SPECIFIED NUMBER OF DAYS FROM A JDATE OBJECT
-	// PARAMETERS: AN int WITH THE NUMBER OF DAYS TO BE SUBTRACTED
-	// RETURNS: NONE
+	/**
+	 * A method to subtract a specified number of days to a JDate object.
+	 * @param n an integer with the number of days to be subtracted
+	 */
 	public synchronized void subtractDays(int n)
 	{
-		mn_jday -= n;
+		mnJday -= n;
 	}
 
-	// ADDS A SEPCIFIED NUMBER OF MONTHS TO A JDATE OBJECT
-	// PARAMETERS: AN int WITH THE NUMBER OF MONTHS TO BE ADDED
-	// RETURNS: NONE
+	/**
+	 * A method to add a specified number of months to a JDate object.
+	 */
 	protected synchronized void addMonths()
 	{
-		mn_jday += (this.getYear() % 4) == 0 ? daysInMonthLeap[this.getMonth() - 1] : daysInMonth[this.getMonth() - 1];
+		mnJday += (this.getYear() % 4) == 0 ? daysInMonthLeap[this.getMonth() - 1] : daysInMonth[this.getMonth() - 1];
 	}
 
-	// SUBTRACTS A SPECIFIED NUMBER OF MONTHS FROM A JDATE OBJECT
-	// PARAMETERS: AN int WITH THE NUMBER OF MONTHS TO BE SUBTRACTED
-	// RETURNS: NONE
-	protected synchronized void subtactMonths()
+	/**
+	 * A method to subtract a specified number of months to a JDate object.
+	 */
+	protected synchronized void subtractMonths()
 	{
 		int month = this.getMonth() - 1; // ADJUSTED TO BE THE ARRAY INDEX (STARTS WITH 0)
 		month--; // PREVIOUS MONTH
@@ -522,28 +534,35 @@ public class JDate implements Comparable, Cloneable
 			month += 11;
 		}
 
-		mn_jday -= ((this.getYear() % 4) == 0) ? daysInMonthLeap[month] : daysInMonth[month];
+		mnJday -= ((this.getYear() % 4) == 0) ? daysInMonthLeap[month] : daysInMonth[month];
 	}
 
-	// FINDS THE DIFFERENCE BETWEEN TWO DATES
-	// PARAMETERS: TWO JDATE OBJECTS
-	// RETURNS: A LONG WITH THE NUMBER OF DAYS BETWEEN THE TWO OBJECTS, NON-first-INCLUSIVE
-	// i.e. saturday - sunday = 6
+
+	/**
+	 * A method to find the difference between two JDate objects
+	 * @param former a JDate object
+	 * @param latter another JDate object
+	 * @return A long with the number of days between the two objects, non-first-inclusive. I.e. saturday - sunday = 6
+	 */
 	public static long difference(JDate former, JDate latter)
 	{
 		return former.getJulianDay() - latter.getJulianDay();
 	}
 
-	// RETURNS THE MAXIMUM NUMBER OF DAYS IN A MONTH
-	// PARAMETER: AN int WITH THE MONTH AND AN int WITH THE YEAR
-	// RETURNS: THE MAXIMUM NUMBER OF DAYS IN THAT MONTH, GIVEN THAT YEAR
+	/**
+	 * A method to return the maximum number of days in a month
+	 * @param month an integer with the year
+	 * @param year an integer with the year
+	 * @return The maximum number of days in that month, given that year
+	 */
 	protected static int getMaxDaysInMonth(int month, int year) throws IllegalArgumentException
 	{
 		if (month < 1 || month > 12)
 		{
-			throw (new IllegalArgumentException(Errors[7]));
+			throw (new IllegalArgumentException(errors[7]));
 		}
 
 		return (year % 4 == 0) ? daysInMonthLeap[month - 1] : daysInMonth[month - 1];
 	}
+
 }

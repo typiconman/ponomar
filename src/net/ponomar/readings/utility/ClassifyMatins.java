@@ -22,7 +22,7 @@ public class ClassifyMatins extends ClassifyReadings {
         classify(readingsInA);
     }
 
-    public ClassifyMatins(Matins matins, LinkedHashMap<String, ArrayList<String>> readingsInA, StringOp ParameterValues) {
+    public ClassifyMatins(Matins matins, LinkedHashMap<String, ArrayList<String>> readingsInA, StringOp parameterValues) {
 		classify(readingsInA);
 
     }
@@ -43,9 +43,9 @@ public class ClassifyMatins extends ClassifyReadings {
         ArrayList paschalR = readingsIn.get("Rank");
         ArrayList<String> paschalT = readingsIn.get("Tag");
 
-        dailyV = new ArrayList();
+        dailyV = new ArrayList<String>();
         dailyR = new ArrayList();
-        dailyT = new ArrayList();
+        dailyT = new ArrayList<String>();
 
 
         if (paschalV == null){
@@ -69,13 +69,13 @@ public class ClassifyMatins extends ClassifyReadings {
         }
         
 
-        Suppress();
+        suppress();
         //LeapReadings();
 
 
     }
 
-    private void Suppress() {
+    private void suppress() {
         //THIS FUNCTION CONSIDERS WHAT HOLIDAYS ARE CURRENTLY OCCURING AND RETURNS THE READINGS FOR THE DAY, WHERE SUPPRESSED CONTAINS THE READINGS THAT WERE SUPPRESSED.
         int doy = Integer.parseInt(parameterValues.getDayInfo().get("doy").toString());
         int dow = Integer.parseInt(parameterValues.getDayInfo().get("dow").toString());

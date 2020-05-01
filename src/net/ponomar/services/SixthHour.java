@@ -106,29 +106,29 @@ public class SixthHour extends LitService {
     protected String createHours() throws IOException {
         //OBTAIN THE DEFAULTS FOR THE SERVICE (WHAT WAS LAST USED!)
         analyse.getDayInfo().put("PS", selectorP.getWhoValue());
-        int TypeP = selectorP.getTypeValue();
-        Service ReadPrime=new Service(analyse.getDayInfo());
+        int typeP = selectorP.getTypeValue();
+        Service readPrime=new Service(analyse.getDayInfo());
         //FIRST READ THE TONE FILES:
-        int Weekday = Integer.parseInt(analyse.getDayInfo().get("dow").toString());
+        int weekday = Integer.parseInt(analyse.getDayInfo().get("dow").toString());
         //System.out.println(Weekday);
-        int Tone = Integer.parseInt(analyse.getDayInfo().get("Tone").toString());
-        if (Tone == 8) {
-            Tone = 0;
+        int tone = Integer.parseInt(analyse.getDayInfo().get("Tone").toString());
+        if (tone == 8) {
+            tone = 0;
         }
         //System.out.println(Tone);
-        if (Tone != -1) {
-            String fileName = OCTOECHEOS_FILENAME + "Tone " + Tone;
-            if (Weekday == 1) {
+        if (tone != -1) {
+            String fileName = OCTOECHEOS_FILENAME + "Tone " + tone;
+            if (weekday == 1) {
                 fileName = fileName + "/Monday.xml";
-            } else if (Weekday == 2) {
+            } else if (weekday == 2) {
                 fileName = fileName + "/Tuesday.xml";
-            } else if (Weekday == 3) {
+            } else if (weekday == 3) {
                 fileName = fileName + "/Wednesday.xml";
-            } else if (Weekday == 4) {
+            } else if (weekday == 4) {
                 fileName = fileName + "/Thursday.xml";
-            } else if (Weekday == 5) {
+            } else if (weekday == 5) {
                 fileName = fileName + "/Friday.xml";
-            } else if (Weekday == 6) {
+            } else if (weekday == 6) {
                 fileName = fileName + "/Saturday.xml";
             } else {
                 fileName = fileName + "/Sunday.xml";
@@ -140,8 +140,8 @@ public class SixthHour extends LitService {
                 BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(), fileName)), StandardCharsets.UTF_8));
                 QDParser.parse(this, frf);
 
-            } catch (Exception Primes) {
-                Primes.printStackTrace();
+            } catch (Exception primes) {
+                primes.printStackTrace();
             }
         }
 
@@ -167,11 +167,11 @@ public class SixthHour extends LitService {
         // READ THE PENTECOSTARION / TRIODION INFORMATION
         //IF THERE ARE SPECIAL TROPARION1's FROM THIS FILE THEY CAN OVERRIDE THE SET PIECES
 
-        Day Readings = new Day(filename, analyse.getDayInfo());
+        Day readings = new Day(filename, analyse.getDayInfo());
         try {
-        	LinkedHashMap[] lessons = Readings.getReadings();
-        	LinkedHashMap Reading = (LinkedHashMap) lessons[0].get(Constants.READINGS);
-        	LinkedHashMap lesson = (LinkedHashMap) Reading.get(Constants.READINGS);
+        	LinkedHashMap[] lessons = readings.getReadings();
+        	LinkedHashMap readingContent = (LinkedHashMap) lessons[0].get(Constants.READINGS);
+        	LinkedHashMap lesson = (LinkedHashMap) readingContent.get(Constants.READINGS);
         	LinkedHashMap reading = (LinkedHashMap) lesson.get("6th hour");
             //System.out.println("Reading == " +reading);
         	LinkedHashMap lesson2 = (LinkedHashMap) reading.get("1");
@@ -193,27 +193,27 @@ public class SixthHour extends LitService {
 
         //CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
         //POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
-        ServiceInfo ServicePrimes = new ServiceInfo("SEXTE",analyse.getDayInfo());
-        LinkedHashMap PrimesTrial = ServicePrimes.serviceRules();
+        ServiceInfo servicePrimes = new ServiceInfo("SEXTE",analyse.getDayInfo());
+        LinkedHashMap primesTrial = servicePrimes.serviceRules();
 
-        type = PrimesTrial.get("Type").toString();
-        lentenKat = (String) PrimesTrial.get(LENTENK);
+        type = primesTrial.get("Type").toString();
+        lentenKat = (String) primesTrial.get(LENTENK);
 
-        String PrimesAdd1 = "";
+        String primesAdd1 = "";
 
         if (type.equals("None")) {
             //THERE ARE NO SERVICES TODAY, THAT IS, THE ROYAL HOURS ARE SERVED INSTEAD
             return "No Service Today";
         } else if (type.equals("Paschal")) {
 
-            return ReadPrime.startService(Constants.SERVICES_PATH + "PaschalHours.xml");
+            return readPrime.startService(Constants.SERVICES_PATH + "PaschalHours.xml");
         }
 
         //I WOULD THEN NEED TO READ THE MENOLOGION, BUT I WILL NOT DO SO RIGHT NOW.
         //DETERMINE THE ORDERING OF THE TROPARIA AND KONTAKIA IF THERE ARE 2 OR MORE
 
         String strOut = "";
-        analyse.getDayInfo().put(Constants.P_FLAG_1, TypeP);
+        analyse.getDayInfo().put(Constants.P_FLAG_1, typeP);
         analyse.getDayInfo().put(Constants.P_FLAG_2, 0);
         analyse.getDayInfo().put("PFlag3", 0);
         //NOTE PFlag2 == 3 for Holy Week Services!
@@ -225,44 +225,44 @@ public class SixthHour extends LitService {
                 analyse.getDayInfo().put(Constants.P_FLAG_2, 2);
                 //CREATE THE KATHISMA PART
                 BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PKath6.xml"), StandardCharsets.UTF_8));
-                String Data = "<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma" + lentenKat + "\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
-                out.write(Data);
+                String data = "<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma" + lentenKat + "\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+                out.write(data);
                 out.close();
             }
             //System.out.println("Hello Lent b");
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/TP6R.xml"), StandardCharsets.UTF_8));
             //System.out.println(Reading6th);
-            String Data = SERVICE_LANGUAGE;
+            String data = SERVICE_LANGUAGE;
             BufferedWriter out1a = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/TP6C.xml"), StandardCharsets.UTF_8));
-            String Data1a = SERVICE_LANGUAGE;
+            String data1a = SERVICE_LANGUAGE;
             BufferedWriter out1 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK61R.xml"), StandardCharsets.UTF_8));
-            String Data1 = SERVICE_LANGUAGE;
+            String data1 = SERVICE_LANGUAGE;
             BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK61C.xml"), StandardCharsets.UTF_8));
-            String Data2 = SERVICE_LANGUAGE;
+            String data2 = SERVICE_LANGUAGE;
             BufferedWriter out3 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/STYX61R.xml"), StandardCharsets.UTF_8));
-            String Data3 = SERVICE_LANGUAGE;
+            String data3 = SERVICE_LANGUAGE;
             BufferedWriter out4 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/STYX61C.xml"), StandardCharsets.UTF_8));
-            String Data4 = SERVICE_LANGUAGE;
+            String data4 = SERVICE_LANGUAGE;
             BufferedWriter out5 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK61a.xml"), StandardCharsets.UTF_8));
-            String Data5 = SERVICE_LANGUAGE;
+            String data5 = SERVICE_LANGUAGE;
             BufferedWriter out6 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK61b.xml"), StandardCharsets.UTF_8));
-            String Data6 = SERVICE_LANGUAGE;
+            String data6 = SERVICE_LANGUAGE;
             BufferedWriter out7 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/Intro6.xml"), StandardCharsets.UTF_8));
-            String Data7 = SERVICE_LANGUAGE;
+            String data7 = SERVICE_LANGUAGE;
             BufferedWriter out8 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/Reading6.xml"), StandardCharsets.UTF_8));
-            String Data8 = SERVICE_LANGUAGE;
+            String data8 = SERVICE_LANGUAGE;
             BufferedWriter out9 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK62R.xml"), StandardCharsets.UTF_8));
-            String Data9 = SERVICE_LANGUAGE;
+            String data9 = SERVICE_LANGUAGE;
             BufferedWriter out10 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK62C.xml"), StandardCharsets.UTF_8));
-            String Data10 = SERVICE_LANGUAGE;
+            String data10 = SERVICE_LANGUAGE;
             BufferedWriter out11 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/STYX62R.xml"), StandardCharsets.UTF_8));
-            String Data11 = SERVICE_LANGUAGE;
+            String data11 = SERVICE_LANGUAGE;
             BufferedWriter out12 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/STYX62C.xml"), StandardCharsets.UTF_8));
-            String Data12 = SERVICE_LANGUAGE;
+            String data12 = SERVICE_LANGUAGE;
             BufferedWriter out13 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK62a.xml"), StandardCharsets.UTF_8));
-            String Data13 = SERVICE_LANGUAGE;
+            String data13 = SERVICE_LANGUAGE;
             BufferedWriter out14 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PROK62b.xml"), StandardCharsets.UTF_8));
-            String Data14 = SERVICE_LANGUAGE;
+            String data14 = SERVICE_LANGUAGE;
             if (reading6th != null) {
                 if (reading6th.length() > 0) {
                     //System.out.println(Reading6th);
@@ -272,61 +272,61 @@ public class SixthHour extends LitService {
                         nday1 = "0" + nday1;
                     }
 
-                    Data = Data + GETID_TYPE_T_ID + nday1 + "\" Header=\"1\" What=\"/SEXTE/TROPARION/1\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\" />";
-                    Data1a = Data1a + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/TROPARION/1\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
-                    Data1 = Data1 + GETID_TYPE_T_ID + nday1 + "\" Header=\"1\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
-                    Data1 = Data1 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"R\"/>";
-                    Data2 = Data2 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
-                    Data2 = Data2 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"C\"/>";
-                    Data3 = Data3 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/STICHOS/1\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
-                    Data4 = Data4 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/STICHOS/1\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
-                    Data5 = Data5 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
-                    Data6 = Data6 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"C\" NewLine=\"1\"/>";
-                    Data7 = Data7 + "\r\n<BIBLE getReading=\"" + reading6th + "\" Who=\"SR\" NewLine=\"1\"/>";
-                    Data8 = Data8 + "\r\n<BIBLE Verses=\"" + reading6th + "\" Who=\"SR\" RedFirst=\"1\" Header=\"1\" NewLine=\"1\" />";
-                    Data9 = Data9 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\" Header=\"1\"/>";
-                    Data9 = Data9 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"R\" />";
-                    Data10 = Data10 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
-                    Data10 = Data10 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"C\" />";
-                    Data11 = Data11 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/STICHOS/2\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
-                    Data12 = Data12 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/STICHOS/2\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
-                    Data13 = Data13 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
-                    Data14 = Data14 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"C\" NewLine=\"1\"/>";
+                    data = data + GETID_TYPE_T_ID + nday1 + "\" Header=\"1\" What=\"/SEXTE/TROPARION/1\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\" />";
+                    data1a = data1a + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/TROPARION/1\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
+                    data1 = data1 + GETID_TYPE_T_ID + nday1 + "\" Header=\"1\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
+                    data1 = data1 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"R\"/>";
+                    data2 = data2 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
+                    data2 = data2 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"C\"/>";
+                    data3 = data3 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/STICHOS/1\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
+                    data4 = data4 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/STICHOS/1\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
+                    data5 = data5 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/1a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
+                    data6 = data6 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/1b\" Who=\"C\" NewLine=\"1\"/>";
+                    data7 = data7 + "\r\n<BIBLE getReading=\"" + reading6th + "\" Who=\"SR\" NewLine=\"1\"/>";
+                    data8 = data8 + "\r\n<BIBLE Verses=\"" + reading6th + "\" Who=\"SR\" RedFirst=\"1\" Header=\"1\" NewLine=\"1\" />";
+                    data9 = data9 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\" Header=\"1\"/>";
+                    data9 = data9 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"R\" />";
+                    data10 = data10 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
+                    data10 = data10 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"C\" />";
+                    data11 = data11 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/STICHOS/2\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
+                    data12 = data12 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/STICHOS/2\" Who=\"C\" RedFirst=\"1\" NewLine=\"1\"/>";
+                    data13 = data13 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2a\" Who=\"R\" RedFirst=\"1\" NewLine=\"1\"/>";
+                    data14 = data14 + GETID_TYPE_T_ID + nday1 + "\" What=\"/SEXTE/PROKEIMENON/2b\" Who=\"C\" NewLine=\"1\"/>";
 
                 }
             }
-            Data = Data + LANGUAGE_SERVICE;
-            Data1a = Data1a + LANGUAGE_SERVICE;
-            Data1 = Data1 + LANGUAGE_SERVICE;
-            Data2 = Data2 + LANGUAGE_SERVICE;
-            Data3 = Data3 + LANGUAGE_SERVICE;
-            Data4 = Data4 + LANGUAGE_SERVICE;
-            Data5 = Data5 + LANGUAGE_SERVICE;
-            Data6 = Data6 + LANGUAGE_SERVICE;
-            Data7 = Data7 + LANGUAGE_SERVICE;
-            Data8 = Data8 + LANGUAGE_SERVICE;
-            Data9 = Data9 + LANGUAGE_SERVICE;
-            Data10 = Data10 + LANGUAGE_SERVICE;
-            Data11 = Data11 + LANGUAGE_SERVICE;
-            Data12 = Data12 + LANGUAGE_SERVICE;
-            Data13 = Data13 + LANGUAGE_SERVICE;
-            Data14 = Data14 + LANGUAGE_SERVICE;
-            out.write(Data);
-            out1a.write(Data1a);
-            out1.write(Data1);
-            out2.write(Data2);
-            out3.write(Data3);
-            out4.write(Data4);
-            out5.write(Data5);
-            out6.write(Data6);
-            out7.write(Data7);
-            out8.write(Data8);
-            out9.write(Data9);
-            out10.write(Data10);
-            out11.write(Data11);
-            out12.write(Data12);
-            out13.write(Data13);
-            out14.write(Data14);
+            data = data + LANGUAGE_SERVICE;
+            data1a = data1a + LANGUAGE_SERVICE;
+            data1 = data1 + LANGUAGE_SERVICE;
+            data2 = data2 + LANGUAGE_SERVICE;
+            data3 = data3 + LANGUAGE_SERVICE;
+            data4 = data4 + LANGUAGE_SERVICE;
+            data5 = data5 + LANGUAGE_SERVICE;
+            data6 = data6 + LANGUAGE_SERVICE;
+            data7 = data7 + LANGUAGE_SERVICE;
+            data8 = data8 + LANGUAGE_SERVICE;
+            data9 = data9 + LANGUAGE_SERVICE;
+            data10 = data10 + LANGUAGE_SERVICE;
+            data11 = data11 + LANGUAGE_SERVICE;
+            data12 = data12 + LANGUAGE_SERVICE;
+            data13 = data13 + LANGUAGE_SERVICE;
+            data14 = data14 + LANGUAGE_SERVICE;
+            out.write(data);
+            out1a.write(data1a);
+            out1.write(data1);
+            out2.write(data2);
+            out3.write(data3);
+            out4.write(data4);
+            out5.write(data5);
+            out6.write(data6);
+            out7.write(data7);
+            out8.write(data8);
+            out9.write(data9);
+            out10.write(data10);
+            out11.write(data11);
+            out12.write(data12);
+            out13.write(data13);
+            out14.write(data14);
             out.close();
             out1a.close();
             out1.close();
@@ -348,32 +348,32 @@ public class SixthHour extends LitService {
             //CREATE THE SECOND TROPAR (NORMAL)
             //APPROPRIATE TROPAR STILL NEEDS TO BE DETERMINED!!
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PTrop61.xml"), StandardCharsets.UTF_8));
-            String Data = "<SERVICE>\r\n<LANGUAGE>";
-            String Data2 = "<SERVICE>\r\n<LANGUAGE>";
+            String data = "<SERVICE>\r\n<LANGUAGE>";
+            String data2 = "<SERVICE>\r\n<LANGUAGE>";
             BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PTrop62.xml"), StandardCharsets.UTF_8));
             if (troparion1 != null) {
                 System.out.println("The first Troparion is " + troparion1 + " Troparion2 is " + troparion2);
                 if (troparion2 != null) {
                     //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PTrop61.xml"),StandardCharsets.UTF_8));
-                    Data = Data + "\r\n<CREATE Who=\"\" What=\"TROPARION/" + troparion1 + "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n";
+                    data = data + "\r\n<CREATE Who=\"\" What=\"TROPARION/" + troparion1 + "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n";
 
 
                     //Dim out2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PTrop62.xml"),StandardCharsets.UTF_8));
-                    Data2 = Data2 + "\r\n<CREATE Who=\"\" What=\"TROPARION/" + troparion2 + "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n";
+                    data2 = data2 + "\r\n<CREATE Who=\"\" What=\"TROPARION/" + troparion2 + "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n";
 
 
                 } else {
                     //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ServicesFileName+"Var/PTrop62.xml"),StandardCharsets.UTF_8));
-                    Data2 = Data2 + "\r\n<CREATE Who=\"\" What=\"TROPARION/" + troparion1 + "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+                    data2 = data2 + "\r\n<CREATE Who=\"\" What=\"TROPARION/" + troparion1 + "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
                     //out.write(Data);
                     //out.close();
                 }
             }
-            Data = Data + "</SERVICE>\r\n</LANGUAGE>";
-            Data2 = Data2 + "</SERVICE>\r\n</LANGUAGE>";
-            out.write(Data);
+            data = data + "</SERVICE>\r\n</LANGUAGE>";
+            data2 = data2 + "</SERVICE>\r\n</LANGUAGE>";
+            out.write(data);
             out.close();
-            out2.write(Data2);
+            out2.write(data2);
             out2.close();
 
         }
@@ -383,14 +383,14 @@ public class SixthHour extends LitService {
        // System.out.println(Kontakion1);
         if (kontakion1 != null) {
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString() + Constants.SERVICES_PATH + "Var/PKont6.xml"), StandardCharsets.UTF_8));
-            String Data = "<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"SR\" What=\"KONTAKION/" + kontakion1 + "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
-            out.write(Data);
+            String data = "<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"SR\" What=\"KONTAKION/" + kontakion1 + "\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+            out.write(data);
             out.close();
         }
         //Else we are dealing with a Lenten service that does not have any variable parts.
         //System.out.println("Sixth Hour: "+Analyse.getDayInfo().get("PFlag3"));
 
-        strOut = ReadPrime.startService(Constants.SERVICES_PATH + "SixthHour.xml") + "</p>";
+        strOut = readPrime.startService(Constants.SERVICES_PATH + "SixthHour.xml") + "</p>";
 
 
         return strOut;
@@ -404,7 +404,7 @@ public class SixthHour extends LitService {
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (analyse.evalbool(table.get("Cmd")) == false) {
+            if (!analyse.evalbool(table.get("Cmd"))) {
 
                 return;
             }

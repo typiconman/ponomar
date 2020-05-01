@@ -53,8 +53,8 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 	public LanguageSelector(LinkedHashMap<String, Object> dayInfo)
 	{
 	analyse.setDayInfo(dayInfo);
-                languageDefault = (String) ConfigurationFiles.getDefaults().get(LANGUAGE);
-		String rough = (String) ConfigurationFiles.getDefaults().get("AvailableLanguages");
+                languageDefault = ConfigurationFiles.getDefaults().get(LANGUAGE);
+		String rough = ConfigurationFiles.getDefaults().get("AvailableLanguages");
 		availableLanguages=rough.split(",");
 		languageLocation=languageDefault;
 		lastLanguage=languageDefault;
@@ -79,8 +79,8 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
             LanguagePack text=new LanguagePack(dayInfo);
 		String [] languageNames=text.obtainValues(text.getPhrases().get(Constants.LANGUAGE_MENU));
 		//DETERMINE THE DEFAULTS
-		String languageDefaultString = (String) ConfigurationFiles.getDefaults().get(LANGUAGE);
-		String rough = (String) ConfigurationFiles.getDefaults().get("AvailableLanguages");
+		String languageDefaultString = ConfigurationFiles.getDefaults().get(LANGUAGE);
+		String rough = ConfigurationFiles.getDefaults().get("AvailableLanguages");
 		availableLanguages=rough.split(",");
 		languageLocation=languageDefaultString;
 		lastLanguage=languageDefaultString;
@@ -98,8 +98,8 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
                     //System.out.println(AvailableLanguages[i]);
                     Helpers getFile=new Helpers(analyse.getDayInfo());
                     LanguagePack lang=new LanguagePack(getFile.langFileFind(availableLanguages[i], Constants.LANGUAGE_PACKS),(LinkedHashMap) analyse.getDayInfo().clone());
-                    nameLanguages[i]= lang.getPhrases().get("NameLocal").toString();
-                    languageBox=new JRadioButtonMenuItem(lang.getPhrases().get("NameLocal").toString());
+                    nameLanguages[i]= lang.getPhrases().get("NameLocal");
+                    languageBox=new JRadioButtonMenuItem(lang.getPhrases().get("NameLocal"));
 			languageBox.addActionListener(this);	
 			if (i == defaultLocation)
 			{
@@ -178,7 +178,7 @@ public class LanguageSelector extends JMenu implements ActionListener, PropertyC
 			//JOptionPane.showMessageDialog(null, "In order for the interface language to change, please restart the programme.","Ponomar");
 			lastLanguage=nameLanguages[newLocation];
 			ConfigurationFiles.getDefaults().put(LANGUAGE,availableLanguages[newLocation]);
-			ConfigurationFiles.WriteFile();
+			ConfigurationFiles.writeFile();
 		}
 		
 	}

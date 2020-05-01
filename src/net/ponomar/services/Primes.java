@@ -108,60 +108,60 @@ public class Primes extends LitService
 	{
 		//OBTAIN THE DEFAULTS FOR THE SERVICE (WHAT WAS LAST USED!)
 		analyse.getDayInfo().put("PS",selectorP.getWhoValue());
-		int TypeP=selectorP.getTypeValue();
-		Service ReadPrime=new Service(analyse.getDayInfo());
+		int typeP=selectorP.getTypeValue();
+		Service readPrime=new Service(analyse.getDayInfo());
 		//FIRST READ THE TONE FILES:
-				int Weekday=Integer.parseInt(analyse.getDayInfo().get("dow").toString());
+				int weekday=Integer.parseInt(analyse.getDayInfo().get("dow").toString());
 				//System.out.println(Weekday);
-				int Tone=Integer.parseInt(analyse.getDayInfo().get("Tone").toString());
-				if(Tone==8)
+				int tone=Integer.parseInt(analyse.getDayInfo().get("Tone").toString());
+				if(tone==8)
 				{
-					Tone=0;
+					tone=0;
 				}
 				//System.out.println(Tone);
-				if(Tone != -1)
+				if(tone != -1)
 				{
-				String FileName=OCTOECHEOS_FILENAME + "Tone " +Tone;
-				if (Weekday==1)
+				String fileName=OCTOECHEOS_FILENAME + "Tone " +tone;
+				if (weekday==1)
 				{
-					FileName=FileName+"/Monday.xml";
+					fileName=fileName+"/Monday.xml";
 				}
-				else if(Weekday==2)
+				else if(weekday==2)
 				{
-					FileName=FileName+"/Tuesday.xml";
+					fileName=fileName+"/Tuesday.xml";
 				}
-				else if(Weekday==3)
+				else if(weekday==3)
 				{
-					FileName=FileName+"/Wednesday.xml";
+					fileName=fileName+"/Wednesday.xml";
 				}
-				else if(Weekday==4)
+				else if(weekday==4)
 				{
-					FileName=FileName+"/Thursday.xml";
+					fileName=fileName+"/Thursday.xml";
 				}
-				else if(Weekday==5)
+				else if(weekday==5)
 				{
-					FileName=FileName+"/Friday.xml";
+					fileName=fileName+"/Friday.xml";
 				}
-				else if(Weekday==6)
+				else if(weekday==6)
 				{
-					FileName=FileName+"/Saturday.xml";
+					fileName=fileName+"/Saturday.xml";
 				}
 				else
 				{
-					FileName=FileName+"/Sunday.xml";
+					fileName=fileName+"/Sunday.xml";
 				}
 				
 				
 
 				try
 				{
-					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),FileName)), StandardCharsets.UTF_8));
+					BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),fileName)), StandardCharsets.UTF_8));
 					QDParser.parse(this, frf);
 
 				}
-				catch (Exception Primes)
+				catch (Exception primes)
 				{
-					Primes.printStackTrace();
+					primes.printStackTrace();
 				}
 				}
 				
@@ -204,13 +204,13 @@ public class Primes extends LitService
 		
 		//CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
 		//POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
-		ServiceInfo ServicePrimes=new ServiceInfo("PRIME",analyse.getDayInfo());
-		LinkedHashMap<String, String> PrimesTrial = ServicePrimes.serviceRules();
+		ServiceInfo servicePrimes=new ServiceInfo("PRIME",analyse.getDayInfo());
+		LinkedHashMap<String, String> primesTrial = servicePrimes.serviceRules();
 		
-		type=PrimesTrial.get("Type");
-		lentenKat=(String) PrimesTrial.get(LENTENK);
+		type=primesTrial.get("Type");
+		lentenKat=primesTrial.get(LENTENK);
 				
-		String PrimesAdd1="";
+		String primesAdd1="";
 				
 		if (type.equals("None"))
 		{
@@ -220,14 +220,14 @@ public class Primes extends LitService
 		else if(type.equals("Paschal"))
 		{
                     
-                    return ReadPrime.startService(Constants.SERVICES_PATH+"PaschalHours.xml");
+                    return readPrime.startService(Constants.SERVICES_PATH+"PaschalHours.xml");
 		}
 		
 		//I WOULD THEN NEED TO READ THE MENOLOGION, BUT I WILL NOT DO SO RIGHT NOW.
 		//DETERMINE THE ORDERING OF THE TROPARIA AND KONTAKIA IF THERE ARE 2 OR MORE
 				
 		String strOut= "";
-		analyse.getDayInfo().put(Constants.P_FLAG_1,TypeP);
+		analyse.getDayInfo().put(Constants.P_FLAG_1,typeP);
 		analyse.getDayInfo().put(Constants.P_FLAG_2,0);
 		//NOTE PFlag2 == 3 for Holy Week Services!
 		if(type.equals("Lenten"))
@@ -239,8 +239,8 @@ public class Primes extends LitService
 	       			analyse.getDayInfo().put(Constants.P_FLAG_2,2);
 	       			//CREATE THE KATHISMA PART
 	       			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PKath.xml"),StandardCharsets.UTF_8));
-	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma"+lentenKat+"\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
-	    			out.write(Data);
+	    			String data="<SERVICES>\r\n<LANGUAGE>\r\n<GET File=\"Kathisma"+lentenKat+"\" Null=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+	    			out.write(data);
 	    			out.close();
 	       		}
 	       	}
@@ -254,19 +254,19 @@ public class Primes extends LitService
 	    		    	if(troparion2 != null)
 	    		    	{
 	    		    		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop1.xml"),StandardCharsets.UTF_8));
-	    				String Data = TROPARION_OUTPUT_START + troparion1 + TROPARION_OUTPUT_END;
-	    				out.write(Data);
+	    				String data = TROPARION_OUTPUT_START + troparion1 + TROPARION_OUTPUT_END;
+	    				out.write(data);
 	    				out.close();
 	    				
 	    				out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop2.xml"),StandardCharsets.UTF_8));
-	    				Data = TROPARION_OUTPUT_START + troparion2 + TROPARION_OUTPUT_END;
-	    				out.write(Data);
+	    				data = TROPARION_OUTPUT_START + troparion2 + TROPARION_OUTPUT_END;
+	    				out.write(data);
 	    				out.close();
 					
 	    		    	}
     	     			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PTrop2.xml"),StandardCharsets.UTF_8));
-	    			String Data = TROPARION_OUTPUT_START + troparion1 + TROPARION_OUTPUT_END;
-	    			out.write(Data);
+	    			String data = TROPARION_OUTPUT_START + troparion1 + TROPARION_OUTPUT_END;
+	    			out.write(data);
 	    			out.close();
     	     		}
     	     			
@@ -277,13 +277,13 @@ public class Primes extends LitService
 	       	if (kontakion1 != null)
 		{
 			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(Constants.LANGUAGES_PATH + "/" + analyse.getDayInfo().get("LS").toString()+Constants.SERVICES_PATH+"Var/PKont1.xml"),StandardCharsets.UTF_8));
-	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
-	    		out.write(Data);
+	    		String data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+	    		out.write(data);
 	    		out.close();
 		}
 	    	 		
 		//System.out.println("Primes Case A: ");
-		strOut=ReadPrime.startService(Constants.SERVICES_PATH + "Prime.xml")+"</p>";
+		strOut=readPrime.startService(Constants.SERVICES_PATH + "Prime.xml")+"</p>";
 	
 	   
 	     return strOut;	     	     
@@ -299,7 +299,7 @@ public class Primes extends LitService
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (analyse.evalbool(table.get("Cmd")) == false)
+			if (!analyse.evalbool(table.get("Cmd")))
 			{
 				
 				return;

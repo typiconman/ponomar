@@ -101,7 +101,7 @@ public class LanguagePack implements DocHandler {
 
 		if (table.get("Cmd") != null) {
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-			if (!analyse.evalbool(table.get("Cmd").toString())) {
+			if (!analyse.evalbool(table.get("Cmd"))) {
 				return;
 			}
 		}
@@ -111,8 +111,8 @@ public class LanguagePack implements DocHandler {
 		// }
 		if (elem.equals("PHRASE") && readPhrases) {
 
-			String key = table.get("Key").toString();
-			String value = table.get(Constants.VALUE).toString();
+			String key = table.get("Key");
+			String value = table.get(Constants.VALUE);
 			getPhrases().put(key, value);
 			// System.out.println("The current language is " + Language + ". The phrases are
 			// " +Phrases);

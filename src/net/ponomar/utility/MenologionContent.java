@@ -214,9 +214,9 @@ public final class MenologionContent {
 			String lunarPhaseText) {
 		Sunrise sunrise = new Sunrise(analyse.getDayInfo());
 		String[] sunriseSunset = sunrise.getSunriseSunsetString(today,
-				(String) ConfigurationFiles.getDefaults().get("Longitude"),
-				(String) ConfigurationFiles.getDefaults().get("Latitude"),
-				(String) ConfigurationFiles.getDefaults().get("TimeZone"));
+				ConfigurationFiles.getDefaults().get("Longitude"),
+				ConfigurationFiles.getDefaults().get("Latitude"),
+				ConfigurationFiles.getDefaults().get("TimeZone"));
 		String astronomicalData = "<BR>" + sunriseText + sunriseSunset[0];
 		astronomicalData += "<BR>" + sunsetText + sunriseSunset[1];
 		astronomicalData += Constants.DOUBLE_LINEBREAK; // <B>"+MainNames[3]+"</B>"+Colon+

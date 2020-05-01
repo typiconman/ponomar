@@ -252,14 +252,14 @@ public class Astronomy
             //Formula does not work far into the future or past due to issues with dynamical time
             //System.out.println("day = " +daysSinceJan0(day));
             double days=daysSinceJan0(day);
-            double T=days/36525;
+            double t=days/36525;
             //System.out.println(T);
-            double lPrime=revolution(218.3164477+481267.88123421*T-0.0015786*T*T+T*T*T/538841-T*T*T*T/65194000);
-            double D=revolution(297.8501921+445267.1114034*T-0.0018819*T*T+T*T*T/545868-T*T*T*T/113065000);
-            double mPrime=revolution(134.9633964+477198.8675055*T+0.0087414*T*T-T*T*T/69699-T*T*T*T/14712000);
-            double E = 1-0.002516*T-0.0000074*T*T;
+            double lPrime=revolution(218.3164477+481267.88123421*t-0.0015786*t*t+t*t*t/538841-t*t*t*t/65194000);
+            double d=revolution(297.8501921+445267.1114034*t-0.0018819*t*t+t*t*t/545868-t*t*t*t/113065000);
+            double mPrime=revolution(134.9633964+477198.8675055*t+0.0087414*t*t-t*t*t/69699-t*t*t*t/14712000);
+            double e = 1-0.002516*t-0.0000074*t*t;
             //Only the first four additive terms considered
-            double additive=6288774*sind(mPrime)+1274027*E*sind(2*D-mPrime)+658314*sind(2*D)+213618*sind(2*mPrime);
+            double additive=6288774*sind(mPrime)+1274027*e*sind(2*d-mPrime)+658314*sind(2*d)+213618*sind(2*mPrime);
             //Action of Venus, Jupiter, or flattening ignored.
 
 			return revolution(lPrime+additive/1000000);
@@ -270,16 +270,16 @@ public class Astronomy
             double[] results=computeSunPosition(day);
 
             double days=daysSinceJan0(day);
-            double T=days/36525;
+            double t=days/36525;
 
-            double L0=revolution(280.46646+36000.76983*T+0.0003032*T*T);
-            double M=revolution(357.52911+35999.05029*T-0.0001537*T*T);
-            double e=0.016708634-0.000042037*T-0.0000001267*T*T;
-            double C=(1.914602-0.004817*T-0.000014*T*T)*sind(M)+(0.019993-0.000101*T)*sind(2*M)+0.000289*sind(3*M);
-            double L=revolution(L0+C);
-            L=revolution(L-0.00569-0.00478*sind(revolution(125.04-1934.136*T)));
+            double l0=revolution(280.46646+36000.76983*t+0.0003032*t*t);
+            double m=revolution(357.52911+35999.05029*t-0.0001537*t*t);
+            double e=0.016708634-0.000042037*t-0.0000001267*t*t;
+            double c=(1.914602-0.004817*t-0.000014*t*t)*sind(m)+(0.019993-0.000101*t)*sind(2*m)+0.000289*sind(3*m);
+            double l=revolution(l0+c);
+            l=revolution(l-0.00569-0.00478*sind(revolution(125.04-1934.136*t)));
             //System.out.println("Solar long = " + results[1] + "+ Meeus's Method; "+L);
-            return L;
+            return l;
         }
         public double lunarage(long day){
            //System.out.println("Lunar Age = " + revolution(lunarlong(day)-solarlong(day)));

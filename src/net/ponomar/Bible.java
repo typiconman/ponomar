@@ -306,7 +306,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
     public void startElement(String elem, HashMap<String, String> table) {
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-            if (analyse.evalbool(table.get("Cmd")) == false) {
+            if (!analyse.evalbool(table.get("Cmd"))) {
                 return;
             }
         }

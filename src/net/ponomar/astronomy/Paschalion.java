@@ -29,6 +29,7 @@ import net.ponomar.internationalization.LanguagePack;
 
 public final class Paschalion
 {
+	private static final String INVALID_YEAR = "Invalid year";
 	// THE LENGTH OF A LUNAR MONTH
 	private static final double LUNAR_MONTH = 29.52916667;
 	private static final double LENGTH_OF_REM = 0.016932411; // SEE COMMENTS IN getLunarPhaseString()
@@ -72,7 +73,7 @@ public final class Paschalion
 	{
 		if (year < 33)
 		{
-			throw (new IllegalArgumentException("Invalid year"));
+			throw (new IllegalArgumentException(INVALID_YEAR));
 		}
 		
 		int a = year % 4;
@@ -95,7 +96,7 @@ public final class Paschalion
 	{
 		if (year < 33)
 		{
-			throw (new IllegalArgumentException("Invalid year"));
+			throw (new IllegalArgumentException(INVALID_YEAR));
 		}
 
 		JDate date = getPascha(year);
@@ -113,7 +114,7 @@ public final class Paschalion
 	{
 		if (year < 33)
 		{
-			throw(new IllegalArgumentException("Invalid year"));
+			throw(new IllegalArgumentException(INVALID_YEAR));
 		}
 
 		JDate date = getPascha(year);
@@ -131,7 +132,7 @@ public final class Paschalion
 	{
 		if (year < 33)
 		{
-			throw(new IllegalArgumentException("Invalid year"));
+			throw(new IllegalArgumentException(INVALID_YEAR));
 		}
 
 		JDate date = getPascha(year);
@@ -148,7 +149,7 @@ public final class Paschalion
 	{
 		if (year < 33)
 		{
-			throw(new IllegalArgumentException("Invalid year"));
+			throw(new IllegalArgumentException(INVALID_YEAR));
 		}
 
 		JDate start = getApostlesFastStart(year);		
@@ -167,7 +168,7 @@ public final class Paschalion
 	{
 		if (year < 33)
 		{
-			throw(new IllegalArgumentException("Invalid year"));
+			throw(new IllegalArgumentException(INVALID_YEAR));
 		}
 
 		JDate date = getPascha(year);
@@ -197,7 +198,7 @@ public final class Paschalion
 	{
 		if (year < 33)
 		{
-			throw(new IllegalArgumentException("Invalid year"));
+			throw(new IllegalArgumentException(INVALID_YEAR));
 		}
 
 		return mod(year - 312, 15);
@@ -211,7 +212,7 @@ public final class Paschalion
 	{
  		if (year < 33)
 		{
-			throw(new IllegalArgumentException("Invalid year"));
+			throw(new IllegalArgumentException(INVALID_YEAR));
 		}
 
 		return mod(year + 5508, 28);
@@ -225,7 +226,7 @@ public final class Paschalion
 	{
  		if (year < 33)
 		{
-			throw(new IllegalArgumentException("Invalid year"));
+			throw(new IllegalArgumentException(INVALID_YEAR));
 		}
 
 		int temp = (year + 1) % 19 - 3;
@@ -405,7 +406,7 @@ public final class Paschalion
 	{
 		if (year < 33)
 		{
-			throw( new IllegalArgumentException("Invalid year"));
+			throw( new IllegalArgumentException(INVALID_YEAR));
 		}
 
 		// A HASHTABLE WITH MANDATORY FAST DAYS IN THE YEAR
@@ -535,7 +536,7 @@ public final class Paschalion
 	{
 		if (year < 33)
 		{
-			throw( new IllegalArgumentException("Invalid year"));
+			throw( new IllegalArgumentException(INVALID_YEAR));
 		}
 
 		HashMap<Long, String> feasts = new HashMap<>();

@@ -139,7 +139,7 @@ public class Commemoration implements DocHandler {
         skipElement = false;
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
-            if (analyse.evalbool(table.get("Cmd")) == false) {
+            if (!analyse.evalbool(table.get("Cmd"))) {
 
 
                 skipElement = true;

@@ -147,7 +147,7 @@ public class Day implements DocHandler {
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (parameterValues.evalbool(table.get("Cmd")) == false) {
+            if (!parameterValues.evalbool(table.get("Cmd"))) {
 
                 return;
             }
@@ -351,7 +351,6 @@ public class Day implements DocHandler {
         }
     }
     public LinkedHashMap[] getReadings(){
-    	LinkedHashMap[] readingsA = new LinkedHashMap[orderedCommemorations.size()];
     	LinkedHashMap[] rInformation = new LinkedHashMap[orderedCommemorations.size()];
         ArrayList<Integer> count= new ArrayList<>();
 
@@ -364,7 +363,7 @@ public class Day implements DocHandler {
                     //ReadingsA[i]= new OrderedHashtable();
                     //ReadingsA[i]=CurrentC.getReadings();
                     count.add(i);
-                    int ranked=(int) currentC.getRank();
+                    int ranked=currentC.getRank();
                     //System.out.println("For "+CurrentC.getCId().toString()+" rank is "+Ranked);
                     rInformation[i]=new LinkedHashMap();
 
@@ -413,8 +412,7 @@ public class Day implements DocHandler {
         	LinkedHashMap stuff = (LinkedHashMap) royalHours.get(node);
             //System.out.println(stuff);
             if (stuff.containsKey(type)) {
-            	LinkedHashMap stuff1 = (LinkedHashMap) stuff.get(type);
-                return stuff1;
+                return (LinkedHashMap) stuff.get(type);
             } else {
                 System.out.println(commNames[3]);
                 return new LinkedHashMap();

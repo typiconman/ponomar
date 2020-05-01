@@ -125,7 +125,7 @@ public class RoyalHours extends LitService {
 		if (table.get("Cmd") != null) {
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-			if (analyse.evalbool(table.get("Cmd")) == false) {
+			if (!analyse.evalbool(table.get("Cmd"))) {
 
 				return;
 			}

@@ -38,6 +38,7 @@ TO END THE SERVICE READER CALL, closeService();
 
 public class Service implements DocHandler
 {
+	private static final String HEADER = "Header";
 	private static final String TIMES = Constants.COMMANDS + "Times.xml";
 	private static final String COMMONPRAYERS_FILENAME = Constants.SERVICES_PATH + "CommonPrayers/";   // THE LOCATION OF THE BASIC SERVICE RULES
 	public static String service1;
@@ -52,8 +53,8 @@ public class Service implements DocHandler
 	private String what;
 	private String redFirst;
 	private String newLine;
-	private String times;
-	private int header;
+	private String timesContent;
+	private int headerInteger;
 	private String commandB;
 	private String whoLast="";
 	private String command;
@@ -153,7 +154,7 @@ public class Service implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (analyse.evalbool(table.get("Cmd")) == false)
+			if (!analyse.evalbool(table.get("Cmd")))
 			{
 				return;
 			}
@@ -192,7 +193,7 @@ public class Service implements DocHandler
 		{
 			//WE ARE DEALING WITH THE TITLE OF THE SERVICE. IT CAN HAVE 3 PARTS: THE TITLE ITSELF, THE SOURCE FOR 
 			//SERVICE, AND SOME ADDITIONAL COMMENTS.
-			String title=table.get("Header");
+			String title=table.get(HEADER);
 			ReadText textGet1=new ReadText((LinkedHashMap<String, Object>) analyse.getDayInfo().clone());
                         whoLast="";
 			String text4=textGet1.readText(Constants.SERVICES_PATH+"Text/"+title+".xml");
@@ -272,13 +273,13 @@ public class Service implements DocHandler
 			//APPROPRIATE TO THE GIVEN LANGUAGE. THUS, BOTH what AND HeaderText ARE ASSUMED TO CONTAIN TEXT
 			what=table.get("What");
 			String headerText="";
-			if(table.get("Header") != null)
+			if(table.get(HEADER) != null)
 			{
-				headerText=table.get("Header");
-				header=1;				
+				headerText=table.get(HEADER);
+				headerInteger=1;				
 			}
 			readIncidentals(table);
-			service1+=implement(header,headerText,what)+"\n";	
+			service1+=implement(headerInteger,headerText,what)+"\n";	
 		}
 		if(elem.equals("BIBLE") && read)
 		{
@@ -344,23 +345,23 @@ public class Service implements DocHandler
 				stars=what2.indexOf("**");
 			}
 			
-			if(table.get("Header") != null)
+			if(table.get(HEADER) != null)
 			{
-				if(table.get("Header").equals("1"))
+				if(table.get(HEADER).equals("1"))
 				{
-					header= Integer.parseInt(table.get("Header"));								
+					headerInteger= Integer.parseInt(table.get(HEADER));								
 				}
 				else
 				{
-					header=0;
+					headerInteger=0;
 				}
 			}
 			else
 			{
-				header=0;
+				headerInteger=0;
 			}
 			readIncidentals(table);			
-			service1+=implement(header,parsedBible[2],what2)+"\n";
+			service1+=implement(headerInteger,parsedBible[2],what2)+"\n";
 			read=true;
 		}
                 if (elem.equals("GETID") && read){
@@ -386,14 +387,14 @@ public class Service implements DocHandler
                     //System.out.println((OrderedHashtable)data.getService("/ROYALHOURS/VERSE","9P"));
                     //System.out.println(RoyalHours);
                     String headerRH="";
-                    if(royalHours.get("Header")!=null){
-                        headerRH=royalHours.get("Header");
+                    if(royalHours.get(HEADER)!=null){
+                        headerRH=royalHours.get(HEADER);
                     }
-                    if(table.get("Header")!=null){
-                        header=Integer.parseInt(table.get("Header"));
+                    if(table.get(HEADER)!=null){
+                        headerInteger=Integer.parseInt(table.get(HEADER));
                     }
                     else{
-                        header=0;
+                        headerInteger=0;
                     }
                     //System.out.println(RoyalHours);
                     if (royalHours.get("text") == null){
@@ -404,7 +405,7 @@ public class Service implements DocHandler
                         //System.out.println(table);
                         readIncidentals(table);
 
-                        service1+=implement(header,headerRH,royalHours.get("text").toString().substring(1))+"\n";
+                        service1+=implement(headerInteger,headerRH,royalHours.get("text").substring(1))+"\n";
                     }
                     read=true;
                 }
@@ -420,21 +421,21 @@ public class Service implements DocHandler
 				what=null;
 			}
 			//String text2="";
-			if(table.get("Header") != null)
+			if(table.get(HEADER) != null)
 			{
-				if(table.get("Header").equals("1"))
+				if(table.get(HEADER).equals("1"))
 				{
-					header= Integer.parseInt(table.get("Header"));
+					headerInteger= Integer.parseInt(table.get(HEADER));
 										
 				}
 				else
 				{
-					header=0;
+					headerInteger=0;
 				}
 			}
 			else
 			{
-				header=0;
+				headerInteger=0;
 			}
 			readIncidentals(table);
 			//System.out.println(What);
@@ -449,7 +450,7 @@ public class Service implements DocHandler
 				}
 			}
 				
-			service1+=implement(header,textGet.readHeader(COMMONPRAYERS_FILENAME+what+".xml"),what2)+"\n";		
+			service1+=implement(headerInteger,textGet.readHeader(COMMONPRAYERS_FILENAME+what+".xml"),what2)+"\n";		
 			read=true;
 		}
 		if (elem.equals("TIMES") && read)
@@ -511,11 +512,11 @@ public class Service implements DocHandler
 			}
 			if(table.get("Times") != null)
 			{
-				times= table.get("Times");	
+				timesContent= table.get("Times");	
 			}
 			else
 			{
-				times=null;
+				timesContent=null;
 			}
 			
 	}
@@ -583,7 +584,7 @@ public class Service implements DocHandler
 			}
 		}
 		String textRepeat="";
-		if(times != null)
+		if(timesContent != null)
 		{
 			/*int Time= Integer.parseInt(Times);
 			String textR=text2;
@@ -593,7 +594,7 @@ public class Service implements DocHandler
 			}*/
 			//THIS IS THE ORIGINAL  VERSION OF TIMES. CHANGED TO A BETTER VERSION. 2009/05/18 Y.S.
 			textTimes="";
-			analyse.getDayInfo().put("Times",Integer.parseInt(times));
+			analyse.getDayInfo().put("Times",Integer.parseInt(timesContent));
 			
 			try
 			{
@@ -609,17 +610,17 @@ public class Service implements DocHandler
 			if (splitting != -1)
 			{
 				//REPLACE ^# BY THE ACTUAL NUMBER
-				String LHS = "";
-				String RHS = "";
+				String lhs = "";
+				String rhs = "";
 				if (splitting > 1)
 				{
-					LHS = textTimes.substring(0, splitting).trim();
+					lhs = textTimes.substring(0, splitting).trim();
 				}
 				if (splitting + 2 < textTimes.length())
 				{
-					RHS = textTimes.substring(splitting + 2);
+					rhs = textTimes.substring(splitting + 2);
 				}
-				textRepeat = LHS + times + RHS;
+				textRepeat = lhs + timesContent + rhs;
 	
 				
 			}
@@ -647,7 +648,7 @@ public class Service implements DocHandler
                         //CORRECTED A FORMATING ERROR IN THE FOLLOWING LINES MISSING A CLOSING ANGLE BRACKET FOR </I>
                         //YURI SHARDT 2009/10/31 n.s.
                         
-			if (times != null)
+			if (timesContent != null)
 			{
 				String textR=textGet.readText(Constants.SERVICES_PATH+"Command/AfterEach.xml");
 				if (textR !=null)
@@ -669,7 +670,7 @@ public class Service implements DocHandler
 		}
 		else
 		{
-			if(times != null)
+			if(timesContent != null)
 			{
 				text2=text2+" <I><Font color=\"red\">("+textRepeat+")</Font></I>";
 			}

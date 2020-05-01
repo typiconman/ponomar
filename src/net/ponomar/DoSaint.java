@@ -51,7 +51,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     //TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
     //DURING THE COURSE OF A SINGLE WEEK.
 
-    private static final String PODOBNI = Constants.COMMANDS + "Podobni.xml";
+    private static final String PODOBEN = "Podoben";
+	private static final String PODOBNI = Constants.COMMANDS + "Podobni.xml";
 	private String life = "";
     private String tropar = "";
     private String troparT = ""; //Tone
@@ -140,8 +141,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 		if (troparInfo != null) {
 			tropar = troparInfo.get("text");
 			troparT = troparInfo.get("Tone");
-			if (troparInfo.get("Podoben") != null) {
-				troparP = troparInfo.get("Podoben");
+			if (troparInfo.get(PODOBEN) != null) {
+				troparP = troparInfo.get(PODOBEN);
 			}
 		} else {
 			tropar = null;
@@ -151,8 +152,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 		if (troparInfo2 != null) {
 			tropar2 = troparInfo2.get("text");
 			troparT2 = troparInfo2.get("Tone");
-			if (troparInfo2.get("Podoben") != null) {
-				troparP2 = troparInfo2.get("Podoben");
+			if (troparInfo2.get(PODOBEN) != null) {
+				troparP2 = troparInfo2.get(PODOBEN);
 			}
 		} else {
 			tropar2 = null;
@@ -162,8 +163,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 		if (kontakionInfo != null) {
 			kondak = kontakionInfo.get("text");
 			kondakT = kontakionInfo.get("Tone");
-			if (kontakionInfo.get("Podoben") != null) {
-				kondakP = kontakionInfo.get("Podoben");
+			if (kontakionInfo.get(PODOBEN) != null) {
+				kondakP = kontakionInfo.get(PODOBEN);
 			}
 		} else {
 			kondak = null;
@@ -173,8 +174,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 		if (kontakionInfo2 != null) {
 			kondak2 = kontakionInfo2.get("text");
 			kondakT2 = kontakionInfo2.get("Tone");
-			if (kontakionInfo2.get("Podoben") != null) {
-				kondakP2 = kontakionInfo2.get("Podoben");
+			if (kontakionInfo2.get(PODOBEN) != null) {
+				kondakP2 = kontakionInfo2.get(PODOBEN);
 			}
 		} else {
 			kondak2 = null;
@@ -477,7 +478,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (analyse.evalbool(table.get("Cmd")) == false) {
+            if (!analyse.evalbool(table.get("Cmd"))) {
 
                 return;
             }
@@ -504,14 +505,14 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         }
         if (elem.equals("TROPARION") && read) {
             troparT = table.get("Tone");
-            if (table.get("Podoben") != null) {
-                troparP = table.get("Podoben");
+            if (table.get(PODOBEN) != null) {
+                troparP = table.get(PODOBEN);
             }
         }
         if (elem.equals("KONTAKION") && read) {
             kondakT = table.get("Tone");
-            if (table.get("Podoben") != null) {
-                kondakP = table.get("Podoben");
+            if (table.get(PODOBEN) != null) {
+                kondakP = table.get(PODOBEN);
             }
         }
         if (elem.equals("PODOBEN") && read) {

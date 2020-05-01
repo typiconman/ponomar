@@ -160,7 +160,7 @@ public abstract class Reading implements DocHandler {
         if (table.get("Cmd") != null) {
             // EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 
-            if (getInformation3().evalbool(table.get("Cmd").toString()) == false) {
+            if (!getInformation3().evalbool(table.get("Cmd")) ) {
                 return;
             }
         }
@@ -251,7 +251,7 @@ public abstract class Reading implements DocHandler {
         return output.toString();
     }
 	
-    protected String Display(String a, String b, String c) {
+    protected String display(String a, String b, String c) {
         //THIS FUNCTION TAKES THE POSSIBLE 3 READINGS AND COMBINES THEM AS APPROPRIATE, SO THAT NO SPACES OR OTHER UNDESIRED STUFF IS DISPLAYED!
         String output = "";
         if (a.length() > 0) {

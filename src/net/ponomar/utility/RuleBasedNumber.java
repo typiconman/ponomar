@@ -42,13 +42,13 @@ public class RuleBasedNumber implements DocHandler
     //private String[] DF={"I{'I',1}","IV","V{'I',1}","IX","X{'X',10}$","XL$","L{'X',10}$","XC$","C{'C',100}$","CD$","D{'C',100}$","CM$","M{'M',1000}$"};
     //private long[] BaN={1,4,5,9,10,40,50,90,100,400,500,900,1000};
     //For Chinese Numberals
-    private String[] DF={"\u4E00","\u4E8C","\u4E09","\u56DB","\u4E94","\u516D","\u4E03","\u516B","\u4E5D","#\u5341$","#\u767E['\u3007(0)','$ < 10']['\u4E00(1)','$ < 20 && $ >= 10']$","#\u5343$","#\u842C$","#\u5104$"};
-    private long[] BaN={1,2,3,4,5,6,7,8,9,10,100,1000,10000,100000000};
-    private boolean Cz=false; //Convert zero to something special!
+    private String[] dF={"\u4E00","\u4E8C","\u4E09","\u56DB","\u4E94","\u516D","\u4E03","\u516B","\u4E5D","#\u5341$","#\u767E['\u3007(0)','$ < 10']['\u4E00(1)','$ < 20 && $ >= 10']$","#\u5343$","#\u842C$","#\u5104$"};
+    private long[] baN={1,2,3,4,5,6,7,8,9,10,100,1000,10000,100000000};
+    private boolean convertZero=false; //Convert zero to something special!
     private String zero="zero"; //What to do if zero is called for
-    private long UB=4999; //The largest feasible number! Latin
+    private long ub=4999; //The largest feasible number! Latin
     //private double UB=1000000;
-    private String[] IM={}; //Ignorable marks that can be disposed.
+    private String[] ignorableMarks={}; //Ignorable marks that can be disposed.
     /*The following marks are permitted: 1) anything before or after the three octothorps
      *  2) The three octothorps are delimiters:
      *      a) between the first two octothorps all characters that are to be placed after a character and counting from the start of the number
@@ -69,7 +69,7 @@ public class RuleBasedNumber implements DocHandler
      */
     //private String fformat=".#{'!','2'}['$@','2','N > 10']#['<','2','N > 1000']{'>','7'}#."; //Any marks that need to be added on top of the final number
     private String fformat="###";
-    private LinkedHashMap Phrases;		//STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT INTERFACE LANGUAGE.
+    private LinkedHashMap phrases;		//STORES ALL THE REQUIRED PHRASES FOR THE INTERFACE IN THE CURRENT INTERFACE LANGUAGE.
     private boolean readRules=false;
     private StringOp analyse= new StringOp();
 
@@ -131,29 +131,29 @@ public class RuleBasedNumber implements DocHandler
 			String value=table.get(Constants.VALUE);
 			if (key.equals("DF"))
                         {
-                           DF=obtainValues(value);
+                           dF=obtainValues(value);
                            
                         }
                         
                         if (key.equals("BaN"))
                         {
                             String[] tempvalue=obtainValues(value);
-                            BaN=new long[tempvalue.length];
+                            baN=new long[tempvalue.length];
                             for(int i=0;i<tempvalue.length;i++)
                             {
-                                BaN[i]=Long.parseLong(tempvalue[i]);
+                                baN[i]=Long.parseLong(tempvalue[i]);
                                 //System.out.println(BaN[i]);
                             }
                             
                         }
                         if (key.equals("Cz"))
                         {
-                            Cz=analyse.evalbool(value);
+                            convertZero=analyse.evalbool(value);
 
                         }
                         if (key.equals("UB"))
                         {
-                            UB=Long.parseLong(value);
+                            ub=Long.parseLong(value);
                         }
                         if (key.equals("fformat"))
                         {
@@ -161,7 +161,7 @@ public class RuleBasedNumber implements DocHandler
                         }
                         if (key.equals("IM"))
                         {
-                            IM=obtainValues(value);
+                            ignorableMarks=obtainValues(value);
                         }
                         if (key.equals("zero"))
                         {
@@ -180,7 +180,7 @@ public class RuleBasedNumber implements DocHandler
 
         public String getFormattedNumber(double number)
 {
-   if (number>UB)
+   if (number>ub)
         {
             return Double.toString(number);
         }
@@ -343,7 +343,7 @@ public class RuleBasedNumber implements DocHandler
 
         if (number==0)
         {
-            if (!Cz)
+            if (!convertZero)
             {
                 return "";
             }
@@ -354,16 +354,16 @@ public class RuleBasedNumber implements DocHandler
 
         }
         int i=-1;
-        for(i=DF.length-1;i>=0;i--)
+        for(i=dF.length-1;i>=0;i--)
         {
-            if (BaN[i]<=number)
+            if (baN[i]<=number)
             {
                 //i=j;
                 break;
             }
         }
-        String format=DF[i];
-        long base=BaN[i];
+        String format=dF[i];
+        long base=baN[i];
         long pint=(long) number/base; //The integer part of the number
         long remainder=(long) number-base;
         //System.out.println("--------------------------");

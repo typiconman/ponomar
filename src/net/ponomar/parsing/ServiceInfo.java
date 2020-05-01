@@ -144,7 +144,7 @@ public class ServiceInfo implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (analyse.evalbool(table.get("Cmd")) == false)
+			if (!analyse.evalbool(table.get("Cmd")))
 			{
 				return;
 			}
@@ -163,7 +163,7 @@ public class ServiceInfo implements DocHandler
 			Enumeration<String> listed = Collections.enumeration(table.keySet());
 			while (listed.hasMoreElements())
 			{
-				String nextEle=listed.nextElement().toString();
+				String nextEle=listed.nextElement();
 				
 				if(nextEle == null)
 				{

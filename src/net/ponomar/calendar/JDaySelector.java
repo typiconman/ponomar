@@ -3,8 +3,7 @@ package net.ponomar.calendar;
 import net.ponomar.astronomy.Paschalion;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.utility.Constants;
- 
- 
+
 import net.ponomar.utility.StringOp;
 
 import javax.swing.*;
@@ -18,13 +17,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 
-/**************************************************************
-JDaySelector: A class for the object that does the heavy duty work in JCalendar
-The purpuse of this class is to select a day.
-
-Instructions: declare a JCalendar object and work from there.
-
-Copyright information:
+/*
 Adapted from JDayChooser: - A bean for choosing a day
  *  Copyright (C) 2004 Kai Toedter
  *  kai@toedter.com
@@ -55,9 +48,18 @@ Adapted from JDayChooser: - A bean for choosing a day
  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
  OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE. 
-***********************************************************/
-class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusListener
-{
+*/
+
+/**
+ * A class for the object that does the heavy duty work in JCalendar. The
+ * purpose of this class is to select a day.
+ * <p>
+ * Instructions: declare a JCalendar object and work from there.
+ * 
+ * @author Kai Toedter, Aleksandr Andreev
+ **/
+class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusListener {
+	private static final String WINDOWS = "Windows";
 	private JButton[] days;
 	private JButton[] tones;
 	private JButton selectedDay;
@@ -76,33 +78,39 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 	private boolean initialized;
 	private boolean decorationBackgroundVisible;
 	private boolean decorationBordersVisible;
-	private HashMap<Long, String>  feasts;
+	private HashMap<Long, String> feasts;
 	private int[] fasts;
-	private LanguagePack Text;//=new LanguagePack();
-        private StringOp Analyse=new StringOp();
-        private Font CurrentFont;
-        private NumberFormat numFormat;// = NumberFormat.getInstance(new Locale(Text.Phrases.get("Language").toString(),Text.Phrases.get("Country").toString()));
-        //(String)Text.Phrases.get("LanguageMenu")
-        private DecimalFormat df;//=(DecimalFormat)numFormat;
+	private LanguagePack text;// =new LanguagePack();
+	private StringOp analyse = new StringOp();
+	private Font currentFont;
+	private NumberFormat numFormat;// = NumberFormat.getInstance(new
+									// Locale(Text.Phrases.get("Language").toString(),Text.Phrases.get("Country").toString()));
+	// (String)Text.Phrases.get("LanguageMenu")
+	private DecimalFormat df;// =(DecimalFormat)numFormat;
 
-	protected JDaySelector(LinkedHashMap<String, Object> dayInfo)
-	{
-            Analyse.setDayInfo(dayInfo);
-            Text=new LanguagePack(dayInfo);
-            numFormat = NumberFormat.getInstance(new Locale(Text.getPhrases().get("Language").toString(),Text.getPhrases().get("Country").toString()));
-            CurrentFont=new Font((String)Analyse.getDayInfo().get(Constants.FONT_FACE_M),Font.BOLD,Integer.parseInt((String)Analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
-            //Initialise the required locales
-            df=(DecimalFormat)numFormat;
-            DecimalFormatSymbols dfs=df.getDecimalFormatSymbols();
-            //dfs.setZeroDigit('\u0660');
-            
-            dfs.setZeroDigit(Text.getPhrases().get("ZeroPoint").toString().charAt(0));
-            //System.out.println(Text.Phrases.get("ZeroPoint").toString().charAt(0));
-            df.setDecimalFormatSymbols(dfs);
+	/**
+	 * JDaySelector constructor.
+	 * 
+	 * @param dayInfo a LinkedHashMap<String, Object> with localization
+	 */
+	protected JDaySelector(LinkedHashMap<String, Object> dayInfo) {
+		analyse.setDayInfo(dayInfo);
+		text = new LanguagePack(dayInfo);
+		numFormat = NumberFormat
+				.getInstance(new Locale(text.getPhrases().get("Language"), text.getPhrases().get("Country")));
+		currentFont = new Font((String) analyse.getDayInfo().get(Constants.FONT_FACE_M), Font.BOLD,
+				Integer.parseInt((String) analyse.getDayInfo().get(Constants.FONT_SIZE_M)));
+		// Initialise the required locales
+		df = (DecimalFormat) numFormat;
+		DecimalFormatSymbols dfs = df.getDecimalFormatSymbols();
+		// dfs.setZeroDigit('\u0660');
 
-            setName("JDaySelector");
+		dfs.setZeroDigit(text.getPhrases().get("ZeroPoint").charAt(0));
+		df.setDecimalFormatSymbols(dfs);
+
+		setName("JDaySelector");
 		setBackground(Color.blue);
-		//locale = Locale.getDefault();
+		// locale = Locale.getDefault();
 
 		days = new JButton[49];
 		selectedDay = null;
@@ -113,30 +121,24 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		dayPanel = new JPanel();
 		dayPanel.setLayout(new GridLayout(7, 7));
 
-		sundayForeground  = new Color(255, 0, 0);
+		sundayForeground = new Color(255, 0, 0);
 		weekdayForeground = new Color(0, 0, 0);
 		decorBackground = new Color(210, 228, 238);
 		dukeBlue = new Color(0, 51, 102);
 
-		for (int i = 0; i < 7; i++)
-		{
-			for (int j = 0; j < 7; j++)
-			{
+		for (int i = 0; i < 7; i++) {
+			for (int j = 0; j < 7; j++) {
 				int index = j + (7 * i);
 
-				if (i == 0)
-				{
-					//Create the top row (weedkay short names)
+				if (i == 0) {
+					// Create the top row (weedkay short names)
 					days[index] = new PlaceholderButton();
-				}
-				else
-				{
+				} else {
 					// Create an actual day of the month button
 					days[index] = new JButton("x") {
-						public void paint(Graphics g)
-						{
-							if ("Windows".equals(UIManager.getLookAndFeel().getID()))
-							{
+						@Override
+						public void paint(Graphics g) {
+							if (WINDOWS.equals(UIManager.getLookAndFeel().getID())) {
 								// this is a hack to get the background painted
 								// when using Windows Look & Feel
 								if (selectedDay == this) {
@@ -147,12 +149,12 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 							super.paint(g);
 						}
 					};
-				
+
 					days[index].addActionListener(this);
 					days[index].addKeyListener(this);
 					days[index].addFocusListener(this);
 				}
-			
+
 				days[index].setMargin(new Insets(0, 0, 0, 0));
 				days[index].setFocusPainted(false);
 				dayPanel.add(days[index]);
@@ -163,23 +165,21 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		tonePanel.setLayout(new GridLayout(7, 1));
 		tones = new JButton[7];
 
-		for (int i = 0; i < 7; i++)
-		{
+		for (int i = 0; i < 7; i++) {
 			tones[i] = new PlaceholderButton();
 			tones[i].setMargin(new Insets(0, 0, 0, 0));
 			tones[i].setFocusPainted(false);
 			tones[i].setForeground(new Color(100, 100, 100));
 
-			if (i != 0)
-			{
+			if (i != 0) {
 				tones[i].setText("0" + (i + 1));
 			}
 
 			tonePanel.add(tones[i]);
 		}
 
-		//defaultMinSelectableDate = new JDate(9, 1, 33);
-		//defaultMaxSelectableDate = new JDate(8, 31, 9999);
+		// defaultMinSelectableDate = new JDate(9, 1, 33);
+		// defaultMaxSelectableDate = new JDate(8, 31, 9999);
 
 		init();
 		setDay(today.getDay());
@@ -191,128 +191,112 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		updateUI();
 	}
 
-	private void init()
-	{
+	private void init() {
 //		JButton dummy = new JButton();
 //		commonBackground = dummy.getBackground();
 		commonBackgrounds[0] = new Color(255, 255, 255);
 		commonBackgrounds[1] = new Color(170, 170, 170);
 		commonBackgrounds[2] = new Color(221, 221, 221);
 		selectedColor = new Color(255, 255, 0);
-		feasts = Paschalion.getFeasts(today.getYear(),Analyse.getDayInfo());
+		feasts = Paschalion.getFeasts(today.getYear(), analyse.getDayInfo());
 		fasts = Paschalion.getFasts(today.getYear());
 
 		drawDayNames();
 		drawDays();
 	}
 
-	private void drawDayNames()
-	{
-		//DateFormatSymbols dateFormatSymbols = new DateFormatSymbols(locale);
-		dayNames = Text.obtainValues(Text.getPhrases().get("Week1"));
+	private void drawDayNames() {
+		// DateFormatSymbols dateFormatSymbols = new DateFormatSymbols(locale);
+		dayNames = text.obtainValues(text.getPhrases().get("Week1"));
 
-		int day = 0;
+		int dayNumber = 0;
 
-		for (int i = 0; i < 7; i++)
-		{
-			days[i].setText(dayNames[day]);
-                        days[i].setFont(CurrentFont);
-			if (day == 0) {
+		for (int i = 0; i < 7; i++) {
+			days[i].setText(dayNames[dayNumber]);
+			days[i].setFont(currentFont);
+			if (dayNumber == 0) {
 				days[i].setForeground(sundayForeground);
 			} else {
 				days[i].setForeground(weekdayForeground);
 			}
 
-			if (day < 7) {
-				day++;
+			if (dayNumber < 7) {
+				dayNumber++;
 			} else {
-				day -= 6;
+				dayNumber -= 6;
 			}
 		}
 	}
 
-	private void drawDays()
-	{
-		JDate tmpCalendar = (JDate)today.clone();
+	private void drawDays() {
+		JDate tmpCalendar = (JDate) today.clone();
 		int firstDayOfWeek = 0;
 		// SET CALENDAR TO START OF THE MONTH
 		tmpCalendar.subtractDays(tmpCalendar.getDay() - 1);
 		int firstDay = tmpCalendar.getDayOfWeek() - firstDayOfWeek;
 		JDate startOfYear = new JDate(1, 1, tmpCalendar.getYear());
 
-		if (firstDay < 0)
-		{
+		if (firstDay < 0) {
 			firstDay += 7;
 		}
 
 		int i;
 
-		for (i = 0; i < firstDay; i++)
-		{
+		for (i = 0; i < firstDay; i++) {
 			days[i + 7].setVisible(false);
 			days[i + 7].setText("");
 		}
 
-		JDate firstDayOfNextMonth = (JDate)tmpCalendar.clone();
+		JDate firstDayOfNextMonth = (JDate) tmpCalendar.clone();
 		firstDayOfNextMonth.addMonths();
 
 		int n = 0; // KEEPS TRACK OF DAYS
-		int diff = (int)JDate.difference(tmpCalendar, startOfYear);
+		int diff = (int) JDate.difference(tmpCalendar, startOfYear);
 
-		while (JDate.difference(firstDayOfNextMonth, tmpCalendar) > 0)
-		{
-                    
-                    days[i + n + 7].setText(numFormat.format(n + 1)); //Integer.toString(n + 1))
-                     //days[i + n + 7].setText(Integer.toString(n + 1));
-                    
-                        //Potentially there might be a need to change the font of the numbers here;
-                        //for those cases where non-numbers are used to mark a calendar!
+		while (JDate.difference(firstDayOfNextMonth, tmpCalendar) > 0) {
+
+			days[i + n + 7].setText(numFormat.format(n + 1)); // Integer.toString(n + 1))
+			// days[i + n + 7].setText(Integer.toString(n + 1));
+
+			// Potentially there might be a need to change the font of the numbers here;
+			// for those cases where non-numbers are used to mark a calendar!
 			days[i + n + 7].setVisible(true);
 
 			// SEE IF THIS DAY IS TODAY
-			if (tmpCalendar.equals(today))
-			{
+			if (tmpCalendar.equals(today)) {
 				days[i + n + 7].setForeground(dukeBlue);
-				
+
 			}
 
 			// SEE IF THIS IS A SUNDAY
-			if (tmpCalendar.getDayOfWeek() == 0)
-			{
+			if (tmpCalendar.getDayOfWeek() == 0) {
 				days[i + n + 7].setForeground(sundayForeground);
-			}
-			else
-			{
+			} else {
 				days[i + n + 7].setForeground(weekdayForeground);
-			}	
-			
+			}
+
 //			System.out.println(tmpCalendar.toString());
 			// CHECK IF THIS DAY IS A FEAST DAY
-			if (feasts.containsKey(tmpCalendar.getJulianDay()))
-			{
+			if (feasts.containsKey(tmpCalendar.getJulianDay())) {
 				// THIS IS A FEAST DAY
 				days[i + n + 7].setForeground(weekdayForeground);
 				days[i + n + 7].setBackground(sundayForeground);
-				days[i + n + 7].setToolTipText((String)feasts.get(tmpCalendar.getJulianDay()));
-			} 
-			else
-			{
-			//	days[i + n + 7].setBackground(commonBackground);
+				days[i + n + 7].setToolTipText(feasts.get(tmpCalendar.getJulianDay()));
+			} else {
+				// days[i + n + 7].setBackground(commonBackground);
 				days[i + n + 7].setBackground(commonBackgrounds[fasts[diff]]);
 				days[i + n + 7].setToolTipText(null);
 			}
 
 			// CHECK IF THIS DAY IS SELECTED
-			if (this.day == (n + 1))
-			{
+			if (this.day == (n + 1)) {
 				oldColor = days[i + n + 7].getBackground();
 				days[i + n + 7].setBackground(selectedColor);
 				selectedDay = days[i + n + 7];
 			}
-/**			else
-			{
-				days[i + n + 7].setBackground(commonBackground);
-			}**/
+			/**
+			 * else { days[i + n + 7].setBackground(commonBackground); }
+			 **/
 
 			// WE ARE NOT GOING TO WORRY ABOUT THE CALENDAR BEING OUT OF BOUNDS
 			// THOUGH WE PROBABLY SHOULD
@@ -322,8 +306,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 			tmpCalendar.addDays(1);
 		}
 
-		for (int k = n + i + 7; k < 49; k++)
-		{
+		for (int k = n + i + 7; k < 49; k++) {
 			// HIDE THE BUTTONS THAT COME AFTER THE END OF THE MONTH
 			days[k].setVisible(false);
 			days[k].setText("");
@@ -332,110 +315,102 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		// DRAW THE TONES
 		drawTones();
 	}
-        private void drawDaysGregorian()
-	{
-            //THIS COMPUTES THE GREGORIAN CALENDAR DAYS: THERE ARE SOME ISSUES, NAMELY
-            //ALIGNING THE JULIAN OBSERVATIONS (FEASTS/FASTS) WITH THEIR CORRESPONDING GREGORIAN DATE!
-            //WE WILL NEED TO USE PCalendar to disambiguate between systems.
-		
-                PCalendar tmpJulianC = new PCalendar((JDate) today.clone(),"julian",Analyse.getDayInfo());
-                PCalendar tmpGregorianC = new PCalendar(new JDate(tmpJulianC.getYearG(),tmpJulianC.getMonthG(),tmpJulianC.getDayG()),"gregorian",Analyse.getDayInfo());
-		int firstDayOfWeek = 0;
-		//implicitly using the Gregorian calendar at this point.
-                JDate tmpCalendar = new JDate(tmpJulianC.getYearG(),tmpJulianC.getMonthG(),tmpJulianC.getDayG());
-                
-                //We know need to know the correct feasts and the like
-                feasts = Paschalion.getFeasts(tmpGregorianC.getYearJ(),Analyse.getDayInfo());
-		int[] fastsA = Paschalion.getFasts(tmpGregorianC.getYearJ());
-                int[] fastsB = Paschalion.getFasts(tmpGregorianC.getYearJ()-1);
-                int[] fastsP = Paschalion.getFasts(tmpGregorianC.getYearJ()+1);
-                
-                //we need to determine if we need to consider additional cases before and after since the Gregorian year and Julian year may not align.
-                feasts.putAll(Paschalion.getFeasts((int) tmpGregorianC.getYearJ()-1,Analyse.getDayInfo()));
-                feasts.putAll(Paschalion.getFeasts((int) tmpGregorianC.getYearJ()+1,Analyse.getDayInfo()));
-                //System.out.println(feasts);
-                fasts=Arrays.copyOf(fastsB, fastsA.length + fastsB.length+fastsP.length);
-                System.arraycopy(fastsA, 0, fasts, fastsB.length, fastsA.length);
-                System.arraycopy(fastsP,0,fasts,fastsB.length+fastsA.length,fastsP.length);
 
-                // SET CALENDAR TO START OF THE MONTH
+	private void drawDaysGregorian() {
+		// THIS COMPUTES THE GREGORIAN CALENDAR DAYS: THERE ARE SOME ISSUES, NAMELY
+		// ALIGNING THE JULIAN OBSERVATIONS (FEASTS/FASTS) WITH THEIR CORRESPONDING
+		// GREGORIAN DATE!
+		// WE WILL NEED TO USE PCalendar to disambiguate between systems.
+
+		PCalendar tmpJulianC = new PCalendar((JDate) today.clone(), "julian", analyse.getDayInfo());
+		PCalendar tmpGregorianC = new PCalendar(
+				new JDate(tmpJulianC.getYearG(), tmpJulianC.getMonthG(), tmpJulianC.getDayG()), "gregorian",
+				analyse.getDayInfo());
+		int firstDayOfWeek = 0;
+		// implicitly using the Gregorian calendar at this point.
+		JDate tmpCalendar = new JDate(tmpJulianC.getYearG(), tmpJulianC.getMonthG(), tmpJulianC.getDayG());
+
+		// We know need to know the correct feasts and the like
+		feasts = Paschalion.getFeasts(tmpGregorianC.getYearJ(), analyse.getDayInfo());
+		int[] fastsA = Paschalion.getFasts(tmpGregorianC.getYearJ());
+		int[] fastsB = Paschalion.getFasts(tmpGregorianC.getYearJ() - 1);
+		int[] fastsP = Paschalion.getFasts(tmpGregorianC.getYearJ() + 1);
+
+		// we need to determine if we need to consider additional cases before and after
+		// since the Gregorian year and Julian year may not align.
+		feasts.putAll(Paschalion.getFeasts(tmpGregorianC.getYearJ() - 1, analyse.getDayInfo()));
+		feasts.putAll(Paschalion.getFeasts(tmpGregorianC.getYearJ() + 1, analyse.getDayInfo()));
+		// System.out.println(feasts);
+		fasts = Arrays.copyOf(fastsB, fastsA.length + fastsB.length + fastsP.length);
+		System.arraycopy(fastsA, 0, fasts, fastsB.length, fastsA.length);
+		System.arraycopy(fastsP, 0, fasts, fastsB.length + fastsA.length, fastsP.length);
+
+		// SET CALENDAR TO START OF THE MONTH
 		tmpCalendar.subtractDays(tmpCalendar.getDay() - 1);
 		int firstDay = tmpCalendar.getDayOfWeek() - firstDayOfWeek;
-		JDate startOfYear = new JDate(1, 1, tmpCalendar.getYear()-1);
+		JDate startOfYear = new JDate(1, 1, tmpCalendar.getYear() - 1);
 
-		if (firstDay < 0)
-		{
+		if (firstDay < 0) {
 			firstDay += 7;
 		}
 
 		int i;
 
-		for (i = 0; i < firstDay; i++)
-		{
+		for (i = 0; i < firstDay; i++) {
 			days[i + 7].setVisible(false);
 			days[i + 7].setText("");
 		}
 
-		JDate firstDayOfNextMonth = (JDate)tmpCalendar.clone();
+		JDate firstDayOfNextMonth = (JDate) tmpCalendar.clone();
 		firstDayOfNextMonth.addMonths();
 
 		int n = 0; // KEEPS TRACK OF DAYS
-		int diff = (int)JDate.difference(tmpCalendar, startOfYear);
+		int diff = (int) JDate.difference(tmpCalendar, startOfYear);
 
-		while (JDate.difference(firstDayOfNextMonth, tmpCalendar) > 0)
-		{
+		while (JDate.difference(firstDayOfNextMonth, tmpCalendar) > 0) {
 
-                    days[i + n + 7].setText(numFormat.format(n + 1)); //Integer.toString(n + 1))
-                     //days[i + n + 7].setText(Integer.toString(n + 1));
+			days[i + n + 7].setText(numFormat.format(n + 1)); // Integer.toString(n + 1))
+			// days[i + n + 7].setText(Integer.toString(n + 1));
 
-                        //Potentially there might be a need to change the font of the numbers here;
-                        //for those cases where non-numbers are used to mark a calendar!
+			// Potentially there might be a need to change the font of the numbers here;
+			// for those cases where non-numbers are used to mark a calendar!
 			days[i + n + 7].setVisible(true);
 
 			// SEE IF THIS DAY IS TODAY
-			if (tmpCalendar.equals(today))
-			{
+			if (tmpCalendar.equals(today)) {
 				days[i + n + 7].setForeground(dukeBlue);
 
 			}
 
 			// SEE IF THIS IS A SUNDAY
-			if (tmpCalendar.getDayOfWeek() == 0)
-			{
+			if (tmpCalendar.getDayOfWeek() == 0) {
 				days[i + n + 7].setForeground(sundayForeground);
-			}
-			else
-			{
+			} else {
 				days[i + n + 7].setForeground(weekdayForeground);
 			}
 
 //			System.out.println(tmpCalendar.toString());
 			// CHECK IF THIS DAY IS A FEAST DAY
-			if (feasts.containsKey(tmpCalendar.getJulianDay()))
-			{
+			if (feasts.containsKey(tmpCalendar.getJulianDay())) {
 				// THIS IS A FEAST DAY
 				days[i + n + 7].setForeground(weekdayForeground);
 				days[i + n + 7].setBackground(sundayForeground);
-				days[i + n + 7].setToolTipText((String)feasts.get(tmpCalendar.getJulianDay()));
-			}
-			else
-			{
-			//	days[i + n + 7].setBackground(commonBackground);
+				days[i + n + 7].setToolTipText(feasts.get(tmpCalendar.getJulianDay()));
+			} else {
+				// days[i + n + 7].setBackground(commonBackground);
 				days[i + n + 7].setBackground(commonBackgrounds[fasts[diff]]);
 				days[i + n + 7].setToolTipText(null);
 			}
 
 			// CHECK IF THIS DAY IS SELECTED
-			if (this.day == (n + 1))
-			{
+			if (this.day == (n + 1)) {
 				oldColor = days[i + n + 7].getBackground();
 				days[i + n + 7].setBackground(selectedColor);
 				selectedDay = days[i + n + 7];
 			}
-/**			else
-			{
-				days[i + n + 7].setBackground(commonBackground);
-			}**/
+			/**
+			 * else { days[i + n + 7].setBackground(commonBackground); }
+			 **/
 
 			// WE ARE NOT GOING TO WORRY ABOUT THE CALENDAR BEING OUT OF BOUNDS
 			// THOUGH WE PROBABLY SHOULD
@@ -445,8 +420,7 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 			tmpCalendar.addDays(1);
 		}
 
-		for (int k = n + i + 7; k < 49; k++)
-		{
+		for (int k = n + i + 7; k < 49; k++) {
 			// HIDE THE BUTTONS THAT COME AFTER THE END OF THE MONTH
 			days[k].setVisible(false);
 			days[k].setText("");
@@ -456,63 +430,52 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		drawTones();
 	}
 
-	private void drawTones()
-	{
-		String[] numerals =Text.obtainValues(Text.getPhrases().get("Tones"));
-		
+	private void drawTones() {
+		String[] numerals = text.obtainValues(text.getPhrases().get("Tones"));
 
-		// THIS WILL WORK FOR ALL TIMES EXCEPT DURING LENT 
+		// THIS WILL WORK FOR ALL TIMES EXCEPT DURING LENT
 		// WE'LL LEAVE IT AT THAT, FOR NOW
-		//System.out.println(today.getYear());
+		// System.out.println(today.getYear());
 		JDate pentecost = Paschalion.getPentecost(today.getYear());
-		JDate tmpDate   = new JDate(today.getMonth(), 1, today.getYear());
-		JDate pascha    = Paschalion.getPascha(today.getYear());
+		JDate tmpDate = new JDate(today.getMonth(), 1, today.getYear());
+		JDate pascha = Paschalion.getPascha(today.getYear());
 
 		// SET TO A SUNDAY, SINCE SUNDAYS DETERMINE TONES
 		int dow = tmpDate.getDayOfWeek();
 		tmpDate.subtractDays(dow);
 
-		for (int i = 1; i < 7; i++)
-		{
-			int dif = (int)Math.floor(JDate.difference(tmpDate, pentecost) / 7);
-			int df2 = (int)Math.floor(JDate.difference(tmpDate, pascha) / 7);
-			int tone = 0; 
-			//System.out.println(df2);
+		for (int i = 1; i < 7; i++) {
+			int dif = (int) Math.floor(JDate.difference(tmpDate, pentecost) / 7);
+			int df2 = (int) Math.floor(JDate.difference(tmpDate, pascha) / 7);
+			int tone = 0;
+			// System.out.println(df2);
 
-			if (dif > 0) 
-			{
+			if (dif > 0) {
 				// WE ARE AFTER PENTECOST
 				// COMPUTE THE TONE BASED ON THE WEEKS AFTER PENTECOST
 				tone = (dif % 8) + 7;
-			}
-			else if (df2 > 0 && dif != 0)
-			{
+			} else if (df2 > 0 && dif != 0) {
 				// WE ARE BETWEEN PASCHA AND PENTECOST
 				// COMPUTE THE TONE BASED ON THE WEEKS AFTER PASCHA
 				// THE SUNDAY OF MYRRH-BEARERS IS TONE II
 				tone = (df2 % 8);
-			}
-			else if (df2 < -1)
-			{
+			} else if (df2 < -1) {
 				// WE ARE BEFORE PASCHA
 				// COMPUTE THE TONE BASED ON LAST YEAR'S PENTECOST
 				JDate pentecost2 = Paschalion.getPentecost(today.getYear() - 1);
-				int dif3 = (int)Math.floor(JDate.difference(tmpDate, pentecost2) / 7);
+				int dif3 = (int) Math.floor(JDate.difference(tmpDate, pentecost2) / 7);
 				tone = (Math.abs(dif3) % 8) + 7;
-			}
-			else
-			{
+			} else {
 				// THERE IS NO "TONE" FOR PALM SUNDAY, PASCHA, AND PENTECOST
 				tone = 0;
 			}
 
-			if (tone > 8)
-			{
+			if (tone > 8) {
 				tone -= 8;
 			}
 
 			tones[i].setText(numerals[tone]);
-                        tones[i].setFont(CurrentFont);
+			tones[i].setFont(currentFont);
 
 			if ((i == 5) || (i == 6)) {
 				tones[i].setVisible(days[i * 7].isVisible());
@@ -521,39 +484,35 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		}
 	}
 
-	protected void setDay(int d)
-	{
+	protected void setDay(final int d) {
+		int td = d;
 		// CHECK FOR THE VALIDITY OF THIS d
-		if (d < 1)
-		{
-			d = 1;
+		if (td < 1) {
+			td = 1;
 		}
 
-		/**JDate tmpCalendar = new JDate(today.getMonth(), 1, today.getYear());
-		tmpCalendar.addMonths(1);
-		tmpCalendar.subtractDays(1); **/
+		/**
+		 * JDate tmpCalendar = new JDate(today.getMonth(), 1, today.getYear());
+		 * tmpCalendar.addMonths(1); tmpCalendar.subtractDays(1);
+		 **/
 		int max = JDate.getMaxDaysInMonth(today.getMonth(), today.getYear());
 
-		if (d > max)
-		{
-			d = max;
+		if (td > max) {
+			td = max;
 		}
 
 		// CHANGE THE SELECTED BUTTON TO d
 		int oldDay = this.day;
-		this.day = d;
+		this.day = td;
 
-		if (selectedDay != null)
-		{
-			//selectedDay.setBackground(commonBackgrounds[0]);
+		if (selectedDay != null) {
+			// selectedDay.setBackground(commonBackgrounds[0]);
 			selectedDay.setBackground(oldColor);
 			selectedDay.repaint();
 		}
 
-		for (int i = 7; i < 49; i++)
-		{
-			if (days[i].getText().equals(numFormat.format(d)))
-			{
+		for (int i = 7; i < 49; i++) {
+			if (days[i].getText().equals(numFormat.format(d))) {
 				selectedDay = days[i];
 				oldColor = selectedDay.getBackground();
 				selectedDay.setBackground(selectedColor);
@@ -564,13 +523,11 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		firePropertyChange("day", oldDay, day);
 	}
 
-	protected void setMonth(int month)
-	{
-		int y   = today.getYear();
+	protected void setMonth(int month) {
+		int y = today.getYear();
 		int max = JDate.getMaxDaysInMonth(month, y);
 
-		if (day > max) 
-		{
+		if (day > max) {
 			day = max;
 		}
 
@@ -579,48 +536,42 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		drawDays();
 	}
 
-	protected int getMonth()
-	{
+	protected int getMonth() {
 		return today.getMonth();
 	}
 
-	protected void setYear(int year)
-	{
-		if (year < 33)
-		{
+	protected void setYear(int year) {
+		if (year < 33) {
 			year = 33;
 		}
 
 		int m = today.getMonth();
 		int max = JDate.getMaxDaysInMonth(m, year);
 
-		if (day > max)
-		{
-			day = max;	// TAKES CARE OF LEAP DAYS
+		if (day > max) {
+			day = max; // TAKES CARE OF LEAP DAYS
 		}
 
 		today = new JDate(m, day, year);
-		//setDay(day);
+		// setDay(day);
 		init();
 	}
 
-	protected int getYear()
-	{
+	protected int getYear() {
 		return today.getYear();
 	}
 
-	public void updateUI()
-	{
+	@Override
+	public void updateUI() {
 		super.updateUI();
-		//setFont(Font.decode("Times 11"));
+		// setFont(Font.decode("Times 11"));
 
-		if (tonePanel != null)
-		{
+		if (tonePanel != null) {
 			tonePanel.updateUI();
 		}
 
 		if (initialized) {
-			if ("Windows".equals(UIManager.getLookAndFeel().getID())) {
+			if (WINDOWS.equals(UIManager.getLookAndFeel().getID())) {
 				setDayBordersVisible(false);
 				setDecorationBackgroundVisible(true);
 				setDecorationBordersVisible(false);
@@ -632,12 +583,11 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		}
 	}
 
-	private void setDayBordersVisible(boolean dayBordersVisible)
-	{
-		//this.dayBordersVisible = dayBordersVisible;
+	private void setDayBordersVisible(boolean dayBordersVisible) {
+		// this.dayBordersVisible = dayBordersVisible;
 		if (initialized) {
 			for (int x = 7; x < 49; x++) {
-				if ("Windows".equals(UIManager.getLookAndFeel().getID())) {
+				if (WINDOWS.equals(UIManager.getLookAndFeel().getID())) {
 					days[x].setContentAreaFilled(dayBordersVisible);
 				} else {
 					days[x].setContentAreaFilled(true);
@@ -647,14 +597,12 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		}
 	}
 
-	private void setDecorationBackgroundVisible(boolean decorationBackgroundVisible) 
-	{
+	private void setDecorationBackgroundVisible(boolean decorationBackgroundVisible) {
 		this.decorationBackgroundVisible = decorationBackgroundVisible;
 		initDecorations();
 	}
 
-	private void setDecorationBordersVisible(boolean decorationBordersVisible)
-	{
+	private void setDecorationBordersVisible(boolean decorationBordersVisible) {
 		this.decorationBordersVisible = decorationBordersVisible;
 		initDecorations();
 	}
@@ -677,26 +625,22 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 
 	// IMPLEMENTED METHODS
 	//
-	public void actionPerformed(ActionEvent e)
-	{
-		JButton button = (JButton)e.getSource();
+	public void actionPerformed(ActionEvent e) {
+		JButton button = (JButton) e.getSource();
 		String buttonText = button.getText();
-		int day = new Integer(buttonText);
-		setDay(day);
+		int parsedDay = Integer.parseInt(buttonText);
+		setDay(parsedDay);
 	}
 
-	public void focusGained(FocusEvent e)
-	{
+	public void focusGained(FocusEvent e) {
 		// ...
 	}
 
-	public void focusLost(FocusEvent e)
-	{
+	public void focusLost(FocusEvent e) {
 		// ...
 	}
 
-	public void keyPressed(KeyEvent e)
-	{
+	public void keyPressed(KeyEvent e) {
 		int offset = (e.getKeyCode() == KeyEvent.VK_UP) ? (-7)
 				: ((e.getKeyCode() == KeyEvent.VK_DOWN) ? (+7)
 						: ((e.getKeyCode() == KeyEvent.VK_LEFT) ? (-1)
@@ -706,40 +650,37 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		setDay(newday);
 	}
 
-	public void keyTyped(KeyEvent e)
-	{
+	public void keyTyped(KeyEvent e) {
 
 	}
 
-	public void keyReleased(KeyEvent e)
-	{
+	public void keyReleased(KeyEvent e) {
 
 	}
 
-	protected int getDay()
-	{
+	protected int getDay() {
 		return day;
 	}
 
-	class PlaceholderButton extends JButton
-	{
-		protected PlaceholderButton()
-		{
+	class PlaceholderButton extends JButton {
+		protected PlaceholderButton() {
 			setBackground(decorBackground);
 			setContentAreaFilled(decorationBackgroundVisible);
 			setBorderPainted(decorationBordersVisible);
 		}
 
+		@Override
 		public void addMouseListener(MouseListener l) {
 		}
 
+		@Override
 		public boolean isFocusable() {
 			return false;
 		}
 
-		public void paint(Graphics g) 
-		{
-			if ("Windows".equals(UIManager.getLookAndFeel().getID())) {
+		@Override
+		public void paint(Graphics g) {
+			if (WINDOWS.equals(UIManager.getLookAndFeel().getID())) {
 				// this is a hack to get the background painted
 				// when using Windows Look & Feel
 				if (decorationBackgroundVisible) {
@@ -754,11 +695,10 @@ class JDaySelector extends JPanel implements ActionListener, KeyListener, FocusL
 		}
 	}
 
-	public static void main(String[] argz)
-	{
+	public static void main(String[] argz) {
 		// FOR TESTING PURPOSES ONLY!!!
 		JFrame frame = new JFrame("TESTING THE CALENDAR CONTROL");
-		//frame.getContentPane().add(new JDaySelector());
+		// frame.getContentPane().add(new JDaySelector());
 		frame.pack();
 		frame.setVisible(true);
 	}

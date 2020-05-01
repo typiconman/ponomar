@@ -73,7 +73,7 @@ public class ReadText implements DocHandler
 		{
 			// EXECUTE THE COMMAND, AND STOP IF IT IS FALSE
 			
-			if (analyse.evalbool(table.get("Cmd")) == false)
+			if (!analyse.evalbool(table.get("Cmd")))
 			{
 				return;
 			}
