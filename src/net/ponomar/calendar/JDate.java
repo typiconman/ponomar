@@ -140,7 +140,7 @@ public class JDate implements Comparable<JDate>, Cloneable
 
 	/**
 	 * Constructor to create a JDate object.
-	 * @param  long A Julian date
+	 * @param  jday A Julian date
 	 * @throws IllegalArgumentException if the Julian date < 0
 	 */
 	public JDate(long jday) throws IllegalArgumentException
@@ -563,6 +563,12 @@ public class JDate implements Comparable<JDate>, Cloneable
 		}
 
 		return (year % 4 == 0) ? daysInMonthLeap[month - 1] : daysInMonth[month - 1];
+	}
+	
+	public String toString() {
+		final String month = String.format("%02d", getMonth());
+		final String day = String.format("%02d", getDay());
+		return getYear() + "-" +  month + "-" + day;
 	}
 
 }

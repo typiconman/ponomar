@@ -304,7 +304,7 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 		}
 		if (name.equals(fileNames[1])) {
 			// SAVE THE CURRENT WINDOW
-			helper.saveHTMLFile(mainNames[5] + " " + today + ".html",
+			helper.saveHTMLFile(mainNames[5] + today + ".html",
 					"<html><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"><title>"
 							+ phrases.getPhrases().get("0") + colon + today + "</title>" + output);
 		}
@@ -413,7 +413,8 @@ public class Main extends JFrame implements PropertyChangeListener, HyperlinkLis
 	private void write() {
 		text.setContentType(Constants.CONTENT_TYPE);
 		text.setFont(currentFont);
-		text.setText(generateContent());
+		output = generateContent();
+		text.setText(output);
 		text.setCaretPosition(0);
 	}
 

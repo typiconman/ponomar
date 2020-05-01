@@ -693,8 +693,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         }
         if (name1.equals(fileNames[1])) {
             //SAVE THE CURRENT WINDOW
-            System.out.println(strOut);
-            helper.saveHTMLFile(name, strOut);
+            String strippedName = name.replace("<sup>", "").replace("</sup>", "");
+            helper.saveHTMLFile(strippedName, strOut);
         }
         if (name1.equals(fileNames[4])) {
             //CLOSE THE PRIMES FRAME
