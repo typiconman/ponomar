@@ -40,6 +40,8 @@ import java.util.LinkedHashMap;
  */
 public class Search extends JFrame implements ActionListener
 {
+	private static final String N_A = "N/A;\t";
+	private static final String EXISTS = "Exists;\t";
 	private static final String LIVES_PATH = "xml/lives/";
 	//SOME QUICK NOTES FOR FURTHER IMPLEMENTATION:
 	//THE DATE OR THE RELEVANT INFORMATION WILL HAVE TO BE GIVEN
@@ -149,39 +151,39 @@ public class Search extends JFrame implements ActionListener
                             found.append(file.getName().subSequence(0, file.getName().length() - 4)).append("\t").append(nameF).append("\t");
                             count+=1;
                             if (new File(Constants.LANGUAGES_PATH + "/fr/" + LIVES_PATH + file.getName()).exists()){
-                                found.append("Exists;\t");
+                                found.append(EXISTS);
                             }else{
-                                found.append("N/A;\t");
+                                found.append(N_A);
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/cu/" + LIVES_PATH + file.getName()).exists()){
-                                found.append("Exists;\t");
+                                found.append(EXISTS);
                             }else{
-                                found.append("N/A;\t");
+                                found.append(N_A);
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/cu/ru/" + LIVES_PATH + file.getName()).exists()){
-                                found.append("Exists;\t");
+                                found.append(EXISTS);
                             }else{
-                                found.append("N/A;\t");
+                                found.append(N_A);
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/zh/Hant/" + LIVES_PATH + file.getName()).exists()){
-                                found.append("Exists;\t");
+                                found.append(EXISTS);
                             }else{
-                                found.append("N/A;\t");
+                                found.append(N_A);
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/zh/Hans/" + LIVES_PATH + file.getName()).exists()){
-                                found.append("Exists;\t");
+                                found.append(EXISTS);
                             }else{
-                                found.append("N/A;\t");
+                                found.append(N_A);
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/el/" + LIVES_PATH + file.getName()).exists()){
-                                found.append("Exists;\t");
+                                found.append(EXISTS);
                             }else{
-                                found.append("N/A;\t");
+                                found.append(N_A);
                             }
                             if (new File(Constants.LANGUAGES_PATH + "/el/mono/" + LIVES_PATH + file.getName()).exists()){
-                                found.append("Exists;\t");
+                                found.append(EXISTS);
                             }else{
-                                found.append("N/A;\t");
+                                found.append(N_A);
                             }
                             found.append("<BR>");
                         }
