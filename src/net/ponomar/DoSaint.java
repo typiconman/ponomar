@@ -251,7 +251,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 		}
 
 		Pair<String, Pair<String, String>> tropar2Triple = fillHymn(TROPARION, "2");
-		tropar2 = troparTriple.getKey();
+		tropar2 = tropar2Triple.getKey();
 		if (tropar2 != null) {
 			troparT2 = tropar2Triple.getValue().getKey();
 			troparP2 = tropar2Triple.getValue().getValue();
