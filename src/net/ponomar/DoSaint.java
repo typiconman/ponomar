@@ -9,8 +9,6 @@ import java.nio.charset.StandardCharsets;
 
 import javax.swing.event.*;
 
-import javafx.util.Pair;
-
 import java.awt.event.*;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.panels.IconDisplay;
@@ -243,46 +241,50 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 	}
 
 	private void fillHymns() {
-		Pair<String, Pair<String, String>> troparTriple = fillHymn(TROPARION, "1");
-		tropar = troparTriple.getKey();
+		String[] troparTriple = fillHymn(TROPARION, "1");
+		tropar = troparTriple[0];
 		if (tropar != null) {
-			troparT = troparTriple.getValue().getKey();
-			troparP = troparTriple.getValue().getValue();
+			troparT = troparTriple[1];
+			troparP = troparTriple[2];
 		}
 
-		Pair<String, Pair<String, String>> tropar2Triple = fillHymn(TROPARION, "2");
-		tropar2 = tropar2Triple.getKey();
+		String[] tropar2Triple = fillHymn(TROPARION, "2");
+		tropar2 = tropar2Triple[0];
 		if (tropar2 != null) {
-			troparT2 = tropar2Triple.getValue().getKey();
-			troparP2 = tropar2Triple.getValue().getValue();
+			troparT2 = tropar2Triple[1];
+			troparP2 = tropar2Triple[2];
 		}
 
-		Pair<String, Pair<String, String>> kondakTriple = fillHymn(KONTAKION, "1");
-		kondak = kondakTriple.getKey();
+		String[] kondakTriple = fillHymn(KONTAKION, "1");
+		kondak = kondakTriple[0];
 		if (kondak != null) {
-			kondak = kondakTriple.getValue().getKey();
-			kondak = kondakTriple.getValue().getValue();
+			kondakT = kondakTriple[1];
+			kondakP = kondakTriple[2];
 		}
 
-		Pair<String, Pair<String, String>> kondak2Triple = fillHymn(KONTAKION, "2");
-		kondak2 = kondak2Triple.getKey();
+		String[] kondak2Triple = fillHymn(KONTAKION, "2");
+		kondak2 = kondak2Triple[0];
 		if (kondak2 != null) {
-			kondak2 = kondak2Triple.getValue().getKey();
-			kondak2 = kondak2Triple.getValue().getValue();
+			kondakT2 = kondak2Triple[1];
+			kondakP2 = kondak2Triple[2];
 		}
 	}
 
-	protected Pair<String, Pair<String, String>> fillHymn(String hymnConstant, String hymnNumber) {
+	protected String[] fillHymn(String hymnConstant, String hymnNumber) {
 		LinkedHashMap<String, String> kontakionInfo = saintInfo2.getService("/LITURGY/" + hymnConstant, hymnNumber);
+		String[] hymnInfo = new String[3];
 		if (kontakionInfo != null) {
+			hymnInfo[0] = kontakionInfo.get("text");
+			hymnInfo[1] = kontakionInfo.get("Tone");
 			String podobenMelody = "";
 			if (kontakionInfo.get(PODOBEN) != null) {
 				podobenMelody = kontakionInfo.get(PODOBEN);
-			}
-			return new Pair<>(kontakionInfo.get("text"), new Pair<>(kontakionInfo.get("Tone"), podobenMelody));
-
+			} 
+			hymnInfo[2] = podobenMelody;
+			return hymnInfo;
 		} else {
-			return new Pair<>(null, null);
+			hymnInfo[0] = null;
+			return hymnInfo;
 		}
 	}
 

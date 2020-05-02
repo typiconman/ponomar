@@ -21,8 +21,6 @@ import java.util.*;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
-import javax.swing.BoxLayout;
-
 /*
  * Copyright 2007, 2008 Aleksandr Andreev.
  * Copyright 2012 Yuri Shardt and Aleksandr Andreev.
@@ -622,7 +620,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         // first, define some variables
         changeIt = false;
         instructions = "";
-
+        try {
         String[] stuff = parseReadings(newBook, newPassage, versed);
 
         curbook = newBook;
@@ -633,8 +631,8 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         textOutput.setContentType(Constants.CONTENT_TYPE);
         textOutput.setFont(currentFont);
         String headerA = header.replace(NAME, books.get(curbook));
-        headerA = headerA.replace("^CNN", formatPassage(curpassage));
-        
+            headerA = headerA.replace("^CNN", formatPassage(curpassage));        	
+
 
         printText = "<body style=\"font-family:" + displayFont + ";font-size:" + displaySize + "pt\">" + headerA +  stuff[0] + "</body>";
 
@@ -650,7 +648,9 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         instructionsText.setText("<body style=\"font-family:" + displayFont + ";font-size:" + displaySize + "pt\">" + instructions + "</body>");
         instructionsText.setFont(currentFont);
         changeIt = true;
-
+        } catch (Exception e) {
+            textOutput.setText("");
+         }
 
     }
 
@@ -691,7 +691,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
         }
         k = mText.indexOf('|');
         if (k != -1 && redStuff) {
-            int verseNo=Integer.parseInt(mText.substring(0, k));
+            int verseNo=Integer.parseInt(mText.substring(0, k).trim());
             String textVerse=mText.substring(k+1);
             if (mText.substring(k+1).equals(" ")){
                 textVerse=mText.substring(k+2);
@@ -700,7 +700,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 return verseNumber[0].replace("^TT",textVerse); //mText.substring(k+2));
             }
             else{
-                String versedText=verseNumbered.replace("^VN",verseNumber[Integer.parseInt(mText.substring(0, k))]);
+                String versedText=verseNumbered.replace("^VN",verseNumber[Integer.parseInt(mText.substring(0, k).trim())]);
                 versedText=versedText.replace("^VT",textVerse);//mText.substring(k+2));
                 return versedText;
             //return " <SUP>" + VerseNumber[Integer.parseInt(mText.substring(0, k))] + "</SUP>" + mText.substring(k + 1); //ADDED A SPACE BETWEEN THE LAST SENTENCE AND THE VERSE NUMBER Y.S. AND CORRECTED MULTILINGUAL ISSUES
@@ -942,10 +942,9 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
 
             Enumeration<Integer> e2 = Collections.enumeration(pVerses);
 
-            for (Enumeration<Integer> e = Collections.enumeration(pChapters); e.hasMoreElements();) {
-                Object c = e.nextElement();
+            for (int c : pChapters) {
                 //Correcting issues with not being able to read all the desired readings Y.S. 2008/12/12 n.s.
-                while (nCurChapter != Integer.parseInt(c.toString())) {
+                while (nCurChapter != c) {
                     mLine = br.readLine();
                     if (mLine == null) {
                         break;
@@ -972,9 +971,9 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                     }
                 }
 
-                Object v = e2.nextElement();
+                int v = e2.nextElement();
                 //Correcting issues with not being able to read all the desired readings Y.S. 2008/12/12 n.s.
-                while (nCurVerse != Integer.parseInt(v.toString())) {
+                while (nCurVerse != v) {
                     if (mLine == null) {
                         break;
                     }
@@ -983,16 +982,16 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                     // format number|text, where number is verse number
                     int n = mLine.indexOf('|');
                     if (n != -1) {
-                        nCurVerse = Integer.parseInt(mLine.substring(0, n));
+                        nCurVerse = Integer.parseInt(mLine.substring(0, n).trim());
                     }
                     //Correcting issues with not being able to read all the desired readings Y.S. 2008/12/12 n.s.
-                    if (printMe || nCurVerse == Integer.parseInt(v.toString()) || nCurVerse == 0) {
+                    if (printMe || nCurVerse == v || nCurVerse == 0) {
                         if (!ret.toString().equals("")){
                         ret.append(verseLink).append(process(mLine, redStuff));
                         }else{
                             ret.append(process(mLine, redStuff));
                         }
-                        if (nCurChapter == Integer.parseInt(pChapters.get(0).toString()) && nCurVerse == Integer.parseInt(pVerses.get(0).toString())) {
+                        if (nCurChapter == pChapters.get(0) && nCurVerse == pVerses.get(0)) {
                             //THE FIRST VERSE HAS BEEN READ, THE INSTRUCTIONS ASSOCIATED WITH THIS VERSE NEED TO BE SAVED
                             instructFirst = instructions;
                         }
@@ -1001,19 +1000,21 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 }
                 printMe = !printMe;
             }
-            //CHANGED TO ALLOW FOR NON-ASCII FILES Y.S. 2008/10/24 ns
+           //CHANGED TO ALLOW FOR NON-ASCII FILES Y.S. 2008/10/24 ns
             br.close();
         } catch (Exception ioe) {
-            ioe.printStackTrace();
+            return null;
         }
 
         String[] output1 = new String[3];
         output1[0] = ret.toString();
         output1[1] = instructFirst;
-        String headerA = header.replace(NAME, books.get(curbook));
-        headerA = headerA.replace("^CNN", formatPassage(curpassage));
-        
-        output1[2] = headerA;
+            String headerA = header.replace(NAME, books.get(curbook));
+            headerA = headerA.replace("^CNN", formatPassage(curpassage));
+            
+            output1[2] = headerA;
+
+
         return output1;
     }
 

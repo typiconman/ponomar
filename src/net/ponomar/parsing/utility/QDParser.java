@@ -50,7 +50,6 @@ public class QDParser {
 		int mode = PRE;
 		int c = 0;
 		int quotec = '"';
-		depth = 0;
 		StringBuilder sb = new StringBuilder();
 		StringBuilder etag = new StringBuilder();
 		String tagName = null;

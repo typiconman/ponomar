@@ -1,7 +1,5 @@
 package net.ponomar.readings.utility;
 
-import java.util.Collections;
-import java.util.Enumeration;
 import java.util.LinkedHashMap;
 import java.util.ArrayList;
 
@@ -23,14 +21,17 @@ public final class ReadingUtility {
 		for (LinkedHashMap menaionReading : menaionReadings) {
 			LinkedHashMap reading = (LinkedHashMap) menaionReading.get(READINGS_KEY);
 			LinkedHashMap readings = (LinkedHashMap) reading.get(READINGS_KEY);
-			for (Enumeration<String> e = Collections.enumeration(readings.keySet()); e.hasMoreElements(); ) {
-				String element1 = e.nextElement();
-				if (combinedReadings.get(element1) != null) {
-					combinedReadings.put(element1, combineWithExistingReading(combinedReadings, reading, readings, element1));
-				} else {
-					combinedReadings.put(element1, readingDoesNotExist(reading, readings, element1));
-				}
-			}
+			readings.forEach((k,v) -> iterationOverReadings(combinedReadings, reading, readings, k.toString()));
+
+		}
+	}
+
+	private static void iterationOverReadings(LinkedHashMap<String, LinkedHashMap<String, ArrayList<String>>> combinedReadings,
+			LinkedHashMap reading, LinkedHashMap readings, String key) {
+		if (combinedReadings.get(key) != null) {
+			combinedReadings.put(key, combineWithExistingReading(combinedReadings, reading, readings, key));
+		} else {
+			combinedReadings.put(key, readingDoesNotExist(reading, readings, key));
 		}
 	}
 	

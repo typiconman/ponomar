@@ -57,19 +57,10 @@ public class RoyalHours extends LitService {
 								+ primesNames[1],
 						JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 			} else {
-				// strOut=strOut+"<p><Font Color='red'>Disclaimer: This is a preliminary attempt
-				// at creating the Primes service.</Font></p>";
-				// int LangCode=Integer.parseInt(Analyse.getDayInfo().get("LS").toString());
-				// if (LangCode==2 || LangCode==3 ){
-				// strOut="<meta http-equiv=\"Content-Type\"
-				// content=\"text/html;charset=UTF-8\"><p><font face=\"Ponomar Unicode TT\"
-				// size=\"5\">"+strOut+"</font></p>";
-				// System.out.println("Added Font");
-				// }
-
 				serviceWindow(strOut);
 			}
 		} catch (IOException j) {
+			j.printStackTrace();
 		}
 
 	}

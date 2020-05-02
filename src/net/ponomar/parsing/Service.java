@@ -72,75 +72,71 @@ public class Service implements DocHandler
                 text=new LanguagePack(dayInfo);
                 serviceNames=text.obtainValues(text.getPhrases().get("ServiceRead"));
         }
-        public String startService(String fileName)
-	{
-		findLanguage=new Helpers(analyse.getDayInfo());
-                
-                whoLast="";
-		count=-1;
-		//Service1="";
-                header1="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n<head>\n";//<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
-                style="<style type=\"text/css\">\nrubric {color:red;font-weight:bold}\np {margin-left:.5in;text-indent:-.5in}\nh1 {color:red;font-weight:bold;text-align:center}\ncomment {color:red;font-size:50%;font-style:italic}\ncommand {color:red;font-style:italic}\nh2 {color:red;font-size:110%;text-align:center}\n";
 
-                /*int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
-                                if (LangCode==2 || LangCode==3 ){
-                                    Style=Style+"body {font-family:\"Ponomar Unicode TT\";font-size:18pt}\n";
-                                    //System.out.println("Added Font");
-                                   }
-                                else{
-                                    Style=Style+"body {font-size:12pt}\n";
-                                }*/
-                String displayFont= text.getPhrases().get("FontFaceL");
-                String displaySize= text.getPhrases().get("FontSizeL");
-                
-                Font value1 = (Font)UIManager.get ("Menu.font");
-                if (displaySize == null || displaySize.equals(""))
-                {
-                    displaySize=Integer.toString(value1.getSize());
-                }
-                if (displayFont == null || displayFont.equals(""))
-                {
-                    displayFont=value1.getFontName();
-                }
-                displaySize=Integer.toString(Math.max(Integer.parseInt(displaySize), value1.getSize())); //If the default user's font size is larger than the required there is not need to change it.
-                //The specified fonts sizes are the mininum required.
-                style+="body {font-family:"+displayFont+";font-size:"+displaySize+"}\n</head>";
+	public String startService(String fileName) {
+		findLanguage = new Helpers(analyse.getDayInfo());
+
+		whoLast = "";
+		count = -1;
+		// Service1="";
+		header1 = "<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n<head>\n";
+		// <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
+		style = "<style type=\"text/css\">\nrubric {color:red;font-weight:bold}\np {margin-left:.5in;text-indent:-.5in}\nh1 {color:red;font-weight:bold;text-align:center}\ncomment {color:red;font-size:50%;font-style:italic}\ncommand {color:red;font-style:italic}\nh2 {color:red;font-size:110%;text-align:center}\n";
+
+		/*
+		 * int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString()); if
+		 * (LangCode==2 || LangCode==3 ){
+		 * Style=Style+"body {font-family:\"Ponomar Unicode TT\";font-size:18pt}\n";
+		 * //System.out.println("Added Font"); } else{
+		 * Style=Style+"body {font-size:12pt}\n"; }
+		 */
+		String displayFont = text.getPhrases().get("FontFaceL");
+		String displaySize = text.getPhrases().get("FontSizeL");
+
+		Font value1 = (Font) UIManager.get("Menu.font");
+		if (displaySize == null || displaySize.equals("")) {
+			displaySize = Integer.toString(value1.getSize());
+		}
+		if (displayFont == null || displayFont.equals("")) {
+			displayFont = value1.getFontName();
+		}
+		// If the default user's font size is larger than the required there is not need to change it.
+		displaySize = Integer.toString(Math.max(Integer.parseInt(displaySize), value1.getSize())); 
+		// The specified fonts sizes are the mininum required.
+		style += "body {font-family:" + displayFont + ";font-size:" + displaySize + "}\n</head>";
 		return readService(fileName);
 	}
-	public String readService(String fileName) //throws IOException
-	{
-		service1="";
-                System.out.println("In the body, we have that "+analyse.getDayInfo().get("PFlag3"));
-               
 
-            	try
-		{
-			BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(),fileName)), StandardCharsets.UTF_8));
+	public String readService(String fileName)	{
+		service1 = "";
+		//System.out.println("In the body, we have that " + analyse.getDayInfo().get("PFlag3"));
+
+		try {
+			BufferedReader frf = new BufferedReader(new InputStreamReader(
+					new FileInputStream(findLanguage.langFileFind(analyse.getDayInfo().get("LS").toString(), fileName)),
+					StandardCharsets.UTF_8));
 			QDParser.parse(this, frf);
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 			e.printStackTrace();
-			//return "";			//THERE WAS AN ERROR IN PROCESSING THE FILES
+			// return "";
+			// THERE WAS AN ERROR IN PROCESSING THE FILES
 		}
-                
-                return "<html>\n"+header1+style+"</style>\n</head>\n<body>"+service1+"</body></html>";
+
+		return "<html>\n" + header1 + style + "</style>\n</head>\n<body>" + service1 + "</body></html>";
 	}
-	public String closeService()
-	{
-		//THIS CLOSES THE SERVICE TEXT APPROPRIATELY
-		whoLast="";
-		count=-1;
+
+	public String closeService() {
+		// THIS CLOSES THE SERVICE TEXT APPROPRIATELY
+		whoLast = "";
+		count = -1;
 		return "</p>";
 	}
-				
-	public void startDocument()
-	{
+
+	public void startDocument() {
 
 	}
 
-	public void endDocument()
-	{
+	public void endDocument() {
 
 	}
 

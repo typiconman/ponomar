@@ -171,20 +171,15 @@ public class Commemoration implements DocHandler {
             location1 += "/" + elem;
             //elemRH=elem;
             value = new LinkedHashMap<>();
-            for (Enumeration<String> e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
-                String type = e.nextElement();
-                value.put(type, table.get(type));
-            }            
+            table.forEach((k,v) -> value.put(k, v));
             return;
         }
 
         if (readRH && read) {
             elemRH = elem;
             value = new LinkedHashMap<>();
-            for (Enumeration<String> e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
-                String type = e.nextElement();
-                value.put(type, table.get(type));
-            }
+            table.forEach((k,v) -> value.put(k, v));
+
         }
         if (elem.equals("SCRIPTURE") && read) {
             String type = table.get("Type");
@@ -209,10 +204,7 @@ public class Commemoration implements DocHandler {
             if (grammar == null) {
                 grammar = new LinkedHashMap<>();
             }
-            for (Enumeration<String> e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
-                String type = e.nextElement();
-                grammar.put(type, table.get(type));
-            }
+            table.forEach((k,v) -> grammar.put(k, v));
             information.put("Grammar", grammar);
         }
         //if (elem.equals("SERVICE") && read) {
@@ -241,10 +233,7 @@ public class Commemoration implements DocHandler {
         if (elem.equals("NAME") && read) {
             //grammar=new OrderedHashtable();
             //System.out.println("Hello World: This is Name testing!");
-            for (Enumeration<String> e = Collections.enumeration(table.keySet()); e.hasMoreElements();) {
-                String type = e.nextElement();
-                grammar.put(type, table.get(type));
-            }
+            table.forEach((k,v) -> grammar.put(k, v));
             information.put(Constants.GRAMMAR, grammar);
             //Information.put("Nominative", table.get("Nominative").toString());
             //Information.put("Short", table.get("Short").toString());

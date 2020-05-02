@@ -82,12 +82,8 @@ public class ConfigurationFiles implements DocHandler
 			out.write("<CONFIGURATION>");
 			out.newLine();
 			output = new StringBuilder("<DEFAULT ");
-			for(Enumeration<String> e=Collections.enumeration(getDefaults().keySet()); e.hasMoreElements();)				
-			{
-				String key = e.nextElement();
-				String value=getDefaults().get(key);
-				output.append(key).append(" = \"").append(value).append("\" ");
-			}
+			getDefaults().forEach((k,v) -> output.append(k).append(" = \"").append(v).append("\" "));
+
 			output.append(" />");
 			out.write(output.toString());
 			out.newLine();
@@ -111,20 +107,15 @@ public class ConfigurationFiles implements DocHandler
 		
 		if (elem.equals("DEFAULT"))
 		{
-			for(Enumeration<String> e=Collections.enumeration(table.keySet()); e.hasMoreElements();)
-			{
-				
-				String entry = e.nextElement();
-				String value = table.get(entry);
-				
-				if(value != null && entry != null)
-				{
-					getDefaults().put(entry,value);
-				}
-			}
-			
+            table.forEach((k,v) -> checkAndPutDefaults(k, v));
 		}		
-		return;
+	}
+
+	private void checkAndPutDefaults(String entry, String value) {
+		if(value != null && entry != null)
+		{
+			getDefaults().put(entry,value);
+		}
 	}
 	
 	public void endElement(String elem) { }

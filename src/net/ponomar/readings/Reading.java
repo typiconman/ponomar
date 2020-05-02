@@ -215,14 +215,12 @@ public abstract class Reading implements DocHandler {
 
 		Bible shortForm = new Bible(getInformation3().getDayInfo());
 		try {
-			Enumeration e3 = Collections.enumeration(listV);
 			for (int k = 0; k < listV.size(); k++) {
 				String reading = (String) listV.get(k);
 				output.append(shortForm.getHyperlink(reading));
 
 				if ((Integer) listR.get(k) == -2) {
 					if (listV.size() > 1) {
-						int tag = listT.get(k);
 						output.append(" (").append(week(listT.get(k).toString())).append(")");
 					}
 				} else {
