@@ -451,7 +451,7 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             }
             chaptersBox.setListData(dummy.toArray(new String[0]));
             curbook = books.keySet().toArray()[n].toString();
-            int curchap = curpassage.indexOf(':') != -1 ? (int) Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':'))) : (int) Integer.parseInt(curpassage);
+            int curchap = curpassage.indexOf(':') != -1 ? Integer.parseInt(curpassage.substring(0, curpassage.indexOf(':'))) : Integer.parseInt(curpassage);
             chaptersBox.setSelectedValue(curchap, true);
             changeIt = true;
         } else if ((e.getSource().equals(chaptersBox)) && !e.getValueIsAdjusting()) {

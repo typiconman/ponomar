@@ -8,6 +8,9 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 import javax.swing.event.*;
+
+import javafx.util.Pair;
+
 import java.awt.event.*;
 import net.ponomar.internationalization.LanguagePack;
 import net.ponomar.panels.IconDisplay;
@@ -22,7 +25,7 @@ import net.ponomar.utility.Helpers;
  
 import net.ponomar.utility.StringOp;
 
-/***********************************************************************
+/*
 (C) 2007, 2008, 2012 YURI SHARDT. ALL RIGHTS RESERVED.
 Updated some parts to make it compatible with the changes in Ponomar, especially the language issues!
 
@@ -36,7 +39,7 @@ THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
 OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
- ***********************************************************************/
+*/
 
 /**
  * 
@@ -51,7 +54,14 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     //TO THE PROGRAMME. AT PRESENT IT WILL BE ASSUMED THAT IT IS TONE 1
     //DURING THE COURSE OF A SINGLE WEEK.
 
-    private static final String PODOBEN = "Podoben";
+    private static final String KONTAKION = "KONTAKION";
+	private static final String TROPARION = "TROPARION";
+	private static final String PARAGRAPH_TAG_CLOSE = "</p>";
+	private static final String H2_TAG_CLOSE = "</h2>";
+	private static final String H2_TAG_CENTERED = "<h2 style=\"text-align: center;\">";
+	private static final String PARAGRAPH_TAG_CENTERED = "<p style=\"text-align: center;\">";
+	private static final String DOUBLE_NEWLINE = "\n \n";
+	private static final String PODOBEN = "Podoben";
 	private static final String PODOBNI = Constants.COMMANDS + "Podobni.xml";
 	private String life = "";
     private String tropar = "";
@@ -74,7 +84,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     private String name = "";
     private String copyright = ""; //Any additional information about the life.
     private LanguagePack text; //= new LanguagePack();
-    private LinkedHashMap<String, String> podobni;
+    private LinkedHashMap<String, String> podobniMap;
     
     
     //private static String fileNameIn = Constants.SERVICES_PATH + "PRIMES1/";
@@ -94,41 +104,41 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
     //private PrimeSelector SelectorP=new PrimeSelector();
     private PrintableTextPane output;
     //private JEditorPane output;
-   
-   
     
     private Commemoration saintInfo2;
     private Bible bible;
     private String name2;
     private StringOp analyse=new StringOp();
 
-    public DoSaint(Commemoration saintInfo, LinkedHashMap<String, Object> dayInfo) {
-        //Get the Podobni
-        analyse.setDayInfo(dayInfo);
-        text = new LanguagePack(dayInfo);
-        //PrimesNames = Text.obtainValues((String) Text.Phrases.get("Primes"));
-    languageNames = text.obtainValues(text.getPhrases().get(Constants.LANGUAGE_MENU));
+	public DoSaint(Commemoration saintInfo, LinkedHashMap<String, Object> dayInfo) {
+		// Get the Podobni
+		analyse.setDayInfo(dayInfo);
+		text = new LanguagePack(dayInfo);
+		// PrimesNames = Text.obtainValues((String) Text.Phrases.get("Primes"));
+		languageNames = text.obtainValues(text.getPhrases().get(Constants.LANGUAGE_MENU));
 
-    fileNames = text.obtainValues(text.getPhrases().get("File"));
-    helpNames = text.obtainValues(text.getPhrases().get("Help"));
-    helper=new Helpers(analyse.getDayInfo());
+		fileNames = text.obtainValues(text.getPhrases().get("File"));
+		helpNames = text.obtainValues(text.getPhrases().get("Help"));
+		helper = new Helpers(analyse.getDayInfo());
 
-        podobni = new LinkedHashMap<>();
-        try {
-            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(),PODOBNI)), StandardCharsets.UTF_8));
-            QDParser.parse(this, frf);
-        } catch (Exception primes) {
-            primes.printStackTrace();
-        }
-        refresh(saintInfo);
-    }
+		podobniMap = new LinkedHashMap<>();
+		try {
+			BufferedReader frf = new BufferedReader(new InputStreamReader(
+					new FileInputStream(helper.langFileFind(analyse.getDayInfo().get("LS").toString(), PODOBNI)),
+					StandardCharsets.UTF_8));
+			QDParser.parse(this, frf);
+		} catch (Exception primes) {
+			primes.printStackTrace();
+		}
+		refresh(saintInfo);
+	}
 
-    public void refresh(Commemoration saintInfo) {
-        
-        saintInfo2=saintInfo;
-        createWindow();
+	public void refresh(Commemoration saintInfo) {
 
-  }
+		saintInfo2 = saintInfo;
+		createWindow();
+
+	}
 
 	private void createWindow()// (String textOut)
 	{
@@ -137,49 +147,8 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 		name2 = saintInfo2.getGrammar("Short");
 		life = saintInfo2.getLife();
 		copyright = saintInfo2.getLifeCopyright();
-		LinkedHashMap<String, String> troparInfo = saintInfo2.getService("/LITURGY/TROPARION", "1");
-		if (troparInfo != null) {
-			tropar = troparInfo.get("text");
-			troparT = troparInfo.get("Tone");
-			if (troparInfo.get(PODOBEN) != null) {
-				troparP = troparInfo.get(PODOBEN);
-			}
-		} else {
-			tropar = null;
-		}
 
-		LinkedHashMap<String, String> troparInfo2 = saintInfo2.getService("/LITURGY/TROPARION", "2");
-		if (troparInfo2 != null) {
-			tropar2 = troparInfo2.get("text");
-			troparT2 = troparInfo2.get("Tone");
-			if (troparInfo2.get(PODOBEN) != null) {
-				troparP2 = troparInfo2.get(PODOBEN);
-			}
-		} else {
-			tropar2 = null;
-		}
-
-		LinkedHashMap<String, String> kontakionInfo = saintInfo2.getService("/LITURGY/KONTAKION", "1");
-		if (kontakionInfo != null) {
-			kondak = kontakionInfo.get("text");
-			kondakT = kontakionInfo.get("Tone");
-			if (kontakionInfo.get(PODOBEN) != null) {
-				kondakP = kontakionInfo.get(PODOBEN);
-			}
-		} else {
-			kondak = null;
-		}
-
-		LinkedHashMap<String, String> kontakionInfo2 = saintInfo2.getService("/LITURGY/KONTAKION", "2");
-		if (kontakionInfo2 != null) {
-			kondak2 = kontakionInfo2.get("text");
-			kondakT2 = kontakionInfo2.get("Tone");
-			if (kontakionInfo2.get(PODOBEN) != null) {
-				kondakP2 = kontakionInfo2.get(PODOBEN);
-			}
-		} else {
-			kondak2 = null;
-		}
+		fillHymns();
 
 		text = new LanguagePack(analyse.getDayInfo());
 		String[] toneNumbers = text.obtainValues(text.getPhrases().get("Tones"));
@@ -202,33 +171,15 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 		strOut = textOut;
 		JPanel contentPane = new JPanel(new BorderLayout());
 		contentPane.setOpaque(true);
-		output = new PrintableTextPane();
-		output.addHyperlinkListener(this);
-		// output=new JEditorPane();
-		output.setEditable(false);
-		output.setSize(800, 700);
-		output.setContentType(Constants.CONTENT_TYPE);
-		// output.setText(header);
-		output.setText(textOut);
-		output.setCaretPosition(0);
-		contentPane.add(output);
+		setPrintableTextPane(textOut, contentPane);
 
 		JScrollPane scrollPane = new JScrollPane(output);
-		JMenuBar menuBarElement = new JMenuBar();
-		MenuFiles demo = new MenuFiles(analyse.getDayInfo());
-		// PrimeSelector trial=new PrimeSelector();
-		menuBarElement.add(demo.createFileMenu(this));
-		// MenuBar.add(trial.createPrimeMenu());
-		menuBarElement.add(demo.createHelpMenu(this));
-		frames.setJMenuBar(menuBarElement);
-		// trial.addPropertyChangeListener(this);
+		setMenuBar();
 
 		contentPane.add(scrollPane, BorderLayout.CENTER);
 		right.add(contentPane);
 
-		JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
-		splitter.setLeftComponent(left);
-		splitter.setRightComponent(right);
+		JSplitPane splitter = generateSplitter(left, right);
 
 		frames.add(splitter);
 
@@ -247,7 +198,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 		left.add(new JPanel(), BorderLayout.NORTH);
 		left.add(icons, BorderLayout.CENTER);
 		left.add(new JPanel(), BorderLayout.SOUTH);
-//        contentPane.add(icons);
+		// contentPane.add(icons);
 		// textOut+=icons;
 		// output.setText(textOut);
 
@@ -260,194 +211,224 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
 		// scrollPane.top();
 	}
 
-	protected String generateContent(String[] toneNumbers, String[] saintInfo) {
+	private JSplitPane generateSplitter(JPanel left, JPanel right) {
+		JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+		splitter.setLeftComponent(left);
+		splitter.setRightComponent(right);
+		return splitter;
+	}
+
+	private void setMenuBar() {
+		JMenuBar menuBarElement = new JMenuBar();
+		MenuFiles demo = new MenuFiles(analyse.getDayInfo());
+		// PrimeSelector trial=new PrimeSelector();
+		menuBarElement.add(demo.createFileMenu(this));
+		// MenuBar.add(trial.createPrimeMenu());
+		menuBarElement.add(demo.createHelpMenu(this));
+		frames.setJMenuBar(menuBarElement);
+		// trial.addPropertyChangeListener(this);
+	}
+
+	private void setPrintableTextPane(String textOut, JPanel contentPane) {
+		output = new PrintableTextPane();
+		output.addHyperlinkListener(this);
+		// output=new JEditorPane();
+		output.setEditable(false);
+		output.setSize(800, 700);
+		output.setContentType(Constants.CONTENT_TYPE);
+		// output.setText(header);
+		output.setText(textOut);
+		output.setCaretPosition(0);
+		contentPane.add(output);
+	}
+
+	private void fillHymns() {
+		Pair<String, Pair<String, String>> troparTriple = fillHymn(TROPARION, "1");
+		tropar = troparTriple.getKey();
+		if (tropar != null) {
+			troparT = troparTriple.getValue().getKey();
+			troparP = troparTriple.getValue().getValue();
+		}
+
+		Pair<String, Pair<String, String>> tropar2Triple = fillHymn(TROPARION, "2");
+		tropar2 = troparTriple.getKey();
+		if (tropar2 != null) {
+			troparT2 = tropar2Triple.getValue().getKey();
+			troparP2 = tropar2Triple.getValue().getValue();
+		}
+
+		Pair<String, Pair<String, String>> kondakTriple = fillHymn(KONTAKION, "1");
+		kondak = kondakTriple.getKey();
+		if (kondak != null) {
+			kondak = kondakTriple.getValue().getKey();
+			kondak = kondakTriple.getValue().getValue();
+		}
+
+		Pair<String, Pair<String, String>> kondak2Triple = fillHymn(KONTAKION, "2");
+		kondak2 = kondak2Triple.getKey();
+		if (kondak2 != null) {
+			kondak2 = kondak2Triple.getValue().getKey();
+			kondak2 = kondak2Triple.getValue().getValue();
+		}
+	}
+
+	protected Pair<String, Pair<String, String>> fillHymn(String hymnConstant, String hymnNumber) {
+		LinkedHashMap<String, String> kontakionInfo = saintInfo2.getService("/LITURGY/" + hymnConstant, hymnNumber);
+		if (kontakionInfo != null) {
+			String podobenMelody = "";
+			if (kontakionInfo.get(PODOBEN) != null) {
+				podobenMelody = kontakionInfo.get(PODOBEN);
+			}
+			return new Pair<>(kontakionInfo.get("text"), new Pair<>(kontakionInfo.get("Tone"), podobenMelody));
+
+		} else {
+			return new Pair<>(null, null);
+		}
+	}
+
+	private String generateContent(String[] toneNumbers, String[] saintInfo) {
 		String textOut = "";
-        
-        if (name.equals("")) {
-            textOut = saintInfo[6];
-        } else {
-            String displayFontM = text.getPhrases().get(Constants.FONT_FACE_M);
-            String displaySizeM = text.getPhrases().get(Constants.FONT_SIZE_M);
-            Font value1 = (Font) UIManager.get("Menu.font");
-            if (displaySizeM == null || displaySizeM.equals("")) {
-                displaySizeM = Integer.toString(value1.getSize());
-            }
-            if (displayFontM == null || displayFontM.equals("")) {
-                displayFontM = value1.getFontName();
-            }
-            displaySizeM = Integer.toString(Math.max(Integer.parseInt(displaySizeM), value1.getSize()));
 
-            textOut = "<body style=\"font-family:" + displayFontM + ";font-size:" + displaySizeM + ";\"><h1 style=\"text-align: center;\">" + name + "</h1>";
-            if (life != null && !life.equals("")) {
-                textOut += "<h2 style=\"text-align: center;\">" + saintInfo[0] + "</h2>" + "<p style=\"text-align: center;\"><small>" + copyright + "</small></p>" + "<p>" + life + "</p>";
-            }
+		if (name.equals("")) {
+			textOut = saintInfo[6];
+		} else {
+			Font value1 = (Font) UIManager.get("Menu.font");
 
-            //Get the language settings
-            String displayFont = text.getPhrases().get("FontFaceL");
-            String displaySize = text.getPhrases().get("FontSizeL");
-            
-            if (displaySize == null || displaySize.equals("")) {
-                displaySize = Integer.toString(value1.getSize());
-            }
-            if (displayFont == null || displayFont.equals("")) {
-                displayFont = value1.getFontName();
-            }
-            displaySize = Integer.toString(Math.max(Integer.parseInt(displaySize), value1.getSize())); //If the default user's font size is larger than the required there is not need to change it.
-           
-            if (tropar != null && !tropar.isEmpty() && !tropar.equals("\n \n")) {
-                textOut += "<h2 style=\"text-align: center;\">" + saintInfo[1] + "</h2>";
-                String toneFormat = "";
-                try
-                {
-                 int tone = -1;
-                    tone = Integer.parseInt(troparT);
+			String displaySizeM = getDisplaySize(value1, Constants.FONT_SIZE_M);
+			String displayFontM = getDisplayFont(value1, Constants.FONT_FACE_M);
+			displaySizeM = Integer.toString(Math.max(Integer.parseInt(displaySizeM), value1.getSize()));
 
+			textOut = "<body style=\"font-family:" + displayFontM + ";font-size:" + displaySizeM
+					+ ";\"><h1 style=\"text-align: center;\">" + name + "</h1>";
+			if (life != null && !life.equals("")) {
+				textOut += H2_TAG_CENTERED + saintInfo[0] + H2_TAG_CLOSE
+						+ PARAGRAPH_TAG_CENTERED + "<small>" + copyright + "</small>"+PARAGRAPH_TAG_CLOSE + "<p>" + life
+						+ PARAGRAPH_TAG_CLOSE;
+			}
 
-                
+			// Get the language settings
+			String displaySize = getDisplaySize(value1, "FontSizeL");
+			String displayFont = getDisplayFont(value1, "FontFaceL");
+			// If the default user's font size is larger than the required there is not need to change it.
+			displaySize = Integer.toString(Math.max(Integer.parseInt(displaySize), value1.getSize())); 
 
-                if (tone != -1) {
-                    toneFormat = saintInfo[4];
-                    toneFormat = toneFormat.replace("TT", toneNumbers[tone]);
-                }
-                }
-                catch (Exception e)
-                {
-                    toneFormat=troparT;
-                }
-                if (troparP != null && !troparP.isEmpty()) {
-                    textOut += "<p style=\"text-align: center;\">" + toneFormat + saintInfo[5] + saintInfo[2] + podobni.get(troparT + troparP) + "</p>";
-                } else {
-                    textOut += "<p style=\"text-align: center;\">" + toneFormat + "</p>";
-                }
-                textOut += "<p style=\"font-family:" + displayFont + ";font-size:" + displaySize + "\">" + tropar + "</p>";
-            }
+			if (checkHymn(tropar)) {
+				textOut += generateHymn(toneNumbers, saintInfo, displaySize, displayFont, troparP, troparT, tropar, saintInfo[1]);
+			}
 
-            if (tropar2 != null && !tropar2.isEmpty() && !tropar2.equals("\n \n")) {
-                textOut += "<h2 style=\"text-align: center;\">" + saintInfo[1] + "</h2>";
-                String toneFormat = "";
-                try
-                {
-                 int tone = -1;
-                    tone = Integer.parseInt(troparT2);
+			if (checkHymn(tropar2)) {
+				textOut += generateHymn(toneNumbers, saintInfo, displaySize, displayFont, troparP2, troparT2, tropar2, saintInfo[1]);
+			}
 
+			if (checkHymn(kondak)) {
+				textOut += generateHymn(toneNumbers, saintInfo, displaySize, displayFont, kondakP, kondakT, kondak, saintInfo[3]);
+			}
 
-
-
-                if (tone != -1) {
-                    toneFormat = saintInfo[4];
-                    toneFormat = toneFormat.replace("TT", toneNumbers[tone]);
-                }
-                }
-                catch (Exception e)
-                {
-                    toneFormat=troparT2;
-                }
-                if (troparP2 != null && !troparP2.isEmpty()) {
-                    textOut += "<p style=\"text-align: center;\">" + toneFormat + saintInfo[5] + saintInfo[2] + podobni.get(troparT2 + troparP2) + "</p>";
-                } else {
-                    textOut += "<p style=\"text-align: center;\">" + toneFormat + "</p>";
-                }
-                textOut += "<p style=\"font-family:" + displayFont + ";font-size:" + displaySize + "\">" + tropar2 + "</p>";
-            }
-
-            if (kondak != null && !kondak.isEmpty() && !kondak.equals("\n \n")) {
-                textOut += "<h2 style=\"text-align: center;\">" + saintInfo[3] + "</h2>";
-                
-                String toneFormat = "";
-
-                try
-                {
-                    int tone = Integer.parseInt(kondakT);
-                if (tone != -1) {
-                    toneFormat = saintInfo[4];
-                    toneFormat = toneFormat.replace("TT", toneNumbers[tone]);
-                }
-                }
-                catch (Exception e)
-                {
-                    toneFormat=kondakT;
-                }
-                
-                if (kondakP != null && !kondakP.isEmpty()) {
-                    textOut += "<p style=\"text-align: center;\">" + toneFormat + saintInfo[5] + saintInfo[2] + podobni.get(kondakT + kondakP) + "</p>";
-                } else {
-                    textOut += "<p style=\"text-align: center;\">" + toneFormat + "</p>";
-                }
-                textOut += "<p style=\"font-family:" + displayFont + ";font-size:" + displaySize + "\">" + kondak + "</p>";
-            }
-
-            if (kondak2 != null && !kondak2.isEmpty() && !kondak2.equals("\n \n")) {
-                textOut += "<h2 style=\"text-align: center;\">" + saintInfo[3] + "</h2>";
-
-                String toneFormat = "";
-
-                try
-                {
-                    int tone = Integer.parseInt(kondakT2);
-                if (tone != -1) {
-                    toneFormat = saintInfo[4];
-                    toneFormat = toneFormat.replace("TT", toneNumbers[tone]);
-                }
-                }
-                catch (Exception e)
-                {
-                    toneFormat=kondakT2;
-                }
-
-                if (kondakP2 != null && !kondakP2.isEmpty()) {
-                    textOut += "<p style=\"text-align: center;\">" + toneFormat + saintInfo[5] + saintInfo[2] + podobni.get(kondakT2 + kondakP2) + "</p>";
-                } else {
-                    textOut += "<p style=\"text-align: center;\">" + toneFormat + "</p>";
-                }
-                textOut += "<p style=\"font-family:" + displayFont + ";font-size:" + displaySize + "\">" + kondak2 + "</p>";
-            }
-        }
+			if (checkHymn(kondak2)) {
+				textOut += generateHymn(toneNumbers, saintInfo, displaySize, displayFont, kondakP2, kondakT2, kondak2, saintInfo[3]);
+			}
+		}
 		return textOut;
 	}
 
-    public void hyperlinkUpdate(HyperlinkEvent e)
-	{
-            if (e.getEventType().toString().equals("ACTIVATED"))
-		{
-			String cmd = e.getDescription();
-			String[] parts = cmd.split("=");
-			if (parts[0].contains("bible"))
-			{
-			String[] parts2=parts[1].split("#");
-                            try
-				{
-					bible.update(parts2[0], parts2[1]);
-					bible.show();
-				} catch (NullPointerException npe) {
-					bible = new Bible(parts2[0], parts2[1],analyse.getDayInfo());
-                                        Helpers orient=new Helpers(analyse.getDayInfo());
-                orient.applyOrientation(bible,(ComponentOrientation)analyse.getDayInfo().get(Constants.ORIENT));
-				}
+	protected boolean checkHymn(String hymn) {
+		return hymn != null && !hymn.isEmpty() && !hymn.equals(DOUBLE_NEWLINE);
+	}
+
+	private String generateHymn(String[] toneNumbers, String[] saintInfo, String displaySize, String displayFont,
+			String podobenMelody, String hymnTone, String hymn, String typeOfHymn) {
+		String hymnOutput = H2_TAG_CENTERED + typeOfHymn + H2_TAG_CLOSE;
+
+		String toneFormat = "";
+
+		try {
+			int tone = -1;
+			tone = Integer.parseInt(hymnTone);
+			if (tone != -1) {
+				toneFormat = saintInfo[4];
+				toneFormat = toneFormat.replace("TT", toneNumbers[tone]);
 			}
-                        else
-                        {
-                           //Deal with a Commemoration Link, but this should be done differently and later.
-                            /*if (parts[0].indexOf("goDoSaint") != -1)
-                            {
-
-                                String[] parts2=parts[1].split("=");
-                                //System.out.println(parts2[1]);
-                                String[] parts3=parts2[1].split(",");
-
-                                Commemoration1 trial1=new Commemoration1(parts3[parts3.length-2],parts3[parts3.length-1]);
-                                if (SaintLink == null){
-                                    System.out.println(parts3[parts3.length-1]);
-
-                                    SaintLink=new DoSaint1(trial1);
-                                }
-                                else
-                                {
-                                    SaintLink.refresh(trial1);
-                                }
-
-                            }*/
-                        }
+		} catch (Exception e) {
+			toneFormat = hymnTone;
 		}
+
+		if (podobenMelody != null && !podobenMelody.isEmpty()) {
+			hymnOutput += PARAGRAPH_TAG_CENTERED + toneFormat + saintInfo[5] + saintInfo[2]
+					+ podobniMap.get(hymnTone + podobenMelody) + PARAGRAPH_TAG_CLOSE;
+		} else {
+			hymnOutput += PARAGRAPH_TAG_CENTERED + toneFormat + PARAGRAPH_TAG_CLOSE;
+		}
+		hymnOutput += "<p style=\"font-family:" + displayFont + ";font-size:" + displaySize + "\">" + hymn
+				+ PARAGRAPH_TAG_CLOSE;
+		return hymnOutput;
+	}
+
+
+	private String getDisplayFont(Font value1, String lookUp) {
+		String displayFont = text.getPhrases().get(lookUp);
+
+		if (displayFont == null || displayFont.equals("")) {
+			displayFont = value1.getFontName();
+		}
+		return displayFont;
+	}
+
+	private String getDisplaySize(Font value1, String lookUp) {
+		String displaySize = text.getPhrases().get(lookUp);
+		if (displaySize == null || displaySize.equals("")) {
+			displaySize = Integer.toString(value1.getSize());
+		}
+		return displaySize;
+	}
+
+	@Override
+
+	public void hyperlinkUpdate(HyperlinkEvent e) {
+		if (e.getEventType().equals(HyperlinkEvent.EventType.ACTIVATED)) {
+			activateHyperlink(e);
+		}
+	}
+
+	private void activateHyperlink(HyperlinkEvent e) {
+		String description = e.getDescription();
+		System.out.println(description);
+		if (description.contains("bible")) {
+			String[] bibleParts = description.split("=")[1].split("#");
+			activateBibleHyperlink(bibleParts[0], bibleParts[1]);
+		} else if (description.contains("saint")) {
+			activateSaintHyperlink(description);
+		}
+	}
+
+	private void activateBibleHyperlink(String book, String chapterAndVerse) {
+		try {
+			bible.update(book, chapterAndVerse);
+			bible.setVisible(true);
+		} catch (NullPointerException npe) {
+			bible = new Bible(book, chapterAndVerse, analyse.getDayInfo());
+			Helpers orient = new Helpers(analyse.getDayInfo());
+			orient.applyOrientation(bible, (ComponentOrientation) analyse.getDayInfo().get(Constants.ORIENT));
+		}
+	}
+	
+	private void activateSaintHyperlink(String description) {
+		System.out.println("Unimplemented hyperlink for: " + description);
+		// Deal with a Commemoration Link, but this should be done differently and
+		// later.
+		/*
+		 * if (parts[0].indexOf("goDoSaint") != -1) {
+		 * 
+		 * String[] parts2=parts[1].split("="); //System.out.println(parts2[1]);
+		 * String[] parts3=parts2[1].split(",");
+		 * 
+		 * Commemoration1 trial1=new
+		 * Commemoration1(parts3[parts3.length-2],parts3[parts3.length-1]); if
+		 * (SaintLink == null){ System.out.println(parts3[parts3.length-1]);
+		 * 
+		 * SaintLink=new DoSaint1(trial1); } else { SaintLink.refresh(trial1); }
+		 * 
+		 * }
+		 */
 	}
 
     public void startDocument() {
@@ -503,13 +484,13 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
                 name=name+"(\u2020 "+repose+")";
             }
         }
-        if (elem.equals("TROPARION") && read) {
+        if (elem.equals(TROPARION) && read) {
             troparT = table.get("Tone");
             if (table.get(PODOBEN) != null) {
                 troparP = table.get(PODOBEN);
             }
         }
-        if (elem.equals("KONTAKION") && read) {
+        if (elem.equals(KONTAKION) && read) {
             kondakT = table.get("Tone");
             if (table.get(PODOBEN) != null) {
                 kondakP = table.get(PODOBEN);
@@ -519,7 +500,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             String tone = table.get("Tone");
             String caseP = table.get("Case");
             String intro = table.get("Intro");
-            podobni.put(tone + caseP, intro);
+            podobniMap.put(tone + caseP, intro);
         }
         /*if(readService && read){
         Location1+="/"+elem;
@@ -551,7 +532,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             //System.out.println(ServiceInfo.get("ROYALHOURS/VERSE"));
             //}
         }
-        if (elem.equals("TROPARION") && read) {
+        if (elem.equals(TROPARION) && read) {
             tropar = textR;
 
             //System.out.println(ServiceInfo);
@@ -559,7 +540,7 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
             //System.out.println(ServiceInfo.get("ROYALHOURS/VERSE"));
             //}
         }
-        if (elem.equals("KONTAKION") && read) {
+        if (elem.equals(KONTAKION) && read) {
             kondak = textR;
 
             //System.out.println(ServiceInfo);
@@ -629,38 +610,16 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         }*/
     }
 
-    public void text(String text) {
-        textR = text;
-        if (text.equals("\n\n")) {
-            textR = "";
-        }
-    }
+	public void text(String text) {
+		textR = text;
+		if (text.equals("\n\n")) {
+			textR = "";
+		}
+	}
 
-    private boolean eval(String expression) throws IllegalArgumentException {
-        return false;
-    }
-   
-
-    public static void main(String[] argz) {
-
-
-        LinkedHashMap<String, String> dayInfo = new LinkedHashMap<>();
-        dayInfo.put("LS", "0");
-        /*setTitle((String)Phrases.Phrases.get("0"));
-        RSep=(String)Phrases.Phrases.get("ReadSep");
-        CSep=(String)Phrases.Phrases.get("CommSep");
-        Colon=(String)Phrases.Phrases.get("Colon");*/
-        dayInfo.put(Constants.FONT_FACE_M, "TimesNewRoman");
-        dayInfo.put(Constants.FONT_SIZE_M, "14");
-        /*StringOp.dayInfo.put("ReadSep",RSep);
-        dayInfo.put("Colon",Colon);
-        Ideographic=(String)Phrases.Phrases.get("Ideographic");*/
-        dayInfo.put(Constants.IDEOGRAPHIC, "0");
-
-        //DoSaint1 test = new DoSaint1("134",dayInfo); //Forefeast of Christmas
-        //System.out.println(Paramony.getService("/KONTAKION","1"));
-
-    }
+	private boolean eval(String expression) throws IllegalArgumentException {
+		return false;
+	}
 
     /*public String readText(String filename) {
         try {
@@ -730,15 +689,32 @@ public class DoSaint implements DocHandler, ActionListener, ItemListener, Proper
         //output.setCaretPosition(output.getDocument().getLength());
     }
 
-    public void propertyChange(PropertyChangeEvent e) {
-        //THERE IS NOTHING HERE TO DO??
-        try {
-            //strOut=createPrimes();
-            //output.setText(strOut);
-            output.setCaretPosition(0);
-        } catch (Exception e1) {
-        }
+	public void propertyChange(PropertyChangeEvent e) {
+		// THERE IS NOTHING HERE TO DO??
+		try {
+			// strOut=createPrimes();
+			// output.setText(strOut);
+			output.setCaretPosition(0);
+		} catch (Exception e1) {
+		}
+	}
+    
+    public static void main(String[] argz) {
+        LinkedHashMap<String, String> dayInfo = new LinkedHashMap<>();
+        dayInfo.put("LS", "0");
+        /*setTitle((String)Phrases.Phrases.get("0"));
+        RSep=(String)Phrases.Phrases.get("ReadSep");
+        CSep=(String)Phrases.Phrases.get("CommSep");
+        Colon=(String)Phrases.Phrases.get("Colon");*/
+        dayInfo.put(Constants.FONT_FACE_M, "TimesNewRoman");
+        dayInfo.put(Constants.FONT_SIZE_M, "14");
+        /*StringOp.dayInfo.put("ReadSep",RSep);
+        dayInfo.put("Colon",Colon);
+        Ideographic=(String)Phrases.Phrases.get("Ideographic");*/
+        dayInfo.put(Constants.IDEOGRAPHIC, "0");
 
+        //DoSaint1 test = new DoSaint1("134",dayInfo); //Forefeast of Christmas
+        //System.out.println(Paramony.getService("/KONTAKION","1"));
     }
 }
 
