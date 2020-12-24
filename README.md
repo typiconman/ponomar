@@ -38,6 +38,8 @@ Although this font is for primarily displaying Church Slavonic, it does contain 
 
 Note that Ponomar uses the TrueType version of this font (Ponomar Unicode TT) because Java has poor support of OpenType fonts.
 
+If you are not on Windows, make sure you also have the Times New Roman font. On Debian and Ubuntu you will find this in the ttf-mscorefonts-installer package.
+
 ### Building from the command line
 
 1) Install an SDK for Java. 
