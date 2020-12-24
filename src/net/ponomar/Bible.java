@@ -325,23 +325,8 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
             String displayFontA = "";
             String displaySizeA = "";
 
-            if (table.get(FONT_FACE) == null) {
-
-                displayFontA = value1a.getFontName();
-                if (displayFontA.equals(Constants.PONOMAR_UNICODE_TT))
-                {
-                    displayFontA = Constants.TIMES_NEW_ROMAN;
-                }
-
-            } else {
-                displayFontA = table.get(FONT_FACE);
-            }
-            if (table.get(FONT_SIZE) == null) {
-
-                displaySizeA = Integer.toString(value1a.getSize());
-            } else {
-                displaySizeA = table.get(FONT_SIZE);
-            }
+            displayFontA = getDisplayFont(table, value1a);
+            displaySizeA = getDisplaySize(table, value1a);
             String name = currentBible;
             String alignText = "left";
             if (table.get(ORIENT) != null) {
@@ -390,25 +375,8 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 //ALLOWINS DIFFERENT FONTS TO BE USED: 2009/02/16 n.s.
                 Font value1 = (Font) UIManager.get("Menu.font");
                 
-
-
-                if (table.get(FONT_FACE) == null) {
-
-                    displayFont = value1.getFontName();
-                    if (displayFont.equals(Constants.PONOMAR_UNICODE_TT))
-                    {
-                        displayFont = Constants.TIMES_NEW_ROMAN;
-                    }
-
-                } else {
-                    displayFont = table.get(FONT_FACE);
-                }
-                if (table.get(FONT_SIZE) == null) {
-
-                    displaySize = Integer.toString(value1.getSize());
-                } else {
-                    displaySize = table.get(FONT_SIZE);
-                }
+                displayFont = getDisplayFont(table, value1);
+                displaySize = getDisplaySize(table, value1);
 
                 currentFont = new Font(displayFont, Font.PLAIN, Integer.parseInt(displaySize));               
 
@@ -420,6 +388,27 @@ public class Bible extends JFrame implements DocHandler, ListSelectionListener, 
                 intro.put(table.get("Id"), table.get("Intro"));  //ADDED Y.S.
                 abbrev.put(table.get("Id"), table.get("Short"));
             }
+        }
+    }
+
+    private String getDisplaySize(HashMap<String, String> table, Font fontValue) {
+        if (table.get(FONT_SIZE) == null) {
+            return Integer.toString(fontValue.getSize());
+        } else {
+            return table.get(FONT_SIZE);
+        }
+    }
+
+    private String getDisplayFont(HashMap<String, String> table, Font fontValue) {
+        if (table.get(FONT_FACE) == null) {
+            String fontValueFont = fontValue.getFamily();
+            if (fontValueFont.equals(Constants.PONOMAR_UNICODE_TT))
+            {
+                fontValueFont = Constants.TIMES_NEW_ROMAN;
+            }
+            return fontValueFont;
+        } else {
+            return table.get(FONT_FACE);
         }
     }
 
