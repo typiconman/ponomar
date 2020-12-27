@@ -19,6 +19,7 @@
 <SCRIPTURE Type="gospel" Reading="Lk_8:22-25" Pericope="37" EffWeek="21" Cmd="ndayF == -172 &amp;&amp; ((doy &gt;= 281 &amp;&amp; doy &lt;= 287))"/>
 <SCRIPTURE Type="gospel" Reading="Lk_9:44-50" Pericope="47" EffWeek="22" Cmd="ndayF == -172 &amp;&amp; ((doy &gt;= 288 &amp;&amp; doy &lt;= 292))"/>
 <SCRIPTURE Type="gospel" Reading="Lk_9:44-50" Pericope="47" EffWeek="22" Cmd="ndayF == -179 &amp;&amp; ((doy &gt;= 288 &amp;&amp; doy &lt;= 290))"/>
+<SCRIPTURE Type="gospel" Pericope="21" Reading="Lk_5:33-39"  Cmd="GS == 0" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>

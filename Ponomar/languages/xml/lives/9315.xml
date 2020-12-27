@@ -5,6 +5,7 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="II Tim_2:11-19" Pericope="293" EffWeek="33" Cmd="nday == -71 &amp;&amp; ((doy &gt;= 29 &amp;&amp; doy &lt;= 44))"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:2-8a" Pericope="88" EffWeek="33" Cmd="nday == -71 &amp;&amp; ((doy &gt;= 29 &amp;&amp; doy &lt;= 44))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:2-8" Pericope="88" Cmd="GS == 0" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>

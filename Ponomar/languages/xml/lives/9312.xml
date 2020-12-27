@@ -4,6 +4,7 @@
 <LITURGY>
 <SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="nday == -74 &amp;&amp; ((doy &gt;= 26 &amp;&amp; doy &lt;= 41))"/>
 <SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -74 &amp;&amp; ((doy &gt;= 26 &amp;&amp; doy &lt;= 41))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="GS == 0" />
 </LITURGY>
 </SERVICE>
 </SAINT>

@@ -14,6 +14,8 @@
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="nday == -91 &amp;&amp; (doy == 17)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="nday == -91 &amp;&amp; ((doy &gt;= 8 &amp;&amp; doy &lt;= 9) || doy == 14 || doy == 16)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="nday == -98 &amp;&amp; ((doy &gt;= 14 &amp;&amp; doy &lt;= 16))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" Cmd="(nday == -91 &amp;&amp; doy &gt; 12) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Lk_17:12-19" Pericope="75" Cmd="(nday == -98 &amp;&amp; doy &gt; 12) &amp;&amp; GS == 0" />
 </LITURGY>
 </SERVICE>
 </SAINT>
