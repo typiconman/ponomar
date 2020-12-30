@@ -75,9 +75,6 @@ acs-*.bib
 # gnuplottex
 *-gnuplottex-*
 
-# hyperref
-*.brf
-
 # knitr
 *-concordance.tex
 *.tikz
@@ -103,9 +100,6 @@ _minted*
 
 # morewrites
 *.mw
-
-# mylatexformat
-*.fmt
 
 # nomencl
 *.nlo
@@ -160,6 +154,8 @@ TSWLatexianTemp*
 .pydevproject
 .DS_Store
 .settings
+.directory
+
 ponomar.tex
 ponomar.log
 
@@ -167,3 +163,8 @@ Makefile.old
 
 # Java stuff
 *.class
+.classpath
+/bin/
+/binary/
+.idea/
+*.iml
