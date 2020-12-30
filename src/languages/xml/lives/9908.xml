@@ -2,8 +2,8 @@
 <SERVICE Type="1">
 <!-- This is the Second Sunday before Nativity -->
 <LITURGY>
-<SCRIPTURE Type="apostol" EffWeek="29" Reading="Col_3:4-11" Pericope="257"/>
-<SCRIPTURE Type="gospel" EffWeek="28" Reading="Lk_14:16-24" Pericope="76"/>
+<!--<SCRIPTURE Type="apostol" EffWeek="29" Reading="Col_3:4-11" Pericope="257"/>
+<SCRIPTURE Type="gospel" EffWeek="28" Reading="Lk_14:16-24" Pericope="76"/>-->
 </LITURGY>
 </SERVICE>
 </SAINT>

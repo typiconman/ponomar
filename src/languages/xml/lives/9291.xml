@@ -7,6 +7,8 @@
 <SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" EffWeek="30" Cmd="nday == -95 &amp;&amp; ((doy &gt;= 7 &amp;&amp; doy &lt;= 20))"/>
 <SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" EffWeek="31" Cmd="nday == -88 &amp;&amp; ((doy &gt;= 11 &amp;&amp; doy &lt;= 12) || (doy &gt;= 14 &amp;&amp; doy &lt;= 15) || doy == 17 || (doy &gt;= 19 &amp;&amp; doy &lt;= 20))"/>
 <SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -95 &amp;&amp; ((doy &gt;= 5 &amp;&amp; doy &lt;= 6))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" Cmd="(nday == -88) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" Cmd="(nday == -95) &amp;&amp; GS == 0" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>
