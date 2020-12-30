@@ -56,9 +56,7 @@ The main Ponomar interface should appear.
 
 An IDE such as Eclipse or IntelliJ will provide a smoother experience with building.
 
-You can remove the binaries by typing
-
-`make clean`
+Alternatively, you can also install in and run from a separate folder using the `make install-separate-directory` and `run-separate-directory`.
 
 ## Perl API
 
