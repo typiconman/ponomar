@@ -18,7 +18,7 @@
 <SCRIPTURE Type="gospel" Reading="Lk_18:18-27" Pericope="91" EffWeek="30" Cmd="nday == -91 &amp;&amp; ((doy &gt;= 9 &amp;&amp; doy &lt;= 10) || (doy &gt;= 14 &amp;&amp; doy &lt;= 17))"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="nday == -84 &amp;&amp; ((doy &gt;= 15 &amp;&amp; doy &lt;= 16) || (doy &gt;= 18 &amp;&amp; doy &lt;= 19) || doy == 21 || doy == 23)"/>
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" EffWeek="31" Cmd="nday == -91 &amp;&amp; (doy == 13 || (doy &gt;= 18 &amp;&amp; doy &lt;= 19) || (doy &gt;= 21 &amp;&amp; doy &lt;= 23))"/>
-<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid)" Cmd="(nday == -84 &amp;&amp; GS == 1) || GS == 0" />
+<SCRIPTURE Type="apostol" Reading="I Tim_1:15-17" Pericope="280 (mid.)" Cmd="GS == 0" />
 <SCRIPTURE Type="gospel" Reading="Lk_18:35-43" Pericope="93" Cmd="GS == 0" /> 
 </LITURGY>
 </SERVICE>
