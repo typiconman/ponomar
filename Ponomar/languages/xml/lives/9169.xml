@@ -10,7 +10,7 @@
 <SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid.)" EffWeek="17" Cmd="ndayF == -217 &amp;&amp; ((doy &gt;= 248 &amp;&amp; doy &lt;= 251) || (doy &gt;= 253 &amp;&amp; doy &lt;= 255))"/>
 <SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid.)" EffWeek="17" Cmd="ndayF == -182 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 282))"/>
 <SCRIPTURE Type="apostol" Reading="II Cor_6:16-7:1" Pericope="182 (mid.)" EffWeek="17" Cmd="ndayF == -189 &amp;&amp; ((doy &gt;= 259 &amp;&amp; doy &lt;= 280))"/>
-<SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" EffWeek="17" Cmd="ndayF == -217 &amp;&amp; ((doy &gt;= 248 &amp;&amp; doy &lt;= 251) || (doy &gt;= 253 &amp;&amp; doy &lt;= 255))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62bug" EffWeek="17" Cmd="ndayF == -217 &amp;&amp; ((doy &gt;= 248 &amp;&amp; doy &lt;= 251) || (doy &gt;= 253 &amp;&amp; doy &lt;= 255))"/>
 <SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" EffWeek="17" Cmd="ndayF == -210 &amp;&amp; ((doy &gt;= 254 &amp;&amp; doy &lt;= 255) || (doy &gt;= 257 &amp;&amp; doy &lt;= 258) || doy == 260 || (doy &gt;= 262 &amp;&amp; doy &lt;= 263))"/>
 <SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" EffWeek="17" Cmd="ndayF == -182 &amp;&amp; (doy == 263)"/>
 <SCRIPTURE Type="gospel" Reading="Mt_15:21-28" Pericope="62" EffWeek="17" Cmd="ndayF == -189 &amp;&amp; ((doy &gt;= 259 &amp;&amp; doy &lt;= 263))"/>
