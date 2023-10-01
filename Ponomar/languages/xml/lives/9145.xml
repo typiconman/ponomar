@@ -2,13 +2,13 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
+<SCRIPTURE Type="apostol" Reading="Gal_1:1-10, 20-2:5" Pericope="198" EffWeek="14" Cmd="ndayF == -241 &amp;&amp; ((doy &gt;= 224 &amp;&amp; doy &lt;= 239))"/>
 <SCRIPTURE Type="apostol" Reading="Gal_1:1-10, 20-2:5" Pericope="198" EffWeek="14" Cmd="ndayF == -206 &amp;&amp; ((doy &gt;= 239 &amp;&amp; doy &lt;= 258))"/>
 <SCRIPTURE Type="apostol" Reading="Gal_1:1-10, 20-2:5" Pericope="198" EffWeek="14" Cmd="ndayF == -234 &amp;&amp; ((doy &gt;= 230 &amp;&amp; doy &lt;= 231) || (doy &gt;= 233 &amp;&amp; doy &lt;= 234) || doy == 236 || (doy &gt;= 238 &amp;&amp; doy &lt;= 239))"/>
-<SCRIPTURE Type="apostol" Reading="Gal_1:1-10, 20-2:5" Pericope="198" EffWeek="14" Cmd="ndayF == -241 &amp;&amp; ((doy &gt;= 224 &amp;&amp; doy &lt;= 239))"/>
 <SCRIPTURE Type="apostol" Reading="Gal_1:1-10, 20-2:5" Pericope="198" EffWeek="14" Cmd="ndayF == -213 &amp;&amp; ((doy &gt;= 235 &amp;&amp; doy &lt;= 256))"/>
 <SCRIPTURE Type="gospel" Reading="Mk_5:1-20" Pericope="19" EffWeek="14" Cmd="ndayF == -213 &amp;&amp; ((doy &gt;= 235 &amp;&amp; doy &lt;= 256))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_5:1-20" Pericope="19" EffWeek="14" Cmd="ndayF == -206 &amp;&amp; ((doy &gt;= 239 &amp;&amp; doy &lt;= 258))"/>
 <SCRIPTURE Type="gospel" Reading="Mk_5:1-20" Pericope="19" EffWeek="14" Cmd="ndayF == -234 &amp;&amp; ((doy &gt;= 230 &amp;&amp; doy &lt;= 231) || (doy &gt;= 233 &amp;&amp; doy &lt;= 234) || doy == 236 || (doy &gt;= 238 &amp;&amp; doy &lt;= 239))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_5:1-20" Pericope="19" EffWeek="14" Cmd="ndayF == -206 &amp;&amp; ((doy &gt;= 239 &amp;&amp; doy &lt;= 258))"/>
 <SCRIPTURE Type="gospel" Reading="Mk_5:1-20" Pericope="19" EffWeek="14" Cmd="ndayF == -241 &amp;&amp; ((doy &gt;= 224 &amp;&amp; doy &lt;= 239))"/>
 </LITURGY>
 </SERVICE>

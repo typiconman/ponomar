@@ -2,13 +2,11 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Heb_8:7-13" Pericope="319" EffWeek="30" Cmd="nday == -97 &amp;&amp; ((doy &gt;= 3 &amp;&amp; doy &lt;= 18))"/>
 <SCRIPTURE Type="apostol" Reading="Heb_11:17-23, 27-31" Pericope="329" EffWeek="31" Cmd="nday == -90 &amp;&amp; ((doy &gt;= 9 &amp;&amp; doy &lt;= 10) || (doy &gt;= 12 &amp;&amp; doy &lt;= 13) || doy == 15 || (doy &gt;= 17 &amp;&amp; doy &lt;= 18))"/>
+<SCRIPTURE Type="apostol" Reading="Heb_8:7-13" Pericope="319" EffWeek="30" Cmd="nday == -97 &amp;&amp; ((doy &gt;= 3 &amp;&amp; doy &lt;= 18))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_9:42-10:1" Pericope="42" EffWeek="31" Cmd="nday == -90 &amp;&amp; ((doy &gt;= 9 &amp;&amp; doy &lt;= 10) || (doy &gt;= 12 &amp;&amp; doy &lt;= 13) || doy == 15 || (doy &gt;= 17 &amp;&amp; doy &lt;= 18))"/>
 <SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" EffWeek="33" Cmd="nday == -97 &amp;&amp; ((doy &gt;= 3 &amp;&amp; doy &lt;= 4))"/>
 <SCRIPTURE Type="gospel" Reading="Mk_8:11-21" Pericope="33" EffWeek="30" Cmd="nday == -97 &amp;&amp; ((doy &gt;= 5 &amp;&amp; doy &lt;= 18))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_9:42-10:1" Pericope="42" EffWeek="31" Cmd="nday == -90 &amp;&amp; ((doy &gt;= 9 &amp;&amp; doy &lt;= 10) || (doy &gt;= 12 &amp;&amp; doy &lt;= 13) || doy == 15 || (doy &gt;= 17 &amp;&amp; doy &lt;= 18))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:13-17" Pericope="54" Cmd="(nday == -90) &amp;&amp; GS == 0" /> 
-<SCRIPTURE Type="gospel" Reading="Mk_8:11-21" Pericope="33" Cmd="(nday == -97) &amp;&amp; GS == 0" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>
