@@ -1,59 +1,19 @@
-JFLAGS = -g
-JC = javac
-.SUFFIXES: .java .class
-.java.class:
-	$(JC) $(JFLAGS) $*.java
+default: install
 
-CLASSES = \
-	Ponomar/OrderedHashtable.java \
-	Ponomar/DocHandler.java \
-	Ponomar/QDParser.java \
-	Ponomar/Reporter.java \
-	Ponomar/parseConvert.java \
-	Ponomar/StringOp.java \
-	Ponomar/LanguagePack.java \
-	Ponomar/JDate.java \
-	Ponomar/Paschalion.java \
-	Ponomar/DoSaint1.java \
-	Ponomar/Sunrise.java \
-	Ponomar/PrintableTextPane.java \
-	Ponomar/ConfigurationFiles.java \
-	Ponomar/GospelSelector.java \
-	Ponomar/Helpers.java \
-	Ponomar/JDaySelector.java \
-	Ponomar/JCalendar.java \
-	Ponomar/LanguageSelector.java \
-	Ponomar/Languagizer.java \
-	Ponomar/MenuFiles.java \
-	Ponomar/About.java \
-	Ponomar/Commemoration.java \
-	Ponomar/ReadText.java \
-	Ponomar/Bible.java \
-	Ponomar/Database.java \
-	Ponomar/Days.java \
-	Ponomar/Fasting.java \
-	Ponomar/DivineLiturgy1.java \
-	Ponomar/Primes.java \
-	Ponomar/PrimeSelector.java \
-	Ponomar/RoyalHours.java \
-	Ponomar/Service.java \
-	Ponomar/ServiceInfo.java \
-	Ponomar/UsualBeginning.java \
-	Ponomar/ThirdHour.java \
-	Ponomar/SixthHour.java \
-	Ponomar/IconDisplay.java \
-	Ponomar/NinthHour.java \
-	Ponomar/Main.java 
+install:
+	javac -cp src src/net/ponomar/Main.java
 
-default: classes
+install-separate-directory:
+	mkdir binary
+	javac -cp src src/net/ponomar/Main.java -d binary
+	cp -avr src/images/ binary/images/
 
-classes: $(CLASSES:.java=.class)
+run:
+	java -cp src net.ponomar.Main
+
+run-separate-directory:
+	java -cp binary net.ponomar.Main
 
 test:
-	perl Ponomar/scripts/Perl/paschalion.pl
-	perl Ponomar/scripts/Perl/test_lj.pl
-	
-clean:
-	$(RM) Ponomar/*.class
-
-
+	perl src/scripts/Perl/paschalion.pl
+	perl src/scripts/Perl/test_lj.pl
