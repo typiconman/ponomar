@@ -1,6 +1,6 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Прпⷣбнагѡ і҆ѡа́нна, ѹ҆ч҃ника̀ ст҃а́гѡ григо́рїа декаполі́та (820-850)"/>
 <NAME Short="Прпⷣбнагѡ і҆ѡа́нна,"/>
-<SERVICE Type="0" Cmd="doy == 100"/>
-<SERVICE Type="1" Cmd="doy == 107"/>
-</SAINT>
+<SERVICE Cmd="doy == 100" Type="0"/>
+<SERVICE Cmd="doy == 107" Type="1"/>
+<SERVICE><LITURGY><TROPARION Tone="" Type="1"/><KONTAKION Podoben="2" Tone="4" Type="1">Воздержа́нїемъ, ѻ҆́ч҃е, житїѐ ᲂу҆краси́въ, и҆ пло́ть ᲂу҆мертви́лъ є҆сѝ: тѣ́мже и҆ побѣди́лъ є҆сѝ вра̑жїѧ прило́ги, пребл҃же́нне, и҆ преше́лъ є҆сѝ къ бг҃ꙋ въ безско́рбный и҆ вѣ́чный живо́тъ, ꙗ҆́кѡ досто́инъ наслѣ́дникъ, і҆ѡа́нне: є҆мꙋ́же моли́сѧ спасти́сѧ на́мъ.</KONTAKION></LITURGY></SERVICE></SAINT>

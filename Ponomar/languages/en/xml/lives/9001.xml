@@ -1,3 +1,41 @@
 <SAINT>
 <NAME Nominative="PASCHA. The Bright and Glorious Resurrection of our Lord, God, and Saviour Jesus Christ" Short="Pascha" />
+<SERVICE>
+<LITURGY>
+<TROPARION Tone="4" Type="1">
+Christ is risen from the dead, by death He has conquered death, And to those in the graves He has given life.
+</TROPARION>
+<KONTAKION Tone="0" Type="1" Header="Contacion">
+Though Thou didst descend into the grave, O Immortal One, yet didst Thou destroy the power of hades. And didst arise as victor, O Christ God, calling to the myrrh-bearing women: Rejoice! And giving peace unto Thine apostles: Thou Who dost grant resurrection to the fallen.
+</KONTAKION>
+</LITURGY>
+<MATINS>
+		<!-- Should the naming and path of these components be changed, then the Paschal Hours will also need to be updated. -->
+		<HYPAKOE Tone="0" Header="Hypacoë" Type="1">
+		Forestalling the dawn, the women came with Mary, and found the stone rolled away from the sepulchre, and heard from the angel: why seek ye among the dead, as though He were a mortal, Him Who liveth in everlasting light? Behold the grave-clothes. Go quickly and proclaim to the world that the Lord is risen and hath slain death. For He is the Son of God Who saveth mankind.
+		</HYPAKOE>
+	<CANON Author="" Type="">
+		<ODE6>
+			<HIRMOS/>
+			<REFRAIN/>
+			<TROPARION Type=""/>
+			<TROPARION Tone="6" Header="Troparion" Type="5">
+Having beheld the resurrection of Christ, let us worship the holy Lord Jesus, the only Sinless One. We worship Thy cross, O Christ, and Thy holy Resurrection we hymn and glorify; for Thou art our God, and we know none other beside Thee, and we call upon Thy name. O come, all ye faithful, let us worship Christ's holy Resurrection, for behold, through the Cross joy hath come to all the world. Ever blessing the Lord, we hymn His Resurrection; for, having endured crucifixion, He hath destroyed death by death. 
+			</TROPARION>		
+		</ODE6>
+	</CANON>
+	</MATINS>
+	<PASCHALHOURS>
+	<TROPARION Tone="0" Header="Troparion" Type="1">
+In the grave bodily, but in hades with Thy soul as God: in Paradise with the thief, and on the throne with the Father and the Spirit wast Thou Who fillest all things, O Christ the Inexpressible.
+	</TROPARION>
+	<TROPARION Tone="0" Header="Troparion" Type="2">
+How life-giving, how much more beautiful than Paradise, and truly more resplendent than any royal palace was Thy tomb shown to be, O Christ, the source of our resurrection.
+	</TROPARION>
+	<THEOTOKION Tone="0" Header="Theotocion" Type="1">
+O sanctified and divine tabernacle of the Most High, rejoice! For through thee, O Theotokos, joy is given to them that cry: Blessed art thou among women, O all-spotless Lady.
+	</THEOTOKION>
+	</PASCHALHOURS>
+
+</SERVICE>
 </SAINT>

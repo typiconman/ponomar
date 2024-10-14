@@ -74,7 +74,8 @@ public class Days implements DocHandler
 		catch (Exception e)
 		{
 			e.printStackTrace();			
-		}		
+		}
+                System.out.println(Location+FileName);
 	}
 				
 	public void startDocument()

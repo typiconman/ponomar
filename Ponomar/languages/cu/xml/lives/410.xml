@@ -1,15 +1,13 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Прпⷣбнагѡ лꙋкѝ, и҆́же во є҆лла́дѣ (ок. 946)"/>
 <NAME Short="Прпⷣбнагѡ лꙋкѝ,"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="1">
+<TROPARION Tone="4" Type="1">Бж҃е ѻ҆ц҃ъ на́шихъ, * творѧ́й при́снѡ съ на́ми по твое́й кро́тости, * не ѿста́ви ми́лость твою̀ ѿ на́съ, * но моли́твами и҆̀хъ * въ мі́рѣ ѹ҆пра́ви живо́тъ на́шъ. 
  
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="1">
- 
-</KONTAKION></LITURGY></SERVICE>
+<KONTAKION Tone="0" Type="1">И҆збра́вый тѧ̀ бг҃ъ пре́жде созда́нїѧ во своѐ благоꙋго́дїе, и҆́миже вѣ́дѧще сꙋдьба́ми, при́снѡ ѿ ѹ҆тро́бы ѡ҆сщ҃а́етъ и҆ своегѡ̀ раба̀ показа̀ тѧ̀, и҆справлѧ́ѧ твоѧ̀ стопы̀, лꙋко́, ꙗ҆́кѡ чл҃колю́бецъ. є҆мꙋ̀ ны́нѣ, ра́дꙋѧсѧ, предстои́ши.</KONTAKION></LITURGY></SERVICE>
 </SAINT>

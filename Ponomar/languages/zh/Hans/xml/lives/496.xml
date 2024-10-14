@@ -1,4 +1,5 @@
 <SAINT>
 
-<NAME Nominative="殉道司教颇利卡尔普（斯密尔纳城主教，167年）" Short="殉道司教颇利卡尔普（斯密尔纳城主教，167年）"/>
+<NAME Nominative="殉道司教颇利卡尔普（斯密尔纳城主教，167年）" Short="殉道司教颇利卡尔普（斯密尔纳城主教，167年）" Cmd="doy == 53"/>
+<NAME Nominative="殉道司教颇利卡尔普（斯密尔纳城主教，167年）(&lt;i&gt;transferred from February 23&lt;sup&gt;rd&lt;/sup&gt;&lt;/i&gt;)" Short="殉道司教颇利卡尔普（斯密尔纳城主教，167年）" Cmd="doy != 53"/>
 <SERVICE Type="1"/></SAINT>

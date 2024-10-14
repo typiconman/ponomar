@@ -1,15 +1,15 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Ст҃ы́хъ а҆пⷭ҇лъ є҆ди́нагѡ ѿ седми́десѧти про́хѡра, нїканѡ́ра, ті́мѡна и҆ парме́на дїа́конѡвъ (а҃)"/>
 <NAME Short="Ст҃ы́хъ а҆пⷭ҇лъ"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="3">
+<TROPARION Tone="3" Type="1">
  А҆пⷭ҇ли ст҃і́и, моли́те млⷭ҇тиваго бг҃а да прегрѣше́нїй ѡ҆ставле́нїе пода́стъ дꙋша́мъ на́шымъ. 
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="1">
+<KONTAKION Podoben="4" Tone="1" Type="1">
  Дїа́кони честні́и и҆ самови́дцы сло́ва, и҆ сосꙋ́ди и҆збра́ннїи ꙗ҆ви́стесѧ вѣ́ры, нїкано́ръ, про́хѡръ, парме́нъ и҆ ті́мѡнъ, сла́внїи: тѣ́мже де́нь сщ҃е́ннꙋю па́мѧть ва́шꙋ пра́зднꙋемъ, въ весе́лїи се́рдца ва́съ ѹ҆бл҃жа́юще. 
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

@@ -1,5 +1,22 @@
 <SAINT>
 <SERVICE Type="8">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Gen_1:1-13"/>
+<SCRIPTURE Type="2" Reading="Ex_14:15-18,21-23,27-29a"/>
+<SCRIPTURE Type="3" Reading="Ex_15:22-27,16:1a"/>
+<SCRIPTURE Type="4" Reading="Josh_3:7-8,15-17"/>
+<SCRIPTURE Type="5" Reading="IV Kings_2:6-14"/>
+<SCRIPTURE Type="6" Reading="IV Kings_5:9-14"/>
+<SCRIPTURE Type="7" Reading="Isa_1:16-20"/>
+<SCRIPTURE Type="8" Reading="Gen_32:1-10a"/> <!-- -->
+<SCRIPTURE Type="9" Reading="Ex_2:5-10"/>
+<SCRIPTURE Type="10" Reading="Judg_6:36-40"/>
+<SCRIPTURE Type="11" Reading="III Kings_18:30-39"/>
+<SCRIPTURE Type="12" Reading="IV Kings_2:19-22"/>
+<SCRIPTURE Type="13" Reading="Isa_49:8-15"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_10:1-4" Pericope="143 (mid.)" Cmd="dow >= 1"/>
+<SCRIPTURE Type="gospel" Reading="Lk_3:1-18" Pericope="9" Cmd="dow >= 1"/>
+</VESPERS>
 <MATINS>
 <SCRIPTURE Type="1" Reading="Mk_1:9-11" Pericope="2"/>
 </MATINS>

@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="Hieromartyr Polycarp, Bishop of Smyrna († 167)" Short="Hieromartyr Polycarp"/>
+<NAME Nominative="Hieromartyr Polycarp, Bishop of Smyrna († 167)" Short="Hieromartyr Polycarp" Cmd="doy == 53"/>
+<NAME Nominative="Hieromartyr Polycarp, Bishop of Smyrna († 167) (&lt;i&gt;transferred from February 23&lt;sup&gt;rd&lt;/sup&gt;&lt;/i&gt;)" Short="Hieromartyr Polycarp" Cmd="doy != 53"/>
 <SERVICE Type="1"/></SAINT>

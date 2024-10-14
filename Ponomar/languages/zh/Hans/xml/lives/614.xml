@@ -1,4 +1,5 @@
 <SAINT>
 
-<NAME Nominative="圣索弗若尼（耶路撒冷牧首，638年）" Short="圣索弗若尼（耶路撒冷牧首，638年）"/>
+<NAME Nominative="圣索弗若尼（耶路撒冷牧首，638年）" Short="圣索弗若尼（耶路撒冷牧首，638年）" Cmd="nday != -43"/>
+<NAME Nominative="圣索弗若尼（耶路撒冷牧首，638年）(&lt;i&gt;transferred from Saturday&lt;/i&gt;)" Short="圣索弗若尼（耶路撒冷牧首，638年）" Cmd="doy == 67"/>
 <SERVICE Type="1"/></SAINT>

@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="St. Porphyre, Evêque de Gaza" Short="St. Porphyre"/>
+<NAME Nominative="St. Porphyre, Evêque de Gaza" Short="St. Porphyre" Cmd="doy == 56"/>
+<NAME Nominative="St. Porphyre, Evêque de Gaza (&lt;i&gt;transféré de 26-me février&lt;/i&gt;)" Short="St. Porphyre" Cmd="doy != 56"/>
 <SERVICE Type="1"/></SAINT>

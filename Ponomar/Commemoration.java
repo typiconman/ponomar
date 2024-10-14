@@ -329,6 +329,7 @@ public class Commemoration implements DocHandler
 	public void text(String text)
 	{
 		textR=text;
+                //System.out.println(textR);
 	}
 	public String getGrammar(String value)
 	{

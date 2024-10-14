@@ -276,7 +276,7 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="MoreHonorable" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="InvocationFather" Who="R" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
 <CREATE What="ThroughPrayers" Who="SR" RedFirst="1" Cmd="PS == 0"/>
-<CREATE What="BlessingPrime" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="BlessingPHours" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
 <CREATE What="Amen" Who="R" NewLine="1" RedFirst="1"/>
 <CREATE What="PrayerTerce" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0" Header="1"/>
 <CREATE What="PrayerTerce" Who="R" RedFirst="1" NewLine="1" Cmd="PS == 0" Header="1"/>
@@ -414,7 +414,7 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="MoreHonorable" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="InvocationFather" Who="R" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
 <CREATE What="ThroughPrayers" Who="SR" RedFirst="1" Cmd="PS == 0"/>
-<CREATE What="BlessingPrime" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="BlessingPHours" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
 <CREATE What="Amen" Who="R" NewLine="1" RedFirst="1"/>
 <CREATE What="PrayerSext" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0" Header="1"/>
 <CREATE What="PrayerSext" Who="R" RedFirst="1" NewLine="1" Cmd="PS == 0" Header="1"/>

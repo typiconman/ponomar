@@ -2,18 +2,10 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Gal_5:11-21" Pericope="212" EffWeek="16" Cmd="ndayF == -222 &amp;&amp; ((doy &gt;= 242 &amp;&amp; doy &lt;= 243) || (doy &gt;= 245 &amp;&amp; doy &lt;= 246) || doy == 248 || (doy &gt;= 250 &amp;&amp; doy &lt;= 251))"/>
-<SCRIPTURE Type="apostol" Reading="Gal_5:11-21" Pericope="212" EffWeek="16" Cmd="ndayF == -229 &amp;&amp; ((doy &gt;= 236 &amp;&amp; doy &lt;= 251))"/>
-<SCRIPTURE Type="apostol" Reading="Gal_5:11-21" Pericope="212" EffWeek="16" Cmd="ndayF == -201 &amp;&amp; ((doy &gt;= 247 &amp;&amp; doy &lt;= 268))"/>
-<SCRIPTURE Type="apostol" Reading="Gal_5:11-21" Pericope="212" EffWeek="16" Cmd="ndayF == -194 &amp;&amp; ((doy &gt;= 251 &amp;&amp; doy &lt;= 270))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:12-16" Pericope="18" EffWeek="19" Cmd="ndayF == -194 &amp;&amp; ((doy &gt;= 266 &amp;&amp; doy &lt;= 270))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:12-16" Pericope="18" EffWeek="19" Cmd="ndayF == -201 &amp;&amp; ((doy &gt;= 266 &amp;&amp; doy &lt;= 268))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_3:23-4:1" Pericope="11" EffWeek="18" Cmd="ndayF == -201 &amp;&amp; ((doy &gt;= 259 &amp;&amp; doy &lt;= 265))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_3:23-4:1" Pericope="11" EffWeek="18" Cmd="ndayF == -194 &amp;&amp; ((doy &gt;= 259 &amp;&amp; doy &lt;= 265))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_7:5-16" Pericope="28" EffWeek="16" Cmd="ndayF == -194 &amp;&amp; ((doy &gt;= 251 &amp;&amp; doy &lt;= 258))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_7:5-16" Pericope="28" EffWeek="16" Cmd="ndayF == -201 &amp;&amp; ((doy &gt;= 247 &amp;&amp; doy &lt;= 258))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_7:5-16" Pericope="28" EffWeek="16" Cmd="ndayF == -229 &amp;&amp; ((doy &gt;= 236 &amp;&amp; doy &lt;= 251))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_7:5-16" Pericope="28" EffWeek="16" Cmd="ndayF == -222 &amp;&amp; ((doy &gt;= 242 &amp;&amp; doy &lt;= 243) || (doy &gt;= 245 &amp;&amp; doy &lt;= 246) || doy == 248 || (doy &gt;= 250 &amp;&amp; doy &lt;= 251))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_5:11-21" Pericope="212" />
+<SCRIPTURE Type="gospel" Reading="Lk_5:12-16" Pericope="18" EffWeek="19" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 266 &amp;&amp; doy &lt;= 272))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_3:23-4:1" Pericope="11" EffWeek="18" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 259 &amp;&amp; doy &lt;= 265))"/>
+<SCRIPTURE Type="gospel" Pericope="28" Reading="Mk_7:5-16" Cmd="(doy &lt; 259 &amp;&amp; GS == 1) || GS == 0"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

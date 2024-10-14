@@ -238,7 +238,7 @@ GNU General Public License for details.
 	<BOOK Id="Composite" Name="Composé" Chapters="8" Short="Composé" Intro=""/>
 </BIBLE>
 
-<BIBLE Id="cu/bible/elis" Name="Церковнославянская (Елисаветинская)">
+<BIBLE Id="cu/bible/elis" Name="Церковнославѧнскаѧ (Є҆лисаветинскаѧ)">
 	<INFO VerseNumFormat="&lt;SPAN style=&quot;color:red;&quot;&gt;^VN&lt;/SPAN&gt; ^VT" VerseNoNumFormat="^VT" VerseLink=" " AbbrevFormat="^NAME ^CNN" ChapterN="&lt;p style=&quot;color:red;&quot;&gt;^NAME ^NN&lt;/p&gt;" HeaderFormat="&lt;h1 style=&quot;color:red;&quot;&gt;^NAME ^CNN&lt;/h1&gt;" ChapterNI="^NN" VerseNo="&lt;p style=&quot;color:red;font-size:12pt;&quot;&gt;^TT&lt;/p&gt;&lt;BR&gt;,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Пролог,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep="," Duration="-" SelectionSeparator="; " BCSep=" " FontFace="Ponomar Unicode TT" FontSize="18" Parts="а,б,в"/>
 	<BOOK Id="Gen" Name="Бытїѐ" Chapters="50" Short="Быт." Intro="Бытїѧ̀ чте́нїе"/>
 	<BOOK Id="Ex" Name="И҆схо́дъ" Chapters="40" Short="Исх." Intro="И҆схо́да чте́нїе" Note="Some formatting issues with chapters 36,37,38"/>
@@ -257,13 +257,13 @@ GNU General Public License for details.
 	<BOOK Id="I_Esdra" Name="а҃ є҆́здры " Chapters="10" Short="1 Езд." Intro=""/>
 	<BOOK Id="Nehem" Name="Неемі́и" Chapters="13" Short="Неем" Intro=""/>
 	<BOOK Id="II_Esdra" Name="в҃ є҆́здры" Chapters="9" Short="2 Езд." Intro=""/>
-	<BOOK Id="Tobit" Name="Тѡві́т" Chapters="14" Short="Тов" Intro=""/>
-	<BOOK Id="Judith" Name="І҆ꙋді́ѳ" Chapters="16" Short="Иудифь." Intro=""/>
+	<BOOK Id="Tobit" Name="Тѡві́тъ" Chapters="14" Short="Тов" Intro=""/>
+	<BOOK Id="Judith" Name="І҆ꙋді́ѳь" Chapters="16" Short="Иудифь." Intro=""/>
 	<BOOK Id="Esther" Name="Є҆сѳи́рь" Chapters="10" Short="Есф." Intro="" Note="There may be issues with the versification here and in all the other versions."/>
 	<BOOK Id="Job" Name="І҆́ѡвъ" Chapters="42" Short="Иов" Intro="Ї҆́ѡва чте́нїе" Note="The last verse of Chapter 42 is much longer than in all the other translations!"/>
 	<BOOK Id="Psalm" Name="Ѱалти́рь" Chapters="151" Short="Пс." Intro="Ѱало́мъ"/>
 	<BOOK Id="Prov" Name="При́тчей соломѡ́нихъ" Chapters="31" Short="Притч." Intro="При́тчей чте́нїе"/>
-	<BOOK Id="Eccles" Name="Є҆кклесїа́ст" Chapters="12" Short="Еккл." Intro=""/>
+	<BOOK Id="Eccles" Name="Є҆кклесїа́стъ" Chapters="12" Short="Еккл." Intro=""/>
 	<BOOK Id="Song" Name="Пѣ́снь пѣ́сней" Chapters="8" Short="Песн." Intro=""/>
 	<BOOK Id="Wisd" Name="Премꙋ́дрости соломѡ́ни" Chapters="19" Short="Прем. Солом." Intro="Премꙋ́дрости соломѡ́новы чте́нїе"/>
 	<BOOK Id="Sirach" Name="Сїрахъ" Chapters="51" Short="Сир." Intro="" Note="The French Version has an extra chapter 52!"/>
@@ -286,9 +286,9 @@ GNU General Public License for details.
 	<BOOK Id="Hagg" Name="А҆гге́й" Chapters="2" Short="Агг." Intro=""/>
 	<BOOK Id="Zech" Name="Заха́рїа" Chapters="14" Short="Зах." Intro="Прⷪ҇ро́чества заха́рїина чте́нїе"/>
 	<BOOK Id="Mal" Name="Малахі́а" Chapters="4" Short="Мал." Intro="Прⷪ҇ро́чества малахі́ина чте́нїе"/>
-	<BOOK Id="I_Macc" Name="а҃ маккавей́скаѧ" Chapters="16" Short="1 Макк." Intro=""/>
-	<BOOK Id="II_Macc" Name="в҃ маккавей́скаѧ" Chapters="15" Short="2 Макк." Intro=""/>
-	<BOOK Id="III_Macc" Name="г҃ маккавей́скаѧ" Chapters="7"  Short="3 Макк." Intro=""/>
+	<BOOK Id="I_Macc" Name="а҃ маккаве́йскаѧ" Chapters="16" Short="1 Макк." Intro=""/>
+	<BOOK Id="II_Macc" Name="в҃ маккаве́йскаѧ" Chapters="15" Short="2 Макк." Intro=""/>
+	<BOOK Id="III_Macc" Name="г҃ маккаве́йскаѧ" Chapters="7"  Short="3 Макк." Intro=""/>
 	<BOOK Id="III_Esdra" Name="г҃ є҆́здры" Chapters="16" Short="3 Езд." Intro="" Note="Proper Church Slavonic version of III Esdras added, based on a text avaialable at a Bulgarian Orthodox site."/>
 	<BOOK Id="Mt" Name="Ѿ Матѳе́а" Chapters="28" Short="Мф." Intro="Ѿ матѳе́а ст҃а́гѡ є҆ѵⷢ҇лїа чте́нїе"/>
 	<BOOK Id="Mk" Name="Ѿ Ма́рка" Chapters="16" Short="Мк." Intro="Ѿ ма́рка ст҃а́гѡ є҆ѵⷢ҇лїа чте́нїе"/>
@@ -406,7 +406,7 @@ GNU General Public License for details.
 <BIBLE Id="cu/ru/bible/kassian" Name="Русский НЗ (еп. Кассиана)">
 	<INFO VerseNumFormat="&lt;SPAN style=&quot;color:red;&quot;&gt;^VN&lt;/SPAN&gt; ^VT" VerseNoNumFormat="^VT" VerseLink=" " AbbrevFormat="^NAME ^CNN" ChapterN="&lt;p style=&quot;color:red;&quot;&gt;^NAME ^NN&lt;/p&gt;" HeaderFormat="&lt;h1 style=&quot;color:red;&quot;&gt;^NAME ^CNN&lt;/h1&gt;" ChapterNI="^NN" VerseNo="&lt;p style=&quot;color:red;font-size:12pt;&quot;&gt;^TT&lt;/p&gt;&lt;BR&gt;,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180" ChapterNo="Пролог,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180"  CVSep="," Duration="-" SelectionSeparator="; " BCSep=" " Parts="а,б,в"/>
 	<BOOK Id="Mt" Name="От Матфея" Chapters="28" Short="Мф." Intro="От Матфея святаго Евангелия чтение"/>
-	<BOOK Id="Mk" Name="От Марка" Chapters="16" Short="Мк." Intro="От мМарка святаго Евангелия чтение"/>
+	<BOOK Id="Mk" Name="От Марка" Chapters="16" Short="Мк." Intro="От Марка святаго Евангелия чтение"/>
 	<BOOK Id="Lk" Name="От Луки" Chapters="24" Short="Лк." Intro="От Луки святаго Евангелия чтение"/>
 	<BOOK Id="Jn" Name="От Иоанна" Chapters="21" Short="Ин." Intro="От Иоанна святаго Евангелия чтение"/>
 	<BOOK Id="Acts" Name="Деяния святых Апостолов" Chapters="28" Short="Деян." Intro="Деяний святых Апостолов чтение"/>

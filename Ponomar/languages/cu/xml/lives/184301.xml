@@ -1,4 +1,7 @@
 <SAINT>
-<NAME Nominative="The serѕ҃ce for е҃enerable Procopа҃us, Confessor of Decapolа҃s а҃s transferred to February 24&lt;sup&gt;th&lt;/sup&gt;"/>
-<NAME Short="The serѕ҃ce"/>
+<NAME Nominative="&lt;i&gt;The service for Venerable Procopius, Confessor of Decapolis, is transferred to February 24&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;" Short="transfer" Cmd="doy == 57"/>
+<NAME Nominative="&lt;i&gt;The service for Porphyrius, Archbishop of Gaza, is transferred to February 24&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;" Short="transfer" Cmd="doy == 56"/>
+<NAME Nominative="&lt;i&gt;The service for Tarasius, Archbishop of Constantinople, is transferred to February 24&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;" Short="transfer" Cmd="doy == 55"/>
+<NAME Nominative="&lt;i&gt;The service for Hieromartyr Polycarp is transferred to February 24&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;" Short="transfer" Cmd="doy == 53"/>
+<NAME Nominative="&lt;i&gt;The service for Venerable Basil is transferred to February 24&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;" Short="transfer" Cmd="doy == 58"/>
 </SAINT>

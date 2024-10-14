@@ -10,36 +10,17 @@ Note: The general format for the files is:
 &lt;PHRASE .../&gt;
 &lt;/LANGUAGE&gt;
 Final Comments:
-Translator: Aleksander Andreev (almost all)
+Translator: Yuri Shardt
 State of completion: 5 -->
-<!-- Ce document contient toute l’information spécifique à chaque langue pour l’interface de Ponomar. Pour des raisons préliminaire et pour éprouver le programme, au moins l’information dans les files suivants doivent être traduire : Le file de Pâques dans le « Pentecostarion » (xml/pentecostarion/1.xml); le file pour le Fête de l’Annonciation (25 mars, xml/3/25.xml); le 12 premier vers du Évangile selon Jean, et le service de la première heure (Prime) (xml/Services/Primes...). L’état de finissement est défini par un valeur sur 10, où 0 signifie que rien n’était complies; 1 signifie que les suggestions au-sous a été complies; 5 signifie que tous qui peut utiliser est complies; et 10 signfie que nous avons un langue absolument finie, y compris les file de vidéo et d’audio.
-Note: /, est utilisé pour separer les éléments d'une liste.
-Note : Les defaults doivent être « loaded » avant que cette file peut être lu.
-Note : Cette section de file doit être traduis dans tous les autres langues.
-<B>Note : Tous les sections pour chaque langue doit contenir les mêmes phrase. <B>
-Note : Le format général est :
-&lt;LANGUAGE NameLocal="le nom de la langue dans la lange-même" NameEnglish="le nom de la langue en anglais" Cmd="LS == ##"&gt;
-&lt;PHRASE Key="le même valeur" Text="le texte traduis" Comment="Des suggestions ou clarifications du traducteur dans le même langue que NameLocal"/&gt;
-&lt;PHRASE .../&gt;
-&lt;/LANGUAGE&gt;   
-Suggestion finale :
-Traducteur : Yuri Shardt
-L’état de completation : 1 (sauf le Bible et la première heure).
--->
-<!--
-The Russian part has been partially completed by Aleksander Andreev, while the Church Slavonic Bible has been added. The Russian version of the Menologion and Pentecostarion/Triodion (as per the Moscow Patriarchiate regulations) has been added by Aleks.
--->
-<!--
-The Chinese version (both Traditional and Simplified characters) of the Menologion and Pentecostarion/Triodion has been added by Mitrophan Chin.
-Likewise, the Bible in both Traditional and Simplified Chinese characters has been added by Mitrophan Chin. Only the New Testament and most of the Old Testament are available.
--->   
+
 <PHRASE Key="NameLocal" Value="церковнославѧнский"/>
 <PHRASE Key="NameEnglish" Value="Church Slavonic"/>
 <PHRASE Key="BibleV" Value="cu/bible/elis"/>
 <PHRASE Key="Authors" Value="А҆леѯа́ндръ А҆ндреевъ/,Ю҆рѣ́й Ша́рдтъ"/>
-<PHRASE Key="Year" Value=".҂в҃ѕ. до .҂ві҃г. лѣ́тъ"/>
+<PHRASE Key="Year" Value=".҂в҃ѕ. до .҂вк҃г. лѣ́тъ"/>
 <PHRASE Key="And" Value=" и҆ "/>
 <PHRASE Key="Comma" Value=", "/>
+<PHRASE Key="CEnd" Value="."/>
 <PHRASE Key="Copyright" Value="Все права защищены ^YY ^AA"/>
 <PHRASE Key="0" Value="Понома́рь" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="і҆аннꙋарїй/,феѵрꙋа́лїй/,ма́ртъ/,а҆прі́ллїй/,ма́їй/,і҆ꙋ́нїй/,і҆ꙋ́лїй/,а҆́ѵгꙋстъ/,септе́мврїй/,о҆ктѡ́врїй/,ное́мврїй/,деке́мврїй" Comment="The names of the months in the nominative case, that is, for use in the format 'Month 2008'."/>
@@ -57,7 +38,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="About" Value="Ве́рсїѧ/,Ponomar is designed to provide the user with access to understand and experience the richness and beauty of the Orthodox tradition. The programme is currently in its developmental phase./,At Ponomar, we believe that Orthodox liturgical texts should be free for use and distribution. God did not copyright the Bible. St John of Damascus did not copyright the Octoechos. Thus, Ponomar and all incorporated texts are distributable under the terms of the GPL./,Copyright/,by/,Acknowledgements: (None)" />
 <PHRASE Key="GospelSelection" Value="НЀ и҆спользо́вати Воздви́женскꙋю ѿстꙋ́пкꙋ/,И҆спользо́вати Воздви́женскꙋю ѿстꙋ́пкꙋ/,Лекционарий/,Выбо́ръ лекционария." />
 <PHRASE Key="Tones" Value="и҃-й/,а҃-й/,в҃-й/,г҃-й/,д҃-й/,е҃-й/,ѕ҃-й/,з҃-й/,и҃-й" Comments="To allow different formatting of the tones in other languages, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="по гражда́нскомꙋ стилю̀/,Восхо́дъ со́лнца: /,Захо́дъ со́лнца: /,Фа́за мѣ́сѧца: /,Гла́съ TT/,И҆нформа́цїѧ о҆ /,Вы̀ дѣ̀йствительно хочитѐ закры́ти про́граммꙋ;" />
+<PHRASE Key="Main" Value="по григорианскомꙋ стилю̀/,Восхо́дъ со́лнца: /,Захо́дъ со́лнца: /,Фа́за мѣ́сѧца: /,Гла́съ TT/,И҆нформа́цїѧ о҆ /,Вы̀ дѣ̀йствительно хочитѐ закры́ти про́граммꙋ;/,по ю҆лианськомꙋ стилю̀/,Ю҆лианський календар/,Григорианський календар" />
 <PHRASE Key="gospel" Value="Є҆ѵⷢ҇лїе"/>
 <PHRASE Key="apostol" Value="А҆пⷭ҇лъ"/>
 <PHRASE Key="matins" Value="Оу҆́тренѧ"/>
@@ -103,13 +84,15 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Commemoration2" Value=" (длѧ̀ %getN(^CC,Genetive))" Comments="%getN is a generalised grammar engine that will return the appropriate grammatical form. The format is Noun (in this case to be specified so ^CC) and the desired case (as defined in the commemoration files)"/>
 <PHRASE Key="Commemoration3" Value="И҆мⷬ҇къ" Comments="Failure to find any name for a given commemoration!"/>
 
+<PHRASE Key="RankC" Value="&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕅 ^NF&lt;/span&gt;"/>
 <PHRASE Key="Rank0" Value="^NF"/>
 <PHRASE Key="Rank1" Value="^NF"/>
 <PHRASE Key="Rank2" Value="&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕃&lt;/span&gt; ^NF"/>
 <PHRASE Key="Rank3" Value="&lt;span style=&quot;color:red;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕃&lt;/span&gt; ^NF"/>
 <PHRASE Key="Rank4" Value="&lt;span style=&quot;letter-spacing:0.2em&quot;&gt;&lt;span style=&quot;color:red;font-family:Ponomar Unicode TT;font-size:130%;&quot;&gt;🕂&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;&lt;/span&gt;"/>
 <PHRASE Key="Rank5" Value="&lt;span style=&quot;color:red;letter-spacing:0.2em&quot;&gt;&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%;&quot;&gt;🕁&lt;/span&gt; ^NF&lt;/span&gt;"/>
-<PHRASE Key="Rank6" Value="&lt;span style=&quot;color:red;letter-spacing:0.2em&quot;&gt;&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%;&quot;&gt;🕀&lt;/span&gt; &lt;B&gt;^NF&lt;/B&gt;&lt;/span&gt;"/>
+<PHRASE Key="Rank6" Value="&lt;span style=&quot;color:red;letter-spacing:0.2em&quot;&gt;&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%;&quot;&gt;🕀&lt;/span&gt; ^NF&lt;/span&gt;"/>
+<!-- Using letter spacing does not work in JAVA at present. In the future, revisit with the idea of “letter-spacing: 0.1em;”. -->
 
 <PHRASE Key="PadH" Value="1" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
 <PHRASE Key="PadM" Value="2" Note="This allows the time value to be displayed with at least the given number of digits. Must be equal to or greater than 1"/>
@@ -120,9 +103,31 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="AMC" Value="1" Note="This determines whether or not the Anno Mundi value will be displayed. 1 = Yes, 0 = No."/>
 <PHRASE Key="AML" Value="A" Note="This determines whether the AM value comes before (B) the rest of the date or after (A) it"/>
 <PHRASE Key="NoIcon" Value="Ponomar/languages/cu/icons/4447/0.jpg" Note="This is a relative path to the default icon desired for the case where there is no icons available."/>
-<PHRASE Key="Options2" Value="Понома́рь: Defaults/,Географическаѧ и҆҆нформацїѧ/,Широта̀: /,°, отрицательнаѧ къ ю҆́гꙋ/,Долгота̀: /,°, отрицательнаѧ на за́падѣ/,Часовой по́ѧсъ: /, г по Гринвичꙋ/,Гражданская и҆҆нформацїѧ/,Отображений календарь:/,ю҆лїанский/,григорїанский/,Да̀/,Нѣ̀"/>
+<PHRASE Key="Options2" Value="Понома́рь: Defaults/,Географическаѧ и҆҆нформацїѧ/,Широта̀: /,°, отрицательнаѧ къ ю҆́гꙋ/,Долгота̀: /,°, отрицательнаѧ на за́падѣ/,Часовой по́ѧсъ: /, г по Гринвичꙋ/,Гражданская и҆҆нформацїѧ/,Отображений календарь:/,ю҆лїанский/,григорїанский/,Да̀/,Нѣ̀/,Religious Calendar:"/>
 <PHRASE Key="OptionsW" Value="700" Note="Width of the Options window"/>
 <PHRASE Key="OptionsH" Value="300" Note="Height of the Options window"/>
 <PHRASE Key="OptionMenu" Value="Defaults…"/>
 <PHRASE Key="BibleW2" Value="Toggle Verse Numbers on/off"/>
+<PHRASE Key="Search" Value="Search Commemorations/,Search Term: /,Please enter your search term./,This is a trial version that does not implement exact search. Entering “George” will give more results than “George the New Martyr”./,Search/,There are no results./,CId\tEnglish\tFrench\tRussian\tChurch Slavonic\tTraditional Chinese\tSimplified Chinese\tPolytonic Greek\tMonotonic Greek&lt;BR&gt;/,Exists;/,N.A.;/,Found a total of: /,Exact/,Ignore Case/,Ignore Diacriticals/,Normalise/,Search Type"/>
+<PHRASE Key="EditComm" Value="Edit Commemorations/,Allows you to edit the commemorations"/>
+<PHRASE Key="EditPrayers" Value="Edit Prayers/,Allows you to edit the common prayers"/>
+
+<PHRASE Key="ServiceFormat" Value="&lt;B&gt;&lt;FONT color=&quot;red&quot;&gt;$redNow&lt;/FONT&gt;&lt;/B&gt;$rest/, &lt;I&gt;&lt;Font color=&quot;red&quot;&gt;($repeat$textR $textCommand)&lt;/Font&gt;&lt;/I&gt;/, &lt;I&gt;&lt;Font color=&quot;red&quot;&gt;($repeat)&lt;/Font&gt;&lt;/I&gt;/, &lt;I&gt;&lt;Font color=&quot;red&quot;&gt;($textCommand)&lt;/Font&gt;&lt;/I&gt;/,&lt;B&gt;&lt;FONT color=&quot;red&quot;&gt;$textWho&lt;/FONT&gt;&lt;/B&gt;/,&lt;Font color=&quot;red&quot;&gt;&lt;I&gt;&lt;small&gt;$text4&lt;/small&gt;&lt;/I&gt;&lt;BR&gt;/,&lt;I&gt;&lt;small&gt;$text4&lt;/small&gt;&lt;/I&gt;&lt;BR&gt;/, &lt;I&gt;&lt;Font color=&quot;red&quot;&gt; $text3&lt;/Font&gt;&lt;/I&gt; "/>
+<PHRASE Key="ServiceCSSFormat" Value="rubric {color:red;font-weight:bold}/,p {margin-left:.5in;text-indent:-.5in}/,h1 {color:red;font-weight:bold;text-align:center}/,comment {color:red;font-size:50%;font-style:italic}/,command {color:red;font-style:italic}/,h2 {color:red;font-size:110%;text-align:center;letter-spacing:1px}"/>
+
+<PHRASE Key="VerseNumFormat" Value="&lt;SUP&gt;^VN&lt;/SUP&gt; ^VT"/>
+<PHRASE Key="VerseNoNumFormat" Value="^VT"/>
+<PHRASE Key="VerseLink" Value=" "/>
+<PHRASE Key="AbbrevFormat" Value="^NAME ^CNN"/>
+<PHRASE Key="ChapterN" Value="&lt;p style=&quot;font-style:bold;color:red;&quot;&gt;^NAME ^NN&lt;/p&gt;"/>
+<PHRASE Key="HeaderFormat" Value="&lt;h1 style=&quot;font-style:bold;color:red;&quot;&gt;^NAME ^CNN&lt;/h1&gt;"/>
+<PHRASE Key="ChapterNI" Value="^NN-а глⷡ҇а"/>
+<PHRASE Key="VerseNo" Value="&lt;p style=&quot;font-style:italic;font-size:10pt;&quot;&gt;^TT&lt;/p&gt;&lt;BR&gt;,а҃,в҃,г҃,д҃,е҃,ѕ҃,з҃,и҃,ѳ҃,і҃,а҃і,в҃і,г҃і,д҃і,е҃і,ѕ҃і,з҃і,и҃і,ѳ҃і,к҃,к҃а,к҃в,к҃г,к҃д,к҃е,к҃ѕ,к҃з,к҃и,к҃ѳ,л҃,л҃а,л҃в,л҃г,л҃д,л҃е,л҃ѕ,л҃з,л҃и,л҃ѳ,м҃,м҃а,м҃в,м҃г,м҃д,м҃е,м҃ѕ,м҃з,м҃и,м҃ѳ,н҃,н҃а,н҃в,н҃г,н҃д,н҃е,н҃ѕ,н҃з,н҃и,н҃ѳ,ѯ҃,ѯ҃а,ѯ҃в,ѯ҃г,ѯ҃д,ѯ҃е,ѯ҃ѕ,ѯ҃з,ѯ҃и,ѯ҃ѳ,о҃,о҃а,о҃в,о҃г,о҃д,о҃е,о҃ѕ,о҃з,о҃и,о҃ѳ,п҃,п҃а,п҃в,п҃г,п҃д,п҃е,п҃ѕ,п҃з,п҃и,п҃ѳ,ч҃,ч҃а,ч҃в,ч҃г,ч҃д,ч҃е,ч҃ѕ,ч҃з,ч҃и,ч҃ѳ,р҃,р҃а,р҃в,р҃г,р҃д,р҃е,р҃ѕ,р҃з,р҃и,р҃ѳ,р҃і,ра҃і,рв҃і,рг҃і,рд҃і,ре҃і,рѕ҃і,рз҃і,ри҃і,рѳ҃і,р҃к,рк҃а,рк҃в,рк҃г,рк҃д,рк҃е,рк҃ѕ,рк҃з,рк҃и,рк҃ѳ,р҃л,рл҃а,рл҃в,рл҃г,рл҃д,рл҃е,рл҃ѕ,рл҃з,рл҃и,рл҃ѳ,р҃м,рм҃а,рм҃в,рм҃г,рм҃д,рм҃е,рм҃ѕ,рм҃з,рм҃и,рм҃ѳ,р҃н,рн҃а,рн҃в,рн҃г,рн҃д,рн҃е,рн҃ѕ,рн҃з,рн҃и,рн҃ѳ,р҃ѯ,рѯ҃а,рѯ҃в,рѯ҃г,рѯ҃д,рѯ҃е,рѯ҃ѕ,рѯ҃з,рѯ҃и,рѯ҃ѳ,р҃о,ро҃а,ро҃в,ро҃г,ро҃д,ро҃е,ро҃ѕ,ро҃з,ро҃и,ро҃ѳ,р҃п"/>
+<PHRASE Key="ChapterNo" Value="про́логъ,а҃,в҃,г҃,д҃,е҃,ѕ҃,з҃,и҃,ѳ҃,і҃,а҃і,в҃і,г҃і,д҃і,е҃і,ѕ҃і,з҃і,и҃і,ѳ҃і,к҃,к҃а,к҃в,к҃г,к҃д,к҃е,к҃ѕ,к҃з,к҃и,к҃ѳ,л҃,л҃а,л҃в,л҃г,л҃д,л҃е,л҃ѕ,л҃з,л҃и,л҃ѳ,м҃,м҃а,м҃в,м҃г,м҃д,м҃е,м҃ѕ,м҃з,м҃и,м҃ѳ,н҃,н҃а,н҃в,н҃г,н҃д,н҃е,н҃ѕ,н҃з,н҃и,н҃ѳ,ѯ҃,ѯ҃а,ѯ҃в,ѯ҃г,ѯ҃д,ѯ҃е,ѯ҃ѕ,ѯ҃з,ѯ҃и,ѯ҃ѳ,о҃,о҃а,о҃в,о҃г,о҃д,о҃е,о҃ѕ,о҃з,о҃и,о҃ѳ,п҃,п҃а,п҃в,п҃г,п҃д,п҃е,п҃ѕ,п҃з,п҃и,п҃ѳ,ч҃,ч҃а,ч҃в,ч҃г,ч҃д,ч҃е,ч҃ѕ,ч҃з,ч҃и,ч҃ѳ,р҃,р҃а,р҃в,р҃г,р҃д,р҃е,р҃ѕ,р҃з,р҃и,р҃ѳ,р҃і,ра҃і,рв҃і,рг҃і,рд҃і,ре҃і,рѕ҃і,рз҃і,ри҃і,рѳ҃і,р҃к,рк҃а,рк҃в,рк҃г,рк҃д,рк҃е,рк҃ѕ,рк҃з,рк҃и,рк҃ѳ,р҃л,рл҃а,рл҃в,рл҃г,рл҃д,рл҃е,рл҃ѕ,рл҃з,рл҃и,рл҃ѳ,р҃м,рм҃а,рм҃в,рм҃г,рм҃д,рм҃е,рм҃ѕ,рм҃з,рм҃и,рм҃ѳ,р҃н,рн҃а,рн҃в,рн҃г,рн҃д,рн҃е,рн҃ѕ,рн҃з,рн҃и,рн҃ѳ,р҃ѯ,рѯ҃а,рѯ҃в,рѯ҃г,рѯ҃д,рѯ҃е,рѯ҃ѕ,рѯ҃з,рѯ҃и,рѯ҃ѳ,р҃о,ро҃а,ро҃в,ро҃г,ро҃д,ро҃е,ро҃ѕ,ро҃з,ро҃и,ро҃ѳ,р҃п"/>
+<PHRASE Key="CVSep" Value="-а глⷡ҇а, сⷯ "/>
+<PHRASE Key="Duration" Value=" до "/>
+<PHRASE Key="SelectionSeparator" Value=", "/>
+<PHRASE Key="BCSep" Value=" "/>
+<PHRASE Key="Parts" Value="(а),(б),(в)"/>
+<PHRASE Key="BibleBooks" Value="Gen=бт҃ïє̀/,Ex=и҆хⷣъ/,Lev=лв҃тъ/,Num=чиⷭ҇/,Deut=втоⷥ/,Josh=нв҃а/,Judg=сꙋді́й/,Ruth=рꙋ́ѳь/,I_Kings=а҃ црⷭ҇твъ/,II_Kings=в҃ црⷭ҇твъ/,III_Kings=г҃ црⷭ҇твъ/,IV_Kings=д҃ црⷭ҇твъ/,I_Paral=а҃ паⷬ҇рнѡнъ/,II_Paral=в҃ паⷬ҇рнѡнъ/,I_Esdra=а҃ є҆дⷬ҇ы/,Nehem=неⷨй/,II_Esdra=в҃ є҆дⷬ҇ы/,Tobit=тѡві́т/,Judith=і҆ꙋді́ѳь/,Esther=є҆сѳ҃рь/,Job=і҆́ѡвъ/,Psalm=ѱаⷧ҇/,Prov=пр҃чей/,Eccles=є҆кл҃стъ/,Song=пѣ́снь/,Wisd=премрⷣсти/,Sirach=сїраⷯ/,Isa=и҆са́їй/,Jerem=і҆р҃мій/,Lamen=пла́чь/,Epistle=посла́нїе/,Baruch=варⷯ/,Ezek=і҆ез҃лѧ/,Dan=дан҃ла/,Hos=ѡ҆сі́а/,Joel=і҆ѡи́ль/,Amos=а҆мѡ́съ/,Obad=а҆вді́й/,Jona=і҆ѡ́ны/,Mica=мїхе́й/,Nahum=наꙋ́мъ/,Habak=а҆ввакꙋ́мъ/,Zeph=софо́нїа/,Hagg=а҆гге́й/,Zech=зх҃рїа/,Mal=мл҃хі́а/,I_Macc=а҃ мк҃скаѧ/,II_Macc=в҃ мк҃скаѧ/,III_Macc=г҃ мк҃скаѧ/,III_Esdra=г҃ є҆дⷬ҇ы/,Mt=матѳе́а/,Mk=ма́рка/,Lk=лꙋкѝ/,Jn=і҆н҃а/,Acts=дѣѧ̑нїѧ/,Jas=і҆а́кѡвле/,I_Pet=а҃ петра̀/,II_Pet=в҃ петра̀/,I_Jn=а҃ і҆н҃а/,II_Jn=в҃ і҆н҃а/,III_Jn=г҃ і҆н҃а/,Jude=і҆ꙋ́дино/,Rom=риⷨ/,I_Cor=а҃ корі́нⷴ҇/,II_Cor=в҃ корі́нⷴ҇/,Gal=гл҃тѡмъ/,Eph=є҆фс҃мъ/,Philip=фл҃пмъ/,Col=кл҃смъ/,I_Thess=а҃ солⷩ҇/,II_Thess=в҃ солⷩ҇/,I_Tim=а҃ тм҃ѳю/,II_Tim=в҃ тм҃ѳю/,Tit=ті́тꙋ/,Philemon=фл҃нꙋ/,Heb=є҆вр҃мъ/,Apoc=а҆пл҃ѱїсъ/,Composite=Composite"/>
 </LANGUAGEPACKS>
