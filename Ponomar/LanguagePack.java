@@ -36,6 +36,7 @@ class LanguagePack implements DocHandler
 	{
 		Phrases =new OrderedHashtable();
                 Analyse.dayInfo=dayInfo;
+		
 		ReadPhrases();
 		
 	}
@@ -54,6 +55,7 @@ class LanguagePack implements DocHandler
         private void ReadPhrases(String langPath)
 	{
             String filename=langPath;
+		//System.out.println("Language Path: "+langPath);
 		try
 		{
 			//ALLOWS MULTILINGUAL SUPPORT, WHICH IS A MUST IN OUR CASE.

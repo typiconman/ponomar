@@ -2,11 +2,18 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Heb_12:25-26, 13:22-25" Pericope="333" EffWeek="31" Cmd="nday == -89 &amp;&amp; ((doy &gt;= 10 &amp;&amp; doy &lt;= 11) || (doy &gt;= 13 &amp;&amp; doy &lt;= 14) || doy == 16 || (doy &gt;= 18 &amp;&amp; doy &lt;= 19))"/>
-<SCRIPTURE Type="apostol" Reading="Heb_9:8-10, 15-23" Pericope="321" EffWeek="30" Cmd="nday == -96 &amp;&amp; ((doy &gt;= 4 &amp;&amp; doy &lt;= 19))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" EffWeek="33" Cmd="nday == -96 &amp;&amp; ((doy &gt;= 4 &amp;&amp; doy &lt;= 5))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Pericope="34" EffWeek="30" Cmd="nday == -96 &amp;&amp; ((doy &gt;= 6 &amp;&amp; doy &lt;= 19))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Pericope="43" EffWeek="31" Cmd="nday == -89 &amp;&amp; ((doy &gt;= 10 &amp;&amp; doy &lt;= 11) || (doy &gt;= 13 &amp;&amp; doy &lt;= 14) || doy == 16 || (doy &gt;= 18 &amp;&amp; doy &lt;= 19))"/>
+<SCRIPTURE Type="apostol" Reading="Heb_9:8-10, 15-23" Pericope="321" EffWeek="30" Cmd="GS == 1 &amp;&amp; (doy == 4 || doy == 5)"/>
+<SCRIPTURE Type="apostol" Reading="Heb_9:8-10, 15-23" Pericope="321" EffWeek="30" Cmd="nday == -96 &amp;&amp; GS == 1 &amp;&amp; ((doy &gt;= 6))"/>
+<SCRIPTURE Type="apostol" Reading="Heb_12:25-26, 13:22-25" Pericope="333" EffWeek="31" Cmd="nday == -89 &amp;&amp; GS == 1 &amp;&amp; ((doy &gt;= 6))"/>
+
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" EffWeek="33" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 4 &amp;&amp; doy &lt;= 5))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:2-12" Pericope="43" EffWeek="31" Cmd="nday == -89 &amp;&amp; GS == 1 &amp;&amp; ((doy &gt;= 6))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Pericope="34" EffWeek="30" Cmd="nday == -96 &amp;&amp; GS == 1 &amp;&amp; ((doy &gt;= 6))"/>
+
+<SCRIPTURE Type="gospel" Reading="Mk_12:18-27" Pericope="55" Cmd="(nday == -89) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Mk_8:22-26" Pericope="34" Cmd="(nday == -96) &amp;&amp; GS == 0" />
+<SCRIPTURE Type="apostol" Reading="Heb_12:25-26, 13:22-25" Cmd="nday == -89 &amp;&amp; GS == 0" />
+<SCRIPTURE Type="apostol" Reading="Heb_9:8-10, 15-23" Cmd="nday == -96 &amp;&amp; GS == 0" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>

@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="32&lt;sup&gt;nd&lt;/sup&gt; Sunday after Pentecost" Short="32&lt;sup&gt;nd&lt;/sup&gt; Sunday after Pentecost" Cmd="nday != -77"/><NAME Nominative="Zacchæus’s Sunday, 32&lt;sup&gt;nd&lt;/sup&gt; Sunday after
-&lt;p&gt;Pentecost" Short="Zacchæus" Cmd="nday == -77"/></SAINT>
+<NAME Nominative="32&lt;sup&gt;nd&lt;/sup&gt; Sunday after Pentecost" Short="32&lt;sup&gt;nd&lt;/sup&gt; Sunday after Pentecost" Cmd="nday != -77"/>
+<NAME Nominative="32&lt;sup&gt;nd&lt;/sup&gt; Sunday after Pentecost, Zacchæus’s Sunday" Short="Zacchæus" Cmd="nday == -77"/>
+</SAINT>

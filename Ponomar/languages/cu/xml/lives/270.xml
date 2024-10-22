@@ -1,15 +1,15 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Ст҃ы́хъ мꙋ́ченикѡвъ є҆ѵге́нїа, кані́дїа, ѹ҆алерїа́на и҆ а҆кѵ́лы (г҃-д҃)"/>
 <NAME Short="Ст҃ы́хъ мꙋ́ченикѡвъ"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="1">
+<TROPARION Tone="1" Type="1">
  
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="1">
+<KONTAKION Tone="1" Type="1">
  
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

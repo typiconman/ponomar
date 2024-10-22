@@ -1,0 +1,17 @@
+<DAY>
+<SAINT SId="1007" CId="09107" Cmd="!(nday == -57 || nday == -53 || nday == -51 || nday == -48 || nday == -47 || nday == -46 || nday == -45 || nday == -44)"/>
+<!-- FINDING MOVED TO SATURDAY; FROM SATURDAY, WE USE THE FEAST OF ST TARASIUS -->
+<!-- NOTE THAT IN THIS CASE, THE VESPERS READINGS ARE READ TODAY, IN THE EVENING -->
+<SAINT SId="508" CId="508" Cmd="nday == -44"/>
+<SAINT SId="0910701" CId="0910702" Cmd="nday == -44"/>
+<!-- FINDING MOVED TO STARUDAY; FROM SATURDAY, TAKE ST PORPHIRIUS (FEBRUARY 26) -->
+<SAINT SId="510" CId="510" Cmd="nday == -45"/>
+<!-- FINDING MOVED TO SATURDAY; FROM SATURDAY, TAKE ST PROCOPIUS (FEBRUARY 27) -->
+<SAINT SId="1843" CId="1843" Cmd="nday == -46"/>
+<!-- FINDING MOVED TO SATURDAY; FROM SATURDAY, TAKE ST BASIL (FEBRUARY 28) -->
+<SAINT SId="523" CId="523" Cmd="nday == -47"/>
+<!-- FINDING MOVED TO CHEESEFARE; FROM CHEESEFARE, TAKE ST POLYCARP (FEBRUARY 23); FROM CHEESE THURSDAY, TAKE ST POLYCARP (FEBRUARY 23); FROM CHEESE TUESDAY, TAKE ST POLYCARP (FEBRUARY 23)-->
+<SAINT SId="496" CId="496" Cmd="nday == -48 || nday == -51 || nday == -53"/>
+<SAINT SId="506" CId="506" />
+<SAINT SId="0910701" CId="0910701" Cmd="(nday == -57 || nday == -53 || nday == -51 || nday == -48 || nday == -47 || nday == -46 || nday == -45 || nday == -44)" />
+</DAY>

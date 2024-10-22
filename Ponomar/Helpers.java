@@ -178,6 +178,7 @@ class Helpers
             /*if(LanguagePath==null){
                 return "ERROR";
             }*/
+		//System.out.println("Current Path (initial): "+currentPath);
             File testFile=new File(addon+LanguagePath+BasePath);
             
             //System.out.println(currentPath);
@@ -197,6 +198,7 @@ class Helpers
                     break;
                 }
                 currentPath=currentPath.substring(0,location)+"/";
+			//System.out.println("Current Path (shortened): "+currentPath);
                 testFile=new File(addon+currentPath+BasePath);
                 //System.out.println(currentPath);
             }

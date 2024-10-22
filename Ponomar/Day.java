@@ -207,6 +207,7 @@ MainNames=Text.obtainValues((String)Text.Phrases.get("Main"));
             String NameF = CCom.getName();
             
             if (output.length()>0 && NameF.length()>0){
+                //System.out.println(output);
                 output+=CSep;
             }
             
@@ -260,7 +261,7 @@ MainNames=Text.obtainValues((String)Text.Phrases.get("Main"));
                     output+=Rank0Format.replace("^NF",NameF);
                 //Note: \u00A0 is a nonbreaking space.
                 }
-             if (CCom.checkLife()){
+             if (CCom.checkLife() || CCom.checkPropers()){
             output += "</A>";
              }
             if (Tone != -1){
@@ -426,6 +427,9 @@ MainNames=Text.obtainValues((String)Text.Phrases.get("Main"));
         }
 
 
+    }
+    public Vector getCommemorations(){
+        return OrderedCommemorations;
     }
 
     public static void main(String[] argz) {

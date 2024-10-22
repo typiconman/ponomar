@@ -1,17 +1,4 @@
 <LANGUAGEPACKS>
-<!-- This document contains all the required languages specific features for the Ponomar interface in all the languages that are supported by the programme. For trial purposes, at least all the information in this file should be translated, the Easter file in the Pentecostarion (xml/pentecostarion/1.xml), and the file for the Feast of the Annunciation (March 25th, xml/3/25.xml), the first 12 verses of the Gospel according to John, and the Prime service (xml/Services/Primes...) so as to test all the capabilities of the programme. The state of completion is defined as a value out of 10 that states what is available: 0 represents nothing, 1 represents the above requirements, 5 all that is currently required, 10 a complete language, including video and audio files.
-Note: /, is used to separate entries in a list.
-Note: The defaults must be loaded before this file can be read.
-Note: This section should be translated into all of the supported languages.
-<B>Note: All the sections must contain the same set of phrases, even if some are not translated!</B>
-Note: The general format for the files is:
-&lt;LANGUAGE NameLocal="Name of the language in the language itself" NameEnglish="Name of the language in English" Cmd="LS == ##"&gt;
-&lt;PHRASE Key="some value" Text="the translated text" Comment="Translator's comments or clarifications in the same language as the LanguageName"/&gt;
-&lt;PHRASE .../&gt;
-&lt;/LANGUAGE&gt;
-Final Comments:
-Translator: Aleksander Andreev (almost all)
-State of completion: 5 -->
 <!--
 The Chinese version (both Traditional and Simplified characters) of the Menologion and Pentecostarion/Triodion has been added by Mitrophan Chin.
 Likewise, the Bible in both Traditional and Simplified Chinese characters has been added by Mitrophan Chin. Only the New Testament and most of the Old Testament are available.
@@ -24,6 +11,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Year" Value="二〇〇六～二〇一三年"/>
 <PHRASE Key="And" Value="、"/>
 <PHRASE Key="Comma" Value="、"/>
+<PHRASE Key="CEnd" Value="。"/>
 <PHRASE Key="Copyright" Value="^AA^YY版權所有"/>
 <PHRASE Key="0" Value="波諾馬里" Comment="This is the only entry for this key."/>
 <PHRASE Key="1" Value="主顯月/,獻主月/,福音月/,凱旋月/,聖君月/,使徒月/,先知月/,安息月/,聖架月/,帡幪月/,入殿月/,降生月" Comment="The names of the liturgical months in the nominative case, that is, for use in the format 'Month 2008'."/>
@@ -41,7 +29,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="About" Value="版本/,波諾馬里的設計為用戶提供了訪問，了解和體驗的豐富和美麗的正教聖傳。該程序是目前發展階段。/,在波諾馬里項目中，我們認為禮典信息應當免費——也就是說不收費也不受版權的制約。上帝並沒有保留聖經的版權，聖約安也沒有保留《八音集》的版權。您可以從本站獲得任何東西並用於任何用途，只要您信任我們。如果您要發佈您自己對本站信息的修改成果，您需要在許可的體系下進行。/,版權所有/,/,為感謝：中文版由正教會中華諸聖會提供。" />
 <PHRASE Key="GospelSelection" Value="主顯跳轉/,路喀跳轉/,福音經課/,選擇所需福音經課。" />
 <PHRASE Key="Tones" Value="第八調/,第一調/,第二調/,第三調/,第四調/,第五調/,第六調/,第七調/,第八調" Comments="To allow different formatting of the tones in other 語言, such as Greek (with letters) and Old Church Slavonic (with Cyrillic letters)" />
-<PHRASE Key="Main" Value="格里高利歷/,&lt;B&gt;日出&lt;/B&gt;：/,&lt;B&gt;日落&lt;/B&gt;：/,&lt;B&gt;月相&lt;/B&gt;：/,第TT調式/,信息 /,你確定要退出嗎？" />
+<PHRASE Key="Main" Value="格里高利歷/,&lt;B&gt;日出&lt;/B&gt;：/,&lt;B&gt;日落&lt;/B&gt;：/,&lt;B&gt;月相&lt;/B&gt;：/,第TT調式/,信息 /,你確定要退出嗎？/,Julian Calendar/,Julian Calendar/,Gregorian Calendar" />
 <PHRASE Key="gospel" Value="聖福音經"/>
 <PHRASE Key="apostol" Value="使徒經書"/>
 <PHRASE Key="matins" Value="晨時課"/>
@@ -86,6 +74,7 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="Commemoration2" Value="（For %getN(^CC,Short)）" Comments="%getN is a generalised grammar engine that will return the appropriate grammatical form. The format is Noun (in this case to be specified so ^CC) and the desired case (as defined in the commemoration files)"/>
 <PHRASE Key="Commemoration3" Value="Name not found" Comments="Failure to find any name for a given commemoration!"/>
 
+<PHRASE Key="RankC" Value="&lt;I&gt;^NF&lt;/I&gt;"/>
 <PHRASE Key="Rank0" Value="^NF"/>
 <PHRASE Key="Rank1" Value="^NF"/>
 <PHRASE Key="Rank2" Value="&lt;span style=&quot;font-family:Ponomar Unicode TT;font-size:130%&quot;&gt;🕃&lt;/span&gt;&lt;I&gt;^NF&lt;/I&gt;"/>
@@ -102,9 +91,32 @@ Likewise, the Bible in both Traditional and Simplified Chinese characters has be
 <PHRASE Key="AMC" Value="1" Note="This determines whether or not the Anno Mundi value will be displayed. 1 = Yes, 0 = No."/>
 <PHRASE Key="AML" Value="B" Note="This determines whether the AM value comes before (B) the rest of the date or after (A) it"/>
 <PHRASE Key="NoIcon" Value="Ponomar/languages/cu/icons/4447/0.jpg" Note="This is a relative path to the default icon desired for the case where there is no icons available."/>
-<PHRASE Key="Options2" Value="Ponomar: Defaults/,Geographical Information/,Latitude: /,°, negative to the South/,Longitude: /,°, negative to the West/,Time Zone: /, h from Greenwich mean time/,Civil Information/,Display Calendar:/,Julian/,Gregorian/,OK/,CANCEL"/>
+<PHRASE Key="Options2" Value="Ponomar: Defaults/,Geographical Information/,Latitude: /,°, negative to the South/,Longitude: /,°, negative to the West/,Time Zone: /, h from Greenwich mean time/,Civil Information/,Display Calendar:/,Julian/,Gregorian/,OK/,CANCEL/,Religious Calendar:"/>
 <PHRASE Key="OptionsW" Value="700" Note="Width of the Options window"/>
 <PHRASE Key="OptionsH" Value="300" Note="Height of the Options window"/>
 <PHRASE Key="OptionMenu" Value="Defaults…"/>
 <PHRASE Key="BibleW2" Value="Toggle Verse Numbers on/off"/>
+<PHRASE Key="Search" Value="Search Commemorations/,Search Term: /,Please enter your search term./,This is a trial version that does not implement exact search. Entering “George” will give more results than “George the New Martyr”./,Search/,There are no results./,CId\tEnglish\tFrench\tRussian\tChurch Slavonic\tTraditional Chinese\tSimplified Chinese\tPolytonic Greek\tMonotonic Greek&lt;BR&gt;/,Exists;/,N.A.;/,Found a total of: /,Exact/,Ignore Case/,Ignore Diacriticals/,Normalise/,Search Type"/>
+<PHRASE Key="EditComm" Value="Edit Commemorations/,Allows you to edit the commemorations"/>
+<PHRASE Key="EditPrayers" Value="Edit Prayers/,Allows you to edit the common prayers"/> 
+
+<PHRASE Key="ServiceFormat" Value="&lt;B&gt;&lt;FONT color=&quot;red&quot;&gt;$redNow&lt;/FONT&gt;&lt;/B&gt;$rest/, &lt;I&gt;&lt;Font color=&quot;red&quot;&gt;($repeat$textR $textCommand)&lt;/Font&gt;&lt;/I&gt;/, &lt;I&gt;&lt;Font color=&quot;red&quot;&gt;($repeat)&lt;/Font&gt;&lt;/I&gt;/, &lt;I&gt;&lt;Font color=&quot;red&quot;&gt;($textCommand)&lt;/Font&gt;&lt;/I&gt;/,&lt;B&gt;&lt;FONT color=&quot;red&quot;&gt;$textWho&lt;/FONT&gt;&lt;/B&gt;/,&lt;Font color=&quot;red&quot;&gt;&lt;I&gt;&lt;small&gt;$text4&lt;/small&gt;&lt;/I&gt;&lt;BR&gt;/,&lt;I&gt;&lt;small&gt;$text4&lt;/small&gt;&lt;/I&gt;&lt;BR&gt;/, &lt;I&gt;&lt;Font color=&quot;red&quot;&gt; $text3&lt;/Font&gt;&lt;/I&gt; "/>
+<PHRASE Key="ServiceCSSFormat" Value="rubric {color:red;font-weight:bold}/,p {margin-left:.5in;text-indent:-.5in}/,h1 {color:red;font-weight:bold;text-align:center}/,comment {color:red;font-size:50%;font-style:italic}/,command {color:red;font-style:italic}/,h2 {color:red;font-size:110%;text-align:center;letter-spacing:1px}"/>
+
+<PHRASE Key="VerseNumFormat" Value="&lt;SPAN style=&quot;color:red;font-size:65%;&quot;&gt;^VN&lt;/SPAN&gt;^VT"/>
+<PHRASE Key="VerseNoNumFormat" Value="^VT"/>
+<PHRASE Key="VerseLink" Value=" "/>
+<PHRASE Key="AbbrevFormat" Value="^NAME^CNN"/>
+<PHRASE Key="ChapterN" Value="&lt;p style=&quot;color:red;&quot;&gt;^NAME^NN章&lt;/p&gt;"/>
+<PHRASE Key="HeaderFormat" Value="&lt;h1 style=&quot;font-style:bold;color:red;&quot;&gt;^NAME ^CNN&lt;/h1&gt;"/>
+<PHRASE Key="ChapterNI" Value="第^NN章"/>
+<PHRASE Key="VerseNo" Value="&lt;p style=&quot;font-style:italic;font-size:14pt;&quot;&gt;^TT&lt;/p&gt;&lt;BR&gt;,一,二,三,四,五,六,七,八,九,十,十一,十二,十三,十四,十五,十六,十七,十八,十九,二十,二一,二二,二三,二四,二五,二六,二七,二八,二九,三十,三一,三二,三三,三四,三五,三六,三七,三八,三九,四十,四一,四二,四三,四四,四五,四六,四七,四八,四九,五十,五一,五二,五三,五四,五五,五六,五七,五八,五九,六十,六一,六二,六三,六四,六五,六六,六七,六八,六九,七十,七一,七二,七三,七四,七五,七六,七七,七八,七九,八十,八一,八二,八三,八四,八五,八六,八七,八八,八九,九十,九一,九二,九三,九四,九五,九六,九七,九八,九九,一百,百零一,百零二,百零三,百零四,百零五,百零六,百零七,百零八,百零九,百一十,百十一,百十二,百十三,百十四,百十五,百十六,百十七,百十八,百十九,百二十,百二一,百二二,百二三,百二四,百二五,百二六,百二七,百二八,百二九,百三十,百三一,百三二,百三三,百三四,百三五,百三六,百三七,百三八,百三九,百四十,百四一,百四二,百四三,百四四,百四五,百四六,百四七,百四八,百四九,百五十,百五一,百五二,百五三,百五四,百五五,百五六,百五七,百五八,百五九,百六十,百六一,百六二,百六三,百六四,百六五,百六六,百六七,百六八,百六九,百七十,百七一,百七二,百七三,百七四,百七五,百七六,百七七,百七八,百七九,百八十"/>
+<PHRASE Key="ChapterNo" Value="序,一,二,三,四,五,六,七,八,九,十,十一,十二,十三,十四,十五,十六,十七,十八,十九,二十,二一,二二,二三,二四,二五,二六,二七,二八,二九,三十,三一,三二,三三,三四,三五,三六,三七,三八,三九,四十,四一,四二,四三,四四,四五,四六,四七,四八,四九,五十,五一,五二,五三,五四,五五,五六,五七,五八,五九,六十,六一,六二,六三,六四,六五,六六,六七,六八,六九,七十,七一,七二,七三,七四,七五,七六,七七,七八,七九,八十,八一,八二,八三,八四,八五,八六,八七,八八,八九,九十,九一,九二,九三,九四,九五,九六,九七,九八,九九,一百,百零一,百零二,百零三,百零四,百零五,百零六,百零七,百零八,百零九,百一十,百十一,百十二,百十三,百十四,百十五,百十六,百十七,百十八,百十九,百二十,百二一,百二二,百二三,百二四,百二五,百二六,百二七,百二八,百二九,百三十,百三一,百三二,百三三,百三四,百三五,百三六,百三七,百三八,百三九,百四十,百四一,百四二,百四三,百四四,百四五,百四六,百四七,百四八,百四九,百五十,百五一,百五二,百五三,百五四,百五五,百五六,百五七,百五八,百五九,百六十,百六一,百六二,百六三,百六四,百六五,百六六,百六七,百六八,百六九,百七十,百七一,百七二,百七三,百七四,百七五,百七六,百七七,百七八,百七九,百八十"/>
+<PHRASE Key="CVSep" Value=":"/>
+<PHRASE Key="Duration" Value="～"/>
+<PHRASE Key="SelectionSeparator" Value=", "/>
+<PHRASE Key="BCSep" Value=" "/>
+<PHRASE Key="Parts" Value="a,b,c"/>
+<PHRASE Key="BibleBooks" Value="Gen=創/,Ex=出/,Lev=利／肋/,Num=民／戶/,Deut=申/,Josh=書／蘇/,Judg=士／民/,Ruth=得／盧/,I_Kings=撒上/,II_Kings=撒下/,III_Kings=列上/,IV_Kings=列下/,I_Paral=歷上／編上/,II_Paral=歷下／編下/,I_Esdra=艾斯德拉紀一/,Nehem=拉／厄上/,II_Esdra=尼／厄下/,Tobit=多/,Judith=友/,Esther=帖／艾/,Job=伯／約/,Psalm=篇／詠/,Prov=箴言/,Eccles=傳/,Song=歌/,Wisd=智慧/,Sirach=德/,Isa=賽／依/,Jerem=耶/,Lamen=哀/,Epistle=巴6/,Baruch=巴/,Ezek=結／則/,Dan=但／達/,Hos=何／歐/,Joel=珥／岳/,Amos=摩／亞/,Obad=俄／北/,Jona=拿／納/,Mica=彌／米/,Nahum=鴻/,Habak=哈/,Zeph=番／索/,Hagg=該／蓋/,Zech=亞／匝/,Mal=瑪／拉/,I_Macc=加上/,II_Macc=加下/,III_Macc=瑪喀維傳三/,III_Esdra=艾斯德拉紀三/,Mt=太／瑪/,Mk=可／谷/,Lk=路加/,Jn=約／若/,Acts=徒／宗/,Jas=雅/,I_Pet=彼前／伯前/,II_Pet=彼後／伯後/,I_Jn=約壹／若一/,II_Jn=約貳／若二/,III_Jn=約叄／若三/,Jude=猶/,Rom=羅/,I_Cor=林前／格前/,II_Cor=林後／格後/,Gal=加／迦/,Eph=弗/,Philip=腓／斐/,Col=西／哥/,I_Thess=帖前／得前/,II_Thess=帖後／得後/,I_Tim=提前／弟前/,II_Tim=提後／弟後/,Tit=多／鐸/,Philemon=門／費/,Heb=來／希/,Apoc=啟／默/,Composite=合成"/>
+
 </LANGUAGEPACKS>

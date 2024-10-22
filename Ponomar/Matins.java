@@ -113,7 +113,7 @@ public class Matins implements DocHandler {
     public void text(String text) {
     }
 
-    public String Readings(OrderedHashtable readingsIn, JDate today) {
+    public String Readings(OrderedHashtable readingsIn, JDate2 today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/
@@ -139,7 +139,7 @@ public class Matins implements DocHandler {
         } catch (Exception e) {
             e.printStackTrace();
         }*/
-        //For the time being I will hard code the rules, as it is simple one. Suppress Sequential readings on Sunday if dRank > 6; otherwise suppress the menaion readings.
+        //For the time being I will hard code the rules, as it is a simple one. Suppress Sequential readings on Sunday if dRank > 6; otherwise suppress the menaion readings.
         
 
 
@@ -153,20 +153,26 @@ public class Matins implements DocHandler {
             dailyTf.add(dow);
 
         }
+	int rankD=-2;
         for (int i=0;i<orderedReadings.menaionV.size();i++){
-            dailyVf.add(orderedReadings.menaionV.get(i));
+            int rankCur=(int) orderedReadings.menaionR.get(i);
+		if (rankCur > rankD)
+		{
+	    dailyVf.add(orderedReadings.menaionV.get(i));
             dailyRf.add(orderedReadings.menaionR.get(i));
             dailyTf.add(orderedReadings.menaionT.get(i));
+		rankD=rankCur;
+		}
         }        
-
+	//System.out.println("VF: "+dailyVf+" Rf: " + dailyRf +" Tf: " +dailyTf); 
         return format(dailyVf, dailyRf, dailyTf);
     }
 
-    private OrderedHashtable getReadings(JDate today, String readingType) {
+    private OrderedHashtable getReadings(JDate2 today, String readingType) {
         String filename = "";
         int lineNumber = 0;
 
-        int nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
+        int nday = (int) JDate2.difference(today, Paschalion.getPascha(today.getYear(),today.getCalendar2()));
 
         //I COPIED THIS FROM THE Main.java FILE BY ALEKS WITH MY MODIFICATIONS (Y.S.)
         //FROM HERE UNTIL
@@ -176,8 +182,8 @@ public class Matins implements DocHandler {
         } else if (nday < -70) {
             // WE HAVE NOT YET REACHED THE LENTEN TRIODION
             filename = pentecostarionFileName;
-            JDate lastPascha = Paschalion.getPascha(today.getYear() - 1);
-            lineNumber = (int) JDate.difference(today, lastPascha) + 1;
+            JDate2 lastPascha = Paschalion.getPascha(today.getYear() - 1,today.getCalendar2());
+            lineNumber = (int) JDate2.difference(today, lastPascha) + 1;
         } else {
             // WE ARE AFTER PASCHA AND BEFORE THE END OF THE YEAR
             filename = pentecostarionFileName;
@@ -316,9 +322,7 @@ public class Matins implements DocHandler {
         Final2.put("Rank", Rank);
         Final2.put("Tag", Tag);
 
-
-
-        return Final2;
+	return Final2;
     }
 
     protected String Display(String a, String b, String c) {
@@ -353,14 +357,17 @@ public class Matins implements DocHandler {
             Enumeration e3 = vectV.elements();
             for (int k = 0; k < vectV.size(); k++) {
                 String reading = (String) vectV.get(k);
-                output += ShortForm.getHyperlink(reading);
+                output += ShortForm.getHyperlinkLoc(reading);
 
                 if ((Integer) vectR.get(k) == -2 ) {
                     if (vectV.size()>1){
                     int tag = (Integer) vectT.get(k);
                     output += " (" + Week(vectT.get(k).toString()) + ")";
                     }
-                } else {
+                } else if ((Integer) vectR.get(k) == -99 ) {
+                    
+                } 
+                else {
                     output += vectT.get(k);
                 }
 
@@ -424,7 +431,7 @@ public class Matins implements DocHandler {
         private void classify(OrderedHashtable readingsIn)
         {
             //Initialise Information.
-            Information2=new OrderedHashtable();
+           Information2=new OrderedHashtable();
             /*try {
                 FileReader frf = new FileReader(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/Matins.xml"));
                 //System.out.println(findLanguage.langFileFind(ParameterValues.dayInfo.get("LS").toString(), "xml/Commands/DivineLiturgy.xml"));
@@ -449,12 +456,17 @@ public class Matins implements DocHandler {
 
 
             for (int k = 0; k < paschalV.size(); k++) {
-
-                if ((Integer) paschalR.get(k) == -2) {
+               // System.out.println("Matins/k="+k+"\nRank is now: "+paschalR.get(0));
+                if ((Integer) paschalR.get(0) == -2) {
                     //THIS IS A DAILY READING THAT CAN BE SKIPPED, EXCEPT MAYBE ON SUNDAYS.
                     dailyV.add(paschalV.get(k));
-                    dailyR.add(paschalR.get(k));
-                    dailyT.add(paschalT.get(k));
+                    if (k==paschalV.size()-1){
+                    dailyR.add(paschalR.get(0));
+                    dailyT.add(paschalT.get(0));
+                    }else {
+                    dailyR.add(-99);
+                    dailyT.add(-99);
+                    }
                 } else {
                     menaionV.add(paschalV.get(k));
                     menaionR.add(paschalR.get(k));
@@ -464,7 +476,7 @@ public class Matins implements DocHandler {
             }
             
 
-            Suppress();
+           Suppress();
             //LeapReadings();
 
 

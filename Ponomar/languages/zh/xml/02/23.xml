@@ -1,6 +1,6 @@
 <DAY>
-<SAINT SId="1007" CId="09107" Cmd="nday == 58 || nday == 54 || nday == 52 || nday == 49"/>
-<SAINT SId="496" CId="496"/>
+<SAINT SId="1007" CId="09107" Cmd="nday == -58 || nday == -54 || nday == -52 || nday == -49"/>
+<SAINT SId="496" CId="496" Cmd="!(nday == -58 || nday == -54 || nday == -52 || nday == -49)"/>
 <SAINT SId="4874" CId="4874"/>
 <SAINT SId="498" CId="498"/>
 <SAINT SId="112" CId="112"/>
@@ -12,4 +12,6 @@
 <SAINT SId="02230496" CId="022304"/>
 <SAINT SId="02230596" CId="022305"/>
 <SAINT SId="02230696" CId="022306"/>
+<SAINT SId="1007" CId="0910702" Cmd="nday &gt;= -43 &amp;&amp; dow != 6 || nday == -51 || nday == -53"/>
+<SAINT SId="1007" CId="184301" Cmd="nday == -58 || nday == -54 || nday == -52 || nday == -49"/>
 </DAY>

@@ -292,6 +292,7 @@ public class Commemoration1 implements DocHandler {
             }*/
             //System.out.println("In endElement, I saw the following elements: "+elem);
             if (textR != null) {
+                textR = textR.replace("\n", "").replace("\r", "");
                 value.put("text", textR);                
             }
             if (ServiceInfo.containsKey(Location1)) {

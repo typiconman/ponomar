@@ -1,15 +1,15 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Прⷪ҇ро́ка и҆са́їи (и҃ в. до Р. Х.)"/>
 <NAME Short="Прⷪ҇ро́ка и҆са́їи"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="2">
+<TROPARION Tone="2" Type="1">
  Прⷪ҇ро́ка твоегѡ̀ и҆са́їи па́мѧть, гдⷭ҇и, пра́зднꙋюще, тѣ́мъ тѧ̀ мо́лимъ, сп҃сѝ дꙋ́шы на́шѧ. 
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="2">
+<KONTAKION Tone="2" Type="1">
  Прⷪ҇ро́чества дарова́нїе прїе́мъ прⷪ҇рокомч҃нче, и҆са́їе бг҃опроповѣ́дниче, всѣ̑мъ и҆з̾ѧсни́лъ є҆сѝ вочл҃вѣ́ченїе гдⷭ҇не, возгласи́въ велегла́снѡ концє́мъ: сѐ дв҃а во чре́вѣ прїи́метъ. 
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

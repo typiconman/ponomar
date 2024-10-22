@@ -1,15 +1,13 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Ст҃а́гѡ марті́на и҆сповѣ́дника, па́пы ри́мскагѡ (655)"/>
 <NAME Short="Ст҃а́гѡ марті́на"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="1">
- 
-</TROPARION></LITURGY></SERVICE>
+<TROPARION Tone="4" Type="1">И҆́стинныхъ повелѣ̑нїи ѹ҆стнѐ распространи́лъ є҆сѝ, * ѹ҆че́нїи бж҃е́ственными всѧ̑ просвѣти́лъ є҆сѝ, * ѕловѣ́рїе низложи́лъ є҆сѝ, бг҃омꙋ́дре марти́не, * ст҃и́телю всече́стне, * помина́й на́съ, ѹ҆го́дниче хрⷭ҇то́въ, * є҆́же къ немꙋ̀ хода́тайствы твои́ми, * да въ ми́рѣ ѹ҆стро́иши живо́тъ на́шъ.</TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="1">
+<KONTAKION Tone="4" Type="1">
  
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

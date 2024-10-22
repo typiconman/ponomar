@@ -1,10 +1,7 @@
 <DAY>
 <SAINT CId="9902" Cmd="doy &gt;= 0 &amp;&amp; doy &lt;= 4"/>
-
-
-
-
-
-<SAINT CId="9904" Cmd="doy &gt;= 359 &amp;&amp; doy &lt;= 364"/><SAINT CId="9906" Cmd="doy &gt;= 351 &amp;&amp; doy &lt;= 357"/><SAINT CId="9908" Cmd="doy &gt;= 344 &amp;&amp; doy &lt;= 350"/>
+<SAINT CId="9904" Cmd="doy &gt;= 359 &amp;&amp; doy &lt;= 364"/>
+<SAINT CId="9906" Cmd="doy &gt;= 351 &amp;&amp; doy &lt;= 357"/>
+<SAINT CId="9908" Cmd="doy &gt;= 344 &amp;&amp; doy &lt;= 350"/>
 <SAINT SId="0" CId="9253" Tone="4"/>
 </DAY>

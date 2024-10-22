@@ -1,15 +1,11 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Прⷪ҇ро́ка і҆езекі́илѧ (ѕ҃ до Р.Х.)"/>
 <NAME Short="Прⷪ҇ро́ка і҆езекі́илѧ"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="2">
- Celebratїng the memory/ oѳ Thy prophet Ezekїel O Lord,// through hїm do ѡe entreat Thee, ѕaѵe Thou our ѕoulѕ.
-</TROPARION></LITURGY></SERVICE>
+<TROPARION Tone="2" Type="1">Прⷪ҇ро́ка твоегѡ̀ і҆езекі́илѧ па́мѧть, гдⷭ҇и, пра́зднꙋюще, тѣ́мъ тѧ̀ мо́лимъ, спасѝ дꙋ́шы на́шѧ.</TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="4">
- Thou haѕt been ѕhoѡn to be a prophet oѳ God,/ O ѡondrouѕ Ezekїel,/ and haѕt proclaїmed unto all the їncarnatїon oѳ the Lord,/ the Lamb and Creator,// the Ѕon oѳ God Ѡho hath reѵealed Hїmѕelѳ ѳoreѵer.
-</KONTAKION></LITURGY></SERVICE>
+<KONTAKION Podoben="1" Tone="4" Type="1">Бж҃їй ꙗ҆ви́лсѧ є҆сѝ прⷪ҇ро́къ, і҆езекі́иле чꙋ́дне, воплоще́нїе гдⷭ҇не всѣ̑мъ провозвѣсти́лъ є҆сѝ, сего̀ а҆́гнца и҆ зижди́телѧ сн҃а бж҃їѧ ꙗ҆́вльшасѧ во вѣ́ки.</KONTAKION></LITURGY></SERVICE>
 </SAINT>

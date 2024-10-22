@@ -51,7 +51,8 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="TheotokionPr4" Who="R" RedFirst="1" Times="3" NewLine="1" Cmd="PFlag2 != 0"/>
 
 <!-- Adding the one time outside of the Royal Hours, where there is a reading at the First Hour, that is on Holy and Great Thursday -->
-<CREATE What="TroparProph3" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="nday == -3" CommandB="Tone3"/>
+<!-- Old Version -->
+<!-- <CREATE What="TroparProph3" Who="R" RedFirst="1" NewLine="1" Header="1" Cmd="nday == -3" CommandB="Tone3"/>
 <CREATE What="BothNow" Who="C" RedFirst="1" NewLine="1" Cmd="nday == -3"/>
 <CREATE What="TroparProph3" Who="C" RedFirst="1" NewLine="1" Cmd="nday == -3"/>
 <CREATE What="ProkimenHT1" Who="R" RedFirst="1" NewLine="1" Cmd="nday == -3" CommandB="Tone1"/>
@@ -62,8 +63,22 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="Wisdom" Who="D" RedFirst="1" NewLine="1" Cmd="nday == -3"/>
 <BIBLE Verses="Jerem_11:18-12:5,9-11,14-15" Who="SR" RedFirst="1" Header="1" NewLine="1" Cmd="nday == -3"/>
 <CREATE What="ProkimenHT2" Who="R" RedFirst="1" NewLine="1" Cmd="nday == -3" CommandB="Tone8"/>
-<CREATE What="StychHT2" Who="C" RedFirst="1" NewLine="1" Cmd="nday == -3"/>
+<CREATE What="StychHT2" Who="C" RedFirst="1" NewLine="1" Cmd="nday == -3"/> -->
+<!-- Using a better Version -->
+<GETID Type="M" Id="9803" What="/PRIME/TROPARION/TroparProph3" Who="R" RedFirst="1" NewLine="1" Header="1" CommandB="Tone3" Cmd="nday == -3"/>
+<CREATE What="BothNow" Who="C" RedFirst="1" NewLine="1" Cmd="nday == -3"/>
+<GETID Type="M" Id="9803" What="/PRIME/TROPARION/TroparProph3" Who="C" RedFirst="1" NewLine="1" Cmd="nday == -3"/>
+<GETID Type="M" Id="9803" What="/PRIME/PROKIMENON/ProkimenHT1" Who="R" RedFirst="1" NewLine="1" Cmd="nday == -3" CommandB="Tone1"/>
+<GETID Type="M" Id="9803" What="/PRIME/STICH/StychHT1" Who="C" RedFirst="1" NewLine="1" Cmd="nday == -3" />
+<CREATE What="LetAttentive" Who="D" RedFirst="1" NewLine="1" Cmd="nday == -3"/>
+<CREATE What="PeaceWithAll" Who="P" RedFirst="1" NewLine="1" Cmd="nday == -3 &amp;&amp; PS != 0"/>
+<BIBLE getReading="Jerem" Who="R" NewLine="1" Cmd="nday == -3"/>
+<CREATE What="Wisdom" Who="D" RedFirst="1" NewLine="1" Cmd="nday == -3"/>
+<GETID Type="M" Id="9803" What="/PRIME/PROKIMENON/ProkimenHT2" Who="R" RedFirst="1" NewLine="1" Cmd="nday == -3" CommandB="Tone8"/>
+<GETID Type="M" Id="9803" What="/PRIME/STICH/StychHT2" Who="C" RedFirst="1" NewLine="1" Cmd="nday == -3" />
+<!-- End of better version -->
 <!-- End of unique addition for Holy Thursday -->
+
 
 <CREATE What="ThriceHoly" Who="R" RedFirst="1" NewLine="1" Times="3" />
 <CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>

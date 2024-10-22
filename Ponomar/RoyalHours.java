@@ -60,7 +60,7 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 	private String[] HelpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
 	String newline = "\n";
 	private String strOut;
-	private JDate today;
+	private JDate2 today;
 	private Helpers helper;
 	//private PrimeSelector SelectorP=new PrimeSelector();
 	private PrintableTextPane output;
@@ -70,7 +70,7 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
 	private Font CurrentFont=DefaultFont;
         private StringOp Analyse=new StringOp();
 
-	public RoyalHours(JDate date, OrderedHashtable dayInfo)
+	public RoyalHours(JDate2 date, OrderedHashtable dayInfo)
 	{
             Analyse.dayInfo=dayInfo;
             Text=new LanguagePack(dayInfo);
@@ -364,7 +364,7 @@ public class RoyalHours implements DocHandler, ActionListener, ItemListener, Pro
                 dayInfo.put("LS",0); //ENGLISH
                 dayInfo.put("PS",1);
 
-                JDate todays=new JDate(12,24,2009);
+                JDate2 todays=new JDate2(12,24,2009,0);
 
 		new RoyalHours(todays,dayInfo);
 	}

@@ -1,15 +1,15 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Прпⷣбнагѡ стефа́на савваі́та (794)"/>
 <NAME Short="Прпⷣбнагѡ стефа́на"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="1">
+<TROPARION Tone="8" Type="1">
  
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="1">
+<KONTAKION Tone="4" Type="1">
  
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

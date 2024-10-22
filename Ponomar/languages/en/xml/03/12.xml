@@ -10,4 +10,5 @@
 <SAINT SId="629" CId="629"/>
 <SAINT SId="03120399" CId="03120399"/>
 <SAINT SId="1238" CId="123803" Cmd="nday == -44"/>
+<SAINT SId="1238" CId="123805" Cmd="nday == -43"/>
 </DAY>

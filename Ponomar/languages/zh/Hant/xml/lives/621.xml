@@ -1,4 +1,5 @@
 <SAINT>
 
-<NAME Nominative="聖德奧梵 （西格里阿尼地方的宣信者，818年）" Short="聖德奧梵 （西格里阿尼地方的宣信者，818年）"/>
+<NAME Nominative="聖德奧梵 （西格里阿尼地方的宣信者，818年）" Short="聖德奧梵 （西格里阿尼地方的宣信者，818年）" Cmd="nday != -43"/>
+<NAME Nominative="聖德奧梵 （西格里阿尼地方的宣信者，818年）(&lt;i&gt;transferred from Saturday&lt;/i&gt;)" Short="聖德奧梵 （西格里阿尼地方的宣信者，818年）" Cmd="doy == 67"/>
 <SERVICE Type="1"/></SAINT>

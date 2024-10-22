@@ -1,3 +1,8 @@
 <SAINT>
-<NAME Nominative="&lt;i&gt;The service for the finding of the Forerunner”s Head is observed on Meatfare Friday&lt;/i&gt;" Short="&lt;i&gt;The service for the finding of the Forerunner”s Head is observed on Meatfare Friday&lt;/i&gt;"/>
+<!-- transfers of finding -->
+<NAME Nominative="&lt;i&gt;The service for the finding of the Forerunner’s Head is observed on Meatfare Friday&lt;/i&gt;" Cmd="nday == -57"/>
+<NAME Nominative="&lt;i&gt;The service for the finding of the Forerunner’s Head is observed on Cheesefare Tuesday&lt;/i&gt;" Cmd="nday == -53"/>
+<NAME Nominative="&lt;i&gt;The service for the finding of the Forerunner’s Head is observed on Cheesefare Thursday&lt;/i&gt;" Cmd="nday == -51"/>
+<NAME Nominative="&lt;i&gt;The service for the finding of the Forerunner’s Head is observed on Cheesefare Sunday&lt;/i&gt;" Cmd="nday == -48"/>
+<NAME Nominative="&lt;i&gt;The service for the finding of the Forerunner’s Head is observed on St. Theodore Sunday&lt;/i&gt;" Cmd="nday == -47 || nday == -46 || nday == -45 || nday == -44"/>
 </SAINT>

@@ -1,15 +1,15 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Ст҃ы́хъ а҆пⷭ҇лъ ѿ седми́десѧти ка́рпа и҆ а҆лфе́ѧ (а҃)"/>
 <NAME Short="Ст҃ы́хъ а҆пⷭ҇лъ"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="3">
+<TROPARION Tone="3" Type="1">
  А҆пⷭ҇ле ст҃ы́й ка́рпе, молѝ млⷭ҇тиваго бг҃а, да прегрѣше́нїй ѡ҆ставле́нїе пода́стъ дꙋша́мъ на́шымъ. 
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="4">
+<KONTAKION Tone="4" Type="1">
  Ꙗ҆́кѡ ѕвѣздꙋ̀ пресвѣ́тлꙋю цр҃ковь всегда̀ стѧжа́ тѧ а҆пⷭ҇ле ка́рпе, чꙋде́съ твои́хъ многоподава́нїемъ просвѣща́ема: сп҃сѝ вѣ́рою чтꙋ́щихъ па́мѧть твою̀. 
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

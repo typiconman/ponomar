@@ -1,15 +1,15 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Ст҃ы́хъ мꙋ́чєникъ трофі́ма, ѳео́фїла и҆ и҆̀же съ ни́ми 13-ти мꙋ́ченикѡвъ (284-305)"/>
 <NAME Short="Ст҃ы́хъ мꙋ́чєникъ"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="4">
+<TROPARION Tone="4" Type="1">
  Мч҃нцы твоѝ гдⷭ҇и, во страда́нїихъ свои́хъ вѣнцы̀ прїѧ́ша нетлѣ̑нныѧ ѿ тебѐ бг҃а на́шегѡ: и҆мꙋ́ще бо крѣ́пость твою̀ мꙋчи́телей низложи́ша, сокрꙋши́ша и҆ де́мѡнѡвъ немощны̑ѧ де́рзѡсти. тѣ́хъ моли́твами сп҃сѝ дꙋ́шы на́шѧ. 
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="1">
+<KONTAKION Tone="1" Type="1">
  
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

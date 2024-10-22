@@ -1,3 +1,27 @@
 <SAINT>
 <NAME Nominative="Great Thursday. Remembrance of the Mystical Supper" Short="Great Thursday. Remembrance of the Mystical Supper"/>
+<SERVICE>
+	<PRIME Type="">
+		<TROPARION Header="Troparion of the Prophecy" Tone="3" Type="TroparProph3">
+Thou wast struck on the face for the sake of mankind, yet wast not moved to anger; deliver our life from corruption, O Lord, and save us.
+		</TROPARION>
+		<PROKIMENON Header="" Tone="1" Type="ProkimenHT1">
+Let the nations understand that Thy name is Lord.
+		</PROKIMENON>
+		<STICH Header="" Tone="" Type="StychHT1">
+O God, who shall be likened unto Thee?
+		</STICH>
+		<STICH Header="" Tone="" Type="StychHT2">
+In Judea is God known, His name is great in Israel.
+		</STICH>
+		<PROKIMENON Header="" Tone="8" Type="ProkimenHT2">
+Make your vows and pay them to the Lord our God.
+		</PROKIMENON>
+	</PRIME>
+	<LITURGY>
+		<TROPARION Tone="8" Type="1">
+Є҆гда̀ сла́внїи ᲂу҆ч҃нцы̀ на ᲂу҆мове́нїи ве́чери просвѣща́хꙋсѧ, тогда̀ і҆ꙋ́да ѕлочести́вый сребролю́бїемъ недꙋ́говавъ ѡ҆мрача́шесѧ, и҆ беззакѡ́ннымъ сꙋдїѧ́мъ тебѐ пра́веднаго сꙋдїю̀ предае́тъ. ви́ждь, и҆мѣ́нїй рачи́телю, си́хъ ра́ди ᲂу҆давле́нїе вда́вшасѧ: бѣжѝ несы́тыѧ дꙋшѝ, ᲂу҆ч҃тлю такѡва̑ѧ дерзнꙋ́вшїѧ: ѡ҆ всѣ́хъ бл҃гі́й гдⷭ҇и, сла́ва тебѣ̀.
+		</TROPARION>
+	<KONTAKION Podoben="3" Tone="2" Type="1">Хлѣ́бъ прїе́мъ въ рꙋ́цѣ преда́тель, сокрове́ннѡ ты̑ѧ простира́етъ, и҆ прїе́млетъ цѣ́нꙋ созда́вшагѡ свои́ма рꙋка́ма человѣ́ка: и҆ неиспра́вленъ пребы́сть і҆ꙋ́да ра́бъ и҆ льсте́цъ.</KONTAKION></LITURGY>
+</SERVICE>
 </SAINT>

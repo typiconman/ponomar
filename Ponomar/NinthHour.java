@@ -60,7 +60,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
 	private String[] HelpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
 	String newline = "\n";
 	private String strOut;
-	private JDate today;
+	private JDate2 today;
 	private Helpers helper;
 	private PrimeSelector SelectorP;//=new PrimeSelector();
 	private PrintableTextPane output;
@@ -72,7 +72,7 @@ public class NinthHour implements DocHandler, ActionListener, ItemListener, Prop
         //private Helpers findLanguage;
 	
 	
-	public NinthHour(JDate date, OrderedHashtable dayInfo)
+	public NinthHour(JDate2 date, OrderedHashtable dayInfo)
 	{
             Analyse.dayInfo=dayInfo;
             Text=new LanguagePack(dayInfo);

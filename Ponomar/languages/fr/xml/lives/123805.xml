@@ -1,0 +1,7 @@
+<SAINT>
+<NAME Short="transféré"/>
+<NAME Nominative="&lt;i&gt;Le service pour Martyre Codrat et ceux, qui sont avec lui, est transféré au 9 mars&lt;/i&gt;" Cmd="doy == 68"/>
+<NAME Nominative="&lt;i&gt;Le service pour Sophrone, le Patriarche de Jérsalem est transféré au 9 mars&lt;/i&gt;" Cmd="doy == 70"/>
+<NAME Nominative="&lt;i&gt;Le service pour St. Théophane, le Confesseur, est transféré au 9 mars&lt;/i&gt;" Cmd="doy == 69"/>
+<NAME Nominative="&lt;i&gt;Le service pour le transfert des reliques de St. Nicéphore est transféré au 9 mars&lt;/i&gt;" Cmd="doy == 69"/>
+</SAINT>

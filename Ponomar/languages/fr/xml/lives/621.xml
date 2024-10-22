@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="St. Théophane le Confesseur, Higoumène du Monastère du Grand-Champ au Mont Sigriane" Short="St. Théophane"/>
+<NAME Nominative="St. Théophane le Confesseur, Higoumène du Monastère du Grand-Champ au Mont Sigriane" Short="St. Théophane" Cmd="nday != -43"/>
+<NAME Nominative="St. Théophane le Confesseur, Higoumène du Monastère du Grand-Champ au Mont Sigriane (&lt;i&gt;transféré de samedi&lt;/i&gt;)" Short="St. Théophane" Cmd="doy == 67"/>
 <SERVICE Type="1"/></SAINT>

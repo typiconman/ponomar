@@ -1,4 +1,5 @@
 <SAINT>
 
-<NAME Nominative="聖瓦西里（宣信者，德卡頗利城的聖普若科彼的同伴，747年）" Short="聖瓦西里（宣信者，德卡頗利城的聖普若科彼的同伴，747年）"/>
+<NAME Nominative="聖瓦西里（宣信者，德卡頗利城的聖普若科彼的同伴，747年）" Short="聖瓦西里（宣信者，德卡頗利城的聖普若科彼的同伴，747年）" Cmd="doy == 58"/>
+<NAME Nominative="聖瓦西里（宣信者，德卡頗利城的聖普若科彼的同伴，747年）(&lt;i&gt;transferred from February 28&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;)" Short="聖瓦西里（宣信者，德卡頗利城的聖普若科彼的同伴，747年）" Cmd="doy != 58"/>
 <SERVICE Type="1"/></SAINT>

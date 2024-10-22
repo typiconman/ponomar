@@ -5,6 +5,7 @@
 <CREATE What="BlessedIsOurGod" Who="P" RedFirst="1" Cmd="PS != 0" />
 <CREATE What="ThroughPrayers" Who="R" RedFirst="1" Cmd="PS == 0"/>
 <CREATE What="Amen" Who="R" RedFirst="1" NewLine="1" />
+<!-- Old Version.
 <CREATE What="ChristIsRisenR" Who="C" RedFirst="1" Times="3" NewLine="1"/>
 <CREATE What="HavingBeheld" Who="C" RedFirst="1" Times="3" NewLine="1"/>
 <CREATE What="EasterHypakoe8" Who="" RedFirst="1" NewLine="1" Header="1"/>
@@ -14,6 +15,19 @@
 <CREATE What="EasterTropar82" Who="" RedFirst="1" NewLine="1" Header="1"/>
 <CREATE What="BothNow" Who="C" RedFirst="1" NewLine="1" />
 <CREATE What="EasterTropar83" Who="" RedFirst="1" NewLine="1" Header="1"/>
+-->
+<!-- New Version -->
+<GETID Type="M" Id="9001" What="/LITURGY/TROPARION/1" Who="C" RedFirst="1" Times="3" NewLine="1"/>
+<GETID Type="M" Id="9001" What="/MATINS/CANON/ODE6/TROPARION/5" Who="C" RedFirst="1" NewLine="1" Times="3"/>
+<GETID Type="M" Id="9001" What="/MATINS/HYPAKOE/1" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<GETID Type="M" Id="9001" What="/LITURGY/KONTAKION/1" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<GETID Type="M" Id="9001" What="/PASCHALHOURS/TROPARION/1" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="GloryToTheFather2" Who="R" RedFirst="1" NewLine="1"/>
+<GETID Type="M" Id="9001" What="/PASCHALHOURS/TROPARION/2" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<CREATE What="BothNow" Who="C" RedFirst="1" NewLine="1" />
+<GETID Type="M" Id="9001" What="/PASCHALHOURS/THEOTOKION/1" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<!-- New Version -->
+
 <CREATE What="LordHaveMercy" Who="R" RedFirst="1" NewLine="1" Times="40"/>
 <CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="MoreHonorable" Who="R" RedFirst="1" NewLine="1"/>
@@ -21,7 +35,8 @@
 <CREATE What="InvocationMaster2" Who="R" RedFirst="1" NewLine="1" Cmd="PS == 0"/>
 <CREATE What="BlessingPHours" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
 <CREATE What="Amen" Who="C" NewLine="1" RedFirst="1"/>
-<CREATE What="ChristIsRisenR" Who="C" RedFirst="1" Times="3" NewLine="1"/>
+<!-- <CREATE What="ChristIsRisenR" Who="C" RedFirst="1" Times="3" NewLine="1"/> -->
+<GETID Type="M" Id="9001" What="/LITURGY/TROPARION/1" Who="C" RedFirst="1" Times="3" NewLine="1"/>
 <CREATE What="GloryToTheFather1" Who="C" RedFirst="1" NewLine="1"/>
 <CREATE What="InvocationFather" Who="R" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
 <CREATE What="EasterEnding" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>

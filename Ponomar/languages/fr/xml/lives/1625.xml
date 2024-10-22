@@ -1,3 +1,4 @@
 ﻿<SAINT>
-<NAME Nominative="St. Nicéphore, Patriarche de Constantinople (transfert des reliques)" Short="transfert des reliques"/>
+<NAME Nominative="St. Nicéphore, Patriarche de Constantinople (transfert des reliques)" Short="transfert des reliques" Cmd="nday != -43"/>
+<NAME Nominative="St. Nicéphore, Patriarche de Constantinople (transfert des reliques) (&lt;i&gt;transféré de samedi&lt;/i&gt;)" Short="transfert des reliques" Cmd="doy == 67"/>
 <SERVICE Type="1"/></SAINT>

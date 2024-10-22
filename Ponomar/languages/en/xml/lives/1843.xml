@@ -1,6 +1,7 @@
 <SAINT>
 <NAME Short="Venerable Procopius"/>
-<NAME Nominative="Venerable Procopius, Confessor of Decapolis († c.  750) (transferred from Saturday)" Cmd="doy != 57"/>
+<NAME Nominative="Venerable Procopius, Confessor of Decapolis († c.  750) (&lt;i&gt;transferred from February 27&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;)
+" Cmd="doy != 57"/>
 <NAME Nominative="Venerable Procopius, Confessor of Decapolis († c.  750)" Cmd="doy == 57"/>
 <LIFE Id="bulgakov" Copyright="Bulgakov Handbook. Copyright 1997 by translator Fr. S. Janos.">
 &lt;p&gt;The Monk Prokopios Dekapolites lived during the VIII Century in the region of Dekapolis (&lt;a href="bible=Mk#7:31"&gt;Mk. 7: 31&lt;/a&gt;), to the east of Lake Galilee. And there also he devoted himself to salvation, occupied with monastic deeds.&lt;/p&gt;&lt;p&gt;Saint Prokopios, together with his co-ascetic Saint Basil (Comm. 28 February) and others zealous for holy Orthodoxy, rose up against the Iconoclast heresy that had arisen in those times. By order of the emperor Leo the Isaurian (716-741), the Monk Prokopios was arrested, subjected to a fierce scourging and thrown into prison. Here he languished together with the Monk Basil until the very death of the oppressive emperor, after which the holy confessors were set free. The Monk Prokopios spent the rest of his life peacefully at monastic deeds, guiding many on the way of virtue and salvation. He died in old age, in about the year 750.&lt;/p&gt;

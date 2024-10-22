@@ -1,15 +1,15 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Прⷪ҇ро́ка малахі́и (ок. 400 г. до Р.Х.)"/>
 <NAME Short="Прⷪ҇ро́ка малахі́и"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="1">
+<TROPARION Tone="2" Type="1">
  
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="4">
+<KONTAKION Tone="4" Type="1">
  Прⷪ҇ро́чества дарова́нїемъ богатѣ́ѧ, прⷪ҇ро́че, хрⷭ҇то́во предвозвѣсти́лъ є҆сѝ прише́ствїе ꙗ҆́вѣ, и҆ мі́рови сп҃се́нїе, є҆гѡ́же сїѧ́нїемъ мі́ръ просвѣти́сѧ. 
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

@@ -250,7 +250,7 @@ final class Sunrise
 	// AND THE decimal IS THE FRACTION AFTER THE TOP THE HOUR
 	// TO GET THE MINUTE, TAKE decimal * 60 AND ROUND TO NEAREST INTEGER
 	/** DETAILED INSTRUCTIONS FOR PARAMETERS AND CONSTANTS:
-		date IS A JDATE OBJECT WITH A DATE ON THE JULIAN CALENDAR
+		date IS A JDATE2 OBJECT WITH A DATE ON {Julian or Gregorian} CALENDAR
 
 		lon IS A double WITH THE LONGITUDE WITH RESPECT TO GREENWICH, ENGLAND
 		Eastern longitude is entered as a positive number
@@ -286,17 +286,17 @@ final class Sunrise
 		-18 degrees, ASTRONOMICAL - Astronomical twilight (the sky is completely dark)
 
 	*****************************************************************************/
-	protected static double[] getSunriseSunset(JDate date, double lon, double lat, int tzone)
+	protected static double[] getSunriseSunset(JDate2 date, double lon, double lat, int tzone)
 	{
 		return getSunriseSunset(date, lon, lat, tzone, false, -0.833);
 	}
 
-	protected static double[] getSunriseSunset(JDate date, double lon, double lat, int tzone, boolean isDST)
+	protected static double[] getSunriseSunset(JDate2 date, double lon, double lat, int tzone, boolean isDST)
 	{
 		return getSunriseSunset(date, lon, lat, tzone, isDST, -0.833);
 	}
 
-	protected static double[] getSunriseSunset(JDate date, double lon, double lat, int tzone, boolean isDST, double alt)
+	protected static double[] getSunriseSunset(JDate2 date, double lon, double lat, int tzone, boolean isDST, double alt)
 	{
 		double d = (double)daysSinceJan0(date.getJulianDay()) + 0.5 - lon / 360.0;
 		double[] hours = sun_rise_set(d, lon, lat, alt);
@@ -330,13 +330,13 @@ final class Sunrise
 		return hours;
 	}
 
-	protected static String[] getSunriseSunsetString(JDate date, String lon, String lat, String tzone)
+	protected static String[] getSunriseSunsetString(JDate2 date, String lon, String lat, String tzone)
 	{
 		return getSunriseSunsetString(date, (double)Double.parseDouble(lon), (double)Double.parseDouble(lat), (int)Integer.parseInt(tzone));
 	}
 			
 
-	protected static String[] getSunriseSunsetString(JDate date, double lon, double lat, int tzone)
+	protected static String[] getSunriseSunsetString(JDate2 date, double lon, double lat, int tzone)
 	{
 		double[] raw = getSunriseSunset(date, lon, lat, tzone, false, -0.833);
 		String[] out = new String[2];

@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="五旬节后第卅五主日" Short="五旬节后第卅五主日"/>
+<NAME Nominative="五旬节后第卅五主日" Short="五旬节后第卅五主日" Cmd="nday != -77"/>
+<NAME Nominative="五旬节后第卅五主日（匝克亥主日）" Short="匝克亥主日" Cmd="nday == -77"/>
 </SAINT>

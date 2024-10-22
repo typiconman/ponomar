@@ -38,11 +38,14 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
         private JTextField longitude;
         private JComboBox TimeZone2;
         private ButtonGroup calendar;
+        private ButtonGroup calendar2;
         private JButton okay;
         private JButton cancel;
         private String[] Zone={"-12","-11","-10","-9","-8","-7","-6","-5","-4","-3","-2","-1","0","+1","+2","+3","+4","+5","+6","+7","+8","+9","+10","+11","+12",};
         private JRadioButton jRadioButton2;
         private JRadioButton jRadioButton1;
+        private JRadioButton jRadioButton22;
+        private JRadioButton jRadioButton12;
         private Font CurrentFont;
         private boolean ignore=true;
 
@@ -139,23 +142,23 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 JPanel centre=new JPanel();
                 centre.setLayout(new GridLayout(2,3));
 
-                JLabel blanka=new JLabel();
-                blanka.setFont(CurrentFont);
-                centre.add(blanka);
-                JLabel blank5=new JLabel(Options[8],SwingConstants.CENTER);
-                blank5.setFont(CurrentFont);
-                centre.add(blank5);
-                JLabel blank4=new JLabel();
-                blank4.setFont(CurrentFont);
-                centre.add(blank4);
-                centre.setPreferredSize(new Dimension(100,150));
+                //JLabel blanka=new JLabel();
+                //blanka.setFont(CurrentFont);
+                //centre.add(blanka);
+                //JLabel blank5=new JLabel(Options[8],SwingConstants.CENTER);
+                //blank5.setFont(CurrentFont);
+                //centre.add(blank5);
+                //JLabel blank4=new JLabel();
+                //blank4.setFont(CurrentFont);
+                //centre.add(blank4);
+                //centre.setPreferredSize(new Dimension(100,150));
                 
                 JLabel name=new JLabel(Options[9],SwingConstants.LEFT);
                 name.setFont(CurrentFont);
                 name.setPreferredSize(new Dimension(50,50));
                 centre.add(name);
 
-                String DefaultCalendar = ConfigurationFiles.Defaults.get("Calendar").toString();
+                String DefaultCalendar = ConfigurationFiles.Defaults.get("DisplayCalendar").toString();
 
                 jRadioButton1 = new JRadioButton();
                 jRadioButton1.setText(Options[10]);
@@ -163,7 +166,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
 
                 
 
-                if (!(DefaultCalendar.equals("Gregorian"))){
+                if (!(DefaultCalendar.equals("1"))){
                     jRadioButton1.setSelected(true);
                 }
 
@@ -172,7 +175,7 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
 
                 jRadioButton2.setText(Options[11]);
                 jRadioButton2.setFont(CurrentFont);
-                if ((DefaultCalendar.equals("Gregorian"))){
+                if ((DefaultCalendar.equals("1"))){
                     jRadioButton2.setSelected(true);
                 }
 
@@ -187,6 +190,59 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
                 centre.add(jRadioButton2);
 
                 centre.setBorder(BorderFactory.createBevelBorder(0));
+                
+                //Adding the ability to change the religious calendar
+                              
+//                JLabel blanka2=new JLabel();
+//                blanka2.setFont(CurrentFont);
+//                centre.add(blanka2);
+//                //JLabel blank52=new JLabel(Options[8],SwingConstants.CENTER);
+//               // blank52.setFont(CurrentFont);
+//                //centre.add(blank52);
+//                JLabel blank42=new JLabel();
+//                blank42.setFont(CurrentFont);
+//                centre.add(blank42);
+//                centre.setPreferredSize(new Dimension(100,150));
+                
+                JLabel name2=new JLabel(Options[14],SwingConstants.LEFT);
+                name2.setFont(CurrentFont);
+                name2.setPreferredSize(new Dimension(50,50));
+                centre.add(name2);
+
+                String ReligiousCalendar = ConfigurationFiles.Defaults.get("ReligiousCalendar").toString();
+
+                jRadioButton12 = new JRadioButton();
+                jRadioButton12.setText(Options[10]);
+                jRadioButton12.setFont(CurrentFont);
+
+                
+
+                if (!(ReligiousCalendar.equals("1"))){
+                    jRadioButton12.setSelected(true);
+                }
+
+
+                jRadioButton22 = new JRadioButton();
+
+                jRadioButton22.setText(Options[11]);
+                jRadioButton22.setFont(CurrentFont);
+                if ((ReligiousCalendar.equals("1"))){
+                    jRadioButton22.setSelected(true);
+                }
+
+                calendar2 = new ButtonGroup( );
+                calendar2.add(jRadioButton12);
+                calendar2.add(jRadioButton22);
+
+
+
+
+                centre.add(jRadioButton12);
+                centre.add(jRadioButton22);
+
+                centre.setBorder(BorderFactory.createBevelBorder(0));
+                
+                //End of such changes
 
                 JPanel bottom=new JPanel();
                 bottom.setLayout(new GridLayout(2,2));
@@ -287,21 +343,38 @@ public class Options extends JFrame implements ActionListener, ItemListener, Pro
             }
             ConfigurationFiles.Defaults.put("TimeZone",TimeZone2.getSelectedItem().toString());
             
-            String previous=ConfigurationFiles.Defaults.get("Calendar").toString();
+            String previous=ConfigurationFiles.Defaults.get("DisplayCalendar").toString();
             if (jRadioButton1.getSelectedObjects()!=null){
-                ConfigurationFiles.Defaults.put("Calendar","Julian");
-                if (!(previous.equals("Julian")) && !ignore){
-                    firePropertyChange("CalendarChange", 1,0);
+                ConfigurationFiles.Defaults.put("DisplayCalendar","0");
+                if (!(previous.equals("0")) && !ignore){
+                    firePropertyChange("DisplayCalendarChange", 1,0);
                 }
             }
             else
             {
                
-                ConfigurationFiles.Defaults.put("Calendar","Gregorian");
-                if (!(previous.equals("Gregorian")) && !ignore){
-                   firePropertyChange("CalendarChange", 0,1);
+                ConfigurationFiles.Defaults.put("DisplayCalendar","1");
+                if (!(previous.equals("1")) && !ignore){
+                   firePropertyChange("DisplayCalendarChange", 0,1);
                 }
             }
+            
+            String previous2=ConfigurationFiles.Defaults.get("ReligiousCalendar").toString();
+            if (jRadioButton12.getSelectedObjects()!=null){
+                ConfigurationFiles.Defaults.put("ReligiousCalendar","0");
+                if (!(previous2.equals("0")) && !ignore){
+                    firePropertyChange("ReligiousCalendarChange", 1,0);
+                }
+            }
+            else
+            {
+               
+                ConfigurationFiles.Defaults.put("ReligiousCalendar","1");
+                if (!(previous2.equals("1")) && !ignore){
+                   firePropertyChange("ReligiousCalendarChange", 0,1);
+                }
+            }
+            
             ConfigurationFiles.WriteFile();
             dispose();
             

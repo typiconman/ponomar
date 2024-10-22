@@ -12,7 +12,7 @@ import java.beans.*;
 THIS MODULE READ XML FILES THAT CONTAIN A SET OF <CREATE> TAGS THAT SET THE RULES FOR THE CREATION OF
 A SERVICE
 
-(C) 2008, 2009, 2011 YURI SHARDT. ALL RIGHTS RESERVED.
+(C) 2008, 2009, 2011, 2023 YURI SHARDT. ALL RIGHTS RESERVED.
 TO START THE READING OF THE SERVICE FILES, CALL startService(FileName)
 TO CONTINUE READING, THE SAME SERVICE, BUT WITH POSSIBLY DIFFERENT FILES, CALL readService(FileName)
 TO END THE SERVICE READER CALL, closeService();
@@ -58,11 +58,17 @@ public class Service implements DocHandler
         private String Header1;
         private Helpers findLanguage;
         private StringOp Analyse=new StringOp();
+        private String[] ServiceFormat;
+        private String[] ServiceCSSFormat;
 	//private Font CurrentFont=new Font((String)StringOp.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)StringOp.dayInfo.get("FontSizeM")));
         public Service (OrderedHashtable dayInfo){
             Analyse.dayInfo=dayInfo;
                 Text=new LanguagePack(dayInfo);
                 ServiceNames=Text.obtainValues((String)Text.Phrases.get("ServiceRead"));
+                ServiceFormat=Text.obtainValues((String)Text.Phrases.get("ServiceFormat"));
+                ServiceCSSFormat=Text.obtainValues((String)Text.Phrases.get("ServiceCSSFormat"));
+                //ServiceFormat=Text.obtainValues("<B><FONT color=\"red\">$redNow</FONT></B>$rest/, <I><Font color=\"red\">($repeat$textR $textCommand)</Font></I>/, <I><Font color=\"red\">($repeat)</Font></I>/, <I><Font color=\"red\">($textCommand)</Font></I>/,<B><FONT color=\"red\">$textWho</FONT></B>/,<Font color=\"red\"><I><small>$text4</small></I><BR>/,<I><small>$text4</small></I><BR>/, <I><Font color=\"red\"> $text3</Font></I> ");
+                //ServiceCSSFormat=Text.obtainValues("rubric {color:red;font-weight:bold}/,p {margin-left:.5in;text-indent:-.5in}/,h1 {color:red;font-weight:bold;text-align:center}/,comment {color:red;font-size:50%;font-style:italic}/,command {color:red;font-style:italic}/,h2 {color:red;font-size:110%;text-align:center;letter-spacing:1px}");
         }
         public String startService(String FileName)
 	{
@@ -72,7 +78,9 @@ public class Service implements DocHandler
 		count=-1;
 		//Service1="";
                 Header1="<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n<head>\n";//<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
-                Style="<style type=\"text/css\">\nrubric {color:red;font-weight:bold}\np {margin-left:.5in;text-indent:-.5in}\nh1 {color:red;font-weight:bold;text-align:center}\ncomment {color:red;font-size:50%;font-style:italic}\ncommand {color:red;font-style:italic}\nh2 {color:red;font-size:110%;text-align:center}\n";
+                Style="<style type=\"text/css\">\n"+ServiceCSSFormat[0]+"\n"+ServiceCSSFormat[1]+"\n"+ServiceCSSFormat[2]+"\n"+ServiceCSSFormat[3]+"\n"+ServiceCSSFormat[4]+"\n"+ServiceCSSFormat[5]+"\n";
+ 
+                //Style="<style type=\"text/css\">\nrubric {color:red;font-weight:bold}\np {margin-left:.5in;text-indent:-.5in}\nh1 {color:red;font-weight:bold;text-align:center}\ncomment {color:red;font-size:50%;font-style:italic}\ncommand {color:red;font-style:italic}\nh2 {color:red;font-size:110%;text-align:center}\n";
 
                 /*int LangCode=Integer.parseInt(StringOp.dayInfo.get("LS").toString());
                                 if (LangCode==2 || LangCode==3 ){
@@ -102,7 +110,7 @@ public class Service implements DocHandler
 	public String readService(String FileName) //throws IOException
 	{
 		Service1="";
-                System.out.println("In the body, we have that "+Analyse.dayInfo.get("PFlag3"));
+                //System.out.println("In the body, we have that "+FileName);
                
 
             	try
@@ -215,7 +223,7 @@ public class Service implements DocHandler
 			{
 				String Source=table.get("Source").toString();
 				text4=textGet1.readText(ServiceFileName+"Text/"+Source+".xml");
-				Service1+="<Font color=\"red\"><I><small>"+text4+"</small></I><BR>";
+				Service1+=ServiceFormat[5].replace("$text4", text4);//"<Font color=\"red\"><I><small>"+text4+"</small></I><BR>";
 			}
 			
 			if(table.get("Comment") != null)
@@ -224,7 +232,7 @@ public class Service implements DocHandler
 				text4=textGet1.readText(ServiceFileName+"Text/"+Comment+".xml");
 				if(text4 != null)
 				{
-					Service1+="<I><small>"+text4+"</small></I><BR>";
+					Service1+=ServiceFormat[6].replace("$text4", text4);//"<I><small>"+text4+"</small></I><BR>";
 				}
 			}
 			Service1+="</Font>";
@@ -241,7 +249,8 @@ public class Service implements DocHandler
 			String text4=textGet1.readText(ServiceFileName+"Text/"+Subtitle+".xml");
 			if(text4 != null)
 			{
-				Service1+="<h2> "+text4+"</h2>\n";
+                            //text4=text4.substring(0,1).toUpperCase()+text4.substring(1);
+                            Service1+="<h2> "+text4+"</h2>\n";
 			}
 			else
 			{
@@ -254,7 +263,7 @@ public class Service implements DocHandler
 				text4=textGet1.readText(ServiceFileName+"Text/"+Comment+".xml");
 				if(text4 != null)
 				{
-					Service1+="<I><small>"+text4+"</small></I><BR>";
+					Service1+=ServiceFormat[6].replace("$text4",text4);//<I><small>"+text4+"</small></I><BR>";
 				}
 			}
 			Service1+="</Font>";
@@ -388,6 +397,15 @@ public class Service implements DocHandler
                     else{
                         Header=0;
                     }
+                    //System.out.println(RoyalHours.get("Tone").toString());
+                    if(table.get("ToneA")!=null){
+                        if(!table.get("ToneA").equals("0")){
+                            table.put("CommandB","Tone"+RoyalHours.get("Tone").toString());
+                            if (RoyalHours.get("Tone").toString().equals("0")){
+                                table.put("CommandB","Tone8");
+                            }
+                        }
+                    }
                     //System.out.println(RoyalHours);
                     if (RoyalHours.get("text") == null){
                         Service1+="<BR><Font color=\"red\"> "+ServiceNames[4] + Info+"</Font><BR>";
@@ -396,8 +414,13 @@ public class Service implements DocHandler
                     else{
                         //System.out.println(table);
                         readIncidentals(table);
-
-                        Service1+=Implement(Header,HeaderRH,RoyalHours.get("text").toString().substring(1))+"\n";
+                       //System.out.println(RoyalHours.get("text").toString().substring(1));
+                       //System.out.println(RoyalHours.get("text").toString());
+                       String textO=RoyalHours.get("text").toString();
+                       if (textO.substring(0,1).equals("\n")){
+                           textO=textO.substring(1);
+                       }
+                        Service1+=Implement(Header,HeaderRH,textO)+"\n"; //.substring(1)
                     }
                     read=true;
                 }
@@ -571,8 +594,9 @@ public class Service implements DocHandler
                                     }
                                 }                               
                             }
-                            
-                            text2="<B><FONT color=\"red\">"+redNow+"</FONT></B>"+text2.substring(countRed);
+                            String newtext=ServiceFormat[0].replace("$redNow", redNow);
+                            newtext=newtext.replace("$rest",text2.substring(countRed));
+                            text2=newtext;//"<B><FONT color=\"red\">"+redNow+"</FONT></B>"+text2.substring(countRed);
 			}
 		}
 		String textRepeat=new String();
@@ -646,18 +670,32 @@ public class Service implements DocHandler
 				String textR=textGet.readText(ServiceFileName+"Command/AfterEach.xml");
 				if (textR !=null)
 				{
-					text2=text2+" <I><Font color=\"red\">("+textRepeat+textR+" "+textCommand+")</Font></I>";
+                                    String newText=ServiceFormat[1].replace("$repeat", textRepeat);
+                                    newText=newText.replace("$textR",textR);
+                                    newText=newText.replace("$textCommand",textCommand);
+                                    //" <I><Font color=\"red\">("+textRepeat+textR+" "+textCommand+")</Font></I>"
+                                    text2=text2+newText;//" <I><Font color=\"red\">("+textRepeat+textR+" "+textCommand+")</Font></I>";
                                         
 				}
 				else
 				{
-					text2=text2+" <I><Font color=\"red\">("+textRepeat+ServiceNames[2]+" "+textCommand+")</Font></I>";
+				String newText=ServiceFormat[1].replace("$repeat", textRepeat);
+                                    newText=newText.replace("$textR",ServiceNames[2]);
+                                    newText=newText.replace("$textCommand",textCommand);
+                                    //" <I><Font color=\"red\">("+textRepeat+textR+" "+textCommand+")</Font></I>"
+                                    text2=text2+newText;	
+                                    
+                                    //text2=text2+" <I><Font color=\"red\">("+textRepeat+ServiceNames[2]+" "+textCommand+")</Font></I>";
                                         
 				}
 			}
 			else
 			{
-				text2=text2+" <I><Font color=\"red\">("+textCommand+")</Font></I>";
+				String newText=ServiceFormat[3].replace("$textCommand",textCommand);
+                                    //" <I><Font color=\"red\">("+textRepeat+textR+" "+textCommand+")</Font></I>"
+                                    text2=text2+newText;
+                            
+                            //text2=text2+" <I><Font color=\"red\">("+textCommand+")</Font></I>";
                                 
 			}
 		}
@@ -665,7 +703,13 @@ public class Service implements DocHandler
 		{
 			if(Times != null)
 			{
-				text2=text2+" <I><Font color=\"red\">("+textRepeat+")</Font></I>";
+			String newText=ServiceFormat[2].replace("$repeat", textRepeat);
+                                   // newText=newText.replace("$textR","");
+                                    //newText=newText.replace("$textCommand","");
+                                    //" <I><Font color=\"red\">("+textRepeat+textR+" "+textCommand+")</Font></I>"
+                                    text2=text2+newText;	
+                            
+                            //text2=text2+" <I><Font color=\"red\">("+textRepeat+")</Font></I>";
 			}
 		}
 		
@@ -675,19 +719,22 @@ public class Service implements DocHandler
 				
 			if(text3 != null)
 			{
-				text2=" <I><Font color=\"red\"> "+text3+"</Font></I> "+text2;
+				text2=ServiceFormat[7].replace("$text3", text3)+text2;//" <I><Font color=\"red\"> "+text3+"</Font></I> "+text2;
 			}
 			else
 			{
-				text2=" <I><Font color=\"red\">"+ServiceNames[2] + "</Font></I>"+text2;
+				text2=ServiceFormat[7].replace("$text3", ServiceNames[2])+text2;//" <I><Font color=\"red\">"+ServiceNames[2] + "</Font></I>"+text2;
 			}
 		}
 			
 		if(Header != 0)
 		{
-			if(text4 != null)
+			if(text4 != null && text4.length()>0)
 			{
-				text4="<h2>"+text4+"</h2> ";
+                            //System.out.println(text4 +" lenght: "+text4.length());
+                            text4=text4.substring(0,1).toUpperCase()+text4.substring(1);	
+                            
+                            text4="<h2>"+text4+"</h2> ";
 			}
 			else
 			{
@@ -712,7 +759,9 @@ public class Service implements DocHandler
                     if(!Who.equals(""))
 			{
 				String textWho = textGet.readText(CommonPrayersFileName+Who+".xml");
-                                text2="<p><B><FONT color=\"red\">"+textWho+"</FONT></B>"+text2;
+                                String newText=ServiceFormat[4].replace("$textWho", textWho);
+                                text2="<p>"+newText+text2;
+                                //text2="<p><B><FONT color=\"red\">"+textWho+"</FONT></B>"+text2;
 				if(!WhoLast.equals(""))
 				{
 					text2="</p>"+text4+text2;	

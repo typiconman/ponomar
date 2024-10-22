@@ -60,7 +60,7 @@ public class ThirdHour implements DocHandler, ActionListener, ItemListener, Prop
 	private String[] HelpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
 	String newline = "\n";
 	private String strOut;
-	private JDate today;
+	private JDate2 today;
 	private Helpers helper;
 	private PrimeSelector SelectorP;//=new PrimeSelector();
 	private PrintableTextPane output;
@@ -72,7 +72,7 @@ public class ThirdHour implements DocHandler, ActionListener, ItemListener, Prop
 	
 	
 	
-	public ThirdHour(JDate date, OrderedHashtable dayInfo)
+	public ThirdHour(JDate2 date, OrderedHashtable dayInfo)
 	{
             Analyse.dayInfo=dayInfo;
             Text=new LanguagePack(dayInfo);

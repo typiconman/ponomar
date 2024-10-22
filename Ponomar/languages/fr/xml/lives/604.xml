@@ -1,3 +1,4 @@
 ﻿<SAINT>
-<NAME Nominative="Sts. Codrat de Corinthe et ses compagnons" Short="Sts. Codrat"/>
+<NAME Nominative="Sts. Codrat de Corinthe et ses compagnons" Short="Sts. Codrat" Cmd="nday != -43"/>
+<NAME Nominative="Sts. Codrat de Corinthe et ses compagnons (&lt;i&gt;transféré de samedi&lt;/i&gt;)" Short="Sts. Codrat" Cmd="doy == 67"/>
 <SERVICE Type="1"/></SAINT>

@@ -1,5 +1,6 @@
 <SAINT>
-<NAME Nominative="Thursday of the Great Canon of St Andrew" Short="Thursday of the Great Canon of St Andrew"/>
+<NAME Nominative="Thursday of the Great Canon of St. Andrew" Short="Thursday of the Great Canon of St Andrew" Cmd="doy != 83"/>
+<NAME Nominative="Thursday of the Fifth Week of Lent (&lt;i&gt;The Great Canon of St. Andrew is transferred to Tuesday&lt;/i&gt;)" Short="Thursday" Cmd="doy == 83"/>
 <SERVICE>
 <SEXTE>
 <TROPARION Type="1" Header="Troparion of the Prophecy in the 6&lt;sup&gt;th&lt;/sup&gt; Tone" Tone="6">

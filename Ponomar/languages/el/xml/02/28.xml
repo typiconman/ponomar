@@ -1,6 +1,7 @@
 <DAY>
-<SAINT SId="09107" CId="09107" Cmd="nday == 43"/>
-<SAINT SId="523" CId="523"/>
+<SAINT SId="1007" CId="09107" Cmd="nday == -43"/>
+<SAINT SId="523" CId="523" Cmd="nday != -43"/>
+<SAINT SId="530" CId="530" Cmd="isLeapYear == 0"/> <!-- February 29th -->
 <SAINT SId="02280295" CId="02280295"/>
 <SAINT SId="022803" CId="022803"/>
 <SAINT SId="526" CId="526"/>
@@ -20,4 +21,5 @@
 <SAINT SId="02281895" CId="02281895"/>
 <SAINT SId="02281995" CId="02281995"/>
 <SAINT SId="4762" CId="4762"/>
+<SAINT SId="1007" CId="184301" Cmd="nday == -43"/>
 </DAY>

@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="Le 34-me dimanche après le Pentecôte" Short="Le 34-me dimanche après le Pentecôte"/>
+<NAME Nominative="Le 34-me dimanche après le Pentecôte" Short="Le 34-me dimanche après le Pentecôte" Cmd="nday != -77"/>
+<NAME Nominative="Le 34-me dimanche après le Pentecôt, le dimanche de Zacchée" Short="Zacchée" Cmd="nday == -77"/>
 </SAINT>

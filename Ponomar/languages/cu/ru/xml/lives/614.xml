@@ -1,3 +1,4 @@
 ﻿<SAINT>
-<NAME Nominative="Свт. Софрония, патриарха Иерусалимского (638-644)" Short="Свт. Софрония"/>
+<NAME Nominative="Свт. Софрония, патриарха Иерусалимского (638-644)" Short="Свт. Софрония" Cmd="nday != -43"/>
+<NAME Nominative="Свт. Софрония, патриарха Иерусалимского (638-644) (&lt;i&gt;transferred from Saturday&lt;/i&gt;)" Short="Свт. Софрония" Cmd="doy == 67"/>
 </SAINT>
