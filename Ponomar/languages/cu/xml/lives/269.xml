@@ -1,10 +1,11 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Ст҃а́гѡ мч҃ника неофѵ́та (303-305)"/>
 <NAME Short="Ст҃а́гѡ мч҃ника"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="4">
+<TROPARION Tone="4" Type="1">
  Мч҃нкъ тво́й гдⷭ҇и, неофѵ́тъ, во страда́нїи свое́мъ вѣне́цъ прїѧ́тъ нетлѣ́нный ѿ тебѐ бг҃а на́шегѡ: и҆мѣ́ѧй бо крѣ́пость твою̀, мꙋчи́телей низложѝ, сокрꙋшѝ и҆ де́монѡвъ немощны́ѧ де́рзѡсти: тогѡ̀ мл҃твами сп҃сѝ дꙋ́шы на́шѧ. 
-</TROPARION></LITURGY></SERVICE>
+</TROPARION>
+</LITURGY></SERVICE>
 </SAINT>

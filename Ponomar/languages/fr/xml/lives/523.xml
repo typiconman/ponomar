@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="St. Basile le Confesseur" Short="St. Basile"/>
+<NAME Nominative="St. Basile le Confesseur" Short="St. Basile" Cmd="doy == 58"/>
+<NAME Nominative="St. Basile le Confesseur (&lt;i&gt;transféré de 28-me février&lt;/i&gt;)" Short="St. Basile" Cmd="doy != 58"/>
 <SERVICE Type="1"/></SAINT>

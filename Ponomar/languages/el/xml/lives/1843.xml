@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="Ὅσιος Προκόπιος ὁ Δεκαπολίτης ὁ Ὁμολογητὴς" Short="Ὅσιος Προκόπιος" Genetive="Ὅσιος Προκόπιος"/>
+<NAME Nominative="Ὅσιος Προκόπιος ὁ Δεκαπολίτης ὁ Ὁμολογητὴς" Short="Ὅσιος Προκόπιος" Genetive="Ὅσιος Προκόπιος" Cmd="doy == 57"/>
+<NAME Nominative="Ὅσιος Προκόπιος ὁ Δεκαπολίτης ὁ Ὁμολογητὴς (&lt;i&gt;transferred from February 27&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;)" Short="Ὅσιος Προκόπιος" Genetive="Ὅσιος Προκόπιος" Cmd="doy != 57"/>
 </SAINT>

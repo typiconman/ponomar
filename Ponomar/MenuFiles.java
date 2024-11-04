@@ -45,6 +45,8 @@ class MenuFiles extends JMenu implements ItemListener, PropertyChangeListener
 	private String[] ServiceNames;//=Text.obtainValues((String)Text.Phrases.get("Services"));
 	private String[] BibleName;//=Text.obtainValues((String)Text.Phrases.get("Bible"));
 	private String[] HelpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
+	private String[] EditComm;
+        private String[] EditPrayers;
          private StringOp Analyse=new StringOp();
 	private Font CurrentFont;//=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
 
@@ -59,6 +61,8 @@ public MenuFiles(OrderedHashtable dayInfo)
 	ServiceNames=Text.obtainValues((String)Text.Phrases.get("Services"));
 	BibleName=Text.obtainValues((String)Text.Phrases.get("Bible"));
 	HelpNames=Text.obtainValues((String)Text.Phrases.get("Help"));
+	EditComm=Text.obtainValues((String)Text.Phrases.get("EditComm"));
+        EditPrayers=Text.obtainValues((String)Text.Phrases.get("EditPrayers"));
          CurrentFont=new Font((String)Analyse.dayInfo.get("FontFaceM"),Font.PLAIN,Integer.parseInt((String)Analyse.dayInfo.get("FontSizeM")));
 }
 public JMenu createOptionsMenu(PropertyChangeListener pl, ActionListener al)
@@ -126,7 +130,23 @@ public JMenu createSaintsMenu(ActionListener al)
 	menuItem=new JMenuItem(SaintNames[2],KeyEvent.VK_S);
 	menuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_W, ActionEvent.CTRL_MASK));
 	menuItem.getAccessibleContext().setAccessibleDescription(SaintNames[3]);
-	menuItem.setEnabled(false);
+	menuItem.setEnabled(true);
+	menuItem.addActionListener(al);
+        //menuItem.setFont(CurrentFont);
+	menu.add(menuItem);
+
+	menuItem=new JMenuItem(EditComm[0],KeyEvent.VK_E);
+	menuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_K, ActionEvent.CTRL_MASK));
+	menuItem.getAccessibleContext().setAccessibleDescription(EditComm[1]);
+	menuItem.setEnabled(true);
+	menuItem.addActionListener(al);
+        //menuItem.setFont(CurrentFont);
+	menu.add(menuItem);
+        
+        menuItem=new JMenuItem(EditPrayers[0],KeyEvent.VK_P);
+	menuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_J, ActionEvent.CTRL_MASK));
+	menuItem.getAccessibleContext().setAccessibleDescription(EditPrayers[1]);
+	menuItem.setEnabled(true);
 	menuItem.addActionListener(al);
         //menuItem.setFont(CurrentFont);
 	menu.add(menuItem);

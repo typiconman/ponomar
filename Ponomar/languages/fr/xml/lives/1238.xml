@@ -1,5 +1,6 @@
 ﻿<SAINT>
 <NAME Short="Quarante martyrs"/>
-<NAME Nominative="Aujourd’hui, nous célébrons le service pour les saintes quarante martyrs de Sébaste († c.320)" Cmd="nday == 19 || nday == 26 || nday == 14"/>
-<NAME Nominative="Les saintes quarante martyrs de Sébaste († c.320)" Cmd="!(nday == 19 || nday == 26 || nday == 14)"/>
-<SERVICE Type="4"/></SAINT>
+<NAME Nominative="Aujourd’hui, nous célébrons le service pour les saintes quarante martyrs de Sébaste († c. 320)" Cmd="doy != 67"/>
+<NAME Nominative="Les saintes quarante martyrs de Sébaste († c. 320)" Cmd="!(nday == -17 || nday == -25 || nday == -15 || nday &lt; -43)"/>
+<SERVICE Type="4"/>
+</SAINT>

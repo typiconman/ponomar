@@ -11,16 +11,16 @@
 <!-- If Suppress is True, then the readings for the day are not read and not transferred -->
 <!-- If Class3Transfers is TRUE, then the daily readings should be transferred to another day. -->
 <!-- I am making this rule and Suppress mutually exclusive, but I don't think this should affect anything -AA -->
-<COMMAND Name="Class3Transfers" Value="!(doy == 358 || doy == 357 || doy == 4 || doy == 5 || doy == 256 || doy == 217) &amp;&amp; ((dRank &gt;= 5 &amp;&amp; dow != 0) || dRank == 8)" Cmd="GS == 1 || GS == 0"/>
-<COMMAND Name="Class3Transfers" Value="(doy == 3 &amp;&amp; dow == 5) || (doy == 356 &amp;&amp; dow == 5)" Comment="There is no Liturgy on Friday when the Royal Hours occur. The readings are moved to Thursday." Cmd="GS == 1 || GS == 0"/>
+<COMMAND Name="Class3Transfers" Value="!(doy == 358 || doy == 357 || doy == 4 || doy == 5 || doy == 256 || doy == 217) &amp;&amp; ((dRank &gt;= 5 &amp;&amp; dow != 0) || dRank == 8) &amp;&amp; (nday &gt;= 52 || nday &lt; -55)" Cmd="GS == 1 || GS == 0"/>
+<COMMAND Name="Class3Transfers" Value="((doy == 2 || doy == 3) &amp;&amp; dow == 5) || (doy == 4 &amp;&amp; (dow != 0 || dow != 6 || dow != 1)) || ((doy == 355 || doy == 356) &amp;&amp; dow == 5) || (doy == 357 &amp;&amp; (dow != 0 || dow != 6 || dow != 1))" Comment="There is no Liturgy on Friday when the Royal Hours occur. The readings are moved to Thursday." Cmd="GS == 1 || GS == 0"/>
 <COMMAND Name="Class3Transfers" Value="(doy == 256 || doy == 217) &amp;&amp; dow != 0" Comments="Exaltation and Transfiguration readings are only transferred if it's not a Sunday"/>
 <!-- Can I accept transfers from Tomorrow today -->
 <!-- XXX: check of nday > -63 and nday <= 0 is superfluous and will be removed -->
-<COMMAND Name="TransferRulesB" Value="dow != 0 &amp;&amp; !(nday >= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; doy != 338" Cmd="GS == 1" Comment="This determines the rules used to transfer the readings to the previous day. Note that St. Nicholas's day has a special set of rules"/>
+<COMMAND Name="TransferRulesB" Value="dow != 0 &amp;&amp; !(nday &gt;= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; doy != 338" Cmd="GS == 1" Comment="This determines the rules used to transfer the readings to the previous day. Note that St. Nicholas's day has a special set of rules"/>
 <!-- Can I accept transfers from Yesterday today -->
-<COMMAND Name="TransferRulesF" Value="!(nday >= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; (dow == 2  &amp;&amp; doy != 339) || ((doy == 340 &amp;&amp; (dow != 0 &amp;&amp; dow != 2)))" Cmd="GS == 1" Comment="This determines the rules used to transfer the readings to the next day (forwards). Note that St. Nicholas's day has a special set of rules."/>
-<COMMAND Name="TransferRulesB" Value="dow != 0 &amp;&amp; !(nday >= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; doy != 338" Cmd="GS == 0" Comment="This determines the rules used to transfer the readings to the previous day. Note that St. Nicholas's day has a special set of rules"/>
-<COMMAND Name="TransferRulesF" Value="!(nday >= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; (dow == 2  &amp;&amp; doy != 339) || ((doy == 340 &amp;&amp; (dow != 0 &amp;&amp; dow != 2)))" Cmd="GS == 0" Comment="This determines the rules used to transfer the readings to the next day (forwards). Note that St. Nicholas's day has a special set of rules."/>
+<COMMAND Name="TransferRulesF" Value="!(nday &gt;= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; (dow == 2  &amp;&amp; doy != 339) || ((doy == 340 &amp;&amp; (dow != 0 &amp;&amp; dow != 2)))" Cmd="GS == 1" Comment="This determines the rules used to transfer the readings to the next day (forwards). Note that St. Nicholas's day has a special set of rules."/>
+<COMMAND Name="TransferRulesB" Value="dow != 0 &amp;&amp; !(nday &gt;= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; doy != 338" Cmd="GS == 0" Comment="This determines the rules used to transfer the readings to the previous day. Note that St. Nicholas's day has a special set of rules"/>
+<COMMAND Name="TransferRulesF" Value="!(nday &gt;= -63 &amp;&amp; nday &lt;= 0) &amp;&amp; (dow == 2  &amp;&amp; doy != 339) || ((doy == 340 &amp;&amp; (dow != 0 &amp;&amp; dow != 2)))" Cmd="GS == 0" Comment="This determines the rules used to transfer the readings to the next day (forwards). Note that St. Nicholas's day has a special set of rules."/>
 
 <!-- THESE RULES ALLOW US TO SUPPRESS SEQUENTIAL READINGS IF THEY HAVE BEEN READ BEFORE -->
 <!-- NB: READINGS MAY NOT BE SUPPRESSED IN SEPTEMBER, SINCE EPISTLE READING IS UNIQUE UNDER LJ SCHEME -->

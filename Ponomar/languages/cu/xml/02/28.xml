@@ -2,14 +2,15 @@
 <!-- FINDING IF THIS DAY IS THEODORE SATURDAY -->
 <SAINT SId="1007" CId="09107" Cmd="nday == -43"/>
 <SAINT SId="523" CId="523" Cmd="nday != -43"/>
-<SAINT SId="530" CId="530" Cmd="Year % 4 == 0"/> <!-- February 29th -->
+<SAINT SId="530" CId="530" Cmd="isLeapYear == 0"/> <!-- February 29th -->
 <SAINT SId="4762" CId="4762"/>
 <SAINT SId="02280098" CId="02280098"/>
 <SAINT SId="527" CId="527"/>
 <SAINT SId="528" CId="528"/>
 <SAINT SId="526" CId="526"/>
 <SAINT SId="1636" CId="1636"/>
-<SAINT SId="532" CId="532" Cmd="Year % 4 == 0"/> <!-- February 29th -->
-<SAINT SId="533" CId="533" Cmd="Year % 4 == 0"/> <!-- February 29th -->
-<SAINT SId="02280198" CId="02280198" Cmd="Year % 4 == 0"/> <!-- February 29th -->
+<SAINT SId="532" CId="532" Cmd="isLeapYear == 0"/> <!-- February 29th -->
+<SAINT SId="533" CId="533" Cmd="isLeapYear == 0"/> <!-- February 29th -->
+<SAINT SId="02280198" CId="02280198" Cmd="isLeapYear == 0"/> <!-- February 29th -->
+<SAINT SId="1007" CId="184301" Cmd="nday == -43"/>
 </DAY>

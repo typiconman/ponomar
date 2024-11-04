@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="St. Taraise, Archevêque de Constantinople" Short="St. Taraise"/>
+<NAME Nominative="St. Taraise, Archevêque de Constantinople" Short="St. Taraise" Cmd="doy == 55"/>
+<NAME Nominative="St. Taraise, Archevêque de Constantinople (&lt;i&gt;transféré de 25-me février&lt;/i&gt;)" Short="St. Taraise" Cmd="doy != 55"/>
 <SERVICE Type="1"/></SAINT>

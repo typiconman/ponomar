@@ -1,15 +1,15 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Прпⷣбнагѡ вꙋко́ла, є҆пі́скопа смѵ́рнскагѡ (ок. 100)"/>
 <NAME Short="Прпⷣбнагѡ вꙋко́ла,"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="4">
+<TROPARION Tone="4" Type="1">
  Пра́вило вѣ́ры и҆ ѡ҆́бразъ кро́тости, воздержа́нїѧ ѹ҆чи́телѧ ꙗ҆ви́ тѧ ста́дꙋ твоемꙋ̀, ꙗ҆́же веще́й и҆́стина: сегѡ̀ ра́ди стѧжа́лъ є҆сѝ смире́нїемъ высѡ́каѧ, нището́ю бога̑таѧ, ѻ҆́тче вꙋко́ле, молѝ хрⷭ҇та̀ бг҃а сп҃сти́сѧ дꙋша́мъ на́шымъ. 
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="1">
+<KONTAKION Tone="1" Type="1">
  
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

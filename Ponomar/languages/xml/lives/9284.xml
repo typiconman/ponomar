@@ -2,16 +2,23 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="nday == -74 &amp;&amp; ((doy &gt;= 9 &amp;&amp; doy &lt;= 30))"/>
-<SCRIPTURE Type="apostol" Reading="Heb_5:11-6:8" Pericope="312" EffWeek="29" Cmd="nday == -102 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 13))"/>
-<SCRIPTURE Type="apostol" Reading="Heb_5:11-6:8" Pericope="312" EffWeek="29" Cmd="ndayF == -102 &amp;&amp; ((doy &gt;= 363 &amp;&amp; doy &lt;= 364))"/>
-<SCRIPTURE Type="apostol" Reading="Heb_10:1-18" Pericope="323" EffWeek="30" Cmd="nday == -95 &amp;&amp; ((doy &gt;= 4 &amp;&amp; doy &lt;= 5) || (doy &gt;= 7 &amp;&amp; doy &lt;= 8) || doy == 10 || (doy &gt;= 12 &amp;&amp; doy &lt;= 13))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" EffWeek="30" Cmd="nday == -95 &amp;&amp; ((doy &gt;= 7 &amp;&amp; doy &lt;= 8) || doy == 10 || (doy &gt;= 12 &amp;&amp; doy &lt;= 13))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:22b-26" Pericope="51" EffWeek="32" Cmd="ndayF == -102 &amp;&amp; ((doy &gt;= 363 &amp;&amp; doy &lt;= 364))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -95 &amp;&amp; ((doy &gt;= 4 &amp;&amp; doy &lt;= 5))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -74 &amp;&amp; ((doy &gt;= 9 &amp;&amp; doy &lt;= 30))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -102 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 6))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_21:5-7, 10-11, 20-24" Pericope="104" EffWeek="29" Cmd="nday == -102 &amp;&amp; ((doy &gt;= 7 &amp;&amp; doy &lt;= 13))"/>
+<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="nday == -74"/>
+<SCRIPTURE Type="apostol" Reading="Heb_10:1-18" Pericope="323" EffWeek="30" Cmd="nday == -95"/>
+<SCRIPTURE Type="apostol" Reading="Heb_5:11-6:8" Pericope="312" EffWeek="29" Cmd="nday == -102 || ndayF == -102"/>
+
+<SCRIPTURE Type="gospel" Reading="Lk_21:5-7, 10-11, 20-24" Pericope="104" EffWeek="29" Cmd="nday == -102 &amp;&amp; GS == 1 &amp;&amp; ((doy &gt;= 7))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" EffWeek="30" Cmd="nday == -95 &amp;&amp; GS == 1 &amp;&amp; ((doy &gt;= 7))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:22b-26" Pericope="51" EffWeek="32" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 363 &amp;&amp; doy &lt;= 364))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 6))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -74 &amp;&amp; GS == 1 &amp;&amp; ((doy &gt;= 7))"/>
+
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="(nday == -74) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Mk_8:30-34" Pericope="36" Cmd="(nday == -95) &amp;&amp; GS == 0" /> 
+<SCRIPTURE Type="gospel" Reading="Lk_21:5-7, 10-11, 20-24" Pericope="104" Cmd="(nday == -102 || nday > 0) &amp;&amp; GS == 0" />
+<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Cmd="nday == -74 &amp;&amp; GS == 0" />
+<SCRIPTURE Type="apostol" Reading="Heb_10:1-18" Cmd="nday == -95 &amp;&amp; GS == 0" />
+<!-- this scenario could take place in the previous year (e.g. 2010) -->
+<SCRIPTURE Type="apostol" Reading="Heb_5:11-6:8" Cmd="(nday == -102 || nday > 0) &amp;&amp; GS == 0" />
 </LITURGY>
 </SERVICE>
 </SAINT>

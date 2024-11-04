@@ -2,15 +2,15 @@
 <!-- ^# refers to the actual number that will be placed by the programme in the appropriate place -->
 	
 		<!-- This is an example for a more complicated language such as Church Slavonic. -->
-		<TIMES Value="&lt;i&gt;два́жди&lt;/i&gt;" Cmd="Times == 2"/>
-		<TIMES Value="&lt;i&gt;три́жди&lt;/i&gt;" Cmd="Times == 3"/> 
-		<TIMES Value="&lt;i&gt;четыри́жди&lt;/i&gt;" Cmd="Times == 4"/>
-		<TIMES Value="&lt;i&gt;^# раза̑&lt;/i&gt;" Cmd="(Times % 10 == 2) &amp;&amp; Times &gt; 19"/>
+		<TIMES Value="два́жди" Cmd="Times == 2"/>
+		<TIMES Value="три́жди" Cmd="Times == 3"/> 
+		<TIMES Value="четыри́жди" Cmd="Times == 4"/>
+		<TIMES Value="^# раза̑" Cmd="(Times % 10 == 2) &amp;&amp; Times &gt; 19"/>
 					<!-- The dual form is used for all numbers that end in 2 (except teens). -->
-		<TIMES Value="&lt;i&gt;^# рази̑&lt;/i&gt;" Cmd="((Times % 10 == 3) || (Times % 10 == 4)) &amp;&amp; Times &gt; 19"/>
+		<TIMES Value="^# рази̑" Cmd="((Times % 10 == 3) || (Times % 10 == 4)) &amp;&amp; Times &gt; 19"/>
 	`				<!-- The nominative plural form is used for all numbers that end in 3 or 4 (except teens). -->
-		<TIMES Value="&lt;i&gt;^# ра́зъ&lt;/i&gt;" Cmd="(Times % 10 == 1) &amp;&amp; Times &gt; 19"/>
+		<TIMES Value="^# ра́зъ" Cmd="(Times % 10 == 1) &amp;&amp; Times &gt; 19"/>
 					<!-- The nominative singular form is used if the number ends in 1 (except teens). -->
-		<TIMES Value="&lt;i&gt;^# ра̑зъ&lt;/i&gt;" Cmd="!((Times % 10 == 2 || Times % 10 == 3 || Times % 10 == 4 || Times % 10 == 1) &amp;&amp; Times &gt; 19) &amp;&amp; Times &gt; 4"/>
+		<TIMES Value="^# ра̑зъ" Cmd="!((Times % 10 == 2 || Times % 10 == 3 || Times % 10 == 4 || Times % 10 == 1) &amp;&amp; Times &gt; 19) &amp;&amp; Times &gt; 4"/>
 					<!-- Otherwise the genitive plural form is used. -->
 	</DATA>

@@ -1,3 +1,4 @@
 ﻿<SAINT>
-<NAME Nominative="Недѣ́лѧ л҃д-ѧ по пѧтидесѧ́тницѣ" Short="Недѣ́лѧ"/>
+<NAME Nominative="Недѣ́лѧ л҃д-ѧ по пѧтидесѧ́тницѣ" Short="Недѣ́лѧ" Cmd="nday != -77"/>
+<NAME Nominative="Недѣ́лѧ л҃д-ѧ по пѧтидесѧ́тницѣ, закхе́а" Short="Закхе́а" Cmd="nday == -77"/>
 </SAINT>

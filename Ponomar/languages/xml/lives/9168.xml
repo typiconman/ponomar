@@ -3,21 +3,14 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="ndayF == -211 &amp;&amp; ((doy &gt;= 253 &amp;&amp; doy &lt;= 254))"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="ndayF == -183 &amp;&amp; ((doy &gt;= 262 &amp;&amp; doy &lt;= 281))"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="ndayF == -218 &amp;&amp; ((doy &gt;= 247 &amp;&amp; doy &lt;= 248) || doy == 250)"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" EffWeek="17" Cmd="ndayF == -190 &amp;&amp; ((doy &gt;= 258 &amp;&amp; doy &lt;= 279))"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="ndayF == -211 &amp;&amp; ((doy &gt;= 253 &amp;&amp; doy &lt;= 254))"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="ndayF == -190 &amp;&amp; ((doy &gt;= 258 &amp;&amp; doy &lt;= 262))"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="ndayF == -218 &amp;&amp; ((doy &gt;= 247 &amp;&amp; doy &lt;= 248))"/>
-<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="ndayF == -183 &amp;&amp; (doy == 262)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:27-32" Pericope="20" EffWeek="20" Cmd="ndayF == -190 &amp;&amp; ((doy &gt;= 277 &amp;&amp; doy &lt;= 279))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:27-32" Pericope="20" EffWeek="20" Cmd="ndayF == -183 &amp;&amp; ((doy &gt;= 277 &amp;&amp; doy &lt;= 281))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:17-26" Pericope="19" EffWeek="19" Cmd="ndayF == -190 &amp;&amp; ((doy &gt;= 270 &amp;&amp; doy &lt;= 276))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:17-26" Pericope="19" EffWeek="19" Cmd="ndayF == -183 &amp;&amp; ((doy &gt;= 270 &amp;&amp; doy &lt;= 276))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="ndayF == -218 &amp;&amp; (doy == 250)"/>
-<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="ndayF == -190 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 269))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="ndayF == -183 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 269))"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_14:20-25" Pericope="156" Cmd ="GS == 0 || (GS == 1 &amp;&amp; !(((ndayF == -218) &amp;&amp; (doy == 257 || doy == 249 || doy == 251 || doy == 253 || doy == 252 || doy == 258 || doy == 254 || doy == 255 || doy == 259 || doy == 260 || doy == 261 || doy == 262)) || ((ndayF == -211) &amp;&amp; (doy == 257 || doy == 251 || doy == 252 || doy == 259 || doy == 261 || doy == 262 || doy == 260))) &amp;&amp; (doy != 256))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:27-32" Pericope="20" EffWeek="20" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 277 &amp;&amp; doy &lt;= 283))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 257 &amp;&amp; doy &lt;= 262) &amp;&amp; !((ndayF == -218) &amp;&amp; (doy == 257 || doy == 258 || doy == 254 || doy == 259 || doy == 260 || doy == 261 || doy == 262) || (ndayF == -211 &amp;&amp; (doy == 262 || doy == 261 || doy == 259  || doy == 260))) || (ndayF == -211 &amp;&amp; ((doy &gt;= 253 &amp;&amp; doy &lt;= 254))) || ((doy &gt;= 247 &amp;&amp; doy &lt;= 248))) &amp;&amp; (doy != 256) &amp;&amp; (doy != 257)"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" EffWeek="17" Cmd="GS == 1 &amp;&amp; doy == 255 &amp;&amp; ndayF == -211"/>
+<SCRIPTURE Type="gospel" Reading="Lk_16:10-15" Pericope="81" EffWeek="31" Cmd="GS == 1 &amp;&amp; doy == 250"/> <!--((doy &gt;= 249 &amp;&amp; doy &lt;= 255))"/> -->
+<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 269))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:17-26" Pericope="19" EffWeek="19" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 270 &amp;&amp; doy &lt;= 276))"/>
+<SCRIPTURE Type="gospel" Reading="Mt_25:1-13" Pericope="104" Cmd="GS == 0"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

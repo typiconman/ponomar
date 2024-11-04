@@ -1,15 +1,15 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Ст҃а́гѡ а҆пⷭ҇ла сі́мѡна зилѡ́та (а҃)"/>
 <NAME Short="Ст҃а́гѡ а҆пⷭ҇ла"/>
 <SERVICE Type="4"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="3">
+<TROPARION Tone="3" Type="1">
  А҆пⷭ҇ле ст҃ы́й сі́мѡне, молѝ млⷭ҇тиваго бг҃а, да прегрѣше́нїй ѡ҆ставле́нїе пода́стъ дꙋша́мъ на́шымъ. 
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="2">
+<KONTAKION Tone="2" Type="1">
  И҆звѣ́стнѡ премꙋ́дрости ѹ҆чє́нїѧ въ дꙋша́хъ бл҃гоче́ствꙋющихъ поло́жшаго, во хвале́нїи ѹ҆бл҃жи́мъ, ꙗ҆́кѡ бг҃оглаго́ливаго всѝ сі́мѡна: прⷭ҇то́лꙋ бо сла́вы ны́нѣ предстои́тъ, и҆ со безпло́тными весели́тсѧ, молѧ́сѧ непреста́ннѡ ѡ҆ всѣ́хъ на́съ. 
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

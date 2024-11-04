@@ -1,3 +1,8 @@
 ﻿<SAINT>
-<NAME Nominative="Le service pour St. Procope est transféré au 24 février" Short=""/>
+<NAME Nominative="" Short=""/>
+<NAME Nominative="&lt;i&gt;Le service pour St. Procope est transféré au 24 février&lt;/i&gt;" Short="transfer" Cmd="doy == 57"/>
+<NAME Nominative="&lt;i&gt;Le service pour St. Porphyre, Evêque de Gaza, est transféré au 24 février&lt;/i&gt;" Short="transfer" Cmd="doy == 56"/>
+<NAME Nominative="&lt;i&gt;Le service pour St. Taraise, Archêveque de Constantinople, est transféré au 24 février&lt;/i&gt;" Short="transfer" Cmd="doy == 55"/>
+<NAME Nominative="&lt;i&gt;Le service pour St. Polycarpe est transféré au 24 février&lt;/i&gt;" Short="transfer" Cmd="doy == 53"/>
+<NAME Nominative="&lt;i&gt;Le service pour St. Basil est transféré au 24 février&lt;/i&gt;" Short="transfer" Cmd="doy == 58"/>
 </SAINT>
