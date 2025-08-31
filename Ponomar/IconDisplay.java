@@ -283,7 +283,9 @@ class IconDisplay extends JPanel implements ActionListener, FocusListener, Prope
              label.setIcon(new ImageIcon(scaledImage));
             label.setHorizontalAlignment(JLabel.CENTER);
             iconImage.add(label);
-            text.setText("<html><body style=\"font-family:"+Face+";font-size:"+Size+"pt;text-align: center;\">"+ Names[Number]+"</body></html>");
+            String Name=Names[Number];
+            Name=Name.substring(0,1).toUpperCase()+Name.substring(1);
+            text.setText("<html><body style=\"font-family:"+Face+";font-size:"+Size+"pt;text-align: center;\">"+ Name+"</body></html>");
            //frame.pack();
            //System.out.Println(getAncestorOfClass(new JFrame(),iconImage));
            //repaint();

@@ -1,3 +1,4 @@
 ﻿<SAINT>
-<NAME Nominative="敬迁圣尼基佛若（宣信者，君士坦丁堡牧首，829年）之圣髑（846年）" Short="之圣髑"/>
+<NAME Nominative="敬迁圣尼基佛若（宣信者，君士坦丁堡牧首，829年）之圣髑（846年）" Short="之圣髑" Cmd="nday != -43"/>
+<NAME Nominative="敬迁圣尼基佛若（宣信者，君士坦丁堡牧首，829年）之圣髑（846年）(&lt;i&gt;transferred from Saturday&lt;/i&gt;)" Short="之圣髑" Cmd="doy == 67"/>
 <SERVICE Type="1"/></SAINT>

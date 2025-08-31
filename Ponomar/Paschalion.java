@@ -1,7 +1,6 @@
 package Ponomar;
 
 import java.util.*;
-
 /***************************************************************************
  Paschalion.java - A CLASS FOR WORKING WITH THE PASCHALION OF THE ORTHODOX CHURCH
  PURPOSE: The purpose of this class is to provide an interface for various 
@@ -27,6 +26,7 @@ final class Paschalion
 	// THE LENGTH OF A LUNAR MONTH
 	private final static double lunarMonth = 29.52916667;
 	private final static double lengthOfRem = 0.016932411; // SEE COMMENTS IN getLunarPhaseString()
+	private static int calendar=1; //Set 1 for Gregorian, and 0 for Julian
 
 	// THE FOUNDATION IS THE "AGE OF THE MOON" (NUMBER OF DAYS SINCE NEW MOON)
 	// ON 1 MARCH, JULIAN CALENDAR, FOR A PARTICULAR LUNAR YEAR
@@ -71,16 +71,38 @@ final class Paschalion
 		{
 			throw (new IllegalArgumentException("Invalid year"));
 		}
+		if (year > 1582 && calendar == 1)
+		{
+			int a = year % 19;
+			int b = (int)Math.floor(year/100);
+			int c = year % 100;
+			int d = (int)Math.floor(b/4);
+			int e = b % 4;
+			int f = (int)Math.floor((b+8)/25);
+			int g = (int)Math.floor((b-f+1)/3);
+			int h = (19*a+b-d-g+15) % 30;
+			int i = (int)Math.floor(c/4);
+			int k = c % 4;
+			int l = (32+2*e+2*i-h-k) % 7;
+			int m = (int)Math.floor((a+11*h+22*l)/451);
+			int n = (int)Math.floor((h+l-7*m+114)/31);
+			int p = (h+l-7*m+114)%31;
+			return new JDate(n, p+1, year);
+		}
+		else
+		{
+			int a = year % 4;
+			int b = year % 7;
+			int c = year % 19;
+			int d = (19 * c + 15) % 30;
+			int e = (2 * a + 4 * b - d + 34) % 7;
+			int f = (int)Math.floor((d + e + 114) / 31); //Month of pascha e.g. march=3
+			int g = ((d + e + 114) % 31) + 1; //Day of pascha in the month
+			//System.out.println("Easter on the Julian calendar is: "+year+"/"+f+"/"+g);
+			// Create a JDate object
+			return new JDate(f, g, year);
+		}
 		
-		int a = year % 4;
-		int b = year % 7;
-		int c = year % 19;
-		int d = (19 * c + 15) % 30;
-		int e = (2 * a + 4 * b - d + 34) % 7;
-		int f = (int)Math.floor((d + e + 114) / 31); //Month of pascha e.g. march=3
-		int g = ((d + e + 114) % 31) + 1; //Day of pascha in the month
-		// Create a JDate object
-		return new JDate(f, g, year);
 	}
 
 	// A METHOD TO OBTAIN THE DATE OF JULIAN PENTECOST
@@ -582,4 +604,254 @@ final class Paschalion
 
 		return feasts;
 	}
+        protected static int[] getFasts(int year,int calendar) throws IllegalArgumentException
+	{
+		if (year < 33)
+		{
+			throw( new IllegalArgumentException("Invalid year"));
+		}
+
+		// A HASHTABLE WITH MANDATORY FAST DAYS IN THE YEAR
+		Hashtable mustFast = new Hashtable();
+
+		mustFast.put(new JDate2(1, 5, year,calendar).getJulianDay(), "Eve of Theophany");
+		mustFast.put(new JDate2(8, 29, year,calendar).getJulianDay(), "Beheading");
+		mustFast.put(new JDate2(9, 14, year,calendar).getJulianDay(), "Exaltation");
+
+		// A HASHTABLE WITH MANDATORY FAST-FREE DAYS
+		Hashtable cantFast = new Hashtable();
+                    
+		cantFast.put(new JDate2(1, 6, year,calendar).getJulianDay(), "Theophany");
+
+		// PASCHA
+		JDate2 pascha = getPascha(year,calendar);
+
+		// OTHER FASTING REGULATIONS
+		JDate2 SVIATKI_START  = new JDate2(12, 25, year,calendar);
+		JDate2 SVIATKI_END    = new JDate2(1, 4, year,calendar);
+		JDate2 PUB_PHAR_START = new JDate2(pascha.getJulianDay() - 70,calendar);
+		JDate2 PUB_PHAR_END   = new JDate2(pascha.getJulianDay() - 63,calendar);
+		JDate2 CHEESE_START   = new JDate2(pascha.getJulianDay() - 55,calendar);
+		JDate2 CHEESE_END     = new JDate2(pascha.getJulianDay() - 49,calendar);
+		JDate2 LENT_START     = new JDate2(pascha.getJulianDay() - 48,calendar);
+		JDate2 LENT_END       = new JDate2(pascha.getJulianDay() - 1,calendar);
+		JDate2 BRIGHT_START   = new JDate2(pascha.getJulianDay(),calendar);
+		JDate2 BRIGHT_END     = new JDate2(pascha.getJulianDay() + 6,calendar);
+		JDate2 PENT_START     = new JDate2(pascha.getJulianDay() + 49,calendar);
+		JDate2 PENT_END       = new JDate2(pascha.getJulianDay() + 56,calendar);
+		JDate2 APOSTLES_START = new JDate2(pascha.getJulianDay() + 57,calendar);
+		JDate2 APOSTLES_END   = new JDate2(6, 28, year,calendar);
+		JDate2 DORM_START     = new JDate2(8, 1, year,calendar);
+		JDate2 DORM_END       = new JDate2(8, 14, year,calendar);
+		JDate2 ADVENT_START   = new JDate2(11, 15, year,calendar);
+		JDate2 ADVENT_END     = new JDate2(12, 24, year,calendar);
+
+		JDate2 dummy = new JDate2(1, 1, year,calendar);
+		
+                boolean leapYear=false;
+		int y =year;
+		if (y % 400 == 0)
+		{
+			leapYear =true;
+		}else if (y % 4 == 0 && y % 100 != 0 && calendar==1)
+		{
+			leapYear =true;
+		}else if (y % 4 == 0)
+		{
+			leapYear=true;
+		}
+                int numdays = leapYear ? 366 : 365;
+                
+		int[] retval = new int[numdays];
+		
+                int i = 0;
+
+		do
+		{
+			// figure out if this day is a fast day
+			int fast = 0;
+
+			if (mustFast.containsKey(dummy.getJulianDay()))
+			{
+				// mandatory fast
+				fast = 1;
+			}
+			else if (cantFast.containsKey(dummy.getJulianDay()))
+			{
+				// not a fast day
+			}
+			else if (dummy.compareTo(SVIATKI_START) >= 0)
+			{
+				// not a fast day
+			}
+			else if (dummy.compareTo(SVIATKI_END) <= 0)
+			{
+				// not a fast day
+			}
+			else if (dummy.compareTo(PUB_PHAR_START) >= 0 && dummy.compareTo(PUB_PHAR_END) <= 0)
+			{
+				// not a fast day
+			}
+			else if (dummy.compareTo(CHEESE_START) >= 0 && dummy.compareTo(CHEESE_END) <= 0)
+			{
+				// CHEESEFARE WEEK
+				fast = 2;
+			}
+			else if (dummy.compareTo(LENT_START) >= 0 && dummy.compareTo(LENT_END) <= 0)
+			{
+				// LENT
+				fast = 1;
+			}
+			else if (dummy.compareTo(BRIGHT_START) >= 0 && dummy.compareTo(BRIGHT_END) <= 0)
+			{
+				// BRIGHT WEEK
+				fast = 0;
+			}
+			else if (dummy.compareTo(PENT_START) >= 0 && dummy.compareTo(PENT_END) <= 0)
+			{
+				// PENTECOST WEEK
+				fast = 0;
+			}
+			else if (dummy.compareTo(APOSTLES_START) >= 0 && dummy.compareTo(APOSTLES_END) <= 0)
+			{
+				// APOSTLES' FAST
+				fast = 1;
+			}
+			else if (dummy.compareTo(DORM_START) >= 0 && dummy.compareTo(DORM_END) <= 0)
+			{
+				// DORMITION FAST
+				fast = 1;
+			}
+			else if (dummy.compareTo(ADVENT_START) >= 0 && dummy.compareTo(ADVENT_END) <= 0)
+			{
+				// ADVENT
+				fast = 1;
+			}
+			else
+			{
+				// IS THIS A WEDNESDAY OR FRIDAY?
+				fast = (dummy.getDayOfWeek() == 3 || dummy.getDayOfWeek() == 5) ? 1 : 0;
+			}
+
+			retval[i] = fast;
+			i++;
+			dummy.addDays(1);
+		}  while(i < numdays);
+
+		return retval;
+
+	}
+
+	// A METHOD TO OBTAIN MAJOR FEAST DAYS FOR A PARTICULAR YEAR
+	// PARAMETERS: AN int WITH THE YEAR DESIRED
+	// RETURNS: A Hashtable OBJECT WITH THE FEASTS FOR THAT YEAR
+	//	FIRST ENTRY: THE julian date of a feast
+	//	SECOND ENTRY: A STRING DESCRIBING THAT FEAST
+	// THROWS: ditto
+	protected static Hashtable getFeasts(int year, OrderedHashtable dayInfo,int calendar) throws IllegalArgumentException
+	{
+		if (year < 33)
+		{
+			throw( new IllegalArgumentException("Invalid year"));
+		}
+
+		Hashtable feasts = new Hashtable();
+		LanguagePack Text=new LanguagePack(dayInfo);
+		String[] FeastNames=Text.obtainValues((String)Text.Phrases.get("Feasts"));
+		// ADD ALL THE FIXED FEASTS TO OUR HASHTABLE
+		feasts.put(new JDate2(1, 1, year,calendar).getJulianDay(), FeastNames[0]);
+		feasts.put(new JDate2(1, 6, year,calendar).getJulianDay(), FeastNames[1]);
+		feasts.put(new JDate2(6, 24, year,calendar).getJulianDay(),FeastNames[2]);
+		feasts.put(new JDate2(6, 29, year,calendar).getJulianDay(),FeastNames[3]);
+		feasts.put(new JDate2(8, 6, year,calendar).getJulianDay(), FeastNames[4]);
+		feasts.put(new JDate2(8, 15, year,calendar).getJulianDay(), FeastNames[5]);
+		feasts.put(new JDate2(8, 29, year,calendar).getJulianDay(),FeastNames[6]);
+		feasts.put(new JDate2(9, 8, year,calendar).getJulianDay(), FeastNames[7]);
+		feasts.put(new JDate2(9, 14, year,calendar).getJulianDay(), FeastNames[8]);
+		feasts.put(new JDate2(10, 1, year,calendar).getJulianDay(),FeastNames[9]);
+		feasts.put(new JDate2(11, 21, year,calendar).getJulianDay(), FeastNames[10]);
+		feasts.put(new JDate2(12, 25, year,calendar).getJulianDay(), FeastNames[11]);
+
+		// NOW ADD THE MOVEABLE FEASTS TO OUR HASHTABLE
+		JDate2 pascha = getPascha(year,calendar);
+		// DOUBLE CHECK THAT PASCHA IS NOT ON ANNUNCIATION:
+		if (pascha.equals(new JDate2(3, 25, year,calendar)))
+		{
+			feasts.put(pascha.getJulianDay(),FeastNames[12]);
+		}
+		else
+		{
+			feasts.put(pascha.getJulianDay(), FeastNames[13]);
+			feasts.put(new JDate2(3, 25, year,calendar).getJulianDay(), FeastNames[14]);
+		}
+
+		feasts.put(new JDate2(pascha.getJulianDay() + 49,calendar).getJulianDay(), FeastNames[15]);
+		feasts.put(new JDate2(pascha.getJulianDay() + 39,calendar).getJulianDay(), FeastNames[16]);
+		feasts.put(new JDate2(pascha.getJulianDay() - 7,calendar).getJulianDay(), FeastNames[17]);
+
+		// CHECK THAT MEETING OF THE LORD DOES NOT OCCUR ON THE FIRST MONDAY OF LENT
+		JDate2 meeting = new JDate2(2, 2, year,calendar);
+
+		if (JDate2.difference(pascha, meeting) == 48)
+		{
+			// MEETING OF THE LORD TRANSFERRED TO FORGIVENESS SUNDAY
+			meeting.subtractDays(1);
+		}
+
+		feasts.put(meeting.getJulianDay(), FeastNames[18]);
+
+		return feasts;
+	}
+        protected static JDate2 getPascha(int year, int calendar) throws IllegalArgumentException
+	{
+		if (year < 33)
+		{
+			throw (new IllegalArgumentException("Invalid year"));
+		}
+		if (year > 1582 && calendar == 1)
+		{
+			int a = year % 19;
+			int b = (int)Math.floor(year/100);
+			int c = year % 100;
+			int d = (int)Math.floor(b/4);
+			int e = b % 4;
+			int f = (int)Math.floor((b+8)/25);
+			int g = (int)Math.floor((b-f+1)/3);
+			int h = (19*a+b-d-g+15) % 30;
+			int i = (int)Math.floor(c/4);
+			int k = c % 4;
+			int l = (32+2*e+2*i-h-k) % 7;
+			int m = (int)Math.floor((a+11*h+22*l)/451);
+			int n = (int)Math.floor((h+l-7*m+114)/31);
+			int p = (h+l-7*m+114)%31;
+			return new JDate2(n, p+1, year,1);
+		}
+		else
+		{
+			int a = year % 4;
+			int b = year % 7;
+			int c = year % 19;
+			int d = (19 * c + 15) % 30;
+			int e = (2 * a + 4 * b - d + 34) % 7;
+			int f = (int)Math.floor((d + e + 114) / 31); //Month of pascha e.g. march=3
+			int g = ((d + e + 114) % 31) + 1; //Day of pascha in the month
+			//System.out.println("Easter on the Julian calendar is: "+year+"/"+f+"/"+g);
+			// Create a JDate object
+			return new JDate2(f, g, year,0);
+		}
+		
+	}
+        protected static JDate2 getPentecost(int year,int calendar) throws IllegalArgumentException
+	{
+		if (year < 33)
+		{
+			throw (new IllegalArgumentException("Invalid year"));
+		}
+
+		JDate2 date = getPascha(year,calendar);
+                    
+		date.addDays(49);
+		return date;
+	}
+        
 }

@@ -2,16 +2,10 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="Gal_2:21-3:7" Pericope="204" EffWeek="15" Cmd="ndayF == -208 &amp;&amp; ((doy &gt;= 240 &amp;&amp; doy &lt;= 261))"/>
-<SCRIPTURE Type="apostol" Reading="Gal_2:21-3:7" Pericope="204" EffWeek="15" Cmd="ndayF == -201 &amp;&amp; ((doy &gt;= 244 &amp;&amp; doy &lt;= 263))"/>
-<SCRIPTURE Type="apostol" Reading="Gal_2:21-3:7" Pericope="204" EffWeek="15" Cmd="ndayF == -229 &amp;&amp; ((doy &gt;= 235 &amp;&amp; doy &lt;= 236) || (doy &gt;= 238 &amp;&amp; doy &lt;= 239) || doy == 241 || (doy &gt;= 243 &amp;&amp; doy &lt;= 244))"/>
-<SCRIPTURE Type="apostol" Reading="Gal_2:21-3:7" Pericope="204" EffWeek="15" Cmd="ndayF == -236 &amp;&amp; ((doy &gt;= 229 &amp;&amp; doy &lt;= 244))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_6:1-7" Pericope="22" EffWeek="15" Cmd="ndayF == -208 &amp;&amp; ((doy &gt;= 240 &amp;&amp; doy &lt;= 258))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_6:1-7" Pericope="22" EffWeek="15" Cmd="ndayF == -201 &amp;&amp; ((doy &gt;= 244 &amp;&amp; doy &lt;= 258))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_6:1-7" Pericope="22" EffWeek="15" Cmd="ndayF == -229 &amp;&amp; ((doy &gt;= 235 &amp;&amp; doy &lt;= 236) || (doy &gt;= 238 &amp;&amp; doy &lt;= 239) || doy == 241 || (doy &gt;= 243 &amp;&amp; doy &lt;= 244))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_6:1-7" Pericope="22" EffWeek="15" Cmd="ndayF == -236 &amp;&amp; ((doy &gt;= 229 &amp;&amp; doy &lt;= 244))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_3:23-4:1" Pericope="11" EffWeek="18" Cmd="ndayF == -208 &amp;&amp; ((doy &gt;= 259 &amp;&amp; doy &lt;= 261))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_3:23-4:1" Pericope="11" EffWeek="18" Cmd="ndayF == -201 &amp;&amp; ((doy &gt;= 259 &amp;&amp; doy &lt;= 263))"/>
+<SCRIPTURE Type="apostol" Reading="Gal_2:21-3:7" Pericope="204"/>
+<SCRIPTURE Type="gospel" Reading="Lk_3:23-4:1" Pericope="11" EffWeek="18" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 259 &amp;&amp; doy &lt;= 265))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_6:1-7" Pericope="22" EffWeek="15" Cmd="GS == 1 &amp;&amp; (doy &lt;= 258)"/>
+<SCRIPTURE Type="gospel" Reading="Mk_6:1-7" Pericope="22" Cmd="GS == 0" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>

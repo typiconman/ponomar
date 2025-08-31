@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="Ὅσιος Βασίλειος ὁ Ὁμολογητὴς" Short="Ὅσιος Βασίλειος ὁ Ὁμολογητὴς"/>
+<NAME Nominative="Ὅσιος Βασίλειος ὁ Ὁμολογητὴς" Short="Ὅσιος Βασίλειος ὁ Ὁμολογητὴς" Cmd="doy == 58"/>
+<NAME Nominative="Ὅσιος Βασίλειος ὁ Ὁμολογητὴς (&lt;i&gt;transferred from February 28&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;)" Short="Ὅσιος Βασίλειος ὁ Ὁμολογητὴς" Cmd="doy != 58"/>
 </SAINT>

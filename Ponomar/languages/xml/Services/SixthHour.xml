@@ -99,7 +99,7 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="MoreHonorable" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="InvocationFather" Who="R" RedFirst="1" NewLine="1" Cmd="PS == 0"/>
 <CREATE What="ThroughPrayers" Who="SR" RedFirst="1" Cmd="PS == 0"/>
-<CREATE What="BlessingPrime" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
+<CREATE What="BlessingPHours" Who="P" RedFirst="1" NewLine="1" Cmd="PS != 0"/>
 <CREATE What="Amen" Who="R" NewLine="1" RedFirst="1"/>
 
 <!-- Lenten Addition -->
@@ -127,7 +127,6 @@ PS : Priest or Reader Present: 0 == Reader Service; 1 == Priest
 <CREATE What="Ending" Who="R" RedFirst="1" NewLine="1" Cmd="PS == 0 &amp;&amp; (PFlag1 == 0 || PFlag1 == 1)"/>
 <CREATE What="SmallEndingWP" Who="SR" RedFirst="1" NewLine="1" Cmd="PS == 0 &amp;&amp; (PFlag1 == 0 || PFlag1 == 1)"/>
 <CREATE What="Amen" Who="C" RedFirst="1" NewLine="1" Cmd="PFlag1 == 0 || PFlag1 == 1"/>
-<CREATE What="LordHaveMercy" Who="C" Times="3" RedFirst="0" NewLine="0" Cmd="PFlag1 == 0 || PFlag1 == 1"/>
 
 
 </SERVICES>

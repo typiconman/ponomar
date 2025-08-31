@@ -1,0 +1,11 @@
+<DAY>
+<SAINT SId="09013" CId="09013" />
+<SAINT SId="155" CId="155" />
+<SAINT SId="156" CId="156" />
+<SAINT SId="1564" CId="1564" />
+<SAINT SId="158" CId="158" />
+<SAINT SId="159" CId="159" />
+<SAINT SId="160" CId="160" />
+<SAINT SId="161" CId="161" />
+<SAINT SId="09014" CId="090141" Cmd="dow != 0 &amp;&amp; dow != 6" />
+</DAY>

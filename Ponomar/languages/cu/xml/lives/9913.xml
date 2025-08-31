@@ -1,7 +1,7 @@
-﻿<SAINT>
-<NAME Short="оу҆со́пшихъ" Genetive="оу҆со́пшихъ"/>
-<NAME Nominative="Па́мѧть соверша́емъ всѣ́хъ оу҆со́пшихъ" Cmd="nday != -57 || nday != -50 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)"/>
-<NAME Nominative="Па́мѧть соверша́емъ всѣ́хъ ѿ вѣ́ка оу҆со́пшихъ правосла́вныхъ хрⷭ҇тїа́нъ, ѻ҆тє́цъ и҆ бра́тїй на́шихъ" Cmd="nday == -57 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)"/>
-<NAME Nominative="Па́мѧть соверша́емъ всѣ́хъ преподо́бныхъ и҆ бг҃оно́сныхъ ѻ҆тє́цъ въ по́двизѣ просїѧ́вшихъ" Cmd="nday == -50 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)"/>
-<NAME Nominative="Demetrius Saturday: Па́мѧть соверша́емъ всѣ́хъ оу҆со́пшихъ" Cmd="doy &gt;= 287 &amp;&amp; doy &lt;= 294"/>
-</SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
+<NAME Genetive="оу҆со́пшихъ" Short="оу҆со́пшихъ"/>
+<NAME Cmd="nday != -57 || nday != -50 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)" Nominative="Па́мѧть соверша́емъ всѣ́хъ оу҆со́пшихъ"/>
+<NAME Cmd="nday == -57 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)" Nominative="Па́мѧть соверша́емъ всѣ́хъ ѿ вѣ́ка оу҆со́пшихъ правосла́вныхъ хрⷭ҇тїа́нъ, ѻ҆тє́цъ и҆ бра́тїй на́шихъ"/>
+<NAME Cmd="nday == -50 &amp;&amp; !(doy &gt;= 287 &amp;&amp; doy &lt;= 294)" Nominative="Па́мѧть соверша́емъ всѣ́хъ преподо́бныхъ и҆ бг҃оно́сныхъ ѻ҆тє́цъ въ по́двизѣ просїѧ́вшихъ"/>
+<NAME Cmd="doy &gt;= 287 &amp;&amp; doy &lt;= 294" Nominative="Demetrius Saturday: Па́мѧть соверша́емъ всѣ́хъ оу҆со́пшихъ"/>
+<SERVICE><LITURGY><TROPARION Tone="0" Type="1">Глꙋбино́ю мꙋ́дрости чл҃вѣколю́бнѡ всѧ̑ стро́ѧй, и҆ поле́зное всѣ̑мъ подава́ѧй, є҆ди́не содѣ́телю, ᲂу҆поко́й гдⷭ҇и, дꙋ́шы ра̑бъ твои́хъ: на тѧ́ бо ᲂу҆пова́нїе возложи́ша, творца̀ и҆ зижди́телѧ и҆ бг҃а на́шего.</TROPARION><KONTAKION Tone="0" Type="1">Со ст҃ы́ми ᲂу҆поко́й хрⷭ҇тѐ, дꙋ́шы ра̑бъ твои́хъ, и҆дѣ́же нѣ́сть болѣ́знь, ни печа́ль, ни воздыха́нїе, но жи́знь безконе́чнаѧ.</KONTAKION></LITURGY></SERVICE></SAINT>

@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="Jeudi du grand canon de St. André" Short="Jeudi du grand canon de St. André"/>
+<NAME Nominative="Jeudi du grand canon de St. André" Short="Jeudi du grand canon de St. André" Cmd="doy != 83"/>
+<NAME Nominative="Jeudi de la 5-me semaine du Carême (&lt;i&gt;Le grand canon de St. André est transféré à mardi&lt;/i&gt;)" Short="Thursday" Cmd="doy == 83"/>
 </SAINT>

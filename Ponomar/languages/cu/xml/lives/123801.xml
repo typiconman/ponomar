@@ -1,5 +1,6 @@
 <SAINT>
-<NAME Nominative="&lt;а҃&gt;The Serѕ҃ce for the Martyrs а҃s sung on the preѕ҃ous вто́рника&lt;/а҃&gt;" Cmd="nday == -17 || nday == -25"/>
-<NAME Nominative="&lt;а҃&gt;The Serѕ҃ce for the Martyrs а҃s sung on the Fа҃fth Sunday of Lent&lt;/а҃&gt;" Cmd="nday == -15"/>
+<NAME Nominative="&lt;i&gt;The Service for the Martyrs is sung on the previous Tuesday&lt;/i&gt;" Cmd="nday == -17 || nday == -25"/>
+<NAME Nominative="&lt;i&gt;The Service for the Martyrs is sung on the Fifth Sunday of Lent&lt;/i&gt;" Cmd="nday == -15"/>
+<NAME Nominative="&lt;i&gt;The Service for the Martyrs is sung on Theodore Saturday&lt;/i&gt;" Cmd="nday &lt; -43"/>
 <NAME Short="&lt;а҃&gt;The Serѕ҃ce"/>
 </SAINT>

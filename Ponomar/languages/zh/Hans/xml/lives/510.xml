@@ -1,4 +1,5 @@
 <SAINT>
 
-<NAME Nominative="圣颇尔斐里（加沙总主教，420年）" Short="圣颇尔斐里（加沙总主教，420年）"/>
+<NAME Nominative="圣颇尔斐里（加沙总主教，420年）" Short="圣颇尔斐里（加沙总主教，420年）" Cmd="doy == 56"/>
+<NAME Nominative="圣颇尔斐里（加沙总主教，420年）(&lt;i&gt;transferred from February 26&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;)" Short="圣颇尔斐里（加沙总主教，420年）" Cmd="doy != 56"/>
 <SERVICE Type="1"/></SAINT>

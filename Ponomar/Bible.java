@@ -760,6 +760,25 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
 
         return (String) abbrev.get(Id);
     }
+    public String getAbbrevLoc(String Id) {
+        //Id = Id.replace(' ', '_'); //THIS CAN BE AVOIDED IF THE DEFINITIONS ARE CHANGED
+
+        //INITIALISE TO THE DEFAULT BIBLE FOR THE GIVEN LANGUAGE
+        //ADDED Y.S. TO ALLOW FOR MULTILINGUAL AND ALL BIBLE READING
+        
+        LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
+        //curversion = getLang.Phrases.get("BibleV").toString();
+        //System.out.println("Bible: " + curversion);
+        String abbLink=getLang.Phrases.get("BibleBooks").toString();
+        String[] splitkey = abbLink.split("/,");
+        OrderedHashtable abbrevs=new OrderedHashtable();
+        for (int k = 0; k < splitkey.length; k++)
+        {
+            String[] splitsy=splitkey[k].split("=");
+            abbrevs.put(splitsy[0].replace("_"," "),splitsy[1]);
+        }   
+        return (String) abbrevs.get(Id);
+    }
 
     private String formatPassage(String newPassage) {
         //System.out.println("Hello there, passage: "+newPassage);
@@ -829,6 +848,85 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         }
         return newPassage;
     }
+     private String formatPassageLoc(String newPassage) {
+        //System.out.println("Hello there, passage: "+newPassage);
+        //We first need to specify all the parameters for the readings
+        LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
+        String ChapterNameILoc = getLang.Phrases.get("ChapterNI").toString();
+        String ChapterNL= getLang.Phrases.get("ChapterNo").toString();
+        String[] ChapterNumberLoc=ChapterNL.split(",");
+        String VerseNL= getLang.Phrases.get("VerseNo").toString();
+        String[] VerseNumberLoc=VerseNL.split(",");
+        String CVSepLoc= getLang.Phrases.get("CVSep").toString();
+        String DurationLoc=getLang.Phrases.get("Duration").toString();
+        String SelectionSeparatorLoc=getLang.Phrases.get("SelectionSeparator").toString();
+        
+        if (newPassage.indexOf(":") == -1) {
+            // just a chapter specification, e.g. Gen_1
+            int d = (int) Integer.parseInt(newPassage);
+            String ChapterNameF = ChapterNameILoc.replace("^NN", ChapterNumberLoc[d]);
+            newPassage = ChapterNameF;
+            return newPassage;
+        } else {
+            // e.g. 2:11-3:2, 5, 13-14, 17-4:1
+            String[] parts = newPassage.split(",");
+
+            for (int j = 0; j < parts.length; j++) {
+                
+                //e.g. 2:11-3:2 or 13-14 or 5 or 4:5
+                if (parts[j].indexOf("-") == -1) {
+                    // the example of 5 or 4:5; replicate
+                    if (parts[j].indexOf(":") == -1) {
+                        //System.out.println("Testing the parsing function: Integer: "+Integer.toString(obtainNumber(parts[j]))+" Fraction: "+obtainPart(parts[j]));
+                        parts[j] = VerseNumberLoc[obtainNumber(parts[j])]+obtainPartLoc(parts[j]);
+                    } else {
+                        
+                        //System.out.println("Testing the parsing function: Integer: "+Integer.toString(obtainNumber(parts[j]))+" Fraction: "+obtainPart(parts[j]));
+                        int verse = (int) +obtainNumber(parts[j].split(":")[1]);
+                        int chapter = (int) Integer.parseInt(parts[j].split(":")[0]);
+                        parts[j] = ChapterNumberLoc[chapter] + CVSepLoc + VerseNumberLoc[verse]+obtainPartLoc(parts[j].split(":")[1]);
+                    }
+                } else {
+                    String[] sections = parts[j].split("-");
+                    
+
+                    for (int k = 0; k < sections.length; k++) {
+                        
+                        if (sections[k].indexOf(":") == -1) {
+                            
+                            // E.g. 13 or 5
+                            //System.out.println("Testing the parsing function: Integer: "+Integer.toString(obtainNumber(sections[k]))+" Fraction: "+obtainPart(sections[k]));
+                            sections[k] = VerseNumberLoc[obtainNumber(sections[k])]+obtainPartLoc(sections[k]);
+                            
+                        } else {
+                            //System.out.println("Hello midpoint + " + sections[k] + " "+sections[k]);
+                            //System.out.println(sections[k].split(":")[1]);
+                            int verse = (int) +obtainNumber(sections[k].split(":")[1]);
+                            //System.out.println(verse);
+                            int chapter = (int) Integer.parseInt(sections[k].split(":")[0]);
+                            //System.out.println(chapter);
+                            sections[k] = ChapterNumberLoc[chapter] + CVSepLoc + VerseNumberLoc[verse]+obtainPartLoc(sections[k].split(":")[1]);
+                        }
+                        //System.out.println(sections[k] + "testing parts: "+parts[j]);
+                        if (k == 0) {
+                            parts[j] = sections[k];
+                        } else {
+                            parts[j] = parts[j] + DurationLoc + sections[k];
+                        }
+                        
+                    }
+                }
+                //RECONSTRUCT THE GIVEN READING PART
+                if (j == 0) {
+                    newPassage = parts[j];
+                } else {
+                    newPassage = newPassage + SelectionSeparatorLoc + parts[j];
+                }
+            }
+            //System.out.println("Hello end");
+        }
+        return newPassage;
+    }
 
     public String getHyperlink(String reading) {
         //THIS FUNCTION CREATES THE HYPERLINK FOR BIBLE READINGS
@@ -853,6 +951,38 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
         String output = "<A Href=reading#" + parts[0].replace(' ', '_') + "#" + passage + ">";
         String headerA = AbbrevFormat.replace("^NAME", getAbbrev(parts[0]));
         headerA = headerA.replace("^CNN", formatPassage(passage));
+        
+        output += headerA + "</A>";
+        return output;
+    }
+    
+    public String getHyperlinkLoc(String reading) {
+        //THIS FUNCTION CREATES THE HYPERLINK FOR BIBLE READINGS
+        //CREATED Y.S. 2008/12/11 n.s.
+       if (reading.length()<1)
+       {
+           return "";
+       }
+      
+        LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
+        curversion = getLang.Phrases.get("BibleV").toString();
+       // System.out.println(getLang.Phrases);
+
+        try {
+            BufferedReader frf = new BufferedReader(new InputStreamReader(new FileInputStream(bmlfile), "UTF8"));
+            QDParser.parse(this, frf);
+        } catch (Exception e) {
+            System.out.println(captions[8] + e.toString());
+        }
+
+        String[] parts = reading.split("_");
+        //TODO: get rid of these string operations. They are bad, and take up too much CPU time
+        String passage = parts[1].replaceAll(" ", "");
+        String output = "<A Href=reading#" + parts[0].replace(' ', '_') + "#" + passage + ">";
+        String abbreviation=getLang.Phrases.get("AbbrevFormat").toString();
+        //System.out.println("Abbreviation sought: "+parts[0]);
+        String headerA = abbreviation.replace("^NAME", getAbbrevLoc(parts[0]));
+        headerA = headerA.replace("^CNN", formatPassageLoc(passage));
         
         output += headerA + "</A>";
         return output;
@@ -1076,6 +1206,33 @@ class Bible extends JFrame implements DocHandler, ListSelectionListener, ActionL
                 return halfVerse[1];
             }else if (part.equals("c")){
                 return halfVerse[2];
+            }
+            
+            return verse.substring(size-1);
+        }
+    }
+    
+    private String obtainPartLoc(String verse)
+    {
+        //Allows us to separate the part after the number from the number in the case that
+        //we are dealing with part of a verse, for example 29a or 30b, where the verse is 29 and the part is a.
+        LanguagePack getLang = new LanguagePack(Analyse.dayInfo);
+        String[] halfVerseLoc=getLang.Phrases.get("Parts").toString().split(",");
+        
+        int size=verse.length();
+        //System.out.println("Testing obtainpart: "+verse.substring(size-1));
+        if (Character.isDigit(verse.charAt(size-1)))
+        {
+            return "";
+        }else
+        {
+            String part=verse.substring(size-1);
+            if (part.equals("a")){
+                return halfVerseLoc[0];
+            }else if (part.equals("b")){
+                return halfVerseLoc[1];
+            }else if (part.equals("c")){
+                return halfVerseLoc[2];
             }
             
             return verse.substring(size-1);

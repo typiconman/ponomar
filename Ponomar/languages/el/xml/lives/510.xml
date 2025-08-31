@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="Ὅσιος Πορφύριος Ἐπίσκοπος Γάζης" Short="Ὅσιος Πορφύριος Ἐπίσκοπος Γάζης"/>
+<NAME Nominative="Ὅσιος Πορφύριος Ἐπίσκοπος Γάζης" Short="Ὅσιος Πορφύριος Ἐπίσκοπος Γάζης" Cmd="doy == 56"/>
+<NAME Nominative="Ὅσιος Πορφύριος Ἐπίσκοπος Γάζης (&lt;i&gt;transferred from February 26&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;)" Short="Ὅσιος Πορφύριος Ἐπίσκοπος Γάζης" Cmd="doy != 56"/>
 </SAINT>

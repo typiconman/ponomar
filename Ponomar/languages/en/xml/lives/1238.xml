@@ -1,5 +1,11 @@
 <SAINT>
 <NAME Short="Forty Martyrs"/>
-<NAME Nominative="The Holy Forty Martyrs of Sebaste († c.320): Cyrion, Candidus, Domnus, Hesychius, Iraclius, Smaragdus, Eunoicus, Valentus, Vivian, Claudius, Priskus, Theodulus, Eutichius, John, Xanthus, Ilian, Sisinius, Angius, Aetius, Flavius, Dometian, Gaius, Leontius, Athanasius, Cyrill, Sakerdonus, Nicholas, Valerius, Philoctimon, Seberian, Chudionus, Aglaius, and Meliton" Cmd="!(nday == -19 || nday == -26 || nday == -14)"/>
-<NAME Nominative="On this day we sing the service for the Holy Forty Martyrs of Sebaste († c.320): Cyrion, Candidus, Domnus, Hesychius, Iraclius, Smaragdus, Eunoicus, Valentus, Vivian, Claudius, Priskus, Theodulus, Eutichius, John, Xanthus, Ilian, Sisinius, Angius, Aetius, Flavius, Dometian, Gaius, Leontius, Athanasius, Cyrill, Sakerdonus, Nicholas, Valerius, Philoctimon, Seberian, Chudionus, Aglaius, and Meliton" Cmd="nday == -19 || nday == -26 || nday == -14"/>
-<SERVICE Type="4"/></SAINT>
+<NAME Nominative="The Holy Forty Martyrs of Sebaste († c. 320): Cyrion, Candidus, Domnus, Hesychius, Iraclius, Smaragdus, Eunoicus, Valentus, Vivian, Claudius, Priskus, Theodulus, Eutichius, John, Xanthus, Ilian, Sisinius, Angius, Aetius, Flavius, Dometian, Gaius, Leontius, Athanasius, Cyrill, Sakerdonus, Nicholas, Valerius, Philoctimon, Seberian, Chudionus, Aglaius, and Meliton" Cmd="!(nday == -17 || nday == -25 || nday == -15 || nday &lt; -43)"/>
+<NAME Nominative="On this day, we sing the service for the Holy Forty Martyrs of Sebaste († c. 320): Cyrion, Candidus, Domnus, Hesychius, Iraclius, Smaragdus, Eunoicus, Valentus, Vivian, Claudius, Priskus, Theodulus, Eutichius, John, Xanthus, Ilian, Sisinius, Angius, Aetius, Flavius, Dometian, Gaius, Leontius, Athanasius, Cyrill, Sakerdonus, Nicholas, Valerius, Philoctimon, Seberian, Chudionus, Aglaius, and Meliton" Cmd="doy != 67"/>
+<SERVICE Type="4"/>
+</SAINT>
+<!--
+Original Rules:
+for on this day… Cmd="nday == -19 || nday == -26 || nday == -14"
+plain: Cmd="!(nday == -19 || nday == -26 || nday == -15)"
+-->

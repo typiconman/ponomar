@@ -1,15 +1,15 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Ст҃ы́хъ мꙋ́чєникъ фїлимѡ́на, а҆поллѡ́нїѧ, Ариана и҆ Феотиха (286-251)"/>
 <NAME Short="Ст҃ы́хъ мꙋ́чєникъ"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="1">
+<TROPARION Tone="1" Type="1">
  
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="1">
+<KONTAKION Tone="1" Type="1">
  
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

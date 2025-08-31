@@ -1,0 +1,6 @@
+<SAINT>
+<NAME Short="transferred"/>
+<NAME Nominative="&lt;i&gt;The service for Martyr Quadratus and those with him is transferred to March 9&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;" Cmd="doy == 68"/>
+<NAME Nominative="&lt;i&gt;The service for Sophronius, the Patriarch of Jerusalem, is transferred to March 9&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;" Cmd="doy == 70"/>
+<NAME Nominative="&lt;i&gt;The service for Venerable Theophanes the Confessor is transferred to March 9&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;" Cmd="doy == 69"/>
+<NAME Nominative="&lt;i&gt;The service for the translation of the relics of St. Nicephorusis transferred to March 9&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;" Cmd="doy == 69"/> </SAINT>

@@ -14,7 +14,7 @@ import javax.swing.filechooser.FileFilter;
 THIS MODULE CREATES THE TEXT FOR THE ORTHODOX SERVICE OF THE FIRST HOUR (PRIME)
 THIS MODULE IS STILL IN THE DEVELOPMENT PHASE.
 
-(C) 2007, 2008 YURI SHARDT. ALL RIGHTS RESERVED.
+(C) 2007, 2008, 2024 YURI SHARDT. ALL RIGHTS RESERVED.
 Updated some parts to make it compatible with the changes in Ponomar, especially the language issues!
 
  PERMISSION IS HEREBY GRANTED TO USE, MODIFY, AND/OR REDISTRIBUTE THIS SOURCE CODE
@@ -60,7 +60,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	private String[] HelpNames;//=Text.obtainValues((String)Text.Phrases.get("Help"));
 	String newline = "\n";
 	private String strOut;
-	private JDate today;
+	private JDate2 today;
 	private Helpers helper;
 	private PrimeSelector SelectorP;//=new PrimeSelector();
 	private PrintableTextPane output;
@@ -69,10 +69,12 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	private Font DefaultFont=new Font("",Font.BOLD,12);		//CREATE THE DEFAULT FONT
 	private Font CurrentFont=DefaultFont;
         private StringOp Analyse=new StringOp();
+        private String VersionControl="";
+        private Day menologion;
 	
 	
 		
-	public Primes(JDate date, OrderedHashtable dayInfo)
+	public Primes(JDate2 date, OrderedHashtable dayInfo)
 	{
             Analyse.dayInfo=dayInfo;
             Text=new LanguagePack(dayInfo);
@@ -265,13 +267,29 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 			e.printStackTrace();
 		}
 		
+               
+        String filenameS = Analyse.dayInfo.get("SolarPath").toString();
+        menologion = new Day(filenameS, Analyse.dayInfo);
+                
+                
 		//CHECK WHAT TYPE OF SERVICE WE ARE DEALING WITH
 		//POTENTIAL STREAMLINING OF THE SERVICE: ALL THE RULES HAVE NOW BEEN OBTAINED EXCEPT FOR ANY OVERRIDES
 		ServiceInfo ServicePrimes=new ServiceInfo("PRIME",Analyse.dayInfo);
 		OrderedHashtable PrimesTrial = ServicePrimes.ServiceRules();
-		
+                
+               /* ServiceInfo ServicePrimesM=new ServiceInfo("PRIME",Analyse.dayInfo.get("SolarPath").toString()+".xml",Analyse.dayInfo);
+		OrderedHashtable PrimesTrialM = ServicePrimesM.ServiceRules();
+                System.out.println("Information Found: "+PrimesTrialM);
+                System.out.println("Override Type: "+PrimesTrialM.get("Type").toString());
+                System.out.println("Override Troparion: "+PrimesTrialM.get("Troparion").toString());
+                */
+              /*  System.out.println(PrimesTrial.get("PickT"));
+                System.out.println(PrimesTrial.get("Troparion"));
+                System.out.println(Troparion1);
+		*/
 		Type=PrimesTrial.get("Type").toString();
 		LentenK=(String) PrimesTrial.get("LENTENK");
+                VersionControl=Type+".";
 				
 		String PrimesAdd1=new String();
 				
@@ -283,7 +301,7 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		else if(Type.equals("Paschal"))
 		{
                     
-                    return ReadPrime.startService(ServicesFileName+"PaschalHours.xml");
+                    return ReadPrime.startService(ServicesFileName+"PaschalHours.xml")+"\r\n"+VersionControl;
 		}
 		
 		//I WOULD THEN NEED TO READ THE MENOLOGION, BUT I WILL NOT DO SO RIGHT NOW.
@@ -312,7 +330,70 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	       		//CREATE THE FIRST TROPAR (BEFORE THE Glory...) PART, IF ANY
 			//CREATE THE SECOND TROPAR (NORMAL)
 			//APPROPRIATE TROPAR STILL NEEDS TO BE DETERMINED!!
-			if(Troparion1 != null)
+                    String options=PrimesTrial.get("Troparion").toString();
+                    String amount=PrimesTrial.get("PickT").toString();
+                    OrderedHashtable Troparia=troparia(options, amount);
+                    int amountI=Integer.parseInt(amount);
+                    int amountA=Troparia.size(); //How many troparia did we actually find, we may find fewer than allowed.
+                                      
+                    
+                    //When properly done, this will give me the maximum allowed. But what if there are two allowed, but not available!?!
+			if (Math.min(amountA, amountI)==2){
+                            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop1.xml"),"UTF8"));
+                            GetID DataID=(GetID) Troparia.get(1);
+                            DataID.Header="1";
+                            DataID.ToneA="1";
+                            DataID.RedFirst="1";
+                            DataID.NewLine="1";
+                            DataID.Who="R";
+                            String Data="<SERVICES>\r\n<LANGUAGE>\r\n"+DataID.getHTML()+"\r\n</LANGUAGE>\r\n</SERVICES>";
+                            out.write(Data);
+                            out.close();
+                            VersionControl+="T{"+DataID.GetFullID();
+                            DataID=(GetID) Troparia.get(2);
+                            DataID.Header="1";
+                            DataID.ToneA="1";
+                            DataID.RedFirst="1";
+                            DataID.NewLine="1";
+                            DataID.Who="R";
+                            Data="<SERVICES>\r\n<LANGUAGE>\r\n"+DataID.getHTML()+"\r\n</LANGUAGE>\r\n</SERVICES>";
+	    				
+                            out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop2.xml"),"UTF8"));
+                            out.write(Data);
+                            out.close();
+                            VersionControl+=","+DataID.GetFullID()+"}.";
+                        }else if (Math.min(amountA, amountI)==1){
+                            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop2.xml"),"UTF8"));
+	    			GetID DataID=(GetID) Troparia.get(1);
+                               // System.out.println(DataID);
+                            DataID.Header="1";
+                            DataID.ToneA="1";
+                            DataID.RedFirst="1";
+                            DataID.NewLine="1";
+                            DataID.Who="R";
+                            DataID.Times="1";
+                            VersionControl+="T{"+DataID.GetFullID()+"}.";
+                            String Data="<SERVICES>\r\n<LANGUAGE>\r\n"+DataID.getHTML()+"\r\n</LANGUAGE>\r\n</SERVICES>";
+                            out.write(Data);
+	    			out.close();
+                              //  System.out.println("TESTING COMPLETED");
+                            //Clearing the other Troparion file.
+                            out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop1.xml"),"UTF8"));
+                            out.write("<SERVICE/>");
+                            out.close();
+                        }else {
+                            //We are in big trouble: no troparia were found, but we need at least one!
+                            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PTrop2.xml"),"UTF8"));
+	    			GetID DataID=(GetID) Troparia.get(1);
+                               // System.out.println(DataID);
+                            String Data="<SERVICES>\r\n<LANGUAGE>\r\n<TEXT Value=\"NO RELEVANT TROPARIA FOUND.\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+                            out.write(Data);
+           			out.close();
+                                System.out.println("Error reading troparia: None found!");
+                            
+                        }
+                        /* OLD VERSION
+                        if(Troparion1 != null)
 	    		{
 	    		    	if(Troparion2 != null)
 	    		    	{
@@ -331,22 +412,62 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 	    			String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"TROPARION/"+Troparion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    			out.write(Data);
 	    			out.close();
-    	     		}
+    	     		}*/
+                        
+			if(Type.equals("HolyWeek"))
+			{
+				Analyse.dayInfo.put("PFlag2",3);
+			}
     	     			
 	       	}
 	       	
 	       	//GET AND CREATE THE APPRORIATE KONTAKION
 	       	//APROPRIATE KONTAKION MUST STILL BE CREATED!
-	       	if (Kontakion1 != null)
+               if (Type.equals("Lenten")){
+                 if (Kontakion1 != null)
 		{
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKont1.xml"),"UTF8"));
+			
+                        //Old Version, still only works for the Lenten Part
+                        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKont1.xml"),"UTF8"));
 	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+Kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
 	    		out.write(Data);
 	    		out.close();
+               }
+               }else
+               {
+                String optionsK=PrimesTrial.get("Kontakion").toString();
+                    String amountK=PrimesTrial.get("PickK").toString();
+                    OrderedHashtable Troparia=contacia(optionsK, amountK);
+                    int amountIK=Integer.parseInt(amountK);
+	       //	if (Kontakion1 != null)
+		{
+			GetID DataID=(GetID) Troparia.get(1);
+                               // System.out.println(DataID);
+                            DataID.Header="1";
+                            DataID.ToneA="1";
+                            DataID.RedFirst="1";
+                            DataID.NewLine="1";
+                            DataID.Who="R";
+                            DataID.Times="1";
+                            VersionControl+="K{"+DataID.GetFullID()+"}";
+                            
+                            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKont1.xml"),"UTF8"));
+	    		    String Data="<SERVICES>\r\n<LANGUAGE>\r\n"+DataID.getHTML()+"\r\n</LANGUAGE>\r\n</SERVICES>";
+                            out.write(Data);
+	    			out.close();
+                        /*Old Version, still only works for the Lenten Part
+                        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Ponomar/languages/"+Analyse.dayInfo.get("LS").toString()+ServicesFileName+"Var/PKont1.xml"),"UTF8"));
+	    		String Data="<SERVICES>\r\n<LANGUAGE>\r\n<CREATE Who=\"\" What=\"KONTAKION/"+Kontakion1+"\" Header=\"1\" RedFirst=\"1\" NewLine=\"1\"/>\r\n</LANGUAGE>\r\n</SERVICES>";
+	    		out.write(Data);
+	    		out.close();
+            */
+                        //VersionControl+="K{"+DataID.Id+"}";
 		}
+               }
 	    	 		
 		//System.out.println("Primes Case A: ");
-		strOut=ReadPrime.startService(ServicesFileName + "Prime.xml")+"</p>";
+		strOut=ReadPrime.startService(ServicesFileName + "Prime.xml")+"<footer><p>"+VersionControl+"</p>";
+                System.out.println("Type of Primes for Selected Day: "+VersionControl);
 	
 	   
 	     return strOut;	     	     
@@ -556,6 +677,165 @@ public class Primes implements DocHandler, ActionListener, ItemListener, Propert
 		}
 		
 	}
+        public OrderedHashtable troparia(String options, String number)
+	{
+        //DETERMINE WHICH TROPARIA CAN BE USED TODAY GIVEN THE RULES
+            OrderedHashtable Troparia=new OrderedHashtable();
+            //FIRST PARSE THE options AND THEN DETERMINE HOW MANY
+            String[] cases=options.split(",");
+            int countT=1;
+            for (int counterT = 0; counterT<cases.length; counterT++){
+                //WE NOW NEED TO PARSE THE POTENTIAL TROPARIA
+                //THE FIRST LETTER TELLS US HOW SPECIFIC THE REQUIREMENT IS
+                String firstLetter=cases[counterT].substring(0,1);
+                //System.out.println("First Letter is: "+firstLetter);
+                if (firstLetter.equals("S")){
+                    //WE ARE DEALING WITH A VERY SPECIFIC REQUIREMENT
+                    String[] specific=cases[counterT].split("_");
+                    String CID=specific[1]; //THE SECOND ELEMENT IS ALWAYS THE REQUIRED FILE
+                    String TType="1";
+                    if (specific.length>2){
+                        //A SPECIFIC TYPE HAS BEEN REQUIRED
+                        TType=specific[2];
+                    }
+                    GetID tropar=new GetID(CID,"/LITURGY/TROPARION/"+TType);
+                    Troparia.put(countT,tropar);
+                    countT=countT+1;
+                   // System.out.println("The specific troparion is "+CID);
+                }else if (firstLetter.equals("T")){
+                    //WE NEED THE FILE CORRESPONDING TO THE TONE (I will ignore right now the weekday issue)
+                    int tone=Integer.parseInt(Analyse.dayInfo.get("Tone").toString());
+                    int dow=Integer.parseInt(Analyse.dayInfo.get("dow").toString());
+                    int FileName=0;
+                    if (dow==0){
+                    FileName=9700+tone;
+                    if (tone == 8){
+                        FileName=9700;
+                    }
+                    }else{
+                     FileName=9710+dow;   
+                    }
+                    GetID tropar=new GetID(Integer.toString(FileName),"/LITURGY/TROPARION/1");
+                    Troparia.put(countT,tropar);
+                    countT=countT+1;
+                    
+                   // System.out.println("The specific troparion based on today’s tone is "+FileName);
+                   // System.out.println("The specific call is "+tropar.getHTML());
+                }else if (firstLetter.equals("M")){
+                    //WE NEED THE FILE CORRESPONDING TO THE HIGHEST (OR IF TIED, FIRST) RANKED HOLIDAY
+                    
+                    int dRankM=Integer.parseInt(Analyse.dayInfo.get("dRankM").toString());
+                   //Day menologion=(Day) Analyse.dayInfo.get("SolarCycle");
+                    Vector commemorations=menologion.getCommemorations();
+                    for (int i = 0; i < commemorations.size(); i++) {
+                        Commemoration1 CurrentC = (Commemoration1) commemorations.get(i);
+                        if (CurrentC.getRank() == dRankM){
+                            //We have found a commemoration with a given day rank. We will now search all such commemorations until we find a troparion!
+                            String node="/LITURGY/TROPARION";
+                            
+                        if (CurrentC.getService(node,"1") !=null){
+                            //I should search over other numbers, but I will assume that if "1" is present, then it will be taken!
+                            //We are in luck, there is a troparion. Add it!
+                            OrderedHashtable testing=CurrentC.getService(node,"1");
+                            //System.out.println(testing);
+                            if (testing.get("text").toString().length()>1){
+                            String FileName=CurrentC.getCId();
+                            //System.out.println("The troparion found is for "+FileName);
+                            GetID tropar=new GetID(FileName,"/LITURGY/TROPARION/1");
+                            Troparia.put(countT,tropar);
+                            countT=countT+1;
+                            }
+                            
+                        }
+                        }
+                    }
+                    /*
+                    Still needs to be worked out.
+                    */              
+                    //System.out.println("The Menologion cannot at present be asked.");
+                    //countT=countT+1;
+                }
+                //System.out.println("counterT"+counterT);
+            }
+            //System.out.println("We stored " +countT+" troparia.");
+            return Troparia;
+	}
+        public OrderedHashtable contacia(String options, String number)
+	{
+        //DETERMINE WHICH TROPARIA CAN BE USED TODAY GIVEN THE RULES
+            OrderedHashtable Troparia=new OrderedHashtable();
+            //FIRST PARSE THE options AND THEN DETERMINE HOW MANY
+            String[] cases=options.split(",");
+            int countT=1;
+            for (int counterT = 0; counterT<cases.length; counterT++){
+                //WE NOW NEED TO PARSE THE POTENTIAL TROPARIA
+                //THE FIRST LETTER TELLS US HOW SPECIFIC THE REQUIREMENT IS
+                String firstLetter=cases[counterT].substring(0,1);
+                //System.out.println("First Letter is: "+firstLetter);
+                if (firstLetter.equals("S")){
+                    //WE ARE DEALING WITH A VERY SPECIFIC REQUIREMENT
+                    String[] specific=cases[counterT].split("_");
+                    String CID=specific[1]; //THE SECOND ELEMENT IS ALWAYS THE REQUIRED FILE
+                    String TType="1";
+                    if (specific.length>2){
+                        //A SPECIFIC TYPE HAS BEEN REQUIRED
+                        TType=specific[2];
+                    }
+                    GetID tropar=new GetID(CID,"/LITURGY/KONTAKION/"+TType);
+                    Troparia.put(countT,tropar);
+                    countT=countT+1;
+                    //System.out.println("The specific troparion is "+CID);
+                }else if (firstLetter.equals("T")){
+                    //WE NEED THE FILE CORRESPONDING TO THE TONE (I will ignore right now the weekday issue)
+                    int tone=Integer.parseInt(Analyse.dayInfo.get("Tone").toString());
+                    int dow=Integer.parseInt(Analyse.dayInfo.get("dow").toString());
+                    int FileName=0;
+                    if (dow==0){
+                    FileName=9700+tone;
+                    if (tone == 8){
+                        FileName=9700;
+                    }
+                    }else{
+                     FileName=9710+dow;   
+                    }
+                    GetID tropar=new GetID(Integer.toString(FileName),"/LITURGY/KONTAKION/1");
+                    Troparia.put(countT,tropar);
+                    countT=countT+1;              
+                    System.out.println("The specific contacion based on today’s tone is "+FileName);
+                }else if (firstLetter.equals("M")){
+                    //WE NEED THE FILE CORRESPONDING TO THE HIGHEST (OR IF TIED, FIRST) RANKED HOLIDAY
+                    
+                    int dRankM=Integer.parseInt(Analyse.dayInfo.get("dRankM").toString());
+                   //Day menologion=(Day) Analyse.dayInfo.get("SolarCycle");
+                    Vector commemorations=menologion.getCommemorations();
+                    for (int i = 0; i < commemorations.size(); i++) {
+                        Commemoration1 CurrentC = (Commemoration1) commemorations.get(i);
+                        if (CurrentC.getRank() == dRankM){
+                            //We have found a commemoration with a given day rank. We will now search all such commemorations until we find a troparion!
+                            String node="/LITURGY/KONTAKION";
+                            
+                        if (CurrentC.getService(node,"1") !=null){
+                            //I should search over other numbers, but I will assume that if "1" is present, then it will be taken!
+                            //We are in luck, there is a troparion. Add it!
+                            OrderedHashtable testing=CurrentC.getService(node,"1");
+                            //System.out.println(testing);
+                            if (testing.get("text").toString().length()>1){
+                            String FileName=CurrentC.getCId();
+                            //System.out.println("The troparion found is for "+FileName);
+                            GetID tropar=new GetID(FileName,"/LITURGY/KONTAKION/1");
+                            Troparia.put(countT,tropar);
+                            countT=countT+1;
+                            }
+                            
+                        }
+                        }
+                }
+                }
+            }
+            //System.out.println("We stored " +countT+" troparia.");
+            return Troparia;
+	}
+
 
 	
 }

@@ -1,15 +1,13 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Ст҃ы́хъ мꙋ́чєникъ є҆ѵтро́пїая, клеоні́ка и҆ васїлі́ска (ок. 308)"/>
 <NAME Short="Ст҃ы́хъ мꙋ́чєникъ"/>
 <SERVICE Type="1"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="1">
+<TROPARION Tone="4" Type="1">
  
 </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="1">
- 
-</KONTAKION></LITURGY></SERVICE>
+<KONTAKION Podoben="1" Tone="4" Type="1"> </KONTAKION></LITURGY></SERVICE>
 </SAINT>

@@ -1,4 +1,5 @@
 <SAINT>
 
-<NAME Nominative="聖塔拉息（君士坦丁堡總主教，806年）" Short="聖塔拉息（君士坦丁堡總主教，806年）"/>
+<NAME Nominative="聖塔拉息（君士坦丁堡總主教，806年）" Short="聖塔拉息（君士坦丁堡總主教，806年）" Cmd="doy == 55"/>
+<NAME Nominative="聖塔拉息（君士坦丁堡總主教，806年）(&lt;i&gt;transferred from February 25&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;)" Short="聖塔拉息（君士坦丁堡總主教，806年）" Cmd="doy != 55"/>
 <SERVICE Type="1"/></SAINT>

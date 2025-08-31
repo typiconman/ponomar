@@ -1,6 +1,7 @@
 <DAY>
-<SAINT SId="1007" CId="09107" Cmd="nday == 43"/>
-<SAINT SId="523" CId="523"/>
+<SAINT SId="1007" CId="09107" Cmd="nday == -43"/>
+<SAINT SId="523" CId="523" Cmd="nday != -43"/>
+<SAINT SId="530" CId="530" Cmd="isLeapYear == 0"/> <!-- February 29th -->
 <SAINT SId="02280096" CId="022800"/>
 <SAINT SId="527" CId="527"/>
 <SAINT SId="528" CId="528"/>
@@ -10,5 +11,14 @@
 <SAINT SId="02280396" CId="022803"/>
 <SAINT SId="1636" CId="1636"/>
 <SAINT SId="4762" CId="4762"/>
+<SAINT SId="1007" CId="184301" Cmd="nday == -43"/>
 <!-- Add the February 29th celebrations -->
+<SAINT SId="532" CId="532" Cmd="isLeapYear == 0"/> <!-- February 29th -->
+<SAINT SId="02290096" CId="022900" Cmd="isLeapYear == 0"/>
+<SAINT SId="02290196" CId="022901" Cmd="isLeapYear == 0"/>
+<SAINT SId="02290296" CId="022902" Cmd="isLeapYear == 0"/>
+<SAINT SId="02290396" CId="022903" Cmd="isLeapYear == 0"/>
+<SAINT SId="02290496" CId="022904" Cmd="isLeapYear == 0"/>
+<SAINT SId="02290596" CId="022905" Cmd="isLeapYear == 0"/>
+<SAINT SId="02290696" CId="022906" Cmd="isLeapYear == 0"/>
 </DAY>

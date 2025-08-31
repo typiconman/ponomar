@@ -3,18 +3,10 @@
 <!-- THIS IS THE 16TH SATURDAY AFTER PENTECOST -->
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Cor_10:23-28" Pericope="146" EffWeek="16" Cmd="ndayF == -218 &amp;&amp; ((doy &gt;= 246 &amp;&amp; doy &lt;= 247) || (doy &gt;= 249 &amp;&amp; doy &lt;= 250) || doy == 252 || (doy &gt;= 254 &amp;&amp; doy &lt;= 255))"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_10:23-28" Pericope="146" EffWeek="16" Cmd="ndayF == -190 &amp;&amp; (doy == 255 || (doy &gt;= 257 &amp;&amp; doy &lt;= 274))"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_10:23-28" Pericope="146" EffWeek="16" Cmd="ndayF == -225 &amp;&amp; ((doy &gt;= 240 &amp;&amp; doy &lt;= 248) || doy == 250)"/>
-<SCRIPTURE Type="apostol" Reading="I Cor_10:23-28" Pericope="146" EffWeek="16" Cmd="ndayF == -197 &amp;&amp; ((doy &gt;= 251 &amp;&amp; doy &lt;= 255) || (doy &gt;= 257 &amp;&amp; doy &lt;= 272))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="ndayF == -197 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 269))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="ndayF == -190 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 269))"/>
-<SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" EffWeek="16" Cmd="ndayF == -225 &amp;&amp; ((doy &gt;= 240 &amp;&amp; doy &lt;= 248) || doy == 250)"/>
-<SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" EffWeek="16" Cmd="ndayF == -197 &amp;&amp; ((doy &gt;= 251 &amp;&amp; doy &lt;= 255) || (doy &gt;= 257 &amp;&amp; doy &lt;= 262))"/>
-<SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" EffWeek="16" Cmd="ndayF == -218 &amp;&amp; ((doy &gt;= 246 &amp;&amp; doy &lt;= 247) || (doy &gt;= 249 &amp;&amp; doy &lt;= 250) || doy == 252 || (doy &gt;= 254 &amp;&amp; doy &lt;= 255))"/>
-<SCRIPTURE Type="gospel" Reading="Mt_24:34-44" Pericope="101" EffWeek="16" Cmd="ndayF == -190 &amp;&amp; (doy == 255 || (doy &gt;= 257 &amp;&amp; doy &lt;= 262))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:17-26" Pericope="19" EffWeek="19" Cmd="ndayF == -197 &amp;&amp; ((doy &gt;= 270 &amp;&amp; doy &lt;= 272))"/>
-<SCRIPTURE Type="gospel" Reading="Lk_5:17-26" Pericope="19" EffWeek="19" Cmd="ndayF == -190 &amp;&amp; ((doy &gt;= 270 &amp;&amp; doy &lt;= 274))"/>
+<SCRIPTURE Type="apostol" Reading="I Cor_10:23-28" Pericope="146" Cmd ="GS == 0 || (GS == 1 &amp;&amp; !((ndayF == -225 || ndayF == -218) &amp;&amp; (doy == 251)) &amp;&amp; (doy != 256) &amp;&amp; !(ndayF == -225 &amp;&amp; (doy == 249 || doy == 254 || doy == 255 || doy == 252 || doy == 253)) &amp;&amp; !(ndayF == -218 &amp;&amp; (doy == 257)))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_4:31-36" Pericope="15" EffWeek="18" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 263 &amp;&amp; doy &lt;= 269))"/>
+<SCRIPTURE Type="gospel" Reading="Lk_5:17-26" Pericope="19" EffWeek="19" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 270 &amp;&amp; doy &lt;= 276))"/>
+<SCRIPTURE Type="gospel" Pericope="101" Reading="Mt_24:34-44" Cmd="(doy &lt; 263 &amp;&amp; GS == 1 &amp;&amp; !((ndayF == -225 || ndayF == -218) &amp;&amp; (doy == 251)) &amp;&amp; (doy != 256) &amp;&amp; !(ndayF == -225 &amp;&amp; (doy == 249 || doy == 254 || doy == 255 || doy == 252 || doy == 253))  &amp;&amp; !(ndayF == -218 &amp;&amp; (doy == 257))) || GS == 0"/>
 </LITURGY>
 </SERVICE>
 </SAINT>

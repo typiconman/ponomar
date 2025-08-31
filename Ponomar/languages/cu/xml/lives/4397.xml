@@ -1,10 +1,10 @@
-﻿<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <SERVICE Type="1">
 <LITURGY>
-<KONTAKION Type="1" Tone="3">
+<KONTAKION Tone="3" Type="1">
 До́блѧго тѧ̀ побо́рника по трⷪ҇цѣ ꙗ҆́вльшасѧ, цр҃ковь сла́витъ пою́ще є҆мїлїа́не, за ню́же пострада́лъ є҆сѝ: сегѡ̀ ра́ди почита́емъ па́мѧть твою̀, ꙗ҆зы́ческагѡ наше́ствїѧ и҆зба́ви рабы̑ твоѧ̑. 
 </KONTAKION>
-</LITURGY>
+<TROPARION Tone="" Type="1"/></LITURGY>
 </SERVICE>
 <NAME Nominative="Прпⷣбнагѡ є҆мїлїа́на и҆сповѣ́дника († 815-820)"/>
 <NAME Short="Прпⷣбнагѡ є҆мїлїа́на"/>

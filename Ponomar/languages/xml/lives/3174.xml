@@ -1,5 +1,19 @@
 <SAINT>
 <SERVICE Type="8">
+<VESPERS>
+<SCRIPTURE Type="1" Reading="Gen_1:1-13"/>
+<SCRIPTURE Type="2" Reading="Num_24:2b-3a, 5-9, 17b-18"/>
+<SCRIPTURE Type="3" Reading="Mica_4:6-7, 5:2-4"/>
+<SCRIPTURE Type="4" Reading="Isa_11:1-10"/>
+<SCRIPTURE Type="5" Reading="Baruch_3:36-4:4"/>
+<!-- NB: the above reading has different versification in different Bibles. This should be fixed! -->
+<SCRIPTURE Type="6" Reading="Dan_2:31-36, 44-45"/>
+<SCRIPTURE Type="7" Reading="Isa_9:6-7"/>
+<SCRIPTURE Type="8" Reading="Isa_7:10-16a, 8:1-4, 8b-10"/>
+<SCRIPTURE Type="9" Reading="Heb_1:1-12" Pericope="303" Cmd="dow >= 1"/>
+<SCRIPTURE Type="A" Reading="Lk_2:1-20" Pericope="5" Cmd="dow >= 1"/>
+</VESPERS>
+<!-- I have moved Vespers to match with the liturgical cycle to make it more correct. -->
 <MATINS>
 <SCRIPTURE Type="1" Reading="Mt_1:18-25" Pericope="2"/>
 </MATINS>

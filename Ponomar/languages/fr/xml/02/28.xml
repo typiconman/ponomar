@@ -1,5 +1,6 @@
-<DAY><SAINT SId="1007" CId="09107" Cmd="nday == 43"/>
-<SAINT SId="523" CId="523"/>
+<DAY><SAINT SId="1007" CId="09107" Cmd="nday == -43"/>
+<SAINT SId="523" CId="523" Cmd="nday != -43"/>
+<SAINT SId="530" CId="530" Cmd="isLeapYear == 0"/> <!-- February 29th -->
 <SAINT SId="022800" CId="022800"/>
 <SAINT SId="527" CId="527"/>
 <SAINT SId="526" CId="526"/>
@@ -10,5 +11,8 @@
 <SAINT SId="1636" CId="1636"/>
 <SAINT SId="02280497" CId="02280497"/>
 <SAINT SId="022802" CId="022802"/>
+<SAINT SId="1007" CId="184301" Cmd="nday == -43"/>
 <!-- Add the February 29th commemorations -->
+<SAINT SId="02290097" CId="02290097" Cmd="isLeapYear == 0"/>
+<SAINT SId="02290197" CId="022903" Cmd="isLeapYear == 0"/>
 </DAY>

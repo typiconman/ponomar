@@ -2,20 +2,22 @@
 <SERVICE Type="0">
 <PRIMES Type="Normal"/>
 <LITURGY>
-<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="nday == -102 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 1) || doy == 3 || (doy &gt;= 5 &amp;&amp; doy &lt;= 6))"/>
-<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="ndayF == -102 &amp;&amp; ((doy &gt;= 362 &amp;&amp; doy &lt;= 363))"/>
-<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="nday == -74 &amp;&amp; ((doy &gt;= 6 &amp;&amp; doy &lt;= 25))"/>
-<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="nday == -109 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 6))"/>
-<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="ndayF == -109 &amp;&amp; ((doy &gt;= 356 &amp;&amp; doy &lt;= 364))"/>
-<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="nday == -81 &amp;&amp; ((doy &gt;= 2 &amp;&amp; doy &lt;= 23))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -74 &amp;&amp; ((doy &gt;= 6 &amp;&amp; doy &lt;= 25))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -102 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 1) || doy == 3 || (doy &gt;= 5 &amp;&amp; doy &lt;= 6))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -109 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 6))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -81 &amp;&amp; ((doy &gt;= 2 &amp;&amp; doy &lt;= 6))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:22b-26" Pericope="51" EffWeek="32" Cmd="nday == -81 &amp;&amp; ((doy &gt;= 7 &amp;&amp; doy &lt;= 23))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:22b-26" Pericope="51" EffWeek="32" Cmd="ndayF == -109 &amp;&amp; ((doy &gt;= 358 &amp;&amp; doy &lt;= 364))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_11:22b-26" Pericope="51" EffWeek="32" Cmd="ndayF == -102 &amp;&amp; ((doy &gt;= 362 &amp;&amp; doy &lt;= 363))"/>
-<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" EffWeek="31" Cmd="ndayF == -109 &amp;&amp; ((doy &gt;= 356 &amp;&amp; doy &lt;= 357))"/>
+<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="GS == 1"/>
+<SCRIPTURE Type="gospel" Reading="Mk_10:11-16" Pericope="44" EffWeek="31" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 356 &amp;&amp; doy &lt;= 357))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:22b-26" Pericope="51" EffWeek="32" Cmd="nday == -81 &amp;&amp; GS == 1 &amp;&amp; doy &gt;= 7"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:22b-26" Pericope="51" EffWeek="32" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 358 &amp;&amp; doy &lt;= 364))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="GS == 1 &amp;&amp; ((doy &gt;= 0 &amp;&amp; doy &lt;= 6))"/>
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" EffWeek="33" Cmd="nday == -74 &amp;&amp; GS == 1 &amp;&amp; doy &gt;= 7"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:22b-26" Pericope="51" EffWeek="17" Cmd="((nday == -102) &amp;&amp; GS == 1 &amp;&amp; doy &gt;= 7)"/>
+
+<SCRIPTURE Type="gospel" Reading="Mk_12:28-37" Pericope="56" Cmd="GS == 0 &amp;&amp; nday == -74" />
+<SCRIPTURE Type="apostol" Reading="I Pet_4:1-11" Pericope="61" EffWeek="33" Cmd="GS == 0 &amp;&amp; nday == -74"/>
+<SCRIPTURE Type="apostol" Reading="Jas_3:11-4:6" Pericope="55" Cmd="GS == 0 &amp;&amp; nday == -81"/>
+<SCRIPTURE Type="gospel" Reading="Mk_11:22b-26" Pericope="51" Cmd="GS == 0 &amp;&amp; nday == -81" />
+<SCRIPTURE Type="apostol" Reading="II Tim_4:9-22" Pericope="299" Cmd="GS == 0 &amp;&amp; (nday == -109 || ndayF == -109)"/>  
+<SCRIPTURE Type="gospel" Reading="Lk_20:1-8" Pericope="99" Cmd="GS == 0 &amp;&amp; (nday == -109 || ndayF == -109)"/> 
+<SCRIPTURE Type="apostol" Reading="Heb_5:11-6:8" Pericope="312" Cmd="GS == 0 &amp;&amp; (nday == -102 || ndayF == -102)"/>
+<SCRIPTURE Type="gospel" Reading="Lk_21:5-7, 10-11, 20-24" Pericope="104" Cmd="GS == 0 &amp;&amp; (nday == -102 || ndayF == -102)" /> 
 </LITURGY>
 </SERVICE>
 </SAINT>

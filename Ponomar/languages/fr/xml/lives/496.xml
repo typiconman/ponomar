@@ -1,3 +1,4 @@
 <SAINT>
-<NAME Nominative="St. Polycarpe, Evêque de Smyrne" Short="St. Polycarpe"/>
+<NAME Nominative="St. Polycarpe, Evêque de Smyrne" Short="St. Polycarpe" Cmd="doy == 53"/>
+<NAME Nominative="St. Polycarpe, Evêque de Smyrne (&lt;i&gt;transféré de 23-me février&lt;/i&gt;)" Short="St. Polycarpe" Cmd="doy != 53"/>
 <SERVICE Type="1"/></SAINT>

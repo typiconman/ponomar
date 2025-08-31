@@ -1,3 +1,5 @@
 <SAINT>
-<NAME Nominative="Martyr Quadratus and those with him at Corinth († 250-258): Cyprian, Dionysius, Anectus, Paul, Criscentus, another Dionysius, Victorinus, Victor, Niciphorus, Claudius, Diodorus, Serapion, Papius, Leonidus, and the holy women Chariessa, Nunechia, Basilissa, Nica, Calisa, Gala, Galina, Theodora, and many others" Short="Martyr Quadratus"/>
+<NAME Nominative="Martyr Quadratus and those with him at Corinth († 250-258): Cyprian, Dionysius, Anectus, Paul, Criscentus, another Dionysius, Victorinus, Victor, Niciphorus, Claudius, Diodorus, Serapion, Papius, Leonidus, and the holy women Chariessa, Nunechia, Basilissa, Nica, Calisa, Gala, Galina, Theodora, and many others" Short="Martyr Quadratus" Cmd="nday != -43"/>
+<NAME Nominative="Martyr Quadratus and those with him at Corinth († 250-258): Cyprian, Dionysius, Anectus, Paul, Criscentus, another Dionysius, Victorinus, Victor, Niciphorus, Claudius, Diodorus, Serapion, Papius, Leonidus, and the holy women Chariessa, Nunechia, Basilissa, Nica, Calisa, Gala, Galina, Theodora, and many others" Short="Martyr Quadratus (&lt;i&gt;transferred from Saturday&lt;/i&gt;)" Cmd="doy == 67"/>
+
 <SERVICE Type="1"/></SAINT>

@@ -28,7 +28,7 @@ ORDER FOR PRIMES ON A GIVEN DAY
 
 public class ServiceInfo implements DocHandler
 {
-	private final static String FileName   = "xml/Commands/ServiceRules.xml";
+	private static String FileName   = "xml/Commands/ServiceRules.xml";
 	private static boolean readPeriod=false;
 	private static boolean readLanguage=false;
 	private static OrderedHashtable Information;
@@ -44,6 +44,15 @@ public class ServiceInfo implements DocHandler
 	public ServiceInfo(String Info, OrderedHashtable dayInfo)
 	{
 		Type = Info;
+                findLanguage=new Helpers(Analyse.dayInfo);
+                Analyse.dayInfo=dayInfo;
+                Phrases=new LanguagePack(dayInfo);
+	}
+        
+        public ServiceInfo(String Info, String File, OrderedHashtable dayInfo)
+	{
+		Type = Info;
+                FileName=File;
                 findLanguage=new Helpers(Analyse.dayInfo);
                 Analyse.dayInfo=dayInfo;
                 Phrases=new LanguagePack(dayInfo);

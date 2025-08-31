@@ -1,15 +1,13 @@
-<SAINT>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SAINT>
 <NAME Nominative="Прⷪ҇ро́ка заха́рїи и҆з̾ 12-ти (ок. 520 до Р.Х.)"/>
 <NAME Short="Прⷪ҇ро́ка заха́рїи"/>
 <SERVICE Type="2"/>
 <SERVICE>
 <LITURGY>
-<TROPARION Type="1" Tone="1">
- 
-</TROPARION></LITURGY></SERVICE>
+<TROPARION Tone="2" Type="1">Прⷪ҇ро́ка твоегѡ̀ заха́рїи па́мѧть, гдⷭ҇и, пра́зднꙋюще, * тѣ́мъ тѧ̀ мо́лимъ: * спасѝ дꙋ́ши на́ша. </TROPARION></LITURGY></SERVICE>
 <SERVICE>
 <LITURGY>
-<KONTAKION Type="1" Tone="1">
+<KONTAKION Tone="2" Type="1">Просвѣти́вшеесѧ дꙋ́хомъ чи́стое твоѐ се́рдце, * проро́чества бы́сть свѣтлѣ́йшагѡ прїѧ́телище: * зри́ши бо, ꙗ҆́кѡ настоѧ́щаѧ, дале́че сꙋ́щаѧ. * сегѡ̀ ра́ди тѧ почита́емъ, * прⷪ҇ро́че бл҃же́нне заха́рїе сла́вне.
  
 </KONTAKION></LITURGY></SERVICE>
 </SAINT>

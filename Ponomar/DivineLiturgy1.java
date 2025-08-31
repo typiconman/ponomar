@@ -119,7 +119,7 @@ public class DivineLiturgy1 implements DocHandler {
     public void text(String text) {
     }
 
-    public String Readings(OrderedHashtable readingsIn, String ReadingType, JDate today) {
+    public String Readings(OrderedHashtable readingsIn, String ReadingType, JDate2 today) {
         /********************************************************
         SINCE I HAVE CORRECTED THE SCRIPTURE READINGS IN THE MAIN FILE, I CAN NOW PRECEDE WITH A BETTER VERSION OF THIS PROGRAMME!
          ********************************************************/
@@ -188,10 +188,10 @@ public class DivineLiturgy1 implements DocHandler {
                 Information3.dayInfo.put("doy", today.getDoy());
                 Information3.dayInfo.put("dRank","0");
                 //System.out.println("Case II: Testing the StringOp files: In StringOp, doy = "+StringOp.dayInfo.get("doy").toString()+" In Information3, doy = "+Information3.dayInfo.get("doy").toString()+" In Transfers, doy = "+Transfers.dayInfo.get("doy"));
-                nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
-                int ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
+                nday = (int) JDate2.difference(today, Paschalion.getPascha(today.getYear(),today.getCalendar2()));
+                int ndayP = (int) JDate2.difference(today, Paschalion.getPascha(today.getYear() - 1,today.getCalendar2()));
                 //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
-                int ndayF = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
+                int ndayF = (int) JDate2.difference(today, Paschalion.getPascha(today.getYear() + 1,today.getCalendar2()));
                 Information3.dayInfo.put("nday", nday);
                 Information3.dayInfo.put("ndayP", ndayP);
                 Information3.dayInfo.put("ndayF", ndayF);
@@ -235,10 +235,10 @@ public class DivineLiturgy1 implements DocHandler {
                 Information3.dayInfo.put("dow", today.getDayOfWeek());
                 Information3.dayInfo.put("doy", today.getDoy());
                 Information3.dayInfo.put("dRank","0");
-                nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
-                int ndayP = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() - 1));
+                nday = (int) JDate2.difference(today, Paschalion.getPascha(today.getYear(),today.getCalendar2()));
+                int ndayP = (int) JDate2.difference(today, Paschalion.getPascha(today.getYear() - 1,today.getCalendar2()));
                 //REQUIRED FOR LUCAN JUMP CALCULATIONS! ADDED 2008/05/17 n.s.
-                int ndayF = (int) JDate.difference(today, Paschalion.getPascha(today.getYear() + 1));
+                int ndayF = (int) JDate2.difference(today, Paschalion.getPascha(today.getYear() + 1,today.getCalendar2()));
                 Information3.dayInfo.put("nday", nday);
                 Information3.dayInfo.put("ndayP", ndayP);
                 Information3.dayInfo.put("ndayF", ndayF);
@@ -328,11 +328,11 @@ public class DivineLiturgy1 implements DocHandler {
         return format(dailyVf, dailyRf, dailyTf);
     }
 
-    private OrderedHashtable getReadings(JDate today, String readingType) {
+    private OrderedHashtable getReadings(JDate2 today, String readingType) {
         String filename = "";
         int lineNumber = 0;
 
-        int nday = (int) JDate.difference(today, Paschalion.getPascha(today.getYear()));
+        int nday = (int) JDate2.difference(today, Paschalion.getPascha(today.getYear(),today.getCalendar2()));
 
         //I COPIED THIS FROM THE Main.java FILE BY ALEKS WITH MY MODIFICATIONS (Y.S.)
         //FROM HERE UNTIL
@@ -342,8 +342,8 @@ public class DivineLiturgy1 implements DocHandler {
         } else if (nday < -70) {
             // WE HAVE NOT YET REACHED THE LENTEN TRIODION
             filename = pentecostarionFileName;
-            JDate lastPascha = Paschalion.getPascha(today.getYear() - 1);
-            lineNumber = (int) JDate.difference(today, lastPascha) + 1;
+            JDate2 lastPascha = Paschalion.getPascha(today.getYear() - 1,today.getCalendar2());
+            lineNumber = (int) JDate2.difference(today, lastPascha) + 1;
         } else {
             // WE ARE AFTER PASCHA AND BEFORE THE END OF THE YEAR
             filename = pentecostarionFileName;
@@ -547,7 +547,7 @@ public class DivineLiturgy1 implements DocHandler {
             Enumeration e3 = vectV.elements();
             for (int k = 0; k < vectV.size(); k++) {
                 String reading = (String) vectV.get(k);
-                output += ShortForm.getHyperlink(reading);
+                output += ShortForm.getHyperlinkLoc(reading);
 
                 if ((Integer) vectR.get(k) == -2 ) {
                     if (vectV.size()>1){

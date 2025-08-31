@@ -60,7 +60,7 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
     private String[] HelpNames;// = Text.obtainValues((String) Text.Phrases.get("Help"));
     String newline = "\n";
     private String strOut;
-    private JDate today;
+    private JDate2 today;
     private Helpers helper;
     private PrimeSelector SelectorP;// = new PrimeSelector();
     private PrintableTextPane output;
@@ -73,7 +73,7 @@ public class SixthHour implements DocHandler, ActionListener, ItemListener, Prop
 
     
 
-    public SixthHour(JDate date, OrderedHashtable dayInfo) {
+    public SixthHour(JDate2 date, OrderedHashtable dayInfo) {
         Analyse.dayInfo=dayInfo;
             Text=new LanguagePack(dayInfo);
             PrimesNames=Text.obtainValues((String)Text.Phrases.get("Sexte"));
