@@ -72396,7 +72396,7 @@
                                 <File Id="fil363BAE9A3D07E8B8E62A2ED6F8F345F8" KeyPath="yes" Source="$(var.SourceFilesDir)\languages\fr\xml\lives\05030497.xml" />
                             </Component>
                             <Component Id="cmp2EE6C8C8F2BE3CFEFE0249D7CD6E0481" Guid="{A3195E32-100A-4A08-82E5-C698044D5AFA}">
-                                <File Id="filACF254CA2874D8ADE7FA7854A79A3A1D" KeyPath="yes" Source="$(var.SourceFilesDir)\languages\fr\xml\lives\050307;.xml" />
+                                <File Id="filACF254CA2874D8ADE7FA7854A79A3A1D" KeyPath="yes" Source="$(var.SourceFilesDir)\languages\fr\xml\lives\050307.xml" />
                             </Component>
                             <Component Id="cmp67E05D27358CCFF42591E7F5F686894C" Guid="{957C6350-7977-494C-A62D-9A0D50288B43}">
                                 <File Id="filC060D40952ADBFFFEA723B2DC5C59811" KeyPath="yes" Source="$(var.SourceFilesDir)\languages\fr\xml\lives\050308.xml" />
