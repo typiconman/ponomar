@@ -167,3 +167,5 @@ Makefile.old
 
 # Java stuff
 *.class
+build/
+target/
