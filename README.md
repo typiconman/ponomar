@@ -33,22 +33,38 @@ it does contain special Typicon glyphs that are used by most of the other langua
 Note that Ponomar uses the TrueType version of this font (Ponomar Unicode TT)
 because Java has poor support of OpenType fonts.
 
-2) Install an SDK for Java. 
+2) Install Java 17 or newer.
 
-3) Create the .class files by typing 
+3) Build the project with the included Maven Wrapper:
 
-`make`
+`./mvnw -DskipTests package`
 
-4) From the root of this project, type 
+If Maven 3.9 or newer is installed, `mvn -DskipTests package` is equivalent. The legacy
+`make` target delegates to the wrapper.
 
-`java Ponomar.Main`
+4) From the root of this project, type
+
+`java -cp target/classes Ponomar.Main`
 
 and the main Ponomar interface should appear.
 
 5) A Perl API is available in Ponomar/APIs/Perl. See its documentation.
 
-6) If you make any changes, be sure to run the regression tests:
+6) If you make any changes, run the JUnit and golden-data regression tests:
 
-`make test`
+`./mvnw test`
 
-.
+The full verification build also writes JaCoCo HTML and XML reports beneath
+`target/site/jacoco`:
+
+`./mvnw -Dmaven.test.failure.ignore=true verify`
+
+Verification enforces 75% line coverage over the headless production logic, as
+well as the stricter line and branch gate for the five core classes. UI classes
+are not part of the headless gate. It also omits the printer/dialog helper,
+external-database adapter, destructive data-migration utility, and obsolete day
+reader whose legacy source tree is not present. The generated report still shows
+coverage for every compiled class.
+
+The language and calendar data under `Ponomar/languages` remain external to the
+JAR because the application reads them through repository-relative paths.
