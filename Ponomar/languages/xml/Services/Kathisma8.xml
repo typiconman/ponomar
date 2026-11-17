@@ -14,10 +14,9 @@
 <CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
 <!-- The Third Stasis -->
-<BIBLE Verses="Psalm_51" Who="" RedFirst="1" NewLine="1" Header="1"/>
-<BIBLE Verses="Psalm_52" Who="" RedFirst="1" NewLine="1" Header="1"/>
-<BIBLE Verses="Psalm_53" Who="" RedFirst="1" NewLine="1" Header="1"/>
-<BIBLE Verses="Psalm_54" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_61" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_62" Who="" RedFirst="1" NewLine="1" Header="1"/>
+<BIBLE Verses="Psalm_63" Who="" RedFirst="1" NewLine="1" Header="1"/>
 <CREATE What="GloryToTheFather1" Who="R" RedFirst="1" NewLine="1"/>
 <CREATE What="AlleluiaGlory" Who="R" RedFirst="1" NewLine="1" Times="3"/>
 
